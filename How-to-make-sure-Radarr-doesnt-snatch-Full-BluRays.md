@@ -55,5 +55,5 @@ When changed/saved do a manual search and you will see the full bluray's will be
 
 ------
 
-**(1)** When you make use of other custom formats and want that the custom formats will be preferred please choose `Custom Format Cutoff` of you own custom formats and make sure you don't choose `None` at the bottom but your own custom format.
+**(1)** When you make use of other custom formats and want that the custom formats will be preferred please choose `Custom Format Cutoff` of you own custom formats and make sure you **DON'T** choose `None` at the bottom but your own custom format.
 
