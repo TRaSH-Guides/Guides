@@ -1,10 +1,10 @@
-# Remote-Path-Mappings-explained-for-Sonarr-Radarr
+# Remote Path Mappings explained for Sonarr/Radarr
 
 Remote Path Mappings explained for Sonarr/Radarr
 
 # Description
 
-Seems that allot of people are having to understand how the remote path mapping works for Sonarr/Radarr.
+Seems that allot of people don't understand how the remote path mapping works for Sonarr/Radarr.
 I will try to explain it with some screenshots and a short description,
 for this I will use screenshots used from Radarr.
 
@@ -12,7 +12,7 @@ for this I will use screenshots used from Radarr.
 
 # Do I need Remote Path Mappings ?
 
-If you download client is on another system then Radarr/Sonarr then you probably need to make use of Remote Path Mappings.
+If your download client is on another system then Radarr/Sonarr then you probably need to make use of Remote Path Mappings.
 
 You will get a error that looks a little bit like the following screenshot.
 
@@ -46,8 +46,9 @@ A screen will popup with the following options.
 
 # Now some screenshots with a examples that I use for this tutorial.
 
-- Qbittorrent
-- NZBGet
+- [x] QBittorrent
+- [ ] NZBGet
+- [ ] other client ?
 
 ## Host:
 
@@ -78,9 +79,9 @@ This is what you add in your Remote Path in Remote Path Mapping.
 
 To find what you need to put in in your local path you need to know how Radarr is able to access the files your download client downloaded.
 And this can be done in different ways.
-Mounting/Networkshare what ever but Radarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr to access the download clients downloaded files.
+Mounting/Networkshare what ever but Radarr/Sonarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr/Sonarr to access the download clients downloaded files.
 
-The final result will look like this.
+The final result will look something like this.
 
 ![Qbittorrent Final Result](http://my.jetscreenshot.com/13737/20190126-ngqk-13kb.png)
 
