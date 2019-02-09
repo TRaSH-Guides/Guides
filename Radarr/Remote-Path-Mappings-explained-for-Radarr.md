@@ -1,18 +1,16 @@
-# Remote Path Mappings explained for Sonarr/Radarr
+# Remote Path Mappings explained for Radarr
 
-Remote Path Mappings explained for Sonarr/Radarr
+Remote Path Mappings explained for Radarr
 
 # Description
 
-Seems that allot of people don't understand how the remote path mapping works for Sonarr/Radarr.
+Seems that allot of people don't understand how the remote path mapping works for Radarr.
 I will try to explain it with some screenshots and a short description,
-for this I will use screenshots used from Radarr.
-
 
 
 # Do I need Remote Path Mappings ?
 
-If your download client is on another system then Radarr/Sonarr then you probably need to make use of Remote Path Mappings.
+If your download client is on another system then Radarr then you probably need to make use of Remote Path Mappings.
 
 You will get a error that looks a little bit like the following screenshot.
 
@@ -53,7 +51,7 @@ A screen will popup with the following options.
 ## Host:
 
 To find what you need to put in your host you navigate in Radarr to the Settings => Download Client Tab.
-There you open up the download client for this example I will be using Qbittorrent
+There you open up the download client for this example I will be using QBittorrent
 
 ![Qbittorrent Client](http://my.jetscreenshot.com/13737/20190126-heqh-6kb.png)
 
@@ -65,7 +63,7 @@ This is what you put in your Host in Remote Path Mapping.
 
 To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.
 
-In Qbittorrent navigate to Tools => Options (or ALT+O) and navigate to the Download settings.
+In QBittorrent navigate to Tools => Options (or ALT+O) and navigate to the Download settings.
 
 ![Qbittorrent Download Settings](http://my.jetscreenshot.com/13737/20190126-3wa7-61kb.png)
 
@@ -79,7 +77,7 @@ This is what you add in your Remote Path in Remote Path Mapping.
 
 To find what you need to put in in your local path you need to know how Radarr is able to access the files your download client downloaded.
 And this can be done in different ways.
-Mounting/Networkshare what ever but Radarr/Sonarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr/Sonarr to access the download clients downloaded files.
+Mounting/Network share what ever but Radarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr to access the download clients downloaded files.
 
 The final result will look something like this.
 
