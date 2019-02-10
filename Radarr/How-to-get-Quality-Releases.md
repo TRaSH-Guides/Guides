@@ -98,13 +98,13 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 - -DDR,
 
-- -BARC0DE
+- -BARC0DE,
 
 - -RARBG,
 
 - -FGT,
 
-- -BReWeRS
+- -BReWeRS,
 
 - -Grym
 
