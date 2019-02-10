@@ -55,7 +55,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### Low-Quality Releases (banned groups)
+###### Low-Quality Releases (often banned groups)
 
 - aXXo,
 - CrEwSaDe,
@@ -90,7 +90,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### Another Small list of banned groups.
+###### Another Small list of often banned groups.
 
 - -CDDHD,
 
@@ -107,5 +107,17 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -BReWeRS,
 
 - -Grym,
+
+  
+
+###### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+
+
+-   -beAst,
+-   -CHD,
+-   -HDWinG,
+-   -MTeam,
+-   -MySiLU,
+-   -WiKi,
 
   
