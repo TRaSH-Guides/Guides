@@ -106,6 +106,6 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 - -BReWeRS,
 
-- -Grym
+- -Grym,
 
   
