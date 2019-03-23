@@ -9,7 +9,6 @@ Provided by user input or from the develop team it self.
 Most things I tested myself and tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
 
-
 If you have suggestions , requests or just want to leave some feedback please use the `issues` tracker on the top.
 
 ------
