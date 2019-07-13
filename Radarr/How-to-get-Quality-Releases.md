@@ -57,34 +57,34 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 ###### **Low-Quality Releases (often banned groups)**
 
-- aXXo,
-- CrEwSaDe,
-- DEViSE,
-- FaNGDiNG0,
-- FLAWL3SS,
-- FZHD,
+- -aXXo,
+- -CrEwSaDe,
+- -DEViSE,
+- -FaNGDiNG0,
+- -FLAWL3SS,
+- -FZHD,
 - -HDTime,
 - -IMAGINE,
-- iPlanet,
+- -iPlanet,
 - -KingBen,
 - -KiNGDOM,
-- KLAXXON,
-- LTRG,
-- mHD,
-- mSD,
-- NhaNc3,
-- nHD,
-- nikt0,
-- nSD,
+- -KLAXXON,
+- -LTRG,
+- -mHD,
+- -mSD,
+- -NhaNc3,
+- -nHD,
+- -nikt0,
+- -nSD,
 - -PrisM,
-- PRODJi,
+- -PRODJi,
 - -Rx,
 - -SANTi,
 - -ViSION,
 - -WAF,
-- WHiiZz,
+- -WHiiZz,
 - -x0r,
-- YIFY,
+- -YIFY,
 - -STUTTERSHIT
 
 
@@ -102,9 +102,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 ###### **And Another list**
 
 - -RARBG,
-
 - -FGT,
-
 - -BReWeRS,
 
   
