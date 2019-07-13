@@ -55,7 +55,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### **Low-Quality Releases (often banned groups)**
+###### **Low-Quality Releases (often banned groups)[BLOCK1]**
 
 - -aXXo,
 - -CrEwSaDe,
@@ -89,7 +89,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### **Another Small list of often banned groups.**
+###### **Another Small list of often banned groups.[BLOCK2]**
 
 - -CDDHD,
 - -EuReKA,
@@ -99,7 +99,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### **And Another list**
+###### **And Another list.[BLOCK3]**
 
 - -RARBG,
 
@@ -111,7 +111,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
   
 
-###### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+###### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
 
 
 -   -beAst,
