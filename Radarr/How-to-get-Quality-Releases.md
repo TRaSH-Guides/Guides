@@ -55,7 +55,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 
 
-###### **Low-Quality Releases (often banned groups) **
+###### **Low-Quality Releases (often banned groups)**
 
 - aXXo,
 - CrEwSaDe,
