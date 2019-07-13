@@ -102,8 +102,12 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 ###### **And Another list**
 
 - -RARBG,
+
 - -FGT,
+
 - -BReWeRS,
+
+- -Grym,
 
   
 
@@ -113,7 +117,6 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 -   -beAst,
 -   -CHD,
 -   -EVO (except WEB-DL)
--   -Grym,
 -   -HDWinG,
 -   -MTeam,
 -   -MySiLU,
