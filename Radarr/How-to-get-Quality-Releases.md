@@ -85,7 +85,7 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -WHiiZz,
 - -x0r,
 - -YIFY,
-- -STUTTERSHIT
+- -STUTTERSHIT,
 
 
 
@@ -108,6 +108,12 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -BReWeRS,
 
 - -Grym,
+
+- -LiGaS,
+
+- -Zeus,
+
+- -Tigole,
 
   
 
