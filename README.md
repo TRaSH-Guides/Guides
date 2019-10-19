@@ -1,6 +1,7 @@
 ### Here you will find a collection of tutorials/guides that I've made.
 
 Mainly for Sonarr/Radarr.
+Including what's related to it.
 
 ------
 
