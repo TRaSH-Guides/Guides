@@ -1,4 +1,4 @@
-### Sonarr Release Profile RegEx
+### Sonarr Release Profile RegEx (WEB-DL)
 
 (*the regex isn't mentioned anywhere, it's a hidden advanced feature*)
 
@@ -15,6 +15,8 @@ P2P releases are a bit smarter and work sort of together by not doing the same r
 Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
 And in my opinion the P2P are of better quality.
 Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` 
+
+### Propers and Repacks
 
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
 
@@ -50,6 +52,8 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ***Keep in mind this list will be a constant work in progress because I will be updating it when it's needed***
 ***So best to set a notification for updates for this page.***
+
+### Sonarr Release Profile RegEx
 
 ```markdown
 # Sonarr Release Profile RegEx
@@ -89,6 +93,11 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-POKE|-STRiFE|-WEBTiFUL|-TRUMP)/i
 
  [-100]  /(TBS|-BRiNK|-CHX)/i
+
+# Optional (matches releases that ends with EN) 
+  [-25]  /\s?\ben\b$/i
+# Optional Matches any release that contains '1-' as prefix for Release Groups
+  [-25]  /(1-.+)$/i
 ```
 
 A little explanation of the scores and why,
@@ -100,12 +109,17 @@ Scores [-25] Retagged/Renames/Obfuscated  releases.
 Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
 
+
+Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
+
+
 The reason why I got multiple entry's with the same score is because the line will go out of the box and i don't like how that looks. 
 
 When you've done it correctly it will look something like this.
 
 ![](images/1571578196710.png)
 
+### Why Not x265
 Then the question why I put `/(x|h)\.?265/i` as `Must Not Contain`.
 Luckily someone else on Discord described it nice and correctly in my opinion.
 
