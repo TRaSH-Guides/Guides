@@ -53,10 +53,12 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ```markdown
 # Sonarr Release Profile RegEx
-# This list is made by collecting information from Sonarr Discord Channel and personal testing and a few others that helped.
+# This list is made by collecting information from Sonarr Discord Channel,
+# and personal testing and a few others that helped.
 # So I want to thnx everyone who helped to make this list possible,
 # For privacy reasons I decided not to add the names/nick of the persons.
-# If you want to be mentioned please message me on discord including a link for proof to what part you want to be credited.
+# If you want to be mentioned please message me on discord,
+# including a link for proof to what part you want to be credited.
 
 
 # Must Not Contain
@@ -97,6 +99,8 @@ Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a
 Scores [-25] Retagged/Renames/Obfuscated  releases.
 Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
+
+The reason why I got multiple entry's with the same score is because the line will go out of the box and i don't like how that looks. 
 
 When you've done it correctly it will look something like this.
 
