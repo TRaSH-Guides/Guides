@@ -79,7 +79,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
   [50]   /(-BTN|-NTb|-NTG|-CasStudio|-QOQ|-KiNGS)/i
   [50]   /(-AJP69|-ViSUM|-TOMMY|-monkee|-CtrlHD)/i
-  [25]   /(-SIGMA|-NYH|-TVSmash|-TEPES)/i
+  [25]   /(-SIGMA|-NYH|-TVSmash|-TEPES|-SA89)/i
 
   [10]   /(repack|proper)/i
 
