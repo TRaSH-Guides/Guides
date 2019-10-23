@@ -37,9 +37,9 @@ Then you will get a popup screen that will look like this =>
 
 ![](images/1571573834508.png)
 
-`Must Contain` => add words that the release name **MUST HAVE** 
+`Must Contain` => add words that the release name **MUST HAVE!** 
 
-`Must Not Contain` => add words that the release name **MUST NOT HAVE AND SO TO BE IGNORE**
+`Must Not Contain` => add words that the release name **MUST NOT HAVE AND SO TO BE IGNORE!**
 
 `Preferred`=> add words you prefer with a certain score what you prefer more or upgrade.
 
