@@ -88,11 +88,11 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-25]  /(-NZBGeek|-BUYMORE|-Chamele0n|-4Planet)/i
   [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
 
-  [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-XLF)/i
+  [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE)/i
   [-50]  /(-ION10|-METCON|-MEMENTO|-EDHD)/i
   [-50]  /(-POKE|-STRiFE|-WEBTiFUL|-TRUMP)/i
 
- [-100]  /(TBS|-BRiNK|-CHX)/i
+ [-100]  /(TBS|-BRiNK|-CHX|-XLF)/i
 
 # Optional (matches releases that ends with EN) 
   [-25]  /\s?\ben\b$/i
