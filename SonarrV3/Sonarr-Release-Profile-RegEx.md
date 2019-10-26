@@ -16,6 +16,10 @@ Also I noticed that with some Scene releases the 5.1 audio was stripped out or c
 And in my opinion the P2P are of better quality.
 Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` 
 
+**Update**
+A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. 
+The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKed.
+
 ### Propers and Repacks
 
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
