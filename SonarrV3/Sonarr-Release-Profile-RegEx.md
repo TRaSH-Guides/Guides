@@ -81,23 +81,23 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [75]   /(red).?web.?dl/i
   [75]   /(iT).?web.?dl/i
 
-  [50]   /(-BTN|-NTb|-NTG|-CasStudio|-QOQ|-KiNGS)/i
-  [50]   /(-AJP69|-ViSUM|-TOMMY|-monkee|-CtrlHD)/i
-  [25]   /(-SIGMA|-NYH|-TVSmash|-TEPES|-SA89)/i
-
+  [50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
+  [50]   /(-monkee|-MZABI|-NTb|-QOQ|-RTN|-TOMMY|)/i
+  [50]   /(-ViSUM)/i
+  [25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
+  [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
   [10]   /(repack|proper)/i
 
-  [-25]  /(-xpost|-postbot|-Obfuscated|-Rakuv|-GEROV)/i
-  [-25]  /(-Scrambled|-WhiteRev|-AsRequested|-4P)/i
-  [-25]  /(-NZBGeek|-BUYMORE|-Chamele0n|-4Planet)/i
-  [-25]  /(-iNC0GNiTO)/i
   [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
+  [-25]  /(-4P|-4Planet|-AsRequested|-BUYMORE)/i
+  [-25]  /(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)/i
+  [-25]  /(-Obfuscated|-postbot|-Rakuv|-Scrambled)/i
+  [-25]  /(-WhiteRev|-xpost)/i
 
-  [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE)/i
-  [-50]  /(-ION10|-METCON|-MEMENTO|-EDHD)/i
-  [-50]  /(-POKE|-STRiFE|-WEBTiFUL|-TRUMP)/i
-  [-50]  /(-STARZ)/i
-  
+  [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
+  [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
+  [-50]  /(-TRUMP|-WEBTiFUL)/i
+
  [-100]  /(TBS|-BRiNK|-CHX|-XLF)/i
 
 # Optional (matches releases that ends with EN) 
