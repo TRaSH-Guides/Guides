@@ -70,20 +70,21 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 
 # Must Not Contain
-/(x|h)\.?265/i
+/(x|h)\.?265/i, hevc
 
 # Preferred
  [100]   /(amzn|amazon).?web.?dl/i
   [90]   /(nf|netflix).?web.?dl/i
   [90]   /(dsny|disney).?web.?dl/i
+  [90]   /(atvp).?web.?dl/i
   [80]   /(-deflate|-inflate)/i
   [75]   /(hulu|.?hbo\.?)/i
   [75]   /(red).?web.?dl/i
   [75]   /(iT).?web.?dl/i
 
   [50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
-  [50]   /(-monkee|-MZABI|-NTb|-QOQ|-RTN|-TOMMY|)/i
-  [50]   /(-ViSUM)/i
+  [50]   /(-monkee|-MZABI|-NTb|-NTG|-QOQ|-RTN)/i
+  [50]   /(-TOMMY|-ViSUM)/i
   [25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
   [10]   /(repack|proper)/i
