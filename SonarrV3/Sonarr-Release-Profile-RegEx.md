@@ -75,7 +75,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 # Preferred
  [100]   /(amzn|amazon).?web.?dl/i
   [90]   /(nf|netflix).?web.?dl/i
-  [90]   /(dsny|disney).?web.?dl/i
+  [90]   /(dsnp|dsny|disney).?web.?dl/i
   [90]   /(atvp).?web.?dl/i
   [80]   /(-deflate|-inflate)/i
   [75]   /(hulu|.?hbo\.?)/i
