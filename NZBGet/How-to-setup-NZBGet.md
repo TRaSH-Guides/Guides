@@ -66,7 +66,7 @@ I will only explain the so called most importand paths.
 
 ####  DOWNLOAD QUEUE
 
-![](images/1571593722708.png)
+![](images/image-20191201110525320.png)
 
 
 
