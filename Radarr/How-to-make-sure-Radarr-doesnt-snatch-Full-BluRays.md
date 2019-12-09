@@ -23,7 +23,7 @@ Again a new popup will appear.
 
 Enter the following info
 
-`Name` => `bluray`
+`Name` => `BR-DISK`
 
 `Format Tags` => `C_RXRQ_(AVC|VC-1|HEVC)` `M_N_REMUX` `S_N_WEBDL`
 
