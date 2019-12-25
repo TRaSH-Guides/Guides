@@ -1,4 +1,4 @@
-### Sonarr Release Profile RegEx (WEB-DL)
+## Sonarr Release Profile RegEx (WEB-DL)
 
 (*the regex isn't mentioned anywhere, it's a hidden advanced feature*)
 
@@ -7,21 +7,20 @@
 Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
-The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded)
-Why ?
-Scene release always release in a rush to bring it out as fast as possible,
+The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
+So if you care less about quality then stop reading and don't use this guide. 
+Why ? Scene release always release in a rush to bring it out as fast as possible,
 so I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
 P2P releases are a bit smarter and work sort of together by not doing the same release.
 Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
 And in my opinion the P2P are of better quality.
-Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` 
+Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` .
 
-**Update**
+#### **Update**
 A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. 
-The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKed.
+The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
 
-### Propers and Repacks
-
+#### Propers and Repacks
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
 
 ![](images/1571575011671.png)
@@ -57,8 +56,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 ***Keep in mind this list will be a constant work in progress because I will be updating it when it's needed***
 ***So best to set a notification for updates for this page.***
 
-### Sonarr Release Profile RegEx
-
+#### Sonarr Release Profile RegEx
 ```markdown
 # Sonarr Release Profile RegEx
 # This list is made by collecting information from Sonarr Discord Channel,
@@ -149,6 +147,10 @@ If you want maximum compatibility and the option to change your files to somethi
 then x264.
 It's all really dependent on specific situations for different people
 ```
-
-So if you care less about quality then remove the part,
-or just don't use the list. 
+#### Some extra info about 4K/X265
+> Source: Plex, [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203)
+> 1. Don’t bother transcoding 4k
+> 2. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
+> 3. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
+> 4. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
+> 5. This may of course mean that you keep a 4k copy and a 1080/720 copy, but if you are collecting 4k content then you should not be worried about storage space, should you?
