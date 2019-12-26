@@ -1,4 +1,4 @@
-### Here you will find a collection of tutorials/guides that I've made.
+### Here you will find a collection of Setup Guides, Tips and Scripts  that I've made/collected.
 
 Mainly for Sonarr/Radarr/Bazarr.
 Including what's related to it.
