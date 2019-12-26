@@ -83,7 +83,6 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -Rx,
 - -RDN,
 - -SANTi,
-- -TERMiNAL,
 - -ViSION,
 - -WAF,
 - -WHiiZz,
@@ -137,4 +136,3 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 >NOTE:
 >
 >- EVO (except WEB-DL)
->- TERMiNAL (low bitrate UHD)
