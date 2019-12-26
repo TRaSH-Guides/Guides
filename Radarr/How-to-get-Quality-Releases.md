@@ -1,10 +1,10 @@
-# How to get Quality Releases
+## How to get Quality Releases
 
 This Guide/Tutorial is mainly for people that watch there movies on a big Full HD TV, 4K TV or even a projector,
 and want better quality then those low xvid releases or DVD quality (*movies under 5 GB*).
 **Or did you buy your big screen to watch DVD's quality or worse ?**
 
-# Description
+#### Description
 
 This Guide/Tutorial is mainly for people that watch there movies on a big Full HD TV, 4K TV or even a projector,
 and want better quality then those low xvid releases or DVD quality (*movies under 5 GB*).
@@ -63,12 +63,14 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -FaNGDiNG0,
 - -FLAWL3SS,
 - -FZHD,
+- -FRDS,
 - -HDTime,
 - -IMAGINE,
 - -iPlanet,
 - -KingBen,
 - -KiNGDOM,
 - -KLAXXON,
+- -Leffe,
 - -LTRG,
 - -mHD,
 - -mSD,
@@ -79,7 +81,9 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 - -PrisM,
 - -PRODJi,
 - -Rx,
+- -RDN,
 - -SANTi,
+- -TERMiNAL,
 - -ViSION,
 - -WAF,
 - -WHiiZz,
@@ -122,10 +126,15 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 
 -   -beAst,
 -   -CHD,
--   -EVO (except WEB-DL)
+-   -EVO,
 -   -HDWinG,
 -   -MTeam,
 -   -MySiLU,
 -   -WiKi,
 
   
+
+>NOTE:
+>
+>- EVO (except WEB-DL)
+>- TERMiNAL (low bitrate UHD)
