@@ -99,7 +99,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
   [-50]  /(-TRUMP|-WEBTiFUL)/i
 
- [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv)/i
+ [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
 # Optional (matches releases that ends with EN) 
   [-25]  /\s?\ben\b$/i
