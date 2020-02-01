@@ -107,12 +107,15 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-25]  /(1-.+)$/i
 ```
 
-A little explanation of the scores and why,
+#### A little explanation of the scores and why.
+
 Scores [75]-[100] Release Source.
 Scores [25]-[50] P2P Groups.
 Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
 
 Scores [-25] Retagged/Renames/Obfuscated  releases.
+> *If you're getting often a error message like* `Has the same filesize as existing file` *you might need to consider to remove these.*
+
 Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
 
@@ -120,13 +123,20 @@ Scores [-100] Groups that mess with the audio or add another preferred language.
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
 
 
-The reason why I got multiple entry's with the same score is because the line will go out of the box and i don't like how that looks. 
+The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks. 
+
+#### Final Results.
 
 When you've done it correctly it will look something like this.
 
-![](images/1571578196710.png)
+![](images/image-20200201111836915.png)
+
+And after you clicked on `Save` it will look something like this:
+
+![](images/image-20200201112039657.png)
 
 ### Why Not x265
+
 Then the question why I put `/(x|h)\.?265/i` as `Must Not Contain`.
 Luckily someone else on Discord described it nice and correctly in my opinion.
 
