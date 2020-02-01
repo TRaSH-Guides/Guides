@@ -114,7 +114,7 @@ Scores [25]-[50] P2P Groups.
 Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
 
 Scores [-25] Retagged/Renames/Obfuscated  releases.
-> *If you're getting often a error message like* `Has the same filesize as existing file` *you might need to consider to remove these.*
+> *If you're getting often a error message like* `Has the same filesize as existing file` *you might need to consider to remove the [-25].*
 
 Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
