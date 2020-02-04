@@ -74,6 +74,7 @@ This .ovpn file you place in the openvpn folder of your VPN torrent client.
 #### **NOTE:**
 
 >These settings are a recommendation if you want to choose other settings be my guest.
->If you want to support me please use the following [referral link](https://torguard.net/aff.php?aff=5575) 
-and use the following code: `TGLIFE`  to get 50% Off for Life.
+>
+>If you want to support me please use the following [referral link](https://torguard.net/aff.php?aff=5575),
+>and use the following code: `TGLIFE`  to get 50% Off for Life.
 
