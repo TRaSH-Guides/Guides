@@ -96,7 +96,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
-# Optional (use these only if you dislike renamed and retagged releases )
+# Optional (use these only if you dislike renamed and retagged releases)
   [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
   [-25]  /(-4P|-4Planet|-AsRequested|-BUYMORE)/i
   [-25]  /(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)/i
