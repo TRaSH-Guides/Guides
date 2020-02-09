@@ -25,11 +25,11 @@ Enter the following info
 
 `Name` => `BR-DISK`
 
-`Format Tags` => `C_RXRQ_(AVC|VC-1|HEVC)` `M_N_REMUX` `S_N_WEBDL`
+`Format Tags` => `C_RXRQ_(AVC|VC-1|HEVC)` `M_N_REMUX` `S_N_WEBDL` `C_RXRQ_^((?!x265).)*$`
 
-![](images/image-20191027165733789.png)
+![](images/image-20200209165701743.png)
 
-**!!! NOTE: make sure the 3 tags are entered separate !!!**
+**!!! NOTE: make sure the 4 tags are entered separate !!!**
 
 ## Quality Profiles
 
