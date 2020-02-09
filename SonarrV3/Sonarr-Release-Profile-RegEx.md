@@ -85,15 +85,10 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [50]   /(-TOMMY|-ViSUM)/i
   [25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
+  [15]   /\.S\d+\.(?!E\d+\.)/i
   [12]   /(repack3)/i
   [11]   /(repack2)/i
   [10]   /(repack|proper)/i
-
-  [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
-  [-25]  /(-4P|-4Planet|-AsRequested|-BUYMORE)/i
-  [-25]  /(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)/i
-  [-25]  /(-Obfuscated|-postbot|-Rakuv|-Scrambled)/i
-  [-25]  /(-WhiteRev|-xpost)/i
 
   [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
@@ -101,6 +96,12 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
+# Optional (use these only if you dislike renamed and retagged releases )
+  [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
+  [-25]  /(-4P|-4Planet|-AsRequested|-BUYMORE)/i
+  [-25]  /(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)/i
+  [-25]  /(-Obfuscated|-postbot|-Rakuv|-Scrambled)/i
+  [-25]  /(-WhiteRev|-xpost)/i
 # Optional (matches releases that ends with EN) 
   [-25]  /\s?\ben\b$/i
 # Optional Matches any release that contains '1-' as prefix for Release Groups
