@@ -4,6 +4,7 @@
 
 Go to [My Account -> Services -> My Service Credentials](https://torguard.net/clientarea.php?action=changepw).
 First we're going to create a user account for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
+This account will be used for authentication with your VPN Torrent client. 
 
 ![](images/image-20200204202420342.png)
 
