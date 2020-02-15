@@ -28,7 +28,6 @@ Enter the following info
 `Format Tags` => `C_RXRQ_(AVC|VC-1|HEVC)` `M_N_REMUX` `S_N_WEBDL` `C_RXRQ_^((?!x265).)*$`
 
 ![](images/image-20200209165701743.png)
-
 **!!! NOTE: make sure the 4 tags are entered separate !!!**
 
 ## Quality Profiles
@@ -46,5 +45,5 @@ Make sure you do that with all your used Quality Profiles.
 
 #### **NOTE:**
 
->![](images/animated-exclamation-mark-image-0003.gif)**Don't uncheck `None` or else it will ignore everything except the checked Custom Formats.**
+>![](images/animated-exclamation-mark-image-0006.gif)**Don't uncheck `None` or else it will ignore everything except the checked Custom Formats.**
 
