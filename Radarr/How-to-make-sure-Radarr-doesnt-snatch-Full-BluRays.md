@@ -44,3 +44,7 @@ Make sure you uncheck your newly created Custom Profile `BR-DISK`
 
 Make sure you do that with all your used Quality Profiles.
 
+#### **NOTE:**
+
+>**Don't uncheck `None` or else it will ignore everything except the checked Custom Formats !!!**
+
