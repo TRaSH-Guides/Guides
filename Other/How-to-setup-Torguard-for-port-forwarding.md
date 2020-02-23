@@ -40,7 +40,8 @@ Then click on `Manage` and select `Request Port Forward`.
 2. Select `UDP`.
 3. Select a `Port/Auth` I personally use `995|SHA1`.
 4. Select the `Protocol` `TCP`. 
-5. I suggest to use a higher `Port` (This is also the port you will use in your torrent client).
+5. I suggest to use a high `Port` number 10.000+ or a game port you don't use, Don't use the default torrent ports 6881- 6889  !!!
+   (**This is also the port you will use in your torrent client**).
 6. Click on the `+` sign and do the same with the `UDP` `Protocol`.
 7. Then click on `Submit Request`.
 
