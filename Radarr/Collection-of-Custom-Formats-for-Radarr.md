@@ -2,11 +2,11 @@
 
 
 - [Dolby TrueHD/ATMOS](#dolby-truehd/atmos)
-- [DTS-HD/DTS:X](#dts-hd/dts:x)
+- [DTS-HD/DTS:X](#dts-hd-dts-x)
 - [BR-DISK](#br-disk)
 - [x264](#x264)
 - [x265 (real x265)](#x265)
-- [EVO (except WEB-DL)](#evo-(except-web-dl))
+- [EVO (except WEB-DL)](#evo-except-web-dl)
 
 ------
 #### Dolby TrueHD/ATMOS
@@ -18,7 +18,7 @@
 > To make this workable you need to put it in a order to what you prefer and above `none`.
 > ![](images/image-20200307123344848.png)
 ------
-#### DTS-HD/DTS:X
+#### DTS-HD DTS-X
 
 ![](images/image-20200307121910786.png)
 
@@ -53,7 +53,7 @@
 > I didn't add it because this would also mean that BR-DISK/Remux is a x265 and those are untouched sources so never are x265.
 > Luckily most x265 Encoders/Re-Encoders also add x265 so it get's picked up correctly.
 ------
-#### EVO (except WEB-DL)
+#### EVO except WEB-DL
 
 ![](images/image-20200307121133057.png)
 
