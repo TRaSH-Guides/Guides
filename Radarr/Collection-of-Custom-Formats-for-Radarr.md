@@ -43,7 +43,7 @@
 
 ![](images/image-20200307121316716.png)
 
-> x264 = `C_RX_(X|H)\?264`
+> x264 = `C_RX_(X|H)\.?264`
 >
 > If you prefer x264 releases (Encodes).
 ------
