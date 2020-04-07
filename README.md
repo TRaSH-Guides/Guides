@@ -17,7 +17,6 @@ If you have suggestions , requests or just want to leave some feedback please us
 *Everything here you use on your own risk I won't be hold responsible if something happens to your collection!*
 
 
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
+## Like what I do and want to Support me ?
 
-[![Beerpay](https://beerpay.io/TRaSH-/Tutorials-FAQ/badge.svg?style=beer-square)](https://beerpay.io/TRaSH-/Tutorials-FAQ)  [![Beerpay](https://beerpay.io/TRaSH-/Tutorials-FAQ/make-wish.svg?style=flat-square)](https://beerpay.io/TRaSH-/Tutorials-FAQ?focus=wish)
+Soon new options
