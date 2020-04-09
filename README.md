@@ -16,7 +16,9 @@ If you have suggestions , requests or just want to leave some feedback please us
 
 *Everything here you use on your own risk I won't be hold responsible if something happens to your collection!*
 
-
 ## Like what I do and want to Support me ?
 
-Soon new options
+> **PayPal:** ![](images/image-20200409200136483.png)
+>
+>  **BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP**
+
