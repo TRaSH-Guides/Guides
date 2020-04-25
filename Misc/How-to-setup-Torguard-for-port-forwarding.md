@@ -5,7 +5,8 @@
 >These settings are a recommendation if you want to choose other settings be my guest.
 >
 >If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575) and use the code: `TGLIFE`  to get 50% Off for Life.
-[![torguard-FreeTrial-270x90](images/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575)
+>
+>[![torguard-FreeTrial-270x90](images/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575)
 ------
 
 #### Create a user account.
