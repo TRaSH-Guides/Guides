@@ -85,6 +85,8 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [50]   /(-TOMMY|-ViSUM)/i
   [25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
+  [25]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
+  [25]   /(-JETIX)/i
   [15]   /\.S\d+\.(?!E\d+\.)/i
   [12]   /(repack3)/i
   [11]   /(repack2)/i
@@ -92,7 +94,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
   [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
-  [-50]  /(-TRUMP|-WEBTiFUL)/i
+  [-50]  /(-TRUMP|-WEBTiFUL|-JOMT|-APRiCiTY)/i
 
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
