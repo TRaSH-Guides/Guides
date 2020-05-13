@@ -33,7 +33,7 @@
 
 ![](images/image-20200307121221123.png)
 
-> BR-DISK = `C_RXRQ_(AVC|VC-1|HEVC)` `N_RXRQ_(REMUX)` `S_N_WEBDL` `C_RXRQ_^((?!x265).)*$`
+> BR-DISK = `C_RXRQ_(AVC|VC-1|HEVC)` `M_N_REMUX` `S_N_WEBDL` `C_RXRQ_^((?!x265).)*$`
 >
 > If you don't want BR-DISK (Iso's and Blu-ray folder structure).
 > To make this workable you need to uncheck it in your profile !!!
