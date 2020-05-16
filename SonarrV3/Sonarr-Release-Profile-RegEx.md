@@ -95,7 +95,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
   [-50]  /(-TRUMP|-WEBTiFUL|-JOMT|-APRiCiTY|-HILLARY)/i
-  [-50]  /(-SQUEAK|-KOMPOST|-WNN)/i
+  [-50]  /(-SQUEAK|-KOMPOST|-WNN|-LiGATE|-BTX)/i
 
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
