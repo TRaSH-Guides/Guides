@@ -78,7 +78,7 @@
 >
 >If you prefer Dolby Vision Video's you now can use Single layer Dolby Vision what seems to works in Plex on the Shield.... The Double layer's only tend to work on smart tv's.
 >
->To make this workable you need to check this in your profile !!!
+>To make this workable you need to check this in your profile and put it on top of the others you got !!!
 >
 >![](images/image-20200517185901176.png)
 >
