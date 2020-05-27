@@ -72,9 +72,11 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 # Preferred
  [100]   /(amzn|amazon).?web.?dl/i
-  [90]   /(nf|netflix).?web.?dl/i
+ [100]   /(atvp).?web.?dl/i
   [90]   /(dsnp|dsny|disney).?web.?dl/i
-  [90]   /(atvp).?web.?dl/i
+  [90]   /(nf|netflix).?web.?dl/i
+  [85]   /(DCU).?web.?dl/i
+  [85]   /(HMAX).?web.?dl/i
   [80]   /(-deflate|-inflate)/i
   [75]   /(hulu|.?hbo\.?)/i
   [75]   /(red).?web.?dl/i
@@ -95,7 +97,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
   [-50]  /(-TRUMP|-WEBTiFUL|-JOMT|-APRiCiTY|-HILLARY)/i
-  [-50]  /(-SQUEAK|-KOMPOST|-WNN|-LiGATE|-BTX)/i
+  [-50]  /(-SQUEAK|-KOMPOST|-WNN|-LiGATE|-BTX|-ALiGN)/i
 
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 
