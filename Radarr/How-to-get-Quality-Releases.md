@@ -134,3 +134,9 @@ Add the following to your Settings => Indexers => `Must Not Contain`
 >NOTE:
 >
 >- EVO (except WEB-DL)
+
+###### Custom Format
+To determine (and avoid) these groups if they exist in your existing library create a custom format.
+
+To create a custom format in Radarr V3 of these names simply take all the groups and delmit them by a | (pipe) then wrap both ends in \b.
+Create a new custom format for a release title that is required with that as the regex
