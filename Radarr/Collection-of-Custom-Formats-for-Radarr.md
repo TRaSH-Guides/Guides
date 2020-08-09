@@ -7,6 +7,7 @@
 - [x264](#x264)
 - [x265 (real x265)](#x265)
 - [EVO (except WEB-DL)](#evo-except-web-dl)
+- [Single Layer DV] (#single-layer-dv)
 
 ------
 #### Dolby TrueHD/ATMOS
@@ -74,7 +75,7 @@
 
 ![](images/image-20200517185154185.png)
 
->Single Layer DV = `C_RXRQ_SL.?DV`
+>Single Layer DV = `C_RXRQ_SL.?DV|Single.?Layer.?DoVi`
 >
 >If you prefer Dolby Vision Video's you now can use Single layer Dolby Vision what seems to works in Plex on the Shield.... The Double layer's only tend to work on smart tv's.
 >
