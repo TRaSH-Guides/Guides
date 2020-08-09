@@ -7,7 +7,7 @@
 - [x264](#x264)
 - [x265 (real x265)](#x265)
 - [EVO (except WEB-DL)](#evo-except-web-dl)
-- [Single Layer DV] (#single-layer-dv)
+- [Single Layer DV](#single-layer-dv)
 
 ------
 #### Dolby TrueHD/ATMOS
