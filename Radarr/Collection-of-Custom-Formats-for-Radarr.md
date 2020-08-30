@@ -75,7 +75,7 @@
 
 ![](images/image-20200517185154185.png)
 
->Single Layer DV = `C_RXRQ_SL.?DV|Single.?Layer.?DoVi` `M_N_REMUX`
+>Single Layer DV = `C_RXRQ_SL.?DV|Single.?Layer.?DoVi` `M_RQ_REMUX`
 >
 >If you prefer Dolby Vision Video's you now can use Single layer Dolby Vision what seems to works in Plex on the Shield.... The Double layer's only tend to work on smart tv's.
 >
