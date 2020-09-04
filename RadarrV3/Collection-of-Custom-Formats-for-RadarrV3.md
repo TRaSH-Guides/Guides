@@ -7,7 +7,7 @@ That I've found on discord or created myself with the help of others.
 >
 > Meaning: Quality Profile trumps Custom Formats !!!
 
-With the coming of Radarr V3 Custom Formats are much more advanced/powerful than with v0.2, althrough this also means a Custom Format is much more complicated to setup.
+With the coming of Radarr V3 Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
 So I decided to use more screenshots for the basic setups to make it as easy as possible.
 
 ------
@@ -30,9 +30,7 @@ You will need to add the following to your new Custom Format when created in you
 
  ![image-20200823155946642](images/image-20200823155946642.png)
 
-Release Title: `(avc|vc-1|hevc)` 
-Negate: `False` 
-Required: `True`
+>  Release Title: `(avc|vc-1|hevc)`  Negate: `False`  Required: `True`
 
  ![image-20200823160216479](images/image-20200823160216479.png)
 
@@ -42,15 +40,15 @@ Required: `False`
 
  ![image-20200823160329429](images/image-20200823160329429.png)
 
-Source: `WEBDL`
-Negate: `True`
-Required: `False`
+- Source: `WEBDL`
+- Negate: `True`
+- Required: `False`
 
  ![image-20200823160419447](images/image-20200823160419447.png)
 
-Release Title: `^((?!x265).)*$`
-Negate: `True`
-Required: `False`
+- Release Title: `^((?!x265).)*$`
+- Negate: `True`
+- Required: `False`
 
  ![image-20200823160456561](images/image-20200823160456561.png)
 
@@ -72,7 +70,7 @@ Required: `False`
 
 This group is often banned for the low quality Blu-ray releases but their WEB-DL are okay.
 
- ![image-20200823160627512](images/image-20200823160627512.png)
+ ![image-20200904223802798](images/image-20200904223802798.png)
 
 Release Title: `\b-EVO\b`
 Negate: `False`
