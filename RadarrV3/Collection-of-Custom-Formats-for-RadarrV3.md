@@ -8,7 +8,7 @@ That I've found on discord or created myself with the help of others.
 > Meaning: Quality Profile trumps Custom Formats !!!
 
 With the coming of Radarr V3 Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
-So I decided to use more screenshots for the basic setups to make it as easy as possible.
+
 
 ------
 
@@ -30,27 +30,21 @@ You will need to add the following to your new Custom Format when created in you
 
  ![image-20200823155946642](images/image-20200823155946642.png)
 
->  Release Title: `(avc|vc-1|hevc)`  Negate: `False`  Required: `True`
-
- ![image-20200823160216479](images/image-20200823160216479.png)
+Release Title: `(avc|vc-1|hevc)`
+Negate: `False`
+Required: `True`
 
 Quality Modifier: `Remux` 
 Negate: `True`
 Required: `False`
 
- ![image-20200823160329429](images/image-20200823160329429.png)
+Source: `WEBDL`
+Negate: `True`
+Required: `False`
 
-- Source: `WEBDL`
-- Negate: `True`
-- Required: `False`
-
- ![image-20200823160419447](images/image-20200823160419447.png)
-
-- Release Title: `^((?!x265).)*$`
-- Negate: `True`
-- Required: `False`
-
- ![image-20200823160456561](images/image-20200823160456561.png)
+Release Title: `^((?!x265).)*$`
+Negate: `True`
+Required: `False`
 
 #### **NOTE:**
 
@@ -76,14 +70,9 @@ Release Title: `\b-EVO\b`
 Negate: `False`
 Required: `False`
 
- ![image-20200823160801588](images/image-20200823160801588.png)
-
 Source: `WEBDL`
 Negate: `True`
 Required: `True`
-
-
- ![image-20200823162547299](images/image-20200823162547299.png)
 
 ------
 
@@ -93,17 +82,11 @@ Required: `True`
 
 If you prefer TrueHD|Atmos audio tracks.
 
-
-
  ![image-20200823144556484](images/image-20200823144556484.png)
-
-
 
 Release Title: `truehd|atmos`
 Negate: `False`
 Required: `True`
-
- ![image-20200823144701236](images/image-20200823144701236.png)
 
 ------
 
@@ -119,8 +102,6 @@ Release Title: `dts.?(hd|es|x(?!\d))`
 Negate: `False`
 Required: `True`
 
- ![image-20200823151639099](images/image-20200823151639099.png)
-
 ------
 
 ------
@@ -129,20 +110,15 @@ Required: `True`
 
 Custom Format for Single Layer Dolby Vision releases.
 
-
  ![image-20200823152059999](images/image-20200823152059999.png)
 
 Release Title: `sl.?dv|single.?layer.?dovi` 
 Negate: `False` 
 Required: `True`
 
- ![image-20200823152225653](images/image-20200823152225653.png)
-
 Quality Modifer: `Remux` 
 Negate: `False`
 Required: `True`
-
- ![image-20200823152302737](images/image-20200823152302737.png)
 
 ------
 
@@ -158,8 +134,6 @@ Edition: `extended|uncut|director|special|unrated|uncensored|\.cut[\.|-]`
 Negate: `False`
 Required: `True`
 
- ![image-20200904212930373](images/image-20200904212930373.png)
-
 ------
 
 ------
@@ -172,13 +146,9 @@ Release Title: `dd(p|\+)|eac3`
 Negate: `False`
 Required: `True`
 
- ![](images/image-20200904215205552.png)
-
 Release Title `TrueHD|ATMOS`
 Negate: `True`
 Required: `True`
-
- ![](images/image-20200904215249279.png)
 
 ------
 
