@@ -7,16 +7,8 @@ That I've found on discord or created myself with the help of others.
 >
 > Meaning: Quality Profile trumps Custom Formats !!!
 
-With the coming of Radarr v3 the Custom Formats is much more advanced/powerful then with v2 this also means it's much more complicated  to setup.
+With the coming of Radarr v3 the Custom Formats is much more advanced/powerful then with v0.2 this also means it's much more complicated  to setup.
 So I decided to use more screenshots for the basic setups to make it as easy as possible.
-
-First a few regex basics (work in progress!!!):
-
-`/b` = word break	
-
-`/i` = case insensitive
-
-`.?` = dot or space
 
 ------
 
@@ -24,7 +16,7 @@ First a few regex basics (work in progress!!!):
 | :--------------------------------------- | ----------------------------------- | --------------------------------------- |
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [Single Layer DV](#single-layer-dv) | [BR-DISK](#br-disk)                     |
 | [DTS-HD/DTS:X](#dts-hd-dts-x)            |                                     | [EVO except WEB-DL](#evo-except-web-dl) |
-|                                          |                                     | [Special Edition](#special-edition)     |
+| [DDP (non-Atmos)](#ddp-non-atmos)        |                                     | [Special Edition](#special-edition)     |
 
 
 
@@ -146,6 +138,22 @@ Custom format for several Special Editions
 `extended|uncut|director|special|unrated|uncensored|\.cut[\.|-]`
 
  ![image-20200904212930373](images/image-20200904212930373.png)
+
+------
+
+------
+
+### DDP (non-Atmos)
+
+ ![](images/image-20200904215047871.png)
+
+`dd(p|\+)|eac3`
+
+ ![](images/image-20200904215205552.png)
+
+`TrueHD|ATMOS`
+
+ ![](images/image-20200904215249279.png)
 
 ------
 
