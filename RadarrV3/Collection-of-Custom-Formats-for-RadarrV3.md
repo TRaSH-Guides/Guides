@@ -128,10 +128,14 @@ Required: `True`
 
 Custom format for several Special Editions
 
- ![image-20200904212829258](images/image-20200904212829258.png)
+ ![image-20200904233909845](images/image-20200904233909845.png)
 
-Edition: `extended|uncut|director|special|unrated|uncensored|\.cut[\.|-]`
+Edition: `extended|uncut|director|special|unrated|uncensored|\bCut\b|\bVersion\b`
 Negate: `False`
+Required: `True`
+
+Edition: `theatrical`
+Negate: `True`
 Required: `True`
 
 ------
