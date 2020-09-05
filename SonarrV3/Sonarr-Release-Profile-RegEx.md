@@ -90,6 +90,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
   [25]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
   [25]   /(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
+  [25]   /(-orbitron|-ETHiCS|-RTFM)/i
   [12]   /(repack3)/i
   [11]   /(repack2)/i
   [10]   /(repack|proper)/i
@@ -112,7 +113,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 # Optional Matches any release that contains '1-' as prefix for Release Groups
   [-25]  /(1-.+)$/i
 # Optional Matches Season Packs (use this if you preder Season packs)
-  [15]   /\.S\d+\.(?!E\d+\.)/i
+  [15]   /\bS\d+\b(?!E\d+\b)/i
 ```
 
 #### A little explanation of the scores and why.
