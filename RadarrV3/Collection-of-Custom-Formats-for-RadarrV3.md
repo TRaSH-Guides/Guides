@@ -44,7 +44,7 @@ Required: `False`
 
 Release Title: `^((?!x265).)*$`
 Negate: `True`
-Required: `False`
+Required: `True`
 
 #### **NOTE:**
 
@@ -66,7 +66,7 @@ This group is often banned for the low quality Blu-ray releases but their WEB-DL
 
 You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
- ![image-20200905193806785](images/image-20200905193806785.png)
+ ![image-20200905223125338](images/image-20200905223125338.png)
 
 Release Title: `\bEVO\b`
 Negate: `False`
@@ -74,7 +74,7 @@ Required: `False`
 
 Source: `WEBDL`
 Negate: `True`
-Required: `True`
+Required: `False`
 
 ------
 
@@ -84,11 +84,11 @@ Required: `True`
 
 If you prefer TrueHD|Atmos audio tracks.
 
- ![image-20200823144556484](images/image-20200823144556484.png)
+ ![image-20200905223224099](images/image-20200905223224099.png)
 
 Release Title: `truehd|atmos`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 ------
 
@@ -98,11 +98,11 @@ Required: `True`
 
 If you prefer DTS-HD/DTS:X audio tracks.
 
- ![image-20200823151557625](images/image-20200823151557625.png)
+ ![image-20200905223324883](images/image-20200905223324883.png)
 
 Release Title: `dts.?(hd|es|x(?!\d))`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 ------
 
@@ -112,11 +112,11 @@ Required: `True`
 
 Custom Format for Single Layer Dolby Vision releases.
 
- ![image-20200823152059999](images/image-20200823152059999.png)
+ ![image-20200905223433265](images/image-20200905223433265.png)
 
 Release Title: `sl.?dv|single.?layer.?dovi` 
 Negate: `False` 
-Required: `True`
+Required: `False`
 
 Quality Modifer: `Remux` 
 Negate: `False`
