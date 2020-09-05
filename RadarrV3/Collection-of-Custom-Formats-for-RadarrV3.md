@@ -15,8 +15,8 @@ With the coming of Radarr V3 Custom Formats are much more advanced/powerful than
 | Audio                                    | Video                               | Misc                                    |
 | :--------------------------------------- | ----------------------------------- | --------------------------------------- |
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [Single Layer DV](#single-layer-dv) | [BR-DISK](#br-disk)                     |
-| [DTS-HD/DTS:X](#dts-hd-dts-x)            |                                     | [EVO except WEB-DL](#evo-except-web-dl) |
-| [DDP (non-Atmos)](#ddp-non-atmos)        |                                     | [Special Edition](#special-edition)     |
+| [DTS-HD/DTS:X](#dts-hd-dts-x)            | [x264](#x264)                       | [EVO except WEB-DL](#evo-except-web-dl) |
+| [DDP (non-Atmos)](#ddp-non-atmos)        | [x265](#x265)                       | [Special Edition](#special-edition)     |
 
 
 
@@ -28,9 +28,9 @@ This is a custom format to help Radarr to recognize & ignore BR-DISK (ISO's and 
 
 You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
- ![image-20200823155946642](images/image-20200823155946642.png)
+ ![image-20200905193701986](images/image-20200905193701986.png)
 
-Release Title: `(avc|vc-1|hevc)`
+Release Title: `avc|vc-1|hevc`
 Negate: `False`
 Required: `True`
 
@@ -64,9 +64,11 @@ Required: `False`
 
 This group is often banned for the low quality Blu-ray releases but their WEB-DL are okay.
 
- ![image-20200904223802798](images/image-20200904223802798.png)
+You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
-Release Title: `\b-EVO\b`
+ ![image-20200905193806785](images/image-20200905193806785.png)
+
+Release Title: `\bEVO\b`
 Negate: `False`
 Required: `False`
 
@@ -153,6 +155,30 @@ Required: `True`
 Release Title `TrueHD|ATMOS`
 Negate: `True`
 Required: `True`
+
+------
+
+------
+
+### x264
+
+ ![image-20200905194336459](images/image-20200905194336459.png)
+
+Release Title: `(x|h)\.?264`
+Negate: `False`
+Required: `False`
+
+------
+
+------
+
+### x265
+
+ ![image-20200905194401001](images/image-20200905194401001.png)
+
+Release Title: `(x|h)\.?265`
+Negate: `False`
+Required: `False`
 
 ------
 
