@@ -17,7 +17,7 @@ With the coming of Radarr V3 Custom Formats are much more advanced/powerful than
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [Single Layer DV](#single-layer-dv) | [BR-DISK](#br-disk)                     |
 | [DTS-HD/DTS:X](#dts-hd-dts-x)            | [x264](#x264)                       | [EVO except WEB-DL](#evo-except-web-dl) |
 | [DDP (non-Atmos)](#ddp-non-atmos)        | [x265](#x265)                       | [Special Edition](#special-edition)     |
-
+|                                          |                                     | [Low Quality Releases](#low-quality-releases)     |
 
 
 ------
@@ -180,6 +180,37 @@ Release Title: `(x|h)\.?265`
 Negate: `False`
 Required: `False`
 
+------
+
+
+------
+
+### Low Quality Releases
+
+ IMG Needed
+#### Low-Quality Releases (often banned groups)[BLOCK1]
+Release Title: /b-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|-YIFY|-STUTTERSHIT/b
+Negate: `False`
+Required: `True`
+
+#### Another Small list of often banned groups.[BLOCK2]
+Release Title: /b-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE/b
+Negate: `False`
+Required: `True`
+
+#### And Another list.[BLOCK3]
+Release Title: /b-RARBG|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole/b
+Negate: `False`
+Required: `True`
+
+### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
+Release Title: /b-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi/b
+Negate: `False`
+Required: `True`
+
+>NOTE:
+>
+>- EVO (except WEB-DL)
 ------
 
 ------
