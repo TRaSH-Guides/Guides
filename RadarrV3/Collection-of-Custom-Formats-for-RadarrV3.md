@@ -207,7 +207,7 @@ Release Title: `/b-RARBG|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole/b`
 Negate: `False`
 Required: `True`
 
-### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
+#### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
 
 Release Title: `/b-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi/b`
 Negate: `False`
