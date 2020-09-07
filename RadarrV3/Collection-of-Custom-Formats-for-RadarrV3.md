@@ -169,32 +169,31 @@ Required: `False`
 
  ![image-20200906223719292](images/image-20200906223719292.png)
 
-Note: Required `True` is needed as there are multiple Release Titles within one custom format.
 You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
 #### Low-Quality Releases (often banned groups)[BLOCK1]
 
 Release Title:  `-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\bYIFY\b|\bYTS\b|-STUTTERSHIT`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 #### Another Small list of often banned groups.[BLOCK2]
 
 Release Title: `-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 #### And Another list.[BLOCK3]
 
 Release Title: `\bRARBG\b|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 #### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
 
 Release Title: `-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi`
 Negate: `False`
-Required: `True`
+Required: `False`
 
 >NOTE:
 >
