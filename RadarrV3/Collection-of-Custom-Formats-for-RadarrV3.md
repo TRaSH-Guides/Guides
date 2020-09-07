@@ -174,25 +174,25 @@ You will need to add the following to your new Custom Format when created in you
 
 #### Low-Quality Releases (often banned groups)[BLOCK1]
 
-Release Title:  `/b-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|YIFY|YTS|-STUTTERSHIT/b`
+Release Title:  `-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\bYIFY\b|\bYTS\b|-STUTTERSHIT`
 Negate: `False`
 Required: `True`
 
 #### Another Small list of often banned groups.[BLOCK2]
 
-Release Title: `\b-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE\b`
+Release Title: `-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE`
 Negate: `False`
 Required: `True`
 
 #### And Another list.[BLOCK3]
 
-Release Title: `\b-RARBG|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole\b`
+Release Title: `\bRARBG\b|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole`
 Negate: `False`
 Required: `True`
 
 #### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
 
-Release Title: `\b-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi\b`
+Release Title: `-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi`
 Negate: `False`
 Required: `True`
 
