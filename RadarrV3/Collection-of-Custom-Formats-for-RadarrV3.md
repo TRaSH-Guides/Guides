@@ -1,13 +1,13 @@
 ## Collection of Custom Formats for Radarr V3 (Aphrodite)
 
-Here I will try to collect a collection of most needed/used Custom Formats.
-That I've found on discord or created myself with the help of others.
+Here I will try to collect a collection of the most needed and commonly used Custom Formats.
+These have been collected from either disucssions on discord or that I created with help from others.
 
 > Keep in mind Custom Formats are made to fine tune your Quality Profile !!!
 >
 > Meaning: Quality Profile trumps Custom Formats !!!
 
-With the coming of Radarr V3 Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
+With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
 
 
 ------
@@ -55,26 +55,6 @@ Required: `True`
 >
 > - Blame the often wrongly used naming of x265 encodes.
 > - Radarr v3 uses dynamic custom formats 
-
-------
-
-------
-
-### EVO except WEB-DL
-
-This group is often banned for the low quality Blu-ray releases but their WEB-DL are okay.
-
-You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
-
- ![image-20200905223125338](images/image-20200905223125338.png)
-
-Release Title: `\bEVO\b`
-Negate: `False`
-Required: `False`
-
-Source: `WEBDL`
-Negate: `True`
-Required: `False`
 
 ------
 
@@ -189,33 +169,55 @@ Required: `False`
 
  ![image-20200906223719292](images/image-20200906223719292.png)
 
+Note: Required `True` is needed as there are multiple Release Titles within one custom format.
+You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+
 #### Low-Quality Releases (often banned groups)[BLOCK1]
 
-Release Title:  `/b-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|-YIFY|-STUTTERSHIT/b`
+Release Title:  `-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\bYIFY\b|\bYTS\b|-STUTTERSHIT`
 Negate: `False`
 Required: `True`
 
 #### Another Small list of often banned groups.[BLOCK2]
 
-Release Title: `/b-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE/b`
+Release Title: `-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE`
 Negate: `False`
 Required: `True`
 
 #### And Another list.[BLOCK3]
 
-Release Title: `/b-RARBG|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole/b`
+Release Title: `\bRARBG\b|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole`
 Negate: `False`
 Required: `True`
 
 #### Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.[BLOCK4]
 
-Release Title: `/b-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi/b`
+Release Title: `-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi`
 Negate: `False`
 Required: `True`
 
 >NOTE:
 >
 >- [EVO except WEB-DL](#evo-except-web-dl)
+------
+------
+
+### EVO except WEB-DL
+
+This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
+
+You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+
+ ![image-20200905223125338](images/image-20200905223125338.png)
+
+Release Title: `\bEVO\b`
+Negate: `False`
+Required: `False`
+
+Source: `WEBDL`
+Negate: `True`
+Required: `False`
+
 ------
 
 ------
