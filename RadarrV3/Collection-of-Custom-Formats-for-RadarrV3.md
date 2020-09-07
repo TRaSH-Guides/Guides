@@ -167,7 +167,7 @@ Required: `False`
 
 ### Low Quality Releases
 
- ![image-20200906223719292](images/image-20200906223719292.png)
+ ![image-20200907194734396](images/image-20200907194734396.png)
 
 You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
