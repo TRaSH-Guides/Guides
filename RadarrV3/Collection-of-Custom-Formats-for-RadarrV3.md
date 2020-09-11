@@ -24,7 +24,7 @@ With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, a
 
 ### BR-DISK
 
-This is a custom format to help Radarr to recognize & ignore BR-DISK (ISO's and Blu-ray folder structure). 
+This is a custom format to help Radarr to recognize & ignore BR-DISK (ISO's and Blu-ray folder structure).
 
 You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
 
@@ -34,7 +34,7 @@ Release Title: `avc|vc-1|hevc`
 Negate: `False`
 Required: `True`
 
-Quality Modifier: `Remux` 
+Quality Modifier: `Remux`
 Negate: `True`
 Required: `False`
 
@@ -54,7 +54,7 @@ Required: `True`
 > Several reasons why this is happening:
 >
 > - Blame the often wrongly used naming of x265 encodes.
-> - Radarr v3 uses dynamic custom formats 
+> - Radarr v3 uses dynamic custom formats
 
 ------
 
@@ -80,7 +80,7 @@ If you prefer DTS-HD/DTS:X audio tracks.
 
  ![image-20200905223324883](images/image-20200905223324883.png)
 
-Release Title: `dts.?(hd|es|x(?!\d))`
+Release Title: `dts\.?(hd|es|x(?!\d))`
 Negate: `False`
 Required: `False`
 
@@ -94,11 +94,11 @@ Custom Format for Single Layer Dolby Vision releases.
 
  ![image-20200905223433265](images/image-20200905223433265.png)
 
-Release Title: `sl.?dv|single.?layer.?dovi` 
-Negate: `False` 
+Release Title: `sl\.?dv|single\.?layer\.?dovi`
+Negate: `False`
 Required: `False`
 
-Quality Modifer: `Remux` 
+Quality Modifer: `Remux`
 Negate: `False`
 Required: `True`
 
@@ -220,4 +220,3 @@ Required: `False`
 ------
 
 ------
-

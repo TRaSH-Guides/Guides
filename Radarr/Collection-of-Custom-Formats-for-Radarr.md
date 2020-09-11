@@ -24,7 +24,7 @@
 
 ![](images/image-20200307121910786.png)
 
-> DTS-HD/DTS:X = `C_RXRQ_DTS.?(HD|ES|X(?!\d))`
+> DTS-HD/DTS:X = `C_RXRQ_DTS\.?(HD|ES|X(?!\d))`
 >
 > If you prefer DTS-HD audio tracks.
 > To make this workable you need to put it in a order to what you prefer and above `none`.
@@ -75,7 +75,7 @@
 
 ![](images/image-20200517185154185.png)
 
->Single Layer DV = `C_RXRQ_SL.?DV|Single.?Layer.?DoVi` `M_RQ_REMUX`
+>Single Layer DV = `C_RXRQ_SL\.?DV|Single\.?Layer\.?DoVi` `M_RQ_REMUX`
 >
 >If you prefer Dolby Vision Video's you now can use Single layer Dolby Vision what seems to works in Plex on the Shield.... The Double layer's only tend to work on smart tv's.
 >
@@ -86,4 +86,3 @@
 >And also make sure you set it as `Custom Format Cutoff`
 >
 >![](images/image-20200517190028898.png)
-
