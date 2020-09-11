@@ -1,0 +1,24 @@
+{
+  "name": "DDP (non-Atmos)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "dd(p|\\+)|eac3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "dd(p|\\+)|eac3"
+      }
+    },
+    {
+      "name": "TrueHD|ATMOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "TrueHD|ATMOS"
+      }
+    }
+  ]
+}

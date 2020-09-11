@@ -1,0 +1,15 @@
+{
+  "name": "Dolby TrueHD/ATMOS",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "truehd|atmos",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "truehd|atmos"
+      }
+    }
+  ]
+}

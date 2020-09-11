@@ -1,0 +1,24 @@
+{
+  "name": "3D",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "3D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "3d"
+      }
+    },
+    {
+      "name": "SBS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "sbs"
+      }
+    }
+  ]
+}

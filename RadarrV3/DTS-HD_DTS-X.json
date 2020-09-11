@@ -1,0 +1,15 @@
+{
+  "name": "DTS-HD/DTS:X",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "dts\\.?(hd|es|x(?!\\d))",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "dts\\.?(hd|es|x(?!\\d))"
+      }
+    }
+  ]
+}

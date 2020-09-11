@@ -1,0 +1,42 @@
+{
+  "name": "Low-Quality Releases",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "[BLOCK1]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\\bYIFY\\b|\\bYTS\\b|-STUTTERSHIT"
+      }
+    },
+    {
+      "name": "[BLOCK2]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE"
+      }
+    },
+    {
+      "name": "[BLOCK3]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bRARBG\\b|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole"
+      }
+    },
+    {
+      "name": "[BLOCK4]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-beAst|-CHD|-EVO|-HDWinG|-MTeam|-MySiLU|-WiKi"
+      }
+    }
+  ]
+}

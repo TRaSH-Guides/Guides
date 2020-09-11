@@ -1,0 +1,24 @@
+{
+  "name": "Single Layer DV",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "sl\\.?dv|single\\.?layer\\.?dovi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "sl\\.?dv|single\\.?layer\\.?dovi"
+      }
+    },
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}

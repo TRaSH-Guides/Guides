@@ -1,0 +1,24 @@
+{
+  "name": "EVO (except WEB-DL)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "EVO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bEVO\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}

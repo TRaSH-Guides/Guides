@@ -1,0 +1,24 @@
+{
+  "name": "Special Edition",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Special Edition",
+      "implementation": "EditionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "extended|uncut|director|special|unrated|uncensored|\\bCut\\b|\\bVersion\\b"
+      }
+    },
+    {
+      "name": "theatrical ",
+      "implementation": "EditionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "theatrical "
+      }
+    }
+  ]
+}
