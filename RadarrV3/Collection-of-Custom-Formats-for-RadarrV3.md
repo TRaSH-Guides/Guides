@@ -133,12 +133,12 @@ If you prefer DTS-HD/DTS:X audio tracks.
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "dts.?(hd|es|x(?!\\d))",
+      "name": "dts\\.?(hd|es|x(?!\\d))",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "dts.?(hd|es|x(?!\\d))"
+        "value": "dts\\.?(hd|es|x(?!\\d))"
       }
     }
   ]
@@ -164,7 +164,7 @@ Custom Format for Single Layer Dolby Vision releases.
       "negate": false,
       "required": true,
       "fields": {
-        "value": "sl.?dv|single.?layer.?dovi"
+        "value": "sl\\.?dv|single\\.?layer\\.?dovi"
       }
     },
     {
@@ -310,7 +310,7 @@ x265 is a **free software** **library** and **application** for encoding video s
 > It's all really dependent on specific situations for different people
 
 > #### Some extra info about 4K/X265
-> 
+>
 >Source: Plex, [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203)
 > 1. Don’t bother transcoding 4k
 > 2. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
@@ -773,7 +773,7 @@ Description
       "negate": true,
       "required": true,
       "fields": {
-        "value": "dts.?(hd|ma|es|hi)"
+        "value": "dts\\.?(hd|ma|es|hi)"
       }
     },
     {
@@ -1181,7 +1181,7 @@ description
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dts.?(es|(hd.?)?(hr|hi))"
+        "value": "dts\\.?(es|(hd\\.?)?(hr|hi))"
       }
     },
     {
@@ -1288,7 +1288,7 @@ description
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dts.?(hd.?)?(hr|hi)"
+        "value": "dts\\.?(hd\\.?)?(hr|hi)"
       }
     },
     {
@@ -1369,7 +1369,7 @@ description
       "negate": true,
       "required": true,
       "fields": {
-        "value": "dts.?es"
+        "value": "dts\\.?es"
       }
     },
     {
@@ -1404,7 +1404,7 @@ description
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dts.?(ma|hd.?ma)"
+        "value": "dts\\.?(ma|hd\\.?ma)"
       }
     },
     {
@@ -1485,7 +1485,7 @@ description
       "negate": true,
       "required": true,
       "fields": {
-        "value": "dts.?(es|(hd.?)?(hr|hi))"
+        "value": "dts\\.?(es|(hd\\.?)?(hr|hi))"
       }
     }
   ]
@@ -1857,4 +1857,3 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 ------
 
 ------
-

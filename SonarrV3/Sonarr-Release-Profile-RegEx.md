@@ -8,7 +8,7 @@ Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
-So if you care less about quality then stop reading and don't use this guide. 
+So if you care less about quality then stop reading and don't use this guide.
 Why ? Scene release always release in a rush to bring it out as fast as possible,
 so I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
 P2P releases are a bit smarter and work sort of together by not doing the same release.
@@ -17,7 +17,7 @@ And in my opinion the P2P are of better quality.
 Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` .
 
 #### **Update**
-A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. 
+A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
 The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
 
 #### Propers and Repacks
@@ -40,7 +40,7 @@ Then you will get a popup screen that will look like this =>
 
 ![](images/1571573834508.png)
 
-`Must Contain` => add words that the release name **MUST HAVE!** 
+`Must Contain` => add words that the release name **MUST HAVE!**
 
 `Must Not Contain` => add words that the release name **MUST NOT HAVE AND SO TO BE IGNORE!**
 
@@ -71,17 +71,17 @@ The Number between the **[**brackets**]** are the scores the release name will g
 /(x|h)\.?265/i, hevc
 
 # Preferred
- [100]   /(amzn|amazon).?web.?dl/i
- [100]   /(atvp).?web.?dl/i
-  [90]   /(dsnp|dsny|disney).?web.?dl/i
-  [90]   /(nf|netflix).?web.?dl/i
-  [85]   /(DCU).?web.?dl/i
-  [85]   /(HMAX).?web.?dl/i
+ [100]   /(amzn|amazon)\.?web\.?dl/i
+ [100]   /(atvp)\.?web\.?dl/i
+  [90]   /(dsnp|dsny|disney)\.?web\.?dl/i
+  [90]   /(nf|netflix)\.?web\.?dl/i
+  [85]   /(DCU)\.?web\.?dl/i
+  [85]   /(HMAX)\.?web\.?dl/i
   [80]   /(-deflate|-inflate)/i
-  [75]   /(hulu|.?hbo\.?)/i
-  [75]   /(red).?web.?dl/i
-  [75]   /(QIBI).?web.?dl/i
-  [75]   /(iT).?web.?dl/i
+  [75]   /(hulu|\.?hbo\.?)/i
+  [75]   /(red)\.?web\.?dl/i
+  [75]   /(QIBI)\.?web\.?dl/i
+  [75]   /(iT)\.?web\.?dl/i
 
   [50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
   [50]   /(-monkee|-MZABI|-NTb|-NTG|-QOQ|-RTN)/i
@@ -132,7 +132,7 @@ Scores [-100] Groups that mess with the audio or add another preferred language.
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
 
 
-The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks. 
+The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks.
 
 #### Final Results.
 
