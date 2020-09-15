@@ -16,19 +16,22 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 
 ------
 
-| Audio                                    | Audio Advanced                                | Video                                                     | Video Advanced                                | Misc                                          |
-| :--------------------------------------- | --------------------------------------------- | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
-| [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [ATMOS (indeterminate)](#atmos-indeterminate) | [3D](#3D)                                                 | [Remaster](#remaster)                         | [BR-DISK](#br-disk)                           |
-| [DTS-HD/DTS:X](#dts-hddtsx)              | [Basic Dolby Digital](#basic-dolby-digital)   | [x264](#x264)                                             | [4K Remaster](#4k-remaster)                   | [EVO except WEB-DL](#evo-except-web-dl)       |
-| [Surround Sounds](#surround-sounds)      | [Basic DTS](#basic-dts)                       | [x265](#x265)                                             | [Criterion Collection](#criterion-collection) | [Low Quality Releases](#low-quality-releases) |
-|                                          | [DD+ ATMOS (lossy)](#dd-atmos-lossy)          | [Dolby Vision](#dolby-vision)                             | [Theatrical Cut](#theatrical-cut)             | [Repack/Proper](#repack-proper)               |
-|                                          | [Dolby Digital Plus](#dolby-digital-plus)     | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Special Edition](#special-edition)           | [Anime Dual Audio](#anime-dual-audio)         |
-|                                          | [DTS X](#dts-x)                               | [HDR](#hdr)                                               |                                               | [Hybrid](#hybrid)                             |
-|                                          | [DTS-ES](#dts-es)                             |                                                           |                                               | [Multi](#multi)                               |
-|                                          | [DTS-HD HRA](#dts-hd-hra)                     |                                                           |                                               | [FreeLeech](#freeleech)                       |
-|                                          | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               |                                               |
-|                                          | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
-|                                          | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
+| Audio                                    | Audio Channels               | Audio Advanced                                | Video                                                     | Video Advanced                                | Misc                                          |
+| :--------------------------------------- | ---------------------------- | --------------------------------------------- | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [1.0 Mono](#10-mono)         | [ATMOS (indeterminate)](#atmos-indeterminate) | [3D](#3D)                                                 | [Remaster](#remaster)                         | [BR-DISK](#br-disk)                           |
+| [DTS-HD/DTS:X](#dts-hddtsx)              | [2.0 Stereo](#20-stereo)     | [Basic Dolby Digital](#basic-dolby-digital)   | [x264](#x264)                                             | [4K Remaster](#4k-remaster)                   | [EVO except WEB-DL](#evo-except-web-dl)       |
+| [Surround Sounds](#surround-sounds)      | [3.0 Sound](#30-sound)       | [Basic DTS](#basic-dts)                       | [x265](#x265)                                             | [Criterion Collection](#criterion-collection) | [Low Quality Releases](#low-quality-releases) |
+|                                          | [4.0 Sound](#40-sound)       | [DD+ ATMOS (lossy)](#dd-atmos-lossy)          | [Dolby Vision](#dolby-vision)                             | [Theatrical Cut](#theatrical-cut)             | [Repack/Proper](#repack-proper)               |
+| [AAC](#aac)                              | [5.1 Surround](#51-surround) | [Dolby Digital Plus](#dolby-digital-plus)     | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Special Edition](#special-edition)           | [Anime Dual Audio](#anime-dual-audio)         |
+| [FLAC](#flac)                            | [6.1 Surround](#61-surround) | [DTS X](#dts-x)                               | [HDR](#hdr)                                               |                                               | [Hybrid](#hybrid)                             |
+| [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         |                                               | [Multi](#multi)                               |
+| [MPEG2](#mpeg2)                          | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     |                                                           |                                               | [FreeLeech](#freeleech)                       |
+| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               |                                               |
+| [PCM](#pcm)                              |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
+|                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
+|                                          |                              |                                               |                                                           |                                               |                                               |
+|                                          |                              |                                               |                                                           |                                               |                                               |
+|                                          |                              |                                               |                                                           |                                               |                                               |
 
 ------
 
@@ -1848,6 +1851,810 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
       "required": false,
       "fields": {
         "value": 1
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 1.0 Mono
+
+1.0 Mono
+
+```json
+{
+  "name": "1.0 Mono",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Mono",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]1\\.0|\\bMono\\b|\\[PCM \\]"
+      }
+    },
+    {
+      "name": "Not Stereo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9]2\\.0|\\bStereo\\b"
+      }
+    },
+    {
+      "name": "Not 3.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]3\\.0"
+      }
+    },
+    {
+      "name": "Not 4.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]4\\.0"
+      }
+    },
+    {
+      "name": "Not High Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][5-9]\\.[0-1]"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 2.0 Stereo
+
+2.0 Stereo
+
+```json
+{
+  "name": "2.0 Stereo",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Stereo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9]2\\.0|\\bStereo\\b"
+      }
+    },
+    {
+      "name": "Not 3.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]3\\.0"
+      }
+    },
+    {
+      "name": "Not 4.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]4\\.0"
+      }
+    },
+    {
+      "name": "Not High Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][5-9]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not Mono",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]1\\.0|\\bMono\\b|\\[PCM \\]"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 3.0 Sound
+
+3.0 Sound
+
+```json
+{
+  "name": "3.0 Sound",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "3.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]3\\.0"
+      }
+    },
+    {
+      "name": "Not Mono",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]1\\.0|\\bMono\\b|\\[PCM \\]"
+      }
+    },
+    {
+      "name": "Not Stereo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9]2\\.0|\\bStereo\\b"
+      }
+    },
+    {
+      "name": "Not 4.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]4\\.0"
+      }
+    },
+    {
+      "name": "Not High Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][5-9]\\.[0-1]"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 4.0 Sound
+
+4.0 Sound
+
+```json
+{
+  "name": "4.0 Sound",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "4.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]4\\.0"
+      }
+    },
+    {
+      "name": "Not Mono",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]1\\.0|\\bMono\\b|\\[PCM \\]"
+      }
+    },
+    {
+      "name": "Not Stereo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9]2\\.0|\\bStereo\\b"
+      }
+    },
+    {
+      "name": "Not 3.0ch",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]3\\.0"
+      }
+    },
+    {
+      "name": "Not High Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][5-9]\\.[0-1]"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 5.1 Surround
+
+5.1 Surround
+
+```json
+{
+  "name": "5.1 Surround",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "5.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]5\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 7.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][7-8]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 9.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]9\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not Low Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9][1-4]\\.[0-1]|\\b(Stereo|Mono)\\b"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 6.1 Surround
+
+6.1 Surround
+
+```json
+{
+  "name": "6.1 Surround",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "6.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]6\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 7.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][7-8]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 9.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]9\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not Low Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9][1-4]\\.[0-1]|\\b(Stereo|Mono)\\b"
+      }
+    },
+    {
+      "name": "Not 5.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]5\\.[0-1]"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 7.1 Surround
+
+7.1 Surround
+
+```json
+{
+  "name": "7.1 Surround",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "7.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][7-8]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 9.1  Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]9\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not Low Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9][1-4]\\.[0-1]|\\b(Stereo|Mono)\\b"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 9.1 Surround
+
+9.1 Surround
+
+```json
+{
+  "name": "9.1 Surround",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "9.1  Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]9\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 7.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][7-8]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not 5.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][5-6]\\.[0-1]"
+      }
+    },
+    {
+      "name": "Not Low Channel Count",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!repac)[^0-9][1-4]\\.[0-1]|\\b(Stereo|Mono)\\b"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### AAC
+
+AAC
+
+```json
+{
+  "name": "AAC",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bAAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not DTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDTS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Dolby Digital Plus ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "dd[p+]|eac3"
+      }
+    },
+    {
+      "name": "Not Basic Dolby Digital",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!e)ac3"
+      }
+    },
+    {
+      "name": "Not PCM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(l?)PCM(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not FLAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bFLAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not TrueHD/ATMOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "TrueHD|\\bATMOS(\\b|\\d)"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### FLAC
+
+FLAC
+
+```json
+{
+  "name": "FLAC",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "FLAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bFLAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not PCM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(l?)PCM(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not AAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bAAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not DTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDTS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not TrueHD/ATMOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "TrueHD|\\bATMOS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Basic Dolby Digital",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!e)ac3"
+      }
+    },
+    {
+      "name": "Not Dolby Digital Plus ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "dd[p+]|eac3"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### MP3
+
+MP3
+
+```json
+{
+  "name": "MP3",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MP3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "mp3"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### MPEG2
+
+MPEG2
+
+```json
+{
+  "name": "MPEG2",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MPEG2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "MPEG-?2"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### Opus
+
+Opus
+
+```json
+{
+  "name": "Opus",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Opus",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bOPUS(\\b|\\d)"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### PCM
+
+PCM
+
+```json
+{
+  "name": "PCM",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "PCM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(l?)PCM(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not AAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bAAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not FLAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bFLAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not DTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDTS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not TrueHD/ATMOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "TrueHD|\\bATMOS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Basic Dolby Digital",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!e)ac3"
+      }
+    },
+    {
+      "name": "Not Dolby Digital Plus ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "dd[p+]|eac3"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### 10 Bit
+
+10 Bit
+
+```json
+{
+  "name": "10 Bit",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "10 Bit",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b10bit(\\b|\\d)"
       }
     }
   ]
