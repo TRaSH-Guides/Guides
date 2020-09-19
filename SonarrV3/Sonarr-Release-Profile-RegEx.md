@@ -112,7 +112,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-25]  /\s?\ben\b$/i
 # Optional Matches any release that contains '1-' as prefix for Release Groups
   [-25]  /(1-.+)$/i
-# Optional Matches Season Packs (use this if you preder Season packs)
+# Optional Matches Season Packs (use this if you prefer Season packs)
   [15]   /\bS\d+\b(?!E\d+\b)/i
 ```
 
