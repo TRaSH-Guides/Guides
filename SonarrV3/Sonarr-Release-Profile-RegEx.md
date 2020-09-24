@@ -90,7 +90,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
   [25]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
   [25]   /(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
-  [25]   /(-orbitron|-ETHiCS|-RTFM)/i
+  [25]   /(-orbitron|-ETHiCS|-RTFM|-PSiG)/i
   [12]   /(repack3)/i
   [11]   /(repack2)/i
   [10]   /(repack|proper)/i
@@ -99,8 +99,9 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
   [-50]  /(-TRUMP|-WEBTiFUL|-JOMT|-APRiCiTY|-HILLARY)/i
   [-50]  /(-SQUEAK|-KOMPOST|-WNN|-LiGATE|-BTX|-ALiGN)/i
-  [-50]  /(-BLACKHAT)/i
+  [-50]  /(-BLACKHAT|-BEA|-N3TFL1X|-EYEZ)/i
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
+ [-100]  /(-VIDEOHOLE)/i
 
 # Optional (use these only if you dislike renamed and retagged releases)
   [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
