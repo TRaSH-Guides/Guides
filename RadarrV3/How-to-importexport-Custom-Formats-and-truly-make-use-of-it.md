@@ -5,7 +5,6 @@ Here I will try to explain how you can import Custom Formats for Radarr v3 (Aphr
 >
 > **Meaning: Quality Profile trumps Custom Formats !!!**
 
-- [How to import/export Custom Formats and truly make use of it](#how-to-importexport-custom-formats-and-truly-make-use-of-it)
 - [How to import a JSON Custom Format](#how-to-import-a-json-custom-format)
 - [How to make use of the Custom Formats in your profiles](#how-to-make-use-of-the-custom-formats-in-your-profiles)
 - [Tips how to setup the scores](#tips-how-to-setup-the-scores)
