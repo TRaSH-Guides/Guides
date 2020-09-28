@@ -26,7 +26,7 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 | [FLAC](#flac)                            | [6.1 Surround](#61-surround) | [DTS X](#dts-x)                               | [HDR](#hdr)                                               |                                               | [Hybrid](#hybrid)                             |
 | [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         |                                               | [Multi](#multi)                               |
 | [PCM](#pcm)                              | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     | [MPEG2](#mpeg2)                                           |                                               | [FreeLeech](#freeleech)                       |
-| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               |                                               |
+| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               | [Dutch Groups](#dutch-groups)                 |
 |                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
 |                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
 |                                          |                              |                                               |                                                           |                                               |                                               |
@@ -2655,6 +2655,32 @@ PCM
       "required": true,
       "fields": {
         "value": "\\b10bit(\\b|\\d)"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### Dutch Groups
+
+If you prefer movies with also a Dutch audio track.
+
+```json
+{
+  "name": "Dutch Groups",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Dutch Groups",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "-CyTSuNee|-SHiTSoNy|-QoQ"
       }
     }
   ]
