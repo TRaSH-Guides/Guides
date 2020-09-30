@@ -8,7 +8,7 @@ Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
-So if you care less about quality then stop reading and don't use this guide. 
+So if you care less about quality then stop reading and don't use this guide.
 Why ? Scene release always release in a rush to bring it out as fast as possible,
 so I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
 P2P releases are a bit smarter and work sort of together by not doing the same release.
@@ -16,73 +16,82 @@ Also I noticed that with some Scene releases the 5.1 audio was stripped out or c
 And in my opinion the P2P are of better quality.
 Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` .
 
-#### **Update**
+> ***Keep in mind this list will be a constant work in progress because I will be updating it when it's needed***
+> ***So best to set a notification for updates for this page.***
+
+#### Update
+
 A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. 
 The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
 
 #### Propers and Repacks
+
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
 
-![](images/1571575011671.png)
+ ![](images/1571575011671.png)
 
 Settings => `Media Management`
 Where we going to set it to `Do not Prefer`
 
-
-
 Then we navigate in Sonarr to the Settings =>  `Profiles`
 
-![](images/1571573554399.png)
-
-
+ ![](images/1571573554399.png)
 
 Then you will get a popup screen that will look like this =>
 
-![](images/1571573834508.png)
+ ![image-20200930190924569](images/image-20200930190924569.png)
 
-`Must Contain` => add words that the release name **MUST HAVE!** 
+`Must Contain` => add words that the release name **MUST HAVE!**
 
 `Must Not Contain` => add words that the release name **MUST NOT HAVE AND SO TO BE IGNORE!**
 
-`Preferred`=> add words you prefer with a certain score what you prefer more or upgrade.
+`Preferred` => add words you prefer with a certain score what you prefer more or upgrade.
+
+`Include Preferred when Renaming` => When you add `{Preferred Words}` to your renaming scheme it will add this info.
+
+`Indexers` => Specify what indexer the profile applies to.
 
 `Tags` => create a tag so this is only used by shows that you give this tag or else it's global.
 
-
-
-We're only to make use of options 2 and 3.
 The Number between the **[**brackets**]** are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
-***Keep in mind this list will be a constant work in progress because I will be updating it when it's needed***
-***So best to set a notification for updates for this page.***
+#### Release Source (Streaming Service)
 
-#### Sonarr Release Profile RegEx
 ```markdown
-# Sonarr Release Profile RegEx
-# This list is made by collecting information from Sonarr Discord Channel,
-# and personal testing and a few others that helped.
-# So I want to thnx everyone who helped to make this list possible,
-# For privacy reasons I decided not to add the names/nick of the persons.
-# If you want to be mentioned please message me on discord,
-# including a link for proof to what part you want to be credited.
-
-
-# Must Not Contain
-/(x|h)\.?265/i, hevc
-
-# Preferred
+# Preferred (3)
  [100]   /(amzn|amazon).?web.?dl/i
  [100]   /(atvp).?web.?dl/i
   [90]   /(dsnp|dsny|disney).?web.?dl/i
   [90]   /(nf|netflix).?web.?dl/i
   [85]   /(DCU).?web.?dl/i
   [85]   /(HMAX).?web.?dl/i
-  [80]   /(-deflate|-inflate)/i
   [75]   /(hulu|.?hbo\.?)/i
   [75]   /(red).?web.?dl/i
   [75]   /(QIBI).?web.?dl/i
   [75]   /(iT).?web.?dl/i
+```
 
+> Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
+>
+> What it does:
+>
+> When enabled the block with the [Release Source (Streaming Service)](#release-source-streaming-service) in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
+> Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.
+> Enabling the include in preferred words for AMZN and adding that to the file name fixes that.
+>
+> Example of a naming scheme for series:
+>
+> `{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]}{[MediaInfo Simple]}{[Preferred Words]}{-Release Group}`
+>
+
+#### P2P + Scene Groups
+
+```markdown
+# Must Not Contain (2)
+/(x|h)\.?265/i, hevc
+
+# Preferred (3)
+  [80]   /(-deflate|-inflate)/i
   [50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
   [50]   /(-monkee|-MZABI|-NTb|-NTG|-QOQ|-RTN)/i
   [50]   /(-TOMMY|-ViSUM|-T6D)/i
@@ -102,7 +111,11 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [-50]  /(-BLACKHAT|-BEA|-N3TFL1X|-EYEZ)/i
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
  [-100]  /(-VIDEOHOLE)/i
+```
 
+#### Optional preferred preferences
+
+```markdown
 # Optional (use these only if you dislike renamed and retagged releases)
   [-25]  /(\[rartv\]|\[eztv\]|\[TGx\])/i
   [-25]  /(-4P|-4Planet|-AsRequested|-BUYMORE)/i
@@ -117,7 +130,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [15]   /\bS\d+\b(?!E\d+\b)/i
 ```
 
-#### A little explanation of the scores and why.
+#### A little explanation of the scores and why
 
 Scores [75]-[100] Release Source.
 Scores [25]-[50] P2P Groups.
@@ -129,21 +142,30 @@ Scores [-25] Retagged/Renames/Obfuscated  releases.
 Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
 
-
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
 
+The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks.
 
-The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks. 
-
-#### Final Results.
+#### Final Results
 
 When you've done it correctly it will look something like this.
 
-![](images/image-20200201111836915.png)
+ ![image-20200930194201036](images/image-20200930194201036.png)
 
 And after you clicked on `Save` it will look something like this:
 
-![](images/image-20200201112039657.png)
+ ![image-20200930194224862](images/image-20200930194224862.png)
+
+------
+
+> *This list is made by collecting information from Sonarr Discord Channel,*
+> *and personal testing and a few others that helped.*
+> *So I want to thnx everyone who helped to make this list possible,*
+> *For privacy reasons I decided not to add the names/nick of the persons.*
+> *If you want to be mentioned please message me on discord,*
+> *including a link for proof to what part you want to be credited.*
+
+------
 
 ### Why Not x265
 
@@ -167,10 +189,14 @@ If you want maximum compatibility and the option to change your files to somethi
 then x264.
 It's all really dependent on specific situations for different people
 ```
+
 #### Some extra info about 4K/X265
+
 > Source: Plex, [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203)
+>
 > 1. Don’t bother transcoding 4k
 > 2. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
 > 3. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
 > 4. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
 > 5. This may of course mean that you keep a 4k copy and a 1080/720 copy, but if you are collecting 4k content then you should not be worried about storage space, should you?
+
