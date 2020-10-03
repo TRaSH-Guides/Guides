@@ -87,7 +87,7 @@ My suggestion is to create tiers of scores based on what things matter to you.
 
 Lets say you prefer HD audio (with object metadata)
 
-`Basic Dolby Digital < AAC < Basic DTS < DTS-ES < Dolby Digital Plus < DTS-HD HRA < PCM = FLAC < TrueHD (not ATMOS) < DTS-HD MA < DD+ ATMOS (lossy) = ATMOS (indeterminate) < DTS X < TrueHD ATMOS`
+`Basic Dolby Digital < AAC < Basic DTS < DTS-ES < Dolby Digital Plus < DTS-HD HRA < PCM = FLAC < DTS-HD MA < TrueHD (not ATMOS) < DD+ ATMOS (lossy) = ATMOS (indeterminate) < DTS X < TrueHD ATMOS`
 
 In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
 
