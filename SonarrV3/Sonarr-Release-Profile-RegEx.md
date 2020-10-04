@@ -8,7 +8,9 @@ Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
-So if you care less about quality then stop reading and don't use this guide.
+
+**So if you care less about quality then stop reading and don't use this guide.**
+
 Why ? Scene release always release in a rush to bring it out as fast as possible,
 so I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
 P2P releases are a bit smarter and work sort of together by not doing the same release.
@@ -21,8 +23,14 @@ Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate` .
 
 #### Update
 
-A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. 
-The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
+- *A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.* 
+  *The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.*
+
+- **I decided to redo the Release Profile to make it easier for for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed allot of popup scene releases meaning we need to update often.**
+  **With this it also means all scene and (yet) unknown groups will be getting a score of `0` and not `-50`.**
+  **I will still keep a eye on them and add the Low Quality Groups to the `-100` score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.**
+
+------
 
 #### Propers and Repacks
 
@@ -71,6 +79,8 @@ The Number between the **[**brackets**]** are the scores the release name will g
   [75]   /(iT).?web.?dl/i
 ```
 
+#### NOTE:
+
 > Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
 >
 > What it does:
@@ -82,9 +92,8 @@ The Number between the **[**brackets**]** are the scores the release name will g
 > Example of a naming scheme for series:
 >
 > `{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]}{[MediaInfo Simple]}{[Preferred Words]}{-Release Group}`
->
 
-#### P2P + Scene Groups
+#### P2P + Low Quality Scene Groups
 
 ```markdown
 # Must Not Contain (2)
@@ -93,22 +102,17 @@ The Number between the **[**brackets**]** are the scores the release name will g
 # Preferred (3)
   [80]   /(-deflate|-inflate)/i
   [50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
-  [50]   /(-monkee|-MZABI|-NTb|-NTG|-QOQ|-RTN)/i
+  [50]   /(-monkee|-NTb|-NTG|-QOQ|-RTN)/i
   [50]   /(-TOMMY|-ViSUM|-T6D)/i
   [25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
   [25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
   [25]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
   [25]   /(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
-  [25]   /(-orbitron|-ETHiCS|-RTFM|-PSiG)/i
+  [25]   /(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)/i
   [12]   /(repack3)/i
   [11]   /(repack2)/i
   [10]   /(repack|proper)/i
 
-  [-50]  /(-AMCON|-AMRAP|-BAMBOOZLE|-EDHD|-ION10)/i
-  [-50]  /(-MEMENTO|-METCON|-POKE|-STARZ|-STRiFE)/i
-  [-50]  /(-TRUMP|-WEBTiFUL|-JOMT|-APRiCiTY|-HILLARY)/i
-  [-50]  /(-SQUEAK|-KOMPOST|-WNN|-LiGATE|-BTX|-ALiGN)/i
-  [-50]  /(-BLACKHAT|-BEA|-N3TFL1X|-EYEZ)/i
  [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
  [-100]  /(-VIDEOHOLE)/i
 ```
@@ -139,7 +143,6 @@ Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a
 Scores [-25] Retagged/Renames/Obfuscated  releases.
 > ![](images/animated-exclamation-mark-image-0006.gif)*If you're getting often a error message like* `Has the same filesize as existing file` *you might need to consider to remove the [-25].*![](images/animated-exclamation-mark-image-0006-1581778210859.gif)
 
-Scores [-50] Scene groups.
 Scores [-100] Groups that mess with the audio or add another preferred language.
 
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
@@ -150,7 +153,7 @@ The reason why I got multiple entry's with the same score is because the line wi
 
 When you've done it correctly it will look something like this.
 
- ![image-20200930194201036](images/image-20200930194201036.png)
+ ![image-20201004135035478](images/image-20201004135035478.png)
 
 And after you clicked on `Save` it will look something like this:
 
