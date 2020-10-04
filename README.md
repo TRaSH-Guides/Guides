@@ -18,10 +18,13 @@ If you have suggestions , requests or just want to leave some feedback please us
 
 ## Like what I do and want to Support me ?
 
-> - **PayPal:** ![](images/image-20200409200136483.png)
->
-> - [**Use my VPN Referal link to get 50% off with TorGuard**](https://github.com/TRaSH-/Tutorials-FAQ/blob/master/Misc/How-to-setup-Torguard-for-port-forwarding.md#how-to-setup-torguard-for-port-forwarding)
->
-> - **BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP**
->
+> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"><img height="32" src="images/coffee-paypal.png" /></a>
+>  
+> [**Use my VPN Referal link to get 50% off with TorGuard**](https://github.com/TRaSH-/Tutorials-FAQ/blob/master/Misc/How-to-setup-Torguard-for-port-forwarding.md#how-to-setup-torguard-for-port-forwarding)
+> 
+> **BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP**
+> 
 >![image-20200728193552694](images/image-20200728193552694.png)
+
+
+
