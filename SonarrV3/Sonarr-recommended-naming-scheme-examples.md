@@ -18,7 +18,7 @@ The Tokens not available in the release won't be used/shown.
 
 [Season Folder Format](#season-folder-format)
 
-[Multi-Episode Style][#multi-episode-style]
+[Multi-Episode Style](#multi-episode-style)
 
 [Original Title vs  Original Filename](#original-title-vs-original-filename)
 
