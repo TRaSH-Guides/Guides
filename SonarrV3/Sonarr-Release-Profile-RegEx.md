@@ -69,14 +69,15 @@ The Number between the **[**brackets**]** are the scores the release name will g
 # Preferred (3)
  [100]   /(amzn|amazon).?web.?dl/i
  [100]   /(atvp).?web.?dl/i
+ [100]   /(hmax).?web.?dl/i
   [90]   /(dsnp|dsny|disney).?web.?dl/i
   [90]   /(nf|netflix).?web.?dl/i
-  [85]   /(DCU).?web.?dl/i
-  [85]   /(HMAX).?web.?dl/i
-  [75]   /(hulu|.?hbo\.?)/i
+  [90]   /(qibi).?web.?dl/i
+  [85]   /(hulu).?web.?dl/i
+  [75]   /(dcu).?web.?dl/i
+  [75]   /(hbo).?web.?dl/i
   [75]   /(red).?web.?dl/i
-  [75]   /(QIBI).?web.?dl/i
-  [75]   /(iT).?web.?dl/i
+  [75]   /(it).?web.?dl/i
 ```
 
 #### NOTE:
