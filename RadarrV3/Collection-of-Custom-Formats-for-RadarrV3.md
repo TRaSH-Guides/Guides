@@ -459,12 +459,12 @@ If you prefer or not prefer 3D.
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "3d|sbs",
+      "name": "3d|sbs|half-ou",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": "3d|sbs"
+        "value": "3d|sbs|half.?ou"
       }
     }
   ]
