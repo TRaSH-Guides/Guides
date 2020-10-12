@@ -27,7 +27,7 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 | [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         |                                               | [Multi](#multi)                               |
 | [PCM](#pcm)                              | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     | [MPEG2](#mpeg2)                                           |                                               | [FreeLeech](#freeleech)                       |
 | [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               | [Dutch Groups](#dutch-groups)                 |
-|                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
+|                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               | [Streaming Services](#streaming-services)     |
 |                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
 |                                          |                              |                                               |                                                           |                                               |                                               |
 |                                          |                              |                                               |                                                           |                                               |                                               |
@@ -2681,6 +2681,122 @@ If you prefer movies with also a Dutch audio track.
       "required": true,
       "fields": {
         "value": "-CyTSuNee|-SHiTSoNy|-QoQ"
+      }
+    }
+  ]
+}
+```
+
+------
+
+------
+
+### Streaming Services
+
+Collection of Streaming Services
+
+```json
+{
+  "name": "Streaming Services",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Amazon",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(amzn|amazon).?web.?dl"
+      }
+    },
+    {
+      "name": "Netflix",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(nf|netflix).?web.?dl"
+      }
+    },
+    {
+      "name": "AppleTV+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(atvp).?web.?dl"
+      }
+    },
+    {
+      "name": "Disney+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(dsnp|dsny|disney).?web.?dl"
+      }
+    },
+    {
+      "name": "DCU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(dcu).?web.?dl"
+      }
+    },
+    {
+      "name": "HBO Max",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(hmax).?web.?dl"
+      }
+    },
+    {
+      "name": "HBO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(hbo).?web.?(dl|rip)"
+      }
+    },
+    {
+      "name": "Youtube Red",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(red).?web.?dl"
+      }
+    },
+    {
+      "name": "Quibi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(qibi).?web.?dl"
+      }
+    },
+    {
+      "name": "iTunes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(it).?web.?dl"
+      }
+    },
+    {
+      "name": "Hulu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(hulu).?web.?dl"
       }
     }
   ]
