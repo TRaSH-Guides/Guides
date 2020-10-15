@@ -4,7 +4,13 @@
 
 >These settings are a recommendation if you want to choose other settings be my guest.
 >
->If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575) and use the code: `TGLIFE`  to get 50% Off for Life.
+>If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575) and use one of the following codes:
+>
+> `TGLIFE` => Get 50% Off for Life for Anonymous Proxy, Anonymous VPN, Anonymous Webmail.
+>
+>`TGLIFE-STREAMING` => Get 50% Off for Life Anonymous Proxy, Anonymous VPN, Streaming Bundle.
+>
+>`TGLIFE-PRO` => Get 50% Off for Life for Anonymous VPN, Streaming Bundle, Anonymous VPN Pro.
 >
 >
 >
