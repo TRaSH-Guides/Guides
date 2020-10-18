@@ -3,7 +3,7 @@
 ------
 
 > Sometimes Plex will have issues direct playing your media on your devices,
-> These profiles could help.(if you got some to share pls them so we can collect them at one place).
+> These profiles could help.(if you got some to share, pls make a PR so we can collect them at one place).
 >
 > To make use of the profiles you need to add it in your your plex folder  
 > Examples:
