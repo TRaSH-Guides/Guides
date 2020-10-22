@@ -1,7 +1,8 @@
-## Clean 
->Title:         Clean.py
-Author(s):     ???
+# Clean
 
-#### Description: Clean NZB name.
+>Title:         [Clean.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/Clean/Clean.py){:target="_blank"} | Author(s):     ???
+
+## Description: Clean NZB name
+
 Removes the following suffixes from NZB name:
-NZBgeek / Obfuscated / BUYMORE / Scrambled /etc.... 
+NZBgeek / Obfuscated / BUYMORE / Scrambled /etc...

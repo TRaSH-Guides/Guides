@@ -1,16 +1,25 @@
-### Here you will find a collection of Profile's for Plex
+# Here you will find a collection of Profile's for Plex
 
 ------
 
-> Sometimes Plex will have issues direct playing your media on your devices,
-> These profiles could help.(if you got some to share, pls make a PR so we can collect them at one place).
->
-> To make use of the profiles you need to add it in your your plex folder  
-> Examples:
-> Hotio's container =>  `/appdata/plex/app/Plex Media Server/Profiles`
->
-> LSIO container => `/appdata/plex/will/follow/soon`
+Sometimes Plex will have issues direct playing your media on your devices, these profiles could help.
 
-- Android-SHIELD = Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
-- Chromecast = Renames hashed media files to match the source NZB.
+> if you got some to share, pls make a PR so we can collect them at one place
 
+## How to
+
+To make use of the profiles you need to add it in your your plex folder
+
+### Docker
+
+Example paths:
+
+* Hotio's container:  `/appdata/plex/app/Plex Media Server/Profiles`
+* LSIO container: `/appdata/plex/will/follow/soon`
+
+## Profiles
+
+| Device         | Description                                                                      |
+|:---            |:---                                                                              |
+| [Android-SHIELD](\Plex\Profiles\Android-SHIELD\Android-SHIELD Android TV.xml){:target="_blank"} | Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc). |
+| [Chromecast](\Plex\Profiles\Chromecast\Chromecast.xml){:target="_blank"} | Renames hashed media files to match the source NZB.                              |
