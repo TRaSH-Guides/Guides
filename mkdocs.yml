@@ -1,0 +1,33 @@
+---
+site_name: Tutorials-FAQ
+site_description: Here you will find a collection of Setup Guides, Tips and Scripts that I've made/collected.
+site_author: TRaSH-
+site_url: https://TRaSH-.github.io/Tutorials-FAQ
+
+repo_url: https://github.com/TRaSH-/Tutorials-FAQ
+repo_name: TRaSH-/Tutorials-FAQ
+
+copyright: Copyright &copy; 2020 TRaSH-
+
+extra:
+  manifest: manifest.webmanifest
+
+markdown_extensions:
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+  language: en
+  palette:
+    primary: grey
+    accent: red
+    scheme: slate
