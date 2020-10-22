@@ -1,0 +1,29 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+
+  editorconfig-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3
+      - name: editorconfig-checker
+        run: |
+          docker run --rm -v ${GITHUB_WORKSPACE}:/check mstruebing/editorconfig-checker
+
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3
+      - name: markdownlint
+        run: |
+          find ~+ ${github_workspace} -name '*.md' | xargs docker run --rm -v ${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE} markdownlint/markdownlint -r ~MD013,~MD033,~MD034
+
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3
+      - name: yamllint
+        run: |
+          find ~+ ${github_workspace} -name '*.yaml' -o -name '*.yml' | xargs docker run --rm -v ${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE} peterdavehello/yamllint yamllint -d '{extends: default, rules: {document-start: {present: false}, line-length: disable}}'

@@ -1,0 +1,27 @@
+name: Publish docs via GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3
+
+      - uses: actions/setup-python@v2.1.4
+        with:
+          python-version: 3.x
+
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-redirects
+      - run: pip install Markdown
+      - run: pip install Pygments
+      - run: pip install pymdown-extensions
+
+      - run: cp README.md docs/index.md
+
+      - run: mkdocs gh-deploy --force
