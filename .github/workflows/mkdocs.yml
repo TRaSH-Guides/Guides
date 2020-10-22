@@ -16,12 +16,10 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-redirects
-      - run: pip install Markdown
-      - run: pip install Pygments
-      - run: pip install pymdown-extensions
+      - run: pip install -r requrements.txt
 
-      - run: cp README.md docs/index.md
+      - run: |
+          cp README.md docs/index.md
+          cp -r images/ docs
 
       - run: mkdocs gh-deploy --force
