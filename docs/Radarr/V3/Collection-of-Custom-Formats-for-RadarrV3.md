@@ -304,9 +304,9 @@ x265 is a *free software library* and *application* for encoding video streams i
 [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203) - Plex.tv
 
 1. Don’t bother transcoding 4k
-2. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
-3. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
-4. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
+1. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
+1. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
+1. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
 
 ??? example "json"
 

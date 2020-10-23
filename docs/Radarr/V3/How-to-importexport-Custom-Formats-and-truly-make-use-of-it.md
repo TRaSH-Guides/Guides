@@ -63,11 +63,11 @@ After this we scroll all the way back up
 ![select format](images/select_format.png)
 
 1. Profile name
-2. If you want that Radarr will upgrade till the quality set in (3.)
-3. Upgrade till the selected Quality
-4. The `Minimum Custom Format Score` allowed to download
-5. Keep upgrading Custom Format till this score is reached
-6. Your preferred language profile for your Releases
+1. If you want that Radarr will upgrade till the quality set in (3.)
+1. Upgrade till the selected Quality
+1. The `Minimum Custom Format Score` allowed to download
+1. Keep upgrading Custom Format till this score is reached
+1. Your preferred language profile for your Releases
 
 Being we set `BR-DISK` to `-1000` the chance that it will reach the `Minimum Custom Format Score` set in (4.) is really small.
 

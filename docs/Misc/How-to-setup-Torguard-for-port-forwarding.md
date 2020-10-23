@@ -51,13 +51,13 @@ Then click on `Manage` and select `Request Port Forward`.
 ![request status](images/req_port_status.png)
 
 1. That's the `IP` we found earlier.
-2. Select `UDP`.
-3. Select a `Port/Auth` I personally use `995|SHA1`.
-4. Select the `Protocol` `TCP`.
-5. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
+1. Select `UDP`.
+1. Select a `Port/Auth` I personally use `995|SHA1`.
+1. Select the `Protocol` `TCP`.
+1. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
     (This is also the port you will use in your torrent client).
-6. Click on the `+` sign and do the same with the `UDP` `Protocol`.
-7. Then click on `Submit Request`.
+1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
+1. Then click on `Submit Request`.
 
 ![submit request](images/port_submit.png)
 
@@ -74,14 +74,14 @@ Go to [My Account > Tools > OpenVPN Config Generator](https://torguard.net/tgcon
 ![info](images/info.png)
 
 1. Choose the OS you want to use the .ovpn for.
-2. Choose `Custom`.
-3. Put in the `IP` we got earlier and used for the port forwarding.
-4. Choose `UDP`.
-5. Choose `995|SHA1` or what you selected during the port forwarding.
-6. Choose `AES-128-GCM`.
-7. Choose `2.4 and above`.
-8. Check `Require TLS 1.2`
-9. Click on `Generate Config`
+1. Choose `Custom`.
+1. Put in the `IP` we got earlier and used for the port forwarding.
+1. Choose `UDP`.
+1. Choose `995|SHA1` or what you selected during the port forwarding.
+1. Choose `AES-128-GCM`.
+1. Choose `2.4 and above`.
+1. Check `Require TLS 1.2`
+1. Click on `Generate Config`
 
 Now you will download a .ovpn file with a random number.
 This .ovpn file you place in the openvpn folder of your VPN torrent client.

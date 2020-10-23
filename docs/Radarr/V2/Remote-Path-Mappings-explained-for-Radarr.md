@@ -28,8 +28,8 @@ A screen will popup with the following options.
 ![Add Mapping](images/mapping.png)
 
 1. `Host` => This is the hostname or IP you set in your download client settings.
-2. `Remote Path` => The download path that you've set in your download client.
-3. `Local Path` => The path Sonarr/Radarr needs to access the same path.
+1. `Remote Path` => The download path that you've set in your download client.
+1. `Local Path` => The path Sonarr/Radarr needs to access the same path.
 
 ??? example "Examples"
 
