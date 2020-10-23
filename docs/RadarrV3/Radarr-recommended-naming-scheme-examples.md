@@ -30,7 +30,7 @@ RESULT:
 
 > Minimal details + the irreplaceable data.
 >
-> This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`
+> This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`. The officially supported format is `{imdb-{ImdbId}}` though the below should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
 
 `{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]{[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}`
 
@@ -66,7 +66,7 @@ RESULT:
 
 ------
 
-> Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but in this examples it helps for movies that have the same release name and year.
+> Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but in this examples it helps for movies that have the same release name and year. Please note that this pins the IMDb ID whenever the movie is added to Radarr, and it may be missing or incorrect at that time. If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade. Another potential negative of using it in the folder is that folder renames are complex, lengthy, and potentially destructive in Radarr compared to file renames.
 
 `{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]`
 
