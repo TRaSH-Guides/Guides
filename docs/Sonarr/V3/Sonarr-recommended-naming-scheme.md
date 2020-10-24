@@ -143,7 +143,7 @@ The Series Title! (2010)
 
 ### Season Folder Format
 
-For this theirs only one real option to use in my opinion.
+For this there's only one real option to use in my opinion.
 
 ```bash
 Season {season:00}
