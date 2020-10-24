@@ -43,3 +43,4 @@ theme:
     scheme: slate
   font:
     code: "Fira Code"
+  favicon: img/favicon.png
