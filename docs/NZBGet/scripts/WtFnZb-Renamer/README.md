@@ -1,14 +1,8 @@
-## WtFnZb-Renamer
+# WtFnZb-Renamer
 
->Title:         WtFnZb-Renamer.py
->
->Author(s):     WtFnZb
->
->URL:           ??
+>Title:         [WtFnZb-Renamer.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/WtFnZb-Renamer/WtFnZb-Renamer.py){:target="_blank"}| Author(s):     WtFnZb | URL:           ??
 
-
-
-#### Description:   Renames hashed media files to match the source NZB.
+## Renames hashed media files to match the source NZB
 
 NZBGET SCAN SCRIPT
 

@@ -13,21 +13,33 @@ extra:
   manifest: manifest.webmanifest
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
   - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed
   - toc:
       permalink: true
 
 plugins:
   - search
+  - macros:
+      j2_block_start_string: "[[%"
+      j2_block_end_string: "%]]"
+      j2_variable_start_string: "[["
+      j2_variable_end_string: "]]"
 
 theme:
   name: material
   features:
     - navigation.instant
+    - navigation.tabs
   language: en
   palette:
     primary: grey
     accent: red
     scheme: slate
+  font:
+    code: "Fira Code"
