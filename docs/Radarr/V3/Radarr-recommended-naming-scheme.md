@@ -40,6 +40,9 @@ RESULT:
 The Movie Title (2010) [imdb-tt0066921][Bluray-1080p][DTS 5.1][x264]-EVOLVE
 ```
 
+!!! note
+    The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517), though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
+
 ------
 
 ## Original Title vs  Original Filename
@@ -72,6 +75,9 @@ The Movie Title (2010)
 
 !!! note
     Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but in this examples it helps for movies that have the same release name and year.
+
+!!! warning
+    Please note that this pins the IMDb ID whenever the movie is added to Radarr, and it may be missing or incorrect at that time. If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade. Another potential negative of using it in the folder is that folder renames are complex, lengthy, and potentially destructive in Radarr compared to file renames.
 
 ```bash
 {Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]
