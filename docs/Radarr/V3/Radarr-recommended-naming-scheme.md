@@ -1,4 +1,4 @@
-# Recommended naming scheme examples
+# Recommended naming scheme
 
 Often on Radarr discord people asking what's the recommended/best way to naming your files.
 First of it's personal preference, but the support staff often recommend to add also non recoverable info.

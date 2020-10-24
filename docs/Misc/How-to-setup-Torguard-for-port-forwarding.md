@@ -1,4 +1,4 @@
-# How to setup TorGuard for port forwarding
+# Setup TorGuard for port forwarding
 
 !!! note
     These settings are a recommendation if you want to choose other settings be my guest.

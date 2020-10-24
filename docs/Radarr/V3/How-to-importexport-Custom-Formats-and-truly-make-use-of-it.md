@@ -1,4 +1,4 @@
-# How to import/export Custom Formats and truly make use of it
+# How to import/export Custom Formats and make use of it
 
 Here I will try to explain how you can import Custom Formats for Radarr v3 and make the most use of it.
 
@@ -7,9 +7,10 @@ Here I will try to explain how you can import Custom Formats for Radarr v3 and m
 
     **Quality Profile trumps Custom Formats**
 
-* [How to import a JSON Custom Format](#how-to-import-a-json-custom-format)
-* [How to make use of the Custom Formats in your profiles](#how-to-make-use-of-the-custom-formats-in-your-profiles)
-* [Tips how to setup the scores](#tips-how-to-setup-the-scores)
+- [How to import/export Custom Formats and make use of it](#how-to-importexport-custom-formats-and-make-use-of-it)
+  - [How to import a JSON Custom Format](#how-to-import-a-json-custom-format)
+  - [How to make use of the Custom Formats in your profiles](#how-to-make-use-of-the-custom-formats-in-your-profiles)
+  - [Tips how to setup the scores](#tips-how-to-setup-the-scores)
 
 ## How to import a JSON Custom Format
 
@@ -92,9 +93,9 @@ Lets say you prefer HD audio (with object metadata)
 
 In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
 
-* Separate all your audio codecs by 100
-* Separate special editions/hybrid/4k remaster, etc by 10
-* Separate channel count by 5
+- Separate all your audio codecs by 100
+- Separate special editions/hybrid/4k remaster, etc by 10
+- Separate channel count by 5
 
 keep in mind some scores could add up so keep that in mind (depending which Custom Formats you've added and use).
 

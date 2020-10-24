@@ -17,6 +17,8 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 
 ------
 
+## INDEX
+
 | Audio                                    | Audio Channels               | Audio Advanced                                | Video                                                     | Video Advanced                                | Misc                                          |
 | :--------------------------------------- | ---------------------------- | --------------------------------------------- | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [1.0 Mono](#10-mono)         | [ATMOS (indeterminate)](#atmos-indeterminate) | [3D](#3D)                                                 | [Remaster](#remaster)                         | [BR-DISK](#br-disk)                           |
@@ -91,7 +93,7 @@ You will need to add the following to your new Custom Format when created in you
     This is a cosmetic annoyance till I come up for another way to solve this,
     being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
     Several reasons why this is happening:
-
+    
     - Blame the often wrongly used naming of x265 encodes.
     - Radarr v3 uses dynamic custom formats.
 
@@ -180,12 +182,12 @@ Custom Format for Single Layer Dolby Vision releases.
 !!! note
 
     This seems the preferred option for PLeX with a Shield 2019 model that supports DV.
-
+    
     But keep in mind it also depends on how the releaser names the files!
     Shield can play any Single Layer DV in a .ts container via Plex natively.  It can also play most Single Layer in .mkv but only via PlexForKodi with a modded version of exoplayer.
-
+    
     An incompatible variant should still play as HDR10 in most clients.
-
+    
     **UPDATE:** DV is part of the MKV spec now and ExoPlayer added native support so hopefully coming soon.
 
 ------
@@ -293,7 +295,7 @@ x265 is a *free software library* and *application* for encoding video streams i
     Something like 95% of video files are x264 and have much better direct play support.
     If you have more than a couple users, you will notice much more transcoding.
     Just depends on your priorities.
-
+    
     So basically if you are storage poor and just need to save space, use x265.
     The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
     If you want maximum compatibility and the option to change your files to something else later, then x264.
@@ -389,7 +391,7 @@ x265 is a *free software library* and *application* for encoding video streams i
 !!! note
 
     You might want to add the following also [EVO except WEB-DL](#evo-except-web-dl)
-
+    
     BLOCK1 = Low-Quality Releases (often banned groups)
     BLOCK2 = Another Small list of often banned groups.
     BLOCK3 = And Another list.

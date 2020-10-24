@@ -1,4 +1,4 @@
-# How to provide a docker compose when you need help on Discord
+# How to provide a docker compose
 
 When you're running dockers and you need help on discord etc you often hear the question:
 
