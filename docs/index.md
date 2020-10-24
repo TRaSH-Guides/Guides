@@ -18,7 +18,7 @@ The guides I make I try to make them as easy as possible for everyone to underst
 
 ### DISCLAIMER
 
-The information I use for the guides is information I gathered from different sources like there support forum, Reddit or Discord, Provided by user input or from the develop team it self.
+The information I use for the guides is information I gathered from different sources like their support forum, Reddit or Discord, Provided by user input or from the develop team it self.
 Most things I tested myself and tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
 If you have questions, suggestions, requests or want to contribute, please use the following [link](https://github.com/TRaSH-/Tutorials-FAQ/issues) or contact me on Discord.
