@@ -1,3 +1,3 @@
 # NZBGet
 
-Here i will add soon some screenshots how to setup NZBGet with the use of Sonarr/Radarr, some tweaks and tips
+Here you will find a basic setup-guide and scripts you can use with NZBGet.
