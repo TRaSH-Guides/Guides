@@ -52,3 +52,10 @@ Everything here you use on your own risk I won't be hold responsible if somethin
     Other Options:
 
     [**Use my VPN Referal link to get 50% off with TorGuard**](https://trash-guides.info/Misc/How-to-setup-Torguard-for-port-forwarding/)
+
+## Special Thanks
+
+- [iXNyNe aka nemchik](https://github.com/nemchik) for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [Roxedus](https://github.com/Roxedus) for helping me with the transfer/convert of my github guides to mkdocs and make everything look great.
+- [rg9400](https://github.com/rg9400){:target="_blank"} for the providing most of the Custom Formats for the Radarr v3 Custom Format Collection.
+- Everyone who contributed to this project in anyway possible.
