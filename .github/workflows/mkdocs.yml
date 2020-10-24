@@ -18,8 +18,4 @@ jobs:
 
       - run: pip install -r requrements.txt
 
-      - run: |
-          cp README.md docs/index.md
-          cp -r images/ docs
-
       - run: mkdocs gh-deploy --force
