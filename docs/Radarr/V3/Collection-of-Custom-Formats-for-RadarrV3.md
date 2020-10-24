@@ -287,7 +287,7 @@ If you want maximum compatibility and have much better direct play support then 
 x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265) compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
 !!! quote
-    x265 is good for 4k remuxes.
+    x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
     If the media isn't source quality/remux, then there will be a loss of quality every time.
 
     Something like 95% of video files are x264 and have much better direct play support.
@@ -397,7 +397,7 @@ x265 is a *free software library* and *application* for encoding video streams i
 
 ------
 
-### EVO except WEB-DL
+## EVO except WEB-DL
 
 This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
 
@@ -1840,7 +1840,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### 2.0 Stereo
+## 2.0 Stereo
 
 ??? example "json"
 
@@ -2294,7 +2294,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### FLAC
+## FLAC
 
 ??? example "json"
 
@@ -2371,7 +2371,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### MP3
+## MP3
 
 ??? example "json"
 
@@ -2393,7 +2393,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### MPEG2
+## MPEG2
 
 ??? example "json"
 
@@ -2415,7 +2415,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### Opus
+## Opus
 
 ??? example "json"
 
@@ -2437,7 +2437,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### PCM
+## PCM
 
 ??? example "json"
 
@@ -2514,7 +2514,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### 10 Bit
+## 10 Bit
 
 ??? example "json"
 
@@ -2536,7 +2536,7 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ------
 
-### Dutch Groups
+## Dutch Groups
 
 If you prefer movies with also a Dutch audio track.
 
@@ -2560,7 +2560,7 @@ If you prefer movies with also a Dutch audio track.
 
 ------
 
-### Streaming Services
+## Streaming Services
 
 Collection of Streaming Services
 
