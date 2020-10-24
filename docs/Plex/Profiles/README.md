@@ -19,7 +19,7 @@ Example paths:
 
 ## Profiles
 
-| Device         | Description                                                                      |
-|:---            |:---                                                                              |
-| [Android-SHIELD](\Plex\Profiles\Android-SHIELD\Android-SHIELD Android TV.xml){:target="_blank"} | Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc). |
-| [Chromecast](\Plex\Profiles\Chromecast\Chromecast.xml){:target="_blank"} | Renames hashed media files to match the source NZB.                              |
+| Device                                                       | Description                    |
+| :----------------------------------------------------------- | :----------------------------- |
+| [Android-SHIELD](\Plex\Profiles\Android-SHIELD\Android-SHIELD Android TV.xml){:target="_blank"} | Profile for the Android-SHIELD |
+| [Chromecast](\Plex\Profiles\Chromecast\Chromecast.xml){:target="_blank"} | Profile for the Chromecast     |
