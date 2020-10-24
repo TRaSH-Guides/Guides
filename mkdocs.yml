@@ -1,11 +1,11 @@
 ---
-site_name: Tutorials-FAQ
+site_name: TRaSH Guides
 site_description: Here you will find a collection of Setup Guides, Tips and Scripts that I've made/collected.
-site_author: TRaSH-
-site_url: https://TRaSH-.github.io/Tutorials-FAQ
+site_author: TRaSH
+site_url: http://trash-guides.info/
 
-repo_url: https://github.com/TRaSH-/Tutorials-FAQ
-repo_name: TRaSH-/Tutorials-FAQ
+repo_url: https://github.com/TRaSH-/Guides
+repo_name: TRaSH-/Guides
 
 copyright: Copyright &copy; 2020 TRaSH
 
