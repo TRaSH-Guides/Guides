@@ -26,7 +26,7 @@ Example:
 sudo docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     red5d/docker-autocompose \
-    Sonarr Radarr Bazarr NZBGet
+    sonarr radarr bazarr nzbget
 ```
 
 Paste the results on one of the following sites.
