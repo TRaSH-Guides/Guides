@@ -1,0 +1,5 @@
+:root > * {
+  /* Footer */
+  --md-footer-bg-color: hsla(232, 54%, 41%, 1);
+  --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.32);
+}
