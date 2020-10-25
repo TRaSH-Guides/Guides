@@ -16,17 +16,17 @@ Use one of the following from terminal(puTTy) to get the docker compose with or 
 ```bash
 sudo docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    assaflavie/runlike \
+    red5d/docker-autocompose \
     CONTAINER_NAME CONTAINER_NAME2
 ```
 
-or
+Example:
 
 ```bash
 sudo docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     red5d/docker-autocompose \
-    CONTAINER_NAME CONTAINER_NAME2
+    Sonarr Radarr Bazarr NZBGet
 ```
 
 Paste the results on one of the following sites.
