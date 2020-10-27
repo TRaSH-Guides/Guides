@@ -2,7 +2,7 @@
 
 Here I will try to explain how you can import Custom Formats for Radarr v3 and make the most use of it.
 
-!!! note
+!!! attention
     Keep in mind Custom Formats are made to fine tune your Quality Profile
 
     **Quality Profile trumps Custom Formats**
@@ -72,8 +72,8 @@ After this we scroll all the way back up
 
 Being we set `BR-DISK` to `-1000` the chance that it will reach the `Minimum Custom Format Score` set in (4.) is really small.
 
-!!! note
-    For Custom Formats you really don't want set it to something really low like `-1000` and not something like `-10` being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that the `BR-DISK` will be downloaded (-10)+(+10)=0 and your `Minimum Custom Format Scrore` is set at `0`.
+!!! info
+    For Custom Formats you really don't want, set it to something really low like `-1000` and not something like `-10` being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that the `BR-DISK` will be downloaded (-10)+(+10)=0 and your `Minimum Custom Format Scrore` is set at `0`.
 
 ------
 
