@@ -1,7 +1,7 @@
 nav:
     - Home: index.md
     - Radarr
-    - Sonarr: README.md
+    - Sonarr
     - Bazarr
     - NZBGet
     - Plex
