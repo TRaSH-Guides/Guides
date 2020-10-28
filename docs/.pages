@@ -1,8 +1,8 @@
 nav:
     - Home: index.md
-    - Radarr
-    - Sonarr
-    - Bazarr
-    - NZBGet
-    - Plex
-    - Misc
+    - Radarr: Radarr/readme.md
+    - Sonarr: Sonarr/readme.md
+    - Bazarr: Bazarr/README.md
+    - NZBGet: NZBGet/README.md
+    - Plex: Plex/README.md
+    - Misc: Misc/README.md
