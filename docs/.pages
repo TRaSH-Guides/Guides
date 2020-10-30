@@ -1,5 +1,5 @@
-nav:
-    - Home: index.md
+arrange:
+    - index.md
     - Radarr
     - Sonarr
     - Bazarr
