@@ -1,4 +1,4 @@
-nav:
-  - README.md
-  - V3
-  - V2
+arrange:
+    - index.md
+    - V3
+    - V2

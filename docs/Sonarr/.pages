@@ -1,4 +1,4 @@
-arrange:
-    - index.md
-    - V3
-    - V2
+nav:
+  - Home: index.md
+  - V3
+  - V2
