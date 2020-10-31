@@ -1,6 +1,6 @@
 ---
 name: Request a Guide
-about: Request here a Guide
+about: Request a Guide here
 title: "[REQUEST]"
 labels: ''
 assignees: ''
