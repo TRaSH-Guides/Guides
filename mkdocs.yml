@@ -10,6 +10,11 @@ copyright: Copyright &copy; 2020 TRaSH
 
 extra:
   manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://trash-guides.info/discord
+    - icon: fontawesome/brands/github-square
+      link: https://github.com/TRaSH-/Guides
 
 extra_css:
   - stylesheets/extra.css
@@ -33,6 +38,9 @@ plugins:
       j2_block_end_string: "%]]"
       j2_variable_start_string: "[["
       j2_variable_end_string: "]]"
+  - redirects:
+      redirect_maps:
+        discord.md: https://discord.gg/Vau8dZ3
 
 theme:
   name: material
