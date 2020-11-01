@@ -9,7 +9,7 @@ Here you will find a collection of Radarr Guides I made.
 - (stable) (v0.2)
 - Builds Pushed only when intentionally released
 - Github Branch: develop
-- Docker: [hotio/radarr:latest](https://hub.docker.com/r/hotio/radarr)
+- Docker: [hotio/radarr:latest](https://hub.docker.com/r/hotio/radarr){:target="_blank"}
 
 ```bash
 hotio/radarr:latest
@@ -22,7 +22,7 @@ hotio/radarr:latest
 - (semi-unstable) (v3.0)
 - Builds pushed when complete
 - Github Branch: develop
-- Docker: [hotio/radarr:nightly](https://hub.docker.com/r/hotio/radarr)
+- Docker: [hotio/radarr:nightly](https://hub.docker.com/r/hotio/radarr){:target="_blank"}
 
 ```bash
 hotio/radarr:nightly
