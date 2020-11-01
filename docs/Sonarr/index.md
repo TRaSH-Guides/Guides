@@ -2,7 +2,7 @@
 
 Here you will find a collection of Sonarr Guides I made.
 
-## v2 = Sonarr Branche: master
+## v2 Sonarr Branch: master
 
 ![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdocker-hotio%2Fdocker-sonarr%2Frelease%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5)
 
@@ -15,7 +15,7 @@ Here you will find a collection of Sonarr Guides I made.
 hotio/sonarr:latest
 ```
 
-## v3 = Sonarr Branch: phantom-develop
+## v3 Sonarr Branch: phantom-develop
 
 ![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdocker-hotio%2Fdocker-sonarr%2Fnightly%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5)
 
