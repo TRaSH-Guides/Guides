@@ -1,10 +1,13 @@
 # TRaSH-Guides
 
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord)
+[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-/Guides?color=4051B5&style=for-the-badge)](https://github.com/TRaSH-/Guides/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-/Guides?color=4051B5&label=Last%20Update&style=for-the-badge)](https://github.com/TRaSH-/Guides/commits/master)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TRaSH-/Guides/Publish%20docs%20via%20GitHub%20Pages?color=4051B5&label=GitHub&style=for-the-badge)](https://github.com/TRaSH-/Guides/actions)
+
 *TRaSH Guides, Guides that aren't trash.*
 
 Here you will find Guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
-
-------
 
 ## How this all started
 
@@ -16,12 +19,21 @@ The guides I make I try to make them as easy as possible for everyone to underst
 
 ------
 
+## Support
+
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord)
+
+Got Questions or need help click the chat badge to join the Discord Channel where you can ask your questions directly.
+Feel free to create a PR if you want to.
+
+------
+
 ### DISCLAIMER
 
 The information I use for the guides is information I gathered from different sources like their support forum, Reddit or Discord, Provided by user input or from the develop team it self.
 Most things I tested myself and tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
-If you have questions, suggestions, requests or want to contribute, please use the following [link](https://github.com/TRaSH-/Tutorials-FAQ/issues) or contact me on Discord.
+If you have questions, suggestions, requests or want to contribute, please use the following [link](https://github.com/TRaSH-/Guides/issues) or contact me on Discord.
 
 Everything here you use on your own risk I won't be hold responsible if something happens to your collection!
 
@@ -29,7 +41,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ## Like what I do and want to Support me
 
-??? abstract "Like what I do and want to Support me?"
+??? abstract "CLICK HERE FOR SUPPORT OPTIONS"
 
     Paypal In $ (Dollars):
 
@@ -53,9 +65,9 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     [**Use my VPN Referal link to get 50% off with TorGuard**](https://trash-guides.info/Misc/How-to-setup-Torguard-for-port-forwarding/)
 
-## Special Thanks
+### Special Thanks
 
 - [iXNyNe aka nemchik](https://github.com/nemchik) for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
 - [Roxedus](https://github.com/Roxedus) for helping me with the transfer/convert of my github guides to mkdocs and make everything look great.
-- [rg9400](https://github.com/rg9400){:target="_blank"} for the providing most of the Custom Formats for the Radarr v3 Custom Format Collection.
+- [rg9400](https://github.com/rg9400){:target="_blank"} for the providing most of the Radarr v3 Custom Format Collection.
 - Everyone who contributed to this project in anyway possible.
