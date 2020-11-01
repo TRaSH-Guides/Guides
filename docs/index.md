@@ -1,9 +1,11 @@
 # TRaSH-Guides
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord)
-[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-/Guides?color=4051B5&style=for-the-badge)](https://github.com/TRaSH-/Guides/graphs/contributors)
-[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-/Guides?color=4051B5&label=Last%20Update&style=for-the-badge)](https://github.com/TRaSH-/Guides/commits/master)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TRaSH-/Guides/Publish%20docs%20via%20GitHub%20Pages?color=4051B5&label=GitHub&style=for-the-badge)](https://github.com/TRaSH-/Guides/actions)
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord)](https://trash-guides.info/discord)
+[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-/Guides?color=4051B5&label=Last%20Update&style=flat-square)](https://github.com/TRaSH-/Guides/commits/master)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TRaSH-/Guides/Publish%20docs%20via%20GitHub%20Pages?color=4051B5&label=GitHub&style=flat-square)](https://github.com/TRaSH-/Guides/actions)
+[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/issues)
 
 *TRaSH Guides, Guides that aren't trash.*
 
