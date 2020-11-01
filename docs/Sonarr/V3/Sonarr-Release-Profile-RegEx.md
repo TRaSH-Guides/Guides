@@ -188,29 +188,4 @@ If you want to be mentioned please message me on discord, including a link for p
 Then the question why I put `/(x|h)\.?265/i` as `Must Not Contain`.
 Luckily someone else on Discord described it nice and correctly in my opinion.
 
-!!! quote
-    x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
-    If the media isn't source quality/remux, then there will be a loss of quality every time.
-    Also, once you go x265, typically that file is done.
-    It can't be changed to something else without a huge loss of quality.
-
-    Something like 95% of video files are x264 and have much better direct play support.
-    If you have more than a couple users,
-    you will notice much more transcoding.
-    Just depends on your priorities.
-
-    So basically if you are storage poor and just need to save space, use x265.
-    The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
-    If you want maximum compatibility and the option to change your files to something else later,
-    then x264.
-    It's all really dependent on specific situations for different people
-
-#### Some extra info about 4K/X265
-
-[4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203) - Plex.tv
-
-1. Don’t bother transcoding 4k
-1. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
-1. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
-1. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
-1. This may of course mean that you keep a 4k copy and a 1080/720 copy, but if you are collecting 4k content then you should not be worried about storage space, should you?
+[LINK](https://trash-guides.info/Misc/x265-4k){:target="_blank"}
