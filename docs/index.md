@@ -25,7 +25,7 @@ The guides I make I try to make them as easy as possible for everyone to underst
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank"}
 
-Got Questions or need help click the chat badge to join the Discord Channel where you can ask your questions directly.
+If you have questions, suggestions, requests or want to contribute, Click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank"} to open a issue on GitHub.
 Feel free to create a PR if you want to.
 
 ------
@@ -34,8 +34,6 @@ Feel free to create a PR if you want to.
 
 The information I use for the guides is information I gathered from different sources like their support forum, Reddit or Discord, Provided by user input or from the develop team it self.
 Most things I tested myself and tried to see if I could tune them a bit more to my needs and sometimes even for others.
-
-If you have questions, suggestions, requests or want to contribute, please use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank"} or contact me on Discord.
 
 Everything here you use on your own risk I won't be hold responsible if something happens to your collection!
 
