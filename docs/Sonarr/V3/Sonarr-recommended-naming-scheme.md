@@ -60,13 +60,13 @@ The Series Title! S01E01-E02-E03 [HDTV-720p][DTS 5.1][x264]-RlsGrp
 > **All the details**
 
 ```bash
-{Series TitleYear} - {Air-Date} - {Episode CleanTitle} {[Quality Full]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
+{Series TitleYear} - {Air-Date} - {Episode CleanTitle} {[Quality Full]} {[Preferred Words]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
 ```
 
 RESULT:
 
 ```bash
-The Series Title! (2010) - 2013-10-30 - Episode Title 1 [HDTV-720p Proper] [HDR] [10bit] [x264] [DTS-5.1]-RlsGrp
+The Series Title! (2010) - 2013-10-30 - Episode Title 1 [HDTV-720p Proper] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1]-RlsGrp
 ```
 
 > **Minimal details + the irreplaceable data**
@@ -88,7 +88,7 @@ The Series Title! - 2013-10-30 - Episode Title 1 [HDTV-720p][DTS 5.1][x264]-RlsG
 > **All the details**
 
 ```bash
-{Series TitleYear} - {absolute:000} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
+{Series TitleYear} - {absolute:000} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]} {[Preferred Words]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
 ```
 
 RESULT:
@@ -96,13 +96,13 @@ RESULT:
 Single Episode:
 
 ```bash
-The Series Title! (2010) - 001 - S01E01 - Episode Title 1 [HDTV-720p v2] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp
+The Series Title! (2010) - 001 - S01E01 - Episode Title 1 [HDTV-720p v2] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp
 ```
 
 Multi Episode:
 
 ```bash
-The Series Title! (2010) - 001-002-003 - S01E01-E02-E03 - Episode Title [HDTV-720p v2] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp
+The Series Title! (2010) - 001-002-003 - S01E01-E02-E03 - Episode Title [HDTV-720p v2] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp
 ```
 
 > **Minimal details + the irreplaceable data**
