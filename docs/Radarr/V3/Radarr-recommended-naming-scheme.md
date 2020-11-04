@@ -22,9 +22,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
 RESULT:
 
-```bash
-The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE
-```
+`The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE`
 
 ### Minimal details + the irreplaceable data
 
@@ -36,9 +34,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
 RESULT:
 
-```bash
-The Movie Title (2010) [imdb-tt0066921][Bluray-1080p][DTS 5.1][x264]-EVOLVE
-```
+`The Movie Title (2010) [imdb-tt0066921][Bluray-1080p][DTS 5.1][x264]-EVOLVE`
 
 !!! note
     The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517), though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
@@ -69,9 +65,7 @@ The filename can be Obscured where the Release naming isn't especially when you 
 
 RESULT:
 
-```bash
-The Movie Title (2010)
-```
+`The Movie Title (2010)`
 
 !!! note
     Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but in this examples it helps for movies that have the same release name and year.
@@ -85,9 +79,7 @@ The Movie Title (2010)
 
 RESULT:
 
-```bash
-The Movie Title (2010) [imdb-tt0066921]
-```
+`The Movie Title (2010) [imdb-tt0066921]`
 
 ------
 
