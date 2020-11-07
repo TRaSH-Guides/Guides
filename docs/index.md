@@ -45,21 +45,21 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     Paypal In $ (Dollars):
 
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank"}
+    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank"}
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/images/QR-code-US.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-US.png){:target="_blank"}
 
     Paypal In € (Euro's):
 
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank"}
+    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank"}
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/images/QR-code-EU.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-EU.png){:target="_blank"}
 
     Crypto:
 
     BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/images/QR-code-BTC.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-BTC.png){:target="_blank"}
 
     Other Options:
 
