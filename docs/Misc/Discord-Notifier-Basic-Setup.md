@@ -109,11 +109,11 @@ You will get a screen that looks like the following screenshot.
     Right click on your server > Server Settings > Roles
 
     If you have a Bot role you can skip this, otherwise click the + next to ROLES
-    
+
     Name the role Bot and scroll down to Text Permissions.
-    
+
     Enable `Send Messages`, `Embed Links` & `Add Reactions`
-    
+
     Go back to your server, right click on the Media Bot and assign the role of Bot
 
 #### Reactions
@@ -146,9 +146,9 @@ After you've added them to your Discord Server it's time to get the ID's from yo
     ![image-20201108092738752](images/image-20201108092738752.png)
 
     What results in to.
-    
+
     ![image-20201108092827192](images/image-20201108092827192.png)
-    
+
     So your ID would be `:grab:706535455876710461`.
 
 Paste the ID results from your channel in to the corresponding boxes.
@@ -167,11 +167,11 @@ Do this for all the other boxes also including your Trackers/Indexers.
 ??? summary "Example"
 
     ![image-20201108094627415](images/image-20201108094627415.png)
-    
+
     What will result in to.
-    
+
     ![image-20201108094834791](images/image-20201108094834791.png)
-    
+
     If you use a different name in Sonarr and Radarr just add them with a comma `BeyondHD - Jackett,BHD`.
 
 Don't forget to click on `Save Changes` !!!
@@ -194,11 +194,11 @@ Radarr, Readarr and Lidarr supports Discord Notifier native so that's a easy one
     In Radarr go to `Settings` => `Connect` => Click on ![image-20201108174654550](images/image-20201108174654550.png) and select `DiscordNotifier.com`.
 
     ![image-20201108154540683](images/image-20201108154540683.png)
-    
+
     Then add the following info.
-    
+
     ![image-20201108172017406](images/image-20201108172017406.png)
-    
+
     1. The name you want to use for the notification.
     2. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
     3. Add here you API key from Discord Notifier.
@@ -227,13 +227,13 @@ Click **Save**
 ??? summary "Sonarr Example"
 
     `Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
-    
+
     ![image-20201108181144356](images/image-20201108181144356.png)
-    
+
     Add the following info.
-    
+
     ![image-20201108181509164](images/image-20201108181509164.png)
-    
+
     1. The name you want to use for the notification.
     2. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
     3. Add the URL that you can copy/paste from the integrations page.
@@ -258,22 +258,22 @@ Scroll up and save
 ??? summary "Bazarr Example"
 
     `Settings` => `Notifications` => and select`JSON`
-    
+
     ![image-20201108185518511](images/image-20201108185518511.png)
-    
+
     On the top click on ![image-20201108191244845](images/image-20201108191244845.png) `Edit` icon and Enable the notification type.
-    
+
     Add the following info.
-    
+
     ![image-20201108190148938](images/image-20201108190148938.png)
-    
+
     1. Enable the JSON Notification.
     2. Add the JSON URL that you can copy/paste from the integrations page.
     3. Click on `Test` to see if it works.
     4. If everything is correct click on `Ok`
-    
+
     Don't forget to click on Save on the top of the Bazarr screen.
-    
+
     ![image-20201108190622004](images/image-20201108190622004.png)
 
 ### Plex
@@ -287,12 +287,12 @@ For Plex we're going to use the Webhook method.
 ??? summary "Plex Example"
 
     `Settings` => `Webhooks` => click on `ADD WEBHOOK`
-    
+
     On the top right click on the ![image-20201108194808693](images/image-20201108194808693.png) `Settings` icon, and on the left sidebar select `Webhooks`
     Click on the middle of the screen on ![image-20201108195006697](images/image-20201108195006697.png) and add the following info.
-    
+
     ![image-20201108195139199](images/image-20201108195139199.png)
-    
+
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
