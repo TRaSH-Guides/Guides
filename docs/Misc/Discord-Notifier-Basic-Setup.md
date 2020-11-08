@@ -11,11 +11,11 @@ First we're going to visit the [Discord Notifier](https://discordnotifier.com/in
  ![image-20201107173234502](images/image-20201107173234502.png)
 
 1. Your Email address you used during signup.
-2. Your Password you created during signup.
-3. Login to the settings and setup.
-4. Password reset if you forgot your password.
-5. Signup if you don't have a account.
-6. Link to Discord Notifier Discord support channel.
+1. Your Password you created during signup.
+1. Login to the settings and setup.
+1. Password reset if you forgot your password.
+1. Signup if you don't have a account.
+1. Link to Discord Notifier Discord support channel.
 
 ------
 
@@ -26,10 +26,10 @@ After you logged in you will be redirected to your profile screen where you need
  ![image-20201107184811997](images/image-20201107184811997.png)
 
 1. Select your Country.
-2. Select your Timezone.
-3. Click on `Generate API Key` (This needs to be done).
-4. Change your Time Format to your liking.
-5. Don't forget to Save your Changes.
+1. Select your Timezone.
+1. Click on `Generate API Key` (This needs to be done).
+1. Change your Time Format to your liking.
+1. Don't forget to Save your Changes.
 
 ------
 
@@ -84,10 +84,10 @@ Paste the channel ID in the corresponding boxes.
  ![image-20201107201822743](images/image-20201107201822743.png)
 
 1. Add the Channel ID for the `#mediabot` channel.
-2. Add the Channel ID for the `#error-channel` channel.
-3. Add the Channel ID for the `#plex` channel.
-4. Use this option if you want to use separate Channels for the notifications.
-5. Use this option if you want to use separate Channels for the notifications.
+1. Add the Channel ID for the `#error-channel` channel.
+1. Add the Channel ID for the `#plex` channel.
+1. Use this option if you want to use separate Channels for the notifications.
+1. Use this option if you want to use separate Channels for the notifications.
 
 ### Invite the bot
 
@@ -100,7 +100,7 @@ You will get a screen that looks like the following screenshot.
  ![image-20201107203535642](images/image-20201107203535642.png)
 
 1. Select the server the bot should join.
-2. Click on `Authorize` to approve.
+1. Click on `Authorize` to approve.
 
 !!! note
      You have to be an administrator of the Discord channel to invite bots. Make sure the bot has permissions to post.
@@ -125,12 +125,12 @@ Here we will setup the Discord Notifier reactions(emoji's) that will be shown du
 This section exist of 2 parts.
 
 1. *arr state (grab/failed) and play state of plex.
-2. The Trackers/Indexers.
+1. The Trackers/Indexers.
 
 First we're going to download the emoji's and you can do that in 2 ways.
 
 1. One by One - Right click -> save as for these emoji images.
-2. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank"} to download a zip of all the current reaction images.
+1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank"} to download a zip of all the current reaction images.
 
 For this Example we will be using the Pack Download, that you need to unpack to your computer and then add them to your Discord Server
 
@@ -162,7 +162,7 @@ Do this for all the other boxes also including your Trackers/Indexers.
  ![image-20201108093947565](images/image-20201108093947565.png)
 
 1. Paste here the the emoji ID.
-2. The actual indexer name you're using in Sonarr/Radarr.
+1. The actual indexer name you're using in Sonarr/Radarr.
 
 ??? summary "Example"
 
