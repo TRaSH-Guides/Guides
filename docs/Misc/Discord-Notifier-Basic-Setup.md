@@ -46,7 +46,7 @@ Setup which notifications you want to to receive from the *arr.
 
  ![image-20201107190759062](images/image-20201107190759062.png)
 
-1. Click on the cog(settings) icon to change what will be shown and show.
+Click on the cog(settings) icon to configure what will be in your notification.
 
 ### Discord Settings
 
@@ -175,6 +175,9 @@ Do this for all the other boxes also including your Trackers/Indexers.
     If you use a different name in Sonarr and Radarr just add them with a comma `BeyondHD - Jackett,BHD`.
 
 Don't forget to click on `Save Changes` !!!
+
+!!! note
+    After pasting the Emoji's ID in to the box you will notice that the leading colon will disappear nothing to worry about that's per design
 
 ------
 
