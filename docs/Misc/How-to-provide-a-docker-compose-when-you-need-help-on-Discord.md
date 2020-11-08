@@ -20,14 +20,14 @@ sudo docker run --rm \
     CONTAINER_NAME CONTAINER_NAME2
 ```
 
-Example:
+??? summary "Example:"
 
-```bash
-sudo docker run --rm \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    red5d/docker-autocompose \
-    sonarr radarr bazarr nzbget
-```
+    ```bash
+       sudo docker run --rm \
+       -v /var/run/docker.sock:/var/run/docker.sock \
+       red5d/docker-autocompose \
+       sonarr radarr bazarr nzbget
+    ```
 
 Paste the results on one of the following sites.
 
