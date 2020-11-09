@@ -142,7 +142,7 @@ After you've added them to your Discord Server it's time to get the ID's from yo
 \:emoji_name:
 ```
 
-??? summary "Example"
+??? example "Example"
     ![image-20201108092738752](images/image-20201108092738752.png)
 
     What results in to.
@@ -164,7 +164,7 @@ Do this for all the other boxes also including your Trackers/Indexers.
 1. Paste here the the emoji ID.
 1. The actual indexer name you're using in Sonarr/Radarr.
 
-??? summary "Example"
+??? example "Example"
 
     ![image-20201108094627415](images/image-20201108094627415.png)
 
@@ -193,7 +193,7 @@ Radarr, Readarr and Lidarr supports Discord Notifier native so that's a easy one
 
 `Settings` => `Connect` => click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Discord Notifier` add your API key and you're done.
 
-??? summary "Radarr Example"
+??? example "Radarr Example"
     In Radarr go to `Settings` => `Connect` => Click on ![image-20201108174654550](images/image-20201108174654550.png) and select `DiscordNotifier.com`.
 
     ![image-20201108154540683](images/image-20201108154540683.png)
@@ -227,7 +227,7 @@ Add the following info.
 
 Click **Save**
 
-??? summary "Sonarr Example"
+??? example "Sonarr Example"
 
     `Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
 
@@ -258,7 +258,7 @@ Add the JSON URL that you can copy/paste from the integrations page.
 
 Scroll up and save
 
-??? summary "Bazarr Example"
+??? example "Bazarr Example"
 
     `Settings` => `Notifications` => and select`JSON`
 
@@ -287,7 +287,7 @@ For Plex we're going to use the Webhook method.
 
 `Settings` => `Webhooks` => click on `ADD WEBHOOK` and add the URL that you can copy/paste from the integrations page and click on `SAVE CHANGES`
 
-??? summary "Plex Example"
+??? example "Plex Example"
 
     `Settings` => `Webhooks` => click on `ADD WEBHOOK`
 
