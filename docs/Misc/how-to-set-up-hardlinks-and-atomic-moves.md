@@ -31,8 +31,8 @@ The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"
 
 ### How to Setup for
 
-   - [DockSTARTer](#dockstarter)
-   - [UnRaid](#unraid) (soon)
+- [DockSTARTer](#dockstarter)
+- [UnRaid](#unraid) (soon)
 
 #### DockSTARTer
 
@@ -61,6 +61,7 @@ The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"
        ├── music
        └── tv
     ```
+
     ##### Step 1
     To accomplisch this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
 
@@ -122,12 +123,12 @@ The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"
 
 ### Examples
 
-   - [Sonarr](#sonarr)
-   - [Radarr](#radarr)
-   - [SABnzbd](#sabnzbd)
-   - [NZBget](#nzbget)
-   - [Qbittorent](#qbittorent)
-   - [Deluge](#deluge)
+    - [Sonarr](#sonarr)
+    - [Radarr](#radarr)
+    - [SABnzbd](#sabnzbd)
+    - [NZBget](#nzbget)
+    - [Qbittorent](#qbittorent)
+    - [Deluge](#deluge)
 
 #### Sonarr
 
