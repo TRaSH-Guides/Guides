@@ -16,8 +16,7 @@
 
     1. Q: **What are hardlinks?**
 
-        - Short answer is "having a file in multiple folders" without using up your storage.
-        - [Long Answer](https://medium.com/@krisbredemeier/the-difference-between-hard-links-and-soft-or-symbolic-links-780149244f7d){:target="_blank"}.
+        - Short answer is "having a file in multiple folders" without using up your storage, [Long Answer](https://medium.com/@krisbredemeier/the-difference-between-hard-links-and-soft-or-symbolic-links-780149244f7d){:target="_blank"}.
 
     1. Q: **What's Atomic Moves?**
 
@@ -115,44 +114,108 @@ The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"
 
 ------
 
+### Examples
+
 !!! info
 
     Pick one path layout and use it for all of them.
 
-    It doesn't matter if you like to use `/data`, `/shared`, `/storage` or whatever.
+    It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
 
-### Examples
+    The screenshots in the examples are using the following root path `/storage`
 
-    - [Sonarr](#sonarr)
-    - [Radarr](#radarr)
-    - [SABnzbd](#sabnzbd)
-    - [NZBget](#nzbget)
-    - [Qbittorent](#qbittorent)
-    - [Deluge](#deluge)
+<!-- no toc -->
+- [Sonarr](#sonarr)
+- [Radarr](#radarr)
+- [SABnzbd](#sabnzbd)
+- [NZBGet](#nzbget)
+- [qBittorrent](#qbittorent)
+- [Deluge](#deluge)
+- [ruTorrent](#rutorrent)
 
 #### Sonarr
 
-placeholder
+??? example "Sonarr Examples"
+
+    `Settings` => `Media Managemen` => `Root Folders`
+
+    ![image-20201111190131842](images/image-20201111190131842.png)
+
+    `Series` => `Add New`
+
+    ![image-20201111190300091](images/image-20201111190300091.png)
+
+    ![image-20201111184955092](images/image-20201111184955092.png)
 
 #### Radarr
 
-placeholder
+??? example "Radarr Examples"
 
-#### SABnzbd
+    `Settings` => `Media Managemen` => `Root Folders`
 
-placeholder
+    ![image-20201111185454928](images/image-20201111185454928.png)
 
-#### NZBget
+    `Movies` => `Add New`
 
-placeholder
+    ![image-20201111185158391](images/image-20201111185158391.png)
 
-#### Qbittorent
+    ![image-20201111185304391](images/image-20201111185304391.png)
 
-placeholder
+#### SABnzbd config
+
+??? example "SABnzbd Examples"
+
+    `SABnzbd config` => `Folders`
+
+    ![image-20201111190431670](images/image-20201111190431670.png)
+
+    `SABnzbd config` => `Categories`
+
+    ![image-20201111190616235](images/image-20201111190616235.png)
+
+#### NZBGet
+
+??? example "NZBGet Examples"
+
+    `Settings` => `PATHS`
+
+    ![image-20201111191413616](images/image-20201111191413616.png)
+
+    `Settings` => `CATEGORIES`
+
+    ![image-20201111191615112](images/image-20201111191615112.png)
+
+#### qBittorrent
+
+??? example "qBittorrent Examples"
+
+    `Options` => `Downloads`
+
+    ![image-20201111191744466](images/image-20201111191744466.png)
 
 #### Deluge
 
-placeholder
+??? example "Deluge Example"
+
+    `Preferences` => `Downloads`
+
+    ![image-20201111191831583](images/image-20201111191831583.png)
+
+#### ruTorrent
+
+??? example "ruTorrent Examples"
+
+    `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
+
+    ![image-20201111201032265](images/image-20201111201032265.png)
+
+    `Settings` => `Downloads`
+
+    ![image-20201111202759459](images/image-20201111202759459.png)
+
+    `Settings` => `Autotools`
+
+    ![image-20201111202945331](images/image-20201111202945331.png)
 
 ------
 
