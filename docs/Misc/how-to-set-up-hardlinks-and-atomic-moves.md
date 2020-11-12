@@ -2,9 +2,21 @@
 
 ## Description
 
-- Instant moves (Atomic-Moves) during import of the *arr (useful when using Usenet).
-- You want to perma seed.
-- You don't want to use twice the storage when using torrents. (hardlinks).
+!!! info
+
+    If you’re wondering why hard links aren’t working or why a simple move is taking far longer than it should.
+
+    Here we will try to explains it.
+
+    The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
+
+So you want one of the following ?
+
+- Instant moves (Atomic-Moves) during import of the *arr (useful when using Usenet)?
+- You don't want to use twice the storage when using torrents. (hardlinks)?
+- You want to perma seed?
+
+Then keep reading.
 
 ### FAQ
 
@@ -21,10 +33,6 @@
     1. Q: **What's Atomic Moves?**
 
         - A real move and not a copy file from download folder to media folder and then delete file from download folder.
-
-------
-
-The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"} default path suggestions (`/tv`, `/movies` , `/downloads`) will break hard links and atomic moves. because they are seen as different volumes inside the container, resulting in a slow copy.
 
 ------
 
