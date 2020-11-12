@@ -124,7 +124,6 @@ The default [linuxserver](https://hub.docker.com/u/linuxserver){:target="_blank"
 
     The screenshots in the examples are using the following root path `/storage`
 
-<!-- no toc -->
 - [Sonarr](#sonarr)
 - [Radarr](#radarr)
 - [SABnzbd](#sabnzbd)
