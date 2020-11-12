@@ -34,7 +34,6 @@ plugins:
   - search
   - git-revision-date-localized:
       type: timeago
-      time_zone: Europe/Amsterdam
       locale: en
       fallback_to_build_date: false
   - awesome-pages
