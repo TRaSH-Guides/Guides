@@ -122,7 +122,7 @@ Then keep reading.
 
         The first thing you need to do is forget the suggested paths from the Spaceinvader One YouTube Tutorials,
 
-        And don't use the predefined paths from the unraid templates.
+        and don't use the predefined paths from the unraid templates.
 
         (Spaceinvader One YouTube guides are great to learn how to start with unraid or how to setup certain applications, and yes I did and still do use them. Probably the main reason why he's using those path is because they are predefined in the template)
 
@@ -134,7 +134,7 @@ Then keep reading.
 
     For this example I'm using my own setup and preferred share `data`.
 
-    go to your dashboard and on the top select `shares` select `add share` .
+    Go to your dashboard and on the top select `shares` select `add share` .
 
     [![main-share](images/image-20201111225320772.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/image-20201111225320772.png){:target="_blank"}
 
@@ -150,7 +150,7 @@ Then keep reading.
 
     ##### Folder Structure
 
-    On the host (Unraid) you will need to add `/mnt/user` before it.
+    On the host (Unraid) you will need to add /mnt/user before it. **So /mnt/user/data**
 
     The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
 
