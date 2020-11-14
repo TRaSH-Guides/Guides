@@ -118,8 +118,6 @@ Then keep reading.
 
 ??? summary "UnRaid"
 
-    ## Unraid - How To Set Up Hardlinks and Atomic-Moves
-
     !!! note
 
         The first thing you need to do is forget the suggested paths from the Spaceinvader One YouTube Tutorials,
@@ -132,13 +130,13 @@ Then keep reading.
 
         To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of **ONE** share with subfolders.
 
-    ### Create the main share
+    ##### Create the main share
 
     For this example I'm using my own setup and preferred share `data`.
 
     go to your dashboard and on the top select `shares` select `add share` .
 
-    ![image-20201111225320772](images/image-20201111225320772.png)
+    [![main-share](images/image-20201111225320772.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/image-20201111225320772.png){:target="_blank"}
 
     1. use `data`
     1. if you got a cache drive and want to make use of it put it on `Yes` or keep it disabled (Hardlinks will stay in tact if you're using the cache)
@@ -150,7 +148,7 @@ Then keep reading.
 
         With Usenet  you won't have any issues.
 
-    ### Folder Structure
+    ##### Folder Structure
 
     On the host (Unraid) you will need to add `/mnt/user` before it.
 
@@ -176,7 +174,7 @@ Then keep reading.
 
     *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
 
-    ### Setting up the containers
+    ##### Setting up the containers
 
     After you created all the needed folders it's time to setup the paths in the docker containers.
 
@@ -186,19 +184,19 @@ Then keep reading.
 
     `Container Path:` => The path that will be used inside the container.
 
-    `Host Path`: => The path on your Unraid Server (The Host).
+    `Host Path:` => The path on your Unraid Server (The Host).
 
-    #### Torrent clients
+    ##### Torrent clients
 
     qBittorrent, Deluge, ruTorrent
 
-    ![image-20201112201012153](images/image-20201112201012153.png)
+    ![unraid-torrent-clients](images/image-20201112201012153.png)
 
     `Container Path:` => `/data/torrent`
 
     `Host Path`: => `/mnt/user/data/torrents`
 
-    !!! note
+    !!! info
 
         The reason why we use `/data/torrent` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like/data/torrents/{tv|movies|music}.
 
@@ -210,17 +208,17 @@ Then keep reading.
         └── tv
     ```
 
-    #### Usenet clients
+    ##### Usenet clients
 
     NZBGet or SABnzbd
 
-    ![image-20201112203013210](images/image-20201112203013210.png)
+    ![unraid-usenet-client](images/image-20201112203013210.png)
 
     `Container Path:` => `/data/usenet`
 
-    `Host Path`: => `/mnt/user/data/usenet`
+    `Host Path:` => `/mnt/user/data/usenet`
 
-    !!! note
+    !!! info
 
         The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like/data/usenet/{tv|movies|music}.
 
@@ -232,17 +230,17 @@ Then keep reading.
         └── tv
     ```
 
-    #### The arr(s)
+    ##### The arr(s)
 
     Sonarr, Radarr and Lidarr
 
-    ![image-20201112204406692](images/image-20201112204406692.png)
+    ![unraid-arr](images/image-20201112204406692.png)
 
     `Container Path:` => `/data`
 
-    `Host Path`: => `/mnt/user/data/`
+    `Host Path:` => `/mnt/user/data/`
 
-    !!! note
+    !!! info
 
         Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
 
@@ -262,17 +260,17 @@ Then keep reading.
         └── tv
     ```
 
-    #### Media Server
+    ##### Media Server
 
     Plex, Emby, JellyFin and Bazarr
 
-    ![image-20201112205218382](images/image-20201112205218382.png)
+    ![unraid-media-server](images/image-20201112205218382.png)
 
     `Container Path:` => `/data/media`
 
-    `Host Path`: => `/mnt/user/data/media/`
+    `Host Path:` => `/mnt/user/data/media/`
 
-    !!! note
+    !!! info
 
         Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
 
@@ -284,9 +282,9 @@ Then keep reading.
         └── tv
     ```
 
-    ### Final Result
+    ##### Final Result
 
-    ![image-20201112210400294](images/image-20201112210400294.png)
+    [![final-results](images/image-20201112210400294.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/image-20201112210400294.png){:target="_blank"}
 
 ------
 
