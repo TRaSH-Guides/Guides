@@ -56,9 +56,9 @@ Then keep reading.
     storage
     ├── downloads
     |  ├── torrents
-    │  |   ├── movies
-    │  |   ├── music
-    │  |   └── tv
+    │  |  ├── movies
+    │  |  ├── music
+    │  |  └── tv
     |  └── usenet
     │     ├── movies
     │     ├── music
@@ -167,9 +167,9 @@ Then keep reading.
     │  ├── music
     │  └── tv
     └── media
-        ├── movies
-        ├── music
-        └── tv
+       ├── movies
+       ├── music
+       └── tv
     ```
 
     *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
@@ -203,9 +203,9 @@ Then keep reading.
     ```none
     data
     └── torrents
-        ├── movies
-        ├── music
-        └── tv
+       ├── movies
+       ├── music
+       └── tv
     ```
 
     ##### Usenet clients
@@ -225,9 +225,9 @@ Then keep reading.
     ```none
     data
     └── usenet
-        ├── movies
-        ├── music
-        └── tv
+       ├── movies
+       ├── music
+       └── tv
     ```
 
     ##### The arr(s)
@@ -255,9 +255,9 @@ Then keep reading.
     │  ├── music
     │  └── tv
     └── media
-        ├── movies
-        ├── music
-        └── tv
+       ├── movies
+       ├── music
+       └── tv
     ```
 
     ##### Media Server
@@ -277,9 +277,9 @@ Then keep reading.
     ```none
     data
     └── media
-        ├── movies
-        ├── music
-        └── tv
+       ├── movies
+       ├── music
+       └── tv
     ```
 
     ##### Final Result
@@ -312,7 +312,7 @@ Then keep reading.
 
     `Settings` => `Media Managemen` => `Root Folders`
 
-    ![image-20201111190131842](images/image-20201111190131842.png)
+    ![sonarr-root-folder](images/image-20201111190131842.png)
 
     `Series` => `Add New`
 
@@ -326,7 +326,7 @@ Then keep reading.
 
     `Settings` => `Media Managemen` => `Root Folders`
 
-    ![image-20201111185454928](images/image-20201111185454928.png)
+    ![radarr-root-folder](images/image-20201111185454928.png)
 
     `Movies` => `Add New`
 
@@ -340,11 +340,11 @@ Then keep reading.
 
     `SABnzbd config` => `Folders`
 
-    ![image-20201111190431670](images/image-20201111190431670.png)
+    ![sabnzbd-folders](images/image-20201111190431670.png)
 
     `SABnzbd config` => `Categories`
 
-    ![image-20201111190616235](images/image-20201111190616235.png)
+    ![sabnzbd-categories](images/image-20201111190616235.png)
 
 #### NZBGet
 
@@ -352,11 +352,11 @@ Then keep reading.
 
     `Settings` => `PATHS`
 
-    ![image-20201111191413616](images/image-20201111191413616.png)
+    ![settings-paths](images/image-20201111191413616.png)
 
     `Settings` => `CATEGORIES`
 
-    ![image-20201111191615112](images/image-20201111191615112.png)
+    ![settings-categories](images/image-20201111191615112.png)
 
 #### qBittorrent
 
@@ -364,7 +364,7 @@ Then keep reading.
 
     `Options` => `Downloads`
 
-    ![image-20201111191744466](images/image-20201111191744466.png)
+    ![options-downloads](images/image-20201111191744466.png)
 
 #### Deluge
 
@@ -372,7 +372,7 @@ Then keep reading.
 
     `Preferences` => `Downloads`
 
-    ![image-20201111191831583](images/image-20201111191831583.png)
+    ![preferences-downloads](images/image-20201111191831583.png)
 
 #### ruTorrent
 
@@ -380,15 +380,15 @@ Then keep reading.
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
-    ![image-20201111201032265](images/image-20201111201032265.png)
+    ![rtorrent.rc](images/image-20201111201032265.png)
 
     `Settings` => `Downloads`
 
-    ![image-20201111202759459](images/image-20201111202759459.png)
+    ![settings-downloads](images/image-20201111202759459.png)
 
     `Settings` => `Autotools`
 
-    ![image-20201111202945331](images/image-20201111202945331.png)
+    ![settings-autotools](images/image-20201111202945331.png)
 
 ------
 
