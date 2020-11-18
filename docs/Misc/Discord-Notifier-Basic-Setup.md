@@ -1,3 +1,12 @@
+<style>
+.indent-L1 {
+    margin-left: 1em;
+}
+.indent-B1 {
+    margin-bottom: 1em;
+}
+</style>
+
 # Discord Notifier Basic Setup
 
 Here you will see a basic setup for Discord Notifier.
@@ -6,15 +15,15 @@ Here you will see a basic setup for Discord Notifier.
 
 ## Login
 
-First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank"} site, if you don't have a account yet signup
+First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank"} site, if you don't have an account yet, click the link to signup.
 
  ![image-20201107173234502](images/image-20201107173234502.png)
 
 1. Your Email address you used during signup.
 1. Your Password you created during signup.
-1. Login to the settings and setup.
+1. Login to the site and setup.
 1. Password reset if you forgot your password.
-1. Signup if you don't have a account.
+1. Signup if you don't have an account.
 1. Link to Discord Notifier Discord support channel.
 
 ------
@@ -37,37 +46,54 @@ After you have logged in, you will be redirected to your profile screen.
 
 Here, you can setup the following items:
 
-- Notifications Settings => Setup which notifications you want to receive from the *arr.
-- Discord Settings => Setup your discord channels and your reactions and invite the bot in to your channel.
+- Notifications Settings => Setup which notifications you want to receive.
+- Discord Settings => Setup your discord channels and your reactions and invite the bot into your channel.
 
 ### Notification Settings
 
-Setup which notifications you want to to receive from the *arr.
+Setup which notifications you want to to receive from each option.
 
  ![image-20201107190759062](images/image-20201107190759062.png)
 
-Click on the cog(settings) icon to configure what will be in your notification.
+1. Click on the cog (settings) icon to configure what will be in your notification.
+
+#### Notification Settings Configuration
+
+![image-20201117-121530](images/image-20201117-121530.png)
+
+1. Enable/Disable notification trigger
+1. Change color bar for notification trigger
+1. Expand trigger to enable/disable message fields
+1. Customize the layout for the notification (drag/drop editor to the right in the image)
 
 ### Discord Settings
 
-Setup your discord channels and your reactions and invite the bot in to your channel.
+<div class="indent-L1 indent-B1">
+Setup your discord channels and your reactions and invite the bot into your channel.
+</div>
 
-#### Setup the channels
+#### Create the channels
 
+<div class="indent-L1 indent-B1">
 First thing to do is create a few channels where you receive your notifications.
 
-!!! note
-    I won't be explaining how to setup a discord channel/server/permissions that's up to you and your responsibility !!!
+!!! note:
+    I won't be explaining how to setup a discord channel, that's up to you but google has plenty of references.
 
-you can do it all from one channel or separate the notifications if you want, in this example I will do a basic setup of 3 channels.
+You can do it all from one channel or separate the notifications (granular) for each trigger if you want.
+</div>
 
-`#mediabot` => *arr channel - All the `*arr` notifications you setup in [Notification Settings](#notification-settings).
+#### Simple channel setup
 
-`#error-channel` => Error channel- Health check, network errors, etc.
+<div class="indent-L1">
 
-`#plex` => Media channel - Play state and info of Plex.
+`#media` => All the `*arr` notifications you setup in [Notification Settings](#notification-settings).
 
-After you have created your custom channels, then you'll need to add them to `Setup the channels`
+`#errors` => Health checks, network errors, etc.
+
+`#plex` => Play, resume, etc. for Plex.
+</div>
+After you create the needed channels, it's time to add them to the `Setup the channels`
 
 First we need to get the channel ID's from your server/channel
 
@@ -83,11 +109,13 @@ Paste the channel ID in the corresponding boxes.
 
  ![image-20201107201822743](images/image-20201107201822743.png)
 
-1. Add the Channel ID for the `#mediabot` channel.
-1. Add the Channel ID for the `#error-channel` channel.
-1. Add the Channel ID for the `#plex` channel.
-1. Use this option if you want to use separate *arr channels for the notifications.
-1. Use this option if you want to use separate *arr channels for the notifications.
+1. Add the channel ID for the `#media` channel.
+1. Add the channel ID for the `#errors` channel.
+1. Add the channel ID for the `#plex` channel.
+1. Use this option if you want to use separate channels for the notifications (see below).
+1. Use this option if you want to use separate channels for the notifications.
+
+![Image-20201117-145908](images/Image-20201117-145908.png)
 
 ### Invite the bot
 
@@ -102,7 +130,7 @@ You will get a screen that looks like the following screenshot.
 1. Select the server the bot should join.
 1. Click on `Authorize` to approve.
 
-!!! note
+!!! note:
      You have to be an administrator of the Discord channel to invite bots. Make sure the bot has permissions to post.
 
 ??? summary "Bot Setup Help"
@@ -211,7 +239,7 @@ Radarr, Readarr and Lidarr supports Discord Notifier natively so that's an easy 
 ### Sonarr
 
 Sonarr doesn't have native support & will not get one per their devs.
-that's why we're going to use the webhook method.
+That's why we're going to use the webhook method.
 
  ![image-20201108175840774](images/image-20201108175840774.png)
 
@@ -281,7 +309,7 @@ Scroll up and save
 
 ### Plex
 
-For Plex we're going to use the Webhook method.
+#### URL Webhook
 
  ![image-20201108191708582](images/image-20201108191708582.png)
 
@@ -299,9 +327,47 @@ For Plex we're going to use the Webhook method.
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
+### Advanced Plex Settings
+
+??? info "Advanced Plex Settings"
+
+    #### Python Webhook
+
+    <div class="indent-L1 indent-B1">
+    Python is required for this to work. Make sure your docker solution has it available if running docker.
+    </div>
+
+    #### All implementations
+
+    - Open the file and change the variables accordingly.
+    - There are links in the file comments to help as well
+    - You can test the script by typing python /path/to/script in your CLI. If the file has a shebang in it (#!python) then you do not need to specify python on the CLI.
+
+    ##### Docker
+
+    - Cloudbox - Has python installed
+    - Hotio - Has python installed
+    - LSIO - Does not have python installed
+
+    ##### Linux
+
+    placeholder
+
+    ##### Unraid
+
+    placeholder
+
+    ##### Windows
+
+    placeholder
+
+    <div class="indent-L1 indent-B1">
+    Run the python file so it listens on the specific port.
+    </div>
+
 ### Testing
 
-On the top of the integrations page you will have now the ability to test your settings.
+On the top of the integrations page you will now have the ability to test your settings. This only tests the connection between the notifier and your discord. You can use the Test in each *arr and that will test the everything (connection wise).
 
  ![image-20201108195808555](images/image-20201108195808555.png)
 
