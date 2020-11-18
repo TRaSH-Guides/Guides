@@ -20,7 +20,7 @@ sudo docker run --rm \
     CONTAINER_NAME CONTAINER_NAME2
 ```
 
-??? summary "Example:"
+??? example "Example:"
 
     ```bash
        sudo docker run --rm \

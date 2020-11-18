@@ -30,7 +30,7 @@ First we're going to visit the [Discord Notifier](https://discordnotifier.com/in
 
 ## Profile
 
-After you logged in you will be redirected to your profile screen where you need to do a few things.
+After you have logged in, you will be redirected to your profile screen.
 
  ![image-20201107184811997](images/image-20201107184811997.png)
 
@@ -44,7 +44,7 @@ After you logged in you will be redirected to your profile screen where you need
 
 ## Notification Setup
 
-Here you will be able to setup the following things:
+Here, you can setup the following items:
 
 - Notifications Settings => Setup which notifications you want to receive.
 - Discord Settings => Setup your discord channels and your reactions and invite the bot into your channel.
@@ -157,10 +157,10 @@ This section exist of 2 parts.
 
 First we're going to download the emoji's and you can do that in 2 ways.
 
-1. One by One - Right click -> save as for these emoji images.
+1. 1 at a time - Right click -> Save As... - for these emoji images to some location on your computer.
 1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank"} to download a zip of all the current reaction images.
 
-For this Example we will be using the Pack Download, that you need to unpack to your computer and then add them to your Discord Server
+For this example, we will be using Pack Download.  You'll need download the file and then unpack it somewhere on your computer.  After which, you can then add the emoji's to your Discord Server easily.
 
 How to add your own Emoji's => [LINK](https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis){:target="_blank"}
 
@@ -170,7 +170,7 @@ After you've added them to your Discord Server it's time to get the ID's from yo
 \:emoji_name:
 ```
 
-??? summary "Example"
+??? example "Example"
     ![image-20201108092738752](images/image-20201108092738752.png)
 
     What results in to.
@@ -192,7 +192,7 @@ Do this for all the other boxes also including your Trackers/Indexers.
 1. Paste here the the emoji ID.
 1. The actual indexer name you're using in Sonarr/Radarr.
 
-??? summary "Example"
+??? example "Example"
 
     ![image-20201108094627415](images/image-20201108094627415.png)
 
@@ -217,11 +217,11 @@ This is where we add all this to your *arr and Plex.
 
 ### Radarr, Readarr and Lidarr
 
-Radarr, Readarr and Lidarr supports Discord Notifier native so that's a easy one to add.
+Radarr, Readarr and Lidarr supports Discord Notifier natively so that's an easy one to add.
 
 `Settings` => `Connect` => click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Discord Notifier` add your API key and you're done.
 
-??? summary "Radarr Example"
+??? example "Radarr Example"
     In Radarr go to `Settings` => `Connect` => Click on ![image-20201108174654550](images/image-20201108174654550.png) and select `DiscordNotifier.com`.
 
     ![image-20201108154540683](images/image-20201108154540683.png)
@@ -245,7 +245,7 @@ That's why we're going to use the webhook method.
 
 `Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
 
-Add the following info.
+Add the following info:
 
 **Name**: Discord Notifier
 
@@ -255,7 +255,7 @@ Add the following info.
 
 Click **Save**
 
-??? summary "Sonarr Example"
+??? example "Sonarr Example"
 
     `Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
 
@@ -282,11 +282,11 @@ For Bazarr you need to make use of JSON method.
 
 On the top click on ![image-20201108191244845](images/image-20201108191244845.png) `Edit` icon and Enable the notification type.
 
-Add the JSON URL that you can copy/paste from the integrations page.
+Add the JSON URL that you copy/pasted from the integrations page.
 
 Scroll up and save
 
-??? summary "Bazarr Example"
+??? example "Bazarr Example"
 
     `Settings` => `Notifications` => and select`JSON`
 
@@ -299,7 +299,7 @@ Scroll up and save
     ![image-20201108190148938](images/image-20201108190148938.png)
 
     1. Enable the JSON Notification.
-    2. Add the JSON URL that you can copy/paste from the integrations page.
+    2. Add the JSON URL that you copy/pasted from the integrations page.
     3. Click on `Test` to see if it works.
     4. If everything is correct click on `Ok`
 
@@ -315,7 +315,7 @@ Scroll up and save
 
 `Settings` => `Webhooks` => click on `ADD WEBHOOK` and add the URL that you can copy/paste from the integrations page and click on `SAVE CHANGES`
 
-??? summary "Plex Example"
+??? example "Plex Example"
 
     `Settings` => `Webhooks` => click on `ADD WEBHOOK`
 
@@ -372,3 +372,4 @@ On the top of the integrations page you will now have the ability to test your s
  ![image-20201108195808555](images/image-20201108195808555.png)
 
 Click on the icons to test your notifications.
+After going through this tutorial and you still arent getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank"} for additional support.
