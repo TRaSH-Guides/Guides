@@ -6,6 +6,7 @@
     margin-bottom: 1em;
 }
 </style>
+
 # Discord Notifier Basic Setup
 
 Here you will see a basic setup for Discord Notifier.
@@ -56,15 +57,17 @@ Setup which notifications you want to to receive from each option.
 
 1. Click on the cog (settings) icon to configure what will be in your notification.
 
-    #### Notification Settings Configuration
-    ![image-20201117-121530](images/image-20201117-121530.png)
+#### Notification Settings Configuration
 
-    1. Enable/Disable notification trigger
-    1. Change color bar for notification trigger
-    1. Expand trigger to enable/disable message fields
-    1. Customize the layout for the notification (drag/drop editor to the right in the image)
+![image-20201117-121530](images/image-20201117-121530.png)
+
+1. Enable/Disable notification trigger
+1. Change color bar for notification trigger
+1. Expand trigger to enable/disable message fields
+1. Customize the layout for the notification (drag/drop editor to the right in the image)
 
 ### Discord Settings
+
 <div class="indent-L1 indent-B1">
 Setup your discord channels and your reactions and invite the bot into your channel.
 </div>
@@ -81,6 +84,7 @@ You can do it all from one channel or separate the notifications (granular) for 
 </div>
 
 #### Simple channel setup
+
 <div class="indent-L1">
 
 `#media` => All the `*arr` notifications you setup in [Notification Settings](#notification-settings).
@@ -323,29 +327,43 @@ Scroll up and save
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
-#### Python Webhook
-<div class="indent-L1 indent-B1">
-Python is required for this to work. Make sure your docker solution has it available if running docker.
-</div>
+### Advanced Plex Settings
 
-##### All implementations
-- Open the file and change the variables accordingly.
-- There are links in the file comments to help as well
-- You can test the script by typing python /path/to/script in your CLI. If the file has a shebang in it (#!python) then you do not need to specify python on the CLI.
+??? info "Advanced Plex Settings"
 
-##### Docker
-- Cloudbox - Has python installed
-- Hotio - Has python installed
-- LSIO - Does not have python installed
+    #### Python Webhook
 
-##### Linux
+    <div class="indent-L1 indent-B1">
+    Python is required for this to work. Make sure your docker solution has it available if running docker.
+    </div>
 
-##### Unraid
+    #### All implementations
 
-##### Windows
-<div class="indent-L1 indent-B1">
-Run the python file so it listens on the specific port.
-</div>
+    - Open the file and change the variables accordingly.
+    - There are links in the file comments to help as well
+    - You can test the script by typing python /path/to/script in your CLI. If the file has a shebang in it (#!python) then you do not need to specify python on the CLI.
+
+    ##### Docker
+
+    - Cloudbox - Has python installed
+    - Hotio - Has python installed
+    - LSIO - Does not have python installed
+
+    ##### Linux
+
+    placeholder
+
+    ##### Unraid
+
+    placeholder
+
+    ##### Windows
+
+    placeholder
+
+    <div class="indent-L1 indent-B1">
+    Run the python file so it listens on the specific port.
+    </div>
 
 ### Testing
 
