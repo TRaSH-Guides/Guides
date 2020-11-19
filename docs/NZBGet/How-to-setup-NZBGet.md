@@ -20,7 +20,7 @@ This basic example is based on the use of docker images
 
 ## PATHS
 
-![paths](images/paths.png)
+[![paths](images/paths.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/paths.png){:target="_blank"}
 
 I will only explain the so called most important paths.
 
@@ -36,7 +36,7 @@ I will only explain the so called most important paths.
 
 ## NEWS-SERVERS
 
-![newsservers](images/newsservers.png)
+[![newsservers](images/newsservers.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/newsservers.png){:target="_blank"}
 
 | Name           | Description                                                                            |
 |:---            |:---                                                                                    |
@@ -52,7 +52,7 @@ I will only explain the so called most important paths.
 
 ## CATEGORIES
 
-![categories](images/categories.png)
+[![categories](images/categories.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/categories.png){:target="_blank"}
 
 | Name          | Description                                                                            |
 |:---           |:---                                                                                    |
@@ -63,35 +63,35 @@ I will only explain the so called most important paths.
 
 ## INCOMING NZBS
 
-![incoming](images/incoming.png)
+[![incoming](images/incoming.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/incoming.png){:target="_blank"}
 
 !!! warning
     `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
 
-![queue](images/queue.png)
+[![queue](images/queue.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/queue.png){:target="_blank"}
 
 !!! warning
     `WriteBuffer`: If you're low on memory don't set this to high.
 
 ## LOGGING
 
-![logging](images/logging.png)
+[![logging](images/logging.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/logging.png){:target="_blank"}
 
 ## CHECK AND REPAIR
 
-![checkAndRepair](images/checkAndRepair.png)
+[![checkAndRepair](images/checkAndRepair.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/checkAndRepair.png){:target="_blank"}
 
 ## UNPACK
 
-![unpack](images/unpack.png)
+[![unpack](images/unpack.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/unpack.png){:target="_blank"}
 
 !!! warning
     `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
 
 ## EXTENSION SCRIPTS
 
-![extScripts](images/extScripts.png)
+[![extScripts](images/extScripts.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/extScripts.png){:target="_blank"}
 
 Depending if you're using some NZBGet script here you can change the order or when it should be used
