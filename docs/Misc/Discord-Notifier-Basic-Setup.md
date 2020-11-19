@@ -57,14 +57,16 @@ Setup which notifications you want to to receive from each option.
 
 1. Click on the cog (settings) icon to configure what will be in your notification.
 
-#### Notification Settings Configuration
+??? example "Notification Settings Configuration"
 
-![image-20201117-121530](images/image-20201117-121530.png)
+    #### Notification Settings Configuration
 
-1. Enable/Disable notification trigger
-1. Change color bar for notification trigger
-1. Expand trigger to enable/disable message fields
-1. Customize the layout for the notification (drag/drop editor to the right in the image)
+    ![image-20201117-121530](images/image-20201117-121530.png)
+
+    1. Enable/Disable notification trigger
+    1. Change color bar for notification trigger
+    1. Expand trigger to enable/disable message fields
+    1. Customize the layout for the notification (drag/drop editor to the right in the image)
 
 ### Discord Settings
 
@@ -85,14 +87,12 @@ You can do it all from one channel or separate the notifications (granular) for 
 
 #### Simple channel setup
 
-<div class="indent-L1">
-
 `#media` => All the `*arr` notifications you setup in [Notification Settings](#notification-settings).
 
 `#errors` => Health checks, network errors, etc.
 
 `#plex` => Play, resume, etc. for Plex.
-</div>
+
 After you create the needed channels, it's time to add them to the `Setup the channels`
 
 First we need to get the channel ID's from your server/channel
@@ -115,7 +115,17 @@ Paste the channel ID in the corresponding boxes.
 1. Use this option if you want to use separate channels for the notifications (see below).
 1. Use this option if you want to use separate channels for the notifications.
 
-![Image-20201117-145908](images/Image-20201117-145908.png)
+??? example "Granular arr setup"
+
+    ##### Granular arr setup
+
+    ![Image-20201117-145908](images/Image-20201117-145908.png)
+
+??? example "Granular media setup"
+
+    ##### Granular media setup
+
+    ![granular-media-setup](images/granular-media-setup.png)
 
 ### Invite the bot
 
@@ -327,9 +337,9 @@ Scroll up and save
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
-### Advanced Plex Settings
-
 ??? info "Advanced Plex Settings"
+
+    ### Advanced Plex Settings
 
     #### Python Webhook
 
