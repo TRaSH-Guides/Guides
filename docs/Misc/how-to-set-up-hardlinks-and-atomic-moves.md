@@ -369,7 +369,7 @@ Then keep reading.
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
-    Download this [synology-docker-compose.yml](files/synology-docker-compose.yml) to your `/volume1/docker/` location so you got your important stuff together.
+    Download this [synology-docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed) to your `/volume1/docker/` location so you got your important stuff together.
     This docker-compose file will have the following docker containers included.
 
     - Radarr
@@ -479,7 +479,7 @@ Then keep reading.
               - WEBUI_PORT=8080
             volumes:
               - /etc/localtime:/etc/localtime:ro
-              - /volume1/docker/qbittorrent:/config:rw # Change "/home/dockeruser/.config/qbittorrent" with the path your config will be.
+              - /volume1/docker/qbittorrent:/config:rw # Change "/volume1/docker/qbittorrent" with the path your config will be.
               - /volume1/data/torrents:/data/torrents:rw # Change "/volume1/data/torrents" with the path your usenet data ends up in.
         # Plex - https://hotio.dev/containers/plex/
           plex:
@@ -504,7 +504,7 @@ Then keep reading.
               - PLEX_PASS=no
             volumes:
               - /etc/localtime:/etc/localtime:ro
-              - /volume1/docker/plex:/config:rw
+              - /volume1/docker/plex:/config:rw # Change "/volume1/docker/plex" with the path your config will be.
               - /volume1/data/media:/data/media:rw # Change "/volume1/data/media" with the path where your library are(sonarr+radarr).
               - /tmp:/transcode:rw
         # automatic docker container updater - https://github.com/containrrr/watchtower
@@ -523,12 +523,8 @@ Then keep reading.
               - WATCHTOWER_CLEANUP=true
               - WATCHTOWER_INCLUDE_STOPPED=false
               - WATCHTOWER_MONITOR_ONLY=false
-              - WATCHTOWER_NOTIFICATIONS_LEVEL=info
-              - WATCHTOWER_NOTIFICATIONS=shoutrrr
-              - WATCHTOWER_NOTIFICATION_TEMPLATE={{range .}}{{.Message}}{{println}}{{end}}
               - WATCHTOWER_SCHEDULE=0 0 4 * * * # use cron to change update interval set at 4am.
               - WATCHTOWER_TIMEOUT=10s
-              - WATCHTOWER_NOTIFICATION_URL=
             volumes:
               - /etc/localtime:/etc/localtime:ro
               - /var/run/docker.sock:/var/run/docker.sock
