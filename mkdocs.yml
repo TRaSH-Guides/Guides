@@ -29,6 +29,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - toc:
       permalink: true
+      toc_depth: 5
 
 plugins:
   - search
