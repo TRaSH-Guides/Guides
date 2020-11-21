@@ -1,0 +1,147 @@
+version: "3.2"
+services:
+# Radarr - https://hotio.dev/containers/radarr/
+  radarr:
+    container_name: radarr
+    image: ghcr.io/hotio/radarr:nightly
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 7878:7878
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/radarr:/config # Change "/volume1/docker/radarr" with the path your config will be.
+      - /volume1/data:/data # Change "/volume1/data" with the path where your library + torrent/usenet downloads both are.
+# Sonarr - https://hotio.dev/containers/sonarr/
+  sonarr:
+    container_name: sonarr
+    image: ghcr.io/hotio/sonarr:nightly
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 8989:8989
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/sonarr:/config # Change "/volume1/docker/sonarr" with the path your config will be.
+      - /volume1/data:/data # Change "/volume1/data" with the path where your library + torrent/usenet downloads both are.
+# Bazarr - https://hotio.dev/containers/bazarr/
+  bazarr:
+    container_name: bazarr
+    image: ghcr.io/hotio/bazarr:nightly
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 6767:6767
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/bazarr:/config # Change "/volume1/docker/bazarr" with the path your config will be.
+      - /volume1/data/media:/data/media # Change "/volume1/data/media" with the path where your library are(sonarr+radarr).
+# NZBGet - https://hotio.dev/containers/nzbget/
+  nzbget:
+    container_name: nzbget
+    image: ghcr.io/hotio/nzbget:latest
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 6789:6789/tcp
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/nzbget:/config:rw # Change "/volume1/docker/nzbget" with the path your config will be.
+      - /volume1/data/usenet:/data/usenet:rw # Change "/volume1/data/usenet" with the path your usenet data ends up in.
+# qBittorrent - https://docs.linuxserver.io/images/docker-qbittorrent
+  qbittorrent:
+    container_name: qbittorrent
+    image: ghcr.io/linuxserver/qbittorrent
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 6881:6881
+      - 6881:6881/udp
+      - 8080:8080
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+      - UMASK_SET=022
+      - WEBUI_PORT=8080
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/qbittorrent:/config:rw # Change "/home/dockeruser/.config/qbittorrent" with the path your config will be.
+      - /volume1/data/torrents:/data/torrents:rw # Change "/volume1/data/torrents" with the path your usenet data ends up in.
+# Plex - https://hotio.dev/containers/plex/
+  plex:
+    container_name: plex
+    image: ghcr.io/hotio/plex
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 32400:32400
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+      - UMASK=002
+      - ARGS=
+      - DEBUG=no
+      - PLEX_CLAIM=
+      - ADVERTISE_IP=
+      - ALLOWED_NETWORKS=
+      - PLEX_PASS=no
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /volume1/docker/plex:/config:rw
+      - /volume1/data/media:/data/media:rw # Change "/volume1/data/media" with the path where your library are(sonarr+radarr).
+      - /tmp:/transcode:rw
+# automatic docker container updater - https://github.com/containrrr/watchtower
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    environment:
+      - PUID=1026 # you must find out your PUID through SSH, type in terminal: id $user
+      - PGID=100 # you must find out your PGID through SSH, type in terminal: id $user
+      - TZ=Europe/Amsterdam # Change to your timezone
+      - UMASK=022
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_INCLUDE_STOPPED=false
+      - WATCHTOWER_MONITOR_ONLY=false
+      - WATCHTOWER_NOTIFICATIONS_LEVEL=info
+      - WATCHTOWER_NOTIFICATIONS=shoutrrr
+      - WATCHTOWER_NOTIFICATION_TEMPLATE={{range .}}{{.Message}}{{println}}{{end}}
+      - WATCHTOWER_SCHEDULE=0 0 4 * * * #use cron to change update interval set at 4am.
+      - WATCHTOWER_TIMEOUT=10s
+      - WATCHTOWER_NOTIFICATION_URL=
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
