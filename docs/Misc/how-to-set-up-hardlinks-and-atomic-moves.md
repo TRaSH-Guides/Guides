@@ -50,6 +50,8 @@ Then keep reading.
 
         I'm using the default paths in this example, and will keep the other paths unchanged so nothing will break if you make a mistake.
 
+    ##### Folder Structure
+
     We're going to use a mounted drive that we're going to use as storage for downloads and your media.
     In this example the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
@@ -70,7 +72,7 @@ Then keep reading.
        └── tv
     ```
 
-    ##### Step 1
+    ##### Changes to the .env
     To accomplisch this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
 
     ``` yaml
@@ -97,7 +99,7 @@ Then keep reading.
     MEDIADIR_TV=/mnt/medialibrary/tv
     ```
 
-    ##### Step 2
+    ##### Changes to your paths
 
     When that's all set then you will need to change the paths you're going to use in the containers from:
 
@@ -114,6 +116,96 @@ Then keep reading.
     `/music` => `/storage/medialibrary/music`
 
     `/tv` => `/storage/medialibrary/tv`
+
+    ##### DockSTARTer Examples
+
+    !!! info
+
+        The screenshots in the examples are using the following root path `/storage`
+
+    ###### Sonarr
+
+    ??? example "Sonarr Examples"
+
+        `Settings` => `Media Managemen` => `Root Folders`
+
+        ![ds-sonarr-root-folder](images/ds-sonarr-root-folder.png)
+
+        `Series` => `Add New`
+
+        ![ds-sonarr-add-new](images/ds-sonarr-add-new.png)
+
+        ![ds-sonarr-tv](images/ds-sonarr-tv.png)
+
+    ###### Radarr
+
+    ??? example "Radarr Examples"
+
+        `Settings` => `Media Managemen` => `Root Folders`
+
+        ![ds-radarr-root-folder](images/ds-radarr-root-folder.png)
+
+        `Movies` => `Add New`
+
+        ![ds-radarr-add-new](images/ds-radarr-add-new.png)
+
+        ![ds-radarr-movies](images/ds-radarr-movies.png)
+
+    ###### SABnzbd
+
+    ??? example "SABnzbd Examples"
+
+        `SABnzbd config` => `Folders`
+
+        ![ds-sabnzbd-folders](images/ds-sabnzbd-folders.png)
+
+        `SABnzbd config` => `Categories`
+
+        ![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
+
+    ###### NZBGet
+
+    ??? example "NZBGet Examples"
+
+        `Settings` => `PATHS`
+
+        ![ds-nzbget-settings-paths](images/ds-nzbget-settings-paths.png)
+
+        `Settings` => `CATEGORIES`
+
+        ![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
+
+    ###### qBittorrent
+
+    ??? example "qBittorrent Examples"
+
+        `Options` => `Downloads`
+
+        ![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
+
+    ###### Deluge
+
+    ??? example "Deluge Example"
+
+        `Preferences` => `Downloads`
+
+        ![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
+
+    ###### ruTorrent
+
+    ??? example "ruTorrent Examples"
+
+        `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
+
+        ![ds-rtorrent.rc](images/ds-rtorrent.rc.png)
+
+        `Settings` => `Downloads`
+
+        ![ds-rtorrent-settings-downloads](images/ds-rtorrent-settings-downloads.png)
+
+        `Settings` => `Autotools`
+
+        ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
 #### UnRaid
 
@@ -137,7 +229,7 @@ Then keep reading.
 
     Go to your dashboard and on the top select `shares` select `add share` .
 
-    [![main-share](images/image-20201111225320772.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/image-20201111225320772.png){:target="_blank"}
+    [![unraid-main-share](images/unraid-main-share.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-main-share.png){:target="_blank"}
 
     1. use `data`
     1. if you got a cache drive and want to make use of it put it on `Yes` or keep it disabled (Hardlinks will stay in tact if you're using the cache)
@@ -145,13 +237,13 @@ Then keep reading.
 
     !!! note
 
-        Keep in mind regarding the use of the Cache drive, The mover can't move files that are in use, like  when `seeding` with torrents. You will need to shutdown your client or stop/pause the torrents so the mover can move them to your Array.
+        Keep in mind regarding the use of the Cache drive, The mover can't move files that are in use, like  when seeding with torrents. You will need to shutdown your client or stop/pause the torrents so the mover can move them to your Array.
 
         With Usenet  you won't have any issues.
 
     ##### Folder Structure
 
-    On the host (Unraid) you will need to add /mnt/user before it. **So /mnt/user/data**
+    On the host (Unraid) you will need to add `/mnt/user` before it. **So `/mnt/user/data`**
 
     The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
 
@@ -191,7 +283,7 @@ Then keep reading.
 
     qBittorrent, Deluge, ruTorrent
 
-    ![unraid-torrent-clients](images/image-20201112201012153.png)
+    ![unraid-torrent-clients](images/unraid-torrent-clients.png)
 
     `Container Path:` => `/data/torrents`
 
@@ -199,7 +291,7 @@ Then keep reading.
 
     !!! info
 
-        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like/data/torrents/{tv|movies|music}.
+        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
 
     ```none
     data
@@ -213,7 +305,7 @@ Then keep reading.
 
     NZBGet or SABnzbd
 
-    ![unraid-usenet-client](images/image-20201112203013210.png)
+    ![unraid-usenet-client](images/unraid-usenet-client.png)
 
     `Container Path:` => `/data/usenet`
 
@@ -221,7 +313,7 @@ Then keep reading.
 
     !!! info
 
-        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like/data/usenet/{tv|movies|music}.
+        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
 
     ```none
     data
@@ -235,7 +327,7 @@ Then keep reading.
 
     Sonarr, Radarr and Lidarr
 
-    ![unraid-arr](images/image-20201112204406692.png)
+    ![unraid-arr](images/unraid-arr.png)
 
     `Container Path:` => `/data`
 
@@ -265,7 +357,7 @@ Then keep reading.
 
     Plex, Emby, JellyFin and Bazarr
 
-    ![unraid-media-server](images/image-20201112205218382.png)
+    ![unraid-media-server](images/unraid-media-server.png)
 
     `Container Path:` => `/data/media`
 
@@ -285,7 +377,9 @@ Then keep reading.
 
     ##### Final Result
 
-    [![final-results](images/image-20201112210400294.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/image-20201112210400294.png){:target="_blank"}
+    [![unraid-final-result](images/unraid-final-result.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-final-result.png){:target="_blank"}
+
+    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
 #### Synology
 
@@ -574,13 +668,13 @@ Then keep reading.
 
     `Settings` => `Media Managemen` => `Root Folders`
 
-    ![sonarr-root-folder](images/image-20201111190131842.png)
+    ![sonarr-root-folder](images/sonarr-root-folder.png)
 
     `Series` => `Add New`
 
-    ![image-20201111190300091](images/image-20201111190300091.png)
+    ![sonarr-add-new](images/sonarr-add-new.png)
 
-    ![image-20201111184955092](images/image-20201111184955092.png)
+    ![sonarr-tv](images/sonarr-tv.png)
 
 #### Radarr
 
@@ -588,13 +682,13 @@ Then keep reading.
 
     `Settings` => `Media Managemen` => `Root Folders`
 
-    ![radarr-root-folder](images/image-20201111185454928.png)
+    ![radarr-root-folder](images/radarr-root-folder.png)
 
     `Movies` => `Add New`
 
-    ![image-20201111185158391](images/image-20201111185158391.png)
+    ![radarr-add-new](images/radarr-add-new.png)
 
-    ![image-20201111185304391](images/image-20201111185304391.png)
+    ![radarr-movies](images/radarr-movies.png)
 
 #### SABnzbd config
 
@@ -602,11 +696,11 @@ Then keep reading.
 
     `SABnzbd config` => `Folders`
 
-    ![sabnzbd-folders](images/image-20201111190431670.png)
+    ![sabnzbd-folders](images/sabnzbd-folders.png)
 
     `SABnzbd config` => `Categories`
 
-    ![sabnzbd-categories](images/image-20201111190616235.png)
+    ![sabnzbd-categories](images/sabnzbd-categories.png)
 
 #### NZBGet
 
@@ -614,11 +708,11 @@ Then keep reading.
 
     `Settings` => `PATHS`
 
-    ![settings-paths](images/image-20201111191413616.png)
+    ![nzbget-settings-paths](images/nzbget-settings-paths.png)
 
     `Settings` => `CATEGORIES`
 
-    ![settings-categories](images/image-20201111191615112.png)
+    ![nzbget-settings-categories](images/nzbget-settings-categories.png)
 
 #### qBittorrent
 
@@ -626,7 +720,7 @@ Then keep reading.
 
     `Options` => `Downloads`
 
-    ![options-downloads](images/image-20201111191744466.png)
+    ![qbt-options-downloads](images/qbt-options-downloads.png)
 
 #### Deluge
 
@@ -634,7 +728,7 @@ Then keep reading.
 
     `Preferences` => `Downloads`
 
-    ![preferences-downloads](images/image-20201111191831583.png)
+    ![deluge-preferences-downloads](images/deluge-preferences-downloads.png)
 
 #### ruTorrent
 
@@ -642,15 +736,15 @@ Then keep reading.
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
-    ![rtorrent.rc](images/image-20201111201032265.png)
+    ![rtorrent.rc](images/rtorrent.rc.png)
 
     `Settings` => `Downloads`
 
-    ![settings-downloads](images/image-20201111202759459.png)
+    ![rtorrent-settings-downloads](images/rtorrent-settings-downloads.png)
 
     `Settings` => `Autotools`
 
-    ![settings-autotools](images/image-20201111202945331.png)
+    ![rtorrent-settings-autotools](images/rtorrent-settings-autotools.png)
 
 ------
 
