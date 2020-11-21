@@ -690,7 +690,7 @@ Then keep reading.
 
     ![radarr-movies](images/radarr-movies.png)
 
-#### SABnzbd config
+#### SABnzbd
 
 ??? example "SABnzbd Examples"
 
