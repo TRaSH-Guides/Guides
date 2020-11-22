@@ -18,9 +18,9 @@ So you want one of the following ?
 
 Then keep reading.
 
-### FAQ
-
 ??? faq "FAQ"
+
+    ### FAQ
 
     1. Q: **What are the `*arr`?**
 
@@ -42,9 +42,9 @@ Then keep reading.
 - [UnRaid](#unraid)
 - [Synology](#synology)
 
-#### DockSTARTer
-
 ??? summary "DockSTARTer"
+
+    #### DockSTARTer
 
     !!! note
 
@@ -53,7 +53,7 @@ Then keep reading.
     ##### Folder Structure
 
     We're going to use a mounted drive that we're going to use as storage for downloads and your media.
-    In this example the mounted drive will be mounted to `/mnt/` with the following folder structure.
+    In this example the mounted drive will be mounted to `/mnt/` with the followig folder structure.
 
     ```
     storage
@@ -123,9 +123,11 @@ Then keep reading.
 
         The screenshots in the examples are using the following root path `/storage`
 
-    ###### Sonarr
+
 
     ??? example "Sonarr Examples"
+
+    ###### Sonarr
 
         `Settings` => `Media Managemen` => `Root Folders`
 
@@ -137,9 +139,9 @@ Then keep reading.
 
         ![ds-sonarr-tv](images/ds-sonarr-tv.png)
 
-    ###### Radarr
-
     ??? example "Radarr Examples"
+
+    ###### Radarr
 
         `Settings` => `Media Managemen` => `Root Folders`
 
@@ -151,9 +153,9 @@ Then keep reading.
 
         ![ds-radarr-movies](images/ds-radarr-movies.png)
 
-    ###### SABnzbd
-
     ??? example "SABnzbd Examples"
+
+    ###### SABnzbd
 
         `SABnzbd config` => `Folders`
 
@@ -163,9 +165,9 @@ Then keep reading.
 
         ![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
 
-    ###### NZBGet
-
     ??? example "NZBGet Examples"
+
+    ###### NZBGet
 
         `Settings` => `PATHS`
 
@@ -175,25 +177,25 @@ Then keep reading.
 
         ![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
 
-    ###### qBittorrent
-
     ??? example "qBittorrent Examples"
+
+    ###### qBittorrent
 
         `Options` => `Downloads`
 
         ![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
 
-    ###### Deluge
-
     ??? example "Deluge Example"
+
+    ###### Deluge
 
         `Preferences` => `Downloads`
 
         ![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
 
-    ###### ruTorrent
-
     ??? example "ruTorrent Examples"
+
+    ###### ruTorrent
 
         `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
@@ -207,9 +209,9 @@ Then keep reading.
 
         ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
-#### UnRaid
-
 ??? summary "UnRaid"
+
+    #### UnRaid
 
     !!! note
 
@@ -381,15 +383,17 @@ Then keep reading.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
-#### Synology
-
 ??? summary "Synology"
+
+    #### Synology
 
     !!! note
 
         Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose.
 
         This works like 10x faster then the GUI and after adding it shows up in the GUI.
+
+        Thnx to faxity for the initial compose that I used to create the Synology Guide.
 
     We need to get some information that we need later to setup the docker-compose file.
 
@@ -652,7 +656,7 @@ Then keep reading.
 
     It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
 
-    The screenshots in the examples are using the following root path `/storage`
+    The screenshots in the examples are using the following root path `/data`
 
 - [Sonarr](#sonarr)
 - [Radarr](#radarr)
@@ -662,9 +666,9 @@ Then keep reading.
 - [Deluge](#deluge)
 - [ruTorrent](#rutorrent)
 
-#### Sonarr
-
 ??? example "Sonarr Examples"
+
+    #### Sonarr
 
     `Settings` => `Media Managemen` => `Root Folders`
 
@@ -676,9 +680,9 @@ Then keep reading.
 
     ![sonarr-tv](images/sonarr-tv.png)
 
-#### Radarr
-
 ??? example "Radarr Examples"
+
+    #### Radarr
 
     `Settings` => `Media Managemen` => `Root Folders`
 
@@ -690,9 +694,9 @@ Then keep reading.
 
     ![radarr-movies](images/radarr-movies.png)
 
-#### SABnzbd
-
 ??? example "SABnzbd Examples"
+
+    #### SABnzbd
 
     `SABnzbd config` => `Folders`
 
@@ -702,9 +706,9 @@ Then keep reading.
 
     ![sabnzbd-categories](images/sabnzbd-categories.png)
 
-#### NZBGet
-
 ??? example "NZBGet Examples"
+
+    #### NZBGet
 
     `Settings` => `PATHS`
 
@@ -714,25 +718,25 @@ Then keep reading.
 
     ![nzbget-settings-categories](images/nzbget-settings-categories.png)
 
-#### qBittorrent
-
 ??? example "qBittorrent Examples"
+
+    #### qBittorrent
 
     `Options` => `Downloads`
 
     ![qbt-options-downloads](images/qbt-options-downloads.png)
 
-#### Deluge
-
 ??? example "Deluge Example"
+
+    #### Deluge
 
     `Preferences` => `Downloads`
 
     ![deluge-preferences-downloads](images/deluge-preferences-downloads.png)
 
-#### ruTorrent
-
 ??? example "ruTorrent Examples"
+
+    #### ruTorrent
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
