@@ -156,7 +156,7 @@ Custom Format for Single Layer Dolby Vision releases.
     ```json
     {
         "name": "Dolby Vision (Single Layer)",
-        "includeCustomFormatWhenRenaming": false,
+        "includeCustomFormatWhenRenaming": true,
         "specifications": [{
                 "name": "Dolby Vision (Single Layer)",
                 "implementation": "ReleaseTitleSpecification",
@@ -233,7 +233,7 @@ Custom format for several Special Editions
     ```json
     {
         "name": "HDR",
-        "includeCustomFormatWhenRenaming": false,
+        "includeCustomFormatWhenRenaming": true,
         "specifications": [{
             "name": "HDR",
             "implementation": "ReleaseTitleSpecification",
@@ -1025,7 +1025,7 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
     ```json
     {
         "name": "Dolby Vision",
-        "includeCustomFormatWhenRenaming": false,
+        "includeCustomFormatWhenRenaming": true,
         "specifications": [{
             "name": "Dolby Vision",
             "implementation": "ReleaseTitleSpecification",
