@@ -670,6 +670,10 @@ Then keep reading.
 
     #### Sonarr
 
+    `Settings` => `Media Managemen` => `Importing`
+
+    ![sonarr-enable-hardlinks](images/sonarr-enable-hardlinks.png)
+
     `Settings` => `Media Managemen` => `Root Folders`
 
     ![sonarr-root-folder](images/sonarr-root-folder.png)
@@ -683,6 +687,10 @@ Then keep reading.
 ??? example "Radarr Examples"
 
     #### Radarr
+
+    `Settings` => `Media Managemen` => `Importing`
+
+    ![radarr-enable-hardlinks](images/radarr-enable-hardlinks.png)
 
     `Settings` => `Media Managemen` => `Root Folders`
 
