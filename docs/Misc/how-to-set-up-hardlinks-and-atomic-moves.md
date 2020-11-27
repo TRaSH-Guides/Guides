@@ -127,7 +127,11 @@ Then keep reading.
 
     ??? example "Sonarr Examples"
 
-    ###### Sonarr
+        ###### Sonarr
+
+        `Settings` => `Media Managemen` => `Importing`
+
+        ![sonarr-enable-hardlinks](images/sonarr-enable-hardlinks.png)
 
         `Settings` => `Media Managemen` => `Root Folders`
 
@@ -141,7 +145,11 @@ Then keep reading.
 
     ??? example "Radarr Examples"
 
-    ###### Radarr
+        ###### Radarr
+
+        `Settings` => `Media Managemen` => `Importing`
+
+        ![radarr-enable-hardlinks](images/radarr-enable-hardlinks.png)
 
         `Settings` => `Media Managemen` => `Root Folders`
 
@@ -155,7 +163,7 @@ Then keep reading.
 
     ??? example "SABnzbd Examples"
 
-    ###### SABnzbd
+        ###### SABnzbd
 
         `SABnzbd config` => `Folders`
 
@@ -167,7 +175,7 @@ Then keep reading.
 
     ??? example "NZBGet Examples"
 
-    ###### NZBGet
+        ###### NZBGet
 
         `Settings` => `PATHS`
 
@@ -179,7 +187,7 @@ Then keep reading.
 
     ??? example "qBittorrent Examples"
 
-    ###### qBittorrent
+        ###### qBittorrent
 
         `Options` => `Downloads`
 
@@ -187,7 +195,7 @@ Then keep reading.
 
     ??? example "Deluge Example"
 
-    ###### Deluge
+        ###### Deluge
 
         `Preferences` => `Downloads`
 
@@ -195,7 +203,7 @@ Then keep reading.
 
     ??? example "ruTorrent Examples"
 
-    ###### ruTorrent
+        ###### ruTorrent
 
         `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
