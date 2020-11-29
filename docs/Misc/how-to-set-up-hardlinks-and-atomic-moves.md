@@ -405,7 +405,7 @@ Then keep reading.
 
     We need to get some information that we need later to setup the docker-compose file.
 
-    ###### PUID and PGID
+    ##### PUID and PGID
 
     In order for the Docker container to access the shares on the Synology,
     we need to give it the same permissions as your main user who has access to those shares.
@@ -496,7 +496,7 @@ Then keep reading.
         # Radarr - https://hotio.dev/containers/radarr/
           radarr:
             container_name: radarr
-            image: ghcr.io/hotio/radarr:nightly
+            image: ghcr.io/hotio/radarr:latest
             restart: unless-stopped
             logging:
               driver: json-file

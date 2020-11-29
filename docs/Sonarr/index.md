@@ -12,7 +12,7 @@ Here you will find a collection of Sonarr Guides I made.
 - Docker: [hotio/sonarr:latest](https://hub.docker.com/r/hotio/sonarr)
 
 ```bash
-hotio/sonarr:latest
+ghcr.io/hotio/sonarr:latest
 ```
 
 ## v3 Sonarr Branch: phantom-develop
@@ -25,5 +25,5 @@ hotio/sonarr:latest
 - Docker: [hotio/sonarr:nightly](https://hub.docker.com/r/hotio/sonarr)
 
 ```bash
-hotio/sonarr:nightly
+ghcr.io/hotio/sonarr:nightly
 ```
