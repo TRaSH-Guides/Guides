@@ -233,7 +233,7 @@ Custom format for several Special Editions
     ```json
     {
         "name": "HDR",
-        "includeCustomFormatWhenRenaming": true,
+        "includeCustomFormatWhenRenaming": false,
         "specifications": [{
             "name": "HDR",
             "implementation": "ReleaseTitleSpecification",
