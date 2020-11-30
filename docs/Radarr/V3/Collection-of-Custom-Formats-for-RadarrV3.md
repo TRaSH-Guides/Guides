@@ -27,11 +27,11 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 |                                          | [4.0 Sound](#40-sound)       | [DD+ ATMOS (lossy)](#dd-atmos-lossy)          | [Dolby Vision](#dolby-vision)                             | [Theatrical Cut](#theatrical-cut)             | [Repack/Proper](#repack-proper)               |
 | [AAC](#aac)                              | [5.1 Surround](#51-surround) | [Dolby Digital Plus](#dolby-digital-plus)     | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Special Editions](#special-edition)          | [Anime Dual Audio](#anime-dual-audio)         |
 | [FLAC](#flac)                            | [6.1 Surround](#61-surround) | [DTS X](#dts-x)                               | [HDR](#hdr)                                               |                                               | [Hybrid](#hybrid)                             |
-| [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         |                                               | [Multi](#multi)                               |
-| [PCM](#pcm)                              | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     | [MPEG2](#mpeg2)                                           |                                               | [FreeLeech](#freeleech)                       |
-| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           |                                               | [Dutch Groups](#dutch-groups)                 |
-|                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               | [Streaming Services](#streaming-services)     |
-|                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |
+| [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         | [Streaming Services](#streaming-services)     | [Multi](#multi)                               |
+| [PCM](#pcm)                              | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     | [MPEG2](#mpeg2)                                           | [Dutch Groups](#dutch-groups)                 | [FreeLeech](#freeleech)                       |
+| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           | [HQ-P2P](#hq-p2p)                             |                                               |
+|                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
+|                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
 
 ------
 
@@ -1024,7 +1024,7 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 
     ```json
     {
-        "name": "Dolby Vision",
+        "name": "DoVi",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
             "name": "Dolby Vision",
@@ -2669,6 +2669,58 @@ Collection of Streaming Services
                 "required": false,
                 "fields": {
                     "value": "(hulu).?web.?dl"
+                }
+            }
+        ]
+    }
+    ```
+
+------
+
+## HQ-P2P
+
+A collection of P2P groups that are knows for their high quality releases
+
+??? example "json"
+
+    ```json
+    {
+        "name": "HQ-P2P",
+        "includeCustomFormatWhenRenaming": false,
+        "specifications": [{
+                "name": "[BLOCK1]",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+                "required": false,
+                "fields": {
+                    "value": "-BMF|-decibeL|\\bD-Z0N3\\b|\\bFTW-HD\\b|-HiFi|-NCmt|-OISTiLe|-TDD|\\bZQ\\b"
+                }
+            },
+            {
+                "name": "[BLOCK2]",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+                "required": false,
+                "fields": {
+                    "value": "-HiSD|-NTb|-ift|-geek|-tnp|-ncmt|-pter|-bbq"
+                }
+            },
+            {
+                "name": "[BLOCK3]",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+                "required": false,
+                "fields": {
+                    "value": "-CRiSC|-CtrlHD|-DON|\\b-EA\\b|-EbP|-LolHD|-SbR|-TayTo|-VietHD"
+                }
+            },
+            {
+                "name": "[Remux Groups]",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+                "required": false,
+                "fields": {
+                    "value": "-FraMeSToR|-EPSiLON|//bKRaLiMaRKo//b"
                 }
             }
         ]
