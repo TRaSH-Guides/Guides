@@ -42,6 +42,7 @@ Then keep reading.
 - [UnRaid](#unraid)
 - [Synology](#synology)
 - [Docker](#docker)
+- [Bare Metal (Native)](#native)
 
 ??? summary "DockSTARTer"
 
@@ -946,6 +947,114 @@ Then keep reading.
     ```
 
     You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differene.
+
+    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
+
+??? summary "Bare Metal (Native)"
+
+    #### Native
+
+    !!! attention
+
+        It doesn't really matter which path you use for your media and appdata,
+
+        the only thing you should  avoid is `/home`.
+
+        Because user folders in `/home` are expected to have some restrictive permissions.
+
+        It just could end up creating a permissions mess, so it's better to just avoid entirely.
+
+    ##### Folder Structure
+
+    For this example we're going to make use of a share called `data`.
+
+    The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
+
+    ```none
+    data
+    ├── torrents
+    │  ├── movies
+    │  ├── music
+    │  └── tv
+    ├── usenet
+    │  ├── movies
+    │  ├── music
+    │  └── tv
+    └── media
+       ├── movies
+       ├── music
+       └── tv
+    ```
+
+    ??? summary "Breakdown of the Folder Structure"
+
+        ##### Breakdown of the Folder Structure
+
+        ###### Torrent clients
+
+        qBittorrent, Deluge, ruTorrent
+
+        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
+
+        ```none
+        data
+        └── torrents
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Usenet clients
+
+        NZBGet or SABnzbd
+
+        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
+
+        ```none
+        data
+        └── usenet
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### The arr(s)
+
+        Sonarr, Radarr and Lidarr
+
+        Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+
+        ```none
+        data
+        ├── torrents
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        ├── usenet
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Media Server
+
+        Plex, Emby, JellyFin and Bazarr
+
+        Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
+
+        ```none
+        data
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
