@@ -41,6 +41,7 @@ Then keep reading.
 - [DockSTARTer](#dockstarter)
 - [UnRaid](#unraid)
 - [Synology](#synology)
+- [Docker](#docker)
 
 ??? summary "DockSTARTer"
 
@@ -643,6 +644,300 @@ Then keep reading.
 
     !!! importand
         make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
+
+    ##### Run the Docker Compose
+
+    ```bash
+    sudo docker-compose up -d
+    ```
+
+    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differene.
+
+    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
+
+??? summary "Docker"
+
+    #### Docker
+
+    !!! note
+
+        I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend you to uses and also provide a docker-compose.
+
+        *I do recommend to use a non-root user with sudo permissions.*
+
+    !!! attention
+
+        It doesn't really matter which path you use for your media and appdata,
+
+        the only thing you should  avoid is `/home`.
+
+        Because user folders in `/home` are expected to have some restrictive permissions.
+
+        It just could end up creating a permissions mess, so it's better to just avoid entirely.
+
+    ##### Folder Structure
+
+    For this example we're going to make use of a share called `data`.
+
+    The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
+
+    ```none
+    data
+    ├── torrents
+    │  ├── movies
+    │  ├── music
+    │  └── tv
+    ├── usenet
+    │  ├── movies
+    │  ├── music
+    │  └── tv
+    └── media
+       ├── movies
+       ├── music
+       └── tv
+    ```
+
+    ??? summary "Breakdown of the Folder Structure"
+
+        ##### Breakdown of the Folder Structure
+
+        ###### Torrent clients
+
+        qBittorrent, Deluge, ruTorrent
+
+        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
+
+        ```none
+        data
+        └── torrents
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Usenet clients
+
+        NZBGet or SABnzbd
+
+        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
+
+        ```none
+        data
+        └── usenet
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### The arr(s)
+
+        Sonarr, Radarr and Lidarr
+
+        Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+
+        ```none
+        data
+        ├── torrents
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        ├── usenet
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Media Server
+
+        Plex, Emby, JellyFin and Bazarr
+
+        Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
+
+        ```none
+        data
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
+
+    ##### Appdata
+
+    Your appdata will be stored in `/docker/appdata/{appname}`
+    These folders you need to create your self.
+
+    A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
+    this makes it easy to maintain and compare paths.
+
+    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59) to your `/docker/` location so you got your important stuff together.
+    This docker-compose file will have the following docker containers included.
+
+    - Radarr
+    - Sonarr
+    - Bazarr (Subtitle searcher and downloaded)
+    - NZBGet
+    - qBittorent
+    - Plex
+    - Watchtower (automatic docker container updater)
+
+    ??? example "docker-compose.yml"
+
+        ``` yml
+        version: "3.2"
+        services:
+        # Radarr - https://hotio.dev/containers/radarr/
+          radarr:
+            container_name: radarr
+            image: ghcr.io/hotio/radarr:latest
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 7878:7878
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/radarr:/config # Change "/docker/appdata/radarr" with the path your config will be.
+              - /data:/data # Change "/data" with the path where your library + torrent/usenet downloads both are.
+        # Sonarr - https://hotio.dev/containers/sonarr/
+          sonarr:
+            container_name: sonarr
+            image: ghcr.io/hotio/sonarr:nightly
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 8989:8989
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/sonarr:/config # Change "/docker/appdata/sonarr" with the path your config will be.
+              - /data:/data # Change "/data" with the path where your library + torrent/usenet downloads both are.
+        # Bazarr - https://hotio.dev/containers/bazarr/
+          bazarr:
+            container_name: bazarr
+            image: ghcr.io/hotio/bazarr:nightly
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 6767:6767
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/bazarr:/config # Change "/docker/appdata/bazarr" with the path your config will be.
+              - /data/media:/data/media # Change "/data/media" with the path where your library are(sonarr+radarr).
+        # NZBGet - https://hotio.dev/containers/nzbget/
+          nzbget:
+            container_name: nzbget
+            image: ghcr.io/hotio/nzbget:latest
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 6789:6789/tcp
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/nzbget:/config:rw # Change "/docker/appdata/nzbget" with the path your config will be.
+              - /data/usenet:/data/usenet:rw # Change "/data/usenet" with the path your usenet data ends up in.
+        # qBittorrent - https://docs.linuxserver.io/images/docker-qbittorrent
+          qbittorrent:
+            container_name: qbittorrent
+            image: ghcr.io/linuxserver/qbittorrent
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 6881:6881
+              - 6881:6881/udp
+              - 8080:8080
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+              - UMASK_SET=022
+              - WEBUI_PORT=8080
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/qbittorrent:/config:rw # Change "/docker/appdata/qbittorrent" with the path your config will be.
+              - /data/torrents:/data/torrents:rw # Change "/data/torrents" with the path your usenet data ends up in.
+        # Plex - https://hotio.dev/containers/plex/
+          plex:
+            container_name: plex
+            image: ghcr.io/hotio/plex
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            ports:
+              - 32400:32400
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+              - UMASK=002
+              - ARGS=
+              - DEBUG=no
+              - PLEX_CLAIM=
+              - ADVERTISE_IP=
+              - ALLOWED_NETWORKS=
+              - PLEX_PASS=no
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /docker/appdata/plex:/config:rw # Change "/docker/appdata/plex" with the path your config will be.
+              - /data/media:/data/media:rw # Change "/data/media" with the path where your library are(sonarr+radarr).
+              - /tmp:/transcode:rw
+        # automatic docker container updater - https://github.com/containrrr/watchtower
+          watchtower:
+            container_name: watchtower
+            image: containrrr/watchtower
+            restart: unless-stopped
+            logging:
+              driver: json-file
+            network_mode: bridge
+            environment:
+              - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
+              - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
+              - TZ=Europe/Amsterdam # Change to your timezone
+              - UMASK=022
+              - WATCHTOWER_CLEANUP=true
+              - WATCHTOWER_INCLUDE_STOPPED=false
+              - WATCHTOWER_MONITOR_ONLY=false
+              - WATCHTOWER_SCHEDULE=0 0 4 * * * # use cron to change update interval set at 4am.
+              - WATCHTOWER_TIMEOUT=10s
+            volumes:
+              - /etc/localtime:/etc/localtime:ro
+              - /var/run/docker.sock:/var/run/docker.sock
+        ```
+
+    ##### Changes you need to do
+
+    1. Change the PUID/PGID.
+    1. TZ (Change to your timezone)
 
     ##### Run the Docker Compose
 
