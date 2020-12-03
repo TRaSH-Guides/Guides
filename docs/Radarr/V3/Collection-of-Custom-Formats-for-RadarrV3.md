@@ -2578,7 +2578,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(amzn|amazon).?web.?dl"
+                    "value": "(amzn|amazon).?web.?(dl|rip)"
                 }
             },
             {
@@ -2587,7 +2587,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(nf|netflix).?web.?dl"
+                    "value": "(nf|netflix).?web.?(dl|rip)"
                 }
             },
             {
@@ -2596,7 +2596,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(atvp).?web.?dl"
+                    "value": "(atvp).?web.?(dl|rip)"
                 }
             },
             {
@@ -2605,7 +2605,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(dsnp|dsny|disney).?web.?dl"
+                    "value": "(dsnp|dsny|disney).?web.?(dl|rip)"
                 }
             },
             {
@@ -2614,7 +2614,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(dcu).?web.?dl"
+                    "value": "(dcu).?web.?(dl|rip)"
                 }
             },
             {
@@ -2623,7 +2623,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(hmax).?web.?dl"
+                    "value": "(hmax).?web.?(dl|rip)"
                 }
             },
             {
@@ -2641,7 +2641,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(red).?web.?dl"
+                    "value": "(red).?web.?(dl|rip)"
                 }
             },
             {
@@ -2650,7 +2650,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(qibi).?web.?dl"
+                    "value": "(qibi).?web.?(dl|rip)"
                 }
             },
             {
@@ -2659,7 +2659,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(it).?web.?dl"
+                    "value": "(it).?web.?(dl|rip)"
                 }
             },
             {
@@ -2668,7 +2668,7 @@ Collection of Streaming Services
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "(hulu).?web.?dl"
+                    "value": "(hulu).?web.?(dl|rip)"
                 }
             }
         ]
