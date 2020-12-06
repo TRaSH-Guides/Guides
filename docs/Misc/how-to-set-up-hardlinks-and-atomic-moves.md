@@ -493,6 +493,7 @@ Then keep reading.
        ├── plex
        └── tautulli
     ```
+
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
@@ -501,6 +502,7 @@ Then keep reading.
     ```bash
     sudo wget https://gist.githubusercontent.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed/raw/ca91114e74d5669ed3ede8a379f510acc54865ad/docker-compose.yml
     ```
+
     This docker-compose file will have the following docker containers included.
 
     - Radarr
