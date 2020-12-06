@@ -65,4 +65,4 @@ theme:
     code: "Fira Code"
   favicon: img/favicon.png
   logo: img/logo.png
-  custom_dir: docs/overrides
+#  custom_dir: docs/overrides
