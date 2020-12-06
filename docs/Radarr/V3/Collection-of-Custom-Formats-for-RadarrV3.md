@@ -1032,7 +1032,7 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
             "negate": false,
             "required": true,
             "fields": {
-                "value": "\\b(DV|dovi)\\b|dolby\\.vision"
+                "value": "\\b(DV|dovi)\\b|dolby.?vision"
             }
         }]
     }
