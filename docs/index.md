@@ -39,7 +39,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ------
 
-## Like what I do and want to Support me
+## :octicons-heart-fill-24:{: .heart } Like what I do and want to Support me :octicons-heart-fill-24:{: .heart }
 
 ??? abstract "CLICK HERE FOR SUPPORT OPTIONS"
 
