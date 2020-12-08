@@ -11,6 +11,10 @@ copyright: Copyright &copy; 2020 TRaSH
 extra:
   manifest: manifest.webmanifest
   social:
+    - icon: fontawesome/brands/paypal
+      link: https://trash-guides.info/support
+    - icon: fontawesome/brands/bitcoin
+      link: https://trash-guides.info/support
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
     - icon: fontawesome/brands/github-square
@@ -65,4 +69,4 @@ theme:
     code: "Fira Code"
   favicon: img/favicon.png
   logo: img/logo.png
-#  custom_dir: docs/overrides
+#  custom_dir: docs/themes
