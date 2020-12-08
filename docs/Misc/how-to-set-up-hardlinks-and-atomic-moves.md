@@ -497,7 +497,7 @@ Then keep reading.
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed) to your `/volume1/docker/appdata` location so you got your important stuff together.
+    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed){:target="_blank"} to your `/volume1/docker/appdata` location so you got your important stuff together.
 
     ```bash
     sudo wget https://gist.githubusercontent.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed/raw/ca91114e74d5669ed3ede8a379f510acc54865ad/docker-compose.yml
@@ -541,6 +541,12 @@ Then keep reading.
         Any changes you do/did in the GUI will be reverted when you run the docker-compose.
 
         Just don't use the GUI
+
+    !!! tip
+
+        I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
+
+        [synology-docker-compose-collection](https://gist.github.com/TRaSH-/1648a937f9c1c7b45e0f379142694892){:target="_blank"}
 
 ??? summary "Docker"
 
@@ -602,6 +608,10 @@ Then keep reading.
            └── tv
         ```
 
+        ```bash
+        sudo mkdir -p /data/torrents/movies /data/torrents/tv /data/torrents/music
+        ```
+
         ###### Usenet clients
 
         NZBGet or SABnzbd
@@ -614,6 +624,10 @@ Then keep reading.
            ├── movies
            ├── music
            └── tv
+        ```
+
+        ```bash
+        sudo mkdir -p /data/usenet/movies /data/usenet/tv /data/usenet/music
         ```
 
         ###### The arr(s)
@@ -638,6 +652,10 @@ Then keep reading.
            └── tv
         ```
 
+        ```bash
+        sudo mkdir -p /data/media/movies /data/media/tv /data/media/music
+        ```
+
         ###### Media Server
 
         Plex, Emby, JellyFin and Bazarr
@@ -657,17 +675,27 @@ Then keep reading.
     ##### Appdata
 
     Your appdata will be stored in `/docker/appdata/{appname}`
-    These folders you need to create your self.
+
+    ```bash
+    sudo mkdir -p /docker/appdata
+    ```
+
+    ##### Permissions
+
+    ```bash
+    sudo chown -R $USER:$USER /data /docker
+    sudo chmod -R a=,a+rX,u+w,g+w /data /docker
+    ```
 
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59) to your `/docker/` location so you got your important stuff together.
+    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59){:target="_blank"} to your `/docker/` location so you got your important stuff together.
 
     CD to your `/docker` folder and use the following command to download it.
 
     ```bash
-    sudo wget https://gist.githubusercontent.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59/raw/b5010e038709f6cc39bba08732581bc437256971/docker-compose.yml
+    wget https://gist.githubusercontent.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59/raw/b5010e038709f6cc39bba08732581bc437256971/docker-compose.yml
     ```
 
     This docker-compose file will have the following docker containers included.
@@ -696,13 +724,19 @@ Then keep reading.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
+    !!! tip
+
+        I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
+
+        [docker-compose-collection](https://gist.github.com/TRaSH-/68cd26deb5e6269e5eb8114f93b429ab){:target="_blank"}
+
 ??? summary "Bare Metal (Native)"
 
     #### Native
 
     !!! attention
 
-        It doesn't really matter which path you use for your media and appdata,
+        It doesn't really matter which path you use for your media,
 
         the only thing you should  avoid is `/home`.
 
@@ -750,6 +784,10 @@ Then keep reading.
            └── tv
         ```
 
+        ```bash
+        sudo mkdir -p /data/torrents/movies /data/torrents/tv /data/torrents/music
+        ```
+
         ###### Usenet clients
 
         NZBGet or SABnzbd
@@ -762,6 +800,10 @@ Then keep reading.
            ├── movies
            ├── music
            └── tv
+        ```
+
+        ```bash
+        sudo mkdir -p /data/usenet/movies /data/usenet/tv /data/usenet/music
         ```
 
         ###### The arr(s)
@@ -786,6 +828,10 @@ Then keep reading.
            └── tv
         ```
 
+        ```bash
+        sudo mkdir -p /data/media/movies /data/media/tv /data/media/music
+        ```
+
         ###### Media Server
 
         Plex, Emby, JellyFin and Bazarr
@@ -801,6 +847,13 @@ Then keep reading.
         ```
 
     *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
+
+    ##### Permissions
+
+    ```bash
+    sudo chown -R $USER:$USER /data
+    sudo chmod -R a=,a+rX,u+w,g+w /data
+    ```
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
