@@ -42,18 +42,18 @@ I will still keep a eye on them and add the Low Quality Groups to the `-100` sco
 
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
 
-![media management](images/media_man.png)
+![rp-settings-media-management-proper](images/rp-settings-media-management-proper.png)
 
 Settings => `Media Management`
 Where we going to set it to `Do not Prefer`
 
 Then we navigate in Sonarr to the Settings =>  `Profiles`
 
-![profiles](images/profiles.png)
+![rp-settings-profiles](images/rp-settings-profiles.png)
 
 Then you will get a popup screen that will look like this:
 
-![release profile](images/release_profile.png)
+![rp-release-profile](images/rp-release-profile.png)
 
 `Must Contain` => add words that the release name **MUST HAVE!**
 
@@ -75,17 +75,17 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ```bash
 # Preferred (3)
-[100]   /(amzn|amazon).?web.?dl/i
-[100]   /(atvp).?web.?dl/i
-[100]   /(hmax).?web.?dl/i
-[90]   /(dsnp|dsny|disney).?web.?dl/i
-[90]   /(nf|netflix).?web.?dl/i
-[90]   /(qibi).?web.?dl/i
-[85]   /(hulu).?web.?dl/i
-[75]   /(dcu).?web.?dl/i
-[75]   /(hbo).?web.?dl/i
-[75]   /(red).?web.?dl/i
-[75]   /(it).?web.?dl/i
+[100]   /(amzn|amazon).?web.?(dl|rip)/i
+[100]   /(atvp).?web.?(dl|rip)/i
+[100]   /(hmax).?web.?(dl|rip)/i
+[90]   /(dsnp|dsny|disney).?web.?(dl|rip)/i
+[90]   /(nf|netflix).?(dl|rip)/i
+[90]   /(qibi).?web.?(dl|rip)/i
+[85]   /(hulu).?web.?(dl|rip)/i
+[75]   /(dcu).?web.?(dl|rip)/i
+[75]   /(hbo).?web.?(dl|rip)/i
+[75]   /(red).?web.?(dl|rip)/i
+[75]   /(it).?web.?(dl|rip)/i
 ```
 
 !!! note
@@ -109,18 +109,18 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ```bash
 # Must Not Contain (2)
-/(x|h)\.?265/i, hevc
+/(?=(1080|720)).*((x|h)265|hevc)/i
 
 # Preferred (3)
-[80]   /(-deflate|-inflate)/i
-[50]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
-[50]   /(-monkee|-NTb|-NTG|-QOQ|-RTN)/i
-[50]   /(-TOMMY|-ViSUM|-T6D)/i
-[25]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
-[25]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
-[25]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
-[25]   /(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
-[25]   /(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)/i
+[180]   /(-deflate|-inflate)/i
+[150]   /(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
+[150]   /(-monkee|-NTb|-NTG|-QOQ|-RTN)/i
+[150]   /(-TOMMY|-ViSUM|-T6D)/i
+[125]   /(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
+[125]   /(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
+[125]   /(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
+[125]   /(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
+[125]   /(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)/i
 [12]   /(repack3)/i
 [11]   /(repack2)/i
 [10]   /(repack|proper)/i
@@ -128,6 +128,36 @@ The Number between the **[**brackets**]** are the scores the release name will g
 [-100]  /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
 [-100]  /(-VIDEOHOLE)/i
 ```
+
+??? info "Why the Must Not Contain entry"
+
+    So why did I put `/(?=(1080|720)).*((x|h)265|hevc)/i` as `Must Not Contain` and what does it do ?
+
+    It blocks/ignores 720/1080p releases that are encoded in x265, why ?
+
+    !!! quote
+        x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
+        If the media isn't source quality/remux, then there will be a loss of quality every time.
+        Also, once you go x265, typically that file is done.
+        It can't be changed to something else without a huge loss of quality.
+
+        Something like 95% of video files are x264 and have much better direct play support.
+        If you have more than a couple users,
+        you will notice much more transcoding.
+        Just depends on your priorities.
+
+        So basically if you are storage poor and just need to save space, use x265.
+        The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+        If you want maximum compatibility and the option to change your files to something else later,
+        then x264.
+        It's all really dependent on specific situations for different people
+
+    It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
+
+    So I created my own golden rule.
+
+    - 720/1080p => x264
+    - 2160p/4k => x265
 
 ### Optional preferred preferences
 
@@ -148,16 +178,15 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ### A little explanation of the scores and why
 
-Scores [75]-[100] Release Source.
-Scores [25]-[50] P2P Groups.
-Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
-
-Scores [-25] Retagged/Renames/Obfuscated  releases.
+- Scores [75]-[100] Release Source.
+- Scores [125]-[150] P2P Groups.
+- Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
+- Scores [-25] Retagged/Renames/Obfuscated  releases.
 
 !!! danger "Watch out"
     If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-25]
 
-Scores [-100] Groups that mess with the audio or add another preferred language.
+- Scores [-100] Groups that mess with the audio or add another preferred language.
 
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
 
@@ -167,11 +196,11 @@ The reason why I got multiple entry's with the same score is because the line wi
 
 When you've done it correctly it will look something like this.
 
-![final](images/final.png)
+![rp-groups](images/rp-groups.png)
 
 And after you clicked on `Save` it will look something like this:
 
-![applied](images/applied.png)
+![rp-profiles](images/rp-profiles.png)
 
 ------
 
@@ -182,10 +211,3 @@ So I want to thnx everyone who helped to make this list possible, for privacy re
 If you want to be mentioned please message me on discord, including a link for proof to what part you want to be credited.
 
 ------
-
-### Why Not x265
-
-Then the question why I put `/(x|h)\.?265/i` as `Must Not Contain`.
-Luckily someone else on Discord described it nice and correctly in my opinion.
-
-[LINK](https://trash-guides.info/Misc/x265-4k){:target="_blank"}
