@@ -29,7 +29,7 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 | [FLAC](#flac)                            | [6.1 Surround](#61-surround) | [DTS X](#dts-x)                               | [HDR](#hdr)                                               |                                               | [Hybrid](#hybrid)                             |
 | [MP3](#mp3)                              | [7.1 Surround](#71-surround) | [DTS-ES](#dts-es)                             | [10 Bit](#10-bit)                                         | [Streaming Services](#streaming-services)     | [Multi](#multi)                               |
 | [PCM](#pcm)                              | [9.1 Surround](#91-surround) | [DTS-HD HRA](#dts-hd-hra)                     | [MPEG2](#mpeg2)                                           | [Dutch Groups](#dutch-groups)                 | [FreeLeech](#freeleech)                       |
-| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           | [HQ-P2P](#hq-p2p)                             |                                               |
+| [Opus](#opus)                            |                              | [DTS-HD MA](#dts-hd-ma)                       |                                                           | [HQ-P2P](#hq-p2p)                             | [720/1080p no x265](#7201080p-no-x265)       |
 |                                          |                              | [TrueHD (not ATMOS)](#truehd-not-atmos)       |                                                           |                                               |                                               |
 |                                          |                              | [TrueHD ATMOS](#truehd-atmos)                 |                                                           |                                               |                                               |
 
@@ -300,6 +300,13 @@ x265 is a *free software library* and *application* for encoding video streams i
     The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
     If you want maximum compatibility and the option to change your files to something else later, then x264.
     It's all really dependent on specific situations for different people
+
+It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
+
+So I created my own golden rule.
+
+- 720/1080p => x264
+- 2160p/4k => x265
 
 ### Some extra info about 4K/X265
 
@@ -2724,5 +2731,75 @@ A collection of P2P groups that are knows for their high quality releases
                 }
             }
         ]
+    }
+    ```
+
+------
+
+## 720/1080p no x265
+
+This blocks/ignores 720/1080p releases that are encoded in x265
+
+You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+
+!!! quote
+    x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
+    If the media isn't source quality/remux, then there will be a loss of quality every time.
+    Also, once you go x265, typically that file is done.
+    It can't be changed to something else without a huge loss of quality.
+
+    Something like 95% of video files are x264 and have much better direct play support.
+    If you have more than a couple users,
+    you will notice much more transcoding.
+    Just depends on your priorities.
+
+    So basically if you are storage poor and just need to save space, use x265.
+    The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+    If you want maximum compatibility and the option to change your files to something else later,
+    then x264.
+    It's all really dependent on specific situations for different people
+
+It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
+
+So I created my own golden rule.
+
+- 720/1080p => x264
+- 2160p/4k => x265
+
+??? example "json"
+
+    ```json
+    {
+     "name": "720/1080p != x265",
+     "includeCustomFormatWhenRenaming": false,
+     "specifications": [
+       {
+         "name": "720p",
+         "implementation": "ResolutionSpecification",
+         "negate": false,
+         "required": false,
+         "fields": {
+           "value": 720
+         }
+       },
+       {
+         "name": "1080p",
+         "implementation": "ResolutionSpecification",
+         "negate": false,
+         "required": false,
+         "fields": {
+           "value": 1080
+         }
+       },
+       {
+         "name": "x265/HEVC",
+         "implementation": "ReleaseTitleSpecification",
+         "negate": false,
+         "required": true,
+         "fields": {
+           "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+         }
+       }
+     ]
     }
     ```
