@@ -39,9 +39,13 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ------
 
-## :octicons-heart-fill-24:{: .heart } Like what I do and want to Support me :octicons-heart-fill-24:{: .heart }
+## Buy me a coffee
 
-??? abstract "CLICK HERE FOR SUPPORT OPTIONS"
+<p align="center">
+<a href="https://www.buymeacoffee.com/TRaSH" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+</p>
+
+??? abstract "CLICK HERE FOR OTHER OPTIONS HOW TO BUY ME A COFFEE"
 
     Paypal In $ (Dollars):
 

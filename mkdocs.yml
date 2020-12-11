@@ -12,9 +12,9 @@ extra:
   manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/paypal
-      link: https://trash-guides.info/#like-what-i-do-and-want-to-support-me
+      link: https://trash-guides.info/#buy-me-a-coffee
     - icon: fontawesome/brands/bitcoin
-      link: https://trash-guides.info/#like-what-i-do-and-want-to-support-me
+      link: https://trash-guides.info/#buy-me-a-coffee
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
     - icon: fontawesome/brands/github-square
