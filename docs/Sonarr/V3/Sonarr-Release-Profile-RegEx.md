@@ -79,7 +79,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 [100]   /(atvp).?web.?(dl|rip)/i
 [100]   /(hmax).?web.?(dl|rip)/i
 [90]   /(dsnp|dsny|disney).?web.?(dl|rip)/i
-[90]   /(nf|netflix).?(dl|rip)/i
+[90]   /(nf|netflix).?web.?(dl|rip)/i
 [90]   /(qibi).?web.?(dl|rip)/i
 [85]   /(hulu).?web.?(dl|rip)/i
 [75]   /(dcu).?web.?(dl|rip)/i
