@@ -20,6 +20,10 @@ extra:
     - icon: fontawesome/brands/github-square
       link: https://github.com/TRaSH-/Guides
 
+google_analytics:
+  - G-ZZKM4MPQXL
+  - auto
+
 extra_css:
   - stylesheets/extra.css
 
