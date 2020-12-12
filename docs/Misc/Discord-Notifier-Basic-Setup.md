@@ -17,7 +17,7 @@ Here you will see a basic setup for Discord Notifier.
 
 First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank"} site, if you don't have an account yet, click the link to signup.
 
- ![image-20201107173234502](images/image-20201107173234502.png)
+ ![dn-login](images/dn-login.png)
 
 1. Your Email address you used during signup.
 1. Your Password you created during signup.
@@ -32,7 +32,7 @@ First we're going to visit the [Discord Notifier](https://discordnotifier.com/in
 
 After you have logged in, you will be redirected to your profile screen.
 
- ![image-20201107184811997](images/image-20201107184811997.png)
+ ![dn-profile](images/dn-profile.png)
 
 1. Select your Country.
 1. Select your Timezone.
@@ -51,9 +51,19 @@ Here, you can setup the following items:
 
 ### Notification Settings
 
+![dn-manage-integration-open](images/dn-manage-integration-open.png)
+
+First, click on  `Manage Integrations` so you can enable what you want to receive notifications for.
+
+![dn-manage-integration](images/dn-manage-integration.png)
+
+A screen will popup and here you're able to select from which application/service you receive a notification.
+
+When you enabled the ones you want click on `Save`
+
 Setup which notifications you want to to receive from each option.
 
- ![image-20201107190759062](images/image-20201107190759062.png)
+ ![dn-notifcation-settings-radarr](images/dn-notifcation-settings-radarr.png)
 
 1. Click on the cog (settings) icon to configure what will be in your notification.
 
@@ -61,12 +71,15 @@ Setup which notifications you want to to receive from each option.
 
     #### Notification Settings Configuration
 
-    ![image-20201117-121530](images/image-20201117-121530.png)
+    ![dn-integration-settings](images/dn-integration-settings.png)
 
+    1. [Instructions how to integration the notifications](#integrations)
     1. Enable/Disable notification trigger
     1. Change color bar for notification trigger
     1. Expand trigger to enable/disable message fields
     1. Customize the layout for the notification (drag/drop editor to the right in the image)
+    1. Enable so each notification is unique and wont update existing ones.
+    1. Here you can edit the layout
 
 ### Discord Settings
 
@@ -99,15 +112,15 @@ First we need to get the channel ID's from your server/channel
 
 Open your User Settings -> Appearance -> Enable Developer Mode.
 
- ![image-20201107201431508](images/image-20201107201431508.png)
+ ![dn-discord-dev-mode](images/dn-discord-dev-mode.png)
 
  Right click on the Discord text channel you want the bot to interact  with and press "Copy ID"
 
- ![image-20201107201209441](images/image-20201107201209441.png)
+ ![dn-discord-copyid](images/dn-discord-copyid.png)
 
 Paste the channel ID in the corresponding boxes.
 
- ![image-20201107201822743](images/image-20201107201822743.png)
+ ![dn-channel-paste](images/dn-channel-paste.png)
 
 1. Add the channel ID for the `#media` channel.
 1. Add the channel ID for the `#errors` channel.
@@ -119,23 +132,23 @@ Paste the channel ID in the corresponding boxes.
 
     ##### Granular arr setup
 
-    ![Image-20201117-145908](images/Image-20201117-145908.png)
+    ![dn-granular-arr-setup](images/dn-granular-arr-setup.png)
 
 ??? example "Granular media setup"
 
     ##### Granular media setup
 
-    ![granular-media-setup](images/granular-media-setup.png)
+    ![dn-granular-media-setup](images/dn-granular-media-setup.png)
 
 ### Invite the bot
 
 It's time to invite the bot in to your Server/Channels by clicking on the following link.
 
- ![image-20201107203033357](images/image-20201107203033357.png)
+ ![dn-invite-bot-here](images/dn-invite-bot-here.png)
 
 You will get a screen that looks like the following screenshot.
 
- ![image-20201107203535642](images/image-20201107203535642.png)
+ ![dn-invite-bot-discord](images/dn-invite-bot-discord.png)
 
 1. Select the server the bot should join.
 1. Click on `Authorize` to approve.
@@ -158,7 +171,7 @@ You will get a screen that looks like the following screenshot.
 
 Here we will setup the Discord Notifier reactions(emoji's) that will be shown during a playback in plex, or during a download/import in Sonarr/Radarr.
 
-![image-20201108084938027](images/image-20201108084938027.png) ![image-20201108085034607](images/image-20201108085034607.png)
+![dn-reaction-1](images/dn-reaction-1.png) ![dn-reaction-2](images/dn-reaction-2.png)
 
 This section exist of 2 parts.
 
@@ -181,34 +194,34 @@ After you've added them to your Discord Server it's time to get the ID's from yo
 ```
 
 ??? example "Example"
-    ![image-20201108092738752](images/image-20201108092738752.png)
+    ![dn-emoji-example](images/dn-emoji-example.png)
 
     What results in to.
 
-    ![image-20201108092827192](images/image-20201108092827192.png)
+    ![dn-emoji-result](images/dn-emoji-result.png)
 
     So your ID would be `:grab:706535455876710461`.
 
 Paste the ID results from your channel in to the corresponding boxes.
 
- ![image-20201108093201236](images/image-20201108093201236.png)
+ ![dn-reaction-paste](images/dn-reaction-paste.png)
 
 Do this for all the other boxes also including your Trackers/Indexers.
 
 #### Trackers and Indexers
 
- ![image-20201108093947565](images/image-20201108093947565.png)
+ ![dn-reaction-indexers](images/dn-reaction-indexers.png)
 
 1. Paste here the the emoji ID.
 1. The actual indexer name you're using in Sonarr/Radarr.
 
 ??? example "Example"
 
-    ![image-20201108094627415](images/image-20201108094627415.png)
+    ![dn-indexer-torznab](images/dn-indexer-torznab.png)
 
     What will result in to.
 
-    ![image-20201108094834791](images/image-20201108094834791.png)
+    ![dn-indexer-torznab-result](images/dn-indexer-torznab-result.png)
 
     If you use a different name in Sonarr and Radarr just add them with a comma `BeyondHD - Jackett,BHD`.
 
@@ -221,39 +234,39 @@ Don't forget to click on `Save Changes` !!!
 
 ## Integrations
 
-This is where we add all this to your *arr and Plex.
+Here we will explain how to we add all this to your *arr and Plex.
 
- ![image-20201108153748843](images/image-20201108153748843.png)
+ ![dn-integration-settings-link](images/dn-integration-settings-link.png)
 
 ### Radarr, Readarr and Lidarr
 
 Radarr, Readarr and Lidarr supports Discord Notifier natively so that's an easy one to add.
 
-`Settings` => `Connect` => click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Discord Notifier` add your API key and you're done.
+`Settings` => `Connect` => click on ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) and select `Discord Notifier` add your API key and you're done.
 
 ??? example "Radarr Example"
-    In Radarr go to `Settings` => `Connect` => Click on ![image-20201108174654550](images/image-20201108174654550.png) and select `DiscordNotifier.com`.
+    In Radarr go to `Settings` => `Connect` => Click on ![dn-arr-add-plus](images/dn-arr-add-plus.png) and select `DiscordNotifier.com`.
 
-    ![image-20201108154540683](images/image-20201108154540683.png)
+    ![dn-arr-add-notification](images/dn-arr-add-notification.png)
 
     Then add the following info.
 
-    ![image-20201108172017406](images/image-20201108172017406.png)
+    ![dn-arr-settings-notification](images/dn-arr-settings-notification.png)
 
     1. The name you want to use for the notification.
-    2. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
-    3. Add here you API key from Discord Notifier.
-    4. Click on `Test` to see if it works.
-    5. If everything is correct click on `Save`
+    1. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
+    1. Add here you API key from Discord Notifier.
+    1. Click on `Test` to see if it works.
+    1. If everything is correct click on `Save`
 
 ### Sonarr
 
 Sonarr doesn't have native support & will not get one per their devs.
 That's why we're going to use the webhook method.
 
- ![image-20201108175840774](images/image-20201108175840774.png)
+ ![dn-sonarr-instruction](images/dn-sonarr-instructions.png)
 
-`Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
+`Settings` => `Connect` > Click on ![dn-arr-add-plus](images/dn-arr-add-plus.png) and select `Webhook`.
 
 Add the following info:
 
@@ -267,30 +280,30 @@ Click **Save**
 
 ??? example "Sonarr Example"
 
-    `Settings` => `Connect` > Click on ![image-20201108174654550.png](images/image-20201108174654550.png) and select `Webhook`.
+    `Settings` => `Connect` > Click on ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) and select `Webhook`.
 
-    ![image-20201108181144356](images/image-20201108181144356.png)
+    ![dn-sonarr-add-webhook](images/dn-sonarr-add-webhook.png)
 
     Add the following info.
 
-    ![image-20201108181509164](images/image-20201108181509164.png)
+    ![dn-sonarr-settings-webhook](images/dn-sonarr-settings-webhook.png)
 
     1. The name you want to use for the notification.
-    2. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
-    3. Add the URL that you can copy/paste from the integrations page.
-    4. Make sure this is on `POST`.
-    5. Click on `Test` to see if it works.
-    6. If everything is correct click on `Save`
+    1. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
+    1. Add the URL that you can copy/paste from the integrations page.
+    1. Make sure this is on `POST`.
+    1. Click on `Test` to see if it works.
+    1. If everything is correct click on `Save`
 
 ### Bazarr
 
 For Bazarr you need to make use of JSON method.
 
- ![image-20201108183922518](images/image-20201108183922518.png)
+ ![dn-bazarr-instruction](images/dn-bazarr-instruction.png)
 
 `Settings` => `Notifications` => and select`JSON`
 
-On the top click on ![image-20201108191244845](images/image-20201108191244845.png) `Edit` icon and Enable the notification type.
+On the top click on ![dn-bazarr-edit-icon](images/dn-bazarr-edit-icon.png) icon and Enable the notification type.
 
 Add the JSON URL that you copy/pasted from the integrations page.
 
@@ -300,28 +313,28 @@ Scroll up and save
 
     `Settings` => `Notifications` => and select`JSON`
 
-    ![image-20201108185518511](images/image-20201108185518511.png)
+    ![dn-bazarr-add-json](images/dn-bazarr-add-json.png)
 
-    On the top click on ![image-20201108191244845](images/image-20201108191244845.png) `Edit` icon and Enable the notification type.
+    On the top click on ![dn-bazarr-edit-icon](images/dn-bazarr-edit-icon.png) `Edit` icon and Enable the notification type.
 
     Add the following info.
 
-    ![image-20201108190148938](images/image-20201108190148938.png)
+    ![dn-bazarr-settings-json](images/dn-bazarr-settings-json.png)
 
     1. Enable the JSON Notification.
-    2. Add the JSON URL that you copy/pasted from the integrations page.
-    3. Click on `Test` to see if it works.
-    4. If everything is correct click on `Ok`
+    1. Add the JSON URL that you copy/pasted from the integrations page.
+    1. Click on `Test` to see if it works.
+    1. If everything is correct click on `Ok`
 
     Don't forget to click on Save on the top of the Bazarr screen.
 
-    ![image-20201108190622004](images/image-20201108190622004.png)
+    ![dn-bazarr-save-json](images/dn-bazarr-save-json.png)
 
 ### Plex
 
 #### URL Webhook
 
- ![image-20201108191708582](images/image-20201108191708582.png)
+ ![dn-plex-instructions](images/dn-plex-instructions.png)
 
 `Settings` => `Webhooks` => click on `ADD WEBHOOK` and add the URL that you can copy/paste from the integrations page and click on `SAVE CHANGES`
 
@@ -329,10 +342,10 @@ Scroll up and save
 
     `Settings` => `Webhooks` => click on `ADD WEBHOOK`
 
-    On the top right click on the ![image-20201108194808693](images/image-20201108194808693.png) `Settings` icon, and on the left sidebar select `Webhooks`
-    Click on the middle of the screen on ![image-20201108195006697](images/image-20201108195006697.png) and add the following info.
+    On the top right click on the ![dn-plex-settings-icon](images/dn-plex-settings-icon.png) `Settings` icon, and on the left sidebar select `Webhooks`
+    Click on the middle of the screen on ![dn-plex-webhook-icon](images/dn-plex-webhook-icon.png) and add the following info.
 
-    ![image-20201108195139199](images/image-20201108195139199.png)
+    ![dn-plex-settings-webhook](images/dn-plex-settings-webhook.png)
 
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
@@ -340,6 +353,8 @@ Scroll up and save
 ??? info "Advanced Plex Settings"
 
     ### Advanced Plex Settings
+
+    ![dn-plex-advanced](images/dn-plex-advanced.png)
 
     #### Python Webhook
 
@@ -377,9 +392,9 @@ Scroll up and save
 
 ### Testing
 
-On the top of the integrations page you will now have the ability to test your settings. This only tests the connection between the notifier and your discord. You can use the Test in each *arr and that will test the everything (connection wise).
+On the bottom of all the instruction you will now have the ability to test your settings. This only tests the connection between the notifier and your discord. You can use the Test in each *arr and that will test the everything (connection wise).
 
- ![image-20201108195808555](images/image-20201108195808555.png)
+ ![dn-test-icons-bar](images/dn-test-icons-bar.png)
 
 Click on the icons to test your notifications.
-After going through this tutorial and you still arent getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank"} for additional support.
+After going through this tutorial and you still aren't getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank"} for additional support.
