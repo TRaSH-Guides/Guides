@@ -4,7 +4,7 @@ Often on Radarr discord people asking what's the recommended/best way to naming 
 First of it's personal preference, but the support staff often recommend to add also non recoverable info.
 Why ?
 
-if you even need to do a re-install, re-import for what ever reason in Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so it get's imported correctly and not been matched as HDTV or WEB-DL etc.
+if you even need to do a re-install, re-import for what ever reason in Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so it gets imported correctly and not been matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
 

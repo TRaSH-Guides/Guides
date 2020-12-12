@@ -67,7 +67,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     Other Options:
 
-    [**Use my VPN Referal link to get 50% off with TorGuard**](https://trash-guides.info/Misc/How-to-setup-Torguard-for-port-forwarding/)
+    [**Use my VPN Referral link to get 50% off with TorGuard**](https://trash-guides.info/Misc/How-to-setup-Torguard-for-port-forwarding/)
 
 ### Special Thanks
 

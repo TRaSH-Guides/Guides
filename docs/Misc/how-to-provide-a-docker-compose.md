@@ -4,7 +4,7 @@ When you're running dockers and you need help on discord etc you often hear the 
 
 "Provide a docker compose"
 
-If you need to provide this info always remember to provide it from all your arrs (Sonarr, Radarr, Lidarr, Bazarr) and also from your download client(s).
+If you need to provide this info always remember to provide it from all your *arr (Sonarr, Radarr, Lidarr, Bazarr) and also from your download client(s).
 
 If you're using a system with a GUI (Synology, unRAID, OMV, etc.) it's not always easy to provide a docker compose but it's possible.
 

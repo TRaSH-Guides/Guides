@@ -73,7 +73,7 @@ After this we scroll all the way back up
 Being we set `BR-DISK` to `-1000` the chance that it will reach the `Minimum Custom Format Score` set in (4.) is really small.
 
 !!! info
-    For Custom Formats you really don't want, set it to something really low like `-1000` and not something like `-10` being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that the `BR-DISK` will be downloaded (-10)+(+10)=0 and your `Minimum Custom Format Scrore` is set at `0`.
+    For Custom Formats you really don't want, set it to something really low like `-1000` and not something like `-10` being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that the `BR-DISK` will be downloaded (-10)+(+10)=0 and your `Minimum Custom Format Score` is set at `0`.
 
 ------
 
@@ -103,4 +103,4 @@ So it's important to keep this in mind when setting up your scores.
 
 THNX:
 
-A big thnx to [rg9400](https://github.com/rg9400){:target="_blank"} for providing me with info needed to create the Tips secction.
+A big thnx to [rg9400](https://github.com/rg9400){:target="_blank"} for providing me with info needed to create the Tips section.

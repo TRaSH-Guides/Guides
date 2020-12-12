@@ -55,7 +55,7 @@ Then keep reading.
     ##### Folder Structure
 
     We're going to use a mounted drive that we're going to use as storage for downloads and your media.
-    In this example the mounted drive will be mounted to `/mnt/` with the followig folder structure.
+    In this example the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
     ```
     storage
@@ -75,7 +75,7 @@ Then keep reading.
     ```
 
     ##### Changes to the .env
-    To accomplisch this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
+    To accomplish this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
 
     ``` yaml
     # Global Settings
@@ -131,11 +131,11 @@ Then keep reading.
 
         ###### Sonarr
 
-        `Settings` => `Media Managemen` => `Importing`
+        `Settings` => `Media Management` => `Importing`
 
         ![sonarr-enable-hardlinks](images/sonarr-enable-hardlinks.png)
 
-        `Settings` => `Media Managemen` => `Root Folders`
+        `Settings` => `Media Management` => `Root Folders`
 
         ![ds-sonarr-root-folder](images/ds-sonarr-root-folder.png)
 
@@ -149,11 +149,11 @@ Then keep reading.
 
         ###### Radarr
 
-        `Settings` => `Media Managemen` => `Importing`
+        `Settings` => `Media Management` => `Importing`
 
         ![radarr-enable-hardlinks](images/radarr-enable-hardlinks.png)
 
-        `Settings` => `Media Managemen` => `Root Folders`
+        `Settings` => `Media Management` => `Root Folders`
 
         ![ds-radarr-root-folder](images/ds-radarr-root-folder.png)
 
@@ -347,7 +347,7 @@ Then keep reading.
 
     !!! info
 
-        Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+        Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
 
     ```none
     data
@@ -519,7 +519,7 @@ Then keep reading.
     1. PUID/PGID (this info you got earlier)
     1. TZ (Change to your timezone)
 
-    !!! importand
+    !!! important
         make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
 
     ##### Run the Docker Compose
@@ -530,7 +530,7 @@ Then keep reading.
     sudo docker-compose up -d
     ```
 
-    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differene.
+    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differences.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
@@ -634,7 +634,7 @@ Then keep reading.
 
         Sonarr, Radarr and Lidarr
 
-        Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+        Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
 
         ```none
         data
@@ -720,7 +720,7 @@ Then keep reading.
     sudo docker-compose up -d
     ```
 
-    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differene.
+    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differences.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
@@ -810,7 +810,7 @@ Then keep reading.
 
         Sonarr, Radarr and Lidarr
 
-        Sonarr, Radarr and Lidarr get's access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+        Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
 
         ```none
         data
@@ -881,11 +881,11 @@ Then keep reading.
 
     #### Sonarr
 
-    `Settings` => `Media Managemen` => `Importing`
+    `Settings` => `Media Management` => `Importing`
 
     ![sonarr-enable-hardlinks](images/sonarr-enable-hardlinks.png)
 
-    `Settings` => `Media Managemen` => `Root Folders`
+    `Settings` => `Media Management` => `Root Folders`
 
     ![sonarr-root-folder](images/sonarr-root-folder.png)
 
@@ -899,11 +899,11 @@ Then keep reading.
 
     #### Radarr
 
-    `Settings` => `Media Managemen` => `Importing`
+    `Settings` => `Media Management` => `Importing`
 
     ![radarr-enable-hardlinks](images/radarr-enable-hardlinks.png)
 
-    `Settings` => `Media Managemen` => `Root Folders`
+    `Settings` => `Media Management` => `Root Folders`
 
     ![radarr-root-folder](images/radarr-root-folder.png)
 
