@@ -22,19 +22,21 @@ And in my opinion the P2P are of better quality.
 Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate`.
 
 !!! info
+
     Keep in mind this list will be a constant work in progress because I will be updating it when it's needed.
 
     So best to set a notification for updates for this page.
 
-!!! tip "Update"
+??? tip "Updates"
+
     A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
     The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
 
-I decided to redo the Release Profile to make it easier for for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed allot of popup scene releases meaning we need to update often.
+    I decided to redo the Release Profile to make it easier for for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed allot of popup scene releases meaning we need to update often.
 
-With this it also means all scene and (yet) unknown groups will be getting a score of `0` and not `-50`.
+    With this it also means all scene and (yet) unknown groups will be getting a score of `0` and not `-50`.
 
-I will still keep a eye on them and add the Low Quality Groups to the `-100` score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.
+    I will still keep a eye on them and add the Low Quality Groups to the `-100` score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.
 
 ------
 
@@ -73,6 +75,8 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ### Release Source (Streaming Service)
 
+It's recommended to add the Release Sources separate from the other release profiles.
+
 ```bash
 # Preferred (3)
 [100]   /(amzn|amazon).?web.?(dl|rip)/i
@@ -105,11 +109,13 @@ The Number between the **[**brackets**]** are the scores the release name will g
     {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]}{[MediaInfo Simple]}{[Preferred Words]}{-Release Group}
     ```
 
+    More renaming suggestions can be found [HERE](https://trash-guides.info/Sonarr/V3/Sonarr-recommended-naming-scheme/){:target="_blank"}
+
 ### P2P + Low Quality Scene Groups
 
 ```bash
 # Must Not Contain (2)
-/(?=(1080|720)).*((x|h)265|hevc)/i
+/(?=(1080|720)).*((x|h).?265|hevc)/i
 
 # Preferred (3)
 [180]   /(-deflate|-inflate)/i
@@ -131,7 +137,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ??? info "Why the Must Not Contain entry"
 
-    So why did I put `/(?=(1080|720)).*((x|h)265|hevc)/i` as `Must Not Contain` and what does it do ?
+    So why did I put `/(?=(1080|720)).*((x|h).?265|hevc)/i` as `Must Not Contain` and what does it do ?
 
     It blocks/ignores 720/1080p releases that are encoded in x265, why ?
 
