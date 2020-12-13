@@ -475,8 +475,8 @@ Then keep reading.
     These `{appname}` sub folders you need to create your self. (*This is a limitation of the Synology*)
 
     ```bash
-    sudo mkdir /docker/appdata
-    cd /docker/appdata
+    sudo mkdir /volume1/docker/appdata
+    cd /volume1/docker/appdata
     sudo mkdir radarr sonarr bazarr nzbget qbittorrent plex tautulli
     ```
 
@@ -521,6 +521,13 @@ Then keep reading.
 
     !!! important
         make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
+
+    ##### Permissions
+
+    ```bash
+    sudo chown -R $USER:users /volume1/docker/ /volume1/data
+    sudo chmod -R a=,a+rX,u+w,g+w /volume1/docker/ /volume1/data
+    ```
 
     ##### Run the Docker Compose
 
@@ -680,13 +687,6 @@ Then keep reading.
     sudo mkdir -p /docker/appdata
     ```
 
-    ##### Permissions
-
-    ```bash
-    sudo chown -R $USER:$USER /data /docker
-    sudo chmod -R a=,a+rX,u+w,g+w /data /docker
-    ```
-
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
@@ -713,6 +713,13 @@ Then keep reading.
 
     1. Change the PUID/PGID.
     1. TZ (Change to your timezone)
+
+    ##### Permissions
+
+    ```bash
+    sudo chown -R $USER:$USER /data /docker
+    sudo chmod -R a=,a+rX,u+w,g+w /data /docker
+    ```
 
     ##### Run the Docker Compose
 
