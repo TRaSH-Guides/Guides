@@ -14,19 +14,13 @@ If you're using a system with a GUI (Synology, unRAID, OMV, etc.) it's not alway
 Use one of the following from terminal(puTTy) to get the docker compose with or without the use of `sudo`.
 
 ```bash
-sudo docker run --rm \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    red5d/docker-autocompose \
-    CONTAINER_NAME CONTAINER_NAME2
+sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-autocompose CONTAINER_NAME CONTAINER_NAME2
 ```
 
 ??? example "Example:"
 
     ```bash
-       sudo docker run --rm \
-       -v /var/run/docker.sock:/var/run/docker.sock \
-       red5d/docker-autocompose \
-       sonarr radarr bazarr nzbget
+       sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-autocompose sonarr radarr bazarr nzbget
     ```
 
 Paste the results on one of the following sites.
