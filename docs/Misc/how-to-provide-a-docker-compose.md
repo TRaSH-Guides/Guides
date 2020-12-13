@@ -20,7 +20,7 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-a
 ??? example "Example:"
 
     ```bash
-       sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-autocompose sonarr radarr bazarr nzbget
+    sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-autocompose sonarr radarr bazarr nzbget
     ```
 
 Paste the results on one of the following sites.
