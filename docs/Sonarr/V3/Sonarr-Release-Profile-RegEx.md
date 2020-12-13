@@ -32,7 +32,7 @@ Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate`.
     A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
     The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
 
-    I decided to redo the Release Profile to make it easier for for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed allot of popup scene releases meaning we need to update often.
+    I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed a lot of popup scene releases meaning we need to update often.
 
     With this it also means all scene and (yet) unknown groups will be getting a score of `0` and not `-50`.
 
