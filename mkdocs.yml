@@ -20,12 +20,11 @@ extra:
     - icon: fontawesome/brands/github-square
       link: https://github.com/TRaSH-/Guides
 
-google_analytics:
-  - G-ZZKM4MPQXL
-  - auto
-
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
 
 markdown_extensions:
   - admonition
@@ -61,6 +60,7 @@ plugins:
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tabs
