@@ -519,6 +519,13 @@ Then keep reading.
     1. PUID/PGID (this info you got earlier)
     1. TZ (Change to your timezone)
 
+    ##### Permissions
+
+    ```bash
+    sudo chown -R $USER:users /volume1/data /volume1/docker
+    sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
+    ```
+
     !!! important
         make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
 
@@ -527,6 +534,7 @@ Then keep reading.
     When you did all the above steps you only need to type the following in your `/volume1/docker/appdata`
 
     ```bash
+    cd /volume1/docker/appdata
     sudo docker-compose up -d
     ```
 
