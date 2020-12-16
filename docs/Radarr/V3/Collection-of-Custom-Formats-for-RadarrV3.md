@@ -308,6 +308,8 @@ So I created my own golden rule.
 - 720/1080p => x264
 - 2160p/4k => x265
 
+> If you want to make use of the Golden Rule you could make use of the following Custom Format [720/1080p no x265](#7201080p-no-x265)
+
 ### Some extra info about 4K/X265
 
 [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203) - Plex.tv
@@ -2686,7 +2688,7 @@ Collection of Streaming Services
 
 ## HQ-P2P
 
-A collection of P2P groups that are knows for their high quality releases
+A collection of P2P groups that are known for their high quality releases
 
 ??? example "json"
 
