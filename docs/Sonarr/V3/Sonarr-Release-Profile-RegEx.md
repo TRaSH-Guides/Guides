@@ -79,17 +79,17 @@ It's recommended to add the Release Sources separate from the other release prof
 
 ```bash
 # Preferred (3)
-[100]   /(amzn|amazon).?web.?(dl|rip)/i
-[100]   /(atvp).?web.?(dl|rip)/i
-[100]   /(hmax).?web.?(dl|rip)/i
-[90]   /(dsnp|dsny|disney).?web.?(dl|rip)/i
-[90]   /(nf|netflix).?web.?(dl|rip)/i
-[90]   /(qibi).?web.?(dl|rip)/i
-[85]   /(hulu).?web.?(dl|rip)/i
-[75]   /(dcu).?web.?(dl|rip)/i
-[75]   /(hbo).?web.?(dl|rip)/i
-[75]   /(red).?web.?(dl|rip)/i
-[75]   /(it).?web.?(dl|rip)/i
+[100]   /(amzn|amazon)(?=.?web.?(dl|rip))/i
+[100]   /(atvp)(?=.?web.?(dl|rip))/i
+[100]   /(hmax)(?=.?web.?(dl|rip))/i
+[90]   /(dsnp|dsny|disney)(?=.?web.?(dl|rip))/i
+[90]   /(nf|netflix)(?=.?web.?(dl|rip))/i
+[90]   /(qibi)(?=.?web.?(dl|rip))/i
+[85]   /(hulu)(?=.?web.?(dl|rip))/i
+[75]   /(dcu)(?=.?web.?(dl|rip))/i
+[75]   /(hbo)(?=.?web.?(dl|rip))/i
+[75]   /(red)(?=.?web.?(dl|rip))/i
+[75]   /(it)(?=.?web.?(dl|rip))/i
 ```
 
 !!! note
