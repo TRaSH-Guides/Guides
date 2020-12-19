@@ -16,7 +16,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]}{ [Preferred Words]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
+{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
@@ -52,7 +52,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series TitleYear} - {Air-Date} - {Episode CleanTitle} {[Quality Full]}{ [Preferred Words]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
+{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
@@ -76,7 +76,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series TitleYear} - {absolute:000} - S{season:00}E{episode:00} - {Episode CleanTitle} {[Quality Full]}{ [Preferred Words]} {[MediaInfo VideoDynamicRange]} [{MediaInfo VideoBitDepth}bit] {[MediaInfo VideoCodec]} {[MediaInfo-AudioCodec}-{MediaInfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
+{Series TitleYear} - {absolute:000} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[MediaInfo AudioLanguages]}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
