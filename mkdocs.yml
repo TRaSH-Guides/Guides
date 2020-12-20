@@ -67,10 +67,10 @@ theme:
   language: en
   palette:
     primary: indigo
-    accent: red
+    accent: indigo
     scheme: slate
   font:
     code: "Fira Code"
   favicon: img/favicon.png
   logo: img/logo.png
-#  custom_dir: docs/themes
+

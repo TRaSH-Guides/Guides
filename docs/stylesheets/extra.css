@@ -4,15 +4,12 @@
   --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.32);
 }
 
-@keyframes heart {
-  0%, 40%, 80%, 100% {
-    transform: scale(1);
-  }
-  20%, 60% {
-    transform: scale(1.15);
+footer.sponsorship {
+  text-align: center;
+
+  hr {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
-.heart {
-  animation: heart 1000ms infinite;
-  color: #e91e63;
-}
+
