@@ -103,6 +103,10 @@ You will need to add the following to your new Custom Format when created in you
 
 If you prefer TrueHD|Atmos audio tracks.
 
+!!! warning
+
+    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
+
 ??? example "json"
 
     ```json
@@ -127,6 +131,10 @@ If you prefer TrueHD|Atmos audio tracks.
 
 If you prefer DTS-HD/DTS:X audio tracks.
 
+!!! warning
+
+    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
+
 ??? example "json"
 
     ```json
@@ -150,6 +158,17 @@ If you prefer DTS-HD/DTS:X audio tracks.
 ## Dolby Vision (Single Layer)
 
 Custom Format for Single Layer Dolby Vision releases.
+
+!!! note
+
+    This seems the preferred option for PLeX with a Shield 2019 model that supports DV.
+
+    But keep in mind it also depends on how the releaser names the files!
+    Shield can play any Single Layer DV in a .ts container via Plex natively.  It can also play most Single Layer in .mkv but only via PlexForKodi with a modded version of exoplayer.
+
+    An incompatible variant should still play as HDR10 in most clients.
+
+    **UPDATE:** DV is part of the MKV spec now and ExoPlayer added native support so hopefully coming soon.
 
 ??? example "json"
 
@@ -179,22 +198,14 @@ Custom Format for Single Layer Dolby Vision releases.
     }
     ```
 
-!!! note
-
-    This seems the preferred option for PLeX with a Shield 2019 model that supports DV.
-
-    But keep in mind it also depends on how the releaser names the files!
-    Shield can play any Single Layer DV in a .ts container via Plex natively.  It can also play most Single Layer in .mkv but only via PlexForKodi with a modded version of exoplayer.
-
-    An incompatible variant should still play as HDR10 in most clients.
-
-    **UPDATE:** DV is part of the MKV spec now and ExoPlayer added native support so hopefully coming soon.
-
 ------
 
 ## Special Edition
 
 Custom format for several Special Editions
+
+- The Director's Cut is the version edited by the Director, usually for additional home media releases.
+- An Extended Cut is usually any version of the film which is longer than the theatrical cut (though in very rare cases, its shorter).
 
 ??? example "json"
 
@@ -228,6 +239,10 @@ Custom format for several Special Editions
 
 ## HDR
 
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank"}
+
+High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+
 ??? example "json"
 
     ```json
@@ -250,7 +265,7 @@ Custom format for several Special Editions
 
 ## x264
 
-x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264) compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank"}.
 
 If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p
 
@@ -286,7 +301,7 @@ If you want maximum compatibility and have much better direct play support then 
 
 ## x265
 
-x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265) compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank"}.
 
 !!! quote
     x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
@@ -310,7 +325,7 @@ So I created my own golden rule.
 
 > If you want to make use of the Golden Rule you could make use of the following Custom Format [720/1080p no x265](#7201080p-no-x265)
 
-### Some extra info about 4K/X265
+Some extra info about 4K/X265
 
 [4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203) - Plex.tv
 
@@ -350,6 +365,17 @@ So I created my own golden rule.
 ------
 
 ## Low Quality Releases
+
+A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality.
+
+!!! note
+
+    You might want to add the following also [EVO except WEB-DL](#evo-except-web-dl)
+
+    - BLOCK1 = Low-Quality Releases (often banned groups)
+    - BLOCK2 = Another Small list of often banned groups.
+    - BLOCK3 = And Another list.
+    - BLOCK4 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
 
 ??? example "json"
 
@@ -396,15 +422,6 @@ So I created my own golden rule.
         ]
     }
     ```
-
-!!! note
-
-    You might want to add the following also [EVO except WEB-DL](#evo-except-web-dl)
-
-    - BLOCK1 = Low-Quality Releases (often banned groups)
-    - BLOCK2 = Another Small list of often banned groups.
-    - BLOCK3 = And Another list.
-    - BLOCK4 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
 
 ------
 
@@ -471,6 +488,12 @@ You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Rest
 ------
 
 ## 4K Remaster
+
+A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible currently for the movie.
+
+To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colours, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
+
+Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ colour specification. This delivers an expanded colour range closer to that contained in original source material.
 
 ??? example "json"
 
@@ -834,6 +857,8 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 
 ## Criterion Collection
 
+The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados.Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
+
 ??? example "json"
 
     ```json
@@ -1028,6 +1053,10 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 ------
 
 ## Dolby Vision
+
+Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+
+Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
 ??? example "json"
 
@@ -1458,6 +1487,8 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 
 ## Hybrid
 
+A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
+
 ??? example "json"
 
     ```json
@@ -1511,6 +1542,11 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 ------
 
 ## Remaster
+
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank"}
+
+For the software term, see Software remastering.
+Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
 
 ??? example "json"
 
@@ -1587,6 +1623,10 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
 
 If you prefer all kind of surround sounds
 
+!!! warning
+
+    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
+
 ??? example "json"
 
     ```json
@@ -1608,6 +1648,8 @@ If you prefer all kind of surround sounds
 ------
 
 ## Theatrical Cut
+
+The Theatrical Cut is the version of the film that was shown at cinemas.
 
 ??? example "json"
 
@@ -1769,7 +1811,7 @@ If you prefer all kind of surround sounds
 
 Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
 
-!!! warning
+!!! attention
     Keep in mind not all trackers support this option.
 
 ??? example "json"
@@ -2230,6 +2272,12 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 
 ## AAC
 
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank"}
+
+Advanced Audio Coding
+
+Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
+
 ??? example "json"
 
     ```json
@@ -2306,6 +2354,8 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 ------
 
 ## FLAC
+
+FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
 
 ??? example "json"
 
@@ -2427,6 +2477,10 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
 ------
 
 ## Opus
+
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank"}
+
+Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
 
 ??? example "json"
 
@@ -2575,12 +2629,17 @@ If you prefer movies with also a Dutch audio track.
 
 Collection of Streaming Services
 
+!!! attention
+
+    This CF only prefers the known streaming services and doesn't work the same way like the release profile that can be used in Sonarr to include the streaming service name in your renaming scheme when using `{[Custom Formats]}` !!!
+    If you want to have this option then you need to add them all separate.
+
 ??? example "json"
 
     ```json
     {
         "name": "Streaming Services",
-        "includeCustomFormatWhenRenaming": true,
+        "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Amazon",
                 "implementation": "ReleaseTitleSpecification",
