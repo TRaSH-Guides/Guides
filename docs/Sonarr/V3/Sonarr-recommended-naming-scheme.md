@@ -23,11 +23,11 @@ The Tokens not available in the release won't be used/shown.
 
     Single Episode:
 
-    `The Series Title! (2010) - S01E01 - Episode Title 1 [HDTV-720p Proper] [iNTERNAL] [HDR] [10bit] [x264] [DTS 5.1]-RlsGrp`
+    `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp`
 
     Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E02-E03 - Episode Title [HDTV-720p Proper] [iNTERNAL] [HDR] [10bit] [x264] [DTS 5.1]-RlsGrp`
+    `The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp`
 
 > **Minimal details + the irreplaceable data**
 
@@ -57,7 +57,7 @@ The Tokens not available in the release won't be used/shown.
 
 ??? summary "RESULTS:"
 
-    `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [HDTV-720p Proper] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1]-RlsGrp`
+    `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp`
 
 > **Minimal details + the irreplaceable data**
 
@@ -83,11 +83,11 @@ The Tokens not available in the release won't be used/shown.
 
     Single Episode:
 
-    `The Series Title! (2010) - 001 - S01E01 - Episode Title 1 [HDTV-720p v2] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp`
+    `The Series Title! (2010) - 001 - S01E01 - Episode Title 1 [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][[JA]]-RlsGrp`
 
     Multi Episode:
 
-    `The Series Title! (2010) - 001-002-003 - S01E01-E02-E03 - Episode Title [HDTV-720p v2] [iNTERNAL] [HDR] [10bit] [x264] [DTS-5.1][[JA]]-RlsGrp`
+    `The Series Title! (2010) - 001-002-003 - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][[JA]]-RlsGrp`
 
 > **Minimal details + the irreplaceable data**
 
