@@ -13,3 +13,14 @@ footer.sponsorship {
   }
 }
 
+th {
+  color:white !important;
+  background-color:hsla(232, 54%, 41%, 1) !important;
+  font-weight: bold;
+}
+td a {
+  color: white !important;
+}
+td a:hover {
+  color: red !important;
+}
