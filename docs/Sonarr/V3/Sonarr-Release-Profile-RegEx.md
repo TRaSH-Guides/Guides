@@ -75,13 +75,16 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ### Release Source (Streaming Service)
 
-It's recommended to add the Release Sources separate from the other release profiles.
+!!! tip
+
+    It's recommended to add the Release Sources separate from the other release profiles.
 
 ```bash
 # Preferred (3)
 [100]   /(amzn|amazon)(?=.?web.?(dl|rip))/i
 [100]   /(atvp)(?=.?web.?(dl|rip))/i
 [100]   /(hmax)(?=.?web.?(dl|rip))/i
+[95]   /(sho)(?=.?web.?(dl|rip))/i
 [90]   /(dsnp|dsny|disney)(?=.?web.?(dl|rip))/i
 [90]   /(nf|netflix)(?=.?web.?(dl|rip))/i
 [90]   /(qibi)(?=.?web.?(dl|rip))/i
