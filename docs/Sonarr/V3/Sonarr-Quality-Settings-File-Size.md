@@ -26,7 +26,5 @@ A: If you notice  you can provide me a proof with a screenshot and the error it 
 But I will only accept changes that are International releases no multi, or dubbed language releases, I won't accept mislabeled source releases like from MeGusta, etc (they should learn to name their stuff decent first). I won't accept changes for micro sized releases.
 
 ------
-!!! note
-    Image is clickable, it will open in a new window or tab for a bigger/better quality.
 
-[![formats](images/formats.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Sonarr/V3/images/formats.png){:target="_blank"}
+![!Sonarr Quality Definitions](images/formats.png)

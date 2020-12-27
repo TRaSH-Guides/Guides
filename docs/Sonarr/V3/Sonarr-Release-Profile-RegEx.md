@@ -44,18 +44,18 @@ Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate`.
 
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
 
-![rp-settings-media-management-proper](images/rp-settings-media-management-proper.png)
+![!rp-settings-media-management-proper](images/rp-settings-media-management-proper.png)
 
 Settings => `Media Management`
 Where we going to set it to `Do not Prefer`
 
 Then we navigate in Sonarr to the Settings =>  `Profiles`
 
-![rp-settings-profiles](images/rp-settings-profiles.png)
+![!rp-settings-profiles](images/rp-settings-profiles.png)
 
 Then you will get a popup screen that will look like this:
 
-![rp-release-profile](images/rp-release-profile.png)
+![!rp-release-profile](images/rp-release-profile.png)
 
 `Must Contain` => add words that the release name **MUST HAVE!**
 
@@ -205,11 +205,11 @@ The reason why I got multiple entry's with the same score is because the line wi
 
 When you've done it correctly it will look something like this.
 
-![rp-groups](images/rp-groups.png)
+![!rp-groups](images/rp-groups.png)
 
 And after you clicked on `Save` it will look something like this:
 
-![rp-profiles](images/rp-profiles.png)
+![!rp-profiles](images/rp-profiles.png)
 
 ------
 

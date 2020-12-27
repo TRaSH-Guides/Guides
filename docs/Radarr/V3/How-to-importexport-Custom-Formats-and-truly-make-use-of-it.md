@@ -59,7 +59,7 @@ And then we're going to set a score of `-1000` to the `BR-DISK` to make sure it 
 
 After this we scroll all the way back up
 
-![cf-profile-selected](images/cf-profile-selected.png)
+![!cf-profile-selected](images/cf-profile-selected.png)
 
 1. Profile name
 1. If you want that Radarr will upgrade till the quality set in (3.)
@@ -135,7 +135,7 @@ Then the Custom Formats we're going to add  to get the HQ releases.
 
 And you use the following main settings in your profile.
 
-![cf-profile-scoring-encode](images/cf-profile-scoring-encode.png)
+![!cf-profile-scoring-encode](images/cf-profile-scoring-encode.png)
 
 !!! info
 

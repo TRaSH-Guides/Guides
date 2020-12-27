@@ -11,7 +11,7 @@ If your download client is on another system then Sonarr then you probably need 
 
 You will get a error that looks a little bit like the following screenshot.
 
-![download errors](images/dl_error.png)
+![!download errors](images/dl_error.png)
 
 So looking at this screenshot it seems we need to make use of Remote Path Mappings
 
@@ -25,7 +25,7 @@ First we navigate in Sonarr to the Settings => `Download Clients` Tab.
 
 At the bottom you choose `Add new mapping`
 
-![add new mapping](images/new_mapping.png)
+![!add new mapping](images/new_mapping.png)
 
 A screen will popup with the following options.
 
