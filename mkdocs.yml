@@ -41,6 +41,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - lightgallery
 
 plugins:
   - search
@@ -70,6 +71,7 @@ theme:
     accent: indigo
     scheme: slate
   font:
+    text: "Roboto"
     code: "Fira Code"
   favicon: img/favicon.png
   logo: img/logo.png

@@ -14,3 +14,23 @@
       <hr>
   </footer>
 {% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ base_url }}/css/lightgallery.min.css">
+{% endblock styles %}
+
+{% block libs %}
+    {{ super() }}
+    <script src="{{ base_url }}/js/lightgallery.min.js"></script>
+{% endblock libs %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+        lightGallery(elements[i]);
+    }
+    </script>
+{% endblock scripts %}
