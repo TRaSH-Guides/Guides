@@ -2,7 +2,7 @@
 name: Bug/Error Found in the Guide?
 about: Support Requests will be closed, if you are unsure check out my Discord first.
 title: "[Bug]"
-labels: ''
+labels: BUG
 assignees: TRaSH-
 
 ---
