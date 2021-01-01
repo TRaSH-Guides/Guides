@@ -297,13 +297,13 @@ Then keep reading.
 
     ![unraid-torrent-clients](images/unraid-torrent-clients.png)
 
-    `Container Path:` => `/data/torrents`
+    `Container Path:` => `/data/torrents/`
 
-    `Host Path`: => `/mnt/user/data/torrents`
+    `Host Path`: => `/mnt/user/data/torrents/`
 
     !!! info
 
-        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
+        The reason why we use `/data/torrents/` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
 
     ```none
     data
@@ -319,13 +319,13 @@ Then keep reading.
 
     ![unraid-usenet-client](images/unraid-usenet-client.png)
 
-    `Container Path:` => `/data/usenet`
+    `Container Path:` => `/data/usenet/`
 
-    `Host Path:` => `/mnt/user/data/usenet`
+    `Host Path:` => `/mnt/user/data/usenet/`
 
     !!! info
 
-        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
+        The reason why we use `/data/usenet/` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
 
     ```none
     data
@@ -552,6 +552,8 @@ Then keep reading.
 
     !!! tip
 
+        ##### Synology Compose Collection
+
         I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
 
         [synology-docker-compose-collection](https://gist.github.com/TRaSH-/1648a937f9c1c7b45e0f379142694892){:target="_blank"}
@@ -733,6 +735,9 @@ Then keep reading.
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
     !!! tip
+
+        ##### Docker Compose Collection
+
 
         I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
 
