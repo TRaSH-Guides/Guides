@@ -47,6 +47,7 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 |                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
 |                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
 |                                                           |                                               |                                               | [Multi](#multi)                           |
+|                                                           |                                               |                                               | [FraMeSToR](#FraMeSToR)                   |
 
 ## Audio
 
@@ -3032,3 +3033,29 @@ If you prefer movies with also a Dutch audio track.
 <sub><sup>[TOP](#index)</sup></sub>
 
 ------
+
+### #FraMeSToR
+
+If you prefer FraMeSToR releases.
+
+Also FraMeSToR doesn't add HDR to their release name so I suggest to add them at the same score as you add one of your HDR Custom Formats.
+
+??? example "json"
+
+    ```json
+    {
+        "name": "FraMeSToR",
+        "includeCustomFormatWhenRenaming": false,
+        "specifications": [{
+            "name": "FraMeSToR",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+              "value": "\\bFraMeSToR\\b"
+         }
+       }]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
