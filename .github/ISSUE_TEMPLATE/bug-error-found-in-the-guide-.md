@@ -1,9 +1,9 @@
 ---
-name: Found a Bug/Error in one of the Guides ?
+name: Bug/Error Found in the Guide?
 about: Support Requests will be closed, if you are unsure check out my Discord first.
 title: "[Bug]"
 labels: ''
-assignees: ''
+assignees: TRaSH-
 
 ---
 
