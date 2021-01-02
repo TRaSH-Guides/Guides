@@ -47,7 +47,7 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 |                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
 |                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
 |                                                           |                                               |                                               | [Multi](#multi)                           |
-|                                                           |                                               |                                               | [FraMeSToR](#FraMeSToR)                   |
+|                                                           |                                               |                                               | [FraMeSToR](#framestor)                   |
 
 ## Audio
 
@@ -3034,7 +3034,7 @@ If you prefer movies with also a Dutch audio track.
 
 ------
 
-### #FraMeSToR
+### FraMeSToR
 
 If you prefer FraMeSToR releases.
 
