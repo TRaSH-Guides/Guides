@@ -58,10 +58,10 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
-  - redirects:
-      redirect_maps:
-        'Collection-of-Custom-Formats-for-RadarrV3.md': 'Radarr-collection-of-custom-formats.md'
-        'Radarr-Quality-Settings-File-Size.md': 'Radarr-quality-settings-file-size.md'
+#  - redirects:
+#      redirect_maps:
+#        'Collection-of-Custom-Formats-for-RadarrV3.md': 'Radarr-collection-of-custom-formats.md'
+#        'Radarr-Quality-Settings-File-Size.md': 'Radarr-quality-settings-file-size.md'
 
 theme:
   name: material
