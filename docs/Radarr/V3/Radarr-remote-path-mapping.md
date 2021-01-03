@@ -4,7 +4,7 @@ Seems that allot of people don't understand how the remote path mapping works fo
 
 Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
 
-## Do I need Remote Path Mappings?
+## Do I need Remote Path Mappings
 
 - If Radarr and your download client are not on the same server/system.
 - If you use either merged local/remote setups using mergerfs or similar
@@ -19,7 +19,7 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 
 ------
 
-## How do I recognize that I need remote path mappings?
+## How do I recognize that I need remote path mappings
 
 Your download stays in your download client and Radarr doesn't want to import it.
 
@@ -43,7 +43,7 @@ So looking at these screenshot it seems you need to make use of Remote Path Mapp
 
 ------
 
-## How do I setup remote path mappings?
+## How do I setup remote path mappings
 
 Go to `Settings` => `Download Clients`
 
@@ -56,8 +56,8 @@ A screen will popup with the following options.
 ![!rpm-add-rpm](images/rpm-add-rpm.png)
 
 1. `Host` => This is the hostname or IP you set in your download client settings.
-2. `Remote Path` => The download path that you've set in your download client.
-3. `Local Path` => The path Radarr needs to access the same path.
+1. `Remote Path` => The download path that you've set in your download client.
+1. `Local Path` => The path Radarr needs to access the same path.
 
 ### Host
 
