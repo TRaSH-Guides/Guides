@@ -1,4 +1,4 @@
-# Collection of Custom Formats for Radarr V3
+# Collection of Custom Formats
 
 Here I will try to collect a collection of the most needed and commonly used Custom Formats.
 These have been collected from either discussions on discord or that I created with help from others.
