@@ -564,7 +564,7 @@ Then keep reading.
 
     !!! note
 
-        I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend you to uses and also provide a docker-compose.
+        I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend you to use and also provide a docker-compose.
 
         *I do recommend to use a non-root user with sudo permissions.*
 
