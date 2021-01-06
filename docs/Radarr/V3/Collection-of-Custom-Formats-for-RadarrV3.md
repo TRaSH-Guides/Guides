@@ -2589,7 +2589,7 @@ A collection of P2P groups that are known for their high quality releases
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "-FraMeSToR|-EPSiLON|//bKRaLiMaRKo//b"
+                    "value": "-FraMeSToR|-EPSiLON|\\bKRaLiMaRKo\\b"
                 }
             }
         ]
