@@ -90,7 +90,7 @@ Add this to your `Preferred (3)` with a score of [100]
 ```
 
 ```bash
-/(atvp)(?=.?web.?(dl|rip))/i
+/(atvp|aptv)(?=.?web.?(dl|rip))/i
 ```
 
 ```bash
