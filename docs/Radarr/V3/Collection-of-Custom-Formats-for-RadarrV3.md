@@ -15,6 +15,16 @@ After requesting at Team Radarr we now have the options to import/export the Cus
 
 I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md) on how to import/export the Custom Formats and how to truly make use of it.
 
+!!! tip
+
+    I also suggest to change the Propers and Repacks settings in Radarr
+
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repack-proper) Custom Format.
+
+    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+
+    This way you make sure the Custom Formats preferences will be used and not ignored.
+
 ------
 
 ## INDEX

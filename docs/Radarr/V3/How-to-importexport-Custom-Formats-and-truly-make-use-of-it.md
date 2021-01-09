@@ -81,6 +81,16 @@ Being we set `BR-DISK` to `-1000` the chance that it will reach the `Minimum Cus
 
     Also it makes it much more clear what you want and what you don't want
 
+!!! tip
+
+    I also suggest to change the Propers and Repacks settings in Radarr
+
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repack-proper) Custom Format.
+
+    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+
+    This way you make sure the Custom Formats preferences will be used and not ignored.
+
 ------
 
 ## Tips how to setup the scores
