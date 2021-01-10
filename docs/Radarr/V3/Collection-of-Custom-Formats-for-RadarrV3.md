@@ -50,14 +50,14 @@ I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-i
 | [Dolby Vision](#dolby-vision)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
 | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-except-web-dl)       | [Streaming Services](#streaming-services) |
 | [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#low-quality-releases) | [HQ-P2P](#hq-p2p)                         |
-| [10 Bit](#10-bit)                                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
-|                                                           | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
+| [HDR (FraMeSToR)](#hdr-framestor)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
+| [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
 |                                                           | [Theatrical Cut](#theatrical-cut)             |                                               | [MPEG2](#mpeg2)                           |
 |                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
 |                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
 |                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
 |                                                           |                                               |                                               | [Multi](#multi)                           |
-|                                                           |                                               |                                               | [FraMeSToR](#framestor)                   |
+|                                                           |                                               |                                               |                                           |
 
 ## Audio
 
@@ -2002,6 +2002,70 @@ High-dynamic-range video (HDR video) is video having a dynamic range greater tha
 
 ------
 
+### HDR-FraMeSToR
+
+FraMeSToR doesn't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+
+??? example "json"
+
+    ```json
+    {
+      "name": "HDR (FraMeSToR)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "FraMeSToR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\bFraMeSToR\\b"
+          }
+        },
+        {
+          "name": "2160p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": 2160
+          }
+        },
+        {
+          "name": "HDR: HDR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\bHDR(\\b|\\d)"
+          }
+        },
+        {
+          "name": "DoVi: Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(DV|dovi)\\b|dolby.?vision"
+          }
+        },
+        {
+          "name": "SDR: SDR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\bSDR(\\b|\\d)"
+          }
+        }
+      ]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+------
+
 ### 10 Bit
 
 ??? example "json"
@@ -3037,34 +3101,6 @@ If you prefer movies with also a Dutch audio track.
                 "value": "\\bMulti(\\b|\\d)"
             }
         }]
-    }
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
-------
-
-### FraMeSToR
-
-If you prefer FraMeSToR releases.
-
-Also FraMeSToR doesn't add HDR to their release name so I suggest to add them at the same score as you add one of your HDR Custom Formats.
-
-??? example "json"
-
-    ```json
-    {
-        "name": "FraMeSToR",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-            "name": "FraMeSToR",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-              "value": "\\bFraMeSToR\\b"
-         }
-       }]
     }
     ```
 
