@@ -39,9 +39,11 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ------
 
-## Buy me a coffee
+## Want to Buy me a coffee
 
 ??? abstract "CLICK HERE FOR THE OPTIONS HOW TO BUY ME A COFFEE"
+
+    ### Buy me a coffee
 
     Buy me a coffee (paypal with subscription option and donator status on discord):
 
