@@ -3007,54 +3007,55 @@ If you prefer movies with also a Dutch audio track.
 
     ```json
     {
-        "name": "Anime Dual Audio",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-                "name": "Dual Audio",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "dual.?audio"
-                }
-            },
-            {
-                "name": "BluDragon",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "bludragon"
-                }
-            },
-            {
-                "name": "EN+JA",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "EN\\+JA|JA\\+EN"
-                }
-            },
-            {
-                "name": "ZR",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "\\bZR\\b"
-                }
-            },
-            {
-                "name": "Japanese Language",
-                "implementation": "LanguageSpecification",
-                "negate": false,
-                "required": true,
-                "fields": {
-                    "value": 8
-                }
-            }
-        ]
+      "name": "Anime Dual Audio",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "Dual Audio",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "dual.?audio"
+          }
+        },
+        {
+          "name": "BluDragon",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "bludragon"
+          }
+        },
+        {
+          "name": "EN+JA",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "EN\\+JA|JA\\+EN"
+          }
+        },
+        {
+          "name": "ZR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "\\bZR\\b"
+          }
+        },
+        {
+          "name": "Japanese Language",
+          "implementation": "LanguageSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": 8
+          }
+        }
+      ]
     }
     ```
 
