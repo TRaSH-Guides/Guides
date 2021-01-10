@@ -526,10 +526,10 @@ Then keep reading.
     sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
     ```
 
+    ##### Run the Docker Compose
+
     !!! important
         make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
-
-    ##### Run the Docker Compose
 
     When you did all the above steps you only need to type the following in your `/volume1/docker/appdata`
 
