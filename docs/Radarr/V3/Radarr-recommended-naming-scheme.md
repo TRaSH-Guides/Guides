@@ -78,6 +78,14 @@ RESULT:
 !!! note
     Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but in this examples it helps for movies that have the same release name and year.
 
+!!! hint
+
+    Radarr now supports iMDb ID and TMDb ID in the folder name.
+
+    !!! quote "Quote From the a developer"
+
+        TMDb is usually better as it guarantees a match, imdb only gets matched if the TMDb entry has the correct imdb Id association. We don't actually talk to imdb
+
 !!! warning
     Please note that this pins the IMDb ID whenever the movie is added to Radarr, and it may be missing or incorrect at that time. If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade. Another potential negative of using it in the folder is that folder renames are complex, lengthy, and potentially destructive in Radarr compared to file renames.
 
