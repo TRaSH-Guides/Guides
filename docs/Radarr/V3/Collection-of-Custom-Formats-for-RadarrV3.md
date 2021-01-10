@@ -3015,7 +3015,7 @@ If you prefer movies with also a Dutch audio track.
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "dual\\.audio"
+                    "value": "dual.?audio"
                 }
             },
             {
