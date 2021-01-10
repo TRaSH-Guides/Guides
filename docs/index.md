@@ -45,7 +45,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     ### Buy me a coffee
 
-    Buy me a coffee (paypal with subscription option and donator status on discord):
+    Buy me a coffee (paypal with subscription/membership option and Sponsor role on discord)
 
     <a href="https://www.buymeacoffee.com/TRaSH" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
