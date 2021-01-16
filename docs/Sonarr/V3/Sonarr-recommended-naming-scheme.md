@@ -1,13 +1,13 @@
-# Recommended naming scheme
+Recommended naming scheme
 
 Often on the [Sonarr Discord][sd] people ask what's the recommended/best way to
-name your files.  First off it's personal preference, but the support staff
-often recommend to add also non- recoverable info.
+name your files.  First off it's personal preference, but it's often recommended
+to add non-recoverable info.
 
 Why?
 
 If, for what ever reason, you ever need to do a re-install or re-import in
-Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
+Sonarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched.
 
 The Tokens not available in the release won't be used/shown.
@@ -19,7 +19,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series Title} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
+{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
@@ -55,7 +55,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series Title} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
+{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
@@ -79,7 +79,7 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series Title} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
+{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
@@ -113,7 +113,7 @@ The Tokens not available in the release won't be used/shown.
 ### Series Folder Format
 
 ```bash
-{Series Title}
+{Series TitleYear}
 ```
 
 RESULT:
