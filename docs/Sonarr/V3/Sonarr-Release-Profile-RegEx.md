@@ -86,59 +86,59 @@ The Number between the **[**brackets**]** are the scores the release name will g
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(amzn|\bamazon\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(amzn|amazon)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(atvp|aptv)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(atvp|aptv)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(hmax)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(hmax)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [95]
 
 ```bash
-/(\bsho\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(sho)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
-/(dsnp|dsny|\bdisney\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(dsnp|dsny|disney)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(nf|\bnetflix\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(nf|netflix)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(\bqibi\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(qibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [85]
 
 ```bash
-/(\bhulu\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [75]
 
 ```bash
-/(dcu)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(dcu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(hbo)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(hbo)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(\bred\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(red)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/(\bit\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
+/\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 !!! note
