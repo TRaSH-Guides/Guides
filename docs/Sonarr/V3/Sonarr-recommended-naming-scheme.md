@@ -1,4 +1,4 @@
-Recommended naming scheme
+# Recommended naming scheme
 
 Often on the [Sonarr Discord][sd] people ask what's the recommended/best way to
 name your files.  First off it's personal preference, but it's often recommended
