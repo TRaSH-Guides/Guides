@@ -86,59 +86,59 @@ The Number between the **[**brackets**]** are the scores the release name will g
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(amzn|amazon)(?=.?web.?(dl|rip))/i
+/(amzn|\bamazon\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(atvp|aptv)(?=.?web.?(dl|rip))/i
+/(atvp|aptv)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(hmax)(?=.?web.?(dl|rip))/i
+/(hmax)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 Add this to your `Preferred (3)` with a score of [95]
 
 ```bash
-/(sho)(?=.?web.?(dl|rip))/i
+/(\bsho\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
-/(dsnp|dsny|disney)(?=.?web.?(dl|rip))/i
+/(dsnp|dsny|\bdisney\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(nf|netflix)(?=.?web.?(dl|rip))/i
+/(nf|\bnetflix\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(qibi)(?=.?web.?(dl|rip))/i
+/(\bqibi\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 Add this to your `Preferred (3)` with a score of [85]
 
 ```bash
-/(hulu)(?=.?web.?(dl|rip))/i
+/(\bhulu\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 Add this to your `Preferred (3)` with a score of [75]
 
 ```bash
-/(dcu)(?=.?web.?(dl|rip))/i
+/(dcu)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(hbo)(?=.?web.?(dl|rip))/i
+/(hbo)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(red)(?=.?web.?(dl|rip))/i
+/(\bred\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 ```bash
-/(it)(?=.?web.?(dl|rip))/i
+/(\bit\b)(?=[ ._-]?web[ ._-]?(dl|rip))/i
 ```
 
 !!! note
@@ -167,7 +167,7 @@ Add this to your `Preferred (3)` with a score of [75]
 Add this to your `Must not contain (2)`
 
 ```bash
-/(?=(1080|720)).*((x|h).?265|hevc)/i
+/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i
 ```
 
 ??? success "example"
@@ -176,7 +176,7 @@ Add this to your `Must not contain (2)`
 
 ??? info "Why the Must Not Contain entry"
 
-    So why did I put `/(?=(1080|720)).*((x|h).?265|hevc)/i` as `Must Not Contain` and what does it do ?
+    So why did I put `/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i` as `Must Not Contain` and what does it do ?
 
     It blocks/ignores 720/1080p releases that are encoded in x265, why ?
 
