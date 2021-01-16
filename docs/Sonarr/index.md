@@ -9,7 +9,7 @@ Here you will find a collection of Sonarr Guides I made.
 - (stable) (v2)
 - Builds Pushed only when intentionally released
 - Github Branch: master
-- Docker: [hotio/sonarr:latest](https://hub.docker.com/r/hotio/sonarr)
+- Docker: [hotio/sonarr:latest](https://hub.docker.com/r/hotio/sonarr){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
 ghcr.io/hotio/sonarr:latest
@@ -22,7 +22,7 @@ ghcr.io/hotio/sonarr:latest
 - (Stable Beta) (v3)
 - Builds pushed when complete
 - Github Branch: phantom-develop
-- Docker: [hotio/sonarr:nightly](https://hub.docker.com/r/hotio/sonarr)
+- Docker: [hotio/sonarr:nightly](https://hub.docker.com/r/hotio/sonarr){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
 ghcr.io/hotio/sonarr:nightly

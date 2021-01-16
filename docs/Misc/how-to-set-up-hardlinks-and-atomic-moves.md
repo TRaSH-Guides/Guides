@@ -28,7 +28,7 @@ Then keep reading.
 
     1. Q: **What are hardlinks?**
 
-        - Short answer is "having a file in multiple folders" without using up your storage, [Long Answer](https://medium.com/@krisbredemeier/the-difference-between-hard-links-and-soft-or-symbolic-links-780149244f7d){:target="_blank"}.
+        - Short answer is "having a file in multiple folders" without using up your storage, [Long Answer](https://medium.com/@krisbredemeier/the-difference-between-hard-links-and-soft-or-symbolic-links-780149244f7d){:target="_blank" rel="noopener noreferrer"}.
 
     1. Q: **What's Atomic Moves?**
 
@@ -241,7 +241,7 @@ Then keep reading.
 
     Go to your dashboard and on the top select `shares` select `add share` .
 
-    [![unraid-main-share](images/unraid-main-share.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-main-share.png){:target="_blank"}
+    [![unraid-main-share](images/unraid-main-share.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-main-share.png){:target="_blank" rel="noopener noreferrer"}
 
     1. use `data`
     1. if you got a cache drive and want to make use of it put it on `Yes` or keep it disabled (Hardlinks will stay in tact if you're using the cache)
@@ -389,7 +389,7 @@ Then keep reading.
 
     ##### Final Result
 
-    [![unraid-final-result](images/unraid-final-result.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-final-result.png){:target="_blank"}
+    [![unraid-final-result](images/unraid-final-result.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-final-result.png){:target="_blank" rel="noopener noreferrer"}
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
@@ -416,7 +416,7 @@ Then keep reading.
     You will need to SSH into your Synology.
     If you didn't already enable it you need to do that first
 
-    [![synology-control-panel](images/synology-control-panel.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/synology-control-panel.png){:target="_blank"}
+    [![synology-control-panel](images/synology-control-panel.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/synology-control-panel.png){:target="_blank" rel="noopener noreferrer"}
 
     Then use a program like Putty and SSH to your Synology.
 
@@ -497,7 +497,7 @@ Then keep reading.
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed){:target="_blank"} to your `/volume1/docker/appdata` location so you got your important stuff together.
+    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
 
     ```bash
     sudo wget https://gist.githubusercontent.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed/raw/ca91114e74d5669ed3ede8a379f510acc54865ad/docker-compose.yml
@@ -538,7 +538,7 @@ Then keep reading.
     sudo docker-compose up -d
     ```
 
-    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differences.
+    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
@@ -556,7 +556,7 @@ Then keep reading.
 
         I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
 
-        [synology-docker-compose-collection](https://gist.github.com/TRaSH-/1648a937f9c1c7b45e0f379142694892){:target="_blank"}
+        [synology-docker-compose-collection](https://gist.github.com/TRaSH-/1648a937f9c1c7b45e0f379142694892){:target="_blank" rel="noopener noreferrer"}
 
 ??? summary "Docker"
 
@@ -700,7 +700,7 @@ Then keep reading.
     A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
     this makes it easy to maintain and compare paths.
 
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59){:target="_blank"} to your `/docker/` location so you got your important stuff together.
+    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59){:target="_blank" rel="noopener noreferrer"} to your `/docker/` location so you got your important stuff together.
 
     CD to your `/docker` folder and use the following command to download it.
 
@@ -730,7 +730,7 @@ Then keep reading.
     sudo docker-compose up -d
     ```
 
-    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank"} and provide the pastebin link with the error, have patience because of timezone differences.
+    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
 
     Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
 
@@ -741,7 +741,7 @@ Then keep reading.
 
         I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
 
-        [docker-compose-collection](https://gist.github.com/TRaSH-/68cd26deb5e6269e5eb8114f93b429ab){:target="_blank"}
+        [docker-compose-collection](https://gist.github.com/TRaSH-/68cd26deb5e6269e5eb8114f93b429ab){:target="_blank" rel="noopener noreferrer"}
 
 ??? summary "Bare Metal (Native)"
 
@@ -984,4 +984,4 @@ Then keep reading.
 
 ------
 
-Big Thnx to [fryfrog](https://github.com/fryfrog){:target="_blank"} for his [Docker Guide](https://wiki.servarr.com/Docker_Guide){:target="_blank"} that I used as basis for this guide.
+Big Thnx to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/Docker_Guide){:target="_blank" rel="noopener noreferrer"} that I used as basis for this guide.

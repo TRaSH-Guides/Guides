@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
-Often on the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" :rel="noopener noreferrer"} people ask what's the recommended/best way to
+Often on the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" rel="noopener noreferrer"} people ask what's the recommended/best way to
 name your files.  First off it's personal preference, but it's often recommended
 to add non-recoverable info.
 

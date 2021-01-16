@@ -15,7 +15,7 @@ Here you will see a basic setup for Discord Notifier.
 
 ## Login
 
-First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank"} site, if you don't have an account yet, click the link to signup.
+First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site, if you don't have an account yet, click the link to signup.
 
  ![dn-login](images/dn-login.png)
 
@@ -181,11 +181,11 @@ This section exist of 2 parts.
 First we're going to download the emoji's and you can do that in 2 ways.
 
 1. 1 at a time - Right click -> Save As... - for these emoji images to some location on your computer.
-1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank"} to download a zip of all the current reaction images.
+1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank" rel="noopener noreferrer"} to download a zip of all the current reaction images.
 
 For this example, we will be using Pack Download.  You'll need download the file and then unpack it somewhere on your computer.  After which, you can then add the emoji's to your Discord Server easily.
 
-How to add your own Emoji's => [LINK](https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis){:target="_blank"}
+How to add your own Emoji's => [LINK](https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis){:target="_blank" rel="noopener noreferrer"}
 
 After you've added them to your Discord Server it's time to get the ID's from your emoji's, to do this go in to one of your channels and type:
 
@@ -397,4 +397,4 @@ On the bottom of all the instruction you will now have the ability to test your 
  ![dn-test-icons-bar](images/dn-test-icons-bar.png)
 
 Click on the icons to test your notifications.
-After going through this tutorial and you still aren't getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank"} for additional support.
+After going through this tutorial and you still aren't getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank" rel="noopener noreferrer"} for additional support.

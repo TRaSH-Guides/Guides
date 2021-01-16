@@ -154,7 +154,7 @@ Add this to your `Preferred (3)` with a score of [75]
 
     Example of a naming scheme for series:
 
-    Can be found [HERE](/Sonarr/V3/Sonarr-recommended-naming-scheme/){:target="_blank"}
+    Can be found [HERE](/Sonarr/V3/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
 
 ??? success "example"
 
@@ -357,7 +357,7 @@ Add this for example as [15]
     ![!rp-release-profile-block-season-su](images/rp-release-profile-block-season-su.png)
 
     !!! note
-        Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
+        Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
 
 ------
 

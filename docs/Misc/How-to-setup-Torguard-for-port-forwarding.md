@@ -3,18 +3,18 @@
 !!! note
     These settings are a recommendation if you want to choose other settings be my guest.
 
-    If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank"} and use one of the following codes:
+    If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"} and use one of the following codes:
 
     * `TGLIFE`: Get 50% Off for Life for Anonymous Proxy, Anonymous VPN, Anonymous Webmail.
     * `TGLIFE-STREAMING`: Get 50% Off for Life Anonymous Proxy, Anonymous VPN, Streaming Bundle.
     * `TGLIFE-PRO`: Get 50% Off for Life for Anonymous VPN, Streaming Bundle, Anonymous VPN Pro.
 
-    [![torguard-FreeTrial-270x90](images/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank"}
+    [![torguard-FreeTrial-270x90](images/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
 ------
 
 ## Create a user account
 
-Go to [My Account > Services > My Service Credentials](https://torguard.net/clientarea.php?action=changepw){:target="_blank"}.
+Go to [My Account > Services > My Service Credentials](https://torguard.net/clientarea.php?action=changepw){:target="_blank" rel="noopener noreferrer"}.
 First we're going to create a user account for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
 This account will be used for authentication with your VPN Torrent client.
 
@@ -24,7 +24,7 @@ Create a new username and choose a secure password or create a random username a
 
 ## How to get the IP of your VPN server
 
-Go to [My Account > Server > Global VPN Network](https://torguard.net/network/){:target="_blank"}
+Go to [My Account > Server > Global VPN Network](https://torguard.net/network/){:target="_blank" rel="noopener noreferrer"}
 
 Then we're going to select which server we're going to use,
 
@@ -42,7 +42,7 @@ Remember that for later use.
 
 ## How to set Port forwarding
 
-Go to [My Account > Services > My Services](https://torguard.net/clientarea.php?action=products){:target="_blank"}.
+Go to [My Account > Services > My Services](https://torguard.net/clientarea.php?action=products){:target="_blank" rel="noopener noreferrer"}.
 
 ![request port forward](images/req_port_fwd.png)
 
@@ -69,7 +69,7 @@ You will also receive a e-mail with the ports you forwarded.
 
 ## How to create the .ovpn file
 
-Go to [My Account > Tools > OpenVPN Config Generator](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="_blank"}.
+Go to [My Account > Tools > OpenVPN Config Generator](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="_blank" rel="noopener noreferrer"}.
 
 ![info](images/info.png)
 

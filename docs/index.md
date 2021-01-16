@@ -1,11 +1,11 @@
 # TRaSH-Guides
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank"}
-[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-/Guides?color=4051B5&label=Last%20Update&style=flat-square)](https://github.com/TRaSH-/Guides/commits/master){:target="_blank"}
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TRaSH-/Guides/Publish%20docs%20via%20GitHub%20Pages?color=4051B5&label=GitHub&style=flat-square)](https://github.com/TRaSH-/Guides/actions){:target="_blank"}
-[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/graphs/contributors){:target="_blank"}
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/pulls){:target="_blank"}
-[![GitHub issues](https://img.shields.io/github/issues/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/issues){:target="_blank"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-/Guides?color=4051B5&label=Last%20Update&style=flat-square)](https://github.com/TRaSH-/Guides/commits/master){:target="_blank" rel="noopener noreferrer"}
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TRaSH-/Guides/Publish%20docs%20via%20GitHub%20Pages?color=4051B5&label=GitHub&style=flat-square)](https://github.com/TRaSH-/Guides/actions){:target="_blank" rel="noopener noreferrer"}
+[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/pulls){:target="_blank" rel="noopener noreferrer"}
+[![GitHub issues](https://img.shields.io/github/issues/TRaSH-/Guides?color=4051B5&style=flat-square)](https://github.com/TRaSH-/Guides/issues){:target="_blank" rel="noopener noreferrer"}
 
 *TRaSH Guides, Guides that aren't trash.*
 
@@ -23,9 +23,9 @@ The guides I make I try to make them as easy as possible for everyone to underst
 
 ## Support
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-If you have questions, suggestions, requests or want to contribute, Click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank"} to open a issue on GitHub.
+If you have questions, suggestions, requests or want to contribute, Click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open a issue on GitHub.
 Feel free to create a PR if you want to.
 
 ------
@@ -47,25 +47,25 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     Buy me a coffee (paypal with subscription/membership option and Sponsor role on discord)
 
-    <a href="https://www.buymeacoffee.com/TRaSH" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+    <a href="https://www.buymeacoffee.com/TRaSH" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
     Paypal In $ (Dollars):
 
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank"}
+    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank" rel="noopener noreferrer"}
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-US.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-US.png){:target="_blank" rel="noopener noreferrer"}
 
     Paypal In € (Euro's):
 
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank"}
+    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank" rel="noopener noreferrer"}
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-EU.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-EU.png){:target="_blank" rel="noopener noreferrer"}
 
     Crypto:
 
     BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP
 
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-BTC.png){:target="_blank"}
+    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-BTC.png){:target="_blank" rel="noopener noreferrer"}
 
     Other Options:
 
@@ -73,7 +73,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
-- [Roxedus](https://github.com/Roxedus){:target="_blank"} for helping me with the transfer/convert of my github guides to mkdocs and make everything look great.
-- [rg9400](https://github.com/rg9400){:target="_blank"} for the providing most of the Radarr v3 Custom Format Collection.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/convert of my github guides to mkdocs and make everything look great.
+- [rg9400](https://github.com/rg9400){:target="_blank" rel="noopener noreferrer"} for the providing most of the Radarr v3 Custom Format Collection.
 - Everyone who contributed to this project in anyway possible.

@@ -2,7 +2,7 @@
 
 Here I will try to collect a collection of the most needed and commonly used Custom Formats.
 These have been collected from either discussions on discord or that I created with help from others.
-Special thanks to [rg9400](https://github.com/rg9400){:target="_blank"}, [bakerboy448](https://github.com/bakerboy448){:target="_blank"} and Team Radarr.
+Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
 
 !!! warning "Important"
     Keep in mind Custom Formats are made to fine tune your Quality Profile
@@ -1230,7 +1230,7 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
 
 ### AAC
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank"}
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
 
 Advanced Audio Coding
 
@@ -1418,7 +1418,7 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 
 ### Opus
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank"}
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
 
 Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
 
@@ -1976,7 +1976,7 @@ Custom Format for Single Layer Dolby Vision releases.
 
 ### HDR
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank"}
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
 
 High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
 
@@ -2134,7 +2134,7 @@ A hybrid release means any combination of sources (video + audio) and not a dire
 
 ### Remaster
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank"}
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
 
 For the software term, see Software remastering.
 Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
@@ -2843,7 +2843,7 @@ Collection of Streaming Services
 
 ### x264
 
-x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank"}.
+x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
 If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p
 
@@ -2881,7 +2881,7 @@ If you want maximum compatibility and have much better direct play support then 
 
 ### x265
 
-x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank"}.
+x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
 !!! quote
     x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.

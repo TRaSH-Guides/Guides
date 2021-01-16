@@ -20,7 +20,7 @@ This basic example is based on the use of docker images
 
 ## PATHS
 
-[![paths](images/paths.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/paths.png){:target="_blank"}
+![!paths](images/paths.png)
 
 I will only explain the so called most important paths.
 
@@ -32,11 +32,11 @@ I will only explain the so called most important paths.
 | `NzbDir`    | Directory for incoming nzb-files.                                                      |
 | `QueueDir`  | This directory is used to save download queue, history, information statistics, etc.   |
 | `ScriptDir` | Directory with post-processing and other scripts.                                      |
-| `LogFile`   | Where your logfiles will be stored (Please create a log directory in your config) |
+| `LogFile`   | Where your log files will be stored (Please create a log directory in your config) |
 
 ## NEWS-SERVERS
 
-[![newsservers](images/newsservers.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/newsservers.png){:target="_blank"}
+![!newsservers](images/newsservers.png)
 
 | Name           | Description                                                                            |
 |:---            |:---                                                                                    |
@@ -46,13 +46,13 @@ I will only explain the so called most important paths.
 | `Host`         | Host name of news server.                                                              |
 | `Port`         | Port to connect to.                                                                    |
 | `Password`     | Password to use for authentication.                                                    |
-| `Encryption`   | Encrypted server connection (TLS/SSL). (prefered to use this)                   |
+| `Encryption`   | Encrypted server connection (TLS/SSL). (preferred to use this)                   |
 | `Connections`  | Use the lowest possible amount of connections +1 to gain your max download speed.      |
 | `Retention`    | How long the articles are stored on the news server.                                   |
 
 ## CATEGORIES
 
-[![categories](images/categories.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/categories.png){:target="_blank"}
+![!categories](images/categories.png)
 
 | Name          | Description                                                                            |
 |:---           |:---                                                                                    |
@@ -63,35 +63,35 @@ I will only explain the so called most important paths.
 
 ## INCOMING NZBS
 
-[![incoming](images/incoming.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/incoming.png){:target="_blank"}
+![!incoming](images/incoming.png)
 
 !!! warning
     `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
 
-[![queue](images/queue.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/queue.png){:target="_blank"}
+![!queue](images/queue.png)
 
 !!! warning
     `WriteBuffer`: If you're low on memory don't set this to high.
 
 ## LOGGING
 
-[![logging](images/logging.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/logging.png){:target="_blank"}
+![!logging](images/logging.png)
 
 ## CHECK AND REPAIR
 
-[![checkAndRepair](images/checkAndRepair.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/checkAndRepair.png){:target="_blank"}
+![!checkAndRepair](images/checkAndRepair.png)
 
 ## UNPACK
 
-[![unpack](images/unpack.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/unpack.png){:target="_blank"}
+![!unpack](images/unpack.png)
 
 !!! warning
     `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
 
 ## EXTENSION SCRIPTS
 
-[![extScripts](images/extScripts.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/NZBGet/images/extScripts.png){:target="_blank"}
+![!extScripts](images/extScripts.png)
 
 Depending if you're using some NZBGet script here you can change the order or when it should be used

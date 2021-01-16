@@ -1,6 +1,6 @@
 # WtFnZb-Renamer
 
->Title:         [WtFnZb-Renamer.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/WtFnZb-Renamer/WtFnZb-Renamer.py){:target="_blank"}| Author(s):     WtFnZb | URL:           ??
+>Title:         [WtFnZb-Renamer.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/WtFnZb-Renamer/WtFnZb-Renamer.py){:target="_blank" rel="noopener noreferrer"}| Author(s):     WtFnZb | URL:           ??
 
 ## Renames hashed media files to match the source NZB
 

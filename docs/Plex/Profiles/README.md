@@ -21,5 +21,5 @@ Example paths:
 
 | Device                                                       | Description                    |
 | :----------------------------------------------------------- | :----------------------------- |
-| [Android-SHIELD](\Plex\Profiles\Android-SHIELD\Android-SHIELD Android TV.xml){:target="_blank"} | Profile for the Android-SHIELD |
-| [Chromecast](\Plex\Profiles\Chromecast\Chromecast.xml){:target="_blank"} | Profile for the Chromecast     |
+| [Android-SHIELD](\Plex\Profiles\Android-SHIELD\Android-SHIELD Android TV.xml){:target="_blank" rel="noopener noreferrer"} | Profile for the Android-SHIELD |
+| [Chromecast](\Plex\Profiles\Chromecast\Chromecast.xml){:target="_blank" rel="noopener noreferrer"} | Profile for the Chromecast     |

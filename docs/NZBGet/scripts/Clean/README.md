@@ -1,6 +1,6 @@
 # Clean
 
->Title:         [Clean.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/Clean/Clean.py){:target="_blank"} | Author(s):     ???
+>Title:         [Clean.py](https://raw.githubusercontent.com/TRaSH-/Tutorials-FAQ/master/docs/NZBGet/scripts/Clean/Clean.py){:target="_blank" rel="noopener noreferrer"} | Author(s):     ???
 
 ## Description: Clean NZB name
 

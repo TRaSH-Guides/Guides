@@ -14,7 +14,7 @@ Here I will try to explain how you can import Custom Formats for Radarr v3 and m
 
 ## How to import a JSON Custom Format
 
-In this example i will use the [BR-DISK](Collection-of-Custom-Formats-for-RadarrV3.md#br-disk){:target="_blank"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr, Plex being both don't support it.
+In this example i will use the [BR-DISK](Collection-of-Custom-Formats-for-RadarrV3.md#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr, Plex being both don't support it.
 
 `Settings` => `Custom Formats`
 
@@ -26,7 +26,7 @@ Followed by the `Import` in the lower left.
 
 ![cf-import](images/cf-import.png)
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](Collection-of-Custom-Formats-for-RadarrV3.md){:target="_blank"} followed by the `Import` button (2).
+In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](Collection-of-Custom-Formats-for-RadarrV3.md){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
 
 What you see in the red box is a example txt that you don't and can't remove!
 
@@ -125,7 +125,7 @@ So it's important to keep this in mind when setting up your scores.
 
 If you prefer HQ Encodes (Bluray-720/1080/2160p)
 
-I suggest to first follow the [Quality Settings (File Size)](Radarr-Quality-Settings-File-Size.md){:target="_blank"}
+I suggest to first follow the [Quality Settings (File Size)](Radarr-Quality-Settings-File-Size.md){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading :bangbang:
 
 First I suggest to add the stuff you don't want with a minus score.
@@ -163,4 +163,4 @@ The following workflow will be applied:
 
 ## THNX
 
-A big thnx to [rg9400](https://github.com/rg9400){:target="_blank"} for providing me with info needed to create the Tips section.
+A big thnx to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.
