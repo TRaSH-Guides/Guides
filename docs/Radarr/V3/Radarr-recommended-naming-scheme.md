@@ -1,10 +1,14 @@
 # Recommended naming scheme
 
-Often on Radarr discord people asking what's the recommended/best way to naming your files.
-First of it's personal preference, but the support staff often recommend to add also non recoverable info.
-Why ?
+Often on the [Radarr Discord](https://discord.gg/u3x3Kp8){:target="_blank" :rel="noopener noreferrer"} people ask what's the recommended/best way to
+name your files.  First off it's personal preference, but it's often recommended
+to add non-recoverable info.
 
-if you even need to do a re-install, re-import for what ever reason in Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so it gets imported correctly and not been matched as HDTV or WEB-DL etc.
+Why?
+
+If, for what ever reason, you ever need to do a re-install or re-import in
+Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
+it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
 
@@ -34,7 +38,7 @@ RESULT:
 
 ### Minimal details + the irreplaceable data
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`
+This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" :rel="noopener noreferrer"} that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`
 
 ```bash
 {Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]{[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
@@ -45,7 +49,7 @@ RESULT:
 `The Movie Title (2010) [imdb-tt0066921][Bluray-1080p][DTS 5.1][x264]-EVOLVE`
 
 !!! note
-    The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517), though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
+    The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" :rel="noopener noreferrer"}, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
 
 ------
 
@@ -101,4 +105,4 @@ RESULT:
 
 THNX:
 
-A big thnx to [fryfrog](https://github.com/fryfrog){:target="_blank"} and [rg9400](https://github.com/rg9400){:target="_blank"} for the suggestions.
+A big thnx to [fryfrog](https://github.com/fryfrog) and [rg9400](https://github.com/rg9400) for the suggestions.

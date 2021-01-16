@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
-Often on the [Sonarr Discord][sd] people ask what's the recommended/best way to
+Often on the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" :rel="noopener noreferrer"} people ask what's the recommended/best way to
 name your files.  First off it's personal preference, but it's often recommended
 to add non-recoverable info.
 
@@ -8,7 +8,7 @@ Why?
 
 If, for what ever reason, you ever need to do a re-install or re-import in
 Sonarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
-it gets imported correctly and isn't incorrectly matched.
+it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
 
@@ -165,5 +165,3 @@ The filename can be Obscured where the Release naming isn't especially when you 
 THNX:
 
 A big thnx to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
-
-[sd]: https://discord.gg/M6BvZn5
