@@ -45,10 +45,6 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
     ### Buy me a coffee
 
-    Buy me a coffee (paypal with subscription/membership option and Sponsor role on discord)
-
-    <a href="https://www.buymeacoffee.com/TRaSH" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
     Paypal In $ (Dollars):
 
     [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank" rel="noopener noreferrer"}
@@ -60,6 +56,10 @@ Everything here you use on your own risk I won't be hold responsible if somethin
     [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank" rel="noopener noreferrer"}
 
     ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-EU.png){:target="_blank" rel="noopener noreferrer"}
+
+    Buy me a coffee (paypal with subscription/membership option and Sponsor role on discord)
+
+    <a href="https://www.buymeacoffee.com/TRaSH" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
     Crypto:
 
