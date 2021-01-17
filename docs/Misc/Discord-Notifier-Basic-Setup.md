@@ -7,15 +7,13 @@
 }
 </style>
 
-# Discord Notifier Basic Setup
-
-Here you will see a basic setup for Discord Notifier.
+# Discord Notifier (Notifiarr) Basic Setup
 
 ------
 
 ## Login
 
-First we're going to visit the [Discord Notifier](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site, if you don't have an account yet, click the link to signup.
+First we're going to visit the [Notifiarr](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site, if you don't have an account yet, click the link to signup.
 
  ![dn-login](images/dn-login.png)
 
@@ -24,7 +22,7 @@ First we're going to visit the [Discord Notifier](https://discordnotifier.com/in
 1. Login to the site and setup.
 1. Password reset if you forgot your password.
 1. Signup if you don't have an account.
-1. Link to Discord Notifier Discord support channel.
+1. Link to Notifiarr Discord support channel.
 
 ------
 
@@ -34,22 +32,21 @@ After you have logged in, you will be redirected to your profile screen.
 
  ![dn-profile](images/dn-profile.png)
 
-1. Select your Country.
-1. Select your Timezone.
+1. Select your `Country`.
+1. Select your `Timezone`.
 1. Click on `Generate API Key` (This needs to be done).
-1. Change your Time Format to your liking.
+1. Select your `Notification Language`.
+1. Change your `Time Format` to your liking.
 1. Don't forget to Save your Changes.
 
 ------
 
-## Notification Setup
+## Integration Setup
 
-Here, you can setup the following items:
+- Enable the integrations you want to use
+- Setup your discord server (required), invite the bot (required) and reactions (optional).
 
-- Notifications Settings => Setup which notifications you want to receive.
-- Discord Settings => Setup your discord channels and your reactions and invite the bot into your channel.
-
-### Notification Settings
+### Integration Settings
 
 ![dn-manage-integration-open](images/dn-manage-integration-open.png)
 
@@ -65,15 +62,19 @@ Setup which notifications you want to to receive from each option.
 
  ![dn-notifcation-settings-radarr](images/dn-notifcation-settings-radarr.png)
 
-1. Click on the cog (settings) icon to configure what will be in your notification.
+1. Cog wheel, this opens the integration settings
+1. External link, this opens the website for the integration
+1. WIKI link, this opens any extra wiki information available for the integration
+1. Trigger, this enables/disables a specific trigger for the integration
+1. Channels, this sets the channel in your server to post to for the integration
 
-??? example "Notification Settings Configuration"
+??? example "Integration Settings (Cog wheel))"
 
     #### Notification Settings Configuration
 
     ![dn-integration-settings](images/dn-integration-settings.png)
 
-    1. [Instructions how to integration the notifications](#integrations)
+    1. [Instructions how to setup the integration](#integrations)
     1. Enable/Disable notification trigger
     1. Change color bar for notification trigger
     1. Expand trigger to enable/disable message fields
@@ -84,13 +85,13 @@ Setup which notifications you want to to receive from each option.
 ### Discord Settings
 
 <div class="indent-L1 indent-B1">
-Setup your discord channels and your reactions and invite the bot into your channel.
+Setup your discord server, shared channels, reactions and invite the bot into your server.
 </div>
 
 #### Create the channels
 
 <div class="indent-L1 indent-B1">
-First thing to do is create a few channels where you receive your notifications.
+First thing to do is create a few channels (in your discord server) where you receive your notifications.
 
 !!! note:
     I won't be explaining how to setup a discord channel, that's up to you but google has plenty of references.
@@ -108,25 +109,22 @@ You can do it all from one channel or separate the notifications (granular) for 
 
 After you create the needed channels, it's time to add them to the `Setup the channels`
 
-First we need to get the channel ID's from your server/channel
+First we need to get the server ID
 
 Open your User Settings -> Appearance -> Enable Developer Mode.
 
  ![dn-discord-dev-mode](images/dn-discord-dev-mode.png)
 
- Right click on the Discord text channel you want the bot to interact  with and press "Copy ID"
-
- ![dn-discord-copyid](images/dn-discord-copyid.png)
-
-Paste the channel ID in the corresponding boxes.
+ Right click on the server name at the top of your discord and press "Copy ID"
 
  ![dn-channel-paste](images/dn-channel-paste.png)
 
-1. Add the channel ID for the `#media` channel.
-1. Add the channel ID for the `#errors` channel.
-1. Add the channel ID for the `#plex` channel.
+1. Add your server ID
+1. Select the channel ID for the `#media` channel.
 1. Use this option if you want to use separate channels for the notifications (see below).
-1. Use this option if you want to use separate channels for the notifications.
+1. Select the channel ID for the `#errors` channel.
+1. Select the channel ID for the `#plex` channel.
+1. Use this option if you want to use separate channels for the notifications (see below).
 
 ??? example "Granular arr setup"
 
