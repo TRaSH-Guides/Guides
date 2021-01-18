@@ -1,3 +1,3 @@
 # Thnx for the Coffee
 
-![thnx-for-the-coffee.jpg](images/thnx-for-the-coffee.jpg)
+![thnx-for-the-coffee.jpg](img/thnx-for-the-coffee.jpg)
