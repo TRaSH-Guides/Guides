@@ -58,7 +58,6 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
-        thnx.md: https://trash-guides.info/thnx.md
 #  - redirects:
 #      redirect_maps:
 #        'Collection-of-Custom-Formats-for-RadarrV3.md': 'Radarr-collection-of-custom-formats.md'
