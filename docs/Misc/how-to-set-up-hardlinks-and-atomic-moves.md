@@ -473,10 +473,11 @@ Then keep reading.
 
     Your appdata will be stored in `/volume1/docker/appdata/{appname}`
     These `{appname}` sub folders you need to create your self. (*This is a limitation of the Synology*)
+    We're going to do this in Putty or a similar program.
 
     ```bash
-    sudo mkdir /docker/appdata
-    cd /docker/appdata
+    sudo mkdir /volume1/docker/appdata
+    cd /volume1/docker/appdata
     sudo mkdir radarr sonarr bazarr nzbget qbittorrent plex tautulli
     ```
 
