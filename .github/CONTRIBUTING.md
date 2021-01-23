@@ -8,9 +8,9 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 ## Guidelines
 
 - Make sure you're editing the latest version.
-- If you propose changes make sure it doens't break anything else in the Guides.
+- If you propose changes make sure it doesn't break anything else in the Guides.
 - Make sure that after the changes you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
 
 ## Recommendations
 
-- use [VSCode](https://code.visualstudio.com/) for editing it makes sure the ident is correct and also shows [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
+- use [VSCode](https://code.visualstudio.com/) for editing with the following extension  [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlintd)
