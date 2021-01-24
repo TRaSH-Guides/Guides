@@ -527,6 +527,21 @@ Then keep reading.
     sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
     ```
 
+    !!! note
+        Synology doesn't always pick up the `$USER` correctly, you can test it if the right user is been used with the following command
+
+        ```bash
+        ls -al /volume1/docker
+        ```
+
+        and user should be the same user you used for your PUID !
+
+        If it isn't the same then you need to replace `$USER` with the user what you used for your PUID, in the following example I used admin like we did in the start of the guide.
+
+        ```bash
+        sudo chown -R admin:users /volume1/data /volume1/docker
+        ```
+
     ##### Run the Docker Compose
 
     !!! important
