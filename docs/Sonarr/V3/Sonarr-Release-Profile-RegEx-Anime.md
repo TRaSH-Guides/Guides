@@ -190,7 +190,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 ```
 
 ??? success "example"
-    ![!rpa-must-not-contain.png](/images/rpa-must-not-contain.png)
+    ![!rpa-must-not-contain.png](images/rpa-must-not-contain.png)
 
 #### Preferred
 
