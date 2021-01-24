@@ -199,11 +199,11 @@ Add this to your Preferred with a score of [460]
 Dual-Audio
 
 ```bash
-/(ANThELIa\|\bZR\b\|kametsu\|\bctr\b\|\bscy\b\|deanzel\|\bshir\b)/i
+/(ANThELIa|\bZR\b|kametsu|\bctr\b|\bscy\b|deanzel|\bshir\b)/i
 ```
 
 ```bash
-/(\bMK\b\|lostyears\|exiled-destiny\|E-D\|BluDragon\|Kawairemux)/i
+/(\bMK\b|lostyears|exiled-destiny|E-D|BluDragon|Kawairemux)/i
 ```
 
 ---
@@ -213,7 +213,7 @@ Add this to your Preferred with a score of [440]
 Generic Dual-Audio
 
 ```bash
-/(iahd\|anihls\|mkvultra\|\bdhd\b\|teneighty\|redblade\|haiku\|\bdhd\b)/i
+/(iahd|anihls|mkvultra|\bdhd\b|teneighty|redblade|haiku|\bdhd\b)/i
 ```
 
 ---
@@ -253,7 +253,7 @@ Add this to your Preferred with a score of [360]
 Dual-Audio - xPearse has some raws.
 
 ```bash
-/(\[GHOST\]\|\[xPearse\]\|\[Moodkiller\])/i
+/(\[GHOST\]|\[xPearse\]|\[Moodkiller\])/i
 ```
 
 ---
@@ -263,7 +263,7 @@ Add this to your Preferred with a score of [340]
 Dual-Audio - NPC is mostly older.
 
 ```bash
-/(\[NPC\]\|\[A-L\])/i
+/(\[NPC\]|\[A-L\])/i
 ```
 
 ---
@@ -293,7 +293,7 @@ Add this to your Preferred with a score of [280]
 Subs mainly but has Dual-Audio
 
 ```bash
-/(\[Anime Time\]\|\[Mysteria\])/i
+/(\[Anime Time\]|\[Mysteria\])/i
 ```
 
 ---
@@ -303,7 +303,7 @@ Add this to your Preferred with a score of [260]
 FanSubs, occasional dual audio for ASW/Akihito
 
 ```bash
-/(\[Asenshi\]\|\[AkihitoSubs\]\|\[ASW\])/i
+/(\[Asenshi\]|\[AkihitoSubs\]|\[ASW\])/i
 ```
 
 ---
@@ -313,7 +313,7 @@ Add this to your Preferred with a score of [240]
 Subs, Replaces HorribleSubs below for newer content
 
 ```bash
-/(\[SubsPlease\]\|\[Hi10\])/i
+/(\[SubsPlease\]|\[Hi10\])/i
 ```
 
 ---
@@ -323,7 +323,7 @@ Add this to your Preferred with a score of [220]
 Subs (Now defunct but stil good SubsPlease has taken the mantle.)
 
 ```bash
-/\b(horriblesubs\|sallysubs)\b/i
+/\b(horriblesubs|sallysubs)\b/i
 ```
 
 ---
@@ -333,7 +333,7 @@ Add this to your Preferred with a score of [200]
 Anime RG has Dual Audio and multiple audio such as German, French, Italian, Spanish, Arabic, Portuguese. | Judas: Similar to Erai-raws with multi subs. | Subs
 
 ```bash
-/(\[AnimeRG\]\|\[Judas\]\|Commie\|GJM)/i
+/(\[AnimeRG\]|\[Judas\]|Commie|GJM)/i
 ```
 
 ---
@@ -343,7 +343,7 @@ Add this to your Preferred with a score of [180]
 Subs, FanSubs
 
 ```bash
-/(\[SNSbu\]\|\[DB\]\|\[Coalgirls\]\|FFF\|FFFansubs\|BluRayDesuYo)/i
+/(\[SNSbu\]|\[DB\]|\[Coalgirls\]|FFF|FFFansubs|BluRayDesuYo)/i
 ```
 
 ---
@@ -363,7 +363,7 @@ Add this to your Preferred with a score of [140]
 FanSubs
 
 ```bash
-/(\[Licca\]\|\[Soldado\])/i
+/(\[Licca\]|\[Soldado\])/i
 ```
 
 ---
@@ -383,7 +383,7 @@ Add this to your Preferred with a score of [100]
 FanSubs
 
 ```bash
-/(\[Orphan\]\|\[Yabai\])/i
+/(\[Orphan\]|\[Yabai\])/i
 ```
 
 ---
@@ -413,7 +413,7 @@ Add this to your Preferred with a score of [40]
 FanSubs
 
 ```bash
-/(\[NewbSubs\]\|\[Nii-sama\]\|\[Nii-sama\])/i
+/(\[NewbSubs\]|\[Nii-sama\]|\[Nii-sama\])/i
 ```
 
 ---
