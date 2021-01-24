@@ -178,7 +178,7 @@ Add this to your Preferred with a score of [1000]/[-1000] if you want the uncens
 The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go.
 
 ```bash
-/(CuaP|EMBER|PnPSubs|ICEBLUE|URANiME|SLAX)/i,
+/(CuaP|EMBER|PnPSubs|ICEBLUE|URANiME|SLAX|Golumpa|KaiDubs|PuyaSubs|Raws-Maji)/i,
 /\b(Beatrice|ohys|Kawaiika|neko|LowPower)\b(?=[ ._-]?(raws)\b)/i,
 /(?=(english|funi)).*(dub|dubbed)|\b(dub|dubbed)\b/i
 ```
