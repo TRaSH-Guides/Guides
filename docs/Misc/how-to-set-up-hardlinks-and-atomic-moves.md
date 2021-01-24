@@ -473,10 +473,11 @@ Then keep reading.
 
     Your appdata will be stored in `/volume1/docker/appdata/{appname}`
     These `{appname}` sub folders you need to create your self. (*This is a limitation of the Synology*)
+    We're going to do this in Putty or a similar program.
 
     ```bash
-    sudo mkdir /docker/appdata
-    cd /docker/appdata
+    sudo mkdir /volume1/docker/appdata
+    cd /volume1/docker/appdata
     sudo mkdir radarr sonarr bazarr nzbget qbittorrent plex tautulli
     ```
 
@@ -525,6 +526,21 @@ Then keep reading.
     sudo chown -R $USER:users /volume1/data /volume1/docker
     sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
     ```
+
+    !!! note
+        Synology doesn't always pick up the `$USER` correctly, you can test it if the right user is been used with the following command
+
+        ```bash
+        ls -al /volume1/docker
+        ```
+
+        and user should be the same user you used for your PUID !
+
+        If it isn't the same then you need to replace `$USER` with the user what you used for your PUID, in the following example I used admin like we did in the start of the guide.
+
+        ```bash
+        sudo chown -R admin:users /volume1/data /volume1/docker
+        ```
 
     ##### Run the Docker Compose
 

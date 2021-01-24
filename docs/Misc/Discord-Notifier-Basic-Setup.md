@@ -145,8 +145,8 @@ You will get a screen that looks like the following screenshot.
 1. Select the server the bot should join.
 1. Click on `Authorize` to approve.
 
-!!! note:
-     You have to be an administrator of the Discord channel to invite bots. Make sure the bot has permissions to post.
+!!! note
+    You have to be an administrator of the Discord channel to invite bots. Make sure the bot has permissions to post.
 
 ??? summary "Bot Setup Help"
     Right click on your server > Server Settings > Roles
