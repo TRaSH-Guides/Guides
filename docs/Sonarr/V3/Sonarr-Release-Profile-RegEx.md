@@ -299,6 +299,11 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 ### Optional preferred preferences
 
+!!! note
+    These options are optional and only needed if you got a certain use case for it,
+
+    Or when you're on the top indexers/trackers !!!
+
 #### Optional (use these only if you dislike renamed and retagged releases)
 
 Add this for example as [-25]
