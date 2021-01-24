@@ -5,7 +5,7 @@
 
     It's recommended to run 2 Sonarr's 1 for Anime and 1 for normal tv shows, or you can make use of tags.
 
-    Being that release profiles are global.
+    Being that release profiles are global without the use of a tag.
 
 ## Dual-Audio Regex
 
@@ -143,6 +143,8 @@ Add this to your Preferred with a score of [500]
 /(dual[ ._-]?audio)/i
 ```
 
+---
+
 #### Multi-Audio
 
 Add this to your Preferred with a score of [400]
@@ -151,6 +153,8 @@ Add this to your Preferred with a score of [400]
 /(multi[ ._-]?audio)/i
 ```
 
+---
+
 #### Optional (uncensored)
 
 Add this to your Preferred with a score of [1000]/[-1000] if you want the uncensored version of anime. If you would like it to be priority then set to 1000. If you do not want uncensored set it to -1000.
@@ -158,6 +162,8 @@ Add this to your Preferred with a score of [1000]/[-1000] if you want the uncens
 ```bash
 /\b(uncensored)\b/i
 ```
+
+---
 
 !!! note
 
@@ -200,6 +206,8 @@ Dual-Audio
 /(\bMK\b\|lostyears\|exiled-destiny\|E-D\|BluDragon\|Kawairemux)/i
 ```
 
+---
+
 Add this to your Preferred with a score of [440]
 
 Generic Dual-Audio
@@ -207,6 +215,8 @@ Generic Dual-Audio
 ```bash
 /(iahd\|anihls\|mkvultra\|\bdhd\b\|teneighty\|redblade\|haiku\|\bdhd\b)/i
 ```
+
+---
 
 Add this to your Preferred with a score of [420]
 
@@ -216,6 +226,8 @@ Multi-Audio - Multi-Subs (Usually from Netflix or similar)
 /(\[DragsterPS\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [400]
 
 Dual-Audio - Mostly older content but has some newer stuff. Really good quality and searches different sources.
@@ -223,6 +235,8 @@ Dual-Audio - Mostly older content but has some newer stuff. Really good quality 
 ```bash
 /(\[Koten_Gars\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [380]
 
@@ -232,6 +246,8 @@ Dual-Audio - Mostly older and limited, but what he does have is amazing quality.
 /\b(Hark0n)\b/i
 ```
 
+---
+
 Add this to your Preferred with a score of [360]
 
 Dual-Audio - xPearse has some raws.
@@ -239,6 +255,8 @@ Dual-Audio - xPearse has some raws.
 ```bash
 /(\[GHOST\]\|\[xPearse\]\|\[Moodkiller\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [340]
 
@@ -248,6 +266,8 @@ Dual-Audio - NPC is mostly older.
 /(\[NPC\]\|\[A-L\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [320]
 
 Dual-Audio
@@ -255,6 +275,8 @@ Dual-Audio
 ```bash
 /(\[Cleo\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [300]
 
@@ -264,6 +286,8 @@ Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Port
 /\b(Erai-raws)\b/i
 ```
 
+---
+
 Add this to your Preferred with a score of [280]
 
 Subs mainly but has Dual-Audio
@@ -271,6 +295,8 @@ Subs mainly but has Dual-Audio
 ```bash
 /(\[Anime Time\]\|\[Mysteria\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [260]
 
@@ -280,6 +306,8 @@ FanSubs, occasional dual audio for ASW/Akihito
 /(\[Asenshi\]\|\[AkihitoSubs\]\|\[ASW\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [240]
 
 Subs, Replaces HorribleSubs below for newer content
@@ -287,6 +315,8 @@ Subs, Replaces HorribleSubs below for newer content
 ```bash
 /(\[SubsPlease\]\|\[Hi10\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [220]
 
@@ -296,6 +326,8 @@ Subs (Now defunct but stil good SubsPlease has taken the mantle.)
 /\b(horriblesubs\|sallysubs)\b/i
 ```
 
+---
+
 Add this to your Preferred with a score of [200]
 
 Anime RG has Dual Audio and multiple audio such as German, French, Italian, Spanish, Arabic, Portuguese. | Judas: Similar to Erai-raws with multi subs. | Subs
@@ -303,6 +335,8 @@ Anime RG has Dual Audio and multiple audio such as German, French, Italian, Span
 ```bash
 /(\[AnimeRG\]\|\[Judas\]\|Commie\|GJM)/i
 ```
+
+---
 
 Add this to your Preferred with a score of [180]
 
@@ -312,6 +346,8 @@ Subs, FanSubs
 /(\[SNSbu\]\|\[DB\]\|\[Coalgirls\]\|FFF\|FFFansubs\|BluRayDesuYo)/i
 ```
 
+---
+
 Add this to your Preferred with a score of [160]
 
 Little bit of Dual-Audio | Mainly Fansub
@@ -319,6 +355,8 @@ Little bit of Dual-Audio | Mainly Fansub
 ```bash
 /(\[CH\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [140]
 
@@ -328,6 +366,8 @@ FanSubs
 /(\[Licca\]\|\[Soldado\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [120]
 
 Subs
@@ -335,6 +375,8 @@ Subs
 ```bash
 /(\[SakuraCircle\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [100]
 
@@ -344,6 +386,8 @@ FanSubs
 /(\[Orphan\]\|\[Yabai\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [80]
 
 Subs
@@ -351,6 +395,8 @@ Subs
 ```bash
 /(\[kBaraka\])/i
 ```
+
+---
 
 Add this to your Preferred with a score of [60]
 
@@ -360,6 +406,8 @@ Take 10bit fan-subbed videos from other groups and release an 8bit hardsubbed ve
 /(\[DeadFish\])/i
 ```
 
+---
+
 Add this to your Preferred with a score of [40]
 
 FanSubs
@@ -367,6 +415,8 @@ FanSubs
 ```bash
 /(\[NewbSubs\]\|\[Nii-sama\]\|\[Nii-sama\])/i
 ```
+
+---
 
 ??? success "example"
     ![!rpa-release-profile-2.png](images/rpa-release-profile-2.png)
