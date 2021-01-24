@@ -75,13 +75,27 @@ Then you will get a popup screen that will look like this:
 
 The Number between the **[**brackets**]** are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
-## Setup
+## First Release Profile
+
+!!! important
+    We're going to make use of 2 separate release profiles.
 
 ### Release Sources (Streaming Service)
 
-!!! tip
+!!! note
 
-    It's recommended to add the Release Sources separate from the other release profiles.
+    Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
+
+    What it does:
+
+    When enabled the block with the [Release Source (Streaming Service)](#release-source-streaming-service) in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
+    Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.
+
+    Enabling the include in preferred words for AMZN and adding that to the file name fixes that.
+
+    Example of a naming scheme for series:
+
+    Can be found [HERE](/Sonarr/V3/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
 
 Add this to your `Preferred (3)` with a score of [100]
 
@@ -141,26 +155,16 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-!!! note
-
-    Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
-
-    What it does:
-
-    When enabled the block with the [Release Source (Streaming Service)](#release-source-streaming-service) in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
-    Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.
-
-    Enabling the include in preferred words for AMZN and adding that to the file name fixes that.
-
-    Example of a naming scheme for series:
-
-    Can be found [HERE](/Sonarr/V3/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
-
 ??? success "example"
 
     ![!rp-release-sources](images/rp-release-sources.png)
 
 ------
+
+## Second Release Profile
+
+!!! warning
+    DO NOT Check mark `Include Preferred when Renaming`
 
 ### Golden rule
 
