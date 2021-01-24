@@ -135,6 +135,10 @@ We need to add HDTV-1080p into the same group as WEB-DL and WEBRip 1080p so that
 
 ### First Release Profile
 
+!!! note
+
+    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
+
 #### Dual Audio
 
 Add this to your Preferred with a score of [500]
@@ -164,10 +168,6 @@ Add this to your Preferred with a score of [1000]/[-1000] if you want the uncens
 ```
 
 ---
-
-!!! note
-
-    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
 
 ??? success "example"
     ![!rpa-release-profile-1](images/rpa-release-profile-1.png)
