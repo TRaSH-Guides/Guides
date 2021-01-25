@@ -191,7 +191,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|SLAX)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
-/\bLowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
+/\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
 /(eng[ ._-]dub|english[ ._-]dub|funimation)/i,
 /(funi[ ._-]dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
 /(Golumpa)/i
