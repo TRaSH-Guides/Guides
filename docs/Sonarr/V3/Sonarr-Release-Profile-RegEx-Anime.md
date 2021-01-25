@@ -259,7 +259,7 @@ Add this to your Preferred with a score of [500]
 BluRay / Dual-Audio / Scene|P2P Groups
 
 ```bash
-/\bDHD\b|RedBlade|TENEIGHTY|WaLMaRT)/i
+/(\bDHD\b|RedBlade|TENEIGHTY|WaLMaRT)/i
 ```
 
 ---
@@ -377,15 +377,15 @@ Add this to your Preferred with a score of [10]-[20]-[30] in order.
 Adds version due to anime groups sometimes fixing issues with their releases.
 
 ```bash
-/\b(v2)\b/i
+/(v2)/i
 ```
 
 ```bash
-/\b(v3)\b/i
+/(v3)/i
 ```
 
 ```bash
-/\b(v4)\b/i
+/(v4)/i
 ```
 
 ---
