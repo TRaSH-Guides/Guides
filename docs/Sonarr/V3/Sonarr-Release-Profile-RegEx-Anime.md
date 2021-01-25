@@ -245,7 +245,7 @@ Add this to your Preferred with a score of [550]
 BluRay / Dual-Audio
 
 ```bash
-/(HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N)/i
+/(HAiKU|Exiled-Destiny|\bE-D\b|Koten_Gars|Hark0N)/i
 ```
 
 ```bash
