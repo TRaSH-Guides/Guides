@@ -183,10 +183,16 @@ Add this to your Preferred with a score of [1000]/[-1000] if you want the uncens
 
 The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go.
 
+!!! note
+
+    Golumpa and KaiDubs are dub only versions of Anime. If you want this then remove the last 2 lines in the next part.
+
 ```bash
-/(CuaP|EMBER|PnPSubs|ICEBLUE|URANiME|SLAX|Golumpa|KaiDubs|PuyaSubs|Raws-Maji)/i,
+/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|URANiME|SLAX)/i,
+/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|Scryous-raws|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko|LowPower)\b(?=[ ._-]?(raws)\b)/i,
-/(?=(english|funi)).*(dub|dubbed)|\b(dub|dubbed)\b/i
+/\b(english|funi)?[ ._-](dub|dubbed)|\b(dub|dubbed)/i,
+/(Golumpa|KaiDubs)/i
 ```
 
 ??? success "example"
@@ -194,86 +200,62 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 #### Preferred
 
-Add this to your Preferred with a score of [460]
+Add this to your Preferred with a score of [600]
 
-Dual-Audio
-
-```bash
-/(ANThELIa|\bZR\b|kametsu|\bctr\b|\bscy\b|deanzel|\bshir\b)/i
-```
+BluRay-Remux / Dual-Audio / 1st Tier
 
 ```bash
-/(\bMK\b|lostyears|exiled-destiny|E-D|BluDragon|Kawairemux)/i
+/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b|\bMK\b|LostYears|BluDragon|KAWAiREMUX)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [440]
+Add this to your Preferred with a score of [550]
 
-Generic Dual-Audio
+BluRay-Remux / Dual-Audio / 2nd Tier
 
 ```bash
-/(iahd|anihls|mkvultra|\bdhd\b|teneighty|redblade|haiku|\bdhd\b)/i
+/(iAHD|ANiHLS|MKVULTRA|ANThELIa)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [420]
+Add this to your Preferred with a score of [500]
 
-Multi-Audio - Multi-Subs (Usually from Netflix or similar)
+BluRay / Dual-Audio
 
 ```bash
-/(\[DragsterPS\])/i
+/(\bDHD\b|\bRB\b|HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N|\[GHOST\]|-GHOST|\[NPC\]|-NPC)/i
+```
+
+---
+
+Add this to your Preferred with a score of [450]
+
+WebSource / Dual|Multi-Audio
+
+```bash
+/\b(DragsterPS)\b/i
 ```
 
 ---
 
 Add this to your Preferred with a score of [400]
 
-Dual-Audio - Mostly older content but has some newer stuff. Really good quality and searches different sources.
+WebSource / Dual-Audio
 
 ```bash
-/(\[Koten_Gars\])/i
+/(xPearse|TENEIGHTY)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [380]
+Add this to your Preferred with a score of [350]
 
-Dual-Audio - Mostly older and limited, but what he does have is amazing quality.
-
-```bash
-/\b(Hark0n)\b/i
-```
-
----
-
-Add this to your Preferred with a score of [360]
-
-Dual-Audio - xPearse has some raws.
+DVD / Dual-Audio
 
 ```bash
-/(\[GHOST\]|\[xPearse\]|\[Moodkiller\])/i
-```
-
----
-
-Add this to your Preferred with a score of [340]
-
-Dual-Audio - NPC is mostly older.
-
-```bash
-/(\[NPC\]|\[A-L\])/i
-```
-
----
-
-Add this to your Preferred with a score of [320]
-
-Dual-Audio
-
-```bash
-/(\[Cleo\])/i
+/\b(A-L)\b/i
 ```
 
 ---
@@ -288,132 +270,84 @@ Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Port
 
 ---
 
-Add this to your Preferred with a score of [280]
+Add this to your Preferred with a score of [250]
 
-Subs mainly but has Dual-Audio
-
-```bash
-/(\[Anime Time\]|\[Mysteria\])/i
-```
-
----
-
-Add this to your Preferred with a score of [260]
-
-FanSubs, occasional dual audio for ASW/Akihito
+Subs
 
 ```bash
-/(\[Asenshi\]|\[AkihitoSubs\]|\[ASW\])/i
-```
-
----
-
-Add this to your Preferred with a score of [240]
-
-Subs, Replaces HorribleSubs below for newer content
-
-```bash
-/(\[SubsPlease\]|\[Hi10\])/i
-```
-
----
-
-Add this to your Preferred with a score of [220]
-
-Subs (Now defunct but stil good SubsPlease has taken the mantle.)
-
-```bash
-/\b(horriblesubs|sallysubs)\b/i
+/(HorribleSubs|SubsPlease|SallySubs)/i
 ```
 
 ---
 
 Add this to your Preferred with a score of [200]
 
-Anime RG has Dual Audio and multiple audio such as German, French, Italian, Spanish, Arabic, Portuguese. | Judas: Similar to Erai-raws with multi subs. | Subs
+Subs 2nd Tier
 
 ```bash
-/(\[AnimeRG\]|\[Judas\]|Commie|GJM)/i
+/(Mysteria|Asenshi|AkihitoSubs|\bASW\b)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [180]
+Add this to your Preferred with a score of [150]
 
-Subs, FanSubs
-
-```bash
-/(\[SNSbu\]|\[DB\]|\[Coalgirls\]|FFF|FFFansubs|BluRayDesuYo)/i
-```
-
----
-
-Add this to your Preferred with a score of [160]
-
-Little bit of Dual-Audio | Mainly Fansub
+Subs 3rd Tier
 
 ```bash
-/(\[CH\])/i
-```
-
----
-
-Add this to your Preferred with a score of [140]
-
-FanSubs
-
-```bash
-/(\[Licca\]|\[Soldado\])/i
-```
-
----
-
-Add this to your Preferred with a score of [120]
-
-Subs
-
-```bash
-/(\[SakuraCircle\])/i
+/(Commie|\bGJM\b|kBaraka)/i
 ```
 
 ---
 
 Add this to your Preferred with a score of [100]
 
-FanSubs
+FanSubs 1st Tier
 
 ```bash
-/(\[Orphan\]|\[Yabai\])/i
+/(\bCH\b|\bFFF\b|Licca|Soldado|SNSbu|Coalgirls|BlurayDesuYo)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [80]
+Add this to your Preferred with a score of [50]
 
-Subs
+FanSubs 2nd Tier
 
 ```bash
-/(\[kBaraka\])/i
+/(\[Orphan\]|-Orphan|\[Yabai\]|Yabai|Nii-sama)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [60]
+!!! note
 
-Take 10bit fan-subbed videos from other groups and release an 8bit hardsubbed version of it. We do this because while 10bit offers quite a few advantages, not everyone's PS3, 360, hardware player, toaster etc can play it.
+    This section can be controversial but most of these releases are micro/mini encodes or crappy quality. I personally add them into the do not want section but I will leave them here with negative values so you can still grab them if all else fails.
+
+Add this to your Preferred with a score of [-1000]
+
+Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little less worse than the rest)
 
 ```bash
-/(\[DeadFish\])/i
+/(\[Judas\]|-Judas|\[Cleo\]|-Cleo|AnimeRG)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of [40]
+Add this to your Preferred with a score of [-1500]
 
-FanSubs
+Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
 ```bash
-/(\[NewbSubs\]|\[Nii-sama\]|\[Nii-sama\])/i
+/(bonkai77|\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\[Ranger\]|-Ranger|\bHR\b|SpaceFish|DeadFish)/i
+```
+
+```bash
+/(BakedFish|NoobSubs|NewbSubs|Anime Time|AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
+```
+
+```bash
+/(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool|NemDiggers|Project-gxs|youshikibi)/i
 ```
 
 ---
