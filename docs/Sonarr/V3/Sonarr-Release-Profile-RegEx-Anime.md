@@ -60,25 +60,25 @@ Having tested most of these settings, they work pretty well but Anime is a fickl
 
 ### Suggested naming scheme
 
-For this I used the [Sonarr Recommended naming scheme](/Sonarr/V3/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} for Sonarr with only a small change for the `Series Folder Format` for easier matching.
+For this I used the [Sonarr Recommended naming scheme](/Sonarr/V3/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} for Sonarr with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
 
 #### Anime Episode Format
 
 Has all necessary information and a little extra if you needed to rebuild.
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
+{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
 
     Single Episode:
 
-    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][FLAC][JA]-RlsGrp`
 
     Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][FLAC][JA]-RlsGrp`
 
 #### Series Folder Format
 
@@ -185,14 +185,16 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 !!! note
 
-    Golumpa and KaiDubs are dub only versions of Anime. If you want this then remove the last 2 lines in the next part.
+    If you would like Dub only release then remove the last 3 lines and do not add them.
 
 ```bash
-/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|URANiME|SLAX)/i,
-/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|Scryous-raws|PuyaSubs)/i,
-/\b(Beatrice|ohys|Kawaiika|neko|LowPower)\b(?=[ ._-]?(raws)\b)/i,
-/\b(english|funi)?[ ._-](dub|dubbed)|\b(dub|dubbed)/i,
-/(Golumpa|KaiDubs)/i
+/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|SLAX)/i,
+/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
+/\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
+/\bLowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
+/(eng[ ._-]dub|english[ ._-]dub|funimation)/i,
+/(funi[ ._-]dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
+/(Golumpa)/i
 ```
 
 ??? success "example"
@@ -200,32 +202,64 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 #### Preferred
 
-Add this to your Preferred with a score of [600]
+!!! note
+
+    2 lines in one grouping is just there for readability purposes but achieves the same result and score.
+
+Add this to your Preferred with a score of [650]
 
 BluRay-Remux / Dual-Audio / 1st Tier
 
 ```bash
-/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b|\bMK\b|LostYears|BluDragon|KAWAiREMUX)/i
+/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b)/i
+```
+
+```bash
+/(\bMK\b|LostYears|BluDragon|KAWAiREMUX|ANThELIa)/i
+```
+
+---
+
+Add this to your Preferred with a score of [600]
+
+BluRay-Remux / Dual-Audio / 2nd Tier
+
+```bash
+/(iAHD|ANiHLS|MKVULTRA)/i
+```
+
+---
+
+Add this to your Preferred with a score of [575]
+
+BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
+
+```bash
+/(\bE.N.D\b|\bE-N-D\b)/i
 ```
 
 ---
 
 Add this to your Preferred with a score of [550]
 
-BluRay-Remux / Dual-Audio / 2nd Tier
+BluRay / Dual-Audio
 
 ```bash
-/(iAHD|ANiHLS|MKVULTRA|ANThELIa)/i
+/(HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N)/i
+```
+
+```bash
+/(\[GHOST\]|-GHOST|\[NPC\]|-NPC|\[Prof\]|-Prof)/i
 ```
 
 ---
 
 Add this to your Preferred with a score of [500]
 
-BluRay / Dual-Audio
+BluRay / Dual-Audio / Scene|P2P Groups
 
 ```bash
-/(\bDHD\b|\bRB\b|HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N|\[GHOST\]|-GHOST|\[NPC\]|-NPC)/i
+/\bDHD\b|RedBlade|TENEIGHTY|WaLMaRT)/i
 ```
 
 ---
@@ -245,7 +279,7 @@ Add this to your Preferred with a score of [400]
 WebSource / Dual-Audio
 
 ```bash
-/(xPearse|TENEIGHTY)/i
+/(xPearse|\[Prof\]|-Prof)/i
 ```
 
 ---
@@ -305,7 +339,11 @@ Add this to your Preferred with a score of [100]
 FanSubs 1st Tier
 
 ```bash
-/(\bCH\b|\bFFF\b|Licca|Soldado|SNSbu|Coalgirls|BlurayDesuYo)/i
+/(\bCH\b|\bFFF\b|Licca|Soldado|SNSbu)/i
+```
+
+```bash
+/(Coalgirls|BlurayDesuYo|DameDesuYo)/i
 ```
 
 ---
@@ -315,7 +353,39 @@ Add this to your Preferred with a score of [50]
 FanSubs 2nd Tier
 
 ```bash
-/(\[Orphan\]|-Orphan|\[Yabai\]|Yabai|Nii-sama)/i
+/(\[Orphan\]|-Orphan|\[Yabai\]|-Yabai|Nii-sama)/i
+```
+
+---
+
+!!! note
+
+    These are extra parameters that can help and are not needed but are nice to have.
+
+Add this to your Preferred with a score of [10]
+
+Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
+
+```bash
+/(10.?bit|hi10p)/i
+```
+
+---
+
+Add this to your Preferred with a score of [10]-[20]-[30] in order.
+
+Adds version due to anime groups sometimes fixing issues with their releases.
+
+```bash
+/\b(v2)\b/i
+```
+
+```bash
+/\b(v3)\b/i
+```
+
+```bash
+/\b(v4)\b/i
 ```
 
 ---
@@ -329,7 +399,11 @@ Add this to your Preferred with a score of [-1000]
 Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little less worse than the rest)
 
 ```bash
-/(\[Judas\]|-Judas|\[Cleo\]|-Cleo|AnimeRG)/i
+/(\[Judas\]|-Judas|\[Cleo\]|-Cleo)/i
+```
+
+```bash
+/(AnimeRG|bonkai77|URANiME)/i
 ```
 
 ---
@@ -339,16 +413,39 @@ Add this to your Preferred with a score of [-1500]
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
 ```bash
-/(bonkai77|\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\[Ranger\]|-Ranger|\bHR\b|SpaceFish|DeadFish)/i
+/(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i
 ```
 
 ```bash
-/(BakedFish|NoobSubs|NewbSubs|Anime Time|AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
+/(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i
 ```
 
 ```bash
-/(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool|NemDiggers|Project-gxs|youshikibi)/i
+/(BakedFish|NoobSubs|NewbSubs|Anime Time)/i
 ```
+
+```bash
+/(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
+```
+
+```bash
+/(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i
+```
+
+```bash
+/(NemDiggers|Project-gxs|youshikibi)/i
+```
+
+??? tip "If you would like the above to be in DO NOT WANT in an easy format here it is."
+
+    ```bash
+    /(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i,
+    /(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i,
+    /(BakedFish|NoobSubs|NewbSubs|Anime Time)/i,
+    /(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i,
+    /(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i,
+    /(NemDiggers|Project-gxs|youshikibi)/i
+    ```
 
 ---
 
@@ -359,4 +456,14 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 
 ### Acknowledgements
 
-Most of my information and knowledge came from Kaiser and rg9400 for the anime releases and best groups on discord and [TRaSH](https://trash-guides.info/) for his amazing regex.
+Most of my information and knowledge came from:
+
+- Kaiser (Guidance on anime groups)
+
+- rg9400 (Guidance on regex fixes, anime groups and general knowledge share.)
+
+- Drazzilb (Guidance on regex fixes, anime groups and general knowledge share.)
+
+- [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for my guide and general knowledge share.)
+
+Thanks a bunch!!
