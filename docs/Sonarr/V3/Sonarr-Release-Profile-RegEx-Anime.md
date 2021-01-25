@@ -188,8 +188,8 @@ The reason most of these are added is due to their shitty quality or just in gen
     Golumpa and KaiDubs are dub only versions of Anime. If you want this then remove the last 2 lines in the next part.
 
 ```bash
-/(CuaP|EMBER|PnPSubs|ICEBLUE|URANiME|SLAX|PuyaSubs)/i,
-/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|Scryous-raws)/i,
+/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|URANiME|SLAX)/i,
+/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|Scryous-raws|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko|LowPower)\b(?=[ ._-]?(raws)\b)/i,
 /\b(english|funi)?[ ._-](dub|dubbed)|\b(dub|dubbed)/i,
 /(Golumpa|KaiDubs)/i
@@ -225,7 +225,7 @@ Add this to your Preferred with a score of [500]
 BluRay / Dual-Audio
 
 ```bash
-/(\bDHD\b|\bRB\b|HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N|\[GHOST\]|\[NPC\])/i
+/(\bDHD\b|\bRB\b|HAiKU|Exiled-Destiny|E-D|Koten_Gars|Hark0N|\[GHOST\]|-GHOST|\[NPC\]|-NPC)/i
 ```
 
 ---
@@ -315,7 +315,7 @@ Add this to your Preferred with a score of [50]
 FanSubs 2nd Tier
 
 ```bash
-/(\[Orphan\]|\[Yabai\]|Nii-sama)/i
+/(\[Orphan\]|-Orphan|\[Yabai\]|Yabai|Nii-sama)/i
 ```
 
 ---
@@ -329,7 +329,7 @@ Add this to your Preferred with a score of [-1000]
 Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little less worse than the rest)
 
 ```bash
-/(\[Judas\]|\[Cleo\]|AnimeRG)/i
+/(\[Judas\]|-Judas|\[Cleo\]|-Cleo|AnimeRG)/i
 ```
 
 ---
@@ -339,11 +339,11 @@ Add this to your Preferred with a score of [-1500]
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
 ```bash
-/(bonkai77|\bDB\b|Man.K|phazer11|\[Pixel\]|\[Ranger\]|\bHR\b|SpaceFish|DeadFish)/i
+/(bonkai77|\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\[Ranger\]|-Ranger|\bHR\b|SpaceFish|DeadFish)/i
 ```
 
 ```bash
-/(BakedFish|NoobSubs|NewbSubs|Anime Time|AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\])/i
+/(BakedFish|NoobSubs|NewbSubs|Anime Time|AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
 ```
 
 ```bash
