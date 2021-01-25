@@ -79,23 +79,23 @@ The Tokens not available in the release won't be used/shown.
 > **All the details**
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
+{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
 
     Single Episode:
 
-    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
 
     Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
 
 > **Minimal details + the irreplaceable data**
 
 ```bash
-{Series Title} - S{season:00}E{episode:00} - {absolute:000} - {[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
+{Series Title} - S{season:00}E{episode:00} - {absolute:000} - {[Quality Title]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
 ??? summary "RESULTS:"
