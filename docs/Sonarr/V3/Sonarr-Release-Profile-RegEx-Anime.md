@@ -279,7 +279,7 @@ Add this to your Preferred with a score of [400]
 WebSource / Dual-Audio
 
 ```bash
-/(xPearse|\[Prof\]|-Prof)/i
+/(xPearse)/i
 ```
 
 ---
