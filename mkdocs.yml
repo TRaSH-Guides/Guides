@@ -11,10 +11,6 @@ copyright: Copyright &copy; 2020 TRaSH
 extra:
   manifest: manifest.webmanifest
   social:
-    - icon: fontawesome/brands/paypal
-      link: https://trash-guides.info/#buy-me-a-coffee
-    - icon: fontawesome/brands/bitcoin
-      link: https://trash-guides.info/#buy-me-a-coffee
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
     - icon: fontawesome/brands/github-square
@@ -58,10 +54,6 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
-#  - redirects:
-#      redirect_maps:
-#        'Collection-of-Custom-Formats-for-RadarrV3.md': 'Radarr-collection-of-custom-formats.md'
-#        'Radarr-Quality-Settings-File-Size.md': 'Radarr-quality-settings-file-size.md'
 
 theme:
   name: material

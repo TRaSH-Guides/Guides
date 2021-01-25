@@ -39,10 +39,6 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ------
 
-## Want to Buy me a coffee
-
-<a href="https://github.com/sponsors/TRaSH-" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 ### Special Thanks
 
 - [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
