@@ -41,35 +41,7 @@ Everything here you use on your own risk I won't be hold responsible if somethin
 
 ## Want to Buy me a coffee
 
-??? abstract "CLICK HERE FOR THE OPTIONS HOW TO BUY ME A COFFEE"
-
-    ### Buy me a coffee
-
-    Paypal In $ (Dollars):
-
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P95QYT5662VLN"){:target="_blank" rel="noopener noreferrer"}
-
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-US.png){:target="_blank" rel="noopener noreferrer"}
-
-    Paypal In € (Euro's):
-
-    [![paypal](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/coffee-paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XZM9NMU7F58QL"){:target="_blank" rel="noopener noreferrer"}
-
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-EU.png){:target="_blank" rel="noopener noreferrer"}
-
-    Buy me a coffee (paypal with subscription/membership option and Sponsor role on discord)
-
-    <a href="https://www.buymeacoffee.com/TRaSH" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-    Crypto:
-
-    BTC:  1NHah2JR6E5GYZrzX7mf1hJJrnVZTGhjbP
-
-    ![QR-code](https://raw.githubusercontent.com/TRaSH-/Guides/master/images/QR-code-BTC.png){:target="_blank" rel="noopener noreferrer"}
-
-    Other Options:
-
-    [**Use my VPN Referral link to get 50% off with TorGuard**](https://trash-guides.info/Misc/How-to-setup-Torguard-for-port-forwarding/)
+<a href="https://github.com/sponsors/TRaSH-" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ### Special Thanks
 
