@@ -235,7 +235,7 @@ Add this to your Preferred with a score of [575]
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
 ```bash
-/(\bE.N.D\b|\bE-N-D\b)/i
+/(\bE\.N\.D\b|\bE-N-D\b)/i
 ```
 
 ---
