@@ -270,7 +270,7 @@ Add this to your `Preferred (3)` with a score of [11]
 Add this to your `Preferred (3)` with a score of [10]
 
 ```bash
-/(repack|proper)/i
+/\b(repack|proper)\b/i
 ```
 
 ??? success "example"
