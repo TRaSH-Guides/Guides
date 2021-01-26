@@ -372,7 +372,7 @@ Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
 
 ---
 
-Add this to your Preferred with a score of [10]-[20]-[30] in order.
+Add this to your Preferred with a score of [10]
 
 Adds version due to anime groups sometimes fixing issues with their releases.
 
@@ -380,9 +380,17 @@ Adds version due to anime groups sometimes fixing issues with their releases.
 /(v2)/i
 ```
 
+---
+
+Add this to your Preferred with a score of [20]
+
 ```bash
 /(v3)/i
 ```
+
+---
+
+Add this to your Preferred with a score of [30]
 
 ```bash
 /(v4)/i
