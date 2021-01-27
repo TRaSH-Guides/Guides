@@ -1,7 +1,7 @@
 # Release Profile RegEx (Anime)
 
 !!! note
-    This Guide is Created and Maintained by [Visorask](https://github.com/Visorask)
+    This Guide is Created and Maintained by [Visorask|Visorak](https://github.com/Visorask)
 
     It's recommended to run 2 Sonarr's 1 for Anime and 1 for normal tv shows, or you can make use of tags.
 
@@ -188,11 +188,12 @@ The reason most of these are added is due to their shitty quality or just in gen
     If you would like Dub only release then remove the last 3 lines and do not add them.
 
 ```bash
-/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|SLAX)/i,
-/(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
+/(\[EMBER\])/i,
+/\b(CuaP|-EMBER|PnPSubs|ICEBLUE|SLAX)\b/i,
+/\b(Raws-Maji|KRP|M@nI|Kanjouteki|PuyaSubs)\b/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
 /\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
-/(eng[ ._-]dub|english[ ._-]dub|funimation)/i,
+/(eng[ ._-]dub|english[ ._-]dub|\bfunimation\b)/i,
 /(funi[ ._-]dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
 /(Golumpa)/i
 ```
@@ -211,11 +212,15 @@ Add this to your Preferred with a score of [650]
 BluRay-Remux / Dual-Audio / 1st Tier
 
 ```bash
-/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b)/i
+/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b|\bMK\b|MK-SCY)/i
 ```
 
 ```bash
-/(\bMK\b|LostYears|BluDragon|KAWAiREMUX|ANThELIa)/i
+/(MK-Pn8|LostYears|BluDragon|KAWAiREMUX|ANThELIa)/i
+```
+
+```bash
+/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases|\bSRLS\b|\bREVO\b)/i
 ```
 
 ---
@@ -235,7 +240,7 @@ Add this to your Preferred with a score of [575]
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
 ```bash
-/(\bE\.N\.D\b|\bE-N-D\b)/i
+/(E[.-]N[.-]D)/i
 ```
 
 ---
@@ -245,11 +250,11 @@ Add this to your Preferred with a score of [550]
 BluRay / Dual-Audio
 
 ```bash
-/(HAiKU|Exiled-Destiny|\bE-D\b|Koten_Gars|Hark0N)/i
+/(HAiKU|Exiled-Destiny|\[E-D\]|-E-D|Koten[ ._-]Gars|Hark0N)/i
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST|\[NPC\]|-NPC|\[Prof\]|-Prof)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\[Prof\]|-Prof\b)/i
 ```
 
 ---
@@ -269,7 +274,7 @@ Add this to your Preferred with a score of [450]
 WebSource / Dual|Multi-Audio
 
 ```bash
-/\b(DragsterPS)\b/i
+/(DragsterPS)/i
 ```
 
 ---
@@ -289,7 +294,7 @@ Add this to your Preferred with a score of [350]
 DVD / Dual-Audio
 
 ```bash
-/\b(A-L)\b/i
+/(\[A-L\]|-A-L)/i
 ```
 
 ---
@@ -299,7 +304,7 @@ Add this to your Preferred with a score of [300]
 Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Portuguese and English
 
 ```bash
-/\b(Erai-raws)\b/i
+/(Erai-raws)/i
 ```
 
 ---
@@ -319,7 +324,7 @@ Add this to your Preferred with a score of [200]
 Subs 2nd Tier
 
 ```bash
-/(Mysteria|Asenshi|AkihitoSubs|\bASW\b)/i
+/(\[Mysteria\]|-Mysteria|Asenshi|AkihitoSubs|\bASW\b)/i
 ```
 
 ---
@@ -339,7 +344,7 @@ Add this to your Preferred with a score of [100]
 FanSubs 1st Tier
 
 ```bash
-/(\bCH\b|\bFFF\b|Licca|Soldado|SNSbu)/i
+/\b(CH|FFF|Licca|Soldado|SNSbu)\b/i
 ```
 
 ```bash
@@ -353,7 +358,7 @@ Add this to your Preferred with a score of [50]
 FanSubs 2nd Tier
 
 ```bash
-/(\[Orphan\]|-Orphan|\[Yabai\]|-Yabai|Nii-sama)/i
+/(\[Orphan\]|\b-Orphan\b|\[Yabai\]|\b-Yabai\b|\bNii-sama\b)/i
 ```
 
 ---
@@ -421,38 +426,38 @@ Add this to your Preferred with a score of [-1500]
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
 ```bash
-/(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i
+/(\[Pixel\]|\[EDGE\]|\[Ranger\]|\bAnime Time\b)/i
 ```
 
 ```bash
-/(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i
+/(-Ranger|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i
 ```
 
 ```bash
-/(BakedFish|NoobSubs|NewbSubs|Anime Time)/i
+/(BakedFish|N[eo][wo]b[ ._-]Subs|N[eo][wo]bSubs)/i
 ```
 
 ```bash
-/(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
+/(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE|phazer11)/i
 ```
 
 ```bash
-/(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i
+/(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i
 ```
 
 ```bash
-/(NemDiggers|Project-gxs|youshikibi)/i
+/(NemDiggers|Project-gxs|youshikibi|-Pixel)/i
 ```
 
 ??? tip "If you would like the above to be in DO NOT WANT in an easy format here it is."
 
     ```bash
-    /(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i,
-    /(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i,
-    /(BakedFish|NoobSubs|NewbSubs|Anime Time)/i,
-    /(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i,
-    /(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i,
-    /(NemDiggers|Project-gxs|youshikibi)/i
+    /(\[Pixel\]|\[EDGE\]|\[Ranger\]|\bAnime Time\b)/i,
+    /(-Ranger|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i,
+    /(BakedFish|N[eo][wo]b[ ._-]Subs|N[eo][wo]bSubs)/i,
+    /(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE|phazer11)/i,
+    /(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i,
+    /(NemDiggers|Project-gxs|youshikibi|-Pixel)/i
     ```
 
 ---
