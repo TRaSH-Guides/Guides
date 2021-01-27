@@ -216,43 +216,43 @@ Add this to your `Preferred (3)` with a score of [180]
 The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the [Release Sources (Streaming Service)](#release-sources-streaming-service) to their release name so they don't get the extra point of the release source regex.
 
 ```bash
-/(-deflate|-inflate)/i
+/\b(-deflate|-inflate)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [150]
 
 ```bash
-/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)/i
+/\b(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)\b/i
 ```
 
 ```bash
-/(-monkee|-NTb|-NTG|-QOQ|-RTN)/i
+/\b(-monkee|-NTb|-NTG|-QOQ|-RTN)\b/i
 ```
 
 ```bash
-/(-TOMMY|-ViSUM|-T6D)/i
+/\b(-TOMMY|-ViSUM|-T6D)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [125]
 
 ```bash
-/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)/i
+/\b(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)\b/i
 ```
 
 ```bash
-/(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)/i
+/\b(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)\b/i
 ```
 
 ```bash
-/(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)/i
+/\b(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)\b/i
 ```
 
 ```bash
-/(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)/i
+/\b(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)\b/i
 ```
 
 ```bash
-/(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)/i
+/\b(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -284,11 +284,11 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)/i
+/\b(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
 ```
 
 ```bash
-/(-VIDEOHOLE)/i
+/\b(-VIDEOHOLE)\b/i
 ```
 
 ??? success "example"
@@ -309,23 +309,23 @@ Add this to your `Preferred (3)` with a score of [-100]
 Add this for example as [-25]
 
 ```bash
-/(\[rartv\]|\[eztv\]|\[TGx\])/i
+/\b(\[rartv\]|\[eztv\]|\[TGx\])\b/i
 ```
 
 ```bash
-/(-4P|-4Planet|-AsRequested|-BUYMORE)/i
+/\b(-4P|-4Planet|-AsRequested|-BUYMORE)\b/i
 ```
 
 ```bash
-/(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)/i
+/\b(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)\b/i
 ```
 
 ```bash
-/(-Obfuscated|-postbot|-Rakuv|-Scrambled)/i
+/\b(-Obfuscated|-postbot|-Rakuv|-Scrambled)\b/i
 ```
 
 ```bash
-/(-WhiteRev|-xpost)/i
+/\b(-WhiteRev|-xpost)\b/i
 ```
 
 #### Optional (matches releases that ends with EN)
