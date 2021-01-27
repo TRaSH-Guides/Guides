@@ -190,7 +190,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 ```bash
 /(\[EMBER\])/i,
 /\b(CuaP|-EMBER|PnPSubs|ICEBLUE|SLAX)\b/i,
-/\b(Raws-Maji|KRP|M@nI|Kanjouteki|PuyaSubs)\b/i,
+/\b(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)\b/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
 /\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
 /(eng[ ._-]dub|english[ ._-]dub|\bfunimation\b)/i,
@@ -324,7 +324,7 @@ Add this to your Preferred with a score of [200]
 Subs 2nd Tier
 
 ```bash
-/(\[Mysteria\]|-Mysteria|Asenshi|AkihitoSubs|\bASW\b)/i
+/(\[Mysteria\]|-Mysteria\b|Asenshi|AkihitoSubs|\bASW\b)/i
 ```
 
 ---
@@ -358,7 +358,7 @@ Add this to your Preferred with a score of [50]
 FanSubs 2nd Tier
 
 ```bash
-/(\[Orphan\]|\b-Orphan\b|\[Yabai\]|\b-Yabai\b|\bNii-sama\b)/i
+/(\[Orphan\]|-Orphan\b|\[Yabai\]|-Yabai\b|\bNii-sama\b)/i
 ```
 
 ---
@@ -430,7 +430,7 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(-Ranger|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i
+/(-Ranger\b|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i
 ```
 
 ```bash
@@ -438,7 +438,7 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE|phazer11)/i
+/(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE\b|phazer11)/i
 ```
 
 ```bash
@@ -446,18 +446,18 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(NemDiggers|Project-gxs|youshikibi|-Pixel)/i
+/(NemDiggers|Project-gxs|youshikibi|-Pixel\b)/i
 ```
 
 ??? tip "If you would like the above to be in DO NOT WANT in an easy format here it is."
 
     ```bash
     /(\[Pixel\]|\[EDGE\]|\[Ranger\]|\bAnime Time\b)/i,
-    /(-Ranger|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i,
+    /(-Ranger\b|SpaceFish|DeadFish|DB|Man\.K|\bHR\b)/i,
     /(BakedFish|N[eo][wo]b[ ._-]Subs|N[eo][wo]bSubs)/i,
-    /(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE|phazer11)/i,
+    /(AnimeKaizoku|Kaizoku|\bCBB\b|-EDGE\b|phazer11)/i,
     /(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i,
-    /(NemDiggers|Project-gxs|youshikibi|-Pixel)/i
+    /(NemDiggers|Project-gxs|youshikibi|-Pixel\b)/i
     ```
 
 ---
