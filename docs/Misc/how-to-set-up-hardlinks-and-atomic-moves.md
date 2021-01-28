@@ -578,27 +578,37 @@ Then keep reading.
 
     #### Docker
 
+    !!! tip
+
+        If you're new to dockers and want a easy setup I suggest to take a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
+        I've also created a short guide [HERE](#dockstarter) where I explain the settings for the most used applications.
+
+        The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
+        You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
+
+        *DockSTARTer was actually my first steps in to the world of dockers.*
+
     !!! note
 
-        I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend you to use and also provide a docker-compose.
+        I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.
 
-        *I do recommend to use a non-root user with sudo permissions.*
+    ##### Folder Structure
 
     !!! attention
 
         It doesn't really matter which path you use for your media and appdata,
 
-        the only thing you should  avoid is `/home`.
+        the only thing you should avoid is `/home`.
 
         Because user folders in `/home` are expected to have some restrictive permissions.
 
         It just could end up creating a permissions mess, so it's better to just avoid entirely.
 
-    ##### Folder Structure
-
     For this example we're going to make use of a share called `data`.
 
     The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
+
+    *In this examples I'm using lower case on all folder on purpose, being Linux is case sensitive.*
 
     ```none
     data
@@ -634,10 +644,6 @@ Then keep reading.
            └── tv
         ```
 
-        ```bash
-        sudo mkdir -p /data/torrents/movies /data/torrents/tv /data/torrents/music
-        ```
-
         ###### Usenet clients
 
         NZBGet or SABnzbd
@@ -650,10 +656,6 @@ Then keep reading.
            ├── movies
            ├── music
            └── tv
-        ```
-
-        ```bash
-        sudo mkdir -p /data/usenet/movies /data/usenet/tv /data/usenet/music
         ```
 
         ###### The arr(s)
@@ -678,10 +680,6 @@ Then keep reading.
            └── tv
         ```
 
-        ```bash
-        sudo mkdir -p /data/media/movies /data/media/tv /data/media/music
-        ```
-
         ###### Media Server
 
         Plex, Emby, JellyFin and Bazarr
@@ -696,68 +694,7 @@ Then keep reading.
            └── tv
         ```
 
-    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
-
-    ##### Appdata
-
-    Your appdata will be stored in `/docker/appdata/{appname}`
-
-    ```bash
-    sudo mkdir -p /docker/appdata
-    ```
-
-    ##### Permissions
-
-    ```bash
-    sudo chown -R $USER:$USER /data /docker
-    sudo chmod -R a=,a+rX,u+w,g+w /data /docker
-    ```
-
-    A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
-    this makes it easy to maintain and compare paths.
-
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59){:target="_blank" rel="noopener noreferrer"} to your `/docker/` location so you got your important stuff together.
-
-    CD to your `/docker` folder and use the following command to download it.
-
-    ```bash
-    wget https://gist.githubusercontent.com/TRaSH-/73a2250c2645dfe1c97c61bb5fc46d59/raw/b5010e038709f6cc39bba08732581bc437256971/docker-compose.yml
-    ```
-
-    This docker-compose file will have the following docker containers included.
-
-    - Radarr
-    - Sonarr
-    - Bazarr (Subtitle searcher and downloaded)
-    - NZBGet
-    - qBittorent
-    - Plex
-    - Tautulli
-    - Watchtower (automatic docker container updater)
-
-    ##### Changes you need to do
-
-    1. Change the PUID/PGID.
-    1. TZ (Change to your timezone)
-
-    ##### Run the Docker Compose
-
-    ```bash
-    sudo docker-compose up -d
-    ```
-
-    You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
-
-    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
-
-    !!! tip
-
-        ##### Docker Compose Collection
-
-
-        I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
-
-        [docker-compose-collection](https://gist.github.com/TRaSH-/68cd26deb5e6269e5eb8114f93b429ab){:target="_blank" rel="noopener noreferrer"}
+    **Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.**
 
 ??? summary "Bare Metal (Native)"
 
