@@ -215,9 +215,6 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(Golumpa)/i
 ```
 
-??? success "Completed Example"
-    ![!rpa-release-profile](images/!rpa-release-profile.png)
-
 #### Preferred
 
 !!! note
@@ -478,6 +475,12 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
     ```
 
 ---
+
+### Completed
+
+When completed your Release Profiles should look like this:
+
+![!rpa-release-profile](images/rpa-release-profile.png)
 
 ### Acknowledgements
 
