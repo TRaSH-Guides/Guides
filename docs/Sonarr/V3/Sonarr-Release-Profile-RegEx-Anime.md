@@ -52,6 +52,8 @@ Having tested most of these settings, they work pretty well but Anime is a fickl
 
     Now when you download or import any files the script will run and clear out those files that you most likely won't use and if you want them well this script isn't for you.
 
+---
+
 ## Media Management
 
 !!! note
@@ -114,7 +116,7 @@ RESULTS:
 
 ![results](images/results.png)
 
-??? success "example"
+??? success "Example"
 
     ![!Example image of above](images/rpa-mediamanage.png)
 
@@ -128,74 +130,74 @@ We need to add HDTV-1080p into the same group as WEB-DL and WEBRip 1080p so that
 
 ---
 
-## Release Profiles
+## Indexers
 
-!!! important
-    We're going to make use of 4 separate release profiles.
+We need to add the Anime Categories to our indexers otherwise this all won't work very well.
 
-### First Release Profile
+??? success "Example"
+
+    1. We need to open `Settings -> Indexers`
+    1. Select the Indexer(s) you would like to use for `Anime`
+    1. Select the dropdown for `Anime Categories`.
+    ![!rpa-indexer-1](images/rpa-indexer-1.png)
+    1. Select the `Anime` category.
+    ![!rpa-indexer-2](images/rpa-indexer-2.png)
+    1. Click outside the pop-up modal but inside the `Add Indexer` modal.
+    ![!rpa-indexer-3](images/rpa-indexer-3.png)
+
+---
 
 !!! note
 
     Check mark `Include Preferred when Renaming` where applicable and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
 
-#### Dual Audio (First)
+## Release Profiles
 
-Add this to your Preferred with a score of [500]
+!!! note
+    We're going to make use of **2** separate release profiles.
 
-!!! warning
-    DO NOT check mark `Include Preferred when Renaming` on this release profile. This one is separate in case of history loss and there are edge cases of where groups do not have dual-audio in their naming scheme. This fixes that noting down `EN+JA` or `JA+EN` as a dual-audio release if you have to re-import.
-
-```bash
-/dual[ ._-]?audio|EN\+JA|JA\+EN/i
-```
-
----
-
-### Second Release Profile
+### First Release Profile
 
 !!! important
-    Check mark `Include Preferred when Renaming`
+    **DO** Check mark `Include Preferred when Renaming` on this release profile.
+    ![!rpa-release-sources-1](images/rpa-release-sources-1.png)
 
 #### Multi-Audio
 
-Add this to your Preferred with a score of [400]
+Add this to your Preferred with a score of **[400]**
 
 ```bash
 /(multi[ ._-]?audio)/i
 ```
 
----
+#### Dual-Audio
 
-#### Optional (uncut|unrated|uncensored)
-
-Add this to your Preferred with a score of [1000]/[-1000] if you want the uncensored version of anime. If you would like it to be priority then set to 1000. If you do not want uncensored set it to -1000. If you don't care either way just leave it out.
-
-```bash
-/(uncut|unrated|uncensored)/i
-```
-
----
-
-### Third Release Profile
-
-!!! important
-    Check mark `Include Preferred when Renaming` We are adding this third release profile so that when doing naming you will get `dual-audio` in your `Preferred Words`.
-
-#### Dual-Audio (Second)
-
-Add this to your Preferred with a score of [0].
+Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**.
 
 ```bash
 /(dual[ ._-]?audio)/i
 ```
 
+#### Optional (uncut|unrated|uncensored)
+
+Add this to your Preferred with a score of **[1000]/[-1000]** if you want the uncensored version of anime. If you would like it to be priority then set to **1000**. If you do not want uncensored set it to **-1000**. If you don't care either way just leave it out.
+
+```bash
+/(uncut|unrated|uncensored)/i
+```
+
+!!! note
+
+    When done it should look something like this:
+    ![!rpa-release-profile-1](images/rpa-release-profile-1.png)
+
 ---
 
-### Fourth Release Profile
+### Second Release Profile
 
 !!! warning
-    DO NOT Check mark `Include Preferred when Renaming`
+    **DO NOT** Check mark `Include Preferred when Renaming`
+    ![!rpa-release-sources-2](images/rpa-release-sources-2.png)
 
 #### Must Not Contain
 
@@ -203,7 +205,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 !!! important
 
-    If you would like Dub only release then remove the last 2 lines and do not add them.
+    If you would like `dub` releases then remove the last 2 lines and do not add them.
 
 ```bash
 /(\[EMBER\]|-EMBER\b)/i,
@@ -221,7 +223,13 @@ The reason most of these are added is due to their shitty quality or just in gen
 
     2 lines in one grouping is just there for readability purposes but achieves the same result and score.
 
-Add this to your Preferred with a score of [650]
+Add this to your Preferred with a score of **[800]**
+
+```bash
+/dual[ ._-]?audio|EN\+JA|JA\+EN/i
+```
+
+Add this to your Preferred with a score of **[650]**
 
 BluRay-Remux / Dual-Audio / 1st Tier
 
@@ -239,7 +247,7 @@ BluRay-Remux / Dual-Audio / 1st Tier
 
 ---
 
-Add this to your Preferred with a score of [600]
+Add this to your Preferred with a score of **[600]**
 
 BluRay-Remux / Dual-Audio / 2nd Tier
 
@@ -249,7 +257,7 @@ BluRay-Remux / Dual-Audio / 2nd Tier
 
 ---
 
-Add this to your Preferred with a score of [575]
+Add this to your Preferred with a score of **[575]**
 
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
@@ -259,7 +267,7 @@ BluRay / Dual-Audio / Special (Releases they have are in between below releases 
 
 ---
 
-Add this to your Preferred with a score of [550]
+Add this to your Preferred with a score of **[550]**
 
 BluRay / Dual-Audio
 
@@ -273,7 +281,7 @@ BluRay / Dual-Audio
 
 ---
 
-Add this to your Preferred with a score of [500]
+Add this to your Preferred with a score of **[500]**
 
 BluRay / Dual-Audio / Scene|P2P Groups
 
@@ -283,7 +291,7 @@ BluRay / Dual-Audio / Scene|P2P Groups
 
 ---
 
-Add this to your Preferred with a score of [450]
+Add this to your Preferred with a score of **[450]**
 
 WebSource / Dual|Multi-Audio
 
@@ -293,7 +301,7 @@ WebSource / Dual|Multi-Audio
 
 ---
 
-Add this to your Preferred with a score of [400]
+Add this to your Preferred with a score of **[400]**
 
 WebSource / Dual-Audio
 
@@ -303,7 +311,7 @@ WebSource / Dual-Audio
 
 ---
 
-Add this to your Preferred with a score of [350]
+Add this to your Preferred with a score of **[350]**
 
 DVD / Dual-Audio
 
@@ -313,7 +321,7 @@ DVD / Dual-Audio
 
 ---
 
-Add this to your Preferred with a score of [300]
+Add this to your Preferred with a score of **[300]**
 
 Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Portuguese and English
 
@@ -323,7 +331,7 @@ Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Port
 
 ---
 
-Add this to your Preferred with a score of [250]
+Add this to your Preferred with a score of **[250]**
 
 Subs
 
@@ -333,7 +341,7 @@ Subs
 
 ---
 
-Add this to your Preferred with a score of [200]
+Add this to your Preferred with a score of **[200]**
 
 Subs 2nd Tier
 
@@ -343,7 +351,7 @@ Subs 2nd Tier
 
 ---
 
-Add this to your Preferred with a score of [150]
+Add this to your Preferred with a score of **[150]**
 
 Subs 3rd Tier
 
@@ -353,7 +361,7 @@ Subs 3rd Tier
 
 ---
 
-Add this to your Preferred with a score of [100]
+Add this to your Preferred with a score of **[100]**
 
 FanSubs 1st Tier
 
@@ -367,7 +375,7 @@ FanSubs 1st Tier
 
 ---
 
-Add this to your Preferred with a score of [50]
+Add this to your Preferred with a score of **[50]**
 
 FanSubs 2nd Tier
 
@@ -381,7 +389,7 @@ FanSubs 2nd Tier
 
     These are extra parameters that can help and are not needed but are nice to have.
 
-Add this to your Preferred with a score of [10]
+Add this to your Preferred with a score of **[10]**
 
 Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
 
@@ -391,7 +399,7 @@ Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
 
 ---
 
-Add this to your Preferred with a score of [10]
+Add this to your Preferred with a score of **[10]**
 
 Adds version due to anime groups sometimes fixing issues with their releases.
 
@@ -401,7 +409,7 @@ Adds version due to anime groups sometimes fixing issues with their releases.
 
 ---
 
-Add this to your Preferred with a score of [20]
+Add this to your Preferred with a score of **[20]**
 
 ```bash
 /\d(v3)\b/i
@@ -409,7 +417,7 @@ Add this to your Preferred with a score of [20]
 
 ---
 
-Add this to your Preferred with a score of [30]
+Add this to your Preferred with a score of **[30]**
 
 ```bash
 /\d(v4)\b/i
@@ -421,7 +429,7 @@ Add this to your Preferred with a score of [30]
 
     This section can be controversial but most of these releases are micro/mini encodes or crappy quality. I personally add them into the do not want section but I will leave them here with negative values so you can still grab them if all else fails.
 
-Add this to your Preferred with a score of [-1000]
+Add this to your Preferred with a score of **[-1000]**
 
 Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little less worse than the rest)
 
@@ -435,7 +443,7 @@ Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little
 
 ---
 
-Add this to your Preferred with a score of [-1500]
+Add this to your Preferred with a score of **[-1500]**
 
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
@@ -474,13 +482,18 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
     /(NemDiggers|Project-gxs|youshikibi)/i
     ```
 
+!!! note
+
+    When done it should look something like this:
+    ![!rpa-release-profile-2](images/rpa-release-profile-2.png)
+
 ---
 
 ### Completed
 
 When completed your Release Profiles should look like this:
 
-![!rpa-release-profile](images/rpa-release-profile.png)
+![!rpa-release-profile-3](images/rpa-release-profile-3.png)
 
 ### Acknowledgements
 
