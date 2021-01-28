@@ -700,6 +700,13 @@ Then keep reading.
 
     #### Native
 
+    !!! note
+
+        I'm not going to explain how to install all the applications, I will only explain which folder structure we recommend.
+
+    ##### Folder Structure
+
+
     !!! attention
 
         It doesn't really matter which path you use for your media,
@@ -710,11 +717,11 @@ Then keep reading.
 
         It just could end up creating a permissions mess, so it's better to just avoid entirely.
 
-    ##### Folder Structure
-
     For this example we're going to make use of a share called `data`.
 
     The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
+
+    *I'm using lower case on all folder on purpose, being Linux is case sensitive.*
 
     ```none
     data
@@ -750,10 +757,6 @@ Then keep reading.
            └── tv
         ```
 
-        ```bash
-        sudo mkdir -p /data/torrents/movies /data/torrents/tv /data/torrents/music
-        ```
-
         ###### Usenet clients
 
         NZBGet or SABnzbd
@@ -766,10 +769,6 @@ Then keep reading.
            ├── movies
            ├── music
            └── tv
-        ```
-
-        ```bash
-        sudo mkdir -p /data/usenet/movies /data/usenet/tv /data/usenet/music
         ```
 
         ###### The arr(s)
@@ -794,10 +793,6 @@ Then keep reading.
            └── tv
         ```
 
-        ```bash
-        sudo mkdir -p /data/media/movies /data/media/tv /data/media/music
-        ```
-
         ###### Media Server
 
         Plex, Emby, JellyFin and Bazarr
@@ -812,16 +807,16 @@ Then keep reading.
            └── tv
         ```
 
-    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
-
     ##### Permissions
+
+    Recursively chown user and group and Recursively chmod to 775/664
 
     ```bash
     sudo chown -R $USER:$USER /data
     sudo chmod -R a=,a+rX,u+w,g+w /data
     ```
 
-    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
+    **Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.**
 
 ------
 
