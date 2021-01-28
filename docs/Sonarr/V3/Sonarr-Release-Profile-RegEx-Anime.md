@@ -209,7 +209,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 ```bash
 /(\[EMBER\]|-EMBER\b)/i,
-/(CuaP|PnPSubs|ICEBLUE|SLAX)/i,
+/(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
 /\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
