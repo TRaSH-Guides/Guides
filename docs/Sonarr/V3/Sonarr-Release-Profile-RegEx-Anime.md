@@ -1,7 +1,7 @@
 # Release Profile RegEx (Anime)
 
 !!! note
-    This Guide is Created and Maintained by [Visorask](https://github.com/Visorask)
+    This Guide is Created and Maintained by [Visorask/Visorak](https://github.com/Visorask)
 
     It's recommended to run 2 Sonarr's 1 for Anime and 1 for normal tv shows, or you can make use of tags.
 
@@ -131,23 +131,31 @@ We need to add HDTV-1080p into the same group as WEB-DL and WEBRip 1080p so that
 ## Release Profiles
 
 !!! important
-    We're going to make use of 2 separate release profiles.
+    We're going to make use of 4 separate release profiles.
 
 ### First Release Profile
 
 !!! note
 
-    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
+    Check mark `Include Preferred when Renaming` where applicable and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
 
-#### Dual Audio
+#### Dual Audio (First)
 
 Add this to your Preferred with a score of [500]
 
+!!! warning
+    DO NOT check mark `Include Preferred when Renaming` on this release profile. This one is separate in case of history loss and there are edge cases of where groups do not have dual-audio in their naming scheme. This fixes that noting down `EN+JA` or `JA+EN` as a dual-audio release if you have to re-import.
+
 ```bash
-/(dual[ ._-]?audio)/i
+/dual[ ._-]?audio|EN\+JA|JA\+EN/i
 ```
 
 ---
+
+### Second Release Profile
+
+!!! important
+    Check mark `Include Preferred when Renaming`
 
 #### Multi-Audio
 
@@ -159,22 +167,32 @@ Add this to your Preferred with a score of [400]
 
 ---
 
-#### Optional (uncensored)
+#### Optional (uncut|unrated|uncensored)
 
-Add this to your Preferred with a score of [1000]/[-1000] if you want the uncensored version of anime. If you would like it to be priority then set to 1000. If you do not want uncensored set it to -1000.
+Add this to your Preferred with a score of [1000]/[-1000] if you want the uncensored version of anime. If you would like it to be priority then set to 1000. If you do not want uncensored set it to -1000. If you don't care either way just leave it out.
 
 ```bash
-/\b(uncensored)\b/i
+/(uncut|unrated|uncensored)/i
 ```
 
 ---
 
-??? success "example"
-    ![!rpa-release-profile-1](images/rpa-release-profile-1.png)
+### Third Release Profile
+
+!!! important
+    Check mark `Include Preferred when Renaming` We are adding this third release profile so that when doing naming you will get `dual-audio` in your `Preferred Words`.
+
+#### Dual-Audio (Second)
+
+Add this to your Preferred with a score of [0].
+
+```bash
+/(dual[ ._-]?audio)/i
+```
 
 ---
 
-### Second Release Profile
+### Fourth Release Profile
 
 !!! warning
     DO NOT Check mark `Include Preferred when Renaming`
@@ -183,22 +201,19 @@ Add this to your Preferred with a score of [1000]/[-1000] if you want the uncens
 
 The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go.
 
-!!! note
+!!! important
 
-    If you would like Dub only release then remove the last 3 lines and do not add them.
+    If you would like Dub only release then remove the last 2 lines and do not add them.
 
 ```bash
-/(CuaP|\[EMBER\]|-EMBER|PnPSubs|ICEBLUE|SLAX)/i,
+/(\[EMBER\]|-EMBER\b)/i,
+/(CuaP|PnPSubs|ICEBLUE|SLAX)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
 /\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
-/(eng[ ._-]dub|english[ ._-]dub|funimation)/i,
-/(funi[ ._-]dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
+/(eng[ ._-]?dub|english[ ._-]?dub|\bfunimation\b|funi[ ._-]?dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
 /(Golumpa)/i
 ```
-
-??? success "example"
-    ![!rpa-must-not-contain.png](images/rpa-must-not-contain.png)
 
 #### Preferred
 
@@ -211,11 +226,15 @@ Add this to your Preferred with a score of [650]
 BluRay-Remux / Dual-Audio / 1st Tier
 
 ```bash
-/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bShir\b)/i
+/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bMK\b)/i
 ```
 
 ```bash
-/(\bMK\b|LostYears|BluDragon|KAWAiREMUX|ANThELIa)/i
+/(\bShir\b|LostYears|BluDragon|KAWAiREMUX|ANThELIa|\bREVO\b)/i
+```
+
+```bash
+/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases|\bSRLS\b)/i
 ```
 
 ---
@@ -235,7 +254,7 @@ Add this to your Preferred with a score of [575]
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
 ```bash
-/(\bE\.N\.D\b|\bE-N-D\b)/i
+/(E[.-]N[.-]D)/i
 ```
 
 ---
@@ -245,11 +264,11 @@ Add this to your Preferred with a score of [550]
 BluRay / Dual-Audio
 
 ```bash
-/(HAiKU|Exiled-Destiny|\bE-D\b|Koten_Gars|Hark0N)/i
+/(HAiKU|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars|Hark0N)/i
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST|\[NPC\]|-NPC|\[Prof\]|-Prof)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\[Prof\]|-Prof\b)/i
 ```
 
 ---
@@ -269,7 +288,7 @@ Add this to your Preferred with a score of [450]
 WebSource / Dual|Multi-Audio
 
 ```bash
-/\b(DragsterPS)\b/i
+/(DragsterPS)/i
 ```
 
 ---
@@ -289,7 +308,7 @@ Add this to your Preferred with a score of [350]
 DVD / Dual-Audio
 
 ```bash
-/\b(A-L)\b/i
+/(\b(A-L)\b)/i
 ```
 
 ---
@@ -299,7 +318,7 @@ Add this to your Preferred with a score of [300]
 Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Portuguese and English
 
 ```bash
-/\b(Erai-raws)\b/i
+/(Erai-raws)/i
 ```
 
 ---
@@ -319,7 +338,7 @@ Add this to your Preferred with a score of [200]
 Subs 2nd Tier
 
 ```bash
-/(Mysteria|Asenshi|AkihitoSubs|\bASW\b)/i
+/(\[Mysteria\]|-Mysteria\b|Asenshi|AkihitoSubs|\bASW\b)/i
 ```
 
 ---
@@ -353,7 +372,7 @@ Add this to your Preferred with a score of [50]
 FanSubs 2nd Tier
 
 ```bash
-/(\[Orphan\]|-Orphan|\[Yabai\]|-Yabai|Nii-sama)/i
+/(\[Orphan\]|-Orphan\b|\[Yabai\]|-Yabai\b|\bNii-sama\b)/i
 ```
 
 ---
@@ -377,7 +396,7 @@ Add this to your Preferred with a score of [10]
 Adds version due to anime groups sometimes fixing issues with their releases.
 
 ```bash
-/(v2)/i
+/\d(v2)\b/i
 ```
 
 ---
@@ -385,7 +404,7 @@ Adds version due to anime groups sometimes fixing issues with their releases.
 Add this to your Preferred with a score of [20]
 
 ```bash
-/(v3)/i
+/\d(v3)\b/i
 ```
 
 ---
@@ -393,7 +412,7 @@ Add this to your Preferred with a score of [20]
 Add this to your Preferred with a score of [30]
 
 ```bash
-/(v4)/i
+/\d(v4)\b/i
 ```
 
 ---
@@ -421,23 +440,23 @@ Add this to your Preferred with a score of [-1500]
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
 ```bash
-/(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i
+/(\[Pixel\]|-Pixel\b\[EDGE\]|-EDGE\b|\[Ranger\]|-Ranger\b)/i
 ```
 
 ```bash
-/(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i
+/(SpaceFish|DeadFish|\bDB\b|Man\.K|\bHR\b)/i
 ```
 
 ```bash
-/(BakedFish|NoobSubs|NewbSubs|Anime Time)/i
+/(BakedFish|N[eo][wo]b[ ._-]?Subs|\bAnime Time\b)/i
 ```
 
 ```bash
-/(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i
+/(AnimeKaizoku|Kaizoku|\bCBB\b|phazer11)/i
 ```
 
 ```bash
-/(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i
+/(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i
 ```
 
 ```bash
@@ -447,20 +466,21 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ??? tip "If you would like the above to be in DO NOT WANT in an easy format here it is."
 
     ```bash
-    /(\bDB\b|Man.K|phazer11|\[Pixel\]|-Pixel|\bHR\b)/i,
-    /(\[Ranger\]|-Ranger|SpaceFish|DeadFish)/i,
-    /(BakedFish|NoobSubs|NewbSubs|Anime Time)/i,
-    /(AnimeKaizoku|Kaizoku|\bCBB\b|\[EDGE\]|-EDGE)/i,
-    /(iPUNISHER|MiniTheatre|MiniFreeza|Mr.Deadpool)/i,
+    /(\[Pixel\]|-Pixel\b\[EDGE\]|-EDGE\b|\[Ranger\]|-Ranger\b)/i,
+    /(SpaceFish|DeadFish|\bDB\b|Man\.K|\bHR\b)/i,
+    /(BakedFish|N[eo][wo]b[ ._-]?Subs|\bAnime Time\b)/i,
+    /(AnimeKaizoku|Kaizoku|\bCBB\b|phazer11)/i,
+    /(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i,
     /(NemDiggers|Project-gxs|youshikibi)/i
     ```
 
 ---
 
-??? success "example"
-    ![!rpa-release-profile-2.png](images/rpa-release-profile-2.png)
+### Completed
 
----
+When completed your Release Profiles should look like this:
+
+![!rpa-release-profile](images/rpa-release-profile.png)
 
 ### Acknowledgements
 
