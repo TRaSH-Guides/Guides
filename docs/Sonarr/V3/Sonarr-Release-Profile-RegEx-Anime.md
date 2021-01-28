@@ -223,7 +223,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 
     2 lines in one grouping is just there for readability purposes but achieves the same result and score.
 
-Add this to your Preferred with a score of **[800]**
+Add this to your Preferred with a score of **[500]**
 
 ```bash
 /dual[ ._-]?audio|EN\+JA|JA\+EN/i
