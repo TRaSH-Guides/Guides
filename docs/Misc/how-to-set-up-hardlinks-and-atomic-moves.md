@@ -231,17 +231,19 @@ Then keep reading.
 
         (Spaceinvader One YouTube guides are great to learn how to start with unraid or how to setup certain applications, and yes I did and still do use them. Probably the main reason why he's using those path is because they are predefined in the template)
 
+    ------
+
+    ##### Create the main share
+
     !!! attention
 
         To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of **ONE** share with subfolders.
-
-    ##### Create the main share
 
     For this example I'm using my own setup and preferred share `data`.
 
     Go to your dashboard and on the top select `shares` select `add share` .
 
-    [![unraid-main-share](images/unraid-main-share.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-main-share.png){:target="_blank" rel="noopener noreferrer"}
+    ![!unraid-main-share](images/unraid-main-share.png)
 
     1. use `data`
     1. if you got a cache drive and want to make use of it put it on `Yes` or keep it disabled (Hardlinks will stay in tact if you're using the cache)
@@ -252,6 +254,8 @@ Then keep reading.
         Keep in mind regarding the use of the Cache drive, The mover can't move files that are in use, like  when seeding with torrents. You will need to shutdown your client or stop/pause the torrents so the mover can move them to your Array.
 
         With Usenet  you won't have any issues.
+
+    ------
 
     ##### Folder Structure
 
@@ -279,6 +283,8 @@ Then keep reading.
 
     *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
 
+    ------
+
     ##### Setting up the containers
 
     After you created all the needed folders it's time to setup the paths in the docker containers.
@@ -291,6 +297,8 @@ Then keep reading.
 
     `Host Path:` => The path on your Unraid Server (The Host).
 
+    ------
+
     ##### Torrent clients
 
     qBittorrent, Deluge, ruTorrent
@@ -299,7 +307,7 @@ Then keep reading.
 
     `Container Path:` => `/data/torrents/`
 
-    `Host Path`: => `/mnt/user/data/torrents/`
+    `Host Path:` => `/mnt/user/data/torrents/`
 
     !!! info
 
@@ -312,6 +320,8 @@ Then keep reading.
        ├── music
        └── tv
     ```
+
+    ------
 
     ##### Usenet clients
 
@@ -334,6 +344,8 @@ Then keep reading.
        ├── music
        └── tv
     ```
+
+    ------
 
     ##### The arr(s)
 
@@ -365,6 +377,8 @@ Then keep reading.
        └── tv
     ```
 
+    ------
+
     ##### Media Server
 
     Plex, Emby, JellyFin and Bazarr
@@ -387,11 +401,13 @@ Then keep reading.
        └── tv
     ```
 
+    ------
+
     ##### Final Result
 
-    [![unraid-final-result](images/unraid-final-result.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/unraid-final-result.png){:target="_blank" rel="noopener noreferrer"}
+    ![!unraid-final-result](images/unraid-final-result.png)
 
-    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
+    **Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.**
 
 ??? summary "Synology"
 
