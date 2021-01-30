@@ -814,6 +814,8 @@ Then keep reading.
 
         I'm not going to explain how to install all the applications, I will only explain which folder structure we recommend.
 
+    ------
+
     ##### Folder Structure
 
 
@@ -916,6 +918,8 @@ Then keep reading.
            ├── music
            └── tv
         ```
+
+    ------
 
     ##### Permissions
 
