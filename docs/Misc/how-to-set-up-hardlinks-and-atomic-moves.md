@@ -416,7 +416,7 @@ Then keep reading.
     You will need to SSH into your Synology.
     If you didn't already enable it you need to do that first
 
-    [![synology-control-panel](images/synology-control-panel.png)](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/Misc/images/synology-control-panel.png){:target="_blank" rel="noopener noreferrer"}
+    ![!synology-control-panel](images/synology-control-panel.png)
 
     Then use a program like Putty and SSH to your Synology.
 
@@ -425,7 +425,7 @@ Then keep reading.
 
     Enter the login information of your main Synology user account.
 
-    ![synology-id](images/synology-id.png)
+    ![!synology-id](images/synology-id.png)
 
     Once logged in type `id`.
     This will show your UID (aka PUID).
@@ -437,11 +437,13 @@ Then keep reading.
 
         Yes we know it's not recommended to use the admin account but if you already know this then you wouldn't need to read this ;)
 
+    ------
+
+    ##### Folder Structure
+
     !!! attention
 
         To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
-
-    ##### Folder Structure
 
     For this example we're going to make use of a share called `data`.
 
@@ -450,6 +452,8 @@ Then keep reading.
     The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
 
     These subfolders you need to create your self.
+
+    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
 
     ```none
     data
@@ -467,7 +471,75 @@ Then keep reading.
        └── tv
     ```
 
-    *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
+    ??? summary "Breakdown of the Folder Structure"
+
+        ##### Breakdown of the Folder Structure
+
+        ###### Torrent clients
+
+        qBittorrent, Deluge, ruTorrent
+
+        The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
+
+        ```none
+        data
+        └── torrents
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Usenet clients
+
+        NZBGet or SABnzbd
+
+        The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
+
+        ```none
+        data
+        └── usenet
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### The arr(s)
+
+        Sonarr, Radarr and Lidarr
+
+        Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+
+        ```none
+        data
+        ├── torrents
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        ├── usenet
+        │  ├── movies
+        │  ├── music
+        │  └── tv
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+        ###### Media Server
+
+        Plex, Emby, JellyFin and Bazarr
+
+        Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
+
+        ```none
+        data
+        └── media
+           ├── movies
+           ├── music
+           └── tv
+        ```
+
+    ------
 
     ##### Appdata
 
@@ -478,10 +550,14 @@ Then keep reading.
     ```bash
     sudo mkdir /volume1/docker/appdata
     cd /volume1/docker/appdata
-    sudo mkdir radarr sonarr bazarr nzbget qbittorrent plex tautulli
+    sudo mkdir radarr sonarr bazarr plex tautulli
     ```
 
     So your appdata folder will look like this.
+
+    ```bash
+    ls -al /volume1/docker/appdata
+    ```
 
     ```none
     docker
@@ -489,58 +565,75 @@ Then keep reading.
        ├── radarr
        ├── sonarr
        ├── bazarr
-       ├── nzbget
-       ├── qbittorrent
        ├── plex
        └── tautulli
     ```
 
-    A docker-compose file exist of 1 file that holds all the needed info of all your docker containers.
-    this makes it easy to maintain and compare paths.
+    ------
 
-    Download this [docker-compose.yml](https://gist.github.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
+    ##### Needed files
+
+    First we will download the `docker-compose.yml` file
+
+    Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
 
     ```bash
-    sudo wget https://gist.githubusercontent.com/TRaSH-/6eddbc251b54b22acffba6baf5cbb5ed/raw/ca91114e74d5669ed3ede8a379f510acc54865ad/docker-compose.yml
+    sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml
     ```
 
-    This docker-compose file will have the following docker containers included.
+    ??? question "What's included and What's not included"
 
-    - Radarr
-    - Sonarr
-    - Bazarr (Subtitle searcher and downloaded)
-    - NZBGet
-    - qBittorent
-    - Plex
-    - Tautulli
-    - Watchtower (automatic docker container updater)
+        This docker-compose file will have the following docker containers included.
+
+        - Radarr
+        - Sonarr
+        - Bazarr (Subtitle searcher and downloaded)
+        - Plex
+        - Tautulli
+        - Watchtower (automatic docker container updater at 4am)
+
+        What's not included.
+
+        I didn't add a downloader to it because it depends on what you prefer usenet/torrents and which client you prefer, so i created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that you can find in the `template` folder ready to use with the main `docker-compose.yml`.
+
+        The only thing you need to do is copy/paste what's inside the `.yml` file in to the main `docker-compose.yml`, the template also has the command what you need to use to create the [appdata](#appdata) folder that we explained earlier.
+
+    Second we will download the `.env` file
+
+    Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
+
+    ```bash
+    sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env
+    ```
+
+    ------
 
     ##### Changes you need to do
 
-    1. PUID/PGID (this info you got earlier)
+    The `.env` we downloaded holds the variables/information you need to change so everything works (I added also a description in the `.env` file)
+
+    1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path then in this guide used)
+    1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path then in this guide used)
+    1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
     1. TZ (Change to your timezone)
+
+    It holds more variables/information for other containers but they are described in the `.env`
+
+    ------
 
     ##### Permissions
 
+    Now we need to make sure that the newly created files and folders have the correct permissions.
+
+    !!! note
+        If you're using another user then `admin` then you need to change it in the commands below !!!
+
     ```bash
-    sudo chown -R $USER:users /volume1/data /volume1/docker
+    sudo chown -R admin:users /volume1/data /volume1/docker
     sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
     ```
 
-    !!! note
-        Synology doesn't always pick up the `$USER` correctly, you can test it if the right user is been used with the following command
-
-        ```bash
-        ls -al /volume1/docker
-        ```
-
-        and user should be the same user you used for your PUID !
-
-        If it isn't the same then you need to replace `$USER` with the user what you used for your PUID, in the following example I used admin like we did in the start of the guide.
-
-        ```bash
-        sudo chown -R admin:users /volume1/data /volume1/docker
-        ```
+    ------
 
     ##### Run the Docker Compose
 
@@ -556,7 +649,9 @@ Then keep reading.
 
     You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
 
-    Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.
+    ------
+
+    **Don't forget to look at the [Examples](#examples) how to setup the paths inside the containers.**
 
     !!! attention
 
@@ -564,15 +659,14 @@ Then keep reading.
 
         Any changes you do/did in the GUI will be reverted when you run the docker-compose.
 
-        Just don't use the GUI
+        Just don't use the GUI !!!
 
-    !!! tip
+    ??? hint "docker-compose commands"
 
-        ##### Synology Compose Collection
-
-        I've created a collection of often used applications that you can use to add/replace in the current `docker-compose.yml`
-
-        [synology-docker-compose-collection](https://gist.github.com/TRaSH-/1648a937f9c1c7b45e0f379142694892){:target="_blank" rel="noopener noreferrer"}
+        - `sudo docker-compose up -d` (This Docker-compose command helps builds the image, then creates and starts Docker containers. The containers are from the services specified in the compose file. If the containers are already running and you run docker-compose up, it recreates the container.)
+        - `sudo docker-compose pull` (Pulls an image associated with a service defined in a docker-compose.yml)
+        - `sudo docker-compose down` (The Docker-compose down command also stops Docker containers like the stop command does. But it goes the extra mile. Docker-compose down, doesn’t just stop the containers, it also removes them.)
+        - `sudo docker system prune -a --volumes --force` (Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.)
 
 ??? summary "Docker"
 
