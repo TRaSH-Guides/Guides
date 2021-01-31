@@ -172,7 +172,7 @@ Add this to your Preferred with a score of **[500]**
 
 #### Dual-Audio
 
-Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**
+Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**. It is also added in the second profile. This one is to ensure that the preferred words get added.
 
 ```bash
 /(dual[ ._-]?audio)/i
