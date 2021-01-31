@@ -214,7 +214,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
-/\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
+/\b(LowPower|Scryous)[ ._-]?(raws)\b/i,
 /\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\b/i,
 /(Amb3r|DsunS|ExREN|\$tore-Chill)/i,
 /(\[Hatsuyuki\]|-Hatsuyuki\b|\[Hitoku\]|-Hitoki\b)/i,
@@ -224,7 +224,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i,
 /(\bSHFS\b|StrayGods|\bUQW\b|Yabai_Desu_Ne)/i,
 /(YakuboEncodes|\b(WtF[ ._-]?Anime)\b)/i,
-/((funi|eng(lish)?)dub|\bdub\b|\bdubbed\b)/i,
+/((funi|eng(lish)?)_?dub|\bdub(bed)?\b)/i,
 /(Golumpa|torenter69|KamiFS|KaiDubs)/i
 ```
 
