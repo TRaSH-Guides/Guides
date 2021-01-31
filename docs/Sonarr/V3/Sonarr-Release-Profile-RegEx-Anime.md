@@ -164,7 +164,7 @@ We need to add the Anime Categories to our indexers otherwise this all won't wor
 
 #### Multi-Audio
 
-Add this to your Preferred with a score of **[400]**
+Add this to your Preferred with a score of **[500]**
 
 ```bash
 /(multi[ ._-]?audio)/i
@@ -172,7 +172,7 @@ Add this to your Preferred with a score of **[400]**
 
 #### Dual-Audio
 
-Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**.
+Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**. It is also added in the second profile. This one is to ensure that the preferred words get added.
 
 ```bash
 /(dual[ ._-]?audio)/i
@@ -180,7 +180,9 @@ Add this to your Preferred with a score of **[0]**. This is for renames only and
 
 #### Optional (uncut|unrated|uncensored)
 
-Add this to your Preferred with a score of **[1000]/[-1000]** if you want the uncensored version of anime. If you would like it to be priority then set to **1000**. If you do not want uncensored set it to **-1000**. If you don't care either way just leave it out.
+Add this to your Preferred with a score of **[100]/[-10000]**
+
+If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
 
 ```bash
 /(uncut|unrated|uncensored)/i
@@ -201,7 +203,7 @@ Add this to your Preferred with a score of **[1000]/[-1000]** if you want the un
 
 #### Must Not Contain
 
-The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go.
+The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go. If there is a reason something shouldn't be here let me know and your logic and I will be open to adjusting.
 
 !!! important
 
@@ -213,8 +215,17 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
 /\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
-/(eng[ ._-]?dub|english[ ._-]?dub|\bfunimation\b|funi[ ._-]?dub|\bfuni\b|\bdub\b|\bdubbed\b)/i,
-/(Golumpa)/i
+/\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\b/i,
+/(Amb3r|DsunS|ExREN|\$tore-Chill)/i,
+/(\[Hatsuyuki\]|-Hatsuyuki\b|\[Hitoku\]|-Hitoki\b)/i,
+/(\[Foxtrot\]|-Foxtrot\b|HollowRoxas|\bMGD\b)/i,
+/(JacobSwaggedUp|KEKMASTERS|\[Mites\]|-Mites\b)/i,
+/(neoHEVC|Pantsu|\[Pao\]|-Pao\b|Plex Friendly)/i,
+/(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i,
+/(\bSHFS\b|StrayGods|\bUQW\b|Yabai_Desu_Ne)/i,
+/(YakuboEncodes)/i,
+/((funi|eng(lish)?)dub|\bdub\b|\bdubbed\b)/i,
+/(Golumpa|torenter69|KamiFS|KaiDubs)/i
 ```
 
 #### Preferred
@@ -223,41 +234,105 @@ The reason most of these are added is due to their shitty quality or just in gen
 
     2 lines in one grouping is just there for readability purposes but achieves the same result and score.
 
-Add this to your Preferred with a score of **[500]**
+---
+
+Add this to your Preferred with a score of **[501]**
+
+!!! note
+    This is set to **501** so that it may jump 1 tier if need be but not more.
 
 ```bash
 /dual[ ._-]?audio|EN\+JA|JA\+EN/i
 ```
 
-Add this to your Preferred with a score of **[650]**
+---
+
+Add this to your Preferred with a score of **[4000]**
+
+!!! note
+
+    We are adding this as **4000** so that any unknown `Blu-Ray Remux` will get sent to the at least the second tier of Blu-Ray Remux and download and not skip it.
+
+```bash
+/\b((BD)?[-_. ]?Remux)\b/i
+```
+
+---
+
+!!! important
+    These next few are optional but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
+
+---
+
+Add this to your Preferred with a score of **[100]**
+
+!!! note
+    We are adding this as **100** so that any unknown `Blu-Ray` can jump tiers inside the Subs categories but not interfere with any tiers above.
+
+```bash
+/\b(?:(BluRay|Blu-Ray|BDMux|BD(?!$))|(BDRip)|(BRRip))(?:\b|$|[ .])/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[15]**
+
+```bash
+/\b(WEB[-_. ]DL|WEBDL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s\/\sWEB\s\/\s\b))/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[10]**
+
+```bash
+/(WebRip|Web-Rip|WEBMux)/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[5]**
+
+```bash
+/\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\b/i
+```
+
+!!! important
+    This is the end of the optional section.
+
+Add this to your Preferred with a score of **[4500]**
 
 BluRay-Remux / Dual-Audio / 1st Tier
 
 ```bash
-/(deanzel|\bZR\b|Kametsu|\bCTR\b|\bSCY\b|\bMK\b)/i
+/(deanzel|\bZR\b|\bCTR\b|\bSCY\b|\bMK\b|TTGA)/i
 ```
 
 ```bash
-/(\bShir\b|LostYears|BluDragon|KAWAiREMUX|ANThELIa|\bREVO\b)/i
+/(\bShir\b|LostYears|BluDragon|KAWAiREMUX)/i
 ```
 
 ```bash
-/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases|\bSRLS\b)/i
+/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i
+```
+
+```bash
+/(\[Spark\]|-Spark\b|\bREVO\b|\bSRLS\b|ANThELIa)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of **[600]**
+Add this to your Preferred with a score of **[4000]**
 
 BluRay-Remux / Dual-Audio / 2nd Tier
 
 ```bash
-/(iAHD|ANiHLS|MKVULTRA)/i
+/(iAHD|ANiHLS|MKVULTRA|\[Vanilla\]|-Vanilla\b)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of **[575]**
+Add this to your Preferred with a score of **[3750]**
 
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
@@ -267,21 +342,25 @@ BluRay / Dual-Audio / Special (Releases they have are in between below releases 
 
 ---
 
-Add this to your Preferred with a score of **[550]**
+Add this to your Preferred with a score of **[3500]**
 
-BluRay / Dual-Audio
+BluRay / Dual-Audio / 1st Tier
 
 ```bash
-/(HAiKU|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars|Hark0N)/i
+/(\bHAiKU\b|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars|Hark0N)/i
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\[Prof\]|-Prof\b)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b)/i
+```
+
+```bash
+/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of **[500]**
+Add this to your Preferred with a score of **[3000]**
 
 BluRay / Dual-Audio / Scene|P2P Groups
 
@@ -289,9 +368,27 @@ BluRay / Dual-Audio / Scene|P2P Groups
 /(\bDHD\b|RedBlade|TENEIGHTY|WaLMaRT)/i
 ```
 
+```bash
+/(\BMF\b|\[STRiFE\]|-STRiFE\b)/i
+```
+
 ---
 
-Add this to your Preferred with a score of **[450]**
+Add this to your Preferred with a score of **[2500]**
+
+BluRay / Dual-Audio / 2nd Tier
+
+```bash
+/(\[YURASUKA\]|-YURASUKA\b|karios|Arukoru)/i
+```
+
+```bash
+/(\bRH\b|Arukoru|\[Prof\]|-Prof\b|KAN3D2M)/i
+```
+
+---
+
+Add this to your Preferred with a score of **[2000]**
 
 WebSource / Dual|Multi-Audio
 
@@ -301,17 +398,17 @@ WebSource / Dual|Multi-Audio
 
 ---
 
-Add this to your Preferred with a score of **[400]**
+Add this to your Preferred with a score of **[1500]**
 
 WebSource / Dual-Audio
 
 ```bash
-/(xPearse)/i
+/(xPearse|\bMCR\b|\bKS\b|KiyoshiStar)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of **[350]**
+Add this to your Preferred with a score of **[1000]**
 
 DVD / Dual-Audio
 
@@ -349,6 +446,10 @@ Subs 2nd Tier
 /(\[Mysteria\]|-Mysteria\b|Asenshi|AkihitoSubs|\bASW\b)/i
 ```
 
+```bash
+/(\[meta\]|-meta\b|BlueLobster)/i
+```
+
 ---
 
 Add this to your Preferred with a score of **[150]**
@@ -383,13 +484,17 @@ FanSubs 2nd Tier
 /(\[Orphan\]|-Orphan\b|\[Yabai\]|-Yabai\b|\bNii-sama\b)/i
 ```
 
+```bash
+/(\[Doki\]|-Doki\b|\[Chihiro\]|-Chihiro\b|Final8)/i
+```
+
 ---
 
 !!! note
 
-    These are extra parameters that can help and are not needed but are nice to have.
+    These are extra parameters that can help and are not needed but are nice to have. They are set low mainly to supercede themselves and not interfere with other releases.
 
-Add this to your Preferred with a score of **[10]**
+Add this to your Preferred with a score of **[1]**
 
 Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
 
@@ -399,7 +504,7 @@ Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
 
 ---
 
-Add this to your Preferred with a score of **[10]**
+Add this to your Preferred with a score of **[1]**
 
 Adds version due to anime groups sometimes fixing issues with their releases.
 
@@ -409,7 +514,7 @@ Adds version due to anime groups sometimes fixing issues with their releases.
 
 ---
 
-Add this to your Preferred with a score of **[20]**
+Add this to your Preferred with a score of **[2]**
 
 ```bash
 /\d(v3)\b/i
@@ -417,7 +522,7 @@ Add this to your Preferred with a score of **[20]**
 
 ---
 
-Add this to your Preferred with a score of **[30]**
+Add this to your Preferred with a score of **[3]**
 
 ```bash
 /\d(v4)\b/i
@@ -429,7 +534,7 @@ Add this to your Preferred with a score of **[30]**
 
     This section can be controversial but most of these releases are micro/mini encodes or crappy quality. I personally add them into the do not want section but I will leave them here with negative values so you can still grab them if all else fails.
 
-Add this to your Preferred with a score of **[-1000]**
+Add this to your Preferred with a score of **[-10000]**
 
 Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little less worse than the rest)
 
@@ -443,7 +548,7 @@ Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little
 
 ---
 
-Add this to your Preferred with a score of **[-1500]**
+Add this to your Preferred with a score of **[-15000]**
 
 Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
 
@@ -471,6 +576,30 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 /(NemDiggers|Project-gxs|youshikibi)/i
 ```
 
+```bash
+/(\bMD\b|Pog42|mdcx|\bPAS\b|SHiN-gx)/i
+```
+
+```bash
+/(A-Destiny|TOPKEK|\bUwU\b|DARKFLiX)/i
+```
+
+```bash
+/(\[Maximus\]|-Maximus\b|\[224\]|-224\b)/i
+```
+
+```bash
+/(\[Harunatsu\]|-Harunatsu\b)/i
+```
+
+```bash
+/(\[tenshi\]|-tenshi\b)/i
+```
+
+```bash
+/(\[Davinci\]|-Davinci\b)/i
+```
+
 ??? tip "If you would like the above to be in DO NOT WANT in an easy format here it is."
 
     ```bash
@@ -479,7 +608,13 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
     /(BakedFish|N[eo][wo]b[ ._-]?Subs|\bAnime Time\b)/i,
     /(AnimeKaizoku|Kaizoku|\bCBB\b|phazer11)/i,
     /(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i,
-    /(NemDiggers|Project-gxs|youshikibi)/i
+    /(NemDiggers|Project-gxs|youshikibi)/i,
+    /(\bMD\b|Pog42|mdcx|\bPAS\b|SHiN-gx)/i,
+    /(A-Destiny|TOPKEK|\bUwU\b|DARKFLiX)/i,
+    /(\[Maximus\]|-Maximus\b|\[224\]|-224\b)/i,
+    /(\[Harunatsu\]|-Harunatsu\b)/i,
+    /(\[tenshi\]|-tenshi\b)/i,
+    /(\[Davinci\]|-Davinci\b)/i
     ```
 
 !!! note
