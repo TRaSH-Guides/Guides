@@ -223,7 +223,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(neoHEVC|Pantsu|\[Pao\]|-Pao\b|Plex Friendly)/i,
 /(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i,
 /(\bSHFS\b|StrayGods|\bUQW\b|Yabai_Desu_Ne)/i,
-/(YakuboEncodes)/i,
+/(YakuboEncodes|\b(WtF[ ._-]?Anime)\b)/i,
 /((funi|eng(lish)?)dub|\bdub\b|\bdubbed\b)/i,
 /(Golumpa|torenter69|KamiFS|KaiDubs)/i
 ```
@@ -383,7 +383,7 @@ BluRay / Dual-Audio / 2nd Tier
 ```
 
 ```bash
-/(\bRH\b|Arukoru|\[Prof\]|-Prof\b|KAN3D2M)/i
+/(\bRH\b|Arukoru|\[Prof\]|-Prof\b)/i
 ```
 
 ---
@@ -403,7 +403,7 @@ Add this to your Preferred with a score of **[1500]**
 WebSource / Dual-Audio
 
 ```bash
-/(xPearse|\bMCR\b|\bKS\b|KiyoshiStar)/i
+/(xPearse|\bMCR\b|\bKS\b|KiyoshiStar|KAN3D2M)/i
 ```
 
 ---
