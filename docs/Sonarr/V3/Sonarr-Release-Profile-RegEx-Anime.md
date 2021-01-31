@@ -225,7 +225,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(\bSHFS\b|StrayGods|\bUQW\b|Yabai_Desu_Ne)/i,
 /(YakuboEncodes)/i,
 /((funi|eng(lish)?)dub|\bdub\b|\bdubbed\b)/i,
-/(Golumpa|torenter69|KamiFS)/i
+/(Golumpa|torenter69|KamiFS|KaiDubs)/i
 ```
 
 #### Preferred
