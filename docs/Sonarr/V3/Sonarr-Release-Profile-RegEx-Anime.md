@@ -351,7 +351,7 @@ BluRay / Dual-Audio / 1st Tier
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b)/i
 ```
 
 ```bash
@@ -369,7 +369,7 @@ BluRay / Dual-Audio / Scene|P2P Groups
 ```
 
 ```bash
-/(\BMF\b|\[STRiFE\]|-STRiFE\b)/i
+/(\bBMF\b|\[STRiFE\]|-STRiFE\b)/i
 ```
 
 ---
