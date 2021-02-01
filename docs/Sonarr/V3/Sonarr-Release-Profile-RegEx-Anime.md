@@ -185,7 +185,7 @@ Add this to your Preferred with a score of **[100]/[-10000]**
 If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
 
 ```bash
-/(uncut|unrated|uncensored)/i
+/(uncut|unrated|uncensored|\b(AT[-_. ]?X)\b/i)/i
 ```
 
 !!! note
@@ -288,7 +288,7 @@ Add this to your Preferred with a score of **[5]**
 !!! important
     This is the end of the optional section.
 
-Add this to your Preferred with a score of **[4500]**
+Add this to your Preferred with a score of **[4000]**
 
 BluRay-Remux / Dual-Audio / 1st Tier
 
@@ -314,7 +314,7 @@ BluRay-Remux / Dual-Audio / 1st Tier
 
 ---
 
-Add this to your Preferred with a score of **[4250]**
+Add this to your Preferred with a score of **[3750]**
 
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
@@ -324,7 +324,7 @@ BluRay / Dual-Audio / Special (Releases they have are in between below releases 
 
 ---
 
-Add this to your Preferred with a score of **[4000]**
+Add this to your Preferred with a score of **[3500]**
 
 BluRay / Dual-Audio / 1st Tier
 
@@ -342,16 +342,6 @@ BluRay / Dual-Audio / 1st Tier
 
 ---
 
-Add this to your Preferred with a score of **[3500]**
-
-BluRay / Dual-Audio / 2nd Tier
-
-```bash
-/(MKVULTRA|iAHD|ANiHLS)/i
-```
-
----
-
 Add this to your Preferred with a score of **[3000]**
 
 BluRay / Dual-Audio / Scene|P2P Groups
@@ -364,11 +354,15 @@ BluRay / Dual-Audio / Scene|P2P Groups
 /(\bBMF\b|\[STRiFE\]|-STRiFE\b)/i
 ```
 
+```bash
+/(MKVULTRA|iAHD|ANiHLS)/i
+```
+
 ---
 
 Add this to your Preferred with a score of **[2500]**
 
-BluRay / Dual-Audio / 3rd Tier
+BluRay / Dual-Audio / 2ndd Tier
 
 ```bash
 /(\[YURASUKA\]|-YURASUKA\b|karios|Arukoru)/i
