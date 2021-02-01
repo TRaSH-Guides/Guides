@@ -185,7 +185,7 @@ Add this to your Preferred with a score of **[100]/[-10000]**
 If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
 
 ```bash
-/(uncut|unrated|uncensored|\b(AT[-_. ]?X)\b/i)/i
+/(uncut|unrated|uncensored|\b(AT[-_. ]?X)\b)/i
 ```
 
 !!! note
