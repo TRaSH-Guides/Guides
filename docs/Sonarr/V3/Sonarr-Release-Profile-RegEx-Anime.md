@@ -124,7 +124,7 @@ RESULTS:
 
 ## Quality Profile
 
-We need to add HDTV-1080p into the same group as WEB-DL and WEBRip 1080p so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.
+We need to add `HDTV-1080p` and `Bluray-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.
 
 ![!rpa-quality-profile-group](images/rpa-quality-profile-group.png)
 
@@ -185,7 +185,7 @@ Add this to your Preferred with a score of **[100]/[-10000]**
 If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
 
 ```bash
-/(uncut|unrated|uncensored)/i
+/(uncut|unrated|uncensored|\b(AT[-_. ]?X)\b/i)/i
 ```
 
 !!! note
@@ -213,8 +213,8 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(\[EMBER\]|-EMBER\b)/i,
 /(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
-/\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
-/\b(LowPower|Scryous)\b(?=[ ._-]?(raws)\b)/i,
+/\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\b/i,
+/\b(LowPower|Scryous)[ ._-]?(raws)\b/i,
 /\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\b/i,
 /(Amb3r|DsunS|ExREN|\$tore-Chill)/i,
 /(\[Hatsuyuki\]|-Hatsuyuki\b|\[Hitoku\]|-Hitoki\b)/i,
@@ -223,8 +223,8 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(neoHEVC|Pantsu|\[Pao\]|-Pao\b|Plex Friendly)/i,
 /(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i,
 /(\bSHFS\b|StrayGods|\bUQW\b|Yabai_Desu_Ne)/i,
-/(YakuboEncodes)/i,
-/((funi|eng(lish)?)dub|\bdub\b|\bdubbed\b)/i,
+/(YakuboEncodes|\b(WtF[ ._-]?Anime)\b)/i,
+/((funi|eng(lish)?)_?dub|\bdub(bed)?\b)/i,
 /(Golumpa|torenter69|KamiFS|KaiDubs)/i
 ```
 
@@ -243,18 +243,6 @@ Add this to your Preferred with a score of **[501]**
 
 ```bash
 /dual[ ._-]?audio|EN\+JA|JA\+EN/i
-```
-
----
-
-Add this to your Preferred with a score of **[4000]**
-
-!!! note
-
-    We are adding this as **4000** so that any unknown `Blu-Ray Remux` will get sent to the at least the second tier of Blu-Ray Remux and download and not skip it.
-
-```bash
-/\b((BD)?[-_. ]?Remux)\b/i
 ```
 
 ---
@@ -300,7 +288,7 @@ Add this to your Preferred with a score of **[5]**
 !!! important
     This is the end of the optional section.
 
-Add this to your Preferred with a score of **[4500]**
+Add this to your Preferred with a score of **[4000]**
 
 BluRay-Remux / Dual-Audio / 1st Tier
 
@@ -320,14 +308,8 @@ BluRay-Remux / Dual-Audio / 1st Tier
 /(\[Spark\]|-Spark\b|\bREVO\b|\bSRLS\b|ANThELIa)/i
 ```
 
----
-
-Add this to your Preferred with a score of **[4000]**
-
-BluRay-Remux / Dual-Audio / 2nd Tier
-
 ```bash
-/(iAHD|ANiHLS|MKVULTRA|\[Vanilla\]|-Vanilla\b)/i
+/(\[Vanilla\]|-Vanilla\b|\bAP\b)/i
 ```
 
 ---
@@ -347,15 +329,15 @@ Add this to your Preferred with a score of **[3500]**
 BluRay / Dual-Audio / 1st Tier
 
 ```bash
-/(\bHAiKU\b|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars|Hark0N)/i
+/(\bHAiKU\b|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars)/i
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b)/i
 ```
 
 ```bash
-/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu)/i
+/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu|\bPn8\b|Hark0N)/i
 ```
 
 ---
@@ -369,21 +351,25 @@ BluRay / Dual-Audio / Scene|P2P Groups
 ```
 
 ```bash
-/(\BMF\b|\[STRiFE\]|-STRiFE\b)/i
+/(\bBMF\b|\[STRiFE\]|-STRiFE\b)/i
+```
+
+```bash
+/(MKVULTRA|iAHD|ANiHLS)/i
 ```
 
 ---
 
 Add this to your Preferred with a score of **[2500]**
 
-BluRay / Dual-Audio / 2nd Tier
+BluRay / Dual-Audio / 2ndd Tier
 
 ```bash
 /(\[YURASUKA\]|-YURASUKA\b|karios|Arukoru)/i
 ```
 
 ```bash
-/(\bRH\b|Arukoru|\[Prof\]|-Prof\b|KAN3D2M)/i
+/(\bRH\b|\[Prof\]|-Prof\b)/i
 ```
 
 ---
@@ -423,7 +409,7 @@ Add this to your Preferred with a score of **[300]**
 Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Portuguese and English
 
 ```bash
-/(Erai-raws)/i
+/(Erai-raws|KAN3D2M)/i
 ```
 
 ---
