@@ -124,7 +124,7 @@ RESULTS:
 
 ## Quality Profile
 
-We need to add HDTV-1080p into the same group as WEB-DL and WEBRip 1080p so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.
+We need to add `HDTV-1080p` and `Bluray-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.
 
 ![!rpa-quality-profile-group](images/rpa-quality-profile-group.png)
 
@@ -213,7 +213,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 /(\[EMBER\]|-EMBER\b)/i,
 /(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
-/\b(Beatrice|ohys|Kawaiika|neko)\b(?=[ ._-]?(raws)\b)/i,
+/\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\b/i,
 /\b(LowPower|Scryous)[ ._-]?(raws)\b/i,
 /\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\b/i,
 /(Amb3r|DsunS|ExREN|\$tore-Chill)/i,
@@ -243,18 +243,6 @@ Add this to your Preferred with a score of **[501]**
 
 ```bash
 /dual[ ._-]?audio|EN\+JA|JA\+EN/i
-```
-
----
-
-Add this to your Preferred with a score of **[4000]**
-
-!!! note
-
-    We are adding this as **4000** so that any unknown `Blu-Ray Remux` will get sent to the at least the second tier of Blu-Ray Remux and download and not skip it.
-
-```bash
-/\b((BD)?[-_. ]?Remux)\b/i
 ```
 
 ---
@@ -320,19 +308,13 @@ BluRay-Remux / Dual-Audio / 1st Tier
 /(\[Spark\]|-Spark\b|\bREVO\b|\bSRLS\b|ANThELIa)/i
 ```
 
----
-
-Add this to your Preferred with a score of **[4000]**
-
-BluRay-Remux / Dual-Audio / 2nd Tier
-
 ```bash
-/(iAHD|ANiHLS|MKVULTRA|\[Vanilla\]|-Vanilla\b)/i
+/(\[Vanilla\]|-Vanilla\b|\bAP\b)/i
 ```
 
 ---
 
-Add this to your Preferred with a score of **[3750]**
+Add this to your Preferred with a score of **[4250]**
 
 BluRay / Dual-Audio / Special (Releases they have are in between below releases and remuxes above.)
 
@@ -342,20 +324,30 @@ BluRay / Dual-Audio / Special (Releases they have are in between below releases 
 
 ---
 
-Add this to your Preferred with a score of **[3500]**
+Add this to your Preferred with a score of **[4000]**
 
 BluRay / Dual-Audio / 1st Tier
 
 ```bash
-/(\bHAiKU\b|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars|Hark0N)/i
+/(\bHAiKU\b|Exiled-Destiny|\b(E-D)\b|Koten[ ._-]Gars)/i
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b|)/i
 ```
 
 ```bash
-/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu)/i
+/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu|\bPn8\b|Hark0N)/i
+```
+
+---
+
+Add this to your Preferred with a score of **[3500]**
+
+BluRay / Dual-Audio / 2nd Tier
+
+```bash
+/(MKVULTRA|iAHD|ANiHLS)/i
 ```
 
 ---
@@ -376,14 +368,14 @@ BluRay / Dual-Audio / Scene|P2P Groups
 
 Add this to your Preferred with a score of **[2500]**
 
-BluRay / Dual-Audio / 2nd Tier
+BluRay / Dual-Audio / 3rd Tier
 
 ```bash
 /(\[YURASUKA\]|-YURASUKA\b|karios|Arukoru)/i
 ```
 
 ```bash
-/(\bRH\b|Arukoru|\[Prof\]|-Prof\b)/i
+/(\bRH\b|\[Prof\]|-Prof\b)/i
 ```
 
 ---
@@ -403,7 +395,7 @@ Add this to your Preferred with a score of **[1500]**
 WebSource / Dual-Audio
 
 ```bash
-/(xPearse|\bMCR\b|\bKS\b|KiyoshiStar|KAN3D2M)/i
+/(xPearse|\bMCR\b|\bKS\b|KiyoshiStar)/i
 ```
 
 ---
@@ -423,7 +415,7 @@ Add this to your Preferred with a score of **[300]**
 Subs with multi such as German, French , Spanish, Italian, Russian, Arabic, Portuguese and English
 
 ```bash
-/(Erai-raws)/i
+/(Erai-raws|KAN3D2M)/i
 ```
 
 ---
