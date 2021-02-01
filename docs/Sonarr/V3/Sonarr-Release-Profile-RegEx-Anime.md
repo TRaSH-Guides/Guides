@@ -333,7 +333,7 @@ BluRay / Dual-Audio / 1st Tier
 ```
 
 ```bash
-/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b|)/i
+/(\[GHOST\]|-GHOST\b|\[NPC\]|-NPC\b|\bCBM\b)/i
 ```
 
 ```bash
