@@ -36,4 +36,23 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 
 ## Sonarr Quality Definitions
 
+| Quality            | Minimum | Maximum |
+| ------------------ | ------- | ------- |
+| HDTV-720p          | 17.9    | 45      |
+| HDTV-1080p         | 22.8    | 137.3   |
+| WEBRip-720p        | 20      | 90      |
+| WEBDL-720p         | 20      | 90      |
+| Bluray-720p        | 35      | 90      |
+| WEBRip-1080p       | 22.8    | 137.3   |
+| WEBDL-1080p        | 22.8    | 137.3   |
+| Bluray-1080p       | 55.4    | 227     |
+| Bluray-1080p Remux | 69.1    | 282.4   |
+| HDTV-2160p         | 96.5    | 350     |
+| WEBRip-2160p       | 96.5    | 350     |
+| WEBDL-2160p        | 96.5    | 350     |
+| Bluray-2160p       | 96.5    | 399.9   |
+| Bluray-2160p Remux | 204.4   | 400     |
+
+### Example Screenshot
+
 ![!Sonarr Quality Definitions](images/sqs-sonarr-quality-definitions.png)
