@@ -38,4 +38,22 @@ This Quality Settings has been created and tested with info I got from others, a
 
 ## Radarr Quality Definitions
 
-![!Radarr Quality Definitions](images/rqs-radarr-quality-definitions.png)
+| Quality            | Minimum | Maximum |
+| ------------------ | ------- | ------- |
+| HDTV-720p          | 17.1    | 400     |
+| WEBDL-720p         | 17.1    | 400     |
+| WEBRip-720p        | 17.1    | 400     |
+| Bluray-720p        | 25.7    | 400     |
+| HDTV-1080p         | 33.7    | 400     |
+| WEBDL-1080p        | 33.7    | 400     |
+| WEBRip-1080p       | 33.7    | 400     |
+| Bluray-1080p       | 50.8    | 400     |
+| Bluray-1080p Remux | 170.8   | 400     |
+| HDTV-2160p         | 85      | 400     |
+| WEBDL-2160p        | 85      | 400     |
+| WEBRip-2160p       | 85      | 400     |
+| Bluray-2160p       | 102     | 400     |
+| Bluray-2160p Remux | 221.5   | 400     |
+
+!!! note
+    The reason why you don't see the preferred score in the Table is because we want max quality anyway so as high as possible.
