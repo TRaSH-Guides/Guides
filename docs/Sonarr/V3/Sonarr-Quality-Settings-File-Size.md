@@ -55,7 +55,7 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 
 ------
 
-### Sonarr Quality Definitions Anime
+### Sonarr Quality Definitions - Anime (Work in Progress)
 
 | Quality            | Minimum | Maximum |
 | ------------------ | ------- | ------- |
