@@ -23,7 +23,7 @@ This Quality Settings has been created and tested with info I got from others, a
 
     **Q: When I set Bluray to MAX size I get often ISO's/ Bluray folder structure.**
 
-    A: You probable have configured your Quality Profiles wrong and enabled BR-DISK and didn't add the recommended Custom Profile to help Radarr to block/ignore it. [BR-DISK](Collection-of-Custom-Formats-for-RadarrV3.md#br-disk)
+    A: You probable have configured your Quality Profiles wrong and enabled BR-DISK and didn't add the recommended Custom Profile to help Radarr to block/ignore it. [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
 
     **Q: Some movies won't be grabbed because of these settings.**
 
