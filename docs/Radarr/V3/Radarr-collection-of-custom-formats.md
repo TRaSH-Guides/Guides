@@ -13,7 +13,10 @@ With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, a
 
 After requesting at Team Radarr we now have the options to import/export the Custom Formats in a JSON format that we can use here what makes it easier to share the different kind of Custom Formats.
 
-I also made a [Guide](How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md) on how to import/export the Custom Formats and how to truly make use of it.
+I also made 2 guides related to this one.
+
+- [How to import Custom Formats](/Radarr/V3/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
+- [How to setup Custom Formats](/Radarr/V3/Radarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"} Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
 
 !!! tip
 
