@@ -2546,7 +2546,7 @@ You will need to add the following to your new Custom Format when created in you
 
 It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
 
-So I created my own golden rule.
+That's why I created my own golden rule.
 
 - 720/1080p => x264
 - 2160p/4k => x265
@@ -2901,7 +2901,7 @@ x265 is a *free software library* and *application* for encoding video streams i
 
 It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
 
-So I created my own golden rule.
+That's why I created my own golden rule.
 
 - 720/1080p => x264
 - 2160p/4k => x265
