@@ -203,7 +203,7 @@ Add this to your `Must not contain (2)`
 
     It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
 
-    So I created my own golden rule.
+    That's why  I created my own golden rule.
 
     - 720/1080p => x264
     - 2160p/4k => x265
