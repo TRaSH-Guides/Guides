@@ -1,4 +1,4 @@
-# Discord Notifiarr Basic Setup
+# Discord Notifiarr Setup
 
 <sub>Formerly aka Discord Notifier<sub>
 
@@ -382,7 +382,17 @@ Scroll up and save
     Run the python file so it listens on the specific port.
     </div>
 
-### Testing
+### Snapshots
+
+![!dn-snapshot-setup](images/dn-snapshot-setup.png)
+
+1. Temperature measurement for notifications
+1. Alert settings
+1. Who to mention when alerts are triggered (role or user)
+1. List of existing alerts
+1. Option to only get a snapshot notification if there is an alert triggered
+
+## Testing
 
 On the bottom of all the instruction you will now have the ability to test your settings. This only tests the connection between the notifier and your discord. You can use the Test in each *arr and that will test the everything (connection wise).
 

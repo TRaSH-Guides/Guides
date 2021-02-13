@@ -1,0 +1,7 @@
+nav:
+    - Home: index.md
+    - Discord Notifiarr Setup: Discord-Notifiarr-Setup.md
+    - How to provide a docker compose: how-to-provide-a-docker-compose.md
+    - How To Set Up Hardlinks and Atomic-Moves: how-to-set-up-hardlinks-and-atomic-moves.md
+    - Setup TorGuard for port forwarding: How-to-setup-Torguard-for-port-forwarding.md
+    - x265-4k and Golden Rule: x265-4k.md
