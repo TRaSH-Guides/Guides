@@ -157,6 +157,14 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ??? success "example"
 
+    !!! attention
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+
+        - Always follow the data described in the guide (with the copy paste/option at the end).
+        - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
+        [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+
     ![!rp-release-sources](images/rp-release-sources.png)
 
 ------
@@ -275,6 +283,14 @@ Add this to your `Preferred (3)` with a score of [10]
 
 ??? success "example"
 
+    !!! attention
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+
+        - Always follow the data described in the guide (with the copy paste/option at the end).
+        - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
+        [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+
     ![!rp-p2p-groups](images/rp-p2p-groups.png)
 
 ------
@@ -292,6 +308,14 @@ Add this to your `Preferred (3)` with a score of [-100]
 ```
 
 ??? success "example"
+
+    !!! attention
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+
+        - Always follow the data described in the guide (with the copy paste/option at the end).
+        - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
+        [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
     ![!rp-lq-groups](images/rp-lq-groups.png)
 
@@ -390,11 +414,21 @@ The reason why I got multiple entry's with the same score is because the line wi
 
 When you've done it correctly it will look something like this.
 
-![!rp-groups](images/rp-groups.png)
+??? success "example"
 
-And after you clicked on `Save` it will look something like this:
+    !!! attention
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
-![!rp-profiles](images/rp-profiles.png)
+        - Always follow the data described in the guide (with the copy paste/option at the end).
+        - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
+        [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+
+    ![!rp-groups](images/rp-groups.png)
+
+    And after you clicked on `Save` it will look something like this:
+
+    ![!rp-profiles](images/rp-profiles.png)
 
 ------
 
