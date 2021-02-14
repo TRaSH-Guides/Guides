@@ -10,6 +10,12 @@ Here I will try to explain with some personal used examples how to make the most
 
 ------
 
+!!! important
+
+    I also suggest to change the Propers and Repacks settings in Radarr !!!
+
+    Instructions can be found [HERE](#proper-and-repacks)
+
 ## Basics
 
 First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/V3/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}.
