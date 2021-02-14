@@ -1,4 +1,4 @@
-# Discord Notifiarr Setup
+# Quick Setup
 
 <sub>Formerly aka Discord Notifier<sub>
 

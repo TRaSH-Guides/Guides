@@ -3,6 +3,7 @@ nav:
     - Radarr
     - Sonarr
     - Bazarr
+    - Notifiarr
     - NZBGet
     - Plex
     - Misc
