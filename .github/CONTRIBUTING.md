@@ -13,4 +13,4 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 
 ## Recommendations
 
-- use [VSCode](https://code.visualstudio.com/) for editing with the following extension  [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlintd)
+- use [VSCode](https://code.visualstudio.com/) for editing with the following extension  [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
