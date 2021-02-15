@@ -4,11 +4,11 @@ This can be a struggle depending on how you have your server setup. If you want 
 
 ---
 
-I will work on the assumption you have created a role called **Bots** already with this and assigned the Notifiarr bot to it. With that said, right click on your server name at the top and pick `Server Settings > Roles`. Click on the Bots role so the permissions list loads. 
+I will work on the assumption you have created a role called **Bots** already with this and assigned the Notifiarr bot to it. With that said, right click on your server name at the top and pick `Server Settings > Roles`. Click on the Bots role so the permissions list loads.
 
 > Yes I am aware that adding the bot automatically creates a **Notifiarr** role but most will rather leave that one hidden and use an existing role. If you want to use that one, make sure all the same permissions are applied to it.
 
-**Required permissions**
+## **Required permissions**
 
 1. `View Channels`
     - The bot needs this role to generate a channel list so you can assign which notifications go to which channels on your server. If the channel is a private channel, you may also need to adjust channel specific permissions.
@@ -29,6 +29,6 @@ I will work on the assumption you have created a role called **Bots** already wi
 
 ---
 
-If you manage your channels with individual permissions **plus** bot permissions, you will need to adjust them accordingly so the bot can do its job. If you have permissions mis-configured then the site will auto disable the integration after 25 Discord API errors. If you are using reactions and get API errors, the site will auto remove the reaction. If you are using the bot and have cleanup history enabled and get API errors, the site will auto disable that. 
+If you manage your channels with individual permissions **plus** bot permissions, you will need to adjust them accordingly so the bot can do its job. If you have permissions mis-configured then the site will auto disable the integration after 25 Discord API errors. If you are using reactions and get API errors, the site will auto remove the reaction. If you are using the bot and have cleanup history enabled and get API errors, the site will auto disable that.
 
 You will know when the site does this with a big red notice on top of the setup page that explains the error that Discord reported and what action was taken. All you have to do is fix the issue and re-enable what the site disabled from that point.

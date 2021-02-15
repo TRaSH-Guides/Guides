@@ -9,6 +9,7 @@ Reaction example:
 ---
 
 ## Trigger options
+
 ![!triggers-channels](images/Bazarr/triggers-channels.png "Triggers and Channels")
 
 1. Triggers
@@ -22,6 +23,7 @@ Reaction example:
 ---
 
 ## Configuration
+
 ![!open-configuration](images/Bazarr/open-configuration.png "Open Configuration Window")
 
 Click the **cog icon** to open the configuration options for Bazarr.
@@ -30,12 +32,13 @@ Click the **cog icon** to open the configuration options for Bazarr.
 
 1. Open integration specific instructions
 1. Choose the notification format
-1. Enable reactions for *arr notifications when a subtitle is found if the associated *arr notification can be found
+1. Enable reactions for `*arr` notifications when a subtitle is found if the associated `*arr` notification can be found
 
 ### Instructions
+
 ![!instructions](images/Bazarr/instructions.png "Instructions Window")
 
 1. How to enable notifications from within Bazarr
 1. How to enable notifications of a 2nd instance from within Bazarr
-3. Test the notification from Notifiarr to Discord
+1. Test the notification from Notifiarr to Discord
     - This will ensure your server, channel and permissions are set properly in Discord.
