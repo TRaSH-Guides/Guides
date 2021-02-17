@@ -29,7 +29,7 @@ Click the **cog icon** to open the configuration options for Radarr.
 
 1. Open integration specific instructions
 1. Notification colors for each trigger type
-1. Unique notifications: Generate a new notification each time (By default notifications edit the previous one so there is a Grab and then the Download ot Upgrade will edit the Grab notification to eliviate the notification spam)
+1. Unique notifications: Generate a new notification each time (By default notifications edit the previous one so there is a Grab and then the Download ot Upgrade will edit the Grab notification to alleviate the notification spam)
 1. Option to remove the grab once a successful import is done, only works with granular channels since messages in the same channel update
 
 ![!configuration](images/Radarr/configuration-2.png "Configuration Window")
