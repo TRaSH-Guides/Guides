@@ -38,11 +38,11 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 
 | Quality            | Minimum | Maximum |
 | ------------------ | ------- | ------- |
-| HDTV-720p          | 17.9    | 67.5    |
+| HDTV-720p          | 15      | 67.5    |
 | HDTV-1080p         | 20      | 137.3   |
 | WEBRip-720p        | 20      | 137.3   |
 | WEBDL-720p         | 20      | 137.3   |
-| Bluray-720p        | 34.9    | 137.3   |
+| Bluray-720p        | 25      | 137.3   |
 | WEBRip-1080p       | 22      | 137.3   |
 | WEBDL-1080p        | 22      | 137.3   |
 | Bluray-1080p       | 50.4    | 227     |
