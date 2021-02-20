@@ -1,6 +1,8 @@
-# Quick Setup
+# Quick Start
 
-<sub>Formerly aka Discord Notifier<sub>
+Here we're going to explain the basics setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr and Plex.
+
+If you want to make use of the other options I suggest to look at the advanced guide descriptions.
 
 ------
 
@@ -30,7 +32,7 @@ After you have logged in, you will be redirected to your profile screen.
 1. Click on `Generate API Key` (This needs to be done).
 1. Select your `Notification Language`.
 1. Change your `Time Format` to your liking.
-1. Don't forget to Save your Changes.
+1. Don't forget to `Save` your Changes.
 
 ------
 
@@ -53,7 +55,7 @@ When you enabled the ones you want click on `Save`
 
 Setup which notifications you want to to receive from each option.
 
-![!dn-notifcation-settings-radarr](images/dn-notifcation-settings-radarr.png)
+![!dn-notifcation-settings](images/dn-notifcation-settings.png)
 
 1. Cog wheel, this opens the integration settings
 1. External link, this opens the website for the integration
@@ -61,23 +63,14 @@ Setup which notifications you want to to receive from each option.
 1. Trigger, this enables/disables a specific trigger for the integration
 1. Channels, this sets the channel in your server to post to for the integration
 
-??? example "Integration Settings (Cog wheel)"
-
-    #### Notification Settings Configuration
-
-    ![!!dn-integration-settings](images/dn-integration-settings.png)
-
-    1. [Instructions how to setup the integration](#integrations)
-    1. Enable/Disable notification trigger
-    1. Change color bar for notification trigger
-    1. Expand trigger to enable/disable message fields
-    1. Customize the layout for the notification (drag/drop editor to the right in the image)
-    1. Enable so each notification is unique and wont update existing ones.
-    1. Here you can edit the layout
-
 ### Discord Settings
 
-Setup your discord server, shared channels, reactions and invite the bot into your server.
+Here we will cover the following
+
+- Setup the server & shared channels.
+- Invite the bot into your server.
+- Setup reactions.
+- Setup Indexers reactions.
 
 #### Create the channels
 
@@ -90,7 +83,7 @@ You can do it all from one channel or separate the notifications (granular) for 
 
 #### Simple channel setup
 
-`#media` => All the `*arr` notifications you setup in [Notification Settings](#notification-settings).
+`#media` => All the `*arr` notifications you setup in [Integration Settings](#integration-settings).
 
 `#errors` => Health checks, network errors, etc.
 
@@ -104,33 +97,21 @@ Open your User Settings -> Appearance -> Enable Developer Mode.
 
 ![!dn-discord-dev-mode](images/dn-discord-dev-mode.png)
 
- Right click on the server name at the top of your discord and press "Copy ID"
+ Right click on your server name and select "Copy ID"
 
 ??? example "Example right click"
     ![!dn-discord-copyid](images/dn-discord-copyid.png)
 
-Paste the channel ID in the corresponding boxes
+Paste the server ID in box `[1]`
 
 ![!dn-channel-paste](images/dn-channel-paste.png)
 
 1. Add your server ID
-1. Select the channel ID for the `#media` channel.
-1. Use this option if you want to use separate channels for the notifications (see below).
-1. Select the channel ID for the `#errors` channel.
-1. Select the channel ID for the `#plex` channel.
-1. Use this option if you want to use separate channels for the notifications (see below).
-
-??? example "Granular arr setup"
-
-    ##### Granular arr setup
-
-    ![!dn-granular-arr-setup](images/dn-granular-arr-setup.png)
-
-??? example "Granular media setup"
-
-    ##### Granular media setup
-
-    ![!dn-granular-media-setup](images/dn-granular-media-setup.png)
+1. Select the channel for the `#media` channel.
+1. Use this option if you want to use separate channels for the notifications.
+1. Select the channel for the `#errors` channel.
+1. Select the channel for the `#plex` channel.
+1. Use this option if you want to use separate channels for the notifications.
 
 ### Invite the bot
 
@@ -143,25 +124,14 @@ You will get a screen that looks like the following screenshot.
 ![!dn-invite-bot-discord](images/dn-invite-bot-discord.png)
 
 1. Select the server the bot should join.
-1. Click on `Authorize` to approve.
+1. Click on `Continue` to approve.
 
 !!! note
-    You have to be an administrator of the Discord channel to invite bots. Make sure the bot has permissions to post.
-
-??? summary "Bot Setup Help"
-    Right click on your server > Server Settings > Roles
-
-    If you have a Bot role you can skip this, otherwise click the + next to ROLES
-
-    Name the role Bot and scroll down to Text Permissions.
-
-    Enable `Send Messages`, `Embed Links` & `Add Reactions`
-
-    Go back to your server, right click on the Media Bot and assign the role of Bot
+    Check [Discord Permissions](/Notifiarr/Discord-Permissions/) for information which permissions the bot needs.
 
 #### Reactions
 
-Here we will setup the Discord Notifier reactions(emoji's) that will be shown during a playback in plex, or during a download/import in Sonarr/Radarr.
+Here we will setup the Notifiarr reactions(emoji's) that will be shown during a playback in plex, or during a download/import in Sonarr/Radarr.
 
 ![dn-reaction-1](images/dn-reaction-1.png)![dn-reaction-2](images/dn-reaction-2.png)
 
@@ -224,17 +194,25 @@ Don't forget to click on `Save Changes` !!!
 
 ------
 
-## Integrations
+## How to add notifiarr to your applications
 
-Here we will explain how to we add all this to your *arr and Plex.
+Here we will explain how to we add notifiarr to your *arr and Plex.
+
+When you click on the cogwheel of the enabled Integration you will see on the top `Instructions`
 
 ![!dn-integration-settings-link](images/dn-integration-settings-link.png)
 
+It will show you a short description where and how to add what.
+
+??? example
+
+    ![!dn-radarr-integration-instructions](images\dn-radarr-integration-instructions.png)
+
 ### Radarr, Readarr and Lidarr
 
-Radarr, Readarr and Lidarr supports Discord Notifier natively so that's an easy one to add.
+Radarr, Readarr and Lidarr supports Notifiarr natively so that's an easy one to add.
 
-`Settings` => `Connect` => click on the ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) `plus` icon and select `Discord Notifier` add your API key and you're done.
+`Settings` => `Connect` => click on the ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) `plus` icon and select `Notifiarr` add your API key and you're done.
 
 ??? example "Radarr Example"
     In Radarr go to `Settings` => `Connect` => Click on the ![dn-arr-add-plus](images/dn-arr-add-plus.png) `plus` icon and select `DiscordNotifier.com`.
@@ -247,7 +225,7 @@ Radarr, Readarr and Lidarr supports Discord Notifier natively so that's an easy 
 
     1. The name you want to use for the notification.
     1. Enable `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
-    1. Add here you API key from Discord Notifier.
+    1. Add here you API key from Notifiarr.
     1. Click on `Test` to see if it works.
     1. If everything is correct click on `Save`
 
@@ -262,7 +240,7 @@ That's why we're going to use the webhook method.
 
 Add the following info:
 
-**Name**: Discord Notifier
+**Name**: Notifiarr
 
 **Enable:** `On Grab`, `On Import`, `On Upgrade`, `On Health Issue` & `Include Health Warnings`.
 
@@ -324,8 +302,6 @@ Scroll up and save
 
 ### Plex
 
-#### URL Webhook
-
 ![!dn-plex-instructions](images/dn-plex-instructions.png)
 
 `Settings` => `Webhooks` => click on `ADD WEBHOOK` and add the URL that you can copy/paste from the integrations page and click on `SAVE CHANGES`
@@ -342,61 +318,7 @@ Scroll up and save
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
-??? info "Advanced Plex Settings"
+If you want to show more advanced info like Transcode, CPU & Ram take a look at [link to plex instructions][/Notifiarr/plex_instructions/]
 
-    ### Advanced Plex Settings
-
-    ![!dn-plex-advanced](images/dn-plex-advanced.png)
-
-    #### Python Webhook
-
-    <div class="indent-L1 indent-B1">
-    Python is required for this to work. Make sure your docker solution has it available if running docker.
-    </div>
-
-    #### All implementations
-
-    - Open the file and change the variables accordingly.
-    - There are links in the file comments to help as well
-    - You can test the script by typing python /path/to/script in your CLI. If the file has a shebang in it (#!python) then you do not need to specify python on the CLI.
-
-    ##### Docker
-
-    - Cloudbox - Has python installed
-    - Hotio - Has python installed
-    - LSIO - Does not have python installed
-
-    ##### Linux
-
-    placeholder
-
-    ##### Unraid
-
-    placeholder
-
-    ##### Windows
-
-    placeholder
-
-    <div class="indent-L1 indent-B1">
-    Run the python file so it listens on the specific port.
-    </div>
-
-### Snapshots
-
-![!dn-snapshot-setup](images/dn-snapshot-setup.png)
-
-1. Temperature measurement for notifications
-1. Alert settings
-1. Who to mention when alerts are triggered (role or user)
-1. List of existing alerts
-1. Option to only get a snapshot notification if there is an alert triggered
-
-## Testing
-
-On the bottom of all the instruction you will now have the ability to test your settings. This only tests the connection between the notifier and your discord. You can use the Test in each *arr and that will test the everything (connection wise).
-
-![dn-test-icons-bar](images/dn-test-icons-bar.png)
-
-Click on the icons to test your notifications.
-After going through this tutorial and you still aren't getting notifications in your discord channel from the respective logos, then retry the steps outlined above.  If there is still an issue, try asking in the Discord Notifier [discord channel](https://discord.gg/AURf8Yz){:target="_blank" rel="noopener noreferrer"} for additional support.
+!!! note
+    If there is still an issue, try asking in the Notifiarr [discord channel](https://discord.gg/AURf8Yz){:target="_blank" rel="noopener noreferrer"} for additional support.
