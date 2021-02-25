@@ -7,9 +7,31 @@ Here I will try to explain how you can import Custom Formats for Radarr v3.
 
     **Quality Profile trumps Custom Formats**
 
+## How to Copy/Paste the JSON from the site
+
+In this example i will use the [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr or Plex being both don't support it.
+
+Visit the [Collection of Custom Formats](/Radarr/V3/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and from the Table select [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
+
+??? success "example"
+
+    ![cf-table-select-brdisk](images/cf-table-select-brdisk.png)
+
+After you selected it you expand the JSON
+
+??? success "example"
+
+    ![cf-json-expand](images/cf-json-expand.png)
+
+Then you select the Copy/Paste icon on the top far right
+
+??? success "example"
+
+    ![cf-json-copy-paste](images/cf-json-copy-paste.png)
+
 ## How to import a JSON Custom Format
 
-In this example i will use the [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr, Plex being both don't support it.
+In Radarr
 
 `Settings` => `Custom Formats`
 

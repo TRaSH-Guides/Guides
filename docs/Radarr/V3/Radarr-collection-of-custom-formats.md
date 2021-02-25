@@ -2470,50 +2470,61 @@ A collection of known Low Quality groups that are often banned from the the top 
     - BLOCK2 = Another Small list of often banned groups.
     - BLOCK3 = And Another list.
     - BLOCK4 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+    - BLOCK5 = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying !!!
 
 ??? example "json"
 
     ```json
     {
-        "name": "Low Quality Releases",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-                "name": "[BLOCK1]",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\\bYIFY\\b|\\bYTS\\b|-STUTTERSHIT"
-                }
-            },
-            {
-                "name": "[BLOCK2]",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE"
-                }
-            },
-            {
-                "name": "[BLOCK3]",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "\\bRARBG\\b|-FGT|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole"
-                }
-            },
-            {
-                "name": "[BLOCK4]",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "-beAst|-CHD|-HDWinG|-MTeam|-MySiLU|-WiKi"
-                }
-            }
-        ]
+      "name": "Low Quality Releases",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "[BLOCK1]",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\\bYIFY\\b|\\bYTS\\b|-STUTTERSHIT"
+          }
+        },
+        {
+          "name": "[BLOCK2]",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE"
+          }
+        },
+        {
+          "name": "[BLOCK3]",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "\\bRARBG\\b|\\bFGT\\b|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole"
+          }
+        },
+        {
+          "name": "[BLOCK4]",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "-beAst|\\bCHD\\b|-HDWinG|\\bMTeam\\b|-MySiLU|-WiKi"
+          }
+        },
+        {
+          "name": "[BLOCK5]",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "\\bRifftrax\\b"
+          }
+        }
+      ]
     }
     ```
 
