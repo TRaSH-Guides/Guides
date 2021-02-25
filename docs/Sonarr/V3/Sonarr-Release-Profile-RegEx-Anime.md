@@ -595,11 +595,10 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
     /(AnimeKaizoku|Kaizoku|\bCBB\b|phazer11)/i,
     /(iPUNISHER|MiniTheatre|MiniFreeza|Mr\.Deadpool)/i,
     /(NemDiggers|Project-gxs|youshikibi)/i,
-    /(\bMD\b|Pog42|mdcx|\bPAS\b|SHiN-gx)/i,
+    /(\bMD\b|Pog42|mdcx)/i,
     /(A-Destiny|TOPKEK|\bUwU\b|DARKFLiX)/i,
     /(\[Maximus\]|-Maximus\b|\[224\]|-224\b)/i,
     /(\[Harunatsu\]|-Harunatsu\b)/i,
-    /(\[tenshi\]|-tenshi\b)/i,
     /(\[Davinci\]|-Davinci\b)/i
     ```
 
