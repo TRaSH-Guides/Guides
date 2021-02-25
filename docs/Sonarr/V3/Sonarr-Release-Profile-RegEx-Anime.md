@@ -474,6 +474,10 @@ FanSubs 2nd Tier
 /(\[Doki\]|-Doki\b|\[Chihiro\]|-Chihiro\b|Final8)/i
 ```
 
+```bash
+/(\[tenshi\]|-tenshi\b|\bPAS\b|SHiN-gx)/i
+```
+
 ---
 
 !!! note
@@ -563,7 +567,7 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(\bMD\b|Pog42|mdcx|\bPAS\b|SHiN-gx)/i
+/(\bMD\b|Pog42|mdcx)/i
 ```
 
 ```bash
@@ -576,10 +580,6 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 
 ```bash
 /(\[Harunatsu\]|-Harunatsu\b)/i
-```
-
-```bash
-/(\[tenshi\]|-tenshi\b)/i
 ```
 
 ```bash
