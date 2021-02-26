@@ -14,7 +14,7 @@ To make use of the profiles you need to add it in your your plex folder
 
 Example paths:
 
-* Hotio's container:  `/appdata/plex/app/Plex Media Server/Profiles`
+* Hotio's container:  `/appdata/plex/Profiles`
 * LSIO container: `/appdata/plex/will/follow/soon`
 
 ## Profiles
