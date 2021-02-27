@@ -326,7 +326,7 @@ Scroll up and save
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
-If you want to show more advanced info like Transcode, CPU & Ram take a look at [link to plex instructions][/Notifiarr/plex_instructions/]
+If you want to show more advanced info like Transcode, CPU & Ram take a look at [Plex Integration](/Notifiarr/Integrations-Setup/Plex/){:target="_blank" rel="noopener noreferrer"}
 
 !!! note
     If there is still an issue, try asking in the Notifiarr [discord channel](https://discord.gg/AURf8Yz){:target="_blank" rel="noopener noreferrer"} for additional support.
