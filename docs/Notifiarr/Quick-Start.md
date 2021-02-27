@@ -127,7 +127,7 @@ You will get a screen that looks like the following screenshot.
 1. Click on `Continue` to approve.
 
 !!! note
-    Check [Discord Permissions](/Notifiarr/Discord-Permissions/) for information which permissions the bot needs.
+    Check [Discord Permissions](/Notifiarr/Discord-Permissions/){:target="_blank" rel="noopener noreferrer"} for information which permissions the bot needs.
 
 #### Reactions
 
@@ -144,6 +144,14 @@ First we're going to download the emoji's and you can do that in 2 ways.
 
 1. 1 at a time - Right click -> Save As... - for these emoji images to some location on your computer.
 1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank" rel="noopener noreferrer"} to download a zip of all the current reaction images.
+
+!!! attention
+
+    To download the Emoji Pack from the link in this Guide you will need to be logged in  to [Notifiarr](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site !!!
+
+    Else you can find it on the main Notifiarr site in the `Integration Setup` Category at the bottom right
+
+    ![!dn-pack-download](images/dn-pack-download.png)
 
 For this example, we will be using Pack Download.  You'll need download the file and then unpack it somewhere on your computer.  After which, you can then add the emoji's to your Discord Server easily.
 
