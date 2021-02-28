@@ -210,7 +210,7 @@ The reason most of these are added is due to their shitty quality or just in gen
     If you would like `dub` releases then remove the last 2 lines and do not add them.
 
 ```bash
-/(\[EMBER\]|-EMBER\b)/i,
+/(\[EMBER\]|-EMBER\b|DaddySubs)/i,
 /(BDMV|M2TS)/i,
 /(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
