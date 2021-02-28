@@ -57,7 +57,8 @@ plugins:
         Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/V3/Radarr-import-custom-formats.md
         Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/V3/Sonarr-remote-path-mapping.md
-        Misc/Discord-Notifier-Basic-Setup.md: Misc/Discord-Notifiarr-Setup.md
+        Misc/Discord-Notifier-Basic-Setup.md: Notifiarr/Quick-Start.md
+        Misc/Discord-Notifiarr-Setup.md: Notifiarr/Quick-Start.md
 
 theme:
   name: material
