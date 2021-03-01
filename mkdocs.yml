@@ -65,7 +65,7 @@ plugins:
         cf.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         TorGuard.md: Misc/how-to-set-up-hardlinks-and-atomic-moves.md
         compose.md: Misc/how-to-provide-a-docker-compose.md
-        Golder-Rule.md: Misc/x265-4k.md
+        Golden-Rule.md: Misc/x265-4k.md
 
 theme:
   name: material
