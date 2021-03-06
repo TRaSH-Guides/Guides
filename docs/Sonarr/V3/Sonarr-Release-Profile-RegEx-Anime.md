@@ -211,7 +211,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 ```bash
 /(\[EMBER\]|-EMBER\b|DaddySubs)/i,
-/(BDMV|M2TS)/i,
+/(BDMV|M2TS|SSA)/i,
 /(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,
 /(Raws-Maji|\bKRP\b|M@nI|Kanjouteki|PuyaSubs)/i,
 /\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\b/i,
@@ -430,7 +430,7 @@ Add this to your Preferred with a score of **[200]**
 Subs 2nd Tier
 
 ```bash
-/(\[Mysteria\]|-Mysteria\b|Asenshi|AkihitoSubs|\bASW\b)/i
+/(\[Mysteria\]|-Mysteria\b|Asenshi)/i
 ```
 
 ```bash
@@ -444,7 +444,7 @@ Add this to your Preferred with a score of **[150]**
 Subs 3rd Tier
 
 ```bash
-/(Commie|\bGJM\b|kBaraka)/i
+/(\bGJM\b|kBaraka)/i
 ```
 
 ---
@@ -458,7 +458,7 @@ FanSubs 1st Tier
 ```
 
 ```bash
-/(Coalgirls|BlurayDesuYo|DameDesuYo)/i
+/(Coalgirls|BlurayDesuYo|DameDesuYo|\bPAS\b)/i
 ```
 
 ---
@@ -476,7 +476,17 @@ FanSubs 2nd Tier
 ```
 
 ```bash
-/(\[tenshi\]|-tenshi\b|\bPAS\b|SHiN-gx)/i
+/(\[tenshi\]|-tenshi\b|SHiN-gx)/i
+```
+
+---
+
+Add this to your Preferred with a score of **[25]**
+
+FanSubs 3rd Tier
+
+```bash
+/(AkihitoSubs|\bASW\b|Commie)/i
 ```
 
 ---
