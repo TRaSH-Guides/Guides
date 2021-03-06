@@ -38,9 +38,9 @@ I also made 2 guides related to this one.
 | :--------------------------------------- | --------------------------------------------- | ------------------------------------------- | ---------------------------- |
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [TrueHD ATMOS](#truehd-atmos)                 | [FLAC](#flac)                               | [1.0 Mono](#10-mono)         |
 | [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                               | [PCM](#pcm)                                 | [2.0 Stereo](#20-stereo)     |
-| [Surround Sounds](#surround-sounds)      | [ATMOS (indeterminate)](#atmos-indeterminate) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
-|                                          | [DD+ ATMOS (lossy)](#dd-atmos-lossy)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
-|                                          | [TrueHD (not ATMOS)](#truehd-not-atmos)       | [Basic Dolby Digital](#basic-dolby-digital) | [5.1 Surround](#51-surround) |
+| [Surround Sound](#surround-sound)      | [ATMOS (indeterminate)](#atmos-indeterminate) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
+|                                          | [DD+ ATMOS](#dd-atmos)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
+|                                          | [TrueHD](#truehd)       | [Basic Dolby Digital](#basic-dolby-digital) | [5.1 Surround](#51-surround) |
 |                                          | [DTS-HD MA](#dts-hd-ma)                       | [MP3](#mp3)                                 | [6.1 Surround](#61-surround) |
 |                                          | [Dolby Digital Plus](#dolby-digital-plus)     | [Opus](#opus)                               | [7.1 Surround](#71-surround) |
 |                                          | [DTS-ES](#dts-es)                             |                                             | [9.1 Surround](#91-surround) |
@@ -52,7 +52,7 @@ I also made 2 guides related to this one.
 | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
 | [Dolby Vision](#dolby-vision)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
 | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-except-web-dl)       | [Streaming Services](#streaming-services) |
-| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#low-quality-releases) | [HQ-P2P](#hq-p2p)                         |
+| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq-releases) | [High Quality Releases](#hq-releases)                         |
 | [HDR (indeterminate)](#hdr-indeterminate)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
 | [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
 |                                                           | [Theatrical Cut](#theatrical-cut)             |                                               | [MPEG2](#mpeg2)                           |
@@ -68,7 +68,7 @@ I also made 2 guides related to this one.
 
 ### Dolby TrueHD/ATMOS
 
-If you prefer TrueHD|Atmos audio tracks.
+>If you prefer TrueHD|Atmos audio tracks.
 
 !!! warning
 
@@ -92,13 +92,13 @@ If you prefer TrueHD|Atmos audio tracks.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### DTS-HD/DTS:X
 
-If you prefer DTS-HD/DTS:X audio tracks.
+>If you prefer DTS-HD/DTS:X audio tracks.
 
 !!! warning
 
@@ -122,13 +122,13 @@ If you prefer DTS-HD/DTS:X audio tracks.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
-### Surround Sounds
+### Surround Sound
 
-If you prefer all kind of surround sounds
+>If you prefer all kind of surround sounds
 
 !!! warning
 
@@ -138,7 +138,7 @@ If you prefer all kind of surround sounds
 
     ```json
     {
-        "name": "Surround Sounds",
+        "name": "Surround Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
             "name": "dts\\-?(hd|x)|truehd|atmos|dd(\\+|p)(5|7)",
@@ -152,7 +152,7 @@ If you prefer all kind of surround sounds
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -161,6 +161,12 @@ If you prefer all kind of surround sounds
 ------
 
 ### TrueHD ATMOS
+
+<sub><sub><sub>Score [500]</sub>
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}
+>
+>Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.
 
 ??? example "json"
 
@@ -226,11 +232,15 @@ If you prefer all kind of surround sounds
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### DTS X
+
+<sub><sub><sub>Score [490]</sub>
+
+>DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”
 
 ??? example "json"
 
@@ -314,15 +324,18 @@ If you prefer all kind of surround sounds
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### ATMOS (indeterminate)
 
-Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
+<sub><sub><sub>Score [480]</sub>
 
-Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
+>Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
+
+!!! note
+    Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
 
 ??? example "json"
 
@@ -406,17 +419,21 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
-### DD+ ATMOS (lossy)
+### DD+ ATMOS
+
+<sub><sub><sub>Score [480]</sub>
+
+>Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos
 
 ??? example "json"
 
     ```json
     {
-        "name": "DD+ ATMOS (lossy)",
+        "name": "DD+ ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Dolby Digital Plus",
@@ -494,17 +511,23 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
-### TrueHD (not ATMOS)
+### TrueHD
+
+<sub><sub><sub>Score [470]</sub>
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}
+>
+>Dolby TrueHD is a lossless, multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Disc and compatible hardware.
 
 ??? example "json"
 
     ```json
     {
-        "name": "TrueHD (not ATMOS)",
+        "name": "TrueHD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "TrueHD",
@@ -564,11 +587,17 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### DTS-HD MA
+
+<sub><sub><sub>Score [460]</sub>
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}
+>
+>DTS-HD Master Audio is a multi-channel, lossless audio codec developed by DTS as an extension of the lossy DTS Coherent Acoustics codec (DTS CA; usually itself referred to as just DTS). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA's primary application is audio storage and playback for Blu-ray Disc media.
 
 ??? example "json"
 
@@ -670,13 +699,15 @@ Give this the same score as Lossy Atmos, and then on import, it will get changed
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### FLAC
 
-FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
+<sub><sub><sub>Score [450]</sub>
+
+>FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
 
 ??? example "json"
 
@@ -751,11 +782,15 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### PCM
+
+<sub><sub><sub>Score [450]</sub>
+
+>PCM is the method of encoding typically used for uncompressed digital audio
 
 ??? example "json"
 
@@ -830,11 +865,15 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### DTS-HD HRA
+
+<sub><sub><sub>Score [440]</sub>
+
+>Description placeholder
 
 ??? example "json"
 
@@ -945,17 +984,24 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Dolby Digital Plus
 
+<sub><sub><sub>Score [430]</sub>
+
+<sub>Dolby Digital Plus = DD+</sub>
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}
+>
+>Dolby Digital Plus, also known as Enhanced AC-3 (and commonly abbreviated as DD+ or E-AC-3, or EC-3) is a digital audio compression scheme developed by Dolby Labs for transport and storage of multi-channel digital audio. It is a successor to Dolby Digital (AC-3).
+
 ??? example "json"
 
     ```json
     {
-        "name": "Dolby Digital Plus",
+        "name": "DD+",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Dolby Digital Plus",
@@ -1024,11 +1070,15 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### DTS-ES
+
+<sub><sub><sub>Score [420]</sub>
+
+>DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1, and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.
 
 ??? example "json"
 
@@ -1130,17 +1180,22 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Basic DTS
 
+<sub><sub><sub>Score [410]</sub>
+
+<sub>Basic DTS = DTS</sub>
+>Description placeholder
+
 ??? example "json"
 
     ```json
     {
-        "name": "Basic DTS",
+        "name": "DTS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Basic DTS",
@@ -1227,17 +1282,17 @@ FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but l
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### AAC
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+<sub><sub><sub>Score [400]</sub>
 
 Advanced Audio Coding
-
-Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
 
 ??? example "json"
 
@@ -1312,17 +1367,24 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Basic Dolby Digital
 
+<sub><sub><sub>Score [390]</sub>
+
+<sub>Basic Dolby Digital = DD</sub>
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
+>
+>Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
+
 ??? example "json"
 
     ```json
     {
-        "name": "Basic Dolby Digital",
+        "name": "DD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Basic Dolby Digital",
@@ -1391,11 +1453,13 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### MP3
+
+>Description placeholder
 
 ??? example "json"
 
@@ -1415,15 +1479,15 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Opus
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
-
-Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
+>
+>Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
 
 ??? example "json"
 
@@ -1443,7 +1507,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1508,7 +1572,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1569,7 +1633,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1630,7 +1694,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1691,7 +1755,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1743,7 +1807,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1804,7 +1868,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1847,7 +1911,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1899,7 +1963,7 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1909,9 +1973,12 @@ Opus is a lossy audio coding format developed by the Xiph.Org Foundation and sta
 
 ### Dolby Vision
 
-Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+<sub><sub><sub>Score [300]</sub>
 
-Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+<sub>Dolby Vision = DoVi</sub>
+>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+>
+>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
 ??? example "json"
 
@@ -1931,13 +1998,16 @@ Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By ad
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Dolby Vision (Single Layer)
 
-Custom Format for Single Layer Dolby Vision releases.
+<sub><sub><sub>Score [295]</sub>
+
+<sub>Dolby Vision (Single Layer) = DoVi (SL)</sub>
+>Custom Format for Single Layer Dolby Vision releases.
 
 !!! note
 
@@ -1949,7 +2019,7 @@ Custom Format for Single Layer Dolby Vision releases.
 
     ```json
     {
-        "name": "Dolby Vision (Single Layer)",
+        "name": "DoVi (SL)",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
                 "name": "Dolby Vision (Single Layer)",
@@ -1973,15 +2043,17 @@ Custom Format for Single Layer Dolby Vision releases.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### HDR
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+<sub><sub><sub>Score [290]</sub>
 
-High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>
+>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
 
 ??? example "json"
 
@@ -2001,15 +2073,17 @@ High-dynamic-range video (HDR video) is video having a dynamic range greater tha
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### HDR (indeterminate)
 
-Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+<sub><sub><sub>Score [290]</sub>
 
-For now it's only FraMeSToR that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+>Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+>
+>For now it's only FraMeSToR that doesn't add HDR to their release name but in the feature we can add more to it if needed.
 
 ??? example "json"
 
@@ -2067,7 +2141,7 @@ For now it's only FraMeSToR that doesn't add HDR to their release name but in th
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -2091,7 +2165,7 @@ For now it's only FraMeSToR that doesn't add HDR to their release name but in th
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -2101,7 +2175,9 @@ For now it's only FraMeSToR that doesn't add HDR to their release name but in th
 
 ### Hybrid
 
-A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
+<sub><sub><sub>Score [200]</sub>
+
+>A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
 
 ??? example "json"
 
@@ -2131,15 +2207,17 @@ A hybrid release means any combination of sources (video + audio) and not a dire
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Remaster
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
+<sub><sub><sub>Score [190]</sub>
 
-For the software term, see Software remastering.
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
+>
+>For the software term, see Software remastering.
 Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
 
 ??? example "json"
@@ -2170,17 +2248,19 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### 4K Remaster
 
-A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible currently for the movie.
+<sub><sub><sub>Score [190]</sub>
 
-To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colours, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
-
-Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ colour specification. This delivers an expanded colour range closer to that contained in original source material.
+>A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible currently for the movie.
+>
+>To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colours, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
+>
+>Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ colour specification. This delivers an expanded colour range closer to that contained in original source material.
 
 ??? example "json"
 
@@ -2219,13 +2299,15 @@ Another important element of the Mastered in 4K discs is that they’re all mast
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Criterion Collection
 
-The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados.Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
+<sub><sub><sub>Score [170]</sub>
+
+>The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados.Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
 
 ??? example "json"
 
@@ -2255,13 +2337,13 @@ The Criterion Collection, Inc. (or simply Criterion) is an American home video d
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Theatrical Cut
 
-The Theatrical Cut is the version of the film that was shown at cinemas.
+>The Theatrical Cut is the version of the film that was shown at cinemas.
 
 ??? example "json"
 
@@ -2281,16 +2363,18 @@ The Theatrical Cut is the version of the film that was shown at cinemas.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Special Edition
 
-Custom format for several Special Editions
+<sub><sub><sub>Score [180]</sub>
 
-- The Director's Cut is the version edited by the Director, usually for additional home media releases.
-- An Extended Cut is usually any version of the film which is longer than the theatrical cut (though in very rare cases, its shorter).
+>Custom format for several Special Editions
+>
+>- The Director's Cut is the version edited by the Director, usually for additional home media releases.
+>- An Extended Cut is usually any version of the film which is longer than the theatrical cut (though in very rare cases, its shorter).
 
 ??? example "json"
 
@@ -2320,11 +2404,15 @@ Custom format for several Special Editions
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### IMAX
+
+<sub><sub><sub>Score [190]</sub>
+
+>Description placeholder
 
 ??? example "json"
 
@@ -2346,7 +2434,7 @@ Custom format for several Special Editions
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -2356,9 +2444,11 @@ Custom format for several Special Editions
 
 ### BR-DISK
 
-This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+<sub><sub><sub>Score [-9999]</sub>
 
-You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+>This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+>
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
 
 !!! note
 
@@ -2416,51 +2506,67 @@ You will need to add the following to your new Custom Format when created in you
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### EVO except WEB-DL
 
-This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
+<sub><sub><sub>Score [-9999]</sub>
 
-You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+<sub>EVO except WEB-DL = EVO (no WEB-DL)</sub>
+>This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
+>
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
 
 ??? example "json"
 
     ```json
     {
-        "name": "EVO (except WEB-DL)",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-                "name": "EVO",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": false,
-                "fields": {
-                    "value": "\\bEVO\\b"
-                }
-            },
-            {
-                "name": "WEBDL",
-                "implementation": "SourceSpecification",
-                "negate": true,
-                "required": false,
-                "fields": {
-                    "value": 7
-                }
-            }
-        ]
+      "name": "EVO (no WEB-DL)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "EVO",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\bEVO\\b"
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 8
+          }
+        }
+      ]
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Low Quality Releases
 
-A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality.
+<sub><sub><sub>Score [-9999]</sub>
+
+<sub>Low Quality Releases = LQ</sub>
+>A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality.
 
 !!! note
 
@@ -2476,7 +2582,7 @@ A collection of known Low Quality groups that are often banned from the the top 
 
     ```json
     {
-      "name": "Low Quality Releases",
+      "name": "LQ",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
@@ -2528,15 +2634,18 @@ A collection of known Low Quality groups that are often banned from the the top 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### 720/1080p no x265
 
-This blocks/ignores 720/1080p releases that are encoded in x265
+<sub><sub><sub>Score [-9999]</sub>
 
-You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000`
+<sub>720/1080p no x265 = x265 (720/1080p)</sub>
+>This blocks/ignores 720/1080p releases that are encoded in x265
+>
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
 
 !!! quote
     x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
@@ -2566,7 +2675,7 @@ That's why I created my own golden rule.
 
     ```json
     {
-     "name": "720/1080p != x265",
+     "name": "x265 (720/1080p)",
      "includeCustomFormatWhenRenaming": false,
      "specifications": [
        {
@@ -2600,15 +2709,17 @@ That's why I created my own golden rule.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### 3D
 
-If you prefer or not prefer 3D.
+<sub><sub><sub>Score [-9999]</sub>
 
-You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
+>If you prefer or not prefer 3D.
+>
+>You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
 
 ??? example "json"
 
@@ -2628,7 +2739,7 @@ You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Rest
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -2636,15 +2747,18 @@ You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Rest
 
 ------
 
-### HQ-P2P
+### HQ-Releases
 
-A collection of P2P groups that are known for their high quality releases
+<sub><sub><sub>Score [100]</sub>
+
+<sub>HQ-Releases = HQ</sub>
+>A collection of P2P groups that are known for their high quality releases.
 
 ??? example "json"
 
     ```json
     {
-        "name": "HQ-P2P",
+        "name": "HQ",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "[BLOCK1]",
@@ -2686,11 +2800,13 @@ A collection of P2P groups that are known for their high quality releases
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Repack Proper
+
+<sub><sub><sub>Score [1]</sub>
 
 ??? example "json"
 
@@ -2729,13 +2845,13 @@ A collection of P2P groups that are known for their high quality releases
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Streaming Services
 
-Collection of Streaming Services
+>Collection of Streaming Services
 
 !!! attention
 
@@ -2851,13 +2967,13 @@ Collection of Streaming Services
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### x264
 
-x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
+>x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
 If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p
 
@@ -2889,13 +3005,13 @@ If you want maximum compatibility and have much better direct play support then 
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### x265
 
-x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
+>x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
 !!! quote
     x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
@@ -2956,13 +3072,15 @@ Some extra info about 4K/X265
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### FreeLeech
 
-Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
+<sub><sub><sub>Score [5]</sub>
+
+>Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
 
 !!! attention
     Keep in mind not all trackers support this option.
@@ -2985,13 +3103,13 @@ Sometimes, torrent sites set a torrent to be freeleech. This means, that the dow
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
 ### Dutch Groups
 
-If you prefer movies with also a Dutch audio track.
+>If you prefer movies with also a Dutch audio track.
 
 ??? example "json"
 
@@ -3011,7 +3129,7 @@ If you prefer movies with also a Dutch audio track.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -3073,7 +3191,7 @@ If you prefer movies with also a Dutch audio track.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -3097,7 +3215,7 @@ If you prefer movies with also a Dutch audio track.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -3121,4 +3239,4 @@ If you prefer movies with also a Dutch audio track.
     }
     ```
 
-<sub><sup>[TOP](#index)</sup></sub>
+<sub><sup>[TOP](#index)</sup>
