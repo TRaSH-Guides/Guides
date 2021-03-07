@@ -38,7 +38,7 @@ I also made 2 guides related to this one.
 | :--------------------------------------- | --------------------------------------------- | ------------------------------------------- | ---------------------------- |
 | [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [TrueHD ATMOS](#truehd-atmos)                 | [FLAC](#flac)                               | [1.0 Mono](#10-mono)         |
 | [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                               | [PCM](#pcm)                                 | [2.0 Stereo](#20-stereo)     |
-| [Surround Sound](#surround-sound)      | [ATMOS (indeterminate)](#atmos-indeterminate) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
+| [Surround Sound](#surround-sound)      | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
 |                                          | [DD+ ATMOS](#dd-atmos)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
 |                                          | [TrueHD](#truehd)       | [Basic Dolby Digital](#basic-dolby-digital) | [5.1 Surround](#51-surround) |
 |                                          | [DTS-HD MA](#dts-hd-ma)                       | [MP3](#mp3)                                 | [6.1 Surround](#61-surround) |
@@ -53,7 +53,7 @@ I also made 2 guides related to this one.
 | [Dolby Vision](#dolby-vision)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
 | [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-except-web-dl)       | [Streaming Services](#streaming-services) |
 | [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq-releases) | [High Quality Releases](#hq-releases)                         |
-| [HDR (indeterminate)](#hdr-indeterminate)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
+| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
 | [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
 |                                                           | [Theatrical Cut](#theatrical-cut)             |                                               | [MPEG2](#mpeg2)                           |
 |                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
@@ -328,7 +328,7 @@ I also made 2 guides related to this one.
 
 ------
 
-### ATMOS (indeterminate)
+### ATMOS (undefined)
 
 <sub><sub><sub>Score [480]</sub>
 
@@ -341,7 +341,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
-        "name": "ATMOS (indeterminate)",
+        "name": "ATMOS (undefined)",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
                 "name": "Dolby Digital Plus",
@@ -2077,7 +2077,7 @@ Advanced Audio Coding
 
 ------
 
-### HDR (indeterminate)
+### HDR (undefined)
 
 <sub><sub><sub>Score [290]</sub>
 
@@ -2089,7 +2089,7 @@ Advanced Audio Coding
 
     ```json
     {
-      "name": "HDR (indeterminate)",
+      "name": "HDR (undefined)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
