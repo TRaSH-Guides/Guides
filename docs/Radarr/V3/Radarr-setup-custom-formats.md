@@ -181,7 +181,7 @@ Lets say you prefer HD audio (with object metadata)
 
 Then we would use the following order.
 
-`Basic Dolby Digital < AAC < Basic DTS < DTS-ES < Dolby Digital Plus < DTS-HD HRA < PCM = FLAC < DTS-HD MA < TrueHD (not ATMOS) < DD+ ATMOS (lossy) = ATMOS (indeterminate) < DTS X < TrueHD ATMOS`
+`Basic Dolby Digital (DD) < AAC < Basic DTS (DTS) < DTS-ES < Dolby Digital Plus (DD+) < DTS-HD HRA < PCM = FLAC < DTS-HD MA < TrueHD < DD+ ATMOS = ATMOS (undefined) < DTS X < TrueHD ATMOS`
 
 In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
 
@@ -197,7 +197,7 @@ Lets say you prefer HDR metadata
 
 Then we would use the following order.
 
-`HDR (indeterminate) = HDR < Dolby Vision`
+`HDR (undefined) = HDR < Dolby Vision`
 
 I didn't add `Dolby Vision (Single Layer)` being most of the releases are already replaced by real `Dolby Vision` releases, If you still want to add it put it between `HDR` and `Dolby Vision` so they still can get upgraded.
 
