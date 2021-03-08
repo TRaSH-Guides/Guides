@@ -300,7 +300,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
+/(TBS|nhanc3|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
 ```
 
 ```bash
