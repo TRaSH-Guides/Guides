@@ -9,8 +9,8 @@ Here you will find a collection of Radarr Guides I made.
 - (stable) (v3)
 - Builds Pushed only when intentionally released
 - Github Branch: master
-- Docker: [hotio/radarr:latest](https://hub.docker.com/r/hotio/radarr){:target="_blank" rel="noopener noreferrer"}
+- Docker: [hotio/radarr:release](https://hub.docker.com/r/hotio/radarr){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-ghcr.io/hotio/radarr:latest
+ghcr.io/hotio/radarr:release
 ```
