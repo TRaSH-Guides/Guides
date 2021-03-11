@@ -2561,7 +2561,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### Low Quality Releases
+### LQ-Releases
 
 <sub><sub><sub>Score [-9999]</sub>
 
