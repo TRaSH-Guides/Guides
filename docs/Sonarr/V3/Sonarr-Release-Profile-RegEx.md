@@ -300,11 +300,11 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|nhanc3|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
+/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
 ```
 
 ```bash
-/(-VIDEOHOLE)\b/i
+/(-VIDEOHOLE|nhanc3)\b/i
 ```
 
 ??? success "example"
