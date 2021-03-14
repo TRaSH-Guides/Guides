@@ -196,6 +196,7 @@ Choose your preferred VPN Tunnel type.
     ```
 
     Your wg0.conf should look something like this:
+
     ```shell linenums="1"
     # TorGuard WireGuard Config
     [Interface]
