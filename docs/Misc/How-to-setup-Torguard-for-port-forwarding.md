@@ -14,7 +14,7 @@
 
 ## Login to your Client area
 
-First login to your [Client Area](https://torguard.net/clientarea.php){:target="_blank" rel="noopener noreferrer"}.
+Login to your [Client Area](https://torguard.net/clientarea.php){:target="_blank" rel="noopener noreferrer"}.
 
 ??? check "Example"
     ![!Client Area Login](images/torguard/client-area-login.png)
@@ -50,13 +50,13 @@ Now it's time to get the IP of your VPN server you're going to use from the [Glo
 Then we're going to select which server we're going to use,
 
 For the best speed it's recommended to choose the one nearest to your location.
-Lets use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
+Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
 ### Get your VPN IP
 
-then open a cmd window or something equal and type:
+Open a cmd window or something equal and type:
 
 ```bash
     ping us-fl.secureconnect.me
@@ -105,11 +105,14 @@ Choose your preferred VPN Tunnel type.
     1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
     1. Then click on `Submit Request`.
 
-    And you will see something like this.
+    If everything went according to plan you will see something like this.
 
     ![status](images/torguard/status.png)
 
     You will also receive a e-mail with the ports you forwarded.
+
+    !!! Note
+        Normally it doesn't take more then a few seconds/minutes to get the ports approved if it takes longer or you get `PENDING` I suggest to ping the server again (or choose another sever) and you often get a new IP and retry it again with the new IP.
 
 #### WireGuard Request Port Forward
 
@@ -129,11 +132,14 @@ Choose your preferred VPN Tunnel type.
     !!! warning "WARNING"
         :bangbang: DON'T CHANGE OPTION 2 `UDP` to `TCP` :bangbang:
 
-    And you will see something like this.
+    If everything went according to plan you will see something like this.
 
     ![status](images/torguard/status.png)
 
     You will also receive a e-mail with the ports you forwarded.
+
+    !!! Note
+        Normally it doesn't take more then a few seconds/minutes to get the ports approved if it takes longer or you get `PENDING` I suggest to ping the server again (or choose another sever) and you often get a new IP and retry it again with the new IP.
 
 ------
 
@@ -229,7 +235,7 @@ Choose your preferred VPN Tunnel type.
            --data-urlencode "public-key=${pubkey}" "https://${wgserver}/api/v1/setup"
         ```
 
-        You will also have to add the additional environment variables `TORGUARD_USER` and `TORGUARD_PASS` or fill them in into the script directly (see curl command). These credentials can be found are the ones we created [HERE](#create-a-user-account).
+        You will also have to add the additional environment variables `TORGUARD_USER` and `TORGUARD_PASS` or fill them in into the script directly (see curl command). These credentials are the ones we created [HERE](#create-a-user-account).
 
     ##### Binhex VPN Containers
 
@@ -245,10 +251,10 @@ Choose your preferred VPN Tunnel type.
            --data-urlencode "public-key=${pubkey}" "https://${wgserver}/api/v1/setup"
         ```
 
-        You will also have to add the additional environment variables `VPN_USER` and `VPN_PASS or fill them in into the script directly (see curl command). These credentials can be found are the ones we created [HERE](#create-a-user-account).
+        You will also have to add the additional environment variables `VPN_USER` and `VPN_PASS or fill them in into the script directly (see curl command). These credentials are the ones we created [HERE](#create-a-user-account).
 
 ------
 
 THNX:
 
-A big thnx to [mrhotio](https://github.com/mrhotio) for his excellent instructions how to setup WireGuard for TorGuard.
+A big thnx to [mrhotio](https://github.com/mrhotio) for his excellent instructions on how to setup WireGuard for TorGuard.
