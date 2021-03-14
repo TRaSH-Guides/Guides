@@ -9,81 +9,245 @@
     * `TGLIFE-STREAMING`: Get 50% Off for Life Anonymous Proxy, Anonymous VPN, Streaming Bundle.
     * `TGLIFE-PRO`: Get 50% Off for Life for Anonymous VPN, Streaming Bundle, Anonymous VPN Pro.
 
-    [![torguard-FreeTrial-270x90](images/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
+    [![torguard-FreeTrial-270x90](images/torguard/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
 ------
 
-## Create a user account
+## Login to your Client area
 
-Go to [My Account > Services > My Service Credentials](https://torguard.net/clientarea.php?action=changepw){:target="_blank" rel="noopener noreferrer"}.
-First we're going to create a user account for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
+First login to your [Client Area](https://torguard.net/clientarea.php){:target="_blank" rel="noopener noreferrer"}.
+
+??? check "Example"
+    ![!Client Area Login](images/torguard/client-area-login.png)
+
+### Create a user account
+
+First we're going to create a [User Account](https://torguard.net/clientarea.php?action=changepw){:target="_blank" rel="noopener noreferrer"} for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
 This account will be used for authentication with your VPN Torrent client.
 
-![create user account](images/create_user_acc.png)
+`Services` > `My Services` > `Manage` > `Manage Credentials`
+
+??? Check "Example"
+    ![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
 
 Create a new username and choose a secure password or create a random username and password.
 
+??? Check "Example"
+    ![!Create User Account](images/torguard/create_user_account.png)
+
+------
+
 ## How to get the IP of your VPN server
 
-Go to [My Account > Server > Global VPN Network](https://torguard.net/network/){:target="_blank" rel="noopener noreferrer"}
+Now it's time to get the IP of your VPN server you're going to use from the [Global VPN Network](https://torguard.net/network/){:target="_blank" rel="noopener noreferrer"}, From your Client Area.
+
+`Servers` > `Global VPN Network`
+
+??? Check "Example"
+    ![!Servers > Global VPN Network](images/torguard/servers-globalvpnnetwork.png)
+
+### Global VPN Network
 
 Then we're going to select which server we're going to use,
-
-![server list](images/server_list.png)
 
 For the best speed it's recommended to choose the one nearest to your location.
 Lets use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
 
-then open a cmd window or something equal and type: `ping us-fl.secureconnect.me`
+![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
-![ping](images/ping.png)
+### Get your VPN IP
+
+then open a cmd window or something equal and type:
+
+```bash
+    ping us-fl.secureconnect.me
+```
 
 You will then get the IP of the server.
 Remember that for later use.
 
-## How to set Port forwarding
+??? Check "Example"
+    ![!ping](images/torguard/cmd-ping.png)
 
-Go to [My Account > Services > My Services](https://torguard.net/clientarea.php?action=products){:target="_blank" rel="noopener noreferrer"}.
+------
 
-![request port forward](images/req_port_fwd.png)
+## How to setup Port forwarding
+
+!!! note
+    This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.
+
+### Request Port Forward
+
+From your Client Area go to your [My Services](https://torguard.net/clientarea.php?action=products){:target="_blank" rel="noopener noreferrer"}.
 
 Then click on `Manage` and select `Request Port Forward`.
 
-![request status](images/req_port_status.png)
+`Services` > `My Services` > `Manage` > `Request Port Forward`
 
-1. That's the `IP` we found earlier.
-1. Select `UDP`.
-1. Select a `Port/Auth` I personally use `995|SHA1`.
-1. Select the `Protocol` `TCP`.
-1. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
-    (This is also the port you will use in your torrent client).
-1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
-1. Then click on `Submit Request`.
+??? Check "Example"
+    ![!Request Port Forward](images/torguard/req_port_fwd.png)
 
-![submit request](images/port_submit.png)
+### VPN Tunnel Type
 
-And you will see something like this.
+Choose your preferred VPN Tunnel type.
 
-![status](images/status.png)
+#### OVPN Request Port Forward
 
-You will also receive a e-mail with the ports you forwarded.
+??? example "OVPN Request Port Forward"
 
-## How to create the .ovpn file
+    ![!Request New Port Forward OVPN](images/torguard/request-new-pfw-ovpn.png)
 
-Go to [My Account > Tools > OpenVPN Config Generator](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="_blank" rel="noopener noreferrer"}.
+    1. That's the `IP` we found earlier.
+    1. Select `UDP`.
+    1. Select a `Port/Auth` I personally use `995|SHA1`.
+    1. Select the `Protocol` `TCP`.
+    1. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
+        (This is also the port you will use in your torrent client).
+    1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
+    1. Then click on `Submit Request`.
 
-![info](images/info.png)
+    And you will see something like this.
 
-1. Choose the OS you want to use the .ovpn for.
-1. Choose `Custom`.
-1. Put in the `IP` we got earlier and used for the port forwarding.
-1. Choose `UDP`.
-1. Choose `995|SHA1` or what you selected during the port forwarding.
-1. Choose `AES-128-GCM`.
-1. Choose `2.4 and above`.
-1. Check `Require TLS 1.2`
-1. Click on `Generate Config`
+    ![status](images/torguard/status.png)
 
-Now you will download a .ovpn file with a random number.
-This .ovpn file you place in the openvpn folder of your VPN torrent client.
+    You will also receive a e-mail with the ports you forwarded.
+
+#### WireGuard Request Port Forward
+
+??? example "WireGuard Request Port Forward"
+
+    ![!Request New Port Forward WireGuard](images/torguard/request-new-pfw-wireguard.png)
+
+    1. That's the `IP` we found earlier.
+    1. Select `UDP`. (:bangbang: **KEEP THIS ON UDP FOR WireGuard** :bangbang:)
+    1. Select a `Port/Auth` and select `WireGuard`.
+    1. Select the `Protocol` `TCP`.
+    1. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
+        (This is also the port you will use in your torrent client).
+    1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
+    1. Then click on `Submit Request`.
+
+    !!! warning "WARNING"
+        :bangbang: DON'T CHANGE OPTION 2 `UDP` to `TCP` :bangbang:
+
+    And you will see something like this.
+
+    ![status](images/torguard/status.png)
+
+    You will also receive a e-mail with the ports you forwarded.
 
 ------
+
+## How to create the config file
+
+!!! note
+    This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.
+
+From your Client Area go to your [Config Generator](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="_blank" rel="noopener noreferrer"}.
+
+`Tools` > `Config Generator`
+
+??? Check "Example Select Tools > Config Generator"
+    ![!Tools - Config Generator](images/torguard/tools-config-generator.png)
+
+### Config Generator
+
+Choose your preferred VPN Tunnel type.
+
+#### OVPN Config Generator
+
+??? example "OVPN Config Generator"
+
+    ![!OVPN Config Generator](images/torguard/config-generator-ovpn.png)
+
+    1. Keep this on `Default`.
+    1. Choose `OpenVPN`.
+    1. Put in the `IP` we got earlier and used for the port forwarding.
+    1. Choose `UDP`.
+    1. Choose `995|SHA1` or what you selected during the port forwarding.
+    1. Choose `AES-128-GCM`.
+    1. Choose `2.4 and above`.
+    1. Check `Require TLS 1.2`
+    1. Click on `Generate Config`,
+
+    Now you will download a `.conf` file with a random number.
+
+    Rename the extension from `*.conf` to `*.ovpn` and copy it to your openvpn folder of your VPN torrent client.
+
+#### WireGuard Config Generator
+
+??? example "WireGuard Config Generator"
+
+    ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
+
+    1. Choose `WireGuard`.
+    1. Put in the `IP` we got earlier and used for the port forwarding.
+    1. Add your `VPN Username`.
+    1. Add your `VPN Password.
+    1. Click on `Generate Config`
+
+    Now you will download a `.conf` file with a random number.
+
+    Rename the file from `*.conf` to `wg0.conf` and copy it to your wireguard folder of your VPN torrent client.
+
+    Before we can make use of it you will need to edit the `wg0.conf` file first and add the following at line 7.
+
+    ```bash
+    PreUp = bash /config/wireguard/torguard.sh
+    ```
+
+    Your wg0.conf should look something like this:
+    ```shell linenums="1"
+    # TorGuard WireGuard Config
+    [Interface]
+    PrivateKey = secretprivatekey
+    ListenPort = 51820
+    DNS = 1.1.1.1
+    Address = xx.xx.xxx.xx/24
+    PreUp = bash /config/wireguard/torguard.sh
+
+    [Peer]
+    PublicKey = publickey
+    AllowedIPs = 0.0.0.0/0
+    Endpoint = xx.xxx.xx.xxx:1443
+    PersistentKeepalive = 25
+    ```
+
+    Then you will need to create a bash script in your `/config/wireguard` of your torrent client appdata folder named `torguard.sh` (*This script will get executed just before starting WireGuard*) with the following info it depending which images you're using.
+
+    ##### Hotio's VPN Containers
+
+    ??? example "Hotio's VPN Containers"
+
+        ```bash
+        #!/usr/bin/bash
+
+        pubkey=$(grep PrivateKey "${CONFIG_DIR}/wireguard/wg0.conf" | awk '{print $3}' | wg pubkey)
+        wgserver=$(grep Endpoint "${CONFIG_DIR}/wireguard/wg0.conf" | awk '{print $3}')
+
+        curl -ksG -u "${TORGUARD_USER}":"${TORGUARD_PASS}" \
+           --data-urlencode "public-key=${pubkey}" "https://${wgserver}/api/v1/setup"
+        ```
+
+        You will also have to add the additional environment variables `TORGUARD_USER` and `TORGUARD_PASS` or fill them in into the script directly (see curl command). These credentials can be found are the ones we created [HERE](#create-a-user-account).
+
+    ##### Binhex VPN Containers
+
+    ??? example "Binhex VPN Containers"
+
+        ```bash
+        #!/usr/bin/bash
+
+        pubkey=$(grep PrivateKey "config/wireguard/wg0.conf" | awk '{print $3}' | wg pubkey)
+        wgserver=$(grep Endpoint "config/wireguard/wg0.conf" | awk '{print $3}')
+
+        curl -ksG -u "${VPN_USER}":"${VPN_PASS}" \
+           --data-urlencode "public-key=${pubkey}" "https://${wgserver}/api/v1/setup"
+        ```
+
+        You will also have to add the additional environment variables `VPN_USER` and `VPN_PASS or fill them in into the script directly (see curl command). These credentials can be found are the ones we created [HERE](#create-a-user-account).
+
+------
+
+THNX:
+
+A big thnx to [mrhotio](https://github.com/mrhotio) for his excellent instructions how to setup WireGuard for TorGuard.
