@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# 
+#
 
 ##############################################################################
 ### NZBGET SCAN SCRIPT                                                     ###
@@ -52,8 +52,8 @@ fwp = re.sub('(?i)\[eztv\]\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)\[TGx\]\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)\[TGx\]-xpost\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)\[ettv\]\.nzb$', '.nzb', fwp)
-fwp = re.sub('(?i)\-WRTEAM\.nzb$', '.nzb', fwp)
-fwp = re.sub('(?i)\-CAPTCHA\.nzb$', '.nzb', fwp)
+fwp = re.sub('(?i)-WRTEAM\.nzb$', '.nzb', fwp)
+fwp = re.sub('(?i)-CAPTCHA\.nzb$', '.nzb', fwp)
 if fwp:
   print('[NZB] NZBNAME=', fwp, sep='')
 
