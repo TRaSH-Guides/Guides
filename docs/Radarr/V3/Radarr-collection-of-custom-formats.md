@@ -2627,7 +2627,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           "negate": false,
           "required": false,
           "fields": {
-            "value": "\\bRifftrax\\b"
+            "value": "\\bRifftrax\\b|\\bRU4HD\\b"
           }
         }
       ]
@@ -2788,12 +2788,21 @@ That's why I created my own golden rule.
                 }
             },
             {
+                "name": "[BLOCK4]",
+                "implementation": "ReleaseTitleSpecification",
+                "negate": false,
+                "required": false,
+                "fields": {
+                    "value": "\\bBHDStudio\\b"
+                }
+            },
+            {
                 "name": "[Remux Groups]",
                 "implementation": "ReleaseTitleSpecification",
                 "negate": false,
                 "required": false,
                 "fields": {
-                    "value": "-FraMeSToR|-EPSiLON|\\bKRaLiMaRKo\\b"
+                    "value": "-FraMeSToR|-EPSiLON|\\bKRaLiMaRKo\\b|-PmP|-BLURANiUM|-SiCFoI|-SURFINBIRD"
                 }
             }
         ]
