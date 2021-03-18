@@ -263,6 +263,12 @@ Add this to your `Preferred (3)` with a score of [125]
 /(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\b/i
 ```
 
+Add this to your `Preferred (3)` with a score of [100]
+
+```bash
+/(-ViSiON)\b/i
+```
+
 Add this to your `Preferred (3)` with a score of [12]
 
 ```bash
@@ -349,7 +355,7 @@ Add this for example as [-25]
 ```
 
 ```bash
-/(-WhiteRev|-xpost)\b/i
+/(-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\b/i
 ```
 
 #### Optional (matches releases that ends with EN)
