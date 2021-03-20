@@ -263,6 +263,10 @@ Add this to your `Preferred (3)` with a score of [125]
 /(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\b/i
 ```
 
+```bash
+/(-ROCCaT)\b/i
+```
+
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
