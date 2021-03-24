@@ -2464,45 +2464,55 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
-        "name": "BR-DISK",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-                "name": "avc|vc-1|hevc",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": true,
-                "fields": {
-                    "value": "avc|vc-1|hevc"
-                }
-            },
-            {
-                "name": "Remux",
-                "implementation": "QualityModifierSpecification",
-                "negate": true,
-                "required": false,
-                "fields": {
-                    "value": 5
-                }
-            },
-            {
-                "name": "WEBDL",
-                "implementation": "SourceSpecification",
-                "negate": true,
-                "required": false,
-                "fields": {
-                    "value": 7
-                }
-            },
-            {
-                "name": "^((?!x265).)*$",
-                "implementation": "ReleaseTitleSpecification",
-                "negate": false,
-                "required": true,
-                "fields": {
-                    "value": "^((?!x265).)*$"
-                }
-            }
-        ]
+      "name": "BR-DISK",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "avc|vc-1|hevc",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "avc|vc-1|hevc"
+          }
+        },
+        {
+          "name": "Remux",
+          "implementation": "QualityModifierSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 5
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 8
+          }
+        },
+        {
+          "name": "x265/HEVC",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+          }
+        }
+      ]
     }
     ```
 
