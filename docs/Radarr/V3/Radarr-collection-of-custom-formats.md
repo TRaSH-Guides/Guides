@@ -2738,12 +2738,12 @@ That's why I created my own golden rule.
         "name": "3D",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
-            "name": "3d|sbs|half-ou",
+            "name": "3D",
             "implementation": "ReleaseTitleSpecification",
             "negate": false,
             "required": true,
             "fields": {
-                "value": "3d|sbs|half.?ou"
+                "value": "\\b3d\\b|\\bsbs\\b|half[ .]ou"
             }
         }]
     }
