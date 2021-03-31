@@ -1212,7 +1212,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dts.?(hd|ma|es|hi)"
+                    "value": "dts.?(hd|ma|es|hi|hr)"
                 }
             },
             {
