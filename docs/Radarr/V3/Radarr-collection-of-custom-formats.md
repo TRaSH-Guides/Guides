@@ -198,7 +198,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -281,7 +281,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -349,7 +349,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -441,7 +441,7 @@ I also made 2 guides related to this one.
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -553,7 +553,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -629,7 +629,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -775,7 +775,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             }
         ]
@@ -858,7 +858,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             }
         ]
@@ -905,7 +905,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1009,7 +1009,7 @@ I also made 2 guides related to this one.
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1110,7 +1110,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1221,7 +1221,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1324,7 +1324,7 @@ Advanced Audio Coding
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
