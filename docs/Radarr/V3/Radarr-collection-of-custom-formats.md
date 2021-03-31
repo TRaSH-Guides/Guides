@@ -1992,9 +1992,65 @@ Advanced Audio Coding
             "negate": false,
             "required": true,
             "fields": {
-                "value": "\\b(DV|dovi)\\b|dolby.?vision"
+                "value": "\\b(DV|dovi|dolby[ .]vision)\\b"
             }
         }]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+#### Dolby Vision (no WEB-DL)
+
+!!! NOTE
+
+    **You shouldn't use both but choose which one you want to use for your use case !!!**
+
+    Use the same scoring that you would use for Dolby Vision normally.
+
+<sub>Dolby Vision = DoVi</sub>
+>This is a special Custom Format that ignores DV for WEB-DL but allows for other sources.
+>
+>WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
+>Remuxes and Bluray have a fallback to HDR(10).
+
+??? example "json"
+
+    ```json
+    {
+      "name": "DoVi",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\b(DV|dovi|dolby[ .]vision)\\b"
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 8
+          }
+        }
+      ]
     }
     ```
 
@@ -2027,7 +2083,7 @@ Advanced Audio Coding
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "sl.?dv|single.?layer.?dovi"
+                    "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
                 }
             },
             {
