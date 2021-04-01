@@ -395,7 +395,7 @@ Add this for example as [15]
     ![!rp-su-season](images/rp-su-season.png)
 
     Then theirs only one way real way that always solves this issue.
-    create a new release profile specific for .su that uses the [Season regex(#optional-matches-season-packs-use-this-if-you-prefer-season-packs)] as `Must not contain (2)`
+    create a new release profile specific for .su that uses the [Season regex](#optional-matches-season-packs-use-this-if-you-prefer-season-packs) as `Must not contain (2)`
 
     ![!rp-release-profile-block-season-su](images/rp-release-profile-block-season-su.png)
 
