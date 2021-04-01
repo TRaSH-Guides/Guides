@@ -207,7 +207,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 !!! important
 
-    If you would like `dub` releases then remove the last 2 lines and do not add them to Must Not Contain. Instead follow the optional suggestion found below. 
+    If you would like `dub` releases then remove the last 2 lines and do not add them to Must Not Contain. Instead follow the optional suggestion found below.
 
 ```bash
 /(\[EMBER\]|-EMBER\b|DaddySubs)/i,
