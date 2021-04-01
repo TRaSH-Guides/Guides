@@ -1984,17 +1984,28 @@ Advanced Audio Coding
 
     ```json
     {
-        "name": "DoVi",
-        "includeCustomFormatWhenRenaming": true,
-        "specifications": [{
-            "name": "Dolby Vision",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\b(DV|dovi|dolby[ .]vision)\\b"
-            }
-        }]
+      "name": "DoVi",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        },
+        {
+          "name": "DoVi-SL: Dolby Vision (Single Layer)",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2029,7 +2040,7 @@ Advanced Audio Coding
           "negate": false,
           "required": true,
           "fields": {
-            "value": "\\b(DV|dovi|dolby[ .]vision)\\b"
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
           }
         },
         {
@@ -2048,6 +2059,15 @@ Advanced Audio Coding
           "required": true,
           "fields": {
             "value": 8
+          }
+        },
+        {
+          "name": "Dolby Vision (Single Layer)",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
           }
         }
       ]
@@ -2115,17 +2135,28 @@ Advanced Audio Coding
 
     ```json
     {
-        "name": "HDR",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-            "name": "HDR",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\bHDR(\\b|\\d)"
-            }
-        }]
+      "name": "HDR",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "HDR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\bHDR(\\b|\\d)"
+          }
+        },
+        {
+          "name": "DoVi",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2181,7 +2212,7 @@ Advanced Audio Coding
           "negate": true,
           "required": true,
           "fields": {
-            "value": "\\b(DV|dovi)\\b|dolby.?vision"
+            "value": "\\b(dv|dovi)\\b|dolby.?vision"
           }
         },
         {
