@@ -411,7 +411,8 @@ Add this for example as [15]
 Add this to your `Must not contain (2)`
 
 ```bash
-/\b(dv|dovi|dolby[ .]vision)\b.*(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(dv|dovi|dolby[ .]vision)\b.*(?=[ ._-]web[ ._-]?(dl|rip)\b)/i,
+/(?=[ ._-]web[ ._-]?(dl|rip)\b).*\b(dv|dovi|dolby[ .]vision)\b/i
 ```
 
 ------
