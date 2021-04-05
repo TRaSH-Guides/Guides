@@ -214,7 +214,7 @@ It will show you a short description where and how to add what.
 
 ??? example
 
-    ![!dn-radarr-integration-instructions](images\dn-radarr-integration-instructions.png)
+    ![!dn-radarr-integration-instructions](images/dn-radarr-integration-instructions.png)
 
 ### Radarr, Readarr and Lidarr
 
