@@ -1,6 +1,6 @@
 # Quick Start
 
-Here we're going to explain the basics setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr and Plex.
+Here we're going to explain the basic setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr and Plex.
 
 If you want to make use of the other options I suggest to look at the advanced guide descriptions.
 
@@ -214,7 +214,7 @@ It will show you a short description where and how to add what.
 
 ??? example
 
-    ![!dn-radarr-integration-instructions](images\dn-radarr-integration-instructions.png)
+    ![!dn-radarr-integration-instructions](images/dn-radarr-integration-instructions.png)
 
 ### Radarr, Readarr and Lidarr
 

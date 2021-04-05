@@ -38,18 +38,18 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 
 | Quality            | Minimum | Maximum |
 | ------------------ | ------- | ------- |
-| HDTV-720p          | 15      | 67.5    |
-| HDTV-1080p         | 20      | 137.3   |
-| WEBRip-720p        | 15      | 137.3   |
-| WEBDL-720p         | 15      | 137.3   |
-| Bluray-720p        | 25      | 137.3   |
-| WEBRip-1080p       | 22      | 137.3   |
-| WEBDL-1080p        | 22      | 137.3   |
+| HDTV-720p          | 10      | 67.5    |
+| HDTV-1080p         | 15      | 137.3   |
+| WEBRip-720p        | 10      | 137.3   |
+| WEBDL-720p         | 10      | 137.3   |
+| Bluray-720p        | 17.1    | 137.3   |
+| WEBRip-1080p       | 15      | 137.3   |
+| WEBDL-1080p        | 15      | 137.3   |
 | Bluray-1080p       | 50.4    | 227     |
 | Bluray-1080p Remux | 69.1    | 400     |
-| HDTV-2160p         | 84.5    | 350     |
-| WEBRip-2160p       | 84.5    | 350     |
-| WEBDL-2160p        | 84.5    | 350     |
+| HDTV-2160p         | 69.1    | 350     |
+| WEBRip-2160p       | 69.1    | 350     |
+| WEBDL-2160p        | 69.1    | 350     |
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |
 
@@ -68,8 +68,8 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 | WEBDL-1080p        | 4.3     | 253.6   |
 | Bluray-1080p       | 4.3     | 258.1   |
 | Bluray-1080p Remux | 0       | 400     |
-| HDTV-2160p         | 84.5    | 350     |
-| WEBRip-2160p       | 84.5    | 350     |
-| WEBDL-2160p        | 84.5    | 350     |
+| HDTV-2160p         | 69.1    | 350     |
+| WEBRip-2160p       | 69.1    | 350     |
+| WEBDL-2160p        | 69.1    | 350     |
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |

@@ -406,6 +406,19 @@ Add this for example as [15]
     !!! note
         Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
 
+#### Optional Ignore DoVi for WEBDL
+
+??? NOTE "WHY ?"
+
+    This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\b(dv|dovi|dolby[ .]vision)\b.*(?=[ ._-]web[ ._-]?(dl|rip)\b)/i,
+/(?=[ ._-]web[ ._-]?(dl|rip)\b).*\b(dv|dovi|dolby[ .]vision)\b/i
+```
+
 ------
 
 ### A little explanation of the scores and why
