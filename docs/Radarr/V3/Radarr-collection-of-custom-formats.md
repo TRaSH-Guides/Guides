@@ -78,6 +78,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "060059fc2b8759d9f314e1f18c76fd4a",
         "name": "Dolby TrueHD/ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -108,6 +109,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "4eb3c272d48db8ab43c2c85283b69744",
         "name": "DTS-HD/DTS:X",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -138,6 +140,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "43bb5f09c79641e7a22e48d440bd8868",
         "name": "Surround Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -172,6 +175,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "496f355514737f7d83bf7aa4d24f8169",
         "name": "TrueHD ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -246,6 +250,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "2f22d89048b01681dde8afe203bf2e95",
         "name": "DTS X",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -341,6 +346,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "417804f7f2c4308c1f4c5d380d4c4475",
         "name": "ATMOS (undefined)",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -433,6 +439,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "1af239278386be2919e1bcee0bde047e",
         "name": "DD+ ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -527,6 +534,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "3cafb66171b47f226146a0770576870f",
         "name": "TrueHD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -603,6 +611,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "dcf3ec6938fa32445f590a4da84256cd",
         "name": "DTS-HD MA",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -713,6 +722,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "a570d4a0e56a2874b64e5bfa55202a1b",
         "name": "FLAC",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -796,6 +806,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
         "name": "PCM",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -879,6 +890,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
         "name": "DTS-HD HRA",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1001,6 +1013,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "185f1dd7264c4562b9022d963ac37424",
         "name": "DD+",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1084,6 +1097,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "f9f847ac70a0af62ea4a08280b859636",
         "name": "DTS-ES",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1195,6 +1209,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "1c1a4c5e823891c75bc50380a6866f73",
         "name": "DTS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1298,6 +1313,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "240770601cc226190c367ef59aba7463",
         "name": "AAC",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1384,6 +1400,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "c2998bd0d90ed5621d8df281e839436e",
         "name": "DD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1465,6 +1482,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "6ba9033150e7896bdc9ec4b44f2b230f",
         "name": "MP3",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1493,6 +1511,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "a061e2e700f81932daf888599f8a8273",
         "name": "Opus",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1521,6 +1540,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "b124be9b146540f8e62f98fe32e49a2a",
         "name": "1.0 Mono",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1582,6 +1602,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "89dac1be53d5268a7e10a19d3c896826",
         "name": "2.0 Stereo",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1643,6 +1664,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "205125755c411c3b8622ca3175d27b37",
         "name": "3.0 Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1704,6 +1726,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "373b58bd188fc00c817bd8c7470ea285",
         "name": "4.0 Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1765,6 +1788,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "77ff61788dfe1097194fd8743d7b4524",
         "name": "5.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1817,6 +1841,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "6fd7b090c3f7317502ab3b63cc7f51e3",
         "name": "6.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1878,6 +1903,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "e77382bcfeba57cb83744c9c5449b401",
         "name": "7.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1921,6 +1947,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "f2aacebe2c932337fe352fa6e42c1611",
         "name": "9.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1984,6 +2011,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "5d96ce331b98e077abb8ceb60553aa16",
       "name": "DoVi",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2031,6 +2059,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
       "name": "DoVi",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2095,6 +2124,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "462c511637953269a9053d1ed1ffc3a5",
         "name": "DoVi (SL)",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2135,6 +2165,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "e61e28db95d22bedcadf030b8f156d96",
       "name": "HDR",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2176,6 +2207,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
       "name": "HDR (undefined)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2238,6 +2270,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "e114f2f915fa2414b60683cd73c554f3",
         "name": "10 Bit",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2270,6 +2303,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "0f12c086e289cf966fa5948eac571f44",
         "name": "Hybrid",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2311,6 +2345,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "570bc9ebecd92723d2d21500f4be314c",
         "name": "Remaster",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2353,6 +2388,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "eca37840c13c6ef2dd0262b141a5482f",
         "name": "4K Remaster",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2400,6 +2436,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "e0c07d59beb37348e975a930d5e50319",
         "name": "Criterion Collection",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2436,6 +2473,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "e9001909a4c88013a359d0b9920d7bea",
         "name": "Theatrical Cut",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2467,6 +2505,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "957d0f44b592285f26449575e8b1167e",
         "name": "Special Edition",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2505,6 +2544,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "eecf3a857724171f968a66cb5719e152",
       "name": "IMAX",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2551,6 +2591,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "ed38b889b31be83fda192888e2286d83",
       "name": "BR-DISK",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2620,6 +2661,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "name": "EVO (no WEB-DL)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2679,6 +2721,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "90a6f9a284dff5103f6346090e6280c8",
       "name": "LQ",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2772,6 +2815,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "dc98083864ea246d05a42df0d05f81cc",
      "name": "x265 (720/1080p)",
      "includeCustomFormatWhenRenaming": false,
      "specifications": [
@@ -2822,6 +2866,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
         "name": "3D",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2855,6 +2900,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "1c7d7b04b15cc53ea61204bebbcc1ee2",
         "name": "HQ",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2918,6 +2964,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "e7718d7a3ce595f289bfee26adc178f5",
         "name": "Repack/Proper",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2968,6 +3015,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "fd7da02c647dd3f1b6757e150fffc5ff",
         "name": "Streaming Services",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3087,6 +3135,7 @@ If you want maximum compatibility and have much better direct play support then 
 
     ```json
     {
+        "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
         "name": "x264",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3154,6 +3203,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
         "name": "x265",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3195,6 +3245,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "0d91270a7255a1e388fa85e959f359d8",
         "name": "FreeLeech",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3221,6 +3272,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "9de657fd3d327ecf144ec73dfe3a3e9a",
         "name": "Dutch Groups",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3245,6 +3297,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "4a3b087eea2ce012fcc1ce319259a3be",
       "name": "Anime Dual Audio",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -3307,6 +3360,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "ff86c4326018682f817830ced463332b",
         "name": "MPEG2",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3331,6 +3385,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "4b900e171accbfb172729b63323ea8ca",
         "name": "Multi",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
