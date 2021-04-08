@@ -77,12 +77,12 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ## First Release Profile
 
+<!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
 !!! important
     We're going to make use of 2 separate release profiles.
 
 ### Release Sources (Streaming Service)
 
-<!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
 !!! note
 
     Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
