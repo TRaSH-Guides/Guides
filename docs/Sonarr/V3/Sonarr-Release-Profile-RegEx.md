@@ -131,14 +131,14 @@ Add this to your `Preferred (3)` with a score of [90]
 /\b(qibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-```bash
-/\b(pcok)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
 Add this to your `Preferred (3)` with a score of [85]
 
 ```bash
 /\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(pcok)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [75]
