@@ -77,6 +77,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ## First Release Profile
 
+<!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
 !!! important
     We're going to make use of 2 separate release profiles.
 
@@ -175,6 +176,7 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ## Second Release Profile
 
+<!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
 !!! warning
     DO NOT Check mark `Include Preferred when Renaming`
 
