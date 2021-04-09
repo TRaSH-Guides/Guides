@@ -276,7 +276,7 @@ Add this to your `Preferred (3)` with a score of [125]
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(-ViSiON)\b/i
+/(-ViSiON|-FLUX)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
