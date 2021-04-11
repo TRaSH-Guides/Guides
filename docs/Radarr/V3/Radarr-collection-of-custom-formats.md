@@ -2011,7 +2011,7 @@ Advanced Audio Coding
 
     ```json
     {
-        "trash_id": "5d96ce331b98e077abb8ceb60553aa16",
+      "trash_id": "5d96ce331b98e077abb8ceb60553aa16",
       "name": "DoVi",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2059,7 +2059,7 @@ Advanced Audio Coding
 
     ```json
     {
-        "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
       "name": "DoVi",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2091,7 +2091,7 @@ Advanced Audio Coding
           }
         },
         {
-          "name": "Dolby Vision (Single Layer)",
+          "name": "DoVi-SL: Dolby Vision (Single Layer)",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
@@ -2165,7 +2165,7 @@ Advanced Audio Coding
 
     ```json
     {
-        "trash_id": "e61e28db95d22bedcadf030b8f156d96",
+      "trash_id": "e61e28db95d22bedcadf030b8f156d96",
       "name": "HDR",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2207,7 +2207,7 @@ Advanced Audio Coding
 
     ```json
     {
-        "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
+      "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
       "name": "HDR (undefined)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2244,7 +2244,7 @@ Advanced Audio Coding
           "negate": true,
           "required": true,
           "fields": {
-            "value": "\\b(dv|dovi)\\b|dolby.?vision"
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
           }
         },
         {
@@ -2544,7 +2544,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
-        "trash_id": "eecf3a857724171f968a66cb5719e152",
+      "trash_id": "eecf3a857724171f968a66cb5719e152",
       "name": "IMAX",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2591,7 +2591,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
-        "trash_id": "ed38b889b31be83fda192888e2286d83",
+      "trash_id": "ed38b889b31be83fda192888e2286d83",
       "name": "BR-DISK",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2661,7 +2661,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
-        "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "name": "EVO (no WEB-DL)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2721,7 +2721,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
-        "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+      "trash_id": "90a6f9a284dff5103f6346090e6280c8",
       "name": "LQ",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2815,38 +2815,47 @@ That's why I created my own golden rule.
 
     ```json
     {
-        "trash_id": "dc98083864ea246d05a42df0d05f81cc",
-     "name": "x265 (720/1080p)",
-     "includeCustomFormatWhenRenaming": false,
-     "specifications": [
-       {
-         "name": "720p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 720
-         }
-       },
-       {
-         "name": "1080p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 1080
-         }
-       },
-       {
-         "name": "x265/HEVC",
-         "implementation": "ReleaseTitleSpecification",
-         "negate": false,
-         "required": true,
-         "fields": {
-           "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
-         }
-       }
-     ]
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "name": "x265 (720/1080p)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "720p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 720
+          }
+        },
+        {
+          "name": "1080p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 1080
+          }
+        },
+        {
+          "name": "x265/HEVC",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+          }
+        },
+        {
+          "name": "Quality Group Exeptions",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "-MZABI|-NCmt\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -3341,58 +3350,58 @@ Some extra info about 4K/X265
 ??? example "json"
 
     ```json
-    {
+      {
         "trash_id": "4a3b087eea2ce012fcc1ce319259a3be",
-      "name": "Anime Dual Audio",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "Dual Audio",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "dual.?audio"
+        "name": "Anime Dual Audio",
+        "includeCustomFormatWhenRenaming": false,
+        "specifications": [
+          {
+            "name": "Dual Audio",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "dual.?audio"
+            }
+          },
+          {
+            "name": "BluDragon",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "bludragon"
+            }
+          },
+          {
+            "name": "EN+JA",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "EN\\+JA|JA\\+EN"
+            }
+          },
+          {
+            "name": "ZR",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "\\bZR\\b"
+            }
+          },
+          {
+            "name": "Japanese Language",
+            "implementation": "LanguageSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+              "value": 8
+            }
           }
-        },
-        {
-          "name": "BluDragon",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "bludragon"
-          }
-        },
-        {
-          "name": "EN+JA",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "EN\\+JA|JA\\+EN"
-          }
-        },
-        {
-          "name": "ZR",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "\\bZR\\b"
-          }
-        },
-        {
-          "name": "Japanese Language",
-          "implementation": "LanguageSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-            "value": 8
-          }
-        }
-      ]
-    }
+        ]
+      }
     ```
 
 <sub><sup>[TOP](#index)</sup>
