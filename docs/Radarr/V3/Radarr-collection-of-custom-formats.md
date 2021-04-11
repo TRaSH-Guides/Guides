@@ -2244,7 +2244,7 @@ Advanced Audio Coding
           "negate": true,
           "required": true,
           "fields": {
-            "value": "\\b(dv|dovi)\\b|dolby.?vision"
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
           }
         },
         {
