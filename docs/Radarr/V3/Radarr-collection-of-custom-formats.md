@@ -2596,12 +2596,12 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
-          "name": "avc|vc-1|hevc",
+          "name": "Video coding standards",
           "implementation": "ReleaseTitleSpecification",
           "negate": false,
           "required": true,
           "fields": {
-            "value": "avc|vc-1|hevc"
+            "value": "avc|vc-1|hevc|MPEG-?2"
           }
         },
         {
@@ -2637,7 +2637,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           "negate": true,
           "required": true,
           "fields": {
-            "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+            "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
           }
         }
       ]
