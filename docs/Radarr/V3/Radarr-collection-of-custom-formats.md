@@ -1418,7 +1418,7 @@ Advanced Audio Coding
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
