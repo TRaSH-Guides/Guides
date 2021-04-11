@@ -2815,38 +2815,47 @@ That's why I created my own golden rule.
 
     ```json
     {
-        "trash_id": "dc98083864ea246d05a42df0d05f81cc",
-     "name": "x265 (720/1080p)",
-     "includeCustomFormatWhenRenaming": false,
-     "specifications": [
-       {
-         "name": "720p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 720
-         }
-       },
-       {
-         "name": "1080p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 1080
-         }
-       },
-       {
-         "name": "x265/HEVC",
-         "implementation": "ReleaseTitleSpecification",
-         "negate": false,
-         "required": true,
-         "fields": {
-           "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
-         }
-       }
-     ]
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "name": "x265 (720/1080p)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "720p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 720
+          }
+        },
+        {
+          "name": "1080p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 1080
+          }
+        },
+        {
+          "name": "x265/HEVC",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+          }
+        },
+        {
+          "name": "Quality Group Exeptions",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "-MZABI|-NCmt\\b"
+          }
+        }
+      ]
     }
     ```
 
