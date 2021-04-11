@@ -55,7 +55,7 @@ I also made 2 guides related to this one.
 | [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq-releases) | [High Quality Releases](#hq-releases)                         |
 | [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
 | [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
-|                                                           | [Theatrical Cut](#theatrical-cut)             |                                               | [MPEG2](#mpeg2)                           |
+|                                                           | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)                                             | [MPEG2](#mpeg2)                           |
 |                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
 |                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
 |                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
@@ -2878,6 +2878,51 @@ That's why I created my own golden rule.
                 "value": "\\b3d\\b|\\bsbs\\b|half[ .]ou"
             }
         }]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### No-RlsGroup
+
+<sub><sub><sub>Score [-9999]</sub>
+
+>Some indexers strip out the release group what could result in LQ groups getting a higher score.
+>For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+
+!!! warning
+
+    If you don't use a decent filenames like not adding release groups don't add this Custom Format, except if you want to upgrade them.
+
+??? example "json"
+
+    ```json
+    {
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "name": "No-RlsGroup",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "-RlsGroup Missing",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "-[ ]?(?!(HD|MA|ES|X)\\b)\\w+?$"
+          }
+        },
+        {
+          "name": "Weird RlsGroup Formats Missing",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "Tigole|Joy|YIFY|YTS.MX|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros|KRaLiMaRKo|E\\.N\\.D|PrimeHD"
+          }
+        }
+      ]
     }
     ```
 
