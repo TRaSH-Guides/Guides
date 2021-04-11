@@ -2905,21 +2905,21 @@ That's why I created my own golden rule.
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
-          "name": "-RlsGroup Missing",
+          "name": "No -RlsGroup",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
           "fields": {
-            "value": "-[ ]?(?!(HD|MA|ES|X)\\b)\\w+?$"
+            "value": "-[ ]?(?!(HD|MA|ES|X)\\b)\\w+?(\\.\\w{3})?$"
           }
         },
         {
-          "name": "Weird RlsGroup Formats Missing",
+          "name": "No Weird Groups",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
           "fields": {
-            "value": "Tigole|Joy|YIFY|YTS.MX|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros|KRaLiMaRKo|E\\.N\\.D|PrimeHD"
+            "value": "\\b(Tigole|Joy|YIFY|YTS.MX|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros|KRaLiMaRKo|E\\.N\\.D|PrimeHD|BluDragon|SumVision)\\b"
           }
         }
       ]
