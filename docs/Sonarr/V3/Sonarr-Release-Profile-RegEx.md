@@ -344,7 +344,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 #### Optional HDR - if you prefer HDR
 
-Add this for example as [10]
+Add this to your `Preferred (3)` with a score of [10]
 
 ```bash
 /\bHDR(\b|\d)/i
@@ -352,7 +352,7 @@ Add this for example as [10]
 
 #### Optional (use these only if you dislike renamed and retagged releases)
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
 /(\[rartv\]|\[eztv\]|\[TGx\])/i
@@ -376,7 +376,7 @@ Add this for example as [-25]
 
 #### Optional (matches releases that ends with EN)
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
 /\s?\ben\b$/i
@@ -384,7 +384,7 @@ Add this for example as [-25]
 
 #### Optional Matches any release that contains '1-' as prefix for Release Groups
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
 /(1-.+)$/i
@@ -392,7 +392,7 @@ Add this for example as [-25]
 
 #### Optional Matches Season Packs (use this if you prefer Season packs)
 
-Add this for example as [15]
+Add this to your `Preferred (3)` with a score of [15]
 
 ```bash
 /\bS\d+\b(?!E\d+\b)/i
