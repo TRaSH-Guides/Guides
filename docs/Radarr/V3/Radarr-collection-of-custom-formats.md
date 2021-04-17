@@ -2509,7 +2509,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
         "name": "Special Edition",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
-                "name": "Special Edition ",
+                "name": "Special Edition",
                 "implementation": "ReleaseTitleSpecification",
                 "negate": false,
                 "required": true,
