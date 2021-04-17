@@ -2632,12 +2632,21 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           }
         },
         {
-          "name": "x265/HEVC",
+          "name": "x265",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
           "fields": {
-            "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+            "value": "[xh][ .]?265"
+          }
+        },
+        {
+          "name": "BR-DISK Groups",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\bBeyondHD\\b|\\bnLiBRA\\b|\\bDiYHDHome\\b"
           }
         }
       ]
