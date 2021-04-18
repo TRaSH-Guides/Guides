@@ -250,47 +250,6 @@ Add this to your Preferred with a score of **[501]**
 
 ---
 
-!!! important
-    These next few are optional but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
-
----
-
-Add this to your Preferred with a score of **[100]**
-
-!!! note
-    We are adding this as **100** so that any unknown `Blu-Ray` can jump tiers inside the Subs categories but not interfere with any tiers above.
-
-```bash
-/\b(?:(BluRay|Blu-Ray|BDMux|BD(?!$))|(BDRip)|(BRRip))(?:\b|$|[ .])/ix
-```
-
----
-
-Add this to your Preferred with a score of **[15]**
-
-```bash
-/\b(WEB[-_. ]DL|WEBDL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s\/\sWEB\s\/\s\b))/ix
-```
-
----
-
-Add this to your Preferred with a score of **[10]**
-
-```bash
-/(WebRip|Web-Rip|WEBMux)/ix
-```
-
----
-
-Add this to your Preferred with a score of **[5]**
-
-```bash
-/\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\b/i
-```
-
-!!! important
-    This is the end of the optional section.
-
 Add this to your Preferred with a score of **[4000]**
 
 BluRay-Remux / Dual-Audio / 1st Tier
@@ -495,46 +454,6 @@ FanSubs 3rd Tier
 
 !!! note
 
-    These are extra parameters that can help and are not needed but are nice to have. They are set low mainly to supercede themselves and not interfere with other releases.
-
-Add this to your Preferred with a score of **[1]**
-
-Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
-
-```bash
-/(10.?bit|hi10p)/i
-```
-
----
-
-Add this to your Preferred with a score of **[1]**
-
-Adds version due to anime groups sometimes fixing issues with their releases.
-
-```bash
-/\d(v2)\b/i
-```
-
----
-
-Add this to your Preferred with a score of **[2]**
-
-```bash
-/\d(v3)\b/i
-```
-
----
-
-Add this to your Preferred with a score of **[3]**
-
-```bash
-/\d(v4)\b/i
-```
-
----
-
-!!! note
-
     This section can be controversial but most of these releases are micro/mini encodes or crappy quality. I personally add them into the do not want section but I will leave them here with negative values so you can still grab them if all else fails.
 
 Add this to your Preferred with a score of **[-10000]**
@@ -621,6 +540,86 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
     ![!rpa-release-profile-2](images/rpa-release-profile-2.png)
 
 ---
+
+### Optional Release Profile
+
+These next few are optional but they are here to move releases up over lower tiers of `1080/720p` or
+`WEB-DL/Blu-Ray`. Because everything within this section is optional, it gets its own release
+profile for clearer separation.
+
+---
+
+Add this to your Preferred with a score of **[100]**
+
+We are adding this as **100** so that any unknown `Blu-Ray` can jump tiers inside the Subs
+categories but not interfere with any tiers above.
+
+```bash
+/\b(?:(BluRay|Blu-Ray|BDMux|BD(?!$))|(BDRip)|(BRRip))(?:\b|$|[ .])/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[15]**
+
+```bash
+/\b(WEB[-_. ]DL|WEBDL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s\/\sWEB\s\/\s\b))/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[10]**
+
+```bash
+/(WebRip|Web-Rip|WEBMux)/ix
+```
+
+---
+
+Add this to your Preferred with a score of **[5]**
+
+```bash
+/\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\b/i
+```
+
+---
+
+These are extra parameters that can help and are not needed but are nice to have. They are set low
+mainly to supercede themselves and not interfere with other releases.
+
+Add this to your Preferred with a score of **[1]**
+
+Adds Hi10|Hi10p into a match. Prefers this over some erroneous matches.
+
+```bash
+/(10.?bit|hi10p)/i
+```
+
+---
+
+Add this to your Preferred with a score of **[1]**
+
+Adds version due to anime groups sometimes fixing issues with their releases.
+
+```bash
+/\d(v2)\b/i
+```
+
+---
+
+Add this to your Preferred with a score of **[2]**
+
+```bash
+/\d(v3)\b/i
+```
+
+---
+
+Add this to your Preferred with a score of **[3]**
+
+```bash
+/\d(v4)\b/i
+```
 
 ### Completed
 
