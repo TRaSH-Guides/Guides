@@ -2601,7 +2601,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           "negate": false,
           "required": true,
           "fields": {
-            "value": "avc|vc-1|hevc|MPEG-?2"
+            "value": "avc|vc[-.]1|hevc|MPEG-?2"
           }
         },
         {
