@@ -2043,7 +2043,7 @@ Advanced Audio Coding
 
 #### Dolby Vision (no WEB-DL)
 
-!!! NOTE
+!!! danger "!!! **WARNING** !!!"
 
     **You shouldn't use both but choose which one you want to use for your use case !!!**
 
