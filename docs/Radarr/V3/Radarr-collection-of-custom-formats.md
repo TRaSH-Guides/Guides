@@ -2856,7 +2856,7 @@ That's why I created my own golden rule.
           }
         },
         {
-          "name": "Quality Group Exeptions",
+          "name": "Quality Group Exceptions",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
