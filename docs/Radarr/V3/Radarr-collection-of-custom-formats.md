@@ -40,20 +40,20 @@ I also made 2 guides related to this one.
 | [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                               | [PCM](#pcm)                                 | [2.0 Stereo](#20-stereo)     |
 | [Surround Sound](#surround-sound)      | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
 |                                          | [DD+ ATMOS](#dd-atmos)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
-|                                          | [TrueHD](#truehd)       | [Basic Dolby Digital](#basic-dolby-digital) | [5.1 Surround](#51-surround) |
+|                                          | [TrueHD](#truehd)       | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) |
 |                                          | [DTS-HD MA](#dts-hd-ma)                       | [MP3](#mp3)                                 | [6.1 Surround](#61-surround) |
 |                                          | [Dolby Digital Plus](#dolby-digital-plus)     | [Opus](#opus)                               | [7.1 Surround](#71-surround) |
 |                                          | [DTS-ES](#dts-es)                             |                                             | [9.1 Surround](#91-surround) |
-|                                          | [Basic DTS](#basic-dts)                       |                                             |                              |
+|                                          | [DTS](#dts)                       |                                             |                              |
 
 ------
 
 | HDR Metadata                                              | Movie Versions                                | Misc (-1000)                                  | Misc                                      |
 | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
-| [Dolby Vision](#dolby-vision)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
-| [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-except-web-dl)       | [Streaming Services](#streaming-services) |
-| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq-releases) | [High Quality Releases](#hq-releases)                         |
-| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
+| [Dolby Vision](#dovi)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
+| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-no-web-dl)       | [Streaming Services](#streaming-services) |
+| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq) | [High Quality Releases](#hq)                         |
+| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p)        | [x264](#x264)                             |
 | [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
 |                                                           | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)                                             | [MPEG2](#mpeg2)                           |
 |                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
@@ -1198,11 +1198,11 @@ I also made 2 guides related to this one.
 
 ------
 
-### Basic DTS
+### DTS
 
 <sub><sub><sub>Score [410]</sub>
 
-<sub>Basic DTS = DTS</sub>
+<sub>DTS = Basic DTS</sub>
 >Description placeholder
 
 ??? example "json"
@@ -1387,11 +1387,11 @@ Advanced Audio Coding
 
 ------
 
-### Basic Dolby Digital
+### Dolby Digital
 
 <sub><sub><sub>Score [390]</sub>
 
-<sub>Basic Dolby Digital = DD</sub>
+<sub>(Basic) Dolby Digital = DD</sub>
 >[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
 >
 >Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
@@ -1998,7 +1998,7 @@ Advanced Audio Coding
 
 ------
 
-### Dolby Vision
+### DoVi
 
 <sub><sub><sub>Score [300]</sub>
 
@@ -2041,7 +2041,7 @@ Advanced Audio Coding
 
 ------
 
-#### Dolby Vision (no WEB-DL)
+#### DoVi (no WEB-DL)
 
 !!! danger "!!! **WARNING** !!!"
 
@@ -2107,7 +2107,7 @@ Advanced Audio Coding
 
 ------
 
-### Dolby Vision (Single Layer)
+### DoVi (SL)
 
 <sub><sub><sub>Score [295]</sub>
 
@@ -2657,7 +2657,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### EVO except WEB-DL
+### EVO (no WEB-DL)
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2709,7 +2709,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### LQ-Releases
+### LQ
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2787,7 +2787,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### 720/1080p no x265
+### x265 (720/1080p)
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2952,7 +2952,7 @@ That's why I created my own golden rule.
 
 ------
 
-### HQ-Releases
+### HQ
 
 <sub><sub><sub>Score [100]</sub>
 
