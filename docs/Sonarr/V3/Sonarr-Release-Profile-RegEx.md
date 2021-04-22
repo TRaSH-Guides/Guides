@@ -355,7 +355,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
-/(\[rartv\]|\[eztv\]|\[TGx\])/i
+/(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
 ```
 
 ```bash
