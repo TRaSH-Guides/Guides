@@ -2646,7 +2646,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           "negate": false,
           "required": true,
           "fields": {
-            "value": "\\bBeyondHD\\b|\\bnLiBRA\\b|\\bDiYHDHome\\b"
+            "value": "\\b(BeyondHD|nLiBRA|DiYHDHome|HDSky)\\b"
           }
         }
       ]
