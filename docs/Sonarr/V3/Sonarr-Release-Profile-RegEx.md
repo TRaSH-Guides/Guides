@@ -270,7 +270,7 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-ROCCaT)\b/i
+/(-ROCCaT|3cTWeB|playWEB)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
