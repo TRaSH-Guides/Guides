@@ -59,8 +59,9 @@ plugins:
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/V3/Sonarr-remote-path-mapping.md
         Misc/Discord-Notifier-Basic-Setup.md: Notifiarr/Quick-Start.md
         Misc/Discord-Notifiarr-Setup.md: Notifiarr/Quick-Start.md
-        hardlinks.md: Misc/how-to-set-up-hardlinks-and-atomic-moves.md
-        hardlink.md: Misc/how-to-set-up-hardlinks-and-atomic-moves.md
+        Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         custom-formats.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         cf.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         TorGuard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
