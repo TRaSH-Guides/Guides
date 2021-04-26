@@ -37,4 +37,4 @@ you then will get 2 results you can use to compare several things.
 ![!Hardlinks check stat](images/hardlinks-stat.png)
 
 1. Links: Everything above 1 means it's a hardlink
-2. Inode: if the numbers match you know the files are hardlinked
+1. Inode: if the numbers match you know the files are hardlinked
