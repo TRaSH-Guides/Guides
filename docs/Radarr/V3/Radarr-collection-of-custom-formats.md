@@ -2644,7 +2644,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           "name": "BR-DISK Groups",
           "implementation": "ReleaseTitleSpecification",
           "negate": false,
-          "required": true,
+          "required": false,
           "fields": {
             "value": "\\b(BeyondHD|nLiBRA|DiYHDHome|HDSky)\\b"
           }
