@@ -62,6 +62,7 @@ plugins:
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        check-hardlinks.md: Hardlinks/Check-if-hardlinks-are-working.md
         custom-formats.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         cf.md: Radarr/V3/Radarr-collection-of-custom-formats.md
         TorGuard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
