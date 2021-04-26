@@ -3275,7 +3275,7 @@ Some extra info about 4K/X265
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+                    "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
                 }
             },
             {
