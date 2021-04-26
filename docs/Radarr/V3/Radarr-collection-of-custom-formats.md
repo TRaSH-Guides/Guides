@@ -3207,7 +3207,7 @@ If you want maximum compatibility and have much better direct play support then 
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "[xh]\\.?264|\\bAVC(\\b|\\d)"
+                    "value": "[xh][ .]?264|\\bAVC(\\b|\\d)"
                 }
             },
             {
