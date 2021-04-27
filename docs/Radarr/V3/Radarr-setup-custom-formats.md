@@ -18,6 +18,10 @@ Here I will try to explain with some personal used examples how to make the most
 
 ## Basics
 
+!!! note
+
+    Custom formats are implemented within and have their impact controlled by Quality Profiles. The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded. A score of 0 results in the custom format being informational only. The Minimum score requires releases to reach this threshold otherwise they will be rejected. Custom formats that match with undesirable attributes should be given a negative score to lower their appeal. Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+
 First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/V3/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}.
 And a short description what the settings means.
 
