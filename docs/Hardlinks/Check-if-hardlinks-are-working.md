@@ -1,20 +1,20 @@
-# Check if hardlinks are working
+# How to check if hardlinks are working
 
-You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked  ?
+You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?
 
-For this you can use 2 options to check if you got working hardlinks.
+You can use 2 options to check if you got working hardlinks.
 
-Both ways requires you to login to your terminal with Putty or similar.
+*Both ways requires you to login to your terminal with PuTTY or similar software.*
 
 ---
 
-## The ls -al method
+## Method 1: Using ls
 
 This is the easiest to check in my opinion.
 
-In your terminal cd to your download location or type `ls -al /path/to/your/download/location/`
+In your terminal `cd` to your download location and run `ls-al` or type `ls -al /path/to/your/download/location/`
 
-You will get a listing of all your files and on the left side you will see a couple of numbers, every files with a number above 1 are hardlinks.
+You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.
 
 ![!Hardlinks check ls -al](images/hardlinks-ls-al.png)
 
@@ -24,15 +24,15 @@ You will get a listing of all your files and on the left side you will see a cou
 
 ---
 
-## The stat method
+## Method 2: Using stat
 
 This way requires a bit more work.
 
-In your terminal type: `stat /path/to/your/download/location/file.mkv`
+- On the terminal type: `stat /path/to/your/download/location/file.mkv`
 
-and also type: `stat /path/to/your/media/location/file.mkv`
+- On the terminal type: `stat /path/to/your/media/location/file.mkv`
 
-you then will get 2 results you can use to compare several things.
+You will get 2 results you can use to compare several things.
 
 ![!Hardlinks check stat](images/hardlinks-stat.png)
 

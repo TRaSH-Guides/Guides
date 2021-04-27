@@ -62,6 +62,12 @@ data
 
 ------
 
+### Breakdown of the Folder Structure
+
+!!! info
+
+    The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
+
 ## Setting up the containers
 
 After you created all the needed folders it's time to setup the paths in the docker containers.

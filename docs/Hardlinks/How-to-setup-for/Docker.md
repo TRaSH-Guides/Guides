@@ -2,33 +2,29 @@
 
 !!! tip
 
-   If you're new to dockers and want a easy setup I suggest to take a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
-   I've also created a short guide [HERE](#dockstarter) where I explain the settings for the most used applications.
+    If you're new to dockers and want a easy setup I suggest to take a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
+    I've also created a short guide [HERE](/Hardlinks/How-to-setup-for/Dockstarter/) where I explain the settings for the most used applications.
 
-   The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
-   You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
+    The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
+    You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
 
-   *DockSTARTer was actually my first steps in to the world of dockers.*
+    *DockSTARTer was actually my first steps in to the world of dockers.*
 
 !!! note
 
-   I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.
-
-!!! info
-
-The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
+    I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.
 
 ## Folder Structure
 
 !!! attention
 
-   It doesn't really matter which path you use for your media and appdata,
+    It doesn't really matter which path you use for your media and appdata,
 
-   the only thing you should avoid is `/home`.
+    the only thing you should avoid is `/home`.
 
-   Because user folders in `/home` are expected to have some restrictive permissions.
+    Because user folders in `/home` are expected to have some restrictive permissions.
 
-   It just could end up creating a permissions mess, so it's better to just avoid entirely.
+    It just could end up creating a permissions mess, so it's better to just avoid entirely.
 
 For this example we're going to make use of a share called `data`.
 
@@ -54,6 +50,10 @@ data
 
 ### Breakdown of the Folder Structure
 
+!!! info
+
+    The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
+
 #### Torrent clients
 
 qBittorrent, Deluge, ruTorrent
@@ -68,7 +68,7 @@ data
    └── tv
 ```
 
-### Usenet clients
+#### Usenet clients
 
 NZBGet or SABnzbd
 
@@ -82,7 +82,7 @@ data
    └── tv
 ```
 
-### The arr(s)
+#### The arr(s)
 
 Sonarr, Radarr and Lidarr
 
@@ -104,7 +104,7 @@ data
    └── tv
 ```
 
-### Media Server
+#### Media Server
 
 Plex, Emby, JellyFin and Bazarr
 

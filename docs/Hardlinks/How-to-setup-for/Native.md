@@ -2,7 +2,7 @@
 
 !!! note
 
-   I'm not going to explain how to install all the applications, I will only explain which folder structure we recommend.
+    I'm not going to explain how to install all the applications, I will only explain which folder structure we recommend.
 
 ------
 
