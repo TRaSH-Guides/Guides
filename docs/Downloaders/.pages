@@ -1,0 +1,7 @@
+nav:
+    - Home: index.md
+    - NZBGet
+    - SABnzbd
+    - qBittorrent
+    - Deluge
+    - ruTorrent

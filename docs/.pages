@@ -4,7 +4,7 @@ nav:
     - Sonarr
     - Bazarr
     - Notifiarr
-    - NZBGet
+    - Downloaders
     - Plex
     - Misc
     - Hardlinks
