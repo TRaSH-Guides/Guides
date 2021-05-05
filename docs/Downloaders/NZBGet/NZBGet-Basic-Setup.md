@@ -1,4 +1,4 @@
-# Setup NZBGet to use with Sonarr/Radarr
+# NZBGet - Basic Setup
 
 This basic example is based on the use of docker images
 
