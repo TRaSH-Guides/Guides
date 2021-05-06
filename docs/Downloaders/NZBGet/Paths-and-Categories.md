@@ -1,4 +1,4 @@
-# Paths and Categories
+# NZBGet - Paths and Categories
 
 This basic example is based on the use of docker images
 
