@@ -2,11 +2,17 @@
 
 This basic example is based on the use of docker images
 
-!!! note ""
-    Keep in mind I've setup my paths so it works with hardlinks and you get instant moves.
+!!! attention ""
+    Keep in mind the path are setup so it works with hardlinks and instant moves.
+
+    More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
 !!! warning ""
-    The default path setup used by [Linux|Server.io](https://hub.docker.com/r/linuxserver/) don't support hardlinks and instant moves, but you're able to change this, by not using the pre-defined paths like `/downloads` `/movies` and `/tv` and use paths like `/data/downloads`, `/data/media/movies` and `/data/media/tv`.
+    The default path setup used by [Linux|Server.io](https://hub.docker.com/r/linuxserver/){:target="_blank" rel="noopener noreferrer"} don't support hardlinks and instant moves, but you're able to change this, by not using the pre-defined paths like:
+
+    - `/downloads` => `/data/downloads`
+    - `/movies` => `/data/media/movies`
+    - `/tv` => `/data/media/tv`.
 
 ------
 
@@ -26,8 +32,8 @@ I will only explain the so called most important paths.
 
 | Name        | Description                                                                            |
 |:---         |:---                                                                                     |
-| `MainDir`   | `/data/.usenet`                                                                        |
-| `DestDir`   | `${MainDir}/completed` (so it will go in to `/data/.usenet/completed`)                 |
+| `MainDir`   | `/data/usenet`                                                                        |
+| `DestDir`   | `${MainDir}/completed` (so it will go in to `/data/usenet/completed`)                 |
 | `InterDir`  | Files are downloaded into this directory (before unpack+par2)                          |
 | `NzbDir`    | Directory for incoming nzb-files.                                                      |
 | `QueueDir`  | This directory is used to save download queue, history, information statistics, etc.   |
@@ -57,7 +63,7 @@ I will only explain the so called most important paths.
 | Name          | Description                                                                            |
 |:---           |:---                                                                                    |
 | `Name`        | This should match what you put in Sonarr/Radarr (tv/movies/sonarr/radarr/series/films) |
-| `DestDir`     | `${DestDir}` Destination directory (/data/.usenet/completed/movie)                     |
+| `DestDir`     | `${DestDir}` Destination directory (/data/usenet/completed/movie)                     |
 | `Unpack`      | Unpack downloaded nzb-files.                                                           |
 | `Extensions`  | List of extension scripts for this category.                                           |
 
@@ -65,14 +71,14 @@ I will only explain the so called most important paths.
 
 ![!incoming](images/incoming.png)
 
-!!! warning
+!!! info
     `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
 
 ![!queue](images/queue.png)
 
-!!! warning
+!!! caution
     `WriteBuffer`: If you're low on memory don't set this to high.
 
 ## LOGGING
@@ -87,7 +93,7 @@ I will only explain the so called most important paths.
 
 ![!unpack](images/unpack.png)
 
-!!! warning
+!!! info
     `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
 
 ## EXTENSION SCRIPTS
