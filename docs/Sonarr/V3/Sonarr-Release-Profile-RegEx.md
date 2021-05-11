@@ -77,6 +77,7 @@ The Number between the **[**brackets**]** are the scores the release name will g
 
 ## First Release Profile
 
+<!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
 !!! important
     We're going to make use of 2 separate release profiles.
 
@@ -137,6 +138,10 @@ Add this to your `Preferred (3)` with a score of [85]
 /\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(pcok)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 Add this to your `Preferred (3)` with a score of [75]
 
 ```bash
@@ -171,6 +176,7 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ## Second Release Profile
 
+<!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
 !!! warning
     DO NOT Check mark `Include Preferred when Renaming`
 
@@ -264,13 +270,13 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-ROCCaT)\b/i
+/(-ROCCaT|3cTWeB|playWEB)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(-ViSiON)\b/i
+/(-ViSiON|-FLUX)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -336,14 +342,20 @@ Add this to your `Preferred (3)` with a score of [-100]
 !!! note
     These options are optional and only needed if you got a certain use case for it,
 
-    Or when you're on the top indexers/trackers !!!
+#### Optional HDR - if you prefer HDR
+
+Add this to your `Preferred (3)` with a score of [10]
+
+```bash
+/\bHDR(\b|\d)/i
+```
 
 #### Optional (use these only if you dislike renamed and retagged releases)
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
-/(\[rartv\]|\[eztv\]|\[TGx\])/i
+/(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
 ```
 
 ```bash
@@ -364,7 +376,7 @@ Add this for example as [-25]
 
 #### Optional (matches releases that ends with EN)
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
 /\s?\ben\b$/i
@@ -372,7 +384,7 @@ Add this for example as [-25]
 
 #### Optional Matches any release that contains '1-' as prefix for Release Groups
 
-Add this for example as [-25]
+Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
 /(1-.+)$/i
@@ -380,7 +392,7 @@ Add this for example as [-25]
 
 #### Optional Matches Season Packs (use this if you prefer Season packs)
 
-Add this for example as [15]
+Add this to your `Preferred (3)` with a score of [15]
 
 ```bash
 /\bS\d+\b(?!E\d+\b)/i
@@ -395,12 +407,25 @@ Add this for example as [15]
     ![!rp-su-season](images/rp-su-season.png)
 
     Then theirs only one way real way that always solves this issue.
-    create a new release profile specific for .su that uses the [Season regex(#optional-matches-season-packs-use-this-if-you-prefer-season-packs)] as `Must not contain (2)`
+    create a new release profile specific for .su that uses the [Season regex](#optional-matches-season-packs-use-this-if-you-prefer-season-packs) as `Must not contain (2)`
 
     ![!rp-release-profile-block-season-su](images/rp-release-profile-block-season-su.png)
 
     !!! note
         Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
+
+#### Optional Ignore DoVi for WEBDL
+
+??? NOTE "WHY ?"
+
+    This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\b(dv|dovi|dolby[ .]vision)\b.*(?=[ ._-]web[ ._-]?(dl|rip)\b)/i,
+/(?=[ ._-]web[ ._-]?(dl|rip)\b).*\b(dv|dovi|dolby[ .]vision)\b/i
+```
 
 ------
 

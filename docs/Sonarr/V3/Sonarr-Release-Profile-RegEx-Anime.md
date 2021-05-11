@@ -158,6 +158,7 @@ We need to add the Anime Categories to our indexers otherwise this all won't wor
 
 ### First Release Profile
 
+<!-- [trash_id: 31f4dd7b08bc8a43099eed604fd8acf6] -->
 !!! important
     **DO** Check mark `Include Preferred when Renaming` on this release profile.
     ![!rpa-release-sources-1](images/rpa-release-sources-1.png)
@@ -195,6 +196,7 @@ Add this to your Preferred with a score of **[100]**
 
 ### Second Release Profile
 
+<!-- [trash_id: c3a45e86f61f3a801428d1538918e41f] -->
 !!! warning
     **DO NOT** Check mark `Include Preferred when Renaming`
     ![!rpa-release-sources-2](images/rpa-release-sources-2.png)

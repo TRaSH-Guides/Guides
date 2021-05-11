@@ -18,6 +18,10 @@ Here I will try to explain with some personal used examples how to make the most
 
 ## Basics
 
+!!! note
+
+    Custom formats are implemented within and have their impact controlled by Quality Profiles. The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded. A score of 0 results in the custom format being informational only. The Minimum score requires releases to reach this threshold otherwise they will be rejected. Custom formats that match with undesirable attributes should be given a negative score to lower their appeal. Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+
 First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/V3/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}.
 And a short description what the settings means.
 
@@ -52,7 +56,18 @@ In your chosen profile at the bottom you will see the added Custom Profiles wher
 !!! attention
     Keep in mind Custom Formats are made to fine tune your Quality Profile
 
-    **Quality Profile trumps Custom Formats**
+    Generally Quality Trumps All
+
+    The current logic can be found [HERE](https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/DecisionEngine/DownloadDecisionComparer.cs){:target="_blank" rel="noopener noreferrer"} As of 1/19/2021 the logic is as follows
+
+    1. Quality
+    1. Custom Format Score
+    1. Protocol
+    1. Indexer Priority
+    1. Indexer Flags
+    1. Peers (If Torrent)
+    1. Age (If Usenet)
+    1. Size
 
 My suggestion is to create tiers of scores based on what things matter to you.
 
@@ -62,73 +77,6 @@ If you got any questions or aren't sure what to add just Click the chat badge to
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-??? tip "Proper and Repacks"
-
-    ### Proper and Repacks
-
-    I also suggest to change the Propers and Repacks settings in Radarr
-
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/V3/Radarr-collection-of-custom-formats/#repack-proper) Custom Format.
-
-    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
-
-    This way you make sure the Custom Formats preferences will be used and not ignored.
-
-??? tip "Custom Formats to avoid certain releases"
-
-    ### Custom Formats to avoid certain releases
-
-    For Custom Formats you really want to avoid, set it to something really low like `-1000` or even `-9999` and not something like `-10`.
-    Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
-
-??? info "Minimum Custom Format Score"
-
-    ### Minimum Custom Format Score
-
-    Some people suggest not to use minus score for your Custom Formats and set this option to a higher score then 0.
-
-    The reason why I don't prefer/use this is because you could limit your self when some new groups or what ever will be released.
-
-    Also it makes it much more clear what you prefer and what you want to avoid.
-
-??? tip "Audio Channels"
-
-    ### Audio Channels
-
-    Personally I wouldn't add the audio channels Custom Formats being you could limit your self in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.
-
-    Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. and you can better score using the `Audio Advanced` Custom Formats
-
-??? info "Audio vs Audio Advanced"
-
-    ### Audio vs Audio Advanced
-
-    What's the biggest difference between these two ?
-
-    The Custom Formats in the `Audio` are kinda global and not specific based on the best audio format.
-
-    Personally I recommend to use the `Audio Advanced` they are already ordered from high to low if you prefer HD audio (with object metadata)
-
-    !!! warning
-
-        Don't use `Audio` Custom Format in combination with the `Audio Advanced` Custom Formats.
-
-??? info "Custom Formats with a score of 0"
-
-    ### Custom Formats with a score of 0
-
-    All Custom Formats with a score of 0 are pure informational and don't do anything.
-
-??? info "Avoid using the x264/x265 Custom Format"
-
-    ### Avoid using the x264/x265 Custom Format
-
-    If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) Custom Format.
-
-    Something like 95% of video files are x264 and have much better direct play support. If you have more than a couple users, you will notice much more transcoding.
-
-    Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) makes sure you still can get the x265 releases.
-
 ------
 
 ## Examples
@@ -137,7 +85,7 @@ Here I will show how to make the most use of Custom Formats and show some person
 
 All these examples make use of the [Collection of Custom Formats](/Radarr/V3/Radarr-collection-of-custom-formats/)
 
-??? info "Which overall scoring scheme do you use ?"
+??? FAQ "Which overall scoring scheme do you use ?"
 
     ### Which overall scoring scheme do you use
 
@@ -145,6 +93,7 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/V3/Rad
     - **HDR Metadata** 300 for the highest with steps of 10 down.
     - **Movie Versions** 200 for the highest with steps of 10 down.
     - **Misc** 100 with steps of 10 down.
+    - **Releases you should avoid** -9999
 
     If you notice that some scores are missing between the different Quality Profiles examples it's because I decided to be consistent with the scoring. Meaning a certain Custom Format has in every used Quality Profile the same score.
 
@@ -218,7 +167,7 @@ If you think the sizes are to big to your preference then stop reading and see i
 
 For this Quality Profile we're going to make use of `Movie Versions`, `Misc (-1000)` and `Misc`
 
-Make sure you add the [Releases you should avoid](#releases-you-should-avoid)
+ :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile being with encodes I prefer higher video quality, If I want also the HD audio formats I would go for the Remuxes.
 
@@ -258,7 +207,7 @@ If you think the sizes are to big to your preference then stop reading and see i
 
 For this Quality Profile we're going to make use of `Audio Advanced`, `Movie Versions`, `Misc (-1000)` and `Misc`
 
-Make sure you add the [Releases you should avoid](#releases-you-should-avoid)
+ :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
 The Custom Formats we're going to use and scoring.
 
@@ -292,7 +241,7 @@ If you think the sizes are to big to your preference then stop reading and see i
 
 For this Quality Profile we're going to make use of `Audio Advanced`,  `HDR Metadata`,`Movie Versions`, `Misc (-1000)` and `Misc`
 
-Make sure you add the [Releases you should avoid](#releases-you-should-avoid)
+ :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
 The Custom Formats we're going to use and scoring.
 
@@ -316,6 +265,75 @@ So why such a ridiculous high `Upgrade Until Custom` and not a score of `500` ?
 Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
 
 ------
+
+## FAQ and Tips
+
+### Proper and Repacks
+
+??? tip "Proper and Repacks"
+
+    I also suggest to change the Propers and Repacks settings in Radarr
+
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/V3/Radarr-collection-of-custom-formats/#repack-proper) Custom Format.
+
+    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+
+    This way you make sure the Custom Formats preferences will be used and not ignored.
+
+### Custom Formats to avoid certain releases
+
+??? FAQ "How to use a Custom Formats to avoid certain releases?"
+
+    For Custom Formats you really want to avoid, set it to something really low like `-1000` or even `-9999` and not something like `-10`.
+    Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
+
+### Audio vs Audio Advanced
+
+??? FAQ "What's the difference between Audio vs Audio Advanced?"
+
+    What's the biggest difference between these two ?
+
+    The Custom Formats in the `Audio` are kinda global and not specific based on the best audio format.
+
+    Personally I recommend to use the `Audio Advanced` they are already ordered from high to low if you prefer HD audio (with object metadata)
+
+    !!! warning
+
+        Don't use `Audio` Custom Format in combination with the `Audio Advanced` Custom Formats.
+
+### Custom Formats with a score of 0
+
+??? FAQ "What do Custom Formats with a score of 0 do?"
+
+    All Custom Formats with a score of 0 are pure informational and don't do anything.
+
+### Minimum Custom Format Score
+
+??? info "Minimum Custom Format Score"
+
+    Some people suggest not to use minus score for your Custom Formats and set this option to a higher score then 0.
+
+    The reason why I don't prefer/use this is because you could limit your self when some new groups or what ever will be released.
+
+    Also it makes it much more clear what you prefer and what you want to avoid.
+
+### Audio Channels
+
+??? info "Audio Channels"
+
+    Personally I wouldn't add the audio channels Custom Formats being you could limit your self in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.
+
+    Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. and you can better score using the `Audio Advanced` Custom Formats
+
+### Avoid using the x264/x265 Custom Format
+
+??? tip "Avoid using the x264/x265 Custom Format"
+
+    If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) Custom Format.
+
+    Something like 95% of video files are x264 and have much better direct play support. If you have more than a couple users, you will notice much more transcoding.
+
+    Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) makes sure you still can get the x265 releases.
 
 ## THNX
 

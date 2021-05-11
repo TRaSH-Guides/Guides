@@ -4,10 +4,21 @@ Here I will try to collect a collection of the most needed and commonly used Cus
 These have been collected from either discussions on discord or that I created with help from others.
 Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
 
-!!! warning "Important"
+!!! attention
     Keep in mind Custom Formats are made to fine tune your Quality Profile
 
-    **Quality Profile trumps Custom Formats**
+    Generally Quality Trumps All
+
+    The current logic can be found [HERE](https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/DecisionEngine/DownloadDecisionComparer.cs){:target="_blank" rel="noopener noreferrer"} As of 1/19/2021 the logic is as follows
+
+    1. Quality
+    1. Custom Format Score
+    1. Protocol
+    1. Indexer Priority
+    1. Indexer Flags
+    1. Peers (If Torrent)
+    1. Age (If Usenet)
+    1. Size
 
 With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
 
@@ -40,22 +51,22 @@ I also made 2 guides related to this one.
 | [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                               | [PCM](#pcm)                                 | [2.0 Stereo](#20-stereo)     |
 | [Surround Sound](#surround-sound)      | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
 |                                          | [DD+ ATMOS](#dd-atmos)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
-|                                          | [TrueHD](#truehd)       | [Basic Dolby Digital](#basic-dolby-digital) | [5.1 Surround](#51-surround) |
+|                                          | [TrueHD](#truehd)       | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) |
 |                                          | [DTS-HD MA](#dts-hd-ma)                       | [MP3](#mp3)                                 | [6.1 Surround](#61-surround) |
 |                                          | [Dolby Digital Plus](#dolby-digital-plus)     | [Opus](#opus)                               | [7.1 Surround](#71-surround) |
 |                                          | [DTS-ES](#dts-es)                             |                                             | [9.1 Surround](#91-surround) |
-|                                          | [Basic DTS](#basic-dts)                       |                                             |                              |
+|                                          | [DTS](#dts)                       |                                             |                              |
 
 ------
 
 | HDR Metadata                                              | Movie Versions                                | Misc (-1000)                                  | Misc                                      |
 | --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
-| [Dolby Vision](#dolby-vision)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
-| [Dolby Vision (Single Layer)](#dolby-vision-single-layer) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-except-web-dl)       | [Streaming Services](#streaming-services) |
-| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq-releases) | [High Quality Releases](#hq-releases)                         |
-| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#7201080p-no-x265)        | [x264](#x264)                             |
+| [Dolby Vision](#dovi)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
+| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-no-web-dl)       | [Streaming Services](#streaming-services) |
+| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq) | [High Quality Releases](#hq)                         |
+| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p)        | [x264](#x264)                             |
 | [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
-|                                                           | [Theatrical Cut](#theatrical-cut)             |                                               | [MPEG2](#mpeg2)                           |
+|                                                           | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)                                             | [MPEG2](#mpeg2)                           |
 |                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
 |                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
 |                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
@@ -78,6 +89,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "060059fc2b8759d9f314e1f18c76fd4a",
         "name": "Dolby TrueHD/ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -108,6 +120,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "4eb3c272d48db8ab43c2c85283b69744",
         "name": "DTS-HD/DTS:X",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -138,6 +151,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "43bb5f09c79641e7a22e48d440bd8868",
         "name": "Surround Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -172,6 +186,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "496f355514737f7d83bf7aa4d24f8169",
         "name": "TrueHD ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -198,7 +213,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -246,6 +261,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "2f22d89048b01681dde8afe203bf2e95",
         "name": "DTS X",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -281,7 +297,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -341,6 +357,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "417804f7f2c4308c1f4c5d380d4c4475",
         "name": "ATMOS (undefined)",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -349,7 +366,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -433,6 +450,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "1af239278386be2919e1bcee0bde047e",
         "name": "DD+ ATMOS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -441,7 +459,7 @@ I also made 2 guides related to this one.
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -527,6 +545,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "3cafb66171b47f226146a0770576870f",
         "name": "TrueHD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -553,7 +572,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -603,6 +622,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "dcf3ec6938fa32445f590a4da84256cd",
         "name": "DTS-HD MA",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -629,7 +649,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -713,6 +733,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "a570d4a0e56a2874b64e5bfa55202a1b",
         "name": "FLAC",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -775,7 +796,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             }
         ]
@@ -796,6 +817,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
         "name": "PCM",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -858,7 +880,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             }
         ]
@@ -879,6 +901,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
         "name": "DTS-HD HRA",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -905,7 +928,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1001,6 +1024,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "185f1dd7264c4562b9022d963ac37424",
         "name": "DD+",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1009,7 +1033,7 @@ I also made 2 guides related to this one.
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1084,6 +1108,7 @@ I also made 2 guides related to this one.
 
     ```json
     {
+        "trash_id": "f9f847ac70a0af62ea4a08280b859636",
         "name": "DTS-ES",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1110,7 +1135,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1184,17 +1209,18 @@ I also made 2 guides related to this one.
 
 ------
 
-### Basic DTS
+### DTS
 
 <sub><sub><sub>Score [410]</sub>
 
-<sub>Basic DTS = DTS</sub>
+<sub>DTS = Basic DTS</sub>
 >Description placeholder
 
 ??? example "json"
 
     ```json
     {
+        "trash_id": "1c1a4c5e823891c75bc50380a6866f73",
         "name": "DTS",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1212,7 +1238,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dts.?(hd|ma|es|hi)"
+                    "value": "dts.?(hd|ma|es|hi|hr)"
                 }
             },
             {
@@ -1221,7 +1247,7 @@ I also made 2 guides related to this one.
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1298,6 +1324,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "240770601cc226190c367ef59aba7463",
         "name": "AAC",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1324,7 +1351,7 @@ Advanced Audio Coding
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "dd[p+]|eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1371,11 +1398,11 @@ Advanced Audio Coding
 
 ------
 
-### Basic Dolby Digital
+### Dolby Digital
 
 <sub><sub><sub>Score [390]</sub>
 
-<sub>Basic Dolby Digital = DD</sub>
+<sub>(Basic) Dolby Digital = DD</sub>
 >[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
 >
 >Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
@@ -1384,6 +1411,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "c2998bd0d90ed5621d8df281e839436e",
         "name": "DD",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1401,7 +1429,7 @@ Advanced Audio Coding
                 "negate": true,
                 "required": true,
                 "fields": {
-                    "value": "eac3"
+                    "value": "[^-]dd[p+]|eac3"
                 }
             },
             {
@@ -1465,6 +1493,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "6ba9033150e7896bdc9ec4b44f2b230f",
         "name": "MP3",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1493,6 +1522,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "a061e2e700f81932daf888599f8a8273",
         "name": "Opus",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1521,6 +1551,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "b124be9b146540f8e62f98fe32e49a2a",
         "name": "1.0 Mono",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1582,6 +1613,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "89dac1be53d5268a7e10a19d3c896826",
         "name": "2.0 Stereo",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1643,6 +1675,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "205125755c411c3b8622ca3175d27b37",
         "name": "3.0 Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1704,6 +1737,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "373b58bd188fc00c817bd8c7470ea285",
         "name": "4.0 Sound",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1765,6 +1799,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "77ff61788dfe1097194fd8743d7b4524",
         "name": "5.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1817,6 +1852,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "6fd7b090c3f7317502ab3b63cc7f51e3",
         "name": "6.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1878,6 +1914,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "e77382bcfeba57cb83744c9c5449b401",
         "name": "7.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1921,6 +1958,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "f2aacebe2c932337fe352fa6e42c1611",
         "name": "9.1 Surround",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -1971,7 +2009,7 @@ Advanced Audio Coding
 
 ------
 
-### Dolby Vision
+### DoVi
 
 <sub><sub><sub>Score [300]</sub>
 
@@ -1984,17 +2022,29 @@ Advanced Audio Coding
 
     ```json
     {
-        "name": "DoVi",
-        "includeCustomFormatWhenRenaming": true,
-        "specifications": [{
-            "name": "Dolby Vision",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\b(DV|dovi)\\b|dolby.?vision"
-            }
-        }]
+      "trash_id": "5d96ce331b98e077abb8ceb60553aa16",
+      "name": "DoVi",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        },
+        {
+          "name": "DoVi-SL: Dolby Vision (Single Layer)",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2002,7 +2052,73 @@ Advanced Audio Coding
 
 ------
 
-### Dolby Vision (Single Layer)
+#### DoVi (no WEB-DL)
+
+!!! danger "!!! **WARNING** !!!"
+
+    **You shouldn't use both but choose which one you want to use for your use case !!!**
+
+    Use the same scoring that you would use for Dolby Vision normally.
+
+<sub>Dolby Vision = DoVi</sub>
+>This is a special Custom Format that ignores DV for WEB-DL but allows for other sources.
+>
+>WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
+>Remuxes and Bluray have a fallback to HDR(10).
+
+??? example "json"
+
+    ```json
+    {
+      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "name": "DoVi",
+      "includeCustomFormatWhenRenaming": true,
+      "specifications": [
+        {
+          "name": "Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": 8
+          }
+        },
+        {
+          "name": "DoVi-SL: Dolby Vision (Single Layer)",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
+          }
+        }
+      ]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DoVi (SL)
 
 <sub><sub><sub>Score [295]</sub>
 
@@ -2019,6 +2135,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "462c511637953269a9053d1ed1ffc3a5",
         "name": "DoVi (SL)",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2027,7 +2144,7 @@ Advanced Audio Coding
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "sl.?dv|single.?layer.?dovi"
+                    "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
                 }
             },
             {
@@ -2059,17 +2176,29 @@ Advanced Audio Coding
 
     ```json
     {
-        "name": "HDR",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [{
-            "name": "HDR",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\bHDR(\\b|\\d)"
-            }
-        }]
+      "trash_id": "e61e28db95d22bedcadf030b8f156d96",
+      "name": "HDR",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "HDR",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\bHDR(\\b|\\d)"
+          }
+        },
+        {
+          "name": "DoVi",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2089,6 +2218,7 @@ Advanced Audio Coding
 
     ```json
     {
+      "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
       "name": "HDR (undefined)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2125,7 +2255,7 @@ Advanced Audio Coding
           "negate": true,
           "required": true,
           "fields": {
-            "value": "\\b(DV|dovi)\\b|dolby.?vision"
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
           }
         },
         {
@@ -2151,6 +2281,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "e114f2f915fa2414b60683cd73c554f3",
         "name": "10 Bit",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2183,6 +2314,7 @@ Advanced Audio Coding
 
     ```json
     {
+        "trash_id": "0f12c086e289cf966fa5948eac571f44",
         "name": "Hybrid",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2224,6 +2356,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "570bc9ebecd92723d2d21500f4be314c",
         "name": "Remaster",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2266,6 +2399,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "eca37840c13c6ef2dd0262b141a5482f",
         "name": "4K Remaster",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2313,6 +2447,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "e0c07d59beb37348e975a930d5e50319",
         "name": "Criterion Collection",
         "includeCustomFormatWhenRenaming": true,
         "specifications": [{
@@ -2349,6 +2484,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "e9001909a4c88013a359d0b9920d7bea",
         "name": "Theatrical Cut",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2380,10 +2516,11 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+        "trash_id": "957d0f44b592285f26449575e8b1167e",
         "name": "Special Edition",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
-                "name": "Special Edition ",
+                "name": "Special Edition",
                 "implementation": "ReleaseTitleSpecification",
                 "negate": false,
                 "required": true,
@@ -2418,6 +2555,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+      "trash_id": "eecf3a857724171f968a66cb5719e152",
       "name": "IMAX",
       "includeCustomFormatWhenRenaming": true,
       "specifications": [
@@ -2464,16 +2602,17 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+      "trash_id": "ed38b889b31be83fda192888e2286d83",
       "name": "BR-DISK",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
-          "name": "avc|vc-1|hevc",
+          "name": "Video coding standards",
           "implementation": "ReleaseTitleSpecification",
           "negate": false,
           "required": true,
           "fields": {
-            "value": "avc|vc-1|hevc"
+            "value": "avc|vc[-.]1|hevc|MPEG-?2"
           }
         },
         {
@@ -2504,12 +2643,21 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
           }
         },
         {
-          "name": "x265/HEVC",
+          "name": "x265",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
           "required": true,
           "fields": {
-            "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+            "value": "[xh][ .]?265"
+          }
+        },
+        {
+          "name": "BR-DISK Groups",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "\\b(BeyondHD|nLiBRA|DiYHDHome|HDSky)\\b"
           }
         }
       ]
@@ -2520,7 +2668,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### EVO except WEB-DL
+### EVO (no WEB-DL)
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2533,6 +2681,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "name": "EVO (no WEB-DL)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2571,7 +2720,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### LQ-Releases
+### LQ
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2592,6 +2741,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     {
+      "trash_id": "90a6f9a284dff5103f6346090e6280c8",
       "name": "LQ",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
@@ -2648,7 +2798,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### 720/1080p no x265
+### x265 (720/1080p)
 
 <sub><sub><sub>Score [-9999]</sub>
 
@@ -2685,37 +2835,47 @@ That's why I created my own golden rule.
 
     ```json
     {
-     "name": "x265 (720/1080p)",
-     "includeCustomFormatWhenRenaming": false,
-     "specifications": [
-       {
-         "name": "720p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 720
-         }
-       },
-       {
-         "name": "1080p",
-         "implementation": "ResolutionSpecification",
-         "negate": false,
-         "required": false,
-         "fields": {
-           "value": 1080
-         }
-       },
-       {
-         "name": "x265/HEVC",
-         "implementation": "ReleaseTitleSpecification",
-         "negate": false,
-         "required": true,
-         "fields": {
-           "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
-         }
-       }
-     ]
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "name": "x265 (720/1080p)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "720p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 720
+          }
+        },
+        {
+          "name": "1080p",
+          "implementation": "ResolutionSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 1080
+          }
+        },
+        {
+          "name": "x265/HEVC",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+          }
+        },
+        {
+          "name": "Quality Group Exceptions",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "-MZABI|-NCmt\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2735,17 +2895,63 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
         "name": "3D",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
-            "name": "3d|sbs|half-ou",
+            "name": "3D",
             "implementation": "ReleaseTitleSpecification",
             "negate": false,
             "required": true,
             "fields": {
-                "value": "3d|sbs|half.?ou"
+                "value": "\\b3d\\b|\\bsbs\\b|half[ .]ou"
             }
         }]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### No-RlsGroup
+
+<sub><sub><sub>Score [-9999]</sub>
+
+>Some indexers strip out the release group what could result in LQ groups getting a higher score.
+>For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+
+!!! warning
+
+    If you don't use a decent filenames like not adding release groups don't add this Custom Format, except if you want to upgrade them.
+
+??? example "json"
+
+    ```json
+    {
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "name": "No-RlsGroup",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "No -RlsGroup",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "-[ ]?(?!(HD|MA|ES|X)\\b)\\w+?(\\.\\w{3})?$"
+          }
+        },
+        {
+          "name": "No Weird Groups",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+            "value": "\\b(Tigole|Joy|YIFY|YTS.MX|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros|KRaLiMaRKo|E\\.N\\.D|PrimeHD|BluDragon|SumVision)\\b"
+          }
+        }
+      ]
     }
     ```
 
@@ -2757,7 +2963,7 @@ That's why I created my own golden rule.
 
 ------
 
-### HQ-Releases
+### HQ
 
 <sub><sub><sub>Score [100]</sub>
 
@@ -2768,6 +2974,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "1c7d7b04b15cc53ea61204bebbcc1ee2",
         "name": "HQ",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2831,6 +3038,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "e7718d7a3ce595f289bfee26adc178f5",
         "name": "Repack/Proper",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -2881,6 +3089,7 @@ That's why I created my own golden rule.
 
     ```json
     {
+        "trash_id": "fd7da02c647dd3f1b6757e150fffc5ff",
         "name": "Streaming Services",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3000,6 +3209,7 @@ If you want maximum compatibility and have much better direct play support then 
 
     ```json
     {
+        "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
         "name": "x264",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3008,7 +3218,7 @@ If you want maximum compatibility and have much better direct play support then 
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "[xh]\\.?264|\\bAVC(\\b|\\d)"
+                    "value": "[xh][ .]?264|\\bAVC(\\b|\\d)"
                 }
             },
             {
@@ -3067,6 +3277,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
         "name": "x265",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3075,7 +3286,7 @@ Some extra info about 4K/X265
                 "negate": false,
                 "required": true,
                 "fields": {
-                    "value": "[xh]\\.?265|\\bHEVC(\\b|\\d)"
+                    "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
                 }
             },
             {
@@ -3108,6 +3319,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "0d91270a7255a1e388fa85e959f359d8",
         "name": "FreeLeech",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3134,6 +3346,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "9de657fd3d327ecf144ec73dfe3a3e9a",
         "name": "Dutch Groups",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3157,57 +3370,58 @@ Some extra info about 4K/X265
 ??? example "json"
 
     ```json
-    {
-      "name": "Anime Dual Audio",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "Dual Audio",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "dual.?audio"
+      {
+        "trash_id": "4a3b087eea2ce012fcc1ce319259a3be",
+        "name": "Anime Dual Audio",
+        "includeCustomFormatWhenRenaming": false,
+        "specifications": [
+          {
+            "name": "Dual Audio",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "dual.?audio"
+            }
+          },
+          {
+            "name": "BluDragon",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "bludragon"
+            }
+          },
+          {
+            "name": "EN+JA",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "EN\\+JA|JA\\+EN"
+            }
+          },
+          {
+            "name": "ZR",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+              "value": "\\bZR\\b"
+            }
+          },
+          {
+            "name": "Japanese Language",
+            "implementation": "LanguageSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+              "value": 8
+            }
           }
-        },
-        {
-          "name": "BluDragon",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "bludragon"
-          }
-        },
-        {
-          "name": "EN+JA",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "EN\\+JA|JA\\+EN"
-          }
-        },
-        {
-          "name": "ZR",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "\\bZR\\b"
-          }
-        },
-        {
-          "name": "Japanese Language",
-          "implementation": "LanguageSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-            "value": 8
-          }
-        }
-      ]
-    }
+        ]
+      }
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -3220,6 +3434,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "ff86c4326018682f817830ced463332b",
         "name": "MPEG2",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
@@ -3244,6 +3459,7 @@ Some extra info about 4K/X265
 
     ```json
     {
+        "trash_id": "4b900e171accbfb172729b63323ea8ca",
         "name": "Multi",
         "includeCustomFormatWhenRenaming": false,
         "specifications": [{
