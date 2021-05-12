@@ -2,7 +2,7 @@
 
 This basic example is based on the use of docker images
 
-!!! attention ""
+!!! tip ""
     Keep in mind the path are setup so it works with hardlinks and instant moves.
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
@@ -15,10 +15,18 @@ This basic example is based on the use of docker images
 
     The screenshots in the examples are using the following root path `/data`
 
+---
+
 `SABnzbd config` => `Folders`
 
-![sabnzbd-folders](/Hardlinks/images/sabnzbd-folders.png)
+![!sabnzbd-folders](/Hardlinks/images/sabnzbd-folders.png)
 
 `SABnzbd config` => `Categories`
 
-![sabnzbd-categories](/Hardlinks/images/sabnzbd-categories.png)
+![!sabnzbd-categories](/Hardlinks/images/sabnzbd-categories.png)
+
+---
+
+## Paths and Categories Breakdown
+
+![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
