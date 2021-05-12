@@ -2,12 +2,12 @@
 
 This basic example is based on the use of docker images
 
-!!! attention ""
+!!! tip ""
     Keep in mind the path are setup so it works with hardlinks and instant moves.
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
-!!! warning ""
+!!! attention ""
     The default path setup used by [Linux|Server.io](https://hub.docker.com/r/linuxserver/){:target="_blank" rel="noopener noreferrer"} don't support hardlinks and instant moves, but you're able to change this, by not using the pre-defined paths like:
 
     - `/downloads` => `/data/downloads`
@@ -33,7 +33,7 @@ I will only explain the so called most important paths.
 | Name        | Description                                                                            |
 |:---         |:---                                                                                     |
 | `MainDir`   | `/data/usenet`                                                                        |
-| `DestDir`   | `${MainDir}/completed` (so it will go in to `/data/usenet/completed`)                 |
+| `DestDir`   | `${MainDir}` (so it will go in to `/data/usenet`)                 |
 | `InterDir`  | Files are downloaded into this directory (before unpack+par2)                          |
 | `NzbDir`    | Directory for incoming nzb-files.                                                      |
 | `QueueDir`  | This directory is used to save download queue, history, information statistics, etc.   |
@@ -63,7 +63,7 @@ I will only explain the so called most important paths.
 | Name          | Description                                                                            |
 |:---           |:---                                                                                    |
 | `Name`        | This should match what you put in Sonarr/Radarr (tv/movies/sonarr/radarr/series/films) |
-| `DestDir`     | `${DestDir}` Destination directory (/data/usenet/completed/movie)                     |
+| `DestDir`     | `${DestDir}` Destination directory (/data/usenet/movie)                     |
 | `Unpack`      | Unpack downloaded nzb-files.                                                           |
 | `Extensions`  | List of extension scripts for this category.                                           |
 
