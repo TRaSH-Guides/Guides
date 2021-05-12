@@ -60,7 +60,7 @@ plugins:
         Misc/Discord-Notifier-Basic-Setup.md: Notifiarr/Quick-Start.md
         Misc/Discord-Notifiarr-Setup.md: Notifiarr/Quick-Start.md
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
-        NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/NZBGet-Basic-Setup.md
+        NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
