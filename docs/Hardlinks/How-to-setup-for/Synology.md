@@ -186,7 +186,7 @@ Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Tem
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml
 ```
 
-??? question "What's included and What's not included"
+??? question "What's included and What's not included - [CLICK TO EXPAND]"
 
     This docker-compose file will have the following docker containers included.
 
@@ -266,7 +266,7 @@ You will notice that all the images will be downloaded, and after that the conta
 
     Just don't use the GUI !!!
 
-??? hint "docker-compose commands"
+??? hint "docker-compose commands - [CLICK TO EXPAND]"
 
     - `sudo docker-compose up -d` (This Docker-compose command helps builds the image, then creates and starts Docker containers. The containers are from the services specified in the compose file. If the containers are already running and you run docker-compose up, it recreates the container.)
     - `sudo docker-compose pull` (Pulls an image associated with a service defined in a docker-compose.yml)

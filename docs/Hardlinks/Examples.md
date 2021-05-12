@@ -54,7 +54,7 @@
 
 ??? example "SABnzbd Examples"
 
-    #### SABnzbd
+    ## SABnzbd
 
     `SABnzbd config` => `Folders`
 
@@ -78,7 +78,7 @@
 
 ??? example "qBittorrent Examples"
 
-    #### qBittorrent
+    ## qBittorrent
 
     `Options` => `Downloads`
 
