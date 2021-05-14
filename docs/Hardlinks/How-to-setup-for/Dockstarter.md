@@ -78,9 +78,17 @@ When that's all set then you will need to change the paths you're going to use i
 
     The screenshots in the examples are using the following root path `/storage`
 
+- [Sonarr](#sonarr)
+- [Radarr](#radarr)
+- [SABnzbd](#sabnzbd)
+- [NZBGet](#nzbget)
+- [qBittorrent](#qbittorent)
+- [Deluge](#deluge)
+- [ruTorrent](#rutorrent)
+
 ??? example "Sonarr Examples"
 
-    ###### Sonarr
+    ##### Sonarr
 
     `Settings` => `Media Management` => `Importing`
 
@@ -98,7 +106,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "Radarr Examples"
 
-    ###### Radarr
+    ##### Radarr
 
     `Settings` => `Media Management` => `Importing`
 
@@ -116,7 +124,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "SABnzbd Examples"
 
-    ###### SABnzbd
+    ##### SABnzbd
 
     `SABnzbd config` => `Folders`
 
@@ -128,7 +136,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "NZBGet Examples"
 
-    ###### NZBGet
+    ##### NZBGet
 
     `Settings` => `PATHS`
 
@@ -140,7 +148,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "qBittorrent Examples"
 
-    ###### qBittorrent
+    ##### qBittorrent
 
     `Options` => `Downloads`
 
@@ -148,7 +156,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "Deluge Example"
 
-    ###### Deluge
+    ##### Deluge
 
     `Preferences` => `Downloads`
 
@@ -156,7 +164,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 ??? example "ruTorrent Examples"
 
-    ###### ruTorrent
+    ##### ruTorrent
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 
