@@ -13,7 +13,12 @@
 !!! note
 
     I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.
-    The paths mentioned below refer to internal paths for the containers. External paths can be `/<path_to_data>/data`. `/data` is also a valid external path
+
+    The paths mentioned below refer to internal paths for the containers!
+
+    External paths depends where you mounted your share or your drives.
+
+    For example `/<path_to_data>/data`, or even `/data`.
 
 ## Folder Structure
 
