@@ -12,7 +12,7 @@ You can use 2 options to check if you got working hardlinks.
 
 This is the easiest to check in my opinion.
 
-In your terminal `cd` to your download location and run `ls-al` or type `ls -al /path/to/your/download/location/`
+In your terminal `cd` to your download location and run `ls -al` or type `ls -al /path/to/your/download/location/`
 
 You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.
 
