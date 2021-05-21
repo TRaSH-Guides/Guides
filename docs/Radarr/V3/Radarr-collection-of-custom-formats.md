@@ -2100,15 +2100,6 @@ Advanced Audio Coding
           "fields": {
             "value": 8
           }
-        },
-        {
-          "name": "DoVi-SL: Dolby Vision (Single Layer)",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": "\\b(sl[ .]dv|single[ .]layer[ .]dovi)\\b"
-          }
         }
       ]
     }
