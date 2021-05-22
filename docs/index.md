@@ -15,7 +15,7 @@ Here you will find Guides mainly for Sonarr/Radarr/Bazarr and everything related
 
 When starting to use Sonarr/Radarr I noticed it didn't get exactly the release I actually wanted being I'm a bit picky about what release & quality I prefer.
 
-So I decided to fine tune it to try to get the releases & quality I preferred, On discord I also noticed that others run in to the same issue so I explained them how I managed to get it solved. Being I had to explain it often I decided to write it down and make it public so I could easily link it to someone when  they needed it.
+So I decided to fine tune it to try to get the releases & quality I preferred. On discord I also noticed that others run in to the same issue so I explained them how I managed to get it solved. Being I had to explain it often I decided to write it down and make it public so I could easily link it to someone when  they needed it.
 After a while I also decided to create guides for often asked questions on discord, and started to collect all kind of information gathered from different sources.
 The guides I make I try to make them as easy as possible for everyone to understand, in my opinion pictures explain often more then just some text.
 
@@ -32,10 +32,10 @@ Feel free to create a PR if you want to.
 
 ### DISCLAIMER
 
-The information I use for the guides is information I gathered from different sources like their support forum, Reddit or Discord, Provided by user input or from the develop team it self.
-Most things I tested myself and tried to see if I could tune them a bit more to my needs and sometimes even for others.
+The information I use for the guides is information I have gathered from different sources like their support forum, Reddit or Discord, provided by user input or from the development team itself.
+I have tested most things myself and I have tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
-Everything here you use on your own risk I won't be hold responsible if something happens to your collection!
+You use everything here at your own risk. I won't be responsible if something happens to your setup!
 
 ------
 
