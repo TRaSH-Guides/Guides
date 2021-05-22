@@ -10,7 +10,7 @@ If, for whatever reason, you ever need to do a re-install or re-import in
 Sonarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
-The Tokens not available in the release won't be used/shown.
+The tokens not available in the release won't be used/shown.
 
 ------
 
