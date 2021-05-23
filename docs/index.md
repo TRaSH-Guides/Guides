@@ -35,7 +35,7 @@ Feel free to create a PR if you want to.
 The information I use for the guides is information I have gathered from different sources like their support forum, Reddit or Discord, provided by user input or from the development team itself.
 I have tested most things myself and I have tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
-You use everything here at your own risk. I won't be responsible if something happens to your setup!
+You use everything here at your own risk. I won't be responsible if something happens to your setup or collection!
 
 ------
 
