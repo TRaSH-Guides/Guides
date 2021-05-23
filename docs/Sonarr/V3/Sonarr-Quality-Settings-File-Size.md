@@ -73,3 +73,10 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 | WEBDL-2160p        | 69.1    | 350     |
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |
+
+!!! note
+    The reason why you don't see the preferred score in the Table is because we want max quality anyway so as high as possible.
+
+    The highest preferred quality you can manually enter is 1 less than the Maximum quality. If you use the slider, the preferred quality can be up to 5 lesser than the Maximum quality.
+
+    Make sure you have enabled 'Show Advanced' in Radarr, if you don't see a provision to enter the scores, under the Quality settings.
