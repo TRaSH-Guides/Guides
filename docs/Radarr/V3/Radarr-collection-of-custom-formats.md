@@ -59,19 +59,19 @@ I also made 2 guides related to this one.
 
 ------
 
-| HDR Metadata                                              | Movie Versions                                | Misc (-1000)                                  | Misc                                      |
-| --------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
-| [Dolby Vision](#dovi)                             | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                           | [Repack/Proper](#repack-proper)           |
-| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-no-web-dl)       | [Streaming Services](#streaming-services) |
-| [HDR](#hdr)                                               | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq) | [High Quality Releases](#hq)                         |
-| [HDR (undefined)](#hdr-undefined)                         | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p)        | [x264](#x264)                             |
-| [10 Bit](#10-bit)                                         | [Criterion Collection](#criterion-collection) | [3D](#3d)                                     | [x265](#x265)                             |
-|                                                           | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)                                             | [MPEG2](#mpeg2)                           |
-|                                                           | [IMAX](#imax)                                 |                                               | [FreeLeech](#freeleech)                   |
-|                                                           |                                               |                                               | [Dutch Groups](#dutch-groups)             |
-|                                                           |                                               |                                               | [Anime Dual Audio](#anime-dual-audio)     |
-|                                                           |                                               |                                               | [Multi](#multi)                           |
-|                                                           |                                               |                                               |                                           |
+| HDR Metadata                            | Movie Versions                                | Misc (-1000)                        | Misc                                      |
+| --------------------------------------- | --------------------------------------------- | ----------------------------------- | ----------------------------------------- |
+| [Dolby Vision](#dovi)                   | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           |
+| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-no-web-dl) | [Streaming Services](#streaming-services) |
+| [HDR](#hdr)                             | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [High Quality Releases](#hq)              |
+| [HDR (undefined)](#hdr-undefined)       | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |
+| [10 Bit](#10-bit)                       | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |
+|                                         | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [MPEG2](#mpeg2)                           |
+|                                         | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [FreeLeech](#freeleech)                   |
+|                                         |                                               |                                     | [Dutch Groups](#dutch-groups)             |
+|                                         |                                               |                                     | [Anime Dual Audio](#anime-dual-audio)     |
+|                                         |                                               |                                     | [Multi](#multi)                           |
+|                                         |                                               |                                     | [HQ-WEBDL](#hq-webdl)                     |
 
 ## Audio
 
@@ -2950,6 +2950,45 @@ That's why I created my own golden rule.
 
 ------
 
+### Obfuscated
+
+> Optional (use these only if you dislike renamed and retagged releases)
+
+??? example "json"
+
+    ```json
+    {
+     "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+     "trash_score": "-9999",
+     "name": "Obfuscated",
+     "includeCustomFormatWhenRenaming": false,
+     "specifications": [
+       {
+         "name": "Obfuscated",
+         "implementation": "ReleaseTitleSpecification",
+         "negate": false,
+         "required": false,
+         "fields": {
+           "value": "(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b"
+         }
+       },
+       {
+         "name": "Retagged",
+         "implementation": "ReleaseTitleSpecification",
+         "negate": false,
+         "required": false,
+         "fields": {
+           "value": "(\\[rartv\\]|\\[eztv\\]|\\[TGx\\])"
+         }
+       }
+     ]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ## Misc
 
 ------
@@ -3462,6 +3501,54 @@ Some extra info about 4K/X265
                 "value": "\\bMulti(\\b|\\d)"
             }
         }]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HQ-WEBDL
+
+> A personal collection of P2P WEB-DL groups that are known for their high quality releases.
+
+??? example "json"
+
+    ```json
+    {
+      "trash_id": "26fa26253af4001701fedb56cec376dc",
+      "trash_score": "100",
+      "name": "HQ-WEBDL",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "P2P Groups",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "-TOMMY|-BLUTONiUM|-NTG|-TEPES|-KiNGS|-NTb|-CMRG|AJP69|-PHOENiX|-monkee|-MZABI|ROCCaT"
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 8
+          }
+        }
+      ]
     }
     ```
 
