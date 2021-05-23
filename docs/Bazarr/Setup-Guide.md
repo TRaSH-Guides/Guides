@@ -3,7 +3,7 @@
 !!! note
 
     In this guide we will try to explain the basic setup you need to do to get started with Bazarr.
-    For a more detailed few of all the setting check the following [[LINK]](https://wiki.bazarr.media/Additional-Configuration/Settings/).
+    For a more detailed few of all the setting check the following [LINK](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"}.
 
 Before Bazarr works we need to setup and configure a few settings.
 
@@ -224,7 +224,7 @@ Select `Add New Profile`
 1. How you want to name your language profile.
 1. Click on `Add` to add the languages you enabled earlier in [Subtitle Language](#subtitles-language).
 1. Select the languages you want to enable for your profile (Including the optional settings).
-    - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles)
+    - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="_blank" rel="noopener noreferrer"}
     - HI => Hearing Impaired
     - Exclude Audio => Exclude if matching audio
 1. Optional select the cutoff where you want that Bazarr stops downloading other languages.
@@ -297,7 +297,7 @@ Here we will configure some extra settings for your subtitles
 
 Here you can select which Anti-Captcha provider you want to use.
 
-[Why (or) do I need the Anti-Captcha ?](https://wiki.bazarr.media/Troubleshooting/FAQ/#why-or-do-i-need-the-anti-captcha)
+[Why (or) do I need the Anti-Captcha ?](https://wiki.bazarr.media/Troubleshooting/FAQ/#why-or-do-i-need-the-anti-captcha){:target="_blank" rel="noopener noreferrer"}
 
 !!! tip
 
@@ -309,7 +309,7 @@ Here you can select which Anti-Captcha provider you want to use.
 
 1. When searching for subtitles, Bazarr will search less frequently to limit call to providers.
 1. Search multiple providers at once (Don't choose this on low powered devices).
-1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles)
+1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles){:target="_blank" rel="noopener noreferrer"}
 
 ### Automatic Subtitles Synchronization
 
@@ -332,5 +332,5 @@ Now wait till Bazarr gets all the info needed from Sonarr/Radarr.
 
 ---
 
-If you still have questions please check the [Troubleshooting](https://wiki.bazarr.media/Troubleshooting/Asking-for-help-or-report-a-problem/) section in the wiki.
-For more info about the other settings check the [Settings](https://wiki.bazarr.media/Additional-Configuration/Settings/) wiki.
+If you still have questions please check the [Troubleshooting](https://wiki.bazarr.media/Troubleshooting/Asking-for-help-or-report-a-problem/){:target="_blank" rel="noopener noreferrer"} section in the wiki.
+For more info about the other settings check the [Settings](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"} wiki.
