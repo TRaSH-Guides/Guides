@@ -5,9 +5,14 @@ This basic example is based on the use of docker images
 !!! note ""
     Keep in mind I've setup my paths so it works with hardlinks and you get instant moves.
 
-!!! warning ""
-    The default path setup used by [Linux|Server.io](https://hub.docker.com/r/linuxserver/) don't support hardlinks and instant moves, but you're able to change this, by not using the pre-defined paths like `/downloads` `/movies` and `/tv` and use paths like `/data/downloads`, `/data/media/movies` and `/data/media/tv`.
+!!! attention ""
+    The default path setup recommended by some docker developers that encourages people to use mounts like `/movies`, `/tv` and `/downloads` is very suboptimal. It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move.
 
+    But you're able to change this, by not using the pre-defined/recommended paths like:
+
+    - `/downloads` => `/data/downloads`
+    - `/movies` => `/data/media/movies`
+    - `/tv` => `/data/media/tv`.
 ------
 
 ## Soon
