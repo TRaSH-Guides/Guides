@@ -3,8 +3,8 @@ nav:
     - Radarr
     - Sonarr
     - Bazarr
-    - Notifiarr
     - Downloaders
+    - Notifiarr
     - Plex
     - Misc
     - Hardlinks

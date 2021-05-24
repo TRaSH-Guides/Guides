@@ -127,7 +127,7 @@ You will get a screen that looks like the following screenshot.
 1. Click on `Continue` to approve.
 
 !!! note
-    Check [Discord Permissions](/Notifiarr/Discord-Permissions/){:target="_blank" rel="noopener noreferrer"} for information which permissions the bot needs.
+    Check [Discord Permissions](https://notifiarr.wiki/en/Website/Discord/Permissions)){:target="_blank" rel="noopener noreferrer"} for information which permissions the bot needs.
 
 #### Reactions
 
@@ -326,7 +326,7 @@ Scroll up and save
     1. Add the URL that you can copy/paste from the integrations page.
     2. Click on `SAVE CHANGES`
 
-If you want to show more advanced info like Transcode, CPU & Ram take a look at [Plex Integration](/Notifiarr/Integrations-Setup/Plex/){:target="_blank" rel="noopener noreferrer"}
+If you want to show more advanced info like Transcode, CPU & Ram take a look at [Plex Integration](https://notifiarr.wiki/en/Website/Integrations/Plex){:target="_blank" rel="noopener noreferrer"}
 
 !!! note
     If there is still an issue, try asking in the Notifiarr [discord channel](https://discord.gg/AURf8Yz){:target="_blank" rel="noopener noreferrer"} for additional support.
