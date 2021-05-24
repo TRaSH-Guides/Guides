@@ -328,7 +328,7 @@ Now wait till Bazarr gets all the info needed from Sonarr/Radarr.
 
 !!! important
 
-    **Don't forget [First time installation configuration](/Bazarr/First-time-installation-configuration/) !!!**
+    **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/) !!!**
 
 ---
 

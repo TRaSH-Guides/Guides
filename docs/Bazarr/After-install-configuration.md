@@ -1,5 +1,5 @@
 
-# First Time Installation Configuration
+# After Install Configuration
 
 After you've installed everything it's best to check all of your settings,
 

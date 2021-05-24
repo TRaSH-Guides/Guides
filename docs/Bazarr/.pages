@@ -1,5 +1,5 @@
 nav:
     - Home: index.md
     - Basic-Guide: Setup-Guide.md
-    - First time installation: First-time-installation-configuration.md
+    - After Install Configuration: After-install-configuration.md
     - Scripts: /Bazarr/scripts/
