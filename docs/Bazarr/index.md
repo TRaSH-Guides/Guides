@@ -9,10 +9,10 @@ Here you will find several scripts you can use with Bazarr
 - (stable)
 - Builds Pushed after a testing period in development
 - Github Branch: master
-- Docker: [hotio/bazarr:latest](https://hub.docker.com/r/hotio/bazarr){:target="_blank" rel="noopener noreferrer"}
+- Docker: [hotio/bazarr:latest](https://hotio.dev/containers/bazarr/){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-hotio/bazarr:latest
+ghcr.io/hotio/bazarr:latest
 ```
 
 ## Dev = Bazarr Branch: development
@@ -22,8 +22,8 @@ hotio/bazarr:latest
 - (development)
 - Builds pushed when complete
 - Github Branch: development
-- Docker: [hotio/bazarr:nightly](https://hub.docker.com/r/hotio/bazarr){:target="_blank" rel="noopener noreferrer"}
+- Docker: [hotio/bazarr:nightly](https://hotio.dev/containers/bazarr/){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-hotio/bazarr:nightly
+ghcr.io/hotio/bazarr:nightly
 ```
