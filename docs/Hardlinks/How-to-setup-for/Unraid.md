@@ -191,3 +191,15 @@ data
 ![!unraid-final-result](images/unraid-final-result.png)
 
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside your applications.**
+
+### Video Tutorial
+
+!!! tip ""
+
+    Big Thnx to IBRACORP for noticing this Guide and creating a Video covering this unraid section.
+
+    The reason why I added the video to the end is because I want the user to actually learn and understand why it's recommended to use this folder structure, before going straight to the YouTube video.
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    Please don't forget to check out his other Unraid Video's [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
