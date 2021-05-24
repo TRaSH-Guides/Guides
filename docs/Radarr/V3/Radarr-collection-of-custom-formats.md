@@ -4,22 +4,6 @@ Here I will try to collect a collection of the most needed and commonly used Cus
 These have been collected from either discussions on discord or that I created with help from others.
 Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
 
-!!! attention
-    Keep in mind Custom Formats are made to fine tune your Quality Profile
-
-    Generally Quality Trumps All
-
-    The current logic can be found [HERE](https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/DecisionEngine/DownloadDecisionComparer.cs){:target="_blank" rel="noopener noreferrer"} As of 1/19/2021 the logic is as follows
-
-    1. Quality
-    1. Custom Format Score
-    1. Protocol
-    1. Indexer Priority
-    1. Indexer Flags
-    1. Peers (If Torrent)
-    1. Age (If Usenet)
-    1. Size
-
 With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
 
 After requesting at Team Radarr we now have the options to import/export the Custom Formats in a JSON format that we can use here what makes it easier to share the different kind of Custom Formats.
