@@ -46,7 +46,7 @@ I also made 2 guides related to this one.
 | HDR Metadata                            | Movie Versions                                | Misc (-1000)                        | Misc                                      |
 | --------------------------------------- | --------------------------------------------- | ----------------------------------- | ----------------------------------------- |
 | [Dolby Vision](#dovi)                   | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           |
-| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO except WEB-DL](#evo-no-web-dl) | [Streaming Services](#streaming-services) |
+| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Streaming Services](#streaming-services) |
 | [HDR](#hdr)                             | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [High Quality Releases](#hq)              |
 | [HDR (undefined)](#hdr-undefined)       | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |
 | [10 Bit](#10-bit)                       | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |
@@ -2586,11 +2586,10 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-### EVO (no WEB-DL)
+### EVO (no WEBDL)
 
 <sub><sub><sub>Score [-9999]</sub>
 
-<sub>EVO except WEB-DL = EVO (no WEB-DL)</sub>
 >This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
 >
 >You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
@@ -2600,7 +2599,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
     ```json
     {
       "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
-      "name": "EVO (no WEB-DL)",
+      "trash_score": "-9999",
+      "name": "EVO (no WEBDL)",
       "includeCustomFormatWhenRenaming": false,
       "specifications": [
         {
@@ -2615,8 +2615,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
         {
           "name": "WEBDL",
           "implementation": "SourceSpecification",
-          "negate": true,
-          "required": true,
+          "negate": false,
+          "required": false,
           "fields": {
             "value": 7
           }
@@ -2624,8 +2624,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
         {
           "name": "WEBRIP",
           "implementation": "SourceSpecification",
-          "negate": true,
-          "required": true,
+          "negate": false,
+          "required": false,
           "fields": {
             "value": 8
           }
@@ -2647,7 +2647,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 !!! note
 
-    You might want to add the following also [EVO except WEB-DL](#evo-except-web-dl)
+    You might want to add the following also [EVO (no WEBDL)](#evo-no-webdl)
 
     - BLOCK1 = Low-Quality Releases (often banned groups)
     - BLOCK2 = Another Small list of often banned groups.
