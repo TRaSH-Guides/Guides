@@ -52,7 +52,7 @@ I also made 2 guides related to this one.
 | [10 Bit](#10-bit)                       | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |
 |                                         | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [MPEG2](#mpeg2)                           |
 |                                         | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [FreeLeech](#freeleech)                   |
-|                                         |                                               |                                     | [Dutch Groups](#dutch-groups)             |
+|                                         |                                               | [DoVi (WEBDL)](#dovi-webdl)         | [Dutch Groups](#dutch-groups)             |
 |                                         |                                               |                                     | [Anime Dual Audio](#anime-dual-audio)     |
 |                                         |                                               |                                     | [Multi](#multi)                           |
 |                                         |                                               |                                     | [HQ-WEBDL](#hq-webdl)                     |
@@ -2036,63 +2036,6 @@ Advanced Audio Coding
 
 ------
 
-#### DoVi (no WEB-DL)
-
-!!! danger "!!! **WARNING** !!!"
-
-    **You shouldn't use both but choose which one you want to use for your use case !!!**
-
-    Use the same scoring that you would use for Dolby Vision normally.
-
-<sub>Dolby Vision = DoVi</sub>
->This is a special Custom Format that ignores DV for WEB-DL but allows for other sources.
->
->WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
->Remuxes and Bluray have a fallback to HDR(10).
-
-??? example "json"
-
-    ```json
-    {
-      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
-      "name": "DoVi",
-      "includeCustomFormatWhenRenaming": true,
-      "specifications": [
-        {
-          "name": "Dolby Vision",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
-          }
-        },
-        {
-          "name": "WEBDL",
-          "implementation": "SourceSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": 7
-          }
-        },
-        {
-          "name": "WEBRIP",
-          "implementation": "SourceSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": 8
-          }
-        }
-      ]
-    }
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### DoVi (SL)
 
 <sub><sub><sub>Score [295]</sub>
@@ -2966,6 +2909,59 @@ That's why I created my own golden rule.
          }
        }
      ]
+    }
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DoVi (WEBDL)
+
+<sub>Dolby Vision = DoVi</sub>
+
+>This is a special Custom Format that ignores DV for WEB-DL but together with the normal [DoVi](#dovi) allows for other sources.
+>
+>WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
+>Remuxes and Bluray have a fallback to HDR(10).
+
+??? example "json"
+
+    ```json
+    {
+      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "trash_score": "-9999",
+      "name": "DoVi (WEBDL)",
+      "includeCustomFormatWhenRenaming": false,
+      "specifications": [
+        {
+          "name": "Dolby Vision",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+            "value": "\\b(dv|dovi|dolby[ .]vision)\\b"
+          }
+        },
+        {
+          "name": "WEBDL",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 7
+          }
+        },
+        {
+          "name": "WEBRIP",
+          "implementation": "SourceSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": 8
+          }
+        }
+      ]
     }
     ```
 
