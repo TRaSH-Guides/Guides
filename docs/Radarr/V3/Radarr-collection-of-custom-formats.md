@@ -2615,8 +2615,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
         {
           "name": "WEBDL",
           "implementation": "SourceSpecification",
-          "negate": false,
-          "required": false,
+          "negate": true,
+          "required": true,
           "fields": {
             "value": 7
           }
@@ -2624,8 +2624,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
         {
           "name": "WEBRIP",
           "implementation": "SourceSpecification",
-          "negate": false,
-          "required": false,
+          "negate": true,
+          "required": true,
           "fields": {
             "value": 8
           }
