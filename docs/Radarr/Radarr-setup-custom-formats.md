@@ -22,7 +22,7 @@ Here I will try to explain with some personal used examples how to make the most
 
     Custom formats are implemented within and have their impact controlled by Quality Profiles. The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded. A score of 0 results in the custom format being informational only. The Minimum score requires releases to reach this threshold otherwise they will be rejected. Custom formats that match with undesirable attributes should be given a negative score to lower their appeal. Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
-First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/V3/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}.
+First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}.
 And a short description what the settings means.
 
 `Settings` => `Profiles`
@@ -83,7 +83,7 @@ If you got any questions or aren't sure what to add just Click the chat badge to
 
 Here I will show how to make the most use of Custom Formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
 
-All these examples make use of the [Collection of Custom Formats](/Radarr/V3/Radarr-collection-of-custom-formats/)
+All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/)
 
 ??? FAQ "Which overall scoring scheme do you use ?"
 
@@ -120,7 +120,7 @@ In my opinion this is a must for every Quality Profile you use, all these Custom
     ![!cf-misc-1000-result](images/cf-misc-1000-result.png)
 
 !!! tip
-    You might even can consider to add [Multi](/Radarr/V3/Radarr-collection-of-custom-formats/#multi){:target="_blank" rel="noopener noreferrer"} if you want to make sure you don't grab releases with often foreign audio.
+    You might even can consider to add [Multi](/Radarr/Radarr-collection-of-custom-formats/#multi){:target="_blank" rel="noopener noreferrer"} if you want to make sure you don't grab releases with often foreign audio.
 
 ------
 
@@ -162,7 +162,7 @@ Also I didn't add `10 Bit` being 4k releases are 99% 10bit anyway.
 
 If you prefer HQ Encodes (Bluray-720/1080/2160p)
 
-I suggest to first follow the [Quality Settings (File Size)](/Radarr/V3/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
+I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
 For this Quality Profile we're going to make use of `Movie Versions`, `Misc (-1000)` and `Misc`
@@ -202,7 +202,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 If you prefer 1080p Remuxes (Remux-1080p)
 
-I suggest to first follow the [Quality Settings (File Size)](/Radarr/V3/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
+I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
 For this Quality Profile we're going to make use of `Audio Advanced`, `Movie Versions`, `Misc (-1000)` and `Misc`
@@ -236,7 +236,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 If you prefer 2160p Remuxes (Remux-2160p)
 
-I suggest to first follow the [Quality Settings (File Size)](/Radarr/V3/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
+I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
 For this Quality Profile we're going to make use of `Audio Advanced`,  `HDR Metadata`,`Movie Versions`, `Misc (-1000)` and `Misc`
@@ -274,7 +274,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/V3/Radarr-collection-of-custom-formats/#repack-proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repack-proper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -329,11 +329,11 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ??? tip "Avoid using the x264/x265 Custom Format"
 
-    If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) Custom Format.
+    If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#7201080p-no-x265) Custom Format.
 
     Something like 95% of video files are x264 and have much better direct play support. If you have more than a couple users, you will notice much more transcoding.
 
-    Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/V3/Radarr-collection-of-custom-formats/#7201080p-no-x265) makes sure you still can get the x265 releases.
+    Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#7201080p-no-x265) makes sure you still can get the x265 releases.
 
 ## THNX
 

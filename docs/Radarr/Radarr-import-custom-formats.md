@@ -9,9 +9,9 @@ Here I will try to explain how you can import Custom Formats for Radarr v3.
 
 ## How to Copy/Paste the JSON from the site
 
-In this example i will use the [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr or Plex being both don't support it.
+In this example i will use the [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr or Plex being both don't support it.
 
-Visit the [Collection of Custom Formats](/Radarr/V3/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and from the Table select [BR-DISK](/Radarr/V3/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
+Visit the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and from the Table select [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
 
 ??? success "example"
 
@@ -43,7 +43,7 @@ Followed by the `Import` in the lower left.
 
 ![cf-import](images/cf-import.png)
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](/Radarr/V3/Radarr-collection-of-custom-formats){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
+In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
 
 What you see in the red box is a example txt that you don't and can't remove!
 
@@ -62,10 +62,10 @@ all you need to do now is click on the `Save` button and you're done.
 
     Now Start adding other Custom Formats wisely, **Don't add all the available Custom Formats !!!**
 
-    Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](/Radarr/V3/Radarr-setup-custom-formats/#releases-you-should-avoid)
+    Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](/Radarr/Radarr-setup-custom-formats/#releases-you-should-avoid)
 
     If you got any questions or aren't sure what to add just Click the chat badge to join the Discord Channel where you can ask your questions directly
 
     [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-Check out the [How to setup Custom Formats](/Radarr/V3/Radarr-setup-custom-formats) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
+Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.

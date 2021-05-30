@@ -16,7 +16,7 @@ After activating it you select the movie(s) from where you want to have the fold
 
 ![!radarr-movie-editor-select](images/radarr-movie-editor-select.png)
 
-1. If you want all your movie folders renamed to your folder naming scheme you set earlier [HERE](/Radarr/V3/Radarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}.
+1. If you want all your movie folders renamed to your folder naming scheme you set earlier [HERE](/Radarr/Radarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}.
 1. Select the movie(s) from where you want to have the folder(s) to be renamed.
 1. Choose the same `Root Folder`
 
