@@ -54,24 +54,34 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
-        Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/V3/Radarr-import-custom-formats.md
-        Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/V3/Radarr-collection-of-custom-formats.md
+# Radarr old redirects
+        Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/Radarr-import-custom-formats.md
+        Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/Radarr-collection-of-custom-formats.md
+#  Radarr redirects
+        Radarr/V3/Radarr-collection-of-custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
+        Radarr/V3/Radarr-import-custom-formats.md: Radarr/Radarr-import-custom-formats.md
+        Radarr/V3/Radarr-Quality-Settings-File-Size.md: Radarr/Radarr-Quality-Settings-File-Size.md
+        Radarr/V3/Radarr-recommended-naming-scheme.md: Radarr/Radarr-recommended-naming-scheme.md
+        Radarr/V3/Radarr-remote-path-mapping.md: Radarr/Radarr-remote-path-mapping.md
+        Radarr/V3/Radarr-setup-custom-formats.md: Radarr/Radarr-setup-custom-formats.md
+# Sonarr redirects
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/V3/Sonarr-remote-path-mapping.md
-        Misc/Discord-Notifier-Basic-Setup.md: Notifiarr/Quick-Start.md
-        Misc/Discord-Notifiarr-Setup.md: Notifiarr/Quick-Start.md
-        Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+# Downloader redirects
         NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
+# Hardlinks redirects
+        Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+# Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         check-hardlinks.md: Hardlinks/Check-if-hardlinks-are-working.md
-        custom-formats.md: Radarr/V3/Radarr-collection-of-custom-formats.md
-        cf.md: Radarr/V3/Radarr-collection-of-custom-formats.md
+        custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
+        cf.md: Radarr/Radarr-collection-of-custom-formats.md
         TorGuard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
         torguard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
         compose.md: Misc/how-to-provide-a-docker-compose.md
         Golden-Rule.md: Misc/x265-4k.md
-        show-unknown.md: Radarr/V3/Tips/Radarr-show-unknown-movie-items.md
+        show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
 
 theme:
   name: material
