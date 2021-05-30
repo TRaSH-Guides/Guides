@@ -64,6 +64,9 @@ plugins:
         Radarr/V3/Radarr-recommended-naming-scheme.md: Radarr/Radarr-recommended-naming-scheme.md
         Radarr/V3/Radarr-remote-path-mapping.md: Radarr/Radarr-remote-path-mapping.md
         Radarr/V3/Radarr-setup-custom-formats.md: Radarr/Radarr-setup-custom-formats.md
+        Radarr/V3/Tips/Radarr-add-a-movie-collection.md: Radarr/Tips/Radarr-add-a-movie-collection.md
+        Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
+        Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
 # Sonarr redirects
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/V3/Sonarr-remote-path-mapping.md
 # Downloader redirects
