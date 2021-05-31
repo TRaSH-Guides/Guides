@@ -935,7 +935,7 @@ That's why I created my own golden rule.
 - 720/1080p => x264
 - 2160p/4k => x265
 
-> If you want to make use of the Golden Rule you could make use of the following Custom Format [720/1080p no x265](#7201080p-no-x265)
+> If you want to make use of the Golden Rule you could make use of the following Custom Format [720/1080p no x265](#x265-7201080p)
 
 Some extra info about 4K/X265
 
