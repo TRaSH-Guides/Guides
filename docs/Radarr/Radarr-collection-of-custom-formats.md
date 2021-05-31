@@ -29,17 +29,17 @@ I also made 2 guides related to this one.
 
 ------
 
-| Audio                                    | Audio Advanced #1                             | Audio Advanced #2                           | Audio Channels               |
-| :--------------------------------------- | --------------------------------------------- | ------------------------------------------- | ---------------------------- |
-| [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [TrueHD ATMOS](#truehd-atmos)                 | [FLAC](#flac)                               | [1.0 Mono](#10-mono)         |
-| [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                               | [PCM](#pcm)                                 | [2.0 Stereo](#20-stereo)     |
-| [Surround Sound](#surround-sound)      | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra)                   | [3.0 Sound](#30-sound)       |
-|                                          | [DD+ ATMOS](#dd-atmos)          | [AAC](#aac)                                 | [4.0 Sound](#40-sound)       |
-|                                          | [TrueHD](#truehd)       | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) |
-|                                          | [DTS-HD MA](#dts-hd-ma)                       | [MP3](#mp3)                                 | [6.1 Surround](#61-surround) |
-|                                          | [Dolby Digital Plus](#dolby-digital-plus)     | [Opus](#opus)                               | [7.1 Surround](#71-surround) |
-|                                          | [DTS-ES](#dts-es)                             |                                             | [9.1 Surround](#91-surround) |
-|                                          | [DTS](#dts)                       |                                             |                              |
+| Audio                                    | Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               |
+| :--------------------------------------- | ----------------------------------------- | ------------------------------- | ---------------------------- |
+| [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         |
+| [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     |
+| [Surround Sound](#surround-sound)        | [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       |
+|                                          | [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       |
+|                                          | [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) |
+|                                          | [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) |
+|                                          | [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) |
+|                                          | [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) |
+|                                          | [DTS](#dts)                               |                                 |                              |
 
 ------
 
