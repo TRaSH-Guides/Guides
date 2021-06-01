@@ -125,3 +125,18 @@ data
 ```
 
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside your applications.**
+
+## Docker-compose Example
+
+!!! example ""
+    This is a docker-compose example based on a default Ubuntu install.
+
+    The storage location used for the host is actually the same as in the container to make it easier to understand in this case `/data`.
+
+    The appdata (`/config`) will be stored on the host in the `/docker/appdata/{appname}`
+
+??? example "docker-compose"
+
+    ```yml
+    [[% filter indent(width=4) %]][[% include '/includes/docker/docker-compose.yml' %]][[% endfilter %]]
+    ```
