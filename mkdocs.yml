@@ -98,7 +98,6 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
-#    - navigation.expand
   language: en
   palette:
     primary: indigo

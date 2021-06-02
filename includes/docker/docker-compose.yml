@@ -1,6 +1,5 @@
 version: "3.2"
 services:
-# Radarr - https://hotio.dev/containers/radarr/
   radarr:
     container_name: radarr
     image: ghcr.io/hotio/radarr:latest
@@ -11,14 +10,13 @@ services:
     ports:
       - 7878:7878
     environment:
-      - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
-      - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
-      - TZ=Europe/Amsterdam # Change to your timezone
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/radarr:/config # Change "/docker/appdata/radarr" with the path your config will be.
-      - /data:/data # Change "/data" with the path where your library + torrent/usenet downloads both are.
-# Sonarr - https://hotio.dev/containers/sonarr/
+      - /docker/appdata/radarr:/config
+      - /data:/data
   sonarr:
     container_name: sonarr
     image: ghcr.io/hotio/sonarr:nightly
@@ -29,14 +27,13 @@ services:
     ports:
       - 8989:8989
     environment:
-      - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
-      - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
-      - TZ=Europe/Amsterdam # Change to your timezone
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/sonarr:/config # Change "/docker/appdata/sonarr" with the path your config will be.
-      - /data:/data # Change "/data" with the path where your library + torrent/usenet downloads both are.
-# Bazarr - https://hotio.dev/containers/bazarr/
+      - /docker/appdata/sonarr:/config
+      - /data:/data
   bazarr:
     container_name: bazarr
     image: ghcr.io/hotio/bazarr:nightly
@@ -47,14 +44,13 @@ services:
     ports:
       - 6767:6767
     environment:
-      - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
-      - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
-      - TZ=Europe/Amsterdam # Change to your timezone
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/bazarr:/config # Change "/docker/appdata/bazarr" with the path your config will be.
-      - /data/media:/data/media # Change "/data/media" with the path where your library are(sonarr+radarr).
-# SABnzbd - https://hotio.dev/containers/sabnzbd/
+      - /docker/appdata/bazarr:/config
+      - /data/media:/data/media
 sabnzbd:
   container_name: sabnzbd
   image: ghcr.io/hotio/sabnzbd:latest
@@ -66,10 +62,10 @@ sabnzbd:
     - 8080:8080
     - 9090:9090
   environment:
-    - PUID=1000 # you must find out your PUID through SSH, type in terminal: id $user
-    - PGID=1000 # you must find out your PGID through SSH, type in terminal: id $user
-    - TZ=Europe/Amsterdam # Change to your timezone
+    - PUID=1000
+    - PGID=1000
+    - TZ=Europe/Amsterdam
   volumes:
     - /etc/localtime:/etc/localtime:ro
-    - /docker/appdata/sabnzbd:/config # Change "/docker/appdata/sabnzbd" with the path your config will be.
-    - /data/usenet:/data/usenet:rw # Change "/data/usenet" with the path your usenet data ends up in.
+    - /docker/appdata/sabnzbd:/config
+    - /data/usenet:/data/usenet:rw
