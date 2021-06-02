@@ -138,5 +138,5 @@ data
 ??? example "docker-compose"
 
     ```yml
-    [[% filter indent(width=4) %]][[% include '/includes/docker/docker-compose.yml' %]][[% endfilter %]]
+    --8<-- "includes/docker/docker-compose.yml"
     ```

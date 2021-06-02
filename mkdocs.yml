@@ -54,10 +54,10 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
-# Radarr old redirects
+        # Radarr old redirects
         Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/Radarr-import-custom-formats.md
         Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/Radarr-collection-of-custom-formats.md
-#  Radarr redirects
+        #  Radarr redirects
         Radarr/V3/Radarr-collection-of-custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
         Radarr/V3/Radarr-import-custom-formats.md: Radarr/Radarr-import-custom-formats.md
         Radarr/V3/Radarr-Quality-Settings-File-Size.md: Radarr/Radarr-Quality-Settings-File-Size.md
@@ -67,20 +67,20 @@ plugins:
         Radarr/V3/Tips/Radarr-add-a-movie-collection.md: Radarr/Tips/Radarr-add-a-movie-collection.md
         Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
         Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
-# Sonarr old redirects
+        # Sonarr old redirects
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/Sonarr-remote-path-mapping.md
-# Sonarr redirects
+        # Sonarr redirects
         Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/Sonarr-Quality-Settings-File-Size.md
         Sonarr/V3/Sonarr-recommended-naming-scheme.md: Sonarr/Sonarr-recommended-naming-scheme.md
         Sonarr/V3/Sonarr-Release-Profile-RegEx.md: Sonarr/Sonarr-Release-Profile-RegEx.md
         Sonarr/V3/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/Sonarr-Release-Profile-RegEx-Anime.md
         Sonarr/V3/Sonarr-remote-path-mapping.md: Sonarr/Sonarr-remote-path-mapping.md
-# Downloader redirects
+        # Downloader redirects
         NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
-# Hardlinks redirects
+        # Hardlinks redirects
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
-# Shortcuts redirects
+        # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         check-hardlinks.md: Hardlinks/Check-if-hardlinks-are-working.md
