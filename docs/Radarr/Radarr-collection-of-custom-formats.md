@@ -500,7 +500,7 @@ Advanced Audio Coding
 ??? example "json"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/91-surround.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dovi-sl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
