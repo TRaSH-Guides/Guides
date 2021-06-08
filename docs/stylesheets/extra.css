@@ -1,3 +1,7 @@
+--md-typeset-a-color {
+    color: var(--md-primary-fg-color--light);
+}
+
 :root > * {
   /* Footer */
   --md-footer-bg-color: hsla(232, 54%, 41%, 1);
