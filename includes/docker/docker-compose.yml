@@ -19,7 +19,7 @@ services:
       - /data:/data
   sonarr:
     container_name: sonarr
-    image: ghcr.io/hotio/sonarr:nightly
+    image: ghcr.io/hotio/sonarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -36,7 +36,7 @@ services:
       - /data:/data
   bazarr:
     container_name: bazarr
-    image: ghcr.io/hotio/bazarr:nightly
+    image: ghcr.io/hotio/bazarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
