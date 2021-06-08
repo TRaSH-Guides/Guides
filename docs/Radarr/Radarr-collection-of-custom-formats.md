@@ -741,29 +741,8 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 >
 >You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
 
-!!! quote
-    x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
-    If the media isn't source quality/remux, then there will be a loss of quality every time.
-    Also, once you go x265, typically that file is done.
-    It can't be changed to something else without a huge loss of quality.
-
-    Something like 95% of video files are x264 and have much better direct play support.
-    If you have more than a couple users,
-    you will notice much more transcoding.
-    Just depends on your priorities.
-
-    So basically if you are storage poor and just need to save space, use x265.
-    The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
-    If you want maximum compatibility and the option to change your files to something else later,
-    then x264.
-    It's all really dependent on specific situations for different people
-
-It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
-
-That's why I created my own golden rule.
-
-- 720/1080p => x264
-- 2160p/4k => x265
+!!! fail ""
+    --8<-- "includes/docker/x265.md"
 
 ??? example "json"
 
@@ -915,40 +894,8 @@ If you want maximum compatibility and have much better direct play support then 
 
 >x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
-!!! quote
-    x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
-    If the media isn't source quality/remux, then there will be a loss of quality every time.
-    Also, once you go x265, typically that file is done.
-    It can't be changed to something else without a huge loss of quality.
-
-    Something like 95% of video files are x264 and have much better direct play support.
-    If you have more than a couple users,
-    you will notice much more transcoding.
-    Just depends on your priorities.
-
-    So basically if you are storage poor and just need to save space, use x265.
-    The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
-    If you want maximum compatibility and the option to change your files to something else later,
-    then x264.
-    It's all really dependent on specific situations for different people
-
-It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
-
-That's why I created my own golden rule.
-
-- 720/1080p => x264
-- 2160p/4k => x265
-
-> If you want to make use of the Golden Rule you could make use of the following Custom Format [720/1080p no x265](#x265-7201080p)
-
-Some extra info about 4K/X265
-
-[4k, transcoding, and you - aka the rules of 4k - a FAQ](https://forums.plex.tv/t/plex-4k-transcoding-and-you-aka-the-rules-of-4k-a-faq/378203) - Plex.tv
-
-1. Don’t bother transcoding 4k
-1. If you cannot direct play 4k, then perhaps you should not even be collecting 4k.
-1. If you don’t have the storage space for a copy of both 4k and 1080/720, then perhaps you should not even be collecting 4k.
-1. To avoid transcoding for remote and non-4k clients, keep your 4k content in separate plex libraries.
+!!! fail ""
+    --8<-- "includes/docker/x265.md"
 
 ??? example "json"
 
