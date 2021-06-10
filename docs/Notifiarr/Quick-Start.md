@@ -1,14 +1,14 @@
 # Quick Start
 
-Here we're going to explain the basic setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr and Plex.
+Here we're going to explain the basic setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr.
 
-If you want to make use of the other options I suggest to look at the advanced guide descriptions.
+If you want to make use of the other options I suggest to looking at the [Notifiarr WIKI](https://notifiarr.wiki){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
 ## Login
 
-First we're going to visit the [Notifiarr](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site, if you don't have an account yet, click the link to signup.
+First we're going to visit the [Notifiarr](https://notifiarr.com/index.php){:target="_blank" rel="noopener noreferrer"} site, if you don't have an account yet, click the link to signup.
 
 ![!dn-login](images/dn-login.png)
 
@@ -25,14 +25,16 @@ First we're going to visit the [Notifiarr](https://discordnotifier.com/index.php
 
 After you have logged in, you will be redirected to your profile screen.
 
-![!dn-profile](images/dn-profile.png)
+![!profile](images/profile.png)
 
-1. Select your `Country`.
-1. Select your `Timezone`.
-1. Click on `Generate API Key` (This needs to be done).
-1. Select your `Notification Language`.
-1. Change your `Time Format` to your liking.
-1. Don't forget to `Save` your Changes.
+1. Click on `Generate API Key` (This needs to be done)
+1. Select your `Country`
+1. Select your `Timezone`
+1. Change your `Time Format` to your liking
+1. Select your `Site Theme`
+1. Select your `Notification Language`
+1. If you decide to delete your account, check the box
+1. Don't forget to `Save` your changes
 
 ------
 
@@ -43,34 +45,34 @@ After you have logged in, you will be redirected to your profile screen.
 
 ### Integration Settings
 
-![!dn-manage-integration-open](images/dn-manage-integration-open.png)
+![!open-integrations](images/open-integrations.png)
 
 First, click on  `Manage Integrations` so you can enable what you want to receive notifications for.
 
-![!dn-manage-integration](images/dn-manage-integration.png)
+![!integration-list](images/integration-list.png)
 
-A screen will popup and here you're able to select from which application/service you receive a notification.
+A screen will popup and here you're able to select from which application/services you receive a notification.
 
 When you enabled the ones you want click on `Save`
 
 Setup which notifications you want to to receive from each option.
 
-![!dn-notifcation-settings](images/dn-notifcation-settings.png)
+![!notification-settings](images/notification-settings.png)
 
 1. Cog wheel, this opens the integration settings
 1. External link, this opens the website for the integration
 1. WIKI link, this opens any extra wiki information available for the integration
-1. Trigger, this enables/disables a specific trigger for the integration
+1. Triggers, this enables/disables a specific trigger for the integration
 1. Channels, this sets the channel in your server to post to for the integration
 
 ### Discord Settings
 
 Here we will cover the following
 
-- Setup the server & shared channels.
-- Invite the bot into your server.
-- Setup reactions.
-- Setup Indexers reactions.
+- Setup the server & shared error channel
+- Invite the bot into your server
+- Setup reactions
+- Setup indexer reactions
 
 #### Create the channels
 
@@ -104,14 +106,10 @@ Open your User Settings -> Appearance -> Enable Developer Mode.
 
 Paste the server ID in box `[1]`
 
-![!dn-channel-paste](images/dn-channel-paste.png)
+![!discord-server](images/discord-server.png)
 
 1. Add your server ID
-1. Select the channel for the `#media` channel.
-1. Use this option if you want to use separate channels for the notifications.
 1. Select the channel for the `#errors` channel.
-1. Select the channel for the `#plex` channel.
-1. Use this option if you want to use separate channels for the notifications.
 
 ### Invite the bot
 
