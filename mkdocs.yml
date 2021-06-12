@@ -9,6 +9,9 @@ repo_name: TRaSH-/Guides
 copyright: Copyright &copy; 2020 TRaSH
 
 extra:
+  analytics:
+    provider: google
+    property: G-ZZKM4MPQXL
   manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/discord
@@ -18,9 +21,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-
-extra_javascript:
-  - javascripts/extra.js
 
 markdown_extensions:
   - admonition
