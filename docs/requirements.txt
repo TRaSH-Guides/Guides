@@ -1,5 +1,5 @@
-git+git://github.com/g-provost/lightgallery-markdown#egg=lightgallery
-git+https://github.com/squidfunk/mkdocs-material
+git+https://github.com/fralau/mkdocs_macros_plugin@v0.5.12#egg=mkdocs-macros-plugin
+git+https://github.com/g-provost/lightgallery-markdown@v0.5#egg=lightgallery
 markdown==3.3.4
 mkdocs-awesome-pages-plugin==2.5.0
 mkdocs-git-revision-date-localized-plugin==0.9.2
