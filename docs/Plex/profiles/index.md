@@ -42,6 +42,7 @@ Example paths:
     ``` none
         Chromecast.xml
     ```
+
 ??? example "Chromecast Profile"
 
     ```sh
