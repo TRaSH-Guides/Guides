@@ -31,8 +31,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
+  - codehilite:
+      guess_lang: true
   - toc:
-      permalink: true
+      permalink: "¶"
       toc_depth: 5
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -42,9 +44,9 @@ markdown_extensions:
 plugins:
   - search
   - git-revision-date-localized:
-      type: timeago
+      type: datetime
       locale: en
-      fallback_to_build_date: false
+  #    fallback_to_build_date: false
   - awesome-pages
   - macros:
       j2_block_start_string: "[[%"
@@ -104,7 +106,7 @@ theme:
     accent: indigo
     scheme: slate
   font:
-    text: "Roboto"
-    code: "Fira Code"
+    text: "Noto Sans"
+    code: "Encode Sans Expanded"
   favicon: img/favicon.png
   logo: img/logo.png
