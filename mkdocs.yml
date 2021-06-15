@@ -103,7 +103,7 @@ theme:
   language: en
   palette:
     primary: indigo
-    accent: indigo
+    accent: blue
     scheme: slate
   font:
     text: "Noto Sans"
