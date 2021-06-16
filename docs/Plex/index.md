@@ -1,5 +1,5 @@
 # Plex
 
-Here I will add some scripts/profiles/tips for plex
+Here I will start adding Tips and Info for plex
 
-Profiles are used if Plex has issues direct playing your media on your devices, these profiles could help.
+![version](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fplex%2Frelease%2FVERSION.json&label=Latest%20Version&style=for-the-badge&color=4051B5)

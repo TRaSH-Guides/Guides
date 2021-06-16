@@ -24,3 +24,7 @@ td a {
 td a:hover {
   color: red !important;
 }
+
+.md-content {
+  --md-typeset-a-color: #1372EB;
+}
