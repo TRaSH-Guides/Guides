@@ -102,9 +102,20 @@ theme:
     - navigation.tabs
   language: en
   palette:
-    primary: indigo
-    accent: blue
-    scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      primary: indigio
+      accent: blue
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: blue
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
   font:
     text: "Noto Sans"
     code: "Encode Sans Expanded"
