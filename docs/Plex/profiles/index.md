@@ -32,7 +32,7 @@ Example paths:
 ??? example "Shield Profile"
 
     ```sh
-    [[% filter indent(width=4) %]][[% include '/Plex/Profiles/Android-SHIELD/Android-SHIELD-Android-TV.xml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include '/Plex/profiles/Android-SHIELD/Android-SHIELD-Android-TV.xml' %]][[% endfilter %]]
     ```
 
 ### Chromecast
@@ -46,5 +46,5 @@ Example paths:
 ??? example "Chromecast Profile"
 
     ```sh
-    [[% filter indent(width=4) %]][[% include '/Plex/Profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include '/Plex/profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
     ```
