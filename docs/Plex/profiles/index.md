@@ -46,5 +46,5 @@ Example paths:
 ??? example "Chromecast Profile"
 
     ```sh
-    [[% filter indent(width=4) %]][[% include '/Plex/profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include '/Plex/Profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
     ```
