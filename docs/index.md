@@ -13,8 +13,7 @@ Here you will find Guides mainly for Sonarr/Radarr/Bazarr and everything related
 
 ## How this all started
 
-When starting to use Sonarr/Radarr I noticed it didn't get exactly the release I actually wanted being I'm a bit picky about what release & quality I prefer.
-
+When I started using Sonarr/Radarr, I noticed that it didn't grab the releases that I actually wanted, as I'm a bit picky about which releases and what quality I prefer.
 So I decided to fine tune it to try to get the releases & quality I preferred. On discord I also noticed that others run in to the same issue so I explained them how I managed to get it solved. Being I had to explain it often I decided to write it down and make it public so I could easily link it to someone when  they needed it.
 After a while I also decided to create guides for often asked questions on discord, and started to collect all kind of information gathered from different sources.
 The guides I make I try to make them as easy as possible for everyone to understand, in my opinion pictures explain often more then just some text.
