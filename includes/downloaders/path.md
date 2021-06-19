@@ -1,5 +1,3 @@
-#
-
 This basic example is based on the use of docker images
 
 !!! tip ""
