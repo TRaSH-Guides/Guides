@@ -2,7 +2,7 @@
 
 Here we're going to explain the basic setup for Notifiarr to get it working with Sonarr, Radarr, Bazarr.
 
-If you want to make use of the other options I suggest to looking at the [Notifiarr wiki](https://notifiarr.wiki){:target="_blank" rel="noopener noreferrer"}.
+If you want to make use of the other options I suggest to looking at the [Notifiarr Wiki](https://notifiarr.wiki){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
