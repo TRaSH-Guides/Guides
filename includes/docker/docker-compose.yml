@@ -51,21 +51,21 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /docker/appdata/bazarr:/config
       - /data/media:/data/media
-sabnzbd:
-  container_name: sabnzbd
-  image: ghcr.io/hotio/sabnzbd:latest
-  restart: unless-stopped
-  logging:
-    driver: json-file
-  network_mode: bridge
-  ports:
-    - 8080:8080
-    - 9090:9090
-  environment:
-    - PUID=1000
-    - PGID=1000
-    - TZ=Europe/Amsterdam
-  volumes:
-    - /etc/localtime:/etc/localtime:ro
-    - /docker/appdata/sabnzbd:/config
-    - /data/usenet:/data/usenet:rw
+  sabnzbd:
+    container_name: sabnzbd
+    image: ghcr.io/hotio/sabnzbd:latest
+    restart: unless-stopped
+    logging:
+      driver: json-file
+    network_mode: bridge
+    ports:
+      - 8080:8080
+      - 9090:9090
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /docker/appdata/sabnzbd:/config
+      - /data/usenet:/data/usenet:rw

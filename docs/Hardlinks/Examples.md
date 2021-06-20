@@ -8,17 +8,9 @@
 
     The screenshots in the examples are using the following root path `/data`
 
-- [Sonarr](#sonarr)
-- [Radarr](#radarr)
-- [SABnzbd](#sabnzbd)
-- [NZBGet](#nzbget)
-- [qBittorrent](#qbittorent)
-- [Deluge](#deluge)
-- [ruTorrent](#rutorrent)
+## Sonarr
 
 ??? example "Sonarr Examples"
-
-    ## Sonarr
 
     `Settings` => `Media Management` => `Importing`
 
@@ -34,9 +26,9 @@
 
     ![sonarr-tv](images/sonarr-tv.png)
 
-??? example "Radarr Examples"
+## Radarr
 
-    ## Radarr
+??? example "Radarr Examples"
 
     `Settings` => `Media Management` => `Importing`
 
@@ -52,9 +44,9 @@
 
     ![radarr-movies](images/radarr-movies.png)
 
-??? example "SABnzbd Examples"
+## SABnzbd
 
-    ## SABnzbd
+??? example "SABnzbd Examples"
 
     `SABnzbd config` => `Folders`
 
@@ -64,9 +56,9 @@
 
     ![sabnzbd-categories](images/sabnzbd-categories.png)
 
-??? example "NZBGet Examples"
+## NZBGet
 
-    ## NZBGet
+??? example "NZBGet Examples"
 
     `Settings` => `PATHS`
 
@@ -76,25 +68,25 @@
 
     ![nzbget-settings-categories](images/nzbget-settings-categories.png)
 
-??? example "qBittorrent Examples"
+## qBittorrent
 
-    ## qBittorrent
+??? example "qBittorrent Examples"
 
     `Options` => `Downloads`
 
     ![qbt-options-downloads](images/qbt-options-downloads.png)
 
-??? example "Deluge Example"
+## Deluge
 
-    ## Deluge
+??? example "Deluge Example"
 
     `Preferences` => `Downloads`
 
     ![deluge-preferences-downloads](images/deluge-preferences-downloads.png)
 
-??? example "ruTorrent Examples"
+## ruTorrent
 
-    ## ruTorrent
+??? example "ruTorrent Examples"
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 

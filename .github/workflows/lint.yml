@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: markdownlint
         run: |
-          find ~+ ${github_workspace} -name '*.md' | xargs docker run --rm -v ${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE} markdownlint/markdownlint -r ~MD013,~MD033,~MD034,~MD046,~MD002
+          find ~+ ${github_workspace} -name '*.md' | xargs docker run --rm -v ${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE} markdownlint/markdownlint -r ~MD013,~MD033,~MD034,~MD046,~MD002,~MD041
 
   yamllint:
     runs-on: ubuntu-latest

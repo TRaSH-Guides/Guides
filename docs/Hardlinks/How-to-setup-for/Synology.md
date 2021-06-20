@@ -74,75 +74,7 @@ data
     └── tv
 ```
 
-## Breakdown of the Folder Structure
-
-!!! info
-
-    The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
-
-### Torrent clients
-
-qBittorrent, Deluge, ruTorrent
-
-The reason why we use `/data/torrents` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/torrents/{tv|movies|music}`.
-
-```none
-data
-└── torrents
-    ├── movies
-    ├── music
-    └── tv
-```
-
-### Usenet clients
-
-NZBGet or SABnzbd
-
-The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/{tv|movies|music}`.
-
-```none
-data
-└── usenet
-    ├── movies
-    ├── music
-    └── tv
-```
-
-### The arr(s)
-
-Sonarr, Radarr and Lidarr
-
-Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
-
-```none
-data
-├── torrents
-│  ├── movies
-│  ├── music
-│  └── tv
-├── usenet
-│  ├── movies
-│  ├── music
-│  └── tv
-└── media
-    ├── movies
-    ├── music
-    └── tv
-```
-
-### Media Server
-
-Plex, Emby, JellyFin and Bazarr
-
-Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
-
-```none
-data
-└── media
-    ├── movies
-    ├── music
-    └── tv
-```
+--8<-- "includes/hardlinks/breakdown-folder-structure.md"
 
 ------
 
@@ -240,7 +172,7 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 
 ------
 
-### Run the Docker Compose
+## Run the Docker Compose
 
 !!! important
     make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
@@ -266,9 +198,4 @@ You will notice that all the images will be downloaded, and after that the conta
 
     Just don't use the GUI !!!
 
-??? hint "docker-compose commands - [CLICK TO EXPAND]"
-
-    - `sudo docker-compose up -d` (This Docker-compose command helps builds the image, then creates and starts Docker containers. The containers are from the services specified in the compose file. If the containers are already running and you run docker-compose up, it recreates the container.)
-    - `sudo docker-compose pull` (Pulls an image associated with a service defined in a docker-compose.yml)
-    - `sudo docker-compose down` (The Docker-compose down command also stops Docker containers like the stop command does. But it goes the extra mile. Docker-compose down, doesn’t just stop the containers, it also removes them.)
-    - `sudo docker system prune -a --volumes --force` (Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.)
+--8<-- "includes/hardlinks/docker-compose-commands.md"
