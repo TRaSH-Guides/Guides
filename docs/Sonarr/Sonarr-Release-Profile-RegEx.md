@@ -398,9 +398,9 @@ Add this to your `Preferred (3)` with a score of [15]
 /\bS\d+\b(?!E\d+\b)/i
 ```
 
-??? bug ".su season pack issue"
+##### .su season pack issue
 
-    ##### .su season pack issue
+??? bug ".su season pack issue"
 
     When you see a error in Sonarr that looks somehow like the follow screenshot
 
