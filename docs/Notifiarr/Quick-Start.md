@@ -141,11 +141,11 @@ This section exist of 2 parts.
 First we're going to download the emoji's and you can do that in 2 ways.
 
 1. 1 at a time - Right click -> Save As... - for these emoji images to some location on your computer.
-1. Pack Download - Click [here](https://discordnotifier.com/setup.php?grab=reactions){:target="_blank" rel="noopener noreferrer"} to download a zip of all the current reaction images.
+1. Pack Download - Click [here](https://notifiarr.com/setup.php?grab=reactions){:target="_blank" rel="noopener noreferrer"} to download a zip of all the current reaction images.
 
 !!! attention
 
-    To download the Emoji Pack from the link in this Guide you will need to be logged in  to [Notifiarr](https://discordnotifier.com/index.php){:target="_blank" rel="noopener noreferrer"} site !!!
+    To download the Emoji Pack from the link in this Guide you will need to be logged in  to [Notifiarr](https://notifiarr.com/index.php){:target="_blank" rel="noopener noreferrer"} site !!!
 
     Else you can find it on the main Notifiarr site in the `Integration Setup` Category at the bottom right
 
@@ -221,7 +221,7 @@ Radarr, Readarr and Lidarr supports Notifiarr natively so that's an easy one to 
 `Settings` => `Connect` => click on the ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) `plus` icon and select `Notifiarr` add your API key and you're done.
 
 ??? example "Radarr Example"
-    In Radarr go to `Settings` => `Connect` => Click on the ![dn-arr-add-plus](images/dn-arr-add-plus.png) `plus` icon and select `DiscordNotifier.com`.
+    In Radarr go to `Settings` => `Connect` => Click on the ![dn-arr-add-plus](images/dn-arr-add-plus.png) `plus` icon and select `notifiarr`.
 
     ![!dn-arr-add-notification](images/dn-arr-add-notification.png)
 
