@@ -43,7 +43,7 @@ Followed by the `Import` in the lower left.
 
 ![cf-import](images/cf-import.png)
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
+In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
 
 What you see in the red box is a example txt that you don't and can't remove!
 
@@ -68,4 +68,4 @@ all you need to do now is click on the `Save` button and you're done.
 
     [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
+Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
