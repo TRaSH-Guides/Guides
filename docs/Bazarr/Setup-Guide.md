@@ -33,14 +33,14 @@ Click on `Enabled`
         **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refer to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Sonarr instance. Default is 8989.
-1. Mainly used by those who expose Sonarr behind a reverse proxy (ex.: /sonarr). Don't forget the leading slash. In fact, it should look exactly the same as in Sonarr settings. Meanly used when you use a reverse proxy.
+1. Sonarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /sonarr).
 
     !!! info
 
         **If you don't use a reverse proxy or don't know what it is leave this empty !!!**
 
 1. Enter your Sonarr API key here.
-1. Enable this if your Sonarr instance is exposed trough SSL.
+1. Enable this if your Sonarr instance is exposed through SSL.
 
     !!! info
 
@@ -125,14 +125,13 @@ Click on `Enabled`
         **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refer to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Radarr instance. Default is 7878.
-1. Mainly used by those who expose Radarr behind a reverse proxy (ex.: /radarr). Don't forget the leading slash. In fact, it should look exactly the same as in Radarr settings. Meanly used when you use a reverse proxy.
-
+1. Radarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /radarr).
     !!! info
 
         **If you don't use a reverse proxy or don't know what it is leave this empty !!!**
 
 1. Enter your Radarr API key here.
-1. Enable this if your Radarr instance is exposed trough SSL.
+1. Enable this if your Radarr instance is exposed through SSL.
 
     !!! info
 
