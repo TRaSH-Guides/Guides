@@ -25,9 +25,9 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock red5d/docker-a
 
 Paste the results on one of the following sites.
 
-- [gist.github.com](https://gist.github.com){:target="_blank" rel="noopener noreferrer"}
-- [hastebin.com](https://hastebin.com){:target="_blank" rel="noopener noreferrer"}
 - [0bin.net](https://0bin.net/){:target="_blank" rel="noopener noreferrer"}
+- [gist.github.com](https://gist.github.com){:target="_blank" rel="noopener noreferrer"}
 - [pastebin.com](https://pastebin.com){:target="_blank" rel="noopener noreferrer"}
+- - [hastebin.com](https://hastebin.com){:target="_blank" rel="noopener noreferrer"}
 
 If you use docker run command to create your docker containers, paste your run command in to [composerize](https://www.composerize.com/){:target="_blank" rel="noopener noreferrer"}
