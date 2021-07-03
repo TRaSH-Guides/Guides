@@ -39,7 +39,7 @@
 
     The appdata (`/config`) will be stored on the host in the `/docker/appdata/{appname}`
 
-??? example "docker-compose"
+??? example "docker-compose - [CLICK TO EXPAND]"
 
     ```yml
     --8<-- "includes/docker/docker-compose.yml"
