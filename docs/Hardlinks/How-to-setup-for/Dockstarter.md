@@ -86,7 +86,7 @@ When that's all set then you will need to change the paths you're going to use i
 - [Deluge](#deluge)
 - [ruTorrent](#rutorrent)
 
-??? example "Sonarr Examples"
+??? example "Sonarr Examples - [CLICK TO EXPAND]"
 
     ##### Sonarr
 
@@ -104,7 +104,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-sonarr-tv](images/ds-sonarr-tv.png)
 
-??? example "Radarr Examples"
+??? example "Radarr Examples - [CLICK TO EXPAND]"
 
     ##### Radarr
 
@@ -122,7 +122,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-radarr-movies](images/ds-radarr-movies.png)
 
-??? example "SABnzbd Examples"
+??? example "SABnzbd Examples - [CLICK TO EXPAND]"
 
     ##### SABnzbd
 
@@ -134,7 +134,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
 
-??? example "NZBGet Examples"
+??? example "NZBGet Examples - [CLICK TO EXPAND]"
 
     ##### NZBGet
 
@@ -146,7 +146,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
 
-??? example "qBittorrent Examples"
+??? example "qBittorrent Examples - [CLICK TO EXPAND]"
 
     ##### qBittorrent
 
@@ -154,7 +154,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
 
-??? example "Deluge Example"
+??? example "Deluge Example - [CLICK TO EXPAND]"
 
     ##### Deluge
 
@@ -162,7 +162,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
 
-??? example "ruTorrent Examples"
+??? example "ruTorrent Examples - [CLICK TO EXPAND]"
 
     ##### ruTorrent
 
