@@ -100,6 +100,14 @@
           "fields": {
               "value": "(hulu).?web.?(dl|rip)"
           }
+        {
+          "name": "Peacock",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+              "value": "(pcok|peacock).?web.?(dl|rip)"
+          }
       }
   ]
 }
