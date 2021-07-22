@@ -51,7 +51,7 @@ I will only explain the so called most important paths.
 | Name          | Description                                                                            |
 |:---           |:---                                                                                    |
 | `Name`        | This should match what you put in Sonarr/Radarr (tv/movies/sonarr/radarr/series/films) |
-| `DestDir`     | `${DestDir}` Destination directory (/data/usenet/movie)                     |
+| `DestDir`     | `${DestDir}` Destination directory (/data/usenet/movies)                     |
 | `Unpack`      | Unpack downloaded nzb-files.                                                           |
 | `Extensions`  | List of extension scripts for this category.                                           |
 
