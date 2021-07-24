@@ -5,12 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "FraMeSToR",
+      "name": "Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bFraMeSToR\\b"
+        "value": "\\b(FraMeSToR|HQMUX)\\b"
       }
     },
     {
