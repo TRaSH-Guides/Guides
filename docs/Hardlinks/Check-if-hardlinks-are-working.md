@@ -7,6 +7,15 @@ You can use 2 options to check if you got working hardlinks.
 *Both ways requires you to login to your terminal with PuTTY or similar software.*
 
 ---
+## Usenet
+
+!!! note ""
+
+    If you use usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.
+
+    Still want to test if it works ?
+
+    Test a import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.
 
 ## Method 1: Using ls
 
