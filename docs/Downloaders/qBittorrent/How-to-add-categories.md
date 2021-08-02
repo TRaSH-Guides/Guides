@@ -32,3 +32,11 @@ This basic example is based on the use of docker images
 ## Paths and Categories Breakdown
 
 ![!qBittorrent - Paths and Categories Breakdown](images/qb-category-breakdown.png)
+
+## Downloads do not go into the category folder
+
+!!! attention "Downloads do not go into the category folder"
+
+    When your downloads ends up in `/data/torrents/` and not in `/data/torrents/{tv|movies|music}` then you probably forgot to change `Default Torrent Management Mode:` to `Automatic`
+
+    ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
