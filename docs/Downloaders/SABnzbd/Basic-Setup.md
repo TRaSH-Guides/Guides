@@ -100,8 +100,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
 1. Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.
 1. Helps with de-obfuscation, but probably is handling the same case sonarr/radarr do okay with. Not sure how this one does, I have it enabled, but its also newish.
-1. When sorting, use tags from indexer for title, season, episode, etc.
-Otherwise all naming is derived from the NZB name.
+1. When sorting, use tags from indexer for title, season, episode, etc. Otherwise all naming is derived from the NZB name.
 
 ------
 
