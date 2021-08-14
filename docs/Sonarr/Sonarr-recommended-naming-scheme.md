@@ -120,13 +120,24 @@ RESULT:
 
 `The Series Title! (2010)`
 
-#### Optional Series Folder Format for the Plex TV Series Scanner
+#### Recommended Series Folder Format for the Plex TV Series Scanner and Jellyfin
 
 This naming scheme is made to be compatible with the beta [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+
+For Plex:
 
 ```bash
 {Series TitleYear} [imdb-{ImdbId}]
 ```
+
+For Jellyfin:
+
+```bash
+{Series TitleYear} [imdbid-{ImdbId}]
+```
+
+!!! note
+    Jellyfin also supports `[tmdbid-ID]` if IMDB does not have information on a series but The Movie DB does. This name can be set manually for those rare case as Sonarr does not support The Movie DB.
 
 RESULT:
 
