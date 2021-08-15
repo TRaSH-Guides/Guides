@@ -120,9 +120,9 @@ RESULT:
 
 `The Series Title! (2010)`
 
-#### Recommended Series Folder Format for the Plex TV Series Scanner and Jellyfin
+#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin
 
-This naming scheme is made to be compatible with the beta [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+This naming scheme is made to be compatible with the New [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
 For Plex:
 
@@ -130,24 +130,25 @@ For Plex:
 {Series TitleYear} [imdb-{ImdbId}]
 ```
 
+RESULT:
+
+`The Series Title! (2010) [imdb-tt1520211]`
+
+!!! note
+    The officially supported format is `{imdb-{ImdbId}}` but plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now, It's actually not needed to add a ID to the folder or filename to use the New Plex TV Series Scanner.
+
 For Jellyfin:
 
 ```bash
 {Series TitleYear} [imdbid-{ImdbId}]
 ```
 
-!!! note
-    Jellyfin also supports `[tmdbid-ID]` if IMDB does not have information on a series but The Movie DB does. This name can be set manually for those rare case as Sonarr does not support The Movie DB.
-
 RESULT:
 
-`The Series Title! (2010) [imdb-tt1520211]`
+`The Series Title! (2010) [imdbid-tt1520211]`
 
-!!! note
-    The officially supported format is `{imdb-{ImdbId}}` but plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
-
-!!! info
-    It's actually not needed to add a ID to the folder or filename to use the beta Plex TV Series Scanner.
+!!! tip
+    IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
 
 ------
 
