@@ -120,7 +120,7 @@ RESULT:
 
 `The Series Title! (2010)`
 
-#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin
+#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
 
 This naming scheme is made to be compatible with the New [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
@@ -137,7 +137,7 @@ RESULT:
 !!! note
     The officially supported format is `{imdb-{ImdbId}}` but plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now, It's actually not needed to add a ID to the folder or filename to use the New Plex TV Series Scanner.
 
-For Jellyfin:
+For Jellyfin/Emby:
 
 ```bash
 {Series TitleYear} [imdbid-{ImdbId}]
