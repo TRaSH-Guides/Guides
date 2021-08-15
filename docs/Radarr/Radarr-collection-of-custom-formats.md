@@ -29,89 +29,31 @@ I also made 2 guides related to this one.
 
 ------
 
-| Audio                                    | Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               |
-| :--------------------------------------- | ----------------------------------------- | ------------------------------- | ---------------------------- |
-| [Dolby TrueHD/ATMOS](#dolby-truehdatmos) | [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         |
-| [DTS-HD/DTS:X](#dts-hddtsx)              | [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     |
-| [Surround Sound](#surround-sound)        | [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       |
-|                                          | [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       |
-|                                          | [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) |
-|                                          | [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) |
-|                                          | [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) |
-|                                          | [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) |
-|                                          | [DTS](#dts)                               |                                 |                              |
+| Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               | HDR Metadata                            |
+| ----------------------------------------- | ------------------------------- | ---------------------------- | --------------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [Dolby Vision](#dovi)                   |
+| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [Dolby Vision (Single Layer)](#dovi-sl) |
+| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [HDR](#hdr)                             |
+| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [HDR (undefined)](#hdr-undefined)       |
+| [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) | [10 Bit](#10-bit)                       |
+| [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) |                                         |
+| [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) |                                         |
+| [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) |                                         |
+| [DTS](#dts)                               |                                 |                              |                                         |
 
 ------
 
-| HDR Metadata                            | Movie Versions                                | Misc (-1000)                        | Misc                                      |
-| --------------------------------------- | --------------------------------------------- | ----------------------------------- | ----------------------------------------- |
-| [Dolby Vision](#dovi)                   | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           |
-| [Dolby Vision (Single Layer)](#dovi-sl) | [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Streaming Services](#streaming-services) |
-| [HDR](#hdr)                             | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [High Quality Releases](#hq)              |
-| [HDR (undefined)](#hdr-undefined)       | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |
-| [10 Bit](#10-bit)                       | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |
-|                                         | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [MPEG2](#mpeg2)                           |
-|                                         | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [FreeLeech](#freeleech)                   |
-|                                         |                                               | [DoVi (WEBDL)](#dovi-webdl)         | [Dutch Groups](#dutch-groups)             |
-|                                         |                                               |                                     | [Anime Dual Audio](#anime-dual-audio)     |
-|                                         |                                               |                                     | [Multi](#multi)                           |
-|                                         |                                               |                                     | [HQ-WEBDL](#hq-webdl)                     |
-
-## Audio
-
-------
-
-### Dolby TrueHD/ATMOS
-
->If you prefer TrueHD|Atmos audio tracks.
-
-!!! warning
-
-    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
-
-??? example "json"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dolby-truehdatmos.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### DTS-HD/DTS:X
-
->If you prefer DTS-HD/DTS:X audio tracks.
-
-!!! warning
-
-    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
-
-??? example "json"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dts-hddtsx.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Surround Sound
-
->If you prefer all kind of surround sounds
-
-!!! warning
-
-    Don't use this Custom Format in combination with the `Audio Advanced` CF if you want to fine tune your audio formats or else it will add up the scores.
-
-??? example "json"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/surround-sound.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
+| Movie Versions                                | Misc (-10000)                       | Misc #1                                   | Misc #2                      |
+| --------------------------------------------- | ----------------------------------- | ----------------------------------------- | ---------------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)      |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Streaming Services](#streaming-services) | [High Quality Releases](#hq) |
+| [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [Multi](#multi)                           | [HQ-WEBDL](#hq-webdl)        |
+| [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |                              |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |                              |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [MPEG2](#mpeg2)                           |                              |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [FreeLeech](#freeleech)                   |                              |
+|                                               | [DoVi (WEBDL)](#dovi-webdl)         | [Dutch Groups](#dutch-groups)             |                              |
+|                                               |                                     | [Anime Dual Audio](#anime-dual-audio)     |                              |
 
 ------
 
@@ -663,7 +605,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 ------
 
-## Misc (-1000)
+## Misc (-10000)
 
 ------
 
@@ -671,7 +613,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 >This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 >
->You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
 !!! note
 
@@ -697,7 +639,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
 >This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
 >
->You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
 ??? example "json"
 
@@ -739,7 +681,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 <sub>720/1080p no x265 = x265 (720/1080p)</sub>
 >This blocks/ignores 720/1080p releases that are encoded in x265
 >
->You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-9999`
+>You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
 !!! fail ""
     --8<-- "includes/docker/x265.md"
@@ -982,6 +924,20 @@ If you want maximum compatibility and have much better direct play support then 
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/hq-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HQ-Remux
+
+> A personal collection of P2P Remux groups that are known for their high quality releases.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hq-remux.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
