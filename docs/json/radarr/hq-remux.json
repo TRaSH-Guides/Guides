@@ -1,0 +1,26 @@
+{
+  "trash_id": "403f3f6266b90439cacc1e07cae4dc2d",
+  "trash_score": "1700",
+  "name": "HQ-Remux",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux Groups",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(FraMeSToR|EPSiLON|KRaLiMaRKo|PmP|BLURANiUM|SiCFoI|SURFINBIRD|HiFi|iFT)\\b"
+      }
+    },
+    {
+      "name": "REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}

@@ -89,11 +89,11 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr
 
     ### Which overall scoring scheme do you use
 
-    - **Advanced Audio** 500 for the highest with steps of 10 down.
-    - **HDR Metadata** 300 for the highest with steps of 10 down.
+    - **Advanced Audio** 2000 for the highest with steps of 100 down.
+    - **HDR Metadata** 1000 for the highest with steps of 100 down (except for Dovi SL).
     - **Movie Versions** 200 for the highest with steps of 10 down.
-    - **Misc** 100 with steps of 10 down.
-    - **Releases you should avoid** -9999
+    - **Misc** Variable depending on your use case.
+    - **Releases you should avoid** -10000
 
     If you notice that some scores are missing between the different Quality Profiles examples it's because I decided to be consistent with the scoring. Meaning a certain Custom Format has in every used Quality Profile the same score.
 
@@ -104,9 +104,9 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr
 In my opinion this is a must for every Quality Profile you use, all these Custom Formats make sure you don't get Low Quality Releases.
 
 !!! info
-    Add all of the following Custom Formats as `-1000` or even `-9999`
+    Add all of the following Custom Formats as `-10000`
 
-![!cf-misc-1000](images/cf-misc-1000.png)
+![!cf-misc-10000](images/cf-misc-10000.png)
 
 ??? example "Breakdown and Why"
 
@@ -115,9 +115,11 @@ In my opinion this is a must for every Quality Profile you use, all these Custom
     - **Low Quality Releases** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
     - **720/1080p no x265** This blocks/ignores 720/1080p releases that are encoded in x265 - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
     - **3D** Is 3D still a thing for home use ?
+    - **No-RlsGroup** Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+    - **DoVi (WEBDL)** This is a special Custom Format that ignores DV for WEB-DL but together with the normal DoVi allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
 
 ??? success "example"
-    ![!cf-misc-1000-result](images/cf-misc-1000-result.png)
+    ![!cf-misc-10000-result](images/cf-misc-10000-result.png)
 
 !!! tip
     You might even can consider to add [Multi](/Radarr/Radarr-collection-of-custom-formats/#multi){:target="_blank" rel="noopener noreferrer"} if you want to make sure you don't grab releases with often foreign audio.
@@ -165,7 +167,7 @@ If you prefer HQ Encodes (Bluray-720/1080/2160p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Movie Versions`, `Misc (-1000)` and `Misc`
+For this Quality Profile we're going to make use of `Movie Versions`, `Misc (-10000)` and `Misc`
 
  :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
@@ -205,7 +207,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Audio Advanced`, `Movie Versions`, `Misc (-1000)` and `Misc`
+For this Quality Profile we're going to make use of `Audio Advanced`, `Movie Versions`, `Misc (-10000)` and `Misc`
 
  :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
@@ -239,7 +241,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Audio Advanced`,  `HDR Metadata`,`Movie Versions`, `Misc (-1000)` and `Misc`
+For this Quality Profile we're going to make use of `Audio Advanced`,  `HDR Metadata`,`Movie Versions`, `Misc (-10000)` and `Misc`
 
  :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
 
@@ -284,22 +286,8 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ??? FAQ "How to use a Custom Formats to avoid certain releases?"
 
-    For Custom Formats you really want to avoid, set it to something really low like `-1000` or even `-9999` and not something like `-10`.
+    For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
     Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
-
-### Audio vs Audio Advanced
-
-??? FAQ "What's the difference between Audio vs Audio Advanced?"
-
-    What's the biggest difference between these two ?
-
-    The Custom Formats in the `Audio` are kinda global and not specific based on the best audio format.
-
-    Personally I recommend to use the `Audio Advanced` they are already ordered from high to low if you prefer HD audio (with object metadata)
-
-    !!! warning
-
-        Don't use `Audio` Custom Format in combination with the `Audio Advanced` Custom Formats.
 
 ### Custom Formats with a score of 0
 
