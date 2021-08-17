@@ -8,5 +8,5 @@ mkdocs-material==7.2.4
 mkdocs-minify-plugin==0.4.0
 mkdocs-redirects==1.0.3
 mkdocs==1.2.2
-pygments==2.9.0
+pygments==2.10.0
 pymdown-extensions==8.2
