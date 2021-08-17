@@ -48,8 +48,15 @@
       "fields": {
         "value": 8
       }
+    },
+    {
+      "name": "REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
     }
   ]
 }
-
-
