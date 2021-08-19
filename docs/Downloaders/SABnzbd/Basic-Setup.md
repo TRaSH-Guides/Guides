@@ -113,4 +113,37 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ------
 
+## Recommended Sonarr/Radarr Settings
+
+The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
+
+### Sonarr
+
+??? example "Sonarr"
+
+    `Settings` => `Download Clients`
+
+    ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
+
+    Make sure you check both boxes under `Completed Download Handling` at step 3.
+
+    Select Sabnzbd at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+
+    ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-sabnzbd.png)
+
+### Radarr
+
+??? example "Radarr"
+
+    `Settings` => `Download Clients`
+
+    ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
+
+    Make sure you check both boxes under `Completed Download Handling` at step 3,
+
+    and both boxes under `Failed Download Handling` at step 4.
+
+------
+
 <sub>Thnx to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
