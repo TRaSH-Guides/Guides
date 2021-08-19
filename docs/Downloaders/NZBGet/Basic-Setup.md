@@ -89,3 +89,36 @@ I will only explain the so called most important paths.
 ![!extScripts](images/extScripts.png)
 
 Depending if you're using some NZBGet script here you can change the order or when it should be used
+
+------
+
+## Recommended Sonarr/Radarr Settings
+
+The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
+
+### Sonarr
+
+??? example "Sonarr"
+
+    `Settings` => `Download Clients`
+
+    ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
+
+    Make sure you check both boxes under `Completed Download Handling` at step 3.
+
+    Select NZBGet at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+
+    ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-nzbget.png)
+
+### Radarr
+
+??? example "Radarr"
+
+    `Settings` => `Download Clients`
+
+    ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
+
+    Make sure you check both boxes under `Completed Download Handling` at step 3,
+
+    and both boxes under `Failed Download Handling` at step 4.
