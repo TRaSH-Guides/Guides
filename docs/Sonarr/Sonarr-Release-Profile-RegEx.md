@@ -160,6 +160,10 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(pmtp)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 ??? success "example"
 
     !!! attention
