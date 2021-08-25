@@ -274,13 +274,13 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-ROCCaT|3cTWeB|playWEB)\b/i
+/(-ROCCaT|3cTWeB|playWEB|-FLUX)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(-ViSiON|-FLUX)\b/i
+/(-ViSiON)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
