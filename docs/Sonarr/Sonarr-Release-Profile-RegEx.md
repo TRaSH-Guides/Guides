@@ -433,7 +433,7 @@ Add this to your `Must not contain (2)`
 
 #### Optional Ignore the group -scene
 
-?? note "Why ?"
+??? note "Why ?"
 
     Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11)
 
