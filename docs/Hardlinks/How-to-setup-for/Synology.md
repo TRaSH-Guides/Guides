@@ -143,6 +143,9 @@ Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/ma
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env
 ```
 
+!!! attention
+    :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT  :bangbang:
+
 ------
 
 ### Changes you need to do
