@@ -160,6 +160,10 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(pmtp)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 ??? success "example"
 
     !!! attention
@@ -270,13 +274,13 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-ROCCaT|3cTWeB|playWEB)\b/i
+/(-ROCCaT|3cTWeB|playWEB|-FLUX)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/(-ViSiON|-FLUX)\b/i
+/(-ViSiON)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -340,7 +344,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 ### Optional preferred preferences
 
 !!! note
-    These options are optional and only needed if you got a certain use case for it,
+    These options are optional and only needed if you got a certain use case for it.
 
 #### Optional HDR - if you prefer HDR
 
@@ -425,6 +429,18 @@ Add this to your `Must not contain (2)`
 ```bash
 /\b(dv|dovi|dolby[ .]vision)\b.*(?=[ ._-]web[ ._-]?(dl|rip)\b)/i,
 /(?=[ ._-]web[ ._-]?(dl|rip)\b).*\b(dv|dovi|dolby[ .]vision)\b/i
+```
+
+#### Optional Ignore the group -scene
+
+??? note "Why ?"
+
+    Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11)
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\b(-scene)\b/i
 ```
 
 ------
