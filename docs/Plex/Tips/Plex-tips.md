@@ -152,7 +152,7 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
 1. It lets you specify which IP addresses or networks will be considered to be “local” to you.
 
     !!! check ""
-        **Suggested: `Your local IP/netmasks`** *and if using docker* **`Your docker IP/netmasks`**
+        **Suggested: `Your local IP/netmasks`**
 
         *If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)*
 
