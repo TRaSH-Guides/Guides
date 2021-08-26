@@ -88,7 +88,22 @@ We're going to do this in Putty or a similar program.
 sudo mkdir /volume1/docker/appdata
 cd /volume1/docker/appdata
 sudo mkdir radarr sonarr bazarr plex tautulli
+# The following is needed for plex transcode location
+sudo mkdir /tmp/plex
 ```
+
+??? bug "plex transcode location `/tmp/plex`  - [CLICK TO EXPAND]"
+    The extra created `/tmp/plex` folder for plex's transcode location won't survive a reboot.
+
+    so you will need to create in your task scheduler a "triggered task" that runs on startup of the nas.
+
+    Add the following command as root: `mkdir /tmp/plex/`
+
+    ![!Create task](images/synology-create-task.png)
+
+    ![!Create task](images/synology-task-settings.png)
+
+    If you need extra help please come to [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
 So your appdata folder will look like this.
 
@@ -142,6 +157,9 @@ Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/ma
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env
 ```
+
+!!! attention
+    :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT  :bangbang:
 
 ------
 
