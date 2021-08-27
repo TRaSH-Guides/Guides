@@ -286,7 +286,7 @@ Here we will configure some extra settings for your subtitles
 ![!Subtitle Options](images/qs-subtitles-options.png)
 
 1. Where you want your subtitles it's recommended to put them `AlongSide Media File`.
-1. If you want to upgrade preciously downloaded subtitles.
+1. If you want to upgrade previously downloaded subtitles.
 1. How many days to go back in history to upgrade them.
 1. If you want to upgrade manually downloaded subtitles.
 
