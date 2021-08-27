@@ -662,9 +662,11 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     - BLOCK1 = Low-Quality Releases (often banned groups)
     - BLOCK2 = Another Small list of often banned groups.
-    - BLOCK3 = And Another list.
-    - BLOCK4 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-    - BLOCK5 = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying !!!
+    - BLOCK3 = Banned release groups.
+    - BLOCK4 = Low-quality and/or dishonest release groups.
+    - BLOCK5 = Banned Release Groups.
+    - BLOCK6 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+    - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying !!!
 
 ??? example "json"
 
