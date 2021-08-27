@@ -20,7 +20,13 @@ Here I will try to explain with some personal used examples how to make the most
 
 !!! note
 
-    Custom formats are implemented within and have their impact controlled by Quality Profiles. The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded. A score of 0 results in the custom format being informational only. The Minimum score requires releases to reach this threshold otherwise they will be rejected. Custom formats that match with undesirable attributes should be given a negative score to lower their appeal. Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+    Custom formats are implemented within and have their impact controlled by Quality Profiles.
+
+    - The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.
+    - A score of 0 results in the custom format being informational only.
+    - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
+    - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
+    - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
 First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 And a short description what the settings means.
@@ -33,8 +39,7 @@ Then select the profile that you use/prefer.
 
 ![!cf-quality-profiles](images/cf-quality-profiles.png)
 
-!!! note
-    Radarr Custom Format can be set per profile and isn't global
+!!! info "Radarr Custom Format can be set per profile and isn't global"
 
 ![!cf-profile-selected](images/cf-profile-selected.png)
 
@@ -85,7 +90,7 @@ Here I will show how to make the most use of Custom Formats and show some person
 
 All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}
 
-??? FAQ "Which overall scoring scheme do you use ?"
+??? FAQ "Which overall scoring scheme do you use ? - [CLICK TO EXPAND]"
 
     ### Which overall scoring scheme do you use
 
@@ -108,7 +113,7 @@ In my opinion this is a must for every Quality Profile you use, all these Custom
 
 ![!cf-misc-10000](images/cf-misc-10000.png)
 
-??? example "Breakdown and Why"
+??? example "Breakdown and Why - [CLICK TO EXPAND]"
 
     - **BR-DISK** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
     - **EVO except WEB-DL** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
@@ -118,7 +123,7 @@ In my opinion this is a must for every Quality Profile you use, all these Custom
     - **No-RlsGroup** Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
     - **DoVi (WEBDL)** This is a special Custom Format that ignores DV for WEB-DL but together with the normal DoVi allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
     ![!cf-misc-10000-result](images/cf-misc-10000-result.png)
 
 !!! tip
@@ -136,7 +141,7 @@ Then we would use the following order.
 
 In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![!cf-prefer-advanced-audio](images/cf-prefer-advanced-audio.png)
 
@@ -154,7 +159,7 @@ I didn't add `Dolby Vision (Single Layer)` being most of the releases are alread
 
 Also I didn't add `10 Bit` being 4k releases are 99% 10bit anyway.
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![!cf-prefer-hdr-metadata](images/cf-prefer-hdr-metadata.png)
 
@@ -272,7 +277,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ### Proper and Repacks
 
-??? tip "Proper and Repacks"
+??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
@@ -284,20 +289,20 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ### Custom Formats to avoid certain releases
 
-??? FAQ "How to use a Custom Formats to avoid certain releases?"
+??? FAQ "How to use a Custom Formats to avoid certain releases? - [CLICK TO EXPAND]"
 
     For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
     Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
 
 ### Custom Formats with a score of 0
 
-??? FAQ "What do Custom Formats with a score of 0 do?"
+??? FAQ "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
 
     All Custom Formats with a score of 0 are pure informational and don't do anything.
 
 ### Minimum Custom Format Score
 
-??? info "Minimum Custom Format Score"
+??? info "Minimum Custom Format Score - [CLICK TO EXPAND]"
 
     Some people suggest not to use minus score for your Custom Formats and set this option to a higher score then 0.
 
@@ -307,7 +312,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ### Audio Channels
 
-??? info "Audio Channels"
+??? info "Audio Channels - [CLICK TO EXPAND]"
 
     Personally I wouldn't add the audio channels Custom Formats being you could limit your self in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.
 
@@ -315,7 +320,7 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
 ### Avoid using the x264/x265 Custom Format
 
-??? tip "Avoid using the x264/x265 Custom Format"
+??? tip "Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]"
 
     If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){:target="_blank" rel="noopener noreferrer"} Custom Format.
 
