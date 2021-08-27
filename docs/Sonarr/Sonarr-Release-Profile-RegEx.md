@@ -11,7 +11,7 @@ The Release profile that we're going to use for this example is mainly to prefer
 !!! question ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
-??? question "FAQ"
+??? question "FAQ - [CLICK TO EXPAND]"
 
     ## FAQ
 
@@ -164,7 +164,7 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(pmtp)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -192,11 +192,11 @@ Add this to your `Must not contain (2)`
 /(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i
 ```
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![!rp-release-sources](images/rp-golden-rule.png)
 
-??? info "Why the Must Not Contain entry"
+??? info "Why the Must Not Contain entry - [CLICK TO EXPAND]"
 
     So why did I put `/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i` as `Must Not Contain` and what does it do ?
 
@@ -301,7 +301,7 @@ Add this to your `Preferred (3)` with a score of [10]
 /\b(repack|proper)\b/i
 ```
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -327,7 +327,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 /(-VIDEOHOLE|nhanc3)\b/i
 ```
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -396,6 +396,9 @@ Add this to your `Preferred (3)` with a score of [-25]
 
 #### Optional Matches Season Packs (use this if you prefer Season packs)
 
+!!! warning ""
+    This will upgrade also your already downloaded single episodes
+
 Add this to your `Preferred (3)` with a score of [15]
 
 ```bash
@@ -404,7 +407,7 @@ Add this to your `Preferred (3)` with a score of [15]
 
 ##### .su season pack issue
 
-??? bug ".su season pack issue"
+??? bug ".su season pack issue - [CLICK TO EXPAND]"
 
     When you see a error in Sonarr that looks somehow like the follow screenshot
 
@@ -420,7 +423,7 @@ Add this to your `Preferred (3)` with a score of [15]
 
 #### Optional Ignore DoVi for WEBDL
 
-??? NOTE "WHY ?"
+??? NOTE "WHY ? - [CLICK TO EXPAND]"
 
     This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
 
@@ -433,7 +436,7 @@ Add this to your `Must not contain (2)`
 
 #### Optional Ignore the group -scene
 
-??? note "Why ?"
+??? note "Why ? - [CLICK TO EXPAND]"
 
     Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11)
 
@@ -452,12 +455,14 @@ Add this to your `Must not contain (2)`
 - Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
 - Scores [-25] Retagged/Renames/Obfuscated  releases.
 
-!!! danger "Watch out"
-    If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-25]
+    !!! danger ""
+        If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-25]
 
 - Scores [-100] Groups that mess with the audio or add another preferred language.
 
-Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know if you notice something wrong just contact me and we will try to fix it or remove it.
+Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know.
+
+If you notice something wrong just contact me and we will try to fix it or remove it.
 
 The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks.
 
@@ -465,7 +470,7 @@ The reason why I got multiple entry's with the same score is because the line wi
 
 When you've done it correctly it will look something like this.
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -494,4 +499,10 @@ If you want to be mentioned please message me on discord, including a link for p
     Keep in mind this list will be a constant work in progress because I will be updating it when it's needed.
 
     So best to set a notification for updates for this page.
+
+    Or use one of the 2 automation tools.
+
+    If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
+    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 ------
