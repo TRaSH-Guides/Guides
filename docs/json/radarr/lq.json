@@ -2,6 +2,7 @@
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
   "trash_score": "-10000",
   "name": "LQ",
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "[BLOCK1]",
