@@ -180,7 +180,7 @@ The `.env` we downloaded holds the variables/information you need to change so e
 
 #### Pullio - Auto update docker-compose the correct way
 
-For Pullio you will need to create in your task scheduler a "triggered task" that runs for example at 4am at night with root priveledges.
+For Pullio you will need to create in your task scheduler a "triggered task" that runs for example at 4am at night with root privileges.
 
 Add the following 2 lines to your triggered task
 
@@ -188,6 +188,8 @@ Add the following 2 lines to your triggered task
    cd /volume1/docker/appdata
    /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
 ```
+
+More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -217,7 +219,7 @@ cd /volume1/docker/appdata
 sudo docker-compose up -d
 ```
 
-You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on pastebin and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
+You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on [0bin](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
 
 ------
 
