@@ -14,7 +14,7 @@
 
 !!! attention
 
-    To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of **ONE** share with subfolders.
+    To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of <u>**ONE**</u> share with subfolders.
 
 For this example I'm using my own setup and preferred share `data`.
 

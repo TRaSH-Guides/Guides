@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-aXXo|-CrEwSaDe|-DEViSE|-FaNGDiNG0|-FLAWL3SS|-FZHD|-FRDS|-HDTime|-IMAGINE|-iPlanet|-KingBen|-KiNGDOM|-KLAXXON|-Leffe|-LTRG|-mHD|-mSD|-NhaNc3|-nHD|-nikt0|-nSD|-PrisM|-PRODJi|-Rx|-RDN|-SANTi|-ViSION|-WAF|-WHiiZz|-x0r|\\bYIFY\\b|\\bYTS\\b|-STUTTERSHIT"
+        "value": "\\b(aXXo|CrEwSaDe|DNL|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-CDDHD|-EuReKA|-DDR|-DNL|-BARC0DE"
+        "value": "\\b(aXXo|CrEwSaDe|DNL|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bRARBG\\b|\\bFGT\\b|-BReWeRS|-Grym|-LiGaS|-Zeus|-Tigole"
+        "value": "\\b(x0r|nikt0|FGT|d3g|MeGusta|YIFY|YTS|tigole|C4K|RARBG|4K4U)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-beAst|\\bCHD\\b|-HDWinG|\\bMTeam\\b|-MySiLU|-WiKi"
+        "value": "\\b(-AROMA|aXXo|CrEwSaDe|d3g|DNL|FGT|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|MeGusta|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
       }
     },
     {
@@ -46,7 +46,25 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bRifftrax\\b|\\bRU4HD\\b"
+        "value": "\\b(RARBG|FGT|STUTTERSHIT|LiGaS|-DDR|-Zeus|Tigole|TBS)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK6]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-beAst|CHD|HDWinG|MTeam|MySiLU|-WiKi)\\b"
+      }
+    },
+    {
+      "name": "RiffTrax",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Rifftrax|RU4HD)\\b"
       }
     }
   ]
