@@ -185,7 +185,6 @@ For Pullio you will need to create in your task scheduler a "triggered task" tha
 Add the following 2 lines to your triggered task
 
 ```bash
-   cd /volume1/docker/appdata
    /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
 ```
 
