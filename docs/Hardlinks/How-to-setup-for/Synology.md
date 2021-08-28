@@ -174,11 +174,18 @@ The `.env` we downloaded holds the variables/information you need to change so e
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path then in this guide used)
 1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
 1. TZ (Change to your timezone)
-1. Create a task scheduler for Pullio, so your containers stay up to date.
+1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
 ------
 
 #### Pullio - Auto update docker-compose the correct way
+
+First you need to download Pullio
+
+```bash
+   sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
+   sudo chmod +x /usr/local/bin/pullio
+```
 
 For Pullio you will need to create in your task scheduler a "triggered task" that runs for example at 4am at night with root privileges.
 
