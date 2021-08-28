@@ -1,6 +1,6 @@
 # Plex Tips
 
-So, what are the best Plex settings ?
+So, what are the best Plex Media Server settings ?
 
 This is something that can't be really answered because it depends on the use case and your personal preference.
 
@@ -10,11 +10,11 @@ This is something that can't be really answered because it depends on the use ca
 !!! attention
     Some settings are only visible for Plex Pass holders.
 
-All the changes you will need to do on your Plex server.
+All the changes you will need to do on your Plex Media Server.
 
 ![!Plex App](images/plex-settings-icon.png)
 
-!!! tip "Why didn't you cover option .... ?"
+!!! info "Why didn't you cover option .... ?"
      I will only cover settings that I think might be interesting or are personal preference, if you like me to cover some other settings, please contact me on [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
 ## Settings
@@ -39,7 +39,9 @@ All the changes you will need to do on your Plex server.
 
 ### Agents
 
-Not needed if you use the new Plex agents, The new agent settings are now “per library” managed.
+This can be ignored if you use the new Plex agents,
+
+The new agent settings are now “per library” managed.
 
 ------
 
@@ -66,7 +68,7 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
         *Do you need a extra scan for your library to recognize new media?*
 
 1. Library scan interval if you enable option `4`
-1. With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an indicator superimposed over the item’s poster when the item is removed.
+1. With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.
 
     !!! check ""
         **Suggested: `Disabled`**
@@ -78,7 +80,7 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
     !!! check ""
         **Suggested: `Disabled`**
 
-        *In my opinion Plex shouldn't touch your media files (I've also Plex Read Only access to the media library). Use Sonarr/Radarr to manage your media library.*
+        *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)*
 
 ![!Plex Settings - Library](images/settings-library-part2.png)
 
@@ -91,7 +93,7 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
 
 1. This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
 
-    !!! attention
+    !!! danger "ATTENTION"
         Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
 
     !!! check ""
@@ -201,8 +203,8 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
 
         *Default Linux only allocates a max of 50% of total system RAM to any ram directories (ie. /tmp, /dev/shm, etc.)*
 
-    !!! Warning
-        You should not specify a location that resides on a network share/disk.
+    !!! danger "WARNING"
+        :bangbang: **YOU SHOULD NOT SPECIFY A LOCATION THAT RESIDES ON A NETWORK SHARE/DISK.** :bangbang:
 
 1. This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.
 
@@ -234,21 +236,20 @@ Not needed if you use the new Plex agents, The new agent settings are now “per
 
 Here you will find your libraries you've added to your Plex Media Server.
 
-Examples:
+??? example "Examples - [CLICK TO EXPAND]"
 
-- Movies `(/data/media/movies)`
-- Movies-4K/Movies-UHD `(/data/media/movies4k)`/`(/data/media/movies-uhd)`
-- Movies-Kids `(/data/media/movies-kids)`
-- Movies-Anime `(/data/media/movies-anime)`
-- TV `(/data/media/tv)`
-- TV-4k/TV-UHD `(/data/media/tv-4k)`/`(/data/media/tv-uhd)`
-- TV-Kids `(/data/media/tv-kids)`
-- TV-Anime `(/data/media/tv-anime)`
-- Anime `(/data/media/anime)`
-- etc
+    - Movies `(/data/media/movies)`
+    - Movies-4K/Movies-UHD `(/data/media/movies4k)`/`(/data/media/movies-uhd)`
+    - Movies-Kids `(/data/media/movies-kids)`
+    - Movies-Anime `(/data/media/movies-anime)`
+    - TV `(/data/media/tv)`
+    - TV-4k/TV-UHD `(/data/media/tv-4k)`/`(/data/media/tv-uhd)`
+    - TV-Kids `(/data/media/tv-kids)`
+    - TV-Anime `(/data/media/tv-anime)`
+    - Anime `(/data/media/anime)`
+    - etc
 
-!!! tip ""
-    I will only cover the libraries settings for Movies and TV shows
+!!! info "I will only cover the libraries settings for Movies and TV shows"
 
 #### Movies
 
@@ -291,7 +292,7 @@ Examples:
 
 1. This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
 
-    !!! attention
+    !!! danger "ATTENTION"
         Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
 
     !!! check ""
@@ -343,7 +344,7 @@ Examples:
 
 1. This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
 
-    !!! attention
+    !!! danger "ATTENTION"
         Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
 
     !!! check ""
@@ -370,6 +371,7 @@ Examples:
 
 For the information of this guide, I made use of the following sources
 
-- Several Discord servers
-- Own experience
+- Information I gathered from Several Discord servers
 - [Plex Support Articles](https://support.plex.tv/articles/){:target="_blank" rel="noopener noreferrer"}
+- Extra Information gathered from a Plex employee
+- Own experience
