@@ -87,7 +87,7 @@ We're going to do this in Putty or a similar program.
 ```bash
 sudo mkdir /volume1/docker/appdata
 cd /volume1/docker/appdata
-sudo mkdir radarr sonarr bazarr plex tautulli
+sudo mkdir radarr sonarr bazarr plex tautulli pullio
 # The following is needed for plex transcode location
 sudo mkdir /tmp/plex
 ```
@@ -118,6 +118,7 @@ docker
     ├── sonarr
     ├── bazarr
     ├── plex
+    ├── pullio
     └── tautulli
 ```
 
@@ -142,7 +143,6 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
     - Bazarr (Subtitle searcher and downloaded)
     - Plex
     - Tautulli
-    - Watchtower (automatic docker container updater at 4am)
 
     What's not included.
 
@@ -167,12 +167,27 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 The `.env` we downloaded holds the variables/information you need to change so everything works (I added also a description in the `.env` file)
 
+!!! info ""
+    The `.env` holds more variables/information for other containers
+
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path then in this guide used)
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path then in this guide used)
 1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
 1. TZ (Change to your timezone)
+1. Create a task scheduler for Pullio, so your containers stay up to date.
 
-It holds more variables/information for other containers but they are described in the `.env`
+------
+
+#### Pullio - Auto update docker-compose the correct way
+
+For Pullio you will need to create in your task scheduler a "triggered task" that runs for example at 4am at night with root priveledges.
+
+Add the following 2 lines to your triggered task
+
+```bash
+   cd /volume1/docker/appdata
+   /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
+```
 
 ------
 
