@@ -1,11 +1,11 @@
-# Plex Media Server Tips
+# Suggested Plex Media Server Settings
 
 So, what are the best Plex Media Server settings ?
 
 This is something that can't be really answered because it depends on the use case and your personal preference.
 
 !!! danger ""
-    Here I will give some suggestions and try to explain why I use these settings, use it to your own liking and keep in mind it's only a pointer I'm no Plex Pro in anyway :bangbang:
+    Here I will provide some suggestions and try to explain why I recommend to use these settings, use it to your own liking and keep in mind it's only a pointer I'm no Plex Pro in anyway :bangbang:
 
 !!! attention
     Some settings are only visible for Plex Pass holders.
