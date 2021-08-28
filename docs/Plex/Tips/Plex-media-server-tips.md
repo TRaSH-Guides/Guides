@@ -1,4 +1,4 @@
-# Plex Tips
+# Plex Media Server Tips
 
 So, what are the best Plex Media Server settings ?
 
