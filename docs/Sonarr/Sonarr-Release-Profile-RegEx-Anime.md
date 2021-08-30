@@ -269,7 +269,7 @@ Add this to your Preferred with a score of **[100]**
 Add this to your Preferred with a score of **[15]**
 
 ```bash
-/\b(WEB[-_. ]?DL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s/\sWEB\s/\s\b))/ix
+/\b(WEB[-_. ]?DL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s/\\sWEB\s/\\s\b))/ix
 ```
 
 ---
