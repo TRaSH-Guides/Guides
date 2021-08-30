@@ -261,7 +261,7 @@ Add this to your Preferred with a score of **[100]**
     We are adding this as **100** so that any unknown `Blu-Ray` can jump tiers inside the Subs categories but not interfere with any tiers above.
 
 ```bash
-/\b(?:(BluRay|Blu-Ray|BDMux|BD(?!$))|(BDRip)|(BRRip))(?:\b|$|[ .])/ix
+/\b(?:(Blu-?Ray|BDMux|BD(?!$))|(B[DR]Rip))(?:\b|$|[ .])/ix
 ```
 
 ---
@@ -269,7 +269,7 @@ Add this to your Preferred with a score of **[100]**
 Add this to your Preferred with a score of **[15]**
 
 ```bash
-/\b(WEB[-_. ]DL|WEBDL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s\/\sWEB\s\/\s\b))/ix
+/\b(WEB[-_. ]?DL|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:WEB-DLMux|\b\s/\sWEB\s/\s\b))/ix
 ```
 
 ---
@@ -277,7 +277,7 @@ Add this to your Preferred with a score of **[15]**
 Add this to your Preferred with a score of **[10]**
 
 ```bash
-/(WebRip|Web-Rip|WEBMux)/ix
+/(Web-?Rip|WEBMux)/ix
 ```
 
 ---
