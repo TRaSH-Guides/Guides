@@ -568,7 +568,7 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(AnimeKaizoku|Kaizoku|\bCBB\b|phazer11)/i
+/(AnimeKaizoku|\[Kaizoku\]|-Kaizoku\b|\bCBB\b|phazer11)/i
 ```
 
 ```bash
