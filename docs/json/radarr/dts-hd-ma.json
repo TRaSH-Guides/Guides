@@ -90,7 +90,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "dts.?(es|(hd.?)?(hr|hi))"
+              "value": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))"
           }
       }
   ]
