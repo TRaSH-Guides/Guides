@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bFraMeSToR\\b"
+        "value": "\\b(FraMeSToR|HQMUX)\\b"
       }
     }
   ]
