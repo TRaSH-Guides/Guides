@@ -8,7 +8,7 @@
       "negate": false,
       "required": true,
       "fields": {
-          "value": "MPEG-?2"
+          "value": "MPEG[-.]?2"
       }
   }]
 }
