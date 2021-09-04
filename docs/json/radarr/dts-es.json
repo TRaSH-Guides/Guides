@@ -9,7 +9,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "dts.?(es|(hd.?)?(hr|hi))"
+              "value": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))"
           }
       },
       {
@@ -90,7 +90,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "[^0-9]6\\.[0-1]"
+              "value": "[^0-9]6[ .][0-1]"
           }
       }
   ]
