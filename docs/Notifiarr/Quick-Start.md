@@ -125,7 +125,7 @@ You will get a screen that looks like the following screenshot.
 1. Click on `Continue` to approve.
 
 !!! note
-    Check [Discord Permissions](https://notifiarr.wiki/en/Website/Discord/Permissions)){:target="_blank" rel="noopener noreferrer"} for information which permissions the bot needs.
+    Check [Discord Permissions](https://notifiarr.wiki/en/Website/Discord/Permissions){:target="_blank" rel="noopener noreferrer"} for information which permissions the bot needs.
 
 #### Reactions
 
