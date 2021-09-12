@@ -101,7 +101,7 @@ Open your User Settings -> Appearance -> Enable Developer Mode.
 
  Right click on your server name and select "Copy ID"
 
-??? example "Example right click"
+??? example "Example right click - [CLICK TO EXPAND]"
     ![!dn-discord-copyid](images/dn-discord-copyid.png)
 
 Paste the server ID in box `[1]`
@@ -161,7 +161,7 @@ After you've added them to your Discord Server it's time to get the ID's from yo
 \:emoji_name:
 ```
 
-??? example "Example"
+??? example "Example - [CLICK TO EXPAND]"
     ![!dn-emoji-example](images/dn-emoji-example.png)
 
     What results in to.
@@ -183,7 +183,7 @@ Do this for all the other boxes also including your Trackers/Indexers.
 1. Paste here the the emoji ID.
 1. The actual indexer name you're using in Sonarr/Radarr.
 
-??? example "Example"
+??? example "Example - [CLICK TO EXPAND]"
 
     ![!dn-indexer-torznab](images/dn-indexer-torznab.png)
 
@@ -210,7 +210,7 @@ When you click on the cogwheel of the enabled Integration you will see on the to
 
 It will show you a short description where and how to add what.
 
-??? example
+??? example "Example" - [CLICK TO EXPAND]
 
     ![!dn-radarr-integration-instructions](images/dn-radarr-integration-instructions.png)
 
@@ -220,7 +220,7 @@ Radarr, Readarr and Lidarr supports Notifiarr natively so that's an easy one to 
 
 `Settings` => `Connect` => click on the ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) `plus` icon and select `Notifiarr` add your API key and you're done.
 
-??? example "Radarr Example"
+??? example "Radarr Example - [CLICK TO EXPAND]"
     In Radarr go to `Settings` => `Connect` => Click on the ![dn-arr-add-plus](images/dn-arr-add-plus.png) `plus` icon and select `notifiarr`.
 
     ![!dn-arr-add-notification](images/dn-arr-add-notification.png)
@@ -254,7 +254,7 @@ Add the following info:
 
 Click **Save**
 
-??? example "Sonarr Example"
+??? example "Sonarr Example - [CLICK TO EXPAND]"
 
     `Settings` => `Connect` > Click on the ![dn-arr-add-plus.png](images/dn-arr-add-plus.png) `plus` icon and select `Webhook`.
 
@@ -285,7 +285,7 @@ Add the JSON URL that you copy/pasted from the integrations page.
 
 Scroll up and save
 
-??? example "Bazarr Example"
+??? example "Bazarr Example - [CLICK TO EXPAND]"
 
     `Settings` => `Notifications` => and select`JSON`
 
@@ -312,7 +312,7 @@ Scroll up and save
 
 `Settings` => `Webhooks` => click on `ADD WEBHOOK` and add the URL that you can copy/paste from the integrations page and click on `SAVE CHANGES`
 
-??? example "Plex Example"
+??? example "Plex Example - [CLICK TO EXPAND]"
 
     `Settings` => `Webhooks` => click on `ADD WEBHOOK`
 
