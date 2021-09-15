@@ -16,7 +16,7 @@
 
 Login to your [Client Area](https://torguard.net/clientarea.php){:target="_blank" rel="noopener noreferrer"}.
 
-??? check "Example"
+??? check "Example - [CLICK TO EXPAND]"
     ![!Client Area Login](images/torguard/client-area-login.png)
 
 ### Create a user account
@@ -26,12 +26,12 @@ This account will be used for authentication with your VPN Torrent client.
 
 `Services` > `My Services` > `Manage` > `Manage Credentials`
 
-??? Check "Example"
+??? Check "Example - [CLICK TO EXPAND]"
     ![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
 
 Create a new username and choose a secure password or create a random username and password.
 
-??? Check "Example"
+??? Check "Example - [CLICK TO EXPAND]"
     ![!Create User Account](images/torguard/create_user_account.png)
 
 ------
@@ -42,7 +42,7 @@ Now it's time to get the IP of your VPN server you're going to use from the [Glo
 
 `Servers` > `Global VPN Network`
 
-??? Check "Example"
+??? Check "Example - [CLICK TO EXPAND]"
     ![!Servers > Global VPN Network](images/torguard/servers-globalvpnnetwork.png)
 
 ### Global VPN Network
@@ -53,6 +53,9 @@ For the best speed it's recommended to choose the one nearest to your location.
 Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
+
+!!! important
+    Also check if your choosen server supports OpenVPN or Wireguard depending what you want to use.
 
 ### Get your VPN IP
 
@@ -65,7 +68,7 @@ Open a cmd window or something equal and type:
 You will then get the IP of the server.
 Remember that for later use.
 
-??? Check "Example"
+??? Check "Example - [CLICK TO EXPAND]"
     ![!ping](images/torguard/cmd-ping.png)
 
 ------
@@ -83,7 +86,7 @@ Then click on `Manage` and select `Request Port Forward`.
 
 `Services` > `My Services` > `Manage` > `Request Port Forward`
 
-??? Check "Example"
+??? Check "Example - [CLICK TO EXPAND]"
     ![!Request Port Forward](images/torguard/req_port_fwd.png)
 
 ### VPN Tunnel Type
@@ -116,7 +119,7 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Request Port Forward
 
-??? example "WireGuard Request Port Forward"
+??? example "WireGuard Request Port Forward - [CLICK TO EXPAND]"
 
     ![!Request New Port Forward WireGuard](images/torguard/request-new-pfw-wireguard.png)
 
@@ -152,7 +155,7 @@ From your Client Area go to your [Config Generator](https://torguard.net/tgconf.
 
 `Tools` > `Config Generator`
 
-??? Check "Example Select Tools > Config Generator"
+??? Check "Example Select Tools > Config Generator - [CLICK TO EXPAND]"
     ![!Tools - Config Generator](images/torguard/tools-config-generator.png)
 
 ### Config Generator
@@ -161,7 +164,7 @@ Choose your preferred VPN Tunnel type.
 
 #### OVPN Config Generator
 
-??? example "OVPN Config Generator"
+??? example "OVPN Config Generator - [CLICK TO EXPAND]"
 
     ![!OVPN Config Generator](images/torguard/config-generator-ovpn.png)
 
@@ -181,7 +184,7 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Config Generator
 
-??? example "WireGuard Config Generator"
+??? example "WireGuard Config Generator - [CLICK TO EXPAND]"
 
     ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
 

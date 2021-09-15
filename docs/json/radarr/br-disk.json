@@ -1,16 +1,25 @@
 {
   "trash_id": "ed38b889b31be83fda192888e2286d83",
   "trash_score": "-10000",
-  "name": "BR-DISK",
+  "name": "!BR-DISK",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "Video coding standards",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-        "value": "avc|vc[-.]?1|hevc|MPEG[-.]?2"
+        "value": "\\b(avc|vc[-_. ]?1|hevc|MPEG[-_. ]?2)\\b"
+      }
+    },
+    {
+      "name": "BRDISK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(COMPLETE|ISO|BDISO|BD25|BD50|BR.?DISK)\\b"
       }
     },
     {
@@ -41,12 +50,12 @@
       }
     },
     {
-      "name": "x265",
+      "name": "x264/x265",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": "[xh][ .]?265"
+        "value": "[xh][ .]?26[45]"
       }
     },
     {
