@@ -9,4 +9,4 @@ mkdocs-minify-plugin==0.4.1
 mkdocs-redirects==1.0.3
 mkdocs==1.2.2
 pygments==2.10.0
-pymdown-extensions==8.2
+pymdown-extensions==9.0
