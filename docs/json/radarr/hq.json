@@ -32,7 +32,7 @@
       }
     },
     {
-      "name": "WEBDL",
+      "name": "Not WEBDL",
       "implementation": "SourceSpecification",
       "negate": true,
       "required": true,
@@ -41,7 +41,7 @@
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "Not WEBRIP",
       "implementation": "SourceSpecification",
       "negate": true,
       "required": true,
@@ -50,7 +50,7 @@
       }
     },
     {
-      "name": "REMUX",
+      "name": "Not REMUX",
       "implementation": "QualityModifierSpecification",
       "negate": true,
       "required": true,
