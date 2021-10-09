@@ -442,6 +442,16 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
+/\b(\.WEB\.)\b/i
+```
+
+#### Optional Ignore scene releases
+
+??? NOTE "WHY ? - [CLICK TO EXPAND]"
+
+    If you don't want to download so called scene releases.
+
+```bash
 /\b(-scene)\b/i
 ```
 
