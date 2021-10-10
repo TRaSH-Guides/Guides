@@ -36,6 +36,9 @@ To create a new share:
 
 `Control Panel > Shared Folder > click Create > choose Create Shared Folder`
 
+![!create_share](images/create_share.png)
+
+
 Name this shared folder `data`. You can disable the trash can. Click next until you are done.
 
 
