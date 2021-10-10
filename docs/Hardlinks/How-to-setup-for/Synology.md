@@ -51,6 +51,8 @@ Go to `Control Panel > User & Group`
 
 In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
 
+![!adduser](images/adduser.png)
+
 Fill out the rest of the information, generate a password or type your own.
 
 Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click next.
@@ -59,7 +61,11 @@ In the next screen you will be able to select to which Shares this user will hav
 
 Now only select Read/Write on the shares `docker` and `data`.
 
+![!adduser_2](images/adduser_2.png)
+
 Click next until you reach `Assign application permissions`, deny all. Continue to click next until you are finished.
+
+![!adduser_3](images/adduser_3.png)
 
 You have now created a new user. We are going to need this user's PUID/PGID.
 
