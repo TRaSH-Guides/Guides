@@ -87,9 +87,9 @@ Remember these values for later use.
 
     To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
 
-For this example we're going to make use of a share called `data`.
+For this example we're going to make use of the share called `data`.
 
-On the host (Synology) you will need to add `/volume1/` before it. So `/volume1/data`
+On the host (Synology) terminal you will need to add `/volume1/` before it. So `/volume1/data`
 
 The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `library` folder has nicely named `tv`, `movies` and `music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
 
