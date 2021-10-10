@@ -48,6 +48,7 @@ In order for the Docker container to access the shares on the Synology, we need 
 For this, we are going to create a new user that only has access to the share(s) that we use for this guide.
 
 Go to `Control Panel > User & Group`
+
 In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
 
 Fill out the rest of the information, generate a password or type your own.
