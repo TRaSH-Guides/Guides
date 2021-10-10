@@ -28,7 +28,7 @@ Enter the login information of your main Synology user account.
 
 ## Create a new share
 
-For this guide, we will use a new share named `data` (lowercase).
+We will use a new share named `data` (lowercase).
 
 Later in this guide, we will fill this share with subfolders.
 
