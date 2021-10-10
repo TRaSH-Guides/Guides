@@ -47,7 +47,7 @@ For this, we are going to create a new user that only has access to the share(s)
 Go to `Control Panel > User & Group`
 In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
 
-Fill out the rest of the information, generate a password and type your own.
+Fill out the rest of the information, generate a password or type your own.
 
 Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click next.
 
