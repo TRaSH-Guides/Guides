@@ -2,45 +2,81 @@
 
 !!! note
 
-    Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose.
+    Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose through a terminal.
 
-    This works like 10x faster then the GUI and after adding it shows up in the GUI.
+    This is faster then the GUI and after installing, it shows up in the Docker GUI.
 
     Thnx to faxity for the initial compose that I used to create the Synology Guide.
 
 We need to get some information that we need later to setup the docker-compose file.
 
-## PUID and PGID
+## SSH
 
-In order for the Docker container to access the shares on the Synology,
-we need to give it the same permissions as your main user who has access to those shares.
-For this we need to figure out the PUID and the PGID of the user having access to your shares.
+For this guide, we are mostly going to use the terminal. Some parts will need the Syno GUI.
+To enable terminal, we need to enable SSH in the Synology Settings.
 
-You will need to SSH into your Synology.
-If you didn't already enable it you need to do that first
-
+`Control Panel > Terminal & SNMP > Enable SSH service`
 ![!synology-control-panel](images/synology-control-panel.png)
 
-Then use a program like Putty and SSH to your Synology.
+Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
 
 Login if you get a popup asking if you want to trust the key,
 Just press `OK` or `ACCEPT`
 
 Enter the login information of your main Synology user account.
 
+
+## Create a new share
+
+For this guide, we will use a new share named `data` (lowercase).
+
+Later in this guide, we will fill this share with subfolders.
+
+To create a new share:
+
+`Control Panel > Shared Folder > click Create > choose Create Shared Folder`
+
+Name this shared folder `data`. You can disable the trash can. Click next until you are done.
+
+
+## PUID and PGID
+
+In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGUID).
+For this, we are going to create a new user that only has access to the share(s) that we use for this guide.
+
+Go to `Control Panel > User & Group`
+In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
+
+Fill out the rest of the information, generate a password and type your own.
+
+Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click next.
+
+In the next screen you will be able to select to which Shares this user will have access to, click `No Access` on the top, this will deny all access.
+
+Now only select Read/Write on the shares `docker` and `data`.
+
+Click next until you reach `Assign application permissions`, deny all. Continue to click next until you are finished.
+
+You have now created a new user. We are going to need this user's PUID/PGID.
+
+Go into your terminal app, login to your synology ssh.
+
+
+Once logged in type `id $user`. Change $user to the newly created username `docker`.
+
 ![!synology-id](images/synology-id.png)
 
-Once logged in type `id`.
-This will show your UID (aka PUID).
+This will show you the UID (aka PUID).
 Which in this screenshot is `1026` for the administrator
 and the GID (aka PGID) which is `100` for the users group.
 Remember these values for later use.
 
 !!! note
 
-    Yes we know it's not recommended to use the admin account but if you already know this then you wouldn't need to read this ;)
+    It is not recommended to use your admin/main user account. That is why we just created a new user.
 
 ------
+
 
 ## Folder Structure
 
@@ -52,7 +88,7 @@ For this example we're going to make use of a share called `data`.
 
 On the host (Synology) you will need to add `/volume1/` before it. So `/volume1/data`
 
-The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
+The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `library` folder has nicely named `tv`, `movies` and `music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
 
 These subfolders you need to create your self.
 
@@ -68,7 +104,7 @@ data
 │  ├── movies
 │  ├── music
 │  └── tv
-└── media
+└── library
     ├── movies
     ├── music
     └── tv
@@ -91,6 +127,8 @@ sudo mkdir radarr sonarr bazarr plex tautulli pullio
 # The following is needed for plex transcode location
 sudo mkdir /tmp/plex
 ```
+
+You can add your own sub folders for your download client(s) using this command.
 
 ??? bug "plex transcode location `/tmp/plex`  - [CLICK TO EXPAND]"
     The extra created `/tmp/plex` folder for plex's transcode location won't survive a reboot.
@@ -119,7 +157,8 @@ docker
     ├── bazarr
     ├── plex
     ├── pullio
-    └── tautulli
+    ├── tautulli
+    └── (your download client, ie nzbget, sabnzbd, qbittorrent)
 ```
 
 ------
