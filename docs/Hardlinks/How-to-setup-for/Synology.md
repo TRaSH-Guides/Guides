@@ -10,22 +10,6 @@
 
 We need to get some information that we need later to setup the docker-compose file.
 
-## SSH
-
-For this guide, we are mostly going to use the terminal. Some parts will need the Syno GUI.
-To enable terminal, we need to enable SSH in the Synology Settings.
-
-`Control Panel > Terminal & SNMP > Enable SSH service`
-![!synology-control-panel](images/synology-control-panel.png)
-
-Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
-
-Login if you get a popup asking if you want to trust the key,
-Just press `OK` or `ACCEPT`
-
-Enter the login information of your main Synology user account.
-
-
 ## Create a new share
 
 We will use a new share named `data` (lowercase).
@@ -38,13 +22,10 @@ To create a new share:
 
 ![!create_share](images/create_share.png)
 
-
 Name this shared folder `data`. You can disable the trash can. Click next until you are done.
 
+## Create a user
 
-## PUID and PGID
-
-In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGUID).
 For this, we are going to create a new user that only has access to the share(s) that we use for this guide.
 
 Go to `Control Panel > User & Group`
@@ -69,17 +50,35 @@ Click next until you reach `Assign application permissions`, deny all. Continue 
 
 ![!adduser_3](images/adduser_3.PNG)
 
-You have now created a new user. We are going to need this user's PUID/PGID.
+## SSH
+
+For this guide, we are mostly going to use the terminal. Some parts will need the Syno GUI.
+To enable terminal, we need to enable SSH in the Synology Settings.
+
+`Control Panel > Terminal & SNMP > Enable SSH service`
+![!synology-control-panel](images/synology-control-panel.png)
+
+Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
+
+Login if you get a popup asking if you want to trust the key,
+Just press `OK` or `ACCEPT`
+
+Enter the login information of your main Synology user account.
+
+### PUID and PGID
+
+In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID).
+
+After you created a new user you will need to get the user's PUID/PGID.
 
 Go into your terminal app, login to your synology ssh.
-
 
 Once logged in type `id $user`. Change $user to the newly created username `docker`.
 
 ![!synology-id](images/synology-id.png)
 
 This will show you the UID (aka PUID).
-Which in this screenshot is `1026` for the administrator
+Which in this screenshot is `1026` for the docker user
 and the GID (aka PGID) which is `100` for the users group.
 Remember these values for later use.
 
@@ -88,7 +87,6 @@ Remember these values for later use.
     It is not recommended to use your admin/main user account. That is why we just created a new user.
 
 ------
-
 
 ## Folder Structure
 
@@ -116,10 +114,10 @@ data
 │  ├── movies
 │  ├── music
 │  └── tv
-└── library
-    ├── movies
-    ├── music
-    └── tv
+└── media
+   ├── movies
+   ├── music
+   └── tv
 ```
 
 --8<-- "includes/hardlinks/breakdown-folder-structure.md"
