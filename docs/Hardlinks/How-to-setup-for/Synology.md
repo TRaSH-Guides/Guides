@@ -140,9 +140,7 @@ These `{appname}` sub folders you need to create your self. (*This is a limitati
 We're going to do this in Putty or a similar program.
 
 ```bash
-sudo mkdir /volume1/docker/appdata
-cd /volume1/docker/appdata
-sudo mkdir radarr sonarr bazarr plex pullio
+sudo mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
 ```
 
 You can add your own sub folders for your download client(s) using the command above.
