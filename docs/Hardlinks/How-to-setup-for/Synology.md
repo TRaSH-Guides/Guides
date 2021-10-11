@@ -8,9 +8,17 @@
 
     Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
+    And a very big thanks to [Bokkoman](https://github.com/bokkoman){:target="_blank" rel="noopener noreferrer"} and [BZwart](https://github.com/BaukeZwart){:target="_blank" rel="noopener noreferrer"} that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.
+
+## Install Docker
+
 You need to install Docker from the `Package Center`. This should also create a share named `docker`, check File Station if it is present.
 
-## Create a new share
+## Create the main share
+
+!!! attention
+
+    To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
 
 We will use a new share named `data` (lowercase) for all your library media.
 
@@ -18,7 +26,7 @@ Later in this guide, we will fill this share with subfolders.
 
 To create a new share:
 
-`Control Panel > Shared Folder > click Create > choose Create Shared Folder`
+`Control Panel` > `Shared Folder` > click `Create` > choose `Create Shared Folder`
 
 ![!create_share](images/create_share.png)
 
@@ -28,7 +36,7 @@ Name this shared folder `data`. You can disable the trash can. Click next until 
 
 For this, we are going to create a new user that only has access to the share(s) that we use for this guide.
 
-Go to `Control Panel > User & Group`
+Go to `Control Panel` > `User & Group`
 
 In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
 
@@ -36,26 +44,32 @@ In the `User` section, create a new user. Name it whatever you like, but for thi
 
 Fill out the rest of the information, generate a password or type your own.
 
-Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click next.
+Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click `Next`.
 
-In the next screen you will be able to select to which Shares this user will have access to, click `No Access` on the top, this will deny all access.
+### Assign shared folder permissions
 
-Now only select Read/Write on the shares `docker` and `data`.
+In this screen you will be able to select which Shares this user will have access to, click `No Access` on the top, this will deny all access.
 
-![!adduser_2](images/adduser_2.PNG)<br/>
-<br/>
-<br/>
+Now only select `Read/Write` on the shares `docker` and `data`.
 
-Click next until you reach `Assign application permissions`, deny all. Continue to click next until you are finished.
+![!Assign shared folders permissions](images/adduser_2.PNG)
 
-![!adduser_3](images/adduser_3.PNG)
+Click `Next` until you reach `Assign application permissions`
+
+### Assign application permissions
+
+In this screen you will be able to select which application this user will have access to, Check `Deny` for all applications.
+
+![!Assign application permissions](images/adduser_3.PNG)
+
+Continue to click `Next` until you are finished.
 
 ## SSH
 
 You are mostly going to use the terminal. Some parts will need the Synology web GUI.
 To enable terminal, you need to enable SSH in the Synology Settings.
 
-`Control Panel > Terminal & SNMP > Enable SSH service`
+`Control Panel` > `Terminal & SNMP` > `Enable SSH service`
 
 ![!synology-control-panel](images/synology-ssh.png)
 
@@ -81,17 +95,13 @@ Which in this screenshot is `1035` for the docker user
 and the GID (aka PGID) which is `100` for the users group.
 Remember these values for later use.
 
-!!! note
+!!! attention
 
-    It is not recommended to use your admin/main user account. That is why we just created a new user.
+    It is not recommended to use (anymore) your admin/main user account. That is why we just created a new user.
 
 ------
 
 ## Folder Structure
-
-!!! attention
-
-    To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
 
 For this example we're going to make use of the share called `data`.
 
@@ -160,9 +170,10 @@ docker
 
 Now we are ready to move to the installation of containers.
 
-For this, we need two files;
-1. docker-compose.yml
-2. .env
+For this, we need two files:
+
+1. `docker-compose.yml`
+1. `.env`
 
 We will start with downloading the `docker-compose.yml` file
 
@@ -183,7 +194,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
     What's not included.
 
-    I didn't add a download client to it, because it depends on what you prefer (usenet/torren) and which client you prefer, so I created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
+    I didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer, so I created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
 
     The only thing you need to do is copy/paste what's inside the `.yml` file in to the main `docker-compose.yml`, the template also has the command what you need to use to create the [appdata](#appdata) folder that we explained earlier.
 
@@ -205,13 +216,13 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
 !!! info ""
-    The `.env` holds more variables/information for other containers.
+    The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
 
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
-2. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
-3. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
-4. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"}
-5. Install and Create a task scheduler for Pullio, so your containers stay up to date.
+1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
+1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid)
+1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"}
+1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
 ------
 
