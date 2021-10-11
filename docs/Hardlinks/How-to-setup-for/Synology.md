@@ -8,11 +8,11 @@
 
     Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
-We need to get some information that we need later to setup the docker-compose file.
+You need to install Docker from the `Package Center`. This should also create a share named `docker`, check File Station if it is present.
 
 ## Create a new share
 
-We will use a new share named `data` (lowercase).
+We will use a new share named `data` (lowercase) for all your library media.
 
 Later in this guide, we will fill this share with subfolders.
 
@@ -52,24 +52,22 @@ Click next until you reach `Assign application permissions`, deny all. Continue 
 
 ## SSH
 
-For this guide, we are mostly going to use the terminal. Some parts will need the Syno GUI.
-To enable terminal, we need to enable SSH in the Synology Settings.
+You are mostly going to use the terminal. Some parts will need the Synology web GUI.
+To enable terminal, you need to enable SSH in the Synology Settings.
 
 `Control Panel > Terminal & SNMP > Enable SSH service`
 ![!synology-control-panel](images/synology-control-panel.png)
 
 Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
 
-Login if you get a popup asking if you want to trust the key,
+If you get a popup asking if you want to trust the key,
 Just press `OK` or `ACCEPT`
 
 Enter the login information of your main Synology user account.
 
 ### PUID and PGID
 
-In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID).
-
-After you created a new user you will need to get the user's PUID/PGID.
+In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the `docker` user we just created.
 
 Go into your terminal app, login to your synology ssh.
 
@@ -78,7 +76,7 @@ Once logged in type `id $user`. Change $user to the newly created username `dock
 ![!synology-id](images/synology-id.png)
 
 This will show you the UID (aka PUID).
-Which in this screenshot is `1026` for the docker user
+Which in this screenshot is `1035` for the docker user
 and the GID (aka PGID) which is `100` for the users group.
 Remember these values for later use.
 
@@ -133,25 +131,10 @@ We're going to do this in Putty or a similar program.
 ```bash
 sudo mkdir /volume1/docker/appdata
 cd /volume1/docker/appdata
-sudo mkdir radarr sonarr bazarr plex tautulli pullio
-# The following is needed for plex transcode location
-sudo mkdir /tmp/plex
+sudo mkdir radarr sonarr bazarr plex pullio
 ```
 
-You can add your own sub folders for your download client(s) using this command.
-
-??? bug "plex transcode location `/tmp/plex`  - [CLICK TO EXPAND]"
-    The extra created `/tmp/plex` folder for plex's transcode location won't survive a reboot.
-
-    so you will need to create in your task scheduler a "triggered task" that runs on startup of the nas.
-
-    Add the following command as root: `mkdir /tmp/plex/`
-
-    ![!Create task](images/synology-create-task.png)
-
-    ![!Create task](images/synology-task-settings.png)
-
-    If you need extra help please come to [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+You can add your own sub folders for your download client(s) using the command above.
 
 So your appdata folder will look like this.
 
@@ -167,20 +150,25 @@ docker
     ├── bazarr
     ├── plex
     ├── pullio
-    ├── tautulli
-    └── (your download client, ie nzbget, sabnzbd, qbittorrent)
+    └── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
 ```
 
 ------
 
 ## Needed files
 
-First we will download the `docker-compose.yml` file
+Now we are ready to move to the installation of containers.
+
+For this, we need two files;
+1. docker-compose.yml
+2. .env
+
+We will start with downloading the `docker-compose.yml` file
 
 Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
 
 ```bash
-sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml
+sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 ```
 
 ??? question "What's included and What's not included - [CLICK TO EXPAND]"
@@ -191,11 +179,10 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
     - Sonarr
     - Bazarr (Subtitle searcher and downloaded)
     - Plex
-    - Tautulli
 
     What's not included.
 
-    I didn't add a downloader to it because it depends on what you prefer usenet/torrents and which client you prefer, so i created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that you can find in the `template` folder ready to use with the main `docker-compose.yml`.
+    I didn't add a download client to it, because it depends on what you prefer (usenet/torren) and which client you prefer, so I created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
 
     The only thing you need to do is copy/paste what's inside the `.yml` file in to the main `docker-compose.yml`, the template also has the command what you need to use to create the [appdata](#appdata) folder that we explained earlier.
 
@@ -204,7 +191,7 @@ Second we will download the `.env` file
 Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
 
 ```bash
-sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env
+sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 ```
 
 !!! attention
@@ -212,22 +199,24 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 ------
 
-### Changes you need to do
+### Changes you need to make
 
-The `.env` we downloaded holds the variables/information you need to change so everything works (I added also a description in the `.env` file)
+The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
 !!! info ""
-    The `.env` holds more variables/information for other containers
+    The `.env` holds more variables/information for other containers.
 
-1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path then in this guide used)
-1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path then in this guide used)
-1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
-1. TZ (Change to your timezone)
-1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
+1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
+2. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
+3. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
+4. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"}
+5. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
 ------
 
 #### Pullio - Auto update docker-compose the correct way
+
+Pullio allows you to automatically update your containers. And send you a notification through various means. In my setup, I use a Discord Webhook.
 
 First you need to download Pullio
 
@@ -236,9 +225,9 @@ First you need to download Pullio
    sudo chmod +x /usr/local/bin/pullio
 ```
 
-For Pullio you will need to create in your task scheduler a "triggered task" that runs for example at 4am at night with root privileges.
+For Pullio to work, you will need to create in your Task Scheduler a "triggered task" that runs for example at 4am at night with root privileges.
 
-Add the following 2 lines to your triggered task
+Add the following line to your triggered task
 
 ```bash
    /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
@@ -253,10 +242,10 @@ More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="n
 Now we need to make sure that the newly created files and folders have the correct permissions.
 
 !!! note
-    If you're using another user then `admin` then you need to change it in the commands below !!!
+    If you're using another user than `docker`, then you need to change it in the commands below !!!
 
 ```bash
-sudo chown -R admin:users /volume1/data /volume1/docker
+sudo chown -R docker:users /volume1/data /volume1/docker
 sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ```
 
@@ -265,7 +254,8 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ## Run the Docker Compose
 
 !!! important
-    make sure you deleted/removed all your existing dockers from the GUI and also remove your native installs of these applications !!!
+    make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
+    If you had previous installed apps, make a backup of their config folders.
 
 When you did all the above steps you only need to type the following in your `/volume1/docker/appdata`
 
@@ -274,7 +264,7 @@ cd /volume1/docker/appdata
 sudo docker-compose up -d
 ```
 
-You will notice that all the images will be downloaded, and after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on [0bin](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
+You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on [0bin](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
 
 ------
 
@@ -282,10 +272,10 @@ You will notice that all the images will be downloaded, and after that the conta
 
 !!! attention
 
-    If you need to do any changes only edit the `docker-compose.yml` file and activate the changes when you type `sudo docker-compose up -d` again.
+    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the command `sudo docker-compose -f /volume1/docker/appdata/docker-compose.yml up -d` again.
 
-    Any changes you do/did in the GUI will be reverted when you run the docker-compose.
+    Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
 
-    Just don't use the GUI !!!
+    Just don't use the GUI, only for information purposes !!!
 
 --8<-- "includes/hardlinks/docker-compose-commands.md"
