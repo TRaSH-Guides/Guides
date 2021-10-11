@@ -328,6 +328,6 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 
     Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){:target="_blank" rel="noopener noreferrer"} makes sure you still can get the x265 releases.
 
-## THNX
+## Thanks
 
-A big thnx to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.
+A big Thanks to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.

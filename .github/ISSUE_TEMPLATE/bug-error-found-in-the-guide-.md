@@ -7,7 +7,7 @@ assignees: TRaSH-
 
 ---
 
-** Which Guide **
+**Which Guide**
 Please add which Guide you found a Bug/Error with.
 
 **Describe the Error in the Guide**
