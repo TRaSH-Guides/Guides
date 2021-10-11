@@ -499,7 +499,7 @@ When you've done it correctly it will look something like this.
 
 This list is made by collecting information from Sonarr Discord Channel, and personal testing and a few others that helped.
 
-So I want to thnx everyone who helped to make this list possible, for privacy reasons I decided not to add the names/nick of the persons.
+So I want to Thanks everyone who helped to make this list possible, for privacy reasons I decided not to add the names/nick of the persons.
 
 If you want to be mentioned please message me on discord, including a link for proof to what part you want to be credited.
 

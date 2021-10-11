@@ -6,7 +6,7 @@
 
     This is faster then the GUI and after installing, it shows up in the Docker GUI.
 
-    Thnx to faxity for the initial compose that I used to create the Synology Guide.
+    Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
 We need to get some information that we need later to setup the docker-compose file.
 

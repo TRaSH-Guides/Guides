@@ -196,7 +196,7 @@ data
 
 !!! tip ""
 
-    Big Thnx to IBRACORP for noticing this Guide and creating a Video covering this unraid section.
+    Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unraid section.
 
     The reason why I added the video to the end is because I want the user to actually learn and understand why it's recommended to use this folder structure, before going straight to the YouTube video.
 
