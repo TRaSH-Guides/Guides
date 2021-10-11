@@ -13,7 +13,7 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 !!! note
     If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
 
-    - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/Docker_Guide#Consistent_and_well_planned_paths)
+    - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths)
 
     - [TRaSH Guides](/Misc/how-to-set-up-hardlinks-and-atomic-moves/)
 

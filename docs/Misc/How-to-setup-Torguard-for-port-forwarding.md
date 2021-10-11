@@ -200,6 +200,6 @@ Choose your preferred VPN Tunnel type.
 
 ------
 
-THNX:
+Thanks:
 
-A big thnx to [mrhotio](https://github.com/mrhotio) for his excellent instructions on how to setup WireGuard for TorGuard.
+A big Thanks to [mrhotio](https://github.com/mrhotio) for his excellent instructions on how to setup WireGuard for TorGuard.

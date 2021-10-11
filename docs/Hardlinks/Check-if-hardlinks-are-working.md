@@ -7,6 +7,7 @@ You can use 2 options to check if you got working hardlinks.
 *Both ways requires you to login to your terminal with PuTTY or similar software.*
 
 ---
+
 ## Usenet
 
 !!! note ""

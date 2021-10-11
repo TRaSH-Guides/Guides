@@ -100,6 +100,6 @@ RESULT:
 
 ------
 
-THNX:
+Thanks:
 
-A big thnx to [fryfrog](https://github.com/fryfrog) and [rg9400](https://github.com/rg9400) for the suggestions.
+A big Thanks to [fryfrog](https://github.com/fryfrog) and [rg9400](https://github.com/rg9400) for the suggestions.
