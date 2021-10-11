@@ -56,7 +56,8 @@ You are mostly going to use the terminal. Some parts will need the Synology web 
 To enable terminal, you need to enable SSH in the Synology Settings.
 
 `Control Panel > Terminal & SNMP > Enable SSH service`
-![!synology-control-panel](images/synology-control-panel.png)
+
+![!synology-control-panel](images/synology-ssh.png)
 
 Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
 
