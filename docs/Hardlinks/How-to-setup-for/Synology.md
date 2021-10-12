@@ -230,16 +230,19 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 ### Changes and preparations
 
-The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
+!!! tip
+    If you need to edit docker-compose.yml ot he .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}
 
-!!! info ""
-    The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
+The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid)
 1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"}
 1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
+
+!!! info ""
+    The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
 
 ------
 
