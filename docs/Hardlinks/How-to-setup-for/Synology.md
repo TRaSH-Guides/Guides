@@ -133,7 +133,26 @@ data
 
 ------
 
-## Appdata
+### Create the needed subfolder
+
+Here we will create the needed subfolders for your media library and also for your preferred download client.
+If you use both then run both commands
+
+#### If you use usenet
+
+```bash
+sudo mkdir -p /volume1/data/{usenet/{tv,movies,music},media/{tv,movies,music}}
+```
+
+#### If you use torrents
+
+```bash
+sudo mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
+```
+
+------
+
+### Appdata
 
 Your appdata will be stored in `/volume1/docker/appdata/{appname}`
 These `{appname}` sub folders you need to create your self. (*This is a limitation of the Synology*)
@@ -209,7 +228,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 ------
 
-### Changes you need to make
+### Changes and preparations
 
 The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
