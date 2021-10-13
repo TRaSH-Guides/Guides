@@ -1,21 +1,21 @@
 # Suggested Plex Media Server Settings
 
-So, what are the best Plex Media Server settings ?
+So, what are the best Plex Media Server settings?
 
-This is something that can't be really answered because it depends on the use case and your personal preference.
+This is something that can't really be answered because it depends on the use case and your personal preference.
 
 !!! danger ""
-    Here I will provide some suggestions and try to explain why I recommend to use these settings, use it to your own liking and keep in mind it's only a pointer I'm no Plex Pro in anyway :bangbang:
+    Here I will provide some suggestions and try to explain why I recommend these settings. Adjust it to your own liking and keep in mind that it is only a suggestion. I'm not a Plex Pro in anyway :bangbang:
 
 !!! attention
     Some settings are only visible for Plex Pass holders.
 
-All the changes you will need to do on your Plex Media Server.
+All changes need to be done on your Plex Media Server.
 
 ![!Plex App](images/plex-settings-icon.png)
 
 !!! info "Why didn't you cover option .... ?"
-     I will only cover settings that I think might be interesting or are personal preference, if you like me to cover some other settings, please contact me on [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+     I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
 ## Settings
 
@@ -25,13 +25,13 @@ All the changes you will need to do on your Plex Media Server.
 
 ![!Plex: Settings - Remote Access](images/settings-remote-access.png)
 
-1. Make sure you enable the advanced settings (This will be needed for all the settings)
+1. Make sure you have enabled advanced settings (This will be needed for all the settings)
 1. Enable/Disable Remote access (if you disable it ignore the rest of these settings)
-1. Lan/container IP
+1. LAN/container IP
 1. Public IP **If you need to provide a screenshot always mask this IP :bangbang:**
-1. Manually specify public port if you run docker or want a fixed port.
-1. Enter the plex port you want to use. (default: `32400`)
-1. Click on `Apply` and when everything is setup correct you should be fully accessible outside of your network so you can connect to your plex from outside. You may also need to configure your router. Detailed instructions are available [HERE](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"}.
+1. Manually specify public port if you run Docker or want a fixed port.
+1. Enter the Plex port you want to use. (default: `32400`)
+1. Click on `Apply` and when everything is setup correctly, your Plex Media Server should be fully accessible outside of your network, so you can connect to your Plex  server from outside. You may also need to configure port forwarding on your router. Detailed instructions are available [HERE](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="_blank" rel="noopener noreferrer"}.
 1. Enter your internet upload speed here and Plex can ensure it operates within this boundary.
 1. Set the maximum bitrate of a remote stream from this server.
 
@@ -41,7 +41,7 @@ All the changes you will need to do on your Plex Media Server.
 
 This can be ignored if you use the new Plex agents,
 
-The new agent settings are now “per library” managed.
+The new agent settings are now managed “per library”.
 
 ------
 
@@ -54,7 +54,7 @@ The new agent settings are now “per library” managed.
     !!! check ""
         **Suggested: `Enabled`**
 
-1. When changes to library folders are detected, only scan the folder which changed rather than the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
+1. When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
 
     !!! check ""
         **Suggested: `Enabled`**
