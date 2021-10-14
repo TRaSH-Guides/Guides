@@ -47,69 +47,125 @@ The new agent settings are now managed “per library”.
 
 ### Library
 
-![!Plex Settings - Library](images/settings-library-part1.png)
+#### Scan my library automatically
 
-1. When a change is detected in the source location for a library’s content, the appropriate library will be scanned. This function relies on the computer’s operating system providing the “something changed” trigger. Some operating systems don’t provide this trigger and content mounted via a network will also typically not work. If your library doesn’t automatically scan, you may have to set a periodical scan or do it manually.
+![!Settings - Library - Scan my library automatically](images/settings-library-scan-my-library-automatically.png)
 
-    !!! check ""
-        **Suggested: `Enabled`**
+When a change is detected in the source location for a library’s content, the appropriate library will be scanned. This function relies on the computer’s operating system providing the “something changed” trigger. Some operating systems don’t provide this trigger and content mounted via a network will also typically not work. If your library doesn’t automatically scan, you may have to set a periodical scan or do it manually.
 
-1. When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
+!!! check ""
+    **Suggested: `Enabled`**
 
-    !!! check ""
-        **Suggested: `Enabled`**
+??? tip "TIP - Autoscan - [CLICK TO EXPAND]"
 
-1. I don't do music, so this choice is up to you, and I won't be covering it.
-1. Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.
+    If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel I collaborate with) has a video explaining it in further detail.
 
-    !!! check ""
-        **Suggested: `Disabled`**
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        *Do you need a extra scan for your library to recognize new media?*
+    Please don't forget to check out his other Unraid Video's [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
-1. Library scan interval if you enable option `4`
-1. With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.
+#### Run a partial scan when changes are detected
 
-    !!! check ""
-        **Suggested: `Disabled`**
+![!Settings - Library - Run a partial scan when changes are detected](images/settings-library-run-a-partial-scan-when-changes-are-detected.png)
 
-        *Why ? When a file get's a upgrade it won't be recognized as `Recently Added` . So, I decide to run this task manually*
+When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
 
-1. Delete files from Plex.
+!!! check ""
+    **Suggested: `Enabled`**
 
-    !!! check ""
-        **Suggested: `Disabled`**
+#### Include music libraries in automatic updates
 
-        *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)*
+![!Settings - Library - Include music libraries in automatic updates](images/settings-library-include-music-libraries-in-automatic-updates.png)
 
-![!Plex Settings - Library](images/settings-library-part2.png)
+I don't do music, so this choice is up to you, and I won't be covering it.
 
-1. On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.
+#### Scan my library periodically
 
-    !!! check ""
-        **Suggested: `Enabled`**
+![!Settings - Library - Scan my library periodically](images/settings-library-scan-my-library-periodically.png)
 
-        *Makes sure it uses less resources and ensure they do not interfere with regular streaming.*
+Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.
 
-1. This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
+!!! check ""
+    **Suggested: `Disabled`**
 
-    !!! danger "ATTENTION"
-        Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
+    *Do you need a extra scan for your library to recognize new media?*
 
-    !!! check ""
-        **Suggested: `Never`**
+#### Empty trash automatically after every scan
 
-        *Besides that, it uses allot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
+![!Settings - Library - Empty trash automatically after every scan](images/settings-library-empty-trash-automatically-after-every-scan.png)
 
-1. You can choose to have TV episodes analyzed to try and detect when the “intro” occurs during playback. When detected, apps will then offer a `Skip Intro` button, allowing you to quickly jump over the intro.
+With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.
 
-    !!! check ""
-        **Suggested: `as a scheduled task`** *or* **Suggested: `as a scheduled task and when media is added`**
+!!! check ""
+    **Suggested: `Enabled`**
 
-1. Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.
+#### Allow media deletion
 
-    !!! check ""
-        **Suggested: `as a scheduled task`** *or* **Suggested: `as a scheduled task and when media is added`**
+![!Settings - Library - Allow media deletion](images/settings-library-allow-media-deletion.png)
+
+The owner of the server will be allowed to delete media files from disk.
+
+!!! check ""
+    **Suggested: `Disabled`**
+
+    *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)*
+
+#### Run scanner tasks at a lower priority
+
+![!Settings - Library - Run scanner tasks at a lower priority](images/settings-library-run-scanner-tasks-at-a-lower-priority.png)
+
+On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.
+
+!!! check ""
+    **Suggested: `Enabled`**
+
+    *Makes sure it uses less resources and ensure they do not interfere with regular streaming.*
+
+#### Generate video preview thumbnails
+
+![!Settings - Library - Generate video preview thumbnails](images/settings-library-generate-video-preview-thumbnails.png)
+
+This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
+
+!!! check ""
+    **Suggested: `Never`**
+
+    *Besides that, it uses allot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
+
+!!! danger "ATTENTION"
+    Creating these images can
+
+    - <u>Take a considerable amount of time</u>
+    - <u>Use allot of CPU resources</u>
+    - <u>Increase the storage space used</u>
+
+    The images are stored in your Plex database location (/config) so <u>be careful you don’t fill the drive :bangbang:</u>
+
+#### Generate intro video markers
+
+![!Settings - Library - Generate intro video markers](images/settings-library-generate-intro-video-markers.png)
+
+You can choose to have TV episodes analyzed to try and detect when the “intro” occurs during playback. When detected, apps will then offer a `Skip Intro` button, allowing you to quickly jump over the intro.
+
+!!! check ""
+    **Suggested: `as a scheduled task`**
+
+    *or*
+
+    **Suggested: `as a scheduled task and when media is added`**
+
+#### Generate chapter thumbnails
+
+![!Settings - Library - Generate chapter thumbnails](images/settings-library-generate-chapter-thumbnails.png)
+
+Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.
+
+!!! check ""
+    **Suggested: `as a scheduled task`**
+
+    *or*
+
+    **Suggested: `as a scheduled task and when media is added`**
 
 ------
 
