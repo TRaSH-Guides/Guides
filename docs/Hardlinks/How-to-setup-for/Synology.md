@@ -257,9 +257,15 @@ First you need to download Pullio
    sudo chmod +x /usr/local/bin/pullio
 ```
 
-For Pullio to work, you will need to create in your Task Scheduler a "triggered task" that runs for example at 4am at night with root privileges.
+For Pullio to work, you will need to create in your Task Scheduler a "Scheduled Task" that runs for example at 4am at night with root privileges.
 
-Add the following line to your triggered task
+`Control Panel` > `Task Scheduler` > click `Create` > choose `Scheduled task - user defined script`
+
+Give the task a name so you know what it does. Choose user `root`.
+
+In the `Schedule` tab choose whenever you want it to check for updates.
+
+At `Task Settings` tab, add the following line in the Run Command section:
 
 ```bash
    /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
