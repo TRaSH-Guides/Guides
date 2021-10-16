@@ -171,116 +171,179 @@ Chapter thumbnails provide images in the chapter view on supported apps. They ca
 
 ### Network
 
-![!Plex Settings: Network](images/settings-network-part1.png)
+#### Enable IPv6 support
 
-1. Enable IPv6 support.
+![!Settings - Network - Enable server support for IPv6](images/settings-network-enable-server-support-for-ipv6.png)
 
-    !!! check ""
-        **Suggested: `Disabled`**
+Enable IPv6 support.
 
-        *If you're not sure your network 100% works with ip6 <u>don't Enable it</u>.*
+!!! check ""
+    **Suggested: `Disabled`**
 
-1. Choose how your Plex Media Server handles secure connections.
+    *If you're not sure your network 100% works with ip6 <u>don't Enable it</u>.*
 
-    !!! check ""
-        **Suggested: `Preferred`**
+#### Secure connections
 
-        *Accept and prefer secure connections when they’re available for a Plex app, but allow regular HTTP connections if the app doesn’t support secure connections or if one can’t be established*
+![!Settings - Network - Secure connections](images/settings-network-secure-connections.png)
 
-1. For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.
+Choose how your Plex Media Server handles secure connections.
 
-    !!! attention
-        If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.
+!!! check ""
+    **Suggested: `Preferred`**
 
-    !!! check ""
-        **Suggested: `Whatever suits your setup`**
+    *Accept and prefer secure connections when they’re available for a Plex app, but allow regular HTTP connections if the app doesn’t support secure connections or if one can’t be established*
 
-1. If this setting is enabled, it prevents Plex Media Server from using or accepting the deprecated TLSv1.0 and v1.1 protocols, as well as legacy weak ciphers. May prevent older clients from connecting. The vast majority of users will have no reason to enable this option (and receive no benefit from doing so).
+#### Preferred network interface
 
-    !!! check ""
-        **Suggested: `Disabled`**
+![!Settings - Network - Preferred network interface](images/settings-network-preferred-network-interface.png)
 
-1. Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.
+For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.
 
-    !!! check ""
-        **Suggested: `Enabled`**
+!!! attention
+    If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.
 
-![!Plex Settings - Network](images/settings-network-part2.png)
+!!! check ""
+    **Suggested: `Whatever suits your setup`**
 
-1. It lets you specify which IP addresses or networks will be considered to be “local” to you.
+#### Strict TLS configuration
 
-    !!! check ""
-        **Suggested: `Your local IP/netmasks`**
+![!Settings - Network - Strict TLS configuration](images/settings-network-strict-tls-configuration.png)
 
-        *If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)*
+If this setting is enabled, it prevents Plex Media Server from using or accepting the deprecated TLSv1.0 and v1.1 protocols, as well as legacy weak ciphers. May prevent older clients from connecting. The vast majority of users will have no reason to enable this option (and receive no benefit from doing so).
 
-1. Allows incoming requests from this network’s WAN IP address to be treated as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.
+!!! check ""
+    **Suggested: `Disabled`**
 
-    !!! check ""
-        **Suggested: `Enabled`**
+#### Enable local network discovery (GDM)
 
-1. The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.
+![!Settings - Network - Enable local network discovery (GDM)](images/settings-network-enable-local-network-discovery-(gdm).png)
 
-    !!! check ""
-        **Suggested: `Disabled`**
+Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.
 
-        *I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.*
+!!! check ""
+    **Suggested: `Enabled`**
 
-1. A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.
+#### Remote streams allowed per user
 
-    !!! check ""
-        **Suggested: `Depending on your setup`**
+![!Settings - Network - Remote streams allowed per user](images/settings-network-remote-streams-allowed-per-user.png)
 
-        *Example: `https://plex.mycustomdomain.com:32400`*
+You can set the maximum number of simultaneous streams each remote user is allowed to have.
 
-1. This feature can be enabled to allow your server to send events to external services. For example [Notifiarr](/Notifiarr/Quick-Start/){:target="_blank" rel="noopener noreferrer"}
+!!! check ""
+    **Suggested: `Whatever suits your setup`**
+
+#### LAN Networks
+
+![!Settings - Network - LAN Networks](images/settings-network-lan-networks.png)
+
+It lets you specify which IP addresses or networks will be considered to be “local” to you.
+
+!!! check ""
+    **Suggested: `Your local IP/netmasks`**
+
+    *If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)*
+
+#### Treat WAN IP As LAN Bandwidth
+
+![!Settings - Network - LAN Networks](images/settings-network-treat-wan-ip-as-lan-bandwidth.png)
+
+Allows incoming requests from this network’s WAN IP address to be treated as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.
+
+!!! check ""
+    **Suggested: `Enabled`**
+
+#### Enable Relay
+
+![!Settings - Network - Enable Relay](images/settings-network-enable-relay.png)
+
+The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.
+
+!!! check ""
+    **Suggested: `Disabled`**
+
+    *I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.*
+
+#### Custom server access URLs
+
+![!Settings - Network - Custom server access URLs](images/settings-network-custom-server-access-urls.png)
+
+A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.
+
+!!! check ""
+    **Suggested: `Depending on your setup`**
+
+    *Example: `https://plex.mycustomdomain.com:32400`*
+
+#### Webhooks
+
+![!Settings - Network - Webhooks](images/settings-network-webhooks.png)
+
+This feature can be enabled to allow your server to send events to external services. For example [Notifiarr](/Notifiarr/Quick-Start/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
 ### Transcoders
 
-![!Plex Settings - Transcoder](images/settings-transcoder.png)
+#### Transcoder quality
 
-1. This will influence the quality used when transcoding media.
+![!Settings - Transcoder - Transcoder quality](images/settings-transcoder-transcoder-quality.png)
 
-    !!! check ""
-        **Suggested: `Automatic`**
+This will influence the quality used when transcoding media.
 
-        *Most users should leave it set to Automatic. Hardware-Accelerated Streaming is not affected by this setting.*
+!!! check ""
+    **Suggested: `Automatic`**
 
-1. Directory to use when transcoding temporary files for streaming.
+    *Most users should leave it set to Automatic. Hardware-Accelerated Streaming is not affected by this setting.*
 
-    !!! check ""
-        **Suggested: `Depending on your setup, if possible, your RAM (disk)`**
+#### Transcoder temporary directory
 
-        *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.*
+![!Settings - Transcoder - Transcoder temporary directory](images/settings-transcoder-transcoder-temporary-directory.png)
 
-        *If you run docker set this to `/transcode` and map it to `/tmp/plex`*
+Directory to use when transcoding temporary files for streaming.
 
-        *Default Linux only allocates a max of 50% of total system RAM to any ram directories (ie. /tmp, /dev/shm, etc.)*
+!!! check ""
+    **Suggested: `Depending on your setup, if possible, your RAM (disk)`**
+
+    *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.*
+
+    *If you run docker set this to `/transcode` and map it to `/tmp/plex`*
+
+    *Default Linux only allocates a max of 50% of total system RAM to any ram directories (ie. /tmp, /dev/shm, etc.)*
 
     !!! danger "WARNING"
         :bangbang: **YOU SHOULD NOT SPECIFY A LOCATION THAT RESIDES ON A NETWORK SHARE/DISK.** :bangbang:
 
-1. This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.
+#### Enable HDR tone mapping
 
-    !!! check ""
-        **Suggested: `Depending on your setup`**
+![!Settings - Transcoder - Enable HDR tone mapping](images/settings-transcoder-enable-hdr-tone-mapping.png)
 
-        *Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.*
+This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.
 
-    !!! note
-        Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed out” colors that occur when converting HDR content without tone mapping.
+!!! check ""
+    **Suggested: `Depending on your setup`**
 
-1. To use Hardware-Accelerated Streaming in Plex Media Server.
+    *Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.*
 
-    !!! check ""
-        **Suggested: `Enabled`**
+!!! note
+    Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed out” colors that occur when converting HDR content without tone mapping.
 
-1. To use Hardware-Accelerated Encoding in Plex Media Server.
+#### Use hardware acceleration when available
 
-    !!! check ""
-        **Suggested: `Enabled`**
+![!Settings - Transcoder - Use hardware acceleration when available](images/settings-transcoder-use-hardware-acceleration-when-available.png)
+
+To use Hardware-Accelerated Streaming in Plex Media Server.
+
+!!! check ""
+    **Suggested: `Enabled`**
+
+#### Use hardware-accelerated video encoding
+
+![!Settings - Transcoder - Use hardware-accelerated video encoding](images/settings-transcoder-use-hardware-accelerated-video-encoding.png)
+
+To use Hardware-Accelerated Encoding in Plex Media Server.
+
+!!! check ""
+    **Suggested: `Enabled`**
 
 ------
 
