@@ -564,7 +564,7 @@ Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Sepera
 ```
 
 ```bash
-/(BakedFish|N[eo][wo]b[ ._-]?Subs|\bAnime Time\b)/i
+/(BakedFish|N[eo][wo]b[ ._-]?Subs|\bAnime[ .]Time\b)/i
 ```
 
 ```bash
