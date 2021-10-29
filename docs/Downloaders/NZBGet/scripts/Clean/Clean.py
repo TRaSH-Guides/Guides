@@ -54,6 +54,7 @@ fwp = re.sub('(?i)\[TGx\]-xpost\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)\[ettv\]\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)-WRTEAM\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)-CAPTCHA\.nzb$', '.nzb', fwp)
+fwp = re.sub(r'(\-[^-.\n]*)(\-.{4})?\.nzb$', r'\1.nzb', fwp)
 if fwp:
   print('[NZB] NZBNAME=', fwp, sep='')
 

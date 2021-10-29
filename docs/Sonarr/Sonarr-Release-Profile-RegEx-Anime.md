@@ -340,7 +340,7 @@ BluRay / Dual-Audio / 1st Tier
 ```
 
 ```bash
-/(\bKH\b|\bCBT\b|naiyas|ShowY|Kametsu|\bPn8\b|Hark0N)/i
+/(\bKH\b|\bCBT\b|\[naiyas\]|-naiyas\b|ShowY|Kametsu|\bPn8\b|Hark0N)/i
 ```
 
 ---

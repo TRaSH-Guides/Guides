@@ -452,7 +452,7 @@ Add this to your `Must not contain (2)`
     If you don't want to download so called scene releases.
 
 ```bash
-/\b(\.WEB\.)\b/i
+/\b([ .]WEB[ .])\b/i
 ```
 
 ------
