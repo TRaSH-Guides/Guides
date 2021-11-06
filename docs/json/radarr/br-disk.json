@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?!.*((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|REMUX|[xh][-_. ]?26[45]|German[-_. ]?DL))"
+        "value": "^(?!.*((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|REMUX|[xh][-_. ]?26[45]|German[-_. ]?DL)).*$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(((?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))|^((?=.*\\b(^((?=.*COMPLETE)(?=.*Blu[-_. ]?ray|HD[-_. ]?DVD))|3D[-_. ]?BD|BR[-_. ]?DISK|^((?=.*((BD|UHD)[-_. ]?(25|50|66)))(?=.*ISO)?)))))"
+        "value": "^(((?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2)\\b))|^((?=.*\\b(^((?=.*COMPLETE)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|^((?=.*((BD|UHD)[-_. ]?(25|50|66)))(?=.*ISO)?))))).*$"
       }
     }
   ]
