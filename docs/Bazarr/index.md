@@ -12,7 +12,7 @@ Here you will find several scripts you can use with Bazarr
 - Docker: [hotio/bazarr:latest](https://hotio.dev/containers/bazarr/){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-ghcr.io/hotio/bazarr:latest
+hotio/bazarr:latest
 ```
 
 ## Dev = Bazarr Branch: development
@@ -25,5 +25,5 @@ ghcr.io/hotio/bazarr:latest
 - Docker: [hotio/bazarr:nightly](https://hotio.dev/containers/bazarr/){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-ghcr.io/hotio/bazarr:nightly
+hotio/bazarr:nightly
 ```

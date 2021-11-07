@@ -12,5 +12,5 @@ Here you will find a collection of Sonarr Guides I made.
 - Docker: [hotio/sonarr:release](https://hub.docker.com/r/hotio/sonarr){:target="_blank" rel="noopener noreferrer"}
 
 ```bash
-ghcr.io/hotio/sonarr:release
+hotio/sonarr:release
 ```
