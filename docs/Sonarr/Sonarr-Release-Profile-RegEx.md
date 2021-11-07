@@ -346,6 +346,8 @@ Add this to your `Preferred (3)` with a score of [-100]
 !!! note
     These options are optional and only needed if you got a certain use case for it.
 
+    If you see certain optional options with a positive score and you actually don't want them just add them with a negative score !!!
+
 #### Optional HDR - if you prefer HDR
 
 Add this to your `Preferred (3)` with a score of [10]
@@ -450,6 +452,8 @@ Add this to your `Must not contain (2)`
 ??? NOTE "WHY ? - [CLICK TO EXPAND]"
 
     If you don't want to download so called scene releases.
+
+dd this to your `Must not contain (2)`
 
 ```bash
 /\b([ .]WEB[ .])\b/i
