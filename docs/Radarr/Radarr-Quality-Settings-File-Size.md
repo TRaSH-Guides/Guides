@@ -45,8 +45,8 @@ This Quality Settings has been created and tested with info I got from others, a
 | WEBRip-720p  | 17.1    | 400     |
 | Bluray-720p  | 25.7    | 400     |
 | HDTV-1080p   | 33.7    | 400     |
-| WEBDL-1080p  | 33.7    | 400     |
-| WEBRip-1080p | 33.7    | 400     |
+| WEBDL-1080p  | 25.2    | 400     |
+| WEBRip-1080p | 25.2    | 400     |
 | Bluray-1080p | 50.8    | 400     |
 | Remux-1080p  | 136.8   | 400     |
 | HDTV-2160p   | 85      | 400     |
