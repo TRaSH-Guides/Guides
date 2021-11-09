@@ -271,9 +271,7 @@ At `Task Settings` tab, add the following line in the Run Command section:
    /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
 ```
 
-To test if Pullio works, run this command in your terminal: `sudo pullio --debug`.
-
-You should see that it will download and recreate all the containers and also get notifications (if you have this enabled).
+It can be frustrating to test the script if no docker image updates are available, for that you can run command `sudo pullio --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
 More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="noopener noreferrer"}
 
