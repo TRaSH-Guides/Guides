@@ -274,7 +274,11 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-ROCCaT|3cTWeB|playWEB|-FLUX)\b/i
+/(-ROCCaT|3cTWeB|playWEB|-FLUX|NOSiViD)\b/i
+```
+
+```bash
+/(-KHN|NPMS|SDCC|-END)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
