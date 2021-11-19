@@ -1,6 +1,6 @@
 git+https://github.com/fralau/mkdocs_macros_plugin@v0.5.12#egg=mkdocs-macros-plugin
 git+https://github.com/g-provost/lightgallery-markdown@v0.5#egg=lightgallery
-markdown==3.3.4
+markdown==3.3.6
 mkdocs-awesome-pages-plugin==2.6.0
 mkdocs-git-revision-date-localized-plugin==0.10.2
 mkdocs-material-extensions==1.0.3
