@@ -278,7 +278,7 @@ Add this to your `Preferred (3)` with a score of [125]
 ```
 
 ```bash
-/(-KHN|NPMS|SDCC|-END)\b/i
+/(-KHN|NPMS|-END)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
