@@ -162,7 +162,7 @@ We're going to do this in Putty or a similar program.
 sudo mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
 ```
 
-You can add your own sub folders for your download client(s) using the command above.
+You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.
 
 So your appdata folder will look like this.
 
@@ -194,7 +194,7 @@ For this, we need two files:
 
 We will start with downloading the `docker-compose.yml` file
 
-Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
+Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
 
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
@@ -206,7 +206,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
     - Radarr
     - Sonarr
-    - Bazarr (Subtitle searcher and downloaded)
+    - Bazarr (Subtitle searcher and downloader)
     - Plex
 
     What's not included.
@@ -217,7 +217,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 Second we will download the `.env` file
 
-Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together.
+Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use this command:
 
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
@@ -254,6 +254,8 @@ First you need to download Pullio
 
 ```bash
    sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
+```
+```bash
    sudo chmod +x /usr/local/bin/pullio
 ```
 
@@ -268,7 +270,7 @@ In the `Schedule` tab choose whenever you want it to check for updates.
 At `Task Settings` tab, add the following line in the Run Command section:
 
 ```bash
-   /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
+/usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
 ```
 
 It can be frustrating to test the script if no docker image updates are available, for that you can run command `sudo pullio --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
@@ -282,10 +284,12 @@ More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="n
 Now we need to make sure that the newly created files and folders have the correct permissions.
 
 !!! note
-    If you're using another user than `docker`, then you need to change it in the commands below !!!
+    If you're using a different user than `docker` (the user generated in the beginning), then you need to change the `docker:users` part in the commands below!!!
 
 ```bash
 sudo chown -R docker:users /volume1/data /volume1/docker
+```
+```bash
 sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ```
 
@@ -300,10 +304,12 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
     make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
     If you had previous installed apps, make a backup of their config folders.
 
-When you did all the above steps you only need to type the following in your `/volume1/docker/appdata`
+When you did all the above steps you only need to run the following commands:
 
 ```bash
 cd /volume1/docker/appdata
+```
+```bash
 sudo docker-compose up -d
 ```
 
