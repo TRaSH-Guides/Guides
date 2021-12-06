@@ -255,6 +255,7 @@ First you need to download Pullio
 ```bash
    sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
 ```
+
 ```bash
    sudo chmod +x /usr/local/bin/pullio
 ```
@@ -289,6 +290,7 @@ Now we need to make sure that the newly created files and folders have the corre
 ```bash
 sudo chown -R docker:users /volume1/data /volume1/docker
 ```
+
 ```bash
 sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ```
@@ -309,6 +311,7 @@ When you did all the above steps you only need to run the following commands:
 ```bash
 cd /volume1/docker/appdata
 ```
+
 ```bash
 sudo docker-compose up -d
 ```
