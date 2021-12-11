@@ -290,29 +290,79 @@ Add this to your Preferred with a score of **[5]**
 
 !!! important
     This is the end of the optional section.
+    
+Add this to your Preferred with a score of **[4100]**
+
+BluRay-Encode / Dual-Audio / 1st Tier
+
+```bash
+/\b(sam|UDF|Arid|Quetzal)/i\b
+```
+
+```bash
+/\b(Drag|Lulu|Yuki|YURI|OZR)/i\b
+```
+
+```bash
+/\b(Senjou|Datte13|FLFL|Mysteria|WSE)/i\b
+```
+
+```bash
+/\b(Legion|Kulot|Exp|ASC|Yoghurt|ARC)/i\b
+```
+
+```bash
+/\b(Vodes|hydes|Reza|CsRmX|McBalls|Not-Vodes)/i\b
+```
+
+```bash
+/\b(succ[._-]|Chouonsoku|Ayashii|BKC|Exstasia)/i\b
+```
 
 Add this to your Preferred with a score of **[4000]**
 
-BluRay-Remux / Dual-Audio / 1st Tier
+BluRay-Encode / Dual-Audio / 2nd Tier
 
 ```bash
-/(deanzel|\bZR\b|\bCTR\b|\bSCY\b|\bMK\b|TTGA)/i
+/\b(WBDP|Kametsu|NH|Pog42|deanzel)/i\b
+```
+```bash
+/\b(CTR|zangafan|ShadyCrab|Holomux)/i\b
 ```
 
 ```bash
-/(\bShir\b|LostYears|BluDragon|KAWAiREMUX)/i
+/\b(0x539|KH|CBT|GSK[._-]kun|RASETSU)/i\b
 ```
 
 ```bash
-/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i
+/\b(AC|hchcsen|Dekinai|Foxtrot|Bakaiser)/i\b
+```
+```bash
+/\b(MK|Koten[._-]Gars|neko[._-]kBaraka|kuchikirukia)/i\b
+```
+
+Add this to your Preferred with a score of **[3900]**
+
+BluRay-Encode / Dual-Audio / 3rd Tier
+
+```bash
+/\b(Tsundere|MTBB|NH|FFF|Commie)/i\b
 ```
 
 ```bash
-/(\[Spark\]|-Spark\b|\bREVO\b|\bSRLS\b|ANThELIa)/i
+/\b(Chihiro|Kaleido|Judgment|GJM)/i\b
 ```
 
 ```bash
-/(\[Vanilla\]|-Vanilla\b|\bAP\b)/i
+/\b(SmugCat|BlurayDesuYo|Asenshi|Asakura)/i\b
+```
+
+```bash
+/\b(GHS|YameteTomete|Z4ST1N|Okay[._-]Subs)/i\b
+```
+
+```bash
+/\b(LNS|Vivid|Doki|Coalgirls)/i\b
 ```
 
 ---
