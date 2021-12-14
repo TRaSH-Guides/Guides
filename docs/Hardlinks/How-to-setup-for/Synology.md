@@ -17,7 +17,7 @@ This page will provide you with guidance on how to install several Docker images
 Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. The script is new and only tested on Synology DSM7. We are not held reliable if anyhting breaks on your system. Use at your own risk!
 
 !!! attention
- 
+
     Use this script at your own risk!
 
 ```bash
