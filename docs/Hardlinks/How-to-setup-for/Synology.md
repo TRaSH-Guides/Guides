@@ -9,7 +9,7 @@
     Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
     And a very big thanks to [Bokkoman](https://www.buymeacoffee.com/bokkoman){:target="_blank" rel="noopener noreferrer"} and [BZwart](https://github.com/BaukeZwart){:target="_blank" rel="noopener noreferrer"} that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.
-    
+
 ## Introduction
 
 This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.
@@ -17,7 +17,7 @@ This page will provide you with guidance on how to install several Docker images
 Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. The script is new and only tested on Synology DSM7. We are not held reliable if anyhting breaks on your system. Use at your own risk!
 
 !!! attention
-    
+ 
     Use this script at your own risk!
 
 ```bash
