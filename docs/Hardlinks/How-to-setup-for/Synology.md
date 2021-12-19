@@ -14,15 +14,26 @@
 
 This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.
 
-Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. The script is new and only tested on Synology DSM7. We are not held reliable if anyhting breaks on your system. Use at your own risk!
+### Automated Script
 
-!!! attention
+??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [CLICK TO EXPAND]"
 
-    Use this script at your own risk!
+    !!! Warning
+        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script.
 
-```bash
-wget -qO- shortURL-goes-here | sudo bash
-```
+        The script is new and only tested on Synology DSM7.
+
+        **:bangbang: We are not held reliable if anything breaks on your system. Use at your own risk :bangbang:**
+
+    To get this working you will need to enable terminal access (SSH).
+
+    To enable this on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
+
+    When you enabled the terminal access (SSH) run the following command and follow the onscreen questions.
+
+    ```bash
+    wget -qO- https://trash-guides.info/syno-script | sudo bash
+    ```
 
 ## Install Docker
 
@@ -213,6 +224,8 @@ Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Tem
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 ```
+
+### Whats included and Whats not included
 
 ??? question "What's included and What's not included - [CLICK TO EXPAND]"
 

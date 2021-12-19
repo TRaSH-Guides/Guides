@@ -56,6 +56,7 @@ plugins:
   - redirects:
       redirect_maps:
         discord.md: https://discord.gg/Vau8dZ3
+        syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr old redirects
         Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/Radarr-import-custom-formats.md
         Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/Radarr-collection-of-custom-formats.md
