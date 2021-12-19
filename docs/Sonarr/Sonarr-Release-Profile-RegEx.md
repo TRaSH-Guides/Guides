@@ -436,7 +436,7 @@ Add this to your `Preferred (3)` with a score of [15]
 Add this to your `Must not contain (2)`
 
 ```bash
-/\b(?=.*(dv|dovi|dolby[ .]vision)\b)(?=.*(WEB[-_. ]DL|WEBDL|AmazonHD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:[-. ]AMZN)?[-. ]WEB[-. ]|WEB-DLMux|\b\s\/\sWEB\s\/\s\b|AMZN[. ]WEB[. ]|WebRip|Web-Rip|WEBMux))/i
+/(?=.*\b(dv|dovi|dolby[ .]vision)\b)(?=.*(WEB[-_. ]?(DL|RIP)|\bWEB\b))/i
 ```
 
 #### Optional Ignore the group -scene
@@ -460,7 +460,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/([-_. ]WEB[-_. ]|\bCAKES\b|GGEZ|GGWP|GLHF)/i
+/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i
 ```
 
 ------
