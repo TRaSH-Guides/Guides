@@ -457,10 +457,10 @@ Add this to your `Must not contain (2)`
 
     If you don't want to download so called scene releases.
 
-dd this to your `Must not contain (2)`
+Add this to your `Must not contain (2)`
 
 ```bash
-/\b([ .]WEB[ .])\b/i
+/([-_. ]WEB[-_. ]|\bCAKES\b|GGEZ|GGWP|GLHF)/i
 ```
 
 ------
