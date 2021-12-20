@@ -29,10 +29,14 @@ This page will provide you with guidance on how to install several Docker images
 
     To enable this on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
 
-    When you enabled the terminal access (SSH) run the following command and follow the onscreen questions.
+    When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.
 
     ```bash
-    wget -qO- https://trash-guides.info/syno-script | sudo bash
+    curl -sL git.io/syno-script > ~/syno-script
+    ```
+
+    ```bash
+    sudo bash ~/syno-script
     ```
 
 ## Install Docker
