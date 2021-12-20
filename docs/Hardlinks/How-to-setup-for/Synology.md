@@ -32,7 +32,7 @@ This page will provide you with guidance on how to install several Docker images
     When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.
 
     ```bash
-    wget -q https://trash-guides.info/syno-script
+    wget -q https://git.io/JD79b
     ```
 
     ```bash
