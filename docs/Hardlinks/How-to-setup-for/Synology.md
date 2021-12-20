@@ -32,11 +32,11 @@ This page will provide you with guidance on how to install several Docker images
     When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.
 
     ```bash
-    wget -q https://git.io/JD79b
+    curl -sL git.io/syno-script > ~/syno-script
     ```
 
     ```bash
-    sudo ./trash_syno_installer.sh
+    sudo bash ~/syno-script
     ```
 
 ## Install Docker
