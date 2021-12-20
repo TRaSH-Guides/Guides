@@ -67,6 +67,7 @@ Then you get a screen with the following options.
 1. Save your settings.
 
 ??? faq "When Radarr shall consider a movie is available - [CLICK TO EXPAND]"
+
     - Announced: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
     - In Cinemas: Radarr shall consider movies available as soon as movies they hit cinemas. This option is not recommended.
     - Released: Radarr shall consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.
@@ -93,7 +94,7 @@ Only thing you need to change/create is a separate `Category` that you're going 
 
 You now only need to make use of `Radarr 1` all movies your add to `Radarr 1` will be synced to `Radarr 2` at a scheduled time.
 
-##### 1080p streaming optimized
+#### 1080p streaming optimized
 
 ??? faq "1080p streaming optimized quality profile"
 
