@@ -34,7 +34,7 @@ This page will provide you with guidance on how to install several Docker images
     ```bash
     wget -q https://trash-guides.info/syno-script
     ```
-    
+
     ```bash
     sudo ./trash_syno_installer.sh
     ```
