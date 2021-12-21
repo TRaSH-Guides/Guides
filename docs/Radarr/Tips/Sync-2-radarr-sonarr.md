@@ -5,7 +5,7 @@ In this Guide I will try to explain how you can sync 2 Radarr/Sonarr with each o
 I'm going to show 2 different options how you can setup your sync with 2 Radarr/Sonarr.
 
 - Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances
-- Option 2: This option is best used if you only want to have a few Movies/TV shows as 4K/2160p (UHD)
+- Option 2: This option is best used if you only want to have a few Movies/TV Shows as 4K/2160p (UHD)
 
 !!! error ""
     I'm not going to explain how to set up 2 Radarr/Sonarr for your system, being it depends how you have it installed/running.
@@ -58,11 +58,9 @@ Then you get a screen with the following options.
 1. When Radarr shall consider a movie is available.
 1. The Quality Profile you want to use on `Radarr 2`.
 1. Your Root location for your media library.
-1. If you want items added to have a tag.
 1. The Full URL to `Radarr 1` (Use local URL if they run on the same system).
 1. Your API Key of `Radarr 1`.
 1. Which Profile of `Radarr 1` you want to Sync with `Radarr 2`.
-1. Tags from source instance to import from.
 1. Test the connection to `Radarr 1`.
 1. Save your settings.
 
@@ -78,11 +76,11 @@ Then you get a screen with the following options.
 
 `Settings` => `Download Clients`
 
-![Radarr - Settings Download Clients](images/radarr-settings-download-clients.png)
+![!Radarr - Settings Download Clients](images/radarr-settings-download-clients.png)
 
 Select your preferred download client.
 
-![Radarr - Settings Download Clients Categories](images/radarr-settings-download-clients-categories.png)
+![!Radarr - Settings Download Clients Categories](images/radarr-settings-download-clients-categories.png)
 
 Only thing you need to change/create is a separate `Category` that you're going to use for `Radarr 2`
 
@@ -96,7 +94,7 @@ You now only need to make use of `Radarr 1` all movies your add to `Radarr 1` wi
 
 #### 1080p streaming optimized
 
-??? faq "1080p streaming optimized quality profile"
+??? faq "1080p streaming optimized quality profile - [CLICK TO EXPAND]"
 
     If you're interested in the 1080p streaming optimized quality profile you can contact me on [discord](https://trash-guides.info/discord)
 
@@ -126,47 +124,60 @@ You now only need to make use of `Radarr 1` all movies your add to `Radarr 1` wi
     - `Sonarr 1` = My main 1080p WEB-DL Sonarr.
     - `Sonarr 2` = 4K/2160p (UHD) WEB-DL Sonarr.
 
-    This option is best used if you only want to have a few Movies/TV shows as 4K/2160p (UHD)
+    This option is best used if you only want to have a few TV shows (or a Movies if you use this option with Radarr) as 4K/2160p (UHD)
 
 #### Extra preparation
 
 In `Sonarr 1` go to `Settings` => `Profiles`
 
-![!Sonarr - Settings - Profiles](images/Sonarr-settings-profiles.png)
+![!Sonarr - Settings - Profiles](images/sonarr-settings-profiles.png)
 
 And Clone your used profile and rename your profile from `Profilename - Copy` to `Profilename!`
 
-![!Sonarr - Clone Profile](images/Sonarr-clone-profile.png)
+![!Sonarr - Clone Profile](images/sonarr-clone-profile.png)
 
 #### Adding the Sonarr Sync list
 
-In `Sonarr 2` go to `Settings` => `Lists`
+In `Sonarr 2` go to `Settings` => `Import Lists`
 
-![!Sonarr Settings Lists](images/image-20211219203914161.png)
+![!Sonarr Settings Import Lists](images/sonarr-settings-import-lists.png)
 
 Click on the + to add a lists and select `Radarr`
 
-!Sonarr add List](images/image-20211219204256765.png)
+![!Sonarr add List](images/sonarr-add-list.png)
 
 Then you get a screen with the following options.
 
-![Sonarr Add Lists Options](images/image-20211219210050924.png)
+![!Sonarr Add Lists Options](images/sonarr-add-lists-options.png)
 
 1. The name you want to call your Sync list.
-1. Enable to Enable the list.
-1. Enable so the movies will be automatically added.
-1. Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).
-1. Enable so when added Radarr will perform a search.
-1. The Minimum Availability you prefer.
-1. The Quality Profile you want to use on `Sonarr 2`.
+1. Enable so the shows will be automatically added.
+1. Choose your monitoring options.
 1. Your Root location for your media library.
-1. If you want items added to have a tag.
+1. The Quality Profile you want to use on `Sonarr 2`.
+1. Series Type.
+1. If you want to use Season Folders.
 1. The Full URL to `Sonarr 1` (Use local URL if they run on the same system).
 1. Your API Key of `Sonarr 1`.
-1. Which Profile of `Sonarr 1` you want to Sync with `Sonarr 2`.
-1. Tags from source instance to import from.
+1. The Cloned Profile of `Sonarr 1` that we're going to use to Sync with `Sonarr 2`.
 1. Test the connection to `Sonarr 1`.
 1. Save your settings.
+
+??? FAQ "Monitoring Options - [CLICK TO EXPAND]"
+
+    - All Episodes: Monitor all episodes except specials
+    - Future Episodes: Monitor episodes that have not aired yet
+    - Missing Episodes: Monitor episodes that do not have files or have not aired yet
+    - Existing Episodes: Monitor episodes that have files or have not aired yet
+    - First Season: Monitor all episodes of the first season. All other seasons will be ignored
+    - Latest Season: Monitor all episodes of the latest season and future seasons
+    - None: No episodes will be monitored
+
+??? FAQ "Series Type - [CLICK TO EXPAND]"
+
+    - Anime: Episodes released using an absolute episode number
+    - Daily: Episodes released daily or less frequently that use year-month-day (2017-05-25)
+    - Standard: Episodes released with SxxEyy pattern
 
 #### Sonarr Download client setup
 
@@ -174,14 +185,18 @@ Then you get a screen with the following options.
 
 `Settings` => `Download Clients`
 
-![Sonarr - Settings Download Clients](images/image-20211219211958715.png)
+![!Sonarr - Settings Download Clients](images/sonarr-settings-download-clients.png)
 
 Select your preferred download client.
 
-![Sonarr Category's](images/image-20211219213741404.png)
+![!Sonarr Categories](images/sonarr-categories.png)
 
 Only thing you need to change/create is a separate `Category` that you're going to use for `Sonarr 2`
 
 !!! important
 
     This can't and shouldn't be the same category you use for `Sonarr 1` but a separate `Category`.
+
+### How does this Sonarr Sync work
+
+You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile.
