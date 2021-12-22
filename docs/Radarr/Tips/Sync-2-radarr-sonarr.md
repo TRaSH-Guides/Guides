@@ -199,4 +199,4 @@ Only thing you need to change/create is a separate `Category` that you're going 
 
 ### How does this Sonarr Sync work
 
-You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile.
+You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.
