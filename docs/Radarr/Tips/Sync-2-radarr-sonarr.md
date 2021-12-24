@@ -179,12 +179,14 @@ You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie
             - You want maximum compatibility between all devices and still a HQ releases.
             - You run 2 instances of Radarr and want both version or just for the 1080p ones.
             - You want to have minimum till none transcoding for low powered devices or remote streaming.
+
 [^2]:
     ??? faq "When Radarr shall consider a movie is available - [CLICK TO EXPAND]"
 
         - **Announced**: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
         - **In Cinemas**: Radarr shall consider movies available as soon as movies they hit cinemas. This option is not recommended.
         - **Released**: Radarr shall consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.
+
 [^3]:
     ??? FAQ "Monitoring Options - [CLICK TO EXPAND]"
 
@@ -195,6 +197,7 @@ You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie
         - **First Season**: Monitor all episodes of the first season. All other seasons will be ignored
         - **Latest Season**: Monitor all episodes of the latest season and future seasons
         - **None**: No episodes will be monitored
+
 [^4]:
     ??? FAQ "Series Type - [CLICK TO EXPAND]"
 
