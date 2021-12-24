@@ -142,7 +142,7 @@ In `Sonarr 2` go to `Settings` => `Import Lists`
 
 ![!Sonarr Settings Import Lists](images/sonarr-settings-import-lists.png)
 
-Click on the + to add a lists and select `Radarr`
+Click on the + to add a lists and select `Sonarr`
 
 ![!Sonarr add List](images/sonarr-add-list.png)
 
