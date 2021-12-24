@@ -201,3 +201,5 @@ You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie
         - **Anime**: Episodes released using an absolute episode number
         - **Daily**: Episodes released daily or less frequently that use year-month-day (2017-05-25)
         - **Standard**: Episodes released with SxxEyy pattern
+
+--8<-- "includes/support.md"
