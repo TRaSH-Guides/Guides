@@ -25,6 +25,7 @@ extra_css:
 markdown_extensions:
   - admonition
   - attr_list
+  - footnotes
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.snippets
