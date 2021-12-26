@@ -40,3 +40,5 @@ This basic example is based on the use of docker images
     When your downloads ends up in `/data/torrents/` and not in `/data/torrents/{tv|movies|music}` then you probably forgot to change `Default Torrent Management Mode:` to `Automatic`
 
     ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
+
+--8<-- "includes/support.md"

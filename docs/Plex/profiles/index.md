@@ -48,3 +48,5 @@ Example paths:
     ```sh
     [[% filter indent(width=4) %]][[% include '/Plex/profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
     ```
+
+--8<-- "includes/support.md"

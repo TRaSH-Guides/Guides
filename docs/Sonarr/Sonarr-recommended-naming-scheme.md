@@ -195,3 +195,5 @@ The filename can be Obscured where the Release naming isn't especially when you 
 Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
+
+--8<-- "includes/support.md"

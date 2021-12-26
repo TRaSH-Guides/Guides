@@ -4,12 +4,12 @@ I often get the question what's the best Quality Settings to use,
 Well it's actually personal preference so I will show you a recommended Quality Settings.
 But before you continue to read, as with all my guides:
 
-!!! question ""
+!!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 This Quality Settings has been created and tested with info I got from others, and release comparisons from different sources.
 
-??? question "FAQ"
+??? question "FAQ - [CLICK TO EXPAND]"
 
     ## FAQ
 
@@ -61,3 +61,5 @@ This Quality Settings has been created and tested with info I got from others, a
     The highest preferred quality you can manually enter is 1 less than the Maximum quality. If you use the slider, the preferred quality can be up to 5 lesser than the Maximum quality.
 
     Make sure you have enabled 'Show Advanced' in Radarr, if you don't see a provision to enter the scores, under the Quality settings.
+
+--8<-- "includes/support.md"

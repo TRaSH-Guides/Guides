@@ -122,3 +122,5 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
     Make sure you check both boxes under `Completed Download Handling` at step 3,
 
     and both boxes under `Failed Download Handling` at step 4.
+
+--8<-- "includes/support.md"

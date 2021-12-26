@@ -46,3 +46,5 @@
     ```
 
 --8<-- "includes/hardlinks/docker-compose-commands.md"
+
+--8<-- "includes/support.md"
