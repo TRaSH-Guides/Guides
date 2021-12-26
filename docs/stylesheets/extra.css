@@ -4,14 +4,11 @@
   --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.32);
 }
 
-footer.sponsorship {
-  text-align: center;
-
-  hr {
-    display: inline-block;
-    vertical-align: middle;
-  }
+/*Change footnotes font size */
+.md-typeset .footnote {
+  font-size: 12px;
 }
+
 
 th {
   color:white !important;
@@ -27,4 +24,13 @@ td a:hover {
 
 .md-content {
   --md-typeset-a-color: #1372EB;
+}
+
+footer.sponsorship {
+  text-align: center;
+
+  hr {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

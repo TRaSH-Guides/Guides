@@ -60,3 +60,5 @@ If for any reason you need or want to edit your added list go to.
 Then search for you list you want to edit/remove
 
 ![!Radarr Lists](images/rmc-lists.png)
+
+--8<-- "includes/support.md"

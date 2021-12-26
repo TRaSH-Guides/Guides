@@ -13,9 +13,9 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 !!! note
     If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
 
-    - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths)
+    - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
-    - [TRaSH Guides](/Misc/how-to-set-up-hardlinks-and-atomic-moves/)
+    - [TRaSH Guides](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -67,12 +67,12 @@ Go to `Settings` => `Download Clients`
 
 There you open up the download client for this example I will be using SABnzbd
 
-​    ![!rpm-sabnzbd-host](images/rpm-sabnzbd-host.png)
+![!Sabnzbd Host](images/rpm-sabnzbd-host.png)
 
 This is what you put in your Host in Remote Path Mapping.
 This could be a `hostname`, `container name` or a `IP Address`
 
-??? examples "Example what to add in Add Remote Path Mapping"
+??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
 
     ![!rpm-add-rpm-select-sabnzbd](images/rpm-add-rpm-select-sabnzbd.png)
 
@@ -84,7 +84,7 @@ In SABnzbd go to `settings` => `Folders`
 
 ![!rpm-sabnzbd-folders-cdf](images/rpm-sabnzbd-folders-cdf.png)
 
-??? examples "Example what to add in Add Remote Path Mapping"
+??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
 
     ![!rpm-add-rpm-remote-path](images/rpm-add-rpm-remote-path.png)
 
@@ -94,7 +94,7 @@ To find what you need to put in in your local path you need to know how Radarr i
 
 Click on the browse button and browse to the location where the files are accessible for Radarr.
 
-??? examples "Example what to add in Add Remote Path Mapping"
+??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
 
     ![!rpm-add-local-path](images/rpm-add-local-path.png)
 
@@ -103,3 +103,5 @@ The final result will look something like this.
 ![!rpm-final-results](images/rpm-final-results.png)
 
 After these changes the file should be able to be imported by Radarr.
+
+--8<-- "includes/support.md"

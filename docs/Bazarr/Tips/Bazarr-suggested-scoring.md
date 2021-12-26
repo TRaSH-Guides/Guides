@@ -34,8 +34,8 @@ This score is the minimal score that the subs should match to for your release, 
 ![!Score Threshold](images/settings-subtitles-sync-score.png)
 
 - Enable `Automatic Subtitles Synchronization` at step 3.
-- Enable `Series Score Threshold` at step 4 and set the score to `96`.
-- Enable `Movies Score Threshold` at step 5 and set the score to `86`.
+- Enable `Series Score Threshold` at step 4 and set the score to `96`.[^1]
+- Enable `Movies Score Threshold` at step 5 and set the score to `86`.[^1]
 
 This will set the Synchronization Score Threshold, meaning at which score bazarr will sync the subtitles.
 
@@ -45,9 +45,10 @@ This will set the Synchronization Score Threshold, meaning at which score bazarr
     - it use the embedded subtitles track as reference, if not present.
     - it needs to extract the audio track and analyze it to define start of sentence markers.
 
-### Why not set the Synchronization Score to max
-
-??? faq "Why not set the Synchronization Score to max"
+[^1]:
+    Why not set the Synchronization Score to max?
     It's kinda useless to start with why would you want to try to sync perfectly matching subs in the first place ?
 
     I personally noticed that when setting it to high 98-100 I would actually get subs that are like 1 second to slow/fast.
+
+--8<-- "includes/support.md"

@@ -160,49 +160,42 @@ You now only need to make use of `Sonarr 1`, When you got a TV Shows (or a Movie
 ------
 
 [^1]:
-    ??? faq "1080p streaming optimized quality profile - [CLICK TO EXPAND]"
+    If you're interested in the 1080p streaming optimized quality profile you can contact me on [discord](https://trash-guides.info/discord)
 
-        If you're interested in the 1080p streaming optimized quality profile you can contact me on [discord](https://trash-guides.info/discord)
+    This is a special quality profile i created for people who are really interested in it
 
-        This is a special quality profile i created for people who are really interested in it
+    This release profile is fine tuned when you want to run a 2nd Radarr for 1080p, and want minimum to none transcoding and smaller sizes for the second copy's
 
-        This release profile is fine tuned when you want to run a 2nd Radarr for 1080p, and want minimum to none transcoding and smaller sizes for the second copy's
+    Why choose this quality profile?
 
-        - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
-        - Small sizes
-        - Good quality
-        - No DoVi
-        - Only AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
-
-        !!! note "Why choose this quality profile?"
-
-            - You want maximum compatibility between all devices and still a HQ releases.
-            - You run 2 instances of Radarr and want both version or just for the 1080p ones.
-            - You want to have minimum till none transcoding for low powered devices or remote streaming.
+    - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
+    - Small sizes
+    - Good quality
+    - Only AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
+    - You want maximum compatibility between all devices and still a HQ releases.
+    - You run 2 instances of Radarr and want both version or just for the 1080p ones.
+    - You want to have minimum till none transcoding for low powered devices or remote streaming.
 
 [^2]:
-    ??? faq "When Radarr shall consider a movie is available - [CLICK TO EXPAND]"
 
-        - **Announced**: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
-        - **In Cinemas**: Radarr shall consider movies available as soon as movies they hit cinemas. This option is not recommended.
-        - **Released**: Radarr shall consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.
+    - **Announced**: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
+    - **In Cinemas**: Radarr shall consider movies available as soon as movies they hit cinemas. This option is not recommended.
+    - **Released**: Radarr shall consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.
 
 [^3]:
-    ??? FAQ "Monitoring Options - [CLICK TO EXPAND]"
 
-        - **All Episodes**: Monitor all episodes except specials
-        - **Future Episodes**: Monitor episodes that have not aired yet
-        - **Missing Episodes**: Monitor episodes that do not have files or have not aired yet
-        - **Existing Episodes**: Monitor episodes that have files or have not aired yet
-        - **First Season**: Monitor all episodes of the first season. All other seasons will be ignored
-        - **Latest Season**: Monitor all episodes of the latest season and future seasons
-        - **None**: No episodes will be monitored
+    - **All Episodes**: Monitor all episodes except specials
+    - **Future Episodes**: Monitor episodes that have not aired yet
+    - **Missing Episodes**: Monitor episodes that do not have files or have not aired yet
+    - **Existing Episodes**: Monitor episodes that have files or have not aired yet
+    - **First Season**: Monitor all episodes of the first season. All other seasons will be ignored
+    - **Latest Season**: Monitor all episodes of the latest season and future seasons
+    - **None**: No episodes will be monitored
 
 [^4]:
-    ??? FAQ "Series Type - [CLICK TO EXPAND]"
 
-        - **Anime**: Episodes released using an absolute episode number
-        - **Daily**: Episodes released daily or less frequently that use year-month-day (2017-05-25)
-        - **Standard**: Episodes released with SxxEyy pattern
+    - **Anime**: Episodes released using an absolute episode number
+    - **Daily**: Episodes released daily or less frequently that use year-month-day (2017-05-25)
+    - **Standard**: Episodes released with SxxEyy pattern
 
 --8<-- "includes/support.md"

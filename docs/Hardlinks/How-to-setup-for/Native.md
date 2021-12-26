@@ -11,3 +11,5 @@
 --8<-- "includes/hardlinks/breakdown-folder-structure.md"
 
 --8<-- "includes/hardlinks/permissions.md"
+
+--8<-- "includes/support.md"

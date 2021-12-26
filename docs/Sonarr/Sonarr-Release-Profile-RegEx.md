@@ -8,7 +8,7 @@ With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
 
-!!! question ""
+!!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 ??? question "FAQ - [CLICK TO EXPAND]"
@@ -519,7 +519,6 @@ If you want to be mentioned please message me on discord, including a link for p
 
     Or use one of the 2 automation tools.
 
-    If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
-
-    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 ------
+
+--8<-- "includes/support.md"

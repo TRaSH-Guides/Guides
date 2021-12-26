@@ -641,3 +641,5 @@ Most of my information and knowledge came from:
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for my guide and general knowledge share.)
 
 Thanks a bunch!!
+
+--8<-- "includes/support.md"

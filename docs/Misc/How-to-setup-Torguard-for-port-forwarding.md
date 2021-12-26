@@ -55,7 +55,7 @@ Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secur
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
 !!! important
-    Also check if your choosen server supports OpenVPN or Wireguard depending what you want to use.
+    Also check if your chosen server supports OpenVPN or Wireguard depending what you want to use.
 
 ### Get your VPN IP
 
@@ -203,3 +203,5 @@ Choose your preferred VPN Tunnel type.
 Thanks:
 
 A big Thanks to [mrhotio](https://github.com/mrhotio) for his excellent instructions on how to setup WireGuard for TorGuard.
+
+--8<-- "includes/support.md"

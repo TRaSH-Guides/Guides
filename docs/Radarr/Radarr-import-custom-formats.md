@@ -7,25 +7,27 @@ Here I will try to explain how you can import Custom Formats for Radarr v3.
 
     **Quality Profile trumps Custom Formats**
 
+    More info [HERE](/Radarr/Radarr-setup-custom-formats/){:target="_blank" rel="noopener noreferrer"}
+
 ## How to Copy/Paste the JSON from the site
 
 In this example i will use the [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr or Plex being both don't support it.
 
 Visit the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and from the Table select [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![cf-table-select-brdisk](images/cf-table-select-brdisk.png)
 
 After you selected it you expand the JSON
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![cf-json-expand](images/cf-json-expand.png)
 
 Then you select the Copy/Paste icon on the top far right
 
-??? success "example"
+??? success "example - [CLICK TO EXPAND]"
 
     ![cf-json-copy-paste](images/cf-json-copy-paste.png)
 
@@ -64,8 +66,6 @@ all you need to do now is click on the `Save` button and you're done.
 
     Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](/Radarr/Radarr-setup-custom-formats/#releases-you-should-avoid)
 
-    If you got any questions or aren't sure what to add just Click the chat badge to join the Discord Channel where you can ask your questions directly
-
-    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
-
 Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
+
+--8<-- "includes/support.md"
