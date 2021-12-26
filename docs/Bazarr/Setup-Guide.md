@@ -260,7 +260,7 @@ Here we're going to select which Subtitle Providers you want to use.
 ![!Providers](images/qs-providers.png)
 
 1. Click on the Plus sign box.
-1. Select the subtitles providers you would like to enable. it is best to select multiple providers and create/use a account with them especially when you got allot of wanted subtitles. Some subtitle providers requires a extra paid Anti-Captcha Service.
+1. Select the subtitles providers you would like to enable. it is best to select multiple providers and create/use a account with them especially when you got alot of wanted subtitles. Some subtitle providers requires a extra paid Anti-Captcha Service.
 1. Your enabled providers.
 
 !!! tip
