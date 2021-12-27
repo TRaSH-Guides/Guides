@@ -4,7 +4,7 @@ So what's the best way to setup the Custom Profiles and which one to use with wh
 
 There isn't a best scores setup, being that everyone has its own personal preference what they prefer Audio or Video or perhaps both.
 
-But being I still get alot of questions about it I decided to create a Guide for it.
+But being I still get a lot of questions about it I decided to create a Guide for it.
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats. That you can use to get a idea how to setup yours.
 
