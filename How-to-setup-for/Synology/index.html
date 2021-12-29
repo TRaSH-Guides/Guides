@@ -1,0 +1,2923 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guides mainly for Sonarr/Radarr/Bazarr and everything related to it.">
+      
+      
+        <meta name="author" content="TRaSH">
+      
+      
+        <link rel="canonical" href="https://trash-guides.info/How-to-setup-for/Synology/">
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+    
+    
+      
+        <title>Synology - TRaSH Guides</title>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.edf004c2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+
+    
+    
+    <script src="../../js/lightgallery.min.js"></script>
+
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7CEncode+Sans+Expanded&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-ZZKM4MPQXL"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-ZZKM4MPQXL",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZKM4MPQXL"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigio" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#synology" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TRaSH Guides" class="md-header__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TRaSH Guides
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Synology
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigio" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TRaSH-/Guides/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRaSH-/Guides
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Radarr/" class="md-tabs__link">
+        Radarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Sonarr/" class="md-tabs__link">
+        Sonarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Bazarr/" class="md-tabs__link">
+        Bazarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Downloaders/" class="md-tabs__link">
+        Downloaders
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Notifiarr/Quick-Start/" class="md-tabs__link">
+        Notifiarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Plex/" class="md-tabs__link">
+        Plex
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Misc/" class="md-tabs__link">
+        Misc
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-tabs__link">
+        Hardlinks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        How to setup for
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TRaSH Guides" class="md-nav__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    TRaSH Guides
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TRaSH-/Guides/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRaSH-/Guides
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Radarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Radarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Radarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-Quality-Settings-File-Size/" class="md-nav__link">
+        Quality Settings (File Size)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-recommended-naming-scheme/" class="md-nav__link">
+        Recommended naming scheme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-import-custom-formats/" class="md-nav__link">
+        How to import Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-how-to-update-custom-formats/" class="md-nav__link">
+        How to Update Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-setup-custom-formats/" class="md-nav__link">
+        How to setup Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-collection-of-custom-formats/" class="md-nav__link">
+        Collection of Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-remote-path-mapping/" class="md-nav__link">
+        Remote Path Mappings explained
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-add-a-movie-collection/" class="md-nav__link">
+        How to add a Movie Collection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-rename-your-folders/" class="md-nav__link">
+        How to rename your folders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-show-unknown-movie-items/" class="md-nav__link">
+        Show Unknown Movie Items
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+        How to Sync 2 Radarr or Sonarr with each other
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Sonarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Sonarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sonarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Sonarr-Quality-Settings-File-Size/" class="md-nav__link">
+        Quality Settings (File Size)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Sonarr-recommended-naming-scheme/" class="md-nav__link">
+        Recommended naming scheme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Sonarr-Release-Profile-RegEx/" class="md-nav__link">
+        Release Profile RegEx (WEB-DL)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/" class="md-nav__link">
+        Release Profile RegEx (Anime)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Sonarr-remote-path-mapping/" class="md-nav__link">
+        Remote Path Mappings explained
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sonarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+        How to Sync 2 Radarr or Sonarr with each other
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Bazarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Bazarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Bazarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/Setup-Guide/" class="md-nav__link">
+        Basic-Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/After-install-configuration/" class="md-nav__link">
+        After Install Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Bazarr/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/Tips/Bazarr-suggested-scoring/" class="md-nav__link">
+        Suggested Scoring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Downloaders
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Downloaders" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Downloaders
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          NZBGet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NZBGet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          NZBGet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/NZBGet/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/NZBGet/Paths-and-Categories/" class="md-nav__link">
+        Path and Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Downloaders/NZBGet/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          SABnzbd
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SABnzbd" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          SABnzbd
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/SABnzbd/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/SABnzbd/Paths-and-Categories/" class="md-nav__link">
+        Path and Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Downloaders/SABnzbd/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          qBittorrent
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="qBittorrent" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          qBittorrent
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Paths/" class="md-nav__link">
+        Paths
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/How-to-add-categories/" class="md-nav__link">
+        How to add Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Port-forwarding/" class="md-nav__link">
+        Port forwarding
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_5">
+          Deluge
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Deluge" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Deluge
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/" class="md-nav__link">
+        Deluge Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/Deluge-Basic-Setup/" class="md-nav__link">
+        Deluge - Basic Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/Deluge-how-to-add-labels/" class="md-nav__link">
+        Deluge - How to add labels
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6">
+          ruTorrent
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ruTorrent" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          ruTorrent
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/ruTorrent/" class="md-nav__link">
+        ruTorrent Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
+        ruTorrent - Basic Setup
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Notifiarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notifiarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Notifiarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notifiarr/Quick-Start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Plex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plex" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Plex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plex/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Plex/profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plex/Tips/Plex-media-server/" class="md-nav__link">
+        Suggested Plex Media Server Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Misc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/how-to-provide-a-docker-compose/" class="md-nav__link">
+        How to provide a docker compose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/How-to-setup-Torguard-for-port-forwarding/" class="md-nav__link">
+        Setup TorGuard for port forwarding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/x265-4k/" class="md-nav__link">
+        x265-4k and Golden Rule
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Hardlinks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardlinks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Hardlinks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-nav__link">
+        Hardlinks - Atomic Moves
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          How to setup for
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to setup for" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          How to setup for
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/" class="md-nav__link">
+        How to setup for
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Dockstarter/" class="md-nav__link">
+        Dockstarter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Native/" class="md-nav__link">
+        Native
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Synology/" class="md-nav__link">
+        Synology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Unraid/" class="md-nav__link">
+        Unraid
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Check-if-hardlinks-are-working/" class="md-nav__link">
+        Check if hardlinks are working
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          How to setup for
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to setup for" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          How to setup for
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        How to setup for
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Dockstarter/" class="md-nav__link">
+        Dockstarter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Native/" class="md-nav__link">
+        Native
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Synology
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Synology
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-script" class="md-nav__link">
+    Automated Script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-docker" class="md-nav__link">
+    Install Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-main-share" class="md-nav__link">
+    Create the main share
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-user" class="md-nav__link">
+    Create a user
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-shared-folder-permissions" class="md-nav__link">
+    Assign shared folder permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assign-application-permissions" class="md-nav__link">
+    Assign application permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    SSH
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puid-and-pgid" class="md-nav__link">
+    PUID and PGID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakdown-of-the-folder-structure" class="md-nav__link">
+    Breakdown of the Folder Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Breakdown of the Folder Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#torrent-clients" class="md-nav__link">
+    Torrent clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usenet-clients" class="md-nav__link">
+    Usenet clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-arrs" class="md-nav__link">
+    The arr(s)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-server" class="md-nav__link">
+    Media Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-needed-subfolder" class="md-nav__link">
+    Create the needed subfolder
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the needed subfolder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-use-usenet" class="md-nav__link">
+    If you use usenet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-you-use-torrents" class="md-nav__link">
+    If you use torrents
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appdata" class="md-nav__link">
+    Appdata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#needed-files" class="md-nav__link">
+    Needed files
+  </a>
+  
+    <nav class="md-nav" aria-label="Needed files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-included-and-whats-not-included" class="md-nav__link">
+    Whats included and Whats not included
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-and-preparations" class="md-nav__link">
+    Changes and preparations
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes and preparations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pullio-auto-update-docker-compose-the-correct-way" class="md-nav__link">
+    Pullio - Auto update docker-compose the correct way
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-docker-compose" class="md-nav__link">
+    Run the Docker Compose
+  </a>
+  
+    <nav class="md-nav" aria-label="Run the Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose-commands" class="md-nav__link">
+    Docker-Compose Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unraid/" class="md-nav__link">
+        Unraid
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-script" class="md-nav__link">
+    Automated Script
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-docker" class="md-nav__link">
+    Install Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-main-share" class="md-nav__link">
+    Create the main share
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-user" class="md-nav__link">
+    Create a user
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-shared-folder-permissions" class="md-nav__link">
+    Assign shared folder permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assign-application-permissions" class="md-nav__link">
+    Assign application permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    SSH
+  </a>
+  
+    <nav class="md-nav" aria-label="SSH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#puid-and-pgid" class="md-nav__link">
+    PUID and PGID
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Folder Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakdown-of-the-folder-structure" class="md-nav__link">
+    Breakdown of the Folder Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Breakdown of the Folder Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#torrent-clients" class="md-nav__link">
+    Torrent clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usenet-clients" class="md-nav__link">
+    Usenet clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-arrs" class="md-nav__link">
+    The arr(s)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#media-server" class="md-nav__link">
+    Media Server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-needed-subfolder" class="md-nav__link">
+    Create the needed subfolder
+  </a>
+  
+    <nav class="md-nav" aria-label="Create the needed subfolder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-use-usenet" class="md-nav__link">
+    If you use usenet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-you-use-torrents" class="md-nav__link">
+    If you use torrents
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appdata" class="md-nav__link">
+    Appdata
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#needed-files" class="md-nav__link">
+    Needed files
+  </a>
+  
+    <nav class="md-nav" aria-label="Needed files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whats-included-and-whats-not-included" class="md-nav__link">
+    Whats included and Whats not included
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-and-preparations" class="md-nav__link">
+    Changes and preparations
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes and preparations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pullio-auto-update-docker-compose-the-correct-way" class="md-nav__link">
+    Pullio - Auto update docker-compose the correct way
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-docker-compose" class="md-nav__link">
+    Run the Docker Compose
+  </a>
+  
+    <nav class="md-nav" aria-label="Run the Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker-compose-commands" class="md-nav__link">
+    Docker-Compose Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+    
+                
+<a href="https://github.com/TRaSH-/Guides/edit/master/docs/How-to-setup-for/Synology.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="synology">Synology<a class="headerlink" href="#synology" title="Permanent link">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose through a terminal.</p>
+<p>This is faster then the GUI and after installing, it shows up in the Docker GUI.</p>
+<p>Thanks to faxity for the initial compose that I used to create the Synology Guide.</p>
+<p>And a very big thanks to <a href="https://www.buymeacoffee.com/bokkoman" rel="noopener noreferrer" target="_blank">Bokkoman</a> and <a href="https://github.com/BaukeZwart" rel="noopener noreferrer" target="_blank">BZwart</a> that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.</p>
+</div>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.</p>
+<h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link">¶</a></h3>
+<details class="example">
+<summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></strong>) - [CLICK TO EXPAND]</summary>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script.</p>
+<p>The script is new and only tested on Synology DSM7.</p>
+<p><strong><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> We are not held reliable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></strong></p>
+</div>
+<p>To get this working you will need to enable terminal access (SSH).</p>
+<p>To enable this on your Synology take a look <a href="#ssh" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p>When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.</p>
+<div class="highlight"><pre><span></span><code>curl -sL git.io/syno-script &gt; ~/syno-script
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo bash ~/syno-script
+</code></pre></div>
+</details>
+<h2 id="install-docker">Install Docker<a class="headerlink" href="#install-docker" title="Permanent link">¶</a></h2>
+<p>You need to install Docker from the <code>Package Center</code>. This should also create a share named <code>docker</code>, check File Station if it is present.</p>
+<h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of <strong>ONE</strong> share with subfolders.</p>
+</div>
+<p>We will use a new share named <code>data</code> (lowercase) for all your library media.</p>
+<p>Later in this guide, we will fill this share with subfolders.</p>
+<p>To create a new share:</p>
+<p><code>Control Panel</code> &gt; <code>Shared Folder</code> &gt; click <code>Create</code> &gt; choose <code>Create Shared Folder</code></p>
+<p><div class="lightgallery"><a data-sub-html="create_share" href="../images/create_share.png"><img alt="create_share" src="../images/create_share.png" /></a></div></p>
+<p>Name this shared folder <code>data</code>. You can disable the trash can. Click next until you are done.</p>
+<h2 id="create-a-user">Create a user<a class="headerlink" href="#create-a-user" title="Permanent link">¶</a></h2>
+<p>For this, we are going to create a new user that only has access to the share(s) that we use for this guide.</p>
+<p>Go to <code>Control Panel</code> &gt; <code>User &amp; Group</code></p>
+<p>In the <code>User</code> section, create a new user. Name it whatever you like, but for this guide we will use <code>docker</code>.</p>
+<p><div class="lightgallery"><a data-sub-html="adduser" href="../images/adduser.PNG"><img alt="adduser" src="../images/adduser.PNG" /></a></div></p>
+<p>Fill out the rest of the information, generate a password or type your own.</p>
+<p>Click next, you will now be able to select which group this user will belong to, it should only be <code>users</code>. Click <code>Next</code>.</p>
+<h3 id="assign-shared-folder-permissions">Assign shared folder permissions<a class="headerlink" href="#assign-shared-folder-permissions" title="Permanent link">¶</a></h3>
+<p>In this screen you will be able to select which Shares this user will have access to, click <code>No Access</code> on the top, this will deny all access.</p>
+<p>Now only select <code>Read/Write</code> on the shares <code>docker</code> and <code>data</code>.</p>
+<p><div class="lightgallery"><a data-sub-html="Assign shared folders permissions" href="../images/adduser_2.PNG"><img alt="Assign shared folders permissions" src="../images/adduser_2.PNG" /></a></div></p>
+<p>Click <code>Next</code> until you reach <code>Assign application permissions</code></p>
+<h3 id="assign-application-permissions">Assign application permissions<a class="headerlink" href="#assign-application-permissions" title="Permanent link">¶</a></h3>
+<p>In this screen you will be able to select which application this user will have access to, Check <code>Deny</code> for all applications.</p>
+<p><div class="lightgallery"><a data-sub-html="Assign application permissions" href="../images/adduser_3.PNG"><img alt="Assign application permissions" src="../images/adduser_3.PNG" /></a></div></p>
+<p>Continue to click <code>Next</code> until you are finished.</p>
+<h2 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">¶</a></h2>
+<p>You are mostly going to use the terminal. Some parts will need the Synology web GUI.
+To enable terminal, you need to enable SSH in the Synology Settings.</p>
+<p><code>Control Panel</code> &gt; <code>Terminal &amp; SNMP</code> &gt; <code>Enable SSH service</code></p>
+<p><div class="lightgallery"><a data-sub-html="synology-control-panel" href="../images/synology-ssh.png"><img alt="synology-control-panel" src="../images/synology-ssh.png" /></a></div></p>
+<p>Then use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">Putty</a> and you can SSH into your Synology.</p>
+<p>If you get a popup asking if you want to trust the key,
+Just press <code>OK</code> or <code>ACCEPT</code></p>
+<p>Enter the login information of your main Synology user account.</p>
+<h3 id="puid-and-pgid">PUID and PGID<a class="headerlink" href="#puid-and-pgid" title="Permanent link">¶</a></h3>
+<p>In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
+<p>Go into your terminal app, login to your synology ssh.</p>
+<p>Once logged in type <code>id $user</code>. Change $user to the newly created username <code>docker</code>.</p>
+<p><div class="lightgallery"><a data-sub-html="synology-id" href="../images/synology-id.png"><img alt="synology-id" src="../images/synology-id.png" /></a></div></p>
+<p>This will show you the UID (aka PUID).
+Which in this screenshot is <code>1035</code> for the docker user
+and the GID (aka PGID) which is <code>100</code> for the users group.
+Remember these values for later use.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>It is not recommended to use (anymore) your admin/main user account. That is why we just created a new user.</p>
+</div>
+<hr />
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h2>
+<p>For this example we're going to make use of the share called <code>data</code>.</p>
+<p>On the host (Synology) terminal you will need to add <code>/volume1/</code> before it. So <code>/volume1/data</code></p>
+<p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things neat. The <code>library</code> folder has nicely named <code>tv</code>, <code>movies</code> and <code>music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
+<p>These subfolders you need to create your self.</p>
+<p><em>I'm using lower case on all folder on  purpose, being Linux is case sensitive.</em></p>
+<div class="highlight"><pre><span></span><code>data
+├── torrents
+│  ├── movies
+│  ├── music
+│  └── tv
+├── usenet
+│  ├── movies
+│  ├── music
+│  └── tv
+└── media
+   ├── movies
+   ├── music
+   └── tv
+</code></pre></div>
+<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
+<h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link">¶</a></h4>
+<p>qBittorrent, Deluge, ruTorrent</p>
+<p>The reason why we use <code>/data/torrents</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
+<div class="highlight"><pre><span></span><code>data
+└── torrents
+   ├── movies
+   ├── music
+   └── tv
+</code></pre></div>
+<h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link">¶</a></h4>
+<p>NZBGet or SABnzbd</p>
+<p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
+<div class="highlight"><pre><span></span><code>data
+└── usenet
+   ├── movies
+   ├── music
+   └── tv
+</code></pre></div>
+<h4 id="the-arrs">The arr(s)<a class="headerlink" href="#the-arrs" title="Permanent link">¶</a></h4>
+<p>Sonarr, Radarr and Lidarr</p>
+<p>Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.</p>
+<div class="highlight"><pre><span></span><code>data
+├── torrents
+│  ├── movies
+│  ├── music
+│  └── tv
+├── usenet
+│  ├── movies
+│  ├── music
+│  └── tv
+└── media
+   ├── movies
+   ├── music
+   └── tv
+</code></pre></div>
+<h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link">¶</a></h4>
+<p>Plex, Emby, JellyFin and Bazarr</p>
+<p>Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
+<div class="highlight"><pre><span></span><code>data
+└── media
+   ├── movies
+   ├── music
+   └── tv
+</code></pre></div>
+<hr />
+<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside the applications.</strong></p>
+<hr />
+<h3 id="create-the-needed-subfolder">Create the needed subfolder<a class="headerlink" href="#create-the-needed-subfolder" title="Permanent link">¶</a></h3>
+<p>Here we will create the needed subfolders for your media library and also for your preferred download client.
+If you use both then run both commands</p>
+<h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link">¶</a></h4>
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+</code></pre></div>
+<h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link">¶</a></h4>
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+</code></pre></div>
+<hr />
+<h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link">¶</a></h3>
+<p>Your appdata will be stored in <code>/volume1/docker/appdata/{appname}</code>
+These <code>{appname}</code> sub folders you need to create your self. (<em>This is a limitation of the Synology</em>)
+We're going to do this in Putty or a similar program.</p>
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,pullio<span class="o">}</span>
+</code></pre></div>
+<p>You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.</p>
+<p>So your appdata folder will look like this.</p>
+<div class="highlight"><pre><span></span><code>ls -al /volume1/docker/appdata
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>docker
+└── appdata
+    ├── radarr
+    ├── sonarr
+    ├── bazarr
+    ├── plex
+    ├── pullio
+    └── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
+</code></pre></div>
+<hr />
+<h2 id="needed-files">Needed files<a class="headerlink" href="#needed-files" title="Permanent link">¶</a></h2>
+<p>Now we are ready to move to the installation of containers.</p>
+<p>For this, we need two files:</p>
+<ol>
+<li><code>docker-compose.yml</code></li>
+<li><code>.env</code></li>
+</ol>
+<p>We will start with downloading the <code>docker-compose.yml</code> file</p>
+<p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use the command below:</p>
+<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
+</code></pre></div>
+<h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link">¶</a></h3>
+<details class="question">
+<summary>What's included and What's not included - [CLICK TO EXPAND]</summary>
+<p>This docker-compose file will have the following docker containers included.</p>
+<ul>
+<li>Radarr</li>
+<li>Sonarr</li>
+<li>Bazarr (Subtitle searcher and downloader)</li>
+<li>Plex</li>
+</ul>
+<p>What's not included (and where are the download clients?).</p>
+<p>I didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer, so I created a new <a href="https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates" rel="noopener noreferrer" target="_blank">Repository</a> on Github where I provide and maintain some templates that are ready to use with the main <code>docker-compose.yml</code>.</p>
+<p>The only thing you need to do is copy/paste what's inside the <code>.yml</code> file in to the main <code>docker-compose.yml</code>, the template also has the command what you need to use to create the <a href="#appdata">appdata</a> folder that we explained earlier.</p>
+</details>
+<p>Second we will download the <code>.env</code> file</p>
+<p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env" rel="noopener noreferrer" target="_blank">.env</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use this command:</p>
+<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
+</code></pre></div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT  <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+</div>
+<hr />
+<h3 id="changes-and-preparations">Changes and preparations<a class="headerlink" href="#changes-and-preparations" title="Permanent link">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you need to edit docker-compose.yml ot he .env file we advise to use <a href="https://notepad-plus-plus.org/" rel="noopener noreferrer" target="_blank">Notepad++</a> or <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a></p>
+</div>
+<p>The <code>.env</code> file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the <code>.env</code> file.</p>
+<ol>
+<li>DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
+<li>DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
+<li>PUID/PGID (this info you got earlier from <a href="#puid-and-pgid">HERE</a></li>
+<li>TZ (Change to your timezone, can be found <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" rel="noopener noreferrer" target="_blank">HERE</a></li>
+<li>Install and Create a task scheduler for Pullio, so your containers stay up to date.</li>
+</ol>
+<div class="admonition info">
+<p>The <code>.env</code> holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.</p>
+</div>
+<hr />
+<h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link">¶</a></h4>
+<p>Pullio allows you to automatically update your containers. And send you a notification through various means. In my setup, I use a Discord Webhook.</p>
+<p>First you need to download Pullio</p>
+<div class="highlight"><pre><span></span><code>   sudo curl -fsSL <span class="s2">&quot;https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh&quot;</span> -o /usr/local/bin/pullio
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>   sudo chmod +x /usr/local/bin/pullio
+</code></pre></div>
+<p>For Pullio to work, you will need to create in your Task Scheduler a "Scheduled Task" that runs for example at 4am at night with root privileges.</p>
+<p><code>Control Panel</code> &gt; <code>Task Scheduler</code> &gt; click <code>Create</code> &gt; choose <code>Scheduled task - user defined script</code></p>
+<p>Give the task a name so you know what it does. Choose user <code>root</code>.</p>
+<p>In the <code>Schedule</code> tab choose whenever you want it to check for updates.</p>
+<p>At <code>Task Settings</code> tab, add the following line in the Run Command section:</p>
+<div class="highlight"><pre><span></span><code>/usr/local/bin/pullio &gt; /volume1/docker/appdata/pullio/pullio.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</code></pre></div>
+<p>It can be frustrating to test the script if no docker image updates are available, for that you can run command <code>sudo pullio --debug</code> and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.</p>
+<p>More info about Pullio <a href="https://hotio.dev/pullio/" rel="noopener noreferrer" target="_blank">HERE</a></p>
+<hr />
+<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">¶</a></h3>
+<p>Now we need to make sure that the newly created files and folders have the correct permissions.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you're using a different user than <code>docker</code> (the user generated in the beginning), then you need to change the <code>docker:users</code> part in the commands below!!!</p>
+</div>
+<div class="highlight"><pre><span></span><code>sudo chown -R docker:users /volume1/data /volume1/docker
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo chmod -R <span class="nv">a</span><span class="o">=</span>,a+rX,u+w,g+w /volume1/data /volume1/docker
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you copy files from a different library into the newly created library, you need to rerun these commands. !!!</p>
+</div>
+<hr />
+<h2 id="run-the-docker-compose">Run the Docker Compose<a class="headerlink" href="#run-the-docker-compose" title="Permanent link">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
+If you had previous installed apps, make a backup of their config folders.</p>
+</div>
+<p>When you did all the above steps you only need to run the following commands:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /volume1/docker/appdata
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>sudo docker-compose up -d
+</code></pre></div>
+<p>You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on <a href="https://0bin.net/" rel="noopener noreferrer" target="_blank">0bin</a> and join the guides-discord <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank">here</a> and provide the pastebin link with the error, have patience because of timezone differences.</p>
+<hr />
+<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, run the command <code>sudo docker-compose -f /volume1/docker/appdata/docker-compose.yml up -d</code> again.</p>
+<p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
+<p>Just don't use the GUI, only for information purposes !!!</p>
+</div>
+<h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link">¶</a></h3>
+<details class="hint">
+<summary>docker-compose commands - [CLICK TO EXPAND]</summary>
+<ul>
+<li><code>sudo docker-compose up -d</code> (This Docker-compose command helps builds the image, then creates and starts Docker containers. The containers are from the services specified in the compose file. If the containers are already running and you run docker-compose up, it recreates the container.)</li>
+<li><code>sudo docker-compose pull</code> (Pulls an image associated with a service defined in a docker-compose.yml)</li>
+<li><code>sudo docker-compose down</code> (The Docker-compose down command also stops Docker containers like the stop command does. But it goes the extra mile. Docker-compose down, doesn’t just stop the containers, it also removes them.)</li>
+<li><code>sudo docker system prune -a --volumes --force</code> (Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.)</li>
+</ul>
+</details>
+<hr />
+<div class="admonition help">
+<p class="admonition-title">Questions or Suggestions?</p>
+<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 29, 2021 06:15:01</span>
+      
+    
+  </small>
+</div>
+
+              
+    <footer class="sponsorship">
+        <hr>
+        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
+        </a>
+        <hr>
+    </footer>
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Native/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Native" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Native
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Unraid/" class="md-footer__link md-footer__link--next" aria-label="Next: Unraid" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Unraid
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 TRaSH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://trash-guides.info/discord" target="_blank" rel="noopener" title="trash-guides.info" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/TRaSH-/Guides" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    
+    
+    
+      <script src="../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      
+    
+    <script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+        lightGallery(elements[i]);
+    }
+    </script>
+
+  </body>
+</html>

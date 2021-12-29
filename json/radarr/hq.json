@@ -1,0 +1,71 @@
+{
+  "trash_id": "1c7d7b04b15cc53ea61204bebbcc1ee2",
+  "trash_score": "1700",
+  "name": "HQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "[BLOCK1]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-BMF|-decibeL|\\bD-Z0N3\\b|\\bFTW-HD\\b|-HiFi|-NCmt|-OISTiLe|-TDD|\\bZQ\\b"
+      }
+    },
+    {
+      "name": "[BLOCK2]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-HiSD|-NTb|-ift|-geek|-tnp|-pter|-bbq"
+      }
+    },
+    {
+      "name": "[BLOCK3]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-CRiSC|-CtrlHD|-DON|\\b-EA\\b|-EbP|-LolHD|-SbR|-TayTo|-VietHD"
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    }
+  ]
+}

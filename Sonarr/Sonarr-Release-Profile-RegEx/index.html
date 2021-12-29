@@ -1,0 +1,2860 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guides mainly for Sonarr/Radarr/Bazarr and everything related to it.">
+      
+      
+        <meta name="author" content="TRaSH">
+      
+      
+        <link rel="canonical" href="https://trash-guides.info/Sonarr/Sonarr-Release-Profile-RegEx/">
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
+    
+    
+      
+        <title>Release Profile RegEx (WEB-DL) - TRaSH Guides</title>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.edf004c2.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+
+    
+    
+    <script src="../../js/lightgallery.min.js"></script>
+
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7CEncode+Sans+Expanded&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-ZZKM4MPQXL"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-ZZKM4MPQXL",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZKM4MPQXL"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigio" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#release-profile-regex-web-dl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TRaSH Guides" class="md-header__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TRaSH Guides
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Release Profile RegEx (WEB-DL)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigio" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TRaSH-/Guides/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRaSH-/Guides
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Radarr/" class="md-tabs__link">
+        Radarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Sonarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Bazarr/" class="md-tabs__link">
+        Bazarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Downloaders/" class="md-tabs__link">
+        Downloaders
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Notifiarr/Quick-Start/" class="md-tabs__link">
+        Notifiarr
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Plex/" class="md-tabs__link">
+        Plex
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Misc/" class="md-tabs__link">
+        Misc
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-tabs__link">
+        Hardlinks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../How-to-setup-for/" class="md-tabs__link">
+        How to setup for
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TRaSH Guides" class="md-nav__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    TRaSH Guides
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TRaSH-/Guides/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TRaSH-/Guides
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Radarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Radarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Radarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-Quality-Settings-File-Size/" class="md-nav__link">
+        Quality Settings (File Size)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-recommended-naming-scheme/" class="md-nav__link">
+        Recommended naming scheme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-import-custom-formats/" class="md-nav__link">
+        How to import Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-how-to-update-custom-formats/" class="md-nav__link">
+        How to Update Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-setup-custom-formats/" class="md-nav__link">
+        How to setup Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-collection-of-custom-formats/" class="md-nav__link">
+        Collection of Custom Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Radarr-remote-path-mapping/" class="md-nav__link">
+        Remote Path Mappings explained
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-add-a-movie-collection/" class="md-nav__link">
+        How to add a Movie Collection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-rename-your-folders/" class="md-nav__link">
+        How to rename your folders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Radarr-show-unknown-movie-items/" class="md-nav__link">
+        Show Unknown Movie Items
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Radarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+        How to Sync 2 Radarr or Sonarr with each other
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Sonarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Sonarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Sonarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sonarr-Quality-Settings-File-Size/" class="md-nav__link">
+        Quality Settings (File Size)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sonarr-recommended-naming-scheme/" class="md-nav__link">
+        Recommended naming scheme
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Release Profile RegEx (WEB-DL)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Release Profile RegEx (WEB-DL)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propers-and-repacks" class="md-nav__link">
+    Propers and Repacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-release-profile" class="md-nav__link">
+    First Release Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="First Release Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-sources-streaming-service" class="md-nav__link">
+    Release Sources (Streaming Service)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-release-profile" class="md-nav__link">
+    Second Release Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Release Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule" class="md-nav__link">
+    Golden rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p2p-groups-repackproper" class="md-nav__link">
+    P2P Groups + Repack/Proper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-quality-groups" class="md-nav__link">
+    Low Quality Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-preferred-preferences" class="md-nav__link">
+    Optional preferred preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Optional preferred preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optional-hdr-if-you-prefer-hdr" class="md-nav__link">
+    Optional HDR - if you prefer HDR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-use-these-only-if-you-dislike-renamed-and-retagged-releases" class="md-nav__link">
+    Optional (use these only if you dislike renamed and retagged releases)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-releases-that-ends-with-en" class="md-nav__link">
+    Optional (matches releases that ends with EN)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-any-release-that-contains-1-as-prefix-for-release-groups" class="md-nav__link">
+    Optional Matches any release that contains '1-' as prefix for Release Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-season-packs-use-this-if-you-prefer-season-packs" class="md-nav__link">
+    Optional Matches Season Packs (use this if you prefer Season packs)
+  </a>
+  
+    <nav class="md-nav" aria-label="Optional Matches Season Packs (use this if you prefer Season packs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#su-season-pack-issue" class="md-nav__link">
+    .su season pack issue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-dovi-for-webdl" class="md-nav__link">
+    Optional Ignore DoVi for WEBDL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-the-group-scene" class="md-nav__link">
+    Optional Ignore the group -scene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-scene-releases" class="md-nav__link">
+    Optional Ignore scene releases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-little-explanation-of-the-scores-and-why" class="md-nav__link">
+    A little explanation of the scores and why
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-results" class="md-nav__link">
+    Final Results
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sonarr-Release-Profile-RegEx-Anime/" class="md-nav__link">
+        Release Profile RegEx (Anime)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sonarr-remote-path-mapping/" class="md-nav__link">
+        Remote Path Mappings explained
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" type="checkbox" id="__nav_3_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_7">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+        How to Sync 2 Radarr or Sonarr with each other
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Bazarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Bazarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Bazarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/Setup-Guide/" class="md-nav__link">
+        Basic-Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/After-install-configuration/" class="md-nav__link">
+        After Install Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Bazarr/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Bazarr/Tips/Bazarr-suggested-scoring/" class="md-nav__link">
+        Suggested Scoring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Downloaders
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Downloaders" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Downloaders
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          NZBGet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NZBGet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          NZBGet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/NZBGet/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/NZBGet/Paths-and-Categories/" class="md-nav__link">
+        Path and Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Downloaders/NZBGet/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          SABnzbd
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="SABnzbd" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          SABnzbd
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/SABnzbd/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/SABnzbd/Paths-and-Categories/" class="md-nav__link">
+        Path and Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Downloaders/SABnzbd/scripts/" class="md-nav__link">
+        Scripts
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          qBittorrent
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="qBittorrent" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          qBittorrent
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Paths/" class="md-nav__link">
+        Paths
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/How-to-add-categories/" class="md-nav__link">
+        How to add Categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/qBittorrent/Port-forwarding/" class="md-nav__link">
+        Port forwarding
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_5">
+          Deluge
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Deluge" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_5">
+          <span class="md-nav__icon md-icon"></span>
+          Deluge
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/" class="md-nav__link">
+        Deluge Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/Deluge-Basic-Setup/" class="md-nav__link">
+        Deluge - Basic Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/Deluge-how-to-add-labels/" class="md-nav__link">
+        Deluge - How to add labels
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_6">
+          ruTorrent
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ruTorrent" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_6">
+          <span class="md-nav__icon md-icon"></span>
+          ruTorrent
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/ruTorrent/" class="md-nav__link">
+        ruTorrent Placeholder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
+        ruTorrent - Basic Setup
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Notifiarr
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notifiarr" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Notifiarr
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notifiarr/Quick-Start/" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Plex
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plex" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Plex
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plex/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Plex/profiles/" class="md-nav__link">
+        Profiles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Plex/Tips/Plex-media-server/" class="md-nav__link">
+        Suggested Plex Media Server Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Misc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/how-to-provide-a-docker-compose/" class="md-nav__link">
+        How to provide a docker compose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/How-to-setup-Torguard-for-port-forwarding/" class="md-nav__link">
+        Setup TorGuard for port forwarding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Misc/x265-4k/" class="md-nav__link">
+        x265-4k and Golden Rule
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Hardlinks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardlinks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Hardlinks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-nav__link">
+        Hardlinks - Atomic Moves
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          How to setup for
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to setup for" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          How to setup for
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/" class="md-nav__link">
+        How to setup for
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Dockstarter/" class="md-nav__link">
+        Dockstarter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Native/" class="md-nav__link">
+        Native
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Synology/" class="md-nav__link">
+        Synology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/How-to-setup-for/Unraid/" class="md-nav__link">
+        Unraid
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardlinks/Check-if-hardlinks-are-working/" class="md-nav__link">
+        Check if hardlinks are working
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          How to setup for
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to setup for" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          How to setup for
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/" class="md-nav__link">
+        How to setup for
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/Docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/Dockstarter/" class="md-nav__link">
+        Dockstarter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/Native/" class="md-nav__link">
+        Native
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/Synology/" class="md-nav__link">
+        Synology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../How-to-setup-for/Unraid/" class="md-nav__link">
+        Unraid
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propers-and-repacks" class="md-nav__link">
+    Propers and Repacks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-release-profile" class="md-nav__link">
+    First Release Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="First Release Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-sources-streaming-service" class="md-nav__link">
+    Release Sources (Streaming Service)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-release-profile" class="md-nav__link">
+    Second Release Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Release Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule" class="md-nav__link">
+    Golden rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p2p-groups-repackproper" class="md-nav__link">
+    P2P Groups + Repack/Proper
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-quality-groups" class="md-nav__link">
+    Low Quality Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-preferred-preferences" class="md-nav__link">
+    Optional preferred preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Optional preferred preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optional-hdr-if-you-prefer-hdr" class="md-nav__link">
+    Optional HDR - if you prefer HDR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-use-these-only-if-you-dislike-renamed-and-retagged-releases" class="md-nav__link">
+    Optional (use these only if you dislike renamed and retagged releases)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-releases-that-ends-with-en" class="md-nav__link">
+    Optional (matches releases that ends with EN)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-any-release-that-contains-1-as-prefix-for-release-groups" class="md-nav__link">
+    Optional Matches any release that contains '1-' as prefix for Release Groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-matches-season-packs-use-this-if-you-prefer-season-packs" class="md-nav__link">
+    Optional Matches Season Packs (use this if you prefer Season packs)
+  </a>
+  
+    <nav class="md-nav" aria-label="Optional Matches Season Packs (use this if you prefer Season packs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#su-season-pack-issue" class="md-nav__link">
+    .su season pack issue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-dovi-for-webdl" class="md-nav__link">
+    Optional Ignore DoVi for WEBDL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-the-group-scene" class="md-nav__link">
+    Optional Ignore the group -scene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-ignore-scene-releases" class="md-nav__link">
+    Optional Ignore scene releases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-little-explanation-of-the-scores-and-why" class="md-nav__link">
+    A little explanation of the scores and why
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-results" class="md-nav__link">
+    Final Results
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+    
+                
+<a href="https://github.com/TRaSH-/Guides/edit/master/docs/Sonarr/Sonarr-Release-Profile-RegEx.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+<h1 id="release-profile-regex-web-dl">Release Profile RegEx (WEB-DL)<a class="headerlink" href="#release-profile-regex-web-dl" title="Permanent link">¶</a></h1>
+<p>Sonarr V3 has a great feature called Release Profile.
+With this option you can fine tune your preference.</p>
+<p>The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).</p>
+<div class="admonition error">
+<p><strong>If you don't care about quality then stop reading and see if the other tutorials are helpful for you.</strong></p>
+</div>
+<details class="question">
+<summary>FAQ - [CLICK TO EXPAND]</summary>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h2>
+<p><strong>Q: Why do you only have a release profile for WEB-DL?</strong></p>
+<p>A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between Quality and Size and you often don't see big difference anyway for TV shows. (Except for shows like GOT, Vikings, etc)</p>
+<p><strong>Q: Why do you prefer P2P groups over scene releases?</strong></p>
+<p>A: Scene release always release in a rush to bring it out as fast as possible.</p>
+<p>So I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
+P2P releases are a bit smarter and work sort of together by not doing the same release.
+Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
+And in my opinion the P2P are of better quality.
+There's one scene group that does bring out quality releases <code>-deflate/-inflate</code>.</p>
+<p><strong>Q: Why do I see that many Amazon WEB-DL's repacks/proper lately?</strong></p>
+<p>A: A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
+The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.</p>
+<p><strong>Q: Why did you remove all the scene groups?</strong></p>
+<p>A: I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed a lot of popup scene releases meaning we need to update often.</p>
+<p>With this it also means all scene and (yet) unknown groups will be getting a score of <code>0</code> and not <code>-50</code>.</p>
+<p>I will still keep a eye on them and add the Low Quality Groups to the <code>-100</code> score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.</p>
+</details>
+<hr />
+<h2 id="propers-and-repacks">Propers and Repacks<a class="headerlink" href="#propers-and-repacks" title="Permanent link">¶</a></h2>
+<p>First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !</p>
+<p><div class="lightgallery"><a data-sub-html="rp-settings-media-management-proper" href="../images/rp-settings-media-management-proper.png"><img alt="rp-settings-media-management-proper" src="../images/rp-settings-media-management-proper.png" /></a></div></p>
+<p>Settings =&gt; <code>Media Management</code>
+Where we going to set it to <code>Do not Prefer</code></p>
+<p>Then we navigate in Sonarr to the Settings =&gt;  <code>Profiles</code></p>
+<p><div class="lightgallery"><a data-sub-html="rp-settings-profiles" href="../images/rp-settings-profiles.png"><img alt="rp-settings-profiles" src="../images/rp-settings-profiles.png" /></a></div></p>
+<p>Then you will get a popup screen that will look like this:</p>
+<p><div class="lightgallery"><a data-sub-html="rp-release-profile" href="../images/rp-release-profile.png"><img alt="rp-release-profile" src="../images/rp-release-profile.png" /></a></div></p>
+<ol>
+<li>
+<p><code>Must Contain</code> =&gt; add words that the release name <strong>MUST HAVE!</strong></p>
+</li>
+<li>
+<p><code>Must Not Contain</code> =&gt; add words that the release name <strong>MUST NOT HAVE OR IT WILL BE REJECTED!</strong></p>
+</li>
+<li>
+<p><code>Preferred</code> =&gt; add words you prefer with a certain score what you prefer more or upgrade.</p>
+</li>
+<li>
+<p><code>Include Preferred when Renaming</code> =&gt; When you add <code>{Preferred Words}</code> to your renaming scheme it will add this info.</p>
+</li>
+<li>
+<p><code>Indexers</code> =&gt; Specify what indexer the profile applies to.</p>
+</li>
+<li>
+<p><code>Tags</code> =&gt; create a tag so this is only used by shows that you give this tag or else it's global.</p>
+</li>
+</ol>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Number between the <strong>[</strong>brackets<strong>]</strong> in the following release profiles are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.</p>
+</div>
+<hr />
+<h2 id="first-release-profile">First Release Profile<a class="headerlink" href="#first-release-profile" title="Permanent link">¶</a></h2>
+<!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We're going to make use of 2 separate release profiles.</p>
+</div>
+<h3 id="release-sources-streaming-service">Release Sources (Streaming Service)<a class="headerlink" href="#release-sources-streaming-service" title="Permanent link">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Also check mark <code>Include Preferred when Renaming</code> and add <code>{Preferred Words}</code> to your renaming scheme when you get download loop issues!!!</p>
+<p>What it does:</p>
+<p>When enabled the block with the <a href="#release-source-streaming-service">Release Source (Streaming Service)</a> in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
+Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.</p>
+<p>Enabling the include in preferred words for AMZN and adding that to the file name fixes that.</p>
+<p>Example of a naming scheme for series:</p>
+<p>Can be found <a href="/Sonarr/Sonarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">HERE</a></p>
+</div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [100]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>amzn<span class="p">|</span>amazon<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>atvp<span class="p">|</span>aptv<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hmax<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [95]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>sho<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [90]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dsnp<span class="p">|</span>dsny<span class="p">|</span>disney<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>nf<span class="p">|</span>netflix<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>qibi<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [85]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hulu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>pcok<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [75]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dcu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hbo<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>red<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>it<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>pmtp<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span> ._-<span class="o">]</span>web<span class="o">[</span> ._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Caution</p>
+<p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+</div>
+<details class="success">
+<summary>example - [CLICK TO EXPAND]</summary>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
+<ul>
+<li>Always follow the data described in the guide (with the copy paste/option at the end).</li>
+<li>If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
+</ul>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+<p><div class="lightgallery"><a data-sub-html="rp-release-sources" href="../images/rp-release-sources.png"><img alt="rp-release-sources" src="../images/rp-release-sources.png" /></a></div></p>
+</details>
+<hr />
+<h2 id="second-release-profile">Second Release Profile<a class="headerlink" href="#second-release-profile" title="Permanent link">¶</a></h2>
+<!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>DO NOT Check mark <code>Include Preferred when Renaming</code></p>
+</div>
+<h3 id="golden-rule">Golden rule<a class="headerlink" href="#golden-rule" title="Permanent link">¶</a></h3>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>?<span class="o">=(</span><span class="m">1080</span><span class="p">|</span><span class="m">720</span><span class="o">))</span>.*<span class="o">((</span>x<span class="p">|</span>h<span class="o">)[</span> ._-<span class="o">]</span>?265<span class="p">|</span>hevc<span class="o">)</span>/i
+</code></pre></div>
+<details class="success">
+<summary>example - [CLICK TO EXPAND]</summary>
+<p><div class="lightgallery"><a data-sub-html="rp-release-sources" href="../images/rp-golden-rule.png"><img alt="rp-release-sources" src="../images/rp-golden-rule.png" /></a></div></p>
+</details>
+<details class="info">
+<summary>Why the Must Not Contain entry - [CLICK TO EXPAND]</summary>
+<p>So why did I put <code>/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i</code> as <code>Must Not Contain</code> and what does it do ?</p>
+<p>It blocks/ignores 720/1080p releases that are encoded in x265, why ?</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
+If the media isn't source quality/remux, then there will be a loss of quality every time.
+Also, once you go x265, typically that file is done.
+It can't be changed to something else without a huge loss of quality.</p>
+<p>Something like 95% of video files are x264 and have much better direct play support.
+If you have more than a couple users,
+you will notice much more transcoding.
+Just depends on your priorities.</p>
+<p>So basically if you are storage poor and just need to save space, use x265.
+The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+If you want maximum compatibility and the option to change your files to something else later,
+then x264.
+It's all really dependent on specific situations for different people</p>
+</div>
+<p>It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.</p>
+<p>That's why  I created my own golden rule.</p>
+<ul>
+<li>720/1080p =&gt; x264</li>
+<li>2160p/4k =&gt; x265</li>
+</ul>
+</details>
+<hr />
+<h3 id="p2p-groups-repackproper">P2P Groups + Repack/Proper<a class="headerlink" href="#p2p-groups-repackproper" title="Permanent link">¶</a></h3>
+<p>Add this to your <code>Preferred (3)</code> with a score of [180]
+The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the <a href="#release-sources-streaming-service">Release Sources (Streaming Service)</a> to their release name so they don't get the extra point of the release source regex.</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-deflate<span class="p">|</span>-inflate<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [150]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-AJP69<span class="p">|</span>-BTN<span class="p">|</span>-CasStudio<span class="p">|</span>-CtrlHD<span class="p">|</span>-KiNGS<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-monkee<span class="p">|</span>-NTb<span class="p">|</span>-NTG<span class="p">|</span>-QOQ<span class="p">|</span>-RTN<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-TOMMY<span class="p">|</span>-ViSUM<span class="p">|</span>-T6D<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [125]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-BTW<span class="p">|</span>-Chotab<span class="p">|</span>-CiT<span class="p">|</span>-DEEP<span class="p">|</span>-iJP<span class="p">|</span>-iT00NZ<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-LAZY<span class="p">|</span>-NYH<span class="p">|</span>-SA89<span class="p">|</span>-SIGMA<span class="p">|</span>-TEPES<span class="p">|</span>-TVSmash<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-SDCC<span class="p">|</span>-iKA<span class="p">|</span>-iJP<span class="p">|</span>-Cinefeel<span class="p">|</span>-SPiRiT<span class="p">|</span>-FC<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-JETIX<span class="p">|</span>-Coo7<span class="p">|</span>-WELP<span class="p">|</span>-KiMCHI<span class="p">|</span>-BLUTONiUM<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-orbitron<span class="p">|</span>-ETHiCS<span class="p">|</span>-RTFM<span class="p">|</span>-PSiG<span class="p">|</span>-MZABI<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-ROCCaT<span class="p">|</span>3cTWeB<span class="p">|</span>playWEB<span class="p">|</span>-FLUX<span class="p">|</span>NOSiViD<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-KHN<span class="p">|</span>NPMS<span class="p">|</span>-END<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [100]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-ViSiON<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [12]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>repack3<span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [11]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>repack2<span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [10]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>repack<span class="p">|</span>proper<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<details class="success">
+<summary>example - [CLICK TO EXPAND]</summary>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
+<ul>
+<li>Always follow the data described in the guide (with the copy paste/option at the end).</li>
+<li>If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
+</ul>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+<p><div class="lightgallery"><a data-sub-html="rp-p2p-groups" href="../images/rp-p2p-groups.png"><img alt="rp-p2p-groups" src="../images/rp-p2p-groups.png" /></a></div></p>
+</details>
+<hr />
+<h3 id="low-quality-groups">Low Quality Groups<a class="headerlink" href="#low-quality-groups" title="Permanent link">¶</a></h3>
+<p>Add this to your <code>Preferred (3)</code> with a score of [-100]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>TBS<span class="p">|</span>-BRiNK<span class="p">|</span>-CHX<span class="p">|</span>-XLF<span class="p">|</span>-worldmkv<span class="p">|</span>-GHOSTS<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-VIDEOHOLE<span class="p">|</span>nhanc3<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<details class="success">
+<summary>example - [CLICK TO EXPAND]</summary>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
+<ul>
+<li>Always follow the data described in the guide (with the copy paste/option at the end).</li>
+<li>If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
+</ul>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+<p><div class="lightgallery"><a data-sub-html="rp-lq-groups" href="../images/rp-lq-groups.png"><img alt="rp-lq-groups" src="../images/rp-lq-groups.png" /></a></div></p>
+</details>
+<hr />
+<h3 id="optional-preferred-preferences">Optional preferred preferences<a class="headerlink" href="#optional-preferred-preferences" title="Permanent link">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These options are optional and only needed if you got a certain use case for it.</p>
+<p>If you see certain optional options with a positive score and you actually don't want them just add them with a negative score !!!</p>
+</div>
+<h4 id="optional-hdr-if-you-prefer-hdr">Optional HDR - if you prefer HDR<a class="headerlink" href="#optional-hdr-if-you-prefer-hdr" title="Permanent link">¶</a></h4>
+<p>Add this to your <code>Preferred (3)</code> with a score of [10]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span>HDR<span class="o">(</span><span class="se">\b</span><span class="p">|</span><span class="se">\d</span><span class="o">)</span>/i
+</code></pre></div>
+<h4 id="optional-use-these-only-if-you-dislike-renamed-and-retagged-releases">Optional (use these only if you dislike renamed and retagged releases)<a class="headerlink" href="#optional-use-these-only-if-you-dislike-renamed-and-retagged-releases" title="Permanent link">¶</a></h4>
+<p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\[</span>rartv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>rarbg<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>eztv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>TGx<span class="se">\]</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-4P<span class="p">|</span>-4Planet<span class="p">|</span>-AsRequested<span class="p">|</span>-BUYMORE<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-Chamele0n<span class="p">|</span>-GEROV<span class="p">|</span>-iNC0GNiTO<span class="p">|</span>-NZBGeek<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-Obfuscated<span class="p">|</span>-postbot<span class="p">|</span>-Rakuv<span class="p">|</span>-Scrambled<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-WhiteRev<span class="p">|</span>-xpost<span class="p">|</span>-WRTEAM<span class="p">|</span>-CAPTCHA<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<h4 id="optional-matches-releases-that-ends-with-en">Optional (matches releases that ends with EN)<a class="headerlink" href="#optional-matches-releases-that-ends-with-en" title="Permanent link">¶</a></h4>
+<p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\s</span>?<span class="se">\b</span>en<span class="se">\b</span>$/i
+</code></pre></div>
+<h4 id="optional-matches-any-release-that-contains-1-as-prefix-for-release-groups">Optional Matches any release that contains '1-' as prefix for Release Groups<a class="headerlink" href="#optional-matches-any-release-that-contains-1-as-prefix-for-release-groups" title="Permanent link">¶</a></h4>
+<p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="m">1</span>-.+<span class="o">)</span>$/i
+</code></pre></div>
+<h4 id="optional-matches-season-packs-use-this-if-you-prefer-season-packs">Optional Matches Season Packs (use this if you prefer Season packs)<a class="headerlink" href="#optional-matches-season-packs-use-this-if-you-prefer-season-packs" title="Permanent link">¶</a></h4>
+<div class="admonition warning">
+<p>This will upgrade also your already downloaded single episodes</p>
+</div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [15]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span>S<span class="se">\d</span>+<span class="se">\b</span><span class="o">(</span>?!E<span class="se">\d</span>+<span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<h5 id="su-season-pack-issue">.su season pack issue<a class="headerlink" href="#su-season-pack-issue" title="Permanent link">¶</a></h5>
+<details class="bug">
+<summary>.su season pack issue - [CLICK TO EXPAND]</summary>
+<p>When you see a error in Sonarr that looks somehow like the follow screenshot</p>
+<p><div class="lightgallery"><a data-sub-html="rp-su-season" href="../images/rp-su-season.png"><img alt="rp-su-season" src="../images/rp-su-season.png" /></a></div></p>
+<p>Then theirs only one way real way that always solves this issue.
+create a new release profile specific for .su that uses the <a href="#optional-matches-season-packs-use-this-if-you-prefer-season-packs">Season regex</a> as <code>Must not contain (2)</code></p>
+<p><div class="lightgallery"><a data-sub-html="rp-release-profile-block-season-su" href="../images/rp-release-profile-block-season-su.png"><img alt="rp-release-profile-block-season-su" src="../images/rp-release-profile-block-season-su.png" /></a></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Theirs a <a href="/NZBGet/scripts/#wtfnzb-renamer" rel="noopener noreferrer" target="_blank">script</a> for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.</p>
+</div>
+</details>
+<h4 id="optional-ignore-dovi-for-webdl">Optional Ignore DoVi for WEBDL<a class="headerlink" href="#optional-ignore-dovi-for-webdl" title="Permanent link">¶</a></h4>
+<details class="note">
+<summary>WHY ? - [CLICK TO EXPAND]</summary>
+<p>This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).</p>
+</details>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>dv<span class="p">|</span>dovi<span class="p">|</span>dolby<span class="o">[</span> .<span class="o">]</span>vision<span class="o">)</span><span class="se">\b</span><span class="o">)(</span>?<span class="o">=</span>.*<span class="o">(</span>WEB<span class="o">[</span>-_. <span class="o">]</span>?<span class="o">(</span>DL<span class="p">|</span>RIP<span class="o">)</span><span class="p">|</span><span class="se">\b</span>WEB<span class="se">\b</span><span class="o">))</span>/i
+</code></pre></div>
+<h4 id="optional-ignore-the-group-scene">Optional Ignore the group -scene<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link">¶</a></h4>
+<details class="note">
+<summary>Why ? - [CLICK TO EXPAND]</summary>
+<p>Seems plex ignores <code>-scene</code> because it thinks they are extra's. <a href="https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11">SOURCE</a></p>
+</details>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>-scene<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<h4 id="optional-ignore-scene-releases">Optional Ignore scene releases<a class="headerlink" href="#optional-ignore-scene-releases" title="Permanent link">¶</a></h4>
+<details class="note">
+<summary>WHY ? - [CLICK TO EXPAND]</summary>
+<p>If you don't want to download so called scene releases.</p>
+</details>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="o">([</span>_. <span class="o">]</span>WEB<span class="o">[</span>_. <span class="o">]</span><span class="p">|</span><span class="se">\\</span>bCAKES<span class="se">\\</span>b<span class="p">|</span>GGEZ<span class="p">|</span>GGWP<span class="p">|</span>GLHF<span class="o">)</span>/i
+</code></pre></div>
+<hr />
+<h3 id="a-little-explanation-of-the-scores-and-why">A little explanation of the scores and why<a class="headerlink" href="#a-little-explanation-of-the-scores-and-why" title="Permanent link">¶</a></h3>
+<ul>
+<li>Scores [75]-[100] Release Source.</li>
+<li>Scores [125]-[150] P2P Groups.</li>
+<li>Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.</li>
+<li>
+<p>Scores [-25] Retagged/Renames/Obfuscated  releases.</p>
+<div class="admonition danger">
+<p>If you're getting often a error message like <code>Has the same filesize as existing file</code>, you might need to consider to remove the [-25]</p>
+</div>
+</li>
+<li>
+<p>Scores [-100] Groups that mess with the audio or add another preferred language.</p>
+</li>
+</ul>
+<p>Optional =&gt; We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know.</p>
+<p>If you notice something wrong just contact me and we will try to fix it or remove it.</p>
+<p>The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks.</p>
+<h2 id="final-results">Final Results<a class="headerlink" href="#final-results" title="Permanent link">¶</a></h2>
+<p>When you've done it correctly it will look something like this.</p>
+<details class="success">
+<summary>example - [CLICK TO EXPAND]</summary>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
+<ul>
+<li>Always follow the data described in the guide (with the copy paste/option at the end).</li>
+<li>If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
+</ul>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+<p><div class="lightgallery"><a data-sub-html="rp-groups" href="../images/rp-groups.png"><img alt="rp-groups" src="../images/rp-groups.png" /></a></div></p>
+<p>And after you clicked on <code>Save</code> it will look something like this:</p>
+<p><div class="lightgallery"><a data-sub-html="rp-profiles" href="../images/rp-profiles.png"><img alt="rp-profiles" src="../images/rp-profiles.png" /></a></div></p>
+</details>
+<hr />
+<p>This list is made by collecting information from Sonarr Discord Channel, and personal testing and a few others that helped.</p>
+<p>So I want to thank everyone who helped to make this list possible, for privacy reasons I decided not to add the names/nick of the persons.</p>
+<p>If you want to be mentioned please message me on discord, including a link for proof to what part you want to be credited.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Keep in mind this list will be a constant work in progress because I will be updating it when it's needed.</p>
+<p>So best to set a notification for updates for this page.</p>
+<p>Or use one of the 2 automation tools.</p>
+<ul>
+<li><a href="/Radarr/Radarr-how-to-update-custom-formats/#notifiarr" rel="noopener noreferrer" target="_blank">Notifiarr</a></li>
+<li><a href="/Radarr/Radarr-how-to-update-custom-formats/#trash-updater" rel="noopener noreferrer" target="_blank">TRaSH Updater</a></li>
+</ul>
+</div>
+<hr />
+<hr />
+<div class="admonition help">
+<p class="admonition-title">Questions or Suggestions?</p>
+<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 29, 2021 06:15:01</span>
+      
+    
+  </small>
+</div>
+
+              
+    <footer class="sponsorship">
+        <hr>
+        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
+        </a>
+        <hr>
+    </footer>
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Sonarr-recommended-naming-scheme/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Recommended naming scheme" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Recommended naming scheme
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Sonarr-Release-Profile-RegEx-Anime/" class="md-footer__link md-footer__link--next" aria-label="Next: Release Profile RegEx (Anime)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Release Profile RegEx (Anime)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 TRaSH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://trash-guides.info/discord" target="_blank" rel="noopener" title="trash-guides.info" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/TRaSH-/Guides" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
+    
+    
+    
+      <script src="../../assets/javascripts/bundle.e1a181d9.min.js"></script>
+      
+    
+    <script>
+    var elements = document.getElementsByClassName("lightgallery");
+    for(var i=0; i<elements.length; i++) {
+        lightGallery(elements[i]);
+    }
+    </script>
+
+  </body>
+</html>

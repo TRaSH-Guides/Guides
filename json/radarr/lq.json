@@ -1,0 +1,71 @@
+{
+  "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+  "trash_score": "-10000",
+  "name": "LQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "[BLOCK1]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(aXXo|CrEwSaDe|DNL|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK2]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(aXXo|CrEwSaDe|DNL|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK3]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(x0r|nikt0|FGT|d3g|MeGusta|YIFY|YTS|tigole|C4K|RARBG|4K4U)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK4]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-AROMA|aXXo|CrEwSaDe|d3g|DNL|FGT|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|MeGusta|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK5]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RARBG|FGT|STUTTERSHIT|LiGaS|-DDR|-Zeus|Tigole|TBS)\\b"
+      }
+    },
+    {
+      "name": "[BLOCK6]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-beAst|CHD|HDWinG|MTeam|MySiLU|-WiKi)\\b"
+      }
+    },
+    {
+      "name": "RiffTrax",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Rifftrax|RU4HD)\\b"
+      }
+    }
+  ]
+}
