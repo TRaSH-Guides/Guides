@@ -28,12 +28,22 @@ RESULT:
 
 `The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE`
 
+??? note "Starting from v4.0.0.5720 Radarr now supports {MediaInfo VideoDynamicRangeType} token for renaming"
+
+    ```bash
+    {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}[{Mediainfo VideoCodec}]{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{-Release Group}
+    ```
+
+    RESULT:
+
+    `The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][x264][DTS 5.1]-EVOLVE`
+
 ??? info "If you do Anime - [CLICK TO EXPAND]"
 
     If you do Anime you might consider to add the `{MediaInfo AudioLanguages}` token to your naming scheme.
 
     ```bash
-    {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRange]}[{Mediainfo VideoBitDepth}bit][{Mediainfo VideoCodec}]{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+    {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRange]}[{Mediainfo VideoCodec}]{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
     ```
 
 ### Minimal details + the irreplaceable data
@@ -41,12 +51,22 @@ RESULT:
 This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`
 
 ```bash
-{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]{[Quality Full]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoDynamicRange]}{[MediaInfo VideoCodec]}{-Release Group}
+{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}]{[Quality Full]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
 RESULT:
 
 `The Movie Title (2010) [imdb-tt0066921][Bluray-1080p Proper][DTS 5.1][HDR][x264]-EVOLVE`
+
+??? note "Starting from v4.0.0.5720 Radarr now supports {MediaInfo VideoDynamicRangeType} token for renaming"
+
+    ```bash
+    {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Quality Full]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[Custom Formats]}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    RESULT:
+
+    `The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Bluray-1080p Proper][DTS 5.1][DV HDR10][IMAX][x264]-EVOLVE`
 
 !!! note ""
     The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"}, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
