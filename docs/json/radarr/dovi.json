@@ -2,7 +2,7 @@
   "trash_id": "5d96ce331b98e077abb8ceb60553aa16",
   "trash_score": "1000",
   "name": "DoVi",
-  "includeCustomFormatWhenRenaming": true,
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "Dolby Vision",

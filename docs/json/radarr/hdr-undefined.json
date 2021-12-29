@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\bHDR(\\b|\\d)"
+        "value": "\\b(HDR|PQ|HLG)(\\b|\\d)"
       }
     },
     {

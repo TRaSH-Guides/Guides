@@ -2,7 +2,7 @@
   "trash_id": "462c511637953269a9053d1ed1ffc3a5",
   "trash_score": "950",
   "name": "DoVi (SL)",
-  "includeCustomFormatWhenRenaming": true,
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [{
           "name": "Dolby Vision (Single Layer)",
           "implementation": "ReleaseTitleSpecification",
