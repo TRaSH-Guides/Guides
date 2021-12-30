@@ -22,7 +22,7 @@ The Tokens not available in the release won't be used/shown.
 {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -32,13 +32,29 @@ The Tokens not available in the release won't be used/shown.
 
     `The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp`
 
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        Single Episode:
+
+        `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+
+        Multi Episode:
+
+        `The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+
 > **Minimal details + the irreplaceable data**
 
 ```bash
 {Series Title} S{season:00}E{episode:00} {[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -47,6 +63,22 @@ The Tokens not available in the release won't be used/shown.
     Multi Episode:
 
     `The Series Title! S01E01-E02-E03 [HDTV-720p][DTS 5.1][x264]-RlsGrp`
+
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series Title} S{season:00}E{episode:00} {[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        Single Episode:
+
+        `The Series Title! S01E01 [HDTV-720p][DTS 5.1][DV HDR10][x264]-RlsGrp`
+
+        Multi Episode:
+
+        `The Series Title! S01E01-E02-E03 [HDTV-720p][DTS 5.1][DV HDR10][x264]-RlsGrp`
 
 ------
 
@@ -58,9 +90,19 @@ The Tokens not available in the release won't be used/shown.
 {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp`
+
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
 
 > **Minimal details + the irreplaceable data**
 
@@ -68,9 +110,19 @@ The Tokens not available in the release won't be used/shown.
 {Series Title} - {Air-Date} - {Episode CleanTitle} {[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Series Title! - 2013-10-30 - Episode Title 1 [HDTV-720p][DTS 5.1][x264]-RlsGrp`
+
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series Title} - {Air-Date} - {Episode CleanTitle} {[Quality Title]}{[MediaInfo AudioCodec}{ MediaInfo AudioChannels]}{[MediaInfo VideoDynamicRangeType]}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        `The Series Title! - 2013-10-30 - Episode Title 1 [HDTV-720p][DTS 5.1][DV HDR10][x264]-RlsGrp`
 
 ------
 
@@ -82,7 +134,7 @@ The Tokens not available in the release won't be used/shown.
 {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -92,13 +144,29 @@ The Tokens not available in the release won't be used/shown.
 
     `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp`
 
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        Single Episode:
+
+        `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][DV HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
+
+        Multi Episode:
+
+        `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][DV HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
+
 > **Minimal details + the irreplaceable data**
 
 ```bash
 {Series Title} - S{season:00}E{episode:00} - {absolute:000} - {[Quality Title]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -107,6 +175,22 @@ The Tokens not available in the release won't be used/shown.
     Multi Episode:
 
     `The Series Title! - S01E01-E02-E03 - 001-002-003 - [HDTV-720p][DTS 5.1][x264]-RlsGrp`
+
+??? note "Starting from v3.0.6.1432 Sonarr now supports the following naming token {MediaInfo VideoDynamicRangeType} - [CLICK TO EXPAND]"
+
+    ```bash
+    {Series Title} - S{season:00}E{episode:00} - {absolute:000} - {[Quality Title]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{[MediaInfo VideoDynamicRangeType]}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
+    ??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+        Single Episode:
+
+        `The Series Title! - S01E01 - 001 - [HDTV-720p][DTS 5.1][DV HDR10][x264]-RlsGrp`
+
+        Multi Episode:
+
+        `The Series Title! - S01E01-E02-E03 - 001-002-003 - [HDTV-720p][DTS 5.1][DV HDR10][x264]-RlsGrp`
 
 ------
 
