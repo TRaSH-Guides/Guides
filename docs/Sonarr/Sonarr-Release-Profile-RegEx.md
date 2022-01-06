@@ -437,12 +437,12 @@ Add this to your `Preferred (3)` with a score of [15]
 
 ??? NOTE "WHY ? - [CLICK TO EXPAND]"
 
-    This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
+    This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
 
 Add this to your `Must not contain (2)`
 
 ```bash
-/(?=.*\b(dv|dovi|dolby[ .]vision)\b)(?=.*(WEB[-_. ]?(DL|RIP)|\bWEB\b))/i
+/^(?!.*(HDR|HULU))(?=.*\b(DV|Dovi|Dolby[- .]Vision)\b).*/i
 ```
 
 #### Optional Ignore the group -scene
