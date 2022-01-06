@@ -32,24 +32,25 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               | HDR Metadata                            |
-| ----------------------------------------- | ------------------------------- | ---------------------------- | --------------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [Dolby Vision](#dovi)                   |
-| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [Dolby Vision (Single Layer)](#dovi-sl) |
-| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [HDR](#hdr)                             |
-| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [HDR (undefined)](#hdr-undefined)       |
-| [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) | [10 Bit](#10-bit)                       |
-| [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) |                                         |
-| [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) |                                         |
-| [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) |                                         |
-| [DTS](#dts)                               |                                 |                              |                                         |
+| Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               | HDR Metadata                      |
+| ----------------------------------------- | ------------------------------- | ---------------------------- | --------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [Dolby Vision + HDR10](#dv-hdr10) |
+| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [Dolby Vision](#dv)               |
+| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [Dolby Vision + HLG](#dv-hlg)     |
+| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [Dolby Vision + SDR](#dv-sdr)     |
+| [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
+| [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
+| [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
+| [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) | [HDR (undefined)](#hdr-undefined) |
+| [DTS](#dts)                               |                                 |                              | [PQ](#pq)                         |
+|                                           |                                 |                              | [HLG](#hlg)                       |
 
 ------
 
 | Movie Versions                                | Misc (-10000)                       | Misc #1                                   | Misc #2                      |
 | --------------------------------------------- | ----------------------------------- | ----------------------------------------- | ---------------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)      |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Streaming Services](#streaming-services) | [High Quality Releases](#hq) |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     |  | [High Quality Releases](#hq) |
 | [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [Multi](#multi)                           | [HQ-WEBDL](#hq-webdl)        |
 | [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |                              |
 | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |                              |
@@ -412,7 +413,7 @@ Advanced Audio Coding
 
 ------
 
-### DoVi
+### DV HDR10
 
 <sub>Dolby Vision = DoVi</sub>
 >Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
@@ -422,30 +423,90 @@ Advanced Audio Coding
 ??? example "json"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dovi.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dv-hdr10.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### DoVi (SL)
+### DV
 
-<sub><sub><sub>Score [295]</sub>
-
-<sub>Dolby Vision (Single Layer) = DoVi (SL)</sub>
->Custom Format for Single Layer Dolby Vision releases.
-
-!!! note
-
-    This used to be the the preferred option for PLeX with a Shield 2019 model that supports DV.
-
-    But now DV is part of the MKV spec and ExoPlayer added native support.
+<sub>Dolby Vision = DoVi</sub>
+>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+>
+>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
 ??? example "json"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dovi-sl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV HLG
+
+<sub>Dolby Vision = DoVi</sub>
+>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+>
+>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dv-hlg.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV SDR
+
+<sub>Dolby Vision = DoVi</sub>
+>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+>
+>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dv-sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HDR10Plus
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>
+>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hdr10plus.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HDR10
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>
+>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hdr10.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -478,6 +539,38 @@ Advanced Audio Coding
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/hdr-undefined.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### PQ
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>
+>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/pq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HLG
+
+>[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
+>
+>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+
+??? example "json"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hlg.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -796,25 +889,6 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/repack-proper.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Streaming Services
-
->Collection of Streaming Services
-
-!!! attention
-
-    This CF only prefers the known streaming services and doesn't work the same way like the release profile that can be used in Sonarr to include the streaming service name in your renaming scheme when using `{[Custom Formats]}` !!!
-    If you want to have this option then you need to add them all separate.
-
-??? example "json"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/streaming-services.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
