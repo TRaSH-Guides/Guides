@@ -527,26 +527,6 @@
     Standard Movie Format
   </a>
   
-    <nav class="md-nav" aria-label="Standard Movie Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-the-details" class="md-nav__link">
-    All the details
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#minimal-details-the-irreplaceable-data" class="md-nav__link">
-    Minimal details + the irreplaceable data
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2064,26 +2044,6 @@
     Standard Movie Format
   </a>
   
-    <nav class="md-nav" aria-label="Standard Movie Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#all-the-details" class="md-nav__link">
-    All the details
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#minimal-details-the-irreplaceable-data" class="md-nav__link">
-    Minimal details + the irreplaceable data
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2142,25 +2102,24 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
 <h2 id="standard-movie-format">Standard Movie Format<a class="headerlink" href="#standard-movie-format" title="Permanent link">¶</a></h2>
-<h3 id="all-the-details">All the details<a class="headerlink" href="#all-the-details" title="Permanent link">¶</a></h3>
 <p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517">New Plex Agent</a> that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove <code>[imdb-{ImdbId}]</code></p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>Mediainfo VideoBitDepth<span class="o">}</span>bit<span class="o">][{</span>Mediainfo VideoCodec<span class="o">}]{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}]{</span>-Release Group<span class="o">}</span>
+<div class="admonition caution">
+<p class="admonition-title">Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types.</p>
+<p>If you're using a lower version replace:</p>
+<p><code>{[MediaInfo VideoDynamicRangeType]}</code> with <code>{[MediaInfo VideoDynamicRange]}</code></p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}][{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
-<p>RESULT:</p>
-<p><code>The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][Surround Sound x264][Bluray-1080p Proper][3D][HDR][10bit][x264][DTS 5.1]-EVOLVE</code></p>
+<details class="summary">
+<summary>RESULTS: - [CLICK TO EXPAND]</summary>
+<p><code>The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE</code></p>
+</details>
 <details class="info">
 <summary>If you do Anime - [CLICK TO EXPAND]</summary>
-<p>If you do Anime you might consider to add the <code>{MediaInfo AudioLanguages}</code> token to your naming scheme.</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>Mediainfo VideoBitDepth<span class="o">}</span>bit<span class="o">][{</span>Mediainfo VideoCodec<span class="o">}]{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}[{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 </details>
-<h3 id="minimal-details-the-irreplaceable-data">Minimal details + the irreplaceable data<a class="headerlink" href="#minimal-details-the-irreplaceable-data" title="Permanent link">¶</a></h3>
-<p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517" rel="noopener noreferrer" target="_blank">New Plex Agent</a> that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove <code>[imdb-{ImdbId}]</code></p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Quality Full<span class="o">]}{[</span>MediaInfo AudioCodec<span class="o">}{</span> MediaInfo AudioChannels<span class="o">]}{[</span>MediaInfo VideoDynamicRange<span class="o">]}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<p>RESULT:</p>
-<p><code>The Movie Title (2010) [imdb-tt0066921][Bluray-1080p Proper][DTS 5.1][HDR][x264]-EVOLVE</code></p>
-<div class="admonition note">
+<div class="admonition attention">
 <p>The officially supported format is <code>{imdb-{ImdbId}}</code> but plex also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code> what you can read <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517" rel="noopener noreferrer" target="_blank">here</a>, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.</p>
 </div>
 <hr />
@@ -2207,7 +2166,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 26, 2021 16:08:48</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 6, 2022 21:37:34</span>
       
     
   </small>

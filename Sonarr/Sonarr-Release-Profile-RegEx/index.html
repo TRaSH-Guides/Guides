@@ -2650,10 +2650,10 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <h4 id="optional-ignore-dovi-for-webdl">Optional Ignore DoVi for WEBDL<a class="headerlink" href="#optional-ignore-dovi-for-webdl" title="Permanent link">¶</a></h4>
 <details class="note">
 <summary>WHY ? - [CLICK TO EXPAND]</summary>
-<p>This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).</p>
+<p>This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 </details>
 <p>Add this to your <code>Must not contain (2)</code></p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>dv<span class="p">|</span>dovi<span class="p">|</span>dolby<span class="o">[</span> .<span class="o">]</span>vision<span class="o">)</span><span class="se">\b</span><span class="o">)(</span>?<span class="o">=</span>.*<span class="o">(</span>WEB<span class="o">[</span>-_. <span class="o">]</span>?<span class="o">(</span>DL<span class="p">|</span>RIP<span class="o">)</span><span class="p">|</span><span class="se">\b</span>WEB<span class="se">\b</span><span class="o">))</span>/i
+<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>- .<span class="o">]</span>Vision<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
 </code></pre></div>
 <h4 id="optional-ignore-the-group-scene">Optional Ignore the group -scene<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link">¶</a></h4>
 <details class="note">
@@ -2734,7 +2734,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 28, 2021 20:48:12</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 7, 2022 22:28:19</span>
       
     
   </small>

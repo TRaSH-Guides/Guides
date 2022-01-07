@@ -2170,75 +2170,38 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
 <h2 id="standard-episode-format">Standard Episode Format<a class="headerlink" href="#standard-episode-format" title="Permanent link">¶</a></h2>
-<blockquote>
-<p><strong>All the details</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
+<div class="admonition caution">
+<p class="admonition-title">Starting from v3.0.6.1431, Sonarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types. </p>
+<p>If you're using a lower version replace:</p>
+<p><code>{[MediaInfo VideoDynamicRangeType]}</code> with <code>{[MediaInfo VideoDynamicRange]}</code></p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
-<summary>RESULTS:</summary>
+<summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p>Single Episode:</p>
-<p><code>The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp</code></p>
+<p><code>The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
 <p>Multi Episode:</p>
-<p><code>The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp</code></p>
-</details>
-<blockquote>
-<p><strong>Minimal details + the irreplaceable data</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series Title<span class="o">}</span> S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> <span class="o">{[</span>Quality Title<span class="o">]}{[</span>MediaInfo AudioCodec<span class="o">}{</span> MediaInfo AudioChannels<span class="o">]}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS:</summary>
-<p>Single Episode:</p>
-<p><code>The Series Title! S01E01 [HDTV-720p][DTS 5.1][x264]-RlsGrp</code></p>
-<p>Multi Episode:</p>
-<p><code>The Series Title! S01E01-E02-E03 [HDTV-720p][DTS 5.1][x264]-RlsGrp</code></p>
+<p><code>The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
 </details>
 <hr />
 <h2 id="daily-episode-format">Daily Episode Format<a class="headerlink" href="#daily-episode-format" title="Permanent link">¶</a></h2>
-<blockquote>
-<p><strong>All the details</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - <span class="o">{</span>Air-Date<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - <span class="o">{</span>Air-Date<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
-<summary>RESULTS:</summary>
-<p><code>The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][HDR][10bit][x264][DTS 5.1]-RlsGrp</code></p>
-</details>
-<blockquote>
-<p><strong>Minimal details + the irreplaceable data</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series Title<span class="o">}</span> - <span class="o">{</span>Air-Date<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">{[</span>Quality Title<span class="o">]}{[</span>MediaInfo AudioCodec<span class="o">}{</span> MediaInfo AudioChannels<span class="o">]}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS:</summary>
-<p><code>The Series Title! - 2013-10-30 - Episode Title 1 [HDTV-720p][DTS 5.1][x264]-RlsGrp</code></p>
+<summary>RESULTS: - [CLICK TO EXPAND]</summary>
+<p><code>The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
 </details>
 <hr />
 <h2 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link">¶</a></h2>
-<blockquote>
-<p><strong>All the details</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
-<summary>RESULTS:</summary>
+<summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p>Single Episode:</p>
-<p><code>The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
+<p><code>The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
 <p>Multi Episode:</p>
-<p><code>The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
-</details>
-<blockquote>
-<p><strong>Minimal details + the irreplaceable data</strong></p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series Title<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{[</span>Quality Title<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS:</summary>
-<p>Single Episode:</p>
-<p><code>The Series Title! - S01E01 - 001 - [HDTV-720p][DTS 5.1][x264]-RlsGrp</code></p>
-<p>Multi Episode:</p>
-<p><code>The Series Title! - S01E01-E02-E03 - 001-002-003 - [HDTV-720p][DTS 5.1][x264]-RlsGrp</code></p>
+<p><code>The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
 </details>
 <hr />
 <h3 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link">¶</a></h3>
@@ -2301,7 +2264,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 26, 2021 16:08:48</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 6, 2022 21:37:42</span>
       
     
   </small>
