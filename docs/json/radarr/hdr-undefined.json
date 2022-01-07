@@ -32,6 +32,24 @@
       }
     },
     {
+      "name": "Not HDR10+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bHDR10Plus|HDR10(\\b\\+)"
+      }
+    },
+    {
+      "name": "Not HDR10",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bHDR10(\\b[^+|Plus])"
+      }
+    },
+    {
       "name": "Not PQ",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
