@@ -437,7 +437,7 @@ Add this to your `Preferred (3)` with a score of [15]
 
 ??? NOTE "WHY ? - [CLICK TO EXPAND]"
 
-    This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup.
+    This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
 
 Add this to your `Must not contain (2)`
 
