@@ -2,7 +2,7 @@
 
 Here I will show various ways how you can update your Custom Formats with any changes from the Guide or provided to you from other sources, without loosing the scoring in your Quality Profile.
 
-## Manual way
+## Manual
 
 !!! note ""
     Starting from v4.0.0.5653 Radarr now supports Import to update existing Custom Formats.
@@ -35,7 +35,9 @@ all you need to do now is click on the `Save` button and you're done.
 
 ------
 
-## Notifiarr
+## Automatically
+
+### Notifiarr
 
 It's possible with [Notifiarr](https://notifiarr.com/profile.php) (Patron feature)
 
@@ -45,7 +47,7 @@ After setup it's fully automated and will check every X minutes for updates to t
 
 ------
 
-## TRaSH Updater
+### TRaSH Updater
 
 It's possible with [trash-updater](https://github.com/rcdailey/trash-updater)
 
