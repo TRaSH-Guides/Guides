@@ -1,14 +1,14 @@
 # How to Sync 2 Radarr or Sonarr with each other
 
-In this Guide I will try to explain how you can sync 2 Radarr/Sonarr with each other.
+In this Guide I will try to explain how you can sync two (or more) Radarr/Sonarr with each other.
 
 I'm going to show 2 different options how you can setup your sync with 2 Radarr/Sonarr.
 
-- Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances
-- Option 2: This option is best used if you only want to have a few Movies/TV Shows as 4K/2160p (UHD)
+- Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything
+- Option 2: This option is best used if you only want to have a subset of your library Movies/TV Shows as 4K/2160p (UHD) as it filters by quality profile
 
 !!! error ""
-    I'm not going to explain how to set up 2 Radarr/Sonarr for your system, being it depends how you have it installed/running.
+    I'm not going to explain how to set up 2 Radarr/Sonarr for your system, being it depends how you have it installed/running.  [Radarr Multiple Instance Information](https://wiki.servarr.com/radarr/installation#multiple-instances) and [Sonarr Multiple Instance Information](https://wiki.servarr.com/sonarr/installation#multiple-instances)
 
 ## Preparation
 
