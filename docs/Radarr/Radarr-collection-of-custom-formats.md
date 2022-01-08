@@ -34,13 +34,13 @@ I also made 3 guides related to this one.
 
 | Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               | HDR Metadata                      |
 | ----------------------------------------- | ------------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [Dolby Vision + HDR10](#dv-hdr10) |
-| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [Dolby Vision](#dv)               |
-| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [Dolby Vision + HLG](#dv-hlg)     |
-| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [Dolby Vision + SDR](#dv-sdr)     |
-| [TrueHD](#truehd)                         | [Dolby Digital](#dolby-digital) | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
+| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
+| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
+| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
+| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
+| [TrueHD](#truehd)                         | [DD](#dd)                       | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
 | [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
-| [Dolby Digital Plus](#dolby-digital-plus) | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
+| [DD+](#ddplus)                            | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
 | [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) | [HDR (undefined)](#hdr-undefined) |
 | [DTS](#dts)                               |                                 |                              | [PQ](#pq)                         |
 |                                           |                                 |                              | [HLG](#hlg)                       |
@@ -49,15 +49,15 @@ I also made 3 guides related to this one.
 
 | Movie Versions                                | Misc (-10000)                       | Misc #1                                   | Misc #2                      |
 | --------------------------------------------- | ----------------------------------- | ----------------------------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)      |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     |  | [High Quality Releases](#hq) |
-| [4K Remaster](#4k-remaster)                   | [Low Quality Releases](#lq)         | [Multi](#multi)                           | [HQ-WEBDL](#hq-webdl)        |
-| [Special Editions](#special-edition)          | [720/1080p no x265](#x265-7201080p) | [x264](#x264)                             |                              |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [x265](#x265)                             |                              |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [MPEG2](#mpeg2)                           |                              |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [FreeLeech](#freeleech)                   |                              |
-|                                               | [DoVi (WEBDL)](#dovi-webdl)         | [Dutch Groups](#dutch-groups)             |                              |
-|                                               |                                     | [Anime Dual Audio](#anime-dual-audio)     |                              |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)        |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Multi](#multi)                           | [HQ](#hq)                    |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                           | [x264](#x264)                             | [HQ-WEBDL](#hq-webdl)        |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p)  | [x265](#x265)                             |                              |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [MPEG2](#mpeg2)                           |                              |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [FreeLeech](#freeleech)                   |                              |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [Dutch Groups](#dutch-groups)             |                              |
+|                                               | [DV (WEBDL)](#dv-webdl)             | [Anime Dual Audio](#anime-dual-audio)     |                              |
+|                                               |                                     |                                           |                              |
 
 ------
 
@@ -217,9 +217,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### Dolby Digital Plus
+### DDPlus
 
-<sub>Dolby Digital Plus = DD+</sub>
+<sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
 ??? faq "DD+ - [CLICK TO EXPAND]"
 
@@ -230,7 +230,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dolby-digital-plus.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/ddplus.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -289,7 +289,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Dolby Digital
+### DD
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
@@ -302,7 +302,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dolby-digital.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dd.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -937,7 +937,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### DoVi (WEBDL)
+### DV (WEBDL)
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
