@@ -1,0 +1,6 @@
+# 2022-01-14
+- Fixed: CF [BR-DISK] Not matching if release group has DVD in it.
+
+# 2022-01-14
+Initial Release for the new changelog.
+

@@ -1,6 +1,6 @@
 # Remote Path Mappings
 
-Seems that allot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.
+Seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.
 
 Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
 
