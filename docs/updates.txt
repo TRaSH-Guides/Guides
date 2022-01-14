@@ -1,0 +1,2 @@
+# 2022-01-14
+Initial Release for the new changelog.
