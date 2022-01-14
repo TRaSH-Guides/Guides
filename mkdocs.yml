@@ -56,6 +56,7 @@ plugins:
       j2_variable_end_string: "]]"
   - redirects:
       redirect_maps:
+        updates.txt: updates.txt
         discord.md: https://discord.gg/Vau8dZ3
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr old redirects
