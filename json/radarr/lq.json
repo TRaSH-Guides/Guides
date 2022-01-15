@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(aXXo|CrEwSaDe|DNL|FaNGDiNG0|FRDS|HDTime|iPlanet|-KiNGDOM|Leffe|mHD|mSD|nHD|nikt0|nSD|NhaNc3|PRODJi|RDN|SANTi|STUTTERSHIT|WAF|x0r|YIFY|YTS)\\b"
+        "value": "\\b(CDDHD|-EuReKA|DDR|DNL|-BARC0DE)\\b"
       }
     },
     {

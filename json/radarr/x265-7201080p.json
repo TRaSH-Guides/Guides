@@ -30,15 +30,6 @@
       "fields": {
         "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
       }
-    },
-    {
-      "name": "Quality Group Exceptions",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "-MZABI|-NCmt\\b"
-      }
     }
   ]
 }
