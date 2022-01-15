@@ -5,3 +5,5 @@
 ------
 
 ## Soon
+
+--8<-- "includes/support.md"

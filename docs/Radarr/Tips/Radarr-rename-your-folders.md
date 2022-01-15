@@ -34,3 +34,5 @@ Then Magic
 ![!radarr-correct-folder-name](images/radarr-correct-folder-name.png)
 
 As you can see the folder has been renamed to the correct year following your naming scheme.
+
+--8<-- "includes/support.md"

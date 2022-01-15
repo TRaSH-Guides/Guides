@@ -1,14 +1,11 @@
 # Release Profile RegEx (WEB-DL)
 
-!!! danger "Advanced feature"
-    The regex isn't mentioned anywhere, it's a hidden advanced feature
-
 Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
 
-!!! question ""
+!!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 ??? question "FAQ - [CLICK TO EXPAND]"
@@ -27,7 +24,7 @@ The Release profile that we're going to use for this example is mainly to prefer
     P2P releases are a bit smarter and work sort of together by not doing the same release.
     Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
     And in my opinion the P2P are of better quality.
-    Theirs 1 Scene releaser that do bring out quality releases `-deflate/-inflate`.
+    There's one scene group that does bring out quality releases `-deflate/-inflate`.
 
     **Q: Why do I see that many Amazon WEB-DL's repacks/proper lately?**
 
@@ -61,19 +58,25 @@ Then you will get a popup screen that will look like this:
 
 ![!rp-release-profile](images/rp-release-profile.png)
 
-`Must Contain` => add words that the release name **MUST HAVE!**
+1. `Must Contain` => add words that the release name **MUST HAVE!**
 
-`Must Not Contain` => add words that the release name **MUST NOT HAVE AND SO TO BE IGNORE!**
+1. `Must Not Contain` => add words that the release name **MUST NOT HAVE OR IT WILL BE REJECTED!**
 
-`Preferred` => add words you prefer with a certain score what you prefer more or upgrade.
+1. `Preferred` => add words you prefer with a certain score what you prefer more or upgrade.
 
-`Include Preferred when Renaming` => When you add `{Preferred Words}` to your renaming scheme it will add this info.
+1. `Include Preferred when Renaming` => When you add `{Preferred Words}` to your renaming scheme it will add this info.
 
-`Indexers` => Specify what indexer the profile applies to.
+1. `Indexers` => Specify what indexer the profile applies to.
 
-`Tags` => create a tag so this is only used by shows that you give this tag or else it's global.
+1. `Tags` => create a tag so this is only used by shows that you give this tag or else it's global.
 
-The Number between the **[**brackets**]** are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
+------
+
+!!! note
+
+    The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
+
+------
 
 ## First Release Profile
 
@@ -163,6 +166,9 @@ Add this to your `Preferred (3)` with a score of [75]
 ```bash
 /\b(pmtp)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
+
+!!! danger "Caution"
+    Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
 ??? success "example - [CLICK TO EXPAND]"
 
@@ -431,12 +437,12 @@ Add this to your `Preferred (3)` with a score of [15]
 
 ??? NOTE "WHY ? - [CLICK TO EXPAND]"
 
-    This is a RegEx that ignores DV for WEB-DL but allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
+    This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
 
 Add this to your `Must not contain (2)`
 
 ```bash
-/\b(?=.*(dv|dovi|dolby[ .]vision)\b)(?=.*(WEB[-_. ]DL|WEBDL|AmazonHD|iTunesHD|MaxdomeHD|NetflixU?HD|WebHD|[. ]WEB[. ](?:[xh]26[45]|DDP?5[. ]1)|[. ](?-i:WEB)$|\d+0p(?:[-. ]AMZN)?[-. ]WEB[-. ]|WEB-DLMux|\b\s\/\sWEB\s\/\s\b|AMZN[. ]WEB[. ]|WebRip|Web-Rip|WEBMux))/i
+/^(?!.*(HDR|HULU))(?=.*\b(DV|Dovi|Dolby[- .]Vision)\b).*/i
 ```
 
 #### Optional Ignore the group -scene
@@ -457,10 +463,10 @@ Add this to your `Must not contain (2)`
 
     If you don't want to download so called scene releases.
 
-dd this to your `Must not contain (2)`
+Add this to your `Must not contain (2)`
 
 ```bash
-/\b([ .]WEB[ .])\b/i
+/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i
 ```
 
 ------
@@ -519,7 +525,9 @@ If you want to be mentioned please message me on discord, including a link for p
 
     Or use one of the 2 automation tools.
 
-    If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+    - [Notifiarr](/Radarr/Radarr-how-to-update-custom-formats/#notifiarr){:target="_blank" rel="noopener noreferrer"}
+    - [TRaSH Updater](/Radarr/Radarr-how-to-update-custom-formats/#trash-updater){:target="_blank" rel="noopener noreferrer"}
 
-    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 ------
+
+--8<-- "includes/support.md"

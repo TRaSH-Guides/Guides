@@ -130,13 +130,13 @@ This option creates a series of preview thumbnails from a media item when it is 
 !!! check ""
     **Suggested: `Never`**
 
-    *Besides that, it uses allot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
+    *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
 
 !!! danger "ATTENTION"
     Creating these images can
 
     - <u>Take a considerable amount of time</u>
-    - <u>Use allot of CPU resources</u>
+    - <u>Use a lot of CPU resources</u>
     - <u>Increase the storage space used</u>
 
     The images are stored in your Plex database location (/config) so <u>be careful you don’t fill the drive :bangbang:</u>
@@ -417,7 +417,7 @@ Here you will find your libraries you've added to your Plex Media Server.
     !!! check ""
         **Suggested: `Disabled`**
 
-        *Besides that, it uses allot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
+        *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
 
 1. This deletes the preview thumbnails it generated before you disabled this option
 1. If you want to show your Collection in your library
@@ -469,7 +469,7 @@ Here you will find your libraries you've added to your Plex Media Server.
     !!! check ""
         **Suggested: `Disabled`**
 
-        *Besides that, it uses allot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
+        *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
 
 1. This deletes the preview thumbnails it generated before you disabled this option
 1. If you want to show your Collection in your library
@@ -494,3 +494,5 @@ For the information of this guide, I made use of the following sources
 - [Plex Support Articles](https://support.plex.tv/articles/){:target="_blank" rel="noopener noreferrer"}
 - Extra Information gathered from a Plex employee
 - Own experience
+
+--8<-- "includes/support.md"

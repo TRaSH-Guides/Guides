@@ -29,15 +29,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 Here you setup your download path/location.
 
-!!! Warning "ATTENTION"
-
-    1. You set your download location in your download client
-    1. Your download client **ONLY** downloads to your download folder/location.
-    1. And you tell Radarr where you want your clean media library
-    1. Radarr imports from your download location (copy/move/hardlink) to your media folder/library
-    1. Plex, Emby, JellyFin or Kodi should **ONLY** have access to your media folder/library
-
-    :bangbang: __**Your Download and Media Library should be **NEVER** the same locations**__ :bangbang:
+--8<-- "includes/downloaders/warning-path-location.md"
 
 ### System Folders
 
@@ -147,3 +139,5 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 ------
 
 <sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
+
+--8<-- "includes/support.md"

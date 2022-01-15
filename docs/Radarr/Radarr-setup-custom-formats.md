@@ -4,7 +4,7 @@ So what's the best way to setup the Custom Profiles and which one to use with wh
 
 There isn't a best scores setup, being that everyone has its own personal preference what they prefer Audio or Video or perhaps both.
 
-But being I still get allot of questions about it I decided to create a Guide for it.
+But being I still get a lot of questions about it I decided to create a Guide for it.
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats. That you can use to get a idea how to setup yours.
 
@@ -77,10 +77,6 @@ In your chosen profile at the bottom you will see the added Custom Profiles wher
 My suggestion is to create tiers of scores based on what things matter to you.
 
 Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](#releases-you-should-avoid)
-
-If you got any questions or aren't sure what to add just Click the chat badge to join the Discord Channel where you can ask your questions directly.
-
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -331,3 +327,5 @@ Because I'm to lazy to calculate the maximum for every of my used Quality Profil
 ## Thanks
 
 A big Thanks to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.
+
+--8<-- "includes/support.md"

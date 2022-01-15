@@ -10,6 +10,35 @@
 
     And a very big thanks to [Bokkoman](https://www.buymeacoffee.com/bokkoman){:target="_blank" rel="noopener noreferrer"} and [BZwart](https://github.com/BaukeZwart){:target="_blank" rel="noopener noreferrer"} that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.
 
+## Introduction
+
+This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.
+
+### Automated Script
+
+??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [CLICK TO EXPAND]"
+
+    !!! Warning
+        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script.
+
+        The script is new and only tested on Synology DSM7.
+
+        **:bangbang: We are not held reliable if anything breaks on your system. Use at your own risk :bangbang:**
+
+    To get this working you will need to enable terminal access (SSH).
+
+    To enable this on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
+
+    When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.
+
+    ```bash
+    curl -sL git.io/syno-script > ~/syno-script
+    ```
+
+    ```bash
+    sudo bash ~/syno-script
+    ```
+
 ## Install Docker
 
 You need to install Docker from the `Package Center`. This should also create a share named `docker`, check File Station if it is present.
@@ -194,11 +223,13 @@ For this, we need two files:
 
 We will start with downloading the `docker-compose.yml` file
 
-Download this [docker-compose.yml](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
+Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
 
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 ```
+
+### Whats included and Whats not included
 
 ??? question "What's included and What's not included - [CLICK TO EXPAND]"
 
@@ -209,7 +240,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
     - Bazarr (Subtitle searcher and downloader)
     - Plex
 
-    What's not included.
+    What's not included (and where are the download clients?).
 
     I didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer, so I created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
 
@@ -217,7 +248,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 
 Second we will download the `.env` file
 
-Download this [.env](https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use this command:
+Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use this command:
 
 ```bash
 sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
@@ -231,7 +262,7 @@ sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/mai
 ### Changes and preparations
 
 !!! tip
-    If you need to edit docker-compose.yml ot he .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}
+    If you need to edit docker-compose.yml or the .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}
 
 The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
@@ -331,3 +362,5 @@ You will notice that all the images will be downloaded, after that the container
     Just don't use the GUI, only for information purposes !!!
 
 --8<-- "includes/hardlinks/docker-compose-commands.md"
+
+--8<-- "includes/support.md"

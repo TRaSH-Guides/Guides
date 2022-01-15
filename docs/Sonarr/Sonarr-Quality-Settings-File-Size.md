@@ -4,7 +4,7 @@ I often get the question what's the best Quality Settings to use,
 Well it's actually personal preference so I will show you a recommended Quality Settings.
 But before you continue to read, as with all my guides:
 
-!!! question ""
+!!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 This Quality Settings has been created and tested with info I got from others, and release comparisons from different sources.
@@ -73,3 +73,5 @@ I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet 
 | WEBDL-2160p        | 69.1    | 350     |
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |
+
+--8<-- "includes/support.md"

@@ -57,6 +57,15 @@
       "fields": {
         "value": 5
       }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
     }
   ]
 }

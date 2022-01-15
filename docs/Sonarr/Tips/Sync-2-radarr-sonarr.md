@@ -1,0 +1,1 @@
+../../Radarr/Tips/Sync-2-radarr-sonarr.md

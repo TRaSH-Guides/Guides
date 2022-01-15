@@ -12,8 +12,12 @@
 
 ![!sabnzbd-categories](/Hardlinks/images/sabnzbd-categories.png)
 
+--8<-- "includes/downloaders/warning-path-location.md"
+
 ---
 
 ## Paths and Categories Breakdown
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
+
+--8<-- "includes/support.md"

@@ -1,11 +1,25 @@
-# Remote Path Mappings explained
+# Remote Path Mappings
 
-Remote Path Mappings explained for Sonarr
+Seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.
 
-Seems that allot of people don't understand how the remote path mapping works for Sonarr.
-I will try to explain it with some screenshots and a short description.
+Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
 
 ## Do I need Remote Path Mappings
+
+- If Sonarr and your download client are not on the same server/system.
+- If you use either merged local/remote setups using mergerfs or similar
+- You run dockers and **DON'T** have Consistent and well planned paths.
+
+!!! note
+    If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
+
+    - [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
+
+    - [TRaSH Guides](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+
+------
+
+## How do I recognize that I need remote path mappings
 
 If your download client is on another system then Sonarr then you probably need to make use of Remote Path Mappings.
 
@@ -69,3 +83,5 @@ A screen will popup with the following options.
         The final result will look something like this.
 
         ![Qbittorrent final result](images/qbit_final.png)
+
+--8<-- "includes/support.md"
