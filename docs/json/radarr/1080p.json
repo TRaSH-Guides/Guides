@@ -1,0 +1,17 @@
+{
+  "trash_id": "820b09bb9acbfde9c35c71e0e565dad8",
+  "trash_score": "50",
+  "name": "1080p",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    }
+  ]
+}

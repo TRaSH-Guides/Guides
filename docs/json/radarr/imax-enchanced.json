@@ -1,22 +1,13 @@
 {
-  "trash_id": "eecf3a857724171f968a66cb5719e152",
-  "trash_score": "25",
-  "name": "IMAX",
+  "trash_id": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
+  "trash_score": "750",
+  "name": "IMAX Enhanced",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "IMAX",
+      "name": "IMAX Enhanced",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\bIMAX\\b"
-      }
-    },
-    {
-      "name": "NOT: IMAX Enhanced",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
       "required": true,
       "fields": {
         "value": "^(?=.*(DSNP|CORE(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\bBC(?=[ ._-]web[ ._-]?(dl|rip)\\b)|IMAX[- .]Enhanced)\\b)(?=.*\\b(IMAX|IMAX[- .]Enhanced)\\b).*"
