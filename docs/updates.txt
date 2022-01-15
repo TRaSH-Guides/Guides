@@ -1,4 +1,4 @@
-# 2022-01-14
+# 2022-01-15
 Updated: Radarr - Collection of Custom Formats
 - Fixed: CF [BR-DISK] Not matching if release group has DVD in it.
 - Fixed: CF [DTS] so it doesn't match `dts-mar` or `dts.hdr`.
@@ -9,6 +9,9 @@ Updated: Radarr - Collection of Custom Formats
 - NEW: CF [IMAX Enhanced]
 - Fixed: CF [IMAX] to prevent double scoring with [IMAX Enhanced]
 - Updated: Scores to the new scoring standard
+
+# 2022-01-14
+Test changes
 
 # 2022-01-14
 Initial Release for the new changelog.
