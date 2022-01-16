@@ -1,3 +1,15 @@
+# 2022-01-16
+Updated: Radarr - Collection of Custom Formats
+- Updated: CF `[4K Remaster]` Scores to the new scoring standard.
+- Updated: CF `[Criterion Collection]` Scores to the new scoring standard.
+- Fixed: CF `[TrueHD Atmos]` to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF `[ATMOS (undefined)]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Fixed: CF `[TrueHD]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Changed: CF `[HDR]` `[HDR (undefined)]`condition name.
+- Updated: CF `[HQ]` Added `FraMeSToR`.
+- Added: CF `[IMAX Enhanced]` to the site.
+- Fixed: Correct spelling for Enhanced.
+
 # 2022-01-15
 Updated: Radarr - Collection of Custom Formats
 - Fixed: CF [BR-DISK] Not matching if release group has DVD in it.
