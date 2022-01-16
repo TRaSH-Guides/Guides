@@ -5,7 +5,7 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Groups",
+      "name": "Groups (Missing HDR)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
