@@ -56,7 +56,7 @@ I also made 3 guides related to this one.
 | [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [MPEG2](#mpeg2)                           |                              |
 | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [FreeLeech](#freeleech)                   |                              |
 | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [Dutch Groups](#dutch-groups)             |                              |
-|                                               | [DV (WEBDL)](#dv-webdl)             | [Anime Dual Audio](#anime-dual-audio)     |                              |
+| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)             | [Anime Dual Audio](#anime-dual-audio)     |                              |
 |                                               |                                     |                                           |                              |
 
 ------
@@ -773,6 +773,23 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/imax.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### IMAX Enhanced
+
+??? faq "IMAX Enhanced - [CLICK TO EXPAND]"
+    IMAX Enhanced: Get More Picture Instead of Black Bars
+
+    IMAX Enhanced exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/imax-enhanced.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
