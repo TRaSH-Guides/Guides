@@ -3,6 +3,7 @@
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
 
 !!! attention
+
     - Anything here is for private use only and not for public use :bangbang:
     - I expect from the users that got the link to this page to honour it :bangbang:
     - Yes you can talk in the public channels that you use a specific SQP.
@@ -30,6 +31,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
     No you should always follow the scores of the SQP.
 
 !!! TIP
+
     - Look for the SQP you want to use, if you're unsure which one will fit your needs ask in the dedicated channel.
     - If you got any questions or need extra info about a SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
