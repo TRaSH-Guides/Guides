@@ -35,3 +35,4 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
     - Look for the SQP you want to use, if you're unsure which one will fit your needs ask in the dedicated channel.
     - If you got any questions or need extra info about a SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
+
