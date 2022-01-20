@@ -1,3 +1,9 @@
+# 2022-01-20
+Updated: Sonarr- Release Profile RegEx (WEB-DL)
+- Added: Remux to the exclusion for DoVi.
+- Added: Sonarr Season Pack Warning.
+- Added: Optional Dolby Vision - if you prefer Dolby Vision.
+
 # 2022-01-16
 Updated: Radarr - Collection of Custom Formats
 - Updated: CF `[4K Remaster]` Scores to the new scoring standard.
