@@ -366,6 +366,14 @@ Add this to your `Preferred (3)` with a score of [10]
 /\bHDR(\b|\d)/i
 ```
 
+#### Optional Dolby Vision - if you prefer Dolby Vision
+
+Add this to your `Preferred (3)` with a score of [100]
+
+```bash
+/\b(dv|dovi|dolby[ .]vision)\b/i
+```
+
 #### Optional (use these only if you dislike renamed and retagged releases)
 
 Add this to your `Preferred (3)` with a score of [-25]
@@ -409,7 +417,10 @@ Add this to your `Preferred (3)` with a score of [-25]
 #### Optional Matches Season Packs (use this if you prefer Season packs)
 
 !!! warning ""
-    This will upgrade also your already downloaded single episodes
+
+    - This will upgrade also your already downloaded single episodes
+    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.
+    - keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
 
 Add this to your `Preferred (3)` with a score of [15]
 
@@ -449,7 +460,7 @@ Add this to your `Must not contain (2)`
 
 ??? note "Why ? - [CLICK TO EXPAND]"
 
-    Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11)
+    Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11){:target="_blank" rel="noopener noreferrer"}
 
 Add this to your `Must not contain (2)`
 
