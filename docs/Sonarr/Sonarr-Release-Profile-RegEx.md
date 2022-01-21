@@ -112,7 +112,7 @@ Add this to your `Preferred (3)` with a score of [100]
 ```
 
 ```bash
-/\b(hmax)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(hmax|hbom)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [95]
