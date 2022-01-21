@@ -296,27 +296,27 @@ Add this to your Preferred with a score of **[4100]**
 BluRay-Encode / Dual-Audio / 1st Tier
 
 ```bash
-/\b(sam|UDF|Arid|Quetzal)/i\b
+/\b(sam|UDF|Arid|Quetzal)\b/i
 ```
 
 ```bash
-/\b(Drag|Lulu|Yuki|YURI|OZR)/i\b
+/\b(Drag|Lulu|Yuki|YURI|OZR)\b/i
 ```
 
 ```bash
-/\b(Senjou|Datte13|FLFL|Mysteria|WSE)/i\b
+/\b(Senjou|Datte13|FLFL|Mysteria|WSE)\b/i
 ```
 
 ```bash
-/\b(Legion|Kulot|Exp|ASC|Yoghurt|ARC)/i\b
+/\b(Legion|Kulot|Exp|ASC|Yoghurt|ARC)\b/i
 ```
 
 ```bash
-/\b(Vodes|hydes|Reza|CsRmX|McBalls|Not-Vodes)/i\b
+/\b(Vodes|hydes|Reza|CsRmX|McBalls|Not-Vodes)\b/i
 ```
 
 ```bash
-/\b(succ[._-]|Chouonsoku|Ayashii|BKC|Exstasia)/i\b
+/\b(succ[._-]|Chouonsoku|Ayashii|BKC|Exstasia)\b/i
 ```
 
 Add this to your Preferred with a score of **[4000]**
@@ -324,21 +324,21 @@ Add this to your Preferred with a score of **[4000]**
 BluRay-Encode / Dual-Audio / 2nd Tier
 
 ```bash
-/\b(WBDP|Kametsu|NH|Pog42|deanzel)/i\b
+/\b(WBDP|Kametsu|NH|Pog42|deanzel)\b/i
 ```
 ```bash
-/\b(CTR|zangafan|ShadyCrab|Holomux)/i\b
-```
-
-```bash
-/\b(0x539|KH|CBT|GSK[._-]kun|RASETSU)/i\b
+/\b(CTR|zangafan|ShadyCrab|Holomux)\b/i
 ```
 
 ```bash
-/\b(AC|hchcsen|Dekinai|Foxtrot|Bakaiser)/i\b
+/\b(0x539|KH|CBT|GSK[._-]kun|RASETSU)\b/i
+```
+
+```bash
+/\b(AC|hchcsen|Dekinai|Foxtrot|Bakaiser)\b/i
 ```
 ```bash
-/\b(MK|Koten[._-]Gars|neko[._-]kBaraka|kuchikirukia)/i\b
+/\b(MK|Koten[._-]Gars|neko[._-]kBaraka|kuchikirukia)\b/i
 ```
 
 Add this to your Preferred with a score of **[3900]**
@@ -346,23 +346,23 @@ Add this to your Preferred with a score of **[3900]**
 BluRay-Encode / Dual-Audio / 3rd Tier
 
 ```bash
-/\b(Tsundere|MTBB|NH|FFF|Commie)/i\b
+/\b(Tsundere|MTBB|NH|FFF|Commie)\b/i
 ```
 
 ```bash
-/\b(Chihiro|Kaleido|Judgment|GJM)/i\b
+/\b(Chihiro|Kaleido|Judgment|GJM)\b/i
 ```
 
 ```bash
-/\b(SmugCat|BlurayDesuYo|Asenshi|Asakura)/i\b
+/\b(SmugCat|BlurayDesuYo|Asenshi|Asakura)\b/i
 ```
 
 ```bash
-/\b(GHS|YameteTomete|Z4ST1N|Okay[._-]Subs)/i\b
+/\b(GHS|YameteTomete|Z4ST1N|Okay[._-]Subs)\b/i
 ```
 
 ```bash
-/\b(LNS|Vivid|Doki|Coalgirls)/i\b
+/\b(LNS|Vivid|Doki|Coalgirls)\b/i
 ```
 
 ---
