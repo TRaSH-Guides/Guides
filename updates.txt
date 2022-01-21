@@ -1,5 +1,13 @@
+# 2022-01-21
+Updated: Radarr - Collection of Custom Formats
+- Fixed: CF [TrueHD Atmos] to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF [TrueHD] to prevent double scoring with latest update of [TrueHD Atmos].
+Updated: Sonarr - Release Profile RegEx (WEB-DL)
+- Added: HBO MAX (hmax|hbom).
+- Changed: Scores HBO MAX (hmax|hbom).
+
 # 2022-01-20
-Updated: Sonarr- Release Profile RegEx (WEB-DL)
+Updated: Sonarr - Release Profile RegEx (WEB-DL)
 - Added: Remux to the exclusion for DoVi.
 - Added: Sonarr Season Pack Warning.
 - Added: Optional Dolby Vision - if you prefer Dolby Vision.
