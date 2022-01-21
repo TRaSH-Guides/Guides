@@ -290,7 +290,7 @@ Add this to your Preferred with a score of **[5]**
 
 !!! important
     This is the end of the optional section.
-    
+
 Add this to your Preferred with a score of **[4100]**
 
 BluRay-Encode / Dual-Audio / 1st Tier
@@ -326,6 +326,7 @@ BluRay-Encode / Dual-Audio / 2nd Tier
 ```bash
 /\b(WBDP|Kametsu|NH|Pog42|deanzel)\b/i
 ```
+
 ```bash
 /\b(CTR|zangafan|ShadyCrab|Holomux)\b/i
 ```
@@ -337,6 +338,7 @@ BluRay-Encode / Dual-Audio / 2nd Tier
 ```bash
 /\b(AC|hchcsen|Dekinai|Foxtrot|Bakaiser)\b/i
 ```
+
 ```bash
 /\b(MK|Koten[._-]Gars|neko[._-]kBaraka|kuchikirukia)\b/i
 ```
