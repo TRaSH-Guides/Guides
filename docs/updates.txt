@@ -1,6 +1,35 @@
-# 2022-01-14
+# 2022-01-20
+Updated: Sonarr- Release Profile RegEx (WEB-DL)
+- Added: Remux to the exclusion for DoVi.
+- Added: Sonarr Season Pack Warning.
+- Added: Optional Dolby Vision - if you prefer Dolby Vision.
+
+# 2022-01-16
+Updated: Radarr - Collection of Custom Formats
+- Updated: CF `[4K Remaster]` Scores to the new scoring standard.
+- Updated: CF `[Criterion Collection]` Scores to the new scoring standard.
+- Fixed: CF `[TrueHD Atmos]` to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF `[ATMOS (undefined)]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Fixed: CF `[TrueHD]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Changed: CF `[HDR]` `[HDR (undefined)]`condition name.
+- Updated: CF `[HQ]` Added `FraMeSToR`.
+- Added: CF `[IMAX Enhanced]` to the site.
+- Fixed: Correct spelling for Enhanced.
+
+# 2022-01-15
+Updated: Radarr - Collection of Custom Formats
 - Fixed: CF [BR-DISK] Not matching if release group has DVD in it.
+- Fixed: CF [DTS] so it doesn't match `dts-mar` or `dts.hdr`.
+- Fixed: CF [DTS-HD MA] so it doesn't match `dts-mar` or `dts.hdr`.
+- Updated: CF [HQ-WEBDL] added `SIC` as `HQ WEBDL`.
+- Fixed: CF [LQ] corrected double paste and added correct block.
+- Updated: CF [x265 (720/1080p)] removed `Quality Group Exceptions` condition after several complaints.
+- NEW: CF [IMAX Enhanced]
+- Fixed: CF [IMAX] to prevent double scoring with [IMAX Enhanced]
+- Updated: Scores to the new scoring standard
+
+# 2022-01-14
+Test changes
 
 # 2022-01-14
 Initial Release for the new changelog.
-
