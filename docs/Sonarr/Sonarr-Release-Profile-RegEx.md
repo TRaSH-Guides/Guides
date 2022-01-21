@@ -111,10 +111,6 @@ Add this to your `Preferred (3)` with a score of [100]
 /\b(atvp|aptv)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-```bash
-/\b(hmax|hbom)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
 Add this to your `Preferred (3)` with a score of [95]
 
 ```bash
@@ -133,6 +129,10 @@ Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
 /\b(qibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(hmax|hbom)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [85]
