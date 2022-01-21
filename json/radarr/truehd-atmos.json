@@ -19,7 +19,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bATMOS(\\b|\\d)|CtrlHD"
+        "value": "\\b(ATMOS|CtrlHD|W4NK3R)(\\b|\\d)"
       }
     },
     {
