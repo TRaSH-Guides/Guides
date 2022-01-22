@@ -48,7 +48,7 @@ If you notice issues with the sizes please report it.
 | -------------- | ----- | --------- | ---- |
 | WEBDL-1080p    |  25.2 |      84.7 | 85.7 |
 | WEBRip-1080p   |  25.2 |      84.7 | 85.7 |
-| Bluray-720p    |  33.8 |       101 | 102  |
+| Bluray-720p    |  25.2 |       101 | 102  |
 | Bluray-1080p   |  33.8 |       101 | 102  |
 
 ??? check "example - [CLICK TO EXPAND]"
