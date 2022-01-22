@@ -96,7 +96,7 @@ plugins:
         compose.md: Misc/how-to-provide-a-docker-compose.md
         Golden-Rule.md: Misc/x265-4k.md
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
-
+        merge-quality.md: Radarr/Tips/Merge-quality.md
 theme:
   name: material
   custom_dir: overrides
