@@ -281,6 +281,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Radarr/Tips/Merge-quality/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Radarr/Tips/Radarr-add-a-movie-collection/</loc>
          <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
@@ -342,6 +347,11 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Sonarr/Sonarr-remote-path-mapping/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/Tips/Merge-quality/</loc>
          <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
