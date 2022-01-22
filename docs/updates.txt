@@ -1,10 +1,16 @@
-# 2022-01-21
+# 2022-01-22
 Updated: Radarr - Collection of Custom Formats
 - Fixed: CF [TrueHD Atmos] to recognize groups that only use Atmos/TrueHD in their release name.
 - Fixed: CF [TrueHD] to prevent double scoring with latest update of [TrueHD Atmos].
 Updated: Sonarr - Release Profile RegEx (WEB-DL)
 - Added: HBO MAX (hmax|hbom).
 - Changed: Scores HBO MAX (hmax|hbom).
+Removed: Notifiarr Instructions from the guide #481
+- Removed: Notifiarr Instructions from the guide (*)
+How to merge quality #482
+- NEW: Guide in Radarr Tips section, covering how to merge qualities.
+
+(*) The Notifiarr project has become that huge that i'm not able to cover everything and every change/update/addition to it, and i don't use all of the options it offers. So I decided with the developer that i will remove it from the guide for now being it's to outdated and will create a new one only covering the TRaSH Guide Sync option.
 
 # 2022-01-20
 Updated: Sonarr - Release Profile RegEx (WEB-DL)
