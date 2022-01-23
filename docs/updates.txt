@@ -1,3 +1,11 @@
+# 2022-01-23
+NEW: Replace copies with hardlinks #486
+- NEW: Guide in Hardlinks section, How to replace copies with hardlinks.
+Updated: Radarr CF Collection #488
+- Changed: Categories names.
+Updated: How to setup Custom Formats 20220123 #489
+- Complete redo and updating of the scoring and formatting of the guide.
+
 # 2022-01-22
 Updated: Radarr - Collection of Custom Formats
 - Fixed: CF [TrueHD Atmos] to recognize groups that only use Atmos/TrueHD in their release name.
