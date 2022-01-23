@@ -7,4 +7,3 @@
     | Criterion Collection | 25    |
     | Special Edition      | 25    |
     | IMAX                 | 25    |
-    | IMAX Enhanced        | 750   |

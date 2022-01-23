@@ -36,3 +36,4 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
     - If you got any questions or need extra info about a SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
 
+--8<-- "includes/support.md"
