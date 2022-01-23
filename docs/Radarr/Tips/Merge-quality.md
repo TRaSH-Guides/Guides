@@ -10,49 +10,9 @@ To accomplish this you will need to merge the quality's with each other.
 
 Here you will see the current logic so you understand how the possible downloads are compared.
 
-As of 2021-11-06 the logic is as follows:
+--8<-- "includes/merge-quality/radarr-current-logic.md"
 
-### Radarr current logic
-
-??? summary "Radarr current logic- [CLICK TO EXPAND]"
-
-    1. Quality
-    1. Custom Format Score
-    1. Protocol
-    1. Indexer Priority
-    1. Indexer Flags
-    1. Seeds/Peers (If Torrent)
-    1. Age (If Usenet)
-    1. Size
-
-    [Source: Wiki Servarr](https://wiki.servarr.com/radarr/faq#how-are-possible-downloads-compared){:target="_blank" rel="noopener noreferrer"}
-
-    !!! attention ""
-        REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
-
-         `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use the [Repack/Proper Custom Format](/Radarr/Radarr-collection-of-custom-formats/#repack-proper){:target="_blank" rel="noopener noreferrer"}
-
-### Sonarr current logic
-
-??? summary "Sonarr current logic- [CLICK TO EXPAND]"
-
-    1. Quality
-    1. Language
-    1. Preferred Word Score
-    1. Protocol
-    1. Episode Count
-    1. Episode Number
-    1. Indexer Priority
-    1. Seeds/Peers (If Torrent)
-    1. Age (If Usenet)
-    1. Size
-
-    [Source: Wiki Servarr](https://wiki.servarr.com/sonarr/faq#how-are-possible-downloads-compared){:target="_blank" rel="noopener noreferrer"}
-
-    !!! attention ""
-        REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
-
-         `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use a preferred word regex of `/\b(repack|proper)\b/i`
+--8<-- "includes/merge-quality/sonarr-current-logic.md"
 
 ## Merge the Qualities
 
