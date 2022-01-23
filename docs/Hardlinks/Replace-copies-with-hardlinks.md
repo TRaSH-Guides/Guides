@@ -23,7 +23,7 @@ If your Operating System supports it you could make use of [Jdupes](https://gith
 jdupes [options] DIR1 DIR2
 ```
 
-This will print matches and --summarize at the end
+This will do a dry run and summarize at the end.
 
 ```bash
 jdupes -M -r "/data/torrents/movies/" "/data/media/movies"
