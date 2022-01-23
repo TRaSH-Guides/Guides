@@ -45,6 +45,7 @@ In your chosen profile at the bottom you will see the added Custom Profiles wher
 
         - Always follow the data described in the guide.
         - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
+
 ------
 
 !!! attention
