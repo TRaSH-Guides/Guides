@@ -4,7 +4,7 @@
 
 --8<-- "includes/cf/hdr-metadata.md"
 
---8<-- "includes/cf/movie-versions.md"
+--8<-- "includes/cf/movie-versions-imaxe.md"
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format        | Score |
@@ -15,27 +15,9 @@
 
 --8<-- "includes/cf/hq4k.md"
 
-??? summary "Misc - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | Repack/Proper        |     1 |
+--8<-- "includes/cf/misc.md"
 
-??? summary "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format    | Score  |
-    | ---------------- | ------ |
-    | BR-DISK          | -10000 |
-    | EVO (no WEBDL)   | -10000 |
-    | LQ               | -10000 |
-    | x265 (720/1080p) | -10000 |
-    | 3D               | -10000 |
-    | No-RlsGroup      | -10000 |
-    | Obfuscated       | -10000 |
-    | DV (WEBDL)       | ?????? |
-
-    !!! hint
-        `[DV WEBDL]` = This custom format you need to score depending of your personal use.
-
-        If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of 0 or just don't add it, if you also got a setup that doesn't support Dolby Vision then you should add this with a score of `-10000`
+--8<-- "includes/cf/unwanted.md"
 
 ### Quality Size
 

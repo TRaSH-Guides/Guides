@@ -10,30 +10,15 @@ Here I will try to explain with some personal used examples how to make the most
 
 ------
 
-!!! important
-
-    I also suggest to change the Propers and Repacks settings in Radarr !!!
-
-    Instructions can be found [HERE](#proper-and-repacks)
-
 ## Basics
-
-!!! note
-
-    Custom formats are implemented within and have their impact controlled by Quality Profiles.
-
-    - The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.
-    - A score of 0 results in the custom format being informational only.
-    - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
-    - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
-    - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
 First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 And a short description what the settings means.
 
 `Settings` => `Profiles`
 
-![cf-settings-profiles](images/cf-settings-profiles.png)
+??? check "example - [CLICK TO EXPAND]"
+    ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 Then select the profile that you use/prefer.
 
@@ -52,31 +37,37 @@ Then select the profile that you use/prefer.
 
 In your chosen profile at the bottom you will see the added Custom Profiles where you can start setting up the scores.
 
-![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
+??? check "example - [CLICK TO EXPAND]"
+    ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
+
+    !!! attention
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+
+        - Always follow the data described in the guide.
+        - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
 ------
-
-## Overall tips and suggestions
 
 !!! attention
     Keep in mind Custom Formats are made to fine tune your Quality Profile
 
     Generally Quality Trumps All
 
-    The current logic can be found [HERE](https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/DecisionEngine/DownloadDecisionComparer.cs){:target="_blank" rel="noopener noreferrer"} As of 1/19/2021 the logic is as follows
-
-    1. Quality
-    1. Custom Format Score
-    1. Protocol
-    1. Indexer Priority
-    1. Indexer Flags
-    1. Peers (If Torrent)
-    1. Age (If Usenet)
-    1. Size
+--8<-- "includes/merge-quality/radarr-current-logic.md"
 
 My suggestion is to create tiers of scores based on what things matter to you.
 
 Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](#releases-you-should-avoid)
+
+!!! info
+
+    Custom formats are implemented within and have their impact controlled by Quality Profiles.
+
+    - The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.
+    - A score of 0 results in the custom format being informational only.
+    - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
+    - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
+    - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
 ------
 
@@ -86,44 +77,13 @@ Here I will show how to make the most use of Custom Formats and show some person
 
 All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}
 
-??? FAQ "Which overall scoring scheme do you use ? - [CLICK TO EXPAND]"
-
-    ### Which overall scoring scheme do you use
-
-    - **Advanced Audio** 2000 for the highest with steps of 100 down.
-    - **HDR Metadata** 1000 for the highest with steps of 100 down (except for Dovi SL).
-    - **Movie Versions** 200 for the highest with steps of 10 down.
-    - **Misc** Variable depending on your use case.
-    - **Releases you should avoid** -10000
-
-    If you notice that some scores are missing between the different Quality Profiles examples it's because I decided to be consistent with the scoring. Meaning a certain Custom Format has in every used Quality Profile the same score.
-
 ------
 
 ### Releases you should avoid
 
 In my opinion this is a must for every Quality Profile you use, all these Custom Formats make sure you don't get Low Quality Releases.
 
-!!! info
-    Add all of the following Custom Formats as `-10000`
-
-![!cf-misc-10000](images/cf-misc-10000.png)
-
-??? example "Breakdown and Why - [CLICK TO EXPAND]"
-
-    - **BR-DISK** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-    - **EVO except WEB-DL** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
-    - **Low Quality Releases** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
-    - **720/1080p no x265** This blocks/ignores 720/1080p releases that are encoded in x265 - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
-    - **3D** Is 3D still a thing for home use ?
-    - **No-RlsGroup** Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
-    - **DoVi (WEBDL)** This is a special Custom Format that ignores DV for WEB-DL but together with the normal DoVi allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).
-
-??? success "example - [CLICK TO EXPAND]"
-    ![!cf-misc-10000-result](images/cf-misc-10000-result.png)
-
-!!! tip
-    You might even can consider to add [Multi](/Radarr/Radarr-collection-of-custom-formats/#multi){:target="_blank" rel="noopener noreferrer"} if you want to make sure you don't grab releases with often foreign audio.
+--8<-- "includes/cf/unwanted.md"
 
 ------
 
@@ -131,15 +91,9 @@ In my opinion this is a must for every Quality Profile you use, all these Custom
 
 Lets say you prefer HD audio (with object metadata)
 
-Then we would use the following order.
+In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
 
-`Basic Dolby Digital (DD) < AAC < Basic DTS (DTS) < DTS-ES < Dolby Digital Plus (DD+) < DTS-HD HRA < PCM = FLAC < DTS-HD MA < TrueHD < DD+ ATMOS = ATMOS (undefined) < DTS X < TrueHD ATMOS`
-
-In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless
-
-??? success "example - [CLICK TO EXPAND]"
-
-    ![!cf-prefer-advanced-audio](images/cf-prefer-advanced-audio.png)
+--8<-- "includes/cf/audio.md"
 
 ------
 
@@ -149,15 +103,15 @@ Lets say you prefer HDR metadata
 
 Then we would use the following order.
 
-`HDR (undefined) = HDR < Dolby Vision`
+--8<-- "includes/cf/hdr-metadata.md"
 
-I didn't add `Dolby Vision (Single Layer)` being most of the releases are already replaced by real `Dolby Vision` releases, If you still want to add it put it between `HDR` and `Dolby Vision` so they still can get upgraded.
+------
 
-Also I didn't add `10 Bit` being 4k releases are 99% 10bit anyway.
+!!! important
 
-??? success "example - [CLICK TO EXPAND]"
+    I also suggest to change the Propers and Repacks settings in Radarr !!!
 
-    ![!cf-prefer-hdr-metadata](images/cf-prefer-hdr-metadata.png)
+    Instructions can be found [HERE](#proper-and-repacks)
 
 ------
 
@@ -168,36 +122,46 @@ If you prefer HQ Encodes (Bluray-720/1080/2160p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Movie Versions`, `Misc (-10000)` and `Misc`
+For this Quality Profile we're going to make use of the following Custom Formats
 
- :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
+--8<-- "includes/cf/movie-versions.md"
 
-I decided not to add `Audio Advanced` Custom Formats to the encodes profile being with encodes I prefer higher video quality, If I want also the HD audio formats I would go for the Remuxes.
+--8<-- "includes/cf/unwanted.md"
 
-The Custom Formats we're going to use and scoring.
+--8<-- "includes/cf/misc.md"
 
-![!cf-profile-encodes-scoring](images/cf-profile-encodes-scoring.png)
+??? summary "HQ Source Groups - [CLICK TO EXPAND]"
+    | Custom Format        | Score |
+    | -------------------- | ----- |
+    | HQ-WEBDL             | 1750  |
+    | HQ-Remux             |    0  |
+    | HQ                   | 1800  |
 
-And you use the following main settings in your profile.
+I decided not to add `Audio Advanced` Custom Formats to the encodes profile being with encodes I prefer higher video quality, If you also want HD audio formats I would suggest to go for the Remuxes.
+
+Use the following main settings in your profile.
 
 ![!cf-profile-encodes](images/cf-profile-encodes.png)
 
-!!! info
+!!! fail ""
 
     Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL
 
-The following workflow will be applied:
+??? example "The following workflow will be applied:"
 
-- It will download WEB-DL 1080p for the streaming movies you see more often lately.
-- It will upgrade till Bluray-1080p when available.
-- The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
+    - It will download WEB-DL 1080p for the streaming movies you see more often lately.
+    - It will upgrade till Bluray-1080p when available.
+    - The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
 
-So why such a ridiculous high `Upgrade Until Custom` and not a score of `100` ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
+    So why such a ridiculous high `Upgrade Until Custom` and not a score of `100` ?
 
-!!! info
+    Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
 
-    If you prefer 2160/4K encodes you might consider to enable HDR and set the `Upgrade Until Quality` to Bluray-2160p
+!!! tip
+
+    If you prefer 2160/4K encodes you might consider to change `Upgrade Until Quality` to Bluray-2160p and enable:
+
+    --8<-- "includes/cf/hdr-metadata.md"
 
 ------
 
@@ -208,30 +172,40 @@ If you prefer 1080p Remuxes (Remux-1080p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Audio Advanced`, `Movie Versions`, `Misc (-10000)` and `Misc`
+For this Quality Profile we're going to make use of the following Custom Formats
 
- :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
+--8<-- "includes/cf/audio.md"
 
-The Custom Formats we're going to use and scoring.
+--8<-- "includes/cf/movie-versions.md"
 
-![!cf-profile-remux1080-scoring](images/cf-profile-remux1080-scoring.png)
+--8<-- "includes/cf/unwanted.md"
 
-And you use the following main settings in your profile.
+--8<-- "includes/cf/misc.md"
+
+??? summary "HQ Source Groups - [CLICK TO EXPAND]"
+    | Custom Format        | Score |
+    | -------------------- | ----- |
+    | HQ-WEBDL             | 1750  |
+    | HQ-Remux             | 2000  |
+    | HQ                   |    0  |
+
+Use the following main settings in your profile.
 
 ![!cf-profile-remux1080](images/cf-profile-remux1080.png)
 
-!!! info
+!!! fail ""
 
     Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL
 
-The following workflow will be applied:
+??? example "The following workflow will be applied:"
 
-- It will download WEB-DL 1080p for the streaming movies you see more often lately.
-- It will upgrade till Remux-1080p when available.
-- The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
+    - It will download WEB-DL 1080p for the streaming movies you see more often lately.
+    - It will upgrade till Remux-1080p when available.
+    - The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
 
-So why such a ridiculous high `Upgrade Until Custom` and not a score of `500` ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
+    So why such a ridiculous high `Upgrade Until Custom` and not a score of `500` ?
+
+    Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
 
 ------
 
@@ -242,34 +216,46 @@ If you prefer 2160p Remuxes (Remux-2160p)
 I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. :bangbang:
 
-For this Quality Profile we're going to make use of `Audio Advanced`,  `HDR Metadata`,`Movie Versions`, `Misc (-10000)` and `Misc`
+For this Quality Profile we're going to make use of the following Custom Formats
 
- :bangbang: **Make sure you add the [Releases you should avoid](#releases-you-should-avoid)** :bangbang:
+--8<-- "includes/cf/audio.md"
 
-The Custom Formats we're going to use and scoring.
+--8<-- "includes/cf/hdr-metadata.md"
 
-![!cf-profile-remux2160-scoring](images/cf-profile-remux2160-scoring.png)
+--8<-- "includes/cf/movie-versions.md"
 
-And you use the following main settings in your profile.
+--8<-- "includes/cf/unwanted.md"
+
+--8<-- "includes/cf/misc.md"
+
+??? summary "HQ Source Groups - [CLICK TO EXPAND]"
+    | Custom Format        | Score |
+    | -------------------- | ----- |
+    | HQ-WEBDL             | 1750  |
+    | HQ-Remux             | 2000  |
+    | HQ                   |    0  |
+
+Use the following main settings in your profile.
 
 ![!cf-profile-remux2160](images/cf-profile-remux2160.png)
 
-!!! info
+!!! fail ""
 
     Make sure you don't check the BR-DISK.
 
-The following workflow will be applied:
+??? example "The following workflow will be applied:"
 
-- It will download WEB-DL 2160p for the streaming movies you see more often lately.
-- It will upgrade till Remux-2160p when available.
-- The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
+    - It will download WEB-DL 2160p for the streaming movies you see more often lately.
+    - It will upgrade till Remux-2160p when available.
+    - The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.
 
-So why such a ridiculous high `Upgrade Until Custom` and not a score of `500` ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
+    So why such a ridiculous high `Upgrade Until Custom` and not a score of `500` ?
+
+    Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.
 
 ------
 
-## FAQ and Tips
+## FAQ & INFO
 
 ### Proper and Repacks
 
