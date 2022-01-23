@@ -2522,10 +2522,10 @@
 To enable terminal, you need to enable SSH in the Synology Settings.</p>
 <p><code>Control Panel</code> &gt; <code>Terminal &amp; SNMP</code> &gt; <code>Enable SSH service</code></p>
 <p><div class="lightgallery"><a data-sub-html="synology-control-panel" href="../images/synology-ssh.png"><img alt="synology-control-panel" src="../images/synology-ssh.png" /></a></div></p>
-<p>Then use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">Putty</a> and you can SSH into your Synology.</p>
+<p>Then use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">Putty</a> to SSH into your Synology.</p>
+<p>Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.</p>
 <p>If you get a popup asking if you want to trust the key,
 Just press <code>OK</code> or <code>ACCEPT</code></p>
-<p>Enter the login information of your main Synology user account.</p>
 <h3 id="puid-and-pgid">PUID and PGID<a class="headerlink" href="#puid-and-pgid" title="Permanent link">¶</a></h3>
 <p>In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
 <p>Go into your terminal app, login to your synology ssh.</p>
@@ -2612,17 +2612,17 @@ Remember these values for later use.</p>
 <p>Here we will create the needed subfolders for your media library and also for your preferred download client.
 If you use both then run both commands</p>
 <h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+<div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+<div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <hr />
 <h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link">¶</a></h3>
 <p>Your appdata will be stored in <code>/volume1/docker/appdata/{appname}</code>
 These <code>{appname}</code> sub folders you need to create your self. (<em>This is a limitation of the Synology</em>)
 We're going to do this in Putty or a similar program.</p>
-<div class="highlight"><pre><span></span><code>sudo mkdir -p /volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,pullio<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>mkdir -p /volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,pullio<span class="o">}</span>
 </code></pre></div>
 <p>You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.</p>
 <p>So your appdata folder will look like this.</p>
@@ -2647,7 +2647,7 @@ We're going to do this in Putty or a similar program.</p>
 </ol>
 <p>We will start with downloading the <code>docker-compose.yml</code> file</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use the command below:</p>
-<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 </code></pre></div>
 <h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link">¶</a></h3>
 <details class="question">
@@ -2665,7 +2665,7 @@ We're going to do this in Putty or a similar program.</p>
 </details>
 <p>Second we will download the <code>.env</code> file</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env" rel="noopener noreferrer" target="_blank">.env</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use this command:</p>
-<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 </code></pre></div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -2763,7 +2763,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 3, 2022 14:16:29</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2022 11:36:00</span>
       
     
   </small>
