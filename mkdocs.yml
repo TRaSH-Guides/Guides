@@ -62,7 +62,6 @@ plugins:
         # Radarr old redirects
         Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/Radarr-import-custom-formats.md
         Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/Radarr-collection-of-custom-formats.md
-        #  Radarr redirects
         Radarr/V3/Radarr-collection-of-custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
         Radarr/V3/Radarr-import-custom-formats.md: Radarr/Radarr-import-custom-formats.md
         Radarr/V3/Radarr-Quality-Settings-File-Size.md: Radarr/Radarr-Quality-Settings-File-Size.md
@@ -74,16 +73,15 @@ plugins:
         Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         # Sonarr old redirects
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/Sonarr-remote-path-mapping.md
-        # Sonarr redirects
         Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/Sonarr-Quality-Settings-File-Size.md
         Sonarr/V3/Sonarr-recommended-naming-scheme.md: Sonarr/Sonarr-recommended-naming-scheme.md
         Sonarr/V3/Sonarr-Release-Profile-RegEx.md: Sonarr/Sonarr-Release-Profile-RegEx.md
         Sonarr/V3/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/Sonarr-Release-Profile-RegEx-Anime.md
         Sonarr/V3/Sonarr-remote-path-mapping.md: Sonarr/Sonarr-remote-path-mapping.md
-        # Downloader redirects
+        # Downloader old redirects
         NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
-        # Hardlinks redirects
+        # Hardlinks old redirects
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
@@ -97,6 +95,7 @@ plugins:
         Golden-Rule.md: Misc/x265-4k.md
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
+        jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
 theme:
   name: material
   custom_dir: overrides
