@@ -102,12 +102,12 @@ To enable terminal, you need to enable SSH in the Synology Settings.
 
 ![!synology-control-panel](images/synology-ssh.png)
 
-Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} and you can SSH into your Synology.
+Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} to SSH into your Synology.
+
+Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.
 
 If you get a popup asking if you want to trust the key,
 Just press `OK` or `ACCEPT`
-
-Enter the login information of your main Synology user account.
 
 ### PUID and PGID
 
@@ -170,13 +170,13 @@ If you use both then run both commands
 #### If you use usenet
 
 ```bash
-sudo mkdir -p /volume1/data/{usenet/{tv,movies,music},media/{tv,movies,music}}
+mkdir -p /volume1/data/{usenet/{tv,movies,music},media/{tv,movies,music}}
 ```
 
 #### If you use torrents
 
 ```bash
-sudo mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
+mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ```
 
 ------
@@ -188,7 +188,7 @@ These `{appname}` sub folders you need to create your self. (*This is a limitati
 We're going to do this in Putty or a similar program.
 
 ```bash
-sudo mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
+mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
 ```
 
 You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.
@@ -226,7 +226,7 @@ We will start with downloading the `docker-compose.yml` file
 Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
 
 ```bash
-sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
+wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 ```
 
 ### Whats included and Whats not included
@@ -251,7 +251,7 @@ Second we will download the `.env` file
 Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use this command:
 
 ```bash
-sudo wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
+wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 ```
 
 !!! attention
