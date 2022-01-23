@@ -47,7 +47,7 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Misc (-10000)                       | Misc #1                                   | Misc #2                      |
+| Movie Versions                                | Unwanted                            | Misc                                      | HQ Source Groups             |
 | --------------------------------------------- | ----------------------------------- | ----------------------------------------- | ---------------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)        |
 | [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Multi](#multi)                           | [HQ](#hq)                    |
@@ -796,7 +796,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## Misc (-10000)
+## Unwanted
 
 ------
 
@@ -981,24 +981,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### HQ
-
-<sub>HQ-Releases = HQ</sub>
-
-??? faq "HQ - [CLICK TO EXPAND]"
-
-    A collection of P2P groups that are known for their high quality releases.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/hq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### Repack Proper
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1116,6 +1098,28 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/multi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## HQ Source Groups
+
+------
+
+### HQ
+
+<sub>HQ-Releases = HQ</sub>
+
+??? faq "HQ - [CLICK TO EXPAND]"
+
+    A collection of P2P groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
