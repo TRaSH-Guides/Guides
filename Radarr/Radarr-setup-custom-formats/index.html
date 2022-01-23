@@ -553,12 +553,18 @@
     Basics
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overall-tips-and-suggestions" class="md-nav__link">
-    Overall tips and suggestions
+    <nav class="md-nav" aria-label="Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#radarr-current-logic" class="md-nav__link">
+    Radarr current logic
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -569,13 +575,6 @@
   
     <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#which-overall-scoring-scheme-do-you-use" class="md-nav__link">
-    Which overall scoring scheme do you use
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#releases-you-should-avoid" class="md-nav__link">
@@ -631,11 +630,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq-and-tips" class="md-nav__link">
-    FAQ and Tips
+  <a href="#faq-info" class="md-nav__link">
+    FAQ &amp; INFO
   </a>
   
-    <nav class="md-nav" aria-label="FAQ and Tips">
+    <nav class="md-nav" aria-label="FAQ &amp; INFO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2132,12 +2131,18 @@
     Basics
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overall-tips-and-suggestions" class="md-nav__link">
-    Overall tips and suggestions
+    <nav class="md-nav" aria-label="Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#radarr-current-logic" class="md-nav__link">
+    Radarr current logic
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2148,13 +2153,6 @@
   
     <nav class="md-nav" aria-label="Examples">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#which-overall-scoring-scheme-do-you-use" class="md-nav__link">
-    Which overall scoring scheme do you use
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#releases-you-should-avoid" class="md-nav__link">
@@ -2210,11 +2208,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq-and-tips" class="md-nav__link">
-    FAQ and Tips
+  <a href="#faq-info" class="md-nav__link">
+    FAQ &amp; INFO
   </a>
   
-    <nav class="md-nav" aria-label="FAQ and Tips">
+    <nav class="md-nav" aria-label="FAQ &amp; INFO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2295,27 +2293,14 @@
 <p>But being I still get a lot of questions about it I decided to create a Guide for it.</p>
 <p>Here I will try to explain with some personal used examples how to make the most use of Custom Formats. That you can use to get a idea how to setup yours.</p>
 <hr />
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>I also suggest to change the Propers and Repacks settings in Radarr !!!</p>
-<p>Instructions can be found <a href="#proper-and-repacks">HERE</a></p>
-</div>
 <h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Custom formats are implemented within and have their impact controlled by Quality Profiles.</p>
-<ul>
-<li>The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.</li>
-<li>A score of 0 results in the custom format being informational only.</li>
-<li>The Minimum score requires releases to reach this threshold otherwise they will be rejected.</li>
-<li>Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.</li>
-<li>Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.</li>
-</ul>
-</div>
 <p>First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
 And a short description what the settings means.</p>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
-<p><img alt="cf-settings-profiles" src="../images/cf-settings-profiles.png" /></p>
+<details class="check">
+<summary>example - [CLICK TO EXPAND]</summary>
+<p><div class="lightgallery"><a data-sub-html="cf-settings-profiles" href="../images/cf-settings-profiles.png"><img alt="cf-settings-profiles" src="../images/cf-settings-profiles.png" /></a></div></p>
+</details>
 <p>Then select the profile that you use/prefer.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-quality-profiles" href="../images/cf-quality-profiles.png"><img alt="cf-quality-profiles" src="../images/cf-quality-profiles.png" /></a></div></p>
 <div class="admonition info">
@@ -2331,168 +2316,1057 @@ And a short description what the settings means.</p>
 <li>Your preferred language profile for your Releases.</li>
 </ol>
 <p>In your chosen profile at the bottom you will see the added Custom Profiles where you can start setting up the scores.</p>
+<details class="check">
+<summary>example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="cf-quality-profile-cf" href="../images/cf-quality-profile-cf.png"><img alt="cf-quality-profile-cf" src="../images/cf-quality-profile-cf.png" /></a></div></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
+<ul>
+<li>Always follow the data described in the guide.</li>
+<li>If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
+</ul>
+</div>
+</details>
 <hr />
-<h2 id="overall-tips-and-suggestions">Overall tips and suggestions<a class="headerlink" href="#overall-tips-and-suggestions" title="Permanent link">¶</a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Keep in mind Custom Formats are made to fine tune your Quality Profile</p>
 <p>Generally Quality Trumps All</p>
-<p>The current logic can be found <a href="https://github.com/Radarr/Radarr/blob/develop/src/NzbDrone.Core/DecisionEngine/DownloadDecisionComparer.cs" rel="noopener noreferrer" target="_blank">HERE</a> As of 1/19/2021 the logic is as follows</p>
+</div>
+<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link">¶</a></h3>
+<details class="summary">
+<summary>Radarr current logic- [CLICK TO EXPAND]</summary>
+<p>As of 2021-11-06 the logic is as follows:</p>
+<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <ol>
 <li>Quality</li>
 <li>Custom Format Score</li>
 <li>Protocol</li>
 <li>Indexer Priority</li>
 <li>Indexer Flags</li>
-<li>Peers (If Torrent)</li>
+<li>Seeds/Peers (If Torrent)</li>
 <li>Age (If Usenet)</li>
 <li>Size</li>
 </ol>
+<p><a href="https://wiki.servarr.com/radarr/faq#how-are-possible-downloads-compared" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
+<div class="admonition attention">
+<p>REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.</p>
+<p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank">Repack/Proper Custom Format</a></p>
 </div>
+</details>
 <p>My suggestion is to create tiers of scores based on what things matter to you.</p>
 <p>Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the <a href="#releases-you-should-avoid">Releases you should avoid</a></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Custom formats are implemented within and have their impact controlled by Quality Profiles.</p>
+<ul>
+<li>The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.</li>
+<li>A score of 0 results in the custom format being informational only.</li>
+<li>The Minimum score requires releases to reach this threshold otherwise they will be rejected.</li>
+<li>Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.</li>
+<li>Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.</li>
+</ul>
+</div>
 <hr />
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
 <p>Here I will show how to make the most use of Custom Formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.</p>
 <p>All these examples make use of the <a href="/Radarr/Radarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Collection of Custom Formats</a></p>
-<details class="faq">
-<summary>Which overall scoring scheme do you use ? - [CLICK TO EXPAND]</summary>
-<h3 id="which-overall-scoring-scheme-do-you-use">Which overall scoring scheme do you use<a class="headerlink" href="#which-overall-scoring-scheme-do-you-use" title="Permanent link">¶</a></h3>
-<ul>
-<li><strong>Advanced Audio</strong> 2000 for the highest with steps of 100 down.</li>
-<li><strong>HDR Metadata</strong> 1000 for the highest with steps of 100 down (except for Dovi SL).</li>
-<li><strong>Movie Versions</strong> 200 for the highest with steps of 10 down.</li>
-<li><strong>Misc</strong> Variable depending on your use case.</li>
-<li><strong>Releases you should avoid</strong> -10000</li>
-</ul>
-<p>If you notice that some scores are missing between the different Quality Profiles examples it's because I decided to be consistent with the scoring. Meaning a certain Custom Format has in every used Quality Profile the same score.</p>
-</details>
 <hr />
 <h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link">¶</a></h3>
 <p>In my opinion this is a must for every Quality Profile you use, all these Custom Formats make sure you don't get Low Quality Releases.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Add all of the following Custom Formats as <code>-10000</code></p>
-</div>
-<p><div class="lightgallery"><a data-sub-html="cf-misc-10000" href="../images/cf-misc-10000.png"><img alt="cf-misc-10000" src="../images/cf-misc-10000.png" /></a></div></p>
+<details class="summary">
+<summary>Unwanted - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR-DISK</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>EVO (no WEBDL)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>LQ</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>x265 (720/1080p)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>No-RlsGroup</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>Obfuscated</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>DV (WEBDL)</td>
+<td>??????</td>
+</tr>
+</tbody>
+</table>
 <details class="example">
 <summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
 <ul>
-<li><strong>BR-DISK</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>EVO except WEB-DL</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
-<li><strong>Low Quality Releases</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
-<li><strong>720/1080p no x265</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
-<li><strong>3D</strong> Is 3D still a thing for home use ?</li>
-<li><strong>No-RlsGroup</strong> Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match</li>
-<li><strong>DoVi (WEBDL)</strong> This is a special Custom Format that ignores DV for WEB-DL but together with the normal DoVi allows for other sources. WEB-DL from Streaming Services don't have the fallback to HDR(10), What can results in weird playback issues like weird colors if you want to play it on a not DoVi compatible setup. Remuxes and Bluray have a fallback to HDR(10).</li>
+<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
+<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
+<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li><strong>No-RlsGroup:</strong> [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
+<li><strong>Obfuscated:</strong> [Optional] (use these only if you dislike renamed and retagged releases)</li>
+<li>
+<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>Remuxes and Bluray have a fallback to HDR10.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
+<ul>
+<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+</ul>
+</div>
+</li>
 </ul>
 </details>
-<details class="success">
-<summary>example - [CLICK TO EXPAND]</summary>
-<p><div class="lightgallery"><a data-sub-html="cf-misc-10000-result" href="../images/cf-misc-10000-result.png"><img alt="cf-misc-10000-result" src="../images/cf-misc-10000-result.png" /></a></div></p>
 </details>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You might even can consider to add <a href="/Radarr/Radarr-collection-of-custom-formats/#multi" rel="noopener noreferrer" target="_blank">Multi</a> if you want to make sure you don't grab releases with often foreign audio.</p>
-</div>
 <hr />
 <h4 id="prefer-advanced-audio">Prefer Advanced Audio<a class="headerlink" href="#prefer-advanced-audio" title="Permanent link">¶</a></h4>
 <p>Lets say you prefer HD audio (with object metadata)</p>
-<p>Then we would use the following order.</p>
-<p><code>Basic Dolby Digital (DD) &lt; AAC &lt; Basic DTS (DTS) &lt; DTS-ES &lt; Dolby Digital Plus (DD+) &lt; DTS-HD HRA &lt; PCM = FLAC &lt; DTS-HD MA &lt; TrueHD &lt; DD+ ATMOS = ATMOS (undefined) &lt; DTS X &lt; TrueHD ATMOS</code></p>
-<p>In this example above I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless</p>
-<details class="success">
-<summary>example - [CLICK TO EXPAND]</summary>
-<p><div class="lightgallery"><a data-sub-html="cf-prefer-advanced-audio" href="../images/cf-prefer-advanced-audio.png"><img alt="cf-prefer-advanced-audio" src="../images/cf-prefer-advanced-audio.png" /></a></div></p>
+<p>In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless</p>
+<details class="summary">
+<summary>Audio - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrueHD ATMOS</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>DTS X</td>
+<td>4500</td>
+</tr>
+<tr>
+<td>ATMOS (undefined)</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>DD+ ATMOS</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>TrueHD</td>
+<td>2750</td>
+</tr>
+<tr>
+<td>DTS-HD MA</td>
+<td>2500</td>
+</tr>
+<tr>
+<td>FLAC</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>PCM</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>DTS-HD HRA</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>DD+</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>DTS-ES</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DTS</td>
+<td>1250</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>750</td>
+</tr>
+</tbody>
+</table>
 </details>
 <hr />
 <h4 id="prefer-hdr-metadata">Prefer HDR Metadata<a class="headerlink" href="#prefer-hdr-metadata" title="Permanent link">¶</a></h4>
 <p>Lets say you prefer HDR metadata</p>
 <p>Then we would use the following order.</p>
-<p><code>HDR (undefined) = HDR &lt; Dolby Vision</code></p>
-<p>I didn't add <code>Dolby Vision (Single Layer)</code> being most of the releases are already replaced by real <code>Dolby Vision</code> releases, If you still want to add it put it between <code>HDR</code> and <code>Dolby Vision</code> so they still can get upgraded.</p>
-<p>Also I didn't add <code>10 Bit</code> being 4k releases are 99% 10bit anyway.</p>
-<details class="success">
-<summary>example - [CLICK TO EXPAND]</summary>
-<p><div class="lightgallery"><a data-sub-html="cf-prefer-hdr-metadata" href="../images/cf-prefer-hdr-metadata.png"><img alt="cf-prefer-hdr-metadata" src="../images/cf-prefer-hdr-metadata.png" /></a></div></p>
+<details class="summary">
+<summary>HDR Metadata - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DV HDR10</td>
+<td>1550</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV HLG</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV SDR</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>HDR10Plus</td>
+<td>600</td>
+</tr>
+<tr>
+<td>HDR10</td>
+<td>550</td>
+</tr>
+<tr>
+<td>HDR</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HDR (undefined)</td>
+<td>500</td>
+</tr>
+<tr>
+<td>PQ</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HLG</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
 </details>
+<hr />
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>I also suggest to change the Propers and Repacks settings in Radarr !!!</p>
+<p>Instructions can be found <a href="#proper-and-repacks">HERE</a></p>
+</div>
 <hr />
 <h4 id="prefer-hq-encodes">Prefer HQ Encodes<a class="headerlink" href="#prefer-hq-encodes" title="Permanent link">¶</a></h4>
 <p>If you prefer HQ Encodes (Bluray-720/1080/2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>For this Quality Profile we're going to make use of <code>Movie Versions</code>, <code>Misc (-10000)</code> and <code>Misc</code></p>
-<p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Make sure you add the <a href="#releases-you-should-avoid">Releases you should avoid</a></strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile being with encodes I prefer higher video quality, If I want also the HD audio formats I would go for the Remuxes.</p>
-<p>The Custom Formats we're going to use and scoring.</p>
-<p><div class="lightgallery"><a data-sub-html="cf-profile-encodes-scoring" href="../images/cf-profile-encodes-scoring.png"><img alt="cf-profile-encodes-scoring" src="../images/cf-profile-encodes-scoring.png" /></a></div></p>
-<p>And you use the following main settings in your profile.</p>
+<p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<details class="summary">
+<summary>Movie Versions - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>4K Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Criterion Collection</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Special Edition</td>
+<td>25</td>
+</tr>
+<tr>
+<td>IMAX</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>Unwanted - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR-DISK</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>EVO (no WEBDL)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>LQ</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>x265 (720/1080p)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>No-RlsGroup</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>Obfuscated</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>DV (WEBDL)</td>
+<td>??????</td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
+<ul>
+<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
+<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
+<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li><strong>No-RlsGroup:</strong> [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
+<li><strong>Obfuscated:</strong> [Optional] (use these only if you dislike renamed and retagged releases)</li>
+<li>
+<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>Remuxes and Bluray have a fallback to HDR10.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
+<ul>
+<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</details>
+</details>
+<details class="summary">
+<summary>Misc - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repack/Proper</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<details class="tip">
+<summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
+<p>I also suggest to change the Propers and Repacks settings in Radarr</p>
+<p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a> Custom Format.</p>
+<p><div class="lightgallery"><a data-sub-html="cf-mm-propers-repacks-disable" href="/Radarr/images/cf-mm-propers-repacks-disable.png"><img alt="cf-mm-propers-repacks-disable" src="/Radarr/images/cf-mm-propers-repacks-disable.png" /></a></div></p>
+<p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
+</details>
+</details>
+<details class="summary">
+<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HQ-WEBDL</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>HQ-Remux</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HQ</td>
+<td>1800</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile being with encodes I prefer higher video quality, If you also want HD audio formats I would suggest to go for the Remuxes.</p>
+<p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-encodes" href="../images/cf-profile-encodes.png"><img alt="cf-profile-encodes" src="../images/cf-profile-encodes.png" /></a></div></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition fail">
 <p>Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL</p>
 </div>
-<p>The following workflow will be applied:</p>
+<details class="example">
+<summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Bluray-1080p when available.</li>
 <li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>100</code> ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If you prefer 2160/4K encodes you might consider to enable HDR and set the <code>Upgrade Until Quality</code> to Bluray-2160p</p>
+<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>100</code> ?</p>
+<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you prefer 2160/4K encodes you might consider to change <code>Upgrade Until Quality</code> to Bluray-2160p and enable:</p>
+<details class="summary">
+<summary>HDR Metadata - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DV HDR10</td>
+<td>1550</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV HLG</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV SDR</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>HDR10Plus</td>
+<td>600</td>
+</tr>
+<tr>
+<td>HDR10</td>
+<td>550</td>
+</tr>
+<tr>
+<td>HDR</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HDR (undefined)</td>
+<td>500</td>
+</tr>
+<tr>
+<td>PQ</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HLG</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+</details>
 </div>
 <hr />
 <h4 id="remux-1080p">Remux-1080p<a class="headerlink" href="#remux-1080p" title="Permanent link">¶</a></h4>
 <p>If you prefer 1080p Remuxes (Remux-1080p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>For this Quality Profile we're going to make use of <code>Audio Advanced</code>, <code>Movie Versions</code>, <code>Misc (-10000)</code> and <code>Misc</code></p>
-<p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Make sure you add the <a href="#releases-you-should-avoid">Releases you should avoid</a></strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>The Custom Formats we're going to use and scoring.</p>
-<p><div class="lightgallery"><a data-sub-html="cf-profile-remux1080-scoring" href="../images/cf-profile-remux1080-scoring.png"><img alt="cf-profile-remux1080-scoring" src="../images/cf-profile-remux1080-scoring.png" /></a></div></p>
-<p>And you use the following main settings in your profile.</p>
+<p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<details class="summary">
+<summary>Audio - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrueHD ATMOS</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>DTS X</td>
+<td>4500</td>
+</tr>
+<tr>
+<td>ATMOS (undefined)</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>DD+ ATMOS</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>TrueHD</td>
+<td>2750</td>
+</tr>
+<tr>
+<td>DTS-HD MA</td>
+<td>2500</td>
+</tr>
+<tr>
+<td>FLAC</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>PCM</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>DTS-HD HRA</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>DD+</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>DTS-ES</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DTS</td>
+<td>1250</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>750</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>Movie Versions - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>4K Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Criterion Collection</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Special Edition</td>
+<td>25</td>
+</tr>
+<tr>
+<td>IMAX</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>Unwanted - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR-DISK</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>EVO (no WEBDL)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>LQ</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>x265 (720/1080p)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>No-RlsGroup</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>Obfuscated</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>DV (WEBDL)</td>
+<td>??????</td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
+<ul>
+<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
+<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
+<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li><strong>No-RlsGroup:</strong> [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
+<li><strong>Obfuscated:</strong> [Optional] (use these only if you dislike renamed and retagged releases)</li>
+<li>
+<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>Remuxes and Bluray have a fallback to HDR10.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
+<ul>
+<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</details>
+</details>
+<details class="summary">
+<summary>Misc - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repack/Proper</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<details class="tip">
+<summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
+<p>I also suggest to change the Propers and Repacks settings in Radarr</p>
+<p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a> Custom Format.</p>
+<p><div class="lightgallery"><a data-sub-html="cf-mm-propers-repacks-disable" href="/Radarr/images/cf-mm-propers-repacks-disable.png"><img alt="cf-mm-propers-repacks-disable" src="/Radarr/images/cf-mm-propers-repacks-disable.png" /></a></div></p>
+<p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
+</details>
+</details>
+<details class="summary">
+<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HQ-WEBDL</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>HQ-Remux</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>HQ</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-remux1080" href="../images/cf-profile-remux1080.png"><img alt="cf-profile-remux1080" src="../images/cf-profile-remux1080.png" /></a></div></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition fail">
 <p>Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL</p>
 </div>
-<p>The following workflow will be applied:</p>
+<details class="example">
+<summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Remux-1080p when available.</li>
 <li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?</p>
+<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+</details>
 <hr />
 <h4 id="remux-2160p">Remux-2160p<a class="headerlink" href="#remux-2160p" title="Permanent link">¶</a></h4>
 <p>If you prefer 2160p Remuxes (Remux-2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>For this Quality Profile we're going to make use of <code>Audio Advanced</code>,  <code>HDR Metadata</code>,<code>Movie Versions</code>, <code>Misc (-10000)</code> and <code>Misc</code></p>
-<p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Make sure you add the <a href="#releases-you-should-avoid">Releases you should avoid</a></strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>The Custom Formats we're going to use and scoring.</p>
-<p><div class="lightgallery"><a data-sub-html="cf-profile-remux2160-scoring" href="../images/cf-profile-remux2160-scoring.png"><img alt="cf-profile-remux2160-scoring" src="../images/cf-profile-remux2160-scoring.png" /></a></div></p>
-<p>And you use the following main settings in your profile.</p>
+<p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<details class="summary">
+<summary>Audio - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrueHD ATMOS</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>DTS X</td>
+<td>4500</td>
+</tr>
+<tr>
+<td>ATMOS (undefined)</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>DD+ ATMOS</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>TrueHD</td>
+<td>2750</td>
+</tr>
+<tr>
+<td>DTS-HD MA</td>
+<td>2500</td>
+</tr>
+<tr>
+<td>FLAC</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>PCM</td>
+<td>2250</td>
+</tr>
+<tr>
+<td>DTS-HD HRA</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>DD+</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>DTS-ES</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DTS</td>
+<td>1250</td>
+</tr>
+<tr>
+<td>AAC</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>750</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>HDR Metadata - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DV HDR10</td>
+<td>1550</td>
+</tr>
+<tr>
+<td>DV</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV HLG</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>DV SDR</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>HDR10Plus</td>
+<td>600</td>
+</tr>
+<tr>
+<td>HDR10</td>
+<td>550</td>
+</tr>
+<tr>
+<td>HDR</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HDR (undefined)</td>
+<td>500</td>
+</tr>
+<tr>
+<td>PQ</td>
+<td>500</td>
+</tr>
+<tr>
+<td>HLG</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>Movie Versions - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>4K Remaster</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Criterion Collection</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Special Edition</td>
+<td>25</td>
+</tr>
+<tr>
+<td>IMAX</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="summary">
+<summary>Unwanted - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BR-DISK</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>EVO (no WEBDL)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>LQ</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>x265 (720/1080p)</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>3D</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>No-RlsGroup</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>Obfuscated</td>
+<td>-10000</td>
+</tr>
+<tr>
+<td>DV (WEBDL)</td>
+<td>??????</td>
+</tr>
+</tbody>
+</table>
+<details class="example">
+<summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
+<ul>
+<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
+<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
+<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li><strong>No-RlsGroup:</strong> [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
+<li><strong>Obfuscated:</strong> [Optional] (use these only if you dislike renamed and retagged releases)</li>
+<li>
+<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>Remuxes and Bluray have a fallback to HDR10.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
+<ul>
+<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</details>
+</details>
+<details class="summary">
+<summary>Misc - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repack/Proper</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<details class="tip">
+<summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
+<p>I also suggest to change the Propers and Repacks settings in Radarr</p>
+<p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a> Custom Format.</p>
+<p><div class="lightgallery"><a data-sub-html="cf-mm-propers-repacks-disable" href="/Radarr/images/cf-mm-propers-repacks-disable.png"><img alt="cf-mm-propers-repacks-disable" src="/Radarr/images/cf-mm-propers-repacks-disable.png" /></a></div></p>
+<p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
+</details>
+</details>
+<details class="summary">
+<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HQ-WEBDL</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>HQ-Remux</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>HQ</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-remux2160" href="../images/cf-profile-remux2160.png"><img alt="cf-profile-remux2160" src="../images/cf-profile-remux2160.png" /></a></div></p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition fail">
 <p>Make sure you don't check the BR-DISK.</p>
 </div>
-<p>The following workflow will be applied:</p>
+<details class="example">
+<summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 2160p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Remux-2160p when available.</li>
 <li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?
-Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?</p>
+<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+</details>
 <hr />
-<h2 id="faq-and-tips">FAQ and Tips<a class="headerlink" href="#faq-and-tips" title="Permanent link">¶</a></h2>
+<h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link">¶</a></h2>
 <h3 id="proper-and-repacks">Proper and Repacks<a class="headerlink" href="#proper-and-repacks" title="Permanent link">¶</a></h3>
 <details class="tip">
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
@@ -2546,7 +3420,7 @@ Being when you add a Custom Format what you prefer and you set it to something l
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2021 20:39:42</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2022 20:18:09</span>
       
     
   </small>
