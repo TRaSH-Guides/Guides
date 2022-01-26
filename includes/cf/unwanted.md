@@ -1,14 +1,14 @@
 ??? summary "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format    | Score  |
-    | ---------------- | ------ |
-    | BR-DISK          | -10000 |
-    | EVO (no WEBDL)   | -10000 |
-    | LQ               | -10000 |
-    | x265 (720/1080p) | -10000 |
-    | 3D               | -10000 |
-    | No-RlsGroup      | -10000 |
-    | Obfuscated       | -10000 |
-    | DV (WEBDL)       | ?????? |
+    | Custom Format    | Score  | LINK |
+    | ---------------- | ------ | ---- |
+    | BR-DISK          | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#br-disk){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | EVO (no WEBDL)   | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | LQ               | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#lq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | x265 (720/1080p) | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | 3D               | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#3d){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | No-RlsGroup      | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Obfuscated       | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#obfuscated){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | DV (WEBDL)       | ?????? | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
 
     ??? example "Breakdown and Why - [CLICK TO EXPAND]"
 
