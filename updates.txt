@@ -1,3 +1,11 @@
+# 2022-01-26
+Updated: Radarr - How to setup Custom Formats #492
+- Added: in Tables direct link to CF.
+Updated: Hardlinks - Dockstarter
+- Removed: DEPRECATED Settings
+Removed: DEPRECATED Settings #493
+- Removed: DEPRECATED Settings.
+
 # 2022-01-23
 NEW: Replace copies with hardlinks #486
 - NEW: Guide in Hardlinks section, How to replace copies with hardlinks.
