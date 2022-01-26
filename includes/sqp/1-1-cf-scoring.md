@@ -10,7 +10,7 @@
 ??? summary "BHDStudio - [CLICK TO EXPAND]"
     | Custom Format        | Score | LINK |
     | -------------------- | ----- | ---- |
-    | BHDStudio            | 2000  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json){: .header-icons target=_blank rel="noopener noreferrer" } |  
+    | BHDStudio            | 2000  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 ??? summary "Misc - [CLICK TO EXPAND]"
     | Custom Format        | Score | LINK |
