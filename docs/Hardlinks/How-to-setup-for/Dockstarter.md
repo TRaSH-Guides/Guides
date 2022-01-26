@@ -42,16 +42,6 @@ DOCKERSTORAGEDIR=/mnt/storage
 PGID=1000
 PUID=1000
 TZ=America/Chicago
-
-# DEPRECATED Settings (will be removed at the end of 2020)
-DOCKERSHAREDDIR=~/shared
-DOWNLOADSDIR=/mnt/downloads
-MEDIADIR_AUDIOBOOKS=/mnt/medialibrary/audiobooks
-MEDIADIR_BOOKS=/mnt/medialibrary/books
-MEDIADIR_COMICS=/mnt/medialibrary/comics
-MEDIADIR_MOVIES=/mnt/medialibrary/movies
-MEDIADIR_MUSIC=/mnt/medialibrary/music
-MEDIADIR_TV=/mnt/medialibrary/tv
 ```
 
 ### Changes to your paths

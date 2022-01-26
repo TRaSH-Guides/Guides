@@ -29,12 +29,12 @@ Change the 1080p Quality Size to the range BHDStudio uses ( I searched BHD to ch
 
 If you notice issues with the sizes please report it.
 
-| Quality        | Min   | Preferred | Max  |
-| -------------- | ----- | --------- | ---- |
-| WEBDL-1080p    |  25.2 |      84.7 | 85.7 |
-| WEBRip-1080p   |  25.2 |      84.7 | 85.7 |
-| Bluray-720p    |  25.2 |       101 | 102  |
-| Bluray-1080p   |  33.8 |       101 | 102  |
+| Quality        | Min   | Preferred | Max   |
+| -------------- | ----- | --------- | ----- |
+| WEBDL-1080p    |  25.2 |      84.7 |  85.7 |
+| WEBRip-1080p   |  25.2 |      84.7 |  85.7 |
+| Bluray-720p    |  25.2 |     101   | 102   |
+| Bluray-1080p   |  33.8 |     135.9 | 136.9 |
 
 ??? check "example - [CLICK TO EXPAND]"
     ![!Quality Size](images/quality-size.png)
