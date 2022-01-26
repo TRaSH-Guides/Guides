@@ -1,40 +1,25 @@
 #### Custom Formats and scores
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | HQ-WEBDL             | 1750  |
-    | HQ-Remux             |    0  |
-    | HQ                   |    0  |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ-Remux             |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 ??? summary "BHDStudio - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | BHDStudio            | 2000  |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | BHDStudio            | 2000  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 ??? summary "Misc - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | 720p                 |     5 |
-    | 1080p                |    25 |
-    | Repack/Proper        |     1 |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | 720p                 |     5 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | 1080                 |    25 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Repack/Proper        |     1 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#repack-proper){: .header-icons target=_blank rel="noopener noreferrer" } |
 
-??? summary "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format    | Score  |
-    | ---------------- | ------ |
-    | BR-DISK          | -10000 |
-    | EVO (no WEBDL)   | -10000 |
-    | LQ               | -10000 |
-    | x265 (720/1080p) | -10000 |
-    | 3D               | -10000 |
-    | No-RlsGroup      | -10000 |
-    | Obfuscated       | -10000 |
-    | DV (WEBDL)       | ?????? |
-
-    !!! hint
-        `[DV WEBDL]` = This custom format you need to score depending of your personal use.
-
-        If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of 0 or just don't add it, if you also got a setup that doesn't support Dolby Vision then you should add this with a score of `-10000`
+--8<-- "includes/cf/unwanted.md"
 
 ### Quality Size
 

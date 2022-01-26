@@ -1,7 +1,7 @@
 ??? summary "Misc - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | Repack/Proper        |     1 |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | Repack/Proper        |     1 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#repack-proper){: .header-icons target=_blank rel="noopener noreferrer" } |
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 

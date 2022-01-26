@@ -131,11 +131,11 @@ For this Quality Profile we're going to make use of the following Custom Formats
 --8<-- "includes/cf/misc.md"
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | HQ-WEBDL             | 1750  |
-    | HQ-Remux             |    0  |
-    | HQ                   | 1800  |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ-Remux             |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ                   | 1800  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile being with encodes I prefer higher video quality, If you also want HD audio formats I would suggest to go for the Remuxes.
 
@@ -183,11 +183,11 @@ For this Quality Profile we're going to make use of the following Custom Formats
 --8<-- "includes/cf/misc.md"
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | HQ-WEBDL             | 1750  |
-    | HQ-Remux             | 2000  |
-    | HQ                   |    0  |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ-Remux             | 2000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 Use the following main settings in your profile.
 
@@ -229,11 +229,11 @@ For this Quality Profile we're going to make use of the following Custom Formats
 --8<-- "includes/cf/misc.md"
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score |
-    | -------------------- | ----- |
-    | HQ-WEBDL             | 1750  |
-    | HQ-Remux             | 2000  |
-    | HQ                   |    0  |
+    | Custom Format        | Score | LINK |
+    | -------------------- | ----- | ---- |
+    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ-Remux             | 2000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
 
 Use the following main settings in your profile.
 
