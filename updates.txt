@@ -1,3 +1,9 @@
+# 2022-01-27
+Radarr Custom Format Collection 20220127 #494
+- Changed: Several CF Scoring for better results.
+- Fixed: CF `[TrueHD Atmos]` to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF `[TrueHD]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+
 # 2022-01-26
 Updated: Radarr - How to setup Custom Formats #492
 - Added: in Tables direct link to CF.
