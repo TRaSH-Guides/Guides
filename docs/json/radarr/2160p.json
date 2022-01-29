@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]vision|DV[ .]HDR10|DV[ .]HLG|DV[ .]SDR)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]vision|dolbyvision|DV[ .]HDR10|DV[ .]HLG|DV[ .]SDR)\\b"
       }
     },
     {
