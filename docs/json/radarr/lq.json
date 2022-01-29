@@ -66,6 +66,15 @@
       "fields": {
         "value": "\\b(Rifftrax|RU4HD)\\b"
       }
+    },
+    {
+      "name": "Nominated Unwanted Groups",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TEKNO3D|TIKO)\\b"
+      }
     }
   ]
 }
