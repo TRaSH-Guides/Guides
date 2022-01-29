@@ -371,7 +371,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/\b(dv|dovi|dolby[ .]vision)\b/i
+/\b(dv|dovi|dolby[ .]vision|dolbyvision)\b/i
 ```
 
 #### Optional (use these only if you dislike renamed and retagged releases)
