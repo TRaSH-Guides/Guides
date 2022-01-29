@@ -1,3 +1,11 @@
+# 2022-01-29
+Fix for badly named (dolbyvision) DV files #495
+- Fixed: recognizing for badly named (dolbyvision) DV files
+Updated: CF [No-RlsGroup] Sync with Radarr #496
+- Updated: Handle Exception Release Groups that don't follow -RlsGrp.
+Updated: CF [LQ] Added Nominated Unwanted Groups #498
+- Added: Nominated Unwanted Groups, these are groups are nominated to be in the LQ for different reasons.
+
 # 2022-01-27
 Radarr Custom Format Collection 20220127 #494
 - Changed: Several CF Scoring for better results.
