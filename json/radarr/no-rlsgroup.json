@@ -19,7 +19,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(Tigole|Joy|YIFY|YTS.MX|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros|KRaLiMaRKo|E\\.N\\.D|PrimeHD|BluDragon|SumVision|FTW-HD)\\b"
+        "value": "\\b(Tigole|Joy|YIFY|YTS.MX|YTS.LT|FreetheFish|afm72|Anna|Bandi|Ghost|Kappa|MONOLITH|Qman|RZeroX|SAMPA|Silence|theincognito|t3nzin|Vyndros)(?=\\]|\\)|KRaLiMaRKo|E\\.N\\.D|D\\-Z0N3)\\b"
       }
     }
   ]
