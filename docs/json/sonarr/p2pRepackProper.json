@@ -1,0 +1,59 @@
+{
+  "name": "P2P Groups + Repack/Proper",
+  "trash_id": "71899E6C303A07AF0E4746EFF9873532",
+  "includePreferredWhenRenaming": false,
+  "required": [],
+  "preferred": [
+    {
+      "score": 180,
+      "terms": [
+        "/(-deflate|-inflate)\\b/i"
+      ]
+    },
+    {
+      "score": 150,
+      "terms": [
+        "/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)\\b/i",
+        "/(-monkee|-NTb|-NTG|-QOQ|-RTN)\\b/i",
+        "/(-TOMMY|-ViSUM|-T6D)\\b/i"
+      ]
+    },
+    {
+      "score": 125,
+      "terms": [
+        "/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)\\b/i",
+        "/(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)\\b/i",
+        "/(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)\\b/i",
+        "/(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)\\b/i",
+        "/(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\\b/i",
+        "/(-ROCCaT|3cTWeB|playWEB|-FLUX|NOSiViD)\\b/i",
+        "/(-KHN|NPMS|-END)\\b/i"
+      ]
+    },
+    {
+      "score": 100,
+      "terms": [
+        "/(-ViSiON)\\b/i"
+      ]
+    },
+    {
+      "score": 12,
+      "terms": [
+        "/(repack3)/i"
+      ]
+    },
+    {
+      "score": 11,
+      "terms": [
+        "/(repack2)/i"
+      ]
+    },
+    {
+      "score": 10,
+      "terms": [
+        "/\\b(repack|proper)\\b/i"
+      ]
+    }
+  ],
+  "ignored": []
+}
