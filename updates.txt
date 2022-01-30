@@ -1,3 +1,9 @@
+# 2022-01-30
+Updated: Radarr cf collection no rls group hotfix #500
+- Hotfix: for earlier screw up from my side.
+Updated: Refactor Dolby Vision regexp to make it less complex #499
+- Fix: Refactor Dolby Vision regexp to make it less complex (Fix for #495).
+
 # 2022-01-29
 Fix for badly named (dolbyvision) DV files #495
 - Fixed: recognizing for badly named (dolbyvision) DV files
