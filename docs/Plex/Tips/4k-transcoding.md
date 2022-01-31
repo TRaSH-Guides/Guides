@@ -3,7 +3,7 @@
 ## Introduction
 The bane of Plex admins existence... 4K Transcodes. According to Plex's forum post [*The Rules of 4K*](https://forums.plex.tv/t/info-plex-4k-transcoding-and-you-aka-the-rules-of-4k/378203) the first three rules of collecting 4k content is don’t bother transcoding 4k.
 
-This guide will walk you through getting started with Tautulli and JBOPS. By the end of this guide you'll be able to stop all 4K video transcodes on your server.
+This guide will walk you through getting started with Tautulli and JBOPS. By the end of this guide you'll be able to stop all 4K video transcodes on your server. Note that this does require a [Plex Pass](https://www.plex.tv/plex-pass/) to work.
 
 ## Getting Started
 `git clone https://github.com/blacktwin/JBOPS` into the config dir of your tautulli instance (if dockerized)
