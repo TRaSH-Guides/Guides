@@ -7,8 +7,7 @@
     {
       "score": -100,
       "terms": [
-        "/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\\b/i",
-        "/(-VIDEOHOLE|nhanc3)\\b/i"
+        "/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3)\\b/i"
       ]
     }
   ],

@@ -13,21 +13,13 @@
     {
       "score": 150,
       "terms": [
-        "/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)\\b/i",
-        "/(-monkee|-NTb|-NTG|-QOQ|-RTN)\\b/i",
-        "/(-TOMMY|-ViSUM|-T6D)\\b/i"
+        "/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS|-monkee|-NTb|-NTG|-QOQ|-RTN|-TOMMY|-ViSUM|-T6D|-FLUX|NOSiViD)\\b/i"
       ]
     },
     {
       "score": 125,
       "terms": [
-        "/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)\\b/i",
-        "/(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)\\b/i",
-        "/(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)\\b/i",
-        "/(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)\\b/i",
-        "/(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\\b/i",
-        "/(-ROCCaT|3cTWeB|playWEB|-FLUX|NOSiViD)\\b/i",
-        "/(-KHN|NPMS|-END)\\b/i"
+        "/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END)\\b/i"
       ]
     },
     {
