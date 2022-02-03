@@ -109,7 +109,7 @@ RESULT:
 #### Multi-Episode Style
 
 ```bash
-Scene
+Prefixed Range
 ```
 
 RESULTS:
