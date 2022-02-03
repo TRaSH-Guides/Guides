@@ -1,8 +1,11 @@
 {
 	"ignore": [{
+		"name": "Golden rule",
+		"term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
+	}, {
 		"name": "Ignore Dolby Vision without HDR10 fallback.",
 		"term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]Vision)\\b).*/i"
-	}, {
+  }, {
 		"name": "Ignore The Group -SCENE",
 		"term": "/\\b(-scene)\\b/i"
 	}, {
