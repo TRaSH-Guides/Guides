@@ -1,3 +1,11 @@
+# 2022-02-03
+Sonarr regex update #504
+- Merged: several regex to on regex after Sonarr fixed the GUI bug.
+Updated: Preferred Sonarr Naming Scheme #503
+- Use 'Prefixed Range' instead of 'Scene' for better episode recognition in Plex.
+New: Plex 4K Transcode Stopping #502 (Plex Tips section)
+- Stop Video Transcoding for 4k
+
 # 2022-01-30
 Updated: Radarr cf collection no rls group hotfix #500
 - Hotfix: for earlier screw up from my side.
