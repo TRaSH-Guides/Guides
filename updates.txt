@@ -1,3 +1,8 @@
+# 2022-02-11
+Radarr cf collection 20220211 #511
+- Updated: CF [LQ] added `Liber8` to the `Nominated Unwanted Groups` condition.
+- Updated: CF [Obfuscated] added `_nzb` to the `Retagged`condition.
+
 # 2022-02-03
 Sonarr regex update #504
 - Merged: several regex to on regex after Sonarr fixed the GUI bug.
