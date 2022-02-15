@@ -1,3 +1,7 @@
+# 2022-02-15
+Update br-disk.json #512
+- Updated: CF [BR-DISK] Support for BD AVC|HEVC.
+
 # 2022-02-11
 Radarr cf collection 20220211 #511
 - Updated: CF [LQ] added `Liber8` to the `Nominated Unwanted Groups` condition.
