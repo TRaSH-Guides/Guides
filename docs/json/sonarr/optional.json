@@ -1,8 +1,11 @@
 {
 	"ignore": [{
+		"name": "Golden rule",
+		"term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
+	}, {
 		"name": "Ignore Dolby Vision without HDR10 fallback.",
 		"term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]Vision)\\b).*/i"
-	}, {
+  }, {
 		"name": "Ignore The Group -SCENE",
 		"term": "/\\b(-scene)\\b/i"
 	}, {
@@ -34,17 +37,8 @@
 			"name": "Dislike retags: rartv, rarbg, eztv, TGx",
 			"term": "/(\\[rartv\\]|\\[rarbg\\]|\\[eztv\\]|\\[TGx\\])/i"
 		}, {
-			"name": "Dislike groups 1/4: 4Planet, AsRequested, BUYMORE",
-			"term": "/(-4P|-4Planet|-AsRequested|-BUYMORE)\\b/i"
-		}, {
-			"name": "Dislike groups 2/4: Chamele0n, GEROV, iNC0GNiTO, NZBGeek",
-			"term": "/(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)\\b/i"
-		}, {
-			"name": "Dislike groups 3/4: Obfuscated, postbot, Rakuv, Scrambled",
-			"term": "/(-Obfuscated|-postbot|-Rakuv|-Scrambled)\\b/i"
-		}, {
-			"name": "Dislike groups 4/4: WhiteRev, xpost, WRTEAM, CAPTCHA",
-			"term": "/(-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b/i"
+			"name": "Dislike retagged groups",
+			"term": "/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b/i"
 		}, {
 			"name": "Dislike release ending: en",
 			"term": "/\\s?\\ben\\b$/i"

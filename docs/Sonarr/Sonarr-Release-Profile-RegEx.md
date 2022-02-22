@@ -236,8 +236,7 @@ Add this to your `Must not contain (2)`
 
 ### P2P Groups + Repack/Proper
 
-Add this to your `Preferred (3)` with a score of [180]
-The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the [Release Sources (Streaming Service)](#release-sources-streaming-service) to their release name so they don't get the extra point of the release source regex.
+Add this to your `Preferred (3)` with a score of [180] [^1]
 
 ```bash
 /(-deflate|-inflate)\b/i
@@ -246,45 +245,13 @@ The reason why this one get's such a high score is because it's the only quality
 Add this to your `Preferred (3)` with a score of [150]
 
 ```bash
-/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS)\b/i
-```
-
-```bash
-/(-monkee|-NTb|-NTG|-QOQ|-RTN)\b/i
-```
-
-```bash
-/(-TOMMY|-ViSUM|-T6D)\b/i
+/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS|-monkee|-NTb|-NTG|-QOQ|-RTN|-TOMMY|-ViSUM|-T6D|-FLUX|NOSiViD)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [125]
 
 ```bash
-/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ)\b/i
-```
-
-```bash
-/(-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash)\b/i
-```
-
-```bash
-/(-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC)\b/i
-```
-
-```bash
-/(-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM)\b/i
-```
-
-```bash
-/(-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI)\b/i
-```
-
-```bash
-/(-ROCCaT|3cTWeB|playWEB|-FLUX|NOSiViD)\b/i
-```
-
-```bash
-/(-KHN|NPMS|-END)\b/i
+/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
@@ -330,11 +297,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS)\b/i
-```
-
-```bash
-/(-VIDEOHOLE|nhanc3)\b/i
+/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3)\b/i
 ```
 
 ??? success "example - [CLICK TO EXPAND]"
@@ -383,19 +346,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 ```
 
 ```bash
-/(-4P|-4Planet|-AsRequested|-BUYMORE)\b/i
-```
-
-```bash
-/(-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek)\b/i
-```
-
-```bash
-/(-Obfuscated|-postbot|-Rakuv|-Scrambled)\b/i
-```
-
-```bash
-/(-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\b/i
+/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\b/i
 ```
 
 #### Optional (matches releases that ends with EN)
@@ -477,7 +428,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i
+/([_. ]WEB[_. ]|\bCAKES\b|GGEZ|GGWP|GLHF)/i
 ```
 
 ------
@@ -542,3 +493,7 @@ If you want to be mentioned please message me on discord, including a link for p
 ------
 
 --8<-- "includes/support.md"
+
+[^1]:
+
+    The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the [Release Sources (Streaming Service)](#release-sources-streaming-service) to their release name so they don't get the extra point of the release source regex.
