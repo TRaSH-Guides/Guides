@@ -1,16 +1,15 @@
 {
-  "trash_id": "26fa26253af4001701fedb56cec376dc",
-  "trash_score": "1750",
-  "name": "HQ-WEBDL",
-  "includeCustomFormatWhenRenaming": false,
+  "trash_id": "5763d1b0ce84aff3b21038eea8e9b8ad",
+  "name": "HBO Max",
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "P2P Groups",
+      "name": "HBO Max",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(-TOMMY|-BLUTONiUM|-NTG|-TEPES|-KiNGS|-NTb|-CMRG|AJP69|-PHOENiX|-monkee|-MZABI|ROCCaT|FLUX|NOSiViD|SIC|Flights)\\b"
+        "value": "\\b(hmax|hbom|HBO Max)\\b"
       }
     },
     {

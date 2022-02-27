@@ -1,16 +1,15 @@
 {
-  "trash_id": "26fa26253af4001701fedb56cec376dc",
-  "trash_score": "1750",
-  "name": "HQ-WEBDL",
-  "includeCustomFormatWhenRenaming": false,
+  "trash_id": "84272245b2988854bfb76a16e60baea5",
+  "name": "Disney+",
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "P2P Groups",
+      "name": "Disney+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(-TOMMY|-BLUTONiUM|-NTG|-TEPES|-KiNGS|-NTb|-CMRG|AJP69|-PHOENiX|-monkee|-MZABI|ROCCaT|FLUX|NOSiViD|SIC|Flights)\\b"
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
       }
     },
     {
