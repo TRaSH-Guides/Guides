@@ -1,3 +1,19 @@
+# 2022-02-27
+New: TRaSH Guides 3rd Party Sync options #516
+- Added: TRaSH Guides 3rd Party Sync options `Notifiarr` and `TRaSH Updater`.
+- Updated: Radarr - How to update Custom Formats URL update.
+Radarr CF Collection 20220226 #517
+- Updated: CF `[HQ Remux]` added group `Flights` known for their Hybrid DV releases.
+- NEW: CF for streaming services, They will get a score of 0, they are mainly to add to your naming scheme.
+  `[Amazon]`, `[Apple TV+]`, `[Disney+]`, `[HBO Max]`, `[Hulu]`, `[Netflix]`, `[Paramount+]`, `[Peacock TV]`
+- Updated: CF `[IMAX Enhanced]` added `Disney+` to the  recognizing so it matches after rename.
+- Added: in Tables direct link to Streaming Services Custom Formats.
+- Updated: CF `[HQ-WEBDL]` added group `Flights` known for their Hybrid DV releases (IMAX-E).
+Sonarr-RP-RegEx-WEB-DL-20220227 #518
+- Updated: Layout to match Release Profiles.
+- Added: Extra descriptions to a few Optionals regex.
+- Added: Extra Warning about the use of the Optionals.
+
 # 2022-02-15
 Update br-disk.json #512
 - Updated: CF [BR-DISK] Support for BD AVC|HEVC.
