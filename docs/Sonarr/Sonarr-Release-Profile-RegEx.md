@@ -72,23 +72,26 @@ Then you will get a popup screen that will look like this:
 
 ------
 
-!!! note
+!!! summary
 
     The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
+    The Number between **(**brackets**)** in the following release profiles are referring to the location where you should add this regex in the release profile corresponding the screenshot above.
+
+!!! important
+    We're going to make use of 4 separate release profiles.
+
 ------
 
-## First Release Profile
+## Release Sources (Streaming Service)
+
+<sub>Profile 1</sub>
 
 <!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
-!!! important
-    We're going to make use of 2 separate release profiles.
-
-### Release Sources (Streaming Service)
 
 !!! note
 
-    Also check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme when you get download loop issues!!!
+    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
 
     What it does:
 
@@ -184,57 +187,14 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ------
 
-## Second Release Profile
+## P2P Groups + Repack/Proper
+
+<sub>Profile 2</sub>
 
 <!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
+
 !!! warning
-    DO NOT Check mark `Include Preferred when Renaming`
-
-### Golden rule
-
-Add this to your `Must not contain (2)`
-
-```bash
-/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i
-```
-
-??? success "example - [CLICK TO EXPAND]"
-
-    ![!rp-release-sources](images/rp-golden-rule.png)
-
-??? info "Why the Must Not Contain entry - [CLICK TO EXPAND]"
-
-    So why did I put `/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i` as `Must Not Contain` and what does it do ?
-
-    It blocks/ignores 720/1080p releases that are encoded in x265, why ?
-
-    !!! quote
-        x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
-        If the media isn't source quality/remux, then there will be a loss of quality every time.
-        Also, once you go x265, typically that file is done.
-        It can't be changed to something else without a huge loss of quality.
-
-        Something like 95% of video files are x264 and have much better direct play support.
-        If you have more than a couple users,
-        you will notice much more transcoding.
-        Just depends on your priorities.
-
-        So basically if you are storage poor and just need to save space, use x265.
-        The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
-        If you want maximum compatibility and the option to change your files to something else later,
-        then x264.
-        It's all really dependent on specific situations for different people
-
-    It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
-
-    That's why  I created my own golden rule.
-
-    - 720/1080p => x264
-    - 2160p/4k => x265
-
-------
-
-### P2P Groups + Repack/Proper
+    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
 
 Add this to your `Preferred (3)` with a score of [180] [^1]
 
@@ -278,6 +238,9 @@ Add this to your `Preferred (3)` with a score of [10]
 /\b(repack|proper)\b/i
 ```
 
+!!! danger "Caution"
+    Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
+
 ??? success "example - [CLICK TO EXPAND]"
 
     !!! attention
@@ -292,13 +255,20 @@ Add this to your `Preferred (3)` with a score of [10]
 
 ------
 
-### Low Quality Groups
+## Low Quality Groups
+
+<sub>Profile 3</sub>
+
+<!-- [trash_id: EBC725268D687D588A20CBC5F97E538B] -->
 
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
 /(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3)\b/i
 ```
+
+!!! danger "Caution"
+    Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
 ??? success "example - [CLICK TO EXPAND]"
 
@@ -314,14 +284,67 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 ------
 
-### Optional preferred preferences
+## Optionals
 
-!!! note
-    These options are optional and only needed if you got a certain use case for it.
+<sub>Profile 4</sub>
 
-    If you see certain optional options with a positive score and you actually don't want them just add them with a negative score !!!
+!!! danger "Caution"
+    These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it :bangbang:
 
-#### Optional HDR - if you prefer HDR
+    :bangbang: **Except the `Golden Rule` this one is actually a must even that it's added in the optional section** :bangbang:
+
+    If you see certain optional with a positive score and you actually don't want them just add them with a negative score !!!
+
+### Golden rule
+
+!!! attention ""
+    :bangbang: This one is actually a must even that it's added in the optional section :bangbang:
+
+??? question "Why the Must Not Contain entry - [CLICK TO EXPAND]"
+
+    This one blocks/ignores 720/1080p releases that are (re-)encoded in x265.
+
+    So why did I put `/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i` as `Must Not Contain` and what does it do ?
+
+    Why ?
+
+    !!! quote
+        x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
+        If the media isn't source quality/remux, then there will be a loss of quality every time.
+        Also, once you go x265, typically that file is done.
+        It can't be changed to something else without a huge loss of quality.
+
+        Something like 95% of video files are x264 and have much better direct play support.
+        If you have more than a couple users,
+        you will notice much more transcoding.
+        Just depends on your priorities.
+
+        So basically if you are storage poor and just need to save space, use x265.
+        The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+        If you want maximum compatibility and the option to change your files to something else later,
+        then x264.
+        It's all really dependent on specific situations for different people
+
+    It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.
+
+    That's why  I created my own golden rule.
+
+    - 720/1080p => x264
+    - 2160p/4k => x265
+
+Add this to your `Must not contain (2)`
+
+```bash
+/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i
+```
+
+??? success "example - [CLICK TO EXPAND]"
+
+    ![!rp-release-sources](images/rp-golden-rule.png)
+
+------
+
+#### Optional - Prefer HDR
 
 Add this to your `Preferred (3)` with a score of [10]
 
@@ -329,7 +352,9 @@ Add this to your `Preferred (3)` with a score of [10]
 /\bHDR(\b|\d)/i
 ```
 
-#### Optional Dolby Vision - if you prefer Dolby Vision
+------
+
+#### Optional - Prefer Dolby Vision
 
 Add this to your `Preferred (3)` with a score of [100]
 
@@ -337,7 +362,12 @@ Add this to your `Preferred (3)` with a score of [100]
 /\b(dv|dovi|dolby[ .]?vision)\b/i
 ```
 
-#### Optional (use these only if you dislike renamed and retagged releases)
+------
+
+#### Optional - Dislike retags
+
+??? question "Explanation - [CLICK TO EXPAND]"
+    Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name what could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-25]
 
@@ -345,19 +375,38 @@ Add this to your `Preferred (3)` with a score of [-25]
 /(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
 ```
 
+#### Optional - Dislike Obfuscated
+
+??? question "Explanation - [CLICK TO EXPAND]"
+    Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name what could mess up your results or naming.
+
+Add this to your `Preferred (3)` with a score of [-25]
+
 ```bash
 /(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\b/i
 ```
 
-#### Optional (matches releases that ends with EN)
+------
+
+#### Optional - Dislike release ending: en
 
 Add this to your `Preferred (3)` with a score of [-25]
+
+??? question "Explanation - [CLICK TO EXPAND]"
+    Some indexers are known to add extra useless info to the release name what could mess up your results or naming.
 
 ```bash
 /\s?\ben\b$/i
 ```
 
-#### Optional Matches any release that contains '1-' as prefix for Release Groups
+------
+
+#### Optional - Dislike release containing: 1-
+
+??? question "Explanation - [CLICK TO EXPAND]"
+    Some indexers are known to add extra useless info to the release name what could mess up your results or naming.
+
+    Matches any release that contains '1-' as prefix for Release Groups
 
 Add this to your `Preferred (3)` with a score of [-25]
 
@@ -365,7 +414,12 @@ Add this to your `Preferred (3)` with a score of [-25]
 /(1-.+)$/i
 ```
 
-#### Optional Matches Season Packs (use this if you prefer Season packs)
+------
+
+#### Optional - Prefer Season Packs
+
+??? question "Explanation - [CLICK TO EXPAND]"
+    Use this if you prefer Season packs
 
 !!! warning ""
 
@@ -378,6 +432,8 @@ Add this to your `Preferred (3)` with a score of [15]
 ```bash
 /\bS\d+\b(?!E\d+\b)/i
 ```
+
+------
 
 ##### .su season pack issue
 
@@ -395,9 +451,11 @@ Add this to your `Preferred (3)` with a score of [15]
     !!! note
         Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
 
-#### Optional Ignore DoVi for WEBDL
+------
 
-??? NOTE "WHY ? - [CLICK TO EXPAND]"
+#### Optional - Ignore Dolby Vision without HDR10 fallback
+
+??? question "Explanation - [CLICK TO EXPAND]"
 
     This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
 
@@ -407,9 +465,11 @@ Add this to your `Must not contain (2)`
 /^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]Vision)\b).*/i
 ```
 
-#### Optional Ignore the group -scene
+------
 
-??? note "Why ? - [CLICK TO EXPAND]"
+#### Optional - Ignore The Group -SCENE
+
+??? question "Explanation - [CLICK TO EXPAND]"
 
     Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11){:target="_blank" rel="noopener noreferrer"}
 
@@ -419,9 +479,11 @@ Add this to your `Must not contain (2)`
 /\b(-scene)\b/i
 ```
 
-#### Optional Ignore scene releases
+------
 
-??? NOTE "WHY ? - [CLICK TO EXPAND]"
+#### Optional - Ignore scene releases
+
+??? question "WHY ? - [CLICK TO EXPAND]"
 
     If you don't want to download so called scene releases.
 
@@ -449,8 +511,6 @@ Optional => We've tested it and it worked for what we've tested it on, if it wil
 
 If you notice something wrong just contact me and we will try to fix it or remove it.
 
-The reason why I got multiple entry's with the same score is because the line will go out of the box and I don't like how that looks.
-
 ## Final Results
 
 When you've done it correctly it will look something like this.
@@ -464,10 +524,6 @@ When you've done it correctly it will look something like this.
         - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
         [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
-
-    ![!rp-groups](images/rp-groups.png)
-
-    And after you clicked on `Save` it will look something like this:
 
     ![!rp-profiles](images/rp-profiles.png)
 
@@ -485,10 +541,7 @@ If you want to be mentioned please message me on discord, including a link for p
 
     So best to set a notification for updates for this page.
 
-    Or use one of the 2 automation tools.
-
-    - [Notifiarr](/Radarr/Radarr-how-to-update-custom-formats/#notifiarr){:target="_blank" rel="noopener noreferrer"}
-    - [TRaSH Updater](/Radarr/Radarr-how-to-update-custom-formats/#trash-updater){:target="_blank" rel="noopener noreferrer"}
+    Or use one of the 3rd Party Sync options that you can find [HERE](/Misc/trash-sync){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
