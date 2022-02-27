@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(FraMeSToR|EPSiLON|KRaLiMaRKo|PmP|BLURANiUM|SiCFoI|SURFINBIRD|HiFi|iFT)\\b"
+        "value": "\\b(FraMeSToR|EPSiLON|KRaLiMaRKo|PmP|BLURANiUM|SiCFoI|SURFINBIRD|HiFi|iFT|Flights)\\b"
       }
     },
     {

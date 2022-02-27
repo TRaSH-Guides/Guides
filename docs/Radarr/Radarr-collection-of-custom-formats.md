@@ -47,17 +47,16 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                            | Misc                                      | HQ Source Groups             |
-| --------------------------------------------- | ----------------------------------- | ----------------------------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [Repack/Proper](#repack-proper)           | [HQ-Remux](#hq-remux)        |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [Multi](#multi)                           | [HQ](#hq)                    |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                           | [x264](#x264)                             | [HQ-WEBDL](#hq-webdl)        |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p)  | [x265](#x265)                             |                              |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                           | [MPEG2](#mpeg2)                           |                              |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)         | [FreeLeech](#freeleech)                   |                              |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)           | [Dutch Groups](#dutch-groups)             |                              |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)             | [Anime Dual Audio](#anime-dual-audio)     |                              |
-|                                               |                                     |                                           |                              |
+| Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
+| --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amazon)            |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Multi](#multi)                       | [HQ](#hq)             | [Apple TV+](#apple-tvplus)   |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [x264](#x264)                         | [HQ-WEBDL](#hq-webdl) | [Disney+](#disneyplus)       |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x265](#x265)                         |                       | [HBO Max](#hbo-max)          |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [MPEG2](#mpeg2)                       |                       | [Hulu](#hulu)                |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [FreeLeech](#freeleech)               |                       | [Netflix](#netflix)          |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [Dutch Groups](#dutch-groups)         |                       | [Peacock TV](#peacock-tv)    |
+| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Anime Dual Audio](#anime-dual-audio) |                       | [Paramount+](#paramountplus) |
 
 ------
 
@@ -1152,6 +1151,154 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/hq-remux.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## Streaming Services
+
+------
+
+### Amazon
+
+<sub>Amazon</sub>
+
+??? faq "Amazon - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/amazon.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Apple TVplus
+
+<sub>Apple TV+</sub>
+
+??? faq "Apple TV+ - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/apple-tvplus.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DisneyPlus
+
+<sub>Disney+</sub>
+
+??? faq "Disney+ - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/disneyplus.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HBO Max
+
+<sub>HBO Max</sub>
+
+??? faq "HBO Max - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hbo-max.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Hulu
+
+<sub>Hulu</sub>
+
+??? faq "Hulu - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Netflix
+
+<sub>Netflix</sub>
+
+??? faq "Netflix - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/netflix.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Peacock TV
+
+<sub>Peacock TV</sub>
+
+??? faq "Peacock TV - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/peacock-tv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### ParamountPlus
+
+<sub>Paramount+</sub>
+
+??? faq "Paramount+ - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/paramountplus.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
