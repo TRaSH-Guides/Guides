@@ -1,0 +1,34 @@
+{
+  "trash_id": "526d445d4c16214309f0fd2b3be18a89",
+  "name": "Hulu",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Hulu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(hulu)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
