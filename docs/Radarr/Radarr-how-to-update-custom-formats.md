@@ -37,22 +37,6 @@ all you need to do now is click on the `Save` button and you're done.
 
 ## Automatically
 
-### Notifiarr
-
-It's possible with [Notifiarr](https://notifiarr.com/profile.php) (Patron feature)
-
-After setup it's fully automated and will check every X minutes for updates to the Custom Formats or Sonarr Release Profile and will update it to your Radarr or Sonarr (Multiple Client Support).
-
-[Instructions](https://notifiarr.wiki/en/Website/Integrations/Trash)
-
-------
-
-### TRaSH Updater
-
-It's possible with [trash-updater](https://github.com/rcdailey/trash-updater)
-
-Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler.
-
-[Instructions](https://github.com/rcdailey/trash-updater#getting-started)
+Use one of the 3rd Party Sync options that you can find [HERE](/Misc/trash-sync){:target="_blank" rel="noopener noreferrer"}.
 
 --8<-- "includes/support.md"
