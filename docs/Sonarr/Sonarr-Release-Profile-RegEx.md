@@ -83,7 +83,7 @@ Then you will get a popup screen that will look like this:
 
 ------
 
-## Release Sources (Streaming Service)
+## Release Sources (Streaming Service) - Release Profile
 
 <sub>Profile 1</sub>
 
@@ -187,7 +187,7 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ------
 
-## P2P Groups + Repack/Proper
+## P2P Groups + Repack/Proper - Release Profile
 
 <sub>Profile 2</sub>
 
@@ -255,7 +255,7 @@ Add this to your `Preferred (3)` with a score of [10]
 
 ------
 
-## Low Quality Groups
+## Low Quality Groups - Release Profile
 
 <sub>Profile 3</sub>
 
@@ -284,7 +284,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 ------
 
-## Optionals
+## Optionals - Release Profile
 
 <sub>Profile 4</sub>
 
