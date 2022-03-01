@@ -1,3 +1,7 @@
+# 2022-03-01
+Radarr CF [HDR10+] No DV #524
+- Fixed: CF `[HDR10+]` Added `No DV` Condition.
+
 # 2022-02-27
 New: TRaSH Guides 3rd Party Sync options #516
 - Added: TRaSH Guides 3rd Party Sync options `Notifiarr` and `TRaSH Updater`.
