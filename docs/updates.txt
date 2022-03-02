@@ -1,3 +1,7 @@
+# 2022-03-02
+Radarr CF DV WEBDL Flights #526
+- Fixed: CF `[DV WEBDL]` Added the group `Flights` to the `Group Exceptions` condition.
+
 # 2022-03-01
 Radarr CF [HDR10+] No DV #524
 - Fixed: CF `[HDR10+]` Added `No DV` Condition.
