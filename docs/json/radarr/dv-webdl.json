@@ -37,7 +37,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(SIC|HULU)\\b"
+        "value": "\\b(SIC|HULU|Flights)\\b"
       }
     },
     {
