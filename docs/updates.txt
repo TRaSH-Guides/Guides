@@ -1,3 +1,9 @@
+# 2022-03-04
+Radarr CF [LQ] FZHD #528
+- Updated: CF [LQ] added `FZHD` to the `Nominated Unwanted Groups` condition.
+Update Sonarr-Release-Profile-RegEx.md #529
+- Added: Extra DO NOT Check mark `Include Preferred when Renaming` Warning
+
 # 2022-03-02
 Radarr CF DV WEBDL Flights #526
 - Fixed: CF `[DV WEBDL]` Added the group `Flights` to the `Group Exceptions` condition.
