@@ -261,6 +261,9 @@ Add this to your `Preferred (3)` with a score of [10]
 
 <!-- [trash_id: EBC725268D687D588A20CBC5F97E538B] -->
 
+!!! warning
+    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
+
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
@@ -287,6 +290,9 @@ Add this to your `Preferred (3)` with a score of [-100]
 ## Optionals - Release Profile
 
 <sub>Profile 4</sub>
+
+!!! warning
+    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
 
 !!! danger "Caution"
     These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it :bangbang:
