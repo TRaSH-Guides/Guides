@@ -27,6 +27,8 @@ This account will be used for authentication with your VPN Torrent client.
 `Services` > `My Services` > `Manage` > `Manage Credentials`
 
 ??? Check "Example - [CLICK TO EXPAND]"
+    ![!Services > My Services](images/torguard/services-my-services.png)
+
     ![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
 
 Create a new username and choose a secure password or create a random username and password.
@@ -50,6 +52,10 @@ Now it's time to get the IP of your VPN server you're going to use from the [Glo
 Then we're going to select which server we're going to use,
 
 For the best speed it's recommended to choose the one nearest to your location.
+
+!!! tip ""
+    Sometimes you get better speeds if you use one of your neighboring countries.
+
 Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
@@ -78,16 +84,16 @@ Remember that for later use.
 !!! note
     This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.
 
-### Request Port Forward
+### Port Forward Request
 
 From your Client Area go to your [My Services](https://torguard.net/clientarea.php?action=products){:target="_blank" rel="noopener noreferrer"}.
 
-Then click on `Manage` and select `Request Port Forward`.
+Then click on `Manage` and select `Port Forward Request`.
 
-`Services` > `My Services` > `Manage` > `Request Port Forward`
+`Services` > `My Services` > `Manage` > `Port Forward Request`
 
 ??? Check "Example - [CLICK TO EXPAND]"
-    ![!Request Port Forward](images/torguard/req_port_fwd.png)
+    ![!Port Forward Request](images/torguard/req_port_fwd.png)
 
 ### VPN Tunnel Type
 
@@ -95,7 +101,7 @@ Choose your preferred VPN Tunnel type.
 
 #### OVPN Request Port Forward
 
-??? example "OVPN Request Port Forward"
+??? summary "OVPN Request Port Forward"
 
     ![!Request New Port Forward OVPN](images/torguard/request-new-pfw-ovpn.png)
 
@@ -119,7 +125,7 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Request Port Forward
 
-??? example "WireGuard Request Port Forward - [CLICK TO EXPAND]"
+??? summary "WireGuard Request Port Forward - [CLICK TO EXPAND]"
 
     ![!Request New Port Forward WireGuard](images/torguard/request-new-pfw-wireguard.png)
 
@@ -164,13 +170,13 @@ Choose your preferred VPN Tunnel type.
 
 #### OVPN Config Generator
 
-??? example "OVPN Config Generator - [CLICK TO EXPAND]"
+??? summary "OVPN Config Generator - [CLICK TO EXPAND]"
 
     ![!OVPN Config Generator](images/torguard/config-generator-ovpn.png)
 
     1. Keep this on `Default`.
     1. Choose `OpenVPN`.
-    1. Put in the `IP` we got earlier and used for the port forwarding.
+    1. Choose the `IP` we got earlier and used for the port forwarding.
     1. Choose `UDP`.
     1. Choose `995|SHA1` or what you selected during the port forwarding.
     1. Choose `AES-128-GCM`.
@@ -184,14 +190,14 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Config Generator
 
-??? example "WireGuard Config Generator - [CLICK TO EXPAND]"
+??? summary "WireGuard Config Generator - [CLICK TO EXPAND]"
 
     ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
 
     1. Choose `WireGuard`.
-    1. Put in the `IP` we got earlier and used for the port forwarding.
+    1. Choose the `IP` we got earlier and used for the port forwarding.
     1. Add your `VPN Username`.
-    1. Add your `VPN Password.
+    1. Only Change this if you know what you're doing :bangbang:
     1. Click on `Generate Config`
 
     Now you will download a `.conf` file with a random number.
