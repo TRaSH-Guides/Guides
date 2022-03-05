@@ -1674,8 +1674,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#request-port-forward" class="md-nav__link">
-    Request Port Forward
+  <a href="#port-forward-request" class="md-nav__link">
+    Port Forward Request
   </a>
   
 </li>
@@ -2202,8 +2202,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#request-port-forward" class="md-nav__link">
-    Request Port Forward
+  <a href="#port-forward-request" class="md-nav__link">
+    Port Forward Request
   </a>
   
 </li>
@@ -2324,6 +2324,7 @@ This account will be used for authentication with your VPN Torrent client.</p>
 <p><code>Services</code> &gt; <code>My Services</code> &gt; <code>Manage</code> &gt; <code>Manage Credentials</code></p>
 <details class="check">
 <summary>Example - [CLICK TO EXPAND]</summary>
+<p><div class="lightgallery"><a data-sub-html="Services &gt; My Services" href="../images/torguard/services-my-services.png"><img alt="Services &gt; My Services" src="../images/torguard/services-my-services.png" /></a></div></p>
 <p><div class="lightgallery"><a data-sub-html="Client Area Manage Credentials" href="../images/torguard/client-area-manage-credentials.png"><img alt="Client Area Manage Credentials" src="../images/torguard/client-area-manage-credentials.png" /></a></div></p>
 </details>
 <p>Create a new username and choose a secure password or create a random username and password.</p>
@@ -2341,8 +2342,11 @@ This account will be used for authentication with your VPN Torrent client.</p>
 </details>
 <h3 id="global-vpn-network">Global VPN Network<a class="headerlink" href="#global-vpn-network" title="Permanent link">¶</a></h3>
 <p>Then we're going to select which server we're going to use,</p>
-<p>For the best speed it's recommended to choose the one nearest to your location.
-Let's use for this example: <code>USA Miami</code> and copy/paste the Hostname <code>us-fl.secureconnect.me</code>.</p>
+<p>For the best speed it's recommended to choose the one nearest to your location.</p>
+<div class="admonition tip">
+<p>Sometimes you get better speeds if you use one of your neighboring countries.</p>
+</div>
+<p>Let's use for this example: <code>USA Miami</code> and copy/paste the Hostname <code>us-fl.secureconnect.me</code>.</p>
 <p><div class="lightgallery"><a data-sub-html="Torguard Global VPN Network" href="../images/torguard/globalvpnnetwork-list.png"><img alt="Torguard Global VPN Network" src="../images/torguard/globalvpnnetwork-list.png" /></a></div></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2364,18 +2368,18 @@ Remember that for later use.</p>
 <p class="admonition-title">Note</p>
 <p>This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.</p>
 </div>
-<h3 id="request-port-forward">Request Port Forward<a class="headerlink" href="#request-port-forward" title="Permanent link">¶</a></h3>
+<h3 id="port-forward-request">Port Forward Request<a class="headerlink" href="#port-forward-request" title="Permanent link">¶</a></h3>
 <p>From your Client Area go to your <a href="https://torguard.net/clientarea.php?action=products" rel="noopener noreferrer" target="_blank">My Services</a>.</p>
-<p>Then click on <code>Manage</code> and select <code>Request Port Forward</code>.</p>
-<p><code>Services</code> &gt; <code>My Services</code> &gt; <code>Manage</code> &gt; <code>Request Port Forward</code></p>
+<p>Then click on <code>Manage</code> and select <code>Port Forward Request</code>.</p>
+<p><code>Services</code> &gt; <code>My Services</code> &gt; <code>Manage</code> &gt; <code>Port Forward Request</code></p>
 <details class="check">
 <summary>Example - [CLICK TO EXPAND]</summary>
-<p><div class="lightgallery"><a data-sub-html="Request Port Forward" href="../images/torguard/req_port_fwd.png"><img alt="Request Port Forward" src="../images/torguard/req_port_fwd.png" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="Port Forward Request" href="../images/torguard/req_port_fwd.png"><img alt="Port Forward Request" src="../images/torguard/req_port_fwd.png" /></a></div></p>
 </details>
 <h3 id="vpn-tunnel-type">VPN Tunnel Type<a class="headerlink" href="#vpn-tunnel-type" title="Permanent link">¶</a></h3>
 <p>Choose your preferred VPN Tunnel type.</p>
 <h4 id="ovpn-request-port-forward">OVPN Request Port Forward<a class="headerlink" href="#ovpn-request-port-forward" title="Permanent link">¶</a></h4>
-<details class="example">
+<details class="summary">
 <summary>OVPN Request Port Forward</summary>
 <p><div class="lightgallery"><a data-sub-html="Request New Port Forward OVPN" href="../images/torguard/request-new-pfw-ovpn.png"><img alt="Request New Port Forward OVPN" src="../images/torguard/request-new-pfw-ovpn.png" /></a></div></p>
 <ol>
@@ -2397,7 +2401,7 @@ Remember that for later use.</p>
 </div>
 </details>
 <h4 id="wireguard-request-port-forward">WireGuard Request Port Forward<a class="headerlink" href="#wireguard-request-port-forward" title="Permanent link">¶</a></h4>
-<details class="example">
+<details class="summary">
 <summary>WireGuard Request Port Forward - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Request New Port Forward WireGuard" href="../images/torguard/request-new-pfw-wireguard.png"><img alt="Request New Port Forward WireGuard" src="../images/torguard/request-new-pfw-wireguard.png" /></a></div></p>
 <ol>
@@ -2437,13 +2441,13 @@ Remember that for later use.</p>
 <h3 id="config-generator">Config Generator<a class="headerlink" href="#config-generator" title="Permanent link">¶</a></h3>
 <p>Choose your preferred VPN Tunnel type.</p>
 <h4 id="ovpn-config-generator">OVPN Config Generator<a class="headerlink" href="#ovpn-config-generator" title="Permanent link">¶</a></h4>
-<details class="example">
+<details class="summary">
 <summary>OVPN Config Generator - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="OVPN Config Generator" href="../images/torguard/config-generator-ovpn.png"><img alt="OVPN Config Generator" src="../images/torguard/config-generator-ovpn.png" /></a></div></p>
 <ol>
 <li>Keep this on <code>Default</code>.</li>
 <li>Choose <code>OpenVPN</code>.</li>
-<li>Put in the <code>IP</code> we got earlier and used for the port forwarding.</li>
+<li>Choose the <code>IP</code> we got earlier and used for the port forwarding.</li>
 <li>Choose <code>UDP</code>.</li>
 <li>Choose <code>995|SHA1</code> or what you selected during the port forwarding.</li>
 <li>Choose <code>AES-128-GCM</code>.</li>
@@ -2455,14 +2459,14 @@ Remember that for later use.</p>
 <p>Rename the extension from <code>*.conf</code> to <code>*.ovpn</code> and copy it to your openvpn folder of your VPN torrent client.</p>
 </details>
 <h4 id="wireguard-config-generator">WireGuard Config Generator<a class="headerlink" href="#wireguard-config-generator" title="Permanent link">¶</a></h4>
-<details class="example">
+<details class="summary">
 <summary>WireGuard Config Generator - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="WireGuard Config Generator" href="../images/torguard/config-generator-wireguard.png"><img alt="WireGuard Config Generator" src="../images/torguard/config-generator-wireguard.png" /></a></div></p>
 <ol>
 <li>Choose <code>WireGuard</code>.</li>
-<li>Put in the <code>IP</code> we got earlier and used for the port forwarding.</li>
+<li>Choose the <code>IP</code> we got earlier and used for the port forwarding.</li>
 <li>Add your <code>VPN Username</code>.</li>
-<li>Add your `VPN Password.</li>
+<li>Only Change this if you know what you're doing <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
 <li>Click on <code>Generate Config</code></li>
 </ol>
 <p>Now you will download a <code>.conf</code> file with a random number.</p>
@@ -2483,7 +2487,7 @@ Remember that for later use.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 26, 2021 16:08:48</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 5, 2022 16:04:25</span>
       
     
   </small>
