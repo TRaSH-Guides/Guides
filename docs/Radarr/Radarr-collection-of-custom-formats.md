@@ -785,6 +785,16 @@ I also made 3 guides related to this one.
 
     IMAX Enhanced exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
 
+    ![!Imax Enhanced Example](images/imax-e/imax-e.1.png)
+
+    ![!Imax Enhanced Example](images/imax-e/imax-e.2.png)
+
+    ![!Imax Enhanced Example](images/imax-e/imax-e.3.png)
+
+    ![!Imax Enhanced Example](images/imax-e/imax-e.4.png)
+
+    ![!Imax Enhanced Example](images/imax-e/imax-e.5.png)
+
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
