@@ -96,7 +96,7 @@ plugins:
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
         jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
-        imax-e.md: Radarr/Radarr-collection-of-custom-formats/#imax-enhanced.md
+
 theme:
   name: material
   custom_dir: overrides
