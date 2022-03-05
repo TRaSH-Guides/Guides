@@ -1,3 +1,11 @@
+# 2022-03-05
+Radarr CF HQ Remux playBD #530
+- Updated: CF `[HQ Remux]` added group `playBD`.
+Radarr CF IMAX Enhanced Examples #531
+- Added: IMAX Enhanced Examples.
+Torguard Portforwarding layout update #536
+- Updated: Screenshots etc to match TorGuard new layout.
+
 # 2022-03-04
 Radarr CF [LQ] FZHD #528
 - Updated: CF [LQ] added `FZHD` to the `Nominated Unwanted Groups` condition.
