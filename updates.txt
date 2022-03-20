@@ -1,3 +1,10 @@
+# 2022-03-20
+Maintenance Release 20220320
+- Updated: CF `[IMAX Enhanced]` Scoring from `750` to `800` to make sure it scores better against `DV HDR10`.
+- Updated: CF `[FraMeSToR]` Scoring from `1` to `51` to make sure it scores better against `DV HDR10`.
+Misc - How to set Torguard for port forwarding.
+- Added: Note `As of 13 March Torguard Settles Piracy Lawsuit and has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology`
+
 # 2022-03-05
 Radarr CF HQ Remux playBD #530
 - Updated: CF `[HQ Remux]` added group `playBD`.
