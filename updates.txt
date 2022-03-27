@@ -1,5 +1,17 @@
+# 2022-03-27
+Radarr CF Update
+- NEW: CF `[UHD (SPHD)]` HQ 4k Encoding Group that does `DV HDR10` and HD Audio with a recommended score of `2250`.
+- Updated: CF `[LQ]` added `PATOMiEL` to the `Nominated Unwanted Groups` condition because of their bad naming.
+Optimal Plex Client Settings #543
+- NEW: Page with link(s) for Optimal Plex Client Settings.
+qBittorrent 3rd Party tools #544
+- NEW: Link to qBit Manage.
+- NEW: Link to qbittorrent-cli.
+- NEW: Link to qbittools.
+- NEW: Link to A Dark but not black qBittorrent WebUI.
+
 # 2022-03-20
-Maintenance Release 20220320
+Maintenance Release 20220320 #538
 - Updated: CF `[IMAX Enhanced]` Scoring from `750` to `800` to make sure it scores better against `DV HDR10`.
 - Updated: CF `[FraMeSToR]` Scoring from `1` to `51` to make sure it scores better against `DV HDR10`.
 Misc - How to set Torguard for port forwarding.
