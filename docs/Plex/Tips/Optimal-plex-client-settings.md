@@ -10,3 +10,5 @@ I was considering to start fresh on this, but then why reinvent the wheel when s
 ## External Links
 
 [The Media Clients Wiki](https://mediaclients.wiki/Plex){:target="_blank" rel="noopener noreferrer"}
+
+--8<-- "includes/support.md"
