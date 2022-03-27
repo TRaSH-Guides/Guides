@@ -50,7 +50,7 @@ A darker theme for qBittorrent WebUI (made with the help of the Walkerservers co
 - It has different colors for ratio-values (see screenshot)
 - It has a mix of Fontawesome and custom icons
 
-[Example](https://raw.githubusercontent.com/brettpetch/nightwalker/main/preview.png)
+![!Example](https://raw.githubusercontent.com/brettpetch/nightwalker/main/preview.png)
 
 [Nightwalker](https://github.com/brettpetch/nightwalker){:target="_blank" rel="noopener noreferrer"}
 
