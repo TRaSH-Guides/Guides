@@ -19,6 +19,8 @@ This is a program used to manage your qBittorrent instance such as:
 
 [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
 
+------
+
 ## qbittorrent-cli
 
 A cli to manage qBittorrent. Add torrents, reannounce and import from other clients.
@@ -30,11 +32,15 @@ A cli to manage qBittorrent. Add torrents, reannounce and import from other clie
 
 [qbittorrent-cli](https://github.com/ludviglundgren/qbittorrent-cli){:target="_blank" rel="noopener noreferrer"}
 
+------
+
 ## qbittools
 
 qbittools is a feature rich CLI for the management of torrents in qBittorrent.
 
 [qbittools](https://gitlab.com/AlexKM/qbittools){:target="_blank" rel="noopener noreferrer"}
+
+------
 
 ## A Dark but not black qBittorrent WebUI
 
@@ -47,5 +53,7 @@ A darker theme for qBittorrent WebUI (made with the help of the Walkerservers co
 [Example](https://raw.githubusercontent.com/brettpetch/nightwalker/main/preview.png)
 
 [Nightwalker](https://github.com/brettpetch/nightwalker){:target="_blank" rel="noopener noreferrer"}
+
+------
 
 --8<-- "includes/support.md"
