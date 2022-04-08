@@ -4,8 +4,7 @@
   "community_id": "Visorak",
   "includePreferredWhenRenaming": true,
   "required": [],
-  "preferred": [
-    {
+  "preferred": [{
       "score": 1000,
       "terms": [
         "/(uncut|unrated|uncensored|\\b(AT[-_. ]?X)\\b)/i"

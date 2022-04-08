@@ -1,50 +1,50 @@
 {
-	"ignore": [{
-		"name": "Golden rule",
-		"term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
-	}, {
-		"name": "Ignore Dolby Vision without HDR10 fallback.",
-		"term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]Vision)\\b).*/i"
+  "ignore": [{
+    "name": "Golden rule",
+    "term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
   }, {
-		"name": "Ignore The Group -SCENE",
-		"term": "/\\b(-scene)\\b/i"
-	}, {
-		"name": "Ignore so called scene releases",
-		"term": "/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i"
-	}],
-	"required": [],
-	"preferred": [{
-		"score": 15,
-		"terms": [{
-			"name": "Prefer Season Packs",
-			"term": "/\\bS\\d+\\b(?!E\\d+\\b)/i"
-		}]
-	}, {
-		"score": 10,
-		"terms": [{
-			"name": "Prefer HDR",
-			"term": "/\\bHDR(\\b|\\d)/i"
-		}]
-	}, {
-		"score": 100,
-		"terms": [{
-			"name": "Prefer Dolby Vision",
-			"term": "/\\b(dv|dovi|dolby[ .]?vision)\\b/i"
-		}]
-	}, {
-		"score": -25,
-		"terms": [{
-			"name": "Dislike retags: rartv, rarbg, eztv, TGx",
-			"term": "/(\\[rartv\\]|\\[rarbg\\]|\\[eztv\\]|\\[TGx\\])/i"
-		}, {
-			"name": "Dislike retagged groups",
-			"term": "/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b/i"
-		}, {
-			"name": "Dislike release ending: en",
-			"term": "/\\s?\\ben\\b$/i"
-		}, {
-			"name": "Dislike release containing: 1-",
-			"term": "/(1-.+)$/i"
-		}]
-	}]
+    "name": "Ignore Dolby Vision without HDR10 fallback.",
+    "term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]Vision)\\b).*/i"
+  }, {
+    "name": "Ignore The Group -SCENE",
+    "term": "/\\b(-scene)\\b/i"
+  }, {
+    "name": "Ignore so called scene releases",
+    "term": "/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i"
+  }],
+  "required": [],
+  "preferred": [{
+    "score": 15,
+    "terms": [{
+      "name": "Prefer Season Packs",
+      "term": "/\\bS\\d+\\b(?!E\\d+\\b)/i"
+    }]
+  }, {
+    "score": 10,
+    "terms": [{
+      "name": "Prefer HDR",
+      "term": "/\\bHDR(\\b|\\d)/i"
+    }]
+  }, {
+    "score": 100,
+    "terms": [{
+      "name": "Prefer Dolby Vision",
+      "term": "/\\b(dv|dovi|dolby[ .]?vision)\\b/i"
+    }]
+  }, {
+    "score": -25,
+    "terms": [{
+      "name": "Dislike retags: rartv, rarbg, eztv, TGx",
+      "term": "/(\\[rartv\\]|\\[rarbg\\]|\\[eztv\\]|\\[TGx\\])/i"
+    }, {
+      "name": "Dislike retagged groups",
+      "term": "/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b/i"
+    }, {
+      "name": "Dislike release ending: en",
+      "term": "/\\s?\\ben\\b$/i"
+    }, {
+      "name": "Dislike release containing: 1-",
+      "term": "/(1-.+)$/i"
+    }]
+  }]
 }
