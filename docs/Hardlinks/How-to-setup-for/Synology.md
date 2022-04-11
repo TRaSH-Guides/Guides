@@ -268,8 +268,8 @@ The `.env` file we downloaded holds the variables/information you need to change
 
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
-1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid)
-1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"}
+1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
+1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"})
 1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
 !!! info ""
@@ -355,7 +355,7 @@ You will notice that all the images will be downloaded, after that the container
 
 !!! attention
 
-    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the command `sudo docker-compose -f /volume1/docker/appdata/docker-compose.yml up -d` again.
+    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the command `sudo docker-compose up -d` again, from within the `/volume1/docker/appdata` folder.
 
     Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
 
