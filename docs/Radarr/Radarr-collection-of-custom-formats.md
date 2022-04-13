@@ -766,7 +766,7 @@ I also made 3 guides related to this one.
 ### IMAX
 
 ??? faq "IMAX - [CLICK TO EXPAND]"
-    Description placeholder
+    IMAX: Get More Picture Instead of Black Bars
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
