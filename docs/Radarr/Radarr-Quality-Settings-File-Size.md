@@ -1,13 +1,14 @@
 # Quality Settings (File Size)
 
-I often get the question; What's the best quality settings to use?
-Well it's actually personal preference so I will show you a recommended Quality Settings.
+I often get the question "What's the best quality settings to use?"
+Well, it's actually personal preference so I will show you my recommendations.
+
 But before you continue to read, as with all my guides:
 
 !!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
-This Quality Settings has been created and tested with info I got from others, and release comparisons from different sources.
+These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.
 
 ??? question "FAQ - [CLICK TO EXPAND]"
 
@@ -17,7 +18,7 @@ This Quality Settings has been created and tested with info I got from others, a
 
     A: With the big screens these days anything lower doesn't look watchable
 
-    **Q: Why do you have some sized set to max?**
+    **Q: Why do you have some sizes set to max?**
 
     A: You probably didn't read the bold text above
 
