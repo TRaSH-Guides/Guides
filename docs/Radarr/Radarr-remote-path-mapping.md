@@ -1,17 +1,17 @@
 # Remote Path Mappings
 
-Seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.
+It seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.
 
 Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
 
-## Do I need Remote Path Mappings
+## When do I need remote path mappings
 
 - If Radarr and your download client are not on the same server/system.
-- If you use either merged local/remote setups using mergerfs or similar
-- You run dockers and **DON'T** have Consistent and well planned paths.
+- If you use either merged local/remote setups using mergerfs or similar.
+- You run dockers and **DON'T** have consistent and well planned paths.
 
 !!! note
-    If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
+    If you run dockers it would be smarter to fix the problem at the source of what's causing the actual issue.
 
     - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
@@ -25,21 +25,21 @@ Your download stays in your download client and Radarr doesn't want to import it
 
 Go to `Activity` => `Queue`
 
-You will see a orange download icon, hover with your mouse over it and you will get a error that looks a bit like this.
+You will see a orange download icon, hover over it with your mouse and you will get an error that looks a bit like this:
 
 ![!rpm-activity-waiting-for-import](images/rpm-activity-waiting-for-import.png)
 
 Go to `System` => `Events`
 
-You will see somewhere a error that looks a bit like this.
+You will see an error that looks a bit like this:
 
 ![!rpm-system-events](images/rpm-system-events.png)
 
-The following error could also mean that you need remote path mapping
+The following error could also mean that you need remote path mappings:
 
 ![!rpm-health-issue](images/rpm-health-issue.png)
 
-So looking at these screenshot it seems you need to make use of Remote Path Mappings.
+So looking at these screenshot it seems you need to make use of remote path mappings.
 
 ------
 
@@ -47,11 +47,11 @@ So looking at these screenshot it seems you need to make use of Remote Path Mapp
 
 Go to `Settings` => `Download Clients`
 
-Scroll all the way down where you see `Remote Path Mappings` and click on the right on the plus sign.
+Scroll all the way down where you see `Remote path mappings` and click on the plus sign in the bottom right corner.
 
 ![!rpm-settings-download-clients](images/rpm-settings-download-clients.png)
 
-A screen will popup with the following options.
+A screen will popup with the following options:
 
 ![!rpm-add-rpm](images/rpm-add-rpm.png)
 
@@ -65,7 +65,7 @@ To find what you need to put in your host
 
 Go to `Settings` => `Download Clients`
 
-There you open up the download client for this example I will be using SABnzbd
+Open up the download client. For this example I will be using SABnzbd.
 
 ![!Sabnzbd Host](images/rpm-sabnzbd-host.png)
 
@@ -78,7 +78,7 @@ This could be a `hostname`, `container name` or a `IP Address`
 
 ### Remote Path
 
-To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.
+To find out what you need to put in your remote path you need to open up your download client and look at what you've used there as download location.
 
 In SABnzbd go to `settings` => `Folders`
 
@@ -90,7 +90,7 @@ In SABnzbd go to `settings` => `Folders`
 
 ### Local Path
 
-To find what you need to put in in your local path you need to know how Radarr is able to access the files your download client downloaded. And this can be done in different ways. Mounting/Network share what ever but Radarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr to access the download clients downloaded files.
+To find out what you need to put in in your local path you need to know how Radarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.
 
 Click on the browse button and browse to the location where the files are accessible for Radarr.
 
@@ -98,7 +98,7 @@ Click on the browse button and browse to the location where the files are access
 
     ![!rpm-add-local-path](images/rpm-add-local-path.png)
 
-The final result will look something like this.
+The final result will look something like this:
 
 ![!rpm-final-results](images/rpm-final-results.png)
 
