@@ -2751,8 +2751,8 @@ We're going to do this in Putty or a similar program.</p>
 <ol>
 <li>DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
 <li>DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
-<li>PUID/PGID (this info you got earlier from <a href="#puid-and-pgid">HERE</a></li>
-<li>TZ (Change to your timezone, can be found <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" rel="noopener noreferrer" target="_blank">HERE</a></li>
+<li>PUID/PGID (this info you got earlier from <a href="#puid-and-pgid">HERE</a>)</li>
+<li>TZ (Change to your timezone, can be found <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" rel="noopener noreferrer" target="_blank">HERE</a>)</li>
 <li>Install and Create a task scheduler for Pullio, so your containers stay up to date.</li>
 </ol>
 <div class="admonition info">
@@ -2807,7 +2807,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, run the command <code>sudo docker-compose -f /volume1/docker/appdata/docker-compose.yml up -d</code> again.</p>
+<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, run the command <code>sudo docker-compose up -d</code> again, from within the <code>/volume1/docker/appdata</code> folder.</p>
 <p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
 <p>Just don't use the GUI, only for information purposes !!!</p>
 </div>
@@ -2833,7 +2833,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 23, 2022 11:36:00</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 11, 2022 11:56:08</span>
       
     
   </small>
