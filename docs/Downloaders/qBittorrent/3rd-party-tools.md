@@ -1,6 +1,6 @@
 # 3rd Party tools
 
-Here you will find a collection of 3r Party tools and other related links for qBittorrent.
+Here you will find a collection of 3rd party tools and other related links for qBittorrent.
 
 ## qBit Manage
 
