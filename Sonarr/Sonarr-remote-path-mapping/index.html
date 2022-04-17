@@ -799,8 +799,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-i-need-remote-path-mappings" class="md-nav__link">
-    Do I need Remote Path Mappings
+  <a href="#when-do-i-need-remote-path-mappings" class="md-nav__link">
+    When do I need remote path mappings
   </a>
   
 </li>
@@ -2083,8 +2083,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-i-need-remote-path-mappings" class="md-nav__link">
-    Do I need Remote Path Mappings
+  <a href="#when-do-i-need-remote-path-mappings" class="md-nav__link">
+    When do I need remote path mappings
   </a>
   
 </li>
@@ -2144,13 +2144,13 @@
 
 
 <h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link">¶</a></h1>
-<p>Seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.</p>
+<p>It seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.</p>
 <p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace with <code>Local Path</code></p>
-<h2 id="do-i-need-remote-path-mappings">Do I need Remote Path Mappings<a class="headerlink" href="#do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
 <ul>
 <li>If Sonarr and your download client are not on the same server/system.</li>
-<li>If you use either merged local/remote setups using mergerfs or similar</li>
-<li>You run dockers and <strong>DON'T</strong> have Consistent and well planned paths.</li>
+<li>If you use either merged local/remote setups using mergerfs or similar.</li>
+<li>You run dockers and <strong>DON'T</strong> have consistent and well planned paths.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2166,17 +2166,17 @@
 </div>
 <hr />
 <h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
-<p>If your download client is on another system then Sonarr then you probably need to make use of Remote Path Mappings.</p>
-<p>You will get a error that looks a little bit like the following screenshot.</p>
+<p>If your download client is on another system than Sonarr then you probably need to make use of Remote Path Mappings.</p>
+<p>You will get an error that looks a little bit like the following screenshot.</p>
 <p><div class="lightgallery"><a data-sub-html="download errors" href="../images/dl_error.png"><img alt="download errors" src="../images/dl_error.png" /></a></div></p>
 <p>So looking at this screenshot it seems we need to make use of Remote Path Mappings</p>
 <hr />
 <h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">¶</a></h2>
-<p>First we navigate in Sonarr to the Settings =&gt; <code>Download Clients</code> Tab.</p>
+<p>First we navigate in Sonarr to the <code>Settings</code> =&gt; <code>Download Clients</code> tab.</p>
 <p><img alt="download client tab" src="../images/cl_cli_tab.png" /></p>
 <p>At the bottom you choose <code>Add new mapping</code></p>
 <p><div class="lightgallery"><a data-sub-html="add new mapping" href="../images/new_mapping.png"><img alt="add new mapping" src="../images/new_mapping.png" /></a></div></p>
-<p>A screen will popup with the following options.</p>
+<p>A screen will pop up with the following options:</p>
 <p><img alt="add mapping" src="../images/mapping.png" /></p>
 <ol>
 <li><code>Host</code> =&gt; This is the hostname or IP you set in your download client settings.</li>
@@ -2198,9 +2198,7 @@ There you open up the download client for this example I will be using QBittorre
 <p><img alt="Qbittorrent download settings" src="../images/qbit_options.png" /></p>
 <p>This is what you add in your Remote Path in Remote Path Mapping.</p>
 <h2 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link">¶</a></h2>
-<p>To find what you need to put in in your local path you need to know how Sonarr is able to access the files your download client downloaded.
-And this can be done in different ways.
-Mounting/Network share what ever but Sonarr needs to have local access to it so you need to figure this one out your self what's the best way for Sonarr to access the download clients downloaded files.</p>
+<p>To find out what you need to put in in your local path you need to know how Sonarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.</p>
 <p>The final result will look something like this.</p>
 <p><img alt="Qbittorrent final result" src="../images/qbit_final.png" /></p>
 </div>
@@ -2218,7 +2216,7 @@ Mounting/Network share what ever but Sonarr needs to have local access to it so 
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2021 20:39:42</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 11:59:16</span>
       
     
   </small>

@@ -578,8 +578,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-i-need-remote-path-mappings" class="md-nav__link">
-    Do I need Remote Path Mappings
+  <a href="#when-do-i-need-remote-path-mappings" class="md-nav__link">
+    When do I need remote path mappings
   </a>
   
 </li>
@@ -2089,8 +2089,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#do-i-need-remote-path-mappings" class="md-nav__link">
-    Do I need Remote Path Mappings
+  <a href="#when-do-i-need-remote-path-mappings" class="md-nav__link">
+    When do I need remote path mappings
   </a>
   
 </li>
@@ -2156,17 +2156,17 @@
 
 
 <h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link">¶</a></h1>
-<p>Seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.</p>
+<p>It seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.</p>
 <p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace with <code>Local Path</code></p>
-<h2 id="do-i-need-remote-path-mappings">Do I need Remote Path Mappings<a class="headerlink" href="#do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
 <ul>
 <li>If Radarr and your download client are not on the same server/system.</li>
-<li>If you use either merged local/remote setups using mergerfs or similar</li>
-<li>You run dockers and <strong>DON'T</strong> have Consistent and well planned paths.</li>
+<li>If you use either merged local/remote setups using mergerfs or similar.</li>
+<li>You run dockers and <strong>DON'T</strong> have consistent and well planned paths.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.</p>
+<p>If you run dockers it would be smarter to fix the problem at the source of what's causing the actual issue.</p>
 <ul>
 <li>
 <p><a href="https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths" rel="noopener noreferrer" target="_blank">Radarr Wiki Servarr - Docker Guide</a></p>
@@ -2180,20 +2180,20 @@
 <h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
 <p>Your download stays in your download client and Radarr doesn't want to import it.</p>
 <p>Go to <code>Activity</code> =&gt; <code>Queue</code></p>
-<p>You will see a orange download icon, hover with your mouse over it and you will get a error that looks a bit like this.</p>
+<p>You will see a orange download icon, hover over it with your mouse and you will get an error that looks a bit like this:</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-activity-waiting-for-import" href="../images/rpm-activity-waiting-for-import.png"><img alt="rpm-activity-waiting-for-import" src="../images/rpm-activity-waiting-for-import.png" /></a></div></p>
 <p>Go to <code>System</code> =&gt; <code>Events</code></p>
-<p>You will see somewhere a error that looks a bit like this.</p>
+<p>You will see an error that looks a bit like this:</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-system-events" href="../images/rpm-system-events.png"><img alt="rpm-system-events" src="../images/rpm-system-events.png" /></a></div></p>
-<p>The following error could also mean that you need remote path mapping</p>
+<p>The following error could also mean that you need remote path mappings:</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-health-issue" href="../images/rpm-health-issue.png"><img alt="rpm-health-issue" src="../images/rpm-health-issue.png" /></a></div></p>
-<p>So looking at these screenshot it seems you need to make use of Remote Path Mappings.</p>
+<p>So looking at these screenshot it seems you need to make use of remote path mappings.</p>
 <hr />
 <h2 id="how-do-i-setup-remote-path-mappings">How do I setup remote path mappings<a class="headerlink" href="#how-do-i-setup-remote-path-mappings" title="Permanent link">¶</a></h2>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p>Scroll all the way down where you see <code>Remote Path Mappings</code> and click on the right on the plus sign.</p>
+<p>Scroll all the way down where you see <code>Remote path mappings</code> and click on the plus sign in the bottom right corner.</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-settings-download-clients" href="../images/rpm-settings-download-clients.png"><img alt="rpm-settings-download-clients" src="../images/rpm-settings-download-clients.png" /></a></div></p>
-<p>A screen will popup with the following options.</p>
+<p>A screen will popup with the following options:</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-add-rpm" href="../images/rpm-add-rpm.png"><img alt="rpm-add-rpm" src="../images/rpm-add-rpm.png" /></a></div></p>
 <ol>
 <li><code>Host</code> =&gt; This is the hostname or IP you set in your download client settings.</li>
@@ -2203,7 +2203,7 @@
 <h3 id="host">Host<a class="headerlink" href="#host" title="Permanent link">¶</a></h3>
 <p>To find what you need to put in your host</p>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p>There you open up the download client for this example I will be using SABnzbd</p>
+<p>Open up the download client. For this example I will be using SABnzbd.</p>
 <p><div class="lightgallery"><a data-sub-html="Sabnzbd Host" href="../images/rpm-sabnzbd-host.png"><img alt="Sabnzbd Host" src="../images/rpm-sabnzbd-host.png" /></a></div></p>
 <p>This is what you put in your Host in Remote Path Mapping.
 This could be a <code>hostname</code>, <code>container name</code> or a <code>IP Address</code></p>
@@ -2212,7 +2212,7 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 <p><div class="lightgallery"><a data-sub-html="rpm-add-rpm-select-sabnzbd" href="../images/rpm-add-rpm-select-sabnzbd.png"><img alt="rpm-add-rpm-select-sabnzbd" src="../images/rpm-add-rpm-select-sabnzbd.png" /></a></div></p>
 </details>
 <h3 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link">¶</a></h3>
-<p>To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.</p>
+<p>To find out what you need to put in your remote path you need to open up your download client and look at what you've used there as download location.</p>
 <p>In SABnzbd go to <code>settings</code> =&gt; <code>Folders</code></p>
 <p><div class="lightgallery"><a data-sub-html="rpm-sabnzbd-folders-cdf" href="../images/rpm-sabnzbd-folders-cdf.png"><img alt="rpm-sabnzbd-folders-cdf" src="../images/rpm-sabnzbd-folders-cdf.png" /></a></div></p>
 <details class="example">
@@ -2220,13 +2220,13 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 <p><div class="lightgallery"><a data-sub-html="rpm-add-rpm-remote-path" href="../images/rpm-add-rpm-remote-path.png"><img alt="rpm-add-rpm-remote-path" src="../images/rpm-add-rpm-remote-path.png" /></a></div></p>
 </details>
 <h3 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link">¶</a></h3>
-<p>To find what you need to put in in your local path you need to know how Radarr is able to access the files your download client downloaded. And this can be done in different ways. Mounting/Network share what ever but Radarr needs to have local access to it so you need to figure this one out your self what's the best way for Radarr to access the download clients downloaded files.</p>
+<p>To find out what you need to put in in your local path you need to know how Radarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.</p>
 <p>Click on the browse button and browse to the location where the files are accessible for Radarr.</p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="rpm-add-local-path" href="../images/rpm-add-local-path.png"><img alt="rpm-add-local-path" src="../images/rpm-add-local-path.png" /></a></div></p>
 </details>
-<p>The final result will look something like this.</p>
+<p>The final result will look something like this:</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-final-results" href="../images/rpm-final-results.png"><img alt="rpm-final-results" src="../images/rpm-final-results.png" /></a></div></p>
 <p>After these changes the file should be able to be imported by Radarr.</p>
 <hr />
@@ -2241,7 +2241,7 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 27, 2021 20:39:42</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 09:32:11</span>
       
     
   </small>

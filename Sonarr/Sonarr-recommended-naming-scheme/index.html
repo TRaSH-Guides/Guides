@@ -2196,12 +2196,11 @@
 
 
 <h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link">¶</a></h1>
-<p>Often on the <a href="https://discord.gg/M6BvZn5" rel="noopener noreferrer" target="_blank">Sonarr Discord</a> people ask what's the recommended/best way to
-name your files.  First off it's personal preference, but it's often recommended
-to add non-recoverable info.</p>
+<p>On the <a href="https://discord.gg/M6BvZn5" rel="noopener noreferrer" target="_blank">Sonarr Discord</a> ppeople often ask, "What's the recommended/best way to
+name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.</p>
 <p>Why?</p>
-<p>If, for whatever reason, you ever need to do a re-install or re-import in
-Sonarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
+<p>If, for what ever reason, you ever need to do a re-install or re-import in
+Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.</p>
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
@@ -2246,7 +2245,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>RESULT:</p>
 <p><code>The Series Title! (2010)</code></p>
 <h4 id="optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby<a class="headerlink" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby" title="Permanent link">¶</a></h4>
-<p>This naming scheme is made to be compatible with the New <a href="https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242" rel="noopener noreferrer" target="_blank">Plex TV Series Scanner</a> that now support IMDB and TVDB IDs in file names.</p>
+<p>This naming scheme is made to be compatible with the new <a href="https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242" rel="noopener noreferrer" target="_blank">Plex TV Series Scanner</a> that now support IMDB and TVDB IDs in file names.</p>
 <p>For Plex:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]</span>
 </code></pre></div>
@@ -2254,7 +2253,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><code>The Series Title! (2010) [imdb-tt1520211]</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The officially supported format is <code>{imdb-{ImdbId}}</code> but plex should also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code>, though the above should work for now, It's actually not needed to add a ID to the folder or filename to use the New Plex TV Series Scanner.</p>
+<p>The officially supported format is <code>{imdb-{ImdbId}}</code> but Plex should also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code>, though the above should work for now, It's actually not needed to add an ID to the folder or filename to use the new Plex TV Series Scanner.</p>
 </div>
 <p>For Jellyfin/Emby:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdbid-<span class="o">{</span>ImdbId<span class="o">}]</span>
@@ -2280,9 +2279,9 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><img alt="results" src="../images/results.png" /></p>
 <hr />
 <h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link">¶</a></h2>
-<p>Want to keep the original release name that holds like all the info of the file then I suggest to use <code>{Original Title}</code> over  <code>{Original Filename}</code></p>
+<p>If you want to keep the original release name that holds all the info of the file then I suggest to use <code>{Original Title}</code> over <code>{Original Filename}</code></p>
 <p>Why?</p>
-<p>The filename can be Obscured where the Release naming isn't especially when you use Usenet.</p>
+<p>The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.</p>
 <p><code>{Original Title}</code> =&gt; <code>The.Series.Title.S01E01.Episode.Title.1080p.AMZN.WEB-DL.DDP5.1.H.264-RlsGrp</code></p>
 <p><code>{Original Filename}</code> =&gt; <code>show episode 1-1080p</code> or <code>lchd-tkk1080p</code> or <code>t1i0p3s7i8yuti</code></p>
 <hr />
@@ -2300,7 +2299,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 3, 2022 14:36:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 10:33:46</span>
       
     
   </small>

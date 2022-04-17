@@ -2378,7 +2378,7 @@
 <h1 id="release-profile-regex-web-dl">Release Profile RegEx (WEB-DL)<a class="headerlink" href="#release-profile-regex-web-dl" title="Permanent link">¶</a></h1>
 <p>Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.</p>
-<p>The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).</p>
+<p>The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases. (Scene releases are still being downloaded, but replaced once an upgrade is found.)</p>
 <div class="admonition error">
 <p><strong>If you don't care about quality then stop reading and see if the other tutorials are helpful for you.</strong></p>
 </div>
@@ -2386,31 +2386,31 @@ With this option you can fine tune your preference.</p>
 <summary>FAQ - [CLICK TO EXPAND]</summary>
 <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h2>
 <p><strong>Q: Why do you only have a release profile for WEB-DL?</strong></p>
-<p>A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between Quality and Size and you often don't see big difference anyway for TV shows. (Except for shows like GOT, Vikings, etc)</p>
-<p><strong>Q: Why do you prefer P2P groups over scene releases?</strong></p>
-<p>A: Scene release always release in a rush to bring it out as fast as possible.</p>
-<p>So I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
+<p>A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)</p>
+<p><strong>Q: Why do you prefer P2P groups over scene groups?</strong></p>
+<p>A: Scene groups always release in a rush to bring it out as fast as possible.</p>
+<p>So I noticed often that I got Repacks/Proper releases from them or from different groups and quality.
 P2P releases are a bit smarter and work sort of together by not doing the same release.
-Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
-And in my opinion the P2P are of better quality.
+Also, I noticed that with some scene releases the 5.1 audio was stripped out or converted to AAC audio.</p>
+<p>In my opinion the P2P releases are of better quality.
 There's one scene group that does bring out quality releases <code>-deflate/-inflate</code>.</p>
-<p><strong>Q: Why do I see that many Amazon WEB-DL's repacks/proper lately?</strong></p>
+<p><strong>Q: Why do I see so many repacks/propers of Amazon WEB-DLs lately?</strong></p>
 <p>A: A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
-The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.</p>
+The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated, the episodes will be REPACKED.</p>
 <p><strong>Q: Why did you remove all the scene groups?</strong></p>
-<p>A: I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed a lot of popup scene releases meaning we need to update often.</p>
+<p>A: I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile. I decided not to add the scene groups anymore (and also removing the current ones). Why? Lately I noticed a lot of popup scene releases meaning we need to update often.</p>
 <p>With this it also means all scene and (yet) unknown groups will be getting a score of <code>0</code> and not <code>-50</code>.</p>
 <p>I will still keep a eye on them and add the Low Quality Groups to the <code>-100</code> score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.</p>
 </details>
 <hr />
 <h2 id="propers-and-repacks">Propers and Repacks<a class="headerlink" href="#propers-and-repacks" title="Permanent link">¶</a></h2>
-<p>First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !</p>
+<p>First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release!</p>
 <p><div class="lightgallery"><a data-sub-html="rp-settings-media-management-proper" href="../images/rp-settings-media-management-proper.png"><img alt="rp-settings-media-management-proper" src="../images/rp-settings-media-management-proper.png" /></a></div></p>
-<p>Settings =&gt; <code>Media Management</code>
-Where we going to set it to <code>Do not Prefer</code></p>
-<p>Then we navigate in Sonarr to the Settings =&gt;  <code>Profiles</code></p>
+<p>Go to <code>Settings</code> =&gt; <code>Media Management</code>
+We´re going to set it to <code>Do not Prefer</code>.</p>
+<p>Then we navigate to <code>Settings</code> =&gt; <code>Profiles</code> and click the plus sign.</p>
 <p><div class="lightgallery"><a data-sub-html="rp-settings-profiles" href="../images/rp-settings-profiles.png"><img alt="rp-settings-profiles" src="../images/rp-settings-profiles.png" /></a></div></p>
-<p>Then you will get a popup screen that will look like this:</p>
+<p>You will get a popup screen that will look like this:</p>
 <p><div class="lightgallery"><a data-sub-html="rp-release-profile" href="../images/rp-release-profile.png"><img alt="rp-release-profile" src="../images/rp-release-profile.png" /></a></div></p>
 <ol>
 <li>
@@ -2420,7 +2420,7 @@ Where we going to set it to <code>Do not Prefer</code></p>
 <p><code>Must Not Contain</code> =&gt; add words that the release name <strong>MUST NOT HAVE OR IT WILL BE REJECTED!</strong></p>
 </li>
 <li>
-<p><code>Preferred</code> =&gt; add words you prefer with a certain score what you prefer more or upgrade.</p>
+<p><code>Preferred</code> =&gt; add words you prefer with a certain score. The release will be preferred based on each term's score.</p>
 </li>
 <li>
 <p><code>Include Preferred when Renaming</code> =&gt; When you add <code>{Preferred Words}</code> to your renaming scheme it will add this info.</p>
@@ -2429,18 +2429,18 @@ Where we going to set it to <code>Do not Prefer</code></p>
 <p><code>Indexers</code> =&gt; Specify what indexer the profile applies to.</p>
 </li>
 <li>
-<p><code>Tags</code> =&gt; create a tag so this is only used by shows that you give this tag or else it's global.</p>
+<p><code>Tags</code> =&gt; create a tag so this is only used by shows that you give this tag to or else it's global.</p>
 </li>
 </ol>
 <hr />
 <div class="admonition summary">
 <p class="admonition-title">Summary</p>
-<p>The Number between the <strong>[</strong>brackets<strong>]</strong> in the following release profiles are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.</p>
+<p>The Number between the <strong>[</strong>brackets<strong>]</strong> in the following release profiles are the scores the release name will get during an automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.</p>
 <p>The Number between <strong>(</strong>brackets<strong>)</strong> in the following release profiles are referring to the location where you should add this regex in the release profile corresponding the screenshot above.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>We're going to make use of 4 separate release profiles.</p>
+<p>We're going to make use of four separate release profiles.</p>
 </div>
 <hr />
 <h2 id="release-sources-streaming-service-release-profile">Release Sources (Streaming Service) - Release Profile<a class="headerlink" href="#release-sources-streaming-service-release-profile" title="Permanent link">¶</a></h2>
@@ -2449,9 +2449,9 @@ Where we going to set it to <code>Do not Prefer</code></p>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check mark <code>Include Preferred when Renaming</code> and add <code>{Preferred Words}</code> to your renaming scheme else you could get a download loop issues!!!</p>
+<p>Check mark <code>Include Preferred when Renaming</code> and add <code>{Preferred Words}</code> to your renaming scheme or else you could get download loop issues!!!</p>
 <p>What it does:</p>
-<p>When enabled the block with the <a href="#release-source-streaming-service">Release Source (Streaming Service)</a> in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
+<p>When enabled, the block with the <a href="#release-source-streaming-service">Release Source (Streaming Service)</a> in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
 Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.</p>
 <p>Enabling the include in preferred words for AMZN and adding that to the file name fixes that.</p>
 <p>Example of a naming scheme for series:</p>
@@ -2649,7 +2649,7 @@ It's all really dependent on specific situations for different people</p>
 <h4 id="optional-dislike-retags">Optional - Dislike retags<a class="headerlink" href="#optional-dislike-retags" title="Permanent link">¶</a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
-<p>Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name what could mess up your results or naming.</p>
+<p>Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.</p>
 </details>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\[</span>rartv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>rarbg<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>eztv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>TGx<span class="se">\]</span><span class="o">)</span>/i
@@ -2657,7 +2657,7 @@ It's all really dependent on specific situations for different people</p>
 <h4 id="optional-dislike-obfuscated">Optional - Dislike Obfuscated<a class="headerlink" href="#optional-dislike-obfuscated" title="Permanent link">¶</a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
-<p>Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name what could mess up your results or naming.</p>
+<p>Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.</p>
 </details>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-4P<span class="p">|</span>-4Planet<span class="p">|</span>-AsRequested<span class="p">|</span>-BUYMORE<span class="p">|</span>-Chamele0n<span class="p">|</span>-GEROV<span class="p">|</span>-iNC0GNiTO<span class="p">|</span>-NZBGeek<span class="p">|</span>-Obfuscated<span class="p">|</span>-postbot<span class="p">|</span>-Rakuv<span class="p">|</span>-Scrambled<span class="p">|</span>-WhiteRev<span class="p">|</span>-xpost<span class="p">|</span>-WRTEAM<span class="p">|</span>-CAPTCHA<span class="o">)</span><span class="se">\b</span>/i
@@ -2667,7 +2667,7 @@ It's all really dependent on specific situations for different people</p>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
-<p>Some indexers are known to add extra useless info to the release name what could mess up your results or naming.</p>
+<p>Some indexers are known to add extra useless info to the release name which could mess up your results or naming.</p>
 </details>
 <div class="highlight"><pre><span></span><code>/<span class="se">\s</span>?<span class="se">\b</span>en<span class="se">\b</span>$/i
 </code></pre></div>
@@ -2675,7 +2675,7 @@ It's all really dependent on specific situations for different people</p>
 <h4 id="optional-dislike-release-containing-1-">Optional - Dislike release containing: 1-<a class="headerlink" href="#optional-dislike-release-containing-1-" title="Permanent link">¶</a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
-<p>Some indexers are known to add extra useless info to the release name what could mess up your results or naming.</p>
+<p>Some indexers are known to add extra useless info to the release name which could mess up your results or naming.</p>
 <p>Matches any release that contains '1-' as prefix for Release Groups</p>
 </details>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
@@ -2802,7 +2802,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 4, 2022 20:34:47</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 10:54:52</span>
       
     
   </small>

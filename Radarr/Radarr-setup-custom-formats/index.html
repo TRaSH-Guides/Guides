@@ -2347,33 +2347,32 @@
 
 <h1 id="how-to-setup-custom-formats">How to setup Custom Formats<a class="headerlink" href="#how-to-setup-custom-formats" title="Permanent link">¶</a></h1>
 <p>So what's the best way to setup the Custom Profiles and which one to use with which scores?</p>
-<p>There isn't a best scores setup, being that everyone has its own personal preference what they prefer Audio or Video or perhaps both.</p>
-<p>But being I still get a lot of questions about it I decided to create a Guide for it.</p>
-<p>Here I will try to explain with some personal used examples how to make the most use of Custom Formats. That you can use to get a idea how to setup yours.</p>
+<p>There isn't a best score setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.</p>
+<p>Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.</p>
 <hr />
 <h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">¶</a></h2>
-<p>First the basics where we going to explain where to setup the Custom Formats after you've added them, what we've explained in <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
-And a short description what the settings means.</p>
+<p>Here we're going to explain where to setup the Custom Formats after you've added them, as explained in <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
+You will also see a short description of what each setting means.</p>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
 <details class="check">
 <summary>example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="cf-settings-profiles" href="../images/cf-settings-profiles.png"><img alt="cf-settings-profiles" src="../images/cf-settings-profiles.png" /></a></div></p>
 </details>
-<p>Then select the profile that you use/prefer.</p>
+<p>Select the profile that you use/prefer.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-quality-profiles" href="../images/cf-quality-profiles.png"><img alt="cf-quality-profiles" src="../images/cf-quality-profiles.png" /></a></div></p>
 <div class="admonition info">
-<p class="admonition-title">Radarr Custom Format can be set per profile and isn't global</p>
+<p class="admonition-title">Radarr Custom Formats can be set per profile and isn't global</p>
 </div>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-selected" href="../images/cf-profile-selected.png"><img alt="cf-profile-selected" src="../images/cf-profile-selected.png" /></a></div></p>
 <ol>
 <li>Profile name.</li>
-<li>If you want that Radarr will upgrade till the quality set in (3.).</li>
-<li>Upgrade till the selected Quality.</li>
+<li>Allow upgrades. Radarr will stop upgrading quality once (3) is met.</li>
+<li>Upgrade until the selected quality.</li>
 <li>The <code>Minimum Custom Format Score</code> allowed to download. <a href="#minimum-custom-format-score">More Info</a></li>
-<li>Keep upgrading Custom Format till this score is reached. (setting this to <code>0</code> means no upgrades will happen based on Custom Formats)</li>
-<li>Your preferred language profile for your Releases.</li>
+<li>Keep upgrading Custom Format until this score is reached. (setting this to <code>0</code> means no upgrades will happen based on Custom Formats)</li>
+<li>Your preferred language profile for your releases. (Original is recommended)</li>
 </ol>
-<p>In your chosen profile at the bottom you will see the added Custom Profiles where you can start setting up the scores.</p>
+<p>At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.</p>
 <details class="check">
 <summary>example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="cf-quality-profile-cf" href="../images/cf-quality-profile-cf.png"><img alt="cf-quality-profile-cf" src="../images/cf-quality-profile-cf.png" /></a></div></p>
@@ -2390,7 +2389,7 @@ And a short description what the settings means.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Keep in mind Custom Formats are made to fine tune your Quality Profile</p>
-<p>Generally Quality Trumps All</p>
+<p>Generally, quality trumps all</p>
 </div>
 <h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link">¶</a></h3>
 <details class="summary">
@@ -2414,10 +2413,10 @@ And a short description what the settings means.</p>
 </div>
 </details>
 <p>My suggestion is to create tiers of scores based on what things matter to you.</p>
-<p>Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the <a href="#releases-you-should-avoid">Releases you should avoid</a></p>
+<p>Personally, I would only add the Custom Formats that do what you actually prefer. Especially in the beginning, including the <a href="#releases-you-should-avoid">Releases you should avoid</a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Custom formats are implemented within and have their impact controlled by Quality Profiles.</p>
+<p>Custom formats are controlled by Quality Profiles.</p>
 <ul>
 <li>The Upgrade Until score prevents upgrading once a release with this desired score has been downloaded.</li>
 <li>A score of 0 results in the custom format being informational only.</li>
@@ -2428,11 +2427,11 @@ And a short description what the settings means.</p>
 </div>
 <hr />
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
-<p>Here I will show how to make the most use of Custom Formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.</p>
+<p>Here I will explain how to make the most use of Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.</p>
 <p>All these examples make use of the <a href="/Radarr/Radarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Collection of Custom Formats</a></p>
 <hr />
 <h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link">¶</a></h3>
-<p>In my opinion this is a must for every Quality Profile you use, all these Custom Formats make sure you don't get Low Quality Releases.</p>
+<p>This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.</p>
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -2516,7 +2515,7 @@ And a short description what the settings means.</p>
 <hr />
 <h4 id="prefer-advanced-audio">Prefer Advanced Audio<a class="headerlink" href="#prefer-advanced-audio" title="Permanent link">¶</a></h4>
 <p>Lets say you prefer HD audio (with object metadata)</p>
-<p>In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless</p>
+<p>In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless.</p>
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <table>
@@ -2604,7 +2603,7 @@ And a short description what the settings means.</p>
 <hr />
 <h4 id="prefer-hdr-metadata">Prefer HDR Metadata<a class="headerlink" href="#prefer-hdr-metadata" title="Permanent link">¶</a></h4>
 <p>Lets say you prefer HDR metadata</p>
-<p>Then we would use the following order.</p>
+<p>Then we would use the following order:</p>
 <details class="summary">
 <summary>HDR Metadata - [CLICK TO EXPAND]</summary>
 <table>
@@ -2672,14 +2671,13 @@ And a short description what the settings means.</p>
 <hr />
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>I also suggest to change the Propers and Repacks settings in Radarr !!!</p>
+<p>I also suggest to change the Propers and Repacks settings in Radarr!!!</p>
 <p>Instructions can be found <a href="#proper-and-repacks">HERE</a></p>
 </div>
 <hr />
 <h4 id="prefer-hq-encodes">Prefer HQ Encodes<a class="headerlink" href="#prefer-hq-encodes" title="Permanent link">¶</a></h4>
 <p>If you prefer HQ Encodes (Bluray-720/1080/2160p)</p>
-<p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
-If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+<p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>. If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
 <details class="summary">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
@@ -2860,21 +2858,21 @@ If you think the sizes are to big to your preference then stop reading and see i
 </tbody>
 </table>
 </details>
-<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile being with encodes I prefer higher video quality, If you also want HD audio formats I would suggest to go for the Remuxes.</p>
+<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.</p>
 <p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-encodes" href="../images/cf-profile-encodes.png"><img alt="cf-profile-encodes" src="../images/cf-profile-encodes.png" /></a></div></p>
 <div class="admonition fail">
-<p>Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL</p>
+<p>Make sure you don't check the BR-DISK. The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL</p>
 </div>
 <details class="example">
 <summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Bluray-1080p when available.</li>
-<li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
+<li>The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>100</code> ?</p>
-<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+<p>So why such a ridiculously high <code>Upgrade Until Custom</code> and not a score of <code>100</code>?</p>
+<p>Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.</p>
 </details>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2948,7 +2946,7 @@ If you think the sizes are to big to your preference then stop reading and see i
 <h4 id="remux-1080p">Remux-1080p<a class="headerlink" href="#remux-1080p" title="Permanent link">¶</a></h4>
 <p>If you prefer 1080p Remuxes (Remux-1080p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
-If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
@@ -3216,23 +3214,23 @@ If you think the sizes are to big to your preference then stop reading and see i
 <p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-remux1080" href="../images/cf-profile-remux1080.png"><img alt="cf-profile-remux1080" src="../images/cf-profile-remux1080.png" /></a></div></p>
 <div class="admonition fail">
-<p>Make sure you don't check the BR-DISK, The reason why I didn't select the WEB-DL 720p is because you will find hardly any releases that aren't done as 1080p WEB-DL</p>
+<p>Make sure you don't check the BR-DISK. The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL</p>
 </div>
 <details class="example">
 <summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Remux-1080p when available.</li>
-<li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
+<li>The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?</p>
-<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+<p>So why such a ridiculously high <code>Upgrade Until Custom</code> and not a score of <code>500</code>?</p>
+<p>Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.</p>
 </details>
 <hr />
 <h4 id="remux-2160p">Remux-2160p<a class="headerlink" href="#remux-2160p" title="Permanent link">¶</a></h4>
 <p>If you prefer 2160p Remuxes (Remux-2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
-If you think the sizes are to big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
@@ -3570,11 +3568,11 @@ If you think the sizes are to big to your preference then stop reading and see i
 <summary>The following workflow will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 2160p for the streaming movies you see more often lately.</li>
-<li>It will upgrade till Remux-2160p when available.</li>
-<li>The downloaded media will be upgraded to any of the added Custom Formats till a score of 9999.</li>
+<li>It will upgrade to Remux-2160p when available.</li>
+<li>The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.</li>
 </ul>
-<p>So why such a ridiculous high <code>Upgrade Until Custom</code> and not a score of <code>500</code> ?</p>
-<p>Because I'm to lazy to calculate the maximum for every of my used Quality Profile and I want it to upgrade to the highest as possible anyway.</p>
+<p>So why such a ridiculously high <code>Upgrade Until Custom</code> and not a score of <code>500</code>?</p>
+<p>Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.</p>
 </details>
 <hr />
 <h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link">¶</a></h2>
@@ -3584,11 +3582,11 @@ If you think the sizes are to big to your preference then stop reading and see i
 <p>I also suggest to change the Propers and Repacks settings in Radarr</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a> Custom Format.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-mm-propers-repacks-disable" href="../images/cf-mm-propers-repacks-disable.png"><img alt="cf-mm-propers-repacks-disable" src="../images/cf-mm-propers-repacks-disable.png" /></a></div></p>
-<p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
+<p>This way you make sure the Custom Format preferences will be used instead.</p>
 </details>
 <h3 id="custom-formats-to-avoid-certain-releases">Custom Formats to avoid certain releases<a class="headerlink" href="#custom-formats-to-avoid-certain-releases" title="Permanent link">¶</a></h3>
 <details class="faq">
-<summary>How to use a Custom Formats to avoid certain releases? - [CLICK TO EXPAND]</summary>
+<summary>How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]</summary>
 <p>For Custom Formats you really want to avoid, set it to something really low like <code>-10000</code> and not something like <code>-10</code>.
 Being when you add a Custom Format what you prefer and you set it to something like <code>+10</code> it could happen that for example the <code>BR-DISK</code> will be downloaded (-10)+(+10)=0 and if your <code>Minimum Custom Format Score</code> is set at <code>0</code>.</p>
 </details>
@@ -3600,22 +3598,22 @@ Being when you add a Custom Format what you prefer and you set it to something l
 <h3 id="minimum-custom-format-score">Minimum Custom Format Score<a class="headerlink" href="#minimum-custom-format-score" title="Permanent link">¶</a></h3>
 <details class="info">
 <summary>Minimum Custom Format Score - [CLICK TO EXPAND]</summary>
-<p>Some people suggest not to use minus score for your Custom Formats and set this option to a higher score then 0.</p>
-<p>The reason why I don't prefer/use this is because you could limit your self when some new groups or what ever will be released.</p>
+<p>Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score then 0.</p>
+<p>The reason why I don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.</p>
 <p>Also it makes it much more clear what you prefer and what you want to avoid.</p>
 </details>
 <h3 id="audio-channels">Audio Channels<a class="headerlink" href="#audio-channels" title="Permanent link">¶</a></h3>
 <details class="info">
 <summary>Audio Channels - [CLICK TO EXPAND]</summary>
-<p>Personally I wouldn't add the audio channels Custom Formats being you could limit your self in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.</p>
-<p>Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. and you can better score using the <code>Audio Advanced</code> Custom Formats</p>
+<p>Personally I wouldn't add the audio channels Custom Formats being you could limit yourself in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.</p>
+<p>Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. You can get better scores using the <code>Audio Advanced</code> Custom Formats.</p>
 </details>
 <h3 id="avoid-using-the-x264x265-custom-format">Avoid using the x264/x265 Custom Format<a class="headerlink" href="#avoid-using-the-x264x265-custom-format" title="Permanent link">¶</a></h3>
 <details class="tip">
 <summary>Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]</summary>
-<p>If possible avoid using the x264/x265 Custom Format with a score, it's smarter to use the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> Custom Format.</p>
-<p>Something like 95% of video files are x264 and have much better direct play support. If you have more than a couple users, you will notice much more transcoding.</p>
-<p>Use x265 only for 4k releases and the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> makes sure you still can get the x265 releases.</p>
+<p>Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> Custom Format.</p>
+<p>Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.</p>
+<p>Use x265 only for 4k releases and the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> makes sure you still get the x265 releases.</p>
 </details>
 <h2 id="thanks">Thanks<a class="headerlink" href="#thanks" title="Permanent link">¶</a></h2>
 <p>A big Thanks to <a href="https://github.com/rg9400">rg9400</a> for providing me with info needed to create the Tips section.</p>
@@ -3631,7 +3629,7 @@ Being when you add a Custom Format what you prefer and you set it to something l
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 27, 2022 21:18:12</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 08:52:16</span>
       
     
   </small>

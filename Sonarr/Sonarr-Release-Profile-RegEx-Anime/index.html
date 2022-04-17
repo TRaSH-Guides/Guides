@@ -2402,17 +2402,17 @@
 <h1 id="release-profile-regex-anime">Release Profile RegEx (Anime)<a class="headerlink" href="#release-profile-regex-anime" title="Permanent link">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This Guide is Created and Maintained by <a href="https://github.com/Visorask">Visorask/Visorak</a></p>
-<p>It's recommended to run 2 Sonarr's 1 for Anime and 1 for normal tv shows, or you can make use of tags.</p>
+<p>This guide is created and maintained by <a href="https://github.com/Visorask">Visorask/Visorak</a></p>
+<p>It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of tags.</p>
 <p>Being that release profiles are global without the use of a tag.</p>
 </div>
 <h2 id="dual-audio-regex">Dual-Audio Regex<a class="headerlink" href="#dual-audio-regex" title="Permanent link">¶</a></h2>
-<p>Having tested most of these settings, they work pretty well but Anime is a fickle beast to toy with so be warned.</p>
+<p>Having tested most of these settings, they work pretty well, but Anime is a fickle beast to toy with so be warned.</p>
 <hr />
 <h2 id="anime-delete">Anime Delete<a class="headerlink" href="#anime-delete" title="Permanent link">¶</a></h2>
 <details class="tip">
-<summary>If you have issues with extra files being download like NCED or NCOP</summary>
-<p>If you have issues with sonarr picking up a bunch of:</p>
+<summary>If you have issues with extra files being downloaded like NCED or NCOP</summary>
+<p>If you have issues with Sonarr picking up a bunch of:</p>
 <ul>
 <li>NCED</li>
 <li>NCOP</li>
@@ -2430,9 +2430,9 @@
 
 find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname <span class="s2">&quot;*op[0-9]*&quot;</span> -o -iname <span class="s2">&quot;*nced*&quot;</span> -o -iname <span class="s2">&quot;*ncop*&quot;</span> -o -iname <span class="s2">&quot;*music video*&quot;</span> <span class="se">\)</span> -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
 </code></pre></div>
-<p>This script will be called through a custom connection in sonarr.</p>
+<p>This script will be called through a custom connection in Sonarr.</p>
 <ol>
-<li>Copy the contents of the script into whatever filepath sonarr has access to (<code>/config/app/</code> or <code>/appdata/sonarr/scripts</code>)</li>
+<li>Copy the contents of the script into whatever filepath Sonarr has access to (<code>/config/app/</code> or <code>/appdata/sonarr/scripts</code>)</li>
 <li>Edit the <code>location="/your/download/path/here"</code> and make sure it's in quotes.</li>
 <li>Then save it and chmod +x the script.</li>
 <li>In Sonarr go to <code>Settings</code> =&gt; <code>Connect</code> =&gt; Click on the <code>+</code> Symbol =&gt; and select <code>Custom Script</code></li>
@@ -2447,10 +2447,10 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>There a few settings which make life a lot easier when tracking down and keeping certain information for your Anime and with tweaks to make it work better with <a href="https://github.com/ZeroQI/Hama.bundle" rel="noopener noreferrer" target="_blank">HamaAgent</a> for plex.</p>
+<p>There are a few settings which make life a lot easier when tracking down and keeping certain information for your Anime and with tweaks to make it work better with <a href="https://github.com/ZeroQI/Hama.bundle" rel="noopener noreferrer" target="_blank">HamaAgent</a> for Plex.</p>
 </div>
 <h3 id="suggested-naming-scheme">Suggested naming scheme<a class="headerlink" href="#suggested-naming-scheme" title="Permanent link">¶</a></h3>
-<p>For this I used the <a href="/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format" rel="noopener noreferrer" target="_blank">Sonarr Recommended naming scheme</a> for Sonarr with only a small change for a formatting error to be fixed and the <code>Series Folder Format</code> for easier matching.</p>
+<p>For this I used the <a href="/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format" rel="noopener noreferrer" target="_blank">Sonarr Recommended naming scheme</a> with only a small change for a formatting error to be fixed and the <code>Series Folder Format</code> for easier matching.</p>
 <h4 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link">¶</a></h4>
 <p>Has all necessary information and a little extra if you needed to rebuild.</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
@@ -2525,12 +2525,12 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>multi<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
 <h4 id="dual-audio">Dual-Audio<a class="headerlink" href="#dual-audio" title="Permanent link">¶</a></h4>
-<p>Add this to your Preferred with a score of <strong>[0]</strong>. This is for renames only and why it is at <strong>0</strong>. It is also added in the second profile. This one is to ensure that the preferred words get added.</p>
+<p>Add this to your Preferred with a score of <strong>[0]</strong>. This is for renames only and that's why it is at <strong>0</strong>. It is also added in the second profile. This one is to ensure that the preferred words get added.</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>dual<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
 <h4 id="optional-uncutunrateduncensored">Optional (uncut|unrated|uncensored)<a class="headerlink" href="#optional-uncutunrateduncensored" title="Permanent link">¶</a></h4>
 <p>Add this to your Preferred with a score of <strong>[100]/[-10000]</strong></p>
-<p>If you would like it to be priority then set to <strong>100</strong>. If you do not want uncensored set it to <strong>-10000</strong>. If you don't care either way just leave it out. The reasoning behind only <strong>100</strong> is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And <strong>-10000</strong> to hopefully put it at the bottom of any tier list if you don't want it.</p>
+<p>If you would like it to be priority then set to <strong>100</strong>. If you do not want uncensored set it to <strong>-10000</strong>. If you don't care either way just leave it out. The reasoning behind only <strong>100</strong> is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple releases, but not more. And <strong>-10000</strong> to hopefully put it at the bottom of any tier list if you don't want it.</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>uncut<span class="p">|</span>unrated<span class="p">|</span>uncensored<span class="p">|</span><span class="se">\b</span><span class="o">(</span>AT<span class="o">[</span>-_. <span class="o">]</span>?X<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="admonition note">
@@ -2573,20 +2573,20 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <h4 id="preferred">Preferred<a class="headerlink" href="#preferred" title="Permanent link">¶</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>2 lines in one grouping is just there for readability purposes but achieves the same result and score.</p>
+<p>Two lines in one grouping is just there for readability purposes but achieves the same result and score.</p>
 </div>
 <hr />
 <p>Add this to your Preferred with a score of <strong>[501]</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is set to <strong>501</strong> so that it may jump 1 tier if need be but not more.</p>
+<p>This is set to <strong>501</strong> so that it may jump one tier if need be, but not more.</p>
 </div>
 <div class="highlight"><pre><span></span><code>/dual<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="p">|</span>EN<span class="se">\+</span>JA<span class="p">|</span>JA<span class="se">\+</span>EN/i
 </code></pre></div>
 <hr />
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>These next few are optional but they are here to move releases up over lower tiers of <code>1080/720p</code> or <code>WEB-DL/Blu-Ray</code>. Will add another note like this to end the optional section.</p>
+<p>These next few are optional, but they are here to move releases up over lower tiers of <code>1080/720p</code> or <code>WEB-DL/Blu-Ray</code>. Will add another note like this to end the optional section.</p>
 </div>
 <hr />
 <p>Add this to your Preferred with a score of <strong>[100]</strong></p>
@@ -2823,7 +2823,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 3, 2022 14:36:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 11:53:14</span>
       
     
   </small>

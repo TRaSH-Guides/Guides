@@ -2238,53 +2238,53 @@
 
 
 <h1 id="how-to-sync-2-radarr-or-sonarr-with-each-other">How to Sync 2 Radarr or Sonarr with each other<a class="headerlink" href="#how-to-sync-2-radarr-or-sonarr-with-each-other" title="Permanent link">¶</a></h1>
-<p>In this Guide I will try to explain how you can sync two (or more) Radarr/Sonarr with each other.</p>
-<p>I'm going to show 2 different options how you can setup your sync with 2 Radarr/Sonarr.</p>
+<p>In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.</p>
+<p>I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.</p>
 <ul>
 <li>Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything</li>
 <li>Option 2: This option is best used if you only want to have a subset of your library Movies/TV Shows as 4K/2160p (UHD) as it filters by quality profile</li>
 </ul>
 <div class="admonition error">
-<p>I'm not going to explain how to set up 2 Radarr/Sonarr for your system, being it depends how you have it installed/running.  <a href="https://wiki.servarr.com/radarr/installation#multiple-instances">Radarr Multiple Instance Information</a> and <a href="https://wiki.servarr.com/sonarr/installation#multiple-instances">Sonarr Multiple Instance Information</a></p>
+<p>I'm not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running.  <a href="https://wiki.servarr.com/radarr/installation#multiple-instances">Radarr Multiple Instance Information</a> and <a href="https://wiki.servarr.com/sonarr/installation#multiple-instances">Sonarr Multiple Instance Information</a></p>
 </div>
 <h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">¶</a></h2>
 <p>For this you need to have prepared the following:</p>
 <ul>
-<li>2 Radarr/Sonarr fully setup (Indexers, Custom Formats, Downloaders, etc).</li>
-<li>1 download client (<em>2 if you prefer Usenet and Torrents</em>).</li>
-<li>Your download client has 2 separate categories (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</li>
+<li>Two Radarr/Sonarr instances fully setup (Indexers, Custom Formats, Downloaders, etc).</li>
+<li>One download client (<em>Two if you prefer Usenet and Torrents</em>).</li>
+<li>Your download client has two separate categories (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</li>
 </ul>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" />You can't use the same root (media library) folder for both Radarr's/Sonarr's<img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
-<p>Make sure you use 2 separate root folders in Radarr/Sonarr (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</p>
+<p>Make sure you use two separate root folders in Radarr/Sonarr (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</p>
 </div>
 <hr />
 <h3 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link">¶</a></h3>
 <div class="admonition info">
-<p>In this example I'm going to use 2 Radarr (The basics is the same for Sonarr).</p>
+<p>In this example I'm going to use two Radarr instances (The basics is the same for Sonarr).</p>
 <ul>
 <li><code>Radarr 1</code> = My main 4K/2160p (UHD) Radarr.</li>
-<li><code>Radarr 2</code> = My 1080p Radarr that I've setup for streaming optimized quality profile.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li><code>Radarr 2</code> = My 1080p Radarr that I've setup for a streaming optimized quality profile.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ul>
 <p>This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances</p>
 </div>
 <h4 id="adding-the-radarr-sync-list">Adding the Radarr Sync list<a class="headerlink" href="#adding-the-radarr-sync-list" title="Permanent link">¶</a></h4>
 <p>In <code>Radarr 2</code> go to <code>Settings</code> =&gt; <code>Lists</code></p>
 <p><img alt="Radarr Settings Lists" src="../images/radarr-settings-lists.png" /></p>
-<p>Click on the + to add a lists and select <code>Radarr</code></p>
+<p>Click on the + to add a list and select <code>Radarr</code></p>
 <p><img alt="Radarr add List" src="../images/radarr-add-list.png" /></p>
-<p>Then you get a screen with the following options.</p>
+<p>Then you get a screen with the following options:</p>
 <p><img alt="Radarr Add Lists Options" src="../images/radarr-add-lists-options.png" /></p>
 <ol>
 <li>The name you want to call your Sync list.</li>
 <li>Enable to Enable the list.</li>
 <li>Enable so the movies will be automatically added.</li>
 <li>Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).</li>
-<li>Enable so when added Radarr will perform a search.</li>
-<li>When Radarr shall consider a movie is available.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+<li>Enable so Radarr will perform a search when a movie is added.</li>
+<li>When Radarr shall consider a movie as available.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
 <li>The Quality Profile you want to use on <code>Radarr 2</code>.</li>
-<li>Your Root location for your media library.</li>
+<li>Your root location for your media library.</li>
 <li>The Full URL to <code>Radarr 1</code> (Use local URL if they run on the same system).</li>
 <li>Your API Key of <code>Radarr 1</code>.</li>
 <li>Which Profile of <code>Radarr 1</code> you want to Sync with <code>Radarr 2</code>.</li>
@@ -2292,56 +2292,56 @@
 <li>Save your settings.</li>
 </ol>
 <h4 id="radarr-download-client-setup">Radarr Download client setup<a class="headerlink" href="#radarr-download-client-setup" title="Permanent link">¶</a></h4>
-<p>You don't need a separate download client for your 2 Radarr instances, this all can be done with 1 download client (<em>2 if you prefer Usenet and Torrents</em>).</p>
+<p>You don't need a separate download client for your two Radarr instances, this all can be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><div class="lightgallery"><a data-sub-html="Radarr - Settings Download Clients" href="../images/radarr-settings-download-clients.png"><img alt="Radarr - Settings Download Clients" src="../images/radarr-settings-download-clients.png" /></a></div></p>
 <p>Select your preferred download client.</p>
 <p><div class="lightgallery"><a data-sub-html="Radarr - Settings Download Clients Categories" href="../images/radarr-settings-download-clients-categories.png"><img alt="Radarr - Settings Download Clients Categories" src="../images/radarr-settings-download-clients-categories.png" /></a></div></p>
-<p>Only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Radarr 2</code></p>
+<p>The only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Radarr 2</code></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>This can't and shouldn't be the same category you use for <code>Radarr 1</code> but a separate <code>Category</code>.</p>
 </div>
 <h3 id="how-does-this-radarr-sync-work">How does this Radarr Sync work<a class="headerlink" href="#how-does-this-radarr-sync-work" title="Permanent link">¶</a></h3>
-<p>You now only need to make use of <code>Radarr 1</code> all movies your add to <code>Radarr 1</code> will be synced to <code>Radarr 2</code> at a scheduled time.</p>
+<p>You now only need to make use of <code>Radarr 1</code>. All movies you add to <code>Radarr 1</code> will be synced to <code>Radarr 2</code> at a scheduled time.</p>
 <hr />
 <h3 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link">¶</a></h3>
 <div class="admonition info">
-<p>In this example I'm going to use 2 Sonarr (The basics is the same for Radarr).</p>
+<p>In this example I'm going to use two Sonarr instances (The basics is the same for Radarr).</p>
 <ul>
 <li><code>Sonarr 1</code> = My main 1080p WEB-DL Sonarr.</li>
 <li><code>Sonarr 2</code> = 4K/2160p (UHD) WEB-DL Sonarr.</li>
 </ul>
-<p>This option is best used if you only want to have a few TV shows (or a Movies if you use this option with Radarr) as 4K/2160p (UHD)</p>
+<p>This option is best used if you only want to have a few TV shows (or movies if you use this option with Radarr) as 4K/2160p (UHD)</p>
 </div>
 <h4 id="extra-preparation">Extra preparation<a class="headerlink" href="#extra-preparation" title="Permanent link">¶</a></h4>
 <p>In <code>Sonarr 1</code> go to <code>Settings</code> =&gt; <code>Profiles</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Settings - Profiles" href="../images/sonarr-settings-profiles.png"><img alt="Sonarr - Settings - Profiles" src="../images/sonarr-settings-profiles.png" /></a></div></p>
-<p>And Clone your used profile and rename your profile from <code>Profilename - Copy</code> to <code>Profilename!</code></p>
+<p>Clone your used profile and rename your profile from <code>Profilename - Copy</code> to <code>Profilename!</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Clone Profile" href="../images/sonarr-clone-profile.png"><img alt="Sonarr - Clone Profile" src="../images/sonarr-clone-profile.png" /></a></div></p>
 <h4 id="adding-the-sonarr-sync-list">Adding the Sonarr Sync list<a class="headerlink" href="#adding-the-sonarr-sync-list" title="Permanent link">¶</a></h4>
 <p>In <code>Sonarr 2</code> go to <code>Settings</code> =&gt; <code>Import Lists</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr Settings Import Lists" href="../images/sonarr-settings-import-lists.png"><img alt="Sonarr Settings Import Lists" src="../images/sonarr-settings-import-lists.png" /></a></div></p>
-<p>Click on the + to add a lists and select <code>Sonarr</code></p>
+<p>Click on the + to add a list and select <code>Sonarr</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr add List" href="../images/sonarr-add-list.png"><img alt="Sonarr add List" src="../images/sonarr-add-list.png" /></a></div></p>
-<p>Then you get a screen with the following options.</p>
+<p>Then you get a screen with the following options:</p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr Add Lists Options" href="../images/sonarr-add-lists-options.png"><img alt="Sonarr Add Lists Options" src="../images/sonarr-add-lists-options.png" /></a></div></p>
 <ol>
 <li>The name you want to call your Sync list.</li>
 <li>Enable so the shows will be automatically added.</li>
 <li>Choose your monitoring options.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></li>
-<li>Your Root location for your media library.</li>
+<li>Your root location for your media library.</li>
 <li>The Quality Profile you want to use on <code>Sonarr 2</code>.</li>
 <li>Series Type.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></li>
 <li>If you want to use Season Folders.</li>
 <li>The Full URL to <code>Sonarr 1</code> (Use local URL if they run on the same system).</li>
 <li>Your API Key of <code>Sonarr 1</code>.</li>
-<li>The Cloned Profile of <code>Sonarr 1</code> that we're going to use to Sync with <code>Sonarr 2</code>.</li>
+<li>The Cloned Profile of <code>Sonarr 1</code> that we're going to use to sync with <code>Sonarr 2</code>.</li>
 <li>Test the connection to <code>Sonarr 1</code>.</li>
 <li>Save your settings.</li>
 </ol>
 <h4 id="sonarr-download-client-setup">Sonarr Download client setup<a class="headerlink" href="#sonarr-download-client-setup" title="Permanent link">¶</a></h4>
-<p>You don't need a separate download client for your 2 Radarr instances, this all can be done with 1 download client (2 if you prefer Usenet and Torrents).</p>
+<p>You don't need a separate download client for your two Sonarr/Radarr instances, this can all be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Settings Download Clients" href="../images/sonarr-settings-download-clients.png"><img alt="Sonarr - Settings Download Clients" src="../images/sonarr-settings-download-clients.png" /></a></div></p>
 <p>Select your preferred download client.</p>
@@ -2352,7 +2352,7 @@
 <p>This can't and shouldn't be the same category you use for <code>Sonarr 1</code> but a separate <code>Category</code>.</p>
 </div>
 <h3 id="how-does-this-sonarr-sync-work">How does this Sonarr Sync work<a class="headerlink" href="#how-does-this-sonarr-sync-work" title="Permanent link">¶</a></h3>
-<p>You now only need to make use of <code>Sonarr 1</code>, When you got a TV Shows (or a Movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
+<p>You now only need to make use of <code>Sonarr 1</code>. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
 <hr />
 <hr />
 <div class="admonition help">
@@ -2365,25 +2365,25 @@
 <ol>
 <li id="fn:1">
 <p>If you're interested in the 1080p streaming optimized quality profile you can contact me on <a href="https://trash-guides.info/discord">discord</a></p>
-<p>This is a special quality profile i created for people who are really interested in it</p>
-<p>This release profile is fine tuned when you want to run a 2nd Radarr for 1080p, and want minimum to none transcoding and smaller sizes for the second copy's</p>
+<p>This is a special quality profile I created for people who are really interested in it.</p>
+<p>This release profile is fine tuned for when you want to run a 2nd Radarr for 1080p, and want minimum to none transcoding and smaller sizes for the second copies.</p>
 <p>Why choose this quality profile?</p>
 <ul>
-<li>Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)</li>
+<li>Streaming optimized (optimized for PLEX, emby, Jellyfin, and other streaming platforms)</li>
 <li>Small sizes</li>
 <li>Good quality</li>
-<li>Only AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)</li>
-<li>You want maximum compatibility between all devices and still a HQ releases.</li>
-<li>You run 2 instances of Radarr and want both version or just for the 1080p ones.</li>
-<li>You want to have minimum till none transcoding for low powered devices or remote streaming.</li>
+<li>Only AC3 Audio (downmixed lossless audio track to Dolby Digital 5.1 for optimal compatibility)</li>
+<li>You want maximum compatibility between all devices and still have a HQ release.</li>
+<li>You run two instances of Radarr and want both versions or just for the 1080p ones.</li>
+<li>You want to have minimum to none transcoding for low powered devices or remote streaming.</li>
 </ul>
 <p><a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <ul>
-<li><strong>Announced</strong>: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.</li>
-<li><strong>In Cinemas</strong>: Radarr shall consider movies available as soon as movies they hit cinemas. This option is not recommended.</li>
-<li><strong>Released</strong>: Radarr shall consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.</li>
+<li><strong>Announced</strong>: Radarr will consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.</li>
+<li><strong>In Cinemas</strong>: Radarr will consider movies available as soon as movies hit cinemas. This option is not recommended.</li>
+<li><strong>Released</strong>: Radarr will consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.</li>
 </ul>
 <p><a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
@@ -2415,7 +2415,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 8, 2022 17:19:52</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 10:04:58</span>
       
     
   </small>
