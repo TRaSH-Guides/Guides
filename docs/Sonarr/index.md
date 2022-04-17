@@ -1,6 +1,6 @@
 # Sonarr
 
-Here you will find a collection of Sonarr Guides I made.
+Here you will find a collection of Sonarr guides I made.
 
 ## v3 Sonarr Branch: latest
 

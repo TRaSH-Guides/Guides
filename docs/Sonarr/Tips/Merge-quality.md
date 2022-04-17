@@ -1,10 +1,10 @@
 # How to Merge Quality
 
-The Current logic on how downloads are compared is **Quality Trumps All** :bangbang:
+The current logic on how downloads are compared is **Quality Trumps All** :bangbang:
 
 In some cases it might be preferred to not have Quality Trump All, and let it be handled via Preferred Words / Custom Formats.
 
-To accomplish this you will need to merge the quality's with each other.
+To accomplish this you will need to merge the qualities with each other.
 
 ## Current Logic
 

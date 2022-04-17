@@ -1,13 +1,12 @@
 # Recommended naming scheme
 
-Often on the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" rel="noopener noreferrer"} people ask what's the recommended/best way to
-name your files.  First off it's personal preference, but it's often recommended
-to add non-recoverable info.
+On the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" rel="noopener noreferrer"} ppeople often ask, "What's the recommended/best way to
+name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.
 
 Why?
 
-If, for whatever reason, you ever need to do a re-install or re-import in
-Sonarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
+If, for what ever reason, you ever need to do a re-install or re-import in
+Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
@@ -80,7 +79,7 @@ RESULT:
 
 #### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
 
-This naming scheme is made to be compatible with the New [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
 For Plex:
 
@@ -93,7 +92,7 @@ RESULT:
 `The Series Title! (2010) [imdb-tt1520211]`
 
 !!! note
-    The officially supported format is `{imdb-{ImdbId}}` but plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now, It's actually not needed to add a ID to the folder or filename to use the New Plex TV Series Scanner.
+    The officially supported format is `{imdb-{ImdbId}}` but Plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now, It's actually not needed to add an ID to the folder or filename to use the new Plex TV Series Scanner.
 
 For Jellyfin/Emby:
 
@@ -138,11 +137,11 @@ RESULTS:
 
 ## Original Title vs  Original Filename
 
-Want to keep the original release name that holds like all the info of the file then I suggest to use `{Original Title}` over  `{Original Filename}`
+If you want to keep the original release name that holds all the info of the file then I suggest to use `{Original Title}` over `{Original Filename}`
 
 Why?
 
-The filename can be Obscured where the Release naming isn't especially when you use Usenet.
+The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.
 
 `{Original Title}` => `The.Series.Title.S01E01.Episode.Title.1080p.AMZN.WEB-DL.DDP5.1.H.264-RlsGrp`
 

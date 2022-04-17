@@ -1,13 +1,14 @@
 # Quality Settings (File Size)
 
-I often get the question what's the best Quality Settings to use,
-Well it's actually personal preference so I will show you a recommended Quality Settings.
+I often get the question "What's the best quality settings to use?"
+Well, it's actually personal preference so I will show you my recommendations.
+
 But before you continue to read, as with all my guides:
 
 !!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
-This Quality Settings has been created and tested with info I got from others, and release comparisons from different sources.
+These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.
 
 ??? question "FAQ - [CLICK TO EXPAND]"
 
@@ -17,20 +18,20 @@ This Quality Settings has been created and tested with info I got from others, a
 
     A: With the big screens these days anything lower doesn't look watchable
 
-    **Q: Why do you have some sized set to max?**
+    **Q: Why do you have some sizes set to max?**
 
     A: You probably didn't read the bold text above
 
-    **Q: When I set Bluray to MAX size I get often ISO's/ Bluray folder structure.**
+    **Q: When I set Bluray to MAX size I often get ISO's/ Bluray folder structure.**
 
-    A: You probable have configured your Quality Profiles wrong and enabled BR-DISK and didn't add the recommended Custom Profile to help Radarr to block/ignore it. [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
+    A: You probably have configured your Quality Profiles wrong and enabled BR-DISK and didn't add the recommended Custom Profile to help Radarr to block/ignore it. [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
 
     **Q: Some movies won't be grabbed because of these settings.**
 
-    A: If you notice that some movies won't be grabbed because of these size settings you can provide me a proof with a screenshot and the error it shows you when you do a interactive search (non redacted except the indexer/tracker if you want to).
+    A: If you notice that some movies won't be grabbed because of these size settings, you can provide me proof with a screenshot and the error it shows you when you do an interactive search (non redacted except the indexer/tracker if you want to).
 
-    - I will only accept changes that are International releases no multi, or dubbed language releases.
-    - I won't accept mislabeled source releases like from MeGusta, etc (they should learn to name their stuff decent first).
+    - I will only accept changes that are international releases. No multi, or dubbed language releases.
+    - I won't accept mislabeled source releases like from MeGusta etc. (They should learn to name their stuff properly first)
     - I won't accept changes for micro sized releases.
     - Documentaries and cartoons are often much smaller so I probably won't edit those either.
 
@@ -56,7 +57,7 @@ This Quality Settings has been created and tested with info I got from others, a
 | Remux-2160p  | 221.5   | 400     |
 
 !!! note
-    The reason why you don't see the preferred score in the Table is because we want max quality anyway so as high as possible.
+    The reason why you don't see the `Preferred` score in the table above is because we want max quality anyway. So set it as high as possible.
 
     The highest preferred quality you can manually enter is 1 less than the Maximum quality. If you use the slider, the preferred quality can be up to 5 lesser than the Maximum quality.
 

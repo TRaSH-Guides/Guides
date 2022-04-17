@@ -11,21 +11,21 @@ Here I will try to explain how you can import Custom Formats for Radarr v3.
 
 ## How to Copy/Paste the JSON from the site
 
-In this example i will use the [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format the one most people don't want to download anyway and if you do then you probably don't use Radarr or Plex being both don't support it.
+In this example I will use the [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} Custom Format, the one most people don't want to download anyway. And if you do, then you probably don't use Radarr or Plex, being both don't support it.
 
-Visit the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and from the Table select [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"}
+Visit the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} and select [BR-DISK](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="_blank" rel="noopener noreferrer"} from the table.
 
 ??? success "example - [CLICK TO EXPAND]"
 
     ![cf-table-select-brdisk](images/cf-table-select-brdisk.png)
 
-After you selected it you expand the JSON
+Expand the JSON for BR-DISK
 
 ??? success "example - [CLICK TO EXPAND]"
 
     ![cf-json-expand](images/cf-json-expand.png)
 
-Then you select the Copy/Paste icon on the top far right
+Then click the copy icon in the top right corner
 
 ??? success "example - [CLICK TO EXPAND]"
 
@@ -45,9 +45,7 @@ Followed by the `Import` in the lower left.
 
 ![cf-import](images/cf-import.png)
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` what you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
-
-What you see in the red box is a example txt that you don't and can't remove!
+Paste the `JSON` in the empty `Custom Format JSON` box (1) that you got from the [Custom Format Collection](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} followed by the `Import` button (2).
 
 ![cf-import-cf](images/cf-import-cf.png)
 
@@ -62,10 +60,10 @@ all you need to do now is click on the `Save` button and you're done.
 
 !!! tip
 
-    Now Start adding other Custom Formats wisely, **Don't add all the available Custom Formats !!!**
+    Start adding more Custom Formats wisely, **Don't add all the available Custom Formats!!!**
 
-    Personally I would only add the Custom Formats that do what you actually prefer especially in the beginning, including the [Releases you should avoid](/Radarr/Radarr-setup-custom-formats/#releases-you-should-avoid)
+    Personally, I would only add the Custom Formats that do what you actually prefer, especially in the beginning, including the [Releases you should avoid](/Radarr/Radarr-setup-custom-formats/#releases-you-should-avoid)
 
-Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will try to explain how to make the most use of custom formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
+Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.
 
 --8<-- "includes/support.md"

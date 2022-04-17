@@ -1,23 +1,23 @@
 # Release Profile RegEx (Anime)
 
 !!! note
-    This Guide is Created and Maintained by [Visorask/Visorak](https://github.com/Visorask)
+    This guide is created and maintained by [Visorask/Visorak](https://github.com/Visorask)
 
-    It's recommended to run 2 Sonarr's 1 for Anime and 1 for normal tv shows, or you can make use of tags.
+    It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of tags.
 
     Being that release profiles are global without the use of a tag.
 
 ## Dual-Audio Regex
 
-Having tested most of these settings, they work pretty well but Anime is a fickle beast to toy with so be warned.
+Having tested most of these settings, they work pretty well, but Anime is a fickle beast to toy with so be warned.
 
 ---
 
 ## Anime Delete
 
-??? tip "If you have issues with extra files being download like NCED or NCOP"
+??? tip "If you have issues with extra files being downloaded like NCED or NCOP"
 
-    If you have issues with sonarr picking up a bunch of:
+    If you have issues with Sonarr picking up a bunch of:
 
     - NCED
     - NCOP
@@ -38,9 +38,9 @@ Having tested most of these settings, they work pretty well but Anime is a fickl
     find $location -type f \( -iname "*op[0-9]*" -o -iname "*nced*" -o -iname "*ncop*" -o -iname "*music video*" \) -exec rm -rf {} \;
     ```
 
-    This script will be called through a custom connection in sonarr.
+    This script will be called through a custom connection in Sonarr.
 
-    1. Copy the contents of the script into whatever filepath sonarr has access to (`/config/app/` or `/appdata/sonarr/scripts`)
+    1. Copy the contents of the script into whatever filepath Sonarr has access to (`/config/app/` or `/appdata/sonarr/scripts`)
     1. Edit the `location="/your/download/path/here"` and make sure it's in quotes.
     1. Then save it and chmod +x the script.
     1. In Sonarr go to `Settings` => `Connect` => Click on the `+` Symbol => and select `Custom Script`
@@ -58,11 +58,11 @@ Having tested most of these settings, they work pretty well but Anime is a fickl
 
 !!! note
 
-    There a few settings which make life a lot easier when tracking down and keeping certain information for your Anime and with tweaks to make it work better with [HamaAgent](https://github.com/ZeroQI/Hama.bundle){:target="_blank" rel="noopener noreferrer"} for plex.
+    There are a few settings which make life a lot easier when tracking down and keeping certain information for your Anime and with tweaks to make it work better with [HamaAgent](https://github.com/ZeroQI/Hama.bundle){:target="_blank" rel="noopener noreferrer"} for Plex.
 
 ### Suggested naming scheme
 
-For this I used the [Sonarr Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} for Sonarr with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
+For this I used the [Sonarr Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
 
 #### Anime Episode Format
 
@@ -173,7 +173,7 @@ Add this to your Preferred with a score of **[500]**
 
 #### Dual-Audio
 
-Add this to your Preferred with a score of **[0]**. This is for renames only and why it is at **0**. It is also added in the second profile. This one is to ensure that the preferred words get added.
+Add this to your Preferred with a score of **[0]**. This is for renames only and that's why it is at **0**. It is also added in the second profile. This one is to ensure that the preferred words get added.
 
 ```bash
 /(dual[ ._-]?audio)/i
@@ -183,7 +183,7 @@ Add this to your Preferred with a score of **[0]**. This is for renames only and
 
 Add this to your Preferred with a score of **[100]/[-10000]**
 
-If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple release but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
+If you would like it to be priority then set to **100**. If you do not want uncensored set it to **-10000**. If you don't care either way just leave it out. The reasoning behind only **100** is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple releases, but not more. And **-10000** to hopefully put it at the bottom of any tier list if you don't want it.
 
 ```bash
 /(uncut|unrated|uncensored|\b(AT[-_. ]?X)\b)/i
@@ -235,14 +235,14 @@ The reason most of these are added is due to their shitty quality or just in gen
 
 !!! note
 
-    2 lines in one grouping is just there for readability purposes but achieves the same result and score.
+    Two lines in one grouping is just there for readability purposes but achieves the same result and score.
 
 ---
 
 Add this to your Preferred with a score of **[501]**
 
 !!! note
-    This is set to **501** so that it may jump 1 tier if need be but not more.
+    This is set to **501** so that it may jump one tier if need be, but not more.
 
 ```bash
 /dual[ ._-]?audio|EN\+JA|JA\+EN/i
@@ -251,7 +251,7 @@ Add this to your Preferred with a score of **[501]**
 ---
 
 !!! important
-    These next few are optional but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
+    These next few are optional, but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
 
 ---
 

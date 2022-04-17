@@ -3,7 +3,7 @@
 Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.
 
-The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases, (Scene releases are still being downloaded but upgraded).
+The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases. (Scene releases are still being downloaded, but replaced once an upgrade is found.)
 
 !!! error ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
@@ -14,26 +14,27 @@ The Release profile that we're going to use for this example is mainly to prefer
 
     **Q: Why do you only have a release profile for WEB-DL?**
 
-    A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between Quality and Size and you often don't see big difference anyway for TV shows. (Except for shows like GOT, Vikings, etc)
+    A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)
 
-    **Q: Why do you prefer P2P groups over scene releases?**
+    **Q: Why do you prefer P2P groups over scene groups?**
 
-    A: Scene release always release in a rush to bring it out as fast as possible.
+    A: Scene groups always release in a rush to bring it out as fast as possible.
 
-    So I noticed  often that I got Repacks/Proper releases from them or from different groups and quality.
+    So I noticed often that I got Repacks/Proper releases from them or from different groups and quality.
     P2P releases are a bit smarter and work sort of together by not doing the same release.
-    Also I noticed that with some Scene releases the 5.1 audio was stripped out or converted to AAC audio.
-    And in my opinion the P2P are of better quality.
+    Also, I noticed that with some scene releases the 5.1 audio was stripped out or converted to AAC audio.
+
+    In my opinion the P2P releases are of better quality.
     There's one scene group that does bring out quality releases `-deflate/-inflate`.
 
-    **Q: Why do I see that many Amazon WEB-DL's repacks/proper lately?**
+    **Q: Why do I see so many repacks/propers of Amazon WEB-DLs lately?**
 
     A: A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially.
-    The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated the episodes will be REPACKED.
+    The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated, the episodes will be REPACKED.
 
     **Q: Why did you remove all the scene groups?**
 
-    A: I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile, I decided not to add the scene groups anymore (and also removing the current ones). Why ? Lately I noticed a lot of popup scene releases meaning we need to update often.
+    A: I decided to redo the Release Profile to make it easier for me and the end user to update/manage the Release Profile. I decided not to add the scene groups anymore (and also removing the current ones). Why? Lately I noticed a lot of popup scene releases meaning we need to update often.
 
     With this it also means all scene and (yet) unknown groups will be getting a score of `0` and not `-50`.
 
@@ -43,18 +44,18 @@ The Release profile that we're going to use for this example is mainly to prefer
 
 ## Propers and Repacks
 
-First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release !
+First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release!
 
 ![!rp-settings-media-management-proper](images/rp-settings-media-management-proper.png)
 
-Settings => `Media Management`
-Where we going to set it to `Do not Prefer`
+Go to `Settings` => `Media Management`
+We´re going to set it to `Do not Prefer`.
 
-Then we navigate in Sonarr to the Settings =>  `Profiles`
+Then we navigate to `Settings` => `Profiles` and click the plus sign.
 
 ![!rp-settings-profiles](images/rp-settings-profiles.png)
 
-Then you will get a popup screen that will look like this:
+You will get a popup screen that will look like this:
 
 ![!rp-release-profile](images/rp-release-profile.png)
 
@@ -62,24 +63,24 @@ Then you will get a popup screen that will look like this:
 
 1. `Must Not Contain` => add words that the release name **MUST NOT HAVE OR IT WILL BE REJECTED!**
 
-1. `Preferred` => add words you prefer with a certain score what you prefer more or upgrade.
+1. `Preferred` => add words you prefer with a certain score. The release will be preferred based on each term's score.
 
 1. `Include Preferred when Renaming` => When you add `{Preferred Words}` to your renaming scheme it will add this info.
 
 1. `Indexers` => Specify what indexer the profile applies to.
 
-1. `Tags` => create a tag so this is only used by shows that you give this tag or else it's global.
+1. `Tags` => create a tag so this is only used by shows that you give this tag to or else it's global.
 
 ------
 
 !!! summary
 
-    The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during a automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
+    The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during an automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
     The Number between **(**brackets**)** in the following release profiles are referring to the location where you should add this regex in the release profile corresponding the screenshot above.
 
 !!! important
-    We're going to make use of 4 separate release profiles.
+    We're going to make use of four separate release profiles.
 
 ------
 
@@ -91,11 +92,11 @@ Then you will get a popup screen that will look like this:
 
 !!! note
 
-    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme else you could get a download loop issues!!!
+    Check mark `Include Preferred when Renaming` and add `{Preferred Words}` to your renaming scheme or else you could get download loop issues!!!
 
     What it does:
 
-    When enabled the block with the [Release Source (Streaming Service)](#release-source-streaming-service) in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
+    When enabled, the block with the [Release Source (Streaming Service)](#release-source-streaming-service) in it are then added to the file name which fixes any loops due to Sonarr seeing a new NF rip when an AMZN rip is found.
     Probably doesn’t happen if cutoff is met, but for anything that is unmet or any forced searches it results in a loop because NF is not in Sonarr’s copy so it upgrades, and loops.
 
     Enabling the include in preferred words for AMZN and adding that to the file name fixes that.
@@ -373,7 +374,7 @@ Add this to your `Preferred (3)` with a score of [100]
 #### Optional - Dislike retags
 
 ??? question "Explanation - [CLICK TO EXPAND]"
-    Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name what could mess up your results or naming.
+    Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-25]
 
@@ -384,7 +385,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 #### Optional - Dislike Obfuscated
 
 ??? question "Explanation - [CLICK TO EXPAND]"
-    Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name what could mess up your results or naming.
+    Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-25]
 
@@ -399,7 +400,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 Add this to your `Preferred (3)` with a score of [-25]
 
 ??? question "Explanation - [CLICK TO EXPAND]"
-    Some indexers are known to add extra useless info to the release name what could mess up your results or naming.
+    Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
 ```bash
 /\s?\ben\b$/i
@@ -410,7 +411,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 #### Optional - Dislike release containing: 1-
 
 ??? question "Explanation - [CLICK TO EXPAND]"
-    Some indexers are known to add extra useless info to the release name what could mess up your results or naming.
+    Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
     Matches any release that contains '1-' as prefix for Release Groups
 

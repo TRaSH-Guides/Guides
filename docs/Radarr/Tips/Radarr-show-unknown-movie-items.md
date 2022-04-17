@@ -1,8 +1,8 @@
 # Show Unknown Movie Items
 
-You downloaded a movie and it doesn't show up in your Activity in Radarr ?
+You downloaded a movie and it doesn't show up in your Activity in Radarr?
 
-By enabling the following option it will Show items without a movie in the queue. This could include removed movies or anything else in Radarr's category.
+By enabling the following option it will show items without a matched movie in the queue. This could include removed movies or anything else in Radarr's category.
 
 Go to your Activity
 

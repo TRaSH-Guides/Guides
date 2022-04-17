@@ -9,14 +9,14 @@
 
 *TRaSH Guides, Guides that aren't trash.*
 
-Here you will find Guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
+Here you will find guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
 
 ## How this all started
 
 When I started using Sonarr/Radarr, I noticed that it didn't grab the releases that I actually wanted, as I'm a bit picky about which releases and what quality I prefer.
-So I decided to fine tune it to try to get the releases & quality I preferred. On Discord, I also noticed that others run in to the same issue so I explained them how I managed to get it solved. Being that I had to explain it often, I decided to write it down and make it public so I could easily link it to someone when  they needed it.
+So I decided to fine tune it to try to get the releases & quality I preferred. On Discord, I also noticed that others run in to the same issue so I explained them how I managed to get it solved. Being that I had to explain it often, I decided to write it down and make it public so I could easily link it to someone when they needed it.
 After a while I also decided to create guides for frequently asked questions, and started to collect all kind of information gathered from various sources.
-The guides I make I try to make them as easy as possible for everyone to understand, in my opinion pictures explain often more then just some text.
+I try to make my guides as easy as possible for everyone to understand, in my opinion pictures explain often more than just some text.
 
 ------
 
@@ -24,14 +24,14 @@ The guides I make I try to make them as easy as possible for everyone to underst
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-If you have questions, suggestions, requests or want to contribute, Click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open a issue on GitHub.
+If you have questions, suggestions, requests or want to contribute, click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
 Feel free to create a PR if you want to.
 
 ------
 
 ### DISCLAIMER
 
-The information I use for the guides is information I have gathered from different sources like their support forum, Reddit or Discord, provided by user input or from the development team itself.
+The information I use for the guides is information I have gathered from different sources like support forums, Reddit or Discord, provided by user input or from the development teams.
 I have tested most things myself and I have tried to see if I could tune them a bit more to my needs and sometimes even for others.
 
 You use everything here at your own risk. I won't be responsible if something happens to your setup or collection!

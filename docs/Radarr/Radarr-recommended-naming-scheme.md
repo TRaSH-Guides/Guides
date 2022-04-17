@@ -1,13 +1,12 @@
 # Recommended naming scheme
 
-Often on the [Radarr Discord](https://discord.gg/u3x3Kp8){:target="_blank" rel="noopener noreferrer"} people ask what's the recommended/best way to
-name your files.  First off it's personal preference, but it's often recommended
-to add non-recoverable info.
+On the [Radarr Discord](https://discord.gg/u3x3Kp8){:target="_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
+name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.
 
 Why?
 
 If, for what ever reason, you ever need to do a re-install or re-import in
-Radarr or Plex/Emby/JellyFin it's nice to have all that info in the filename so
+Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
@@ -16,7 +15,7 @@ The Tokens not available in the release won't be used/shown.
 
 ## Standard Movie Format
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now support IMDB and TMDB IDs in file names, if you don't need it or want it just remove `[imdb-{ImdbId}]`
+This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDB and TMDB IDs in filenames, if you don't need it or want it just remove `[imdb-{ImdbId}]`
 
 !!! caution "Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types."
 
@@ -45,11 +44,11 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
 ## Original Title vs  Original Filename
 
-Want to keep the original release name that holds like all the info of the file then I suggest to use `{Original Title}` over  `{Original Filename}`
+If you want to keep the original release name that holds all the info of the file then I suggest to use `{Original Title}` over `{Original Filename}`
 
 Why?
 
-The filename can be Obscured where the Release naming isn't especially when you use Usenet.
+The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.
 
 `{Original Title}` => `The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-GROUP`
 
@@ -61,7 +60,7 @@ The filename can be Obscured where the Release naming isn't especially when you 
 
 !!! danger ""
 
-    ** Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID !!!**
+    ** Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!**
 
     If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade.
 
@@ -82,11 +81,11 @@ RESULT:
 !!! note
     Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but it helps for movies that have the same release name and year.
 
-    **Radarr does supports iMDb ID and TMDb ID in the folder name.**
+    **Radarr supports IMDb ID and TMDb ID in the folder name.**
 
-    !!! quote "Quote From a developer"
+    !!! quote "Quote from a developer"
 
-        TMDb is usually better as it guarantees a match, imdb only gets matched if the TMDb entry has the correct imdb Id association. We don't actually talk to imdb
+        TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb
 
 ------
 
