@@ -1,18 +1,18 @@
 # Collection of Custom Formats
 
-Here I will try to collect a collection of the most needed and commonly used Custom Formats.
-These have been collected from either discussions on discord or that I created with help from others.
+Here I will try to list a collection of the most needed and commonly used Custom Formats.
+These have been collected from either discussions on Discord or that I created with help from others.
 Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
 
 With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
 
-After requesting at Team Radarr we now have the options to import/export the Custom Formats in a JSON format that we can use here what makes it easier to share the different kind of Custom Formats.
+After requesting it at Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This makes it easier to share the Custom Formats.
 
 I also made 3 guides related to this one.
 
 - [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing the Custom Formats.
-- [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"} Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. That you can use to get a idea how to setup yours.
+- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
+- [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
 !!! tip
 
@@ -22,7 +22,7 @@ I also made 3 guides related to this one.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Formats preferences will be used and not ignored.
+    This way you make sure the Custom Format preferences will be used instead.
 
 --8<-- "includes/support.md"
 
@@ -716,7 +716,7 @@ I also made 3 guides related to this one.
 
 ??? faq "Criterion Collection - [CLICK TO EXPAND]"
 
-    The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados.Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
+    The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados. Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -820,7 +820,7 @@ I also made 3 guides related to this one.
     !!! note
 
         Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance till I come up for another way to solve this,
+        This is a cosmetic annoyance until I come up with another way to solve this,
         being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
         Several reasons why this is happening:
 
@@ -841,7 +841,7 @@ I also made 3 guides related to this one.
 
 ??? faq "EVO (no WEBDL) - [CLICK TO EXPAND]"
 
-    This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
+    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
 
     You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
@@ -861,7 +861,7 @@ I also made 3 guides related to this one.
 
 ??? faq "LQ - [CLICK TO EXPAND]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality.
+    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
 
     !!! note
 
@@ -873,7 +873,7 @@ I also made 3 guides related to this one.
         - BLOCK4 = Low-quality and/or dishonest release groups.
         - BLOCK5 = Banned Release Groups.
         - BLOCK6 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-        - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying !!!
+        - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying!!!
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -930,12 +930,12 @@ I also made 3 guides related to this one.
 
 ??? faq "No-RlsGroup - [CLICK TO EXPAND]"
 
-    Some indexers strip out the release group what could result in LQ groups getting a higher score.
+    Some indexers strip out the release group which could result in LQ groups getting a higher score.
     For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
 
     !!! warning
 
-        If you don't use a decent filenames like not adding release groups don't add this Custom Format, except if you want to upgrade them.
+        If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -968,7 +968,7 @@ I also made 3 guides related to this one.
 <sub>Dolby Vision = DoVi = DV</sub>
 
 ??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
-    This is a special Custom Format that Block WEBDL **with** Dolby Vision but **without** HDR10 fallback.
+    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
     This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
 
@@ -1008,7 +1008,7 @@ I also made 3 guides related to this one.
 
     x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
-    If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p
+    If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

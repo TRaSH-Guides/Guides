@@ -1,6 +1,6 @@
 # How to rename your folders
 
-If you want to rename your current folders names for example to your new naming scheme or for any other reason. You can do this with this little magic trick.
+If you want to rename your current folder names (for example to your new naming scheme), you can do that with this little magic trick.
 
 ![!radarr-wrong-folder-name](images/radarr-wrong-folder-name.png)
 
@@ -16,18 +16,18 @@ After activating it you select the movie(s) from where you want to have the fold
 
 ![!radarr-movie-editor-select](images/radarr-movie-editor-select.png)
 
-1. If you want all your movie folders renamed to your folder naming scheme you set earlier [HERE](/Radarr/Radarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}.
+1. If you want all your movie folders renamed to your new folder naming scheme you set earlier [HERE](/Radarr/Radarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}.
 1. Select the movie(s) from where you want to have the folder(s) to be renamed.
 1. Choose the same `Root Folder`
 
-A new popup will be shown
+A new popup will be shown:
 
 ![!radarr-movie-editor-move-files-yes](images/radarr-movie-editor-move-files-yes.png)
 
 Select `Yes, Move the files`
 
 !!! warning
-    If you got a larger library, remote storage, cloud storage or your path structure isn't well planned that doesn't support instant moves then this process could take a while, make sure you don't interrupt this process if it does stop before completing, it could results in quite the mess.
+    If you have a large library, remote storage, cloud storage, or your path structure isn't well planned or doesn't support instant moves, then this process could take a while. Make sure you don't interrupt this process. If it stops before it's complete, it could result in quite the mess.
 
 Then Magic
 

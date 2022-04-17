@@ -30,14 +30,14 @@ Click on `Enabled`
 
     !!! info
 
-        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refer to the Bazarr Docker container, not the Docker host.**
+        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Sonarr instance. Default is 8989.
 1. Sonarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /sonarr).
 
     !!! info
 
-        **If you don't use a reverse proxy or don't know what it is leave this empty !!!**
+        **If you don't use a reverse proxy or don't know what it is leave this empty!!!**
 
 1. Enter your Sonarr API key here.
 1. Enable this if your Sonarr instance is exposed through SSL.
@@ -52,19 +52,19 @@ Click on `Enabled`
 
 ![!Sonarr - Options](images/qs-sonarr-options.png)
 
-1. Select the minimum score (in percentage) required for a subtitles file to be downloaded.
+1. Select the minimum score (in percentage) required for a subtitle file to be downloaded.
 
     !!! info
 
         **Are your subs often out of sync or just bad? Raise the score!**
 
-1. Episodes from series with those tags (case sensitive) in Sonarr will be excluded from automatic download of Subtitles. In Sonarr you add a custom tag to a show, in this case the shows with these tags will be ignored by Bazarr.
+1. Episodes from series with those tags (case sensitive) in Sonarr will be excluded from automatic downloading of subtitles. In Sonarr you add a custom tag to a show, in this case the shows with these tags will be ignored by Bazarr.
 
-1. Episodes from series with these types in Sonarr will be excluded from automatic download of Subtitles.
+1. Episodes from series with these types in Sonarr will be excluded from automatic downloading of subtitles.
 
     Options: `Standard`, `Anime`, `Daily`
 
-1. Automatic download of Subtitles will only happen for monitored shows/episodes in Sonarr.
+1. Automatic downloading of subtitles will only happen for monitored shows/episodes in Sonarr.
 
 ### Path Mappings
 
@@ -72,11 +72,11 @@ Click on `Enabled`
 
     You should only use this section if Sonarr and Bazarr use a different path to access the same files.
 
-    (for example if you run Sonarr on a different device then Bazarr or have a Synology and mix packages with Docker.)
+    (for example if you run Sonarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
 
 ![!Sonarr Path Mappings](images/qs-sonarr-path-mappings-add.png)
 
-Click on `Add` and you will get a extra option
+Click on `Add` and you will get an extra option
 
 ![!Sonarr Path Mappings](images/qs-sonarr-path-mappings.png)
 
@@ -85,9 +85,9 @@ Click on `Add` and you will get a extra option
 
 !!! attention
 
-    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT !!!**
+    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
-    **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET A ERROR.**
+    **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.**
 
 ![!Sonarr Path Mappings Mapped](images/qs-sonarr-path-mappings-mapped.png)
 
@@ -97,7 +97,7 @@ Click on `Add` and you will get a extra option
 
     Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
 
-!!! danger "Don't forget to Save your settings !!!"
+!!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
 
@@ -118,17 +118,18 @@ Click on `Enabled`
 ![!Radarr](images/qs-radarr.png)
 
 1. Enable Radarr.
-1. Enter the hostname or the IP address of the computer running your Sonarr instance.
+1. Enter the hostname or the IP address of the computer running your Radarr instance.
 
     !!! info
 
-        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refer to the Bazarr Docker container, not the Docker host.**
+        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Radarr instance. Default is 7878.
 1. Radarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /radarr).
+
     !!! info
 
-        **If you don't use a reverse proxy or don't know what it is leave this empty !!!**
+        **If you don't use a reverse proxy or don't know what it is leave this empty!!!**
 
 1. Enter your Radarr API key here.
 1. Enable this if your Radarr instance is exposed through SSL.
@@ -143,15 +144,15 @@ Click on `Enabled`
 
 ![!Radarr - Options](images/qs-radarr-options.png)
 
-1. Select the minimum score (in percentage) required for a subtitles file to be downloaded.
+1. Select the minimum score (in percentage) required for a subtitle file to be downloaded.
 
     !!! info
 
         **Are your subs often out of sync or just bad? Raise the score!**
 
-1. Movies with those tags (case sensitive) in Radarr will be excluded from automatic download of Subtitles, In Radarr you add a custom tag to a movie.
+1. Movies with those tags (case sensitive) in Radarr will be excluded from automatic downloading of subtitles. In Radarr you add a custom tag to a movie.
 
-1. Automatic download of Subtitles will only happen for monitored movies in Radarr.
+1. Automatic downloading of subtitles will only happen for monitored movies in Radarr.
 
 ### Path Mappings (Radarr)
 
@@ -159,11 +160,11 @@ Click on `Enabled`
 
     You should only use this section if Radarr and Bazarr use a different path to access the same files.
 
-    (for example if you run Radarr on a different device then Bazarr or have a Synology and mix packages with Docker.)
+    (for example if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
 
 ![!Radarr Path Mappings](images/qs-radarr-path-mappings-add.png)
 
-Click on `Add` and you will get a extra option
+Click on `Add` and you will get an extra option
 
 ![!Radarr Path Mappings](images/qs-radarr-path-mappings.png)
 
@@ -172,9 +173,9 @@ Click on `Add` and you will get a extra option
 
 !!! attention
 
-    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT !!!**
+    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
-    **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET A ERROR.**
+    **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.**
 
 ![!Path Mappings Radarr Mapped](images/qs-radarr-path-mappings-mapped.png)
 
@@ -184,7 +185,7 @@ Click on `Add` and you will get a extra option
 
     Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
 
-!!! danger "Don't forget to Save your settings !!!"
+!!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
 
@@ -226,7 +227,7 @@ Select `Add New Profile`
     - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="_blank" rel="noopener noreferrer"}
     - HI => Hearing Impaired
     - Exclude Audio => Exclude if matching audio
-1. Optional select the cutoff where you want that Bazarr stops downloading other languages.
+1. Optional select the cutoff where you want Bazarr to stop downloading other languages.
 1. Save your settings.
 
 ??? info "Cutoff"
@@ -241,7 +242,7 @@ Select `Add New Profile`
 
 ![!Default Settings](images/qs-default-settings.png)
 
-Automatic applied `Languages Profiles` to Series and Movies added to Bazarr **after** enabling this option.
+Automatically applied `Languages Profiles` to Series and Movies added to Bazarr **after** enabling this option.
 
 !!! danger "Don't forget to Save your settings !!!"
 
@@ -251,7 +252,7 @@ Automatic applied `Languages Profiles` to Series and Movies added to Bazarr **af
 
 ## Providers
 
-Here we're going to select which Subtitle Providers you want to use.
+Here we're going to select which subtitle providers you want to use.
 
 `Settings` => `Providers`
 
@@ -260,14 +261,14 @@ Here we're going to select which Subtitle Providers you want to use.
 ![!Providers](images/qs-providers.png)
 
 1. Click on the Plus sign box.
-1. Select the subtitles providers you would like to enable. it is best to select multiple providers and create/use a account with them especially when you got a lot of wanted subtitles. Some subtitle providers requires a extra paid Anti-Captcha Service.
+1. Select the subtitle providers you would like to enable. It is best to select multiple providers and create/use an account with them especially when you got a lot of wanted subtitles. Some subtitle providers requires an extra paid Anti-Captcha Service.
 1. Your enabled providers.
 
 !!! tip
 
     If possible don't forget to support them for their free service
 
-!!! danger "Don't forget to Save your settings !!!"
+!!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
 
@@ -300,13 +301,13 @@ Here you can select which Anti-Captcha provider you want to use.
 
 !!! tip
 
-    We Recommend the following provider => <https://anti-captcha.com/>
+    We recommend the following provider => <https://anti-captcha.com/>
 
 ### Performance / Optimization
 
 ![!Performance / Optimization](images/qs-performance-optimization.png)
 
-1. When searching for subtitles, Bazarr will search less frequently to limit call to providers.
+1. When searching for subtitles, Bazarr will search less frequently to limit calls to providers.
 1. Search multiple providers at once (Don't choose this on low powered devices).
 1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles){:target="_blank" rel="noopener noreferrer"}
 
@@ -316,18 +317,18 @@ Enable this option for automatic subtitles synchronization.
 
 ![!Automatic Subtitles Synchronization](images/qs-automatic-subtitles-sync.png)
 
-!!! danger "Don't forget to Save your settings !!!"
+!!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
 ---
 
-Now wait till Bazarr gets all the info needed from Sonarr/Radarr.
+Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
 ## IMPORTANT
 
 !!! important
 
-    **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/) !!!**
+    **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/)!!!**
 
 ---
 

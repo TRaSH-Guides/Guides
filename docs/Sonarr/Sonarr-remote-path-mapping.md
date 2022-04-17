@@ -1,14 +1,14 @@
 # Remote Path Mappings
 
-Seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.
+It seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.
 
 Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
 
-## Do I need Remote Path Mappings
+## When do I need remote path mappings
 
 - If Sonarr and your download client are not on the same server/system.
-- If you use either merged local/remote setups using mergerfs or similar
-- You run dockers and **DON'T** have Consistent and well planned paths.
+- If you use either merged local/remote setups using mergerfs or similar.
+- You run dockers and **DON'T** have consistent and well planned paths.
 
 !!! note
     If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
@@ -21,9 +21,9 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 
 ## How do I recognize that I need remote path mappings
 
-If your download client is on another system then Sonarr then you probably need to make use of Remote Path Mappings.
+If your download client is on another system than Sonarr then you probably need to make use of Remote Path Mappings.
 
-You will get a error that looks a little bit like the following screenshot.
+You will get an error that looks a little bit like the following screenshot.
 
 ![!download errors](images/dl_error.png)
 
@@ -33,7 +33,7 @@ So looking at this screenshot it seems we need to make use of Remote Path Mappin
 
 ## How
 
-First we navigate in Sonarr to the Settings => `Download Clients` Tab.
+First we navigate in Sonarr to the `Settings` => `Download Clients` tab.
 
 ![download client tab](images/cl_cli_tab.png)
 
@@ -41,7 +41,7 @@ At the bottom you choose `Add new mapping`
 
 ![!add new mapping](images/new_mapping.png)
 
-A screen will popup with the following options.
+A screen will pop up with the following options:
 
 ![add mapping](images/mapping.png)
 
@@ -76,9 +76,7 @@ A screen will popup with the following options.
 
         ## Local Path
 
-        To find what you need to put in in your local path you need to know how Sonarr is able to access the files your download client downloaded.
-        And this can be done in different ways.
-        Mounting/Network share what ever but Sonarr needs to have local access to it so you need to figure this one out your self what's the best way for Sonarr to access the download clients downloaded files.
+        To find out what you need to put in in your local path you need to know how Sonarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.
 
         The final result will look something like this.
 
