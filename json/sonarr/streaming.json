@@ -3,8 +3,7 @@
   "trash_id": "1B018E0C53EC825085DD911102E2CA36",
   "includePreferredWhenRenaming": true,
   "required": [],
-  "preferred": [
-    {
+  "preferred": [{
       "score": 100,
       "terms": [
         "/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",

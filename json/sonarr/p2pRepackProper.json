@@ -3,8 +3,7 @@
   "trash_id": "71899E6C303A07AF0E4746EFF9873532",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [
-    {
+  "preferred": [{
       "score": 180,
       "terms": [
         "/(-deflate|-inflate)\\b/i"
