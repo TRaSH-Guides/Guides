@@ -1,4 +1,6 @@
 # 2022-04-20
+Radarr - How to setup Custom Formats #559
+- Updated: CF [Repack/Proper] scoring.
 Radarr CF Update 2022-04-20 #557
 - NEW: CF `[Flights (no IMAX)]` New Hybrid Remux group, had some complains about their imax releases being off, so they got a own CF (SQP).
 - NEW: CF `[SiC]` HQ WEBDL Hybrid group that does DV + HDR10 give it a score of `51` to give it a higher score (SQP).
