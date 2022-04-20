@@ -1,0 +1,53 @@
+{
+  "trash_id": "8cd3ac70db7ac318cf9a0e01333940a4",
+  "trash_score": "51",
+  "name": "SiC",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "SiC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bSiC\\b"
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "HDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bHDR(\\b|\\d)"
+      }
+    },
+    {
+      "name": "DV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+      }
+    }
+  ]
+}
