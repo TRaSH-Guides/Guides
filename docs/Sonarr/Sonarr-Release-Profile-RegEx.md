@@ -212,7 +212,7 @@ Add this to your `Preferred (3)` with a score of [150]
 Add this to your `Preferred (3)` with a score of [125]
 
 ```bash
-/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END)\b/i
+/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END|-SiC)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
