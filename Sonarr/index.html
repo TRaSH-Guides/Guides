@@ -729,9 +729,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v3-sonarr-branch-latest" class="md-nav__link">
-    v3 Sonarr Branch: latest
+  <a href="#master" class="md-nav__link">
+    Master
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#develop" class="md-nav__link">
+    Develop
+  </a>
+  
+    <nav class="md-nav" aria-label="Develop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-update-sonarr" class="md-nav__link">
+    How do I update Sonarr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2048,9 +2068,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v3-sonarr-branch-latest" class="md-nav__link">
-    v3 Sonarr Branch: latest
+  <a href="#master" class="md-nav__link">
+    Master
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#develop" class="md-nav__link">
+    Develop
+  </a>
+  
+    <nav class="md-nav" aria-label="Develop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-update-sonarr" class="md-nav__link">
+    How do I update Sonarr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2075,23 +2115,27 @@
 
 <h1 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link">¶</a></h1>
 <p>Here you will find a collection of Sonarr guides I made.</p>
-<h2 id="v3-sonarr-branch-latest">v3 Sonarr Branch: latest<a class="headerlink" href="#v3-sonarr-branch-latest" title="Permanent link">¶</a></h2>
-<p><img alt="version" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fsonarr%2Frelease%2FVERSION.json&amp;label=Latest%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
-<ul>
-<li>(Stable) (v3)</li>
-<li>Builds Pushed only when intentionally released</li>
-<li>Github Branch: main</li>
-<li>Docker: <a href="https://hub.docker.com/r/hotio/sonarr" rel="noopener noreferrer" target="_blank">hotio/sonarr:release</a></li>
-</ul>
-<div class="highlight"><pre><span></span><code>hotio/sonarr:release
-</code></pre></div>
+<h2 id="master">Master<a class="headerlink" href="#master" title="Permanent link">¶</a></h2>
+<p><img alt="Main" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https://raw.githubusercontent.com/hotio/sonarr/release/VERSION.json&amp;label=Current%20Master/Stable%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
+<p>(Default/Stable): This has been tested by users on nightly (<code>develop</code>) branch and it's not known to have any major issues. This branch should be used by the majority of users.</p>
+<p>On GitHub, this is the <code>main</code> branch.</p>
+<h2 id="develop">Develop<a class="headerlink" href="#develop" title="Permanent link">¶</a></h2>
+<p><img alt="Develop" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https://raw.githubusercontent.com/hotio/sonarr/nightly/VERSION.json&amp;label=Current%20Develop/Nightly%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
+<p>(Alpha/Unstable) : This is the bleeding edge. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>You may not be able to go back to <code>main</code> after switching to this branch.</strong></p>
+</div>
+<p>On GitHub, this is the <code>develop</code> branch.</p>
+<h3 id="how-do-i-update-sonarr">How do I update Sonarr<a class="headerlink" href="#how-do-i-update-sonarr" title="Permanent link">¶</a></h3>
+<p>External link to the official <a href="https://wiki.servarr.com/en/sonarr/faq#how-do-i-update-sonarr" rel="noopener noreferrer" target="_blank">WikiArr</a>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 10:05:54</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 24, 2022 18:18:19</span>
       
     
   </small>
