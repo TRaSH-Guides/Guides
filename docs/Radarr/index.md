@@ -22,7 +22,7 @@ This version will receive updates either weekly or biweekly depending on develop
 
 !!! warning
 
-    **Warning: You may not be able to go back to `master` after switching to this branch.**
+    **You may not be able to go back to `master` after switching to this branch.**
 
 On GitHub, this is a snapshot of the `develop` branch at a specific point in time.
 
@@ -40,10 +40,10 @@ This version is updated immediately.
 
 !!! warning
 
-    **Warning: You may not be able to go back to `master` after switching to this branch.**
+    **You may not be able to go back to `master` after switching to this branch.**
 
 On GitHub, this is the `develop` branch.
 
-### How do I update Radarr?
+### How do I update Radarr
 
 External link to the official [WikiArr](https://wiki.servarr.com/en/radarr/faq#how-do-i-update-radarr){:target="_blank" rel="noopener noreferrer"}.

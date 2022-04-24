@@ -18,10 +18,10 @@ On GitHub, this is the `main` branch.
 
 !!! Warning
 
-    **Warning: You may not be able to go back to `main` after switching to this branch.**
+    **You may not be able to go back to `main` after switching to this branch.**
 
 On GitHub, this is the `develop` branch.
 
-### How do I update Sonarr?
+### How do I update Sonarr
 
 External link to the official [WikiArr](https://wiki.servarr.com/en/sonarr/faq#how-do-i-update-sonarr){:target="_blank" rel="noopener noreferrer"}.
