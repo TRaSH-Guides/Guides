@@ -4,7 +4,7 @@ When you're running dockers and you need help on discord etc you often hear the 
 
 "Provide a docker compose"
 
-If you need to provide this info always remember to provide it from all your *arr (Sonarr, Radarr, Lidarr, Bazarr) and also from your download client(s).
+If you need to provide this info always remember to provide it from all your Starr Apps (Sonarr, Radarr, Lidarr, Bazarr) and also from your download client(s).
 
 If you're using a system with a GUI (Synology, unRAID, OMV, etc.) it's not always easy to provide a docker compose but it's possible.
 
@@ -25,9 +25,10 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/
 
 Paste the results on one of the following sites.
 
-- [0bin.net](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} (Reccomended)
+- [0bin.net](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} (Recommended)
 - [Github Gist](https://gist.github.com){:target="_blank" rel="noopener noreferrer"} (Alternative)
 - [Ubuntu Pastebin](https://pastebin.ubuntu.com/){:target="_blank" rel="noopener noreferrer"}
 - [hastebin.com](https://hastebin.com){:target="_blank" rel="noopener noreferrer"}
+- [privatebin.net](https://privatebin.net/){:target="_blank" rel="noopener noreferrer"}
 
 If you use docker run command to create your docker containers, paste your run command in to [composerize](https://www.composerize.com/){:target="_blank" rel="noopener noreferrer"}
