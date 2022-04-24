@@ -28,7 +28,7 @@ data
    └── tv
 ```
 
-#### The arr(s)
+#### The Starr Apps
 
 Sonarr, Radarr and Lidarr
 

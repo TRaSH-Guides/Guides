@@ -14,4 +14,4 @@
     | DTS-ES               | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts-es){: .header-icons target=_blank rel="noopener noreferrer" } |
     | DTS                  | 1250  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts){: .header-icons target=_blank rel="noopener noreferrer" } |
     | AAC                  | 1000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#aac){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DD                   | 750   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dd){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | DD                   |  750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dd){: .header-icons target=_blank rel="noopener noreferrer" } |
