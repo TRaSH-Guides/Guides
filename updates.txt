@@ -1,3 +1,16 @@
+#2022-04-24
+Starr index page update #560
+- Added: all Star branch versions including warnings
+- Added: How to update to a Starr Apps branche.
+How to provide a docker-compose #561
+- Updated: *arr to Starr Apps.
+- Added: privatebin.net
+Hardlinks #562
+- Updated: *arr/*arr(s) to Starr Apps.
+- Added: info that you can't hardlink directories.
+- Added: info that you can't cross file systems.
+- Added: More info to wikipedia for hardlinks.
+
 # 2022-04-20
 Radarr - How to setup Custom Formats #559
 - Updated: CF [Repack/Proper] scoring.
