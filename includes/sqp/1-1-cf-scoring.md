@@ -12,12 +12,13 @@
     | -------------------- | ----- | ---- |
     | BHDStudio            | 1800  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json){: .header-icons target=_blank rel="noopener noreferrer" } |
 
-??? summary "Misc - [CLICK TO EXPAND]"
+??? summary "Resolution - [CLICK TO EXPAND]"
     | Custom Format        | Score | LINK |
     | -------------------- | ----- | ---- |
     | 720p                 |     5 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | 1080                 |    25 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | Repack/Proper        |     1 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#repack-proper){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | 1080                 |    50 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+
+--8<-- "includes/cf/misc.md"
 
 --8<-- "includes/cf/unwanted.md"
 

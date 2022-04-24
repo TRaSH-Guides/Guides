@@ -17,7 +17,7 @@ This Guide exist out of 4 Sections
 
 So you want one of the following ?
 
-- Instant moves (Atomic-Moves) during import of the *arr (useful when using Usenet)?
+- Instant moves (Atomic-Moves) during import of the Starr Apps (useful when using Usenet)?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
 - You want to perma seed?
 
@@ -46,14 +46,21 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
             For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
 
+        [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
+
+        !!! attention
+            You can't create hard links for directories :bangbang:
+
+            You can't cross file systems :bangbang:
+
 ### What are Instant Moves (Atomic Moves)
 
 ??? faq "**What are Instant Moves (Atomic Moves)?** - [CLICK TO EXPAND]"
 
     A real move and not a copy file from download folder to media folder and then delete file from download folder.
 
-### What are the arr
+### What are the Starr Apps
 
-??? faq "**What are the `*arr`?** - [CLICK TO EXPAND]"
+??? faq "**What are the `Starr Apps`?** - [CLICK TO EXPAND]"
 
     Sonarr, Radarr, Lidarr, etc.
