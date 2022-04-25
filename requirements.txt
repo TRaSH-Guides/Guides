@@ -1,7 +1,7 @@
-git+https://github.com/fralau/mkdocs_macros_plugin@v0.5.12#egg=mkdocs-macros-plugin
-git+https://github.com/g-provost/lightgallery-markdown@v0.5#egg=lightgallery
+lightgallery==0.5
 mkdocs-awesome-pages-plugin==2.7.0
 mkdocs-git-revision-date-localized-plugin==1.0.1
+mkdocs-macros-plugin==0.7.0
 mkdocs-material==8.2.10
 mkdocs-minify-plugin==0.5.0
 mkdocs-redirects==1.0.4
