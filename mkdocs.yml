@@ -6,13 +6,12 @@ site_url: https://trash-guides.info/
 repo_url: https://github.com/TRaSH-/Guides
 repo_name: TRaSH-/Guides
 
-copyright: Copyright &copy; 2020 TRaSH
+copyright: Copyright &copy; 2022 TRaSH
 
 extra:
   analytics:
     provider: google
     property: G-ZZKM4MPQXL
-  manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
