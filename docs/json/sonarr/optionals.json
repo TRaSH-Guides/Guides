@@ -8,7 +8,7 @@
   }, {
     "name": "Ignore Dolby Vision without HDR10 fallback.",
     "trash_id": "436f5a7d08fbf02ba25cb5e5dfe98e55",
-    "term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]Vision)\\b).*/i"
+    "term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]?Vision)\\b).*/i"
   }, {
     "name": "Ignore The Group -SCENE",
     "trash_id": "f3f0f3691c6a1988d4a02963e69d11f2",
@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)/i"
+    "term": "/^(?!.*(-deflate|-inflate))(?=.*([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)).*/i"
   }],
   "required": [],
   "preferred": [{
