@@ -2718,7 +2718,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <p>This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 </details>
 <p>Add this to your <code>Must not contain (2)</code></p>
-<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="p">|</span>REMUX<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>- .<span class="o">]</span>Vision<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
+<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="p">|</span>REMUX<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>- .<span class="o">]</span>?Vision<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
 </code></pre></div>
 <hr />
 <h4 id="optional-ignore-the-group-scene">Optional - Ignore The Group -SCENE<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link">¶</a></h4>
@@ -2802,7 +2802,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 20, 2022 14:34:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 3, 2022 18:32:09</span>
       
     
   </small>
