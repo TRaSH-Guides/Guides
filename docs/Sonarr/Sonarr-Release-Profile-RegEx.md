@@ -497,7 +497,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(-deflate|-inflate))(?=.*([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)).*/i
+/^(?!.*(-deflate|-inflate))(?=.*([_. ]WEB[_. ]|\bCAKES\b|GGEZ|GGWP|GLHF)).*/i
 ```
 
 ------
