@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TEKNO3D|TIKO|Liber8|FZHD|PATOMiEL)\\b"
+        "value": "\\b(TEKNO3D|TIKO|Liber8|FZHD|PATOMiEL|-KIRA)\\b"
       }
     }
   ]

@@ -1,3 +1,7 @@
+#2022-05-06
+Radarr CF [LQ] KIRA #576
+- Updated: CF [LQ] added `KIRA` to the `Nominated Unwanted Groups` condition. (Wrong main Audio Track in filename)
+
 #2022-05-03
 Sonarr RP RegEx WEBDL 20220503 #573
 - Updated: Fix DoVi without HDR fallback for badly named releases #572
