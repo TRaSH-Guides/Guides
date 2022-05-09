@@ -10,6 +10,6 @@ This basic example is based on the use of docker images
 
     But you're able to change this, by not using the pre-defined/recommended paths like:
 
-    - `/downloads` => `/data/downloads`
+    - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`
     - `/movies` => `/data/media/movies`
-    - `/tv` => `/data/media/tv`.
+    - `/tv` => `/data/media/tv`
