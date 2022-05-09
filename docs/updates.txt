@@ -1,13 +1,17 @@
-#2022-05-06
+# 2022-05-09
+Sonarr Low Quality Groups - Release Profile #581
+- Added: Pahe.ph|Pahe.in to the LQ Groups because of their re-encoded microsized releases.
+
+# 2022-05-06
 Radarr CF [LQ] KIRA #576
 - Updated: CF [LQ] added `KIRA` to the `Nominated Unwanted Groups` condition. (Wrong main Audio Track in filename)
 
-#2022-05-03
+# 2022-05-03
 Sonarr RP RegEx WEBDL 20220503 #573
 - Updated: Fix DoVi without HDR fallback for badly named releases #572
 - Updated: Ignore so called scene releases to ignore deflate/inflate
 
-#2022-04-24
+# 2022-04-24
 Starr index page update #560
 - Added: all Star branch versions including warnings
 - Added: How to update to a Starr Apps branche.
