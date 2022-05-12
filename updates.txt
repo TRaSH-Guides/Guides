@@ -1,3 +1,11 @@
+# 2022-05-12
+Radarr CF [LQ] PTNK #585
+- Updated: CF [LQ] added `PTNK` to the `Nominated Unwanted Groups` condition. (Using different sources like EVO releases, BLUR hardcoded subs,  and also strips out all other subs).
+Sonarr Low Quality Groups - Release Profile #581
+- Added: Pahe.ph|Pahe.in to the LQ Groups because of their re-encoded microsized releases.
+qBittorrent Basic Setup #580
+- NEW: qBittorrent Basic Setup.
+
 # 2022-05-09
 Sonarr Low Quality Groups - Release Profile #581
 - Added: Pahe.ph|Pahe.in to the LQ Groups because of their re-encoded microsized releases.
