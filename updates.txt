@@ -1,3 +1,12 @@
+# 2022-05-14
+Updated Re-branding trash-updater to recyclarr #586
+- Updated: Re-branding trash-updater to recyclarr v2 (With this update it means i will also drop updates for v1)
+Radarr/Sonarr sync update for SQP #587
+- Updated: How to access the SQP (Special Quality Profile) Discord channel.
+Sonarr Release Profile Regex WEBDL #588
+- Added: The group `SIC` to `Optional - Ignore Dolby Vision without HDR10 fallback` exception.
+- Added: The group `NERO` to `Low Quality Groups - Release Profile` because they only provide dubbed French audio track.
+
 # 2022-05-12
 Radarr CF [LQ] PTNK #585
 - Updated: CF [LQ] added `PTNK` to the `Nominated Unwanted Groups` condition. (Using different sources like EVO releases, BLUR hardcoded subs,  and also strips out all other subs).
