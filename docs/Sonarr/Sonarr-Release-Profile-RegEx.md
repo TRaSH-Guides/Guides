@@ -268,7 +268,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3|Pahe\.ph|Pahe\.in)\b/i
+/(TBS|-BRiNK|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3|Pahe\.ph|Pahe\.in|-NERO)\b/i
 ```
 
 !!! danger "Caution"
@@ -469,7 +469,7 @@ Add this to your `Preferred (3)` with a score of [15]
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?Vision)\b).*/i
+/^(?!.*(\bSIC\b|HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?Vision)\b).*/i
 ```
 
 ------
