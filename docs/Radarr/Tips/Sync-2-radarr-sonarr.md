@@ -160,7 +160,7 @@ You now only need to make use of `Sonarr 1`. When you got a TV show (or a movie 
 ------
 
 [^1]:
-    If you're interested in the 1080p streaming optimized quality profile you can contact me on [discord](https://trash-guides.info/discord)
+    If you're interested in the 1080p streaming optimized quality profile you can join my [discord](https://trash-guides.info/discord) and get access to the Special Quality Profiles channel (access-to-sqp) by accepting the rules.
 
     This is a special quality profile I created for people who are really interested in it.
 
