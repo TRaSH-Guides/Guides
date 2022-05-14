@@ -38,13 +38,13 @@ Just enable the Custom Formats/Release Profiles you want.
 
 ------
 
-## TRaSH Updater
+## Recyclarr
 
-It's possible with [trash-updater](https://github.com/rcdailey/trash-updater){:target="_blank" rel="noopener noreferrer"}
+It's possible with [Recyclarr](https://github.com/rcdailey/recyclarr){:target="_blank" rel="noopener noreferrer"}
 
 Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler.
 
-[Instructions](https://github.com/rcdailey/trash-updater#getting-started){:target="_blank" rel="noopener noreferrer"}
+[Instructions](https://github.com/rcdailey/recyclarr#getting-started){:target="_blank" rel="noopener noreferrer"}
 
 --8<-- "includes/support.md"
 
