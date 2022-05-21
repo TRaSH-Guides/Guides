@@ -28,8 +28,8 @@ Install the following Plugins.
 
 - User Scripts
 - Nerd Tools
-    - python3
-    - python-setuptools
+  - python3
+  - python-setuptools
 
 ------
 
