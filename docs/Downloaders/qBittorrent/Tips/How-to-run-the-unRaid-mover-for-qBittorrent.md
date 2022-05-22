@@ -120,7 +120,10 @@ qbt_pass = adminadmin
 - `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled.
 - `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled.
 
-#### Copy script to location
+!!! danger ""
+    If you don't use the unRaid `Mover Tuning` app, You might need to change **line 54** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
+
+#### Copy script to your preferred location
 
 Now it's time to place the script somewhere easy to access/remember.
 
@@ -129,7 +132,7 @@ Suggestions:
 - `/mnt/user/appdata/qbittorrent/scripts` (yes you need to create this folder your self)
 - `/mnt/user/data/scripts` (yes you need to create this folder your self)
 
-#### Final step
+#### Final steps
 
 Now it's time to setup the scheduler when the mover should run.
 
