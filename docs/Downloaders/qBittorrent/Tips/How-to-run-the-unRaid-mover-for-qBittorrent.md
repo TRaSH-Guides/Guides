@@ -6,6 +6,17 @@ When you make use of the unRaid cache drive for your `/data/torrents` share and 
 
 Using the following instructions you will be able to move the files with the use of the qBittorrent API.
 
+??? summary "Workflow Rules - [CLICK TO EXPAND]"
+
+    1. Pause torrents older than last x days.
+    1. Run the mover.
+    1. Resume the torrents once the mover is completed.
+
+!!! Danger
+    If you're going to make use of this make sure you're using `Post-Import Category` in your Starr apps [^1] Download clients settings, especially when you're using the Seed Time/Ratio settings in your Indexers settings in the Starr apps.
+
+    Else it could happen when the torrents get paused that they get removed by the Starr apps before the seeding goal is reached :bangbang:
+
 ## Needed
 
 ### The Script
@@ -13,12 +24,6 @@ Using the following instructions you will be able to move the files with the use
 Download the following standalone script.
 
 - [Script](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}
-
-What this script does:
-
-- Pause torrents older than last x days.
-- Run the mover.
-- Resume the torrents once the mover is completed.
 
 Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
 
@@ -120,7 +125,7 @@ qbt_pass = adminadmin
 - `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled.
 - `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled.
 
-!!! danger ""
+!!! failure ""
     If you don't use the unRaid `Mover Tuning` app, You might need to change **line 54** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
 
 #### Copy script to your preferred location
@@ -186,3 +191,8 @@ Setup your own schedule [HERE](https://crontab.guru/)
 
 ??? check "Example - [CLICK TO EXPAND]"
     ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-mover-cron.png)
+
+--8<-- "includes/support.md"
+
+[^1]:
+    Starr apps = Sonarr/Radarr etc. Doesn't Starr apps sound better then `The arr(s)` ?
