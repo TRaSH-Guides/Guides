@@ -9,6 +9,8 @@ These are 3rd party applications to sync several sections of the guide with your
 - Sonarr Release Profile RegEx (Anime) [^1] [^2]
 - Sonarr Quality Settings (File Size) [^2]
 
+------
+
 ## Notifiarr
 
 It's possible with [Notifiarr](https://notifiarr.com/profile.php){:target="_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="_blank" rel="noopener noreferrer"})
@@ -36,6 +38,16 @@ Just enable the Custom Formats/Release Profiles you want.
 
 [Instructions](https://notifiarr.wiki/en/Website/Integrations/Trash){:target="_blank" rel="noopener noreferrer"}
 
+### Video Tutorial
+
+!!! tip ""
+
+    Big Thanks to IBRACORP who created a great video that covers the basics.
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DCxU3Vzaz6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    Also check out other videos from IBRACORP  [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
+
 ------
 
 ## Recyclarr
@@ -52,4 +64,4 @@ Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your s
     Notifiarr
 
 [^2]:
-    TRaSH Updater
+    Recyclarr
