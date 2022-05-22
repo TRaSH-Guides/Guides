@@ -48,9 +48,9 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 | WEBDL-1080p        | 15      | 137.3   |
 | Bluray-1080p       | 50.4    | 227     |
 | Bluray-1080p Remux | 69.1    | 400     |
-| HDTV-2160p         | 69.1    | 350     |
-| WEBRip-2160p       | 69.1    | 350     |
-| WEBDL-2160p        | 69.1    | 350     |
+| HDTV-2160p         | 50.4    | 350     |
+| WEBRip-2160p       | 50.4    | 350     |
+| WEBDL-2160p        | 50.4    | 350     |
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |
 
