@@ -31,6 +31,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
+  - pymdownx.tilde
   - codehilite:
       guess_lang: true
   - toc:

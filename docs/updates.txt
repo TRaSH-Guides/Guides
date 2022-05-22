@@ -1,3 +1,14 @@
+# 2022-05-22
+Sonarr - Quality Settings (File Size) #595
+- Changed: Minimum file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`
+IBRACORP Video Link #594
+- Added: IBRACORP video link for notifiarr TRaSH-Sync.
+- Updated: TRaSH Updater re-branding to Recyclarr.
+NEW: qBittorrent unRaid Mover #593
+- NEW: How to move your files from your cache drive to your array when they are still seeding.
+Radarr CF Score of "DV HDR10" from 1550 to 1500 #591
+- Updated: Radarr CF `[DV HDR10]` Score from `1550` to `1500` so it's more consistent with the original release name so it doesn't block upgrades it should accept.
+
 # 2022-05-14
 Updated Re-branding trash-updater to recyclarr #586
 - Updated: Re-branding trash-updater to recyclarr v2 (With this update it means i will also drop updates for v1)
