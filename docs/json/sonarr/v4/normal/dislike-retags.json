@@ -1,0 +1,15 @@
+{
+  "name": "Dislike Retags",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Dislike retags",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(\\[rartv\\]|\\[rarbg\\]|\\[eztv\\]|\\[TGx\\])"
+      }
+    }
+  ]
+}
