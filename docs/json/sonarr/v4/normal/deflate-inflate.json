@@ -1,0 +1,15 @@
+{
+  "name": "DEFLATE (INFLATE)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DEFLATE (INFLATE)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(-deflate|-inflate)\\b"
+      }
+    }
+  ]
+}
