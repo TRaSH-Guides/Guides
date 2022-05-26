@@ -2,6 +2,6 @@ lightgallery==0.5
 mkdocs-awesome-pages-plugin==2.7.0
 mkdocs-git-revision-date-localized-plugin==1.0.1
 mkdocs-macros-plugin==0.7.0
-mkdocs-material==8.2.14
+mkdocs-material==8.2.15
 mkdocs-minify-plugin==0.5.0
 mkdocs-redirects==1.0.4
