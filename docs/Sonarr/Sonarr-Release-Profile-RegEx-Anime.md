@@ -304,7 +304,7 @@ BluRay-Remux / Dual-Audio / 1st Tier
 ```
 
 ```bash
-/(\bAC\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i
+/(\[AC\]|-AC$|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i
 ```
 
 ```bash
