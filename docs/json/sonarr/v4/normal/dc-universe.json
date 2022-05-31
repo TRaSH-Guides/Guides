@@ -1,0 +1,15 @@
+{
+  "name": "DCU",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "DC Universe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dcu|DC Universe)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}
