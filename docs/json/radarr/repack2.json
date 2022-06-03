@@ -1,0 +1,17 @@
+{
+  "trash_id": "ae43b294509409a6a13919dedd4764c4",
+  "trash_score": "6",
+  "name": "Repack2",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Repack2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Repack2"
+      }
+    }
+  ]
+}
