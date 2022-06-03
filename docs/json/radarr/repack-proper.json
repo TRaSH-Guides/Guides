@@ -9,7 +9,7 @@
           "negate": false,
           "required": false,
           "fields": {
-              "value": "Repack"
+              "value": "Repack\\b"
           }
       },
       {
