@@ -1,5 +1,5 @@
 # 2022-06-03
-Radarr CF [Repack2]
+Radarr CF [Repack2] #607
 - NEW: Radarr CF `[Repack2]` with a score of `6`.
 - Updated: Radarr CF `[Repack/Proper]` added word boundary.
 
