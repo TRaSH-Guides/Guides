@@ -1,3 +1,8 @@
+# 2022-06-03
+Radarr CF [Repack2]
+- NEW: Radarr CF `[Repack2]` with a score of `6`.
+- Updated: Radarr CF `[Repack/Proper]` added word boundary.
+
 # 2022-05-22
 Sonarr - Quality Settings (File Size) #595
 - Changed: Minimum file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`
