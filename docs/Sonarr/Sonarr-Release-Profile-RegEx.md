@@ -450,13 +450,13 @@ Add this to your `Preferred (3)` with a score of [15]
 
     ![!rp-su-season](images/rp-su-season.png)
 
-    Then theirs only one way real way that always solves this issue.
+    Then there is only one way real way that always solves this issue.
     create a new release profile specific for .su that uses the [Season regex](#optional-matches-season-packs-use-this-if-you-prefer-season-packs) as `Must not contain (2)`
 
     ![!rp-release-profile-block-season-su](images/rp-release-profile-block-season-su.png)
 
     !!! note
-        Theirs a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems theirs a work around for SABnzbd but i can't confirm being i'm not using Sab.
+        There is a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems there is a work around for SABnzbd but i can't confirm being i'm not using Sab.
 
 ------
 
