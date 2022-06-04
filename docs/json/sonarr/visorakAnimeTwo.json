@@ -9,7 +9,7 @@
       "terms": [
         "/(deanzel|\\bZR\\b|\\bCTR\\b|\\bSCY\\b|\\bMK\\b|TTGA)/i",
         "/(\\bShir\\b|LostYears|BluDragon|KAWAiREMUX)/i",
-        "/(\\bAC\\b|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i",
+        "/(\\[AC\\]|-AC$|ShadyCrab|Rasetsu|Raizel|Dragon-Releases)/i",
         "/(\\[Spark\\]|-Spark\\b|\\bREVO\\b|\\bSRLS\\b|ANThELIa)/i",
         "/(\\[Vanilla\\]|-Vanilla\\b|\\bAP\\b)/i"
       ]
