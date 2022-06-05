@@ -1,0 +1,24 @@
+{
+  "name": "BR-DISK",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DOES NOT INCLUDE ANY OF THESE WORDS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(?!.*\\b((?<!HD[._ -]|HD)DVD|BDRip|720p|MKV|XviD|WMV|d3g|REMUX|[xh][-_. ]?26[45]|German[-_. ]?DL)\\b).*"
+      }
+    },
+    {
+      "name": "BUNCH OF COMBINATIONS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(((?=.*(Blu[-_. ]?ray|BD|HD[-_. ]?DVD)\\b)(?=.*\\b(AVC|HEVC|VC[-_. ]?1|MVC|MPEG[-_. ]?2|BDMV)\\b))|^((?=.*\\b(^((?=.*\\b(COMPLETE|Dis[ck])\\b)(?=.*(Blu[-_. ]?ray|HD[-_. ]?DVD)))|3D[-_. ]?BD|BR[-_. ]?DISK|Full[-_. ]?Blu[-_. ]?ray|^((?=.*((BD|UHD)[-_. ]?(25|50|66)))(?=.*ISO)?))))).*"
+      }
+    }
+  ]
+}

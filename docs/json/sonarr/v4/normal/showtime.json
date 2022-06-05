@@ -1,0 +1,15 @@
+{
+  "name": "SHO",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "SHOWTIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}
