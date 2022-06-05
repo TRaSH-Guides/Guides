@@ -3,12 +3,39 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Dislike retags",
+      "name": "[rartv]",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(\\[rartv\\]|\\[rarbg\\]|\\[eztv\\]|\\[TGx\\])"
+        "value": "\\[rartv\\]"
+      }
+    },
+    {
+      "name": "[rarbg]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[rarbg\\]"
+      }
+    },
+    {
+      "name": "[eztv]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[eztv\\]"
+      }
+    },
+    {
+      "name": "[TGx]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[TGx\\]"
       }
     }
   ]
