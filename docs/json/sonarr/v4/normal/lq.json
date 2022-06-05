@@ -1,0 +1,105 @@
+{
+  "name": "LQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TBS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-TBS\\b"
+      }
+    },
+    {
+      "name": "BRiNK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-BRiNK\\b"
+      }
+    },
+    {
+      "name": "CHX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-CHX\\b"
+      }
+    },
+    {
+      "name": "XLF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-XLF\\b"
+      }
+    },
+    {
+      "name": "worldmkv",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-worldmkv\\b"
+      }
+    },
+    {
+      "name": "GHOSTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-GHOSTS\\b"
+      }
+    },
+    {
+      "name": "VIDEOHOLE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-VIDEOHOLE\\b"
+      }
+    },
+    {
+      "name": "nhanc3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-nhanc3\\b"
+      }
+    },
+    {
+      "name": "EVO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-EVO\\b"
+      }
+    },
+    {
+      "name": "Pahe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pahe\\.(ph|in)\\b"
+      }
+    },
+    {
+      "name": "NERO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NERO\\b"
+      }
+    }
+  ]
+}
