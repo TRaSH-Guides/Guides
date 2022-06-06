@@ -1,0 +1,15 @@
+{
+  "name": "VFQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "VFQ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "VFQ"
+      }
+    }
+  ]
+}
