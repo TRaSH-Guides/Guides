@@ -1,0 +1,24 @@
+{
+  "name": "FANSUB",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "FASTSUB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFAST[ ._-]?SUB\\b"
+      }
+    },
+    {
+      "name": "FANSUB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFAN[ ._-]?SUB\\b"
+      }
+    }
+  ]
+}
