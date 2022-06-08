@@ -46,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ .]HDR10)\\b"
+        "value": "\\b(DV[ .]HDR10|HDR10[ .]DV)\\b"
       }
     }
   ]
