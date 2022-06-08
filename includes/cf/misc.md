@@ -2,6 +2,7 @@
     | Custom Format        | Score | LINK |
     | -------------------- | ----- | ---- |
     | Repack/Proper        |     5 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#repack-proper){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Repack2              |     6 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#repack2){: .header-icons target=_blank rel="noopener noreferrer" } |
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 

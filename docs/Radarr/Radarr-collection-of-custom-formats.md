@@ -50,13 +50,14 @@ I also made 3 guides related to this one.
 | Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
 | --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amazon)            |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Multi](#multi)                       | [HQ](#hq)             | [Apple TV+](#apple-tvplus)   |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [x264](#x264)                         | [HQ-WEBDL](#hq-webdl) | [Disney+](#disneyplus)       |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x265](#x265)                         |                       | [HBO Max](#hbo-max)          |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [MPEG2](#mpeg2)                       |                       | [Hulu](#hulu)                |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [FreeLeech](#freeleech)               |                       | [Netflix](#netflix)          |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [Dutch Groups](#dutch-groups)         |                       | [Peacock TV](#peacock-tv)    |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Anime Dual Audio](#anime-dual-audio) |                       | [Paramount+](#paramountplus) |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#apple-tvplus)   |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#disneyplus)       |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hbo-max)          |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#netflix)          |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#peacock-tv)    |
+| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#paramountplus) |
+|                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       |                              |
 
 ------
 
@@ -996,6 +997,18 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/repack-proper.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Repack2
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/repack2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
