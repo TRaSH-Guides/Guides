@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(-deflate|-inflate))(?=.*([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF)).*/i"
+    "term": "/^(?!.*(-deflate|-inflate))(?=.*([_. ]WEB[_. ]|\\bCAKES\\b|GGEZ|GGWP|GLHF|KOGI)).*/i"
   }],
   "required": [],
   "preferred": [{
