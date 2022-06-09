@@ -1,3 +1,14 @@
+# 2022-06-08
+Radarr cf dv hdr10 fix for bad (re)named files #615
+- Added: Fix for bad (re)named DV HDR10 releases.
+- Added: `Not DV` Condition to `[HDR10]` prevent double scoring for bad (re)named DV HDR10 Releases.
+Radarr CF Repack2 added to collection and instructions #616
+- Added: CF `[Repack2]` to the collection.
+- Updated: How to setup Custom Formats to support `[Repack2]`.
+Added KOGI to the Dislike Scene Releases for indexers that rename #619
+- Added: KOGI to the Dislike Scene Releases for indexers that rename.
+- Added: DEPRECATED warning for the optional.json, please use optionals.json.
+
 # 2022-06-03
 Radarr CF [Repack2] #607
 - NEW: Radarr CF `[Repack2]` with a score of `6`.

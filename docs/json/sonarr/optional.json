@@ -1,4 +1,6 @@
 {
+  "!!! DEPRECATED !!!": "This JSON only exists as fallback for people still using the old trash-sync",
+
   "ignore": [{
     "name": "Golden rule",
     "term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
