@@ -46,6 +46,24 @@
       "fields": {
         "value": "-GLHF\\b"
       }
+    },
+    {
+      "name": "KOGI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-KOGI\\b"
+      }
+    },
+    {
+      "name": "GOSSIP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-GOSSIP\\b"
+      }
     }
   ]
 }
