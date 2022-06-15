@@ -1,3 +1,7 @@
+# 2022-06-13
+Shortened Streaming Service naming #626
+- Changed: On request Streaming Service to short names.
+
 # 2022-06-08
 Radarr cf dv hdr10 fix for bad (re)named files #615
 - Added: Fix for bad (re)named DV HDR10 releases.
