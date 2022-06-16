@@ -49,14 +49,14 @@ I also made 3 guides related to this one.
 
 | Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
 | --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amazon)            |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#apple-tvplus)   |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#disneyplus)       |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hbo-max)          |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
 | [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#netflix)          |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#peacock-tv)    |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#paramountplus) |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
+| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
 |                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       |                              |
 
 ------
@@ -1184,7 +1184,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Amazon
+### AMZN
 
 <sub>Amazon</sub>
 
@@ -1195,14 +1195,14 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/amazon.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/amzn.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### Apple TVplus
+### APTV
 
 <sub>Apple TV+</sub>
 
@@ -1213,14 +1213,14 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/apple-tvplus.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/aptv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### DisneyPlus
+### DSNP
 
 <sub>Disney+</sub>
 
@@ -1231,14 +1231,14 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/disneyplus.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/dsnp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### HBO Max
+### HMAX
 
 <sub>HBO Max</sub>
 
@@ -1249,7 +1249,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/hbo-max.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/hmax.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1274,7 +1274,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Netflix
+### NF
 
 <sub>Netflix</sub>
 
@@ -1285,14 +1285,14 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/netflix.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/nf.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### Peacock TV
+### PCOK
 
 <sub>Peacock TV</sub>
 
@@ -1303,14 +1303,14 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/peacock-tv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/pcok.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### ParamountPlus
+### PMTP
 
 <sub>Paramount+</sub>
 
@@ -1321,7 +1321,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/paramountplus.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/pmtp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
