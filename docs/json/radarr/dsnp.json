@@ -1,0 +1,34 @@
+{
+  "trash_id": "84272245b2988854bfb76a16e60baea5",
+  "name": "DSNP",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Disney+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
