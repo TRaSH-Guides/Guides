@@ -1,15 +1,15 @@
 {
-  "trash_id": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
-  "name": "Amazon",
+  "trash_id": "3472d276482257d68f7836a55ca24877",
+  "name": "APTV",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Amazon",
+      "name": "Apple TV+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(amzn|amazon)\\b"
+        "value": "\\b(atvp|aptv|Apple TV\\+)\\b"
       }
     },
     {

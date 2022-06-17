@@ -1,15 +1,15 @@
 {
-  "trash_id": "e36a0ba1bc902b26ee40818a1d59b8bd",
-  "name": "Paramount+",
+  "trash_id": "84272245b2988854bfb76a16e60baea5",
+  "name": "DSNP",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Paramount+",
+      "name": "Disney+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(pmtp|Paramount Plus)\\b"
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
       }
     },
     {
