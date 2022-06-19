@@ -1,16 +1,15 @@
 {
-  "trash_id": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
-  "trash_score": "0",
-  "name": "AMZN",
+  "trash_id": "170b1d363bd8516fbf3a3eb05d4faff6",
+  "name": "NF",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Amazon",
+      "name": "Netflix",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(amzn|amazon)\\b"
+        "value": "\\b(nf|netflix)\\b"
       }
     },
     {

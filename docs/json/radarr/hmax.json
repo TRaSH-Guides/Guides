@@ -1,16 +1,15 @@
 {
-  "trash_id": "84272245b2988854bfb76a16e60baea5",
-  "trash_score": "0",
-  "name": "DSNP",
+  "trash_id": "5763d1b0ce84aff3b21038eea8e9b8ad",
+  "name": "HMAX",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Disney+",
+      "name": "HBO Max",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
+        "value": "\\b(hmax|hbom|HBO Max)\\b"
       }
     },
     {
