@@ -1,3 +1,8 @@
+#2022-06-21
+Radarr CF 20220621 #635
+- Updated: CF `[3D]` added 3D group `BluRay3D`.
+- Updated: CF `[DV (WEBDL)]` replaced condition `DV HDR10` with `No HDR`.
+
 # 2022-06-13
 Shortened Streaming Service naming #626
 - Changed: On request Streaming Service to short names.
