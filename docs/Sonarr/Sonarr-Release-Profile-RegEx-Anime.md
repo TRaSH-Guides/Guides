@@ -87,7 +87,7 @@ Has all necessary information and a little extra if you needed to rebuild.
 Adding year back in with tvdb id allows matching to be correct. Thanks salty.
 
 ```bash
-{Series TitleTheYear} [tvdb-{TvdbId}]
+{Series TitleYear} [tvdb-{TvdbId}]
 ```
 
 RESULT:
