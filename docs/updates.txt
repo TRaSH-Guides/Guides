@@ -1,3 +1,15 @@
+# 2022-06-24
+Guide formatting fixes #639
+- Improved: readability of description in `Downloaders - qBittorent - Basic Setup`.
+- Fixed: Series Folder Format issue:#624 in `Sonarr - Release Profile RegEx (Anime)`.
+Radarr CF 20220624 #640
+- Updated: CF `[LQ]` Separated conditions on request.
+- Updated: CF `[HQ-Remux]` Separated conditions on request.
+- Updated: CF `[HQ]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` added  group `HONE`.
+- Updated: CF `[No-RlsGroup]` added group `HONE` to the exemption.
+
 #2022-06-21
 Radarr CF 20220621 #635
 - Updated: CF `[3D]` added 3D group `BluRay3D`.
