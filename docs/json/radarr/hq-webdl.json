@@ -172,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "hone\\b"
+        "value": "\\b(HONE)\\b"
       }
     }
   ]
