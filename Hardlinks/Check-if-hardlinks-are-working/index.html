@@ -1936,6 +1936,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#method-3-using-inode-copies" class="md-nav__link">
+    Method 3: Using Inode copies
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2130,6 +2137,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#method-3-using-inode-copies" class="md-nav__link">
+    Method 3: Using Inode copies
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2151,7 +2165,7 @@
 
 <h1 id="how-to-check-if-hardlinks-are-working">How to check if hardlinks are working<a class="headerlink" href="#how-to-check-if-hardlinks-are-working" title="Permanent link">¶</a></h1>
 <p>You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?</p>
-<p>You can use 2 options to check if you got working hardlinks.</p>
+<p>You can use 3 options to check if you got working hardlinks.</p>
 <p><em>Both ways requires you to login to your terminal with PuTTY or similar software.</em></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -2180,10 +2194,10 @@
 <p>This way requires a bit more work.</p>
 <ul>
 <li>
-<p>On the terminal type: <code>stat /path/to/your/download/location/file.mkv</code></p>
+<p>In the terminal type: <code>stat /path/to/your/download/location/file.mkv</code></p>
 </li>
 <li>
-<p>On the terminal type: <code>stat /path/to/your/media/location/file.mkv</code></p>
+<p>In the terminal type: <code>stat /path/to/your/media/location/file.mkv</code></p>
 </li>
 </ul>
 <p>You will get 2 results you can use to compare several things.</p>
@@ -2192,13 +2206,27 @@
 <li>Links: Everything above 1 means it's a hardlink</li>
 <li>Inode: if the numbers match you know the files are hardlinked</li>
 </ol>
+<h2 id="method-3-using-inode-copies">Method 3: Using Inode copies<a class="headerlink" href="#method-3-using-inode-copies" title="Permanent link">¶</a></h2>
+<ul>
+<li>In your terminal <code>cd</code> to your download location and run <code>ls -i file.mkv</code> or type <code>ls -i /path/to/your/download/location/file.mkv</code></li>
+</ul>
+<p>This will reveal the inode of your file on the left side of the file.</p>
+<p><div class="lightgallery"><a data-sub-html="Hardlinks check ls -i" href="../images/hardlinks-ls-i.png"><img alt="Hardlinks check ls -i" src="../images/hardlinks-ls-i.png" /></a></div></p>
+<ul>
+<li>In your terminal type: <code>find /mnt/user/data/ -inum ###</code> or <code>find . -inum ###</code> if you're in your root folder.</li>
+</ul>
+<div class="admonition note">
+<p><code>###</code> = Your inode number on the left of the file you found.</p>
+</div>
+<p><div class="lightgallery"><a data-sub-html="hardlinks inode" href="../images/hardlinks-inode.png"><img alt="hardlinks inode" src="../images/hardlinks-inode.png" /></a></div></p>
+<p>It will list all files linked with the same inode number.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 24, 2022 18:36:15</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 26, 2022 12:19:25</span>
       
     
   </small>
