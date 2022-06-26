@@ -2,7 +2,7 @@
 
 You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?
 
-You can use 2 options to check if you got working hardlinks.
+You can use 3 options to check if you got working hardlinks.
 
 *Both ways requires you to login to your terminal with PuTTY or similar software.*
 
@@ -43,9 +43,9 @@ You will get a listing of all your files and on the left side you will see a cou
 
 This way requires a bit more work.
 
-- On the terminal type: `stat /path/to/your/download/location/file.mkv`
+- In the terminal type: `stat /path/to/your/download/location/file.mkv`
 
-- On the terminal type: `stat /path/to/your/media/location/file.mkv`
+- In the terminal type: `stat /path/to/your/media/location/file.mkv`
 
 You will get 2 results you can use to compare several things.
 
@@ -53,3 +53,20 @@ You will get 2 results you can use to compare several things.
 
 1. Links: Everything above 1 means it's a hardlink
 1. Inode: if the numbers match you know the files are hardlinked
+
+## Method 3: Using Inode copies
+
+- In your terminal `cd` to your download location and run `ls -i file.mkv` or type `ls -i /path/to/your/download/location/file.mkv`
+
+This will reveal the inode of your file on the left side of the file.
+
+![!Hardlinks check ls -i](images/hardlinks-ls-i.png)
+
+- In your terminal type: `find /mnt/user/data/ -inum ###` or `find . -inum ###` if you're in your root folder.
+
+!!! note ""
+    `###` = Your inode number on the left of the file you found.
+
+![!hardlinks inode](images/hardlinks-inode.png)
+
+It will list all files linked with the same inode number.
