@@ -1,0 +1,35 @@
+{
+  "trash_id": "18098a3ae4e97caa9fa3882db323099f",
+  "trash_score": "0",
+  "name": "FanSub",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "FanSub",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFan[ .-]?Sub(bed)?\\b"
+      }
+    },
+    {
+      "name": "FastSub",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFast[ .-]?Sub(bed)?\\b"
+      }
+    },
+    {
+      "name": "SoftSub",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSoft[ .-]?Sub(bed)?\\b"
+      }
+    }
+  ]
+}

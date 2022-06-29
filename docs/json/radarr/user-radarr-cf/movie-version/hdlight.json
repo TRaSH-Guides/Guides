@@ -1,0 +1,35 @@
+{
+  "trash_id": "c40f3d912c26400237b8ffb590a4a087",
+  "trash_score": "0",
+  "name": "HDLight",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "HD Light",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bHD[ .-]?Light\\b"
+      }
+    },
+    {
+      "name": "mini HD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bm(ini)?[ .-]?HD\\b"
+      }
+    }
+  ]
+}

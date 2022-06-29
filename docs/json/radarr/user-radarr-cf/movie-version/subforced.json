@@ -1,0 +1,26 @@
+{
+  "trash_id": "bd1212a0f575bf5833c4591f88a53801",
+  "trash_score": "0",
+  "name": "SubForced",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "SUBFORCED",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSUBFORCED\\b"
+      }
+    },
+    {
+      "name": "HARDSUB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bHARDSUB\\b"
+      }
+    }
+  ]
+}

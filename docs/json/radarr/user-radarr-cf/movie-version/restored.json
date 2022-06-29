@@ -1,0 +1,17 @@
+{
+  "trash_id": "ae43ba69db61432e187d8f57a740d3fe",
+  "trash_score": "0",
+  "name": "Restored",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "RESTORED",
+      "implementation": "EditionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bRESTORED\\b"
+      }
+    }
+  ]
+}

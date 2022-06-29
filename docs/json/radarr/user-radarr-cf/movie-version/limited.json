@@ -1,0 +1,53 @@
+{
+  "trash_id": "46691dca41611b560a786a1d8b354495",
+  "trash_score": "0",
+  "name": "LiMiTED",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "LiMiTED",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!-)LiMiTED\\b"
+      }
+    },
+    {
+      "name": "FESTiVAL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!-)FESTiVAL\\b"
+      }
+    },
+    {
+      "name": "Straight to Video",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!-)STV\\b"
+      }
+    },
+    {
+      "name": "Direct to Video",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!-)DTV\\b"
+      }
+    },
+    {
+      "name": "Directement en vidéo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!-)DEV\\b"
+      }
+    }
+  ]
+}

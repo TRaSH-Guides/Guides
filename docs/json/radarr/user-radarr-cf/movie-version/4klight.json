@@ -1,0 +1,26 @@
+{
+  "trash_id": "47e3eeee29a787cc09ce0eeedd1d7cb9",
+  "trash_score": "0",
+  "name": "4KLight",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "4K Light",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b4K[ .-]?Light\\b"
+      }
+    }
+  ]
+}
