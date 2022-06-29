@@ -1,0 +1,17 @@
+{
+  "trash_id": "b5575f7f4ecd17f45aa7efd58504b752",
+  "trash_score": "0",
+  "name": "VFQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Canadian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVF?Q\\b"
+      }
+    }
+  ]
+}

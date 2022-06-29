@@ -1,0 +1,62 @@
+{
+  "trash_id": "a29c65e41f71ff2fecbc7124b5455098",
+  "trash_score": "2250",
+  "name": "French UHD (FRATERNiTY)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "FRATERNiTY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[\\[ .-]FRATERNiTY\\b"
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRip",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "Not SDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bSDR\\b"
+      }
+    }
+  ]
+}

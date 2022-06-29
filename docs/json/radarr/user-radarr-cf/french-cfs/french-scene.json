@@ -1,4 +1,6 @@
 {
+  "trash_id": "d9fa7bd4ed44c120816f33ed39992fb9",
+  "trash_score": "0",
   "name": "French Scene",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -8,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(AiRDOCS|AiRLiNE|AiRTV|AKLHD|AZR)\\b"
+        "value": "[\\[ .-](AiRDOCS|AiRLiNE|AiRTV|AKLHD|AZR)\\b"
       }
     },
     {
@@ -17,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(BiPOLAR|BRiNK)\\b"
+        "value": "[\\[ .-](BiPOLAR|BRiNK)\\b"
       }
     },
     {
@@ -26,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(CARAPiLS|CiELOS|CiNEFiLE|CONVOY|CRYPT0)\\b"
+        "value": "[\\[ .-](CARAPiLS|CiELOS|CiNEFiLE|CONVOY|CRYPT0)\\b"
       }
     },
     {
@@ -35,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(D4KiD|DEAL|DUSS)\\b"
+        "value": "[\\[ .-](D4KiD|DEAL|DUSS)\\b"
       }
     },
     {
@@ -44,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(EUBDS)\\b"
+        "value": "[\\[ .-](EUBDS)\\b"
       }
     },
     {
@@ -53,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(FHD|FiDELiO|FiDO|ForceBleue|F(or)?W(ard)?|FRENCHDEADPOOL2)\\b"
+        "value": "[\\[ .-](FHD|FiDELiO|FiDO|ForceBleue|F(or)?W(ard)?|FRENCHDEADPOOL2)\\b"
       }
     },
     {
@@ -62,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(GECKOS|GHOULS|Goatlove)\\b"
+        "value": "[\\[ .-](GECKOS|GHOULS|Goatlove)\\b"
       }
     },
     {
@@ -71,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(HAWAII|HOLiDAYS|HYBRiS)\\b"
+        "value": "[\\[ .-](HAWAII|HOLiDAYS|HYBRiS)\\b"
       }
     },
     {
@@ -80,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(iDHD|iRLS)\\b"
+        "value": "[\\[ .-](iDHD|iRLS)\\b"
       }
     },
     {
@@ -89,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(JMT|JUSTICELEAGUE)\\b"
+        "value": "[\\[ .-](JMT|JUSTICELEAGUE)\\b"
       }
     },
     {
@@ -98,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(KAZETV|KOGi)\\b"
+        "value": "[\\[ .-](KAZETV|KOGi)\\b"
       }
     },
     {
@@ -107,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(LaoZi|LOST|LOUVRE)\\b"
+        "value": "[\\[ .-](LaoZi|LOST|LOUVRE)\\b"
       }
     },
     {
@@ -116,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(MAGiCAL|MELBA|METALLIKA|MUNSTER|MUxHD)\\b"
+        "value": "[\\[ .-](MAGiCAL|MELBA|METALLIKA|MUNSTER|MUxHD)\\b"
       }
     },
     {
@@ -125,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(NERDHD|NERO|NOWiNHD|NrZ|NTK)\\b"
+        "value": "[\\[ .-](NERDHD|NERO|NOWiNHD|NrZ|NTK)\\b"
       }
     },
     {
@@ -134,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(OohLaLa)\\b"
+        "value": "[\\[ .-](OohLaLa)\\b"
       }
     },
     {
@@ -143,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(PANZeR|PFa|PiNKPANTERS|PKPTRS|PRiDEHD|PRODiGE|PRXHD|PURE|PUREWASTEOFBW)\\b"
+        "value": "[\\[ .-](PANZeR|PFa|PiNKPANTERS|PKPTRS|PRiDEHD|PRODiGE|PRXHD|PURE|PUREWASTEOFBW)\\b"
       }
     },
     {
@@ -152,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(Ryotox)\\b"
+        "value": "[\\[ .-](Ryotox)\\b"
       }
     },
     {
@@ -161,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(SCENE|SEiGHT|SESKAPiLE|SH0W|SHiNiGAMiUHD|SiGeRiS|SODAPOP|SOZER|SPINE|SPOiLER|STRINGERBELL)\\b"
+        "value": "[\\[ .-](SCENE|SEiGHT|SESKAPiLE|SH0W|SHiNiGAMiUHD|SiGeRiS|SKYFiRE|SODAPOP|SOZER|SPINE|SPOiLER|STRINGERBELL)\\b"
       }
     },
     {
@@ -170,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(THENiGHTMAREiNHD|THiNK|THREESOME|Thursday13th|TiMELiNE|TSuNaMi)\\b"
+        "value": "[\\[ .-](THENiGHTMAREiNHD|THiNK|THREESOME|Thursday13th|TiMELiNE|TSuNaMi)\\b"
       }
     },
     {
@@ -179,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(UKDHD|UKDTV|ULSHD|Ulysse)\\b"
+        "value": "[\\[ .-](UKDHD|UKDTV|ULSHD|Ulysse)\\b"
       }
     },
     {
@@ -188,7 +190,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(VENUE|VoMiT)\\b"
+        "value": "[\\[ .-](VENUE|VoMiT)\\b"
       }
     },
     {
@@ -197,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b([ ._-]|\\[)(ZEST)\\b"
+        "value": "[\\[ .-](ZEST)\\b"
       }
     }
   ]

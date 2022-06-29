@@ -1,0 +1,35 @@
+{
+  "trash_id": "6e714c35775a363a8d01bc25328fe27e",
+  "trash_score": "0",
+  "name": "VF",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "TRUEFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TRUEFRENCH|VO?FF?)\\b"
+      }
+    },
+    {
+      "name": "FRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFR(A|ENCH)?\\b"
+      }
+    },
+    {
+      "name": "French International",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVF(I|\\d)\\b"
+      }
+    }
+  ]
+}

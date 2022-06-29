@@ -1,0 +1,53 @@
+{
+  "trash_id": "2a2ad73653fff3be34dde9036dc99d16",
+  "trash_score": "1",
+  "name": "French Audio",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TRUEFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TRUEFRENCH|VO?FF?)\\b"
+      }
+    },
+    {
+      "name": "FRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFR(A|ENCH)?\\b"
+      }
+    },
+    {
+      "name": "French International",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVF(I|\\d)\\b"
+      }
+    },
+    {
+      "name": "Belgian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVFB\\b"
+      }
+    },
+    {
+      "name": "Canadian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVF?Q\\b"
+      }
+    }
+  ]
+}

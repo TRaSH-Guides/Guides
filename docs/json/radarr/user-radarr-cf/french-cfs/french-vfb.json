@@ -1,14 +1,16 @@
 {
-  "name": "VFQ",
+  "trash_id": "73eeb95faa28625e8d2b0d8223863dbd",
+  "trash_score": "0",
+  "name": "VFB",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "VFQ",
+      "name": "Belgium French",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "VFQ"
+        "value": "\\bVFB\\b"
       }
     }
   ]

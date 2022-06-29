@@ -1,23 +1,25 @@
 {
-  "name": "FANSUB",
+  "trash_id": "b9c2a9b1ca4e4b5e5f212a9cc5b90683",
+  "trash_score": "0",
+  "name": "VOSTFR",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "FASTSUB",
+      "name": "VOSTFR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bFAST[ ._-]?SUB\\b"
+        "value": "\\bVOST\\+?F(R(E|A)?)?\\b"
       }
     },
     {
-      "name": "FANSUB",
+      "name": "SUBFRENCH",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bFAN[ ._-]?SUB\\b"
+        "value": "\\bSUBFR(A|ENCH)?\\b"
       }
     }
   ]
