@@ -46,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!e)ac3"
+        "value": "\\bDD(\\b|\\d)|(?<!e)ac3"
       }
     },
     {

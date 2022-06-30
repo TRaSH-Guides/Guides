@@ -9,7 +9,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "\\bDD[^a-z+]|(?<!e)ac3"
+              "value": "\\bDD(\\b|\\d)|(?<!e)ac3"
           }
       },
       {
