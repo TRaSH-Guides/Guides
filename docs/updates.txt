@@ -1,3 +1,10 @@
+# 2022-07-01
+Raised score from 25 to 800 to match Imax Enhanced. #650
+- Updated: CF `[IMAX]` Raised score from `25` to `800` to match `Imax Enhanced`.
+Fixed: Conditions in various sound codec CFs #649
+- Fixed: Conditions in `[DTS]` and `[DTS-ES]`
+- Fixed: Regex to recognize Basic Dolby Digital `[DD]`, updated the regex to fix the recognition of `DD` to help with incorrect matching of some Custom Formats.
+
 # 2022-06-26
 Added word boundary for HONE #642
 - Updated: CF `[HQ-WEBDL]` Added word boundary for `HONE`.
