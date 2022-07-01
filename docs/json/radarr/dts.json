@@ -22,6 +22,15 @@
           }
       },
       {
+          "name": "Not DTS-HD HRA/ES",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+              "value": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))"
+          }
+      },
+      {
           "name": "Not Dolby Digital Plus",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
