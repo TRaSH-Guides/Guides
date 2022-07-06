@@ -1,3 +1,12 @@
+# 2022-07-06
+Changed: CF HDR10 to match HDR to prevent loops #655
+- Changed: CF `HDR10` to match `HDR` to prevent loops `550` to `500`.
+Sonarr rp fix dv nowebdl #654
+- Fix: Optional - Ignore Dolby Vision without HDR10 fallback.
+- Removed: `optimal.json` cleaned up v1 of this file please use `optionals.json` (recyclarr)
+Fixed? the TrueHD regex #647
+- Fixed: `True-HD` or `True HD` leading to not being recognized by the CFs.
+
 # 2022-07-01
 Raised score from 25 to 800 to match Imax Enhanced. #650
 - Updated: CF `[IMAX]` Raised score from `25` to `800` to match `Imax Enhanced`.
