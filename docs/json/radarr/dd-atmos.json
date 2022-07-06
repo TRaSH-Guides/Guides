@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "TrueHD"
+        "value": "True[ .-]?HD"
       }
     },
     {
