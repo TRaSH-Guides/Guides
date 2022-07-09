@@ -3,13 +3,24 @@
   "trash_score": "-10000",
   "name": "3D",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "3D",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-          "value": "\\b3d|sbs|half[ .-]ou|half[ .-]sbs\\b"
+        "value": "\\b3d|sbs|half[ .-]ou|half[ .-]sbs\\b"
       }
-  }]
+    },
+    {
+      "name": "BluRay3D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BluRay3D)\\b"
+      }
+    }
+  ]
 }

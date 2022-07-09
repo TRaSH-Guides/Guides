@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "TrueHD|W4NK3R|HQMUX"
+        "value": "True[ .-]?HD|W4NK3R|HQMUX"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!e)ac3"
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
       }
     },
     {

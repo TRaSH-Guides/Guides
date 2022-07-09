@@ -36,7 +36,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "(?<!e)ac3"
+              "value": "\\bDD[^a-z+]|(?<!e)ac3"
           }
       },
       {
@@ -63,7 +63,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "TrueHD|\\bATMOS(\\b|\\d)"
+              "value": "True[ .-]?HD|\\bATMOS(\\b|\\d)"
           }
       }
   ]

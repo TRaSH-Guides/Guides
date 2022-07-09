@@ -1,3 +1,43 @@
+# 2022-07-06
+Changed: CF HDR10 to match HDR to prevent loops #655
+- Changed: CF `HDR10` to match `HDR` to prevent loops `550` to `500`.
+Sonarr rp fix dv nowebdl #654
+- Fix: Optional - Ignore Dolby Vision without HDR10 fallback.
+- Removed: `optimal.json` cleaned up v1 of this file please use `optionals.json` (recyclarr)
+Fixed? the TrueHD regex #647
+- Fixed: `True-HD` or `True HD` leading to not being recognized by the CFs.
+
+# 2022-07-01
+Raised score from 25 to 800 to match Imax Enhanced. #650
+- Updated: CF `[IMAX]` Raised score from `25` to `800` to match `Imax Enhanced`.
+Fixed: Conditions in various sound codec CFs #649
+- Fixed: Conditions in `[DTS]` and `[DTS-ES]`
+- Fixed: Regex to recognize Basic Dolby Digital `[DD]`, updated the regex to fix the recognition of `DD` to help with incorrect matching of some Custom Formats.
+
+# 2022-06-26
+Added word boundary for HONE #642
+- Updated: CF `[HQ-WEBDL]` Added word boundary for `HONE`.
+- Updated: CF `[No-RlsGroup]` Added word boundary for `HONE`.
+How to check if hardlinks work inode find option #643
+- Added: How to check if hardlinks work inode find option.
+
+# 2022-06-24
+Guide formatting fixes #639
+- Improved: readability of description in `Downloaders - qBittorent - Basic Setup`.
+- Fixed: Series Folder Format issue:#624 in `Sonarr - Release Profile RegEx (Anime)`.
+Radarr CF 20220624 #640
+- Updated: CF `[LQ]` Separated conditions on request.
+- Updated: CF `[HQ-Remux]` Separated conditions on request.
+- Updated: CF `[HQ]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` added  group `HONE`.
+- Updated: CF `[No-RlsGroup]` added group `HONE` to the exemption.
+
+#2022-06-21
+Radarr CF 20220621 #635
+- Updated: CF `[3D]` added 3D group `BluRay3D`.
+- Updated: CF `[DV (WEBDL)]` replaced condition `DV HDR10` with `No HDR`.
+
 # 2022-06-13
 Shortened Streaming Service naming #626
 - Changed: On request Streaming Service to short names.
