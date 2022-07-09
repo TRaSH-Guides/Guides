@@ -1,4 +1,6 @@
 {
+  "trash_id": "xxx",
+  "trash_score": "3000",
   "name": "DD+ ATMOS",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -26,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "TrueHD"
+        "value": "True[ .-]?HD"
       }
     },
     {
@@ -44,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!e)ac3"
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
       }
     },
     {
