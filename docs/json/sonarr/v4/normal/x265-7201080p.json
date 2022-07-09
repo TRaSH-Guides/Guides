@@ -1,4 +1,6 @@
 {
+  "trash_id": "xxx",
+  "trash_score": "-10000",
   "name": "x265 (720/1080p)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

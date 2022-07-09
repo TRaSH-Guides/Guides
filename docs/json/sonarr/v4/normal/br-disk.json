@@ -1,4 +1,6 @@
 {
+  "trash_id": "xxx",
+  "trash_score": "-10000",
   "name": "BR-DISK",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
