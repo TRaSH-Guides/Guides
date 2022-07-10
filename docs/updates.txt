@@ -1,3 +1,21 @@
+# 2022-07-10
+Radarr cf 20220710 #661
+- Replaced/Renamed: `dd-atmos.json` to `ddplus-atmos.json` to be consistent.
+- Added: Scoring to CF `[MP3]` =>  `500`.
+- Added: Scoring to CF `[Opus]` => `250`.
+- Fixed: CF [MA] for false positive.
+- Separated: CF [Obfuscated] conditions and created CF [Retags].
+- Added: NEW CF `[Retags]` with a score of `-10000`.
+How to check if hardlinks work formatting fix #660
+- Fixed: formatting to make it more clear.
+How to run the unRaid mover for qBittorent seeding torrents - formatting #659
+- Fixed: formatting to make it more understandable.
+Added Streaming Service CF for MoviesAnywhere #657
+- Added: Streaming Service CF for MoviesAnywhere.
+Add missing bots to Clean.py (SABnzbd) #656
+- Add: missing bots to Clean script (SABnzbd).
+- Optimize regex matching in Clean script (SABnzbd).
+
 # 2022-07-06
 Changed: CF HDR10 to match HDR to prevent loops #655
 - Changed: CF `HDR10` to match `HDR` to prevent loops `550` to `500`.
