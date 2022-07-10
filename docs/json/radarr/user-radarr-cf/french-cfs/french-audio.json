@@ -5,6 +5,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "French Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2
+      }
+    },
+    {
       "name": "TRUEFRENCH",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

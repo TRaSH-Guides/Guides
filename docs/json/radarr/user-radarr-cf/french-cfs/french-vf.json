@@ -21,15 +21,6 @@
       "fields": {
         "value": "\\bFR(A|ENCH)?\\b"
       }
-    },
-    {
-      "name": "French International",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(VF|FR)(I|\\d)\\b"
-      }
     }
   ]
 }

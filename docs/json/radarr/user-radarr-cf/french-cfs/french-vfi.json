@@ -1,0 +1,17 @@
+{
+  "trash_id": "e494f3dba821e25a67d7169ac7010c59",
+  "trash_score": "0",
+  "name": "VFI",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "French International",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(VF|FR)(I|\\d)\\b"
+      }
+    }
+  ]
+}
