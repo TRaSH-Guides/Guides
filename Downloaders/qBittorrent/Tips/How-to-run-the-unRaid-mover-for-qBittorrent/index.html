@@ -2340,35 +2340,42 @@
 <p>Install the following Plugins.</p>
 <ul>
 <li>User Scripts</li>
-<li>Nerd Tools</li>
-<li>python3</li>
-<li>python-setuptools</li>
+<li>Nerd Tools<ul>
+<li>python3 <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+<li>python-setuptools <sup id="fnref2:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h2>
 <p>After you installed the needed Plugins it's time to configure everything.</p>
 <h3 id="qbit-api">qBit API<a class="headerlink" href="#qbit-api" title="Permanent link">¶</a></h3>
 <p>The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.</p>
+<p>You can choose from the following 2 options how you want to install it, depending what you preferce.</p>
+<ul>
+<li><a href="#user-scripts">User scripts</a></li>
+<li><a href="#go-file">Go File</a></li>
+</ul>
 <h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link">¶</a></h4>
 <p>With this option we're going to install the qBit API when the Array is started the first time.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="User Scripts" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="User Scripts" src="../images/Unraid-settings-user-scripts-icon.png" /></a></div></p>
 </details>
 <p>Select at the bottom <code>ADD NEW SCRIPT</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Add New Script" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png" /></a></div></p>
 </details>
 <p>A popup will appear where you can give it a name, for this example we're going to use <code>Install qBittorrent API</code> and then click on <code>OK</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Install qBittorrent API" href="../images/Unraid-user-scripts-add-new-script-enter-name.png"><img alt="Install qBittorrent API" src="../images/Unraid-user-scripts-add-new-script-enter-name.png" /></a></div></p>
 </details>
 <p>Click in the list on the cogwheel of the new user scrip you made.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Select user script" href="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"><img alt="Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-api.png" /></a></div></p>
 </details>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
@@ -2376,28 +2383,29 @@
 pip install qbittorrent-api
 </code></pre></div>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Bash script" href="../images/Unraid-settings-user-scripts-qbit-api.png"><img alt="Bash script" src="../images/Unraid-settings-user-scripts-qbit-api.png" /></a></div></p>
 </details>
 <p>Select in the schedule list when the script should run, and choose <code>At First Array Start Only</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Set Run Time" href="../images/Unraid-settings-user-scripts-qbit-api-schedule.png"><img alt="Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-api-schedule.png" /></a></div></p>
 </details>
 <p>Click on <code>RUN IN BACKGROUND</code> or restart your unRaid server so the qBit API is installed.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="RUN IN BACKGROUND" href="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"><img alt="RUN IN BACKGROUND" src="../images/Unraid-settings-user-scripts-qbit-api-run-background.png" /></a></div></p>
 </details>
 <hr />
 <h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link">¶</a></h4>
 <p>With this option we're going to install the qBit API when the unRaid server is started.</p>
-<p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file in your favorite editor and copy/paste the following command.</p>
+<p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) and copy/paste the following command.</p>
 <div class="highlight"><pre><span></span><code>pip install qbittorrent-api
 </code></pre></div>
 <p>Restart your unRaid Server, or run the above command from the terminal.</p>
 <hr />
 <h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link">¶</a></h3>
+<p>Edit the script with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) you downloaded at the beginning of the guide <a href="#the-script">HERE</a>.</p>
 <p>You only need to edit a few options in the script</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># --DEFINE VARIABLES--#</span>
 <span class="c1"># Set Number of Days to stop torrents for the move</span>
@@ -2409,7 +2417,7 @@ pip install qbittorrent-api
 </code></pre></div>
 <ul>
 <li><code>days</code> =&gt; Set Number of Days to stop torrents for the move.</li>
-<li><code>qbt_host</code> =&gt; The URL you use to access qBittorrent locally.</li>
+<li><code>qbt_host</code> =&gt; The URL you use to access qBittorrent locally. (<em>the</em> <code>'</code> <em>should remain</em>)</li>
 <li><code>qbt_user</code> =&gt; Your used qBittorrent <code>User Name</code> if you have authentication enabled.</li>
 <li><code>qbt_pass</code> =&gt; Your used qBittorrent <code>Password</code> if you have authentication enabled.</li>
 </ul>
@@ -2417,7 +2425,7 @@ pip install qbittorrent-api
 <p>If you don't use the unRaid <code>Mover Tuning</code> app, You might need to change <strong>line 54</strong> from <code>os.system('/usr/local/sbin/mover.old start')</code> to <code>os.system('/usr/local/sbin/mover start')</code></p>
 </div>
 <h4 id="copy-script-to-your-preferred-location">Copy script to your preferred location<a class="headerlink" href="#copy-script-to-your-preferred-location" title="Permanent link">¶</a></h4>
-<p>Now it's time to place the script somewhere easy to access/remember.</p>
+<p>Now it's time to place the script you just edited somewhere easy to access/remember.</p>
 <p>Suggestions:</p>
 <ul>
 <li><code>/mnt/user/appdata/qbittorrent/scripts</code> (yes you need to create this folder your self)</li>
@@ -2427,22 +2435,22 @@ pip install qbittorrent-api
 <p>Now it's time to setup the scheduler when the mover should run.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="User Scripts" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="User Scripts" src="../images/Unraid-settings-user-scripts-icon.png" /></a></div></p>
 </details>
 <p>Select at the bottom <code>ADD NEW SCRIPT</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Add New Script" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png" /></a></div></p>
 </details>
 <p>A popup will appear where you can give it a name, for this example we're going to use <code>qBittorrent Mover</code> and then click on <code>OK</code>.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="qBittorrent Mover" href="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png"><img alt="qBittorrent Mover" src="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png" /></a></div></p>
 </details>
 <p>Click in the list on the cogwheel of the new user scrip you made.</p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Select user script" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"><img alt="Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png" /></a></div></p>
 </details>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
@@ -2458,19 +2466,19 @@ pip install qbittorrent-api
 <p>Replace the <code>/mnt/user/data/scripts/mover.py</code> path to the path where you placed your python script.</p>
 </div>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Bash script" href="../images/Unraid-settings-user-scripts-qbit-mover.png"><img alt="Bash script" src="../images/Unraid-settings-user-scripts-qbit-mover.png" /></a></div></p>
 </details>
 <p>Select in the schedule list when the script should run, and choose <code>Custom</code></p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Set Run Time" href="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png"><img alt="Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png" /></a></div></p>
 </details>
 <p>After changing to <code>Custom</code> you get on the right a extra option where you can setup your cron schedule when it should be run.</p>
 <p>For this example we're going to let the script run a 4am at night. <code>0 4 * * *</code></p>
 <p>Setup your own schedule <a href="https://crontab.guru/">HERE</a></p>
 <details class="check">
-<summary>Example - [CLICK TO EXPAND]</summary>
+<summary>Screenshot Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Set Run Time" href="../images/Unraid-settings-user-scripts-qbit-mover-cron.png"><img alt="Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-cron.png" /></a></div></p>
 </details>
 <hr />
@@ -2485,6 +2493,9 @@ pip install qbittorrent-api
 <li id="fn:1">
 <p>Starr apps = Sonarr/Radarr etc. Doesn't Starr apps sound better then <code>The arr(s)</code> ?&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
+<li id="fn:2">
+<p>These needs to be installed from the Nerd Tools.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
 </ol>
 </div>
 
@@ -2493,7 +2504,7 @@ pip install qbittorrent-api
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 22, 2022 20:22:12</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 10, 2022 10:07:15</span>
       
     
   </small>
