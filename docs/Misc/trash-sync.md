@@ -2,6 +2,7 @@
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
+- GUI (graphical user interface) [^1]
 - Radarr Custom Formats [^1] [^2]
 - Radarr Scores [^1] [^2]
 - Radarr Quality Settings (File Size) [^2]

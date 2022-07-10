@@ -245,7 +245,7 @@ These options allow you to control the number of active torrents being downloade
 
 ![!Security](images/qb-options-webui-security.png)
 
-1. Enable clickjacking protection, in some cases when this is enabled it could result in issues.
+1. In some cases when this is enabled it could result in issues.
 
     !!! check ""
         **Suggested: `Disabled`**

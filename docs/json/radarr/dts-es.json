@@ -9,7 +9,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))"
+              "value": "dts[-. ]?es\\b"
           }
       },
       {
@@ -18,7 +18,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "TrueHD|\\bATMOS(\\b|\\d)"
+              "value": "True[ .-]?HD|\\bATMOS(\\b|\\d)"
           }
       },
       {
@@ -45,7 +45,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "\\bDD(\\b|\\d)|(?<!e)ac3"
+              "value": "\\bDD[^a-z+]|(?<!e)ac3"
           }
       },
       {
@@ -82,15 +82,6 @@
           "required": true,
           "fields": {
               "value": "\\b(l?)PCM(\\b|\\d)"
-          }
-      },
-      {
-          "name": "6.1 Surround",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-              "value": "[^0-9]6[ .][0-1]"
           }
       }
   ]

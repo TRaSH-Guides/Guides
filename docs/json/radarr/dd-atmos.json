@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "TrueHD"
+        "value": "True[ .-]?HD"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!e)ac3"
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
       }
     },
     {
