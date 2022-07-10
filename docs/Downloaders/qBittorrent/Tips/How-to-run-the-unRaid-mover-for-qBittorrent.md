@@ -33,8 +33,8 @@ Install the following Plugins.
 
 - User Scripts
 - Nerd Tools
-    - python3 [^2]
-    - python-setuptools [^2]
+      - python3 [^2]
+      - python-setuptools [^2]
 
 ------
 
