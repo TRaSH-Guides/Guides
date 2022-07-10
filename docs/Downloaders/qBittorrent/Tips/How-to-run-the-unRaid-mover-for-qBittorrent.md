@@ -33,8 +33,8 @@ Install the following Plugins.
 
 - User Scripts
 - Nerd Tools
-  - python3
-  - python-setuptools
+    - python3 [^2]
+    - python-setuptools [^2]
 
 ------
 
@@ -46,28 +46,33 @@ After you installed the needed Plugins it's time to configure everything.
 
 The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.
 
+You can choose from the following 2 options how you want to install it, depending what you preferce.
+
+- [User scripts](#user-scripts)
+- [Go File](#go-file)
+
 #### User scripts
 
 With this option we're going to install the qBit API when the Array is started the first time.
 
 Go to your unRaid Dashboard to your settings tab and select in the `User Utilities` at the bottom the new plugin you installed `User Scripts`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!User Scripts](images/Unraid-settings-user-scripts-icon.png)
 
 Select at the bottom `ADD NEW SCRIPT`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
 
 A popup will appear where you can give it a name, for this example we're going to use `Install qBittorrent API` and then click on `OK`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Install qBittorrent API](images/Unraid-user-scripts-add-new-script-enter-name.png)
 
 Click in the list on the cogwheel of the new user scrip you made.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Select user script](images/Unraid-settings-user-scripts-list-select-qbit-api.png)
 
 Copy/Paste in the new windows that opens the following bash command followed by `SAVE CHANGES`.
@@ -77,17 +82,17 @@ Copy/Paste in the new windows that opens the following bash command followed by 
 pip install qbittorrent-api
 ```
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Bash script](images/Unraid-settings-user-scripts-qbit-api.png)
 
 Select in the schedule list when the script should run, and choose `At First Array Start Only`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-api-schedule.png)
 
 Click on `RUN IN BACKGROUND` or restart your unRaid server so the qBit API is installed.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!RUN IN BACKGROUND](images/Unraid-settings-user-scripts-qbit-api-run-background.png)
 
 ------
@@ -96,7 +101,7 @@ Click on `RUN IN BACKGROUND` or restart your unRaid server so the qBit API is in
 
 With this option we're going to install the qBit API when the unRaid server is started.
 
-On your USB stick/key go to `/boot/config` and open the `go` file in your favorite editor and copy/paste the following command.
+On your USB stick/key go to `/boot/config` and open the `go` file with your favorite editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) and copy/paste the following command.
 
 ```bash
 pip install qbittorrent-api
@@ -107,6 +112,8 @@ Restart your unRaid Server, or run the above command from the terminal.
 ------
 
 ### Script
+
+Edit the script with your favorite editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) you downloaded at the beginning of the guide [HERE](#the-script).
 
 You only need to edit a few options in the script
 
@@ -121,7 +128,7 @@ qbt_pass = adminadmin
 ```
 
 - `days` => Set Number of Days to stop torrents for the move.
-- `qbt_host` => The URL you use to access qBittorrent locally.
+- `qbt_host` => The URL you use to access qBittorrent locally. (*the* `'` *should remain*)
 - `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled.
 - `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled.
 
@@ -130,7 +137,7 @@ qbt_pass = adminadmin
 
 #### Copy script to your preferred location
 
-Now it's time to place the script somewhere easy to access/remember.
+Now it's time to place the script you just edited somewhere easy to access/remember.
 
 Suggestions:
 
@@ -143,22 +150,22 @@ Now it's time to setup the scheduler when the mover should run.
 
 Go to your unRaid Dashboard to your settings tab and select in the `User Utilities` at the bottom the new plugin you installed `User Scripts`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!User Scripts](images/Unraid-settings-user-scripts-icon.png)
 
 Select at the bottom `ADD NEW SCRIPT`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Add New Script](images/Unraid-user-scripts-add-new-script-icon.png)
 
 A popup will appear where you can give it a name, for this example we're going to use `qBittorrent Mover` and then click on `OK`.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!qBittorrent Mover](images/Unraid-user-scripts-add-new-script-enter-name-qbt.png)
 
 Click in the list on the cogwheel of the new user scrip you made.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Select user script](images/Unraid-settings-user-scripts-list-select-qbit-mover.png)
 
 Copy/Paste in the new windows that opens the following bash command followed by `SAVE CHANGES`.
@@ -175,12 +182,12 @@ echo qbittorrent-mover completed and resumed all paused torrents.
 !!! info
     Replace the `/mnt/user/data/scripts/mover.py` path to the path where you placed your python script.
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
 
 Select in the schedule list when the script should run, and choose `Custom`
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-mover-schedule.png)
 
 After changing to `Custom` you get on the right a extra option where you can setup your cron schedule when it should be run.
@@ -189,10 +196,13 @@ For this example we're going to let the script run a 4am at night. `0 4 * * *`
 
 Setup your own schedule [HERE](https://crontab.guru/)
 
-??? check "Example - [CLICK TO EXPAND]"
+??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-mover-cron.png)
 
 --8<-- "includes/support.md"
 
 [^1]:
     Starr apps = Sonarr/Radarr etc. Doesn't Starr apps sound better then `The arr(s)` ?
+
+[^2]:
+    These needs to be installed from the Nerd Tools.
