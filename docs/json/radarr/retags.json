@@ -1,0 +1,44 @@
+{
+  "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+  "trash_score": "-10000",
+  "name": "Retags",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "[rartv]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[rartv\\]"
+      }
+    },
+    {
+      "name": "[rarbg]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[rarbg\\]"
+      }
+    },
+    {
+      "name": "[eztv]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[eztv\\]"
+      }
+    },
+    {
+      "name": "[TGx]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[TGx\\]"
+      }
+    }
+  ]
+}
