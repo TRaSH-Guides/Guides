@@ -57,7 +57,7 @@ I also made 3 guides related to this one.
 | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
 | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
 | [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
-|                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       |                              |
+|                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
 
 ------
 
@@ -1322,6 +1322,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### MA
+
+<sub>Movies Anywhere</sub>
+
+??? faq "Movies Anywhere - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/ma.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
