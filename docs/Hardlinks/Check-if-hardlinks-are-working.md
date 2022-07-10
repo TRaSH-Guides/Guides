@@ -4,7 +4,7 @@ You've followed the guide step by step but still want to check if hardlinks are 
 
 You can use 3 options to check if you got working hardlinks.
 
-*Both ways requires you to login to your terminal with PuTTY or similar software.*
+*All methods require you to login to your terminal with PuTTY or similar software.*
 
 !!! attention
     You can't create hard links for directories :bangbang:
