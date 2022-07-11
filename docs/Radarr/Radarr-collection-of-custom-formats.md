@@ -37,7 +37,7 @@ I also made 3 guides related to this one.
 | [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
 | [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
 | [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
-| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
+| [DD+ ATMOS](#ddplus-atmos)                | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
 | [TrueHD](#truehd)                         | [DD](#dd)                       | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
 | [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
 | [DD+](#ddplus)                            | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
@@ -56,8 +56,8 @@ I also made 3 guides related to this one.
 | [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
 | [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
 | [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
-|                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
+| [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                  | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
+|                                               | [DV (WEBDL)](#dv-webdl)            | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
 
 ------
 
@@ -127,7 +127,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dd-atmos.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/ddplus-atmos.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -952,12 +952,28 @@ I also made 3 guides related to this one.
 
 ??? faq "Obfuscated - [CLICK TO EXPAND]"
 
-    Optional (use these only if you dislike renamed and retagged releases)
+    Optional (use these only if you dislike renamed releases)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/obfuscated.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Retags
+
+??? faq "Retags - [CLICK TO EXPAND]"
+
+    Optional (use these only if you dislike retagged releases)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/retags.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
