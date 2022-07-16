@@ -1,0 +1,62 @@
+{
+  "trash_id": "eb715b06bf410aeb7db1f252c48a1b36",
+  "trash_score": "-10000",
+  "name": "Anime Dubs Only",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "KS (Not Dual Audio)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
+      }
+    },
+    {
+      "name": "Dubbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+      }
+    },
+    {
+      "name": "Golumpa",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Golumpa)\\b"
+      }
+    },
+    {
+      "name": "torenter69",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(torenter69)\\b"
+      }
+    },
+    {
+      "name": "KamiFS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KamiFS)\\b"
+      }
+    },
+    {
+      "name": "KaiDubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KaiDubs)\\b"
+      }
+    }
+  ]
+}
