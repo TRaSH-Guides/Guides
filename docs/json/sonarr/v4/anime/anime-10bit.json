@@ -1,0 +1,25 @@
+{
+  "trash_id": "c77040cde7b8232ab284cd8b2ec9d3e4",
+  "name": "Anime 10bit",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "10bit",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "10\\.?bit"
+      }
+    },
+    {
+      "name": "hi10p",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "hi10p"
+      }
+    }
+  ]
+}
