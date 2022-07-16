@@ -525,15 +525,6 @@
       "fields": {
         "value": "NoGr(ou)?p"
       }
-    },
-    {
-      "name": "EVO",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[-. ]EVO(TGX)?\\b"
-      }
     }
   ]
 }
