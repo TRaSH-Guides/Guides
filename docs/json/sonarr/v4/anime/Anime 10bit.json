@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "10.?bit"
+        "value": "10\\.?bit"
       }
     },
     {
