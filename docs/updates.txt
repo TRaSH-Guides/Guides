@@ -6,7 +6,7 @@ Sonarr RP 20220717 #666
 Added: PSA to Radarr LQ #665
 - Added: `PSA` to `[LQ]`.
 Removed: EVO from the Radarr [LQ] #664
-- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`
+- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`.
 
 # 2022-07-10
 Radarr cf 20220710 #661
