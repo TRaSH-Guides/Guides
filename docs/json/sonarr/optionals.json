@@ -4,7 +4,7 @@
   "ignored": [{
     "name": "Golden rule",
     "trash_id": "cec8880b847dd5d31d29167ee0112b57",
-    "term": "/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i"
+    "term": "/^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i"
   }, {
     "name": "Ignore Dolby Vision without HDR10 fallback.",
     "trash_id": "436f5a7d08fbf02ba25cb5e5dfe98e55",
