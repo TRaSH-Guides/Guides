@@ -2571,7 +2571,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-AJP69<span class="p">|</span>-BTN<span class="p">|</span>-CasStudio<span class="p">|</span>-CtrlHD<span class="p">|</span>-KiNGS<span class="p">|</span>-monkee<span class="p">|</span>-NTb<span class="p">|</span>-NTG<span class="p">|</span>-QOQ<span class="p">|</span>-RTN<span class="p">|</span>-TOMMY<span class="p">|</span>-ViSUM<span class="p">|</span>-T6D<span class="p">|</span>-FLUX<span class="p">|</span>NOSiViD<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [125]</p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-BTW<span class="p">|</span>-Chotab<span class="p">|</span>-CiT<span class="p">|</span>-DEEP<span class="p">|</span>-iJP<span class="p">|</span>-iT00NZ<span class="p">|</span>-LAZY<span class="p">|</span>-NYH<span class="p">|</span>-SA89<span class="p">|</span>-SIGMA<span class="p">|</span>-TEPES<span class="p">|</span>-TVSmash<span class="p">|</span>-SDCC<span class="p">|</span>-iKA<span class="p">|</span>-iJP<span class="p">|</span>-Cinefeel<span class="p">|</span>-SPiRiT<span class="p">|</span>-FC<span class="p">|</span>-JETIX<span class="p">|</span>-Coo7<span class="p">|</span>-WELP<span class="p">|</span>-KiMCHI<span class="p">|</span>-BLUTONiUM<span class="p">|</span>-orbitron<span class="p">|</span>-ETHiCS<span class="p">|</span>-RTFM<span class="p">|</span>-PSiG<span class="p">|</span>-MZABI<span class="p">|</span>-ROCCaT<span class="p">|</span>3cTWeB<span class="p">|</span>playWEB<span class="p">|</span>-KHN<span class="p">|</span>NPMS<span class="p">|</span>-END<span class="p">|</span>-SiC<span class="o">)</span><span class="se">\b</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-BTW<span class="p">|</span>-Chotab<span class="p">|</span>-CiT<span class="p">|</span>-DEEP<span class="p">|</span>-iJP<span class="p">|</span>-iT00NZ<span class="p">|</span>-LAZY<span class="p">|</span>-NYH<span class="p">|</span>-SA89<span class="p">|</span>-SIGMA<span class="p">|</span>-TEPES<span class="p">|</span>-TVSmash<span class="p">|</span>-SDCC<span class="p">|</span>-iKA<span class="p">|</span>-iJP<span class="p">|</span>-Cinefeel<span class="p">|</span>-SPiRiT<span class="p">|</span>-FC<span class="p">|</span>-JETIX<span class="p">|</span>-Coo7<span class="p">|</span>-WELP<span class="p">|</span>-KiMCHI<span class="p">|</span>-BLUTONiUM<span class="p">|</span>-orbitron<span class="p">|</span>-ETHiCS<span class="p">|</span>-RTFM<span class="p">|</span>-PSiG<span class="p">|</span>-MZABI<span class="p">|</span>-ROCCaT<span class="p">|</span>3cTWeB<span class="p">|</span>playWEB<span class="p">|</span>-KHN<span class="p">|</span>NPMS<span class="p">|</span>-END<span class="p">|</span>-SiC<span class="p">|</span>-GNOME<span class="p">|</span>-ABBIE<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [100]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-ViSiON<span class="o">)</span><span class="se">\b</span>/i
@@ -2651,7 +2651,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <details class="question">
 <summary>Why the Must Not Contain entry - [CLICK TO EXPAND]</summary>
 <p>This one blocks/ignores 720/1080p releases that are (re-)encoded in x265.</p>
-<p>So why did I put <code>/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i</code> as <code>Must Not Contain</code> and what does it do ?</p>
+<p>So why did I put <code>/^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i</code> as <code>Must Not Contain</code> and what does it do ?</p>
 <p>Why ?</p>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
@@ -2677,7 +2677,7 @@ It's all really dependent on specific situations for different people</p>
 </ul>
 </details>
 <p>Add this to your <code>Must not contain (2)</code></p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>?<span class="o">=(</span><span class="m">1080</span><span class="p">|</span><span class="m">720</span><span class="o">))</span>.*<span class="o">((</span>x<span class="p">|</span>h<span class="o">)[</span> ._-<span class="o">]</span>?265<span class="p">|</span>hevc<span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?<span class="o">=</span>.*<span class="o">(</span><span class="m">1080</span><span class="p">|</span><span class="m">720</span><span class="o">))(</span>?<span class="o">=</span>.*<span class="o">((</span>x<span class="p">|</span>h<span class="o">)[</span> ._-<span class="o">]</span>?265<span class="p">|</span>hevc<span class="o">))</span>.*/i
 </code></pre></div>
 <details class="success">
 <summary>example - [CLICK TO EXPAND]</summary>
@@ -2850,7 +2850,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2022 18:23:38</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 17, 2022 16:10:06</span>
       
     
   </small>
