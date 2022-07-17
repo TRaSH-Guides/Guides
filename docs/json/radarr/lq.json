@@ -525,6 +525,15 @@
       "fields": {
         "value": "NoGr(ou)?p"
       }
+    },
+    {
+      "name": "PSA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PSA)\\b"
+      }
     }
   ]
 }
