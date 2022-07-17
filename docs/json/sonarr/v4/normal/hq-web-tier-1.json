@@ -156,13 +156,22 @@
       }
     },
     {
-      "name": "SIC",
+      "name": "SiC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-SiC\\b"
       }
+    },
+    {
+        "name": "ABBiE",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": "-ABBiE\\b"
+        }
     }
   ]
 }
