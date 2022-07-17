@@ -212,7 +212,7 @@ Add this to your `Preferred (3)` with a score of [150]
 Add this to your `Preferred (3)` with a score of [125]
 
 ```bash
-/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END|-SiC)\b/i
+/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END|-SiC|-GNOME|-ABBIE)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [100]
@@ -311,7 +311,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 
     This one blocks/ignores 720/1080p releases that are (re-)encoded in x265.
 
-    So why did I put `/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i` as `Must Not Contain` and what does it do ?
+    So why did I put `/^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i` as `Must Not Contain` and what does it do ?
 
     Why ?
 
@@ -342,7 +342,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 Add this to your `Must not contain (2)`
 
 ```bash
-/(?=(1080|720)).*((x|h)[ ._-]?265|hevc)/i
+/^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i
 ```
 
 ??? success "example - [CLICK TO EXPAND]"
