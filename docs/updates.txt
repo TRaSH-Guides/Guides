@@ -1,3 +1,13 @@
+# 2022-07-17
+Sonarr RP 20220717 #666
+- Fixed: Better recognizing of 1080p/x265 in random order.
+- Added: GNOME to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+- Added: ABBIE to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+Added: PSA to Radarr LQ #665
+- Added: `PSA` to `[LQ]`.
+Removed: EVO from the Radarr [LQ] #664
+- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`
+
 # 2022-07-10
 Radarr cf 20220710 #661
 - Replaced/Renamed: `dd-atmos.json` to `ddplus-atmos.json` to be consistent.
