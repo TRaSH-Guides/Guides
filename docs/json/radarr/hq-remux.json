@@ -14,12 +14,12 @@
       }
     },
     {
-      "name": "FraMeSToR",
+      "name": "BLURANiUM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FraMeSToR"
+        "value": "BLURANiUM"
       }
     },
     {
@@ -32,48 +32,12 @@
       }
     },
     {
-      "name": "KRaLiMaRKo",
+      "name": "FraMeSToR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "KRaLiMaRKo"
-      }
-    },
-    {
-      "name": "PmP",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PmP)\\b"
-      }
-    },
-    {
-      "name": "BLURANiUM",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "BLURANiUM"
-      }
-    },
-    {
-      "name": "SiCFoI",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "SiCFoI"
-      }
-    },
-    {
-      "name": "SURFINBIRD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "SURFINBIRD"
+        "value": "FraMeSToR"
       }
     },
     {
@@ -95,12 +59,48 @@
       }
     },
     {
+      "name": "KRaLiMaRKo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "KRaLiMaRKo"
+      }
+    },
+    {
       "name": "playBD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "playBD"
+      }
+    },
+    {
+      "name": "PmP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PmP)\\b"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SiCFoI"
+      }
+    },
+    {
+      "name": "SURFINBIRD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SURFINBIRD"
       }
     },
     {

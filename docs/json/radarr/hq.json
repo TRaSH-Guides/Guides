@@ -41,129 +41,21 @@
       }
     },
     {
-      "name": "BMF",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-BMF\\b"
-      }
-    },
-    {
-      "name": "decibeL",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-decibeL\\b"
-      }
-    },
-    {
-      "name": "D-Z0N3",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bD-Z0N3\\b"
-      }
-    },
-    {
-      "name": "HiFi",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-HiFi\\b"
-      }
-    },
-    {
-      "name": "NCmt",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NCmt\\b"
-      }
-    },
-    {
-      "name": "TDD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-TDD\\b"
-      }
-    },
-    {
-      "name": "ZQ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bZQ\\b"
-      }
-    },
-    {
-      "name": "HiSD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-HiSD\\b"
-      }
-    },
-    {
-      "name": "NTb",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NTb\\b"
-      }
-    },
-    {
-      "name": "iFT",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-iFT\\b"
-      }
-    },
-    {
-      "name": "Geek",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-geek\\b"
-      }
-    },
-    {
-      "name": "TnP",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-tnp\\b"
-      }
-    },
-    {
-      "name": "PTer",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-pter\\b"
-      }
-    },
-    {
       "name": "BBQ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-bbq\\b"
+      }
+    },
+    {
+      "name": "BMF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-BMF\\b"
       }
     },
     {
@@ -185,6 +77,24 @@
       }
     },
     {
+      "name": "D-Z0N3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bD-Z0N3\\b"
+      }
+    },
+    {
+      "name": "decibeL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-decibeL\\b"
+      }
+    },
+    {
       "name": "DON",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -203,12 +113,75 @@
       }
     },
     {
+      "name": "Geek",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-geek\\b"
+      }
+    },
+    {
+      "name": "HiFi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-HiFi\\b"
+      }
+    },
+    {
+      "name": "HiSD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-HiSD\\b"
+      }
+    },
+    {
+      "name": "iFT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-iFT\\b"
+      }
+    },
+    {
       "name": "LolHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-LolHD\\b"
+      }
+    },
+    {
+      "name": "NCmt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NCmt\\b"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NTb\\b"
+      }
+    },
+    {
+      "name": "PTer",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-pter\\b"
       }
     },
     {
@@ -230,12 +203,39 @@
       }
     },
     {
+      "name": "TDD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-TDD\\b"
+      }
+    },
+    {
+      "name": "TnP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-tnp\\b"
+      }
+    },
+    {
       "name": "VietHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-VietHD\\b"
+      }
+    },
+    {
+      "name": "ZQ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bZQ\\b"
       }
     }
   ]

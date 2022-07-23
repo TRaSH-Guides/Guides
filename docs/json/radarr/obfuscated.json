@@ -5,6 +5,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "_nzb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "_nzb\\b"
+      }
+    },
+    {
       "name": "4P",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -38,6 +47,15 @@
       "required": false,
       "fields": {
         "value": "-BUYMORE\\b"
+      }
+    },
+    {
+      "name": "CAPTCHA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-CAPTCHA\\b"
       }
     },
     {
@@ -122,15 +140,6 @@
       }
     },
     {
-      "name": "xpost",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-xpost\\b"
-      }
-    },
-    {
       "name": "WRTEAM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -140,21 +149,12 @@
       }
     },
     {
-      "name": "CAPTCHA",
+      "name": "xpost",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-CAPTCHA\\b"
-      }
-    },
-    {
-      "name": "_nzb",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "_nzb\\b"
+        "value": "-xpost\\b"
       }
     }
   ]

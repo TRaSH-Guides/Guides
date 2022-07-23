@@ -3,13 +3,15 @@
   "trash_score": "1",
   "name": "FreeLeech",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "FreeLeech",
       "implementation": "IndexerFlagSpecification",
       "negate": false,
       "required": false,
       "fields": {
-          "value": 1
+        "value": 1
       }
-  }]
+    }
+  ]
 }

@@ -3,13 +3,15 @@
   "trash_score": "500",
   "name": "MP3",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "MP3",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-          "value": "mp3"
+        "value": "mp3"
       }
-  }]
+    }
+  ]
 }

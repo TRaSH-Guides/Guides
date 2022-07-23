@@ -2,13 +2,15 @@
   "trash_id": "e9001909a4c88013a359d0b9920d7bea",
   "name": "Theatrical Cut",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "Theatrical",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-          "value": "Theatrical"
+        "value": "Theatrical"
       }
-  }]
+    }
+  ]
 }

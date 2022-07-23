@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "TOMMY",
+      "name": "AJP69",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-TOMMY\\b"
+        "value": "-AJP69\\b"
       }
     },
     {
@@ -41,42 +41,6 @@
       }
     },
     {
-      "name": "NTG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NTG\\b"
-      }
-    },
-    {
-      "name": "TEPES",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-TEPES\\b"
-      }
-    },
-    {
-      "name": "KiNGS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-KiNGS\\b"
-      }
-    },
-    {
-      "name": "NTb",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NTb\\b"
-      }
-    },
-    {
       "name": "CMRG",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -86,21 +50,39 @@
       }
     },
     {
-      "name": "AJP69",
+      "name": "Flights",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-AJP69\\b"
+        "value": "-Flights\\b"
       }
     },
     {
-      "name": "PHOENiX",
+      "name": "FLUX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-PHOENiX\\b"
+        "value": "-FLUX\\b"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HONE)\\b"
+      }
+    },
+    {
+      "name": "KiNGS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-KiNGS\\b"
       }
     },
     {
@@ -122,30 +104,48 @@
       }
     },
     {
-      "name": "ROCCaT",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-ROCCaT\\b"
-      }
-    },
-    {
-      "name": "FLUX",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-FLUX\\b"
-      }
-    },
-    {
       "name": "NOSiViD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-NOSiViD\\b"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NTb\\b"
+      }
+    },
+    {
+      "name": "NTG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NTG\\b"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-PHOENiX\\b"
+      }
+    },
+    {
+      "name": "ROCCaT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-ROCCaT\\b"
       }
     },
     {
@@ -158,21 +158,21 @@
       }
     },
     {
-      "name": "Flights",
+      "name": "TEPES",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Flights\\b"
+        "value": "-TEPES\\b"
       }
     },
     {
-      "name": "HONE",
+      "name": "TOMMY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HONE)\\b"
+        "value": "-TOMMY\\b"
       }
     }
   ]

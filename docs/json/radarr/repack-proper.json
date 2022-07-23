@@ -3,32 +3,33 @@
   "trash_score": "5",
   "name": "Repack/Proper",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
-          "name": "Repack",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "Repack\\b"
-          }
-      },
-      {
-          "name": "Proper",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "Proper"
-          }
-      },
-      {
-          "name": "Rerip",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "Rerip"
-          }
+  "specifications": [
+    {
+      "name": "Repack",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Repack\\b"
       }
+    },
+    {
+      "name": "Proper",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Proper"
+      }
+    },
+    {
+      "name": "Rerip",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Rerip"
+      }
+    }
   ]
 }

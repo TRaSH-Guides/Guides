@@ -3,13 +3,15 @@
   "trash_score": "250",
   "name": "Opus",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "Opus",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-          "value": "\\bOPUS(\\b|\\d)"
+        "value": "\\bOPUS(\\b|\\d)"
       }
-  }]
+    }
+  ]
 }

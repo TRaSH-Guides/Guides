@@ -5,12 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "[rartv]",
+      "name": "[eztv]",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[rartv\\]"
+        "value": "\\[eztv\\]"
       }
     },
     {
@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "[eztv]",
+      "name": "[rartv]",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[eztv\\]"
+        "value": "\\[rartv\\]"
       }
     },
     {
