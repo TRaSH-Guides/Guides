@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(ma)\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
+        "value": "(?<!dts[ .-]?hd[ .-]?)ma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
       }
     }
   ]
