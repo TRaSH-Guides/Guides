@@ -3,11 +3,10 @@
   "trash_id": "71899E6C303A07AF0E4746EFF9873532",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [{
+  "preferred": [
+    {
       "score": 180,
-      "terms": [
-        "/(-deflate|-inflate)\\b/i"
-      ]
+      "terms": ["/(-deflate|-inflate)\\b/i"]
     },
     {
       "score": 150,
@@ -23,27 +22,19 @@
     },
     {
       "score": 100,
-      "terms": [
-        "/(-ViSiON)\\b/i"
-      ]
+      "terms": ["/(-ViSiON)\\b/i"]
     },
     {
       "score": 12,
-      "terms": [
-        "/(repack3)/i"
-      ]
+      "terms": ["/(repack3)/i"]
     },
     {
       "score": 11,
-      "terms": [
-        "/(repack2)/i"
-      ]
+      "terms": ["/(repack2)/i"]
     },
     {
       "score": 10,
-      "terms": [
-        "/\\b(repack|proper)\\b/i"
-      ]
+      "terms": ["/\\b(repack|proper)\\b/i"]
     }
   ],
   "ignored": []

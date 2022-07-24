@@ -3,7 +3,8 @@
   "trash_id": "1B018E0C53EC825085DD911102E2CA36",
   "includePreferredWhenRenaming": true,
   "required": [],
-  "preferred": [{
+  "preferred": [
+    {
       "score": 100,
       "terms": [
         "/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
@@ -12,9 +13,7 @@
     },
     {
       "score": 95,
-      "terms": [
-        "/\\b(sho)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
-      ]
+      "terms": ["/\\b(sho)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"]
     },
     {
       "score": 90,
