@@ -29,6 +29,8 @@
 
 1. Pre-allocated disk space for the added torrents, this limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.
 
+!! warning Do not set Pre-allocated disk space if you are using ZFS as your filesystem as ZFS [does not support fallocate](https://github.com/openzfs/zfs/issues/326)
+
     !!! check ""
         **Suggested: `Enabled`**
 
