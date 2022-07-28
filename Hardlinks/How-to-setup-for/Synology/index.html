@@ -2597,12 +2597,14 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script.</p>
-<p>The script is new and only tested on Synology DSM7.</p>
+<p>The script is and only tested on Synology DSM7.1.</p>
 <p><strong><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> We are not held reliable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></strong></p>
 </div>
-<p>To get this working you will need to enable terminal access (SSH).</p>
-<p>To enable this on your Synology take a look <a href="#ssh" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p>When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.</p>
+<p>To get this working you will need to enable terminal access (SSH) and home folders</p>
+<p>To enable SSH on your Synology take a look <a href="#ssh" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p>To enable Home folders, go to <code>Control Panel</code> &gt; <code>User &amp; Group</code> &gt; <code>Advanced</code> &gt; <code>Enable user home service</code> at the bottom.</p>
+<p><div class="lightgallery"><a data-sub-html="home-folders" href="images/home-folders.png"><img alt="home-folders" src="images/home-folders.png" /></a></div></p>
+<p>When you enabled the these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.</p>
 <div class="highlight"><pre><span></span><code>curl -sL git.io/syno-script &gt; ~/syno-script
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo bash ~/syno-script
@@ -2883,7 +2885,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 11, 2022 11:56:08</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 28, 2022 08:11:12</span>
       
     
   </small>
