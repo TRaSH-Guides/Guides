@@ -28,9 +28,9 @@ This page will provide you with guidance on how to install several Docker images
     To get this working you will need to enable terminal access (SSH) and home folders
 
     To enable SSH on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
-    
+
     To enable Home folders, go to `Control Panel` > `User & Group` > `Advanced` > `Enable user home service` at the bottom.
-    
+
     ![!home-folders](images/home-folders.png)
 
     When you enabled the these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
