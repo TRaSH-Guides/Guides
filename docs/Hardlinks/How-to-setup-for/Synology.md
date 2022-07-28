@@ -33,7 +33,7 @@ This page will provide you with guidance on how to install several Docker images
 
     ![!home-folders](images/home-folders.png)
 
-    When you enabled the these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
+    When you enabled these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
 
     ```bash
     curl -sL git.io/syno-script > ~/syno-script
