@@ -501,6 +501,18 @@ Add this to your `Must not contain (2)`
 
 ```
 
+#### Optional - Ignore Annoying Dual Audio Groups
+
+??? question "WHY ? - [CLICK TO EXPAND]"
+
+    These groups add their own preferred language (ex. Portugese) as the main audio track.
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\b(-alfaHD|-BAT|-BNd|-C.A.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\b/i
+```
+
 ------
 
 ### A little explanation of the scores and why

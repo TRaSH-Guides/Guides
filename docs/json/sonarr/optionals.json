@@ -58,6 +58,12 @@
       "name": "Dislike release containing: 1-",
       "trash_id": "236a3626a07cacf5692c73cc947bc280",
       "term": "/(1-.+)$/i"
+      }, {
+        "name": "Dislike Annoying Dual Audio Groups",
+        "trash_id": "dac17aca202e4b5d28bef5070c5c5cfb",
+        "term": "/\\b(-alfaHD|-BAT|-BNd|-C.A.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\\b/i"
+      }, {
     }]
   }]
 }
+
