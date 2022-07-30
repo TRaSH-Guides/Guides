@@ -505,7 +505,7 @@ Add this to your `Must not contain (2)`
 
 ??? question "WHY ? - [CLICK TO EXPAND]"
 
-    These groups add their own preferred language (ex. Portugese) as the main audio track.
+    These groups add their own preferred language (ex. Portuguese) as the main audio track.
 
 Add this to your `Must not contain (2)`
 
