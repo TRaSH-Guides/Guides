@@ -1,3 +1,23 @@
+#2022-07-27
+Added: Cross-Seed to the 3rd party tools #677
+- Added: Cross-Seed to the 3rd party tools.
+Add warning to qBittorrent about ZFS/Pre-Allocate #676
+- Add warning to qBittorrent Basic-Setup about ZFS/Pre-Allocate.
+Fix: CF [MA] false positive #672
+- Fix: CF `[MA]` false positive, seems in some cases Radarr picks up the path for the CF, and it triggered false on `DTS-HD MA`.
+Update br-disk.json #671
+- Updated: CF `[BR-DISK]` Added recognition of UHD100 DISKS.
+
+# 2022-07-17
+Sonarr RP 20220717 #666
+- Fixed: Better recognizing of 1080p/x265 in random order.
+- Added: GNOME to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+- Added: ABBIE to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+Added: PSA to Radarr LQ #665
+- Added: `PSA` to `[LQ]`.
+Removed: EVO from the Radarr [LQ] #664
+- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`.
+
 # 2022-07-10
 Radarr cf 20220710 #661
 - Replaced/Renamed: `dd-atmos.json` to `ddplus-atmos.json` to be consistent.

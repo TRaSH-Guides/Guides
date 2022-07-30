@@ -527,12 +527,12 @@
       }
     },
     {
-      "name": "EVO",
+      "name": "PSA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[-. ]EVO(TGX)?\\b"
+        "value": "\\b(PSA)\\b"
       }
     }
   ]

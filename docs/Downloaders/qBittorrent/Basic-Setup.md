@@ -32,6 +32,10 @@
     !!! check ""
         **Suggested: `Enabled`**
 
+    !!! warning
+
+        Do not set Pre-allocated disk space if you are using ZFS as your filesystem as ZFS [does not support fallocate](https://github.com/openzfs/zfs/issues/326){:target="_blank" rel="noopener noreferrer"}
+
 ### Saving Management
 
 ![Saving Management](images/qb-options-downloads-saving-management.png)
