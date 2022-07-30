@@ -505,7 +505,8 @@ Add this to your `Must not contain (2)`
 
 ??? question "WHY ? - [CLICK TO EXPAND]"
 
-    These groups add their own preferred language (ex. Portuguese) as the main audio track.
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
 
 Add this to your `Must not contain (2)`
 
