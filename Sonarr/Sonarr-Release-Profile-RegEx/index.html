@@ -905,6 +905,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-ignore-bad-dual-audio-groups" class="md-nav__link">
+    Optional - Ignore Bad Dual Audio Groups
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2380,6 +2387,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-ignore-bad-dual-audio-groups" class="md-nav__link">
+    Optional - Ignore Bad Dual Audio Groups
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2786,6 +2800,15 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <p>Add this to your <code>Must not contain (2)</code></p>
 <div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>web<span class="o">[</span> <span class="o">]</span>dl<span class="p">|</span>-deflate<span class="p">|</span>-inflate<span class="o">))(</span>?<span class="o">=</span>.*<span class="o">([</span>_. <span class="o">]</span>WEB<span class="o">[</span>_. <span class="o">]</span><span class="p">|</span>-CAKES<span class="se">\b</span><span class="p">|</span>-GGEZ<span class="se">\b</span><span class="p">|</span>-GGWP<span class="se">\b</span><span class="p">|</span>-GLHF<span class="se">\b</span><span class="p">|</span>-KOGI<span class="se">\b</span><span class="o">))</span>.*/i
 </code></pre></div>
+<h4 id="optional-ignore-bad-dual-audio-groups">Optional - Ignore Bad Dual Audio Groups<a class="headerlink" href="#optional-ignore-bad-dual-audio-groups" title="Permanent link">¶</a></h4>
+<details class="question">
+<summary>WHY ? - [CLICK TO EXPAND]</summary>
+<p>These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+Also they often even rename the release name in to Portuguese.</p>
+</details>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>-alfaHD<span class="p">|</span>-BAT<span class="p">|</span>-BNd<span class="p">|</span>-C.A.A<span class="p">|</span>-Cory<span class="p">|</span>-FF<span class="p">|</span>-FOXX<span class="p">|</span>-G4RiS<span class="p">|</span>-GUEIRA<span class="p">|</span>-N3G4N<span class="p">|</span>-PD<span class="p">|</span>-RiPER<span class="p">|</span>-RK<span class="p">|</span>-SiGLA<span class="p">|</span>-Tars<span class="p">|</span>-WTV<span class="p">|</span>-Yatogam1<span class="p">|</span>-YusukeFLA<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
 <hr />
 <h3 id="a-little-explanation-of-the-scores-and-why">A little explanation of the scores and why<a class="headerlink" href="#a-little-explanation-of-the-scores-and-why" title="Permanent link">¶</a></h3>
 <ul>
@@ -2850,7 +2873,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 17, 2022 16:10:06</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 31, 2022 08:16:51</span>
       
     
   </small>
