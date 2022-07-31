@@ -9,6 +9,7 @@
     | No-RlsGroup      | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup){: .header-icons target=_blank rel="noopener noreferrer" } |
     | Obfuscated       | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#obfuscated){: .header-icons target=_blank rel="noopener noreferrer" } |
     | Retags           | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#retags){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Bad Dual Groups  | -10000 | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups){: .header-icons target=_blank rel="noopener noreferrer" } |
     | DV (WEBDL)       | ?????? | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
 
     ??? example "Breakdown and Why - [CLICK TO EXPAND]"
@@ -21,6 +22,8 @@
         - **No-RlsGroup:** [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.
         - **Obfuscated:** [Optional] (use these only if you dislike renamed releases)
         - **Retags:** [Optional] (use these only if you dislike retagged releases)
+        - **Bad Dual Groups:** These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+        Also they often even rename the release name in to Portuguese.
         - **DV (WEBDL):** This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.
 
             This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.
