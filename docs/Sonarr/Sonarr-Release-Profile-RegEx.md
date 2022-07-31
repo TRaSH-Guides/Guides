@@ -501,7 +501,7 @@ Add this to your `Must not contain (2)`
 
 ```
 
-#### Optional - Ignore Annoying Dual Audio Groups
+#### Optional - Ignore Bad Dual Audio Groups
 
 ??? question "WHY ? - [CLICK TO EXPAND]"
 
