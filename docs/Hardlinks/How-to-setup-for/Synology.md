@@ -162,6 +162,8 @@ data
    └── tv
 ```
 
+--8<-- "includes/hardlinks/bad-path-suggestion.md"
+
 --8<-- "includes/hardlinks/breakdown-folder-structure.md"
 
 ------
