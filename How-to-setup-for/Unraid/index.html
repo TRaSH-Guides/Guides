@@ -2335,9 +2335,8 @@
 <p><em>I'm using lower case on all folder on  purpose, being Linux is case sensitive.</em></p>
 <hr />
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested <code>/tv</code>, <code>/movies</code> and <code>/downloads</code> makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.</p>
+<div class="admonition attention">
+<p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
 <h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link">¶</a></h2>
 <p>After you created all the needed folders it's time to setup the paths in the docker containers.</p>
@@ -2440,7 +2439,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 22, 2022 20:19:54</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 31, 2022 09:49:44</span>
       
     
   </small>

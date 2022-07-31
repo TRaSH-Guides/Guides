@@ -2680,6 +2680,9 @@ Remember these values for later use.</p>
    ├── music
    └── tv
 </code></pre></div>
+<div class="admonition attention">
+<p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+</div>
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
 <h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link">¶</a></h4>
 <p>qBittorrent, Deluge, ruTorrent</p>
@@ -2883,7 +2886,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 28, 2022 09:56:37</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 31, 2022 09:49:44</span>
       
     
   </small>
