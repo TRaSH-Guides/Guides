@@ -1,4 +1,16 @@
-#2022-07-27
+# 2022-07-31
+Updated: Paste sites #690
+- Added: `Notifiarr.com`.
+- Added: `bpaste`.
+- Removed: `0bin` because of the issues it's having.
+- Removed `Ubuntu Pastebin` because you need a account to make use of it.
+Guides Bad path suggestion #689
+- Added: missing bad path suggestion for some parts
+Dislike bad dual audio groups #686
+- Added: [Sonarr] `Optional - Ignore Bad Dual Audio Groups` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+- Added: [Radarr] CF `[Bad Dual Groups]` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+
+# 2022-07-27
 Added: Cross-Seed to the 3rd party tools #677
 - Added: Cross-Seed to the 3rd party tools.
 Add warning to qBittorrent about ZFS/Pre-Allocate #676
