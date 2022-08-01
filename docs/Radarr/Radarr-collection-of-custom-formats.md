@@ -47,17 +47,18 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
-| --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
-| [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                  | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
-|                                               | [DV (WEBDL)](#dv-webdl)            | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
+| Movie Versions                                | Unwanted                             | Misc                                  | HQ Source Groups      | Streaming Services           |
+| --------------------------------------------- | ------------------------------------ | ------------------------------------- | --------------------- | ---------------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                  | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)      | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                            | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p)   | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                            | [x265](#x265)                         |                       | [Hulu](#hulu)                |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)          | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)            | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
+| [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                    | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
+|                                               | [DV (WEBDL)](#dv-webdl)              | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
+|                                               | [Bad Dual Groups](#bad-dual-groups)  |                                       |                       |                              |
 
 ------
 
@@ -997,6 +998,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
