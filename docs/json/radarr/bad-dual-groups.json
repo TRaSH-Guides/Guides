@@ -50,6 +50,15 @@
       }
     },
     {
+      "name": "EXTREME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-EXTREME)\\b"
+      }
+    },
+    {
       "name": "FF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

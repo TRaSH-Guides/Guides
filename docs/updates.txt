@@ -1,3 +1,9 @@
+# 2022-08-04
+Radarr CF 20220804 #695
+- Changed: Raised score for CF `[Framestore]`.
+- Added: regex to prevent download loop with bad dual groups. Issue: #685
+- Added: `EXTREME` to the CF `[Bad Dual Groups]`. Issue: #694
+
 # 2022-07-31
 Updated: Paste sites #690
 - Added: `Notifiarr.com`.
