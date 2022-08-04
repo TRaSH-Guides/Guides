@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FraMeSToR$"
+        "value": "FraMeSToR\\b"
       }
     },
     {
