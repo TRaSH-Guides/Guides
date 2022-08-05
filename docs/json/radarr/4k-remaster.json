@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "Restoration",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "Restoration"
+      }
+    },
+    {
       "name": "4K",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
