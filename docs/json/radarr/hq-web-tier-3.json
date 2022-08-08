@@ -1,0 +1,62 @@
+{
+  "trash_id": "e3102f73df64148a75d6bed32892d67b",
+  "trash_score": "1650",
+  "name": "HQ-WEB Tier 3",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "GNOMiSSiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "GNOMiSSiON\\b"
+      }
+    },
+    {
+      "name": "ROCCaT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ROCCaT\\b"
+      }
+    },
+    {
+      "name": "SiGMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SiGMA\\b"
+      }
+    },
+    {
+      "name": "SLiGNOME",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SLiGNOME\\b"
+      }
+    }
+  ]
+}
