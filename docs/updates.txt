@@ -1,3 +1,59 @@
+# 2022-08-04
+Radarr CF 20220804 #695
+- Changed: Raised score for CF `[Framestore]`.
+- Added: regex to prevent download loop with bad dual groups. Issue: #685
+- Added: `EXTREME` to the CF `[Bad Dual Groups]`. Issue: #694
+
+# 2022-07-31
+Updated: Paste sites #690
+- Added: `Notifiarr.com`.
+- Added: `bpaste`.
+- Removed: `0bin` because of the issues it's having.
+- Removed `Ubuntu Pastebin` because you need a account to make use of it.
+Guides Bad path suggestion #689
+- Added: missing bad path suggestion for some parts
+Dislike bad dual audio groups #686
+- Added: [Sonarr] `Optional - Ignore Bad Dual Audio Groups` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+- Added: [Radarr] CF `[Bad Dual Groups]` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+
+# 2022-07-27
+Added: Cross-Seed to the 3rd party tools #677
+- Added: Cross-Seed to the 3rd party tools.
+Add warning to qBittorrent about ZFS/Pre-Allocate #676
+- Add warning to qBittorrent Basic-Setup about ZFS/Pre-Allocate.
+Fix: CF [MA] false positive #672
+- Fix: CF `[MA]` false positive, seems in some cases Radarr picks up the path for the CF, and it triggered false on `DTS-HD MA`.
+Update br-disk.json #671
+- Updated: CF `[BR-DISK]` Added recognition of UHD100 DISKS.
+
+# 2022-07-17
+Sonarr RP 20220717 #666
+- Fixed: Better recognizing of 1080p/x265 in random order.
+- Added: GNOME to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+- Added: ABBIE to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+Added: PSA to Radarr LQ #665
+- Added: `PSA` to `[LQ]`.
+Removed: EVO from the Radarr [LQ] #664
+- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`.
+
+# 2022-07-10
+Radarr cf 20220710 #661
+- Replaced/Renamed: `dd-atmos.json` to `ddplus-atmos.json` to be consistent.
+- Added: Scoring to CF `[MP3]` =>  `500`.
+- Added: Scoring to CF `[Opus]` => `250`.
+- Fixed: CF [MA] for false positive.
+- Separated: CF [Obfuscated] conditions and created CF [Retags].
+- Added: NEW CF `[Retags]` with a score of `-10000`.
+How to check if hardlinks work formatting fix #660
+- Fixed: formatting to make it more clear.
+How to run the unRaid mover for qBittorent seeding torrents - formatting #659
+- Fixed: formatting to make it more understandable.
+Added Streaming Service CF for MoviesAnywhere #657
+- Added: Streaming Service CF for MoviesAnywhere.
+Add missing bots to Clean.py (SABnzbd) #656
+- Add: missing bots to Clean script (SABnzbd).
+- Optimize regex matching in Clean script (SABnzbd).
+
 # 2022-07-06
 Changed: CF HDR10 to match HDR to prevent loops #655
 - Changed: CF `HDR10` to match `HDR` to prevent loops `550` to `500`.

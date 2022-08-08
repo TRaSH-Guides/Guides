@@ -37,7 +37,7 @@ I also made 3 guides related to this one.
 | [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
 | [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
 | [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
-| [DD+ ATMOS](#dd-atmos)                    | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
+| [DD+ ATMOS](#ddplus-atmos)                | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
 | [TrueHD](#truehd)                         | [DD](#dd)                       | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
 | [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
 | [DD+](#ddplus)                            | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
@@ -47,17 +47,18 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
-| --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)            | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
-|                                               |                                    | [Anime Dual Audio](#anime-dual-audio) |                       |                              |
+| Movie Versions                                | Unwanted                             | Misc                                  | HQ Source Groups      | Streaming Services           |
+| --------------------------------------------- | ------------------------------------ | ------------------------------------- | --------------------- | ---------------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                  | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)      | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                            | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
+| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p)   | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
+| [Criterion Collection](#criterion-collection) | [3D](#3d)                            | [x265](#x265)                         |                       | [Hulu](#hulu)                |
+| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)          | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
+| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)            | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
+| [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                    | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
+|                                               | [DV (WEBDL)](#dv-webdl)              | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
+|                                               | [Bad Dual Groups](#bad-dual-groups)  |                                       |                       |                              |
 
 ------
 
@@ -127,7 +128,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/dd-atmos.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/ddplus-atmos.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -952,12 +953,28 @@ I also made 3 guides related to this one.
 
 ??? faq "Obfuscated - [CLICK TO EXPAND]"
 
-    Optional (use these only if you dislike renamed and retagged releases)
+    Optional (use these only if you dislike renamed releases)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/obfuscated.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Retags
+
+??? faq "Retags - [CLICK TO EXPAND]"
+
+    Optional (use these only if you dislike retagged releases)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/retags.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -981,6 +998,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1322,6 +1355,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### MA
+
+<sub>Movies Anywhere</sub>
+
+??? faq "Movies Anywhere - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/ma.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

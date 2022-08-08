@@ -1,0 +1,16 @@
+{
+  "trash_id": "2a6039655313bf5dab1e43523b62c374",
+  "name": "MA",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Movies Anywhere",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(?<!dts[ .-]?hd[ .-]?)ma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

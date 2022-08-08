@@ -56,4 +56,19 @@ A darker theme for qBittorrent WebUI (made with the help of the Walkerservers co
 
 ------
 
+## cross-seed
+
+Fully-automatic cross-seeding
+
+Run cross-seed 24/7 to:
+
+- Search for cross-seeds as soon as new torrents are finished downloading
+- Race starting at 100% before the uploader even joins.
+
+[![Discord Support](https://img.shields.io/discord/880949701845872672?style=flat-square&color=4051B5&logo=discord)](https://discord.gg/jpbUFzS5Wb){:target="_blank" rel="noopener noreferrer"}
+[![Github](https://img.shields.io/github/v/release/mmgoodnow/cross-seed?color=4051B5&display_name=tag&label=Version&logo=github)](https://github.com/mmgoodnow/cross-seed){:target="_blank" rel="noopener noreferrer"}
+[![Website](https://img.shields.io/website?label=Website&url=https%3A%2F%2Fwww.cross-seed.org%2F)](https://www.cross-seed.org/){:target="_blank" rel="noopener noreferrer"}
+
+------
+
 --8<-- "includes/support.md"

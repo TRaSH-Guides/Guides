@@ -1,160 +1,178 @@
 {
-  "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+  "trash_id": "b6832f586342ef70d9c128d40c07b872",
   "trash_score": "-10000",
-  "name": "Obfuscated",
+  "name": "Bad Dual Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "4P",
+      "name": "alfaHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-4P\\b"
+        "value": "\\b(-alfaHD)\\b"
       }
     },
     {
-      "name": "4Planet",
+      "name": "BAT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-4Planet\\b"
+        "value": "\\b(-BAT)\\b"
       }
     },
     {
-      "name": "AsRequested",
+      "name": "BNd",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-AsRequested\\b"
+        "value": "\\b(-BNd)\\b"
       }
     },
     {
-      "name": "BUYMORE",
+      "name": "C.A.A",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-BUYMORE\\b"
+        "value": "\\b(-C\\.A\\.A)\\b"
       }
     },
     {
-      "name": "Chamele0n",
+      "name": "Cory",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Chamele0n\\b"
+        "value": "\\b(-Cory)\\b"
       }
     },
     {
-      "name": "GEROV",
+      "name": "EXTREME",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-GEROV\\b"
+        "value": "\\b(-EXTREME)\\b"
       }
     },
     {
-      "name": "iNC0GNiTO",
+      "name": "FF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-iNC0GNiTO\\b"
+        "value": "\\b(-FF)\\b"
       }
     },
     {
-      "name": "NZBGeek",
+      "name": "FOXX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-NZBGeek\\b"
+        "value": "\\b(-FOXX)\\b"
       }
     },
     {
-      "name": "Obfuscated",
+      "name": "G4RiS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Obfuscated\\b"
+        "value": "\\b(-G4RiS)\\b"
       }
     },
     {
-      "name": "postbot",
+      "name": "GUEIRA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-postbot\\b"
+        "value": "\\b(-GUEIRA)\\b"
       }
     },
     {
-      "name": "Rakuv",
+      "name": "N3G4N",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Rakuv\\b"
+        "value": "\\b(-N3G4N)\\b"
       }
     },
     {
-      "name": "Scrambled",
+      "name": "PD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Scrambled\\b"
+        "value": "\\b(-PD)\\b"
       }
     },
     {
-      "name": "WhiteRev",
+      "name": "RiPER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-WhiteRev\\b"
+        "value": "\\b(-RiPER)\\b"
       }
     },
     {
-      "name": "xpost",
+      "name": "RK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-xpost\\b"
+        "value": "\\b(-RK)\\b"
       }
     },
     {
-      "name": "WRTEAM",
+      "name": "SiGLA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-WRTEAM\\b"
+        "value": "\\b(-SiGLA)\\b"
       }
     },
     {
-      "name": "CAPTCHA",
+      "name": "Tars",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-CAPTCHA\\b"
+        "value": "\\b(-Tars)\\b"
       }
     },
     {
-      "name": "_nzb",
+      "name": "WTV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "_nzb\\b"
+        "value": "\\b(-WTV)\\b"
+      }
+    },
+    {
+      "name": "Yatogam1",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-Yatogam1)\\b"
+      }
+    },
+    {
+      "name": "YusukeFLA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-YusukeFLA)\\b"
       }
     }
   ]

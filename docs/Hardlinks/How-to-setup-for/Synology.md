@@ -21,15 +21,19 @@ This page will provide you with guidance on how to install several Docker images
     !!! Warning
         Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script.
 
-        The script is new and only tested on Synology DSM7.
+        The script is only tested on Synology DSM7.1.
 
         **:bangbang: We are not held reliable if anything breaks on your system. Use at your own risk :bangbang:**
 
-    To get this working you will need to enable terminal access (SSH).
+    To get this working you will need to enable terminal access (SSH) and home folders
 
-    To enable this on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
+    To enable SSH on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
 
-    When you enabled the terminal access (SSH) run the following commands and follow the onscreen questions.
+    To enable Home folders, go to `Control Panel` > `User & Group` > `Advanced` > `Enable user home service` at the bottom.
+
+    ![!home-folders](images/home-folders.png)
+
+    When you enabled these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.
 
     ```bash
     curl -sL git.io/syno-script > ~/syno-script
@@ -157,6 +161,8 @@ data
    ├── music
    └── tv
 ```
+
+--8<-- "includes/hardlinks/bad-path-suggestion.md"
 
 --8<-- "includes/hardlinks/breakdown-folder-structure.md"
 
