@@ -1,97 +1,97 @@
 {
-  "trash_id": "xxx",
-  "trash_score": "1750",
-  "name": "HQ-Encodes Tier 2",
+  "trash_id": "3a3ff47579026e76d6504ebea39390de",
+  "trash_score": "1900",
+  "name": "Remux Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BLURAY",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 9
-      }
-    },
-    {
-      "name": "Not REMUX",
+      "name": "Remux",
       "implementation": "QualityModifierSpecification",
-      "negate": true,
+      "negate": false,
       "required": true,
       "fields": {
         "value": 5
       }
     },
     {
-      "name": "Not 2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
-      "name": "EA",
+      "name": "3L",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "EA"
+        "value": "3L\\b"
       }
     },
     {
-      "name": "HiSD",
+      "name": "BiZKiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HiSD"
+        "value": "BiZKiT\\b"
       }
     },
     {
-      "name": "iFT",
+      "name": "BLURANiUM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "iFT"
+        "value": "BLURANiUM\\b"
       }
     },
     {
-      "name": "NTb",
+      "name": "BMF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTb"
+        "value": "BMF\\b"
       }
     },
     {
-      "name": "QOQ",
+      "name": "FraMeSToR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "QOQ\\b"
+        "value": "FraMeSToR\\b"
       }
     },
     {
-      "name": "SA89",
+      "name": "PmP",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SA89"
+        "value": "PmP\\b"
       }
     },
     {
-      "name": "sbR",
+      "name": "SiCFoI",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "sbR"
+        "value": "SiCFoI\\b"
+      }
+    },
+    {
+      "name": "Wildcat",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Wildcat\\b"
+      }
+    },
+    {
+      "name": "ZQ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ZQ\\b"
       }
     }
   ]

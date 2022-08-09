@@ -1,88 +1,97 @@
 {
-  "trash_id": "3caa929195ff95a8698f81b49a4f6502",
-  "trash_score": "1700",
-  "name": "HQ-WEB Tier 2",
+  "trash_id": "c20c8647f2746a1f4c4262b0fbbeeeae",
+  "trash_score": "1750",
+  "name": "HD Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "BLURAY",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
       "fields": {
-        "value": 8
+        "value": 5
       }
     },
     {
-      "name": "dB",
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "EA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "dB\\b"
+        "value": "EA"
       }
     },
     {
-      "name": "Flights",
+      "name": "HiSD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Flights\\b"
+        "value": "HiSD"
       }
     },
     {
-      "name": "MiU",
+      "name": "iFT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MiU\\b"
+        "value": "iFT"
       }
     },
     {
-      "name": "monkee",
+      "name": "NTb",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "monkee\\b"
+        "value": "NTb"
       }
     },
     {
-      "name": "PHOENiX",
+      "name": "QOQ",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PHOENiX\\b"
+        "value": "QOQ\\b"
       }
     },
     {
-      "name": "SMURF",
+      "name": "SA89",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SMURF\\b"
+        "value": "SA89"
       }
     },
     {
-      "name": "TOMMY",
+      "name": "sbR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TOMMY\\b"
+        "value": "sbR"
       }
     }
   ]

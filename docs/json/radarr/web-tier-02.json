@@ -1,7 +1,7 @@
 {
-  "trash_id": "e3102f73df64148a75d6bed32892d67b",
-  "trash_score": "1650",
-  "name": "HQ-WEB Tier 3",
+  "trash_id": "403816d65392c79236dcb6dd591aeda4",
+  "trash_score": "1700",
+  "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -23,39 +23,66 @@
       }
     },
     {
-      "name": "GNOMiSSiON",
+      "name": "dB",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "GNOMiSSiON\\b"
+        "value": "dB\\b"
       }
     },
     {
-      "name": "ROCCaT",
+      "name": "Flights",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ROCCaT\\b"
+        "value": "Flights\\b"
       }
     },
     {
-      "name": "SiGMA",
+      "name": "MiU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiGMA\\b"
+        "value": "MiU\\b"
       }
     },
     {
-      "name": "SLiGNOME",
+      "name": "monkee",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SLiGNOME\\b"
+        "value": "monkee\\b"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "PHOENiX\\b"
+      }
+    },
+    {
+      "name": "SMURF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SMURF\\b"
+      }
+    },
+    {
+      "name": "TOMMY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "TOMMY\\b"
       }
     }
   ]
