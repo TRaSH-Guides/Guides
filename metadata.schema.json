@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/TRaSH-/Guides/master/metadata.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "json_paths": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "radarr": "#/$defs/radarr",
+        "sonarr": "#/$defs/sonarr"
+      }
+    }
+  },
+  "$defs": {
+    "release_profiles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "custom_formats": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "radarr": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "custom_formats": "#/$defs/custom_formats"
+      }
+    },
+    "sonarr": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "release_profiles": "#/$defs/release_profiles"
+      }
+    }
+  }
+}
