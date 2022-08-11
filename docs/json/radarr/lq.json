@@ -131,6 +131,15 @@
       }
     },
     {
+      "name": "EPiC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(EPiC)\\b"
+      }
+    },
+    {
       "name": "EuReKA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
