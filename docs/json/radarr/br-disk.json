@@ -5,7 +5,7 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "br-disk",
+      "name": "BR-DISK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
