@@ -5,30 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "aXXo",
+      "name": "4K4U",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(aXXo)\\b"
-      }
-    },
-    {
-      "name": "CDDHD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "CDDHD"
-      }
-    },
-    {
-      "name": "FGT",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FGT)\\b"
+        "value": "4K4U"
       }
     },
     {
@@ -41,30 +23,21 @@
       }
     },
     {
-      "name": "LiGaS",
+      "name": "aXXo",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LiGaS)\\b"
+        "value": "\\b(aXXo)\\b"
       }
     },
     {
-      "name": "beAst",
+      "name": "BARC0DE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-beAst\\b"
-      }
-    },
-    {
-      "name": "RiffTrax",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Rifftrax"
+        "value": "BARC0DE"
       }
     },
     {
@@ -77,12 +50,48 @@
       }
     },
     {
-      "name": "TEKNO3D",
+      "name": "beAst",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TEKNO3D"
+        "value": "-beAst\\b"
+      }
+    },
+    {
+      "name": "C4K",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "C4K"
+      }
+    },
+    {
+      "name": "CDDHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "CDDHD"
+      }
+    },
+    {
+      "name": "CHAOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CHAOS)\\b"
+      }
+    },
+    {
+      "name": "CHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CHD)\\b"
       }
     },
     {
@@ -95,12 +104,48 @@
       }
     },
     {
+      "name": "d3g",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "d3g"
+      }
+    },
+    {
+      "name": "DDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DDR)\\b"
+      }
+    },
+    {
       "name": "DNL",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(DNL)\\b"
+      }
+    },
+    {
+      "name": "EPiC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(EPiC)\\b"
+      }
+    },
+    {
+      "name": "EuReKA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-EuReKA\\b"
       }
     },
     {
@@ -113,6 +158,15 @@
       }
     },
     {
+      "name": "FGT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FGT)\\b"
+      }
+    },
+    {
       "name": "FRDS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -122,12 +176,57 @@
       }
     },
     {
+      "name": "FZHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FZHD)\\b"
+      }
+    },
+    {
+      "name": "GalaxyRG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "GalaxyRG"
+      }
+    },
+    {
+      "name": "HDS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HDS)\\b"
+      }
+    },
+    {
+      "name": "HDT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HDT)\\b"
+      }
+    },
+    {
       "name": "HDTime",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "HDTime"
+      }
+    },
+    {
+      "name": "HDWinG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "HDWinG"
       }
     },
     {
@@ -149,12 +248,48 @@
       }
     },
     {
+      "name": "KIRA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-KIRA\\b"
+      }
+    },
+    {
       "name": "Leffe",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "Leffe"
+      }
+    },
+    {
+      "name": "Liber8",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Liber8"
+      }
+    },
+    {
+      "name": "LiGaS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LiGaS)\\b"
+      }
+    },
+    {
+      "name": "MeGusta",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MeGusta"
       }
     },
     {
@@ -176,6 +311,33 @@
       }
     },
     {
+      "name": "MTeam",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTeam)\\b"
+      }
+    },
+    {
+      "name": "MySiLU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MySiLU)\\b"
+      }
+    },
+    {
+      "name": "NhaNc3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NhaNc3"
+      }
+    },
+    {
       "name": "nHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -194,6 +356,15 @@
       }
     },
     {
+      "name": "NoGroup",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NoGr(ou)?p"
+      }
+    },
+    {
       "name": "nSD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -203,12 +374,12 @@
       }
     },
     {
-      "name": "NhaNc3",
+      "name": "PATOMiEL",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NhaNc3"
+        "value": "PATOMiEL"
       }
     },
     {
@@ -221,12 +392,57 @@
       }
     },
     {
+      "name": "PSA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PSA)\\b"
+      }
+    },
+    {
+      "name": "PTNK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PTNK)\\b"
+      }
+    },
+    {
+      "name": "RARBG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "RARBG"
+      }
+    },
+    {
       "name": "RDN",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(RDN)\\b"
+      }
+    },
+    {
+      "name": "RiffTrax",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Rifftrax"
+      }
+    },
+    {
+      "name": "RU4HD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "RU4HD"
       }
     },
     {
@@ -239,6 +455,15 @@
       }
     },
     {
+      "name": "Scene",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Scene)\\b"
+      }
+    },
+    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -248,12 +473,66 @@
       }
     },
     {
+      "name": "SWTYBLZ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SWTYBLZ"
+      }
+    },
+    {
+      "name": "TBS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TBS)\\b"
+      }
+    },
+    {
+      "name": "TEKNO3D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "TEKNO3D"
+      }
+    },
+    {
+      "name": "Tigole",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Tigole"
+      }
+    },
+    {
+      "name": "TIKO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TIKO)\\b"
+      }
+    },
+    {
       "name": "WAF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(WAF)\\b"
+      }
+    },
+    {
+      "name": "WiKi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-WiKi\\b"
       }
     },
     {
@@ -284,255 +563,12 @@
       }
     },
     {
-      "name": "EuReKA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-EuReKA\\b"
-      }
-    },
-    {
-      "name": "DDR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(DDR)\\b"
-      }
-    },
-    {
-      "name": "DNL",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(DNL)"
-      }
-    },
-    {
-      "name": "BARC0DE",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "BARC0DE"
-      }
-    },
-    {
-      "name": "d3g",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "d3g"
-      }
-    },
-    {
-      "name": "MeGusta",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "MeGusta"
-      }
-    },
-    {
-      "name": "Tigole",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Tigole"
-      }
-    },
-    {
-      "name": "C4K",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "C4K"
-      }
-    },
-    {
-      "name": "RARBG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "RARBG"
-      }
-    },
-    {
-      "name": "4K4U",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "4K4U"
-      }
-    },
-    {
-      "name": "RU4HD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "RU4HD"
-      }
-    },
-    {
       "name": "Zeus",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "-Zeus\\b"
-      }
-    },
-    {
-      "name": "TBS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TBS)\\b"
-      }
-    },
-    {
-      "name": "CHD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(CHD)\\b"
-      }
-    },
-    {
-      "name": "HDWinG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "HDWinG"
-      }
-    },
-    {
-      "name": "MTeam",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MTeam)\\b"
-      }
-    },
-    {
-      "name": "MySiLU",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MySiLU)\\b"
-      }
-    },
-    {
-      "name": "WiKi",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-WiKi\\b"
-      }
-    },
-    {
-      "name": "TIKO",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TIKO)\\b"
-      }
-    },
-    {
-      "name": "Liber8",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Liber8"
-      }
-    },
-    {
-      "name": "FZHD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FZHD)\\b"
-      }
-    },
-    {
-      "name": "PATOMiEL",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "PATOMiEL"
-      }
-    },
-    {
-      "name": "KIRA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-KIRA\\b"
-      }
-    },
-    {
-      "name": "PTNK",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PTNK)\\b"
-      }
-    },
-    {
-      "name": "GalaxyRG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "GalaxyRG"
-      }
-    },
-    {
-      "name": "HDS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HDS)\\b"
-      }
-    },
-    {
-      "name": "NoGroup",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "NoGr(ou)?p"
-      }
-    },
-    {
-      "name": "PSA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PSA)\\b"
       }
     }
   ]
