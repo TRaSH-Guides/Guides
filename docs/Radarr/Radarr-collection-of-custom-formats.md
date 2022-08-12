@@ -59,6 +59,7 @@ I also made 3 guides related to this one.
 | [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                    | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
 |                                               | [DV (WEBDL)](#dv-webdl)              | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
 |                                               | [Bad Dual Groups](#bad-dual-groups)  |                                       |                       |                              |
+|                                               | [x265 (no HDR/DV)](#x265-no-hdrdv)   |                                       |                       |                              |
 
 ------
 
@@ -893,7 +894,7 @@ I also made 3 guides related to this one.
 
 ??? faq "720/1080p no x265 - [CLICK TO EXPAND]"
 
-    This blocks/ignores 720/1080p releases that are encoded in x265
+    This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
     You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
@@ -904,6 +905,30 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/x265-7201080p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### x265 (no HDR/DV)
+
+??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+
+    This blocks/ignores 720/1080p(HD) releases that are encoded in x265 **but it will allow to exclude/bypass if it has HDR and/or DV**
+
+    Being that some NF releases won't be released as 4k, but you want to have dv/hdr releases.
+
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`
+
+    !!! Danger
+
+        Don't use this together with the following Custom Format [x265 (720/1080p)](#x265-7201080p)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
