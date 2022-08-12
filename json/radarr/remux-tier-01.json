@@ -1,0 +1,98 @@
+{
+  "trash_id": "3a3ff47579026e76d6504ebea39390de",
+  "trash_score": "1900",
+  "name": "Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "3L",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "3L\\b"
+      }
+    },
+    {
+      "name": "BiZKiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BiZKiT\\b"
+      }
+    },
+    {
+      "name": "BLURANiUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BLURANiUM\\b"
+      }
+    },
+    {
+      "name": "BMF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BMF\\b"
+      }
+    },
+    {
+      "name": "FraMeSToR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FraMeSToR\\b"
+      }
+    },
+    {
+      "name": "PmP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "PmP\\b"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "SiCFoI\\b"
+      }
+    },
+    {
+      "name": "Wildcat",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Wildcat\\b"
+      }
+    },
+    {
+      "name": "ZQ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ZQ\\b"
+      }
+    }
+  ]
+}
