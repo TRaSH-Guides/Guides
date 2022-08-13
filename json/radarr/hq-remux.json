@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "3L\\b"
+        "value": "\\b3L\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BiZKiT\\b"
+        "value": "\\bBiZKiT\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BLURANiUM\\b"
+        "value": "\\bBLURANiUM\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BMF\\b"
+        "value": "\\bBMF\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "decibeL\\b"
+        "value": "\\bdecibeL\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "EPSiLON\\b"
+        "value": "-EPSiLON\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Flights\\b"
+        "value": "-Flights\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FraMeSToR\\b"
+        "value": "\\bFraMeSToR\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HiFi\\b"
+        "value": "\\bHiFi\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "iFT\\b"
+        "value": "\\biFT\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "KRaLiMaRKo\\b"
+        "value": "\\bKRaLiMaRKo\\b"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NCmt\\b"
+        "value": "\\bNCmt\\b"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTb\\b"
+        "value": "\\bNTb\\b"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "playBD\\b"
+        "value": "\\bplayBD\\b"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PmP\\b"
+        "value": "\\bPmP\\b"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PTP\\b"
+        "value": "\\bPTP\\b"
       }
     },
     {
@@ -163,16 +163,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiCFoI\\b"
+        "value": "\\bSiCFoI\\b"
       }
     },
     {
-      "name": "Sumvision",
+      "name": "SumVision",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Sumvision\\b"
+        "value": "\\bSumVision\\b"
       }
     },
     {
@@ -181,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SURFINBIRD\\b"
+        "value": "\\bSURFINBIRD\\b"
       }
     },
     {
@@ -190,7 +190,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TEPES\\b"
+        "value": "\\bTEPES\\b"
       }
     },
     {
@@ -199,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TOA\\b"
+        "value": "\\bTOA\\b"
       }
     },
     {
@@ -208,16 +208,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TRiToN\\b"
+        "value": "-TRiToN\\b"
       }
     },
     {
-      "name": "Wildcat",
+      "name": "WiLDCAT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Wildcat\\b"
+        "value": "-WiLDCAT\\b"
       }
     },
     {
@@ -226,7 +226,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ZQ\\b"
+        "value": "\\bZQ\\b"
       }
     }
   ]

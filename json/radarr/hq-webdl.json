@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ABBIE\\b"
+        "value": "-ABBIE\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "AJP69\\b"
+        "value": "\\bAJP69\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BLUTONiUM\\b"
+        "value": "\\bBLUTONiUM\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "CMRG\\b"
+        "value": "\\bCMRG\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "CRUD\\b"
+        "value": "\\bCRUD\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "dB\\b"
+        "value": "\\bdB\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Flights\\b"
+        "value": "-Flights\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FLUX\\b"
+        "value": "-FLUX\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "GNOME\\b"
+        "value": "-GNOME\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "GNOMiSSiON\\b"
+        "value": "\\bGNOMiSSiON\\b"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HONE\\b"
+        "value": "\\bHONE\\b"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "KiNGS\\b"
+        "value": "-KiNGS\\b"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MiU\\b"
+        "value": "\\bMiU\\b"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "monkee\\b"
+        "value": "\\bmonkee\\b"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NOSiViD\\b"
+        "value": "\\bNOSiViD\\b"
       }
     },
     {
@@ -163,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTb\\b"
+        "value": "\\bNTb\\b"
       }
     },
     {
@@ -172,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTG\\b"
+        "value": "\\bNTG\\b"
       }
     },
     {
@@ -181,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PHOENiX\\b"
+        "value": "-PHOENiX\\b"
       }
     },
     {
@@ -190,7 +190,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ROCCaT\\b"
+        "value": "\\bROCCaT\\b"
       }
     },
     {
@@ -199,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiC\\b"
+        "value": "\\bSiC\\b"
       }
     },
     {
@@ -208,7 +208,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiGMA\\b"
+        "value": "\\bSiGMA\\b"
       }
     },
     {
@@ -217,7 +217,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SLiGNOME\\b"
+        "value": "\\bSLiGNOME\\b"
       }
     },
     {
@@ -226,7 +226,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SMURF\\b"
+        "value": "-SMURF\\b"
       }
     },
     {
@@ -235,7 +235,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TEPES\\b"
+        "value": "-TEPES\\b"
       }
     },
     {
@@ -244,7 +244,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TOMMY\\b"
+        "value": "-TOMMY\\b"
       }
     }
   ]
