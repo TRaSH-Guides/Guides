@@ -1,3 +1,44 @@
+#2022-08-13
+Fixed: Added word boundaries to HQ CFs #711
+- Added: more word boundaries to the HQ custom formats to prevent incorrect matching of release groups to fix Issue: #710
+
+NEW: CF [x265 (no HDR/DV)] #708
+- NEW: CF `[x265 (no HDR/DV)]` - This blocks/ignores 720/1080p (HD) releases that are encoded in x265. **but it will allow to exclude/bypass if it has HDR and/or DV**
+- NOTE: Don't use this together with the following Custom Format [x265 (720/1080p)].
+
+Updated: LQ CF with new Groups #707
+- Updated the `LQ` CF to include a few more groups, sorted and formatted the json as well.
+- Added `EPiC` to the `LQ` CF to fix Issue: #702
+
+Updated br-disk.json #706
+- Fixed: GERMAN SCENE REMUXES Recognized as BR-DISK.
+- Added: BDISO recognition.
+
+FIXED: CF DTS-HD MA mismatch #704
+- FIXED: CF [DTS-HD MA] mismatch. Issue: #701
+
+Radarr CF Group Tier Setup #700
+- Note: `ReleaseGroupSpecification` = Radarr Nightly
+- Note: `ReleaseTitleSpecification` = Radarr Master
+
+**NEW: Split up `HQ-Remux` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[Remux Tier 01]` - Split up `HQ-Remux` in to Tiers.
+- NEW: CF `[Remux Tier 02]` - Split up `HQ-Remux` in to Tiers.
+
+**NEW: Split up `HQ-WEBDL` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[WEB Tier 01]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 02]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 03]` - Split up `HQ-WEBDL` in to Tiers.
+
+**NEW: Split up `HQ` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[HD Bluray Tier 01]` - Split up `HQ` in to Tiers.
+- NEW: CF `[HD Bluray Tier 02]` - Split up `HQ` in to Tiers.
+
+**Added: Groups with `ReleaseTitleSpecification` Condition.**
+- Updated: CF `[HQ]`
+- Updated: CF `[HQ-WEBDL]`
+- Updated: CF `[HQ-Remux]`
+
 # 2022-08-04
 Radarr CF 20220804 #695
 - Changed: Raised score for CF `[Framestore]`.
