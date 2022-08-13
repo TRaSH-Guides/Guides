@@ -14,39 +14,21 @@
       }
     },
     {
-      "name": "FraMeSToR",
+      "name": "3L",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FraMeSToR"
+        "value": "\\b3L\\b"
       }
     },
     {
-      "name": "EPSiLON",
+      "name": "BiZKiT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "EPSiLON"
-      }
-    },
-    {
-      "name": "KRaLiMaRKo",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "KRaLiMaRKo"
-      }
-    },
-    {
-      "name": "PmP",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PmP)\\b"
+        "value": "\\bBiZKiT\\b"
       }
     },
     {
@@ -55,25 +37,52 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BLURANiUM"
+        "value": "\\bBLURANiUM\\b"
       }
     },
     {
-      "name": "SiCFoI",
+      "name": "BMF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiCFoI"
+        "value": "\\bBMF\\b"
       }
     },
     {
-      "name": "SURFINBIRD",
+      "name": "decibeL",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SURFINBIRD"
+        "value": "\\bdecibeL\\b"
+      }
+    },
+    {
+      "name": "EPSiLON",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-EPSiLON\\b"
+      }
+    },
+    {
+      "name": "Flights",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-Flights\\b"
+      }
+    },
+    {
+      "name": "FraMeSToR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFraMeSToR\\b"
       }
     },
     {
@@ -82,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HiFi"
+        "value": "\\bHiFi\\b"
       }
     },
     {
@@ -91,7 +100,34 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iFT)\\b"
+        "value": "\\biFT\\b"
+      }
+    },
+    {
+      "name": "KRaLiMaRKo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bKRaLiMaRKo\\b"
+      }
+    },
+    {
+      "name": "NCmt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNCmt\\b"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNTb\\b"
       }
     },
     {
@@ -100,16 +136,97 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "playBD"
+        "value": "\\bplayBD\\b"
       }
     },
     {
-      "name": "TRiTon",
+      "name": "PmP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TRiTon"
+        "value": "\\bPmP\\b"
+      }
+    },
+    {
+      "name": "PTP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bPTP\\b"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSiCFoI\\b"
+      }
+    },
+    {
+      "name": "SumVision",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSumVision\\b"
+      }
+    },
+    {
+      "name": "SURFINBIRD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSURFINBIRD\\b"
+      }
+    },
+    {
+      "name": "TEPES",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bTEPES\\b"
+      }
+    },
+    {
+      "name": "TOA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bTOA\\b"
+      }
+    },
+    {
+      "name": "TRiToN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-TRiToN\\b"
+      }
+    },
+    {
+      "name": "WiLDCAT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-WiLDCAT\\b"
+      }
+    },
+    {
+      "name": "ZQ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bZQ\\b"
       }
     }
   ]

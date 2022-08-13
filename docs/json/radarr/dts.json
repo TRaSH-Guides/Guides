@@ -18,7 +18,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "dts[ .-]?(ma\\b|hd[ .-]?ma|hd)(?!china|r)"
+              "value": "dts[ .-]?(ma\\b|hd[ .-]?ma\\b|hd)(?!china|r|maniacs)"
           }
       },
       {
