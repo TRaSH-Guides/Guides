@@ -1,232 +1,178 @@
 {
-  "trash_id": "403f3f6266b90439cacc1e07cae4dc2d",
-  "trash_score": "1900",
-  "name": "HQ-Remux",
+  "trash_id": "b6832f586342ef70d9c128d40c07b872",
+  "trash_score": "-10000",
+  "name": "Bad Dual Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Remux",
-      "implementation": "QualityModifierSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    },
-    {
-      "name": "3L",
+      "name": "alfaHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b3L\\b"
+        "value": "\\b(-alfaHD)\\b"
       }
     },
     {
-      "name": "BiZKiT",
+      "name": "BAT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bBiZKiT\\b"
+        "value": "\\b(-BAT)\\b"
       }
     },
     {
-      "name": "BLURANiUM",
+      "name": "BNd",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bBLURANiUM\\b"
+        "value": "\\b(-BNd)\\b"
       }
     },
     {
-      "name": "BMF",
+      "name": "C.A.A",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bBMF\\b"
+        "value": "\\b(-C\\.A\\.A)\\b"
       }
     },
     {
-      "name": "decibeL",
+      "name": "Cory",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bdecibeL\\b"
+        "value": "\\b(-Cory)\\b"
       }
     },
     {
-      "name": "EPSiLON",
+      "name": "EXTREME",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-EPSiLON\\b"
+        "value": "\\b(-EXTREME)\\b"
       }
     },
     {
-      "name": "Flights",
+      "name": "FF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Flights\\b"
+        "value": "\\b(-FF)\\b"
       }
     },
     {
-      "name": "FraMeSToR",
+      "name": "FOXX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bFraMeSToR\\b"
+        "value": "\\b(-FOXX)\\b"
       }
     },
     {
-      "name": "HiFi",
+      "name": "G4RiS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bHiFi\\b"
+        "value": "\\b(-G4RiS)\\b"
       }
     },
     {
-      "name": "iFT",
+      "name": "GUEIRA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\biFT\\b"
+        "value": "\\b(-GUEIRA)\\b"
       }
     },
     {
-      "name": "KRaLiMaRKo",
+      "name": "N3G4N",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bKRaLiMaRKo\\b"
+        "value": "\\b(-N3G4N)\\b"
       }
     },
     {
-      "name": "NCmt",
+      "name": "PD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bNCmt\\b"
+        "value": "\\b(-PD)\\b"
       }
     },
     {
-      "name": "NTb",
+      "name": "RiPER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bNTb\\b"
+        "value": "\\b(-RiPER)\\b"
       }
     },
     {
-      "name": "playBD",
+      "name": "RK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bplayBD\\b"
+        "value": "\\b(-RK)\\b"
       }
     },
     {
-      "name": "PmP",
+      "name": "SiGLA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bPmP\\b"
+        "value": "\\b(-SiGLA)\\b"
       }
     },
     {
-      "name": "PTP",
+      "name": "Tars",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bPTP\\b"
+        "value": "\\b(-Tars)\\b"
       }
     },
     {
-      "name": "SiCFoI",
+      "name": "WTV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bSiCFoI\\b"
+        "value": "\\b(-WTV)\\b"
       }
     },
     {
-      "name": "SumVision",
+      "name": "Yatogam1",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bSumVision\\b"
+        "value": "\\b(-Yatogam1)\\b"
       }
     },
     {
-      "name": "SURFINBIRD",
+      "name": "YusukeFLA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bSURFINBIRD\\b"
-      }
-    },
-    {
-      "name": "TEPES",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bTEPES\\b"
-      }
-    },
-    {
-      "name": "TOA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bTOA\\b"
-      }
-    },
-    {
-      "name": "TRiToN",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-TRiToN\\b"
-      }
-    },
-    {
-      "name": "WiLDCAT",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-WiLDCAT\\b"
-      }
-    },
-    {
-      "name": "ZQ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bZQ\\b"
+        "value": "\\b(-YusukeFLA)\\b"
       }
     }
   ]

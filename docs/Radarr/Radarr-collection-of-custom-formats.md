@@ -32,34 +32,48 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                         | Audio Advanced #2               | Audio Channels               | HDR Metadata                      |
-| ----------------------------------------- | ------------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)             | [FLAC](#flac)                   | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
-| [DTS X](#dts-x)                           | [PCM](#pcm)                     | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
-| [ATMOS (undefined)](#atmos-undefined)     | [DTS-HD HRA](#dts-hd-hra)       | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
-| [DD+ ATMOS](#ddplus-atmos)                | [AAC](#aac)                     | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
-| [TrueHD](#truehd)                         | [DD](#dd)                       | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
-| [DTS-HD MA](#dts-hd-ma)                   | [MP3](#mp3)                     | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
-| [DD+](#ddplus)                            | [Opus](#opus)                   | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
-| [DTS-ES](#dts-es)                         |                                 | [9.1 Surround](#91-surround) | [HDR (undefined)](#hdr-undefined) |
-| [DTS](#dts)                               |                                 |                              | [PQ](#pq)                         |
-|                                           |                                 |                              | [HLG](#hlg)                       |
+| Audio Advanced #1                      | Audio Advanced #2                      | Audio Channels                         | HDR Metadata                           |
+| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)          | [FLAC](#flac)                          | [1.0 Mono](#10-mono)                   | [DV HDR10](#dv-hdr10)                  |
+| [DTS X](#dts-x)                        | [PCM](#pcm)                            | [2.0 Stereo](#20-stereo)               | [DV](#dv)                              |
+| [ATMOS (undefined)](#atmos-undefined)  | [DTS-HD HRA](#dts-hd-hra)              | [3.0 Sound](#30-sound)                 | [DV HLG](#dv-hlg)                      |
+| [DD+ ATMOS](#ddplus-atmos)             | [AAC](#aac)                            | [4.0 Sound](#40-sound)                 | [DV SDR](#dv-sdr)                      |
+| [TrueHD](#truehd)                      | [DD](#dd)                              | [5.1 Surround](#51-surround)           | [HDR10+](#hdr10plus)                   |
+| [DTS-HD MA](#dts-hd-ma)                | [MP3](#mp3)                            | [6.1 Surround](#61-surround)           | [HDR10](#hdr10)                        |
+| [DD+](#ddplus)                         | [Opus](#opus)                          | [7.1 Surround](#71-surround)           | [HDR](#hdr)                            |
+| [DTS-ES](#dts-es)                      |                                        | [9.1 Surround](#91-surround)           | [HDR (undefined)](#hdr-undefined)      |
+| [DTS](#dts)                            |                                        |                                        | [PQ](#pq)                              |
+|                                        |                                        |                                        | [HLG](#hlg)                            |
 
 ------
 
-| Movie Versions                                | Unwanted                           | Misc                                  | HQ Source Groups      | Streaming Services           |
-| --------------------------------------------- | ---------------------------------- | ------------------------------------- | --------------------- | ---------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [Repack/Proper](#repack-proper)       | [HQ-Remux](#hq-remux) | [Amazon](#amzn)              |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)    | [Repack2](#repack2)                   | [HQ](#hq)             | [Apple TV+](#aptv)           |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                          | [Multi](#multi)                       | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)             |
-| [Special Editions](#special-edition)          | [x265 (720/1080p)](#x265-7201080p) | [x264](#x264)                         |                       | [HBO Max](#hmax)             |
-| [Criterion Collection](#criterion-collection) | [3D](#3d)                          | [x265](#x265)                         |                       | [Hulu](#hulu)                |
-| [Theatrical Cut](#theatrical-cut)             | [No-RlsGroup](#no-rlsgroup)        | [MPEG2](#mpeg2)                       |                       | [Netflix](#nf)               |
-| [IMAX](#imax)                                 | [Obfuscated](#obfuscated)          | [FreeLeech](#freeleech)               |                       | [Peacock TV](#pcok)          |
-| [IMAX Enhanced](#imax-enhanced)               | [Retags](#retags)                  | [Dutch Groups](#dutch-groups)         |                       | [Paramount+](#pmtp)          |
-|                                               | [DV (WEBDL)](#dv-webdl)            | [Anime Dual Audio](#anime-dual-audio) |                       | [Movies Anywhere](#ma)       |
+| Movie Versions                                  | Unwanted                               | HQ Source Groups                       | Streaming Services                     |
+| ----------------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| [Hybrid](#hybrid)                               | [BR-DISK](#br-disk)                    | [HQ-Remux](#hq-remux)                  | [Amazon](#amzn)                        |
+| [Remaster](#remaster)                           | [EVO (no WEBDL)](#evo-no-webdl)        | [HQ](#hq)                              | [Apple TV+](#aptv)                     |
+| [4K Remaster](#4k-remaster)                     | [LQ](#lq)                              | [HQ-WEBDL](#hq-webdl)                  | [Disney+](#dsnp)                       |
+| [Special Editions](#special-edition)            | [3D](#3d)                              |                                        | [HBO Max](#hmax)                       |
+| [Criterion Collection](#criterion-collection)   | [No-RlsGroup](#no-rlsgroup)            |                                        | [Hulu](#hulu)                          |
+| [Theatrical Cut](#theatrical-cut)               | [Obfuscated](#obfuscated)              |                                        | [Netflix](#nf)                         |
+| [IMAX](#imax)                                   | [Retags](#retags)                      |                                        | [Peacock TV](#pcok)                    |
+| [IMAX Enhanced](#imax-enhanced)                 | [DV (WEBDL)](#dv-webdl)                |                                        | [Paramount+](#pmtp)                    |
+|                                                 | [Bad Dual Groups](#bad-dual-groups)    |                                        | [Movies Anywhere](#ma)                 |
+|                                                 | [x265 (720/1080p)](#x265-7201080p)     |                                        |                                        |
+|                                                 | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                        |                                        |
 
 ------
+
+| Misc                                   | Place holder 11                        | Place holder 2                         | Place holder 3                         |
+| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| [Repack/Proper](#repack-proper)        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [Repack2](#repack2)                    | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [Multi](#multi)                        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [x264](#x264)                          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [x265](#x265)                          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [MPEG2](#mpeg2)                        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [FreeLeech](#freeleech)                | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [Dutch Groups](#dutch-groups)          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| [Anime Dual Audio](#anime-dual-audio)  | Place holder 1                         | Place holder 2                         | Place holder 3                         |
 
 ## Audio Advanced
 
@@ -699,9 +713,9 @@ I also made 3 guides related to this one.
 
     A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible currently for the movie.
 
-    To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colours, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
+    To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
 
-    Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ colour specification. This delivers an expanded colour range closer to that contained in original source material.
+    Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in original source material.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -892,9 +906,9 @@ I also made 3 guides related to this one.
 
 ??? faq "720/1080p no x265 - [CLICK TO EXPAND]"
 
-    This blocks/ignores 720/1080p releases that are encoded in x265
+    This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+    In your quality profile use the following score for this Custom Format: `-10000`
 
     !!! fail ""
         --8<-- "includes/docker/x265.md"
@@ -903,6 +917,32 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/x265-7201080p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### x265 (no HDR/DV)
+
+??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+
+    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
+
+    **but it will allow to exclude/bypass if it has HDR and/or DV**
+
+    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+    In your quality profile use the following score for this Custom Format: `-10000`
+
+    !!! Danger
+
+        Don't use this together with the following Custom Format [x265 (720/1080p)](#x265-7201080p)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -997,6 +1037,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
