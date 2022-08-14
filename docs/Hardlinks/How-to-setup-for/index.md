@@ -5,8 +5,8 @@ This is all done in a way to achieve [Hardlinks and Instant Moves (Atomic-Moves)
 
 Select your desired method of installation:
 
-- [Docker](/How-to-setup-for/Docker/)
-- [Dockstarter](/How-to-setup-for/Dockstarter/)
-- [Native](/How-to-setup-for/Native/)
-- [Synology](/How-to-setup-for/Synology/)
-- [Unraid](/How-to-setup-for/Unraid/)
+- [Docker](/Hardlinks/How-to-setup-for/Docker/)
+- [Dockstarter](/Hardlinks/How-to-setup-for/Dockstarter/)
+- [Native](/Hardlinks/How-to-setup-for/Native/)
+- [Synology](/Hardlinks/How-to-setup-for/Synology/)
+- [Unraid](/Hardlinks/How-to-setup-for/Unraid/)
