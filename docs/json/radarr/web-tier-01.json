@@ -59,6 +59,15 @@
       }
     },
     {
+      "name": "CRFW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "CRFW\\b"
+      }
+    },
+    {
       "name": "CRUD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
