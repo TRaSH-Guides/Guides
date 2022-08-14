@@ -1,0 +1,11 @@
+{
+  "$schema": "metadata.schema.json",
+  "json_paths": {
+    "radarr": {
+      "custom_formats": ["docs/json/radarr"]
+    },
+    "sonarr": {
+      "release_profiles": ["docs/json/sonarr"]
+    }
+  }
+}
