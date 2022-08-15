@@ -32,48 +32,48 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                      | Audio Advanced #2                      | Audio Channels                         | HDR Metadata                           |
-| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)          | [FLAC](#flac)                          | [1.0 Mono](#10-mono)                   | [DV HDR10](#dv-hdr10)                  |
-| [DTS X](#dts-x)                        | [PCM](#pcm)                            | [2.0 Stereo](#20-stereo)               | [DV](#dv)                              |
-| [ATMOS (undefined)](#atmos-undefined)  | [DTS-HD HRA](#dts-hd-hra)              | [3.0 Sound](#30-sound)                 | [DV HLG](#dv-hlg)                      |
-| [DD+ ATMOS](#ddplus-atmos)             | [AAC](#aac)                            | [4.0 Sound](#40-sound)                 | [DV SDR](#dv-sdr)                      |
-| [TrueHD](#truehd)                      | [DD](#dd)                              | [5.1 Surround](#51-surround)           | [HDR10+](#hdr10plus)                   |
-| [DTS-HD MA](#dts-hd-ma)                | [MP3](#mp3)                            | [6.1 Surround](#61-surround)           | [HDR10](#hdr10)                        |
-| [DD+](#ddplus)                         | [Opus](#opus)                          | [7.1 Surround](#71-surround)           | [HDR](#hdr)                            |
-| [DTS-ES](#dts-es)                      |                                        | [9.1 Surround](#91-surround)           | [HDR (undefined)](#hdr-undefined)      |
-| [DTS](#dts)                            |                                        |                                        | [PQ](#pq)                              |
-|                                        |                                        |                                        | [HLG](#hlg)                            |
+| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Metadata                      |
+| ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
+| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
+| [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
+| [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
+| [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
+| [TrueHD](#truehd)                     | [DD](#dd)                 | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
+| [DTS-HD MA](#dts-hd-ma)               | [MP3](#mp3)               | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
+| [DD+](#ddplus)                        | [Opus](#opus)             | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
+| [DTS-ES](#dts-es)                     |                           | [9.1 Surround](#91-surround) | [HDR (undefined)](#hdr-undefined) |
+| [DTS](#dts)                           |                           |                              | [PQ](#pq)                         |
+|                                       |                           |                              | [HLG](#hlg)                       |
 
 ------
 
-| Movie Versions                                  | Unwanted                               | HQ Source Groups                       | Streaming Services                     |
-| ----------------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
-| [Hybrid](#hybrid)                               | [BR-DISK](#br-disk)                    | [HQ-Remux](#hq-remux)                  | [Amazon](#amzn)                        |
-| [Remaster](#remaster)                           | [EVO (no WEBDL)](#evo-no-webdl)        | [HQ](#hq)                              | [Apple TV+](#aptv)                     |
-| [4K Remaster](#4k-remaster)                     | [LQ](#lq)                              | [HQ-WEBDL](#hq-webdl)                  | [Disney+](#dsnp)                       |
-| [Special Editions](#special-edition)            | [3D](#3d)                              |                                        | [HBO Max](#hmax)                       |
-| [Criterion Collection](#criterion-collection)   | [No-RlsGroup](#no-rlsgroup)            |                                        | [Hulu](#hulu)                          |
-| [Theatrical Cut](#theatrical-cut)               | [Obfuscated](#obfuscated)              |                                        | [Netflix](#nf)                         |
-| [IMAX](#imax)                                   | [Retags](#retags)                      |                                        | [Peacock TV](#pcok)                    |
-| [IMAX Enhanced](#imax-enhanced)                 | [DV (WEBDL)](#dv-webdl)                |                                        | [Paramount+](#pmtp)                    |
-|                                                 | [Bad Dual Groups](#bad-dual-groups)    |                                        | [Movies Anywhere](#ma)                 |
-|                                                 | [x265 (720/1080p)](#x265-7201080p)     |                                        |                                        |
-|                                                 | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                        |                                        |
+| Movie Versions                                | Unwanted                            | HQ Source Groups      | Streaming Services     |
+| --------------------------------------------- | ----------------------------------- | --------------------- | ---------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
+| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [HQ](#hq)             | [Apple TV+](#aptv)     |
+| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                           | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
+| [Special Editions](#special-edition)          | [3D](#3d)                           |                       | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) | [No-RlsGroup](#no-rlsgroup)         |                       | [Hulu](#hulu)          |
+| [Theatrical Cut](#theatrical-cut)             | [Obfuscated](#obfuscated)           |                       | [Netflix](#nf)         |
+| [IMAX](#imax)                                 | [Retags](#retags)                   |                       | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)             |                       | [Paramount+](#pmtp)    |
+|                                               | [Bad Dual Groups](#bad-dual-groups) |                       | [Movies Anywhere](#ma) |
+|                                               | [x265 (720/1080p)](#x265-7201080p)  |                       |                        |
+|                                               | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                       |                        |
 
 ------
 
-| Misc                                   | Place holder 11                        | Place holder 2                         | Place holder 3                         |
-| -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
-| [Repack/Proper](#repack-proper)        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [Repack2](#repack2)                    | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [Multi](#multi)                        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [x264](#x264)                          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [x265](#x265)                          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [MPEG2](#mpeg2)                        | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [FreeLeech](#freeleech)                | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [Dutch Groups](#dutch-groups)          | Place holder 1                         | Place holder 2                         | Place holder 3                         |
-| [Anime Dual Audio](#anime-dual-audio)  | Place holder 1                         | Place holder 2                         | Place holder 3                         |
+| Misc                                  | &nbsp; | &nbsp; | &nbsp; |
+| ------------------------------------- | ------ | ------ | ------ |
+| [Repack/Proper](#repack-proper)       | &nbsp; | &nbsp; | &nbsp; |
+| [Repack2](#repack2)                   | &nbsp; | &nbsp; | &nbsp; |
+| [Multi](#multi)                       | &nbsp; | &nbsp; | &nbsp; |
+| [x264](#x264)                         | &nbsp; | &nbsp; | &nbsp; |
+| [x265](#x265)                         | &nbsp; | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                       | &nbsp; | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)               | &nbsp; | &nbsp; | &nbsp; |
+| [Dutch Groups](#dutch-groups)         | &nbsp; | &nbsp; | &nbsp; |
+| [Anime Dual Audio](#anime-dual-audio) | &nbsp; | &nbsp; | &nbsp; |
 
 ## Audio Advanced
 
