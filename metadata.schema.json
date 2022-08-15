@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://raw.githubusercontent.com/TRaSH-/Guides/master/metadata.schema.json",
   "type": "object",
   "additionalProperties": false,
@@ -9,8 +9,8 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "radarr": "#/$defs/radarr",
-        "sonarr": "#/$defs/sonarr"
+        "radarr": { "$ref": "#/$defs/radarr" },
+        "sonarr": { "$ref": "#/$defs/sonarr" }
       }
     }
   },
@@ -27,14 +27,14 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "custom_formats": "#/$defs/custom_formats"
+        "custom_formats": { "$ref": "#/$defs/custom_formats" }
       }
     },
     "sonarr": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "release_profiles": "#/$defs/release_profiles"
+        "release_profiles": { "$ref": "#/$defs/release_profiles" }
       }
     }
   }
