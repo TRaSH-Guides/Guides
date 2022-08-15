@@ -8,4 +8,4 @@ Merge the following Qualities together:
 
 To merge them you need to click on the edit groups.
 
-![!Merge Qualities](images/merge.gif)
+![!Merge Qualities](../../docs/SQP/images/merge.gif)

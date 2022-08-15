@@ -642,4 +642,5 @@ Most of my information and knowledge came from:
 
 Thanks a bunch!!
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

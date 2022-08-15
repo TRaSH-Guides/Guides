@@ -63,4 +63,5 @@ These Quality Settings have been created and tested with info I got from others,
 
     Make sure you have enabled 'Show Advanced' in Radarr, if you don't see a provision to enter the scores, under the Quality settings.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

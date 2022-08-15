@@ -1,6 +1,7 @@
 # SABnzbd - Basic Setup
 
---8<-- "includes/downloaders/basic-setup.md"
+{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
 ------
 
@@ -29,7 +30,8 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 Here you setup your download path/location.
 
---8<-- "includes/downloaders/warning-path-location.md"
+{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 
 ### System Folders
 
@@ -140,4 +142,5 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 <sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

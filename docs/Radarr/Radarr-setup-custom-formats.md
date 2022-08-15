@@ -51,7 +51,8 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
     Generally, quality trumps all
 
---8<-- "includes/merge-quality/radarr-current-logic.md"
+{! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
+<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
 
 My suggestion is to create tiers of scores based on what things matter to you.
 
@@ -81,7 +82,8 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr
 
 This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/unwanted.md" !}
+<!-- --8<-- "includes/cf/unwanted.md" -->
 
 ------
 
@@ -91,7 +93,8 @@ Lets say you prefer HD audio (with object metadata)
 
 In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless.
 
---8<-- "includes/cf/audio.md"
+{! include-markdown "../../includes/cf/audio.md" !}
+<!-- --8<-- "includes/cf/audio.md" -->
 
 ------
 
@@ -101,7 +104,8 @@ Lets say you prefer HDR metadata
 
 Then we would use the following order:
 
---8<-- "includes/cf/hdr-metadata.md"
+{! include-markdown "../../includes/cf/hdr-metadata.md" !}
+<!-- --8<-- "includes/cf/hdr-metadata.md" -->
 
 ------
 
@@ -121,18 +125,21 @@ I suggest to first follow the [Quality Settings (File Size)](/Radarr/Radarr-Qual
 
 For this Quality Profile we're going to make use of the following Custom Formats
 
---8<-- "includes/cf/movie-versions.md"
+{! include-markdown "../../includes/cf/movie-versions.md" !}
+<!-- --8<-- "includes/cf/movie-versions.md" -->
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/unwanted.md" !}
+<!-- --8<-- "includes/cf/unwanted.md" -->
 
---8<-- "includes/cf/misc.md"
+{! include-markdown "../../includes/cf/misc.md" !}
+<!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ-Remux             |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ                   | 1800  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                    | Score                                   | LINK                                                                                                                                           |
+    | -------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+    | {{ radarr['hq-webdl']['name'] }} | {{ radarr['hq-webdl']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq-remux']['name'] }} | 0                                       | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq']['name'] }}       | {{ radarr['hq']['trash_score'] }}       | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" }       |
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.
 
@@ -158,7 +165,8 @@ Use the following main settings in your profile.
 
     If you prefer 2160/4K encodes you might consider to change `Upgrade Until Quality` to Bluray-2160p and enable:
 
-    --8<-- "includes/cf/hdr-metadata.md"
+    {! include-markdown "../../includes/cf/hdr-metadata.md" !}
+    <!-- --8<-- "includes/cf/hdr-metadata.md" -->
 
 ------
 
@@ -171,20 +179,24 @@ If you think the sizes are too big to your preference then stop reading and see 
 
 For this Quality Profile we're going to make use of the following Custom Formats
 
---8<-- "includes/cf/audio.md"
+{! include-markdown "../../includes/cf/audio.md" !}
+<!-- --8<-- "includes/cf/audio.md" -->
 
---8<-- "includes/cf/movie-versions.md"
+{! include-markdown "../../includes/cf/movie-versions.md" !}
+<!-- --8<-- "includes/cf/movie-versions.md" -->
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/unwanted.md" !}
+<!-- --8<-- "includes/cf/unwanted.md" -->
 
---8<-- "includes/cf/misc.md"
+{! include-markdown "../../includes/cf/misc.md" !}
+<!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ-Remux             | 1900  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                    | Score                                   | LINK                                                                                                                                           |
+    | -------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+    | {{ radarr['hq-webdl']['name'] }} | {{ radarr['hq-webdl']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq-remux']['name'] }} | {{ radarr['hq-remux']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq']['name'] }}       | 0                                       | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" }       |
 
 Use the following main settings in your profile.
 
@@ -215,22 +227,27 @@ If you think the sizes are too big to your preference then stop reading and see 
 
 For this Quality Profile we're going to make use of the following Custom Formats
 
---8<-- "includes/cf/audio.md"
+{! include-markdown "../../includes/cf/audio.md" !}
+<!-- --8<-- "includes/cf/audio.md" -->
 
---8<-- "includes/cf/hdr-metadata.md"
+{! include-markdown "../../includes/cf/hdr-metadata.md" !}
+<!-- --8<-- "includes/cf/hdr-metadata.md" -->
 
---8<-- "includes/cf/movie-versions.md"
+{! include-markdown "../../includes/cf/movie-versions.md" !}
+<!-- --8<-- "includes/cf/movie-versions.md" -->
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/unwanted.md" !}
+<!-- --8<-- "includes/cf/unwanted.md" -->
 
---8<-- "includes/cf/misc.md"
+{! include-markdown "../../includes/cf/misc.md" !}
+<!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ-Remux             | 1900  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                    | Score                                   | LINK                                                                                                                                           |
+    | -------------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+    | {{ radarr['hq-webdl']['name'] }} | {{ radarr['hq-webdl']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq-remux']['name'] }} | {{ radarr['hq-remux']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['hq']['name'] }}       | 0                                       | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" }       |
 
 Use the following main settings in your profile.
 
@@ -311,4 +328,5 @@ Use the following main settings in your profile.
 
 A big Thanks to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

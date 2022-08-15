@@ -75,4 +75,5 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 | Bluray-2160p       | 94.6    | 400     |
 | Bluray-2160p Remux | 204.4   | 400     |
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

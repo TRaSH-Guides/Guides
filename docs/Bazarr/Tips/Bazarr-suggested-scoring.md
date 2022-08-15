@@ -51,4 +51,5 @@ This will set the Synchronization Score Threshold, meaning at which score bazarr
 
     I personally noticed that when setting it to high 98-100 I would actually get subs that are like 1 second to slow/fast.
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

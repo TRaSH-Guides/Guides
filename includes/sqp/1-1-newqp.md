@@ -4,4 +4,4 @@
 
 Create a new profile and name it what ever you want I used `Bluray|WEB-1080p`
 
-![!Add Quality Profile](images/add-quality-profile.png)
+![!Add Quality Profile](../../docs/SQP/images/add-quality-profile.png)

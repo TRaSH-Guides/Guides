@@ -36,4 +36,5 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 Use one of the 3rd Party Sync options that you can find [HERE](/Misc/trash-sync){:target="_blank" rel="noopener noreferrer"}.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

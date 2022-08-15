@@ -59,4 +59,5 @@ Then search for you list you want to edit/remove
 
 ![!Radarr Lists](images/rmc-lists.png)
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

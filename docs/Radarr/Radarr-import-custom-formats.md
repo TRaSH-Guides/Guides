@@ -66,4 +66,5 @@ all you need to do now is click on the `Save` button and you're done.
 
 Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

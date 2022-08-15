@@ -1,6 +1,7 @@
 # How to run the unRaid mover for qBittorent seeding torrents
 
---8<-- "includes/downloaders/basic-setup.md"
+{! include-markdown "../../../../includes/downloaders/basic-setup.md" !}
+<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
 When you make use of the unRaid cache drive for your `/data/torrents` share and the torrents in qBittorent are still seeding then the mover can't move files, because they are still in use.
 
@@ -199,7 +200,8 @@ Setup your own schedule [HERE](https://crontab.guru/)
 ??? check "Screenshot Example - [CLICK TO EXPAND]"
     ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-mover-cron.png)
 
---8<-- "includes/support.md"
+{! include-markdown "../../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 [^1]:
     Starr apps = Sonarr/Radarr etc. Doesn't Starr apps sound better then `The arr(s)` ?

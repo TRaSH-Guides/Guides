@@ -1,13 +1,13 @@
 ??? summary "HDR Metadata - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | DV HDR10             | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DV                   | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DV HLG               | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-hlg){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DV SDR               | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-sdr){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HDR10Plus            |  600  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HDR10                |  500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr10){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HDR                  |  500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HDR (undefined)      |  500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | PQ                   |  500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#pq){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HLG                  |  500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hlg){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                         | Score                                        | LINK                                                                                                                                                |
+    | ------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | {{ radarr['dv-hdr10']['name'] }}      | {{ radarr['dv-hdr10']['trash_score'] }}      | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10){: .header-icons target=_blank rel="noopener noreferrer" }      |
+    | {{ radarr['dv']['name'] }}            | {{ radarr['dv']['trash_score'] }}            | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv){: .header-icons target=_blank rel="noopener noreferrer" }            |
+    | {{ radarr['dv-hlg']['name'] }}        | {{ radarr['dv-hlg']['trash_score'] }}        | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-hlg){: .header-icons target=_blank rel="noopener noreferrer" }        |
+    | {{ radarr['dv-sdr']['name'] }}        | {{ radarr['dv-sdr']['trash_score'] }}        | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-sdr){: .header-icons target=_blank rel="noopener noreferrer" }        |
+    | {{ radarr['hdr10plus']['name'] }}     | {{ radarr['hdr10plus']['trash_score'] }}     | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus){: .header-icons target=_blank rel="noopener noreferrer" }     |
+    | {{ radarr['hdr10']['name'] }}         | {{ radarr['hdr10']['trash_score'] }}         | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr10){: .header-icons target=_blank rel="noopener noreferrer" }         |
+    | {{ radarr['hdr']['name'] }}           | {{ radarr['hdr']['trash_score'] }}           | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr){: .header-icons target=_blank rel="noopener noreferrer" }           |
+    | {{ radarr['hdr-undefined']['name'] }} | {{ radarr['hdr-undefined']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | {{ radarr['pq']['name'] }}            | {{ radarr['pq']['trash_score'] }}            | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#pq){: .header-icons target=_blank rel="noopener noreferrer" }            |
+    | {{ radarr['hlg']['name'] }}           | {{ radarr['hlg']['trash_score'] }}           | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hlg){: .header-icons target=_blank rel="noopener noreferrer" }           |

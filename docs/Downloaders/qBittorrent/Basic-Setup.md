@@ -1,6 +1,7 @@
 # qBittorrent - Basic Setup
 
---8<-- "includes/downloaders/basic-setup.md"
+{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
 ------
 
@@ -67,7 +68,8 @@
 
 #### ATTENTION
 
---8<-- "includes/downloaders/warning-path-location.md"
+{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 
 ------
 
@@ -254,7 +256,8 @@ These options allow you to control the number of active torrents being downloade
     !!! check ""
         **Suggested: `Disabled`**
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 [^1]:
     If you use unRaid then you don't need this since you can make use of the default cache drive option.
