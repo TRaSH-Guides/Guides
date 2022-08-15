@@ -97,6 +97,12 @@ plugins:
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
         jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
+        How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
+        How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
+        How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
+        How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
+        How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
+        How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
 
 theme:
   name: material
