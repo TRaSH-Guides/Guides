@@ -11,7 +11,7 @@
     | {{ radarr['retags']['name'] }}          | {{ radarr['retags']['trash_score'] }}          | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#retags){: .header-icons target=_blank rel="noopener noreferrer" }          |
     | {{ radarr['bad-dual-groups']['name'] }} | {{ radarr['bad-dual-groups']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups){: .header-icons target=_blank rel="noopener noreferrer" } |
     | {{ radarr['dv-webdl']['name'] }}        | ??????                                         | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl){: .header-icons target=_blank rel="noopener noreferrer" }        |
-    
+
     ??? example "Breakdown and Why - [CLICK TO EXPAND]"
 
         - **{{ radarr['br-disk']['name'] }} :** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
