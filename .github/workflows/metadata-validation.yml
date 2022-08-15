@@ -1,0 +1,25 @@
+name: Validate Metadata JSON
+
+on:
+  push:
+    paths:
+      - metadata.json
+      - metadata.schema.json
+      - .github/workflows/metadata-validation.yml
+  pull_request:
+    paths:
+      - metadata.json
+      - metadata.schema.json
+      - .github/workflows/metadata-validation.yml
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate metadata.json
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - run: pip install jsonschema
+      - run: jsonschema -i metadata.json metadata.schema.json
