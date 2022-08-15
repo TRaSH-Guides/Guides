@@ -12,11 +12,11 @@ In this example the mounted drive will be mounted to `/mnt/` with the following 
 ```none
 storage
 ├── downloads
-|  ├── torrents
-│  |  ├── movies
-│  |  ├── music
-│  |  └── tv
-|  └── usenet
+│  ├── torrents
+│  │  ├── movies
+│  │  ├── music
+│  │  └── tv
+│  └── usenet
 │     ├── movies
 │     ├── music
 │     └── tv
