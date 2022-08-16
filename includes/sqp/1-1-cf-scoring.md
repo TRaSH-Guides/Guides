@@ -40,7 +40,7 @@ If you notice issues with the sizes please report it.
 | Bluray-1080p | 33.8 | 135.9     | 136.9 |
 
 ??? check "example - [CLICK TO EXPAND]"
-    ![!Quality Size](../../docs/SQP/images/quality-size.png)
+    ![!Quality Size](/SQP/images/quality-size.png)
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.

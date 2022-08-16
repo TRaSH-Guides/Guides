@@ -8,4 +8,4 @@ Merge the following Qualities together:
 
 To merge them you need to click on the edit groups.
 
-![!Merge Qualities](../../docs/SQP/images/uhd-merge.gif)
+![!Merge Qualities](/SQP/images/uhd-merge.gif)
