@@ -64,17 +64,17 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                                  | Place holder 1 | Place holder 2 | Place holder 3 |
-| ------------------------------------- | -------------- | -------------- | -------------- |
-| [Repack/Proper](#repack-proper)       | Place holder 1 | Place holder 2 | Place holder 3 |
-| [Repack2](#repack2)                   | Place holder 1 | Place holder 2 | Place holder 3 |
-| [Multi](#multi)                       | Place holder 1 | Place holder 2 | Place holder 3 |
-| [x264](#x264)                         | Place holder 1 | Place holder 2 | Place holder 3 |
-| [x265](#x265)                         | Place holder 1 | Place holder 2 | Place holder 3 |
-| [MPEG2](#mpeg2)                       | Place holder 1 | Place holder 2 | Place holder 3 |
-| [FreeLeech](#freeleech)               | Place holder 1 | Place holder 2 | Place holder 3 |
-| [Dutch Groups](#dutch-groups)         | Place holder 1 | Place holder 2 | Place holder 3 |
-| [Anime Dual Audio](#anime-dual-audio) | Place holder 1 | Place holder 2 | Place holder 3 |
+| Misc                                  | &nbsp; | &nbsp; | &nbsp; |
+| ------------------------------------- | ------ | ------ | ------ |
+| [Repack/Proper](#repack-proper)       | &nbsp; | &nbsp; | &nbsp; |
+| [Repack2](#repack2)                   | &nbsp; | &nbsp; | &nbsp; |
+| [Multi](#multi)                       | &nbsp; | &nbsp; | &nbsp; |
+| [x264](#x264)                         | &nbsp; | &nbsp; | &nbsp; |
+| [x265](#x265)                         | &nbsp; | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                       | &nbsp; | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)               | &nbsp; | &nbsp; | &nbsp; |
+| [Dutch Groups](#dutch-groups)         | &nbsp; | &nbsp; | &nbsp; |
+| [Anime Dual Audio](#anime-dual-audio) | &nbsp; | &nbsp; | &nbsp; |
 
 ## Audio Advanced
 
