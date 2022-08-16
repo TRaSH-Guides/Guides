@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ABBIE\\b"
+        "value": "\\b(ABBIE)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "AJP69\\b"
+        "value": "\\b(AJP69)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BLUTONiUM\\b"
+        "value": "\\b(BLUTONiUM)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "CMRG\\b"
+        "value": "\\b(CMRG)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "CRFW\\b"
+        "value": "\\b(CRFW)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "CRUD\\b"
+        "value": "\\b(CRUD)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FLUX\\b"
+        "value": "\\b(FLUX)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "GNOME\\b"
+        "value": "\\b(GNOME)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HONE\\b"
+        "value": "\\b(HONE)\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "KiNGS\\b"
+        "value": "\\b(KiNGS)\\b"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NOSiViD\\b"
+        "value": "\\b(NOSiViD)\\b"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTb\\b"
+        "value": "\\b(NTb)\\b"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTG\\b"
+        "value": "\\b(NTG)\\b"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiC\\b"
+        "value": "\\b(SiC)\\b"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TEPES\\b"
+        "value": "\\b(TEPES)\\b"
       }
     }
   ]
