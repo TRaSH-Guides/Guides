@@ -10,12 +10,12 @@
 <!-- --8<-- "includes/cf/movie-versions-imaxe.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                           | Score                                          | LINK                                                                                                                                                                                  |
-    | --------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | {{ radarr['hq-remux']['name'] }}        | {{ radarr['hq-remux']['trash_score'] }}        | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" }                                        |
-    | {{ radarr['flights-no-imax']['name'] }} | {{ radarr['flights-no-imax']['trash_score'] }} | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/flights-no-imax.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | {{ radarr['hq-webdl']['name'] }}        | {{ radarr['hq-webdl']['trash_score'] }}        | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" }                                        |
-    | {{ radarr['hq']['name'] }}              | 0                                              | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" }                                              |
+    | Custom Format                                                                                                                           | Score                                          | Trash ID                                    |
+    | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+    | [{{ radarr['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)                                               | {{ radarr['hq-remux']['trash_score'] }}        | {{ radarr['hq-remux']['trash_id'] }}        |
+    | [{{ radarr['flights-no-imax']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/flights-no-imax.json) | {{ radarr['flights-no-imax']['trash_score'] }} | {{ radarr['flights-no-imax']['trash_id'] }} |
+    | [{{ radarr['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                               | {{ radarr['hq-webdl']['trash_score'] }}        | {{ radarr['hq-webdl']['trash_id'] }}        |
+    | [{{ radarr['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                           | 0                                              | {{ radarr['hq']['trash_id'] }}              |
 
 {! include-markdown "../../includes/cf/hq4k.md" !}
 <!-- --8<-- "includes/cf/hq4k.md" -->

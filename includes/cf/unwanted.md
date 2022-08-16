@@ -1,16 +1,16 @@
 ??? summary "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format                           | Score                                          | LINK                                                                                                                                                  |
-    | --------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | {{ radarr['br-disk']['name'] }}         | {{ radarr['br-disk']['trash_score'] }}         | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#br-disk){: .header-icons target=_blank rel="noopener noreferrer" }         |
-    | {{ radarr['evo-no-webdl']['name'] }}    | {{ radarr['evo-no-webdl']['trash_score'] }}    | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl){: .header-icons target=_blank rel="noopener noreferrer" }    |
-    | {{ radarr['lq']['name'] }}              | {{ radarr['lq']['trash_score'] }}              | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#lq){: .header-icons target=_blank rel="noopener noreferrer" }              |
-    | {{ radarr['x265-7201080p']['name'] }}   | {{ radarr['x265-7201080p']['trash_score'] }}   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){: .header-icons target=_blank rel="noopener noreferrer" }   |
-    | {{ radarr['3d']['name'] }}              | {{ radarr['3d']['trash_score'] }}              | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#3d){: .header-icons target=_blank rel="noopener noreferrer" }              |
-    | {{ radarr['no-rlsgroup']['name'] }}     | {{ radarr['no-rlsgroup']['trash_score'] }}     | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup){: .header-icons target=_blank rel="noopener noreferrer" }     |
-    | {{ radarr['obfuscated']['name'] }}      | {{ radarr['obfuscated']['trash_score'] }}      | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#obfuscated){: .header-icons target=_blank rel="noopener noreferrer" }      |
-    | {{ radarr['retags']['name'] }}          | {{ radarr['retags']['trash_score'] }}          | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#retags){: .header-icons target=_blank rel="noopener noreferrer" }          |
-    | {{ radarr['bad-dual-groups']['name'] }} | {{ radarr['bad-dual-groups']['trash_score'] }} | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | {{ radarr['dv-webdl']['name'] }}        | ??????                                         | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl){: .header-icons target=_blank rel="noopener noreferrer" }        |
+    | Custom Format                                                                                           | Score                                          | Trash ID                                    |
+    | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+    | [{{ radarr['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                 | {{ radarr['br-disk']['trash_score'] }}         | {{ radarr['br-disk']['trash_id'] }}         |
+    | [{{ radarr['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)       | {{ radarr['evo-no-webdl']['trash_score'] }}    | {{ radarr['evo-no-webdl']['trash_id'] }}    |
+    | [{{ radarr['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                           | {{ radarr['lq']['trash_score'] }}              | {{ radarr['lq']['trash_id'] }}              |
+    | [{{ radarr['x265-7201080p']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p)     | {{ radarr['x265-7201080p']['trash_score'] }}   | {{ radarr['x265-7201080p']['trash_id'] }}   |
+    | [{{ radarr['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                           | {{ radarr['3d']['trash_score'] }}              | {{ radarr['3d']['trash_id'] }}              |
+    | [{{ radarr['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)         | {{ radarr['no-rlsgroup']['trash_score'] }}     | {{ radarr['no-rlsgroup']['trash_id'] }}     |
+    | [{{ radarr['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)           | {{ radarr['obfuscated']['trash_score'] }}      | {{ radarr['obfuscated']['trash_id'] }}      |
+    | [{{ radarr['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                   | {{ radarr['retags']['trash_score'] }}          | {{ radarr['retags']['trash_id'] }}          |
+    | [{{ radarr['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['bad-dual-groups']['trash_score'] }} | {{ radarr['bad-dual-groups']['trash_id'] }} |
+    | [{{ radarr['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)               | ??????                                         | {{ radarr['dv-webdl']['trash_id'] }}        |
 
     ??? example "Breakdown and Why - [CLICK TO EXPAND]"
 
