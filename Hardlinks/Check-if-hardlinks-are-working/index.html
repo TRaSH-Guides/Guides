@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2056,7 +2058,7 @@
 
 
 
-<h1 id="how-to-check-if-hardlinks-are-working">How to check if hardlinks are working<a class="headerlink" href="#how-to-check-if-hardlinks-are-working" title="Permanent link">¶</a></h1>
+<h1 id="how-to-check-if-hardlinks-are-working">How to check if hardlinks are working<a class="headerlink" href="#how-to-check-if-hardlinks-are-working" title="Permanent link"></a></h1>
 <p>You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?</p>
 <p>You can use 3 options to check if you got working hardlinks.</p>
 <p><em>All methods require you to login to your terminal with PuTTY or similar software.</em></p>
@@ -2066,13 +2068,13 @@
 <p>You can't cross file systems <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
-<h2 id="usenet">Usenet<a class="headerlink" href="#usenet" title="Permanent link">¶</a></h2>
+<h2 id="usenet">Usenet<a class="headerlink" href="#usenet" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p>If you use usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.</p>
 <p>Still want to test if it works ?</p>
 <p>Test a import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.</p>
 </div>
-<h2 id="method-1-using-ls">Method 1: Using ls<a class="headerlink" href="#method-1-using-ls" title="Permanent link">¶</a></h2>
+<h2 id="method-1-using-ls">Method 1: Using ls<a class="headerlink" href="#method-1-using-ls" title="Permanent link"></a></h2>
 <p>This is the easiest to check in my opinion.</p>
 <p>In your terminal <code>cd</code> to your download location and run <code>ls -al</code> or type <code>ls -al /path/to/your/download/location/</code></p>
 <p>You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.</p>
@@ -2083,7 +2085,7 @@
 <li>Blue rectangle - Folders/Directories you will need to go in to them to check if the files are hardlinked.</li>
 </ul>
 <hr />
-<h2 id="method-2-using-stat">Method 2: Using stat<a class="headerlink" href="#method-2-using-stat" title="Permanent link">¶</a></h2>
+<h2 id="method-2-using-stat">Method 2: Using stat<a class="headerlink" href="#method-2-using-stat" title="Permanent link"></a></h2>
 <p>This way requires a bit more work.</p>
 <ul>
 <li>
@@ -2099,7 +2101,7 @@
 <li>Links: Everything above 1 means it's a hardlink</li>
 <li>Inode: if the numbers match you know the files are hardlinked</li>
 </ol>
-<h2 id="method-3-using-inode-copies">Method 3: Using Inode copies<a class="headerlink" href="#method-3-using-inode-copies" title="Permanent link">¶</a></h2>
+<h2 id="method-3-using-inode-copies">Method 3: Using Inode copies<a class="headerlink" href="#method-3-using-inode-copies" title="Permanent link"></a></h2>
 <ul>
 <li>In your terminal <code>cd</code> to your download location and run <code>ls -i file.mkv</code> or type <code>ls -i /path/to/your/download/location/file.mkv</code></li>
 </ul>

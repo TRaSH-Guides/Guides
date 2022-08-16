@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2474,7 +2476,7 @@
 
 
 
-<h1 id="synology">Synology<a class="headerlink" href="#synology" title="Permanent link">¶</a></h1>
+<h1 id="synology">Synology<a class="headerlink" href="#synology" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose through a terminal.</p>
@@ -2482,9 +2484,9 @@
 <p>Thanks to faxity for the initial compose that I used to create the Synology Guide.</p>
 <p>And a very big thanks to <a href="https://www.buymeacoffee.com/bokkoman" rel="noopener noreferrer" target="_blank">Bokkoman</a> and <a href="https://github.com/BaukeZwart" rel="noopener noreferrer" target="_blank">BZwart</a> that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.</p>
 </div>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
 <p>This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.</p>
-<h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link">¶</a></h3>
+<h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></strong>) - [CLICK TO EXPAND]</summary>
 <div class="admonition warning">
@@ -2503,9 +2505,9 @@
 <div class="highlight"><pre><span></span><code>sudo bash ~/syno-script
 </code></pre></div>
 </details>
-<h2 id="install-docker">Install Docker<a class="headerlink" href="#install-docker" title="Permanent link">¶</a></h2>
+<h2 id="install-docker">Install Docker<a class="headerlink" href="#install-docker" title="Permanent link"></a></h2>
 <p>You need to install Docker from the <code>Package Center</code>. This should also create a share named <code>docker</code>, check File Station if it is present.</p>
-<h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link">¶</a></h2>
+<h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link"></a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of <strong>ONE</strong> share with subfolders.</p>
@@ -2516,23 +2518,23 @@
 <p><code>Control Panel</code> &gt; <code>Shared Folder</code> &gt; click <code>Create</code> &gt; choose <code>Create Shared Folder</code></p>
 <p><div class="lightgallery"><a data-sub-html="create_share" href="../images/create_share.png"><img alt="create_share" src="../images/create_share.png" /></a></div></p>
 <p>Name this shared folder <code>data</code>. You can disable the trash can. Click next until you are done.</p>
-<h2 id="create-a-user">Create a user<a class="headerlink" href="#create-a-user" title="Permanent link">¶</a></h2>
+<h2 id="create-a-user">Create a user<a class="headerlink" href="#create-a-user" title="Permanent link"></a></h2>
 <p>For this, we are going to create a new user that only has access to the share(s) that we use for this guide.</p>
 <p>Go to <code>Control Panel</code> &gt; <code>User &amp; Group</code></p>
 <p>In the <code>User</code> section, create a new user. Name it whatever you like, but for this guide we will use <code>docker</code>.</p>
 <p><div class="lightgallery"><a data-sub-html="adduser" href="../images/adduser.PNG"><img alt="adduser" src="../images/adduser.PNG" /></a></div></p>
 <p>Fill out the rest of the information, generate a password or type your own.</p>
 <p>Click next, you will now be able to select which group this user will belong to, it should only be <code>users</code>. Click <code>Next</code>.</p>
-<h3 id="assign-shared-folder-permissions">Assign shared folder permissions<a class="headerlink" href="#assign-shared-folder-permissions" title="Permanent link">¶</a></h3>
+<h3 id="assign-shared-folder-permissions">Assign shared folder permissions<a class="headerlink" href="#assign-shared-folder-permissions" title="Permanent link"></a></h3>
 <p>In this screen you will be able to select which Shares this user will have access to, click <code>No Access</code> on the top, this will deny all access.</p>
 <p>Now only select <code>Read/Write</code> on the shares <code>docker</code> and <code>data</code>.</p>
 <p><div class="lightgallery"><a data-sub-html="Assign shared folders permissions" href="../images/adduser_2.PNG"><img alt="Assign shared folders permissions" src="../images/adduser_2.PNG" /></a></div></p>
 <p>Click <code>Next</code> until you reach <code>Assign application permissions</code></p>
-<h3 id="assign-application-permissions">Assign application permissions<a class="headerlink" href="#assign-application-permissions" title="Permanent link">¶</a></h3>
+<h3 id="assign-application-permissions">Assign application permissions<a class="headerlink" href="#assign-application-permissions" title="Permanent link"></a></h3>
 <p>In this screen you will be able to select which application this user will have access to, Check <code>Deny</code> for all applications.</p>
 <p><div class="lightgallery"><a data-sub-html="Assign application permissions" href="../images/adduser_3.PNG"><img alt="Assign application permissions" src="../images/adduser_3.PNG" /></a></div></p>
 <p>Continue to click <code>Next</code> until you are finished.</p>
-<h2 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">¶</a></h2>
+<h2 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link"></a></h2>
 <p>You are mostly going to use the terminal. Some parts will need the Synology web GUI.
 To enable terminal, you need to enable SSH in the Synology Settings.</p>
 <p><code>Control Panel</code> &gt; <code>Terminal &amp; SNMP</code> &gt; <code>Enable SSH service</code></p>
@@ -2541,7 +2543,7 @@ To enable terminal, you need to enable SSH in the Synology Settings.</p>
 <p>Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.</p>
 <p>If you get a popup asking if you want to trust the key,
 Just press <code>OK</code> or <code>ACCEPT</code></p>
-<h3 id="puid-and-pgid">PUID and PGID<a class="headerlink" href="#puid-and-pgid" title="Permanent link">¶</a></h3>
+<h3 id="puid-and-pgid">PUID and PGID<a class="headerlink" href="#puid-and-pgid" title="Permanent link"></a></h3>
 <p>In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
 <p>Go into your terminal app, login to your synology ssh.</p>
 <p>Once logged in type <code>id $user</code>. Change $user to the newly created username <code>docker</code>.</p>
@@ -2555,7 +2557,7 @@ Remember these values for later use.</p>
 <p>It is not recommended to use (anymore) your admin/main user account. That is why we just created a new user.</p>
 </div>
 <hr />
-<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h2>
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>For this example we're going to make use of the share called <code>data</code>.</p>
 <p>On the host (Synology) terminal you will need to add <code>/volume1/</code> before it. So <code>/volume1/data</code></p>
 <p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things neat. The <code>library</code> folder has nicely named <code>tv</code>, <code>movies</code> and <code>music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
@@ -2578,8 +2580,8 @@ Remember these values for later use.</p>
 <div class="admonition attention">
 <p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
-<h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link">¶</a></h4>
+<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
+<h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h4>
 <p>qBittorrent, Deluge, ruTorrent</p>
 <p>The reason why we use <code>/data/torrents</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2588,7 +2590,7 @@ Remember these values for later use.</p>
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link">¶</a></h4>
+<h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
 <p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2597,7 +2599,7 @@ Remember these values for later use.</p>
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link">¶</a></h4>
+<h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h4>
 <p>Sonarr, Radarr and Lidarr</p>
 <p>Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2614,7 +2616,7 @@ Remember these values for later use.</p>
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link">¶</a></h4>
+<h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h4>
 <p>Plex, Emby, JellyFin and Bazarr</p>
 <p>Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2626,17 +2628,17 @@ Remember these values for later use.</p>
 <hr />
 <p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside the applications.</strong></p>
 <hr />
-<h3 id="create-the-needed-subfolder">Create the needed subfolder<a class="headerlink" href="#create-the-needed-subfolder" title="Permanent link">¶</a></h3>
+<h3 id="create-the-needed-subfolder">Create the needed subfolder<a class="headerlink" href="#create-the-needed-subfolder" title="Permanent link"></a></h3>
 <p>Here we will create the needed subfolders for your media library and also for your preferred download client.
 If you use both then run both commands</p>
-<h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link">¶</a></h4>
+<h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h4>
 <div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
-<h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link">¶</a></h4>
+<h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link"></a></h4>
 <div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <hr />
-<h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link">¶</a></h3>
+<h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link"></a></h3>
 <p>Your appdata will be stored in <code>/volume1/docker/appdata/{appname}</code>
 These <code>{appname}</code> sub folders you need to create your self. (<em>This is a limitation of the Synology</em>)
 We're going to do this in Putty or a similar program.</p>
@@ -2656,7 +2658,7 @@ We're going to do this in Putty or a similar program.</p>
     └── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
 </code></pre></div>
 <hr />
-<h2 id="needed-files">Needed files<a class="headerlink" href="#needed-files" title="Permanent link">¶</a></h2>
+<h2 id="needed-files">Needed files<a class="headerlink" href="#needed-files" title="Permanent link"></a></h2>
 <p>Now we are ready to move to the installation of containers.</p>
 <p>For this, we need two files:</p>
 <ol>
@@ -2667,7 +2669,7 @@ We're going to do this in Putty or a similar program.</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use the command below:</p>
 <div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 </code></pre></div>
-<h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link">¶</a></h3>
+<h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link"></a></h3>
 <details class="question">
 <summary>What's included and What's not included - [CLICK TO EXPAND]</summary>
 <p>This docker-compose file will have the following docker containers included.</p>
@@ -2690,7 +2692,7 @@ We're going to do this in Putty or a similar program.</p>
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT  <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
-<h3 id="changes-and-preparations">Changes and preparations<a class="headerlink" href="#changes-and-preparations" title="Permanent link">¶</a></h3>
+<h3 id="changes-and-preparations">Changes and preparations<a class="headerlink" href="#changes-and-preparations" title="Permanent link"></a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you need to edit docker-compose.yml or the .env file we advise to use <a href="https://notepad-plus-plus.org/" rel="noopener noreferrer" target="_blank">Notepad++</a> or <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a></p>
@@ -2707,7 +2709,7 @@ We're going to do this in Putty or a similar program.</p>
 <p>The <code>.env</code> holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.</p>
 </div>
 <hr />
-<h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link">¶</a></h4>
+<h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link"></a></h4>
 <p>Pullio allows you to automatically update your containers. And send you a notification through various means. In my setup, I use a Discord Webhook.</p>
 <p>First you need to download Pullio</p>
 <div class="highlight"><pre><span></span><code>   sudo curl -fsSL <span class="s2">&quot;https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh&quot;</span> -o /usr/local/bin/pullio
@@ -2724,7 +2726,7 @@ We're going to do this in Putty or a similar program.</p>
 <p>It can be frustrating to test the script if no docker image updates are available, for that you can run command <code>sudo pullio --debug</code> and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.</p>
 <p>More info about Pullio <a href="https://hotio.dev/pullio/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 <hr />
-<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">¶</a></h3>
+<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h3>
 <p>Now we need to make sure that the newly created files and folders have the correct permissions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2739,7 +2741,7 @@ We're going to do this in Putty or a similar program.</p>
 <p>If you copy files from a different library into the newly created library, you need to rerun these commands. !!!</p>
 </div>
 <hr />
-<h2 id="run-the-docker-compose">Run the Docker Compose<a class="headerlink" href="#run-the-docker-compose" title="Permanent link">¶</a></h2>
+<h2 id="run-the-docker-compose">Run the Docker Compose<a class="headerlink" href="#run-the-docker-compose" title="Permanent link"></a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
@@ -2759,7 +2761,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
 <p>Just don't use the GUI, only for information purposes !!!</p>
 </div>
-<h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link">¶</a></h3>
+<h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link"></a></h3>
 <details class="hint">
 <summary>docker-compose commands - [CLICK TO EXPAND]</summary>
 <ul>

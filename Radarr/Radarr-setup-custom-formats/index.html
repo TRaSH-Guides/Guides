@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2286,12 +2288,12 @@
 
 
 
-<h1 id="how-to-setup-custom-formats">How to setup Custom Formats<a class="headerlink" href="#how-to-setup-custom-formats" title="Permanent link">¶</a></h1>
+<h1 id="how-to-setup-custom-formats">How to setup Custom Formats<a class="headerlink" href="#how-to-setup-custom-formats" title="Permanent link"></a></h1>
 <p>So what's the best way to setup the Custom Profiles and which one to use with which scores?</p>
 <p>There isn't a best score setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.</p>
 <p>Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.</p>
 <hr />
-<h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">¶</a></h2>
+<h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link"></a></h2>
 <p>Here we're going to explain where to setup the Custom Formats after you've added them, as explained in <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
 You will also see a short description of what each setting means.</p>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
@@ -2332,7 +2334,7 @@ You will also see a short description of what each setting means.</p>
 <p>Keep in mind Custom Formats are made to fine tune your Quality Profile</p>
 <p>Generally, quality trumps all</p>
 </div>
-<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link">¶</a></h3>
+<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link"></a></h3>
 <details class="summary">
 <summary>Radarr current logic- [CLICK TO EXPAND]</summary>
 <p>As of 2021-11-06 the logic is as follows:</p>
@@ -2367,11 +2369,11 @@ You will also see a short description of what each setting means.</p>
 </ul>
 </div>
 <hr />
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link"></a></h2>
 <p>Here I will explain how to make the most use of Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.</p>
 <p>All these examples make use of the <a href="/Radarr/Radarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Collection of Custom Formats</a></p>
 <hr />
-<h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link">¶</a></h3>
+<h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link"></a></h3>
 <p>This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.</p>
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
@@ -2467,7 +2469,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 </details>
 <hr />
-<h4 id="prefer-advanced-audio">Prefer Advanced Audio<a class="headerlink" href="#prefer-advanced-audio" title="Permanent link">¶</a></h4>
+<h4 id="prefer-advanced-audio">Prefer Advanced Audio<a class="headerlink" href="#prefer-advanced-audio" title="Permanent link"></a></h4>
 <p>Lets say you prefer HD audio (with object metadata)</p>
 <p>In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless.</p>
 <details class="summary">
@@ -2555,7 +2557,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </table>
 </details>
 <hr />
-<h4 id="prefer-hdr-metadata">Prefer HDR Metadata<a class="headerlink" href="#prefer-hdr-metadata" title="Permanent link">¶</a></h4>
+<h4 id="prefer-hdr-metadata">Prefer HDR Metadata<a class="headerlink" href="#prefer-hdr-metadata" title="Permanent link"></a></h4>
 <p>Lets say you prefer HDR metadata</p>
 <p>Then we would use the following order:</p>
 <details class="summary">
@@ -2629,7 +2631,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>Instructions can be found <a href="#proper-and-repacks">HERE</a></p>
 </div>
 <hr />
-<h4 id="prefer-hq-encodes">Prefer HQ Encodes<a class="headerlink" href="#prefer-hq-encodes" title="Permanent link">¶</a></h4>
+<h4 id="prefer-hq-encodes">Prefer HQ Encodes<a class="headerlink" href="#prefer-hq-encodes" title="Permanent link"></a></h4>
 <p>If you prefer HQ Encodes (Bluray-720/1080/2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>. If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
@@ -2915,7 +2917,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 </div>
 <hr />
-<h4 id="remux-1080p">Remux-1080p<a class="headerlink" href="#remux-1080p" title="Permanent link">¶</a></h4>
+<h4 id="remux-1080p">Remux-1080p<a class="headerlink" href="#remux-1080p" title="Permanent link"></a></h4>
 <p>If you prefer 1080p Remuxes (Remux-1080p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
@@ -3217,7 +3219,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.</p>
 </details>
 <hr />
-<h4 id="remux-2160p">Remux-2160p<a class="headerlink" href="#remux-2160p" title="Permanent link">¶</a></h4>
+<h4 id="remux-2160p">Remux-2160p<a class="headerlink" href="#remux-2160p" title="Permanent link"></a></h4>
 <p>If you prefer 2160p Remuxes (Remux-2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
@@ -3583,8 +3585,8 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.</p>
 </details>
 <hr />
-<h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link">¶</a></h2>
-<h3 id="proper-and-repacks">Proper and Repacks<a class="headerlink" href="#proper-and-repacks" title="Permanent link">¶</a></h3>
+<h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link"></a></h2>
+<h3 id="proper-and-repacks">Proper and Repacks<a class="headerlink" href="#proper-and-repacks" title="Permanent link"></a></h3>
 <details class="tip">
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
 <p>I also suggest to change the Propers and Repacks settings in Radarr</p>
@@ -3592,38 +3594,38 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><div class="lightgallery"><a data-sub-html="cf-mm-propers-repacks-disable" href="../images/cf-mm-propers-repacks-disable.png"><img alt="cf-mm-propers-repacks-disable" src="../images/cf-mm-propers-repacks-disable.png" /></a></div></p>
 <p>This way you make sure the Custom Format preferences will be used instead.</p>
 </details>
-<h3 id="custom-formats-to-avoid-certain-releases">Custom Formats to avoid certain releases<a class="headerlink" href="#custom-formats-to-avoid-certain-releases" title="Permanent link">¶</a></h3>
+<h3 id="custom-formats-to-avoid-certain-releases">Custom Formats to avoid certain releases<a class="headerlink" href="#custom-formats-to-avoid-certain-releases" title="Permanent link"></a></h3>
 <details class="faq">
 <summary>How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]</summary>
 <p>For Custom Formats you really want to avoid, set it to something really low like <code>-10000</code> and not something like <code>-10</code>.
 Being when you add a Custom Format what you prefer and you set it to something like <code>+10</code> it could happen that for example the <code>BR-DISK</code> will be downloaded (-10)+(+10)=0 and if your <code>Minimum Custom Format Score</code> is set at <code>0</code>.</p>
 </details>
-<h3 id="custom-formats-with-a-score-of-0">Custom Formats with a score of 0<a class="headerlink" href="#custom-formats-with-a-score-of-0" title="Permanent link">¶</a></h3>
+<h3 id="custom-formats-with-a-score-of-0">Custom Formats with a score of 0<a class="headerlink" href="#custom-formats-with-a-score-of-0" title="Permanent link"></a></h3>
 <details class="faq">
 <summary>What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]</summary>
 <p>All Custom Formats with a score of 0 are pure informational and don't do anything.</p>
 </details>
-<h3 id="minimum-custom-format-score">Minimum Custom Format Score<a class="headerlink" href="#minimum-custom-format-score" title="Permanent link">¶</a></h3>
+<h3 id="minimum-custom-format-score">Minimum Custom Format Score<a class="headerlink" href="#minimum-custom-format-score" title="Permanent link"></a></h3>
 <details class="info">
 <summary>Minimum Custom Format Score - [CLICK TO EXPAND]</summary>
 <p>Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score then 0.</p>
 <p>The reason why I don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.</p>
 <p>Also it makes it much more clear what you prefer and what you want to avoid.</p>
 </details>
-<h3 id="audio-channels">Audio Channels<a class="headerlink" href="#audio-channels" title="Permanent link">¶</a></h3>
+<h3 id="audio-channels">Audio Channels<a class="headerlink" href="#audio-channels" title="Permanent link"></a></h3>
 <details class="info">
 <summary>Audio Channels - [CLICK TO EXPAND]</summary>
 <p>Personally I wouldn't add the audio channels Custom Formats being you could limit yourself in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.</p>
 <p>Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. You can get better scores using the <code>Audio Advanced</code> Custom Formats.</p>
 </details>
-<h3 id="avoid-using-the-x264x265-custom-format">Avoid using the x264/x265 Custom Format<a class="headerlink" href="#avoid-using-the-x264x265-custom-format" title="Permanent link">¶</a></h3>
+<h3 id="avoid-using-the-x264x265-custom-format">Avoid using the x264/x265 Custom Format<a class="headerlink" href="#avoid-using-the-x264x265-custom-format" title="Permanent link"></a></h3>
 <details class="tip">
 <summary>Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]</summary>
 <p>Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> Custom Format.</p>
 <p>Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.</p>
 <p>Use x265 only for 4k releases and the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank">720/1080p no x265</a> makes sure you still get the x265 releases.</p>
 </details>
-<h2 id="thanks">Thanks<a class="headerlink" href="#thanks" title="Permanent link">¶</a></h2>
+<h2 id="thanks">Thanks<a class="headerlink" href="#thanks" title="Permanent link"></a></h2>
 <p>A big Thanks to <a href="https://github.com/rg9400">rg9400</a> for providing me with info needed to create the Tips section.</p>
 <hr />
 <div class="admonition help">

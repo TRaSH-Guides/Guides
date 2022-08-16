@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2192,7 +2194,7 @@
 
 
 
-<h1 id="how-to-run-the-unraid-mover-for-qbittorent-seeding-torrents">How to run the unRaid mover for qBittorent seeding torrents<a class="headerlink" href="#how-to-run-the-unraid-mover-for-qbittorent-seeding-torrents" title="Permanent link">¶</a></h1>
+<h1 id="how-to-run-the-unraid-mover-for-qbittorent-seeding-torrents">How to run the unRaid mover for qBittorent seeding torrents<a class="headerlink" href="#how-to-run-the-unraid-mover-for-qbittorent-seeding-torrents" title="Permanent link"></a></h1>
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
 <p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
@@ -2222,14 +2224,14 @@
 <p>If you're going to make use of this make sure you're using <code>Post-Import Category</code> in your Starr apps <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> Download clients settings, especially when you're using the Seed Time/Ratio settings in your Indexers settings in the Starr apps.</p>
 <p>Else it could happen when the torrents get paused that they get removed by the Starr apps before the seeding goal is reached <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
-<h2 id="needed">Needed<a class="headerlink" href="#needed" title="Permanent link">¶</a></h2>
-<h3 id="the-script">The Script<a class="headerlink" href="#the-script" title="Permanent link">¶</a></h3>
+<h2 id="needed">Needed<a class="headerlink" href="#needed" title="Permanent link"></a></h2>
+<h3 id="the-script">The Script<a class="headerlink" href="#the-script" title="Permanent link"></a></h3>
 <p>Download the following standalone script.</p>
 <ul>
 <li><a href="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py" rel="noopener noreferrer" target="_blank">Script</a></li>
 </ul>
 <p>Big Thnx to <a href="https://github.com/bobokun" rel="noopener noreferrer" target="_blank">bobokun</a> Developer of <a href="https://github.com/StuffAnThings/qbit_manage" rel="noopener noreferrer" target="_blank">qBit Manage</a></p>
-<h3 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">¶</a></h3>
+<h3 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
 <p>Install the following Plugins.</p>
 <ul>
 <li>User Scripts</li>
@@ -2240,16 +2242,16 @@
 </li>
 </ul>
 <hr />
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">¶</a></h2>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"></a></h2>
 <p>After you installed the needed Plugins it's time to configure everything.</p>
-<h3 id="qbit-api">qBit API<a class="headerlink" href="#qbit-api" title="Permanent link">¶</a></h3>
+<h3 id="qbit-api">qBit API<a class="headerlink" href="#qbit-api" title="Permanent link"></a></h3>
 <p>The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.</p>
 <p>You can choose from the following 2 options how you want to install it, depending what you preferce.</p>
 <ul>
 <li><a href="#user-scripts">User scripts</a></li>
 <li><a href="#go-file">Go File</a></li>
 </ul>
-<h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link">¶</a></h4>
+<h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the Array is started the first time.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
 <details class="check">
@@ -2290,14 +2292,14 @@ pip install qbittorrent-api
 <p><div class="lightgallery"><a data-sub-html="RUN IN BACKGROUND" href="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"><img alt="RUN IN BACKGROUND" src="../images/Unraid-settings-user-scripts-qbit-api-run-background.png" /></a></div></p>
 </details>
 <hr />
-<h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link">¶</a></h4>
+<h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the unRaid server is started.</p>
 <p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) and copy/paste the following command.</p>
 <div class="highlight"><pre><span></span><code>pip install qbittorrent-api
 </code></pre></div>
 <p>Restart your unRaid Server, or run the above command from the terminal.</p>
 <hr />
-<h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link">¶</a></h3>
+<h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h3>
 <p>Edit the script with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) you downloaded at the beginning of the guide <a href="#the-script">HERE</a>.</p>
 <p>You only need to edit a few options in the script</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># --DEFINE VARIABLES--#</span>
@@ -2317,14 +2319,14 @@ pip install qbittorrent-api
 <div class="admonition failure">
 <p>If you don't use the unRaid <code>Mover Tuning</code> app, You might need to change <strong>line 54</strong> from <code>os.system('/usr/local/sbin/mover.old start')</code> to <code>os.system('/usr/local/sbin/mover start')</code></p>
 </div>
-<h4 id="copy-script-to-your-preferred-location">Copy script to your preferred location<a class="headerlink" href="#copy-script-to-your-preferred-location" title="Permanent link">¶</a></h4>
+<h4 id="copy-script-to-your-preferred-location">Copy script to your preferred location<a class="headerlink" href="#copy-script-to-your-preferred-location" title="Permanent link"></a></h4>
 <p>Now it's time to place the script you just edited somewhere easy to access/remember.</p>
 <p>Suggestions:</p>
 <ul>
 <li><code>/mnt/user/appdata/qbittorrent/scripts</code> (yes you need to create this folder your self)</li>
 <li><code>/mnt/user/data/scripts</code> (yes you need to create this folder your self)</li>
 </ul>
-<h4 id="final-steps">Final steps<a class="headerlink" href="#final-steps" title="Permanent link">¶</a></h4>
+<h4 id="final-steps">Final steps<a class="headerlink" href="#final-steps" title="Permanent link"></a></h4>
 <p>Now it's time to setup the scheduler when the mover should run.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
 <details class="check">

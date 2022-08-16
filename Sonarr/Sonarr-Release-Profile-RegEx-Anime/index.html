@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2340,17 +2342,17 @@
 
 
 
-<h1 id="release-profile-regex-anime">Release Profile RegEx (Anime)<a class="headerlink" href="#release-profile-regex-anime" title="Permanent link">¶</a></h1>
+<h1 id="release-profile-regex-anime">Release Profile RegEx (Anime)<a class="headerlink" href="#release-profile-regex-anime" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This guide is created and maintained by <a href="https://github.com/Visorask">Visorask/Visorak</a></p>
 <p>It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of tags.</p>
 <p>Being that release profiles are global without the use of a tag.</p>
 </div>
-<h2 id="dual-audio-regex">Dual-Audio Regex<a class="headerlink" href="#dual-audio-regex" title="Permanent link">¶</a></h2>
+<h2 id="dual-audio-regex">Dual-Audio Regex<a class="headerlink" href="#dual-audio-regex" title="Permanent link"></a></h2>
 <p>Having tested most of these settings, they work pretty well, but Anime is a fickle beast to toy with so be warned.</p>
 <hr />
-<h2 id="anime-delete">Anime Delete<a class="headerlink" href="#anime-delete" title="Permanent link">¶</a></h2>
+<h2 id="anime-delete">Anime Delete<a class="headerlink" href="#anime-delete" title="Permanent link"></a></h2>
 <details class="tip">
 <summary>If you have issues with extra files being downloaded like NCED or NCOP</summary>
 <p>If you have issues with Sonarr picking up a bunch of:</p>
@@ -2385,14 +2387,14 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p>Now when you download or import any files the script will run and clear out those files that you most likely won't use and if you want them well this script isn't for you.</p>
 </details>
 <hr />
-<h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link">¶</a></h2>
+<h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There are a few settings which make life a lot easier when tracking down and keeping certain information for your Anime and with tweaks to make it work better with <a href="https://github.com/ZeroQI/Hama.bundle" rel="noopener noreferrer" target="_blank">HamaAgent</a> for Plex.</p>
 </div>
-<h3 id="suggested-naming-scheme">Suggested naming scheme<a class="headerlink" href="#suggested-naming-scheme" title="Permanent link">¶</a></h3>
+<h3 id="suggested-naming-scheme">Suggested naming scheme<a class="headerlink" href="#suggested-naming-scheme" title="Permanent link"></a></h3>
 <p>For this I used the <a href="/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format" rel="noopener noreferrer" target="_blank">Sonarr Recommended naming scheme</a> with only a small change for a formatting error to be fixed and the <code>Series Folder Format</code> for easier matching.</p>
-<h4 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link">¶</a></h4>
+<h4 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link"></a></h4>
 <p>Has all necessary information and a little extra if you needed to rebuild.</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
@@ -2403,19 +2405,19 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p>Multi Episode:</p>
 <p><code>The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][FLAC][JA]-RlsGrp</code></p>
 </details>
-<h4 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link">¶</a></h4>
+<h4 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link"></a></h4>
 <p>Adding year back in with tvdb id allows matching to be correct. Thanks salty.</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>tvdb-<span class="o">{</span>TvdbId<span class="o">}]</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>The Series Title! (2010) [tvdb-12345]</code></p>
-<h4 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link">¶</a></h4>
+<h4 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link"></a></h4>
 <p>The only one real option to use in my opinion.</p>
 <div class="highlight"><pre><span></span><code>Season <span class="o">{</span>season:00<span class="o">}</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>Season 01</code></p>
-<h4 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link">¶</a></h4>
+<h4 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link"></a></h4>
 <div class="highlight"><pre><span></span><code>Prefixed Range
 </code></pre></div>
 <p>RESULTS:</p>
@@ -2425,11 +2427,11 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p><div class="lightgallery"><a data-sub-html="Example image of above" href="../images/rpa-mediamanage.png"><img alt="Example image of above" src="../images/rpa-mediamanage.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link">¶</a></h2>
+<h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link"></a></h2>
 <p>We need to add <code>HDTV-1080p</code> and <code>Bluray-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code> so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.</p>
 <p><div class="lightgallery"><a data-sub-html="rpa-quality-profile-group" href="../images/rpa-quality-profile-group.png"><img alt="rpa-quality-profile-group" src="../images/rpa-quality-profile-group.png" /></a></div></p>
 <hr />
-<h2 id="indexers">Indexers<a class="headerlink" href="#indexers" title="Permanent link">¶</a></h2>
+<h2 id="indexers">Indexers<a class="headerlink" href="#indexers" title="Permanent link"></a></h2>
 <p>We need to add the Anime Categories to our indexers otherwise this all won't work very well.</p>
 <details class="success">
 <summary>Example</summary>
@@ -2449,27 +2451,27 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p class="admonition-title">Note</p>
 <p>Check mark <code>Include Preferred when Renaming</code> where applicable and add <code>{Preferred Words}</code> to your renaming scheme else you could get a download loop issues!!!</p>
 </div>
-<h2 id="release-profiles">Release Profiles<a class="headerlink" href="#release-profiles" title="Permanent link">¶</a></h2>
+<h2 id="release-profiles">Release Profiles<a class="headerlink" href="#release-profiles" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We're going to make use of <strong>2</strong> separate release profiles.</p>
 </div>
-<h3 id="first-release-profile">First Release Profile<a class="headerlink" href="#first-release-profile" title="Permanent link">¶</a></h3>
+<h3 id="first-release-profile">First Release Profile<a class="headerlink" href="#first-release-profile" title="Permanent link"></a></h3>
 <!-- [trash_id: 31f4dd7b08bc8a43099eed604fd8acf6] -->
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>DO</strong> Check mark <code>Include Preferred when Renaming</code> on this release profile.
 <div class="lightgallery"><a data-sub-html="rpa-release-sources-1" href="../images/rpa-release-sources-1.png"><img alt="rpa-release-sources-1" src="../images/rpa-release-sources-1.png" /></a></div></p>
 </div>
-<h4 id="multi-audio">Multi-Audio<a class="headerlink" href="#multi-audio" title="Permanent link">¶</a></h4>
+<h4 id="multi-audio">Multi-Audio<a class="headerlink" href="#multi-audio" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[500]</strong></p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>multi<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
-<h4 id="dual-audio">Dual-Audio<a class="headerlink" href="#dual-audio" title="Permanent link">¶</a></h4>
+<h4 id="dual-audio">Dual-Audio<a class="headerlink" href="#dual-audio" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[0]</strong>. This is for renames only and that's why it is at <strong>0</strong>. It is also added in the second profile. This one is to ensure that the preferred words get added.</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>dual<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
-<h4 id="optional-uncutunrateduncensored">Optional (uncut|unrated|uncensored)<a class="headerlink" href="#optional-uncutunrateduncensored" title="Permanent link">¶</a></h4>
+<h4 id="optional-uncutunrateduncensored">Optional (uncut|unrated|uncensored)<a class="headerlink" href="#optional-uncutunrateduncensored" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[100]/[-10000]</strong></p>
 <p>If you would like it to be priority then set to <strong>100</strong>. If you do not want uncensored set it to <strong>-10000</strong>. If you don't care either way just leave it out. The reasoning behind only <strong>100</strong> is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple releases, but not more. And <strong>-10000</strong> to hopefully put it at the bottom of any tier list if you don't want it.</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>uncut<span class="p">|</span>unrated<span class="p">|</span>uncensored<span class="p">|</span><span class="se">\b</span><span class="o">(</span>AT<span class="o">[</span>-_. <span class="o">]</span>?X<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
@@ -2480,14 +2482,14 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="lightgallery"><a data-sub-html="rpa-release-profile-1" href="../images/rpa-release-profile-1.png"><img alt="rpa-release-profile-1" src="../images/rpa-release-profile-1.png" /></a></div></p>
 </div>
 <hr />
-<h3 id="second-release-profile">Second Release Profile<a class="headerlink" href="#second-release-profile" title="Permanent link">¶</a></h3>
+<h3 id="second-release-profile">Second Release Profile<a class="headerlink" href="#second-release-profile" title="Permanent link"></a></h3>
 <!-- [trash_id: c3a45e86f61f3a801428d1538918e41f] -->
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>DO NOT</strong> Check mark <code>Include Preferred when Renaming</code>
 <div class="lightgallery"><a data-sub-html="rpa-release-sources-2" href="../images/rpa-release-sources-2.png"><img alt="rpa-release-sources-2" src="../images/rpa-release-sources-2.png" /></a></div></p>
 </div>
-<h4 id="must-not-contain">Must Not Contain<a class="headerlink" href="#must-not-contain" title="Permanent link">¶</a></h4>
+<h4 id="must-not-contain">Must Not Contain<a class="headerlink" href="#must-not-contain" title="Permanent link"></a></h4>
 <p>The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go. If there is a reason something shouldn't be here let me know and your logic and I will be open to adjusting.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2511,7 +2513,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 /<span class="o">((</span>funi<span class="p">|</span>eng<span class="o">(</span>lish<span class="o">)</span>?<span class="o">)</span>_?dub<span class="p">|</span><span class="se">\b</span>dub<span class="o">(</span>bed<span class="o">)</span>?<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>Golumpa<span class="p">|</span>torenter69<span class="p">|</span>KamiFS<span class="p">|</span>KaiDubs<span class="o">)</span>/i
 </code></pre></div>
-<h4 id="preferred">Preferred<a class="headerlink" href="#preferred" title="Permanent link">¶</a></h4>
+<h4 id="preferred">Preferred<a class="headerlink" href="#preferred" title="Permanent link"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Two lines in one grouping is just there for readability purposes but achieves the same result and score.</p>
@@ -2732,10 +2734,10 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="lightgallery"><a data-sub-html="rpa-release-profile-2" href="../images/rpa-release-profile-2.png"><img alt="rpa-release-profile-2" src="../images/rpa-release-profile-2.png" /></a></div></p>
 </div>
 <hr />
-<h3 id="completed">Completed<a class="headerlink" href="#completed" title="Permanent link">¶</a></h3>
+<h3 id="completed">Completed<a class="headerlink" href="#completed" title="Permanent link"></a></h3>
 <p>When completed your Release Profiles should look like this:</p>
 <p><div class="lightgallery"><a data-sub-html="rpa-release-profile-3" href="../images/rpa-release-profile-3.png"><img alt="rpa-release-profile-3" src="../images/rpa-release-profile-3.png" /></a></div></p>
-<h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">¶</a></h3>
+<h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
 <p>Most of my information and knowledge came from:</p>
 <ul>
 <li>

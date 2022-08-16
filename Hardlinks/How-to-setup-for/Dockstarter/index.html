@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2180,12 +2182,12 @@
 
 
 
-<h1 id="dockstarter">Dockstarter<a class="headerlink" href="#dockstarter" title="Permanent link">¶</a></h1>
+<h1 id="dockstarter">Dockstarter<a class="headerlink" href="#dockstarter" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>I'm using the default paths in this example, and will keep the other paths unchanged so nothing will break if you make a mistake.</p>
 </div>
-<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h2>
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>We're going to use a mounted drive that we're going to use as storage for downloads and your media.
 In this example the mounted drive will be mounted to <code>/mnt/</code> with the following folder structure.</p>
 <div class="highlight"><pre><span></span><code>storage
@@ -2203,7 +2205,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
     ├── music
     └── tv
 </code></pre></div>
-<h2 id="changes-to-the-env">Changes to the .env<a class="headerlink" href="#changes-to-the-env" title="Permanent link">¶</a></h2>
+<h2 id="changes-to-the-env">Changes to the .env<a class="headerlink" href="#changes-to-the-env" title="Permanent link"></a></h2>
 <p>To accomplish this we need to change first a few paths in your <code>.env</code> (Usually <code>~/.docker/compose/.env</code>)</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Global Settings</span><span class="w"></span>
 <span class="l l-Scalar l-Scalar-Plain">COMPOSE_HTTP_TIMEOUT=60</span><span class="w"></span>
@@ -2217,7 +2219,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 <span class="l l-Scalar l-Scalar-Plain">PUID=1000</span><span class="w"></span>
 <span class="l l-Scalar l-Scalar-Plain">TZ=America/Chicago</span><span class="w"></span>
 </code></pre></div>
-<h3 id="changes-to-your-paths">Changes to your paths<a class="headerlink" href="#changes-to-your-paths" title="Permanent link">¶</a></h3>
+<h3 id="changes-to-your-paths">Changes to your paths<a class="headerlink" href="#changes-to-your-paths" title="Permanent link"></a></h3>
 <p>When that's all set then you will need to change the paths you're going to use in the containers from:</p>
 <p><code>/downloads</code> =&gt; <code>/storage/downloads</code></p>
 <p><code>/audiobooks</code> =&gt; <code>/storage/medialibrary/audiobooks</code></p>
@@ -2226,7 +2228,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 <p><code>/movies</code> =&gt; <code>/storage/medialibrary/movies</code></p>
 <p><code>/music</code> =&gt; <code>/storage/medialibrary/music</code></p>
 <p><code>/tv</code> =&gt; <code>/storage/medialibrary/tv</code></p>
-<h2 id="dockstarter-examples">DockSTARTer Examples<a class="headerlink" href="#dockstarter-examples" title="Permanent link">¶</a></h2>
+<h2 id="dockstarter-examples">DockSTARTer Examples<a class="headerlink" href="#dockstarter-examples" title="Permanent link"></a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The screenshots in the examples are using the following root path <code>/storage</code></p>
@@ -2242,7 +2244,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </ul>
 <details class="example">
 <summary>Sonarr Examples - [CLICK TO EXPAND]</summary>
-<h5 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link">¶</a></h5>
+<h5 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link"></a></h5>
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>Importing</code></p>
 <p><img alt="sonarr-enable-hardlinks" src="/Hardlinks/images/sonarr-enable-hardlinks.png" /></p>
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>Root Folders</code></p>
@@ -2253,7 +2255,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </details>
 <details class="example">
 <summary>Radarr Examples - [CLICK TO EXPAND]</summary>
-<h5 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link">¶</a></h5>
+<h5 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h5>
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>Importing</code></p>
 <p><img alt="radarr-enable-hardlinks" src="/Hardlinks/images/radarr-enable-hardlinks.png" /></p>
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>Root Folders</code></p>
@@ -2264,7 +2266,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </details>
 <details class="example">
 <summary>SABnzbd Examples - [CLICK TO EXPAND]</summary>
-<h5 id="sabnzbd">SABnzbd<a class="headerlink" href="#sabnzbd" title="Permanent link">¶</a></h5>
+<h5 id="sabnzbd">SABnzbd<a class="headerlink" href="#sabnzbd" title="Permanent link"></a></h5>
 <p><code>SABnzbd config</code> =&gt; <code>Folders</code></p>
 <p><img alt="ds-sabnzbd-folders" src="../images/ds-sabnzbd-folders.png" /></p>
 <p><code>SABnzbd config</code> =&gt; <code>Categories</code></p>
@@ -2272,7 +2274,7 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </details>
 <details class="example">
 <summary>NZBGet Examples - [CLICK TO EXPAND]</summary>
-<h5 id="nzbget">NZBGet<a class="headerlink" href="#nzbget" title="Permanent link">¶</a></h5>
+<h5 id="nzbget">NZBGet<a class="headerlink" href="#nzbget" title="Permanent link"></a></h5>
 <p><code>Settings</code> =&gt; <code>PATHS</code></p>
 <p><img alt="ds-nzbget-settings-paths" src="../images/ds-nzbget-settings-paths.png" /></p>
 <p><code>Settings</code> =&gt; <code>CATEGORIES</code></p>
@@ -2280,19 +2282,19 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </details>
 <details class="example">
 <summary>qBittorrent Examples - [CLICK TO EXPAND]</summary>
-<h5 id="qbittorrent">qBittorrent<a class="headerlink" href="#qbittorrent" title="Permanent link">¶</a></h5>
+<h5 id="qbittorrent">qBittorrent<a class="headerlink" href="#qbittorrent" title="Permanent link"></a></h5>
 <p><code>Options</code> =&gt; <code>Downloads</code></p>
 <p><img alt="ds-qbt-options-downloads" src="../images/ds-qbt-options-downloads.png" /></p>
 </details>
 <details class="example">
 <summary>Deluge Example - [CLICK TO EXPAND]</summary>
-<h5 id="deluge">Deluge<a class="headerlink" href="#deluge" title="Permanent link">¶</a></h5>
+<h5 id="deluge">Deluge<a class="headerlink" href="#deluge" title="Permanent link"></a></h5>
 <p><code>Preferences</code> =&gt; <code>Downloads</code></p>
 <p><img alt="ds-deluge-preferences-downloads" src="../images/ds-deluge-preferences-downloads.png" /></p>
 </details>
 <details class="example">
 <summary>ruTorrent Examples - [CLICK TO EXPAND]</summary>
-<h5 id="rutorrent">ruTorrent<a class="headerlink" href="#rutorrent" title="Permanent link">¶</a></h5>
+<h5 id="rutorrent">ruTorrent<a class="headerlink" href="#rutorrent" title="Permanent link"></a></h5>
 <p><code>../config/rtorrent/config/rtorrent.rc</code> (path to your appdata)</p>
 <p><img alt="ds-rtorrent.rc" src="../images/ds-rtorrent.rc.png" /></p>
 <p><code>Settings</code> =&gt; <code>Downloads</code></p>

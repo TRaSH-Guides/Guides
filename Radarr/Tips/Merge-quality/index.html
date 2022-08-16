@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2070,13 +2072,13 @@
 
 
 
-<h1 id="how-to-merge-quality">How to Merge Quality<a class="headerlink" href="#how-to-merge-quality" title="Permanent link">¶</a></h1>
+<h1 id="how-to-merge-quality">How to Merge Quality<a class="headerlink" href="#how-to-merge-quality" title="Permanent link"></a></h1>
 <p>The current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>In some cases it might be preferred to not have Quality Trump All, and let it be handled via Preferred Words / Custom Formats.</p>
 <p>To accomplish this you will need to merge the qualities with each other.</p>
-<h2 id="current-logic">Current Logic<a class="headerlink" href="#current-logic" title="Permanent link">¶</a></h2>
+<h2 id="current-logic">Current Logic<a class="headerlink" href="#current-logic" title="Permanent link"></a></h2>
 <p>Here you will see the current logic so you understand how the possible downloads are compared.</p>
-<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link">¶</a></h3>
+<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link"></a></h3>
 <details class="summary">
 <summary>Radarr current logic- [CLICK TO EXPAND]</summary>
 <p>As of 2021-11-06 the logic is as follows:</p>
@@ -2097,7 +2099,7 @@
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank">Repack/Proper Custom Format</a></p>
 </div>
 </details>
-<h3 id="sonarr-current-logic">Sonarr current logic<a class="headerlink" href="#sonarr-current-logic" title="Permanent link">¶</a></h3>
+<h3 id="sonarr-current-logic">Sonarr current logic<a class="headerlink" href="#sonarr-current-logic" title="Permanent link"></a></h3>
 <details class="summary">
 <summary>Sonarr current logic- [CLICK TO EXPAND]</summary>
 <p>As of 2021-11-06 the logic is as follows:</p>
@@ -2120,7 +2122,7 @@
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use a preferred word regex of <code>/\b(repack|proper)\b/i</code></p>
 </div>
 </details>
-<h2 id="merge-the-qualities">Merge the Qualities<a class="headerlink" href="#merge-the-qualities" title="Permanent link">¶</a></h2>
+<h2 id="merge-the-qualities">Merge the Qualities<a class="headerlink" href="#merge-the-qualities" title="Permanent link"></a></h2>
 <p>Go to your preferred Quality Profile or create a new one.</p>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
 <p>In this example we will merge the following qualities together:</p>

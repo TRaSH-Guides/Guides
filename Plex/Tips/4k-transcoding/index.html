@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2086,26 +2088,26 @@
 
 
 
-<h1 id="jbops-4k-transcode-stopping-with-tautulli">JBOPS 4K Transcode Stopping with Tautulli<a class="headerlink" href="#jbops-4k-transcode-stopping-with-tautulli" title="Permanent link">¶</a></h1>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<h1 id="jbops-4k-transcode-stopping-with-tautulli">JBOPS 4K Transcode Stopping with Tautulli<a class="headerlink" href="#jbops-4k-transcode-stopping-with-tautulli" title="Permanent link"></a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
 <p>The bane of Plex admins existence... 4K Transcodes. According to Plex's forum post <a href="https://forums.plex.tv/t/info-plex-4k-transcoding-and-you-aka-the-rules-of-4k/378203"><em>The Rules of 4K</em></a> the first three rules of collecting 4k content is don’t bother transcoding 4k.</p>
 <p>This guide will walk you through getting started with Tautulli and JBOPS. By the end of this guide you'll be able to stop all 4K video transcodes on your server. Note that this does require a <a href="https://www.plex.tv/plex-pass/">Plex Pass</a> to work.</p>
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">¶</a></h2>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link"></a></h2>
 <p><code>git clone https://github.com/blacktwin/JBOPS</code> into the config dir of your tautulli instance (if dockerized)
 Install requirements if needed (<code>pip install -r requirements.txt</code>)</p>
 <p>Go to your tautulli and go to the settings menu. In the sidebar, open “Notification Agents”. Create a new Notification Agent.</p>
-<h2 id="configuration-tab">Configuration Tab<a class="headerlink" href="#configuration-tab" title="Permanent link">¶</a></h2>
+<h2 id="configuration-tab">Configuration Tab<a class="headerlink" href="#configuration-tab" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code>Script Folder: /config/JBOPS
 Script File: killstream/kill_stream.py
 Script Timeout: 30 (default)
 Description (optional): 4K Transcode Stopper
 </code></pre></div>
-<h2 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link">¶</a></h2>
+<h2 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code>☑️ Playback Start
 ☑️ Playback Resume
 ☑️ Transcode Decision Change
 </code></pre></div>
-<h2 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link">¶</a></h2>
+<h2 id="conditions">Conditions<a class="headerlink" href="#conditions" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code>Condition {1}
 Video Decision is transcode
 
@@ -2115,7 +2117,7 @@ Video Resolution is 4k
 Condition Logic
 {1} and {2}
 </code></pre></div>
-<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">¶</a></h2>
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code>Under each: Playback Start, Playback Resume, Transcode Decision Change
 
 --jbop stream --username {username} --sessionId {session_id} --killMessage &#39;Transcoding streams are not allowed for {video_resolution} streams.&#39;

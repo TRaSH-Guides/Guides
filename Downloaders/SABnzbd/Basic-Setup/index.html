@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2246,7 +2248,7 @@
 
 
 
-<h1 id="sabnzbd-basic-setup">SABnzbd - Basic Setup<a class="headerlink" href="#sabnzbd-basic-setup" title="Permanent link">¶</a></h1>
+<h1 id="sabnzbd-basic-setup">SABnzbd - Basic Setup<a class="headerlink" href="#sabnzbd-basic-setup" title="Permanent link"></a></h1>
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
 <p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
@@ -2267,14 +2269,14 @@
 <p>Settings that aren't covered means you can change them to your own liking or just leave them on default.</p>
 <p><strong> I also recommend to enable the <code>Advanced Settings</code> on the top right. </strong></p>
 </div>
-<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">¶</a></h2>
-<h3 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link">¶</a></h3>
+<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
+<h3 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>General</code> =&gt; <code>Tuning</code>
 <div class="lightgallery"><a data-sub-html="General: Tuning" href="../images/sabnzbd-general-tuning.png"><img alt="General: Tuning" src="../images/sabnzbd-general-tuning.png" /></a></div></p>
 <p>I recommend setting a sane maximum speed and then limiting below that, to keep your internet connection happy. You can use <code>Settings</code> =&gt; <code>Scheduling</code> to toggle the limit on and off based on time, slowing it down while your family is using the internet and speeding it up at night when they're not.</p>
 <hr />
-<h2 id="folders">Folders<a class="headerlink" href="#folders" title="Permanent link">¶</a></h2>
-<h3 id="user-folders">User Folders<a class="headerlink" href="#user-folders" title="Permanent link">¶</a></h3>
+<h2 id="folders">Folders<a class="headerlink" href="#folders" title="Permanent link"></a></h2>
+<h3 id="user-folders">User Folders<a class="headerlink" href="#user-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>Users Folders</code>
 <div class="lightgallery"><a data-sub-html="Folders: User Folders" href="/Hardlinks/images/sabnzbd-folders.png"><img alt="Folders: User Folders" src="/Hardlinks/images/sabnzbd-folders.png" /></a></div></p>
 <p>Here you setup your download path/location.</p>
@@ -2289,12 +2291,12 @@
 </ol>
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong><strong>Your Download and Media Library should be </strong>NEVER<strong> the same locations</strong></strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
-<h3 id="system-folders">System Folders<a class="headerlink" href="#system-folders" title="Permanent link">¶</a></h3>
+<h3 id="system-folders">System Folders<a class="headerlink" href="#system-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>System Folders</code>
 <div class="lightgallery"><a data-sub-html="Folders: System Folders" href="../images/sabnzbd-folders-system-folders.png"><img alt="Folders: System Folders" src="../images/sabnzbd-folders-system-folders.png" /></a></div></p>
 <p>I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.</p>
 <hr />
-<h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link">¶</a></h2>
+<h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h2>
 <p><code>Settings</code> =&gt; <code>Servers</code> =&gt; <code>Add Server</code>
 <div class="lightgallery"><a data-sub-html="Servers" href="../images/sabnzbd-servers.png"><img alt="Servers" src="../images/sabnzbd-servers.png" /></a></div></p>
 <div class="admonition info">
@@ -2312,12 +2314,12 @@
 <li>For unreliable servers, will be ignored longer in case of failures</li>
 </ol>
 <hr />
-<h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">¶</a></h2>
+<h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link"></a></h2>
 <p><code>Settings</code>=&gt; <code>Categories</code></p>
 <p>Covered and fully explained in <a href="/Downloaders/SABnzbd/Paths-and-Categories/" rel="noopener noreferrer" target="_blank">SABnzbd - Paths and Categories</a></p>
 <hr />
-<h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link">¶</a></h2>
-<h3 id="queue">Queue<a class="headerlink" href="#queue" title="Permanent link">¶</a></h3>
+<h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link"></a></h2>
+<h3 id="queue">Queue<a class="headerlink" href="#queue" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Queue</code>
 <div class="lightgallery"><a data-sub-html="Switches: Queue" href="../images/sabnzbd-switches-queue.png"><img alt="Switches: Queue" src="../images/sabnzbd-switches-queue.png" /></a></div></p>
 <ol>
@@ -2327,7 +2329,7 @@
 <li>Suggest this sort so that the most likely to still be there stuff is downloaded first.</li>
 <li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
 </ol>
-<h3 id="post-processing">Post processing<a class="headerlink" href="#post-processing" title="Permanent link">¶</a></h3>
+<h3 id="post-processing">Post processing<a class="headerlink" href="#post-processing" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Post processing</code>
 <div class="lightgallery"><a data-sub-html="Switches: Post-processing" href="../images/sabnzbd-switches-post-processing.png"><img alt="Switches: Post-processing" src="../images/sabnzbd-switches-post-processing.png" /></a></div></p>
 <ol>
@@ -2340,16 +2342,16 @@
 <li>When sorting, use tags from indexer for title, season, episode, etc. Otherwise all naming is derived from the NZB name.</li>
 </ol>
 <hr />
-<h2 id="sorting">Sorting<a class="headerlink" href="#sorting" title="Permanent link">¶</a></h2>
+<h2 id="sorting">Sorting<a class="headerlink" href="#sorting" title="Permanent link"></a></h2>
 <p><code>Settings</code> =&gt; <code>Sorting</code></p>
 <div class="admonition danger">
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>MAKE SURE THAT SORTING IS ENTIRELY DISABLED</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
-<h2 id="recommended-sonarrradarr-settings">Recommended Sonarr/Radarr Settings<a class="headerlink" href="#recommended-sonarrradarr-settings" title="Permanent link">¶</a></h2>
+<h2 id="recommended-sonarrradarr-settings">Recommended Sonarr/Radarr Settings<a class="headerlink" href="#recommended-sonarrradarr-settings" title="Permanent link"></a></h2>
 <p>The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
 Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.</p>
-<h3 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link">¶</a></h3>
+<h3 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Sonarr - [CLICK TO EXPAND]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
@@ -2358,7 +2360,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 <p>Select Sabnzbd at step 4 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr: Download Clients - SABnzbd" href="../images/sonarr-download-clients-sabnzbd.png"><img alt="Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-sabnzbd.png" /></a></div></p>
 </details>
-<h3 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link">¶</a></h3>
+<h3 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Radarr - [CLICK TO EXPAND]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>

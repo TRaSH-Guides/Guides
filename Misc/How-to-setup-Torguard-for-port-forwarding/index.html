@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2268,7 +2270,7 @@
 
 
 
-<h1 id="setup-torguard-for-port-forwarding">Setup TorGuard for port forwarding<a class="headerlink" href="#setup-torguard-for-port-forwarding" title="Permanent link">¶</a></h1>
+<h1 id="setup-torguard-for-port-forwarding">Setup TorGuard for port forwarding<a class="headerlink" href="#setup-torguard-for-port-forwarding" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>These settings are a recommendation if you want to choose other settings be my guest.</p>
@@ -2287,13 +2289,13 @@
 </div>
 </div>
 <hr />
-<h2 id="login-to-your-client-area">Login to your Client area<a class="headerlink" href="#login-to-your-client-area" title="Permanent link">¶</a></h2>
+<h2 id="login-to-your-client-area">Login to your Client area<a class="headerlink" href="#login-to-your-client-area" title="Permanent link"></a></h2>
 <p>Login to your <a href="https://torguard.net/clientarea.php" rel="noopener noreferrer" target="_blank">Client Area</a>.</p>
 <details class="check">
 <summary>Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Client Area Login" href="../images/torguard/client-area-login.png"><img alt="Client Area Login" src="../images/torguard/client-area-login.png" /></a></div></p>
 </details>
-<h3 id="create-a-user-account">Create a user account<a class="headerlink" href="#create-a-user-account" title="Permanent link">¶</a></h3>
+<h3 id="create-a-user-account">Create a user account<a class="headerlink" href="#create-a-user-account" title="Permanent link"></a></h3>
 <p>First we're going to create a <a href="https://torguard.net/clientarea.php?action=changepw" rel="noopener noreferrer" target="_blank">User Account</a> for your VPN so we won't need to use your main account that you use to login to your account on the Torguard site.
 This account will be used for authentication with your VPN Torrent client.</p>
 <p><code>Services</code> &gt; <code>My Services</code> &gt; <code>Manage</code> &gt; <code>Manage Credentials</code></p>
@@ -2308,14 +2310,14 @@ This account will be used for authentication with your VPN Torrent client.</p>
 <p><div class="lightgallery"><a data-sub-html="Create User Account" href="../images/torguard/create_user_account.png"><img alt="Create User Account" src="../images/torguard/create_user_account.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="how-to-get-the-ip-of-your-vpn-server">How to get the IP of your VPN server<a class="headerlink" href="#how-to-get-the-ip-of-your-vpn-server" title="Permanent link">¶</a></h2>
+<h2 id="how-to-get-the-ip-of-your-vpn-server">How to get the IP of your VPN server<a class="headerlink" href="#how-to-get-the-ip-of-your-vpn-server" title="Permanent link"></a></h2>
 <p>Now it's time to get the IP of your VPN server you're going to use from the <a href="https://torguard.net/network/" rel="noopener noreferrer" target="_blank">Global VPN Network</a>, From your Client Area.</p>
 <p><code>Servers</code> &gt; <code>Global VPN Network</code></p>
 <details class="check">
 <summary>Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Servers &gt; Global VPN Network" href="../images/torguard/servers-globalvpnnetwork.png"><img alt="Servers &gt; Global VPN Network" src="../images/torguard/servers-globalvpnnetwork.png" /></a></div></p>
 </details>
-<h3 id="global-vpn-network">Global VPN Network<a class="headerlink" href="#global-vpn-network" title="Permanent link">¶</a></h3>
+<h3 id="global-vpn-network">Global VPN Network<a class="headerlink" href="#global-vpn-network" title="Permanent link"></a></h3>
 <p>Then we're going to select which server we're going to use,</p>
 <p>For the best speed it's recommended to choose the one nearest to your location.</p>
 <div class="admonition tip">
@@ -2327,7 +2329,7 @@ This account will be used for authentication with your VPN Torrent client.</p>
 <p class="admonition-title">Important</p>
 <p>Also check if your chosen server supports OpenVPN or Wireguard depending what you want to use.</p>
 </div>
-<h3 id="get-your-vpn-ip">Get your VPN IP<a class="headerlink" href="#get-your-vpn-ip" title="Permanent link">¶</a></h3>
+<h3 id="get-your-vpn-ip">Get your VPN IP<a class="headerlink" href="#get-your-vpn-ip" title="Permanent link"></a></h3>
 <p>Open a cmd window or something equal and type:</p>
 <div class="highlight"><pre><span></span><code>    ping us-fl.secureconnect.me
 </code></pre></div>
@@ -2338,12 +2340,12 @@ Remember that for later use.</p>
 <p><div class="lightgallery"><a data-sub-html="ping" href="../images/torguard/cmd-ping.png"><img alt="ping" src="../images/torguard/cmd-ping.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="how-to-setup-port-forwarding">How to setup Port forwarding<a class="headerlink" href="#how-to-setup-port-forwarding" title="Permanent link">¶</a></h2>
+<h2 id="how-to-setup-port-forwarding">How to setup Port forwarding<a class="headerlink" href="#how-to-setup-port-forwarding" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.</p>
 </div>
-<h3 id="port-forward-request">Port Forward Request<a class="headerlink" href="#port-forward-request" title="Permanent link">¶</a></h3>
+<h3 id="port-forward-request">Port Forward Request<a class="headerlink" href="#port-forward-request" title="Permanent link"></a></h3>
 <p>From your Client Area go to your <a href="https://torguard.net/clientarea.php?action=products" rel="noopener noreferrer" target="_blank">My Services</a>.</p>
 <p>Then click on <code>Manage</code> and select <code>Port Forward Request</code>.</p>
 <p><code>Services</code> &gt; <code>My Services</code> &gt; <code>Manage</code> &gt; <code>Port Forward Request</code></p>
@@ -2351,9 +2353,9 @@ Remember that for later use.</p>
 <summary>Example - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Port Forward Request" href="../images/torguard/req_port_fwd.png"><img alt="Port Forward Request" src="../images/torguard/req_port_fwd.png" /></a></div></p>
 </details>
-<h3 id="vpn-tunnel-type">VPN Tunnel Type<a class="headerlink" href="#vpn-tunnel-type" title="Permanent link">¶</a></h3>
+<h3 id="vpn-tunnel-type">VPN Tunnel Type<a class="headerlink" href="#vpn-tunnel-type" title="Permanent link"></a></h3>
 <p>Choose your preferred VPN Tunnel type.</p>
-<h4 id="ovpn-request-port-forward">OVPN Request Port Forward<a class="headerlink" href="#ovpn-request-port-forward" title="Permanent link">¶</a></h4>
+<h4 id="ovpn-request-port-forward">OVPN Request Port Forward<a class="headerlink" href="#ovpn-request-port-forward" title="Permanent link"></a></h4>
 <details class="summary">
 <summary>OVPN Request Port Forward</summary>
 <p><div class="lightgallery"><a data-sub-html="Request New Port Forward OVPN" href="../images/torguard/request-new-pfw-ovpn.png"><img alt="Request New Port Forward OVPN" src="../images/torguard/request-new-pfw-ovpn.png" /></a></div></p>
@@ -2375,7 +2377,7 @@ Remember that for later use.</p>
 <p>Normally it doesn't take more then a few seconds/minutes to get the ports approved if it takes longer or you get <code>PENDING</code> I suggest to ping the server again (or choose another sever) and you often get a new IP and retry it again with the new IP.</p>
 </div>
 </details>
-<h4 id="wireguard-request-port-forward">WireGuard Request Port Forward<a class="headerlink" href="#wireguard-request-port-forward" title="Permanent link">¶</a></h4>
+<h4 id="wireguard-request-port-forward">WireGuard Request Port Forward<a class="headerlink" href="#wireguard-request-port-forward" title="Permanent link"></a></h4>
 <details class="summary">
 <summary>WireGuard Request Port Forward - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Request New Port Forward WireGuard" href="../images/torguard/request-new-pfw-wireguard.png"><img alt="Request New Port Forward WireGuard" src="../images/torguard/request-new-pfw-wireguard.png" /></a></div></p>
@@ -2402,7 +2404,7 @@ Remember that for later use.</p>
 </div>
 </details>
 <hr />
-<h2 id="how-to-create-the-config-file">How to create the config file<a class="headerlink" href="#how-to-create-the-config-file" title="Permanent link">¶</a></h2>
+<h2 id="how-to-create-the-config-file">How to create the config file<a class="headerlink" href="#how-to-create-the-config-file" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This section will consist of 2 parts depending if you want to use OVPN or WireGuard so make sure you choose your preferred VPN Tunnel type.</p>
@@ -2413,9 +2415,9 @@ Remember that for later use.</p>
 <summary>Example Select Tools &gt; Config Generator - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="Tools - Config Generator" href="../images/torguard/tools-config-generator.png"><img alt="Tools - Config Generator" src="../images/torguard/tools-config-generator.png" /></a></div></p>
 </details>
-<h3 id="config-generator">Config Generator<a class="headerlink" href="#config-generator" title="Permanent link">¶</a></h3>
+<h3 id="config-generator">Config Generator<a class="headerlink" href="#config-generator" title="Permanent link"></a></h3>
 <p>Choose your preferred VPN Tunnel type.</p>
-<h4 id="ovpn-config-generator">OVPN Config Generator<a class="headerlink" href="#ovpn-config-generator" title="Permanent link">¶</a></h4>
+<h4 id="ovpn-config-generator">OVPN Config Generator<a class="headerlink" href="#ovpn-config-generator" title="Permanent link"></a></h4>
 <details class="summary">
 <summary>OVPN Config Generator - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="OVPN Config Generator" href="../images/torguard/config-generator-ovpn.png"><img alt="OVPN Config Generator" src="../images/torguard/config-generator-ovpn.png" /></a></div></p>
@@ -2433,7 +2435,7 @@ Remember that for later use.</p>
 <p>Now you will download a <code>.conf</code> file with a random number.</p>
 <p>Rename the extension from <code>*.conf</code> to <code>*.ovpn</code> and copy it to your openvpn folder of your VPN torrent client.</p>
 </details>
-<h4 id="wireguard-config-generator">WireGuard Config Generator<a class="headerlink" href="#wireguard-config-generator" title="Permanent link">¶</a></h4>
+<h4 id="wireguard-config-generator">WireGuard Config Generator<a class="headerlink" href="#wireguard-config-generator" title="Permanent link"></a></h4>
 <details class="summary">
 <summary>WireGuard Config Generator - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="WireGuard Config Generator" href="../images/torguard/config-generator-wireguard.png"><img alt="WireGuard Config Generator" src="../images/torguard/config-generator-wireguard.png" /></a></div></p>

@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2330,7 +2332,7 @@
 
 
 
-<h1 id="release-profile-regex-web-dl">Release Profile RegEx (WEB-DL)<a class="headerlink" href="#release-profile-regex-web-dl" title="Permanent link">¶</a></h1>
+<h1 id="release-profile-regex-web-dl">Release Profile RegEx (WEB-DL)<a class="headerlink" href="#release-profile-regex-web-dl" title="Permanent link"></a></h1>
 <p>Sonarr V3 has a great feature called Release Profile.
 With this option you can fine tune your preference.</p>
 <p>The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases. (Scene releases are still being downloaded, but replaced once an upgrade is found.)</p>
@@ -2339,7 +2341,7 @@ With this option you can fine tune your preference.</p>
 </div>
 <details class="question">
 <summary>FAQ - [CLICK TO EXPAND]</summary>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h2>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link"></a></h2>
 <p><strong>Q: Why do you only have a release profile for WEB-DL?</strong></p>
 <p>A: I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)</p>
 <p><strong>Q: Why do you prefer P2P groups over scene groups?</strong></p>
@@ -2358,7 +2360,7 @@ The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, 
 <p>I will still keep a eye on them and add the Low Quality Groups to the <code>-100</code> score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.</p>
 </details>
 <hr />
-<h2 id="propers-and-repacks">Propers and Repacks<a class="headerlink" href="#propers-and-repacks" title="Permanent link">¶</a></h2>
+<h2 id="propers-and-repacks">Propers and Repacks<a class="headerlink" href="#propers-and-repacks" title="Permanent link"></a></h2>
 <p>First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release!</p>
 <p><div class="lightgallery"><a data-sub-html="rp-settings-media-management-proper" href="../images/rp-settings-media-management-proper.png"><img alt="rp-settings-media-management-proper" src="../images/rp-settings-media-management-proper.png" /></a></div></p>
 <p>Go to <code>Settings</code> =&gt; <code>Media Management</code>
@@ -2398,7 +2400,7 @@ We´re going to set it to <code>Do not Prefer</code>.</p>
 <p>We're going to make use of four separate release profiles.</p>
 </div>
 <hr />
-<h2 id="release-sources-streaming-service-release-profile">Release Sources (Streaming Service) - Release Profile<a class="headerlink" href="#release-sources-streaming-service-release-profile" title="Permanent link">¶</a></h2>
+<h2 id="release-sources-streaming-service-release-profile">Release Sources (Streaming Service) - Release Profile<a class="headerlink" href="#release-sources-streaming-service-release-profile" title="Permanent link"></a></h2>
 <p><sub>Profile 1</sub></p>
 <!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
 
@@ -2463,7 +2465,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p><div class="lightgallery"><a data-sub-html="rp-release-sources" href="../images/rp-release-sources.png"><img alt="rp-release-sources" src="../images/rp-release-sources.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="p2p-groups-repackproper-release-profile">P2P Groups + Repack/Proper - Release Profile<a class="headerlink" href="#p2p-groups-repackproper-release-profile" title="Permanent link">¶</a></h2>
+<h2 id="p2p-groups-repackproper-release-profile">P2P Groups + Repack/Proper - Release Profile<a class="headerlink" href="#p2p-groups-repackproper-release-profile" title="Permanent link"></a></h2>
 <p><sub>Profile 2</sub></p>
 <!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
 
@@ -2510,7 +2512,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p><div class="lightgallery"><a data-sub-html="rp-p2p-groups" href="../images/rp-p2p-groups.png"><img alt="rp-p2p-groups" src="../images/rp-p2p-groups.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="low-quality-groups-release-profile">Low Quality Groups - Release Profile<a class="headerlink" href="#low-quality-groups-release-profile" title="Permanent link">¶</a></h2>
+<h2 id="low-quality-groups-release-profile">Low Quality Groups - Release Profile<a class="headerlink" href="#low-quality-groups-release-profile" title="Permanent link"></a></h2>
 <p><sub>Profile 3</sub></p>
 <!-- [trash_id: EBC725268D687D588A20CBC5F97E538B] -->
 
@@ -2539,7 +2541,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p><div class="lightgallery"><a data-sub-html="rp-lq-groups" href="../images/rp-lq-groups.png"><img alt="rp-lq-groups" src="../images/rp-lq-groups.png" /></a></div></p>
 </details>
 <hr />
-<h2 id="optionals-release-profile">Optionals - Release Profile<a class="headerlink" href="#optionals-release-profile" title="Permanent link">¶</a></h2>
+<h2 id="optionals-release-profile">Optionals - Release Profile<a class="headerlink" href="#optionals-release-profile" title="Permanent link"></a></h2>
 <p><sub>Profile 4</sub></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -2551,7 +2553,7 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> <strong>Except the <code>Golden Rule</code> this one is actually a must even that it's added in the optional section</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>If you see certain optional with a positive score and you actually don't want them just add them with a negative score !!!</p>
 </div>
-<h3 id="golden-rule">Golden rule<a class="headerlink" href="#golden-rule" title="Permanent link">¶</a></h3>
+<h3 id="golden-rule">Golden rule<a class="headerlink" href="#golden-rule" title="Permanent link"></a></h3>
 <div class="admonition attention">
 <p><img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /> This one is actually a must even that it's added in the optional section <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 </div>
@@ -2591,17 +2593,17 @@ It's all really dependent on specific situations for different people</p>
 <p><div class="lightgallery"><a data-sub-html="rp-release-sources" href="../images/rp-golden-rule.png"><img alt="rp-release-sources" src="../images/rp-golden-rule.png" /></a></div></p>
 </details>
 <hr />
-<h4 id="optional-prefer-hdr">Optional - Prefer HDR<a class="headerlink" href="#optional-prefer-hdr" title="Permanent link">¶</a></h4>
+<h4 id="optional-prefer-hdr">Optional - Prefer HDR<a class="headerlink" href="#optional-prefer-hdr" title="Permanent link"></a></h4>
 <p>Add this to your <code>Preferred (3)</code> with a score of [10]</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span>HDR<span class="o">(</span><span class="se">\b</span><span class="p">|</span><span class="se">\d</span><span class="o">)</span>/i
 </code></pre></div>
 <hr />
-<h4 id="optional-prefer-dolby-vision">Optional - Prefer Dolby Vision<a class="headerlink" href="#optional-prefer-dolby-vision" title="Permanent link">¶</a></h4>
+<h4 id="optional-prefer-dolby-vision">Optional - Prefer Dolby Vision<a class="headerlink" href="#optional-prefer-dolby-vision" title="Permanent link"></a></h4>
 <p>Add this to your <code>Preferred (3)</code> with a score of [100]</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dv<span class="p">|</span>dovi<span class="p">|</span>dolby<span class="o">[</span> .<span class="o">]</span>?vision<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <hr />
-<h4 id="optional-dislike-retags">Optional - Dislike retags<a class="headerlink" href="#optional-dislike-retags" title="Permanent link">¶</a></h4>
+<h4 id="optional-dislike-retags">Optional - Dislike retags<a class="headerlink" href="#optional-dislike-retags" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.</p>
@@ -2609,7 +2611,7 @@ It's all really dependent on specific situations for different people</p>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\[</span>rartv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>rarbg<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>eztv<span class="se">\]</span><span class="p">|</span><span class="se">\[</span>TGx<span class="se">\]</span><span class="o">)</span>/i
 </code></pre></div>
-<h4 id="optional-dislike-obfuscated">Optional - Dislike Obfuscated<a class="headerlink" href="#optional-dislike-obfuscated" title="Permanent link">¶</a></h4>
+<h4 id="optional-dislike-obfuscated">Optional - Dislike Obfuscated<a class="headerlink" href="#optional-dislike-obfuscated" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.</p>
@@ -2618,7 +2620,7 @@ It's all really dependent on specific situations for different people</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-4P<span class="p">|</span>-4Planet<span class="p">|</span>-AsRequested<span class="p">|</span>-BUYMORE<span class="p">|</span>-Chamele0n<span class="p">|</span>-GEROV<span class="p">|</span>-iNC0GNiTO<span class="p">|</span>-NZBGeek<span class="p">|</span>-Obfuscated<span class="p">|</span>-postbot<span class="p">|</span>-Rakuv<span class="p">|</span>-Scrambled<span class="p">|</span>-WhiteRev<span class="p">|</span>-xpost<span class="p">|</span>-WRTEAM<span class="p">|</span>-CAPTCHA<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <hr />
-<h4 id="optional-dislike-release-ending-en">Optional - Dislike release ending: en<a class="headerlink" href="#optional-dislike-release-ending-en" title="Permanent link">¶</a></h4>
+<h4 id="optional-dislike-release-ending-en">Optional - Dislike release ending: en<a class="headerlink" href="#optional-dislike-release-ending-en" title="Permanent link"></a></h4>
 <p>Add this to your <code>Preferred (3)</code> with a score of [-25]</p>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
@@ -2627,7 +2629,7 @@ It's all really dependent on specific situations for different people</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\s</span>?<span class="se">\b</span>en<span class="se">\b</span>$/i
 </code></pre></div>
 <hr />
-<h4 id="optional-dislike-release-containing-1-">Optional - Dislike release containing: 1-<a class="headerlink" href="#optional-dislike-release-containing-1-" title="Permanent link">¶</a></h4>
+<h4 id="optional-dislike-release-containing-1-">Optional - Dislike release containing: 1-<a class="headerlink" href="#optional-dislike-release-containing-1-" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>Some indexers are known to add extra useless info to the release name which could mess up your results or naming.</p>
@@ -2637,7 +2639,7 @@ It's all really dependent on specific situations for different people</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="m">1</span>-.+<span class="o">)</span>$/i
 </code></pre></div>
 <hr />
-<h4 id="optional-prefer-season-packs">Optional - Prefer Season Packs<a class="headerlink" href="#optional-prefer-season-packs" title="Permanent link">¶</a></h4>
+<h4 id="optional-prefer-season-packs">Optional - Prefer Season Packs<a class="headerlink" href="#optional-prefer-season-packs" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>Use this if you prefer Season packs</p>
@@ -2653,7 +2655,7 @@ It's all really dependent on specific situations for different people</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span>S<span class="se">\d</span>+<span class="se">\b</span><span class="o">(</span>?!E<span class="se">\d</span>+<span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <hr />
-<h5 id="su-season-pack-issue">.su season pack issue<a class="headerlink" href="#su-season-pack-issue" title="Permanent link">¶</a></h5>
+<h5 id="su-season-pack-issue">.su season pack issue<a class="headerlink" href="#su-season-pack-issue" title="Permanent link"></a></h5>
 <details class="bug">
 <summary>.su season pack issue - [CLICK TO EXPAND]</summary>
 <p>When you see a error in Sonarr that looks somehow like the follow screenshot</p>
@@ -2667,7 +2669,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 </div>
 </details>
 <hr />
-<h4 id="optional-ignore-dolby-vision-without-hdr10-fallback">Optional - Ignore Dolby Vision without HDR10 fallback<a class="headerlink" href="#optional-ignore-dolby-vision-without-hdr10-fallback" title="Permanent link">¶</a></h4>
+<h4 id="optional-ignore-dolby-vision-without-hdr10-fallback">Optional - Ignore Dolby Vision without HDR10 fallback<a class="headerlink" href="#optional-ignore-dolby-vision-without-hdr10-fallback" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
@@ -2676,7 +2678,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="p">|</span>REMUX<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>- .<span class="o">]</span>?Vision<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
 </code></pre></div>
 <hr />
-<h4 id="optional-ignore-the-group-scene">Optional - Ignore The Group -SCENE<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link">¶</a></h4>
+<h4 id="optional-ignore-the-group-scene">Optional - Ignore The Group -SCENE<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link"></a></h4>
 <details class="question">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <p>Seems plex ignores <code>-scene</code> because it thinks they are extra's. <a href="https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11" rel="noopener noreferrer" target="_blank">SOURCE</a></p>
@@ -2685,7 +2687,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>-scene<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <hr />
-<h4 id="optional-ignore-scene-releases">Optional - Ignore scene releases<a class="headerlink" href="#optional-ignore-scene-releases" title="Permanent link">¶</a></h4>
+<h4 id="optional-ignore-scene-releases">Optional - Ignore scene releases<a class="headerlink" href="#optional-ignore-scene-releases" title="Permanent link"></a></h4>
 <details class="question">
 <summary>WHY ? - [CLICK TO EXPAND]</summary>
 <p>If you don't want to download so called scene releases.</p>
@@ -2693,7 +2695,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <p>Add this to your <code>Must not contain (2)</code></p>
 <div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>web<span class="o">[</span> <span class="o">]</span>dl<span class="p">|</span>-deflate<span class="p">|</span>-inflate<span class="o">))(</span>?<span class="o">=</span>.*<span class="o">([</span>_. <span class="o">]</span>WEB<span class="o">[</span>_. <span class="o">]</span><span class="p">|</span>-CAKES<span class="se">\b</span><span class="p">|</span>-GGEZ<span class="se">\b</span><span class="p">|</span>-GGWP<span class="se">\b</span><span class="p">|</span>-GLHF<span class="se">\b</span><span class="p">|</span>-GOSSIP<span class="se">\b</span><span class="p">|</span>-KOGI<span class="se">\b</span><span class="p">|</span>-PECULATE<span class="se">\b</span><span class="o">))</span>.*/i
 </code></pre></div>
-<h4 id="optional-ignore-bad-dual-audio-groups">Optional - Ignore Bad Dual Audio Groups<a class="headerlink" href="#optional-ignore-bad-dual-audio-groups" title="Permanent link">¶</a></h4>
+<h4 id="optional-ignore-bad-dual-audio-groups">Optional - Ignore Bad Dual Audio Groups<a class="headerlink" href="#optional-ignore-bad-dual-audio-groups" title="Permanent link"></a></h4>
 <details class="question">
 <summary>WHY ? - [CLICK TO EXPAND]</summary>
 <p>These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
@@ -2703,7 +2705,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>-alfaHD<span class="p">|</span>-BAT<span class="p">|</span>-BNd<span class="p">|</span>-C<span class="se">\.</span>A<span class="se">\.</span>A<span class="p">|</span>-Cory<span class="p">|</span>-FF<span class="p">|</span>-FOXX<span class="p">|</span>-G4RiS<span class="p">|</span>-GUEIRA<span class="p">|</span>-N3G4N<span class="p">|</span>-PD<span class="p">|</span>-RiPER<span class="p">|</span>-RK<span class="p">|</span>-SiGLA<span class="p">|</span>-Tars<span class="p">|</span>-WTV<span class="p">|</span>-Yatogam1<span class="p">|</span>-YusukeFLA<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <hr />
-<h3 id="a-little-explanation-of-the-scores-and-why">A little explanation of the scores and why<a class="headerlink" href="#a-little-explanation-of-the-scores-and-why" title="Permanent link">¶</a></h3>
+<h3 id="a-little-explanation-of-the-scores-and-why">A little explanation of the scores and why<a class="headerlink" href="#a-little-explanation-of-the-scores-and-why" title="Permanent link"></a></h3>
 <ul>
 <li>Scores [75]-[100] Release Source.</li>
 <li>Scores [125]-[150] P2P Groups.</li>
@@ -2720,7 +2722,7 @@ Also they often even rename the release name in to Portuguese.</p>
 </ul>
 <p>Optional =&gt; We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know.</p>
 <p>If you notice something wrong just contact me and we will try to fix it or remove it.</p>
-<h2 id="final-results">Final Results<a class="headerlink" href="#final-results" title="Permanent link">¶</a></h2>
+<h2 id="final-results">Final Results<a class="headerlink" href="#final-results" title="Permanent link"></a></h2>
 <p>When you've done it correctly it will look something like this.</p>
 <details class="success">
 <summary>example - [CLICK TO EXPAND]</summary>

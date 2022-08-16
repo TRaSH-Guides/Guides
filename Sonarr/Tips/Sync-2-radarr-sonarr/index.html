@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2179,7 +2181,7 @@
 
 
 <!-- BEGIN INCLUDE ../../Radarr/Tips/Sync-2-radarr-sonarr.md -->
-<h1 id="how-to-sync-2-radarr-or-sonarr-with-each-other">How to Sync 2 Radarr or Sonarr with each other<a class="headerlink" href="#how-to-sync-2-radarr-or-sonarr-with-each-other" title="Permanent link">¶</a></h1>
+<h1 id="how-to-sync-2-radarr-or-sonarr-with-each-other">How to Sync 2 Radarr or Sonarr with each other<a class="headerlink" href="#how-to-sync-2-radarr-or-sonarr-with-each-other" title="Permanent link"></a></h1>
 <p>In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.</p>
 <p>I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.</p>
 <ul>
@@ -2189,7 +2191,7 @@
 <div class="admonition error">
 <p>I'm not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running.  <a href="https://wiki.servarr.com/radarr/installation#multiple-instances">Radarr Multiple Instance Information</a> and <a href="https://wiki.servarr.com/sonarr/installation#multiple-instances">Sonarr Multiple Instance Information</a></p>
 </div>
-<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">¶</a></h2>
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
 <p>For this you need to have prepared the following:</p>
 <ul>
 <li>Two Radarr/Sonarr instances fully setup (Indexers, Custom Formats, Downloaders, etc).</li>
@@ -2202,7 +2204,7 @@
 <p>Make sure you use two separate root folders in Radarr/Sonarr (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</p>
 </div>
 <hr />
-<h3 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link">¶</a></h3>
+<h3 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link"></a></h3>
 <div class="admonition info">
 <p>In this example I'm going to use two Radarr instances (The basics is the same for Sonarr).</p>
 <ul>
@@ -2211,7 +2213,7 @@
 </ul>
 <p>This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances</p>
 </div>
-<h4 id="adding-the-radarr-sync-list">Adding the Radarr Sync list<a class="headerlink" href="#adding-the-radarr-sync-list" title="Permanent link">¶</a></h4>
+<h4 id="adding-the-radarr-sync-list">Adding the Radarr Sync list<a class="headerlink" href="#adding-the-radarr-sync-list" title="Permanent link"></a></h4>
 <p>In <code>Radarr 2</code> go to <code>Settings</code> =&gt; <code>Lists</code></p>
 <p><img alt="Radarr Settings Lists" src="../../../Radarr/Tips/images/radarr-settings-lists.png" /></p>
 <p>Click on the + to add a list and select <code>Radarr</code></p>
@@ -2233,7 +2235,7 @@
 <li>Test the connection to <code>Radarr 1</code>.</li>
 <li>Save your settings.</li>
 </ol>
-<h4 id="radarr-download-client-setup">Radarr Download client setup<a class="headerlink" href="#radarr-download-client-setup" title="Permanent link">¶</a></h4>
+<h4 id="radarr-download-client-setup">Radarr Download client setup<a class="headerlink" href="#radarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Radarr instances, this all can be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><div class="lightgallery"><a data-sub-html="Radarr - Settings Download Clients" href="../../../Radarr/Tips/images/radarr-settings-download-clients.png"><img alt="Radarr - Settings Download Clients" src="../../../Radarr/Tips/images/radarr-settings-download-clients.png" /></a></div></p>
@@ -2244,10 +2246,10 @@
 <p class="admonition-title">Attention</p>
 <p>This can't and shouldn't be the same category you use for <code>Radarr 1</code> but a separate <code>Category</code>.</p>
 </div>
-<h3 id="how-does-this-radarr-sync-work">How does this Radarr Sync work<a class="headerlink" href="#how-does-this-radarr-sync-work" title="Permanent link">¶</a></h3>
+<h3 id="how-does-this-radarr-sync-work">How does this Radarr Sync work<a class="headerlink" href="#how-does-this-radarr-sync-work" title="Permanent link"></a></h3>
 <p>You now only need to make use of <code>Radarr 1</code>. All movies you add to <code>Radarr 1</code> will be synced to <code>Radarr 2</code> at a scheduled time.</p>
 <hr />
-<h3 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link">¶</a></h3>
+<h3 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link"></a></h3>
 <div class="admonition info">
 <p>In this example I'm going to use two Sonarr instances (The basics is the same for Radarr).</p>
 <ul>
@@ -2256,12 +2258,12 @@
 </ul>
 <p>This option is best used if you only want to have a few TV shows (or movies if you use this option with Radarr) as 4K/2160p (UHD)</p>
 </div>
-<h4 id="extra-preparation">Extra preparation<a class="headerlink" href="#extra-preparation" title="Permanent link">¶</a></h4>
+<h4 id="extra-preparation">Extra preparation<a class="headerlink" href="#extra-preparation" title="Permanent link"></a></h4>
 <p>In <code>Sonarr 1</code> go to <code>Settings</code> =&gt; <code>Profiles</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Settings - Profiles" href="../../../Radarr/Tips/images/sonarr-settings-profiles.png"><img alt="Sonarr - Settings - Profiles" src="../../../Radarr/Tips/images/sonarr-settings-profiles.png" /></a></div></p>
 <p>Clone your used profile and rename your profile from <code>Profilename - Copy</code> to <code>Profilename!</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Clone Profile" href="../../../Radarr/Tips/images/sonarr-clone-profile.png"><img alt="Sonarr - Clone Profile" src="../../../Radarr/Tips/images/sonarr-clone-profile.png" /></a></div></p>
-<h4 id="adding-the-sonarr-sync-list">Adding the Sonarr Sync list<a class="headerlink" href="#adding-the-sonarr-sync-list" title="Permanent link">¶</a></h4>
+<h4 id="adding-the-sonarr-sync-list">Adding the Sonarr Sync list<a class="headerlink" href="#adding-the-sonarr-sync-list" title="Permanent link"></a></h4>
 <p>In <code>Sonarr 2</code> go to <code>Settings</code> =&gt; <code>Import Lists</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr Settings Import Lists" href="../../../Radarr/Tips/images/sonarr-settings-import-lists.png"><img alt="Sonarr Settings Import Lists" src="../../../Radarr/Tips/images/sonarr-settings-import-lists.png" /></a></div></p>
 <p>Click on the + to add a list and select <code>Sonarr</code></p>
@@ -2282,7 +2284,7 @@
 <li>Test the connection to <code>Sonarr 1</code>.</li>
 <li>Save your settings.</li>
 </ol>
-<h4 id="sonarr-download-client-setup">Sonarr Download client setup<a class="headerlink" href="#sonarr-download-client-setup" title="Permanent link">¶</a></h4>
+<h4 id="sonarr-download-client-setup">Sonarr Download client setup<a class="headerlink" href="#sonarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Sonarr/Radarr instances, this can all be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><div class="lightgallery"><a data-sub-html="Sonarr - Settings Download Clients" href="../../../Radarr/Tips/images/sonarr-settings-download-clients.png"><img alt="Sonarr - Settings Download Clients" src="../../../Radarr/Tips/images/sonarr-settings-download-clients.png" /></a></div></p>
@@ -2293,7 +2295,7 @@
 <p class="admonition-title">Important</p>
 <p>This can't and shouldn't be the same category you use for <code>Sonarr 1</code> but a separate <code>Category</code>.</p>
 </div>
-<h3 id="how-does-this-sonarr-sync-work">How does this Sonarr Sync work<a class="headerlink" href="#how-does-this-sonarr-sync-work" title="Permanent link">¶</a></h3>
+<h3 id="how-does-this-sonarr-sync-work">How does this Sonarr Sync work<a class="headerlink" href="#how-does-this-sonarr-sync-work" title="Permanent link"></a></h3>
 <p>You now only need to make use of <code>Sonarr 1</code>. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
 <hr />
 <hr />

@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2068,7 +2070,7 @@
 
 
 
-<h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link">¶</a></h1>
+<h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h1>
 <p>On the <a href="https://discord.gg/u3x3Kp8" rel="noopener noreferrer" target="_blank">Radarr Discord</a> people often ask, "What's the recommended/best way to
 name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.</p>
 <p>Why?</p>
@@ -2077,7 +2079,7 @@ Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.</p>
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
-<h2 id="standard-movie-format">Standard Movie Format<a class="headerlink" href="#standard-movie-format" title="Permanent link">¶</a></h2>
+<h2 id="standard-movie-format">Standard Movie Format<a class="headerlink" href="#standard-movie-format" title="Permanent link"></a></h2>
 <p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517">New Plex Agent</a> that now supports IMDB and TMDB IDs in filenames, if you don't need it or want it just remove <code>[imdb-{ImdbId}]</code></p>
 <div class="admonition caution">
 <p class="admonition-title">Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types.</p>
@@ -2099,20 +2101,20 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>The officially supported format is <code>{imdb-{ImdbId}}</code> but plex also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code> what you can read <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517" rel="noopener noreferrer" target="_blank">here</a>, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.</p>
 </div>
 <hr />
-<h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link">¶</a></h2>
+<h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link"></a></h2>
 <p>If you want to keep the original release name that holds all the info of the file then I suggest to use <code>{Original Title}</code> over <code>{Original Filename}</code></p>
 <p>Why?</p>
 <p>The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.</p>
 <p><code>{Original Title}</code> =&gt; <code>The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-GROUP</code></p>
 <p><code>{Original Filename}</code> =&gt; <code>group-karatekid-1080p</code> or <code>lchd-tkk1080p</code> or <code>t1i0p3s7i8yuti</code></p>
 <hr />
-<h2 id="movie-folder-format">Movie Folder Format<a class="headerlink" href="#movie-folder-format" title="Permanent link">¶</a></h2>
+<h2 id="movie-folder-format">Movie Folder Format<a class="headerlink" href="#movie-folder-format" title="Permanent link"></a></h2>
 <div class="admonition danger">
 <p><strong> Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!</strong></p>
 <p>If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade.</p>
 <p>Another potential negative of using it in the folder is that folder renames are complex, lengthy, and potentially destructive in Radarr compared to file renames.</p>
 </div>
-<h3 id="minimal-needed-and-recommended">Minimal needed and recommended<a class="headerlink" href="#minimal-needed-and-recommended" title="Permanent link">¶</a></h3>
+<h3 id="minimal-needed-and-recommended">Minimal needed and recommended<a class="headerlink" href="#minimal-needed-and-recommended" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">({</span>Release Year<span class="o">})</span>
 </code></pre></div>
 <p>RESULT:</p>

@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2084,10 +2086,10 @@
 
 
 
-<h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link">¶</a></h1>
+<h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link"></a></h1>
 <p>It seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.</p>
 <p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace with <code>Local Path</code></p>
-<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <ul>
 <li>If Sonarr and your download client are not on the same server/system.</li>
 <li>If you use either merged local/remote setups using mergerfs or similar.</li>
@@ -2106,13 +2108,13 @@
 </ul>
 </div>
 <hr />
-<h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <p>If your download client is on another system than Sonarr then you probably need to make use of Remote Path Mappings.</p>
 <p>You will get an error that looks a little bit like the following screenshot.</p>
 <p><div class="lightgallery"><a data-sub-html="download errors" href="../images/dl_error.png"><img alt="download errors" src="../images/dl_error.png" /></a></div></p>
 <p>So looking at this screenshot it seems we need to make use of Remote Path Mappings</p>
 <hr />
-<h2 id="how">How<a class="headerlink" href="#how" title="Permanent link">¶</a></h2>
+<h2 id="how">How<a class="headerlink" href="#how" title="Permanent link"></a></h2>
 <p>First we navigate in Sonarr to the <code>Settings</code> =&gt; <code>Download Clients</code> tab.</p>
 <p><img alt="download client tab" src="../images/cl_cli_tab.png" /></p>
 <p>At the bottom you choose <code>Add new mapping</code></p>
@@ -2128,17 +2130,17 @@
 <details class="example">
 <summary>Examples</summary>
 <div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">QBittorrent</label><div class="tabbed-content">
-<h2 id="host">Host<a class="headerlink" href="#host" title="Permanent link">¶</a></h2>
+<h2 id="host">Host<a class="headerlink" href="#host" title="Permanent link"></a></h2>
 <p>To find what you need to put in your host you navigate in Sonarr to the Settings =&gt; Download Clients Tab.
 There you open up the download client for this example I will be using QBittorrent</p>
 <p><img alt="Qbittorrent client" src="../images/qbit_client.png" /></p>
 <p>This is what you put in your Host in Remote Path Mapping.</p>
-<h2 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link">¶</a></h2>
+<h2 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link"></a></h2>
 <p>To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.</p>
 <p>In QBittorrent navigate to Tools =&gt; Options (or ALT+O) and navigate to the Download settings.</p>
 <p><img alt="Qbittorrent download settings" src="../images/qbit_options.png" /></p>
 <p>This is what you add in your Remote Path in Remote Path Mapping.</p>
-<h2 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link">¶</a></h2>
+<h2 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link"></a></h2>
 <p>To find out what you need to put in in your local path you need to know how Sonarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.</p>
 <p>The final result will look something like this.</p>
 <p><img alt="Qbittorrent final result" src="../images/qbit_final.png" /></p>

@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2136,7 +2138,7 @@
 
 
 
-<h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link">¶</a></h1>
+<h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h1>
 <p>On the <a href="https://discord.gg/M6BvZn5" rel="noopener noreferrer" target="_blank">Sonarr Discord</a> people often ask, "What's the recommended/best way to
 name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.</p>
 <p>Why?</p>
@@ -2145,7 +2147,7 @@ Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.</p>
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
-<h2 id="standard-episode-format">Standard Episode Format<a class="headerlink" href="#standard-episode-format" title="Permanent link">¶</a></h2>
+<h2 id="standard-episode-format">Standard Episode Format<a class="headerlink" href="#standard-episode-format" title="Permanent link"></a></h2>
 <div class="admonition caution">
 <p class="admonition-title">Starting from v3.0.6.1431, Sonarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types. </p>
 <p>If you're using a lower version replace:</p>
@@ -2161,7 +2163,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><code>The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
 </details>
 <hr />
-<h2 id="daily-episode-format">Daily Episode Format<a class="headerlink" href="#daily-episode-format" title="Permanent link">¶</a></h2>
+<h2 id="daily-episode-format">Daily Episode Format<a class="headerlink" href="#daily-episode-format" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - <span class="o">{</span>Air-Date<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
@@ -2169,7 +2171,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><code>The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
 </details>
 <hr />
-<h2 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link">¶</a></h2>
+<h2 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link"></a></h2>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
@@ -2180,12 +2182,12 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><code>The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
 </details>
 <hr />
-<h3 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link">¶</a></h3>
+<h3 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>The Series Title! (2010)</code></p>
-<h4 id="optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby<a class="headerlink" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby" title="Permanent link">¶</a></h4>
+<h4 id="optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby<a class="headerlink" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby" title="Permanent link"></a></h4>
 <p>This naming scheme is made to be compatible with the new <a href="https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242" rel="noopener noreferrer" target="_blank">Plex TV Series Scanner</a> that now support IMDB and TVDB IDs in file names.</p>
 <p>For Plex:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]</span>
@@ -2206,20 +2208,20 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.</p>
 </div>
 <hr />
-<h3 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link">¶</a></h3>
+<h3 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link"></a></h3>
 <p>For this there's only one real option to use in my opinion.</p>
 <div class="highlight"><pre><span></span><code>Season <span class="o">{</span>season:00<span class="o">}</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>Season 01</code></p>
 <hr />
-<h3 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link">¶</a></h3>
+<h3 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code>Prefixed Range
 </code></pre></div>
 <p>RESULTS:</p>
 <p><img alt="results" src="../images/results.png" /></p>
 <hr />
-<h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link">¶</a></h2>
+<h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link"></a></h2>
 <p>If you want to keep the original release name that holds all the info of the file then I suggest to use <code>{Original Title}</code> over <code>{Original Filename}</code></p>
 <p>Why?</p>
 <p>The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.</p>

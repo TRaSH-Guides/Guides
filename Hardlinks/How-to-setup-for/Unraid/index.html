@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2178,7 +2180,7 @@
 
 
 
-<h1 id="unraid">Unraid<a class="headerlink" href="#unraid" title="Permanent link">¶</a></h1>
+<h1 id="unraid">Unraid<a class="headerlink" href="#unraid" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The first thing you need to do is forget the suggested paths from the Spaceinvader One YouTube Tutorials,</p>
@@ -2186,7 +2188,7 @@
 <p>(Spaceinvader One YouTube guides are great to learn how to start with unraid or how to setup certain applications, and yes I did and still do use them. Probably the main reason why he's using those path is because they are predefined in the template)</p>
 </div>
 <hr />
-<h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link">¶</a></h2>
+<h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link"></a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of <u><strong>ONE</strong></u> share with subfolders.</p>
@@ -2209,7 +2211,7 @@
 <p>With Usenet  you won't have any issues.</p>
 </div>
 <hr />
-<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h2>
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>On the host (Unraid) you will need to add <code>/mnt/user</code> before it. <strong>So <code>/mnt/user/data</code></strong></p>
 <p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things neat. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code> and <code>Music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
 <p>These subfolders you need to create your self, you can use krusader or winscp to create them or any other way you prefer.</p>
@@ -2229,18 +2231,18 @@
 </code></pre></div>
 <p><em>I'm using lower case on all folder on  purpose, being Linux is case sensitive.</em></p>
 <hr />
-<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
+<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
 <div class="admonition attention">
 <p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link">¶</a></h2>
+<h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link"></a></h2>
 <p>After you created all the needed folders it's time to setup the paths in the docker containers.</p>
 <p>Go to your dashboard and select your docker container you want to edit or if you're starting fresh add the docker containers you want to use or prefer.</p>
 <p>Unraid makes it actually  pretty clear what's the Host Path and what's the Container Path.</p>
 <p><code>Container Path:</code> =&gt; The path that will be used inside the container.</p>
 <p><code>Host Path:</code> =&gt; The path on your Unraid Server (The Host).</p>
 <hr />
-<h3 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link">¶</a></h3>
+<h3 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h3>
 <p>qBittorrent, Deluge, ruTorrent</p>
 <p><img alt="unraid-torrent-clients" src="../images/unraid-torrent-clients.png" /></p>
 <p><code>Container Path:</code> =&gt; <code>/data/torrents/</code></p>
@@ -2256,7 +2258,7 @@
     └── tv
 </code></pre></div>
 <hr />
-<h3 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link">¶</a></h3>
+<h3 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h3>
 <p>NZBGet or SABnzbd</p>
 <p><img alt="unraid-usenet-client" src="../images/unraid-usenet-client.png" /></p>
 <p><code>Container Path:</code> =&gt; <code>/data/usenet/</code></p>
@@ -2272,7 +2274,7 @@
     └── tv
 </code></pre></div>
 <hr />
-<h3 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link">¶</a></h3>
+<h3 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h3>
 <p>Sonarr, Radarr and Lidarr</p>
 <p><img alt="unraid-arr" src="../images/unraid-arr.png" /></p>
 <p><code>Container Path:</code> =&gt; <code>/data</code></p>
@@ -2296,7 +2298,7 @@
     └── tv
 </code></pre></div>
 <hr />
-<h3 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link">¶</a></h3>
+<h3 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h3>
 <p>Plex, Emby, JellyFin and Bazarr</p>
 <p><img alt="unraid-media-server" src="../images/unraid-media-server.png" /></p>
 <p><code>Container Path:</code> =&gt; <code>/data/media</code></p>
@@ -2312,10 +2314,10 @@
     └── tv
 </code></pre></div>
 <hr />
-<h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link">¶</a></h2>
+<h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
 <p><div class="lightgallery"><a data-sub-html="unraid-final-result" href="../images/unraid-final-result.png"><img alt="unraid-final-result" src="../images/unraid-final-result.png" /></a></div></p>
 <p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
-<h3 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link">¶</a></h3>
+<h3 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link"></a></h3>
 <div class="admonition tip">
 <p>Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unraid section.</p>
 <p>The reason why I added the video to the end is because I want the user to actually learn and understand why it's recommended to use this folder structure, before going straight to the YouTube video.</p>

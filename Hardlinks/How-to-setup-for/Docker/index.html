@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2164,7 +2166,7 @@
 
 
 
-<h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">¶</a></h1>
+<h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link"></a></h1>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you're new to dockers and want a easy setup I suggest to take a look at <a href="https://dockstarter.com/" rel="noopener noreferrer" target="_blank">DockSTARTer</a>.
@@ -2180,7 +2182,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <p>External paths depends where you mounted your share or your drives.</p>
 <p>For example <code>/&lt;path_to_data&gt;/data</code>, or even <code>/data</code>.</p>
 </div>
-<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">¶</a></h2>
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>It doesn't really matter which path you use for your media and appdata,</p>
@@ -2208,8 +2210,8 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <div class="admonition attention">
 <p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link">¶</a></h3>
-<h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link">¶</a></h4>
+<h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
+<h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h4>
 <p>qBittorrent, Deluge, ruTorrent</p>
 <p>The reason why we use <code>/data/torrents</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2218,7 +2220,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link">¶</a></h4>
+<h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
 <p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2227,7 +2229,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link">¶</a></h4>
+<h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h4>
 <p>Sonarr, Radarr and Lidarr</p>
 <p>Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2244,7 +2246,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
    ├── music
    └── tv
 </code></pre></div>
-<h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link">¶</a></h4>
+<h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h4>
 <p>Plex, Emby, JellyFin and Bazarr</p>
 <p>Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
 <div class="highlight"><pre><span></span><code>data
@@ -2255,12 +2257,12 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 </code></pre></div>
 <hr />
 <p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside the applications.</strong></p>
-<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">¶</a></h3>
+<h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h3>
 <p>Recursively chown user and group and Recursively chmod to 775/664</p>
 <div class="highlight"><pre><span></span><code>sudo chown -R <span class="nv">$USER</span>:<span class="nv">$USER</span> /data
 sudo chmod -R <span class="nv">a</span><span class="o">=</span>,a+rX,u+w,g+w /data
 </code></pre></div>
-<h2 id="docker-compose-example">Docker-compose Example<a class="headerlink" href="#docker-compose-example" title="Permanent link">¶</a></h2>
+<h2 id="docker-compose-example">Docker-compose Example<a class="headerlink" href="#docker-compose-example" title="Permanent link"></a></h2>
 <div class="admonition example">
 <p>This is a docker-compose example based on a default Ubuntu install.</p>
 <p>The storage location used for the host is actually the same as in the container to make it easier to understand in this case <code>/data</code>.</p>
@@ -2341,7 +2343,7 @@ services:
       - /data/usenet:/data/usenet:rw
 </code></pre></div>
 </details>
-<h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link">¶</a></h3>
+<h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link"></a></h3>
 <details class="hint">
 <summary>docker-compose commands - [CLICK TO EXPAND]</summary>
 <ul>

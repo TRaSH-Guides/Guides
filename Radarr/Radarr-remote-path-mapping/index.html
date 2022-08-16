@@ -50,6 +50,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -2096,10 +2098,10 @@
 
 
 
-<h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link">¶</a></h1>
+<h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link"></a></h1>
 <p>It seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.</p>
 <p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace with <code>Local Path</code></p>
-<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <ul>
 <li>If Radarr and your download client are not on the same server/system.</li>
 <li>If you use either merged local/remote setups using mergerfs or similar.</li>
@@ -2118,7 +2120,7 @@
 </ul>
 </div>
 <hr />
-<h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <p>Your download stays in your download client and Radarr doesn't want to import it.</p>
 <p>Go to <code>Activity</code> =&gt; <code>Queue</code></p>
 <p>You will see a orange download icon, hover over it with your mouse and you will get an error that looks a bit like this:</p>
@@ -2130,7 +2132,7 @@
 <p><div class="lightgallery"><a data-sub-html="rpm-health-issue" href="../images/rpm-health-issue.png"><img alt="rpm-health-issue" src="../images/rpm-health-issue.png" /></a></div></p>
 <p>So looking at these screenshot it seems you need to make use of remote path mappings.</p>
 <hr />
-<h2 id="how-do-i-setup-remote-path-mappings">How do I setup remote path mappings<a class="headerlink" href="#how-do-i-setup-remote-path-mappings" title="Permanent link">¶</a></h2>
+<h2 id="how-do-i-setup-remote-path-mappings">How do I setup remote path mappings<a class="headerlink" href="#how-do-i-setup-remote-path-mappings" title="Permanent link"></a></h2>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p>Scroll all the way down where you see <code>Remote path mappings</code> and click on the plus sign in the bottom right corner.</p>
 <p><div class="lightgallery"><a data-sub-html="rpm-settings-download-clients" href="../images/rpm-settings-download-clients.png"><img alt="rpm-settings-download-clients" src="../images/rpm-settings-download-clients.png" /></a></div></p>
@@ -2141,7 +2143,7 @@
 <li><code>Remote Path</code> =&gt; The download path that you've set in your download client.</li>
 <li><code>Local Path</code> =&gt; The path Radarr needs to access the same path.</li>
 </ol>
-<h3 id="host">Host<a class="headerlink" href="#host" title="Permanent link">¶</a></h3>
+<h3 id="host">Host<a class="headerlink" href="#host" title="Permanent link"></a></h3>
 <p>To find what you need to put in your host</p>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p>Open up the download client. For this example I will be using SABnzbd.</p>
@@ -2152,7 +2154,7 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="rpm-add-rpm-select-sabnzbd" href="../images/rpm-add-rpm-select-sabnzbd.png"><img alt="rpm-add-rpm-select-sabnzbd" src="../images/rpm-add-rpm-select-sabnzbd.png" /></a></div></p>
 </details>
-<h3 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link">¶</a></h3>
+<h3 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link"></a></h3>
 <p>To find out what you need to put in your remote path you need to open up your download client and look at what you've used there as download location.</p>
 <p>In SABnzbd go to <code>settings</code> =&gt; <code>Folders</code></p>
 <p><div class="lightgallery"><a data-sub-html="rpm-sabnzbd-folders-cdf" href="../images/rpm-sabnzbd-folders-cdf.png"><img alt="rpm-sabnzbd-folders-cdf" src="../images/rpm-sabnzbd-folders-cdf.png" /></a></div></p>
@@ -2160,7 +2162,7 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
 <p><div class="lightgallery"><a data-sub-html="rpm-add-rpm-remote-path" href="../images/rpm-add-rpm-remote-path.png"><img alt="rpm-add-rpm-remote-path" src="../images/rpm-add-rpm-remote-path.png" /></a></div></p>
 </details>
-<h3 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link">¶</a></h3>
+<h3 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link"></a></h3>
 <p>To find out what you need to put in in your local path you need to know how Radarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.</p>
 <p>Click on the browse button and browse to the location where the files are accessible for Radarr.</p>
 <details class="example">
