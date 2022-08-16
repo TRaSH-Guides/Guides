@@ -20,6 +20,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/github-permalink-style.css
 
 markdown_extensions:
   - admonition
@@ -36,7 +37,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: true
   - toc:
-      permalink: "¶"
+      permalink: ""
       toc_depth: 5
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -84,6 +85,13 @@ plugins:
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
         # Hardlinks old redirects
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        # How to old redirects
+        How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
+        How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
+        How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
+        How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
+        How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
+        How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
         # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
@@ -97,12 +105,6 @@ plugins:
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
         jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
-        How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
-        How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
-        How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
-        How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
-        How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
-        How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
 
 theme:
   name: material
