@@ -5,8 +5,9 @@ This basic example is based on the use of docker images
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
---8<-- "includes/hardlinks/bad-path-suggestion.md"
-
+{! include-markdown "../hardlinks/bad-path-suggestion.md" !}
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
+!!! attention ""
     But you're able to change this, by not using the pre-defined/recommended paths like:
 
     - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`

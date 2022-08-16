@@ -6,10 +6,14 @@
 
 ---
 
---8<-- "includes/hardlinks/folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/folder-structure.md" -->
 
---8<-- "includes/hardlinks/breakdown-folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
---8<-- "includes/hardlinks/permissions.md"
+{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+<!-- --8<-- "includes/hardlinks/permissions.md" -->
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

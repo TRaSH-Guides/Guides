@@ -35,4 +35,5 @@ Then Magic
 
 As you can see the folder has been renamed to the correct year following your naming scheme.
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

@@ -1,17 +1,17 @@
 ??? summary "Audio - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | TrueHD ATMOS         | 5000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DTS X                | 4500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts-x){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | ATMOS (undefined)    | 3000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DD+ ATMOS            | 3000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | TrueHD               | 2750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#truehd){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DTS-HD MA            | 2500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | FLAC                 | 2250  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#flac){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | PCM                  | 2250  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#pcm){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DTS-HD HRA           | 2000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DD+                  | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#ddplus){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DTS-ES               | 1500  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts-es){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DTS                  | 1250  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dts){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | AAC                  | 1000  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#aac){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | DD                   |  750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#dd){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                           | Score                                          | Trash ID                                    |
+    | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+    | [{{ radarr['truehd-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos)       | {{ radarr['truehd-atmos']['trash_score'] }}    | {{ radarr['truehd-atmos']['trash_id'] }}    |
+    | [{{ radarr['dts-x']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-x)                     | {{ radarr['dts-x']['trash_score'] }}           | {{ radarr['dts-x']['trash_id'] }}           |
+    | [{{ radarr['atmos-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined) | {{ radarr['atmos-undefined']['trash_score'] }} | {{ radarr['atmos-undefined']['trash_id'] }} |
+    | [{{ radarr['ddplus-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos)       | {{ radarr['ddplus-atmos']['trash_score'] }}    | {{ radarr['ddplus-atmos']['trash_id'] }}    |
+    | [{{ radarr['truehd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd)                   | {{ radarr['truehd']['trash_score'] }}          | {{ radarr['truehd']['trash_id'] }}          |
+    | [{{ radarr['dts-hd-ma']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma)             | {{ radarr['dts-hd-ma']['trash_score'] }}       | {{ radarr['dts-hd-ma']['trash_id'] }}       |
+    | [{{ radarr['flac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#flac)                       | {{ radarr['flac']['trash_score'] }}            | {{ radarr['flac']['trash_id'] }}            |
+    | [{{ radarr['pcm']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcm)                         | {{ radarr['pcm']['trash_score'] }}             | {{ radarr['pcm']['trash_id'] }}             |
+    | [{{ radarr['dts-hd-hra']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra)           | {{ radarr['dts-hd-hra']['trash_score'] }}      | {{ radarr['dts-hd-hra']['trash_id'] }}      |
+    | [{{ radarr['ddplus']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus)                   | {{ radarr['ddplus']['trash_score'] }}          | {{ radarr['ddplus']['trash_id'] }}          |
+    | [{{ radarr['dts-es']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-es)                   | {{ radarr['dts-es']['trash_score'] }}          | {{ radarr['dts-es']['trash_id'] }}          |
+    | [{{ radarr['dts']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts)                         | {{ radarr['dts']['trash_score'] }}             | {{ radarr['dts']['trash_id'] }}             |
+    | [{{ radarr['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         | {{ radarr['aac']['trash_score'] }}             | {{ radarr['aac']['trash_id'] }}             |
+    | [{{ radarr['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           | {{ radarr['dd']['trash_score'] }}              | {{ radarr['dd']['trash_id'] }}              |
