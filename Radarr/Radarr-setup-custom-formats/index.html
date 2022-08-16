@@ -2334,6 +2334,7 @@ You will also see a short description of what each setting means.</p>
 <p>Keep in mind Custom Formats are made to fine tune your Quality Profile</p>
 <p>Generally, quality trumps all</p>
 </div>
+<!-- BEGIN INCLUDE ../../includes/merge-quality/radarr-current-logic.md -->
 <h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link"></a></h3>
 <details class="summary">
 <summary>Radarr current logic- [CLICK TO EXPAND]</summary>
@@ -2355,6 +2356,9 @@ You will also see a short description of what each setting means.</p>
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank">Repack/Proper Custom Format</a></p>
 </div>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
+
 <p>My suggestion is to create tiers of scores based on what things matter to you.</p>
 <p>Personally, I would only add the Custom Formats that do what you actually prefer. Especially in the beginning, including the <a href="#releases-you-should-avoid">Releases you should avoid</a></p>
 <div class="admonition info">
@@ -2375,6 +2379,7 @@ You will also see a short description of what each setting means.</p>
 <hr />
 <h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link"></a></h3>
 <p>This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.</p>
+<!-- BEGIN INCLUDE ../../includes/cf/unwanted.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -2382,66 +2387,66 @@ You will also see a short description of what each setting means.</p>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BR-DISK</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td>EVO (no WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
 </tr>
 <tr>
-<td>LQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#lq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
-<td>x265 (720/1080p)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p">x265 (720/1080p)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td>3D</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#3d" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
 </tr>
 <tr>
-<td>No-RlsGroup</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
 </tr>
 <tr>
-<td>Obfuscated</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
 </tr>
 <tr>
-<td>Retags</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#retags" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
 </tr>
 <tr>
-<td>Bad Dual Groups</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
 </tr>
 <tr>
-<td>DV (WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
 <td>??????</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
 <details class="example">
 <summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
 <ul>
-<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
@@ -2468,10 +2473,14 @@ Also they often even rename the release name in to Portuguese.</li>
 </ul>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/unwanted.md" -->
+
 <hr />
 <h4 id="prefer-advanced-audio">Prefer Advanced Audio<a class="headerlink" href="#prefer-advanced-audio" title="Permanent link"></a></h4>
 <p>Lets say you prefer HD audio (with object metadata)</p>
 <p>In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless.</p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio.md -->
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <table>
@@ -2479,87 +2488,91 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>TrueHD ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos">TrueHD ATMOS</a></td>
 <td>5000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>496f355514737f7d83bf7aa4d24f8169</td>
 </tr>
 <tr>
-<td>DTS X</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-x">DTS X</a></td>
 <td>4500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-x" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2f22d89048b01681dde8afe203bf2e95</td>
 </tr>
 <tr>
-<td>ATMOS (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined">ATMOS (undefined)</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>417804f7f2c4308c1f4c5d380d4c4475</td>
 </tr>
 <tr>
-<td>DD+ ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos">DD+ ATMOS</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1af239278386be2919e1bcee0bde047e</td>
 </tr>
 <tr>
-<td>TrueHD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd">TrueHD</a></td>
 <td>2750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>3cafb66171b47f226146a0770576870f</td>
 </tr>
 <tr>
-<td>DTS-HD MA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma">DTS-HD MA</a></td>
 <td>2500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dcf3ec6938fa32445f590a4da84256cd</td>
 </tr>
 <tr>
-<td>FLAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#flac">FLAC</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#flac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a570d4a0e56a2874b64e5bfa55202a1b</td>
 </tr>
 <tr>
-<td>PCM</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pcm">PCM</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pcm" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7c2fcae07cbada050a0af3357491d7b</td>
 </tr>
 <tr>
-<td>DTS-HD HRA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra">DTS-HD HRA</a></td>
 <td>2000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>8e109e50e0a0b83a5098b056e13bf6db</td>
 </tr>
 <tr>
-<td>DD+</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus">DD+</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>185f1dd7264c4562b9022d963ac37424</td>
 </tr>
 <tr>
-<td>DTS-ES</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-es">DTS-ES</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-es" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>f9f847ac70a0af62ea4a08280b859636</td>
 </tr>
 <tr>
-<td>DTS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts">DTS</a></td>
 <td>1250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c1a4c5e823891c75bc50380a6866f73</td>
 </tr>
 <tr>
-<td>AAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#aac">AAC</a></td>
 <td>1000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#aac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>240770601cc226190c367ef59aba7463</td>
 </tr>
 <tr>
-<td>DD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dd">DD</a></td>
 <td>750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>c2998bd0d90ed5621d8df281e839436e</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/audio.md" -->
+
 <hr />
 <h4 id="prefer-hdr-metadata">Prefer HDR Metadata<a class="headerlink" href="#prefer-hdr-metadata" title="Permanent link"></a></h4>
 <p>Lets say you prefer HDR metadata</p>
 <p>Then we would use the following order:</p>
+<!-- BEGIN INCLUDE ../../includes/cf/hdr-metadata.md -->
 <details class="summary">
 <summary>HDR Metadata - [CLICK TO EXPAND]</summary>
 <table>
@@ -2567,63 +2580,66 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DV HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10">DV HDR10</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e23edd2482476e595fb990b12e7c609c</td>
 </tr>
 <tr>
-<td>DV</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv">DV</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>58d6a88f13e2db7f5059c41047876f00</td>
 </tr>
 <tr>
-<td>DV HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg">DV HLG</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>55d53828b9d81cbe20b02efd00aa0efd</td>
 </tr>
 <tr>
-<td>DV SDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr">DV SDR</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a3e19f8f627608af0211acd02bf89735</td>
 </tr>
 <tr>
-<td>HDR10Plus</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus">HDR10+</a></td>
 <td>600</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b974a6cd08c1066250f1f177d7aa1225</td>
 </tr>
 <tr>
-<td>HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10">HDR10</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dfb86d5941bc9075d6af23b09c2aeecd</td>
 </tr>
 <tr>
-<td>HDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr">HDR</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e61e28db95d22bedcadf030b8f156d96</td>
 </tr>
 <tr>
-<td>HDR (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined">HDR (undefined)</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2a4d9069cc1fe3242ff9bdaebed239bb</td>
 </tr>
 <tr>
-<td>PQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pq">PQ</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>08d6d8834ad9ec87b1dc7ec8148e7a1f</td>
 </tr>
 <tr>
-<td>HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hlg">HLG</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>9364dd386c9b4a1100dde8264690add7</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/hdr-metadata.md" -->
+
 <hr />
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2635,6 +2651,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>If you prefer HQ Encodes (Bluray-720/1080/2160p)</p>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>. If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful for you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<!-- BEGIN INCLUDE ../../includes/cf/movie-versions.md -->
 <details class="summary">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
@@ -2642,43 +2659,47 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Hybrid</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hybrid">Hybrid</a></td>
 <td>100</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hybrid" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>0f12c086e289cf966fa5948eac571f44</td>
 </tr>
 <tr>
-<td>Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remaster">Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>570bc9ebecd92723d2d21500f4be314c</td>
 </tr>
 <tr>
-<td>4K Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster">4K Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>eca37840c13c6ef2dd0262b141a5482f</td>
 </tr>
 <tr>
-<td>Criterion Collection</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection">Criterion Collection</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e0c07d59beb37348e975a930d5e50319</td>
 </tr>
 <tr>
-<td>Special Edition</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#special-edition" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>957d0f44b592285f26449575e8b1167e</td>
 </tr>
 <tr>
-<td>IMAX</td>
-<td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#imax" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#imax">IMAX</a></td>
+<td>800</td>
+<td>eecf3a857724171f968a66cb5719e152</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/movie-versions.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/unwanted.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -2686,66 +2707,66 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BR-DISK</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td>EVO (no WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
 </tr>
 <tr>
-<td>LQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#lq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
-<td>x265 (720/1080p)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p">x265 (720/1080p)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td>3D</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#3d" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
 </tr>
 <tr>
-<td>No-RlsGroup</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
 </tr>
 <tr>
-<td>Obfuscated</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
 </tr>
 <tr>
-<td>Retags</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#retags" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
 </tr>
 <tr>
-<td>Bad Dual Groups</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
 </tr>
 <tr>
-<td>DV (WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
 <td>??????</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
 <details class="example">
 <summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
 <ul>
-<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
@@ -2772,6 +2793,10 @@ Also they often even rename the release name in to Portuguese.</li>
 </ul>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/unwanted.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/misc.md -->
 <details class="summary">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
@@ -2779,19 +2804,19 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Repack/Proper</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a></td>
 <td>5</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7718d7a3ce595f289bfee26adc178f5</td>
 </tr>
 <tr>
-<td>Repack2</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack2">Repack2</a></td>
 <td>6</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack2" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
 </tbody>
 </table>
@@ -2803,6 +2828,9 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/misc.md" -->
+
 <details class="summary">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
@@ -2810,24 +2838,24 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HQ-WEBDL</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>26fa26253af4001701fedb56cec376dc</td>
 </tr>
 <tr>
-<td>HQ-Remux</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
 <td>0</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>403f3f6266b90439cacc1e07cae4dc2d</td>
 </tr>
 <tr>
-<td>HQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
 <td>1800</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
 </tr>
 </tbody>
 </table>
@@ -2851,6 +2879,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you prefer 2160/4K encodes you might consider to change <code>Upgrade Until Quality</code> to Bluray-2160p and enable:</p>
+<!-- BEGIN INCLUDE ../../includes/cf/hdr-metadata.md -->
 <details class="summary">
 <summary>HDR Metadata - [CLICK TO EXPAND]</summary>
 <table>
@@ -2858,63 +2887,65 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DV HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10">DV HDR10</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e23edd2482476e595fb990b12e7c609c</td>
 </tr>
 <tr>
-<td>DV</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv">DV</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>58d6a88f13e2db7f5059c41047876f00</td>
 </tr>
 <tr>
-<td>DV HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg">DV HLG</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>55d53828b9d81cbe20b02efd00aa0efd</td>
 </tr>
 <tr>
-<td>DV SDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr">DV SDR</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a3e19f8f627608af0211acd02bf89735</td>
 </tr>
 <tr>
-<td>HDR10Plus</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus">HDR10+</a></td>
 <td>600</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b974a6cd08c1066250f1f177d7aa1225</td>
 </tr>
 <tr>
-<td>HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10">HDR10</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dfb86d5941bc9075d6af23b09c2aeecd</td>
 </tr>
 <tr>
-<td>HDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr">HDR</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e61e28db95d22bedcadf030b8f156d96</td>
 </tr>
 <tr>
-<td>HDR (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined">HDR (undefined)</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2a4d9069cc1fe3242ff9bdaebed239bb</td>
 </tr>
 <tr>
-<td>PQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pq">PQ</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>08d6d8834ad9ec87b1dc7ec8148e7a1f</td>
 </tr>
 <tr>
-<td>HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hlg">HLG</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>9364dd386c9b4a1100dde8264690add7</td>
 </tr>
 </tbody>
 </table>
 </details>
+<p><!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/hdr-metadata.md" --></p>
 </div>
 <hr />
 <h4 id="remux-1080p">Remux-1080p<a class="headerlink" href="#remux-1080p" title="Permanent link"></a></h4>
@@ -2922,6 +2953,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio.md -->
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <table>
@@ -2929,83 +2961,87 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>TrueHD ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos">TrueHD ATMOS</a></td>
 <td>5000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>496f355514737f7d83bf7aa4d24f8169</td>
 </tr>
 <tr>
-<td>DTS X</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-x">DTS X</a></td>
 <td>4500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-x" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2f22d89048b01681dde8afe203bf2e95</td>
 </tr>
 <tr>
-<td>ATMOS (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined">ATMOS (undefined)</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>417804f7f2c4308c1f4c5d380d4c4475</td>
 </tr>
 <tr>
-<td>DD+ ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos">DD+ ATMOS</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1af239278386be2919e1bcee0bde047e</td>
 </tr>
 <tr>
-<td>TrueHD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd">TrueHD</a></td>
 <td>2750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>3cafb66171b47f226146a0770576870f</td>
 </tr>
 <tr>
-<td>DTS-HD MA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma">DTS-HD MA</a></td>
 <td>2500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dcf3ec6938fa32445f590a4da84256cd</td>
 </tr>
 <tr>
-<td>FLAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#flac">FLAC</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#flac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a570d4a0e56a2874b64e5bfa55202a1b</td>
 </tr>
 <tr>
-<td>PCM</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pcm">PCM</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pcm" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7c2fcae07cbada050a0af3357491d7b</td>
 </tr>
 <tr>
-<td>DTS-HD HRA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra">DTS-HD HRA</a></td>
 <td>2000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>8e109e50e0a0b83a5098b056e13bf6db</td>
 </tr>
 <tr>
-<td>DD+</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus">DD+</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>185f1dd7264c4562b9022d963ac37424</td>
 </tr>
 <tr>
-<td>DTS-ES</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-es">DTS-ES</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-es" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>f9f847ac70a0af62ea4a08280b859636</td>
 </tr>
 <tr>
-<td>DTS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts">DTS</a></td>
 <td>1250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c1a4c5e823891c75bc50380a6866f73</td>
 </tr>
 <tr>
-<td>AAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#aac">AAC</a></td>
 <td>1000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#aac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>240770601cc226190c367ef59aba7463</td>
 </tr>
 <tr>
-<td>DD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dd">DD</a></td>
 <td>750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>c2998bd0d90ed5621d8df281e839436e</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/audio.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/movie-versions.md -->
 <details class="summary">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
@@ -3013,43 +3049,47 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Hybrid</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hybrid">Hybrid</a></td>
 <td>100</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hybrid" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>0f12c086e289cf966fa5948eac571f44</td>
 </tr>
 <tr>
-<td>Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remaster">Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>570bc9ebecd92723d2d21500f4be314c</td>
 </tr>
 <tr>
-<td>4K Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster">4K Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>eca37840c13c6ef2dd0262b141a5482f</td>
 </tr>
 <tr>
-<td>Criterion Collection</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection">Criterion Collection</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e0c07d59beb37348e975a930d5e50319</td>
 </tr>
 <tr>
-<td>Special Edition</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#special-edition" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>957d0f44b592285f26449575e8b1167e</td>
 </tr>
 <tr>
-<td>IMAX</td>
-<td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#imax" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#imax">IMAX</a></td>
+<td>800</td>
+<td>eecf3a857724171f968a66cb5719e152</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/movie-versions.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/unwanted.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -3057,66 +3097,66 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BR-DISK</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td>EVO (no WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
 </tr>
 <tr>
-<td>LQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#lq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
-<td>x265 (720/1080p)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p">x265 (720/1080p)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td>3D</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#3d" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
 </tr>
 <tr>
-<td>No-RlsGroup</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
 </tr>
 <tr>
-<td>Obfuscated</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
 </tr>
 <tr>
-<td>Retags</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#retags" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
 </tr>
 <tr>
-<td>Bad Dual Groups</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
 </tr>
 <tr>
-<td>DV (WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
 <td>??????</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
 <details class="example">
 <summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
 <ul>
-<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
@@ -3143,6 +3183,10 @@ Also they often even rename the release name in to Portuguese.</li>
 </ul>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/unwanted.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/misc.md -->
 <details class="summary">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
@@ -3150,19 +3194,19 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Repack/Proper</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a></td>
 <td>5</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7718d7a3ce595f289bfee26adc178f5</td>
 </tr>
 <tr>
-<td>Repack2</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack2">Repack2</a></td>
 <td>6</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack2" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
 </tbody>
 </table>
@@ -3174,6 +3218,9 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/misc.md" -->
+
 <details class="summary">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
@@ -3181,24 +3228,24 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HQ-WEBDL</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>26fa26253af4001701fedb56cec376dc</td>
 </tr>
 <tr>
-<td>HQ-Remux</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
 <td>1900</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>403f3f6266b90439cacc1e07cae4dc2d</td>
 </tr>
 <tr>
-<td>HQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
 <td>0</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
 </tr>
 </tbody>
 </table>
@@ -3224,6 +3271,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>I suggest to first follow the <a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
 <p>For this Quality Profile we're going to make use of the following Custom Formats</p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio.md -->
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <table>
@@ -3231,83 +3279,87 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>TrueHD ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos">TrueHD ATMOS</a></td>
 <td>5000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>496f355514737f7d83bf7aa4d24f8169</td>
 </tr>
 <tr>
-<td>DTS X</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-x">DTS X</a></td>
 <td>4500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-x" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2f22d89048b01681dde8afe203bf2e95</td>
 </tr>
 <tr>
-<td>ATMOS (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined">ATMOS (undefined)</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>417804f7f2c4308c1f4c5d380d4c4475</td>
 </tr>
 <tr>
-<td>DD+ ATMOS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos">DD+ ATMOS</a></td>
 <td>3000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1af239278386be2919e1bcee0bde047e</td>
 </tr>
 <tr>
-<td>TrueHD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#truehd">TrueHD</a></td>
 <td>2750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#truehd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>3cafb66171b47f226146a0770576870f</td>
 </tr>
 <tr>
-<td>DTS-HD MA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma">DTS-HD MA</a></td>
 <td>2500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dcf3ec6938fa32445f590a4da84256cd</td>
 </tr>
 <tr>
-<td>FLAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#flac">FLAC</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#flac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a570d4a0e56a2874b64e5bfa55202a1b</td>
 </tr>
 <tr>
-<td>PCM</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pcm">PCM</a></td>
 <td>2250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pcm" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7c2fcae07cbada050a0af3357491d7b</td>
 </tr>
 <tr>
-<td>DTS-HD HRA</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra">DTS-HD HRA</a></td>
 <td>2000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>8e109e50e0a0b83a5098b056e13bf6db</td>
 </tr>
 <tr>
-<td>DD+</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#ddplus">DD+</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#ddplus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>185f1dd7264c4562b9022d963ac37424</td>
 </tr>
 <tr>
-<td>DTS-ES</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts-es">DTS-ES</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts-es" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>f9f847ac70a0af62ea4a08280b859636</td>
 </tr>
 <tr>
-<td>DTS</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dts">DTS</a></td>
 <td>1250</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dts" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c1a4c5e823891c75bc50380a6866f73</td>
 </tr>
 <tr>
-<td>AAC</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#aac">AAC</a></td>
 <td>1000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#aac" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>240770601cc226190c367ef59aba7463</td>
 </tr>
 <tr>
-<td>DD</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dd">DD</a></td>
 <td>750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dd" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>c2998bd0d90ed5621d8df281e839436e</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/audio.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/hdr-metadata.md -->
 <details class="summary">
 <summary>HDR Metadata - [CLICK TO EXPAND]</summary>
 <table>
@@ -3315,63 +3367,67 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>DV HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10">DV HDR10</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e23edd2482476e595fb990b12e7c609c</td>
 </tr>
 <tr>
-<td>DV</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv">DV</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>58d6a88f13e2db7f5059c41047876f00</td>
 </tr>
 <tr>
-<td>DV HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg">DV HLG</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>55d53828b9d81cbe20b02efd00aa0efd</td>
 </tr>
 <tr>
-<td>DV SDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr">DV SDR</a></td>
 <td>1500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-sdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>a3e19f8f627608af0211acd02bf89735</td>
 </tr>
 <tr>
-<td>HDR10Plus</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus">HDR10+</a></td>
 <td>600</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b974a6cd08c1066250f1f177d7aa1225</td>
 </tr>
 <tr>
-<td>HDR10</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10">HDR10</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr10" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dfb86d5941bc9075d6af23b09c2aeecd</td>
 </tr>
 <tr>
-<td>HDR</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr">HDR</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e61e28db95d22bedcadf030b8f156d96</td>
 </tr>
 <tr>
-<td>HDR (undefined)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined">HDR (undefined)</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hdr-undefined" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>2a4d9069cc1fe3242ff9bdaebed239bb</td>
 </tr>
 <tr>
-<td>PQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#pq">PQ</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#pq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>08d6d8834ad9ec87b1dc7ec8148e7a1f</td>
 </tr>
 <tr>
-<td>HLG</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hlg">HLG</a></td>
 <td>500</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hlg" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>9364dd386c9b4a1100dde8264690add7</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/hdr-metadata.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/movie-versions.md -->
 <details class="summary">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
@@ -3379,43 +3435,47 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Hybrid</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hybrid">Hybrid</a></td>
 <td>100</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hybrid" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>0f12c086e289cf966fa5948eac571f44</td>
 </tr>
 <tr>
-<td>Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remaster">Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>570bc9ebecd92723d2d21500f4be314c</td>
 </tr>
 <tr>
-<td>4K Remaster</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster">4K Remaster</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>eca37840c13c6ef2dd0262b141a5482f</td>
 </tr>
 <tr>
-<td>Criterion Collection</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection">Criterion Collection</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e0c07d59beb37348e975a930d5e50319</td>
 </tr>
 <tr>
-<td>Special Edition</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
 <td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#special-edition" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>957d0f44b592285f26449575e8b1167e</td>
 </tr>
 <tr>
-<td>IMAX</td>
-<td>25</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#imax" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#imax">IMAX</a></td>
+<td>800</td>
+<td>eecf3a857724171f968a66cb5719e152</td>
 </tr>
 </tbody>
 </table>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/movie-versions.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/unwanted.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -3423,66 +3483,66 @@ If you think the sizes are too big to your preference then stop reading and see 
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BR-DISK</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td>EVO (no WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
 </tr>
 <tr>
-<td>LQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#lq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
-<td>x265 (720/1080p)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p">x265 (720/1080p)</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td>3D</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#3d" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
 </tr>
 <tr>
-<td>No-RlsGroup</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
 </tr>
 <tr>
-<td>Obfuscated</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
 </tr>
 <tr>
-<td>Retags</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#retags" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
 </tr>
 <tr>
-<td>Bad Dual Groups</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td>-10000</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
 </tr>
 <tr>
-<td>DV (WEBDL)</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
 <td>??????</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
 <details class="example">
 <summary>Breakdown and Why - [CLICK TO EXPAND]</summary>
 <ul>
-<li><strong>BR-DISK:</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>x265 (720/1080p):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</li>
@@ -3509,6 +3569,10 @@ Also they often even rename the release name in to Portuguese.</li>
 </ul>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/unwanted.md" -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/misc.md -->
 <details class="summary">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
@@ -3516,19 +3580,19 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Repack/Proper</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper">Repack/Proper</a></td>
 <td>5</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack-proper" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>e7718d7a3ce595f289bfee26adc178f5</td>
 </tr>
 <tr>
-<td>Repack2</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#repack2">Repack2</a></td>
 <td>6</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#repack2" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>ae43b294509409a6a13919dedd4764c4</td>
 </tr>
 </tbody>
 </table>
@@ -3540,6 +3604,9 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/misc.md" -->
+
 <details class="summary">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
@@ -3547,24 +3614,24 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <th>Custom Format</th>
 <th>Score</th>
-<th>LINK</th>
+<th>Trash ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>HQ-WEBDL</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
 <td>1750</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>26fa26253af4001701fedb56cec376dc</td>
 </tr>
 <tr>
-<td>HQ-Remux</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
 <td>1900</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>403f3f6266b90439cacc1e07cae4dc2d</td>
 </tr>
 <tr>
-<td>HQ</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
 <td>0</td>
-<td><a class="header-icons" href="/Radarr/Radarr-collection-of-custom-formats/#hq" rel="noopener noreferrer" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1zM3.75 2A1.75 1.75 0 0 0 2 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0 0 14 12.25v-3.5a.75.75 0 0 0-1.5 0v3.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25v-8.5a.25.25 0 0 1 .25-.25h3.5a.75.75 0 0 0 0-1.5h-3.5z"/></svg></span></a></td>
+<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
 </tr>
 </tbody>
 </table>
@@ -3627,19 +3694,23 @@ Being when you add a Custom Format what you prefer and you set it to something l
 </details>
 <h2 id="thanks">Thanks<a class="headerlink" href="#thanks" title="Permanent link"></a></h2>
 <p>A big Thanks to <a href="https://github.com/rg9400">rg9400</a> for providing me with info needed to create the Tips section.</p>
+<!-- BEGIN INCLUDE ../../includes/support.md -->
+
 <hr />
 <div class="admonition help">
 <p class="admonition-title">Questions or Suggestions?</p>
 <p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
 </div>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/support.md" -->
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 15, 2022 08:52:16</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 16, 2022 15:14:08</span>
       
     
   </small>

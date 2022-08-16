@@ -2019,13 +2019,19 @@
 
 
 <h1 id="deluge-basic-setup">Deluge - Basic Setup<a class="headerlink" href="#deluge-basic-setup" title="Permanent link"></a></h1>
+<!-- BEGIN INCLUDE ../../../includes/downloaders/basic-setup.md -->
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
 <p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
 <p>More info <a href="/Hardlinks/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
+<!-- BEGIN INCLUDE ../hardlinks/bad-path-suggestion.md -->
 <div class="admonition attention">
 <p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+</div>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
+<div class="admonition attention">
 <p>But you're able to change this, by not using the pre-defined/recommended paths like:</p>
 <ul>
 <li><code>/downloads</code> =&gt; <code>/data/downloads</code>, <code>/data/usenet</code>, <code>/data/torrents</code></li>
@@ -2033,6 +2039,9 @@
 <li><code>/tv</code> =&gt; <code>/data/media/tv</code></li>
 </ul>
 </div>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/downloaders/basic-setup.md" -->
+
 <hr />
 <h2 id="soon">Soon<a class="headerlink" href="#soon" title="Permanent link"></a></h2>
 
@@ -2041,7 +2050,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 19, 2021 20:20:24</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
       
     
   </small>
