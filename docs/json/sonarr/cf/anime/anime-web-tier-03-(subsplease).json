@@ -5,15 +5,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
-      }
-    },
-    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
@@ -29,6 +20,15 @@
       "required": false,
       "fields": {
         "value": 4
+      }
+    },
+    {
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
       }
     },
     {
