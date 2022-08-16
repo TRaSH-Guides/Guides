@@ -32,66 +32,12 @@
       }
     },
     {
-      "name": "SCY",
+      "name": "Aergia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SCY)\\b"
-      }
-    },
-    {
-      "name": "Vanilla",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Vanilla\\]|-Vanilla\\b"
-      }
-    },
-    {
-      "name": "sam",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[sam\\]|-sam\\b"
-      }
-    },
-    {
-      "name": "Spirale",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Spirale)\\b"
-      }
-    },
-    {
-      "name": "OZR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(OZR)\\b"
-      }
-    },
-    {
-      "name": "Vodes",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Vodes)\\b"
-      }
-    },
-    {
-      "name": "Legion",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Legion\\]|-Legion\\b"
+        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
       }
     },
     {
@@ -104,12 +50,66 @@
       }
     },
     {
-      "name": "Aergia",
+      "name": "Legion",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
+        "value": "\\[Legion\\]|-Legion\\b"
+      }
+    },
+    {
+      "name": "OZR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(OZR)\\b"
+      }
+    },
+    {
+      "name": "sam",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[sam\\]|-sam\\b"
+      }
+    },
+    {
+      "name": "SCY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SCY)\\b"
+      }
+    },
+    {
+      "name": "Spirale",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Spirale)\\b"
+      }
+    },
+    {
+      "name": "Vanilla",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Vanilla\\]|-Vanilla\\b"
+      }
+    },
+    {
+      "name": "Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Vodes)\\b"
       }
     }
   ]
