@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "3L\\b"
+        "value": "\\b(3L)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BiZKiT\\b"
+        "value": "\\b(BiZKiT)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BLURANiUM\\b"
+        "value": "\\b(BLURANiUM)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BMF\\b"
+        "value": "\\b(BMF)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FraMeSToR\\b"
+        "value": "\\b(FraMeSToR)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PmP\\b"
+        "value": "\\b(PmP)\\b"
       }
     },
     {
@@ -73,16 +73,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SiCFoI\\b"
+        "value": "\\b(SiCFoI)\\b"
       }
     },
     {
-      "name": "Wildcat",
+      "name": "WiLDCAT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Wildcat\\b"
+        "value": "\\b(WiLDCAT)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ZQ\\b"
+        "value": "\\b(ZQ)\\b"
       }
     }
   ]

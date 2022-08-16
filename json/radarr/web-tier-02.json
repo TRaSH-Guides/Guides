@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "dB\\b"
+        "value": "\\b(dB)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Flights\\b"
+        "value": "\\b(Flights)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MiU\\b"
+        "value": "\\b(MiU)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "monkee\\b"
+        "value": "\\b(monkee)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PHOENiX\\b"
+        "value": "\\b(PHOENiX)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SMURF\\b"
+        "value": "\\b(SMURF)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TOMMY\\b"
+        "value": "\\b(TOMMY)\\b"
       }
     }
   ]
