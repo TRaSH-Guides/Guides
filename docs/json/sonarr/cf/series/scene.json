@@ -1,106 +1,88 @@
 {
-  "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
+  "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
   "trash_score": "-10000",
-  "name": "LQ",
+  "name": "Scene",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BRiNK",
+      "name": "CAKES",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bBRiNK\\b"
+        "value": "\\bCAKES\\b"
       }
     },
     {
-      "name": "CHX",
+      "name": "GGEZ",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bCHX\\b"
+        "value": "\\bGGEZ\\b"
       }
     },
     {
-      "name": "EVO",
+      "name": "GGWP",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bEVO\\b"
+        "value": "\\bGGWP\\b"
       }
     },
     {
-      "name": "GHOSTS",
+      "name": "GLHF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bGHOSTS\\b"
+        "value": "\\bGLHF\\b"
       }
     },
     {
-      "name": "NERO",
+      "name": "GOSSIP",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bNERO\\b"
+        "value": "\\bGOSSIP\\b"
       }
     },
     {
-      "name": "nhanc3",
+      "name": "KOGI",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bnhanc3\\b"
+        "value": "\\bKOGI\\b"
       }
     },
     {
-      "name": "Pahe",
+      "name": "Not DEFLATE",
       "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
+      "negate": true,
+      "required": true,
       "fields": {
-        "value": "Pahe\\.(ph|in)\\b"
+        "value": "\\bDEFLATE\\b"
       }
     },
     {
-      "name": "TBS",
+      "name": "Not INFLATE",
       "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
+      "negate": true,
+      "required": true,
       "fields": {
-        "value": "\\bTBS\\b"
+        "value": "\\bINFLATE\\b"
       }
     },
     {
-      "name": "VIDEOHOLE",
-      "implementation": "ReleaseGroupSpecification",
+      "name": "Scene naming",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bVIDEOHOLE\\b"
-      }
-    },
-    {
-      "name": "worldmkv",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bworldmkv\\b"
-      }
-    },
-    {
-      "name": "XLF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bXLF\\b"
+        "value": "^(?=.*([_. ]WEB[_. ]))"
       }
     }
   ]

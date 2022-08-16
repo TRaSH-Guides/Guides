@@ -1,4 +1,6 @@
 {
+  "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
+  "trash_score": "-10000",
   "name": "DV (WEBDL)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -36,6 +38,15 @@
       "required": true,
       "fields": {
         "value": "\\b(hulu)\\b"
+      }
+    },
+    {
+      "name": "Not SiC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "SiC\\b"
       }
     }
   ]
