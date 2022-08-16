@@ -7,7 +7,7 @@ This basic example is based on the use of docker images
 
 {! include-markdown "../hardlinks/bad-path-suggestion.md" !}
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
-
+!!! attention ""
     But you're able to change this, by not using the pre-defined/recommended paths like:
 
     - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`
