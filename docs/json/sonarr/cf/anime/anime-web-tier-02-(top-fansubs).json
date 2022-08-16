@@ -32,48 +32,12 @@
       }
     },
     {
-      "name": "Cyan",
+      "name": "0x539",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Cyan\\]|-Cyan\\b"
-      }
-    },
-    {
-      "name": "MTBB",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MTBB)\\b"
-      }
-    },
-    {
-      "name": "Pizza",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Pizza\\]|-Pizza\\b"
-      }
-    },
-    {
-      "name": "GSK_kun",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(GSK[._-]kun)\\b"
-      }
-    },
-    {
-      "name": "Foxtrot",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+        "value": "\\b(0x539)\\b"
       }
     },
     {
@@ -86,12 +50,12 @@
       }
     },
     {
-      "name": "Okay-Subs",
+      "name": "Cyan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Okay-Subs)\\b"
+        "value": "\\[Cyan\\]|-Cyan\\b"
       }
     },
     {
@@ -104,30 +68,12 @@
       }
     },
     {
-      "name": "0x539",
+      "name": "Foxtrot",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(0x539)\\b"
-      }
-    },
-    {
-      "name": "Slyfox",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Slyfox)\\b"
-      }
-    },
-    {
-      "name": "Tenshi",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[tenshi\\]|-tenshi\\b"
+        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
       }
     },
     {
@@ -140,12 +86,66 @@
       }
     },
     {
+      "name": "GSK_kun",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GSK[._-]kun)\\b"
+      }
+    },
+    {
+      "name": "MTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTBB)\\b"
+      }
+    },
+    {
+      "name": "Okay-Subs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Okay-Subs)\\b"
+      }
+    },
+    {
+      "name": "Pizza",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Pizza\\]|-Pizza\\b"
+      }
+    },
+    {
+      "name": "Slyfox",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Slyfox)\\b"
+      }
+    },
+    {
       "name": "SoLCE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(SoLCE)\\b"
+      }
+    },
+    {
+      "name": "Tenshi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[tenshi\\]|-tenshi\\b"
       }
     }
   ]
