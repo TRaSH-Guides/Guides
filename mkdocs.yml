@@ -20,6 +20,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/github-permalink-style.css
 
 markdown_extensions:
   - admonition
@@ -36,7 +37,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: true
   - toc:
-      permalink: "¶"
+      permalink: ""
       toc_depth: 5
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
