@@ -32,42 +32,6 @@
       }
     },
     {
-      "name": "Reza",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Reza)\\b"
-      }
-    },
-    {
-      "name": "LostYears",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LostYears)\\b"
-      }
-    },
-    {
-      "name": "Vodes",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Vodes)\\b"
-      }
-    },
-    {
-      "name": "SCY",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SCY)\\b"
-      }
-    },
-    {
       "name": "Arid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -86,12 +50,48 @@
       }
     },
     {
+      "name": "LostYears",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LostYears)\\b"
+      }
+    },
+    {
+      "name": "Reza",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Reza)\\b"
+      }
+    },
+    {
+      "name": "SCY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SCY)\\b"
+      }
+    },
+    {
       "name": "Setsugen",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(Setsugen)\\b"
+      }
+    },
+    {
+      "name": "Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Vodes)\\b"
       }
     },
     {
