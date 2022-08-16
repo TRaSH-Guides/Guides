@@ -2,7 +2,7 @@
   "trash_id": "1be538354e3def87ae598e993e8ebc25",
   "trash_score": "2",
   "name": "Anime v2",
-  "includeCustomFormatWhenRenaming": false,
+  "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
       "name": "v2",

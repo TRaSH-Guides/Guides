@@ -5,15 +5,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
-      }
-    },
-    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
@@ -32,12 +23,21 @@
       }
     },
     {
-      "name": "Kaleido",
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "9volt",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Kaleido)\\b"
+        "value": "\\b(9volt)\\b"
       }
     },
     {
@@ -50,12 +50,12 @@
       }
     },
     {
-      "name": "9volt",
+      "name": "Kaleido",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(9volt)\\b"
+        "value": "\\b(Kaleido)\\b"
       }
     },
     {

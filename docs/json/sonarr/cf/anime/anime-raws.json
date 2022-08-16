@@ -14,21 +14,30 @@
       }
     },
     {
+      "name": "Daddy-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Daddy[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Iriza-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Iriza[ ._-]?(raws)"
+      }
+    },
+    {
       "name": "Kawaiika-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "Kawaiika[ ._-]?(raws)"
-      }
-    },
-    {
-      "name": "Seicher",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Seicher)\\b"
       }
     },
     {
@@ -41,12 +50,21 @@
       }
     },
     {
-      "name": "Raws-Maji",
+      "name": "LowPower-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Raws-Maji)\\b"
+        "value": "LowPower[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "NC-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NC[ ._-]?(raws)"
       }
     },
     {
@@ -77,39 +95,12 @@
       }
     },
     {
-      "name": "Iriza-raws",
+      "name": "Raws-Maji",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Iriza[ ._-]?(raws)"
-      }
-    },
-    {
-      "name": "Daddy-raws",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Daddy[ ._-]?(raws)"
-      }
-    },
-    {
-      "name": "LowPower-raws",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "LowPower[ ._-]?(raws)"
-      }
-    },
-    {
-      "name": "NC-raws",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "NC[ ._-]?(raws)"
+        "value": "\\b(Raws-Maji)\\b"
       }
     },
     {
@@ -119,6 +110,15 @@
       "required": false,
       "fields": {
         "value": "Scryous[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Seicher",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Seicher)\\b"
       }
     }
   ]

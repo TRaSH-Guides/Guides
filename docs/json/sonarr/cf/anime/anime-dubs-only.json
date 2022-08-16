@@ -5,15 +5,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "KS (Not Dual Audio)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
-      }
-    },
-    {
       "name": "Dubbed",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -32,12 +23,12 @@
       }
     },
     {
-      "name": "torenter69",
+      "name": "KaiDubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(torenter69)\\b"
+        "value": "\\b(KaiDubs)\\b"
       }
     },
     {
@@ -50,12 +41,21 @@
       }
     },
     {
-      "name": "KaiDubs",
+      "name": "KS (Not Dual Audio)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KaiDubs)\\b"
+        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
+      }
+    },
+    {
+      "name": "torenter69",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(torenter69)\\b"
       }
     }
   ]

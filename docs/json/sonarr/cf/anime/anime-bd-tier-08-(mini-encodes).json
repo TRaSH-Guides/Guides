@@ -32,21 +32,12 @@
       }
     },
     {
-      "name": "Prof",
+      "name": "AkihitoSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Prof\\]|-Prof\\b"
-      }
-    },
-    {
-      "name": "Shirσ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Shirσ)\\b"
+        "value": "\\b(AkihitoSubs)\\b"
       }
     },
     {
@@ -56,42 +47,6 @@
       "required": false,
       "fields": {
         "value": "\\b(Arukoru)\\b"
-      }
-    },
-    {
-      "name": "Judas",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Judas\\]|-Judas"
-      }
-    },
-    {
-      "name": "GHOST",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[GHOST\\]|-GHOST\\b"
-      }
-    },
-    {
-      "name": "YURASAKA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
-      }
-    },
-    {
-      "name": "AkihitoSubs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(AkihitoSubs)\\b"
       }
     },
     {
@@ -113,6 +68,24 @@
       }
     },
     {
+      "name": "GHOST",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[GHOST\\]|-GHOST\\b"
+      }
+    },
+    {
+      "name": "Judas",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Judas\\]|-Judas"
+      }
+    },
+    {
       "name": "naiyas",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -128,6 +101,33 @@
       "required": false,
       "fields": {
         "value": "\\b(Nep[ ._-]Blanc)\\b"
+      }
+    },
+    {
+      "name": "Prof",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Prof\\]|-Prof\\b"
+      }
+    },
+    {
+      "name": "Shirσ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Shirσ)\\b"
+      }
+    },
+    {
+      "name": "YURASAKA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
       }
     }
   ]
