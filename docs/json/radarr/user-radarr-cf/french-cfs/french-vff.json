@@ -1,16 +1,25 @@
 {
   "trash_id": "6e714c35775a363a8d01bc25328fe27e",
   "trash_score": "0",
-  "name": "VF",
+  "name": "VFF",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
+    {
+      "name": "French Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2
+      }
+    },
     {
       "name": "TRUEFRENCH",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TRUEFRENCH|VO?FF?)\\b"
+        "value": "\\b(TRUEFRENCH|VFF?)\\b"
       }
     },
     {

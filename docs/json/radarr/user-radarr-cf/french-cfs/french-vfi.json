@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(VF|FR)(I|\\d)\\b"
+        "value": "\\bVF(I|\\d)\\b"
       }
     }
   ]

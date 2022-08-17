@@ -1,16 +1,16 @@
 {
-  "trash_id": "73eeb95faa28625e8d2b0d8223863dbd",
+  "trash_id": "7253c7956af344a695d36c5670bf52b6",
   "trash_score": "0",
-  "name": "VFB",
+  "name": "VOF",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "Belgian French",
+      "name": "French Original Version",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bVFB\\b"
+        "value": "\\bVOF\\b"
       }
     }
   ]
