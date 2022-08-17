@@ -44,8 +44,7 @@
 ??? example "docker-compose - [CLICK TO EXPAND]"
 
     ```yml
-    {! include-markdown "../../../includes/docker/docker-compose.yml" !}
-    # --8<-- "includes/docker/docker-compose.yml"
+    --8<-- "includes/docker/docker-compose.yml"
     ```
 
 {! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
