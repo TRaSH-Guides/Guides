@@ -15,11 +15,11 @@
     },
     {
       "name": "2160p",
-      "implementation": "ResolutionSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": 2160
+        "value": "\\b(2160p)\\b"
       }
     },
     {
