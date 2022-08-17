@@ -162,9 +162,11 @@ data
    └── tv
 ```
 
---8<-- "includes/hardlinks/bad-path-suggestion.md"
+{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
---8<-- "includes/hardlinks/breakdown-folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
 ------
 
@@ -367,6 +369,8 @@ You will notice that all the images will be downloaded, after that the container
 
     Just don't use the GUI, only for information purposes !!!
 
---8<-- "includes/hardlinks/docker-compose-commands.md"
+{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

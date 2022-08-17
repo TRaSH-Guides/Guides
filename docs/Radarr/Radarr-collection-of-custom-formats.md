@@ -24,7 +24,8 @@ I also made 3 guides related to this one.
 
     This way you make sure the Custom Format preferences will be used instead.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 ------
 

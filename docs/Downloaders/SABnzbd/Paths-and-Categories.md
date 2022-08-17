@@ -1,6 +1,7 @@
 # SABnzbd - Paths and Categories
 
---8<-- "includes/downloaders/path.md"
+{! include-markdown "../../../includes/downloaders/path.md" !}
+<!-- --8<-- "includes/downloaders/path.md" -->
 
 ---
 
@@ -12,7 +13,8 @@
 
 ![!sabnzbd-categories](/Hardlinks/images/sabnzbd-categories.png)
 
---8<-- "includes/downloaders/warning-path-location.md"
+{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 
 ---
 
@@ -20,4 +22,5 @@
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

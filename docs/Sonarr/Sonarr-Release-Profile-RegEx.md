@@ -566,7 +566,8 @@ If you want to be mentioned please message me on discord, including a link for p
 
 ------
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 [^1]:
 

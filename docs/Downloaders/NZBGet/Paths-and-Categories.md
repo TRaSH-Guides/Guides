@@ -1,6 +1,7 @@
 # NZBGet - Paths and Categories
 
---8<-- "includes/downloaders/path.md"
+{! include-markdown "../../../includes/downloaders/path.md" !}
+<!-- --8<-- "includes/downloaders/path.md" -->
 
 ---
 
@@ -12,6 +13,8 @@
 
 ![nzbget-settings-categories](/Hardlinks/images/nzbget-settings-categories.png)
 
---8<-- "includes/downloaders/warning-path-location.md"
+{! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
+<!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

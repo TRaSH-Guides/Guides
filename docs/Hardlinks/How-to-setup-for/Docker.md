@@ -20,13 +20,17 @@
 
     For example `/<path_to_data>/data`, or even `/data`.
 
---8<-- "includes/hardlinks/folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/folder-structure.md" -->
 
---8<-- "includes/hardlinks/bad-path-suggestion.md"
+{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
---8<-- "includes/hardlinks/breakdown-folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
---8<-- "includes/hardlinks/permissions.md"
+{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+<!-- --8<-- "includes/hardlinks/permissions.md" -->
 
 ## Docker-compose Example
 
@@ -43,6 +47,8 @@
     --8<-- "includes/docker/docker-compose.yml"
     ```
 
---8<-- "includes/hardlinks/docker-compose-commands.md"
+{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

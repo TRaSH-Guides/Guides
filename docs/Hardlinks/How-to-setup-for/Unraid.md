@@ -67,7 +67,8 @@ data
 
 ### Breakdown of the Folder Structure
 
---8<-- "includes/hardlinks/bad-path-suggestion.md"
+{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
 ## Setting up the containers
 
@@ -205,4 +206,5 @@ data
 
     Also check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

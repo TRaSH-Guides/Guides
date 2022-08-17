@@ -1,10 +1,10 @@
 ??? summary "HQ 4k Encodes - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | UHD (CtrlHD)         | 2300  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-ctrlhd.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (DON)            | 2300  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-don.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (W4NK3R)         | 2300  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-w4nk3r.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (SPHD)           | 2250  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-sphd.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (HQMUX)          | 2200  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-hqmux.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (LEGi0N)         | 2150  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-legi0n.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | UHD (WEBDV)          | 1800  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-webdv.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                                                 | Score                                     | Trash ID                               |
+    | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
+    | [{{ radarr['uhd-ctrlhd']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-ctrlhd.json) | {{ radarr['uhd-ctrlhd']['trash_score'] }} | {{ radarr['uhd-ctrlhd']['trash_id'] }} |
+    | [{{ radarr['uhd-don']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-don.json)       | {{ radarr['uhd-don']['trash_score'] }}    | {{ radarr['uhd-don']['trash_id'] }}    |
+    | [{{ radarr['uhd-w4nk3r']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-w4nk3r.json) | {{ radarr['uhd-w4nk3r']['trash_score'] }} | {{ radarr['uhd-w4nk3r']['trash_id'] }} |
+    | [{{ radarr['uhd-sphd']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-sphd.json)     | {{ radarr['uhd-sphd']['trash_score'] }}   | {{ radarr['uhd-sphd']['trash_id'] }}   |
+    | [{{ radarr['uhd-hqmux']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-hqmux.json)   | {{ radarr['uhd-hqmux']['trash_score'] }}  | {{ radarr['uhd-hqmux']['trash_id'] }}  |
+    | [{{ radarr['uhd-legi0n']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-legi0n.json) | {{ radarr['uhd-legi0n']['trash_score'] }} | {{ radarr['uhd-legi0n']['trash_id'] }} |
+    | [{{ radarr['uhd-webdv']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/uhd-webdv.json)   | {{ radarr['uhd-webdv']['trash_score'] }}  | {{ radarr['uhd-webdv']['trash_id'] }}  |

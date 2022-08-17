@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "decibeL\\b"
+        "value": "\\b(decibeL)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "EPSiLON\\b"
+        "value": "\\b(EPSiLON)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Flights\\b"
+        "value": "\\b(Flights)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HiFi\\b"
+        "value": "\\b(HiFi)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "iFT\\b"
+        "value": "\\b(iFT)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "KRaLiMaRKo\\b"
+        "value": "\\b(KRaLiMaRKo)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NCmt\\b"
+        "value": "\\b(NCmt)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NTb\\b"
+        "value": "\\b(NTb)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "playBD\\b"
+        "value": "\\b(playBD)\\b"
       }
     },
     {
@@ -100,16 +100,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PTP\\b"
+        "value": "\\b(PTP)\\b"
       }
     },
     {
-      "name": "Sumvision",
+      "name": "SumVision",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Sumvision\\b"
+        "value": "\\b(SumVision)\\b"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "SURFINBIRD\\b"
+        "value": "\\b(SURFINBIRD)\\b"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TEPES\\b"
+        "value": "\\b(TEPES)\\b"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TOA\\b"
+        "value": "\\b(TOA)\\b"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TRiToN\\b"
+        "value": "\\b(TRiToN)\\b"
       }
     }
   ]

@@ -28,7 +28,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.keys
-  - pymdownx.snippets
+  # - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
@@ -45,6 +45,10 @@ markdown_extensions:
 
 plugins:
   - include-markdown:
+      opening_tag: "{!"
+      closing_tag: "!}"
+  - markdownextradata:
+      data: docs/json
   - search
   - git-revision-date-localized:
       type: datetime

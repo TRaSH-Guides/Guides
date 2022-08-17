@@ -1,9 +1,9 @@
 ??? summary "Movie Versions - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | Hybrid               | 100   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hybrid){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | Remaster             |  25   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#remaster){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | 4K Remaster          |  25   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | Criterion Collection |  25   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#criterion-collection){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | Special Edition      |  25   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#special-edition){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | IMAX                 |  25   | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#imax){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                                     | Score                                               | Trash ID                                         |
+    | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ |
+    | [{{ radarr['hybrid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hybrid)                             | {{ radarr['hybrid']['trash_score'] }}               | {{ radarr['hybrid']['trash_id'] }}               |
+    | [{{ radarr['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         | {{ radarr['remaster']['trash_score'] }}             | {{ radarr['remaster']['trash_id'] }}             |
+    | [{{ radarr['4k-remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster)                   | {{ radarr['4k-remaster']['trash_score'] }}          | {{ radarr['4k-remaster']['trash_id'] }}          |
+    | [{{ radarr['criterion-collection']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#criterion-collection) | {{ radarr['criterion-collection']['trash_score'] }} | {{ radarr['criterion-collection']['trash_id'] }} |
+    | [{{ radarr['special-edition']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#special-edition)           | {{ radarr['special-edition']['trash_score'] }}      | {{ radarr['special-edition']['trash_id'] }}      |
+    | [{{ radarr['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax)                                 | {{ radarr['imax']['trash_score'] }}                 | {{ radarr['imax']['trash_id'] }}                 |
