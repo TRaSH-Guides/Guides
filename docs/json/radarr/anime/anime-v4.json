@@ -1,0 +1,17 @@
+{
+  "trash_id": "51e170088fb933ee29e4a1344d0ef982",
+  "trash_score": "4",
+  "name": "Anime v4",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "v4",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(?<=(\\d|\\[))(v4)\\b"
+      }
+    }
+  ]
+}
