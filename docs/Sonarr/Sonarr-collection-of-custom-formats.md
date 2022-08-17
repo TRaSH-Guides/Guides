@@ -45,33 +45,33 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                            | HQ Source Groups      | Streaming Services     |
-| --------------------------------------------- | ----------------------------------- | --------------------- | ---------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [HQ](#hq)             | [Apple TV+](#aptv)     |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                           | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [3D](#3d)                           |                       | [HBO Max](#hmax)       |
-| [Criterion Collection](#criterion-collection) | [No-RlsGroup](#no-rlsgroup)         |                       | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             | [Obfuscated](#obfuscated)           |                       | [Netflix](#nf)         |
-| [IMAX](#imax)                                 | [Retags](#retags)                   |                       | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)             |                       | [Paramount+](#pmtp)    |
-|                                               | [Bad Dual Groups](#bad-dual-groups) |                       | [Movies Anywhere](#ma) |
-|                                               | [x265 (HD)](#x265-hd)               |                       |                        |
-|                                               | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                       |                        |
+| Movie Versions                       | Unwanted                            | HQ Source Groups            | Streaming Services  |
+| ------------------------------------ | ----------------------------------- | --------------------------- | ------------------- |
+| [Hybrid](#hybrid)                    | [BR-DISK](#br-disk)                 | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
+| [Remaster](#remaster)                |                                     | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
+| [Special Editions](#special-edition) | [LQ](#lq)                           | [WEB Tier 03](#web-tier-03) | [Disney+](#dsnp)    |
+|                                      |                                     |                             | [HBO Max](#hmax)    |
+|                                      | [No-RlsGroup](#no-rlsgroup)         |                             | [Hulu](#hulu)       |
+|                                      | [Obfuscated](#obfuscated)           |                             | [Netflix](#nf)      |
+|                                      | [Retags](#retags)                   |                             | [Peacock TV](#pcok) |
+|                                      | [DV (WEBDL)](#dv-webdl)             |                             | [Paramount+](#pmtp) |
+|                                      | [Bad Dual Groups](#bad-dual-groups) |                             |                     |
+|                                      | [x265 (HD)](#x265-hd)               |                             |                     |
+|                                      | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                             |                     |
 
 ------
 
-| Misc                                  | &nbsp; | &nbsp; | &nbsp; |
-| ------------------------------------- | ------ | ------ | ------ |
-| [Repack/Proper](#repack-proper)       | &nbsp; | &nbsp; | &nbsp; |
-| [Repack2](#repack2)                   | &nbsp; | &nbsp; | &nbsp; |
-| [Multi](#multi)                       | &nbsp; | &nbsp; | &nbsp; |
-| [x264](#x264)                         | &nbsp; | &nbsp; | &nbsp; |
-| [x265](#x265)                         | &nbsp; | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                       | &nbsp; | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)               | &nbsp; | &nbsp; | &nbsp; |
-| [Dutch Groups](#dutch-groups)         | &nbsp; | &nbsp; | &nbsp; |
-| [Anime Dual Audio](#anime-dual-audio) | &nbsp; | &nbsp; | &nbsp; |
+| Misc                            | Anime                                 | &nbsp; | &nbsp; |
+| ------------------------------- | ------------------------------------- | ------ | ------ |
+| [Repack/Proper](#repack-proper) | [Anime Dual Audio](#anime-dual-audio) | &nbsp; | &nbsp; |
+| [Repack2](#repack2)             | &nbsp;                                | &nbsp; | &nbsp; |
+| [Multi](#multi)                 | &nbsp;                                | &nbsp; | &nbsp; |
+| [x264](#x264)                   | &nbsp;                                | &nbsp; | &nbsp; |
+| [x265](#x265)                   | &nbsp;                                | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                 | &nbsp;                                | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)         | &nbsp;                                | &nbsp; | &nbsp; |
+|                                 | &nbsp;                                | &nbsp; | &nbsp; |
+|                                 | &nbsp;                                | &nbsp; | &nbsp; |
 
 ## Audio Advanced
 
@@ -705,58 +705,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### 4K Remaster
-
-??? faq "4K Remaster - [CLICK TO EXPAND]"
-
-    A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible currently for the movie.
-
-    To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
-
-    Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in original source material.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/4k-remaster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Criterion Collection
-
-??? faq "Criterion Collection - [CLICK TO EXPAND]"
-
-    The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company which focuses on licensing "important classic and contemporary films" and selling them to film aficionados. Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/criterion-collection.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Theatrical Cut
-
-??? faq "Theatrical Cut - [CLICK TO EXPAND]"
-
-    The Theatrical Cut is the version of the film that was shown at cinemas.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/theatrical-cut.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### Special Edition
 
 ??? faq "Special Edition - [CLICK TO EXPAND]"
@@ -770,48 +718,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/special-edition.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### IMAX
-
-??? faq "IMAX - [CLICK TO EXPAND]"
-    Description placeholder
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/imax.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### IMAX Enhanced
-
-??? faq "IMAX Enhanced - [CLICK TO EXPAND]"
-    IMAX Enhanced: Get More Picture Instead of Black Bars
-
-    IMAX Enhanced exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.1.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.2.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.3.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.4.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.5.png)
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/imax-enhanced.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -850,24 +756,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### EVO (no WEBDL)
-
-??? faq "EVO (no WEBDL) - [CLICK TO EXPAND]"
-
-    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
-
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/evo-no-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### LQ
 
 <sub>Low Quality Releases = LQ</sub>
@@ -875,18 +763,6 @@ I also made 3 guides related to this one.
 ??? faq "LQ - [CLICK TO EXPAND]"
 
     A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
-
-    !!! note
-
-        You might want to add the following also [EVO (no WEBDL)](#evo-no-webdl)
-
-        - BLOCK1 = Low-Quality Releases (often banned groups)
-        - BLOCK2 = Another Small list of often banned groups.
-        - BLOCK3 = Banned release groups.
-        - BLOCK4 = Low-quality and/or dishonest release groups.
-        - BLOCK5 = Banned Release Groups.
-        - BLOCK6 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-        - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying!!!
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -941,24 +817,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### 3D
-
-??? faq "3D - [CLICK TO EXPAND]"
-
-    If you prefer or not prefer 3D.
-
-    You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/3d.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1141,37 +999,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### Dutch Groups
-
-??? faq "Dutch Groups - [CLICK TO EXPAND]"
-
-    If you prefer movies with also a Dutch audio track.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dutch-groups.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Anime Dual Audio
-
-??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
-    Description placeholder
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### MPEG2
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1200,50 +1027,55 @@ I also made 3 guides related to this one.
 
 ------
 
-### HQ
+### WEB Tier 01
 
-<sub>HQ-Releases = HQ</sub>
+??? faq "WEB Tier 01 - [CLICK TO EXPAND]"
 
-??? faq "HQ - [CLICK TO EXPAND]"
-
-    A collection of P2P groups that are known for their high quality releases.
+    - Groups that are on a certain list and active
+    - Groups that are on a certain list and did a minimum of x releases
+    - Groups that are not on the list but have a few releases on their name, but won't be trumped by a season pack on the top tier trackers
+    - Hybrid releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hq.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-01.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### HQ-WEBDL
+### WEB Tier 02
 
-??? faq "HQ-WEBDL - [CLICK TO EXPAND]"
+??? faq "WEB Tier 02 - [CLICK TO EXPAND]"
 
-    A personal collection of P2P WEB-DL groups that are known for their high quality releases.
+    - Groups that are on a certain list and are less or not active anymore
+    - Groups that only did a few releases
+    - Groups that are not on the list but have a few releases on their name
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hq-webdl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-02.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### HQ-Remux
+### WEB Tier 03
 
-??? faq "HQ-Remux - [CLICK TO EXPAND]"
+??? faq "WEB Tier 03 - [CLICK TO EXPAND]"
 
-    A personal collection of P2P Remux groups that are known for their high quality releases.
+    - Groups that are on a certain list and are less or not active anymore
+    - Groups that hardly done any releases
+    - Groups that are not on the list but have a few releases on their name
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hq-remux.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-03.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1398,18 +1230,19 @@ I also made 3 guides related to this one.
 
 ------
 
-### MA
+## Anime
 
-<sub>Movies Anywhere</sub>
+------
 
-??? faq "Movies Anywhere - [CLICK TO EXPAND]"
+### Anime Dual Audio
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}
+??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
+    Description placeholder
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ma.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
