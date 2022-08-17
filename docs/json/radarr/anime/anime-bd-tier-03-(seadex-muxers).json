@@ -1,7 +1,7 @@
 {
-  "trash_id": "ed7f1e315e000aef424a58517fa48727",
-  "trash_score": "1300",
-  "name": "Anime BD Tier 02 (SeaDex Muxers)",
+  "trash_id": "fa857662bad28d5ff21a6e611869a0ff",
+  "trash_score": "1200",
+  "name": "Anime BD Tier 03 (SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -10,16 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {
@@ -32,318 +23,282 @@
       }
     },
     {
-      "name": "0x539",
+      "name": "AC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(0x539)\\b"
+        "value": "\\[AC\\]|-AC\\b"
       }
     },
     {
-      "name": "Alt",
+      "name": "ASC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Alt\\]|-Alt\\b"
+        "value": "\\b(ASC)\\b"
       }
     },
     {
-      "name": "ARC",
+      "name": "AssMix",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[ARC\\]|-ARC\\b"
+        "value": "\\b(AssMix)\\b"
       }
     },
     {
-      "name": "Arid",
+      "name": "Ayashii",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Arid\\]|-Arid\\b"
+        "value": "\\b(Ayashii)\\b"
       }
     },
     {
-      "name": "aro",
+      "name": "CBT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(aro)\\b"
+        "value": "\\b(CBT)\\b"
       }
     },
     {
-      "name": "Baws",
+      "name": "CTR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Baws)\\b"
+        "value": "\\b(CTR)\\b"
       }
     },
     {
-      "name": "BKC",
+      "name": "CyC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BKC)\\b"
+        "value": "\\b(CyC)\\b"
       }
     },
     {
-      "name": "Brrrrrrr",
+      "name": "Dekinai",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Brrrrrrr)\\b"
+        "value": "\\[Dekinai\\]|-Dekinai\\b"
       }
     },
     {
-      "name": "Chotab",
+      "name": "EXP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Chotab)\\b"
+        "value": "\\[EXP\\]|-EXP\\b"
       }
     },
     {
-      "name": "Crow",
+      "name": "Galator",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Crow\\]|-Crow\\b"
+        "value": "\\b(Galator)\\b"
       }
     },
     {
-      "name": "CUNNY",
+      "name": "GSK_kun",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CUNNY)\\b"
+        "value": "\\b(GSK[._-]kun)\\b"
       }
     },
     {
-      "name": "D-Z0N3",
+      "name": "Holomux",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D-Z0N3)\\b"
+        "value": "\\b(Holomux)\\b"
       }
     },
     {
-      "name": "Dae",
+      "name": "IK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Dae)\\b"
+        "value": "\\b(IK)\\b"
       }
     },
     {
-      "name": "Datte13",
+      "name": "Kaizoku",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Datte13)\\b"
+        "value": "\\b(AnimeKaizoku)\\b|\\[Kaizoku\\]|-Kaizoku\\b"
       }
     },
     {
-      "name": "Drag",
+      "name": "Kametsu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Drag\\]|-Drag\\b"
+        "value": "\\b(Kametsu)\\b"
       }
     },
     {
-      "name": "FLFL",
+      "name": "KH",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FLFL)\\b"
+        "value": "\\b(KH)\\b"
       }
     },
     {
-      "name": "hydes",
+      "name": "kuchikirukia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(hydes)\\b"
+        "value": "\\b(kuchikirukia)\\b"
       }
     },
     {
-      "name": "iKaos",
+      "name": "MK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iKaos)\\b"
+        "value": "\\b(MK)\\b"
       }
     },
     {
-      "name": "JySzE",
+      "name": "Mysteria",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(JySzE)\\b"
+        "value": "\\[Mysteria\\]|-Mysteria\\b"
       }
     },
     {
-      "name": "LostYears",
+      "name": "Netaro",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LostYears)\\b"
+        "value": "\\b(Netaro)\\b"
       }
     },
     {
-      "name": "Lulu",
+      "name": "Pn8",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Lulu\\]|-Lulu\\b"
+        "value": "\\b(Pn8)\\b"
       }
     },
     {
-      "name": "Matsya",
+      "name": "Pookie",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Matsya)\\b"
+        "value": "\\b(Pookie)\\b"
       }
     },
     {
-      "name": "MC",
+      "name": "Quetzal",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MC)\\b"
+        "value": "\\b(Quetzal)\\b"
       }
     },
     {
-      "name": "Metal",
+      "name": "Rasetsu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Metal\\]|-Metal\\b"
+        "value": "\\b(Rasetsu)\\b"
       }
     },
     {
-      "name": "Noyr",
+      "name": "Senjou",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Noyr)\\b"
+        "value": "\\[Senjou\\]|-Senjou\\b"
       }
     },
     {
-      "name": "NSDAB",
+      "name": "ShowY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NSDAB)\\b"
+        "value": "\\b(ShowY)\\b"
       }
     },
     {
-      "name": "pog42",
+      "name": "WBDP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(pog42)\\b"
+        "value": "\\b(WBDP)\\b"
       }
     },
     {
-      "name": "pyroneko",
+      "name": "WSE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(pyroneko)\\b"
+        "value": "\\b(WSE)\\b"
       }
     },
     {
-      "name": "RAI",
+      "name": "Yoghurt",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RAI)\\b"
+        "value": "\\b(Yoghurt)\\b"
       }
     },
     {
-      "name": "Reza",
+      "name": "YURI",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Reza)\\b"
+        "value": "\\[YURI\\]|-YURI\\b"
       }
     },
     {
-      "name": "Shimatta",
+      "name": "ZOIO",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Shimatta)\\b"
-      }
-    },
-    {
-      "name": "Smoke",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Smoke\\]|-Smoke\\b"
-      }
-    },
-    {
-      "name": "Thighs",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Thighs\\]|-Thighs\\b"
-      }
-    },
-    {
-      "name": "UDF",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(UDF)\\b"
-      }
-    },
-    {
-      "name": "Yuki",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Yuki\\]|-Yuki\\b"
+        "value": "\\b(ZOIO)\\b"
       }
     }
   ]

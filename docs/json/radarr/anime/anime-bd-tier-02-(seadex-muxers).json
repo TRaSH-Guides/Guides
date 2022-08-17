@@ -1,5 +1,5 @@
 {
-  "trash_id": "ed7f1e315e000aef424a58517fa48727",
+  "trash_id": "66926c8fa9312bc74ab71bf69aae4f4a",
   "trash_score": "1300",
   "name": "Anime BD Tier 02 (SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
@@ -10,16 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {

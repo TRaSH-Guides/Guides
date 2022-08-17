@@ -1,5 +1,5 @@
 {
-  "trash_id": "19180499de5ef2b84b6ec59aae444696",
+  "trash_id": "8526c54e36b4962d340fce52ef030e76",
   "trash_score": "500",
   "name": "Anime Web Tier 02 (Top FanSubs)",
   "includeCustomFormatWhenRenaming": false,
@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -19,16 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
+        "value": 8
       }
     },
     {

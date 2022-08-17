@@ -1,61 +1,79 @@
 {
-  "trash_id": "88bb25ff3bbdfab98ea373bf055ea16f",
-  "trash_score": "-10000",
-  "name": "Anime Dubs Only",
+  "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
+  "trash_score": "100",
+  "name": "Anime Web Tier 06 (FanSubs)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Dubbed",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+        "value": 7
       }
     },
     {
-      "name": "Golumpa",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Golumpa)\\b"
+        "value": 8
       }
     },
     {
-      "name": "KaiDubs",
+      "name": "Asenshi",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KaiDubs)\\b"
+        "value": "\\b(Asenshi)\\b"
       }
     },
     {
-      "name": "KamiFS",
+      "name": "Chihiro",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KamiFS)\\b"
+        "value": "\\[Chihiro\\]|-Chihiro\\b"
       }
     },
     {
-      "name": "KS (Not Dual Audio)",
+      "name": "Commie",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
+        "value": "\\b(Commie)\\b"
       }
     },
     {
-      "name": "torenter69",
+      "name": "DameDesuYo",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(torenter69)\\b"
+        "value": "\\b(DameDesuYo)\\b"
+      }
+    },
+    {
+      "name": "Doki",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Doki\\]|-Doki\\b"
+      }
+    },
+    {
+      "name": "Tsundere",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Tsundere\\]|-Tsundere\\b"
       }
     }
   ]

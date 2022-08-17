@@ -1,7 +1,7 @@
 {
-  "trash_id": "c81bbfb47fed3d5a3ad027d077f889de",
-  "trash_score": "700",
-  "name": "Anime BD Tier 08 (Mini Encodes)",
+  "trash_id": "fb3ccc5d5cc8f77c9055d4cb4561dded",
+  "trash_score": "1400",
+  "name": "Anime BD Tier 01 (Top SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -10,16 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
+        "value": 9
       }
     },
     {
@@ -32,102 +23,84 @@
       }
     },
     {
-      "name": "AkihitoSubs",
+      "name": "Aergia",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AkihitoSubs)\\b"
+        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
       }
     },
     {
-      "name": "Arukoru",
+      "name": "CsS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Arukoru)\\b"
+        "value": "\\b(CsS)\\b"
       }
     },
     {
-      "name": "EDGE",
+      "name": "Legion",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[EDGE\\]|-EDGE\\b"
+        "value": "\\[Legion\\]|-Legion\\b"
       }
     },
     {
-      "name": "EMBER",
+      "name": "OZR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[EMBER\\]|-EMBER\\b"
+        "value": "\\b(OZR)\\b"
       }
     },
     {
-      "name": "GHOST",
+      "name": "sam",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[GHOST\\]|-GHOST\\b"
+        "value": "\\[sam\\]|-sam\\b"
       }
     },
     {
-      "name": "Judas",
+      "name": "SCY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Judas\\]|-Judas"
+        "value": "\\b(SCY)\\b"
       }
     },
     {
-      "name": "naiyas",
+      "name": "Spirale",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[naiyas\\]|-naiyas\\b"
+        "value": "\\b(Spirale)\\b"
       }
     },
     {
-      "name": "Nep_Blanc",
+      "name": "Vanilla",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Nep[ ._-]Blanc)\\b"
+        "value": "\\[Vanilla\\]|-Vanilla\\b"
       }
     },
     {
-      "name": "Prof",
+      "name": "Vodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Prof\\]|-Prof\\b"
-      }
-    },
-    {
-      "name": "Shirσ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Shirσ)\\b"
-      }
-    },
-    {
-      "name": "YURASAKA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
+        "value": "\\b(Vodes)\\b"
       }
     }
   ]

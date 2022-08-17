@@ -1,151 +1,124 @@
 {
-  "trash_id": "19180499de5ef2b84b6ec59aae444696",
-  "trash_score": "500",
-  "name": "Anime Web Tier 02 (Top FanSubs)",
+  "trash_id": "06b6542a47037d1e33b15aa3677c2365",
+  "trash_score": "-10000",
+  "name": "Anime Raws",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
-      }
-    },
-    {
-      "name": "0x539",
+      "name": "Beatrice-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(0x539)\\b"
+        "value": "Beatrice[ ._-]?(raws)"
       }
     },
     {
-      "name": "Asakura",
+      "name": "Daddy-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Asakura\\]|-Asakura\\b"
+        "value": "Daddy[ ._-]?(raws)"
       }
     },
     {
-      "name": "Cyan",
+      "name": "Iriza-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Cyan\\]|-Cyan\\b"
+        "value": "Iriza[ ._-]?(raws)"
       }
     },
     {
-      "name": "Dae",
+      "name": "Kawaiika-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Dae\\]|-Dae\\b"
+        "value": "Kawaiika[ ._-]?(raws)"
       }
     },
     {
-      "name": "Foxtrot",
+      "name": "km",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+        "value": "\\[km\\]|-km\\b "
       }
     },
     {
-      "name": "Gao",
+      "name": "LowPower-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Gao\\]|-Gao\\b"
+        "value": "LowPower[ ._-]?(raws)"
       }
     },
     {
-      "name": "GSK_kun",
+      "name": "NC-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GSK[._-]kun)\\b"
+        "value": "NC[ ._-]?(raws)"
       }
     },
     {
-      "name": "MTBB",
+      "name": "neko-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MTBB)\\b"
+        "value": "neko[ ._-]?(raws)"
       }
     },
     {
-      "name": "Okay-Subs",
+      "name": "Ohys-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Okay-Subs)\\b"
+        "value": "Ohys[ ._-]?(raws)"
       }
     },
     {
-      "name": "Pizza",
+      "name": "Pandoratv-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Pizza\\]|-Pizza\\b"
+        "value": "Pandoratv[ ._-]?(raws)"
       }
     },
     {
-      "name": "Slyfox",
+      "name": "Raws-Maji",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Slyfox)\\b"
+        "value": "\\b(Raws-Maji)\\b"
       }
     },
     {
-      "name": "SoLCE",
+      "name": "Scryous-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SoLCE)\\b"
+        "value": "Scryous[ ._-]?(raws)"
       }
     },
     {
-      "name": "Tenshi",
+      "name": "Seicher",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[tenshi\\]|-tenshi\\b"
+        "value": "\\b(Seicher)\\b"
       }
     }
   ]

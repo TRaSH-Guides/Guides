@@ -1,151 +1,151 @@
 {
-  "trash_id": "19180499de5ef2b84b6ec59aae444696",
-  "trash_score": "500",
-  "name": "Anime Web Tier 02 (Top FanSubs)",
+  "trash_id": "ca864ed93c7b431150cc6748dc34875d",
+  "trash_score": "1000",
+  "name": "Anime BD Tier 05 (Remuxes)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
+      "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 9
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "DVD",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
+        "value": 5
       }
     },
     {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
-      }
-    },
-    {
-      "name": "0x539",
+      "name": "ANThELIa",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(0x539)\\b"
+        "value": "\\b(ANThELIa)\\b"
       }
     },
     {
-      "name": "Asakura",
+      "name": "AP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Asakura\\]|-Asakura\\b"
+        "value": "\\b(AP)\\b"
       }
     },
     {
-      "name": "Cyan",
+      "name": "BluDragon",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Cyan\\]|-Cyan\\b"
+        "value": "\\b(BluDragon)\\b"
       }
     },
     {
-      "name": "Dae",
+      "name": "D4C",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Dae\\]|-Dae\\b"
+        "value": "\\b(D4C)\\b"
       }
     },
     {
-      "name": "Foxtrot",
+      "name": "Dragon-Releases",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+        "value": "\\b(Dragon-Releases)\\b"
       }
     },
     {
-      "name": "Gao",
+      "name": "E.N.D",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Gao\\]|-Gao\\b"
+        "value": "\\b(E[.-]N[.-]D)\\b"
       }
     },
     {
-      "name": "GSK_kun",
+      "name": "KAWAiREMUX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GSK[._-]kun)\\b"
+        "value": "\\b(KAWAiREMUX)\\b"
       }
     },
     {
-      "name": "MTBB",
+      "name": "MKVULTRA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MTBB)\\b"
+        "value": "\\b(MKVULTRA)\\b"
       }
     },
     {
-      "name": "Okay-Subs",
+      "name": "Raizel",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Okay-Subs)\\b"
+        "value": "\\b(Raizel)\\b"
       }
     },
     {
-      "name": "Pizza",
+      "name": "REVO",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Pizza\\]|-Pizza\\b"
+        "value": "\\b(REVO)\\b"
       }
     },
     {
-      "name": "Slyfox",
+      "name": "Spark",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Slyfox)\\b"
+        "value": "\\[Spark\\]|-Spark\\b"
       }
     },
     {
-      "name": "SoLCE",
+      "name": "SRLS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SoLCE)\\b"
+        "value": "\\b(SRLS)\\b"
       }
     },
     {
-      "name": "Tenshi",
+      "name": "TTGA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[tenshi\\]|-tenshi\\b"
+        "value": "\\b(TTGA)\\b"
+      }
+    },
+    {
+      "name": "ZR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZR)\\b"
       }
     }
   ]

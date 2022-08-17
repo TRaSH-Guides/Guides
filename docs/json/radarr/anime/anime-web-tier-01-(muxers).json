@@ -1,20 +1,11 @@
 {
-  "trash_id": "949c16fe0a8147f50ba82cc2df9411c9",
-  "trash_score": "1400",
-  "name": "Anime BD Tier 01 (Top SeaDex Muxers)",
+  "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
+  "trash_score": "600",
+  "name": "Anime Web Tier 01 (Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Bluray",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Bluray Remux",
+      "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
@@ -23,57 +14,48 @@
       }
     },
     {
-      "name": "DVD",
+      "name": "WEBRIP",
       "implementation": "SourceSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 5
+        "value": 8
       }
     },
     {
-      "name": "Aergia",
+      "name": "Arid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Aergia\\]|-Aergia(?!-raws)\\b"
+        "value": "\\[Arid\\]|-Arid\\b"
       }
     },
     {
-      "name": "CsS",
+      "name": "Baws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CsS)\\b"
+        "value": "\\b(Baws)\\b"
       }
     },
     {
-      "name": "Legion",
+      "name": "LostYears",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Legion\\]|-Legion\\b"
+        "value": "\\b(LostYears)\\b"
       }
     },
     {
-      "name": "OZR",
+      "name": "Reza",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(OZR)\\b"
-      }
-    },
-    {
-      "name": "sam",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[sam\\]|-sam\\b"
+        "value": "\\b(Reza)\\b"
       }
     },
     {
@@ -86,21 +68,12 @@
       }
     },
     {
-      "name": "Spirale",
+      "name": "Setsugen",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Spirale)\\b"
-      }
-    },
-    {
-      "name": "Vanilla",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Vanilla\\]|-Vanilla\\b"
+        "value": "\\b(Setsugen)\\b"
       }
     },
     {
@@ -110,6 +83,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Vodes)\\b"
+      }
+    },
+    {
+      "name": "Z4ST1N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Z4ST1N)\\b"
       }
     }
   ]
