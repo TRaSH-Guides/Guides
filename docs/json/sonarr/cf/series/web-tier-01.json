@@ -1,142 +1,151 @@
 {
-  "trash_id": "xxx",
-  "trash_score": "xxx",
+  "trash_id": "e6258996055b9fbab7e9cb2f75819294",
+  "trash_score": "1700",
   "name": "WEB Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "AJP69",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "ABBiE",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-AJP69\\b"
+        "value": "\\b(ABBiE)\\b"
       }
     },
     {
-      "name": "BTN",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "AJP69",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-BTN\\b"
+        "value": "\\b(AJP69)\\b"
       }
     },
     {
       "name": "CasStudio",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-CasStudio\\b"
+        "value": "\\b(CasStudio)\\b"
       }
     },
     {
       "name": "CtrlHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-CtrlHD\\b"
-      }
-    },
-    {
-      "name": "KiNGS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-KiNGS\\b"
-      }
-    },
-    {
-      "name": "monkee",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-monkee\\b"
-      }
-    },
-    {
-      "name": "NOSiViD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NOSiViD\\b"
-      }
-    },
-    {
-      "name": "NTb",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NTb\\b"
-      }
-    },
-    {
-      "name": "NTG",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-NTG\\b"
-      }
-    },
-    {
-      "name": "QOQ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-QOQ\\b"
-      }
-    },
-    {
-      "name": "RTN",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-RTN\\b"
-      }
-    },
-    {
-      "name": "TOMMY",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-TOMMY\\b"
-      }
-    },
-    {
-      "name": "ViSUM",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-ViSUM\\b"
-      }
-    },
-    {
-      "name": "T6D",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-T6D\\b"
+        "value": "\\b(CtrlHD)\\b"
       }
     },
     {
       "name": "FLUX",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-FLUX\\b"
+        "value": "\\b(FLUX)\\b"
+      }
+    },
+    {
+      "name": "KiNGS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KiNGS)\\b"
+      }
+    },
+    {
+      "name": "monkee",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(monkee)\\b"
+      }
+    },
+    {
+      "name": "NOSiViD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NOSiViD)\\b"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NTb)\\b"
+      }
+    },
+    {
+      "name": "NTG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NTG)\\b"
+      }
+    },
+    {
+      "name": "QOQ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(QOQ)\\b"
+      }
+    },
+    {
+      "name": "RTN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RTN)\\b"
+      }
+    },
+    {
+      "name": "SIC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SIC)\\b"
+      }
+    },
+    {
+      "name": "T6D",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(T6D)\\b"
+      }
+    },
+    {
+      "name": "TOMMY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TOMMY)\\b"
+      }
+    },
+    {
+      "name": "ViSUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ViSUM)\\b"
       }
     },
     {
@@ -155,15 +164,6 @@
       "required": false,
       "fields": {
         "value": 4
-      }
-    },
-    {
-      "name": "SIC",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "-SiC\\b"
       }
     }
   ]
