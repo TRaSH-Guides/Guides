@@ -15,7 +15,7 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
-    - icon: fontawesome/brands/github-square
+    - icon: fontawesome/brands/square-github
       link: https://github.com/TRaSH-/Guides
 
 extra_css:
@@ -28,7 +28,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.keys
-  # - pymdownx.snippets
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
