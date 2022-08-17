@@ -46,7 +46,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "SiC\\b"
+        "value": "\\b(SiC)\\b"
       }
     }
   ]

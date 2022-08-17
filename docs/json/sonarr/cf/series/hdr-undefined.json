@@ -73,7 +73,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bFraMeSToR\\b"
+        "value": "\\b(FraMeSToR)\\b"
       }
     }
   ]
