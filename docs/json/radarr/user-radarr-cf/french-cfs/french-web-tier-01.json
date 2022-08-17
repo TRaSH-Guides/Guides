@@ -1,0 +1,107 @@
+{
+  "trash_id": "d6eaabe1c5bd1ed9730d4d3ff55072d2",
+  "trash_score": "1750",
+  "name": "[FR] WEB Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "BEO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BEO\\b"
+      }
+    },
+    {
+      "name": "DUSTiN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "DUSTiN\\b"
+      }
+    },
+    {
+      "name": "FoX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FoX\\b"
+      }
+    },
+    {
+      "name": "FRATERNiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FRATERNiTY\\b"
+      }
+    },
+    {
+      "name": "FUJiSAN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FUJiSAN\\b"
+      }
+    },
+    {
+      "name": "MTDK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MTDK\\b"
+      }
+    },
+    {
+      "name": "NEO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NEO\\b"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Psaro\\b"
+      }
+    },
+    {
+      "name": "T3KASHi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "T3KASHi\\b"
+      }
+    }
+  ]
+}

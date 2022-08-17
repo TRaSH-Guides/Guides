@@ -1,0 +1,98 @@
+{
+  "trash_id": "1577ecf8cbf848c18bced9f7bf678ec6",
+  "trash_score": "1650",
+  "name": "[FR] WEB Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "ALLDAYiN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ALLDAYiN\\b"
+      }
+    },
+    {
+      "name": "BraD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BraD\\b"
+      }
+    },
+    {
+      "name": "LAZARUS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "LAZARUS\\b"
+      }
+    },
+    {
+      "name": "MOONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MOONLY\\b"
+      }
+    },
+    {
+      "name": "MYSTERiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MYSTERiON\\b"
+      }
+    },
+    {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ONLYMOViE\\b"
+      }
+    },
+    {
+      "name": "RiPiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "RiPiT\\b"
+      }
+    },
+    {
+      "name": "Slay3R",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Slay3R\\b"
+      }
+    }
+  ]
+}

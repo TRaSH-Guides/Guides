@@ -6,29 +6,29 @@
   "specifications": [
     {
       "name": "A",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](AiRDOCS|AiRLiNE|AiRTV|AKLHD|AZR)\\b"
+        "value": "(AiRDOCS|AiRLiNE|AiRTV|AKLHD|AZR)\\b"
       }
     },
     {
       "name": "B",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](BiPOLAR|BRiNK)\\b"
+        "value": "(BAWLS|BiPOLAR|BLACKPANTERS|BRiNK)\\b"
       }
     },
     {
       "name": "C",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](CARAPiLS|CiELOS|CiNEFiLE|CONVOY|CRYPT0)\\b"
+        "value": "(CARAPiLS|CiELOS|CMBHD|COUAC|CRYPT0)\\b"
       }
     },
     {

@@ -1,0 +1,125 @@
+{
+  "trash_id": "2763f833d09e48728b0e9b7145721b63",
+  "trash_score": "1700",
+  "name": "[FR] HD Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "ALLDAYiN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ALLDAYiN\\b"
+      }
+    },
+    {
+      "name": "BraD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BraD\\b"
+      }
+    },
+    {
+      "name": "Foxhound",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Foxhound\\b"
+      }
+    },
+    {
+      "name": "JKF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "JKF\\b"
+      }
+    },
+    {
+      "name": "LAZARUS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "LAZARUS\\b"
+      }
+    },
+    {
+      "name": "MTeam",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MTeam\\b"
+      }
+    },
+    {
+      "name": "QUALiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "QUALiTY\\b"
+      }
+    },
+    {
+      "name": "RONiN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "RONiN\\b"
+      }
+    },
+    {
+      "name": "TkHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "TkHD\\b"
+      }
+    },
+    {
+      "name": "UTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "UTT\\b"
+      }
+    }
+  ]
+}

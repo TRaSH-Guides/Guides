@@ -1,0 +1,89 @@
+{
+  "trash_id": "f4464c0a7f71420a9e4d6b45bc584dd4",
+  "trash_score": "1850",
+  "name": "[FR] Remux Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "BDHD (no VC1)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
+      }
+    },
+    {
+      "name": "Foxhound",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Foxhound\\b"
+      }
+    },
+    {
+      "name": "MARBLECAKE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MARBLECAKE\\b"
+      }
+    },
+    {
+      "name": "MUSTANG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MUSTANG\\b"
+      }
+    },
+    {
+      "name": "PATOMiEL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "PATOMiEL\\b"
+      }
+    },
+    {
+      "name": "QUEBEC63",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Q(UEBE)?C63\\b"
+      }
+    },
+    {
+      "name": "Sicario",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Sicario\\b"
+      }
+    },
+    {
+      "name": "Zapax",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Zapax\\b"
+      }
+    }
+  ]
+}

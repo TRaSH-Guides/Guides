@@ -1,16 +1,16 @@
 {
   "trash_id": "d456057648cf138a7560eb08d24fb9d0",
   "trash_score": "2300",
-  "name": "French UHD (SowHD)",
+  "name": "[FR] UHD (SowHD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "SowHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[\\[ .-]SowHD\\b"
+        "value": "SowHD\\b"
       }
     },
     {

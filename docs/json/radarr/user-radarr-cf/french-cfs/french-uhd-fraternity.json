@@ -1,16 +1,16 @@
 {
   "trash_id": "a29c65e41f71ff2fecbc7124b5455098",
-  "trash_score": "2250",
-  "name": "French UHD (FRATERNiTY)",
+  "trash_score": "2150",
+  "name": "[FR] UHD (FRATERNiTY)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "FRATERNiTY",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[\\[ .-]FRATERNiTY\\b"
+        "value": "FRATERNiTY\\b"
       }
     },
     {

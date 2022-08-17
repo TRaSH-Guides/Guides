@@ -1,0 +1,89 @@
+{
+  "trash_id": "f380d92c72933088d8b74df740a57082",
+  "trash_score": "1900",
+  "name": "[FR] Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Choco",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Choco\\b"
+      }
+    },
+    {
+      "name": "HDForever",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "HDForever\\b"
+      }
+    },
+    {
+      "name": "HeavyWeight",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "HeavyWeight\\b"
+      }
+    },
+    {
+      "name": "MAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "MAX\\b"
+      }
+    },
+    {
+      "name": "Obi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Obi\\b"
+      }
+    },
+    {
+      "name": "ONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ONLY\\b"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Psaro\\b"
+      }
+    },
+    {
+      "name": "ROMKENT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "ROMKENT\\b"
+      }
+    }
+  ]
+}

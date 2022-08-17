@@ -6,34 +6,34 @@
   "specifications": [
     {
       "name": "Ads/Watermarks",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](Avitech|CINeHD|CZ\\d+$|GA(Ï|I)A|HMiDiMADRiDi|KILLERMIX|NEWCiNE|RPZ|RZP|ShowFR|Wawa-|ZW)\\b"
+        "value": "(Avitech|CZ\\d+|EXTREME|GA(Ï|I)A|HMiDiMADRiDi|Hush|KILLERMIX|NEWCINE|RPZ|RZP|ShowFR|Wawa-?(city|mania|porno)?|ZW)\\b"
       }
     },
     {
       "name": "Bad/False releases",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](ACOOL|ASPHiXiAS|BLABLASTREAM|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|Monchat|MKVXTEAM|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXiC|TUTUTE|Zombie)\\b"
+        "value": "(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
       }
     },
     {
       "name": "DeTAG/ReTAG",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](AT|bigZT|Boheme|Cpasbien|CPB|DOLL4R|Dread[ ._-]?Team|EXTREME|FGT|Firetown|FuN|JetAnime|L-O-L|NewZT|SubZero|Time2Watch|TIREXO|T(orrent)?9|WaNeZt|WebAnime|ZONE|ZT)\\b"
+        "value": "((Cpasbien|CPB)|AT|bigZT|Boheme|CINeHD|DOLL4R|Dread[ .-]?Team|EZTV|FGT|Firetown|FUN|HDMIDIMADRIDI|JetAnime|L-O-L|NewZT|RARBG|SubZero|T9|Time2Watch|TIREXO|Torrent9|WaNeZt|WebAnime|YIFY|YTS|ZONE|ZT)\\b"
       }
     },
     {
-      "implementation": "ReleaseTitleSpecification",
       "name": "Other reasons",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {

@@ -1,0 +1,98 @@
+{
+  "trash_id": "8d3278c00a3542b3bc863a447c3bc35e",
+  "trash_score": "1700",
+  "name": "[FR] WEB Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "BONBON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "BONBON\\b"
+      }
+    },
+    {
+      "name": "FCK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FCK\\b"
+      }
+    },
+    {
+      "name": "FrIeNdS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FrIeNdS\\b"
+      }
+    },
+    {
+      "name": "FW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "FW\\b"
+      }
+    },
+    {
+      "name": "HANAMi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "HANAMi\\b"
+      }
+    },
+    {
+      "name": "HeavyWeight",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "HeavyWeight\\b"
+      }
+    },
+    {
+      "name": "NoNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NoNE\\b"
+      }
+    },
+    {
+      "name": "TkHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "TkHD\\b"
+      }
+    }
+  ]
+}

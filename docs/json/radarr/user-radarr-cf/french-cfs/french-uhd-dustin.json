@@ -1,16 +1,16 @@
 {
   "trash_id": "d71a8efe96e3cd164c44dabf2e8cbd34",
-  "trash_score": "2100",
-  "name": "French UHD (DUSTiN)",
+  "trash_score": "2250",
+  "name": "[FR] UHD (DUSTiN)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "DUSTiN",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[\\[ .-]DUSTiN\\b"
+        "value": "DUSTiN\\b"
       }
     },
     {

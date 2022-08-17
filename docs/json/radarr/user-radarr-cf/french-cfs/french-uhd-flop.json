@@ -1,16 +1,16 @@
 {
   "trash_id": "14e94f90b941adcfe7f080e021cde512",
-  "trash_score": "2200",
-  "name": "French UHD (FLOP)",
+  "trash_score": "2300",
+  "name": "[FR] UHD (FLOP)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "FLOP",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[\\[ .-]FLOP\\b"
+        "value": "FLOP\\b"
       }
     },
     {
