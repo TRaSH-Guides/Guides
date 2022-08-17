@@ -5,7 +5,8 @@
       "custom_formats": ["docs/json/radarr"]
     },
     "sonarr": {
-      "release_profiles": ["docs/json/sonarr"]
+      "release_profiles": ["docs/json/sonarr/rp"],
+      "custom_formats": ["docs/json/sonarr/cf"]
     }
   }
 }
