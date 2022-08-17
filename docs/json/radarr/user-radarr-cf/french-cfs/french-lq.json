@@ -1,7 +1,7 @@
 {
   "trash_id": "ff4662c9d8da8c7fdcb80e11c8dbdfdf",
   "trash_score": "-10000",
-  "name": "French LQ",
+  "name": "[FR] LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -32,21 +32,12 @@
       }
     },
     {
-      "name": "Other reasons [1]",
       "implementation": "ReleaseTitleSpecification",
+      "name": "Other reasons",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](AlexandriZ|AlioZ|BossBaby|Champion9|DUB|FGT|FReeZeR|FUNKKY|GHOSTSPiRiT|GOBO2S|HD2|HuSh)\\b"
-      }
-    },
-    {
-      "name": "Other reasons [2]",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-](MACK4|MeMyl|METALLIKA|MGD|N3TFL1X|NoelMaison|nutella|Papaya|PULSE|SHARKS|SP3CTR|STVFRV|TSN999|TVPSLO|WINCHESTER|ZA)\\b"
+        "value": "(ARKRiL|BossBaby|Champion9|Copycomic|EASPORTS|EliteT|FUNKKY|FUNKY|GOBO2S|HD2|LNA3d|LTTM|MACK4|MeMyl|METALLIKA|MGD|Moorea81|Muxman|Mzsys|N3TFL1X|NoelMaison|nutella|Papaya|PIKACHU|PULSE|RELiC|SHARKS|SP3CTR|STVFRV|TeamSuW|TORRiD|TSN999|TVPSLO|Upmix|VIKY47|Wakanim|WINCHESTER|Wita)\\b"
       }
     }
   ]

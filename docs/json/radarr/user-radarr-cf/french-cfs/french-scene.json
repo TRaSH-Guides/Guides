@@ -1,7 +1,7 @@
 {
   "trash_id": "d9fa7bd4ed44c120816f33ed39992fb9",
-  "trash_score": "0",
-  "name": "French Scene",
+  "trash_score": "1500",
+  "name": "[FR] Scene Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -33,173 +33,173 @@
     },
     {
       "name": "D",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](D4KiD|DEAL|DUSS)\\b"
+        "value": "(D4KiD|DEAL|DiEBEX|DUSS)\\b"
       }
     },
     {
       "name": "E",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](EUBDS)\\b"
+        "value": "(EUBDS)\\b"
       }
     },
     {
       "name": "F",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](FHD|FiDELiO|FiDO|ForceBleue|F(or)?W(ard)?|FRENCHDEADPOOL2)\\b"
+        "value": "(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2)\\b"
       }
     },
     {
       "name": "G",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](GECKOS|GHOULS|Goatlove)\\b"
+        "value": "(GHOULS|GiMNAP|GLiMMER|Goatlove)\\b"
       }
     },
     {
       "name": "H",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](HAWAII|HOLiDAYS|HYBRiS)\\b"
-      }
-    },
-    {
-      "name": "I",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-](iDHD|iRLS)\\b"
+        "value": "(HERC|HYBRiS|HyDe)\\b"
       }
     },
     {
       "name": "J",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](JMT|JUSTICELEAGUE)\\b"
+        "value": "(JMT|JUSTICELEAGUE)\\b"
       }
     },
     {
       "name": "K",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](KAZETV|KOGi)\\b"
+        "value": "(KAZETV|KOGi)\\b"
       }
     },
     {
       "name": "L",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](LaoZi|LOST|LOUVRE)\\b"
+        "value": "(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST)\\b"
       }
     },
     {
       "name": "M",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](MAGiCAL|MELBA|METALLIKA|MUNSTER|MUxHD)\\b"
+        "value": "(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|MELBA|MORELAND|MUNSTER|MUxHD)\\b"
       }
     },
     {
       "name": "N",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](NERDHD|NERO|NOWiNHD|NrZ|NTK)\\b"
+        "value": "(NERDHD|NERO|NrZ|NTK)\\b"
       }
     },
     {
       "name": "O",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](OohLaLa)\\b"
+        "value": "(OBSTACLE|OohLaLa)\\b"
       }
     },
     {
       "name": "P",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](PANZeR|PFa|PiNKPANTERS|PKPTRS|PRiDEHD|PRODiGE|PRXHD|PURE|PUREWASTEOFBW)\\b"
+        "value": "(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)\\b"
       }
     },
     {
       "name": "R",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](Ryotox)\\b"
+        "value": "(ROUGH|Ryotox)\\b"
       }
     },
     {
       "name": "S",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](SCENE|SEiGHT|SESKAPiLE|SH0W|SHiNiGAMiUHD|SiGeRiS|SKYFiRE|SODAPOP|SOZER|SPINE|SPOiLER|STRINGERBELL)\\b"
+        "value": "(SAFETY|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL)\\b"
       }
     },
     {
       "name": "T",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](THENiGHTMAREiNHD|THiNK|THREESOME|Thursday13th|TiMELiNE|TSuNaMi)\\b"
+        "value": "(THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)\\b"
       }
     },
     {
       "name": "U",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](UKDHD|UKDTV|ULSHD|Ulysse)\\b"
+        "value": "(UKDHD|UKDTV|ULSHD|Ulysse|USURY)\\b"
       }
     },
     {
       "name": "V",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](VENUE|VoMiT)\\b"
+        "value": "(VENUE|VoMiT)\\b"
+      }
+    },
+    {
+      "name": "W",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(Wednesday29th)\\b"
       }
     },
     {
       "name": "Z",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](ZEST)\\b"
+        "value": "(ZEST)\\b"
       }
     }
   ]
