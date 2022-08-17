@@ -949,6 +949,26 @@
     x265 (720/1080p)
   </a>
   
+    <nav class="md-nav" aria-label="x265 (720/1080p)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsized-wrong-source" class="md-nav__link">
+    Microsized &amp; Wrong Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule" class="md-nav__link">
+    Golden Rule
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2998,6 +3018,26 @@
   <a href="#x265-7201080p" class="md-nav__link">
     x265 (720/1080p)
   </a>
+  
+    <nav class="md-nav" aria-label="x265 (720/1080p)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsized-wrong-source" class="md-nav__link">
+    Microsized &amp; Wrong Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule" class="md-nav__link">
+    Golden Rule
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -6978,7 +7018,30 @@ Several reasons why this is happening:</p>
 <p>This blocks/ignores 720/1080p(HD) releases that are encoded in x265</p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
 <div class="admonition fail">
-<p>--8&lt;-- "includes/docker/x265.md"</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>x265 is good for 4k stuff or 1080p if they used the the remuxes as source.
+If the media isn't source quality/remux, then there will be a loss of quality every time.
+Also, once you go x265, typically that file is done.
+It can't be changed to something else without a huge loss of quality.</p>
+<p>Something like 95% of video files are x264 and have much better direct play support.
+If you have more than a couple users,
+you will notice much more transcoding.
+Just depends on your priorities.</p>
+<p>So basically if you are storage poor and just need to save space, use x265.
+The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+If you want maximum compatibility and the option to change your files to something else later,
+then x264.
+It's all really dependent on specific situations for different people</p>
+</div>
+<h4 id="microsized-wrong-source">Microsized &amp; Wrong Source<a class="headerlink" href="#microsized-wrong-source" title="Permanent link"></a></h4>
+<p>It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.</p>
+<h4 id="golden-rule">Golden Rule<a class="headerlink" href="#golden-rule" title="Permanent link"></a></h4>
+<p>That's why I created my own golden rule.</p>
+<ul>
+<li>720/1080p =&gt; x264</li>
+<li>2160p/4k =&gt; x265</li>
+</ul>
 </div>
 </details>
 <details class="example">
