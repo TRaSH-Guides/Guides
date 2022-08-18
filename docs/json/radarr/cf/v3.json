@@ -1,16 +1,16 @@
 {
-  "trash_id": "9522e1290616bcf59553f0a801992019",
-  "trash_score": "2",
-  "name": "Anime v2",
+  "trash_id": "db92c27ba606996b146b57fbe6d09186",
+  "trash_score": "3",
+  "name": "v3",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "v2",
+      "name": "v3",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<=(\\d|\\[))(v2)\\b"
+        "value": "(?<=(\\d|\\[))(v3)\\b"
       }
     }
   ]
