@@ -13,6 +13,15 @@
       }
     },
     {
+      "name": "Japanese Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
       "name": "Not Japanese Only",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,

@@ -1,16 +1,16 @@
 {
-  "trash_id": "88cc8f4e89efc2da740e115b3cd054ab",
-  "trash_score": "10",
-  "name": "Anime VRV",
+  "trash_id": "273bd326df95955e1b6c26527d1df89b",
+  "trash_score": "1",
+  "name": "v1",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "VRV",
+      "name": "v1",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(vrv)\\b"
+        "value": "(\\d|\\[)(v1)\\b"
       }
     }
   ]
