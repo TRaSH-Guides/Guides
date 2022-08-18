@@ -43,7 +43,7 @@
 
 ??? example "docker-compose - [CLICK TO EXPAND]"
 
-    ```yml
+    ```yaml
     --8<-- "includes/docker/docker-compose.yml"
     ```
 
