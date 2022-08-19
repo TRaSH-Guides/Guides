@@ -130,7 +130,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### DD+ ATMOS
+### DDPlus ATMOS
+
+<sub>DDPlus = DD+</sub>
 
 ??? faq "DD+ ATMOS - [CLICK TO EXPAND]"
 
@@ -1080,6 +1082,21 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
+------
+
+### WEB Scene
+
+??? faq "WEB Scene - [CLICK TO EXPAND]"
+
+    One of the few scene groups that released quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
 ------
 
 ## Streaming Services
