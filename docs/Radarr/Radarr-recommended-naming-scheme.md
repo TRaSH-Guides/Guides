@@ -15,7 +15,7 @@ The Tokens not available in the release won't be used/shown.
 
 ## Standard Movie Format
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDB and TMDB IDs in filenames, if you don't need it or want it just remove `[imdb-{ImdbId}]`
+This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
 !!! caution "Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types."
 
@@ -23,22 +23,29 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     `{[MediaInfo VideoDynamicRangeType]}` with `{[MediaInfo VideoDynamicRange]}`
 
+!!! caution "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
+
+    If you're using a lower version or don't need it replace:
+
+    `{edition-{Edition Tags}}` with `{Edition Tags}`
+
 ```bash
-{Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}
+{Movie CleanTitle} {(Release Year)} {edition-{Edition Tags}} {imdb-{ImdbId}}{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}
 ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
-    `The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+    `The Movie Title (2010) {edition-Ultimate Extended Edition} {imdb-tt0066921}[IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
 ??? info "If you do Anime - [CLICK TO EXPAND]"
 
     ```bash
-    {Movie CleanTitle} {(Release Year)} {Edition Tags} [imdb-{ImdbId}]{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}[{Mediainfo VideoCodec}]{-Release Group}
+    {Movie CleanTitle} {(Release Year)} {edition-{Edition Tags}} {imdb-{ImdbId}}{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}[{Mediainfo VideoCodec}]{-Release Group}
     ```
 
 !!! attention ""
-    The officially supported format is `{imdb-{ImdbId}}` but plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` what you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"}, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
+
+    The officially supported format is `{imdb-{ImdbId}}` and this is required in Radarr `v4.2.2.6489` and above to make the tags conditional.  Plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` which you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"}, however Radarr will not treat these as conditional meaning a movie with no IMDb ID would have `(imdb-)` or `[imdb-]` in the name. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDb IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
 
 ------
 
@@ -85,7 +92,7 @@ RESULT:
 
     !!! quote "Quote from a developer"
 
-        TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb
+        TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb...
 
 ------
 
