@@ -24,11 +24,11 @@
     },
     {
       "name": "Not 2160p",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ResolutionSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(2160p)\\b"
+        "value": 2160
       }
     }
   ]
