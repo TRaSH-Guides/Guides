@@ -1,0 +1,14 @@
+{
+  "trash_id": "4aee45b0868229c4fbd8bad3e315f1d0",
+  "name": "MPEG2",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [{
+      "name": "MPEG2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+          "value": "MPEG[-.]?2"
+      }
+  }]
+}
