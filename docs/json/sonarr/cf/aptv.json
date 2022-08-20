@@ -1,0 +1,17 @@
+{
+  "trash_id": "7ea9e9c0fb7cfe4247ad8c915d289cfc",
+  "trash_score": "100",
+  "name": "APTV",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Apple TV+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(atvp|aptv|Apple TV\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

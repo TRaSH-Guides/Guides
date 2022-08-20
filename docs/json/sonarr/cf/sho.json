@@ -1,0 +1,17 @@
+{
+  "trash_id": "ae58039e1319178e6be73caab5c42166",
+  "trash_score": "95",
+  "name": "SHO",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "SHOWTIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

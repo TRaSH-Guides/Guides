@@ -1,0 +1,27 @@
+{
+  "name": "Anime - First release profile",
+  "trash_id": "d428eda85af1df8904b4bbe4fc2f537c",
+  "community_id": "Visorak",
+  "includePreferredWhenRenaming": true,
+  "required": [],
+  "preferred": [{
+      "score": 1000,
+      "terms": [
+        "/(uncut|unrated|uncensored|\\b(AT[-_. ]?X)\\b)/i"
+      ]
+    },
+    {
+      "score": 500,
+      "terms": [
+        "/(multi[ ._-]?audio)/i"
+      ]
+    },
+    {
+      "score": 0,
+      "terms": [
+        "/(dual[ ._-]?audio)/i"
+      ]
+    }
+  ],
+  "ignored": []
+}

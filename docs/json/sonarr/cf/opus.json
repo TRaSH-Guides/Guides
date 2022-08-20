@@ -1,0 +1,15 @@
+{
+  "trash_id": "28f6ef16d61e2d1adfce3156ed8257e3",
+  "trash_score": "250",
+  "name": "Opus",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [{
+      "name": "Opus",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+          "value": "\\bOPUS(\\b|\\d)"
+      }
+  }]
+}

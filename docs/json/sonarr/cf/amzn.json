@@ -1,0 +1,17 @@
+{
+  "trash_id": "d660701077794679fd59e8bdf4ce3a29",
+  "trash_score": "100",
+  "name": "AMZN",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Amazon",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

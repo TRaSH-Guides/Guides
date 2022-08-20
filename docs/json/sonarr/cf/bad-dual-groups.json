@@ -1,0 +1,179 @@
+{
+  "trash_id": "32b367365729d530ca1c124a0b180c64",
+  "trash_score": "-10000",
+  "name": "Bad Dual Groups",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "alfaHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-alfaHD)\\b"
+      }
+    },
+    {
+      "name": "BAT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-BAT)\\b"
+      }
+    },
+    {
+      "name": "BNd",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-BNd)\\b"
+      }
+    },
+    {
+      "name": "C.A.A",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-C\\.A\\.A)\\b"
+      }
+    },
+    {
+      "name": "Cory",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-Cory)\\b"
+      }
+    },
+    {
+      "name": "EXTREME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-EXTREME)\\b"
+      }
+    },
+    {
+      "name": "FF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-FF)\\b"
+      }
+    },
+    {
+      "name": "FOXX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-FOXX)\\b"
+      }
+    },
+    {
+      "name": "G4RiS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-G4RiS)\\b"
+      }
+    },
+    {
+      "name": "GUEIRA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-GUEIRA)\\b"
+      }
+    },
+    {
+      "name": "N3G4N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-N3G4N)\\b"
+      }
+    },
+    {
+      "name": "PD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-PD)\\b"
+      }
+    },
+    {
+      "name": "RiPER",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-RiPER)\\b"
+      }
+    },
+    {
+      "name": "RK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-RK)\\b"
+      }
+    },
+    {
+      "name": "SiGLA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-SiGLA)\\b"
+      }
+    },
+    {
+      "name": "Tars",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-Tars)\\b"
+      }
+    },
+    {
+      "name": "WTV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-WTV)\\b"
+      }
+    },
+    {
+      "name": "Yatogam1",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-Yatogam1)\\b"
+      }
+    },
+    {
+      "name": "YusukeFLA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-YusukeFLA)\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "trash_id": "f6cce30f1733d5c8194222a7507909bb",
+  "trash_score": "85",
+  "name": "HULU",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Hulu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(hulu)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

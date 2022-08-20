@@ -1,0 +1,17 @@
+{
+  "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
+  "trash_score": "75",
+  "name": "PMTP",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Paramount+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(pmtp|Paramount\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

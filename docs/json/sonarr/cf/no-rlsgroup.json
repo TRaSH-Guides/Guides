@@ -1,0 +1,17 @@
+{
+  "trash_id": "82d40da2bc6923f41e14394075dd4b03",
+  "trash_score": "-10000",
+  "name": "No-RlsGroup",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "No Parsed Group",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "."
+      }
+    }
+  ]
+}
