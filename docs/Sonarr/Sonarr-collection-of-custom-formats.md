@@ -684,7 +684,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## Movie Versions
+## Series Versions
 
 ------
 
