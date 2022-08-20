@@ -1,0 +1,161 @@
+{
+  "trash_id": "545a76b14ddc349b8b185a6344e28b04",
+  "trash_score": "1000",
+  "name": "Anime BD Tier 05 (Remuxes)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Bluray Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "ANThELIa",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ANThELIa)\\b"
+      }
+    },
+    {
+      "name": "AP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AP)\\b"
+      }
+    },
+    {
+      "name": "BluDragon",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BluDragon)\\b"
+      }
+    },
+    {
+      "name": "D4C",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(D4C)\\b"
+      }
+    },
+    {
+      "name": "Dragon-Releases",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Dragon-Releases)\\b"
+      }
+    },
+    {
+      "name": "E.N.D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(E[.-]N[.-]D)\\b"
+      }
+    },
+    {
+      "name": "KAWAiREMUX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KAWAiREMUX)\\b"
+      }
+    },
+    {
+      "name": "MKVULTRA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MKVULTRA)\\b"
+      }
+    },
+    {
+      "name": "Raizel",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Raizel)\\b"
+      }
+    },
+    {
+      "name": "REVO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(REVO)\\b"
+      }
+    },
+    {
+      "name": "Spark",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Spark\\]|-Spark\\b"
+      }
+    },
+    {
+      "name": "SRLS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SRLS)\\b"
+      }
+    },
+    {
+      "name": "TTGA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TTGA)\\b"
+      }
+    },
+    {
+      "name": "ZR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZR)\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
+  "trash_score": "-10000",
+  "name": "Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "CAKES",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CAKES)\\b"
+      }
+    },
+    {
+      "name": "GGEZ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GGEZ)\\b"
+      }
+    },
+    {
+      "name": "GGWP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GGWP)\\b"
+      }
+    },
+    {
+      "name": "GLHF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GLHF)\\b"
+      }
+    },
+    {
+      "name": "GOSSIP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GOSSIP)\\b"
+      }
+    },
+    {
+      "name": "KOGI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KOGI)\\b"
+      }
+    },
+    {
+      "name": "Scene naming",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*([_. ]WEB[_. ]))"
+      }
+    },
+    {
+      "name": "Not DEFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(DEFLATE)\\b"
+      }
+    },
+    {
+      "name": "Not INFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(INFLATE)\\b"
+      }
+    }
+  ]
+}

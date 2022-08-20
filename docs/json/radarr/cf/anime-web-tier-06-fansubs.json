@@ -1,0 +1,80 @@
+{
+  "trash_id": "a786fbc0eae05afe3bb51aee3c83a9d4",
+  "trash_score": "100",
+  "name": "Anime Web Tier 06 (FanSubs)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "Asenshi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Asenshi)\\b"
+      }
+    },
+    {
+      "name": "Chihiro",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Chihiro\\]|-Chihiro\\b"
+      }
+    },
+    {
+      "name": "Commie",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Commie)\\b"
+      }
+    },
+    {
+      "name": "DameDesuYo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DameDesuYo)\\b"
+      }
+    },
+    {
+      "name": "Doki",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Doki\\]|-Doki\\b"
+      }
+    },
+    {
+      "name": "Tsundere",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Tsundere\\]|-Tsundere\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "trash_id": "1656adc6d7bb2c8cca6acfb6592db421",
+  "trash_score": "85",
+  "name": "PCOK",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Peacock TV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(pcok|Peacock TV)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

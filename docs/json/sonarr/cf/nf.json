@@ -1,0 +1,17 @@
+{
+  "trash_id": "d34870697c9db575f17700212167be23",
+  "trash_score": "90",
+  "name": "NF",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Netflix",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(nf|netflix)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
+  "trash_score": "-10000",
+  "name": "Obfuscated",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "4P",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-4P\\b"
+      }
+    },
+    {
+      "name": "4Planet",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-4Planet\\b"
+      }
+    },
+    {
+      "name": "AsRequested",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-AsRequested\\b"
+      }
+    },
+    {
+      "name": "BUYMORE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-BUYMORE\\b"
+      }
+    },
+    {
+      "name": "Chamele0n",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-Chamele0n\\b"
+      }
+    },
+    {
+      "name": "GEROV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-GEROV\\b"
+      }
+    },
+    {
+      "name": "iNC0GNiTO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-iNC0GNiTO\\b"
+      }
+    },
+    {
+      "name": "NZBGeek",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-NZBGeek\\b"
+      }
+    },
+    {
+      "name": "Obfuscated",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-Obfuscated\\b"
+      }
+    },
+    {
+      "name": "postbot",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-postbot\\b"
+      }
+    },
+    {
+      "name": "Rakuv",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-Rakuv\\b"
+      }
+    },
+    {
+      "name": "Scrambled",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Scrambled\\b"
+      }
+    },
+    {
+      "name": "WhiteRev",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-WhiteRev\\b"
+      }
+    },
+    {
+      "name": "xpost",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-xpost\\b"
+      }
+    },
+    {
+      "name": "WRTEAM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-WRTEAM\\b"
+      }
+    },
+    {
+      "name": "CAPTCHA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-CAPTCHA\\b"
+      }
+    },
+    {
+      "name": "_nzb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "_nzb\\b"
+      }
+    }
+  ]
+}

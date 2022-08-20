@@ -1,0 +1,25 @@
+{
+  "trash_id": "3a4127d8aa781b44120d907f2cd62627",
+  "trash_score": "100",
+  "name": "Hybrid",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [{
+          "name": "Hybrid",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": true,
+          "fields": {
+              "value": "\\bhybrid(\\b|\\d)"
+          }
+      },
+      {
+          "name": "Not Hybrid Release Group",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": true,
+          "required": true,
+          "fields": {
+              "value": "-HYBRID"
+          }
+      }
+  ]
+}

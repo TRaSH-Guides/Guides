@@ -1,0 +1,17 @@
+{
+  "trash_id": "89358767a60cc28783cdc3d0be9388a4",
+  "trash_score": "90",
+  "name": "DSNP",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Disney+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}
