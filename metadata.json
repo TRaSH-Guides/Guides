@@ -2,7 +2,7 @@
   "$schema": "metadata.schema.json",
   "json_paths": {
     "radarr": {
-      "custom_formats": ["docs/json/radarr"]
+      "custom_formats": ["docs/json/radarr/cf"]
     },
     "sonarr": {
       "release_profiles": ["docs/json/sonarr/rp"],
