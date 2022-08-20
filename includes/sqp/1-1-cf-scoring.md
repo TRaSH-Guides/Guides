@@ -3,20 +3,20 @@
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                             | Score                                   | Trash ID                             |
     | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
-    | [{{ radarr['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['hq-webdl']['trash_score'] }} | {{ radarr['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                       | {{ radarr['hq-remux']['trash_id'] }} |
-    | [{{ radarr['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                       | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 ??? summary "BHDStudio - [CLICK TO EXPAND]"
     | Custom Format                                                                                                               | Score                                    | Trash ID                              |
     | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
-    | [{{ radarr['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json) | {{ radarr['bhdstudio']['trash_score'] }} | {{ radarr['bhdstudio']['trash_id'] }} |
+    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json) | {{ radarr['cf']['bhdstudio']['trash_score'] }} | {{ radarr['cf']['bhdstudio']['trash_id'] }} |
 
 ??? summary "Resolution - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                | Trash ID                          |
     | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | --------------------------------- |
-    | [{{ radarr['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json)   | {{ radarr['720p']['trash_score'] }}  | {{ radarr['720p']['trash_id'] }}  |
-    | [{{ radarr['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json) | {{ radarr['1080p']['trash_score'] }} | {{ radarr['1080p']['trash_id'] }} |
+    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json)   | {{ radarr['cf']['720p']['trash_score'] }}  | {{ radarr['cf']['720p']['trash_id'] }}  |
+    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json) | {{ radarr['cf']['1080p']['trash_score'] }} | {{ radarr['cf']['1080p']['trash_id'] }} |
 
 {! include-markdown "../../includes/cf/misc.md" !}
 <!-- --8<-- "includes/cf/misc.md" -->

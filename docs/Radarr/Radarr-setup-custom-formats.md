@@ -137,9 +137,9 @@ For this Quality Profile we're going to make use of the following Custom Formats
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                             | Score                                   | Trash ID                             |
     | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
-    | [{{ radarr['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['hq-webdl']['trash_score'] }} | {{ radarr['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                       | {{ radarr['hq-remux']['trash_id'] }} |
-    | [{{ radarr['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | {{ radarr['hq']['trash_score'] }}       | {{ radarr['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                       | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | {{ radarr['cf']['hq']['trash_score'] }}       | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.
 
@@ -194,9 +194,9 @@ For this Quality Profile we're going to make use of the following Custom Formats
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                             | Score                                   | Trash ID                             |
     | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
-    | [{{ radarr['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['hq-webdl']['trash_score'] }} | {{ radarr['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['hq-remux']['trash_score'] }} | {{ radarr['hq-remux']['trash_id'] }} |
-    | [{{ radarr['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 Use the following main settings in your profile.
 
@@ -245,9 +245,9 @@ For this Quality Profile we're going to make use of the following Custom Formats
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                             | Score                                   | Trash ID                             |
     | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
-    | [{{ radarr['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['hq-webdl']['trash_score'] }} | {{ radarr['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['hq-remux']['trash_score'] }} | {{ radarr['hq-remux']['trash_id'] }} |
-    | [{{ radarr['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 Use the following main settings in your profile.
 
