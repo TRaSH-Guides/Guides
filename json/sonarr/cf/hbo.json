@@ -1,0 +1,17 @@
+{
+  "trash_id": "7a235133c87f7da4c8cccceca7e3c7a6",
+  "trash_score": "75",
+  "name": "HBO",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "HBO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(hbo)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

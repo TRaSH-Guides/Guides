@@ -1,0 +1,17 @@
+{
+  "trash_id": "c30d2958827d1867c73318a5a2957eb1",
+  "trash_score": "75",
+  "name": "RED",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "YouTube Red",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(red|youtube red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

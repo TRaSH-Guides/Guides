@@ -1,0 +1,62 @@
+{
+  "trash_id": "9c14d194486c4014d422adc64092d794",
+  "trash_score": "-10000",
+  "name": "Dubs Only",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Dubbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+      }
+    },
+    {
+      "name": "Golumpa",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Golumpa)\\b"
+      }
+    },
+    {
+      "name": "KaiDubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KaiDubs)\\b"
+      }
+    },
+    {
+      "name": "KamiFS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KamiFS)\\b"
+      }
+    },
+    {
+      "name": "KS (Not Dual Audio)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
+      }
+    },
+    {
+      "name": "torenter69",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(torenter69)\\b"
+      }
+    }
+  ]
+}

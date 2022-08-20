@@ -1,0 +1,17 @@
+{
+  "trash_id": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
+  "trash_score": "10",
+  "name": "VRV",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "VRV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(vrv)\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "trash_id": "06b6542a47037d1e33b15aa3677c2365",
+  "trash_score": "-10000",
+  "name": "Anime Raws",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Beatrice-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Beatrice[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Daddy-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Daddy[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Iriza-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Iriza[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Kawaiika-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Kawaiika[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "km",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[km\\]|-km\\b "
+      }
+    },
+    {
+      "name": "LowPower-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "LowPower[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "NC-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NC[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "neko-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "neko[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Ohys-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Ohys[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Pandoratv-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pandoratv[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Raws-Maji",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Raws-Maji)\\b"
+      }
+    },
+    {
+      "name": "Scryous-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Scryous[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Seicher",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Seicher)\\b"
+      }
+    }
+  ]
+}

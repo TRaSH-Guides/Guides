@@ -1,0 +1,15 @@
+{
+  "trash_id": "d7c747094a7c65f4c2de083c24899e8b",
+  "trash_score": "1",
+  "name": "FreeLeech",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [{
+      "name": "FreeLeech",
+      "implementation": "IndexerFlagSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+          "value": 1
+      }
+  }]
+}

@@ -1,0 +1,35 @@
+{
+  "trash_id": "5b1a5d3df27396373b4ce236fc337eaa",
+  "trash_score": "400",
+  "name": "Anime Web Tier 03 (SubsPlease)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "SubsPlease",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SubsPlease)\\b"
+      }
+    }
+  ]
+}

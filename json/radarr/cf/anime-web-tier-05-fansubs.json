@@ -1,0 +1,62 @@
+{
+  "trash_id": "22d953bbe897857b517928f3652b8dd3",
+  "trash_score": "200",
+  "name": "Anime Web Tier 05 (FanSubs)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "9volt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(9volt)\\b"
+      }
+    },
+    {
+      "name": "GJM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GJM)\\b"
+      }
+    },
+    {
+      "name": "Kaleido",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Kaleido)\\b"
+      }
+    },
+    {
+      "name": "Kantai",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Kantai\\]|-Kantai\\b"
+      }
+    }
+  ]
+}

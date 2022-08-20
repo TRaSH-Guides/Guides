@@ -1,0 +1,107 @@
+{
+  "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
+  "trash_score": "-10000",
+  "name": "LQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BRiNK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bBRiNK\\b"
+      }
+    },
+    {
+      "name": "CHX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bCHX\\b"
+      }
+    },
+    {
+      "name": "EVO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bEVO\\b"
+      }
+    },
+    {
+      "name": "GHOSTS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bGHOSTS\\b"
+      }
+    },
+    {
+      "name": "NERO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNERO\\b"
+      }
+    },
+    {
+      "name": "nhanc3",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bnhanc3\\b"
+      }
+    },
+    {
+      "name": "Pahe",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pahe\\.(ph|in)\\b"
+      }
+    },
+    {
+      "name": "TBS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bTBS\\b"
+      }
+    },
+    {
+      "name": "VIDEOHOLE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVIDEOHOLE\\b"
+      }
+    },
+    {
+      "name": "worldmkv",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bworldmkv\\b"
+      }
+    },
+    {
+      "name": "XLF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bXLF\\b"
+      }
+    }
+  ]
+}
