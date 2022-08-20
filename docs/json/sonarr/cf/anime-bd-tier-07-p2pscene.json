@@ -50,15 +50,6 @@
       }
     },
     {
-      "name": "BMF",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BMF)\\b"
-      }
-    },
-    {
       "name": "CBM",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
