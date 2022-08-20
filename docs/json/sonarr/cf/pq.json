@@ -1,5 +1,5 @@
 {
-  "trash_id": "xxx",
+  "trash_id": "2a7e3be05d3861d6df7171ec74cad727",
   "trash_score": "500",
   "name": "PQ",
   "includeCustomFormatWhenRenaming": false,
@@ -23,21 +23,21 @@
       }
     },
     {
-      "name": "Not HDR10+",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bHDR10Plus|HDR10(\\b\\+)"
-      }
-    },
-    {
       "name": "Not HDR10",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
         "value": "\\bHDR10(\\b[^+|Plus])"
+      }
+    },
+    {
+      "name": "Not HDR10+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bHDR10Plus|HDR10(\\b\\+)"
       }
     },
     {
