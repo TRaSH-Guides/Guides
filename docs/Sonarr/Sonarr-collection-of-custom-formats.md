@@ -64,13 +64,13 @@ I also made 3 guides related to this one.
 | Misc                            | Anime                                                                       | Anime                                                                 | Anime                     |
 | ------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------- |
 | [Repack/Proper](#repack-proper) | [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Raws](#anime-raws)                                             | [Uncensored](#uncensored) |
-| [Repack2](#repack2)             | [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime LQ Groups](#anime-lq-groups)                                   | [v0](#v0)                 |
-| [Multi](#multi)                 | [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v1](v1)                  |
-| [x264](#x264)                   | [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v2](#v2)                 |
-| [x265](#x265)                   | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v3](#v3)                 |
-| [MPEG2](#mpeg2)                 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v4](#v4)                 |
-| [FreeLeech](#freeleech)         | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [VRV](#vrv)               |
-|                                 | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | &nbsp;                    |
+| [Repack v2](#repack-v2)         | [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime LQ Groups](#anime-lq-groups)                                   | [v0](#v0)                 |
+| [Repack v3](#repack-v3)         | [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v1](v1)                  |
+| [Multi](#multi)                 | [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v2](#v2)                 |
+| [x264](#x264)                   | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v3](#v3)                 |
+| [x265](#x265)                   | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v4](#v4)                 |
+| [MPEG2](#mpeg2)                 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [VRV](#vrv)               |
+| [FreeLeech](#freeleech)         | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | &nbsp;                    |
 |                                 | [Anime Dual Audio](#anime-dual-audio)                                       | [Dubs Only](#dubs-only)                                               | &nbsp;                    |
 
 ## Audio Advanced
@@ -933,12 +933,24 @@ I also made 3 guides related to this one.
 
 ------
 
-### Repack2
+### Repack v2
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack2.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v2.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Repack v3
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v3.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1097,6 +1109,7 @@ I also made 3 guides related to this one.
     ```
 
 <sub><sup>[TOP](#index)</sup>
+
 ------
 
 ## Streaming Services
