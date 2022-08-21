@@ -4,12 +4,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "x265",
+      "name": "x|h265",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
       }
     },
     {

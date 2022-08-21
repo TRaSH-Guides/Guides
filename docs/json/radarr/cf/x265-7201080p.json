@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[xh][ .]?265|\\bHEVC(\\b|\\d)"
+        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
       }
     },
     {
