@@ -92,7 +92,7 @@ RESULT:
 
     !!! quote "Quote from a developer"
 
-        TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb...
+        TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb.
 
 ------
 
