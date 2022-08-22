@@ -1523,7 +1523,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 07 (P2P/Scene)
 
 ??? faq "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
-    Description placeholder
+    Known P2P and Scene Anime groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1538,7 +1538,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 08 (Mini Encodes)
 
 ??? faq "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
-    Description placeholder
+    Know groups that do mini encodes
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1583,7 +1583,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 03 (SubsPlease)
 
 ??? faq "Anime Web Tier 03 (SubsPlease) - [CLICK TO EXPAND]"
-    Description placeholder
+    SubsPlease group
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1643,7 +1643,7 @@ I also made 3 guides related to this one.
 ### Anime Raws
 
 ??? faq "Anime Raws - [CLICK TO EXPAND]"
-    Description placeholder
+    A collection of know groups that release raws
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1658,7 +1658,7 @@ I also made 3 guides related to this one.
 ### Anime LQ Groups
 
 ??? faq "Anime LQ Groups - [CLICK TO EXPAND]"
-    Description placeholder
+    A collection of known Low Quality groups.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1673,7 +1673,7 @@ I also made 3 guides related to this one.
 ### Uncensored
 
 ??? faq "Uncensored - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that are uncensored
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1775,12 +1775,10 @@ I also made 3 guides related to this one.
 
 ------
 
-------
-
 ### 10bit
 
 ??? faq "10bit - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that are 10bit
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1795,7 +1793,7 @@ I also made 3 guides related to this one.
 ### Anime Dual Audio
 
 ??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that have Dual Audio
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1810,7 +1808,7 @@ I also made 3 guides related to this one.
 ### Dubs Only
 
 ??? faq "Dubs Only - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that only have Dubs
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
