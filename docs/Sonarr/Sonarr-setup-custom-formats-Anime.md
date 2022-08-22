@@ -1,5 +1,8 @@
 # How to setup Custom Formats (Anime)
 
+!!! attention
+    You must be running Sonarr V4 to be able to use this setup
+
 !!! note
     This guide is created and maintained by "Update Later"
 
@@ -11,65 +14,26 @@
 
     There are a few settings which make life a lot easier when tracking down and keeping certain information for your Anime
 
-### Suggested naming scheme
+### Recommended naming scheme
 
-#### Anime Episode Format
+For the Recommended naming scheme please go [HERE](/sonarr/sonarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}
 
-Has all necessary information and a little extra if you needed to rebuild.
+---
 
-```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
-```
+## Quality Settings
 
-??? summary "RESULTS:"
-
-    Single Episode:
-
-    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][FLAC][JA]-RlsGrp`
-
-    Multi Episode:
-
-    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [AMZN WEBDL-1080p v2][HDR][10bit][x264][DTS 5.1][FLAC][JA]-RlsGrp`
-
-#### Series Folder Format
-
-```bash
-{Series TitleYear}
-```
-
-RESULT:
-
-`The Series Title! (2010)`
-
-#### Season Folder Format
-
-```bash
-Season {season:00}
-```
-
-RESULT:
-
-`Season 01`
-
-#### Multi-Episode Style
-
-```bash
-Prefixed Range
-```
-
-RESULT:
-
-![results](images/cfa-multiepstyle.png)
-
-??? success "Example"
-
-    ![!Example image of above](images/cfa-mediamanage.png)
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/sonarr/sonarr-quality-settings-file-size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## Quality Profile
 
-We to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
+We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
+
+Go to `Settings` => `Profiles`
+
+??? check "example - [CLICK TO EXPAND]"
+    ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 ![!cfa-mergedqualities](images/cfa-mergedqualities.png)
 
@@ -88,10 +52,21 @@ After this has been done your profile should look like below
 ## Custom Formats
 
 !!! note
-    We're going to make use of the below custom formats.
+    We're going to make use of the below custom formats. See [HERE](/sonarr/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
 {! include-markdown "../../includes/cf/anime.md" !}
 <!-- --8<-- "includes/cf/anime.md" -->
+
+The scoring that has been set is the recommended scoring however some of the CFs are optional depending on what you prefer.
+`Anime Dual Audio`, `Uncensored` and `10bit` can be given scores if you want to prefer content with these attributes
+
+Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the Remux-1080p - Anime profile that was setup before
+
+??? check "example - [CLICK TO EXPAND]"
+    ![!cf-settings-profiles](images/cf-settings-profiles.png)
+
+In the profile enter the scores as per the above table in this section
+![!cfa-scoring](images/cfa-scoring.png)
 
 ### Acknowledgements
 
