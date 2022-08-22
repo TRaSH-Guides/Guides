@@ -86,7 +86,8 @@ I also made 3 guides related to this one.
 | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v3](#v3)                             |
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [v4](#v4)                             |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [VRV](#vrv)                           |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [10bit](#10bit)                       |
+|                                                                             |                                                                       | [Anime Dual Audio](#anime-dual-audio) |
 |                                                                             |                                                                       | [Dubs Only](#dubs-only)               |
 
 ## Audio Advanced
@@ -1768,6 +1769,23 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+------
+
+### 10bit
+
+??? faq "10bit - [CLICK TO EXPAND]"
+    Description placeholder
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10bit.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
