@@ -2,7 +2,7 @@
 
 So what's the best way to setup the Custom Profiles and which one to use with which scores?
 
-There isn't a best score setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
+There isn't a best setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.
 
@@ -22,16 +22,15 @@ Select the profile that you use/prefer.
 
 ![!cf-quality-profiles](images/cf-quality-profiles.png)
 
-!!! info "Radarr Custom Formats can be set per profile and isn't global"
+!!! info "Sonarr Custom Formats can be set per profile and isn't global"
 
 ![!cf-profile-selected](images/cf-profile-selected.png)
 
 1. Profile name.
-1. Allow upgrades. Radarr will stop upgrading quality once (3) is met.
+1. Allow upgrades. Sonarr will stop upgrading quality once (3) is met.
 1. Upgrade until the selected quality.
 1. The `Minimum Custom Format Score` allowed to download. [More Info](#minimum-custom-format-score)
 1. Keep upgrading Custom Format until this score is reached. (setting this to `0` means no upgrades will happen based on Custom Formats)
-1. Your preferred language profile for your releases. (Original is recommended)
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
@@ -73,7 +72,9 @@ Personally, I would only add the Custom Formats that do what you actually prefer
 
 Here I will explain how to make the most use of Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
-All these examples make use of the [Collection of Custom Formats](/Sonarr/Sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}
+All these examples make use of the [Collection of Custom Formats](/Sonarr/Sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+
+All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.
 
 ------
 
@@ -82,16 +83,6 @@ All these examples make use of the [Collection of Custom Formats](/Sonarr/Sonarr
 This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
-
-------
-
-#### Prefer Advanced Audio
-
-Lets say you prefer HD audio (with object metadata)
-
-In this example I have lossy Atmos over lossless DTS because the object metadata matters more to me over lossy vs lossless.
-
-{! include-markdown "../../includes/cf/sonarr-audio.md" !}
 
 ------
 
@@ -132,17 +123,16 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 Use the following main settings in your profile.
 
-![!cf-profile-remux1080](images/cf-profile-remux1080.png)
+![!cf-profile-web1080](images/cf-profile-web1080.png)
 
-!!! fail ""
+!!! info ""
 
-    Make sure you don't check the BR-DISK. The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL
+    For some older shows you might want to enable the `WEB 720p` or even the `HDTV 1080p`.
 
-??? example "The following workflow will be applied:"
+!!! example "The following workflow will be applied:"
 
-    - It will download WEB-DL 1080p for the streaming movies you see more often lately.
-    - It will upgrade till Remux-1080p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.
+    - It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade till `Upgrade Until`)
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
@@ -171,17 +161,18 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 Use the following main settings in your profile.
 
-![!cf-profile-remux2160](images/cf-profile-remux2160.png)
+![!cf-profile-web2160](images/cf-profile-web2160.png)
 
-!!! fail ""
+!!! info ""
 
-    Make sure you don't check the BR-DISK.
+    The reason why I have WEB 1080p merged with the 2160p is because some NF releases won't be released as 4k, but I still want to have DV/HDR releases.
+    If you want to do the same make sure you replace [x265 (HD)](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} with [x265 (no HDR/DV)](/Sonarr/Sonarr-collection-of-custom-formats/#x265-no-hdrdv){:target="_blank" rel="noopener noreferrer"}.
 
-??? example "The following workflow will be applied:"
+!!! example "The following workflow will be applied:"
 
-    - It will download WEB-DL 2160p for the streaming movies you see more often lately.
-    - It will upgrade to Remux-2160p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.
+    - It will download WEB-1080p with HDR/DV.
+    - It will upgrade to WEB-2160p when available.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
@@ -197,7 +188,7 @@ Use the following main settings in your profile.
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repack-proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/Sonarr-collection-of-custom-formats/#repack-proper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -246,7 +237,7 @@ Use the following main settings in your profile.
 
 ## Thanks
 
-A big Thanks to [rg9400](https://github.com/rg9400) for providing me with info needed to create the Tips section.
+Special thanks to everyone that helped testing and creating these Custom Formats.
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
