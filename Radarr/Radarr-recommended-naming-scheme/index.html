@@ -2082,25 +2082,30 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
 <h2 id="standard-movie-format">Standard Movie Format<a class="headerlink" href="#standard-movie-format" title="Permanent link"></a></h2>
-<p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517">New Plex Agent</a> that now supports IMDB and TMDB IDs in filenames, if you don't need it or want it just remove <code>[imdb-{ImdbId}]</code></p>
+<p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517">New Plex Agent</a> that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove <code>{imdb-{ImdbId}}</code></p>
 <div class="admonition caution">
 <p class="admonition-title">Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types.</p>
 <p>If you're using a lower version replace:</p>
 <p><code>{[MediaInfo VideoDynamicRangeType]}</code> with <code>{[MediaInfo VideoDynamicRange]}</code></p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}][{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
+<div class="admonition caution">
+<p class="admonition-title">Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming.</p>
+<p>If you're using a lower version or don't need it replace:</p>
+<p><code>{edition-{Edition Tags}}</code> with <code>{Edition Tags}</code></p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>imdb-<span class="o">{</span>ImdbId<span class="o">}}</span> <span class="o">{</span>edition-<span class="o">{</span>Edition Tags<span class="o">}}</span> <span class="o">{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}][{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
 <summary>RESULTS: - [CLICK TO EXPAND]</summary>
-<p><code>The Movie Title (2010) Ultimate Extended Edition [imdb-tt0066921][IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE</code></p>
+<p><code>The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE</code></p>
 </details>
 <details class="info">
 <summary>If you do Anime - [CLICK TO EXPAND]</summary>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>Edition Tags<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}[{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Movie CleanTitle<span class="o">}</span> <span class="o">{(</span>Release Year<span class="o">)}</span> <span class="o">{</span>imdb-<span class="o">{</span>ImdbId<span class="o">}}</span> <span class="o">{</span>edition-<span class="o">{</span>Edition Tags<span class="o">}}</span> <span class="o">{[</span>Custom Formats<span class="o">]}{[</span>Quality Full<span class="o">]}{[</span>MediaInfo 3D<span class="o">]}{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}[{</span>Mediainfo VideoCodec<span class="o">}]{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 </details>
 <div class="admonition attention">
-<p>The officially supported format is <code>{imdb-{ImdbId}}</code> but plex also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code> what you can read <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517" rel="noopener noreferrer" target="_blank">here</a>, though the above should work for now. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDB IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.</p>
+<p>The officially supported format is <code>{imdb-{ImdbId}}</code> and this is required in Radarr <code>v4.2.2.6489</code> and above to make the tags conditional.  Plex also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code> which you can read <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517" rel="noopener noreferrer" target="_blank">here</a>, however Radarr will not treat these as conditional meaning a movie with no IMDb ID would have <code>(imdb-)</code> or <code>[imdb-]</code> in the name. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDb IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.</p>
 </div>
 <hr />
 <h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link"></a></h2>
@@ -2128,7 +2133,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p><strong>Radarr supports IMDb ID and TMDb ID in the folder name.</strong></p>
 <div class="admonition quote">
 <p class="admonition-title">Quote from a developer</p>
-<p>TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb</p>
+<p>TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb.</p>
 </div>
 </div>
 <hr />
@@ -2150,7 +2155,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 23, 2022 17:11:21</span>
       
     
   </small>
