@@ -10,13 +10,13 @@
 ??? summary "BHDStudio - [CLICK TO EXPAND]"
     | Custom Format                                                                                                               | Score                                    | Trash ID                              |
     | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------- |
-    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json) | {{ radarr['cf']['bhdstudio']['trash_score'] }} | {{ radarr['cf']['bhdstudio']['trash_id'] }} |
+    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) | {{ radarr['cf']['bhdstudio']['trash_score'] }} | {{ radarr['cf']['bhdstudio']['trash_id'] }} |
 
 ??? summary "Resolution - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                | Trash ID                          |
     | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | --------------------------------- |
-    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json)   | {{ radarr['cf']['720p']['trash_score'] }}  | {{ radarr['cf']['720p']['trash_id'] }}  |
-    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json) | {{ radarr['cf']['1080p']['trash_score'] }} | {{ radarr['cf']['1080p']['trash_id'] }} |
+    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json)   | {{ radarr['cf']['720p']['trash_score'] }}  | {{ radarr['cf']['720p']['trash_id'] }}  |
+    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/1080p.json) | {{ radarr['cf']['1080p']['trash_score'] }} | {{ radarr['cf']['1080p']['trash_id'] }} |
 
 {! include-markdown "../../includes/cf/misc.md" !}
 <!-- --8<-- "includes/cf/misc.md" -->

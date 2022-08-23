@@ -64,16 +64,16 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                            | &nbsp; | &nbsp; | &nbsp; |
-| ------------------------------- | ------ | ------ | ------ |
-| [FreeLeech](#freeleech)         | &nbsp; | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                 | &nbsp; | &nbsp; | &nbsp; |
-| [Multi](#multi)                 | &nbsp; | &nbsp; | &nbsp; |
-| [Repack/Proper](#repack-proper) | &nbsp; | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)         | &nbsp; | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)         | &nbsp; | &nbsp; | &nbsp; |
-| [x264](#x264)                   | &nbsp; | &nbsp; | &nbsp; |
-| [x265](#x265)                   | &nbsp; | &nbsp; | &nbsp; |
+| Misc                            | Misc                         | &nbsp; | &nbsp; |
+| ------------------------------- | ---------------------------- | ------ | ------ |
+| [FreeLeech](#freeleech)         | [Season Packs](#season-pack) | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                 | [Scene](#scene)              | &nbsp; | &nbsp; |
+| [Multi](#multi)                 | &nbsp;                       | &nbsp; | &nbsp; |
+| [Repack/Proper](#repack-proper) | &nbsp;                       | &nbsp; | &nbsp; |
+| [Repack v2](#repack-v2)         | &nbsp;                       | &nbsp; | &nbsp; |
+| [Repack v3](#repack-v3)         | &nbsp;                       | &nbsp; | &nbsp; |
+| [x264](#x264)                   | &nbsp;                       | &nbsp; | &nbsp; |
+| [x265](#x265)                   | &nbsp;                       | &nbsp; | &nbsp; |
 
 ------
 
@@ -684,7 +684,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## Movie Versions
+## Series Versions
 
 ------
 
@@ -1004,6 +1004,47 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Season Pack
+
+??? faq "Season Pack - [CLICK TO EXPAND]"
+
+    This Custom Format can be used depending if you prefer or not prefer a season pack
+
+    - Give it a score of `10` if you prefer a season pack.
+    - Give it a score of `-10000` if you don't prefer a season pack.
+    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.
+    - keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
+
+    !!! danger "WARNING"
+        - This Custom Format could result in a download loop :bangbang:
+        - This will upgrade also your already downloaded single episodes :bangbang:
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Scene
+
+??? faq "Scene - [CLICK TO EXPAND]"
+
+    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

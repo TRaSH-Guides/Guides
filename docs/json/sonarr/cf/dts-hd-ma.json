@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dts[ .-]?(ma\\b|hd[ .-]?ma\\b|hd)(?!china|r|maniacs)"
+        "value": "\\b(dts[-_. ]?(ma|hd[-_. ]?ma|xll))\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "dts[-. ]?x(?!\\d)"
+        "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
       }
     },
     {
