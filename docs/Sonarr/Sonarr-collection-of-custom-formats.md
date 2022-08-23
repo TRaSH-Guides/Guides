@@ -2,7 +2,7 @@
 
 Here I will try to list a collection of the most needed and commonly used Custom Formats.
 These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
+Special thanks to everyone that helped testing and creating these Custom Formats.
 
 With Sonarr V4+, Custom Formats are much more advanced/powerful than with the release profiles, although this also means a Custom Format is much more complicated to setup.
 
@@ -805,6 +805,10 @@ I also made 3 guides related to this one.
     !!! fail ""
         --8<-- "includes/docker/x265.md"
 
+            !!! Danger
+
+                Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-no-hdrdv)
+
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
@@ -829,7 +833,7 @@ I also made 3 guides related to this one.
 
     !!! Danger
 
-        Don't use this together with the following Custom Format [x265 (HD)](#x265-h)
+        Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
