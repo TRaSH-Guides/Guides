@@ -16,7 +16,7 @@
 
 ### Recommended naming scheme
 
-For the Recommended naming scheme please go [HERE](/sonarr/sonarr-recommended-naming-scheme){:target="_blank" rel="noopener noreferrer"}
+For the Recommended naming scheme please go [HERE](/sonarr/sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
