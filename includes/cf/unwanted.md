@@ -1,16 +1,17 @@
 ??? summary "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format                                                                                           | Score                                          | Trash ID                                    |
-    | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
-    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                 | {{ radarr['cf']['br-disk']['trash_score'] }}         | {{ radarr['cf']['br-disk']['trash_id'] }}         |
-    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)       | {{ radarr['cf']['evo-no-webdl']['trash_score'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
-    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                           | {{ radarr['cf']['lq']['trash_score'] }}              | {{ radarr['cf']['lq']['trash_id'] }}              |
-    | [{{ radarr['cf']['x265-7201080p']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p)     | {{ radarr['cf']['x265-7201080p']['trash_score'] }}   | {{ radarr['cf']['x265-7201080p']['trash_id'] }}   |
-    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                           | {{ radarr['cf']['3d']['trash_score'] }}              | {{ radarr['cf']['3d']['trash_id'] }}              |
-    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)         | {{ radarr['cf']['no-rlsgroup']['trash_score'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
-    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)           | {{ radarr['cf']['obfuscated']['trash_score'] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
-    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                   | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
-    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
-    | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)               | ??????                                         | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
+    | Custom Format                                                                                                        | Score                                                | Trash ID                                          |
+    | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
+    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                        | {{ radarr['cf']['br-disk']['trash_score'] }}         | {{ radarr['cf']['br-disk']['trash_id'] }}         |
+    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)              | {{ radarr['cf']['evo-no-webdl']['trash_score'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
+    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                                  | {{ radarr['cf']['lq']['trash_score'] }}              | {{ radarr['cf']['lq']['trash_id'] }}              |
+    | [{{ radarr['cf']['x265-7201080p']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p) :bangbang: | {{ radarr['cf']['x265-7201080p']['trash_score'] }}   | {{ radarr['cf']['x265-7201080p']['trash_id'] }}   |
+    | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :bangbang: | {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
+    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                                  | {{ radarr['cf']['3d']['trash_score'] }}              | {{ radarr['cf']['3d']['trash_id'] }}              |
+    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)                | {{ radarr['cf']['no-rlsgroup']['trash_score'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
+    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                  | {{ radarr['cf']['obfuscated']['trash_score'] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
+    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                          | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
+    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)        | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
+    | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                      | ??????                                               | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
 
     ??? example "Breakdown and Why - [CLICK TO EXPAND]"
 
@@ -18,6 +19,21 @@
         - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
         - **{{ radarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
         - **{{ radarr['cf']['x265-7201080p']['name'] }}:** This blocks/ignores 720/1080p releases that are encoded in x265 - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
+
+            !!! Danger "Danger :bangbang:"
+
+                Don't use this together with the following Custom Format [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv)
+        - **{{ radarr['cf']['x265-no-hdrdv']['name'] }}:** This blocks/ignores 720/1080p (HD) releases that are encoded in x265. - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
+
+            **but it will allow to exclude/bypass if it has HDR and/or DV**
+
+            *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+            In your quality profile use the following score for this Custom Format: `-10000`
+
+            !!! Danger "Danger :bangbang:"
+
+                Don't use this together with the following Custom Format [{{ radarr['cf']['x265-7201080p']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd)
         - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
         - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [Optional] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.
         - **{{ radarr['cf']['obfuscated']['name'] }}:** [Optional] (use these only if you dislike renamed releases)
