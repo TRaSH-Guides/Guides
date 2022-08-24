@@ -6,7 +6,7 @@ Well, it's actually personal preference so I will show you my recommendations.
 But before you continue to read, as with all my guides:
 
 !!! error ""
-    **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
+**If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.
 
@@ -37,43 +37,43 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ## Sonarr Quality Definitions
 
-| Quality            | Minimum | Maximum |
-| ------------------ | ------- | ------- |
-| HDTV-720p          | 10      | 67.5    |
-| HDTV-1080p         | 15      | 137.3   |
-| WEBRip-720p        | 10      | 137.3   |
-| WEBDL-720p         | 10      | 137.3   |
-| Bluray-720p        | 17.1    | 137.3   |
-| WEBRip-1080p       | 15      | 137.3   |
-| WEBDL-1080p        | 15      | 137.3   |
-| Bluray-1080p       | 50.4    | 227     |
-| Bluray-1080p Remux | 69.1    | 400     |
-| HDTV-2160p         | 50.4    | 350     |
-| WEBRip-2160p       | 50.4    | 350     |
-| WEBDL-2160p        | 50.4    | 350     |
-| Bluray-2160p       | 94.6    | 400     |
-| Bluray-2160p Remux | 204.4   | 400     |
+| Quality                                                            | Minimum                                                        | Maximum                                                        |
+| ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| {{ sonarr['quality-size']['series']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][2]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][2]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][2]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][3]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][3]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][3]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][4]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][4]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][4]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][5]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][5]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][5]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][6]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][6]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][6]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][7]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][7]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][7]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][8]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][8]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][8]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][9]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][9]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][9]['max'] }}  |
+| {{ sonarr['quality-size']['series']['qualities'][10]['quality'] }} | {{ sonarr['quality-size']['series']['qualities'][10]['min'] }} | {{ sonarr['quality-size']['series']['qualities'][10]['max'] }} |
+| {{ sonarr['quality-size']['series']['qualities'][11]['quality'] }} | {{ sonarr['quality-size']['series']['qualities'][11]['min'] }} | {{ sonarr['quality-size']['series']['qualities'][11]['max'] }} |
+| {{ sonarr['quality-size']['series']['qualities'][12]['quality'] }} | {{ sonarr['quality-size']['series']['qualities'][12]['min'] }} | {{ sonarr['quality-size']['series']['qualities'][12]['max'] }} |
+| {{ sonarr['quality-size']['series']['qualities'][13]['quality'] }} | {{ sonarr['quality-size']['series']['qualities'][13]['min'] }} | {{ sonarr['quality-size']['series']['qualities'][13]['max'] }} |
 
 ------
 
 ### Sonarr Quality Definitions - Anime (Work in Progress)
 
-| Quality            | Minimum | Maximum |
-| ------------------ | ------- | ------- |
-| HDTV-720p          | 2.3     | 51.4    |
-| HDTV-1080p         | 2.3     | 100     |
-| WEBRip-720p        | 4.3     | 100     |
-| WEBDL-720p         | 4.3     | 51.4    |
-| Bluray-720p        | 4.3     | 102.2   |
-| WEBRip-1080p       | 4.5     | 257.4   |
-| WEBDL-1080p        | 4.3     | 253.6   |
-| Bluray-1080p       | 4.3     | 258.1   |
-| Bluray-1080p Remux | 0       | 400     |
-| HDTV-2160p         | 69.1    | 350     |
-| WEBRip-2160p       | 69.1    | 350     |
-| WEBDL-2160p        | 69.1    | 350     |
-| Bluray-2160p       | 94.6    | 400     |
-| Bluray-2160p Remux | 204.4   | 400     |
+| Quality                                                           | Minimum                                                       | Maximum                                                       |
+| ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| {{ sonarr['quality-size']['anime']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][2]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][2]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][2]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][3]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][3]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][3]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][4]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][4]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][4]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][5]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][5]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][5]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][6]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][6]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][6]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][7]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][7]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][7]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][8]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][8]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][8]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][9]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][9]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][9]['max'] }}  |
+| {{ sonarr['quality-size']['anime']['qualities'][10]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][10]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][10]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][11]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][11]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][11]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][12]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][12]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][12]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][13]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][13]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][13]['max'] }} |
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->

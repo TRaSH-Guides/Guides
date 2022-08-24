@@ -39,22 +39,22 @@ These Quality Settings have been created and tested with info I got from others,
 
 ## Radarr Quality Definitions
 
-| Quality      | Minimum | Maximum |
-| ------------ | ------- | ------- |
-| HDTV-720p    | 17.1    | 400     |
-| WEBDL-720p   | 17.1    | 400     |
-| WEBRip-720p  | 17.1    | 400     |
-| Bluray-720p  | 25.7    | 400     |
-| HDTV-1080p   | 33.7    | 400     |
-| WEBDL-1080p  | 25.2    | 400     |
-| WEBRip-1080p | 25.2    | 400     |
-| Bluray-1080p | 50.8    | 400     |
-| Remux-1080p  | 136.8   | 400     |
-| HDTV-2160p   | 85      | 400     |
-| WEBDL-2160p  | 85      | 400     |
-| WEBRip-2160p | 85      | 400     |
-| Bluray-2160p | 102     | 400     |
-| Remux-2160p  | 221.5   | 400     |
+| Quality                                                           | Minimum                                                       | Maximum                                                       |
+| ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| {{ radarr['quality-size']['movie']['qualities'][0]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][1]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][2]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][2]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][2]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][3]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][3]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][3]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][4]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][4]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][4]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][5]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][5]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][5]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][6]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][6]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][6]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][7]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][7]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][7]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][8]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][8]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][8]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][9]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][9]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][9]['max'] }}  |
+| {{ radarr['quality-size']['movie']['qualities'][10]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][10]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][10]['max'] }} |
+| {{ radarr['quality-size']['movie']['qualities'][11]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['max'] }} |
+| {{ radarr['quality-size']['movie']['qualities'][12]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['max'] }} |
+| {{ radarr['quality-size']['movie']['qualities'][13]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['max'] }} |
 
 !!! note
     The reason why you don't see the `Preferred` score in the table above is because we want max quality anyway. So set it as high as possible.
