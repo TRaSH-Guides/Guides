@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dts[-_. ]?(ma|hd[-_. ]?ma|hd|xll))\\b"
+        "value": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "[^-]dd[p+]|eac3"
+        "value": "[^-]DD[P+]|e[-_. ]?ac3"
       }
     },
     {

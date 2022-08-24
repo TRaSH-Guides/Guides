@@ -15,11 +15,7 @@
     }
   },
   "$defs": {
-    "release_profiles": {
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "custom_formats": {
+    "paths_object": {
       "type": "array",
       "items": { "type": "string" }
     },
@@ -27,15 +23,17 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "custom_formats": { "$ref": "#/$defs/custom_formats" }
+        "custom_formats": { "$ref": "#/$defs/paths_object" },
+        "qualities": { "$ref": "#/$defs/paths_object" }
       }
     },
     "sonarr": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "custom_formats": { "$ref": "#/$defs/custom_formats" },
-        "release_profiles": { "$ref": "#/$defs/release_profiles" }
+        "custom_formats": { "$ref": "#/$defs/paths_object" },
+        "release_profiles": { "$ref": "#/$defs/paths_object" },
+        "qualities": { "$ref": "#/$defs/paths_object" }
       }
     }
   }
