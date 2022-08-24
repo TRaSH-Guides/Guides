@@ -1,0 +1,90 @@
+{
+    "trash_id": "387e6278d8e06083d813358762e0ac63",
+    "type": "anime",
+    "qualities": [
+        {
+            "quality": "HDTV-720p",
+            "min": 2.3,
+            "preferred": 50.4,
+            "max": 51.4
+        },
+        {
+            "quality": "HDTV-1080p",
+            "min": 2.3,
+            "preferred": 99,
+            "max": 100
+        },
+        {
+            "quality": "WEBRip-720p",
+            "min": 4.3,
+            "preferred": 99,
+            "max": 100
+        },
+        {
+            "quality": "WEBDL-720p",
+            "min": 4.3,
+            "preferred": 50.4,
+            "max": 51.4
+        },
+        {
+            "quality": "Bluray-720p",
+            "min": 4.3,
+            "preferred": 101.2,
+            "max": 102.2
+        },
+        {
+            "quality": "WEBRip-1080p",
+            "min": 4.5,
+            "preferred": 256.4,
+            "max": 257.4
+        },
+        {
+            "quality": "WEBDL-1080p",
+            "min": 4.3,
+            "preferred": 252.6,
+            "max": 253.6
+        },
+        {
+            "quality": "Bluray-1080p",
+            "min": 4.3,
+            "preferred": 257.1,
+            "max": 258.1
+        },
+        {
+            "quality": "Bluray-1080p Remux",
+            "min": 0,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "HDTV-2160p",
+            "min": 69.1,
+            "preferred": 349,
+            "max": 350
+        },
+        {
+            "quality": "WEBRip-2160p",
+            "min": 69.1,
+            "preferred": 349,
+            "max": 350
+        },
+        {
+            "quality": "WEBDL-2160p",
+            "min": 69.1,
+            "preferred": 349,
+            "max": 350
+        },
+        {
+            "quality": "Bluray-2160p",
+            "min": 94.6,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "Bluray-2160p Remux",
+            "min": 204.4,
+            "preferred": 399,
+            "max": 400
+        }
+    ]
+}
