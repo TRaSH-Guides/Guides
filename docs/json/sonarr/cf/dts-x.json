@@ -36,7 +36,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "[^-]dd[p+]|eac3"
+              "value": "[^-]DD[P+]|e[-_. ]?ac3"
           }
       },
       {
