@@ -1,0 +1,152 @@
+{
+  "trash_id": "19180499de5ef2b84b6ec59aae444696",
+  "trash_score": "500",
+  "name": "Anime Web Tier 02 (Top FanSubs)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "0x539",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(0x539)\\b"
+      }
+    },
+    {
+      "name": "Asakura",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Asakura\\]|-Asakura\\b"
+      }
+    },
+    {
+      "name": "Cyan",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Cyan\\]|-Cyan\\b"
+      }
+    },
+    {
+      "name": "Dae",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Dae\\]|-Dae\\b"
+      }
+    },
+    {
+      "name": "Foxtrot",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Foxtrot\\]|-Foxtrot\\b"
+      }
+    },
+    {
+      "name": "Gao",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Gao\\]|-Gao\\b"
+      }
+    },
+    {
+      "name": "GSK_kun",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GSK[._-]kun)\\b"
+      }
+    },
+    {
+      "name": "MTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTBB)\\b"
+      }
+    },
+    {
+      "name": "Okay-Subs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Okay-Subs)\\b"
+      }
+    },
+    {
+      "name": "Pizza",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Pizza\\]|-Pizza\\b"
+      }
+    },
+    {
+      "name": "Slyfox",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Slyfox)\\b"
+      }
+    },
+    {
+      "name": "SoLCE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SoLCE)\\b"
+      }
+    },
+    {
+      "name": "Tenshi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[tenshi\\]|-tenshi\\b"
+      }
+    }
+  ]
+}

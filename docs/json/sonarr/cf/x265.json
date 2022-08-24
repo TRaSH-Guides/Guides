@@ -1,0 +1,26 @@
+{
+  "trash_id": "c9eafd50846d299b862ca9bb6ea91950",
+  "name": "x265",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}
+

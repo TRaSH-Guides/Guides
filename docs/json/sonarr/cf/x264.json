@@ -1,0 +1,25 @@
+{
+  "trash_id": "cddfb4e32db826151d97352b8e37c648",
+  "name": "x264",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h264",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?264|\\bAVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}

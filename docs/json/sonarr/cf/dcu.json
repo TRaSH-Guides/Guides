@@ -1,0 +1,17 @@
+{
+  "trash_id": "36b72f59f4ea20aad9316f475f2d9fbb",
+  "trash_score": "75",
+  "name": "DCU",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "DC Universe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dcu|DC Universe)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}

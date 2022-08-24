@@ -34,6 +34,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "custom_formats": { "$ref": "#/$defs/custom_formats" },
         "release_profiles": { "$ref": "#/$defs/release_profiles" }
       }
     }

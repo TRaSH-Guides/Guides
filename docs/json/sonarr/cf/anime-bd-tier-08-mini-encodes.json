@@ -1,0 +1,134 @@
+{
+  "trash_id": "c81bbfb47fed3d5a3ad027d077f889de",
+  "trash_score": "700",
+  "name": "Anime BD Tier 08 (Mini Encodes)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Bluray Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "AkihitoSubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AkihitoSubs)\\b"
+      }
+    },
+    {
+      "name": "Arukoru",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Arukoru)\\b"
+      }
+    },
+    {
+      "name": "EDGE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[EDGE\\]|-EDGE\\b"
+      }
+    },
+    {
+      "name": "EMBER",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[EMBER\\]|-EMBER\\b"
+      }
+    },
+    {
+      "name": "GHOST",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[GHOST\\]|-GHOST\\b"
+      }
+    },
+    {
+      "name": "Judas",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Judas\\]|-Judas"
+      }
+    },
+    {
+      "name": "naiyas",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[naiyas\\]|-naiyas\\b"
+      }
+    },
+    {
+      "name": "Nep_Blanc",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Nep[ ._-]Blanc)\\b"
+      }
+    },
+    {
+      "name": "Prof",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Prof\\]|-Prof\\b"
+      }
+    },
+    {
+      "name": "Shirσ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Shirσ)\\b"
+      }
+    },
+    {
+      "name": "YURASAKA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[YURASUKA\\]|-YURASUKA\\b"
+      }
+    }
+  ]
+}

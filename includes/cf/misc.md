@@ -1,8 +1,8 @@
 ??? summary "Misc - [CLICK TO EXPAND]"
     | Custom Format                                                                                       | Score                                        | Trash ID                                  |
     | --------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
-    | [{{ radarr['repack-proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack-proper) | {{ radarr['repack-proper']['trash_score'] }} | {{ radarr['repack-proper']['trash_id'] }} |
-    | [{{ radarr['repack2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack2)             | {{ radarr['repack2']['trash_score'] }}       | {{ radarr['repack2']['trash_id'] }}       |
+    | [{{ radarr['cf']['repack-proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack-proper) | {{ radarr['cf']['repack-proper']['trash_score'] }} | {{ radarr['cf']['repack-proper']['trash_id'] }} |
+    | [{{ radarr['cf']['repack2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack2)             | {{ radarr['cf']['repack2']['trash_score'] }}       | {{ radarr['cf']['repack2']['trash_id'] }}       |
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 

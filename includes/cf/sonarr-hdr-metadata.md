@@ -1,0 +1,13 @@
+??? summary "HDR Metadata - [CLICK TO EXPAND]"
+    | Custom Format                                                                                       | Score                                        | Trash ID                                  |
+    | --------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
+    | [{{ sonarr['cf']['dv-hdr10']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#dv-hdr10)           | {{ sonarr['cf']['dv-hdr10']['trash_score'] }}      | {{ sonarr['cf']['dv-hdr10']['trash_id'] }}      |
+    | [{{ sonarr['cf']['dv']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#dv)                       | {{ sonarr['cf']['dv']['trash_score'] }}            | {{ sonarr['cf']['dv']['trash_id'] }}            |
+    | [{{ sonarr['cf']['dv-hlg']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#dv-hlg)               | {{ sonarr['cf']['dv-hlg']['trash_score'] }}        | {{ sonarr['cf']['dv-hlg']['trash_id'] }}        |
+    | [{{ sonarr['cf']['dv-sdr']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#dv-sdr)               | {{ sonarr['cf']['dv-sdr']['trash_score'] }}        | {{ sonarr['cf']['dv-sdr']['trash_id'] }}        |
+    | [{{ sonarr['cf']['hdr10plus']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#hdr10plus)         | {{ sonarr['cf']['hdr10plus']['trash_score'] }}     | {{ sonarr['cf']['hdr10plus']['trash_id'] }}     |
+    | [{{ sonarr['cf']['hdr10']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#hdr10)                 | {{ sonarr['cf']['hdr10']['trash_score'] }}         | {{ sonarr['cf']['hdr10']['trash_id'] }}         |
+    | [{{ sonarr['cf']['hdr']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#hdr)                     | {{ sonarr['cf']['hdr']['trash_score'] }}           | {{ sonarr['cf']['hdr']['trash_id'] }}           |
+    | [{{ sonarr['cf']['hdr-undefined']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#hdr-undefined) | {{ sonarr['cf']['hdr-undefined']['trash_score'] }} | {{ sonarr['cf']['hdr-undefined']['trash_id'] }} |
+    | [{{ sonarr['cf']['pq']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#pq)                       | {{ sonarr['cf']['pq']['trash_score'] }}            | {{ sonarr['cf']['pq']['trash_id'] }}            |
+    | [{{ sonarr['cf']['hlg']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#hlg)                     | {{ sonarr['cf']['hlg']['trash_score'] }}           | {{ sonarr['cf']['hlg']['trash_id'] }}           |

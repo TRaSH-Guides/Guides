@@ -1,0 +1,98 @@
+{
+  "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
+  "trash_score": "600",
+  "name": "Anime Web Tier 01 (Muxers)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "Arid",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Arid\\]|-Arid\\b"
+      }
+    },
+    {
+      "name": "Baws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Baws)\\b"
+      }
+    },
+    {
+      "name": "LostYears",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LostYears)\\b"
+      }
+    },
+    {
+      "name": "Reza",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Reza)\\b"
+      }
+    },
+    {
+      "name": "SCY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SCY)\\b"
+      }
+    },
+    {
+      "name": "Setsugen",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Setsugen)\\b"
+      }
+    },
+    {
+      "name": "Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Vodes)\\b"
+      }
+    },
+    {
+      "name": "Z4ST1N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Z4ST1N)\\b"
+      }
+    }
+  ]
+}

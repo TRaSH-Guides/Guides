@@ -1,0 +1,17 @@
+{
+  "trash_id": "db92c27ba606996b146b57fbe6d09186",
+  "trash_score": "3",
+  "name": "v3",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "v3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(?<=(\\d|\\[))(v3)\\b"
+      }
+    }
+  ]
+}

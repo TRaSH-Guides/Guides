@@ -1,0 +1,25 @@
+{
+  "trash_id": "418f50b10f1907201b6cfdf881f467b7",
+  "name": "Anime Dual Audio",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Dual Audio",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "dual[ ._-]?audio|\\[dual\\]|(EN|JA)\\+(JA|EN)"
+      }
+    },
+    {
+      "name": "Not Japanese Only",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\[JA\\]"
+      }
+    }
+  ]
+}
