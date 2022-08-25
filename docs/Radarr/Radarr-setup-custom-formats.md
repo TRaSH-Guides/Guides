@@ -2,27 +2,27 @@
 
 So what's the best way to setup the Custom Profiles and which one to use with which scores?
 
-There isn't a best score setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
+There isn't a best setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.
+
+--8<-- "includes/cf/score-attention.md"
 
 ------
 
 ## Basics
 
-Here we're going to explain where to setup the Custom Formats after you've added them, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-You will also see a short description of what each setting means.
+After you've added the Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
 `Settings` => `Profiles`
 
-??? check "example - [CLICK TO EXPAND]"
-    ![!cf-settings-profiles](images/cf-settings-profiles.png)
-
-Select the profile that you use/prefer.
-
-![!cf-quality-profiles](images/cf-quality-profiles.png)
+![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 !!! info "Radarr Custom Formats can be set per profile and isn't global"
+Select the profile that you want to use/prefer.
+
+![!cf-quality-profiles](images/cf-quality-profiles.png)
 
 ![!cf-profile-selected](images/cf-profile-selected.png)
 
@@ -35,7 +35,7 @@ Select the profile that you use/prefer.
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
-??? check "example - [CLICK TO EXPAND]"
+??? check "Screenshot example - [CLICK TO EXPAND]"
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
     !!! attention
@@ -44,21 +44,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
         - Always follow the data described in the guide.
         - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
-------
-
-!!! attention
-    Keep in mind Custom Formats are made to fine tune your Quality Profile
-
-    Generally, quality trumps all
-
-{! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
-<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
-
-My suggestion is to create tiers of scores based on what things matter to you.
-
-Personally, I would only add the Custom Formats that do what you actually prefer. Especially in the beginning, including the [Releases you should avoid](#releases-you-should-avoid)
-
-!!! info
+!!! info "Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all"
 
     Custom formats are controlled by Quality Profiles.
 
@@ -67,6 +53,10 @@ Personally, I would only add the Custom Formats that do what you actually prefer
     - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
     - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
     - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+------
+
+{! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
+<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
 
 ------
 
@@ -75,6 +65,8 @@ Personally, I would only add the Custom Formats that do what you actually prefer
 Here I will explain how to make the most use of Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
 All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}
+
+--8<-- "includes/cf/score-attention.md"
 
 ------
 
@@ -100,7 +92,7 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 #### Prefer HDR Metadata
 
-Lets say you prefer HDR metadata
+Lets say you prefer HDR metadata (HDR or Dolby Vision or Both)
 
 Then we would use the following order:
 
@@ -109,9 +101,9 @@ Then we would use the following order:
 
 ------
 
-!!! important
+!!! attention
 
-    I also suggest to change the Propers and Repacks settings in Radarr!!!
+    I also suggest to change the Propers and Repacks settings in Radarr :bangbang:
 
     Instructions can be found [HERE](#proper-and-repacks)
 
@@ -135,10 +127,10 @@ For this Quality Profile we're going to make use of the following Custom Formats
 <!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                             | Score                                   | Trash ID                             |
-    | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
+    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
+    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
     | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                       | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                             | {{ radarr['cf']['hq-remux']['trash_id'] }} |
     | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | {{ radarr['cf']['hq']['trash_score'] }}       | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.
@@ -147,9 +139,9 @@ Use the following main settings in your profile.
 
 ![!cf-profile-encodes](images/cf-profile-encodes.png)
 
-!!! fail ""
+!!! attention "Make sure you don't check the BR-DISK."
 
-    Make sure you don't check the BR-DISK. The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL
+The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 ??? example "The following workflow will be applied:"
 
@@ -192,19 +184,19 @@ For this Quality Profile we're going to make use of the following Custom Formats
 <!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                             | Score                                   | Trash ID                             |
-    | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
+    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
+    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
     | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
     | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['cf']['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                             | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 Use the following main settings in your profile.
 
 ![!cf-profile-remux1080](images/cf-profile-remux1080.png)
 
-!!! fail ""
+!!! attention "Make sure you don't check the BR-DISK."
 
-    Make sure you don't check the BR-DISK. The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL
+The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 ??? example "The following workflow will be applied:"
 
@@ -243,19 +235,17 @@ For this Quality Profile we're going to make use of the following Custom Formats
 <!-- --8<-- "includes/cf/misc.md" -->
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                             | Score                                   | Trash ID                             |
-    | ----------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------ |
+    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
+    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
     | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
     | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                       | {{ radarr['cf']['hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                             | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 Use the following main settings in your profile.
 
 ![!cf-profile-remux2160](images/cf-profile-remux2160.png)
 
-!!! fail ""
-
-    Make sure you don't check the BR-DISK.
+!!! attention "Make sure you don't check the BR-DISK."
 
 ??? example "The following workflow will be applied:"
 
@@ -318,11 +308,11 @@ Use the following main settings in your profile.
 
 ??? tip "Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]"
 
-    Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){:target="_blank" rel="noopener noreferrer"} Custom Format.
+    Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} Custom Format.
 
     Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
 
-    Use x265 only for 4k releases and the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
+    Use x265 only for 4k releases and the [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
 
 ## Thanks
 
