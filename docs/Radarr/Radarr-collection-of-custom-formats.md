@@ -51,30 +51,28 @@ I also made 3 guides related to this one.
 | Movie Versions                                | Unwanted                            | HQ Source Groups      | Streaming Services     |
 | --------------------------------------------- | ----------------------------------- | --------------------- | ---------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                 | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [EVO (no WEBDL)](#evo-no-webdl)     | [HQ](#hq)             | [Apple TV+](#aptv)     |
-| [4K Remaster](#4k-remaster)                   | [LQ](#lq)                           | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [3D](#3d)                           |                       | [HBO Max](#hmax)       |
-| [Criterion Collection](#criterion-collection) | [No-RlsGroup](#no-rlsgroup)         |                       | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             | [Obfuscated](#obfuscated)           |                       | [Netflix](#nf)         |
-| [IMAX](#imax)                                 | [Retags](#retags)                   |                       | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               | [DV (WEBDL)](#dv-webdl)             |                       | [Paramount+](#pmtp)    |
-|                                               | [Bad Dual Groups](#bad-dual-groups) |                       | [Movies Anywhere](#ma) |
-|                                               | [x265 (720/1080p)](#x265-7201080p)  |                       |                        |
-|                                               | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                       |                        |
+| [Remaster](#remaster)                         | [LQ](#lq)                           | [HQ](#hq)             | [Apple TV+](#aptv)     |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                           | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
+| [Special Editions](#special-edition)          | [DV (WEBDL)](#dv-webdl)             |                       | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) | [Bad Dual Groups](#bad-dual-groups) |                       | [Hulu](#hulu)          |
+| [Theatrical Cut](#theatrical-cut)             | [x265 (HD)](#x265-hd)               |                       | [Netflix](#nf)         |
+| [IMAX](#imax)                                 | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                       | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               |                                     |                       | [Paramount+](#pmtp)    |
+|                                               |                                     |                       | [Movies Anywhere](#ma) |
 
 ------
 
-| Misc                                  | &nbsp; | &nbsp; | &nbsp; |
-| ------------------------------------- | ------ | ------ | ------ |
-| [Repack/Proper](#repack-proper)       | &nbsp; | &nbsp; | &nbsp; |
-| [Repack2](#repack2)                   | &nbsp; | &nbsp; | &nbsp; |
-| [Multi](#multi)                       | &nbsp; | &nbsp; | &nbsp; |
-| [x264](#x264)                         | &nbsp; | &nbsp; | &nbsp; |
-| [x265](#x265)                         | &nbsp; | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                       | &nbsp; | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)               | &nbsp; | &nbsp; | &nbsp; |
-| [Dutch Groups](#dutch-groups)         | &nbsp; | &nbsp; | &nbsp; |
-| [Anime Dual Audio](#anime-dual-audio) | &nbsp; | &nbsp; | &nbsp; |
+| Misc                                  | Optional                        | &nbsp; | &nbsp; |
+| ------------------------------------- | ------------------------------- | ------ | ------ |
+| [Repack/Proper](#repack-proper)       | [EVO (no WEBDL)](#evo-no-webdl) | &nbsp; | &nbsp; |
+| [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)     | &nbsp; | &nbsp; |
+| [Multi](#multi)                       | [Obfuscated](#obfuscated)       | &nbsp; | &nbsp; |
+| [x264](#x264)                         | [Retags](#retags)               | &nbsp; | &nbsp; |
+| [x265](#x265)                         |                                 | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                       |                                 | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)               |                                 | &nbsp; | &nbsp; |
+| [Dutch Groups](#dutch-groups)         |                                 | &nbsp; | &nbsp; |
+| [Anime Dual Audio](#anime-dual-audio) |                                 | &nbsp; | &nbsp; |
 
 ## Audio Advanced
 
@@ -853,24 +851,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### EVO (no WEBDL)
-
-??? faq "EVO (no WEBDL) - [CLICK TO EXPAND]"
-
-    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
-
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/evo-no-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### LQ
 
 <sub>Low Quality Releases = LQ</sub>
@@ -901,23 +881,27 @@ I also made 3 guides related to this one.
 
 ------
 
-### x265 (720/1080p)
+### x265 (HD)
 
-<sub>720/1080p no x265 = x265 (720/1080p)</sub>
+<sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? faq "720/1080p no x265 - [CLICK TO EXPAND]"
+??? faq "x265 (HD) - [CLICK TO EXPAND]"
 
-    This blocks/ignores 720/1080p(HD) releases that are encoded in x265
+    This blocks/ignores 720/1080p(HD) releases that are encoded in x265.
 
     In your quality profile use the following score for this Custom Format: `-10000`
 
     !!! fail ""
         --8<-- "includes/docker/x265.md"
 
+            !!! Danger
+
+                Don't use this together with the following Custom Format [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv)
+
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-7201080p.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -938,7 +922,7 @@ I also made 3 guides related to this one.
 
     !!! Danger
 
-        Don't use this together with the following Custom Format [x265 (720/1080p)](#x265-7201080p)
+        Don't use this together with the following Custom Format [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -962,6 +946,67 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV (WEBDL)
+
+<sub>Dolby Vision = DoVi = DV</sub>
+
+??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
+    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
+
+    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
+
+    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
+
+    Remuxes and Bluray have a fallback to HDR10.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## Optional
+
+------
+
+### EVO (no WEBDL)
+
+??? faq "EVO (no WEBDL) - [CLICK TO EXPAND]"
+
+    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
+
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/evo-no-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1015,45 +1060,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/retags.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### DV (WEBDL)
-
-<sub>Dolby Vision = DoVi = DV</sub>
-
-??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
-    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
-
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
-
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
-
-    Remuxes and Bluray have a fallback to HDR10.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Bad Dual Groups
-
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
