@@ -203,6 +203,15 @@
       }
     },
     {
+      "name": "playWEB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bplayWEB\\b"
+      }
+    },
+    {
       "name": "ROCCaT",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
