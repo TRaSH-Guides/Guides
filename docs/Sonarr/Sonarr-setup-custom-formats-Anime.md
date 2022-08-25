@@ -50,8 +50,8 @@ After this has been done your profile should look like below
 !!! note
     We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
-{! include-markdown "../../includes/cf/anime.md" !}
-<!-- --8<-- "includes/cf/anime.md" -->
+{! include-markdown "../../includes/cf/sonarr-anime.md" !}
+<!-- --8<-- "includes/cf/sonarr-anime.md" -->
 
 The scoring that has been set is the recommended scoring however some of the CFs are optional depending on what you prefer.
 `Anime Dual Audio`, `Uncensored` and `10bit` can be given scores if you want to prefer content with these attributes
