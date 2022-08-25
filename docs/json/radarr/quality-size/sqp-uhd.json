@@ -1,0 +1,30 @@
+{
+    "trash_id": "da8c8c0268b2f304be588132831543d2",
+    "type": "sqp-uhd",
+    "qualities": [
+        {
+            "quality": "WEBDL-2160p",
+            "min": 50.8,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "WEBRip-2160p",
+            "min": 50.8,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "Bluray-2160p",
+            "min": 102,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "Remux-2160p",
+            "min": 187.4,
+            "preferred": 399,
+            "max": 400
+        }
+    ]
+}

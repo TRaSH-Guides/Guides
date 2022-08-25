@@ -9,7 +9,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "[^-]DD[P+](?!A)|eac3"
+              "value": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac3)\\b"
           }
       },
       {
