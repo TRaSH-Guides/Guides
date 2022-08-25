@@ -23,6 +23,7 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 - Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/fXmQQm/1).
 
 When adding a regex test case
+
 - Replace the actual movie name with `Movie`.
 - Replace the actual series name with `Series`.
 - Remove the actual Series title.
