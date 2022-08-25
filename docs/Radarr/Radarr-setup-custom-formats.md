@@ -53,6 +53,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
     - The Minimum score requires releases to reach this threshold otherwise they will be rejected.
     - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
     - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
+
 ------
 
 {! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
