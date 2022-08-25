@@ -1,0 +1,30 @@
+{
+    "trash_id": "8f1391784833965c476bb6aee95fe328",
+    "type": "sqp-streaming",
+    "qualities": [
+        {
+            "quality": "WEBDL-1080p",
+            "min": 25.2,
+            "preferred": 84.7,
+            "max": 85.7
+        },
+        {
+            "quality": "WEBRip-1080p",
+            "min": 25.2,
+            "preferred": 84.7,
+            "max": 85.7
+        },
+        {
+            "quality": "Bluray-720p",
+            "min": 25.2,
+            "preferred": 101,
+            "max": 102
+        },
+        {
+            "quality": "Bluray-1080p",
+            "min": 33.8,
+            "preferred": 135.9,
+            "max": 136.9
+        }
+    ]
+}
