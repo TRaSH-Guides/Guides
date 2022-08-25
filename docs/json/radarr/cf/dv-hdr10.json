@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ .]HDR10|HDR10[ .]DV)\\b"
+        "value": "^(?=.*\\b(HDR(10)?)\\b)(?=.*\\b(DV|DoVi)\\b)"
       }
     },
     {
