@@ -4,15 +4,11 @@
     You must be running Sonarr V4 to be able to use this setup
 
 !!! note
-    This guide is created and maintained by "Update Later"
+    This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
     It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of Quality Profiles and score different CFs as required
 
 ## Media Management
-
-!!! note
-
-    There are a few settings which make life a lot easier when tracking down and keeping certain information for your Anime
 
 ### Recommended naming scheme
 
@@ -52,7 +48,7 @@ After this has been done your profile should look like below
 ## Custom Formats
 
 !!! note
-    We're going to make use of the below custom formats. See [HERE](/sonarr/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
+    We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
 {! include-markdown "../../includes/cf/anime.md" !}
 <!-- --8<-- "includes/cf/anime.md" -->
@@ -65,20 +61,19 @@ Once the custom formats have been imported you can set the scores as above. To d
 ??? check "example - [CLICK TO EXPAND]"
     ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
-In the profile enter the scores as per the above table in this section
+In the profile enter the scores as per the above table in this section.
+
 ![!cfa-scoring](images/cfa-scoring.png)
+
+After you are done it should look like the image above
 
 ### Acknowledgements
 
 Most of my information and knowledge came from:
 
-- Kaiser (Guidance on anime groups)
-
 - rg9400 (Guidance on regex fixes, anime groups and general knowledge share.)
 
-- Drazzilb (Guidance on regex fixes, anime groups and general knowledge share.)
-
-- [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for my guide and general knowledge share.)
+- [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and general knowledge share.)
 
 Thanks a bunch!!
 

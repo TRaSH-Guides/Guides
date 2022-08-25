@@ -1433,7 +1433,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
 ??? faq "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1448,7 +1448,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 02 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1463,7 +1463,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 03 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1478,7 +1478,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 04 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1493,7 +1493,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 05 (Remuxes)
 
 ??? faq "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that are consistent and do Remuxes
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1508,7 +1508,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 06 (FanSubs)
 
 ??? faq "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1553,7 +1553,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 01 (Muxers)
 
 ??? faq "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1568,7 +1568,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 02 (Top FanSubs)
 
 ??? faq "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1583,7 +1583,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 03 (SubsPlease)
 
 ??? faq "Anime Web Tier 03 (SubsPlease) - [CLICK TO EXPAND]"
-    SubsPlease group
+    SubsPlease group. They are official subs but tend to be more consistent and release fast
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1598,7 +1598,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 04 (Official Subs)
 
 ??? faq "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
-    Description placeholder
+    Official sub groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1613,7 +1613,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 05 (FanSubs)
 
 ??? faq "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1628,7 +1628,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 06 (FanSubs)
 
 ??? faq "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1688,7 +1688,7 @@ I also made 3 guides related to this one.
 ### v0
 
 ??? faq "v0 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover releases named with v0 which we don't want
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1703,7 +1703,7 @@ I also made 3 guides related to this one.
 ### v1
 
 ??? faq "v1 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v1 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1718,7 +1718,7 @@ I also made 3 guides related to this one.
 ### v2
 
 ??? faq "v2 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v2 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1733,7 +1733,7 @@ I also made 3 guides related to this one.
 ### v3
 
 ??? faq "v3 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v3 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1748,7 +1748,7 @@ I also made 3 guides related to this one.
 ### v4
 
 ??? faq "v4 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v4 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1763,7 +1763,7 @@ I also made 3 guides related to this one.
 ### VRV
 
 ??? faq "VRV - [CLICK TO EXPAND]"
-    Description placeholder
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
