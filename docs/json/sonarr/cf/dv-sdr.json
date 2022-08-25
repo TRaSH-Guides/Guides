@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ ]SDR)\\b"
+        "value": "\\b(DV[ .]SDR)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ ]HLG)\\b"
+        "value": "\\b(DV[ .]HLG)\\b"
       }
     }
   ]
