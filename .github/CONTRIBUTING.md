@@ -22,6 +22,23 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 - When adding the hashcode for Sonarr Anime use the following naming `Sonarr Anime CF_name` on the following [link+example](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
 - Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/fXmQQm/1).
 
+When adding a regex test case
+
+- Replace the actual movie name with `Movie`.
+- Replace the actual series name with `Series`.
+- Remove the actual Series title.
+- Replace the actual group name with `RlsGrp`
+
+When updating or adding a new CF the test case url needs to be added to the json.
+
+```json
+{
+  "trash_id": "hashcode",
+  "trash_score": "score",
+  "trash_regex": "https://regex101.com/r/pADWJD/5",
+  "name": "CF_name",
+```
+
 ## Recommendations
 
 - use [VSCode](https://code.visualstudio.com/) for editing with the following extension  [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
