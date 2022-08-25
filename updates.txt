@@ -1,0 +1,387 @@
+#2022-08-13
+Fixed: Added word boundaries to HQ CFs #711
+- Added: more word boundaries to the HQ custom formats to prevent incorrect matching of release groups to fix Issue: #710
+
+NEW: CF [x265 (no HDR/DV)] #708
+- NEW: CF `[x265 (no HDR/DV)]` - This blocks/ignores 720/1080p (HD) releases that are encoded in x265. **but it will allow to exclude/bypass if it has HDR and/or DV**
+- NOTE: Don't use this together with the following Custom Format [x265 (720/1080p)].
+
+Updated: LQ CF with new Groups #707
+- Updated the `LQ` CF to include a few more groups, sorted and formatted the json as well.
+- Added `EPiC` to the `LQ` CF to fix Issue: #702
+
+Updated br-disk.json #706
+- Fixed: GERMAN SCENE REMUXES Recognized as BR-DISK.
+- Added: BDISO recognition.
+
+FIXED: CF DTS-HD MA mismatch #704
+- FIXED: CF [DTS-HD MA] mismatch. Issue: #701
+
+Radarr CF Group Tier Setup #700
+- Note: `ReleaseGroupSpecification` = Radarr Nightly
+- Note: `ReleaseTitleSpecification` = Radarr Master
+
+**NEW: Split up `HQ-Remux` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[Remux Tier 01]` - Split up `HQ-Remux` in to Tiers.
+- NEW: CF `[Remux Tier 02]` - Split up `HQ-Remux` in to Tiers.
+
+**NEW: Split up `HQ-WEBDL` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[WEB Tier 01]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 02]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 03]` - Split up `HQ-WEBDL` in to Tiers.
+
+**NEW: Split up `HQ` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[HD Bluray Tier 01]` - Split up `HQ` in to Tiers.
+- NEW: CF `[HD Bluray Tier 02]` - Split up `HQ` in to Tiers.
+
+**Added: Groups with `ReleaseTitleSpecification` Condition.**
+- Updated: CF `[HQ]`
+- Updated: CF `[HQ-WEBDL]`
+- Updated: CF `[HQ-Remux]`
+
+# 2022-08-04
+Radarr CF 20220804 #695
+- Changed: Raised score for CF `[Framestore]`.
+- Added: regex to prevent download loop with bad dual groups. Issue: #685
+- Added: `EXTREME` to the CF `[Bad Dual Groups]`. Issue: #694
+
+# 2022-07-31
+Updated: Paste sites #690
+- Added: `Notifiarr.com`.
+- Added: `bpaste`.
+- Removed: `0bin` because of the issues it's having.
+- Removed `Ubuntu Pastebin` because you need a account to make use of it.
+Guides Bad path suggestion #689
+- Added: missing bad path suggestion for some parts
+Dislike bad dual audio groups #686
+- Added: [Sonarr] `Optional - Ignore Bad Dual Audio Groups` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+- Added: [Radarr] CF `[Bad Dual Groups]` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+
+# 2022-07-27
+Added: Cross-Seed to the 3rd party tools #677
+- Added: Cross-Seed to the 3rd party tools.
+Add warning to qBittorrent about ZFS/Pre-Allocate #676
+- Add warning to qBittorrent Basic-Setup about ZFS/Pre-Allocate.
+Fix: CF [MA] false positive #672
+- Fix: CF `[MA]` false positive, seems in some cases Radarr picks up the path for the CF, and it triggered false on `DTS-HD MA`.
+Update br-disk.json #671
+- Updated: CF `[BR-DISK]` Added recognition of UHD100 DISKS.
+
+# 2022-07-17
+Sonarr RP 20220717 #666
+- Fixed: Better recognizing of 1080p/x265 in random order.
+- Added: GNOME to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+- Added: ABBIE to HQ WEBDL Tier 2 (P2P Groups with a score of 125).
+Added: PSA to Radarr LQ #665
+- Added: `PSA` to `[LQ]`.
+Removed: EVO from the Radarr [LQ] #664
+- Removed: EVO from the `[LQ]`, please use `[EVO (NOWEBL)]`.
+
+# 2022-07-10
+Radarr cf 20220710 #661
+- Replaced/Renamed: `dd-atmos.json` to `ddplus-atmos.json` to be consistent.
+- Added: Scoring to CF `[MP3]` =>  `500`.
+- Added: Scoring to CF `[Opus]` => `250`.
+- Fixed: CF [MA] for false positive.
+- Separated: CF [Obfuscated] conditions and created CF [Retags].
+- Added: NEW CF `[Retags]` with a score of `-10000`.
+How to check if hardlinks work formatting fix #660
+- Fixed: formatting to make it more clear.
+How to run the unRaid mover for qBittorent seeding torrents - formatting #659
+- Fixed: formatting to make it more understandable.
+Added Streaming Service CF for MoviesAnywhere #657
+- Added: Streaming Service CF for MoviesAnywhere.
+Add missing bots to Clean.py (SABnzbd) #656
+- Add: missing bots to Clean script (SABnzbd).
+- Optimize regex matching in Clean script (SABnzbd).
+
+# 2022-07-06
+Changed: CF HDR10 to match HDR to prevent loops #655
+- Changed: CF `HDR10` to match `HDR` to prevent loops `550` to `500`.
+Sonarr rp fix dv nowebdl #654
+- Fix: Optional - Ignore Dolby Vision without HDR10 fallback.
+- Removed: `optimal.json` cleaned up v1 of this file please use `optionals.json` (recyclarr)
+Fixed? the TrueHD regex #647
+- Fixed: `True-HD` or `True HD` leading to not being recognized by the CFs.
+
+# 2022-07-01
+Raised score from 25 to 800 to match Imax Enhanced. #650
+- Updated: CF `[IMAX]` Raised score from `25` to `800` to match `Imax Enhanced`.
+Fixed: Conditions in various sound codec CFs #649
+- Fixed: Conditions in `[DTS]` and `[DTS-ES]`
+- Fixed: Regex to recognize Basic Dolby Digital `[DD]`, updated the regex to fix the recognition of `DD` to help with incorrect matching of some Custom Formats.
+
+# 2022-06-26
+Added word boundary for HONE #642
+- Updated: CF `[HQ-WEBDL]` Added word boundary for `HONE`.
+- Updated: CF `[No-RlsGroup]` Added word boundary for `HONE`.
+How to check if hardlinks work inode find option #643
+- Added: How to check if hardlinks work inode find option.
+
+# 2022-06-24
+Guide formatting fixes #639
+- Improved: readability of description in `Downloaders - qBittorent - Basic Setup`.
+- Fixed: Series Folder Format issue:#624 in `Sonarr - Release Profile RegEx (Anime)`.
+Radarr CF 20220624 #640
+- Updated: CF `[LQ]` Separated conditions on request.
+- Updated: CF `[HQ-Remux]` Separated conditions on request.
+- Updated: CF `[HQ]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` Separated conditions on request.
+- Updated: CF `[HQ-WEBDL]` added  group `HONE`.
+- Updated: CF `[No-RlsGroup]` added group `HONE` to the exemption.
+
+#2022-06-21
+Radarr CF 20220621 #635
+- Updated: CF `[3D]` added 3D group `BluRay3D`.
+- Updated: CF `[DV (WEBDL)]` replaced condition `DV HDR10` with `No HDR`.
+
+# 2022-06-13
+Shortened Streaming Service naming #626
+- Changed: On request Streaming Service to short names.
+
+# 2022-06-08
+Radarr cf dv hdr10 fix for bad (re)named files #615
+- Added: Fix for bad (re)named DV HDR10 releases.
+- Added: `Not DV` Condition to `[HDR10]` prevent double scoring for bad (re)named DV HDR10 Releases.
+Radarr CF Repack2 added to collection and instructions #616
+- Added: CF `[Repack2]` to the collection.
+- Updated: How to setup Custom Formats to support `[Repack2]`.
+Added KOGI to the Dislike Scene Releases for indexers that rename #619
+- Added: KOGI to the Dislike Scene Releases for indexers that rename.
+- Added: DEPRECATED warning for the optional.json, please use optionals.json.
+
+# 2022-06-03
+Radarr CF [Repack2] #607
+- NEW: Radarr CF `[Repack2]` with a score of `6`.
+- Updated: Radarr CF `[Repack/Proper]` added word boundary.
+
+# 2022-05-22
+Sonarr - Quality Settings (File Size) #595
+- Changed: Minimum file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`
+IBRACORP Video Link #594
+- Added: IBRACORP video link for notifiarr TRaSH-Sync.
+- Updated: TRaSH Updater re-branding to Recyclarr.
+NEW: qBittorrent unRaid Mover #593
+- NEW: How to move your files from your cache drive to your array when they are still seeding.
+Radarr CF Score of "DV HDR10" from 1550 to 1500 #591
+- Updated: Radarr CF `[DV HDR10]` Score from `1550` to `1500` so it's more consistent with the original release name so it doesn't block upgrades it should accept.
+
+# 2022-05-14
+Updated Re-branding trash-updater to recyclarr #586
+- Updated: Re-branding trash-updater to recyclarr v2 (With this update it means i will also drop updates for v1)
+Radarr/Sonarr sync update for SQP #587
+- Updated: How to access the SQP (Special Quality Profile) Discord channel.
+Sonarr Release Profile Regex WEBDL #588
+- Added: The group `SIC` to `Optional - Ignore Dolby Vision without HDR10 fallback` exception.
+- Added: The group `NERO` to `Low Quality Groups - Release Profile` because they only provide dubbed French audio track.
+
+# 2022-05-12
+Radarr CF [LQ] PTNK #585
+- Updated: CF [LQ] added `PTNK` to the `Nominated Unwanted Groups` condition. (Using different sources like EVO releases, BLUR hardcoded subs,  and also strips out all other subs).
+Sonarr Low Quality Groups - Release Profile #581
+- Added: Pahe.ph|Pahe.in to the LQ Groups because of their re-encoded microsized releases.
+qBittorrent Basic Setup #580
+- NEW: qBittorrent Basic Setup.
+
+# 2022-05-09
+Sonarr Low Quality Groups - Release Profile #581
+- Added: Pahe.ph|Pahe.in to the LQ Groups because of their re-encoded microsized releases.
+
+# 2022-05-06
+Radarr CF [LQ] KIRA #576
+- Updated: CF [LQ] added `KIRA` to the `Nominated Unwanted Groups` condition. (Wrong main Audio Track in filename)
+
+# 2022-05-03
+Sonarr RP RegEx WEBDL 20220503 #573
+- Updated: Fix DoVi without HDR fallback for badly named releases #572
+- Updated: Ignore so called scene releases to ignore deflate/inflate
+
+# 2022-04-24
+Starr index page update #560
+- Added: all Star branch versions including warnings
+- Added: How to update to a Starr Apps branche.
+How to provide a docker-compose #561
+- Updated: *arr to Starr Apps.
+- Added: privatebin.net
+Hardlinks #562
+- Updated: *arr/*arr(s) to Starr Apps.
+- Added: info that you can't hardlink directories.
+- Added: info that you can't cross file systems.
+- Added: More info to wikipedia for hardlinks.
+
+# 2022-04-20
+Radarr - How to setup Custom Formats #559
+- Updated: CF [Repack/Proper] scoring.
+Radarr CF Update 2022-04-20 #557
+- NEW: CF `[Flights (no IMAX)]` New Hybrid Remux group, had some complains about their imax releases being off, so they got a own CF (SQP).
+- NEW: CF `[SiC]` HQ WEBDL Hybrid group that does DV + HDR10 give it a score of `51` to give it a higher score (SQP).
+- Updated: CF `[FreeLeech]` Scoring from `5` to `1` to give proper/repack preference.
+- Updated: CF `[Repack/Proper]` Scoring from `1` to `5` to give proper/repack preference.
+Sonarr RP RegEx WEBDL 2022-04-20 #558
+- Added: `SiC` to the 125 P2P Groups Release Profile (2160p Mainly).
+Typo fixes #556
+- Went through the majority of the guide and looked for typos, unnecessary spaces/missing punctuations, and restructured some confusing sentences. I have not changed any formatting, but found one error that I fixed.(Thnx s0up).
+Updated command #554
+- Small punctuation update, Corrected the !attention command at the end, where it used the compose -f command, which does not work with pullio.
+Add editorconfig and reformat Sonarr JSON files #552
+- Several Cleaning and Fixes (Thnx voidpointer)
+
+# 2022-03-27
+Radarr CF Update
+- NEW: CF `[UHD (SPHD)]` HQ 4k Encoding Group that does `DV HDR10` and HD Audio with a recommended score of `2250`.
+- Updated: CF `[LQ]` added `PATOMiEL` to the `Nominated Unwanted Groups` condition because of their bad naming.
+Optimal Plex Client Settings #543
+- NEW: Page with link(s) for Optimal Plex Client Settings.
+qBittorrent 3rd Party tools #544
+- NEW: Link to qBit Manage.
+- NEW: Link to qbittorrent-cli.
+- NEW: Link to qbittools.
+- NEW: Link to A Dark but not black qBittorrent WebUI.
+
+# 2022-03-20
+Maintenance Release 20220320 #538
+- Updated: CF `[IMAX Enhanced]` Scoring from `750` to `800` to make sure it scores better against `DV HDR10`.
+- Updated: CF `[FraMeSToR]` Scoring from `1` to `51` to make sure it scores better against `DV HDR10`.
+Misc - How to set Torguard for port forwarding.
+- Added: Note `As of 13 March Torguard Settles Piracy Lawsuit and has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology`
+
+# 2022-03-05
+Radarr CF HQ Remux playBD #530
+- Updated: CF `[HQ Remux]` added group `playBD`.
+Radarr CF IMAX Enhanced Examples #531
+- Added: IMAX Enhanced Examples.
+Torguard Portforwarding layout update #536
+- Updated: Screenshots etc to match TorGuard new layout.
+
+# 2022-03-04
+Radarr CF [LQ] FZHD #528
+- Updated: CF [LQ] added `FZHD` to the `Nominated Unwanted Groups` condition.
+Update Sonarr-Release-Profile-RegEx.md #529
+- Added: Extra DO NOT Check mark `Include Preferred when Renaming` Warning
+
+# 2022-03-02
+Radarr CF DV WEBDL Flights #526
+- Fixed: CF `[DV WEBDL]` Added the group `Flights` to the `Group Exceptions` condition.
+
+# 2022-03-01
+Radarr CF [HDR10+] No DV #524
+- Fixed: CF `[HDR10+]` Added `No DV` Condition.
+
+# 2022-02-27
+New: TRaSH Guides 3rd Party Sync options #516
+- Added: TRaSH Guides 3rd Party Sync options `Notifiarr` and `TRaSH Updater`.
+- Updated: Radarr - How to update Custom Formats URL update.
+Radarr CF Collection 20220226 #517
+- Updated: CF `[HQ Remux]` added group `Flights` known for their Hybrid DV releases.
+- NEW: CF for streaming services, They will get a score of 0, they are mainly to add to your naming scheme.
+  `[Amazon]`, `[Apple TV+]`, `[Disney+]`, `[HBO Max]`, `[Hulu]`, `[Netflix]`, `[Paramount+]`, `[Peacock TV]`
+- Updated: CF `[IMAX Enhanced]` added `Disney+` to the  recognizing so it matches after rename.
+- Added: in Tables direct link to Streaming Services Custom Formats.
+- Updated: CF `[HQ-WEBDL]` added group `Flights` known for their Hybrid DV releases (IMAX-E).
+Sonarr-RP-RegEx-WEB-DL-20220227 #518
+- Updated: Layout to match Release Profiles.
+- Added: Extra descriptions to a few Optionals regex.
+- Added: Extra Warning about the use of the Optionals.
+
+# 2022-02-15
+Update br-disk.json #512
+- Updated: CF [BR-DISK] Support for BD AVC|HEVC.
+
+# 2022-02-11
+Radarr cf collection 20220211 #511
+- Updated: CF [LQ] added `Liber8` to the `Nominated Unwanted Groups` condition.
+- Updated: CF [Obfuscated] added `_nzb` to the `Retagged`condition.
+
+# 2022-02-03
+Sonarr regex update #504
+- Merged: several regex to on regex after Sonarr fixed the GUI bug.
+Updated: Preferred Sonarr Naming Scheme #503
+- Use 'Prefixed Range' instead of 'Scene' for better episode recognition in Plex.
+New: Plex 4K Transcode Stopping #502 (Plex Tips section)
+- Stop Video Transcoding for 4k
+
+# 2022-01-30
+Updated: Radarr cf collection no rls group hotfix #500
+- Hotfix: for earlier screw up from my side.
+Updated: Refactor Dolby Vision regexp to make it less complex #499
+- Fix: Refactor Dolby Vision regexp to make it less complex (Fix for #495).
+
+# 2022-01-29
+Fix for badly named (dolbyvision) DV files #495
+- Fixed: recognizing for badly named (dolbyvision) DV files
+Updated: CF [No-RlsGroup] Sync with Radarr #496
+- Updated: Handle Exception Release Groups that don't follow -RlsGrp.
+Updated: CF [LQ] Added Nominated Unwanted Groups #498
+- Added: Nominated Unwanted Groups, these are groups are nominated to be in the LQ for different reasons.
+
+# 2022-01-27
+Radarr Custom Format Collection 20220127 #494
+- Changed: Several CF Scoring for better results.
+- Fixed: CF `[TrueHD Atmos]` to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF `[TrueHD]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+
+# 2022-01-26
+Updated: Radarr - How to setup Custom Formats #492
+- Added: in Tables direct link to CF.
+Updated: Hardlinks - Dockstarter
+- Removed: DEPRECATED Settings
+Removed: DEPRECATED Settings #493
+- Removed: DEPRECATED Settings.
+
+# 2022-01-23
+NEW: Replace copies with hardlinks #486
+- NEW: Guide in Hardlinks section, How to replace copies with hardlinks.
+Updated: Radarr CF Collection #488
+- Changed: Categories names.
+Updated: How to setup Custom Formats 20220123 #489
+- Complete redo and updating of the scoring and formatting of the guide.
+
+# 2022-01-22
+Updated: Radarr - Collection of Custom Formats
+- Fixed: CF [TrueHD Atmos] to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF [TrueHD] to prevent double scoring with latest update of [TrueHD Atmos].
+Updated: Sonarr - Release Profile RegEx (WEB-DL)
+- Added: HBO MAX (hmax|hbom).
+- Changed: Scores HBO MAX (hmax|hbom).
+Removed: Notifiarr Instructions from the guide #481
+- Removed: Notifiarr Instructions from the guide (*)
+How to merge quality #482
+- NEW: Guide in Radarr Tips section, covering how to merge qualities.
+
+(*) The Notifiarr project has become that huge that i'm not able to cover everything and every change/update/addition to it, and i don't use all of the options it offers. So I decided with the developer that i will remove it from the guide for now being it's to outdated and will create a new one only covering the TRaSH Guide Sync option.
+
+# 2022-01-20
+Updated: Sonarr - Release Profile RegEx (WEB-DL)
+- Added: Remux to the exclusion for DoVi.
+- Added: Sonarr Season Pack Warning.
+- Added: Optional Dolby Vision - if you prefer Dolby Vision.
+
+# 2022-01-16
+Updated: Radarr - Collection of Custom Formats
+- Updated: CF `[4K Remaster]` Scores to the new scoring standard.
+- Updated: CF `[Criterion Collection]` Scores to the new scoring standard.
+- Fixed: CF `[TrueHD Atmos]` to recognize groups that only use Atmos/TrueHD in their release name.
+- Fixed: CF `[ATMOS (undefined)]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Fixed: CF `[TrueHD]` to prevent double scoring with latest update of `[TrueHD Atmos]`.
+- Changed: CF `[HDR]` `[HDR (undefined)]`condition name.
+- Updated: CF `[HQ]` Added `FraMeSToR`.
+- Added: CF `[IMAX Enhanced]` to the site.
+- Fixed: Correct spelling for Enhanced.
+
+# 2022-01-15
+Updated: Radarr - Collection of Custom Formats
+- Fixed: CF [BR-DISK] Not matching if release group has DVD in it.
+- Fixed: CF [DTS] so it doesn't match `dts-mar` or `dts.hdr`.
+- Fixed: CF [DTS-HD MA] so it doesn't match `dts-mar` or `dts.hdr`.
+- Updated: CF [HQ-WEBDL] added `SIC` as `HQ WEBDL`.
+- Fixed: CF [LQ] corrected double paste and added correct block.
+- Updated: CF [x265 (720/1080p)] removed `Quality Group Exceptions` condition after several complaints.
+- NEW: CF [IMAX Enhanced]
+- Fixed: CF [IMAX] to prevent double scoring with [IMAX Enhanced]
+- Updated: Scores to the new scoring standard
+
+# 2022-01-14
+Test changes
+
+# 2022-01-14
+Initial Release for the new changelog.
