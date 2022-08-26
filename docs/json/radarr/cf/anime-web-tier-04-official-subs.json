@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KiyoshiStar)\\b"
+        "value": "\\b(KS|KiyoshiStar)\\b"
       }
     },
     {
