@@ -1,6 +1,6 @@
 ### Sonarr current logic
 
-??? summary "Sonarr current logic- [CLICK TO EXPAND]"
+??? summary "Sonarr current logic - [CLICK TO EXPAND]"
 
     As of 2021-11-06 the logic is as follows:
 

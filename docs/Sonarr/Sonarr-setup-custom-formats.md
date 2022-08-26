@@ -6,23 +6,23 @@ There isn't a best setup, being that everyone has their own personal preferences
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.
 
+--8<-- "includes/cf/score-attention.md"
+
 ------
 
 ## Basics
 
-Here we're going to explain where to setup the Custom Formats after you've added them, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-You will also see a short description of what each setting means.
+After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
 `Settings` => `Profiles`
 
-??? check "example - [CLICK TO EXPAND]"
-    ![!cf-settings-profiles](images/cf-settings-profiles.png)
-
-Select the profile that you use/prefer.
-
-![!cf-quality-profiles](images/cf-quality-profiles.png)
+![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 !!! info "Sonarr Custom Formats can be set per profile and isn't global"
+Select the profile that you want to use/prefer.
+
+![!cf-quality-profiles](images/cf-quality-profiles.png)
 
 ![!cf-profile-selected](images/cf-profile-selected.png)
 
@@ -34,7 +34,7 @@ Select the profile that you use/prefer.
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
-??? check "example - [CLICK TO EXPAND]"
+??? check "Screenshot example - [CLICK TO EXPAND]"
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
     !!! attention
@@ -43,20 +43,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
         - Always follow the data described in the guide.
         - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
-------
-
-!!! attention
-    Keep in mind Custom Formats are made to fine tune your Quality Profile
-
-    Generally, quality trumps all
-
-{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
-
-My suggestion is to create tiers of scores based on what things matter to you.
-
-Personally, I would only add the Custom Formats that do what you actually prefer. Especially in the beginning, including the [Releases you should avoid](#releases-you-should-avoid)
-
-!!! info
+!!! info "Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all"
 
     Custom formats are controlled by Quality Profiles.
 
@@ -68,13 +55,17 @@ Personally, I would only add the Custom Formats that do what you actually prefer
 
 ------
 
+{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+
+------
+
 ## Examples
 
 Here I will explain how to make the most use of Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
-All these examples make use of the [Collection of Custom Formats](/Sonarr/Sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+All these examples make use of the [Collection of Custom Formats](/Sonarr/Sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}
 
-All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.
+--8<-- "includes/cf/score-attention.md"
 
 ------
 
@@ -88,7 +79,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 #### Prefer HDR Metadata
 
-Lets say you prefer HDR metadata
+Lets say you prefer HDR metadata (HDR or Dolby Vision or Both)
 
 Then we would use the following order:
 
@@ -96,9 +87,9 @@ Then we would use the following order:
 
 ------
 
-!!! important
+!!! attention
 
-    I also suggest to change the Propers and Repacks settings in Radarr!!!
+    I also suggest to change the Propers and Repacks settings in Sonarr :bangbang:
 
     Instructions can be found [HERE](#proper-and-repacks)
 
@@ -176,7 +167,7 @@ Use the following main settings in your profile.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
+    Because I'm too lazy to calculate the maxim
 
 ------
 
@@ -186,7 +177,7 @@ Use the following main settings in your profile.
 
 ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 
-    I also suggest to change the Propers and Repacks settings in Radarr
+    I also suggest to change the Propers and Repacks settings in Sonarr
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/Sonarr-collection-of-custom-formats/#repack-proper) Custom Format.
 
@@ -229,15 +220,14 @@ Use the following main settings in your profile.
 
 ??? tip "Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]"
 
-    Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [720/1080p no x265](/Radarr/Radarr-collection-of-custom-formats/#x265-7201080p){:target="_blank" rel="noopener noreferrer"} Custom Format.
+    Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} Custom Format.
 
     Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
 
-    Use x265 only for 4k releases and the [x265 HD](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
+    Use x265 only for 4k releases and the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
 
 ## Thanks
 
 Special thanks to everyone that helped testing and creating these Custom Formats.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"
