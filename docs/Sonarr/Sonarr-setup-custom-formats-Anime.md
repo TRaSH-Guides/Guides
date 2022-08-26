@@ -48,7 +48,7 @@ After this has been done your profile should look like below
 ## Custom Formats
 
 !!! note
-    We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
+    We're going to make use of the below custom formats. See [How to import Custom Formats](Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
 {! include-markdown "../../includes/cf/sonarr-anime.md" !}
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
@@ -59,7 +59,7 @@ The scoring that has been set is the recommended scoring however some of the CFs
 Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the Remux-1080p - Anime profile that was setup before
 
 ??? check "example - [CLICK TO EXPAND]"
-    ![!cf-settings-profiles](images/cf-settings-profiles.png)
+    ![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
 In the profile enter the scores as per the above table in this section.
 
@@ -71,7 +71,7 @@ After you are done it should look like the image above
 
 Most of my information and knowledge came from:
 
-- rg9400 (Guidance on regex, anime groups and general knowledge share.)
+- rg9400 (Building the regex, anime groups and general knowledge share.)
 
 - Drazzilb (Guidance on anime groups, testing and general knowledge share.)
 
