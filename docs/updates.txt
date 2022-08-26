@@ -1,4 +1,35 @@
-#2022-08-13
+# 2022-08-26
+[Backend] Several Backend changes.
+- A lot of changes to make the site more dynamic and easier to maintain in the future.
+- Working on support for Widowmaker.
+[Radarr] Updated: setup custom formats #761
+- Tried to make the How to more clear and easier to read.
+- Added: Own Score warning
+- Added: Hint If you have a setup that doesn't support Dolby Vision for HDR Metadata
+- Added: optional message to the unwanted list
+- Renamed: CF `[x265 (720/1080p)]` to `[x265 (HD)]`
+- Added: Optional Category
+- Moved: Several CF to Optional
+Update br-disk.json #755
+-Updated: Radarr CF [BR-DISK]
+Fixed: EAC3 regex in the sound CFs #753+#754
+- Added: a check for some common spacing characters to the regex for EAC3
+Fixed: DTS-X and DTS-HD MA recognition #745
+- Fix: an issue with the recognition of DTS-HD MA when the file was named DTS-XLL
+Update naming scheme to support Plex Editions #738
+- Updated: Radarr naming scheme to support Plex Multiple Editions tags and conditional IMDb tags. #723
+Regex match for -D-Z0N3 in Clean script (SABnzbd) #732
+- Add: regex match for -D-Z0N3 in SABnzbd Clean script. This resolves an issue where "-D-Z0N3-xpost" was being shortened to "-D".
+Fixed: Word Boundaries for Tiered CFs #724
+- Added: word boundaries for all the tiered CFs to prevent wrongfully matching another release group.
+Add missing SCENE groups #719
+- Add: missing SCENE groups
+Added: CRFW to WEB Tier 01 and HQ-WEBDL #715
+- Added: the group `CRFW` to Radarr's CFs `WEB Tier 01` and `HQ-WEBDL` because of their hybrid DV HDR web releases.
+Added: Extras CF #714
+- Added: Radarr CF `[Extras]` with a default score of `-10000` to prevent picking up Extras instead of an actual release and to fix #713
+
+# 2022-08-13
 Fixed: Added word boundaries to HQ CFs #711
 - Added: more word boundaries to the HQ custom formats to prevent incorrect matching of release groups to fix Issue: #710
 

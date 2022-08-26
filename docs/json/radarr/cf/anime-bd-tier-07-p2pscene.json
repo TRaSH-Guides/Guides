@@ -104,12 +104,12 @@
       }
     },
     {
-      "name": "KS",
+      "name": "KiyoshiStar",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KS)\\b"
+        "value": "\\b(KS|KiyoshiStar)\\b"
       }
     },
     {
