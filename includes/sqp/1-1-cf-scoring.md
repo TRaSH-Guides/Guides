@@ -18,11 +18,9 @@
     | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json)   | {{ radarr['cf']['720p']['trash_score'] }}  | {{ radarr['cf']['720p']['trash_id'] }}  |
     | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/1080p.json) | {{ radarr['cf']['1080p']['trash_score'] }} | {{ radarr['cf']['1080p']['trash_id'] }} |
 
-{! include-markdown "../../includes/cf/misc.md" !}
-<!-- --8<-- "includes/cf/misc.md" -->
+{! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/unwanted.md" !}
-<!-- --8<-- "includes/cf/unwanted.md" -->
+{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
 ### Quality Size
 

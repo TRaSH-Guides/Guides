@@ -1,13 +1,10 @@
 #### Custom Formats and scores
 
-{! include-markdown "../../includes/cf/audio.md" !}
-<!-- --8<-- "includes/cf/audio.md" -->
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/hdr-metadata.md" !}
-<!-- --8<-- "includes/cf/hdr-metadata.md" -->
+{! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
 
-{! include-markdown "../../includes/cf/movie-versions-imaxe.md" !}
-<!-- --8<-- "includes/cf/movie-versions-imaxe.md" -->
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                                                                                    | Score                                                | Trash ID                                          |
@@ -17,14 +14,11 @@
     | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                                  | {{ radarr['cf']['hq-webdl']['trash_score'] }}        | {{ radarr['cf']['hq-webdl']['trash_id'] }}        |
     | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                              | 0                                                    | {{ radarr['cf']['hq']['trash_id'] }}              |
 
-{! include-markdown "../../includes/cf/hq4k.md" !}
-<!-- --8<-- "includes/cf/hq4k.md" -->
+{! include-markdown "../../includes/cf/radarr-hq4k.md" !}
 
-{! include-markdown "../../includes/cf/misc.md" !}
-<!-- --8<-- "includes/cf/misc.md" -->
+{! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/unwanted.md" !}
-<!-- --8<-- "includes/cf/unwanted.md" -->
+{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
 ### Quality Size
 
