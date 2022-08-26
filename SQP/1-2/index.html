@@ -2138,7 +2138,7 @@
 
 <!-- BEGIN INCLUDE ../../includes/sqp/1-2-cf-scoring.md -->
 <h4 id="custom-formats-and-scores">Custom Formats and scores<a class="headerlink" href="#custom-formats-and-scores" title="Permanent link"></a></h4>
-<!-- BEGIN INCLUDE ../../includes/cf/audio.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <table>
@@ -2224,9 +2224,8 @@
 </table>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/audio.md" -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/hdr-metadata.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-hdr-metadata.md -->
 <details class="summary">
 <summary>HDR Metadata - [CLICK TO EXPAND]</summary>
 <table>
@@ -2296,9 +2295,8 @@
 </div>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/hdr-metadata.md" -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/movie-versions-imaxe.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe.md -->
 <details class="summary">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
@@ -2355,7 +2353,6 @@
 </div>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/movie-versions-imaxe.md" -->
 
 <details class="summary">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
@@ -2391,7 +2388,7 @@
 </tbody>
 </table>
 </details>
-<!-- BEGIN INCLUDE ../../includes/cf/hq4k.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-hq4k.md -->
 <details class="summary">
 <summary>HQ 4k Encodes - [CLICK TO EXPAND]</summary>
 <table>
@@ -2442,9 +2439,8 @@
 </table>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/hq4k.md" -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/misc.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
 <details class="summary">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
@@ -2477,9 +2473,8 @@
 </details>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/misc.md" -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/unwanted.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -2507,12 +2502,12 @@
 <td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
 <td>-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
 <td>-10000</td>
 <td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
 </tr>
@@ -2548,16 +2543,16 @@
 </tr>
 </tbody>
 </table>
-<div class="admonition example">
-<p class="admonition-title">Breakdown and Why</p>
+<hr />
+<p>Breakdown and Why</p>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
-<p><strong>x265 (HD):</strong> This blocks/ignores 720/1080p releases that are encoded in x265 - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>x265 (HD):</strong> This blocks/ignores 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with the following Custom Format <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+<p class="admonition-title">Don't use this together with the following Custom Format <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
@@ -2566,7 +2561,7 @@
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with the following Custom Format <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></p>
+<p class="admonition-title">Don't use this together with the following Custom Format <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
@@ -2592,10 +2587,8 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 </li>
 </ul>
-</div>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/cf/unwanted.md" -->
 
 <h3 id="quality-size">Quality Size<a class="headerlink" href="#quality-size" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Quality</code></p>
