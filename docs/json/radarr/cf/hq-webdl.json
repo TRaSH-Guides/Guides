@@ -158,6 +158,15 @@
       }
     },
     {
+      "name": "MZABI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bMZABI\\b"
+      }
+    },
+    {
       "name": "NOSiViD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -191,6 +200,15 @@
       "required": false,
       "fields": {
         "value": "-PHOENiX\\b"
+      }
+    },
+    {
+      "name": "playWEB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bplayWEB\\b"
       }
     },
     {
