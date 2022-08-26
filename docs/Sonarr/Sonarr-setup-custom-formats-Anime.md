@@ -71,7 +71,9 @@ After you are done it should look like the image above
 
 Most of my information and knowledge came from:
 
-- rg9400 (Guidance on regex fixes, anime groups and general knowledge share.)
+- rg9400 (Guidance on regex, anime groups and general knowledge share.)
+
+- Drazzilb (Guidance on anime groups, testing and general knowledge share.)
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and general knowledge share.)
 
