@@ -7,10 +7,10 @@
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 
-        I also suggest to change the Propers and Repacks settings in Radarr
+        I also suggest to change the Propers and Repacks settings in Sonarr
 
         `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/Sonarr-collection-of-custom-formats/#repack-proper) Custom Format.
 
-        ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
+        ![!cf-mm-propers-repacks-disable](/Sonarr/images/cf-mm-propers-repacks-disable.png)
 
         This way you make sure the Custom Formats preferences will be used and not ignored.

@@ -2,14 +2,14 @@
 
 Here I will try to list a collection of the most needed and commonly used Custom Formats.
 These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
+Special thanks to everyone that helped testing and creating these Custom Formats.
 
 With Sonarr V4+, Custom Formats are much more advanced/powerful than with the release profiles, although this also means a Custom Format is much more complicated to setup.
 
 I also made 3 guides related to this one.
 
-- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
+- [How to import Custom Formats](/Sonarr/Sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/Sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
 - [How to setup Custom Formats](/Sonarr/Sonarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
 !!! tip
@@ -45,35 +45,35 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions                      | Unwanted                            | HQ Source Groups            | Streaming Services  |
-| ------------------------------------ | ----------------------------------- | --------------------------- | ------------------- |
-| [Hybrid](#hybrid)                    | [BR-DISK](#br-disk)                 | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster)                | [LQ](#lq)                           | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
-| [Special Editions](#special-edition) | [No-RlsGroup](#no-rlsgroup)         | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
-|                                      | [Obfuscated](#obfuscated)           | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
-|                                      | [Retags](#retags)                   |                             | [HBO Max](#hmax)    |
-|                                      | [Bad Dual Groups](#bad-dual-groups) |                             | [HBO](#hbo)         |
-|                                      | [DV (WEBDL)](#dv-webdl)             |                             | [Hulu](#hulu)       |
-|                                      | [x265 (HD)](#x265-hd)               |                             | [Netflix](#nf)      |
-|                                      | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                             | [Paramount+](#pmtp) |
-|                                      |                                     |                             | [Peacock TV](#pcok) |
-|                                      |                                     |                             | [Quibi](#qibi)      |
-|                                      |                                     |                             | [SHOWTIME](#sho)    |
-|                                      |                                     |                             | [YouTube Red](#red) |
-|                                      |                                     |                             | [iTunes](#it)       |
+| Series Versions                      | Unwanted                           | HQ Source Groups            | Streaming Services  |
+| ------------------------------------ | ---------------------------------- | --------------------------- | ------------------- |
+| [Hybrid](#hybrid)                    | [BR-DISK](#br-disk)                | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
+| [Remaster](#remaster)                | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
+| [Special Editions](#special-edition) | [DV (WEBDL)](#dv-webdl)            | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
+|                                      | [x265 (HD)](#x265-hd)              | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
+|                                      | [x265 (no HDR/DV)](#x265-no-hdrdv) |                             | [HBO Max](#hmax)    |
+|                                      |                                    |                             | [HBO](#hbo)         |
+|                                      |                                    |                             | [Hulu](#hulu)       |
+|                                      |                                    |                             | [Netflix](#nf)      |
+|                                      |                                    |                             | [Paramount+](#pmtp) |
+|                                      |                                    |                             | [Peacock TV](#pcok) |
+|                                      |                                    |                             | [Quibi](#qibi)      |
+|                                      |                                    |                             | [SHOWTIME](#sho)    |
+|                                      |                                    |                             | [YouTube Red](#red) |
+|                                      |                                    |                             | [iTunes](#it)       |
 
 ------
 
-| Misc                            | Misc                         | &nbsp; | &nbsp; |
-| ------------------------------- | ---------------------------- | ------ | ------ |
-| [FreeLeech](#freeleech)         | [Season Packs](#season-pack) | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                 | [Scene](#scene)              | &nbsp; | &nbsp; |
-| [Multi](#multi)                 | &nbsp;                       | &nbsp; | &nbsp; |
-| [Repack/Proper](#repack-proper) | &nbsp;                       | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)         | &nbsp;                       | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)         | &nbsp;                       | &nbsp; | &nbsp; |
-| [x264](#x264)                   | &nbsp;                       | &nbsp; | &nbsp; |
-| [x265](#x265)                   | &nbsp;                       | &nbsp; | &nbsp; |
+| Misc                            | Optional                            | &nbsp; | &nbsp; |
+| ------------------------------- | ----------------------------------- | ------ | ------ |
+| [FreeLeech](#freeleech)         | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                 | [Scene](#scene)                     | &nbsp; | &nbsp; |
+| [Multi](#multi)                 | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [Repack/Proper](#repack-proper) | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [Repack v2](#repack-v2)         | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [Repack v3](#repack-v3)         | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
+| [x264](#x264)                   |                                     | &nbsp; | &nbsp; |
+| [x265](#x265)                   |                                     | &nbsp; | &nbsp; |
 
 ------
 
@@ -750,19 +750,19 @@ I also made 3 guides related to this one.
 
 ??? faq "BR-DISK - [CLICK TO EXPAND]"
 
-    This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+    This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 
     You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
     !!! note
 
-        Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
+        Depending on your renaming scheme it could happen that Sonarr will match renamed files after they are downloaded and imported as `BR-DISK`,
         This is a cosmetic annoyance until I come up with another way to solve this,
         being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
         Several reasons why this is happening:
 
         - Blame the often wrongly used naming of x265 encodes.
-        - Radarr v3/v4 uses dynamic custom formats.
+        - Sonarr v3/v4 uses dynamic custom formats.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -800,10 +800,12 @@ I also made 3 guides related to this one.
 
     This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
-    In your quality profile use the following score for this Custom Format: `-10000`
+    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_score'] }}`
 
     !!! fail ""
         --8<-- "includes/docker/x265.md"
+
+            !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -825,69 +827,14 @@ I also made 3 guides related to this one.
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
-    In your quality profile use the following score for this Custom Format: `-10000`
+    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}`
 
-    !!! Danger
-
-        Don't use this together with the following Custom Format [x265 (HD)](#x265-h)
+    !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd) :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### No-RlsGroup
-
-??? faq "No-RlsGroup - [CLICK TO EXPAND]"
-
-    Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
-
-    !!! warning
-
-        If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Obfuscated
-
-??? faq "Obfuscated - [CLICK TO EXPAND]"
-
-    Optional (use these only if you dislike renamed releases)
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/obfuscated.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Retags
-
-??? faq "Retags - [CLICK TO EXPAND]"
-
-    Optional (use these only if you dislike retagged releases)
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/retags.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -911,22 +858,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Bad Dual Groups
-
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1010,6 +941,53 @@ I also made 3 guides related to this one.
 
 ------
 
+### FreeLeech
+
+??? faq "FreeLeech - [CLICK TO EXPAND]"
+
+    Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
+
+    !!! attention
+        Keep in mind not all trackers support this option.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### MPEG2
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mpeg2.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Multi
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## Optional
+
+------
+
 ### Season Pack
 
 ??? faq "Season Pack - [CLICK TO EXPAND]"
@@ -1051,43 +1029,69 @@ I also made 3 guides related to this one.
 
 ------
 
-### FreeLeech
+### No-RlsGroup
 
-??? faq "FreeLeech - [CLICK TO EXPAND]"
+??? faq "No-RlsGroup - [CLICK TO EXPAND]"
 
-    Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
+    Some indexers strip out the release group which could result in LQ groups getting a higher score.
+    For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
 
-    !!! attention
-        Keep in mind not all trackers support this option.
+    !!! warning
+
+        If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### MPEG2
+### Obfuscated
+
+??? faq "Obfuscated - [CLICK TO EXPAND]"
+
+    Optional (use these only if you dislike renamed releases)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mpeg2.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/obfuscated.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### Multi
+### Retags
+
+??? faq "Retags - [CLICK TO EXPAND]"
+
+    Optional (use these only if you dislike retagged releases)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/retags.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
