@@ -346,12 +346,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Sonarr/Sonarr-how-to-update-custom-formats/</loc>
+         <lastmod>2022-08-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/Sonarr-import-custom-formats/</loc>
+         <lastmod>2022-08-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/</loc>
          <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://trash-guides.info/Sonarr/Sonarr-remote-path-mapping/</loc>
+         <lastmod>2022-08-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/Sonarr-setup-custom-formats/</loc>
          <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
