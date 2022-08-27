@@ -24,12 +24,12 @@
 
 `Settings` => `Quality`
 
-| Quality      | Min   | Preferred | Max |
-| ------------ | ----- | --------- | --- |
-| WEBDL-2160p  | 50.8  | 399       | 400 |
-| WEBRip-2160p | 50.8  | 399       | 400 |
-| Bluray-2160p | 102   | 399       | 400 |
-| Remux-2160p  | 187.4 | 399       | 400 |
+| Quality                                                            | Min                                                            | Preferred                                                            | Max                                                            |
+| ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['max'] }} |
 
 ??? check "example - [CLICK TO EXPAND]"
     ![!Quality Size](/SQP/images/uhd-quality-size.png)
