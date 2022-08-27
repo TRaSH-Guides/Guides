@@ -6,7 +6,7 @@ Well, it's actually personal preference so I will show you my recommendations.
 But before you continue to read, as with all my guides:
 
 !!! error ""
-**If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
+    **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.
 
