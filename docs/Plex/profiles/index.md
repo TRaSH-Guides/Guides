@@ -13,7 +13,7 @@ To make use of the profiles you need to add it in your your plex folder
 
 Example paths:
 
-* Hotio's container: `/appdata/plex/Profiles`
+* Hotio's container: `/app/usr/lib/plexmediaserver/Resources/Profiles`
 * LSIO container: `/appdata/plex/database/Library/Application Support/Plex Media Server/Profiles` or `/appdata/plex/Library/Application Support/Plex Media Server/Profiles`
 
 ## Profiles
