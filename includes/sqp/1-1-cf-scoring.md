@@ -30,12 +30,12 @@ Change the 1080p Quality Size to the range BHDStudio uses ( I searched BHD to ch
 
 If you notice issues with the sizes please report it.
 
-| Quality      | Min  | Preferred | Max   |
-| ------------ | ---- | --------- | ----- |
-| WEBDL-1080p  | 25.2 | 84.7      | 85.7  |
-| WEBRip-1080p | 25.2 | 84.7      | 85.7  |
-| Bluray-720p  | 25.2 | 101       | 102   |
-| Bluray-1080p | 33.8 | 135.9     | 136.9 |
+| Quality                                                                  | Min                                                                  | Preferred                                                                  | Max                                                                  |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['max'] }} |
 
 ??? check "example - [CLICK TO EXPAND]"
     ![!Quality Size](/SQP/images/quality-size.png)
