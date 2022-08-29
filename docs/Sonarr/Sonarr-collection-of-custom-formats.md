@@ -86,7 +86,8 @@ I also made 3 guides related to this one.
 | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v3](#v3)                             |
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [v4](#v4)                             |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [VRV](#vrv)                           |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [10bit](#10bit)                       |
+|                                                                             |                                                                       | [Anime Dual Audio](#anime-dual-audio) |
 |                                                                             |                                                                       | [Dubs Only](#dubs-only)               |
 
 ## Audio Advanced
@@ -1436,7 +1437,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
 ??? faq "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1451,7 +1452,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 02 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1466,7 +1467,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 03 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1481,7 +1482,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 04 (SeaDex Muxers)
 
 ??? faq "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1496,7 +1497,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 05 (Remuxes)
 
 ??? faq "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that are consistent and do Remuxes
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1511,7 +1512,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 06 (FanSubs)
 
 ??? faq "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1526,7 +1527,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 07 (P2P/Scene)
 
 ??? faq "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
-    Description placeholder
+    Known P2P and Scene Anime groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1541,7 +1542,7 @@ I also made 3 guides related to this one.
 ### Anime BD Tier 08 (Mini Encodes)
 
 ??? faq "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
-    Description placeholder
+    Know groups that do mini encodes
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1556,7 +1557,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 01 (Muxers)
 
 ??? faq "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1571,7 +1572,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 02 (Top FanSubs)
 
 ??? faq "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1586,7 +1587,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 03 (SubsPlease)
 
 ??? faq "Anime Web Tier 03 (SubsPlease) - [CLICK TO EXPAND]"
-    Description placeholder
+    SubsPlease group. They are official subs but tend to be more consistent and release fast
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1601,7 +1602,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 04 (Official Subs)
 
 ??? faq "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
-    Description placeholder
+    Official sub groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1616,7 +1617,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 05 (FanSubs)
 
 ??? faq "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1631,7 +1632,7 @@ I also made 3 guides related to this one.
 ### Anime Web Tier 06 (FanSubs)
 
 ??? faq "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
-    Description placeholder
+    FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1646,7 +1647,7 @@ I also made 3 guides related to this one.
 ### Anime Raws
 
 ??? faq "Anime Raws - [CLICK TO EXPAND]"
-    Description placeholder
+    A collection of know groups that release raws
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1661,7 +1662,7 @@ I also made 3 guides related to this one.
 ### Anime LQ Groups
 
 ??? faq "Anime LQ Groups - [CLICK TO EXPAND]"
-    Description placeholder
+    A collection of known Low Quality groups.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1676,7 +1677,7 @@ I also made 3 guides related to this one.
 ### Uncensored
 
 ??? faq "Uncensored - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that are uncensored
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1691,7 +1692,7 @@ I also made 3 guides related to this one.
 ### v0
 
 ??? faq "v0 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover releases named with v0 which we don't want
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1706,7 +1707,7 @@ I also made 3 guides related to this one.
 ### v1
 
 ??? faq "v1 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v1 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1721,7 +1722,7 @@ I also made 3 guides related to this one.
 ### v2
 
 ??? faq "v2 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v2 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1736,7 +1737,7 @@ I also made 3 guides related to this one.
 ### v3
 
 ??? faq "v3 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v3 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1751,7 +1752,7 @@ I also made 3 guides related to this one.
 ### v4
 
 ??? faq "v4 - [CLICK TO EXPAND]"
-    Description placeholder
+    CF to cover v4 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1766,7 +1767,7 @@ I also made 3 guides related to this one.
 ### VRV
 
 ??? faq "VRV - [CLICK TO EXPAND]"
-    Description placeholder
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1778,10 +1779,25 @@ I also made 3 guides related to this one.
 
 ------
 
+### 10bit
+
+??? faq "10bit - [CLICK TO EXPAND]"
+    This CF covers releases that are 10bit
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10bit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### Anime Dual Audio
 
 ??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that have Dual Audio
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1796,7 +1812,7 @@ I also made 3 guides related to this one.
 ### Dubs Only
 
 ??? faq "Dubs Only - [CLICK TO EXPAND]"
-    Description placeholder
+    This CF covers releases that only have Dubs
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
