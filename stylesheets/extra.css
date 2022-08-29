@@ -15,15 +15,15 @@ th {
 /* td a {
   color: white !important;
 }
-*/
+
 td a:hover {
   color: red !important;
 }
-/*
-.md-content {
-  --md-typeset-a-color: #1372EB;
-}
 */
+.md-content {
+  --md-typeset-a-color: orange;
+}
+
 footer.sponsorship {
   text-align: center;
   hr {
@@ -59,6 +59,6 @@ th, td {
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
   background-color: hsla(var(--md-hue),25%,25%,1)
 }
-[data-md-color-scheme="slate"] .md-content {
-  --md-typeset-a-color: #f8f8f8;
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+  color: #f8f8f8;
 }
