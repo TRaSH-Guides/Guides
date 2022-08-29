@@ -12,19 +12,19 @@
 
 ### Recommended naming scheme
 
-For the Recommended naming scheme please go [HERE](/sonarr/sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"}
+For the Recommended naming scheme please go [HERE](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/sonarr/sonarr-quality-settings-file-size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-quality-settings-file-size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
 ## Quality Profile
 
-We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together see [here](/sonarr/tips/merge-quality){:target="_blank" rel="noopener noreferrer"} for an example. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
+We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together see [here](/Sonarr/Tips/Merge-quality/){:target="_blank" rel="noopener noreferrer"} for an example. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
 
 Go to `Settings` => `Profiles`
 
@@ -48,7 +48,7 @@ After this has been done your profile should look like below
 ## Custom Formats
 
 !!! note
-    We're going to make use of the below custom formats. See [How to import Custom Formats](Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
+    We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
 {! include-markdown "../../includes/cf/sonarr-anime.md" !}
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
