@@ -8,17 +8,67 @@
 
     It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of Quality Profiles and score different CFs as required
 
+The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+
+!!! note
+    Nyaa is a public tracker while AB is an invite only tracker.
+
+---
+
 ## Media Management
 
 ### Recommended naming scheme
 
-For the Recommended naming scheme please go [HERE](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"}
+```bash
+{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+```
+
+??? summary "Results: - [Click to Expand]"
+
+    Single Episode:
+
+    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
+
+    Multi Episode:
+
+    `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp`
+
+#### Series Folder Format
+
+```bash
+{Series TitleYear}
+```
+
+Result:
+
+`The Series Title! (2010)`
+
+#### Season Folder Format
+
+```bash
+Season {season:00}
+```
+
+Result:
+
+`Season 01`
+
+#### Multi-Episode Style
+
+```bash
+Prefixed Range
+```
+
+Result:
+
+![result](images/cfa-prefixedrange.png)
 
 ---
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/sonarr-quality-settings-file-size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -28,7 +78,7 @@ We need to create a new profile called `Remux-1080p - Anime` due to the way anim
 
 Go to `Settings` => `Profiles`
 
-??? check "example - [CLICK TO EXPAND]"
+??? check "example - [Click to Expand]"
     ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 ![!cfa-mergedqualities](images/cfa-mergedqualities.png)
@@ -48,17 +98,19 @@ After this has been done your profile should look like below
 ## Custom Formats
 
 !!! note
-    We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
+    We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import the custom formats
 
 {! include-markdown "../../includes/cf/sonarr-anime.md" !}
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
 
 The scoring that has been set is the recommended scoring however some of the CFs are optional depending on what you prefer.
-`Anime Dual Audio`, `Uncensored` and `10bit` can be given scores if you want to prefer content with these attributes
+`Anime Dual Audio`, `Uncensored` and `10bit` can be given postive scores if you want to prefer content with these attributes.
+
+`Anime Raws` and `Dubs Only` are optional negative scores if you prefer these attributes you can give them a positive score
 
 Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the Remux-1080p - Anime profile that was setup before
 
-??? check "example - [CLICK TO EXPAND]"
+??? check "example - [Click to Expand"
     ![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
 In the profile enter the scores as per the above table in this section.
@@ -73,11 +125,11 @@ Most of my information and knowledge came from:
 
 - rg9400 (Building the regex, anime groups and general knowledge share.)
 
+- V01 from SeaDex (Guidance on anime groups and general knowledge share.)
+
 - Drazzilb (Guidance on anime groups, testing and general knowledge share.)
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and general knowledge share.)
-
-Thanks a bunch!!
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->

@@ -1,8 +1,8 @@
 nav:
     - Home: index.md
-    - Quality Settings (File Size): Sonarr-Quality-Settings-File-Size.md
-    - Recommended naming scheme: Sonarr-recommended-naming-scheme.md
-    - Release Profile RegEx (WEB-DL): Sonarr-Release-Profile-RegEx.md
-    - Release Profile RegEx (Anime): Sonarr-Release-Profile-RegEx-Anime.md
-    - Remote Path Mappings explained: Sonarr-remote-path-mapping.md
+    - Quality Settings (File Size): sonarr-quality-settings-file-size.md
+    - Recommended naming scheme: sonarr-recommended-naming-scheme.md
+    - Release Profile RegEx (WEB-DL): sonarr-release-profile-regex.md
+    - Release Profile RegEx (Anime): sonarr-release-profile-regex-anime.md
+    - Remote Path Mappings explained: sonarr-remote-path-mapping.md
     - Tips

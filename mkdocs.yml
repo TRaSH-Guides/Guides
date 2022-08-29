@@ -78,12 +78,12 @@ plugins:
         Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
         Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         # Sonarr old redirects
-        Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/Sonarr-remote-path-mapping.md
-        Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/Sonarr-Quality-Settings-File-Size.md
-        Sonarr/V3/Sonarr-recommended-naming-scheme.md: Sonarr/Sonarr-recommended-naming-scheme.md
-        Sonarr/V3/Sonarr-Release-Profile-RegEx.md: Sonarr/Sonarr-Release-Profile-RegEx.md
-        Sonarr/V3/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/Sonarr-Release-Profile-RegEx-Anime.md
-        Sonarr/V3/Sonarr-remote-path-mapping.md: Sonarr/Sonarr-remote-path-mapping.md
+        Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/sonarr-remote-path-mapping.md
+        Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/sonarr-quality-settings-file-size.md
+        Sonarr/V3/Sonarr-recommended-naming-scheme.md: Sonarr/sonarr-recommended-naming-scheme.md
+        Sonarr/V3/Sonarr-Release-Profile-RegEx.md: Sonarr/sonarr-release-profile-regex.md
+        Sonarr/V3/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-release-profile-regex-anime.md
+        Sonarr/V3/Sonarr-remote-path-mapping.md: Sonarr/sonarr-remote-path-mapping.md
         # Downloader old redirects
         NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
