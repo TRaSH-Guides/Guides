@@ -18,7 +18,7 @@ For the Recommended naming scheme please go [HERE](/Sonarr/Sonarr-recommended-na
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-quality-settings-file-size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
