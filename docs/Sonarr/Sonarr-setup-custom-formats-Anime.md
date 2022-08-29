@@ -24,7 +24,7 @@ For quality settings please refer to [Sonarr Quality Definitions - Anime](/sonar
 
 ## Quality Profile
 
-We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
+We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together see [here](/sonarr/tips/merge-quality){:target="_blank" rel="noopener noreferrer"} for an example. We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, and `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p` so that scoring will work correctly.
 
 Go to `Settings` => `Profiles`
 
