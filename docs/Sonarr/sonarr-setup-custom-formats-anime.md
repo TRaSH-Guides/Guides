@@ -3,6 +3,8 @@
 !!! attention
     You must be running Sonarr V4 to be able to use this setup
 
+![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5)
+
 !!! note
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
