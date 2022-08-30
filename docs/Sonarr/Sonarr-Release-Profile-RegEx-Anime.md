@@ -62,7 +62,7 @@ Having tested most of these settings, they work pretty well, but Anime is a fick
 
 ### Suggested naming scheme
 
-For this I used the [Sonarr Recommended naming scheme](/Sonarr/sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
+For this I used the [Sonarr Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
 
 #### Anime Episode Format
 

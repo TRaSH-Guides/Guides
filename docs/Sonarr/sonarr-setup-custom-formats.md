@@ -99,7 +99,7 @@ Then we would use the following order:
 
 If you prefer 720p/1080p WEBDL (WEB-1080p)
 
-I suggest to first follow the [Quality Settings (File Size)](/Sonarr/sonarr-quality-settings-file-size/){:target="_blank" rel="noopener noreferrer"}
+I suggest to first follow the [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. :bangbang:
 
 For this Quality Profile we're going to make use of the following Custom Formats
@@ -135,7 +135,7 @@ Use the following main settings in your profile.
 
 If you prefer 2160p WEBDL (WEB-2160p)
 
-I suggest to first follow the [Quality Settings (File Size)](/Sonarr/sonarr-quality-settings-file-size/){:target="_blank" rel="noopener noreferrer"}
+I suggest to first follow the [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/){:target="_blank" rel="noopener noreferrer"}
 If you think the sizes are too big to your preference then stop reading and see if the other tutorials are helpful to you. :bangbang:
 
 For this Quality Profile we're going to make use of the following Custom Formats

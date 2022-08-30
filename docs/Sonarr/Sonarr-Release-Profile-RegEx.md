@@ -103,7 +103,7 @@ You will get a popup screen that will look like this:
 
     Example of a naming scheme for series:
 
-    Can be found [HERE](/Sonarr/sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
+    Can be found [HERE](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
 
 Add this to your `Preferred (3)` with a score of [100]
 
