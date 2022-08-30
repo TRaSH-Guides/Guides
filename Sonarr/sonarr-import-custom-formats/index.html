@@ -12,14 +12,14 @@
         <meta name="author" content="TRaSH">
       
       
-        <link rel="canonical" href="https://trash-guides.info/Sonarr/Sonarr-how-to-update-custom-formats/">
+        <link rel="canonical" href="https://trash-guides.info/Sonarr/sonarr-import-custom-formats/">
       
       <link rel="icon" href="../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
     
     
       
-        <title>How to update Custom Formats - TRaSH Guides</title>
+        <title>How to import Custom Formats - TRaSH Guides</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-update-custom-formats" class="md-skip">
+        <a href="#how-to-import-custom-formats" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to update Custom Formats
+              How to import Custom Formats
             
           </span>
         </div>
@@ -1952,11 +1952,31 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-copypaste-the-json" class="md-nav__link">
-    How to Copy/Paste the JSON
+  <a href="#how-to-copypaste-the-json-from-the-site" class="md-nav__link">
+    How to Copy/Paste the JSON from the site
   </a>
   
-    <nav class="md-nav" aria-label="How to Copy/Paste the JSON">
+    <nav class="md-nav" aria-label="How to Copy/Paste the JSON from the site">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expand-the-json-for-br-disk" class="md-nav__link">
+    Expand the JSON for BR-DISK
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-import-a-json-custom-format" class="md-nav__link">
+    How to import a JSON Custom Format
+  </a>
+  
+    <nav class="md-nav" aria-label="How to import a JSON Custom Format">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1967,8 +1987,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#open-the-custom-format-you-want-to-update" class="md-nav__link">
-    Open the Custom Format you want to update
+  <a href="#add-a-new-custom-format" class="md-nav__link">
+    Add a new Custom Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-the-custom-format" class="md-nav__link">
+    Import the Custom Format
   </a>
   
 </li>
@@ -1986,6 +2013,19 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-adding-other-custom-formats-wisely" class="md-nav__link">
+    Start adding other Custom Formats wisely
+  </a>
+  
+    <nav class="md-nav" aria-label="Start adding other Custom Formats wisely">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#trash-sync" class="md-nav__link">
@@ -2012,32 +2052,46 @@
               
     
                 
-  <a href="https://github.com/TRaSH-/Guides/edit/master/docs/Sonarr/Sonarr-how-to-update-custom-formats.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/TRaSH-/Guides/edit/master/docs/Sonarr/sonarr-import-custom-formats.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="how-to-update-custom-formats">How to update Custom Formats<a class="headerlink" href="#how-to-update-custom-formats" title="Permanent link"></a></h1>
-<p>Here I will try to explain how you can manually update Custom Formats for Sonarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.</p>
+<h1 id="how-to-import-custom-formats">How to import Custom Formats<a class="headerlink" href="#how-to-import-custom-formats" title="Permanent link"></a></h1>
+<p>Here I will try to explain how you can manually import Custom Formats for Sonarr v4+.</p>
 <div class="admonition info">
 <p class="admonition-title">Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all</p>
 </div>
-<h2 id="how-to-copypaste-the-json">How to Copy/Paste the JSON<a class="headerlink" href="#how-to-copypaste-the-json" title="Permanent link"></a></h2>
-<p>The manual way is almost the same as the Import Custom Format way found <a href="/Sonarr/Sonarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">HERE</a></p>
+<h2 id="how-to-copypaste-the-json-from-the-site">How to Copy/Paste the JSON from the site<a class="headerlink" href="#how-to-copypaste-the-json-from-the-site" title="Permanent link"></a></h2>
+<p>In this example I will use the <a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a> Custom Format, the one most people don't want to download anyway. And if you do, then you probably don't use any of the Starr apps or Plex, being both don't support it.</p>
+<p>Visit the <a href="/Sonarr/sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Collection of Custom Formats</a> and select <a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a> from the table.</p>
+<p><img alt="cf-table-select-brdisk" src="../images/cf-table-select-brdisk.png" /></p>
+<h3 id="expand-the-json-for-br-disk">Expand the JSON for BR-DISK<a class="headerlink" href="#expand-the-json-for-br-disk" title="Permanent link"></a></h3>
+<p><img alt="cf-json-expand" src="../images/cf-json-expand.png" /></p>
+<p>Then click the copy icon in the top right corner</p>
+<p><img alt="cf-json-copy-paste" src="../images/cf-json-copy-paste.png" /></p>
+<h2 id="how-to-import-a-json-custom-format">How to import a JSON Custom Format<a class="headerlink" href="#how-to-import-a-json-custom-format" title="Permanent link"></a></h2>
 <h3 id="in-sonarr">In Sonarr<a class="headerlink" href="#in-sonarr" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Custom Formats</code></p>
 <p><img alt="cf-settings-cf" src="../images/cf-settings-cf.png" /></p>
-<h3 id="open-the-custom-format-you-want-to-update">Open the Custom Format you want to update<a class="headerlink" href="#open-the-custom-format-you-want-to-update" title="Permanent link"></a></h3>
-<p><div class="lightgallery"><a data-sub-html="Import To Update" href="../images/cf-import-to-update.png"><img alt="Import To Update" src="../images/cf-import-to-update.png" /></a></div></p>
+<h3 id="add-a-new-custom-format">Add a new Custom Format<a class="headerlink" href="#add-a-new-custom-format" title="Permanent link"></a></h3>
+<p>Then click on the <img alt="cf-plus-add-small" src="../images/cf-plus-add-small.png" /> to add a new Custom Format.</p>
+<h3 id="import-the-custom-format">Import the Custom Format<a class="headerlink" href="#import-the-custom-format" title="Permanent link"></a></h3>
+<p>Followed by the <code>Import</code> in the lower left.</p>
+<p><img alt="cf-import" src="../images/cf-import.png" /></p>
 <h3 id="paste-the-custom-format">Paste the Custom Format<a class="headerlink" href="#paste-the-custom-format" title="Permanent link"></a></h3>
-<p>In the empty <code>Custom Format JSON</code> box (1) you just paste the <code>JSON</code> that you got from the <a href="/Sonarr/Sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Custom Format Collection</a> or provided to you from other sources followed by the <code>Import</code> button (2).</p>
+<p>Paste the <code>JSON</code> in the empty <code>Custom Format JSON</code> box (1) that you got from the <a href="/Sonarr/sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Custom Format Collection</a> followed by the <code>Import</code> button (2).</p>
 <p><img alt="cf-import-cf" src="../images/cf-import-cf.png" /></p>
 <h3 id="save-the-custom-format">Save the Custom Format<a class="headerlink" href="#save-the-custom-format" title="Permanent link"></a></h3>
-<p>After selecting the <code>Import</code> button you will get a screen that has all the Custom Format variables filled in correctly, all you need to do now is click on the <code>Save</code> button and you're done.</p>
+<p>After selecting the <code>Import</code> button you will get a screen that has all the Custom Formats variables filled in correctly,
+all you need to do now is click on the <code>Save</code> button and you're done.</p>
 <p><img alt="cf-import-done" src="../images/cf-import-done.png" /></p>
-<div class="admonition attention">
-<p class="admonition-title">The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<hr />
+<h2 id="start-adding-other-custom-formats-wisely">Start adding other Custom Formats wisely<a class="headerlink" href="#start-adding-other-custom-formats-wisely" title="Permanent link"></a></h2>
+<div class="admonition info">
+<p>Start adding more Custom Formats wisely, <strong>Don't add all the available Custom Formats!!!</strong></p>
+<p>Check out the <a href="/Sonarr/sonarr-setup-custom-formats/">How to setup Custom Formats</a> where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.</p>
 </div>
 <h3 id="trash-sync">TRaSH Sync<a class="headerlink" href="#trash-sync" title="Permanent link"></a></h3>
 <p>This can be done also automatically with one of the TRaSH Sync Applications,</p>
@@ -2054,7 +2108,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 26, 2022 21:12:14</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 29, 2022 22:08:46</span>
       
     
   </small>
@@ -2091,7 +2145,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Sonarr-collection-of-custom-formats/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Collection of Custom Formats" rel="prev">
+        <a href="../sonarr-how-to-update-custom-formats/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to update Custom Formats" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2100,20 +2154,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Collection of Custom Formats
+              How to update Custom Formats
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Sonarr-import-custom-formats/" class="md-footer__link md-footer__link--next" aria-label="Next: How to import Custom Formats" rel="next">
+        <a href="../sonarr-setup-custom-formats-anime/" class="md-footer__link md-footer__link--next" aria-label="Next: How to setup Custom Formats (Anime)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              How to import Custom Formats
+              How to setup Custom Formats (Anime)
             </div>
           </div>
           <div class="md-footer__button md-icon">
