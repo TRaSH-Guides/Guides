@@ -125,7 +125,7 @@ After you are done it should look like the image above.
 
 Most of my information and knowledge came from:
 
-- rg9400 (Building the regex, anime groups and general knowledge share.)
+- rg9400 (Building the Custom Formats, Guidance on anime groups and general knowledge share.)
 
 - V01 from SeaDex (Guidance on anime groups and general knowledge share.)
 
