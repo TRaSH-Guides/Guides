@@ -15,11 +15,12 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
-    - icon: fontawesome/brands/github-square
+    - icon: fontawesome/brands/square-github
       link: https://github.com/TRaSH-/Guides
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/github-permalink-style.css
 
 markdown_extensions:
   - admonition
@@ -36,14 +37,18 @@ markdown_extensions:
   - codehilite:
       guess_lang: true
   - toc:
-      permalink: "¶"
+      permalink: ""
       toc_depth: 5
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
-
 plugins:
+  - include-markdown:
+      opening_tag: "{!"
+      closing_tag: "!}"
+  - markdownextradata:
+      data: docs/json
   - search
   - git-revision-date-localized:
       type: datetime
@@ -84,6 +89,13 @@ plugins:
         NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
         # Hardlinks old redirects
         Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        # How to old redirects
+        How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
+        How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
+        How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
+        How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
+        How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
+        How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
         # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md

@@ -6,7 +6,7 @@ name your files?" First off, it's personal preference, but it's often recommende
 Why?
 
 If, for what ever reason, you ever need to do a re-install or re-import in
-Radarr or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
+the Starr Apps or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
@@ -153,4 +153,5 @@ Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

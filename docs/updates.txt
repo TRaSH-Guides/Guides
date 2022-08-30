@@ -1,4 +1,94 @@
-#2022-07-27
+# 2022-08-26
+[Backend] Several Backend changes.
+- A lot of changes to make the site more dynamic and easier to maintain in the future.
+- Working on support for Widowmaker.
+[Radarr] Updated: setup custom formats #761
+- Tried to make the How to more clear and easier to read.
+- Added: Own Score warning
+- Added: Hint If you have a setup that doesn't support Dolby Vision for HDR Metadata
+- Added: optional message to the unwanted list
+- Renamed: CF `[x265 (720/1080p)]` to `[x265 (HD)]`
+- Added: Optional Category
+- Moved: Several CF to Optional
+Update br-disk.json #755
+-Updated: Radarr CF [BR-DISK]
+Fixed: EAC3 regex in the sound CFs #753+#754
+- Added: a check for some common spacing characters to the regex for EAC3
+Fixed: DTS-X and DTS-HD MA recognition #745
+- Fix: an issue with the recognition of DTS-HD MA when the file was named DTS-XLL
+Update naming scheme to support Plex Editions #738
+- Updated: Radarr naming scheme to support Plex Multiple Editions tags and conditional IMDb tags. #723
+Regex match for -D-Z0N3 in Clean script (SABnzbd) #732
+- Add: regex match for -D-Z0N3 in SABnzbd Clean script. This resolves an issue where "-D-Z0N3-xpost" was being shortened to "-D".
+Fixed: Word Boundaries for Tiered CFs #724
+- Added: word boundaries for all the tiered CFs to prevent wrongfully matching another release group.
+Add missing SCENE groups #719
+- Add: missing SCENE groups
+Added: CRFW to WEB Tier 01 and HQ-WEBDL #715
+- Added: the group `CRFW` to Radarr's CFs `WEB Tier 01` and `HQ-WEBDL` because of their hybrid DV HDR web releases.
+Added: Extras CF #714
+- Added: Radarr CF `[Extras]` with a default score of `-10000` to prevent picking up Extras instead of an actual release and to fix #713
+
+# 2022-08-13
+Fixed: Added word boundaries to HQ CFs #711
+- Added: more word boundaries to the HQ custom formats to prevent incorrect matching of release groups to fix Issue: #710
+
+NEW: CF [x265 (no HDR/DV)] #708
+- NEW: CF `[x265 (no HDR/DV)]` - This blocks/ignores 720/1080p (HD) releases that are encoded in x265. **but it will allow to exclude/bypass if it has HDR and/or DV**
+- NOTE: Don't use this together with the following Custom Format [x265 (720/1080p)].
+
+Updated: LQ CF with new Groups #707
+- Updated the `LQ` CF to include a few more groups, sorted and formatted the json as well.
+- Added `EPiC` to the `LQ` CF to fix Issue: #702
+
+Updated br-disk.json #706
+- Fixed: GERMAN SCENE REMUXES Recognized as BR-DISK.
+- Added: BDISO recognition.
+
+FIXED: CF DTS-HD MA mismatch #704
+- FIXED: CF [DTS-HD MA] mismatch. Issue: #701
+
+Radarr CF Group Tier Setup #700
+- Note: `ReleaseGroupSpecification` = Radarr Nightly
+- Note: `ReleaseTitleSpecification` = Radarr Master
+
+**NEW: Split up `HQ-Remux` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[Remux Tier 01]` - Split up `HQ-Remux` in to Tiers.
+- NEW: CF `[Remux Tier 02]` - Split up `HQ-Remux` in to Tiers.
+
+**NEW: Split up `HQ-WEBDL` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[WEB Tier 01]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 02]` - Split up `HQ-WEBDL` in to Tiers.
+- NEW: CF `[WEB Tier 03]` - Split up `HQ-WEBDL` in to Tiers.
+
+**NEW: Split up `HQ` in to Tiers using `ReleaseGroupSpecification` condition**
+- NEW: CF `[HD Bluray Tier 01]` - Split up `HQ` in to Tiers.
+- NEW: CF `[HD Bluray Tier 02]` - Split up `HQ` in to Tiers.
+
+**Added: Groups with `ReleaseTitleSpecification` Condition.**
+- Updated: CF `[HQ]`
+- Updated: CF `[HQ-WEBDL]`
+- Updated: CF `[HQ-Remux]`
+
+# 2022-08-04
+Radarr CF 20220804 #695
+- Changed: Raised score for CF `[Framestore]`.
+- Added: regex to prevent download loop with bad dual groups. Issue: #685
+- Added: `EXTREME` to the CF `[Bad Dual Groups]`. Issue: #694
+
+# 2022-07-31
+Updated: Paste sites #690
+- Added: `Notifiarr.com`.
+- Added: `bpaste`.
+- Removed: `0bin` because of the issues it's having.
+- Removed `Ubuntu Pastebin` because you need a account to make use of it.
+Guides Bad path suggestion #689
+- Added: missing bad path suggestion for some parts
+Dislike bad dual audio groups #686
+- Added: [Sonarr] `Optional - Ignore Bad Dual Audio Groups` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+- Added: [Radarr] CF `[Bad Dual Groups]` - These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first. Also they often even rename the release name in to Portuguese.
+
+# 2022-07-27
 Added: Cross-Seed to the 3rd party tools #677
 - Added: Cross-Seed to the 3rd party tools.
 Add warning to qBittorrent about ZFS/Pre-Allocate #676

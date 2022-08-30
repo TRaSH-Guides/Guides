@@ -1,9 +1,11 @@
 # ruTorrent - Basic Setup
 
---8<-- "includes/downloaders/basic-setup.md"
+{! include-markdown "../../../includes/downloaders/basic-setup.md" !}
+<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
 ------
 
 ## Soon
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

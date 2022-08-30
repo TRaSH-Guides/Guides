@@ -1,0 +1,197 @@
+{
+  "trash_id": "0329044e3d9137b08502a9f84a7e58db",
+  "trash_score": "800",
+  "name": "Anime BD Tier 07 (P2P/Scene)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Bluray Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "A-L",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(A-L)\\b"
+      }
+    },
+    {
+      "name": "ANiHLS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ANiHLS)\\b"
+      }
+    },
+    {
+      "name": "CBM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CBM)\\b"
+      }
+    },
+    {
+      "name": "DHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DHD)\\b"
+      }
+    },
+    {
+      "name": "DragsterPS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DragsterPS)\\b"
+      }
+    },
+    {
+      "name": "HAiKU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HAiKU)\\b"
+      }
+    },
+    {
+      "name": "Hark0N",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Hark0N)\\b"
+      }
+    },
+    {
+      "name": "iAHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(iAHD)\\b"
+      }
+    },
+    {
+      "name": "inid4c",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(inid4c)\\b"
+      }
+    },
+    {
+      "name": "KiyoshiStar",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KS|KiyoshiStar)\\b"
+      }
+    },
+    {
+      "name": "MCR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MCR)\\b"
+      }
+    },
+    {
+      "name": "NPC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[NPC\\]|-NPC\\b"
+      }
+    },
+    {
+      "name": "RedBlade",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RedBlade)\\b"
+      }
+    },
+    {
+      "name": "RH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RH)\\b"
+      }
+    },
+    {
+      "name": "SEV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SEV)\\b"
+      }
+    },
+    {
+      "name": "STRiFE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[STRiFE\\]|-STRiFE\\b"
+      }
+    },
+    {
+      "name": "TENEIGHTY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TENEIGHTY)\\b"
+      }
+    },
+    {
+      "name": "WaLMaRT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(WaLMaRT)\\b"
+      }
+    }
+  ]
+}

@@ -1,38 +1,38 @@
 #### Custom Formats and scores
 
---8<-- "includes/cf/audio.md"
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
 
---8<-- "includes/cf/hdr-metadata.md"
+{! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
 
---8<-- "includes/cf/movie-versions-imaxe.md"
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | HQ-Remux             | 1900  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | Flights (no IMAX)    | 1850  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/flights-no-imax.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                                                                    | Score                                                | Trash ID                                          |
+    | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------- |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)                                                  | {{ radarr['cf']['hq-remux']['trash_score'] }}        | {{ radarr['cf']['hq-remux']['trash_id'] }}        |
+    | [{{ radarr['cf']['flights-no-imax']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/flights-no-imax.json) | {{ radarr['cf']['flights-no-imax']['trash_score'] }} | {{ radarr['cf']['flights-no-imax']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                                  | {{ radarr['cf']['hq-webdl']['trash_score'] }}        | {{ radarr['cf']['hq-webdl']['trash_id'] }}        |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                              | 0                                                    | {{ radarr['cf']['hq']['trash_id'] }}              |
 
---8<-- "includes/cf/hq4k.md"
+{! include-markdown "../../includes/cf/radarr-hq4k.md" !}
 
---8<-- "includes/cf/misc.md"
+{! include-markdown "../../includes/cf/radarr-misc.md" !}
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
 ### Quality Size
 
 `Settings` => `Quality`
 
-| Quality        | Min   | Preferred | Max |
-| -------------- | ----- | --------- | --- |
-| WEBDL-2160p    |  50.8 |       399 | 400 |
-| WEBRip-2160p   |  50.8 |       399 | 400 |
-| Bluray-2160p   | 102   |       399 | 400 |
-| Remux-2160p    | 187.4 |       399 | 400 |
+| Quality                                                            | Min                                                            | Preferred                                                            | Max                                                            |
+| ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][0]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][1]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][2]['max'] }} |
+| {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['quality'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['min'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['preferred'] }} | {{ radarr['quality-size']['sqp-uhd']['qualities'][3]['max'] }} |
 
 ??? check "example - [CLICK TO EXPAND]"
-    ![!Quality Size](images/uhd-quality-size.png)
+    ![!Quality Size](/SQP/images/uhd-quality-size.png)
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.

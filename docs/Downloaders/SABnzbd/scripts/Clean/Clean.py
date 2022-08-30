@@ -54,7 +54,7 @@ fwp = re.sub('(?i)\[ettv\]$', '', fwp)
 fwp = re.sub('(?i)\[TGx\]-xpost$', '', fwp)
 fwp = re.sub('(?i).mkv-xpost$', '', fwp)
 fwp = re.sub('(?i)-xpost$', '', fwp)
-fwp = re.sub(r'(\-[^-.\n]*)(\-.{4})?$', r'\1', fwp)
+fwp = re.sub(r'(?i)(-D-Z0N3|\-[^-.\n]*)(\-.{4})?$', r'\1', fwp)
 
 print("1")    # Accept
 print(fwp)

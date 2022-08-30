@@ -1,0 +1,62 @@
+{
+  "trash_id": "1808e4b9cee74e064dfae3f1db99dbfe",
+  "trash_score": "2750",
+  "name": "TrueHD",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TrueHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "True[ .-]?HD"
+      }
+    },
+    {
+      "name": "ATMOS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bATMOS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Dolby Digital Plus",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
+      }
+    },
+    {
+      "name": "Not DTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDTS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not FLAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bFLAC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Basic Dolby Digital",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
+      }
+    }
+  ]
+}

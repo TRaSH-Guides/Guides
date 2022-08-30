@@ -1,0 +1,10 @@
+??? summary "HQ 4k Encodes - [CLICK TO EXPAND]"
+    | Custom Format                                                                                                                 | Score                                     | Trash ID                               |
+    | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
+    | [{{ radarr['cf']['uhd-ctrlhd']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-ctrlhd.json) | {{ radarr['cf']['uhd-ctrlhd']['trash_score'] }} | {{ radarr['cf']['uhd-ctrlhd']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-don']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-don.json)       | {{ radarr['cf']['uhd-don']['trash_score'] }}    | {{ radarr['cf']['uhd-don']['trash_id'] }}    |
+    | [{{ radarr['cf']['uhd-w4nk3r']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-w4nk3r.json) | {{ radarr['cf']['uhd-w4nk3r']['trash_score'] }} | {{ radarr['cf']['uhd-w4nk3r']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-sphd']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-sphd.json)     | {{ radarr['cf']['uhd-sphd']['trash_score'] }}   | {{ radarr['cf']['uhd-sphd']['trash_id'] }}   |
+    | [{{ radarr['cf']['uhd-hqmux']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-hqmux.json)   | {{ radarr['cf']['uhd-hqmux']['trash_score'] }}  | {{ radarr['cf']['uhd-hqmux']['trash_id'] }}  |
+    | [{{ radarr['cf']['uhd-legi0n']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-legi0n.json) | {{ radarr['cf']['uhd-legi0n']['trash_score'] }} | {{ radarr['cf']['uhd-legi0n']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-webdv']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/uhd-webdv.json)   | {{ radarr['cf']['uhd-webdv']['trash_score'] }}  | {{ radarr['cf']['uhd-webdv']['trash_id'] }}  |

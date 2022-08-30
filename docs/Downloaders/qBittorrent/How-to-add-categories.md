@@ -41,4 +41,5 @@ This basic example is based on the use of docker images
 
     ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

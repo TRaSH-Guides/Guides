@@ -20,15 +20,17 @@
 
     For example `/<path_to_data>/data`, or even `/data`.
 
-!!! info
+{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/folder-structure.md" -->
 
-    The paths you use on the inside matter. Because of how Docker’s volumes work, passing in two or three volumes such as the commonly suggested `/tv`, `/movies` and `/downloads` makes them look like two or three file systems, even if they aren’t. This means hard links won’t work and instead of an instant move, a slower and more I/O intensive copy + delete is used.
+{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
---8<-- "includes/hardlinks/folder-structure.md"
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
---8<-- "includes/hardlinks/breakdown-folder-structure.md"
-
---8<-- "includes/hardlinks/permissions.md"
+{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+<!-- --8<-- "includes/hardlinks/permissions.md" -->
 
 ## Docker-compose Example
 
@@ -41,10 +43,12 @@
 
 ??? example "docker-compose - [CLICK TO EXPAND]"
 
-    ```yml
+    ```yaml
     --8<-- "includes/docker/docker-compose.yml"
     ```
 
---8<-- "includes/hardlinks/docker-compose-commands.md"
+{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

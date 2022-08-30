@@ -12,11 +12,11 @@ In this example the mounted drive will be mounted to `/mnt/` with the following 
 ```none
 storage
 ├── downloads
-|  ├── torrents
-│  |  ├── movies
-│  |  ├── music
-│  |  └── tv
-|  └── usenet
+│  ├── torrents
+│  │  ├── movies
+│  │  ├── music
+│  │  └── tv
+│  └── usenet
 │     ├── movies
 │     ├── music
 │     └── tv
@@ -168,4 +168,5 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

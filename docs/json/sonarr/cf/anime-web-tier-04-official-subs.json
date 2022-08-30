@@ -1,0 +1,134 @@
+{
+  "trash_id": "4fd5528a3a8024e6b49f9c67053ea5f3",
+  "trash_score": "300",
+  "name": "Anime Web Tier 04 (Official Subs)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "BlueLobster",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BlueLobster)\\b"
+      }
+    },
+    {
+      "name": "Erai-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Erai-raws)\\b"
+      }
+    },
+    {
+      "name": "GST",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GST)\\b"
+      }
+    },
+    {
+      "name": "HorribleRips",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HorribleRips)\\b"
+      }
+    },
+    {
+      "name": "HorribleSubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HorribleSubs)\\b"
+      }
+    },
+    {
+      "name": "KAN3D2M",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KAN3D2M)\\b"
+      }
+    },
+    {
+      "name": "KiyoshiStar",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KS|KiyoshiStar)\\b"
+      }
+    },
+    {
+      "name": "Lia",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Lia\\]|-Lia\\b"
+      }
+    },
+    {
+      "name": "NanDesuKa",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NanDesuKa)\\b"
+      }
+    },
+    {
+      "name": "URANIME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(URANIME)\\b"
+      }
+    },
+    {
+      "name": "ZR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZR)\\b"
+      }
+    }
+  ]
+}

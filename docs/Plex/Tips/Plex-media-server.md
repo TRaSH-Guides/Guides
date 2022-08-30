@@ -495,4 +495,5 @@ For the information of this guide, I made use of the following sources
 - Extra Information gathered from a Plex employee
 - Own experience
 
---8<-- "includes/support.md"
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->

@@ -1,26 +1,26 @@
 #### Custom Formats and scores
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | HQ-WEBDL             | 1750  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ-Remux             |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq-remux){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | HQ                   |    0  | [:octicons-link-external-16:](/Radarr/Radarr-collection-of-custom-formats/#hq){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
+    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                             | {{ radarr['cf']['hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                             | {{ radarr['cf']['hq']['trash_id'] }}       |
 
 ??? summary "BHDStudio - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | BHDStudio            | 1800  | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/bhdstudio.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                                                        | Score                                          | Trash ID                                    |
+    | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------- |
+    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) | {{ radarr['cf']['bhdstudio']['trash_score'] }} | {{ radarr['cf']['bhdstudio']['trash_id'] }} |
 
 ??? summary "Resolution - [CLICK TO EXPAND]"
-    | Custom Format        | Score | LINK |
-    | -------------------- | ----- | ---- |
-    | 720p                 |     5 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/720p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
-    | 1080                 |    50 | [:octicons-link-external-16:](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/1080p.json){: .header-icons target=_blank rel="noopener noreferrer" } |
+    | Custom Format                                                                                                                | Score                                      | Trash ID                                |
+    | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------- |
+    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json)   | {{ radarr['cf']['720p']['trash_score'] }}  | {{ radarr['cf']['720p']['trash_id'] }}  |
+    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/1080p.json) | {{ radarr['cf']['1080p']['trash_score'] }} | {{ radarr['cf']['1080p']['trash_id'] }} |
 
---8<-- "includes/cf/misc.md"
+{! include-markdown "../../includes/cf/radarr-misc.md" !}
 
---8<-- "includes/cf/unwanted.md"
+{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
 ### Quality Size
 
@@ -30,15 +30,15 @@ Change the 1080p Quality Size to the range BHDStudio uses ( I searched BHD to ch
 
 If you notice issues with the sizes please report it.
 
-| Quality        | Min   | Preferred | Max   |
-| -------------- | ----- | --------- | ----- |
-| WEBDL-1080p    |  25.2 |      84.7 |  85.7 |
-| WEBRip-1080p   |  25.2 |      84.7 |  85.7 |
-| Bluray-720p    |  25.2 |     101   | 102   |
-| Bluray-1080p   |  33.8 |     135.9 | 136.9 |
+| Quality                                                                  | Min                                                                  | Preferred                                                                  | Max                                                                  |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][0]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][1]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][2]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['preferred'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][3]['max'] }} |
 
 ??? check "example - [CLICK TO EXPAND]"
-    ![!Quality Size](images/quality-size.png)
+    ![!Quality Size](/SQP/images/quality-size.png)
 
     !!! attention
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.

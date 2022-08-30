@@ -1,0 +1,25 @@
+{
+  "trash_id": "a5d148168c4506b55cf53984107c396e",
+  "name": "10bit",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "10bit",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "10\\.?bit"
+      }
+    },
+    {
+      "name": "hi10p",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "hi10p"
+      }
+    }
+  ]
+}

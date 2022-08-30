@@ -1,0 +1,26 @@
+{
+  "trash_id": "d0c516558625b04b363fa6c5c2c7cfd4",
+  "trash_score": "1800",
+  "name": "WEB Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DEFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DEFLATE)\\b"
+      }
+    },
+    {
+      "name": "INFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(INFLATE)\\b"
+      }
+    }
+  ]
+}

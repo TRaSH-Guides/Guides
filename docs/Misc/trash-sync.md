@@ -59,7 +59,8 @@ Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your s
 
 [Instructions](https://github.com/rcdailey/recyclarr#getting-started){:target="_blank" rel="noopener noreferrer"}
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 [^1]:
     Notifiarr

@@ -497,8 +497,21 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\b|-GGEZ\b|-GGWP\b|-GLHF\b|-KOGI\b)).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\b|-GGEZ\b|-GGWP\b|-GLHF\b|-GOSSIP\b|-KOGI\b|-PECULATE\b)).*/i
 
+```
+
+#### Optional - Ignore Bad Dual Audio Groups
+
+??? question "WHY ? - [CLICK TO EXPAND]"
+
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\b(-alfaHD|-BAT|-BNd|-C\.A\.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\b/i
 ```
 
 ------
@@ -553,7 +566,8 @@ If you want to be mentioned please message me on discord, including a link for p
 
 ------
 
---8<-- "includes/support.md"
+{! include-markdown "../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
 
 [^1]:
 

@@ -1,0 +1,278 @@
+{
+  "trash_id": "26fa26253af4001701fedb56cec376dc",
+  "trash_score": "1750",
+  "name": "HQ-WEBDL",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "ABBIE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-ABBIE\\b"
+      }
+    },
+    {
+      "name": "AJP69",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bAJP69\\b"
+      }
+    },
+    {
+      "name": "BLUTONiUM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bBLUTONiUM\\b"
+      }
+    },
+    {
+      "name": "CMRG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bCMRG\\b"
+      }
+    },
+    {
+      "name": "CRFW",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bCRFW\\b"
+      }
+    },
+    {
+      "name": "CRUD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bCRUD\\b"
+      }
+    },
+    {
+      "name": "dB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bdB\\b"
+      }
+    },
+    {
+      "name": "Flights",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-Flights\\b"
+      }
+    },
+    {
+      "name": "FLUX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-FLUX\\b"
+      }
+    },
+    {
+      "name": "GNOME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-GNOME\\b"
+      }
+    },
+    {
+      "name": "GNOMiSSiON",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bGNOMiSSiON\\b"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bHONE\\b"
+      }
+    },
+    {
+      "name": "KiNGS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-KiNGS\\b"
+      }
+    },
+    {
+      "name": "MiU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bMiU\\b"
+      }
+    },
+    {
+      "name": "monkee",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bmonkee\\b"
+      }
+    },
+    {
+      "name": "MZABI",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bMZABI\\b"
+      }
+    },
+    {
+      "name": "NOSiViD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNOSiViD\\b"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNTb\\b"
+      }
+    },
+    {
+      "name": "NTG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bNTG\\b"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-PHOENiX\\b"
+      }
+    },
+    {
+      "name": "playWEB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bplayWEB\\b"
+      }
+    },
+    {
+      "name": "ROCCaT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bROCCaT\\b"
+      }
+    },
+    {
+      "name": "SiC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSiC\\b"
+      }
+    },
+    {
+      "name": "SiGMA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSiGMA\\b"
+      }
+    },
+    {
+      "name": "SLiGNOME",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSLiGNOME\\b"
+      }
+    },
+    {
+      "name": "SMURF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-SMURF\\b"
+      }
+    },
+    {
+      "name": "TEPES",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-TEPES\\b"
+      }
+    },
+    {
+      "name": "TOMMY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "-TOMMY\\b"
+      }
+    }
+  ]
+}

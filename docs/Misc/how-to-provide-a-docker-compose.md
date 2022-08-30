@@ -25,10 +25,10 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/
 
 Paste the results on one of the following sites.
 
-- [0bin.net](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} (Recommended)
+- [Notifiarr.com](https://logs.notifiarr.com/) (Recommended)
 - [Github Gist](https://gist.github.com){:target="_blank" rel="noopener noreferrer"} (Alternative)
-- [Ubuntu Pastebin](https://pastebin.ubuntu.com/){:target="_blank" rel="noopener noreferrer"}
 - [hastebin.com](https://hastebin.com){:target="_blank" rel="noopener noreferrer"}
 - [privatebin.net](https://privatebin.net/){:target="_blank" rel="noopener noreferrer"}
+- [bpaste](https://bpa.st/){:target="_blank" rel="noopener noreferrer"}
 
 If you use docker run command to create your docker containers, paste your run command in to [composerize](https://www.composerize.com/){:target="_blank" rel="noopener noreferrer"}
