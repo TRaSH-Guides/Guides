@@ -22,8 +22,8 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 ### Recommended naming scheme
 
-```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+```text
+{{ sonarr['naming']['series']['animeEpisodeFormat'] }}
 ```
 
 ??? summary "Results: - [Click to Expand]"
@@ -39,7 +39,7 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 #### Series Folder Format
 
 ```bash
-{Series TitleYear}
+{{ sonarr['naming']['series']['seriesFolderFormat'] }}
 ```
 
 Result:
@@ -49,7 +49,7 @@ Result:
 #### Season Folder Format
 
 ```bash
-Season {season:00}
+{{ sonarr['naming']['series']['seasonFolderFormat'] }}
 ```
 
 Result:
