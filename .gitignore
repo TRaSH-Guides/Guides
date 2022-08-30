@@ -1,3 +1,4 @@
+.cache
 venv/
 mkdocs-dev-server.bat
 /docs/Notifiarr/preview.bat
