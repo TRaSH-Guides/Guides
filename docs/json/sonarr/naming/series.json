@@ -1,0 +1,20 @@
+{
+    "trash_id": "a46b15a6d20a3c3f67d029dc156a11b5",
+    "type": "series",
+    "renameEpisodes": true,
+    "replaceIllegalCharacters": false,
+    "multiEpisodeStyle": 5,
+    "standardEpisodeFormat": "{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}",
+    "dailyEpisodeFormat": "{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}",
+    "animeEpisodeFormat": "{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}",
+    "seriesFolderFormat": "{Series TitleYear}",
+    "seasonFolderFormat": "Season {season:00}",
+    "specialsFolderFormat": "Specials",
+    "includeSeriesTitle": false,
+    "includeEpisodeTitle": false,
+    "includeQuality": false,
+    "replaceSpaces": true,
+    "separator": " - ",
+    "numberStyle": "S{season:00}E{episode:00}",
+    "id": 1
+}

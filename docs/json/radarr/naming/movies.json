@@ -1,0 +1,12 @@
+{
+  "trash_id": "e3497436d3418d138f49106afe11f091",
+  "type": "movies",
+  "renameMovies": true,
+  "replaceIllegalCharacters": false,
+  "colonReplacementFormat": "spaceDashSpace",
+  "standardMovieFormat": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}",
+  "movieFolderFormat": "{Movie Title} {(Release Year)}",
+  "includeQuality": false,
+  "replaceSpaces": false,
+  "id": 1
+}
