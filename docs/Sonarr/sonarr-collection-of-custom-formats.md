@@ -8,9 +8,9 @@ With Sonarr V4+, Custom Formats are much more advanced/powerful than with the re
 
 I also made 3 guides related to this one.
 
-- [How to import Custom Formats](/Sonarr/Sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Sonarr/Sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Custom Formats](/Sonarr/Sonarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
+- [How to setup Custom Formats](/Sonarr/sonarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
 !!! tip
 
@@ -806,7 +806,7 @@ I also made 3 guides related to this one.
     !!! fail ""
         --8<-- "includes/docker/x265.md"
 
-            !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
+            !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -830,7 +830,7 @@ I also made 3 guides related to this one.
 
     In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}`
 
-    !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd) :warning:"
+    !!! Danger "Don't use this together with the following Custom Format [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
