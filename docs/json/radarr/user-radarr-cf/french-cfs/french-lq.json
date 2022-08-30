@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Avitech|CZ\\d+|EXTREME|GA(Ï|I)A|HMiDiMADRiDi|Hush|KILLERMIX|NEWCINE|RPZ|RZP|ShowFR|Wawa-?(city|mania|porno)?|ZW)\\b"
+        "value": "\\b(Avitech|CZ\\d+|EXTREME|GA(Ï|I)A|HMiDiMADRiDi|Hush|KILLERMIX|NEWCINE|RPZ|RZP|ShowFR|Wawa-?(city|mania|porno)?|ZW)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
+        "value": "\\b(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "((Cpasbien|CPB)|AT|bigZT|Boheme|CINeHD|DOLL4R|Dread[ .-]?Team|EZTV|FGT|Firetown|FUN|HDMIDIMADRIDI|JetAnime|L-O-L|NewZT|RARBG|SubZero|T9|Time2Watch|TIREXO|Torrent9|WaNeZt|WebAnime|YIFY|YTS|ZONE|ZT)\\b"
+        "value": "\\b((Cpasbien|CPB)|AT|bigZT|Boheme|CINeHD|DOLL4R|Dread[ .-]?Team|EZTV|FGT|Firetown|FUN|HDMIDIMADRIDI|JetAnime|L-O-L|NewZT|RARBG|SubZero|T9|Time2Watch|TIREXO|Torrent9|WaNeZt|WebAnime|YIFY|YTS|ZONE|ZT)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ARKRiL|BossBaby|Champion9|Copycomic|EASPORTS|EliteT|FUNKKY|FUNKY|GOBO2S|HD2|LNA3d|LTTM|MACK4|MeMyl|METALLIKA|MGD|Moorea81|Muxman|Mzsys|N3TFL1X|NoelMaison|nutella|Papaya|PIKACHU|PULSE|RELiC|SHARKS|SP3CTR|STVFRV|TeamSuW|TORRiD|TSN999|TVPSLO|Upmix|VIKY47|Wakanim|WINCHESTER|Wita)\\b"
+        "value": "\\b(ARKRiL|BossBaby|Champion9|Copycomic|EASPORTS|EliteT|FUNKKY|FUNKY|GOBO2S|HD2|LNA3d|LTTM|MACK4|MeMyl|METALLIKA|MGD|Moorea81|Muxman|Mzsys|N3TFL1X|NoelMaison|nutella|Papaya|PIKACHU|PULSE|RELiC|SHARKS|SP3CTR|STVFRV|TeamSuW|TORRiD|TSN999|TVPSLO|Upmix|VIKY47|Wakanim|WINCHESTER|Wita)\\b"
       }
     }
   ]

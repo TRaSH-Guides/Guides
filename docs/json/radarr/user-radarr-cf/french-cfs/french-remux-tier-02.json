@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Foxhound\\b"
+        "value": "\\b(Foxhound)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MARBLECAKE\\b"
+        "value": "\\b(MARBLECAKE)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MUSTANG\\b"
+        "value": "\\b(MUSTANG)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "PATOMiEL\\b"
+        "value": "\\b(PATOMiEL)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Q(UEBE)?C63\\b"
+        "value": "\\b(Q(UEBE)?C63)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Sicario\\b"
+        "value": "\\b(Sicario)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Zapax\\b"
+        "value": "\\b(Zapax)\\b"
       }
     }
   ]

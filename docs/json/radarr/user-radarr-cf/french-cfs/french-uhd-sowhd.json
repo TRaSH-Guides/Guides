@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "SowHD\\b"
+        "value": "\\b(SowHD)\\b"
       }
     },
     {

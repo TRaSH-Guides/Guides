@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BONBON\\b"
+        "value": "\\b(BONBON)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FCK\\b"
+        "value": "\\b(FCK)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FrIeNdS\\b"
+        "value": "\\b(FrIeNdS)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FW\\b"
+        "value": "\\b(FW)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HANAMi\\b"
+        "value": "\\b(HANAMi)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HeavyWeight\\b"
+        "value": "\\b(HeavyWeight)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NoNE\\b"
+        "value": "\\b(NoNE)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TkHD\\b"
+        "value": "\\b(TkHD)\\b"
       }
     }
   ]

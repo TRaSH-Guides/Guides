@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Choco\\b"
+        "value": "\\b(Choco)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HDForever\\b"
+        "value": "\\b(HDForever)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "HeavyWeight\\b"
+        "value": "\\b(HeavyWeight)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MAX\\b"
+        "value": "\\b(MAX)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Obi\\b"
+        "value": "\\b(Obi)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ONLY\\b"
+        "value": "\\b(ONLY)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Psaro\\b"
+        "value": "\\b(Psaro)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ROMKENT\\b"
+        "value": "\\b(ROMKENT)\\b"
       }
     }
   ]

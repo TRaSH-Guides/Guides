@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "DUSTiN\\b"
+        "value": "\\b(DUSTiN)\\b"
       }
     },
     {

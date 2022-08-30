@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ALLDAYiN\\b"
+        "value": "\\b(ALLDAYiN)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BraD\\b"
+        "value": "\\b(BraD)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Foxhound\\b"
+        "value": "\\b(Foxhound)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "JKF\\b"
+        "value": "\\b(JKF)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "LAZARUS\\b"
+        "value": "\\b(LAZARUS)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MTeam\\b"
+        "value": "\\b(MTeam)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "QUALiTY\\b"
+        "value": "\\b(QUALiTY)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "RONiN\\b"
+        "value": "\\b(RONiN)\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "TkHD\\b"
+        "value": "\\b(TkHD)\\b"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "UTT\\b"
+        "value": "\\b(UTT)\\b"
       }
     }
   ]

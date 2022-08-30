@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "FLOP\\b"
+        "value": "\\b(FLOP)\\b"
       }
     },
     {

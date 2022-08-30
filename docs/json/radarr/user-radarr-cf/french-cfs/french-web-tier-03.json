@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ALLDAYiN\\b"
+        "value": "\\b(ALLDAYiN)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BraD\\b"
+        "value": "\\b(BraD)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "LAZARUS\\b"
+        "value": "\\b(LAZARUS)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MOONLY\\b"
+        "value": "\\b(MOONLY)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MYSTERiON\\b"
+        "value": "\\b(MYSTERiON)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "ONLYMOViE\\b"
+        "value": "\\b(ONLYMOViE)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "RiPiT\\b"
+        "value": "\\b(RiPiT)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Slay3R\\b"
+        "value": "\\b(Slay3R)\\b"
       }
     }
   ]

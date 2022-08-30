@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "BEO\\b"
+        "value": "\\b(BEO)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "DUSTiN\\b"
+        "value": "\\b(DUSTiN)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FoX\\b"
+        "value": "\\b(FoX)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FRATERNiTY\\b"
+        "value": "\\b(FRATERNiTY)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "FUJiSAN\\b"
+        "value": "\\b(FUJiSAN)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "MTDK\\b"
+        "value": "\\b(MTDK)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NEO\\b"
+        "value": "\\b(NEO)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Psaro\\b"
+        "value": "\\b(Psaro)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "T3KASHi\\b"
+        "value": "\\b(T3KASHi)\\b"
       }
     }
   ]
