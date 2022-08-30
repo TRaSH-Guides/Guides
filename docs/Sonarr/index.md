@@ -2,9 +2,9 @@
 
 Here you will find a collection of Sonarr guides I made.
 
-## Master
+## Main
 
-![Main](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/release/VERSION.json&label=Current%20Master/Stable%20Version&style=for-the-badge&color=4051B5)
+![Main](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/release/VERSION.json&label=Current%20Main/Stable%20Version&style=for-the-badge&color=4051B5)
 
 (Default/Stable): This has been tested by users on nightly (`develop`) branch and it's not known to have any major issues. This branch should be used by the majority of users.
 
@@ -36,7 +36,7 @@ This version is updated immediately.
 
 !!! warning
 
-    **You may not be able to go back to `master` after switching to this branch.**
+    **You may not be able to go back to `main` after switching to this branch.**
 
 On GitHub, this is the `develop` branch.
 
