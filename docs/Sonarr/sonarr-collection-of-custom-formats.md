@@ -30,7 +30,7 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Metadata                      |
+| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
 | [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
 | [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
@@ -473,7 +473,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## HDR metadata
+## HDR Formats
 
 ------
 

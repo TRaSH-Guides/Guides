@@ -77,13 +77,13 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ------
 
-#### Prefer HDR Metadata
+#### Prefer HDR Formats
 
-Lets say you prefer HDR metadata (HDR or Dolby Vision or Both)
+Lets say you Prefer HDR Formats (HDR or Dolby Vision or Both)
 
 Then we would use the following order:
 
-{! include-markdown "../../includes/cf/sonarr-hdr-metadata.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 ------
 
@@ -140,7 +140,7 @@ If you think the sizes are too big to your preference then stop reading and see 
 
 For this Quality Profile we're going to make use of the following Custom Formats
 
-{! include-markdown "../../includes/cf/sonarr-hdr-metadata.md" !}
+{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 

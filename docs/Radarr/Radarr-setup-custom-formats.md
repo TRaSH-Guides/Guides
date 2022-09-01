@@ -88,13 +88,13 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 ------
 
-#### Prefer HDR Metadata
+#### Prefer HDR Formats
 
-Lets say you prefer HDR metadata (HDR or Dolby Vision or Both)
+Lets say you prefer HDR Formats (HDR or Dolby Vision or Both)
 
 Then we would use the following order:
 
-{! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 ------
 
@@ -151,7 +151,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
     If you prefer 2160/4K encodes you might consider to change `Upgrade Until Quality` to Bluray-2160p and enable:
 
-    {! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
+    {! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 ------
 
@@ -210,7 +210,7 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
 
