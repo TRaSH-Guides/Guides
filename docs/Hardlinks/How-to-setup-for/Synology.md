@@ -25,7 +25,9 @@ This page will provide you with guidance on how to install several Docker images
 
         **:bangbang: We are not held reliable if anything breaks on your system. Use at your own risk :bangbang:**
 
-    To get this working you will need to enable terminal access (SSH) and home folders
+    To get this working you will need to enable terminal access (SSH) and home folders.
+    
+    Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), backup settings before you do.
 
     To enable SSH on your Synology take a look [HERE](#ssh){:target="_blank" rel="noopener noreferrer"}.
 
