@@ -79,7 +79,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 #### Prefer HDR Formats
 
-Lets say you Prefer HDR Formats (HDR or Dolby Vision or Both)
+Lets say you prefer HDR Formats (HDR or Dolby Vision or Both)
 
 Then we would use the following order:
 
