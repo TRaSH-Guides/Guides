@@ -31,15 +31,6 @@
           }
       },
       {
-          "name": "Not Basic Dolby Digital",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-              "value": "\\bDD[^a-z+]|(?<!e)ac3"
-          }
-      },
-      {
           "name": "Not FLAC",
           "implementation": "ReleaseTitleSpecification",
           "negate": true,
