@@ -1,6 +1,7 @@
 {
   "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
   "trash_score": "-10000",
+  "trash_regex": "https://regex101.com/r/yFwxoN/3",
   "name": "x265 (no HDR/DV)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -19,7 +20,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision|hdr)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?vision|hdr(10|10plus)?)\\b"
       }
     },
     {
