@@ -1,3 +1,22 @@
+# 2022-09-04
+[Starr] How to import Custom Formats #786
+- Added: How to Setup the scores in your Quality Profile instructions.
+[Sonarr] CF `[HMAX]` #785
+- Changed: CF `[HMAX]` hash because it was identical with CF `[HLG]`
+- Fixed: typo in regex
+[Starr] CF `[x265 (no HDR/DV)]` #783
+- Updated: CF `[x265 (no HDR/DV)]` to recognize `HDR10(+|Plus)`
+- Added: RegEx Case
+[Starr] CF `[DD+]` #781
+- Removed `Basic Dolby Digital` negation - If a release is improperly tagged as DD or DD+ but the file is in fact the opposite, no CF is applied. Removing this negation allows the correct CF to be applied.
+[Starr] How to setup Custom Formats/Collection of Custom Formats #776
+- Updated: description for CF `[x265 (HD)]` and `[x265 (no HDR/DV)]` to make it more clear
+[Guide] #769
+- Changed: link color to make it better readable
+[Starr] Collection of Custom Formats #764
+- Moved: Several Unwanted CF to Optional category.
+- Backend Stuff
+
 # 2022-08-26
 [Backend] Several Backend changes.
 - A lot of changes to make the site more dynamic and easier to maintain in the future.
@@ -11,7 +30,7 @@
 - Added: Optional Category
 - Moved: Several CF to Optional
 Update br-disk.json #755
--Updated: Radarr CF [BR-DISK]
+- Updated: Radarr CF [BR-DISK]
 Fixed: EAC3 regex in the sound CFs #753+#754
 - Added: a check for some common spacing characters to the regex for EAC3
 Fixed: DTS-X and DTS-HD MA recognition #745
