@@ -6,12 +6,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-    "name": "MULTi",
-    "implementation": "ReleaseTitleSpecification",
-    "negate": false,
-    "required": true,
-    "fields": {
-      "value": "(^(?=.*\\b(VO)\\b)(?=.*\\b(VF(F|I)?)\\b)|MULTi)(\\b|\\d)"
+      "name": "MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MULTi)(\\b|\\d)"
+      }
+    },
+    {
+      "name": "VO and VF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\b(VO)\\b)(?=.*\\b(VF(F|I)?)\\b)"
       }
     }
   ]
