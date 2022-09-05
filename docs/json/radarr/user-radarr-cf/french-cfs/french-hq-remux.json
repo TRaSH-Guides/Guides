@@ -1,107 +1,107 @@
 {
-    "trash_id": "e99b70d7cfb114fca0e376f87b550d30",
-    "trash_score": "1900",
-    "name": "[FR] HQ-Remux",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-      {
-        "name": "Remux",
-        "implementation": "QualityModifierSpecification",
-        "negate": false,
-        "required": true,
-        "fields": {
-          "value": 5
-        }
-      },
-      {
-        "name": "BDHD (no VC1)",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
-        }
-      },
-      {
-        "name": "HDForever",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]HDForever\\b"
-        }
-      },
-      {
-        "name": "HeavyWeight",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]HeavyWeight\\b"
-        }
-      },
-      {
-        "name": "MARBLECAKE",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]MARBLECAKE\\b"
-        }
-      },
-      {
-        "name": "NoTag",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]NoTag\\b"
-        }
-      },
-      {
-        "name": "Obi",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]Obi\\b"
-        }
-      },
-      {
-        "name": "ONLY",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]ONLY\\b"
-        }
-      },
-      {
-        "name": "Psaro",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]Psaro\\b"
-        }
-      },
-      {
-        "name": "Quebec63",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-](Quebec|QC)63\\b"
-        }
-      },
-      {
-        "name": "Sicario",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "[\\[ .-]Sicario\\b"
-        }
+  "trash_id": "e99b70d7cfb114fca0e376f87b550d30",
+  "trash_score": "1900",
+  "name": "[FR] HQ-Remux",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
       }
-    ]
-  }
+    },
+    {
+      "name": "BDHD (no VC1)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
+      }
+    },
+    {
+      "name": "HDForever",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]HDForever\\b"
+      }
+    },
+    {
+      "name": "HeavyWeight",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]HeavyWeight\\b"
+      }
+    },
+    {
+      "name": "MARBLECAKE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]MARBLECAKE\\b"
+      }
+    },
+    {
+      "name": "NoTag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]NoTag\\b"
+      }
+    },
+    {
+      "name": "Obi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]Obi\\b"
+      }
+    },
+    {
+      "name": "ONLY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]ONLY\\b"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]Psaro\\b"
+      }
+    },
+    {
+      "name": "Quebec63",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-](Quebec|QC)63\\b"
+      }
+    },
+    {
+      "name": "Sicario",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]Sicario\\b"
+      }
+    }
+  ]
+}
