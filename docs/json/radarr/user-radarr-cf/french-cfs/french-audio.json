@@ -65,7 +65,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bVFQ\\b"      
+        "value": "\\bVFQ\\b"
       }
     },
     {
