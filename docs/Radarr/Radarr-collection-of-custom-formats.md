@@ -33,7 +33,7 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Metadata                      |
+| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
 | [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
 | [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
@@ -456,7 +456,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## HDR metadata
+## HDR Formats
 
 ------
 
@@ -888,14 +888,14 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (HD) - [CLICK TO EXPAND]"
 
-    This blocks/ignores 720/1080p(HD) releases that are encoded in x265.
+    This blocks 720/1080p (HD) releases that are encoded in x265.
 
     In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-hd']['trash_score'] }}`
 
     !!! fail ""
         --8<-- "includes/docker/x265.md"
 
-            !!! Danger "Don't use this together with the following Custom Format [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
+            !!! Danger "Don't use this together with [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -911,15 +911,15 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
 
-    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
+    This blocks 720/1080p (HD) releases that are encoded in x265.
 
-    **but it will allow to exclude/bypass if it has HDR and/or DV**
+    **But it will allow x265 releases if they have HDR and/or DV**
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
     In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
 
-    !!! Danger "Don't use this together with the following Custom Format [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:"
+    !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

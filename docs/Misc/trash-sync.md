@@ -29,7 +29,7 @@ Just enable the Custom Formats/Release Profiles you want.
     ![!Notifiarr Custom Formats Audio](images/sync/notifiarr-cf-audio.png)
 
     Radarr Custom Formats (Multiple Instances possible)
-    ![!Notifiarr Custom Formats HDR Metadata](images/sync/notifiarr-cf-audio.png)
+    ![!Notifiarr Custom Formats HDR Formats](images/sync/notifiarr-cf-hdr.png)
 
     Radarr scoring (Multiple profiles possible)
     ![!Notifiarr Scores](images/sync/notifiarr-scores.png)

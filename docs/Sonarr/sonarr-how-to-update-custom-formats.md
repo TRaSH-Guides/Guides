@@ -6,7 +6,7 @@ Here I will try to explain how you can manually update Custom Formats for Sonarr
 
 ## How to Copy/Paste the JSON
 
-The manual way is almost the same as the Import Custom Format way found [HERE](/Sonarr/Sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}
+The manual way is almost the same as the Import Custom Format way found [HERE](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}
 
 ### In Sonarr
 
@@ -20,7 +20,7 @@ The manual way is almost the same as the Import Custom Format way found [HERE](/
 
 ### Paste the Custom Format
 
-In the empty `Custom Format JSON` box (1) you just paste the `JSON` that you got from the [Custom Format Collection](/Sonarr/Sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} or provided to you from other sources followed by the `Import` button (2).
+In the empty `Custom Format JSON` box (1) you just paste the `JSON` that you got from the [Custom Format Collection](/Sonarr/sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"} or provided to you from other sources followed by the `Import` button (2).
 
 ![cf-import-cf](images/cf-import-cf.png)
 
