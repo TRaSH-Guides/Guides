@@ -62,17 +62,18 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                                  | Optional                            | &nbsp; | &nbsp; |
-| ------------------------------------- | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repack-proper)       | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
-| [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Multi](#multi)                       | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [x264](#x264)                         | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x265](#x265)                         | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                       |                                     | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)               |                                     | &nbsp; | &nbsp; |
-| [Dutch Groups](#dutch-groups)         |                                     | &nbsp; | &nbsp; |
-| [Anime Dual Audio](#anime-dual-audio) |                                     | &nbsp; | &nbsp; |
+| Misc                                  | Optional                            | French Audio Version          | French Source Groups                  |
+| ------------------------------------- | ----------------------------------- | ----------------------------- | ------------------------------------- |
+| [Repack/Proper](#repack-proper)       | [EVO (no WEBDL)](#evo-no-webdl)     | [Multi-French](#multi-french) | [[FR] HQ-Remux](#fr-hq-remux)         |
+| [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)         | [Multi-Audio](#multi-audio)   | [[FR] HQ](#fr-hq)                     |
+| [Multi](#multi)                       | [Obfuscated](#obfuscated)           | [French Audio](#french-audio) | [[FR] HQ-WEBDL](#fr-hq-webdl)         |
+| [x264](#x264)                         | [Retags](#retags)                   | [VFF](#vff)                   | [[FR] Scene Groups](#fr-scene-groups) |
+| [x265](#x265)                         | [Bad Dual Groups](#bad-dual-groups) | [VOF](#vof)                   | [[FR] LQ](#fr-lq)                     |
+| [MPEG2](#mpeg2)                       |                                     | [VFI](#vfi)                   |                                       |
+| [FreeLeech](#freeleech)               |                                     | [VFQ](#vfq)                   |                                       |
+| [Dutch Groups](#dutch-groups)         |                                     | [VQ](#vq)                     |                                       |
+| [Anime Dual Audio](#anime-dual-audio) |                                     | [VFB](#vfb)                   |                                       |
+|                                       |                                     | [VOSTFR](#vostfr)             |                                       |
 
 ## Audio Advanced
 
@@ -1415,6 +1416,265 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## French Audio Version
+
+------
+
+### Multi-French
+
+??? faq "Multi-French - [CLICK TO EXPAND]"
+
+    Recognised movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/multi-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Multi-Audio
+
+??? faq "Multi-Audio - [CLICK TO EXPAND]"
+
+    A sliglthly modified [Multi](#multi) Custom Formats that recognise VF and VO inside the name.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/multi-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### French Audio
+
+??? faq "French Audio - [CLICK TO EXPAND]"
+
+    This will recognised every kind of French Audio.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFF
+
+??? faq "VFF - [CLICK TO EXPAND]"
+
+    Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vff.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOF
+
+??? faq "VOF - [CLICK TO EXPAND]"
+
+    Original French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vof.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFI
+
+??? faq "VFI - [CLICK TO EXPAND]"
+
+    International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vfi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFQ
+
+??? faq "VFQ - [CLICK TO EXPAND]"
+
+    Canadian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VQ
+
+??? faq "VQ - [CLICK TO EXPAND]"
+
+    Quebec Version (strong Quebec accent, ex: The Simpsons movie).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFB
+
+??? faq "VFB - [CLICK TO EXPAND]"
+
+    Belgian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vfb.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOSTFR
+
+??? faq "VOSTFR - [CLICK TO EXPAND]"
+
+    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-vostfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## French HQ Source Groups
+
+------
+
+### [FR] HQ
+
+<sub>French HQ-Releases = [FR] HQ</sub>
+
+??? faq "[FR] HQ - [CLICK TO EXPAND]"
+
+    A collection of French P2P groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-hq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### [FR] HQ-WEBDL
+
+??? faq "[FR] HQ-WEBDL - [CLICK TO EXPAND]"
+
+    A personal collection of French P2P WEB-DL groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-hq-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### [FR] HQ-Remux
+
+??? faq "[FR] HQ-Remux - [CLICK TO EXPAND]"
+
+    A personal collection of French P2P Remux groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-hq-remux.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### [FR] Scene Groups
+
+??? faq "[FR] Scene Groups - [CLICK TO EXPAND]"
+
+    Known French Scene groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### [FR] LQ
+
+<sub>French Low Quality Releases = [FR] LQ</sub>
+
+??? faq "[FR] LQ - [CLICK TO EXPAND]"
+
+    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+
+    !!! note
+
+        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
+        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - DeTAG/ReTAG = Detagging or stealing groups.
+        - Other reasons = Banned Release Groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/user-radarr-cf/french-cfs/french-lq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
