@@ -1,7 +1,7 @@
 {
   "trash_id": "6d27683346c78d6a3f772e30877910a7",
   "trash_score": "1",
-  "trash_regex": "See individual French Audio CFs: VFF, VFI, VOF, VFQ, VFB",
+  "trash_regex": "See individual French Audio CFs: VFF, VFI, VOF, VFQ, VQ, VFB",
   "name": "French Audio",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -65,7 +65,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bVF?Q\\b"
+        "value": "\\bVFQ\\b"      
+      }
+    },
+    {
+      "name": "Version Québécoise",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVQ\\b"
       }
     }
   ]
