@@ -5,15 +5,6 @@
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "MULTi",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "(^(?=.*\\b(VO)\\b)(?=.*\\b(VF(F|I)?)\\b)|MULTi)(\\b|\\d)"
-      }
-    },
-    {
       "name": "Original Audio",
       "implementation": "LanguageSpecification",
       "negate": false,
