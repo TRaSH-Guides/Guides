@@ -1,3 +1,18 @@
+# 2022-09-07
+[Sonarr] CF `[WEB Tier 02]` #793
+- Added: `SMURF`
+[Sonarr] CF `[Special Edition]`#792
+- REMOVED: CF `[Special Edition]` - To prevent matching episode titles and the minimal existing SE for TV Shows.
+[Radarr] CF `[Flights (no IMAX)]` #791
+- Lowered Score to `0` because it will be removed upcoming weekend, and it's already added to CF `[HQ-Remux]` and `[Remux Tier 02]`
+[Backend] consistent naming across CF #790
+- Changed: link repack-proper to repackproper to be consistent with `/` being removed by markdown
+[Guide] How to run the unRaid mover for qBittorent seeding torrents #788
+- Add: `'` to the user/pass
+- Change: pip to pip3
+- Improved warning description
+- Added: Screenshot attention
+
 # 2022-09-04
 [Starr] How to import Custom Formats #786
 - Added: How to Setup the scores in your Quality Profile instructions.
