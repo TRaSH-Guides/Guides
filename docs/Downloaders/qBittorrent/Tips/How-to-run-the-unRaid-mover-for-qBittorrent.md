@@ -1,8 +1,5 @@
 # How to run the unRaid mover for qBittorent seeding torrents
 
-{! include-markdown "../../../../includes/downloaders/basic-setup.md" !}
-<!-- --8<-- "includes/downloaders/basic-setup.md" -->
-
 When you make use of the unRaid cache drive for your `/data/torrents` share and the torrents in qBittorent are still seeding then the mover can't move files, because they are still in use.
 
 Using the following instructions you will be able to move the files with the use of the qBittorrent API.
@@ -16,6 +13,12 @@ Using the following instructions you will be able to move the files with the use
 ## Warning
 
 !!! Danger "If you make use of the Seed Time/Ratio settings in your Indexers settings in the Starr apps[^1].<br> Make sure you're using `Post-Import Category` in your Starr apps Download clients settings.<br>Else it could happen when the torrents get paused that they get removed by the Starr apps before the seeding goal is reached."
+
+!!! attention
+    The screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+
+    - Always follow the data described in the guide.
+    - If you got any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
 
 ## Needed
 
