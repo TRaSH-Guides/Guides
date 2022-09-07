@@ -16,7 +16,7 @@ I also made 3 guides related to this one.
 
     I also suggest to change the Propers and Repacks settings in Sonarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repack-proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -64,16 +64,16 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                            | Optional                            | &nbsp; | &nbsp; |
-| ------------------------------- | ----------------------------------- | ------ | ------ |
-| [FreeLeech](#freeleech)         | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                 | [Scene](#scene)                     | &nbsp; | &nbsp; |
-| [Multi](#multi)                 | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Repack/Proper](#repack-proper) | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)         | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)         | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [x264](#x264)                   |                                     | &nbsp; | &nbsp; |
-| [x265](#x265)                   |                                     | &nbsp; | &nbsp; |
+| Misc                           | Optional                            | &nbsp; | &nbsp; |
+| ------------------------------ | ----------------------------------- | ------ | ------ |
+| [FreeLeech](#freeleech)        | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                | [Scene](#scene)                     | &nbsp; | &nbsp; |
+| [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [Repack/Proper](#repackproper) | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [Repack v2](#repack-v2)        | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [Repack v3](#repack-v3)        | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
+| [x264](#x264)                  |                                     | &nbsp; | &nbsp; |
+| [x265](#x265)                  |                                     | &nbsp; | &nbsp; |
 
 ------
 
@@ -81,7 +81,7 @@ I also made 3 guides related to this one.
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- |
 | [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [Uncensored](#uncensored)             |
 | [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v0](#v0)                             |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v1](#v1)                              |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v1](#v1)                             |
 | [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v2](#v2)                             |
 | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v3](#v3)                             |
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [v4](#v4)                             |
@@ -869,7 +869,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Repack Proper
+### Repack/Proper
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
