@@ -18,7 +18,7 @@ I also made 3 guides related to this one.
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repack-proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -64,7 +64,7 @@ I also made 3 guides related to this one.
 
 | Misc                                  | Optional                            | &nbsp; | &nbsp; |
 | ------------------------------------- | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repack-proper)       | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
+| [Repack/Proper](#repackproper)        | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
 | [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
 | [Multi](#multi)                       | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
 | [x264](#x264)                         | [Retags](#retags)                   | &nbsp; | &nbsp; |
@@ -1066,7 +1066,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Repack Proper
+### Repack/Proper
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

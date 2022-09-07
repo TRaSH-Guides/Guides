@@ -302,6 +302,15 @@
       }
     },
     {
+      "name": "SMURF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SMURF)\\b"
+      }
+    },
+    {
       "name": "SPiRiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
