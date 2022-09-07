@@ -45,22 +45,22 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions                      | Unwanted                           | HQ Source Groups            | Streaming Services  |
-| ------------------------------------ | ---------------------------------- | --------------------------- | ------------------- |
-| [Hybrid](#hybrid)                    | [BR-DISK](#br-disk)                | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster)                | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
-| [Special Editions](#special-edition) | [DV (WEBDL)](#dv-webdl)            | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
-|                                      | [x265 (HD)](#x265-hd)              | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
-|                                      | [x265 (no HDR/DV)](#x265-no-hdrdv) |                             | [HBO Max](#hmax)    |
-|                                      |                                    |                             | [HBO](#hbo)         |
-|                                      |                                    |                             | [Hulu](#hulu)       |
-|                                      |                                    |                             | [Netflix](#nf)      |
-|                                      |                                    |                             | [Paramount+](#pmtp) |
-|                                      |                                    |                             | [Peacock TV](#pcok) |
-|                                      |                                    |                             | [Quibi](#qibi)      |
-|                                      |                                    |                             | [SHOWTIME](#sho)    |
-|                                      |                                    |                             | [YouTube Red](#red) |
-|                                      |                                    |                             | [iTunes](#it)       |
+| Series Versions       | Unwanted                           | HQ Source Groups            | Streaming Services  |
+| --------------------- | ---------------------------------- | --------------------------- | ------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
+| [Remaster](#remaster) | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
+|                       | [DV (WEBDL)](#dv-webdl)            | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
+|                       | [x265 (HD)](#x265-hd)              | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
+|                       | [x265 (no HDR/DV)](#x265-no-hdrdv) |                             | [HBO Max](#hmax)    |
+|                       |                                    |                             | [HBO](#hbo)         |
+|                       |                                    |                             | [Hulu](#hulu)       |
+|                       |                                    |                             | [Netflix](#nf)      |
+|                       |                                    |                             | [Paramount+](#pmtp) |
+|                       |                                    |                             | [Peacock TV](#pcok) |
+|                       |                                    |                             | [Quibi](#qibi)      |
+|                       |                                    |                             | [SHOWTIME](#sho)    |
+|                       |                                    |                             | [YouTube Red](#red) |
+|                       |                                    |                             | [iTunes](#it)       |
 
 ------
 
@@ -718,25 +718,6 @@ I also made 3 guides related to this one.
 
     ```json
      [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remaster.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Special Edition
-
-??? faq "Special Edition - [CLICK TO EXPAND]"
-
-    Custom format for several Special Editions
-
-    - The Director's Cut is the version edited by the Director, usually for additional home media releases.
-    - An Extended Cut is usually any version of the film which is longer than the theatrical cut (though in very rare cases, its shorter).
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/special-edition.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
