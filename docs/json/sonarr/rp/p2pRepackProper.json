@@ -12,13 +12,13 @@
     {
       "score": 150,
       "terms": [
-        "/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS|-monkee|-NTb|-NTG|-QOQ|-RTN|-TOMMY|-ViSUM|-T6D|-FLUX|NOSiViD)\\b/i"
+        "/(-ABBIE|-AJP69|-CasStudio|-CtrlHD|-FLUX|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SIC|T6D|-TOMMY|-ViSUM)\\b/i"
       ]
     },
     {
       "score": 125,
       "terms": [
-        "/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END|-SiC|-GNOME|-ABBIE)\\b/i"
+        "/(3CTWeB|BLUTONiUM|-BTN|-BTW|-Chotab|-Cinefeel|-CiT|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\\b/i"
       ]
     },
     {

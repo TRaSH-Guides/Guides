@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\\b|-GGEZ\\b|-GGWP\\b|-GLHF\\b|-KOGI\\b)).*/i"
+    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\\b|-GGEZ\\b|-GGWP\\b|-GLHF\\b|-GOSSIP\\b|-KOGI\\b|-PECULATE\\b)).*/i"
   }, {
     "name": "Dislike Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",
@@ -53,7 +53,7 @@
     }, {
       "name": "Dislike retagged groups",
       "trash_id": "19cd5ecc0a24bf493a75e80a51974cdd",
-      "term": "/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\\b/i"
+      "term": "/(-4P|-4Planet|-AsRequested|-BUYMORE|-CAPTCHA|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-WRTEAM|-xpost)\\b/i"
     }, {
       "name": "Dislike release ending: en",
       "trash_id": "6a7b462c6caee4a991a9d8aa38ce2405",
