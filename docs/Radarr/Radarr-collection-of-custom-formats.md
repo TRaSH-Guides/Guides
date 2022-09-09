@@ -51,7 +51,7 @@ I also made 3 guides related to this one.
 | Movie Versions                                | Unwanted                           | HQ Source Groups      | Streaming Services     |
 | --------------------------------------------- | ---------------------------------- | --------------------- | ---------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [LQ](#lq)                          | [HQ](#hq)             | [Apple TV+](#aptv)     |
+| [Remaster](#remaster)                         | [LQ](#lq)                          | [HQ](#hq)             | [Apple TV+](#atvp)     |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)                          | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
 | [Special Editions](#special-edition)          | [DV (WEBDL)](#dv-webdl)            |                       | [HBO Max](#hmax)       |
 | [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)              |                       | [Hulu](#hulu)          |
@@ -1277,7 +1277,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### APTV
+### ATVP
 
 <sub>Apple TV+</sub>
 
@@ -1288,7 +1288,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aptv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atvp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
