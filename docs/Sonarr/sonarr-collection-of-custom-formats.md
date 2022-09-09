@@ -48,7 +48,7 @@ I also made 3 guides related to this one.
 | Series Versions       | Unwanted                           | HQ Source Groups            | Streaming Services  |
 | --------------------- | ---------------------------------- | --------------------------- | ------------------- |
 | [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#aptv)  |
+| [Remaster](#remaster) | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#atvp)  |
 |                       | [DV (WEBDL)](#dv-webdl)            | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
 |                       | [x265 (HD)](#x265-hd)              | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
 |                       | [x265 (no HDR/DV)](#x265-no-hdrdv) |                             | [HBO Max](#hmax)    |
@@ -1177,7 +1177,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### APTV
+### ATVP
 
 <sub>Apple TV+</sub>
 
@@ -1188,7 +1188,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aptv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atvp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

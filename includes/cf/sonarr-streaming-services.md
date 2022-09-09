@@ -2,7 +2,7 @@
     | Custom Format                                                                           | Score                                     | Trash ID                               |
     | --------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
     | [{{ sonarr['cf']['amzn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#amzn) | {{ sonarr['cf']['amzn']['trash_score'] }} | {{ sonarr['cf']['amzn']['trash_id'] }} |
-    | [{{ sonarr['cf']['aptv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#aptv) | {{ sonarr['cf']['aptv']['trash_score'] }} | {{ sonarr['cf']['aptv']['trash_id'] }} |
+    | [{{ sonarr['cf']['atvp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atvp) | {{ sonarr['cf']['atvp']['trash_score'] }} | {{ sonarr['cf']['atvp']['trash_id'] }} |
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)   | {{ sonarr['cf']['sho']['trash_score'] }}  | {{ sonarr['cf']['sho']['trash_id'] }}  |
     | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp) | {{ sonarr['cf']['dsnp']['trash_score'] }} | {{ sonarr['cf']['dsnp']['trash_id'] }} |
     | [{{ sonarr['cf']['nf']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#nf)     | {{ sonarr['cf']['nf']['trash_score'] }}   | {{ sonarr['cf']['nf']['trash_id'] }}   |
