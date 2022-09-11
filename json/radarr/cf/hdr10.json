@@ -28,7 +28,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\bHDR10Plus|HDR10(\\b\\+)"
+        "value": "\\bHDR10(\\+|P(lus)?\\b)"
       }
     },
     {
