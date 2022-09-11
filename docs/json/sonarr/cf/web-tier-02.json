@@ -23,15 +23,6 @@
       }
     },
     {
-      "name": "BTN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BTN)\\b"
-      }
-    },
-    {
       "name": "BTW",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
