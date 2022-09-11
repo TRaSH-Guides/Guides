@@ -1,3 +1,17 @@
+# 2022-09-11
+[Starr] CF updates #804
+
+[Starr]
+- Fixed: `HDR10+` to recognize `HDR10P`.
+- Added: RegEx Case.
+
+[Radarr]
+- DELETED: CF `[Flights (no IMAX)]` - already added to CF `[HQ-Remux]` and `[Remux Tier 02]`.
+- Updated: CF `[MA]` with a score of `10` - Their releases are generally of a higher quality.
+
+[Sonarr]
+- Removed: `BTN` from `[WEB Tier 02]` and RP, This is a generic group name that anybody can use on BTN and we can't determine which quality they are.
+
 # 2022-09-07
 [Sonarr] CF `[WEB Tier 02]` #793
 - Added: `SMURF`
