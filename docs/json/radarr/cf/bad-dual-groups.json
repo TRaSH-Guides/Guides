@@ -113,6 +113,15 @@
       }
     },
     {
+      "name": "PTHome",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-PTHome)\\b"
+      }
+    },
+    {
       "name": "RiPER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -173,6 +182,15 @@
       "required": false,
       "fields": {
         "value": "\\b(-YusukeFLA)\\b"
+      }
+    },
+    {
+      "name": "ZigZag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-ZigZag)\\b"
       }
     }
   ]
