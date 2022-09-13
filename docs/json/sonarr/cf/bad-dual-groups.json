@@ -113,6 +113,15 @@
       }
     },
     {
+      "name": "PTHomeome",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-PTHome)\\b"
+      }
+    },
+    {
       "name": "RiPER",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
