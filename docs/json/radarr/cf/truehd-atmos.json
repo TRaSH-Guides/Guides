@@ -23,6 +23,15 @@
       }
     },
     {
+      "name": "Not Basic Dolby Digital",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
+      }
+    },
+    {
       "name": "Not Dolby Digital Plus ",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
@@ -41,12 +50,12 @@
       }
     },
     {
-      "name": "Not Basic Dolby Digital",
+      "name": "Not DTS X",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\bDD[^a-z+]|(?<!e)ac3"
+        "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
       }
     },
     {
