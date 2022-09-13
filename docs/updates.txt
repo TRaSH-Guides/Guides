@@ -1,3 +1,12 @@
+# 2022-09-13
+[Starr]
+- Added: `PTHome` to the CF `[Bad Dual Groups]`.
+- Added: `ZigZag` to the CF `[Bad Dual Groups]`.
+- Added: `Not DTS X` condition to prevent false positive.
+
+[Sonarr]
+- Updated: CF `[Uncensored]` added `uncut` recognizing.
+
 # 2022-09-11
 [Starr] CF updates #804
 
