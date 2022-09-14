@@ -66,14 +66,14 @@ I also made 3 guides related to this one.
 
 | Misc                           | Optional                            | &nbsp; | &nbsp; |
 | ------------------------------ | ----------------------------------- | ------ | ------ |
-| [FreeLeech](#freeleech)        | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                | [Scene](#scene)                     | &nbsp; | &nbsp; |
-| [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Repack/Proper](#repackproper) | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)        | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)        | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [x264](#x264)                  |                                     | &nbsp; | &nbsp; |
+| [Repack/Proper](#repackproper) | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
+| [Repack v2](#repack-v2)        | [Scene](#scene)                     | &nbsp; | &nbsp; |
+| [Repack v3](#repack-v3)        | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [Multi](#multi)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [x264](#x264)                  | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
 | [x265](#x265)                  |                                     | &nbsp; | &nbsp; |
+|                                |                                     | &nbsp; | &nbsp; |
 
 ------
 
@@ -917,25 +917,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### FreeLeech
-
-??? faq "FreeLeech - [CLICK TO EXPAND]"
-
-    Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
-
-    !!! attention
-        Keep in mind not all trackers support this option.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
