@@ -74,6 +74,19 @@ I also made 3 guides related to this one.
 | [Dutch Groups](#dutch-groups)         |                                     | &nbsp; | &nbsp; |
 | [Anime Dual Audio](#anime-dual-audio) |                                     | &nbsp; | &nbsp; |
 
+------
+
+| Anime                                                                       | Anime                                                                 | Anime                                 | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)                             | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)                             | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v2](#v2)                             | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)                             |                                       |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)                             |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv)                           |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |                                       |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |                                       |                                       |
+
 ## Audio Advanced
 
 ------
@@ -1418,3 +1431,397 @@ I also made 3 guides related to this one.
     ```
 
 <sub><sup>[TOP](#index)</sup>
+
+## Anime
+
+------
+
+### Anime BD Tier 01 (Top SeaDex Muxers)
+
+??? faq "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-01-top-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 02 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-02-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 03 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-03-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 04 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-04-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 05 (Remuxes)
+
+??? faq "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
+    Groups that are consistent and do Remuxes
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-05-remuxes.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 06 (FanSubs)
+
+??? faq "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-06-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 07 (P2P/Scene)
+
+??? faq "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
+    Known P2P and Scene Anime groups
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-07-p2pscene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 08 (Mini Encodes)
+
+??? faq "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
+    Know groups that do mini encodes
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-08-mini-encodes.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 01 (Muxers)
+
+??? faq "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-01-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 02 (Top FanSubs)
+
+??? faq "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-02-top-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 03 (SubsPlease)
+
+??? faq "Anime Web Tier 03 (SubsPlease) - [CLICK TO EXPAND]"
+    SubsPlease group. They are official subs but tend to be more consistent and release fast
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-03-subsplease.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 04 (Official Subs)
+
+??? faq "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
+    Official sub groups
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-04-official-subs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 05 (FanSubs)
+
+??? faq "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-05-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 06 (FanSubs)
+
+??? faq "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-06-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Raws
+
+??? faq "Anime Raws - [CLICK TO EXPAND]"
+    A collection of know groups that release raws
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-raws.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime LQ Groups
+
+??? faq "Anime LQ Groups - [CLICK TO EXPAND]"
+    A collection of known Low Quality groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Uncensored
+
+??? faq "Uncensored - [CLICK TO EXPAND]"
+    This CF covers releases that are uncensored
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uncensored.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v0
+
+??? faq "v0 - [CLICK TO EXPAND]"
+    CF to cover releases named with v0 which we don't want
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v0.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v1
+
+??? faq "v1 - [CLICK TO EXPAND]"
+    CF to cover v1 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v2
+
+??? faq "v2 - [CLICK TO EXPAND]"
+    CF to cover v2 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v2.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v3
+
+??? faq "v3 - [CLICK TO EXPAND]"
+    CF to cover v3 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v3.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v4
+
+??? faq "v4 - [CLICK TO EXPAND]"
+    CF to cover v4 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v4.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VRV
+
+??? faq "VRV - [CLICK TO EXPAND]"
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### 10bit
+
+??? faq "10bit - [CLICK TO EXPAND]"
+    This CF covers releases that are 10bit
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/10bit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Dual Audio
+
+??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
+    This CF covers releases that have Dual Audio
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Dubs Only
+
+??? faq "Dubs Only - [CLICK TO EXPAND]"
+    This CF covers releases that only have Dubs
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dubs-only.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
