@@ -62,30 +62,30 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                                  | Optional                            | &nbsp; | &nbsp; |
-| ------------------------------------- | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repackproper)        | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
-| [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Multi](#multi)                       | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [x264](#x264)                         | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x265](#x265)                         | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                       |                                     | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)               |                                     | &nbsp; | &nbsp; |
-| [Dutch Groups](#dutch-groups)         |                                     | &nbsp; | &nbsp; |
-|                                       |                                     | &nbsp; | &nbsp; |
+| Misc                           | Optional                            | &nbsp; | &nbsp; |
+| ------------------------------ | ----------------------------------- | ------ | ------ |
+| [Repack/Proper](#repackproper) | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
+| [Repack2](#repack2)            | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [Multi](#multi)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [x264](#x264)                  | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [x265](#x265)                  | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                |                                     | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)        |                                     | &nbsp; | &nbsp; |
+| [Dutch Groups](#dutch-groups)  |                                     | &nbsp; | &nbsp; |
+|                                |                                     | &nbsp; | &nbsp; |
 
 ------
 
-| Anime                                                                       | Anime                                                                 | Anime                                 | Anime Optional                        |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)                             | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)                             | [10bit](#10bit)                       |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v2](#v2)                             | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)                             |                                       |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)                             |                                       |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv)                           |                                       |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |                                       |                                       |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |                                       |                                       |
+| Anime                                                                       | Anime                                                                 | Anime       | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)   | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)   | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v2](#v2)   | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)   |                                       |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)   |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv) |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |             |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |             |                                       |
 
 ## Audio Advanced
 
@@ -144,7 +144,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### DD+ ATMOS
+### DDPlus ATMOS
 
 ??? faq "DD+ ATMOS - [CLICK TO EXPAND]"
 
