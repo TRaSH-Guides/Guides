@@ -1,0 +1,16 @@
+{
+    "trash_id": "064af5f084a0a24458cc8ecd3220f93f",
+    "name": "Uncensored",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+      {
+        "name": "Uncensored",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b"
+        }
+      }
+    ]
+  }
