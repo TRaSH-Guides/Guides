@@ -1,3 +1,18 @@
+# 2022-09-15
+**[Starr]**
+- Added: Not DTS X condition to prevent false positive. #818
+- Fixed: CF `[DTS-HRA]` - Wrongly matching `DTS-Hi10P`. #829
+
+**[Radarr]**
+- Added: Several new CF for the feature Radarr Anime Guide. #824
+- Fixed: CF `[LQ]` matching wrongly epic in release name. #828
+
+**[Sonarr]**
+- Delete: CF `[Freeleech]` - Sonarr does not support freeleech condition. #820
+
+**[Guide]**
+- Add: pip from nerdpack for `How to run the unRaid mover for qBittorent seeding torrents`. #827
+
 # 2022-09-13
 [Starr]
 - Added: `PTHome` to the CF `[Bad Dual Groups]`.

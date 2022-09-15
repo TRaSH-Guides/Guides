@@ -1,6 +1,7 @@
 {
   "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
   "trash_score": "2000",
+  "trash_regex": "https://regex101.com/r/jdUH4x/2",
   "name": "DTS-HD HRA",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
@@ -9,7 +10,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "dts[-. ]?(hd[. ]?)?(hr|hi)"
+              "value": "dts[-. ]?(hd[. ]?)?(hra?|hi\\b)"
           }
       },
       {
