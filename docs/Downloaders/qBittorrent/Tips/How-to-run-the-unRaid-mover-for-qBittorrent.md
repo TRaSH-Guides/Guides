@@ -38,6 +38,7 @@ Install the following Plugins.
 - Nerd Tools
       - python3 [^2]
       - python-setuptools [^2]
+      - python-pip [^2]
 
 ------
 
