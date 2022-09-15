@@ -20,6 +20,13 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 ## Media Management
 
+### Series Type
+
+When adding a new series make sure you set the series type to Anime
+
+??? check "example - [Click to Expand]"
+    ![!cfa-seriestype](images/cfa-seriestype.png)
+
 ### Recommended naming scheme
 
 ```bash
@@ -70,7 +77,7 @@ Result:
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime-work-in-progress){:target="_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
