@@ -72,7 +72,7 @@ I also made 3 guides related to this one.
 | [MPEG2](#mpeg2)                       |                                     | &nbsp; | &nbsp; |
 | [FreeLeech](#freeleech)               |                                     | &nbsp; | &nbsp; |
 | [Dutch Groups](#dutch-groups)         |                                     | &nbsp; | &nbsp; |
-| [Anime Dual Audio](#anime-dual-audio) |                                     | &nbsp; | &nbsp; |
+|                                       |                                     | &nbsp; | &nbsp; |
 
 ------
 
@@ -1169,21 +1169,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dutch-groups.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Anime Dual Audio
-
-??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
-    Description placeholder
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
