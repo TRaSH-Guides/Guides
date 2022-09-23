@@ -111,15 +111,6 @@
       "fields": {
         "value": "\\b(URANIME)\\b"
       }
-    },
-    {
-      "name": "ZR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(ZR)\\b"
-      }
     }
   ]
 }
