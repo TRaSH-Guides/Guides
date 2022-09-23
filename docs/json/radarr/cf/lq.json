@@ -284,6 +284,15 @@
       }
     },
     {
+      "name": "L0SERNIGHT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(L0SERNIGHT)\\b"
+      }
+    },
+    {
       "name": "MeGusta",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

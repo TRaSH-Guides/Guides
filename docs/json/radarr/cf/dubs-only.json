@@ -57,6 +57,15 @@
       "fields": {
         "value": "\\b(torenter69)\\b"
       }
+    },
+    {
+      "name": "Yameii",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Yameii\\]|-Yameii\\b"
+      }
     }
   ]
 }
