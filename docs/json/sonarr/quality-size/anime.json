@@ -3,86 +3,116 @@
     "type": "anime",
     "qualities": [
         {
+            "quality": "SDTV",
+            "min": 5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "WEBRip-480p",
+            "min": 5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "WEBDL-480p",
+            "min": 5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "DVD",
+            "min": 5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "Bluray-480p",
+            "min": 5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
             "quality": "HDTV-720p",
-            "min": 2.3,
-            "preferred": 50.4,
-            "max": 51.4
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "HDTV-1080p",
-            "min": 2.3,
-            "preferred": 99,
-            "max": 100
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-720p",
-            "min": 4.3,
-            "preferred": 99,
-            "max": 100
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-720p",
-            "min": 4.3,
-            "preferred": 50.4,
-            "max": 51.4
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-720p",
-            "min": 4.3,
-            "preferred": 101.2,
-            "max": 102.2
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-1080p",
-            "min": 4.5,
-            "preferred": 256.4,
-            "max": 257.4
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-1080p",
-            "min": 4.3,
-            "preferred": 252.6,
-            "max": 253.6
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-1080p",
-            "min": 4.3,
-            "preferred": 257.1,
-            "max": 258.1
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-1080p Remux",
-            "min": 0,
+            "min": 5,
             "preferred": 399,
             "max": 400
         },
         {
             "quality": "HDTV-2160p",
-            "min": 69.1,
-            "preferred": 349,
-            "max": 350
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-2160p",
-            "min": 69.1,
-            "preferred": 349,
-            "max": 350
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-2160p",
-            "min": 69.1,
-            "preferred": 349,
-            "max": 350
+            "min": 5,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-2160p",
-            "min": 94.6,
+            "min": 5,
             "preferred": 399,
             "max": 400
         },
         {
             "quality": "Bluray-2160p Remux",
-            "min": 204.4,
+            "min": 5,
             "preferred": 399,
             "max": 400
         }
