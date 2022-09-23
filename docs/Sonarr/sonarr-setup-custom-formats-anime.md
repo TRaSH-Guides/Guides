@@ -94,15 +94,9 @@ Go to `Settings` => `Profiles`
 
 ![!cfa-mergedqualities](images/cfa-mergedqualities.png)
 
-We then need to select and organise qualities as below.
+We then need to select and organise the qualities like below.
 
 ![!cfa-qualityorder](images/cfa-qualityorder.png)
-
-Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Bluray-1080p` and the `Upgrade Until Custom Format Score` to `10000`
-
-After this has been done your profile should look like below.
-
-![!cfa-qualityprofile](images/cfa-qualityprofile.png)
 
 ---
 
@@ -111,13 +105,15 @@ After this has been done your profile should look like below.
 !!! note
     We're going to make use of the below custom formats. See [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import them.
 
+### Default Scoring
+
 {! include-markdown "../../includes/cf/sonarr-anime.md" !}
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
 
 The scoring that has been set is the recommended scoring, however some of the CFs are optional depending on what you prefer.
 `Anime Dual Audio`, `Uncensored` and `10bit` can be given postive scores if you want to prefer content with these attributes.
 
-`Anime Raws` and `Dubs Only` are optional negative scores, if you prefer these attributes you can give them a positive score.
+`Anime Raws` and `Dubs Only` are negatively scored, however if you prefer these attributes you can give them a positive score.
 
 Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `Remux-1080p - Anime` profile that was setup before.
 
@@ -126,9 +122,25 @@ Once the custom formats have been imported you can set the scores as above. To d
 
 In the profile enter the scores as per the above table in this section.
 
-![!cfa-scoring](images/cfa-scoring.png)
+![!cfa-default-scoring](images/cfa-default-scoring.png)
 
 After you are done it should look like the image above.
+
+### Dual Audio Scoring
+
+If you prefer `Dual Audio` releases you can instead setup your scores as below so that you will always prefrence `Dual Audio` releases, you will still benefit from the tiers if a better release group does a `Dual Audio` release.
+
+![!cfa-da-scoring](images/cfa-da-scoring.png)
+
+### Finishing up
+
+Once you have set your preferred scoring you will need to make one more change to your `Remux-1080p - Anime` profile.
+
+Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Bluray-1080p` and the `Upgrade Until Custom Format Score` to `10000`
+
+After this has been done your profile should look like below. This is an example of the Default Scoring setup.
+
+![!cfa-complete](images/cfa-complete.png)
 
 ### Acknowledgements
 
