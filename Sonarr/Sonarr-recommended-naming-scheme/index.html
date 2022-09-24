@@ -2154,11 +2154,6 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>The Tokens not available in the release won't be used/shown.</p>
 <hr />
 <h2 id="standard-episode-format">Standard Episode Format<a class="headerlink" href="#standard-episode-format" title="Permanent link"></a></h2>
-<div class="admonition caution">
-<p class="admonition-title">Starting from v3.0.6.1431, Sonarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types. </p>
-<p>If you're using a lower version replace:</p>
-<p><code>{[MediaInfo VideoDynamicRangeType]}</code> with <code>{[MediaInfo VideoDynamicRange]}</code></p>
-</div>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
@@ -2200,10 +2195,6 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>The Series Title! (2010) [imdb-tt1520211]</code></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The officially supported format is <code>{imdb-{ImdbId}}</code> but Plex should also support <code>(imdb-{ImdbId})</code> or <code>[imdb-{ImdbId}]</code>, though the above should work for now, It's actually not needed to add an ID to the folder or filename to use the new Plex TV Series Scanner.</p>
-</div>
 <p>For Jellyfin/Emby:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdbid-<span class="o">{</span>ImdbId<span class="o">}]</span>
 </code></pre></div>
@@ -2252,7 +2243,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 26, 2022 21:19:04</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2022 16:33:52</span>
       
     
   </small>
