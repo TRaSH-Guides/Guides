@@ -48,29 +48,29 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                           | HQ Source Groups      | Streaming Services     |
-| --------------------------------------------- | ---------------------------------- | --------------------- | ---------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [LQ](#lq)                          | [HQ](#hq)             | [Apple TV+](#atvp)     |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                          | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [DV (WEBDL)](#dv-webdl)            |                       | [HBO Max](#hmax)       |
-| [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)              |                       | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             | [x265 (no HDR/DV)](#x265-no-hdrdv) |                       | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                                    |                       | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                                    |                       | [Paramount+](#pmtp)    |
-|                                               |                                    |                       | [Movies Anywhere](#ma) |
+| Movie Versions                                | Unwanted              | HQ Source Groups      | Streaming Services     |
+| --------------------------------------------- | --------------------- | --------------------- | ---------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
+| [Remaster](#remaster)                         | [LQ](#lq)             | [HQ](#hq)             | [Apple TV+](#atvp)     |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
+| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) |                       | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) |                       |                       | [Hulu](#hulu)          |
+| [Theatrical Cut](#theatrical-cut)             |                       |                       | [Netflix](#nf)         |
+| [IMAX](#imax)                                 |                       |                       | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       |                       | [Paramount+](#pmtp)    |
+|                                               |                       |                       | [Movies Anywhere](#ma) |
 
 ------
 
 | Misc                           | Optional                            | &nbsp; | &nbsp; |
 | ------------------------------ | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repackproper) | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
-| [Repack2](#repack2)            | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Multi](#multi)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [x264](#x264)                  | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x265](#x265)                  | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                |                                     | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)        |                                     | &nbsp; | &nbsp; |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
+| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | &nbsp; | &nbsp; |
+| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
+| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [x265](#x265)                  | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
 | [Dutch Groups](#dutch-groups)  |                                     | &nbsp; | &nbsp; |
 |                                |                                     | &nbsp; | &nbsp; |
 
@@ -870,24 +870,30 @@ I also made 3 guides related to this one.
 
 ??? faq "LQ - [CLICK TO EXPAND]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
-
-    !!! note
-
-        You might want to add the following also [EVO (no WEBDL)](#evo-no-webdl)
-
-        - BLOCK1 = Low-Quality Releases (often banned groups)
-        - BLOCK2 = Another Small list of often banned groups.
-        - BLOCK3 = Banned release groups.
-        - BLOCK4 = Low-quality and/or dishonest release groups.
-        - BLOCK5 = Banned Release Groups.
-        - BLOCK6 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-        - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying!!!
+    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### 3D
+
+??? faq "3D - [CLICK TO EXPAND]"
+
+    If you prefer or not prefer 3D.
+
+    You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -919,42 +925,20 @@ I also made 3 guides related to this one.
 
 ------
 
-### x265 (no HDR/DV)
-
-??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
-
-    This blocks 720/1080p (HD) releases that are encoded in x265.
-
-    **But it will allow x265 releases if they have HDR and/or DV**
-
-    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
-
-    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
-
-    !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
+## Optional
 
 ------
 
-### 3D
+### Bad Dual Groups
 
-??? faq "3D - [CLICK TO EXPAND]"
-
-    If you prefer or not prefer 3D.
-
-    You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -980,9 +964,7 @@ I also made 3 guides related to this one.
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
     ```
 
-------
-
-## Optional
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1055,20 +1037,26 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-<sub><sup>[TOP](#index)</sup>
-
 ------
 
-### Bad Dual Groups
+### x265 (no HDR/DV)
 
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+
+    This blocks 720/1080p (HD) releases that are encoded in x265.
+
+    **But it will allow x265 releases if they have HDR and/or DV**
+
+    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+
+    !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
