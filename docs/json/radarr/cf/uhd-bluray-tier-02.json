@@ -23,15 +23,6 @@
       }
     },
     {
-      "name": "WEBDV",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bWEBDV\\b"
-      }
-    },
-    {
       "name": "2160p",
       "implementation": "ResolutionSpecification",
       "negate": false,
