@@ -2313,20 +2313,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#x265-no-hdrdv" class="md-nav__link">
-    x265 (no HDR/DV)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dv-webdl" class="md-nav__link">
-    DV (WEBDL)
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -2403,15 +2389,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#season-pack" class="md-nav__link">
-    Season Pack
+  <a href="#bad-dual-groups" class="md-nav__link">
+    Bad Dual Groups
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scene" class="md-nav__link">
-    Scene
+  <a href="#dv-webdl" class="md-nav__link">
+    DV (WEBDL)
   </a>
   
 </li>
@@ -2438,8 +2424,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bad-dual-groups" class="md-nav__link">
-    Bad Dual Groups
+  <a href="#scene" class="md-nav__link">
+    Scene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#season-pack" class="md-nav__link">
+    Season Pack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x265-no-hdrdv" class="md-nav__link">
+    x265 (no HDR/DV)
   </a>
   
 </li>
@@ -2941,19 +2941,19 @@ Special thanks to everyone that helped testing and creating these Custom Formats
 </tr>
 <tr>
 <td></td>
-<td><a href="#dv-webdl">DV (WEBDL)</a></td>
+<td><a href="#x265-hd">x265 (HD)</a></td>
 <td><a href="#web-tier-03">WEB Tier 03</a></td>
 <td><a href="#dcu">DC Universe</a></td>
 </tr>
 <tr>
 <td></td>
-<td><a href="#x265-hd">x265 (HD)</a></td>
+<td></td>
 <td><a href="#web-scene">WEB Scene</a></td>
 <td><a href="#dsnp">Disney+</a></td>
 </tr>
 <tr>
 <td></td>
-<td><a href="#x265-no-hdrdv">x265 (no HDR/DV)</a></td>
+<td></td>
 <td></td>
 <td><a href="#hmax">HBO Max</a></td>
 </tr>
@@ -3026,13 +3026,13 @@ Special thanks to everyone that helped testing and creating these Custom Formats
 <tbody>
 <tr>
 <td><a href="#repackproper">Repack/Proper</a></td>
-<td><a href="#season-pack">Season Packs</a></td>
+<td><a href="#bad-dual-groups">Bad Dual Groups</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td><a href="#repack-v2">Repack v2</a></td>
-<td><a href="#scene">Scene</a></td>
+<td><a href="#dv-webdl">DV (WEBDL)</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -3056,19 +3056,19 @@ Special thanks to everyone that helped testing and creating these Custom Formats
 </tr>
 <tr>
 <td><a href="#x264">x264</a></td>
-<td><a href="#bad-dual-groups">Bad Dual Groups</a></td>
+<td><a href="#scene">Scene</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td><a href="#x265">x265</a></td>
-<td></td>
+<td><a href="#season-pack">Season Packs</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td></td>
-<td></td>
+<td><a href="#x265-no-hdrdv">x265 (no HDR/DV)</a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -5903,127 +5903,6 @@ It's all really dependent on specific situations for different people</p>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
-<h3 id="x265-no-hdrdv">x265 (no HDR/DV)<a class="headerlink" href="#x265-no-hdrdv" title="Permanent link"></a></h3>
-<details class="faq">
-<summary>x265 (no HDR/DV) - [CLICK TO EXPAND]</summary>
-<p>This blocks/ignores 720/1080p (HD) releases that are encoded in x265.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</details>
-<details class="example">
-<summary>JSON - [CLICK TO EXPAND]</summary>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9b64dff695c2115facf1b6ea59c9bd07&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/yFwxoN/10&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x265 (no HDR/DV)&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x265/HEVC&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[xh][ ._-]?265|\\bHEVC(\\b|\\d)&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not HDR/DV&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(dv|dovi|dolby[ .]?vision|hdr(10(P(lus)?)?)?)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not 2160p&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ResolutionSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2160</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</details>
-<p><sub><sup><a href="#index">TOP</a></sup></p>
-<hr />
-<h3 id="dv-webdl">DV (WEBDL)<a class="headerlink" href="#dv-webdl" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
-<details class="faq">
-<summary>DV (WEBDL) - [CLICK TO EXPAND]</summary>
-<p>This is a special Custom Format that block WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
-<p>This Custom Format works together with the normal <a href="#dv">DV</a> Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-</details>
-<details class="example">
-<summary>JSON - [CLICK TO EXPAND]</summary>
-<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9b27ab6498ec0f31a3353992e19434ca&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DV (WEBDL)&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dolby Vision&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(dv|dovi|dolby[ .]?vision)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Remux&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not HDR&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bHDR(\\b|\\d)&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Hulu&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(hulu)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not SiC&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(SiC)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="p">]</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</details>
-<p><sub><sup><a href="#index">TOP</a></sup></p>
-<hr />
 <h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link"></a></h2>
 <hr />
 <h3 id="repackproper">Repack/Proper<a class="headerlink" href="#repackproper" title="Permanent link"></a></h3>
@@ -6235,38 +6114,207 @@ It's all really dependent on specific situations for different people</p>
 <hr />
 <h2 id="optional">Optional<a class="headerlink" href="#optional" title="Permanent link"></a></h2>
 <hr />
-<h3 id="season-pack">Season Pack<a class="headerlink" href="#season-pack" title="Permanent link"></a></h3>
+<h3 id="bad-dual-groups">Bad Dual Groups<a class="headerlink" href="#bad-dual-groups" title="Permanent link"></a></h3>
 <details class="faq">
-<summary>Season Pack - [CLICK TO EXPAND]</summary>
-<p>This Custom Format can be used depending if you prefer or not prefer a season pack</p>
-<ul>
-<li>Give it a score of <code>10</code> if you prefer a season pack.</li>
-<li>Give it a score of <code>-10000</code> if you don't prefer a season pack.</li>
-<li><code>/\bS\d+\b(?!E\d+\b)/i</code> season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.</li>
-<li>keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug =&gt; Preferred Words overrule season pack preference <a href="https://github.com/Sonarr/Sonarr/issues/3562" rel="noopener noreferrer" target="_blank">Sonarr/Sonarr#3562</a></li>
-</ul>
-<div class="admonition danger">
-<p class="admonition-title">WARNING</p>
-<ul>
-<li>This Custom Format could result in a download loop <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
-<li>This will upgrade also your already downloaded single episodes <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
-</ul>
-</div>
+<summary>Bad dual groups - [CLICK TO EXPAND]</summary>
+<p>These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+Also they often even rename the release name in to Portuguese.</p>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3bc5f395426614e155e585a2f056cdf1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Pack&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;32b367365729d530ca1c124a0b180c64&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad Dual Groups&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Packs&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alfaHD&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bS\\d+\\b(?!E\\d+\\b)&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-alfaHD)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BAT&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-BAT)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BNd&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-BNd)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C.A.A&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-C\\.A\\.A)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cory&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Cory)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EXTREME&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-EXTREME)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-FF)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FOXX&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-FOXX)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G4RiS&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-G4RiS)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GUEIRA&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-GUEIRA)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N3G4N&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-N3G4N)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PD&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-PD)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PTHome&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-PTHome)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RiPER&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-RiPER)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RK&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-RK)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SiGLA&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-SiGLA)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Tars&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Tars)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WTV&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-WTV)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Yatogam1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Yatogam1)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YusukeFLA&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-YusukeFLA)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ZigZag&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-ZigZag)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">  </span><span class="p">]</span><span class="w"></span>
@@ -6275,98 +6323,66 @@ It's all really dependent on specific situations for different people</p>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
-<h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link"></a></h3>
+<h3 id="dv-webdl">DV (WEBDL)<a class="headerlink" href="#dv-webdl" title="Permanent link"></a></h3>
+<p><sub>Dolby Vision = DoVi = DV</sub></p>
 <details class="faq">
-<summary>Scene - [CLICK TO EXPAND]</summary>
-<p>This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score <code>-10000</code> or a positive score or just don't add it all.</p>
+<summary>DV (WEBDL) - [CLICK TO EXPAND]</summary>
+<p>This is a special Custom Format that block WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
+<p>This Custom Format works together with the normal <a href="#dv">DV</a> Custom Format that you can use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>Remuxes and Bluray have a fallback to HDR10.</p>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1b3994c551cbb92a2c781af061f4ab44&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9b27ab6498ec0f31a3353992e19434ca&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scene&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DV (WEBDL)&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CAKES&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(CAKES)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GGEZ&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GGEZ)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GGWP&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GGWP)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GLHF&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GLHF)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GOSSIP&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GOSSIP)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KOGI&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(KOGI)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scene naming&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dolby Vision&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(?=.*([_. ]WEB[_. ]))&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(dv|dovi|dolby[ .]?vision)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not DEFLATE&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Remux&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not HDR&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bHDR(\\b|\\d)&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Hulu&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(hulu)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not SiC&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(DEFLATE)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not INFLATE&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(INFLATE)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(SiC)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">  </span><span class="p">]</span><span class="w"></span>
@@ -6635,207 +6651,191 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
-<h3 id="bad-dual-groups">Bad Dual Groups<a class="headerlink" href="#bad-dual-groups" title="Permanent link"></a></h3>
+<h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link"></a></h3>
 <details class="faq">
-<summary>Bad dual groups - [CLICK TO EXPAND]</summary>
-<p>These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</p>
+<summary>Scene - [CLICK TO EXPAND]</summary>
+<p>This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score <code>-10000</code> or a positive score or just don't add it all.</p>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;32b367365729d530ca1c124a0b180c64&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1b3994c551cbb92a2c781af061f4ab44&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad Dual Groups&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scene&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alfaHD&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CAKES&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-alfaHD)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(CAKES)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BAT&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GGEZ&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-BAT)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GGEZ)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BNd&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GGWP&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-BNd)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GGWP)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C.A.A&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GLHF&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-C\\.A\\.A)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GLHF)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cory&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GOSSIP&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Cory)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(GOSSIP)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EXTREME&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KOGI&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-EXTREME)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(KOGI)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FF&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Scene naming&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-FF)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(?=.*([_. ]WEB[_. ]))&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FOXX&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not DEFLATE&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-FOXX)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(DEFLATE)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;G4RiS&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not INFLATE&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(INFLATE)\\b&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="season-pack">Season Pack<a class="headerlink" href="#season-pack" title="Permanent link"></a></h3>
+<details class="faq">
+<summary>Season Pack - [CLICK TO EXPAND]</summary>
+<p>This Custom Format can be used depending if you prefer or not prefer a season pack</p>
+<ul>
+<li>Give it a score of <code>10</code> if you prefer a season pack.</li>
+<li>Give it a score of <code>-10000</code> if you don't prefer a season pack.</li>
+<li><code>/\bS\d+\b(?!E\d+\b)/i</code> season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.</li>
+<li>keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug =&gt; Preferred Words overrule season pack preference <a href="https://github.com/Sonarr/Sonarr/issues/3562" rel="noopener noreferrer" target="_blank">Sonarr/Sonarr#3562</a></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">WARNING</p>
+<ul>
+<li>This Custom Format could result in a download loop <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
+<li>This will upgrade also your already downloaded single episodes <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
+</ul>
+</div>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3bc5f395426614e155e585a2f056cdf1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Pack&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Packs&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-G4RiS)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bS\\d+\\b(?!E\\d+\\b)&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="x265-no-hdrdv">x265 (no HDR/DV)<a class="headerlink" href="#x265-no-hdrdv" title="Permanent link"></a></h3>
+<details class="faq">
+<summary>x265 (no HDR/DV) - [CLICK TO EXPAND]</summary>
+<p>This blocks/ignores 720/1080p (HD) releases that are encoded in x265.</p>
+<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9b64dff695c2115facf1b6ea59c9bd07&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-10000&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/yFwxoN/10&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x265 (no HDR/DV)&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x265/HEVC&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[xh][ ._-]?265|\\bHEVC(\\b|\\d)&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GUEIRA&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not HDR/DV&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-GUEIRA)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(dv|dovi|dolby[ .]?vision|hdr(10(P(lus)?)?)?)\\b&quot;</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N3G4N&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not 2160p&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ResolutionSpecification&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-N3G4N)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PD&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-PD)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PTHome&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-PTHome)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RiPER&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-RiPER)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RK&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-RK)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SiGLA&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-SiGLA)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Tars&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Tars)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WTV&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-WTV)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Yatogam1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-Yatogam1)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YusukeFLA&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-YusukeFLA)\\b&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ZigZag&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(-ZigZag)\\b&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2160</span><span class="w"></span>
 <span class="w">      </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">  </span><span class="p">]</span><span class="w"></span>
@@ -12459,7 +12459,7 @@ Also they often even rename the release name in to Portuguese.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 23, 2022 05:59:55</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2022 16:21:33</span>
       
     
   </small>
