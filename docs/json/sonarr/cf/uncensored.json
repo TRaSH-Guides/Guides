@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "Unrated|Uncensored|\\b(AT[-_. ]?X)\\b"
+        "value": "\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b"
       }
     }
   ]

@@ -1,3 +1,75 @@
+# 2022-09-24
+**[Starr]**
+- Updated: `[Anime Web Tier 04]` CFs for Radarr and Sonarr also updated hash ID due to name changes. #840
+
+**[Radarr]**
+- Added: `L0SERNIGHT` to CF `[LQ]`. #841
+- Added: CF `[UHD Tier 01 - 03]`. #845
+- Moving Yameii from `[Anime LQ]` CF to `[Dubs Only]` CF. #839
+
+**[Sonarr]**
+- Moving Yameii from `[Anime LQ]` to `[Dubs Only]` for Sonarr CFs #838
+
+**[Guide]**
+- Reorganized the table order for certain categories. #843
+- Removed: Sonarr {[MediaInfo VideoDynamicRangeType]} version warning. #844
+- Removed: Radarr {[MediaInfo VideoDynamicRangeType]} version warning. #844
+- Removed: link to imdb support for plex. #844
+- Missed dubs only in the anime tables #837
+
+# 2022-09-15
+**[Starr]**
+- Added: Not DTS X condition to prevent false positive. #818
+- Fixed: CF `[DTS-HRA]` - Wrongly matching `DTS-Hi10P`. #829
+
+**[Radarr]**
+- Added: Several new CF for the feature Radarr Anime Guide. #824
+- Fixed: CF `[LQ]` matching wrongly epic in release name. #828
+
+**[Sonarr]**
+- Delete: CF `[Freeleech]` - Sonarr does not support freeleech condition. #820
+
+**[Guide]**
+- Add: pip from nerdpack for `How to run the unRaid mover for qBittorent seeding torrents`. #827
+
+# 2022-09-13
+[Starr]
+- Added: `PTHome` to the CF `[Bad Dual Groups]`.
+- Added: `ZigZag` to the CF `[Bad Dual Groups]`.
+- Added: `Not DTS X` condition to prevent false positive.
+
+[Sonarr]
+- Updated: CF `[Uncensored]` added `uncut` recognizing.
+
+# 2022-09-11
+[Starr] CF updates #804
+
+[Starr]
+- Fixed: `HDR10+` to recognize `HDR10P`.
+- Added: RegEx Case.
+
+[Radarr]
+- DELETED: CF `[Flights (no IMAX)]` - already added to CF `[HQ-Remux]` and `[Remux Tier 02]`.
+- Updated: CF `[MA]` with a score of `10` - Their releases are generally of a higher quality.
+
+[Sonarr]
+- Removed: `BTN` from `[WEB Tier 02]` and RP, This is a generic group name that anybody can use on BTN and we can't determine which quality they are.
+
+# 2022-09-07
+[Sonarr] CF `[WEB Tier 02]` #793
+- Added: `SMURF`
+[Sonarr] CF `[Special Edition]`#792
+- REMOVED: CF `[Special Edition]` - To prevent matching episode titles and the minimal existing SE for TV Shows.
+[Radarr] CF `[Flights (no IMAX)]` #791
+- Lowered Score to `0` because it will be removed upcoming weekend, and it's already added to CF `[HQ-Remux]` and `[Remux Tier 02]`
+[Backend] consistent naming across CF #790
+- Changed: link repack-proper to repackproper to be consistent with `/` being removed by markdown
+[Guide] How to run the unRaid mover for qBittorent seeding torrents #788
+- Add: `'` to the user/pass
+- Change: pip to pip3
+- Improved warning description
+- Added: Screenshot attention
+
 # 2022-09-04
 [Starr] How to import Custom Formats #786
 - Added: How to Setup the scores in your Quality Profile instructions.

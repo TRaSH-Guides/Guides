@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-AROMA\\b"
+        "value": "\\b(-AROMA)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-beAst\\b"
+        "value": "\\b(-beAst)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CHAOS)\\b"
+        "value": "\\b(-CHAOS)\\b"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(EPiC)\\b"
+        "value": "\\b(-EPiC)\\b"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-EuReKA\\b"
+        "value": "\\b(-EuReKA)\\b"
       }
     },
     {
@@ -244,7 +244,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-KiNGDOM\\b"
+        "value": "\\b(-KiNGDOM)\\b"
       }
     },
     {
@@ -253,7 +253,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-KIRA\\b"
+        "value": "\\b(-KIRA)\\b"
       }
     },
     {
@@ -281,6 +281,15 @@
       "required": false,
       "fields": {
         "value": "\\b(LiGaS)\\b"
+      }
+    },
+    {
+      "name": "L0SERNIGHT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(L0SERNIGHT)\\b"
       }
     },
     {
@@ -532,7 +541,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-WiKi\\b"
+        "value": "\\b(-WiKi)\\b"
       }
     },
     {
@@ -568,7 +577,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Zeus\\b"
+        "value": "\\b(-Zeus)\\b"
       }
     }
   ]

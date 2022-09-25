@@ -1,6 +1,7 @@
 {
   "trash_id": "a3d82cbef5039f8d295478d28a887159",
   "trash_score": "600",
+  "trash_regex": "https://regex101.com/r/hCAQEO/4",
   "name": "HDR10+",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -10,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bHDR10Plus|HDR10(\\b\\+)"
+        "value": "\\bHDR10(\\+|P(lus)?\\b)"
       }
     },
     {
