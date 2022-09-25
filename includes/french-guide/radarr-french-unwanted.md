@@ -12,7 +12,7 @@
     | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                             | {{ radarr['cf']['retags']['trash_score'] }}                              | {{ radarr['cf']['retags']['trash_id'] }}          |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)           | {{ radarr['cf']['bad-dual-groups']['trash_score'] }}                     | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                         | ??????                                                                   | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
-    | [{{ radarr['user-radarr-cf']['french-cfs']['french-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-lq) | {{ radarr['user-radarr-cf']['french-cfs']['french-lq']['trash_score'] }} | {{ radarr['user-radarr-cf']['french-cfs']['french-lq']['trash_id'] }} |
+    | [{{ radarr['cf']['french-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-lq) | {{ radarr['cf']['french-lq']['trash_score'] }} | {{ radarr['cf']['french-lq']['trash_id'] }} |
 
     ------
 
@@ -54,4 +54,4 @@
 
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.
             - If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of `{{ radarr['cf']['dv-webdl']['trash_score'] }}`.
-    - **{{ radarr['user-radarr-cf']['french-cfs']['french-lq']['name'] }}:** A collection of known Low Quality French groups that are often banned from the the top trackers because the lack of quality or other reasons.
+    - **{{ radarr['cf']['french-lq']['name'] }}:** A collection of known Low Quality French groups that are often banned from the the top trackers because the lack of quality or other reasons.
