@@ -109,7 +109,7 @@ Those are all optional and only there to rename your release or to avoid a certa
 
 This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
 
-{! include-markdown "../../includes/cf/radarr-french-unwanted.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted.md" !}
 
 ------
 
@@ -167,7 +167,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
     If you prefer 2160/4K encodes you might consider to change `Upgrade Until Quality` to Bluray-2160p and enable:
 
-    {! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
+    {! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 ------
 
@@ -186,7 +186,7 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
 
-{! include-markdown "../../includes/cf/radarr-french-unwanted.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
@@ -237,11 +237,11 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-metadata.md" !}
+{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
 
-{! include-markdown "../../includes/cf/radarr-french-unwanted.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
