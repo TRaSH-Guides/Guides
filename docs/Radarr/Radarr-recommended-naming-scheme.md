@@ -17,12 +17,6 @@ The Tokens not available in the release won't be used/shown.
 
 This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
-!!! caution "Starting from v4.0.0.5720, Radarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types."
-
-    If you're using a lower version replace:
-
-    `{[MediaInfo VideoDynamicRangeType]}` with `{[MediaInfo VideoDynamicRange]}`
-
 !!! caution "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
 
     If you're using a lower version or don't need it replace:
@@ -42,10 +36,6 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
     ```bash
     {Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}[{Mediainfo VideoCodec}]{-Release Group}
     ```
-
-!!! attention ""
-
-    The officially supported format is `{imdb-{ImdbId}}` and this is required in Radarr `v4.2.2.6489` and above to make the tags conditional.  Plex also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]` which you can read [here](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"}, however Radarr will not treat these as conditional meaning a movie with no IMDb ID would have `(imdb-)` or `[imdb-]` in the name. IMDb IDs are going to be very accurate and rarely change, but they may be missing for some movies added to Radarr. TMDb IDs, on the other hand, do change or are removed more frequently, but Radarr will always have this ID for each movie.
 
 ------
 

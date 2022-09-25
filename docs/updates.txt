@@ -1,3 +1,22 @@
+# 2022-09-24
+**[Starr]**
+- Updated: `[Anime Web Tier 04]` CFs for Radarr and Sonarr also updated hash ID due to name changes. #840
+
+**[Radarr]**
+- Added: `L0SERNIGHT` to CF `[LQ]`. #841
+- Added: CF `[UHD Tier 01 - 03]`. #845
+- Moving Yameii from `[Anime LQ]` CF to `[Dubs Only]` CF. #839
+
+**[Sonarr]**
+- Moving Yameii from `[Anime LQ]` to `[Dubs Only]` for Sonarr CFs #838
+
+**[Guide]**
+- Reorganized the table order for certain categories. #843
+- Removed: Sonarr {[MediaInfo VideoDynamicRangeType]} version warning. #844
+- Removed: Radarr {[MediaInfo VideoDynamicRangeType]} version warning. #844
+- Removed: link to imdb support for plex. #844
+- Missed dubs only in the anime tables #837
+
 # 2022-09-15
 **[Starr]**
 - Added: Not DTS X condition to prevent false positive. #818
