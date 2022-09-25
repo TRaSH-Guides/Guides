@@ -76,6 +76,12 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ------
 
+## I only interested in VOSTFR!
+
+My strongest suggestion will be for you to look at Bazarr. It will do an amazing job for getting your subtitle on every movies. An other option is to disregard the MULTi part and just add the [{{ radarr['user-radarr-cf']['french-cfs']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a strong score.
+
+------
+
 ## Examples
 
 Here I will explain how to make the most use of the French Custom Formats and show you some personal examples that I'm using. You can use these to get an idea on how to setup your own.
@@ -85,7 +91,7 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr
 !!! attention "Attention"
     Those examples use the original guide Custom Formats too for fallback. Meaning that if you do not find a MULTi you will still have a good scoring for single audio.
 
-    This is the first intent of those Custom Formats, they are not meant to work alone (even if it is possible).
+    This is the first intent of those Custom Formats. However, they can work alone and you can safely not add the original Custom Formats.
 
 --8<-- "includes/cf/score-attention.md"
 
