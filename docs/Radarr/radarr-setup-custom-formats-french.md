@@ -72,8 +72,6 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## MULTi Custom Format
 
-Before going further please add those Custom Formats and score them appropriately.
-
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio.md" !}
 
 ------

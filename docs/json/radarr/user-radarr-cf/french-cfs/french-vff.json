@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bFR(A|ENCH)?\\b"
+        "value": "\\b(?<!Multi-)FR(A|ENCH)?\\b"
       }
     }
   ]

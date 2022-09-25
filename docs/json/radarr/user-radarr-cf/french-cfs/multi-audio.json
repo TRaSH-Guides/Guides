@@ -6,12 +6,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "MULTi (not -French)",
+      "name": "MULTi",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MULTi(?!-F​rench))(\\d|\\b)"
+        "value": "\\b(MULTi)(\\d|\\b)"
       }
     },
     {
