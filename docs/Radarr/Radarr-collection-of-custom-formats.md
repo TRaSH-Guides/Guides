@@ -64,11 +64,11 @@ I also made 3 guides related to this one.
 
 | Misc                           | Optional                            | French Audio Version          | French Source Groups                  |
 | ------------------------------ | ----------------------------------- | ----------------------------- | ------------------------------------- |
-| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [[FR] HQ-Remux](#fr-hq-remux)         |
-| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [[FR] HQ](#fr-hq)                     |
-| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [[FR] HQ-WEBDL](#fr-hq-webdl)         |
-| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [[FR] Scene Groups](#fr-scene-groups) |
-| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [[FR] LQ](#fr-lq)                     |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR HQ-Remux](#fr-hq-remux)         |
+| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR HQ](#fr-hq)                     |
+| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR HQ-WEBDL](#fr-hq-webdl)         |
+| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR Scene Groups](#fr-scene-groups) |
+| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR LQ](#fr-lq)                     |
 | [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                       |
 | [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                       |
 | [Dutch Groups](#dutch-groups)  |                                     | [VQ](#vq)                     |                                       |
@@ -1968,11 +1968,11 @@ I also made 3 guides related to this one.
 
 ------
 
-### [FR] HQ
+### FR HQ
 
-<sub>French HQ-Releases = [FR] HQ</sub>
+<sub>French HQ-Releases = FR HQ</sub>
 
-??? faq "[FR] HQ - [CLICK TO EXPAND]"
+??? faq "FR HQ - [CLICK TO EXPAND]"
 
     A collection of French P2P groups that are known for their high quality releases.
 
@@ -1986,9 +1986,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### [FR] HQ-WEBDL
+### FR HQ-WEBDL
 
-??? faq "[FR] HQ-WEBDL - [CLICK TO EXPAND]"
+??? faq "FR HQ-WEBDL - [CLICK TO EXPAND]"
 
     A personal collection of French P2P WEB-DL groups that are known for their high quality releases.
 
@@ -2002,9 +2002,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### [FR] HQ-Remux
+### FR HQ-Remux
 
-??? faq "[FR] HQ-Remux - [CLICK TO EXPAND]"
+??? faq "FR HQ-Remux - [CLICK TO EXPAND]"
 
     A personal collection of French P2P Remux groups that are known for their high quality releases.
 
@@ -2018,9 +2018,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### [FR] Scene Groups
+### FR Scene Groups
 
-??? faq "[FR] Scene Groups - [CLICK TO EXPAND]"
+??? faq "FR Scene Groups - [CLICK TO EXPAND]"
 
     Known French Scene groups.
 
@@ -2034,11 +2034,11 @@ I also made 3 guides related to this one.
 
 ------
 
-### [FR] LQ
+### FR LQ
 
-<sub>French Low Quality Releases = [FR] LQ</sub>
+<sub>French Low Quality Releases = FR LQ</sub>
 
-??? faq "[FR] LQ - [CLICK TO EXPAND]"
+??? faq "FR LQ - [CLICK TO EXPAND]"
 
     A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
 
