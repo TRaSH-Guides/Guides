@@ -147,13 +147,11 @@ Below is an example of the scoring set to prefer `Dual Audio` over any tier.
 
 If you prefer `Uncensored` releases you have a few options depending on your preference.
 
-If you want to prefer `Uncensored` within the same tier give the `CF` a score of `10`, if you want it to be preferred a tier above give the `CF` a score of `101`, and if you want to prefer it over any tiers give the `CF` a score of `2000`.
-
-If you must have `Uncensored` releases set the `Minimum Custom Format Score` to 2000 in the `Remux-1080p - Anime` profile that you setup earlier.
+If you want to prefer `Uncensored` within the same tier give the `CF` a score of `10`, if you want it to be preferred a tier above give the `CF` a score of `101`.
 
 Using this scoring you will still benefit from the tiers if a better release group does an `Uncensored` release.
 
-Below is an example of the scoring set to prefer `Uncensored` over any tier.
+Below is an example of the scoring set to prefer `Uncensored` a tier above.
 
 ![!cfa-uncensored-scoring](images/cfa-uncensored-scoring.png)
 
