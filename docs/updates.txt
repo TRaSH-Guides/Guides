@@ -1,3 +1,11 @@
+# 2022-09-27
+**[Radarr]**
+- Added: UHD Tier 01 - 03 (SQP). #845
+- Added: French CF.
+
+**[Guide]**
+- NEW: How to setup Custom Formats (French). #645
+
 # 2022-09-24
 **[Starr]**
 - Updated: `[Anime Web Tier 04]` CFs for Radarr and Sonarr also updated hash ID due to name changes. #840

@@ -1,0 +1,17 @@
+{
+  "trash_id": "b6ace47331a1d3b77942fc18156f6df6",
+  "trash_regex": "https://regex101.com/r/j1wmmv/1",
+  "name": "VFQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Canadian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVFQ\\b"
+      }
+    }
+  ]
+}

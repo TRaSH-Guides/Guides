@@ -1,0 +1,17 @@
+{
+  "trash_id": "4cafa20d5584f6ba1871d1b8941aa3cb",
+  "trash_regex": "https://regex101.com/r/wOw8az/1",
+  "name": "VOF",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "French Original Version",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVOF\\b"
+      }
+    }
+  ]
+}
