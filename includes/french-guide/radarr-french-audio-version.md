@@ -15,12 +15,12 @@
     - *[2] It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.*
 
 ??? summary "French Audio Versions - [CLICK TO EXPAND]"
-    | Custom Format                                                                                      | Trash ID                                        |
-    | -------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-    | [{{ radarr['cf']['french-vff']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vff)       | {{ radarr['cf']['french-vff']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vof']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vof)       | {{ radarr['cf']['french-vof']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vfi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfi)       | {{ radarr['cf']['french-vfi']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vfq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfq)       | {{ radarr['cf']['french-vfq']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vq)         | {{ radarr['cf']['french-vq']['trash_id'] }}     |
-    | [{{ radarr['cf']['french-vfb']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfb)       | {{ radarr['cf']['french-vfb']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) | {{ radarr['cf']['french-vostfr']['trash_id'] }} |
+    | Custom Format                                                                                      | Score | Trash ID                                        |
+    | -------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------- |
+    | [{{ radarr['cf']['french-vff']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vff)       | 0     | {{ radarr['cf']['french-vff']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vof']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vof)       | 0     | {{ radarr['cf']['french-vof']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vfi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfi)       | 0     | {{ radarr['cf']['french-vfi']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vfq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfq)       | 0     | {{ radarr['cf']['french-vfq']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vq)         | 0     | {{ radarr['cf']['french-vq']['trash_id'] }}     |
+    | [{{ radarr['cf']['french-vfb']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfb)       | 0     | {{ radarr['cf']['french-vfb']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) | 0     | {{ radarr['cf']['french-vostfr']['trash_id'] }} |
