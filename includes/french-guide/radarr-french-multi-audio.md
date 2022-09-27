@@ -14,4 +14,4 @@
     - **{{ radarr['cf']['multi-french']['name'] }}:** This is a custom format that will rename your file with 'Multi-French'.
 
     **How it works**
-    When Radarr find a release with 'MULTi' in, it will allocate a {{ radarr['cf']['multi-audio']['trash_score'] }} score on it thanks to the **{{ radarr['cf']['multi-audio']['name'] }}** custom format. If the release indeed possess at least the original audio and French audio, it will be renamed by the **{{ radarr['cf']['multi-french']['name'] }}**. Allowing the release to keep the {{ radarr['cf']['multi-audio']['trash_score'] }} score from the {{ radarr['cf']['multi-audio']['trash_score'] }}.
+    When Radarr find a release with 'MULTi' in, it will allocate a {{ radarr['cf']['multi-audio']['trash_score'] }} score on it thanks to the **{{ radarr['cf']['multi-audio']['name'] }}** custom format. If the release indeed possess at least the original audio and French audio, it will be renamed by the **{{ radarr['cf']['multi-french']['name'] }}**. Allowing the release to keep the {{ radarr['cf']['multi-audio']['trash_score'] }} score from the {{ radarr['cf']['multi-audio']['name'] }}.

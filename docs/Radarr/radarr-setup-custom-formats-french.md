@@ -78,7 +78,9 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## I am only interested in VOSTFR
 
-My strongest suggestion will be for you to look at Bazarr. It will do an amazing job for getting your subtitle on every movies. An other option is to disregard the MULTi part and just add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a strong score.
+My strongest suggestion will be for you to look at [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
+
+An other option is to disregard the MULTi part and just add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a score of 1000.
 
 ------
 
