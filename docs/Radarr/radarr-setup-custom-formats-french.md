@@ -1,10 +1,13 @@
 # How to setup Custom Formats (French)
 
+!!! note
+    This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
+
 So what's the best way to setup the Custom Profiles and which one to use with which scores to get French and English Audio?
 
 Keep in mind that most releases are MULTi (understand DUAL audio, original and French audio) and it will be difficult to only have French audio, unless you are willing to get 720p or you are only looking for French movies.
 
-Therefore you will need a slightly modified MULTi Custom Format than the one find in the original guide. This one also recognise VO and VFF in the name and rename the import. This is important for the score to match before and after the import and to avoid download loop.
+Therefore you will need a slightly modified MULTi Custom Format than the one find in the original guide. This one also recognize VO and VFF in the name and rename the import. This is important for the score to match before and after the import and to avoid download loop.
 
 --8<-- "includes/cf/score-attention.md"
 
@@ -41,7 +44,7 @@ Select the profile that you want to use/prefer.
 1. Keep upgrading Custom Format until this score is reached. (setting this to `0` means no upgrades will happen based on Custom Formats)
 1. Your preferred language profile for your releases, choose `Any`
 
-!!! info "We do choose `Any` for the language profile as otherwise an English movies recognised with French audio in Radarr will not be grabbed and vice-versa."
+!!! info "We do choose `Any` for the language profile as otherwise an English movies recognized with French audio in Radarr will not be grabbed and vice-versa."
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
@@ -132,15 +135,15 @@ For this Quality Profile we're going to make use of the following Custom Formats
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                                        | Score                                                                          | Trash ID                                                                    |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+    | Custom Format                                                                                              | Score                                                | Trash ID                                          |
+    | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['french-hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-webdl)  | {{ radarr['cf']['french-hq-webdl']['trash_score'] }} | {{ radarr['cf']['french-hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                      | {{ radarr['cf']['hq-webdl']['trash_score'] }}                                  | {{ radarr['cf']['hq-webdl']['trash_id'] }}                                  |
-    | [{{ radarr['cf']['french-hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-remux)  | 0                                                                              | {{ radarr['cf']['french-hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)                                      | 0                                                                              | {{ radarr['cf']['hq-remux']['trash_id'] }}                                  |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)            | {{ radarr['cf']['hq-webdl']['trash_score'] }}        | {{ radarr['cf']['hq-webdl']['trash_id'] }}        |
+    | [{{ radarr['cf']['french-hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-remux)  | 0                                                    | {{ radarr['cf']['french-hq-remux']['trash_id'] }} |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)            | 0                                                    | {{ radarr['cf']['hq-remux']['trash_id'] }}        |
     | [{{ radarr['cf']['french-hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq)              | {{ radarr['cf']['french-hq']['trash_score'] }}       | {{ radarr['cf']['french-hq']['trash_id'] }}       |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                  | {{ radarr['cf']['hq']['trash_score'] }}                                        | {{ radarr['cf']['hq']['trash_id'] }}                                        |
-    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                                                         | {{ radarr['cf']['french-scene']['trash_id'] }}    |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                        | {{ radarr['cf']['hq']['trash_score'] }}              | {{ radarr['cf']['hq']['trash_id'] }}              |
+    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                               | {{ radarr['cf']['french-scene']['trash_id'] }}    |
 
     !!! info "French Scene groups are included as a fallback if you really want MULTi release despite quality. Either score the CF to `{{ radarr['cf']['french-scene']['trash_score'] }}` or `0` depending on what you want to achieve."
 
@@ -193,15 +196,15 @@ For this Quality Profile we're going to make use of the following Custom Formats
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                                        | Score                                                                          | Trash ID                                                                    |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+    | Custom Format                                                                                              | Score                                                | Trash ID                                          |
+    | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['french-hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-webdl)  | {{ radarr['cf']['french-hq-webdl']['trash_score'] }} | {{ radarr['cf']['french-hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                      | {{ radarr['cf']['hq-webdl']['trash_score'] }}                                  | {{ radarr['cf']['hq-webdl']['trash_id'] }}                                  |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)            | {{ radarr['cf']['hq-webdl']['trash_score'] }}        | {{ radarr['cf']['hq-webdl']['trash_id'] }}        |
     | [{{ radarr['cf']['french-hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-remux)  | {{ radarr['cf']['french-hq-remux']['trash_score'] }} | {{ radarr['cf']['french-hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)                                      | {{ radarr['cf']['hq-remux']['trash_score'] }}                                  | {{ radarr['cf']['hq-remux']['trash_id'] }}                                  |
-    | [{{ radarr['cf']['french-hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq)              | 0                                                                              | {{ radarr['cf']['french-hq']['trash_id'] }}       |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                  | 0                                                                              | {{ radarr['cf']['hq']['trash_id'] }}                                        |
-    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                                                         | {{ radarr['cf']['french-scene']['trash_id'] }}    |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)            | {{ radarr['cf']['hq-remux']['trash_score'] }}        | {{ radarr['cf']['hq-remux']['trash_id'] }}        |
+    | [{{ radarr['cf']['french-hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq)              | 0                                                    | {{ radarr['cf']['french-hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                        | 0                                                    | {{ radarr['cf']['hq']['trash_id'] }}              |
+    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                               | {{ radarr['cf']['french-scene']['trash_id'] }}    |
 
     !!! info "French Scene groups are included as a fallback if you really want MULTi release despite quality. Either score the CF to `{{ radarr['cf']['french-scene']['trash_score'] }}` or `0` depending on what you want to achieve."
 
@@ -248,15 +251,15 @@ For this Quality Profile we're going to make use of the following Custom Formats
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 ??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                                        | Score                                                                          | Trash ID                                                                    |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+    | Custom Format                                                                                              | Score                                                | Trash ID                                          |
+    | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['french-hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-webdl)  | {{ radarr['cf']['french-hq-webdl']['trash_score'] }} | {{ radarr['cf']['french-hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)                                      | {{ radarr['cf']['hq-webdl']['trash_score'] }}                                  | {{ radarr['cf']['hq-webdl']['trash_id'] }}                                  |
+    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl)            | {{ radarr['cf']['hq-webdl']['trash_score'] }}        | {{ radarr['cf']['hq-webdl']['trash_id'] }}        |
     | [{{ radarr['cf']['french-hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq-remux)  | {{ radarr['cf']['french-hq-remux']['trash_score'] }} | {{ radarr['cf']['french-hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)                                      | {{ radarr['cf']['hq-remux']['trash_score'] }}                                  | {{ radarr['cf']['hq-remux']['trash_id'] }}                                  |
-    | [{{ radarr['cf']['french-hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq)              | 0                                                                              | {{ radarr['cf']['french-hq']['trash_id'] }}       |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                                                  | 0                                                                              | {{ radarr['cf']['hq']['trash_id'] }}                                        |
-    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                                                         | {{ radarr['cf']['french-scene']['trash_id'] }}    |
+    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux)            | {{ radarr['cf']['hq-remux']['trash_score'] }}        | {{ radarr['cf']['hq-remux']['trash_id'] }}        |
+    | [{{ radarr['cf']['french-hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hq)              | 0                                                    | {{ radarr['cf']['french-hq']['trash_id'] }}       |
+    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)                        | 0                                                    | {{ radarr['cf']['hq']['trash_id'] }}              |
+    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) | ??????                                               | {{ radarr['cf']['french-scene']['trash_id'] }}    |
 
     !!! info "French Scene groups are included as a fallback if you really want MULTi release despite quality. Either score the CF to `{{ radarr['cf']['french-scene']['trash_score'] }}` or `0` depending on what you want to achieve."
 
