@@ -1,0 +1,44 @@
+{
+  "trash_id": "48f031e76111f17ea94898f4cdc34fdc",
+  "trash_score": "-10000",
+  "name": "FR LQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Ads/Watermarks",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Avitech|CZ\\d+|EXTREME|GA(Ï|I)A|HMiDiMADRiDi|Hush|KILLERMIX|NEWCINE|RPZ|RZP|ShowFR|Wawa-?(city|mania|porno)?|ZW)\\b"
+      }
+    },
+    {
+      "name": "Bad/False releases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
+      }
+    },
+    {
+      "name": "DeTAG/ReTAG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b((Cpasbien|CPB)|AT|bigZT|Boheme|CINeHD|DOLL4R|Dread[ .-]?Team|EZTV|FGT|Firetown|FUN|HDMIDIMADRIDI|JetAnime|L-O-L|NewZT|RARBG|SubZero|T9|Time2Watch|TIREXO|Torrent9|WaNeZt|WebAnime|YIFY|YTS|ZONE|ZT)\\b"
+      }
+    },
+    {
+      "name": "Other reasons",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ARKRiL|BossBaby|Champion9|Copycomic|EASPORTS|EliteT|FUNKKY|FUNKY|GOBO2S|HD2|LNA3d|LTTM|MACK4|MeMyl|METALLIKA|MGD|Moorea81|Muxman|Mzsys|N3TFL1X|NoelMaison|nutella|Papaya|PIKACHU|PULSE|RELiC|SHARKS|SP3CTR|STVFRV|TeamSuW|TORRiD|TSN999|TVPSLO|Upmix|VIKY47|Wakanim|WINCHESTER|Wita)\\b"
+      }
+    }
+  ]
+}

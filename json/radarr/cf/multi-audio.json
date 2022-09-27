@@ -1,0 +1,27 @@
+{
+  "trash_id": "72b1548df1ac3175ca105a9ce7043c91",
+  "trash_score": "300",
+  "trash_regex": "https://regex101.com/r/hcMa1f/1",
+  "name": "Multi-Audio",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MULTi)(\\d|\\b)"
+      }
+    },
+    {
+      "name": "VO and VF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\b(VO)\\b)(?=.*\\b(VF(F|I)?)\\b)"
+      }
+    }
+  ]
+}
