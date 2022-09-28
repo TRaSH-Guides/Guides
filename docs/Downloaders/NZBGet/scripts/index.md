@@ -35,6 +35,29 @@
     [[% filter indent(width=4) %]][[% include 'Downloaders/NZBGet/scripts/HashRenamer/HashRenamer.py' %]][[% endfilter %]]
     ```
 
+## replace_for
+
+??? info "Replaces underscores with dots"
+
+    - Title: `replace_for.py`
+    - Author: miker
+
+    Replaces underscores with dots in downloaded filename:  
+    Prevents download loops with poorly named releases on some indexers (often -HONE releases).
+    
+    Install Instructions:
+
+      1. Copy script to NZBGet's script folder
+      1. run: `sudo chmod +x replace_for.py`
+      1. in SABnzbd go to `Settings` => `Extension Scripts`
+      1. Enable `replace_for.py` in the `Extensions` setting.
+
+??? example "Script"
+
+    ```python
+    [[% filter indent(width=4) %]][[% include 'Downloaders/NZBGet/scripts/replace_for/replace_for.py' %]][[% endfilter %]]
+    ```
+
 ## WtFnZb-Renamer
 
 ??? info "Renames hashed media files to match the source NZB"
