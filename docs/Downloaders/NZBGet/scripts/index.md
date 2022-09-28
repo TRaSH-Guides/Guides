@@ -42,8 +42,7 @@
     - Title: `replace_for.py`
     - Author: miker
 
-    Replaces underscores with dots in downloaded filename:  
-    Prevents download loops with poorly named releases on some indexers (often -HONE releases).
+    Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).
     
     Install Instructions:
 
