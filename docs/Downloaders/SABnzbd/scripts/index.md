@@ -26,7 +26,7 @@
     ```python
     [[% filter indent(width=4) %]][[% include 'Downloaders/SABnzbd/scripts/Clean/Clean.py' %]][[% endfilter %]]
     ```
-    
+
 ## replace_for
 
 ??? info "Replaces underscores with dots"
@@ -35,7 +35,7 @@
     - Author: miker
 
     Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).
-    
+
     Install Instructions:
 
       1. Copy script to sabnzbd's script folder

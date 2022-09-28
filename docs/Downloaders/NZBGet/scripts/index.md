@@ -43,7 +43,7 @@
     - Author: miker
 
     Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).
-    
+
     Install Instructions:
 
       1. Copy script to NZBGet's script folder
