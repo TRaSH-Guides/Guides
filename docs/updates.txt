@@ -1,4 +1,4 @@
-# 2022-09-27
+# 2022-09-29
 **[Radarr]**
 - Added: UHD Tier 01 - 03 (SQP). #845
 - Added: French CF.
