@@ -2225,81 +2225,81 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
-<td>-10000</td>
-<td>85c61753df5da1fb2aab6f2a47426b09</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">{{ sonarr['cf']['br-disk']['name'] }}</a></td>
+<td>{{ sonarr['cf']['br-disk']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['br-disk']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">LQ</a></td>
-<td>-10000</td>
-<td>9c11cd3f07101cdba90a2d81cf0e56b4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">{{ sonarr['cf']['lq']['name'] }}</a></td>
+<td>{{ sonarr['cf']['lq']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['lq']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>47435ece6b99a0b477caf360e79ba0bb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-hd']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-hd']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>9b64dff695c2115facf1b6ea59c9bd07</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>82d40da2bc6923f41e14394075dd4b03</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">{{ sonarr['cf']['no-rlsgroup']['name'] }}</a></td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>e1a997ddb54e3ecbfe06341ad323c458</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">{{ sonarr['cf']['obfuscated']['name'] }}</a></td>
+<td>{{ sonarr['cf']['obfuscated']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['obfuscated']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>06d66ab109d4d2eddb2794d21526d140</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">{{ sonarr['cf']['retags']['name'] }}</a></td>
+<td>{{ sonarr['cf']['retags']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['retags']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>32b367365729d530ca1c124a0b180c64</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">{{ sonarr['cf']['bad-dual-groups']['name'] }}</a></td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">{{ sonarr['cf']['dv-webdl']['name'] }}</a></td>
 <td>??????</td>
-<td>9b27ab6498ec0f31a3353992e19434ca</td>
+<td>{{ sonarr['cf']['dv-webdl']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>{{ sonarr['cf']['br-disk']['name'] }} :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>{{ sonarr['cf']['lq']['name'] }}:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
-<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-hd']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-no-hdrdv']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<p>In your quality profile use the following score for this Custom Format: <code>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</code></p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
+<p><strong>{{ sonarr['cf']['no-rlsgroup']['name'] }}:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
 </li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+<li><strong>{{ sonarr['cf']['obfuscated']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
+<li><strong>{{ sonarr['cf']['retags']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
+<li><strong>{{ sonarr['cf']['bad-dual-groups']['name'] }}:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
 Also they often even rename the release name in to Portuguese.</li>
 <li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p><strong>{{ sonarr['cf']['dv-webdl']['name'] }}:</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
 <p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
 <p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
@@ -2308,7 +2308,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
 <ul>
 <li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>{{ sonarr['cf']['dv-webdl']['trash_score'] }}</code>.</li>
 </ul>
 </div>
 </li>
@@ -2333,60 +2333,60 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10">DV HDR10</a></td>
-<td>1500</td>
-<td>7878c33f1963fefb3d6c8657d46c2f0a</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10">{{ sonarr['cf']['dv-hdr10']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-hdr10']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-hdr10']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv">DV</a></td>
-<td>1500</td>
-<td>6d0d8de7b57e35518ac0308b0ddf404e</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv">{{ sonarr['cf']['dv']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hlg">DV HLG</a></td>
-<td>1500</td>
-<td>1f733af03141f068a540eec352589a89</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hlg">{{ sonarr['cf']['dv-hlg']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-hlg']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-hlg']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-sdr">DV SDR</a></td>
-<td>1500</td>
-<td>27954b0a80aab882522a88a4d9eae1cd</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-sdr">{{ sonarr['cf']['dv-sdr']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-sdr']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-sdr']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus">HDR10+</a></td>
-<td>600</td>
-<td>a3d82cbef5039f8d295478d28a887159</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus">{{ sonarr['cf']['hdr10plus']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr10plus']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr10plus']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10">HDR10</a></td>
-<td>500</td>
-<td>3497799d29a085e2ac2df9d468413c94</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10">{{ sonarr['cf']['hdr10']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr10']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr10']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr">HDR</a></td>
-<td>500</td>
-<td>3e2c4e748b64a1a1118e0ea3f4cf6875</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr">{{ sonarr['cf']['hdr']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr-undefined">HDR (undefined)</a></td>
-<td>500</td>
-<td>bb019e1cd00f304f80971c965de064dc</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr-undefined">{{ sonarr['cf']['hdr-undefined']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr-undefined']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr-undefined']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pq">PQ</a></td>
-<td>500</td>
-<td>2a7e3be05d3861d6df7171ec74cad727</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pq">{{ sonarr['cf']['pq']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pq']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pq']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hlg">HLG</a></td>
-<td>500</td>
-<td>17e889ce13117940092308f48b48b45b</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hlg">{{ sonarr['cf']['hlg']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hlg']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hlg']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a> Custom Format with a score of -10000</p>
+<p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">{{ sonarr['cf']['dv-webdl']['name'] }}</a> Custom Format with a score of {{ sonarr['cf']['dv-webdl']['trash_score'] }}</p>
 </div>
 </details>
 <!-- END INCLUDE -->
@@ -2416,81 +2416,81 @@ If you think the sizes are too big to your preference then stop reading and see 
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
-<td>-10000</td>
-<td>85c61753df5da1fb2aab6f2a47426b09</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">{{ sonarr['cf']['br-disk']['name'] }}</a></td>
+<td>{{ sonarr['cf']['br-disk']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['br-disk']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">LQ</a></td>
-<td>-10000</td>
-<td>9c11cd3f07101cdba90a2d81cf0e56b4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">{{ sonarr['cf']['lq']['name'] }}</a></td>
+<td>{{ sonarr['cf']['lq']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['lq']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>47435ece6b99a0b477caf360e79ba0bb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-hd']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-hd']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>9b64dff695c2115facf1b6ea59c9bd07</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>82d40da2bc6923f41e14394075dd4b03</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">{{ sonarr['cf']['no-rlsgroup']['name'] }}</a></td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>e1a997ddb54e3ecbfe06341ad323c458</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">{{ sonarr['cf']['obfuscated']['name'] }}</a></td>
+<td>{{ sonarr['cf']['obfuscated']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['obfuscated']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>06d66ab109d4d2eddb2794d21526d140</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">{{ sonarr['cf']['retags']['name'] }}</a></td>
+<td>{{ sonarr['cf']['retags']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['retags']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>32b367365729d530ca1c124a0b180c64</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">{{ sonarr['cf']['bad-dual-groups']['name'] }}</a></td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">{{ sonarr['cf']['dv-webdl']['name'] }}</a></td>
 <td>??????</td>
-<td>9b27ab6498ec0f31a3353992e19434ca</td>
+<td>{{ sonarr['cf']['dv-webdl']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>{{ sonarr['cf']['br-disk']['name'] }} :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>{{ sonarr['cf']['lq']['name'] }}:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
-<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-hd']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-no-hdrdv']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<p>In your quality profile use the following score for this Custom Format: <code>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</code></p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
+<p><strong>{{ sonarr['cf']['no-rlsgroup']['name'] }}:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
 </li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+<li><strong>{{ sonarr['cf']['obfuscated']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
+<li><strong>{{ sonarr['cf']['retags']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
+<li><strong>{{ sonarr['cf']['bad-dual-groups']['name'] }}:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
 Also they often even rename the release name in to Portuguese.</li>
 <li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p><strong>{{ sonarr['cf']['dv-webdl']['name'] }}:</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
 <p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
 <p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
@@ -2499,7 +2499,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
 <ul>
 <li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>{{ sonarr['cf']['dv-webdl']['trash_score'] }}</code>.</li>
 </ul>
 </div>
 </li>
@@ -2520,19 +2520,19 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">Repack/Proper</a></td>
-<td>11</td>
-<td>ec8fa7296b64e8cd390a1600981f3923</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">{{ sonarr['cf']['repack-proper']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-proper']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-proper']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v2">Repack v2</a></td>
-<td>12</td>
-<td>eb3d5cc0a2be0db205fb823640db6a3c</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v2">{{ sonarr['cf']['repack-v2']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-v2']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-v2']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v3">Repack v3</a></td>
-<td>13</td>
-<td>44e7c4de10ae50265753082e5dc76047</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v3">{{ sonarr['cf']['repack-v3']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-v3']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-v3']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
@@ -2559,74 +2559,74 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#amzn">AMZN</a></td>
-<td>100</td>
-<td>d660701077794679fd59e8bdf4ce3a29</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#amzn">{{ sonarr['cf']['amzn']['name'] }}</a></td>
+<td>{{ sonarr['cf']['amzn']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['amzn']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#atvp">ATVP</a></td>
-<td>100</td>
-<td>f67c9ca88f463a48346062e8ad07713f</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#atvp">{{ sonarr['cf']['atvp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['atvp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['atvp']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sho">SHO</a></td>
-<td>95</td>
-<td>ae58039e1319178e6be73caab5c42166</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sho">{{ sonarr['cf']['sho']['name'] }}</a></td>
+<td>{{ sonarr['cf']['sho']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['sho']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dsnp">DSNP</a></td>
-<td>90</td>
-<td>89358767a60cc28783cdc3d0be9388a4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dsnp">{{ sonarr['cf']['dsnp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dsnp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dsnp']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nf">NF</a></td>
-<td>90</td>
-<td>d34870697c9db575f17700212167be23</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nf">{{ sonarr['cf']['nf']['name'] }}</a></td>
+<td>{{ sonarr['cf']['nf']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['nf']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#qibi">QIBI</a></td>
-<td>90</td>
-<td>3ac5d84fce98bab1b531393e9c82f467</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#qibi">{{ sonarr['cf']['qibi']['name'] }}</a></td>
+<td>{{ sonarr['cf']['qibi']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['qibi']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hmax">HMAX</a></td>
-<td>90</td>
-<td>a880d6abc21e7c16884f3ae393f84179</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hmax">{{ sonarr['cf']['hmax']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hmax']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hmax']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hulu">HULU</a></td>
-<td>85</td>
-<td>f6cce30f1733d5c8194222a7507909bb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hulu">{{ sonarr['cf']['hulu']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hulu']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hulu']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pcok">PCOK</a></td>
-<td>85</td>
-<td>1656adc6d7bb2c8cca6acfb6592db421</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pcok">{{ sonarr['cf']['pcok']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pcok']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pcok']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dcu">DCU</a></td>
-<td>75</td>
-<td>36b72f59f4ea20aad9316f475f2d9fbb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dcu">{{ sonarr['cf']['dcu']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dcu']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dcu']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hbo">HBO</a></td>
-<td>75</td>
-<td>7a235133c87f7da4c8cccceca7e3c7a6</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hbo">{{ sonarr['cf']['hbo']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hbo']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hbo']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#red">RED</a></td>
-<td>75</td>
-<td>c30d2958827d1867c73318a5a2957eb1</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#red">{{ sonarr['cf']['red']['name'] }}</a></td>
+<td>{{ sonarr['cf']['red']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['red']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#it">iT</a></td>
-<td>75</td>
-<td>0ac24a2a68a9700bcb7eeca8e5cd644c</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#it">{{ sonarr['cf']['it']['name'] }}</a></td>
+<td>{{ sonarr['cf']['it']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['it']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pmtp">PMTP</a></td>
-<td>75</td>
-<td>c67a75ae4a1715f2bb4d492755ba4195</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pmtp">{{ sonarr['cf']['pmtp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pmtp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pmtp']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
@@ -2646,24 +2646,24 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
-<td>1700</td>
-<td>e6258996055b9fbab7e9cb2f75819294</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">{{ sonarr['cf']['web-tier-01']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-01']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-01']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
-<td>1650</td>
-<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">{{ sonarr['cf']['web-tier-02']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-02']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-02']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
-<td>1600</td>
-<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">{{ sonarr['cf']['web-tier-03']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-03']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-03']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
-<td>1800</td>
-<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">{{ sonarr['cf']['web-scene']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-scene']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-scene']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
@@ -2703,60 +2703,60 @@ If you think the sizes are too big to your preference then stop reading and see 
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10">DV HDR10</a></td>
-<td>1500</td>
-<td>7878c33f1963fefb3d6c8657d46c2f0a</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10">{{ sonarr['cf']['dv-hdr10']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-hdr10']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-hdr10']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv">DV</a></td>
-<td>1500</td>
-<td>6d0d8de7b57e35518ac0308b0ddf404e</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv">{{ sonarr['cf']['dv']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hlg">DV HLG</a></td>
-<td>1500</td>
-<td>1f733af03141f068a540eec352589a89</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-hlg">{{ sonarr['cf']['dv-hlg']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-hlg']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-hlg']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-sdr">DV SDR</a></td>
-<td>1500</td>
-<td>27954b0a80aab882522a88a4d9eae1cd</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-sdr">{{ sonarr['cf']['dv-sdr']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dv-sdr']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dv-sdr']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus">HDR10+</a></td>
-<td>600</td>
-<td>a3d82cbef5039f8d295478d28a887159</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus">{{ sonarr['cf']['hdr10plus']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr10plus']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr10plus']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10">HDR10</a></td>
-<td>500</td>
-<td>3497799d29a085e2ac2df9d468413c94</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10">{{ sonarr['cf']['hdr10']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr10']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr10']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr">HDR</a></td>
-<td>500</td>
-<td>3e2c4e748b64a1a1118e0ea3f4cf6875</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr">{{ sonarr['cf']['hdr']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr-undefined">HDR (undefined)</a></td>
-<td>500</td>
-<td>bb019e1cd00f304f80971c965de064dc</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr-undefined">{{ sonarr['cf']['hdr-undefined']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hdr-undefined']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hdr-undefined']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pq">PQ</a></td>
-<td>500</td>
-<td>2a7e3be05d3861d6df7171ec74cad727</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pq">{{ sonarr['cf']['pq']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pq']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pq']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hlg">HLG</a></td>
-<td>500</td>
-<td>17e889ce13117940092308f48b48b45b</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hlg">{{ sonarr['cf']['hlg']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hlg']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hlg']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a> Custom Format with a score of -10000</p>
+<p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">{{ sonarr['cf']['dv-webdl']['name'] }}</a> Custom Format with a score of {{ sonarr['cf']['dv-webdl']['trash_score'] }}</p>
 </div>
 </details>
 <!-- END INCLUDE -->
@@ -2774,81 +2774,81 @@ If you think the sizes are too big to your preference then stop reading and see 
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">BR-DISK</a></td>
-<td>-10000</td>
-<td>85c61753df5da1fb2aab6f2a47426b09</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk">{{ sonarr['cf']['br-disk']['name'] }}</a></td>
+<td>{{ sonarr['cf']['br-disk']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['br-disk']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">LQ</a></td>
-<td>-10000</td>
-<td>9c11cd3f07101cdba90a2d81cf0e56b4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#lq">{{ sonarr['cf']['lq']['name'] }}</a></td>
+<td>{{ sonarr['cf']['lq']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['lq']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>47435ece6b99a0b477caf360e79ba0bb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-hd']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-hd']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>9b64dff695c2115facf1b6ea59c9bd07</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['x265-no-hdrdv']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>82d40da2bc6923f41e14394075dd4b03</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">{{ sonarr['cf']['no-rlsgroup']['name'] }}</a></td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['no-rlsgroup']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>e1a997ddb54e3ecbfe06341ad323c458</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">{{ sonarr['cf']['obfuscated']['name'] }}</a></td>
+<td>{{ sonarr['cf']['obfuscated']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['obfuscated']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>06d66ab109d4d2eddb2794d21526d140</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">{{ sonarr['cf']['retags']['name'] }}</a></td>
+<td>{{ sonarr['cf']['retags']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['retags']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>32b367365729d530ca1c124a0b180c64</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">{{ sonarr['cf']['bad-dual-groups']['name'] }}</a></td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['bad-dual-groups']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">{{ sonarr['cf']['dv-webdl']['name'] }}</a></td>
 <td>??????</td>
-<td>9b27ab6498ec0f31a3353992e19434ca</td>
+<td>{{ sonarr['cf']['dv-webdl']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
+<li><strong>{{ sonarr['cf']['br-disk']['name'] }} :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
+<li><strong>{{ sonarr['cf']['lq']['name'] }}:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
-<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-hd']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">{{ sonarr['cf']['x265-no-hdrdv']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>{{ sonarr['cf']['x265-no-hdrdv']['name'] }}:</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<p>In your quality profile use the following score for this Custom Format: <code>{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}</code></p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">{{ sonarr['cf']['x265-hd']['name'] }}</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 <li>
-<p><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
+<p><strong>{{ sonarr['cf']['no-rlsgroup']['name'] }}:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</p>
 </li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+<li><strong>{{ sonarr['cf']['obfuscated']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
+<li><strong>{{ sonarr['cf']['retags']['name'] }}:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
+<li><strong>{{ sonarr['cf']['bad-dual-groups']['name'] }}:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
 Also they often even rename the release name in to Portuguese.</li>
 <li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
+<p><strong>{{ sonarr['cf']['dv-webdl']['name'] }}:</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
 <p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
 <p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
@@ -2857,7 +2857,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
 <ul>
 <li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
+<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>{{ sonarr['cf']['dv-webdl']['trash_score'] }}</code>.</li>
 </ul>
 </div>
 </li>
@@ -2878,19 +2878,19 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">Repack/Proper</a></td>
-<td>11</td>
-<td>ec8fa7296b64e8cd390a1600981f3923</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">{{ sonarr['cf']['repack-proper']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-proper']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-proper']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v2">Repack v2</a></td>
-<td>12</td>
-<td>eb3d5cc0a2be0db205fb823640db6a3c</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v2">{{ sonarr['cf']['repack-v2']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-v2']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-v2']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v3">Repack v3</a></td>
-<td>13</td>
-<td>44e7c4de10ae50265753082e5dc76047</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#repack-v3">{{ sonarr['cf']['repack-v3']['name'] }}</a></td>
+<td>{{ sonarr['cf']['repack-v3']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['repack-v3']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
@@ -2917,74 +2917,74 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#amzn">AMZN</a></td>
-<td>100</td>
-<td>d660701077794679fd59e8bdf4ce3a29</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#amzn">{{ sonarr['cf']['amzn']['name'] }}</a></td>
+<td>{{ sonarr['cf']['amzn']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['amzn']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#atvp">ATVP</a></td>
-<td>100</td>
-<td>f67c9ca88f463a48346062e8ad07713f</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#atvp">{{ sonarr['cf']['atvp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['atvp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['atvp']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sho">SHO</a></td>
-<td>95</td>
-<td>ae58039e1319178e6be73caab5c42166</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sho">{{ sonarr['cf']['sho']['name'] }}</a></td>
+<td>{{ sonarr['cf']['sho']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['sho']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dsnp">DSNP</a></td>
-<td>90</td>
-<td>89358767a60cc28783cdc3d0be9388a4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dsnp">{{ sonarr['cf']['dsnp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dsnp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dsnp']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nf">NF</a></td>
-<td>90</td>
-<td>d34870697c9db575f17700212167be23</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nf">{{ sonarr['cf']['nf']['name'] }}</a></td>
+<td>{{ sonarr['cf']['nf']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['nf']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#qibi">QIBI</a></td>
-<td>90</td>
-<td>3ac5d84fce98bab1b531393e9c82f467</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#qibi">{{ sonarr['cf']['qibi']['name'] }}</a></td>
+<td>{{ sonarr['cf']['qibi']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['qibi']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hmax">HMAX</a></td>
-<td>90</td>
-<td>a880d6abc21e7c16884f3ae393f84179</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hmax">{{ sonarr['cf']['hmax']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hmax']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hmax']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hulu">HULU</a></td>
-<td>85</td>
-<td>f6cce30f1733d5c8194222a7507909bb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hulu">{{ sonarr['cf']['hulu']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hulu']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hulu']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pcok">PCOK</a></td>
-<td>85</td>
-<td>1656adc6d7bb2c8cca6acfb6592db421</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pcok">{{ sonarr['cf']['pcok']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pcok']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pcok']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dcu">DCU</a></td>
-<td>75</td>
-<td>36b72f59f4ea20aad9316f475f2d9fbb</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dcu">{{ sonarr['cf']['dcu']['name'] }}</a></td>
+<td>{{ sonarr['cf']['dcu']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['dcu']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hbo">HBO</a></td>
-<td>75</td>
-<td>7a235133c87f7da4c8cccceca7e3c7a6</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hbo">{{ sonarr['cf']['hbo']['name'] }}</a></td>
+<td>{{ sonarr['cf']['hbo']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['hbo']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#red">RED</a></td>
-<td>75</td>
-<td>c30d2958827d1867c73318a5a2957eb1</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#red">{{ sonarr['cf']['red']['name'] }}</a></td>
+<td>{{ sonarr['cf']['red']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['red']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#it">iT</a></td>
-<td>75</td>
-<td>0ac24a2a68a9700bcb7eeca8e5cd644c</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#it">{{ sonarr['cf']['it']['name'] }}</a></td>
+<td>{{ sonarr['cf']['it']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['it']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pmtp">PMTP</a></td>
-<td>75</td>
-<td>c67a75ae4a1715f2bb4d492755ba4195</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pmtp">{{ sonarr['cf']['pmtp']['name'] }}</a></td>
+<td>{{ sonarr['cf']['pmtp']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['pmtp']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
@@ -3004,24 +3004,24 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
-<td>1700</td>
-<td>e6258996055b9fbab7e9cb2f75819294</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">{{ sonarr['cf']['web-tier-01']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-01']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-01']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
-<td>1650</td>
-<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">{{ sonarr['cf']['web-tier-02']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-02']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-02']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
-<td>1600</td>
-<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">{{ sonarr['cf']['web-tier-03']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-tier-03']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-tier-03']['trash_id'] }}</td>
 </tr>
 <tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
-<td>1800</td>
-<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">{{ sonarr['cf']['web-scene']['name'] }}</a></td>
+<td>{{ sonarr['cf']['web-scene']['trash_score'] }}</td>
+<td>{{ sonarr['cf']['web-scene']['trash_id'] }}</td>
 </tr>
 </tbody>
 </table>
