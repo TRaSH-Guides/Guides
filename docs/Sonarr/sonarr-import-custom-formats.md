@@ -51,6 +51,11 @@ all you need to do now is click on the `Save` button and you're done.
 
 ![cf-import-done](images/cf-import-done.png)
 
+### Setup the scores in your Quality Profile
+
+After you've added the Custom Formats, You will need to set it up in the Quality Profile you want to use/prefer to make use of the Custom Formats.
+How this is done is explained [HERE](/Sonarr/sonarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}
+
 ------
 
 ## Start adding other Custom Formats wisely

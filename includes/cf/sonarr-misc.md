@@ -1,7 +1,7 @@
 ??? summary "Misc - [CLICK TO EXPAND]"
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
-    | [{{ sonarr['cf']['repack-proper']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repack-proper) | {{ sonarr['cf']['repack-proper']['trash_score'] }} | {{ sonarr['cf']['repack-proper']['trash_id'] }} |
+    | [{{ sonarr['cf']['repack-proper']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) | {{ sonarr['cf']['repack-proper']['trash_score'] }} | {{ sonarr['cf']['repack-proper']['trash_id'] }} |
     | [{{ sonarr['cf']['repack-v2']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repack-v2)             | {{ sonarr['cf']['repack-v2']['trash_score'] }}       | {{ sonarr['cf']['repack-v2']['trash_id'] }}       |
     | [{{ sonarr['cf']['repack-v3']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repack-v3)             | {{ sonarr['cf']['repack-v3']['trash_score'] }}       | {{ sonarr['cf']['repack-v3']['trash_id'] }}       |
 
@@ -9,7 +9,7 @@
 
         I also suggest to change the Propers and Repacks settings in Sonarr
 
-        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repack-proper) Custom Format.
+        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
 
         ![!cf-mm-propers-repacks-disable](/Sonarr/images/cf-mm-propers-repacks-disable.png)
 

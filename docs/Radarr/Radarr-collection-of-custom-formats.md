@@ -18,7 +18,7 @@ I also made 3 guides related to this one.
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repack-proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -33,7 +33,7 @@ I also made 3 guides related to this one.
 
 ------
 
-| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Metadata                      |
+| Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
 | [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
 | [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
@@ -48,31 +48,45 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted                           | HQ Source Groups      | Streaming Services     |
-| --------------------------------------------- | ---------------------------------- | --------------------- | ---------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [LQ](#lq)                          | [HQ](#hq)             | [Apple TV+](#aptv)     |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                          | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [DV (WEBDL)](#dv-webdl)            |                       | [HBO Max](#hmax)       |
-| [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)              |                       | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             | [x265 (no HDR/DV)](#x265-no-hdrdv) |                       | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                                    |                       | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                                    |                       | [Paramount+](#pmtp)    |
-|                                               |                                    |                       | [Movies Anywhere](#ma) |
+| Movie Versions                                | Unwanted              | HQ Source Groups      | Streaming Services     |
+| --------------------------------------------- | --------------------- | --------------------- | ---------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
+| [Remaster](#remaster)                         | [LQ](#lq)             | [HQ](#hq)             | [Apple TV+](#atvp)     |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
+| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) |                       | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) |                       |                       | [Hulu](#hulu)          |
+| [Theatrical Cut](#theatrical-cut)             |                       |                       | [Netflix](#nf)         |
+| [IMAX](#imax)                                 |                       |                       | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       |                       | [Paramount+](#pmtp)    |
+|                                               |                       |                       | [Movies Anywhere](#ma) |
 
 ------
 
-| Misc                                  | Optional                            | &nbsp; | &nbsp; |
-| ------------------------------------- | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repack-proper)       | [EVO (no WEBDL)](#evo-no-webdl)     | &nbsp; | &nbsp; |
-| [Repack2](#repack2)                   | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Multi](#multi)                       | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [x264](#x264)                         | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x265](#x265)                         | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                       |                                     | &nbsp; | &nbsp; |
-| [FreeLeech](#freeleech)               |                                     | &nbsp; | &nbsp; |
-| [Dutch Groups](#dutch-groups)         |                                     | &nbsp; | &nbsp; |
-| [Anime Dual Audio](#anime-dual-audio) |                                     | &nbsp; | &nbsp; |
+| Misc                           | Optional                            | French Audio Version          | French Source Groups                  |
+| ------------------------------ | ----------------------------------- | ----------------------------- | ------------------------------------- |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR HQ-Remux](#fr-hq-remux)         |
+| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR HQ](#fr-hq)                     |
+| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR HQ-WEBDL](#fr-hq-webdl)         |
+| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR Scene Groups](#fr-scene-groups) |
+| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR LQ](#fr-lq)                     |
+| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                       |
+| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                       |
+| [Dutch Groups](#dutch-groups)  |                                     | [VQ](#vq)                     |                                       |
+|                                |                                     | [VFB](#vfb)                   |                                       |
+|                                |                                     | [VOSTFR](#vostfr)             |                                       |
+
+------
+
+| Anime                                                                       | Anime                                                                 | Anime       | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)   | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)   | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)   | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)   | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)   |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv) |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |             |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |             |                                       |
 
 ## Audio Advanced
 
@@ -131,7 +145,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### DD+ ATMOS
+### DDPlus ATMOS
 
 ??? faq "DD+ ATMOS - [CLICK TO EXPAND]"
 
@@ -455,7 +469,7 @@ I also made 3 guides related to this one.
 
 ------
 
-## HDR metadata
+## HDR Formats
 
 ------
 
@@ -857,73 +871,12 @@ I also made 3 guides related to this one.
 
 ??? faq "LQ - [CLICK TO EXPAND]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
-
-    !!! note
-
-        You might want to add the following also [EVO (no WEBDL)](#evo-no-webdl)
-
-        - BLOCK1 = Low-Quality Releases (often banned groups)
-        - BLOCK2 = Another Small list of often banned groups.
-        - BLOCK3 = Banned release groups.
-        - BLOCK4 = Low-quality and/or dishonest release groups.
-        - BLOCK5 = Banned Release Groups.
-        - BLOCK6 = Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-        - RiffTrax = RiffTrax is an American company that produces scripted humorous audio commentary tracks intended to be played in unison with particular television programs and films, In short just annoying!!!
+    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### x265 (HD)
-
-<sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
-
-??? faq "x265 (HD) - [CLICK TO EXPAND]"
-
-    This blocks/ignores 720/1080p(HD) releases that are encoded in x265.
-
-    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-hd']['trash_score'] }}`
-
-    !!! fail ""
-        --8<-- "includes/docker/x265.md"
-
-            !!! Danger "Don't use this together with the following Custom Format [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### x265 (no HDR/DV)
-
-??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
-
-    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
-
-    **but it will allow to exclude/bypass if it has HDR and/or DV**
-
-    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
-
-    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
-
-    !!! Danger "Don't use this together with the following Custom Format [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:"
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -942,6 +895,51 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/3d.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### x265 (HD)
+
+<sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
+
+??? faq "x265 (HD) - [CLICK TO EXPAND]"
+
+    This blocks 720/1080p (HD) releases that are encoded in x265.
+
+    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-hd']['trash_score'] }}`
+
+    !!! fail ""
+        --8<-- "includes/docker/x265.md"
+
+            !!! Danger "Don't use this together with [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## Optional
+
+------
+
+### Bad Dual Groups
+
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -967,9 +965,7 @@ I also made 3 guides related to this one.
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-webdl.json' %]][[% endfilter %]]
     ```
 
-------
-
-## Optional
+<sub><sup>[TOP](#index)</sup>
 
 ------
 
@@ -1042,20 +1038,26 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-<sub><sup>[TOP](#index)</sup>
-
 ------
 
-### Bad Dual Groups
+### x265 (no HDR/DV)
 
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+
+    This blocks 720/1080p (HD) releases that are encoded in x265.
+
+    **But it will allow x265 releases if they have HDR and/or DV**
+
+    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+    In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+
+    !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1066,7 +1068,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### Repack Proper
+### Repack/Proper
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1156,21 +1158,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dutch-groups.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Anime Dual Audio
-
-??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
-    Description placeholder
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1277,7 +1264,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### APTV
+### ATVP
 
 <sub>Apple TV+</sub>
 
@@ -1288,7 +1275,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aptv.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/atvp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1415,6 +1402,657 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+## Anime
+
+------
+
+### Anime BD Tier 01 (Top SeaDex Muxers)
+
+??? faq "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-01-top-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 02 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-02-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 03 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-03-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 04 (SeaDex Muxers)
+
+??? faq "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-04-seadex-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 05 (Remuxes)
+
+??? faq "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
+    Groups that are consistent and do Remuxes
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-05-remuxes.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 06 (FanSubs)
+
+??? faq "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-06-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 07 (P2P/Scene)
+
+??? faq "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
+    Known P2P and Scene Anime groups
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-07-p2pscene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime BD Tier 08 (Mini Encodes)
+
+??? faq "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
+    Know groups that do mini encodes
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-bd-tier-08-mini-encodes.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 01 (Muxers)
+
+??? faq "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-01-muxers.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 02 (Top FanSubs)
+
+??? faq "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
+    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-02-top-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 03 (Official Subs)
+
+??? faq "Anime Web Tier 03 Official Subs) - [CLICK TO EXPAND]"
+    Official sub groups that tend to be more consistent and release fast
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-03-official-subs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 04 (Official Subs)
+
+??? faq "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
+    Official sub groups
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-04-official-subs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 05 (FanSubs)
+
+??? faq "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-05-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Web Tier 06 (FanSubs)
+
+??? faq "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+    FanSub groups that are consistent
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-web-tier-06-fansubs.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Raws
+
+??? faq "Anime Raws - [CLICK TO EXPAND]"
+    A collection of know groups that release raws
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-raws.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime LQ Groups
+
+??? faq "Anime LQ Groups - [CLICK TO EXPAND]"
+    A collection of known Low Quality groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Uncensored
+
+??? faq "Uncensored - [CLICK TO EXPAND]"
+    This CF covers releases that are uncensored
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uncensored.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v0
+
+??? faq "v0 - [CLICK TO EXPAND]"
+    CF to cover releases named with v0 which we don't want
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v0.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v1
+
+??? faq "v1 - [CLICK TO EXPAND]"
+    CF to cover v1 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v2
+
+??? faq "v2 - [CLICK TO EXPAND]"
+    CF to cover v2 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v2.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v3
+
+??? faq "v3 - [CLICK TO EXPAND]"
+    CF to cover v3 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v3.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### v4
+
+??? faq "v4 - [CLICK TO EXPAND]"
+    CF to cover v4 releases
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/v4.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VRV
+
+??? faq "VRV - [CLICK TO EXPAND]"
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### 10bit
+
+??? faq "10bit - [CLICK TO EXPAND]"
+    This CF covers releases that are 10bit
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/10bit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Anime Dual Audio
+
+??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
+    This CF covers releases that have Dual Audio
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Dubs Only
+
+??? faq "Dubs Only - [CLICK TO EXPAND]"
+    This CF covers releases that only have Dubs
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dubs-only.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## French Audio Version
+
+------
+
+### Multi-French
+
+??? faq "Multi-French - [CLICK TO EXPAND]"
+
+    Recognised movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custome format.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Multi-Audio
+
+??? faq "Multi-Audio - [CLICK TO EXPAND]"
+
+    A sliglthly modified [Multi](#multi) Custom Formats that recognise VF and VO inside the name.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### French Audio
+
+??? faq "French Audio - [CLICK TO EXPAND]"
+
+    This will recognised every kind of French Audio.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFF
+
+??? faq "VFF - [CLICK TO EXPAND]"
+
+    Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vff.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOF
+
+??? faq "VOF - [CLICK TO EXPAND]"
+
+    Original French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vof.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFI
+
+??? faq "VFI - [CLICK TO EXPAND]"
+
+    International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFQ
+
+??? faq "VFQ - [CLICK TO EXPAND]"
+
+    Canadian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VQ
+
+??? faq "VQ - [CLICK TO EXPAND]"
+
+    Quebec Version (strong Quebec accent, ex: The Simpsons movie).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFB
+
+??? faq "VFB - [CLICK TO EXPAND]"
+
+    Belgian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfb.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOSTFR
+
+??? faq "VOSTFR - [CLICK TO EXPAND]"
+
+    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vostfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## French HQ Source Groups
+
+------
+
+### FR HQ
+
+<sub>French HQ-Releases = FR HQ</sub>
+
+??? faq "FR HQ - [CLICK TO EXPAND]"
+
+    A collection of French P2P groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR HQ-WEBDL
+
+??? faq "FR HQ-WEBDL - [CLICK TO EXPAND]"
+
+    A personal collection of French P2P WEB-DL groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR HQ-Remux
+
+??? faq "FR HQ-Remux - [CLICK TO EXPAND]"
+
+    A personal collection of French P2P Remux groups that are known for their high quality releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq-remux.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Scene Groups
+
+??? faq "FR Scene Groups - [CLICK TO EXPAND]"
+
+    Known French Scene groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR LQ
+
+<sub>French Low Quality Releases = FR LQ</sub>
+
+??? faq "FR LQ - [CLICK TO EXPAND]"
+
+    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+
+    !!! note
+
+        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
+        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - DeTAG/ReTAG = Detagging or stealing groups.
+        - Other reasons = Banned Release Groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-lq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

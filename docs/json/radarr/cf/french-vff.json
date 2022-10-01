@@ -1,0 +1,26 @@
+{
+  "trash_id": "404c08fd0bd67f39b4d8e5709319094e",
+  "trash_regex": "https://regex101.com/r/5fR55c/1",
+  "name": "VFF",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "TRUEFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TRUEFRENCH|VFF?)\\b"
+      }
+    },
+    {
+      "name": "FRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<!Multi-)FR(A|ENCH)?\\b"
+      }
+    }
+  ]
+}
