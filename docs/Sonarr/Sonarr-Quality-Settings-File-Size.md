@@ -56,7 +56,7 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ------
 
-### Sonarr Quality Definitions - Anime (Work in Progress)
+### Sonarr Quality Definitions - Anime
 
 | Quality                                                           | Minimum                                                       | Maximum                                                       |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -74,6 +74,11 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 | {{ sonarr['quality-size']['anime']['qualities'][11]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][11]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][11]['max'] }} |
 | {{ sonarr['quality-size']['anime']['qualities'][12]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][12]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][12]['max'] }} |
 | {{ sonarr['quality-size']['anime']['qualities'][13]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][13]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][13]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][14]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][14]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][14]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][15]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][15]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][15]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][16]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][17]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['max'] }} |
+| {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
