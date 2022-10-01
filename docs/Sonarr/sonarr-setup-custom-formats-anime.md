@@ -1,19 +1,19 @@
 # How to setup Custom Formats (Anime)
 
 !!! attention
-    You must be running Sonarr V4 to be able to use this setup
+    You must be running Sonarr V4 to be able to use this setup.
 
-![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5)
+    ![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5)
 
 !!! note
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
-    It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
+It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
 The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
 The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
 
-!!! note
+!!! info ""
     Nyaa is a public tracker while AB is an invite only tracker.
 
 ---
@@ -91,8 +91,7 @@ We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, `H
 
 Go to `Settings` => `Profiles`
 
-??? check "example - [Click to Expand]"
-    ![!cf-settings-profiles](images/cfa-settings-profiles.png)
+![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
 ![!cfa-mergedqualities](images/cfa-mergedqualities.png)
 
@@ -119,8 +118,7 @@ The scoring that has been set is the recommended scoring, however some of the CF
 
 Once the custom formats have been imported you can set the scores as above. To do this go to `Settings` => `Profiles` and select the `Remux-1080p - Anime` profile that was setup before.
 
-??? check "example - [Click to Expand]"
-    ![!cf-settings-profiles](images/cfa-settings-profiles.png)
+![!cf-settings-profiles](images/cfa-settings-profiles.png)
 
 In the profile enter the scores as per the above table in this section.
 
