@@ -1984,6 +1984,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#replace_for" class="md-nav__link">
+    replace_for
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#wtfnzb-renamer" class="md-nav__link">
     WtFnZb-Renamer
   </a>
@@ -2289,6 +2296,66 @@ Released under GNU General Public License v2.0</p>
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">NZBGET_POSTPROCESS_SUCCESS</span><span class="p">)</span>
 </code></pre></div>
 </details>
+<h2 id="replace_for">replace_for<a class="headerlink" href="#replace_for" title="Permanent link"></a></h2>
+<details class="info">
+<summary>Replaces underscores with dots</summary>
+<ul>
+<li>Title: <code>replace_for.py</code></li>
+<li>Author: miker</li>
+</ul>
+<p>Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).</p>
+<p>Install Instructions:</p>
+<ol>
+<li>Copy script to NZBGet's script folder</li>
+<li>run: <code>sudo chmod +x replace_for.py</code></li>
+<li>in SABnzbd go to <code>Settings</code> =&gt; <code>Extension Scripts</code></li>
+<li>Enable <code>replace_for.py</code> in the <code>Extensions</code> setting.</li>
+</ol>
+</details>
+<details class="example">
+<summary>Script</summary>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1">#</span>
+
+<span class="c1">##############################################################################</span>
+<span class="c1">### NZBGET POST-PROCESSING SCRIPT                                          ###</span>
+
+<span class="c1"># Replace underscore with dot.</span>
+<span class="c1">#</span>
+<span class="c1"># Author: miker</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># Copy script to NZBGet&#39;s script folder.</span>
+<span class="c1"># Run sudo chmod +x replace_for.py</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># NOTE: This script requires Python to be installed on your system.</span>
+
+<span class="c1">### NZBGET POST-PROCESSING SCRIPT                                          ###</span>
+<span class="c1">##############################################################################</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="c1"># Exit codes used by NZBGet</span>
+<span class="n">POSTPROCESS_SUCCESS</span><span class="o">=</span><span class="mi">93</span>
+<span class="n">POSTPROCESS_ERROR</span><span class="o">=</span><span class="mi">94</span>
+<span class="n">POSTPROCESS_SKIP</span><span class="o">=</span><span class="mi">95</span>
+
+
+<span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_DIRECTORY&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Directory used is: &#39;</span><span class="p">,</span><span class="n">directory</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">path</span><span class="p">,</span> <span class="n">currentDirectory</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">directory</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="o">!=-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">dst</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">rename</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">),</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span> <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result: &#39;</span><span class="p">,</span><span class="n">file</span><span class="p">,</span><span class="s2">&quot; renamed to &quot;</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_SUCCESS</span><span class="p">)</span>
+</code></pre></div>
+</details>
 <h2 id="wtfnzb-renamer">WtFnZb-Renamer<a class="headerlink" href="#wtfnzb-renamer" title="Permanent link"></a></h2>
 <details class="info">
 <summary>Renames hashed media files to match the source NZB</summary>
@@ -2468,7 +2535,7 @@ Released under GNU General Public License v2.0</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 31, 2021 19:50:32</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 28, 2022 14:02:19</span>
       
     
   </small>

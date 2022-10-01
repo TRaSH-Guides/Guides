@@ -1976,6 +1976,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#replace_for" class="md-nav__link">
+    replace_for
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2089,13 +2096,75 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 </details>
+<h2 id="replace_for">replace_for<a class="headerlink" href="#replace_for" title="Permanent link"></a></h2>
+<details class="info">
+<summary>Replaces underscores with dots</summary>
+<ul>
+<li>Title: <code>replace_for.py</code></li>
+<li>Author: miker</li>
+</ul>
+<p>Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).</p>
+<p>Install Instructions:</p>
+<ol>
+<li>Copy script to sabnzbd's script folder</li>
+<li>run: <code>sudo chmod +x replace_for.py</code></li>
+<li>in SABnzbd go to <code>Settings</code> =&gt; <code>Categories</code></li>
+<li>Change script for required categories and select: <code>replace_for.py</code></li>
+</ol>
+<p><div class="lightgallery"><a data-sub-html="Enable replace_for.py" href="/Downloaders/SABnzbd/images/sabnzbd-categories-replace_for.png"><img alt="Enable replace_for.py" src="/Downloaders/SABnzbd/images/sabnzbd-categories-replace_for.png" /></a></div></p>
+</details>
+<details class="example">
+<summary>Script</summary>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/python3 -OO</span>
+
+<span class="c1">##################################################################</span>
+<span class="c1">### SABnzbd - Replace underscores with dots                     ##</span>
+<span class="c1">##################################################################</span>
+<span class="c1">##                                                              ##</span>
+<span class="c1">## NOTE: This script requires Python 3                          ##</span>
+<span class="c1">##                                                              ##</span>
+<span class="c1">## Author: miker                                                ##</span>
+<span class="c1">##                                                              ##</span>
+<span class="c1">## Install:                                                     ##</span>
+<span class="c1">## 1. Copy script to sabnzbd&#39;s script folder                    ##</span>
+<span class="c1">## 2. run: sudo chmod +x replace_for.py                         ##</span>
+<span class="c1">## 3. in SABnzbd go to Config &gt; Categories                      ##</span>
+<span class="c1">## 4. Assign replace_for.py to the required category            ##</span>
+<span class="c1">##################################################################</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">os.path</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">scriptname</span><span class="p">,</span> <span class="n">directory</span><span class="p">,</span> <span class="n">orgnzbname</span><span class="p">,</span> <span class="n">jobname</span><span class="p">,</span> <span class="n">reportnumber</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">group</span><span class="p">,</span> <span class="n">postprocstatus</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No commandline parameters found&quot;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>    <span class="c1"># exit with 1 causes SABnzbd to ignore the output of this script</span>
+
+<span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">src</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">src</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="o">!=-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">dst</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">rename</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span><span class="n">src</span><span class="p">),</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span> <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="s2">&quot;renamed to &quot;</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span> 
+<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># 0 means OK</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</details>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2021 14:21:27</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 28, 2022 14:02:19</span>
       
     
   </small>
