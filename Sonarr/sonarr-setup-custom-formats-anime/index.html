@@ -1976,6 +1976,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#series-type" class="md-nav__link">
+    Series Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#recommended-naming-scheme" class="md-nav__link">
     Recommended naming scheme
   </a>
@@ -2037,6 +2044,34 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#default-scoring" class="md-nav__link">
+    Default Scoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-audio-scoring" class="md-nav__link">
+    Dual Audio Scoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncensored-scoring" class="md-nav__link">
+    Uncensored Scoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finishing-up" class="md-nav__link">
+    Finishing up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#acknowledgements" class="md-nav__link">
     Acknowledgements
   </a>
@@ -2072,22 +2107,27 @@
 <h1 id="how-to-setup-custom-formats-anime">How to setup Custom Formats (Anime)<a class="headerlink" href="#how-to-setup-custom-formats-anime" title="Permanent link"></a></h1>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>You must be running Sonarr V4 to be able to use this setup</p>
-</div>
+<p>You must be running Sonarr V4 to be able to use this setup.</p>
 <p><img alt="V4" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&amp;label=Current%20V4%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This guide is created and maintained by <a href="https://github.com/FonduemangVI">FonduemangVI</a> and <a href="https://github.com/rg9400">rg9400</a></p>
-<p>It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.</p>
 </div>
+<p>It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.</p>
 <p>The aim of this guide is to grab the best release overall (as per <a href="https://sneedex.moe/" rel="noopener noreferrer" target="_blank">SeaDex</a>) and not necessarily just dual audio.
 The vast majority of releases can be found on <a href="https://nyaa.si/" rel="noopener noreferrer" target="_blank">Nyaa</a> or <a href="https://animebytes.tv/" rel="noopener noreferrer" target="_blank">AB</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition info">
 <p>Nyaa is a public tracker while AB is an invite only tracker.</p>
 </div>
 <hr />
 <h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link"></a></h2>
+<h3 id="series-type">Series Type<a class="headerlink" href="#series-type" title="Permanent link"></a></h3>
+<p>When adding a new series make sure you set the series type to Anime</p>
+<details class="check">
+<summary>example - [Click to Expand]</summary>
+<p><div class="lightgallery"><a data-sub-html="cfa-seriestype" href="../images/cfa-seriestype.png"><img alt="cfa-seriestype" src="../images/cfa-seriestype.png" /></a></div></p>
+</details>
 <h3 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Custom Formats <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
 </code></pre></div>
@@ -2115,28 +2155,24 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <p><img alt="result" src="../images/cfa-prefixedrange.png" /></p>
 <hr />
 <h2 id="quality-settings">Quality Settings<a class="headerlink" href="#quality-settings" title="Permanent link"></a></h2>
-<p>For quality settings please refer to <a href="/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime-work-in-progress" rel="noopener noreferrer" target="_blank">Sonarr Quality Definitions - Anime</a></p>
+<p>For quality settings please refer to <a href="/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime" rel="noopener noreferrer" target="_blank">Sonarr Quality Definitions - Anime</a></p>
+<p>If you are only running a single instance of Sonarr you can instead use <a href="/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions" rel="noopener noreferrer" target="_blank">Sonarr Quality Definitions</a></p>
 <hr />
 <h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link"></a></h2>
 <p>We need to create a new profile called <code>Remux-1080p - Anime</code> due to the way anime can be named we will need to merge a few qualities together see <a href="/Sonarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">here</a> for an example.</p>
-<p>We need to add <code>Bluray-1080p Remux</code> and <code>Bluray-1080p</code> into a group together, and <code>HDTV-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code> so that scoring will work correctly.</p>
+<p>We need to add <code>Bluray-1080p Remux</code> and <code>Bluray-1080p</code> into a group together, <code>HDTV-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code>, and lastly <code>HDTV-720p</code> into the same group as <code>WEBDL-720p</code> and <code>WEBRip-720p</code> so that the scoring will work correctly.</p>
 <p>Go to <code>Settings</code> =&gt; <code>Profiles</code></p>
-<details class="check">
-<summary>example - [Click to Expand]</summary>
 <p><div class="lightgallery"><a data-sub-html="cf-settings-profiles" href="../images/cfa-settings-profiles.png"><img alt="cf-settings-profiles" src="../images/cfa-settings-profiles.png" /></a></div></p>
-</details>
 <p><div class="lightgallery"><a data-sub-html="cfa-mergedqualities" href="../images/cfa-mergedqualities.png"><img alt="cfa-mergedqualities" src="../images/cfa-mergedqualities.png" /></a></div></p>
-<p>We then need to select and organise qualities as below.</p>
+<p>We then need to select and organise the qualities like below.</p>
 <p><div class="lightgallery"><a data-sub-html="cfa-qualityorder" href="../images/cfa-qualityorder.png"><img alt="cfa-qualityorder" src="../images/cfa-qualityorder.png" /></a></div></p>
-<p>Make sure <code>Upgrades Allowed</code> is ticked then set the <code>Upgrade Until</code> section to <code>Bluray-1080p</code> and the <code>Upgrade Until Custom Format Score</code> to <code>10000</code></p>
-<p>After this has been done your profile should look like below.</p>
-<p><div class="lightgallery"><a data-sub-html="cfa-qualityprofile" href="../images/cfa-qualityprofile.png"><img alt="cfa-qualityprofile" src="../images/cfa-qualityprofile.png" /></a></div></p>
 <hr />
 <h2 id="anime-cfscoring">Anime CF/Scoring<a class="headerlink" href="#anime-cfscoring" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We're going to make use of the below custom formats. See <a href="/Sonarr/sonarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a> for how to import them.</p>
 </div>
+<h3 id="default-scoring">Default Scoring<a class="headerlink" href="#default-scoring" title="Permanent link"></a></h3>
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-anime.md -->
 <details class="summary">
 <summary>Anime CF/Scoring - [Click to Expand]</summary>
@@ -2286,16 +2322,35 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
 
 <p>The scoring that has been set is the recommended scoring, however some of the CFs are optional depending on what you prefer.
-<code>Anime Dual Audio</code>, <code>Uncensored</code> and <code>10bit</code> can be given postive scores if you want to prefer content with these attributes.</p>
-<p><code>Anime Raws</code> and <code>Dubs Only</code> are optional negative scores, if you prefer these attributes you can give them a positive score.</p>
+<code>Anime Dual Audio</code>, <code>Uncensored</code> and <code>10bit</code> can be given positive scores if you want to prefer content with these attributes.</p>
+<p><code>Anime Raws</code> and <code>Dubs Only</code> are negatively scored, however if you prefer these attributes you can give them a positive score.</p>
 <p>Once the custom formats have been imported you can set the scores as above. To do this go to <code>Settings</code> =&gt; <code>Profiles</code> and select the <code>Remux-1080p - Anime</code> profile that was setup before.</p>
-<details class="check">
-<summary>example - [Click to Expand]</summary>
 <p><div class="lightgallery"><a data-sub-html="cf-settings-profiles" href="../images/cfa-settings-profiles.png"><img alt="cf-settings-profiles" src="../images/cfa-settings-profiles.png" /></a></div></p>
-</details>
 <p>In the profile enter the scores as per the above table in this section.</p>
-<p><div class="lightgallery"><a data-sub-html="cfa-scoring" href="../images/cfa-scoring.png"><img alt="cfa-scoring" src="../images/cfa-scoring.png" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="cfa-default-scoring" href="../images/cfa-default-scoring.png"><img alt="cfa-default-scoring" src="../images/cfa-default-scoring.png" /></a></div></p>
 <p>After you are done it should look like the image above.</p>
+<h3 id="dual-audio-scoring">Dual Audio Scoring<a class="headerlink" href="#dual-audio-scoring" title="Permanent link"></a></h3>
+<p>If you prefer <code>Dual Audio</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Dual Audio</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>, and if you want to prefer it over any tiers give the <code>CF</code> a score of <code>2000</code>.</p>
+<p>If you must have <code>Dual Audio</code> releases set the <code>Minimum Custom Format Score</code> to 2000 in the <code>Remux-1080p - Anime</code> profile that you setup earlier.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does a <code>Dual Audio</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Dual Audio</code> over any tier.</p>
+<p><div class="lightgallery"><a data-sub-html="cfa-da-scoring" href="../images/cfa-da-scoring.png"><img alt="cfa-da-scoring" src="../images/cfa-da-scoring.png" /></a></div></p>
+<h3 id="uncensored-scoring">Uncensored Scoring<a class="headerlink" href="#uncensored-scoring" title="Permanent link"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most BDs are uncensored by default, so most groups do not include that in the name.</p>
+</div>
+<p>If you prefer <code>Uncensored</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Uncensored</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does an <code>Uncensored</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Uncensored</code> a tier above.</p>
+<p><div class="lightgallery"><a data-sub-html="cfa-uncensored-scoring" href="../images/cfa-uncensored-scoring.png"><img alt="cfa-uncensored-scoring" src="../images/cfa-uncensored-scoring.png" /></a></div></p>
+<h3 id="finishing-up">Finishing up<a class="headerlink" href="#finishing-up" title="Permanent link"></a></h3>
+<p>Once you have set your preferred scoring you will need to make one more change to your <code>Remux-1080p - Anime</code> profile.</p>
+<p>Make sure <code>Upgrades Allowed</code> is ticked then set the <code>Upgrade Until</code> section to <code>Bluray-1080p</code> and the <code>Upgrade Until Custom Format Score</code> to <code>10000</code></p>
+<p>After this has been done your profile should look like below. This is an example of the Default Scoring setup.</p>
+<p><div class="lightgallery"><a data-sub-html="cfa-complete" href="../images/cfa-complete.png"><img alt="cfa-complete" src="../images/cfa-complete.png" /></a></div></p>
 <h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
 <p>Most of my information and knowledge came from:</p>
 <ul>
@@ -2328,7 +2383,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 30, 2022 09:51:35</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 1, 2022 07:49:22</span>
       
     
   </small>
