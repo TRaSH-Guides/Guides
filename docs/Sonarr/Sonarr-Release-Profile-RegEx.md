@@ -112,19 +112,19 @@ Add this to your `Preferred (3)` with a score of [100]
 ```
 
 ```bash
-/\b(atvp|aptv)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(atvp|aptv|Apple TV\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [95]
 
 ```bash
-/\b(sho)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(sho|showtime)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
-/\b(dsnp|dsny|disney)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(dsnp|dsny|disney|Disney\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
@@ -132,11 +132,11 @@ Add this to your `Preferred (3)` with a score of [90]
 ```
 
 ```bash
-/\b(qibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(qibi|quibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/\b(hmax|hbom)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(hmax|hbom|hbo max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [85]
@@ -146,7 +146,7 @@ Add this to your `Preferred (3)` with a score of [85]
 ```
 
 ```bash
-/\b(pcok)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(pcok|Peacock TV)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [75]
