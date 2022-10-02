@@ -1166,15 +1166,6 @@
       }
     },
     {
-      "name": "Yameii",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Yameii\\]|-Yameii\\b"
-      }
-    },
-    {
       "name": "youshikibi",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

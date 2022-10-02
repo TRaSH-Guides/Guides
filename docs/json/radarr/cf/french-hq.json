@@ -1,0 +1,206 @@
+{
+  "trash_id": "7737330faad260830b9cabff1a59c4a5",
+  "trash_score": "2100",
+  "name": "FR HQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRip",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "BEO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]BEO\\b"
+      }
+    },
+    {
+      "name": "D3L0P@tte",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]D3L0P(@tte)?\\b"
+      }
+    },
+    {
+      "name": "DUSTiN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]DUSTiN\\b"
+      }
+    },
+    {
+      "name": "FLOP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]FLOP\\b"
+      }
+    },
+    {
+      "name": "FoX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]FoX\\b"
+      }
+    },
+    {
+      "name": "FRATERNiTY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]FRATERNiTY\\b"
+      }
+    },
+    {
+      "name": "FrIeNdS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]FrIeNdS\\b"
+      }
+    },
+    {
+      "name": "FUJiSAN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]FUJiSAN\\b"
+      }
+    },
+    {
+      "name": "HeavyWeight",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]HeavyWeight\\b"
+      }
+    },
+    {
+      "name": "HLX (not Light)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]HLX\\b"
+      }
+    },
+    {
+      "name": "JKF-2D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]JKF-2D\\b"
+      }
+    },
+    {
+      "name": "LAZARUS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]LAZARUS\\b"
+      }
+    },
+    {
+      "name": "MARBLECAKE (not Light)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]MARBLECAKE\\b"
+      }
+    },
+    {
+      "name": "NEO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]NEO\\b"
+      }
+    },
+    {
+      "name": "NoNe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]NoNe\\b"
+      }
+    },
+    {
+      "name": "NoTag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]NoTag\\b"
+      }
+    },
+    {
+      "name": "SowHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-]SowHD\\b"
+      }
+    },
+    {
+      "name": "Smaller interesting groups (few releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[\\[ .-](DiEBEX|TkHD|UTT)"
+      }
+    }
+  ]
+}

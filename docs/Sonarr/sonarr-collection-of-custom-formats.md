@@ -45,50 +45,48 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted                           | HQ Source Groups            | Streaming Services  |
-| --------------------- | ---------------------------------- | --------------------------- | ------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)                          | [WEB Tier 02](#web-tier-02) | [Apple TV+](#atvp)  |
-|                       | [DV (WEBDL)](#dv-webdl)            | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
-|                       | [x265 (HD)](#x265-hd)              | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
-|                       | [x265 (no HDR/DV)](#x265-no-hdrdv) |                             | [HBO Max](#hmax)    |
-|                       |                                    |                             | [HBO](#hbo)         |
-|                       |                                    |                             | [Hulu](#hulu)       |
-|                       |                                    |                             | [Netflix](#nf)      |
-|                       |                                    |                             | [Paramount+](#pmtp) |
-|                       |                                    |                             | [Peacock TV](#pcok) |
-|                       |                                    |                             | [Quibi](#qibi)      |
-|                       |                                    |                             | [SHOWTIME](#sho)    |
-|                       |                                    |                             | [YouTube Red](#red) |
-|                       |                                    |                             | [iTunes](#it)       |
+| Series Versions       | Unwanted              | HQ Source Groups            | Streaming Services  |
+| --------------------- | --------------------- | --------------------------- | ------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
+| [Remaster](#remaster) | [LQ](#lq)             | [WEB Tier 02](#web-tier-02) | [Apple TV+](#atvp)  |
+|                       | [x265 (HD)](#x265-hd) | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
+|                       |                       | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
+|                       |                       |                             | [HBO Max](#hmax)    |
+|                       |                       |                             | [HBO](#hbo)         |
+|                       |                       |                             | [Hulu](#hulu)       |
+|                       |                       |                             | [Netflix](#nf)      |
+|                       |                       |                             | [Paramount+](#pmtp) |
+|                       |                       |                             | [Peacock TV](#pcok) |
+|                       |                       |                             | [Quibi](#qibi)      |
+|                       |                       |                             | [SHOWTIME](#sho)    |
+|                       |                       |                             | [YouTube Red](#red) |
+|                       |                       |                             | [iTunes](#it)       |
 
 ------
 
 | Misc                           | Optional                            | &nbsp; | &nbsp; |
 | ------------------------------ | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repackproper) | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)        | [Scene](#scene)                     | &nbsp; | &nbsp; |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
+| [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)             | &nbsp; | &nbsp; |
 | [Repack v3](#repack-v3)        | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
 | [Multi](#multi)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
 | [MPEG2](#mpeg2)                | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x264](#x264)                  | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [x265](#x265)                  |                                     | &nbsp; | &nbsp; |
-|                                |                                     | &nbsp; | &nbsp; |
+| [x264](#x264)                  | [Scene](#scene)                     | &nbsp; | &nbsp; |
+| [x265](#x265)                  | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
 
 ------
 
-| Anime                                                                       | Anime                                                                 | Anime                                 |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v0](#v0)                             |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (SubsPlease)](#anime-web-tier-03-subsplease)       | [v1](#v1)                             |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v2](#v2)                             |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v3](#v3)                             |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [v4](#v4)                             |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [VRV](#vrv)                           |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [10bit](#10bit)                       |
-|                                                                             |                                                                       | [Anime Dual Audio](#anime-dual-audio) |
-|                                                                             |                                                                       | [Dubs Only](#dubs-only)               |
+| Anime                                                                       | Anime                                                                 | Anime       | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)   | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)   | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)   | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)   | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)   |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv) |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |             |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |             |                                       |
 
 ## Audio Advanced
 
@@ -799,53 +797,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### x265 (no HDR/DV)
-
-??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
-
-    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
-
-    **But it will allow x265 releases if they have HDR and/or DV**
-
-    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
-
-    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}`
-
-    !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### DV (WEBDL)
-
-<sub>Dolby Vision = DoVi = DV</sub>
-
-??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
-    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
-
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
-
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
-
-    Remuxes and Bluray have a fallback to HDR10.
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ## Misc
 
 ------
@@ -951,41 +902,39 @@ I also made 3 guides related to this one.
 
 ------
 
-### Season Pack
+### Bad Dual Groups
 
-??? faq "Season Pack - [CLICK TO EXPAND]"
-
-    This Custom Format can be used depending if you prefer or not prefer a season pack
-
-    - Give it a score of `10` if you prefer a season pack.
-    - Give it a score of `-10000` if you don't prefer a season pack.
-    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.
-    - keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
-
-    !!! danger "WARNING"
-        - This Custom Format could result in a download loop :bangbang:
-        - This will upgrade also your already downloaded single episodes :bangbang:
+??? faq "Bad dual groups - [CLICK TO EXPAND]"
+    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
+    Also they often even rename the release name in to Portuguese.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### Scene
+### DV (WEBDL)
 
-??? faq "Scene - [CLICK TO EXPAND]"
+<sub>Dolby Vision = DoVi = DV</sub>
 
-    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
+    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
+
+    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
+
+    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
+
+    Remuxes and Bluray have a fallback to HDR10.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1045,16 +994,65 @@ I also made 3 guides related to this one.
 
 ------
 
-### Bad Dual Groups
+### Scene
 
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+??? faq "Scene - [CLICK TO EXPAND]"
+
+    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Season Pack
+
+??? faq "Season Pack - [CLICK TO EXPAND]"
+
+    This Custom Format can be used depending if you prefer or not prefer a season pack
+
+    - Give it a score of `10` if you prefer a season pack.
+    - Give it a score of `-10000` if you don't prefer a season pack.
+    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.
+    - keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
+
+    !!! danger "WARNING"
+        - This Custom Format could result in a download loop :bangbang:
+        - This will upgrade also your already downloaded single episodes :bangbang:
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### x265 (no HDR/DV)
+
+??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+
+    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
+
+    **But it will allow x265 releases if they have HDR and/or DV**
+
+    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+
+    !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1546,15 +1544,15 @@ I also made 3 guides related to this one.
 
 ------
 
-### Anime Web Tier 03 (SubsPlease)
+### Anime Web Tier 03 (Official Subs)
 
-??? faq "Anime Web Tier 03 (SubsPlease) - [CLICK TO EXPAND]"
-    SubsPlease group. They are official subs but tend to be more consistent and release fast
+??? faq "Anime Web Tier 03 (Official Subs) - [CLICK TO EXPAND]"
+    Official sub groups that tend to be more consistent and release fast
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-03-subsplease.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-03-official-subs.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

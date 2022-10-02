@@ -1,0 +1,17 @@
+{
+  "trash_id": "b3fb499641d7b3c2006be1d9eb014cb3",
+  "trash_regex": "https://regex101.com/r/1arrX4/1",
+  "name": "VFB",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Belgian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVFB\\b"
+      }
+    }
+  ]
+}

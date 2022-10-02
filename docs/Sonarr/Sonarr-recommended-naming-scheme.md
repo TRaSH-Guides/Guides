@@ -15,12 +15,6 @@ The Tokens not available in the release won't be used/shown.
 
 ## Standard Episode Format
 
-!!! caution "Starting from v3.0.6.1431, Sonarr now supports recognizing Dolby Vision (DV) and High Dynamic Range (HDR) types. "
-
-    If you're using a lower version replace:
-
-    `{[MediaInfo VideoDynamicRangeType]}` with `{[MediaInfo VideoDynamicRange]}`
-
 ```bash
 {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
 ```
@@ -90,9 +84,6 @@ For Plex:
 RESULT:
 
 `The Series Title! (2010) [imdb-tt1520211]`
-
-!!! note
-    The officially supported format is `{imdb-{ImdbId}}` but Plex should also support `(imdb-{ImdbId})` or `[imdb-{ImdbId}]`, though the above should work for now, It's actually not needed to add an ID to the folder or filename to use the new Plex TV Series Scanner.
 
 For Jellyfin/Emby:
 
