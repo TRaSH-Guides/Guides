@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bHDR10(\\b[^+|Plus])"
+        "value": "((\\bHDR10)|(\\b10bit\\WHDR))(\\b[^+|Plus])"
       }
     },
     {
