@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BAWLS|BiPOLAR|BLACKPANTERS|BRiNK)\\b"
+        "value": "\\b(BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BRiNK)\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|MELBA|MORELAND|MUNSTER|MUxHD)\\b"
+        "value": "\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MORELAND|MUNSTER|MUxHD)\\b"
       }
     },
     {
