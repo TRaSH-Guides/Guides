@@ -47,8 +47,8 @@
     Install Instructions:
 
       1. Copy script to NZBGet's script folder
-      1. run: `sudo chmod +x replace_for.py`
-      1. in SABnzbd go to `Settings` => `Extension Scripts`
+      1. Run: `sudo chmod +x replace_for.py`
+      1. In NZBGet go to `Settings` => `Extension Scripts`
       1. Enable `replace_for.py` in the `Extensions` setting.
 
 ??? example "Script"
