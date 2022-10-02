@@ -1,6 +1,6 @@
 {
   "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
-  "trash_score": "1700",
+  "trash_score": "1650",
   "name": "FR WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "BONBON",
+      "name": "ALLDAYiN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BONBON)\\b"
+        "value": "\\b(ALLDAYiN)\\b"
       }
     },
     {
@@ -41,12 +41,12 @@
       }
     },
     {
-      "name": "FrIeNdS",
+      "name": "FUJiSAN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FrIeNdS)\\b"
+        "value": "\\b(FUJiSAN)\\b"
       }
     },
     {
@@ -77,12 +77,30 @@
       }
     },
     {
-      "name": "NoNE",
+      "name": "MOONLY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NoNE)\\b"
+        "value": "\\b(MOONLY)\\b"
+      }
+    },
+    {
+      "name": "NoNe",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NoNe)\\b"
+      }
+    },
+    {
+      "name": "Slay3R",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Slay3R)\\b"
       }
     },
     {

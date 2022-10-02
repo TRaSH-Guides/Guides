@@ -14,12 +14,12 @@
       }
     },
     {
-      "name": "BDHD (no VC1)",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "BDHD",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
+        "value": "\\b(BDHD)\\b"
       }
     },
     {
