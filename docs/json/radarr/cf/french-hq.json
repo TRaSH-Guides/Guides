@@ -1,6 +1,6 @@
 {
   "trash_id": "7737330faad260830b9cabff1a59c4a5",
-  "trash_score": "2100",
+  "trash_score": "1800",
   "name": "FR HQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -59,24 +59,6 @@
       }
     },
     {
-      "name": "DUSTiN",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-]DUSTiN\\b"
-      }
-    },
-    {
-      "name": "FLOP",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-]FLOP\\b"
-      }
-    },
-    {
       "name": "FoX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -122,21 +104,12 @@
       }
     },
     {
-      "name": "HLX (not Light)",
+      "name": "HLX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]HLX\\b"
-      }
-    },
-    {
-      "name": "JKF-2D",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-]JKF-2D\\b"
+        "value": "[\\[ .-]HLX\\b"
       }
     },
     {
@@ -149,12 +122,12 @@
       }
     },
     {
-      "name": "MARBLECAKE (not Light)",
+      "name": "MARBLECAKE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]MARBLECAKE\\b"
+        "value": "[\\[ .-]MARBLECAKE\\b"
       }
     },
     {
@@ -176,15 +149,6 @@
       }
     },
     {
-      "name": "NoTag",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-]NoTag\\b"
-      }
-    },
-    {
       "name": "SowHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -199,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "[\\[ .-](DiEBEX|TkHD|UTT)"
+        "value": "[\\[ .-](JKF(-2D)?|TkHD|UTT)"
       }
     }
   ]
