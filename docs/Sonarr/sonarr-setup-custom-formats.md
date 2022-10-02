@@ -173,17 +173,27 @@ Use the following main settings in your profile.
 
 ## FAQ & INFO
 
-### Proper and Repacks
+### Why only WEB-DL
 
-??? tip "Proper and Repacks - [CLICK TO EXPAND]"
+??? faq "Why do you only have a release profile for WEB-DL - [CLICK TO EXPAND]"
 
-    I also suggest to change the Propers and Repacks settings in Sonarr
+    I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
+### Why prefer P2P groups
 
-    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+??? faq "Why do you prefer P2P groups over scene groups - [CLICK TO EXPAND]"
 
-    This way you make sure the Custom Format preferences will be used instead.
+    Scene groups always release in a rush to bring it out as fast as possible.
+
+    So I noticed often that I got Repacks/Proper releases from them or from different groups and quality. P2P releases are a bit smarter and work sort of together by not doing the same release. Also, I noticed that with some scene releases the 5.1 audio was stripped out or converted to AAC audio.
+
+    In my opinion the P2P releases are of better quality. There's one scene group that does bring out quality releases `-deflate`/`-inflate`.
+
+### Why so many repacks/propers
+
+??? faq "Why do I see so many repacks/propers of Amazon WEB-DLs lately - [CLICK TO EXPAND]"
+
+    A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated, the episodes will be REPACKED.
 
 ### Custom Formats to avoid certain releases
 
@@ -197,6 +207,18 @@ Use the following main settings in your profile.
 ??? FAQ "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
 
     All Custom Formats with a score of 0 are pure informational and don't do anything.
+
+### Proper and Repacks
+
+??? tip "Proper and Repacks - [CLICK TO EXPAND]"
+
+    I also suggest to change the Propers and Repacks settings in Sonarr
+
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
+
+    ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
+
+    This way you make sure the Custom Format preferences will be used instead.
 
 ### Minimum Custom Format Score
 
