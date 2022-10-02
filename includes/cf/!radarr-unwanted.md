@@ -1,0 +1,29 @@
+??? summary "Unwanted - [CLICK TO EXPAND]"
+    | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
+    | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
+    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                       | {{ radarr['cf']['br-disk']['trash_score'] }}         | {{ radarr['cf']['br-disk']['trash_id'] }}         |
+    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                                 | {{ radarr['cf']['lq']['trash_score'] }}              | {{ radarr['cf']['lq']['trash_id'] }}              |
+    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:             | {{ radarr['cf']['x265-hd']['trash_score'] }}         | {{ radarr['cf']['x265-hd']['trash_id'] }}         |
+    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                                 | {{ radarr['cf']['3d']['trash_score'] }}              | {{ radarr['cf']['3d']['trash_id'] }}              |
+
+    ------
+
+    Breakdown and Why
+
+    - **{{ radarr['cf']['br-disk']['name'] }} :** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+    - **{{ radarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
+    - **{{ radarr['cf']['x265-hd']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265. - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
+
+        !!! Danger "Don't use this together with [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
+
+    - **{{ radarr['cf']['x265-no-hdrdv']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265. - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
+
+        **But it will allow x265 releases if they have HDR and/or DV**
+
+        *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+
+        In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+
+        !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
+
+    - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
