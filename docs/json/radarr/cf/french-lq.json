@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
+        "value": "\\b(ACOOL|AlioZ|ASPHiXiAS|BLABLASTREAM|FERVEX|FReeZeR|GHOSTSPiRiT|GHZ|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"
       }
     },
     {
