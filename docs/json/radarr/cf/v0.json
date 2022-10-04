@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<=(\\d|\\[))(v0)\\b"
+        "value": "(\\b|\\d)(v0)\\b"
       }
     }
   ]
