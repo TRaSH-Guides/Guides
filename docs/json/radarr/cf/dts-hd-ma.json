@@ -32,15 +32,6 @@
       }
     },
     {
-      "name": "Not Basic DTS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "DTS[ .]?[1-9]"
-      }
-    },
-    {
       "name": "Not Basic Dolby Digital ",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
