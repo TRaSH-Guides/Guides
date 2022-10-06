@@ -2074,8 +2074,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workflow-rules" class="md-nav__link">
-    Workflow Rules
+  <a href="#workflow-logic" class="md-nav__link">
+    Workflow Logic
   </a>
   
 </li>
@@ -2205,24 +2205,25 @@
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../includes/sqp/2-workflow.md -->
-<h2 id="workflow-rules">Workflow Rules<a class="headerlink" href="#workflow-rules" title="Permanent link"></a></h2>
+<h2 id="workflow-logic">Workflow Logic<a class="headerlink" href="#workflow-logic" title="Permanent link"></a></h2>
 <details class="summary">
-<summary>Workflow Rules - [CLICK TO EXPAND]</summary>
-<ol>
-<li>With this profile you would download the 4k WEB-DL (streaming services)</li>
+<summary>Workflow Logic - [CLICK TO EXPAND]</summary>
+<p><strong>Depending what's released first and available the following Workflow Logic will be used:</strong></p>
+<ul>
+<li>When the 4k WEBDL is released it will download the 4k WEB-DL. (streaming services)</li>
 <li>When the 4k Remux is released it will upgrade to the 4k Remux.</li>
 <li>When the HQ Encode is released it will upgrade to the HQ Encode.</li>
-<li>When there is no HQ Encode you still get the 4k Remuxes.</li>
-<li>When there is no 4k WEB-DL it will get 1080p with HDR/DV (Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.)</li>
-<li>When there is no 4k release it will get the 1080p Remux.</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Optional IMAX Enhanced</p>
-<ul>
-<li>When a IMAX Enhanced exist it will upgrade/downgrade to IMAX Enhanced.</li>
-<li>IMAX Enhanced will be <strong>ONLY</strong> chosen if it has the same <strong>AUDIO</strong> and <strong>HDR Metadata</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
-<li>It won't downgrade from a <code>TrueHD Atmos</code> to a <code>DD+ Atmos</code> or from a <code>DV</code> to a <code>HDR</code>. <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:" /></li>
+<li>When the IMAX-E is released it will upgrade to the IMAX-E. (<em>optional, see below</em>)</li>
 </ul>
+<hr />
+<p><em>Possible Variables</em></p>
+<p><strong>When no 4k exist it will grab the following:</strong></p>
+<ul>
+<li>1080p WEBDL with DV/HDR</li>
+<li>1080p Remux</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">[<em>Optional</em>] IMAX Enhanced (IMAX-E)<br>- When a IMAX Enhanced exist it will upgrade/downgrade to IMAX Enhanced.<br>- IMAX Enhanced will be <strong>ONLY</strong> chosen if it has the same <strong>AUDIO</strong> and <strong>HDR Metadata</strong><br>- It won't downgrade from a <code>TrueHD Atmos</code> to a <code>DD+ Atmos</code> or from a <code>DV</code> to a <code>HDR</code>.</p>
 </div>
 </details>
 <!-- END INCLUDE -->
@@ -2266,9 +2267,12 @@
 <!-- BEGIN INCLUDE ../../includes/sqp/2-merge-qualities.md -->
 <h5 id="merge-the-following-qualities-together">Merge the following Qualities together<a class="headerlink" href="#merge-the-following-qualities-together" title="Permanent link"></a></h5>
 <ul>
-<li>Remux-2160p</li>
+<li>WEBDL-2160p</li>
+<li>WEBRip-2160p</li>
 <li>Bluray-2160p</li>
-<li>WEBDL/WEBRIP-2160p</li>
+<li>Remux-2160p</li>
+<li>WEBDL-1080p</li>
+<li>WEBRip-1080p</li>
 </ul>
 <p>and name it what ever you want I used: <code>WEB|Remux|Bluray|2160p</code></p>
 <p><div class="lightgallery"><a data-sub-html="Merge the following Qualities together" href="/SQP/images/2-merge-qualities.png"><img alt="Merge the following Qualities together" src="/SQP/images/2-merge-qualities.png" /></a></div></p>
@@ -2552,12 +2556,12 @@
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02">UHD Bluray Tier 02</a></td>
 <td>2200</td>
-<td>4d74ac4c4db0b64bff6ce0cffef99bf0</td>
+<td>a58f517a70193f8e578056642178419d</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03">UHD Bluray Tier 03</a></td>
 <td>2100</td>
-<td>4d74ac4c4db0b64bff6ce0cffef99bf0</td>
+<td>e71939fae578037e7aed3ee219bbe7c1</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
@@ -2612,7 +2616,7 @@
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><code>x264</code> has a score of <code>-10000</code> because we only want the UHD versions of the <code>WEBDL-1080p</code></li>
+<li><code>x264</code> has a score of <code>-10000</code> because we only want the HDR/DV versions of the <code>WEBDL-1080p</code></li>
 </ul>
 <details class="tip">
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>

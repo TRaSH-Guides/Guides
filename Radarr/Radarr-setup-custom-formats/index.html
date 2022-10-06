@@ -2523,11 +2523,6 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
-<td>-10000</td>
-<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
 <td>90a6f9a284dff5103f6346090e6280c8</td>
@@ -2538,39 +2533,9 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
-<td>??????</td>
-<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
@@ -2578,7 +2543,6 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <p>Breakdown and Why</p>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
@@ -2587,35 +2551,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
-<li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
-</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</li>
-<li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
-<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
-<ul>
-<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
-</ul>
-</div>
 </li>
 </ul>
 </details>
@@ -2863,11 +2799,6 @@ Also they often even rename the release name in to Portuguese.</li>
 <td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
-<td>-10000</td>
-<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
 <td>90a6f9a284dff5103f6346090e6280c8</td>
@@ -2878,39 +2809,9 @@ Also they often even rename the release name in to Portuguese.</li>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
-<td>??????</td>
-<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
@@ -2918,7 +2819,6 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>Breakdown and Why</p>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
@@ -2927,35 +2827,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
-<li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
-</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</li>
-<li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
-<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
-<ul>
-<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
-</ul>
-</div>
 </li>
 </ul>
 </details>
@@ -2995,8 +2867,9 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-hd-bluray-web-scoring.md -->
 <details class="summary">
-<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3007,23 +2880,38 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
-<td>1750</td>
-<td>26fa26253af4001701fedb56cec376dc</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
-<td>0</td>
-<td>403f3f6266b90439cacc1e07cae4dc2d</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01">HD Bluray Tier 01</a></td>
 <td>1800</td>
-<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
+<td>3a3ff47579026e76d6504ebea39390de</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02">HD Bluray Tier 02</a></td>
+<td>1750</td>
+<td>9f98181fe5a3fbeb0cc29340da2a468a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
+<td>1700</td>
+<td>c20f169ef63c5f40c2def54abaf4438e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
+<td>1650</td>
+<td>403816d65392c79236dcb6dd591aeda4</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
+<td>1600</td>
+<td>af94e0fe497124d1f9ce732069ec8c3b</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition danger">
+<p class="admonition-title">- Don’t use HQ-xxx and Tiers together<br>- HD Bluray Tier 01-02 replaces HQ<br>- Web Tier 01-03 replaces HQ-WEBDL</p>
+</div>
 </details>
+<!-- END INCLUDE -->
+
 <p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.</p>
 <p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-encodes" href="../images/cf-profile-encodes.png"><img alt="cf-profile-encodes" src="../images/cf-profile-encodes.png" /></a></div></p>
@@ -3032,7 +2920,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <p>The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
 <details class="example">
-<summary>The following workflow will be applied:</summary>
+<summary>The following workflow logic will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Bluray-1080p when available.</li>
@@ -3273,11 +3161,6 @@ If you think the sizes are too big to your preference then stop reading and see 
 <td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
-<td>-10000</td>
-<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
 <td>90a6f9a284dff5103f6346090e6280c8</td>
@@ -3288,39 +3171,9 @@ If you think the sizes are too big to your preference then stop reading and see 
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
-<td>??????</td>
-<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
@@ -3328,7 +3181,6 @@ If you think the sizes are too big to your preference then stop reading and see 
 <p>Breakdown and Why</p>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
@@ -3337,35 +3189,7 @@ If you think the sizes are too big to your preference then stop reading and see 
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
-<li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
-</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</li>
-<li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
-<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
-<ul>
-<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
-</ul>
-</div>
 </li>
 </ul>
 </details>
@@ -3405,8 +3229,9 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
 <details class="summary">
-<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3417,23 +3242,38 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
-<td>1750</td>
-<td>26fa26253af4001701fedb56cec376dc</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01">Remux Tier 01</a></td>
 <td>1900</td>
-<td>403f3f6266b90439cacc1e07cae4dc2d</td>
+<td>3a3ff47579026e76d6504ebea39390de</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
-<td>0</td>
-<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02">Remux Tier 02</a></td>
+<td>1850</td>
+<td>9f98181fe5a3fbeb0cc29340da2a468a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
+<td>1700</td>
+<td>c20f169ef63c5f40c2def54abaf4438e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
+<td>1650</td>
+<td>403816d65392c79236dcb6dd591aeda4</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
+<td>1600</td>
+<td>af94e0fe497124d1f9ce732069ec8c3b</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition danger">
+<p class="admonition-title">- Don’t use HQ-xxx and Tiers together<br>- Remux Tier 01-02 replaces HQ-Remux<br>- Web Tier 01-03 replaces HQ-WEBDL</p>
+</div>
 </details>
+<!-- END INCLUDE -->
+
 <p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-remux1080" href="../images/cf-profile-remux1080.png"><img alt="cf-profile-remux1080" src="../images/cf-profile-remux1080.png" /></a></div></p>
 <div class="admonition attention">
@@ -3441,7 +3281,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <p>The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
 <details class="example">
-<summary>The following workflow will be applied:</summary>
+<summary>The following workflow logic will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 1080p for the streaming movies you see more often lately.</li>
 <li>It will upgrade till Remux-1080p when available.</li>
@@ -3679,11 +3519,6 @@ If you think the sizes are too big to your preference then stop reading and see 
 <td>ed38b889b31be83fda192888e2286d83</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
-<td>-10000</td>
-<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#lq">LQ</a></td>
 <td>-10000</td>
 <td>90a6f9a284dff5103f6346090e6280c8</td>
@@ -3694,39 +3529,9 @@ If you think the sizes are too big to your preference then stop reading and see 
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></td>
-<td>-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
-<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td>-10000</td>
-<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td>-10000</td>
-<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td>-10000</td>
-<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td>-10000</td>
-<td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
-<td>??????</td>
-<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 </tbody>
 </table>
@@ -3734,7 +3539,6 @@ If you think the sizes are too big to your preference then stop reading and see 
 <p>Breakdown and Why</p>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
-<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
@@ -3743,35 +3547,7 @@ If you think the sizes are too big to your preference then stop reading and see 
 </div>
 </li>
 <li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
-<li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
-</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</li>
-<li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
-<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
-<ul>
-<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
-</ul>
-</div>
 </li>
 </ul>
 </details>
@@ -3811,8 +3587,9 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
 <details class="summary">
-<summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
+<summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3823,30 +3600,45 @@ Also they often even rename the release name in to Portuguese.</li>
 </thead>
 <tbody>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-webdl">HQ-WEBDL</a></td>
-<td>1750</td>
-<td>26fa26253af4001701fedb56cec376dc</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq-remux">HQ-Remux</a></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01">Remux Tier 01</a></td>
 <td>1900</td>
-<td>403f3f6266b90439cacc1e07cae4dc2d</td>
+<td>3a3ff47579026e76d6504ebea39390de</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hq">HQ</a></td>
-<td>0</td>
-<td>1c7d7b04b15cc53ea61204bebbcc1ee2</td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02">Remux Tier 02</a></td>
+<td>1850</td>
+<td>9f98181fe5a3fbeb0cc29340da2a468a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
+<td>1700</td>
+<td>c20f169ef63c5f40c2def54abaf4438e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
+<td>1650</td>
+<td>403816d65392c79236dcb6dd591aeda4</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
+<td>1600</td>
+<td>af94e0fe497124d1f9ce732069ec8c3b</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition danger">
+<p class="admonition-title">- Don’t use HQ-xxx and Tiers together<br>- Remux Tier 01-02 replaces HQ-Remux<br>- Web Tier 01-03 replaces HQ-WEBDL</p>
+</div>
 </details>
+<!-- END INCLUDE -->
+
 <p>Use the following main settings in your profile.</p>
 <p><div class="lightgallery"><a data-sub-html="cf-profile-remux2160" href="../images/cf-profile-remux2160.png"><img alt="cf-profile-remux2160" src="../images/cf-profile-remux2160.png" /></a></div></p>
 <div class="admonition attention">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <details class="example">
-<summary>The following workflow will be applied:</summary>
+<summary>The following workflow logic will be applied:</summary>
 <ul>
 <li>It will download WEB-DL 2160p for the streaming movies you see more often lately.</li>
 <li>It will upgrade to Remux-2160p when available.</li>
@@ -3910,7 +3702,7 @@ Being when you add a Custom Format what you prefer and you set it to something l
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 7, 2022 19:24:20</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2022 19:28:45</span>
       
     
   </small>
