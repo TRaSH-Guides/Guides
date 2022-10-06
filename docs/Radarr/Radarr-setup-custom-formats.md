@@ -132,7 +132,7 @@ Use the following main settings in your profile.
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Bluray-1080p when available.
@@ -177,7 +177,7 @@ Use the following main settings in your profile.
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Remux-1080p when available.
@@ -216,7 +216,7 @@ Use the following main settings in your profile.
 
 !!! attention "Make sure you don't check the BR-DISK."
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 2160p for the streaming movies you see more often lately.
     - It will upgrade to Remux-2160p when available.
