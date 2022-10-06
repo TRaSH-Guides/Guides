@@ -1,6 +1,6 @@
 ## Instructions
 
-!!! warning ""
+!!! info ""
 
     1. Follow every steps below.
     1. Don't skip any steps.

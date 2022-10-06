@@ -28,7 +28,7 @@
         },
         {
             "quality": "HDTV-1080p",
-            "min": 33.7,
+            "min": 33.8,
             "preferred": 399,
             "max": 400
         },
@@ -64,13 +64,13 @@
         },
         {
             "quality": "WEBDL-2160p",
-            "min": 85,
+            "min": 50.8,
             "preferred": 399,
             "max": 400
         },
         {
             "quality": "WEBRip-2160p",
-            "min": 85,
+            "min": 50.8,
             "preferred": 399,
             "max": 400
         },
@@ -82,7 +82,7 @@
         },
         {
             "quality": "Remux-2160p",
-            "min": 221.5,
+            "min": 187.4,
             "preferred": 399,
             "max": 400
         }
