@@ -1,3 +1,5 @@
+--8<-- "includes/sonarrv4-disclaimer.md"
+
 # How to update Custom Formats
 
 Here I will try to explain how you can manually update Custom Formats for Sonarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.

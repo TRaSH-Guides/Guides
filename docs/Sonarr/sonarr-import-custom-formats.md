@@ -1,3 +1,5 @@
+--8<-- "includes/sonarrv4-disclaimer.md"
+
 # How to import Custom Formats
 
 Here I will try to explain how you can manually import Custom Formats for Sonarr v4+.

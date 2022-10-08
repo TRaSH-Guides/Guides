@@ -1,3 +1,5 @@
+--8<-- "includes/sonarrv4-disclaimer.md"
+
 # How to setup Custom Formats (Anime)
 
 !!! attention
