@@ -336,6 +336,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/SQP/5/</loc>
+         <lastmod>2022-10-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Sonarr/</loc>
          <lastmod>2022-10-08</lastmod>
          <changefreq>daily</changefreq>

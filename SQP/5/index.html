@@ -12,14 +12,14 @@
         <meta name="author" content="TRaSH">
       
       
-        <link rel="canonical" href="https://trash-guides.info/SQP/4/">
+        <link rel="canonical" href="https://trash-guides.info/SQP/5/">
       
       <link rel="icon" href="../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
-        <title>UHD WEBDL|IMAX-E (SQP-4) - TRaSH Guides</title>
+        <title>UHD Remux|Bluray|IMAX-E (SQP-2) - TRaSH Guides</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uhd-webdlimax-e-sqp-4" class="md-skip">
+        <a href="#uhd-remuxblurayimax-e-sqp-2" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              UHD WEBDL|IMAX-E (SQP-4)
+              UHD Remux|Bluray|IMAX-E (SQP-2)
             
           </span>
         </div>
@@ -2073,43 +2073,44 @@
     
                   
 
-  <a href="https://github.com/TRaSH-/Guides/edit/master/docs/SQP/4.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/TRaSH-/Guides/edit/master/docs/SQP/5.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="uhd-webdlimax-e-sqp-4">UHD WEBDL|IMAX-E (SQP-4)<a class="headerlink" href="#uhd-webdlimax-e-sqp-4" title="Permanent link"></a></h1>
+<h1 id="uhd-remuxblurayimax-e-sqp-2">UHD Remux|Bluray|IMAX-E (SQP-2)<a class="headerlink" href="#uhd-remuxblurayimax-e-sqp-2" title="Permanent link"></a></h1>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Keep in mind this SQP is a WIP, Changes are done when needed.</p>
 <p>It uses Custom Formats and specific needed settings that probably will never make it to the guide, being the guide is used by the masses and what's used here is made for specific needs.</p>
 <p>This also means some Custom Formats needs manual updating or you can use one of the 3rd party automation tools.</p>
 </div>
-<!-- BEGIN INCLUDE ../../includes/sqp/4-why.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-why.md -->
 <h2 id="why-choose-this-quality-profile">Why choose this quality profile<a class="headerlink" href="#why-choose-this-quality-profile" title="Permanent link"></a></h2>
 <details class="faq">
 <summary>Why choose this quality profile? - [CLICK TO EXPAND]</summary>
 <ul>
+<li>You got a decent audio setup. (that supports all HD audio formats)</li>
 <li>You got a setup that completely supports DoVi from start to end.</li>
+<li>You do want the highest quality as possible to watch but want to save space for archiving without loosing video and audio quality.</li>
 <li>HDR/DoVi (Depending what's offered and often both)</li>
-<li>If available HD Audio (Atmos, TrueHD etc...)</li>
-<li>You're okay with WEBDL, with the option to upgrade to IMAX Enhanced.</li>
-<li>You don't need the huge Remuxes or UHD Bluray Encodes but still want HDR Formats.</li>
-<li>You want a smaller files for your kids movies (Disney/Pixar etc)</li>
+<li>HD Audio (Atmos, TrueHD etc...)</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-workflow.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-workflow.md -->
 <h2 id="workflow-logic">Workflow Logic<a class="headerlink" href="#workflow-logic" title="Permanent link"></a></h2>
 <details class="summary">
 <summary>Workflow Logic - [CLICK TO EXPAND]</summary>
 <p><strong>Depending what's released first and available the following Workflow Logic will be used:</strong></p>
 <ul>
 <li>When the 4k WEBDL is released it will download the 4k WEB-DL. (streaming services)</li>
+<li>When the HQ Encode is released it will upgrade to the HQ Encode.</li>
 <li>When the IMAX-E is released it will upgrade to the IMAX-E. (<em>optional, see below</em>)</li>
 </ul>
+<p><code>1080p-Remux</code> =&gt; <code>1080p-WEBDL DV/HDR</code> =&gt; <code>2160p-WEBDL</code> =&gt;  <code>2160p-Encodes</code> =&gt;  <code>2160p-WEBDL IMAX-E</code></p>
 <hr />
 <p><em>Possible Variables</em></p>
 <p><strong>When no 4k exist it will grab the following:</strong></p>
@@ -2145,11 +2146,11 @@
 </div>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-newqp.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-newqp.md -->
 <h3 id="create-a-new-quality-profile">Create a new Quality Profile<a class="headerlink" href="#create-a-new-quality-profile" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
-<p>Create a new profile and name it what ever you want I used: <code>WEBDL|IMAX-E|2160p</code></p>
-<p><div class="lightgallery"><a data-sub-html="Create a new Quality Profile" href="/SQP/images/4-newqp.png"><img alt="Create a new Quality Profile" src="/SQP/images/4-newqp.png" /></a></div></p>
+<p>Create a new profile and name it what ever you want I used: <code>Bluray|IMAX-E|2160p</code></p>
+<p><div class="lightgallery"><a data-sub-html="Create a new Quality Profile" href="/SQP/images/5-newqp.png"><img alt="Create a new Quality Profile" src="/SQP/images/5-newqp.png" /></a></div></p>
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../includes/sqp/merge-qualities.md -->
@@ -2159,38 +2160,39 @@
 <p>=&gt; <a href="/Radarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">How to Merge Quality</a></p>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-merge-qualities.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-merge-qualities.md -->
 <h5 id="merge-the-following-qualities-together">Merge the following Qualities together<a class="headerlink" href="#merge-the-following-qualities-together" title="Permanent link"></a></h5>
 <ul>
 <li>WEBDL-2160p</li>
 <li>WEBRip-2160p</li>
+<li>Bluray-2160p</li>
 <li>WEBDL-1080p</li>
 <li>WEBRip-1080p</li>
 </ul>
-<p>and name it what ever you want I used: <code>WEB|2160p</code></p>
-<p><div class="lightgallery"><a data-sub-html="Merge the following Qualities together" href="/SQP/images/4-merge-qualities.png"><img alt="Merge the following Qualities together" src="/SQP/images/4-merge-qualities.png" /></a></div></p>
+<p>and name it what ever you want I used: <code>WEB|Bluray|2160p</code></p>
+<p><div class="lightgallery"><a data-sub-html="Merge the following Qualities together" href="/SQP/images/5-merge-qualities.png"><img alt="Merge the following Qualities together" src="/SQP/images/5-merge-qualities.png" /></a></div></p>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-select-qualities.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-select-qualities.md -->
 <h4 id="select-the-following-qualities">Select the following qualities<a class="headerlink" href="#select-the-following-qualities" title="Permanent link"></a></h4>
 <ul>
-<li>The merged quality profile: <code>WEBDL|2160p</code></li>
+<li>The merged quality profile: <code>WEB|Bluray|2160p</code></li>
 <li><code>Remux-1080p</code></li>
 </ul>
-<p><div class="lightgallery"><a data-sub-html="Select the following qualities" href="/SQP/images/4-select-qualities.png"><img alt="Select the following qualities" src="/SQP/images/4-select-qualities.png" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="Select the following qualities" href="/SQP/images/5-select-qualities.png"><img alt="Select the following qualities" src="/SQP/images/5-select-qualities.png" /></a></div></p>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-qp-settings.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-qp-settings.md -->
 <h4 id="quality-profile-settings">Quality Profile Settings<a class="headerlink" href="#quality-profile-settings" title="Permanent link"></a></h4>
 <ul>
 <li><strong>Enable:</strong> <code>Upgrades Allowed</code></li>
-<li><strong>Upgrade Until Quality:</strong> <code>WEBDL|2160p</code></li>
+<li><strong>Upgrade Until Quality:</strong> <code>WEB|Bluray|2160p</code></li>
 <li><strong>Minimum Custom Format Score:</strong> <code>10</code></li>
 <li><strong>Upgrade Until Custom Format Score:</strong> <code>10000</code></li>
 </ul>
 <details class="check">
 <summary>example - [CLICK TO EXPAND]</summary>
-<p><div class="lightgallery"><a data-sub-html="Quality Profile Settings" href="/SQP/images/4-qp-settings.png"><img alt="Quality Profile Settings" src="/SQP/images/4-qp-settings.png" /></a></div></p>
+<p><div class="lightgallery"><a data-sub-html="Quality Profile Settings" href="/SQP/images/5-qp-settings.png"><img alt="Quality Profile Settings" src="/SQP/images/5-qp-settings.png" /></a></div></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
@@ -2202,7 +2204,7 @@
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-cf-scoring.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-cf-scoring.md -->
 <h4 id="custom-formats-and-scores">Custom Formats and scores<a class="headerlink" href="#custom-formats-and-scores" title="Permanent link"></a></h4>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="summary">
@@ -2420,7 +2422,6 @@
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
 <details class="summary">
 <summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
@@ -2443,6 +2444,21 @@
 <td>9f98181fe5a3fbeb0cc29340da2a468a</td>
 </tr>
 <tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01">UHD Bluray Tier 01</a></td>
+<td>2300</td>
+<td>4d74ac4c4db0b64bff6ce0cffef99bf0</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02">UHD Bluray Tier 02</a></td>
+<td>2200</td>
+<td>a58f517a70193f8e578056642178419d</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03">UHD Bluray Tier 03</a></td>
+<td>2100</td>
+<td>e71939fae578037e7aed3ee219bbe7c1</td>
+</tr>
+<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
 <td>1700</td>
 <td>c20f169ef63c5f40c2def54abaf4438e</td>
@@ -2460,11 +2476,9 @@
 </tbody>
 </table>
 <div class="admonition danger">
-<p class="admonition-title">- Don’t use HQ-xxx and Tiers together<br>- Remux Tier 01-02 replaces HQ-Remux<br>- Web Tier 01-03 replaces HQ-WEBDL</p>
+<p class="admonition-title">- Don’t use HQ-xxx or UHD (xxx) and Tiers together<br>- Remux Tier 01-02 replaces HQ-Remux<br>- UHD Bluray Tier 01-03 replaces UHD (xxx)<br>- Web Tier 01-03 replaces HQ-WEBDL</p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <!-- BEGIN INCLUDE ../../includes/sqp/uhd-radarr-misc.md -->
 <details class="summary">
 <summary>Misc - [CLICK TO EXPAND]</summary>
@@ -2714,7 +2728,7 @@ Also they often even rename the release name in to Portuguese.</li>
 
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/4-quality-size.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/5-quality-size.md -->
 <h3 id="quality-size">Quality Size<a class="headerlink" href="#quality-size" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Quality</code></p>
 <table>
@@ -2751,6 +2765,11 @@ Also they often even rename the release name in to Portuguese.</li>
 <td>50.8</td>
 <td>400</td>
 </tr>
+<tr>
+<td>Bluray-2160p</td>
+<td>102</td>
+<td>400</td>
+</tr>
 </tbody>
 </table>
 <p>The reason why you don't see the <code>Preferred</code> score in the table above is because we want max quality anyway. So set it as high as possible.</p>
@@ -2770,7 +2789,7 @@ Also they often even rename the release name in to Portuguese.</li>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 2, 2022 20:01:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 8, 2022 15:07:57</span>
       
     
   </small>
@@ -2809,7 +2828,7 @@ Also they often even rename the release name in to Portuguese.</li>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UHD Remux|IMAX-E (SQP-3)" rel="prev">
+        <a href="../4/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UHD WEBDL|IMAX-E (SQP-4)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2818,20 +2837,20 @@ Also they often even rename the release name in to Portuguese.</li>
               <span class="md-footer__direction">
                 Previous
               </span>
-              UHD Remux|IMAX-E (SQP-3)
+              UHD WEBDL|IMAX-E (SQP-4)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../5/" class="md-footer__link md-footer__link--next" aria-label="Next: UHD Remux|Bluray|IMAX-E (SQP-2)" rel="next">
+        <a href="../../Sonarr/" class="md-footer__link md-footer__link--next" aria-label="Next: Home" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              UHD Remux|Bluray|IMAX-E (SQP-2)
+              Home
             </div>
           </div>
           <div class="md-footer__button md-icon">
