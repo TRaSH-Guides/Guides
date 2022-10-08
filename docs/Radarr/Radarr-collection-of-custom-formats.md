@@ -71,10 +71,10 @@ I also made 3 guides related to this one.
 | [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR Scene Groups](#fr-scene-groups) |
 | [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR LQ](#fr-lq)                     |
 | [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                     |
+| [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VQ](#vq)                     |                                     |
 | [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                     |
-| [Dutch Groups](#dutch-groups)  |                                     | [VQ](#vq)                     |                                     |
-|                                |                                     | [VFB](#vfb)                   |                                     |
 |                                |                                     | [VOSTFR](#vostfr)             |                                     |
+|                                |                                     | [VFB](#vfb)                   |                                     |
 
 ------
 
@@ -1035,6 +1035,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/retags.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Scene
+
+??? faq "Scene - [CLICK TO EXPAND]"
+
+    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/scene.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
