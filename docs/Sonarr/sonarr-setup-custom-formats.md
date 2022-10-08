@@ -1,3 +1,5 @@
+--8<-- "includes/sonarrv4-disclaimer.md"
+
 # How to setup Custom Formats
 
 So what's the best way to setup the Custom Profiles and which one to use with which scores?
