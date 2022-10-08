@@ -33,16 +33,16 @@
     },
     {
       "name": "BBQ",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-BBQ\\b"
+        "value": "\\b(BBQ)\\b"
       }
     },
     {
       "name": "BMF",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -51,7 +51,7 @@
     },
     {
       "name": "c0kE",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -60,7 +60,7 @@
     },
     {
       "name": "Chotab",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -69,7 +69,7 @@
     },
     {
       "name": "CRiSC",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -78,7 +78,7 @@
     },
     {
       "name": "CtrlHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -87,7 +87,7 @@
     },
     {
       "name": "D-Z0N3",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -96,7 +96,7 @@
     },
     {
       "name": "Dariush",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -105,7 +105,7 @@
     },
     {
       "name": "decibeL",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -114,16 +114,16 @@
     },
     {
       "name": "DON",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-DON\\b"
+        "value": "\\b(DON)\\b"
       }
     },
     {
       "name": "EA",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -132,7 +132,7 @@
     },
     {
       "name": "EbP",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -141,7 +141,7 @@
     },
     {
       "name": "EDPH",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -150,16 +150,16 @@
     },
     {
       "name": "Geek",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "-Geek\\b"
+        "value": "\\b(Geek)\\b"
       }
     },
     {
       "name": "HiSD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -168,7 +168,7 @@
     },
     {
       "name": "iFT",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -177,7 +177,7 @@
     },
     {
       "name": "LolHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -186,7 +186,7 @@
     },
     {
       "name": "NCmt",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -195,7 +195,7 @@
     },
     {
       "name": "NTb",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -204,7 +204,7 @@
     },
     {
       "name": "PTer",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -213,7 +213,7 @@
     },
     {
       "name": "QOQ",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -222,7 +222,7 @@
     },
     {
       "name": "SA89",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -231,7 +231,7 @@
     },
     {
       "name": "sbR",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -240,7 +240,7 @@
     },
     {
       "name": "TayTO",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -249,7 +249,7 @@
     },
     {
       "name": "TDD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -258,7 +258,7 @@
     },
     {
       "name": "TnP",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -267,7 +267,7 @@
     },
     {
       "name": "VietHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -276,7 +276,7 @@
     },
     {
       "name": "ZQ",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
