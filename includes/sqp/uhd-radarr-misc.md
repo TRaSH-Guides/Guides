@@ -8,7 +8,7 @@
     ------
     Breakdown and Why
 
-    - `x264` has a score of `-10000` because we only want the UHD versions of the `WEBDL-1080p`
+    - `x264` has a score of `-10000` because we only want the HDR/DV versions of the `WEBDL-1080p`
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 

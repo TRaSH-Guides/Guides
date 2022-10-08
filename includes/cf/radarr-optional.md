@@ -7,7 +7,7 @@
     | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                 | {{ radarr['cf']['obfuscated']['trash_score'] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
     | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
-    | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                     | 0                                                    | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
+    | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                     | :interrobang:                                        | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
 
     ------
 

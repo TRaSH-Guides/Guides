@@ -1,3 +1,5 @@
+--8<-- "includes/sonarrv4-disclaimer.md"
+
 # Collection of Custom Formats
 
 Here I will try to list a collection of the most needed and commonly used Custom Formats.

@@ -120,12 +120,7 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
-    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | 0                                             | {{ radarr['cf']['hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | {{ radarr['cf']['hq']['trash_score'] }}       | {{ radarr['cf']['hq']['trash_id'] }}       |
+{! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile, being with encodes I prefer higher video quality. If you also want HD audio formats I would suggest to go for the Remuxes.
 
@@ -137,7 +132,7 @@ Use the following main settings in your profile.
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Bluray-1080p when available.
@@ -172,12 +167,7 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
-    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                             | {{ radarr['cf']['hq']['trash_id'] }}       |
+{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
 Use the following main settings in your profile.
 
@@ -187,7 +177,7 @@ Use the following main settings in your profile.
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Remux-1080p when available.
@@ -218,12 +208,7 @@ For this Quality Profile we're going to make use of the following Custom Formats
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-??? summary "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                   | Score                                         | Trash ID                                   |
-    | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
-    | [{{ radarr['cf']['hq-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-webdl) | {{ radarr['cf']['hq-webdl']['trash_score'] }} | {{ radarr['cf']['hq-webdl']['trash_id'] }} |
-    | [{{ radarr['cf']['hq-remux']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq-remux) | {{ radarr['cf']['hq-remux']['trash_score'] }} | {{ radarr['cf']['hq-remux']['trash_id'] }} |
-    | [{{ radarr['cf']['hq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hq)             | 0                                             | {{ radarr['cf']['hq']['trash_id'] }}       |
+{! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
 Use the following main settings in your profile.
 
@@ -231,7 +216,7 @@ Use the following main settings in your profile.
 
 !!! attention "Make sure you don't check the BR-DISK."
 
-??? example "The following workflow will be applied:"
+??? example "The following workflow logic will be applied:"
 
     - It will download WEB-DL 2160p for the streaming movies you see more often lately.
     - It will upgrade to Remux-2160p when available.
