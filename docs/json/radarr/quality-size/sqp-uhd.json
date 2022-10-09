@@ -5,13 +5,13 @@
   "qualities": [
       {
           "quality": "WEBDL-1080p",
-          "min": 25.2,
+          "min": 17.1,
           "preferred": 399,
           "max": 400
       },
       {
           "quality": "WEBRip-1080p",
-          "min": 25.2,
+          "min": 17.1,
           "preferred": 399,
           "max": 400
       },
