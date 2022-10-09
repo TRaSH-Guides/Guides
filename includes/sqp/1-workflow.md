@@ -28,4 +28,4 @@
         - Good quality
         - No Dolby Vision
 
-        Biggest drawback if you don't have access to the top tier indexers you won't have access to all BHDStudio releases.
+        Biggest drawback if you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and in that case you might need to choose a few of the optional variables.
