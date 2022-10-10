@@ -42,7 +42,7 @@ I will only explain the so called most important paths.
 | `Port`        | Port to connect to.                                                                    |
 | `Password`    | Password to use for authentication.                                                    |
 | `Encryption`  | Encrypted server connection (TLS/SSL). (preferred to use this)                         |
-| `Connections` | Use the lowest possible amount of connections +1 to gain your max download speed.      |
+| `Connections` | Use the lowest possible number of connections for max download speed +1                |
 | `Retention`   | How long the articles are stored on the news server.                                   |
 
 ## CATEGORIES
