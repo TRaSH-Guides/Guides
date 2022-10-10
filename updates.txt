@@ -1,3 +1,7 @@
+# 2022-10-10 18:05
+**[Radarr]**
+- Add: WEB-720p quality file size to SQP-1 (#access-to-sqp for more info). #896
+
 # 2022-10-10 17:31
 **[Guide - Downloaders]**
 - Updated: Better description for number of connections. #895
