@@ -48,32 +48,33 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted              | HQ Source Groups      | Streaming Services     |
-| --------------------------------------------- | --------------------- | --------------------- | ---------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [HQ-Remux](#hq-remux) | [Amazon](#amzn)        |
-| [Remaster](#remaster)                         | [LQ](#lq)             | [HQ](#hq)             | [Apple TV+](#atvp)     |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [HQ-WEBDL](#hq-webdl) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) |                       | [HBO Max](#hmax)       |
-| [Criterion Collection](#criterion-collection) |                       |                       | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             |                       |                       | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                       |                       | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       |                       | [Paramount+](#pmtp)    |
-|                                               |                       |                       | [Movies Anywhere](#ma) |
+| Movie Versions                                | Unwanted              | HQ Release Groups                         | Streaming Services     |
+| --------------------------------------------- | --------------------- | ----------------------------------------- | ---------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)        |
+| [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
+| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
+| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
+| [IMAX](#imax)                                 |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
+|                                               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
+|                                               |                       | [WEB Tier 03](#web-tier-03)               |                        |
 
 ------
 
-| Misc                           | Optional                            | French Audio Version          | French Source Groups                  |
-| ------------------------------ | ----------------------------------- | ----------------------------- | ------------------------------------- |
+| Misc                           | Optional                            | French Audio Version          | French Source Groups                |
+| ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------- |
 | [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR HQ-Remux](#fr-hq-remux)         |
 | [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR HQ](#fr-hq)                     |
 | [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR HQ-WEBDL](#fr-hq-webdl)         |
 | [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR Scene Groups](#fr-scene-groups) |
 | [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR LQ](#fr-lq)                     |
-| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                       |
-| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                       |
-| [Dutch Groups](#dutch-groups)  |                                     | [VQ](#vq)                     |                                       |
-|                                |                                     | [VFB](#vfb)                   |                                       |
-|                                |                                     | [VOSTFR](#vostfr)             |                                       |
+| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                     |
+| [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VQ](#vq)                     |                                     |
+| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                     |
+|                                |                                     | [VOSTFR](#vostfr)             |                                     |
+|                                |                                     | [VFB](#vfb)                   |                                     |
 
 ------
 
@@ -1040,6 +1041,22 @@ I also made 3 guides related to this one.
 
 ------
 
+### Scene
+
+??? faq "Scene - [CLICK TO EXPAND]"
+
+    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### x265 (no HDR/DV)
 
 ??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
@@ -1188,54 +1205,176 @@ I also made 3 guides related to this one.
 
 ------
 
-## HQ Source Groups
+## HQ Release Groups
 
 ------
 
-### HQ
+### Remux Tier 01
 
-<sub>HQ-Releases = HQ</sub>
+??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
 
-??? faq "HQ - [CLICK TO EXPAND]"
-
-    A collection of P2P groups that are known for their high quality releases.
+    - Groups doing remuxes with multiple sources(discs) mixing what's best.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hq.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-01.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### HQ-WEBDL
+### Remux Tier 02
 
-??? faq "HQ-WEBDL - [CLICK TO EXPAND]"
+??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
 
-    A personal collection of P2P WEB-DL groups that are known for their high quality releases.
+    - Groups that only use one source.(So called one disc wonders.)
+    - Groups that use use a automated way.
+    - Groups that don't check their stuff.
+    - Groups that haven't released much. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hq-webdl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-02.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### HQ-Remux
+### UHD Bluray Tier 01
 
-??? faq "HQ-Remux - [CLICK TO EXPAND]"
+??? faq "UHD Bluray Tier 01 - [CLICK TO EXPAND]"
 
-    A personal collection of P2P Remux groups that are known for their high quality releases.
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both)
+    - HD Audio (Atmos, TrueHD etc...)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hq-remux.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### UHD Bluray Tier 02
+
+??? faq "UHD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both)
+    - HD Audio (Atmos, TrueHD etc...)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### UHD Bluray Tier 03
+
+??? faq "UHD Bluray Tier 03 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both)
+    - HD Audio (Atmos, TrueHD etc...)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/uhd-bluray-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HD Bluray Tier 01
+
+??? faq "HD Bluray Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HD Bluray Tier 02
+
+??? faq "HD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### WEB Tier 01
+
+??? faq "WEB Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups that create hybrids.
+    - Groups that sign up for the gentleman list on a certain private tracker.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### WEB Tier 02
+
+??? faq "WEB Tier 02 - [CLICK TO EXPAND]"
+
+    - placeholder
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### WEB Tier 03
+
+??? faq "WEB Tier 03 - [CLICK TO EXPAND]"
+
+    - placeholder
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/web-tier-03.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1808,7 +1947,7 @@ I also made 3 guides related to this one.
 
 ??? faq "Multi-French - [CLICK TO EXPAND]"
 
-    Recognised movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custome format.
+    Recognize movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1824,7 +1963,7 @@ I also made 3 guides related to this one.
 
 ??? faq "Multi-Audio - [CLICK TO EXPAND]"
 
-    A sliglthly modified [Multi](#multi) Custom Formats that recognise VF and VO inside the name.
+    A slightly modified [Multi](#multi) Custom Formats that recognize VF and VO inside the name.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -1840,7 +1979,7 @@ I also made 3 guides related to this one.
 
 ??? faq "French Audio - [CLICK TO EXPAND]"
 
-    This will recognised every kind of French Audio.
+    This will recognize every kind of French Audio.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

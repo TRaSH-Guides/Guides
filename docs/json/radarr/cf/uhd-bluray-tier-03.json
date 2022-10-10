@@ -5,12 +5,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "BiTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BiTOR)\\b"
+      }
+    },
+    {
       "name": "LEGi0N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bLEGi0N\\b"
+        "value": "\\b(LEGi0N)\\b"
       }
     },
     {
@@ -19,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bWEBDV\\b"
+        "value": "\\b(WEBDV)\\b"
       }
     },
     {

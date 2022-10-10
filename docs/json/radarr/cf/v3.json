@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(\\b|\\d)(v3)\\bb"
+        "value": "(\\b|\\d)(v3)\\b"
       }
     }
   ]
