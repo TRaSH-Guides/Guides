@@ -1,3 +1,7 @@
+# 2022-10-10 17:31
+**[Guide - Downloaders]**
+- Updated: Better description for number of connections. #895
+
 # 2022-10-09
 **[Guide - Synology]**
 - Added: Warning for Automated script to use it only for initial setup. #852
