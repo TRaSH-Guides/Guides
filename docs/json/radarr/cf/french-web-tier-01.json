@@ -86,6 +86,15 @@
       }
     },
     {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ONLYMOViE)\\b"
+      }
+    },
+    {
       "name": "Psaro",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
