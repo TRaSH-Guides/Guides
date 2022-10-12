@@ -1,4 +1,7 @@
 ??? summary "Audio - [CLICK TO EXPAND]"
+
+    ![!HDR Formats Flowchart](/Radarr/images/audio-flowchart.png)
+
     | Custom Format                                                                                           | Score                                          | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
     | [{{ sonarr['cf']['truehd-atmos']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#truehd-atmos)       | {{ sonarr['cf']['truehd-atmos']['trash_score'] }}    | {{ sonarr['cf']['truehd-atmos']['trash_id'] }}    |
