@@ -1,3 +1,37 @@
+# 2022-10-12 19:25
+**[Guide - Starr Custom Formats]
+- Added: Audio Flowchart (Hopefully to make the logic/choices more clear). #898
+- Added: HDR Formats Flowchart (Hopefully to make the logic/choices more clear). #898
+
+# 2022-10-10 18:05
+**[Radarr]**
+- Add: WEB-720p quality file size to SQP-1 (#access-to-sqp for more info). #896
+
+# 2022-10-10 17:31
+**[Guide - Downloaders]**
+- Updated: Better description for number of connections. #895
+
+# 2022-10-09
+**[Guide - Synology]**
+- Added: Warning for Automated script to use it only for initial setup. #852
+
+**[Downloaders]**
+- Added: `replace_for` script for SABnzbd and NZBGet to prevent download loops with poorly named releases. #850
+
+**[Radarr]**
+- Fixed: CF `[IMAX]` to prevent double naming. #858
+- Updated: SQP 1-5 (#access-to-sqp for more info). #865 #885 #886
+- Deleted: CF `UHD (rlsgrp)` => replaced by the `UHD Bluray Tier` ones. #883
+- Replaced: `ReleaseTitleSpecification` to `ReleaseGroupSpecification`, this will result in breakage for anyone not running the latest version of Radarr. #883
+- Added: RlsGrp `BiTOR` to `[UHD Bluray Tier 03]`. #883
+- Updated: CF `[Extras]` to include `Bonus`. #887
+- Updated: Lowered Quality Size for 1080p WEB. #890
+
+**[Starr]**
+- Fixed: Several Anime version CF's. #875
+- Fixed: CF `[DTS-HD MA]` removed `DTS` negation (With a release tagged as DTS but detected on import as DTS-HD MA, no CFs will be applied to the file on disk because of the Basic DTS negation. This results in a grab/upgrade loop.) #878
+- Fixed: CF `[Scene]`. #883
+
 # 2022-09-29
 **[Radarr]**
 - Added: UHD Tier 01 - 03 (SQP). #845

@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Repack2"
+        "value": "\\b(Repack2)\\b"
       }
     }
   ]
