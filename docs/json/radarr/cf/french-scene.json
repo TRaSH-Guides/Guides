@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AiRDOCS|AiRLiNE|AiRTV|AKLHD|AZR)\\b"
+        "value": "\\b(AiRDOCS|AiRLiNE|AiRTV|AKLHD|ANMWR|AYMO|AZR)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BRiNK)\\b"
+        "value": "\\b(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CARAPiLS|CiELOS|CMBHD|COUAC|CRYPT0)\\b"
+        "value": "\\b(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D4KiD|DEAL|DiEBEX|DUSS)\\b"
+        "value": "\\b(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(EUBDS)\\b"
+        "value": "\\b(ENJOi|EUBDS)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2)\\b"
+        "value": "\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FWDHD)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HERC|HYBRiS|HyDe)\\b"
+        "value": "\\b(HERC|HiRoSHiMa|HYBRiS|HyDe)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST)\\b"
+        "value": "\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB)\\b"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(OBSTACLE|OohLaLa)\\b"
+        "value": "\\b(OBSTACLE|OohLaLa|OOKAMI)\\b"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL)\\b"
+        "value": "\\b(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)\\b"
       }
     },
     {
@@ -163,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)\\b"
+        "value": "\\b(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)\\b"
       }
     },
     {
@@ -172,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(UKDHD|UKDTV|ULSHD|Ulysse|USURY)\\b"
+        "value": "\\b(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY)\\b"
       }
     },
     {
@@ -181,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VENUE|VoMiT)\\b"
+        "value": "\\b(VENUE|VFC|VoMiT)\\b"
       }
     },
     {
@@ -199,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ZEST)\\b"
+        "value": "\\b(ZEST|ZiRCON)\\b"
       }
     }
   ]
