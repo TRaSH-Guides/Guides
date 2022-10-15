@@ -63,18 +63,18 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                           | Optional                            | French Audio Version          | French Source Groups                |
-| ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------- |
-| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR HQ-Remux](#fr-hq-remux)         |
-| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR HQ](#fr-hq)                     |
-| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR HQ-WEBDL](#fr-hq-webdl)         |
-| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR Scene Groups](#fr-scene-groups) |
-| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR LQ](#fr-lq)                     |
-| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   |                                     |
-| [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VQ](#vq)                     |                                     |
-| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFQ](#vfq)                   |                                     |
-|                                |                                     | [VOSTFR](#vostfr)             |                                     |
-|                                |                                     | [VFB](#vfb)                   |                                     |
+| Misc                           | Optional                            | French Audio Version          | French Source Groups                            |
+| ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------------------- |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-02) |
+| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                |                                     | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                                |                                     | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 
 ------
 
@@ -2107,50 +2107,138 @@ I also made 3 guides related to this one.
 
 ------
 
-### FR HQ
+### FR Remux Tier 01
 
-<sub>French HQ-Releases = FR HQ</sub>
+??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
 
-??? faq "FR HQ - [CLICK TO EXPAND]"
-
-    A collection of French P2P groups that are known for their high quality releases.
+    - Groups doing remuxes with multiple sources (discs) mixing what's best.
+    - Groups active doing remuxes from a single sources (discs).
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### FR HQ-WEBDL
+### FR Remux Tier 02
 
-??? faq "FR HQ-WEBDL - [CLICK TO EXPAND]"
+??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
 
-    A personal collection of French P2P WEB-DL groups that are known for their high quality releases.
+    - Groups that use an automated way.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq-webdl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-remux-tier-02.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
 ------
 
-### FR HQ-Remux
+### FR UHD Bluray Tier 01
 
-??? faq "FR HQ-Remux - [CLICK TO EXPAND]"
+??? faq "FR UHD Bluray Tier 01 - [CLICK TO EXPAND]"
 
-    A personal collection of French P2P Remux groups that are known for their high quality releases.
+    (WiP - This Custom Formats should be considered in alpha stage)
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both).
+    - HD Audio (Atmos, TrueHD etc...).
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hq-remux.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR UHD Bluray Tier 02
+
+??? faq "FR UHD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    (WiP - This Custom Formats should be considered in alpha stage)
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both).
+    - HD Audio (Atmos, TrueHD etc...).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-uhd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR HD Bluray Tier 01
+
+??? faq "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that have a minimum of GP releases (best encode in it's class 1080p and lower).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR HD Bluray Tier 02
+
+??? faq "FR HD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-hd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR WEB Tier 01
+
+??? faq "FR WEB Tier 01 - [CLICK TO EXPAND]"
+
+    - placeholder
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR WEB Tier 02
+
+??? faq "FR WEB Tier 02 - [CLICK TO EXPAND]"
+
+    - placeholder
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
