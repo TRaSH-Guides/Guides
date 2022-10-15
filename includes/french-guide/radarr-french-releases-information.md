@@ -1,7 +1,7 @@
 !!! warning "Information regarding 2160p releases"
     It should be noted that many problems can arise from this profile if you use the HD audio Custom Formats, as:
 
-    - French Scene rules assert that the French Audio should be the first (default) audio in a MULTi release. 
+    - French Scene rules assert that the French Audio should be the first (default) audio in a MULTi release.
     - Rules acknowledge that only the best audio should be noted in the title (will it be the original or the FR audio).
     - Some movies (and TV shows, mostly pre-Streaming era) does not always have an equivalent FR audio than the original highest one.
 
