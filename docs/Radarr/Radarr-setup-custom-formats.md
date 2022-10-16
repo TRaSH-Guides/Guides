@@ -1,12 +1,12 @@
 # How to setup Custom Formats
 
+Or how to setup your quality profile
+
 So what's the best way to setup the Custom Profiles and which one to use with which scores?
 
 There isn't a best setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
 
 Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.
-
---8<-- "includes/cf/score-attention.md"
 
 ------
 
