@@ -2,6 +2,7 @@ nav:
     - Home: index.md
     - Radarr
     - Sonarr
+    - Prowlarr
     - Bazarr
     - Downloaders
     - Plex
