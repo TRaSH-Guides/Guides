@@ -1,2 +1,3 @@
 nav:
     - Home: index.md
+    - How to setup proxy for certain indexers: prowlarr-setup-proxy.md
