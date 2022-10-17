@@ -3,6 +3,7 @@
 [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr){:target="_blank" rel="noopener noreferrer"} is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
 
 !!! info
+
     - A FlareSolverr Proxy will only be used for requests if and only if Cloudflare is detected by Prowlarr
     - A FlareSolverr Proxy will only be used for requests if and only if the Proxy and the Indexer have matching tags
     - A Flaresolverr Proxy configured without any tags or has no indexers with matching tags it will be disabled.
