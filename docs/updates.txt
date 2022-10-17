@@ -1,3 +1,8 @@
+# 2022-10-12 19:25
+**[Guide - Starr Custom Formats]**
+- Added: Audio Flowchart (Hopefully to make the logic/choices more clear). #898
+- Added: HDR Formats Flowchart (Hopefully to make the logic/choices more clear). #898
+
 # 2022-10-10 18:05
 **[Radarr]**
 - Add: WEB-720p quality file size to SQP-1 (#access-to-sqp for more info). #896
