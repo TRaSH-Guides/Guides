@@ -25,11 +25,11 @@ Please check your used docker image how to enable privoxy.
 
 Click on the + sign and select `http`
 
-![!Add Indexers](images/add-indexer-proxy-http.png)
+![Add Indexers](images/add-indexer-proxy-http.png)
 
 Add the following info
 
-![!Add Proxy http](images/add-proxy-http.png)
+![Add Proxy http](images/add-proxy-http.png)
 
 1. Name of the Proxy in Prowlarr.
 1. The tags for this proxy. Proxies apply to all matching (same tag) indexers. If blank this proxy applies to all indexers.
@@ -44,11 +44,11 @@ Add the following info
 
 Select the indexer that you want to use with Privoxy
 
-![!Select Indexer](images/select-indexer.png)
+![Select Indexer](images/select-indexer.png)
 
 Scroll down to the bottom and add the tag you've set up earlier at step 2.
 
-![!Add tag to indexer](images/add-tag-to-indexer-privoxy.png)
+![Add tag to indexer](images/add-tag-to-indexer-privoxy.png)
 
 Click `Test` and `Save`.
 

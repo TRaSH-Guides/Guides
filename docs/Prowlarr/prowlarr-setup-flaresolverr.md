@@ -20,11 +20,11 @@ Please follow the installation instruction from [FlareSolverr](https://github.co
 
 Click on the + sign and select `FlareSolverr`
 
-![!Add Indexers](images/add-indexer-proxy-flaresolverr.png)
+![Add Indexers](images/add-indexer-proxy-flaresolverr.png)
 
 Add the following info
 
-![!Add Proxy FlareSolverr](images/add-proxy-flaresolverr.png)
+![Add Proxy FlareSolverr](images/add-proxy-flaresolverr.png)
 
 1. Name of the Proxy in Prowlarr.
 1. The tags for this proxy.
@@ -37,11 +37,11 @@ Add the following info
 
 Select the indexer that you want to use with FlareSolverr
 
-![!Select Indexer](images/select-indexer.png)
+![Select Indexer](images/select-indexer.png)
 
 Scroll down to the bottom and add the tag you've set up earlier at step 2.
 
-![!Add tag to indexer](images/add-tag-to-indexer-flaresolverr.png)
+![Add tag to indexer](images/add-tag-to-indexer-flaresolverr.png)
 
 Click `Test` and `Save`.
 
