@@ -33,7 +33,6 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.highlight
   - pymdownx.tilde
-  - lightgallery
   - codehilite:
       guess_lang: true
   - toc:
@@ -55,6 +54,7 @@ plugins:
       locale: en
   #    fallback_to_build_date: false
   - awesome-pages
+  - glightbox
   - macros:
       j2_block_start_string: "[[%"
       j2_block_end_string: "%]]"
