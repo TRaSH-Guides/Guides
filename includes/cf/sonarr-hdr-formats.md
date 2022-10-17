@@ -1,4 +1,7 @@
 ??? summary "HDR Formats - [CLICK TO EXPAND]"
+
+    ![!HDR Formats Flowchart](/Radarr/images/hdr-formats-flowchart.png)
+
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
     | [{{ sonarr['cf']['dv-hdr10']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10)           | {{ sonarr['cf']['dv-hdr10']['trash_score'] }}      | {{ sonarr['cf']['dv-hdr10']['trash_id'] }}      |
