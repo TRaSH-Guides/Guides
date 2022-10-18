@@ -119,8 +119,8 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 ## Acknowledgements
 
 - A big Thanks to all the people that helped me testing those profile and formats (and continue to do so).
-  - Special one to MySuperChef and PrL for their time and explanations.
-  - Special one to Piou and Wikoul who are potentially now in an asylum due to the amount of testing.
+- Special one to MySuperChef and PrL for their time and explanations.
+- Special one to Piou and Wikoul who are potentially now in an asylum due to the amount of testing.
 - [TRaSH](https://trash-guides.info/), for granting me a small space on his guide for this, his knowledge and his friendliness.
 
 --8<-- "includes/support.md"
