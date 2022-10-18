@@ -3,7 +3,7 @@
 
     - French Scene rules assert that the French Audio should be the first (default) audio in a MULTi release.
     - Rules acknowledge that only the best audio should be noted in the title (will it be the original or the FR audio).
-    - Some movies (and TV shows, mostly pre-Streaming era) does not always have an equivalent FR audio than the original highest one.
+    - Some movies (and TV shows, mostly pre-Streaming era) does not have an equivalent FR audio than the original highest one.
 
     Resulting on the following:
 
@@ -12,4 +12,5 @@
     - Radarr will only score pre-import audio by the release title. Post-import by the release's first (default) audio (after ffprobe).
     - Final score from the release can be lower than pre-import.
 
-    !!! tip "This is why the Group tiers exist, it try to get hold of the groups that tend to get the best original and French audio for a release. However, it is not bullet proof."
+    !!! tip 
+        This is why the Group tiers exist, it try to get hold of the groups that tend to get the best original and French audio for a release. However, it is not bullet proof and again a movie potentially does not have an equivalent FR audio than the original highest one.
