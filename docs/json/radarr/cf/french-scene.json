@@ -5,12 +5,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "#",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(4FR)\\b"
+      }
+    },
+    {
       "name": "A",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AiRDOCS|AiRLiNE|AiRTV|AKLHD|ANMWR|AYMO|AZR)\\b"
+        "value": "\\b(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AKLHD|AMB3R|ANMWR|AVON|AYMO|AZR)\\b"
       }
     },
     {
@@ -55,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FWDHD)\\b"
+        "value": "\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)\\b"
       }
     },
     {
@@ -64,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GHOULS|GiMNAP|GLiMMER|Goatlove)\\b"
+        "value": "\\b(GHOULS|GiMBAP|GLiMMER|Goatlove)\\b"
       }
     },
     {
@@ -82,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(JMT|JUSTICELEAGUE)\\b"
+        "value": "\\b(JMT|JoKeR|JUSTICELEAGUE)\\b"
       }
     },
     {
@@ -109,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MORELAND|MUNSTER|MUxHD)\\b"
+        "value": "\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)\\b"
       }
     },
     {
@@ -145,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROUGH|Ryotox)\\b"
+        "value": "\\b(ROUGH|RUDE|Ryotox)\\b"
       }
     },
     {
