@@ -241,6 +241,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Prowlarr/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Prowlarr/prowlarr-setup-flaresolverr/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Prowlarr/prowlarr-setup-proxy/</loc>
+         <lastmod>2022-10-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Radarr/</loc>
          <lastmod>2022-10-18</lastmod>
          <changefreq>daily</changefreq>
