@@ -68,6 +68,15 @@
       }
     },
     {
+      "name": "ROMKENT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ROMKENT)\\b"
+      }
+    },
+    {
       "name": "Sicario",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

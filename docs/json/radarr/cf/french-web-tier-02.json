@@ -32,6 +32,15 @@
       }
     },
     {
+      "name": "BEO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BEO)\\b"
+      }
+    },
+    {
       "name": "FCK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -77,21 +86,12 @@
       }
     },
     {
-      "name": "MOONLY",
+      "name": "NEO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MOONLY)\\b"
-      }
-    },
-    {
-      "name": "NoNe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(NoNe)\\b"
+        "value": "\\b(NEO)\\b"
       }
     },
     {

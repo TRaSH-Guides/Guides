@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "BEO",
+      "name": "ARK01",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BEO)\\b"
+        "value": "\\b(ARK01)\\b"
       }
     },
     {
@@ -68,6 +68,15 @@
       }
     },
     {
+      "name": "MOONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MOONLY)\\b"
+      }
+    },
+    {
       "name": "MTDK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -77,12 +86,12 @@
       }
     },
     {
-      "name": "NEO",
+      "name": "NoNe",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NEO)\\b"
+        "value": "\\b(NoNe)\\b"
       }
     },
     {
