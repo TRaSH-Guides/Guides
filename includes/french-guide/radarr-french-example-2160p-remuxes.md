@@ -29,7 +29,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-french-profile-2160p-remuxes.png)
+![!cf-profile-encodes](/Radarr/images/cf-french-profile-2160p-remuxes.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 

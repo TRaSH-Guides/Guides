@@ -51,7 +51,7 @@ There is two options:
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
-- Disregard any mention for the [MULTi Custom Formats](../../includes/french-guide/radarr-french-multi-audio.md).
+- Disregard any mention for the [MULTi Custom Formats](includes/french-guide/radarr-french-multi-audio.md).
 - Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a score of `1000`.
 
 ------
@@ -78,7 +78,7 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 Those are all optional and only there to rename your release or to avoid a certain type of French Audio, examples:
 
 - You do not want VFQ or VQ audio, in this case you will put them at `-10000` instead of `0`.
-- You only want VOSTFR, in this case you will disregard the [MULTi Custom Formats](../../includes/french-guide/radarr-french-multi-audio.md) and give this Custom Format a score of `1000`.
+- You only want VOSTFR, in this case you will disregard the [MULTi Custom Formats](includes/french-guide/radarr-french-multi-audio.md) and give this Custom Format a score of `1000`.
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version.md" !}
 

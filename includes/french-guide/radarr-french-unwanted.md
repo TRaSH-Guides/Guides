@@ -25,4 +25,4 @@
         - [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups), which can be controversial for people looking for MULTi release. I encourage you to not use it.
         - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), it may includes Scene groups already in [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups). Which is used for fallback to be sure to get a MULTi release.
 
-        {! include-markdown "../../includes/radarr-optional.md" !}
+        {! include-markdown "../../includes/cf/radarr-optional.md" !}

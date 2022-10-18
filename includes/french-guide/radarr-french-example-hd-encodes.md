@@ -32,7 +32,7 @@ If you prefer HQ Encodes (Bluray-720/1080p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-french-profile-1080p-encodes.png)
+![!cf-profile-encodes](/Radarr/images/cf-french-profile-1080p-encodes.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 

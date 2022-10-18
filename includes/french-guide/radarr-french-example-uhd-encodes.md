@@ -4,7 +4,7 @@ If you prefer UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
@@ -41,7 +41,7 @@ If you prefer UHD Encodes (Bluray-2160p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-french-profile-2160p-encodes.png)
+![!cf-profile-encodes](/Radarr/images/cf-french-profile-2160p-encodes.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 

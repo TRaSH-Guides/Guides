@@ -31,7 +31,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-french-profile-1080p-remuxes.png)
+![!cf-profile-encodes](/Radarr/images/cf-french-profile-1080p-remuxes.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 
