@@ -1,6 +1,6 @@
 # Setup proxy for certain indexers
 
-It's not recommend to run the Starr apps though a VPN,  what can happen is that the Starr apps doesn't update the posters or metadata or you can't add new movies/tv shows, it doesn't need to happen right away. but sooner or later it can and probably will happen.
+It's not recommended to run the Starr apps through a VPN,  what can happen is that the Starr apps doesn't update the posters or metadata or you can't add new movies/tv shows, it doesn't need to happen right away. but sooner or later it can and probably will happen.
 
 Just run VPN on the apps that actually need it, like your torrent client, and perhaps in some cases certain indexers because of region/ISP restriction.
 
