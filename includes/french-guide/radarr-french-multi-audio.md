@@ -7,13 +7,13 @@
 
     ??? info "Breakdown and Why - [CLICK TO EXPAND]"
 
-        - **{{ radarr['cf']['multi-audio']['name'] }}:** This is a custom format to help Radarr recognise MULTi audio release.
+        - **{{ radarr['cf']['multi-audio']['name'] }}:** This is a custom format to help Radarr recognize MULTi audio releases.
 
             !!! tip
                 You can safely replace the original [{{ radarr['cf']['multi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi) Custom Format from the Guide with it.
 
-        - **{{ radarr['cf']['french-audio']['name'] }}:** This is a custom format to help Radarr recognise release with French audio. It is optional and only give a small boost if the release indeed possess a French audio.
-        - **{{ radarr['cf']['multi-french']['name'] }}:** This is a custom format that will rename your file with 'Multi-French'.
+        - **{{ radarr['cf']['french-audio']['name'] }}:** This is a custom format to help Radarr recognize release with French audio. It is optional and only gives a small boost if the release indeed possesses French audio.
+        - **{{ radarr['cf']['multi-french']['name'] }}:** This is a custom format that will rename your file with `Multi-French`.
 
         !!! question "How it works"
-            When Radarr find a release with 'MULTi' in, it will allocate a {{ radarr['cf']['multi-audio']['trash_score'] }} score on it thanks to the **{{ radarr['cf']['multi-audio']['name'] }}** custom format. If the release indeed possess at least the original audio and French audio, it will be renamed by the **{{ radarr['cf']['multi-french']['name'] }}**. Allowing the release to keep the {{ radarr['cf']['multi-audio']['trash_score'] }} score from the {{ radarr['cf']['multi-audio']['name'] }}.
+            When Radarr finds a release with `MULTi`, it will allocate a {{ radarr['cf']['multi-audio']['trash_score'] }} score to it thanks to the **{{ radarr['cf']['multi-audio']['name'] }}** custom format. If the release contains at least both the original audio and French audio, it will be renamed by the **{{ radarr['cf']['multi-french']['name'] }}**. Allowing the release to keep the {{ radarr['cf']['multi-audio']['trash_score'] }} score from the {{ radarr['cf']['multi-audio']['name'] }} Custom Format.

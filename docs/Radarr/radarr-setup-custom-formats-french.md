@@ -3,11 +3,11 @@
 !!! note
     This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
 
-So what's the best way to setup the Custom Profiles and which one to use with which scores to get French and English Audio?
+So what is the best way to set up the Custom Profiles and which one to use with which scores to get French and English Audio?
 
-Keep in mind that most releases are MULTi (understand DUAL audio, original and French audio) and it will be difficult to only have French audio, unless you are willing to get 720p or you are only looking for French movies.
+Keep in mind that most releases are MULTi (understand DUAL audio, original and French audio) and it will be difficult to only have French audio, unless you are willing to get 720p, or you are only looking for French movies.
 
-Therefore you will need a slightly modified MULTi Custom Format than the one find in the original guide. This one also recognize VO and VFF in the name and rename the import. This is important for the score to match before and after the import and to avoid download loop.
+Therefore, you will need a slightly modified MULTi Custom Format than the one find in the original guide. This one also recognize VO and VFF in the name and rename the import. This is important for the score to match before and after the import and to avoid download loop.
 
 --8<-- "includes/cf/score-attention.md"
 
@@ -15,22 +15,22 @@ Therefore you will need a slightly modified MULTi Custom Format than the one fin
 
 ## Basics
 
-It is quite important that you follow and understand what is preconize by Trash's guide:
+It is quite important that you follow and understand what is envisioned by Trash's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Set up quality Profile to make use of the Custom Formats, as explained in [How to setup Custom Formats | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Custom Formats | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
 !!! warning "Mandatory"
 
-    The only change that is needed and **mandatory** for French Custom Formats to work is to put the preferred language profile for your releases to `Any`.
+    The only change that is needed and **mandatory** for French Custom Formats to work is to set the preferred language profile for your releases to `Any`.
 
     ??? check "Screenshot example - [CLICK TO EXPAND]"
         ![!cf-quality-profile-cf](images/cf-french-profile-language.png)
 
     !!! info
-        We do choose `Any` for the language profile as otherwise an English movies recognized with French audio in Radarr will not be grabbed and vice-versa.
+        We do choose `Any` for the language profile, as otherwise an English movie identified with French audio in Radarr will not be grabbed and vice-versa.
 
 ------
 
@@ -41,18 +41,18 @@ There is two options:
 ### Using Trash's guide and Bazarr
 
 !!! tip
-    This the preferred method.
+    This is the preferred method.
 
 - Go have a look at those examples: [How to setup Custom Formats | Examples section](/Radarr/Radarr-setup-custom-formats/#examples)
-- Setup [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
+- Set up [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
-- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a score of `1000`.
+- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
 
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
-- Disregard any mention for the **MULTi Custom Formats**.
-- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) with a score of `1000`.
+- Ignore any mention of **MULTi Custom Formats**. 
+- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
 
 ------
 
@@ -75,10 +75,10 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 ### French Audio Versions
 
-Those are all optional and only there to rename your release or to avoid a certain type of French Audio, examples:
+Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:
 
 - You do not want VFQ or VQ audio, in this case you will put them at `-10000` instead of `0`.
-- You only want VOSTFR, in this case you will disregard the **MULTi Custom Formats** and give this Custom Format a score of `1000`.
+- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version.md" !}
 
@@ -86,7 +86,7 @@ Those are all optional and only there to rename your release or to avoid a certa
 
 ### Releases you should avoid
 
-This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
+In my opinion, this is a must-have for every Quality Profile you use. All these Custom Formats make sure you don't get Low Quality Releases.
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted.md" !}
 
@@ -118,9 +118,9 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ## Acknowledgements
 
-- A big Thanks to all the people that helped me testing those profile and formats (and continue to do so).
-- Special one to MySuperChef and PrL for their time and explanations.
-- Special one to Piou and Wikoul who are potentially now in an asylum due to the amount of testing.
-- [TRaSH](https://trash-guides.info/), for granting me a small space on his guide for this, his knowledge and his friendliness.
+- A big thanks to all the people that helped me to test those profiles and formats (and continue to do so).
+- A special one to MySuperChef and PrL for their time and explanations.
+- A special one to Piou and Wikoul who are potentially both now in asylums due to the amount of testing.
+- [TRaSH](https://trash-guides.info/), for granting me a small space on his guide for this, his knowledge, and his friendliness.
 
 --8<-- "includes/support.md"

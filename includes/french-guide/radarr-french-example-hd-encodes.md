@@ -28,9 +28,9 @@ If you prefer HQ Encodes (Bluray-720/1080p)
         {! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
 
 !!! tip
-    `Audio Advanced` Custom Formats are not included, being with encodes higher video quality is preferred. If you also want HD audio formats I would suggest to go for the Remuxes.
+    `Audio Advanced` Custom Formats are not included, being with encodes higher video quality is preferred. If you also want HD audio formats, I would suggest going for the Remuxes.
 
-Use the following main settings in your profile.
+Use the following main settings in your profile:
 
 ![!cf-profile-encodes](/Radarr/images/cf-french-profile-1080p-encodes.png)
 
@@ -39,5 +39,5 @@ Use the following main settings in your profile.
 ??? example "Workflow - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
-    - It will upgrade till Bluray-1080p when available.
+    - It will upgrade to Bluray-1080p when available.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.

@@ -35,11 +35,11 @@ If you prefer UHD Encodes (Bluray-2160p)
         | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                  | {{ radarr['cf']['web-tier-03']['trash_score'] }}        | {{ radarr['cf']['web-tier-03']['trash_id'] }}        |
 
 !!! tip
-    `Audio Advanced` Custom Formats are not included, being with encodes higher video quality is preferred. If you also want HD audio formats I would suggest to go for the Remuxes.
+    `Audio Advanced` Custom Formats are not included, being with encodes higher video quality is preferred. If you also want HD audio formats, I would suggest going for the Remuxes.
 
     {! include-markdown "../../includes/french-guide/radarr-french-releases-information.md" !}
 
-Use the following main settings in your profile.
+Use the following main settings in your profile:
 
 ![!cf-profile-encodes](/Radarr/images/cf-french-profile-2160p-encodes.png)
 
@@ -48,6 +48,6 @@ Use the following main settings in your profile.
 ??? example "Workflow - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 2160p for the streaming movies you see more often lately.
-    - It will upgrade till Bluray-2160p when available.
+    - It will upgrade to Bluray-2160p when available.
     - It will fallback to the HQ Encodes (720/1080p) profile if no 2160p are available.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.

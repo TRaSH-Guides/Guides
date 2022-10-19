@@ -29,7 +29,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
     ??? info "Original mix (optional)"
         {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-Use the following main settings in your profile.
+Use the following main settings in your profile:
 
 ![!cf-profile-encodes](/Radarr/images/cf-french-profile-1080p-remuxes.png)
 
@@ -38,5 +38,5 @@ Use the following main settings in your profile.
 ??? example "Workflow - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
-    - It will upgrade till Remux-1080p when available.
+    - It will upgrade to Remux-1080p when available.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.

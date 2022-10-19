@@ -27,7 +27,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
     ??? info "Original mix (optional)"
         {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-Use the following main settings in your profile.
+Use the following main settings in your profile:
 
 ![!cf-profile-encodes](/Radarr/images/cf-french-profile-2160p-remuxes.png)
 
@@ -36,6 +36,6 @@ Use the following main settings in your profile.
 ??? example "Workflow - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 2160p for the streaming movies you see more often lately.
-    - It will upgrade till Remux-2160p when available.
+    - It will upgrade to Remux-2160p when available.
     - It will fallback to the 1080p Remuxes profile if no 2160p are available.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.

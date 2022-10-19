@@ -20,9 +20,9 @@
 
     ??? note "Optional - [CLICK TO EXPAND]"
 
-        This include optional Custom Formats made by Trash for the original guide, please be sure to understand what those do before adding them. Moreover, it includes two Custom Formats you may used at your own risk if you want MULTi:
+        This includes optional Custom Formats made by Trash for the original guide. Please be sure to understand what those do before adding them. Moreover, it includes two Custom Formats you may use at your own risk if you want MULTi:
 
         - [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups), which can be controversial for people looking for MULTi release. I encourage you to not use it.
-        - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), it may includes Scene groups already in [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups). Which is used for fallback to be sure to get a MULTi release.
+        - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), it may include Scene groups already in [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups) Custom Format. Which is used for fallback to be sure to get a MULTi release.
 
         {! include-markdown "../../includes/cf/radarr-optional.md" !}
