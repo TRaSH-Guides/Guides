@@ -1,3 +1,7 @@
+# 2022-10-20 22:35
+**[Sonarr]**
+- Fix: aggressive in Dislike release containing: 1-. #918
+
 # 2022-10-20 22:15
 **[SQP]**
 - Add: [SQP-1] Add also warning for plain IMAX.
