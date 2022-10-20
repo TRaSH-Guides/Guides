@@ -22,7 +22,7 @@
 
 ??? summary "Movie Versions - [CLICK TO EXPAND]"
 
-    !!! danger "Adding `IMAX`/`IMAX` Enhanced will replace the BHDStudio release :warning:"
+    !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release :warning:"
 
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
