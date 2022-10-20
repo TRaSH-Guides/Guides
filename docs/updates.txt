@@ -1,3 +1,7 @@
+# 2022-10-20 20:15
+**[Radarr] Removed add movie collection**
+- Removed: `Add a movie collection` => no longer valid. #915
+
 # 2022-10-18 21:20
 **[Prowlarr] Tips for Prowlarr**
 - NEW: How to Setup proxy for certain indexers. #905
