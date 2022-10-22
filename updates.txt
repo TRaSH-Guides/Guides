@@ -1,3 +1,7 @@
+# 2022-10-22 13:45
+**[Radarr]**
+- An update of the French guide and Custom Formats. #863
+
 # 2022-10-20 22:35
 **[Sonarr]**
 - Fix: aggressive in Dislike release containing: 1-. #918

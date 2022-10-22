@@ -14,12 +14,12 @@
       }
     },
     {
-      "name": "BDHD (no VC1)",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "BDHD",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
+        "value": "\\b(BDHD)\\b"
       }
     },
     {
@@ -65,6 +65,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Q(UEBE)?C63)\\b"
+      }
+    },
+    {
+      "name": "ROMKENT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ROMKENT)\\b"
       }
     },
     {
