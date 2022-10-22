@@ -51,7 +51,7 @@ There is two options:
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
-- Ignore any mention of **MULTi Custom Formats**. 
+- Ignore any mention of **MULTi Custom Formats**.
 - Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
 
 ------
