@@ -418,7 +418,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
-/(1-.+)$/i
+/(?<!\d\.)(1-.+)$/i
 ```
 
 ------

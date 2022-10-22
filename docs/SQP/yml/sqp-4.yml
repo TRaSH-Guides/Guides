@@ -80,7 +80,7 @@ radarr:
           - 923b6abef9b17f937fab56cfcf89e1f1 # DV (WEBDL)
         quality_profiles:
           - name: WEBDL|IMAX-E|2160p
-            # score: 0
+            # score: 0 # overrides default of -10000
       - trash_ids:
           # Misc
           - 2899d84dc9372de3408e6d8cc18e9666 # x264

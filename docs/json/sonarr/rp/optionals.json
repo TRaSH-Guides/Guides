@@ -61,7 +61,7 @@
     }, {
       "name": "Dislike release containing: 1-",
       "trash_id": "236a3626a07cacf5692c73cc947bc280",
-      "term": "/(1-.+)$/i"
+      "term": "/(?<!\\d\\.)(1-.+)$/i"
     }]
   }]
 }
