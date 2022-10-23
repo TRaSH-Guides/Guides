@@ -32,30 +32,21 @@
       }
     },
     {
+      "name": "BDHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BDHD)\\b"
+      }
+    },
+    {
       "name": "D3L0P@tte",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(D3L0P(@tte)?)\\b"
-      }
-    },
-    {
-      "name": "DUSTiN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(DUSTiN)\\b"
-      }
-    },
-    {
-      "name": "FLOP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FLOP)\\b"
       }
     },
     {
@@ -77,21 +68,30 @@
       }
     },
     {
-      "name": "FUJiSAN",
+      "name": "FrIeNdS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FUJiSAN)\\b"
+        "value": "\\b(FrIeNdS)\\b"
       }
     },
     {
-      "name": "NEO",
+      "name": "ONLY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NEO)\\b"
+        "value": "\\b(ONLY)\\b"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Psaro)\\b"
       }
     },
     {

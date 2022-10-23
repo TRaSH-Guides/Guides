@@ -54,7 +54,16 @@ plugins:
       locale: en
   #    fallback_to_build_date: false
   - awesome-pages
-  - glightbox
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
   - macros:
       j2_block_start_string: "[[%"
       j2_block_end_string: "%]]"
@@ -74,7 +83,6 @@ plugins:
         Radarr/V3/Radarr-recommended-naming-scheme.md: Radarr/Radarr-recommended-naming-scheme.md
         Radarr/V3/Radarr-remote-path-mapping.md: Radarr/Radarr-remote-path-mapping.md
         Radarr/V3/Radarr-setup-custom-formats.md: Radarr/Radarr-setup-custom-formats.md
-        Radarr/V3/Tips/Radarr-add-a-movie-collection.md: Radarr/Tips/Radarr-add-a-movie-collection.md
         Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
         Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         # Sonarr old redirects

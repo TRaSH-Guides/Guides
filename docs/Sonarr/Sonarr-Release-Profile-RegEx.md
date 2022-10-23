@@ -42,6 +42,33 @@ The Release profile that we're going to use for this example is mainly to prefer
 
 ------
 
+## Basics
+
+This guide is based on WEBDL (Read the [FAQ](#faq) why) that's why we're going to create a quality profile based on WEBDL.
+
+`Settings` => `Profiles`
+
+![!cf-settings-profiles](images/cf-settings-profiles.png)
+
+Select the profile that you want to use/prefer.
+
+![!cf-quality-profiles](images/cf-quality-profiles.png)
+
+![Select quality](images/rp-profile-selected.png)
+
+!!! tip
+    Starting from 2010 you will be able to find almost anything as WEBDL,
+
+    2000-2010 you will only find a few shows as WEBDL in that case you might want to enable `HDTV` and or `720p`.
+
+    If you want 2160p WEBDL then choose 2160p WEBDL and add the HDR and/or DV regex, 2160p without HDR/DV has no real benefits !!!
+
+------
+
+{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+
+------
+
 ## Propers and Repacks
 
 First we're need to make sure a P2P release isn't being replaced by a Scene Repack/Proper release!
@@ -418,7 +445,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 Add this to your `Preferred (3)` with a score of [-25]
 
 ```bash
-/(1-.+)$/i
+/(?<!\d\.)(1-.+)$/i
 ```
 
 ------

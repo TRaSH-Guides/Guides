@@ -14,12 +14,12 @@
       }
     },
     {
-      "name": "BDHD (no VC1)",
+      "name": "BDHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!VC[ .-]?1.*?)[\\[ .-]BDHD\\b"
+        "value": "[\\[ .-]BDHD\\b"
       }
     },
     {
@@ -47,15 +47,6 @@
       "required": false,
       "fields": {
         "value": "[\\[ .-]MARBLECAKE\\b"
-      }
-    },
-    {
-      "name": "NoTag",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "[\\[ .-]NoTag\\b"
       }
     },
     {

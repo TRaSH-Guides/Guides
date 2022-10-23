@@ -32,15 +32,6 @@
       }
     },
     {
-      "name": "BDHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BDHD)\\b"
-      }
-    },
-    {
       "name": "BEO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -50,21 +41,12 @@
       }
     },
     {
-      "name": "BONBON",
+      "name": "FUJiSAN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BONBON)\\b"
-      }
-    },
-    {
-      "name": "FrIeNdS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FrIeNdS)\\b"
+        "value": "\\b(FUJiSAN)\\b"
       }
     },
     {
@@ -86,21 +68,30 @@
       }
     },
     {
-      "name": "HLX (not Light)",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "HLX",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]HLX\\b"
+        "value": "\\b(HLX)\\b"
       }
     },
     {
-      "name": "MARBLECAKE (not Light)",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "MARBLECAKE",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!(m(ini|icro)?HD|(HD|4K)Light).*?)[\\[ .-]MARBLECAKE\\b"
+        "value": "\\b(MARBLECAKE)\\b"
+      }
+    },
+    {
+      "name": "NEO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NEO)\\b"
       }
     },
     {
@@ -110,6 +101,24 @@
       "required": false,
       "fields": {
         "value": "\\b(NoNE)\\b"
+      }
+    },
+    {
+      "name": "TkHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TkHD)\\b"
+      }
+    },
+    {
+      "name": "UTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(UTT)\\b"
       }
     }
   ]

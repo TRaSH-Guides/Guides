@@ -1,6 +1,6 @@
 {
   "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
-  "trash_score": "1750",
+  "trash_score": "1700",
   "name": "FR WEB Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -23,21 +23,21 @@
       }
     },
     {
-      "name": "BEO",
+      "name": "ARK01",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BEO)\\b"
+        "value": "\\b(ARK01)\\b"
       }
     },
     {
-      "name": "DUSTiN",
+      "name": "BONBON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DUSTiN)\\b"
+        "value": "\\b(BONBON)\\b"
       }
     },
     {
@@ -59,12 +59,21 @@
       }
     },
     {
-      "name": "FUJiSAN",
+      "name": "FrIeNdS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FUJiSAN)\\b"
+        "value": "\\b(FrIeNdS)\\b"
+      }
+    },
+    {
+      "name": "MOONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MOONLY)\\b"
       }
     },
     {
@@ -77,12 +86,21 @@
       }
     },
     {
-      "name": "NEO",
+      "name": "NoNe",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NEO)\\b"
+        "value": "\\b(NoNe)\\b"
+      }
+    },
+    {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ONLYMOViE)\\b"
       }
     },
     {
