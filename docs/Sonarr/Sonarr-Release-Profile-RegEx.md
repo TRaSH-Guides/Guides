@@ -44,7 +44,7 @@ The Release profile that we're going to use for this example is mainly to prefer
 
 ## Basics
 
-This guide is based on WEBDL (Read the (FAQ)[#faq] why) that's why we're going to create a quality profile based on WEBDL.
+This guide is based on WEBDL (Read the [FAQ](#faq) why) that's why we're going to create a quality profile based on WEBDL.
 
 `Settings` => `Profiles`
 
