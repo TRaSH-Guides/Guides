@@ -68,7 +68,7 @@ I also made 3 guides related to this one.
 | [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
 | [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
 | [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-02) |
+| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
 | [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
 | [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
 | [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 01](#fr-web-tier-01)               |

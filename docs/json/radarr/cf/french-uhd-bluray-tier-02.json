@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FCK))\\b"
+        "value": "\\b(FCK)\\b"
       }
     },
     {
