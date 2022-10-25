@@ -1,3 +1,7 @@
+# 2022-10-23 18:45
+**[SQP]**
+- Add: Resolution scoring so 1080p doesn't outrank 2160p. #924
+
 # 2022-10-23 20:45
 **[Sonarr]**
 - Add: Quality profile. #919
