@@ -26,4 +26,6 @@
 
 {! include-markdown "../../includes/sqp/uhd-radarr-optional.md" !}
 
+{! include-markdown "../../includes/sqp/uhd-radarr-resolution.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
