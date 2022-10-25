@@ -1,4 +1,4 @@
-# 2022-10-23 19:10
+# 2022-10-25 19:45
 **[SQP]**
 - Add: Resolution scoring so 1080p doesn't outrank 2160p. #924
 **[Radarr]**
