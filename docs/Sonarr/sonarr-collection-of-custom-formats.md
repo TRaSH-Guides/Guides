@@ -70,11 +70,12 @@ I also made 3 guides related to this one.
 | ------------------------------ | ----------------------------------- | ------ | ------ |
 | [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
 | [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)             | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)        | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [Multi](#multi)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x264](#x264)                  | [Scene](#scene)                     | &nbsp; | &nbsp; |
-| [x265](#x265)                  | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
+| [Repack v3](#repack-v3)        | [HDR10+ Boost](#hdr10plus-boost)    | &nbsp; | &nbsp; |
+| [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
+| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
+| [x264](#x264)                  | [Retags](#retags)                   | &nbsp; | &nbsp; |
+| [x265](#x265)                  | [Scene](#scene)                     | &nbsp; | &nbsp; |
+|                                | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
 
 ------
@@ -937,6 +938,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HDR10Plus Boost
+
+??? faq "HDR10+ Boost - [CLICK TO EXPAND]"
+
+    Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
