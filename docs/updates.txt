@@ -1,3 +1,13 @@
+# 2022-10-29 19:15
+**[Guides]**
+- Updated: Flowcharts for Audio, HDR Formats and full Flowchart. #931
+
+**[Starr]**
+- NEW: CF `[HDR10+ Boost]` Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+. #931
+
+**[SQP]**
+- Add: Warning for x264 score. #931
+
 # 2022-10-25 19:45
 **[SQP]**
 - Add: Resolution scoring so 1080p doesn't outrank 2160p. #924
