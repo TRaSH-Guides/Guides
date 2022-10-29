@@ -53,7 +53,7 @@ I also made 3 guides related to this one.
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)        |
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
+| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
 | [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
 | [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
 | [IMAX](#imax)                                 |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
@@ -68,12 +68,12 @@ I also made 3 guides related to this one.
 | [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
 | [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
 | [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [x264](#x264)                  | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [x265](#x265)                  | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [MPEG2](#mpeg2)                | [Retags](#retags)                   | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [Dutch Groups](#dutch-groups)  | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [FreeLeech](#freeleech)        | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                |                                     | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
+| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)    | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)         | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VFQ](#vfq)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                |                                     | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 
 ------
@@ -988,6 +988,22 @@ I also made 3 guides related to this one.
 
 ------
 
+### HDR10Plus Boost
+
+??? faq "HDR10+ Boost - [CLICK TO EXPAND]"
+
+    Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### No-RlsGroup
 
 ??? faq "No-RlsGroup - [CLICK TO EXPAND]"
@@ -1040,7 +1056,6 @@ I also made 3 guides related to this one.
 <sub><sup>[TOP](#index)</sup>
 
 ------
-
 ### Scene
 
 ??? faq "Scene - [CLICK TO EXPAND]"

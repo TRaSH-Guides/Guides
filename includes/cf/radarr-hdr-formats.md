@@ -1,6 +1,6 @@
 ??? summary "HDR Formats - [CLICK TO EXPAND]"
 
-    ![!HDR Formats Flowchart](/Radarr/images/hdr-formats-flowchart.png)
+    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
 
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
