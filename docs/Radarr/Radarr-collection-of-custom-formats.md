@@ -53,7 +53,7 @@ I also made 3 guides related to this one.
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)        |
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
-| [Special Editions](#special-edition)          | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
+| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
 | [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
 | [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
 | [IMAX](#imax)                                 |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
