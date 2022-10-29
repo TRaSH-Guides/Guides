@@ -1,6 +1,6 @@
 ??? summary "Audio - [CLICK TO EXPAND]"
 
-    ![!HDR Formats Flowchart](/Radarr/images/audio-flowchart.png)
+    ![!HDR Formats Flowchart](/Radarr/images/flowchart-audio.png)
 
     | Custom Format                                                                                                 | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
