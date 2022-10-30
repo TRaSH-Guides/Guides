@@ -1,0 +1,17 @@
+{
+  "trash_id": "9c38ebb7384dada637be8899efa68e6f",
+  "trash_score": "-10000",
+  "name": "SDR",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "SDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bSDR\\b"
+      }
+    }
+  ]
+}
