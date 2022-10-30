@@ -1,3 +1,11 @@
+# 2022-10-30 21:00
+**[Sonarr]**
+Add: `HONE` and `CRFW` to `WEB Tier 01` they release DV HDR hybrids of various shows. #934
+
+**[SQP]**
+- NEW: CF `SDR`. #935
+- Updated: CF `2160p` Added Condition `NOT SDR`. #935
+
 # 2022-10-29 19:15
 **[Guides]**
 - Updated: Flowcharts for Audio, HDR Formats and full Flowchart. #931
