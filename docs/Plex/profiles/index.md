@@ -1,9 +1,9 @@
 # Plex Profiles
 
-!!! note ""
-    Here you will find a collection of profiles you can use with Plex.
+!!! info
+    Here you will find a collection of profiles you only should use if Plex has issues direct playing your media on your devices, these profiles could help but results might vary.
 
-    Profiles are used if Plex has issues direct playing your media on your devices, these profiles could help but result.
+!!! danger "The profiles aren't tested on the Shield 2019 or newer Chromecast models :warning:"
 
 ## How to
 
@@ -18,7 +18,7 @@ Example paths:
 
 ## Profiles
 
-!!! attention ""
+!!! tip
     If you got some to share, pls make a PR so we can collect them at one place
 
 ### Android Shield

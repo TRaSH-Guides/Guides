@@ -45,8 +45,8 @@ Condition Logic
 
 ## Arguments
 
-```plaintext
 Under each: Playback Start, Playback Resume, Transcode Decision Change
 
+```plaintext
 --jbop stream --username {username} --sessionId {session_id} --killMessage 'Transcoding streams are not allowed for {video_resolution} streams.'
 ```
