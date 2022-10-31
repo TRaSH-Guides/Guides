@@ -39,7 +39,9 @@ These Quality Settings have been created and tested with info I got from others,
 
 ## Radarr Quality Definitions
 
-| Quality                                                           | Minimum                                                       | Maximum                                                       |
+- Note that `400` is the displayed value for Unlimited
+
+| Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | {{ radarr['quality-size']['movie']['qualities'][0]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['max'] }}  |
 | {{ radarr['quality-size']['movie']['qualities'][1]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['max'] }}  |

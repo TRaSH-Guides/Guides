@@ -1,3 +1,53 @@
+# 2022-10-30 21:00
+**[Sonarr]**
+Add: `HONE` and `CRFW` to `WEB Tier 01` they release DV HDR hybrids of various shows. #934
+
+**[SQP]**
+- NEW: CF `SDR`. #935
+- Updated: CF `2160p` Added Condition `NOT SDR`. #935
+
+# 2022-10-29 19:15
+**[Guides]**
+- Updated: Flowcharts for Audio, HDR Formats and full Flowchart. #931
+
+**[Starr]**
+- NEW: CF `[HDR10+ Boost]` Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+. #931
+
+**[SQP]**
+- Add: Warning for x264 score. #931
+
+# 2022-10-25 19:45
+**[SQP]**
+- Add: Resolution scoring so 1080p doesn't outrank 2160p. #924
+**[Radarr]**
+- Fix: French CF. #923
+
+# 2022-10-23 20:45
+**[Sonarr]**
+- Add: Quality profile. #919
+
+# 2022-10-22 13:45
+**[Radarr]**
+- An update of the French guide and Custom Formats. #863
+
+# 2022-10-20 22:35
+**[Sonarr]**
+- Fix: aggressive in Dislike release containing: 1-. #918
+
+# 2022-10-20 22:15
+**[SQP]**
+- Add: [SQP-1] Add also warning for plain IMAX.
+- Add: end of line comment on the scores that override defaults. #917
+
+# 2022-10-20 20:15
+**[Radarr] Removed add movie collection**
+- Removed: `Add a movie collection` => no longer valid. #915
+
+# 2022-10-18 21:20
+**[Prowlarr] Tips for Prowlarr**
+- NEW: How to Setup proxy for certain indexers. #905
+- NEW: How to Setup FlareSolverr. #905
+
 # 2022-10-12 19:25
 **[Guide - Starr Custom Formats]**
 - Added: Audio Flowchart (Hopefully to make the logic/choices more clear). #898

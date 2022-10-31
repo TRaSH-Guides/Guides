@@ -37,7 +37,7 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ## Sonarr Quality Definitions
 
-| Quality                                                            | Minimum                                                        | Maximum                                                        |
+| Quality                                                            | Minimum (Megabytes Per Minute)                                 | Maximum (Megabytes Per Minute)                                 |
 | ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------- |
 | {{ sonarr['quality-size']['series']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['max'] }}  |
 | {{ sonarr['quality-size']['series']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['max'] }}  |
@@ -58,7 +58,7 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ### Sonarr Quality Definitions - Anime
 
-| Quality                                                           | Minimum                                                       | Maximum                                                       |
+| Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | {{ sonarr['quality-size']['anime']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['max'] }}  |
 | {{ sonarr['quality-size']['anime']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['max'] }}  |
@@ -80,5 +80,4 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 | {{ sonarr['quality-size']['anime']['qualities'][17]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['max'] }} |
 | {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

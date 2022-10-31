@@ -39,6 +39,15 @@
       "fields": {
         "value": "\\b(FraMeSToR|HQMUX)\\b"
       }
+    },
+    {
+      "name": "NOT SDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bSDR\\b"
+      }
     }
   ]
 }
