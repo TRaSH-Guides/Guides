@@ -37,7 +37,7 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ## Sonarr Quality Definitions
 
-| Quality                                                            | Minimum (Megabytes Per Minute)                                                        | Maximum (Megabytes Per Minute)                                                        |
+| Quality                                                            | Minimum (Megabytes Per Minute)                                 | Maximum (Megabytes Per Minute)                                 |
 | ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------- |
 | {{ sonarr['quality-size']['series']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['max'] }}  |
 | {{ sonarr['quality-size']['series']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['max'] }}  |
@@ -58,7 +58,7 @@ I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet s
 
 ### Sonarr Quality Definitions - Anime
 
-| Quality                                                           | Minimum                                                       | Maximum                                                       |
+| Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | {{ sonarr['quality-size']['anime']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['max'] }}  |
 | {{ sonarr['quality-size']['anime']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['max'] }}  |
