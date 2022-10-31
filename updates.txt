@@ -1,6 +1,24 @@
+# 2022-10-31 22:15
+**[Starr]**
+- Added: Quality Settings (File Size) - Descriptor to values. #939
+
+**[SQP]**
+- Add: CF `SDR` to Unwanted for SQP 2-5. #935
+- Updated: Recyclarr configs for SQP 2-5. #936/7
+
+**[Plex]**
+- Moved: Tips above profiles. #940
+- Fixed: copy/paste option. #940
+- Fixed: Formatting for profiles page. #940
+- Added: warning for untested on new Shield/Chromecast models. #940
+
+**[Guides]**
+- Switched to STARR version listings using the build server. #941
+- Updated: Branch description to match the official WikiArr. #941
+
 # 2022-10-30 21:00
 **[Sonarr]**
-Add: `HONE` and `CRFW` to `WEB Tier 01` they release DV HDR hybrids of various shows. #934
+- Add: `HONE` and `CRFW` to `WEB Tier 01` they release DV HDR hybrids of various shows. #934
 
 **[SQP]**
 - NEW: CF `SDR`. #935
