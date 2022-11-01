@@ -6,11 +6,12 @@
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                     | :interrobang:                                        | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
+    | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost)       | {{ radarr['cf']['hdr10plus-boost']['trash_score'] }} | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }} |
     | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)             | {{ radarr['cf']['evo-no-webdl']['trash_score'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
     | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)               | {{ radarr['cf']['no-rlsgroup']['trash_score'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
     | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                 | {{ radarr['cf']['obfuscated']['trash_score'] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
     | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
-    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                         | {{ radarr['cf']['scene']['trash_score'] }}          | {{ radarr['cf']['scene']['trash_id'] }}          |
+    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           | {{ radarr['cf']['scene']['trash_score'] }}           | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
 
     ------
@@ -33,6 +34,7 @@
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.
             - If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of `{{ radarr['cf']['dv-webdl']['trash_score'] }}`.
 
+    - **{{ radarr['cf']['hdr10plus-boost']['name'] }}:** [*Optional*] (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
     - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] (use these only if you dislike renamed releases)

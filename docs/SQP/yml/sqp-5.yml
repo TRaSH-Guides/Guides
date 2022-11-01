@@ -63,6 +63,7 @@ radarr:
           - 90a6f9a284dff5103f6346090e6280c8 # LQ
           - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
           - 839bea857ed2c0a8e084f3cbdbd65ecb # x265 (no HDR/DV)
+          - 9c38ebb7384dada637be8899efa68e6f # SDR
           # Optional
           # Uncomment any of the following optional custom formats you want to be included
           # - b6832f586342ef70d9c128d40c07b872 # Bad Dual Groups
@@ -72,6 +73,9 @@ radarr:
           # - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
           # - f537cf427b64c38c8e36298f657e4828 # Scene
           # - 0a3f082873eb454bde444150b70253cc # Extras
+          # Resolution
+          - 820b09bb9acbfde9c35c71e0e565dad8 # 1080p
+          - fb392fb0d61a010ae38e49ceaa24a1ef # 2160p
           # Streaming Services
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
