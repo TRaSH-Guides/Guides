@@ -1,3 +1,7 @@
+# 2022-11-02 20:40
+**[Radarr]**
+- NEW: Publish Radarr Anime guide. #942
+
 # 2022-10-31 22:15
 **[Starr]**
 - Added: Quality Settings (File Size) - Descriptor to values. #939

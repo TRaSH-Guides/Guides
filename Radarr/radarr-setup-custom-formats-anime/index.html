@@ -7,21 +7,21 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Guides mainly for Sonarr/Radarr/Bazarr and everything related to it." name="description"/>
 <meta content="TRaSH" name="author"/>
-<link href="https://trash-guides.info/Radarr/Tips/Merge-quality/" rel="canonical"/>
-<link href="../../../img/favicon.png" rel="icon"/>
+<link href="https://trash-guides.info/Radarr/radarr-setup-custom-formats-anime/" rel="canonical"/>
+<link href="../../img/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.7" name="generator"/>
-<title>How to Merge Quality - TRaSH Guides</title>
-<link href="../../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<title>How to setup Custom Formats-Anime - TRaSH Guides</title>
+<link href="../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
-<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../../stylesheets/github-permalink-style.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../stylesheets/github-permalink-style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZZKM4MPQXL"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZZKM4MPQXL",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZZKM4MPQXL",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -29,14 +29,14 @@
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
-                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigio" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#how-to-merge-quality">
+<a class="md-skip" href="#how-to-setup-custom-formats-anime">
           Skip to content
         </a>
 </div>
@@ -44,8 +44,8 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="TRaSH Guides" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="TRaSH Guides">
-<img alt="logo" src="../../../img/logo.png"/>
+<a aria-label="TRaSH Guides" class="md-header__button md-logo" data-md-component="logo" href="../.." title="TRaSH Guides">
+<img alt="logo" src="../../img/logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              How to Merge Quality
+              How to setup Custom Formats-Anime
             
           </span>
 </div>
@@ -123,52 +123,52 @@
 <div class="md-tabs__inner md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../..">
+<a class="md-tabs__link" href="../..">
       Home
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../">
+<a class="md-tabs__link md-tabs__link--active" href="../">
         Radarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Sonarr/">
+<a class="md-tabs__link" href="../../Sonarr/">
         Sonarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Prowlarr/">
+<a class="md-tabs__link" href="../../Prowlarr/">
         Prowlarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Bazarr/">
+<a class="md-tabs__link" href="../../Bazarr/">
         Bazarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Downloaders/">
+<a class="md-tabs__link" href="../../Downloaders/">
         Downloaders
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Plex/">
+<a class="md-tabs__link" href="../../Plex/">
         Plex
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Misc/">
+<a class="md-tabs__link" href="../../Misc/">
         Misc
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Hardlinks/Hardlinks-and-Instant-Moves/">
+<a class="md-tabs__link" href="../../Hardlinks/Hardlinks-and-Instant-Moves/">
         Hardlinks
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Hardlinks/How-to-setup-for">
+<a class="md-tabs__link" href="../../Hardlinks/How-to-setup-for">
       How-to-setup-for
     </a>
 </li>
@@ -182,8 +182,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="TRaSH Guides" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="TRaSH Guides">
-<img alt="logo" src="../../../img/logo.png"/>
+<a aria-label="TRaSH Guides" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="TRaSH Guides">
+<img alt="logo" src="../../img/logo.png"/>
 </a>
     TRaSH Guides
   </label>
@@ -199,7 +199,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+<a class="md-nav__link" href="../..">
         Home
       </a>
 </li>
@@ -216,57 +216,128 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../">
+<a class="md-nav__link" href="../">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../Radarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-recommended-naming-scheme/">
+<a class="md-nav__link" href="../Radarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-import-custom-formats/">
+<a class="md-nav__link" href="../Radarr-import-custom-formats/">
         How to import Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-how-to-update-custom-formats/">
+<a class="md-nav__link" href="../Radarr-how-to-update-custom-formats/">
         How to Update Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-setup-custom-formats/">
+<a class="md-nav__link" href="../Radarr-setup-custom-formats/">
         How to setup Custom Formats
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../radarr-setup-custom-formats-anime/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          How to setup Custom Formats-Anime
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         How to setup Custom Formats-Anime
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#media-management">
+    Media Management
+  </a>
+<nav aria-label="Media Management" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommended-naming-scheme">
+    Recommended naming scheme
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../radarr-setup-custom-formats-french/">
+<a class="md-nav__link" href="#quality-settings">
+    Quality Settings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quality-profile">
+    Quality Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#anime-cfscoring">
+    Anime CF/Scoring
+  </a>
+<nav aria-label="Anime CF/Scoring" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#default-scoring">
+    Default Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dual-audio-scoring">
+    Dual Audio Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uncensored-scoring">
+    Uncensored Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finishing-up">
+    Finishing up
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acknowledgements">
+    Acknowledgements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../radarr-setup-custom-formats-french/">
         How to setup Custom Formats-French
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-collection-of-custom-formats/">
+<a class="md-nav__link" href="../Radarr-collection-of-custom-formats/">
         Collection of Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr-remote-path-mapping/">
+<a class="md-nav__link" href="../Radarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_11">
           Tips
           <span class="md-nav__icon md-icon"></span>
@@ -277,60 +348,23 @@
           Tips
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          How to Merge Quality
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Tips/Merge-quality/">
         How to Merge Quality
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#current-logic">
-    Current Logic
-  </a>
-<nav aria-label="Current Logic" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#radarr-current-logic">
-    Radarr current logic
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sonarr-current-logic">
-    Sonarr current logic
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#merge-the-qualities">
-    Merge the Qualities
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Radarr-rename-your-folders/">
+<a class="md-nav__link" href="../Tips/Radarr-rename-your-folders/">
         How to rename your folders
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Radarr-show-unknown-movie-items/">
+<a class="md-nav__link" href="../Tips/Radarr-show-unknown-movie-items/">
         Show Unknown Movie Items
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../Tips/Sync-2-radarr-sonarr/">
         How to Sync 2 Radarr or Sonarr with each other
       </a>
 </li>
@@ -353,32 +387,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/">
+<a class="md-nav__link" href="../../Sonarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-recommended-naming-scheme/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Release-Profile-RegEx/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx/">
         Release Profile RegEx (WEB-DL)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/">
         Release Profile RegEx (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-remote-path-mapping/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
@@ -395,12 +429,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Tips/Merge-quality/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Merge-quality/">
         Merge quality
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Tips/Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Sync-2-radarr-sonarr/">
         Sync 2 radarr sonarr
       </a>
 </li>
@@ -423,17 +457,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/">
+<a class="md-nav__link" href="../../Prowlarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/prowlarr-setup-proxy/">
+<a class="md-nav__link" href="../../Prowlarr/prowlarr-setup-proxy/">
         How to setup proxy for certain indexers
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/prowlarr-setup-flaresolverr/">
+<a class="md-nav__link" href="../../Prowlarr/prowlarr-setup-flaresolverr/">
         How to setup FlareSolverr
       </a>
 </li>
@@ -453,17 +487,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/">
+<a class="md-nav__link" href="../../Bazarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/Setup-Guide/">
+<a class="md-nav__link" href="../../Bazarr/Setup-Guide/">
         Basic-Guide
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/After-install-configuration/">
+<a class="md-nav__link" href="../../Bazarr/After-install-configuration/">
         After Install Configuration
       </a>
 </li>
@@ -485,7 +519,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/Tips/Bazarr-suggested-scoring/">
+<a class="md-nav__link" href="../../Bazarr/Tips/Bazarr-suggested-scoring/">
         Suggested Scoring
       </a>
 </li>
@@ -508,7 +542,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/">
+<a class="md-nav__link" href="../../Downloaders/">
         Home
       </a>
 </li>
@@ -525,12 +559,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/NZBGet/Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/NZBGet/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/NZBGet/Paths-and-Categories/">
+<a class="md-nav__link" href="../../Downloaders/NZBGet/Paths-and-Categories/">
         Path and Categories
       </a>
 </li>
@@ -555,12 +589,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/SABnzbd/Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/SABnzbd/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/SABnzbd/Paths-and-Categories/">
+<a class="md-nav__link" href="../../Downloaders/SABnzbd/Paths-and-Categories/">
         Path and Categories
       </a>
 </li>
@@ -585,27 +619,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/Paths/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Paths/">
         Paths
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/How-to-add-categories/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/How-to-add-categories/">
         How to add Categories
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/Port-forwarding/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Port-forwarding/">
         Port forwarding
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/3rd-party-tools/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/3rd-party-tools/">
         3rd Party tools
       </a>
 </li>
@@ -622,7 +656,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/">
         How to run the unRaid mover for qBittorent seeding torrents
       </a>
 </li>
@@ -645,17 +679,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/Deluge/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/">
         Deluge Placeholder
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/Deluge/Deluge-Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/Deluge-Basic-Setup/">
         Deluge - Basic Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/Deluge/Deluge-how-to-add-labels/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/Deluge-how-to-add-labels/">
         Deluge - How to add labels
       </a>
 </li>
@@ -675,12 +709,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/ruTorrent/">
+<a class="md-nav__link" href="../../Downloaders/ruTorrent/">
         ruTorrent Placeholder
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/">
         ruTorrent - Basic Setup
       </a>
 </li>
@@ -703,7 +737,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/">
+<a class="md-nav__link" href="../../Plex/">
         Home
       </a>
 </li>
@@ -720,17 +754,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/Plex-media-server/">
+<a class="md-nav__link" href="../../Plex/Tips/Plex-media-server/">
         Suggested Plex Media Server Settings
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/Optimal-plex-client-settings/">
+<a class="md-nav__link" href="../../Plex/Tips/Optimal-plex-client-settings/">
         Optimal Plex Client Settings
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/4k-transcoding/">
+<a class="md-nav__link" href="../../Plex/Tips/4k-transcoding/">
         JBOPS 4K Transcode Stopping with Tautulli
       </a>
 </li>
@@ -758,27 +792,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/">
+<a class="md-nav__link" href="../../Misc/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/how-to-provide-a-docker-compose/">
+<a class="md-nav__link" href="../../Misc/how-to-provide-a-docker-compose/">
         How to provide a docker compose
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/How-to-setup-Torguard-for-port-forwarding/">
+<a class="md-nav__link" href="../../Misc/How-to-setup-Torguard-for-port-forwarding/">
         Setup TorGuard for port forwarding
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/x265-4k/">
+<a class="md-nav__link" href="../../Misc/x265-4k/">
         x265-4k and Golden Rule
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/trash-sync/">
+<a class="md-nav__link" href="../../Misc/trash-sync/">
         TRaSH Sync
       </a>
 </li>
@@ -798,7 +832,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Hardlinks-and-Instant-Moves/">
+<a class="md-nav__link" href="../../Hardlinks/Hardlinks-and-Instant-Moves/">
         Hardlinks - Atomic Moves
       </a>
 </li>
@@ -815,32 +849,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/">
         How to setup for
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Docker/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Docker/">
         Docker
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Dockstarter/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Dockstarter/">
         Dockstarter
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Native/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Native/">
         Native
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Synology/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Synology/">
         Synology
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Unraid/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Unraid/">
         Unraid
       </a>
 </li>
@@ -848,17 +882,17 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Examples/">
+<a class="md-nav__link" href="../../Hardlinks/Examples/">
         Examples
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Check-if-hardlinks-are-working/">
+<a class="md-nav__link" href="../../Hardlinks/Check-if-hardlinks-are-working/">
         Check if hardlinks are working
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Replace-copies-with-hardlinks/">
+<a class="md-nav__link" href="../../Hardlinks/Replace-copies-with-hardlinks/">
         Replace copies with hardlinks
       </a>
 </li>
@@ -866,7 +900,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for">
         How-to-setup-for
       </a>
 </li>
@@ -885,28 +919,62 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#current-logic">
-    Current Logic
+<a class="md-nav__link" href="#media-management">
+    Media Management
   </a>
-<nav aria-label="Current Logic" class="md-nav">
+<nav aria-label="Media Management" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#radarr-current-logic">
-    Radarr current logic
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sonarr-current-logic">
-    Sonarr current logic
+<a class="md-nav__link" href="#recommended-naming-scheme">
+    Recommended naming scheme
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#merge-the-qualities">
-    Merge the Qualities
+<a class="md-nav__link" href="#quality-settings">
+    Quality Settings
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quality-profile">
+    Quality Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#anime-cfscoring">
+    Anime CF/Scoring
+  </a>
+<nav aria-label="Anime CF/Scoring" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#default-scoring">
+    Default Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dual-audio-scoring">
+    Dual Audio Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uncensored-scoring">
+    Uncensored Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finishing-up">
+    Finishing up
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acknowledgements">
+    Acknowledgements
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -915,78 +983,247 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Radarr/Tips/Merge-quality.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Radarr/radarr-setup-custom-formats-anime.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="how-to-merge-quality">How to Merge Quality<a class="headerlink" href="#how-to-merge-quality" title="Permanent link"></a></h1>
-<p>The current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:"/></p>
-<p>In some cases it might be preferred to not have Quality Trump All, and let it be handled via Preferred Words / Custom Formats.</p>
-<p>To accomplish this you will need to merge the qualities with each other.</p>
-<h2 id="current-logic">Current Logic<a class="headerlink" href="#current-logic" title="Permanent link"></a></h2>
-<p>Here you will see the current logic so you understand how the possible downloads are compared.</p>
-<!-- BEGIN INCLUDE ../../../includes/merge-quality/radarr-current-logic.md -->
-<h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link"></a></h3>
-<details class="summary">
-<summary>Radarr current logic - [CLICK TO EXPAND]</summary>
-<p>As of 2021-11-06 the logic is as follows:</p>
-<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:"/></p>
-<ol>
-<li>Quality</li>
-<li>Custom Format Score</li>
-<li>Protocol</li>
-<li>Indexer Priority</li>
-<li>Indexer Flags</li>
-<li>Seeds/Peers (If Torrent)</li>
-<li>Age (If Usenet)</li>
-<li>Size</li>
-</ol>
-<p><a href="https://wiki.servarr.com/radarr/faq#how-are-possible-downloads-compared" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
-<div class="admonition attention">
-<p>REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.</p>
-<p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repackproper" rel="noopener noreferrer" target="_blank">Repack/Proper Custom Format</a></p>
+<h1 id="how-to-setup-custom-formats-anime">How to setup Custom Formats (Anime)<a class="headerlink" href="#how-to-setup-custom-formats-anime" title="Permanent link"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guide is created and maintained by <a href="https://github.com/FonduemangVI">FonduemangVI</a> and <a href="https://github.com/rg9400">rg9400</a></p>
 </div>
+<p>It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.</p>
+<p>The aim of this guide is to grab the best release overall (as per <a href="https://sneedex.moe/" rel="noopener noreferrer" target="_blank">SeaDex</a>) and not necessarily just dual audio.
+The vast majority of releases can be found on <a href="https://nyaa.si/" rel="noopener noreferrer" target="_blank">Nyaa</a> or <a href="https://animebytes.tv/" rel="noopener noreferrer" target="_blank">AB</a></p>
+<div class="admonition info">
+<p>Nyaa is a public tracker while AB is an invite only tracker.</p>
+</div>
+<hr/>
+<h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link"></a></h2>
+<h3 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h3>
+<p>For naming please refer to <a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a></p>
+<hr/>
+<h2 id="quality-settings">Quality Settings<a class="headerlink" href="#quality-settings" title="Permanent link"></a></h2>
+<p>For quality settings please refer to <a href="/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions" rel="noopener noreferrer" target="_blank">Radarr Quality Definitions</a></p>
+<hr/>
+<h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link"></a></h2>
+<p>We need to create a new profile called <code>Remux-1080p - Anime</code> due to the way anime can be named we will need to merge a few qualities together see <a href="/Radarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">here</a> for an example.</p>
+<p>We need to add <code>Bluray-1080p Remux</code> and <code>Bluray-1080p</code> into a group together, <code>HDTV-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code>, and lastly <code>HDTV-720p</code> into the same group as <code>WEBDL-720p</code> and <code>WEBRip-720p</code> so that the scoring will work correctly.</p>
+<p>Go to <code>Settings</code> =&gt; <code>Profiles</code></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-mergedqualities.png"><img alt="!cfa-mergedqualities" src="../images/cfa-mergedqualities.png"/></a></p>
+<p>We then need to select and organise the qualities like below.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-qualityorder.png"><img alt="!cfa-qualityorder" src="../images/cfa-qualityorder.png"/></a></p>
+<hr/>
+<h2 id="anime-cfscoring">Anime CF/Scoring<a class="headerlink" href="#anime-cfscoring" title="Permanent link"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We're going to make use of the below custom formats. See <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a> for how to import them.</p>
+</div>
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-anime.md -->
+<details class="summary">
+<summary>Anime CF/Scoring - [Click to Expand]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-01-top-seadex-muxers">Anime BD Tier 01 (Top SeaDex Muxers)</a></td>
+<td>1400</td>
+<td>fb3ccc5d5cc8f77c9055d4cb4561dded</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-02-seadex-muxers">Anime BD Tier 02 (SeaDex Muxers)</a></td>
+<td>1300</td>
+<td>66926c8fa9312bc74ab71bf69aae4f4a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-03-seadex-muxers">Anime BD Tier 03 (SeaDex Muxers)</a></td>
+<td>1200</td>
+<td>fa857662bad28d5ff21a6e611869a0ff</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-04-seadex-muxers">Anime BD Tier 04 (SeaDex Muxers)</a></td>
+<td>1100</td>
+<td>f262f1299d99b1a2263375e8fa2ddbb3</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-05-remuxes">Anime BD Tier 05 (Remuxes)</a></td>
+<td>1000</td>
+<td>ca864ed93c7b431150cc6748dc34875d</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-06-fansubs">Anime BD Tier 06 (FanSubs)</a></td>
+<td>900</td>
+<td>9dce189b960fddf47891b7484ee886ca</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-07-p2pscene">Anime BD Tier 07 (P2P/Scene)</a></td>
+<td>800</td>
+<td>1ef101b3a82646b40e0cab7fc92cd896</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-08-mini-encodes">Anime BD Tier 08 (Mini Encodes)</a></td>
+<td>700</td>
+<td>6115ccd6640b978234cc47f2c1f2cadc</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-01-muxers">Anime Web Tier 01 (Muxers)</a></td>
+<td>600</td>
+<td>8167cffba4febfb9a6988ef24f274e7e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-02-top-fansubs">Anime Web Tier 02 (Top FanSubs)</a></td>
+<td>500</td>
+<td>8526c54e36b4962d340fce52ef030e76</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-03-official-subs">Anime Web Tier 03 (Official Subs)</a></td>
+<td>400</td>
+<td>de41e72708d2c856fa261094c85e965d</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-04-official-subs">Anime Web Tier 04 (Official Subs)</a></td>
+<td>300</td>
+<td>9edaeee9ea3bcd585da9b7c0ac3fc54f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-05-fansubs">Anime Web Tier 05 (FanSubs)</a></td>
+<td>200</td>
+<td>22d953bbe897857b517928f3652b8dd3</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-06-fansubs">Anime Web Tier 06 (FanSubs)</a></td>
+<td>100</td>
+<td>a786fbc0eae05afe3bb51aee3c83a9d4</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01">Remux Tier 01</a></td>
+<td>1050</td>
+<td>3a3ff47579026e76d6504ebea39390de</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02">Remux Tier 02</a></td>
+<td>1000</td>
+<td>9f98181fe5a3fbeb0cc29340da2a468a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-raws">Anime Raws</a></td>
+<td>-10000</td>
+<td>06b6542a47037d1e33b15aa3677c2365</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a></td>
+<td>-10000</td>
+<td>b0fdc5897f68c9a68c70c25169f77447</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#uncensored">Uncensored</a></td>
+<td>0</td>
+<td>064af5f084a0a24458cc8ecd3220f93f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v0">v0</a></td>
+<td>-51</td>
+<td>c259005cbaeb5ab44c06eddb4751e70c</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v1">v1</a></td>
+<td>1</td>
+<td>5f400539421b8fcf71d51e6384434573</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v2">v2</a></td>
+<td>2</td>
+<td>3df5e6dfef4b09bb6002f732bed5b774</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v3">v3</a></td>
+<td>3</td>
+<td>db92c27ba606996b146b57fbe6d09186</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v4">v4</a></td>
+<td>4</td>
+<td>d4e5e842fad129a3c097bdb2d20d31a0</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#vrv">VRV</a></td>
+<td>10</td>
+<td>60f6d50cbd3cfc3e9a8c00e3a30c3114</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#10bit">10bit</a></td>
+<td>0</td>
+<td>a5d148168c4506b55cf53984107c396e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-dual-audio">Anime Dual Audio</a></td>
+<td>0</td>
+<td>4a3b087eea2ce012fcc1ce319259a3be</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dubs-only">Dubs Only</a></td>
+<td>-10000</td>
+<td>b23eae459cc960816f2d6ba84af45055</td>
+</tr>
+</tbody>
+</table>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
-<!-- BEGIN INCLUDE ../../../includes/merge-quality/sonarr-current-logic.md -->
-<h3 id="sonarr-current-logic">Sonarr current logic<a class="headerlink" href="#sonarr-current-logic" title="Permanent link"></a></h3>
-<details class="summary">
-<summary>Sonarr current logic - [CLICK TO EXPAND]</summary>
-<p>As of 2021-11-06 the logic is as follows:</p>
-<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:"/></p>
-<ol>
-<li>Quality</li>
-<li>Language</li>
-<li>Preferred Word Score</li>
-<li>Protocol</li>
-<li>Episode Count</li>
-<li>Episode Number</li>
-<li>Indexer Priority</li>
-<li>Seeds/Peers (If Torrent)</li>
-<li>Age (If Usenet)</li>
-<li>Size</li>
-</ol>
-<p><a href="https://wiki.servarr.com/sonarr/faq#how-are-possible-downloads-compared" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
-<div class="admonition attention">
-<p>REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.</p>
-<p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use a preferred word regex of <code>/\b(repack|proper)\b/i</code></p>
+<!-- --8<-- "includes/cf/radarr-anime.md" -->
+<h3 id="default-scoring">Default Scoring<a class="headerlink" href="#default-scoring" title="Permanent link"></a></h3>
+<p>The scoring that has been set is the recommended scoring, however some of the CFs are optional depending on what you prefer.
+<code>Anime Dual Audio</code>, <code>Uncensored</code> and <code>10bit</code> can be given positive scores if you want to prefer content with these attributes.</p>
+<p><code>Anime Raws</code> and <code>Dubs Only</code> are negatively scored, however if you prefer these attributes you can give them a positive score.</p>
+<p>Once the custom formats have been imported you can set the scores as above. To do this go to <code>Settings</code> =&gt; <code>Profiles</code> and select the <code>Remux-1080p - Anime</code> profile that was setup before.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p>In the profile enter the scores as per the above table in this section.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-default-scoring.png"><img alt="!cfa-default-scoring" src="../images/cfa-default-scoring.png"/></a></p>
+<p>After you are done it should look like the image above.</p>
+<h3 id="dual-audio-scoring">Dual Audio Scoring<a class="headerlink" href="#dual-audio-scoring" title="Permanent link"></a></h3>
+<p>If you prefer <code>Dual Audio</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Dual Audio</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>, and if you want to prefer it over any tiers give the <code>CF</code> a score of <code>2000</code>.</p>
+<p>If you must have <code>Dual Audio</code> releases set the <code>Minimum Custom Format Score</code> to 2000 in the <code>Remux-1080p - Anime</code> profile that you setup earlier.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does a <code>Dual Audio</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Dual Audio</code> over any tier.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-da-scoring.png"><img alt="!cfa-da-scoring" src="../images/cfa-da-scoring.png"/></a></p>
+<h3 id="uncensored-scoring">Uncensored Scoring<a class="headerlink" href="#uncensored-scoring" title="Permanent link"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most BDs are uncensored by default, so most groups do not include that in the name.</p>
 </div>
-</details>
-<!-- END INCLUDE -->
-<!-- --8<-- "includes/merge-quality/sonarr-current-logic.md" -->
-<h2 id="merge-the-qualities">Merge the Qualities<a class="headerlink" href="#merge-the-qualities" title="Permanent link"></a></h2>
-<p>Go to your preferred Quality Profile or create a new one.</p>
-<p><code>Settings</code> =&gt; <code>Profiles</code></p>
-<p>In this example we will merge the following qualities together:</p>
+<p>If you prefer <code>Uncensored</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Uncensored</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does an <code>Uncensored</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Uncensored</code> a tier above.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-uncensored-scoring.png"><img alt="!cfa-uncensored-scoring" src="../images/cfa-uncensored-scoring.png"/></a></p>
+<h3 id="finishing-up">Finishing up<a class="headerlink" href="#finishing-up" title="Permanent link"></a></h3>
+<p>Once you have set your preferred scoring you will need to make two more changes to your <code>Remux-1080p - Anime</code> profile.</p>
+<p>Make sure <code>Upgrades Allowed</code> is ticked then set the <code>Upgrade Until</code> section to <code>Bluray-1080p</code> and the <code>Upgrade Until Custom Format Score</code> to <code>10000</code> and set <code>Language</code> to <code>Original</code></p>
+<p>After this has been done your profile should look like below. This is an example of the Default Scoring setup.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-complete.png"><img alt="!cfa-complete" src="../images/cfa-complete.png"/></a></p>
+<h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
+<p>Most of my information and knowledge came from:</p>
 <ul>
-<li>Bluray-720p</li>
-<li>Bluray-1080p</li>
-<li>WEBDL/WEBRip-1080p</li>
+<li>
+<p>rg9400 (Building the Custom Formats, Guidance on anime groups and general knowledge share.)</p>
+</li>
+<li>
+<p>V01 from SeaDex (Guidance on anime groups and general knowledge share.)</p>
+</li>
+<li>
+<p>Drazzilb (Guidance on anime groups, testing and general knowledge share.)</p>
+</li>
+<li>
+<p><a href="https://trash-guides.info/">TRaSH</a> (For allowing me to utilize his website for our guide and general knowledge share.)</p>
+</li>
 </ul>
-<p>To merge them you need to click on Edit Groups.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/merge.gif"><img alt="!Merge Qualities" src="../images/merge.gif"/></a></p>
-<p>When done Sonarr/Radarr upgrades will be handled via Preferred Words / Custom Formats.</p>
-<!-- BEGIN INCLUDE ../../../includes/support.md -->
+<!-- BEGIN INCLUDE ../../includes/support.md -->
 <hr/>
 <div class="admonition help">
 <p class="admonition-title">Questions or Suggestions?</p>
@@ -1000,7 +1237,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 1, 2022 05:43:32</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -1019,7 +1256,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Remote Path Mappings explained" class="md-footer__link md-footer__link--prev" href="../../Radarr-remote-path-mapping/" rel="prev">
+<a aria-label="Previous: How to setup Custom Formats" class="md-footer__link md-footer__link--prev" href="../Radarr-setup-custom-formats/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1028,17 +1265,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Remote Path Mappings explained
+              How to setup Custom Formats
             </div>
 </div>
 </a>
-<a aria-label="Next: How to rename your folders" class="md-footer__link md-footer__link--next" href="../Radarr-rename-your-folders/" rel="next">
+<a aria-label="Next: How to setup Custom Formats-French" class="md-footer__link md-footer__link--next" href="../radarr-setup-custom-formats-french/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              How to rename your folders
+              How to setup Custom Formats-French
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -1074,7 +1311,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
