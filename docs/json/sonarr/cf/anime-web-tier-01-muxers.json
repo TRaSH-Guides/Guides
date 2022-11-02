@@ -68,6 +68,15 @@
       }
     },
     {
+      "name": "sam",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[sam\\]|-sam\\b"
+      }
+    },
+    {
       "name": "SCY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
