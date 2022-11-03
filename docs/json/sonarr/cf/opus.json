@@ -13,7 +13,7 @@
       }
     },
     {
-      "name": "Not OPUS",
+      "name": "Not OPUS Release Group",
       "implementation": "ReleaseGroupSpecification",
       "negate": true,
       "required": true,
