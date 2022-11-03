@@ -11,5 +11,14 @@
       "fields": {
           "value": "\\bOPUS(\\b|\\d)"
       }
+    },
+    {
+      "name": "Not OPUS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "OPUS"
+      }
   }]
 }
