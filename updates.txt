@@ -1,3 +1,7 @@
+# 2022-11-03 19:20
+- Add: `MeGusta` to the Sonarr `LQ` CF and Release Profile. #946
+- Add: Group negation for `OPUS` in the `Opus` CF. #946
+
 # 2022-11-02 20:40
 **[Radarr]**
 - NEW: Publish Radarr Anime guide. #942
