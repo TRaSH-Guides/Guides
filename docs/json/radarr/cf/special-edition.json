@@ -10,7 +10,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "(?<!^|{)\\b(extended|uncutdirectors|special|unrated|uncensored|cut|version|edition)(\\b|\\d)"
+              "value": "(?<!^|{)\\b(extended|uncut|directors|special|unrated|uncensored|cut|version|edition)(\\b|\\d)"
           }
       },
       {
