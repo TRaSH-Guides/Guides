@@ -41,6 +41,15 @@
       }
     },
     {
+      "name": "MeGusta",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MeGusta)\\b"
+      }
+    },
+    {
       "name": "NERO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
