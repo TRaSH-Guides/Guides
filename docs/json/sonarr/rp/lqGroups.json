@@ -6,7 +6,7 @@
   "preferred": [{
     "score": -100,
     "terms": [
-      "/(-BRiNK|-CHX|-GHOSTS|-NERO|nhanc3|Pahe\\.ph|Pahe\\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\\b/i"
+      "/(-BRiNK|-CHX|-GHOSTS|MeGusta|-NERO|nhanc3|Pahe\\.ph|Pahe\\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\\b/i"
     ]
   }],
   "ignored": []
