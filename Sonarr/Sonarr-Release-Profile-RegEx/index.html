@@ -460,6 +460,11 @@
     Optional - Ignore Bad Dual Audio Groups
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-ignore-av1">
+    Optional - Ignore AV1
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1106,6 +1111,11 @@
     Optional - Ignore Bad Dual Audio Groups
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-ignore-av1">
+    Optional - Ignore AV1
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1541,6 +1551,19 @@ Also they often even rename the release name in to Portuguese.</p>
 <p>Add this to your <code>Must not contain (2)</code></p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>-alfaHD<span class="p">|</span>-BAT<span class="p">|</span>-BNd<span class="p">|</span>-C<span class="se">\.</span>A<span class="se">\.</span>A<span class="p">|</span>-Cory<span class="p">|</span>-FF<span class="p">|</span>-FOXX<span class="p">|</span>-G4RiS<span class="p">|</span>-GUEIRA<span class="p">|</span>-N3G4N<span class="p">|</span>-PD<span class="p">|</span>-RiPER<span class="p">|</span>-RK<span class="p">|</span>-SiGLA<span class="p">|</span>-Tars<span class="p">|</span>-WTV<span class="p">|</span>-Yatogam1<span class="p">|</span>-YusukeFLA<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
+<h4 id="optional-ignore-av1">Optional - Ignore AV1<a class="headerlink" href="#optional-ignore-av1" title="Permanent link"></a></h4>
+<details class="question">
+<summary>WHY ? - [CLICK TO EXPAND]</summary>
+<ul>
+<li>This is a new codec and you need modern devices that support it.</li>
+<li>We also had reports of playback/transcoding issues.</li>
+<li>No main group is actually using it (yet).</li>
+<li>It's better to ignore this new codec to prevent compatibility issues.</li>
+</ul>
+</details>
+<p>Add this to your <code>Must not contain (2)</code></p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span>AV1<span class="se">\b</span>/i
+</code></pre></div>
 <hr/>
 <h3 id="a-little-explanation-of-the-scores-and-why">A little explanation of the scores and why<a class="headerlink" href="#a-little-explanation-of-the-scores-and-why" title="Permanent link"></a></h3>
 <ul>
@@ -1607,7 +1630,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 3, 2022 16:13:17</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 4, 2022 20:23:01</span>
 </small>
 </div>
 <footer class="sponsorship">
