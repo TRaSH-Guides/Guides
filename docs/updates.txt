@@ -1,3 +1,14 @@
+# 2022-11-04 22:30
+**[Radarr]**
+- Changed: Min. Quality Size for WEBDL because of the smaller NF releases. #953
+- Fix: CF `[Special Edition]` matching false/positive. #947
+
+**[Starr]**
+- Added: AV1 as optional. #951
+
+**[SQP]**
+- Add: Move selected quality to top tip. #954
+
 # 2022-11-03 19:20
 - Add: `MeGusta` to the Sonarr `LQ` CF and Release Profile. #946
 - Add: Group negation for `OPUS` in the `Opus` CF. #946
