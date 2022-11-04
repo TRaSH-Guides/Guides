@@ -1,3 +1,7 @@
+# 2022-11-04 23:30
+**[Radarr Guide]**
+- Add: Main Flowchart to `How to setup Custom Formats` guide. #955
+
 # 2022-11-04 22:30
 **[Radarr]**
 - Changed: Min. Quality Size for WEBDL because of the smaller NF releases. #953
