@@ -77,6 +77,7 @@ I also made 3 guides related to this one.
 | [x265](#x265)                  | [Scene](#scene)                     | &nbsp; | &nbsp; |
 |                                | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
+|                                | [AV1](#av1)                         | &nbsp; | &nbsp; |
 
 ------
 
@@ -1072,6 +1073,25 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### AV1
+
+??? faq "AV1 - [CLICK TO EXPAND]"
+
+    - This is a new codec and you need modern devices that support it.
+    - We also had reports of playback/transcoding issues.
+    - No main group is actually using it (yet).
+    - It's better to ignore this new codec to prevent compatibility issues.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
