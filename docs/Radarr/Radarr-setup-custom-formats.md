@@ -70,6 +70,18 @@ All these examples make use of the [Collection of Custom Formats](/Radarr/Radarr
 
 ------
 
+## Which Quality Profile should you choose
+
+??? summary "Which Quality Profile should you choose - [CLICK TO EXPAND]"
+
+    ![Flowchart](/Radarr/images/flowchart-custom-format-radarr.png)
+
+    If you're unsure or have questions do not hesitate to ask for help on Discord
+
+    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+
+------
+
 ### Releases you should avoid
 
 This is a must have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
