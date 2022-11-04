@@ -541,6 +541,21 @@ Add this to your `Must not contain (2)`
 /\b(-alfaHD|-BAT|-BNd|-C\.A\.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\b/i
 ```
 
+#### Optional - Ignore AV1
+
+??? question "WHY ? - [CLICK TO EXPAND]"
+
+    - This is a new codec and you need modern devices that support it.
+    - We also had reports of playback/transcoding issues.
+    - No main group is actually using it (yet).
+    - It's better to ignore this new codec to prevent compatibility issues.
+
+Add this to your `Must not contain (2)`
+
+```bash
+/\bAV1\b/i
+```
+
 ------
 
 ### A little explanation of the scores and why
