@@ -1,0 +1,16 @@
+{
+  "trash_id": "cae4ca30163749b891686f95532519bd",
+  "name": "AV1",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AV1",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+      "value": "\\bAV1\\b"
+      }
+    }
+  ]
+}
