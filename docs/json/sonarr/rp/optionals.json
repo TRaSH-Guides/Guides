@@ -18,12 +18,12 @@
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
     "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\\b|-GGEZ\\b|-GGWP\\b|-GLHF\\b|-GOSSIP\\b|-KOGI\\b|-PECULATE\\b)).*/i"
   }, {
-    "name": "Dislike Bad Dual Audio Groups",
+    "name": "Ignore Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",
     "term": "/\\b(-alfaHD|-BAT|-BNd|-C\\.A\\.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\\b/i"
   }, {
-    "name": "Dislike AV1",
-    "trash_id": "cae4ca30163749b891686f95532519bd",
+    "name": "Ignore AV1",
+    "trash_id": "4861d8238f9234606df6721df6e27deb",
     "term": "/\bAV1\b/i"
   }],
   "required": [],
