@@ -2,7 +2,7 @@
 
 - **Enable:** `Upgrades Allowed`
 - **Upgrade Until Quality:** `WEBDL|Remux|2160p`
-- **Minimum Custom Format Score:** `10`
+- **Minimum Custom Format Score:** `550`
 - **Upgrade Until Custom Format Score:** `10000`
 
 ??? check "example - [CLICK TO EXPAND]"
