@@ -14,7 +14,7 @@ These are 3rd party applications to sync several sections of the guide with your
 
 ## Notifiarr
 
-It's possible with [Notifiarr](https://notifiarr.com/profile.php){:target="_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="_blank" rel="noopener noreferrer"})
+It's possible with [Notifiarr](https://notifiarr.com){:target="_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="_blank" rel="noopener noreferrer"})
 
 After setup it's fully automated and will check every X minutes for updates to the Custom Formats or Sonarr Release Profile and will update it to your Radarr or Sonarr (Multiple Client Support).
 
