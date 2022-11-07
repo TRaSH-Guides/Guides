@@ -59,7 +59,7 @@
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
-{! include-markdown "../../includes/cf/hd-radarr-optional.md" !}
+{! include-markdown "../../includes/sqp/hd-radarr-optional.md" !}
 
 {! include-markdown "../../includes/sqp/hd-radarr-resolution.md" !}
 
