@@ -120,6 +120,15 @@
       "fields": {
         "value": "\\b(Seicher)\\b"
       }
+    },
+    {
+      "name": "Lilith",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Lilith[ ._-]?(Raws)"
+      }
     }
   ]
 }
