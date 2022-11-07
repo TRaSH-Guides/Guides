@@ -1192,7 +1192,7 @@
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
-<td>25</td>
+<td>125</td>
 <td>957d0f44b592285f26449575e8b1167e</td>
 </tr>
 <tr>
@@ -1348,7 +1348,7 @@
 </ul>
 </details>
 <!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/hd-radarr-optional.md -->
 <details class="summary">
 <summary>Optional - [CLICK TO EXPAND]</summary>
 <table>
@@ -1364,11 +1364,6 @@
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td>-10000</td>
 <td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
-<td><img alt="⁉" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2049.svg" title=":interrobang:"/></td>
-<td>923b6abef9b17f937fab56cfcf89e1f1</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
@@ -1395,11 +1390,6 @@
 <td>-10000</td>
 <td>f537cf427b64c38c8e36298f657e4828</td>
 </tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></td>
-<td>-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
 </tbody>
 </table>
 <hr/>
@@ -1407,36 +1397,11 @@
 <ul>
 <li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
 Also they often even rename the release name in to Portuguese.</li>
-<li>
-<p><strong>DV (WEBDL):</strong> This is a special Custom Format that Block WEBDL with Dolby Vision but without HDR10 fallback.</p>
-<p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
-<p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
-<ul>
-<li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
-<li>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of <code>-10000</code>.</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</p>
-</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
 <li><strong>Retags:</strong> [<em>Optional</em>] (use these only if you dislike retagged releases)</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] (use these only if you dislike scene releases)</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
-<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
-</div>
-</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -1580,8 +1545,8 @@ Also they often even rename the release name in to Portuguese.</li>
 <tr>
 <td>Bluray-1080p</td>
 <td>33.8</td>
-<td>135.9</td>
-<td>136.9</td>
+<td>153</td>
+<td>154</td>
 </tr>
 </tbody>
 </table>
