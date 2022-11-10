@@ -90,7 +90,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ------
 
-#### Prefer Advanced Audio
+### Prefer Advanced Audio
 
 Lets say you prefer HD audio (with object metadata)
 
@@ -100,7 +100,7 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 ------
 
-#### Prefer HDR Formats
+### Prefer HDR Formats
 
 Lets say you prefer HDR Formats (HDR or Dolby Vision or Both)
 
@@ -118,7 +118,7 @@ Then we would use the following order:
 
 ------
 
-#### Prefer HQ Encodes
+### Prefer HQ Encodes
 
 If you prefer HQ Encodes (Bluray-720/1080/2160p)
 
@@ -162,7 +162,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ------
 
-#### Remux-1080p
+### Remux-1080p
 
 If you prefer 1080p Remuxes (Remux-1080p)
 
@@ -201,7 +201,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ------
 
-#### Remux-2160p
+### Remux-2160p
 
 If you prefer 2160p Remuxes (Remux-2160p)
 
