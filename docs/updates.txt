@@ -1,3 +1,14 @@
+# 2022-11-07 23:00
+**[SQP-1]**
+- Removed: un-needed optional. #962
+- Changed: max quality size. #962
+
+**[Radarr]**
+- Updated: CF `[Special Edition]` Score from `25` to `125`. #962
+
+**[SQP-2-5]**
+- Add: correct link for CF `[SDR]`. #962
+
 # 2022-11-04 23:30
 **[Radarr Guide]**
 - Add: Main Flowchart to `How to setup Custom Formats` guide. #955
