@@ -75,9 +75,11 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ------
 
-### HD Bluray Tier + WEB Tier
+### HD Bluray + WEB
 
-If you prefer HQ HD Encodes (Bluray-720p/1080p)
+If you prefer High Quality HD Encodes (Bluray-720p/1080p)
+
+- *Size: 6-15 GB for a Bluray-1080p depending on the running time.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -113,9 +115,11 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ------
 
-### UHD Bluray Tier + WEB Tier
+### UHD Bluray + WEB
 
-If you prefer HQ UHD Encodes (Bluray-2160p)
+If you prefer High Quality UHD Encodes (Bluray-2160p)
+
+- *Size: 20-60 GB for a Bluray-2160p depending on the running time.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -153,9 +157,11 @@ Use the following main settings in your profile.
 
 ------
 
-### Remux Tier + WEB Tier 1080p
+### Remux + WEB 1080p
 
 If you prefer 1080p Remuxes (Remux-1080p)
+
+- *Size: 20-40 GB for a Remux-1080p depending on the running time.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -191,9 +197,11 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ------
 
-### Remux Tier + WEB Tier 2160p
+### Remux + WEB 2160p
 
 If you prefer 2160p Remuxes (Remux-2160p)
+
+- *Size: 40-100 GB for a Remux-2160p depending on the running time.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -229,10 +237,10 @@ Use the following main settings in your profile.
 
 ------
 
-### All Advanced Audio
+### Advanced Audio
 
 - You have a audio setup that supports all HD Audio (TrueHD, DTS-X, DTS-HD, etc).
-- You have a media player (Device) that can passthrough HD audio.
+- You have a media player (hardware devices) that can passthrough HD audio.
 - You don't have a AppleTV (Being it can't passthrough untouched HD audio).
 
 In this example I have lossy Atmos over lossless DTS because the object metadata (Atmos) matters more to me over lossy vs lossless.
@@ -243,7 +251,7 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 ------
 
-### All HDR Formats
+### HDR Formats
 
 - You have a setup that supports Dolby Vision.
 - You share your media library with other family members that also have have Dolby Vision compatible devices.
@@ -254,7 +262,7 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 ------
 
-### All HDR Formats + DV (WEBDL)
+### HDR Formats + DV (WEBDL)
 
 - Not all devices in your chain support Dolby Vision.
 - You share your media library with other family members that don't have Dolby Vision compatible devices.
@@ -265,7 +273,7 @@ In this example I have lossy Atmos over lossless DTS because the object metadata
 
 ------
 
-### All HDR Formats + DV (WEBDL) + HDR10+ Boost
+### HDR Formats + DV (WEBDL) + HDR10+ Boost
 
 - Not all devices in your chain support Dolby Vision.
 - You share your media library with other family members that don't have Dolby Vision compatible devices.
