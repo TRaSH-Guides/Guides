@@ -85,7 +85,8 @@ plugins:
         Radarr/V3/Radarr-setup-custom-formats.md: Radarr/Radarr-setup-custom-formats.md
         Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
         Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
-        Radarr/Radarr-setup-custom-formats.md: radarr-setup-quality-profiles.md
+        # Radarr redirects
+        Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
         # Sonarr old redirects
         Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/Sonarr-remote-path-mapping.md
         Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/Sonarr-Quality-Settings-File-Size.md
