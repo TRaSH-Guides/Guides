@@ -97,13 +97,15 @@ I decided not to add `Audio Advanced` Custom Formats to the encodes profile, You
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-profile-encodes.png)
+![HD Bluray + WEB](images/qp-bluray-webdl.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow logic will be applied:"
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Bluray-1080p when available.
@@ -139,16 +141,18 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-encodes](images/cf-profile-encodes.png)
+![UHD Bluray + WEB](images/qp-uhd-bluray-webdl.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
+
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
 ??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
-    - When a HD WEBDL is released it will download the HD WEB-DL. (streaming services)
-    - When the HQ Encode is released it will upgrade to the HQ Encode.
+    - When a UHD WEBDL is released it will download the UHD WEB-DL. (streaming services)
+    - When the High Quality UHD Encodes is released it will upgrade to the High Quality UHD Encodes.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
@@ -179,17 +183,19 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-remux1080](images/cf-profile-remux1080.png)
+![Remux + WEB 1080p](images/qp-remux-webdl-1080p.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
-??? example "The following workflow logic will be applied:"
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 1080p for the streaming movies you see more often lately.
     - It will upgrade till Remux-1080p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
@@ -221,15 +227,17 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 Use the following main settings in your profile.
 
-![!cf-profile-remux2160](images/cf-profile-remux2160.png)
+![Remux + WEB 2160p](images/qp-remux-webdl-2160p.png)
 
 !!! attention "Make sure you don't check the BR-DISK."
 
-??? example "The following workflow logic will be applied:"
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 2160p for the streaming movies you see more often lately.
     - It will upgrade to Remux-2160p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 9999.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
