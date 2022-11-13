@@ -54,7 +54,7 @@ all you need to do now is click on the `Save` button and you're done.
 ### Setup the scores in your Quality Profile
 
 After you've added the Custom Formats, You will need to set it up in the Quality Profile you want to use/prefer to make use of the Custom Formats.
-How this is done is explained [HERE](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}
+How this is done is explained [HERE](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -64,7 +64,7 @@ How this is done is explained [HERE](/Radarr/Radarr-setup-custom-formats/#basics
 
     Start adding more Custom Formats wisely, **Don't add all the available Custom Formats!!!**
 
-    Check out the [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.
+    Check out the [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.
 
 ### TRaSH Sync
 

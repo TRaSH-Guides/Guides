@@ -18,7 +18,7 @@ Therefore, you will need a slightly modified MULTi Custom Format than the one fi
 It is quite important that you follow and understand what is envisioned by Trash's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Custom Formats | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
@@ -43,7 +43,7 @@ There is two options:
 !!! tip
     This is the preferred method.
 
-- Go have a look at those examples: [How to setup Custom Formats | Examples section](/Radarr/Radarr-setup-custom-formats/#examples)
+- Go have a look at those examples: [How to setup Quality Profiles | Examples section](/Radarr/radarr-setup-quality-profiles/#examples)
 - Set up [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
 - (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
