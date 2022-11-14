@@ -34,7 +34,7 @@ Il est très important que vous respectiez et compreniez ce qui est proposé par
 
 ------
 
-## Je ne suis intéressé que par des films sous-titrés en français (VOSTFR).
+## Je ne suis intéressé que par des films sous-titrés en français (VOSTFR)
 
 Deux options s'offre à vous :
 
