@@ -5,6 +5,9 @@
 !!! note
     This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
 
+!!! tip
+    Cette page est aussi disponible en Français: [Guide en Français](/Radarr/radarr-setup-custom-formats-french-fr/){:target="_blank" rel="noopener noreferrer"}.
+
 So what is the best way to set up the Custom Profiles and which one to use with which scores to get French and English Audio?
 
 Keep in mind that most releases are MULTi (understand DUAL audio, original and French audio) and it will be difficult to only have French audio, unless you are willing to get 720p, or you are only looking for French movies.
@@ -42,8 +45,7 @@ There is two options:
 
 ### Using TRaSH's guide and Bazarr
 
-!!! tip
-    This is the preferred method.
+!!! tip "This is the preferred method."
 
 - Set up Radarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
 - Set up [Bazarr](/Bazarr/Setup-Guide). It will do an amazing job for getting your subtitle on every movies.

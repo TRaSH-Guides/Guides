@@ -1,4 +1,5 @@
 If you prefer 1080p Remuxes (Remux-1080p)
+*Si vous préférez les Remux en 1080p*
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio.md" !}
 
@@ -26,10 +27,12 @@ If you prefer 1080p Remuxes (Remux-1080p)
     !!! tip
         French Scene groups are included as a fallback if you really want MULTi release despite a potential loss in quality. Either score the CF to `{{ radarr['cf']['french-scene']['trash_score'] }}` or `0` depending on what you want to achieve.
 
+        *Les Groupes de Scène Française sont inclus comme secours si vous voulez vraiment une sortie MULTi malgré une perte potentielle de qualité. Vous pouvez attribuer au CF une note de `{{ radarr['cf']['french-scene']['trash_score'] }}` ou de `0` selon ce que vous voulez obtenir.*
+
     ??? info "Original mix (optional)"
         {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-Use the following main settings in your profile:
+Profile settings (paramètres du profil):
 
 ![!cf-profile-encodes](/Radarr/images/cf-french-profile-1080p-remuxes.png)
 
