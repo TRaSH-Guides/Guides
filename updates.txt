@@ -1,3 +1,19 @@
+# 2022-11-15 00:30
+**[Sonarr]**
+- Add: `Lilith-Raws` to anime-raws. #964
+- Fix: AV1 Formatting in the json. #972
+
+**[Radarr]**
+- Updated: Matching `How to setup Custom Formats` with flowchart. #966
+- Renamed: `How to setup Custom Formats` to `Setup quality profiles`. #966 
+- Fixed: copy/paste error for `AV1` json. #967
+- Added: DV info to HDR Flowchart. #971
+
+**[Guide]**
+- Changed: Increase width of the page. #966
+- Removed: Bottom navigation. #966
+- Fixed: Typo that caused unreadable selectetion from navigation. #966
+
 # 2022-11-07 23:00
 **[SQP-1]**
 - Removed: un-needed optional. #962
