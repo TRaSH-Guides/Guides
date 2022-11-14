@@ -1,4 +1,4 @@
-# Comment configurer les Formats Personnalisés
+# Comment configurer ses Profiles
 
 !!! note
     Ce guide a été créé et est maintenu par [Someone said "Nice"?](https://github.com/NiceTSY)
@@ -15,7 +15,7 @@ Par conséquent, vous aurez besoin d'un format personnalisé MULTi légèrement 
 
 ## Notions de base
 
-Il est très important que vous respectiez et compreniez ce qui est proposé par le guide de Trash (en anglais seulement) :
+Il est très important que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (en anglais seulement) :
 
 - L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 - La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to setup Quality Profiles | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
@@ -38,11 +38,11 @@ Il est très important que vous respectiez et compreniez ce qui est proposé par
 
 Deux options s'offre à vous :
 
-### En utilisant le guide de Trash et Bazarr
+### En utilisant le guide de TRaSH et Bazarr
 
 !!! tip "Il s'agit de la méthode à privilégier."
 
-- Allez voir ces exemples : [How to setup Quality Profiles | Examples section](/Radarr/Radarr-setup-custom-formats/#examples)
+- Configurer Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
 - (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `1000`.
