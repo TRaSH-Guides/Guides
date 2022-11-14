@@ -1,4 +1,6 @@
-# How to setup Custom Formats (French)
+# How to setup Quality Profiles
+
+*aka How to setup Custom Formats (French)*<br><br>
 
 !!! note
     This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
@@ -18,7 +20,7 @@ Therefore, you will need a slightly modified MULTi Custom Format than the one fi
 It is quite important that you follow and understand what is envisioned by Trash's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Custom Formats | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
 ------
 
@@ -38,13 +40,13 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 There is two options:
 
-### Using Trash's guide and Bazarr
+### Using TRaSH's guide and Bazarr
 
 !!! tip
     This is the preferred method.
 
-- Go have a look at those examples: [How to setup Custom Formats | Examples section](/Radarr/Radarr-setup-custom-formats/#examples)
-- Set up [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
+- Set up Radarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
+- Set up [Bazarr](/Bazarr/Setup-Guide). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
 - (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
 

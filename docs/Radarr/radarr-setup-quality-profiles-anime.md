@@ -1,4 +1,6 @@
-# How to setup Custom Formats (Anime)
+# How to setup Quality Profiles
+
+*aka How to setup Custom Formats (Anime)*<br><br>
 
 !!! note
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)

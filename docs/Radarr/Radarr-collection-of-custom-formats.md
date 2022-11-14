@@ -12,7 +12,7 @@ I also made 3 guides related to this one.
 
 - [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
 - [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Custom Formats](/Radarr/Radarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
+- [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.
 
 !!! tip
 
