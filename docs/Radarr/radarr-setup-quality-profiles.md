@@ -107,9 +107,9 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
-    - It will download WEB-DL 1080p for the streaming movies you see more often lately.
-    - It will upgrade till Bluray-1080p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
+    - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
@@ -151,9 +151,9 @@ Use the following main settings in your profile.
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
-    - When a UHD WEBDL is released it will download the UHD WEB-DL. (streaming services)
-    - When the High Quality UHD Encodes is released it will upgrade to the High Quality UHD Encodes.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
+    - When the Bluray-2160p is released it will upgrade to the Bluray-2160p.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
@@ -193,9 +193,9 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 ??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
-    - It will download WEB-DL 1080p for the streaming movies you see more often lately.
-    - It will upgrade till Remux-1080p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
+    - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
@@ -235,9 +235,9 @@ Use the following main settings in your profile.
 
 ??? summary "Workflow Logic - [CLICK TO EXPAND]"
 
-    - It will download WEB-DL 2160p for the streaming movies you see more often lately.
-    - It will upgrade to Remux-2160p when available.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
+    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
+    - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
@@ -251,7 +251,7 @@ Use the following main settings in your profile.
 - You have a media player (hardware devices) that can passthrough HD audio.
 - You don't have a AppleTV (Being it can't passthrough untouched HD audio).
 
-In this example I have lossy Atmos over lossless DTS because the object metadata (Atmos) matters more to me over lossy vs lossless.
+*In this example I have lossy Atmos over lossless DTS because the object metadata (Atmos) matters more to me over lossy vs lossless.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
