@@ -38,13 +38,13 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 There is two options:
 
-### Using Trash's guide and Bazarr
+### Using TRaSH's guide and Bazarr
 
 !!! tip
     This is the preferred method.
 
-- Go have a look at those examples: [How to setup Quality Profiles | Examples section](/Radarr/radarr-setup-quality-profiles/#examples)
-- Set up [Bazarr](../Bazarr/Setup-Guide.md). It will do an amazing job for getting your subtitle on every movies.
+- Set up Radarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
+- Set up [Bazarr](/Bazarr/Setup-Guide). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
 - (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
 
