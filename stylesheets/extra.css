@@ -1,29 +1,30 @@
+/* Footer */
 :root > * {
-  /* Footer */
   --md-footer-bg-color: hsla(232, 54%, 41%, 1);
-  --md-footer-bg-color--dark: hsla(0, 0%, 0%, 0.32);
+  --md-footer-bg-color--dark: hsla(232, 54%, 41%, 1);
 }
+
 /*Change footnotes font size */
 .md-typeset .footnote {
   font-size: 12px;
 }
-th {
-  color:white !important;
-  background-color:hsla(232, 54%, 41%, 1) !important;
-  font-weight: bold;
-}
-/* td a {
-  color: white !important;
+
+/* Maximum space for text block */
+.md-grid {
+  max-width: 76%; /* or 100%, if you want to stretch to full-width */
 }
 
-td a:hover {
-  color: red !important;
+/* remove bottom navigation */
+.md-footer__inner:not([hidden]) {
+  display: none
 }
-*/
+
+/* Change color of links */
 .md-content {
   --md-typeset-a-color: orange;
 }
 
+/* center buy me a coffee */
 footer.sponsorship {
   text-align: center;
   hr {
@@ -31,6 +32,7 @@ footer.sponsorship {
       vertical-align: middle;
   }
 }
+
 /*Better table view */
 th, td {
   border: 1px solid var(--md-typeset-table-color);
@@ -51,10 +53,12 @@ th, td {
 .md-typeset__table table:not([class]) td, .md-typeset__table table:not([class]) th {
   padding: 9px;
 }
+
 /* light mode alternating table bg colors */
 .md-typeset__table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
+
 /* dark mode alternating table bg colors */
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
   background-color: hsla(var(--md-hue),25%,25%,1)

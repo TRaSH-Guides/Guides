@@ -7,10 +7,10 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Guides mainly for Sonarr/Radarr/Bazarr and everything related to it." name="description"/>
 <meta content="TRaSH" name="author"/>
-<link href="https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/" rel="canonical"/>
+<link href="https://trash-guides.info/Radarr/radarr-setup-quality-profiles-anime/" rel="canonical"/>
 <link href="../../img/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
-<title>Recommended naming scheme - TRaSH Guides</title>
+<title>How to setup Quality Profiles (Anime) - TRaSH Guides</title>
 <link href="../../assets/stylesheets/main.472b142f.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -36,7 +36,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#recommended-naming-scheme">
+<a class="md-skip" href="#how-to-setup-quality-profiles">
           Skip to content
         </a>
 </div>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Recommended naming scheme
+              How to setup Quality Profiles (Anime)
             
           </span>
 </div>
@@ -128,12 +128,12 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../Radarr/">
+<a class="md-tabs__link md-tabs__link--active" href="../">
         Radarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../">
+<a class="md-tabs__link" href="../../Sonarr/">
         Sonarr
       </a>
 </li>
@@ -203,8 +203,8 @@
         Home
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
           Radarr
           <span class="md-nav__icon md-icon"></span>
@@ -216,52 +216,123 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/">
+<a class="md-nav__link" href="../">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../Radarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-recommended-naming-scheme/">
+<a class="md-nav__link" href="../Radarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-import-custom-formats/">
+<a class="md-nav__link" href="../Radarr-import-custom-formats/">
         How to import Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-how-to-update-custom-formats/">
+<a class="md-nav__link" href="../Radarr-how-to-update-custom-formats/">
         How to Update Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles/">
+<a class="md-nav__link" href="../radarr-setup-quality-profiles/">
         How to setup Quality Profiles
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-anime/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          How to setup Quality Profiles (Anime)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         How to setup Quality Profiles (Anime)
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#media-management">
+    Media Management
+  </a>
+<nav aria-label="Media Management" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recommended-naming-scheme">
+    Recommended naming scheme
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-french/">
+<a class="md-nav__link" href="#quality-settings">
+    Quality Settings
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quality-profile">
+    Quality Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#anime-cfscoring">
+    Anime CF/Scoring
+  </a>
+<nav aria-label="Anime CF/Scoring" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#default-scoring">
+    Default Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dual-audio-scoring">
+    Dual Audio Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uncensored-scoring">
+    Uncensored Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finishing-up">
+    Finishing up
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acknowledgements">
+    Acknowledgements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../radarr-setup-quality-profiles-french/">
         How to setup Quality Profiles (French)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-collection-of-custom-formats/">
+<a class="md-nav__link" href="../Radarr-collection-of-custom-formats/">
         Collection of Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-remote-path-mapping/">
+<a class="md-nav__link" href="../Radarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
@@ -278,22 +349,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Tips/Merge-quality/">
+<a class="md-nav__link" href="../Tips/Merge-quality/">
         How to Merge Quality
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Tips/Radarr-rename-your-folders/">
+<a class="md-nav__link" href="../Tips/Radarr-rename-your-folders/">
         How to rename your folders
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Tips/Radarr-show-unknown-movie-items/">
+<a class="md-nav__link" href="../Tips/Radarr-show-unknown-movie-items/">
         Show Unknown Movie Items
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Tips/Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../Tips/Sync-2-radarr-sonarr/">
         How to Sync 2 Radarr or Sonarr with each other
       </a>
 </li>
@@ -303,8 +374,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           Sonarr
           <span class="md-nav__icon md-icon"></span>
@@ -316,93 +387,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../">
+<a class="md-nav__link" href="../../Sonarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Sonarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Recommended naming scheme
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#standard-episode-format">
-    Standard Episode Format
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#daily-episode-format">
-    Daily Episode Format
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#anime-episode-format">
-    Anime Episode Format
-  </a>
-<nav aria-label="Anime Episode Format" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#series-folder-format">
-    Series Folder Format
-  </a>
-<nav aria-label="Series Folder Format" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">
-    Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#season-folder-format">
-    Season Folder Format
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#multi-episode-style">
-    Multi-Episode Style
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#original-title-vs-original-filename">
-    Original Title vs  Original Filename
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Sonarr-Release-Profile-RegEx/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx/">
         Release Profile RegEx (WEB-DL)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Sonarr-Release-Profile-RegEx-Anime/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/">
         Release Profile RegEx (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Sonarr-remote-path-mapping/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
@@ -419,12 +429,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Tips/Merge-quality/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Merge-quality/">
         Merge quality
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Tips/Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Sync-2-radarr-sonarr/">
         Sync 2 radarr sonarr
       </a>
 </li>
@@ -909,52 +919,62 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#standard-episode-format">
-    Standard Episode Format
+<a class="md-nav__link" href="#media-management">
+    Media Management
   </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#daily-episode-format">
-    Daily Episode Format
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#anime-episode-format">
-    Anime Episode Format
-  </a>
-<nav aria-label="Anime Episode Format" class="md-nav">
+<nav aria-label="Media Management" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#series-folder-format">
-    Series Folder Format
-  </a>
-<nav aria-label="Series Folder Format" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">
-    Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
+<a class="md-nav__link" href="#recommended-naming-scheme">
+    Recommended naming scheme
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#season-folder-format">
-    Season Folder Format
+<a class="md-nav__link" href="#quality-settings">
+    Quality Settings
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#multi-episode-style">
-    Multi-Episode Style
+<a class="md-nav__link" href="#quality-profile">
+    Quality Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#anime-cfscoring">
+    Anime CF/Scoring
+  </a>
+<nav aria-label="Anime CF/Scoring" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#default-scoring">
+    Default Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dual-audio-scoring">
+    Dual Audio Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uncensored-scoring">
+    Uncensored Scoring
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finishing-up">
+    Finishing up
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#acknowledgements">
+    Acknowledgements
   </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#original-title-vs-original-filename">
-    Original Title vs  Original Filename
-  </a>
 </li>
 </ul>
 </nav>
@@ -963,92 +983,247 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Sonarr/Sonarr-recommended-naming-scheme.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Radarr/radarr-setup-quality-profiles-anime.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h1>
-<p>On the <a href="https://discord.gg/M6BvZn5" rel="noopener noreferrer" target="_blank">Sonarr Discord</a> people often ask, "What's the recommended/best way to
-name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.</p>
-<p>Why?</p>
-<p>If, for what ever reason, you ever need to do a re-install or re-import in
-the Starr Apps or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
-it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.</p>
-<p>The Tokens not available in the release won't be used/shown.</p>
-<hr/>
-<h2 id="standard-episode-format">Standard Episode Format<a class="headerlink" href="#standard-episode-format" title="Permanent link"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS: - [CLICK TO EXPAND]</summary>
-<p>Single Episode:</p>
-<p><code>The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
-<p>Multi Episode:</p>
-<p><code>The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
-</details>
-<hr/>
-<h2 id="daily-episode-format">Daily Episode Format<a class="headerlink" href="#daily-episode-format" title="Permanent link"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - <span class="o">{</span>Air-Date<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo AudioCodec<span class="o">}{</span> Mediainfo AudioChannels<span class="o">]}{</span>MediaInfo AudioLanguages<span class="o">}{[</span>MediaInfo VideoCodec<span class="o">]}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS: - [CLICK TO EXPAND]</summary>
-<p><code>The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp</code></p>
-</details>
-<hr/>
-<h2 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
-</code></pre></div>
-<details class="summary">
-<summary>RESULTS: - [CLICK TO EXPAND]</summary>
-<p>Single Episode:</p>
-<p><code>The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
-<p>Multi Episode:</p>
-<p><code>The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp</code></p>
-</details>
-<hr/>
-<h3 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link"></a></h3>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span>
-</code></pre></div>
-<p>RESULT:</p>
-<p><code>The Series Title! (2010)</code></p>
-<h4 id="optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby">Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby<a class="headerlink" href="#optional-series-folder-format-for-the-plex-tv-series-scanner-and-jellyfinemby" title="Permanent link"></a></h4>
-<p>This naming scheme is made to be compatible with the new <a href="https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242" rel="noopener noreferrer" target="_blank">Plex TV Series Scanner</a> that now support IMDB and TVDB IDs in file names.</p>
-<p>For Plex:</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdb-<span class="o">{</span>ImdbId<span class="o">}]</span>
-</code></pre></div>
-<p>RESULT:</p>
-<p><code>The Series Title! (2010) [imdb-tt1520211]</code></p>
-<p>For Jellyfin/Emby:</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>imdbid-<span class="o">{</span>ImdbId<span class="o">}]</span>
-</code></pre></div>
-<p>RESULT:</p>
-<p><code>The Series Title! (2010) [imdbid-tt1520211]</code></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.</p>
+<h1 id="how-to-setup-quality-profiles">How to setup Quality Profiles<a class="headerlink" href="#how-to-setup-quality-profiles" title="Permanent link"></a></h1>
+<p><em>aka How to setup Custom Formats (Anime)</em><br/><br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This guide is created and maintained by <a href="https://github.com/FonduemangVI">FonduemangVI</a> and <a href="https://github.com/rg9400">rg9400</a></p>
+</div>
+<p>It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.</p>
+<p>The aim of this guide is to grab the best release overall (as per <a href="https://sneedex.moe/" rel="noopener noreferrer" target="_blank">SeaDex</a>) and not necessarily just dual audio.
+The vast majority of releases can be found on <a href="https://nyaa.si/" rel="noopener noreferrer" target="_blank">Nyaa</a> or <a href="https://animebytes.tv/" rel="noopener noreferrer" target="_blank">AB</a></p>
+<div class="admonition info">
+<p>Nyaa is a public tracker while AB is an invite only tracker.</p>
 </div>
 <hr/>
-<h3 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link"></a></h3>
-<p>For this there's only one real option to use in my opinion.</p>
-<div class="highlight"><pre><span></span><code>Season <span class="o">{</span>season:00<span class="o">}</span>
-</code></pre></div>
-<p>RESULT:</p>
-<p><code>Season 01</code></p>
+<h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link"></a></h2>
+<h3 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h3>
+<p>For naming please refer to <a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a></p>
 <hr/>
-<h3 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link"></a></h3>
-<div class="highlight"><pre><span></span><code>Prefixed Range
-</code></pre></div>
-<p>RESULTS:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/results.png"><img alt="results" src="../images/results.png"/></a></p>
+<h2 id="quality-settings">Quality Settings<a class="headerlink" href="#quality-settings" title="Permanent link"></a></h2>
+<p>For quality settings please refer to <a href="/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions" rel="noopener noreferrer" target="_blank">Radarr Quality Definitions</a></p>
 <hr/>
-<h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link"></a></h2>
-<p>If you want to keep the original release name that holds all the info of the file then I suggest to use <code>{Original Title}</code> over <code>{Original Filename}</code></p>
-<p>Why?</p>
-<p>The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.</p>
-<p><code>{Original Title}</code> =&gt; <code>The.Series.Title.S01E01.Episode.Title.1080p.AMZN.WEB-DL.DDP5.1.H.264-RlsGrp</code></p>
-<p><code>{Original Filename}</code> =&gt; <code>show episode 1-1080p</code> or <code>lchd-tkk1080p</code> or <code>t1i0p3s7i8yuti</code></p>
+<h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link"></a></h2>
+<p>We need to create a new profile called <code>Remux-1080p - Anime</code> due to the way anime can be named we will need to merge a few qualities together see <a href="/Radarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">here</a> for an example.</p>
+<p>We need to add <code>Bluray-1080p Remux</code> and <code>Bluray-1080p</code> into a group together, <code>HDTV-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code>, and lastly <code>HDTV-720p</code> into the same group as <code>WEBDL-720p</code> and <code>WEBRip-720p</code> so that the scoring will work correctly.</p>
+<p>Go to <code>Settings</code> =&gt; <code>Profiles</code></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-mergedqualities.png"><img alt="!cfa-mergedqualities" src="../images/cfa-mergedqualities.png"/></a></p>
+<p>We then need to select and organise the qualities like below.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-qualityorder.png"><img alt="!cfa-qualityorder" src="../images/cfa-qualityorder.png"/></a></p>
 <hr/>
-<p>Thanks:</p>
-<p>A big Thanks to <a href="https://github.com/fryfrog">fryfrog</a>, <a href="https://github.com/rg9400">rg9400</a> and <a href="https://github.com/bakerboy448">bakerboy448</a> for the suggestions.</p>
+<h2 id="anime-cfscoring">Anime CF/Scoring<a class="headerlink" href="#anime-cfscoring" title="Permanent link"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We're going to make use of the below custom formats. See <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a> for how to import them.</p>
+</div>
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-anime.md -->
+<details class="summary">
+<summary>Anime CF/Scoring - [Click to Expand]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-01-top-seadex-muxers">Anime BD Tier 01 (Top SeaDex Muxers)</a></td>
+<td>1400</td>
+<td>fb3ccc5d5cc8f77c9055d4cb4561dded</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-02-seadex-muxers">Anime BD Tier 02 (SeaDex Muxers)</a></td>
+<td>1300</td>
+<td>66926c8fa9312bc74ab71bf69aae4f4a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-03-seadex-muxers">Anime BD Tier 03 (SeaDex Muxers)</a></td>
+<td>1200</td>
+<td>fa857662bad28d5ff21a6e611869a0ff</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-04-seadex-muxers">Anime BD Tier 04 (SeaDex Muxers)</a></td>
+<td>1100</td>
+<td>f262f1299d99b1a2263375e8fa2ddbb3</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-05-remuxes">Anime BD Tier 05 (Remuxes)</a></td>
+<td>1000</td>
+<td>ca864ed93c7b431150cc6748dc34875d</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-06-fansubs">Anime BD Tier 06 (FanSubs)</a></td>
+<td>900</td>
+<td>9dce189b960fddf47891b7484ee886ca</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-07-p2pscene">Anime BD Tier 07 (P2P/Scene)</a></td>
+<td>800</td>
+<td>1ef101b3a82646b40e0cab7fc92cd896</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-08-mini-encodes">Anime BD Tier 08 (Mini Encodes)</a></td>
+<td>700</td>
+<td>6115ccd6640b978234cc47f2c1f2cadc</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-01-muxers">Anime Web Tier 01 (Muxers)</a></td>
+<td>600</td>
+<td>8167cffba4febfb9a6988ef24f274e7e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-02-top-fansubs">Anime Web Tier 02 (Top FanSubs)</a></td>
+<td>500</td>
+<td>8526c54e36b4962d340fce52ef030e76</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-03-official-subs">Anime Web Tier 03 (Official Subs)</a></td>
+<td>400</td>
+<td>de41e72708d2c856fa261094c85e965d</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-04-official-subs">Anime Web Tier 04 (Official Subs)</a></td>
+<td>300</td>
+<td>9edaeee9ea3bcd585da9b7c0ac3fc54f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-05-fansubs">Anime Web Tier 05 (FanSubs)</a></td>
+<td>200</td>
+<td>22d953bbe897857b517928f3652b8dd3</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-web-tier-06-fansubs">Anime Web Tier 06 (FanSubs)</a></td>
+<td>100</td>
+<td>a786fbc0eae05afe3bb51aee3c83a9d4</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01">Remux Tier 01</a></td>
+<td>1050</td>
+<td>3a3ff47579026e76d6504ebea39390de</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02">Remux Tier 02</a></td>
+<td>1000</td>
+<td>9f98181fe5a3fbeb0cc29340da2a468a</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-raws">Anime Raws</a></td>
+<td>-10000</td>
+<td>06b6542a47037d1e33b15aa3677c2365</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a></td>
+<td>-10000</td>
+<td>b0fdc5897f68c9a68c70c25169f77447</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#uncensored">Uncensored</a></td>
+<td>0</td>
+<td>064af5f084a0a24458cc8ecd3220f93f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v0">v0</a></td>
+<td>-51</td>
+<td>c259005cbaeb5ab44c06eddb4751e70c</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v1">v1</a></td>
+<td>1</td>
+<td>5f400539421b8fcf71d51e6384434573</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v2">v2</a></td>
+<td>2</td>
+<td>3df5e6dfef4b09bb6002f732bed5b774</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v3">v3</a></td>
+<td>3</td>
+<td>db92c27ba606996b146b57fbe6d09186</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#v4">v4</a></td>
+<td>4</td>
+<td>d4e5e842fad129a3c097bdb2d20d31a0</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#vrv">VRV</a></td>
+<td>10</td>
+<td>60f6d50cbd3cfc3e9a8c00e3a30c3114</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#10bit">10bit</a></td>
+<td>0</td>
+<td>a5d148168c4506b55cf53984107c396e</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#anime-dual-audio">Anime Dual Audio</a></td>
+<td>0</td>
+<td>4a3b087eea2ce012fcc1ce319259a3be</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dubs-only">Dubs Only</a></td>
+<td>-10000</td>
+<td>b23eae459cc960816f2d6ba84af45055</td>
+</tr>
+</tbody>
+</table>
+</details>
+<!-- END INCLUDE -->
+<!-- --8<-- "includes/cf/radarr-anime.md" -->
+<h3 id="default-scoring">Default Scoring<a class="headerlink" href="#default-scoring" title="Permanent link"></a></h3>
+<p>The scoring that has been set is the recommended scoring, however some of the CFs are optional depending on what you prefer.
+<code>Anime Dual Audio</code>, <code>Uncensored</code> and <code>10bit</code> can be given positive scores if you want to prefer content with these attributes.</p>
+<p><code>Anime Raws</code> and <code>Dubs Only</code> are negatively scored, however if you prefer these attributes you can give them a positive score.</p>
+<p>Once the custom formats have been imported you can set the scores as above. To do this go to <code>Settings</code> =&gt; <code>Profiles</code> and select the <code>Remux-1080p - Anime</code> profile that was setup before.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p>In the profile enter the scores as per the above table in this section.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-default-scoring.png"><img alt="!cfa-default-scoring" src="../images/cfa-default-scoring.png"/></a></p>
+<p>After you are done it should look like the image above.</p>
+<h3 id="dual-audio-scoring">Dual Audio Scoring<a class="headerlink" href="#dual-audio-scoring" title="Permanent link"></a></h3>
+<p>If you prefer <code>Dual Audio</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Dual Audio</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>, and if you want to prefer it over any tiers give the <code>CF</code> a score of <code>2000</code>.</p>
+<p>If you must have <code>Dual Audio</code> releases set the <code>Minimum Custom Format Score</code> to 2000 in the <code>Remux-1080p - Anime</code> profile that you setup earlier.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does a <code>Dual Audio</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Dual Audio</code> over any tier.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-da-scoring.png"><img alt="!cfa-da-scoring" src="../images/cfa-da-scoring.png"/></a></p>
+<h3 id="uncensored-scoring">Uncensored Scoring<a class="headerlink" href="#uncensored-scoring" title="Permanent link"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most BDs are uncensored by default, so most groups do not include that in the name.</p>
+</div>
+<p>If you prefer <code>Uncensored</code> releases you have a few options depending on your preference.</p>
+<p>If you want to prefer <code>Uncensored</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>.</p>
+<p>Using this scoring you will still benefit from the tiers if a better release group does an <code>Uncensored</code> release.</p>
+<p>Below is an example of the scoring set to prefer <code>Uncensored</code> a tier above.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-uncensored-scoring.png"><img alt="!cfa-uncensored-scoring" src="../images/cfa-uncensored-scoring.png"/></a></p>
+<h3 id="finishing-up">Finishing up<a class="headerlink" href="#finishing-up" title="Permanent link"></a></h3>
+<p>Once you have set your preferred scoring you will need to make two more changes to your <code>Remux-1080p - Anime</code> profile.</p>
+<p>Make sure <code>Upgrades Allowed</code> is ticked then set the <code>Upgrade Until</code> section to <code>Bluray-1080p</code> and the <code>Upgrade Until Custom Format Score</code> to <code>10000</code> and set <code>Language</code> to <code>Original</code></p>
+<p>After this has been done your profile should look like below. This is an example of the Default Scoring setup.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-complete.png"><img alt="!cfa-complete" src="../images/cfa-complete.png"/></a></p>
+<h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
+<p>Most of my information and knowledge came from:</p>
+<ul>
+<li>
+<p>rg9400 (Building the Custom Formats, Guidance on anime groups and general knowledge share.)</p>
+</li>
+<li>
+<p>V01 from SeaDex (Guidance on anime groups and general knowledge share.)</p>
+</li>
+<li>
+<p>Drazzilb (Guidance on anime groups, testing and general knowledge share.)</p>
+</li>
+<li>
+<p><a href="https://trash-guides.info/">TRaSH</a> (For allowing me to utilize his website for our guide and general knowledge share.)</p>
+</li>
+</ul>
 <!-- BEGIN INCLUDE ../../includes/support.md -->
 <hr/>
 <div class="admonition help">
@@ -1063,7 +1238,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2022 16:33:52</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 14, 2022 13:01:12</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -1082,7 +1257,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Quality Settings (File Size)" class="md-footer__link md-footer__link--prev" href="../Sonarr-Quality-Settings-File-Size/" rel="prev">
+<a aria-label="Previous: How to setup Quality Profiles" class="md-footer__link md-footer__link--prev" href="../radarr-setup-quality-profiles/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1091,17 +1266,17 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <span class="md-footer__direction">
                 Previous
               </span>
-              Quality Settings (File Size)
+              How to setup Quality Profiles
             </div>
 </div>
 </a>
-<a aria-label="Next: Release Profile RegEx (WEB-DL)" class="md-footer__link md-footer__link--next" href="../Sonarr-Release-Profile-RegEx/" rel="next">
+<a aria-label="Next: How to setup Quality Profiles (French)" class="md-footer__link md-footer__link--next" href="../radarr-setup-quality-profiles-french/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Release Profile RegEx (WEB-DL)
+              How to setup Quality Profiles (French)
             </div>
 </div>
 <div class="md-footer__button md-icon">
