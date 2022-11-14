@@ -27,11 +27,14 @@ markdown_extensions:
   - attr_list
   - footnotes
   - pymdownx.details
-  - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.tilde
   - codehilite:
       guess_lang: true
@@ -74,31 +77,10 @@ plugins:
         updates.txt: updates.txt
         discord.md: https://discord.gg/Vau8dZ3
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
-        # Radarr old redirects
-        Radarr/V3/How-to-importexport-Custom-Formats-and-truly-make-use-of-it.md: Radarr/Radarr-import-custom-formats.md
-        Radarr/V3/Collection-of-Custom-Formats-for-RadarrV3.md: Radarr/Radarr-collection-of-custom-formats.md
-        Radarr/V3/Radarr-collection-of-custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
-        Radarr/V3/Radarr-import-custom-formats.md: Radarr/Radarr-import-custom-formats.md
-        Radarr/V3/Radarr-Quality-Settings-File-Size.md: Radarr/Radarr-Quality-Settings-File-Size.md
-        Radarr/V3/Radarr-recommended-naming-scheme.md: Radarr/Radarr-recommended-naming-scheme.md
-        Radarr/V3/Radarr-remote-path-mapping.md: Radarr/Radarr-remote-path-mapping.md
-        Radarr/V3/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
-        Radarr/V3/Tips/Radarr-rename-your-folders.md: Radarr/Tips/Radarr-rename-your-folders.md
-        Radarr/V3/Tips/Radarr-show-unknown-movie-items.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         # Radarr redirects
         Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
-        # Sonarr old redirects
-        Sonarr/V3/Remote-Path-Mappings-explained-for-Sonarr.md: Sonarr/Sonarr-remote-path-mapping.md
-        Sonarr/V3/Sonarr-Quality-Settings-File-Size.md: Sonarr/Sonarr-Quality-Settings-File-Size.md
-        Sonarr/V3/Sonarr-recommended-naming-scheme.md: Sonarr/Sonarr-recommended-naming-scheme.md
-        Sonarr/V3/Sonarr-Release-Profile-RegEx.md: Sonarr/Sonarr-Release-Profile-RegEx.md
-        Sonarr/V3/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/Sonarr-Release-Profile-RegEx-Anime.md
-        Sonarr/V3/Sonarr-remote-path-mapping.md: Sonarr/Sonarr-remote-path-mapping.md
-        # Downloader old redirects
-        NZBGet/How-to-setup-NZBGet.md: Downloaders/NZBGet/Basic-Setup.md
-        NZBGet/scripts/index.md: Downloaders/NZBGet/scripts/index.md
-        # Hardlinks old redirects
-        Misc/how-to-set-up-hardlinks-and-atomic-moves.md: Hardlinks/Hardlinks-and-Instant-Moves.md
+        Radarr/radarr-setup-custom-formats-anime.md: Radarr/radarr-setup-quality-profiles-anime.md
+        Radarr/radarr-setup-custom-formats-french.md: Radarr/radarr-setup-quality-profiles-french.md
         # How to old redirects
         How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
         How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
@@ -130,7 +112,7 @@ theme:
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
-      primary: indigio
+      primary: indigo
       accent: blue
       scheme: slate
       toggle:
