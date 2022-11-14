@@ -1,4 +1,6 @@
-# How to setup Custom Formats (French)
+# How to setup Quality Profiles
+
+*aka How to setup Custom Formats (French)*<br><br>
 
 !!! note
     This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
