@@ -6,7 +6,7 @@
     This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)
 
 !!! tip
-    Cette page est aussi disponible en Français: [Guide en Français](/Radarr/radarr-setup-custom-formats-french-fr/){:target="_blank" rel="noopener noreferrer"}.
+    Cette page est aussi disponible en Français: [Guide en Français](/Radarr/radarr-setup-quality-profiles-french-fr/){:target="_blank" rel="noopener noreferrer"}.
 
 So what is the best way to set up the Custom Profiles and which one to use with which scores to get French and English Audio?
 
