@@ -24,7 +24,7 @@
   }, {
     "name": "Ignore AV1",
     "trash_id": "4861d8238f9234606df6721df6e27deb",
-    "term": "/\bAV1\b/i"
+    "term": "/\\bAV1\\b/i"
   }],
   "required": [],
   "preferred": [{
