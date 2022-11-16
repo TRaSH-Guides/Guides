@@ -4,43 +4,43 @@
   "includePreferredWhenRenaming": false,
   "required": [],
   "preferred": [{
-      "score": 180,
+      "score": 1800,
       "terms": [
         "/(-deflate|-inflate)\\b/i"
       ]
     },
     {
-      "score": 150,
+      "score": 1700,
       "terms": [
-        "/(-ABBIE|-AJP69|-CasStudio|-CtrlHD|-FLUX|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SIC|T6D|-TOMMY|-ViSUM)\\b/i"
+        "/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SIC|T6D|-TOMMY|-ViSUM)\\b/i"
       ]
     },
     {
-      "score": 125,
+      "score": 1650,
       "terms": [
-        "/(3CTWeB|BLUTONiUM|-BTW|-Chotab|-Cinefeel|-CiT|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\\b/i"
+        "/(3CTWeB|BLUTONiUM|-BTW|-Chotab|-Cinefeel|-CiT|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SDCC|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\\b/i"
       ]
     },
     {
-      "score": 100,
+      "score": 1600,
       "terms": [
-        "/(-ViSiON)\\b/i"
+        "/(SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\\b/i"
       ]
     },
     {
-      "score": 12,
+      "score": 13,
       "terms": [
         "/(repack3)/i"
       ]
     },
     {
-      "score": 11,
+      "score": 12,
       "terms": [
         "/(repack2)/i"
       ]
     },
     {
-      "score": 10,
+      "score": 11,
       "terms": [
         "/\\b(repack|proper)\\b/i"
       ]
