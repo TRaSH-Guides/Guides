@@ -1,0 +1,17 @@
+{
+  "trash_id": "5d2317d99af813b6529c7ebf01c83533",
+  "trash_score": "75",
+  "name": "VDL",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Videoland",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(vdl|Videoland)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    }
+  ]
+}
