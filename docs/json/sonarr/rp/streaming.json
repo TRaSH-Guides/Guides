@@ -39,7 +39,9 @@
         "/\\b(hbo)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(it)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(nlz)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     }
   ],
