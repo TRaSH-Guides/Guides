@@ -1,3 +1,19 @@
+# 2022-11-19 09:00
+**[Sonarr]**
+- Added: Videoland + NLZIET streaming services. #973
+- Added: RlsGrp `SwAgLaNdEr` This is a group that's on the BTN list and does Dutch TV shows from different Dutch Streaming Services. #973
+- Added: RlsGrp `CRFW`, `SDCC`, `SLiGNOME`, `T4H`. #973
+- Added: RlsGrp `HONE` known for their hybrid 4k releases. #973
+- Updated: Scores to be consistent with Radarr/Sonarr. #973
+- Updated: Scores to be consistent with Radarr/Sonarr. #973
+
+**[Radarr]**
+- Updated: CF `No-RlsGroup` #975
+
+**[Radarr Guide]**
+*How to setup Quality Profiles*
+- Fix: link to naming guide. #977
+
 # 2022-11-15 00:30
 **[Sonarr]**
 - Add: `Lilith-Raws` to anime-raws. #964
