@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "SwAgLaNdEr",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SwAgLaNdEr)\\b"
+      }
+    },
+    {
       "name": "T4H",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
