@@ -68,6 +68,15 @@
       }
     },
     {
+      "name": "NanakoRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Nanako(Raws)"
+      }
+    },
+    {
       "name": "NC-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

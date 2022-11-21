@@ -50,12 +50,30 @@
       }
     },
     {
+      "name": "Lilith-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Lilith[ ._-]?(Raws)"
+      }
+    },
+    {
       "name": "LowPower-raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "LowPower[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "NanakoRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Nanako(Raws)"
       }
     },
     {
