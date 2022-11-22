@@ -23,21 +23,21 @@
       }
     },
     {
-      "name": "Foxhound",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Foxhound)\\b"
-      }
-    },
-    {
       "name": "MARBLECAKE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(MARBLECAKE)\\b"
+      }
+    },
+    {
+      "name": "MiXER",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MiXER)\\b"
       }
     },
     {

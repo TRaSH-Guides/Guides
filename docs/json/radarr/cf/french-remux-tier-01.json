@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "BlackAngel",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BlackAngel)\\b"
+      }
+    },
+    {
       "name": "Choco",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -65,6 +74,15 @@
       "required": false,
       "fields": {
         "value": "\\b(ONLY)\\b"
+      }
+    },
+    {
+      "name": "PEPiTE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PEPiTE)\\b"
       }
     },
     {
