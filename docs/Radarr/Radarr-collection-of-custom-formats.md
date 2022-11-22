@@ -2147,7 +2147,6 @@ I also made 3 guides related to this one.
 ??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
 
     - Groups doing remuxes with multiple sources (discs) mixing what's best.
-    - Groups active doing remuxes from a single sources (discs).
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2164,6 +2163,7 @@ I also made 3 guides related to this one.
 ??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that use an automated way.
+    - Groups active doing remuxes from a single sources (discs).
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
@@ -2204,6 +2204,8 @@ I also made 3 guides related to this one.
     - Groups that created encodes from the remuxes without micro-sizing them.
     - HDR/DoVi (Depending what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2220,7 +2222,7 @@ I also made 3 guides related to this one.
 ??? faq "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of GP releases (best encode in it's class 1080p and lower).
+    - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2237,6 +2239,8 @@ I also made 3 guides related to this one.
 ??? faq "FR HD Bluray Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2253,6 +2257,7 @@ I also made 3 guides related to this one.
 ??? faq "FR WEB Tier 01 - [CLICK TO EXPAND]"
 
     - placeholder
+    - Groups that source directly from the streaming service
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2269,6 +2274,8 @@ I also made 3 guides related to this one.
 ??? faq "FR WEB Tier 02 - [CLICK TO EXPAND]"
 
     - placeholder
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
