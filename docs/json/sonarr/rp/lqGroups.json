@@ -4,7 +4,7 @@
   "includePreferredWhenRenaming": false,
   "required": [],
   "preferred": [{
-    "score": -100,
+    "score": -10000,
     "terms": [
       "/(-BRiNK|-CHX|-GHOSTS|MeGusta|-NERO|nhanc3|Pahe\\.ph|Pahe\\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\\b/i"
     ]

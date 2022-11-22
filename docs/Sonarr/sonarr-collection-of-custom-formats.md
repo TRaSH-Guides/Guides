@@ -56,11 +56,13 @@ I also made 3 guides related to this one.
 |                       |                       |                             | [HBO Max](#hmax)    |
 |                       |                       |                             | [HBO](#hbo)         |
 |                       |                       |                             | [Hulu](#hulu)       |
+|                       |                       |                             | [NLZiet](#nlz)      |
 |                       |                       |                             | [Netflix](#nf)      |
 |                       |                       |                             | [Paramount+](#pmtp) |
 |                       |                       |                             | [Peacock TV](#pcok) |
 |                       |                       |                             | [Quibi](#qibi)      |
 |                       |                       |                             | [SHOWTIME](#sho)    |
+|                       |                       |                             | [Videoland](#vdl)   |
 |                       |                       |                             | [YouTube Red](#red) |
 |                       |                       |                             | [iTunes](#it)       |
 
@@ -1303,6 +1305,24 @@ I also made 3 guides related to this one.
 
 ------
 
+### NLZ
+
+<sub>NLZiet</sub>
+
+??? faq "NLZiet - [CLICK TO EXPAND]"
+
+    NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nlz.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### NF
 
 <sub>Netflix</sub>
@@ -1387,6 +1407,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sho.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VDL
+
+<sub>Videoland</sub>
+
+??? faq "Videoland - [CLICK TO EXPAND]"
+
+    Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

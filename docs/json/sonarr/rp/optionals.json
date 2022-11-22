@@ -35,21 +35,21 @@
       "term": "/\\bS\\d+\\b(?!E\\d+\\b)/i"
     }]
   }, {
-    "score": 10,
+    "score": 500,
     "terms": [{
       "name": "Prefer HDR",
       "trash_id": "bc7a6383cbe88c3ee2d6396e1aacc0b3",
       "term": "/\\bHDR(\\b|\\d)/i"
     }]
   }, {
-    "score": 100,
+    "score": 1500,
     "terms": [{
       "name": "Prefer Dolby Vision",
       "trash_id": "fa47da3377076d82d07c4e95b3f13d07",
       "term": "/\\b(dv|dovi|dolby[ .]?vision)\\b/i"
     }]
   }, {
-    "score": -25,
+    "score": -10000,
     "terms": [{
       "name": "Dislike retags: rartv, rarbg, eztv, TGx",
       "trash_id": "6f2aefa61342a63387f2a90489e90790",
