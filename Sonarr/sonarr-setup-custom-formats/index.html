@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -982,13 +985,13 @@
 <p>After you've added the Custom Formats, as explained in <a href="/Sonarr/sonarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
 You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.</p>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cf-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cf-settings-profiles.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Sonarr Custom Formats can be set per profile and isn't global</p>
 </div>
 <p>Select the profile that you want to use/prefer.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-quality-profiles.png"><img alt="!cf-quality-profiles" src="../images/cf-quality-profiles.png"/></a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-profile-selected.png"><img alt="!cf-profile-selected" src="../images/cf-profile-selected.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-quality-profiles.png"><img alt="!cf-quality-profiles" src="../images/cf-quality-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-profile-selected.png"><img alt="!cf-profile-selected" src="../images/cf-profile-selected.png"/></a></p>
 <ol>
 <li>Profile name.</li>
 <li>Allow upgrades. Sonarr will stop upgrading quality once (3) is met.</li>
@@ -999,7 +1002,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <p>At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.</p>
 <details class="check">
 <summary>Screenshot example - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-quality-profile-cf.png"><img alt="!cf-quality-profile-cf" src="../images/cf-quality-profile-cf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-quality-profile-cf.png"><img alt="!cf-quality-profile-cf" src="../images/cf-quality-profile-cf.png"/></a></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
@@ -1170,7 +1173,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-hdr-formats.md -->
 <details class="summary">
 <summary>HDR Formats - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1386,7 +1389,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
 <p>I also suggest to change the Propers and Repacks settings in Sonarr</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">Repack/Proper</a> Custom Format.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Sonarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Sonarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Sonarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Sonarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
@@ -1518,7 +1521,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <p>Use the following main settings in your profile.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-profile-web1080.png"><img alt="!cf-profile-web1080" src="../images/cf-profile-web1080.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-profile-web1080.png"><img alt="!cf-profile-web1080" src="../images/cf-profile-web1080.png"/></a></p>
 <div class="admonition info">
 <p>For some older shows you might want to enable the <code>WEB 720p</code> or even the <code>HDTV 1080p</code>.</p>
 </div>
@@ -1540,7 +1543,7 @@ If you think the sizes are too big to your preference then stop reading and see 
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-hdr-formats.md -->
 <details class="summary">
 <summary>HDR Formats - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1744,7 +1747,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
 <p>I also suggest to change the Propers and Repacks settings in Sonarr</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">Repack/Proper</a> Custom Format.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Sonarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Sonarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Sonarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Sonarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
@@ -1876,7 +1879,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <p>Use the following main settings in your profile.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-profile-web2160.png"><img alt="!cf-profile-web2160" src="../images/cf-profile-web2160.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-profile-web2160.png"><img alt="!cf-profile-web2160" src="../images/cf-profile-web2160.png"/></a></p>
 <div class="admonition info">
 <p>The reason why I have WEB 1080p merged with the 2160p is because some NF releases won't be released as 4k, but I still want to have DV/HDR releases.
 If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a>.</p>
@@ -1926,7 +1929,7 @@ Being when you add a Custom Format what you prefer and you set it to something l
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
 <p>I also suggest to change the Propers and Repacks settings in Sonarr</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Sonarr/sonarr-collection-of-custom-formats/#repackproper">Repack/Proper</a> Custom Format.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="../images/cf-mm-propers-repacks-disable.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="../images/cf-mm-propers-repacks-disable.png"/></a></p>
 <p>This way you make sure the Custom Format preferences will be used instead.</p>
 </details>
 <h3 id="minimum-custom-format-score">Minimum Custom Format Score<a class="headerlink" href="#minimum-custom-format-score" title="Permanent link"></a></h3>
@@ -2038,5 +2041,5 @@ Being when you add a Custom Format what you prefer and you set it to something l
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

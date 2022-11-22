@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1150,7 +1153,7 @@
 <h2 id="downloads">Downloads<a class="headerlink" href="#downloads" title="Permanent link"></a></h2>
 <p><code>Tools</code> =&gt; <code>Options</code> =&gt; <code>Downloads</code> (Or click on the cogwheel to access the options)</p>
 <h3 id="when-adding-a-torrent">When adding a torrent<a class="headerlink" href="#when-adding-a-torrent" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-downloads-when-adding-a-torrent.png"><img alt="!When adding a torrent" src="../images/qb-options-downloads-when-adding-a-torrent.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-downloads-when-adding-a-torrent.png"><img alt="!When adding a torrent" src="../images/qb-options-downloads-when-adding-a-torrent.png"/></a></p>
 <ol>
 <li>
 <p>For consistency with other torrents I recommend leaving this on <code>Original</code>.</p>
@@ -1176,7 +1179,7 @@
 </li>
 </ol>
 <h3 id="saving-management">Saving Management<a class="headerlink" href="#saving-management" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-downloads-saving-management.png"><img alt="Saving Management" src="../images/qb-options-downloads-saving-management.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-downloads-saving-management.png"><img alt="Saving Management" src="../images/qb-options-downloads-saving-management.png"/></a></p>
 <ol>
 <li>
 <p>Make sure this is set to <code>Automatic</code>. Your downloads will not go into the category folder otherwise.</p>
@@ -1227,7 +1230,7 @@
 <hr/>
 <h2 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link"></a></h2>
 <h3 id="listening-port">Listening Port<a class="headerlink" href="#listening-port" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-connection.png"><img alt="!Listening Port" src="../images/qbt-options-connection.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-connection.png"><img alt="!Listening Port" src="../images/qbt-options-connection.png"/></a></p>
 <ol>
 <li>
 <p>Set this to TCP for the best performance</p>
@@ -1255,13 +1258,13 @@
 </li>
 </ol>
 <h3 id="connections-limits">Connections Limits<a class="headerlink" href="#connections-limits" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-connection-connections-limits.png"><img alt="!Connections Limits" src="../images/qbt-options-connection-connections-limits.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-connection-connections-limits.png"><img alt="!Connections Limits" src="../images/qbt-options-connection-connections-limits.png"/></a></p>
 <p>The best settings for this depends on many factors so I won't be covering this.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>personal preference based on your setup and connection.</code></strong></p>
 </div>
 <h3 id="proxy-server">Proxy Server<a class="headerlink" href="#proxy-server" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-connection-proxy-server.png"><img alt="!Proxy Server" src="../images/qbt-options-connection-proxy-server.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-connection-proxy-server.png"><img alt="!Proxy Server" src="../images/qbt-options-connection-proxy-server.png"/></a></p>
 <p>This is where you would add for example your SOCKS5 settings from your VPN provider.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>I personally don't recommend this unsecure option being it's un-encrypted and only spoofs your IP.</code></strong></p>
@@ -1269,7 +1272,7 @@
 <hr/>
 <h2 id="speed">Speed<a class="headerlink" href="#speed" title="Permanent link"></a></h2>
 <h3 id="global-rate-limits">Global Rate Limits<a class="headerlink" href="#global-rate-limits" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-speed-global-rate-limits.png"><img alt="!Global Rate Limits" src="../images/qbt-options-speed-global-rate-limits.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-speed-global-rate-limits.png"><img alt="!Global Rate Limits" src="../images/qbt-options-speed-global-rate-limits.png"/></a></p>
 <p>Here you can set your global rate limits, meaning your maximum download/upload speed used by qBittorrent. (For all torrents)</p>
 <p>The best settings depends on many factors.</p>
 <ul>
@@ -1283,7 +1286,7 @@
 </li>
 </ul>
 <h3 id="alternative-rate-limits">Alternative Rate Limits<a class="headerlink" href="#alternative-rate-limits" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-speed-alternative-rate-limits.png"><img alt="!Alternative Rate Limits" src="../images/qbt-options-speed-alternative-rate-limits.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-speed-alternative-rate-limits.png"><img alt="!Alternative Rate Limits" src="../images/qbt-options-speed-alternative-rate-limits.png"/></a></p>
 <p>When enabled, it basically does the same as above, but with the option to setup a schedule.</p>
 <p>Examples:</p>
 <ul>
@@ -1296,7 +1299,7 @@
 </li>
 </ul>
 <h3 id="rate-limits-settings">Rate Limits Settings<a class="headerlink" href="#rate-limits-settings" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbt-options-speed-rate-limits-settings.png"><img alt="!Rate Limits Settings" src="../images/qbt-options-speed-rate-limits-settings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbt-options-speed-rate-limits-settings.png"><img alt="!Rate Limits Settings" src="../images/qbt-options-speed-rate-limits-settings.png"/></a></p>
 <p>Not going to cover the technical part of what it does, but the following settings are recommended for best speeds (in most cases).</p>
 <ol>
 <li>
@@ -1321,7 +1324,7 @@
 <hr/>
 <h2 id="bittorrent">Bittorrent<a class="headerlink" href="#bittorrent" title="Permanent link"></a></h2>
 <h3 id="privacy">Privacy<a class="headerlink" href="#privacy" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-bittorrent-privacy.png"><img alt="!Privacy" src="../images/qb-options-bittorrent-privacy.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-bittorrent-privacy.png"><img alt="!Privacy" src="../images/qb-options-bittorrent-privacy.png"/></a></p>
 <ol>
 <li>
 <p>These settings are mainly used for public trackers (and should be enabled for them) and not for private trackers, decent private trackers use a private flag where they ignore these settings.</p>
@@ -1343,13 +1346,13 @@
 </li>
 </ol>
 <h3 id="torrent-queueing">Torrent Queueing<a class="headerlink" href="#torrent-queueing" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-bittorrent-torrent-queueing.png"><img alt="!Torrent Queueing" src="../images/qb-options-bittorrent-torrent-queueing.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-bittorrent-torrent-queueing.png"><img alt="!Torrent Queueing" src="../images/qb-options-bittorrent-torrent-queueing.png"/></a></p>
 <p>These options allow you to control the number of active torrents being downloaded and uploaded.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>personal preference based on your setup and connection.</code></strong></p>
 </div>
 <h3 id="seeding-limits">Seeding Limits<a class="headerlink" href="#seeding-limits" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-bittorrent-seeding-limits.png"><img alt="!Seeding Limits" src="../images/qb-options-bittorrent-seeding-limits.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-bittorrent-seeding-limits.png"><img alt="!Seeding Limits" src="../images/qb-options-bittorrent-seeding-limits.png"/></a></p>
 <ol>
 <li>
 <p>Your maximum seeding ratio preference. (When both ratio and seeding time are enabled it will trigger the action on whatever happens first.)</p>
@@ -1375,7 +1378,7 @@
 <p>Personally, I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use <a href="/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage" rel="noopener noreferrer" target="_blank">qBit Manage</a></p>
 </div>
 <h3 id="automatically-add-these-trackers-to-new-downloads">Automatically add these trackers to new downloads<a class="headerlink" href="#automatically-add-these-trackers-to-new-downloads" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-bittorrent-automatically-add-these-trackers.png"><img alt="!Automatically add these trackers to new downloads" src="../images/qb-options-bittorrent-automatically-add-these-trackers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-bittorrent-automatically-add-these-trackers.png"><img alt="!Automatically add these trackers to new downloads" src="../images/qb-options-bittorrent-automatically-add-these-trackers.png"/></a></p>
 <div class="admonition check">
 <p><strong>Recommendation: <code>Disabled</code></strong></p>
 </div>
@@ -1386,14 +1389,14 @@
 <hr/>
 <h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Permanent link"></a></h2>
 <h3 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-webui-authentication.png"><img alt="!Authentication" src="../images/qb-options-webui-authentication.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-webui-authentication.png"><img alt="!Authentication" src="../images/qb-options-webui-authentication.png"/></a></p>
 <ol>
 <li>When enabled there will be no authentication required for clients on localhost.</li>
 <li>When enabled there will be no authentication required for clients in the <code>step.3</code> whitelist.</li>
 <li>Add all IP subnets that you want to bypass authentication.</li>
 </ol>
 <h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-options-webui-security.png"><img alt="!Security" src="../images/qb-options-webui-security.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-options-webui-security.png"><img alt="!Security" src="../images/qb-options-webui-security.png"/></a></p>
 <ol>
 <li>
 <p>In some cases when this is enabled it could result in issues.</p>
@@ -1500,5 +1503,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

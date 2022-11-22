@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -964,7 +967,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <p>When adding a new series make sure you set the series type to Anime</p>
 <details class="check">
 <summary>example - [Click to Expand]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-seriestype.png"><img alt="!cfa-seriestype" src="../images/cfa-seriestype.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-seriestype.png"><img alt="!cfa-seriestype" src="../images/cfa-seriestype.png"/></a></p>
 </details>
 <h3 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Custom Formats <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
@@ -990,7 +993,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <div class="highlight"><pre><span></span><code>Prefixed Range
 </code></pre></div>
 <p>Result:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-prefixedrange.png"><img alt="result" src="../images/cfa-prefixedrange.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-prefixedrange.png"><img alt="result" src="../images/cfa-prefixedrange.png"/></a></p>
 <hr/>
 <h2 id="quality-settings">Quality Settings<a class="headerlink" href="#quality-settings" title="Permanent link"></a></h2>
 <p>For quality settings please refer to <a href="/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime" rel="noopener noreferrer" target="_blank">Sonarr Quality Definitions - Anime</a></p>
@@ -1000,10 +1003,10 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <p>We need to create a new profile called <code>Remux-1080p - Anime</code> due to the way anime can be named we will need to merge a few qualities together see <a href="/Sonarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">here</a> for an example.</p>
 <p>We need to add <code>Bluray-1080p Remux</code> and <code>Bluray-1080p</code> into a group together, <code>HDTV-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code>, and lastly <code>HDTV-720p</code> into the same group as <code>WEBDL-720p</code> and <code>WEBRip-720p</code> so that the scoring will work correctly.</p>
 <p>Go to <code>Settings</code> =&gt; <code>Profiles</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-mergedqualities.png"><img alt="!cfa-mergedqualities" src="../images/cfa-mergedqualities.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-mergedqualities.png"><img alt="!cfa-mergedqualities" src="../images/cfa-mergedqualities.png"/></a></p>
 <p>We then need to select and organise the qualities like below.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-qualityorder.png"><img alt="!cfa-qualityorder" src="../images/cfa-qualityorder.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-qualityorder.png"><img alt="!cfa-qualityorder" src="../images/cfa-qualityorder.png"/></a></p>
 <hr/>
 <h2 id="anime-cfscoring">Anime CF/Scoring<a class="headerlink" href="#anime-cfscoring" title="Permanent link"></a></h2>
 <div class="admonition note">
@@ -1162,9 +1165,9 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <code>Anime Dual Audio</code>, <code>Uncensored</code> and <code>10bit</code> can be given positive scores if you want to prefer content with these attributes.</p>
 <p><code>Anime Raws</code> and <code>Dubs Only</code> are negatively scored, however if you prefer these attributes you can give them a positive score.</p>
 <p>Once the custom formats have been imported you can set the scores as above. To do this go to <code>Settings</code> =&gt; <code>Profiles</code> and select the <code>Remux-1080p - Anime</code> profile that was setup before.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-settings-profiles.png"><img alt="!cf-settings-profiles" src="../images/cfa-settings-profiles.png"/></a></p>
 <p>In the profile enter the scores as per the above table in this section.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-default-scoring.png"><img alt="!cfa-default-scoring" src="../images/cfa-default-scoring.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-default-scoring.png"><img alt="!cfa-default-scoring" src="../images/cfa-default-scoring.png"/></a></p>
 <p>After you are done it should look like the image above.</p>
 <h3 id="dual-audio-scoring">Dual Audio Scoring<a class="headerlink" href="#dual-audio-scoring" title="Permanent link"></a></h3>
 <p>If you prefer <code>Dual Audio</code> releases you have a few options depending on your preference.</p>
@@ -1172,7 +1175,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <p>If you must have <code>Dual Audio</code> releases set the <code>Minimum Custom Format Score</code> to 2000 in the <code>Remux-1080p - Anime</code> profile that you setup earlier.</p>
 <p>Using this scoring you will still benefit from the tiers if a better release group does a <code>Dual Audio</code> release.</p>
 <p>Below is an example of the scoring set to prefer <code>Dual Audio</code> over any tier.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-da-scoring.png"><img alt="!cfa-da-scoring" src="../images/cfa-da-scoring.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-da-scoring.png"><img alt="!cfa-da-scoring" src="../images/cfa-da-scoring.png"/></a></p>
 <h3 id="uncensored-scoring">Uncensored Scoring<a class="headerlink" href="#uncensored-scoring" title="Permanent link"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1182,12 +1185,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <p>If you want to prefer <code>Uncensored</code> within the same tier give the <code>CF</code> a score of <code>10</code>, if you want it to be preferred a tier above give the <code>CF</code> a score of <code>101</code>.</p>
 <p>Using this scoring you will still benefit from the tiers if a better release group does an <code>Uncensored</code> release.</p>
 <p>Below is an example of the scoring set to prefer <code>Uncensored</code> a tier above.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-uncensored-scoring.png"><img alt="!cfa-uncensored-scoring" src="../images/cfa-uncensored-scoring.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-uncensored-scoring.png"><img alt="!cfa-uncensored-scoring" src="../images/cfa-uncensored-scoring.png"/></a></p>
 <h3 id="finishing-up">Finishing up<a class="headerlink" href="#finishing-up" title="Permanent link"></a></h3>
 <p>Once you have set your preferred scoring you will need to make one more change to your <code>Remux-1080p - Anime</code> profile.</p>
 <p>Make sure <code>Upgrades Allowed</code> is ticked then set the <code>Upgrade Until</code> section to <code>Bluray-1080p</code> and the <code>Upgrade Until Custom Format Score</code> to <code>10000</code></p>
 <p>After this has been done your profile should look like below. This is an example of the Default Scoring setup.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cfa-complete.png"><img alt="!cfa-complete" src="../images/cfa-complete.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-complete.png"><img alt="!cfa-complete" src="../images/cfa-complete.png"/></a></p>
 <h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
 <p>Most of my information and knowledge came from:</p>
 <ul>
@@ -1291,5 +1294,5 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

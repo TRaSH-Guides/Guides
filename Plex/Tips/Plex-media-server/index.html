@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1289,15 +1292,15 @@
 <p>Some settings are only visible for Plex Pass holders.</p>
 </div>
 <p>All changes need to be done on your Plex Media Server.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/plex-settings-icon.png"><img alt="!Plex App" src="../images/plex-settings-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/plex-settings-icon.png"><img alt="!Plex App" src="../images/plex-settings-icon.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Why didn't you cover option .... ?</p>
-<p>I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></a></p>
+<p>I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
 </div>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-settings.png"><img alt="!Plex: Settings" src="../images/settings-settings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-settings.png"><img alt="!Plex: Settings" src="../images/settings-settings.png"/></a></p>
 <h3 id="remote-access">Remote Access<a class="headerlink" href="#remote-access" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-remote-access.png"><img alt="!Plex: Settings - Remote Access" src="../images/settings-remote-access.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-remote-access.png"><img alt="!Plex: Settings - Remote Access" src="../images/settings-remote-access.png"/></a></p>
 <ol>
 <li>Make sure you have enabled advanced settings (This will be needed for all the settings)</li>
 <li>Enable/Disable Remote access (if you disable it ignore the rest of these settings)</li>
@@ -1316,7 +1319,7 @@
 <hr/>
 <h3 id="library">Library<a class="headerlink" href="#library" title="Permanent link"></a></h3>
 <h4 id="scan-my-library-automatically">Scan my library automatically<a class="headerlink" href="#scan-my-library-automatically" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-scan-my-library-automatically.png"><img alt="!Settings - Library - Scan my library automatically" src="../images/settings-library-scan-my-library-automatically.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-scan-my-library-automatically.png"><img alt="!Settings - Library - Scan my library automatically" src="../images/settings-library-scan-my-library-automatically.png"/></a></p>
 <p>When a change is detected in the source location for a library’s content, the appropriate library will be scanned. This function relies on the computer’s operating system providing the “something changed” trigger. Some operating systems don’t provide this trigger and content mounted via a network will also typically not work. If your library doesn’t automatically scan, you may have to set a periodical scan or do it manually.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
@@ -1328,43 +1331,43 @@
 <p>Please don't forget to check out his other Unraid Video's <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </details>
 <h4 id="run-a-partial-scan-when-changes-are-detected">Run a partial scan when changes are detected<a class="headerlink" href="#run-a-partial-scan-when-changes-are-detected" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"><img alt="!Settings - Library - Run a partial scan when changes are detected" src="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"><img alt="!Settings - Library - Run a partial scan when changes are detected" src="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"/></a></p>
 <p>When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="include-music-libraries-in-automatic-updates">Include music libraries in automatic updates<a class="headerlink" href="#include-music-libraries-in-automatic-updates" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-include-music-libraries-in-automatic-updates.png"><img alt="!Settings - Library - Include music libraries in automatic updates" src="../images/settings-library-include-music-libraries-in-automatic-updates.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-include-music-libraries-in-automatic-updates.png"><img alt="!Settings - Library - Include music libraries in automatic updates" src="../images/settings-library-include-music-libraries-in-automatic-updates.png"/></a></p>
 <p>I don't do music, so this choice is up to you, and I won't be covering it.</p>
 <h4 id="scan-my-library-periodically">Scan my library periodically<a class="headerlink" href="#scan-my-library-periodically" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-scan-my-library-periodically.png"><img alt="!Settings - Library - Scan my library periodically" src="../images/settings-library-scan-my-library-periodically.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-scan-my-library-periodically.png"><img alt="!Settings - Library - Scan my library periodically" src="../images/settings-library-scan-my-library-periodically.png"/></a></p>
 <p>Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>Do you need a extra scan for your library to recognize new media?</em></p>
 </div>
 <h4 id="empty-trash-automatically-after-every-scan">Empty trash automatically after every scan<a class="headerlink" href="#empty-trash-automatically-after-every-scan" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-empty-trash-automatically-after-every-scan.png"><img alt="!Settings - Library - Empty trash automatically after every scan" src="../images/settings-library-empty-trash-automatically-after-every-scan.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-empty-trash-automatically-after-every-scan.png"><img alt="!Settings - Library - Empty trash automatically after every scan" src="../images/settings-library-empty-trash-automatically-after-every-scan.png"/></a></p>
 <p>With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="allow-media-deletion">Allow media deletion<a class="headerlink" href="#allow-media-deletion" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-allow-media-deletion.png"><img alt="!Settings - Library - Allow media deletion" src="../images/settings-library-allow-media-deletion.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-allow-media-deletion.png"><img alt="!Settings - Library - Allow media deletion" src="../images/settings-library-allow-media-deletion.png"/></a></p>
 <p>The owner of the server will be allowed to delete media files from disk.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)</em></p>
 </div>
 <h4 id="run-scanner-tasks-at-a-lower-priority">Run scanner tasks at a lower priority<a class="headerlink" href="#run-scanner-tasks-at-a-lower-priority" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"><img alt="!Settings - Library - Run scanner tasks at a lower priority" src="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"><img alt="!Settings - Library - Run scanner tasks at a lower priority" src="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"/></a></p>
 <p>On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>Makes sure it uses less resources and ensure they do not interfere with regular streaming.</em></p>
 </div>
 <h4 id="generate-video-preview-thumbnails">Generate video preview thumbnails<a class="headerlink" href="#generate-video-preview-thumbnails" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-generate-video-preview-thumbnails.png"><img alt="!Settings - Library - Generate video preview thumbnails" src="../images/settings-library-generate-video-preview-thumbnails.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-video-preview-thumbnails.png"><img alt="!Settings - Library - Generate video preview thumbnails" src="../images/settings-library-generate-video-preview-thumbnails.png"/></a></p>
 <p>This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Never</code></strong></p>
@@ -1381,7 +1384,7 @@
 <p>The images are stored in your Plex database location (/config) so <u>be careful you don’t fill the drive <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:"/></u></p>
 </div>
 <h4 id="generate-intro-video-markers">Generate intro video markers<a class="headerlink" href="#generate-intro-video-markers" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-generate-intro-video-markers.png"><img alt="!Settings - Library - Generate intro video markers" src="../images/settings-library-generate-intro-video-markers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-intro-video-markers.png"><img alt="!Settings - Library - Generate intro video markers" src="../images/settings-library-generate-intro-video-markers.png"/></a></p>
 <p>You can choose to have TV episodes analyzed to try and detect when the “intro” occurs during playback. When detected, apps will then offer a <code>Skip Intro</code> button, allowing you to quickly jump over the intro.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>as a scheduled task</code></strong></p>
@@ -1389,7 +1392,7 @@
 <p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
 </div>
 <h4 id="generate-chapter-thumbnails">Generate chapter thumbnails<a class="headerlink" href="#generate-chapter-thumbnails" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-library-generate-chapter-thumbnails.png"><img alt="!Settings - Library - Generate chapter thumbnails" src="../images/settings-library-generate-chapter-thumbnails.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-chapter-thumbnails.png"><img alt="!Settings - Library - Generate chapter thumbnails" src="../images/settings-library-generate-chapter-thumbnails.png"/></a></p>
 <p>Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>as a scheduled task</code></strong></p>
@@ -1399,21 +1402,21 @@
 <hr/>
 <h3 id="network">Network<a class="headerlink" href="#network" title="Permanent link"></a></h3>
 <h4 id="enable-ipv6-support">Enable IPv6 support<a class="headerlink" href="#enable-ipv6-support" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-enable-server-support-for-ipv6.png"><img alt="!Settings - Network - Enable server support for IPv6" src="../images/settings-network-enable-server-support-for-ipv6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-server-support-for-ipv6.png"><img alt="!Settings - Network - Enable server support for IPv6" src="../images/settings-network-enable-server-support-for-ipv6.png"/></a></p>
 <p>Enable IPv6 support.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>If you're not sure your network 100% works with ip6 <u>don't Enable it</u>.</em></p>
 </div>
 <h4 id="secure-connections">Secure connections<a class="headerlink" href="#secure-connections" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-secure-connections.png"><img alt="!Settings - Network - Secure connections" src="../images/settings-network-secure-connections.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-secure-connections.png"><img alt="!Settings - Network - Secure connections" src="../images/settings-network-secure-connections.png"/></a></p>
 <p>Choose how your Plex Media Server handles secure connections.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Preferred</code></strong></p>
 <p><em>Accept and prefer secure connections when they’re available for a Plex app, but allow regular HTTP connections if the app doesn’t support secure connections or if one can’t be established</em></p>
 </div>
 <h4 id="preferred-network-interface">Preferred network interface<a class="headerlink" href="#preferred-network-interface" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-preferred-network-interface.png"><img alt="!Settings - Network - Preferred network interface" src="../images/settings-network-preferred-network-interface.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-preferred-network-interface.png"><img alt="!Settings - Network - Preferred network interface" src="../images/settings-network-preferred-network-interface.png"/></a></p>
 <p>For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -1423,64 +1426,64 @@
 <p><strong>Suggested: <code>Whatever suits your setup</code></strong></p>
 </div>
 <h4 id="strict-tls-configuration">Strict TLS configuration<a class="headerlink" href="#strict-tls-configuration" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-strict-tls-configuration.png"><img alt="!Settings - Network - Strict TLS configuration" src="../images/settings-network-strict-tls-configuration.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-strict-tls-configuration.png"><img alt="!Settings - Network - Strict TLS configuration" src="../images/settings-network-strict-tls-configuration.png"/></a></p>
 <p>If this setting is enabled, it prevents Plex Media Server from using or accepting the deprecated TLSv1.0 and v1.1 protocols, as well as legacy weak ciphers. May prevent older clients from connecting. The vast majority of users will have no reason to enable this option (and receive no benefit from doing so).</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 </div>
 <h4 id="enable-local-network-discovery-gdm">Enable local network discovery (GDM)<a class="headerlink" href="#enable-local-network-discovery-gdm" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"><img alt="!Settings - Network - Enable local network discovery (GDM)" src="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"><img alt="!Settings - Network - Enable local network discovery (GDM)" src="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"/></a></p>
 <p>Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="remote-streams-allowed-per-user">Remote streams allowed per user<a class="headerlink" href="#remote-streams-allowed-per-user" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-remote-streams-allowed-per-user.png"><img alt="!Settings - Network - Remote streams allowed per user" src="../images/settings-network-remote-streams-allowed-per-user.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-remote-streams-allowed-per-user.png"><img alt="!Settings - Network - Remote streams allowed per user" src="../images/settings-network-remote-streams-allowed-per-user.png"/></a></p>
 <p>You can set the maximum number of simultaneous streams each remote user is allowed to have.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Whatever suits your setup</code></strong></p>
 </div>
 <h4 id="lan-networks">LAN Networks<a class="headerlink" href="#lan-networks" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-lan-networks.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-lan-networks.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-lan-networks.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-lan-networks.png"/></a></p>
 <p>It lets you specify which IP addresses or networks will be considered to be “local” to you.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Your local IP/netmasks</code></strong></p>
 <p><em>If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)</em></p>
 </div>
 <h4 id="treat-wan-ip-as-lan-bandwidth">Treat WAN IP As LAN Bandwidth<a class="headerlink" href="#treat-wan-ip-as-lan-bandwidth" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"/></a></p>
 <p>Allows incoming requests from this network’s WAN IP address to be treated as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="enable-relay">Enable Relay<a class="headerlink" href="#enable-relay" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-enable-relay.png"><img alt="!Settings - Network - Enable Relay" src="../images/settings-network-enable-relay.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-relay.png"><img alt="!Settings - Network - Enable Relay" src="../images/settings-network-enable-relay.png"/></a></p>
 <p>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.</em></p>
 </div>
 <h4 id="custom-server-access-urls">Custom server access URLs<a class="headerlink" href="#custom-server-access-urls" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-custom-server-access-urls.png"><img alt="!Settings - Network - Custom server access URLs" src="../images/settings-network-custom-server-access-urls.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-custom-server-access-urls.png"><img alt="!Settings - Network - Custom server access URLs" src="../images/settings-network-custom-server-access-urls.png"/></a></p>
 <p>A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
 <p><em>Example: <code>https://plex.mycustomdomain.com:32400</code></em></p>
 </div>
 <h4 id="webhooks">Webhooks<a class="headerlink" href="#webhooks" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-network-webhooks.png"><img alt="!Settings - Network - Webhooks" src="../images/settings-network-webhooks.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-webhooks.png"><img alt="!Settings - Network - Webhooks" src="../images/settings-network-webhooks.png"/></a></p>
 <p>This feature can be enabled to allow your server to send events to external services. For example <a href="/Notifiarr/Quick-Start/" rel="noopener noreferrer" target="_blank">Notifiarr</a></p>
 <hr/>
 <h3 id="transcoders">Transcoders<a class="headerlink" href="#transcoders" title="Permanent link"></a></h3>
 <h4 id="transcoder-quality">Transcoder quality<a class="headerlink" href="#transcoder-quality" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-transcoder-transcoder-quality.png"><img alt="!Settings - Transcoder - Transcoder quality" src="../images/settings-transcoder-transcoder-quality.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-transcoder-quality.png"><img alt="!Settings - Transcoder - Transcoder quality" src="../images/settings-transcoder-transcoder-quality.png"/></a></p>
 <p>This will influence the quality used when transcoding media.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Automatic</code></strong></p>
 <p><em>Most users should leave it set to Automatic. Hardware-Accelerated Streaming is not affected by this setting.</em></p>
 </div>
 <h4 id="transcoder-temporary-directory">Transcoder temporary directory<a class="headerlink" href="#transcoder-temporary-directory" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-transcoder-transcoder-temporary-directory.png"><img alt="!Settings - Transcoder - Transcoder temporary directory" src="../images/settings-transcoder-transcoder-temporary-directory.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-transcoder-temporary-directory.png"><img alt="!Settings - Transcoder - Transcoder temporary directory" src="../images/settings-transcoder-transcoder-temporary-directory.png"/></a></p>
 <p>Directory to use when transcoding temporary files for streaming.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Depending on your setup, if possible, your RAM (disk)</code></strong></p>
@@ -1493,7 +1496,7 @@
 </div>
 </div>
 <h4 id="enable-hdr-tone-mapping">Enable HDR tone mapping<a class="headerlink" href="#enable-hdr-tone-mapping" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-transcoder-enable-hdr-tone-mapping.png"><img alt="!Settings - Transcoder - Enable HDR tone mapping" src="../images/settings-transcoder-enable-hdr-tone-mapping.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-enable-hdr-tone-mapping.png"><img alt="!Settings - Transcoder - Enable HDR tone mapping" src="../images/settings-transcoder-enable-hdr-tone-mapping.png"/></a></p>
 <p>This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
@@ -1504,20 +1507,20 @@
 <p>Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed out” colors that occur when converting HDR content without tone mapping.</p>
 </div>
 <h4 id="use-hardware-acceleration-when-available">Use hardware acceleration when available<a class="headerlink" href="#use-hardware-acceleration-when-available" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-transcoder-use-hardware-acceleration-when-available.png"><img alt="!Settings - Transcoder - Use hardware acceleration when available" src="../images/settings-transcoder-use-hardware-acceleration-when-available.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-use-hardware-acceleration-when-available.png"><img alt="!Settings - Transcoder - Use hardware acceleration when available" src="../images/settings-transcoder-use-hardware-acceleration-when-available.png"/></a></p>
 <p>To use Hardware-Accelerated Streaming in Plex Media Server.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="use-hardware-accelerated-video-encoding">Use hardware-accelerated video encoding<a class="headerlink" href="#use-hardware-accelerated-video-encoding" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"><img alt="!Settings - Transcoder - Use hardware-accelerated video encoding" src="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"><img alt="!Settings - Transcoder - Use hardware-accelerated video encoding" src="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"/></a></p>
 <p>To use Hardware-Accelerated Encoding in Plex Media Server.</p>
 <div class="admonition check">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <hr/>
 <h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-manage.png"><img alt="!Plex Settings - Manage" src="../images/settings-manage.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-manage.png"><img alt="!Plex Settings - Manage" src="../images/settings-manage.png"/></a></p>
 <h3 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link"></a></h3>
 <p>Here you will find your libraries you've added to your Plex Media Server.</p>
 <details class="example">
@@ -1539,7 +1542,7 @@
 <p class="admonition-title">I will only cover the libraries settings for Movies and TV shows</p>
 </div>
 <h4 id="movies">Movies<a class="headerlink" href="#movies" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-movies-part1.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-movies-part1.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part1.png"/></a></p>
 <ol>
 <li>
 <p>The new version of the Plex Movie agent/scanner</p>
@@ -1549,7 +1552,7 @@
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-movies-part2.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-movies-part2.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part2.png"/></a></p>
 <ol>
 <li>
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
@@ -1567,7 +1570,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-movies-part3.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-movies-part3.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part3.png"/></a></p>
 <ol>
 <li>
 <p>Automatically create collections when there are more than the selected number of items for an available collection.</p>
@@ -1577,7 +1580,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-movies-part4.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-movies-part4.png"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part4.png"/></a></p>
 <ol>
 <li>
 <p>This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.</p>
@@ -1602,7 +1605,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </li>
 </ol>
 <h4 id="tv">TV<a class="headerlink" href="#tv" title="Permanent link"></a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-tv-part1.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-tv-part1.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part1.png"/></a></p>
 <ol>
 <li>
 <p>The new version of the Plex Movie agent/scanner</p>
@@ -1612,7 +1615,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-tv-part2.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-tv-part2.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part2.png"/></a></p>
 <ol>
 <li>How episodes are named on disk. If your naming follows The MovieDB or TheTVDB choose that here.</li>
 <li>Use season titles when available.</li>
@@ -1625,7 +1628,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-tv-part3.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-tv-part3.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part3.png"/></a></p>
 <ol>
 <li>
 <p>When scanning this library, prefer embedded tags and local files if present.</p>
@@ -1635,7 +1638,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/manage-libraries-tv-part4.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/manage-libraries-tv-part4.png"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part4.png"/></a></p>
 <ol>
 <li>
 <p>This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.</p>
@@ -1764,5 +1767,5 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

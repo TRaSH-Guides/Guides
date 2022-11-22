@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1225,7 +1228,7 @@
 <p>Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), backup settings before you do.</p>
 <p>To enable SSH on your Synology take a look <a href="#ssh" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <p>To enable Home folders, go to <code>Control Panel</code> &gt; <code>User &amp; Group</code> &gt; <code>Advanced</code> &gt; <code>Enable user home service</code> at the bottom.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/home-folders.png"><img alt="!home-folders" src="../images/home-folders.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/home-folders.png"><img alt="!home-folders" src="../images/home-folders.png"/></a></p>
 <p>When you enabled these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.</p>
 <div class="highlight"><pre><span></span><code>curl -sL git.io/syno-script &gt; ~/syno-script
 </code></pre></div>
@@ -1243,29 +1246,29 @@
 <p>Later in this guide, we will fill this share with subfolders.</p>
 <p>To create a new share:</p>
 <p><code>Control Panel</code> &gt; <code>Shared Folder</code> &gt; click <code>Create</code> &gt; choose <code>Create Shared Folder</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/create_share.png"><img alt="!create_share" src="../images/create_share.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/create_share.png"><img alt="!create_share" src="../images/create_share.png"/></a></p>
 <p>Name this shared folder <code>data</code>. You can disable the trash can. Click next until you are done.</p>
 <h2 id="create-a-user">Create a user<a class="headerlink" href="#create-a-user" title="Permanent link"></a></h2>
 <p>For this, we are going to create a new user that only has access to the share(s) that we use for this guide.</p>
 <p>Go to <code>Control Panel</code> &gt; <code>User &amp; Group</code></p>
 <p>In the <code>User</code> section, create a new user. Name it whatever you like, but for this guide we will use <code>docker</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/adduser.PNG"><img alt="!adduser" src="../images/adduser.PNG"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/adduser.PNG"><img alt="!adduser" src="../images/adduser.PNG"/></a></p>
 <p>Fill out the rest of the information, generate a password or type your own.</p>
 <p>Click next, you will now be able to select which group this user will belong to, it should only be <code>users</code>. Click <code>Next</code>.</p>
 <h3 id="assign-shared-folder-permissions">Assign shared folder permissions<a class="headerlink" href="#assign-shared-folder-permissions" title="Permanent link"></a></h3>
 <p>In this screen you will be able to select which Shares this user will have access to, click <code>No Access</code> on the top, this will deny all access.</p>
 <p>Now only select <code>Read/Write</code> on the shares <code>docker</code> and <code>data</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/adduser_2.PNG"><img alt="!Assign shared folders permissions" src="../images/adduser_2.PNG"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/adduser_2.PNG"><img alt="!Assign shared folders permissions" src="../images/adduser_2.PNG"/></a></p>
 <p>Click <code>Next</code> until you reach <code>Assign application permissions</code></p>
 <h3 id="assign-application-permissions">Assign application permissions<a class="headerlink" href="#assign-application-permissions" title="Permanent link"></a></h3>
 <p>In this screen you will be able to select which application this user will have access to, Check <code>Deny</code> for all applications.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/adduser_3.PNG"><img alt="!Assign application permissions" src="../images/adduser_3.PNG"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/adduser_3.PNG"><img alt="!Assign application permissions" src="../images/adduser_3.PNG"/></a></p>
 <p>Continue to click <code>Next</code> until you are finished.</p>
 <h2 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link"></a></h2>
 <p>You are mostly going to use the terminal. Some parts will need the Synology web GUI.
 To enable terminal, you need to enable SSH in the Synology Settings.</p>
 <p><code>Control Panel</code> &gt; <code>Terminal &amp; SNMP</code> &gt; <code>Enable SSH service</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/synology-ssh.png"><img alt="!synology-control-panel" src="../images/synology-ssh.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/synology-ssh.png"><img alt="!synology-control-panel" src="../images/synology-ssh.png"/></a></p>
 <p>Then use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">Putty</a> to SSH into your Synology.</p>
 <p>Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.</p>
 <p>If you get a popup asking if you want to trust the key,
@@ -1274,7 +1277,7 @@ Just press <code>OK</code> or <code>ACCEPT</code></p>
 <p>In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
 <p>Go into your terminal app, login to your synology ssh.</p>
 <p>Once logged in type <code>id $user</code>. Change $user to the newly created username <code>docker</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/synology-id.png"><img alt="!synology-id" src="../images/synology-id.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/synology-id.png"><img alt="!synology-id" src="../images/synology-id.png"/></a></p>
 <p>This will show you the UID (aka PUID).
 Which in this screenshot is <code>1035</code> for the docker user
 and the GID (aka PGID) which is <code>100</code> for the users group.
@@ -1597,5 +1600,5 @@ If you had previous installed apps, make a backup of their config folders.</p>
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

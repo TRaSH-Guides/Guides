@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -903,24 +906,24 @@
 <p>The screenshots in the examples are using the following root path <code>/data</code></p>
 </div>
 <hr/>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-add-category.png"><img alt="!qBittorrent - Add Categories" src="../images/qb-add-category.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-add-category.png"><img alt="!qBittorrent - Add Categories" src="../images/qb-add-category.png"/></a></p>
 <ol>
 <li>Click on the left under categories with your left mouse button.</li>
 <li>Click on <code>Add category</code></li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-new-category.png"><img alt="!qBittorrent - New Categories" src="../images/qb-new-category.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-new-category.png"><img alt="!qBittorrent - New Categories" src="../images/qb-new-category.png"/></a></p>
 <ol>
 <li>Enter your category.</li>
 <li>Enter your save path subfolder (keep it simple and recognizable)</li>
 </ol>
 <hr/>
 <h2 id="paths-and-categories-breakdown">Paths and Categories Breakdown<a class="headerlink" href="#paths-and-categories-breakdown" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-category-breakdown.png"><img alt="!qBittorrent - Paths and Categories Breakdown" src="../images/qb-category-breakdown.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-category-breakdown.png"><img alt="!qBittorrent - Paths and Categories Breakdown" src="../images/qb-category-breakdown.png"/></a></p>
 <h2 id="downloads-do-not-go-into-the-category-folder">Downloads do not go into the category folder<a class="headerlink" href="#downloads-do-not-go-into-the-category-folder" title="Permanent link"></a></h2>
 <div class="admonition attention">
 <p class="admonition-title">Downloads do not go into the category folder</p>
 <p>When your downloads ends up in <code>/data/torrents/</code> and not in <code>/data/torrents/{tv|movies|music}</code> then you probably forgot to change <code>Default Torrent Management Mode:</code> to <code>Automatic</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qb-saving-management.png"><img alt="!qBittorrent - Default Torrent Management Mode" src="../images/qb-saving-management.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qb-saving-management.png"><img alt="!qBittorrent - Default Torrent Management Mode" src="../images/qb-saving-management.png"/></a></p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/support.md -->
 <hr/>
@@ -1012,5 +1015,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

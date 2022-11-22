@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1074,13 +1077,13 @@
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
 <h3 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>General</code> =&gt; <code>Tuning</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sabnzbd-general-tuning.png"><img alt="!General: Tuning" src="../images/sabnzbd-general-tuning.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sabnzbd-general-tuning.png"><img alt="!General: Tuning" src="../images/sabnzbd-general-tuning.png"/></a></p>
 <p>I recommend setting a sane maximum speed and then limiting below that, to keep your internet connection happy. You can use <code>Settings</code> =&gt; <code>Scheduling</code> to toggle the limit on and off based on time, slowing it down while your family is using the internet and speeding it up at night when they're not.</p>
 <hr/>
 <h2 id="folders">Folders<a class="headerlink" href="#folders" title="Permanent link"></a></h2>
 <h3 id="user-folders">User Folders<a class="headerlink" href="#user-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>Users Folders</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Hardlinks/images/sabnzbd-folders.png"><img alt="!Folders: User Folders" src="/Hardlinks/images/sabnzbd-folders.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Hardlinks/images/sabnzbd-folders.png"><img alt="!Folders: User Folders" src="/Hardlinks/images/sabnzbd-folders.png"/></a></p>
 <p>Here you setup your download path/location.</p>
 <!-- BEGIN INCLUDE ../../../includes/downloaders/warning-path-location.md -->
 <div class="admonition warning">
@@ -1098,12 +1101,12 @@
 <!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 <h3 id="system-folders">System Folders<a class="headerlink" href="#system-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>System Folders</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sabnzbd-folders-system-folders.png"><img alt="!Folders: System Folders" src="../images/sabnzbd-folders-system-folders.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sabnzbd-folders-system-folders.png"><img alt="!Folders: System Folders" src="../images/sabnzbd-folders-system-folders.png"/></a></p>
 <p>I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.</p>
 <hr/>
 <h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h2>
 <p><code>Settings</code> =&gt; <code>Servers</code> =&gt; <code>Add Server</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sabnzbd-servers.png"><img alt="!Servers" src="../images/sabnzbd-servers.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sabnzbd-servers.png"><img alt="!Servers" src="../images/sabnzbd-servers.png"/></a></p>
 <div class="admonition info">
 <p>USP = Usenet Service Provider</p>
 </div>
@@ -1126,7 +1129,7 @@
 <h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link"></a></h2>
 <h3 id="queue">Queue<a class="headerlink" href="#queue" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Queue</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sabnzbd-switches-queue.png"><img alt="!Switches: Queue" src="../images/sabnzbd-switches-queue.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sabnzbd-switches-queue.png"><img alt="!Switches: Queue" src="../images/sabnzbd-switches-queue.png"/></a></p>
 <ol>
 <li>When during download it becomes clear that too much data is missing, abort the job. and makes sure Sonarr/Radarr will get a notification and can look for another release.</li>
 <li>Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.</li>
@@ -1136,7 +1139,7 @@
 </ol>
 <h3 id="post-processing">Post processing<a class="headerlink" href="#post-processing" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Post processing</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sabnzbd-switches-post-processing.png"><img alt="!Switches: Post-processing" src="../images/sabnzbd-switches-post-processing.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sabnzbd-switches-post-processing.png"><img alt="!Switches: Post-processing" src="../images/sabnzbd-switches-post-processing.png"/></a></p>
 <ol>
 <li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
 <li>Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.</li>
@@ -1160,16 +1163,16 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 <details class="example">
 <summary>Sonarr - [CLICK TO EXPAND]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr: Settings =&gt; Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr: Settings =&gt; Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
 <p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3.</p>
 <p>Select Sabnzbd at step 4 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-download-clients-sabnzbd.png"><img alt="!Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-sabnzbd.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-download-clients-sabnzbd.png"><img alt="!Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-sabnzbd.png"/></a></p>
 </details>
 <h3 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Radarr - [CLICK TO EXPAND]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr: Settings =&gt; Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr: Settings =&gt; Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
 <p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3,</p>
 <p>and both boxes under <code>Failed Download Handling</code> at step 4.</p>
 </details>
@@ -1265,5 +1268,5 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

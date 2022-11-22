@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -914,11 +917,11 @@
 <p>Please follow the installation instruction from <a href="https://github.com/FlareSolverr/FlareSolverr#installation" rel="noopener noreferrer" target="_blank">FlareSolverr</a></p>
 <h2 id="add-flaresolverr-to-prowlarr">Add FlareSolverr to Prowlarr<a class="headerlink" href="#add-flaresolverr-to-prowlarr" title="Permanent link"></a></h2>
 <p><code>Settings</code> =&gt; <code>indexers</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/settings-indexers.png"><img alt="Settings =&gt; images" src="../images/settings-indexers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-indexers.png"><img alt="Settings =&gt; images" src="../images/settings-indexers.png"/></a></p>
 <p>Click on the + sign and select <code>FlareSolverr</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/add-indexer-proxy-flaresolverr.png"><img alt="Add Indexers" src="../images/add-indexer-proxy-flaresolverr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/add-indexer-proxy-flaresolverr.png"><img alt="Add Indexers" src="../images/add-indexer-proxy-flaresolverr.png"/></a></p>
 <p>Add the following info</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/add-proxy-flaresolverr.png"><img alt="Add Proxy FlareSolverr" src="../images/add-proxy-flaresolverr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/add-proxy-flaresolverr.png"><img alt="Add Proxy FlareSolverr" src="../images/add-proxy-flaresolverr.png"/></a></p>
 <ol>
 <li>Name of the Proxy in Prowlarr.</li>
 <li>The tags for this proxy.</li>
@@ -929,9 +932,9 @@
 </ol>
 <h2 id="add-flaresolverr-to-your-indexer">Add FlareSolverr to your indexer<a class="headerlink" href="#add-flaresolverr-to-your-indexer" title="Permanent link"></a></h2>
 <p>Select the indexer that you want to use with FlareSolverr</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/select-indexer.png"><img alt="Select Indexer" src="../images/select-indexer.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/select-indexer.png"><img alt="Select Indexer" src="../images/select-indexer.png"/></a></p>
 <p>Scroll down to the bottom and add the tag you've set up earlier at step 2.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/add-tag-to-indexer-flaresolverr.png"><img alt="Add tag to indexer" src="../images/add-tag-to-indexer-flaresolverr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/add-tag-to-indexer-flaresolverr.png"><img alt="Add tag to indexer" src="../images/add-tag-to-indexer-flaresolverr.png"/></a></p>
 <p>Click <code>Test</code> and <code>Save</code>.</p>
 <p>Now the indexer should be using FlareSolverr.</p>
 <hr/>
@@ -1015,5 +1018,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

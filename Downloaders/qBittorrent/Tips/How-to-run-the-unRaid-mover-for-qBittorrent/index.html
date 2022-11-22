@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1066,22 +1069,22 @@
 <h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the Array is started the first time.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png"/></a></p>
 <p>Select at the bottom <code>ADD NEW SCRIPT</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png"/></a></p>
 <p>A popup will appear where you can give it a name, for this example we're going to use <code>Install qBittorrent API</code> and then click on <code>OK</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-enter-name.png"><img alt="!Install qBittorrent API" src="../images/Unraid-user-scripts-add-new-script-enter-name.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-enter-name.png"><img alt="!Install qBittorrent API" src="../images/Unraid-user-scripts-add-new-script-enter-name.png"/></a></p>
 <p>Click in the list on the cogwheel of the new user scrip you made.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"/></a></p>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 pip3 install qbittorrent-api
 </code></pre></div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api.png"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-api.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api.png"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-api.png"/></a></p>
 <p>Select in the schedule list when the script should run, and choose <code>At First Array Start Only</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api-schedule.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-api-schedule.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api-schedule.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-api-schedule.png"/></a></p>
 <p>Click on <code>RUN IN BACKGROUND</code> or restart your unRaid server so the qBit API is installed.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"><img alt="!RUN IN BACKGROUND" src="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"><img alt="!RUN IN BACKGROUND" src="../images/Unraid-settings-user-scripts-qbit-api-run-background.png"/></a></p>
 <hr/>
 <h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the unRaid server is started.</p>
@@ -1120,13 +1123,13 @@ pip3 install qbittorrent-api
 <h4 id="final-steps">Final steps<a class="headerlink" href="#final-steps" title="Permanent link"></a></h4>
 <p>Now it's time to setup the scheduler when the mover should run.</p>
 <p>Go to your unRaid Dashboard to your settings tab and select in the <code>User Utilities</code> at the bottom the new plugin you installed <code>User Scripts</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-icon.png"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png"/></a></p>
 <p>Select at the bottom <code>ADD NEW SCRIPT</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-icon.png"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png"/></a></p>
 <p>A popup will appear where you can give it a name, for this example we're going to use <code>qBittorrent Mover</code> and then click on <code>OK</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png"><img alt="!qBittorrent Mover" src="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png"><img alt="!qBittorrent Mover" src="../images/Unraid-user-scripts-add-new-script-enter-name-qbt.png"/></a></p>
 <p>Click in the list on the cogwheel of the new user scrip you made.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"/></a></p>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 /usr/local/emhttp/plugins/dynamix/scripts/notify -s <span class="s2">"qBittorrent Mover"</span> -d <span class="s2">"qBittorrent Mover starting @ `date +%H:%M:%S`."</span>
@@ -1139,13 +1142,13 @@ pip3 install qbittorrent-api
 <p class="admonition-title">Info</p>
 <p>Replace the <code>/mnt/user/data/scripts/mover.py</code> path to the path where you placed your python script.</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover.png"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-mover.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover.png"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-mover.png"/></a></p>
 <p>Select in the schedule list when the script should run, and choose <code>Custom</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-schedule.png"/></a></p>
 <p>After changing to <code>Custom</code> you get on the right a extra option where you can setup your cron schedule when it should be run.</p>
 <p>For this example we're going to let the script run a 4am at night. <code>0 4 * * *</code></p>
 <p>Setup your own schedule <a href="https://crontab.guru/">HERE</a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover-cron.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-cron.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-mover-cron.png"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-qbit-mover-cron.png"/></a></p>
 <hr/>
 <div class="admonition help">
 <p class="admonition-title">Questions or Suggestions?</p>
@@ -1244,5 +1247,5 @@ pip3 install qbittorrent-api
 </div>
 <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

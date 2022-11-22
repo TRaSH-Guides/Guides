@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1151,7 +1154,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <li>Select <code>On Grab</code> and <code>On Import</code>.</li>
 <li>Click the Folder icon or type in the path to the script you chose earlier.</li>
 </ol>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-customscript.png"><img alt="!rpa-customscript" src="../images/rpa-customscript.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-customscript.png"><img alt="!rpa-customscript" src="../images/rpa-customscript.png"/></a></p>
 <p>Now when you download or import any files the script will run and clear out those files that you most likely won't use and if you want them well this script isn't for you.</p>
 </details>
 <hr/>
@@ -1189,15 +1192,15 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="highlight"><pre><span></span><code>Prefixed Range
 </code></pre></div>
 <p>RESULTS:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/results.png"><img alt="results" src="../images/results.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/results.png"><img alt="results" src="../images/results.png"/></a></p>
 <details class="success">
 <summary>Example</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-mediamanage.png"><img alt="!Example image of above" src="../images/rpa-mediamanage.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-mediamanage.png"><img alt="!Example image of above" src="../images/rpa-mediamanage.png"/></a></p>
 </details>
 <hr/>
 <h2 id="quality-profile">Quality Profile<a class="headerlink" href="#quality-profile" title="Permanent link"></a></h2>
 <p>We need to add <code>HDTV-1080p</code> and <code>Bluray-1080p</code> into the same group as <code>WEBDL-1080p</code> and <code>WEBRip-1080p</code> so that it will download correctly and not upgrade past HDTV-1080P if Preferred Words does not allow it.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-quality-profile-group.png"><img alt="!rpa-quality-profile-group" src="../images/rpa-quality-profile-group.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-quality-profile-group.png"><img alt="!rpa-quality-profile-group" src="../images/rpa-quality-profile-group.png"/></a></p>
 <hr/>
 <h2 id="indexers">Indexers<a class="headerlink" href="#indexers" title="Permanent link"></a></h2>
 <p>We need to add the Anime Categories to our indexers otherwise this all won't work very well.</p>
@@ -1207,11 +1210,11 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <li>We need to open <code>Settings -&gt; Indexers</code></li>
 <li>Select the Indexer(s) you would like to use for <code>Anime</code></li>
 <li>Select the dropdown for <code>Anime Categories</code>.
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-indexer-1.png"><img alt="!rpa-indexer-1" src="../images/rpa-indexer-1.png"/></a></li>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-indexer-1.png"><img alt="!rpa-indexer-1" src="../images/rpa-indexer-1.png"/></a></li>
 <li>Select the <code>Anime</code> category.
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-indexer-2.png"><img alt="!rpa-indexer-2" src="../images/rpa-indexer-2.png"/></a></li>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-indexer-2.png"><img alt="!rpa-indexer-2" src="../images/rpa-indexer-2.png"/></a></li>
 <li>Click outside the pop-up modal but inside the <code>Add Indexer</code> modal.
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-indexer-3.png"><img alt="!rpa-indexer-3" src="../images/rpa-indexer-3.png"/></a></li>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-indexer-3.png"><img alt="!rpa-indexer-3" src="../images/rpa-indexer-3.png"/></a></li>
 </ol>
 </details>
 <hr/>
@@ -1229,7 +1232,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>DO</strong> Check mark <code>Include Preferred when Renaming</code> on this release profile.
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-release-sources-1.png"><img alt="!rpa-release-sources-1" src="../images/rpa-release-sources-1.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-release-sources-1.png"><img alt="!rpa-release-sources-1" src="../images/rpa-release-sources-1.png"/></a></p>
 </div>
 <h4 id="multi-audio">Multi-Audio<a class="headerlink" href="#multi-audio" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[500]</strong></p>
@@ -1247,7 +1250,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When done it should look something like this:
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-release-profile-1.png"><img alt="!rpa-release-profile-1" src="../images/rpa-release-profile-1.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-release-profile-1.png"><img alt="!rpa-release-profile-1" src="../images/rpa-release-profile-1.png"/></a></p>
 </div>
 <hr/>
 <h3 id="second-release-profile">Second Release Profile<a class="headerlink" href="#second-release-profile" title="Permanent link"></a></h3>
@@ -1255,7 +1258,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>DO NOT</strong> Check mark <code>Include Preferred when Renaming</code>
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-release-sources-2.png"><img alt="!rpa-release-sources-2" src="../images/rpa-release-sources-2.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-release-sources-2.png"><img alt="!rpa-release-sources-2" src="../images/rpa-release-sources-2.png"/></a></p>
 </div>
 <h4 id="must-not-contain">Must Not Contain<a class="headerlink" href="#must-not-contain" title="Permanent link"></a></h4>
 <p>The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go. If there is a reason something shouldn't be here let me know and your logic and I will be open to adjusting.</p>
@@ -1499,12 +1502,12 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When done it should look something like this:
-<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-release-profile-2.png"><img alt="!rpa-release-profile-2" src="../images/rpa-release-profile-2.png"/></a></p>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-release-profile-2.png"><img alt="!rpa-release-profile-2" src="../images/rpa-release-profile-2.png"/></a></p>
 </div>
 <hr/>
 <h3 id="completed">Completed<a class="headerlink" href="#completed" title="Permanent link"></a></h3>
 <p>When completed your Release Profiles should look like this:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpa-release-profile-3.png"><img alt="!rpa-release-profile-3" src="../images/rpa-release-profile-3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpa-release-profile-3.png"><img alt="!rpa-release-profile-3" src="../images/rpa-release-profile-3.png"/></a></p>
 <h3 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link"></a></h3>
 <p>Most of my information and knowledge came from:</p>
 <ul>
@@ -1612,5 +1615,5 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

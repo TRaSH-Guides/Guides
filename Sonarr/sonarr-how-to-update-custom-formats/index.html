@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -903,15 +906,15 @@
 <p>The manual way is almost the same as the Import Custom Format way found <a href="/Sonarr/sonarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 <h3 id="in-sonarr">In Sonarr<a class="headerlink" href="#in-sonarr" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Custom Formats</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-settings-cf.png"><img alt="cf-settings-cf" src="../images/cf-settings-cf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-settings-cf.png"><img alt="cf-settings-cf" src="../images/cf-settings-cf.png"/></a></p>
 <h3 id="open-the-custom-format-you-want-to-update">Open the Custom Format you want to update<a class="headerlink" href="#open-the-custom-format-you-want-to-update" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import-to-update.png"><img alt="!Import To Update" src="../images/cf-import-to-update.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import-to-update.png"><img alt="!Import To Update" src="../images/cf-import-to-update.png"/></a></p>
 <h3 id="paste-the-custom-format">Paste the Custom Format<a class="headerlink" href="#paste-the-custom-format" title="Permanent link"></a></h3>
 <p>In the empty <code>Custom Format JSON</code> box (1) you just paste the <code>JSON</code> that you got from the <a href="/Sonarr/sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Custom Format Collection</a> or provided to you from other sources followed by the <code>Import</code> button (2).</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import-cf.png"><img alt="cf-import-cf" src="../images/cf-import-cf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import-cf.png"><img alt="cf-import-cf" src="../images/cf-import-cf.png"/></a></p>
 <h3 id="save-the-custom-format">Save the Custom Format<a class="headerlink" href="#save-the-custom-format" title="Permanent link"></a></h3>
 <p>After selecting the <code>Import</code> button you will get a screen that has all the Custom Format variables filled in correctly, all you need to do now is click on the <code>Save</code> button and you're done.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import-done.png"><img alt="cf-import-done" src="../images/cf-import-done.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import-done.png"><img alt="cf-import-done" src="../images/cf-import-done.png"/></a></p>
 <div class="admonition attention">
 <p class="admonition-title">The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
 </div>
@@ -1005,5 +1008,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1028,11 +1031,11 @@
 </div>
 <h4 id="adding-the-radarr-sync-list">Adding the Radarr Sync list<a class="headerlink" href="#adding-the-radarr-sync-list" title="Permanent link"></a></h4>
 <p>In <code>Radarr 2</code> go to <code>Settings</code> =&gt; <code>Lists</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-settings-lists.png"><img alt="Radarr Settings Lists" src="../images/radarr-settings-lists.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-settings-lists.png"><img alt="Radarr Settings Lists" src="../images/radarr-settings-lists.png"/></a></p>
 <p>Click on the + to add a list and select <code>Radarr</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-add-list.png"><img alt="Radarr add List" src="../images/radarr-add-list.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-add-list.png"><img alt="Radarr add List" src="../images/radarr-add-list.png"/></a></p>
 <p>Then you get a screen with the following options:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-add-lists-options.png"><img alt="Radarr Add Lists Options" src="../images/radarr-add-lists-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-add-lists-options.png"><img alt="Radarr Add Lists Options" src="../images/radarr-add-lists-options.png"/></a></p>
 <ol>
 <li>The name you want to call your Sync list.</li>
 <li>Enable to Enable the list.</li>
@@ -1051,9 +1054,9 @@
 <h4 id="radarr-download-client-setup">Radarr Download client setup<a class="headerlink" href="#radarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Radarr instances, this all can be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr - Settings Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr - Settings Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
 <p>Select your preferred download client.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-settings-download-clients-categories.png"><img alt="!Radarr - Settings Download Clients Categories" src="../images/radarr-settings-download-clients-categories.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-settings-download-clients-categories.png"><img alt="!Radarr - Settings Download Clients Categories" src="../images/radarr-settings-download-clients-categories.png"/></a></p>
 <p>The only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Radarr 2</code></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -1073,16 +1076,16 @@
 </div>
 <h4 id="extra-preparation">Extra preparation<a class="headerlink" href="#extra-preparation" title="Permanent link"></a></h4>
 <p>In <code>Sonarr 1</code> go to <code>Settings</code> =&gt; <code>Profiles</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-settings-profiles.png"><img alt="!Sonarr - Settings - Profiles" src="../images/sonarr-settings-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-settings-profiles.png"><img alt="!Sonarr - Settings - Profiles" src="../images/sonarr-settings-profiles.png"/></a></p>
 <p>Clone your used profile and rename your profile from <code>Profilename - Copy</code> to <code>Profilename!</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-clone-profile.png"><img alt="!Sonarr - Clone Profile" src="../images/sonarr-clone-profile.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-clone-profile.png"><img alt="!Sonarr - Clone Profile" src="../images/sonarr-clone-profile.png"/></a></p>
 <h4 id="adding-the-sonarr-sync-list">Adding the Sonarr Sync list<a class="headerlink" href="#adding-the-sonarr-sync-list" title="Permanent link"></a></h4>
 <p>In <code>Sonarr 2</code> go to <code>Settings</code> =&gt; <code>Import Lists</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-settings-import-lists.png"><img alt="!Sonarr Settings Import Lists" src="../images/sonarr-settings-import-lists.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-settings-import-lists.png"><img alt="!Sonarr Settings Import Lists" src="../images/sonarr-settings-import-lists.png"/></a></p>
 <p>Click on the + to add a list and select <code>Sonarr</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-add-list.png"><img alt="!Sonarr add List" src="../images/sonarr-add-list.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-add-list.png"><img alt="!Sonarr add List" src="../images/sonarr-add-list.png"/></a></p>
 <p>Then you get a screen with the following options:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-add-lists-options.png"><img alt="!Sonarr Add Lists Options" src="../images/sonarr-add-lists-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-add-lists-options.png"><img alt="!Sonarr Add Lists Options" src="../images/sonarr-add-lists-options.png"/></a></p>
 <ol>
 <li>The name you want to call your Sync list.</li>
 <li>Enable so the shows will be automatically added.</li>
@@ -1100,9 +1103,9 @@
 <h4 id="sonarr-download-client-setup">Sonarr Download client setup<a class="headerlink" href="#sonarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Sonarr/Radarr instances, this can all be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr - Settings Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr - Settings Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
 <p>Select your preferred download client.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-categories.png"><img alt="!Sonarr Categories" src="../images/sonarr-categories.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-categories.png"><img alt="!Sonarr Categories" src="../images/sonarr-categories.png"/></a></p>
 <p>Only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Sonarr 2</code></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -1250,5 +1253,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -995,7 +998,7 @@
 <h3 id="create-a-new-quality-profile">Create a new Quality Profile<a class="headerlink" href="#create-a-new-quality-profile" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
 <p>Create a new profile and name it what ever you want I used: <code>WEBDL|IMAX-E|2160p</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/SQP/images/4-newqp.png"><img alt="!Create a new Quality Profile" src="/SQP/images/4-newqp.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/SQP/images/4-newqp.png"><img alt="!Create a new Quality Profile" src="/SQP/images/4-newqp.png"/></a></p>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/sqp/merge-qualities.md -->
 <h4 id="merge-qualities">Merge Qualities<a class="headerlink" href="#merge-qualities" title="Permanent link"></a></h4>
@@ -1012,7 +1015,7 @@
 <li>WEBRip-1080p</li>
 </ul>
 <p>and name it what ever you want I used: <code>WEB|2160p</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/SQP/images/4-merge-qualities.png"><img alt="!Merge the following Qualities together" src="/SQP/images/4-merge-qualities.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/SQP/images/4-merge-qualities.png"><img alt="!Merge the following Qualities together" src="/SQP/images/4-merge-qualities.png"/></a></p>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/sqp/move-quality-to-top.md -->
 <h4 id="move-selected-quality-to-top">Move selected quality to top<a class="headerlink" href="#move-selected-quality-to-top" title="Permanent link"></a></h4>
@@ -1037,7 +1040,7 @@
 <li>The merged quality profile: <code>WEBDL|2160p</code></li>
 <li><code>Remux-1080p</code></li>
 </ul>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/SQP/images/4-select-qualities.png"><img alt="!Select the following qualities" src="/SQP/images/4-select-qualities.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/SQP/images/4-select-qualities.png"><img alt="!Select the following qualities" src="/SQP/images/4-select-qualities.png"/></a></p>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/sqp/4-qp-settings.md -->
 <h4 id="quality-profile-settings">Quality Profile Settings<a class="headerlink" href="#quality-profile-settings" title="Permanent link"></a></h4>
@@ -1049,7 +1052,7 @@
 </ul>
 <details class="check">
 <summary>example - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/SQP/images/4-qp-settings.png"><img alt="!Quality Profile Settings" src="/SQP/images/4-qp-settings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/SQP/images/4-qp-settings.png"><img alt="!Quality Profile Settings" src="/SQP/images/4-qp-settings.png"/></a></p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.</p>
@@ -1065,7 +1068,7 @@
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="summary">
 <summary>Audio - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1152,7 +1155,7 @@
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-hdr-formats.md -->
 <details class="summary">
 <summary>All HDR Formats - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1359,7 +1362,7 @@
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>
 <p>I also suggest to change the Propers and Repacks settings in Radarr</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repackproper">Repack/Proper</a> Custom Format.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="/Radarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Radarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Radarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
@@ -1733,5 +1736,5 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

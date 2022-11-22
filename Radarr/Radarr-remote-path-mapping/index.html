@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -964,20 +967,20 @@
 <p>Your download stays in your download client and Radarr doesn't want to import it.</p>
 <p>Go to <code>Activity</code> =&gt; <code>Queue</code></p>
 <p>You will see a orange download icon, hover over it with your mouse and you will get an error that looks a bit like this:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-activity-waiting-for-import.png"><img alt="!rpm-activity-waiting-for-import" src="../images/rpm-activity-waiting-for-import.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-activity-waiting-for-import.png"><img alt="!rpm-activity-waiting-for-import" src="../images/rpm-activity-waiting-for-import.png"/></a></p>
 <p>Go to <code>System</code> =&gt; <code>Events</code></p>
 <p>You will see an error that looks a bit like this:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-system-events.png"><img alt="!rpm-system-events" src="../images/rpm-system-events.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-system-events.png"><img alt="!rpm-system-events" src="../images/rpm-system-events.png"/></a></p>
 <p>The following error could also mean that you need remote path mappings:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-health-issue.png"><img alt="!rpm-health-issue" src="../images/rpm-health-issue.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-health-issue.png"><img alt="!rpm-health-issue" src="../images/rpm-health-issue.png"/></a></p>
 <p>So looking at these screenshot it seems you need to make use of remote path mappings.</p>
 <hr/>
 <h2 id="how-do-i-setup-remote-path-mappings">How do I setup remote path mappings<a class="headerlink" href="#how-do-i-setup-remote-path-mappings" title="Permanent link"></a></h2>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p>Scroll all the way down where you see <code>Remote path mappings</code> and click on the plus sign in the bottom right corner.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-settings-download-clients.png"><img alt="!rpm-settings-download-clients" src="../images/rpm-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-settings-download-clients.png"><img alt="!rpm-settings-download-clients" src="../images/rpm-settings-download-clients.png"/></a></p>
 <p>A screen will popup with the following options:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-add-rpm.png"><img alt="!rpm-add-rpm" src="../images/rpm-add-rpm.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-add-rpm.png"><img alt="!rpm-add-rpm" src="../images/rpm-add-rpm.png"/></a></p>
 <ol>
 <li><code>Host</code> =&gt; This is the hostname or IP you set in your download client settings.</li>
 <li><code>Remote Path</code> =&gt; The download path that you've set in your download client.</li>
@@ -987,30 +990,30 @@
 <p>To find what you need to put in your host</p>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p>Open up the download client. For this example I will be using SABnzbd.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-sabnzbd-host.png"><img alt="!Sabnzbd Host" src="../images/rpm-sabnzbd-host.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-sabnzbd-host.png"><img alt="!Sabnzbd Host" src="../images/rpm-sabnzbd-host.png"/></a></p>
 <p>This is what you put in your Host in Remote Path Mapping.
 This could be a <code>hostname</code>, <code>container name</code> or a <code>IP Address</code></p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-add-rpm-select-sabnzbd.png"><img alt="!rpm-add-rpm-select-sabnzbd" src="../images/rpm-add-rpm-select-sabnzbd.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-add-rpm-select-sabnzbd.png"><img alt="!rpm-add-rpm-select-sabnzbd" src="../images/rpm-add-rpm-select-sabnzbd.png"/></a></p>
 </details>
 <h3 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link"></a></h3>
 <p>To find out what you need to put in your remote path you need to open up your download client and look at what you've used there as download location.</p>
 <p>In SABnzbd go to <code>settings</code> =&gt; <code>Folders</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-sabnzbd-folders-cdf.png"><img alt="!rpm-sabnzbd-folders-cdf" src="../images/rpm-sabnzbd-folders-cdf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-sabnzbd-folders-cdf.png"><img alt="!rpm-sabnzbd-folders-cdf" src="../images/rpm-sabnzbd-folders-cdf.png"/></a></p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-add-rpm-remote-path.png"><img alt="!rpm-add-rpm-remote-path" src="../images/rpm-add-rpm-remote-path.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-add-rpm-remote-path.png"><img alt="!rpm-add-rpm-remote-path" src="../images/rpm-add-rpm-remote-path.png"/></a></p>
 </details>
 <h3 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link"></a></h3>
 <p>To find out what you need to put in in your local path you need to know how Radarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.</p>
 <p>Click on the browse button and browse to the location where the files are accessible for Radarr.</p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-add-local-path.png"><img alt="!rpm-add-local-path" src="../images/rpm-add-local-path.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-add-local-path.png"><img alt="!rpm-add-local-path" src="../images/rpm-add-local-path.png"/></a></p>
 </details>
 <p>The final result will look something like this:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/rpm-final-results.png"><img alt="!rpm-final-results" src="../images/rpm-final-results.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/rpm-final-results.png"><img alt="!rpm-final-results" src="../images/rpm-final-results.png"/></a></p>
 <p>After these changes the file should be able to be imported by Radarr.</p>
 <!-- BEGIN INCLUDE ../../includes/support.md -->
 <hr/>
@@ -1102,5 +1105,5 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

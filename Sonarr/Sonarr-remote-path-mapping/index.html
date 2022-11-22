@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -955,16 +958,16 @@
 <h2 id="how-do-i-recognize-that-i-need-remote-path-mappings">How do I recognize that I need remote path mappings<a class="headerlink" href="#how-do-i-recognize-that-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <p>If your download client is on another system than Sonarr then you probably need to make use of Remote Path Mappings.</p>
 <p>You will get an error that looks a little bit like the following screenshot.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dl_error.png"><img alt="!download errors" src="../images/dl_error.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/dl_error.png"><img alt="!download errors" src="../images/dl_error.png"/></a></p>
 <p>So looking at this screenshot it seems we need to make use of Remote Path Mappings</p>
 <hr/>
 <h2 id="how">How<a class="headerlink" href="#how" title="Permanent link"></a></h2>
 <p>First we navigate in Sonarr to the <code>Settings</code> =&gt; <code>Download Clients</code> tab.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cl_cli_tab.png"><img alt="download client tab" src="../images/cl_cli_tab.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cl_cli_tab.png"><img alt="download client tab" src="../images/cl_cli_tab.png"/></a></p>
 <p>At the bottom you choose <code>Add new mapping</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/new_mapping.png"><img alt="!add new mapping" src="../images/new_mapping.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/new_mapping.png"><img alt="!add new mapping" src="../images/new_mapping.png"/></a></p>
 <p>A screen will pop up with the following options:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/mapping.png"><img alt="add mapping" src="../images/mapping.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/mapping.png"><img alt="add mapping" src="../images/mapping.png"/></a></p>
 <ol>
 <li><code>Host</code> =&gt; This is the hostname or IP you set in your download client settings.</li>
 <li><code>Remote Path</code> =&gt; The download path that you've set in your download client.</li>
@@ -977,17 +980,17 @@
 <h2 id="host">Host<a class="headerlink" href="#host" title="Permanent link"></a></h2>
 <p>To find what you need to put in your host you navigate in Sonarr to the Settings =&gt; Download Clients Tab.
 There you open up the download client for this example I will be using QBittorrent</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbit_client.png"><img alt="Qbittorrent client" src="../images/qbit_client.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbit_client.png"><img alt="Qbittorrent client" src="../images/qbit_client.png"/></a></p>
 <p>This is what you put in your Host in Remote Path Mapping.</p>
 <h2 id="remote-path">Remote Path<a class="headerlink" href="#remote-path" title="Permanent link"></a></h2>
 <p>To find what you need to put in your remote path you need to open up your download client and look what you've used there as download location.</p>
 <p>In QBittorrent navigate to Tools =&gt; Options (or ALT+O) and navigate to the Download settings.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbit_options.png"><img alt="Qbittorrent download settings" src="../images/qbit_options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbit_options.png"><img alt="Qbittorrent download settings" src="../images/qbit_options.png"/></a></p>
 <p>This is what you add in your Remote Path in Remote Path Mapping.</p>
 <h2 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link"></a></h2>
 <p>To find out what you need to put in in your local path you need to know how Sonarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.</p>
 <p>The final result will look something like this.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qbit_final.png"><img alt="Qbittorrent final result" src="../images/qbit_final.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qbit_final.png"><img alt="Qbittorrent final result" src="../images/qbit_final.png"/></a></p>
 </div>
 </input></div>
 </details>
@@ -1081,5 +1084,5 @@ There you open up the download client for this example I will be using QBittorre
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

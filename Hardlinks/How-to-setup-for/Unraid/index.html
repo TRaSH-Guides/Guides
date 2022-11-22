@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1009,7 +1012,7 @@
 </div>
 <p>For this example I'm using my own setup and preferred share <code>data</code>.</p>
 <p>Go to your dashboard and on the top select <code>shares</code> select <code>add share</code> .</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-main-share.png"><img alt="!unraid-main-share" src="../images/unraid-main-share.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-main-share.png"><img alt="!unraid-main-share" src="../images/unraid-main-share.png"/></a></p>
 <ol>
 <li>use <code>data</code></li>
 <li>if you got a cache drive and want to make use of it put it on <code>Yes</code> or keep it disabled (Hardlinks will stay in tact if you're using the cache)</li>
@@ -1061,7 +1064,7 @@
 <hr/>
 <h3 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h3>
 <p>qBittorrent, Deluge, ruTorrent</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-torrent-clients.png"><img alt="unraid-torrent-clients" src="../images/unraid-torrent-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-torrent-clients.png"><img alt="unraid-torrent-clients" src="../images/unraid-torrent-clients.png"/></a></p>
 <p><code>Container Path:</code> =&gt; <code>/data/torrents/</code></p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/torrents/</code></p>
 <div class="admonition info">
@@ -1077,7 +1080,7 @@
 <hr/>
 <h3 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h3>
 <p>NZBGet or SABnzbd</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-usenet-client.png"><img alt="unraid-usenet-client" src="../images/unraid-usenet-client.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-usenet-client.png"><img alt="unraid-usenet-client" src="../images/unraid-usenet-client.png"/></a></p>
 <p><code>Container Path:</code> =&gt; <code>/data/usenet/</code></p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/usenet/</code></p>
 <div class="admonition info">
@@ -1093,7 +1096,7 @@
 <hr/>
 <h3 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h3>
 <p>Sonarr, Radarr and Lidarr</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-arr.png"><img alt="unraid-arr" src="../images/unraid-arr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-arr.png"><img alt="unraid-arr" src="../images/unraid-arr.png"/></a></p>
 <p><code>Container Path:</code> =&gt; <code>/data</code></p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/</code></p>
 <div class="admonition info">
@@ -1117,7 +1120,7 @@
 <hr/>
 <h3 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h3>
 <p>Plex, Emby, JellyFin and Bazarr</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-media-server.png"><img alt="unraid-media-server" src="../images/unraid-media-server.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-media-server.png"><img alt="unraid-media-server" src="../images/unraid-media-server.png"/></a></p>
 <p><code>Container Path:</code> =&gt; <code>/data/media</code></p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/media/</code></p>
 <div class="admonition info">
@@ -1132,7 +1135,7 @@
 </code></pre></div>
 <hr/>
 <h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unraid-final-result.png"><img alt="!unraid-final-result" src="../images/unraid-final-result.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-final-result.png"><img alt="!unraid-final-result" src="../images/unraid-final-result.png"/></a></p>
 <p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
 <h3 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link"></a></h3>
 <div class="admonition tip">
@@ -1231,5 +1234,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

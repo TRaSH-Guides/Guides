@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -930,7 +933,7 @@
 <p>This is the easiest to check in my opinion.</p>
 <p>In your terminal <code>cd</code> to your download location and run <code>ls -al</code> or type <code>ls -al /path/to/your/download/location/</code></p>
 <p>You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/hardlinks-ls-al.png"><img alt="!Hardlinks check ls -al" src="../images/hardlinks-ls-al.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-ls-al.png"><img alt="!Hardlinks check ls -al" src="../images/hardlinks-ls-al.png"/></a></p>
 <ul>
 <li>Red rectangle - Not Hardlinked</li>
 <li>Green rectangle - Hardlinks</li>
@@ -948,7 +951,7 @@
 </li>
 </ul>
 <p>You will get 2 results you can use to compare several things.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/hardlinks-stat.png"><img alt="!Hardlinks check stat" src="../images/hardlinks-stat.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-stat.png"><img alt="!Hardlinks check stat" src="../images/hardlinks-stat.png"/></a></p>
 <ol>
 <li>Links: Everything above 1 means it's a hardlink</li>
 <li>Inode: if the numbers match you know the files are hardlinked</li>
@@ -958,14 +961,14 @@
 <li>In your terminal <code>cd</code> to your download location and run <code>ls -i file.mkv</code> or type <code>ls -i /path/to/your/download/location/file.mkv</code></li>
 </ul>
 <p>This will reveal the inode of your file on the left side of the file.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/hardlinks-ls-i.png"><img alt="!Hardlinks check ls -i" src="../images/hardlinks-ls-i.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-ls-i.png"><img alt="!Hardlinks check ls -i" src="../images/hardlinks-ls-i.png"/></a></p>
 <ul>
 <li>In your terminal type: <code>find /mnt/user/data/ -inum ###</code> or <code>find . -inum ###</code> if you're in your root folder.</li>
 </ul>
 <div class="admonition note">
 <p><code>###</code> = Your inode number on the left of the file you found.</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/hardlinks-inode.png"><img alt="!hardlinks inode" src="../images/hardlinks-inode.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-inode.png"><img alt="!hardlinks inode" src="../images/hardlinks-inode.png"/></a></p>
 <p>It will list all files linked with the same inode number.</p>
 <hr/>
 <div class="md-source-file">
@@ -1048,5 +1051,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

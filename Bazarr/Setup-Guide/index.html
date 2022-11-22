@@ -23,12 +23,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1104,10 +1107,10 @@ For a more detailed few of all the setting check the following <a href="https://
 <h2 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link"></a></h2>
 <p>First we're going to setup Sonarr.</p>
 <p><code>Settings</code> =&gt; <code>Sonarr</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-settings-sonarr.png"><img alt="!Settings =&gt; Sonarr" src="../images/qs-settings-sonarr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-settings-sonarr.png"><img alt="!Settings =&gt; Sonarr" src="../images/qs-settings-sonarr.png"/></a></p>
 <h3 id="use-sonarr">Use Sonarr<a class="headerlink" href="#use-sonarr" title="Permanent link"></a></h3>
 <p>Click on <code>Enabled</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-sonarr.png"><img alt="!Sonarr" src="../images/qs-sonarr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-sonarr.png"><img alt="!Sonarr" src="../images/qs-sonarr.png"/></a></p>
 <ol>
 <li>Enable Sonarr.</li>
 <li>
@@ -1142,7 +1145,7 @@ For a more detailed few of all the setting check the following <a href="https://
 </li>
 </ol>
 <h3 id="options">Options<a class="headerlink" href="#options" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-sonarr-options.png"><img alt="!Sonarr - Options" src="../images/qs-sonarr-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-sonarr-options.png"><img alt="!Sonarr - Options" src="../images/qs-sonarr-options.png"/></a></p>
 <ol>
 <li>
 <p>Select the minimum score (in percentage) required for a subtitle file to be downloaded.</p>
@@ -1168,9 +1171,9 @@ For a more detailed few of all the setting check the following <a href="https://
 <p>You should only use this section if Sonarr and Bazarr use a different path to access the same files.</p>
 <p>(for example if you run Sonarr on a different device than Bazarr or have a Synology and mix packages with Docker.)</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-sonarr-path-mappings-add.png"><img alt="!Sonarr Path Mappings" src="../images/qs-sonarr-path-mappings-add.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-sonarr-path-mappings-add.png"><img alt="!Sonarr Path Mappings" src="../images/qs-sonarr-path-mappings-add.png"/></a></p>
 <p>Click on <code>Add</code> and you will get an extra option</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-sonarr-path-mappings.png"><img alt="!Sonarr Path Mappings" src="../images/qs-sonarr-path-mappings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-sonarr-path-mappings.png"><img alt="!Sonarr Path Mappings" src="../images/qs-sonarr-path-mappings.png"/></a></p>
 <ol>
 <li>Here you enter the path that Sonarr uses to access your shows.</li>
 <li>Here you enter the path that Bazarr uses to access your shows.</li>
@@ -1180,7 +1183,7 @@ For a more detailed few of all the setting check the following <a href="https://
 <p><strong>IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!</strong></p>
 <p><strong>IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.</strong></p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-sonarr-path-mappings-mapped.png"><img alt="!Sonarr Path Mappings Mapped" src="../images/qs-sonarr-path-mappings-mapped.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-sonarr-path-mappings-mapped.png"><img alt="!Sonarr Path Mappings Mapped" src="../images/qs-sonarr-path-mappings-mapped.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><em>If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.</em></p>
@@ -1188,16 +1191,16 @@ For a more detailed few of all the setting check the following <a href="https://
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Don't forget to save your settings!!!</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
 </div>
 <hr/>
 <h2 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h2>
 <p>Next we're going to setup Radarr.</p>
 <p><code>Settings</code> =&gt; <code>Radarr</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-settings-radarr.png"><img alt="!Settings =&gt; Radarr" src="../images/qs-settings-radarr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-settings-radarr.png"><img alt="!Settings =&gt; Radarr" src="../images/qs-settings-radarr.png"/></a></p>
 <h3 id="use-radarr">Use Radarr<a class="headerlink" href="#use-radarr" title="Permanent link"></a></h3>
 <p>Click on <code>Enabled</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-radarr.png"><img alt="!Radarr" src="../images/qs-radarr.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-radarr.png"><img alt="!Radarr" src="../images/qs-radarr.png"/></a></p>
 <ol>
 <li>Enable Radarr.</li>
 <li>
@@ -1232,7 +1235,7 @@ For a more detailed few of all the setting check the following <a href="https://
 </li>
 </ol>
 <h3 id="options-radarr">Options (Radarr)<a class="headerlink" href="#options-radarr" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-radarr-options.png"><img alt="!Radarr - Options" src="../images/qs-radarr-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-radarr-options.png"><img alt="!Radarr - Options" src="../images/qs-radarr-options.png"/></a></p>
 <ol>
 <li>
 <p>Select the minimum score (in percentage) required for a subtitle file to be downloaded.</p>
@@ -1254,9 +1257,9 @@ For a more detailed few of all the setting check the following <a href="https://
 <p>You should only use this section if Radarr and Bazarr use a different path to access the same files.</p>
 <p>(for example if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-radarr-path-mappings-add.png"><img alt="!Radarr Path Mappings" src="../images/qs-radarr-path-mappings-add.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-radarr-path-mappings-add.png"><img alt="!Radarr Path Mappings" src="../images/qs-radarr-path-mappings-add.png"/></a></p>
 <p>Click on <code>Add</code> and you will get an extra option</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-radarr-path-mappings.png"><img alt="!Radarr Path Mappings" src="../images/qs-radarr-path-mappings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-radarr-path-mappings.png"><img alt="!Radarr Path Mappings" src="../images/qs-radarr-path-mappings.png"/></a></p>
 <ol>
 <li>Here you enter the path that Radarr uses to access your movies.</li>
 <li>Here you enter the path that Bazarr uses to access your movies.</li>
@@ -1266,7 +1269,7 @@ For a more detailed few of all the setting check the following <a href="https://
 <p><strong>IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!</strong></p>
 <p><strong>IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.</strong></p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-radarr-path-mappings-mapped.png"><img alt="!Path Mappings Radarr Mapped" src="../images/qs-radarr-path-mappings-mapped.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-radarr-path-mappings-mapped.png"><img alt="!Path Mappings Radarr Mapped" src="../images/qs-radarr-path-mappings-mapped.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><em>If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.</em></p>
@@ -1274,26 +1277,26 @@ For a more detailed few of all the setting check the following <a href="https://
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Don't forget to save your settings!!!</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
 </div>
 <hr/>
 <h2 id="languages">Languages<a class="headerlink" href="#languages" title="Permanent link"></a></h2>
 <p>Here we're going to configure which subtitle languages you prefer/want.</p>
 <p><code>Settings</code> =&gt; <code>Languages</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-settings-languages.png"><img alt="!Settings =&gt; Languages" src="../images/qs-settings-languages.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-settings-languages.png"><img alt="!Settings =&gt; Languages" src="../images/qs-settings-languages.png"/></a></p>
 <h3 id="subtitles-language">Subtitles Language<a class="headerlink" href="#subtitles-language" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>**We don't recommend enabling <code>Single Language</code> option unless absolutely required (ie: media player not supporting language code in subtitles filename). Results may vary.</p>
 <p>Be aware the language code (ex.: en) is not going to be included in the subtitles file name when enabling this.**</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-subtitles-language.png"><img alt="!Subtitles Language" src="../images/qs-subtitles-language.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-subtitles-language.png"><img alt="!Subtitles Language" src="../images/qs-subtitles-language.png"/></a></p>
 <p>Here you select which languages you want for your subtitles, you can just start typing your language name and it will show you what's available.</p>
 <p>These languages are the subtitle languages you later use for the <code>Languages Profiles</code></p>
 <p>In this example I selected <code>Dutch</code> and <code>English</code>.</p>
 <h3 id="languages-profiles">Languages Profiles<a class="headerlink" href="#languages-profiles" title="Permanent link"></a></h3>
 <p>Select <code>Add New Profile</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-languages-profiles.png"><img alt="!Languages Profiles" src="../images/qs-languages-profiles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-languages-profiles.png"><img alt="!Languages Profiles" src="../images/qs-languages-profiles.png"/></a></p>
 <ol>
 <li>How you want to name your language profile.</li>
 <li>Click on <code>Add</code> to add the languages you enabled earlier in <a href="#subtitles-language">Subtitle Language</a>.</li>
@@ -1308,24 +1311,24 @@ For a more detailed few of all the setting check the following <a href="https://
 </ol>
 <details class="info">
 <summary>Cutoff</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-cutoff.png"><img alt="!Cutoff" src="../images/qs-cutoff.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-cutoff.png"><img alt="!Cutoff" src="../images/qs-cutoff.png"/></a></p>
 <p>So you can have a profile that states: English, Dutch, German, French
 With cutoff Dutch, if it finds Dutch, it will download it and call it a day.
 If no Dutch is found it will continue searching the other languages till Dutch is found.</p>
 </details>
 <h3 id="default-settings">Default Settings<a class="headerlink" href="#default-settings" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-default-settings.png"><img alt="!Default Settings" src="../images/qs-default-settings.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-default-settings.png"><img alt="!Default Settings" src="../images/qs-default-settings.png"/></a></p>
 <p>Automatically applied <code>Languages Profiles</code> to Series and Movies added to Bazarr <strong>after</strong> enabling this option.</p>
 <div class="admonition danger">
 <p class="admonition-title">Don't forget to Save your settings !!!</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
 </div>
 <hr/>
 <h2 id="providers">Providers<a class="headerlink" href="#providers" title="Permanent link"></a></h2>
 <p>Here we're going to select which subtitle providers you want to use.</p>
 <p><code>Settings</code> =&gt; <code>Providers</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-settings-providers.png"><img alt="!Settings =&gt; Providers" src="../images/qs-settings-providers.png"/></a></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-providers.png"><img alt="!Providers" src="../images/qs-providers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-settings-providers.png"><img alt="!Settings =&gt; Providers" src="../images/qs-settings-providers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-providers.png"><img alt="!Providers" src="../images/qs-providers.png"/></a></p>
 <ol>
 <li>Click on the Plus sign box.</li>
 <li>Select the subtitle providers you would like to enable. It is best to select multiple providers and create/use an account with them especially when you got a lot of wanted subtitles. Some subtitle providers requires an extra paid Anti-Captcha Service.</li>
@@ -1337,15 +1340,15 @@ If no Dutch is found it will continue searching the other languages till Dutch i
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Don't forget to save your settings!!!</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
 </div>
 <hr/>
 <h2 id="subtitles">Subtitles<a class="headerlink" href="#subtitles" title="Permanent link"></a></h2>
 <p>Here we will configure some extra settings for your subtitles</p>
 <p><code>Settings</code> =&gt; <code>Subtitles</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-settings-subtitles.png"><img alt="!Settings =&gt; Subtitles" src="../images/qs-settings-subtitles.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-settings-subtitles.png"><img alt="!Settings =&gt; Subtitles" src="../images/qs-settings-subtitles.png"/></a></p>
 <h3 id="subtitle-options">Subtitle Options<a class="headerlink" href="#subtitle-options" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-subtitles-options.png"><img alt="!Subtitle Options" src="../images/qs-subtitles-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-subtitles-options.png"><img alt="!Subtitle Options" src="../images/qs-subtitles-options.png"/></a></p>
 <ol>
 <li>Where you want your subtitles it's recommended to put them <code>AlongSide Media File</code>.</li>
 <li>If you want to upgrade previously downloaded subtitles.</li>
@@ -1353,7 +1356,7 @@ If no Dutch is found it will continue searching the other languages till Dutch i
 <li>If you want to upgrade manually downloaded subtitles.</li>
 </ol>
 <h3 id="anti-captcha-options">Anti-Captcha Options<a class="headerlink" href="#anti-captcha-options" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-anti-captcha.png"><img alt="!Anti-Captcha Options" src="../images/qs-anti-captcha.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-anti-captcha.png"><img alt="!Anti-Captcha Options" src="../images/qs-anti-captcha.png"/></a></p>
 <p>Here you can select which Anti-Captcha provider you want to use.</p>
 <p><a href="https://wiki.bazarr.media/Troubleshooting/FAQ/#why-or-do-i-need-the-anti-captcha" rel="noopener noreferrer" target="_blank">Why (or) do I need the Anti-Captcha ?</a></p>
 <div class="admonition tip">
@@ -1361,7 +1364,7 @@ If no Dutch is found it will continue searching the other languages till Dutch i
 <p>We recommend the following provider =&gt; <a href="https://anti-captcha.com/">https://anti-captcha.com/</a></p>
 </div>
 <h3 id="performance-optimization">Performance / Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-performance-optimization.png"><img alt="!Performance / Optimization" src="../images/qs-performance-optimization.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-performance-optimization.png"><img alt="!Performance / Optimization" src="../images/qs-performance-optimization.png"/></a></p>
 <ol>
 <li>When searching for subtitles, Bazarr will search less frequently to limit calls to providers.</li>
 <li>Search multiple providers at once (Don't choose this on low powered devices).</li>
@@ -1369,10 +1372,10 @@ If no Dutch is found it will continue searching the other languages till Dutch i
 </ol>
 <h3 id="automatic-subtitles-synchronization">Automatic Subtitles Synchronization<a class="headerlink" href="#automatic-subtitles-synchronization" title="Permanent link"></a></h3>
 <p>Enable this option for automatic subtitles synchronization.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-automatic-subtitles-sync.png"><img alt="!Automatic Subtitles Synchronization" src="../images/qs-automatic-subtitles-sync.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-automatic-subtitles-sync.png"><img alt="!Automatic Subtitles Synchronization" src="../images/qs-automatic-subtitles-sync.png"/></a></p>
 <div class="admonition danger">
 <p class="admonition-title">Don't forget to save your settings!!!</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/qs-save.png"><img alt="Save" src="../images/qs-save.png"/></a></p>
 </div>
 <hr/>
 <p>Now wait until Bazarr gets all the info needed from Sonarr/Radarr.</p>
@@ -1465,5 +1468,5 @@ For more info about the other settings check the <a href="https://wiki.bazarr.me
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
