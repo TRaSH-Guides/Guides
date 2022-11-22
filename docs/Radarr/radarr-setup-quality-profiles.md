@@ -75,6 +75,8 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ------
 
+## TRaSH Quality Profiles
+
 ### HD Bluray + WEB
 
 If you prefer High Quality HD Encodes (Bluray-720p/1080p)
