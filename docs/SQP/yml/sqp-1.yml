@@ -17,7 +17,7 @@ radarr:
           - eca37840c13c6ef2dd0262b141a5482f # 4K Remaster
           - e0c07d59beb37348e975a930d5e50319 # Criterion Collection
           - 957d0f44b592285f26449575e8b1167e # Special Edition
-          # Uncomment the next line if you prefer IMAX/IMAX Enhanced to BHDStudio
+          # Uncomment the next line(s) if you prefer IMAX/IMAX Enhanced to BHDStudio
           # - eecf3a857724171f968a66cb5719e152 # IMAX
           # - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced
           # HQ Release Groups
@@ -50,18 +50,18 @@ radarr:
         quality_profiles:
           - name: Bluray|WEB-1080p
       # Custom Scoring
-      - trash_ids:
-          # HQ Release Groups
-          - ed27ebfef2f323e964fb1f61391bcb35 # HD Bluray Tier 01
-        quality_profiles:
-          - name: Bluray|WEB-1080p
-            score: 1100
-      - trash_ids:
-          # HQ Release Groups
-          - c20c8647f2746a1f4c4262b0fbbeeeae # HD Bluray Tier 02
-        quality_profiles:
-          - name: Bluray|WEB-1080p
-            score: 1050
+      # HQ Release Groups - Optional - Uncomment the next section (10 lines) to enable other Bluray Encodes (less or not streaming optimized)
+      # - trash_ids:
+          # - ed27ebfef2f323e964fb1f61391bcb35 # HD Bluray Tier 01
+        # quality_profiles:
+          # - name: Bluray|WEB-1080p
+            # score: 1100
+      # - trash_ids:
+          # - c20c8647f2746a1f4c4262b0fbbeeeae # HD Bluray Tier 02
+        # quality_profiles:
+          # - name: Bluray|WEB-1080p
+            # score: 1050
+      # --HQ Release Groups section ends--
       - trash_ids:
           # Audio
           - 417804f7f2c4308c1f4c5d380d4c4475 # ATMOS (undefined)
