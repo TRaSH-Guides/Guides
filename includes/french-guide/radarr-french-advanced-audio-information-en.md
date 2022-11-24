@@ -1,4 +1,4 @@
-!!! warning "Information regarding 2160p releases"
+!!! warning "Information regarding HD audio"
     It should be noted that many problems can arise from this profile if you use the HD audio Custom Formats, as:
 
     - French Scene rules assert that the French audio should be the first (default) audio in a MULTi release.
