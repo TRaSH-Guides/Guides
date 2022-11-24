@@ -296,7 +296,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french/</loc>
+         <loc>https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/</loc>
+         <lastmod>2022-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-fr/</loc>
          <lastmod>2022-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
