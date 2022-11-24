@@ -84,7 +84,7 @@ Those are all optional and only there to rename your release or to avoid a certa
 - You do not want VFQ or VQ audio, in this case you will put them at `-10000` instead of `0`.
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
 
-{! include-markdown "../../includes/french-guide/radarr-french-audio-version.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-audio-version-en.md" !}
 
 ------
 
