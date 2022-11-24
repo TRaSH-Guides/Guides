@@ -1,12 +1,13 @@
---8<-- "includes/sonarrv4-disclaimer.md"
+# How to setup Quality Profiles
 
-# How to setup Custom Formats
+*aka How to setup Custom Formats*<br><br>
+So what's the best way to setup the Custom Formats and which ones to use with which scores to setup your quality profiles?
 
-So what's the best way to setup the Custom Profiles and which one to use with which scores?
+There isn't a best setup, it depends on your setup (hardware devices) and your own personal preferences.
 
-There isn't a best setup, being that everyone has their own personal preferences. Some prefer high quality audio, others high quality video. Many prefer both.
+Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-Here I will try to explain with some personal used examples how to make the most use of Custom Formats that you can use to get an idea how to setup yours.
+Here I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.
 
 --8<-- "includes/cf/score-attention.md"
 

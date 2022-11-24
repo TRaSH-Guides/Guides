@@ -5,4 +5,10 @@ nav:
     - Release Profile RegEx (WEB-DL): Sonarr-Release-Profile-RegEx.md
     - Release Profile RegEx (Anime): Sonarr-Release-Profile-RegEx-Anime.md
     - Remote Path Mappings explained: Sonarr-remote-path-mapping.md
+    - Sonarr v4 Beta:
+        - How to import Custom Formats: sonarr-import-custom-formats.md
+        - How to Update Custom Formats: sonarr-how-to-update-custom-formats.md
+        - How to setup Quality Profiles: sonarr-setup-quality-profiles.md
+        - How to setup Quality Profiles-Anime: sonarr-setup-quality-profiles-anime.md
+        - Collection of Custom Formats: sonarr-collection-of-custom-formats.md
     - Tips
