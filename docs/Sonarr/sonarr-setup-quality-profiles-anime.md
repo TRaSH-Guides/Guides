@@ -1,6 +1,6 @@
---8<-- "includes/sonarrv4-disclaimer.md"
+# How to setup Quality Profiles
 
-# How to setup Custom Formats (Anime)
+*aka How to setup Custom Formats (Anime)*<br><br>
 
 !!! attention
     You must be running Sonarr V4 to be able to use this setup.

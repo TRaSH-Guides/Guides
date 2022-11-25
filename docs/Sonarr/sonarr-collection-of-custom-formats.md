@@ -1,5 +1,3 @@
---8<-- "includes/sonarrv4-disclaimer.md"
-
 # Collection of Custom Formats
 
 Here I will try to list a collection of the most needed and commonly used Custom Formats.
@@ -12,7 +10,7 @@ I also made 3 guides related to this one.
 
 - [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
 - [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Custom Formats](/Sonarr/sonarr-setup-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
+- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
 
 !!! tip
 
@@ -1093,7 +1091,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

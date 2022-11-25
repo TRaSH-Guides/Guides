@@ -32,15 +32,6 @@
       }
     },
     {
-      "name": "BEO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BEO)\\b"
-      }
-    },
-    {
       "name": "FCK",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
