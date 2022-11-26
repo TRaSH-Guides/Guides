@@ -106,12 +106,12 @@ RESULT:
 For Jellyfin/Emby:
 
 ```bash
-{Series TitleYear} [imdbid-{ImdbId}]
+{Series TitleYear} [tvdbid-{TvdbId}]
 ```
 
 RESULT:
 
-`The Series Title! (2010) [imdbid-tt1520211]`
+`The Series Title! (2010) [tvdbid-tt1520211]`
 
 !!! tip
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
