@@ -5,10 +5,28 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "HDR Formats",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX)\\b"
+      }
+    },
+    {
       "name": "SDR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\bSDR\\b"
       }
