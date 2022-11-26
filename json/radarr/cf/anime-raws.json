@@ -5,39 +5,39 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Beatrice-raws",
+      "name": "Beatrice-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Beatrice[ ._-]?(raws)"
+        "value": "Beatrice[ ._-]?(Raws)"
       }
     },
     {
-      "name": "Daddy-raws",
+      "name": "Daddy-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Daddy[ ._-]?(raws)"
+        "value": "Daddy[ ._-]?(Raws)"
       }
     },
     {
-      "name": "Iriza-raws",
+      "name": "IrizaRaws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Iriza[ ._-]?(raws)"
+        "value": "Iriza[ ._-]?(Raws)"
       }
     },
     {
-      "name": "Kawaiika-raws",
+      "name": "Kawaiika-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Kawaiika[ ._-]?(raws)"
+        "value": "Kawaiika[ ._-]?(Raws)"
       }
     },
     {
@@ -59,12 +59,12 @@
       }
     },
     {
-      "name": "LowPower-raws",
+      "name": "LowPower-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "LowPower[ ._-]?(raws)"
+        "value": "LowPower[ ._-]?(Raws)"
       }
     },
     {
@@ -73,16 +73,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Nanako(Raws)"
+        "value": "Nanako[ ._-]?(Raws)"
       }
     },
     {
-      "name": "NC-raws",
+      "name": "NC-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "NC[ ._-]?(raws)"
+        "value": "NC[ ._-]?(Raws)"
       }
     },
     {
@@ -95,21 +95,21 @@
       }
     },
     {
-      "name": "Ohys-raws",
+      "name": "Ohys-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Ohys[ ._-]?(raws)"
+        "value": "Ohys[ ._-]?(Raws)"
       }
     },
     {
-      "name": "Pandoratv-raws",
+      "name": "Pandoratv-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Pandoratv[ ._-]?(raws)"
+        "value": "Pandoratv[ ._-]?(Raws)"
       }
     },
     {
@@ -122,21 +122,21 @@
       }
     },
     {
-      "name": "Scryous-raws",
+      "name": "Scryous-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Scryous[ ._-]?(raws)"
+        "value": "Scryous[ ._-]?(Raws)"
       }
     },
     {
-      "name": "Seicher",
+      "name": "Seicher-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Seicher)\\b"
+        "value": "Seicher[ ._-]?(Raws)"
       }
     }
   ]
