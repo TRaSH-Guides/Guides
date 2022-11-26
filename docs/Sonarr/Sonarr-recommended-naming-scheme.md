@@ -9,7 +9,7 @@ If, for what ever reason, you ever need to do a re-install or re-import in
 the Starr Apps or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
 it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
-The Tokens not available in the release won't be used/shown.
+!!! info "The Tokens not available in the release won't be used/shown."
 
 ------
 
@@ -18,6 +18,12 @@ The Tokens not available in the release won't be used/shown.
 ```bash
 {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
 ```
+
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+
+    ```bash
+    {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
@@ -37,6 +43,12 @@ The Tokens not available in the release won't be used/shown.
 {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
 ```
 
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+
+    ```bash
+    {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    ```
+
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
@@ -48,6 +60,12 @@ The Tokens not available in the release won't be used/shown.
 ```bash
 {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
 ```
+
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+
+    ```bash
+    {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+    ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
