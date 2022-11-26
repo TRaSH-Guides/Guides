@@ -1,7 +1,7 @@
 {
-  "trash_id": "1bef6c151fa35093015b0bfef18279e5",
-  "trash_score": "100",
-  "name": "2160p",
+  "trash_id": "2016d1676f5ee13a5b7257ff86ac9a93",
+  "trash_score": "-10000",
+  "name": "SDR",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -16,17 +16,17 @@
     {
       "name": "HDR Formats",
       "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
+      "negate": true,
+      "required": false,
       "fields": {
         "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX)\\b"
       }
     },
     {
-      "name": "NOT SDR",
+      "name": "SDR",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "negate": false,
+      "required": false,
       "fields": {
         "value": "\\bSDR\\b"
       }
