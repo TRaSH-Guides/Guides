@@ -14,30 +14,12 @@
       }
     },
     {
-      "name": "HDR",
+      "name": "HDR Formats",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": "\\bHDR(\\b|\\d)"
-      }
-    },
-    {
-      "name": "DV",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision|DV[ .]HDR10|DV[ .]HLG|DV[ .]SDR)\\b"
-      }
-    },
-    {
-      "name": "HDR (undefined)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FraMeSToR|HQMUX)\\b"
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX)\\b"
       }
     },
     {
