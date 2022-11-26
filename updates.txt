@@ -1,3 +1,11 @@
+# 2022-11-26 11:45
+**[Sonarr v4]**
+*Guide: Recommended naming scheme PR#991*
+- Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the the new naming scheme instead.
+
+**[Sonarr]**
+- Fixed: Emby/JF folder naming changed imdbid to tvdbid, being it doesn't support imdbid according their docs.  
+
 # 2022-11-24 22:45
 **[Radarr]**
 *How to setup Quality Profiles (French) #970*
