@@ -1,5 +1,7 @@
 # NZBGet - Paths and Categories
 
+!!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
+
 {! include-markdown "../../../includes/downloaders/path.md" !}
 <!-- --8<-- "includes/downloaders/path.md" -->
 
