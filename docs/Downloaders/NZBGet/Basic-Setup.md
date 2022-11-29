@@ -1,5 +1,7 @@
 # NZBGet - Basic Setup
 
+!!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
+
 {! include-markdown "../../../includes/downloaders/basic-setup.md" !}
 <!-- --8<-- "includes/downloaders/basic-setup.md" -->
 

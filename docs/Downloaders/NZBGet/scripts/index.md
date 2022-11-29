@@ -1,5 +1,7 @@
 # NzbGet Scripts
 
+!!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
+
 ## Clean
 
 ??? info "Clean NZB name"
