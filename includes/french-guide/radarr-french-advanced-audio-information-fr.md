@@ -3,7 +3,7 @@
 
     - Les règles de la Scène française stipulent que l'audio français doit être le premier audio (celui par défaut) dans une version MULTi.
     - Les règles stipulent que seul le meilleur son (qu'il soit original ou FR) doit être mentionné dans le titre.
-    - Certains films (et émissions de télévision, principalement de l'ère pré-streaming) ne disposent pas d'une piste audio FR équivalente à la piste la plus élevée de l'audio original.
+    - Certains films (et séries, principalement de l'ère pré-streaming) ne disposent pas d'une piste audio FR équivalente à la piste la plus élevée de l'audio original.
 
     En conséquence, les situations ci-après peuvent être observées :
 
