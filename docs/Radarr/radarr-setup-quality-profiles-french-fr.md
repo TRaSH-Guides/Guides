@@ -1,7 +1,6 @@
 # Comment configurer ses Profiles
 
-!!! note
-    Ce guide a été créé et est maintenu par [Someone said "Nice"?](https://github.com/NiceTSY)
+!!! note "Ce guide a été créé et est maintenu par [Someone said "Nice"?](https://github.com/NiceTSY)"
 
 Quelle est la meilleure façon de configurer les Formats Personnalisés (ou Custom Formats) et lesquels utiliser avec quel score pour obtenir une release avec un audio français et un anglais ?
 
@@ -17,7 +16,7 @@ TRaSH a créé un [schéma](/Radarr/Radarr-setup-custom-formats/#which-quality-p
 
 ## Notions de base
 
-Il est très important que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (*en anglais uniquement*) :
+Il est impératif que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (*en anglais uniquement*) :
 
 - L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 - La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to setup Quality Profiles | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="_blank" rel="noopener noreferrer"}.
@@ -26,7 +25,7 @@ Il est très important que vous respectiez et compreniez ce qui est proposé par
 
 !!! warning "Impératif"
 
-    La seule modification nécessaire et **indispensable** pour que les formats personnalisés français fonctionnent, est de définir le profil de langue sur `Any`.
+    La seule modification nécessaire et **indispensable** pour que les formats personnalisés français fonctionnent est de définir le profil de langue sur `Any`.
 
     ??? check "Exemple - [CLIQUEZ POUR AFFICHER]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
@@ -44,7 +43,7 @@ Deux options s'offre à vous :
 
 !!! tip "Il s'agit de la méthode à privilégier."
 
-- Configurer Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (*en anglais*).
+- Configurez Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (*en anglais*).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md) (*en anglais*). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
 - (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `1000`.
