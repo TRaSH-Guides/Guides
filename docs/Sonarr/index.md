@@ -16,9 +16,15 @@ For Installation and Quick Start Guide please check the official [WikiArr](https
 
 ![Current Develop/Nightly](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Develop&query=%24%5B%27v3-nightly%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb }
 
-(Alpha/Unstable) : This is the bleeding edge. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch.
+(Alpha/Unstable) : This is now the same as main and likely the last v3 release.
 
-!!! danger "**Warning: You may not be able to go back to `main` after switching to this branch.** On GitHub, this is the `develop` branch."
+## v4 Develop
+
+![Current Develop/Nightly](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=v4-preview&query=%24%5B%27v4-preview%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb }
+
+(Alpha/Unstable) : This is the bleeding edge for Sonarr v4 Beta. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch. On GitHub, this is the develop branch.
+
+!!! danger "**Warning: You are not able to go back to (v3) `main` or (v3) `develop` after switching to the v4 branch without reinstalling and locating a v3 backup.** On GitHub, this is the `develop` branch."
 
 ### How do I update Sonarr
 
