@@ -1,0 +1,62 @@
+{
+  "trash_id": "9965a052eb87b0d10313b1cea89eb451",
+  "trash_score": "1900",
+  "name": "Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "BLURANiUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BLURANiUM)\\b"
+      }
+    },
+    {
+      "name": "BMF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BMF)\\b"
+      }
+    },
+    {
+      "name": "FraMeSToR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FraMeSToR)\\b"
+      }
+    },
+    {
+      "name": "PmP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PmP)\\b"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SiCFoI)\\b"
+      }
+    }
+  ]
+}

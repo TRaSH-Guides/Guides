@@ -45,24 +45,24 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups            | Streaming Services  |
-| --------------------- | --------------------- | --------------------------- | ------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)             | [WEB Tier 02](#web-tier-02) | [Apple TV+](#atvp)  |
-|                       | [x265 (HD)](#x265-hd) | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
-|                       |                       | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
-|                       |                       |                             | [HBO Max](#hmax)    |
-|                       |                       |                             | [HBO](#hbo)         |
-|                       |                       |                             | [Hulu](#hulu)       |
-|                       |                       |                             | [NLZiet](#nlz)      |
-|                       |                       |                             | [Netflix](#nf)      |
-|                       |                       |                             | [Paramount+](#pmtp) |
-|                       |                       |                             | [Peacock TV](#pcok) |
-|                       |                       |                             | [Quibi](#qibi)      |
-|                       |                       |                             | [SHOWTIME](#sho)    |
-|                       |                       |                             | [Videoland](#vdl)   |
-|                       |                       |                             | [YouTube Red](#red) |
-|                       |                       |                             | [iTunes](#it)       |
+| Series Versions       | Unwanted              | HQ Source Groups                | Streaming Services  |
+| --------------------- | --------------------- | ------------------------------- | ------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01) | [Amazon](#amzn)     |
+| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02) | [Apple TV+](#atvp)  |
+|                       | [x265 (HD)](#x265-hd) | [WEB Tier 03](#web-tier-01)     | [DC Universe](#dcu) |
+|                       |                       | [WEB Tier 03](#web-tier-02)     | [Disney+](#dsnp)    |
+|                       |                       | [WEB Tier 03](#web-tier-03)     | [HBO Max](#hmax)    |
+|                       |                       | [WEB Scene](#web-scene)         | [HBO](#hbo)         |
+|                       |                       |                                 | [Hulu](#hulu)       |
+|                       |                       |                                 | [NLZiet](#nlz)      |
+|                       |                       |                                 | [Netflix](#nf)      |
+|                       |                       |                                 | [Paramount+](#pmtp) |
+|                       |                       |                                 | [Peacock TV](#pcok) |
+|                       |                       |                                 | [Quibi](#qibi)      |
+|                       |                       |                                 | [SHOWTIME](#sho)    |
+|                       |                       |                                 | [Videoland](#vdl)   |
+|                       |                       |                                 | [YouTube Red](#red) |
+|                       |                       |                                 | [iTunes](#it)       |
 
 ------
 
@@ -1101,6 +1101,40 @@ I also made 3 guides related to this one.
 ## HQ Source Groups
 
 ------
+
+### Remux Tier 01
+
+??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Remux Tier 02
+
+??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that only use one source.(So called one disc wonders.)
+    - Groups that use use a automated way.
+    - Groups that don't check their stuff.
+    - Groups that haven't released much. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
 
 ### WEB Tier 01
 
