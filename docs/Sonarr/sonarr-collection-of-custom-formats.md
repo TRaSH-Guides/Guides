@@ -1123,7 +1123,7 @@ I also made 3 guides related to this one.
 ??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that only use one source.(So called one disc wonders.)
-    - Groups that use use a automated way.
+    - Groups that use an automated way.
     - Groups that don't check their stuff.
     - Groups that haven't released much. (yet)
     - Groups that retired and don't have the best quality by todays standards.
