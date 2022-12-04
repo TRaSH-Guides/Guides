@@ -12,6 +12,15 @@
       "fields": {
         "value": "\\b(repack2)\\b"
       }
+    },
+    {
+      "name": "Proper v2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(proper2)\\b"
+      }
     }
   ]
 }
