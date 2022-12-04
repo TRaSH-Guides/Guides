@@ -5,24 +5,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
-      }
-    },
-    {
       "name": "ABBIE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -38,6 +20,15 @@
       "required": false,
       "fields": {
         "value": "\\b(AJP69)\\b"
+      }
+    },
+    {
+      "name": "APEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(APEX)\\b"
       }
     },
     {
@@ -155,6 +146,24 @@
       "required": false,
       "fields": {
         "value": "\\b(TEPES)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
       }
     }
   ]
