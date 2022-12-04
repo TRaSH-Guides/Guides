@@ -1,3 +1,19 @@
+# 2022-12-04 18:30
+**[Starr]**
+- Added: `APEX` to CF `WEB Tier 01`. *PR#1003*
+- Added: `Proper2` condition to CF `Repack v2`. *PR#1000*
+- Updated: CF `MA` score so it's not trumped by repacks. *PR#1000*
+- Added: `PQ` condition to CF `SDR` `2160p`. *PR#1000*
+
+**[Radarr]**
+- Updated: CF `Repack` scores to match Sonarr. *PR#1000*
+
+**[Guides]**
+*How to setup Quality Profiles (French) PR#995*
+- Corrected some French wording and grammar.
+- Corrected VFQ format to not recognise FRENCH alone. It needs now MULTi in front of it (but will not recognise the Multi-French format) so it should leave alone the French original movies.
+- This is still not bulletproof but should lead to less false positives.
+
 # 2022-11-27 18:00
 **[NZBGet]**
 *Downloaders - Download Clients PR#992*
