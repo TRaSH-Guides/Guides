@@ -23,6 +23,15 @@
       }
     },
     {
+      "name": "APEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(APEX)\\b"
+      }
+    },
+    {
       "name": "CasStudio",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
