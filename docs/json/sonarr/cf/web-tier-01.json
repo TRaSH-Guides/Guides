@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(APEX)\\b"
+        "value": "\\b(APEX|PAXA|PEXA|XEPA)\\b"
       }
     },
     {
@@ -122,24 +122,6 @@
       }
     },
     {
-      "name": "PAXA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PAXA)\\b"
-      }
-    },
-    {
-      "name": "PEXA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PEXA)\\b"
-      }
-    },
-    {
       "name": "QOQ",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -191,15 +173,6 @@
       "required": false,
       "fields": {
         "value": "\\b(ViSUM)\\b"
-      }
-    },
-    {
-      "name": "XEPA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(XEPA)\\b"
       }
     },
     {
