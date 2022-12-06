@@ -116,21 +116,29 @@ You only need to edit a few options in the script
 
 ```python
 # --DEFINE VARIABLES--#
-# Set Number of Days to stop torrents for the move
-days = 2
-qbt_host = '192.168.2.200:8080'
-qbt_user = 'admin'
-qbt_pass = 'adminadmin'
+# Set Number of Days to stop torrents between two offsets
+# days_from set to 0 will pause any torrents from todays date
+# days_to will be the upper limit of how far you want to pause torrents to
+days_from = 0
+days_to = 2
+qbt_host = "192.168.2.200:8080"
+qbt_user = None
+qbt_pass = None
 # --DEFINE VARIABLES--#
 ```
 
-- `days` => Set Number of Days to stop torrents for the move.
-- `qbt_host` => The URL you use to access qBittorrent locally. (*the* `'` *should remain*)
-- `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled.
-- `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled.
+- `days_from` => Set Number of Days to stop torrents **from** for the move.
+- `days_to` => Set Number of Days to stop torrents **to** for the move.
+- `qbt_host` => The URL you use to access qBittorrent locally. (*the* `"` *should remain*)
+- `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
+- `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
 
 !!! attention ""
-    If you don't use the unRaid `Mover Tuning` app, You might need to change **line 54** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
+    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 68**:
+    
+    - If you do not use `Mover Tuning`, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
+    - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 68**
+    - If you use `Mover Tuning` and **do** want to use it for the script, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`. For this option, inside the `Mover Tuner` options you will also need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
 
 #### Copy script to your preferred location
 
