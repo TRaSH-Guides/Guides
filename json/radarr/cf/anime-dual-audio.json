@@ -9,25 +9,34 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dual[ ._-]?audio|\\[dual\\]|(EN|JA)\\+(JA|EN)"
+        "value": "dual[ ._-]?audio|[\\[(]dual[\\])]|(JA|ZH)\\+EN|EN\\+(JA|ZH)"
+      }
+    },
+    {
+      "name": "Not Single Language Only",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\[(JA|ZH)\\]"
       }
     },
     {
       "name": "Japanese Language",
       "implementation": "LanguageSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 8
       }
     },
     {
-      "name": "Not Japanese Only",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
+      "name": "Chinese Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
       "fields": {
-        "value": "\\[JA\\]"
+        "value": 10
       }
     }
   ]
