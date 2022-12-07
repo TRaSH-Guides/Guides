@@ -1,0 +1,71 @@
+{
+  "trash_id": "8a1d0c3d7497e741736761a1da866a2e",
+  "trash_score": "1850",
+  "name": "Remux Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "decibeL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(decibeL)\\b"
+      }
+    },
+    {
+      "name": "EPSiLON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(EPSiLON)\\b"
+      }
+    },
+    {
+      "name": "HiFi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HiFi)\\b"
+      }
+    },
+    {
+      "name": "KRaLiMaRKo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KRaLiMaRKo)\\b"
+      }
+    },
+    {
+      "name": "PTer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PTer)\\b"
+      }
+    },
+    {
+      "name": "TRiToN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TRiToN)\\b"
+      }
+    }
+  ]
+}
