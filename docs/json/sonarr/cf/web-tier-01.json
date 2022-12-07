@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(APEX)\\b"
+        "value": "\\b(APEX|PAXA|PEXA|XEPA)\\b"
       }
     },
     {
