@@ -45,24 +45,24 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups                | Streaming Services  |
-| --------------------- | --------------------- | ------------------------------- | ------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02) | [Apple TV+](#atvp)  |
-|                       | [x265 (HD)](#x265-hd) | [WEB Tier 03](#web-tier-01)     | [DC Universe](#dcu) |
-|                       |                       | [WEB Tier 03](#web-tier-02)     | [Disney+](#dsnp)    |
-|                       |                       | [WEB Tier 03](#web-tier-03)     | [HBO Max](#hmax)    |
-|                       |                       | [WEB Scene](#web-scene)         | [HBO](#hbo)         |
-|                       |                       |                                 | [Hulu](#hulu)       |
-|                       |                       |                                 | [NLZiet](#nlz)      |
-|                       |                       |                                 | [Netflix](#nf)      |
-|                       |                       |                                 | [Paramount+](#pmtp) |
-|                       |                       |                                 | [Peacock TV](#pcok) |
-|                       |                       |                                 | [Quibi](#qibi)      |
-|                       |                       |                                 | [SHOWTIME](#sho)    |
-|                       |                       |                                 | [Videoland](#vdl)   |
-|                       |                       |                                 | [YouTube Red](#red) |
-|                       |                       |                                 | [iTunes](#it)       |
+| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services  |
+| --------------------- | --------------------- | --------------------------------------- | ------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)     |
+| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)  |
+|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu) |
+|                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)    |
+|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)    |
+|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)         |
+|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)       |
+|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)      |
+|                       |                       |                                         | [Netflix](#nf)      |
+|                       |                       |                                         | [Paramount+](#pmtp) |
+|                       |                       |                                         | [Peacock TV](#pcok) |
+|                       |                       |                                         | [Quibi](#qibi)      |
+|                       |                       |                                         | [SHOWTIME](#sho)    |
+|                       |                       |                                         | [Videoland](#vdl)   |
+|                       |                       |                                         | [YouTube Red](#red) |
+|                       |                       |                                         | [iTunes](#it)       |
 
 ------
 
@@ -1132,6 +1132,37 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+### HD Bluray Tier 01
+
+??? faq "HD Bluray Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HD Bluray Tier 02
+
+??? faq "HD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
