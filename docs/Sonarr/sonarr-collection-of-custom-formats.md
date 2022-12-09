@@ -78,6 +78,7 @@ I also made 3 guides related to this one.
 |                                | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
 |                                | [AV1](#av1)                         | &nbsp; | &nbsp; |
+|                                | [SDR](#sdr)                         | &nbsp; | &nbsp; |
 
 ------
 
@@ -1092,6 +1093,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SDR
+
+??? faq "SDR - [CLICK TO EXPAND]"
+
+    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
