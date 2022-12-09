@@ -1141,7 +1141,6 @@ I also made 3 guides related to this one.
 ??? faq "HD Bluray Tier 01 - [CLICK TO EXPAND]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
