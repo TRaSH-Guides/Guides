@@ -104,6 +104,7 @@ plugins:
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
         jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
+  - meta
 
 theme:
   name: material
