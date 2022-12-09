@@ -22,7 +22,7 @@ So I decided to fine tune it to try to get the releases & quality I preferred. O
 After a while I also decided to create guides for frequently asked questions, and started to collect all kind of information gathered from various sources.
 I try to make my guides as easy as possible for everyone to understand, in my opinion pictures explain often more than just some text.
 
-------
+---
 
 ## Support
 
@@ -31,7 +31,7 @@ I try to make my guides as easy as possible for everyone to understand, in my op
 If you have questions, suggestions, requests or want to contribute, click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
 Feel free to create a PR if you want to.
 
-------
+---
 
 ### DISCLAIMER
 
@@ -40,7 +40,7 @@ I have tested most things myself and I have tried to see if I could tune them a 
 
 You use everything here at your own risk. I won't be responsible if something happens to your setup or collection!
 
-------
+---
 
 ### Special Thanks
 
