@@ -1,3 +1,7 @@
+---
+ᴴₒᴴₒᴴₒ: true
+---
+
 # TRaSH-Guides
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
