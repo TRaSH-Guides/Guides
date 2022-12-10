@@ -1,3 +1,15 @@
+# 2022-12-10 01:30
+**[Starr]**
+
+- Added: CF `SDR` to collection table. PR#1014
+- Added: DV Info to HDR Formats. PR#1014
+- Fix: CF `Bad Dual Groups` for better matching and prevent download loop => https://regex101.com/r/Rsf0xp/1 PR#1014
+
+**[Sonarr Guide]**
+*[Recommended naming scheme]* PR#1014
+
+- Fix: Conflicting naming scheme example for multi-episode.
+
 # 2022-12-04 18:30
 **[Starr]**
 - Added: `APEX` to CF `WEB Tier 01`. *PR#1003*

@@ -1199,6 +1199,17 @@
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-hdr-formats.md -->
 <details class="summary">
 <summary>All HDR Formats - [CLICK TO EXPAND]</summary>
+<!-- BEGIN INCLUDE ../../includes/cf/dv-info.md -->
+<div class="admonition info">
+<p class="admonition-title">Dolby Vision is available in several profiles</p>
+<ul>
+<li>Profile 5 - This is what comes with WEB-DL Dolby Vision release without HDR10 fallback.<br/> On a AppleTV, these do not reliably play with the Plex app but will work better with the third-party Infuse app. MP4 files tend to work better than MKV files, obviously MKV is preferable because of its support for lossless audio. (<em>Incompatible devices will playback with blown out pinks and greens</em>)</li>
+<li>Profile 7 - This is what comes with HD Bluray Remuxes.<br/>These files will play on an Nvidia Shield (2019), but on most other players will revert to the HDR10 fallback.</li>
+<li>Profile 8 - This is what comes with (Hybrid) WEB-DL releases (HULU), Hybrid UHD Remux and UHD BluRay releases - all of which have HDR10 fallback.<br/>This works with several mainstream media players,<br/> but the AppleTV can only play the HDR10 fallback. (<em>although your TV will incorrectly say that it is playing DV</em>).</li>
+</ul>
+<p><strong>Meaning: Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7/8.</strong></p>
+</div>
+<!-- END INCLUDE -->
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-hdr-formats.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png"/></a></p>
 <table>
 <thead>
@@ -1451,11 +1462,6 @@
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
 </tr>
-<tr>
-<td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/sdr.json">SDR</a></td>
-<td>-10000</td>
-<td>9c38ebb7384dada637be8899efa68e6f</td>
-</tr>
 </tbody>
 </table>
 <hr/>
@@ -1464,7 +1470,6 @@
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
-<li><strong>SDR:</strong> This will help to prevent to grab UHD/4k releases without HDR Formats.</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -1473,6 +1478,9 @@
 <summary>Optional - [CLICK TO EXPAND]</summary>
 <div class="admonition danger">
 <p class="admonition-title"><strong>The <code>x265 (no HDR/DV)</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title"><strong>The <code>SDR</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
 </div>
 <table>
 <thead>
@@ -1528,6 +1536,11 @@
 <td>-10000</td>
 <td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr">SDR</a></td>
+<td>-10000</td>
+<td>9c38ebb7384dada637be8899efa68e6f</td>
+</tr>
 </tbody>
 </table>
 <hr/>
@@ -1565,6 +1578,9 @@ Also they often even rename the release name in to Portuguese.</li>
 <div class="admonition danger">
 <p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
 </div>
+</li>
+<li>
+<p><strong>SDR:</strong> This will help to prevent to grab UHD/4k releases without HDR Formats.</p>
 </li>
 </ul>
 </details>
