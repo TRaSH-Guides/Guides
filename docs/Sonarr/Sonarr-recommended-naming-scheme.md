@@ -33,7 +33,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
     Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E02-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+    `The Series Title! (2010) - S01E01-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
 
 ------
 
@@ -75,7 +75,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
     Multi Episode:
 
-    `The Series Title! (2010) - S01E01-E02-E03 - 001-002-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
 
 ------
 
