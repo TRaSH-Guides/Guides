@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-alfaHD[_]?)\\b"
+        "value": "\\b(-alfaHD.*$)\\b"
       }
     },
     {
