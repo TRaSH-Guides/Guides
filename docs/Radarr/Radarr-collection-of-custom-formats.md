@@ -75,6 +75,7 @@ I also made 3 guides related to this one.
 | [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
+|                                | [SDR](#sdr)                         |                               |                                                 |
 
 ------
 
@@ -1110,6 +1111,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/av1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SDR
+
+??? faq "SDR - [CLICK TO EXPAND]"
+
+    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

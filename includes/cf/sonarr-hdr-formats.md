@@ -1,5 +1,7 @@
 ??? summary "HDR Formats - [CLICK TO EXPAND]"
 
+    {! include-markdown "../../includes/cf/dv-info.md" !}
+
     ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
 
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |

@@ -45,24 +45,24 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups            | Streaming Services  |
-| --------------------- | --------------------- | --------------------------- | ------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [WEB Tier 01](#web-tier-01) | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)             | [WEB Tier 02](#web-tier-02) | [Apple TV+](#atvp)  |
-|                       | [x265 (HD)](#x265-hd) | [WEB Tier 03](#web-tier-03) | [DC Universe](#dcu) |
-|                       |                       | [WEB Scene](#web-scene)     | [Disney+](#dsnp)    |
-|                       |                       |                             | [HBO Max](#hmax)    |
-|                       |                       |                             | [HBO](#hbo)         |
-|                       |                       |                             | [Hulu](#hulu)       |
-|                       |                       |                             | [NLZiet](#nlz)      |
-|                       |                       |                             | [Netflix](#nf)      |
-|                       |                       |                             | [Paramount+](#pmtp) |
-|                       |                       |                             | [Peacock TV](#pcok) |
-|                       |                       |                             | [Quibi](#qibi)      |
-|                       |                       |                             | [SHOWTIME](#sho)    |
-|                       |                       |                             | [Videoland](#vdl)   |
-|                       |                       |                             | [YouTube Red](#red) |
-|                       |                       |                             | [iTunes](#it)       |
+| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services  |
+| --------------------- | --------------------- | --------------------------------------- | ------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)     |
+| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)  |
+|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu) |
+|                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)    |
+|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)    |
+|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)         |
+|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)       |
+|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)      |
+|                       |                       |                                         | [Netflix](#nf)      |
+|                       |                       |                                         | [Paramount+](#pmtp) |
+|                       |                       |                                         | [Peacock TV](#pcok) |
+|                       |                       |                                         | [Quibi](#qibi)      |
+|                       |                       |                                         | [SHOWTIME](#sho)    |
+|                       |                       |                                         | [Videoland](#vdl)   |
+|                       |                       |                                         | [YouTube Red](#red) |
+|                       |                       |                                         | [iTunes](#it)       |
 
 ------
 
@@ -78,6 +78,7 @@ I also made 3 guides related to this one.
 |                                | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
 |                                | [AV1](#av1)                         | &nbsp; | &nbsp; |
+|                                | [SDR](#sdr)                         | &nbsp; | &nbsp; |
 
 ------
 
@@ -1098,9 +1099,89 @@ I also made 3 guides related to this one.
 
 ------
 
+### SDR
+
+??? faq "SDR - [CLICK TO EXPAND]"
+
+    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ## HQ Source Groups
 
 ------
+
+### Remux Tier 01
+
+??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Remux Tier 02
+
+??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that only use one source.(So called one disc wonders.)
+    - Groups that use an automated way.
+    - Groups that don't check their stuff.
+    - Groups that haven't released much. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+### HD Bluray Tier 01
+
+??? faq "HD Bluray Tier 01 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HD Bluray Tier 02
+
+??? faq "HD Bluray Tier 02 - [CLICK TO EXPAND]"
+
+    - Groups that created encodes from the remuxes without micro-sizing them.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
 
 ### WEB Tier 01
 

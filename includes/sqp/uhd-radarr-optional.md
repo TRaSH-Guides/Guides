@@ -1,6 +1,7 @@
 ??? summary "Optional - [CLICK TO EXPAND]"
 
     !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
+    !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
@@ -13,6 +14,7 @@
     | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           | {{ radarr['cf']['scene']['trash_score'] }}           | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
+    | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               | {{ radarr['cf']['sdr']['trash_score'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}             |
 
     ------
 
@@ -49,3 +51,5 @@
         In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
 
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
+
+    - **{{ radarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
