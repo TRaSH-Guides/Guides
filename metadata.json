@@ -3,12 +3,14 @@
   "json_paths": {
     "radarr": {
       "custom_formats": ["docs/json/radarr/cf"],
-      "qualities": ["docs/json/radarr/quality-size"]
+      "qualities": ["docs/json/radarr/quality-size"],
+      "naming": ["docs/json/radarr/naming"]
     },
     "sonarr": {
       "release_profiles": ["docs/json/sonarr/rp"],
       "custom_formats": ["docs/json/sonarr/cf"],
-      "qualities": ["docs/json/sonarr/quality-size"]
+      "qualities": ["docs/json/sonarr/quality-size"],
+      "naming": ["docs/json/sonarr/naming"]
     }
   }
 }

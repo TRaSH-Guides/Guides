@@ -24,7 +24,8 @@
       "additionalProperties": false,
       "properties": {
         "custom_formats": { "$ref": "#/$defs/paths_object" },
-        "qualities": { "$ref": "#/$defs/paths_object" }
+        "qualities": { "$ref": "#/$defs/paths_object" },
+        "naming": { "$ref": "#/$defs/paths_object" }
       }
     },
     "sonarr": {
@@ -33,7 +34,8 @@
       "properties": {
         "custom_formats": { "$ref": "#/$defs/paths_object" },
         "release_profiles": { "$ref": "#/$defs/paths_object" },
-        "qualities": { "$ref": "#/$defs/paths_object" }
+        "qualities": { "$ref": "#/$defs/paths_object" },
+        "naming": { "$ref": "#/$defs/paths_object" }
       }
     }
   }
