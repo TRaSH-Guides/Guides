@@ -1137,21 +1137,30 @@ pip3 install qbittorrent-api
 <p>Edit the script with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) you downloaded at the beginning of the guide <a href="#the-script">HERE</a>.</p>
 <p>You only need to edit a few options in the script</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># --DEFINE VARIABLES--#</span>
-<span class="c1"># Set Number of Days to stop torrents for the move</span>
-<span class="n">days</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">qbt_host</span> <span class="o">=</span> <span class="s1">'192.168.2.200:8080'</span>
-<span class="n">qbt_user</span> <span class="o">=</span> <span class="s1">'admin'</span>
-<span class="n">qbt_pass</span> <span class="o">=</span> <span class="s1">'adminadmin'</span>
+<span class="c1"># Set Number of Days to stop torrents between two offsets</span>
+<span class="c1"># days_from set to 0 will pause any torrents from todays date</span>
+<span class="c1"># days_to will be the upper limit of how far you want to pause torrents to</span>
+<span class="n">days_from</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">days_to</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">qbt_host</span> <span class="o">=</span> <span class="s2">"192.168.2.200:8080"</span>
+<span class="n">qbt_user</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">qbt_pass</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="c1"># --DEFINE VARIABLES--#</span>
 </code></pre></div>
 <ul>
-<li><code>days</code> =&gt; Set Number of Days to stop torrents for the move.</li>
-<li><code>qbt_host</code> =&gt; The URL you use to access qBittorrent locally. (<em>the</em> <code>'</code> <em>should remain</em>)</li>
-<li><code>qbt_user</code> =&gt; Your used qBittorrent <code>User Name</code> if you have authentication enabled.</li>
-<li><code>qbt_pass</code> =&gt; Your used qBittorrent <code>Password</code> if you have authentication enabled.</li>
+<li><code>days_from</code> =&gt; Set Number of Days to stop torrents <strong>from</strong> for the move.</li>
+<li><code>days_to</code> =&gt; Set Number of Days to stop torrents <strong>to</strong> for the move.</li>
+<li><code>qbt_host</code> =&gt; The URL you use to access qBittorrent locally. (<em>the</em> <code>"</code> <em>should remain</em>)</li>
+<li><code>qbt_user</code> =&gt; Your used qBittorrent <code>User Name</code> if you have authentication enabled. Add <code>'</code> either side.</li>
+<li><code>qbt_pass</code> =&gt; Your used qBittorrent <code>Password</code> if you have authentication enabled. Add <code>'</code> either side.</li>
 </ul>
 <div class="admonition attention">
-<p>If you don't use the unRaid <code>Mover Tuning</code> app, You might need to change <strong>line 54</strong> from <code>os.system('/usr/local/sbin/mover.old start')</code> to <code>os.system('/usr/local/sbin/mover start')</code></p>
+<p>Depending on whether you use the unRaid <code>Mover Tuning</code> app, You might need to change <strong>line 68</strong>:</p>
+<ul>
+<li>If you do not use <code>Mover Tuning</code>, change <strong>line 68</strong> from <code>os.system('/usr/local/sbin/mover.old start')</code> to <code>os.system('/usr/local/sbin/mover start')</code></li>
+<li>If you use <code>Mover Tuning</code> but <strong>don't</strong> want to use it for the script, do not change <strong>line 68</strong></li>
+<li>If you use <code>Mover Tuning</code> and <strong>do</strong> want to use it for the script, change <strong>line 68</strong> from <code>os.system('/usr/local/sbin/mover.old start')</code> to <code>os.system('/usr/local/sbin/mover start')</code>. For this option, inside the <code>Mover Tuner</code> options you will also need to set <code>Move Now button follows plugin filters</code> to <code>Yes</code> and <code>Disable Mover running on a schedule</code> to <code>No</code>.</li>
+</ul>
 </div>
 <h4 id="copy-script-to-your-preferred-location">Copy script to your preferred location<a class="headerlink" href="#copy-script-to-your-preferred-location" title="Permanent link"></a></h4>
 <p>Now it's time to place the script you just edited somewhere easy to access/remember.</p>
@@ -1211,7 +1220,7 @@ pip3 install qbittorrent-api
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 15, 2022 19:18:58</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 6, 2022 20:41:58</span>
 </small>
 </div>
 <footer class="sponsorship">

@@ -32,6 +32,15 @@
       }
     },
     {
+      "name": "FGT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FGT)\\b"
+      }
+    },
+    {
       "name": "GHOSTS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
