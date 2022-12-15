@@ -1,4 +1,5 @@
 # Sonarr V4 Mandatory Authentication
+!!! danger "**Warning: This is ONLY to be used if you have an external authentication service. Most top level indexers and trackers are now requiring authentication in front of Sonarr. Disabling authentication with no third party solution may result in issues with connection to your indexers or trackers**"
 
 With the beta release of Sonarr V4, if your sonarr instance is accessible externally you are now required to add authentication to your Sonarr instance.
 
