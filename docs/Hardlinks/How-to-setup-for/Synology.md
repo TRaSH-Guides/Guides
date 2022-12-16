@@ -4,7 +4,7 @@
 
     Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose through a terminal.
 
-    This is faster then the GUI and after installing, it shows up in the Docker GUI.
+    This is faster than the GUI and after installing, it shows up in the Docker GUI.
 
     Thanks to faxity for the initial compose that I used to create the Synology Guide.
 
