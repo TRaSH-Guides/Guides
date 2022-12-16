@@ -5,6 +5,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "DRACULA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DRACULA)\\b"
+      }
+    },
+    {
       "name": "SLiGNOME",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
