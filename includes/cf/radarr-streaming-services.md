@@ -10,6 +10,7 @@
     | [{{ radarr['cf']['pcok']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcok) | 0                                       | {{ radarr['cf']['pcok']['trash_id'] }} |
     | [{{ radarr['cf']['pmtp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pmtp) | 0                                       | {{ radarr['cf']['pmtp']['trash_id'] }} |
     | [{{ radarr['cf']['ma']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ma)     | {{ radarr['cf']['ma']['trash_score'] }} | {{ radarr['cf']['ma']['trash_id'] }}   |
+    | [{{ radarr['cf']['bcore']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bcore) | 0                                       | {{ radarr['cf']['bcore']['trash_id'] }}   |
 
     ------
     Breakdown and Why
