@@ -35,8 +35,8 @@ Add the following info
 1. The tags for this proxy. Proxies apply to all matching (same tag) indexers. If blank this proxy applies to all indexers.
 1. Host name to your torrent client.
 1. Used port for privoxy (default for privoxy: 8118).
-1. User name for your torrent client.
-1. Password for your torrent client.
+1. User name for your torrent client. (Not needed if using the default privoxy settings)
+1. Password for your torrent client. (Not needed if using the default privoxy settings)
 1. Test if your connection works.
 1. If it works click on `Save`.
 
