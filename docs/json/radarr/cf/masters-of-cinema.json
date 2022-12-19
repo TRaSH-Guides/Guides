@@ -14,7 +14,7 @@
       }
     },
     {
-	  "name": "MoC",
+      "name": "MoC",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
