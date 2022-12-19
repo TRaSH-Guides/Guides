@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Open[-. ]Matte|OpenMatte)\\b"
+        "value": "\\b(Open[-. ]?Matte)\\b"
       }
     }
   ]
