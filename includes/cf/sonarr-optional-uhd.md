@@ -1,4 +1,4 @@
-??? summary "Optional - [CLICK TO EXPAND]"
+??? summary "Optional UHD - [CLICK TO EXPAND]"
 
     !!! danger "**The `SDR` is a MUST for this Quality Profile** :warning:"
 
