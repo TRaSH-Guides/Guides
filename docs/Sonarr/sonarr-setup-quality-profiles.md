@@ -58,7 +58,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ------
 
-{! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
+{! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
 
 ------
 
@@ -123,7 +123,7 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
+{! include-markdown "../../includes/cf/sonarr-unwanted-uhd.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
 
