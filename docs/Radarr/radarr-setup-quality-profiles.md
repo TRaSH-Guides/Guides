@@ -139,6 +139,8 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
 
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Use the following main settings in your profile.
@@ -224,6 +226,8 @@ If you prefer 2160p Remuxes (Remux-2160p)
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
