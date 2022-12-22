@@ -9,7 +9,7 @@ Some prefer high quality audio (HD Audio), others high quality video. Many prefe
 
 Here I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.
 
---8<-- "includes/cf/score-attention.md"
+I created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
 
 ------
 
