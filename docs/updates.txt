@@ -1,3 +1,12 @@
+# 2022-12-22 23:15
+**[Starr]**
+- Fix: CF `Bad Dual Groups` for better matching => https://regex101.com/r/0O67fi/1. *PR#1016*
+- Added: `SICFol` to CF `HDR (undefined)`, being they don't add HDR in their release name. *PR#2033*
+
+**[Sonarr]**
+- Added: `DRACULA` to CF `Web Tier 03`. *PR#1025*
+- Updated: Sonarr v4 Guide with a flowchart. *PR#1030*
+
 # 2022-12-10 01:30
 **[Starr]**
 
