@@ -1,0 +1,17 @@
+{
+  "trash_id": "82085412d9a53ba8d8e46fc624eb701d",
+  "trash_regex": "https://regex101.com/r/MGfk6d/1",
+  "name": "VQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Version Québécoise",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVQ\\b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "trash_id": "ddb8eaa9c85a549c50034d280539d54d",
+  "trash_score": "1400",
+  "name": "FR WEB Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Anime-Heart",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Anime[ .-]?Heart)\\b"
+      }
+    },
+    {
+      "name": "Daijobu",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Daijobu)\\b"
+      }
+    },
+    {
+      "name": "KaeriZaki",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KaeriZaki)\\b"
+      }
+    },
+    {
+      "name": "KFR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KFR)\\b"
+      }
+    },
+    {
+      "name": "Natsumi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Natsumi)\\b"
+      }
+    },
+    {
+      "name": "NekoYu'",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NekoYu\\'?)\\b"
+      }
+    },
+    {
+      "name": "Onii-ChanSub",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Onii[ .-]?ChanSub)\\b"
+      }
+    },
+    {
+      "name": "Otaku-Attitude",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Otaku[ .-]?Attitude)\\b"
+      }
+    },
+    {
+      "name": "Team Arcedo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Team[ .-]?Arcedo)\\b"
+      }
+    }
+  ]
+}
