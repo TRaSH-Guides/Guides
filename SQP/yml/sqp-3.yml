@@ -39,9 +39,11 @@ radarr:
           - 9364dd386c9b4a1100dde8264690add7 # HLG
           # Movie Versions
           - 0f12c086e289cf966fa5948eac571f44 # Hybrid
+          - f700d29429c023a5734505e77daeaea7 # DV (FEL)
           - 570bc9ebecd92723d2d21500f4be314c # Remaster
           - eca37840c13c6ef2dd0262b141a5482f # 4K Remaster
           - e0c07d59beb37348e975a930d5e50319 # Criterion Collection
+          - 9d27d9d2181838f76dee150882bdc58c # Masters of Cinema
           - 957d0f44b592285f26449575e8b1167e # Special Edition
           - eecf3a857724171f968a66cb5719e152 # IMAX
           # Uncomment the next line if you prefer IMAX Enhanced releases
