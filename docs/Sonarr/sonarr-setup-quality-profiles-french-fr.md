@@ -52,7 +52,7 @@ Afin d'illustrer ce principe, vous verrez une section **"Mix original (optionnel
 !!! warning "Attention"
     Si vous utilisez le **"Mix original (optionnel)"**. Vous devez comprendre que même si l'objectif principal de ces Formats Personnalisés est de travailler en parallèle avec les formats du guide original. Vous pouvez vous retrouver avec un seul audio alors qu'il existe une version MULTi. La raison est que la release n'a pas été notée assez haut pour l'emporter sur les autres scores.
 
-Un exemple pour les Animes en MULTi/VOSTFR est également fourni à la fin : (Exemple pour les Animes)[#exemple-pour-les-animes]
+Un exemple pour les Animes en MULTi/VOSTFR est également fourni à la fin : [Exemple pour les Animes](#exemple-pour-les-animes)
 
 ------
 

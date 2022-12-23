@@ -55,7 +55,7 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
     If you use the **"Original mix (optional)"**. You need to understand that even if in the beginning the main focus of those French Custom Formats is to work alongside the original ones.
     You could end up with a single audio release when a MULTi release exists. This is because it was not scored high enough to trump the other scoring.
 
-An example for Anime in MULTi/VOSTFR is also provided at the end: (Anime Example)[#anime-example]
+An example for Anime in MULTi/VOSTFR is also provided at the end: [Anime Example](#anime-example)
 
 ------
 
