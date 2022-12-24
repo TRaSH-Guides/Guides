@@ -1,0 +1,26 @@
+{
+  "trash_id": "9d27d9d2181838f76dee150882bdc58c",
+  "trash_score": "25",
+  "name": "Masters of Cinema",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Masters of Cinema",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Masters[ .-]?Of[ .-]?Cinema)(\\b|\\d)"
+      }
+    },
+    {
+      "name": "MoC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MoC)\\b"
+      }
+    }
+  ]
+}
