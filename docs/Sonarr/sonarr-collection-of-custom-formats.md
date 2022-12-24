@@ -1123,7 +1123,7 @@ I also made 3 guides related to this one.
 
 ??? faq "DV (FEL) - [CLICK TO EXPAND]"
 
-    - This will boost the score for DV Release using the original FEL DV from the disc to replace the old webdl HYBRID release.
+    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

@@ -55,4 +55,4 @@
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
     - **{{ radarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
-    - **{{ radarr['cf']['dv-fel']['name'] }}:** This will boost the score for DV Release using the original FEL DV from the disc to replace the old webdl HYBRID release.
+    - **{{ radarr['cf']['dv-fel']['name'] }}:** This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
