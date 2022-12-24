@@ -1,0 +1,26 @@
+{
+  "trash_id": "07a32f77690263bb9fda1842db7e273f",
+  "trash_regex": "https://regex101.com/r/sWCfAN/1",
+  "name": "VOSTFR",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "VOSTFR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVOST.*?FR(E|A)?\\b"
+      }
+    },
+    {
+      "name": "SUBFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSUBFR(A|ENCH)?\\b"
+      }
+    }
+  ]
+}

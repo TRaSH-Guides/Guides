@@ -411,6 +411,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-en/</loc>
+         <lastmod>2022-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/</loc>
+         <lastmod>2022-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/</loc>
          <lastmod>2022-12-24</lastmod>
          <changefreq>daily</changefreq>

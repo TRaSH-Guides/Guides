@@ -1,0 +1,17 @@
+{
+  "trash_id": "b6816a0e1d4b64bf3550ad3b74b009b6",
+  "trash_regex": "https://regex101.com/r/YA7mOH/1",
+  "name": "VFI",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "French International",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVF(I|\\d)\\b"
+      }
+    }
+  ]
+}
