@@ -57,6 +57,15 @@
       "fields": {
         "value": "\\bDD[^a-z+]|(?<!e)ac3"
       }
+    },
+    {
+      "name": "Not RlsGrp (TrueHD only)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "CtrlHD|W4NK3R|\\bDON\\b"
+      }
     }
   ]
 }

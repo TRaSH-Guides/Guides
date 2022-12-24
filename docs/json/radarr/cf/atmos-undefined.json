@@ -5,57 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Dolby Digital Plus",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
-      }
-    },
-    {
       "name": "ATMOS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
         "value": "\\bATMOS(\\b|\\d)"
-      }
-    },
-    {
-      "name": "Not TrueHD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "True[ .-]?HD"
-      }
-    },
-    {
-      "name": "Not DTS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bDTS(\\b|\\d)"
-      }
-    },
-    {
-      "name": "Not Basic Dolby Digital ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bDD[^a-z+]|(?<!e)ac3"
-      }
-    },
-    {
-      "name": "Not FLAC",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bFLAC(\\b|\\d)"
       }
     },
     {
@@ -68,6 +23,42 @@
       }
     },
     {
+      "name": "Not Basic Dolby Digital ",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDD[^a-z+]|(?<!e)ac3"
+      }
+    },
+    {
+      "name": "Not Dolby Digital Plus",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
+      }
+    },
+    {
+      "name": "Not DTS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDTS(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not FLAC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bFLAC(\\b|\\d)"
+      }
+    },
+    {
       "name": "Not PCM",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
@@ -77,12 +68,21 @@
       }
     },
     {
-      "name": "Not Groups (Atmos Only)",
+      "name": "Not RlsGrp (Atmos Only)",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
         "value": "W4NK3R|HQMUX"
+      }
+    },
+    {
+      "name": "Not TrueHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "True[ .-]?HD"
       }
     }
   ]
