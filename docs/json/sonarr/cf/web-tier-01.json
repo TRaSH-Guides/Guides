@@ -140,12 +140,12 @@
       }
     },
     {
-      "name": "SIC",
+      "name": "SiC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SIC)\\b"
+        "value": "\\b(SiC)\\b"
       }
     },
     {
