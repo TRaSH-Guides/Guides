@@ -1,0 +1,25 @@
+{
+  "trash_id": "7982e39789f17864f57b11f1996844f4",
+  "name": "Multi-French",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Original Audio",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "French Audio",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2
+      }
+    }
+  ]
+}

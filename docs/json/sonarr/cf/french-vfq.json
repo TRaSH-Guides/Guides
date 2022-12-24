@@ -1,0 +1,26 @@
+{
+  "trash_id": "7a7f4e4f58bd1058440236d033a90b67",
+  "trash_regex": "https://regex101.com/r/j1wmmv/3",
+  "name": "VFQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "FRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(?<=MULTi[ .])FR(A|ENCH)\\b"
+      }
+    },
+    {
+      "name": "Canadian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(VFQ?)\\b"
+      }
+    }
+  ]
+}
