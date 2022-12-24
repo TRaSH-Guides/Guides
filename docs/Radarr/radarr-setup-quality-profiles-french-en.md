@@ -1,4 +1,4 @@
-# How to setup Quality Profiles
+# How to setup Quality Profiles French
 
 *aka How to setup Custom Formats (French)*<br><br>
 
