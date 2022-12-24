@@ -37,7 +37,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(SIC|Flights)\\b"
+        "value": "\\b(SiC|Flights)\\b"
       }
     },
     {
