@@ -5,7 +5,7 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Groups (Missing HDR)",
+      "name": "RlsGrp (Missing HDR)",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,

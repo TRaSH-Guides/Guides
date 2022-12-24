@@ -1,3 +1,12 @@
+# 2022-12-24 20:30
+**[Starr]**
+- NEW: CF `DV (FEL)`. *PR#1040*
+- Synced + Sorted CF between the Starr apps. *PR#1040*
+- Renamed Condition `Not Groups` to `Not RlsGrp`. *PR#1040*
+ 
+**[Sonarr v4]**
+- NEW: Guide French Sonarr Guide. *PR#1036*
+
 # 2022-12-23 21:15
 **[Starr]**
 - Updated: CF `Hybrid`, Include WEBDL + DV/HDR10(+) and TrueHD Conditionals, and swap Hybrid release group to ReleaseGroupSpecification. *PR#1028*

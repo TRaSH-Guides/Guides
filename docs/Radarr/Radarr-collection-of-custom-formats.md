@@ -24,8 +24,7 @@ I also made 3 guides related to this one.
 
     This way you make sure the Custom Format preferences will be used instead.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"
 
 ------
 
@@ -76,6 +75,7 @@ I also made 3 guides related to this one.
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         |                               |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 |                               |                                                 |
 
 ------
 
@@ -1159,6 +1159,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV FEL
+
+??? faq "DV (FEL) - [CLICK TO EXPAND]"
+
+    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
