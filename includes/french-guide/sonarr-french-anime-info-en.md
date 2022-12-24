@@ -15,9 +15,9 @@
         - [Uncensored Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring){:target="_blank" rel="noopener noreferrer"}: If you prefer uncensored releases.
 
     ??? warning "Type of FanSubs - [CLICK TO EXPAND]"
-        Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickely and are often not well done.
+        Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done.
 
         | Custom Format                                                                                 | Score                                        | Trash ID                                  |
         | --------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
-        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | {{ sonarr['cf']['multi-audio']['fansub'] }}  | {{ sonarr['cf']['fansub']['trash_id'] }} |
+        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | 0                                            | {{ sonarr['cf']['fansub']['trash_id'] }}  |
         | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_score'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
