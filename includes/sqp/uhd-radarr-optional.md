@@ -2,6 +2,7 @@
 
     !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
     !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
+    !!! hint "The `DV (FEL)` is recommended for SQP2 and 3"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
@@ -15,6 +16,7 @@
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           | {{ radarr['cf']['scene']['trash_score'] }}           | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               | {{ radarr['cf']['sdr']['trash_score'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}             |
+    | [{{ radarr['cf']['dv-fel']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-fel)                         | {{ radarr['cf']['dv-fel']['trash_score'] }}          | {{ radarr['cf']['dv-fel']['trash_id'] }}          |
 
     ------
 
@@ -53,3 +55,4 @@
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
     - **{{ radarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
+    - **{{ radarr['cf']['dv-fel']['name'] }}:** This will boost the score for DV Release using the original FEL DV from the disc to replace the old webdl HYBRID release.

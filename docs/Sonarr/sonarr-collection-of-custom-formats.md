@@ -82,7 +82,7 @@ I also made 3 guides related to this one.
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
 |                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
-|                                |                                     | [FastSUB](#fastsub)           |                                               |
+|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
 
 ------
 
@@ -1113,6 +1113,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV FEL
+
+??? faq "DV (FEL) - [CLICK TO EXPAND]"
+
+    - This will boost the score for DV Release using the original FEL DV from the disc to replace the old webdl HYBRID release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-fel.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
