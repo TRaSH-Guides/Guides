@@ -68,7 +68,7 @@
       }
     },
     {
-      "name": "Not Groups (Missing HDR)",
+      "name": "Not RlsGrp (Missing HDR)",
       "implementation": "ReleaseGroupSpecification",
       "negate": true,
       "required": true,
