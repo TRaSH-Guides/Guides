@@ -15,4 +15,4 @@
         FanSUB groups can either be scored either {{ sonarr['cf']['french-anime-fansub']['trash_score'] }} (default) or `1000` depending if you want to prefer FanSUB or SeaDex releases.
 
     !!! tip "Original French Web Tiers"
-        French Web tiers are optionnal and can be included or not. This is due because some of them tend to release some Dubbed anime. Only add them if you are looking for MULTi releases as their VOSTFR releases are easily trumped by either the original Anime guide or by the French Anime tiers.
+        French Web tiers are optional and can be included or not. This is due because some of them tend to release some Dubbed anime. Only add them if you are looking for MULTi releases as their VOSTFR releases are easily trumped by either the original Anime guide or by the French Anime tiers.
