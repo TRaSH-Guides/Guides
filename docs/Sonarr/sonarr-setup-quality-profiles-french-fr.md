@@ -169,7 +169,7 @@ Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio or
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
 
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted.md" !}
+{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
