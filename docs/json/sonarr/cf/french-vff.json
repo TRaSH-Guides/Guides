@@ -1,0 +1,17 @@
+{
+  "trash_id": "2c29a39a4fdfd6d258799bc4c09731b9",
+  "trash_regex": "https://regex101.com/r/5fR55c/2",
+  "name": "VFF",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "TRUEFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(TRUEFRENCH|VFF)\\b"
+      }
+    }
+  ]
+}

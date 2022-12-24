@@ -1,0 +1,81 @@
+{
+  "trash_id": "4721382d9ee05f1b4967a25e75072911",
+  "trash_score": "1",
+  "trash_regex": "See individual French Audio CFs: VFF, VFI, VOF, VFQ, VQ, VFB",
+  "name": "French Audio",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "French Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 2
+      }
+    },
+    {
+      "name": "French Original Version",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVOF\\b"
+      }
+    },
+    {
+      "name": "TRUEFRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TRUEFRENCH|VFF?)\\b"
+      }
+    },
+    {
+      "name": "FRENCH",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bFR(A|ENCH)?\\b"
+      }
+    },
+    {
+      "name": "French International",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVF(I|\\d)\\b"
+      }
+    },
+    {
+      "name": "Belgian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVFB\\b"
+      }
+    },
+    {
+      "name": "Canadian French",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVFQ\\b"
+      }
+    },
+    {
+      "name": "Version Québécoise",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bVQ\\b"
+      }
+    }
+  ]
+}

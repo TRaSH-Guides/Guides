@@ -1,4 +1,4 @@
-# How to setup Quality Profiles
+# How to setup Quality Profiles Anime
 
 *aka How to setup Custom Formats (Anime)*<br><br>
 
