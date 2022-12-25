@@ -24,8 +24,7 @@ I also made 3 guides related to this one.
 
     This way you make sure the Custom Format preferences will be used instead.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"
 
 ------
 
@@ -55,11 +54,11 @@ I also made 3 guides related to this one.
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
 | [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
 | [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
-|                                               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
-|                                               |                       | [WEB Tier 03](#web-tier-03)               |                        |
+| [Masters of Cinema](#masters-of-cinema)       |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
+| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
+| [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
+| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
 
 ------
 
@@ -76,6 +75,7 @@ I also made 3 guides related to this one.
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         |                               |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 |                               |                                                 |
 
 ------
 
@@ -758,6 +758,22 @@ I also made 3 guides related to this one.
 
 ------
 
+### Masters of Cinema
+
+??? faq "Masters of Cinema - [CLICK TO EXPAND]"
+
+    Masters of Cinema is a line of DVD and Blu-ray releases published through Eureka Entertainment. Because of the uniformly branded and spine-numbered packaging and the standard inclusion of booklets and analysis by recurring film historians, the line is often perceived as the UK equivalent of The Criterion Collection.
+
+??? example "JSON - [CLICK TO EXPAND}"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### Theatrical Cut
 
 ??? faq "Theatrical Cut - [CLICK TO EXPAND]"
@@ -829,6 +845,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/imax-enhanced.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Open Matte
+
+??? faq "Open Matte - [CLICK TO EXPAND]"
+
+    Open matte is a filming technique that involves matting out the top and bottom of the film frame in the movie projector (known as a soft matte) for the widescreen theatrical release and then scanning the film without a matte (at Academy ratio) for a full screen home video release.
+
+??? example "JSON - [CLICK TO EXPAND}"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/open-matte.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1127,6 +1159,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV FEL
+
+??? faq "DV (FEL) - [CLICK TO EXPAND]"
+
+    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1596,6 +1644,26 @@ I also made 3 guides related to this one.
     ```
 
 <sub><sup>[TOP](#index)</sup>
+
+------
+
+### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? faq "Pathé Thuis - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
 
 ## Anime
 

@@ -1,0 +1,71 @@
+{
+  "trash_id": "4e6134a384dbc0ef166234cc0e45d26d",
+  "trash_score": "1550",
+  "name": "FR Anime Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "KAF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KAF)\\b"
+      }
+    },
+    {
+      "name": "KHAYA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KHAYA)\\b"
+      }
+    },
+    {
+      "name": "Monkey-D.Lulu",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
+      }
+    },
+    {
+      "name": "MUGiWARA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MUGiWARA)\\b"
+      }
+    },
+    {
+      "name": "NOH3LL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NOH3LL)\\b"
+      }
+    },
+    {
+      "name": "OTF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(OTF)\\b"
+      }
+    },
+    {
+      "name": "XSPITFIRE911",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(XSPITFIRE911)\\b"
+      }
+    }
+  ]
+}

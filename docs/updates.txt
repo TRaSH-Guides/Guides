@@ -1,3 +1,25 @@
+# 2022-12-25 12:45
+**[Radarr]**
+- Added: Dutch streaming service. *PR #1043*
+- Added: Dutch RlsGrp. *PR #1043*
+
+# 2022-12-24 20:30
+**[Starr]**
+- NEW: CF `DV (FEL)`. *PR#1040*
+- Synced + Sorted CF between the Starr apps. *PR#1040*
+- Renamed Condition `Not Groups` to `Not RlsGrp`. *PR#1040*
+ 
+**[Sonarr v4]**
+- NEW: Guide French Sonarr Guide. *PR#1036*
+
+# 2022-12-23 21:15
+**[Starr]**
+- Updated: CF `Hybrid`, Include WEBDL + DV/HDR10(+) and TrueHD Conditionals, and swap Hybrid release group to ReleaseGroupSpecification. *PR#1028*
+
+**[Radarr]**
+- NEW: CF `Open Matte`. *PR#1028*
+- NEW: CF `Masters of Cinema`. *PR#1028*
+
 # 2022-12-22 23:15
 **[Starr]**
 - Fix: CF `Bad Dual Groups` for better matching => https://regex101.com/r/0O67fi/1. *PR#1016*

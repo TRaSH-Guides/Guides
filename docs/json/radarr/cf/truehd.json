@@ -59,7 +59,7 @@
       }
     },
     {
-      "name": "Not Groups (TrueHD only)",
+      "name": "Not RlsGrp (TrueHD only)",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,

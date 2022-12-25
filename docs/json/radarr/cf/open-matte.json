@@ -1,0 +1,17 @@
+{
+  "trash_id": "09d9dd29a0fc958f9796e65c2a8864b4",
+  "trash_score": "25",
+  "name": "Open Matte",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Open Matte",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Open[ ._-]?Matte)\\b"
+      }
+    }
+  ]
+}
