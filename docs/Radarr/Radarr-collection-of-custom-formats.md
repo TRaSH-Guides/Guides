@@ -58,7 +58,7 @@ I also made 3 guides related to this one.
 | [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
 | [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
 | [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
-| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               |                        |
+| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
 
 ------
 
@@ -1644,6 +1644,26 @@ I also made 3 guides related to this one.
     ```
 
 <sub><sup>[TOP](#index)</sup>
+
+------
+
+### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? faq "Pathé Thuis - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
 
 ## Anime
 
