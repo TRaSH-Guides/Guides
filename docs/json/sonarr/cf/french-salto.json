@@ -9,7 +9,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 7
+        "value": 3
       }
     },
     {
@@ -18,7 +18,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 8
+        "value": 4
       }
     },
     {
