@@ -14,3 +14,11 @@
     - **{{ sonarr['cf']['x265-hd']['name'] }}:** Ceci bloque/ignore les sorties 720/1080p (HD) qui sont encodées en x265. - Plus d'informations [ICI](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"} (en anglais).
 
         !!! Danger "Ne l'utilisez pas avec le Format Personnalisé [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
+
+    ??? warning "Type de FanSubs - [CLIQUEZ POUR AFFICHER]"
+        Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de {{ sonarr['cf']['fastsub']['trash_score'] }}.
+
+        | Formats Personnalisés                                                                         | Score                                        | Trash ID                                  |
+        | --------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
+        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | 0                                            | {{ sonarr['cf']['fansub']['trash_id'] }}  |
+        | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_score'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
