@@ -14,3 +14,5 @@
         - [Dual Audio](/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring){:target="_blank" rel="noopener noreferrer"}: Si vous voulez avoir des versions Dual Audio (audio original et anglais) au cas où Sonarr ne trouve pas de sortie VOSTFR ou MULTi.
         - [Uncensored Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring){:target="_blank" rel="noopener noreferrer"}: Si vous préférez les versions non censurées (les Bluray sont le plus souvent non-censurées).
 
+        !!! info "VOSTFR uniquement pour les anime"
+            Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de `101` pour le Format Personnalisés [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr), et ignorer tous les Formats Personnalisés `Multi` et version française.
