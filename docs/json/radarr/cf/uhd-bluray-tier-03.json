@@ -5,15 +5,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BiTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BiTOR)\\b"
-      }
-    },
-    {
       "name": "LEGi0N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
