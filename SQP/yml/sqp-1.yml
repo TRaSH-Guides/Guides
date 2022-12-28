@@ -4,7 +4,6 @@ radarr:
 
     quality_definition:
       type: sqp-streaming
-      preferred_ratio: 1.0
 
     delete_old_custom_formats: true
 
@@ -50,6 +49,7 @@ radarr:
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
           - name: Bluray|WEB-1080p
+            reset_unmatched_scores: true
       # Custom Scoring
       # HQ Release Groups - Optional - Uncomment the next section (10 lines) to enable other Bluray Encodes (less or not streaming optimized)
       # - trash_ids:
