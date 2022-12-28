@@ -45,11 +45,13 @@ If you do Anime
 
 ## Original Title vs  Original Filename
 
-If you want to keep the original release name that holds all the info of the file then I suggest to use `{Original Title}` over `{Original Filename}`
+Another option is to use  `{Original Title}` rather than the recommeneded naming scheme outlined aboove. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+
+If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
 
 Why?
 
-The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.
+The filename can be Obscured where the Release naming isn't, especially when you use Usenet.
 
 `{Original Title}` => `The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-GROUP`
 
