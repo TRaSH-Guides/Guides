@@ -14,10 +14,7 @@
         - [Dual Audio](/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring){:target="_blank" rel="noopener noreferrer"}: If you want to have Dual Audio releases (original and English audio) in case Sonarr does not find a VOSTFR or MULTi release.
         - [Uncensored Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring){:target="_blank" rel="noopener noreferrer"}: If you prefer uncensored releases.
 
-    ??? warning "Type of FanSubs - [CLICK TO EXPAND]"
-        Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done.
+        :warning: If you add the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups) Custom Format, do not forget to add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) one with a score of `1000` to counter-balance (do not forget to addition the `101` if only want VOSTFR anime). Keep in mind that this will probably be not necessary in the future if the VOSTFR condition disappear from the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups).
 
-        | Custom Format                                                                                 | Score                                        | Trash ID                                  |
-        | --------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
-        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | 0                                            | {{ sonarr['cf']['fansub']['trash_id'] }}  |
-        | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_score'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
+    !!! info "Only want VOSTFR anime"
+        For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) to `101`, and disregard all the `Multi` and French version Custom Formats.

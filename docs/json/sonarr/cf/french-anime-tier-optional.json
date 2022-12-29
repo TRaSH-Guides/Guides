@@ -1,0 +1,35 @@
+{
+  "trash_id": "180c1f36241300dc27ff42918a81e9e3",
+  "trash_score": "1550",
+  "name": "FR Anime Tier Optional",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "NanDesuKa",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NanDesuKa)\\b"
+      }
+    },
+    {
+      "name": "Tsundere-Raws",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Tsundere[ .-]?Raws)\\b"
+      }
+    },
+    {
+      "name": "UwU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(UwU)\\b"
+      }
+    }
+  ]
+}
