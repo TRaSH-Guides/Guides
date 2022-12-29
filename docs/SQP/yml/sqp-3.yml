@@ -4,7 +4,6 @@ radarr:
 
     quality_definition:
       type: sqp-uhd
-      preferred_ratio: 1.0
 
     delete_old_custom_formats: true
 
@@ -79,6 +78,7 @@ radarr:
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
           - name: Remux|IMAX-E|2160p
+            reset_unmatched_scores: true
       # Custom Scoring
       - trash_ids:
           # DV (WEBDL)
