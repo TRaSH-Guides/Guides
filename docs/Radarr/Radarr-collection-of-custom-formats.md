@@ -941,7 +941,7 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (HD) - [CLICK TO EXPAND]"
 
-    This blocks 720/1080p (HD) releases that are encoded in x265.
+    This blocks all 720/1080p (HD) releases that are encoded in x265.
 
     In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-hd']['trash_score'] }}`
 
@@ -1110,9 +1110,9 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
 
-    This blocks 720/1080p (HD) releases that are encoded in x265.
+    This blocks most 720/1080p (HD) releases that are encoded in x265.
 
-    **But it will allow x265 releases if they have HDR and/or DV**
+    **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
@@ -1232,6 +1232,7 @@ I also made 3 guides related to this one.
 ??? faq "x265 - [CLICK TO EXPAND]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
+    This applies to all releases that are x265/HEVC that are not Remux.
 
     !!! fail ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
