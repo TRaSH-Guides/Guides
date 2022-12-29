@@ -6370,7 +6370,7 @@ Several reasons why this is happening:</p>
 <p><sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub></p>
 <details class="faq">
 <summary>x265 (HD) - [CLICK TO EXPAND]</summary>
-<p>This blocks 720/1080p (HD) releases that are encoded in x265.</p>
+<p>This blocks all 720/1080p (HD) releases that are encoded in x265.</p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
 <div class="admonition fail">
 <div class="admonition quote">
@@ -7155,8 +7155,8 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <h3 id="x265-no-hdrdv">x265 (no HDR/DV)<a class="headerlink" href="#x265-no-hdrdv" title="Permanent link"></a></h3>
 <details class="faq">
 <summary>x265 (no HDR/DV) - [CLICK TO EXPAND]</summary>
-<p>This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p>This blocks most 720/1080p (HD) releases that are encoded in x265.</p>
+<p><strong>But it will allow 720/1080p x265 releases if they have HDR and/or DV</strong></p>
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
 <div class="admonition danger">
@@ -7468,7 +7468,8 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <h3 id="x265">x265<a class="headerlink" href="#x265" title="Permanent link"></a></h3>
 <details class="faq">
 <summary>x265 - [CLICK TO EXPAND]</summary>
-<p>x265 is a <em>free software library</em> and <em>application</em> for encoding video streams into the <a href="http://en.wikipedia.org/wiki/H.265" rel="noopener noreferrer" target="_blank">H.265/MPEG-H HEVC</a> compression format, and is released under the terms of the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="noopener noreferrer" target="_blank">GNU GPL</a>.</p>
+<p>x265 is a <em>free software library</em> and <em>application</em> for encoding video streams into the <a href="http://en.wikipedia.org/wiki/H.265" rel="noopener noreferrer" target="_blank">H.265/MPEG-H HEVC</a> compression format, and is released under the terms of the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" rel="noopener noreferrer" target="_blank">GNU GPL</a>.
+This applies to all releases that are x265/HEVC that are not Remux.</p>
 <div class="admonition fail">
 <p>Please don't forget to read the following <a href="#microsized-wrong-source">Microsized &amp; Wrong Source</a></p>
 </div>
@@ -15454,7 +15455,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 25, 2022 11:35:53</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 29, 2022 13:15:56</span>
 </small>
 </div>
 <footer class="sponsorship">
