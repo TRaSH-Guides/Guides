@@ -1427,6 +1427,31 @@ You could end up with a single audio release when a MULTi release exists. This i
 </div>
 </li>
 </ul>
+<details class="warning">
+<summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fansub">FanSUB</a></td>
+<td>0</td>
+<td>84f0acbda9c0c9de783894fb66df25aa</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
+<td>-1000</td>
+<td>ea0bb4b6ba388992fad1092703b5ff7b</td>
+</tr>
+</tbody>
+</table>
+</details>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc.md -->
@@ -1840,6 +1865,31 @@ You could end up with a single audio release when a MULTi release exists. This i
 <li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>FR LQ:</strong> A collection of known Low Quality French groups that are often banned from the top trackers because the lack of quality or other reasons.</li>
 </ul>
+<details class="warning">
+<summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fansub">FanSUB</a></td>
+<td>0</td>
+<td>84f0acbda9c0c9de783894fb66df25aa</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
+<td>-1000</td>
+<td>ea0bb4b6ba388992fad1092703b5ff7b</td>
+</tr>
+</tbody>
+</table>
+</details>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional-uhd.md -->
@@ -2123,32 +2173,12 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring" rel="noopener noreferrer" target="_blank">Dual Audio</a>: If you want to have Dual Audio releases (original and English audio) in case Sonarr does not find a VOSTFR or MULTi release.</li>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring" rel="noopener noreferrer" target="_blank">Uncensored Scoring</a>: If you prefer uncensored releases.</li>
 </ul>
+<p><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/> If you add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a> Custom Format, do not forget to add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> one with a score of <code>1000</code> to counter-balance (do not forget to addition the <code>101</code> if only want VOSTFR anime). Keep in mind that this will probably be not necessary in the future if the VOSTFR condition disappear from the <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a>.</p>
 </div>
-<details class="warning">
-<summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
-<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done.</p>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th>Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fansub">FanSUB</a></td>
-<td>0</td>
-<td>84f0acbda9c0c9de783894fb66df25aa</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
-<td>ea0bb4b6ba388992fad1092703b5ff7b</td>
-</tr>
-</tbody>
-</table>
-</details>
+<div class="admonition info">
+<p class="admonition-title">Only want VOSTFR anime</p>
+<p>For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> to <code>101</code>, and disregard all the <code>Multi</code> and French version Custom Formats.</p>
+</div>
 </div>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-multi-audio-en.md -->
@@ -2202,7 +2232,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 </details>
 </details>
 <!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-unwanted-en.md -->
+<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-unwanted-uhd-en.md -->
 <details class="summary">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -2224,11 +2254,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>-10000</td>
 <td>3ba797e5dc13af4b8d9bb25e83d90de2</td>
 </tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></td>
-<td>-10000</td>
-<td>47435ece6b99a0b477caf360e79ba0bb</td>
-</tr>
 </tbody>
 </table>
 <hr/>
@@ -2236,13 +2261,32 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>FR LQ:</strong> A collection of known Low Quality French groups that are often banned from the top trackers because the lack of quality or other reasons.</li>
-<li>
-<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></p>
-</div>
-</li>
 </ul>
+<details class="warning">
+<summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th>Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fansub">FanSUB</a></td>
+<td>0</td>
+<td>84f0acbda9c0c9de783894fb66df25aa</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
+<td>-1000</td>
+<td>ea0bb4b6ba388992fad1092703b5ff7b</td>
+</tr>
+</tbody>
+</table>
+</details>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc.md -->
@@ -2281,102 +2325,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Sonarr/images/cf-mm-propers-repacks-disable.png"><img alt="!cf-mm-propers-repacks-disable" src="/Sonarr/images/cf-mm-propers-repacks-disable.png"/></a></p>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
-</details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-streaming-services.md -->
-<details class="summary">
-<summary>Streaming Services - [CLICK TO EXPAND]</summary>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th>Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#amzn">AMZN</a></td>
-<td>100</td>
-<td>d660701077794679fd59e8bdf4ce3a29</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#atvp">ATVP</a></td>
-<td>100</td>
-<td>f67c9ca88f463a48346062e8ad07713f</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dcu">DCU</a></td>
-<td>75</td>
-<td>36b72f59f4ea20aad9316f475f2d9fbb</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dsnp">DSNP</a></td>
-<td>90</td>
-<td>89358767a60cc28783cdc3d0be9388a4</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hbo">HBO</a></td>
-<td>75</td>
-<td>7a235133c87f7da4c8cccceca7e3c7a6</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hmax">HMAX</a></td>
-<td>90</td>
-<td>a880d6abc21e7c16884f3ae393f84179</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hulu">HULU</a></td>
-<td>85</td>
-<td>f6cce30f1733d5c8194222a7507909bb</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#it">iT</a></td>
-<td>75</td>
-<td>0ac24a2a68a9700bcb7eeca8e5cd644c</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nf">NF</a></td>
-<td>90</td>
-<td>d34870697c9db575f17700212167be23</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#nlz">NLZ</a></td>
-<td>75</td>
-<td>b2b980877494b560443631eb1f473867</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pcok">PCOK</a></td>
-<td>85</td>
-<td>1656adc6d7bb2c8cca6acfb6592db421</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#pmtp">PMTP</a></td>
-<td>75</td>
-<td>c67a75ae4a1715f2bb4d492755ba4195</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#qibi">QIBI</a></td>
-<td>90</td>
-<td>3ac5d84fce98bab1b531393e9c82f467</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#red">RED</a></td>
-<td>75</td>
-<td>c30d2958827d1867c73318a5a2957eb1</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sho">SHO</a></td>
-<td>95</td>
-<td>ae58039e1319178e6be73caab5c42166</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vdl">VDL</a></td>
-<td>75</td>
-<td>5d2317d99af813b6529c7ebf01c83533</td>
-</tr>
-</tbody>
-</table>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md -->
@@ -2426,6 +2374,11 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>(optional) <code>1100</code></td>
 <td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
 </tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/></td>
+<td>1550</td>
+<td>180c1f36241300dc27ff42918a81e9e3</td>
+</tr>
 </tbody>
 </table>
 <div class="admonition tip">
@@ -2436,6 +2389,10 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <div class="admonition tip">
 <p class="admonition-title">Original French Web Tiers</p>
 <p>French Web tiers are optional and can be included or not. This is due because some of them tend to release some Dubbed anime. Only add them if you are looking for MULTi releases as their VOSTFR releases are easily trumped by either the original Anime guide or by the French Anime tiers.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title"><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional</p>
+<p>This tier should only be added to your setup if you are not using the orginal anime guide score (the Seadex anime tiers). Otherwise, you will end with double scoring on those groups.</p>
 </div>
 </details>
 <!-- END INCLUDE -->
@@ -2470,7 +2427,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 24, 2022 17:09:38</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 26, 2022 18:26:20</span>
 </small>
 </div>
 <footer class="sponsorship">
