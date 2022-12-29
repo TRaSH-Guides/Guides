@@ -1,3 +1,18 @@
+# 2022-12-29 19:30
+**[Starr]**
+*Recommended naming scheme* 
+- Added: More information on the pros and cons of using `{Original Title}` vs the recommended naming scheme.  *PR#1047/49*
+
+**[Sonarr v4]**
+- Fix: FR Anime FanSub had the same ID and name as FR WEB Tier 01. *PR#1044*
+- Fix: French WEBDL and WEBRIP had Radarr CF values. *PR#1044*
+
+**[Radarr]**
+- Moved: RlsGrp `BiTOR` from `UHD Bluray Tier 3` to `LQ`. Reason: Fake DV Layer: HDR10+ conversion. *PR#1048*
+
+**[Guide]**
+- Clarify Radarr x265 wording in collection list. *PR#1050*
+
 # 2022-12-25 12:45
 **[Radarr]**
 - Added: Dutch streaming service. *PR #1043*
