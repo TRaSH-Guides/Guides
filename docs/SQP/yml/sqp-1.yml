@@ -1,11 +1,10 @@
 radarr:
-  - base_url: [radarr_url_goes_here]
+  radarr-sqp-streaming:
+    base_url: [radarr_url_goes_here]
     api_key: [api_key_goes_here]
 
     quality_definition:
       type: sqp-streaming
-
-    delete_old_custom_formats: true
 
     custom_formats:
       # Scores from TRaSH json
