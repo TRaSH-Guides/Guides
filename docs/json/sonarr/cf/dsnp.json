@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)(?=[ ._-]web[ ._-]?(?:dl|rip))"
       }
     }
   ]
