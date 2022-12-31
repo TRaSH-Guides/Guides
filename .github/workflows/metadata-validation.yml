@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Validate metadata.json
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3.0.0
+      - uses: actions/setup-python@v4.0.0
         with:
           python-version: "3.x"
       - run: pip install jsonschema

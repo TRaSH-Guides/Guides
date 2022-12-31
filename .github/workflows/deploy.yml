@@ -8,11 +8,11 @@ jobs:
     name: Build docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3.0.0
+      - uses: actions/setup-python@v4.0.0
         with:
           python-version: 3.x
-      - uses: actions/cache@v3
+      - uses: actions/cache@v3.0.0
         with:
           key: ${{ github.ref }}
           path: .cache
@@ -25,13 +25,13 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.0.0
         with:
           fetch-depth: '0'
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4.0.0
         with:
           python-version: 3.x
-      - uses: actions/cache@v3
+      - uses: actions/cache@v3.0.0
         with:
           key: ${{ github.ref }}
           path: .cache
