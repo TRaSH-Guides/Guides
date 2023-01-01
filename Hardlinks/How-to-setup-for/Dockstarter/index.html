@@ -1069,17 +1069,17 @@ In this example the mounted drive will be mounted to <code>/mnt/</code> with the
 </code></pre></div>
 <h2 id="changes-to-the-env">Changes to the .env<a class="headerlink" href="#changes-to-the-env" title="Permanent link"></a></h2>
 <p>To accomplish this we need to change first a few paths in your <code>.env</code> (Usually <code>~/.docker/compose/.env</code>)</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Global Settings</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">COMPOSE_HTTP_TIMEOUT=60</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERCONFDIR=~/.config/appdata</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERGID=999</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERHOSTNAME=DockSTARTer</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERLOGGING_MAXFILE=10</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERLOGGING_MAXSIZE=200k</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">DOCKERSTORAGEDIR=/mnt/storage</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">PGID=1000</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">PUID=1000</span><span class="w"></span>
-<span class="l l-Scalar l-Scalar-Plain">TZ=America/Chicago</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Global Settings</span>
+<span class="l l-Scalar l-Scalar-Plain">COMPOSE_HTTP_TIMEOUT=60</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERCONFDIR=~/.config/appdata</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERGID=999</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERHOSTNAME=DockSTARTer</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERLOGGING_MAXFILE=10</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERLOGGING_MAXSIZE=200k</span>
+<span class="l l-Scalar l-Scalar-Plain">DOCKERSTORAGEDIR=/mnt/storage</span>
+<span class="l l-Scalar l-Scalar-Plain">PGID=1000</span>
+<span class="l l-Scalar l-Scalar-Plain">PUID=1000</span>
+<span class="l l-Scalar l-Scalar-Plain">TZ=America/Chicago</span>
 </code></pre></div>
 <h3 id="changes-to-your-paths">Changes to your paths<a class="headerlink" href="#changes-to-your-paths" title="Permanent link"></a></h3>
 <p>When that's all set then you will need to change the paths you're going to use in the containers from:</p>

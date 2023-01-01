@@ -1123,7 +1123,7 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-api.png"/></a></p>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-pip3 install qbittorrent-api
+pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 </code></pre></div>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-qbit-api.png"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-api.png"/></a></p>
 <p>Select in the schedule list when the script should run, and choose <code>At First Array Start Only</code>.</p>
@@ -1134,7 +1134,7 @@ pip3 install qbittorrent-api
 <h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the unRaid server is started.</p>
 <p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) and copy/paste the following command.</p>
-<div class="highlight"><pre><span></span><code>pip3 install qbittorrent-api
+<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 </code></pre></div>
 <p>Restart your unRaid Server, or run the above command from the terminal.</p>
 <hr/>
@@ -1186,11 +1186,11 @@ pip3 install qbittorrent-api
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png"/></a></p>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-/usr/local/emhttp/plugins/dynamix/scripts/notify -s <span class="s2">"qBittorrent Mover"</span> -d <span class="s2">"qBittorrent Mover starting @ `date +%H:%M:%S`."</span>
-<span class="nb">echo</span> executing script to pause torrents and run mover.
-/usr/bin/python3 /mnt/user/data/scripts/mover.py
-<span class="nb">echo</span> qbittorrent-mover completed and resumed all paused torrents.
-/usr/local/emhttp/plugins/dynamix/scripts/notify -s <span class="s2">"qBittorrent Mover"</span> -d <span class="s2">"qBittorrent Mover completed @ `date +%H:%M:%S`."</span>
+/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">"qBittorrent Mover"</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">"qBittorrent Mover starting @ `date +%H:%M:%S`."</span>
+<span class="nb">echo</span><span class="w"> </span>executing<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>pause<span class="w"> </span>torrents<span class="w"> </span>and<span class="w"> </span>run<span class="w"> </span>mover.
+/usr/bin/python3<span class="w"> </span>/mnt/user/data/scripts/mover.py
+<span class="nb">echo</span><span class="w"> </span>qbittorrent-mover<span class="w"> </span>completed<span class="w"> </span>and<span class="w"> </span>resumed<span class="w"> </span>all<span class="w"> </span>paused<span class="w"> </span>torrents.
+/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">"qBittorrent Mover"</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">"qBittorrent Mover completed @ `date +%H:%M:%S`."</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>

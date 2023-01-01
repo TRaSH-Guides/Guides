@@ -1275,9 +1275,9 @@
 <p>To enable Home folders, go to <code>Control Panel</code> &gt; <code>User &amp; Group</code> &gt; <code>Advanced</code> &gt; <code>Enable user home service</code> at the bottom.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/home-folders.png"><img alt="!home-folders" src="../images/home-folders.png"/></a></p>
 <p>When you enabled these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.</p>
-<div class="highlight"><pre><span></span><code>curl -sL git.io/syno-script &gt; ~/syno-script
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>git.io/syno-script<span class="w"> </span>&gt;<span class="w"> </span>~/syno-script
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo bash ~/syno-script
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>~/syno-script
 </code></pre></div>
 </details>
 <h2 id="install-docker">Install Docker<a class="headerlink" href="#install-docker" title="Permanent link"></a></h2>
@@ -1413,21 +1413,21 @@ Remember these values for later use.</p>
 <p>Here we will create the needed subfolders for your media library and also for your preferred download client.
 If you use both then run both commands</p>
 <h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h4>
-<div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link"></a></h4>
-<div class="highlight"><pre><span></span><code>mkdir -p /volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/<span class="o">{</span>torrents/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <hr/>
 <h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link"></a></h3>
 <p>Your appdata will be stored in <code>/volume1/docker/appdata/{appname}</code>
 These <code>{appname}</code> sub folders you need to create your self. (<em>This is a limitation of the Synology</em>)
 We're going to do this in Putty or a similar program.</p>
-<div class="highlight"><pre><span></span><code>mkdir -p /volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,pullio<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,pullio<span class="o">}</span>
 </code></pre></div>
 <p>You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.</p>
 <p>So your appdata folder will look like this.</p>
-<div class="highlight"><pre><span></span><code>ls -al /volume1/docker/appdata
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-al<span class="w"> </span>/volume1/docker/appdata
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>docker
 └── appdata
@@ -1448,7 +1448,7 @@ We're going to do this in Putty or a similar program.</p>
 </ol>
 <p>We will start with downloading the <code>docker-compose.yml</code> file</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use the command below:</p>
-<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml<span class="w"> </span>-P<span class="w"> </span>/volume1/docker/appdata/
 </code></pre></div>
 <h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link"></a></h3>
 <details class="question">
@@ -1466,7 +1466,7 @@ We're going to do this in Putty or a similar program.</p>
 </details>
 <p>Second we will download the <code>.env</code> file</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env" rel="noopener noreferrer" target="_blank">.env</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use this command:</p>
-<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env<span class="w"> </span>-P<span class="w"> </span>/volume1/docker/appdata/
 </code></pre></div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -1493,16 +1493,16 @@ We're going to do this in Putty or a similar program.</p>
 <h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link"></a></h4>
 <p>Pullio allows you to automatically update your containers. And send you a notification through various means. In my setup, I use a Discord Webhook.</p>
 <p>First you need to download Pullio</p>
-<div class="highlight"><pre><span></span><code>   sudo curl -fsSL <span class="s2">"https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh"</span> -o /usr/local/bin/pullio
+<div class="highlight"><pre><span></span><code><span class="w">   </span>sudo<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="s2">"https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh"</span><span class="w"> </span>-o<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>   sudo chmod +x /usr/local/bin/pullio
+<div class="highlight"><pre><span></span><code><span class="w">   </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
 <p>For Pullio to work, you will need to create in your Task Scheduler a "Scheduled Task" that runs for example at 4am at night with root privileges.</p>
 <p><code>Control Panel</code> &gt; <code>Task Scheduler</code> &gt; click <code>Create</code> &gt; choose <code>Scheduled task - user defined script</code></p>
 <p>Give the task a name so you know what it does. Choose user <code>root</code>.</p>
 <p>In the <code>Schedule</code> tab choose whenever you want it to check for updates.</p>
 <p>At <code>Task Settings</code> tab, add the following line in the Run Command section:</p>
-<div class="highlight"><pre><span></span><code>/usr/local/bin/pullio &gt; /volume1/docker/appdata/pullio/pullio.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class="highlight"><pre><span></span><code>/usr/local/bin/pullio<span class="w"> </span>&gt;<span class="w"> </span>/volume1/docker/appdata/pullio/pullio.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
 <p>It can be frustrating to test the script if no docker image updates are available, for that you can run command <code>sudo pullio --debug</code> and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.</p>
 <p>More info about Pullio <a href="https://hotio.dev/pullio/" rel="noopener noreferrer" target="_blank">HERE</a></p>
@@ -1513,9 +1513,9 @@ We're going to do this in Putty or a similar program.</p>
 <p class="admonition-title">Note</p>
 <p>If you're using a different user than <code>docker</code> (the user generated in the beginning), then you need to change the <code>docker:users</code> part in the commands below!!!</p>
 </div>
-<div class="highlight"><pre><span></span><code>sudo chown -R docker:users /volume1/data /volume1/docker
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>docker:users<span class="w"> </span>/volume1/data<span class="w"> </span>/volume1/docker
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo chmod -R <span class="nv">a</span><span class="o">=</span>,a+rX,u+w,g+w /volume1/data /volume1/docker
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="nv">a</span><span class="o">=</span>,a+rX,u+w,g+w<span class="w"> </span>/volume1/data<span class="w"> </span>/volume1/docker
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1529,9 +1529,9 @@ We're going to do this in Putty or a similar program.</p>
 If you had previous installed apps, make a backup of their config folders.</p>
 </div>
 <p>When you did all the above steps you only need to run the following commands:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /volume1/docker/appdata
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/volume1/docker/appdata
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo docker-compose up -d
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
 <p>You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on <a href="https://0bin.net/" rel="noopener noreferrer" target="_blank">0bin</a> and join the guides-discord <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank">here</a> and provide the pastebin link with the error, have patience because of timezone differences.</p>
 <hr/>

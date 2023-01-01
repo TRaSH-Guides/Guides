@@ -1187,7 +1187,7 @@
 <span class="c1"># Cloudbox =&gt; /mnt/local/downloads/nzbs/nzbget/completed/sonarranime</span>
 <span class="nv">location</span><span class="o">=</span><span class="s2">"/your/download/path/here"</span>
 
-find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname <span class="s2">"*op[0-9]*"</span> -o -iname <span class="s2">"*nced*"</span> -o -iname <span class="s2">"*ncop*"</span> -o -iname <span class="s2">"*music video*"</span> <span class="se">\)</span> -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
+find<span class="w"> </span><span class="nv">$location</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="se">\(</span><span class="w"> </span>-iname<span class="w"> </span><span class="s2">"*op[0-9]*"</span><span class="w"> </span>-o<span class="w"> </span>-iname<span class="w"> </span><span class="s2">"*nced*"</span><span class="w"> </span>-o<span class="w"> </span>-iname<span class="w"> </span><span class="s2">"*ncop*"</span><span class="w"> </span>-o<span class="w"> </span>-iname<span class="w"> </span><span class="s2">"*music video*"</span><span class="w"> </span><span class="se">\)</span><span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </code></pre></div>
 <p>This script will be called through a custom connection in Sonarr.</p>
 <ol>
@@ -1212,7 +1212,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p>For this I used the <a href="/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format" rel="noopener noreferrer" target="_blank">Sonarr Recommended naming scheme</a> with only a small change for a formatting error to be fixed and the <code>Series Folder Format</code> for easier matching.</p>
 <h4 id="anime-episode-format">Anime Episode Format<a class="headerlink" href="#anime-episode-format" title="Permanent link"></a></h4>
 <p>Has all necessary information and a little extra if you needed to rebuild.</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> - S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span> - <span class="o">{</span>absolute:000<span class="o">}</span> - <span class="o">{</span>Episode CleanTitle<span class="o">}</span> <span class="o">[{</span>Preferred Words <span class="o">}{</span>Quality Full<span class="o">}]{[</span>MediaInfo VideoDynamicRange<span class="o">]}[{</span>MediaInfo VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo VideoCodec<span class="o">]}[{</span>Mediainfo AudioCodec<span class="o">}</span> <span class="o">{</span> Mediainfo AudioChannels<span class="o">}]{</span>MediaInfo AudioLanguages<span class="o">}{</span>-Release Group<span class="o">}</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Series<span class="w"> </span>TitleYear<span class="o">}</span><span class="w"> </span>-<span class="w"> </span>S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>absolute:000<span class="o">}</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>Episode<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">[{</span>Preferred<span class="w"> </span>Words<span class="w"> </span><span class="o">}{</span>Quality<span class="w"> </span>Full<span class="o">}]{[</span>MediaInfo<span class="w"> </span>VideoDynamicRange<span class="o">]}[{</span>MediaInfo<span class="w"> </span>VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo<span class="w"> </span>VideoCodec<span class="o">]}[{</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}]{</span>MediaInfo<span class="w"> </span>AudioLanguages<span class="o">}{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
 <details class="summary">
 <summary>RESULTS:</summary>
@@ -1223,18 +1223,18 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 </details>
 <h4 id="series-folder-format">Series Folder Format<a class="headerlink" href="#series-folder-format" title="Permanent link"></a></h4>
 <p>Adding year back in with tvdb id allows matching to be correct. Thanks salty.</p>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>Series TitleYear<span class="o">}</span> <span class="o">[</span>tvdb-<span class="o">{</span>TvdbId<span class="o">}]</span>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>Series<span class="w"> </span>TitleYear<span class="o">}</span><span class="w"> </span><span class="o">[</span>tvdb-<span class="o">{</span>TvdbId<span class="o">}]</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>The Series Title! (2010) [tvdb-12345]</code></p>
 <h4 id="season-folder-format">Season Folder Format<a class="headerlink" href="#season-folder-format" title="Permanent link"></a></h4>
 <p>The only one real option to use in my opinion.</p>
-<div class="highlight"><pre><span></span><code>Season <span class="o">{</span>season:00<span class="o">}</span>
+<div class="highlight"><pre><span></span><code>Season<span class="w"> </span><span class="o">{</span>season:00<span class="o">}</span>
 </code></pre></div>
 <p>RESULT:</p>
 <p><code>Season 01</code></p>
 <h4 id="multi-episode-style">Multi-Episode Style<a class="headerlink" href="#multi-episode-style" title="Permanent link"></a></h4>
-<div class="highlight"><pre><span></span><code>Prefixed Range
+<div class="highlight"><pre><span></span><code>Prefixed<span class="w"> </span>Range
 </code></pre></div>
 <p>RESULTS:</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/results.png"><img alt="results" src="../images/results.png"/></a></p>
@@ -1281,16 +1281,16 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 </div>
 <h4 id="multi-audio">Multi-Audio<a class="headerlink" href="#multi-audio" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[500]</strong></p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>multi<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>multi<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
 <h4 id="dual-audio">Dual-Audio<a class="headerlink" href="#dual-audio" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[0]</strong>. This is for renames only and that's why it is at <strong>0</strong>. It is also added in the second profile. This one is to ensure that the preferred words get added.</p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>dual<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>dual<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?audio<span class="o">)</span>/i
 </code></pre></div>
 <h4 id="optional-uncutunrateduncensored">Optional (uncut|unrated|uncensored)<a class="headerlink" href="#optional-uncutunrateduncensored" title="Permanent link"></a></h4>
 <p>Add this to your Preferred with a score of <strong>[100]/[-10000]</strong></p>
 <p>If you would like it to be priority then set to <strong>100</strong>. If you do not want uncensored set it to <strong>-10000</strong>. If you don't care either way just leave it out. The reasoning behind only <strong>100</strong> is so that it doesn't trump other release further up in the chain, this way it will trump maybe a couple releases, but not more. And <strong>-10000</strong> to hopefully put it at the bottom of any tier list if you don't want it.</p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>uncut<span class="p">|</span>unrated<span class="p">|</span>uncensored<span class="p">|</span><span class="se">\b</span><span class="o">(</span>AT<span class="o">[</span>-_. <span class="o">]</span>?X<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>uncut<span class="p">|</span>unrated<span class="p">|</span>uncensored<span class="p">|</span><span class="se">\b</span><span class="o">(</span>AT<span class="o">[</span>-_.<span class="w"> </span><span class="o">]</span>?X<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1315,17 +1315,17 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 /<span class="o">(</span>BDMV<span class="p">|</span>M2TS<span class="p">|</span><span class="se">\b</span>SSA<span class="se">\b</span><span class="p">|</span><span class="se">\b</span>VOSTFR<span class="se">\b</span><span class="p">|</span><span class="se">\b</span>AbemaTV<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>CuaP<span class="p">|</span>PnPSubs<span class="p">|</span>ICEBLUE<span class="p">|</span>SLAX<span class="p">|</span>U3-Web<span class="o">)</span>/i,
 /<span class="o">(</span>Raws-Maji<span class="p">|</span><span class="se">\b</span>KRP<span class="se">\b</span><span class="p">|</span>M@nI<span class="p">|</span>Kanjouteki<span class="p">|</span>PuyaSubs<span class="o">)</span>/i,
-/<span class="se">\b</span><span class="o">(</span>Beatrice<span class="p">|</span>ohys<span class="p">|</span>Kawaiika<span class="p">|</span>neko<span class="p">|</span>daddy<span class="o">)[</span> ._-<span class="o">]</span>?<span class="o">(</span>raws<span class="o">)</span><span class="se">\b</span>/i,
-/<span class="se">\b</span><span class="o">(</span>LowPower<span class="p">|</span>Scryous<span class="o">)[</span> ._-<span class="o">]</span>?<span class="o">(</span>raws<span class="o">)</span><span class="se">\b</span>/i,
+/<span class="se">\b</span><span class="o">(</span>Beatrice<span class="p">|</span>ohys<span class="p">|</span>Kawaiika<span class="p">|</span>neko<span class="p">|</span>daddy<span class="o">)[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>raws<span class="o">)</span><span class="se">\b</span>/i,
+/<span class="se">\b</span><span class="o">(</span>LowPower<span class="p">|</span>Scryous<span class="o">)[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>raws<span class="o">)</span><span class="se">\b</span>/i,
 /<span class="se">\b</span><span class="o">(</span>NS<span class="p">|</span>AREY<span class="p">|</span>BDMV<span class="p">|</span>BDVD<span class="p">|</span>BJX<span class="p">|</span>DKB<span class="p">|</span>DP<span class="p">|</span>TnF<span class="o">)</span><span class="se">\b</span>/i,
 /<span class="o">(</span>Amb3r<span class="p">|</span>DsunS<span class="p">|</span>ExREN<span class="p">|</span><span class="se">\$</span>tore-Chill<span class="o">)</span>/i,
 /<span class="o">(</span><span class="se">\[</span>Hatsuyuki<span class="se">\]</span><span class="p">|</span>-Hatsuyuki<span class="se">\b</span><span class="p">|</span><span class="se">\[</span>Hitoku<span class="se">\]</span><span class="p">|</span>-Hitoki<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span><span class="se">\[</span>Foxtrot<span class="se">\]</span><span class="p">|</span>-Foxtrot<span class="se">\b</span><span class="p">|</span>HollowRoxas<span class="p">|</span><span class="se">\b</span>MGD<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>JacobSwaggedUp<span class="p">|</span>KEKMASTERS<span class="p">|</span><span class="se">\[</span>Mites<span class="se">\]</span><span class="p">|</span>-Mites<span class="se">\b</span><span class="o">)</span>/i,
-/<span class="o">(</span>neoHEVC<span class="p">|</span>Pantsu<span class="p">|</span><span class="se">\[</span>Pao<span class="se">\]</span><span class="p">|</span>-Pao<span class="se">\b</span><span class="p">|</span>Plex Friendly<span class="o">)</span>/i,
+/<span class="o">(</span>neoHEVC<span class="p">|</span>Pantsu<span class="p">|</span><span class="se">\[</span>Pao<span class="se">\]</span><span class="p">|</span>-Pao<span class="se">\b</span><span class="p">|</span>Plex<span class="w"> </span>Friendly<span class="o">)</span>/i,
 /<span class="o">(</span>Rando235<span class="p">|</span>RandomRemux<span class="p">|</span>Reaktor<span class="p">|</span>RightShiftBy2<span class="o">)</span>/i,
 /<span class="o">(</span><span class="se">\b</span>SHFS<span class="se">\b</span><span class="p">|</span>StrayGods<span class="p">|</span><span class="se">\b</span>UQW<span class="se">\b</span><span class="p">|</span>Yabai_Desu_Ne<span class="o">)</span>/i,
-/<span class="o">(</span>YakuboEncodes<span class="p">|</span><span class="se">\b</span><span class="o">(</span>WtF<span class="o">[</span> ._-<span class="o">]</span>?Anime<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i,
+/<span class="o">(</span>YakuboEncodes<span class="p">|</span><span class="se">\b</span><span class="o">(</span>WtF<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?Anime<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">((</span>funi<span class="p">|</span>eng<span class="o">(</span>lish<span class="o">)</span>?<span class="o">)</span>_?dub<span class="p">|</span><span class="se">\b</span>dub<span class="o">(</span>bed<span class="o">)</span>?<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>Golumpa<span class="p">|</span>torenter69<span class="p">|</span>KamiFS<span class="p">|</span>KaiDubs<span class="o">)</span>/i
 </code></pre></div>
@@ -1340,7 +1340,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p class="admonition-title">Note</p>
 <p>This is set to <strong>501</strong> so that it may jump one tier if need be, but not more.</p>
 </div>
-<div class="highlight"><pre><span></span><code>/dual<span class="o">[</span> ._-<span class="o">]</span>?audio<span class="p">|</span>EN<span class="se">\+</span>JA<span class="p">|</span>JA<span class="se">\+</span>EN/i
+<div class="highlight"><pre><span></span><code>/dual<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?audio<span class="p">|</span>EN<span class="se">\+</span>JA<span class="p">|</span>JA<span class="se">\+</span>EN/i
 </code></pre></div>
 <hr/>
 <div class="admonition important">
@@ -1353,11 +1353,11 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <p class="admonition-title">Note</p>
 <p>We are adding this as <strong>100</strong> so that any unknown <code>Blu-Ray</code> can jump tiers inside the Subs categories but not interfere with any tiers above.</p>
 </div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>?:<span class="o">(</span>Blu-?Ray<span class="p">|</span>BDMux<span class="p">|</span>BD<span class="o">(</span>?!$<span class="o">))</span><span class="p">|</span><span class="o">(</span>B<span class="o">[</span>DR<span class="o">]</span>Rip<span class="o">))(</span>?:<span class="se">\b</span><span class="p">|</span>$<span class="p">|</span><span class="o">[</span> .<span class="o">])</span>/ix
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>?:<span class="o">(</span>Blu-?Ray<span class="p">|</span>BDMux<span class="p">|</span>BD<span class="o">(</span>?!$<span class="o">))</span><span class="p">|</span><span class="o">(</span>B<span class="o">[</span>DR<span class="o">]</span>Rip<span class="o">))(</span>?:<span class="se">\b</span><span class="p">|</span>$<span class="p">|</span><span class="o">[</span><span class="w"> </span>.<span class="o">])</span>/ix
 </code></pre></div>
 <hr/>
 <p>Add this to your Preferred with a score of <strong>[15]</strong></p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>WEB<span class="o">[</span>-_. <span class="o">]</span>?DL<span class="p">|</span>WebHD<span class="p">|</span><span class="o">[</span>. <span class="o">]</span>WEB<span class="o">[</span>. <span class="o">](</span>?:<span class="o">[</span>xh<span class="o">]</span><span class="m">26</span><span class="o">[</span><span class="m">45</span><span class="o">]</span><span class="p">|</span>DDP?5<span class="o">[</span>. <span class="o">]</span><span class="m">1</span><span class="o">)</span><span class="p">|</span><span class="o">[</span>. <span class="o">](</span>?-i:WEB<span class="o">)</span>$<span class="p">|</span><span class="se">\d</span>+0p<span class="o">(</span>?:WEB-DLMux<span class="p">|</span><span class="se">\b\s\/\s</span>WEB<span class="se">\s\/\s\b</span><span class="o">))</span>/ix
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>WEB<span class="o">[</span>-_.<span class="w"> </span><span class="o">]</span>?DL<span class="p">|</span>WebHD<span class="p">|</span><span class="o">[</span>.<span class="w"> </span><span class="o">]</span>WEB<span class="o">[</span>.<span class="w"> </span><span class="o">](</span>?:<span class="o">[</span>xh<span class="o">]</span><span class="m">26</span><span class="o">[</span><span class="m">45</span><span class="o">]</span><span class="p">|</span>DDP?5<span class="o">[</span>.<span class="w"> </span><span class="o">]</span><span class="m">1</span><span class="o">)</span><span class="p">|</span><span class="o">[</span>.<span class="w"> </span><span class="o">](</span>?-i:WEB<span class="o">)</span>$<span class="p">|</span><span class="se">\d</span>+0p<span class="o">(</span>?:WEB-DLMux<span class="p">|</span><span class="se">\b\s\/\s</span>WEB<span class="se">\s\/\s\b</span><span class="o">))</span>/ix
 </code></pre></div>
 <hr/>
 <p>Add this to your Preferred with a score of <strong>[10]</strong></p>
@@ -1391,7 +1391,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <hr/>
 <p>Add this to your Preferred with a score of <strong>[3500]</strong></p>
 <p>BluRay / Dual-Audio / 1st Tier</p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\b</span>HAiKU<span class="se">\b</span><span class="p">|</span>Exiled-Destiny<span class="p">|</span><span class="se">\b</span><span class="o">(</span>E-D<span class="o">)</span><span class="se">\b</span><span class="p">|</span>Koten<span class="o">[</span> ._-<span class="o">]</span>Gars<span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\b</span>HAiKU<span class="se">\b</span><span class="p">|</span>Exiled-Destiny<span class="p">|</span><span class="se">\b</span><span class="o">(</span>E-D<span class="o">)</span><span class="se">\b</span><span class="p">|</span>Koten<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>Gars<span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\[</span>GHOST<span class="se">\]</span><span class="p">|</span>-GHOST<span class="se">\b</span><span class="p">|</span><span class="se">\[</span>NPC<span class="se">\]</span><span class="p">|</span>-NPC<span class="se">\b</span><span class="p">|</span><span class="se">\b</span>CBM<span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
@@ -1511,7 +1511,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>SpaceFish<span class="p">|</span>DeadFish<span class="p">|</span><span class="se">\b</span>DB<span class="se">\b</span><span class="p">|</span>Man<span class="se">\.</span>K<span class="p">|</span><span class="se">\b</span>HR<span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>BakedFish<span class="p">|</span>N<span class="o">[</span>eo<span class="o">][</span>wo<span class="o">]</span>b<span class="o">[</span> ._-<span class="o">]</span>?Subs<span class="p">|</span><span class="se">\b</span>Anime<span class="o">[</span> .<span class="o">]</span>Time<span class="se">\b</span><span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>BakedFish<span class="p">|</span>N<span class="o">[</span>eo<span class="o">][</span>wo<span class="o">]</span>b<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?Subs<span class="p">|</span><span class="se">\b</span>Anime<span class="o">[</span><span class="w"> </span>.<span class="o">]</span>Time<span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>AnimeKaizoku<span class="p">|</span><span class="se">\[</span>Kaizoku<span class="se">\]</span><span class="p">|</span>-Kaizoku<span class="se">\b</span><span class="p">|</span><span class="se">\b</span>CBB<span class="se">\b</span><span class="p">|</span>phazer11<span class="o">)</span>/i
 </code></pre></div>
@@ -1533,7 +1533,7 @@ find <span class="nv">$location</span> -type f <span class="se">\(</span> -iname
 <summary>If you would like the above to be in DO NOT WANT in an easy format here it is.</summary>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span><span class="se">\[</span>Pixel<span class="se">\]</span><span class="p">|</span>-Pixel<span class="se">\b\[</span>EDGE<span class="se">\]</span><span class="p">|</span>-EDGE<span class="se">\b</span><span class="p">|</span><span class="se">\[</span>Ranger<span class="se">\]</span><span class="p">|</span>-Ranger<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>SpaceFish<span class="p">|</span>DeadFish<span class="p">|</span><span class="se">\b</span>DB<span class="se">\b</span><span class="p">|</span>Man<span class="se">\.</span>K<span class="p">|</span><span class="se">\b</span>HR<span class="se">\b</span><span class="o">)</span>/i,
-/<span class="o">(</span>BakedFish<span class="p">|</span>N<span class="o">[</span>eo<span class="o">][</span>wo<span class="o">]</span>b<span class="o">[</span> ._-<span class="o">]</span>?Subs<span class="p">|</span><span class="se">\b</span>Anime Time<span class="se">\b</span><span class="o">)</span>/i,
+/<span class="o">(</span>BakedFish<span class="p">|</span>N<span class="o">[</span>eo<span class="o">][</span>wo<span class="o">]</span>b<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?Subs<span class="p">|</span><span class="se">\b</span>Anime<span class="w"> </span>Time<span class="se">\b</span><span class="o">)</span>/i,
 /<span class="o">(</span>AnimeKaizoku<span class="p">|</span>Kaizoku<span class="p">|</span><span class="se">\b</span>CBB<span class="se">\b</span><span class="p">|</span>phazer11<span class="o">)</span>/i,
 /<span class="o">(</span>iPUNISHER<span class="p">|</span>MiniTheatre<span class="p">|</span>MiniFreeza<span class="p">|</span>Mr<span class="se">\.</span>Deadpool<span class="o">)</span>/i,
 /<span class="o">(</span>NemDiggers<span class="p">|</span>Project-gxs<span class="p">|</span>youshikibi<span class="o">)</span>/i,
