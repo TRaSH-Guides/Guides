@@ -2,8 +2,8 @@
   "folder": {
       "default": "{Movie CleanTitle} ({Release Year})",
       "plex": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
-      "emby": "{Movie CleanTitle} ({Release Year}) {[imdbid-{ImdbId}]}",
-      "jellyfin": "{Movie CleanTitle} ({Release Year}) {[imdbid-{ImdbId}]}"
+      "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
+      "jellyfin": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]"
   },
   "file": {
       "default": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}",
