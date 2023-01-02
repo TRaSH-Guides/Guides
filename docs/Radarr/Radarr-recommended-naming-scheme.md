@@ -39,7 +39,7 @@ For Jellyfin/Emby:
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
-    `The Movie Title (2010) {imdbid-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
 If you do Anime
 
@@ -49,7 +49,7 @@ If you do Anime
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
-    `The Movie Title (2010) [imdb-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+    `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
 For Jellyfin/Emby:
 
@@ -122,7 +122,7 @@ For Plex:
 
 RESULT:
 
-`The Movie Title (2010) [imdb-tt1520211]`
+`The Movie Title (2010) {imdb-tt1520211}`
 
 For Jellyfin/Emby:
 
