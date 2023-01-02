@@ -1,5 +1,5 @@
 radarr:
-  radarr-1080p:  # A custom name used to identify this particular instance.
+  radarr:  # A custom name used to identify this particular instance.
     base_url: [radarr_url_goes_here]
     api_key: [api_key_goes_here]
 
