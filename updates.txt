@@ -1,3 +1,13 @@
+# 2023-01-03 22:30
+**[Guide]**
+- Updated: Recommended naming scheme for the Starr apps. *PR#1062*
+- Fixed: Emby/JF Folder naming scheme. *PR#1062*
+- Moved: naming scheme to json. *PR#1062*
+- Clarify what the Audio Channels CFs are for and that they relate to, eg 2.0, 5.1, 7.1 etc. *PR#1051*
+
+**[Starr]**
+- Added: Recyclarr config files to github *PR#1060*
+
 # 2022-12-29 19:30
 **[Starr]**
 *Recommended naming scheme* 
