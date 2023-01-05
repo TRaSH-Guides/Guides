@@ -104,6 +104,15 @@
       }
     },
     {
+      "name": "CREATiVE24",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CREATiVE24)\\b"
+      }
+    },
+    {
       "name": "CrEwSaDe",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
