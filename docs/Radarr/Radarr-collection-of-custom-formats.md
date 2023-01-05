@@ -987,7 +987,7 @@ I also made 3 guides related to this one.
 ??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
-    It should be added to your quality profile with a score of `-10000` 
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
 
     This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
 
