@@ -987,9 +987,11 @@ I also made 3 guides related to this one.
 ??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
+    It should be added to your quality profile with a score of `-10000` 
+
     This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
