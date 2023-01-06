@@ -55,11 +55,12 @@ I also made 3 guides related to this one.
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
 | [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
 | [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
-|                                               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
-|                                               |                       | [WEB Tier 03](#web-tier-03)               | [Bravia Core](#bcore)  |
+| [Masters of Cinema](#masters-of-cinema)       |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
+| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
+| [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
+| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
+|                                               |                       |                                           | [Bravia Core](#bcore)  |
 
 ------
 
@@ -1597,6 +1598,26 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
+------
+
+### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? faq "Pathé Thuis - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### BCORE
 
 <sub>Bravia Core</sub>
@@ -1612,6 +1633,8 @@ I also made 3 guides related to this one.
     ```
 
 <sub><sup>[TOP](#index)</sup>
+
+------
 
 ## Anime
 
