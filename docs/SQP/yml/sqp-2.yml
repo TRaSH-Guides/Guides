@@ -77,6 +77,7 @@ radarr:
           - 820b09bb9acbfde9c35c71e0e565dad8 # 1080p
           - fb392fb0d61a010ae38e49ceaa24a1ef # 2160p
           # Streaming Services
+          - cc5e51a9e85a6296ceefe097a77f12f4 # BCORE
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
           - name: Remux|Bluray|IMAX-E|2160p
