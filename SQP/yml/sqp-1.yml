@@ -45,6 +45,7 @@ radarr:
           - b2be17d608fc88818940cd1833b0b24c # 720p
           - 820b09bb9acbfde9c35c71e0e565dad8 # 1080p
           # Streaming Services
+          - cc5e51a9e85a6296ceefe097a77f12f4 # BCORE
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
           - name: Bluray|WEB-1080p
