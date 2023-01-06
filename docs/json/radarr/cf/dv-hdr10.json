@@ -1,7 +1,7 @@
 {
   "trash_id": "e23edd2482476e595fb990b12e7c609c",
   "trash_score": "1500",
-  "trash_regex": "https://regex101.com/r/pADWJD/5",
+  "trash_regex": "https://regex101.com/r/pADWJD/8",
   "name": "DV HDR10",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -11,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(HDR(10)?)\\b)(?=.*\\b(DV|DoVi)\\b)"
+        "value": "^(?=.*\\b(HDR(10)?(?!\\+))\\b)(?=.*\\b(DV|DoVi)\\b)"
       }
     },
     {

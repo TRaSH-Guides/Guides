@@ -8,9 +8,27 @@
       "name": "Peacock TV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(pcok|Peacock TV)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(pcok|Peacock TV)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
       }
     }
   ]
