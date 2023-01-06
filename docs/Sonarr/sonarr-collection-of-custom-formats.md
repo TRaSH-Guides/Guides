@@ -63,22 +63,26 @@ I also made 3 guides related to this one.
 |                       |                       |                                         | [Videoland](#vdl)   |
 |                       |                       |                                         | [YouTube Red](#red) |
 |                       |                       |                                         | [iTunes](#it)       |
+|                       |                       |                                         | [CANAL+](#canal)    |
+|                       |                       |                                         | [SALTO](#salto)     |
+|                       |                       |                                         | [RTBF](#rtbf)       |
 
 ------
 
-| Misc                           | Optional                            | &nbsp; | &nbsp; |
-| ------------------------------ | ----------------------------------- | ------ | ------ |
-| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | &nbsp; | &nbsp; |
-| [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)             | &nbsp; | &nbsp; |
-| [Repack v3](#repack-v3)        | [HDR10+ Boost](#hdr10plus-boost)    | &nbsp; | &nbsp; |
-| [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | &nbsp; | &nbsp; |
-| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | &nbsp; | &nbsp; |
-| [x264](#x264)                  | [Retags](#retags)                   | &nbsp; | &nbsp; |
-| [x265](#x265)                  | [Scene](#scene)                     | &nbsp; | &nbsp; |
-|                                | [Season Packs](#season-pack)        | &nbsp; | &nbsp; |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | &nbsp; | &nbsp; |
-|                                | [AV1](#av1)                         | &nbsp; | &nbsp; |
-|                                | [SDR](#sdr)                         | &nbsp; | &nbsp; |
+| Misc                           | Optional                            | French Audio Version          | French Source Groups                          |
+| ------------------------------ | ----------------------------------- | ----------------------------- | --------------------------------------------- |
+| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
+| [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
+| [Repack v3](#repack-v3)        | [HDR10+ Boost](#hdr10plus-boost)    | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
+| [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
+| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
+| [x264](#x264)                  | [Retags](#retags)                   | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
+| [x265](#x265)                  | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+|                                | [Season Packs](#season-pack)        | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
+|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
+|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
 
 ------
 
@@ -1115,6 +1119,22 @@ I also made 3 guides related to this one.
 
 ------
 
+### DV FEL
+
+??? faq "DV (FEL) - [CLICK TO EXPAND]"
+
+    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-fel.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ## HQ Source Groups
 
 ------
@@ -1546,6 +1566,60 @@ I also made 3 guides related to this one.
 
 ------
 
+### CANAL
+
+<sub>CANAL = CANAL+/MyCANAL</sub>
+
+??? faq "Canal+ - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Canal%2B){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-canal.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SALTO
+
+<sub>SALTO = SⱯLTO</sub>
+
+??? faq "SⱯLTO - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Salto_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-salto.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### RTBF
+
+<sub>RTBF = Radio-télévision belge de la Communauté française (Radio Télévision Belge Francophone)</sub>
+
+??? faq "RTBF - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/RTBF){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-rtbf.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ## Anime
 
 ------
@@ -1939,3 +2013,383 @@ I also made 3 guides related to this one.
 <sub><sup>[TOP](#index)</sup>
 
 ------
+
+## French Audio Version
+
+------
+
+### Multi-French
+
+??? faq "Multi-French - [CLICK TO EXPAND]"
+
+    Recognize movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Multi-Audio
+
+??? faq "Multi-Audio - [CLICK TO EXPAND]"
+
+    A slightly modified [Multi](#multi) Custom Formats that recognize VF and VO inside the name.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### French Audio
+
+??? faq "French Audio - [CLICK TO EXPAND]"
+
+    This will recognize every kind of French Audio.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-audio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFF
+
+??? faq "VFF - [CLICK TO EXPAND]"
+
+    Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vff.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOF
+
+??? faq "VOF - [CLICK TO EXPAND]"
+
+    Original French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vof.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFI
+
+??? faq "VFI - [CLICK TO EXPAND]"
+
+    International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFQ
+
+??? faq "VFQ - [CLICK TO EXPAND]"
+
+    Canadian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VQ
+
+??? faq "VQ - [CLICK TO EXPAND]"
+
+    Quebec Version (strong Quebec accent, ex: The Simpsons movie).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFB
+
+??? faq "VFB - [CLICK TO EXPAND]"
+
+    Belgian French Version.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfb.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOSTFR
+
+??? faq "VOSTFR - [CLICK TO EXPAND]"
+
+    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vostfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FanSUB
+
+??? faq "FanSUB - [CLICK TO EXPAND]"
+
+    Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so called FastSUBs.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fansub.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FastSUB
+
+??? faq "FastSUB - [CLICK TO EXPAND]"
+
+    FanSUB, but made as quickly as possible, at the expense of quality.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fastsub.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+## French HQ Source Groups
+
+------
+
+### FR Remux Tier 01
+
+??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups doing remuxes with multiple sources (discs) mixing what's best.
+    - Groups active doing remuxes from a single sources (discs).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR HD Bluray Tier 01
+
+??? faq "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR WEB Tier 01
+
+??? faq "FR WEB Tier 01 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that source directly from the streaming service.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR WEB Tier 02
+
+??? faq "FR WEB Tier 02 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that source directly from the streaming service but are not so active.
+    - Groups that add French audio tracks to an English release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR WEB Tier 03
+
+??? faq "FR WEB Tier 03 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Anime Tier 01
+
+??? faq "FR Anime Tier 01 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that are know to be still active and doing only Anime.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Anime Tier 02
+
+??? faq "FR Anime Tier 02 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups that are know to be still active and doing Anime and other type of release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by todays standards.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Anime FanSub
+
+??? faq "FR Anime FanSub - [CLICK TO EXPAND]"
+
+    Known good groups that are doing only FanSub.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Scene Groups
+
+??? faq "FR Scene Groups - [CLICK TO EXPAND]"
+
+    Known French Scene groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR LQ
+
+<sub>French Low Quality Releases = FR LQ</sub>
+
+??? faq "FR LQ - [CLICK TO EXPAND]"
+
+    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+
+    !!! note
+
+        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
+        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - DeTAG/ReTAG = Detagging or stealing groups.
+        - Other reasons = Banned Release Groups.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>

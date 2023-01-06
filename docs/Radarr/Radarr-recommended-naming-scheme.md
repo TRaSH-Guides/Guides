@@ -24,32 +24,54 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
     `{edition-{Edition Tags}}` with `{Edition Tags}`
 
 ```bash
-{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}
+{{ radarr['naming']['radarr-naming']['file']['default'] }}
 ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby'] }}
+```
+
+??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+
 If you do Anime
 
 ```bash
-{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit][{Mediainfo VideoCodec}]{-Release Group}
+{{ radarr['naming']['radarr-naming']['file']['anime'] }}
 ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
+```
+
+??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+
 ------
 
 ## Original Title vs  Original Filename
 
-If you want to keep the original release name that holds all the info of the file then I suggest to use `{Original Title}` over `{Original Filename}`
+Another option is to use `{Original Title}` rather than the recommeneded naming scheme outlined aboove. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+
+If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
 
 Why?
 
-The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.
+The filename can be Obscured where the Release naming isn't, especially when you use Usenet.
 
 `{Original Title}` => `The.Movie.Title.2010.REMASTERED.1080p.BluRay.x264-GROUP`
 
@@ -70,7 +92,7 @@ The filename can be Obscured where the Release naming isn't. Especially when you
 ### Minimal needed and recommended
 
 ```bash
-{Movie CleanTitle} ({Release Year})
+{{ radarr['naming']['radarr-naming']['folder']['default'] }}
 ```
 
 RESULT:
@@ -88,11 +110,37 @@ RESULT:
 
         TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb.
 
+#### Optional Movies Folder Format for the Plex Movies Scanner and Jellyfin/Emby
+
+This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+
+For Plex:
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['plex'] }}
+```
+
+RESULT:
+
+`The Movie Title (2010) {imdb-tt1520211}`
+
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['emby'] }}
+```
+
+RESULT:
+
+`The Movie Title (2010) [imdbid-tt1520211]`
+
+!!! tip
+    IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
+
 ------
 
 Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog) and [rg9400](https://github.com/rg9400) for the suggestions.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

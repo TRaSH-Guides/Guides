@@ -5,12 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Groups (Missing HDR)",
-      "implementation": "ReleaseTitleSpecification",
+      "name": "RlsGrp (Missing HDR)",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(FraMeSToR|HQMUX)\\b"
+        "value": "\\b(FraMeSToR|HQMUX|SiCFoI)\\b"
       }
     },
     {

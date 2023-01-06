@@ -24,8 +24,7 @@ I also made 3 guides related to this one.
 
     This way you make sure the Custom Format preferences will be used instead.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"
 
 ------
 
@@ -77,6 +76,7 @@ I also made 3 guides related to this one.
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         |                               |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 |                               |                                                 |
 
 ------
 
@@ -759,6 +759,22 @@ I also made 3 guides related to this one.
 
 ------
 
+### Masters of Cinema
+
+??? faq "Masters of Cinema - [CLICK TO EXPAND]"
+
+    Masters of Cinema is a line of DVD and Blu-ray releases published through Eureka Entertainment. Because of the uniformly branded and spine-numbered packaging and the standard inclusion of booklets and analysis by recurring film historians, the line is often perceived as the UK equivalent of The Criterion Collection.
+
+??? example "JSON - [CLICK TO EXPAND}"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### Theatrical Cut
 
 ??? faq "Theatrical Cut - [CLICK TO EXPAND]"
@@ -830,6 +846,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/imax-enhanced.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Open Matte
+
+??? faq "Open Matte - [CLICK TO EXPAND]"
+
+    Open matte is a filming technique that involves matting out the top and bottom of the film frame in the movie projector (known as a soft matte) for the widescreen theatrical release and then scanning the film without a matte (at Academy ratio) for a full screen home video release.
+
+??? example "JSON - [CLICK TO EXPAND}"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/open-matte.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -910,7 +942,7 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (HD) - [CLICK TO EXPAND]"
 
-    This blocks 720/1080p (HD) releases that are encoded in x265.
+    This blocks all 720/1080p (HD) releases that are encoded in x265.
 
     In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-hd']['trash_score'] }}`
 
@@ -1079,9 +1111,9 @@ I also made 3 guides related to this one.
 
 ??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
 
-    This blocks 720/1080p (HD) releases that are encoded in x265.
+    This blocks most 720/1080p (HD) releases that are encoded in x265.
 
-    **But it will allow x265 releases if they have HDR and/or DV**
+    **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
@@ -1128,6 +1160,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV FEL
+
+??? faq "DV (FEL) - [CLICK TO EXPAND]"
+
+    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1185,6 +1233,7 @@ I also made 3 guides related to this one.
 ??? faq "x265 - [CLICK TO EXPAND]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
+    This applies to all releases that are x265/HEVC that are not Remux.
 
     !!! fail ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)

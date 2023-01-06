@@ -1,0 +1,107 @@
+{
+  "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
+  "trash_score": "1600",
+  "name": "FR WEB Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "dRuIdE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(dRuIdE)\\b"
+      }
+    },
+    {
+      "name": "FiND",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FiND)\\b"
+      }
+    },
+    {
+      "name": "FTMVHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FTMVHD)\\b"
+      }
+    },
+    {
+      "name": "KLI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KLI)\\b"
+      }
+    },
+    {
+      "name": "LAZARUS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LAZARUS)\\b"
+      }
+    },
+    {
+      "name": "MTLQC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTLQC)\\b"
+      }
+    },
+    {
+      "name": "MYSTERiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MYSTERiON)\\b"
+      }
+    },
+    {
+      "name": "Scaph",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Scaph)\\b"
+      }
+    },
+    {
+      "name": "WQM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(WQM)\\b"
+      }
+    }
+  ]
+}

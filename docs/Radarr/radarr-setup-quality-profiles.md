@@ -139,6 +139,8 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
 
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Use the following main settings in your profile.
@@ -224,6 +226,8 @@ If you prefer 2160p Remuxes (Remux-2160p)
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -342,9 +346,9 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ??? info "Audio Channels - [CLICK TO EXPAND]"
 
-    Personally I wouldn't add the audio channels Custom Formats being you could limit yourself in the amount of releases you're able to get. Only use this if you got specific reasons that you need them.
+    Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example 2.0 (stereo) or 5.1/7.1 (surround sound). Personally I wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
 
-    Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. You can get better scores using the `Audio Advanced` Custom Formats.
+    Using it with any kind of Remuxes Quality Profile is useless in my opinion being that 99% of all remuxes are multi audio anyway. You can get better scores just using the `Audio Advanced` Custom Formats.
 
 ### Avoid using the x264/x265 Custom Format
 

@@ -1,0 +1,34 @@
+{
+  "trash_id": "0455d6519a550dbf648c97b56e7231d2",
+  "name": "SALTO",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "SALTO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(SALTO)\\b"
+      }
+    }
+  ]
+}

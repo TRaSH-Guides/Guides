@@ -16,13 +16,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Standard Episode Format
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -40,13 +40,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Daily Episode Format
 
 ```bash
-{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -58,13 +58,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Anime Episode Format
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -82,7 +82,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ### Series Folder Format
 
 ```bash
-{Series TitleYear}
+{{ sonarr['naming']['sonarr-naming']['series']['default'] }}
 ```
 
 RESULT:
@@ -96,17 +96,17 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 For Plex:
 
 ```bash
-{Series TitleYear} [imdb-{ImdbId}]
+{{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
 ```
 
 RESULT:
 
-`The Series Title! (2010) [imdb-tt1520211]`
+`The Series Title! (2010) {imdb-tt1520211}`
 
 For Jellyfin/Emby:
 
 ```bash
-{Series TitleYear} [tvdbid-{TvdbId}]
+{{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
 ```
 
 RESULT:
@@ -146,11 +146,13 @@ RESULTS:
 
 ## Original Title vs  Original Filename
 
-If you want to keep the original release name that holds all the info of the file then I suggest to use `{Original Title}` over `{Original Filename}`
+Another option is to use `{Original Title}` rather than the recommeneded naming scheme outlined aboove. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+
+If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
 
 Why?
 
-The filename can be Obscured where the Release naming isn't. Especially when you use Usenet.
+The filename can be Obscured where the Release naming isn't, especially when you use Usenet.
 
 `{Original Title}` => `The.Series.Title.S01E01.Episode.Title.1080p.AMZN.WEB-DL.DDP5.1.H.264-RlsGrp`
 
@@ -162,5 +164,4 @@ Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

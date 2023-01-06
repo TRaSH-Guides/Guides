@@ -1,277 +1,214 @@
 {
-  "trash_id": "26fa26253af4001701fedb56cec376dc",
-  "trash_score": "1750",
-  "name": "HQ-WEBDL",
+  "trash_id": "2f3422339d185eb227a324644a2fbfca",
+  "trash_score": "1500",
+  "name": "FR Scene Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
-      }
-    },
-    {
-      "name": "ABBIE",
+      "name": "#",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ABBIE)\\b"
+        "value": "\\b(4FR)\\b"
       }
     },
     {
-      "name": "AJP69",
+      "name": "A",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AJP69)\\b"
+        "value": "\\b(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AMB3R|ANMWR|AVON|AYMO|AZR)\\b"
       }
     },
     {
-      "name": "BLUTONiUM",
+      "name": "B",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLUTONiUM)\\b"
+        "value": "\\b(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)\\b"
       }
     },
     {
-      "name": "CMRG",
+      "name": "C",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CMRG)\\b"
+        "value": "\\b(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)\\b"
       }
     },
     {
-      "name": "CRFW",
+      "name": "D",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CRFW)\\b"
+        "value": "\\b(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)\\b"
       }
     },
     {
-      "name": "CRUD",
+      "name": "E",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CRUD)\\b"
+        "value": "\\b(ENJOi|EUBDS)\\b"
       }
     },
     {
-      "name": "dB",
+      "name": "F",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dB)\\b"
+        "value": "\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)\\b"
       }
     },
     {
-      "name": "Flights",
+      "name": "G",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Flights)\\b"
+        "value": "\\b(GHOULS|GiMBAP|GLiMMER|Goatlove)\\b"
       }
     },
     {
-      "name": "FLUX",
+      "name": "H",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FLUX)\\b"
+        "value": "\\b(HERC|HiRoSHiMa|HYBRiS|HyDe)\\b"
       }
     },
     {
-      "name": "GNOME",
+      "name": "J",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GNOME)\\b"
+        "value": "\\b(JMT|JoKeR|JUSTICELEAGUE)\\b"
       }
     },
     {
-      "name": "GNOMiSSiON",
+      "name": "K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GNOMiSSiON)\\b"
+        "value": "\\b(KAZETV|KOGi)\\b"
       }
     },
     {
-      "name": "HONE",
+      "name": "L",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HONE)\\b"
+        "value": "\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB)\\b"
       }
     },
     {
-      "name": "KiNGS",
+      "name": "M",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KiNGS)\\b"
+        "value": "\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)\\b"
       }
     },
     {
-      "name": "MiU",
+      "name": "N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MiU)\\b"
+        "value": "\\b(N0Z00M|NERDHD|NERO|NrZ|NTK)\\b"
       }
     },
     {
-      "name": "monkee",
+      "name": "O",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(monkee)\\b"
+        "value": "\\b(OBSTACLE|OohLaLa|OOKAMI)\\b"
       }
     },
     {
-      "name": "MZABI",
+      "name": "P",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MZABI)\\b"
+        "value": "\\b(PANZeR|PHoQUE|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)\\b"
       }
     },
     {
-      "name": "NOSiViD",
+      "name": "R",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NOSiViD)\\b"
+        "value": "\\b(ROUGH|RUDE|Ryotox)\\b"
       }
     },
     {
-      "name": "NTb",
+      "name": "S",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NTb)\\b"
+        "value": "\\b(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)\\b"
       }
     },
     {
-      "name": "NTG",
+      "name": "T",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NTG)\\b"
+        "value": "\\b(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)\\b"
       }
     },
     {
-      "name": "PHOENiX",
+      "name": "U",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PHOENiX)\\b"
+        "value": "\\b(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY|USURY)\\b"
       }
     },
     {
-      "name": "playWEB",
+      "name": "V",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b\\b(playWEB)\\b"
+        "value": "\\b(VENUE|VFC|VoMiT)\\b"
       }
     },
     {
-      "name": "ROCCaT",
+      "name": "W",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROCCaT)\\b"
+        "value": "\\b(Wednesday29th)\\b"
       }
     },
     {
-      "name": "SiC",
+      "name": "Z",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SiC)\\b"
-      }
-    },
-    {
-      "name": "SiGMA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SiGMA)\\b"
-      }
-    },
-    {
-      "name": "SLiGNOME",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SLiGNOME)\\b"
-      }
-    },
-    {
-      "name": "SMURF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SMURF)\\b"
-      }
-    },
-    {
-      "name": "TEPES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TEPES)\\b"
-      }
-    },
-    {
-      "name": "TOMMY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TOMMY)\\b"
+        "value": "\\b(ZEST|ZiRCON)\\b"
       }
     }
   ]
