@@ -32,7 +32,7 @@ When adding a new series make sure you set the series type to Anime
 ### Recommended naming scheme
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
 
 ??? summary "Results: - [Click to Expand]"
@@ -48,7 +48,7 @@ When adding a new series make sure you set the series type to Anime
 #### Series Folder Format
 
 ```bash
-{Series TitleYear}
+{{ sonarr['naming']['sonarr-naming']['series']['default'] }}
 ```
 
 Result:

@@ -16,13 +16,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Standard Episode Format
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - S{season:00}E{episode:00} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -40,13 +40,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Daily Episode Format
 
 ```bash
-{Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - {Air-Date} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}{[MediaInfo VideoCodec]}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -58,13 +58,13 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Anime Episode Format
 
 ```bash
-{Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
 ```
 
 !!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
 
     ```bash
-    {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Custom Formats }{Quality Full}]{[MediaInfo VideoDynamicRangeType]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
+    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
     ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
@@ -82,7 +82,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ### Series Folder Format
 
 ```bash
-{Series TitleYear}
+{{ sonarr['naming']['sonarr-naming']['series']['default'] }}
 ```
 
 RESULT:
@@ -96,17 +96,17 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 For Plex:
 
 ```bash
-{Series TitleYear} [imdb-{ImdbId}]
+{{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
 ```
 
 RESULT:
 
-`The Series Title! (2010) [imdb-tt1520211]`
+`The Series Title! (2010) {imdb-tt1520211}`
 
 For Jellyfin/Emby:
 
 ```bash
-{Series TitleYear} [tvdbid-{TvdbId}]
+{{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
 ```
 
 RESULT:
@@ -164,5 +164,4 @@ Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

@@ -24,22 +24,42 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
     `{edition-{Edition Tags}}` with `{Edition Tags}`
 
 ```bash
-{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}][{Mediainfo VideoCodec}]{-Release Group}
+{{ radarr['naming']['radarr-naming']['file']['default'] }}
 ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby'] }}
+```
+
+??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+
 If you do Anime
 
 ```bash
-{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels}]{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit][{Mediainfo VideoCodec}]{-Release Group}
+{{ radarr['naming']['radarr-naming']['file']['anime'] }}
 ```
 
 ??? summary "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
+```
+
+??? summary "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
 ------
 
@@ -72,7 +92,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
 ### Minimal needed and recommended
 
 ```bash
-{Movie CleanTitle} ({Release Year})
+{{ radarr['naming']['radarr-naming']['folder']['default'] }}
 ```
 
 RESULT:
@@ -90,11 +110,37 @@ RESULT:
 
         TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb.
 
+#### Optional Movies Folder Format for the Plex Movies Scanner and Jellyfin/Emby
+
+This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+
+For Plex:
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['plex'] }}
+```
+
+RESULT:
+
+`The Movie Title (2010) {imdb-tt1520211}`
+
+For Jellyfin/Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['emby'] }}
+```
+
+RESULT:
+
+`The Movie Title (2010) [imdbid-tt1520211]`
+
+!!! tip
+    IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
+
 ------
 
 Thanks:
 
 A big Thanks to [fryfrog](https://github.com/fryfrog) and [rg9400](https://github.com/rg9400) for the suggestions.
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

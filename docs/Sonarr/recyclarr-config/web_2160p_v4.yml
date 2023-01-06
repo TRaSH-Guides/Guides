@@ -1,0 +1,60 @@
+# This config file is for use with Sonarr V4 only
+sonarr:
+  sonarr: # A custom name used to identify this particular instance.
+    base_url: [sonarr_url_goes_here]
+    api_key: [api_key_goes_here]
+
+    quality_definition:
+      type: series
+
+    custom_formats:
+      # Scores from TRaSH json
+      - trash_ids:
+          # HDR Formats
+          - 7878c33f1963fefb3d6c8657d46c2f0a  # DV HDR10
+          - 1f733af03141f068a540eec352589a89  # DV HLG
+          - 27954b0a80aab882522a88a4d9eae1cd  # DV SDR
+          - 6d0d8de7b57e35518ac0308b0ddf404e  # DV
+          - bb019e1cd00f304f80971c965de064dc  # HDR (undefined)
+          - 3e2c4e748b64a1a1118e0ea3f4cf6875  # HDR
+          - 3497799d29a085e2ac2df9d468413c94  # HDR10
+          - a3d82cbef5039f8d295478d28a887159  # HDR10+
+          - 17e889ce13117940092308f48b48b45b  # HLG
+          - 2a7e3be05d3861d6df7171ec74cad727  # PQ
+          # DV (WEBDL) - The next line must be uncommented if any devices using your library DO NOT support Dolby Vision
+          - 9b27ab6498ec0f31a3353992e19434ca  # DV (WEBDL)
+          # HDR10Plus Boost - Uncomment the next line if any of your devices DO support HDR10+
+          # - 0dad0a507451acddd754fe6dc3a7f5e7  # HDR10Plus Boost
+          # Unwanted UHD
+          - 85c61753df5da1fb2aab6f2a47426b09  # BR-DISK
+          - 9c11cd3f07101cdba90a2d81cf0e56b4  # LQ
+          - 2016d1676f5ee13a5b7257ff86ac9a93  # SDR
+          # Misc
+          - ec8fa7296b64e8cd390a1600981f3923  # Repack/Proper
+          - eb3d5cc0a2be0db205fb823640db6a3c  # Repack v2
+          - 44e7c4de10ae50265753082e5dc76047  # Repack v3
+          # Streaming Services
+          - d660701077794679fd59e8bdf4ce3a29  # AMZN
+          - f67c9ca88f463a48346062e8ad07713f  # ATVP
+          - 36b72f59f4ea20aad9316f475f2d9fbb  # DCU
+          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
+          - 7a235133c87f7da4c8cccceca7e3c7a6  # HBO
+          - a880d6abc21e7c16884f3ae393f84179  # HMAX
+          - f6cce30f1733d5c8194222a7507909bb  # HULU
+          - 0ac24a2a68a9700bcb7eeca8e5cd644c  # iT
+          - d34870697c9db575f17700212167be23  # NF
+          - b2b980877494b560443631eb1f473867  # NLZ
+          - 1656adc6d7bb2c8cca6acfb6592db421  # PCOK
+          - c67a75ae4a1715f2bb4d492755ba4195  # PMTP
+          - 3ac5d84fce98bab1b531393e9c82f467  # QIBI
+          - c30d2958827d1867c73318a5a2957eb1  # RED
+          - ae58039e1319178e6be73caab5c42166  # SHO
+          - 5d2317d99af813b6529c7ebf01c83533  # VDL
+          # HQ Source Groups
+          - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
+          - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02
+          - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
+          - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
+        quality_profiles:
+          - name: WEB-2160p
+            reset_unmatched_scores: true
