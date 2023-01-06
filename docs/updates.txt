@@ -1,3 +1,18 @@
+# 2023-01-06 22:45
+**[Sonarr v4]**
+- sync radarr to sonarr streaming CF. *PR#1063*
+
+**[Starr]**
+- Updated: CF `DV HDR10` to match only `DV HDR10`. *PR#1065*
+
+**[Radarr]**
+- Add: RlsGrp `CREATiVE24` to CF `LQ` Poorly named releases including "DTSHD-MA" as PCM WEBDLs as m2ts. *PR#1068*
+- Add: `BCORE`(Bravia Core) to Streaming Services with a score of `15`. *PR#1026*
+- Raised: CF `MA` Score to `20`. *PR#1026*
+
+**[Guide]**
+- Fix: Emby/JF file naming scheme for imdbid. *PR#1071*
+
 # 2023-01-03 22:30
 **[Guide]**
 - Updated: Recommended naming scheme for the Starr apps. *PR#1062*
