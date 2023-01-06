@@ -19,7 +19,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(HDR(10)?)\\b)(?=.*\\b(DV|DoVi)\\b)"
+        "value": "^(?=.*\\b(HDR(10)?(?!\\+))\\b)(?=.*\\b(DV|DoVi)\\b)"
       }
     },
     {
