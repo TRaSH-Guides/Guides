@@ -27,6 +27,8 @@ This basic example is based on the use of docker images
 1. Enter your category.
 1. Enter your save path subfolder (keep it simple and recognizable)
 
+You don't need to add the full path under `Save Path`, it will use the root download path that you setup in `Options` => `Saving Management` => `Default Save Path:`.
+
 ---
 
 ## Paths and Categories Breakdown
