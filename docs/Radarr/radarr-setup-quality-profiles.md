@@ -67,7 +67,11 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ??? summary "Which Quality Profile should you choose - [CLICK TO EXPAND]"
 
-    ![Flowchart](/Radarr/images/flowchart-custom-format-radarr.png)
+    <p align="center">*Click on the image below to see how to make use of the flowchart.*
+
+    <p align="center">![Flowchart](/Radarr/images/flowchart-guide-radarr.png){ width="10%" height="10%" data-title="Follow the flowchart, continue till you hit finished." data-description="- The yellow boxes match the Quality Profile on the right side of the Guide.<br>- If the Guide says <b>ALL</b> it means <b>ALL</b>. (<u>Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+</u>, else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).<br><br><b>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</b>" }
+
+    ![Flowchart](/Radarr/images/flowchart-custom-format-radarr.png){ data-title="Follow the flowchart, continue till you hit finished." data-description="- The yellow boxes match the Quality Profile on the right side of the Guide.<br>- If the Guide says <b>ALL</b> it means <b>ALL</b>. (<u>Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+</u>,else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).<br><br><b>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</b>" }
 
     If you're unsure or have questions do not hesitate to ask for help on Discord
 
