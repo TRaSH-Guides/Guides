@@ -11,6 +11,7 @@ data
 └── torrents
    ├── movies
    ├── music
+   ├── books
    └── tv
 ```
 
@@ -25,28 +26,32 @@ data
 └── usenet
    ├── movies
    ├── music
+   ├── books
    └── tv
 ```
 
 #### The Starr Apps
 
-Sonarr, Radarr and Lidarr
+Sonarr, Radarr, Readarr and Lidarr
 
-Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.
+Sonarr, Radarr, Readarr and Lidarr gets access to everything using `/data` because the download folder(s) and media folder will look like and be one file system. Hardlinks will work and moves will be atomic, instead of copy + delete.
 
 ```none
 data
 ├── torrents
 │  ├── movies
 │  ├── music
+│  ├── books
 │  └── tv
 ├── usenet
 │  ├── movies
 │  ├── music
+│  ├── books
 │  └── tv
 └── media
    ├── movies
    ├── music
+   ├── books
    └── tv
 ```
 
@@ -54,13 +59,14 @@ data
 
 Plex, Emby, JellyFin and Bazarr
 
-Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
+Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/data/media`, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
 
 ```none
 data
 └── media
    ├── movies
    ├── music
+   ├── books
    └── tv
 ```
 
