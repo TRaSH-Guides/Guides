@@ -1,3 +1,17 @@
+# 2023-01-11 23:30
+**[New]**
+- [Starr] How to setup Language Custom Formats. *PR#1086*
+
+**[Updated]**
+- [Downloaders] Add info about the root download path with the categories setup. *PR#1074*
+- [Downloaders] Add distinction between the two screenshots that are merged together. *PR#1077*
+- [Radarr] Add to `How to setup Quality Profiles` a screenshot how the flowchart works incl. description. *PR#1077*
+- [Sonarr v4] CF `Remux Tier 02` added RlsGrp `playBD`. *PR#1084*
+- [Sonarr] Updated naming scheme to be consistent with Radarr. *PR#1088*
+
+**[Fixed]**
+- [Starr] CF `BR-DISK` fix false positive. *PR#1075*
+
 # 2023-01-06 22:45
 **[Sonarr v4]**
 - sync radarr to sonarr streaming CF. *PR#1063*
