@@ -2,6 +2,8 @@
 
 Here we will explain how to setup your own preferred language Custom Format, with a few examples.
 
+!!! warning "Using language Custom Formats is not compatible with setting a preferred language in a quality profile in Radarr. You must use one or the other.<br>If you want to make use of the Custom Formats set the preferred language to `Any`."
+
 ## Language Examples
 
 Import the JSON in to your Custom Formats.
