@@ -139,5 +139,46 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ---
 
-## FAQ
+## FAQ & INFO
 
+### What's reverse scoring
+
+??? FAQ "What's reverse scoring? - [CLICK TO EXPAND]"
+
+    With reverse scoring you add a Custom Format with a score of `-10000` and your preferred condition you negate.
+
+    So in the case of the following Custom Format `Language: Original Only`, it will actually match all Not Original releases and give it a score of `-10000`.
+
+### Prefer language X over language Y
+
+??? FAQ "Prefer language X over language Y - [CLICK TO EXPAND]"
+
+    If you want to prefer Prefer language X over language Y,
+
+    you add for example: `Language: Prefer Language X` with a score of `10`, and add `Language: Prefer Language Y` with score of `9`.
+
+    Which scores you should use depends on how important the language is compared to other Custom Formats you're using.
+
+### What's Original Language
+
+??? FAQ "What's Original Language? - [CLICK TO EXPAND]"
+
+    Original Language is the language in which a Movie/TV Show was originally made.
+
+### Where does Radarr get the Original Language from
+
+??? FAQ "Where does Radarr get the Original Language from? - [CLICK TO EXPAND]"
+
+    Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}.
+
+    ![!The Movie Database (TMDB) Original Language](images/original-language-tmdb.png)
+
+### Where does Sonarr get the Original Language from
+
+??? FAQ "Where does Sonarr get the Original Language from? - [CLICK TO EXPAND]"
+
+    Sonarr makes use of [TheTVDB](https://thetvdb.com/){:target="_blank" rel="noopener noreferrer"}.
+
+    ![!TheTVDB Original Language](images/original-language-tvdb.png)
+
+--8<-- "includes/support.md"
