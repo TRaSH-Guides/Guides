@@ -1,0 +1,27 @@
+{
+  "trash_id": "guide-only",
+  "trash_score": "-10000",
+  "trash_description": "Language: Multiple Only",
+  "name": "Language: Not Dutch",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not Dutch Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not Flemish Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 19
+      }
+    }
+  ]
+}
