@@ -4,6 +4,14 @@ Here we will try to explain how to setup your own preferred language Custom Form
 
 ## Language Examples
 
+Import the JSON in to your Custom Formats.
+
+How ?
+
+Follow the [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+
+---
+
 ### Language: Original Only
 
 <sub><sub>Language: Not Original</sub>
@@ -19,23 +27,10 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    {
-      "trash_score": "-10000",
-      "name": "Language: Not Original",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "Not Original Language",
-          "implementation": "LanguageSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": -2
-          }
-        }
-      ]
-    }
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original.json' %]][[% endfilter %]]
     ```
+
+---
 
 ### Language: English Only
 
@@ -52,24 +47,10 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    {
-      "trash_score": "-10000",
-      "trash_description": "Language: English Only",
-      "name": "Language: Not English",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "Not English Language",
-          "implementation": "LanguageSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": 1
-          }
-        }
-      ]
-    }
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-english.json' %]][[% endfilter %]]
     ```
+
+---
 
 ### Language: Multiple Only
 
@@ -90,36 +71,14 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    {
-      "trash_score": "-10000",
-      "name": "Language: Not Dutch",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "Not Dutch Language",
-          "implementation": "LanguageSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": 7
-          }
-        },
-        {
-          "name": "Not Flemish Language",
-          "implementation": "LanguageSpecification",
-          "negate": true,
-          "required": true,
-          "fields": {
-            "value": 19
-          }
-        }
-      ]
-    }
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-dutch.json' %]][[% endfilter %]]
     ```
+
+---
 
 ### Language: Prefer X but i'll take Y
 
-<sub><sub>Language: Not German or Original</sub>
+<sub><sub>Language: Not Original or German</sub>
 <sub><sub>Language: Prefer German</sub>
 
 Let's say you want German, but you take the Original language if no German is available, but don't want any other translated languages.
@@ -130,56 +89,19 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
-      ```json
-      {
-        "trash_score": "-10000",
-        "name": "Language: Not German or Original",
-        "includeCustomFormatWhenRenaming": false,
-        "specifications": [
-          {
-            "name": "Not German",
-            "implementation": "LanguageSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-              "value": 4
-            }
-          },
-          {
-            "name": "Not Original",
-            "implementation": "LanguageSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-              "value": -2
-            }
-          }
-        ]
-      }
-      ```
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original-or-german.json' %]][[% endfilter %]]
+    ```
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    {
-      "trash_score": "10",
-      "name": "Language: Prefer German",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "German Language",
-          "implementation": "LanguageSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-            "value": 4
-          }
-        }
-      ]
-    }
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
     ```
+
+---
 
 ### Language: Prefer Language X
 
@@ -194,20 +116,28 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    {
-      "trash_score": "10",
-      "name": "Language: Prefer German",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
-        {
-          "name": "German Language",
-          "implementation": "LanguageSpecification",
-          "negate": false,
-          "required": true,
-          "fields": {
-            "value": 4
-          }
-        }
-      ]
-    }
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
     ```
+
+---
+
+### Language: Prefer Multi Language
+
+<sub><sub>Language: Prefer Dutch</sub>
+
+Let's say you just want to prefer Dutch (That uses multiple language conditions as described earlier) and don't care if you get another random language(s).
+
+!!! info "Replace the Dutch/Flemish conditions with your preferred language(s)."
+
+Add the following json to your Radarr/Sonarr with a score of `10`.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-dutch.json' %]][[% endfilter %]]
+    ```
+
+---
+
+## FAQ
+
