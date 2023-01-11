@@ -1,0 +1,18 @@
+{
+  "trash_id": "guide-only",
+  "trash_score": "-10000",
+  "trash_description": "Language: Original Only",
+  "name": "Language: Not Original",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": -2
+      }
+    }
+  ]
+}
