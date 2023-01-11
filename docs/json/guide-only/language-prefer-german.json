@@ -1,0 +1,18 @@
+{
+  "trash_id": "guide-only",
+  "trash_score": "10",
+  "trash_description": "Prefer Language X",
+  "name": "Language: Prefer German",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "German Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
