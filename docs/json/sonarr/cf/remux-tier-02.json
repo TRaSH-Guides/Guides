@@ -50,6 +50,15 @@
       }
     },
     {
+      "name": "playBD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(playBD)\\b"
+      }
+    },
+    {
       "name": "PTer",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
