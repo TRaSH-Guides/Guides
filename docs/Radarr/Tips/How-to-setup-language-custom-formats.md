@@ -18,7 +18,7 @@ Follow the [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/)
 
 This is one of the most common one used besides the English only one.
 
-With this Custom Format you will only get Movies/TV Shows in their original language.
+With this Custom Format you will get only the Movie/TV Show with the original language.
 
 For this we're going to make use of so called reverse scoring.
 
@@ -38,7 +38,7 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
 With this Custom Format you will only get the Movie/TV Show in the English language.
 
-!!! info "Replace the English condition with language of your choice."
+!!! info "For languages other than English, replace the English condition with language of your choice."
 
 For this we're going to make use of so called reverse scoring.
 
@@ -62,7 +62,7 @@ in this example I will use Dutch and Flemish being a lot of Movies/TV Shows are 
 
 With this Custom Format you will only get the Movie/TV Show with Dutch and/or Flemish Audio.
 
-!!! info "Replace the Dutch/Flemish conditions with your preferred language(s)."
+!!! info "For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice."
 
 For this we're going to make use of so called reverse scoring.
 
@@ -83,7 +83,7 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
 Let's say you want German, but if German is not available then fall back to Original language but don't accept any other translated languages.
 
-!!! info "Replace the German conditions with your preferred language(s)."
+!!! info "For languages other than German, replace the German condition with language of your choice."
 
 Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
@@ -109,7 +109,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 Let's say you just want to prefer German and don't care if you get another random language(s).
 
-!!! info "Replace the German conditions with your preferred language(s)."
+!!! info "For languages other than German, replace the German condition with language of your choice."
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
@@ -131,7 +131,7 @@ With this Custom Format you will only get the Movie/TV Show with either Preferre
 
 In this example I will use Dutch and Flemish since a lot of Movies/TV Shows since there is a lot of collaboration between the two countries/studio's.
 
-!!! info "Replace the Dutch/Flemish conditions with your preferred language(s)."
+!!! info "For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice."
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
