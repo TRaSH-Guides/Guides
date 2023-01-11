@@ -7,7 +7,7 @@ jobs:
   editorconfig-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.2.0
+      - uses: actions/checkout@v3.3.0
       - name: editorconfig-checker
         run: |
           docker run --rm \
@@ -17,7 +17,7 @@ jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.2.0
+      - uses: actions/checkout@v3.3.0
       - name: markdownlint
         run: |
           find "${GITHUB_WORKSPACE}" -name '*.md' -exec \
@@ -30,7 +30,7 @@ jobs:
   yamllint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.2.0
+      - uses: actions/checkout@v3.3.0
       - name: yamllint
         run: |
           find "${GITHUB_WORKSPACE}" -name '*.yaml' -o -name '*.yml' -exec \
