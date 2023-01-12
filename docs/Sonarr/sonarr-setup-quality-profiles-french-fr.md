@@ -113,7 +113,7 @@ Utilisez les paramètres principaux suivants dans votre profil.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -151,7 +151,7 @@ Utilisez les paramètres principaux suivants dans votre profil.
     La raison pour laquelle le WEB 1080p est fusionné avec le 2160p est que certaines sorties NF ne seront pas publiées en 4k, mais possède tout de même du DV/HDR.
     Si vous voulez faire la même chose, veillez à remplacer [x265 (HD)](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} par [x265 (no HDR/DV)](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv){:target="_blank" rel="noopener noreferrer"}.
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 

@@ -37,10 +37,10 @@ Select the profile that you want to use/prefer.
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
-??? check "Screenshot example - [CLICK TO EXPAND]"
+??? success "Screenshot example - [CLICK TO EXPAND]"
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.
@@ -64,7 +64,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## Which Quality Profile should you choose
 
-??? summary "Which Quality Profile should you choose - [CLICK TO EXPAND]"
+??? abstract "Which Quality Profile should you choose - [CLICK TO EXPAND]"
 
     ![Flowchart](/Sonarr/images/flowchart-custom-format-sonarr.png)
 
@@ -102,7 +102,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade till `Upgrade Until`)
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
@@ -141,7 +141,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - It will download WEB-2160p with HDR/DV.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
@@ -190,13 +190,13 @@ Use the following main settings in your profile.
 
 ### Why only WEB-DL
 
-??? faq "Why do you only have a release profile for WEB-DL - [CLICK TO EXPAND]"
+??? question "Why do you only have a release profile for WEB-DL - [CLICK TO EXPAND]"
 
     I only do WEB-DL my self for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)
 
 ### Why prefer P2P groups
 
-??? faq "Why do you prefer P2P groups over scene groups - [CLICK TO EXPAND]"
+??? question "Why do you prefer P2P groups over scene groups - [CLICK TO EXPAND]"
 
     Scene groups always release in a rush to bring it out as fast as possible.
 
@@ -206,7 +206,7 @@ Use the following main settings in your profile.
 
 ### Why so many repacks/propers
 
-??? faq "Why do I see so many repacks/propers of Amazon WEB-DLs lately - [CLICK TO EXPAND]"
+??? question "Why do I see so many repacks/propers of Amazon WEB-DLs lately - [CLICK TO EXPAND]"
 
     A large portion of Amazon WEB-DLs in the last week have only had 192Kbps DD+5.1, because that's all Amazon made available initially. The proper 640Kbps DD+5.1 audio might appear a few hours later or a few months, but when they get updated, the episodes will be REPACKED.
 
@@ -224,7 +224,7 @@ Use the following main settings in your profile.
 
 ### Custom Formats to avoid certain releases
 
-??? FAQ "How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]"
+??? question "How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]"
 
     For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
     Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
@@ -237,7 +237,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ### Custom Formats with a score of 0
 
-??? FAQ "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
+??? question "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
 
     All Custom Formats with a score of 0 are pure informational and don't do anything.
 

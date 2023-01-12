@@ -51,7 +51,7 @@ You need to install Docker from the `Package Center`. This should also create a 
 
 ## Create the main share
 
-!!! attention
+!!! warning
 
     To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
 
@@ -130,7 +130,7 @@ Which in this screenshot is `1035` for the docker user
 and the GID (aka PGID) which is `100` for the users group.
 Remember these values for later use.
 
-!!! attention
+!!! warning
 
     It is not recommended to use (anymore) your admin/main user account. That is why we just created a new user.
 
@@ -264,7 +264,7 @@ Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Te
 wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 ```
 
-!!! attention
+!!! warning
     :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT  :bangbang:
 
 ------
@@ -343,7 +343,7 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 
 ## Run the Docker Compose
 
-!!! important
+!!! tip
     make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
     If you had previous installed apps, make a backup of their config folders.
 
@@ -363,7 +363,7 @@ You will notice that all the images will be downloaded, after that the container
 
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside your applications.**
 
-!!! attention
+!!! warning
 
     If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the command `sudo docker-compose up -d` again, from within the `/volume1/docker/appdata` folder.
 

@@ -3,7 +3,7 @@
 
 After you've installed everything it's best to check all of your settings,
 
-!!! attention
+!!! warning
     Bazarr only searches for subs for Episodes and Movies that are added after the install.
 
     So you will need to set the preferred languages for your existing Shows and Movies.

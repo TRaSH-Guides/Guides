@@ -1,4 +1,4 @@
-??? summary "Misc - [CLICK TO EXPAND]"
+??? abstract "Misc - [CLICK TO EXPAND]"
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
     | [{{ sonarr['cf']['repack-proper']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) | {{ sonarr['cf']['repack-proper']['trash_score'] }} | {{ sonarr['cf']['repack-proper']['trash_id'] }} |

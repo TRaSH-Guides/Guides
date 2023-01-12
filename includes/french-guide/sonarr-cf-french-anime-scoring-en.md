@@ -1,4 +1,4 @@
-??? summary "HQ Source Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                                     | Trash ID                                               |
     | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
     | [{{ sonarr['cf']['french-anime-tier-01']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-tier-01) | {{ sonarr['cf']['french-anime-tier-01']['trash_score'] }}       | {{ sonarr['cf']['french-anime-tier-01']['trash_id'] }}       |

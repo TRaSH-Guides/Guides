@@ -1,4 +1,4 @@
-??? summary "All HDR Formats - [CLICK TO EXPAND]"
+??? abstract "All HDR Formats - [CLICK TO EXPAND]"
 
     {! include-markdown "../../includes/cf/dv-info.md" !}
 
@@ -17,5 +17,5 @@
     | [{{ sonarr['cf']['pq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#pq)                       | {{ sonarr['cf']['pq']['trash_score'] }}            | {{ sonarr['cf']['pq']['trash_id'] }}            |
     | [{{ sonarr['cf']['hlg']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hlg)                     | {{ sonarr['cf']['hlg']['trash_score'] }}           | {{ sonarr['cf']['hlg']['trash_id'] }}           |
 
-    !!! hint
+    !!! tip
         If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it), It is important to also add the [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ sonarr['cf']['dv-webdl']['trash_score'] }}

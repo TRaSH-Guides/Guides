@@ -27,7 +27,7 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
 ### What are Hardlinks
 
-??? faq "**What are hardlinks?** - [CLICK TO EXPAND]"
+??? question "**What are hardlinks?** - [CLICK TO EXPAND]"
 
     - [**Short answer**] Having a file in multiple locations without using double your storage space.
     - [**Long answer**] Hard links are a way for a copy operation to be instant and not consume space for those additional copies.
@@ -48,19 +48,19 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
-        !!! attention
+        !!! warning
             You can't create hard links for directories :bangbang:
 
             You can't cross file systems :bangbang:
 
 ### What are Instant Moves (Atomic Moves)
 
-??? faq "**What are Instant Moves (Atomic Moves)?** - [CLICK TO EXPAND]"
+??? question "**What are Instant Moves (Atomic Moves)?** - [CLICK TO EXPAND]"
 
     A real move and not a copy file from download folder to media folder and then delete file from download folder.
 
 ### What are the Starr Apps
 
-??? faq "**What are the `Starr Apps`?** - [CLICK TO EXPAND]"
+??? question "**What are the `Starr Apps`?** - [CLICK TO EXPAND]"
 
     Sonarr, Radarr, Lidarr, etc.

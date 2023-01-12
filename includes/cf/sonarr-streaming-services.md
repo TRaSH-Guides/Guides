@@ -1,4 +1,4 @@
-??? summary "Streaming Services - [CLICK TO EXPAND]"
+??? abstract "Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                           | Score                                     | Trash ID                               |
     | --------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
     | [{{ sonarr['cf']['amzn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#amzn) | {{ sonarr['cf']['amzn']['trash_score'] }} | {{ sonarr['cf']['amzn']['trash_id'] }} |

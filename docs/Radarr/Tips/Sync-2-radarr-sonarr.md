@@ -7,7 +7,7 @@ I'm going to show two different options on how you can setup your sync with two 
 - Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything
 - Option 2: This option is best used if you only want to have a subset of your library Movies/TV Shows as 4K/2160p (UHD) as it filters by quality profile
 
-!!! error ""
+!!! bug ""
     I'm not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running.  [Radarr Multiple Instance Information](https://wiki.servarr.com/radarr/installation#multiple-instances) and [Sonarr Multiple Instance Information](https://wiki.servarr.com/sonarr/installation#multiple-instances)
 
 ## Preparation
@@ -18,7 +18,7 @@ For this you need to have prepared the following:
 - One download client (*Two if you prefer Usenet and Torrents*).
 - Your download client has two separate categories (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)
 
-!!! attention
+!!! warning
 
     :bangbang:You can't use the same root (media library) folder for both Radarr's/Sonarr's:bangbang:
 
@@ -78,7 +78,7 @@ Select your preferred download client.
 
 The only thing you need to change/create is a separate `Category` that you're going to use for `Radarr 2`
 
-!!! attention
+!!! warning
 
     This can't and shouldn't be the same category you use for `Radarr 1` but a separate `Category`.
 
@@ -149,7 +149,7 @@ Select your preferred download client.
 
 Only thing you need to change/create is a separate `Category` that you're going to use for `Sonarr 2`
 
-!!! important
+!!! tip
 
     This can't and shouldn't be the same category you use for `Sonarr 1` but a separate `Category`.
 

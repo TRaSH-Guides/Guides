@@ -1,6 +1,6 @@
 ## Workflow Logic
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 

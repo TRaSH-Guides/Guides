@@ -38,10 +38,10 @@ Select the profile that you want to use/prefer.
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
-??? check "Screenshot example - [CLICK TO EXPAND]"
+??? success "Screenshot example - [CLICK TO EXPAND]"
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.
@@ -65,7 +65,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## Which Quality Profile should you choose
 
-??? summary "Which Quality Profile should you choose - [CLICK TO EXPAND]"
+??? abstract "Which Quality Profile should you choose - [CLICK TO EXPAND]"
 
     <p align="center">*Click on the image below to see how to make use of the flowchart.*
 
@@ -105,13 +105,13 @@ Use the following main settings in your profile.
 
 ![HD Bluray + WEB](images/qp-bluray-webdl.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
@@ -151,11 +151,11 @@ Use the following main settings in your profile.
 
 ![UHD Bluray + WEB](images/qp-uhd-bluray-webdl.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
@@ -193,13 +193,13 @@ Use the following main settings in your profile.
 
 ![Remux + WEB 1080p](images/qp-remux-webdl-1080p.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
@@ -239,11 +239,11 @@ Use the following main settings in your profile.
 
 ![Remux + WEB 2160p](images/qp-remux-webdl-2160p.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
     - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.
@@ -319,7 +319,7 @@ Use the following main settings in your profile.
 
 ### Custom Formats to avoid certain releases
 
-??? FAQ "How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]"
+??? question "How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]"
 
     For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
     Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
@@ -332,7 +332,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ### Custom Formats with a score of 0
 
-??? FAQ "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
+??? question "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
 
     All Custom Formats with a score of 0 are pure informational and don't do anything.
 

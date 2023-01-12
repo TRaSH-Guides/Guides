@@ -1,4 +1,4 @@
-??? summary "Explications - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Explications - [CLIQUEZ POUR AFFICHER]"
     | Acronymes                        | French Explanation                                                                  | English Explanation                                                   |
     | -------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
     | TRUEFRENCH or VFF                | Version Francophone Française (doublage réalisé en France)                          | Full French version (dubbing done in France)                          |
@@ -18,7 +18,7 @@
     !!! tip "Indexers renaming in Prowlarr"
         Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. Je ne recommande pas l'utilisation d'une telle fonction car elle peut entraîner des faux positifs avec les formats personnalisés VFF ou VFQ.
 
-??? summary "Versions françaises - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Versions françaises - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                              | Score | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------- |
     | [{{ radarr['cf']['french-vff']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vff)       | 0     | {{ radarr['cf']['french-vff']['trash_id'] }}    |
