@@ -1341,8 +1341,8 @@
 <div class="admonition danger">
 <p>Here I will provide some suggestions and try to explain why I recommend these settings. Adjust it to your own liking and keep in mind that it is only a suggestion. I'm not a Plex Pro in anyway <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></p>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Some settings are only visible for Plex Pass holders.</p>
 </div>
 <p>All changes need to be done on your Plex Media Server.</p>
@@ -1375,7 +1375,7 @@
 <h4 id="scan-my-library-automatically">Scan my library automatically<a class="headerlink" href="#scan-my-library-automatically" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-scan-my-library-automatically.png"><img alt="!Settings - Library - Scan my library automatically" src="../images/settings-library-scan-my-library-automatically.png"/></a></p>
 <p>When a change is detected in the source location for a library’s content, the appropriate library will be scanned. This function relies on the computer’s operating system providing the “something changed” trigger. Some operating systems don’t provide this trigger and content mounted via a network will also typically not work. If your library doesn’t automatically scan, you may have to set a periodical scan or do it manually.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <details class="tip">
@@ -1387,7 +1387,7 @@
 <h4 id="run-a-partial-scan-when-changes-are-detected">Run a partial scan when changes are detected<a class="headerlink" href="#run-a-partial-scan-when-changes-are-detected" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"><img alt="!Settings - Library - Run a partial scan when changes are detected" src="../images/settings-library-run-a-partial-scan-when-changes-are-detected.png"/></a></p>
 <p>When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="include-music-libraries-in-automatic-updates">Include music libraries in automatic updates<a class="headerlink" href="#include-music-libraries-in-automatic-updates" title="Permanent link"></a></h4>
@@ -1396,34 +1396,34 @@
 <h4 id="scan-my-library-periodically">Scan my library periodically<a class="headerlink" href="#scan-my-library-periodically" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-scan-my-library-periodically.png"><img alt="!Settings - Library - Scan my library periodically" src="../images/settings-library-scan-my-library-periodically.png"/></a></p>
 <p>Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>Do you need a extra scan for your library to recognize new media?</em></p>
 </div>
 <h4 id="empty-trash-automatically-after-every-scan">Empty trash automatically after every scan<a class="headerlink" href="#empty-trash-automatically-after-every-scan" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-empty-trash-automatically-after-every-scan.png"><img alt="!Settings - Library - Empty trash automatically after every scan" src="../images/settings-library-empty-trash-automatically-after-every-scan.png"/></a></p>
 <p>With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="allow-media-deletion">Allow media deletion<a class="headerlink" href="#allow-media-deletion" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-allow-media-deletion.png"><img alt="!Settings - Library - Allow media deletion" src="../images/settings-library-allow-media-deletion.png"/></a></p>
 <p>The owner of the server will be allowed to delete media files from disk.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)</em></p>
 </div>
 <h4 id="run-scanner-tasks-at-a-lower-priority">Run scanner tasks at a lower priority<a class="headerlink" href="#run-scanner-tasks-at-a-lower-priority" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"><img alt="!Settings - Library - Run scanner tasks at a lower priority" src="../images/settings-library-run-scanner-tasks-at-a-lower-priority.png"/></a></p>
 <p>On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>Makes sure it uses less resources and ensure they do not interfere with regular streaming.</em></p>
 </div>
 <h4 id="generate-video-preview-thumbnails">Generate video preview thumbnails<a class="headerlink" href="#generate-video-preview-thumbnails" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-video-preview-thumbnails.png"><img alt="!Settings - Library - Generate video preview thumbnails" src="../images/settings-library-generate-video-preview-thumbnails.png"/></a></p>
 <p>This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Never</code></strong></p>
 <p><em>Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.</em></p>
 </div>
@@ -1440,7 +1440,7 @@
 <h4 id="generate-intro-video-markers">Generate intro video markers<a class="headerlink" href="#generate-intro-video-markers" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-intro-video-markers.png"><img alt="!Settings - Library - Generate intro video markers" src="../images/settings-library-generate-intro-video-markers.png"/></a></p>
 <p>You can choose to have TV episodes analyzed to try and detect when the “intro” occurs during playback. When detected, apps will then offer a <code>Skip Intro</code> button, allowing you to quickly jump over the intro.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>as a scheduled task</code></strong></p>
 <p><em>or</em></p>
 <p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
@@ -1448,7 +1448,7 @@
 <h4 id="generate-chapter-thumbnails">Generate chapter thumbnails<a class="headerlink" href="#generate-chapter-thumbnails" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-library-generate-chapter-thumbnails.png"><img alt="!Settings - Library - Generate chapter thumbnails" src="../images/settings-library-generate-chapter-thumbnails.png"/></a></p>
 <p>Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>as a scheduled task</code></strong></p>
 <p><em>or</em></p>
 <p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
@@ -1458,69 +1458,69 @@
 <h4 id="enable-ipv6-support">Enable IPv6 support<a class="headerlink" href="#enable-ipv6-support" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-server-support-for-ipv6.png"><img alt="!Settings - Network - Enable server support for IPv6" src="../images/settings-network-enable-server-support-for-ipv6.png"/></a></p>
 <p>Enable IPv6 support.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>If you're not sure your network 100% works with ip6 <u>don't Enable it</u>.</em></p>
 </div>
 <h4 id="secure-connections">Secure connections<a class="headerlink" href="#secure-connections" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-secure-connections.png"><img alt="!Settings - Network - Secure connections" src="../images/settings-network-secure-connections.png"/></a></p>
 <p>Choose how your Plex Media Server handles secure connections.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Preferred</code></strong></p>
 <p><em>Accept and prefer secure connections when they’re available for a Plex app, but allow regular HTTP connections if the app doesn’t support secure connections or if one can’t be established</em></p>
 </div>
 <h4 id="preferred-network-interface">Preferred network interface<a class="headerlink" href="#preferred-network-interface" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-preferred-network-interface.png"><img alt="!Settings - Network - Preferred network interface" src="../images/settings-network-preferred-network-interface.png"/></a></p>
 <p>For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.</p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.</p>
 </div>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Whatever suits your setup</code></strong></p>
 </div>
 <h4 id="strict-tls-configuration">Strict TLS configuration<a class="headerlink" href="#strict-tls-configuration" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-strict-tls-configuration.png"><img alt="!Settings - Network - Strict TLS configuration" src="../images/settings-network-strict-tls-configuration.png"/></a></p>
 <p>If this setting is enabled, it prevents Plex Media Server from using or accepting the deprecated TLSv1.0 and v1.1 protocols, as well as legacy weak ciphers. May prevent older clients from connecting. The vast majority of users will have no reason to enable this option (and receive no benefit from doing so).</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 </div>
 <h4 id="enable-local-network-discovery-gdm">Enable local network discovery (GDM)<a class="headerlink" href="#enable-local-network-discovery-gdm" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"><img alt="!Settings - Network - Enable local network discovery (GDM)" src="../images/settings-network-enable-local-network-discovery-%28gdm%29.png"/></a></p>
 <p>Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="remote-streams-allowed-per-user">Remote streams allowed per user<a class="headerlink" href="#remote-streams-allowed-per-user" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-remote-streams-allowed-per-user.png"><img alt="!Settings - Network - Remote streams allowed per user" src="../images/settings-network-remote-streams-allowed-per-user.png"/></a></p>
 <p>You can set the maximum number of simultaneous streams each remote user is allowed to have.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Whatever suits your setup</code></strong></p>
 </div>
 <h4 id="lan-networks">LAN Networks<a class="headerlink" href="#lan-networks" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-lan-networks.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-lan-networks.png"/></a></p>
 <p>It lets you specify which IP addresses or networks will be considered to be “local” to you.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Your local IP/netmasks</code></strong></p>
 <p><em>If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)</em></p>
 </div>
 <h4 id="treat-wan-ip-as-lan-bandwidth">Treat WAN IP As LAN Bandwidth<a class="headerlink" href="#treat-wan-ip-as-lan-bandwidth" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"><img alt="!Settings - Network - LAN Networks" src="../images/settings-network-treat-wan-ip-as-lan-bandwidth.png"/></a></p>
 <p>Allows incoming requests from this network’s WAN IP address to be treated as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="enable-relay">Enable Relay<a class="headerlink" href="#enable-relay" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-enable-relay.png"><img alt="!Settings - Network - Enable Relay" src="../images/settings-network-enable-relay.png"/></a></p>
 <p>The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.</em></p>
 </div>
 <h4 id="custom-server-access-urls">Custom server access URLs<a class="headerlink" href="#custom-server-access-urls" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-network-custom-server-access-urls.png"><img alt="!Settings - Network - Custom server access URLs" src="../images/settings-network-custom-server-access-urls.png"/></a></p>
 <p>A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
 <p><em>Example: <code>https://plex.mycustomdomain.com:32400</code></em></p>
 </div>
@@ -1532,14 +1532,14 @@
 <h4 id="transcoder-quality">Transcoder quality<a class="headerlink" href="#transcoder-quality" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-transcoder-quality.png"><img alt="!Settings - Transcoder - Transcoder quality" src="../images/settings-transcoder-transcoder-quality.png"/></a></p>
 <p>This will influence the quality used when transcoding media.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Automatic</code></strong></p>
 <p><em>Most users should leave it set to Automatic. Hardware-Accelerated Streaming is not affected by this setting.</em></p>
 </div>
 <h4 id="transcoder-temporary-directory">Transcoder temporary directory<a class="headerlink" href="#transcoder-temporary-directory" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-transcoder-temporary-directory.png"><img alt="!Settings - Transcoder - Transcoder temporary directory" src="../images/settings-transcoder-transcoder-temporary-directory.png"/></a></p>
 <p>Directory to use when transcoding temporary files for streaming.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup, if possible, your RAM (disk)</code></strong></p>
 <p><em>Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.</em></p>
 <p><em>If you run docker set this to <code>/transcode</code> and map it to <code>/tmp/plex</code></em></p>
@@ -1552,7 +1552,7 @@
 <h4 id="enable-hdr-tone-mapping">Enable HDR tone mapping<a class="headerlink" href="#enable-hdr-tone-mapping" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-enable-hdr-tone-mapping.png"><img alt="!Settings - Transcoder - Enable HDR tone mapping" src="../images/settings-transcoder-enable-hdr-tone-mapping.png"/></a></p>
 <p>This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Depending on your setup</code></strong></p>
 <p><em>Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.</em></p>
 </div>
@@ -1563,13 +1563,13 @@
 <h4 id="use-hardware-acceleration-when-available">Use hardware acceleration when available<a class="headerlink" href="#use-hardware-acceleration-when-available" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-use-hardware-acceleration-when-available.png"><img alt="!Settings - Transcoder - Use hardware acceleration when available" src="../images/settings-transcoder-use-hardware-acceleration-when-available.png"/></a></p>
 <p>To use Hardware-Accelerated Streaming in Plex Media Server.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <h4 id="use-hardware-accelerated-video-encoding">Use hardware-accelerated video encoding<a class="headerlink" href="#use-hardware-accelerated-video-encoding" title="Permanent link"></a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"><img alt="!Settings - Transcoder - Use hardware-accelerated video encoding" src="../images/settings-transcoder-use-hardware-accelerated-video-encoding.png"/></a></p>
 <p>To use Hardware-Accelerated Encoding in Plex Media Server.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
 <hr/>
@@ -1600,7 +1600,7 @@
 <ol>
 <li>
 <p>The new version of the Plex Movie agent/scanner</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Plex Movie</code></strong></p>
 <p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.</em></p>
 </div>
@@ -1610,7 +1610,7 @@
 <ol>
 <li>
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
 If you want you could disable it, the choice is yours.</em></p>
@@ -1618,7 +1618,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </li>
 <li>
 <p>When scanning this library, prefer embedded tags and local files if present.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>If enabled you could end up with weird movie naming you don't want, happens especially from releases from <code>RARBG</code></em></p>
 </div>
@@ -1628,7 +1628,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <ol>
 <li>
 <p>Automatically create collections when there are more than the selected number of items for an available collection.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>2</code></strong></p>
 <p><em>Only show collections when you have more than one item in your library</em></p>
 </div>
@@ -1642,7 +1642,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p class="admonition-title">ATTENTION</p>
 <p>Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></u></p>
 </div>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.</em></p>
 </div>
@@ -1652,7 +1652,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </li>
 <li>
 <p>If you want to show your Collection in your library</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>When Disabled your movies will show up normally when you use library view, This doesn't mean it will disable the collection view.</em></p>
 </div>
@@ -1663,7 +1663,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <ol>
 <li>
 <p>The new version of the Plex Movie agent/scanner</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Plex TV Series</code></strong></p>
 <p><em>Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.</em></p>
 </div>
@@ -1675,7 +1675,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <li>Use season titles when available.</li>
 <li>
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
 If you want you could disable it, the choice is yours.</em></p>
@@ -1686,7 +1686,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <ol>
 <li>
 <p>When scanning this library, prefer embedded tags and local files if present.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>If enabled you could end up with weird movie naming you don't want, happens especially from releases from <code>RARBG</code></em></p>
 </div>
@@ -1700,7 +1700,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <p class="admonition-title">ATTENTION</p>
 <p>Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></u></p>
 </div>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.</em></p>
 </div>
@@ -1710,14 +1710,14 @@ If you want you could disable it, the choice is yours.</em></p>
 </li>
 <li>
 <p>If you want to show your Collection in your library</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Disabled</code></strong></p>
 <p><em>When Disabled your tv show will show up normally when you use library view, This doesn't mean it will disable the collection view.</em></p>
 </div>
 </li>
 <li>
 <p>Generate intro detection for items in this library when enabled in server settings.</p>
-<div class="admonition check">
+<div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>Ever watch a TV show and it starts playing that same minute and a half credits intro that you've already watched multiple times? Well, you can have your Plex Media Server analyze the TV shows to try and detect those introductions and then let you skip through them with a single click!</em></p>
 </div>
@@ -1733,7 +1733,7 @@ If you want you could disable it, the choice is yours.</em></p>
 </ul>
 <!-- BEGIN INCLUDE ../../../includes/support.md -->
 <hr/>
-<div class="admonition help">
+<div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
 <p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
@@ -1745,7 +1745,7 @@ If you want you could disable it, the choice is yours.</em></p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
 </small>
 </div>
 <footer class="sponsorship">

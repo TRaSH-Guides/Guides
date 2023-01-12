@@ -1093,8 +1093,8 @@
 <article class="md-content__inner md-typeset">
 <h1 id="how-to-setup-quality-profiles-anime">How to setup Quality Profiles Anime<a class="headerlink" href="#how-to-setup-quality-profiles-anime" title="Permanent link"></a></h1>
 <p><em>aka How to setup Custom Formats (Anime)</em><br/><br/></p>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>You must be running Sonarr V4 to be able to use this setup.</p>
 <p><img alt="V4" class="off-glb" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&amp;label=Current%20V4%20Version&amp;style=for-the-badge&amp;color=4051B5"/></p>
 </div>
@@ -1112,14 +1112,14 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <h2 id="media-management">Media Management<a class="headerlink" href="#media-management" title="Permanent link"></a></h2>
 <h3 id="series-type">Series Type<a class="headerlink" href="#series-type" title="Permanent link"></a></h3>
 <p>When adding a new series make sure you set the series type to Anime</p>
-<details class="check">
+<details class="success">
 <summary>example - [Click to Expand]</summary>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cfa-seriestype.png"><img alt="!cfa-seriestype" src="../images/cfa-seriestype.png"/></a></p>
 </details>
 <h3 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Series<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">({</span>Series<span class="w"> </span>Year<span class="o">})</span><span class="w"> </span>-<span class="w"> </span>S<span class="o">{</span>season:00<span class="o">}</span>E<span class="o">{</span>episode:00<span class="o">}</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>absolute:000<span class="o">}</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>Episode<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">[{</span>Custom<span class="w"> </span>Formats<span class="w"> </span><span class="o">}{</span>Quality<span class="w"> </span>Full<span class="o">}]{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}[{</span>MediaInfo<span class="w"> </span>VideoBitDepth<span class="o">}</span>bit<span class="o">]{[</span>MediaInfo<span class="w"> </span>VideoCodec<span class="o">]}[{</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}]{</span>MediaInfo<span class="w"> </span>AudioLanguages<span class="o">}{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
-<details class="summary">
+<details class="abstract">
 <summary>Results: - [Click to Expand]</summary>
 <p>Single Episode:</p>
 <p><code>The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [Surround Sound x264 HDTV-720p v2][10bit][AVC][DTS 5.1][JA]-RlsGrp</code></p>
@@ -1162,7 +1162,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 </div>
 <h3 id="default-scoring">Default Scoring<a class="headerlink" href="#default-scoring" title="Permanent link"></a></h3>
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-anime.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Anime CF/Scoring - [Click to Expand]</summary>
 <table>
 <thead>
@@ -1355,7 +1355,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 </li>
 </ul>
 <hr/>
-<div class="admonition help">
+<div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
 <p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
@@ -1365,7 +1365,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 2, 2023 20:50:12</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
 </small>
 </div>
 <footer class="sponsorship">

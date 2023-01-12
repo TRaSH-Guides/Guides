@@ -1125,7 +1125,7 @@
 <div class="admonition warning">
 <p class="admonition-title">Mandatory</p>
 <p>The only change that is needed and <strong>mandatory</strong> for French Custom Formats to work is to set the preferred language profile for your releases to <code>Any</code>.</p>
-<details class="check">
+<details class="success">
 <summary>Screenshot example - [CLICK TO EXPAND]</summary>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/french-cf-profile-language.png"><img alt="!cf-quality-profile-cf" src="../images/french-cf-profile-language.png"/></a></p>
 </details>
@@ -1164,7 +1164,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 </div>
 <hr/>
 <h2 id="examples-of-quality-profile">Examples of Quality Profile<a class="headerlink" href="#examples-of-quality-profile" title="Permanent link"></a></h2>
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Attention</p>
 <p>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</p>
 <p>From experience most of the time when people change scores or leave out certain CF that work together they end up with undesired results.</p>
@@ -1179,7 +1179,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 <li>You only want VOSTFR, in this case you will ignore any mention of <strong>MULTi Custom Formats</strong> and give the <a href="/Radarr/Radarr-collection-of-custom-formats/#vostfr">VOSTFR</a> Custom Format a score of <code>1000</code>.</li>
 </ul>
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-audio-version-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1247,7 +1247,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 <p>Some Indexers in Prowlarr can rename <code>MULTi</code> releases to <code>MULTi.TRUEFRENCH</code> or <code>MULTi.FRENCH</code>. I do not recommend using such a feature along with those Custom Formats as it can lead to false positives from the VFF or VFQ Custom Formats.</p>
 </div>
 </details>
-<details class="summary">
+<details class="abstract">
 <summary>French Audio Versions - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1301,7 +1301,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 <h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link"></a></h3>
 <p>This is a must-have for every Quality Profile you use. All these Custom Formats make sure you don't get Low Quality Releases.</p>
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-unwanted-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1353,7 +1353,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 <li><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a>, it may include Scene groups already in <a href="/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a> Custom Format. Which is used for fallback to be sure to get a MULTi release.</li>
 </ul>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Optional - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1416,8 +1416,8 @@ Also they often even rename the release name in to Portuguese.</li>
 <p>This Custom Format works together with the normal DV Custom Format that you can use to prefer Dolby Vision.</p>
 <p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><code>[DV WEBDL]</code> = This custom format you need to score depending of your personal use and setup.</p>
 <ul>
 <li>If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of <code>0</code> or just don't add it.</li>
@@ -1457,7 +1457,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
 <!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Attention</p>
 <p>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</p>
 <p>From experience most of the time when people change scores or leave out certain CF that work together they end up with undesired results.</p>
@@ -1473,7 +1473,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <li><em>Size: 6-15 GB for a Bluray-1080p depending on the running time.</em></li>
 </ul>
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-multi-audio-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Multi audio - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1524,7 +1524,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1575,7 +1575,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1620,7 +1620,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <details class="info">
 <summary>Original mix (optional)</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-hd-bluray-web-scoring.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1667,7 +1667,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1700,7 +1700,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Streaming Services - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -1774,7 +1774,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><code>Audio Advanced</code> Custom Formats are not included to the encodes profile, as you will hardly find HD audio with HD Bluray Encodes. With HD Bluray Encodes it is suggested to go for quality. If you also want HD audio formats you should go for the Remuxes or UHD Encodes.</p>
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/french-qp-bluray-webdl.png"><img alt="HD Bluray + WEB" src="../images/french-qp-bluray-webdl.png"/></a></p>
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <p>The reason why WEB-DL 720p is not selected is because you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
@@ -1792,7 +1792,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
 <!-- END INCLUDE -->
-<details class="summary">
+<details class="abstract">
 <summary>Workflow Logic - [CLICK TO EXPAND]</summary>
 <ul>
 <li>When the WEB-1080p is released it will download the WEB-1080p. (streaming services)</li>
@@ -1829,7 +1829,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
 <table>
@@ -1916,7 +1916,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-hdr-formats.md -->
-<details class="summary">
+<details class="abstract">
 <summary>All HDR Formats - [CLICK TO EXPAND]</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/dv-info.md -->
 <div class="admonition info">
@@ -1991,14 +1991,14 @@ Also they often even rename the release name in to Portuguese.</li>
 </tr>
 </tbody>
 </table>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a> Custom Format with a score of -10000</p>
 </div>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-multi-audio-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Multi audio - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2049,7 +2049,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2100,7 +2100,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2145,7 +2145,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <details class="info">
 <summary>Original mix (optional)</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2197,7 +2197,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2230,7 +2230,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Streaming Services - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2303,7 +2303,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <!-- END INCLUDE -->
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/french-qp-uhd-bluray-webdl.png"><img alt="UHD Bluray + WEB" src="../images/french-qp-uhd-bluray-webdl.png"/></a></p>
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
@@ -2320,7 +2320,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
 <!-- END INCLUDE -->
-<details class="summary">
+<details class="abstract">
 <summary>Workflow Logic - [CLICK TO EXPAND]</summary>
 <p><strong>Depending what's released first and available the following Workflow Logic will be used:</strong></p>
 <ul>
@@ -2358,7 +2358,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
 <table>
@@ -2445,7 +2445,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-multi-audio-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Multi audio - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2496,7 +2496,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2547,7 +2547,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2592,7 +2592,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <details class="info">
 <summary>Original mix (optional)</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2639,7 +2639,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2672,7 +2672,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Streaming Services - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -2745,7 +2745,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <!-- END INCLUDE -->
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/french-qp-remux-webdl-1080p.png"><img alt="Remux + WEB 1080p" src="../images/french-qp-remux-webdl-1080p.png"/></a></p>
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <p>The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
@@ -2763,7 +2763,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
 <!-- END INCLUDE -->
-<details class="summary">
+<details class="abstract">
 <summary>Workflow Logic - [CLICK TO EXPAND]</summary>
 <ul>
 <li>When the WEB-1080p is released it will download the WEB-1080p. (streaming services)</li>
@@ -2800,7 +2800,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </div>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Audio - [CLICK TO EXPAND]</summary>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
 <table>
@@ -2887,7 +2887,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-hdr-formats.md -->
-<details class="summary">
+<details class="abstract">
 <summary>All HDR Formats - [CLICK TO EXPAND]</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/dv-info.md -->
 <div class="admonition info">
@@ -2962,14 +2962,14 @@ Also they often even rename the release name in to Portuguese.</li>
 </tr>
 </tbody>
 </table>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it), It is important to also add the <a href="/Radarr/Radarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a> Custom Format with a score of -10000</p>
 </div>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-multi-audio-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Multi audio - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3020,7 +3020,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Movie Versions - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3071,7 +3071,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Source Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3116,7 +3116,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <details class="info">
 <summary>Original mix (optional)</summary>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
-<details class="summary">
+<details class="abstract">
 <summary>HQ Release Groups - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3163,7 +3163,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Misc - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3196,7 +3196,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
-<details class="summary">
+<details class="abstract">
 <summary>Streaming Services - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
@@ -3269,7 +3269,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <!-- END INCLUDE -->
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/french-qp-remux-webdl-2160p.png"><img alt="Remux + WEB 2160p" src="../images/french-qp-remux-webdl-2160p.png"/></a></p>
-<div class="admonition attention">
+<div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
@@ -3286,7 +3286,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
 <!-- END INCLUDE -->
-<details class="summary">
+<details class="abstract">
 <summary>Workflow Logic - [CLICK TO EXPAND]</summary>
 <ul>
 <li>When the WEB-2160p is released it will download the WEB-2160p. (streaming services)</li>
@@ -3312,7 +3312,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <li><a href="https://trash-guides.info/">TRaSH</a>, for granting me a small space on his guide for this, his knowledge, and his friendliness.</li>
 </ul>
 <hr/>
-<div class="admonition help">
+<div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
 <p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
@@ -3322,7 +3322,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 24, 2022 17:58:21</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
 </small>
 </div>
 <footer class="sponsorship">

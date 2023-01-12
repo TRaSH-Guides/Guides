@@ -1004,35 +1004,35 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <hr/>
 <h2 id="standard-movie-format">Standard Movie Format<a class="headerlink" href="#standard-movie-format" title="Permanent link"></a></h2>
 <p>This naming scheme is made to be compatible with the <a href="https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517">New Plex Agent</a> that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove <code>{imdb-{ImdbId}}</code></p>
-<div class="admonition caution">
+<div class="admonition warning">
 <p class="admonition-title">Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming.</p>
 <p>If you're using a lower version or don't need it replace:</p>
 <p><code>{edition-{Edition Tags}}</code> with <code>{Edition Tags}</code></p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">{(</span>Release<span class="w"> </span>Year<span class="o">)}</span><span class="w"> </span><span class="o">{</span>imdb-<span class="o">{</span>ImdbId<span class="o">}}</span><span class="w"> </span><span class="o">{</span>edition-<span class="o">{</span>Edition<span class="w"> </span>Tags<span class="o">}}</span><span class="w"> </span><span class="o">{[</span>Custom<span class="w"> </span>Formats<span class="o">]}{[</span>Quality<span class="w"> </span>Full<span class="o">]}{[</span>MediaInfo<span class="w"> </span>3D<span class="o">]}{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}][{</span>Mediainfo<span class="w"> </span>VideoCodec<span class="o">}]{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
-<details class="summary">
+<details class="abstract">
 <summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p><code>The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE</code></p>
 </details>
 <p>For Jellyfin/Emby:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">{(</span>Release<span class="w"> </span>Year<span class="o">)}</span><span class="w"> </span><span class="o">[</span>imdbid-<span class="o">{</span>ImdbId<span class="o">}]</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>Edition<span class="w"> </span>Tags<span class="w"> </span><span class="o">}{[</span>Custom<span class="w"> </span>Formats<span class="o">]}{[</span>Quality<span class="w"> </span>Full<span class="o">]}{[</span>MediaInfo<span class="w"> </span>3D<span class="o">]}{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}][{</span>Mediainfo<span class="w"> </span>VideoCodec<span class="o">}]{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
-<details class="summary">
+<details class="abstract">
 <summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p><code>The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE</code></p>
 </details>
 <p>If you do Anime</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">{(</span>Release<span class="w"> </span>Year<span class="o">)}</span><span class="w"> </span><span class="o">{</span>imdb-<span class="o">{</span>ImdbId<span class="o">}}</span><span class="w"> </span><span class="o">{</span>edition-<span class="o">{</span>Edition<span class="w"> </span>Tags<span class="o">}}</span><span class="w"> </span><span class="o">{[</span>Custom<span class="w"> </span>Formats<span class="o">]}{[</span>Quality<span class="w"> </span>Full<span class="o">]}{[</span>MediaInfo<span class="w"> </span>3D<span class="o">]}{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}]{</span>MediaInfo<span class="w"> </span>AudioLanguages<span class="o">}[{</span>MediaInfo<span class="w"> </span>VideoBitDepth<span class="o">}</span>bit<span class="o">][{</span>Mediainfo<span class="w"> </span>VideoCodec<span class="o">}]{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
-<details class="summary">
+<details class="abstract">
 <summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p><code>The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE</code></p>
 </details>
 <p>For Jellyfin/Emby:</p>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">{(</span>Release<span class="w"> </span>Year<span class="o">)}</span><span class="w"> </span><span class="o">[</span>imdbid-<span class="o">{</span>ImdbId<span class="o">}]</span><span class="w"> </span>-<span class="w"> </span><span class="o">{</span>Edition<span class="w"> </span>Tags<span class="w"> </span><span class="o">}{[</span>Custom<span class="w"> </span>Formats<span class="o">]}{[</span>Quality<span class="w"> </span>Full<span class="o">]}{[</span>MediaInfo<span class="w"> </span>3D<span class="o">]}{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}]{</span>MediaInfo<span class="w"> </span>AudioLanguages<span class="o">}[{</span>MediaInfo<span class="w"> </span>VideoBitDepth<span class="o">}</span>bit<span class="o">][{</span>Mediainfo<span class="w"> </span>VideoCodec<span class="o">}]{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
-<details class="summary">
+<details class="abstract">
 <summary>RESULTS: - [CLICK TO EXPAND]</summary>
 <p><code>The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE</code></p>
 </details>
@@ -1086,7 +1086,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p>Thanks:</p>
 <p>A big Thanks to <a href="https://github.com/fryfrog">fryfrog</a> and <a href="https://github.com/rg9400">rg9400</a> for the suggestions.</p>
 <hr/>
-<div class="admonition help">
+<div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
 <p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
@@ -1096,7 +1096,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 9, 2023 01:02:46</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
 </small>
 </div>
 <footer class="sponsorship">
