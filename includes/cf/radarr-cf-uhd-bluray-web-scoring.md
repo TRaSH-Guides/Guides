@@ -1,4 +1,4 @@
-??? summary "HQ Release Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Release Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                                   | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
     | [{{ radarr['cf']['uhd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01) | {{ radarr['cf']['uhd-bluray-tier-01']['trash_score'] }} | {{ radarr['cf']['uhd-bluray-tier-01']['trash_id'] }} |

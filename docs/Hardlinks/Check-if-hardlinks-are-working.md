@@ -6,7 +6,7 @@ You can use 3 options to check if you got working hardlinks.
 
 *All methods require you to login to your terminal with PuTTY or similar software.*
 
-!!! attention
+!!! warning
     You can't create hard links for directories :bangbang:
 
     You can't cross file systems :bangbang:

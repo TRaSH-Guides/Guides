@@ -72,7 +72,7 @@ Has all necessary information and a little extra if you needed to rebuild.
 {Series TitleYear} - S{season:00}E{episode:00} - {absolute:000} - {Episode CleanTitle} [{Preferred Words }{Quality Full}]{[MediaInfo VideoDynamicRange]}[{MediaInfo VideoBitDepth}bit]{[MediaInfo VideoCodec]}[{Mediainfo AudioCodec} { Mediainfo AudioChannels}]{MediaInfo AudioLanguages}{-Release Group}
 ```
 
-??? summary "RESULTS:"
+??? abstract "RESULTS:"
 
     Single Episode:
 
@@ -159,7 +159,7 @@ We need to add the Anime Categories to our indexers otherwise this all won't wor
 ### First Release Profile
 
 <!-- [trash_id: 31f4dd7b08bc8a43099eed604fd8acf6] -->
-!!! important
+!!! tip
     **DO** Check mark `Include Preferred when Renaming` on this release profile.
     ![!rpa-release-sources-1](images/rpa-release-sources-1.png)
 
@@ -207,7 +207,7 @@ If you would like it to be priority then set to **100**. If you do not want unce
 
 The reason most of these are added is due to their shitty quality or just in general are not as good as other stuff that is out there. This can be tweaked as needed. Let me know if you run into any issues here. You should be able to just copy paste these in one go. If there is a reason something shouldn't be here let me know and your logic and I will be open to adjusting.
 
-!!! important
+!!! tip
 
     If you would like `dub` releases then remove the last 2 lines and do not add them.
 
@@ -250,7 +250,7 @@ Add this to your Preferred with a score of **[501]**
 
 ---
 
-!!! important
+!!! tip
     These next few are optional, but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
 
 ---
@@ -288,7 +288,7 @@ Add this to your Preferred with a score of **[5]**
 /\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\b/i
 ```
 
-!!! important
+!!! tip
     This is the end of the optional section.
 
 Add this to your Preferred with a score of **[4000]**

@@ -1,4 +1,4 @@
-??? summary "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [CLICK TO EXPAND]"
+??? abstract "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [CLICK TO EXPAND]"
 
     {! include-markdown "../../includes/cf/dv-info.md" !}
 
@@ -21,5 +21,5 @@
     | [{{ sonarr['cf']['hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost) | {{ sonarr['cf']['hdr10plus-boost']['trash_score'] }} | {{ sonarr['cf']['hdr10plus-boost']['trash_id'] }} |
 
 
-    !!! hint
+    !!! tip
         If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it), It is important to also add the [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ sonarr['cf']['dv-webdl']['trash_score'] }}

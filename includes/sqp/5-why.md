@@ -1,6 +1,6 @@
 ## Why choose this quality profile
 
-??? FAQ "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
 
     - You got a decent audio setup. (that supports all HD audio formats)
     - You got a setup that completely supports DoVi from start to end.

@@ -25,7 +25,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -49,7 +49,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
 
@@ -67,7 +67,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 

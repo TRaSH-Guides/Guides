@@ -69,7 +69,7 @@ I will only explain the so called most important paths.
 
 ![!queue](images/queue.png)
 
-!!! caution
+!!! warning
     `WriteBuffer`: If you're low on memory don't set this to high.
 
 ## LOGGING

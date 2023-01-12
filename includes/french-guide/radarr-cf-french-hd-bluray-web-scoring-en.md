@@ -1,4 +1,4 @@
-??? summary "HQ Source Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Source Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                                                               | Score                                                         | Trash ID                                                   |
     | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- |
     | [{{ radarr['cf']['french-hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-hd-bluray-tier-01) | {{ radarr['cf']['french-hd-bluray-tier-01']['trash_score'] }} | {{ radarr['cf']['french-hd-bluray-tier-01']['trash_id'] }} |

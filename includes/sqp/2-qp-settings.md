@@ -5,10 +5,10 @@
 - **Minimum Custom Format Score:** `550`
 - **Upgrade Until Custom Format Score:** `10000`
 
-??? check "example - [CLICK TO EXPAND]"
+??? success "example - [CLICK TO EXPAND]"
     ![!Quality Profile Settings](/SQP/images/2-qp-settings.png)
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.

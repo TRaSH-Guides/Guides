@@ -37,7 +37,7 @@ You don't need to add the full path under `Save Path`, it will use the root down
 
 ## Downloads do not go into the category folder
 
-!!! attention "Downloads do not go into the category folder"
+!!! warning "Downloads do not go into the category folder"
 
     When your downloads ends up in `/data/torrents/` and not in `/data/torrents/{tv|movies|music}` then you probably forgot to change `Default Torrent Management Mode:` to `Automatic`
 

@@ -2,7 +2,7 @@
 
 *aka How to setup Custom Formats (Anime)*<br><br>
 
-!!! attention
+!!! warning
     You must be running Sonarr V4 to be able to use this setup.
 
     ![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5){ .off-glb }
@@ -26,7 +26,7 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 When adding a new series make sure you set the series type to Anime
 
-??? check "example - [Click to Expand]"
+??? success "example - [Click to Expand]"
     ![!cfa-seriestype](images/cfa-seriestype.png)
 
 ### Recommended naming scheme
@@ -35,7 +35,7 @@ When adding a new series make sure you set the series type to Anime
 {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
 
-??? summary "Results: - [Click to Expand]"
+??? abstract "Results: - [Click to Expand]"
 
     Single Episode:
 

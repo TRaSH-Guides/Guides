@@ -83,7 +83,7 @@ Click on `Add` and you will get an extra option
 1. Here you enter the path that Sonarr uses to access your shows.
 1. Here you enter the path that Bazarr uses to access your shows.
 
-!!! attention
+!!! warning
 
     **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
@@ -171,7 +171,7 @@ Click on `Add` and you will get an extra option
 1. Here you enter the path that Radarr uses to access your movies.
 1. Here you enter the path that Bazarr uses to access your movies.
 
-!!! attention
+!!! warning
 
     **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
@@ -326,7 +326,7 @@ Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
 ## IMPORTANT
 
-!!! important
+!!! tip
 
     **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/)!!!**
 

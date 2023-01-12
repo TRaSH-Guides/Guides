@@ -6,7 +6,7 @@
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
-??? summary "HQ Release Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Release Groups - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                                   | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
     | [{{ radarr['cf']['remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01)           | {{ radarr['cf']['remux-tier-01']['trash_score'] }}      | {{ radarr['cf']['remux-tier-01']['trash_id'] }}      |

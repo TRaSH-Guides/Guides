@@ -1,4 +1,4 @@
-??? summary "Indésirable - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Indésirable - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                   | Score                                          | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
     | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           | {{ radarr['cf']['br-disk']['trash_score'] }}   | {{ radarr['cf']['br-disk']['trash_id'] }}   |
