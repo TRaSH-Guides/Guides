@@ -24,26 +24,23 @@ extra_css:
 
 markdown_extensions:
   - admonition
-  - attr_list
-  - footnotes
-  - pymdownx.details
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.highlight
-  - pymdownx.critic
   - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - codehilite:
-      guess_lang: true
-  - toc:
-      permalink: ""
-      toc_depth: 5
+  - pymdownx.critic
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.extra
+  - pymdownx.highlight:
+      guess_lang: true
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - toc:
+      permalink: ""
+      toc_depth: 5
 
 plugins:
   - include-markdown:
