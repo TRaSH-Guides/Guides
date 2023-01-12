@@ -7,7 +7,7 @@ This is something that can't really be answered because it depends on the use ca
 !!! danger ""
     Here I will provide some suggestions and try to explain why I recommend these settings. Adjust it to your own liking and keep in mind that it is only a suggestion. I'm not a Plex Pro in anyway :bangbang:
 
-!!! attention
+!!! warning
     Some settings are only visible for Plex Pass holders.
 
 All changes need to be done on your Plex Media Server.
@@ -53,7 +53,7 @@ The new agent settings are now managed “per library”.
 
 When a change is detected in the source location for a library’s content, the appropriate library will be scanned. This function relies on the computer’s operating system providing the “something changed” trigger. Some operating systems don’t provide this trigger and content mounted via a network will also typically not work. If your library doesn’t automatically scan, you may have to set a periodical scan or do it manually.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 ??? tip "TIP - Autoscan - [CLICK TO EXPAND]"
@@ -70,7 +70,7 @@ When a change is detected in the source location for a library’s content, the 
 
 When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 #### Include music libraries in automatic updates
@@ -85,7 +85,7 @@ I don't do music, so this choice is up to you, and I won't be covering it.
 
 Turning this on will cause your Plex Media Server to run scans on your libraries using the designated interval.
 
-!!! check ""
+!!! success ""
     **Suggested: `Disabled`**
 
     *Do you need a extra scan for your library to recognize new media?*
@@ -96,7 +96,7 @@ Turning this on will cause your Plex Media Server to run scans on your libraries
 
 With this option enabled, when an item’s file is deleted from the drive, it will be removed from the Plex library on the next scan. Disabling this option keeps the item in the library with an overlay over the item’s poster when the item is removed.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 #### Allow media deletion
@@ -105,7 +105,7 @@ With this option enabled, when an item’s file is deleted from the drive, it wi
 
 The owner of the server will be allowed to delete media files from disk.
 
-!!! check ""
+!!! success ""
     **Suggested: `Disabled`**
 
     *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)*
@@ -116,7 +116,7 @@ The owner of the server will be allowed to delete media files from disk.
 
 On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run scanner tasks at a lower priority than other tasks. This can help ensure they do not interfere with regular streaming.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
     *Makes sure it uses less resources and ensure they do not interfere with regular streaming.*
@@ -127,7 +127,7 @@ On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run
 
 This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.
 
-!!! check ""
+!!! success ""
     **Suggested: `Never`**
 
     *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
@@ -147,7 +147,7 @@ This option creates a series of preview thumbnails from a media item when it is 
 
 You can choose to have TV episodes analyzed to try and detect when the “intro” occurs during playback. When detected, apps will then offer a `Skip Intro` button, allowing you to quickly jump over the intro.
 
-!!! check ""
+!!! success ""
     **Suggested: `as a scheduled task`**
 
     *or*
@@ -160,7 +160,7 @@ You can choose to have TV episodes analyzed to try and detect when the “intro�
 
 Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.
 
-!!! check ""
+!!! success ""
     **Suggested: `as a scheduled task`**
 
     *or*
@@ -177,7 +177,7 @@ Chapter thumbnails provide images in the chapter view on supported apps. They ca
 
 Enable IPv6 support.
 
-!!! check ""
+!!! success ""
     **Suggested: `Disabled`**
 
     *If you're not sure your network 100% works with ip6 <u>don't Enable it</u>.*
@@ -188,7 +188,7 @@ Enable IPv6 support.
 
 Choose how your Plex Media Server handles secure connections.
 
-!!! check ""
+!!! success ""
     **Suggested: `Preferred`**
 
     *Accept and prefer secure connections when they’re available for a Plex app, but allow regular HTTP connections if the app doesn’t support secure connections or if one can’t be established*
@@ -199,10 +199,10 @@ Choose how your Plex Media Server handles secure connections.
 
 For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.
 
-!!! attention
+!!! warning
     If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.
 
-!!! check ""
+!!! success ""
     **Suggested: `Whatever suits your setup`**
 
 #### Strict TLS configuration
@@ -211,7 +211,7 @@ For users with multiple network cards or systems such as NAS or Docker where the
 
 If this setting is enabled, it prevents Plex Media Server from using or accepting the deprecated TLSv1.0 and v1.1 protocols, as well as legacy weak ciphers. May prevent older clients from connecting. The vast majority of users will have no reason to enable this option (and receive no benefit from doing so).
 
-!!! check ""
+!!! success ""
     **Suggested: `Disabled`**
 
 #### Enable local network discovery (GDM)
@@ -220,7 +220,7 @@ If this setting is enabled, it prevents Plex Media Server from using or acceptin
 
 Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 #### Remote streams allowed per user
@@ -229,7 +229,7 @@ Enable “G’Day Mate” discovery. This is used to allows Plex apps and server
 
 You can set the maximum number of simultaneous streams each remote user is allowed to have.
 
-!!! check ""
+!!! success ""
     **Suggested: `Whatever suits your setup`**
 
 #### LAN Networks
@@ -238,7 +238,7 @@ You can set the maximum number of simultaneous streams each remote user is allow
 
 It lets you specify which IP addresses or networks will be considered to be “local” to you.
 
-!!! check ""
+!!! success ""
     **Suggested: `Your local IP/netmasks`**
 
     *If your local devices are seen as remote devices, then this could solve your issue. (Do not include spaces or tabs.)*
@@ -249,7 +249,7 @@ It lets you specify which IP addresses or networks will be considered to be “l
 
 Allows incoming requests from this network’s WAN IP address to be treated as LAN requests in terms of bandwidth. This often occurs when DNS rebinding protection is in place and clients on the LAN cannot contact the server directly but instead have to go through the WAN IP address.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 #### Enable Relay
@@ -258,7 +258,7 @@ Allows incoming requests from this network’s WAN IP address to be treated as L
 
 The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.
 
-!!! check ""
+!!! success ""
     **Suggested: `Disabled`**
 
     *I've seen several reports where people that had this Enabled had playback issues because it seems to be limited at 2 Mbps.*
@@ -269,7 +269,7 @@ The Relay allows connections to the server through a proxy relay when the server
 
 A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.
 
-!!! check ""
+!!! success ""
     **Suggested: `Depending on your setup`**
 
     *Example: `https://plex.mycustomdomain.com:32400`*
@@ -290,7 +290,7 @@ This feature can be enabled to allow your server to send events to external serv
 
 This will influence the quality used when transcoding media.
 
-!!! check ""
+!!! success ""
     **Suggested: `Automatic`**
 
     *Most users should leave it set to Automatic. Hardware-Accelerated Streaming is not affected by this setting.*
@@ -301,7 +301,7 @@ This will influence the quality used when transcoding media.
 
 Directory to use when transcoding temporary files for streaming.
 
-!!! check ""
+!!! success ""
     **Suggested: `Depending on your setup, if possible, your RAM (disk)`**
 
     *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.*
@@ -319,7 +319,7 @@ Directory to use when transcoding temporary files for streaming.
 
 This feature allows Plex Media Server to maintain high visual fidelity of content, by applying tone mapping to convert it to SDR when transcoding HDR content.
 
-!!! check ""
+!!! success ""
     **Suggested: `Depending on your setup`**
 
     *Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.*
@@ -333,7 +333,7 @@ This feature allows Plex Media Server to maintain high visual fidelity of conten
 
 To use Hardware-Accelerated Streaming in Plex Media Server.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 #### Use hardware-accelerated video encoding
@@ -342,7 +342,7 @@ To use Hardware-Accelerated Streaming in Plex Media Server.
 
 To use Hardware-Accelerated Encoding in Plex Media Server.
 
-!!! check ""
+!!! success ""
     **Suggested: `Enabled`**
 
 ------
@@ -376,7 +376,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. The new version of the Plex Movie agent/scanner
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Plex Movie`**
 
         *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.*
@@ -385,7 +385,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Enabled`**
 
         *I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
@@ -393,7 +393,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. When scanning this library, prefer embedded tags and local files if present.
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *If enabled you could end up with weird movie naming you don't want, happens especially from releases from `RARBG`*
@@ -402,7 +402,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. Automatically create collections when there are more than the selected number of items for an available collection.
 
-    !!! check ""
+    !!! success ""
         **Suggested: `2`**
 
         *Only show collections when you have more than one item in your library*
@@ -414,7 +414,7 @@ Here you will find your libraries you've added to your Plex Media Server.
     !!! danger "ATTENTION"
         Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
@@ -422,7 +422,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 1. This deletes the preview thumbnails it generated before you disabled this option
 1. If you want to show your Collection in your library
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *When Disabled your movies will show up normally when you use library view, This doesn't mean it will disable the collection view.*
@@ -433,7 +433,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. The new version of the Plex Movie agent/scanner
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Plex TV Series`**
 
         *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.*
@@ -444,7 +444,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 1. Use season titles when available.
 1. When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Enabled`**
 
         *I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
@@ -454,7 +454,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 1. When scanning this library, prefer embedded tags and local files if present.
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *If enabled you could end up with weird movie naming you don't want, happens especially from releases from `RARBG`*
@@ -466,7 +466,7 @@ Here you will find your libraries you've added to your Plex Media Server.
     !!! danger "ATTENTION"
         Creating these images can <u>take a considerable amount of time</u>, <u>CPU resources</u>, and <u>increase the storage space used</u>. The images are stored in your Plex database so <u>be careful you don’t fill the drive :bangbang:</u>
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
@@ -474,14 +474,14 @@ Here you will find your libraries you've added to your Plex Media Server.
 1. This deletes the preview thumbnails it generated before you disabled this option
 1. If you want to show your Collection in your library
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Disabled`**
 
         *When Disabled your tv show will show up normally when you use library view, This doesn't mean it will disable the collection view.*
 
 1. Generate intro detection for items in this library when enabled in server settings.
 
-    !!! check ""
+    !!! success ""
         **Suggested: `Enabled`**
 
         *Ever watch a TV show and it starts playing that same minute and a half credits intro that you've already watched multiple times? Well, you can have your Plex Media Server analyze the TV shows to try and detect those introductions and then let you skip through them with a single click!*

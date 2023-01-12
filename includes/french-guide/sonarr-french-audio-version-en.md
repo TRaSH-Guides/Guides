@@ -1,4 +1,4 @@
-??? summary "Explanation - [CLICK TO EXPAND]"
+??? abstract "Explanation - [CLICK TO EXPAND]"
     | Acronyms                         | French Explanation                                                                  | English Explanation                                                   |
     | -------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
     | TRUEFRENCH or VFF                | Version Francophone Française (doublage réalisé en France)                          | Full French version (dubbing done in France)                          |
@@ -18,7 +18,7 @@
     !!! tip "Indexers renaming in Prowlarr"
         Some Indexers in Prowlarr can rename `MULTi` releases to `MULTi.TRUEFRENCH` or `MULTi.FRENCH`. I do not recommend using such a feature along with those Custom Formats as it can lead to false positives from the VFF or VFQ Custom Formats.
 
-??? summary "French Audio Versions - [CLICK TO EXPAND]"
+??? abstract "French Audio Versions - [CLICK TO EXPAND]"
     | Custom Format                                                                                      | Score | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------- |
     | [{{ sonarr['cf']['french-vff']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vff)       | 0     | {{ sonarr['cf']['french-vff']['trash_id'] }}    |

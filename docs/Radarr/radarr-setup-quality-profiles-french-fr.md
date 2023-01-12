@@ -27,7 +27,7 @@ Il est impératif que vous respectiez et compreniez ce qui est proposé par le g
 
     La seule modification nécessaire et **indispensable** pour que les formats personnalisés français fonctionnent est de définir le profil de langue sur `Any`.
 
-    ??? check "Exemple - [CLIQUEZ POUR AFFICHER]"
+    ??? success "Exemple - [CLIQUEZ POUR AFFICHER]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
@@ -119,13 +119,13 @@ Utilisez les paramètres suivants dans votre profil.
 
 ![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
 
-!!! attention "Assurez-vous de ne pas cocher le BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
 
 La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne trouverez pratiquement aucune release qui ne soit pas faite en 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -161,11 +161,11 @@ Utilisez les paramètres suivants dans votre profil.
 
 ![UHD Bluray + WEB](images/french-qp-uhd-bluray-webdl.png)
 
-!!! attention "Assurez-vous de ne pas cocher le BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -199,13 +199,13 @@ Utilisez les paramètres suivants dans votre profil.
 
 ![Remux + WEB 1080p](images/french-qp-remux-webdl-1080p.png)
 
-!!! attention "Assurez-vous de ne pas cocher le BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
 
 La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne trouverez pratiquement aucune release qui ne soit pas faite en 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -241,11 +241,11 @@ Utilisez les paramètres suivants dans votre profil.
 
 ![Remux + WEB 2160p](images/french-qp-remux-webdl-2160p.png)
 
-!!! attention "Assurez-vous de ne pas cocher le BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
 
     - Lorsque le WEB-2160p deviendra disponible, le média sera télécharger en WEB-2160p. (services de streaming)
     - Lorsque le REMUX-2160p sortira, il sera mis à niveau vers le REMUX-2160p.

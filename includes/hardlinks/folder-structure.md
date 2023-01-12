@@ -1,6 +1,6 @@
 ## Folder Structure
 
-!!! attention
+!!! warning
 
     It doesn't really matter which path you use for your media and appdata,
 

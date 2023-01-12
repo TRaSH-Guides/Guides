@@ -17,7 +17,7 @@ The Tokens not available in the release won't be used/shown.
 
 This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
-!!! caution "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
+!!! warning "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
 
     If you're using a lower version or don't need it replace:
 
@@ -27,7 +27,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 {{ radarr['naming']['radarr-naming']['file']['default'] }}
 ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
@@ -37,7 +37,7 @@ For Jellyfin/Emby:
 {{ radarr['naming']['radarr-naming']['file']['emby'] }}
 ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
@@ -47,7 +47,7 @@ If you do Anime
 {{ radarr['naming']['radarr-naming']['file']['anime'] }}
 ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
@@ -57,7 +57,7 @@ For Jellyfin/Emby:
 {{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
 ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 

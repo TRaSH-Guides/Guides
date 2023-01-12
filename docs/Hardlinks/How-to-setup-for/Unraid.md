@@ -12,7 +12,7 @@
 
 ## Create the main share
 
-!!! attention
+!!! warning
 
     To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of <u>**ONE**</u> share with subfolders.
 

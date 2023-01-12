@@ -1,4 +1,4 @@
-??? summary "Streaming Services - [CLICK TO EXPAND]"
+??? abstract "Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                             | Score                                      | Trash ID                                |
     | ----------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------- |
     | [{{ radarr['cf']['amzn']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#amzn)   | 0                                          | {{ radarr['cf']['amzn']['trash_id'] }}  |

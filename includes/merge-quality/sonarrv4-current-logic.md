@@ -1,6 +1,6 @@
 ### Sonarr v4 current logic
 
-??? summary "Sonarr v4 current logic - [CLICK TO EXPAND]"
+??? abstract "Sonarr v4 current logic - [CLICK TO EXPAND]"
 
     As of v4 release the logic is as follows:
 
@@ -18,7 +18,7 @@
 
     [Source: Wiki Servarr](https://wiki.servarr.com/sonarr/faq#how-are-possible-downloads-compared){:target="_blank" rel="noopener noreferrer"}
 
-    !!! attention ""
+    !!! warning ""
         REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
 
          `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use a preferred word regex of `/\b(repack|proper)\b/i`

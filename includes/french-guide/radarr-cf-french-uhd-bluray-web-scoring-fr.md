@@ -1,4 +1,4 @@
-??? summary "HQ Source Groups - [CLIQUEZ POUR AFFICHER]"
+??? abstract "HQ Source Groups - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                                         | Score                                                          | Trash ID                                                    |
     | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
     | [{{ radarr['cf']['french-uhd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-uhd-bluray-tier-01) | {{ radarr['cf']['french-uhd-bluray-tier-01']['trash_score'] }} | {{ radarr['cf']['french-uhd-bluray-tier-01']['trash_id'] }} |

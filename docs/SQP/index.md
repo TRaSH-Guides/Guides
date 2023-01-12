@@ -2,7 +2,7 @@
 
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
 
-!!! attention
+!!! warning
 
     - Anything here is for private use only and not for public use. :bangbang:
     - I expect from the users that got the link to this page to honour it. :bangbang:
@@ -24,13 +24,13 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
     **CF** = Custom Formats
 
-??? FAQ "Why don't you add this to the public guide? - [CLICK TO EXPAND]"
+??? question "Why don't you add this to the public guide? - [CLICK TO EXPAND]"
     These SQPs are advanced Quality Profiles tested and created for a specific need, and only interesting for people that are interested in a specific Quality Profile.
 
-??? FAQ "I see CFs that aren't in the main guide - [CLICK TO EXPAND]"
+??? question "I see CFs that aren't in the main guide - [CLICK TO EXPAND]"
     Some SQPs have/need specific CFs to work.
 
-??? FAQ "Some CFs in your instructions have a score of 0. Should I follow the scores from the main guide? - [CLICK TO EXPAND]"
+??? question "Some CFs in your instructions have a score of 0. Should I follow the scores from the main guide? - [CLICK TO EXPAND]"
     No, you should always follow the scores of the SQP.
 
 !!! TIP

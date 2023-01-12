@@ -30,7 +30,7 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 ![cf-import-done](images/cf-import-done.png)
 
-!!! attention "The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:"
+!!! warning "The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:"
 
 ### TRaSH Sync
 

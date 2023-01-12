@@ -4,7 +4,7 @@ When you make use of the unRaid cache drive for your `/data/torrents` share and 
 
 Using the following instructions you will be able to move the files with the use of the qBittorrent API.
 
-!!! summary "Workflow Rules - [CLICK TO EXPAND]"
+!!! abstract "Workflow Rules - [CLICK TO EXPAND]"
 
     1. Pause torrents older than last x days.
     1. Run the mover.
@@ -14,7 +14,7 @@ Using the following instructions you will be able to move the files with the use
 
 !!! Danger "If you make use of the Seed Time/Ratio settings in your Indexers settings in the Starr apps[^1].<br> Make sure you're using `Post-Import Category` in your Starr apps Download clients settings.<br>Else it could happen when the torrents get paused that they get removed by the Starr apps before the seeding goal is reached."
 
-!!! attention
+!!! warning
     The screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
     - Always follow the data described in the guide.
@@ -133,7 +133,7 @@ qbt_pass = None
 - `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
 - `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
 
-!!! attention ""
+!!! warning ""
     Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 68**:
 
     - If you do not use `Mover Tuning`, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`

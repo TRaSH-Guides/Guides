@@ -31,7 +31,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
     The only change that is needed and **mandatory** for French Custom Formats to work is to set the preferred language profile for your releases to `Any`.
 
-    ??? check "Screenshot example - [CLICK TO EXPAND]"
+    ??? success "Screenshot example - [CLICK TO EXPAND]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
@@ -124,13 +124,13 @@ Use the following main settings in your profile.
 
 ![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 The reason why WEB-DL 720p is not selected is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
@@ -164,11 +164,11 @@ Use the following main settings in your profile.
 
 ![UHD Bluray + WEB](images/french-qp-uhd-bluray-webdl.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
@@ -202,13 +202,13 @@ Use the following main settings in your profile.
 
 ![Remux + WEB 1080p](images/french-qp-remux-webdl-1080p.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
@@ -242,11 +242,11 @@ Use the following main settings in your profile.
 
 ![Remux + WEB 2160p](images/french-qp-remux-webdl-2160p.png)
 
-!!! attention "Make sure you don't check the BR-DISK."
+!!! warning "Make sure you don't check the BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? summary "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [CLICK TO EXPAND]"
 
     - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
     - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.

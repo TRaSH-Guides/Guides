@@ -5,7 +5,7 @@ With this option you can fine tune your preference.
 
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases. (Scene releases are still being downloaded, but replaced once an upgrade is found.)
 
-!!! error ""
+!!! danger ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 ??? question "FAQ - [CLICK TO EXPAND]"
@@ -100,13 +100,13 @@ You will get a popup screen that will look like this:
 
 ------
 
-!!! summary
+!!! abstract
 
     The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during an automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
     The Number between **(**brackets**)** in the following release profiles are referring to the location where you should add this regex in the release profile corresponding the screenshot above.
 
-!!! important
+!!! tip
     We're going to make use of four separate release profiles.
 
 ------
@@ -203,7 +203,7 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ??? success "example - [CLICK TO EXPAND]"
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -271,7 +271,7 @@ Add this to your `Preferred (3)` with a score of [10]
 
 ??? success "example - [CLICK TO EXPAND]"
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -303,7 +303,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 ??? success "example - [CLICK TO EXPAND]"
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -331,7 +331,7 @@ Add this to your `Preferred (3)` with a score of [-100]
 
 ### Golden rule
 
-!!! attention ""
+!!! warning ""
     :bangbang: This one is actually a must even that it's added in the optional section :bangbang:
 
 ??? question "Why the Must Not Contain entry - [CLICK TO EXPAND]"
@@ -580,7 +580,7 @@ When you've done it correctly it will look something like this.
 
 ??? success "example - [CLICK TO EXPAND]"
 
-    !!! attention
+    !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
