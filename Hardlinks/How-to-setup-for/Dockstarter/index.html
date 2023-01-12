@@ -1061,20 +1061,20 @@
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>We're going to use a mounted drive that we're going to use as storage for downloads and your media.
 In this example the mounted drive will be mounted to <code>/mnt/</code> with the following folder structure.</p>
-<div class="highlight"><pre><span></span><code>storage
-├── downloads
-│  ├── torrents
-│  │  ├── movies
-│  │  ├── music
-│  │  └── tv
-│  └── usenet
-│     ├── movies
-│     ├── music
-│     └── tv
-└── medialibrary
-    ├── movies
-    ├── music
-    └── tv
+<div class="highlight"><pre><span></span><code><span class="n">storage</span>
+<span class="err">├──</span><span class="w"> </span><span class="n">downloads</span>
+<span class="err">│</span><span class="w">  </span><span class="err">├──</span><span class="w"> </span><span class="n">torrents</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├──</span><span class="w"> </span><span class="n">movies</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">├──</span><span class="w"> </span><span class="n">music</span>
+<span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">  </span><span class="err">└──</span><span class="w"> </span><span class="n">tv</span>
+<span class="err">│</span><span class="w">  </span><span class="err">└──</span><span class="w"> </span><span class="n">usenet</span>
+<span class="err">│</span><span class="w">     </span><span class="err">├──</span><span class="w"> </span><span class="n">movies</span>
+<span class="err">│</span><span class="w">     </span><span class="err">├──</span><span class="w"> </span><span class="n">music</span>
+<span class="err">│</span><span class="w">     </span><span class="err">└──</span><span class="w"> </span><span class="n">tv</span>
+<span class="err">└──</span><span class="w"> </span><span class="n">medialibrary</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">movies</span>
+<span class="w">    </span><span class="err">├──</span><span class="w"> </span><span class="n">music</span>
+<span class="w">    </span><span class="err">└──</span><span class="w"> </span><span class="n">tv</span>
 </code></pre></div>
 <h2 id="changes-to-the-env">Changes to the .env<a class="headerlink" href="#changes-to-the-env" title="Permanent link"></a></h2>
 <p>To accomplish this we need to change first a few paths in your <code>.env</code> (Usually <code>~/.docker/compose/.env</code>)</p>
