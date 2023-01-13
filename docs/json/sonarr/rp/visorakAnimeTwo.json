@@ -178,9 +178,79 @@
   ],
   "ignored": [
     {
-      "name": "Low quality",
-      "trash_id": "12f1074e8d33d90e56ab46f2b2c675ee",
+      "name": "Low quality - EMBER, DaddySubs",
+      "trash_id": "a3810b8af452d1ea9b686aa28236b256",
       "term": "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i"
+    },
+    {
+      "name": "Low quality - BDMV, M2TS, bSSA, bVOSTFR, bAbemaTV",
+      "trash_id": "f71e08b03f10ce996263a2922741501c",
+      "term": "/(BDMV|M2TS|\\bSSA\\b|\\bVOSTFR\\b|\\bAbemaTV\\b)/i"
+    },
+    {
+      "name": "Low quality - CuaP, PnPSubs, ICEBLUE, SLAX, U3-Web",
+      "trash_id": "96cacca3bb04ce9ac45cad15b06e2253",
+      "term": "/(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i"
+    },
+    {
+      "name": "Low quality - Raws-Maji, KRP, M@nI, Kanjouteki, PuyaSubs",
+      "trash_id": "a4739d8a425cd14f8fd6c3b8fe927d3e",
+      "term": "/(Raws-Maji|\\bKRP\\b|M@nI|Kanjouteki|PuyaSubs)/i"
+    },
+    {
+      "name": "Low quality - Beatrice-raws, ohys-raws, Kawaiika-raws, neko-raws, daddy-raws",
+      "trash_id": "c14eb80e6a22c2ccef7b1c5395255fd5",
+      "term": "/\\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\\b/i"
+    },
+    {
+      "name": "Low quality - LowPower-raws, Scryous-raws",
+      "trash_id": "8ff78e62b359787bc09f9ab91aa90270",
+      "term": "/\\b(LowPower|Scryous)[ ._-]?(raws)\\b/i"
+    },
+    {
+      "name": "Low quality - NS, AREY, BDMV, BDVD, BJX, DKB, DP, TnF",
+      "trash_id": "076c295f56c0c51ea2a124c5b536338e",
+      "term": "/\\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\\b/i"
+    },
+    {
+      "name": "Low quality - Amb3r, DsunS, ExREN, $tore-Chill",
+      "trash_id": "377f7c867aeb02e40bafa9beb0ecb79b",
+      "term": "/(Amb3r|DsunS|ExREN|\\$tore-Chill)/i"
+    },
+    {
+      "name": "Low quality - Hatsuyuki, Hitoku",
+      "trash_id": "ef4a5baa93d13b3ffd839bd2b8175a03",
+      "term": "/(\\[Hatsuyuki\\]|-Hatsuyuki\\b|\\[Hitoku\\]|-Hitoki\\b)/i"
+    },
+    {
+      "name": "Low quality - Foxtrot, HollowRoxas, MGD",
+      "trash_id": "4f3058ee6dc30d6559e828ab37be9981",
+      "term": "/(\\[Foxtrot\\]|-Foxtrot\\b|HollowRoxas|\\bMGD\\b)/i"
+    },
+    {
+      "name": "Low quality - JacobSwaggedUp, KEKMASTERS, Mites",
+      "trash_id": "96411893d02c8a46c221e364b4b8bdac",
+      "term": "/(JacobSwaggedUp|KEKMASTERS|\\[Mites\\]|-Mites\\b)/i"
+    },
+    {
+      "name": "Low quality - neoHEVC, Pantsu, Pao, Plex Friendly",
+      "trash_id": "90bc8d0b83c22b291b575c793e6d24e0",
+      "term": "/(neoHEVC|Pantsu|\\[Pao\\]|-Pao\\b|Plex Friendly)/i"
+    },
+    {
+      "name": "Low quality - Rando235, RandomRemux, Reaktor, RightShiftBy2",
+      "trash_id": "7d71872f1705637722da72749be042dc",
+      "term": "/(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i"
+    },
+    {
+      "name": "Low quality - SHFS, StrayGods, UQW, Yabai_Desu_Ne",
+      "trash_id": "498994b7382c73e38907166b4bb6c0c4",
+      "term": "/(\\bSHFS\\b|StrayGods|\\bUQW\\b|Yabai_Desu_Ne)/i"
+    },
+    {
+      "name": "Low quality - YakuboEncodes, WtF-Anime",
+      "trash_id": "bcbe5f24625e520334281d7901f8f6eb",
+      "term": "/(YakuboEncodes|\\b(WtF[ ._-]?Anime)\\b)/i"
     },
     {
       "name": "Dub releases",
