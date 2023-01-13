@@ -180,9 +180,7 @@
     {
       "name": "Low quality",
       "trash_id": "12f1074e8d33d90e56ab46f2b2c675ee",
-      "term": [
-        "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i"
-      ]
+      "term": "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i"
     },
     {
       "name": "Dub releases",
