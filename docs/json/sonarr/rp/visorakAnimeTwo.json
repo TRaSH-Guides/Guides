@@ -4,7 +4,8 @@
   "community_id": "Visorak",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [{
+  "preferred": [
+    {
       "score": 4000,
       "terms": [
         "/(deanzel|\\bZR\\b|\\bCTR\\b|\\bSCY\\b|\\bMK\\b|TTGA)/i",
@@ -178,32 +179,13 @@
   "ignored": [
     {
       "name": "Low quality",
-      "trash_id": "cec8880b847dd5d31d29167ee0112b57",
-      "terms": [
-        "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i",
-        "/(BDMV|M2TS|\\bSSA\\b|\\bVOSTFR\\b|\\bAbemaTV\\b)/i",
-        "/(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i",
-        "/(Raws-Maji|\\bKRP\\b|M@nI|Kanjouteki|PuyaSubs)/i",
-        "/\\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\\b/i",
-        "/\\b(LowPower|Scryous)[ ._-]?(raws)\\b/i",
-        "/\\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\\b/i",
-        "/(Amb3r|DsunS|ExREN|\\$tore-Chill)/i",
-        "/(\\[Hatsuyuki\\]|-Hatsuyuki\\b|\\[Hitoku\\]|-Hitoki\\b)/i",
-        "/(\\[Foxtrot\\]|-Foxtrot\\b|HollowRoxas|\\bMGD\\b)/i",
-        "/(JacobSwaggedUp|KEKMASTERS|\\[Mites\\]|-Mites\\b)/i",
-        "/(neoHEVC|Pantsu|\\[Pao\\]|-Pao\\b|Plex Friendly)/i",
-        "/(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i",
-        "/(\\bSHFS\\b|StrayGods|\\bUQW\\b|Yabai_Desu_Ne)/i",
-        "/(YakuboEncodes|\\b(WtF[ ._-]?Anime)\\b)/i"
-      ]
+      "trash_id": "12f1074e8d33d90e56ab46f2b2c675ee",
+      "term": "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i,/(BDMV|M2TS|\\bSSA\\b|\\bVOSTFR\\b|\\bAbemaTV\\b)/i,/(CuaP|PnPSubs|ICEBLUE|SLAX|U3-Web)/i,/(Raws-Maji|\\bKRP\\b|M@nI|Kanjouteki|PuyaSubs)/i,/\\b(Beatrice|ohys|Kawaiika|neko|daddy)[ ._-]?(raws)\\b/i,/\\b(LowPower|Scryous)[ ._-]?(raws)\\b/i,/\\b(NS|AREY|BDMV|BDVD|BJX|DKB|DP|TnF)\\b/i,/(Amb3r|DsunS|ExREN|\\$tore-Chill)/i,/(\\[Hatsuyuki\\]|-Hatsuyuki\\b|\\[Hitoku\\]|-Hitoki\\b)/i,/(\\[Foxtrot\\]|-Foxtrot\\b|HollowRoxas|\\bMGD\\b)/i,/(JacobSwaggedUp|KEKMASTERS|\\[Mites\\]|-Mites\\b)/i,/(neoHEVC|Pantsu|\\[Pao\\]|-Pao\\b|Plex Friendly)/i,/(Rando235|RandomRemux|Reaktor|RightShiftBy2)/i,/(\\bSHFS\\b|StrayGods|\\bUQW\\b|Yabai_Desu_Ne)/i,/(YakuboEncodes|\\b(WtF[ ._-]?Anime)\\b)/i"
     },
     {
       "name": "Dub releases",
-      "trash_id": "cec8880b847dd5d31d29167ee0112b57",
-      "terms": [
-        "/((funi|eng(lish)?)_?dub|\\bdub(bed)?\\b)/i",
-        "/(Golumpa|torenter69|KamiFS|KaiDubs)/i"
-      ]
+      "trash_id": "9e41abe215f5d25b6d7545306c8abe39",
+      "term": "/((funi|eng(lish)?)_?dub|\\bdub(bed)?\\b)/i,/(Golumpa|torenter69|KamiFS|KaiDubs)/i"
     }
   ]
 }
