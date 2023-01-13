@@ -1,4 +1,4 @@
-??? summary "Audio - [CLICK TO EXPAND]"
+??? abstract "Audio - [CLICK TO EXPAND]"
 
     ![!HDR Formats Flowchart](/Radarr/images/flowchart-audio.png)
 

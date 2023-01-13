@@ -1,4 +1,4 @@
-??? summary "Optional - [CLICK TO EXPAND]"
+??? abstract "Optional - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
@@ -24,7 +24,7 @@
 
         Remuxes and Bluray have a fallback to HDR10.
 
-        !!! hint
+        !!! tip
             `[DV WEBDL]` = This custom format you need to score depending of your personal use and setup.
 
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.

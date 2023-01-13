@@ -1,4 +1,4 @@
-??? summary "Multi Audio - [CLICK TO EXPAND]"
+??? abstract "Multi Audio - [CLICK TO EXPAND]"
     | Custom Format                                                                                           | Score                                             | Trash ID                                       |
     | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
     | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_score'] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |

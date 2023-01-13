@@ -103,7 +103,7 @@ I also made 3 guides related to this one.
 
 ### TrueHD ATMOS
 
-??? faq "TrueHD ATMOS - [CLICK TO EXPAND]"
+??? question "TrueHD ATMOS - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}
 
@@ -121,7 +121,7 @@ I also made 3 guides related to this one.
 
 ### DTS X
 
-??? faq "DTS X - [CLICK TO EXPAND]"
+??? question "DTS X - [CLICK TO EXPAND]"
 
     DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”
 
@@ -137,7 +137,7 @@ I also made 3 guides related to this one.
 
 ### ATMOS (undefined)
 
-??? faq "ATMOS (undefined) - [CLICK TO EXPAND]"
+??? question "ATMOS (undefined) - [CLICK TO EXPAND]"
 
     Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
 
@@ -158,7 +158,7 @@ I also made 3 guides related to this one.
 
 <sub>DDPlus = DD+</sub>
 
-??? faq "DD+ ATMOS - [CLICK TO EXPAND]"
+??? question "DD+ ATMOS - [CLICK TO EXPAND]"
 
     Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos
 
@@ -174,7 +174,7 @@ I also made 3 guides related to this one.
 
 ### TrueHD
 
-??? faq "TrueHD - [CLICK TO EXPAND]"
+??? question "TrueHD - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}
 
@@ -192,7 +192,7 @@ I also made 3 guides related to this one.
 
 ### DTS-HD MA
 
-??? faq "DTS-HD MA - [CLICK TO EXPAND]"
+??? question "DTS-HD MA - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}
 
@@ -210,7 +210,7 @@ I also made 3 guides related to this one.
 
 ### FLAC
 
-??? faq "FLAC - [CLICK TO EXPAND]"
+??? question "FLAC - [CLICK TO EXPAND]"
 
     FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
 
@@ -226,7 +226,7 @@ I also made 3 guides related to this one.
 
 ### PCM
 
-??? faq "PCM - [CLICK TO EXPAND]"
+??? question "PCM - [CLICK TO EXPAND]"
 
     PCM is the method of encoding typically used for uncompressed digital audio
 
@@ -242,7 +242,7 @@ I also made 3 guides related to this one.
 
 ### DTS-HD HRA
 
-??? faq "DTS-HD HRA - [CLICK TO EXPAND]"
+??? question "DTS-HD HRA - [CLICK TO EXPAND]"
     Description placeholder
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -259,7 +259,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
-??? faq "DD+ - [CLICK TO EXPAND]"
+??? question "DD+ - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}
 
@@ -277,7 +277,7 @@ I also made 3 guides related to this one.
 
 ### DTS-ES
 
-??? faq "DTS-ES - [CLICK TO EXPAND]"
+??? question "DTS-ES - [CLICK TO EXPAND]"
 
     DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1, and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.
 
@@ -295,7 +295,7 @@ I also made 3 guides related to this one.
 
 <sub>DTS = Basic DTS</sub>
 
-??? faq "DTS - [CLICK TO EXPAND]"
+??? question "DTS - [CLICK TO EXPAND]"
     Description placeholder
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -310,7 +310,7 @@ I also made 3 guides related to this one.
 
 ### AAC
 
-??? faq "AAC - [CLICK TO EXPAND]"
+??? question "AAC - [CLICK TO EXPAND]"
 
     Advanced Audio Coding
 
@@ -331,7 +331,7 @@ I also made 3 guides related to this one.
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
-??? faq "DD - [CLICK TO EXPAND]"
+??? question "DD - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
 
@@ -349,7 +349,7 @@ I also made 3 guides related to this one.
 
 ### MP3
 
-??? faq "MP3 - [CLICK TO EXPAND]"
+??? question "MP3 - [CLICK TO EXPAND]"
     Description placeholder
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -364,7 +364,7 @@ I also made 3 guides related to this one.
 
 ### Opus
 
-??? faq "Opus - [CLICK TO EXPAND]"
+??? question "Opus - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
 
@@ -488,7 +488,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? faq "DV HDR10 - [CLICK TO EXPAND]"
+??? question "DV HDR10 - [CLICK TO EXPAND]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
@@ -508,7 +508,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? faq "DV - [CLICK TO EXPAND]"
+??? question "DV - [CLICK TO EXPAND]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
@@ -528,7 +528,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? faq "DV HLG - [CLICK TO EXPAND]"
+??? question "DV HLG - [CLICK TO EXPAND]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
@@ -548,7 +548,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? faq "DV SDR - [CLICK TO EXPAND]"
+??? question "DV SDR - [CLICK TO EXPAND]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
@@ -568,7 +568,7 @@ I also made 3 guides related to this one.
 
 <sub>HDR10Plus = HDR10+</sub>
 
-??? faq "HDR10+ - [CLICK TO EXPAND]"
+??? question "HDR10+ - [CLICK TO EXPAND]"
 
     **HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.**
 
@@ -590,7 +590,7 @@ I also made 3 guides related to this one.
 
 <sub>HDR10</sub>
 
-??? faq "HDR10 - [CLICK TO EXPAND]"
+??? question "HDR10 - [CLICK TO EXPAND]"
 
     **HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.**
 
@@ -614,7 +614,7 @@ I also made 3 guides related to this one.
 
 <sub>HDR</sub>
 
-??? faq "HDR - [CLICK TO EXPAND]"
+??? question "HDR - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
 
@@ -632,7 +632,7 @@ I also made 3 guides related to this one.
 
 ### HDR (undefined)
 
-??? faq "HDR (undefined) - [CLICK TO EXPAND]"
+??? question "HDR (undefined) - [CLICK TO EXPAND]"
 
     Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
 
@@ -652,7 +652,7 @@ I also made 3 guides related to this one.
 
 <sub>PQ = PQ10</sub>
 
-??? faq "PQ - [CLICK TO EXPAND]"
+??? question "PQ - [CLICK TO EXPAND]"
 
     **PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.**
 
@@ -674,7 +674,7 @@ I also made 3 guides related to this one.
 
 <sub>HLG = HLG10</sub>
 
-??? faq "HLG - [CLICK TO EXPAND]"
+??? question "HLG - [CLICK TO EXPAND]"
 
     **HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.**
 
@@ -698,7 +698,7 @@ I also made 3 guides related to this one.
 
 ### Hybrid
 
-??? faq "Hybrid - [CLICK TO EXPAND]"
+??? question "Hybrid - [CLICK TO EXPAND]"
 
     A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
 
@@ -714,7 +714,7 @@ I also made 3 guides related to this one.
 
 ### Remaster
 
-??? faq "Remaster - [CLICK TO EXPAND]"
+??? question "Remaster - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
 
@@ -737,7 +737,7 @@ I also made 3 guides related to this one.
 
 ### BR-DISK
 
-??? faq "BR-DISK - [CLICK TO EXPAND]"
+??? question "BR-DISK - [CLICK TO EXPAND]"
 
     This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 
@@ -767,7 +767,7 @@ I also made 3 guides related to this one.
 
 <sub>Low Quality Releases = LQ</sub>
 
-??? faq "LQ - [CLICK TO EXPAND]"
+??? question "LQ - [CLICK TO EXPAND]"
 
     A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
 
@@ -785,13 +785,13 @@ I also made 3 guides related to this one.
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? faq "x265 (HD) - [CLICK TO EXPAND]"
+??? question "x265 (HD) - [CLICK TO EXPAND]"
 
     This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
     In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_score'] }}`
 
-    !!! fail ""
+    !!! failure ""
         --8<-- "includes/docker/x265.md"
 
             !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
@@ -848,7 +848,7 @@ I also made 3 guides related to this one.
 
 ### x264
 
-??? faq "x264 - [CLICK TO EXPAND]"
+??? question "x264 - [CLICK TO EXPAND]"
 
     x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
@@ -866,11 +866,11 @@ I also made 3 guides related to this one.
 
 ### x265
 
-??? faq "x265 - [CLICK TO EXPAND]"
+??? question "x265 - [CLICK TO EXPAND]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
-    !!! fail ""
+    !!! failure ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -913,7 +913,7 @@ I also made 3 guides related to this one.
 
 ### Bad Dual Groups
 
-??? faq "Bad dual groups - [CLICK TO EXPAND]"
+??? question "Bad dual groups - [CLICK TO EXPAND]"
     These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
     Also they often even rename the release name in to Portuguese.
 
@@ -931,7 +931,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
+??? question "DV (WEBDL) - [CLICK TO EXPAND]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
     You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
@@ -954,7 +954,7 @@ I also made 3 guides related to this one.
 
 ### HDR10Plus Boost
 
-??? faq "HDR10+ Boost - [CLICK TO EXPAND]"
+??? question "HDR10+ Boost - [CLICK TO EXPAND]"
 
     Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
 
@@ -970,7 +970,7 @@ I also made 3 guides related to this one.
 
 ### No-RlsGroup
 
-??? faq "No-RlsGroup - [CLICK TO EXPAND]"
+??? question "No-RlsGroup - [CLICK TO EXPAND]"
 
     Some indexers strip out the release group which could result in LQ groups getting a higher score.
     For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
@@ -991,7 +991,7 @@ I also made 3 guides related to this one.
 
 ### Obfuscated
 
-??? faq "Obfuscated - [CLICK TO EXPAND]"
+??? question "Obfuscated - [CLICK TO EXPAND]"
 
     Optional (use these only if you dislike renamed releases)
 
@@ -1007,7 +1007,7 @@ I also made 3 guides related to this one.
 
 ### Retags
 
-??? faq "Retags - [CLICK TO EXPAND]"
+??? question "Retags - [CLICK TO EXPAND]"
 
     Optional (use these only if you dislike retagged releases)
 
@@ -1023,7 +1023,7 @@ I also made 3 guides related to this one.
 
 ### Scene
 
-??? faq "Scene - [CLICK TO EXPAND]"
+??? question "Scene - [CLICK TO EXPAND]"
 
     This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
 
@@ -1039,7 +1039,7 @@ I also made 3 guides related to this one.
 
 ### Season Pack
 
-??? faq "Season Pack - [CLICK TO EXPAND]"
+??? question "Season Pack - [CLICK TO EXPAND]"
 
     This Custom Format can be used depending if you prefer or not prefer a season pack
 
@@ -1064,7 +1064,7 @@ I also made 3 guides related to this one.
 
 ### x265 (no HDR/DV)
 
-??? faq "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+??? question "x265 (no HDR/DV) - [CLICK TO EXPAND]"
 
     This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
 
@@ -1088,7 +1088,7 @@ I also made 3 guides related to this one.
 
 ### AV1
 
-??? faq "AV1 - [CLICK TO EXPAND]"
+??? question "AV1 - [CLICK TO EXPAND]"
 
     - This is a new codec and you need modern devices that support it.
     - We also had reports of playback/transcoding issues.
@@ -1107,7 +1107,7 @@ I also made 3 guides related to this one.
 
 ### SDR
 
-??? faq "SDR - [CLICK TO EXPAND]"
+??? question "SDR - [CLICK TO EXPAND]"
 
     - This will help to prevent to grab UHD/4k releases without HDR Formats.
 
@@ -1123,7 +1123,7 @@ I also made 3 guides related to this one.
 
 ### DV FEL
 
-??? faq "DV (FEL) - [CLICK TO EXPAND]"
+??? question "DV (FEL) - [CLICK TO EXPAND]"
 
     - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
@@ -1143,7 +1143,7 @@ I also made 3 guides related to this one.
 
 ### Remux Tier 01
 
-??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
+??? question "Remux Tier 01 - [CLICK TO EXPAND]"
 
     - Groups doing remuxes with multiple sources(discs) mixing what's best.
 
@@ -1159,7 +1159,7 @@ I also made 3 guides related to this one.
 
 ### Remux Tier 02
 
-??? faq "Remux Tier 02 - [CLICK TO EXPAND]"
+??? question "Remux Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that only use one source.(So called one disc wonders.)
     - Groups that use an automated way.
@@ -1177,7 +1177,7 @@ I also made 3 guides related to this one.
 
 ### HD Bluray Tier 01
 
-??? faq "HD Bluray Tier 01 - [CLICK TO EXPAND]"
+??? question "HD Bluray Tier 01 - [CLICK TO EXPAND]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
 
@@ -1193,7 +1193,7 @@ I also made 3 guides related to this one.
 
 ### HD Bluray Tier 02
 
-??? faq "HD Bluray Tier 02 - [CLICK TO EXPAND]"
+??? question "HD Bluray Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
 
@@ -1207,7 +1207,7 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 01
 
-??? faq "WEB Tier 01 - [CLICK TO EXPAND]"
+??? question "WEB Tier 01 - [CLICK TO EXPAND]"
 
     - Groups that are on a certain list and active
     - Groups that are on a certain list and did a minimum of x releases
@@ -1226,7 +1226,7 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 02
 
-??? faq "WEB Tier 02 - [CLICK TO EXPAND]"
+??? question "WEB Tier 02 - [CLICK TO EXPAND]"
 
     - Groups that are on a certain list and are less or not active anymore
     - Groups that only did a few releases
@@ -1244,7 +1244,7 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 03
 
-??? faq "WEB Tier 03 - [CLICK TO EXPAND]"
+??? question "WEB Tier 03 - [CLICK TO EXPAND]"
 
     - Groups that are on a certain list and are less or not active anymore
     - Groups that hardly done any releases
@@ -1262,7 +1262,7 @@ I also made 3 guides related to this one.
 
 ### WEB Scene
 
-??? faq "WEB Scene - [CLICK TO EXPAND]"
+??? question "WEB Scene - [CLICK TO EXPAND]"
 
     One of the few scene groups that released quality releases.
 
@@ -1284,7 +1284,7 @@ I also made 3 guides related to this one.
 
 <sub>Amazon</sub>
 
-??? faq "Amazon - [CLICK TO EXPAND]"
+??? question "Amazon - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
 
@@ -1302,7 +1302,7 @@ I also made 3 guides related to this one.
 
 <sub>Apple TV+</sub>
 
-??? faq "Apple TV+ - [CLICK TO EXPAND]"
+??? question "Apple TV+ - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
 
@@ -1320,7 +1320,7 @@ I also made 3 guides related to this one.
 
 <sub>DC Universe</sub>
 
-??? faq "DC Universe - [CLICK TO EXPAND]"
+??? question "DC Universe - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
@@ -1338,7 +1338,7 @@ I also made 3 guides related to this one.
 
 <sub>Disney+</sub>
 
-??? faq "Disney+ - [CLICK TO EXPAND]"
+??? question "Disney+ - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
 
@@ -1356,7 +1356,7 @@ I also made 3 guides related to this one.
 
 <sub>HBO Max</sub>
 
-??? faq "HBO Max - [CLICK TO EXPAND]"
+??? question "HBO Max - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
 
@@ -1374,7 +1374,7 @@ I also made 3 guides related to this one.
 
 <sub>HBO</sub>
 
-??? faq "HBO - [CLICK TO EXPAND]"
+??? question "HBO - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
 
@@ -1392,7 +1392,7 @@ I also made 3 guides related to this one.
 
 <sub>Hulu</sub>
 
-??? faq "Hulu - [CLICK TO EXPAND]"
+??? question "Hulu - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
 
@@ -1410,7 +1410,7 @@ I also made 3 guides related to this one.
 
 <sub>NLZiet</sub>
 
-??? faq "NLZiet - [CLICK TO EXPAND]"
+??? question "NLZiet - [CLICK TO EXPAND]"
 
     NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.
 
@@ -1428,7 +1428,7 @@ I also made 3 guides related to this one.
 
 <sub>Netflix</sub>
 
-??? faq "Netflix - [CLICK TO EXPAND]"
+??? question "Netflix - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
 
@@ -1446,7 +1446,7 @@ I also made 3 guides related to this one.
 
 <sub>Paramount+</sub>
 
-??? faq "Paramount+ - [CLICK TO EXPAND]"
+??? question "Paramount+ - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
 
@@ -1464,7 +1464,7 @@ I also made 3 guides related to this one.
 
 <sub>Peacock TV</sub>
 
-??? faq "Peacock TV - [CLICK TO EXPAND]"
+??? question "Peacock TV - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
@@ -1482,7 +1482,7 @@ I also made 3 guides related to this one.
 
 <sub>Quibi</sub>
 
-??? faq "Quibi - [CLICK TO EXPAND]"
+??? question "Quibi - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quibi){:target="_blank" rel="noopener noreferrer"}
 
@@ -1500,7 +1500,7 @@ I also made 3 guides related to this one.
 
 <sub>SHOWTIME</sub>
 
-??? faq "SHOWTIME - [CLICK TO EXPAND]"
+??? question "SHOWTIME - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Showtime_(TV_network)){:target="_blank" rel="noopener noreferrer"}
 
@@ -1518,7 +1518,7 @@ I also made 3 guides related to this one.
 
 <sub>Videoland</sub>
 
-??? faq "Videoland - [CLICK TO EXPAND]"
+??? question "Videoland - [CLICK TO EXPAND]"
 
     Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.
 
@@ -1536,7 +1536,7 @@ I also made 3 guides related to this one.
 
 <sub>RED = Youtube Red = Youtube Premium</sub>
 
-??? faq "Youtube Red - [CLICK TO EXPAND]"
+??? question "Youtube Red - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/YouTube_Premium){:target="_blank" rel="noopener noreferrer"}
 
@@ -1554,7 +1554,7 @@ I also made 3 guides related to this one.
 
 <sub>iT = iTunes</sub>
 
-??? faq "iTunes - [CLICK TO EXPAND]"
+??? question "iTunes - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/ITunes){:target="_blank" rel="noopener noreferrer"}
 
@@ -1572,7 +1572,7 @@ I also made 3 guides related to this one.
 
 <sub>CANAL = CANAL+/MyCANAL</sub>
 
-??? faq "Canal+ - [CLICK TO EXPAND]"
+??? question "Canal+ - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Canal%2B){:target="_blank" rel="noopener noreferrer"}
 
@@ -1590,7 +1590,7 @@ I also made 3 guides related to this one.
 
 <sub>SALTO = SⱯLTO</sub>
 
-??? faq "SⱯLTO - [CLICK TO EXPAND]"
+??? question "SⱯLTO - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Salto_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
@@ -1608,7 +1608,7 @@ I also made 3 guides related to this one.
 
 <sub>RTBF = Radio-télévision belge de la Communauté française (Radio Télévision Belge Francophone)</sub>
 
-??? faq "RTBF - [CLICK TO EXPAND]"
+??? question "RTBF - [CLICK TO EXPAND]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/RTBF){:target="_blank" rel="noopener noreferrer"}
 
@@ -1628,7 +1628,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
-??? faq "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1643,7 +1643,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
-??? faq "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1658,7 +1658,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
-??? faq "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1673,7 +1673,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
-??? faq "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1688,7 +1688,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 05 (Remuxes)
 
-??? faq "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
     Groups that are consistent and do Remuxes
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1703,7 +1703,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 06 (FanSubs)
 
-??? faq "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
     FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1718,7 +1718,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 07 (P2P/Scene)
 
-??? faq "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
     Known P2P and Scene Anime groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1733,7 +1733,7 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 08 (Mini Encodes)
 
-??? faq "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
     Know groups that do mini encodes
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1748,7 +1748,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 01 (Muxers)
 
-??? faq "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1763,7 +1763,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 02 (Top FanSubs)
 
-??? faq "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1778,7 +1778,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 03 (Official Subs)
 
-??? faq "Anime Web Tier 03 (Official Subs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 03 (Official Subs) - [CLICK TO EXPAND]"
     Official sub groups that tend to be more consistent and release fast
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1793,7 +1793,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 04 (Official Subs)
 
-??? faq "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
     Official sub groups
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1808,7 +1808,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 05 (FanSubs)
 
-??? faq "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
     FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1823,7 +1823,7 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 06 (FanSubs)
 
-??? faq "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
     FanSub groups that are consistent
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1838,7 +1838,7 @@ I also made 3 guides related to this one.
 
 ### Anime Raws
 
-??? faq "Anime Raws - [CLICK TO EXPAND]"
+??? question "Anime Raws - [CLICK TO EXPAND]"
     A collection of know groups that release raws
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1853,7 +1853,7 @@ I also made 3 guides related to this one.
 
 ### Anime LQ Groups
 
-??? faq "Anime LQ Groups - [CLICK TO EXPAND]"
+??? question "Anime LQ Groups - [CLICK TO EXPAND]"
     A collection of known Low Quality groups.
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1868,7 +1868,7 @@ I also made 3 guides related to this one.
 
 ### Uncensored
 
-??? faq "Uncensored - [CLICK TO EXPAND]"
+??? question "Uncensored - [CLICK TO EXPAND]"
     This CF covers releases that are uncensored
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1883,7 +1883,7 @@ I also made 3 guides related to this one.
 
 ### v0
 
-??? faq "v0 - [CLICK TO EXPAND]"
+??? question "v0 - [CLICK TO EXPAND]"
     CF to cover releases named with v0 which we don't want
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1898,7 +1898,7 @@ I also made 3 guides related to this one.
 
 ### v1
 
-??? faq "v1 - [CLICK TO EXPAND]"
+??? question "v1 - [CLICK TO EXPAND]"
     CF to cover v1 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1913,7 +1913,7 @@ I also made 3 guides related to this one.
 
 ### v2
 
-??? faq "v2 - [CLICK TO EXPAND]"
+??? question "v2 - [CLICK TO EXPAND]"
     CF to cover v2 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1928,7 +1928,7 @@ I also made 3 guides related to this one.
 
 ### v3
 
-??? faq "v3 - [CLICK TO EXPAND]"
+??? question "v3 - [CLICK TO EXPAND]"
     CF to cover v3 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1943,7 +1943,7 @@ I also made 3 guides related to this one.
 
 ### v4
 
-??? faq "v4 - [CLICK TO EXPAND]"
+??? question "v4 - [CLICK TO EXPAND]"
     CF to cover v4 releases
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1958,7 +1958,7 @@ I also made 3 guides related to this one.
 
 ### VRV
 
-??? faq "VRV - [CLICK TO EXPAND]"
+??? question "VRV - [CLICK TO EXPAND]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1973,7 +1973,7 @@ I also made 3 guides related to this one.
 
 ### 10bit
 
-??? faq "10bit - [CLICK TO EXPAND]"
+??? question "10bit - [CLICK TO EXPAND]"
     This CF covers releases that are 10bit
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -1988,7 +1988,7 @@ I also made 3 guides related to this one.
 
 ### Anime Dual Audio
 
-??? faq "Anime Dual Audio - [CLICK TO EXPAND]"
+??? question "Anime Dual Audio - [CLICK TO EXPAND]"
     This CF covers releases that have Dual Audio
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -2003,7 +2003,7 @@ I also made 3 guides related to this one.
 
 ### Dubs Only
 
-??? faq "Dubs Only - [CLICK TO EXPAND]"
+??? question "Dubs Only - [CLICK TO EXPAND]"
     This CF covers releases that only have Dubs
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -2022,7 +2022,7 @@ I also made 3 guides related to this one.
 
 ### Multi-French
 
-??? faq "Multi-French - [CLICK TO EXPAND]"
+??? question "Multi-French - [CLICK TO EXPAND]"
 
     Recognize movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
 
@@ -2038,7 +2038,7 @@ I also made 3 guides related to this one.
 
 ### Multi-Audio
 
-??? faq "Multi-Audio - [CLICK TO EXPAND]"
+??? question "Multi-Audio - [CLICK TO EXPAND]"
 
     A slightly modified [Multi](#multi) Custom Formats that recognize VF and VO inside the name.
 
@@ -2054,7 +2054,7 @@ I also made 3 guides related to this one.
 
 ### French Audio
 
-??? faq "French Audio - [CLICK TO EXPAND]"
+??? question "French Audio - [CLICK TO EXPAND]"
 
     This will recognize every kind of French Audio.
 
@@ -2070,7 +2070,7 @@ I also made 3 guides related to this one.
 
 ### VFF
 
-??? faq "VFF - [CLICK TO EXPAND]"
+??? question "VFF - [CLICK TO EXPAND]"
 
     Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
 
@@ -2086,7 +2086,7 @@ I also made 3 guides related to this one.
 
 ### VOF
 
-??? faq "VOF - [CLICK TO EXPAND]"
+??? question "VOF - [CLICK TO EXPAND]"
 
     Original French Version.
 
@@ -2102,7 +2102,7 @@ I also made 3 guides related to this one.
 
 ### VFI
 
-??? faq "VFI - [CLICK TO EXPAND]"
+??? question "VFI - [CLICK TO EXPAND]"
 
     International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
 
@@ -2118,7 +2118,7 @@ I also made 3 guides related to this one.
 
 ### VFQ
 
-??? faq "VFQ - [CLICK TO EXPAND]"
+??? question "VFQ - [CLICK TO EXPAND]"
 
     Canadian French Version.
 
@@ -2134,7 +2134,7 @@ I also made 3 guides related to this one.
 
 ### VQ
 
-??? faq "VQ - [CLICK TO EXPAND]"
+??? question "VQ - [CLICK TO EXPAND]"
 
     Quebec Version (strong Quebec accent, ex: The Simpsons movie).
 
@@ -2150,7 +2150,7 @@ I also made 3 guides related to this one.
 
 ### VFB
 
-??? faq "VFB - [CLICK TO EXPAND]"
+??? question "VFB - [CLICK TO EXPAND]"
 
     Belgian French Version.
 
@@ -2166,7 +2166,7 @@ I also made 3 guides related to this one.
 
 ### VOSTFR
 
-??? faq "VOSTFR - [CLICK TO EXPAND]"
+??? question "VOSTFR - [CLICK TO EXPAND]"
 
     Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
 
@@ -2182,7 +2182,7 @@ I also made 3 guides related to this one.
 
 ### FanSUB
 
-??? faq "FanSUB - [CLICK TO EXPAND]"
+??? question "FanSUB - [CLICK TO EXPAND]"
 
     Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so called FastSUBs.
 
@@ -2198,7 +2198,7 @@ I also made 3 guides related to this one.
 
 ### FastSUB
 
-??? faq "FastSUB - [CLICK TO EXPAND]"
+??? question "FastSUB - [CLICK TO EXPAND]"
 
     FanSUB, but made as quickly as possible, at the expense of quality.
 
@@ -2218,7 +2218,7 @@ I also made 3 guides related to this one.
 
 ### FR Remux Tier 01
 
-??? faq "Remux Tier 01 - [CLICK TO EXPAND]"
+??? question "Remux Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups doing remuxes with multiple sources (discs) mixing what's best.
@@ -2236,7 +2236,7 @@ I also made 3 guides related to this one.
 
 ### FR HD Bluray Tier 01
 
-??? faq "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
+??? question "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that created encodes from the remuxes without micro-sizing them.
@@ -2254,7 +2254,7 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 01
 
-??? faq "FR WEB Tier 01 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that source directly from the streaming service.
@@ -2271,7 +2271,7 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 02
 
-??? faq "FR WEB Tier 02 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 02 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that source directly from the streaming service but are not so active.
@@ -2289,7 +2289,7 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 03
 
-??? faq "FR WEB Tier 03 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 03 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that haven't released much or are not well recognized. (yet)
@@ -2307,7 +2307,7 @@ I also made 3 guides related to this one.
 
 ### FR Anime Tier 01
 
-??? faq "FR Anime Tier 01 - [CLICK TO EXPAND]"
+??? question "FR Anime Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that are know to be still active and doing only Anime.
@@ -2324,7 +2324,7 @@ I also made 3 guides related to this one.
 
 ### FR Anime Tier 02
 
-??? faq "FR Anime Tier 02 - [CLICK TO EXPAND]"
+??? question "FR Anime Tier 02 - [CLICK TO EXPAND]"
 
     - WIP
     - Groups that are know to be still active and doing Anime and other type of release.
@@ -2343,7 +2343,7 @@ I also made 3 guides related to this one.
 
 ### FR Anime FanSub
 
-??? faq "FR Anime FanSub - [CLICK TO EXPAND]"
+??? question "FR Anime FanSub - [CLICK TO EXPAND]"
 
     Known good groups that are doing only FanSub.
 
@@ -2359,7 +2359,7 @@ I also made 3 guides related to this one.
 
 ### FR Scene Groups
 
-??? faq "FR Scene Groups - [CLICK TO EXPAND]"
+??? question "FR Scene Groups - [CLICK TO EXPAND]"
 
     Known French Scene groups.
 
@@ -2377,7 +2377,7 @@ I also made 3 guides related to this one.
 
 <sub>French Low Quality Releases = FR LQ</sub>
 
-??? faq "FR LQ - [CLICK TO EXPAND]"
+??? question "FR LQ - [CLICK TO EXPAND]"
 
     A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
 

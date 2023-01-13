@@ -1,4 +1,4 @@
-??? summary "French Streaming Services - [CLICK TO EXPAND]"
+??? abstract "French Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                                    | Trash ID                                       |
     | ------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
     | [{{ sonarr['cf']['french-canal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#canal) | {{ sonarr['cf']['french-canal']['trash_id'] }} |

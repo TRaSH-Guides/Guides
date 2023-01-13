@@ -1,8 +1,8 @@
-??? summary "Optional - [CLICK TO EXPAND]"
+??? abstract "Optional - [CLICK TO EXPAND]"
 
     !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
     !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
-    !!! hint "The `DV (FEL)` is recommended for SQP2 and 3"
+    !!! tip "The `DV (FEL)` is recommended for SQP2 and 3"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
@@ -32,7 +32,7 @@
 
         Remuxes and Bluray have a fallback to HDR10.
 
-        !!! hint
+        !!! tip
             `[DV WEBDL]` = This custom format you need to score depending of your personal use and setup.
 
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.

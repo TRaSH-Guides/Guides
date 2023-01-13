@@ -1,6 +1,6 @@
 #### Custom Formats and scores
 
-??? summary "Audio - [CLICK TO EXPAND]"
+??? abstract "Audio - [CLICK TO EXPAND]"
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible<br>The reason why `DTS` has a score of `0` is to make sure you don't limit your self to much."
 
     | Custom Format                                                                                                 |            Score | Trash ID                                          |
@@ -20,7 +20,7 @@
     | [{{ radarr['cf']['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         |      :warning: 0 | {{ radarr['cf']['aac']['trash_id'] }}             |
     | [{{ radarr['cf']['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           |      :warning: 0 | {{ radarr['cf']['dd']['trash_id'] }}              |
 
-??? summary "Movie Versions - [CLICK TO EXPAND]"
+??? abstract "Movie Versions - [CLICK TO EXPAND]"
 
     !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release :warning:"
 
@@ -42,7 +42,7 @@
 
         If you don't prefer `{{ radarr['cf']['imax-enhanced']['name'] }}` then don't add it or use a score of `0`
 
-??? summary "HQ Release Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Release Groups - [CLICK TO EXPAND]"
 
     !!! danger "Adding `HD Bluray Tier xx` means you get less or not streaming optimized :warning:"
     | Custom Format                                                                                                                        |                                            Score | Trash ID                                            |

@@ -1,4 +1,4 @@
-??? summary "Multi audio - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Multi audio - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                   | Score                                             | Trash ID                                       |
     | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
     | [{{ radarr['cf']['multi-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-audio)   | {{ radarr['cf']['multi-audio']['trash_score'] }}  | {{ radarr['cf']['multi-audio']['trash_id'] }}  |
