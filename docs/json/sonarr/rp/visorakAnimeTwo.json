@@ -180,8 +180,9 @@
     {
       "name": "Low quality",
       "trash_id": "12f1074e8d33d90e56ab46f2b2c675ee",
-      "terms": [
-        "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i"
+      "term": [
+        "/(\\[EMBER\\]|-EMBER\\b|DaddySubs)/i",
+        "/(BDMV|M2TS|\\bSSA\\b|\\bVOSTFR\\b|\\bAbemaTV\\b)/i"
       ]
     },
     {
