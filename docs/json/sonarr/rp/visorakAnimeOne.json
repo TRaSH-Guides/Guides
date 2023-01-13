@@ -6,18 +6,21 @@
   "required": [],
   "preferred": [{
       "score": 1000,
+      "trash_id": "631c01b64f047f31576d1a83d3ed51bc",
       "terms": [
         "/(uncut|unrated|uncensored|\\b(AT[-_. ]?X)\\b)/i"
       ]
     },
     {
       "score": 500,
+      "trash_id": "cc086f9dbb91e74e18eceada4c430f0d",
       "terms": [
         "/(multi[ ._-]?audio)/i"
       ]
     },
     {
       "score": 0,
+      "trash_id": "e9f00551013419415493fb2366c7f618",
       "terms": [
         "/(dual[ ._-]?audio)/i"
       ]
