@@ -255,7 +255,12 @@
     {
       "name": "Dub releases",
       "trash_id": "9e41abe215f5d25b6d7545306c8abe39",
-      "term": "/((funi|eng(lish)?)_?dub|\\bdub(bed)?\\b)/i,/(Golumpa|torenter69|KamiFS|KaiDubs)/i"
+      "term": "/((funi|eng(lish)?)_?dub|\\bdub(bed)?\\b)/i"
+    },
+    {
+      "name": "Dub release groups",
+      "trash_id": "8b584aa2da17542d5ad6f861792fefe0",
+      "term": "/(Golumpa|torenter69|KamiFS|KaiDubs)/i"
     }
   ]
 }
