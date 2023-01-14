@@ -1086,26 +1086,31 @@
 <p>On the host (Unraid) you will need to add <code>/mnt/user</code> before it. <strong>So <code>/mnt/user/data</code></strong></p>
 <p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things neat. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code> and <code>Music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
 <p>These subfolders you need to create your self, you can use krusader or winscp to create them or any other way you prefer.</p>
+<!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
-│  ├── movies
-│  ├── music
-│  └── tv
+│   ├── books
+│   ├── movies
+│   ├── music
+│   └── tv
 ├── usenet
-│  ├── movies
-│  ├── music
-│  └── tv
+│   ├── books
+│   ├── movies
+│   ├── music
+│   └── tv
 └── media
-    ├── movies
-    ├── music
-    └── tv
+     ├── books
+     ├── movies
+     ├── music
+     └── tv
 </code></pre></div>
+<!-- END INCLUDE -->
 <p><em>I'm using lower case on all folder on  purpose, being Linux is case sensitive.</em></p>
 <hr/>
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/bad-path-suggestion.md -->
 <div class="admonition warning">
-<p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code> and <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+<p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
 <!-- END INCLUDE -->
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
@@ -1125,12 +1130,15 @@
 <p class="admonition-title">Info</p>
 <p>The reason why we use <code>/data/torrents/</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
 </div>
+<!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
 └── torrents
-    ├── movies
-    ├── music
-    └── tv
+     ├── books
+     ├── movies
+     ├── music
+     └── tv
 </code></pre></div>
+<!-- END INCLUDE -->
 <hr/>
 <h3 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h3>
 <p>NZBGet or SABnzbd</p>
@@ -1141,12 +1149,15 @@
 <p class="admonition-title">Info</p>
 <p>The reason why we use <code>/data/usenet/</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
 </div>
+<!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
-    ├── movies
-    ├── music
-    └── tv
+     ├── books
+     ├── movies
+     ├── music
+     └── tv
 </code></pre></div>
+<!-- END INCLUDE -->
 <hr/>
 <h3 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h3>
 <p>Sonarr, Radarr and Lidarr</p>
@@ -1157,20 +1168,25 @@
 <p class="admonition-title">Info</p>
 <p>Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.</p>
 </div>
+<!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
-│  ├── movies
-│  ├── music
-│  └── tv
+│   ├── books
+│   ├── movies
+│   ├── music
+│   └── tv
 ├── usenet
-│  ├── movies
-│  ├── music
-│  └── tv
+│   ├── books
+│   ├── movies
+│   ├── music
+│   └── tv
 └── media
-    ├── movies
-    ├── music
-    └── tv
+     ├── books
+     ├── movies
+     ├── music
+     └── tv
 </code></pre></div>
+<!-- END INCLUDE -->
 <hr/>
 <h3 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h3>
 <p>Plex, Emby, JellyFin and Bazarr</p>
@@ -1181,12 +1197,15 @@
 <p class="admonition-title">Info</p>
 <p>Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
 </div>
+<!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
 └── media
-    ├── movies
-    ├── music
-    └── tv
+     ├── movies
+     ├── music
+     ├── books
+     └── tv
 </code></pre></div>
+<!-- END INCLUDE -->
 <hr/>
 <h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unraid-final-result.png"><img alt="!unraid-final-result" src="../images/unraid-final-result.png"/></a></p>
@@ -1212,7 +1231,7 @@
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2023 19:30:59</span>
 </small>
 </div>
 <footer class="sponsorship">
