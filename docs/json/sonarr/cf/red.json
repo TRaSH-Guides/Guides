@@ -1,6 +1,7 @@
 {
   "trash_id": "c30d2958827d1867c73318a5a2957eb1",
   "trash_score": "75",
+  "trash_regex": "https://regex101.com/r/GfOSFe/1",
   "name": "RED",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -10,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(red|youtube red)\\b"
+        "value": "\\b(red|youtube red)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
     },
     {

@@ -1,3 +1,15 @@
+# 2023-01-14 21:15
+**[New]**
+- None
+
+**[Updated]**
+- [Guide] `Hardlinks` docker wording updates. *PR#1085*
+- [Guide] Moved folder structure to includes. *PR#1085*
+
+**[Fixed]**
+- [Sonarr] Reverted naming scheme to be consistent with Radarr. *PR#1088* => *PR#1094*
+- [Sonarr] CF `RED` to not match episode title with the word RED. *PR#1098*
+
 # 2023-01-11 23:30
 **[New]**
 - [Starr] How to setup Language Custom Formats. *PR#1086*
@@ -39,7 +51,7 @@
 
 # 2022-12-29 19:30
 **[Starr]**
-*Recommended naming scheme* 
+*Recommended naming scheme*
 - Added: More information on the pros and cons of using `{Original Title}` vs the recommended naming scheme.  *PR#1047/49*
 
 **[Sonarr v4]**
@@ -62,7 +74,7 @@
 - NEW: CF `DV (FEL)`. *PR#1040*
 - Synced + Sorted CF between the Starr apps. *PR#1040*
 - Renamed Condition `Not Groups` to `Not RlsGrp`. *PR#1040*
- 
+
 **[Sonarr v4]**
 - NEW: Guide French Sonarr Guide. *PR#1036*
 
@@ -122,7 +134,7 @@
 - Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the the new naming scheme instead.
 
 **[Sonarr]**
-- Fixed: Emby/JF folder naming changed imdbid to tvdbid, being it doesn't support imdbid according their docs.  
+- Fixed: Emby/JF folder naming changed imdbid to tvdbid, being it doesn't support imdbid according their docs.
 
 # 2022-11-24 22:45
 **[Radarr]**
@@ -161,7 +173,7 @@
 
 **[Radarr]**
 - Updated: Matching `How to setup Custom Formats` with flowchart. #966
-- Renamed: `How to setup Custom Formats` to `Setup quality profiles`. #966 
+- Renamed: `How to setup Custom Formats` to `Setup quality profiles`. #966
 - Fixed: copy/paste error for `AV1` json. #967
 - Added: DV info to HDR Flowchart. #971
 
