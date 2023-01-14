@@ -148,21 +148,7 @@ These subfolders you need to create your self.
 
 *I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
 
-```none
-data
-├── torrents
-│  ├── movies
-│  ├── music
-│  └── tv
-├── usenet
-│  ├── movies
-│  ├── music
-│  └── tv
-└── media
-   ├── movies
-   ├── music
-   └── tv
-```
+{! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->

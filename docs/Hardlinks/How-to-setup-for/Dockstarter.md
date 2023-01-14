@@ -15,14 +15,17 @@ storage
 │  ├── torrents
 │  │  ├── movies
 │  │  ├── music
+|  |  ├── books
 │  │  └── tv
 │  └── usenet
 │     ├── movies
 │     ├── music
+|     ├── books
 │     └── tv
 └── medialibrary
     ├── movies
     ├── music
+    ├── books
     └── tv
 ```
 

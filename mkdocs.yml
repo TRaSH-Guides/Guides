@@ -43,7 +43,6 @@ markdown_extensions:
       toc_depth: 5
 
 plugins:
-  - drawio_file
   - include-markdown:
       opening_tag: "{!"
       closing_tag: "!}"
