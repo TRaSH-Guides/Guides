@@ -3,3 +3,4 @@ venv/
 mkdocs-dev-server.bat
 /docs/Notifiarr/preview.bat
 /docs/Notifiarr/Integrations/_TEMPLATE.md
+/includes/flowcharts/.$radarr-flowchart.drawio.bkp
