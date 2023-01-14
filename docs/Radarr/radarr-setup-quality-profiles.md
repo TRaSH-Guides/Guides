@@ -11,7 +11,7 @@ Here I will try to explain how to make the most use of Custom Formats to help yo
 
 I created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
 
-------
+---
 
 ## Basics
 
@@ -57,27 +57,29 @@ At the bottom in your chosen profile you will see the added Custom Formats where
     - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
     - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
-------
+---
 
 {! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
 
-------
+---
 
 ## Which Quality Profile should you choose
 
 ??? abstract "Which Quality Profile should you choose - [CLICK TO EXPAND]"
 
-    <p align="center">*Click on the image below to see how to make use of the flowchart.*
+    - Follow the flowchart, continue till you hit finished.
+    - The yellow boxes match the Quality Profile on the right side of the Guide (click on it to open the correct Quality Profile).
+    - If the Guide says **ALL** it means **ALL**. (*Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+*, else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).
 
-    <p align="center">![Flowchart](/Radarr/images/flowchart-guide-radarr.png){ width="10%" height="10%" data-title="Follow the flowchart, continue till you hit finished." data-description="- The yellow boxes match the Quality Profile on the right side of the Guide.<br>- If the Guide says <b>ALL</b> it means <b>ALL</b>. (<u>Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+</u>, else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).<br><br><b>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</b>" }
+    ---
 
-    ![Flowchart](/Radarr/images/flowchart-custom-format-radarr.png){ data-title="Follow the flowchart, continue till you hit finished." data-description="- The yellow boxes match the Quality Profile on the right side of the Guide.<br>- If the Guide says <b>ALL</b> it means <b>ALL</b>. (<u>Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+</u>,else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).<br><br><b>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</b>" }
+    ![Flowchart](../../includes/flowcharts/radarr-flowchart.drawio)
 
     If you're unsure or have questions do not hesitate to ask for help on Discord
 
     [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## TRaSH Quality Profiles
 
@@ -121,7 +123,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ### UHD Bluray + WEB
 
@@ -167,7 +169,7 @@ Use the following main settings in your profile.
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ### Remux + WEB 1080p
 
@@ -209,7 +211,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ### Remux + WEB 2160p
 
@@ -253,7 +255,7 @@ Use the following main settings in your profile.
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ### Advanced Audio
 
@@ -267,7 +269,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-------
+---
 
 ### HDR Formats
 
@@ -278,7 +280,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-------
+---
 
 ### HDR Formats + DV (WEBDL)
 
@@ -289,7 +291,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
 
-------
+---
 
 ### HDR Formats + DV (WEBDL) + HDR10+ Boost
 
@@ -301,7 +303,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
-------
+---
 
 ## FAQ & INFO
 
