@@ -8546,6 +8546,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c30d2958827d1867c73318a5a2957eb1"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/GfOSFe/1"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RED"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -8555,7 +8556,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(red|youtube red)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(red|youtube red)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
