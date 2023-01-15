@@ -397,7 +397,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[Tsundere\\]|-Tsundere\\b"
+        "value": "\\[Tsundere\\]|-Tsundere(?!-)\\b"
       }
     },
     {
