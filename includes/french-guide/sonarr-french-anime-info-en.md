@@ -14,7 +14,7 @@
         - [Dual Audio](/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring){:target="_blank" rel="noopener noreferrer"}: If you want to have Dual Audio releases (original and English audio) in case Sonarr does not find a VOSTFR or MULTi release.
         - [Uncensored Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring){:target="_blank" rel="noopener noreferrer"}: If you prefer uncensored releases.
 
-        :warning: If you add the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups) Custom Format, do not forget to add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) one with a score of `1000` to counter-balance (do not forget to addition the `101` if only want VOSTFR anime). Keep in mind that this will probably be not necessary in the future if the VOSTFR condition disappear from the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups).
+        :warning: Careful to not add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `-10000` as stated in the original guide. Otherwise, you will hinder your chance to get "French" releases.
 
     !!! info "Only want VOSTFR anime"
         For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) to `101`, and disregard all the `Multi` and French version Custom Formats.

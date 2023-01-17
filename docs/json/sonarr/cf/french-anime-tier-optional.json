@@ -14,15 +14,6 @@
       }
     },
     {
-      "name": "Tsundere-Raws",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Tsundere[ .-]?Raws)\\b"
-      }
-    },
-    {
       "name": "UwU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

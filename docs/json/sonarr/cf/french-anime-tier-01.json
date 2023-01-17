@@ -77,6 +77,15 @@
       }
     },
     {
+      "name": "Tsundere-Raws",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Tsundere[ .-]?Raws)\\b"
+      }
+    },
+    {
       "name": "TTN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
