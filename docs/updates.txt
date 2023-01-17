@@ -1,3 +1,15 @@
+# 2023-01-18 23:15
+**[New]**
+- None
+
+**[Updated]**
+- [Guide] Removed Amb3r and VOSTFR from the Anime Low Quality Groups as these are French specific Anime groups. *PR#1101*
+- [Guide] Added the standard Web Tiers to the Sonarr Anime guide with scoring that matches as some web groups do Anime releases now. *PR#1101*
+- [Guide] Added VOSTFR with the score -10000 to the Sonarr and Radarr Anime guides as this is for French Anime only *PR#1101*
+
+**[Fixed]**
+- None
+
 # 2023-01-14 21:15
 **[New]**
 - None
