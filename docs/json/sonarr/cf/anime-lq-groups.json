@@ -1103,15 +1103,6 @@
       }
     },
     {
-      "name": "VOSTFR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(VOSTFR)\\b"
-      }
-    },
-    {
       "name": "Wardevil",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
