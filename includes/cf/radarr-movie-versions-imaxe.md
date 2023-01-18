@@ -1,6 +1,6 @@
 ??? abstract "Movie Versions - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                     | Score                                               | Trash ID                                         |
-    | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ |
+    | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
+    | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
     | [{{ radarr['cf']['hybrid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hybrid)                             | {{ radarr['cf']['hybrid']['trash_score'] }}               | {{ radarr['cf']['hybrid']['trash_id'] }}               |
     | [{{ radarr['cf']['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         | {{ radarr['cf']['remaster']['trash_score'] }}             | {{ radarr['cf']['remaster']['trash_id'] }}             |
     | [{{ radarr['cf']['4k-remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster)                   | {{ radarr['cf']['4k-remaster']['trash_score'] }}          | {{ radarr['cf']['4k-remaster']['trash_id'] }}          |
