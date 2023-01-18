@@ -56,7 +56,7 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 1. Make sure you enable `SSL` so you get a secure connection to the USP.
 1. Username that you got or created with your USP.
 1. Password you got or created with your USP
-1. Use the lowest possible number of connections for max download speed +1
+1. Use the lowest possible number of connections to reach your max download speed +1 connection.
 1. How long the articles are stored on the news server.
 1. For unreliable servers, will be ignored longer in case of failures
 
