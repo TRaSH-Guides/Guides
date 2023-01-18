@@ -4,17 +4,24 @@ These are 3rd party applications to sync several sections of the guide with your
 
 - GUI (graphical user interface) [^1]
 - Radarr Custom Formats [^1] [^2]
+- Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile [^1]
+- Radarr Clear all Custom Formats [^1]
 - Radarr Scores [^1] [^2]
-- Radarr Quality Settings (File Size) [^2]
-- Sonarr Release Profile RegEx (WEB-DL) [^1] [^2]
-- Sonarr Release Profile RegEx (Anime) [^1] [^2]
-- Sonarr Quality Settings (File Size) [^2]
+- Radarr Quality Settings (File Size) [^1] [^2]
+- Radarr Naming Scheme [^1]
+- Sonarr Release Profile RegEx [^1] [^2]
+- Sonarr v4 Custom Format [^1] [^2]
+- Sonarr Clear all Release Profiles/Custom Formats [^1]
+- Sonarr Quality Settings (File Size) [^1] [^2]
+- Sonarr Naming Scheme [^1]
 
 ------
 
 ## Notifiarr
 
 It's possible with [Notifiarr](https://notifiarr.com){:target="_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="_blank" rel="noopener noreferrer"})
+
+Notifiarr is a service much bigger in scope than just custom format syncing.
 
 After setup it's fully automated and will check every X minutes for updates to the Custom Formats or Sonarr Release Profile and will update it to your Radarr or Sonarr (Multiple Client Support).
 
