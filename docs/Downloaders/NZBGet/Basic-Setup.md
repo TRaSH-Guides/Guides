@@ -35,17 +35,17 @@ I will only explain the so called most important paths.
 
 ![!newsservers](images/newsservers.png)
 
-| Name          | Description                                                                            |
-| :------------ | :------------------------------------------------------------------------------------- |
-| `Active`      | Use this news server.                                                                  |
-| `Name`        | The name is used in UI and for logging. It can be any string.                          |
-| `Level`       | Put your major download servers at level 0 and your fill servers at levels 1, 2, etc.. |
-| `Host`        | Host name of news server.                                                              |
-| `Port`        | Port to connect to.                                                                    |
-| `Password`    | Password to use for authentication.                                                    |
-| `Encryption`  | Encrypted server connection (TLS/SSL). (preferred to use this)                         |
-| `Connections` | Use the lowest possible number of connections for max download speed +1                |
-| `Retention`   | How long the articles are stored on the news server.                                   |
+| Name          | Description                                                                                   |
+| :------------ | :-------------------------------------------------------------------------------------------- |
+| `Active`      | Use this news server.                                                                         |
+| `Name`        | The name is used in UI and for logging. It can be any string.                                 |
+| `Level`       | Put your major download servers at level 0 and your fill servers at levels 1, 2, etc..        |
+| `Host`        | Host name of news server.                                                                     |
+| `Port`        | Port to connect to.                                                                           |
+| `Password`    | Password to use for authentication.                                                           |
+| `Encryption`  | Encrypted server connection (TLS/SSL). (preferred to use this)                                |
+| `Connections` | Use the lowest possible number of connections to reach your max download speed +1 connection. |
+| `Retention`   | How long the articles are stored on the news server.                                          |
 
 ## CATEGORIES
 
