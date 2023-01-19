@@ -26,7 +26,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 ### User Folders
 
 `Settings` => `Folders` => `Users Folders`
-![!Folders: User Folders](/Hardlinks/images/sabnzbd-folders.png)
+![!Folders: User Folders](images/sabnzbd-folders.png)
 
 Here you setup your download path/location.
 

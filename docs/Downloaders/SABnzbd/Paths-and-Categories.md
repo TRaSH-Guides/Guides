@@ -7,11 +7,11 @@
 
 `SABnzbd config` => `Folders`
 
-![!sabnzbd-folders](/Hardlinks/images/sabnzbd-folders.png)
+![!sabnzbd-folders](images/sabnzbd-folders.png)
 
 `SABnzbd config` => `Categories`
 
-![!sabnzbd-categories](/Hardlinks/images/sabnzbd-categories.png)
+![!sabnzbd-categories](images/sabnzbd-categories.png)
 
 You don't need to add the full path under `Folder/Path`, it will use the `Relative folders are based on:` path you see on the top of the screenshot, that you setup as `Completed Download Folder`.
 
@@ -21,6 +21,8 @@ You don't need to add the full path under `Folder/Path`, it will use the `Relati
 ---
 
 ## Paths and Categories Breakdown
+
+!!! Warning "This screenshot isn't 100% a reflection of the instructions above,<br> it's mainly to explain the breakdown and the logic."
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
 
