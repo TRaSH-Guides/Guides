@@ -1,3 +1,25 @@
+# 2023-01-19 23:30
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Guide] `Downloaders - SABnzbd` Fixed incomplete folder being nested inside of the completed folder, The incomplete folder should be adjacent to prevent issues if a script/app is processing the completed folder recursively. *PR#1110*
+
+# 2023-01-18 23:20
+**[New]**
+- None
+
+**[Updated]**
+- [Guide] `Downloaders` Improve description of lowest number of connections. *PR#1109*
+- [Guide] `TRaSH Sync` Updated what the 3rd party apps are able to sync and more. *PR#1109*
+- [Guide] `Radarr How to setup Quality Profiles` add missing streaming service. *PR#1109*
+
+**[Fixed]**
+- None
+
 # 2023-01-18 23:15
 **[New]**
 - None
