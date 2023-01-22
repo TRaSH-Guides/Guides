@@ -2310,7 +2310,7 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that are know to be still active and doing only Anime.
+    - Groups that are know to be still active and doing only Anime and which releases are comparable to SneaDex recommended.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2327,9 +2327,10 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 02 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that are know to be still active and doing Anime and other type of release.
+    - Groups that are known to be still active and doing only Anime but with few releases per year.
+    - Groups that are known to be still active and doing Anime and other type of release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups doing only anime, that have retired (or no longer exist) and may not have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2345,7 +2346,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR Anime FanSub - [CLICK TO EXPAND]"
 
-    Known good groups that are doing only FanSub.
+    Known good groups that are doing only FanSub and in good quality.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
