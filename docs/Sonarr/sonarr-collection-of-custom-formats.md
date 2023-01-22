@@ -2310,7 +2310,7 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that are know to be still active and doing only Anime and which releases are comparable to SneaDex recommended.
+    - Groups that are know to be still active and doing only Anime and which releases are comparable to SeaDex recommended.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 

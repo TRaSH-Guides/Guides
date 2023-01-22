@@ -5,6 +5,42 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "BLV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BLV)\\b"
+      }
+    },
+    {
+      "name": "D3T3R10R1TY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(D3T3R10R1TY)\\b"
+      }
+    },
+    {
+      "name": "Good Job! Alexis",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Good[ .-]?Job!?[ .-]?Alexis)\\b"
+      }
+    },
+    {
+      "name": "HANAMi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HANAMi)\\b"
+      }
+    },
+    {
       "name": "KAF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -32,30 +68,21 @@
       }
     },
     {
-      "name": "MUGiWARA",
+      "name": "RONiN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MUGiWARA)\\b"
+        "value": "\\b(RONiN)\\b"
       }
     },
     {
-      "name": "NOH3LL",
+      "name": "TTN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NOH3LL)\\b"
-      }
-    },
-    {
-      "name": "OTF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(OTF)\\b"
+        "value": "\\b(TTN)\\b"
       }
     },
     {

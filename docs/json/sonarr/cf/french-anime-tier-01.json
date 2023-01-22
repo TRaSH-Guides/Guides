@@ -5,21 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BLV",
+      "name": "Darki",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLV)\\b"
-      }
-    },
-    {
-      "name": "D3T3R10R1TY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(D3T3R10R1TY)\\b"
+        "value": "\\b(Darki)\\b"
       }
     },
     {
@@ -32,15 +23,6 @@
       }
     },
     {
-      "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HANAMi)\\b"
-      }
-    },
-    {
       "name": "NeoSG",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -50,12 +32,21 @@
       }
     },
     {
-      "name": "RONiN",
+      "name": "Punisher694",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RONiN)\\b"
+        "value": "\\b(Punisher694)\\b"
+      }
+    },
+    {
+      "name": "SR-71",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SR-71)\\b"
       }
     },
     {
@@ -83,15 +74,6 @@
       "required": false,
       "fields": {
         "value": "\\b(Tsundere[ .-]?Raws)\\b"
-      }
-    },
-    {
-      "name": "TTN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TTN)\\b"
       }
     }
   ]
