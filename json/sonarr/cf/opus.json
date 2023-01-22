@@ -1,6 +1,7 @@
 {
   "trash_id": "28f6ef16d61e2d1adfce3156ed8257e3",
   "trash_score": "250",
+  "trash_regex": "https://regex101.com/r/SsIWo3/1",
   "name": "Opus",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
@@ -9,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-          "value": "\\bOPUS(\\b|\\d)"
+          "value": "\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))"
       }
     },
     {

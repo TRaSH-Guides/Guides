@@ -4181,6 +4181,7 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"a061e2e700f81932daf888599f8a8273"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"250"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/SsIWo3/1"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Opus"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span>
@@ -4189,7 +4190,7 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bOPUS(\\b|\\d)"</span>
+<span class="w">          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -6738,7 +6739,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(SiC|Flights)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Flights)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
