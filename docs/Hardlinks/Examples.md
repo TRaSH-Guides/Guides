@@ -50,11 +50,11 @@
 
     `SABnzbd config` => `Folders`
 
-    ![sabnzbd-folders](images/sabnzbd-folders.png)
+    ![sabnzbd-folders](/Downloaders/SABnzbd/images/sabnzbd-folders.png)
 
     `SABnzbd config` => `Categories`
 
-    ![sabnzbd-categories](images/sabnzbd-categories.png)
+    ![sabnzbd-categories](/Downloaders/SABnzbd/images/sabnzbd-categories.png)
 
 ## NZBGet
 

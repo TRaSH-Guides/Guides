@@ -1,3 +1,45 @@
+# 2023-01-22 19:45
+*[New]*
+- None
+
+**[Updated]**
+- [Guide-FR] Reworded the Bazarr option for Anime.
+- [Guide- and Sonarr-FR] Synced change from Original Anime Guide to French Anime Guide (added `Tsundere-Raws` to tier 01).
+- [Starr-FR] Removed `KOGi` from French Scene.
+- [Starr-FR] added `Dropse` to `LQ` as they Retag/Rename some Full Bluray disc to Bluray encode.
+- [Starr-FR] added `GLaDOS` to `LQ` due to audio upmix or fake soundtrack and poor quality encoding.
+- [Sonarr-FR] Updated French Anime FanSub Tier.
+- [Sonarr-FR] Updated French Anime Tiers CF.
+- [Sonarr-FR] Removed the `FR Anime Tier Optional` as it is no more really needed.
+
+**[Fixed]**
+- [Sonarr-FR] Fixed misslabeled Specification for Sonarr Bluray and Remux Tiers.
+- [Sonarr-FR] Fixed score to `-10000` for `FastSub`.
+- [Starr] Prevent CF `Opus` (audio) to be matched if Opus is in the release name. (Mainly for Sonarr being the regex matching starts after Episode number, but also added it to Radarr CF to be consistent + Added: regex example).
+- [Starr] Remove RlsGrp `SiC` from CF `DV (WEBDL)` being they now also do DV only.
+
+# 2023-01-19 23:30
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Guide] `Downloaders - SABnzbd` Fixed incomplete folder being nested inside of the completed folder, The incomplete folder should be adjacent to prevent issues if a script/app is processing the completed folder recursively. *PR#1110*
+
+# 2023-01-18 23:20
+**[New]**
+- None
+
+**[Updated]**
+- [Guide] `Downloaders` Improve description of lowest number of connections. *PR#1109*
+- [Guide] `TRaSH Sync` Updated what the 3rd party apps are able to sync and more. *PR#1109*
+- [Guide] `Radarr How to setup Quality Profiles` add missing streaming service. *PR#1109*
+
+**[Fixed]**
+- None
+
 # 2023-01-18 23:15
 **[New]**
 - None

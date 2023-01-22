@@ -109,6 +109,9 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
