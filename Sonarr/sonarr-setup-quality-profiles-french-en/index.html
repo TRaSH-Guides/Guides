@@ -1444,7 +1444,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 </ul>
 <details class="warning">
 <summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
-<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -10000.</p>
 <table>
 <thead>
 <tr>
@@ -1461,7 +1461,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -1882,7 +1882,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 </ul>
 <details class="warning">
 <summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
-<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -10000.</p>
 <table>
 <thead>
 <tr>
@@ -1899,7 +1899,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -2184,15 +2184,16 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <p class="admonition-title">Original Scoring</p>
 <p>Those are the original scoring from the Anime Guide and need to be followed depending what you want to achieve. It will unsure that if a VOSTFR or MULTi releases is not found you will still have a good quality releases:</p>
 <ul>
-<li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring" rel="noopener noreferrer" target="_blank">Default Scoring</a>: Default scoring that will insure that you have good English subbed releases at least. <em>Remember that if you only want subbed releases, this should be your preferred and you should try to set up <a href="/Bazarr/Setup-Guide" rel="noopener noreferrer" target="_blank">Bazarr</a> to get VOSTFR.</em></li>
+<li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring" rel="noopener noreferrer" target="_blank">Default Scoring</a>: Default scoring that will insure that you have good English subbed releases at least.</li>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring" rel="noopener noreferrer" target="_blank">Dual Audio</a>: If you want to have Dual Audio releases (original and English audio) in case Sonarr does not find a VOSTFR or MULTi release.</li>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring" rel="noopener noreferrer" target="_blank">Uncensored Scoring</a>: If you prefer uncensored releases.</li>
 </ul>
-<p><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> If you add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a> Custom Format, do not forget to add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> one with a score of <code>1000</code> to counter-balance (do not forget to addition the <code>101</code> if only want VOSTFR anime). Keep in mind that this will probably be not necessary in the future if the VOSTFR condition disappear from the <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a>.</p>
+<p><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> Careful to not add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> Custom Format with a score of <code>-10000</code> as stated in the original guide. Otherwise, you will hinder your chance to get "French" releases.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Only want VOSTFR anime</p>
 <p>For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> to <code>101</code>, and disregard all the <code>Multi</code> and French version Custom Formats.</p>
+<p><em>(Optional) You can also try to set up <a href="/Bazarr/Setup-Guide" rel="noopener noreferrer" target="_blank">Bazarr</a> to get French Sub. This is less preferred as fewer anime subs can be found online than from normal TV shows. However, it can be still a great backup.</em></p>
 </div>
 </div>
 <!-- END INCLUDE -->
@@ -2279,7 +2280,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 </ul>
 <details class="warning">
 <summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
-<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -1000.</p>
+<p>Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to -10000.</p>
 <table>
 <thead>
 <tr>
@@ -2296,7 +2297,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -2389,11 +2390,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>(optional) <code>1100</code></td>
 <td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
 </tr>
-<tr>
-<td><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional <img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/></td>
-<td>1550</td>
-<td>180c1f36241300dc27ff42918a81e9e3</td>
-</tr>
 </tbody>
 </table>
 <div class="admonition tip">
@@ -2404,10 +2400,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <div class="admonition tip">
 <p class="admonition-title">Original French Web Tiers</p>
 <p>French Web tiers are optional and can be included or not. This is due because some of them tend to release some Dubbed anime. Only add them if you are looking for MULTi releases as their VOSTFR releases are easily trumped by either the original Anime guide or by the French Anime tiers.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title"><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional</p>
-<p>This tier should only be added to your setup if you are not using the orginal anime guide score (the Seadex anime tiers). Otherwise, you will end with double scoring on those groups.</p>
 </div>
 </details>
 <!-- END INCLUDE -->

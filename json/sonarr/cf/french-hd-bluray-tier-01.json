@@ -10,16 +10,16 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": 9
+        "value": 6
       }
     },
     {
-      "name": "Not Remux",
-      "implementation": "QualityModifierSpecification",
+      "name": "Not REMUX",
+      "implementation": "SourceSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": 5
+        "value": 7
       }
     },
     {

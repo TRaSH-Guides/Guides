@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAZETV|KOGi)\\b"
+        "value": "\\b(KAZETV)\\b"
       }
     },
     {

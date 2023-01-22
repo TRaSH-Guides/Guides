@@ -1340,7 +1340,7 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </ul>
 <details class="warning">
 <summary>Type de FanSubs - [CLIQUEZ POUR AFFICHER]</summary>
-<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -1000.</p>
+<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -10000.</p>
 <table>
 <thead>
 <tr>
@@ -1357,7 +1357,7 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -1779,7 +1779,7 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </ul>
 <details class="warning">
 <summary>Type de FanSubs - [CLIQUEZ POUR AFFICHER]</summary>
-<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -1000.</p>
+<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -10000.</p>
 <table>
 <thead>
 <tr>
@@ -1796,7 +1796,7 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -2082,14 +2082,15 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <p class="admonition-title">Original Scoring</p>
 <p>Il s'agit de la notation originale du Guide Anime et elle doit être suivie en fonction de ce que vous voulez obtenir. Ainsi vous ne trouvez pas de version VOSTFR ou MULTi, vous aurez toujours une version de bonne qualité :</p>
 <ul>
-<li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring" rel="noopener noreferrer" target="_blank">Default Scoring</a>: La configuration par défaut qui garantit que vous aurez au minimum une bonne version sous-titrée en anglais. <em>Rappelez-vous que si vous ne voulez que des versions sous-titrées, cela devrait être le choix idéal et vous devriez essayer de configurer <a href="/Bazarr/Setup-Guide" rel="noopener noreferrer" target="_blank">Bazarr</a> pour obtenir la VOSTFR.</em></li>
+<li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring" rel="noopener noreferrer" target="_blank">Default Scoring</a>: La configuration par défaut qui garantit que vous aurez au minimum une bonne version sous-titrée en anglais.</li>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring" rel="noopener noreferrer" target="_blank">Dual Audio</a>: Si vous voulez avoir des versions Dual Audio (audio original et anglais) au cas où Sonarr ne trouve pas de sortie VOSTFR ou MULTi.</li>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring" rel="noopener noreferrer" target="_blank">Uncensored Scoring</a>: Si vous préférez les versions non censurées (les Bluray sont le plus souvent non-censurées).</li>
 </ul>
-<p><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> Si vous ajoutez le format personnalisé <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a>, n'oubliez pas d'ajouter le <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> avec un score de <code>1000</code> pour contrer (n'oubliez pas d'additionner le <code>101</code> si vous voulez seulement des anime VOSTFR). Notez que cela ne sera probablement plus nécessaire à l'avenir si la condition VOSTFR disparaît du <a href="/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups">Anime LQ Groups</a>.</p>
+<p><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> Attention à ne pas ajouter le Format Personnalisé <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> avec un score de <code>-10000</code> comme indiqué dans le guide original. Sinon, vous compromettrez vos chances d'obtenir des versions "françaises".</p>
 <div class="admonition info">
 <p class="admonition-title">VOSTFR uniquement pour les anime</p>
 <p>Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de <code>101</code> pour le Format Personnalisés <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a>, et ignorer tous les Formats Personnalisés <code>Multi</code> et version française.</p>
+<p>(Optionnel) Vous pouvez également essayer de configurer <a href="/Bazarr/Setup-Guide" rel="noopener noreferrer" target="_blank">Bazarr</a> (<em>en anglais</em>) pour obtenir les sous-titres français de vos animes. Cette option est toute fois moins recommandée, car on trouve moins de sous-titres pour les animes en ligne que pour les séries habituelles. Cependant, cela peut être une alternative intéressante.</p>
 </div>
 </div>
 </div>
@@ -2177,7 +2178,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 </ul>
 <details class="warning">
 <summary>Type de FanSubs - [CLIQUEZ POUR AFFICHER]</summary>
-<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -1000.</p>
+<p>Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de -10000.</p>
 <table>
 <thead>
 <tr>
@@ -2194,7 +2195,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fastsub">FastSUB</a></td>
-<td>-1000</td>
+<td>-10000</td>
 <td>ea0bb4b6ba388992fad1092703b5ff7b</td>
 </tr>
 </tbody>
@@ -2269,7 +2270,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub">FR Anime FanSub</a></td>
-<td>1400</td>
+<td>1400 ou <code>1000</code></td>
 <td>44b6c964dad997577d793fd004a39224</td>
 </tr>
 <tr>
@@ -2287,11 +2288,6 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <td>(optionnel) <code>1100</code></td>
 <td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
 </tr>
-<tr>
-<td><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional <img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/></td>
-<td>1550</td>
-<td>180c1f36241300dc27ff42918a81e9e3</td>
-</tr>
 </tbody>
 </table>
 <div class="admonition tip">
@@ -2302,10 +2298,6 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <div class="admonition tip">
 <p class="admonition-title">Original French Web Tiers</p>
 <p>Ils sont optionnels et peuvent être inclus ou non. Cela est dû au fait que certains d'entre eux ont tendance à publier des anime doublés. Ajoutez-les uniquement si vous recherchez des sorties MULTi, car leurs sorties VOSTFR sont facilement supplantées.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title"><img alt="⚠" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/26a0.svg" title=":warning:"/> FR Anime Tier Optional</p>
-<p>Ce tier ne doit être ajouté à votre configuration que si vous n'utilisez pas le score original du Anime Guide (les tiers Seadex). Sinon, vous doublerez le score pour ces groupes.</p>
 </div>
 </details>
 <!-- END INCLUDE -->
