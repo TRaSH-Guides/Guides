@@ -77,12 +77,39 @@
       }
     },
     {
+      "name": "Owlolf",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Owlolf)\\b"
+      }
+    },
+    {
+      "name": "Pikari-Teshima",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Pikari[ .-]?Teshima)\\b"
+      }
+    },
+    {
       "name": "Team Arcedo",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(Team[ .-]?Arcedo)\\b"
+      }
+    },
+    {
+      "name": "Yarashii",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Yarashii)\\b"
       }
     }
   ]

@@ -10,11 +10,13 @@
     !!! info "Original Scoring"
         Those are the original scoring from the Anime Guide and need to be followed depending what you want to achieve. It will unsure that if a VOSTFR or MULTi releases is not found you will still have a good quality releases:
 
-        - [Default Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring){:target="_blank" rel="noopener noreferrer"}: Default scoring that will insure that you have good English subbed releases at least. *Remember that if you only want subbed releases, this should be your preferred and you should try to set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} to get VOSTFR.*
+        - [Default Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#default-scoring){:target="_blank" rel="noopener noreferrer"}: Default scoring that will insure that you have good English subbed releases at least.
         - [Dual Audio](/Sonarr/sonarr-setup-quality-profiles-anime/#dual-audio-scoring){:target="_blank" rel="noopener noreferrer"}: If you want to have Dual Audio releases (original and English audio) in case Sonarr does not find a VOSTFR or MULTi release.
         - [Uncensored Scoring](/Sonarr/sonarr-setup-quality-profiles-anime/#uncensored-scoring){:target="_blank" rel="noopener noreferrer"}: If you prefer uncensored releases.
 
-        :warning: If you add the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups) Custom Format, do not forget to add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) one with a score of `1000` to counter-balance (do not forget to addition the `101` if only want VOSTFR anime). Keep in mind that this will probably be not necessary in the future if the VOSTFR condition disappear from the [{{ sonarr['cf']['anime-lq-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-lq-groups).
+        :warning: Careful to not add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `-10000` as stated in the original guide. Otherwise, you will hinder your chance to get "French" releases.
 
     !!! info "Only want VOSTFR anime"
         For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) to `101`, and disregard all the `Multi` and French version Custom Formats.
+
+         *(Optional) You can also try to set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} to get French Sub. This is less preferred as fewer anime subs can be found online than from normal TV shows. However, it can be still a great backup.*
