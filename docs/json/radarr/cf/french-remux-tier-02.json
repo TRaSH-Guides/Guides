@@ -50,6 +50,15 @@
       }
     },
     {
+      "name": "Obi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Obi)\\b"
+      }
+    },
+    {
       "name": "PATOMiEL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

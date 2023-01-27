@@ -2253,7 +2253,9 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 01 - [CLICK TO EXPAND]"
 
+    - WiP
     - Groups doing remuxes with multiple sources (discs) mixing what's best.
+    - Groups doing remuxes with a groups from Remux Tier 01 or 02 and adding the best French Audio available.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2269,6 +2271,7 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 02 - [CLICK TO EXPAND]"
 
+    - WiP
     - Groups that use an automated way.
     - Groups active doing remuxes from a single sources (discs).
     - Groups that haven't released much or are not well recognized. (yet)
@@ -2288,7 +2291,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR UHD Bluray Tier 01 - [CLICK TO EXPAND]"
 
-    (WiP - This Custom Formats should be considered in alpha stage)
+    - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - HDR/DoVi (Depending what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
@@ -2307,7 +2310,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR UHD Bluray Tier 02 - [CLICK TO EXPAND]"
 
-    (WiP - This Custom Formats should be considered in alpha stage)
+    - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - HDR/DoVi (Depending what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
@@ -2328,6 +2331,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
 
+    - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
 
@@ -2345,6 +2349,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR HD Bluray Tier 02 - [CLICK TO EXPAND]"
 
+    - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
@@ -2363,7 +2368,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR WEB Tier 01 - [CLICK TO EXPAND]"
 
-    - placeholder
+    - WiP
     - Groups that source directly from the streaming service
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -2380,7 +2385,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR WEB Tier 02 - [CLICK TO EXPAND]"
 
-    - placeholder
+    - WiP
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
