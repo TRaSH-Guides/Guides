@@ -87,7 +87,7 @@ I also made 3 guides related to this one.
 ------
 
 | Anime Source Groups                                                         | Anime Source Groups                                                   | Anime Misc/Streaming Services | Anime Optional                        |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | -----------                   | ------------------------------------- |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | ------------------------------------- |
 | [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)                     | [Uncensored](#uncensored)             |
 | [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)                     | [10bit](#10bit)                       |
 | [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)                     | [Anime Dual Audio](#anime-dual-audio) |
