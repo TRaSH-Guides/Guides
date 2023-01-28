@@ -113,6 +113,9 @@ We then need to select and organise the qualities like below.
 {! include-markdown "../../includes/cf/sonarr-anime.md" !}
 <!-- --8<-- "includes/cf/sonarr-anime.md" -->
 
+{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
+<!-- --8<-- "includes/cf/sonarr-streaming-services-anime.md" -->
+
 The scoring that has been set is the recommended scoring, however some of the CFs are optional depending on what you prefer.
 `Anime Dual Audio`, `Uncensored` and `10bit` can be given positive scores if you want to prefer content with these attributes.
 
