@@ -1,3 +1,14 @@
+# 2023-01-28 10:15
+**[New]**
+- None
+
+**[Updated]**
+- [Starr Anime] Added RlsGrp `LYS1TH3A` to `BD tier 02` and `Web Tier 01`.
+- [Sonarr Anime] Added Anime Streaming Services.
+
+**[Fixed]**
+- None
+
 # 2023-01-22 19:45
 *[New]*
 - None
