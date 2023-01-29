@@ -1,0 +1,36 @@
+{
+  "trash_id": "1efe8da11bfd74fbbcd4d8117ddb9213",
+  "trash_score": "75",
+  "trash_regex": "https://regex101.com/r/IMS7Or/1",
+  "name": "STAN",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Stan",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

@@ -1,3 +1,16 @@
+# 2023-01-29 21:00
+**[New]**
+- [Starr] Added Streaming Service `STAN`.
+- [Guide - How to setup Quality Profiles] Added extra info to decide if you need to add the audio CF.
+
+**[Updated]**
+- [Starr] Added RlsGrp `JFF` to `LQ`.
+- [Sonarr] Added RlsGrp `PSA` to `LQ`.
+- [Hardlinks - Unraid] Added info to enable hardlinks.
+
+**[Fixed]**
+- None
+
 # 2023-01-28 10:15
 **[New]**
 - None

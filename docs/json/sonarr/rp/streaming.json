@@ -41,7 +41,8 @@
         "/\\b(it)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(nlz)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(nlz)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(stan)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     }
   ],
