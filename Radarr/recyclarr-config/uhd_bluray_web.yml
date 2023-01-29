@@ -79,6 +79,7 @@ radarr:
           - 170b1d363bd8516fbf3a3eb05d4faff6 # NF
           - c9fd353f8f5f1baf56dc601c4cb29920 # PCOK
           - e36a0ba1bc902b26ee40818a1d59b8bd # PMTP
+          - c2863d2a50c9acad1fb50e53ece60817 # STAN
         quality_profiles:
           - name: UHD Bluray + WEB
             score: 0
