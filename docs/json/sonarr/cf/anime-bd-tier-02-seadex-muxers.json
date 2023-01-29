@@ -221,6 +221,15 @@
       }
     },
     {
+      "name": "LYS1TH3A",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LYS1TH3A)\\b"
+      }
+    },
+    {
       "name": "Matsya",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
