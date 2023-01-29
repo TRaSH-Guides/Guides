@@ -1132,7 +1132,17 @@
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [CLICK TO EXPAND]</summary>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
+<div class="admonition info">
+<p class="admonition-title">Add the audio custom formats only if</p>
+<ul>
+<li>You have a audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc). <em>if you have a setup that only supports a few Audio formats or doesn't support certain audio formats (or you're using only your TV speakers) it's recommended not to add any audio custom formats, else you will limit your self to much what you're able to grab. Audio transcoding has a low impact on your server, if your server can't handle audio transcoding you might consider to choose another quality profile</em>.</li>
+<li>You have a media player (hardware devices) that can passthrough HD audio.</li>
+<li>You don't have a AppleTV (Being it can't passthrough untouched audio).</li>
+</ul>
+</div>
+<!-- END INCLUDE -->
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="/Radarr/images/flowchart-audio.png"><img alt="!Audio Flowchart" src="/Radarr/images/flowchart-audio.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1711,6 +1721,11 @@ Also they often even rename the release name in to Portuguese.</li>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#pmtp">PMTP</a></td>
 <td>0</td>
 <td>e36a0ba1bc902b26ee40818a1d59b8bd</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#stan">STAN</a></td>
+<td>0</td>
+<td>c2863d2a50c9acad1fb50e53ece60817</td>
 </tr>
 </tbody>
 </table>
