@@ -1,6 +1,8 @@
 ??? abstract "Audio - [CLICK TO EXPAND]"
 
-    ![!HDR Formats Flowchart](/Radarr/images/flowchart-audio.png)
+    {! include-markdown "../../includes/cf/audio-info.md" !}
+
+    ![!Audio Flowchart](/Radarr/images/flowchart-audio.png)
 
     | Custom Format                                                                                           | Score                                          | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
