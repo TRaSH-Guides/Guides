@@ -10,11 +10,15 @@
 
 ------
 
+## Preparation
+
+Make sure hardlinks support is enabled in your `Settings` => `Global Share Settings`.
+
+![Enable Hardlink support](images/unraid-enable-hardlinks.png)
+
 ## Create the main share
 
-!!! warning
-
-    To get Hardlinks and Atomic-Moves working with Unraid you will need to make use of <u>**ONE**</u> share with subfolders.
+!!! warning "To get Hardlinks and Atomic-Moves working with Unraid,<br>You will need to make use of <u>**ONE**</u> share with subfolders."
 
 For this example I'm using my own setup and preferred share `data`.
 
@@ -30,8 +34,7 @@ Go to your dashboard and on the top select `shares` select `add share` .
 
     Keep in mind regarding the use of the Cache drive, The mover can't move files that are in use, like  when seeding with torrents. You will need to stop/pause the torrents so the mover can move them to your Array.
 
-    !!! tip
-        If you use qBittorrent you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}
+    !!! tip "If you use qBittorrent you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}"
 
     With Usenet  you won't have any issues.
 
