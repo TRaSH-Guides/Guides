@@ -60,6 +60,7 @@ I also made 3 guides related to this one.
 |                       |                       |                                         | [Peacock TV](#pcok) |
 |                       |                       |                                         | [Quibi](#qibi)      |
 |                       |                       |                                         | [SHOWTIME](#sho)    |
+|                       |                       |                                         | [Stan](#stan)       |
 |                       |                       |                                         | [Videoland](#vdl)   |
 |                       |                       |                                         | [YouTube Red](#red) |
 |                       |                       |                                         | [iTunes](#it)       |
@@ -1529,6 +1530,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### STAN
+
+<sub>Stan</sub>
+
+??? question "STAN - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stan_(service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/stan.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

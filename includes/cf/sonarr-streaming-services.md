@@ -16,4 +16,5 @@
     | [{{ sonarr['cf']['qibi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#qibi) | {{ sonarr['cf']['qibi']['trash_score'] }} | {{ sonarr['cf']['qibi']['trash_id'] }} |
     | [{{ sonarr['cf']['red']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#red)   | {{ sonarr['cf']['red']['trash_score'] }}  | {{ sonarr['cf']['red']['trash_id'] }}  |
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)   | {{ sonarr['cf']['sho']['trash_score'] }}  | {{ sonarr['cf']['sho']['trash_id'] }}  |
+    | [{{ sonarr['cf']['stan']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#stan) | {{ sonarr['cf']['stan']['trash_score'] }} | {{ sonarr['cf']['stan']['trash_id'] }} |
     | [{{ sonarr['cf']['vdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vdl)   | {{ sonarr['cf']['vdl']['trash_score'] }}  | {{ sonarr['cf']['vdl']['trash_id'] }}  |
