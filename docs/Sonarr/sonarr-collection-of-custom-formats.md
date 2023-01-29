@@ -95,8 +95,8 @@ I also made 3 guides related to this one.
 | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)                     |                                       |
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [B-Global](#b-global)         |                                       |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [Bilibili](#bilibili)         |                                       |
-|                                                                             |                                                                       | [Crunchyroll](#cr)   |                                       |
-|                                                                             |                                                                       | [Funimation](#funi)     |                                       |
+|                                                                             |                                                                       | [Crunchyroll](#cr)            |                                       |
+|                                                                             |                                                                       | [Funimation](#funi)           |                                       |
 |                                                                             |                                                                       | [HIDIVE](#hidive)             |                                       |
 |                                                                             |                                                                       | [VRV](#vrv)                   |                                       |
 
