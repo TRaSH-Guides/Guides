@@ -34,6 +34,7 @@ sonarr:
           - 3ac5d84fce98bab1b531393e9c82f467  # QIBI
           - c30d2958827d1867c73318a5a2957eb1  # RED
           - ae58039e1319178e6be73caab5c42166  # SHO
+          - 1efe8da11bfd74fbbcd4d8117ddb9213  # STAN
           - 5d2317d99af813b6529c7ebf01c83533  # VDL
           # HQ Source Groups
           - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
