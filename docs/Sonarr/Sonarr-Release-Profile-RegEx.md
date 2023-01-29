@@ -299,7 +299,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-100]
 
 ```bash
-/(TBS|-BRiNK|MeGusta|-CHX|-XLF|-worldmkv|-GHOSTS|-VIDEOHOLE|nhanc3|Pahe\.ph|Pahe\.in|-NERO)\b/i
+/(-BRiNK|-CHX|-GHOSTS|JFF|PSA|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\b/i
 ```
 
 !!! danger "Caution"
