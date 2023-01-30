@@ -93,6 +93,15 @@
       "fields": {
         "value": "\\b(Tezcat74)\\b"
       }
+    },
+    {
+      "name": "Zapax",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Zapax)\\b"
+      }
     }
   ]
 }
