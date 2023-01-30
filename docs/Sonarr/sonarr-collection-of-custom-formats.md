@@ -1996,7 +1996,7 @@ I also made 3 guides related to this one.
 ### Bilibili
 
 ??? question "Bilibili - [CLICK TO EXPAND]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili)){:target="_blank" rel="noopener noreferrer"}
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili){:target="_blank" rel="noopener noreferrer"}
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
