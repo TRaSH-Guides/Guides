@@ -257,6 +257,15 @@
       }
     },
     {
+      "name": "JFF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(JFF)\\b"
+      }
+    },
+    {
       "name": "KiNGDOM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -272,6 +281,15 @@
       "required": false,
       "fields": {
         "value": "\\b(KIRA)\\b"
+      }
+    },
+    {
+      "name": "L0SERNIGHT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(L0SERNIGHT)\\b"
       }
     },
     {
@@ -299,15 +317,6 @@
       "required": false,
       "fields": {
         "value": "\\b(LiGaS)\\b"
-      }
-    },
-    {
-      "name": "L0SERNIGHT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(L0SERNIGHT)\\b"
       }
     },
     {

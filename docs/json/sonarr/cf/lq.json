@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bBRiNK\\b"
+        "value": "\\b(BRiNK)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bCHX\\b"
+        "value": "\\b(CHX)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bEVO\\b"
+        "value": "\\b(EVO)\\b"
       }
     },
     {
@@ -46,7 +46,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bGHOSTS\\b"
+        "value": "\\b(GHOSTS)\\b"
+      }
+    },
+    {
+      "name": "JFF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(JFF)\\b"
       }
     },
     {
@@ -64,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bNERO\\b"
+        "value": "\\b(NERO)\\b"
       }
     },
     {
@@ -73,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bnhanc3\\b"
+        "value": "\\b(nhanc3)\\b"
       }
     },
     {
@@ -86,12 +95,21 @@
       }
     },
     {
+      "name": "PSA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PSA)\\b"
+      }
+    },
+    {
       "name": "TBS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bTBS\\b"
+        "value": "\\b(TBS)\\b"
       }
     },
     {
@@ -100,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bVIDEOHOLE\\b"
+        "value": "\\b(VIDEOHOLE)\\b"
       }
     },
     {
@@ -109,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bworldmkv\\b"
+        "value": "\\b(worldmkv)\\b"
       }
     },
     {
@@ -118,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bXLF\\b"
+        "value": "\\b(XLF)\\b"
       }
     }
   ]

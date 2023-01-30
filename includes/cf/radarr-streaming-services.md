@@ -12,6 +12,7 @@
     | [{{ radarr['cf']['pathe']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pathe) | 0                                          | {{ radarr['cf']['pathe']['trash_id'] }} |
     | [{{ radarr['cf']['pcok']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcok)   | 0                                          | {{ radarr['cf']['pcok']['trash_id'] }}  |
     | [{{ radarr['cf']['pmtp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pmtp)   | 0                                          | {{ radarr['cf']['pmtp']['trash_id'] }}  |
+    | [{{ radarr['cf']['stan']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#stan)   | 0                                          | {{ radarr['cf']['stan']['trash_id'] }}  |
 
     ------
     Breakdown and Why
