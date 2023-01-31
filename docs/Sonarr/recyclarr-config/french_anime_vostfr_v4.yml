@@ -94,13 +94,13 @@ sonarr:
         quality_profiles:
           - name: FR-ANIME-VOSTFR
             score: 2
-      
+
       - trash_ids:
           - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
         quality_profiles:
           - name: FR-ANIME-VOSTFR
             score: -10000
-    
+
       # ===== MULTi Audio =====
       # Nécessaire vu qu'on ne souhaite pas de MULTis
       - trash_ids:
@@ -108,14 +108,14 @@ sonarr:
         quality_profiles:
           - name: FR-ANIME-VOSTFR
             score: -10000
-            
+
       # ===== Versions françaises =====
       - trash_ids:
           - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
         quality_profiles:
           - name: FR-ANIME-VOSTFR
             score: 101
-      
+
       # ==== Scores Optionnels ====
       # Décommenter le score associé si c'est ce que vous souhaitez
 
@@ -141,7 +141,7 @@ sonarr:
           - name: FR-ANIME-VOSTFR
             # score: -10000
 
-      # Les groupes FanSUB peuvent être notés soit 1400 (par défaut) soit 1000 
+      # Les groupes FanSUB peuvent être notés soit 1400 (par défaut) soit 1000
       # selon que vous souhaitez privilégier les sorties FanSUB ou SeaDex.
       # Ils peuvent aussi être supprimés si vous ne souhaitez pas de FanSUB.
       - trash_ids:
