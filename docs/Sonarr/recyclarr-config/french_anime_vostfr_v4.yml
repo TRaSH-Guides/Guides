@@ -33,14 +33,11 @@ sonarr:
           - 4fc15eeb8f2f9a749f918217d4234ad8  # v4
           # ===== Streaming Service =====
           - d54cd2bf1326287275b56bccedb72ee2  # ADN
-          - d660701077794679fd59e8bdf4ce3a29  # AMZN
           - 7dd31f3dee6d2ef8eeaa156e23c3857e  # B-Global
           - 4c67ff059210182b59cdd41697b8cb08  # Bilibili
           - 3e0b26604165f463f3e8e192261e7284  # CR
-          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
           - 1284d18e693de8efe0fe7d6b3e0b9170  # FUNi
           - 570b03b3145a25011bf073274a407259  # HIDIVE
-          - d34870697c9db575f17700212167be23  # NF
           - 44a8ee6403071dd7b8a3a8dd3fe8cb20  # VRV
           - e5e6405d439dcd1af90962538acd4fe0  # WKN
           # ===== Autres =====

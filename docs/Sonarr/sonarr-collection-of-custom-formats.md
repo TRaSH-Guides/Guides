@@ -82,8 +82,8 @@ I also made 3 guides related to this one.
 |                                | [Season Packs](#season-pack)        | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
-|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             | [ADN](#adn)                                   |
-|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           | [WKN](#wkn)                                   |
+|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
+|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
 
 ------
 
@@ -100,6 +100,8 @@ I also made 3 guides related to this one.
 |                                                                             |                                                                       | [Funimation](#funi)           |                                       |
 |                                                                             |                                                                       | [HIDIVE](#hidive)             |                                       |
 |                                                                             |                                                                       | [VRV](#vrv)                   |                                       |
+|                                                                             |                                                                       | [ADN](#adn)                   |                                       |
+|                                                                             |                                                                       | [WKN](#wkn)                   |                                       |
 
 ## Audio Advanced
 
@@ -2072,6 +2074,42 @@ I also made 3 guides related to this one.
 
 ------
 
+### ADN
+
+<sub>ADN = Animation Digital Network</sub>
+
+??? question "ADN - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Animation_Digital_Network){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### WKN
+
+<sub>WKN = Wakanim</sub>
+
+??? question "WKN - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Wakanim){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### 10bit
 
 ??? question "10bit - [CLICK TO EXPAND]"
@@ -2494,42 +2532,6 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### ADN
-
-<sub>ADN = Animation Digital Network</sub>
-
-??? question "ADN - [CLICK TO EXPAND]"
-
-    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Animation_Digital_Network){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### WKN
-
-<sub>WKN = Wakanim</sub>
-
-??? question "WKN - [CLICK TO EXPAND]"
-
-    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Wakanim){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [CLICK TO EXPAND]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
