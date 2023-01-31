@@ -124,7 +124,7 @@ sonarr:
 
       # Si vous ne voulez pas non-plus de FanSUB.
       - trash_ids:
-          - 84f0acbda9c0c9de783894fb66df25aa # FanSUB
+          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
             # score: -10000
