@@ -33,7 +33,7 @@ radarr:
           - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
           - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
           # Optional
-          # Uncomment any of the following optional custom formats you want to be included
+          # Uncomment any of the following optional custom formats if you want them to be added to the quality profile
           # - b6832f586342ef70d9c128d40c07b872 # Bad Dual Groups
           # - 90cedc1fea7ea5d11298bebd3d1d3223 # EVO (no WEBDL)
           # - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
