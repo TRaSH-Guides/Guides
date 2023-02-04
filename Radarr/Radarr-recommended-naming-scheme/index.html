@@ -1014,6 +1014,9 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <p class="admonition-title">Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming.</p>
 <p>If you're using a lower version or don't need it replace:</p>
 <p><code>{edition-{Edition Tags}}</code> with <code>{Edition Tags}</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Only use <code>{edition-{Edition Tags}}</code> if you are prepared to have movies separated by edition<br/>when using a merged Plex library - e.g., you keep both 1080p and 2160p versions of one movie.<br/><br/>For example if you have the <code>Directors Cut</code> and the <code>Extended Cut</code> for one movie, those will show up as two separate movies in your library.<br/><br/>Note that not using <code>{edition-{Edition Tags}}</code> will prevent Plex from recognizing the edition.</p>
+</div>
 </div>
 <div class="highlight"><pre><span></span><code><span class="o">{</span>Movie<span class="w"> </span>CleanTitle<span class="o">}</span><span class="w"> </span><span class="o">{(</span>Release<span class="w"> </span>Year<span class="o">)}</span><span class="w"> </span><span class="o">{</span>imdb-<span class="o">{</span>ImdbId<span class="o">}}</span><span class="w"> </span><span class="o">{</span>edition-<span class="o">{</span>Edition<span class="w"> </span>Tags<span class="o">}}</span><span class="w"> </span><span class="o">{[</span>Custom<span class="w"> </span>Formats<span class="o">]}{[</span>Quality<span class="w"> </span>Full<span class="o">]}{[</span>MediaInfo<span class="w"> </span>3D<span class="o">]}{[</span>MediaInfo<span class="w"> </span>VideoDynamicRangeType<span class="o">]}{[</span>Mediainfo<span class="w"> </span>AudioCodec<span class="o">}{</span><span class="w"> </span>Mediainfo<span class="w"> </span>AudioChannels<span class="o">}][{</span>Mediainfo<span class="w"> </span>VideoCodec<span class="o">}]{</span>-Release<span class="w"> </span>Group<span class="o">}</span>
 </code></pre></div>
@@ -1102,7 +1105,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 12, 2023 21:51:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 4, 2023 19:58:48</span>
 </small>
 </div>
 <footer class="sponsorship">
