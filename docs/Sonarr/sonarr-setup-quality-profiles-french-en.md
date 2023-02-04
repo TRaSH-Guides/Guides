@@ -170,7 +170,9 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
+
+{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-en.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
 
@@ -196,7 +198,7 @@ A FAQ regarding most of the questions you could have is provided by TRaSH: [FAQ 
 
 - A big thanks to all the people that helped me to test those profiles and formats (and continue to do so).
 - A special one to MySuperChef, PrL and KoUiGnAmAnN for their time and explanations.
-- A special one to TheFrenchNaruto and Maxence which provided all of the Anime information.
+- A special one to SeiyaGame, TheFrenchNaruto and Maxence which provided all of the Anime information.
 - A special one to Piou and Wikoul who are potentially both now in asylums due to the amount of testing.
 - [TRaSH](https://trash-guides.info/), for granting me a small space on his guide for this, his knowledge, and his friendliness.
 

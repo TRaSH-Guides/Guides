@@ -1,9 +1,9 @@
 ??? abstract "Services de streaming en français - [CLIQUEZ POUR AFFICHER]"
-    | Formats Personnalisés                                                                            | Trash ID                                       |
-    | ------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-    | [{{ sonarr['cf']['french-canal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#canal) | {{ sonarr['cf']['french-canal']['trash_id'] }} |
-    | [{{ sonarr['cf']['french-salto']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#salto) | {{ sonarr['cf']['french-salto']['trash_id'] }} |
-    | [{{ sonarr['cf']['french-rtbf']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#rtbf)   | {{ sonarr['cf']['french-rtbf']['trash_id'] }}  |
+    | Formats Personnalisés                                                                                    | Trash ID                                           |
+    | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+    | [{{ sonarr['cf']['french-canalplus']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#canalplus) | {{ sonarr['cf']['french-canalplus']['trash_id'] }} |
+    | [{{ sonarr['cf']['french-salto']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#salto)         | {{ sonarr['cf']['french-salto']['trash_id'] }}     |
+    | [{{ sonarr['cf']['french-rtbf']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#rtbf)           | {{ sonarr['cf']['french-rtbf']['trash_id'] }}      |
 
     ??? info "Info - [CLICK TO EXPAND]"
 
