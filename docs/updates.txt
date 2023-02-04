@@ -1,3 +1,21 @@
+# 2023-02-04 21:15
+**[New]**
+- [Guide- and Sonarr-FR] Added `ADN` and `Wakanim` streaming services to the French Anime section.
+- [Sonarr-FR] Added Recyclarr French configs for both Web and Anime shows (both MULTi and VOSTFR configs).
+
+**[Updated]**
+- [Guide-FR] Added Seiya to the Anime Acknowledgements as he is the one behind the most recents changes.
+- [Guide-FR] Updated the French Anime section to include the streaming services.
+- [Radarr-FR] Added `Tezcat74` to `FR Remux Tier 01`.
+- [Radarr-FR] Moved `Zapax` to `FR Remux Tier 01`.
+- [Radarr-FR] Moved `Obi` to `FR Remux Tier 02`.
+- [Sonarr-FR] Updated `Good Job! Alexis` to include its other names.
+- [Radarr] Added `MT` to the `LQ` CF because it is just a shortened name of `MTeam`.
+- [Radarr - Naming Scheme] Make people aware of consequences when using the new edition naming format (`{edition-{Edition Tags}}`).
+
+**[Fixed]**
+- [Guide-Anime] Fixed the double ")" for BiliBili.
+
 # 2023-01-30 18:30
 **[New]**
 - None
