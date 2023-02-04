@@ -352,7 +352,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MTeam)\\b"
+        "value": "\\b(MTeam|MT)\\b"
       }
     },
     {
