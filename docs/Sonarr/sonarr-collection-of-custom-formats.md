@@ -45,28 +45,28 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services  |
-| --------------------- | --------------------- | --------------------------------------- | ------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)     |
-| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)  |
-|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu) |
-|                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)    |
-|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)    |
-|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)         |
-|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)       |
-|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)      |
-|                       |                       |                                         | [Netflix](#nf)      |
-|                       |                       |                                         | [Paramount+](#pmtp) |
-|                       |                       |                                         | [Peacock TV](#pcok) |
-|                       |                       |                                         | [Quibi](#qibi)      |
-|                       |                       |                                         | [SHOWTIME](#sho)    |
-|                       |                       |                                         | [Stan](#stan)       |
-|                       |                       |                                         | [Videoland](#vdl)   |
-|                       |                       |                                         | [YouTube Red](#red) |
-|                       |                       |                                         | [iTunes](#it)       |
-|                       |                       |                                         | [CANAL+](#canal)    |
-|                       |                       |                                         | [SALTO](#salto)     |
-|                       |                       |                                         | [RTBF](#rtbf)       |
+| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services   |
+| --------------------- | --------------------- | --------------------------------------- | -------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)      |
+| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)   |
+|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu)  |
+|                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)     |
+|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)     |
+|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)          |
+|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)        |
+|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)       |
+|                       |                       |                                         | [Netflix](#nf)       |
+|                       |                       |                                         | [Paramount+](#pmtp)  |
+|                       |                       |                                         | [Peacock TV](#pcok)  |
+|                       |                       |                                         | [Quibi](#qibi)       |
+|                       |                       |                                         | [SHOWTIME](#sho)     |
+|                       |                       |                                         | [Stan](#stan)        |
+|                       |                       |                                         | [Videoland](#vdl)    |
+|                       |                       |                                         | [YouTube Red](#red)  |
+|                       |                       |                                         | [iTunes](#it)        |
+|                       |                       |                                         | [CANAL+](#canalplus) |
+|                       |                       |                                         | [SALTO](#salto)      |
+|                       |                       |                                         | [RTBF](#rtbf)        |
 
 ------
 
@@ -1592,9 +1592,9 @@ I also made 3 guides related to this one.
 
 ------
 
-### CANAL
+### CANALPlus
 
-<sub>CANAL = CANAL+/MyCANAL</sub>
+<sub>CANALPlus = CANAL+/MyCANAL</sub>
 
 ??? question "Canal+ - [CLICK TO EXPAND]"
 
@@ -1603,7 +1603,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-canal.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-canalplus.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
