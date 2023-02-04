@@ -1,0 +1,97 @@
+# Ce fichier propose un example de configuration pour le logiciel "recyclarr" :
+# https://recyclarr.dev/wiki/
+# https://github.com/recyclarr/recyclarr
+
+# Cet exemple est pour Sonarr et le profil "WEB 1080p VOSTFR" present dans le guide
+# https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#webdl-1080p
+sonarr:
+  french_sonarr_web_1080p:
+    # L'URL de base ainsi que la clé API de votre instance Sonarr
+    base_url: [sonarr_url_goes_here]
+    api_key: [api_key_goes_here]
+
+    quality_definition:
+      type: series
+
+    # La liste de Formats Personnalisés à synchroniser avec Sonarr.
+    custom_formats:
+      - trash_ids:
+          # ===== Indésirables =====
+          - 85c61753df5da1fb2aab6f2a47426b09  # BR-DISK
+          - 3ba797e5dc13af4b8d9bb25e83d90de2  # FR LQ
+          - 9c11cd3f07101cdba90a2d81cf0e56b4  # LQ
+          - 47435ece6b99a0b477caf360e79ba0bb  # x265 (HD)
+          - ea0bb4b6ba388992fad1092703b5ff7b  # FastSUB
+          # ===== Misc =====
+          - ec8fa7296b64e8cd390a1600981f3923  # Repack/Proper
+          - eb3d5cc0a2be0db205fb823640db6a3c  # Repack2
+          - 44e7c4de10ae50265753082e5dc76047  # Repack3
+          # ===== Services de Streaming =====
+          - d660701077794679fd59e8bdf4ce3a29   # AMZN
+          - f67c9ca88f463a48346062e8ad07713f   # ATVP
+          - 36b72f59f4ea20aad9316f475f2d9fbb   # DCU
+          - 89358767a60cc28783cdc3d0be9388a4   # DSNP
+          - 7a235133c87f7da4c8cccceca7e3c7a6   # HBO
+          - a880d6abc21e7c16884f3ae393f84179   # HMAX
+          - f6cce30f1733d5c8194222a7507909bb   # HULU
+          - 0ac24a2a68a9700bcb7eeca8e5cd644c   # iT
+          - d34870697c9db575f17700212167be23   # NF
+          - b2b980877494b560443631eb1f473867   # NLZ
+          - 1656adc6d7bb2c8cca6acfb6592db421   # PCOK
+          - c67a75ae4a1715f2bb4d492755ba4195   # PMTP
+          - 3ac5d84fce98bab1b531393e9c82f467   # QIBI
+          - c30d2958827d1867c73318a5a2957eb1   # RED
+          - ae58039e1319178e6be73caab5c42166   # SHO
+          - 1efe8da11bfd74fbbcd4d8117ddb9213   # STAN
+          - 5d2317d99af813b6529c7ebf01c83533   # VDL
+          # Ceux-ci sont optionnels, car les services de streaming francophones sont rarement indiqués sur les releases et les Formats Personnalisés ne possèdent pas de score. Vous pouvez les supprimer sans craintes.
+          - f27d46a831e6b16fa3fee2c4e5d10984  # Canal+
+          - 0455d6519a550dbf648c97b56e7231d2  # SALTO
+          - b0d6195c23ae254932da00512db7e8a8  # RTBF
+          # ===== HQ Source Groups =====
+          - ddb8eaa9c85a549c50034d280539d54d  # FR WEB Tier 01
+          - a4c51febd4d8b2a0db10a3c974f21d92  # FR WEB Tier 02
+          - dbfc0a4b5cb4cbd693311c4482ae9683  # FR WEB Tier 03
+          # Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française
+          - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
+          # Les tiers suivant sont les tiers originaux du guide (groupes anglophones)
+          - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
+          - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
+          - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02
+          - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-1080p
+            reset_unmatched_scores: true
+
+      - trash_ids:
+          - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-1080p
+            score: -10000
+
+      # ===== MULTi Audio =====
+      # Nécessaire vu qu'on ne souhaite pas de MULTi
+      - trash_ids:
+          - 2f6e84efc47246ec9071e311e71c4953  # Multi-Audio
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-1080p
+            score: -10000
+
+      # ===== Versions françaises =====
+      # Seul le VOSTFR est présent et possède un score de '1000' car on souhaite obtenir du VOSTFR et non du MULTi/DUAL audio.
+      # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#type-de-versions-francaises
+      - trash_ids:
+          - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-1080p
+            score: 1000
+
+      # ==== Scores Optionnels ====
+      # Décommenter le score associé si c'est ce que vous souhaitez
+
+      # Si vous ne voulez pas non-plus de FanSUB.
+      - trash_ids:
+          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-1080p
+            # score: -10000

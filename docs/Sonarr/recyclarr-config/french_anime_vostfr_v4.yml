@@ -1,0 +1,148 @@
+# Ce fichier propose un example de configuration pour le logiciel "recyclarr" :
+# https://recyclarr.dev/wiki/
+# https://github.com/recyclarr/recyclarr
+
+# Cet exemple est pour Sonarr et le profil "Anime VOSTFR" present dans le guide
+# https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#exemple-pour-les-animes
+sonarr:
+  french_sonarr_anime_vostfr:
+    # L'URL de base ainsi que la clé API de votre instance Sonarr
+    base_url: [sonarr_url_goes_here]
+    api_key: [api_key_goes_here]
+
+    quality_definition:
+      type: anime
+
+    # La liste de Formats Personnalisés à synchroniser avec Sonarr.
+    custom_formats:
+      - trash_ids:
+          # ===== Versions françaises =====
+          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
+          # ===== Indésirables =====
+          - 85c61753df5da1fb2aab6f2a47426b09  # BR-DISK
+          - 3ba797e5dc13af4b8d9bb25e83d90de2  # FR LQ
+          - b4a1b3d705159cdca36d71e57ca86871  # Anime Raws
+          - e3515e519f3b1360cbfc17651944354c  # Anime LQ Groups
+          - 9c14d194486c4014d422adc64092d794  # Dubs Only
+          - ea0bb4b6ba388992fad1092703b5ff7b  # FastSUB
+          # ===== Versions =====
+          - d2d7b8a9d39413da5f44054080e028a3  # v0
+          - 273bd326df95955e1b6c26527d1df89b  # v1
+          - 228b8ee9aa0a609463efca874524a6b8  # v2
+          - 0e5833d3af2cc5fa96a0c29cd4477feb  # v3
+          - 4fc15eeb8f2f9a749f918217d4234ad8  # v4
+          # ===== Streaming Service =====
+          - d54cd2bf1326287275b56bccedb72ee2  # ADN
+          - 7dd31f3dee6d2ef8eeaa156e23c3857e  # B-Global
+          - 4c67ff059210182b59cdd41697b8cb08  # Bilibili
+          - 3e0b26604165f463f3e8e192261e7284  # CR
+          - 1284d18e693de8efe0fe7d6b3e0b9170  # FUNi
+          - 570b03b3145a25011bf073274a407259  # HIDIVE
+          - 44a8ee6403071dd7b8a3a8dd3fe8cb20  # VRV
+          - e5e6405d439dcd1af90962538acd4fe0  # WKN
+          # ===== Autres =====
+          - b2550eb333d27b75833e25b8c2557b38  # 10bit
+          - cddfb4e32db826151d97352b8e37c648  # x264
+          - c9eafd50846d299b862ca9bb6ea91950  # x265
+          # ===== HQ Source Groups =====
+          - db13a377f7afb29975ea39470434d2ef  # FR Anime Tier 01
+          - 4e6134a384dbc0ef166234cc0e45d26d  # FR Anime Tier 02
+          - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
+          # Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)
+          # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en SeaDex
+          # si jamais une release VOSTFR n'existes pas.
+          #
+          # Il est tout de fois possible que dans ce cas Sonarr récupére une release SeaDex au lieu
+          # d'un VOSTFR car celle-ci possède un score plus important.
+          #
+          # Vous pouvez aussi les activer dans le cas où vous avez configuré Bazarr.
+          # - 949c16fe0a8147f50ba82cc2df9411c9  # Anime BD Tier 01 (Top SeaDex Muxers)
+          # - ed7f1e315e000aef424a58517fa48727  # Anime BD Tier 02 (SeaDex Muxers)
+          # - 096e406c92baa713da4a72d88030b815  # Anime BD Tier 03 (SeaDex Muxers)
+          # - 30feba9da3030c5ed1e0f7d610bcadc4  # Anime BD Tier 04 (SeaDex Muxers)
+          # - 545a76b14ddc349b8b185a6344e28b04  # Anime BD Tier 05 (Remuxes)
+          # - 25d2afecab632b1582eaf03b63055f72  # Anime BD Tier 06 (FanSubs)
+          # - 0329044e3d9137b08502a9f84a7e58db  # Anime BD Tier 07 (P2P/Scene)
+          # - c81bbfb47fed3d5a3ad027d077f889de  # Anime BD Tier 08 (Mini Encodes)
+          # - e0014372773c8f0e1bef8824f00c7dc4  # Anime Web Tier 01 (Muxers)
+          # - 19180499de5ef2b84b6ec59aae444696  # Anime Web Tier 02 (Top FanSubs)
+          # - c27f2ae6a4e82373b0f1da094e2489ad  # Anime Web Tier 03 (Official Subs)
+          # - 4fd5528a3a8024e6b49f9c67053ea5f3  # Anime Web Tier 04 (Official Subs)
+          # - 29c2a13d091144f63307e4a8ce963a39  # Anime Web Tier 05 (FanSubs)
+          # - dc262f88d74c651b12e9d90b39f6c753  # Anime Web Tier 06 (FanSubs)
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            reset_unmatched_scores: true
+
+      - trash_ids:
+          - d660701077794679fd59e8bdf4ce3a29  # AMZN
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: 1
+
+      - trash_ids:
+          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: 4
+
+      - trash_ids:
+          - d34870697c9db575f17700212167be23  # NF
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: 2
+
+      - trash_ids:
+          - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: -10000
+
+      # ===== MULTi Audio =====
+      # Nécessaire vu qu'on ne souhaite pas de MULTis
+      - trash_ids:
+          - 2f6e84efc47246ec9071e311e71c4953  # Multi-Audio
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: -10000
+
+      # ===== Versions françaises =====
+      - trash_ids:
+          - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            score: 101
+
+      # ==== Scores Optionnels ====
+      # Décommenter le score associé si c'est ce que vous souhaitez
+
+      # Si vous préférez les releases non censurées
+      - trash_ids:
+          - 026d5aadd1a6b4e550b134cb6c72b3ca  # Uncensored
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            # score: 101
+
+      # Si vous préférez avoir des versions Dual Audio (audio original et anglais) au cas où Sonarr ne trouve pas de sortie VOSTFR ou MULTi.
+      - trash_ids:
+          - 418f50b10f1907201b6cfdf881f467b7  # Anime Dual Audio
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            # score: 101
+
+      # Si vous ne voulez pas non-plus de FanSUB.
+      # Pensez à le supprimer de la ligne 21 et le Format Personnalisé suivant aussi dans ce cas.
+      - trash_ids:
+          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            # score: -10000
+
+      # Les groupes FanSUB peuvent être notés soit 1400 (par défaut) soit 1000
+      # selon que vous souhaitez privilégier les sorties FanSUB ou SeaDex.
+      # Ils peuvent aussi être supprimés si vous ne souhaitez pas de FanSUB.
+      - trash_ids:
+          - 44b6c964dad997577d793fd004a39224  # FR Anime FanSub
+        quality_profiles:
+          - name: FR-ANIME-VOSTFR
+            # score: 1000
