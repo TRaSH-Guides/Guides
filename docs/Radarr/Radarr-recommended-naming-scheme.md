@@ -23,15 +23,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     `{edition-{Edition Tags}}` with `{Edition Tags}`
 
-    !!! danger ""
-
-        Only use `{edition-{Edition Tags}}` if you are prepared to have movies separated by edition
-        when using a merged Plex library - e.g., you keep both 1080p and 2160p versions of one movie.
-
-        For example if you have the `Directors Cut` and the `Extended Cut` for
-        one movie, those will show up as two separate movies in your library.
-
-        Note that not using `{edition-{Edition Tags}}` will prevent Plex for recognizing the edition.
+    !!! danger "Only use `{edition-{Edition Tags}}` if you are prepared to have movies separated by edition<br>when using a merged Plex library - e.g., you keep both 1080p and 2160p versions of one movie.<br><br>For example if you have the `Directors Cut` and the `Extended Cut` for one movie, those will show up as two separate movies in your library.<br><br>Note that not using `{edition-{Edition Tags}}` will prevent Plex from recognizing the edition."
 
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['default'] }}
