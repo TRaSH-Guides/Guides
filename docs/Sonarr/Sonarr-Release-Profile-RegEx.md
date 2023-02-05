@@ -245,7 +245,7 @@ Add this to your `Preferred (3)` with a score of [1800] [^1]
 Add this to your `Preferred (3)` with a score of [1700]
 
 ```bash
-/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM)\b/i
+/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [1650]
