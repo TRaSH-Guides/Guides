@@ -207,7 +207,7 @@ Add this to your `Preferred (3)` with a score of [75]
 ```
 
 ```bash
-/\b(nlz)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i"
+/\b(nlz)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 !!! danger "Caution"
