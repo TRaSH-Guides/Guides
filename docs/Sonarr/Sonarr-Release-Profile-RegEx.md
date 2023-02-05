@@ -228,28 +228,28 @@ Add this to your `Preferred (3)` with a score of [75]
 !!! warning
     DO NOT Check mark `Include Preferred when Renaming` :bangbang:
 
-Add this to your `Preferred (3)` with a score of [180] [^1]
+Add this to your `Preferred (3)` with a score of [1800] [^1]
 
 ```bash
 /(-deflate|-inflate)\b/i
 ```
 
-Add this to your `Preferred (3)` with a score of [150]
+Add this to your `Preferred (3)` with a score of [1700]
 
 ```bash
-/(-AJP69|-BTN|-CasStudio|-CtrlHD|-KiNGS|-monkee|-NTb|-NTG|-QOQ|-RTN|-TOMMY|-ViSUM|-T6D|-FLUX|NOSiViD)\b/i
+/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM)\b/i
 ```
 
-Add this to your `Preferred (3)` with a score of [125]
+Add this to your `Preferred (3)` with a score of [1650]
 
 ```bash
-/(-BTW|-Chotab|-CiT|-DEEP|-iJP|-iT00NZ|-LAZY|-NYH|-SA89|-SIGMA|-TEPES|-TVSmash|-SDCC|-iKA|-iJP|-Cinefeel|-SPiRiT|-FC|-JETIX|-Coo7|-WELP|-KiMCHI|-BLUTONiUM|-orbitron|-ETHiCS|-RTFM|-PSiG|-MZABI|-ROCCaT|3cTWeB|playWEB|-KHN|NPMS|-END|-SiC|-GNOME|-ABBIE)\b/i
+/(3CTWeB|BLUTONiUM|-BTW|-Chotab|-Cinefeel|-CiT|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SDCC|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\b/i
 ```
 
-Add this to your `Preferred (3)` with a score of [100]
+Add this to your `Preferred (3)` with a score of [1600]
 
 ```bash
-/(-ViSiON)\b/i
+/(SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -296,7 +296,7 @@ Add this to your `Preferred (3)` with a score of [10]
 !!! warning
     DO NOT Check mark `Include Preferred when Renaming` :bangbang:
 
-Add this to your `Preferred (3)` with a score of [-100]
+Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
 /(-BRiNK|-CHX|-GHOSTS|JFF|PSA|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\b/i
@@ -384,7 +384,7 @@ Add this to your `Must not contain (2)`
 
 #### Optional - Prefer HDR
 
-Add this to your `Preferred (3)` with a score of [10]
+Add this to your `Preferred (3)` with a score of [500]
 
 ```bash
 /\bHDR(\b|\d)/i
@@ -394,7 +394,7 @@ Add this to your `Preferred (3)` with a score of [10]
 
 #### Optional - Prefer Dolby Vision
 
-Add this to your `Preferred (3)` with a score of [100]
+Add this to your `Preferred (3)` with a score of [1500]
 
 ```bash
 /\b(dv|dovi|dolby[ .]?vision)\b/i
@@ -407,7 +407,7 @@ Add this to your `Preferred (3)` with a score of [100]
 ??? question "Explanation - [CLICK TO EXPAND]"
     Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.
 
-Add this to your `Preferred (3)` with a score of [-25]
+Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
 /(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
@@ -418,17 +418,17 @@ Add this to your `Preferred (3)` with a score of [-25]
 ??? question "Explanation - [CLICK TO EXPAND]"
     Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.
 
-Add this to your `Preferred (3)` with a score of [-25]
+Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(-4P|-4Planet|-AsRequested|-BUYMORE|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-xpost|-WRTEAM|-CAPTCHA)\b/i
+/(-4P|-4Planet|-AsRequested|-BUYMORE|-CAPTCHA|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-WRTEAM|-xpost)\b/i
 ```
 
 ------
 
 #### Optional - Dislike release ending: en
 
-Add this to your `Preferred (3)` with a score of [-25]
+Add this to your `Preferred (3)` with a score of [-10000]
 
 ??? question "Explanation - [CLICK TO EXPAND]"
     Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
@@ -446,7 +446,7 @@ Add this to your `Preferred (3)` with a score of [-25]
 
     Matches any release that contains '1-' as prefix for Release Groups
 
-Add this to your `Preferred (3)` with a score of [-25]
+Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
 /(?<!\d\.)(1-.+)$/i
@@ -565,14 +565,14 @@ Add this to your `Must not contain (2)`
 ### A little explanation of the scores and why
 
 - Scores [75]-[100] Release Source.
-- Scores [125]-[150] P2P Groups.
-- Scores [10] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
-- Scores [-25] Retagged/Renames/Obfuscated  releases.
+- Scores [1600]-[1800] P2P Groups.
+- Scores [10-12] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
+- Scores [-10000] Retagged/Renames/Obfuscated  releases.
 
     !!! danger ""
-        If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-25]
+        If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-10000]
 
-- Scores [-100] Groups that mess with the audio or add another preferred language.
+- Scores [-10000] Groups that mess with the audio or add another preferred language.
 
 Optional => We've tested it and it worked for what we've tested it on, if it will work in your situation we don't know.
 
