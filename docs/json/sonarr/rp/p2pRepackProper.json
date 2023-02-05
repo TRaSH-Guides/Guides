@@ -12,7 +12,7 @@
     {
       "score": 1700,
       "terms": [
-        "/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM)\\b/i"
+        "/(-ABBIE|-AJP69|-APEX|-CasStudio|CRFW|-CtrlHD|-FLUX|\\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-PAXA|-PEXA|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM|-XEPA)\\b/i"
       ]
     },
     {
@@ -24,7 +24,7 @@
     {
       "score": 1600,
       "terms": [
-        "/(SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\\b/i"
+        "/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\\b/i"
       ]
     },
     {
