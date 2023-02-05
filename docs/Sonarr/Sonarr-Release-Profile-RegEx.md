@@ -202,6 +202,14 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(stan)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(vdl)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(nlz)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i"
+```
+
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
