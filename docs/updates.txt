@@ -1,9 +1,10 @@
-# 2023-02-05 20:15
+# 2023-02-05 20:30
 **[New]**
 - None
 
 **[Updated]**
 - [Sonarr v3] Updated several regex and scoring to match Sonarr v4.
+- [Starr] Updated HDR info for AppleTV Profile 5 - It has been confirmed that with the latest beta build of Plex, Profile 5 MKV files now play correctly.
 
 **[Fixed]**
 - None
