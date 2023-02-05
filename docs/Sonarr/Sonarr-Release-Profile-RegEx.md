@@ -245,7 +245,7 @@ Add this to your `Preferred (3)` with a score of [1800] [^1]
 Add this to your `Preferred (3)` with a score of [1700]
 
 ```bash
-/(-ABBIE|-AJP69|-CasStudio|CRFW|-CtrlHD|-FLUX|\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM)\b/i
+/(-ABBIE|-AJP69|-APEX|-CasStudio|CRFW|-CtrlHD|-FLUX|\bHONE|-KiNGS|-monkee|NOSiViD|-NTb|-NTG|-PAXA|-PEXA|-QOQ|-RTN|-SiC|T6D|-TOMMY|-ViSUM|-XEPA)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [1650]
@@ -257,7 +257,7 @@ Add this to your `Preferred (3)` with a score of [1650]
 Add this to your `Preferred (3)` with a score of [1600]
 
 ```bash
-/(SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\b/i
+/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -307,7 +307,7 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(-BRiNK|-CHX|-GHOSTS|JFF|PSA|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\b/i
+/(-BRiNK|-CHX|-GHOSTS|-EVO|-FGT|JFF|PSA|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\b/i
 ```
 
 !!! danger "Caution"
@@ -536,7 +536,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\b|-GGEZ\b|-GGWP\b|-GLHF\b|-GOSSIP\b|-KOGI\b|-PECULATE\b)).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\b|-GGEZ\b|-GGWP\b|-GLHF\b|-GOSSIP\b|-KOGI\b|-PECULATE\b|-SLOT\b)).*/i
 
 ```
 
@@ -550,7 +550,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/\b(-alfaHD|-BAT|-BNd|-C\.A\.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\b/i
+/\b(-alfaHD|-BAT|-BNd|-C\.A\.A|-Cory|-EXTREME|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-PTHome|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA|-ZigZag)\b/i
 ```
 
 #### Optional - Ignore AV1
