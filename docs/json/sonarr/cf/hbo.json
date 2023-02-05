@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(hbo)(?![-_. ]max)\\b"
+        "value": "\\b(hbo)(?![-_. ]max)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
     },
     {
@@ -29,15 +29,6 @@
       "required": false,
       "fields": {
         "value": 4
-      }
-    },
-    {
-      "name": "HBO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\b(HBO)\\b"
       }
     }
   ]
