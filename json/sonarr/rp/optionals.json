@@ -16,11 +16,11 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\\b|-GGEZ\\b|-GGWP\\b|-GLHF\\b|-GOSSIP\\b|-KOGI\\b|-PECULATE\\b)).*/i"
+    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ]|-CAKES\\b|-GGEZ\\b|-GGWP\\b|-GLHF\\b|-GOSSIP\\b|-KOGI\\b|-PECULATE\\b|-SLOT\\b)).*/i"
   }, {
     "name": "Ignore Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",
-    "term": "/\\b(-alfaHD|-BAT|-BNd|-C\\.A\\.A|-Cory|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA)\\b/i"
+    "term": "/\\b(-alfaHD|-BAT|-BNd|-C\\.A\\.A|-Cory|-EXTREME|-FF|-FOXX|-G4RiS|-GUEIRA|-N3G4N|-PD|-PTHome|-RiPER|-RK|-SiGLA|-Tars|-WTV|-Yatogam1|-YusukeFLA|-ZigZag)\\b/i"
   }, {
     "name": "Ignore AV1",
     "trash_id": "4861d8238f9234606df6721df6e27deb",
