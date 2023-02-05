@@ -30,6 +30,15 @@
       "fields": {
         "value": 4
       }
+    },
+    {
+      "name": "HBO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(HBO)\\b"
+      }
     }
   ]
 }
