@@ -1,3 +1,13 @@
+# 2023-02-05 20:15
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr v3] Updated several regex and scoring to match Sonarr v4.
+
+**[Fixed]**
+- None
+
 # 2023-02-04 21:15
 **[New]**
 - [Guide- and Sonarr-FR] Added `ADN` and `Wakanim` streaming services to the French Anime section.
