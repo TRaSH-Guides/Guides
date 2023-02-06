@@ -1,3 +1,13 @@
+# 2023-02-06 20:15
+**[New]**
+- [Radarr] CF `Line/Mic Dubbed`.
+
+**[Updated]**
+- [SQP 2-5] Added optional to also accept 1080p WEBDL without DV/HDR, if you're only running 1 Radarr so you will also get the HD release if there is no UHD version.
+
+**[Fixed]**
+- None
+
 # 2023-02-05 20:30
 **[New]**
 - None
