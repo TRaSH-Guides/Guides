@@ -15,7 +15,7 @@
 
     **When no 4k exist it will grab the following:**
 
-    - 1080p WEBDL with DV/HDR
+    - 1080p WEBDL with DV/HDR (*optional also 1080p WEBDL without DV/HDR*)
     - 1080p Remux
 
     !!! info "[*Optional*] IMAX Enhanced (IMAX-E)<br>- When a IMAX Enhanced exist it will upgrade/downgrade to IMAX Enhanced.<br>- IMAX Enhanced will be **ONLY** chosen if it has the same **AUDIO** and **HDR Metadata**<br>- It won't downgrade from a `TrueHD Atmos` to a `DD+ Atmos` or from a `DV` to a `HDR`."
