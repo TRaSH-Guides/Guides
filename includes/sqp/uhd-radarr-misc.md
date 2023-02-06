@@ -9,6 +9,7 @@
     Breakdown and Why
 
     - `x264` has a score of `-10000` because we only want the HDR/DV versions of the `WEBDL-1080p`
+    - if you're only running 1 Radarr, You might want to remove the `x264`CF so you will also get the HD release if there is no UHD version.
 
     ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
 

@@ -1,0 +1,27 @@
+{
+  "trash_id": "c465ccc73923871b3eb1802042331306",
+  "trash_score": "-10000",
+  "trash_regex": "https://regex101.com/r/6vHBAD/1",
+  "name": "Line/Mic Dubbed",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Line Dubbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LD|AC3LD|Line[ .-]?Dubbed)\\b"
+      }
+    },
+    {
+      "name": "Mic Dubbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MD|AC3MD|Mic[ .-]?Dubbed)\\b"
+      }
+    }
+  ]
+}
