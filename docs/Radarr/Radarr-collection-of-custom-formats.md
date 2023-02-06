@@ -78,6 +78,7 @@ I also made 3 guides related to this one.
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         |                               |                                                 |
 |                                | [DV (FEL)](#dv-fel)                 |                               |                                                 |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)  |                               |                                                 |
 
 ------
 
@@ -1179,6 +1180,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Line/Mic Dubbed
+
+??? question "Line/Mic Dubbed - [CLICK TO EXPAND]"
+
+    - This seems to be often used with German releases, and this will block the low quality audio.
+    - Line Dubbed = Sound extracted in the cinema by cable.
+    - Mic Dubbed = Sound extracted in the cinema by a microphone.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/line-mic-dubbed.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
