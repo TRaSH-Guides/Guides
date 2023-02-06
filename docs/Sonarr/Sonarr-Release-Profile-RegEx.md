@@ -163,7 +163,7 @@ Add this to your `Preferred (3)` with a score of [90]
 ```
 
 ```bash
-/\b(hmax|hbom|hbo max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(hmax|hbom|hbo[-_. ]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 Add this to your `Preferred (3)` with a score of [85]
@@ -183,7 +183,7 @@ Add this to your `Preferred (3)` with a score of [75]
 ```
 
 ```bash
-/\b(hbo)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(hbo)(?![-_. ]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
