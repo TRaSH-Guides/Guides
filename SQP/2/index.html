@@ -1028,7 +1028,7 @@
 <p><em>Possible Variables</em></p>
 <p><strong>When no 4k exist it will grab the following:</strong></p>
 <ul>
-<li>1080p WEBDL with DV/HDR</li>
+<li>1080p WEBDL with DV/HDR (<em>optional also 1080p WEBDL without DV/HDR</em>)</li>
 <li>1080p Remux</li>
 </ul>
 <div class="admonition info">
@@ -1465,6 +1465,7 @@
 <p>Breakdown and Why</p>
 <ul>
 <li><code>x264</code> has a score of <code>-10000</code> because we only want the HDR/DV versions of the <code>WEBDL-1080p</code></li>
+<li>if you're only running 1 Radarr, You might want to remove the <code>x264</code>CF so you will also get the HD release if there is no UHD version.</li>
 </ul>
 <details class="tip">
 <summary>Proper and Repacks - [CLICK TO EXPAND]</summary>

@@ -645,6 +645,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linemic-dubbed">
+    Line/Mic Dubbed
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2097,6 +2102,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linemic-dubbed">
+    Line/Mic Dubbed
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2812,6 +2822,12 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <tr>
 <td></td>
 <td><a href="#dv-fel">DV (FEL)</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#linemic-dubbed">Line/Mic Dubbed</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -7410,6 +7426,48 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-HYBRID"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="linemic-dubbed">Line/Mic Dubbed<a class="headerlink" href="#linemic-dubbed" title="Permanent link"></a></h3>
+<details class="question">
+<summary>Line/Mic Dubbed - [CLICK TO EXPAND]</summary>
+<ul>
+<li>This seems to be often used with German releases, and this will block the low quality audio.</li>
+<li>Line Dubbed = Sound extracted in the cinema by cable.</li>
+<li>Mic Dubbed = Sound extracted in the cinema by a microphone.</li>
+</ul>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c465ccc73923871b3eb1802042331306"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-10000"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/6vHBAD/1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Line/Mic Dubbed"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Line Dubbed"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(LD|AC3LD|Line[ .-]?Dubbed)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mic Dubbed"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MD|AC3MD|Mic[ .-]?Dubbed)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15634,7 +15692,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 30, 2023 10:27:04</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 6, 2023 19:06:37</span>
 </small>
 </div>
 <footer class="sponsorship">
