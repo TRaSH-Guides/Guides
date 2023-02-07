@@ -1,3 +1,14 @@
+# 2023-02-07 20:45
+**[New]**
+- None
+
+**[Updated]**
+- [SQP 2-5] Added extra info for the HD/UHD merge/split.
+
+**[Fixed]**
+- Fix HBO/HMAX inconsistencies across Sonarr V3/V4 and Radarr.
+- Fix HBO rlsgrp matching HBO/HMAX Streaming CF.
+
 # 2023-02-06 20:15
 **[New]**
 - [Radarr] CF `Line/Mic Dubbed`.
