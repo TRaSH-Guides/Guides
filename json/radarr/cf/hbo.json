@@ -1,15 +1,15 @@
 {
-  "trash_id": "5763d1b0ce84aff3b21038eea8e9b8ad",
-  "name": "HMAX",
+  "trash_id": "509e5f41146e278f9eab1ddaceb34515",
+  "name": "HBO",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "HBO Max",
+      "name": "HBO",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {

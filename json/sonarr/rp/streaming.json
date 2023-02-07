@@ -22,7 +22,7 @@
         "/\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(nf|netflix)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(qibi|quibi)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(hmax|hbom|hbo max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     },
     {
@@ -36,7 +36,7 @@
       "score": 75,
       "terms": [
         "/\\b(dcu)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(hbo)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(it)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
