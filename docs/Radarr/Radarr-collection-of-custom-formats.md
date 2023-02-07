@@ -1564,6 +1564,24 @@ I also made 3 guides related to this one.
 
 ------
 
+### HBO
+
+<sub>HBO</sub>
+
+??? question "HBO - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### HMAX
 
 <sub>HBO Max</sub>
