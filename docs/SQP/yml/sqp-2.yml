@@ -90,6 +90,7 @@ radarr:
         quality_profiles:
           - name: Remux|Bluray|IMAX-E|2160p
             # score: 0 # overrides default of -10000
+      # If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version
       - trash_ids:
           # Misc
           - 2899d84dc9372de3408e6d8cc18e9666 # x264
