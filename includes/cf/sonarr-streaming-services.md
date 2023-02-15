@@ -18,3 +18,4 @@
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)   | {{ sonarr['cf']['sho']['trash_score'] }}  | {{ sonarr['cf']['sho']['trash_id'] }}  |
     | [{{ sonarr['cf']['stan']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#stan) | {{ sonarr['cf']['stan']['trash_score'] }} | {{ sonarr['cf']['stan']['trash_id'] }} |
     | [{{ sonarr['cf']['vdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vdl)   | {{ sonarr['cf']['vdl']['trash_score'] }}  | {{ sonarr['cf']['vdl']['trash_id'] }}  |
+    | [{{ sonarr['cf']['cc']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#cc)     | {{ sonarr['cf']['cc']['trash_score'] }}   | {{ sonarr['cf']['cc']['trash_id'] }}   |
