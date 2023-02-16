@@ -934,6 +934,11 @@
     RTBF
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cc">
+    CC
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2279,6 +2284,11 @@
     RTBF
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cc">
+    CC
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2826,6 +2836,12 @@ Special thanks to everyone that helped testing and creating these Custom Formats
 <td></td>
 <td></td>
 <td><a href="#rtbf">RTBF</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="#cc">Comedy Central</a></td>
 </tr>
 </tbody>
 </table>
@@ -8949,6 +8965,54 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(RTBF|AUVIO)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="cc">CC<a class="headerlink" href="#cc" title="Permanent link"></a></h3>
+<p><sub>CC = Comedy Central</sub></p>
+<details class="question">
+<summary>CC - [CLICK TO EXPAND]</summary>
+<p><a href="https://en.wikipedia.org/wiki/Comedy_Central" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77a7b25585c18af08f60b1547bb9b4fb"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"75"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/A3TRwE/1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CC"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Comedy Central"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEBDL"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEBRIP"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15580,7 +15644,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 4, 2023 19:33:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 15, 2023 18:48:16</span>
 </small>
 </div>
 <footer class="sponsorship">
