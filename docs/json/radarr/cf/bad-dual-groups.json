@@ -158,6 +158,15 @@
       }
     },
     {
+      "name": "TvR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-TvR)\\b"
+      }
+    },
+    {
       "name": "WTV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
