@@ -419,6 +419,15 @@
       }
     },
     {
+      "name": "PiRaTeS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(PiRaTeS)\\b"
+      }
+    },
+    {
       "name": "PRODJi",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
