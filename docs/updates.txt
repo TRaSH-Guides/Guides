@@ -1,3 +1,13 @@
+# 2023-02-17 22:40
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] Added `HLG(10)` to CF `SDR` - For proper scoring
+
 # 2023-02-17 14:50
 **[New]**
 - [Sonarr] Added Comedy Central streaming service to the Sonarr custom formats and release propfile.
