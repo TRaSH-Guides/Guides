@@ -1,3 +1,14 @@
+# 2023-02-17 14:20
+**[New]**
+- YAML naming structure.
+- Warning for if `metadata.json` and `metadata.schema.json` has to be changed.
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- Typo
+
 # 2023-02-07 20:45
 **[New]**
 - None
