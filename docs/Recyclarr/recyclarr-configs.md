@@ -3,11 +3,12 @@
 Here you will find a collection of Recyclarr configs based on the following guides:
 
 - [Radarr - How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}
-<!--- [Radarr - How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}-->
-<!--- [Radarr - How to setup Quality Profiles French](/Radarr/radarr-setup-quality-profiles-french){:target="_blank" rel="noopener noreferrer"}-->
 - [Sonarr - How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}
 - [Sonarr - How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}
 - [Sonarr - How to setup Quality Profiles French](/Sonarr/sonarr-setup-quality-profiles-french){:target="_blank" rel="noopener noreferrer"}
+
+<!--- [Radarr - How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}-->
+<!--- [Radarr - How to setup Quality Profiles French](/Radarr/radarr-setup-quality-profiles-french){:target="_blank" rel="noopener noreferrer"}-->
 
 --8<-- "includes/support.md"
 
