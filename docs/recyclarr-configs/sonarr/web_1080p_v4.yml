@@ -10,25 +10,10 @@ sonarr:
     custom_formats:
       # Scores from TRaSH json
       - trash_ids:
-          # HDR Formats
-          - 7878c33f1963fefb3d6c8657d46c2f0a  # DV HDR10
-          - 1f733af03141f068a540eec352589a89  # DV HLG
-          - 27954b0a80aab882522a88a4d9eae1cd  # DV SDR
-          - 6d0d8de7b57e35518ac0308b0ddf404e  # DV
-          - bb019e1cd00f304f80971c965de064dc  # HDR (undefined)
-          - 3e2c4e748b64a1a1118e0ea3f4cf6875  # HDR
-          - 3497799d29a085e2ac2df9d468413c94  # HDR10
-          - a3d82cbef5039f8d295478d28a887159  # HDR10+
-          - 17e889ce13117940092308f48b48b45b  # HLG
-          - 2a7e3be05d3861d6df7171ec74cad727  # PQ
-          # DV (WEBDL) - The next line must be uncommented if any devices using your library DO NOT support Dolby Vision
-          - 9b27ab6498ec0f31a3353992e19434ca  # DV (WEBDL)
-          # HDR10Plus Boost - Uncomment the next line if any of your devices DO support HDR10+
-          # - 0dad0a507451acddd754fe6dc3a7f5e7  # HDR10Plus Boost
-          # Unwanted UHD
+          # Unwanted
           - 85c61753df5da1fb2aab6f2a47426b09  # BR-DISK
           - 9c11cd3f07101cdba90a2d81cf0e56b4  # LQ
-          - 2016d1676f5ee13a5b7257ff86ac9a93  # SDR
+          - 47435ece6b99a0b477caf360e79ba0bb  # x265 (HD)
           # Misc
           - ec8fa7296b64e8cd390a1600981f3923  # Repack/Proper
           - eb3d5cc0a2be0db205fb823640db6a3c  # Repack v2
@@ -51,11 +36,12 @@ sonarr:
           - ae58039e1319178e6be73caab5c42166  # SHO
           - 1efe8da11bfd74fbbcd4d8117ddb9213  # STAN
           - 5d2317d99af813b6529c7ebf01c83533  # VDL
+          - 77a7b25585c18af08f60b1547bb9b4fb  # CC
           # HQ Source Groups
           - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
           - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02
           - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
           - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
         quality_profiles:
-          - name: WEB-2160p
+          - name: WEB-1080p
             reset_unmatched_scores: true

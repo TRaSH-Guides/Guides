@@ -12,7 +12,8 @@
         "radarr": { "$ref": "#/$defs/radarr" },
         "sonarr": { "$ref": "#/$defs/sonarr" }
       }
-    }
+    },
+    "recyclarr": { "$ref": "#/$defs/recyclarr" }
   },
   "$defs": {
     "paths_object": {
@@ -36,6 +37,13 @@
         "release_profiles": { "$ref": "#/$defs/paths_object" },
         "qualities": { "$ref": "#/$defs/paths_object" },
         "naming": { "$ref": "#/$defs/paths_object" }
+      }
+    },
+    "recyclarr": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "templates": { "type": "string" }
       }
     }
   }

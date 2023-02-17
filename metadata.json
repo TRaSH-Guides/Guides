@@ -12,5 +12,8 @@
       "qualities": ["docs/json/sonarr/quality-size"],
       "naming": ["docs/json/sonarr/naming"]
     }
+  },
+  "recyclarr": {
+    "templates": "docs/recyclarr-configs"
   }
 }

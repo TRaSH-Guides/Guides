@@ -1,0 +1,36 @@
+{
+  "trash_id": "77a7b25585c18af08f60b1547bb9b4fb",
+  "trash_score": "75",
+  "trash_regex": "https://regex101.com/r/A3TRwE/1",
+  "name": "CC",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Comedy Central",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(CC)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
