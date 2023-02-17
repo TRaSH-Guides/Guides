@@ -17,13 +17,13 @@ Here you will find a collection of Recyclarr configs based on the SQPs.
 
 ---
 
-| Radarr                                                          |
-| --------------------------------------------------------------- |
-| [Streaming Optimized (SQP-1)](#streaming-optimized-sqp-1)       |
+| Radarr                                                            |
+| ----------------------------------------------------------------- |
+| [Streaming Optimized (SQP-1)](#streaming-optimized-sqp-1)         |
 | [UHD Remux\|Bluray\|IMAX-E (SQP-2)](#uhd-remuxblurayimax-e-sqp-2) |
-| [UHD Remux\|IMAX-E (SQP-3)](#uhd-remuximax-e-sqp-3)              |
-| [UHD WEBDL\|IMAX-E (SQP-4)](#uhd-webdlimax-e-sqp-4)              |
-| [UHD Bluray\|IMAX-E (SQP-5)](#uhd-blurayimax-e-sqp-5)            |
+| [UHD Remux\|IMAX-E (SQP-3)](#uhd-remuximax-e-sqp-3)               |
+| [UHD WEBDL\|IMAX-E (SQP-4)](#uhd-webdlimax-e-sqp-4)               |
+| [UHD Bluray\|IMAX-E (SQP-5)](#uhd-blurayimax-e-sqp-5)             |
 
 ---
 
