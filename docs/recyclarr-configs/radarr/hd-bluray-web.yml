@@ -17,6 +17,7 @@ radarr:
           - 9d27d9d2181838f76dee150882bdc58c # Masters of Cinema
           - 957d0f44b592285f26449575e8b1167e # Special Edition
           - eecf3a857724171f968a66cb5719e152 # IMAX
+          - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced
           # HQ Release Groups
           - ed27ebfef2f323e964fb1f61391bcb35 # HD Bluray Tier 01
           - c20c8647f2746a1f4c4262b0fbbeeeae # HD Bluray Tier 02
