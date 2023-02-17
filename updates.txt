@@ -1,3 +1,14 @@
+# 2023-02-17 14:50
+**[New]**
+- [Sonarr] Added Comedy Central streaming service to the Sonarr custom formats and release propfile.
+
+**[Updated]**
+- [Radarr] Added RlsGrp `PiRaTeS` to CF 'LQ' - We have been seeing releases from this group lately and their releases seem pretty low quality (artifacting in dark scenes).
+- [Radarr] Added RlsGrp `TvR` to CF `Bad Dual Audio` - Because first audio is always german despite not being labeled as such.
+
+**[Fixed]**
+- None
+
 # 2023-02-07 20:45
 **[New]**
 - None
