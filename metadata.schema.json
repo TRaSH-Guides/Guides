@@ -10,10 +10,10 @@
       "additionalProperties": false,
       "properties": {
         "radarr": { "$ref": "#/$defs/radarr" },
-        "sonarr": { "$ref": "#/$defs/sonarr" },
-        "recyclarr": { "$ref": "#/$defs/recyclarr" }
+        "sonarr": { "$ref": "#/$defs/sonarr" }
       }
-    }
+    },
+    "recyclarr": { "$ref": "#/$defs/recyclarr" }
   },
   "$defs": {
     "paths_object": {

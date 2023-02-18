@@ -19,7 +19,7 @@
       "negate": true,
       "required": false,
       "fields": {
-        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX|SiCFoI)\\b|\\b(PQ)\\b"
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)"
       }
     },
     {

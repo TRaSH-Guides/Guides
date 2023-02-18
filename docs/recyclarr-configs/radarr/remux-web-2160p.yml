@@ -24,6 +24,21 @@ radarr:
           # - 1c1a4c5e823891c75bc50380a6866f73 # DTS
           # - 240770601cc226190c367ef59aba7463 # AAC
           # - c2998bd0d90ed5621d8df281e839436e # DD
+          # All HDR Formats
+          - e23edd2482476e595fb990b12e7c609c # DV HDR10
+          - 58d6a88f13e2db7f5059c41047876f00 # DV
+          - 55d53828b9d81cbe20b02efd00aa0efd # DV HLG
+          - a3e19f8f627608af0211acd02bf89735 # DV SDR
+          - b974a6cd08c1066250f1f177d7aa1225 # HDR10+
+          - dfb86d5941bc9075d6af23b09c2aeecd # HDR10
+          - e61e28db95d22bedcadf030b8f156d96 # HDR
+          - 2a4d9069cc1fe3242ff9bdaebed239bb # HDR (undefined)
+          - 08d6d8834ad9ec87b1dc7ec8148e7a1f # PQ
+          - 9364dd386c9b4a1100dde8264690add7 # HLG
+          # DV (WEBDL) - The next line must be uncommented if any devices using your library DO NOT support Dolby Vision
+          - 923b6abef9b17f937fab56cfcf89e1f1 # DV (WEBDL)
+          # HDR10Plus Boost - Uncomment the next line if any of your devices DO support HDR10+
+          # - b17886cb4158d9fea189859409975758 # HDR10Plus Boost
           # Movie Versions
           - 0f12c086e289cf966fa5948eac571f44 # Hybrid
           - 570bc9ebecd92723d2d21500f4be314c # Remaster
@@ -32,6 +47,7 @@ radarr:
           - 9d27d9d2181838f76dee150882bdc58c # Masters of Cinema
           - 957d0f44b592285f26449575e8b1167e # Special Edition
           - eecf3a857724171f968a66cb5719e152 # IMAX
+          - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced
           # HQ Release Groups
           - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
           - 9f98181fe5a3fbeb0cc29340da2a468a # Remux Tier 02
@@ -44,13 +60,13 @@ radarr:
           # Unwanted
           - ed38b889b31be83fda192888e2286d83 # BR-DISK
           - 90a6f9a284dff5103f6346090e6280c8 # LQ
-          - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
           - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
+          - 9c38ebb7384dada637be8899efa68e6f # SDR
           # Streaming Services
           - cc5e51a9e85a6296ceefe097a77f12f4 # BCORE
           - 2a6039655313bf5dab1e43523b62c374 # MA
         quality_profiles:
-          - name: Remux + WEB 1080p
+          - name: Remux + WEB 2160p
             reset_unmatched_scores: true
       # Custom Scoring
       - trash_ids:
@@ -66,5 +82,5 @@ radarr:
           - e36a0ba1bc902b26ee40818a1d59b8bd # PMTP
           - c2863d2a50c9acad1fb50e53ece60817 # STAN
         quality_profiles:
-          - name: Remux + WEB 1080p
+          - name: Remux + WEB 2160p
             score: 0
