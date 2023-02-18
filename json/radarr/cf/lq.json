@@ -23,6 +23,15 @@
       }
     },
     {
+      "name": "AZAZE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AZAZE)\\b"
+      }
+    },
+    {
       "name": "aXXo",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
