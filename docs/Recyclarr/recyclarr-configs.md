@@ -3,11 +3,11 @@
 Here you will find a collection of Recyclarr configs based on the following guides:
 
 - [Radarr - How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}
+- [Radarr - How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}
 - [Sonarr - How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}
 - [Sonarr - How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}
 - [Sonarr - How to setup Quality Profiles French](/Sonarr/sonarr-setup-quality-profiles-french){:target="_blank" rel="noopener noreferrer"}
 
-<!--- [Radarr - How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime){:target="_blank" rel="noopener noreferrer"}-->
 <!--- [Radarr - How to setup Quality Profiles French](/Radarr/radarr-setup-quality-profiles-french){:target="_blank" rel="noopener noreferrer"}-->
 
 --8<-- "includes/support.md"
@@ -22,8 +22,9 @@ Here you will find a collection of Recyclarr configs based on the following guid
 | ------------------------------------- | --------------------------------------------------- |
 | [HD Bluray + WEB](#hd-bluray-web)     | [WEB-1080p](#web-1080p)                             |
 | [UHD Bluray + WEB](#uhd-bluray-web)   | [WEB-2160p](#web-2160p)                             |
-| [Remux + WEB 1080p](#remux-web-1080p) | [French WEB-1080p MULTi](#french-web-1080p-multi)   |
-| [Remux + WEB 2160p](#remux-web-2160p) | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
+| [Remux + WEB 1080p](#remux-web-1080p) | [Anime](#anime)
+| [Remux + WEB 2160p](#remux-web-2160p) | [French WEB-1080p MULTi](#french-web-1080p-multi)   |
+| [Anime](#anime)                       | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
 |                                       | [French Anime MULTi](#french-anime-multi)           |
 |                                       | [French Anime VOSTFR](#french-anime-vostfr)         |
 
@@ -105,6 +106,28 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
 ---
 
+### Anime
+
+??? question "Anime - [CLICK TO EXPAND]"
+
+    It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
+
+	The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+	The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+	
+	!!! info ""
+		Nyaa is a public tracker while AB is an invite only tracker.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/anime.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
 ## Sonarr
 
 ---
@@ -137,6 +160,28 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
     ```yaml
     [[% filter indent(width=4) %]][[% include 'recyclarr-configs/sonarr/web-2160p-v4.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Anime
+
+??? question "Anime - [CLICK TO EXPAND]"
+
+    It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
+
+	The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+	The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+	
+	!!! info ""
+		Nyaa is a public tracker while AB is an invite only tracker.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/sonarr/anime-v4.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
