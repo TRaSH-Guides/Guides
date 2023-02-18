@@ -968,7 +968,7 @@ I also made 3 guides related to this one.
 
 ??? question "Upscaled - [CLICK TO EXPAND]"
 
-    This custom format is used to prevent Radarr from grabing upscaled releases.
+    This custom format is used to prevent Radarr from grabbing upscaled releases.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
