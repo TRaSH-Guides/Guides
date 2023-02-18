@@ -19,7 +19,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?!.*\\b(HDR(\\b|\\d)))(?!.*\\b(SDR)\\b)(?!.*\\b(HLG(\\b|\\d)))(?!.*\\b(PQ)\\b)"
       }
     },
     {
