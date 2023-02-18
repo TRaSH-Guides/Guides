@@ -53,7 +53,7 @@ I also made 3 guides related to this one.
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
 | [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)            |
-| [Criterion Collection](#criterion-collection) |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)       |
+| [Criterion Collection](#criterion-collection) | [Upscaled](#upscaled) | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)       |
 | [Masters of Cinema](#masters-of-cinema)       |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Hulu](#hulu)          |
 | [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Netflix](#nf)         |
 | [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)    |
@@ -958,6 +958,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265-hd.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Upscaled
+
+??? question "Upscaled - [CLICK TO EXPAND]"
+
+    This custom format is used to prevent Radarr from grabing upscaled releases.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/upscaled.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
