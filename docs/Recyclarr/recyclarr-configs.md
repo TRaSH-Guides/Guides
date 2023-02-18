@@ -22,9 +22,9 @@ Here you will find a collection of Recyclarr configs based on the following guid
 | ------------------------------------- | --------------------------------------------------- |
 | [HD Bluray + WEB](#hd-bluray-web)     | [WEB-1080p](#web-1080p)                             |
 | [UHD Bluray + WEB](#uhd-bluray-web)   | [WEB-2160p](#web-2160p)                             |
-| [Remux + WEB 1080p](#remux-web-1080p) | [Anime](#anime)
+| [Remux + WEB 1080p](#remux-web-1080p) | [Anime (Sonarr)](#anime-sonarr)                     |
 | [Remux + WEB 2160p](#remux-web-2160p) | [French WEB-1080p MULTi](#french-web-1080p-multi)   |
-| [Anime](#anime)                       | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
+| [Anime (Radarr)](#anime-radarr)       | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
 |                                       | [French Anime MULTi](#french-anime-multi)           |
 |                                       | [French Anime VOSTFR](#french-anime-vostfr)         |
 
@@ -106,17 +106,17 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
 ---
 
-### Anime
+### Anime (Radarr)
 
-??? question "Anime - [CLICK TO EXPAND]"
+??? question "Anime (Radarr) - [CLICK TO EXPAND]"
 
     It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
-	The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-	The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
-	
-	!!! info ""
-		Nyaa is a public tracker while AB is an invite only tracker.
+    The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+    The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+
+    !!! info ""
+        Nyaa is a public tracker while AB is an invite only tracker.
 
 ??? example "YAML - [CLICK TO EXPAND]"
 
@@ -166,17 +166,17 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
 ---
 
-### Anime
+### Anime (Sonarr)
 
-??? question "Anime - [CLICK TO EXPAND]"
+??? question "Anime (Sonarr) - [CLICK TO EXPAND]"
 
     It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
-	The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-	The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
-	
-	!!! info ""
-		Nyaa is a public tracker while AB is an invite only tracker.
+    The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+    The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+
+    !!! info ""
+        Nyaa is a public tracker while AB is an invite only tracker.
 
 ??? example "YAML - [CLICK TO EXPAND]"
 
