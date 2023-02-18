@@ -1,11 +1,11 @@
 ??? abstract "Unwanted - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
-    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                       | {{ radarr['cf']['br-disk']['trash_score'] }}         | {{ radarr['cf']['br-disk']['trash_id'] }}         |
-    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                                 | {{ radarr['cf']['lq']['trash_score'] }}              | {{ radarr['cf']['lq']['trash_id'] }}              |
-    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:             | {{ radarr['cf']['x265-hd']['trash_score'] }}         | {{ radarr['cf']['x265-hd']['trash_id'] }}         |
-    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                                 | {{ radarr['cf']['3d']['trash_score'] }}              | {{ radarr['cf']['3d']['trash_id'] }}              |
-    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)                     | {{ radarr['cf']['upscaled']['trash_score'] }}        | {{ radarr['cf']['upscaled']['trash_id'] }}              |
+    | Custom Format                                                                                           | Score                                         | Trash ID                                   |
+    | ------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
+    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           | {{ radarr['cf']['br-disk']['trash_score'] }}  | {{ radarr['cf']['br-disk']['trash_id'] }}  |
+    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                     | {{ radarr['cf']['lq']['trash_score'] }}       | {{ radarr['cf']['lq']['trash_id'] }}       |
+    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning: | {{ radarr['cf']['x265-hd']['trash_score'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}  |
+    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                     | {{ radarr['cf']['3d']['trash_score'] }}       | {{ radarr['cf']['3d']['trash_id'] }}       |
+    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)         | {{ radarr['cf']['upscaled']['trash_score'] }} | {{ radarr['cf']['upscaled']['trash_id'] }} |
 
     ------
 
