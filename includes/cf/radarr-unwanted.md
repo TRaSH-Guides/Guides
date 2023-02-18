@@ -18,4 +18,4 @@
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
 
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
-    - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabing upscalded releases.
+    - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
