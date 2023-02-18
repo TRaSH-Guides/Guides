@@ -1,3 +1,13 @@
+# 2023-02-18 21:45
+**[New]**
+- [Radarr] New CF `Upscaled` - A custom format that matches the most commonly used terms in upscaled releases.
+
+**[Updated]**
+- [Starr] Rewrote almost all the regex for the HDR metadata CFs to be oneliners, to prevent false matches from happening.
+
+**[Fixed]**
+- None
+
 # 2023-02-17 22:40
 **[New]**
 - None
