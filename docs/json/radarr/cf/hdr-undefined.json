@@ -55,7 +55,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(HLG)\\b"
+        "value": "\\b(HLG(\\b|\\d))"
       }
     },
     {

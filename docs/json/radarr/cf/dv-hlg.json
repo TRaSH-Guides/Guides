@@ -1,6 +1,7 @@
 {
   "trash_id": "55d53828b9d81cbe20b02efd00aa0efd",
   "trash_score": "1500",
+  "trash_regex": "https://regex101.com/r/Bc7NTL/2",
   "name": "DV HLG",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -10,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HLG)\\b)"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HLG(\\b|\\d)))"
       }
     }
   ]
