@@ -132,7 +132,5 @@ Now that you have a `data` folder, you can follow the normal folder structure re
 
 These subfolders you need to create yourself using your preferred method. Set your permissions accordingly as well. If you use ACLs on the datasets you can replicate the usual 775/664 (UMASK 002) or 755/644 (UMASK 022) recommendation, but this guide only covers the use of basic permissions for mounting and expects the end user to fine-tune permissions via chmod, chown, and uid/gid/umask settings on the applications that will be utilizing the share.
 
-------
-
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
