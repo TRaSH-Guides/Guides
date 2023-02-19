@@ -10,3 +10,4 @@ Select your desired method of installation:
 - [Native](/Hardlinks/How-to-setup-for/Native/)
 - [Synology](/Hardlinks/How-to-setup-for/Synology/)
 - [Unraid](/Hardlinks/How-to-setup-for/Unraid/)
+- [TrueNAS Core](/Hardlinks/How-to-setup-for/TrueNAS-Core/)
