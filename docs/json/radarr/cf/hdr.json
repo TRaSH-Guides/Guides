@@ -1,7 +1,6 @@
 {
   "trash_id": "e61e28db95d22bedcadf030b8f156d96",
   "trash_score": "500",
-  "trash_regex": "https://regex101.com/r/Jy24ye/2",
   "name": "HDR",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -11,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(HDR)\\b)(?!.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?!.*\\b(SDR)\\b)(?!.*\\b(HLG(\\b|\\d)))(?!.*\\b(PQ)\\b)"
+        "value": "^(?=.*\\b(HDR)\\b)(?!.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?!.*\\b(SDR)\\b)(?!.*\\b(HLG)\\b)(?!.*\\b(PQ)\\b)"
       }
     },
     {

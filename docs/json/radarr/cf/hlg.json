@@ -1,7 +1,6 @@
 {
   "trash_id": "9364dd386c9b4a1100dde8264690add7",
   "trash_score": "500",
-  "trash_regex": "https://regex101.com/r/gAoHQt/1",
   "name": "HLG",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -11,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(HLG(\\b|\\d)))(?!.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?!.*\\b(HDR(\\b|\\d)))(?!.*\\b(SDR)\\b)(?!.*\\b(PQ)\\b)"
+        "value": "^(?=.*\\b(HLG)\\b)(?!.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?!.*\\b(HDR(\\b|\\d)))(?!.*\\b(SDR)\\b)(?!.*\\b(PQ)\b)"
       }
     }
   ]
