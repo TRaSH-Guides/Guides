@@ -72,6 +72,7 @@ radarr:
           # - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
           # - f537cf427b64c38c8e36298f657e4828 # Scene
           # - 0a3f082873eb454bde444150b70253cc # Extras
+          # - bfd8eb01832d646a0a89c4deb46f8564 # Upscaled
           # Resolution
           - 820b09bb9acbfde9c35c71e0e565dad8 # 1080p
           - fb392fb0d61a010ae38e49ceaa24a1ef # 2160p

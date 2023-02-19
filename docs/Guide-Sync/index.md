@@ -60,15 +60,9 @@ Just enable the Custom Formats/Release Profiles you want.
 
 ## Recyclarr
 
-It's possible with [Recyclarr](https://github.com/rcdailey/recyclarr){:target="_blank" rel="noopener noreferrer"}
+[Recyclarr Info](/Recyclarr/){:target="_blank" rel="noopener noreferrer"}
 
-Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler.
-
-[Instructions](https://github.com/rcdailey/recyclarr#getting-started){:target="_blank" rel="noopener noreferrer"}
-
-### Recyclarr Config Files
-
-[Recyclarr Config Files](/Recyclarr/){:target="_blank" rel="noopener noreferrer"}
+[Recyclarr Documentation](https://recyclarr.dev/wiki/){:target="_blank" rel="noopener noreferrer"}
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
