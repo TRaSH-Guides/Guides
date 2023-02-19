@@ -20,16 +20,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(HDR(10)?(?!\\+))\\b)(?=.*\\b(DV|DoVi)\\b)"
-      }
-    },
-    {
-      "name": "Not HDR10",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bHDR10(\\b[^+|Plus])"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HDR(10)?(?!\\+))\\b)"
       }
     },
     {
