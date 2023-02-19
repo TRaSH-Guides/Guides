@@ -1,3 +1,33 @@
+# 2023-02-19 13:30
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] Fix mistakes in changes to the HDR metadata CFs - Change some regex to correctly match `DV`, `HDR10` and `DV (FEL)`.
+
+# 2023-02-18 21:45
+**[New]**
+- [Radarr] New CF `Upscaled` - A custom format that matches the most commonly used terms in upscaled releases.
+
+**[Updated]**
+- [Starr] Rewrote almost all the regex for the HDR metadata CFs to be oneliners, to prevent false matches from happening.
+
+**[Fixed]**
+- None
+
+# 2023-02-17 22:40
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] Added `HLG(10)` to CF `SDR` - For proper scoring
+
 # 2023-02-17 14:50
 **[New]**
 - [Sonarr] Added Comedy Central streaming service to the Sonarr custom formats and release propfile.
