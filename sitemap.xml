@@ -186,6 +186,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Hardlinks/How-to-setup-for/TrueNAS-Core/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Hardlinks/How-to-setup-for/Unraid/</loc>
          <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
