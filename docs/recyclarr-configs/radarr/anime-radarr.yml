@@ -24,23 +24,24 @@ radarr:
           - 9edaeee9ea3bcd585da9b7c0ac3fc54f # Anime Web Tier 04 (Official Subs)
           - 22d953bbe897857b517928f3652b8dd3 # Anime Web Tier 05 (FanSubs)
           - a786fbc0eae05afe3bb51aee3c83a9d4 # Anime Web Tier 06 (FanSubs)
-          - 06b6542a47037d1e33b15aa3677c2365 # Anime Raws
           - b0fdc5897f68c9a68c70c25169f77447 # Anime LQ Groups
-          - 15a05bc7c1a36e2b57fd628f8977e2fc # AV1
           - c259005cbaeb5ab44c06eddb4751e70c # v0
           - 5f400539421b8fcf71d51e6384434573 # v1
           - 3df5e6dfef4b09bb6002f732bed5b774 # v2
           - db92c27ba606996b146b57fbe6d09186 # v3
           - d4e5e842fad129a3c097bdb2d20d31a0 # v4
-          - a5d148168c4506b55cf53984107c396e # 10bit
-          - b23eae459cc960816f2d6ba84af45055 # Dubs Only
-          - 9172b2f683f6223e3a1846427b417a3d # VOSTFR
+          
           # Anime Streaming Services
           - 60f6d50cbd3cfc3e9a8c00e3a30c3114 # VRV
         quality_profiles:
           - name: Remux-1080p - Anime
             reset_unmatched_scores: true
-      # Adjustable scoring section
+      # Custom Scoring
+      - trash_ids:
+          - 9172b2f683f6223e3a1846427b417a3d # VOSTFR
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: -10000
       - trash_ids:
           - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
         quality_profiles:
@@ -51,6 +52,7 @@ radarr:
         quality_profiles:
           - name: Remux-1080p - Anime
             score: 1000 # required as this differs from the standard scoring
+      # Adjustable scoring section
       - trash_ids:
           - 4a3b087eea2ce012fcc1ce319259a3be # Anime Dual Audio
         quality_profiles:
@@ -61,3 +63,18 @@ radarr:
         quality_profiles:
           - name: Remux-1080p - Anime
             score: 0 # adjust as desired
+      - trash_ids:
+          - a5d148168c4506b55cf53984107c396e # 10bit
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: 0 # adjust as desired
+      - trash_ids:
+          - 06b6542a47037d1e33b15aa3677c2365 # Anime Raws
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: -10000 # adjust as desired
+      - trash_ids:
+          - b23eae459cc960816f2d6ba84af45055 # Dubs Only
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: -10000 # adjust as desired
