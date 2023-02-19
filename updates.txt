@@ -1,3 +1,13 @@
+# 2023-02-19 13:30
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] Fix mistakes in changes to the HDR metadata CFs - Change some regex to correctly match `DV`, `HDR10` and `DV (FEL)`.
+
 # 2023-02-18 21:45
 **[New]**
 - [Radarr] New CF `Upscaled` - A custom format that matches the most commonly used terms in upscaled releases.
