@@ -1,4 +1,4 @@
-# TRaSH Sync
+# Guide Sync
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
@@ -65,6 +65,10 @@ It's possible with [Recyclarr](https://github.com/rcdailey/recyclarr){:target="_
 Automatically mirror TRaSH guides to your Sonarr/Radarr instance based on your setup scheduler.
 
 [Instructions](https://github.com/rcdailey/recyclarr#getting-started){:target="_blank" rel="noopener noreferrer"}
+
+### Recyclarr Config Files
+
+[Recyclarr Config Files](/Recyclarr/){:target="_blank" rel="noopener noreferrer"}
 
 {! include-markdown "../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->

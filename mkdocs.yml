@@ -88,6 +88,8 @@ plugins:
         How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
         How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
         How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
+        # Random redirects
+        Misc/trash-sync.md: Guide-Sync/guide-sync.md
         # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
