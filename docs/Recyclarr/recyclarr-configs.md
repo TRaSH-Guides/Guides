@@ -121,7 +121,7 @@ Here you will find a collection of Recyclarr configs based on the following guid
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/anime.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/anime-radarr.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -181,7 +181,7 @@ Here you will find a collection of Recyclarr configs based on the following guid
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/sonarr/anime-v4.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/sonarr/anime-sonarr-v4.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
