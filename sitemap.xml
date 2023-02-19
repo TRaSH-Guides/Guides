@@ -141,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Guide-Sync/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Hardlinks/Check-if-hardlinks-are-working/</loc>
          <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
@@ -207,11 +212,6 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Misc/how-to-provide-a-docker-compose/</loc>
-         <lastmod>2023-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://trash-guides.info/Misc/trash-sync/</loc>
          <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -337,6 +337,21 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Radarr/Tips/Sync-2-radarr-sonarr/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Recyclarr/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Recyclarr/recyclarr-configs-sqp/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Recyclarr/recyclarr-configs/</loc>
          <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>

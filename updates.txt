@@ -1,3 +1,14 @@
+# 2023-02-19 20:30
+**[New]**
+- [Hardlinks Guide] NEW Guide for Truenas Core.
+- [Guide-Sync] Added link to recyclarr landing page with configs.
+
+**[Updated]**
+- [Guide] Moved the trash-sync page to it's own Guide-Sync entry on the home screen.
+
+**[Fixed]**
+- None
+
 # 2023-02-19 13:30
 **[New]**
 - None
