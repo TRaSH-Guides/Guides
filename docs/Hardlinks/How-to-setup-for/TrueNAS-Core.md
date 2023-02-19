@@ -16,7 +16,7 @@
 
 !!! warning
 
-    To get hardlinks and atomic moves working with ZFS you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example. 
+    To get hardlinks and atomic moves working with ZFS you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example.
 
 For this example I'm using the dataset from my existing setup, `Media`. The naming isn't important as host machine mappings can be manipulated as desired.
 
