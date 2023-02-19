@@ -1,6 +1,6 @@
 # This config file is for use with Sonarr V4 only
 sonarr:
-  sonarr: # A custom name used to identify this particular instance.
+  sonarr:  # A custom name used to identify this particular instance.
     base_url: [sonarr_url_goes_here]
     api_key: [api_key_goes_here]
 
