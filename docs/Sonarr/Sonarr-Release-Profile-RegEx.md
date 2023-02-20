@@ -385,7 +385,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i
+/^(?=.*(1080|720))(?=.*((x|h|X|H)[ ._-]?265|hevc)).*/i
 ```
 
 ??? success "example - [CLICK TO EXPAND]"
