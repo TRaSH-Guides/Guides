@@ -108,7 +108,7 @@ To enable terminal, you need to enable SSH in the Synology Settings.
 
 ![!synology-control-panel](images/synology-ssh.png)
 
-Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} to SSH into your Synology.
+Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} or Powershell/Terminal to SSH into your Synology.
 
 Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.
 
