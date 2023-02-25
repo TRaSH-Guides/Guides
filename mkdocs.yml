@@ -72,7 +72,7 @@ plugins:
   - redirects:
       redirect_maps:
         updates.txt: updates.txt
-        discord.md: https://discord.gg/Vau8dZ3
+        discord.md: https://discord.gg/4K2kdvwzFh
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr redirects
         Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
