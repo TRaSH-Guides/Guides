@@ -141,7 +141,7 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
+{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
@@ -229,7 +229,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
+{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
