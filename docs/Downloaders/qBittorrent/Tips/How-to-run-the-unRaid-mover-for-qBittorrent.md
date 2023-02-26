@@ -50,7 +50,7 @@ After you installed the needed Plugins it's time to configure everything.
 
 The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.
 
-You can choose from the following 2 options how you want to install it, depending what you preferce.
+You can choose from the following 2 options how you want to install it, depending what you preference.
 
 - [User scripts](#user-scripts)
 - [Go File](#go-file)
@@ -132,6 +132,8 @@ qbt_pass = None
 - `qbt_host` => The URL you use to access qBittorrent locally. (*the* `"` *should remain*)
 - `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
 - `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
+
+!!! danger "If you have authentication enabled. Add `'` either side of your User/Password."
 
 !!! warning ""
     Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 68**:
