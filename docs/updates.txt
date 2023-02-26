@@ -1,12 +1,13 @@
-# 2023-02-26 18:00
+# 2023-02-26 19:45
 **[New]**
 - None
 
 **[Updated]**
-- None
+- [Guide - unRaid qBit Mover script] Added If you have authentication enabled. Add `'` either side of your User/Password.
+- [Guide - Guide Sync] Move features to a table instead of the footnotes.
 
 **[Fixed]**
-- None
+- [Radarr] CF `Upscaled` in wrong quality profile.
 
 # 2023-02-19 20:30
 **[New]**
