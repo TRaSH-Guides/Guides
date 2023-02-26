@@ -2,7 +2,7 @@
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
-| Option                                                                             | Notifiarr | Recyclarr |
+| Feature                                                                            | Notifiarr | Recyclarr |
 | ---------------------------------------------------------------------------------- | :-------: | :-------: |
 | GUI (graphical user interface)                                                     |     v     |           |
 | Radarr Custom Formats                                                              |     v     |     v     |
