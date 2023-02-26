@@ -2,18 +2,23 @@
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
-- GUI (graphical user interface) [^1]
-- Radarr Custom Formats [^1] [^2]
-- Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile [^1]
-- Radarr Clear all Custom Formats [^1]
-- Radarr Scores [^1] [^2]
-- Radarr Quality Settings (File Size) [^1] [^2]
-- Radarr Naming Scheme [^1]
-- Sonarr Release Profile RegEx [^1] [^2]
-- Sonarr v4 Custom Format [^1] [^2]
-- Sonarr Clear all Release Profiles/Custom Formats [^1]
-- Sonarr Quality Settings (File Size) [^1] [^2]
-- Sonarr Naming Scheme [^1]
+| Option                                                                             | Notifiarr | Recyclarr |
+| ---------------------------------------------------------------------------------- | :-------: | :-------: |
+| GUI (graphical user interface)                                                     |     v     |           |
+| Radarr Custom Formats                                                              |     v     |     v     |
+| Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile |     v     |           |
+| Radarr predefined config files available                                           |           |     v     |
+| Radarr Clear all Custom Formats                                                    |     v     |           |
+| Radarr Scores                                                                      |     v     |     v     |
+| Radarr Quality Settings (File Size)                                                |     v     |     v     |
+| Radarr Naming Scheme                                                               |     v     |           |
+| Sonarr v3 Release Profile RegEx                                                    |     v     |     v     |
+| Sonarr v4 Custom Formats                                                           |     v     |     v     |
+| Sonarr v4 predefined config files available                                        |           |     v     |
+| Sonarr v3/v4 Clear all Release Profiles/Custom Formats                             |     v     |           |
+| Sonarr v3/v4 Scores                                                                |     v     |     v     |
+| Sonarr v3/v4 Quality Settings (File Size)                                          |     v     |     v     |
+| Sonarr v3/v4 Naming Scheme                                                         |     v     |           |
 
 ------
 
@@ -64,11 +69,4 @@ Just enable the Custom Formats/Release Profiles you want.
 
 [Recyclarr Documentation](https://recyclarr.dev/wiki/){:target="_blank" rel="noopener noreferrer"}
 
-{! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
-
-[^1]:
-    Notifiarr
-
-[^2]:
-    Recyclarr
+--8<-- "includes/support.md"
