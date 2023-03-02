@@ -21,24 +21,29 @@
       "id": "anime-radarr"
     },
     {
-      "template": "radarr/sqp-1.yml",
-      "id": "sqp-1"
+      "template": "radarr/sqp/sqp-1.yml",
+      "id": "sqp-1",
+      "hidden": true
     },
     {
-      "template": "radarr/sqp-2.yml",
-      "id": "sqp-2"
+      "template": "radarr/sqp/sqp-2.yml",
+      "id": "sqp-2",
+      "hidden": true
     },
     {
-      "template": "radarr/sqp-3.yml",
-      "id": "sqp-3"
+      "template": "radarr/sqp/sqp-3.yml",
+      "id": "sqp-3",
+      "hidden": true
     },
     {
-      "template": "radarr/sqp-4.yml",
-      "id": "sqp-4"
+      "template": "radarr/sqp/sqp-4.yml",
+      "id": "sqp-4",
+      "hidden": true
     },
     {
-      "template": "radarr/sqp-5.yml",
-      "id": "sqp-5"
+      "template": "radarr/sqp/sqp-5.yml",
+      "id": "sqp-5",
+      "hidden": true
     }
   ],
   "sonarr": [
