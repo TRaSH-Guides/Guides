@@ -1,6 +1,6 @@
 radarr:
   radarr-anime:  # A custom name used to identify this particular instance.
-    base_url: [sonarr_url_goes_here]
+    base_url: [radarr_url_goes_here]
     api_key: [api_key_goes_here]
 
     quality_definition:
