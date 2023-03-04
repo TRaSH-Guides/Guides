@@ -36,6 +36,6 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 This can be done also automatically with one of the TRaSH Sync Applications,
 
-more info can be found [Here](/Misc/trash-sync/){:target="_blank" rel="noopener noreferrer"}
+more info can be found [Here](/Guide-Sync/){:target="_blank" rel="noopener noreferrer"}
 
 --8<-- "includes/support.md"
