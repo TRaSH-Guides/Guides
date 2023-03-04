@@ -14,15 +14,6 @@
       }
     },
     {
-      "name": "SPHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bSPHD\\b"
-      }
-    },
-    {
       "name": "2160p",
       "implementation": "ResolutionSpecification",
       "negate": false,
