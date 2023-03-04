@@ -1,3 +1,15 @@
+# 2023-03-04 17:15
+**[New]**
+- None
+
+**[Updated]**
+- [Radarr] Moved RlsGrp `SPHD` to the lowest UHD tier, because they often use Lower Quality sources for their releases.
+- [Radarr] Added RlsGrp `LAMA` to the `LQ` CF, uploading 480p cam shit as 1080p bluray and just in general low quality.
+- [Radarr] CF `Special Edition`, Special Edition matches `IMAX Edition`, so adding unnecessary extra scoring to releases that already match `IMAX`.
+
+**[Fixed]**
+- [Guide] Fix broken links.
+
 # 2023-02-26 19:45
 **[New]**
 - None
