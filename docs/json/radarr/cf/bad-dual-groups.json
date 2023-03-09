@@ -104,6 +104,15 @@
       }
     },
     {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(-ONLYMOViE)\\b"
+      }
+    },
+    {
       "name": "PD",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
