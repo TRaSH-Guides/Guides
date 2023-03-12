@@ -1,12 +1,19 @@
-# 2023-03-12 10:45
+# 2023-03-12 16:45
 **[New]**
 - None
 
 **[Updated]**
-- None
+- [Radarr] Add a Regrade condition to the `Upscaled` CF.
+- [Radarr] Add `ONLYMOViE` to the `Bad Dual Groups` custom format.
+- [Sonarr v3] Update screenshots to reflect current settings.
+- [Sonarr v3] Tried to make it more clear that you need to use 4 separate profiles.
+- [Downloaders - SABnzbd] Updated screenshots to match the new Starr apps layouts.
+- [Downloaders - SABnzbd] Added instructions how to whitelist your host if you get a `Unable to connect to SABnzbd` error.
 
 **[Fixed]**
-- None
+- [Radarr] Fix the `Upscale`d CF not matching `Upscale` in the release title.
+- [Starr] Add No `HDR10/HDR10+` to CF `HDR`, To prevent double scoring.
+- [Radarr] Exclude `Open Matte` from `Special Edition` CF.
 
 # 2023-03-04 17:15
 **[New]**
