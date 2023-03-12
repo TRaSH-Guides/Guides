@@ -59,33 +59,6 @@
       }
     },
     {
-      "name": "MUGiWARA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MUGiWARA)\\b"
-      }
-    },
-    {
-      "name": "NOH3LL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(NOH3LL)\\b"
-      }
-    },
-    {
-      "name": "OTF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(OTF)\\b"
-      }
-    },
-    {
       "name": "RONiN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
