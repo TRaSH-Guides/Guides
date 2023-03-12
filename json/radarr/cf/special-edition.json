@@ -15,21 +15,30 @@
       }
     },
     {
-      "name": "Not Theatrical ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "Theatrical"
-      }
-    },
-    {
       "name": "Not IMAX Edition",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
         "value": "\\b(IMAX[ ._-]Edition)\\b"
+      }
+    },
+    {
+      "name": "Not Open Matte",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\b(Open[ ._-]?Matte)\\b"
+      }
+    },
+    {
+      "name": "Not Theatrical",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "Theatrical"
       }
     }
   ]

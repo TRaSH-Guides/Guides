@@ -41,7 +41,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#macro-rendering-error">
+<a class="md-skip" href="#collection-of-recyclarr-sqp-configs">
           Skip to content
         </a>
 </div>
@@ -927,6 +927,51 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#index">
+    INDEX
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#radarr">
+    Radarr
+  </a>
+<nav aria-label="Radarr" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#streaming-optimized-sqp-1">
+    Streaming Optimized (SQP-1)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uhd-remuxblurayimax-e-sqp-2">
+    UHD Remux|Bluray|IMAX-E (SQP-2)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uhd-remuximax-e-sqp-3">
+    UHD Remux|IMAX-E (SQP-3)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uhd-webdlimax-e-sqp-4">
+    UHD WEBDL|IMAX-E (SQP-4)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#uhd-blurayimax-e-sqp-5">
+    UHD Bluray|IMAX-E (SQP-5)
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -939,27 +984,706 @@
 <a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/raw/master/docs/Recyclarr/recyclarr-configs-sqp.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
 </a>
-<h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link"></a></h1>
-<p><strong>TemplateNotFound</strong>: recyclarr-configs/radarr/sqp-1.yml</p>
-<div class="highlight"><pre><span></span><code><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">last</span><span class="p">):</span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/mkdocs_macros/plugin.py"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">render</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">md_template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="o">**</span><span class="n">page_variables</span><span class="p">)</span>
-<span class="w">           </span><span class="o">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/jinja2/environment.py"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">1301</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">render</span>
-<span class="w">    </span><span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">handle_exception</span><span class="p">()</span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/jinja2/environment.py"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">936</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">handle_exception</span>
-<span class="w">    </span><span class="n">raise</span><span class="w"> </span><span class="n">rewrite_traceback_stack</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)</span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"&lt;template&gt;"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">53</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">top</span><span class="o">-</span><span class="n">level</span><span class="w"> </span><span class="n">template</span><span class="w"> </span><span class="n">code</span>
-<span class="w">  </span><span class="n">File</span><span class="w"> </span><span class="s2">"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/jinja2/loaders.py"</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="mi">218</span><span class="p">,</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">get_source</span>
-<span class="w">    </span><span class="n">raise</span><span class="w"> </span><span class="n">TemplateNotFound</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>
-<span class="n">jinja2</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">TemplateNotFound</span><span class="p">:</span><span class="w"> </span><span class="n">recyclarr</span><span class="o">-</span><span class="n">configs</span><span class="o">/</span><span class="n">radarr</span><span class="o">/</span><span class="n">sqp</span><span class="o">-</span><span class="mf">1.</span><span class="n">yml</span>
+<h1 id="collection-of-recyclarr-sqp-configs">Collection of Recyclarr SQP configs<a class="headerlink" href="#collection-of-recyclarr-sqp-configs" title="Permanent link"></a></h1>
+<p>The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences. Here you will find a collection of Recyclarr configs based on the SQPs:</p>
+<ul>
+<li><a href="/SQP/1" rel="noopener noreferrer" target="_blank">Streaming Optimized (SQP-1)</a></li>
+<li><a href="/SQP/2" rel="noopener noreferrer" target="_blank">UHD Remux|Bluray|IMAX-E (SQP-2)</a></li>
+<li><a href="/SQP/3" rel="noopener noreferrer" target="_blank">UHD Remux|IMAX-E (SQP-3)</a></li>
+<li><a href="/SQP/4" rel="noopener noreferrer" target="_blank">UHD WEBDL|IMAX-E (SQP-4)</a></li>
+<li><a href="/SQP/5" rel="noopener noreferrer" target="_blank">UHD Bluray|IMAX-E (SQP-5)</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Anything here is for private use only and not for public use. <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></li>
+<li>I expect from the users that got the link to this page to honour it. <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></li>
+<li>Yes, you can talk in the public channels that you use a specific SQP.</li>
+<li>If others are interested they can join.</li>
+</ul>
+</div>
+<hr/>
+<div class="admonition question">
+<p class="admonition-title">Questions or Suggestions?</p>
+<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
+</div>
+<hr/>
+<h2 id="index">INDEX<a class="headerlink" href="#index" title="Permanent link"></a></h2>
+<hr/>
+<table>
+<thead>
+<tr>
+<th>Radarr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#streaming-optimized-sqp-1">Streaming Optimized (SQP-1)</a></td>
+</tr>
+<tr>
+<td><a href="#uhd-remuxblurayimax-e-sqp-2">UHD Remux|Bluray|IMAX-E (SQP-2)</a></td>
+</tr>
+<tr>
+<td><a href="#uhd-remuximax-e-sqp-3">UHD Remux|IMAX-E (SQP-3)</a></td>
+</tr>
+<tr>
+<td><a href="#uhd-webdlimax-e-sqp-4">UHD WEBDL|IMAX-E (SQP-4)</a></td>
+</tr>
+<tr>
+<td><a href="#uhd-blurayimax-e-sqp-5">UHD Bluray|IMAX-E (SQP-5)</a></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h2>
+<hr/>
+<h3 id="streaming-optimized-sqp-1">Streaming Optimized (SQP-1)<a class="headerlink" href="#streaming-optimized-sqp-1" title="Permanent link"></a></h3>
+<details class="question">
+<summary>Streaming Optimized (SQP-1) - [CLICK TO EXPAND]</summary>
+<ul>
+<li>You want maximum compatibility between all devices and still a HQ releases.</li>
+<li>You run 2 instances of Radarr and want both version or just for the 1080p ones.</li>
+<li>You want to have minimum till none transcoding for low powered devices or remote streaming.</li>
+<li>If available for you Streaming optimized. (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)</li>
+<li>Small sizes.</li>
+</ul>
+</details>
+<details class="example">
+<summary>YAML - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">radarr</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">radarr-sqp-streaming</span><span class="p">:</span><span class="w">  </span><span class="c1"># A custom name used to identify this particular instance.</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+
+<span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-streaming</span>
+
+<span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Movie Versions</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
+<span class="w">          </span><span class="c1"># Uncomment the next line(s) if you prefer IMAX/IMAX Enhanced to BHDStudio</span>
+<span class="w">          </span><span class="c1"># - eecf3a857724171f968a66cb5719e152  # IMAX</span>
+<span class="w">          </span><span class="c1"># - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced</span>
+<span class="w">          </span><span class="c1"># HQ Release Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5153ec7413d9dae44e24275589b5e944</span><span class="w">  </span><span class="c1"># BHDStudio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20f169ef63c5f40c2def54abaf4438e</span><span class="w">  </span><span class="c1"># WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">403816d65392c79236dcb6dd591aeda4</span><span class="w">  </span><span class="c1"># WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7718d7a3ce595f289bfee26adc178f5</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ae43b294509409a6a13919dedd4764c4</span><span class="w">  </span><span class="c1"># Repack2</span>
+<span class="w">          </span><span class="c1"># Unwanted</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed38b889b31be83fda192888e2286d83</span><span class="w">  </span><span class="c1"># BR-DISK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b8cd450cbfa689c0259a01d9e29ba3d6</span><span class="w">  </span><span class="c1"># 3D</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dc98083864ea246d05a42df0d05f81cc</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
+<span class="w">          </span><span class="c1"># Optional</span>
+<span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
+<span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
+<span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
+<span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
+<span class="w">          </span><span class="c1"># - 5c44f52a8714fdd79bb4d98e2673be1f  # Retags</span>
+<span class="w">          </span><span class="c1"># - f537cf427b64c38c8e36298f657e4828  # Scene</span>
+<span class="w">          </span><span class="c1"># - 0a3f082873eb454bde444150b70253cc  # Extras</span>
+<span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b2be17d608fc88818940cd1833b0b24c</span><span class="w">  </span><span class="c1"># 720p</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|WEB-1080p</span>
+<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="c1"># HQ Release Groups - Optional - Uncomment the next section (10 lines) to enable other Bluray Encodes (less or not streaming optimized)</span>
+<span class="w">      </span><span class="c1"># - trash_ids:</span>
+<span class="w">          </span><span class="c1"># - ed27ebfef2f323e964fb1f61391bcb35  # HD Bluray Tier 01</span>
+<span class="w">        </span><span class="c1"># quality_profiles:</span>
+<span class="w">          </span><span class="c1"># - name: Bluray|WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 1100</span>
+<span class="w">      </span><span class="c1"># - trash_ids:</span>
+<span class="w">          </span><span class="c1"># - c20c8647f2746a1f4c4262b0fbbeeeae  # HD Bluray Tier 02</span>
+<span class="w">        </span><span class="c1"># quality_profiles:</span>
+<span class="w">          </span><span class="c1"># - name: Bluray|WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 1050</span>
+<span class="w">      </span><span class="c1"># --HQ Release Groups section ends--</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">417804f7f2c4308c1f4c5d380d4c4475</span><span class="w">  </span><span class="c1"># ATMOS (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1af239278386be2919e1bcee0bde047e</span><span class="w">  </span><span class="c1"># DD+ ATMOS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a570d4a0e56a2874b64e5bfa55202a1b</span><span class="w">  </span><span class="c1"># FLAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7c2fcae07cbada050a0af3357491d7b</span><span class="w">  </span><span class="c1"># PCM</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">185f1dd7264c4562b9022d963ac37424</span><span class="w">  </span><span class="c1"># DD+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1c1a4c5e823891c75bc50380a6866f73</span><span class="w">  </span><span class="c1"># DTS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">240770601cc226190c367ef59aba7463</span><span class="w">  </span><span class="c1"># AAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2998bd0d90ed5621d8df281e839436e</span><span class="w">  </span><span class="c1"># DD</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3b3a6ac74ecbd56bcdbefa4799fb9df</span><span class="w">  </span><span class="c1"># AMZN</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40e9380490e748672c2522eaaeb692f7</span><span class="w">  </span><span class="c1"># ATVP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84272245b2988854bfb76a16e60baea5</span><span class="w">  </span><span class="c1"># DSNP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">509e5f41146e278f9eab1ddaceb34515</span><span class="w">  </span><span class="c1"># HBO</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5763d1b0ce84aff3b21038eea8e9b8ad</span><span class="w">  </span><span class="c1"># HMAX</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">526d445d4c16214309f0fd2b3be18a89</span><span class="w">  </span><span class="c1"># Hulu</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">170b1d363bd8516fbf3a3eb05d4faff6</span><span class="w">  </span><span class="c1"># NF</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c9fd353f8f5f1baf56dc601c4cb29920</span><span class="w">  </span><span class="c1"># PCOK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|WEB-1080p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">496f355514737f7d83bf7aa4d24f8169</span><span class="w">  </span><span class="c1"># TrueHD Atmos</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f22d89048b01681dde8afe203bf2e95</span><span class="w">  </span><span class="c1"># DTS X</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3cafb66171b47f226146a0770576870f</span><span class="w">  </span><span class="c1"># TrueHD</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcf3ec6938fa32445f590a4da84256cd</span><span class="w">  </span><span class="c1"># DTS-HD MA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8e109e50e0a0b83a5098b056e13bf6db</span><span class="w">  </span><span class="c1"># DTS-HD HRA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f9f847ac70a0af62ea4a08280b859636</span><span class="w">  </span><span class="c1"># DTS-ES</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|WEB-1080p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-10000</span>
 </code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="uhd-remuxblurayimax-e-sqp-2">UHD Remux|Bluray|IMAX-E (SQP-2)<a class="headerlink" href="#uhd-remuxblurayimax-e-sqp-2" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD Remux|Bluray|IMAX-E (SQP-2) - [CLICK TO EXPAND]</summary>
+<ul>
+<li>You got a decent audio setup. (that supports all HD audio formats)</li>
+<li>You got a setup that completely supports DoVi from start to end.</li>
+<li>You do want the highest quality as possible to watch but want to save space for archiving without losing video and audio quality.</li>
+<li>HDR/DoVi (Depending what's offered and often both)</li>
+<li>HD Audio (Atmos, TrueHD etc...)</li>
+<li>You don't want to wait for the HQ Encodes to be released, to watch it.</li>
+</ul>
+</details>
+<details class="example">
+<summary>YAML - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">radarr</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">radarr-sqp-uhd</span><span class="p">:</span><span class="w">  </span><span class="c1"># A custom name used to identify this particular instance.</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+
+<span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">496f355514737f7d83bf7aa4d24f8169</span><span class="w">  </span><span class="c1"># TrueHD Atmos</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f22d89048b01681dde8afe203bf2e95</span><span class="w">  </span><span class="c1"># DTS X</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">417804f7f2c4308c1f4c5d380d4c4475</span><span class="w">  </span><span class="c1"># ATMOS (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1af239278386be2919e1bcee0bde047e</span><span class="w">  </span><span class="c1"># DD+ ATMOS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3cafb66171b47f226146a0770576870f</span><span class="w">  </span><span class="c1"># TrueHD</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcf3ec6938fa32445f590a4da84256cd</span><span class="w">  </span><span class="c1"># DTS-HD MA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a570d4a0e56a2874b64e5bfa55202a1b</span><span class="w">  </span><span class="c1"># FLAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7c2fcae07cbada050a0af3357491d7b</span><span class="w">  </span><span class="c1"># PCM</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8e109e50e0a0b83a5098b056e13bf6db</span><span class="w">  </span><span class="c1"># DTS-HD HRA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">185f1dd7264c4562b9022d963ac37424</span><span class="w">  </span><span class="c1"># DD+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f9f847ac70a0af62ea4a08280b859636</span><span class="w">  </span><span class="c1"># DTS-ES</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1c1a4c5e823891c75bc50380a6866f73</span><span class="w">  </span><span class="c1"># DTS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">240770601cc226190c367ef59aba7463</span><span class="w">  </span><span class="c1"># AAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2998bd0d90ed5621d8df281e839436e</span><span class="w">  </span><span class="c1"># DD</span>
+<span class="w">          </span><span class="c1"># HDR Formats</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e23edd2482476e595fb990b12e7c609c</span><span class="w">  </span><span class="c1"># DV HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">58d6a88f13e2db7f5059c41047876f00</span><span class="w">  </span><span class="c1"># DV</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">55d53828b9d81cbe20b02efd00aa0efd</span><span class="w">  </span><span class="c1"># DV HLG</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a3e19f8f627608af0211acd02bf89735</span><span class="w">  </span><span class="c1"># DV SDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b974a6cd08c1066250f1f177d7aa1225</span><span class="w">  </span><span class="c1"># HDR10+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dfb86d5941bc9075d6af23b09c2aeecd</span><span class="w">  </span><span class="c1"># HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e61e28db95d22bedcadf030b8f156d96</span><span class="w">  </span><span class="c1"># HDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a4d9069cc1fe3242ff9bdaebed239bb</span><span class="w">  </span><span class="c1"># HDR (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">08d6d8834ad9ec87b1dc7ec8148e7a1f</span><span class="w">  </span><span class="c1"># PQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9364dd386c9b4a1100dde8264690add7</span><span class="w">  </span><span class="c1"># HLG</span>
+<span class="w">          </span><span class="c1"># Movie Versions</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f700d29429c023a5734505e77daeaea7</span><span class="w">  </span><span class="c1"># DV (FEL)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
+<span class="w">          </span><span class="c1"># Uncomment the next line if you prefer IMAX Enhanced releases</span>
+<span class="w">          </span><span class="c1"># - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced</span>
+<span class="w">          </span><span class="c1"># HQ Release Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4d74ac4c4db0b64bff6ce0cffef99bf0</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a58f517a70193f8e578056642178419d</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e71939fae578037e7aed3ee219bbe7c1</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 03</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20f169ef63c5f40c2def54abaf4438e</span><span class="w">  </span><span class="c1"># WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">403816d65392c79236dcb6dd591aeda4</span><span class="w">  </span><span class="c1"># WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7718d7a3ce595f289bfee26adc178f5</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ae43b294509409a6a13919dedd4764c4</span><span class="w">  </span><span class="c1"># Repack2</span>
+<span class="w">          </span><span class="c1"># Unwanted</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed38b889b31be83fda192888e2286d83</span><span class="w">  </span><span class="c1"># BR-DISK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b8cd450cbfa689c0259a01d9e29ba3d6</span><span class="w">  </span><span class="c1"># 3D</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">839bea857ed2c0a8e084f3cbdbd65ecb</span><span class="w">  </span><span class="c1"># x265 (no HDR/DV)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
+<span class="w">          </span><span class="c1"># Optional</span>
+<span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
+<span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
+<span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
+<span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
+<span class="w">          </span><span class="c1"># - 5c44f52a8714fdd79bb4d98e2673be1f  # Retags</span>
+<span class="w">          </span><span class="c1"># - f537cf427b64c38c8e36298f657e4828  # Scene</span>
+<span class="w">          </span><span class="c1"># - 0a3f082873eb454bde444150b70253cc  # Extras</span>
+<span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">          </span><span class="c1"># If you and all of your users have a setup that fully supports DV, then uncomment the score line below</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="c1"># score: 0  # overrides default of -10000</span>
+<span class="w">      </span><span class="c1"># If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2899d84dc9372de3408e6d8cc18e9666</span><span class="w">  </span><span class="c1"># x264</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-10000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3b3a6ac74ecbd56bcdbefa4799fb9df</span><span class="w">  </span><span class="c1"># AMZN</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40e9380490e748672c2522eaaeb692f7</span><span class="w">  </span><span class="c1"># ATVP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84272245b2988854bfb76a16e60baea5</span><span class="w">  </span><span class="c1"># DSNP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">509e5f41146e278f9eab1ddaceb34515</span><span class="w">  </span><span class="c1"># HBO</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5763d1b0ce84aff3b21038eea8e9b8ad</span><span class="w">  </span><span class="c1"># HMAX</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">526d445d4c16214309f0fd2b3be18a89</span><span class="w">  </span><span class="c1"># Hulu</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">170b1d363bd8516fbf3a3eb05d4faff6</span><span class="w">  </span><span class="c1"># NF</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c9fd353f8f5f1baf56dc601c4cb29920</span><span class="w">  </span><span class="c1"># PCOK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="uhd-remuximax-e-sqp-3">UHD Remux|IMAX-E (SQP-3)<a class="headerlink" href="#uhd-remuximax-e-sqp-3" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD Remux|IMAX-E (SQP-3) - [CLICK TO EXPAND]</summary>
+<ul>
+<li>You got a decent audio setup. (that supports all HD audio formats)</li>
+<li>You got a setup that completely supports DoVi from start to end.</li>
+<li>HDR/DoVi (Depending what's offered and often both)</li>
+<li>HD Audio (Atmos, TrueHD etc...)</li>
+<li>You want the highest quality possible, with the option to upgrade to IMAX Enhanced.</li>
+</ul>
+</details>
+<details class="example">
+<summary>YAML - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">radarr</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">radarr-sqp-uhd</span><span class="p">:</span><span class="w">  </span><span class="c1"># A custom name used to identify this particular instance.</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+
+<span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">496f355514737f7d83bf7aa4d24f8169</span><span class="w">  </span><span class="c1"># TrueHD Atmos</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f22d89048b01681dde8afe203bf2e95</span><span class="w">  </span><span class="c1"># DTS X</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">417804f7f2c4308c1f4c5d380d4c4475</span><span class="w">  </span><span class="c1"># ATMOS (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1af239278386be2919e1bcee0bde047e</span><span class="w">  </span><span class="c1"># DD+ ATMOS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3cafb66171b47f226146a0770576870f</span><span class="w">  </span><span class="c1"># TrueHD</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcf3ec6938fa32445f590a4da84256cd</span><span class="w">  </span><span class="c1"># DTS-HD MA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a570d4a0e56a2874b64e5bfa55202a1b</span><span class="w">  </span><span class="c1"># FLAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7c2fcae07cbada050a0af3357491d7b</span><span class="w">  </span><span class="c1"># PCM</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8e109e50e0a0b83a5098b056e13bf6db</span><span class="w">  </span><span class="c1"># DTS-HD HRA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">185f1dd7264c4562b9022d963ac37424</span><span class="w">  </span><span class="c1"># DD+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f9f847ac70a0af62ea4a08280b859636</span><span class="w">  </span><span class="c1"># DTS-ES</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1c1a4c5e823891c75bc50380a6866f73</span><span class="w">  </span><span class="c1"># DTS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">240770601cc226190c367ef59aba7463</span><span class="w">  </span><span class="c1"># AAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2998bd0d90ed5621d8df281e839436e</span><span class="w">  </span><span class="c1"># DD</span>
+<span class="w">          </span><span class="c1"># HDR Formats</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e23edd2482476e595fb990b12e7c609c</span><span class="w">  </span><span class="c1"># DV HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">58d6a88f13e2db7f5059c41047876f00</span><span class="w">  </span><span class="c1"># DV</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">55d53828b9d81cbe20b02efd00aa0efd</span><span class="w">  </span><span class="c1"># DV HLG</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a3e19f8f627608af0211acd02bf89735</span><span class="w">  </span><span class="c1"># DV SDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b974a6cd08c1066250f1f177d7aa1225</span><span class="w">  </span><span class="c1"># HDR10+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dfb86d5941bc9075d6af23b09c2aeecd</span><span class="w">  </span><span class="c1"># HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e61e28db95d22bedcadf030b8f156d96</span><span class="w">  </span><span class="c1"># HDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a4d9069cc1fe3242ff9bdaebed239bb</span><span class="w">  </span><span class="c1"># HDR (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">08d6d8834ad9ec87b1dc7ec8148e7a1f</span><span class="w">  </span><span class="c1"># PQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9364dd386c9b4a1100dde8264690add7</span><span class="w">  </span><span class="c1"># HLG</span>
+<span class="w">          </span><span class="c1"># Movie Versions</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f700d29429c023a5734505e77daeaea7</span><span class="w">  </span><span class="c1"># DV (FEL)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
+<span class="w">          </span><span class="c1"># Uncomment the next line if you prefer IMAX Enhanced releases</span>
+<span class="w">          </span><span class="c1"># - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced</span>
+<span class="w">          </span><span class="c1"># HQ Release Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20f169ef63c5f40c2def54abaf4438e</span><span class="w">  </span><span class="c1"># WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">403816d65392c79236dcb6dd591aeda4</span><span class="w">  </span><span class="c1"># WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7718d7a3ce595f289bfee26adc178f5</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ae43b294509409a6a13919dedd4764c4</span><span class="w">  </span><span class="c1"># Repack2</span>
+<span class="w">          </span><span class="c1"># Unwanted</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed38b889b31be83fda192888e2286d83</span><span class="w">  </span><span class="c1"># BR-DISK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b8cd450cbfa689c0259a01d9e29ba3d6</span><span class="w">  </span><span class="c1"># 3D</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">839bea857ed2c0a8e084f3cbdbd65ecb</span><span class="w">  </span><span class="c1"># x265 (no HDR/DV)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
+<span class="w">          </span><span class="c1"># Optional</span>
+<span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
+<span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
+<span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
+<span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
+<span class="w">          </span><span class="c1"># - 5c44f52a8714fdd79bb4d98e2673be1f  # Retags</span>
+<span class="w">          </span><span class="c1"># - f537cf427b64c38c8e36298f657e4828  # Scene</span>
+<span class="w">          </span><span class="c1"># - 0a3f082873eb454bde444150b70253cc  # Extras</span>
+<span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">          </span><span class="c1"># If you and all of your users have a setup that fully supports DV, then uncomment the score line below</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">            </span><span class="c1"># score: 0  # overrides default of -10000</span>
+<span class="w">      </span><span class="c1"># If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2899d84dc9372de3408e6d8cc18e9666</span><span class="w">  </span><span class="c1"># x264</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-10000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3b3a6ac74ecbd56bcdbefa4799fb9df</span><span class="w">  </span><span class="c1"># AMZN</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40e9380490e748672c2522eaaeb692f7</span><span class="w">  </span><span class="c1"># ATVP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84272245b2988854bfb76a16e60baea5</span><span class="w">  </span><span class="c1"># DSNP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">509e5f41146e278f9eab1ddaceb34515</span><span class="w">  </span><span class="c1"># HBO</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5763d1b0ce84aff3b21038eea8e9b8ad</span><span class="w">  </span><span class="c1"># HMAX</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">526d445d4c16214309f0fd2b3be18a89</span><span class="w">  </span><span class="c1"># Hulu</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">170b1d363bd8516fbf3a3eb05d4faff6</span><span class="w">  </span><span class="c1"># NF</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c9fd353f8f5f1baf56dc601c4cb29920</span><span class="w">  </span><span class="c1"># PCOK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="uhd-webdlimax-e-sqp-4">UHD WEBDL|IMAX-E (SQP-4)<a class="headerlink" href="#uhd-webdlimax-e-sqp-4" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD WEBDL|IMAX-E (SQP-4) - [CLICK TO EXPAND]</summary>
+<ul>
+<li>You got a setup that completely supports DoVi from start to end.</li>
+<li>HDR/DoVi (Depending what's offered and often both)</li>
+<li>If available HD Audio (Atmos, TrueHD etc...)</li>
+<li>You're okay with WEBDL, with the option to upgrade to IMAX Enhanced.</li>
+<li>You don't need the huge Remuxes or UHD Bluray Encodes but still want HDR Formats.</li>
+<li>You want a smaller files for your kids movies (Disney/Pixar etc)</li>
+</ul>
+</details>
+<details class="example">
+<summary>YAML - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">radarr</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">radarr-sqp-uhd</span><span class="p">:</span><span class="w">  </span><span class="c1"># A custom name used to identify this particular instance.</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+
+<span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">496f355514737f7d83bf7aa4d24f8169</span><span class="w">  </span><span class="c1"># TrueHD Atmos</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f22d89048b01681dde8afe203bf2e95</span><span class="w">  </span><span class="c1"># DTS X</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">417804f7f2c4308c1f4c5d380d4c4475</span><span class="w">  </span><span class="c1"># ATMOS (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1af239278386be2919e1bcee0bde047e</span><span class="w">  </span><span class="c1"># DD+ ATMOS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3cafb66171b47f226146a0770576870f</span><span class="w">  </span><span class="c1"># TrueHD</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcf3ec6938fa32445f590a4da84256cd</span><span class="w">  </span><span class="c1"># DTS-HD MA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a570d4a0e56a2874b64e5bfa55202a1b</span><span class="w">  </span><span class="c1"># FLAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7c2fcae07cbada050a0af3357491d7b</span><span class="w">  </span><span class="c1"># PCM</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8e109e50e0a0b83a5098b056e13bf6db</span><span class="w">  </span><span class="c1"># DTS-HD HRA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">185f1dd7264c4562b9022d963ac37424</span><span class="w">  </span><span class="c1"># DD+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f9f847ac70a0af62ea4a08280b859636</span><span class="w">  </span><span class="c1"># DTS-ES</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1c1a4c5e823891c75bc50380a6866f73</span><span class="w">  </span><span class="c1"># DTS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">240770601cc226190c367ef59aba7463</span><span class="w">  </span><span class="c1"># AAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2998bd0d90ed5621d8df281e839436e</span><span class="w">  </span><span class="c1"># DD</span>
+<span class="w">          </span><span class="c1"># HDR Formats</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e23edd2482476e595fb990b12e7c609c</span><span class="w">  </span><span class="c1"># DV HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">58d6a88f13e2db7f5059c41047876f00</span><span class="w">  </span><span class="c1"># DV</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">55d53828b9d81cbe20b02efd00aa0efd</span><span class="w">  </span><span class="c1"># DV HLG</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a3e19f8f627608af0211acd02bf89735</span><span class="w">  </span><span class="c1"># DV SDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b974a6cd08c1066250f1f177d7aa1225</span><span class="w">  </span><span class="c1"># HDR10+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dfb86d5941bc9075d6af23b09c2aeecd</span><span class="w">  </span><span class="c1"># HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e61e28db95d22bedcadf030b8f156d96</span><span class="w">  </span><span class="c1"># HDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a4d9069cc1fe3242ff9bdaebed239bb</span><span class="w">  </span><span class="c1"># HDR (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">08d6d8834ad9ec87b1dc7ec8148e7a1f</span><span class="w">  </span><span class="c1"># PQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9364dd386c9b4a1100dde8264690add7</span><span class="w">  </span><span class="c1"># HLG</span>
+<span class="w">          </span><span class="c1"># Movie Versions</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
+<span class="w">          </span><span class="c1"># Uncomment the next line if you prefer IMAX Enhanced releases</span>
+<span class="w">          </span><span class="c1"># - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced</span>
+<span class="w">          </span><span class="c1"># HQ Release Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20f169ef63c5f40c2def54abaf4438e</span><span class="w">  </span><span class="c1"># WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">403816d65392c79236dcb6dd591aeda4</span><span class="w">  </span><span class="c1"># WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7718d7a3ce595f289bfee26adc178f5</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ae43b294509409a6a13919dedd4764c4</span><span class="w">  </span><span class="c1"># Repack2</span>
+<span class="w">          </span><span class="c1"># Unwanted</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed38b889b31be83fda192888e2286d83</span><span class="w">  </span><span class="c1"># BR-DISK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b8cd450cbfa689c0259a01d9e29ba3d6</span><span class="w">  </span><span class="c1"># 3D</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">839bea857ed2c0a8e084f3cbdbd65ecb</span><span class="w">  </span><span class="c1"># x265 (no HDR/DV)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
+<span class="w">          </span><span class="c1"># Optional</span>
+<span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
+<span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
+<span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
+<span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
+<span class="w">          </span><span class="c1"># - 5c44f52a8714fdd79bb4d98e2673be1f  # Retags</span>
+<span class="w">          </span><span class="c1"># - f537cf427b64c38c8e36298f657e4828  # Scene</span>
+<span class="w">          </span><span class="c1"># - 0a3f082873eb454bde444150b70253cc  # Extras</span>
+<span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">          </span><span class="c1"># If you and all of your users have a setup that fully supports DV, then uncomment the score line below</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">            </span><span class="c1"># score: 0  # overrides default of -10000</span>
+<span class="w">      </span><span class="c1"># If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2899d84dc9372de3408e6d8cc18e9666</span><span class="w">  </span><span class="c1"># x264</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-10000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3b3a6ac74ecbd56bcdbefa4799fb9df</span><span class="w">  </span><span class="c1"># AMZN</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40e9380490e748672c2522eaaeb692f7</span><span class="w">  </span><span class="c1"># ATVP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84272245b2988854bfb76a16e60baea5</span><span class="w">  </span><span class="c1"># DSNP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">509e5f41146e278f9eab1ddaceb34515</span><span class="w">  </span><span class="c1"># HBO</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5763d1b0ce84aff3b21038eea8e9b8ad</span><span class="w">  </span><span class="c1"># HMAX</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">526d445d4c16214309f0fd2b3be18a89</span><span class="w">  </span><span class="c1"># Hulu</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">170b1d363bd8516fbf3a3eb05d4faff6</span><span class="w">  </span><span class="c1"># NF</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c9fd353f8f5f1baf56dc601c4cb29920</span><span class="w">  </span><span class="c1"># PCOK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="uhd-blurayimax-e-sqp-5">UHD Bluray|IMAX-E (SQP-5)<a class="headerlink" href="#uhd-blurayimax-e-sqp-5" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD Bluray|IMAX-E (SQP-5) - [CLICK TO EXPAND]</summary>
+<ul>
+<li>You got a decent audio setup. (that supports all HD audio formats)</li>
+<li>You got a setup that completely supports DoVi from start to end.</li>
+<li>You do want the highest quality as possible to watch but want to save space for archiving without losing video and audio quality.</li>
+<li>HDR/DoVi (Depending what's offered and often both)</li>
+<li>HD Audio (Atmos, TrueHD etc...)</li>
+</ul>
+</details>
+<details class="example">
+<summary>YAML - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="nt">radarr</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">radarr-sqp-uhd</span><span class="p">:</span><span class="w">  </span><span class="c1"># A custom name used to identify this particular instance.</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+
+<span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
+<span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Audio</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">496f355514737f7d83bf7aa4d24f8169</span><span class="w">  </span><span class="c1"># TrueHD Atmos</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f22d89048b01681dde8afe203bf2e95</span><span class="w">  </span><span class="c1"># DTS X</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">417804f7f2c4308c1f4c5d380d4c4475</span><span class="w">  </span><span class="c1"># ATMOS (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1af239278386be2919e1bcee0bde047e</span><span class="w">  </span><span class="c1"># DD+ ATMOS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3cafb66171b47f226146a0770576870f</span><span class="w">  </span><span class="c1"># TrueHD</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcf3ec6938fa32445f590a4da84256cd</span><span class="w">  </span><span class="c1"># DTS-HD MA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a570d4a0e56a2874b64e5bfa55202a1b</span><span class="w">  </span><span class="c1"># FLAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7c2fcae07cbada050a0af3357491d7b</span><span class="w">  </span><span class="c1"># PCM</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8e109e50e0a0b83a5098b056e13bf6db</span><span class="w">  </span><span class="c1"># DTS-HD HRA</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">185f1dd7264c4562b9022d963ac37424</span><span class="w">  </span><span class="c1"># DD+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">f9f847ac70a0af62ea4a08280b859636</span><span class="w">  </span><span class="c1"># DTS-ES</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1c1a4c5e823891c75bc50380a6866f73</span><span class="w">  </span><span class="c1"># DTS</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">240770601cc226190c367ef59aba7463</span><span class="w">  </span><span class="c1"># AAC</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2998bd0d90ed5621d8df281e839436e</span><span class="w">  </span><span class="c1"># DD</span>
+<span class="w">          </span><span class="c1"># HDR Formats</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e23edd2482476e595fb990b12e7c609c</span><span class="w">  </span><span class="c1"># DV HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">58d6a88f13e2db7f5059c41047876f00</span><span class="w">  </span><span class="c1"># DV</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">55d53828b9d81cbe20b02efd00aa0efd</span><span class="w">  </span><span class="c1"># DV HLG</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a3e19f8f627608af0211acd02bf89735</span><span class="w">  </span><span class="c1"># DV SDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b974a6cd08c1066250f1f177d7aa1225</span><span class="w">  </span><span class="c1"># HDR10+</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dfb86d5941bc9075d6af23b09c2aeecd</span><span class="w">  </span><span class="c1"># HDR10</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e61e28db95d22bedcadf030b8f156d96</span><span class="w">  </span><span class="c1"># HDR</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a4d9069cc1fe3242ff9bdaebed239bb</span><span class="w">  </span><span class="c1"># HDR (undefined)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">08d6d8834ad9ec87b1dc7ec8148e7a1f</span><span class="w">  </span><span class="c1"># PQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9364dd386c9b4a1100dde8264690add7</span><span class="w">  </span><span class="c1"># HLG</span>
+<span class="w">          </span><span class="c1"># Movie Versions</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
+<span class="w">          </span><span class="c1"># Uncomment the next line if you prefer IMAX Enhanced releases</span>
+<span class="w">          </span><span class="c1"># - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced</span>
+<span class="w">          </span><span class="c1"># HQ Release Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4d74ac4c4db0b64bff6ce0cffef99bf0</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a58f517a70193f8e578056642178419d</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e71939fae578037e7aed3ee219bbe7c1</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 03</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20f169ef63c5f40c2def54abaf4438e</span><span class="w">  </span><span class="c1"># WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">403816d65392c79236dcb6dd591aeda4</span><span class="w">  </span><span class="c1"># WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e7718d7a3ce595f289bfee26adc178f5</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ae43b294509409a6a13919dedd4764c4</span><span class="w">  </span><span class="c1"># Repack2</span>
+<span class="w">          </span><span class="c1"># Unwanted</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed38b889b31be83fda192888e2286d83</span><span class="w">  </span><span class="c1"># BR-DISK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b8cd450cbfa689c0259a01d9e29ba3d6</span><span class="w">  </span><span class="c1"># 3D</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">839bea857ed2c0a8e084f3cbdbd65ecb</span><span class="w">  </span><span class="c1"># x265 (no HDR/DV)</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
+<span class="w">          </span><span class="c1"># Optional</span>
+<span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
+<span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
+<span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
+<span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
+<span class="w">          </span><span class="c1"># - 5c44f52a8714fdd79bb4d98e2673be1f  # Retags</span>
+<span class="w">          </span><span class="c1"># - f537cf427b64c38c8e36298f657e4828  # Scene</span>
+<span class="w">          </span><span class="c1"># - 0a3f082873eb454bde444150b70253cc  # Extras</span>
+<span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">          </span><span class="c1"># If you and all of your users have a setup that fully supports DV, then uncomment the score line below</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="c1"># score: 0  # overrides default of -10000</span>
+<span class="w">      </span><span class="c1"># If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Misc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2899d84dc9372de3408e6d8cc18e9666</span><span class="w">  </span><span class="c1"># x264</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-10000</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Streaming Services</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3b3a6ac74ecbd56bcdbefa4799fb9df</span><span class="w">  </span><span class="c1"># AMZN</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40e9380490e748672c2522eaaeb692f7</span><span class="w">  </span><span class="c1"># ATVP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84272245b2988854bfb76a16e60baea5</span><span class="w">  </span><span class="c1"># DSNP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">509e5f41146e278f9eab1ddaceb34515</span><span class="w">  </span><span class="c1"># HBO</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5763d1b0ce84aff3b21038eea8e9b8ad</span><span class="w">  </span><span class="c1"># HMAX</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">526d445d4c16214309f0fd2b3be18a89</span><span class="w">  </span><span class="c1"># Hulu</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">170b1d363bd8516fbf3a3eb05d4faff6</span><span class="w">  </span><span class="c1"># NF</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c9fd353f8f5f1baf56dc601c4cb29920</span><span class="w">  </span><span class="c1"># PCOK</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 18, 2023 19:57:43</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 12, 2023 13:23:57</span>
 </small>
 </div>
 <footer class="sponsorship">
