@@ -77,8 +77,8 @@ I also made 3 guides related to this one.
 | [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
-|                                | [SDR](#sdr)                         |                               |                                                 |
-|                                | [DV (FEL)](#dv-fel)                 |                               |                                                 |
+|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                                 |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  |                               |                                                 |
 
 ------
@@ -2312,6 +2312,38 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vostfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FanSUB
+
+??? question "FanSUB - [CLICK TO EXPAND]"
+
+    Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so called FastSUBs.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fansub.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FastSUB
+
+??? question "FastSUB - [CLICK TO EXPAND]"
+
+    FanSUB, but made as quickly as possible, at the expense of quality.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fastsub.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
