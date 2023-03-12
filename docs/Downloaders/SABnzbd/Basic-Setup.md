@@ -102,8 +102,31 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 `Settings` => `Sorting`
 
-!!! danger ""
-    :bangbang: **MAKE SURE THAT SORTING IS ENTIRELY DISABLED** :bangbang:
+!!! danger ":bangbang: **MAKE SURE THAT SORTING IS ENTIRELY DISABLED** :bangbang:"
+
+## Special
+
+Rarely used options. For their meaning and explanation, click on the Help button to go to the Wiki page.
+Don't change these without checking the Wiki first, as some have serious side-effects.
+The default values are between parentheses.
+
+### Unable to connect to SABnzbd
+
+If you're trying to connect your Starr apps to SABnzbd and you're getting a error like `Unable to connect to SABnzbd` after clicking on Test.
+
+![!Starr: Unable to connect to SABnzbd](images/starr-unable-to-connect-to-sabnzbd.png)
+
+And it SABnzbd you will see something like this.
+
+![!SABnzbd: Unable to connect to SABnzbd](images/sabnzbd-unable-to-connect-to-sabnzbd.png)
+
+Then go in to `Settings` => `Special` => `Values`.
+
+Scroll down to `host_whitelist (  )` and enter your docker container name and or your domain name.
+
+Example: `sabnzbd.domain.tld, <container name >`
+
+![!SABnzbd: host_whitelist (  )](images/sabnzbd-special-host-whitelist.png)
 
 ------
 
@@ -137,6 +160,10 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
     Make sure you check both boxes under `Completed Download Handling` at step 3,
 
     and both boxes under `Failed Download Handling` at step 4.
+
+    Select Sabnzbd at step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+
+    ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
 
 ------
 

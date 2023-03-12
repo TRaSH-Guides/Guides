@@ -100,22 +100,21 @@ You will get a popup screen that will look like this:
 
 ------
 
-!!! abstract
+!!! info
 
     The Number between the **[**brackets**]** in the following release profiles are the scores the release name will get during an automatic and manual search and with the use of the scores some releases will be preferred over others and even upgraded.
 
     The Number between **(**brackets**)** in the following release profiles are referring to the location where you should add this regex in the release profile corresponding the screenshot above.
 
-!!! tip
-    We're going to make use of four separate release profiles.
+!!! warning "We're going to make use of four separate release profiles."
 
 ------
 
-## Release Sources (Streaming Service) - Release Profile
-
-<sub>Profile 1</sub>
+## Profile 1
 
 <!-- [trash_id: a0e7774a471e041d4f1111e0690244d0] -->
+
+### Release Sources (Streaming Service)
 
 !!! note
 
@@ -231,14 +230,13 @@ Add this to your `Preferred (3)` with a score of [75]
 
 ------
 
-## P2P Groups + Repack/Proper - Release Profile
-
-<sub>Profile 2</sub>
+## Profile 2
 
 <!-- [trash_id: 37cf8cdd57c8fb4a8b68f36e00e40de2] -->
 
-!!! warning
-    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
+### P2P Groups + Repack/Proper
+
+!!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
 Add this to your `Preferred (3)` with a score of [1800] [^1]
 
@@ -299,14 +297,13 @@ Add this to your `Preferred (3)` with a score of [10]
 
 ------
 
-## Low Quality Groups - Release Profile
-
-<sub>Profile 3</sub>
+## Profile 3
 
 <!-- [trash_id: EBC725268D687D588A20CBC5F97E538B] -->
 
-!!! warning
-    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
+### Low Quality Groups
+
+!!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
 Add this to your `Preferred (3)` with a score of [-10000]
 
@@ -331,12 +328,11 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
 ------
 
-## Optionals - Release Profile
+## Profile 4
 
-<sub>Profile 4</sub>
+### Optionals
 
-!!! warning
-    DO NOT Check mark `Include Preferred when Renaming` :bangbang:
+!!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
 !!! danger "Caution"
     These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it :bangbang:
@@ -345,7 +341,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
     If you see certain optional with a positive score and you actually don't want them just add them with a negative score !!!
 
-### Golden rule
+#### Golden rule
 
 !!! warning ""
     :bangbang: This one is actually a must even that it's added in the optional section :bangbang:
