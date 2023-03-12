@@ -21,7 +21,7 @@ sonarr:
           - a3d82cbef5039f8d295478d28a887159  # HDR10+
           - 17e889ce13117940092308f48b48b45b  # HLG
           - 2a7e3be05d3861d6df7171ec74cad727  # PQ
-          # DV (WEBDL) - The next line must be uncommented if any devices using your library DO NOT support Dolby Vision
+          # DV (WEBDL) - The next line is uncommented by default, and ensures that releases with Dolby Vision will only be grabbed if they have HDR10 fallback. You can comment the line out if you do not need HDR10 fallback
           - 9b27ab6498ec0f31a3353992e19434ca  # DV (WEBDL)
           # HDR10Plus Boost - Uncomment the next line if any of your devices DO support HDR10+
           # - 0dad0a507451acddd754fe6dc3a7f5e7  # HDR10Plus Boost

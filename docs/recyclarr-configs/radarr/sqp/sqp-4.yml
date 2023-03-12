@@ -84,7 +84,7 @@ radarr:
           # DV (WEBDL)
           - 923b6abef9b17f937fab56cfcf89e1f1  # DV (WEBDL)
         quality_profiles:
-          - name: Remux|Bluray|IMAX-E|2160p
+          - name: WEBDL|IMAX-E|2160p
             # If you and all of your users have a setup that fully supports DV, then uncomment the next line to override the default DV (WEBDL) score of -10000
             # score: 0
       # If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version
