@@ -110,7 +110,7 @@ If you prefer High Quality HD Encodes (Bluray-720/1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
 
@@ -154,7 +154,7 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
 
@@ -194,7 +194,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
@@ -236,7 +236,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
