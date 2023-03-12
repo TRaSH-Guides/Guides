@@ -50,7 +50,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp-1.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-1.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -71,7 +71,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp-2.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-2.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -91,7 +91,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp-3.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-3.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -112,7 +112,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp-4.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-4.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -132,7 +132,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
-    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp-5.yml' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-5.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
