@@ -23,15 +23,6 @@
       }
     },
     {
-      "name": "Good Job! Alexis",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"
-      }
-    },
-    {
       "name": "HANAMi",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -65,6 +56,33 @@
       "required": false,
       "fields": {
         "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
+      }
+    },
+    {
+      "name": "MUGiWARA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MUGiWARA)\\b"
+      }
+    },
+    {
+      "name": "NOH3LL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NOH3LL)\\b"
+      }
+    },
+    {
+      "name": "OTF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(OTF)\\b"
       }
     },
     {
