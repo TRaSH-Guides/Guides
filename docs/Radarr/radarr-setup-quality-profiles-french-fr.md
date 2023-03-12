@@ -111,6 +111,8 @@ Si vous préférez les encodages HD de haute qualité (Bluray-720/1080p)
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le profil d'encodage, car vous trouverez difficilement de l'audio HD avec ce type d'encodages. Et il est conseillé de privilégier la qualité visuelle. Si vous voulez aussi de l'audio HD, vous devriez opter pour les Remuxes ou les Encodes UHD.
@@ -155,6 +157,8 @@ Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Utilisez les paramètres suivants dans votre profil.
@@ -192,6 +196,8 @@ Si vous préférez les Remuxes en 1080p (Remux-1080p)
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -234,6 +240,8 @@ Si vous préférez les Remuxes en 2160p (Remux-2160p)
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
