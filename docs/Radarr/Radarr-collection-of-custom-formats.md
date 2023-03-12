@@ -2347,6 +2347,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that use an automated way.
     - Groups active doing remuxes from a single sources (discs).
+    - Groups that had the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
@@ -2366,6 +2367,7 @@ I also made 3 guides related to this one.
 
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that add the best French audio track to an English release from Tier 01 or 02.
     - HDR/DoVi (Depending what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
 
@@ -2385,6 +2387,7 @@ I also made 3 guides related to this one.
 
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that had the best French audio track to an English release.
     - HDR/DoVi (Depending what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
     - Groups that haven't released much or are not well recognized. (yet)
@@ -2407,6 +2410,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
+    - Groups that add the best French audio track to an English release from Tier 01 or 02.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2424,6 +2428,7 @@ I also made 3 guides related to this one.
 
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that had the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
@@ -2442,7 +2447,8 @@ I also made 3 guides related to this one.
 ??? question "FR WEB Tier 01 - [CLICK TO EXPAND]"
 
     - WiP
-    - Groups that source directly from the streaming service
+    - Groups that get their releases directly from the source.
+    - Groups that source and add the French audio track from the source to an English release from Tier 01 or 02.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2459,6 +2465,7 @@ I also made 3 guides related to this one.
 ??? question "FR WEB Tier 02 - [CLICK TO EXPAND]"
 
     - WiP
+    - Groups that source and add the French audio track from the source to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 

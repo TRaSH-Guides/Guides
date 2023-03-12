@@ -32,15 +32,6 @@
       }
     },
     {
-      "name": "PHiLLY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PHiLLY)\\b"
-      }
-    },
-    {
       "name": "QUALiTY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
