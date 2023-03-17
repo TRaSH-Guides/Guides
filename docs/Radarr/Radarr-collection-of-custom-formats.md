@@ -55,11 +55,11 @@ I also made 3 guides related to this one.
 | [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)            |
 | [Criterion Collection](#criterion-collection) | [Upscaled](#upscaled) | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)       |
 | [Masters of Cinema](#masters-of-cinema)       |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Hulu](#hulu)          |
-| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)    |
-| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma) |
-|                                               |                       |                                           | [Pathe Thuis](#pathe)  |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Netflix](#nf)         |
+| [Theatrical Cut](#theatrical-cut)             |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)    |
+| [IMAX](#imax)                                 |                       | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma) |
+| [Open Matte](#open-matte)                     |                       |                                           | [Pathe Thuis](#pathe)  |
 |                                               |                       |                                           | [Bravia Core](#bcore)  |
 |                                               |                       |                                           | [Stan](#stan)          |
 
@@ -772,6 +772,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Vinegar Syndrome
+
+??? question "Vinegar Syndrome - [CLICK TO EXPAND]"
+
+    Vinegar Syndrome is a US-based company founded in 2012 to preserve and distribute old X-rated films. Over time, they expanded their catalog to include other types of cult and exploitation films, specializing in horror and action genres.
+
+??? example "JSON - [CLICK TO EXPAND}"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vinegar-syndrome.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
