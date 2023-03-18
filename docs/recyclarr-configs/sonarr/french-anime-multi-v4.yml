@@ -5,7 +5,7 @@
 # Cet exemple est pour Sonarr et le profil "Anime MULTi" present dans le guide
 # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#exemple-pour-les-animes
 sonarr:
-  french_sonarr_anime_multi:
+  sonarr_french_anime_multi:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
     base_url: [sonarr_url_goes_here]
     api_key: [api_key_goes_here]

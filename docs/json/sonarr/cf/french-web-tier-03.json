@@ -23,21 +23,30 @@
       }
     },
     {
+      "name": "ARK01",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ARK01)\\b"
+      }
+    },
+    {
+      "name": "BraD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BraD)\\b"
+      }
+    },
+    {
       "name": "dRuIdE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(dRuIdE)\\b"
-      }
-    },
-    {
-      "name": "FiND",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FiND)\\b"
       }
     },
     {
@@ -50,30 +59,12 @@
       }
     },
     {
-      "name": "KLI",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KLI)\\b"
-      }
-    },
-    {
       "name": "LAZARUS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(LAZARUS)\\b"
-      }
-    },
-    {
-      "name": "MTLQC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MTLQC)\\b"
       }
     },
     {

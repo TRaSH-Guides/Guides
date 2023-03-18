@@ -50,15 +50,6 @@
       }
     },
     {
-      "name": "COLL3CTiF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(COLL3CTiF)\\b"
-      }
-    },
-    {
       "name": "FRATERNiTY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -77,30 +68,12 @@
       }
     },
     {
-      "name": "HDForever",
+      "name": "HeavyWeight",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HDForever)\\b"
-      }
-    },
-    {
-      "name": "KFL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KFL)\\b"
-      }
-    },
-    {
-      "name": "LYPSG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LYPSG)\\b"
+        "value": "\\b(HeavyWeight)\\b"
       }
     },
     {
