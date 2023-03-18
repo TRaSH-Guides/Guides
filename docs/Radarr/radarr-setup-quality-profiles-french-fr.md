@@ -105,11 +105,13 @@ Si vous préférez les encodages HD de haute qualité (Bluray-720/1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -149,11 +151,13 @@ Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -187,11 +191,13 @@ Si vous préférez les Remuxes en 1080p (Remux-1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -229,11 +235,13 @@ Si vous préférez les Remuxes en 2160p (Remux-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 

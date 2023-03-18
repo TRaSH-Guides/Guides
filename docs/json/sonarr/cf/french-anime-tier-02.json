@@ -23,15 +23,6 @@
       }
     },
     {
-      "name": "Good Job! Alexis",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"
-      }
-    },
-    {
       "name": "HANAMi",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

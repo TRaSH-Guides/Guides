@@ -14,15 +14,6 @@
       }
     },
     {
-      "name": "Daijobu",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Daijobu)\\b"
-      }
-    },
-    {
       "name": "KaeriZaki",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
