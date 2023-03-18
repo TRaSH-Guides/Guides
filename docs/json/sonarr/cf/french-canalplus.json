@@ -27,7 +27,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(C(?:anal)?[ .]?(?:\\+|Plus))\\b"
+        "value": "\\b(C(?:anal)?[ .]?(?:\\+\\B|Plus))(?:(?<=\\+)\\B|\\b)"
       }
     },
     {
