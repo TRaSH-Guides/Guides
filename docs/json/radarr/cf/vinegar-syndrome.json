@@ -1,0 +1,26 @@
+{
+  "trash_id": "db9b4c4b53d312a3ca5f1378f6440fc9",
+  "trash_score": "25",
+  "name": "Vinegar Syndrome",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Vinegar Syndrome",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Vinegar[ ._-]Syndrome)\\b"
+      }
+    },
+    {
+      "name": "VS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(V-?S)\\b"
+      }
+    }
+  ]
+}

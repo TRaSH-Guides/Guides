@@ -5,7 +5,7 @@
 # Cet exemple est pour Sonarr et le profil "WEB 1080p MULTi" present dans le guide
 # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#webdl-1080p
 sonarr:
-  french_sonarr_web_1080p:
+  sonarr_french_multi_web_1080p:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
     base_url: [sonarr_url_goes_here]
     api_key: [api_key_goes_here]
@@ -49,6 +49,7 @@ sonarr:
           - ae58039e1319178e6be73caab5c42166  # SHO
           - 1efe8da11bfd74fbbcd4d8117ddb9213  # STAN
           - 5d2317d99af813b6529c7ebf01c83533  # VDL
+          - 77a7b25585c18af08f60b1547bb9b4fb  # CC
           # Ceux-ci sont optionnels, car les services de streaming francophones sont rarement indiqués sur les releases et les Formats Personnalisés ne possèdent pas de score. Vous pouvez les supprimer sans craintes.
           - f27d46a831e6b16fa3fee2c4e5d10984  # Canal+
           - 0455d6519a550dbf648c97b56e7231d2  # SALTO

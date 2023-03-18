@@ -18,15 +18,21 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
 ---
 
-| Radarr                                | Sonarr                                              |
-| ------------------------------------- | --------------------------------------------------- |
-| [HD Bluray + WEB](#hd-bluray-web)     | [WEB-1080p](#web-1080p)                             |
-| [UHD Bluray + WEB](#uhd-bluray-web)   | [WEB-2160p](#web-2160p)                             |
-| [Remux + WEB 1080p](#remux-web-1080p) | [Anime (Sonarr)](#anime-sonarr)                     |
-| [Remux + WEB 2160p](#remux-web-2160p) | [French WEB-1080p MULTi](#french-web-1080p-multi)   |
-| [Anime (Radarr)](#anime-radarr)       | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
-|                                       | [French Anime MULTi](#french-anime-multi)           |
-|                                       | [French Anime VOSTFR](#french-anime-vostfr)         |
+| Radarr                                                            | Sonarr                                              |
+| ----------------------------------------------------------------- | --------------------------------------------------- |
+| [HD Bluray + WEB](#hd-bluray-web)                                 | [WEB-1080p](#web-1080p)                             |
+| [UHD Bluray + WEB](#uhd-bluray-web)                               | [WEB-2160p](#web-2160p)                             |
+| [Remux + WEB 1080p](#remux-web-1080p)                             | [Anime (Sonarr)](#anime-sonarr)                     |
+| [Remux + WEB 2160p](#remux-web-2160p)                             | [French WEB-1080p MULTi](#french-web-1080p-multi)   |
+| [Anime (Radarr)](#anime-radarr)                                   | [French WEB-1080p VOSTFR](#french-web-1080p-vostfr) |
+| [French HD Bluray + WEB MULTi](#french-hd-bluray-web-multi)       | [French Anime MULTi](#french-anime-multi)           |
+| [French HD Bluray + WEB VOSTFR](#french-hd-bluray-web-vostfr)     | [French Anime VOSTFR](#french-anime-vostfr)         |
+| [French UHD Bluray + WEB MULTi](#french-uhd-bluray-web-multi)     |                                                     |
+| [French UHD Bluray + WEB VOSTFR](#french-hd-bluray-web-vostfr)    |                                                     |
+| [French Remux + WEB 1080p MULTi](#french-remux-web-1080p-multi)   |                                                     |
+| [French Remux + WEB 1080p VOSTFR](#french-remux-web-1080p-vostfr) |                                                     |
+| [French Remux + WEB 2160p MULTi](#french-remux-web-2160p-multi)   |                                                     |
+| [French Remux + WEB 2160p VOSTFR](#french-remux-web-2160p-vostfr) |                                                     |
 
 ---
 
@@ -122,6 +128,150 @@ Here you will find a collection of Recyclarr configs based on the following guid
 
     ```yaml
     [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/anime-radarr.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French HD Bluray + WEB MULTi
+
+??? question "HD Bluray + WEB - [CLICK TO EXPAND]"
+
+    If you prefer High Quality HD Encodes (Bluray-720p/1080p) - French MULTi
+
+    Size: 6-15 GB for a Bluray-1080p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-hd-bluray-web-multi.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French HD Bluray + WEB VOSTFR
+
+??? question "HD Bluray + WEB - [CLICK TO EXPAND]"
+
+    If you prefer High Quality HD Encodes (Bluray-720p/1080p) - French VOSTFR
+
+    Size: 6-15 GB for a Bluray-1080p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-hd-bluray-web-vostfr.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French UHD Bluray + WEB MULTi
+
+??? question "UHD Bluray + WEB - [CLICK TO EXPAND]"
+
+    If you prefer High Quality UHD Encodes (Bluray-2160p) - French MULTi
+
+    Size: 20-60 GB for a Bluray-2160p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-uhd-bluray-web-multi.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French UHD Bluray + WEB VOSTFR
+
+??? question "UHD Bluray + WEB - [CLICK TO EXPAND]"
+
+    If you prefer High Quality UHD Encodes (Bluray-2160p) - French VOSTFR
+
+    Size: 20-60 GB for a Bluray-2160p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-uhd-bluray-web-vostfr.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French Remux + WEB 1080p MULTi
+
+??? question "Remux + WEB 1080p - [CLICK TO EXPAND]"
+
+    If you prefer 1080p Remuxes (Remux-1080p) - French MULTi
+
+    Size: 20-40 GB for a Remux-1080p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-remux-web-1080p-multi.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French Remux + WEB 1080p VOSTFR
+
+??? question "Remux + WEB 1080p - [CLICK TO EXPAND]"
+
+    If you prefer 1080p Remuxes (Remux-1080p) - French VOSTFR
+
+    Size: 20-40 GB for a Remux-1080p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-remux-web-1080p-vostfr.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French Remux + WEB 2160p MULTi
+
+??? question "Remux + WEB 2160p - [CLICK TO EXPAND]"
+
+    If you prefer 2160p Remuxes (Remux-2160p) - French MULTi
+
+    Size: 40-100 GB for a Remux-2160p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-remux-web-2160p-multi.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### French Remux + WEB 2160p VOSTFR
+
+??? question "Remux + WEB 2160p - [CLICK TO EXPAND]"
+
+    If you prefer 2160p Remuxes (Remux-2160p) - French VOSTFR
+
+    Size: 40-100 GB for a Remux-2160p depending on the running time.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/french-remux-web-2160p-vostfr.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
