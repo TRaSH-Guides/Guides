@@ -1,3 +1,21 @@
+# 2023-03-18 12:40
+**[Info]**
+- The current French Tiers have been revised to make them a bit easier to update and follow
+- The groups inside the tiers have therefore been moved and audited accordingly
+**[New]**
+- [Radarr] Add a CF for `Vinegar Syndrome` releases to properly score and grab them.
+- [Starr-FR] Added `AZAZE` to FR LQ
+- [Starr-FR] Added `HiggsBoson` and `LYPSG` to FR Scene
+- [Radarr-FR] Added `FanSUB` and `FastSUB` CFs
+- [Radarr-FR] Added French Recyclarr configs (both MULTi and VOSTFR versions)
+- [Sonarr-FR] Added `Delivroozzi` and `Fuceo` to Sonarr Anime Tier 1
+**[Updated]**
+- [Guide-FR] Updated Unwanted sections
+- [Starr-FR] Updated tiers according to the new descriptions
+- [Sonarr-FR] Added the `CC` CF to the recyclarr configs
+**[Fixes]**
+- [Sonarr-FR] Updated `Multi-French` CF to include the MULTi condition that was missing
+
 # 2023-03-12 16:45
 **[New]**
 - None
