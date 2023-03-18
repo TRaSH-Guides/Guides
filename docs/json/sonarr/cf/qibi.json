@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(qibi|quibi)\\b"
+        "value": "\\b(qu?ibi)\\b"
       }
     },
     {

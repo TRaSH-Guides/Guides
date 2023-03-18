@@ -37,7 +37,7 @@
         "negate": false,
         "required": true,
         "fields": {
-          "value": "\\b(FUNi(mation)?)\\b"
+          "value": "\\b(FUNi(?:mation)?)\\b"
         }
       }
     ]

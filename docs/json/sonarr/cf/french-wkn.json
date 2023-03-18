@@ -36,7 +36,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(WKN|Waka(nim)?)\\b"
+        "value": "\\b(WKN|Waka(?:nim)?)\\b"
       }
     }
   ]
