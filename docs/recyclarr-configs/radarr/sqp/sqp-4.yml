@@ -64,6 +64,7 @@ radarr:
           # Optional
           # Uncomment any of the following optional custom formats if you want them to be added to the quality profile
           # - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups
+          # - b17886cb4158d9fea189859409975758  # HDR10+ Boost - Uncomment this line if you have a setup that supports HDR10+
           # - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)
           # - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup
           # - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated
@@ -73,7 +74,6 @@ radarr:
           # - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled
           # Resolution
           - 820b09bb9acbfde9c35c71e0e565dad8  # 1080p
-          - fb392fb0d61a010ae38e49ceaa24a1ef  # 2160p
           # Streaming Services
           - cc5e51a9e85a6296ceefe097a77f12f4  # BCORE
           - 2a6039655313bf5dab1e43523b62c374  # MA
@@ -81,6 +81,12 @@ radarr:
           - name: WEBDL|IMAX-E|2160p
             reset_unmatched_scores: true
       # Custom Scoring
+      - trash_ids:
+          # Resolution
+          - fb392fb0d61a010ae38e49ceaa24a1ef  # 2160p
+        quality_profiles:
+          - name: WEBDL|IMAX-E|2160p
+            score: 151
       - trash_ids:
           # DV (WEBDL)
           - 923b6abef9b17f937fab56cfcf89e1f1  # DV (WEBDL)
