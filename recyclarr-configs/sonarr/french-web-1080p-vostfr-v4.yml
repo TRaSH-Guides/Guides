@@ -5,7 +5,7 @@
 # Cet exemple est pour Sonarr et le profil "WEB 1080p VOSTFR" present dans le guide
 # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#webdl-1080p
 sonarr:
-  french_sonarr_web_1080p:
+  sonarr_french_vostfr_web_1080p:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
     base_url: [sonarr_url_goes_here]
     api_key: [api_key_goes_here]
@@ -27,23 +27,24 @@ sonarr:
           - eb3d5cc0a2be0db205fb823640db6a3c  # Repack2
           - 44e7c4de10ae50265753082e5dc76047  # Repack3
           # ===== Services de Streaming =====
-          - d660701077794679fd59e8bdf4ce3a29   # AMZN
-          - f67c9ca88f463a48346062e8ad07713f   # ATVP
-          - 36b72f59f4ea20aad9316f475f2d9fbb   # DCU
-          - 89358767a60cc28783cdc3d0be9388a4   # DSNP
-          - 7a235133c87f7da4c8cccceca7e3c7a6   # HBO
-          - a880d6abc21e7c16884f3ae393f84179   # HMAX
-          - f6cce30f1733d5c8194222a7507909bb   # HULU
-          - 0ac24a2a68a9700bcb7eeca8e5cd644c   # iT
-          - d34870697c9db575f17700212167be23   # NF
-          - b2b980877494b560443631eb1f473867   # NLZ
-          - 1656adc6d7bb2c8cca6acfb6592db421   # PCOK
-          - c67a75ae4a1715f2bb4d492755ba4195   # PMTP
-          - 3ac5d84fce98bab1b531393e9c82f467   # QIBI
-          - c30d2958827d1867c73318a5a2957eb1   # RED
-          - ae58039e1319178e6be73caab5c42166   # SHO
-          - 1efe8da11bfd74fbbcd4d8117ddb9213   # STAN
-          - 5d2317d99af813b6529c7ebf01c83533   # VDL
+          - d660701077794679fd59e8bdf4ce3a29  # AMZN
+          - f67c9ca88f463a48346062e8ad07713f  # ATVP
+          - 36b72f59f4ea20aad9316f475f2d9fbb  # DCU
+          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
+          - 7a235133c87f7da4c8cccceca7e3c7a6  # HBO
+          - a880d6abc21e7c16884f3ae393f84179  # HMAX
+          - f6cce30f1733d5c8194222a7507909bb  # HULU
+          - 0ac24a2a68a9700bcb7eeca8e5cd644c  # iT
+          - d34870697c9db575f17700212167be23  # NF
+          - b2b980877494b560443631eb1f473867  # NLZ
+          - 1656adc6d7bb2c8cca6acfb6592db421  # PCOK
+          - c67a75ae4a1715f2bb4d492755ba4195  # PMTP
+          - 3ac5d84fce98bab1b531393e9c82f467  # QIBI
+          - c30d2958827d1867c73318a5a2957eb1  # RED
+          - ae58039e1319178e6be73caab5c42166  # SHO
+          - 1efe8da11bfd74fbbcd4d8117ddb9213  # STAN
+          - 5d2317d99af813b6529c7ebf01c83533  # VDL
+          - 77a7b25585c18af08f60b1547bb9b4fb  # CC
           # Ceux-ci sont optionnels, car les services de streaming francophones sont rarement indiqués sur les releases et les Formats Personnalisés ne possèdent pas de score. Vous pouvez les supprimer sans craintes.
           - f27d46a831e6b16fa3fee2c4e5d10984  # Canal+
           - 0455d6519a550dbf648c97b56e7231d2  # SALTO

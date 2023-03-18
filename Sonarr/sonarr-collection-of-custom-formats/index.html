@@ -13998,6 +13998,15 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MULTi"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MULTi)(\\d|\\b)"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Original Audio"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LanguageSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -14521,6 +14530,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <ul>
 <li>WIP</li>
 <li>Groups that created encodes from the remuxes without micro-sizing them.</li>
+<li>Groups that source and add the best French audio track from the source to an English release from Tier 01 or 02.</li>
 <li>Groups that have a minimum of great releases (best encode in it's class 1080p and lower).</li>
 </ul>
 </details>
@@ -14578,15 +14588,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COLL3CTiF"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(COLL3CTiF)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FRATERNiTY"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -14605,30 +14606,12 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HDForever"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HeavyWeight"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HDForever)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"KFL"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(KFL)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LYPSG"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(LYPSG)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HeavyWeight)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14651,7 +14634,8 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>FR WEB Tier 01 - [CLICK TO EXPAND]</summary>
 <ul>
 <li>WIP</li>
-<li>Groups that source directly from the streaming service.</li>
+<li>Groups that get their releases directly from the source.</li>
+<li>Groups that source and add the French audio track from the source to an English release from Tier 01 or 02.</li>
 </ul>
 </details>
 <details class="example">
@@ -14681,15 +14665,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ARK01"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ARK01)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BONBON"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -14699,30 +14674,21 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BraD"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FCK"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BraD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FCK)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COLL3CTiF"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FRATERNiTY"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(COLL3CTiF)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"D3L0P@tte"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(D3L0P(@tte)?)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FRATERNiTY)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14744,12 +14710,12 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ONLY"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PATOPESTO"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ONLY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(PATOPESTO)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14772,8 +14738,8 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>FR WEB Tier 02 - [CLICK TO EXPAND]</summary>
 <ul>
 <li>WIP</li>
-<li>Groups that source directly from the streaming service but are not so active.</li>
-<li>Groups that add French audio tracks to an English release.</li>
+<li>Groups that get their releases directly from the source but are not so active.</li>
+<li>Groups that source and add the French audio track from the source to an English release.</li>
 </ul>
 </details>
 <details class="example">
@@ -14803,21 +14769,21 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FCK"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COLL3CTiF"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FCK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(COLL3CTiF)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FRATERNiTY"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FiND"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FRATERNiTY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FiND)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14863,15 +14829,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(pERsO)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R3MiX"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(R3MiX)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14925,21 +14882,30 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ARK01"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ARK01)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BraD"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BraD)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dRuIdE"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(dRuIdE)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FiND"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FiND)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14952,30 +14918,12 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"KLI"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(KLI)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LAZARUS"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(LAZARUS)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MTLQC"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MTLQC)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15016,7 +14964,8 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>FR Anime Tier 01 - [CLICK TO EXPAND]</summary>
 <ul>
 <li>WIP</li>
-<li>Groups that are know to be still active and doing only Anime and which releases are comparable to SeaDex recommended.</li>
+<li>Groups that are know to be still active and doing only Anime</li>
+<li>Groups which releases are at least comparable to SeaDex recommended.</li>
 </ul>
 </details>
 <details class="example">
@@ -15037,12 +14986,39 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Delivroozzi"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Delivroozzi)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fuceo"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Fuceo)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FUJiSAN"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FUJiSAN)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Good Job! Alexis"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15143,15 +15119,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Good Job! Alexis"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HANAMi"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -15240,15 +15207,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Anime[ .-]?Heart)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Daijobu"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Daijobu)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15438,7 +15396,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HERC|HiRoSHiMa|HYBRiS|HyDe)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15465,7 +15423,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15611,7 +15569,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ACOOL|AlioZ|ASPHiXiAS|AViTECH|Balibalo|BLABLASTREAM|DDLFRENCH(ORG)?|FERVEX|FReeZeR|GHOSTSPiRiT|GHZ|GLaDOS|GZR|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NLX5|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ReBoT|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|Tonyk|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ACOOL|AlioZ|ASPHiXiAS|AViTECH|AZAZE|Balibalo|BLABLASTREAM|DDLFRENCH(ORG)?|FERVEX|FReeZeR|GHOSTSPiRiT|GHZ|GLaDOS|GZR|HEVCBay|JiHeff|KR4K3N|Matmatha|MKVXTEAM|Monchat|NLX5|NOMAD|NORRIS|PiCKLES|PREUMS|qctimb3rlandqc|ReBoT|ROLLED|SCREEN|SHiFT|SKRiN|TicaDow|Tokushi|Tonyk|TOXIC|TUTUTE|UNiKORN|Zombie)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15642,7 +15600,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 15, 2023 18:48:16</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 12, 2023 20:46:35</span>
 </small>
 </div>
 <footer class="sponsorship">
