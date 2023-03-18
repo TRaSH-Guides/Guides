@@ -16,7 +16,7 @@
     - *[3] Il est à noter que le SUBFRENCH est inclus dans ce Format Personnalisé. Néanmoins, SUB signifie souvent que le sous-titre a été intégré à l'image (hardcoded). Les sorties françaises ont tendance à mélanger les deux, ce qui fait que certains VOSTFR sont étiquetés comme SUBFRENCH et SUBFRENCH comme VOSTFR.*
 
     !!! tip "Indexers renaming in Prowlarr"
-        Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. Je ne recommande pas l'utilisation d'une telle fonction car elle peut entraîner des faux positifs avec les formats personnalisés VFF ou VFQ.
+        Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. Je ne recommande pas l'utilisation d'une telle fonction car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.
 
 ??? abstract "Versions françaises - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                              | Score | Trash ID                                        |

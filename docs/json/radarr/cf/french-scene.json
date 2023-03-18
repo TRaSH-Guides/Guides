@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HERC|HiRoSHiMa|HYBRiS|HyDe)\\b"
+        "value": "\\b(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)\\b"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB)\\b"
+        "value": "\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)\\b"
       }
     },
     {

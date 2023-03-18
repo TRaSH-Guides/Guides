@@ -41,15 +41,6 @@
       }
     },
     {
-      "name": "HeavyWeight",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HeavyWeight)\\b"
-      }
-    },
-    {
       "name": "MAX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -68,15 +59,6 @@
       }
     },
     {
-      "name": "PEPiTE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(PEPiTE)\\b"
-      }
-    },
-    {
       "name": "Psaro",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -86,12 +68,30 @@
       }
     },
     {
+      "name": "Sicario",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Sicario)\\b"
+      }
+    },
+    {
       "name": "Tezcat74",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(Tezcat74)\\b"
+      }
+    },
+    {
+      "name": "TyrellCorp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TyrellCorp)\\b"
       }
     },
     {

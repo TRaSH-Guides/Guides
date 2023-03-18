@@ -16,7 +16,7 @@
     - *[3] It should be noted that SUBFRENCH is included in this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix the two, leading to some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.*
 
     !!! tip "Indexers renaming in Prowlarr"
-        Some Indexers in Prowlarr can rename `MULTi` releases to `MULTi.TRUEFRENCH` or `MULTi.FRENCH`. I do not recommend using such a feature along with those Custom Formats as it can lead to false positives from the VFF or VFQ Custom Formats.
+        Some Indexers in Prowlarr can rename `MULTi` releases to `MULTi.TRUEFRENCH` or `MULTi.FRENCH`. I do not recommend using such a feature along with those Custom Formats as it can lead to false positives from the VFF, VFQ and VQ Custom Formats.
 
 ??? abstract "French Audio Versions - [CLICK TO EXPAND]"
     | Custom Format                                                                                      | Score | Trash ID                                        |

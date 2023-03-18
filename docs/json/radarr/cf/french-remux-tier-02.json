@@ -23,21 +23,39 @@
       }
     },
     {
+      "name": "FtLi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FtLi)\\b"
+      }
+    },
+    {
+      "name": "Goldenyann",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Goldenyann)\\b"
+      }
+    },
+    {
+      "name": "HeavyWeight",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HeavyWeight)\\b"
+      }
+    },
+    {
       "name": "MARBLECAKE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(MARBLECAKE)\\b"
-      }
-    },
-    {
-      "name": "MiXER",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MiXER)\\b"
       }
     },
     {
@@ -59,12 +77,12 @@
       }
     },
     {
-      "name": "PATOMiEL",
+      "name": "PEPiTE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PATOMiEL)\\b"
+        "value": "\\b(PEPiTE)\\b"
       }
     },
     {
@@ -83,15 +101,6 @@
       "required": false,
       "fields": {
         "value": "\\b(ROMKENT)\\b"
-      }
-    },
-    {
-      "name": "Sicario",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Sicario)\\b"
       }
     }
   ]
