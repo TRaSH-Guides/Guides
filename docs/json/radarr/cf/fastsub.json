@@ -1,0 +1,16 @@
+{
+  "trash_id": "7f9b93f82b7e996391525f2be1d891e0",
+  "trash_score": "-10000",
+  "name": "FastSUB",
+  "specifications": [
+    {
+      "name": "FastSUB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(FastSUB)\\b"
+      }
+    }
+  ]
+}

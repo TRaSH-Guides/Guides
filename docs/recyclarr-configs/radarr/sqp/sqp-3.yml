@@ -37,10 +37,12 @@ radarr:
           - 9364dd386c9b4a1100dde8264690add7  # HLG
           # Movie Versions
           - 0f12c086e289cf966fa5948eac571f44  # Hybrid
+          - f700d29429c023a5734505e77daeaea7  # DV (FEL)
           - 570bc9ebecd92723d2d21500f4be314c  # Remaster
           - eca37840c13c6ef2dd0262b141a5482f  # 4K Remaster
           - e0c07d59beb37348e975a930d5e50319  # Criterion Collection
           - 9d27d9d2181838f76dee150882bdc58c  # Masters of Cinema
+          - db9b4c4b53d312a3ca5f1378f6440fc9  # Vinegar Syndrome
           - 957d0f44b592285f26449575e8b1167e  # Special Edition
           - eecf3a857724171f968a66cb5719e152  # IMAX
           # Uncomment the next line if you prefer IMAX Enhanced releases
@@ -77,22 +79,22 @@ radarr:
           - cc5e51a9e85a6296ceefe097a77f12f4  # BCORE
           - 2a6039655313bf5dab1e43523b62c374  # MA
         quality_profiles:
-          - name: WEBDL|IMAX-E|2160p
+          - name: Remux|IMAX-E|2160p
             reset_unmatched_scores: true
       # Custom Scoring
       - trash_ids:
           # DV (WEBDL)
-          # If you and all of your users have a setup that fully supports DV, then uncomment the score line below
           - 923b6abef9b17f937fab56cfcf89e1f1  # DV (WEBDL)
         quality_profiles:
-          - name: WEBDL|IMAX-E|2160p
-            # score: 0  # overrides default of -10000
+          - name: Remux|IMAX-E|2160p
+            # If you and all of your users have a setup that fully supports DV, then uncomment the next line to override the default DV (WEBDL) score of -10000
+            # score: 0
       # If you are only running one Radarr instance, you can comment out the next six lines so you will get the HD release if there is no UHD version
       - trash_ids:
           # Misc
           - 2899d84dc9372de3408e6d8cc18e9666  # x264
         quality_profiles:
-          - name: WEBDL|IMAX-E|2160p
+          - name: Remux|IMAX-E|2160p
             score: -10000
       - trash_ids:
           # Streaming Services
@@ -107,5 +109,5 @@ radarr:
           - e36a0ba1bc902b26ee40818a1d59b8bd  # PMTP
           - c2863d2a50c9acad1fb50e53ece60817  # STAN
         quality_profiles:
-          - name: WEBDL|IMAX-E|2160p
+          - name: Remux|IMAX-E|2160p
             score: 0

@@ -1,3 +1,61 @@
+# 2023-03-18 12:40
+**[Info]**
+- The current French Tiers have been revised to make them a bit easier to update and follow
+- The groups inside the tiers have therefore been moved and audited accordingly
+**[New]**
+- [Radarr] Add a CF for `Vinegar Syndrome` releases to properly score and grab them.
+- [Starr-FR] Added `AZAZE` to FR LQ
+- [Starr-FR] Added `HiggsBoson` and `LYPSG` to FR Scene
+- [Radarr-FR] Added `FanSUB` and `FastSUB` CFs
+- [Radarr-FR] Added French Recyclarr configs (both MULTi and VOSTFR versions)
+- [Sonarr-FR] Added `Delivroozzi` and `Fuceo` to Sonarr Anime Tier 1
+**[Updated]**
+- [Guide-FR] Updated Unwanted sections
+- [Starr-FR] Updated tiers according to the new descriptions
+- [Sonarr-FR] Added the `CC` CF to the recyclarr configs
+**[Fixes]**
+- [Sonarr-FR] Updated `Multi-French` CF to include the MULTi condition that was missing
+
+# 2023-03-12 16:45
+**[New]**
+- None
+
+**[Updated]**
+- [Radarr] Add a Regrade condition to the `Upscaled` CF.
+- [Radarr] Add `ONLYMOViE` to the `Bad Dual Groups` custom format.
+- [Sonarr v3] Update screenshots to reflect current settings.
+- [Sonarr v3] Tried to make it more clear that you need to use 4 separate profiles.
+- [Downloaders - SABnzbd] Updated screenshots to match the new Starr apps layouts.
+- [Downloaders - SABnzbd] Added instructions how to whitelist your host if you get a `Unable to connect to SABnzbd` error.
+
+**[Fixed]**
+- [Radarr] Fix the `Upscale`d CF not matching `Upscale` in the release title.
+- [Starr] Add No `HDR10/HDR10+` to CF `HDR`, To prevent double scoring.
+- [Radarr] Exclude `Open Matte` from `Special Edition` CF.
+
+# 2023-03-04 17:15
+**[New]**
+- None
+
+**[Updated]**
+- [Radarr] Moved RlsGrp `SPHD` to the lowest UHD tier, because they often use Lower Quality sources for their releases.
+- [Radarr] Added RlsGrp `LAMA` to the `LQ` CF, uploading 480p cam shit as 1080p bluray and just in general low quality.
+- [Radarr] CF `Special Edition`, Special Edition matches `IMAX Edition`, so adding unnecessary extra scoring to releases that already match `IMAX`.
+
+**[Fixed]**
+- [Guide] Fix broken links.
+
+# 2023-02-26 19:45
+**[New]**
+- None
+
+**[Updated]**
+- [Guide - unRaid qBit Mover script] Added If you have authentication enabled. Add `'` either side of your User/Password.
+- [Guide - Guide Sync] Move features to a table instead of the footnotes.
+
+**[Fixed]**
+- [Radarr] CF `Upscaled` in wrong quality profile.
+
 # 2023-02-19 20:30
 **[New]**
 - [Hardlinks Guide] NEW Guide for Truenas Core.

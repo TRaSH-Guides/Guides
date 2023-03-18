@@ -1,0 +1,16 @@
+{
+    "trash_id": "02e48d30a176c91baf9e15de05e5dc6a",
+    "name": "FanSUB",
+    "specifications": [
+      {
+        "name": "FanSUB",
+        "implementation": "ReleaseTitleSpecification",
+        "negate": false,
+        "required": true,
+        "fields": {
+          "value": "\\b(FanSUB)\\b"
+        }
+      }
+    ]
+  }
+

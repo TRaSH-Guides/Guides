@@ -50,21 +50,21 @@
       }
     },
     {
+      "name": "HDForever",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HDForever)\\b"
+      }
+    },
+    {
       "name": "HeavyWeight",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(HeavyWeight)\\b"
-      }
-    },
-    {
-      "name": "HLX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(HLX)\\b"
       }
     },
     {
@@ -77,12 +77,12 @@
       }
     },
     {
-      "name": "NEO",
+      "name": "MYSTERiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NEO)\\b"
+        "value": "\\b(MYSTERiON)\\b"
       }
     },
     {
@@ -92,6 +92,24 @@
       "required": false,
       "fields": {
         "value": "\\b(NoNE)\\b"
+      }
+    },
+    {
+      "name": "ONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ONLY)\\b"
+      }
+    },
+    {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ONLYMOViE)\\b"
       }
     },
     {

@@ -23,21 +23,21 @@
       }
     },
     {
-      "name": "FCK",
+      "name": "COLL3CTiF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FCK)\\b"
+        "value": "\\b(COLL3CTiF)\\b"
       }
     },
     {
-      "name": "FRATERNiTY",
+      "name": "FiND",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FRATERNiTY)\\b"
+        "value": "\\b(FiND)\\b"
       }
     },
     {
@@ -83,15 +83,6 @@
       "required": false,
       "fields": {
         "value": "\\b(pERsO)\\b"
-      }
-    },
-    {
-      "name": "R3MiX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(R3MiX)\\b"
       }
     },
     {

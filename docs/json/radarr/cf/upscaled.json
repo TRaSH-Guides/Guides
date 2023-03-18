@@ -1,19 +1,10 @@
 {
   "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
   "trash_score": "-10000",
-  "trash_regex": "https://regex101.com/r/HBqWdQ/1",
+  "trash_regex": "https://regex101.com/r/zOaqyg/1",
   "name": "Upscaled",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-    {
-      "name": "Upscaled",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Up(s(caled|UHD)|(Rez)))\\b"
-      }
-    },
     {
       "name": "AI Upscales",
       "implementation": "ReleaseTitleSpecification",
@@ -24,12 +15,30 @@
       }
     },
     {
+      "name": "Regrade",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Regrade)\\b"
+      }
+    },
+    {
       "name": "TheUpscaler",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(The[ ._-]Upscaler)\\b"
+      }
+    },
+    {
+      "name": "Upscaled",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Up(s(caled?|UHD)|(Rez)))\\b"
       }
     }
   ]

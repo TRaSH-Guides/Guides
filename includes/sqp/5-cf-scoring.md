@@ -22,7 +22,7 @@
 
 {! include-markdown "../../includes/sqp/uhd-radarr-misc.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-unwanted.md" !}
+{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-optional.md" !}
 
