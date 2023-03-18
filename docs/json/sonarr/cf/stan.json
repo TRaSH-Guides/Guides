@@ -11,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+        "value": "\\b(stan)[ ._-]web(?:dl|rip)?\\b"
       }
     },
     {
