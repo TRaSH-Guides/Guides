@@ -6,12 +6,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "DV HDR10",
+      "name": "DV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HDR(10)?(?!\\+))\\b)"
+        "value": "\\b(DV|DoVi|Dolby[ .]?Vision)\\b"
+      }
+    },
+    {
+      "name": "HDR10",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(HDR(10)?(?!\\+))\\b"
       }
     },
     {
