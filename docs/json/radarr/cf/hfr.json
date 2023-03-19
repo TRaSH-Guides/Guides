@@ -1,0 +1,16 @@
+{
+  "trash_id": "73613461ac2cea99d52c4cd6e177ab82",
+  "name": "HFR",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "HFR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(HFR)\\b"
+      }
+    }
+  ]
+}

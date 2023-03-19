@@ -85,6 +85,7 @@ I also made 3 guides related to this one.
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
 |                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
+|                                | [HFR](#hfr)                         |                               |                                               |
 
 ------
 
@@ -1138,6 +1139,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-fel.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HFR
+
+??? question "HFR - [CLICK TO EXPAND]"
+
+    - This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
