@@ -80,6 +80,7 @@ I also made 3 guides related to this one.
 |                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                                 |
 |                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                                 |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  |                               |                                                 |
+|                                | [HFR](#hfr)                         |                               |                                                 |
 
 ------
 
@@ -1231,6 +1232,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/line-mic-dubbed.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HFR
+
+??? question "HFR - [CLICK TO EXPAND]"
+
+    - This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hfr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

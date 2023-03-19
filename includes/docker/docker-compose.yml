@@ -6,7 +6,6 @@ services:
     restart: unless-stopped
     logging:
       driver: json-file
-    network_mode: bridge
     ports:
       - 7878:7878
     environment:
@@ -23,7 +22,6 @@ services:
     restart: unless-stopped
     logging:
       driver: json-file
-    network_mode: bridge
     ports:
       - 8989:8989
     environment:
@@ -40,7 +38,6 @@ services:
     restart: unless-stopped
     logging:
       driver: json-file
-    network_mode: bridge
     ports:
       - 6767:6767
     environment:
@@ -57,7 +54,6 @@ services:
     restart: unless-stopped
     logging:
       driver: json-file
-    network_mode: bridge
     ports:
       - 8080:8080
       - 9090:9090
