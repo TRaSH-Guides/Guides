@@ -781,6 +781,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hfr">
+    HFR
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2151,6 +2156,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hfr">
+    HFR
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2951,6 +2961,12 @@ Special thanks to everyone that helped testing and creating these Custom Formats
 <td></td>
 <td><a href="#dv-fel">DV (FEL)</a></td>
 <td><a href="#fastsub">FastSUB</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#hfr">HFR</a></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
@@ -6972,6 +6988,35 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-HYBRID"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="hfr">HFR<a class="headerlink" href="#hfr" title="Permanent link"></a></h3>
+<details class="question">
+<summary>HFR - [CLICK TO EXPAND]</summary>
+<ul>
+<li>This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.</li>
+</ul>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1bd69272e23c5e6c5b1d6c8a36fce95e"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HFR"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HFR"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HFR)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15600,7 +15645,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 12, 2023 20:46:35</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 19, 2023 21:24:27</span>
 </small>
 </div>
 <footer class="sponsorship">
