@@ -1241,6 +1241,7 @@
 <span class="w">          </span><span class="c1"># Optional</span>
 <span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
 <span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - b17886cb4158d9fea189859409975758  # HDR10+ Boost - Uncomment this line if you have a setup that supports HDR10+</span>
 <span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
 <span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
 <span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
@@ -1250,7 +1251,6 @@
 <span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
 <span class="w">          </span><span class="c1"># Streaming Services</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
@@ -1258,6 +1258,12 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
 <span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">151</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># DV (WEBDL)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
@@ -1371,6 +1377,7 @@
 <span class="w">          </span><span class="c1"># Optional</span>
 <span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
 <span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - b17886cb4158d9fea189859409975758  # HDR10+ Boost - Uncomment this line if you have a setup that supports HDR10+</span>
 <span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
 <span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
 <span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
@@ -1380,7 +1387,6 @@
 <span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
 <span class="w">          </span><span class="c1"># Streaming Services</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
@@ -1388,6 +1394,12 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
 <span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">151</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># DV (WEBDL)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
@@ -1501,6 +1513,7 @@
 <span class="w">          </span><span class="c1"># Optional</span>
 <span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
 <span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - b17886cb4158d9fea189859409975758  # HDR10+ Boost - Uncomment this line if you have a setup that supports HDR10+</span>
 <span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
 <span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
 <span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
@@ -1510,7 +1523,6 @@
 <span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
 <span class="w">          </span><span class="c1"># Streaming Services</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
@@ -1518,6 +1530,12 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
 <span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">151</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># DV (WEBDL)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
@@ -1633,6 +1651,7 @@
 <span class="w">          </span><span class="c1"># Optional</span>
 <span class="w">          </span><span class="c1"># Uncomment any of the following optional custom formats if you want them to be added to the quality profile</span>
 <span class="w">          </span><span class="c1"># - b6832f586342ef70d9c128d40c07b872  # Bad Dual Groups</span>
+<span class="w">          </span><span class="c1"># - b17886cb4158d9fea189859409975758  # HDR10+ Boost - Uncomment this line if you have a setup that supports HDR10+</span>
 <span class="w">          </span><span class="c1"># - 90cedc1fea7ea5d11298bebd3d1d3223  # EVO (no WEBDL)</span>
 <span class="w">          </span><span class="c1"># - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5  # No-RlsGroup</span>
 <span class="w">          </span><span class="c1"># - 7357cf5161efbf8c4d5d0c30b4815ee2  # Obfuscated</span>
@@ -1642,7 +1661,6 @@
 <span class="w">          </span><span class="c1"># - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">820b09bb9acbfde9c35c71e0e565dad8</span><span class="w">  </span><span class="c1"># 1080p</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
 <span class="w">          </span><span class="c1"># Streaming Services</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc5e51a9e85a6296ceefe097a77f12f4</span><span class="w">  </span><span class="c1"># BCORE</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
@@ -1650,6 +1668,12 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
 <span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="c1"># Resolution</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fb392fb0d61a010ae38e49ceaa24a1ef</span><span class="w">  </span><span class="c1"># 2160p</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">            </span><span class="nt">score</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">151</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># DV (WEBDL)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">923b6abef9b17f937fab56cfcf89e1f1</span><span class="w">  </span><span class="c1"># DV (WEBDL)</span>
