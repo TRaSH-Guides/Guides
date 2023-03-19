@@ -85,7 +85,7 @@ I also made 3 guides related to this one.
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
 |                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
-|                                | [HFR](#hfr)                         |                               |                                                 |
+|                                | [HFR](#hfr)                         |                               |                                               |
 
 ------
 
