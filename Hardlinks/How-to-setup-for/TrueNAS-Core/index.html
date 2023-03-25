@@ -1054,24 +1054,24 @@
 </div>
 <p>For this example I'm using the dataset from my existing setup, <code>Media</code>. The naming isn't important as host machine mappings can be manipulated as desired.</p>
 <p>Go to Storage -&gt; Pools and click on ⋮ on the right side of your root dataset, then select <code>Add Dataset</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-create-dataset.png"><img alt="truenas-dataset" src="../images/truenas-create-dataset.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-create-dataset.png"><img alt="truenas-dataset" src="../images/truenas-create-dataset.png"/></a></p>
 <p>On the next screen you'll fill out your basic dataset info, such as name and comments. I have a few things grayed out here as the dataset has already been configured, but in this example you would use <code>Media</code> in the Name field and keep everything else at its default (<code>Inherit</code>) with the exception of <code>Enable Atime</code> and <code>Record Size</code>. Set <code>Enable Atime</code> to <code>off</code> and <code>Record Size</code> to <code>1M</code>. This provides a performance increase on a dataset that will primarily be handling media files. Optionally, you can configure <code>Quota for this dataset</code> if you want to limit what the dataset displays and will accept in terms of capacity when it's mounted (i.e. setting this to <code>10 TiB</code> will show 10T as the capacity when mounted).</p>
 <p>During share creation, there will be an option at the bottom for <code>Share Type</code>. <code>Generic</code> is the default, with <code>SMB</code> as a selectable option. Since we'll be using NFS, select <code>Generic</code>.</p>
 <p>Click <code>Submit</code> (mine shows <code>Save</code> since this is an existing dataset) once complete.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-dataset-options.png"><img alt="truenas-dataset" src="../images/truenas-dataset-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-dataset-options.png"><img alt="truenas-dataset" src="../images/truenas-dataset-options.png"/></a></p>
 <hr/>
 <h2 id="create-a-shared-group">Create a shared group<a class="headerlink" href="#create-a-shared-group" title="Permanent link"></a></h2>
 <p>We'll need to create a shared group so that we can ensure proper access when mounting, and to avoid ending up with <code>nobody</code> as the group name when mounting over NFS. This group should contain any of your user accounts that will be accessing the share (Starr apps, download clients, etc). It should also match the group and <code>GID</code> on the host you plan to mount the share to, and run your apps on.</p>
 <p>Navigate to Accounts -&gt; Groups, and click <code>Add</code> at the top right.</p>
 <p>You'll arrive at a simple configuration screen like the one shown below. Set your <code>GID</code> that you plan to use, and name the group. In this example I'm using a <code>GID</code> of <code>1215</code> and a group name of <code>dockermedia</code>. Since this group won't be used for anything other than share permissions, leave <code>Permit Sudo</code> and <code>Samba Authentication</code> unchecked. Click <code>Submit</code> once complete.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-group-options.png"><img alt="truenas-group" src="../images/truenas-group-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-group-options.png"><img alt="truenas-group" src="../images/truenas-group-options.png"/></a></p>
 <hr/>
 <h2 id="create-your-users">Create your user(s)<a class="headerlink" href="#create-your-users" title="Permanent link"></a></h2>
 <p>We'll need to create a user (or users if you're using individual user accounts per service) on TrueNAS that matches the user and UID of the user you'll be mounting your share with. It's important that these match since we're not using the <code>Mapall</code> function that exist under the NFS Share options.</p>
 <p>Navigate to Accounts -&gt; Users, and click <code>Add</code> at the top right.</p>
 <p>You'll arrive at a configuration screen like the one shown below. Fill out <code>Full Name</code> and <code>Username</code> with the desired username, and set your <code>User ID</code> that you plan to use.</p>
 <p>You'll need to uncheck <code>New Primary Group</code> so you can manually populate <code>Primary Group</code> with the shared group you created in the previous step. In this example I'm using a GID of <code>1215</code> and a <code>Primary Group</code> name of <code>dockermedia</code>. Leave <code>Home Directory</code> as <code>/nonexistent</code>, and set <code>Disable Password</code> to <code>Yes</code>. Uncheck <code>Samba Authentication</code> and click <code>Submit</code> once complete. <code>Home Directory Permissions</code> aren't important as it's set to <code>/nonexistent</code>, and we won't ever be accessing it.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-user-options.png"><img alt="truenas-user" src="../images/truenas-user-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-user-options.png"><img alt="truenas-user" src="../images/truenas-user-options.png"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you're using a single, shared user and group setup (1000:1000 is the common one) you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.</p>
@@ -1082,7 +1082,7 @@
 <p>Navigate to Storage -&gt; Pools, and click ⋮ on the right side of your target dataset (<code>Media</code> if you're following my example), then select <code>Edit Permissions</code>.</p>
 <p>You'll arrive at a configuration screen like the one shown below. Under <code>Owner</code>, fill out your <code>User</code> and <code>Group</code> information with your desired user and the shared group you plan to use for your apps. <code>User</code> isn't super important here if you're using a NFS share and have <code>Group</code> configured properly, but it would matter if you're doing a single-user share (i.e. if you wanted a single person to have their own dataset -&gt; share to map).</p>
 <p>Check the boxes for <code>Apply User</code>, <code>Apply Group</code>, and <code>Apply Permissions Recursively</code> (check <code>Confirm</code> and click <code>Continue</code> if you get a popup). Check the <code>Access Mode</code> boxes as indicated in the image example and click <code>Save</code> once complete.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-dataset-permissions.png"><img alt="truenas-dataset-permissions" src="../images/truenas-dataset-permissions.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-dataset-permissions.png"><img alt="truenas-dataset-permissions" src="../images/truenas-dataset-permissions.png"/></a></p>
 <hr/>
 <h2 id="create-your-nfs-shares">Create your NFS share(s)<a class="headerlink" href="#create-your-nfs-shares" title="Permanent link"></a></h2>
 <p>Navigate to Sharing -&gt; Unix Shares (NFS), and click <code>Add</code> at the top right.</p>
@@ -1092,7 +1092,7 @@
 <p>Leave <code>Security</code> alone as the defaults are fine.</p>
 <p>At the bottom, you have a couple of options. You can either specify <code>Authorized Networks</code> for more broad access, or authorize specific hosts (my preferred method). Either way, make sure you use one of these options to ensure that whichever host is mounting the NFS share has access.</p>
 <p>Click <code>Submit</code> once complete.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-nfs-share-options.png"><img alt="truenas-nfs-share-options" src="../images/truenas-nfs-share-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-nfs-share-options.png"><img alt="truenas-nfs-share-options" src="../images/truenas-nfs-share-options.png"/></a></p>
 <hr/>
 <h2 id="configure-and-enable-nfs-service">Configure and enable NFS service<a class="headerlink" href="#configure-and-enable-nfs-service" title="Permanent link"></a></h2>
 <p>Navigate to Services and click the edit icon under <code>Actions</code> on the <code>NFS</code> row.</p>
@@ -1101,7 +1101,7 @@
 <p>Any other options are mostly up to your environment and you should consult standard TrueNAS support paths for assistance.</p>
 <p>Click <code>Save</code> once complete.</p>
 <p>Make sure to check <code>Start Automatically</code> and click the slider under <code>Running</code> to make sure the service is running correctly and starts at boot.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/truenas-nfs-service-options.png"><img alt="truenas-nfs-service-options" src="../images/truenas-nfs-service-options.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/truenas-nfs-service-options.png"><img alt="truenas-nfs-service-options" src="../images/truenas-nfs-service-options.png"/></a></p>
 <hr/>
 <h2 id="mount-your-shares">Mount your shares<a class="headerlink" href="#mount-your-shares" title="Permanent link"></a></h2>
 <p>Follow standard mounting procedures for your operating system/device. In Ubuntu mounting a NFS share is as simple as adding it to <code>/etc/fstab</code> with <code>&lt;host&gt;:/mnt/tank/Media /mnt/data nfs defaults,_netdev,rw 0 0</code>, and issuing <code>mount -a</code> (or rebooting).</p>

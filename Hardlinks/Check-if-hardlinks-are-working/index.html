@@ -1018,7 +1018,7 @@
 <p>This is the easiest to check in my opinion.</p>
 <p>In your terminal <code>cd</code> to your download location and run <code>ls -al</code> or type <code>ls -al /path/to/your/download/location/</code></p>
 <p>You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-ls-al.png"><img alt="!Hardlinks check ls -al" src="../images/hardlinks-ls-al.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/hardlinks-ls-al.png"><img alt="!Hardlinks check ls -al" src="../images/hardlinks-ls-al.png"/></a></p>
 <ul>
 <li>Red rectangle - Not Hardlinked</li>
 <li>Green rectangle - Hardlinks</li>
@@ -1036,7 +1036,7 @@
 </li>
 </ul>
 <p>You will get 2 results you can use to compare several things.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-stat.png"><img alt="!Hardlinks check stat" src="../images/hardlinks-stat.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/hardlinks-stat.png"><img alt="!Hardlinks check stat" src="../images/hardlinks-stat.png"/></a></p>
 <ol>
 <li>Links: Everything above 1 means it's a hardlink</li>
 <li>Inode: if the numbers match you know the files are hardlinked</li>
@@ -1046,14 +1046,14 @@
 <li>In your terminal <code>cd</code> to your download location and run <code>ls -i file.mkv</code> or type <code>ls -i /path/to/your/download/location/file.mkv</code></li>
 </ul>
 <p>This will reveal the inode of your file on the left side of the file.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-ls-i.png"><img alt="!Hardlinks check ls -i" src="../images/hardlinks-ls-i.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/hardlinks-ls-i.png"><img alt="!Hardlinks check ls -i" src="../images/hardlinks-ls-i.png"/></a></p>
 <ul>
 <li>In your terminal type: <code>find /mnt/user/data/ -inum ###</code> or <code>find . -inum ###</code> if you're in your root folder.</li>
 </ul>
 <div class="admonition note">
 <p><code>###</code> = Your inode number on the left of the file you found.</p>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/hardlinks-inode.png"><img alt="!hardlinks inode" src="../images/hardlinks-inode.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/hardlinks-inode.png"><img alt="!hardlinks inode" src="../images/hardlinks-inode.png"/></a></p>
 <p>It will list all files linked with the same inode number.</p>
 <hr/>
 <div class="md-source-file">
