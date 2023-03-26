@@ -1,3 +1,13 @@
+# 2023-03-26 11:00
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] CF `Scene` prevent matching on releases renamed by trackers.
+
 # 2023-03-18 12:40
 **[Info]**
 - The current French Tiers have been revised to make them a bit easier to update and follow
