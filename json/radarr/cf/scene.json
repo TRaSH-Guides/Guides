@@ -1,7 +1,7 @@
 {
   "trash_id": "f537cf427b64c38c8e36298f657e4828",
   "trash_score": "-10000",
-  "trash_regex": "https://regex101.com/r/viarq7/1",
+  "trash_regex": "https://regex101.com/r/viarq7/4",
   "name": "Scene",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -11,7 +11,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*([_. ]WEB[_. ]))|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-KOGI|-PECULATE|-SLOT)"
+        "value": "^(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT)"
       }
     },
     {
