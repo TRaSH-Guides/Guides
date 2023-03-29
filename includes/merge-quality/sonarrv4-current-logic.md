@@ -21,4 +21,4 @@
     !!! warning ""
         REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.
 
-         `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use a preferred word regex of `/\b(repack|proper)\b/i`
+         `Settings` => `Media Management` => `File Management` => `Proper & Repacks` Change to `Do Not Prefer` and use the [Repack/Proper Custom Format](/Sonarr/Sonarr-collection-of-custom-formats/#repackproper){:target="_blank" rel="noopener noreferrer"}
