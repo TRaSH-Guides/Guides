@@ -221,6 +221,15 @@
       }
     },
     {
+      "name": "GPTHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GPTHD)\\b"
+      }
+    },
+    {
       "name": "HDS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
