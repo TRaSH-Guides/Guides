@@ -338,6 +338,15 @@
       }
     },
     {
+      "name": "XEBEC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(XEBEC|4KBEC|CEBEX)\\b"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
