@@ -898,7 +898,7 @@ I also made 3 guides related to this one.
 
     This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
 
     !!! note
 
@@ -1024,7 +1024,7 @@ I also made 3 guides related to this one.
 ??? question "DV (WEBDL) - [CLICK TO EXPAND]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
 
     This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
 
@@ -1048,7 +1048,7 @@ I also made 3 guides related to this one.
 
     This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
