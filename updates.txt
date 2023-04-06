@@ -1,3 +1,18 @@
+# 2023-04-06 19:30
+**[New]**
+- None
+
+**[Updated]**
+- [Starr] Added RlsGrp `XEBEC` to CF `Web Tier 2`.
+- [Radarr] Add RlsGrp `GPTHD` to `LQ` custom format. (filenames are improperly named, hardcoded Chinese subtitles)
+
+**[Fixed]**
+- [Sonarr v4] Adjust the regex to account for episode titles. Fix the `SHO` CF wrongfully matching "Showtime" in the episode title.
+- [Guide] (Starr) Correct the scores for some `Unwanted`/`Optional` CFs in the Guides. Change the scores in the Guides from `-1000` OR `-10000` to only `-10000`.
+- [Guide] (Sonarr v4) Fixed proper description was still pointing to v3 regex.
+- [Guide] (SABnzbd) Update breakdown path image - The SABnzbd path and categories has an outdated image that have caused some conflicting.
+- [Guide] (SABnzbd) V4.0.0 (current beta) introduced a couple of input variables, that weren't available in the versions before. This PR fixes the two scripts in the Guide, so they are compatible with earlier and V4+ versions.
+
 # 2023-03-27 19:00
 **[New]**
 - None
