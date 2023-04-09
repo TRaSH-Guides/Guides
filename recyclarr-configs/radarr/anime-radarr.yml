@@ -6,6 +6,10 @@ radarr:
     quality_definition:
       type: movie
 
+    quality_profiles:
+      - name: Remux-1080p - Anime
+        reset_unmatched_scores: true
+
     custom_formats:
       # Scores from TRaSH json
       - trash_ids:
@@ -34,7 +38,6 @@ radarr:
           - 60f6d50cbd3cfc3e9a8c00e3a30c3114  # VRV
         quality_profiles:
           - name: Remux-1080p - Anime
-            reset_unmatched_scores: true
       # Custom Scoring
       # Anime CF/Scoring
       - trash_ids:

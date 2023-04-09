@@ -7,6 +7,10 @@ sonarr:
     quality_definition:
       type: series
 
+    quality_profiles:
+      - name: WEB-2160p
+        reset_unmatched_scores: true
+
     custom_formats:
       # Scores from TRaSH json
       - trash_ids:
@@ -59,4 +63,3 @@ sonarr:
           - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
         quality_profiles:
           - name: WEB-2160p
-            reset_unmatched_scores: true
