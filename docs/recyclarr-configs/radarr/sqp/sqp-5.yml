@@ -6,6 +6,10 @@ radarr:
     quality_definition:
       type: sqp-uhd
 
+    quality_profiles:
+      - name: Bluray|IMAX-E|2160p
+        reset_unmatched_scores: true
+
     custom_formats:
       # Scores from TRaSH json
       - trash_ids:
@@ -82,7 +86,6 @@ radarr:
           - 2a6039655313bf5dab1e43523b62c374  # MA
         quality_profiles:
           - name: Bluray|IMAX-E|2160p
-            reset_unmatched_scores: true
       # Custom Scoring
       - trash_ids:
           # Resolution

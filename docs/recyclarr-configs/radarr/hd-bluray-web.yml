@@ -6,6 +6,10 @@ radarr:
     quality_definition:
       type: movie
 
+    quality_profiles:
+      - name: HD Bluray + WEB
+        reset_unmatched_scores: true
+
     custom_formats:
       # Scores from TRaSH json
       - trash_ids:
@@ -38,7 +42,6 @@ radarr:
           - 2a6039655313bf5dab1e43523b62c374  # MA
         quality_profiles:
           - name: HD Bluray + WEB
-            reset_unmatched_scores: true
       # Custom Scoring
       - trash_ids:
           # Streaming Services
