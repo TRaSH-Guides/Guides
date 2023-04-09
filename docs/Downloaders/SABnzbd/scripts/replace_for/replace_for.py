@@ -20,12 +20,7 @@ import os
 import os.path
 
 try:
-    try:
-    # Parse the 18 input variables for SABnzbd version >= 4.0.0
-    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist, showname, season, episodenumber, episodename, is_proper, resolution, decade, year, month, day, job_type) = sys.argv
-except ValueError:
-    # ...or 11 variables for earlier versions
-    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist, showname, season, episodenumber, episodename) = sys.argv
+    (scriptname, directory, orgnzbname, jobname, reportnumber, category, group, postprocstatus, url) = sys.argv
 except:
     print("No commandline parameters found")
     sys.exit(1)    # exit with 1 causes SABnzbd to ignore the output of this script
