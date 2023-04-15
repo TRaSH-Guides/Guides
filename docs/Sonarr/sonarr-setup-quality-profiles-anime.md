@@ -12,7 +12,7 @@
 
 It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
-The aim of this guide is to grab the best release overall (as per [SeaDex](https://sneedex.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
 The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
 
 !!! info ""
