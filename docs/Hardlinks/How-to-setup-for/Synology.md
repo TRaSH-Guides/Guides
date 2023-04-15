@@ -153,7 +153,7 @@ These subfolders you need to create your self.
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-synology.md" !}
 <!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
 ------

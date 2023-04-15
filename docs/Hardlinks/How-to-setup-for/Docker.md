@@ -14,9 +14,9 @@
 
     I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.
 
-    The paths mentioned below refer to internal paths for the containers!
+    The paths mentioned below refer to internal paths (or `Container Path`) for the containers!
 
-    External paths depends where you mounted your share or your drives.
+    External paths (or `Host Path`) depends where you mounted your share or your drives.
 
     For example `/<path_to_data>/data`, or even `/data`.
 
@@ -26,7 +26,7 @@
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-docker.md" !}
 <!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
 {! include-markdown "../../../includes/hardlinks/permissions.md" !}

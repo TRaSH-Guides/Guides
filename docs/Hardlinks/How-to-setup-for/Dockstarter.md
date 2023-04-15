@@ -13,20 +13,20 @@ In this example the mounted drive will be mounted to `/mnt/` with the following 
 storage
 ├── downloads
 │  ├── torrents
-│  │  ├── movies
-│  │  ├── music
-|  |  ├── books
-│  │  └── tv
+│  │   ├── movies
+│  │   ├── music
+│  │   ├── books
+│  │   └── tv
 │  └── usenet
-│     ├── movies
-│     ├── music
-|     ├── books
-│     └── tv
+│       ├── movies
+│       ├── music
+│       ├── books
+│       └── tv
 └── medialibrary
-    ├── movies
-    ├── music
-    ├── books
-    └── tv
+     ├── movies
+     ├── music
+     ├── books
+     └── tv
 ```
 
 ## Changes to the .env

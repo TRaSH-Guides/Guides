@@ -6,10 +6,11 @@ data
 │   ├── music
 │   └── tv
 ├── usenet
-│   ├── books
-│   ├── movies
-│   ├── music
-│   └── tv
+│   └── complete
+│        ├── books
+│        ├── movies
+│        ├── music
+│        └── tv
 └── media
      ├── books
      ├── movies
