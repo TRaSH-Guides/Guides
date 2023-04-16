@@ -7,23 +7,23 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Guides mainly for Sonarr/Radarr/Bazarr and everything related to it." name="description"/>
 <meta content="TRaSH" name="author"/>
-<link href="https://trash-guides.info/Downloaders/qBittorrent/Paths/" rel="canonical"/>
-<link href="../Basic-Setup/" rel="prev"/>
-<link href="../How-to-add-categories/" rel="next"/>
-<link href="../../../img/favicon.png" rel="icon"/>
+<link href="https://trash-guides.info/Prowlarr/prowlarr-setup-limited-api/" rel="canonical"/>
+<link href="../prowlarr-setup-flaresolverr/" rel="prev"/>
+<link href="../../Bazarr/" rel="next"/>
+<link href="../../img/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
-<title>Paths - TRaSH Guides</title>
-<link href="../../../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<title>How to setup indexers with limited API - TRaSH Guides</title>
+<link href="../../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
-<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
-<link href="../../../stylesheets/github-permalink-style.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../stylesheets/github-permalink-style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZZKM4MPQXL"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZZKM4MPQXL",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZZKM4MPQXL",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -34,14 +34,14 @@
                 body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
                 body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
                 body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#qbittorrent-paths">
+<a class="md-skip" href="#how-to-setup-indexers-with-limited-api">
           Skip to content
         </a>
 </div>
@@ -49,8 +49,8 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="TRaSH Guides" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="TRaSH Guides">
-<img alt="logo" src="../../../img/logo.png"/>
+<a aria-label="TRaSH Guides" class="md-header__button md-logo" data-md-component="logo" href="../.." title="TRaSH Guides">
+<img alt="logo" src="../../img/logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -65,7 +65,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Paths
+              How to setup indexers with limited API
             
           </span>
 </div>
@@ -128,57 +128,57 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../..">
+<a class="md-tabs__link" href="../..">
       Home
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Radarr/">
+<a class="md-tabs__link" href="../../Radarr/">
         Radarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Sonarr/">
+<a class="md-tabs__link" href="../../Sonarr/">
         Sonarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Prowlarr/">
+<a class="md-tabs__link md-tabs__link--active" href="../">
         Prowlarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Bazarr/">
+<a class="md-tabs__link" href="../../Bazarr/">
         Bazarr
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../">
+<a class="md-tabs__link" href="../../Downloaders/">
         Downloaders
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Plex/">
+<a class="md-tabs__link" href="../../Plex/">
         Plex
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Guide-Sync/">
+<a class="md-tabs__link" href="../../Guide-Sync/">
         Guide Sync
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Misc/">
+<a class="md-tabs__link" href="../../Misc/">
         Misc
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Hardlinks/Hardlinks-and-Instant-Moves/">
+<a class="md-tabs__link" href="../../Hardlinks/Hardlinks-and-Instant-Moves/">
         Hardlinks
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../Hardlinks/How-to-setup-for">
+<a class="md-tabs__link" href="../../Hardlinks/How-to-setup-for">
       How-to-setup-for
     </a>
 </li>
@@ -192,8 +192,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="TRaSH Guides" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="TRaSH Guides">
-<img alt="logo" src="../../../img/logo.png"/>
+<a aria-label="TRaSH Guides" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="TRaSH Guides">
+<img alt="logo" src="../../img/logo.png"/>
 </a>
     TRaSH Guides
   </label>
@@ -209,7 +209,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+<a class="md-nav__link" href="../..">
         Home
       </a>
 </li>
@@ -226,52 +226,52 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/">
+<a class="md-nav__link" href="../../Radarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../../Radarr/Radarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-recommended-naming-scheme/">
+<a class="md-nav__link" href="../../Radarr/Radarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-import-custom-formats/">
+<a class="md-nav__link" href="../../Radarr/Radarr-import-custom-formats/">
         How to import Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-how-to-update-custom-formats/">
+<a class="md-nav__link" href="../../Radarr/Radarr-how-to-update-custom-formats/">
         How to Update Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles/">
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles/">
         How to setup Quality Profiles
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles-anime/">
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-anime/">
         How to setup Quality Profiles (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles-french-en/">
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-french-en/">
         How to setup Quality Profiles (French)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-collection-of-custom-formats/">
+<a class="md-nav__link" href="../../Radarr/Radarr-collection-of-custom-formats/">
         Collection of Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-remote-path-mapping/">
+<a class="md-nav__link" href="../../Radarr/Radarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
@@ -288,27 +288,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Tips/How-to-setup-language-custom-formats/">
+<a class="md-nav__link" href="../../Radarr/Tips/How-to-setup-language-custom-formats/">
         How to setup Language Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Tips/Merge-quality/">
+<a class="md-nav__link" href="../../Radarr/Tips/Merge-quality/">
         How to Merge Quality
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Tips/Radarr-rename-your-folders/">
+<a class="md-nav__link" href="../../Radarr/Tips/Radarr-rename-your-folders/">
         How to rename your folders
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Tips/Radarr-show-unknown-movie-items/">
+<a class="md-nav__link" href="../../Radarr/Tips/Radarr-show-unknown-movie-items/">
         Show Unknown Movie Items
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Tips/Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../../Radarr/Tips/Sync-2-radarr-sonarr/">
         How to Sync 2 Radarr or Sonarr with each other
       </a>
 </li>
@@ -331,32 +331,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/">
+<a class="md-nav__link" href="../../Sonarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Quality-Settings-File-Size/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Quality-Settings-File-Size/">
         Quality Settings (File Size)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-recommended-naming-scheme/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-recommended-naming-scheme/">
         Recommended naming scheme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Release-Profile-RegEx/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx/">
         Release Profile RegEx (WEB-DL)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-Release-Profile-RegEx-Anime/">
         Release Profile RegEx (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Sonarr-remote-path-mapping/">
+<a class="md-nav__link" href="../../Sonarr/Sonarr-remote-path-mapping/">
         Remote Path Mappings explained
       </a>
 </li>
@@ -373,32 +373,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-import-custom-formats/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-import-custom-formats/">
         How to import Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-how-to-update-custom-formats/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-how-to-update-custom-formats/">
         How to Update Custom Formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-setup-quality-profiles/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-setup-quality-profiles/">
         How to setup Quality Profiles
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-setup-quality-profiles-anime/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-setup-quality-profiles-anime/">
         How to setup Quality Profiles (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-setup-quality-profiles-french-en/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-setup-quality-profiles-french-en/">
         How to setup Quality Profiles (French)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/sonarr-collection-of-custom-formats/">
+<a class="md-nav__link" href="../../Sonarr/sonarr-collection-of-custom-formats/">
         Collection of Custom Formats
       </a>
 </li>
@@ -418,17 +418,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Tips/How-to-setup-language-custom-formats/">
+<a class="md-nav__link" href="../../Sonarr/Tips/How-to-setup-language-custom-formats/">
         How to setup language custom formats
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Tips/Merge-quality/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Merge-quality/">
         Merge quality
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Sonarr/Tips/Sync-2-radarr-sonarr/">
+<a class="md-nav__link" href="../../Sonarr/Tips/Sync-2-radarr-sonarr/">
         Sync 2 radarr sonarr
       </a>
 </li>
@@ -438,37 +438,97 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
           Prowlarr
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
           Prowlarr
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/">
+<a class="md-nav__link" href="../">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/prowlarr-setup-proxy/">
+<a class="md-nav__link" href="../prowlarr-setup-proxy/">
         How to setup proxy for certain indexers
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/prowlarr-setup-flaresolverr/">
+<a class="md-nav__link" href="../prowlarr-setup-flaresolverr/">
         How to setup FlareSolverr
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../Prowlarr/prowlarr-setup-limited-api/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          How to setup indexers with limited API
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         How to setup indexers with limited API
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sync-profiles">
+    Sync Profiles
+  </a>
+<nav aria-label="Sync Profiles" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-sync-profile">
+    Adding a Sync Profile
+  </a>
+<nav aria-label="Adding a Sync Profile" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automatic-search">
+    Automatic Search
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interactive-search">
+    Interactive Search
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indexers-settings">
+    Indexers Settings
+  </a>
+<nav aria-label="Indexers Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#select-sync-profile">
+    Select Sync Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-api-limits">
+    Setup API Limits
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -486,17 +546,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/">
+<a class="md-nav__link" href="../../Bazarr/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/Setup-Guide/">
+<a class="md-nav__link" href="../../Bazarr/Setup-Guide/">
         Basic-Guide
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/After-install-configuration/">
+<a class="md-nav__link" href="../../Bazarr/After-install-configuration/">
         After Install Configuration
       </a>
 </li>
@@ -518,7 +578,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Bazarr/Tips/Bazarr-suggested-scoring/">
+<a class="md-nav__link" href="../../Bazarr/Tips/Bazarr-suggested-scoring/">
         Suggested Scoring
       </a>
 </li>
@@ -528,20 +588,20 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Downloaders
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
           Downloaders
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../">
+<a class="md-nav__link" href="../../Downloaders/">
         Home
       </a>
 </li>
@@ -558,12 +618,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../NZBGet/Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/NZBGet/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../NZBGet/Paths-and-Categories/">
+<a class="md-nav__link" href="../../Downloaders/NZBGet/Paths-and-Categories/">
         Path and Categories
       </a>
 </li>
@@ -588,12 +648,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../SABnzbd/Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/SABnzbd/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../SABnzbd/Paths-and-Categories/">
+<a class="md-nav__link" href="../../Downloaders/SABnzbd/Paths-and-Categories/">
         Path and Categories
       </a>
 </li>
@@ -605,41 +665,40 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_6_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
           qBittorrent
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_6_4_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_6_4_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_6_4">
 <span class="md-nav__icon md-icon"></span>
           qBittorrent
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Basic-Setup/">
         Basic-Setup
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Paths/">
         Paths
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../How-to-add-categories/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/How-to-add-categories/">
         How to add Categories
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Port-forwarding/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Port-forwarding/">
         Port forwarding
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../3rd-party-tools/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/3rd-party-tools/">
         3rd Party tools
       </a>
 </li>
@@ -656,7 +715,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Tips/How-to-run-the-unRaid-mover-for-qBittorrent/">
+<a class="md-nav__link" href="../../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/">
         How to run the unRaid mover for qBittorent seeding torrents
       </a>
 </li>
@@ -679,17 +738,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Deluge/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/">
         Deluge Placeholder
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Deluge/Deluge-Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/Deluge-Basic-Setup/">
         Deluge - Basic Setup
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Deluge/Deluge-how-to-add-labels/">
+<a class="md-nav__link" href="../../Downloaders/Deluge/Deluge-how-to-add-labels/">
         Deluge - How to add labels
       </a>
 </li>
@@ -709,12 +768,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../ruTorrent/">
+<a class="md-nav__link" href="../../Downloaders/ruTorrent/">
         ruTorrent Placeholder
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../ruTorrent/ruTorrent-Basic-Setup/">
+<a class="md-nav__link" href="../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/">
         ruTorrent - Basic Setup
       </a>
 </li>
@@ -737,7 +796,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/">
+<a class="md-nav__link" href="../../Plex/">
         Home
       </a>
 </li>
@@ -754,17 +813,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/Plex-media-server/">
+<a class="md-nav__link" href="../../Plex/Tips/Plex-media-server/">
         Suggested Plex Media Server Settings
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/Optimal-plex-client-settings/">
+<a class="md-nav__link" href="../../Plex/Tips/Optimal-plex-client-settings/">
         Optimal Plex Client Settings
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Plex/Tips/4k-transcoding/">
+<a class="md-nav__link" href="../../Plex/Tips/4k-transcoding/">
         JBOPS 4K Transcode Stopping with Tautulli
       </a>
 </li>
@@ -792,7 +851,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Guide-Sync/">
+<a class="md-nav__link" href="../../Guide-Sync/">
         Home
       </a>
 </li>
@@ -812,22 +871,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/">
+<a class="md-nav__link" href="../../Misc/">
         Home
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/how-to-provide-a-docker-compose/">
+<a class="md-nav__link" href="../../Misc/how-to-provide-a-docker-compose/">
         How to provide a docker compose
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/How-to-setup-Torguard-for-port-forwarding/">
+<a class="md-nav__link" href="../../Misc/How-to-setup-Torguard-for-port-forwarding/">
         Setup TorGuard for port forwarding
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Misc/x265-4k/">
+<a class="md-nav__link" href="../../Misc/x265-4k/">
         x265-4k and Golden Rule
       </a>
 </li>
@@ -847,7 +906,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Hardlinks-and-Instant-Moves/">
+<a class="md-nav__link" href="../../Hardlinks/Hardlinks-and-Instant-Moves/">
         Hardlinks - Atomic Moves
       </a>
 </li>
@@ -864,37 +923,37 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/">
         How to setup for
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Docker/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Docker/">
         Docker
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Dockstarter/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Dockstarter/">
         Dockstarter
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Native/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Native/">
         Native
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Synology/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Synology/">
         Synology
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/TrueNAS-Core/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/TrueNAS-Core/">
         TrueNAS Core
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for/Unraid/">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Unraid/">
         Unraid
       </a>
 </li>
@@ -902,17 +961,17 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Examples/">
+<a class="md-nav__link" href="../../Hardlinks/Examples/">
         Examples
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Check-if-hardlinks-are-working/">
+<a class="md-nav__link" href="../../Hardlinks/Check-if-hardlinks-are-working/">
         Check if hardlinks are working
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/Replace-copies-with-hardlinks/">
+<a class="md-nav__link" href="../../Hardlinks/Replace-copies-with-hardlinks/">
         Replace copies with hardlinks
       </a>
 </li>
@@ -920,7 +979,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Hardlinks/How-to-setup-for">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for">
         How-to-setup-for
       </a>
 </li>
@@ -933,42 +992,140 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sync-profiles">
+    Sync Profiles
+  </a>
+<nav aria-label="Sync Profiles" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-sync-profile">
+    Adding a Sync Profile
+  </a>
+<nav aria-label="Adding a Sync Profile" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automatic-search">
+    Automatic Search
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interactive-search">
+    Interactive Search
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indexers-settings">
+    Indexers Settings
+  </a>
+<nav aria-label="Indexers Settings" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#select-sync-profile">
+    Select Sync Profile
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-api-limits">
+    Setup API Limits
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Downloaders/qBittorrent/Paths.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Prowlarr/prowlarr-setup-limited-api.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
 </a>
-<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/raw/master/docs/Downloaders/qBittorrent/Paths.md" title="View source of this page">
+<a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/raw/master/docs/Prowlarr/prowlarr-setup-limited-api.md" title="View source of this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
 </a>
-<h1 id="qbittorrent-paths">qBittorrent - Paths<a class="headerlink" href="#qbittorrent-paths" title="Permanent link"></a></h1>
-<!-- BEGIN INCLUDE ../../../includes/downloaders/path.md -->
-<p>This basic example is based on the use of docker images</p>
-<div class="admonition tip">
-<p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
-<p>More info <a href="/Hardlinks/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
-</div>
+<h1 id="how-to-setup-indexers-with-limited-api">How to setup indexers with limited API<a class="headerlink" href="#how-to-setup-indexers-with-limited-api" title="Permanent link"></a></h1>
+<p>So you have access to a few (unpaid) usenet indexers with limited API calls and you still want to add them as backup for failed downloads, but you're always hitting the API limits in the first hour and can't make fully use of them.</p>
+<p>In this Guide i will show you a trick how you can make more use of them without hitting the API limit in the first hour.</p>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Pick one path layout and use it for all of them.</p>
-<p>It doesn't matter if you prefer to use <code>/data</code>, <code>/shared</code>, <code>/storage</code> or whatever.</p>
-<p>The screenshots in the examples are using the following root path <code>/data</code></p>
+<p class="admonition-title">This is mainly a usenet option but might be useful for a few trackers that have rate limits. I will use for this guide mainly usenet indexers as examples.</p>
 </div>
-<!-- END INCLUDE -->
-<!-- --8<-- "includes/downloaders/path.md" -->
+<h2 id="sync-profiles">Sync Profiles<a class="headerlink" href="#sync-profiles" title="Permanent link"></a></h2>
+<p>This is the same you see in the Starr apps under indexers when you open the specific indexer settings.</p>
+<p>A short description of what they do, what they mean, and when they are used.</p>
+<ul>
+<li>RSS = The so called search interval.</li>
+<li>Automatic search = When a item is added to the Starr apps and you do a <code>Add + Search</code>, if a "usenet" download fails it will search for a replacement, When you click on the <code>Search All</code>, <code>Search Monitored</code> or on the <code>magnifying icon</code>.</li>
+<li>Interactive search = When you select interactive search you get a unsorted/unfiltered list of everything your indexer(s) reports back where you can choose what you want to grab.</li>
+</ul>
+<h3 id="adding-a-sync-profile">Adding a Sync Profile<a class="headerlink" href="#adding-a-sync-profile" title="Permanent link"></a></h3>
+<p>For this we're going to create 2 new Sync Profiles</p>
+<p><code>Settings</code> =&gt; <code>Apps</code></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/settings-apps-sync-profiles.png"><img alt="Settings =&gt; Apps =&gt; Sync Profiles" src="../images/settings-apps-sync-profiles.png"/></a></p>
+<h4 id="automatic-search">Automatic Search<a class="headerlink" href="#automatic-search" title="Permanent link"></a></h4>
+<div class="admonition info">
+<p class="admonition-title">This one will only be used when a item is added to the Starr apps and you do a <code>Add + Search</code>.<br/>If a "usenet" download fails it will search for a replacement.<br/>When you click on the <code>Search All</code>, <code>Search Monitored</code> or on the <code>magnifying icon</code>.</p>
+</div>
+<p>Click on the + sign and create a new sync profile with the following options.</p>
+<ol>
+<li>Name it <code>Automatic Search</code></li>
+<li><strong>Disable</strong> Enable RSS</li>
+<li>Enable Interactive Search</li>
+<li>Enable Automatic Search</li>
+<li>If you're using usenet ignore this, if you use public torrent trackers set this somewhere between 20-70, being they often lie about their seeders amount.</li>
+<li>Click on Save</li>
+</ol>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/sync-profile-automatic-search.png"><img alt="Sync Profile Automatic Search" src="../images/sync-profile-automatic-search.png"/></a></p>
+<h4 id="interactive-search">Interactive Search<a class="headerlink" href="#interactive-search" title="Permanent link"></a></h4>
+<div class="admonition info">
+<p class="admonition-title">This will be only used when you do a interactive search.</p>
+</div>
+<p>Click on the + sign and create a new sync profile with the following options.</p>
+<ol>
+<li>Name it <code>Interactive Search</code></li>
+<li><strong>Disable</strong> Enable RSS</li>
+<li>Enable Interactive Search</li>
+<li><strong>Disable</strong> Enable Automatic Search</li>
+<li>If you're using usenet ignore this, if you use public torrent trackers set this somewhere between 20-70, being they often lie about their seeders amount.</li>
+<li>Click on Save</li>
+</ol>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/sync-profile-interactive-search.png"><img alt="Sync Profile Automatic Search" src="../images/sync-profile-interactive-search.png"/></a></p>
+<h3 id="indexers-settings">Indexers Settings<a class="headerlink" href="#indexers-settings" title="Permanent link"></a></h3>
+<p>Next up configure the new Sync Profile for the indexer with the limited API.</p>
+<h4 id="select-sync-profile">Select Sync Profile<a class="headerlink" href="#select-sync-profile" title="Permanent link"></a></h4>
+<p>In Prowlarr, edit the indexer of your choice and under <code>Sync Profile</code> you choose one of the two newly created Sync Profiles.</p>
+<p>For this example we're going to use <code>Automatic Search</code>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/settings-apps-sync-profiles.png"><img alt="Select Automatic Search" src="../images/settings-apps-sync-profiles.png"/></a></p>
+<h4 id="setup-api-limits">Setup API Limits<a class="headerlink" href="#setup-api-limits" title="Permanent link"></a></h4>
+<p>In Prowlarr, edit the indexer of your choice and under <code>Query Limit</code> (<em>API hits</em>) and <code>Grab Limit</code> (<em>Downloads</em>) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.</p>
+<div class="admonition warning">
+<p class="admonition-title">We're adding this to prevent any abuse/hammering to the indexer<br/>Ignoring this can sometimes result in a (potentially lifetime) ban.</p>
+</div>
 <hr/>
-<p><code>Options</code> =&gt; <code>Downloads</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="/Hardlinks/images/qbt-options-downloads.png"><img alt="qbt-options-downloads" src="/Hardlinks/images/qbt-options-downloads.png"/></a></p>
+<div class="admonition question">
+<p class="admonition-title">Questions or Suggestions?</p>
+<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
+<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord"/></a></p>
+</div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 16, 2023 17:38:12</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -1014,7 +1171,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

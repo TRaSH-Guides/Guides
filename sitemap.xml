@@ -256,6 +256,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://trash-guides.info/Prowlarr/prowlarr-setup-limited-api/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://trash-guides.info/Prowlarr/prowlarr-setup-proxy/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
