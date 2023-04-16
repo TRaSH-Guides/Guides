@@ -53,3 +53,5 @@ Scroll down to the bottom and add the tag you've set up earlier at step 2.
 Click `Test` and `Save`.
 
 Now the indexer should be using the VPN of your torrent client.
+
+--8<-- "includes/support.md"
