@@ -10,7 +10,7 @@ In this Guide i will show you a trick how you can make more use of them without 
 
 This is the same you see in the Starr apps under indexers when you open the specific indexer settings.
 
-A short description what they do, mean and when they are used.
+A short description of what they do, what they mean, and when they are used.
 
 - RSS = The so called search interval.
 - Automatic search = When a item is added to the Starr apps and you do a `Add + Search`, if a "usenet" download fails it will search for a replacement, When you click on the `Search All`, `Search Monitored` or on the `magnifying icon`.
@@ -60,7 +60,7 @@ Next up configure the new Sync Profile for the indexer with the limited API.
 
 #### Select Sync Profile
 
-Edit in Prowlarr the indexer of your choice and under `Sync Profile` you choose one of the two newly created Sync Profiles.
+In Prowlarr, edit the indexer of your choice and under `Sync Profile` you choose one of the two newly created Sync Profiles.
 
 For this example we're going to use `Automatic Search`.
 
@@ -68,8 +68,8 @@ For this example we're going to use `Automatic Search`.
 
 #### Setup API Limits
 
-Edit in Prowlarr the indexer of your choice and under `Query Limit` (*API hits*) and `Grab Limit` (*Downloads*) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.
+In Prowlarr, edit the indexer of your choice and under `Query Limit` (*API hits*) and `Grab Limit` (*Downloads*) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.
 
-!!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in to a (life time) ban."
+!!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in a (potentially lifetime) ban."
 
 --8<-- "includes/support.md"
