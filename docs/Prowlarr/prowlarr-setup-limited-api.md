@@ -26,6 +26,8 @@ For this we're going to create 2 new Sync Profiles
 
 #### Automatic Search
 
+!!! info "This one will only be used when a item is added to the Starr apps and you do a `Add + Search`.<br>If a "usenet" download fails it will search for a replacement.<br>When you click on the `Search All`, `Search Monitored` or on the `magnifying icon`."
+
 Click on the + sign and create a new sync profile with the following options.
 
 1. Name it `Automatic Search`
@@ -38,6 +40,8 @@ Click on the + sign and create a new sync profile with the following options.
 ![Sync Profile Automatic Search](images/sync-profile-automatic-search.png)
 
 #### Interactive Search
+
+!!! info "This will be only used when you do a interactive search."
 
 Click on the + sign and create a new sync profile with the following options.
 
