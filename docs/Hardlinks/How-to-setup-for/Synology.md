@@ -153,7 +153,7 @@ These subfolders you need to create your self.
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-synology.md" !}
 <!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
 ------
@@ -166,7 +166,7 @@ If you use both then run both commands
 #### If you use usenet
 
 ```bash
-mkdir -p /volume1/data/{usenet/{tv,movies,music},media/{tv,movies,music}}
+mkdir -p /volume1/data/{usenet/complete/{tv,movies,music},media/{tv,movies,music}}
 ```
 
 #### If you use torrents
