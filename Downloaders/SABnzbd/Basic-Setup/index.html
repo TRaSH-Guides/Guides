@@ -598,6 +598,11 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#bad-path-suggestion">
+    Bad path suggestion
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#general">
     General
   </a>
@@ -1046,6 +1051,11 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#bad-path-suggestion">
+    Bad path suggestion
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#general">
     General
   </a>
@@ -1166,8 +1176,9 @@
 <p>More info <a href="/Hardlinks/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
 <!-- BEGIN INCLUDE ../hardlinks/bad-path-suggestion.md -->
+<h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p>The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
 <!-- END INCLUDE -->
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->

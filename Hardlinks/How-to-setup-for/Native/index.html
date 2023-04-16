@@ -1070,10 +1070,11 @@
 │   ├── music
 │   └── tv
 ├── usenet
-│   ├── books
-│   ├── movies
-│   ├── music
-│   └── tv
+│   └── complete
+│        ├── books
+│        ├── movies
+│        ├── music
+│        └── tv
 └── media
      ├── books
      ├── movies
@@ -1099,14 +1100,15 @@
 <!-- END INCLUDE -->
 <h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
-<p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
+<p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/complete/{tv|movies|music}</code>.</p>
 <!-- BEGIN INCLUDE docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    └── complete
+         ├── books
+         ├── movies
+         ├── music
+         └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 <h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h4>
@@ -1120,10 +1122,11 @@
 │   ├── music
 │   └── tv
 ├── usenet
-│   ├── books
-│   ├── movies
-│   ├── music
-│   └── tv
+│   └── complete
+│        ├── books
+│        ├── movies
+│        ├── music
+│        └── tv
 └── media
      ├── books
      ├── movies
