@@ -1,3 +1,13 @@
+# 2023-04-16 19:45
+**[New]**
+- [Prowlarr] How to setup indexers with limited API.
+
+**[Updated]**
+- [Guides Hardlinks] Improve readability paths.
+
+**[Fixed]**
+- [Anime Guide] Updated SeaDex URLs to point to the correct URL.
+
 # 2023-04-06 19:30
 **[New]**
 - None
