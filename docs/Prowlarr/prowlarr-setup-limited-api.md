@@ -49,3 +49,23 @@ Click on the + sign and create a new sync profile with the following options.
 1. Click on Save
 
 ![Sync Profile Automatic Search](images/sync-profile-interactive-search.png)
+
+### Indexers Settings
+
+Next up configure the new Sync Profile for the indexer with the limited API.
+
+#### Select Sync Profile
+
+Edit in Prowlarr the indexer of your choice and under `Sync Profile` you choose one of the two newly created Sync Profiles.
+
+For this example we're going to use `Automatic Search`.
+
+![Select Automatic Search](images/settings-apps-sync-profiles.png)
+
+#### Setup API Limits
+
+Edit in Prowlarr the indexer of your choice and under `Query Limit` (*API hits*) and `Grab Limit` (*Downloads*) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.
+
+!!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in to a (life time) ban."
+
+--8<-- "includes/support.md"
