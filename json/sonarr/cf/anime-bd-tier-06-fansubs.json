@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CH)\\b"
+        "value": "\\[CH\\]|-CH\\b"
       }
     },
     {
