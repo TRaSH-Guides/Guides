@@ -176,6 +176,15 @@
       }
     },
     {
+      "name": "LazyRemux",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LazyRemux)\\b"
+      }
+    },
+    {
       "name": "MK",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
