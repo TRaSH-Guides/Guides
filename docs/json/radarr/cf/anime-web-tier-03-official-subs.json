@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 7
       }
     },
     {
@@ -19,16 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "WEB",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 1
+        "value": 8
       }
     },
     {
