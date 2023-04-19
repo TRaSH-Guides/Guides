@@ -1,25 +1,25 @@
 {
-  "trash_id": "07a32f77690263bb9fda1842db7e273f",
-  "trash_regex": "https://regex101.com/r/sWCfAN/1",
-  "name": "VOSTFR",
+  "trash_id": "29b5f7b1a5f20f64228786c3ab1bdc7d",
+  "trash_regex": "https://regex101.com/r/qgQMab/1",
+  "name": "VF2",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "VOSTFR",
+      "name": "VF2",
       "implementation": "ReleaseTitleSpecification",
-      "negate": false,
+      "negate": false, 
       "required": false,
       "fields": {
-        "value": "\\b(VOST.*?FR(E|A)?)\\b"
+        "value": "\\b(VF2)\\b"
       }
     },
     {
-      "name": "SUBFRENCH",
+      "name": "Both VFF and VFQ",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SUBFR(A|ENCH)?)\\b"
+        "value": "\\b(VF(F|Q)[ .]VF(F|Q))\\b"
       }
     }
   ]

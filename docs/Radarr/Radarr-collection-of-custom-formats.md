@@ -73,13 +73,13 @@ I also made 3 guides related to this one.
 | [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)    | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
 | [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)         | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
 | [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VFQ](#vfq)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VQ](#vq)                     | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                                 |
-|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                                 |
-|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                                 |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)  |                               |                                                 |
+| [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)             |
+|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                                 |
+|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
 |                                | [HFR](#hfr)                         |                               |                                                 |
 
 ------
@@ -2275,12 +2275,28 @@ I also made 3 guides related to this one.
 
 ??? question "VFI - [CLICK TO EXPAND]"
 
-    International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
+    International French Version.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VF2
+
+??? question "VF2 - [CLICK TO EXPAND]"
+
+    VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vf2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
