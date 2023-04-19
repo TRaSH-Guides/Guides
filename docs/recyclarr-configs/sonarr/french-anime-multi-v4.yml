@@ -56,7 +56,7 @@ sonarr:
           - 4e6134a384dbc0ef166234cc0e45d26d  # FR Anime Tier 02
           - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)
-          # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en SeaDex
+          # vous pouvez les activer si vous souhaitez aussi récupérer les releases en SeaDex
           # si jamais une release MULTi/VOSTFR n'existes pas.
           #
           # Il est tout de fois possible que dans ce cas Sonarr récupére une release SeaDex au lieu
