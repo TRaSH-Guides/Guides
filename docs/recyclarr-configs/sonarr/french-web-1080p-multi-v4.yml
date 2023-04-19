@@ -12,7 +12,7 @@ sonarr:
 
     quality_definition:
       type: series
-    
+
     quality_profiles:
       - name: FR-MULTi-WEB-1080p
         reset_unmatched_scores: true

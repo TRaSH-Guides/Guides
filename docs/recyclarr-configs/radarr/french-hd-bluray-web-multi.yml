@@ -12,7 +12,7 @@ radarr:
 
     quality_definition:
       type: movie
-    
+
     quality_profiles:
       - name: FR-MULTi-BLURAY-WEB-1080p
         reset_unmatched_scores: true
@@ -60,12 +60,12 @@ radarr:
           - e36a0ba1bc902b26ee40818a1d59b8bd  # PMTP
           - c2863d2a50c9acad1fb50e53ece60817  # STAN
           # ===== HQ Source Groups =====
-          - 5322da05b19d857acc1e75be3edf47b3 # FR HD Bluray Tier 01
-          - 57f34251344be2e283fc30e00e458be6 # FR HD Bluray Tier 02
-          - 9790a618cec1aeac8ce75601a17ea40d # FR WEB Tier 01
-          - 3c83a765f84239716bd5fd2d7af188f9 # FR WEB Tier 02
+          - 5322da05b19d857acc1e75be3edf47b3  # FR HD Bluray Tier 01
+          - 57f34251344be2e283fc30e00e458be6  # FR HD Bluray Tier 02
+          - 9790a618cec1aeac8ce75601a17ea40d  # FR WEB Tier 01
+          - 3c83a765f84239716bd5fd2d7af188f9  # FR WEB Tier 02
           # Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française
-          - 0d94489c0d5828cd3bf9409d309fb32b # FR Scene Groups
+          - 0d94489c0d5828cd3bf9409d309fb32b  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes anglophones)
           # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.
           #

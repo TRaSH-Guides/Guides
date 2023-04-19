@@ -12,7 +12,7 @@ sonarr:
 
     quality_definition:
       type: anime
-    
+
     quality_profiles:
       - name: FR-ANIME-VOSTFR
         reset_unmatched_scores: true
