@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Darki)$"
+        "value": "\\b(Darki)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Delivroozzi)$"
+        "value": "\\b(Delivroozzi)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Fuceo)$"
+        "value": "\\b(Fuceo)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FUJiSAN)$"
+        "value": "\\b(FUJiSAN)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)$"
+        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NeoSG)$"
+        "value": "\\b(NeoSG)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Punisher694)$"
+        "value": "\\b(Punisher694)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SR-71)$"
+        "value": "\\b(SR-71)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(T3KASHi)$"
+        "value": "\\b(T3KASHi)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TANOSHii)$"
+        "value": "\\b(TANOSHii)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Tsundere[ .-]?Raws)$"
+        "value": "\\b(Tsundere[ .-]?Raws)\\b"
       }
     }
   ]

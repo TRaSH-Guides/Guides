@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Anime[ .-]?Heart)$"
+        "value": "\\b(Anime[ .-]?Heart)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KaeriZaki)$"
+        "value": "\\b(KaeriZaki)\\b"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KFR)$"
+        "value": "\\b(KFR)\\b"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Natsumi)$"
+        "value": "\\b(Natsumi)\\b"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NekoYu\\'?)$"
+        "value": "\\b(NekoYu\\'?)\\b"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Onii[ .-]?ChanSub)$"
+        "value": "\\b(Onii[ .-]?ChanSub)\\b"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Otaku[ .-]?Attitude)$"
+        "value": "\\b(Otaku[ .-]?Attitude)\\b"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Owlolf)$"
+        "value": "\\b(Owlolf)\\b"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Pikari[ .-]?Teshima)$"
+        "value": "\\b(Pikari[ .-]?Teshima)\\b"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Team[ .-]?Arcedo)$"
+        "value": "\\b(Team[ .-]?Arcedo)\\b"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Yarashii)$"
+        "value": "\\b(Yarashii)\\b"
       }
     }
   ]
