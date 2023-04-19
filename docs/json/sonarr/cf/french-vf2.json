@@ -7,7 +7,7 @@
     {
       "name": "VF2",
       "implementation": "ReleaseTitleSpecification",
-      "negate": false, 
+      "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(VF2)\\b"
