@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Darki)\\b"
+        "value": "\\b(Darki)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Delivroozzi)\\b"
+        "value": "\\b(Delivroozzi)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Fuceo)\\b"
+        "value": "\\b(Fuceo)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FUJiSAN)\\b"
+        "value": "\\b(FUJiSAN)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"
+        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NeoSG)\\b"
+        "value": "\\b(NeoSG)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Punisher694)\\b"
+        "value": "\\b(Punisher694)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SR-71)\\b"
+        "value": "\\b(SR-71)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(T3KASHi)\\b"
+        "value": "\\b(T3KASHi)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TANOSHii)\\b"
+        "value": "\\b(TANOSHii)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Tsundere[ .-]?Raws)\\b"
+        "value": "\\b(Tsundere[ .-]?Raws)$"
       }
     }
   ]

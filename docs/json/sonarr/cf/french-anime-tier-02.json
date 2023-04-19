@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLV)\\b"
+        "value": "\\b(BLV)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D3T3R10R1TY)\\b"
+        "value": "\\b(D3T3R10R1TY)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HANAMi)\\b"
+        "value": "\\b(HANAMi)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAF)\\b"
+        "value": "\\b(KAF)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KHAYA)\\b"
+        "value": "\\b(KHAYA)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
+        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RONiN)\\b"
+        "value": "\\b(RONiN)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TTN)\\b"
+        "value": "\\b(TTN)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(XSPITFIRE911)\\b"
+        "value": "\\b(XSPITFIRE911)$"
       }
     }
   ]
