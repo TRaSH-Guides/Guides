@@ -12,6 +12,10 @@ sonarr:
 
     quality_definition:
       type: anime
+    
+    quality_profiles:
+      - name: FR-ANIME-VOSTFR
+        reset_unmatched_scores: true
 
     # La liste de Formats Personnalisés à synchroniser avec Sonarr.
     custom_formats:
@@ -72,7 +76,6 @@ sonarr:
           # - dc262f88d74c651b12e9d90b39f6c753  # Anime Web Tier 06 (FanSubs)
         quality_profiles:
           - name: FR-ANIME-VOSTFR
-            reset_unmatched_scores: true
 
       - trash_ids:
           - d660701077794679fd59e8bdf4ce3a29  # AMZN

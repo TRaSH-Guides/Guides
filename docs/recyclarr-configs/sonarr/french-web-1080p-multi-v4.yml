@@ -12,6 +12,10 @@ sonarr:
 
     quality_definition:
       type: series
+    
+    quality_profiles:
+      - name: FR-MULTi-WEB-1080p
+        reset_unmatched_scores: true
 
     # La liste de Formats Personnalisés à synchroniser avec Sonarr.
     custom_formats:
@@ -70,7 +74,6 @@ sonarr:
           # - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            reset_unmatched_scores: true
 
       - trash_ids:
           - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
