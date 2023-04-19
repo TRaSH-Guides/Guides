@@ -66,8 +66,11 @@ Un exemple pour les Animes en MULTi/VOSTFR est également fourni à la fin : [Ex
 
 Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :
 
-- Vous ne voulez pas de VFQ ou VQ, dans ce cas, vous leur attribuerez un score de `-10000` au lieu de `0`.
-- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnerez un score de `1000` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
+- Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à `101` au lieu de `0`.
+- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `1000` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
+
+!!! warning "Attention"
+    Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-fr.md" !}
 

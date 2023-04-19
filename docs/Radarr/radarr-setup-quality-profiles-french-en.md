@@ -81,8 +81,11 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:
 
-- You do not want VFQ or VQ audio, in this case you will put them at `-10000` instead of `0`.
+- You prefer VFF (including VFI and VF2) audio, in this case you will put them at `101` instead of `0`.
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
+
+!!! warning "Attention"
+    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version-en.md" !}
 
