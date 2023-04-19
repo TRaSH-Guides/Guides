@@ -80,45 +80,49 @@ sonarr:
 
       # ===== Versions françaises =====
       # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.
-      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain
-      # type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.
+      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain
+      # type d'audio français. Par exemple si vous préférez la VFF.
       # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
       # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#type-de-versions-francaises
       - trash_ids:
           - 2c29a39a4fdfd6d258799bc4c09731b9  # VFF
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 7ae924ee9b2f39df3283c6c0beb8a2aa  # VOF
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - b6816a0e1d4b64bf3550ad3b74b009b6  # VFI
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
+      - trash_ids:
+          - b6816a0e1d4b64bf3550ad3b74b009b6  # VF2
+        quality_profiles:
+          - name: FR-MULTi-WEB-1080p
+            # score: 101
       - trash_ids:
           - 7a7f4e4f58bd1058440236d033a90b67  # VFQ
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 82085412d9a53ba8d8e46fc624eb701d  # VQ
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 0ce1e39a4676c6692ce47935278dac76  # VFB
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-            # score: -10000
 
       # ==== Scores Optionnels ====
       # Décommenter le score associé si c'est ce que vous souhaitez

@@ -112,42 +112,46 @@ radarr:
 
       # ===== Versions françaises =====
       # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.
-      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain
-      # type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.
+      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain
+      # type d'audio français. Par exemple si vous préférez la VFF.
       # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
       # https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions
       - trash_ids:
           - 404c08fd0bd67f39b4d8e5709319094e  # VFF
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 4cafa20d5584f6ba1871d1b8941aa3cb  # VOF
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 52772f1cad6b5d26c2551f79bc538a50  # VFI
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
+      - trash_ids:
+          - 29b5f7b1a5f20f64228786c3ab1bdc7d  # VF2
+        quality_profiles:
+          - name: FR-MULTi-BLURAY-WEB-1080p
+            # score: 101
       - trash_ids:
           - b6ace47331a1d3b77942fc18156f6df6  # VFQ
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 95aa50f71a01c82354a7a2b385f1c4d8  # VQ
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - b3fb499641d7b3c2006be1d9eb014cb3  # VFB
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 9172b2f683f6223e3a1846427b417a3d  # VOSTFR
         quality_profiles:
           - name: FR-MULTi-REMUX-WEB-2160p
-            # score: -10000
