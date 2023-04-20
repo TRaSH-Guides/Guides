@@ -31,6 +31,7 @@
     | [{{ radarr['cf']['4k-remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster)                   | {{ radarr['cf']['4k-remaster']['trash_score'] }}          | {{ radarr['cf']['4k-remaster']['trash_id'] }}          |
     | [{{ radarr['cf']['criterion-collection']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#criterion-collection) | {{ radarr['cf']['criterion-collection']['trash_score'] }} | {{ radarr['cf']['criterion-collection']['trash_id'] }} |
     | [{{ radarr['cf']['masters-of-cinema']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#masters-of-cinema)       | {{ radarr['cf']['masters-of-cinema']['trash_score'] }}    | {{ radarr['cf']['masters-of-cinema']['trash_id'] }}    |
+	| [{{ radarr['cf']['vinegar-syndrome']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vinegar-syndrome)         | {{ radarr['cf']['vinegar-syndrome']['trash_score'] }}     | {{ radarr['cf']['vinegar-syndrome']['trash_id'] }}     |
     | [{{ radarr['cf']['special-edition']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#special-edition)           | {{ radarr['cf']['special-edition']['trash_score'] }}      | {{ radarr['cf']['special-edition']['trash_id'] }}      |
     | [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax)                                 | {{ radarr['cf']['imax']['trash_score'] }}                 | {{ radarr['cf']['imax']['trash_id'] }}                 |
     | [{{ radarr['cf']['imax-enhanced']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced)               | {{ radarr['cf']['imax-enhanced']['trash_score'] }}        | {{ radarr['cf']['imax-enhanced']['trash_id'] }}        |
@@ -53,8 +54,6 @@
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                | {{ radarr['cf']['web-tier-03']['trash_score'] }} | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
     | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    |                                   :warning: 1100 | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
     | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    |                                   :warning: 1050 | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
-
-    !!! Danger "- Don’t use HQ-xxx or UHD (xxx) and Tiers together<br>- Remux Tier 01-02 replaces HQ-Remux<br>- UHD Bluray Tier 01-03 replaces UHD (xxx)<br>- Web Tier 01-03 replaces HQ-WEBDL"
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
