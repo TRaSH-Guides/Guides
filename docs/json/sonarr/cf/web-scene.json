@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DEFLATE)\\b"
+        "value": "\\b(DEFLATE[)\\]]?)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(INFLATE)\\b"
+        "value": "\\b(INFLATE[)\\]]?)$"
       }
     }
   ]

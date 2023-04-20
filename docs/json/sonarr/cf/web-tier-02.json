@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(3cTWeB)\\b"
+        "value": "\\b(3cTWeB[)\\]]?)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLUTONiUM)\\b"
+        "value": "\\b(BLUTONiUM[)\\]]?)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BTW)\\b"
+        "value": "\\b(BTW[)\\]]?)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Chotab)\\b"
+        "value": "\\b(Chotab[)\\]]?)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Cinefeel)\\b"
+        "value": "\\b(Cinefeel[)\\]]?)$"
       }
     },
     {
@@ -55,7 +55,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CiT)\\b"
+        "value": "\\b(CiT[)\\]]?)$"
+      }
+    },
+    {
+      "name": "CMRG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CMRG[)\\]]?)$"
       }
     },
     {
@@ -64,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Coo7)\\b"
+        "value": "\\b(Coo7[)\\]]?)$"
       }
     },
     {
@@ -73,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dB)\\b"
+        "value": "\\b(dB[)\\]]?)$"
       }
     },
     {
@@ -82,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DEEP)\\b"
+        "value": "\\b(DEEP[)\\]]?)$"
       }
     },
     {
@@ -91,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(END)\\b"
+        "value": "\\b(END[)\\]]?)$"
       }
     },
     {
@@ -100,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ETHiCS)\\b"
+        "value": "\\b(ETHiCS[)\\]]?)$"
       }
     },
     {
@@ -109,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FC)\\b"
+        "value": "\\b(FC[)\\]]?)$"
       }
     },
     {
@@ -118,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Flights)\\b"
+        "value": "\\b(Flights[)\\]]?)$"
       }
     },
     {
@@ -127,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GNOME)\\b"
+        "value": "\\b(GNOME[)\\]]?)$"
       }
     },
     {
@@ -136,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iJP)\\b"
+        "value": "\\b(iJP[)\\]]?)$"
       }
     },
     {
@@ -145,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iKA)\\b"
+        "value": "\\b(iKA[)\\]]?)$"
       }
     },
     {
@@ -154,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iT00NZ)\\b"
+        "value": "\\b(iT00NZ[)\\]]?)$"
       }
     },
     {
@@ -163,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(JETIX)\\b"
+        "value": "\\b(JETIX[)\\]]?)$"
       }
     },
     {
@@ -172,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KHN)\\b"
+        "value": "\\b(KHN[)\\]]?)$"
       }
     },
     {
@@ -181,7 +190,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KiMCHI)\\b"
+        "value": "\\b(KiMCHI[)\\]]?)$"
       }
     },
     {
@@ -190,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LAZY)\\b"
+        "value": "\\b(LAZY[)\\]]?)$"
       }
     },
     {
@@ -199,7 +208,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MZABI)\\b"
+        "value": "\\b(MZABI[)\\]]?)$"
       }
     },
     {
@@ -208,7 +217,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NPMS)\\b"
+        "value": "\\b(NPMS[)\\]]?)$"
       }
     },
     {
@@ -217,7 +226,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NYH)\\b"
+        "value": "\\b(NYH[)\\]]?)$"
       }
     },
     {
@@ -226,7 +235,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(orbitron)\\b"
+        "value": "\\b(orbitron[)\\]]?)$"
       }
     },
     {
@@ -235,7 +244,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(playWEB)\\b"
+        "value": "\\b(playWEB[)\\]]?)$"
       }
     },
     {
@@ -244,7 +253,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PSiG)\\b"
+        "value": "\\b(PSiG[)\\]]?)$"
       }
     },
     {
@@ -253,7 +262,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROCCaT)\\b"
+        "value": "\\b(ROCCaT[)\\]]?)$"
       }
     },
     {
@@ -262,7 +271,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RTFM)\\b"
+        "value": "\\b(RTFM[)\\]]?)$"
       }
     },
     {
@@ -271,7 +280,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SA89)\\b"
+        "value": "\\b(SA89[)\\]]?)$"
       }
     },
     {
@@ -280,7 +289,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SDCC)\\b"
+        "value": "\\b(SDCC[)\\]]?)$"
       }
     },
     {
@@ -289,7 +298,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SIGMA)\\b"
+        "value": "\\b(SIGMA[)\\]]?)$"
       }
     },
     {
@@ -298,7 +307,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SMURF)\\b"
+        "value": "\\b(SMURF[)\\]]?)$"
       }
     },
     {
@@ -307,7 +316,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SPiRiT)\\b"
+        "value": "\\b(SPiRiT[)\\]]?)$"
       }
     },
     {
@@ -316,7 +325,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TEPES)\\b"
+        "value": "\\b(TEPES[)\\]]?)$"
       }
     },
     {
@@ -325,7 +334,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TVSmash)\\b"
+        "value": "\\b(TVSmash[)\\]]?)$"
       }
     },
     {
@@ -334,7 +343,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(WELP)\\b"
+        "value": "\\b(WELP[)\\]]?)$"
       }
     },
     {
@@ -343,7 +352,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(XEBEC|4KBEC|CEBEX)\\b"
+        "value": "\\b(XEBEC|4KBEC|CEBEX[)\\]]?)$"
       }
     },
     {

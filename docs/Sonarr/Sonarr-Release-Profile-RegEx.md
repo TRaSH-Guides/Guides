@@ -253,7 +253,7 @@ Add this to your `Preferred (3)` with a score of [1700]
 Add this to your `Preferred (3)` with a score of [1650]
 
 ```bash
-/(3CTWeB|BLUTONiUM|-BTW|-Chotab|-Cinefeel|-CiT|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SDCC|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\b/i
+/(3CTWeB|BLUTONiUM|-BTW|-Chotab|-Cinefeel|-CiT|-CMRG|Coo7|-dB|-DEEP|-END|-ETHiCS|-FC|-Flights|-GNOME|-iJP|-iKA|-iT00NZ|-JETIX|-KHN|-KiMCHI|-LAZY|-MZABI|-NPMS|-NYH|-orbitron|playWEB|PSiG|-ROCCaT|RTFM|-SA89|-SDCC|-SIGMA|-SMURF|-SPiRiT|-TEPES|-TVSmash|-WELP)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [1600]
