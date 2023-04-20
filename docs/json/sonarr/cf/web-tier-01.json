@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ABBiE)\\b"
+        "value": "\\b(ABBiE[)\\]]?)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(AJP69)\\b"
+        "value": "\\b(AJP69[)\\]]?)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(APEX|PAXA|PEXA|XEPA)\\b"
+        "value": "\\b(APEX|PAXA|PEXA|XEPA[)\\]]?)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CasStudio)\\b"
+        "value": "\\b(CasStudio[)\\]]?)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CRFW)\\b"
+        "value": "\\b(CRFW[)\\]]?)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CtrlHD)\\b"
+        "value": "\\b(CtrlHD[)\\]]?)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FLUX)\\b"
+        "value": "\\b(FLUX[)\\]]?)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HONE)\\b"
+        "value": "\\b(HONE[)\\]]?)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KiNGS)\\b"
+        "value": "\\b(KiNGS[)\\]]?)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(monkee)\\b"
+        "value": "\\b(monkee[)\\]]?)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NOSiViD)\\b"
+        "value": "\\b(NOSiViD[)\\]]?)$"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NTb)\\b"
+        "value": "\\b(NTb[)\\]]?)$"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NTG)\\b"
+        "value": "\\b(NTG[)\\]]?)$"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(QOQ)\\b"
+        "value": "\\b(QOQ[)\\]]?)$"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RTN)\\b"
+        "value": "\\b(RTN[)\\]]?)$"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SiC)\\b"
+        "value": "\\b(SiC[)\\]]?)$"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(T6D)\\b"
+        "value": "\\b(T6D[)\\]]?)$"
       }
     },
     {
@@ -163,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TOMMY)\\b"
+        "value": "\\b(TOMMY[)\\]]?)$"
       }
     },
     {
@@ -172,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ViSUM)\\b"
+        "value": "\\b(ViSUM[)\\]]?)$"
       }
     },
     {
