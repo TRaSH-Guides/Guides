@@ -32,12 +32,12 @@
       }
     },
     {
-      "name": "Natsumi",
+      "name": "Natsumi-no-Sekai",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Natsumi)\\b"
+        "value": "\\b(Natsumi[ .-]?no[ .-]?Sekai)\\b"
       }
     },
     {
