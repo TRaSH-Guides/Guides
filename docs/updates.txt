@@ -1,3 +1,13 @@
+# 2023-04-20 21:35
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr] added RlsGrp `CMRG` to `Tier 02`.
+
+**[Fixed]**
+- [Sonarr v4] fixed WEB Tier RlsGrp conditions to prevent double scoring.
+
 # 2023-04-17 18:50
 **[New]**
 - None
