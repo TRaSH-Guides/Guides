@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DRACULA)\\b"
+        "value": "\\b(DRACULA[)\\]]?)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SLiGNOME)\\b"
+        "value": "\\b(SLiGNOME[)\\]]?)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SwAgLaNdEr)\\b"
+        "value": "\\b(SwAgLaNdEr[)\\]]?)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(T4H)\\b"
+        "value": "\\b(T4H[)\\]]?)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ViSiON)\\b"
+        "value": "\\b(ViSiON[)\\]]?)$"
       }
     },
     {
