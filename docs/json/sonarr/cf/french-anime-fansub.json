@@ -6,7 +6,7 @@
   "specifications": [
     {
       "name": "Anime-Heart",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -15,7 +15,7 @@
     },
     {
       "name": "KaeriZaki",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -24,7 +24,7 @@
     },
     {
       "name": "KFR",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -33,7 +33,7 @@
     },
     {
       "name": "Natsumi-no-Sekai",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -42,7 +42,7 @@
     },
     {
       "name": "NekoYu'",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -51,7 +51,7 @@
     },
     {
       "name": "Onii-ChanSub",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -60,7 +60,7 @@
     },
     {
       "name": "Otaku-Attitude",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -69,7 +69,7 @@
     },
     {
       "name": "Owlolf",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -78,7 +78,7 @@
     },
     {
       "name": "Pikari-Teshima",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -87,7 +87,7 @@
     },
     {
       "name": "Team Arcedo",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -96,7 +96,7 @@
     },
     {
       "name": "Yarashii",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
