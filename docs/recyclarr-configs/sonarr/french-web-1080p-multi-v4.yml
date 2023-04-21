@@ -30,7 +30,6 @@ sonarr:
           - 3ba797e5dc13af4b8d9bb25e83d90de2  # FR LQ
           - 9c11cd3f07101cdba90a2d81cf0e56b4  # LQ
           - 47435ece6b99a0b477caf360e79ba0bb  # x265 (HD)
-          - ea0bb4b6ba388992fad1092703b5ff7b  # FastSUB
           # ===== Misc =====
           - ec8fa7296b64e8cd390a1600981f3923  # Repack/Proper
           - eb3d5cc0a2be0db205fb823640db6a3c  # Repack2
@@ -126,13 +125,3 @@ sonarr:
           - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
-
-      # ==== Scores Optionnels ====
-      # Décommenter le score associé si c'est ce que vous souhaitez
-
-      # Si vous ne voulez pas non-plus de FanSUB.
-      - trash_ids:
-          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: -10000
