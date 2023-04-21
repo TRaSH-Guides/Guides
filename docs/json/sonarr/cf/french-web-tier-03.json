@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ARK01)$"
+        "value": "^(ARK01)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BraD)$"
+        "value": "^(BraD)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dRuIdE)$"
+        "value": "^(dRuIdE)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FTMVHD)$"
+        "value": "^(FTMVHD)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LAZARUS)$"
+        "value": "^(LAZARUS)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MYSTERiON)$"
+        "value": "^(MYSTERiON)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Scaph)$"
+        "value": "^(Scaph)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(WQM)$"
+        "value": "^(WQM)$"
       }
     }
   ]

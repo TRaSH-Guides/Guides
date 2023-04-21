@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FUJiSAN)$"
+        "value": "^(FUJiSAN)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HANAMi)$"
+        "value": "^(HANAMi)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HDForever)$"
+        "value": "^(HDForever)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HeavyWeight)$"
+        "value": "^(HeavyWeight)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MARBLECAKE)$"
+        "value": "^(MARBLECAKE)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MYSTERiON)$"
+        "value": "^(MYSTERiON)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NoNE)$"
+        "value": "^(NoNE)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ONLY)$"
+        "value": "^(ONLY)$"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ONLYMOViE)$"
+        "value": "^(ONLYMOViE)$"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TkHD)$"
+        "value": "^(TkHD)$"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(UTT)$"
+        "value": "^(UTT)$"
       }
     }
   ]

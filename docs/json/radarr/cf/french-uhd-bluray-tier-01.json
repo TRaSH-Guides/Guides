@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FLOP)$"
+        "value": "^(FLOP)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FRATERNiTY)$"
+        "value": "^(FRATERNiTY)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FoX)$"
+        "value": "^(FoX)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Psaro)$"
+        "value": "^(Psaro)$"
       }
     },
     {
