@@ -1,7 +1,7 @@
 radarr:
   radarr:   # A custom name used to identify this particular instance.
-    base_url: [radarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Radarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: movie
