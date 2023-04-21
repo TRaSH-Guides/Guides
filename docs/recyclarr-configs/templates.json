@@ -100,6 +100,14 @@
       "id": "french-web-1080p-vostfr-v4"
     },
     {
+      "template": "sonarr/french-web-2160p-multi-v4.yml",
+      "id": "french-web-2160p-multi-v4"
+    },
+    {
+      "template": "sonarr/french-web-2160p-vostfr-v4.yml",
+      "id": "french-web-2160p-vostfr-v4"
+    },
+    {
       "template": "sonarr/french-anime-multi-v4.yml",
       "id": "french-anime-multi-v4"
     },
