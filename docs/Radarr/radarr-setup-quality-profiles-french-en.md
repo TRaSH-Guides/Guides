@@ -85,7 +85,7 @@ Those are all optional and only there to rename your release or to avoid a certa
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
 
 !!! warning "Attention"
-    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
+    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version-en.md" !}
 

@@ -73,7 +73,7 @@ Those are all optional and only there to rename your release or to prefer a cert
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
 
 !!! warning "Attention"
-    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
+    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-en.md" !}
 

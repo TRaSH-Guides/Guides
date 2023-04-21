@@ -70,7 +70,7 @@ Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou po
 - Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `1000` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
 
 !!! warning "Attention"
-    Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
+    Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-fr.md" !}
 
