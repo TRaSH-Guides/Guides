@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bHQMUX\\b"
+        "value": "^(HQMUX)$"
       }
     },
     {
