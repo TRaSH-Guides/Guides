@@ -7,8 +7,8 @@
 sonarr:
   sonarr_french_anime_multi:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
-    base_url: [sonarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Sonarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: anime

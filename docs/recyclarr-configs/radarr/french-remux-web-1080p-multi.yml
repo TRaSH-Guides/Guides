@@ -7,8 +7,8 @@
 radarr:
   radarr_french_multi_remux_web_1080p:
     # L'URL de base ainsi que la clé API de votre instance Radarr
-    base_url: [radarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Radarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: movie
