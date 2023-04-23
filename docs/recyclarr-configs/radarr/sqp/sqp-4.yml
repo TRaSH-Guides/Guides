@@ -113,6 +113,7 @@ radarr:
           - 5763d1b0ce84aff3b21038eea8e9b8ad  # HMAX
           - 526d445d4c16214309f0fd2b3be18a89  # Hulu
           - 170b1d363bd8516fbf3a3eb05d4faff6  # NF
+          - bf7e73dd1d85b12cc527dc619761c840  # Pathe
           - c9fd353f8f5f1baf56dc601c4cb29920  # PCOK
           - e36a0ba1bc902b26ee40818a1d59b8bd  # PMTP
           - c2863d2a50c9acad1fb50e53ece60817  # STAN

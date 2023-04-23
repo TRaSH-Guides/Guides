@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dB)\\b"
+        "value": "^(dB)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Flights)\\b"
+        "value": "^(Flights)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MiU)\\b"
+        "value": "^(MiU)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(monkee)\\b"
+        "value": "^(monkee)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MZABI)\\b"
+        "value": "^(MZABI)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PHOENiX)\\b"
+        "value": "^(PHOENiX)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(playWEB)\\b"
+        "value": "^(playWEB)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SMURF)\\b"
+        "value": "^(SMURF)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TOMMY)\\b"
+        "value": "^(TOMMY)$"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(XEBEC|4KBEC|CEBEX)\\b"
+        "value": "^(XEBEC|4KBEC|CEBEX)$"
       }
     }
   ]

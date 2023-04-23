@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bCtrlHD\\b"
+        "value": "^(CtrlHD)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bDON\\b"
+        "value": "^(DON)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bW4NK3R\\b"
+        "value": "^(W4NK3R)$"
       }
     },
     {

@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLURANiUM)\\b"
+        "value": "^(BLURANiUM)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BMF)\\b"
+        "value": "^(BMF)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FraMeSToR)\\b"
+        "value": "^(FraMeSToR)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PmP)\\b"
+        "value": "^(PmP)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SiCFoI)\\b"
+        "value": "^(SiCFoI)$"
       }
     }
   ]

@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LEGi0N)\\b"
+        "value": "^(LEGi0N)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bSPHD\\b"
+        "value": "^(SPHD)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(WEBDV)\\b"
+        "value": "^(WEBDV)$"
       }
     },
     {

@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(3cTWeB[)\\]]?)$"
+        "value": "^(3cTWeB)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLUTONiUM[)\\]]?)$"
+        "value": "^(BLUTONiUM)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BTW[)\\]]?)$"
+        "value": "^(BTW)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Chotab[)\\]]?)$"
+        "value": "^(Chotab)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Cinefeel[)\\]]?)$"
+        "value": "^(Cinefeel)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CiT[)\\]]?)$"
+        "value": "^(CiT)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CMRG[)\\]]?)$"
+        "value": "^(CMRG)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Coo7[)\\]]?)$"
+        "value": "^(Coo7)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dB[)\\]]?)$"
+        "value": "^(dB)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(DEEP[)\\]]?)$"
+        "value": "^(DEEP)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(END[)\\]]?)$"
+        "value": "^(END)$"
       }
     },
     {
@@ -109,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ETHiCS[)\\]]?)$"
+        "value": "^(ETHiCS)$"
       }
     },
     {
@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FC[)\\]]?)$"
+        "value": "^(FC)$"
       }
     },
     {
@@ -127,7 +127,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Flights[)\\]]?)$"
+        "value": "^(Flights)$"
       }
     },
     {
@@ -136,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GNOME[)\\]]?)$"
+        "value": "^(GNOME)$"
       }
     },
     {
@@ -145,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iJP[)\\]]?)$"
+        "value": "^(iJP)$"
       }
     },
     {
@@ -154,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iKA[)\\]]?)$"
+        "value": "^(iKA)$"
       }
     },
     {
@@ -163,7 +163,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(iT00NZ[)\\]]?)$"
+        "value": "^(iT00NZ)$"
       }
     },
     {
@@ -172,7 +172,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(JETIX[)\\]]?)$"
+        "value": "^(JETIX)$"
       }
     },
     {
@@ -181,7 +181,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KHN[)\\]]?)$"
+        "value": "^(KHN)$"
       }
     },
     {
@@ -190,7 +190,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KiMCHI[)\\]]?)$"
+        "value": "^(KiMCHI)$"
       }
     },
     {
@@ -199,7 +199,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(LAZY[)\\]]?)$"
+        "value": "^(LAZY)$"
       }
     },
     {
@@ -208,7 +208,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MZABI[)\\]]?)$"
+        "value": "^(MZABI)$"
       }
     },
     {
@@ -217,7 +217,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NPMS[)\\]]?)$"
+        "value": "^(NPMS)$"
       }
     },
     {
@@ -226,7 +226,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NYH[)\\]]?)$"
+        "value": "^(NYH)$"
       }
     },
     {
@@ -235,7 +235,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(orbitron[)\\]]?)$"
+        "value": "^(orbitron)$"
       }
     },
     {
@@ -244,7 +244,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(playWEB[)\\]]?)$"
+        "value": "^(playWEB)$"
       }
     },
     {
@@ -253,7 +253,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PSiG[)\\]]?)$"
+        "value": "^(PSiG)$"
       }
     },
     {
@@ -262,7 +262,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROCCaT[)\\]]?)$"
+        "value": "^(ROCCaT)$"
       }
     },
     {
@@ -271,7 +271,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RTFM[)\\]]?)$"
+        "value": "^(RTFM)$"
       }
     },
     {
@@ -280,7 +280,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SA89[)\\]]?)$"
+        "value": "^(SA89)$"
       }
     },
     {
@@ -289,7 +289,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SDCC[)\\]]?)$"
+        "value": "^(SDCC)$"
       }
     },
     {
@@ -298,7 +298,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SIGMA[)\\]]?)$"
+        "value": "^(SIGMA)$"
       }
     },
     {
@@ -307,7 +307,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SMURF[)\\]]?)$"
+        "value": "^(SMURF)$"
       }
     },
     {
@@ -316,7 +316,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SPiRiT[)\\]]?)$"
+        "value": "^(SPiRiT)$"
       }
     },
     {
@@ -325,7 +325,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TEPES[)\\]]?)$"
+        "value": "^(TEPES)$"
       }
     },
     {
@@ -334,7 +334,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TVSmash[)\\]]?)$"
+        "value": "^(TVSmash)$"
       }
     },
     {
@@ -343,7 +343,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(WELP[)\\]]?)$"
+        "value": "^(WELP)$"
       }
     },
     {
@@ -352,7 +352,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(XEBEC|4KBEC|CEBEX[)\\]]?)$"
+        "value": "^(XEBEC|4KBEC|CEBEX)$"
       }
     },
     {
