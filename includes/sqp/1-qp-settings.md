@@ -2,10 +2,10 @@
 
 - **Enable:** `Upgrades Allowed`
 - **Upgrade Until Quality:** `Bluray|WEB-1080p`
-- **Minimum Custom Format Score:** `1000` <sup>*[1]*</sup>
+- **Minimum Custom Format Score:** `1000` <sup>(*1*)</sup>
 - **Upgrade Until Custom Format Score:** `10000`
 
-!!! info "<sup>*[1]*</sup> If you're limited to public indexers or, not have access to the top tier indexers you might want to lower the `Minimum Custom Format Score` to 10."
+!!! info "<sup>(*1*)</sup> If you're limited to public indexers or, not have access to the top tier indexers you might want to lower the `Minimum Custom Format Score` to 10."
 
 ??? success "example - [CLICK TO EXPAND]"
     ![!Quality Profile Settings](/SQP/images/1-qp-settings.png)
