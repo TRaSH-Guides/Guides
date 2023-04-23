@@ -5,8 +5,17 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "Aoi-Project",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Aoi[ .-]?Project)\\b"
+      }
+    },
+    {
       "name": "BLV",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -15,7 +24,7 @@
     },
     {
       "name": "D3T3R10R1TY",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -24,7 +33,7 @@
     },
     {
       "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -33,7 +42,7 @@
     },
     {
       "name": "KAF",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -42,7 +51,7 @@
     },
     {
       "name": "KHAYA",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -51,7 +60,7 @@
     },
     {
       "name": "Monkey-D.Lulu",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -59,8 +68,17 @@
       }
     },
     {
+      "name": "Nagutos",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Nagutos)\\b"
+      }
+    },
+    {
       "name": "RONiN",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -69,7 +87,7 @@
     },
     {
       "name": "TTN",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -78,7 +96,7 @@
     },
     {
       "name": "XSPITFIRE911",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {

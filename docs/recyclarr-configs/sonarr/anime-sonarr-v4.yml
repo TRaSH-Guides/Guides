@@ -36,23 +36,36 @@ sonarr:
           - 0e5833d3af2cc5fa96a0c29cd4477feb  # v3
           - 4fc15eeb8f2f9a749f918217d4234ad8  # v4
           # Anime Streaming Services
-          - d660701077794679fd59e8bdf4ce3a29  # AMZN
           - 3e0b26604165f463f3e8e192261e7284  # CR
-          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
           - 1284d18e693de8efe0fe7d6b3e0b9170  # FUNi
-          - d34870697c9db575f17700212167be23  # NF
           - 44a8ee6403071dd7b8a3a8dd3fe8cb20  # VRV
         quality_profiles:
           - name: Remux-1080p - Anime
+
       # Custom scoring
+      # Anime Streaming Services
       - trash_ids:
-          # Anime Streaming Services
+          - 89358767a60cc28783cdc3d0be9388a4  # DSNP
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: 4  # required as this differs from the standard scoring
+      - trash_ids:
+          - d34870697c9db575f17700212167be23  # NF
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: 2  # required as this differs from the standard scoring
+      - trash_ids:
+          - d660701077794679fd59e8bdf4ce3a29  # AMZN
+        quality_profiles:
+          - name: Remux-1080p - Anime
+            score: 1  # required as this differs from the standard scoring
+      - trash_ids:
           - 7dd31f3dee6d2ef8eeaa156e23c3857e  # B-Global
           - 4c67ff059210182b59cdd41697b8cb08  # Bilibili
           - 570b03b3145a25011bf073274a407259  # HIDIVE
         quality_profiles:
           - name: Remux-1080p - Anime
-            score: 0
+            score: 0  # no score in guide
       # Anime CF/Scoring
       - trash_ids:
           - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
@@ -75,6 +88,7 @@ sonarr:
         quality_profiles:
           - name: Remux-1080p - Anime
             score: 350  # required as this differs from the standard scoring
+
       # Adjustable scoring section
       - trash_ids:
           - 418f50b10f1907201b6cfdf881f467b7  # Anime Dual Audio

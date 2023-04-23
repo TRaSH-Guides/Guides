@@ -1,6 +1,6 @@
 {
   "trash_id": "52772f1cad6b5d26c2551f79bc538a50",
-  "trash_regex": "https://regex101.com/r/YA7mOH/1",
+  "trash_regex": "https://regex101.com/r/YA7mOH/2",
   "name": "VFI",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bVF(I|\\d)\\b"
+        "value": "\\b(VFI)\\b"
       }
     }
   ]

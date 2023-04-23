@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BDHD)\\b"
+        "value": "^(BDHD)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FtLi)\\b"
+        "value": "^(FtLi)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Goldenyann)\\b"
+        "value": "^(Goldenyann)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HeavyWeight)\\b"
+        "value": "^(HeavyWeight)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MARBLECAKE)\\b"
+        "value": "^(MARBLECAKE)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MUSTANG)\\b"
+        "value": "^(MUSTANG)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Obi)\\b"
+        "value": "^(Obi)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PEPiTE)\\b"
+        "value": "^(PEPiTE)$"
       }
     },
     {
@@ -91,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Q(UEBE)?C63)\\b"
+        "value": "^(Q(UEBE)?C63)$"
       }
     },
     {
@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROMKENT)\\b"
+        "value": "^(ROMKENT)$"
       }
     }
   ]

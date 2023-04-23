@@ -67,10 +67,13 @@ An example for Anime in MULTi/VOSTFR is also provided at the end: [Anime Example
 
 ### French Audio Versions
 
-Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:
+Those are all optional and only there to rename your release or to prefer a certain type of French Audio. Examples:
 
-- You do not want VFQ or VQ audio, in this case you will put them at `-10000` instead of `0`.
+- You prefer VFF (including VFI and VF2) audio, in this case you will put them at `101` instead of `0`.
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
+
+!!! warning "Attention"
+    It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-en.md" !}
 
