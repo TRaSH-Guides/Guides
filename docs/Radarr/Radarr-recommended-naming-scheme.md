@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
-On the [Radarr Discord](https://discord.gg/u3x3Kp8){:target="_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
+On the [Radarr Discord](https://radarr.video/discord){:target="_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
 name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.
 
 Why?
@@ -67,7 +67,9 @@ For Jellyfin/Emby:
 
 ## Original Title vs  Original Filename
 
-Another option is to use `{Original Title}` rather than the recommeneded naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+### Original Title
+
+Another option is to use `{Original Title}` rather than the recommended naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
 
 If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
 
@@ -85,7 +87,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 !!! danger ""
 
-    ** Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!**
+    **Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!**
 
     If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade.
 
