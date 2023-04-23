@@ -6,11 +6,11 @@
   "specifications": [
     {
       "name": "FraMeSToR",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "FraMeSToR\\b"
+        "value": "^(FraMeSToR)$"
       }
     }
   ]

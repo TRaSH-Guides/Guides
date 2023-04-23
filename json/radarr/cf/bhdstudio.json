@@ -6,11 +6,11 @@
   "specifications": [
     {
       "name": "BHDStudio",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bBHDStudio\\b"
+        "value": "^(BHDStudio)$"
       }
     }
   ]
