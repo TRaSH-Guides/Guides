@@ -259,6 +259,15 @@
 <a class="md-nav__link" href="#original-title-vs-original-filename">
     Original Title vs  Original Filename
   </a>
+<nav aria-label="Original Title vs  Original Filename" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#original-title">
+    Original Title
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#movie-folder-format">
@@ -992,6 +1001,15 @@
 <a class="md-nav__link" href="#original-title-vs-original-filename">
     Original Title vs  Original Filename
   </a>
+<nav aria-label="Original Title vs  Original Filename" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#original-title">
+    Original Title
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#movie-folder-format">
@@ -1030,7 +1048,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"></path></svg>
 </a>
 <h1 id="recommended-naming-scheme">Recommended naming scheme<a class="headerlink" href="#recommended-naming-scheme" title="Permanent link"></a></h1>
-<p>On the <a href="https://discord.gg/u3x3Kp8" rel="noopener noreferrer" target="_blank">Radarr Discord</a> people often ask, "What's the recommended/best way to
+<p>On the <a href="https://radarr.video/discord" rel="noopener noreferrer" target="_blank">Radarr Discord</a> people often ask, "What's the recommended/best way to
 name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.</p>
 <p>Why?</p>
 <p>If, for what ever reason, you ever need to do a re-install or re-import in
@@ -1077,7 +1095,8 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 </details>
 <hr/>
 <h2 id="original-title-vs-original-filename">Original Title vs  Original Filename<a class="headerlink" href="#original-title-vs-original-filename" title="Permanent link"></a></h2>
-<p>Another option is to use <code>{Original Title}</code> rather than the recommeneded naming scheme outlined above. <code>{Original Title}</code> will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.</p>
+<h3 id="original-title">Original Title<a class="headerlink" href="#original-title" title="Permanent link"></a></h3>
+<p>Another option is to use <code>{Original Title}</code> rather than the recommended naming scheme outlined above. <code>{Original Title}</code> will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.</p>
 <p>If using this alternate naming scheme I suggest using <code>{Original Title}</code> over <code>{Original Filename}</code></p>
 <p>Why?</p>
 <p>The filename can be Obscured where the Release naming isn't, especially when you use Usenet.</p>
@@ -1086,7 +1105,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <hr/>
 <h2 id="movie-folder-format">Movie Folder Format<a class="headerlink" href="#movie-folder-format" title="Permanent link"></a></h2>
 <div class="admonition danger">
-<p>** Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!**</p>
+<p><strong>Please note that folder names are created (in the database) whenever the movie is added to Radarr, and it may be missing or incorrect at that time and your folder would have a blank ID!!!</strong></p>
 <p>If you instead add it in the filename, the IMDb ID will be freshly pulled for any download or upgrade.</p>
 <p>Another potential negative of using it in the folder is that folder renames are complex, lengthy, and potentially destructive in Radarr compared to file renames.</p>
 </div>
@@ -1135,7 +1154,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.<
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 4, 2023 19:58:48</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 23, 2023 09:07:28</span>
 </small>
 </div>
 <footer class="sponsorship">
