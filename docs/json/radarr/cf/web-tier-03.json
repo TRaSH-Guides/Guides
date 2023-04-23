@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GNOMiSSiON)\\b"
+        "value": "^(GNOMiSSiON)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ROCCaT)\\b"
+        "value": "^(ROCCaT)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SiGMA)\\b"
+        "value": "^(SiGMA)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SLiGNOME)\\b"
+        "value": "^(SLiGNOME)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SwAgLaNdEr)\\b"
+        "value": "^(SwAgLaNdEr)$"
       }
     },
     {

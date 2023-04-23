@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(decibeL)\\b"
+        "value": "^(decibeL)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(EPSiLON)\\b"
+        "value": "^(EPSiLON)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HiFi)\\b"
+        "value": "^(HiFi)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KRaLiMaRKo)\\b"
+        "value": "^(KRaLiMaRKo)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(playBD)\\b"
+        "value": "^(playBD)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PTer)\\b"
+        "value": "^(PTer)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TRiToN)\\b"
+        "value": "^(TRiToN)$"
       }
     }
   ]

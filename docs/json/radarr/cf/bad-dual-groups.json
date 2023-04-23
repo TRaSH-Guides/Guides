@@ -6,209 +6,209 @@
   "specifications": [
     {
       "name": "alfaHD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-alfaHD.*$)\\b"
+        "value": "^(alfaHD.*)$"
       }
     },
     {
       "name": "BAT",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-BAT)\\b"
+        "value": "^(BAT)$"
       }
     },
     {
       "name": "BNd",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-BNd)\\b"
+        "value": "^(BNd)$"
       }
     },
     {
       "name": "C.A.A",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-C\\.A\\.A)\\b"
+        "value": "^(C\\.A\\.A)$"
       }
     },
     {
       "name": "Cory",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-Cory)\\b"
+        "value": "^(Cory)$"
       }
     },
     {
       "name": "EXTREME",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-EXTREME)\\b"
+        "value": "^(EXTREME)$"
       }
     },
     {
       "name": "FF",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-FF)\\b"
+        "value": "^(FF)$"
       }
     },
     {
       "name": "FOXX",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-FOXX)\\b"
+        "value": "^(FOXX)$"
       }
     },
     {
       "name": "G4RiS",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-G4RiS)\\b"
+        "value": "^(G4RiS)$"
       }
     },
     {
       "name": "GUEIRA",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-GUEIRA)\\b"
+        "value": "^(GUEIRA)$"
       }
     },
     {
       "name": "N3G4N",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-N3G4N)\\b"
+        "value": "^(N3G4N)$"
       }
     },
     {
       "name": "ONLYMOViE",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-ONLYMOViE)\\b"
+        "value": "^(ONLYMOViE)$"
       }
     },
     {
       "name": "PD",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-PD)\\b"
+        "value": "^(PD)$"
       }
     },
     {
       "name": "PTHome",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-PTHome)\\b"
+        "value": "^(PTHome)$"
       }
     },
     {
       "name": "RiPER",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-RiPER)\\b"
+        "value": "^(RiPER)$"
       }
     },
     {
       "name": "RK",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-RK)\\b"
+        "value": "^(RK)$"
       }
     },
     {
       "name": "SiGLA",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-SiGLA)\\b"
+        "value": "^(SiGLA)$"
       }
     },
     {
       "name": "Tars",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-Tars)\\b"
+        "value": "^(Tars)$"
       }
     },
     {
       "name": "TvR",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-TvR)\\b"
+        "value": "^(TvR)$"
       }
     },
     {
       "name": "WTV",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-WTV)\\b"
+        "value": "^(WTV)$"
       }
     },
     {
       "name": "Yatogam1",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-Yatogam1)\\b"
+        "value": "^(Yatogam1)$"
       }
     },
     {
       "name": "YusukeFLA",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-YusukeFLA)\\b"
+        "value": "^(YusukeFLA)$"
       }
     },
     {
       "name": "ZigZag",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(-ZigZag)\\b"
+        "value": "^(ZigZag)$"
       }
     }
   ]
