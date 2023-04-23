@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BONBON)\\b"
+        "value": "^(BONBON)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FCK)\\b"
+        "value": "^(FCK)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FRATERNiTY)\\b"
+        "value": "^(FRATERNiTY)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MTDK)\\b"
+        "value": "^(MTDK)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NoLo)\\b"
+        "value": "^(NoLo)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PATOPESTO)\\b"
+        "value": "^(PATOPESTO)$"
       }
     },
     {
@@ -82,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Psaro)\\b"
+        "value": "^(Psaro)$"
       }
     }
   ]

@@ -2,10 +2,10 @@
 # https://recyclarr.dev/wiki/
 # https://github.com/recyclarr/recyclarr
 
-# Cet exemple est pour Sonarr et le profil "WEB 1080p MULTi" present dans le guide
-# https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#webdl-1080p
+# Cet exemple est pour Sonarr et le profil "WEB 2160p VOSTFR" present dans le guide
+# https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-en/#webdl-2160p
 sonarr:
-  sonarr_french_multi_web_1080p:
+  sonarr_french_vostfr_web_2160p:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
     base_url: Put your Sonarr URL here
     api_key: Put your API key here
@@ -14,22 +14,33 @@ sonarr:
       type: series
 
     quality_profiles:
-      - name: FR-MULTi-WEB-1080p
+      - name: FR-VOSTFR-WEB-2160p
         reset_unmatched_scores: true
 
     # La liste de Formats Personnalisés à synchroniser avec Sonarr.
     custom_formats:
       - trash_ids:
-          # ===== MULTi Audio =====
-          - 2f6e84efc47246ec9071e311e71c4953  # Multi-Audio
-          - 7982e39789f17864f57b11f1996844f4  # Multi-French
-          # Décommentez la ligne suivante si vous voulez donner un léger bonus à la release si elle possède effectivement un audio français.
-          # - 4721382d9ee05f1b4967a25e75072911  # French Audio
+          # ===== Formats HDR =====
+          # https://trash-guides.info/Radarr/images/flowchart-hdr-formats.png
+          - 7878c33f1963fefb3d6c8657d46c2f0a  # DV HDR10
+          - 6d0d8de7b57e35518ac0308b0ddf404e  # DV
+          - 1f733af03141f068a540eec352589a89  # DV HLG
+          - 27954b0a80aab882522a88a4d9eae1cd  # DV SDR
+          - a3d82cbef5039f8d295478d28a887159  # HDR10+
+          - 3497799d29a085e2ac2df9d468413c94  # HDR10
+          - 3e2c4e748b64a1a1118e0ea3f4cf6875  # HDR
+          - bb019e1cd00f304f80971c965de064dc  # HDR (undefined)
+          - 2a7e3be05d3861d6df7171ec74cad727  # PQ
+          - 17e889ce13117940092308f48b48b45b  # HLG
+          # La ligne suivante garantit que les releases WEB avec un layer Dolby Vision ne seront prises en compte que si elles ont un fallback en HDR10.
+          # Vous pouvez commenter cette ligne SI ET SEULEMENT SI TOUS les appareils utilisant votre bibliothèque supportent le Dolby Vision et que vous n'avez pas besoin du fallback en HDR10.
+          - 9b27ab6498ec0f31a3353992e19434ca  # DV (WEBDL)
           # ===== Indésirables =====
           - 85c61753df5da1fb2aab6f2a47426b09  # BR-DISK
           - 3ba797e5dc13af4b8d9bb25e83d90de2  # FR LQ
           - 9c11cd3f07101cdba90a2d81cf0e56b4  # LQ
-          - 47435ece6b99a0b477caf360e79ba0bb  # x265 (HD)
+          - 2016d1676f5ee13a5b7257ff86ac9a93  # SDR
+          - ea0bb4b6ba388992fad1092703b5ff7b  # FastSUB
           # ===== Misc =====
           - ec8fa7296b64e8cd390a1600981f3923  # Repack/Proper
           - eb3d5cc0a2be0db205fb823640db6a3c  # Repack2
@@ -64,64 +75,42 @@ sonarr:
           # Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française
           - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes anglophones)
-          # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.
-          #
-          # Il est tout de fois possible que dans ce cas Sonarr récupére une release VO au lieu d'un MULTi/DUAL car celle-ci possède un score plus important.
-          # - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
-          # - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
-          # - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02
-          # - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
+          - d0c516558625b04b363fa6c5c2c7cfd4  # WEB Scene
+          - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
+          - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02
+          - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03
         quality_profiles:
-          - name: FR-MULTi-WEB-1080p
+          - name: FR-VOSTFR-WEB-2160p
 
       - trash_ids:
           - 15a05bc7c1a36e2b57fd628f8977e2fc  # AV1
         quality_profiles:
-          - name: FR-MULTi-WEB-1080p
+          - name: FR-VOSTFR-WEB-2160p
+            score: -10000
+
+      # ===== MULTi Audio =====
+      # Nécessaire vu qu'on ne souhaite pas de MULTi
+      - trash_ids:
+          - 2f6e84efc47246ec9071e311e71c4953  # Multi-Audio
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-2160p
             score: -10000
 
       # ===== Versions françaises =====
-      # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.
-      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain
-      # type d'audio français. Par exemple si vous préférez la VFF.
-      # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
+      # Seul le VOSTFR est présent et possède un score de '1000' car on souhaite obtenir du VOSTFR et non du MULTi/DUAL audio.
       # https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#type-de-versions-francaises
-      - trash_ids:
-          - 2c29a39a4fdfd6d258799bc4c09731b9  # VFF
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 7ae924ee9b2f39df3283c6c0beb8a2aa  # VOF
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - b6816a0e1d4b64bf3550ad3b74b009b6  # VFI
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - b6816a0e1d4b64bf3550ad3b74b009b6  # VF2
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 7a7f4e4f58bd1058440236d033a90b67  # VFQ
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 82085412d9a53ba8d8e46fc624eb701d  # VQ
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 0ce1e39a4676c6692ce47935278dac76  # VFB
-        quality_profiles:
-          - name: FR-MULTi-WEB-1080p
-            # score: 101
       - trash_ids:
           - 07a32f77690263bb9fda1842db7e273f  # VOSTFR
         quality_profiles:
-          - name: FR-MULTi-WEB-1080p
+          - name: FR-VOSTFR-WEB-2160p
+            score: 1000
+
+      # ==== Scores Optionnels ====
+      # Décommenter le score associé si c'est ce que vous souhaitez
+
+      # Si vous ne voulez pas non-plus de FanSUB.
+      - trash_ids:
+          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
+        quality_profiles:
+          - name: FR-VOSTFR-WEB-2160p
+            # score: -10000

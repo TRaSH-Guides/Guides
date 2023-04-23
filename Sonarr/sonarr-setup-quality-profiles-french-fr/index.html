@@ -1094,9 +1094,13 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <h3 id="type-de-versions-francaises">Type de versions françaises<a class="headerlink" href="#type-de-versions-francaises" title="Permanent link"></a></h3>
 <p>Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :</p>
 <ul>
-<li>Vous ne voulez pas de VFQ ou VQ, dans ce cas, vous leur attribuerez un score de <code>-10000</code> au lieu de <code>0</code>.</li>
-<li>Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des <strong>Formats Personnalisés MULTi</strong> et donnerez un score de <code>1000</code> au Format Personnalisé <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a>.</li>
+<li>Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à <code>101</code> au lieu de <code>0</code>.</li>
+<li>Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des <strong>Formats Personnalisés MULTi</strong> et donnez un score de <code>1000</code> au Format Personnalisé <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a>.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.</p>
+</div>
 <!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-audio-version-fr.md -->
 <details class="abstract">
 <summary>Explications - [CLIQUEZ POUR AFFICHER]</summary>
@@ -1145,12 +1149,12 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <td>Belgian French Version</td>
 </tr>
 <tr>
-<td>VF[1-9] or FR[1-9]<sup>[2]</sup></td>
+<td>VF[1-9] or FR[1-9]</td>
 <td>Indique le nombre de doublage présent (normalement VF2 soit VFF et VFQ)</td>
 <td>Indicates the number of dubs present (normally VF2 being VFF and VFQ)</td>
 </tr>
 <tr>
-<td>VOSTFR<sup>[3]</sup></td>
+<td>VOSTFR<sup>[2]</sup></td>
 <td>Indique que l'audio est dans la langue originale, avec des sous-titres en français.</td>
 <td>Indicates soundtrack in the original language, with French subtitles</td>
 </tr>
@@ -1158,12 +1162,11 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </table>
 <ul>
 <li><em>[1] VF est inclus dans le Format Personnalisé VFQ, mais il convient de noter qu'il était souvent associé à VFF au lieu de VFQ avant 2022.</em></li>
-<li><em>[2] VF [1-9] est inclus dans le Format Personnalisé VFI.</em></li>
-<li><em>[3] Il est à noter que le SUBFRENCH est inclus dans ce Format Personnalisé. Néanmoins, SUB signifie souvent que le sous-titre a été intégré à l'image (hardcoded). Les sorties françaises ont tendance à mélanger les deux, ce qui fait que certains VOSTFR sont étiquetés comme SUBFRENCH et SUBFRENCH comme VOSTFR.</em></li>
+<li><em>[2] Il est à noter que le SUBFRENCH est inclus dans ce Format Personnalisé. Néanmoins, SUB signifie souvent que le sous-titre a été intégré à l'image (hardcoded). Les sorties françaises ont tendance à mélanger les deux, ce qui fait que certains VOSTFR sont étiquetés comme SUBFRENCH et SUBFRENCH comme VOSTFR.</em></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Indexers renaming in Prowlarr</p>
-<p>Certains indexeurs dans Prowlarr peuvent renommer les versions <code>MULTi</code> en <code>MULTi.TRUEFRENCH</code> ou <code>MULTi.FRENCH</code>. Je ne recommande pas l'utilisation d'une telle fonction car elle peut entraîner des faux positifs avec les formats personnalisés VFF ou VFQ.</p>
+<p>Certains indexeurs dans Prowlarr peuvent renommer les versions <code>MULTi</code> en <code>MULTi.TRUEFRENCH</code> ou <code>MULTi.FRENCH</code>. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.</p>
 </div>
 </details>
 <details class="abstract">
@@ -1191,6 +1194,11 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vfi">VFI</a></td>
 <td>0</td>
 <td>b6816a0e1d4b64bf3550ad3b74b009b6</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vf2">VF2</a></td>
+<td>0</td>
+<td>34789ec3caa819f087e23bbf9999daf7</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vfq">VFQ</a></td>
@@ -2461,7 +2469,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 30, 2023 11:02:40</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 21, 2023 15:25:07</span>
 </small>
 </div>
 <footer class="sponsorship">

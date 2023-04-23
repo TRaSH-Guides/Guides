@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FtLi)\\b"
+        "value": "^(FtLi)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Goldenyann)\\b"
+        "value": "^(Goldenyann)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HDForever)\\b"
+        "value": "^(HDForever)$"
       }
     },
     {
@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HeavyWeight)\\b"
+        "value": "^(HeavyWeight)$"
       }
     },
     {
@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ONLY)\\b"
+        "value": "^(ONLY)$"
       }
     },
     {
@@ -64,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Psaro)\\b"
+        "value": "^(Psaro)$"
       }
     },
     {
@@ -73,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TyrellCorp)\\b"
+        "value": "^(TyrellCorp)$"
       }
     }
   ]

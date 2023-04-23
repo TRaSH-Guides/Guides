@@ -1031,6 +1031,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#vf2">
+    VF2
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#vfq">
     VFQ
   </a>
@@ -2543,6 +2548,11 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#vf2">
+    VF2
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#vfq">
     VFQ
   </a>
@@ -2888,43 +2898,43 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <tr>
 <td><a href="#dutch-groups">Dutch Groups</a></td>
 <td><a href="#retags">Retags</a></td>
-<td><a href="#vfq">VFQ</a></td>
+<td><a href="#vf2">VF2</a></td>
 <td><a href="#fr-web-tier-01">FR WEB Tier 01</a></td>
 </tr>
 <tr>
 <td><a href="#freeleech">FreeLeech</a></td>
 <td><a href="#scene">Scene</a></td>
-<td><a href="#vq">VQ</a></td>
+<td><a href="#vfq">VFQ</a></td>
 <td><a href="#fr-web-tier-02">FR WEB Tier 02</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#x265-no-hdrdv">x265 (no HDR/DV)</a></td>
-<td><a href="#vfb">VFB</a></td>
+<td><a href="#vq">VQ</a></td>
 <td><a href="#fr-scene-groups">FR Scene Groups</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#av1">AV1</a></td>
-<td><a href="#vostfr">VOSTFR</a></td>
+<td><a href="#vfb">VFB</a></td>
 <td><a href="#fr-lq">FR LQ</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#sdr">SDR</a></td>
-<td><a href="#fansub">FanSUB</a></td>
+<td><a href="#vostfr">VOSTFR</a></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#dv-fel">DV (FEL)</a></td>
-<td><a href="#fastsub">FastSUB</a></td>
+<td><a href="#fansub">FanSUB</a></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#linemic-dubbed">Line/Mic Dubbed</a></td>
-<td></td>
+<td><a href="#fastsub">FastSUB</a></td>
 <td></td>
 </tr>
 <tr>
@@ -14554,6 +14564,15 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(TRUEFRENCH|VFF)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not VF2"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VF2)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
@@ -14580,7 +14599,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bVOF\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VOF)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14592,13 +14611,13 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="vfi">VFI<a class="headerlink" href="#vfi" title="Permanent link"></a></h3>
 <details class="question">
 <summary>VFI - [CLICK TO EXPAND]</summary>
-<p>International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.</p>
+<p>International French Version.</p>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52772f1cad6b5d26c2551f79bc538a50"</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/YA7mOH/1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/YA7mOH/2"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VFI"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -14608,7 +14627,44 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bVF(I|\\d)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VFI)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="vf2">VF2<a class="headerlink" href="#vf2" title="Permanent link"></a></h3>
+<details class="question">
+<summary>VF2 - [CLICK TO EXPAND]</summary>
+<p>VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ).</p>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"29b5f7b1a5f20f64228786c3ab1bdc7d"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/qgQMab/1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VF2"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VF2"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VF2)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Both VFF and VFQ"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VF(F|Q)[ .]VF(F|Q))\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14631,21 +14687,21 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FRENCH"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(?&lt;=MULTi[ .])FR(A|ENCH)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Canadian French"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VFQ?)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VFQ?|(?&lt;=MULTi[ .])FR(A|ENCH))\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not VF2"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VF2)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14673,7 +14729,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bVQ\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VQ)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14701,7 +14757,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bVFB\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VFB)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14729,7 +14785,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bVOST.*?FR(E|A)?\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VOST.*?FR(E|A)?)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14738,7 +14794,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\bSUBFR(A|ENCH)?\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(SUBFR(A|ENCH)?)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14834,7 +14890,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BlackAngel)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(BlackAngel)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14843,7 +14899,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Choco)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Choco)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14852,7 +14908,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HDForever)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HDForever)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14861,7 +14917,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MAX)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MAX)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14870,7 +14926,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ONLY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ONLY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14879,7 +14935,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Psaro)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Psaro)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14888,7 +14944,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Sicario)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Sicario)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14897,7 +14953,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Tezcat74)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Tezcat74)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14906,7 +14962,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(TyrellCorp)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(TyrellCorp)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14915,7 +14971,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Zapax)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Zapax)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -14959,7 +15015,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BDHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(BDHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14968,7 +15024,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FtLi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FtLi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14977,7 +15033,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Goldenyann)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Goldenyann)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14986,7 +15042,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HeavyWeight)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HeavyWeight)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14995,7 +15051,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MARBLECAKE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MARBLECAKE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15004,7 +15060,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MUSTANG)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MUSTANG)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15013,7 +15069,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Obi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Obi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15022,7 +15078,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(PEPiTE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(PEPiTE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15031,7 +15087,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Q(UEBE)?C63)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Q(UEBE)?C63)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15040,7 +15096,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ROMKENT)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ROMKENT)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15074,7 +15130,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FLOP)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FLOP)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15083,7 +15139,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FRATERNiTY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FRATERNiTY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15092,7 +15148,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FoX)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FoX)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15101,7 +15157,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Psaro)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Psaro)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15182,7 +15238,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(DUSTiN)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(DUSTiN)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15191,7 +15247,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FCK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FCK)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15200,7 +15256,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FrIeNdS)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FrIeNdS)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15209,7 +15265,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(QUALiTY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(QUALiTY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15314,7 +15370,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BDHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(BDHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15323,7 +15379,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FoX)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FoX)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15332,7 +15388,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FRATERNiTY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FRATERNiTY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15341,7 +15397,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FrIeNdS)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FrIeNdS)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15350,7 +15406,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MAX)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MAX)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15359,7 +15415,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Psaro)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Psaro)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15368,7 +15424,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(T3KASHi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(T3KASHi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15429,7 +15485,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FUJiSAN)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FUJiSAN)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15438,7 +15494,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HANAMi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HANAMi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15447,7 +15503,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HDForever)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HDForever)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15456,7 +15512,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HeavyWeight)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HeavyWeight)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15465,7 +15521,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MARBLECAKE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MARBLECAKE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15474,7 +15530,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MYSTERiON)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MYSTERiON)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15483,7 +15539,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(NoNE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(NoNE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15492,7 +15548,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ONLY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ONLY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15501,7 +15557,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ONLYMOViE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ONLYMOViE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15510,7 +15566,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(TkHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(TkHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15519,7 +15575,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(UTT)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(UTT)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15569,7 +15625,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BONBON)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(BONBON)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15578,7 +15634,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FCK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FCK)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15587,7 +15643,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FoX)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FoX)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15596,7 +15652,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FRATERNiTY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FRATERNiTY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15605,7 +15661,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FrIeNdS)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FrIeNdS)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15614,7 +15670,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MOONLY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MOONLY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15623,7 +15679,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MTDK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MTDK)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15632,7 +15688,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(PATOPESTO)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(PATOPESTO)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15641,7 +15697,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Psaro)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Psaro)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15650,7 +15706,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(T3KASHi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(T3KASHi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15701,7 +15757,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ALLDAYiN)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ALLDAYiN)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15710,7 +15766,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ARK01)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ARK01)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15719,7 +15775,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FUJiSAN)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FUJiSAN)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15728,7 +15784,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FW)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FW)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15737,7 +15793,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HANAMi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HANAMi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15746,7 +15802,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HeavyWeight)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HeavyWeight)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15755,7 +15811,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(NEO)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(NEO)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15764,7 +15820,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(NoNe)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(NoNe)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15773,7 +15829,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Slay3R)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Slay3R)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15782,7 +15838,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(TkHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(TkHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -15810,7 +15866,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(4FR)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(4FR)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15819,7 +15875,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AKLHD|AMB3R|ANMWR|AVON|AYMO|AZR)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AKLHD|AMB3R|ANMWR|AVON|AYMO|AZR)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15828,7 +15884,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15837,7 +15893,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15846,7 +15902,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15855,7 +15911,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ENJOi|EUBDS)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ENJOi|EUBDS)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15864,7 +15920,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15873,7 +15929,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(GHOULS|GiMBAP|GLiMMER|Goatlove)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(GHOULS|GiMBAP|GLiMMER|Goatlove)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15882,7 +15938,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15891,7 +15947,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(JMT|JoKeR|JUSTICELEAGUE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(JMT|JoKeR|JUSTICELEAGUE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15900,7 +15956,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(KAZETV)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(KAZETV)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15909,7 +15965,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15918,7 +15974,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15927,7 +15983,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(NERDHD|NERO|NrZ|NTK)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(NERDHD|NERO|NrZ|NTK)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15936,7 +15992,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(OBSTACLE|OohLaLa|OOKAMI)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(OBSTACLE|OohLaLa|OOKAMI)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15945,7 +16001,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15954,7 +16010,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ROUGH|RUDE|Ryotox)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ROUGH|RUDE|Ryotox)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15963,7 +16019,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15972,7 +16028,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15981,7 +16037,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15990,7 +16046,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(VENUE|VFC|VoMiT)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(VENUE|VFC|VoMiT)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15999,7 +16055,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Wednesday29th)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(Wednesday29th)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -16008,7 +16064,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(ZEST|ZiRCON)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^(ZEST|ZiRCON)$"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -16086,7 +16142,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 5, 2023 22:39:39</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 19, 2023 14:04:20</span>
 </small>
 </div>
 <footer class="sponsorship">

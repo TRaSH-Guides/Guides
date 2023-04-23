@@ -1637,11 +1637,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_multi_bluray_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -1664,6 +1668,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -1685,12 +1690,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5322da05b19d857acc1e75be3edf47b3</span><span class="w"> </span><span class="c1"># FR HD Bluray Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">57f34251344be2e283fc30e00e458be6</span><span class="w"> </span><span class="c1"># FR HD Bluray Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5322da05b19d857acc1e75be3edf47b3</span><span class="w">  </span><span class="c1"># FR HD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">57f34251344be2e283fc30e00e458be6</span><span class="w">  </span><span class="c1"># FR HD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
@@ -1702,49 +1707,52 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== Versions françaises =====</span>
 <span class="w">      </span><span class="c1"># Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.</span>
-<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain</span>
-<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.</span>
+<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain</span>
+<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous préférez la VFF.</span>
 <span class="w">      </span><span class="c1"># Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :</span>
 <span class="w">      </span><span class="c1"># https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404c08fd0bd67f39b4d8e5709319094e</span><span class="w">  </span><span class="c1"># VFF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4cafa20d5584f6ba1871d1b8941aa3cb</span><span class="w">  </span><span class="c1"># VOF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">52772f1cad6b5d26c2551f79bc538a50</span><span class="w">  </span><span class="c1"># VFI</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">29b5f7b1a5f20f64228786c3ab1bdc7d</span><span class="w">  </span><span class="c1"># VF2</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6ace47331a1d3b77942fc18156f6df6</span><span class="w">  </span><span class="c1"># VFQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">95aa50f71a01c82354a7a2b385f1c4d8</span><span class="w">  </span><span class="c1"># VQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3fb499641d7b3c2006be1d9eb014cb3</span><span class="w">  </span><span class="c1"># VFB</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9172b2f683f6223e3a1846427b417a3d</span><span class="w">  </span><span class="c1"># VOSTFR</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
 </code></pre></div>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
@@ -1766,11 +1774,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_vostfr_bluray_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-BLURAY-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -1789,6 +1801,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -1810,12 +1823,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5322da05b19d857acc1e75be3edf47b3</span><span class="w"> </span><span class="c1"># FR HD Bluray Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">57f34251344be2e283fc30e00e458be6</span><span class="w"> </span><span class="c1"># FR HD Bluray Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5322da05b19d857acc1e75be3edf47b3</span><span class="w">  </span><span class="c1"># FR HD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">57f34251344be2e283fc30e00e458be6</span><span class="w">  </span><span class="c1"># FR HD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ed27ebfef2f323e964fb1f61391bcb35</span><span class="w">  </span><span class="c1"># HD Bluray Tier 01</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c20c8647f2746a1f4c4262b0fbbeeeae</span><span class="w">  </span><span class="c1"># HD Bluray Tier 02</span>
@@ -1824,7 +1837,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-BLURAY-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== MULTi Audio =====</span>
 <span class="w">      </span><span class="c1"># Nécessaire vu qu'on ne souhaite pas de MULTi</span>
@@ -1870,11 +1882,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_multi_bluray_web_2160p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -1927,12 +1943,14 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dc98083864ea246d05a42df0d05f81cc</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bfd8eb01832d646a0a89c4deb46f8564</span><span class="w">  </span><span class="c1"># Upscaled</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
 <span class="w">          </span><span class="c1"># ===== Version du film =====</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -1954,12 +1972,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">64f8f12bbf7472a6ccf838bfd6b5e3e8</span><span class="w"> </span><span class="c1"># FR UHD Bluray Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0dcf0c8a386d82e3f2d424189af14065</span><span class="w"> </span><span class="c1"># FR UHD Bluray Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">64f8f12bbf7472a6ccf838bfd6b5e3e8</span><span class="w">  </span><span class="c1"># FR UHD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0dcf0c8a386d82e3f2d424189af14065</span><span class="w">  </span><span class="c1"># FR UHD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
@@ -1972,49 +1990,52 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== Versions françaises =====</span>
 <span class="w">      </span><span class="c1"># Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.</span>
-<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain</span>
-<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.</span>
+<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain</span>
+<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous préférez la VFF.</span>
 <span class="w">      </span><span class="c1"># Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :</span>
 <span class="w">      </span><span class="c1"># https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404c08fd0bd67f39b4d8e5709319094e</span><span class="w">  </span><span class="c1"># VFF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4cafa20d5584f6ba1871d1b8941aa3cb</span><span class="w">  </span><span class="c1"># VOF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">52772f1cad6b5d26c2551f79bc538a50</span><span class="w">  </span><span class="c1"># VFI</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">29b5f7b1a5f20f64228786c3ab1bdc7d</span><span class="w">  </span><span class="c1"># VF2</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6ace47331a1d3b77942fc18156f6df6</span><span class="w">  </span><span class="c1"># VFQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">95aa50f71a01c82354a7a2b385f1c4d8</span><span class="w">  </span><span class="c1"># VQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3fb499641d7b3c2006be1d9eb014cb3</span><span class="w">  </span><span class="c1"># VFB</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9172b2f683f6223e3a1846427b417a3d</span><span class="w">  </span><span class="c1"># VOSTFR</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
 </code></pre></div>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
@@ -2036,11 +2057,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_multi_bluray_web_2160p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-BLURAY-WEB-2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -2086,6 +2111,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dc98083864ea246d05a42df0d05f81cc</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bfd8eb01832d646a0a89c4deb46f8564</span><span class="w">  </span><span class="c1"># Upscaled</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7f9b93f82b7e996391525f2be1d891e0</span><span class="w">  </span><span class="c1"># FastSUB</span>
 <span class="w">          </span><span class="c1"># ===== Version du film =====</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
@@ -2093,6 +2119,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -2114,12 +2141,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">64f8f12bbf7472a6ccf838bfd6b5e3e8</span><span class="w"> </span><span class="c1"># FR UHD Bluray Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0dcf0c8a386d82e3f2d424189af14065</span><span class="w"> </span><span class="c1"># FR UHD Bluray Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">64f8f12bbf7472a6ccf838bfd6b5e3e8</span><span class="w">  </span><span class="c1"># FR UHD Bluray Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0dcf0c8a386d82e3f2d424189af14065</span><span class="w">  </span><span class="c1"># FR UHD Bluray Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4d74ac4c4db0b64bff6ce0cffef99bf0</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 01</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a58f517a70193f8e578056642178419d</span><span class="w">  </span><span class="c1"># UHD Bluray Tier 02</span>
@@ -2129,7 +2156,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-BLURAY-WEB-2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== MULTi Audio =====</span>
 <span class="w">      </span><span class="c1"># Nécessaire vu qu'on ne souhaite pas de MULTi</span>
@@ -2175,11 +2201,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_multi_remux_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -2221,6 +2251,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -2242,12 +2273,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w"> </span><span class="c1"># FR Remux Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w"> </span><span class="c1"># FR Remux Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w">  </span><span class="c1"># FR Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w">  </span><span class="c1"># FR Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
@@ -2259,49 +2290,52 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== Versions françaises =====</span>
 <span class="w">      </span><span class="c1"># Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.</span>
-<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain</span>
-<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.</span>
+<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain</span>
+<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous préférez la VFF.</span>
 <span class="w">      </span><span class="c1"># Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :</span>
 <span class="w">      </span><span class="c1"># https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404c08fd0bd67f39b4d8e5709319094e</span><span class="w">  </span><span class="c1"># VFF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4cafa20d5584f6ba1871d1b8941aa3cb</span><span class="w">  </span><span class="c1"># VOF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">52772f1cad6b5d26c2551f79bc538a50</span><span class="w">  </span><span class="c1"># VFI</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">29b5f7b1a5f20f64228786c3ab1bdc7d</span><span class="w">  </span><span class="c1"># VF2</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6ace47331a1d3b77942fc18156f6df6</span><span class="w">  </span><span class="c1"># VFQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">95aa50f71a01c82354a7a2b385f1c4d8</span><span class="w">  </span><span class="c1"># VQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3fb499641d7b3c2006be1d9eb014cb3</span><span class="w">  </span><span class="c1"># VFB</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9172b2f683f6223e3a1846427b417a3d</span><span class="w">  </span><span class="c1"># VOSTFR</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
 </code></pre></div>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
@@ -2323,11 +2357,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_vostfr_remux_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-REMUX-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -2363,6 +2401,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -2384,12 +2423,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w"> </span><span class="c1"># FR Remux Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w"> </span><span class="c1"># FR Remux Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w">  </span><span class="c1"># FR Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w">  </span><span class="c1"># FR Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
@@ -2398,7 +2437,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-REMUX-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== MULTi Audio =====</span>
 <span class="w">      </span><span class="c1"># Nécessaire vu qu'on ne souhaite pas de MULTi</span>
@@ -2444,11 +2482,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_multi_remux_web_2160p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -2501,12 +2543,14 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dc98083864ea246d05a42df0d05f81cc</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bfd8eb01832d646a0a89c4deb46f8564</span><span class="w">  </span><span class="c1"># Upscaled</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
 <span class="w">          </span><span class="c1"># ===== Version du film =====</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">570bc9ebecd92723d2d21500f4be314c</span><span class="w">  </span><span class="c1"># Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -2528,12 +2572,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w"> </span><span class="c1"># FR Remux Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w"> </span><span class="c1"># FR Remux Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w">  </span><span class="c1"># FR Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w">  </span><span class="c1"># FR Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
@@ -2545,49 +2589,52 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== Versions françaises =====</span>
 <span class="w">      </span><span class="c1"># Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.</span>
-<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain</span>
-<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.</span>
+<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain</span>
+<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous préférez la VFF.</span>
 <span class="w">      </span><span class="c1"># Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :</span>
 <span class="w">      </span><span class="c1"># https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404c08fd0bd67f39b4d8e5709319094e</span><span class="w">  </span><span class="c1"># VFF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4cafa20d5584f6ba1871d1b8941aa3cb</span><span class="w">  </span><span class="c1"># VOF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">52772f1cad6b5d26c2551f79bc538a50</span><span class="w">  </span><span class="c1"># VFI</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">29b5f7b1a5f20f64228786c3ab1bdc7d</span><span class="w">  </span><span class="c1"># VF2</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-BLURAY-WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6ace47331a1d3b77942fc18156f6df6</span><span class="w">  </span><span class="c1"># VFQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">95aa50f71a01c82354a7a2b385f1c4d8</span><span class="w">  </span><span class="c1"># VQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b3fb499641d7b3c2006be1d9eb014cb3</span><span class="w">  </span><span class="c1"># VFB</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9172b2f683f6223e3a1846427b417a3d</span><span class="w">  </span><span class="c1"># VOSTFR</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
 </code></pre></div>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
@@ -2609,11 +2656,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">radarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">radarr_french_vostfr_remux_web_2160p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Radarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">radarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Radarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">movie</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-REMUX-WEB-2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Radarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -2659,6 +2710,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90a6f9a284dff5103f6346090e6280c8</span><span class="w">  </span><span class="c1"># LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dc98083864ea246d05a42df0d05f81cc</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bfd8eb01832d646a0a89c4deb46f8564</span><span class="w">  </span><span class="c1"># Upscaled</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c38ebb7384dada637be8899efa68e6f</span><span class="w">  </span><span class="c1"># SDR</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7f9b93f82b7e996391525f2be1d891e0</span><span class="w">  </span><span class="c1"># FastSUB</span>
 <span class="w">          </span><span class="c1"># ===== Version du film =====</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0f12c086e289cf966fa5948eac571f44</span><span class="w">  </span><span class="c1"># Hybrid</span>
@@ -2666,6 +2718,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eca37840c13c6ef2dd0262b141a5482f</span><span class="w">  </span><span class="c1"># 4K Remaster</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e0c07d59beb37348e975a930d5e50319</span><span class="w">  </span><span class="c1"># Criterion Collection</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9d27d9d2181838f76dee150882bdc58c</span><span class="w">  </span><span class="c1"># Masters of Cinema</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db9b4c4b53d312a3ca5f1378f6440fc9</span><span class="w">  </span><span class="c1"># Vinegar Syndrome</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">957d0f44b592285f26449575e8b1167e</span><span class="w">  </span><span class="c1"># Special Edition</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eecf3a857724171f968a66cb5719e152</span><span class="w">  </span><span class="c1"># IMAX</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f6cbff8cfe4ebbc1bde14c7b7bec0de</span><span class="w">  </span><span class="c1"># IMAX Enhanced</span>
@@ -2687,12 +2740,12 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">e36a0ba1bc902b26ee40818a1d59b8bd</span><span class="w">  </span><span class="c1"># PMTP</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c2863d2a50c9acad1fb50e53ece60817</span><span class="w">  </span><span class="c1"># STAN</span>
 <span class="w">          </span><span class="c1"># ===== HQ Source Groups =====</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w"> </span><span class="c1"># FR Remux Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w"> </span><span class="c1"># FR Remux Tier 02</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w"> </span><span class="c1"># FR WEB Tier 01</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w"> </span><span class="c1"># FR WEB Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5583260016e0b9f683f53af41fb42e4a</span><span class="w">  </span><span class="c1"># FR Remux Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9019d81307e68cd4a7eb06a567e833b8</span><span class="w">  </span><span class="c1"># FR Remux Tier 02</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9790a618cec1aeac8ce75601a17ea40d</span><span class="w">  </span><span class="c1"># FR WEB Tier 01</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3c83a765f84239716bd5fd2d7af188f9</span><span class="w">  </span><span class="c1"># FR WEB Tier 02</span>
 <span class="w">          </span><span class="c1"># Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w"> </span><span class="c1"># FR Scene Groups</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0d94489c0d5828cd3bf9409d309fb32b</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes anglophones)</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3a3ff47579026e76d6504ebea39390de</span><span class="w">  </span><span class="c1"># Remux Tier 01</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9f98181fe5a3fbeb0cc29340da2a468a</span><span class="w">  </span><span class="c1"># Remux Tier 02</span>
@@ -2701,7 +2754,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">af94e0fe497124d1f9ce732069ec8c3b</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-REMUX-WEB-2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="c1"># ===== MULTi Audio =====</span>
 <span class="w">      </span><span class="c1"># Nécessaire vu qu'on ne souhaite pas de MULTi</span>
@@ -3005,11 +3057,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">sonarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">sonarr_french_multi_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Sonarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">sonarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Sonarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">series</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Sonarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -3024,7 +3080,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3ba797e5dc13af4b8d9bb25e83d90de2</span><span class="w">  </span><span class="c1"># FR LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9c11cd3f07101cdba90a2d81cf0e56b4</span><span class="w">  </span><span class="c1"># LQ</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">47435ece6b99a0b477caf360e79ba0bb</span><span class="w">  </span><span class="c1"># x265 (HD)</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ea0bb4b6ba388992fad1092703b5ff7b</span><span class="w">  </span><span class="c1"># FastSUB</span>
 <span class="w">          </span><span class="c1"># ===== Misc =====</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ec8fa7296b64e8cd390a1600981f3923</span><span class="w">  </span><span class="c1"># Repack/Proper</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eb3d5cc0a2be0db205fb823640db6a3c</span><span class="w">  </span><span class="c1"># Repack2</span>
@@ -3068,7 +3123,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - d84935abd3f8556dcd51d4f27e22d0a6  # WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15a05bc7c1a36e2b57fd628f8977e2fc</span><span class="w">  </span><span class="c1"># AV1</span>
@@ -3078,55 +3132,49 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 
 <span class="w">      </span><span class="c1"># ===== Versions françaises =====</span>
 <span class="w">      </span><span class="c1"># Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.</span>
-<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain</span>
-<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.</span>
+<span class="w">      </span><span class="c1"># Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain</span>
+<span class="w">      </span><span class="c1"># type d'audio français. Par exemple si vous préférez la VFF.</span>
 <span class="w">      </span><span class="c1"># Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :</span>
 <span class="w">      </span><span class="c1"># https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles-french-fr/#type-de-versions-francaises</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2c29a39a4fdfd6d258799bc4c09731b9</span><span class="w">  </span><span class="c1"># VFF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7ae924ee9b2f39df3283c6c0beb8a2aa</span><span class="w">  </span><span class="c1"># VOF</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6816a0e1d4b64bf3550ad3b74b009b6</span><span class="w">  </span><span class="c1"># VFI</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">b6816a0e1d4b64bf3550ad3b74b009b6</span><span class="w">  </span><span class="c1"># VF2</span>
+<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7a7f4e4f58bd1058440236d033a90b67</span><span class="w">  </span><span class="c1"># VFQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">82085412d9a53ba8d8e46fc624eb701d</span><span class="w">  </span><span class="c1"># VQ</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0ce1e39a4676c6692ce47935278dac76</span><span class="w">  </span><span class="c1"># VFB</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
+<span class="w">            </span><span class="c1"># score: 101</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">07a32f77690263bb9fda1842db7e273f</span><span class="w">  </span><span class="c1"># VOSTFR</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
-
-<span class="w">      </span><span class="c1"># ==== Scores Optionnels ====</span>
-<span class="w">      </span><span class="c1"># Décommenter le score associé si c'est ce que vous souhaitez</span>
-
-<span class="w">      </span><span class="c1"># Si vous ne voulez pas non-plus de FanSUB.</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">84f0acbda9c0c9de783894fb66df25aa</span><span class="w">  </span><span class="c1"># FanSUB</span>
-<span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-MULTi-WEB-1080p</span>
-<span class="w">            </span><span class="c1"># score: -10000</span>
 </code></pre></div>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
@@ -3147,11 +3195,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">sonarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">sonarr_french_vostfr_web_1080p</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Sonarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">sonarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Sonarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">series</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Sonarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -3202,7 +3254,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">d84935abd3f8556dcd51d4f27e22d0a6</span><span class="w">  </span><span class="c1"># WEB Tier 03</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-VOSTFR-WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15a05bc7c1a36e2b57fd628f8977e2fc</span><span class="w">  </span><span class="c1"># AV1</span>
@@ -3256,11 +3307,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">sonarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">sonarr_french_anime_multi</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Sonarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">sonarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Sonarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anime</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-ANIME-MULTi</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Sonarr.</span>
@@ -3305,7 +3360,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4e6134a384dbc0ef166234cc0e45d26d</span><span class="w">  </span><span class="c1"># FR Anime Tier 02</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f3422339d185eb227a324644a2fbfca</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)</span>
-<span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en SeaDex</span>
+<span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer les releases en SeaDex</span>
 <span class="w">          </span><span class="c1"># si jamais une release MULTi/VOSTFR n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
 <span class="w">          </span><span class="c1"># Il est tout de fois possible que dans ce cas Sonarr récupére une release SeaDex au lieu</span>
@@ -3328,7 +3383,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - dc262f88d74c651b12e9d90b39f6c753  # Anime Web Tier 06 (FanSubs)</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-ANIME-MULTi</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">d660701077794679fd59e8bdf4ce3a29</span><span class="w">  </span><span class="c1"># AMZN</span>
@@ -3417,11 +3471,15 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="nt">sonarr</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">sonarr_french_anime_vostfr</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># L'URL de base ainsi que la clé API de votre instance Sonarr</span>
-<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">sonarr_url_goes_here</span><span class="p p-Indicator">]</span>
-<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">api_key_goes_here</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your Sonarr URL here</span>
+<span class="w">    </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Put your API key here</span>
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anime</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-ANIME-VOSTFR</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="c1"># La liste de Formats Personnalisés à synchroniser avec Sonarr.</span>
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
@@ -3459,7 +3517,7 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4e6134a384dbc0ef166234cc0e45d26d</span><span class="w">  </span><span class="c1"># FR Anime Tier 02</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2f3422339d185eb227a324644a2fbfca</span><span class="w">  </span><span class="c1"># FR Scene Groups</span>
 <span class="w">          </span><span class="c1"># Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)</span>
-<span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en SeaDex</span>
+<span class="w">          </span><span class="c1"># vous pouvez les activer si vous souhaitez aussi récupérer les releases en SeaDex</span>
 <span class="w">          </span><span class="c1"># si jamais une release VOSTFR n'existes pas.</span>
 <span class="w">          </span><span class="c1">#</span>
 <span class="w">          </span><span class="c1"># Il est tout de fois possible que dans ce cas Sonarr récupére une release SeaDex au lieu</span>
@@ -3482,7 +3540,6 @@ The vast majority of releases can be found on <a href="https://nyaa.si/" rel="no
 <span class="w">          </span><span class="c1"># - dc262f88d74c651b12e9d90b39f6c753  # Anime Web Tier 06 (FanSubs)</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FR-ANIME-VOSTFR</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">d660701077794679fd59e8bdf4ce3a29</span><span class="w">  </span><span class="c1"># AMZN</span>

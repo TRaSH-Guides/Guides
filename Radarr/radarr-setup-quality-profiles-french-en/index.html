@@ -1211,9 +1211,13 @@ You could end up with a single audio release when a MULTi release exists. This i
 <h3 id="french-audio-versions">French Audio Versions<a class="headerlink" href="#french-audio-versions" title="Permanent link"></a></h3>
 <p>Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:</p>
 <ul>
-<li>You do not want VFQ or VQ audio, in this case you will put them at <code>-10000</code> instead of <code>0</code>.</li>
+<li>You prefer VFF (including VFI and VF2) audio, in this case you will put them at <code>101</code> instead of <code>0</code>.</li>
 <li>You only want VOSTFR, in this case you will ignore any mention of <strong>MULTi Custom Formats</strong> and give the <a href="/Radarr/Radarr-collection-of-custom-formats/#vostfr">VOSTFR</a> Custom Format a score of <code>1000</code>.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.</p>
+</div>
 <!-- BEGIN INCLUDE ../../includes/french-guide/radarr-french-audio-version-en.md -->
 <details class="abstract">
 <summary>Explanation - [CLICK TO EXPAND]</summary>
@@ -1262,12 +1266,12 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td>Belgian French Version</td>
 </tr>
 <tr>
-<td>VF[1-9] or FR[1-9]<sup>[2]</sup></td>
+<td>VF[1-9] or FR[1-9]</td>
 <td>Indique le nombre de doublage présent (normalement VF2 soit VFF et VFQ)</td>
 <td>Indicates the number of dubs present (normally VF2 being VFF and VFQ)</td>
 </tr>
 <tr>
-<td>VOSTFR<sup>[3]</sup></td>
+<td>VOSTFR<sup>[2]</sup></td>
 <td>Indique que l'audio est dans la langue originale, avec des sous-titres en français.</td>
 <td>Indicates soundtrack in the original language, with French subtitles</td>
 </tr>
@@ -1275,12 +1279,11 @@ You could end up with a single audio release when a MULTi release exists. This i
 </table>
 <ul>
 <li><em>[1] VF is included under the VFQ Custom Format, but it should be noted that it was often mismatched with VFF instead of VFQ pre-2022.</em></li>
-<li><em>[2] VF[1-9] is included under the VFI Custom Format.</em></li>
-<li><em>[3] It should be noted that SUBFRENCH is included in this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix the two, leading to some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.</em></li>
+<li><em>[2] It should be noted that SUBFRENCH is included in this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix the two, leading to some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.</em></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Indexers renaming in Prowlarr</p>
-<p>Some Indexers in Prowlarr can rename <code>MULTi</code> releases to <code>MULTi.TRUEFRENCH</code> or <code>MULTi.FRENCH</code>. I do not recommend using such a feature along with those Custom Formats as it can lead to false positives from the VFF, VFQ and VQ Custom Formats.</p>
+<p>Some Indexers in Prowlarr can rename <code>MULTi</code> releases to <code>MULTi.TRUEFRENCH</code> or <code>MULTi.FRENCH</code>. It is not recommend to use such a feature along with those Custom Formats as it can lead to false positives from the VFF, VFQ and VQ Custom Formats.</p>
 </div>
 </details>
 <details class="abstract">
@@ -1308,6 +1311,11 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#vfi">VFI</a></td>
 <td>0</td>
 <td>52772f1cad6b5d26c2551f79bc538a50</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#vf2">VF2</a></td>
+<td>0</td>
+<td>29b5f7b1a5f20f64228786c3ab1bdc7d</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#vfq">VFQ</a></td>
@@ -4132,7 +4140,7 @@ Also they often even rename the release name in to Portuguese.</li>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 12, 2023 17:51:06</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 21, 2023 15:25:07</span>
 </small>
 </div>
 <footer class="sponsorship">
