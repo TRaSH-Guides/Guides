@@ -2,6 +2,8 @@
 
 It's not recommended to run the Starr apps through a VPN,  what can happen is that the Starr apps doesn't update the posters or metadata or you can't add new movies/tv shows, it doesn't need to happen right away. but sooner or later it can and probably will happen.
 
+!!! danger "To be clear it is not a matter if VPNs will cause issues with the Starr Apps, but when: image providers will block you and cloudflare is in front of most of Starr servers (updates, metadata, etc.) and liable to block you too"
+
 Just run VPN on the apps that actually need it, like your torrent client, and perhaps in some cases certain indexers because of region/ISP restriction.
 
 !!! warning

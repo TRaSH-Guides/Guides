@@ -7,11 +7,15 @@
 radarr:
   radarr_french_multi_bluray_web_2160p:
     # L'URL de base ainsi que la clé API de votre instance Radarr
-    base_url: [radarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Radarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: movie
+
+    quality_profiles:
+      - name: FR-MULTi-BLURAY-WEB-2160p
+        reset_unmatched_scores: true
 
     # La liste de Formats Personnalisés à synchroniser avec Radarr.
     custom_formats:
@@ -64,12 +68,14 @@ radarr:
           - 90a6f9a284dff5103f6346090e6280c8  # LQ
           - dc98083864ea246d05a42df0d05f81cc  # x265 (HD)
           - bfd8eb01832d646a0a89c4deb46f8564  # Upscaled
+          - 9c38ebb7384dada637be8899efa68e6f  # SDR
           # ===== Version du film =====
           - 0f12c086e289cf966fa5948eac571f44  # Hybrid
           - 570bc9ebecd92723d2d21500f4be314c  # Remaster
           - eca37840c13c6ef2dd0262b141a5482f  # 4K Remaster
           - e0c07d59beb37348e975a930d5e50319  # Criterion Collection
           - 9d27d9d2181838f76dee150882bdc58c  # Masters of Cinema
+          - db9b4c4b53d312a3ca5f1378f6440fc9  # Vinegar Syndrome
           - 957d0f44b592285f26449575e8b1167e  # Special Edition
           - eecf3a857724171f968a66cb5719e152  # IMAX
           - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced
@@ -91,12 +97,12 @@ radarr:
           - e36a0ba1bc902b26ee40818a1d59b8bd  # PMTP
           - c2863d2a50c9acad1fb50e53ece60817  # STAN
           # ===== HQ Source Groups =====
-          - 64f8f12bbf7472a6ccf838bfd6b5e3e8 # FR UHD Bluray Tier 01
-          - 0dcf0c8a386d82e3f2d424189af14065 # FR UHD Bluray Tier 02
-          - 9790a618cec1aeac8ce75601a17ea40d # FR WEB Tier 01
-          - 3c83a765f84239716bd5fd2d7af188f9 # FR WEB Tier 02
+          - 64f8f12bbf7472a6ccf838bfd6b5e3e8  # FR UHD Bluray Tier 01
+          - 0dcf0c8a386d82e3f2d424189af14065  # FR UHD Bluray Tier 02
+          - 9790a618cec1aeac8ce75601a17ea40d  # FR WEB Tier 01
+          - 3c83a765f84239716bd5fd2d7af188f9  # FR WEB Tier 02
           # Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française
-          - 0d94489c0d5828cd3bf9409d309fb32b # FR Scene Groups
+          - 0d94489c0d5828cd3bf9409d309fb32b  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes anglophones)
           # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en VO si jamais une release MULTi n'existes pas.
           #
@@ -109,46 +115,49 @@ radarr:
           # - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            reset_unmatched_scores: true
 
       # ===== Versions françaises =====
       # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases avec.
-      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez ou non obtenir un certain
-      # type d'audio français. Par exemple si vous ne souhaitez pas de la VQ.
+      # Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un certain
+      # type d'audio français. Par exemple si vous préférez la VFF.
       # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
       # https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions
       - trash_ids:
           - 404c08fd0bd67f39b4d8e5709319094e  # VFF
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 4cafa20d5584f6ba1871d1b8941aa3cb  # VOF
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 52772f1cad6b5d26c2551f79bc538a50  # VFI
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
+      - trash_ids:
+          - 29b5f7b1a5f20f64228786c3ab1bdc7d  # VF2
+        quality_profiles:
+          - name: FR-MULTi-BLURAY-WEB-1080p
+            # score: 101
       - trash_ids:
           - b6ace47331a1d3b77942fc18156f6df6  # VFQ
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 95aa50f71a01c82354a7a2b385f1c4d8  # VQ
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - b3fb499641d7b3c2006be1d9eb014cb3  # VFB
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000
+            # score: 101
       - trash_ids:
           - 9172b2f683f6223e3a1846427b417a3d  # VOSTFR
         quality_profiles:
           - name: FR-MULTi-BLURAY-WEB-2160p
-            # score: -10000

@@ -7,11 +7,15 @@
 sonarr:
   sonarr_french_anime_multi:
     # L'URL de base ainsi que la clé API de votre instance Sonarr
-    base_url: [sonarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Sonarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: anime
+
+    quality_profiles:
+      - name: FR-ANIME-MULTi
+        reset_unmatched_scores: true
 
     custom_formats:
       # La liste de Formats Personnalisés à synchroniser avec Sonarr.
@@ -56,7 +60,7 @@ sonarr:
           - 4e6134a384dbc0ef166234cc0e45d26d  # FR Anime Tier 02
           - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)
-          # vous pouvez les activer si vous souhaitez aussi récupérer de bonnes releases en SeaDex
+          # vous pouvez les activer si vous souhaitez aussi récupérer les releases en SeaDex
           # si jamais une release MULTi/VOSTFR n'existes pas.
           #
           # Il est tout de fois possible que dans ce cas Sonarr récupére une release SeaDex au lieu
@@ -79,7 +83,6 @@ sonarr:
           # - dc262f88d74c651b12e9d90b39f6c753  # Anime Web Tier 06 (FanSubs)
         quality_profiles:
           - name: FR-ANIME-MULTi
-            reset_unmatched_scores: true
 
       - trash_ids:
           - d660701077794679fd59e8bdf4ce3a29  # AMZN
