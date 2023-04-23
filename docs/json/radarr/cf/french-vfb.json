@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bVFB\\b"
+        "value": "\\b(VFB)\\b"
       }
     }
   ]

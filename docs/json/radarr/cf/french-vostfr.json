@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bVOST.*?FR(E|A)?\\b"
+        "value": "\\b(VOST.*?FR(E|A)?)\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bSUBFR(A|ENCH)?\\b"
+        "value": "\\b(SUBFR(A|ENCH)?)\\b"
       }
     }
   ]

@@ -7,11 +7,15 @@
 radarr:
   radarr_french_vostfr_remux_web_1080p:
     # L'URL de base ainsi que la clé API de votre instance Radarr
-    base_url: [radarr_url_goes_here]
-    api_key: [api_key_goes_here]
+    base_url: Put your Radarr URL here
+    api_key: Put your API key here
 
     quality_definition:
       type: movie
+
+    quality_profiles:
+      - name: FR-VOSTFR-REMUX-WEB-1080p
+        reset_unmatched_scores: true
 
     # La liste de Formats Personnalisés à synchroniser avec Radarr.
     custom_formats:
@@ -47,6 +51,7 @@ radarr:
           - eca37840c13c6ef2dd0262b141a5482f  # 4K Remaster
           - e0c07d59beb37348e975a930d5e50319  # Criterion Collection
           - 9d27d9d2181838f76dee150882bdc58c  # Masters of Cinema
+          - db9b4c4b53d312a3ca5f1378f6440fc9  # Vinegar Syndrome
           - 957d0f44b592285f26449575e8b1167e  # Special Edition
           - eecf3a857724171f968a66cb5719e152  # IMAX
           - 9f6cbff8cfe4ebbc1bde14c7b7bec0de  # IMAX Enhanced
@@ -68,12 +73,12 @@ radarr:
           - e36a0ba1bc902b26ee40818a1d59b8bd  # PMTP
           - c2863d2a50c9acad1fb50e53ece60817  # STAN
           # ===== HQ Source Groups =====
-          - 5583260016e0b9f683f53af41fb42e4a # FR Remux Tier 01
-          - 9019d81307e68cd4a7eb06a567e833b8 # FR Remux Tier 02
-          - 9790a618cec1aeac8ce75601a17ea40d # FR WEB Tier 01
-          - 3c83a765f84239716bd5fd2d7af188f9 # FR WEB Tier 02
+          - 5583260016e0b9f683f53af41fb42e4a  # FR Remux Tier 01
+          - 9019d81307e68cd4a7eb06a567e833b8  # FR Remux Tier 02
+          - 9790a618cec1aeac8ce75601a17ea40d  # FR WEB Tier 01
+          - 3c83a765f84239716bd5fd2d7af188f9  # FR WEB Tier 02
           # Vous pouvez commenter/supprimer le groupe scene si vous ne souhaitez pas de releases venant de la Scene française
-          - 0d94489c0d5828cd3bf9409d309fb32b # FR Scene Groups
+          - 0d94489c0d5828cd3bf9409d309fb32b  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes anglophones)
           - 3a3ff47579026e76d6504ebea39390de  # Remux Tier 01
           - 9f98181fe5a3fbeb0cc29340da2a468a  # Remux Tier 02
@@ -82,7 +87,6 @@ radarr:
           - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03
         quality_profiles:
           - name: FR-VOSTFR-REMUX-WEB-1080p
-            reset_unmatched_scores: true
 
       # ===== MULTi Audio =====
       # Nécessaire vu qu'on ne souhaite pas de MULTi

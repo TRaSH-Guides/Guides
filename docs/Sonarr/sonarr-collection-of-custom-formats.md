@@ -79,13 +79,13 @@ I also made 3 guides related to this one.
 | [Multi](#multi)                | [No-RlsGroup](#no-rlsgroup)         | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
 | [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
 | [x264](#x264)                  | [Retags](#retags)                   | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
-| [x265](#x265)                  | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-|                                | [Season Packs](#season-pack)        | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
-|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
-|                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
-|                                | [HFR](#hfr)                         |                               |                                               |
+| [x265](#x265)                  | [Scene](#scene)                     | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+|                                | [Season Packs](#season-pack)        | [VFQ](#vfq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             |                                               |
+|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                               |
+|                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                               |
 
 ------
 
@@ -2279,12 +2279,28 @@ I also made 3 guides related to this one.
 
 ??? question "VFI - [CLICK TO EXPAND]"
 
-    International French Version. VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ) and is considered as an International French release.
+    International French Version.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VF2
+
+??? question "VF2 - [CLICK TO EXPAND]"
+
+    VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ).
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vf2.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
