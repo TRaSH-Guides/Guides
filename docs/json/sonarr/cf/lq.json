@@ -50,6 +50,15 @@
       }
     },
     {
+      "name": "HiQVE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiQVE)$"
+      }
+    },
+    {
       "name": "JFF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
