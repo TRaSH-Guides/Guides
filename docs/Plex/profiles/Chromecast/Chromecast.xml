@@ -9,7 +9,7 @@
   </TranscodeTargets>
   <DirectPlayProfiles>
     <VideoProfile container="mp4" codec="Hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="aac,mp3,mp2"/>
-    <VideoProfile container="mkv" codec="vp9,Hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="aac,mp3,mp2,pcm,flac,alac" subtitleFormat="srt,ass"/>
+    <VideoProfile container="mkv" codec="vp9,Hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="aac,mp3,mp2,pcm,flac,alac" subtitleCodec="srt,ass"/>
     <VideoProfile protocol="hls" container="mpegts" codec="h264" audioCodec="aac" />
     <MusicProfile container="mp3" codec="mp2,mp3"/>
     <MusicProfile container="mp4" codec="aac"/>
