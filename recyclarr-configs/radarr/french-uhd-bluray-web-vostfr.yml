@@ -128,5 +128,5 @@ radarr:
       - trash_ids:
           - 02e48d30a176c91baf9e15de05e5dc6a  # FanSUB
         quality_profiles:
-          - name: FR-VOSTFR-REMUX-WEB-2160p
+          - name: FR-VOSTFR-BLURAY-WEB-2160p
             # score: -10000
