@@ -139,7 +139,7 @@ radarr:
       - trash_ids:
           - 29b5f7b1a5f20f64228786c3ab1bdc7d  # VF2
         quality_profiles:
-          - name: FR-MULTi-BLURAY-WEB-2160p
+          - name: FR-MULTi-REMUX-WEB-2160p
             # score: 101
       - trash_ids:
           - b6ace47331a1d3b77942fc18156f6df6  # VFQ
