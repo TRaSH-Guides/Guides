@@ -5,50 +5,50 @@
         {
             "quality": "HDTV-720p",
             "min": 10,
-            "preferred": 66.5,
-            "max": 67.5
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "HDTV-1080p",
             "min": 15,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-720p",
             "min": 10,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-720p",
             "min": 10,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-720p",
             "min": 17.1,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-1080p",
             "min": 15,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-1080p",
             "min": 15,
-            "preferred": 136.3,
-            "max": 137.3
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-1080p",
             "min": 50.4,
-            "preferred": 226,
-            "max": 227
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-1080p Remux",
@@ -58,21 +58,21 @@
         },
         {
             "quality": "HDTV-2160p",
-            "min": 50.4,
-            "preferred": 349,
-            "max": 350
+            "min": 35.9,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBRip-2160p",
-            "min": 50.4,
-            "preferred": 349,
-            "max": 350
+            "min": 35.9,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "WEBDL-2160p",
-            "min": 50.4,
-            "preferred": 349,
-            "max": 350
+            "min": 35.9,
+            "preferred": 399,
+            "max": 400
         },
         {
             "quality": "Bluray-2160p",
@@ -82,7 +82,7 @@
         },
         {
             "quality": "Bluray-2160p Remux",
-            "min": 204.4,
+            "min": 187.4,
             "preferred": 399,
             "max": 400
         }
