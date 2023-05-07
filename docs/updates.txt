@@ -1,3 +1,13 @@
+# 2023-05-07 19:00
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr] Changed quality size mix/max - Set the max size to max to be consistent with Radarr, and this also helps to prevent issues with usenet files being always bigger, lowered the min size for several qualities.
+
+**[Fixed]**
+- None
+
 # 2023-04-23 23:05
 **[New]**
 - [Starr-FR] Added `VF2` CF
