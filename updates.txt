@@ -1,3 +1,13 @@
+# 2023-05-09 19:35
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr] Added RlsGrp `TG` to `LQ` - because they do releases in strange aspect ratios and mislabel their releases.
+
+**[Fixed]**
+- [Guide - Hardlinks] Added the usenet incomplete folder to the folder tree.
+
 # 2023-05-07 19:00
 **[New]**
 - None
