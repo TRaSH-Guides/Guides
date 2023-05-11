@@ -220,6 +220,15 @@
         "value": "^(GalaxyRG)$"
       }
     },
+      {
+      "name": "GHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GHD)$"
+      }
+    },
     {
       "name": "GPTHD",
       "implementation": "ReleaseGroupSpecification",
