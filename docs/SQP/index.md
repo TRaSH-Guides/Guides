@@ -12,6 +12,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 ## The Following SQP are available
 
 - [Streaming Optimized (SQP-1)](/SQP/1){:target="_blank" rel="noopener noreferrer"}
+- [Streaming Optimized (SQP-1 4k)](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
 - [UHD Remux|Bluray|IMAX-E (SQP-2)](/SQP/2){:target="_blank" rel="noopener noreferrer"}
 - [UHD Remux|IMAX-E (SQP-3)](/SQP/3){:target="_blank" rel="noopener noreferrer"}
 - [UHD WEBDL|IMAX-E (SQP-4)](/SQP/4){:target="_blank" rel="noopener noreferrer"}
