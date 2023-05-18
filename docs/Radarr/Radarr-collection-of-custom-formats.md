@@ -51,15 +51,15 @@ I also made 3 guides related to this one.
 | --------------------------------------------- | --------------------- | ----------------------------------------- | ---------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)        |
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)       |
-| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)            |
-| [Criterion Collection](#criterion-collection) | [Upscaled](#upscaled) | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)       |
-| [Masters of Cinema](#masters-of-cinema)       |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Hulu](#hulu)          |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Netflix](#nf)         |
-| [Theatrical Cut](#theatrical-cut)             |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)    |
-| [IMAX](#imax)                                 |                       | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma) |
-| [Open Matte](#open-matte)                     |                       |                                           | [Pathe Thuis](#pathe)  |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [Remux Tier 03](#remux-tier-03)           | [Disney+](#dsnp)       |
+| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [HBO](#hbo)            |
+| [Criterion Collection](#criterion-collection) | [Upscaled](#upscaled) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO Max](#hmax)       |
+| [Masters of Cinema](#masters-of-cinema)       |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Hulu](#hulu)          |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Netflix](#nf)         |
+| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Peacock TV](#pcok)    |
+| [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
+| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
 |                                               |                       |                                           | [Bravia Core](#bcore)  |
 |                                               |                       |                                           | [Stan](#stan)          |
 
@@ -1423,16 +1423,33 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 02 - [CLICK TO EXPAND]"
 
-    - Groups that only use one source.(So called one disc wonders.)
-    - Groups that use use a automated way.
-    - Groups that don't check their stuff.
     - Groups that haven't released much. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups doing remuxes with multiple sources(discs) mixing what's best.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Remux Tier 03
+
+??? question "Remux Tier 03 - [CLICK TO EXPAND]"
+
+    - Groups that only use one source.(So called one disc wonders.)
+    - Groups that use use a fully automated way without checking.
+    - Groups that don't check their stuff.
+    - Groups that haven't released much. (yet)
+    - Groups that retired and don't have the best quality by todays standards
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/remux-tier-03.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
