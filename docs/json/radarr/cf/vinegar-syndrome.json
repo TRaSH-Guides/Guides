@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(V-?S)\\b"
+        "value": "\\b(V-S)\\b"
       }
     }
   ]
