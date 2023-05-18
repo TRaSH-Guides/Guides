@@ -81,6 +81,7 @@ I also made 3 guides related to this one.
 |                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
 |                                | [HFR](#hfr)                         |                               |                                                 |
+|                                | [VP9](#vp9)                         |                               |                                                 |
 
 ------
 
@@ -1182,6 +1183,25 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/av1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VP9
+
+??? question "VP9 - [CLICK TO EXPAND]"
+
+    - This is a new codec and you need modern devices that support it.
+    - We also had reports of playback/transcoding issues.
+    - No main group is actually using it (yet).
+    - It's better to ignore this new codec to prevent compatibility issues.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vp9.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
