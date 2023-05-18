@@ -1162,6 +1162,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vp9" class="md-nav__link">
+    VP9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sdr" class="md-nav__link">
     SDR
   </a>
@@ -4063,6 +4070,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vp9" class="md-nav__link">
+    VP9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#sdr" class="md-nav__link">
     SDR
   </a>
@@ -5048,6 +5062,12 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <tr>
 <td></td>
 <td><a href="#hfr">HFR</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#vp9">VP9</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -9680,6 +9700,38 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bAV1\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="vp9">VP9<a class="headerlink" href="#vp9" title="Permanent link"></a></h3>
+<details class="question">
+<summary>VP9 - [CLICK TO EXPAND]</summary>
+<ul>
+<li>This is a new codec and you need modern devices that support it.</li>
+<li>We also had reports of playback/transcoding issues.</li>
+<li>No main group is actually using it (yet).</li>
+<li>It's better to ignore this new codec to prevent compatibility issues.</li>
+</ul>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ae4cfaa9283a4f2150ac3da08e388723&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VP9&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VP9&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bVP9\\b&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -18260,7 +18312,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 19, 2023 14:04:20</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 18, 2023 06:27:30</span>
       
     
   </small>
