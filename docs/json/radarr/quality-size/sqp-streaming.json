@@ -39,6 +39,18 @@
             "max": 154
         },
         {
+            "quality": "WEBDL-2160p",
+            "min": 34.5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
+            "quality": "WEBRip-2160p",
+            "min": 34.5,
+            "preferred": 399,
+            "max": 400
+        },
+        {
             "quality": "Bluray-2160p",
             "min": 102,
             "preferred": 170,
