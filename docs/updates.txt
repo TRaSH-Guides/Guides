@@ -1,3 +1,15 @@
+# 2023-05-18 12:00
+**[New]**
+- [Radarr] Added CF `Remux Tier 03`, This way we can fine tune the RlsGrps even more. please update your automation sync tools to accept the new CF.
+- [Starr] Added CF 'VP9'.
+- [SQP-1 2160p] [WIP] Started testing a 2160p SQP that's Optimized for PLEX, Emby, Jellyfin, and other streaming platforms. more info check the SQP channel.
+
+**[Updated]**
+- [Radarr] Increased the score for CF `Remux Tier 01-02`.
+
+**[Fixed]**
+- [Starr] Added `HLG` to CF `2160p`.
+
 # 2023-05-09 19:35
 **[New]**
 - None
