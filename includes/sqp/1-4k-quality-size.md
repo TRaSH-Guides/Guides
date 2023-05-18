@@ -11,6 +11,8 @@
 | {{ radarr['quality-size']['sqp-streaming']['qualities'][4]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][4]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][4]['max'] }} |
 | {{ radarr['quality-size']['sqp-streaming']['qualities'][5]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][5]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][5]['max'] }} |
 | {{ radarr['quality-size']['sqp-streaming']['qualities'][6]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][6]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][6]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][7]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][7]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][7]['max'] }} |
+| {{ radarr['quality-size']['sqp-streaming']['qualities'][8]['quality'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][8]['min'] }} | {{ radarr['quality-size']['sqp-streaming']['qualities'][8]['max'] }} |
 
 The reason why you don't see the `Preferred` score in the table above is because we want max quality anyway. So set it as high as possible.
 
