@@ -6,7 +6,7 @@ This is all done in a way to achieve [Hardlinks and Instant Moves (Atomic-Moves)
 Select your desired method of installation:
 
 - [Docker](/Hardlinks/How-to-setup-for/Docker/)
- - TrueNAS Scale users can follow the same concepts as the Docker method
+- TrueNAS Scale users can follow the same concepts as the Docker method
 - [Dockstarter](/Hardlinks/How-to-setup-for/Dockstarter/)
 - [Native](/Hardlinks/How-to-setup-for/Native/)
 - [Synology](/Hardlinks/How-to-setup-for/Synology/)
