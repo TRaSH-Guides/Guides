@@ -1,0 +1,98 @@
+{
+  "trash_id": "8baaf0b3142bf4d94c42a724f034e27a",
+  "trash_score": "1850",
+  "name": "Remux Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "decibeL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(decibeL)$"
+      }
+    },
+    {
+      "name": "EPSiLON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(EPSiLON)$"
+      }
+    },
+    {
+      "name": "HiFi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiFi)$"
+      }
+    },
+    {
+      "name": "iFT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iFT)$"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NTb)$"
+      }
+    },
+    {
+      "name": "PTP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PTP)$"
+      }
+    },
+    {
+      "name": "SumVision",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SumVision)$"
+      }
+    },
+    {
+      "name": "TOA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TOA)$"
+      }
+    },
+    {
+      "name": "TRiToN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TRiToN)$"
+      }
+    }
+  ]
+}

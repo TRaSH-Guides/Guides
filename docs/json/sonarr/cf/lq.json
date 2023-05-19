@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BRiNK)\\b"
+        "value": "^(BRiNK)$"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CHX)\\b"
+        "value": "^(CHX)$"
       }
     },
     {
@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(EVO)\\b"
+        "value": "^(EVO)$"
       }
     },
     {
@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(FGT)\\b"
+        "value": "^(FGT)$"
       }
     },
     {
@@ -46,7 +46,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(GHOSTS)\\b"
+        "value": "^(GHOSTS)$"
+      }
+    },
+    {
+      "name": "HiQVE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiQVE)$"
       }
     },
     {
@@ -55,7 +64,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(JFF)\\b"
+        "value": "^(JFF)$"
       }
     },
     {
@@ -64,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(MeGusta)\\b"
+        "value": "^(MeGusta)$"
       }
     },
     {
@@ -73,7 +82,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NERO)\\b"
+        "value": "^(NERO)$"
       }
     },
     {
@@ -82,7 +91,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(nhanc3)\\b"
+        "value": "^(nhanc3)$"
       }
     },
     {
@@ -100,7 +109,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(PSA)\\b"
+        "value": "^(PSA)$"
       }
     },
     {
@@ -109,7 +118,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TBS)\\b"
+        "value": "^(TBS)$"
+      }
+    },
+    {
+      "name": "TG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TG)$"
       }
     },
     {
@@ -118,7 +136,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VIDEOHOLE)\\b"
+        "value": "^(VIDEOHOLE)$"
       }
     },
     {
@@ -127,7 +145,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(worldmkv)\\b"
+        "value": "^(worldmkv)$"
       }
     },
     {
@@ -136,7 +154,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(XLF)\\b"
+        "value": "^(XLF)$"
       }
     }
   ]

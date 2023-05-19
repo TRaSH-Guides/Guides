@@ -2,7 +2,7 @@
 
     {! include-markdown "../../includes/cf/dv-info.md" !}
 
-    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png){ data-title="Follow the flowchart, continue till you hit finished." data-description="- The yellow boxes match the Quality Profile on the right side of the Guide.<br>- If the Guide says <b>ALL</b> it means <b>ALL</b>. (<u>Even if you have a TV/Hardware Media Player that can't handle for example DV or HDR10+</u>, else you will limit yourself what you're able to get or get download loops, this also counts for the audio formats).<br><br><b>All the used scores and combination of Custom Formats in this Guide are tested to get the desired results and prevent download loops as much as possible.</b>" }
+    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
 
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |

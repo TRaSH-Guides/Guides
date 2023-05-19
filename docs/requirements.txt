@@ -1,8 +1,8 @@
-mkdocs-glightbox==0.3.2
-mkdocs-awesome-pages-plugin==2.9.0
+mkdocs-glightbox==0.3.4
+mkdocs-awesome-pages-plugin==2.9.1
 mkdocs-git-revision-date-localized-plugin==1.2.0
 mkdocs-macros-plugin==0.7.0
-mkdocs-material==9.1.6
+mkdocs-material==9.1.13
 mkdocs-minify-plugin==0.6.4
 mkdocs-redirects==1.2.0
 mkdocs-include-markdown-plugin==4.0.4

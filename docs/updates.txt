@@ -1,3 +1,66 @@
+# 2023-05-18 12:00
+**[New]**
+- [Radarr] Added CF `Remux Tier 03`, This way we can fine tune the RlsGrps even more. please update your automation sync tools to accept the new CF.
+- [Starr] Added CF 'VP9'.
+- [SQP-1 2160p] [WIP] Started testing a 2160p SQP that's Optimized for PLEX, Emby, Jellyfin, and other streaming platforms. more info check the SQP channel.
+
+**[Updated]**
+- [Radarr] Increased the score for CF `Remux Tier 01-02`.
+
+**[Fixed]**
+- [Starr] Added `HLG` to CF `2160p`.
+
+# 2023-05-09 19:35
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr] Added RlsGrp `TG` to `LQ` - because they do releases in strange aspect ratios and mislabel their releases.
+
+**[Fixed]**
+- [Guide - Hardlinks] Added the usenet incomplete folder to the folder tree.
+
+# 2023-05-07 19:00
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr] Changed quality size mix/max - Set the max size to max to be consistent with Radarr, and this also helps to prevent issues with usenet files being always bigger, lowered the min size for several qualities.
+
+**[Fixed]**
+- None
+
+# 2023-04-23 23:05
+**[New]**
+- [Starr-FR] Added `VF2` CF
+- [Starr-FR] Added French Sonarr 2160p Recyclarr configs
+- [Starr-FR] Added French Radarr Recyclarr configs to the templates
+- [Radarr] Add 'Vinegar Syndrome' to Radarr movie version includes
+
+**[Updated]**
+- [Guide - SQP-1] Improved readability.
+- [Guide - Starr Naming scheme] Added extra placeholder for the original title.
+- [Guide - Starr] Removed old reference to `HQ-xxx` in the `How to setup Quality Profiles`.
+- [Guide - Starr] Updated DV info for the ATV.
+- [Guide-FR] Updated wording on how to score VF audio CFs depending on preferences
+- [Starr-FR] Updated groups CF to avoid double scoring
+- [Starr-FR] Updated the Recyclarr configs to follow new changes around VF audio
+- [Starr-FR] Added the `Vinegar Syndrome` CF to the Recyclarr configs
+- [Sonarr-Anime-FR] Added `Aoi-Project` to FR Anime Tier 2
+- [Sonarr-Anime-FR] Added `Nagutos` to FR Anime Tier 2
+
+**[Fixed]**
+- [Radarr] Fix double groups (e.g. KiNGS-BTW) matching both CFs - Changed group spec condition regex for most CFs that use it, to be more restrictive..
+- [Guide] Fixed several typo's and formatting.
+- [Guide] Fixed Radarr discord link.
+- [Guide] Fixed superscript consistent.
+- [Starr-FR] Updated Recyclarr configs to support new system for v5
+- [Starr-FR] Update Recyclarr configs with missing SDR CF in Unwanted section
+- [Sonarr-Anime-FR] Fixed Groupe Tier specification from `ReleaseGroupSpecification` to `ReleaseTitleSpecification` as anime naming is weird
+- [Sonarr-Anime-FR] Fixed `Natsumi` naming to `Natsumi-no-Sekai` in FR Anime FanSUB
+- [Recyclarr] Add `Pathe` streaming service to Radarr recyclarr configs
+- [Recyclarr] Add missing `x265 (HD)` CF from some Radarr recyclarr configs
+
 # 2023-04-20 21:35
 **[New]**
 - None

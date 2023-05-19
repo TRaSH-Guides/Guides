@@ -23,6 +23,7 @@ extra_css:
   - stylesheets/github-permalink-style.css
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.caret
   - pymdownx.critic

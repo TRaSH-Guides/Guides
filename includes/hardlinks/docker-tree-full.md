@@ -6,6 +6,7 @@ data
 │   ├── music
 │   └── tv
 ├── usenet
+│   ├── incomplete
 │   └── complete
 │        ├── books
 │        ├── movies

@@ -6,11 +6,11 @@
   "specifications": [
     {
       "name": "EVO",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bEVO(TGX)?\\b"
+        "value": "^(EVO(TGX)?)$"
       }
     },
     {

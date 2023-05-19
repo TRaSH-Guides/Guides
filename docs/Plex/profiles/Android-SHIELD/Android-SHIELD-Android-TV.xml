@@ -9,7 +9,7 @@
     <PhotoProfile container="jpeg" />
   </TranscodeTargets>
   <DirectPlayProfiles>
-    <VideoProfile container="mkv" codec="vp9,hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="eac3,ac3,aac,mp3,mp2,pcm,flac,alac,truehd,dca" subtitleFormat="srt,ass,smi,ssa,subrip,pgs"/>
+    <VideoProfile container="mkv" codec="vp9,hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="eac3,ac3,aac,mp3,mp2,pcm,flac,alac,truehd,dca" subtitleCodec="srt,ass,smi,ssa,subrip,pgs"/>
     <VideoProfile container="mp4" codec="hevc,h265,mpeg1video,mpeg2video,h264,mpeg4" audioCodec="eac3,ac3,aac,mp3,mp2,pcm,flac,alac,truehd,dca" subtitleCodec="srt,ass,smi,ssa,subrip,pgs"/>
     <VideoProfile container="asf" codec="wmv3,wmv3,vc1" audioCodec="wmav2,wmav2,wmapro,wmavoice,pcm" subtitleCodec="srt,ass,smi,ssa,subrip,pgs"/>
     <VideoProfile container="avi" codec="h264,msmpeg4v3,mpeg4,mjpeg" audioCodec="mp3,ac3,eac3,dca,pcm" subtitleCodec="srt,ass,smi,ssa,subrip,pgs"/>
