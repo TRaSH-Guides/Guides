@@ -56,6 +56,7 @@ radarr:
           # HQ Release Groups
           - 3a3ff47579026e76d6504ebea39390de  # Remux Tier 01
           - 9f98181fe5a3fbeb0cc29340da2a468a  # Remux Tier 02
+          - 8baaf0b3142bf4d94c42a724f034e27a  # Remux Tier 03
           - c20f169ef63c5f40c2def54abaf4438e  # WEB Tier 01
           - 403816d65392c79236dcb6dd591aeda4  # WEB Tier 02
           - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03
