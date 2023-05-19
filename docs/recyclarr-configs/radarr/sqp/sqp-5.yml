@@ -53,6 +53,7 @@ radarr:
           # HQ Release Groups
           - 3a3ff47579026e76d6504ebea39390de  # Remux Tier 01
           - 9f98181fe5a3fbeb0cc29340da2a468a  # Remux Tier 02
+          - 8baaf0b3142bf4d94c42a724f034e27a  # Remux Tier 03
           - 4d74ac4c4db0b64bff6ce0cffef99bf0  # UHD Bluray Tier 01
           - a58f517a70193f8e578056642178419d  # UHD Bluray Tier 02
           - e71939fae578037e7aed3ee219bbe7c1  # UHD Bluray Tier 03
