@@ -1,11 +1,11 @@
 {
-  "trash_id": "91dd233816c14c507782b87b86a3a2cf",
+  "trash_id": "81d1fbf600e2540cee87f3a23f9d3c1c",
   "trash_score": "90",
   "name": "Max",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "MAX",
+      "name": "Max",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
