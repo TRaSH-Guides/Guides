@@ -1,10 +1,10 @@
 {
   "trash_id": "26a4b44a837bf97b972628509912b4a5",
-  "name": "MAX",
+  "name": "Max",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "MAX",
+      "name": "Max",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
