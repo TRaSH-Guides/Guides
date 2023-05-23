@@ -7,6 +7,7 @@
     | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp) | {{ sonarr['cf']['dsnp']['trash_score'] }} | {{ sonarr['cf']['dsnp']['trash_id'] }} |
     | [{{ sonarr['cf']['hbo']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hbo)   | {{ sonarr['cf']['hbo']['trash_score'] }}  | {{ sonarr['cf']['hbo']['trash_id'] }}  |
     | [{{ sonarr['cf']['hmax']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hmax) | {{ sonarr['cf']['hmax']['trash_score'] }} | {{ sonarr['cf']['hmax']['trash_id'] }} |
+    | [{{ sonarr['cf']['max']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#max)   | {{ sonarr['cf']['max']['trash_score'] }}  | {{ sonarr['cf']['max']['trash_id'] }} |
     | [{{ sonarr['cf']['hulu']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hulu) | {{ sonarr['cf']['hulu']['trash_score'] }} | {{ sonarr['cf']['hulu']['trash_id'] }} |
     | [{{ sonarr['cf']['it']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#it)     | {{ sonarr['cf']['it']['trash_score'] }}   | {{ sonarr['cf']['it']['trash_id'] }}   |
     | [{{ sonarr['cf']['nf']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#nf)     | {{ sonarr['cf']['nf']['trash_score'] }}   | {{ sonarr['cf']['nf']['trash_id'] }}   |
