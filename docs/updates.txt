@@ -11,6 +11,7 @@
 - [Radarr] Fix false positive matches on vs in movie titles for the `Vinegar Syndrome` CF.
 - [Sonarr] Lowered Minimum Quality file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`.
 - [qBittorrent - Port forwarding] Change listening port to TCP for consistence with main Qbt guide.
+- [Starr] Changed case of CF `Max` to `MAX` to be consistent with the other streaming services. 
 
 # 2023-05-18 12:00
 **[New]**
