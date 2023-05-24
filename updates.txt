@@ -1,3 +1,18 @@
+# 2023-05-24 21:00
+**[New]**
+- [Starr] Add `Max` CF to match the renamed `HBO Max` streaming service.
+- [Starr] Add RlsGrp `Kitsune` to `WEB Tier 02`.
+
+**[Updated]**
+- [Starr] Add the `Max` CF to all the jsons and guides.
+- [Radarr] add RlsGrp `pahe` to `LQ`. 
+
+**[Fixed]**
+- [Radarr] Fix false positive matches on vs in movie titles for the `Vinegar Syndrome` CF.
+- [Sonarr] Lowered Minimum Quality file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`.
+- [qBittorrent - Port forwarding] Change listening port to TCP for consistence with main Qbt guide.
+- [Starr] Changed case of CF `Max` to `MAX` to be consistent with the other streaming services. 
+
 # 2023-05-18 12:00
 **[New]**
 - [Radarr] Added CF `Remux Tier 03`, This way we can fine tune the RlsGrps even more. please update your automation sync tools to accept the new CF.
