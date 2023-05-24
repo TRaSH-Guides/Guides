@@ -53,8 +53,9 @@ I also made 3 guides related to this one.
 |                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)      |
 |                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)      |
 |                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)           |
-|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)         |
-|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)        |
+|                       |                       | [WEB Tier 03](#web-tier-03)             | [Max](#max)           |
+|                       |                       | [WEB Scene](#web-scene)                 | [Hulu](#hulu)         |
+|                       |                       |                                         | [NLZiet](#nlz)        |
 |                       |                       |                                         | [Netflix](#nf)        |
 |                       |                       |                                         | [Paramount+](#pmtp)   |
 |                       |                       |                                         | [Peacock TV](#pcok)   |
@@ -1426,6 +1427,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Max
+
+<sub>Max</sub>
+
+??? question "Max - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/max.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

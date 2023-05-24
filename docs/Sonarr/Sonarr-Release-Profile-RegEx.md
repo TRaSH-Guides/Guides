@@ -165,6 +165,10 @@ Add this to your `Preferred (3)` with a score of [90]
 /\b(hmax|hbom|hbo[ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 Add this to your `Preferred (3)` with a score of [85]
 
 ```bash
