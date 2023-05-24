@@ -10,5 +10,5 @@
 1. Tools or cog wheel.
 1. Options (skip if you choose the cog wheel).
 1. Select the `Connection` Tab.
-1. Choose `TCP and uTP` if you get speed issues try one of the others.
+1. Change `TCP and uTP` to `TCP`, if you get speed issues try one of the others.
 1. Add here the port you've forwarded.

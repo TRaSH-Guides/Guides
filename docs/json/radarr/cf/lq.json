@@ -220,7 +220,7 @@
         "value": "^(GalaxyRG)$"
       }
     },
-      {
+    {
       "name": "GHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -443,6 +443,15 @@
       "required": false,
       "fields": {
         "value": "^(nSD)$"
+      }
+    },
+    {
+      "name": "Pahe",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pahe\\.(ph|in)\\b"
       }
     },
     {
