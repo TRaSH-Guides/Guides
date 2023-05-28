@@ -1,16 +1,16 @@
 {
-  "trash_id": "5153ec7413d9dae44e24275589b5e944",
-  "trash_score": "1850",
-  "name": "BHDStudio",
+  "trash_id": "e098247bc6652dd88c76644b275260ed",
+  "trash_score": "51",
+  "name": "FLUX",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "BHDStudio",
+      "name": "FLUX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(BHDStudio)$"
+        "value": "^(FLUX)$"
       }
     }
   ]
