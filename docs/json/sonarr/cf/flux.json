@@ -1,0 +1,17 @@
+{
+  "trash_id": "5d9fd1b1e06cd8a475462f40214b7df6",
+  "trash_score": "51",
+  "name": "FLUX",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "FLUX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(FLUX)$"
+      }
+    }
+  ]
+}
