@@ -14,10 +14,12 @@
 
     **When no (U)HD BHDStudio or (U)HD WEBDL exist (or limited sources) it will grab the following:**
 
-    - Get other HD Bluray Encodes (less or not streaming optimized)
-    - Prefer HQ Encodes (Bluray-720/1080)
+    - Get other HD Bluray Encodes (less or not streaming optimized).
+    - Prefer HQ Encodes (Bluray-720/1080).
     - When the IMAX-E is released it will upgrade to the IMAX-E.
-    - When there is no BHDStudio release or WEBDL it will get a HD Bluray Encodes (less or not streaming optimized)
+    - When there is no BHDStudio release or WEBDL it will get a HD Bluray Encodes (less or not streaming optimized).
+    - Max compatibility, prefer BHDStudio.
+    - Prefer Streaming Services Audio Formats (Atmos) if no BHDStudio is available.
 
     !!! info "BHDStudio"
         BHDStudio does HQ 1080p/2160p Encodes with the following features

@@ -1,4 +1,4 @@
-#### Custom Formats and scores
+#### Custom Formats and scores (SQP-1 (2160p))
 
 ??? abstract "Audio - [CLICK TO EXPAND]"
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible<br>The reason why `DTS` has a score of `0` is to make sure you don't limit your self to much."
@@ -40,7 +40,7 @@
 
 ??? abstract "Movie Versions - [CLICK TO EXPAND]"
 
-    !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release :warning:"
+    !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the 1080p BHDStudio release :warning:"
 
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
