@@ -1,3 +1,14 @@
+# 2023-05-29 12:25
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Starr] The `DV HDR10` CF should match `DV HDR10+` to avoid confusion. Change the regex for matching `DV HDR10` in the affected CFs to also match `DV HDR10+`.
+
+
 # 2023-05-24 21:00
 **[New]**
 - [Starr] Add `Max` CF to match the renamed `HBO Max` streaming service.
