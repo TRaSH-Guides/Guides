@@ -20,5 +20,3 @@ and merge the following 2160p ones in a new group
 and name it what ever you want I used: `Bluray|WEB-2160p`
 
 ![!Merge the following Qualities together](/SQP/images/1-4k-merge-qualities.png)
-
-!!! warning "Make sure you put the merged `Bluray|WEB-2160p` above the merged `Bluray|WEB-1080p`"
