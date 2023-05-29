@@ -41,6 +41,15 @@
       }
     },
     {
+      "name": "Kitsune",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Kitsune)$"
+      }
+    },
+    {
       "name": "MiU",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

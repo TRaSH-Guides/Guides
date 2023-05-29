@@ -53,8 +53,9 @@ I also made 3 guides related to this one.
 |                       |                       | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)      |
 |                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)      |
 |                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)           |
-|                       |                       | [WEB Tier 03](#web-tier-03)             | [Hulu](#hulu)         |
-|                       |                       | [WEB Scene](#web-scene)                 | [NLZiet](#nlz)        |
+|                       |                       | [WEB Tier 03](#web-tier-03)             | [Max](#max)           |
+|                       |                       | [WEB Scene](#web-scene)                 | [Hulu](#hulu)         |
+|                       |                       |                                         | [NLZiet](#nlz)        |
 |                       |                       |                                         | [Netflix](#nf)        |
 |                       |                       |                                         | [Paramount+](#pmtp)   |
 |                       |                       |                                         | [Peacock TV](#pcok)   |
@@ -86,6 +87,7 @@ I also made 3 guides related to this one.
 |                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             |                                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                               |
 |                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                               |
+|                                | [VP9](#vp9)                         |                               |                                               |
 
 ------
 
@@ -98,7 +100,7 @@ I also made 3 guides related to this one.
 | [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)                     |                                       |
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [B-Global](#b-global)         |                                       |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [Bilibili](#bilibili)         |                                       |
-|                                                                             |                                                                       | [Crunchyroll](#cr)            |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [Crunchyroll](#cr)            |                                       |
 |                                                                             |                                                                       | [Funimation](#funi)           |                                       |
 |                                                                             |                                                                       | [HIDIVE](#hidive)             |                                       |
 |                                                                             |                                                                       | [VRV](#vrv)                   |                                       |
@@ -1113,6 +1115,25 @@ I also made 3 guides related to this one.
 
 ------
 
+### VP9
+
+??? question "VP9 - [CLICK TO EXPAND]"
+
+    - This is a new codec and you need modern devices that support it.
+    - We also had reports of playback/transcoding issues.
+    - No main group is actually using it (yet).
+    - It's better to ignore this new codec to prevent compatibility issues.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vp9.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### SDR
 
 ??? question "SDR - [CLICK TO EXPAND]"
@@ -1406,6 +1427,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Max
+
+<sub>Max</sub>
+
+??? question "Max - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/max.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

@@ -1,0 +1,35 @@
+{
+  "trash_id": "6a061313d22e51e0f25b7cd4dc065233",
+  "trash_regex": "https://regex101.com/r/fa649l/1",
+  "name": "MAX",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Max",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

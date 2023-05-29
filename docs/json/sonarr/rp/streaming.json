@@ -22,7 +22,8 @@
         "/\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(nf|netflix)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(qibi|quibi)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     },
     {

@@ -1,3 +1,4 @@
+# Updated: 2023-05-25
 radarr:
   radarr-sqp-uhd:  # A custom name used to identify this particular instance.
     base_url: [radarr_url_goes_here]
@@ -53,6 +54,7 @@ radarr:
           # HQ Release Groups
           - 3a3ff47579026e76d6504ebea39390de  # Remux Tier 01
           - 9f98181fe5a3fbeb0cc29340da2a468a  # Remux Tier 02
+          - 8baaf0b3142bf4d94c42a724f034e27a  # Remux Tier 03
           - c20f169ef63c5f40c2def54abaf4438e  # WEB Tier 01
           - 403816d65392c79236dcb6dd591aeda4  # WEB Tier 02
           - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03
@@ -112,6 +114,7 @@ radarr:
           - 509e5f41146e278f9eab1ddaceb34515  # HBO
           - 5763d1b0ce84aff3b21038eea8e9b8ad  # HMAX
           - 526d445d4c16214309f0fd2b3be18a89  # Hulu
+          - 6a061313d22e51e0f25b7cd4dc065233  # MAX
           - 170b1d363bd8516fbf3a3eb05d4faff6  # NF
           - bf7e73dd1d85b12cc527dc619761c840  # Pathe
           - c9fd353f8f5f1baf56dc601c4cb29920  # PCOK

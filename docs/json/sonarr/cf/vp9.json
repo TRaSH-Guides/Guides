@@ -1,0 +1,16 @@
+{
+  "trash_id": "90501962793d580d011511155c97e4e5",
+  "name": "VP9",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "VP9",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+      "value": "\\bVP9\\b"
+      }
+    }
+  ]
+}

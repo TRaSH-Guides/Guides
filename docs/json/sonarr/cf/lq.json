@@ -122,6 +122,15 @@
       }
     },
     {
+      "name": "TG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TG)$"
+      }
+    },
+    {
       "name": "VIDEOHOLE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
