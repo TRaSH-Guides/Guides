@@ -21,3 +21,4 @@
 
     - These reason why these Custom Formats have a score of `0` is because they are mainly used for the naming scheme and other variables should decide for movies if a certain release if preferred.
     - `MA` is the only one with a score because of their higher bitrate and quality compared to other streaming services.
+    - `BCore` are very rare and they have the highest bitrate at the moment.
