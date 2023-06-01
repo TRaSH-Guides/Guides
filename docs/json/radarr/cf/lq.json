@@ -649,7 +649,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(YTS)$"
+        "value": "^(YTS.(MX|LT|AG)?)$"
       }
     },
     {
