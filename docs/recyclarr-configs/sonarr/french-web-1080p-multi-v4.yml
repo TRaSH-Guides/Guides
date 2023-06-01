@@ -102,7 +102,7 @@ sonarr:
           - name: FR-MULTi-WEB-1080p
             # score: 101
       - trash_ids:
-          - b6816a0e1d4b64bf3550ad3b74b009b6  # VF2
+          - 34789ec3caa819f087e23bbf9999daf7  # VF2
         quality_profiles:
           - name: FR-MULTi-WEB-1080p
             # score: 101
