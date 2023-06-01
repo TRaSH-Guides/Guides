@@ -1,3 +1,13 @@
+# 2023-06-01 22:25
+**[New]**
+- None
+
+**[Updated]**
+- None
+
+**[Fixed]**
+- [Radarr] CF `LQ` Fix `YTS` Condition.
+
 # 2023-05-29 12:25
 **[New]**
 - None
