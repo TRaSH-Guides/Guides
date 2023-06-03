@@ -1,6 +1,6 @@
 {
   "trash_id": "3a4127d8aa781b44120d907f2cd62627",
-  "trash_score": "0",
+  "trash_score": "100",
   "name": "Hybrid",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -14,21 +14,21 @@
       }
     },
     {
-      "name": "WEBDL w/ DV HDR10(+) or TrueHD",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(?=.*\\b(web[ ._-]?(dl|rip))\\b)(((?=.*\\b(DV|DoVi)\\b)((?=.*\\b(HDR10(\\+|P(lus))?)\\b)|(?=.*\\b(HDR(10)?)\\b)))|(?=.*\\b(True[ .-]?HD)\\b))"
-      }
-    },
-    {
       "name": "Not Hybrid Release Group",
       "implementation": "ReleaseGroupSpecification",
       "negate": true,
       "required": true,
       "fields": {
         "value": "\\b(HYBRID)\\b"
+      }
+    },
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
       }
     }
   ]
