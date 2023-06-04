@@ -51,6 +51,7 @@ sonarr:
           # ===== HQ Source Groups =====
           - db13a377f7afb29975ea39470434d2ef  # FR Anime Tier 01
           - 4e6134a384dbc0ef166234cc0e45d26d  # FR Anime Tier 02
+          - db34d4357937fbfe89b63ba095f22155  # FR Anime Tier 03
           - 2f3422339d185eb227a324644a2fbfca  # FR Scene Groups
           # Les tiers suivant sont les tiers originaux du guide (groupes SeaDex)
           # vous pouvez les activer si vous souhaitez aussi récupérer les releases en SeaDex
