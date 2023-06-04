@@ -81,10 +81,10 @@ I also made 3 guides related to this one.
 | [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
 | [x264](#x264)                  | [Retags](#retags)                   | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
 | [x265](#x265)                  | [Scene](#scene)                     | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-|                                | [Season Packs](#season-pack)        | [VFQ](#vfq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
-|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             |                                               |
+|                                | [Season Packs](#season-pack)        | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-02)         |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                               |
 |                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                               |
 |                                | [VP9](#vp9)                         |                               |                                               |
@@ -2562,13 +2562,30 @@ I also made 3 guides related to this one.
     - WIP
     - Groups that are known to be still active and doing only Anime but with few releases per year.
     - Groups that are known to be still active and doing Anime and other type of release.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FR Anime Tier 03
+
+??? question "FR Anime Tier 03 - [CLICK TO EXPAND]"
+
+    - WIP
+    - Groups with no or little activity that have at some point made an interesting release. Which is either the only one available (in VOSTFR/MULTi) or still top of its category.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups doing only anime, that have retired (or no longer exist) and may not have the best quality by todays standards.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

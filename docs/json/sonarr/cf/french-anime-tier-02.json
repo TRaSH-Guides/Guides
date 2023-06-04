@@ -1,6 +1,6 @@
 {
   "trash_id": "4e6134a384dbc0ef166234cc0e45d26d",
-  "trash_score": "1550",
+  "trash_score": "1600",
   "name": "FR Anime Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -14,30 +14,30 @@
       }
     },
     {
-      "name": "BLV",
+      "name": "Elecman",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BLV)\\b"
+        "value": "\\b(Elecman)\\b"
       }
     },
     {
-      "name": "D3T3R10R1TY",
+      "name": "FUJiSAN",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(D3T3R10R1TY)\\b"
+        "value": "\\b(FUJiSAN)\\b"
       }
     },
     {
-      "name": "HANAMi",
+      "name": "GundamGuy",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(HANAMi)\\b"
+        "value": "\\b(GundamGuy)\\b"
       }
     },
     {
@@ -50,24 +50,6 @@
       }
     },
     {
-      "name": "KHAYA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KHAYA)\\b"
-      }
-    },
-    {
-      "name": "Monkey-D.Lulu",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
-      }
-    },
-    {
       "name": "Nagutos",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -77,21 +59,12 @@
       }
     },
     {
-      "name": "RONiN",
+      "name": "OECUF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(RONiN)\\b"
-      }
-    },
-    {
-      "name": "TTN",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TTN)\\b"
+        "value": "\\b(OECUF)\\b"
       }
     },
     {
