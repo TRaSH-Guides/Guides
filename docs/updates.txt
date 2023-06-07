@@ -1,3 +1,21 @@
+# 2023-06-07 19:10
+**[New]**
+- [Star-FR] Updated French Anime Tiers CFs to better score groups
+-- Added a French Anime Tier 03
+-- Moved existing groups to fitting tier
+-- Added `GundamGuy` and `OECUF` to Tier 02
+-- Added `Galactic`, `KushEnthusiast` and `TheFantastics` to Tier 03
+-- Deleted `KFR` and `Otaku-Attitude` from FanSub tier as their releases are no more available
+-- Fixed `Team-Arcedo` not recognising `Arcedo`
+**[Updated]**
+- [Starr-FR] Added a warning concerning the scoring of the `FR Scene Groups` CF
+- [Star-FR] Updated Recyclarr configs with `MAX` and `Remux Tier 03` CFs
+- [Sonarr-FR] Added `FR Anime Tier 03` CF to recyclarr configs
+**[Fixes]**
+- [Starr-FR] Fixed `Multi-Audio` CF to not match `Multi-Subs`
+- [Sonar-FR] Fixed `Canal+` CF thanks to comment from #1227
+- [Sonar-FR] Fixed Recyclarr configs with wrong `VF2` ID
+
 # 2023-06-01 22:25
 **[New]**
 - None
