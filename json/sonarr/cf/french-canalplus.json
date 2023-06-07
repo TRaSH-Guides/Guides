@@ -1,5 +1,6 @@
 {
   "trash_id": "f27d46a831e6b16fa3fee2c4e5d10984",
+  "trash_regex": "https://regex101.com/r/UYB7E7/1",
   "name": "CANAL+",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -27,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(C(ANAL)?[ .]?(\\+|Plus))\\b"
+        "value": "\\b(C(?:anal)?[ .-]?(Plus|\\+))[ .]"
       }
     },
     {

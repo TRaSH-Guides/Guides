@@ -1,88 +1,115 @@
 {
-  "trash_id": "db13a377f7afb29975ea39470434d2ef",
-  "trash_score": "1650",
-  "name": "FR Anime Tier 01",
+  "trash_id": "db34d4357937fbfe89b63ba095f22155",
+  "trash_score": "1550",
+  "name": "FR Anime Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Darki",
+      "name": "BLV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Darki)\\b"
+        "value": "\\b(BLV)\\b"
       }
     },
     {
-      "name": "Delivroozzi",
+      "name": "D3T3R10R1TY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Delivroozzi)\\b"
+        "value": "\\b(D3T3R10R1TY)\\b"
       }
     },
     {
-      "name": "Fuceo",
+      "name": "Galactic",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Fuceo)\\b"
+        "value": "\\b(Galactic)\\b"
       }
     },
     {
-      "name": "Good Job! Alexis",
+      "name": "HANAMi",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Good[ .-]?(Job|Rip|Sub)!?[ .-]?Alexis)\\b"
+        "value": "\\b(HANAMi)\\b"
       }
     },
     {
-      "name": "Punisher694",
+      "name": "KHAYA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Punisher694)\\b"
+        "value": "\\b(KHAYA)\\b"
       }
     },
     {
-      "name": "SR-71",
+      "name": "KushEnthusiast",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SR-71)\\b"
+        "value": "\\b(KushEnthusiast)\\b"
       }
     },
     {
-      "name": "T3KASHi",
+      "name": "matheousse",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(T3KASHi)\\b"
+        "value": "\\b(matheousse)\\b"
       }
     },
     {
-      "name": "TANOSHii",
+      "name": "Monkey-D.Lulu",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TANOSHii)\\b"
+        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
       }
     },
     {
-      "name": "Tsundere-Raws",
+      "name": "NeoSG",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Tsundere[ .-]?Raws)\\b"
+        "value": "\\b(NeoSG)\\b"
+      }
+    },
+    {
+      "name": "RONiN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RONiN)\\b"
+      }
+    },
+    {
+      "name": "TheFantastics",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TheFantastics)\\b"
+      }
+    },
+    {
+      "name": "TTN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TTN)\\b"
       }
     }
   ]
