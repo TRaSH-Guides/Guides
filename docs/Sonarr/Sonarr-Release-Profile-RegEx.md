@@ -466,6 +466,16 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
 ------
 
+#### Optional - Dislike Extras
+
+Add this to your `Preferred (3)` with a score of [-10000]
+
+```bash
+/(?<=\bS\d+\b).*\b(Extras|Bonus)\b/i
+```
+
+------
+
 #### Optional - Prefer Season Packs
 
 ??? question "Explanation - [CLICK TO EXPAND]"
