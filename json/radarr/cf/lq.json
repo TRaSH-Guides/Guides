@@ -113,6 +113,15 @@
       }
     },
     {
+      "name": "CiNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CiNE)$"
+      }
+    },
+    {
       "name": "CREATiVE24",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -560,6 +569,15 @@
       "required": false,
       "fields": {
         "value": "^(Scene)$"
+      }
+    },
+    {
+      "name": "SLOT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SLOT)$"
       }
     },
     {
