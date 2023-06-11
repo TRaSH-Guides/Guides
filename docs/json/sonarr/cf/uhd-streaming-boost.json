@@ -1,0 +1,62 @@
+{
+  "trash_id": "43b3cf48cb385cd3eac608ee6bca7f09",
+  "trash_score": "20",
+  "name": "UHD Streaming Boost",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Peacock TV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(pcok|Peacock TV)\\b"
+      }
+    },
+    {
+      "name": "Paramount+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(pmtp|Paramount\\+)\\b"
+      }
+    },
+    {
+      "name": "Hulu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(hulu)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-??? abstract "Streaming Services - [CLICK TO EXPAND]"
+??? abstract "UHD Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                                                                   | Score                                                    | Trash ID                                              |
     | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------- |
     | [{{ sonarr['cf']['atvp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atvp)                                         | {{ sonarr['cf']['atvp']['trash_score'] }}                | {{ sonarr['cf']['atvp']['trash_id'] }}                |
@@ -20,3 +20,10 @@
     | [{{ sonarr['cf']['red']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#red)                                           | {{ sonarr['cf']['red']['trash_score'] }}                 | {{ sonarr['cf']['red']['trash_id'] }}                 |
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)                                           | {{ sonarr['cf']['sho']['trash_score'] }}                 | {{ sonarr['cf']['sho']['trash_id'] }}                 |
     | [{{ sonarr['cf']['vdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vdl)                                           | {{ sonarr['cf']['vdl']['trash_score'] }}                 | {{ sonarr['cf']['vdl']['trash_id'] }}                 |
+    | :warning: [{{ sonarr['cf']['uhd-streaming-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-boost) | {{ sonarr['cf']['uhd-streaming-boost']['trash_score'] }} | {{ sonarr['cf']['uhd-streaming-boost']['trash_id'] }} |
+    | :warning: [{{ sonarr['cf']['uhd-streaming-cut']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-cut)     | {{ sonarr['cf']['uhd-streaming-cut']['trash_score'] }}   | {{ sonarr['cf']['uhd-streaming-cut']['trash_id'] }}   |
+
+    !!! warning "UHD Streaming Boost and UHD Streaming Cut Custom Formats"
+    Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.
+
+    These two custom formats must be included in your profile for UHD releases to be scored correctly.

@@ -129,7 +129,7 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
