@@ -1,3 +1,29 @@
+# 2023-06-11 23:15
+**[New]**
+- [Sonarr] Add `Extras` CF - To prevent Extra / Bonus packs being eligible for season grabs.
+- [Sonarr] UHD Streaming Boost and UHD Streaming Cut CFs to boost and cut streaming service scores at 4K.
+
+**[Updated]**
+- [Radarr] Add `OFT` to the `LQ` CF, because they are a continuation group of `nikt0`.
+- [Starr] Add `EDITH` to `Scene`CF`- To exclude the scene group EDITH since a few trackers are renaming their releases and thus making it eligible for grabbing.
+- [Radarr] Add `CiNEPHiLES` to `Remux Tier 03`.
+- [Radarr] Add `CiNE` & `SLOT` to `LQ`.
+- [Guide] Add description for `DTS-HD HRA`.
+- [Sonarr] Updated streaming service scores.
+- [Starr] Repack CFs re-scored for Radarr/Sonarr to allow compatibility with new streaming service CF scores.
+- [Starr] Amended `Hybrid` CF to apply to Remuxes only.
+- [Sonarr] add `Miu` and `PHOENiX` to `WEB Tier 02`.
+ 
+**[Fixed]**
+- [Starr] Match `PQ` in `x265 (no HDR/DV)`.
+
+# 2023-05-29 12:25
+**[New]**
+- None
+
+**[Updated]**
+- None
+
 # 2023-06-07 19:10
 **[New]**
 - [Star-FR] Updated French Anime Tiers CFs to better score groups

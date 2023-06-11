@@ -1,5 +1,5 @@
 # This config file is for use with Sonarr V4 only
-# Updated: 2023-05-25
+# Updated: 2023-06-03
 sonarr:
   sonarr:  # A custom name used to identify this particular instance.
     base_url: Put your Sonarr URL here
@@ -58,6 +58,8 @@ sonarr:
           - 1efe8da11bfd74fbbcd4d8117ddb9213  # STAN
           - 5d2317d99af813b6529c7ebf01c83533  # VDL
           - 77a7b25585c18af08f60b1547bb9b4fb  # CC
+          - 43b3cf48cb385cd3eac608ee6bca7f09  # UHD Streaming Boost
+          - d2d299244a92b8a52d4921ce3897a256  # UHD Streaming Cut
           # HQ Source Groups
           - e6258996055b9fbab7e9cb2f75819294  # WEB Tier 01
           - 58790d4e2fdcd9733aa7ae68ba2bb503  # WEB Tier 02

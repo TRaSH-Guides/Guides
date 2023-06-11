@@ -1767,6 +1767,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#uhd-streaming-boost" class="md-nav__link">
+    UHD Streaming Boost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uhd-streaming-cut" class="md-nav__link">
+    UHD Streaming Cut
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4344,6 +4358,20 @@
           <li class="md-nav__item">
   <a href="#cc" class="md-nav__link">
     CC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uhd-streaming-boost" class="md-nav__link">
+    UHD Streaming Boost
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uhd-streaming-cut" class="md-nav__link">
+    UHD Streaming Cut
   </a>
   
 </li>
@@ -7800,21 +7828,21 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEBDL w/ DV HDR10(+) or TrueHD&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(?=.*\\b(web[ ._-]?(dl|rip))\\b)(((?=.*\\b(DV|DoVi)\\b)((?=.*\\b(HDR10(\\+|P(lus))?)\\b)|(?=.*\\b(HDR(10)?)\\b)))|(?=.*\\b(True[ .-]?HD)\\b))&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Not Hybrid Release Group&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseGroupSpecification&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(HYBRID)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Remux&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QualityModifierSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -8182,7 +8210,7 @@ It's all really dependent on specific situations for different people</p>
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ec8fa7296b64e8cd390a1600981f3923&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/S91wR8/2&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Repack/Proper&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -8224,7 +8252,7 @@ It's all really dependent on specific situations for different people</p>
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eb3d5cc0a2be0db205fb823640db6a3c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Repack v2&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -8257,7 +8285,7 @@ It's all really dependent on specific situations for different people</p>
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;44e7c4de10ae50265753082e5dc76047&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;13&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Repack v3&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10462,7 +10490,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;d660701077794679fd59e8bdf4ce3a29&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;100&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;70&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AMZN&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10556,7 +10584,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;36b72f59f4ea20aad9316f475f2d9fbb&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DCU&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10603,7 +10631,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;89358767a60cc28783cdc3d0be9388a4&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;90&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;100&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DSNP&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10650,7 +10678,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a880d6abc21e7c16884f3ae393f84179&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;90&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HMAX&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10697,7 +10725,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7a235133c87f7da4c8cccceca7e3c7a6&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HBO&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10792,7 +10820,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f6cce30f1733d5c8194222a7507909bb&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;85&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HULU&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10839,7 +10867,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b2b980877494b560443631eb1f473867&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NLZ&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10886,7 +10914,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;d34870697c9db575f17700212167be23&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;90&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;60&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NF&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10933,7 +10961,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c67a75ae4a1715f2bb4d492755ba4195&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;60&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PMTP&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -10980,7 +11008,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1656adc6d7bb2c8cca6acfb6592db421&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;85&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;60&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PCOK&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11027,7 +11055,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3ac5d84fce98bab1b531393e9c82f467&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;90&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;80&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QIBI&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11074,7 +11102,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ae58039e1319178e6be73caab5c42166&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;95&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/kjPPbG/1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SHO&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -11122,7 +11150,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5d2317d99af813b6529c7ebf01c83533&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VDL&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11169,7 +11197,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1efe8da11bfd74fbbcd4d8117ddb9213&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;60&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/IMS7Or/1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STAN&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -11217,7 +11245,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c30d2958827d1867c73318a5a2957eb1&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/GfOSFe/1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RED&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -11265,7 +11293,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0ac24a2a68a9700bcb7eeca8e5cd644c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;iT&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11451,7 +11479,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <summary>JSON - [CLICK TO EXPAND]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;77a7b25585c18af08f60b1547bb9b4fb&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;75&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;50&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/A3TRwE/1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CC&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
@@ -11481,6 +11509,152 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="uhd-streaming-boost">UHD Streaming Boost<a class="headerlink" href="#uhd-streaming-boost" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD Streaming Boost - [CLICK TO EXPAND]</summary>
+<p>Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.</p>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;43b3cf48cb385cd3eac608ee6bca7f09&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UHD Streaming Boost&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Peacock TV&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(pcok|Peacock TV)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Paramount+&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(pmtp|Paramount\\+)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hulu&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(hulu)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEBDL&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEBRIP&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2160p&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ResolutionSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2160</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="uhd-streaming-cut">UHD Streaming Cut<a class="headerlink" href="#uhd-streaming-cut" title="Permanent link"></a></h3>
+<details class="question">
+<summary>UHD Streaming Cut - [CLICK TO EXPAND]</summary>
+<p>Some streaming services have UHD releases that are generally worse than their HD counterparts. The UHD Streaming Cut custom format decreases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.</p>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;d2d299244a92b8a52d4921ce3897a256&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-20&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UHD Streaming Cut&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Amazon&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(amzn|amazon)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HBO Max&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Stan&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEBDL&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WEBRIP&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2160p&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ResolutionSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2160</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -18238,7 +18412,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2023 20:34:23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2023 20:44:19</span>
       
     
   </small>
