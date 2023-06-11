@@ -241,9 +241,14 @@ I also made 3 guides related to this one.
 ### DTS-HD HRA
 
 ??? question "DTS-HD HRA - [CLICK TO EXPAND]"
-    [From Wikipedia, the free encyclopedia](https://de.wikipedia.org/wiki/Digital_Theater_Systems_High_Definition){:target="_blank" rel="noopener noreferrer"}
+    [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="_blank" rel="noopener noreferrer"}
+    | Codec      | Page   | Paragraph |
+    |------------|--------|-----------|
+    | DTS-HD MA  | Page 6 | 5.1.1     |
+    | DTS-HD HRA | Page 7 | 5.1.2     |
+
     DTS-HD HRA is the lossy version of DTS-HD MA.
-    
+
     | Codec         | DTS-HRA           | DTS-MA            |
     |---------------|-------------------|-------------------|
     | Lossy/Lossles | Lossy             | Lossless          |
