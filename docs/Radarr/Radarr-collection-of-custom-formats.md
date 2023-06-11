@@ -241,7 +241,18 @@ I also made 3 guides related to this one.
 ### DTS-HD HRA
 
 ??? question "DTS-HD HRA - [CLICK TO EXPAND]"
-    Description placeholder
+    [From Wikipedia, the free encyclopedia](https://de.wikipedia.org/wiki/Digital_Theater_Systems_High_Definition){:target="_blank" rel="noopener noreferrer"}
+    DTS-HD HRA is the lossy version of DTS-HD MA.
+    
+    | Codec         | DTS-HRA           | DTS-MA            |
+    |---------------|-------------------|-------------------|
+    | Lossy/Lossles | Lossy             | Lossless          |
+    | Data rate     | 1.5 - 6.0 Mbit/s  | VBR - 24.5 Mbit/s |
+    | Channels      | Up to 7.1 ch      | Up to 7.1 ch      |
+    | Sampling Freq.| 96 kHz            | 192 kHz           |
+    | Resolution    | -                 | Up to 24-bit      |
+    
+    Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
