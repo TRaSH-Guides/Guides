@@ -212,6 +212,15 @@
       }
     },
     {
+      "name": "MiU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MiU)$"
+      }
+    },
+    {
       "name": "MZABI",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -245,6 +254,15 @@
       "required": false,
       "fields": {
         "value": "^(orbitron)$"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PHOENiX)$"
       }
     },
     {
