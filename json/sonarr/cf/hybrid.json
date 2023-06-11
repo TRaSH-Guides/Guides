@@ -24,11 +24,11 @@
     },
     {
       "name": "Remux",
-      "implementation": "QualityModifierSpecification",
+      "implementation": "SourceSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": 5
+        "value": 7
       }
     }
   ]
