@@ -23,15 +23,6 @@
       }
     },
     {
-      "name": "KFR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KFR)\\b"
-      }
-    },
-    {
       "name": "Natsumi-no-Sekai",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -59,15 +50,6 @@
       }
     },
     {
-      "name": "Otaku-Attitude",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Otaku[ .-]?Attitude)\\b"
-      }
-    },
-    {
       "name": "Owlolf",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -91,7 +73,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Team[ .-]?Arcedo)\\b"
+        "value": "\\b((Team[ .-])?Arcedo)\\b"
       }
     },
     {

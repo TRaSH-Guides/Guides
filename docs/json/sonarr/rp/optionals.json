@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT).*/i"
+    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH).*/i"
   }, {
     "name": "Ignore Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",
@@ -66,6 +66,10 @@
       "name": "Dislike release containing: 1-",
       "trash_id": "236a3626a07cacf5692c73cc947bc280",
       "term": "/(?<!\\d\\.)(1-.+)$/i"
+    }, {
+      "name": "Dislike Extras",
+      "trash_id": "c0a1422532bfabfa6b15bbf0eb6bcb03",
+      "term": "/(?<=\\bS\\d+\\b).*\\b(Extras|Bonus)\\b/i"
     }]
   }]
 }
