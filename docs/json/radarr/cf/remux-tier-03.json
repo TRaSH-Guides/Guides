@@ -14,15 +14,6 @@
       }
     },
     {
-      "name": "CiNEPHiLES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CiNEPHiLES)$"
-      }
-    },
-    {
       "name": "decibeL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
