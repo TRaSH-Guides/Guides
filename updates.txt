@@ -1,3 +1,25 @@
+# 2023-06-14 20:30
+**[Fixed]**
+- [Radarr] Removed: RlsGrp `CiNEPHiLES` from Remux Tier to prevent download loops.
+
+**[Info]**
+This RlsGrp has a weird file naming structure what results in to download loops.
+
+At the moment Radarr only probes the first audio track, and it doesn't read the nfo's.
+This would require scraping the tracker/indexer, which is undesired and mostly frowned upon and at very least simply forbidden.
+So in the current state it needs to work with the info provided in the filename and/or release name and what's used as first audio track.
+
+So this is something that needs to be fixed on the RlsGrp side and they have 2 options how to solve it.
+- Fix their bad/wrong naming choice.
+- Change what they select as default/first track.
+
+I've contacted them about this issue and they will not be changing their file naming structures any-further.
+
+Because of their decision the following will be decided:
+They get removed from the Remux Tiers so they won't be chosen to prevent the loops as much as possible.
+
+If we will still get reports of download loops, even if they aren't in the Remux Tiers, we will do the same what we do with the other RlsGrps that can't name their files correctly or choose the not corresponding audio format to be the first and as default . (Meaning: that the RlsGrp will be placed in the `LQ` Custom Format, This to prevent download loops.)
+
 # 2023-06-11 23:15
 **[New]**
 - [Sonarr] Add `Extras` CF - To prevent Extra / Bonus packs being eligible for season grabs.
