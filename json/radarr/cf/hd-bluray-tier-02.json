@@ -41,6 +41,15 @@
       }
     },
     {
+      "name": "HiDt",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiDt)$"
+      }
+    },
+    {
       "name": "HiSD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
