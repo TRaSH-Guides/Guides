@@ -1,6 +1,6 @@
 ### Breakdown of the Folder Structure
 
-#### Torrent clients
+#### Torrent Clients
 
 qBittorrent, Deluge, ruTorrent
 
@@ -8,7 +8,7 @@ The reason we use `/data/torrents` for the torrent client is because it only nee
 
 {! include-markdown "docker-tree-torrents.md" !}
 
-#### Usenet clients
+#### Usenet Clients
 
 NZBGet or SABnzbd
 
@@ -28,7 +28,7 @@ Sonarr, Radarr, Readarr and Lidarr get access to everything using `/data` becaus
 
 Plex, Emby, JellyFin and Bazarr
 
-Plex, Emby, JellyFin and Bazarr only need access to your media library using `/data/media`, which can have any number of sub-folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.
+Plex, Emby, JellyFin and Bazarr only need access to your media library using `/data/media`, which can have any number of subfolders like Movies, Kids Movies, TV, Documentary TV, or Music.
 
 {! include-markdown "docker-tree-media.md" !}
 
