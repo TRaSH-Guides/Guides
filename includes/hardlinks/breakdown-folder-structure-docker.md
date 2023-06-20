@@ -34,7 +34,7 @@ The reason we use `/data/usenet` for the usenet client is because it only needs 
 
 `Host Path:` => `/<path_to_data>/data/usenet/`
 
-Docker-compose volumes example:
+Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
@@ -56,7 +56,7 @@ Sonarr, Radarr, Readarr and Lidarr get access to everything in `/data` because t
 
 `Host Path:` => `/<path_to_data>/data/`
 
-Docker-compose volumes example:
+Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
@@ -78,7 +78,7 @@ Plex, Emby, JellyFin and Bazarr only need access to your media library using `/d
 
 `Host Path:` => `/<path_to_data>/data/media/`
 
-Docker-compose volumes example:
+Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]

@@ -4,7 +4,7 @@
 
     It doesn't really matter which path you use for your media and appdata.
 
-    The only thing you should avoid is `/home` (because folders in `/home` are expected to have some restrictive permissions).
+    The only thing you should avoid is `/home` (because folders in `/home` have restrictive permissions by default).
 
     As such, using `/home` could end up creating a permissions mess, so it's better to avoid this situation.
 
