@@ -90,4 +90,4 @@ Docker-compose volumes example:
 
 ------
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside the applications.**
+**Don't forget to look at the [Examples](/Hardlinks/Examples/) for more information on how to setup the paths inside the applications.**
