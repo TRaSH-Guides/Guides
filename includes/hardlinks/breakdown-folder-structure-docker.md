@@ -14,13 +14,13 @@ The reason we use `/data/torrents` for the torrent client is because it only nee
 
 Docker-compose volumes example:
 
-``````
+```none
 [...]
     volumes:
 	  [...]
       - /<path_to_data>/data/torrents:/data/torrents
 [...]
-``````
+```
 
 #### Usenet clients
 
@@ -36,13 +36,13 @@ The reason we use `/data/usenet` for the usenet client is because it only needs 
 
 Docker-compose volumes example:
 
-``````
+```none
 [...]
     volumes:
 	  [...]
       - /<path_to_data>/data/usenet:/data/usenet
 [...]
-``````
+```
 
 #### The Starr Apps
 
@@ -58,13 +58,13 @@ Sonarr, Radarr, Readarr and Lidarr get access to everything in `/data` because t
 
 Docker-compose volumes example:
 
-``````
+```none
 [...]
     volumes:
 	  [...]
       - /<path_to_data>/data:/data
 [...]
-``````
+```
 
 #### Media Server
 
@@ -80,13 +80,13 @@ Plex, Emby, JellyFin and Bazarr only need access to your media library using `/d
 
 Docker-compose volumes example:
 
-``````
+```none
 [...]
     volumes:
 	  [...]
       - /<path_to_data>/data/media:/data/media
 [...]
-``````
+```
 
 ------
 
