@@ -72,7 +72,6 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
     - Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
     - Dolby Vision with HDR10 fallback.
 
-
 ??? example "YAML - [CLICK TO EXPAND]"
 
     ```yaml
