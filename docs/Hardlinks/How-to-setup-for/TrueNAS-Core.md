@@ -8,25 +8,25 @@
 
     TrueNAS Core defaults to `lz4` encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. `ztsd` is currently the default in FreeBSD, however TrueNAS Core still defaults to `lz4`. Given that media files are not very compressible by nature, the only benefit that compression provides in this case is to supplementary files such as `.srt`, `.nfo`, etc.
 
-    Additionally, since SMB does not support hardlinks we will only be covering the creation and use of NFS shares.
+    Additionally, since SMB does not support hardlinks, we will only be covering the creation and use of NFS shares.
 
 ------
 
-## Create the main dataset
+## Create the Main Dataset
 
 !!! warning
 
-    To get hardlinks and atomic moves working with ZFS you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example.
+    To get hardlinks and atomic moves working with ZFS, you will need to make use of <u>**ONE**</u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset `tank` from this example.
 
-For this example I'm using the dataset from my existing setup, `Media`. The naming isn't important as host machine mappings can be manipulated as desired.
+For this example, I'm using the dataset from my existing setup, `Media`. The naming isn't important, as host machine mappings can be manipulated as desired.
 
 Go to Storage -> Pools and click on ⋮ on the right side of your root dataset, then select `Add Dataset`.
 
 ![truenas-dataset](images/truenas-create-dataset.png)
 
-On the next screen you'll fill out your basic dataset info, such as name and comments. I have a few things grayed out here as the dataset has already been configured, but in this example you would use `Media` in the Name field and keep everything else at its default (`Inherit`) with the exception of `Enable Atime` and `Record Size`. Set `Enable Atime` to `off` and `Record Size` to `1M`. This provides a performance increase on a dataset that will primarily be handling media files. Optionally, you can configure `Quota for this dataset` if you want to limit what the dataset displays and will accept in terms of capacity when it's mounted (i.e. setting this to `10 TiB` will show 10T as the capacity when mounted).
+On the next screen you'll fill out your basic dataset info, such as name and comments. I have a few things grayed out here (as the dataset has already been configured), but in this example you would use `Media` in the Name field and keep everything else at its default (`Inherit`), with the exception of `Enable Atime` and `Record Size`. Set `Enable Atime` to `off` and `Record Size` to `1M`. This provides a performance increase on a dataset that will primarily be handling media files. Optionally, you can configure `Quota for this dataset` if you want to limit what the dataset displays and will accept in terms of capacity when it's mounted (i.e. setting this to `10 TiB` will show 10T as the capacity when mounted).
 
-During share creation, there will be an option at the bottom for `Share Type`. `Generic` is the default, with `SMB` as a selectable option. Since we'll be using NFS, select `Generic`.
+During share creation, there will be an option at the bottom for `Share Type`. Since we'll be using NFS, select `Generic`.
 
 Click `Submit` (mine shows `Save` since this is an existing dataset) once complete.
 
@@ -34,9 +34,9 @@ Click `Submit` (mine shows `Save` since this is an existing dataset) once comple
 
 ------
 
-## Create a shared group
+## Create a Shared Group
 
-We'll need to create a shared group so that we can ensure proper access when mounting, and to avoid ending up with `nobody` as the group name when mounting over NFS. This group should contain any of your user accounts that will be accessing the share (Starr apps, download clients, etc). It should also match the group and `GID` on the host you plan to mount the share to, and run your apps on.
+We'll need to create a shared group to ensure proper access when mounting and to avoid ending up with `nobody` as the group name when mounting over NFS. This group should contain any of your user accounts that will be accessing the share (Starr apps, download clients, etc.). It should also match the group and `GID` on the host you plan to mount the share to, and run your apps on.
 
 Navigate to Accounts -> Groups, and click `Add` at the top right.
 
@@ -48,23 +48,23 @@ You'll arrive at a simple configuration screen like the one shown below. Set you
 
 ## Create your user(s)
 
-We'll need to create a user (or users if you're using individual user accounts per service) on TrueNAS that matches the user and UID of the user you'll be mounting your share with. It's important that these match since we're not using the `Mapall` function that exist under the NFS Share options.
+We'll need to create a user (or users if you're using individual user accounts per service) on TrueNAS that matches the user and UID of the user you'll be mounting your share with. It's important that these match since we're not using the `Mapall` function that exists under the NFS Share options.
 
 Navigate to Accounts -> Users, and click `Add` at the top right.
 
 You'll arrive at a configuration screen like the one shown below. Fill out `Full Name` and `Username` with the desired username, and set your `User ID` that you plan to use.
 
-You'll need to uncheck `New Primary Group` so you can manually populate `Primary Group` with the shared group you created in the previous step. In this example I'm using a GID of `1215` and a `Primary Group` name of `dockermedia`. Leave `Home Directory` as `/nonexistent`, and set `Disable Password` to `Yes`. Uncheck `Samba Authentication` and click `Submit` once complete. `Home Directory Permissions` aren't important as it's set to `/nonexistent`, and we won't ever be accessing it.
+Uncheck `New Primary Group` so you can manually populate `Primary Group` with the shared group you created in the previous step. In this example I'm using a GID of `1215` and a `Primary Group` name of `dockermedia`. Leave `Home Directory` as `/nonexistent`, and set `Disable Password` to `Yes`. Uncheck `Samba Authentication` and click `Submit` once complete. `Home Directory Permissions` aren't important as it's set to `/nonexistent`, and we won't ever be accessing it.
 
 ![truenas-user](images/truenas-user-options.png)
 
 !!! note
 
-    If you're using a single, shared user and group setup (1000:1000 is the common one) you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.
+    If you're using a single, shared user and group setup (1000:1000 is the common one), you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.
 
 ------
 
-## Dataset permissions
+## Dataset Permissions
 
 Now that we have a user and a group, we can set the permissions on the dataset.
 
@@ -78,7 +78,7 @@ Check the boxes for `Apply User`, `Apply Group`, and `Apply Permissions Recursiv
 
 ------
 
-## Create your NFS share(s)
+## Create Your NFS Share(s)
 
 Navigate to Sharing -> Unix Shares (NFS), and click `Add` at the top right.
 
@@ -98,7 +98,7 @@ Click `Submit` once complete.
 
 ------
 
-## Configure and enable NFS service
+## Configure and Enable NFS Service
 
 Navigate to Services and click the edit icon under `Actions` on the `NFS` row.
 
@@ -116,9 +116,9 @@ Make sure to check `Start Automatically` and click the slider under `Running` to
 
 ------
 
-## Mount your shares
+## Mount Your Shares
 
-Follow standard mounting procedures for your operating system/device. In Ubuntu mounting a NFS share is as simple as adding it to `/etc/fstab` with `<host>:/mnt/tank/Media /mnt/data nfs defaults,_netdev,rw 0 0`, and issuing `mount -a` (or rebooting).
+Follow standard mounting procedures for your operating system/device. In Ubuntu, mounting an NFS share is as simple as adding it to `/etc/fstab` with `<host>:/mnt/tank/Media /mnt/data nfs defaults,_netdev,rw 0 0`, and issuing `mount -a` (or rebooting).
 
 Regardless of method, make sure that the device ends up with a `data` mount point. The mount point is important since it will allow us to follow the usual guide for folder structure. If you've followed the guide, from a NFS share standpoint the owner and group of the `/mnt/data` directory will be the user and group that were previously configured in the Dataset Permissions section. If this is improperly configured you can end up with `nobody` as the owner or group, or have permission errors.
 
@@ -130,7 +130,7 @@ Now that you have a `data` folder, you can follow the normal folder structure re
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
-These subfolders you need to create yourself using your preferred method. Set your permissions accordingly as well. If you use ACLs on the datasets you can replicate the usual 775/664 (UMASK 002) or 755/644 (UMASK 022) recommendation, but this guide only covers the use of basic permissions for mounting and expects the end user to fine-tune permissions via chmod, chown, and uid/gid/umask settings on the applications that will be utilizing the share.
+You must create these subfolders yourself, using your preferred method. Set your permissions accordingly, as well. If you use ACLs on the datasets, you can replicate the usual 775/664 (UMASK 002) or 755/644 (UMASK 022) recommendation, but this guide only covers the use of basic permissions for mounting and expects the end user to fine-tune permissions via chmod, chown, and uid/gid/umask settings on the applications that will be utilizing the share.
 
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
