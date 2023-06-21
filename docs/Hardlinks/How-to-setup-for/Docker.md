@@ -10,7 +10,7 @@
 
     *DockSTARTer was actually my first steps into the world of Docker.*
 
-!!! notes
+!!! note "Notes"
 
     * I'm not going to explain how to get Docker containers installed and running; I will only explain which folder structure we recommend.
 
