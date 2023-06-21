@@ -3,6 +3,7 @@
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences. Here you will find a collection of Recyclarr configs based on the SQPs:
 
 - [Streaming Optimized (SQP-1)](/SQP/1){:target="_blank" rel="noopener noreferrer"}
+- [Streaming Optimized (SQP-1 2160p)](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
 - [UHD Remux|Bluray|IMAX-E (SQP-2)](/SQP/2){:target="_blank" rel="noopener noreferrer"}
 - [UHD Remux|IMAX-E (SQP-3)](/SQP/3){:target="_blank" rel="noopener noreferrer"}
 - [UHD WEBDL|IMAX-E (SQP-4)](/SQP/4){:target="_blank" rel="noopener noreferrer"}
@@ -26,6 +27,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 | Radarr                                                            |
 | ----------------------------------------------------------------- |
 | [Streaming Optimized (SQP-1)](#streaming-optimized-sqp-1)         |
+| [Streaming Optimized (SQP-1 2160p)](#streaming-optimized-sqp-1-2160p)      |
 | [UHD Remux\|Bluray\|IMAX-E (SQP-2)](#uhd-remuxblurayimax-e-sqp-2) |
 | [UHD Remux\|IMAX-E (SQP-3)](#uhd-remuximax-e-sqp-3)               |
 | [UHD WEBDL\|IMAX-E (SQP-4)](#uhd-webdlimax-e-sqp-4)               |
@@ -51,6 +53,29 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
     ```yaml
     [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-1.yml' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Streaming Optimized (SQP-1 2160p)
+
+??? question "Streaming Optimized (SQP-1 2160p) - [CLICK TO EXPAND]"
+
+    - You want 2160p with DV + HDR10 but don't care about HD audio (TrueHD, DTS-HD, DTS-X).
+    - You want maximum compatibility between all devices and still a HQ releases.
+    - You run 2 instances of Radarr and want both version or you want to use this as your main.
+    - You want to have minimum till none transcoding for low powered devices or remote streaming.
+    - You're using your smart tv app as media player device.
+    - Optimized for PLEX, Emby, Jellyfin, and other streaming platforms.
+    - Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
+    - Dolby Vision with HDR10 fallback.
+
+??? example "YAML - [CLICK TO EXPAND]"
+
+    ```yaml
+    [[% filter indent(width=4) %]][[% include 'recyclarr-configs/radarr/sqp/sqp-1-2160p.yml' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
