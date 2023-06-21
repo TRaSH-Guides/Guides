@@ -12,7 +12,7 @@ The reason we use `/data/torrents` for the torrent client is because it only nee
 
 `Host Path:` => `/<path_to_data>/data/torrents/`
 
-Docker-compose volumes example:
+Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
