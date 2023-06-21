@@ -2,12 +2,12 @@
 
 !!! note
 
-    I'm using the default paths in this example, and will keep the other paths unchanged so nothing will break if you make a mistake.
+    I'm using the default paths in this example, and will keep the other paths unchanged, so nothing will break if you make a mistake.
 
 ## Folder Structure
 
 We're going to use a mounted drive that we're going to use as storage for downloads and your media.
-In this example the mounted drive will be mounted to `/mnt/` with the following folder structure.
+In this example, the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
 ```none
 storage
@@ -49,7 +49,7 @@ TZ=America/Chicago
 
 ### Changes to your paths
 
-When that's all set then you will need to change the paths you're going to use in the containers from:
+Once that's all set, change the paths you're going to use in the containers (`/from` => `/to`):
 
 `/downloads` => `/storage/downloads`
 
@@ -69,7 +69,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 !!! info
 
-    The screenshots in the examples are using the following root path `/storage`
+    The screenshots in the examples use `/storage` for the root path.
 
 - [Sonarr](#sonarr)
 - [Radarr](#radarr)
