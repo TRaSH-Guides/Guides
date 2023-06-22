@@ -24,7 +24,7 @@
     {
       "score": 1600,
       "terms": [
-        "/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\\b/i"
+        "/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr|-NINJACENTRAL)\\b/i"
       ]
     },
     {
