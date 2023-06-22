@@ -1,11 +1,11 @@
 # Bazarr Scripts
 
 !!! note ""
-    Here you will find a collection of Scripts you can use with Bazarr.
+    Here you will find a collection of scripts you can use with Bazarr.
 
-    Most of them are provided by other users, if you got a script you want to share don't hesitate to create a [PR](https://github.com/TRaSH-/Guides/blob/master/.github/CONTRIBUTING.md) for it
+    Most of them are provided by other users. If you have a script you want to share, don't hesitate to create a [Pull Request](https://github.com/TRaSH-/Guides/blob/master/.github/CONTRIBUTING.md) for it.
 
-## 2 to 3 language code
+## 2 to 3 Language Code
 
 ??? info "2 to 3 language code"
 
