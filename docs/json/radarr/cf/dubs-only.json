@@ -10,7 +10,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+        "value": "(?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
       }
     },
     {
