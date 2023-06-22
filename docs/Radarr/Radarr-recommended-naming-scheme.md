@@ -33,10 +33,20 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
-For Jellyfin/Emby:
+For Emby:
 
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['emby'] }}
+```
+
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid=tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+
+For Emby:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin'] }}
 ```
 
 ??? abstract "RESULTS: - [CLICK TO EXPAND]"
@@ -53,10 +63,20 @@ If you do Anime
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
-For Jellyfin/Emby:
+For Emby:
 
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
+```
+
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
+
+    `The Movie Title (2010) [imdbid=tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+
+For Jellyfin:
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['anime-jellyfin'] }}
 ```
 
 ??? abstract "RESULTS: - [CLICK TO EXPAND]"
@@ -128,10 +148,20 @@ RESULT:
 
 `The Movie Title (2010) {imdb-tt1520211}`
 
-For Jellyfin/Emby:
+For Emby:
 
 ```bash
 {{ radarr['naming']['radarr-naming']['folder']['emby'] }}
+```
+
+RESULT:
+
+`The Movie Title (2010) [imdbid=tt1520211]`
+
+For Jellyfin:
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['jellyfin'] }}
 ```
 
 RESULT:

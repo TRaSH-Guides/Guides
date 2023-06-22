@@ -103,10 +103,20 @@ RESULT:
 
 `The Series Title! (2010) {imdb-tt1520211}`
 
-For Jellyfin/Emby:
+For Emby:
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
+```
+
+RESULT:
+
+`The Series Title! (2010) [tvdbid=tt1520211]`
+
+For Jellyfin:
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['jellyfin'] }}
 ```
 
 RESULT:
