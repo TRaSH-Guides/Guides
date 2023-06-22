@@ -105,7 +105,7 @@ Below is an example of the scoring set to prefer `Uncensored` a tier above.
 
 Once you have set your preferred scoring you will need to make two more changes to your `Remux-1080p - Anime` profile.
 
-Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Bluray-1080p` and the `Upgrade Until Custom Format Score` to `10000` and set `Language` to `Original`
+Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Remux-1080p` and the `Upgrade Until Custom Format Score` to `10000` and set `Language` to `Original`
 
 After this has been done your profile should look like below. This is an example of the Default Scoring setup.
 
