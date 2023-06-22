@@ -263,7 +263,7 @@ Add this to your `Preferred (3)` with a score of [1650]
 Add this to your `Preferred (3)` with a score of [1600]
 
 ```bash
-/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\b/i
+/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr|-NINJACENTRAL)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
