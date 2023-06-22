@@ -48,7 +48,7 @@ I also made 3 guides related to this one.
 ------
 
 | Movie Versions                                | Unwanted              | HQ Release Groups                         | Streaming Services     |
-| --------------------------------------------- | --------------------- | ----------------------------------------- | ---------------------- |
+|-----------------------------------------------|-----------------------|-------------------------------------------|------------------------|
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)        |
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)     |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [Remux Tier 03](#remux-tier-03)           | [Disney+](#dsnp)       |
@@ -57,10 +57,10 @@ I also made 3 guides related to this one.
 | [Masters of Cinema](#masters-of-cinema)       |                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Max](#max)            |
 | [Vinegar Syndrome](#vinegar-syndrome)         |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Hulu](#hulu)          |
 | [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Netflix](#nf)         |
-| [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)    |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)    |
-| [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma) |
-|                                               |                       |                                           | [Pathe Thuis](#pathe)  |
+| [IMAX](#imax)                                 |                       | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [Peacock TV](#pcok)    |
+| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
+| [Open Matte](#open-matte)                     |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
+|                                               |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
 |                                               |                       |                                           | [Bravia Core](#bcore)  |
 |                                               |                       |                                           | [Stan](#stan)          |
 
@@ -1554,6 +1554,20 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HD Bluray Tier 03
+
+??? question "HD Bluray Tier 03 - [CLICK TO EXPAND]"
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hd-bluray-tier-03.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
