@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL).*/i"
+    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR).*/i"
   }, {
     "name": "Ignore Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",
