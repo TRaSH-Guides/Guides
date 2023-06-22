@@ -41,21 +41,21 @@
       }
     },
     {
-      "name": "CsS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(CsS)\\b"
-      }
-    },
-    {
       "name": "Legion",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\[Legion\\]|-Legion\\b"
+      }
+    },
+    {
+      "name": "LYS1TH3A",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LYS1TH3A)\\b"
       }
     },
     {
@@ -86,12 +86,12 @@
       }
     },
     {
-      "name": "Spirale",
+      "name": "smol",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Spirale)\\b"
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {

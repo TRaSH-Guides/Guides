@@ -59,15 +59,6 @@
       }
     },
     {
-      "name": "Reza",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Reza)\\b"
-      }
-    },
-    {
       "name": "sam",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -92,6 +83,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Setsugen)\\b"
+      }
+    },
+    {
+      "name": "smol",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {
