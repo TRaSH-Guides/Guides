@@ -54,6 +54,7 @@
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                | {{ radarr['cf']['web-tier-03']['trash_score'] }} | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
     | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    |                                   :warning: 1100 | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
     | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    |                                   :warning: 1050 | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    |                                   :warning: 1000 | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
