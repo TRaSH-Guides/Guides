@@ -15,7 +15,7 @@ The Tokens not available in the release won't be used/shown.
 
 ## Standard Movie Format
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
+This naming scheme is made to be compatible with the new [Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
 !!! warning "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
 
@@ -138,7 +138,7 @@ RESULT:
 
 #### Optional Movies Folder Format with ID
 
-This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+This naming scheme is made to be compatible with the new [Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 Emby/Jellyfin also support ID in the folder name.
 
 ##### Plex Optional Movies Folder Format
