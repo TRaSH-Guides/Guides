@@ -15,15 +15,19 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ## Standard Episode Format
 
+### v3 Standard Episode Format
+
 ```bash
 {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+### v4 Standard Episode Format
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
-    ```
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles(Preferred Words).<br>Use the below naming scheme instead :warning:"
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
+```
 
 ??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
@@ -39,15 +43,18 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ## Daily Episode Format
 
+### v3 Daily Episode Format
 ```bash
 {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+### v4 Daily Episode Format
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
-    ```
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles(Preferred Words).<br>Use the below naming scheme instead :warning:"
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
+```
 
 ??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
@@ -57,15 +64,19 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ## Anime Episode Format
 
+### v3 Anime Episode Format
+
 ```bash
 {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
+### v4 Anime Episode Format
 
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
-    ```
+!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles(Preferred Words).<br>Use the below naming scheme instead :warning:"
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
+```
 
 ??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
@@ -89,11 +100,12 @@ RESULT:
 
 `The Series Title! (2010)`
 
-#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
+#### Optional Series Folder Format with ID
 
 This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+Emby/Jellyfin also support ID in the folder name.
 
-For Plex:
+##### Plex Optional Series Folder Format
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
@@ -103,7 +115,7 @@ RESULT:
 
 `The Series Title! (2010) {imdb-tt1520211}`
 
-For Emby:
+##### Emby Optional Series Folder Format
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
@@ -111,9 +123,9 @@ For Emby:
 
 RESULT:
 
-`The Series Title! (2010) [tvdbid=tt1520211]`
+`The Series Title! (2010) [tvdbid=1520211]`
 
-For Jellyfin:
+##### Jellyfin Optional Series Folder Format
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['jellyfin'] }}
@@ -121,7 +133,7 @@ For Jellyfin:
 
 RESULT:
 
-`The Series Title! (2010) [tvdbid-tt1520211]`
+`The Series Title! (2010) [tvdbid-1520211]`
 
 !!! tip
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
