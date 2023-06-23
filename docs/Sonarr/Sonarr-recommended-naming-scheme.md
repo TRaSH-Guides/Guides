@@ -44,6 +44,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Daily Episode Format
 
 ### v3 Daily Episode Format
+
 ```bash
 {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
 ```
