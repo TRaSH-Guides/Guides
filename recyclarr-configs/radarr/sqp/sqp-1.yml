@@ -68,6 +68,11 @@ radarr:
         # quality_profiles:
           # - name: Bluray|WEB-1080p
             # score: 1050
+      # - trash_ids:
+          # - 5608c71bcebba0a5e666223bae8c9227  # HD Bluray Tier 03
+        # quality_profiles:
+          # - name: Bluray|WEB-1080p
+            # score: 1000
       # --HQ Release Groups section ends--
       - trash_ids:
           # Audio
