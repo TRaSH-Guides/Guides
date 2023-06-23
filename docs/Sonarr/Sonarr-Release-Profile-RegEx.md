@@ -263,7 +263,7 @@ Add this to your `Preferred (3)` with a score of [1650]
 Add this to your `Preferred (3)` with a score of [1600]
 
 ```bash
-/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr)\b/i
+/(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr|-NINJACENTRAL)\b/i
 ```
 
 Add this to your `Preferred (3)` with a score of [12]
@@ -550,7 +550,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR).*/i
 
 ```
 

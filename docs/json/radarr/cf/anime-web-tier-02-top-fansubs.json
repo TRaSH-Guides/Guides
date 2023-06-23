@@ -86,6 +86,15 @@
       }
     },
     {
+      "name": "HatSubs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HatSubs)\\b"
+      }
+    },
+    {
       "name": "MTBB",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -110,6 +119,15 @@
       "required": false,
       "fields": {
         "value": "\\[Pizza\\]|-Pizza\\b"
+      }
+    },
+    {
+      "name": "Reza",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Reza)\\b"
       }
     },
     {

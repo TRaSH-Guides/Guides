@@ -1,3 +1,24 @@
+# 2023-06-22 12:45
+**[Fixed]**
+- [Guide] Radarr anime typo.
+- [Guide] Sonarr anime duplication of VRV in tables.
+
+**[New]**
+- [Radarr and Sonarr] Added smol to Anime Web Tier 01 and Anime BD Tier 01
+- [Radarr and Sonarr] Added SubsPlus+ to Anime Web Tier 03
+- [Radarr and Sonarr] Added HatSubs to Anime Web Tier 02
+- [Radarr and Sonarr] Added ZigZag to Anime Web Tier 04
+
+**[Updated]**
+- [Radarr and Sonarr] Moved CsS and Spirale from Anime BD Tier 01 to Anime BD Tier 02
+- [Radarr and Sonarr] Moved MTBB from Anime BD Tier 04 to Anime BD Tier 02
+- [Radarr and Sonarr] Moved LYS1TH3A from Anime BD Tier 02 to Anime BD Tier 01
+- [Radarr and Sonarr] Moved Reza from Anime Web Tier 01 to Anime Web Tier 02
+- [Radarr and Sonarr] Moved VARYG from Anime Web Tier 03 to Anime Web Tier 04 and updated regex
+- [Radarr and Sonarr] Updated Multi CF Regex
+- [Radarr and Sonarr] Updated Anime Streaming Scores
+- [Radarr and Sonarr] Updated Anime Dubs Only CF
+
 # 2023-06-14 20:30
 **[Fixed]**
 - [Radarr] Removed: RlsGrp `CiNEPHiLES` from Remux Tier to prevent download loops.

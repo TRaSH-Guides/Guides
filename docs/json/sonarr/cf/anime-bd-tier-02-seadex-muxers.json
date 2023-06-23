@@ -122,6 +122,15 @@
       }
     },
     {
+      "name": "CsS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CsS)\\b"
+      }
+    },
+    {
       "name": "CUNNY",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -221,15 +230,6 @@
       }
     },
     {
-      "name": "LYS1TH3A",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LYS1TH3A)\\b"
-      }
-    },
-    {
       "name": "Matsya",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -254,6 +254,15 @@
       "required": false,
       "fields": {
         "value": "\\[Metal\\]|-Metal\\b"
+      }
+    },
+    {
+      "name": "MTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTBB)\\b"
       }
     },
     {
@@ -326,6 +335,15 @@
       "required": false,
       "fields": {
         "value": "\\[Smoke\\]|-Smoke\\b"
+      }
+    },
+    {
+      "name": "Spirale",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Spirale)\\b"
       }
     },
     {

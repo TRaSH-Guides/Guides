@@ -32,12 +32,12 @@
       }
     },
     {
-      "name": "VARYG",
+      "name": "SubsPlus+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VARYG)\\b"
+        "value": "\\b(SubsPlus\\+?)\\b"
       }
     },
     {
