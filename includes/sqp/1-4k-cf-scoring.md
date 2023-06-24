@@ -81,7 +81,7 @@
 ??? abstract "Optional - [CLICK TO EXPAND]"
 
     !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
-    !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
+    !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |

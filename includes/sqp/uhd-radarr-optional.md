@@ -1,8 +1,8 @@
 ??? abstract "Optional - [CLICK TO EXPAND]"
 
     !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
-    !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
-    !!! tip "The `DV (FEL)` is recommended for SQP2 and 3"
+    !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
+    !!! tip "The `DV (FEL)` is recommended for SQP2 and 3 or any other Profile doing 4k/UHD Remuxes"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
