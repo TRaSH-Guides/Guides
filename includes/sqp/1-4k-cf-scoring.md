@@ -76,11 +76,11 @@
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/sqp/radarr-unwanted-uhd.md" !}
+{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
 ??? abstract "Optional - [CLICK TO EXPAND]"
 
-    !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
+    !!! tip "**I recommend to use the `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning, :warning: Only ever include one of them :warning:**"
     !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
