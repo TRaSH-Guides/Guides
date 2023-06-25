@@ -2,11 +2,18 @@ name: Validate Metadata JSON
 
 on:
   push:
+    branches:
+      - master
     paths:
       - metadata.json
       - metadata.schema.json
       - .github/workflows/metadata-validation.yml
   pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - master
     paths:
       - metadata.json
       - metadata.schema.json
@@ -20,6 +27,6 @@ jobs:
       - uses: actions/checkout@v3.5.3
       - uses: actions/setup-python@v4.6.1
         with:
-          python-version: "3.x"
+          python-version: 3.x
       - run: pip install jsonschema
       - run: jsonschema -i metadata.json metadata.schema.json
