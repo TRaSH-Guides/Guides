@@ -1,8 +1,7 @@
 ??? abstract "Optional - [CLICK TO EXPAND]"
 
-    !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
-    !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
-    !!! tip "The `DV (FEL)` is recommended for SQP2 and 3"
+    !!! tip "**I recommend to use the `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning, :warning: Only ever include one of them :warning:**"
+    !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
@@ -38,7 +37,7 @@
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.
             - If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of `{{ radarr['cf']['dv-webdl']['trash_score'] }}`.
 
-    - **{{ radarr['cf']['hdr10plus-boost']['name'] }}:** [*Optional*] (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+
+    - **{{ radarr['cf']['hdr10plus-boost']['name'] }}:** [*Optional*] (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+)
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
     - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] (use these only if you dislike renamed releases)
