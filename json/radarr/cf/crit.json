@@ -1,0 +1,44 @@
+{
+  "trash_id": "16622a6911d1ab5d5b8b713d5b0036d4",
+  "trash_score": "20",
+  "name": "CRiT",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "CRiT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(CRiT)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "Not Criterion RlsGrp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "^(Criterion)$"
+      }
+    }
+  ]
+}

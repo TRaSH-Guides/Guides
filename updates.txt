@@ -1,3 +1,11 @@
+# 2023-06-25 20:50
+**[New]**
+- [Radarr] Added Criterion Channel streaming service custom format (CRiT)
+- [Guide] Added Criterion Channel streaming service to relevant guide pages and tables
+
+**[Updated]**
+- [Radarr] Criterion Collection custom format now only applies to Bluray and Remux releases
+
 # 2023-06-22 12:45
 **[Fixed]**
 - [Guide] Radarr anime typo.
