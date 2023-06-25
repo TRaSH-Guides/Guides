@@ -1,0 +1,22 @@
+# .github/labeler.yml
+
+Bazarr:
+  - docs/bazarr/**
+Downloaders:
+  - docs/downloaders/**
+Plex:
+  - docs/plex/**
+Prowlarr:
+  - docs/prowlarr/**
+Radarr:
+  - docs/json/radarr/cf/**
+  - docs/json/radarr/quality-size/**
+  - docs/json/radarr/naming/**
+  - docs/radarr/**
+Recyclarr:
+  - docs/recyclarr-configs/**
+Sonarr:
+  - docs/json/sonarr/rp/**
+  - docs/json/sonarr/cf/**
+  - docs/json/sonarr/quality-size/**
+  - docs/sonarr/**
