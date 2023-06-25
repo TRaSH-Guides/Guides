@@ -3058,7 +3058,7 @@
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/radarr-unwanted-uhd.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
 <details class="abstract">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -3081,6 +3081,11 @@
 <td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td>-10000</td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
+</tr>
+<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
@@ -3097,7 +3102,15 @@
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
-<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li>
+<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+<li>
+<p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
+</li>
 <li><strong>Upscaled:</strong> A custom format to prevent Radarr from grabbing upscaled releases.</li>
 </ul>
 </details>
@@ -3105,11 +3118,11 @@
 
 <details class="abstract">
 <summary>Optional - [CLICK TO EXPAND]</summary>
-<div class="admonition danger">
-<p class="admonition-title"><strong>The <code>x265 (no HDR/DV)</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<div class="admonition tip">
+<p class="admonition-title"><strong>I recommend to use the <code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code>, Read the Why below and don't forget to read the warning, <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></strong></p>
 </div>
-<div class="admonition danger">
-<p class="admonition-title"><strong>The <code>SDR</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<div class="admonition tip">
+<p class="admonition-title"><strong>I recommend to use the <code>SDR</code>,<br> This will help to prevent to grab UHD/4k releases without HDR Formats</strong></p>
 </div>
 <table>
 <thead>
@@ -3725,7 +3738,7 @@ Also they often even rename the release name in to Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/sqp/radarr-unwanted-uhd.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
 <details class="abstract">
 <summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
@@ -3748,6 +3761,11 @@ Also they often even rename the release name in to Portuguese.</li>
 <td>90a6f9a284dff5103f6346090e6280c8</td>
 </tr>
 <tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td>-10000</td>
+<td>dc98083864ea246d05a42df0d05f81cc</td>
+</tr>
+<tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#3d">3D</a></td>
 <td>-10000</td>
 <td>b8cd450cbfa689c0259a01d9e29ba3d6</td>
@@ -3764,7 +3782,15 @@ Also they often even rename the release name in to Portuguese.</li>
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Radarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
-<li><strong>3D:</strong> Is 3D still a thing for home use ?</li>
+<li>
+<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+<li>
+<p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
+</li>
 <li><strong>Upscaled:</strong> A custom format to prevent Radarr from grabbing upscaled releases.</li>
 </ul>
 </details>
@@ -3772,11 +3798,11 @@ Also they often even rename the release name in to Portuguese.</li>
 
 <details class="abstract">
 <summary>Optional - [CLICK TO EXPAND]</summary>
-<div class="admonition danger">
-<p class="admonition-title"><strong>The <code>x265 (no HDR/DV)</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<div class="admonition tip">
+<p class="admonition-title"><strong>I recommend to use the <code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code>, Read the Why below and don't forget to read the warning, <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></strong></p>
 </div>
-<div class="admonition danger">
-<p class="admonition-title"><strong>The <code>SDR</code> is a MUST for this SQP</strong> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<div class="admonition tip">
+<p class="admonition-title"><strong>I recommend to use the <code>SDR</code>,<br> This will help to prevent to grab UHD/4k releases without HDR Formats</strong></p>
 </div>
 <table>
 <thead>
