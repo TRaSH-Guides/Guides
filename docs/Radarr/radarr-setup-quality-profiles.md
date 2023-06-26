@@ -89,7 +89,7 @@ If you prefer High Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
 
@@ -135,7 +135,7 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
 
