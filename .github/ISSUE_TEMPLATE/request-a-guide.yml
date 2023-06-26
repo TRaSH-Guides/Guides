@@ -2,20 +2,18 @@ name: Request a Guide
 about: Request a Guide here
 title: "[REQUEST]"
 labels: ["Type: Guide Request", "Status: Triage Needed"]
-
 body:
-- type: input
-  id: application
-  attributes:
-    label: For which application would like to see this Guide?
-    description: Radarr / Sonarr / Bazarr / etc
-    placeholder: Enter the application name here
-
-- type: textarea
-  id: guide_description
-  attributes:
-    label: Describe what you would like to see in the Tutorial/Guide
-    description: A clear and concise description of what you want to see in the Guide
-    placeholder: Enter your guide description here
-  validations:
-    required: true
+  - type: input
+    id: application
+    attributes:
+      label: For which application would like to see this Guide?
+      description: Radarr / Sonarr / Bazarr / etc
+      placeholder: Enter the application name here
+  - type: textarea
+    id: guide_description
+    attributes:
+      label: Describe what you would like to see in the Tutorial/Guide
+      description: A clear and concise description of what you want to see in the Guide
+      placeholder: Enter your guide description here
+    validations:
+      required: true
