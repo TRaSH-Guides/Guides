@@ -31,6 +31,7 @@
   - docs/json/sonarr/cf/**
   - docs/json/sonarr/quality-size/**
   - docs/sonarr/**
+  - docs/json/sonarr/naming/**
 "Area: Starr Custom Formats":
   - docs/json/radarr/cf/**
   - docs/json/sonarr/cf/**
