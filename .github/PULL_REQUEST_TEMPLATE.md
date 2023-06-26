@@ -1,21 +1,22 @@
-# Pull request
+# Pull Request
 
-**Purpose**
-Detailed description why you created this Pull Request.
+## Purpose
 
-**Approach**
-If this Pull Request is created to solve a issue explain how does this change address the problem?
+<!-- Please provide a detailed description of why you created this pull request. -->
 
-**Open Questions and Pre-Merge TODOs**
-Check all boxes as they are completed
+## Approach
 
-- [ ] Use github checklists. When solved, check the box and explain the answer.
+<!-- If this pull request is created to solve an issue, please explain how this change addresses the problem. -->
 
-**Learning**
-If you're adding a new Custom Format make sure you follow the [Radarr/Sonarr Custom Format (JSON) Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/.github/CONTRIBUTING.md).
+## Open Questions and Pre-Merge TODOs
 
-**Requirements**
-Check all boxes as they are completed
+<!-- - [ ] Use GitHub checklists. When solved, check the box and explain the answer.
+
+<!-- ## Learning
+
+If you're adding a new Custom Format, make sure you follow the [Radarr/Sonarr Custom Format (JSON) Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/.github/CONTRIBUTING.md). -->
+
+## Requirements
 
 - [ ] These changes meet the standards for [contributing](https://github.com/TRaSH-Guides/Guides/blob/master/.github/CONTRIBUTING.md).
 - [ ] I have read the [code of conduct](https://github.com/TRaSH-Guides/Guides/blob/master/.github/CODE_OF_CONDUCT.md).
