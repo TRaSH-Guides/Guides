@@ -3,8 +3,8 @@ site_description: Guides mainly for Sonarr/Radarr/Bazarr and everything related 
 site_author: TRaSH
 site_url: https://trash-guides.info/
 
-repo_url: https://github.com/TRaSH-/Guides
-repo_name: TRaSH-/Guides
+repo_url: https://github.com/TRaSH-Guides/Guides
+repo_name: TRaSH-Guides
 
 copyright: Copyright &copy; 2022 TRaSH
 
@@ -16,7 +16,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://trash-guides.info/discord
     - icon: fontawesome/brands/square-github
-      link: https://github.com/TRaSH-/Guides
+      link: https://github.com/TRaSH-Guides/Guides
 
 extra_css:
   - stylesheets/extra.css
