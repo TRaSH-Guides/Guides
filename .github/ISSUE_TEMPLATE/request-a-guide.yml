@@ -1,6 +1,6 @@
 name: Request a Guide
 description: Request a Guide here
-title: "[REQUEST]"
+title: "[Request]"
 labels: ["Type: Guide Request", "Status: Triage Needed"]
 body:
   - type: input
@@ -12,8 +12,8 @@ body:
   - type: textarea
     id: guide_description
     attributes:
-      label: Describe what you would like to see in the Tutorial/Guide
+      label: Describe what you would like to see in the Guide
       description: A clear and concise description of what you want to see in the Guide
-      placeholder: Enter your guide description here
+      placeholder: Enter a brief description here
     validations:
       required: true
