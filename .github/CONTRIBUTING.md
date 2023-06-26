@@ -52,7 +52,7 @@ Where 'xxx' can stand for Starr/Sonarr/Radarr/Guide etc
 
 ## When doing a PR that is WIP
 
-When doing a PR that is in-progress and not yet complete / ready for review not yet done fully please ensure it is a **DRAFT Pull Request**
+When doing a PR that is in-progress and not yet complete / ready for review or not yet done fully, please ensure it is a **DRAFT Pull Request**
 
 ## Radarr/Sonarr Custom Format (JSON)
 
