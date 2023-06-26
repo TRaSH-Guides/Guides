@@ -1,0 +1,29 @@
+name: Lint - EditorConfig - Json
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "**/*.json"
+      - ".editorconfig"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - master
+    paths:
+      - "**/*.json"
+      - ".editorconfig"
+
+jobs:
+  editorconfig-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - name: editorconfig-checker
+        run: |
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}":/check \
+            mstruebing/editorconfig-checker
