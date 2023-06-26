@@ -1,6 +1,6 @@
 "Area: Backend":
-  - any: ["docs/**/*.md"]
   - all:
+      - "docs/**/*.md"
       - "!docs/bazarr/**"
       - "!docs/downloaders/**"
       - "!docs/plex/**"
