@@ -1,21 +1,6 @@
-name: Lint - EditorConfig - Json
+name: Lint - EditorConfig
 
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - "**/*.json"
-      - ".editorconfig"
-  pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - master
-    paths:
-      - "**/*.json"
-      - ".editorconfig"
+on: [push, pull_request]
 
 jobs:
   editorconfig-checker:

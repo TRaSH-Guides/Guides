@@ -1,15 +1,6 @@
 name: Build and Deploy Docs
 
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   build:
@@ -41,6 +32,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3.5.3
+        with:
+          fetch-depth: '0'
       - name: Set up Python
         uses: actions/setup-python@v4.6.1
         with:

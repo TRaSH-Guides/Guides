@@ -2,19 +2,12 @@ name: Lint - Markdown
 
 on:
   push:
-    branches:
-      - master
     paths:
-      - "**.md"
+      - "**/*.md"
       - ".markdownlint.jsonc"
   pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - master
     paths:
-      - "**.md"
+      - "**/*.md"
       - ".markdownlint.jsonc"
 
 jobs:

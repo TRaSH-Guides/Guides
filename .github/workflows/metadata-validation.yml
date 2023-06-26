@@ -2,18 +2,11 @@ name: Validate Metadata JSON
 
 on:
   push:
-    branches:
-      - master
     paths:
       - metadata.json
       - metadata.schema.json
       - .github/workflows/metadata-validation.yml
   pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - master
     paths:
       - metadata.json
       - metadata.schema.json
