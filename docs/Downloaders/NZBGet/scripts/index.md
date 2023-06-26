@@ -82,6 +82,6 @@
 !!! tip
     This script doesn't always work and is often needed if you use a certain indexer.
 
-    It might be better to use the following Sonarr Regex in your release profile
+    It might be better to use the following Sonarr Regex in your release profile:
 
     [su season pack issue](/Sonarr/Sonarr-Release-Profile-RegEx/#su-season-pack-issue)
