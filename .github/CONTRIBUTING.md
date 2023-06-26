@@ -64,7 +64,7 @@ When doing a PR that is in-progress and not yet complete / ready for review not 
 - When adding the hashcode for Sonarr use the following naming `Sonarr CF_name` on the following [link+example](https://md5.gromweb.com/?string=Sonarr+BR-DISK){:target="_blank" rel="noopener noreferrer"}.
 - When adding the hashcode for Sonarr Anime use the following naming `Sonarr Anime CF_name` on the following [link+example](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK){:target="_blank" rel="noopener noreferrer"}.
 - Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/4DypIW/1){:target="_blank" rel="noopener noreferrer"}.
-- When adding a RlsGRp to a Custom Format for what ever reason, please add in the PR why it's added/removed/moved.
+- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
 When adding a regex test case
 
