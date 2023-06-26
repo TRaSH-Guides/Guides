@@ -320,7 +320,8 @@ Enable this option for automatic subtitles synchronization.
 !!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
----
+	
+----
 
 Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
@@ -330,7 +331,7 @@ Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
     **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/)!!!**
 
----
+----
 
 If you still have questions please check the [Troubleshooting](https://wiki.bazarr.media/Troubleshooting/Asking-for-help-or-report-a-problem/){:target="_blank" rel="noopener noreferrer"} section in the wiki.
 For more info about the other settings check the [Settings](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"} wiki.
