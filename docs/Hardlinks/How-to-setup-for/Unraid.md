@@ -37,7 +37,7 @@ Go to your dashboard, and on the top, select `shares` => `add share` .
     !!! tip "If you use qBittorrent, you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}."
 
     With Usenet, you won't have any issues.
-	
+
 ------
 
 ## Folder Structure

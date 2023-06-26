@@ -160,13 +160,13 @@ You must create these subfolders yourself.
 Here, we will create the needed subfolders for your media library and also for your preferred download client.
 If you use both, run both commands.
 
-#### If you use usenet:
+#### If You Use Usenet
 
 ```bash
 mkdir -p /volume1/data/{usenet/complete/{tv,movies,music},media/{tv,movies,music}}
 ```
 
-#### If you use torrents:
+#### If You USe Torrents
 
 ```bash
 mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
@@ -207,7 +207,7 @@ docker
 
 ------
 
-## Needed files
+## Needed Files
 
 Now we are ready to move to the installation of containers.
 
@@ -254,7 +254,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 ------
 
-### Changes and preparations
+### Changes and Preparations
 
 !!! tip
     If you need to edit the docker-compose.yml or the .env file, we advise using [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}
