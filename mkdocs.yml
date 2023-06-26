@@ -104,6 +104,9 @@ plugins:
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
         jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
+        # Recyclarr redirects
+        Recyclarr/recyclarr-configs.md: https://recyclarr.dev/wiki/guide-configs/
+        Recyclarr/recyclarr-configs-sqp.md: https://recyclarr.dev/wiki/sqp-configs/
 
 theme:
   name: material
