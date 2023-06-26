@@ -50,7 +50,9 @@ Where 'xxx' can stand for Starr/Sonarr/Radarr/Guide etc
 
 [Source](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#types){:target="_blank" rel="noopener noreferrer"}
 
-**When doing a PR that is in-progress and not yet complete / ready for review not yet done fully please ensure it is a DRAFT Pull Request**
+## When doing a PR that is WIP
+
+When doing a PR that is in-progress and not yet complete / ready for review not yet done fully please ensure it is a **DRAFT Pull Request**
 
 ## Radarr/Sonarr Custom Format (JSON)
 
