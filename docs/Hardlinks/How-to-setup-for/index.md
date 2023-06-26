@@ -1,4 +1,4 @@
-# How to setup for...
+# How to Setup For
 
 In this section, you will find several how-to's for installation of the Starr Apps.
 This is all done in a way to achieve [Hardlinks and Instant Moves (Atomic-Moves)](/Hardlinks/Hardlinks-and-Instant-Moves/).
