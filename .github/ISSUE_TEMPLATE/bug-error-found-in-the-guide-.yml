@@ -33,9 +33,6 @@ body:
         - label: Other
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "## Describe the Error in the Guide"
   - type: textarea
     attributes:
       label: Description
@@ -43,9 +40,6 @@ body:
       placeholder: Describe the bug...
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "## Expected behavior"
   - type: textarea
     attributes:
       label: Expected Behavior
@@ -53,9 +47,6 @@ body:
       placeholder: Describe what you expected to happen...
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "## Screenshots"
   - type: textarea
     attributes:
       label: Screenshots
@@ -63,9 +54,6 @@ body:
       placeholder: Add screenshot...
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: "## Additional context"
   - type: textarea
     attributes:
       label: Additional Context
