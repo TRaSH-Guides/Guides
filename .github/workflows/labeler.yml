@@ -3,6 +3,9 @@ name: Label Pull Requests
 on:
   - pull_request_target
 
+inputs:
+ sync-labels: true
+
 jobs:
   triage:
     permissions:
