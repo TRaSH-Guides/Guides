@@ -1,0 +1,80 @@
+name: Bug/Error Found in the Guide?
+about: Support Requests will be closed, if you are unsure check out my Discord first.
+title: "[Bug]"
+labels: ["Type: Bug", "Status: Triage Needed"]
+
+body:
+- type: markdown
+  attributes:
+    value: "## Which Guide"
+- type: checkboxes
+  attributes:
+    label: "Guide Name"
+    description: "Please add which Guide(s) you found a Bug/Error with."
+    options:
+      - label: Bazarr
+      - label: Downloaders/Deluge
+      - label: Downloaders/NZBGet
+      - label: Downloaders/Qbittorrent
+      - label: Downloaders/ruTorrent
+      - label: Downloaders/SABnzbd
+      - label: Downloaders/Other
+      - label: Guide-Sync
+      - label: Hardlinks/Docker
+      - label: Hardlinks/Dockstarter
+      - label: Hardlinks/Native
+      - label: Hardlinks/Synology
+      - label: Hardlinks/TrueNAS-Core
+      - label: Hardlinks/Unraid
+      - label: Misc
+      - label: Plex
+      - label: Prowlarr
+      - label: Radarr
+      - label: Sonarr
+      - label: Other
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: "## Describe the Error in the Guide"
+- type: textarea
+  attributes:
+    label: "Description"
+    description: "A clear and concise description of what the bug is."
+    placeholder: "Describe the bug..."
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: "## Expected behavior"
+- type: textarea
+  attributes:
+    label: "Expected Behavior"
+    description: "A clear and concise description of what you expected to happen."
+    placeholder: "Describe what you expected to happen..."
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: "## Screenshots"
+- type: textarea
+  attributes:
+    label: "Screenshots"
+    description: "If applicable, add screenshots to help explain your problem. You can add image URLs or use any other method to display the screenshot (provided GitHub supports it)."
+    placeholder: "Add screenshot..."
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: "## Additional context"
+- type: textarea
+  attributes:
+    label: "Additional Context"
+    description: "Add any other context about the problem here."
+    placeholder: "Add context..."
+  validations:
+    required: false
