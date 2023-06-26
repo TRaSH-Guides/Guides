@@ -1,5 +1,5 @@
 name: Request a Guide
-about: Request a Guide here
+description: Request a Guide here
 title: "[REQUEST]"
 labels: ["Type: Guide Request", "Status: Triage Needed"]
 body:
