@@ -320,7 +320,7 @@ Enable this option for automatic subtitles synchronization.
 !!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
-	
+
 ----
 
 Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
