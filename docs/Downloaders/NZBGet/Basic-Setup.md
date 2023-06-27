@@ -19,7 +19,7 @@
 
 ![!paths](images/paths.png)
 
-I will only explain the so called most important paths.
+I will only explain the "most important" paths.
 
 | Name        | Description                                                                          |
 | :---------- | :----------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ I will only explain the so called most important paths.
 | Name          | Description                                                                                   |
 | :------------ | :-------------------------------------------------------------------------------------------- |
 | `Active`      | Use this news server.                                                                         |
-| `Name`        | The name is used in UI and for logging. It can be any string.                                 |
+| `Name`        | The name is used in UI and for logging. (It can be any string.)                               |
 | `Level`       | Put your major download servers at level 0 and your fill servers at levels 1, 2, etc..        |
 | `Host`        | Host name of news server.                                                                     |
 | `Port`        | Port to connect to.                                                                           |
@@ -63,14 +63,14 @@ I will only explain the so called most important paths.
 ![!incoming](images/incoming.png)
 
 !!! info
-    `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
+  `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
 
 ![!queue](images/queue.png)
 
 !!! warning
-    `WriteBuffer`: If you're low on memory don't set this to high.
+  `WriteBuffer`: If you're low on memory, don't set this too high.
 
 ## LOGGING
 
@@ -85,46 +85,46 @@ I will only explain the so called most important paths.
 ![!unpack](images/unpack.png)
 
 !!! info
-    `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
+  `DirectUnpack`: This might lower your download speed, but the overall time could be faster. **Note:** Disable this on low powered devices.
 
 ## EXTENSION SCRIPTS
 
 ![!extScripts](images/extScripts.png)
 
-Depending if you're using some NZBGet script here you can change the order or when it should be used
+If you're using some NZBGet scripts, here you can change the order or when they should be used
 
 ------
 
 ## Recommended Sonarr/Radarr Settings
 
-The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
-Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
+The following settings are recommended for Sonarr/Radarr. If you do not use these settings, Sonarr/Radarr could miss downloads that are still in the queue/history.
+(Sonarr/Radarr only look at the last xx amount in the queue/history.)
 
 ### Sonarr
 
 ??? example "Sonarr"
 
-    `Settings` => `Download Clients`
+  `Settings` => `Download Clients`
 
-    ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
+  ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3.
+  Make sure you check both boxes under `Completed Download Handling` at step 3.
 
-    Select NZBGet at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+  Select NZBGet at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
-    ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-nzbget.png)
+  ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-nzbget.png)
 
 ### Radarr
 
 ??? example "Radarr"
 
-    `Settings` => `Download Clients`
+  `Settings` => `Download Clients`
 
-    ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
+  ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3,
+  Make sure you check both boxes under `Completed Download Handling` at step 3,
 
-    and both boxes under `Failed Download Handling` at step 4.
+  and both boxes under `Failed Download Handling` at step 4.
 
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
