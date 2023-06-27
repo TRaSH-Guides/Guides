@@ -347,15 +347,6 @@
       }
     },
     {
-      "name": "MTBB",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MTBB)\\b"
-      }
-    },
-    {
       "name": "Commie",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

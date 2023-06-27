@@ -1,39 +1,49 @@
-name: Build mkdocs and deploy to GitHub Pages
+name: Build and Deploy Docs
 
 on: [push, pull_request]
 
 jobs:
-
   build:
     name: Build docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
-      - uses: actions/setup-python@v4.6.1
+      - name: Checkout repository
+        uses: actions/checkout@v3.5.3
+      - name: Set up Python
+        uses: actions/setup-python@v4.6.1
         with:
           python-version: 3.x
-      - uses: actions/cache@v3.3.1
+      - name: Cache dependencies
+        uses: actions/cache@v3.3.1
         with:
-          key: ${{ github.ref }}
           path: .cache
-      - run: pip install -r docs/requirements.txt
-      - run: mkdocs build
-
+          key: ${{ runner.os }}-build-${{ hashFiles('docs/requirements.txt') }}
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+      - name: Build documentation
+        run: mkdocs build
   deploy:
     if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
     needs: build
     name: Deploy docs
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3.5.3
+      - name: Checkout repository
+        uses: actions/checkout@v3.5.3
         with:
           fetch-depth: '0'
-      - uses: actions/setup-python@v4.6.1
+      - name: Set up Python
+        uses: actions/setup-python@v4.6.1
         with:
           python-version: 3.x
-      - uses: actions/cache@v3.3.1
+      - name: Cache dependencies
+        uses: actions/cache@v3.3.1
         with:
-          key: ${{ github.ref }}
           path: .cache
-      - run: pip install -r docs/requirements.txt
-      - run: mkdocs gh-deploy --force
+          key: ${{ runner.os }}-build-${{ hashFiles('docs/requirements.txt') }}
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force

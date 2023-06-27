@@ -3,23 +3,51 @@
   "trash_score": "25",
   "name": "Criterion Collection",
   "includeCustomFormatWhenRenaming": true,
-  "specifications": [{
-          "name": "Criterion",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "criterion"
-          }
-      },
-      {
-          "name": "CC",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\bCC\\b"
-          }
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
       }
+    },
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Criterion",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Criterion)\\b"
+      }
+    },
+    {
+      "name": "CC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CC)\\b"
+      }
+    },
+    {
+      "name": "Not Criterion RlsGrp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "^(Criterion)$"
+      }
+    }
   ]
 }

@@ -8,7 +8,7 @@
       "negate": false,
       "required": true,
       "fields": {
-          "value": "\\bMulti(\\b|\\d)"
+          "value": "\\b(Multi)(?![ ._-]?sub(s)?)(\\b|\\d)"
       }
   }]
 }

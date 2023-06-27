@@ -111,6 +111,24 @@
       "fields": {
         "value": "\\b(URANIME)\\b"
       }
+    },
+    {
+      "name": "VARYG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(VARYG)\\b(?=.*Multi[ _-]?Sub)"
+      }
+    },
+    {
+      "name": "ZigZag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZigZag)\\b(?=.*Multi[ _-]?Sub)"
+      }
     }
   ]
 }
