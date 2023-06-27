@@ -495,7 +495,7 @@ FanSubs 3rd Tier
 
 !!! note
 
-    These are extra parameters that can help and are not needed but are nice to have. They are set low mainly to supercede themselves and not interfere with other releases.
+    These are extra parameters that can help and are not needed but are nice to have. They are set low mainly to supersede themselves and not interfere with other releases.
 
 Add this to your Preferred with a score of **[1]**
 
@@ -553,7 +553,7 @@ Sub-Par Releases 1st Tier (Re-encoded to crap or really small filesizes) (Little
 
 Add this to your Preferred with a score of **[-15000]**
 
-Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Seperated onto separate lines for readability)
+Sub-Par Releases 2nd Tier (Re-encoded to crap or really small filesizes) (Separated onto separate lines for readability)
 
 ```bash
 /(\[Pixel\]|-Pixel\b\[EDGE\]|-EDGE\b|\[Ranger\]|-Ranger\b)/i
