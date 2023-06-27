@@ -17,10 +17,9 @@ jobs:
 
       - name: Run yamllint
         run: |
-          find "${GITHUB_WORKSPACE}" -name '*.yml' -exec \
-            docker run --rm \
-            -v "${GITHUB_WORKSPACE}":"${GITHUB_WORKSPACE}" \
-            -w "${GITHUB_WORKSPACE}" \
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}":/yaml \
             peterdavehello/yamllint \
-            yamllint -c yamllint.yml \
-            {} +
+            yamllint \
+            -c "/yaml/yamllint.yml" \
+            .
