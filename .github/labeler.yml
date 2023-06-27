@@ -1,29 +1,29 @@
 "Area: Backend":
   - all:
       - "docs/**/*.md"
-      - "!docs/bazarr/**"
-      - "!docs/downloaders/**"
-      - "!docs/plex/**"
-      - "!docs/prowlarr/**"
-      - "!docs/radarr/**"
+      - "!docs/Bazarr/**"
+      - "!docs/Downloaders/**"
+      - "!docs/Plex/**"
+      - "!docs/Prowlarr/**"
+      - "!docs/Radarr/**"
       - "!docs/recyclarr-configs/**"
-      - "!docs/sonarr/**"
+      - "!docs/Sonarr/**"
 "Area: Bazarr":
-  - docs/bazarr/**
+  - docs/Bazarr/**
 "Area: Dependencies":
   - package.json
   - package-lock.json
 "Area: Downloaders":
-  - docs/downloaders/**
+  - docs/Downloaders/**
 "Area: Plex":
-  - docs/plex/**
+  - docs/Plex/**
 "Area: Prowlarr":
-  - docs/prowlarr/**
+  - docs/Prowlarr/**
 "Area: Radarr":
   - docs/json/radarr/cf/**
   - docs/json/radarr/quality-size/**
   - docs/json/radarr/naming/**
-  - docs/radarr/**
+  - docs/Radarr/**
 "Area: Recyclarr":
   - docs/recyclarr-configs/**
 "Area: Sonarr":
@@ -31,7 +31,7 @@
   - docs/json/sonarr/cf/**
   - docs/json/sonarr/quality-size/**
   - docs/json/sonarr/naming/**
-  - docs/sonarr/**
+  - docs/Sonarr/**
 "Area: Starr Custom Formats":
   - docs/json/radarr/cf/**
   - docs/json/sonarr/cf/**
