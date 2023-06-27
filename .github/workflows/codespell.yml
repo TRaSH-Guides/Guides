@@ -1,0 +1,15 @@
+name: Codespell Check
+on: [push, pull_request]
+jobs:
+  codespell:
+    name: Codespell
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Run Codespell
+        uses: codespell-project/actions-codespell@v1
+        with:
+          only_warn: 1
+          files: docs/**/*.md
+          ignore_words_file: .codespellignore
