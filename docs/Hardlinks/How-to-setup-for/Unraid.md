@@ -2,11 +2,11 @@
 
 !!! note
 
-    First, if you have been watching Spaceinvader One Youtube tutorials, forget those suggested paths.
+  First, if you have been watching Spaceinvader One Youtube tutorials, forget those suggested paths.
 
-    Second, don't use the predefined paths from the Unraid templates.
+  Second, don't use the predefined paths from the Unraid templates.
 
-    (Spaceinvader One YouTube guides are great to learn how to start with Unraid or how to setup certain applications, and yes I did and still do use them. However, he's probably only using those paths because they are predefined in the template.)
+  (Spaceinvader One YouTube guides are great to learn how to start with Unraid or how to setup certain applications, and yes I did and still do use them. However, he's probably only using those paths because they are predefined in the template.)
 
 ------
 
@@ -32,11 +32,11 @@ Go to your dashboard, and on the top, select `shares` => `add share` .
 
 !!! note
 
-    Tegarding the use of the Cache drive, keep in mind the mover can't move files that are in use (like when seeding with torrents). You will need to stop/pause the torrents so the mover can move them to your Array.
+  Tegarding the use of the Cache drive, keep in mind the mover can't move files that are in use (like when seeding with torrents). You will need to stop/pause the torrents so the mover can move them to your Array.
 
-    !!! tip "If you use qBittorrent, you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}."
+  !!! tip "If you use qBittorrent, you can automate the process by following the following Guide [HERE](/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/){:target="_blank" rel="noopener noreferrer"}."
 
-    With Usenet, you won't have any issues.
+  With Usenet, you won't have any issues.
 
 ------
 
@@ -85,7 +85,7 @@ qBittorrent, Deluge, ruTorrent
 
 !!! info
 
-    The reason we use `/data/torrents/` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and can then sort into subfolders like `/data/torrents/{tv|movies|music}`.
+  The reason we use `/data/torrents/` for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and can then sort into subfolders like `/data/torrents/{tv|movies|music}`.
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-torrents.md" !}
 
@@ -103,7 +103,7 @@ NZBGet or SABnzbd
 
 !!! info
 
-    The reason we use `/data/usenet/` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and can then sort into subfolders like `/data/usenet/{tv|movies|music}`.
+  The reason we use `/data/usenet/` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and can then sort into subfolders like `/data/usenet/{tv|movies|music}`.
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-usenet.md" !}
 
@@ -121,7 +121,7 @@ Sonarr, Radarr and Lidarr
 
 !!! info
 
-    Sonarr, Radarr and Lidarr get access to everything, because the download and media folder(s) will look like and be one file system. Hard links will work and moves will be atomic (instead of `copy + delete`).
+  Sonarr, Radarr and Lidarr get access to everything, because the download and media folder(s) will look like and be one file system. Hard links will work and moves will be atomic (instead of `copy + delete`).
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
@@ -139,7 +139,7 @@ Plex, Emby, JellyFin and Bazarr
 
 !!! info
 
-    Plex, Emby, JellyFin and Bazarr only need access to your media library, which can have any number of subfolders like Movies, Kids Movies, TV, Documentary TV, or Music.
+  Plex, Emby, JellyFin and Bazarr only need access to your media library, which can have any number of subfolders like Movies, Kids Movies, TV, Documentary TV, or Music.
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-media.md" !}
 
@@ -155,13 +155,13 @@ Plex, Emby, JellyFin and Bazarr
 
 !!! tip ""
 
-    Big Thanks to IBRACORP for noticing this Guide and creating a video covering this Unraid section.
+  Big Thanks to IBRACORP for noticing this Guide and creating a video covering this Unraid section.
 
-    I added the video to the end because I want the user to actually learn and understand why this folder structure is recommended before going straight to the YouTube video.
+  I added the video to the end because I want the user to actually learn and understand why this folder structure is recommended before going straight to the YouTube video.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    Also check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}.
+  Also check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}.
 
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->

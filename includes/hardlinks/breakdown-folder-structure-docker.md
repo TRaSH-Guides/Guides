@@ -16,9 +16,9 @@ Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
-    volumes:
-      [...]
-      - /<path_to_data>/data/torrents:/data/torrents
+  volumes:
+    [...]
+    - /<path_to_data>/data/torrents:/data/torrents
 [...]
 ```
 
@@ -38,9 +38,9 @@ Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
-    volumes:
-      [...]
-      - /<path_to_data>/data/usenet:/data/usenet
+  volumes:
+    [...]
+    - /<path_to_data>/data/usenet:/data/usenet
 [...]
 ```
 
@@ -60,9 +60,9 @@ Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
-    volumes:
-      [...]
-      - /<path_to_data>/data:/data
+  volumes:
+    [...]
+    - /<path_to_data>/data:/data
 [...]
 ```
 
@@ -82,9 +82,9 @@ Abbreviated Docker-compose Volumes Example:
 
 ```none
 [...]
-    volumes:
-      [...]
-      - /<path_to_data>/data/media:/data/media
+  volumes:
+    [...]
+    - /<path_to_data>/data/media:/data/media
 [...]
 ```
 

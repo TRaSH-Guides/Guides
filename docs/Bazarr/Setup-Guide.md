@@ -2,8 +2,8 @@
 
 !!! note
 
-    In this guide we will try to explain the basic setup you need to get started with Bazarr.
-    For a more detailed view of all the settings, check the following [LINK](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"}.
+  In this guide we will try to explain the basic setup you need to get started with Bazarr.
+  For a more detailed view of all the settings, check the following [LINK](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"}.
 
 Before Bazarr works, we need to setup and configure a few settings.
 
@@ -28,23 +28,23 @@ Click `Enabled`.
 1. Enable Sonarr.
 1. Enter the hostname or the IP address of the computer running your Sonarr instance.
 
-    !!! info
+  !!! info
 
-        **When using Bazarr in Docker, you *cannot* reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
+    **When using Bazarr in Docker, you *cannot* reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Sonarr instance (default is 8989).
 1. Sonarr uses the Base URL *only* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and *must* have a leading slash if it is needed (ex: /sonarr).
 
-    !!! info
+  !!! info
 
-        **If you don't use a reverse proxy, or don't know what it is, leave this empty!**
+    **If you don't use a reverse proxy, or don't know what it is, leave this empty!**
 
 1. Enter your Sonarr API key here.
 1. Enable this if your Sonarr instance is exposed through SSL.
 
-    !!! info
+  !!! info
 
-        **This is not needed if you reach it with a local IP address.**
+    **This is not needed if you reach it with a local IP address.**
 
 1. Click the `Test` button after filling in all the fields. Make sure the test is successful before you proceed.
 
@@ -54,15 +54,15 @@ Click `Enabled`.
 
 1. Select the minimum score (in percentage) required for a subtitle file to be downloaded.
 
-    !!! info
+  !!! info
 
-        **Are your subs often out of sync or just bad? Raise the score!**
+    **Are your subs often out of sync or just bad? Raise the score!**
 
 1. Episodes from series with those tags (case sensitive) in Sonarr will be excluded from automatic downloading of subtitles. In Sonarr, you add a custom tag to a show. In this case the shows with these tags will be ignored by Bazarr.
 
 1. Episodes from series with these types in Sonarr will be excluded from automatic downloading of subtitles.
 
-    Options: `Standard`, `Anime`, `Daily`
+  Options: `Standard`, `Anime`, `Daily`
 
 1. Automatic downloading of subtitles will only happen for monitored shows/episodes in Sonarr.
 
@@ -70,9 +70,9 @@ Click `Enabled`.
 
 !!! note
 
-    You should only use this section if Sonarr and Bazarr use a different path to access the same files.
+  You should only use this section if Sonarr and Bazarr use a different path to access the same files.
 
-    (For example: if you run Sonarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
+  (For example: if you run Sonarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
 
 ![!Sonarr Path Mappings](images/qs-sonarr-path-mappings-add.png)
 
@@ -85,21 +85,21 @@ Click `Add` and you will get an extra option:
 
 !!! warning
 
-    **IF YOU HAVE THE SAME VALUES ON BOTH SIDES, YOU DON'T NEED PATH MAPPING!**
+  **IF YOU HAVE THE SAME VALUES ON BOTH SIDES, YOU DON'T NEED PATH MAPPING!**
 
-    **USING PATH MAPPING IF THIS IS THE CASE CAN CAUSE ERRORS.**
+  **USING PATH MAPPING IF THIS IS THE CASE CAN CAUSE ERRORS.**
 
 ![!Sonarr Path Mappings Mapped](images/qs-sonarr-path-mappings-mapped.png)
 
 !!! info
 
-    *If everything runs on Docker, you normally don't need to use this. However, if you have messed up paths, then it would be smarter to fix those first.*
+  *If everything runs on Docker, you normally don't need to use this. However, if you have messed up paths, then it would be smarter to fix those first.*
 
-    Please review the hardlink tutorial [HERE](https://trash-guides.info/hardlinks){:target="_blank" rel="noopener noreferrer"}.
+  Please review the hardlink tutorial [HERE](https://trash-guides.info/hardlinks){:target="_blank" rel="noopener noreferrer"}.
 
 !!! danger "Don't forget to save your settings!!!"
 
-    ![Save](images/qs-save.png)
+  ![Save](images/qs-save.png)
 
 ----
 
@@ -120,23 +120,23 @@ Click `Enabled`.
 1. Enable Radarr.
 1. Enter the hostname or the IP address of the computer running your Radarr instance.
 
-    !!! info
+  !!! info
 
-        **When using Bazarr in Docker, you *cannot* reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
+    **When using Bazarr in Docker, you *cannot* reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Radarr instance (default is 7878).
 1. Radarr uses the Base URL *only* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and *must* have a leading slash if it is needed (ex: /radarr).
 
-    !!! info
+  !!! info
 
-        **If you don't use a reverse proxy, or don't know what it is, leave this empty!**
+    **If you don't use a reverse proxy, or don't know what it is, leave this empty!**
 
 1. Enter your Radarr API key here.
 1. Enable this if your Radarr instance is exposed through SSL.
 
-    !!! info
+  !!! info
 
-        **This is not needed if you reach it with a local IP address.**
+    **This is not needed if you reach it with a local IP address.**
 
 1. Click the `Test` button after filling in all the fields. Make sure the test is successful before you proceed.
 
@@ -146,9 +146,9 @@ Click `Enabled`.
 
 1. Select the minimum score (in percentage) required for a subtitle file to be downloaded.
 
-    !!! info
+  !!! info
 
-        **Are your subs often out of sync or just bad? Raise the score!**
+    **Are your subs often out of sync or just bad? Raise the score!**
 
 1. Movies with those tags (case sensitive) in Radarr will be excluded from automatic downloading of subtitles. In Radarr you add a custom tag to a movie.
 
@@ -158,9 +158,9 @@ Click `Enabled`.
 
 !!! note
 
-    You should only use this section if Radarr and Bazarr use a different path to access the same files.
+  You should only use this section if Radarr and Bazarr use a different path to access the same files.
 
-    (for example if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
+  (for example if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
 
 ![!Radarr Path Mappings](images/qs-radarr-path-mappings-add.png)
 
@@ -173,21 +173,21 @@ Click on `Add` and you will get an extra option
 
 !!! warning
 
-    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
+  **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
-    **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.**
+  **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.**
 
 ![!Path Mappings Radarr Mapped](images/qs-radarr-path-mappings-mapped.png)
 
 !!! info
 
-    *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.*
+  *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.*
 
-    Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
+  Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
 
 !!! danger "Don't forget to save your settings!!!"
 
-    ![Save](images/qs-save.png)
+  ![Save](images/qs-save.png)
 
 ----
 
@@ -203,9 +203,9 @@ Here we're going to configure which subtitle languages you prefer/want.
 
 !!! warning
 
-    **We don't recommend enabling `Single Language` option unless absolutely required (ie: media player not supporting language code in subtitles filename). Results may vary.
+  **We don't recommend enabling `Single Language` option unless absolutely required (ie: media player not supporting language code in subtitles filename). Results may vary.
 
-    Be aware the language code (ex.: en) is not going to be included in the subtitles file name when enabling this.**
+  Be aware the language code (ex.: en) is not going to be included in the subtitles file name when enabling this.**
 
 ![!Subtitles Language](images/qs-subtitles-language.png)
 
@@ -224,19 +224,19 @@ Select `Add New Profile`
 1. How you want to name your language profile.
 1. Click on `Add` to add the languages you enabled earlier in [Subtitle Language](#subtitles-language).
 1. Select the languages you want to enable for your profile (Including the optional settings).
-    - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="_blank" rel="noopener noreferrer"}
-    - HI => Hearing Impaired
-    - Exclude Audio => Exclude if matching audio
+  - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="_blank" rel="noopener noreferrer"}
+  - HI => Hearing Impaired
+  - Exclude Audio => Exclude if matching audio
 1. Optional select the cutoff where you want Bazarr to stop downloading other languages.
 1. Save your settings.
 
 ??? info "Cutoff"
 
-    ![!Cutoff](images/qs-cutoff.png)
+  ![!Cutoff](images/qs-cutoff.png)
 
-    So you can have a profile that states: English, Dutch, German, French
-    With cutoff Dutch, if it finds Dutch, it will download it and call it a day.
-    If no Dutch is found it will continue searching the other languages till Dutch is found.
+  So you can have a profile that states: English, Dutch, German, French
+  With cutoff Dutch, if it finds Dutch, it will download it and call it a day.
+  If no Dutch is found it will continue searching the other languages till Dutch is found.
 
 ### Default Settings
 
@@ -246,7 +246,7 @@ Automatically applied `Languages Profiles` to Series and Movies added to Bazarr 
 
 !!! danger "Don't forget to Save your settings !!!"
 
-    ![Save](images/qs-save.png)
+  ![Save](images/qs-save.png)
 
 ----
 
@@ -266,11 +266,11 @@ Here we're going to select which subtitle providers you want to use.
 
 !!! tip
 
-    If possible don't forget to support them for their free service
+  If possible don't forget to support them for their free service
 
 !!! danger "Don't forget to save your settings!!!"
 
-    ![Save](images/qs-save.png)
+  ![Save](images/qs-save.png)
 
 ----
 
@@ -301,7 +301,7 @@ Here you can select which Anti-Captcha provider you want to use.
 
 !!! tip
 
-    We recommend the following provider: <https://anti-captcha.com/>
+  We recommend the following provider: <https://anti-captcha.com/>
 
 ### Performance / Optimization
 
@@ -319,7 +319,7 @@ Enable this option for automatic subtitles synchronization.
 
 !!! danger "Don't forget to save your settings!!!"
 
-    ![Save](images/qs-save.png)
+  ![Save](images/qs-save.png)
 
 ----
 
@@ -329,7 +329,7 @@ Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
 !!! tip
 
-    **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/)!!!**
+  **Don't forget [After Install Configuration](/Bazarr/After-install-configuration/)!!!**
 
 ----
 
