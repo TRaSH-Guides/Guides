@@ -12,7 +12,7 @@ The reason we use `/data/torrents` for the torrent client is because it only nee
 
 `Host Path:` => `/<path_to_data>/data/torrents/`
 
-Abbreviated Docker-compose Volumes Example:
+Docker-compose Volumes Example Snippe:
 
 ```none
 [...]
@@ -34,7 +34,7 @@ The reason we use `/data/usenet` for the usenet client is because it only needs 
 
 `Host Path:` => `/<path_to_data>/data/usenet/`
 
-Abbreviated Docker-compose Volumes Example:
+Docker-compose Volumes Example Snippe:
 
 ```none
 [...]
@@ -56,7 +56,7 @@ Sonarr, Radarr, Readarr and Lidarr get access to everything in `/data` because t
 
 `Host Path:` => `/<path_to_data>/data/`
 
-Abbreviated Docker-compose Volumes Example:
+Docker-compose Volumes Example Snippe:
 
 ```none
 [...]
@@ -78,7 +78,7 @@ Plex, Emby, JellyFin and Bazarr only need access to your media library using `/d
 
 `Host Path:` => `/<path_to_data>/data/media/`
 
-Abbreviated Docker-compose Volumes Example:
+Docker-compose Volumes Example Snippe:
 
 ```none
 [...]
