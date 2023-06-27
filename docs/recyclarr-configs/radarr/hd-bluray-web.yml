@@ -27,6 +27,7 @@ radarr:
           # HQ Release Groups
           - ed27ebfef2f323e964fb1f61391bcb35  # HD Bluray Tier 01
           - c20c8647f2746a1f4c4262b0fbbeeeae  # HD Bluray Tier 02
+          - 5608c71bcebba0a5e666223bae8c9227  # HD Bluray Tier 03
           - c20f169ef63c5f40c2def54abaf4438e  # WEB Tier 01
           - 403816d65392c79236dcb6dd591aeda4  # WEB Tier 02
           - af94e0fe497124d1f9ce732069ec8c3b  # WEB Tier 03

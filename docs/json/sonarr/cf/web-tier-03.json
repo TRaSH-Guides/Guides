@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "NINJACENTRAL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NINJACENTRAL)$"
+      }
+    },
+    {
       "name": "SLiGNOME",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

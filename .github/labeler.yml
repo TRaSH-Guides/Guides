@@ -1,0 +1,47 @@
+"Area: Backend":
+  - all:
+      - "docs/**/*.md"
+      - "!docs/Bazarr/**"
+      - "!docs/Downloaders/**"
+      - "!docs/Plex/**"
+      - "!docs/Prowlarr/**"
+      - "!docs/Radarr/**"
+      - "!docs/recyclarr-configs/**"
+      - "!docs/Sonarr/**"
+"Area: Bazarr":
+  - docs/Bazarr/**
+"Area: Dependencies":
+  - package.json
+  - package-lock.json
+"Area: Downloaders":
+  - docs/Downloaders/**
+"Area: Plex":
+  - docs/Plex/**
+"Area: Prowlarr":
+  - docs/Prowlarr/**
+"Area: Radarr":
+  - docs/json/radarr/cf/**
+  - docs/json/radarr/quality-size/**
+  - docs/json/radarr/naming/**
+  - docs/Radarr/**
+"Area: Recyclarr":
+  - docs/recyclarr-configs/**
+"Area: Sonarr":
+  - docs/json/sonarr/rp/**
+  - docs/json/sonarr/cf/**
+  - docs/json/sonarr/quality-size/**
+  - docs/json/sonarr/naming/**
+  - docs/Sonarr/**
+"Area: Starr Custom Formats":
+  - docs/json/radarr/cf/**
+  - docs/json/sonarr/cf/**
+"Area: Starr Naming":
+  - docs/json/radarr/naming/**
+  - docs/json/sonarr/naming/**
+"Area: github_actions":
+  - .github/workflows/**
+  - .github/dependabot.yml
+  - .github/labeler.yml
+  - .github/stale.yml
+"Area: python":
+  - "**/*.py"

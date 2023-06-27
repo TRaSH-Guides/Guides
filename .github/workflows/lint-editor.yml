@@ -1,0 +1,14 @@
+name: Lint - EditorConfig
+
+on: [push, pull_request]
+
+jobs:
+  editorconfig-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - name: editorconfig-checker
+        run: |
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}":/check \
+            mstruebing/editorconfig-checker

@@ -1,0 +1,26 @@
+name: Lint - YAML
+
+on:
+  push:
+    paths:
+      - "**/*.yml"
+  pull_request:
+    paths:
+      - "**/*.yml"
+
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.5.3
+
+      - name: Run yamllint
+        run: |
+          find "${GITHUB_WORKSPACE}" -name '*.yml' -exec \
+            docker run --rm \
+            -v "${GITHUB_WORKSPACE}":"${GITHUB_WORKSPACE}" \
+            -w "${GITHUB_WORKSPACE}" \
+            peterdavehello/yamllint \
+            yamllint -c yamllint.yml \
+            {} +

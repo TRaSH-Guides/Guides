@@ -44,7 +44,6 @@
 
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
-    | [{{ radarr['cf']['hybrid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hybrid)                             | {{ radarr['cf']['hybrid']['trash_score'] }}               | {{ radarr['cf']['hybrid']['trash_id'] }}               |
     | [{{ radarr['cf']['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         | {{ radarr['cf']['remaster']['trash_score'] }}             | {{ radarr['cf']['remaster']['trash_id'] }}             |
     | [{{ radarr['cf']['4k-remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster)                   | {{ radarr['cf']['4k-remaster']['trash_score'] }}          | {{ radarr['cf']['4k-remaster']['trash_id'] }}          |
     | [{{ radarr['cf']['criterion-collection']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#criterion-collection) | {{ radarr['cf']['criterion-collection']['trash_score'] }} | {{ radarr['cf']['criterion-collection']['trash_id'] }} |
@@ -72,15 +71,16 @@
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                | {{ radarr['cf']['web-tier-03']['trash_score'] }} | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
     | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    |                                   :warning: 1100 | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
     | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    |                                   :warning: 1050 | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    |                                   :warning: 1000 | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/sqp/radarr-unwanted-uhd.md" !}
+{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
 ??? abstract "Optional - [CLICK TO EXPAND]"
 
-    !!! danger "**The `x265 (no HDR/DV)` is a MUST for this SQP** :warning:"
-    !!! danger "**The `SDR` is a MUST for this SQP** :warning:"
+    !!! tip "**I recommend to use the `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning, :warning: Only ever include one of them :warning:**"
+    !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
 
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
