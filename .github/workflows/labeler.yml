@@ -3,9 +3,6 @@ name: Label Pull Requests
 on:
   - pull_request_target
 
-inputs:
-  sync-labels: true
-
 jobs:
   triage:
     permissions:
@@ -14,3 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/labeler@v4
+        with:
+          sync-labels: true
