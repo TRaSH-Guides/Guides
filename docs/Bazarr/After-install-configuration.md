@@ -1,12 +1,12 @@
 
-# After Install Configuration
+# After-Install Configuration
 
 After you've installed everything, it's best to check your settings.
 
 !!! warning
-    Bazarr only searches for subs for Episodes and Movies that are added *after the install*.
+  Bazarr only searches for subs for Episodes and Movies that are added *after the install*.
 
-    You will need to set the preferred languages for your *existing* Shows and Movies.
+  You will need to set the preferred languages for your *existing* Shows and Movies.
 
 In this example, I will show you how to do that with the series.
 
@@ -17,7 +17,7 @@ Click `Mass Edit`.
 ![!select-all](images/select-all.png)
 
 1. Select all.
-1. Select your Language Profile you created earlier.
+1. Select the Language Profile you created earlier.
 1. Click `Save`.
 
 Then go back to your Movies home screen and do the same for your Movies.
