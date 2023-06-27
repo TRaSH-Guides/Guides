@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml"
+  ]
+}
