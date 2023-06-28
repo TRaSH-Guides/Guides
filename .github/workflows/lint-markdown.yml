@@ -1,14 +1,6 @@
 name: Lint - Markdown
 
-on:
-  push:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
-  pull_request:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
+on: [push, pull_request]
 
 jobs:
   markdownlint:
