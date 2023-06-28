@@ -1,12 +1,6 @@
 name: Label Pull Requests
 
-on:
-  pull_request_target:
-  push:
-    branches:
-      - master
-    paths:
-      - '**/labeler.yml'
+on: [pull_request_target, push]
 
 jobs:
   triage:
