@@ -5,12 +5,10 @@ on: [push, pull_request]
 jobs:
   triage:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Label Merge Conflicts
-        uses: mschilde/auto-label-merge-conflicts@master
+      - uses: mschilde/auto-label-merge-conflicts@master
         with:
           CONFLICT_LABEL_NAME: "Status: Conflicted"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
