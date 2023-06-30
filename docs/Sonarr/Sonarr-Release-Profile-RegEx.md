@@ -422,7 +422,7 @@ Add this to your `Preferred (3)` with a score of [1500]
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
+/(\[rartv\]|\[rarbg\]|\[eztv( re)?\]|\[TGx\])/i
 ```
 
 #### Optional - Dislike Obfuscated
