@@ -1,12 +1,6 @@
 name: Lint - YAML
 
-on:
-  push:
-    paths:
-      - "**/*.yml"
-  pull_request:
-    paths:
-      - "**/*.yml"
+on: [push, pull_request]
 
 jobs:
   yamllint:
