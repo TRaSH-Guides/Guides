@@ -4,6 +4,7 @@
     | [{{ radarr['cf']['amzn']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#amzn)   | 0                                          | {{ radarr['cf']['amzn']['trash_id'] }}  |
     | [{{ radarr['cf']['atvp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atvp)   | 0                                          | {{ radarr['cf']['atvp']['trash_id'] }}  |
     | [{{ radarr['cf']['bcore']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bcore) | {{ radarr['cf']['bcore']['trash_score'] }} | {{ radarr['cf']['bcore']['trash_id'] }} |
+    | [{{ radarr['cf']['crav']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#crav)   | 0                                          | {{ radarr['cf']['crav']['trash_id'] }}  |
     | [{{ radarr['cf']['crit']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#crit)   | {{ radarr['cf']['crit']['trash_score'] }}  | {{ radarr['cf']['crit']['trash_id'] }}  |
     | [{{ radarr['cf']['dsnp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dsnp)   | 0                                          | {{ radarr['cf']['dsnp']['trash_id'] }}  |
     | [{{ radarr['cf']['hbo']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hbo)     | 0                                          | {{ radarr['cf']['hbo']['trash_id'] }}   |
@@ -16,10 +17,9 @@
     | [{{ radarr['cf']['pcok']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcok)   | 0                                          | {{ radarr['cf']['pcok']['trash_id'] }}  |
     | [{{ radarr['cf']['pmtp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pmtp)   | 0                                          | {{ radarr['cf']['pmtp']['trash_id'] }}  |
     | [{{ radarr['cf']['stan']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#stan)   | 0                                          | {{ radarr['cf']['stan']['trash_id'] }}  |
-    | [{{ radarr['cf']['crev']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#crev)   | 0                                          | {{ radarr['cf']['crev']['trash_id'] }}  |
 
     ------
     Breakdown and Why
 
-    - These reason why these Custom Formats have a score of `0` is because they are mainly used for the naming scheme and other variables should decide for movies if a certain release if preferred.
+    - The reason why these Custom Formats have a score of `0` is because they are mainly used for the naming scheme and other variables should decide for movies if a certain release if preferred.
     - `BCore`, `CRiT` and `MA` are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.
