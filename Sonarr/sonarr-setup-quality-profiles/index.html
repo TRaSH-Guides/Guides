@@ -3207,9 +3207,9 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-unwanted-uhd.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-unwanted.md -->
 <details class="abstract">
-<summary>Unwanted UHD - [CLICK TO EXPAND]</summary>
+<summary>Unwanted - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3230,6 +3230,11 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <td>9c11cd3f07101cdba90a2d81cf0e56b4</td>
 </tr>
 <tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td>-10000</td>
+<td>47435ece6b99a0b477caf360e79ba0bb</td>
+</tr>
+<tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
 <td>-10000</td>
 <td>fbcb31d8dabd2a319072b84fc0b7249c</td>
@@ -3241,14 +3246,22 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <ul>
 <li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
-<li><strong>Extras:</strong> This blocks/ignores extra's</li>
+<li>
+<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+<li>
+<p><strong>Extras:</strong> This blocks/ignores extra's</p>
+</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional-uhd.md -->
 <details class="abstract">
-<summary>Optional UHD - [CLICK TO EXPAND]</summary>
+<summary>Optional (UHD) - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3314,7 +3327,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-uhd-streaming-services.md -->
 <details class="abstract">
-<summary>UHD Streaming Services - [CLICK TO EXPAND]</summary>
+<summary>Streaming Services (UHD) - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3988,7 +4001,7 @@ Being when you add a Custom Format what you prefer and you set it to something l
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 3, 2023 12:31:21</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 2, 2023 10:18:06</span>
       
     
   </small>
