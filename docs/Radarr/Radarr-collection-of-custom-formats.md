@@ -48,7 +48,7 @@ I also made 3 guides related to this one.
 ------
 
 | Movie Versions                                | Unwanted              | HQ Release Groups                         | Streaming Services         |
-|-----------------------------------------------|-----------------------|-------------------------------------------|----------------------------|
+| --------------------------------------------- | --------------------- | ----------------------------------------- | -------------------------- |
 | [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
 | [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [Remux Tier 03](#remux-tier-03)           | [Criterion Channel](#crit) |
@@ -64,6 +64,7 @@ I also made 3 guides related to this one.
 |                                               |                       |                                           | [Pathe Thuis](#pathe)      |
 |                                               |                       |                                           | [Bravia Core](#bcore)      |
 |                                               |                       |                                           | [Stan](#stan)              |
+|                                               |                       |                                           | [Crave](#crav)             |
 
 ------
 
@@ -1894,6 +1895,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/stan.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Crav
+
+<sub>Crave</sub>
+
+??? question "CRAVE - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

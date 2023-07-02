@@ -69,6 +69,7 @@ I also made 3 guides related to this one.
 |                       |                       |                                         | [SALTO](#salto)                             |
 |                       |                       |                                         | [RTBF](#rtbf)                               |
 |                       |                       |                                         | [Comedy Central](#cc)                       |
+|                       |                       |                                         | [Crave](#crav)                              |
 |                       |                       |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
 |                       |                       |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
 
@@ -1749,6 +1750,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Crav
+
+<sub>Crave</sub>
+
+??? question "CRAVE - [CLICK TO EXPAND]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/crav.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

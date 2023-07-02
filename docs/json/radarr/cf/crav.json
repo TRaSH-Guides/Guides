@@ -1,0 +1,35 @@
+{
+  "trash_id": "f6ff65b3f4b464a79dcc75950fe20382",
+  "trash_regex": "https://regex101.com/r/eymcie/1",
+  "name": "CRAV",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Crave",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(crav(e)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
