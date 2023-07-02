@@ -1,3 +1,7 @@
+# 2023-07-02 18:20
+**[New]**
+- [Radarr and Sonarr] Added: Streaming Service Crave with a score of `0` mainly for the naming scheme. Used `CRAV` being most of the Scene uses `CRAV` over `CRAVE`.
+
 # 2023-06-30 21:01
 **[Updated]**
 - [Starr] Update logic for identifiying Retags by EZTV 
