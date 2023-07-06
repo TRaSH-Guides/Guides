@@ -166,7 +166,7 @@ If you use both then run both commands
 #### If you use usenet
 
 ```bash
-mkdir -p /volume1/data/{usenet/complete/{tv,movies,music},media/{tv,movies,music}}
+mkdir -p /volume1/data/usenet/{incomplete,complete/{movies,music,tv}}
 ```
 
 #### If you use torrents
@@ -362,3 +362,46 @@ You will notice that all the images will be downloaded, after that the container
 
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
+
+------
+
+## Additional Synology Info
+
+### DSM Task for correctly reporting IP in Plex/Nginx/Etc
+
+Due to some iptables configuration in DSM, you can incorrectly get IP reported in Plex or other apps that need an IP read. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.
+
+To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.
+
+??? question "Task bash command - [CLICK TO EXPAND]"
+
+        ```bash
+        #!/bin/bash
+        currentAttempt=0
+        totalAttempts=10
+        delay=15
+        
+        while [ $currentAttempt -lt $totalAttempts ]
+        do
+        	currentAttempt=$(( $currentAttempt + 1 ))
+        	
+        	echo "Attempt $currentAttempt of $totalAttempts..."
+        	
+        	result=$(iptables-save)
+        
+        	if [[ $result =~ "-A DOCKER -i docker0 -j RETURN" ]]; then
+        		echo "Docker rules found! Modifying..."
+        		
+        		iptables -t nat -A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER
+        		iptables -t nat -A PREROUTING -m addrtype --dst-type LOCAL ! --dst 127.0.0.0/8 -j DOCKER
+        		
+        		echo "Done!"
+        		
+        		break
+        	fi
+        	
+        	echo "Docker rules not found! Sleeping for $delay seconds..."
+        	
+        	sleep $delay
+        done
+        ```
