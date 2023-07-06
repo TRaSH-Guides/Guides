@@ -369,7 +369,7 @@ You will notice that all the images will be downloaded, after that the container
 
 ### DSM Task for correctly reporting IP in Plex/Nginx/Etc
 
-Due to some iptables configuration in DSM, you can incorrectly get IP reported in Plex or other apps that need an IP read. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.
+Due to some iptables configuration in DSM, you can get an incorrect IP reported in Plex or other apps that need an read/report the IP. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.
 
 To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.
 
