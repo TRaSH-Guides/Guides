@@ -166,7 +166,7 @@ If you use both then run both commands
 #### If you use usenet
 
 ```bash
-mkdir -p /volume1/data/usenet/{incomplete,complete/{movies,music,tv}}
+mkdir -p /volume1/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
 ```
 
 #### If you use torrents
