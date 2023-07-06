@@ -3272,7 +3272,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <hr />
 <h2 id="additional-synology-info">Additional Synology Info<a class="headerlink" href="#additional-synology-info" title="Permanent link"></a></h2>
 <h3 id="dsm-task-for-correctly-reporting-ip-in-plexnginxetc">DSM Task for correctly reporting IP in Plex/Nginx/Etc<a class="headerlink" href="#dsm-task-for-correctly-reporting-ip-in-plexnginxetc" title="Permanent link"></a></h3>
-<p>Due to some iptables configuration in DSM, you can incorrectly get IP reported in Plex or other apps that need an IP read. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.</p>
+<p>Due to some iptables configuration in DSM, you can get an incorrect IP reported in Plex or other apps that need an read/report the IP. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.</p>
 <p>To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.</p>
 <details class="question">
 <summary>Task bash command - [CLICK TO EXPAND]</summary>
@@ -3312,7 +3312,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 18:15:35</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 20:29:52</span>
       
     
   </small>
