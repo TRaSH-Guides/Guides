@@ -2996,47 +2996,50 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p>Can be found <a href="/Sonarr/Sonarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [100]</p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>amzn<span class="p">|</span>amazon<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>atvp<span class="p">|</span>aptv<span class="p">|</span>Apple<span class="w"> </span>TV<span class="se">\+</span><span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [95]</p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>sho<span class="p">|</span>showtime<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [90]</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dsnp<span class="p">|</span>dsny<span class="p">|</span>disney<span class="p">|</span>Disney<span class="se">\+</span><span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>nf<span class="p">|</span>netflix<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<p>Add this to your <code>Preferred (3)</code> with a score of [90]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">((</span>?&lt;!hbo<span class="o">[</span><span class="w"> </span>._-<span class="o">])</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [80]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hmax<span class="p">|</span>hbom<span class="p">|</span>hbo<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>qibi<span class="p">|</span>quibi<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hmax<span class="p">|</span>hbom<span class="p">|</span>hbo<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<p>Add this to your <code>Preferred (3)</code> with a score of [70]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>amzn<span class="p">|</span>amazon<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">((</span>?&lt;!hbo<span class="o">[</span><span class="w"> </span>._-<span class="o">])</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [85]</p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hulu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<p>Add this to your <code>Preferred (3)</code> with a score of [60]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>nf<span class="p">|</span>netflix<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>pcok<span class="p">|</span>Peacock<span class="w"> </span>TV<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [75]</p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dcu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hbo<span class="o">)(</span>?!<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>red<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>it<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>pmtp<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>stan<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>vdl<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<p>Add this to your <code>Preferred (3)</code> with a score of [50]</p>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>cc<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>crav<span class="o">(</span>e<span class="o">)</span>?<span class="o">)</span><span class="se">\b</span><span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span>?<span class="se">\b</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dcu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hbo<span class="o">)(</span>?!<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>max<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>hulu<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>it<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>nlz<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>cc<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>red<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>sho<span class="p">|</span>showtime<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>vdl<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
@@ -3063,9 +3066,6 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <div class="admonition warning">
 <p class="admonition-title">DO NOT Check mark <code>Include Preferred when Renaming</code> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [1800] <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-deflate<span class="p">|</span>-inflate<span class="o">)</span><span class="se">\b</span>/i
-</code></pre></div>
 <p>Add this to your <code>Preferred (3)</code> with a score of [1700]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-ABBIE<span class="p">|</span>-AJP69<span class="p">|</span>-APEX<span class="p">|</span>-CasStudio<span class="p">|</span>CRFW<span class="p">|</span>-CtrlHD<span class="p">|</span>-FLUX<span class="p">|</span><span class="se">\b</span>HONE<span class="p">|</span>-KiNGS<span class="p">|</span>-monkee<span class="p">|</span>NOSiViD<span class="p">|</span>-NTb<span class="p">|</span>-NTG<span class="p">|</span>-PAXA<span class="p">|</span>-PEXA<span class="p">|</span>-QOQ<span class="p">|</span>-RTN<span class="p">|</span>-SiC<span class="p">|</span>T6D<span class="p">|</span>-TOMMY<span class="p">|</span>-ViSUM<span class="p">|</span>-XEPA<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
@@ -3075,13 +3075,16 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 <p>Add this to your <code>Preferred (3)</code> with a score of [1600]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>-DRACULA<span class="p">|</span>SLiGNOME<span class="p">|</span>T4H<span class="p">|</span>-ViSiON<span class="p">|</span>SwAgLaNdEr<span class="p">|</span>-NINJACENTRAL<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [12]</p>
+<p>Add this to your <code>Preferred (3)</code> with a score of [1600] <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<div class="highlight"><pre><span></span><code>/<span class="o">(</span>-deflate<span class="p">|</span>-inflate<span class="o">)</span><span class="se">\b</span>/i
+</code></pre></div>
+<p>Add this to your <code>Preferred (3)</code> with a score of [7]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>repack3<span class="o">)</span>/i
 </code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [11]</p>
+<p>Add this to your <code>Preferred (3)</code> with a score of [6]</p>
 <div class="highlight"><pre><span></span><code>/<span class="o">(</span>repack2<span class="o">)</span>/i
 </code></pre></div>
-<p>Add this to your <code>Preferred (3)</code> with a score of [10]</p>
+<p>Add this to your <code>Preferred (3)</code> with a score of [5]</p>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>repack<span class="p">|</span>proper<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <div class="admonition danger">
@@ -3369,7 +3372,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <hr />
 <ol>
 <li id="fn:1">
-<p>The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the <a href="#release-sources-streaming-service">Release Sources (Streaming Service)</a> to their release name so they don't get the extra point of the release source regex.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>The reason why this one gets positively scored is because it's the only quality scene group that exists (up until now). Scene groups don't add a streaming service to their release names, so the score is adjusted to take this into account.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -3379,7 +3382,7 @@ Also they often even rename the release name in to Portuguese.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 30, 2023 15:06:04</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 19:22:42</span>
       
     
   </small>
