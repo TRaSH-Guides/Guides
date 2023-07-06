@@ -3276,31 +3276,34 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <p>To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.</p>
 <details class="question">
 <summary>Task bash command - [CLICK TO EXPAND]</summary>
-<div class="highlight"><pre><span></span><code><span class="err">```</span><span class="nx">bash</span>
-<span class="err">#</span><span class="p">!</span><span class="o">/</span><span class="nx">bin</span><span class="o">/</span><span class="nx">bash</span>
-<span class="nx">currentAttempt</span><span class="p">=</span><span class="mi">0</span>
-<span class="nx">totalAttempts</span><span class="p">=</span><span class="mi">10</span>
-<span class="nx">delay</span><span class="p">=</span><span class="mi">15</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nv">currentAttempt</span><span class="o">=</span><span class="m">0</span>
+<span class="nv">totalAttempts</span><span class="o">=</span><span class="m">10</span>
+<span class="nv">delay</span><span class="o">=</span><span class="m">15</span>
 
-<span class="k">while</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="err">$</span><span class="nx">currentAttempt</span><span class="w"> </span><span class="o">-</span><span class="nx">lt</span><span class="w"> </span><span class="err">$</span><span class="nx">totalAttempts</span><span class="w"> </span><span class="p">]</span>
-<span class="nx">do</span>
-<span class="w">    </span><span class="nx">currentAttempt</span><span class="p">=</span><span class="err">$</span><span class="p">((</span><span class="w"> </span><span class="err">$</span><span class="nx">currentAttempt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">))</span>
-<span class="w">    </span><span class="nx">echo</span><span class="w"> </span><span class="s">&quot;Attempt $currentAttempt of $totalAttempts...&quot;</span>
-<span class="w">    </span><span class="nx">result</span><span class="p">=</span><span class="err">$</span><span class="p">(</span><span class="nx">iptables</span><span class="o">-</span><span class="nx">save</span><span class="p">)</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="err">\</span><span class="p">[</span><span class="err">\</span><span class="p">[</span><span class="w"> </span><span class="err">$</span><span class="nx">result</span><span class="w"> </span><span class="p">=</span><span class="o">~</span><span class="w"> </span><span class="s">&quot;-A DOCKER -i docker0 -j RETURN&quot;</span><span class="w"> </span><span class="err">\</span><span class="p">]</span><span class="err">\</span><span class="p">];</span><span class="w"> </span><span class="k">then</span>
-<span class="w">        </span><span class="nx">echo</span><span class="w"> </span><span class="s">&quot;Docker rules found! Modifying...&quot;</span>
+<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$currentAttempt</span><span class="w"> </span>-lt<span class="w"> </span><span class="nv">$totalAttempts</span><span class="w"> </span><span class="o">]</span>
+<span class="k">do</span>
+<span class="w">  </span><span class="nv">currentAttempt</span><span class="o">=</span><span class="k">$((</span><span class="w"> </span><span class="nv">$currentAttempt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">))</span>
 
-<span class="w">        </span><span class="nx">iptables</span><span class="w"> </span><span class="o">-</span><span class="nx">t</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="o">-</span><span class="nx">A</span><span class="w"> </span><span class="nx">PREROUTING</span><span class="w"> </span><span class="o">-</span><span class="nx">m</span><span class="w"> </span><span class="nx">addrtype</span><span class="w"> </span><span class="o">--</span><span class="nx">dst</span><span class="o">-</span><span class="k">type</span><span class="w"> </span><span class="nx">LOCAL</span><span class="w"> </span><span class="o">-</span><span class="nx">j</span><span class="w"> </span><span class="nx">DOCKER</span>
-<span class="w">        </span><span class="nx">iptables</span><span class="w"> </span><span class="o">-</span><span class="nx">t</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="o">-</span><span class="nx">A</span><span class="w"> </span><span class="nx">PREROUTING</span><span class="w"> </span><span class="o">-</span><span class="nx">m</span><span class="w"> </span><span class="nx">addrtype</span><span class="w"> </span><span class="o">--</span><span class="nx">dst</span><span class="o">-</span><span class="k">type</span><span class="w"> </span><span class="nx">LOCAL</span><span class="w"> </span><span class="p">!</span><span class="w"> </span><span class="o">--</span><span class="nx">dst</span><span class="w"> </span><span class="m m-Double">127.0.0.0</span><span class="o">/</span><span class="mi">8</span><span class="w"> </span><span class="o">-</span><span class="nx">j</span><span class="w"> </span><span class="nx">DOCKER</span>
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Attempt </span><span class="nv">$currentAttempt</span><span class="s2"> of </span><span class="nv">$totalAttempts</span><span class="s2">...&quot;</span>
 
-<span class="w">        </span><span class="nx">echo</span><span class="w"> </span><span class="s">&quot;Done!&quot;</span>
+<span class="w">  </span><span class="nv">result</span><span class="o">=</span><span class="k">$(</span>iptables-save<span class="k">)</span>
 
-<span class="w">        </span><span class="k">break</span>
-<span class="w">    </span><span class="nx">fi</span>
-<span class="w">    </span><span class="nx">echo</span><span class="w"> </span><span class="s">&quot;Docker rules not found! Sleeping for $delay seconds...&quot;</span>
-<span class="w">    </span><span class="nx">sleep</span><span class="w"> </span><span class="err">$</span><span class="nx">delay</span>
-<span class="nx">done</span>
-<span class="err">```</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="nv">$result</span><span class="w"> </span><span class="o">=</span>~<span class="w"> </span><span class="s2">&quot;-A DOCKER -i docker0 -j RETURN&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules found! Modifying...&quot;</span>
+
+<span class="w">    </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>-j<span class="w"> </span>DOCKER
+<span class="w">    </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>!<span class="w"> </span>--dst<span class="w"> </span><span class="m">127</span>.0.0.0/8<span class="w"> </span>-j<span class="w"> </span>DOCKER
+
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Done!&quot;</span>
+
+<span class="w">    </span><span class="k">break</span>
+<span class="w">  </span><span class="k">fi</span>
+
+<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules not found! Sleeping for </span><span class="nv">$delay</span><span class="s2"> seconds...&quot;</span>
+
+<span class="w">  </span>sleep<span class="w"> </span><span class="nv">$delay</span>
+<span class="k">done</span>
 </code></pre></div>
 </details>
 
@@ -3309,7 +3312,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 14:38:22</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 18:15:35</span>
       
     
   </small>
