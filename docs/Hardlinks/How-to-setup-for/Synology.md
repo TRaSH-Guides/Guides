@@ -386,7 +386,7 @@ To fix this, you will need to add a Scheduled Task that executes at boot with ro
             currentAttempt=$(( $currentAttempt + 1 ))
             echo "Attempt $currentAttempt of $totalAttempts..."
             result=$(iptables-save)
-            if [[ $result =~ "-A DOCKER -i docker0 -j RETURN" ]]; then
+            if \[\[ $result =~ "-A DOCKER -i docker0 -j RETURN" \]\]; then
                 echo "Docker rules found! Modifying..."
 
                 iptables -t nat -A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER
