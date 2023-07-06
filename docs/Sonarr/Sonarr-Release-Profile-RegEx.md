@@ -134,67 +134,43 @@ You will get a popup screen that will look like this:
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/\b(amzn|amazon)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
 /\b(atvp|aptv|Apple TV\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
-
-Add this to your `Preferred (3)` with a score of [95]
-
-```bash
-/\b(sho|showtime)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
 /\b(dsnp|dsny|disney|Disney\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-```bash
-/\b(nf|netflix)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
+Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
-/\b(qibi|quibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
+
+Add this to your `Preferred (3)` with a score of [80]
 
 ```bash
 /\b(hmax|hbom|hbo[ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/\b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(qibi|quibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [85]
+Add this to your `Preferred (3)` with a score of [70]
 
 ```bash
-/\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(amzn|amazon)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+Add this to your `Preferred (3)` with a score of [60]
+
+```bash
+/\b(nf|netflix)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
 /\b(pcok|Peacock TV)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-Add this to your `Preferred (3)` with a score of [75]
-
-```bash
-/\b(dcu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(red)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
@@ -205,8 +181,30 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(stan)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+Add this to your `Preferred (3)` with a score of [50]
+
 ```bash
-/\b(vdl)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(cc)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(crav(e)?)\b[ ._-]web[ ._-]?(dl|rip)?\b/i
+```
+
+```bash
+/\b(dcu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
@@ -214,7 +212,15 @@ Add this to your `Preferred (3)` with a score of [75]
 ```
 
 ```bash
-/\b(cc)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(red)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(sho|showtime)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(vdl)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 !!! danger "Caution"
@@ -242,12 +248,6 @@ Add this to your `Preferred (3)` with a score of [75]
 
 !!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
-Add this to your `Preferred (3)` with a score of [1800] [^1]
-
-```bash
-/(-deflate|-inflate)\b/i
-```
-
 Add this to your `Preferred (3)` with a score of [1700]
 
 ```bash
@@ -266,19 +266,25 @@ Add this to your `Preferred (3)` with a score of [1600]
 /(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr|-NINJACENTRAL)\b/i
 ```
 
-Add this to your `Preferred (3)` with a score of [12]
+Add this to your `Preferred (3)` with a score of [1600] [^1]
+
+```bash
+/(-deflate|-inflate)\b/i
+```
+
+Add this to your `Preferred (3)` with a score of [7]
 
 ```bash
 /(repack3)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [11]
+Add this to your `Preferred (3)` with a score of [6]
 
 ```bash
 /(repack2)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [10]
+Add this to your `Preferred (3)` with a score of [5]
 
 ```bash
 /\b(repack|proper)\b/i
@@ -639,4 +645,4 @@ If you want to be mentioned please message me on discord, including a link for p
 
 [^1]:
 
-    The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the [Release Sources (Streaming Service)](#release-sources-streaming-service) to their release name so they don't get the extra point of the release source regex.
+    The reason why this one gets positively scored is because it's the only quality scene group that exists (up until now). Scene groups don't add a streaming service to their release names, so the score is adjusted to take this into account.

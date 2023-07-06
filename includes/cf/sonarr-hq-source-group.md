@@ -7,4 +7,4 @@
     | [{{ sonarr['cf']['web-scene']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#web-scene) :exclamation: | {{ sonarr['cf']['web-scene']['trash_score'] }}   | {{ sonarr['cf']['web-scene']['trash_id'] }}   |
 
     !!! info
-        :exclamation: = The reason why this Custom Format get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the Release Sources (Streaming Services) to their release name so they don't get the extra point of the Streaming Services.
+        :exclamation: = The reason why this Custom Format gets positively scored is because it's the only quality scene group that exists (up until now). Scene groups don't add a streaming service to their release names, so the score is adjusted to take this into account.
