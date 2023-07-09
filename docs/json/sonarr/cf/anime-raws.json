@@ -4,10 +4,6 @@
   "name": "Anime Raws",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-    {
-      "name": "Anime Raws",
-      "includeCustomFormatWhenRenaming": false,
-      "specifications": [
         {
           "name": "Beatrice-Raws",
           "implementation": "ReleaseTitleSpecification",
@@ -163,5 +159,3 @@
         }
       ]
     }
-  ]
-}
