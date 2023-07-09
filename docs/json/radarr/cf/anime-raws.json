@@ -1,6 +1,4 @@
 {
-  "trash_id": "06b6542a47037d1e33b15aa3677c2365",
-  "trash_score": "-10000",
   "name": "Anime Raws",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,6 +18,15 @@
       "required": false,
       "fields": {
         "value": "Daddy[ ._-]?(Raws)"
+      }
+    },
+        {
+      "name": "Fumi-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Fumi[ ._-]?(Raws)"
       }
     },
     {
@@ -46,7 +53,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[km\\]|-km\\b "
+        "value": "\\[km\\]|-km\\b"
+      }
+    },
+    {
+      "name": "Koi-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Koi[ ._-]?(Raws)"
       }
     },
     {
