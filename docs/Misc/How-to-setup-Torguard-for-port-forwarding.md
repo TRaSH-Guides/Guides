@@ -66,7 +66,7 @@ For the best speed it's recommended to choose the one nearest to your location.
 !!! tip ""
     Sometimes you get better speeds if you use one of your neighboring countries.
 
-Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
+Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.torguard.org`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
@@ -78,7 +78,7 @@ Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secur
 Open a cmd window or something equal and type:
 
 ```bash
-    ping us-fl.secureconnect.me
+    ping us-fl.torguard.org
 ```
 
 You will then get the IP of the server.
