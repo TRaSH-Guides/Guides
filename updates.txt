@@ -1,3 +1,9 @@
+# 2023-07-09 12:40
+**[Updated]**
+- [Sonarr] Add OViD streaming service CF
+- [Radarr] Add OViD streaming service CF
+- [Guide] Updated streaming service
+
 # 2023-07-09 09:45
 **[Updated]**
 - [Sonarr] Updated Anime Raws CF to add Fumi-Raws and Koi-Raws
