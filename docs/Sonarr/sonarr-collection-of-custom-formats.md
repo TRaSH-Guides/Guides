@@ -1786,7 +1786,7 @@ I also made 3 guides related to this one.
 ??? example "JSON - [CLICK TO EXPAND]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
