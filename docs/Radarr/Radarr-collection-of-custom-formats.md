@@ -65,6 +65,7 @@ I also made 3 guides related to this one.
 |                                               |                       |                                           | [Bravia Core](#bcore)      |
 |                                               |                       |                                           | [Stan](#stan)              |
 |                                               |                       |                                           | [Crave](#crav)             |
+|                                               |                       |                                           | [OViD](#ovid)              |
 
 ------
 
@@ -1913,6 +1914,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### OViD
+
+<sub>OViD</sub>
+
+??? question "CRAVE - [CLICK TO EXPAND]"
+
+    [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
