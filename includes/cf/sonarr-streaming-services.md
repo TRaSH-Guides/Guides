@@ -1,6 +1,6 @@
 ??? abstract "Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                           | Score                                     | Trash ID                               |
-    | --------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
+    | :-------------------------------------------------------------------------------------- | :---------------------------------------- | :------------------------------------- |
     | [{{ sonarr['cf']['atvp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atvp) | {{ sonarr['cf']['atvp']['trash_score'] }} | {{ sonarr['cf']['atvp']['trash_id'] }} |
     | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp) | {{ sonarr['cf']['dsnp']['trash_score'] }} | {{ sonarr['cf']['dsnp']['trash_id'] }} |
     | [{{ sonarr['cf']['max']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#max)   | {{ sonarr['cf']['max']['trash_score'] }}  | {{ sonarr['cf']['max']['trash_id'] }}  |
@@ -21,3 +21,4 @@
     | [{{ sonarr['cf']['red']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#red)   | {{ sonarr['cf']['red']['trash_score'] }}  | {{ sonarr['cf']['red']['trash_id'] }}  |
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)   | {{ sonarr['cf']['sho']['trash_score'] }}  | {{ sonarr['cf']['sho']['trash_id'] }}  |
     | [{{ sonarr['cf']['vdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vdl)   | {{ sonarr['cf']['vdl']['trash_score'] }}  | {{ sonarr['cf']['vdl']['trash_id'] }}  |
+    | [{{ sonarr['cf']['ovid']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#ovid) | {{ sonarr['cf']['ovid']['trash_score'] }} | {{ sonarr['cf']['ovid']['trash_id'] }} |

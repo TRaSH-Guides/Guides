@@ -1779,7 +1779,7 @@ I also made 3 guides related to this one.
 
 <sub>OViD</sub>
 
-??? question "CRAVE - [CLICK TO EXPAND]"
+??? question "OViD - [CLICK TO EXPAND]"
 
     [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
 
