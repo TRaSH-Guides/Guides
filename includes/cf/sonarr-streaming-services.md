@@ -1,6 +1,6 @@
 ??? abstract "Streaming Services - [CLICK TO EXPAND]"
     | Custom Format                                                                           | Score                                     | Trash ID                               |
-    | :-------------------------------------------------------------------------------------- | :---------------------------------------- | :------------------------------------- |
+    | --------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
     | [{{ sonarr['cf']['atvp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atvp) | {{ sonarr['cf']['atvp']['trash_score'] }} | {{ sonarr['cf']['atvp']['trash_id'] }} |
     | [{{ sonarr['cf']['dsnp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dsnp) | {{ sonarr['cf']['dsnp']['trash_score'] }} | {{ sonarr['cf']['dsnp']['trash_id'] }} |
     | [{{ sonarr['cf']['max']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#max)   | {{ sonarr['cf']['max']['trash_score'] }}  | {{ sonarr['cf']['max']['trash_id'] }}  |
