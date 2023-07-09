@@ -1,3 +1,8 @@
+# 2023-07-09 09:45
+**[Updated]**
+- [Sonarr] Updated Anime Raws CF to add Fumi-Raws and Koi-Raws
+- [Radarr] Updated Anime Raws CF to add Fumi-Raws and Koi-Raws
+
 # 2023-07-06 20:27
 **[Updated]**
 - [Sonarr] Updated WEB Scene and CRAV custom format scores, and streaming service and repack/proper regex scores in V3 guide
