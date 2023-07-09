@@ -21,6 +21,7 @@
     | [{{ sonarr['cf']['red']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#red)                                           | {{ sonarr['cf']['red']['trash_score'] }}                 | {{ sonarr['cf']['red']['trash_id'] }}                 |
     | [{{ sonarr['cf']['sho']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sho)                                           | {{ sonarr['cf']['sho']['trash_score'] }}                 | {{ sonarr['cf']['sho']['trash_id'] }}                 |
     | [{{ sonarr['cf']['vdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vdl)                                           | {{ sonarr['cf']['vdl']['trash_score'] }}                 | {{ sonarr['cf']['vdl']['trash_id'] }}                 |
+    | [{{ sonarr['cf']['ovid']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#ovid)                                         | {{ sonarr['cf']['ovid']['trash_score'] }}                | {{ sonarr['cf']['ovid']['trash_id'] }}                |
     | :warning: [{{ sonarr['cf']['uhd-streaming-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-boost) | {{ sonarr['cf']['uhd-streaming-boost']['trash_score'] }} | {{ sonarr['cf']['uhd-streaming-boost']['trash_id'] }} |
     | :warning: [{{ sonarr['cf']['uhd-streaming-cut']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-cut)     | {{ sonarr['cf']['uhd-streaming-cut']['trash_score'] }}   | {{ sonarr['cf']['uhd-streaming-cut']['trash_id'] }}   |
 
