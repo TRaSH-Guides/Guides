@@ -70,6 +70,7 @@ I also made 3 guides related to this one.
 |                       |                       |                                         | [RTBF](#rtbf)                               |
 |                       |                       |                                         | [Comedy Central](#cc)                       |
 |                       |                       |                                         | [Crave](#crav)                              |
+|                       |                       |                                         | [OViD](#ovid)                               |
 |                       |                       |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
 |                       |                       |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
 
@@ -1768,6 +1769,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### OViD
+
+<sub>OViD</sub>
+
+??? question "OViD - [CLICK TO EXPAND]"
+
+    [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
