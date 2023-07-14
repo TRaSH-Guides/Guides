@@ -635,6 +635,15 @@
       }
     },
     {
+      "name": "VISIONPLUSHDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VISIONPLUSHDR(-X|1000)?)$"
+      }
+    },
+    {
       "name": "WAF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
