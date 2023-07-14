@@ -20,7 +20,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Regrade)\\b"
+        "value": "\\b(Re-?grade)\\b"
       }
     },
     {
