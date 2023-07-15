@@ -28,7 +28,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[eztv( re)?\\]"
+        "value": "\\[eztv([- .]re)?\\]"
       }
     },
     {
