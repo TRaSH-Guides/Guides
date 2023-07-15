@@ -1,3 +1,14 @@
+# 2023-07-15 14:45
+**[Fixed]**
+- [Radarr] The default scores for UHD Bluray Tier 1-3 custom formats have been amended to match the HD Bluray Tier 1-3 custom formats, so that they are compatible with the main guide.
+  *Note - this is a breaking change for users using sync tools to sync SQP-2 and SQP-5 profiles. You will need to amend your configurations.*
+- [Guide] Added manual scores for UHD Bluray Tier 1-3 custom formats in SQP-2 and SQP-5. These manual scores are the same as the previous default scores, but now have to be set manually to override the new default scores.
+- [Guide] Added Remux Tier 03 custom format to the SQP-5 guide page
+- [Downloaders + Starr] Fix the EZTV regex to also match a dot or dash instead of a space character
+- [Guide] Updated the torguard affiliate code to be unique (50% OFF)
+- [Radarr] Add VISIONPLUSHDR to LQ group as they do fake HDR releases
+- [Radarr] Change regrade filter to match re-grade and regrade
+
 # 2023-07-09 12:40
 **[Updated]**
 - [Sonarr] Add OViD streaming service CF
