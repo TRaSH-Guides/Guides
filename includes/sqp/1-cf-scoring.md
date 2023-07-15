@@ -3,22 +3,24 @@
 ??? abstract "Audio - [CLICK TO EXPAND]"
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible<br>The reason why `DTS` has a score of `0` is to make sure you don't limit your self to much."
 
-    | Custom Format                                                                                                 |            Score | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------- | ---------------: | ------------------------------------------------- |
-    | [{{ radarr['cf']['truehd-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos)       | :warning: -10000 | {{ radarr['cf']['truehd-atmos']['trash_id'] }}    |
-    | [{{ radarr['cf']['dts-x']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-x)                     | :warning: -10000 | {{ radarr['cf']['dts-x']['trash_id'] }}           |
-    | [{{ radarr['cf']['atmos-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined) |      :warning: 0 | {{ radarr['cf']['atmos-undefined']['trash_id'] }} |
-    | [{{ radarr['cf']['ddplus-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos)       |      :warning: 0 | {{ radarr['cf']['ddplus-atmos']['trash_id'] }}    |
-    | [{{ radarr['cf']['truehd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd)                   | :warning: -10000 | {{ radarr['cf']['truehd']['trash_id'] }}          |
-    | [{{ radarr['cf']['dts-hd-ma']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma)             | :warning: -10000 | {{ radarr['cf']['dts-hd-ma']['trash_id'] }}       |
-    | [{{ radarr['cf']['flac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#flac)                       |      :warning: 0 | {{ radarr['cf']['flac']['trash_id'] }}            |
-    | [{{ radarr['cf']['pcm']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcm)                         |      :warning: 0 | {{ radarr['cf']['pcm']['trash_id'] }}             |
-    | [{{ radarr['cf']['dts-hd-hra']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra)           | :warning: -10000 | {{ radarr['cf']['dts-hd-hra']['trash_id'] }}      |
-    | [{{ radarr['cf']['ddplus']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus)                   |      :warning: 0 | {{ radarr['cf']['ddplus']['trash_id'] }}          |
-    | [{{ radarr['cf']['dts-es']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-es)                   | :warning: -10000 | {{ radarr['cf']['dts-es']['trash_id'] }}          |
-    | [{{ radarr['cf']['dts']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts)                         |      :warning: 0 | {{ radarr['cf']['dts']['trash_id'] }}             |
-    | [{{ radarr['cf']['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         |      :warning: 0 | {{ radarr['cf']['aac']['trash_id'] }}             |
-    | [{{ radarr['cf']['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           |      :warning: 0 | {{ radarr['cf']['dd']['trash_id'] }}              |
+    | Custom Format                                                                                                 |            Score           | Trash ID                                          |
+    | ------------------------------------------------------------------------------------------------------------- | -------------------------: | ------------------------------------------------- |
+    | [{{ radarr['cf']['truehd-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos)       | :warning: -10000 :warning: | {{ radarr['cf']['truehd-atmos']['trash_id'] }}    |
+    | [{{ radarr['cf']['dts-x']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-x)                     | :warning: -10000 :warning: | {{ radarr['cf']['dts-x']['trash_id'] }}           |
+    | [{{ radarr['cf']['atmos-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined) | :warning: 0 :warning:      | {{ radarr['cf']['atmos-undefined']['trash_id'] }} |
+    | [{{ radarr['cf']['ddplus-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus-atmos)       | :warning: 0 :warning:      | {{ radarr['cf']['ddplus-atmos']['trash_id'] }}    |
+    | [{{ radarr['cf']['truehd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd)                   | :warning: -10000 :warning: | {{ radarr['cf']['truehd']['trash_id'] }}          |
+    | [{{ radarr['cf']['dts-hd-ma']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-ma)             | :warning: -10000 :warning: | {{ radarr['cf']['dts-hd-ma']['trash_id'] }}       |
+    | [{{ radarr['cf']['flac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#flac)                       | :warning: 0 :warning:      | {{ radarr['cf']['flac']['trash_id'] }}            |
+    | [{{ radarr['cf']['pcm']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcm)                         | :warning: 0 :warning:      | {{ radarr['cf']['pcm']['trash_id'] }}             |
+    | [{{ radarr['cf']['dts-hd-hra']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-hd-hra)           | :warning: -10000 :warning: | {{ radarr['cf']['dts-hd-hra']['trash_id'] }}      |
+    | [{{ radarr['cf']['ddplus']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ddplus)                   | :warning: 0 :warning:      | {{ radarr['cf']['ddplus']['trash_id'] }}          |
+    | [{{ radarr['cf']['dts-es']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-es)                   | :warning: -10000 :warning: | {{ radarr['cf']['dts-es']['trash_id'] }}          |
+    | [{{ radarr['cf']['dts']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts)                         | :warning: 0 :warning:      | {{ radarr['cf']['dts']['trash_id'] }}             |
+    | [{{ radarr['cf']['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         | :warning: 0 :warning:      | {{ radarr['cf']['aac']['trash_id'] }}             |
+    | [{{ radarr['cf']['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           | :warning: 0 :warning:      | {{ radarr['cf']['dd']['trash_id'] }}              |
+
+    !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
 ??? abstract "Movie Versions - [CLICK TO EXPAND]"
 
@@ -51,9 +53,11 @@
     | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                | {{ radarr['cf']['web-tier-01']['trash_score'] }} | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
     | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                | {{ radarr['cf']['web-tier-02']['trash_score'] }} | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                | {{ radarr['cf']['web-tier-03']['trash_score'] }} | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
-    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    |                                   :warning: 1100 | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    |                                   :warning: 1050 | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    |                                   :warning: 1000 | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    | :warning: 1100 :warning:                         | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    | :warning: 1050 :warning:                         | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    | :warning: 1000 :warning:                         | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
+
+    !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
