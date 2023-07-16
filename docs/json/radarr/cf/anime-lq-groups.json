@@ -527,6 +527,15 @@
       }
     },
     {
+      "name": "KQRM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KQRM)\\b"
+      }
+    },
+    {
       "name": "KRP",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
