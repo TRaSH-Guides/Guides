@@ -1,3 +1,8 @@
+# 2023-07-16 14:25
+**[Updated]**
+- [Sonarr] Updated Anime guide to include Remux Tiers and updated Web Tier scoring, added KQRM to LQ CF
+- [Radarr] Updated Anime guide to include Remux Tier 03 and Web Tiers, added KQRM to LQ CF
+
 # 2023-07-15 14:45
 **[Fixed]**
 - [Radarr] The default scores for UHD Bluray Tier 1-3 custom formats have been amended to match the HD Bluray Tier 1-3 custom formats, so that they are compatible with the main guide.
