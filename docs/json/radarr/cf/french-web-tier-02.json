@@ -95,6 +95,15 @@
       }
     },
     {
+      "name": "ONLYMOViE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ONLYMOViE)$"
+      }
+    },
+    {
       "name": "Slay3R",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
