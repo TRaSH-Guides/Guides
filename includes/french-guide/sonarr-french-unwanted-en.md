@@ -17,7 +17,7 @@
     - **{{ sonarr['cf']['x265-hd']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265. - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
 
         !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
-        
+
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extra's
 
     ??? warning "Type of FanSubs - [CLICK TO EXPAND]"
