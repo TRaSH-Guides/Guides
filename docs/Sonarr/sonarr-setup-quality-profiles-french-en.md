@@ -142,7 +142,7 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
@@ -172,8 +172,6 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-en.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-en.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-en.md" !}
 

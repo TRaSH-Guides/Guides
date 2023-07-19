@@ -141,7 +141,7 @@ Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
@@ -173,8 +173,6 @@ Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio or
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md" !}
 
