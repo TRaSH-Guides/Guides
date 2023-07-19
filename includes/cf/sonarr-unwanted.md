@@ -16,4 +16,4 @@
 
         !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
 
-    - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extra's
+    - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras

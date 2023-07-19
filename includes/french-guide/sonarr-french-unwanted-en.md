@@ -18,7 +18,7 @@
 
         !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
 
-    - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extra's
+    - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
 
     ??? warning "Type of FanSubs - [CLICK TO EXPAND]"
         Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to {{ sonarr['cf']['fastsub']['trash_score'] }}.
