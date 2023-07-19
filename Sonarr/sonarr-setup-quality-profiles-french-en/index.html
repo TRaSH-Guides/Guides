@@ -2970,6 +2970,11 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td>-10000</td>
 <td>47435ece6b99a0b477caf360e79ba0bb</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -2983,6 +2988,9 @@ You could end up with a single audio release when a MULTi release exists. This i
 <div class="admonition danger">
 <p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
+</li>
+<li>
+<p><strong>Extras:</strong> This blocks/ignores extras</p>
 </li>
 </ul>
 <details class="warning">
@@ -3457,6 +3465,11 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td>-10000</td>
 <td>3ba797e5dc13af4b8d9bb25e83d90de2</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -3465,6 +3478,7 @@ You could end up with a single audio release when a MULTi release exists. This i
 <li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>FR LQ:</strong> A collection of known Low Quality French groups that are often banned from the top trackers because the lack of quality or other reasons.</li>
+<li><strong>Extras:</strong> This blocks/ignores extras</li>
 </ul>
 <details class="warning">
 <summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
@@ -3560,9 +3574,9 @@ You could end up with a single audio release when a MULTi release exists. This i
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-streaming-services.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-uhd-streaming-services.md -->
 <details class="abstract">
-<summary>Streaming Services - [CLICK TO EXPAND]</summary>
+<summary>Streaming Services (UHD) - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3677,8 +3691,23 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td>50</td>
 <td>fb1a91cdc0f26f7ca0696e0e95274645</td>
 </tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> <a href="/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-boost">UHD Streaming Boost</a></td>
+<td>20</td>
+<td>43b3cf48cb385cd3eac608ee6bca7f09</td>
+</tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> <a href="/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-cut">UHD Streaming Cut</a></td>
+<td>-20</td>
+<td>d2d299244a92b8a52d4921ce3897a256</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="admonition-title">UHD Streaming Boost and UHD Streaming Cut Custom Formats</p>
+</div>
+<p>Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.</p>
+<p>These two custom formats must be included in your profile for UHD releases to be scored correctly.</p>
 </details>
 <!-- END INCLUDE -->
 
@@ -3890,6 +3919,11 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>-10000</td>
 <td>3ba797e5dc13af4b8d9bb25e83d90de2</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -3898,6 +3932,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <li><strong>BR-DISK :</strong> This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</li>
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>FR LQ:</strong> A collection of known Low Quality French groups that are often banned from the top trackers because the lack of quality or other reasons.</li>
+<li><strong>Extras:</strong> This blocks/ignores extras</li>
 </ul>
 <details class="warning">
 <summary>Type of FanSubs - [CLICK TO EXPAND]</summary>
@@ -3927,9 +3962,9 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-streaming-services-anime.md -->
+<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-streaming-services-anime-en.md -->
 <details class="abstract">
-<summary>Anime Streaming Services - [CLICK TO EXPAND]</summary>
+<summary>French Anime Streaming Services - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3960,6 +3995,11 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>d660701077794679fd59e8bdf4ce3a29</td>
 </tr>
 <tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
+<td>3</td>
+<td>d54cd2bf1326287275b56bccedb72ee2</td>
+</tr>
+<tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vrv">VRV</a></td>
 <td>3</td>
 <td>44a8ee6403071dd7b8a3a8dd3fe8cb20</td>
@@ -3968,11 +4008,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#funi">FUNi</a></td>
 <td>2</td>
 <td>1284d18e693de8efe0fe7d6b3e0b9170</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
-<td>1</td>
-<td>d54cd2bf1326287275b56bccedb72ee2</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#b-global">B-Global</a></td>
@@ -3989,28 +4024,6 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 <td>0</td>
 <td>570b03b3145a25011bf073274a407259</td>
 </tr>
-</tbody>
-</table>
-</details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-streaming-services-anime-en.md -->
-<details class="abstract">
-<summary>French Anime Streaming Services - [CLICK TO EXPAND]</summary>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th>Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
-<td>3</td>
-<td>d54cd2bf1326287275b56bccedb72ee2</td>
-</tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#wkn">WKN</a></td>
 <td>0</td>
@@ -4019,7 +4032,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
 </tbody>
 </table>
 <details class="info">
-<summary>Info - [CLICK TO EXPAND]</summary>
+<summary>Info regarding ADN and WKN (French Streaming Services) - [CLICK TO EXPAND]</summary>
 <ul>
 <li><strong>ADN</strong>: Animation Digital Network, abbreviated ADN, formerly Anime Digital Network, is a VoD and simulcast platform born from the merger between KZPlay, belonging to Kazé, and Genzai, belonging to Kana Home Video, with the theme of broadcasting series and features Japanese and Franco-Belgian animated films.</li>
 <li><strong>WKN</strong> (<em>or Wakanim</em>): Wakanim was a French subscription video on-demand streaming service owned by U.S.-based Funimation. The service was specialized in the online streaming and simulcasting of Japanese anime series. It was also the first company to offer videos for download without digital rights management on anime series in Europe. The service was consolidated into Crunchyroll in March 2022.</li>
@@ -4126,7 +4139,7 @@ If you want to do the same make sure you replace <a href="/Sonarr/sonarr-collect
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 21, 2023 15:25:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 19, 2023 09:10:16</span>
       
     
   </small>

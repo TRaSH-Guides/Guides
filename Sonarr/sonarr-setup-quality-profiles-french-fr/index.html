@@ -2807,6 +2807,11 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <td>-10000</td>
 <td>47435ece6b99a0b477caf360e79ba0bb</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -2820,6 +2825,9 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <div class="admonition danger">
 <p class="admonition-title">Ne l'utilisez pas avec le Format Personnalisé <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
+</li>
+<li>
+<p><strong>Extras:</strong> Bloque les extras</p>
 </li>
 </ul>
 <details class="warning">
@@ -3295,6 +3303,11 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <td>-10000</td>
 <td>3ba797e5dc13af4b8d9bb25e83d90de2</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -3303,6 +3316,7 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <li><strong>BR-DISK :</strong> Il s'agit d'un format personnalisé pour aider Sonarr à reconnaître et à ignorer les BR-DISK (ISO et structure de dossier Blu-ray) en plus de la qualité standard des BR-DISK.</li>
 <li><strong>LQ:</strong> Une collection de groupes P2P anglais qui sont souvent bannis des meilleurs trackers en raison de leur manque de qualité ou pour d'autres raisons.</li>
 <li><strong>FR LQ:</strong> Une collection de groupes P2P français qui sont souvent bannis des meilleurs trackers en raison de leur manque de qualité ou pour d'autres raisons.</li>
+<li><strong>Extras:</strong> Bloque les extras</li>
 </ul>
 <details class="warning">
 <summary>Type de FanSubs - [CLIQUEZ POUR AFFICHER]</summary>
@@ -3398,9 +3412,9 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-streaming-services.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-uhd-streaming-services.md -->
 <details class="abstract">
-<summary>Streaming Services - [CLICK TO EXPAND]</summary>
+<summary>Streaming Services (UHD) - [CLICK TO EXPAND]</summary>
 <table>
 <thead>
 <tr>
@@ -3515,8 +3529,23 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <td>50</td>
 <td>fb1a91cdc0f26f7ca0696e0e95274645</td>
 </tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> <a href="/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-boost">UHD Streaming Boost</a></td>
+<td>20</td>
+<td>43b3cf48cb385cd3eac608ee6bca7f09</td>
+</tr>
+<tr>
+<td><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /> <a href="/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-cut">UHD Streaming Cut</a></td>
+<td>-20</td>
+<td>d2d299244a92b8a52d4921ce3897a256</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="admonition-title">UHD Streaming Boost and UHD Streaming Cut Custom Formats</p>
+</div>
+<p>Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.</p>
+<p>These two custom formats must be included in your profile for UHD releases to be scored correctly.</p>
 </details>
 <!-- END INCLUDE -->
 
@@ -3729,6 +3758,11 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <td>-10000</td>
 <td>3ba797e5dc13af4b8d9bb25e83d90de2</td>
 </tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#extras">Extras</a></td>
+<td>-10000</td>
+<td>fbcb31d8dabd2a319072b84fc0b7249c</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -3737,6 +3771,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <li><strong>BR-DISK :</strong> Il s'agit d'un format personnalisé pour aider Sonarr à reconnaître et à ignorer les BR-DISK (ISO et structure de dossier Blu-ray) en plus de la qualité standard des BR-DISK.</li>
 <li><strong>LQ:</strong> Une collection de groupes P2P anglais qui sont souvent bannis des meilleurs trackers en raison de leur manque de qualité ou pour d'autres raisons.</li>
 <li><strong>FR LQ:</strong> Une collection de groupes P2P français qui sont souvent bannis des meilleurs trackers en raison de leur manque de qualité ou pour d'autres raisons.</li>
+<li><strong>Extras:</strong> Bloque les extras</li>
 </ul>
 <details class="warning">
 <summary>Type de FanSubs - [CLIQUEZ POUR AFFICHER]</summary>
@@ -3766,13 +3801,13 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-streaming-services-anime.md -->
+<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md -->
 <details class="abstract">
-<summary>Anime Streaming Services - [CLICK TO EXPAND]</summary>
+<summary>Services de streaming français d'Animés - [CLIQUEZ POUR AFFICHER]</summary>
 <table>
 <thead>
 <tr>
-<th>Custom Format</th>
+<th>Formats Personnalisés</th>
 <th>Score</th>
 <th>Trash ID</th>
 </tr>
@@ -3799,6 +3834,11 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <td>d660701077794679fd59e8bdf4ce3a29</td>
 </tr>
 <tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
+<td>3</td>
+<td>d54cd2bf1326287275b56bccedb72ee2</td>
+</tr>
+<tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vrv">VRV</a></td>
 <td>3</td>
 <td>44a8ee6403071dd7b8a3a8dd3fe8cb20</td>
@@ -3807,11 +3847,6 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#funi">FUNi</a></td>
 <td>2</td>
 <td>1284d18e693de8efe0fe7d6b3e0b9170</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
-<td>1</td>
-<td>d54cd2bf1326287275b56bccedb72ee2</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#b-global">B-Global</a></td>
@@ -3828,28 +3863,6 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <td>0</td>
 <td>570b03b3145a25011bf073274a407259</td>
 </tr>
-</tbody>
-</table>
-</details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md -->
-<details class="abstract">
-<summary>Services de streaming français d'Animés - [CLIQUEZ POUR AFFICHER]</summary>
-<table>
-<thead>
-<tr>
-<th>Formats Personnalisés</th>
-<th>Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#adn">ADN</a></td>
-<td>3</td>
-<td>d54cd2bf1326287275b56bccedb72ee2</td>
-</tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#wkn">WKN</a></td>
 <td>0</td>
@@ -3858,7 +3871,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 </tbody>
 </table>
 <details class="info">
-<summary>Info - [CLICK TO EXPAND]</summary>
+<summary>Info sur ADN et WKN (Service de streaming francophone) - [CLICK TO EXPAND]</summary>
 <ul>
 <li><strong>ADN</strong>: Animation Digital Network, abrégé ADN, anciennement Anime Digital Network, est une plate-forme de VoD et simulcast née de la fusion entre KZPlay, appartenant à Kazé, et Genzai, appartenant à Kana Home Video, ayant pour thématique la diffusion de séries et longs métrages d'animation japonaise et franco-belge.</li>
 <li><strong>WKN</strong> (<em>ou Wakanim</em>): Wakanim est une plateforme de VOD ayant pour thématique la diffusion de séries d'animation japonaise. C'est également la première société à proposer des vidéos en téléchargement sans gestion des droits numériques sur des séries d'animation en Europe. En mars 2022, le catalogue de la plateforme est fusionné sur Crunchyroll.</li>
@@ -3965,7 +3978,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 21, 2023 15:25:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 19, 2023 09:10:16</span>
       
     
   </small>
