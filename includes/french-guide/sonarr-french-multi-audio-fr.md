@@ -1,8 +1,8 @@
 ??? abstract "Multi Audio - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                   | Score                                             | Trash ID                                       |
     | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
-    | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_scores'][default] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |
-    | [{{ sonarr['cf']['french-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#french-audio) | {{ sonarr['cf']['french-audio']['trash_scores'][default] }} | {{ sonarr['cf']['french-audio']['trash_id'] }} |
+    | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_scores']['default'] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |
+    | [{{ sonarr['cf']['french-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#french-audio) | {{ sonarr['cf']['french-audio']['trash_scores']['default'] }} | {{ sonarr['cf']['french-audio']['trash_id'] }} |
     | [{{ sonarr['cf']['multi-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-french) | 0                                                 | {{ sonarr['cf']['multi-french']['trash_id'] }} |
 
     ??? info "Description et objectifs - [CLIQUEZ POUR AFFICHER]"
@@ -16,4 +16,4 @@
         - **{{ sonarr['cf']['multi-french']['name'] }}:** Il s'agit d'un Format Personnalisé qui renommera votre fichier avec `Multi-French`..
 
         !!! question "Comment fonctionne cette méthode"
-            Lorsque Sonarr trouve une version avec `MULTi`, il lui attribue le score de {{ sonarr['cf']['multi-audio']['trash_score'] }} grâce au Format Personnalisé **{{ sonarr['cf']['multi-audio']['name'] }}**. Si la version contient au moins l'audio original et l'audio français, elle sera renommée par le Format Personnalisé **{{ sonarr['cf']['multi-french']['name'] }}**. Ce qui permet à la version de conserver le score de {{ sonarr['cf']['multi-audio']['trash_scores'][default] }} du Format Personnalisé {{ sonarr['cf']['multi-audio']['name'] }}.
+            Lorsque Sonarr trouve une version avec `MULTi`, il lui attribue le score de {{ sonarr['cf']['multi-audio']['trash_score'] }} grâce au Format Personnalisé **{{ sonarr['cf']['multi-audio']['name'] }}**. Si la version contient au moins l'audio original et l'audio français, elle sera renommée par le Format Personnalisé **{{ sonarr['cf']['multi-french']['name'] }}**. Ce qui permet à la version de conserver le score de {{ sonarr['cf']['multi-audio']['trash_scores']['default'] }} du Format Personnalisé {{ sonarr['cf']['multi-audio']['name'] }}.
