@@ -1,14 +1,14 @@
 ??? abstract "Optional - [CLICK TO EXPAND]"
     | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
-    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
+    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_scores'][default] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)                     | :interrobang:                                        | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
-    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)             | {{ radarr['cf']['evo-no-webdl']['trash_score'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
-    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)               | {{ radarr['cf']['no-rlsgroup']['trash_score'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
-    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                 | {{ radarr['cf']['obfuscated']['trash_score'] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
-    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         | {{ radarr['cf']['retags']['trash_score'] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
-    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                         | {{ radarr['cf']['scene']['trash_score'] }}          | {{ radarr['cf']['scene']['trash_id'] }}          |
-    | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
+    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)             | {{ radarr['cf']['evo-no-webdl']['trash_scores'][default] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
+    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)               | {{ radarr['cf']['no-rlsgroup']['trash_scores'][default] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
+    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)                 | {{ radarr['cf']['obfuscated']['trash_scores'][default] }}      | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
+    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                         | {{ radarr['cf']['retags']['trash_scores'][default] }}          | {{ radarr['cf']['retags']['trash_id'] }}          |
+    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                         | {{ radarr['cf']['scene']['trash_scores'][default] }}          | {{ radarr['cf']['scene']['trash_id'] }}          |
+    | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_scores'][default] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
 
     ------
 
@@ -28,7 +28,7 @@
             `[DV WEBDL]` = This custom format you need to score depending of your personal use and setup.
 
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.
-            - If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of `{{ radarr['cf']['dv-webdl']['trash_score'] }}`.
+            - If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then you should add this with a score of `{{ radarr['cf']['dv-webdl']['trash_scores'][default] }}`.
 
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.
     - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.
@@ -41,6 +41,6 @@
 
         *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
-        In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+        In your quality profile use the following score for this Custom Format: `{{ radarr['cf']['x265-no-hdrdv']['trash_scores'][default] }}`
 
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
