@@ -1,6 +1,9 @@
 {
   "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
   "trash_score": "-10000",
+  "trash_scores": {
+    "default": "-10000"
+  },
   "name": "Retags",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

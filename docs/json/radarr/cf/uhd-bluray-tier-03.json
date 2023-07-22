@@ -1,6 +1,9 @@
 {
   "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
   "trash_score": "1700",
+  "trash_scores": {
+    "default": "1700"
+  },
   "name": "UHD Bluray Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

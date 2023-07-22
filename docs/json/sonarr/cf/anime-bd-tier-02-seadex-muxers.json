@@ -1,6 +1,9 @@
 {
   "trash_id": "ed7f1e315e000aef424a58517fa48727",
   "trash_score": "1300",
+  "trash_scores": {
+    "default": "1300"
+  },
   "name": "Anime BD Tier 02 (SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

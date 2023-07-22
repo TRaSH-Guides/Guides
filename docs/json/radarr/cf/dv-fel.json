@@ -1,6 +1,9 @@
 {
   "trash_id": "f700d29429c023a5734505e77daeaea7",
   "trash_score": "101",
+  "trash_scores": {
+    "default": "101"
+  },
   "name": "DV (FEL)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

@@ -1,6 +1,9 @@
 {
   "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
   "trash_score": "-10000",
+  "trash_scores": {
+    "default": "-10000"
+  },
   "trash_regex": "https://regex101.com/r/lZ9iTm/1",
   "name": "Extras",
   "includeCustomFormatWhenRenaming": false,

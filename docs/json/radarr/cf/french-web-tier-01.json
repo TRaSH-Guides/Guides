@@ -1,6 +1,9 @@
 {
   "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
   "trash_score": "1700",
+  "trash_scores": {
+    "default": "1700"
+  },
   "name": "FR WEB Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
