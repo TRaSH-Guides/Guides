@@ -1,8 +1,8 @@
 {
   "trash_id": "2f6e84efc47246ec9071e311e71c4953",
-  "trash_score": "300",
+  "trash_score": 300,
   "trash_scores": {
-    "default": "300"
+    "default": 300
   },
   "trash_regex": "https://regex101.com/r/hcMa1f/2",
   "name": "Multi-Audio",

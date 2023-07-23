@@ -1,8 +1,8 @@
 {
   "trash_id": "60f6d50cbd3cfc3e9a8c00e3a30c3114",
-  "trash_score": "10",
+  "trash_score": 10,
   "trash_scores": {
-    "default": "10"
+    "default": 10
   },
   "name": "VRV",
   "includeCustomFormatWhenRenaming": true,
