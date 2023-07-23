@@ -4,8 +4,8 @@
 
     ![!Audio Flowchart](/Radarr/images/flowchart-audio.png)
 
-    | Custom Format                                                                                           | Score                                          | Trash ID                                    |
-    | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+    | Custom Format                                                                                                 | Score                                                            | Trash ID                                          |
+    | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------- |
     | [{{ sonarr['cf']['truehd-atmos']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#truehd-atmos)       | {{ sonarr['cf']['truehd-atmos']['trash_scores']['default'] }}    | {{ sonarr['cf']['truehd-atmos']['trash_id'] }}    |
     | [{{ sonarr['cf']['dts-x']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dts-x)                     | {{ sonarr['cf']['dts-x']['trash_scores']['default'] }}           | {{ sonarr['cf']['dts-x']['trash_id'] }}           |
     | [{{ sonarr['cf']['atmos-undefined']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atmos-undefined) | {{ sonarr['cf']['atmos-undefined']['trash_scores']['default'] }} | {{ sonarr['cf']['atmos-undefined']['trash_id'] }} |

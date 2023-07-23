@@ -4,8 +4,8 @@
 
     ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
 
-    | Custom Format                                                                                             | Score                                              | Trash ID                                        |
-    | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
+    | Custom Format                                                                                             | Score                                                          | Trash ID                                        |
+    | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
     | [{{ radarr['cf']['dv-hdr10']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10)           | {{ radarr['cf']['dv-hdr10']['trash_scores']['default'] }}      | {{ radarr['cf']['dv-hdr10']['trash_id'] }}      |
     | [{{ radarr['cf']['dv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv)                       | {{ radarr['cf']['dv']['trash_scores']['default'] }}            | {{ radarr['cf']['dv']['trash_id'] }}            |
     | [{{ radarr['cf']['dv-hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hlg)               | {{ radarr['cf']['dv-hlg']['trash_scores']['default'] }}        | {{ radarr['cf']['dv-hlg']['trash_id'] }}        |

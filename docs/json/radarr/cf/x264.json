@@ -1,5 +1,11 @@
 {
   "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
+  "trash_scores": {
+    "sqp-2": -10000,
+    "sqp-3": -10000,
+    "sqp-4": -10000,
+    "sqp-5": -10000
+  },
   "name": "x264",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
