@@ -3,48 +3,55 @@
   "trash_id": "1B018E0C53EC825085DD911102E2CA36",
   "includePreferredWhenRenaming": true,
   "required": [],
-  "preferred": [{
+  "preferred": [
+    {
       "score": 100,
       "terms": [
-        "/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(atvp|aptv|Apple TV\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
-      ]
-    },
-    {
-      "score": 95,
-      "terms": [
-        "/\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(atvp|aptv|Apple TV\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     },
     {
       "score": 90,
       "terms": [
-        "/\\b(dsnp|dsny|disney|Disney\\+)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(nf|netflix)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(qibi|quibi)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     },
     {
-      "score": 85,
+      "score": 80,
       "terms": [
-        "/\\b(hulu)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(pcok|Peacock TV)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(qibi|quibi)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     },
     {
-      "score": 75,
+      "score": 70,
       "terms": [
+        "/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+      ]
+    },
+    {
+      "score": 60,
+      "terms": [
+        "/\\b(nf|netflix)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(pcok|Peacock TV)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(stan)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+      ]
+    },
+    {
+      "score": 50,
+      "terms": [
+        "/\\b(cc)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(crav(e)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b/i",
         "/\\b(dcu)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(hulu)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(it)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(pmtp)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(nlz)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(stan)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(cc)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
       ]
     }
   ],

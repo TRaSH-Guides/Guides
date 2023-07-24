@@ -3,12 +3,7 @@
   "trash_id": "71899E6C303A07AF0E4746EFF9873532",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [{
-      "score": 1800,
-      "terms": [
-        "/(-deflate|-inflate)\\b/i"
-      ]
-    },
+  "preferred": [
     {
       "score": 1700,
       "terms": [
@@ -28,19 +23,25 @@
       ]
     },
     {
-      "score": 13,
+      "score": 1600,
+      "terms": [
+        "/(-deflate|-inflate)\\b/i"
+      ]
+    },
+    {
+      "score": 7,
       "terms": [
         "/(repack3)/i"
       ]
     },
     {
-      "score": 12,
+      "score": 6,
       "terms": [
         "/(repack2)/i"
       ]
     },
     {
-      "score": 11,
+      "score": 5,
       "terms": [
         "/\\b(repack|proper)\\b/i"
       ]
