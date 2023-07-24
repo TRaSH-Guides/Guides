@@ -51,7 +51,8 @@
         "/\\b(nlz)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(ovid)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     }
   ],
