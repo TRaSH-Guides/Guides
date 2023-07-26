@@ -1,4 +1,4 @@
-??? abstract "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [CLICK TO EXPAND]"
+??? abstract "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf/dv-info.md" !}
 

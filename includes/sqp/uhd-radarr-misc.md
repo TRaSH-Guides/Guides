@@ -1,4 +1,4 @@
-??? abstract "Misc - [CLICK TO EXPAND]"
+??? abstract "Misc - [Click to show/hide]"
     | Custom Format                                                                                            | Score                                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['repack-proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repackproper) | {{ radarr['cf']['repack-proper']['trash_score'] }} | {{ radarr['cf']['repack-proper']['trash_id'] }} |
@@ -13,7 +13,7 @@
     - `x264` has a score of `-10000` because we only want the HDR/DV versions of the `WEBDL-1080p`
     - if you're only running 1 Radarr, You might want to remove the `x264`CF so you will also get the HD release if there is no UHD version.
 
-    ??? tip "Proper and Repacks - [CLICK TO EXPAND]"
+    ??? tip "Proper and Repacks - [Click to show/hide]"
 
         I also suggest to change the Propers and Repacks settings in Radarr
 

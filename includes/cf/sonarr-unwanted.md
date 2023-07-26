@@ -1,4 +1,4 @@
-??? abstract "Unwanted - [CLICK TO EXPAND]"
+??? abstract "Unwanted - [Click to show/hide]"
     | Custom Format                                                                                           | Score                                        | Trash ID                                  |
     | ------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           | {{ sonarr['cf']['br-disk']['trash_score'] }} | {{ sonarr['cf']['br-disk']['trash_id'] }} |

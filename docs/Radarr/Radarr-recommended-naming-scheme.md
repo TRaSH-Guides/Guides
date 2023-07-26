@@ -29,7 +29,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 {{ radarr['naming']['radarr-naming']['file']['default'] }}
 ```
 
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
@@ -39,7 +39,7 @@ For Jellyfin/Emby:
 {{ radarr['naming']['radarr-naming']['file']['emby'] }}
 ```
 
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
@@ -49,7 +49,7 @@ If you do Anime
 {{ radarr['naming']['radarr-naming']['file']['anime'] }}
 ```
 
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
@@ -59,7 +59,7 @@ For Jellyfin/Emby:
 {{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
 ```
 
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 

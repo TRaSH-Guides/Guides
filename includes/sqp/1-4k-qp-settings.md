@@ -7,7 +7,7 @@
 
 !!! info "<sup>(*1*)</sup> If you're limited to public indexers, don't have access to top-tier indexers, or are searching for content that is more rare, you might want to lower the `Minimum Custom Format Score` to 10."
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
     ![!Quality Profile Settings](/SQP/images/1-4k-qp-settings.png)
 
     !!! warning

@@ -1,6 +1,6 @@
 #### Custom Formats and scores (SQP-1 (2160p))
 
-??? abstract "Audio - [CLICK TO EXPAND]"
+??? abstract "Audio - [Click to show/hide]"
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible<br>The reason why `DTS` has a score of `0` is to make sure you don't limit your self to much."
 
     | Custom Format                                                                                                 |                                                Score | Trash ID                                          |
@@ -22,7 +22,7 @@
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
-??? abstract "All HDR Formats + DV (WEBDL) - [CLICK TO EXPAND]"
+??? abstract "All HDR Formats + DV (WEBDL) - [Click to show/hide]"
 
     !!! danger "The reason why we add `DV (WEBDL)` is because you want maximum compatibility between all devices  :warning:"
 
@@ -40,7 +40,7 @@
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     | {{ radarr['cf']['hlg']['trash_score'] }}           | {{ radarr['cf']['hlg']['trash_id'] }}           |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)           | {{ radarr['cf']['dv-webdl']['trash_score'] }}      | {{ radarr['cf']['dv-webdl']['trash_id'] }}      |
 
-??? abstract "Movie Versions - [CLICK TO EXPAND]"
+??? abstract "Movie Versions - [Click to show/hide]"
 
     !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the 1080p BHDStudio release :warning:"
 
@@ -62,7 +62,7 @@
 
         If you don't prefer `{{ radarr['cf']['imax-enhanced']['name'] }}` then don't add it or use a score of `0`
 
-??? abstract "HQ Release Groups - [CLICK TO EXPAND]"
+??? abstract "HQ Release Groups - [Click to show/hide]"
 
     !!! danger "Adding `HD Bluray Tier xx` means you get less or not streaming optimized :warning:"
     | Custom Format                                                                                                                        |                                            Score | Trash ID                                            |
@@ -81,7 +81,7 @@
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
-??? abstract "Optional - [CLICK TO EXPAND]"
+??? abstract "Optional - [Click to show/hide]"
 
     !!! tip "**I recommend to use the `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning, :warning: Only ever include one of them :warning:**"
     !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"

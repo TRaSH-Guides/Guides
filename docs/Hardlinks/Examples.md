@@ -10,7 +10,7 @@
 
 ## Sonarr
 
-??? example "Sonarr Examples - [CLICK TO EXPAND]"
+??? example "Sonarr Examples - [Click to show/hide]"
 
     `Settings` => `Media Management` => `Importing`
 
@@ -28,7 +28,7 @@
 
 ## Radarr
 
-??? example "Radarr Examples - [CLICK TO EXPAND]"
+??? example "Radarr Examples - [Click to show/hide]"
 
     `Settings` => `Media Management` => `Importing`
 
@@ -46,7 +46,7 @@
 
 ## SABnzbd
 
-??? example "SABnzbd Examples - [CLICK TO EXPAND]"
+??? example "SABnzbd Examples - [Click to show/hide]"
 
     `SABnzbd config` => `Folders`
 
@@ -58,7 +58,7 @@
 
 ## NZBGet
 
-??? example "NZBGet Examples - [CLICK TO EXPAND]"
+??? example "NZBGet Examples - [Click to show/hide]"
 
     `Settings` => `PATHS`
 
@@ -70,7 +70,7 @@
 
 ## qBittorrent
 
-??? example "qBittorrent Examples - [CLICK TO EXPAND]"
+??? example "qBittorrent Examples - [Click to show/hide]"
 
     `Options` => `Downloads`
 
@@ -78,7 +78,7 @@
 
 ## Deluge
 
-??? example "Deluge Example - [CLICK TO EXPAND]"
+??? example "Deluge Example - [Click to show/hide]"
 
     `Preferences` => `Downloads`
 
@@ -86,7 +86,7 @@
 
 ## ruTorrent
 
-??? example "ruTorrent Examples - [CLICK TO EXPAND]"
+??? example "ruTorrent Examples - [Click to show/hide]"
 
     `../config/rtorrent/config/rtorrent.rc` (path to your appdata)
 

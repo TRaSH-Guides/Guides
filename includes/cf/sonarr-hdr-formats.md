@@ -1,4 +1,4 @@
-??? abstract "HDR Formats - [CLICK TO EXPAND]"
+??? abstract "HDR Formats - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf/dv-info.md" !}
 

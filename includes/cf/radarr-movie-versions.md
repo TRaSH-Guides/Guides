@@ -1,4 +1,4 @@
-??? abstract "Movie Versions - [CLICK TO EXPAND]"
+??? abstract "Movie Versions - [Click to show/hide]"
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
     | [{{ radarr['cf']['hybrid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hybrid)                             | {{ radarr['cf']['hybrid']['trash_score'] }}               | {{ radarr['cf']['hybrid']['trash_id'] }}               |

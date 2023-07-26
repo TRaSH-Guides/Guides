@@ -1,6 +1,6 @@
 ## Why choose this quality profile
 
-??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [Click to show/hide]"
 
     - You want 2160p with DV + HDR10 but don't care about HD audio (TrueHD, DTS-HD, DTS-X).
     - You want maximum compatibility between all devices and still a HQ releases.

@@ -1,4 +1,4 @@
-??? abstract "Anime Streaming Services - [CLICK TO EXPAND]"
+??? abstract "Anime Streaming Services - [Click to show/hide]"
     | Custom Format                                                                                   | Score                                     | Trash ID                                   |
     | ----------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------ |
     | [{{ sonarr['cf']['cr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#cr)             | {{ sonarr['cf']['cr']['trash_score'] }}   | {{ sonarr['cf']['cr']['trash_id'] }}       |

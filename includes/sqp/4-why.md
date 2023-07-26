@@ -1,6 +1,6 @@
 ## Why choose this quality profile
 
-??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [Click to show/hide]"
 
     - You got a setup that completely supports DoVi from start to end.
     - HDR/DoVi (Depending what's offered and often both)
