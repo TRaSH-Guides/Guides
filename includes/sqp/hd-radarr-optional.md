@@ -1,4 +1,4 @@
-??? abstract "Optional - [CLICK TO EXPAND]"
+??? abstract "Optional - [Click to show/hide]"
     | Custom Format                                                                                                 | Score                                                | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |

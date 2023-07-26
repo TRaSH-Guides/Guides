@@ -31,7 +31,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
     The only change that is needed and **mandatory** for French Custom Formats to work is to set the preferred language profile for your releases to `Any`.
 
-    ??? success "Screenshot example - [CLICK TO EXPAND]"
+    ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
@@ -135,7 +135,7 @@ The reason why WEB-DL 720p is not selected is because you will hardly find any r
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
@@ -175,7 +175,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
@@ -217,7 +217,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
@@ -257,7 +257,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
     - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.

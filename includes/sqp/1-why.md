@@ -1,6 +1,6 @@
 ## Why choose this quality profile
 
-??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [Click to show/hide]"
 
     - You want maximum compatibility between all devices and still a HQ releases.
     - You run 2 instances of Radarr and want both version or just for the 1080p ones.

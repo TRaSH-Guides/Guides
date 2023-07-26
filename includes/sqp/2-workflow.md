@@ -1,6 +1,6 @@
 ## Workflow Logic
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 

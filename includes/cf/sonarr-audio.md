@@ -1,4 +1,4 @@
-??? abstract "Audio - [CLICK TO EXPAND]"
+??? abstract "Audio - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf/audio-info.md" !}
 

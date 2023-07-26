@@ -1,11 +1,11 @@
-??? abstract "Multi audio - [CLICK TO EXPAND]"
+??? abstract "Multi audio - [Click to show/hide]"
     | Custom Format                                                                                           | Score                                             | Trash ID                                       |
     | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
     | [{{ radarr['cf']['multi-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-audio)   | {{ radarr['cf']['multi-audio']['trash_score'] }}  | {{ radarr['cf']['multi-audio']['trash_id'] }}  |
     | [{{ radarr['cf']['french-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#french-audio) | {{ radarr['cf']['french-audio']['trash_score'] }} | {{ radarr['cf']['french-audio']['trash_id'] }} |
     | [{{ radarr['cf']['multi-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-french) | 0                                                 | {{ radarr['cf']['multi-french']['trash_id'] }} |
 
-    ??? info "Breakdown and Why - [CLICK TO EXPAND]"
+    ??? info "Breakdown and Why - [Click to show/hide]"
 
         - **{{ radarr['cf']['multi-audio']['name'] }}:** This is a custom format to help Radarr recognize MULTi audio releases.
 

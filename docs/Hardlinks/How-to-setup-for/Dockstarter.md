@@ -79,7 +79,7 @@ When that's all set then you will need to change the paths you're going to use i
 - [Deluge](#deluge)
 - [ruTorrent](#rutorrent)
 
-??? example "Sonarr Examples - [CLICK TO EXPAND]"
+??? example "Sonarr Examples - [Click to show/hide]"
 
     ##### Sonarr
 
@@ -97,7 +97,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-sonarr-tv](images/ds-sonarr-tv.png)
 
-??? example "Radarr Examples - [CLICK TO EXPAND]"
+??? example "Radarr Examples - [Click to show/hide]"
 
     ##### Radarr
 
@@ -115,7 +115,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-radarr-movies](images/ds-radarr-movies.png)
 
-??? example "SABnzbd Examples - [CLICK TO EXPAND]"
+??? example "SABnzbd Examples - [Click to show/hide]"
 
     ##### SABnzbd
 
@@ -127,7 +127,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-sabnzbd-categories](images/ds-sabnzbd-categories.png)
 
-??? example "NZBGet Examples - [CLICK TO EXPAND]"
+??? example "NZBGet Examples - [Click to show/hide]"
 
     ##### NZBGet
 
@@ -139,7 +139,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-nzbget-settings-categories](images/ds-nzbget-settings-categories.png)
 
-??? example "qBittorrent Examples - [CLICK TO EXPAND]"
+??? example "qBittorrent Examples - [Click to show/hide]"
 
     ##### qBittorrent
 
@@ -147,7 +147,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-qbt-options-downloads](images/ds-qbt-options-downloads.png)
 
-??? example "Deluge Example - [CLICK TO EXPAND]"
+??? example "Deluge Example - [Click to show/hide]"
 
     ##### Deluge
 
@@ -155,7 +155,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-deluge-preferences-downloads](images/ds-deluge-preferences-downloads.png)
 
-??? example "ruTorrent Examples - [CLICK TO EXPAND]"
+??? example "ruTorrent Examples - [Click to show/hide]"
 
     ##### ruTorrent
 
