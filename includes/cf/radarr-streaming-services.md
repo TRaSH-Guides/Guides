@@ -1,6 +1,6 @@
 ??? abstract "Streaming Services - [Click to show/hide]"
     | Custom Format                                                                             | Score                                      | Trash ID                                |
-    | ----------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------------------------- |
+    | ----------------------------------------------------------------------------------------- | :----------------------------------------: | --------------------------------------- |
     | [{{ radarr['cf']['amzn']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#amzn)   | 0                                          | {{ radarr['cf']['amzn']['trash_id'] }}  |
     | [{{ radarr['cf']['atvp']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atvp)   | 0                                          | {{ radarr['cf']['atvp']['trash_id'] }}  |
     | [{{ radarr['cf']['bcore']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bcore) | {{ radarr['cf']['bcore']['trash_score'] }} | {{ radarr['cf']['bcore']['trash_id'] }} |

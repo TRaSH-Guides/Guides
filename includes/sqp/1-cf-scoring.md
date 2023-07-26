@@ -2,7 +2,7 @@
 
 ??? abstract "Audio - [Click to show/hide]"
     | Custom Format                                                                                                 |                      Score | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------- | -------------------------: | ------------------------------------------------- |
+    | ------------------------------------------------------------------------------------------------------------- | :------------------------: | ------------------------------------------------- |
     | [{{ radarr['cf']['truehd-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos)       | :warning: -10000 :warning: | {{ radarr['cf']['truehd-atmos']['trash_id'] }}    |
     | [{{ radarr['cf']['dts-x']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dts-x)                     | :warning: -10000 :warning: | {{ radarr['cf']['dts-x']['trash_id'] }}           |
     | [{{ radarr['cf']['atmos-undefined']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#atmos-undefined) |      :warning: 0 :warning: | {{ radarr['cf']['atmos-undefined']['trash_id'] }} |
@@ -24,7 +24,7 @@
 
 ??? abstract "Movie Versions - [Click to show/hide]"
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
-    | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
+    | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------------------ |
     | [{{ radarr['cf']['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         | {{ radarr['cf']['remaster']['trash_score'] }}             | {{ radarr['cf']['remaster']['trash_id'] }}             |
     | [{{ radarr['cf']['4k-remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#4k-remaster)                   | {{ radarr['cf']['4k-remaster']['trash_score'] }}          | {{ radarr['cf']['4k-remaster']['trash_id'] }}          |
     | [{{ radarr['cf']['criterion-collection']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#criterion-collection) | {{ radarr['cf']['criterion-collection']['trash_score'] }} | {{ radarr['cf']['criterion-collection']['trash_id'] }} |
@@ -40,7 +40,7 @@
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
     | Custom Format                                                                                                                        |                                            Score | Trash ID                                            |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | -----------------------------------------------: | --------------------------------------------------- |
+    | ------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------: | --------------------------------------------------- |
     | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |   {{ radarr['cf']['bhdstudio']['trash_score'] }} | {{ radarr['cf']['bhdstudio']['trash_id'] }}         |
     | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                | {{ radarr['cf']['web-tier-01']['trash_score'] }} | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
     | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                | {{ radarr['cf']['web-tier-02']['trash_score'] }} | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
