@@ -27,7 +27,7 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
 ### What are Hardlinks
 
-??? question "**What are hardlinks?** - [CLICK TO EXPAND]"
+??? question "**What are hardlinks?** - [Click to show/hide]"
 
     - [**Short answer**] Having a file in multiple locations without using double your storage space.
     - [**Long answer**] Hard links are a way for a copy operation to be instant and not consume space for those additional copies.
@@ -55,12 +55,12 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
 ### What are Instant Moves (Atomic Moves)
 
-??? question "**What are Instant Moves (Atomic Moves)?** - [CLICK TO EXPAND]"
+??? question "**What are Instant Moves (Atomic Moves)?** - [Click to show/hide]"
 
     A real move and not a copy file from download folder to media folder and then delete file from download folder.
 
 ### What are the Starr Apps
 
-??? question "**What are the `Starr Apps`?** - [CLICK TO EXPAND]"
+??? question "**What are the `Starr Apps`?** - [Click to show/hide]"
 
     Sonarr, Radarr, Lidarr, etc.

@@ -4,7 +4,7 @@ When you make use of the unRaid cache drive for your `/data/torrents` share and 
 
 Using the following instructions you will be able to move the files with the use of the qBittorrent API.
 
-!!! abstract "Workflow Rules - [CLICK TO EXPAND]"
+!!! abstract "Workflow Rules - [Click to show/hide]"
 
     1. Pause torrents older than last x days.
     1. Run the mover.

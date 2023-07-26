@@ -1,4 +1,4 @@
-??? abstract "Unwanted - [CLICK TO EXPAND]"
+??? abstract "Unwanted - [Click to show/hide]"
     | Custom Format                                                                                           | Score                                         | Trash ID                                   |
     | ------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------ |
     | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           | {{ radarr['cf']['br-disk']['trash_score'] }}  | {{ radarr['cf']['br-disk']['trash_id'] }}  |

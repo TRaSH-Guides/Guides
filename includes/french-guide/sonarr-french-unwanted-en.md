@@ -1,4 +1,4 @@
-??? abstract "Unwanted - [CLICK TO EXPAND]"
+??? abstract "Unwanted - [Click to show/hide]"
     | Custom Format                                                                                           | Score                                          | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           | {{ sonarr['cf']['br-disk']['trash_score'] }}   | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
@@ -20,7 +20,7 @@
 
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
 
-    ??? warning "Type of FanSubs - [CLICK TO EXPAND]"
+    ??? warning "Type of FanSubs - [Click to show/hide]"
         Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to {{ sonarr['cf']['fastsub']['trash_score'] }}.
 
         | Custom Format                                                                                 | Score                                        | Trash ID                                  |

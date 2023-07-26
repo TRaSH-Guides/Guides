@@ -26,7 +26,7 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 When adding a new series make sure you set the series type to Anime
 
-??? success "example - [Click to Expand]"
+??? success "example - [Click to show/hide]"
     ![!cfa-seriestype](images/cfa-seriestype.png)
 
 ### Recommended naming scheme
@@ -35,7 +35,7 @@ When adding a new series make sure you set the series type to Anime
 {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
 
-??? abstract "Results: - [Click to Expand]"
+??? abstract "Results: - [Click to show/hide]"
 
     Single Episode:
 

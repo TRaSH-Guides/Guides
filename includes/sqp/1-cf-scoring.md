@@ -18,6 +18,7 @@
     | [{{ radarr['cf']['aac']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#aac)                         |      :warning: 0 :warning: | {{ radarr['cf']['aac']['trash_id'] }}             |
     | [{{ radarr['cf']['dd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dd)                           |     :warning: 15 :warning: | {{ radarr['cf']['dd']['trash_id'] }}              |
 
+
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible<br>The reason why `DTS` has a score of `0` is to make sure you don't limit your self to much."

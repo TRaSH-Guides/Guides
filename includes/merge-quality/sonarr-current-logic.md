@@ -1,6 +1,6 @@
 ### Sonarr current logic
 
-??? abstract "Sonarr current logic - [CLICK TO EXPAND]"
+??? abstract "Sonarr current logic - [Click to show/hide]"
 
     As of 2021-11-06 the logic is as follows:
 

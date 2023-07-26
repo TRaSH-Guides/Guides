@@ -1,4 +1,4 @@
-??? abstract "Streaming Services (UHD) - [CLICK TO EXPAND]"
+??? abstract "Streaming Services (UHD) - [Click to show/hide]"
     | Custom Format                                                                                                                   | Score                                                    | Trash ID                                              |
     | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------- |
     | [{{ sonarr['cf']['atvp']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#atvp)                                         | {{ sonarr['cf']['atvp']['trash_score'] }}                | {{ sonarr['cf']['atvp']['trash_id'] }}                |

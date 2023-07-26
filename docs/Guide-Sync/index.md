@@ -32,7 +32,7 @@ After setup it's fully automated and will check every X minutes for updates to t
 
 Just enable the Custom Formats/Release Profiles you want.
 
-??? success "Examples - [CLICK TO EXPAND]"
+??? success "Examples - [Click to show/hide]"
 
     Radarr Custom Formats Table
     ![!Notifiarr Custom Format Table](images/sync/notifiarr-cf-table.png)

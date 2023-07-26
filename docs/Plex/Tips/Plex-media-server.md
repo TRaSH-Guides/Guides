@@ -56,7 +56,7 @@ When a change is detected in the source location for a library’s content, the 
 !!! success ""
     **Suggested: `Enabled`**
 
-??? tip "TIP - Autoscan - [CLICK TO EXPAND]"
+??? tip "TIP - Autoscan - [Click to show/hide]"
 
     If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel I collaborate with) has a video explaining it in further detail.
 
@@ -355,7 +355,7 @@ To use Hardware-Accelerated Encoding in Plex Media Server.
 
 Here you will find your libraries you've added to your Plex Media Server.
 
-??? example "Examples - [CLICK TO EXPAND]"
+??? example "Examples - [Click to show/hide]"
 
     - Movies `(/data/media/movies)`
     - Movies-4K/Movies-UHD `(/data/media/movies4k)`/`(/data/media/movies-uhd)`

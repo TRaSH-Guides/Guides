@@ -1,4 +1,4 @@
-??? abstract "Movie Versions - [CLICK TO EXPAND]"
+??? abstract "Movie Versions - [Click to show/hide]"
     | Custom Format                                                                                                           | Score                                                     | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
     | [{{ radarr['cf']['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         | {{ radarr['cf']['remaster']['trash_score'] }}             | {{ radarr['cf']['remaster']['trash_id'] }}             |
