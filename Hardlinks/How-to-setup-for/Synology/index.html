@@ -2923,7 +2923,7 @@
 <p>This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.</p>
 <h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link"></a></h3>
 <details class="example">
-<summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></strong>) - [CLICK TO EXPAND]</summary>
+<summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></strong>) - [Click to show/hide]</summary>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script will reset all personal changes made in the compose/env.</p>
@@ -3154,7 +3154,7 @@ We're going to do this in Putty or a similar program.</p>
 </code></pre></div>
 <h3 id="whats-included-and-whats-not-included">Whats included and Whats not included<a class="headerlink" href="#whats-included-and-whats-not-included" title="Permanent link"></a></h3>
 <details class="question">
-<summary>What's included and What's not included - [CLICK TO EXPAND]</summary>
+<summary>What's included and What's not included - [Click to show/hide]</summary>
 <p>This docker-compose file will have the following docker containers included.</p>
 <ul>
 <li>Radarr</li>
@@ -3247,7 +3247,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-compose-commands.md -->
 <h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link"></a></h3>
 <details class="tip">
-<summary>docker-compose commands - [CLICK TO EXPAND]</summary>
+<summary>docker-compose commands - [Click to show/hide]</summary>
 <ul>
 <li><code>sudo docker-compose up -d</code> (This Docker-compose command helps builds the image, then creates and starts Docker containers. The containers are from the services specified in the compose file. If the containers are already running and you run docker-compose up, it recreates the container.)</li>
 <li><code>sudo docker-compose pull</code> (Pulls an image associated with a service defined in a docker-compose.yml)</li>
@@ -3275,7 +3275,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
 <p>Due to some iptables configuration in DSM, you can get an incorrect IP reported in Plex or other apps that need an read/report the IP. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.</p>
 <p>To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.</p>
 <details class="question">
-<summary>Task bash command - [CLICK TO EXPAND]</summary>
+<summary>Task bash command - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 <span class="nv">currentAttempt</span><span class="o">=</span><span class="m">0</span>
 <span class="nv">totalAttempts</span><span class="o">=</span><span class="m">10</span>
@@ -3312,7 +3312,7 @@ If you had previous installed apps, make a backup of their config folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 6, 2023 20:29:52</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 26, 2023 16:06:01</span>
       
     
   </small>
