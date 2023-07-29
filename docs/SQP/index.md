@@ -25,6 +25,11 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
     **CF** = Custom Formats
 
+??? question "Can I use these SQP with Sonarr? - [Click to show/hide]"
+    **NO**, SQP are only for Radarr :bangbang:<br>
+    At the moment their are no specific release groups to create a SQP for Sonarr.<br>
+    If you're looking for a SQP-1 (xxxxp) then look at the public Sonarr Guide.
+
 ??? question "Why don't you add this to the public guide? - [Click to show/hide]"
     These SQPs are advanced Quality Profiles tested and created for a specific need, and only interesting for people that are interested in a specific Quality Profile.
 
