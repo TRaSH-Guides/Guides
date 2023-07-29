@@ -5,7 +5,7 @@
     ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
 
     | Custom Format                                                                                             | Score                                              | Trash ID                                        |
-    | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------- |
+    | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['dv-hdr10']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10)           | {{ radarr['cf']['dv-hdr10']['trash_score'] }}      | {{ radarr['cf']['dv-hdr10']['trash_id'] }}      |
     | [{{ radarr['cf']['dv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv)                       | {{ radarr['cf']['dv']['trash_score'] }}            | {{ radarr['cf']['dv']['trash_id'] }}            |
     | [{{ radarr['cf']['dv-hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hlg)               | {{ radarr['cf']['dv-hlg']['trash_score'] }}        | {{ radarr['cf']['dv-hlg']['trash_id'] }}        |
@@ -18,4 +18,4 @@
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     | {{ radarr['cf']['hlg']['trash_score'] }}           | {{ radarr['cf']['hlg']['trash_id'] }}           |
 
     !!! tip
-        If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it), It is important to also add the [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ radarr['cf']['dv-webdl']['trash_score'] }}
+        If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it)), It is important to also add the [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ radarr['cf']['dv-webdl']['trash_score'] }}
