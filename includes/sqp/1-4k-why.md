@@ -11,6 +11,19 @@
     - Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
     - Dolby Vision with HDR10 fallback.
 
+    ------
+
+    BHDStudio does HQ 1080p/2160p Encodes with the following features
+
+    - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
+    - [1080p] AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
+    - [2160p] Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
+    - [2160p] Dolby Vision with HDR10 fallback or HDR10 if there is no DV HDR10 release.
+    - Small sizes
+    - Good quality
+
+    Biggest drawback if you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+
 ### Tested Devices and Results
 
 We've tested this SQP on several devices and added the result in a [spreadsheet](https://docs.google.com/spreadsheets/d/1fhwK_PLBfJjL6w8p7tVj-qK4GA4vqMtvGegGlNwbSDo/){:target="_blank" rel="noopener noreferrer"}
@@ -23,5 +36,5 @@ You will need to provide the following info.
 - Your used media player device (ATV, Shield, Smart TV App, etc).
 - Tautulli screenshot when playing a `BHDStudio 2160p` with `DV HDR10`.
 - Info what your TV is reporting DV or HDR10.
-- Tautulli screenshot when playing a `Hybrid WEBDL 2160p` with `DV HDR10`.
+- Tautulli screenshot when playing a `WEBDL 2160p` with `DV HDR10`.
 - Info what your TV is reporting DV or HDR10.
