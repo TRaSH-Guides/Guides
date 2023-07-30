@@ -1,3 +1,13 @@
+# 2023-07-30 20:40
+- fix(guides): jdupes speedup, Filter files based on specified criteria, in this case it will only compare the following extensions: mp4, mkv, avi
+- fix(sonarr): sync RP json with the guide regexes, Added missing Sonarr v3 to be in sync with the Sonarr v4 Guide
+- fix(sonarr-fr): Update the French guide Update the French guide, Reviewed the presentation for Anime streaming services
+- fix(sonarr-fr): Update the French guide Update the French guide, Added the UHD boost/cut
+- fix(sonarr-fr): Update the French guide Update the French guide, Added the Extra CF to the Unwanted section
+- feat(radarr-fr): Updated score in both FR UHD Tier 01 and 02 to follow original
+- feat(radarr-fr): Added ONLYMOViE to FR WEB Tier 02
+- feat(anime): updates to scoring for guides, Updates to the Sonarr and Radarr guides for Anime to add in missing tiers and tweak scoring
+
 # 2023-07-16 14:25
 **[Updated]**
 - [Sonarr] Updated Anime guide to include Remux Tiers and updated Web Tier scoring, added KQRM to LQ CF
