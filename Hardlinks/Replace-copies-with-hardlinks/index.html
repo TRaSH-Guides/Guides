@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.19">
     
     
       
@@ -2415,10 +2415,10 @@
 <div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>DIR1<span class="w"> </span>DIR2
 </code></pre></div>
 <p>This will do a dry run and summarize at the end.</p>
-<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-M<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/data/media/movies&quot;</span>
+<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rMX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span><span class="s2">&quot;/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/data/media/movies&quot;</span>
 </code></pre></div>
 <p>This will hard link all duplicate files without prompting.</p>
-<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-L<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/data/media/movies&quot;</span>
+<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rLX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span><span class="s2">&quot;/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/data/media/movies&quot;</span>
 </code></pre></div>
 <div class="admonition bug">
 <p>Windows allows a maximum of 1023 hard links per file</p>
@@ -2443,7 +2443,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 15, 2022 16:42:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 30, 2023 15:34:17</span>
       
     
   </small>
