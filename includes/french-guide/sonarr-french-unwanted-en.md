@@ -1,11 +1,11 @@
 ??? abstract "Unwanted - [Click to show/hide]"
-    | Custom Format                                                                                           | Score                                          | Trash ID                                    |
-    | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
-    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           | {{ sonarr['cf']['br-disk']['trash_score'] }}   | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
-    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                     | {{ sonarr['cf']['lq']['trash_score'] }}        | {{ sonarr['cf']['lq']['trash_id'] }}        |
+    | Custom Format                                                                                           |                     Score                      | Trash ID                                    |
+    | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------: | ------------------------------------------- |
+    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           |  {{ sonarr['cf']['br-disk']['trash_score'] }}  | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
+    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                     |    {{ sonarr['cf']['lq']['trash_score'] }}     | {{ sonarr['cf']['lq']['trash_id'] }}        |
     | [{{ sonarr['cf']['french-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-lq)           | {{ sonarr['cf']['french-lq']['trash_score'] }} | {{ sonarr['cf']['french-lq']['trash_id'] }} |
-    | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning: | {{ sonarr['cf']['x265-hd']['trash_score'] }}   | {{ sonarr['cf']['x265-hd']['trash_id'] }}   |
-    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)             | {{ sonarr['cf']['extras']['trash_score'] }}    | {{ sonarr['cf']['extras']['trash_id'] }}    |
+    | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ sonarr['cf']['x265-hd']['trash_score'] }}  | {{ sonarr['cf']['x265-hd']['trash_id'] }}   |
+    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)             |  {{ sonarr['cf']['extras']['trash_score'] }}   | {{ sonarr['cf']['extras']['trash_id'] }}    |
 
     ------
 
@@ -23,7 +23,7 @@
     ??? warning "Type of FanSubs - [Click to show/hide]"
         Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to {{ sonarr['cf']['fastsub']['trash_score'] }}.
 
-        | Custom Format                                                                                 | Score                                        | Trash ID                                  |
-        | --------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------- |
-        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | 0                                            | {{ sonarr['cf']['fansub']['trash_id'] }}  |
+        | Custom Format                                                                                 |                    Score                     | Trash ID                                  |
+        | --------------------------------------------------------------------------------------------- | :------------------------------------------: | ----------------------------------------- |
+        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   |                      0                       | {{ sonarr['cf']['fansub']['trash_id'] }}  |
         | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_score'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
