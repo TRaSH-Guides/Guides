@@ -11,12 +11,12 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
 ## The Following SQP are available
 
-- [SQP-1 (1080p)|*Streaming Optimized*](/SQP/1){:target="_blank" rel="noopener noreferrer"}
-- [SQP-1 (2160p)|*Streaming Optimized*](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
-- [SQP-2 (2160p)|*UHD Remux|Bluray|IMAX-E*](/SQP/2){:target="_blank" rel="noopener noreferrer"}
-- [SQP-3 (2160p)|*UHD Remux|IMAX-E*](/SQP/3){:target="_blank" rel="noopener noreferrer"}
-- [SQP-4 (2160p)|*UHD WEBDL|IMAX-E*](/SQP/4){:target="_blank" rel="noopener noreferrer"}
-- [SQP-5 (2160p)|*UHD Bluray|IMAX-E*](/SQP/5){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (1080p) - *Streaming Optimized*](/SQP/1){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (2160p) - *Streaming Optimized*](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
+- [SQP-2 (2160p) - *UHD Remux|Bluray|IMAX-E*](/SQP/2){:target="_blank" rel="noopener noreferrer"}
+- [SQP-3 (2160p) - *UHD Remux|IMAX-E*](/SQP/3){:target="_blank" rel="noopener noreferrer"}
+- [SQP-4 (2160p) - *UHD WEBDL|IMAX-E*](/SQP/4){:target="_blank" rel="noopener noreferrer"}
+- [SQP-5 (2160p) - *UHD Bluray|IMAX-E*](/SQP/5){:target="_blank" rel="noopener noreferrer"}
 
 ### FAQ & INFO
 
