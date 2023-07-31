@@ -10,10 +10,6 @@ Using the following instructions you will be able to move the files with the use
     1. Run the mover.
     1. Resume the torrents once the mover is completed.
 
-## Warning
-
-!!! Danger "If you make use of the Seed Time/Ratio settings in your Indexers settings in the Starr apps[^1].<br> Make sure you're using `Post-Import Category` in your Starr apps Download clients settings.<br>Else it could happen when the torrents get paused that they get removed by the Starr apps before the seeding goal is reached."
-
 !!! warning
     The screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
@@ -36,9 +32,11 @@ Install the following Plugins.
 
 - User Scripts
 - Nerd Tools
-      - python3 [^2]
-      - python-setuptools [^2]
-      - python-pip [^2]
+      - python3 <sup>(*1*)</sup>
+      - python-setuptools <sup>(*1*)</sup>
+      - python-pip <sup>(*1*)</sup>
+
+!!! info "<sup>(*1*)</sup> These needs to be installed from the Nerd Tools"
 
 ------
 
@@ -200,9 +198,3 @@ Setup your own schedule [HERE](https://crontab.guru/)
 ![!Set Run Time](images/Unraid-settings-user-scripts-qbit-mover-cron.png)
 
 --8<-- "includes/support.md"
-
-[^1]:
-    Starr apps = Sonarr/Radarr etc. Doesn't Starr apps sound better then `The arr(s)` ?
-
-[^2]:
-    These needs to be installed from the Nerd Tools.
