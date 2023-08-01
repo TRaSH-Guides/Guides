@@ -19,7 +19,7 @@ This page will provide you with guidance on how to install several Docker images
 ??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]"
 
     !!! Warning
-        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script will reset all personal changes made in the compose/env.
+        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
 
         The script is only tested on Synology DSM7 and higher.
 
