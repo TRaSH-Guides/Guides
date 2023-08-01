@@ -73,7 +73,7 @@
 
         - `[{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)`
         - `[{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)`
-        - `HD Bluray Tier 03`
+        - `[{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)`
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
