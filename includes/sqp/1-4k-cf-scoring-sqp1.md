@@ -71,7 +71,7 @@
     !!! tip
         If you use SQP-1 (1080p) as your main/second Radarr you want to remove the following HQ Release Groups
 
-        - `HD Bluray Tier 01`
+        - `[{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)`
         - `HD Bluray Tier 02`
         - `HD Bluray Tier 03`
 
