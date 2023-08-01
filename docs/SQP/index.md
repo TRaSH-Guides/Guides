@@ -11,12 +11,12 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
 ## The Following SQP are available
 
-- [Streaming Optimized (SQP-1)](/SQP/1){:target="_blank" rel="noopener noreferrer"}
-- [Streaming Optimized (SQP-1 2160p)](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
-- [UHD Remux|Bluray|IMAX-E (SQP-2)](/SQP/2){:target="_blank" rel="noopener noreferrer"}
-- [UHD Remux|IMAX-E (SQP-3)](/SQP/3){:target="_blank" rel="noopener noreferrer"}
-- [UHD WEBDL|IMAX-E (SQP-4)](/SQP/4){:target="_blank" rel="noopener noreferrer"}
-- [UHD Bluray|IMAX-E (SQP-5)](/SQP/5){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (1080p) - *Streaming Optimized*](/SQP/1){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (2160p) - *Streaming Optimized*](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
+- [SQP-2 (2160p) - *UHD Remux|Bluray|IMAX-E*](/SQP/2){:target="_blank" rel="noopener noreferrer"}
+- [SQP-3 (2160p) - *UHD Remux|IMAX-E*](/SQP/3){:target="_blank" rel="noopener noreferrer"}
+- [SQP-4 (2160p) - *UHD WEBDL|IMAX-E*](/SQP/4){:target="_blank" rel="noopener noreferrer"}
+- [SQP-5 (2160p) - *UHD Bluray|IMAX-E*](/SQP/5){:target="_blank" rel="noopener noreferrer"}
 
 ### FAQ & INFO
 
@@ -24,6 +24,11 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
     **SQP** = Special Quality Profile
 
     **CF** = Custom Formats
+
+??? question "Can I use these SQP with Sonarr? - [Click to show/hide]"
+    **NO**, SQP are only for Radarr :bangbang:<br>
+    At the moment their are no specific release groups to create a SQP for Sonarr.<br>
+    If you're looking for a SQP-1 (xxxxp) then look at the public Sonarr Guide.
 
 ??? question "Why don't you add this to the public guide? - [Click to show/hide]"
     These SQPs are advanced Quality Profiles tested and created for a specific need, and only interesting for people that are interested in a specific Quality Profile.

@@ -1,6 +1,6 @@
 ??? abstract "Optional - [Click to show/hide]"
     | Custom Format                                                                                                 | Score                                                | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
+    | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------: | ------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
     | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)       | {{ radarr['cf']['evo-no-webdl']['trash_score'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
     | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)         | {{ radarr['cf']['no-rlsgroup']['trash_score'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |

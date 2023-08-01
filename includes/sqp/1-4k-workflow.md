@@ -4,31 +4,18 @@
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
-    - When a (U)HD WEBDL is released it will download the (U)HD WEB-DL. (streaming services)
-    - When a (U)HD BHDStudio is released it will download the (U)HD BHDStudio releases.
-    - Where the UHD will upgrade the HD.
+    - When a 1080p WEBDL is released it will be downloaded. (streaming services)
+    - When a 1080p BHDStudio is released it will download the BHDStudio release.
+    - If no 1080p BHDStudio or 1080p WEBDL can be found (not existing or limited sources) it will download a 1080p Bluray encode (less or not streaming optimized).
+    - When a 2160p WEBDL is released it will download the 2160p WEBDL. (streaming services)
+    - When a 2160p BHDStudio is released it will download the 2160p BHDStudio release.
+    - 1080p releases will be upgraded to 2160p releases when available.
+
+    !!! info "2160p BHDStudio will trump any 2160p WEBDL regardless if it has DV HDR10 or only HDR10"
 
     ------
 
     *Possible Variables*
 
-    **When no (U)HD BHDStudio or (U)HD WEBDL exist (or limited sources) it will grab the following:**
-
-    - Get other HD Bluray Encodes (less or not streaming optimized).
-    - Prefer HQ Encodes (Bluray-720/1080).
-    - When the IMAX-E is released it will upgrade to the IMAX-E.
-    - When there is no BHDStudio release or WEBDL it will get a HD Bluray Encodes (less or not streaming optimized).
-    - Max compatibility, prefer BHDStudio.
-    - Prefer Streaming Services Audio Formats (Atmos) if no BHDStudio is available.
-
-    !!! info "BHDStudio"
-        BHDStudio does HQ 1080p/2160p Encodes with the following features
-
-        - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
-        - [1080p] AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
-        - [2160p] Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
-        - [2160p] Dolby Vision with HDR10 fallback.
-        - Small sizes
-        - Good quality
-
-        Biggest drawback if you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and in that case you might need to choose a few of the optional variables.
+    - Prefer 1080p/2160p WEBDL with IMAX-E.
+    - Leave out 1080p if you use SQP-1 (1080p) as your main/other Radarr
