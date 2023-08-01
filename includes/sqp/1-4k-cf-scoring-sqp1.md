@@ -37,7 +37,7 @@
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     |      {{ radarr['cf']['hlg']['trash_score'] }}      | {{ radarr['cf']['hlg']['trash_id'] }}           |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)           |   {{ radarr['cf']['dv-webdl']['trash_score'] }}    | {{ radarr['cf']['dv-webdl']['trash_id'] }}      |
 
-    !!! danger "The reason why we add `DV (WEBDL)` is because you want maximum compatibility between all devices  :warning:"
+    !!! danger "The reason why we add `DV (WEBDL)` is because you want maximum compatibility across all devices :warning:"
 
 ??? abstract "Movie Versions - [Click to show/hide]"
     | Custom Format                                                                                                           |                           Score                           | Trash ID                                               |
