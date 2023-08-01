@@ -1,3 +1,7 @@
+# 2023-08-01 19:00
+- feat(radarr): simplify SQP-1 (1080p) and SQP-1 (2160p), Removed Possible Variables and merged them or narrowed it down to 1 variable (Imax-E).
+- fix(guides): jdupes speedup, Filter files based on specified criteria, in this case it will only compare the following extensions: mp4, mkv, avi.
+
 # 2023-07-30 20:40
 - fix(guides): jdupes speedup, Filter files based on specified criteria, in this case it will only compare the following extensions: mp4, mkv, avi
 - fix(sonarr): sync RP json with the guide regexes, Added missing Sonarr v3 to be in sync with the Sonarr v4 Guide
