@@ -4,7 +4,7 @@
 
     - You want maximum compatibility across all devices and still a HQ release.
     - You run 2 instances of Radarr and want both version or just for the 1080p ones.
-    - You want to have minimum to no transcoding for low powered devices or remote streaming.
+    - You want to have little to no transcoding for low powered devices or remote streaming.
     - You want to grab streaming optimized releases.
     - Small sizes.
 
