@@ -17,4 +17,4 @@
     - Small sizes
     - Good quality
 
-    Biggest drawback if you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+    Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
