@@ -36,7 +36,7 @@
         - If you prefer 1080p WEBDL with IMAX-E then add [{{ radarr['cf']['imax-enhanced']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced) with the default scores.
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
-        !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace in most cases the BHDStudio release :warning:"
+        !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
     | Custom Format                                                                                                                        |                                            Score | Trash ID                                            |
