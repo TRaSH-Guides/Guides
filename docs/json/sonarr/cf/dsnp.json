@@ -3,7 +3,7 @@
   "trash_score": 100,
   "trash_scores": {
     "default": 100,
-    "anime": 5
+    "anime-sonarr": 5
   },
   "name": "DSNP",
   "includeCustomFormatWhenRenaming": true,

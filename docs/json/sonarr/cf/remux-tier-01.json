@@ -3,7 +3,7 @@
   "trash_score": 1900,
   "trash_scores": {
     "default": 1900,
-    "anime": 1050
+    "anime-sonarr": 1050
   },
   "name": "Remux Tier 01",
   "includeCustomFormatWhenRenaming": false,

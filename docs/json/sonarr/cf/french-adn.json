@@ -3,7 +3,7 @@
   "trash_score": 3,
   "trash_scores": {
     "default": 3,
-    "anime": 1
+    "anime-sonarr": 1
   },
   "name": "ADN",
   "includeCustomFormatWhenRenaming": true,

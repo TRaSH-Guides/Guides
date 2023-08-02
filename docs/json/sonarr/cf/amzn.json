@@ -3,7 +3,7 @@
   "trash_score": 70,
   "trash_scores": {
     "default": 70,
-    "anime": 3
+    "anime-sonarr": 3
   },
   "name": "AMZN",
   "includeCustomFormatWhenRenaming": true,

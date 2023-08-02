@@ -3,7 +3,7 @@
   "trash_score": 60,
   "trash_scores": {
     "default": 60,
-    "anime": 4
+    "anime-sonarr": 4
   },
   "name": "NF",
   "includeCustomFormatWhenRenaming": true,
