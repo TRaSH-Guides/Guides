@@ -1,6 +1,6 @@
 ### SQP-1 (2160p)
 
-#### Create a new Quality Profile (SQP-1 (2160p))
+#### Create a new Quality Profile
 
 `Settings` => `Profiles`
 

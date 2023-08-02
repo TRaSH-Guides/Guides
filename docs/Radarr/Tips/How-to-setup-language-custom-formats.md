@@ -26,7 +26,7 @@ For this we're going to make use of so called reverse scoring.
 
 Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original.json' %]][[% endfilter %]]
@@ -46,7 +46,7 @@ For this we're going to make use of so called reverse scoring.
 
 Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-english.json' %]][[% endfilter %]]
@@ -70,7 +70,7 @@ For this we're going to make use of so called reverse scoring.
 
 Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-dutch.json' %]][[% endfilter %]]
@@ -89,7 +89,7 @@ Let's say you want German, but if German is not available then fall back to Orig
 
 Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original-or-german.json' %]][[% endfilter %]]
@@ -97,7 +97,7 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
@@ -115,7 +115,7 @@ Let's say you just want to prefer German and don't care if you get another rando
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
@@ -137,7 +137,7 @@ In this example I will use Dutch and Flemish since a lot of Movies/TV Shows sinc
 
 Add the following json to your Radarr/Sonarr with a score of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-dutch.json' %]][[% endfilter %]]
@@ -149,7 +149,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### What's reverse scoring
 
-??? question "What's reverse scoring? - [CLICK TO EXPAND]"
+??? question "What's reverse scoring? - [Click to show/hide]"
 
     With reverse scoring you add a Custom Format with a score of `-10000` and your preferred condition you negate.
 
@@ -157,7 +157,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### Prefer language X over language Y
 
-??? question "Prefer language X over language Y - [CLICK TO EXPAND]"
+??? question "Prefer language X over language Y - [Click to show/hide]"
 
     If you want to prefer Prefer language X over language Y,
 
@@ -167,13 +167,13 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### What's Original Language
 
-??? question "What's Original Language? - [CLICK TO EXPAND]"
+??? question "What's Original Language? - [Click to show/hide]"
 
     Original Language is the language in which a Movie/TV Show was originally made.
 
 ### Where does Radarr get the Original Language from
 
-??? question "Where does Radarr get the Original Language from? - [CLICK TO EXPAND]"
+??? question "Where does Radarr get the Original Language from? - [Click to show/hide]"
 
     Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}.
 
@@ -181,7 +181,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### Where does Sonarr get the Original Language from
 
-??? question "Where does Sonarr get the Original Language from? - [CLICK TO EXPAND]"
+??? question "Where does Sonarr get the Original Language from? - [Click to show/hide]"
 
     Sonarr makes use of [TheTVDB](https://thetvdb.com/){:target="_blank" rel="noopener noreferrer"}.
 

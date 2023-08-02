@@ -1,11 +1,11 @@
-??? abstract "HQ Source Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                       | Score                                                     | Trash ID                                               |
-    | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
-    | [{{ radarr['cf']['french-remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-01) | {{ radarr['cf']['french-remux-tier-01']['trash_scores']['default'] }} | {{ radarr['cf']['french-remux-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['french-remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-02) | {{ radarr['cf']['french-remux-tier-02']['trash_scores']['default'] }} | {{ radarr['cf']['french-remux-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['french-web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-01)     | {{ radarr['cf']['french-web-tier-01']['trash_scores']['default'] }}   | {{ radarr['cf']['french-web-tier-01']['trash_id'] }}   |
-    | [{{ radarr['cf']['french-web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-02)     | {{ radarr['cf']['french-web-tier-02']['trash_scores']['default'] }}   | {{ radarr['cf']['french-web-tier-02']['trash_id'] }}   |
-    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups)          | ?????? :warning:                                          | {{ radarr['cf']['french-scene']['trash_id'] }}         |
+??? abstract "HQ Source Groups - [Click to show/hide]"
+    | Custom Format                                                                                                       |                           Score                           | Trash ID                                               |
+    | ------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------------------ |
+    | [{{ radarr['cf']['french-remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-01) | {{ radarr['cf']['french-remux-tier-01']['trash_score'] }} | {{ radarr['cf']['french-remux-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['french-remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-02) | {{ radarr['cf']['french-remux-tier-02']['trash_score'] }} | {{ radarr['cf']['french-remux-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['french-web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-01)     |  {{ radarr['cf']['french-web-tier-01']['trash_score'] }}  | {{ radarr['cf']['french-web-tier-01']['trash_id'] }}   |
+    | [{{ radarr['cf']['french-web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-02)     |  {{ radarr['cf']['french-web-tier-02']['trash_score'] }}  | {{ radarr['cf']['french-web-tier-02']['trash_id'] }}   |
+    | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups)          |                     ?????? :warning:                      | {{ radarr['cf']['french-scene']['trash_id'] }}         |
 
     !!! tip
         :warning: French Scene groups are included as a fallback if you really want MULTi release despite a potential loss in quality. Either score the CF to `{{ radarr['cf']['french-scene']['trash_scores']['default'] }}` (default) or `0` depending on what you want to achieve.

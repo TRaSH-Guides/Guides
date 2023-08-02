@@ -72,7 +72,7 @@ Open up the download client. For this example I will be using SABnzbd.
 This is what you put in your Host in Remote Path Mapping.
 This could be a `hostname`, `container name` or a `IP Address`
 
-??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
+??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
 
     ![!rpm-add-rpm-select-sabnzbd](images/rpm-add-rpm-select-sabnzbd.png)
 
@@ -84,7 +84,7 @@ In SABnzbd go to `settings` => `Folders`
 
 ![!rpm-sabnzbd-folders-cdf](images/rpm-sabnzbd-folders-cdf.png)
 
-??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
+??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
 
     ![!rpm-add-rpm-remote-path](images/rpm-add-rpm-remote-path.png)
 
@@ -94,7 +94,7 @@ To find out what you need to put in in your local path you need to know how Rada
 
 Click on the browse button and browse to the location where the files are accessible for Radarr.
 
-??? example "example what to add in Add Remote Path Mapping - [CLICK TO EXPAND]"
+??? example "example what to add in Add Remote Path Mapping - [Click to show/hide]"
 
     ![!rpm-add-local-path](images/rpm-add-local-path.png)
 

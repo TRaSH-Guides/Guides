@@ -137,7 +137,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Sonarr
 
-??? example "Sonarr - [CLICK TO EXPAND]"
+??? example "Sonarr - [Click to show/hide]"
 
     `Settings` => `Download Clients`
 
@@ -151,7 +151,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Radarr
 
-??? example "Radarr - [CLICK TO EXPAND]"
+??? example "Radarr - [Click to show/hide]"
 
     `Settings` => `Download Clients`
 

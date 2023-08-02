@@ -117,13 +117,13 @@ I also made 3 guides related to this one.
 
 ### TrueHD ATMOS
 
-??? question "TrueHD ATMOS - [CLICK TO EXPAND]"
+??? question "TrueHD ATMOS - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}
 
     Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd-atmos.json' %]][[% endfilter %]]
@@ -135,11 +135,11 @@ I also made 3 guides related to this one.
 
 ### DTS X
 
-??? question "DTS X - [CLICK TO EXPAND]"
+??? question "DTS X - [Click to show/hide]"
 
     DTS:X is an object-based audio codec, which aims to create a multi-dimensional sound that “moves around you like it would in real life”
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-x.json' %]][[% endfilter %]]
@@ -151,14 +151,14 @@ I also made 3 guides related to this one.
 
 ### ATMOS (undefined)
 
-??? question "ATMOS (undefined) - [CLICK TO EXPAND]"
+??? question "ATMOS (undefined) - [Click to show/hide]"
 
     Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
 
     !!! note
         Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atmos-undefined.json' %]][[% endfilter %]]
@@ -172,11 +172,11 @@ I also made 3 guides related to this one.
 
 <sub>DDPlus = DD+</sub>
 
-??? question "DD+ ATMOS - [CLICK TO EXPAND]"
+??? question "DD+ ATMOS - [Click to show/hide]"
 
     Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus-atmos.json' %]][[% endfilter %]]
@@ -188,13 +188,13 @@ I also made 3 guides related to this one.
 
 ### TrueHD
 
-??? question "TrueHD - [CLICK TO EXPAND]"
+??? question "TrueHD - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}
 
     Dolby TrueHD is a lossless, multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Disc and compatible hardware.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd.json' %]][[% endfilter %]]
@@ -206,13 +206,13 @@ I also made 3 guides related to this one.
 
 ### DTS-HD MA
 
-??? question "DTS-HD MA - [CLICK TO EXPAND]"
+??? question "DTS-HD MA - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}
 
     DTS-HD Master Audio is a multi-channel, lossless audio codec developed by DTS as an extension of the lossy DTS Coherent Acoustics codec (DTS CA; usually itself referred to as just DTS). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA's primary application is audio storage and playback for Blu-ray Disc media.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-ma.json' %]][[% endfilter %]]
@@ -224,11 +224,11 @@ I also made 3 guides related to this one.
 
 ### FLAC
 
-??? question "FLAC - [CLICK TO EXPAND]"
+??? question "FLAC - [Click to show/hide]"
 
     FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/flac.json' %]][[% endfilter %]]
@@ -240,11 +240,11 @@ I also made 3 guides related to this one.
 
 ### PCM
 
-??? question "PCM - [CLICK TO EXPAND]"
+??? question "PCM - [Click to show/hide]"
 
     PCM is the method of encoding typically used for uncompressed digital audio
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcm.json' %]][[% endfilter %]]
@@ -256,7 +256,7 @@ I also made 3 guides related to this one.
 
 ### DTS-HD HRA
 
-??? question "DTS-HD HRA - [CLICK TO EXPAND]"
+??? question "DTS-HD HRA - [Click to show/hide]"
 
     [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="_blank" rel="noopener noreferrer"}
 
@@ -275,7 +275,7 @@ I also made 3 guides related to this one.
     | Sampling Freq. | 96 kHz           | 192 kHz           |
     | Resolution     | -                | Up to 24-bit      |
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-hra.json' %]][[% endfilter %]]
@@ -289,13 +289,13 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
-??? question "DD+ - [CLICK TO EXPAND]"
+??? question "DD+ - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}
 
     Dolby Digital Plus, also known as Enhanced AC-3 (and commonly abbreviated as DD+ or E-AC-3, or EC-3) is a digital audio compression scheme developed by Dolby Labs for transport and storage of multi-channel digital audio. It is a successor to Dolby Digital (AC-3).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus.json' %]][[% endfilter %]]
@@ -307,11 +307,11 @@ I also made 3 guides related to this one.
 
 ### DTS-ES
 
-??? question "DTS-ES - [CLICK TO EXPAND]"
+??? question "DTS-ES - [Click to show/hide]"
 
     DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1, and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-es.json' %]][[% endfilter %]]
@@ -325,10 +325,10 @@ I also made 3 guides related to this one.
 
 <sub>DTS = Basic DTS</sub>
 
-??? question "DTS - [CLICK TO EXPAND]"
+??? question "DTS - [Click to show/hide]"
     Description placeholder
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts.json' %]][[% endfilter %]]
@@ -340,14 +340,14 @@ I also made 3 guides related to this one.
 
 ### AAC
 
-??? question "AAC - [CLICK TO EXPAND]"
+??? question "AAC - [Click to show/hide]"
 
     Advanced Audio Coding
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
     Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aac.json' %]][[% endfilter %]]
@@ -361,13 +361,13 @@ I also made 3 guides related to this one.
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
-??? question "DD - [CLICK TO EXPAND]"
+??? question "DD - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
 
     Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dd.json' %]][[% endfilter %]]
@@ -379,10 +379,10 @@ I also made 3 guides related to this one.
 
 ### MP3
 
-??? question "MP3 - [CLICK TO EXPAND]"
+??? question "MP3 - [Click to show/hide]"
     Description placeholder
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mp3.json' %]][[% endfilter %]]
@@ -394,13 +394,13 @@ I also made 3 guides related to this one.
 
 ### Opus
 
-??? question "Opus - [CLICK TO EXPAND]"
+??? question "Opus - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
 
     Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/opus.json' %]][[% endfilter %]]
@@ -416,7 +416,7 @@ I also made 3 guides related to this one.
 
 ### 1.0 Mono
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10-mono.json' %]][[% endfilter %]]
@@ -428,7 +428,7 @@ I also made 3 guides related to this one.
 
 ### 2.0 Stereo
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/20-stereo.json' %]][[% endfilter %]]
@@ -440,7 +440,7 @@ I also made 3 guides related to this one.
 
 ### 3.0 Sound
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/30-sound.json' %]][[% endfilter %]]
@@ -452,7 +452,7 @@ I also made 3 guides related to this one.
 
 ### 4.0 Sound
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/40-sound.json' %]][[% endfilter %]]
@@ -464,7 +464,7 @@ I also made 3 guides related to this one.
 
 ### 5.1 Surround
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/51-surround.json' %]][[% endfilter %]]
@@ -476,7 +476,7 @@ I also made 3 guides related to this one.
 
 ### 6.1 Surround
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/61-surround.json' %]][[% endfilter %]]
@@ -488,7 +488,7 @@ I also made 3 guides related to this one.
 
 ### 7.1 Surround
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/71-surround.json' %]][[% endfilter %]]
@@ -500,7 +500,7 @@ I also made 3 guides related to this one.
 
 ### 9.1 Surround
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/91-surround.json' %]][[% endfilter %]]
@@ -518,13 +518,13 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV HDR10 - [CLICK TO EXPAND]"
+??? question "DV HDR10 - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
     Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10.json' %]][[% endfilter %]]
@@ -538,13 +538,13 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV - [CLICK TO EXPAND]"
+??? question "DV - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
     Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv.json' %]][[% endfilter %]]
@@ -558,13 +558,13 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV HLG - [CLICK TO EXPAND]"
+??? question "DV HLG - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
     Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hlg.json' %]][[% endfilter %]]
@@ -578,13 +578,13 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV SDR - [CLICK TO EXPAND]"
+??? question "DV SDR - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
     Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-sdr.json' %]][[% endfilter %]]
@@ -598,7 +598,7 @@ I also made 3 guides related to this one.
 
 <sub>HDR10Plus = HDR10+</sub>
 
-??? question "HDR10+ - [CLICK TO EXPAND]"
+??? question "HDR10+ - [Click to show/hide]"
 
     **HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.**
 
@@ -606,7 +606,7 @@ I also made 3 guides related to this one.
 
     HDR10+, also known as HDR10 Plus, is an HDR video format, announced on 20 April 2017. It is the same as HDR10 but with the addition of a system of dynamic metadata developed by Samsung. It is free to use for content creators and has a maximum $10,000 annual license for some manufacturers. It has been positioned as an alternative to Dolby Vision without the same expenses.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus.json' %]][[% endfilter %]]
@@ -620,7 +620,7 @@ I also made 3 guides related to this one.
 
 <sub>HDR10</sub>
 
-??? question "HDR10 - [CLICK TO EXPAND]"
+??? question "HDR10 - [Click to show/hide]"
 
     **HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.**
 
@@ -630,7 +630,7 @@ I also made 3 guides related to this one.
 
     HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g. lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e. the presentation of the video) is mediated by the display, with the result that the original producer's intent may not be preserved.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10.json' %]][[% endfilter %]]
@@ -644,13 +644,13 @@ I also made 3 guides related to this one.
 
 <sub>HDR</sub>
 
-??? question "HDR - [CLICK TO EXPAND]"
+??? question "HDR - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
 
     High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr.json' %]][[% endfilter %]]
@@ -662,13 +662,13 @@ I also made 3 guides related to this one.
 
 ### HDR (undefined)
 
-??? question "HDR (undefined) - [CLICK TO EXPAND]"
+??? question "HDR (undefined) - [Click to show/hide]"
 
     Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
 
     For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr-undefined.json' %]][[% endfilter %]]
@@ -682,7 +682,7 @@ I also made 3 guides related to this one.
 
 <sub>PQ = PQ10</sub>
 
-??? question "PQ - [CLICK TO EXPAND]"
+??? question "PQ - [Click to show/hide]"
 
     **PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.**
 
@@ -690,7 +690,7 @@ I also made 3 guides related to this one.
 
     PQ10, sometimes simply referred as the PQ format, is an HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata. It uses the PQ transfer function, Rec. 2020 color primaries and a bit depth of 10-bits. It is not backward compatible with SDR.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pq.json' %]][[% endfilter %]]
@@ -704,7 +704,7 @@ I also made 3 guides related to this one.
 
 <sub>HLG = HLG10</sub>
 
-??? question "HLG - [CLICK TO EXPAND]"
+??? question "HLG - [Click to show/hide]"
 
     **HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.**
 
@@ -712,7 +712,7 @@ I also made 3 guides related to this one.
 
     HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. It uses the HLG transfer function, Rec. 2020 color primaries, and a bit depth of 10 bits. The format is backwards compatible with SDR UHDTV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
@@ -728,11 +728,11 @@ I also made 3 guides related to this one.
 
 ### Hybrid
 
-??? question "Hybrid - [CLICK TO EXPAND]"
+??? question "Hybrid - [Click to show/hide]"
 
     A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hybrid.json' %]][[% endfilter %]]
@@ -744,14 +744,14 @@ I also made 3 guides related to this one.
 
 ### Remaster
 
-??? question "Remaster - [CLICK TO EXPAND]"
+??? question "Remaster - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
 
     For the software term, see Software remastering.
     Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
      [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remaster.json' %]][[% endfilter %]]
@@ -767,7 +767,7 @@ I also made 3 guides related to this one.
 
 ### BR-DISK
 
-??? question "BR-DISK - [CLICK TO EXPAND]"
+??? question "BR-DISK - [Click to show/hide]"
 
     This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 
@@ -783,7 +783,7 @@ I also made 3 guides related to this one.
         - Blame the often wrongly used naming of x265 encodes.
         - Sonarr v3/v4 uses dynamic custom formats.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/br-disk.json' %]][[% endfilter %]]
@@ -797,11 +797,11 @@ I also made 3 guides related to this one.
 
 <sub>Low Quality Releases = LQ</sub>
 
-??? question "LQ - [CLICK TO EXPAND]"
+??? question "LQ - [Click to show/hide]"
 
     A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq.json' %]][[% endfilter %]]
@@ -815,7 +815,7 @@ I also made 3 guides related to this one.
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? question "x265 (HD) - [CLICK TO EXPAND]"
+??? question "x265 (HD) - [Click to show/hide]"
 
     This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
@@ -826,7 +826,7 @@ I also made 3 guides related to this one.
 
             !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-hd.json' %]][[% endfilter %]]
@@ -838,11 +838,11 @@ I also made 3 guides related to this one.
 
 ### Extras
 
-??? question "Extras - [CLICK TO EXPAND]"
+??? question "Extras - [Click to show/hide]"
 
     This blocks/ignores Extra's
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/extras.json' %]][[% endfilter %]]
@@ -858,7 +858,7 @@ I also made 3 guides related to this one.
 
 ### Repack/Proper
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-proper.json' %]][[% endfilter %]]
@@ -870,7 +870,7 @@ I also made 3 guides related to this one.
 
 ### Repack v2
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v2.json' %]][[% endfilter %]]
@@ -882,7 +882,7 @@ I also made 3 guides related to this one.
 
 ### Repack v3
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v3.json' %]][[% endfilter %]]
@@ -894,13 +894,13 @@ I also made 3 guides related to this one.
 
 ### x264
 
-??? question "x264 - [CLICK TO EXPAND]"
+??? question "x264 - [Click to show/hide]"
 
     x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
     If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x264.json' %]][[% endfilter %]]
@@ -912,14 +912,14 @@ I also made 3 guides related to this one.
 
 ### x265
 
-??? question "x265 - [CLICK TO EXPAND]"
+??? question "x265 - [Click to show/hide]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
 
     !!! failure ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265.json' %]][[% endfilter %]]
@@ -931,7 +931,7 @@ I also made 3 guides related to this one.
 
 ### MPEG2
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mpeg2.json' %]][[% endfilter %]]
@@ -943,7 +943,7 @@ I also made 3 guides related to this one.
 
 ### Multi
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
@@ -959,11 +959,11 @@ I also made 3 guides related to this one.
 
 ### Bad Dual Groups
 
-??? question "Bad dual groups - [CLICK TO EXPAND]"
+??? question "Bad dual groups - [Click to show/hide]"
     These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
     Also they often even rename the release name in to Portuguese.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
@@ -977,7 +977,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV (WEBDL) - [CLICK TO EXPAND]"
+??? question "DV (WEBDL) - [Click to show/hide]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
     You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
@@ -988,7 +988,7 @@ I also made 3 guides related to this one.
 
     Remuxes and Bluray have a fallback to HDR10.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
@@ -1000,11 +1000,11 @@ I also made 3 guides related to this one.
 
 ### HDR10Plus Boost
 
-??? question "HDR10+ Boost - [CLICK TO EXPAND]"
+??? question "HDR10+ Boost - [Click to show/hide]"
 
     Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
@@ -1016,7 +1016,7 @@ I also made 3 guides related to this one.
 
 ### No-RlsGroup
 
-??? question "No-RlsGroup - [CLICK TO EXPAND]"
+??? question "No-RlsGroup - [Click to show/hide]"
 
     Some indexers strip out the release group which could result in LQ groups getting a higher score.
     For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
@@ -1025,7 +1025,7 @@ I also made 3 guides related to this one.
 
         If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
@@ -1037,11 +1037,11 @@ I also made 3 guides related to this one.
 
 ### Obfuscated
 
-??? question "Obfuscated - [CLICK TO EXPAND]"
+??? question "Obfuscated - [Click to show/hide]"
 
     Optional (use these only if you dislike renamed releases)
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/obfuscated.json' %]][[% endfilter %]]
@@ -1053,11 +1053,11 @@ I also made 3 guides related to this one.
 
 ### Retags
 
-??? question "Retags - [CLICK TO EXPAND]"
+??? question "Retags - [Click to show/hide]"
 
     Optional (use these only if you dislike retagged releases)
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/retags.json' %]][[% endfilter %]]
@@ -1069,11 +1069,11 @@ I also made 3 guides related to this one.
 
 ### Scene
 
-??? question "Scene - [CLICK TO EXPAND]"
+??? question "Scene - [Click to show/hide]"
 
     This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
@@ -1085,7 +1085,7 @@ I also made 3 guides related to this one.
 
 ### Season Pack
 
-??? question "Season Pack - [CLICK TO EXPAND]"
+??? question "Season Pack - [Click to show/hide]"
 
     This Custom Format can be used depending if you prefer or not prefer a season pack
 
@@ -1098,7 +1098,7 @@ I also made 3 guides related to this one.
         - This Custom Format could result in a download loop :bangbang:
         - This will upgrade also your already downloaded single episodes :bangbang:
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
@@ -1110,7 +1110,7 @@ I also made 3 guides related to this one.
 
 ### x265 (no HDR/DV)
 
-??? question "x265 (no HDR/DV) - [CLICK TO EXPAND]"
+??? question "x265 (no HDR/DV) - [Click to show/hide]"
 
     This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
 
@@ -1122,7 +1122,7 @@ I also made 3 guides related to this one.
 
     !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
@@ -1134,14 +1134,14 @@ I also made 3 guides related to this one.
 
 ### AV1
 
-??? question "AV1 - [CLICK TO EXPAND]"
+??? question "AV1 - [Click to show/hide]"
 
     - This is a new codec and you need modern devices that support it.
     - We also had reports of playback/transcoding issues.
     - No main group is actually using it (yet).
     - It's better to ignore this new codec to prevent compatibility issues.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
@@ -1153,14 +1153,14 @@ I also made 3 guides related to this one.
 
 ### VP9
 
-??? question "VP9 - [CLICK TO EXPAND]"
+??? question "VP9 - [Click to show/hide]"
 
     - This is a new codec and you need modern devices that support it.
     - We also had reports of playback/transcoding issues.
     - No main group is actually using it (yet).
     - It's better to ignore this new codec to prevent compatibility issues.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vp9.json' %]][[% endfilter %]]
@@ -1172,11 +1172,11 @@ I also made 3 guides related to this one.
 
 ### SDR
 
-??? question "SDR - [CLICK TO EXPAND]"
+??? question "SDR - [Click to show/hide]"
 
     - This will help to prevent to grab UHD/4k releases without HDR Formats.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
@@ -1188,11 +1188,11 @@ I also made 3 guides related to this one.
 
 ### DV FEL
 
-??? question "DV (FEL) - [CLICK TO EXPAND]"
+??? question "DV (FEL) - [Click to show/hide]"
 
     - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-fel.json' %]][[% endfilter %]]
@@ -1204,11 +1204,11 @@ I also made 3 guides related to this one.
 
 ### HFR
 
-??? question "HFR - [CLICK TO EXPAND]"
+??? question "HFR - [Click to show/hide]"
 
     - This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
@@ -1224,11 +1224,11 @@ I also made 3 guides related to this one.
 
 ### Remux Tier 01
 
-??? question "Remux Tier 01 - [CLICK TO EXPAND]"
+??? question "Remux Tier 01 - [Click to show/hide]"
 
     - Groups doing remuxes with multiple sources(discs) mixing what's best.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-01.json' %]][[% endfilter %]]
@@ -1240,7 +1240,7 @@ I also made 3 guides related to this one.
 
 ### Remux Tier 02
 
-??? question "Remux Tier 02 - [CLICK TO EXPAND]"
+??? question "Remux Tier 02 - [Click to show/hide]"
 
     - Groups that only use one source.(So called one disc wonders.)
     - Groups that use an automated way.
@@ -1248,7 +1248,7 @@ I also made 3 guides related to this one.
     - Groups that haven't released much. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
@@ -1258,11 +1258,11 @@ I also made 3 guides related to this one.
 
 ### HD Bluray Tier 01
 
-??? question "HD Bluray Tier 01 - [CLICK TO EXPAND]"
+??? question "HD Bluray Tier 01 - [Click to show/hide]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
@@ -1274,11 +1274,11 @@ I also made 3 guides related to this one.
 
 ### HD Bluray Tier 02
 
-??? question "HD Bluray Tier 02 - [CLICK TO EXPAND]"
+??? question "HD Bluray Tier 02 - [Click to show/hide]"
 
     - Groups that created encodes from the remuxes without micro-sizing them.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
@@ -1288,14 +1288,14 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 01
 
-??? question "WEB Tier 01 - [CLICK TO EXPAND]"
+??? question "WEB Tier 01 - [Click to show/hide]"
 
     - Groups that are on a certain list and active
     - Groups that are on a certain list and did a minimum of x releases
     - Groups that are not on the list but have a few releases on their name, but won't be trumped by a season pack on the top tier trackers
     - Hybrid releases
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-01.json' %]][[% endfilter %]]
@@ -1307,13 +1307,13 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 02
 
-??? question "WEB Tier 02 - [CLICK TO EXPAND]"
+??? question "WEB Tier 02 - [Click to show/hide]"
 
     - Groups that are on a certain list and are less or not active anymore
     - Groups that only did a few releases
     - Groups that are not on the list but have a few releases on their name
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-02.json' %]][[% endfilter %]]
@@ -1325,13 +1325,13 @@ I also made 3 guides related to this one.
 
 ### WEB Tier 03
 
-??? question "WEB Tier 03 - [CLICK TO EXPAND]"
+??? question "WEB Tier 03 - [Click to show/hide]"
 
     - Groups that are on a certain list and are less or not active anymore
     - Groups that hardly done any releases
     - Groups that are not on the list but have a few releases on their name
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-03.json' %]][[% endfilter %]]
@@ -1343,11 +1343,11 @@ I also made 3 guides related to this one.
 
 ### WEB Scene
 
-??? question "WEB Scene - [CLICK TO EXPAND]"
+??? question "WEB Scene - [Click to show/hide]"
 
     One of the few scene groups that released quality releases.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-scene.json' %]][[% endfilter %]]
@@ -1365,11 +1365,11 @@ I also made 3 guides related to this one.
 
 <sub>Amazon</sub>
 
-??? question "Amazon - [CLICK TO EXPAND]"
+??? question "Amazon - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/amzn.json' %]][[% endfilter %]]
@@ -1383,11 +1383,11 @@ I also made 3 guides related to this one.
 
 <sub>Apple TV+</sub>
 
-??? question "Apple TV+ - [CLICK TO EXPAND]"
+??? question "Apple TV+ - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atvp.json' %]][[% endfilter %]]
@@ -1401,11 +1401,11 @@ I also made 3 guides related to this one.
 
 <sub>DC Universe</sub>
 
-??? question "DC Universe - [CLICK TO EXPAND]"
+??? question "DC Universe - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dcu.json' %]][[% endfilter %]]
@@ -1419,11 +1419,11 @@ I also made 3 guides related to this one.
 
 <sub>Disney+</sub>
 
-??? question "Disney+ - [CLICK TO EXPAND]"
+??? question "Disney+ - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dsnp.json' %]][[% endfilter %]]
@@ -1437,11 +1437,11 @@ I also made 3 guides related to this one.
 
 <sub>HBO Max</sub>
 
-??? question "HBO Max - [CLICK TO EXPAND]"
+??? question "HBO Max - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hmax.json' %]][[% endfilter %]]
@@ -1455,11 +1455,11 @@ I also made 3 guides related to this one.
 
 <sub>HBO</sub>
 
-??? question "HBO - [CLICK TO EXPAND]"
+??? question "HBO - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hbo.json' %]][[% endfilter %]]
@@ -1473,11 +1473,11 @@ I also made 3 guides related to this one.
 
 <sub>Max</sub>
 
-??? question "Max - [CLICK TO EXPAND]"
+??? question "Max - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/max.json' %]][[% endfilter %]]
@@ -1491,11 +1491,11 @@ I also made 3 guides related to this one.
 
 <sub>Hulu</sub>
 
-??? question "Hulu - [CLICK TO EXPAND]"
+??? question "Hulu - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hulu.json' %]][[% endfilter %]]
@@ -1509,11 +1509,11 @@ I also made 3 guides related to this one.
 
 <sub>NLZiet</sub>
 
-??? question "NLZiet - [CLICK TO EXPAND]"
+??? question "NLZiet - [Click to show/hide]"
 
     NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nlz.json' %]][[% endfilter %]]
@@ -1527,11 +1527,11 @@ I also made 3 guides related to this one.
 
 <sub>Netflix</sub>
 
-??? question "Netflix - [CLICK TO EXPAND]"
+??? question "Netflix - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nf.json' %]][[% endfilter %]]
@@ -1545,11 +1545,11 @@ I also made 3 guides related to this one.
 
 <sub>Paramount+</sub>
 
-??? question "Paramount+ - [CLICK TO EXPAND]"
+??? question "Paramount+ - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pmtp.json' %]][[% endfilter %]]
@@ -1563,11 +1563,11 @@ I also made 3 guides related to this one.
 
 <sub>Peacock TV</sub>
 
-??? question "Peacock TV - [CLICK TO EXPAND]"
+??? question "Peacock TV - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
@@ -1581,11 +1581,11 @@ I also made 3 guides related to this one.
 
 <sub>Quibi</sub>
 
-??? question "Quibi - [CLICK TO EXPAND]"
+??? question "Quibi - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quibi){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/qibi.json' %]][[% endfilter %]]
@@ -1599,11 +1599,11 @@ I also made 3 guides related to this one.
 
 <sub>SHOWTIME</sub>
 
-??? question "SHOWTIME - [CLICK TO EXPAND]"
+??? question "SHOWTIME - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Showtime_(TV_network)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sho.json' %]][[% endfilter %]]
@@ -1617,11 +1617,11 @@ I also made 3 guides related to this one.
 
 <sub>Videoland</sub>
 
-??? question "Videoland - [CLICK TO EXPAND]"
+??? question "Videoland - [Click to show/hide]"
 
     Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vdl.json' %]][[% endfilter %]]
@@ -1635,11 +1635,11 @@ I also made 3 guides related to this one.
 
 <sub>Stan</sub>
 
-??? question "STAN - [CLICK TO EXPAND]"
+??? question "STAN - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stan_(service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/stan.json' %]][[% endfilter %]]
@@ -1653,11 +1653,11 @@ I also made 3 guides related to this one.
 
 <sub>RED = Youtube Red = Youtube Premium</sub>
 
-??? question "Youtube Red - [CLICK TO EXPAND]"
+??? question "Youtube Red - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/YouTube_Premium){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/red.json' %]][[% endfilter %]]
@@ -1671,11 +1671,11 @@ I also made 3 guides related to this one.
 
 <sub>iT = iTunes</sub>
 
-??? question "iTunes - [CLICK TO EXPAND]"
+??? question "iTunes - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/ITunes){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/it.json' %]][[% endfilter %]]
@@ -1689,11 +1689,11 @@ I also made 3 guides related to this one.
 
 <sub>CANALPlus = CANAL+/MyCANAL</sub>
 
-??? question "Canal+ - [CLICK TO EXPAND]"
+??? question "Canal+ - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Canal%2B){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-canalplus.json' %]][[% endfilter %]]
@@ -1707,11 +1707,11 @@ I also made 3 guides related to this one.
 
 <sub>SALTO = SⱯLTO</sub>
 
-??? question "SⱯLTO - [CLICK TO EXPAND]"
+??? question "SⱯLTO - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Salto_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-salto.json' %]][[% endfilter %]]
@@ -1725,11 +1725,11 @@ I also made 3 guides related to this one.
 
 <sub>RTBF = Radio-télévision belge de la Communauté française (Radio Télévision Belge Francophone)</sub>
 
-??? question "RTBF - [CLICK TO EXPAND]"
+??? question "RTBF - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/RTBF){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-rtbf.json' %]][[% endfilter %]]
@@ -1743,11 +1743,11 @@ I also made 3 guides related to this one.
 
 <sub>CC = Comedy Central</sub>
 
-??? question "CC - [CLICK TO EXPAND]"
+??? question "CC - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Comedy_Central){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cc.json' %]][[% endfilter %]]
@@ -1761,11 +1761,11 @@ I also made 3 guides related to this one.
 
 <sub>Crave</sub>
 
-??? question "CRAVE - [CLICK TO EXPAND]"
+??? question "CRAVE - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/crav.json' %]][[% endfilter %]]
@@ -1779,11 +1779,11 @@ I also made 3 guides related to this one.
 
 <sub>OViD</sub>
 
-??? question "OViD - [CLICK TO EXPAND]"
+??? question "OViD - [Click to show/hide]"
 
     [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
@@ -1795,11 +1795,11 @@ I also made 3 guides related to this one.
 
 ### UHD Streaming Boost
 
-??? question "UHD Streaming Boost - [CLICK TO EXPAND]"
+??? question "UHD Streaming Boost - [Click to show/hide]"
 
     Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-boost.json' %]][[% endfilter %]]
@@ -1811,11 +1811,11 @@ I also made 3 guides related to this one.
 
 ### UHD Streaming Cut
 
-??? question "UHD Streaming Cut - [CLICK TO EXPAND]"
+??? question "UHD Streaming Cut - [Click to show/hide]"
 
     Some streaming services have UHD releases that are generally worse than their HD counterparts. The UHD Streaming Cut custom format decreases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-cut.json' %]][[% endfilter %]]
@@ -1831,10 +1831,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
-??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-01-top-seadex-muxers.json' %]][[% endfilter %]]
@@ -1846,10 +1846,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
-??? question "Anime BD Tier 02 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 02 (SeaDex Muxers) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-02-seadex-muxers.json' %]][[% endfilter %]]
@@ -1861,10 +1861,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
-??? question "Anime BD Tier 03 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 03 (SeaDex Muxers) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-03-seadex-muxers.json' %]][[% endfilter %]]
@@ -1876,10 +1876,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
-??? question "Anime BD Tier 04 (SeaDex Muxers) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 04 (SeaDex Muxers) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-04-seadex-muxers.json' %]][[% endfilter %]]
@@ -1891,10 +1891,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 05 (Remuxes)
 
-??? question "Anime BD Tier 05 (Remuxes) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 05 (Remuxes) - [Click to show/hide]"
     Groups that are consistent and do Remuxes
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-05-remuxes.json' %]][[% endfilter %]]
@@ -1906,10 +1906,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 06 (FanSubs)
 
-??? question "Anime BD Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 06 (FanSubs) - [Click to show/hide]"
     FanSub groups that are consistent
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-06-fansubs.json' %]][[% endfilter %]]
@@ -1921,10 +1921,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 07 (P2P/Scene)
 
-??? question "Anime BD Tier 07 (P2P/Scene) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 07 (P2P/Scene) - [Click to show/hide]"
     Known P2P and Scene Anime groups
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-07-p2pscene.json' %]][[% endfilter %]]
@@ -1936,10 +1936,10 @@ I also made 3 guides related to this one.
 
 ### Anime BD Tier 08 (Mini Encodes)
 
-??? question "Anime BD Tier 08 (Mini Encodes) - [CLICK TO EXPAND]"
+??? question "Anime BD Tier 08 (Mini Encodes) - [Click to show/hide]"
     Know groups that do mini encodes
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-08-mini-encodes.json' %]][[% endfilter %]]
@@ -1951,10 +1951,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 01 (Muxers)
 
-??? question "Anime Web Tier 01 (Muxers) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 01 (Muxers) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-01-muxers.json' %]][[% endfilter %]]
@@ -1966,10 +1966,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 02 (Top FanSubs)
 
-??? question "Anime Web Tier 02 (Top FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 02 (Top FanSubs) - [Click to show/hide]"
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-02-top-fansubs.json' %]][[% endfilter %]]
@@ -1981,10 +1981,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 03 (Official Subs)
 
-??? question "Anime Web Tier 03 (Official Subs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 03 (Official Subs) - [Click to show/hide]"
     Official sub groups that tend to be more consistent and release fast
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-03-official-subs.json' %]][[% endfilter %]]
@@ -1996,10 +1996,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 04 (Official Subs)
 
-??? question "Anime Web Tier 04 (Official Subs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 04 (Official Subs) - [Click to show/hide]"
     Official sub groups
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-04-official-subs.json' %]][[% endfilter %]]
@@ -2011,10 +2011,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 05 (FanSubs)
 
-??? question "Anime Web Tier 05 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 05 (FanSubs) - [Click to show/hide]"
     FanSub groups that are consistent
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-05-fansubs.json' %]][[% endfilter %]]
@@ -2026,10 +2026,10 @@ I also made 3 guides related to this one.
 
 ### Anime Web Tier 06 (FanSubs)
 
-??? question "Anime Web Tier 06 (FanSubs) - [CLICK TO EXPAND]"
+??? question "Anime Web Tier 06 (FanSubs) - [Click to show/hide]"
     FanSub groups that are consistent
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-06-fansubs.json' %]][[% endfilter %]]
@@ -2041,10 +2041,10 @@ I also made 3 guides related to this one.
 
 ### Anime Raws
 
-??? question "Anime Raws - [CLICK TO EXPAND]"
+??? question "Anime Raws - [Click to show/hide]"
     A collection of know groups that release raws
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-raws.json' %]][[% endfilter %]]
@@ -2056,10 +2056,10 @@ I also made 3 guides related to this one.
 
 ### Anime LQ Groups
 
-??? question "Anime LQ Groups - [CLICK TO EXPAND]"
+??? question "Anime LQ Groups - [Click to show/hide]"
     A collection of known Low Quality groups.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
@@ -2071,10 +2071,10 @@ I also made 3 guides related to this one.
 
 ### Uncensored
 
-??? question "Uncensored - [CLICK TO EXPAND]"
+??? question "Uncensored - [Click to show/hide]"
     This CF covers releases that are uncensored
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uncensored.json' %]][[% endfilter %]]
@@ -2086,10 +2086,10 @@ I also made 3 guides related to this one.
 
 ### v0
 
-??? question "v0 - [CLICK TO EXPAND]"
+??? question "v0 - [Click to show/hide]"
     CF to cover releases named with v0 which we don't want
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v0.json' %]][[% endfilter %]]
@@ -2101,10 +2101,10 @@ I also made 3 guides related to this one.
 
 ### v1
 
-??? question "v1 - [CLICK TO EXPAND]"
+??? question "v1 - [Click to show/hide]"
     CF to cover v1 releases
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v1.json' %]][[% endfilter %]]
@@ -2116,10 +2116,10 @@ I also made 3 guides related to this one.
 
 ### v2
 
-??? question "v2 - [CLICK TO EXPAND]"
+??? question "v2 - [Click to show/hide]"
     CF to cover v2 releases
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v2.json' %]][[% endfilter %]]
@@ -2131,10 +2131,10 @@ I also made 3 guides related to this one.
 
 ### v3
 
-??? question "v3 - [CLICK TO EXPAND]"
+??? question "v3 - [Click to show/hide]"
     CF to cover v3 releases
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v3.json' %]][[% endfilter %]]
@@ -2146,10 +2146,10 @@ I also made 3 guides related to this one.
 
 ### v4
 
-??? question "v4 - [CLICK TO EXPAND]"
+??? question "v4 - [Click to show/hide]"
     CF to cover v4 releases
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v4.json' %]][[% endfilter %]]
@@ -2161,10 +2161,10 @@ I also made 3 guides related to this one.
 
 ### B-Global
 
-??? question "B-Global - [CLICK TO EXPAND]"
+??? question "B-Global - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bglobal.json' %]][[% endfilter %]]
@@ -2176,10 +2176,10 @@ I also made 3 guides related to this one.
 
 ### Bilibili
 
-??? question "Bilibili - [CLICK TO EXPAND]"
+??? question "Bilibili - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bilibili.json' %]][[% endfilter %]]
@@ -2193,10 +2193,10 @@ I also made 3 guides related to this one.
 
 <sub>Crunchyroll</sub>
 
-??? question "Crunchyroll - [CLICK TO EXPAND]"
+??? question "Crunchyroll - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Crunchyroll){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cr.json' %]][[% endfilter %]]
@@ -2210,10 +2210,10 @@ I also made 3 guides related to this one.
 
 <sub>Funimation</sub>
 
-??? question "Funimation - [CLICK TO EXPAND]"
+??? question "Funimation - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Funimation){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/funi.json' %]][[% endfilter %]]
@@ -2225,10 +2225,10 @@ I also made 3 guides related to this one.
 
 ### HIDIVE
 
-??? question "HIDIVE - [CLICK TO EXPAND]"
+??? question "HIDIVE - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/HIDIVE){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hidive.json' %]][[% endfilter %]]
@@ -2240,10 +2240,10 @@ I also made 3 guides related to this one.
 
 ### VRV
 
-??? question "VRV - [CLICK TO EXPAND]"
+??? question "VRV - [Click to show/hide]"
     [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
@@ -2257,11 +2257,11 @@ I also made 3 guides related to this one.
 
 <sub>ADN = Animation Digital Network</sub>
 
-??? question "ADN - [CLICK TO EXPAND]"
+??? question "ADN - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Animation_Digital_Network){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
@@ -2275,11 +2275,11 @@ I also made 3 guides related to this one.
 
 <sub>WKN = Wakanim</sub>
 
-??? question "WKN - [CLICK TO EXPAND]"
+??? question "WKN - [Click to show/hide]"
 
     [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Wakanim){:target="_blank" rel="noopener noreferrer"}
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
@@ -2291,10 +2291,10 @@ I also made 3 guides related to this one.
 
 ### 10bit
 
-??? question "10bit - [CLICK TO EXPAND]"
+??? question "10bit - [Click to show/hide]"
     This CF covers releases that are 10bit
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10bit.json' %]][[% endfilter %]]
@@ -2306,10 +2306,10 @@ I also made 3 guides related to this one.
 
 ### Anime Dual Audio
 
-??? question "Anime Dual Audio - [CLICK TO EXPAND]"
+??? question "Anime Dual Audio - [Click to show/hide]"
     This CF covers releases that have Dual Audio
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
@@ -2321,10 +2321,10 @@ I also made 3 guides related to this one.
 
 ### Dubs Only
 
-??? question "Dubs Only - [CLICK TO EXPAND]"
+??? question "Dubs Only - [Click to show/hide]"
     This CF covers releases that only have Dubs
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dubs-only.json' %]][[% endfilter %]]
@@ -2340,11 +2340,11 @@ I also made 3 guides related to this one.
 
 ### Multi-French
 
-??? question "Multi-French - [CLICK TO EXPAND]"
+??? question "Multi-French - [Click to show/hide]"
 
     Recognize movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-french.json' %]][[% endfilter %]]
@@ -2356,11 +2356,11 @@ I also made 3 guides related to this one.
 
 ### Multi-Audio
 
-??? question "Multi-Audio - [CLICK TO EXPAND]"
+??? question "Multi-Audio - [Click to show/hide]"
 
     A slightly modified [Multi](#multi) Custom Formats that recognize VF and VO inside the name.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-audio.json' %]][[% endfilter %]]
@@ -2372,11 +2372,11 @@ I also made 3 guides related to this one.
 
 ### French Audio
 
-??? question "French Audio - [CLICK TO EXPAND]"
+??? question "French Audio - [Click to show/hide]"
 
     This will recognize every kind of French Audio.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-audio.json' %]][[% endfilter %]]
@@ -2388,11 +2388,11 @@ I also made 3 guides related to this one.
 
 ### VFF
 
-??? question "VFF - [CLICK TO EXPAND]"
+??? question "VFF - [Click to show/hide]"
 
     Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vff.json' %]][[% endfilter %]]
@@ -2404,11 +2404,11 @@ I also made 3 guides related to this one.
 
 ### VOF
 
-??? question "VOF - [CLICK TO EXPAND]"
+??? question "VOF - [Click to show/hide]"
 
     Original French Version.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vof.json' %]][[% endfilter %]]
@@ -2420,11 +2420,11 @@ I also made 3 guides related to this one.
 
 ### VFI
 
-??? question "VFI - [CLICK TO EXPAND]"
+??? question "VFI - [Click to show/hide]"
 
     International French Version.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfi.json' %]][[% endfilter %]]
@@ -2436,11 +2436,11 @@ I also made 3 guides related to this one.
 
 ### VF2
 
-??? question "VF2 - [CLICK TO EXPAND]"
+??? question "VF2 - [Click to show/hide]"
 
     VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vf2.json' %]][[% endfilter %]]
@@ -2452,11 +2452,11 @@ I also made 3 guides related to this one.
 
 ### VFQ
 
-??? question "VFQ - [CLICK TO EXPAND]"
+??? question "VFQ - [Click to show/hide]"
 
     Canadian French Version.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
@@ -2468,11 +2468,11 @@ I also made 3 guides related to this one.
 
 ### VQ
 
-??? question "VQ - [CLICK TO EXPAND]"
+??? question "VQ - [Click to show/hide]"
 
     Quebec Version (strong Quebec accent, ex: The Simpsons movie).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vq.json' %]][[% endfilter %]]
@@ -2484,11 +2484,11 @@ I also made 3 guides related to this one.
 
 ### VFB
 
-??? question "VFB - [CLICK TO EXPAND]"
+??? question "VFB - [Click to show/hide]"
 
     Belgian French Version.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfb.json' %]][[% endfilter %]]
@@ -2500,11 +2500,11 @@ I also made 3 guides related to this one.
 
 ### VOSTFR
 
-??? question "VOSTFR - [CLICK TO EXPAND]"
+??? question "VOSTFR - [Click to show/hide]"
 
     Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vostfr.json' %]][[% endfilter %]]
@@ -2516,11 +2516,11 @@ I also made 3 guides related to this one.
 
 ### FanSUB
 
-??? question "FanSUB - [CLICK TO EXPAND]"
+??? question "FanSUB - [Click to show/hide]"
 
     Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so called FastSUBs.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fansub.json' %]][[% endfilter %]]
@@ -2532,11 +2532,11 @@ I also made 3 guides related to this one.
 
 ### FastSUB
 
-??? question "FastSUB - [CLICK TO EXPAND]"
+??? question "FastSUB - [Click to show/hide]"
 
     FanSUB, but made as quickly as possible, at the expense of quality.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fastsub.json' %]][[% endfilter %]]
@@ -2552,13 +2552,13 @@ I also made 3 guides related to this one.
 
 ### FR Remux Tier 01
 
-??? question "Remux Tier 01 - [CLICK TO EXPAND]"
+??? question "Remux Tier 01 - [Click to show/hide]"
 
     - WIP
     - Groups doing remuxes with multiple sources (discs) mixing what's best.
     - Groups active doing remuxes from a single sources (discs).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
@@ -2570,14 +2570,14 @@ I also made 3 guides related to this one.
 
 ### FR HD Bluray Tier 01
 
-??? question "FR HD Bluray Tier 01 - [CLICK TO EXPAND]"
+??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
 
     - WIP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that source and add the best French audio track from the source to an English release from Tier 01 or 02.
     - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
@@ -2589,13 +2589,13 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 01
 
-??? question "FR WEB Tier 01 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 01 - [Click to show/hide]"
 
     - WIP
     - Groups that get their releases directly from the source.
     - Groups that source and add the French audio track from the source to an English release from Tier 01 or 02.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
@@ -2607,13 +2607,13 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 02
 
-??? question "FR WEB Tier 02 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 02 - [Click to show/hide]"
 
     - WIP
     - Groups that get their releases directly from the source but are not so active.
     - Groups that source and add the French audio track from the source to an English release.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
@@ -2625,13 +2625,13 @@ I also made 3 guides related to this one.
 
 ### FR WEB Tier 03
 
-??? question "FR WEB Tier 03 - [CLICK TO EXPAND]"
+??? question "FR WEB Tier 03 - [Click to show/hide]"
 
     - WIP
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups that retired and don't have the best quality by todays standards.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-03.json' %]][[% endfilter %]]
@@ -2643,13 +2643,13 @@ I also made 3 guides related to this one.
 
 ### FR Anime Tier 01
 
-??? question "FR Anime Tier 01 - [CLICK TO EXPAND]"
+??? question "FR Anime Tier 01 - [Click to show/hide]"
 
     - WIP
     - Groups that are know to be still active and doing only Anime
     - Groups which releases are at least comparable to SeaDex recommended.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
@@ -2661,13 +2661,13 @@ I also made 3 guides related to this one.
 
 ### FR Anime Tier 02
 
-??? question "FR Anime Tier 02 - [CLICK TO EXPAND]"
+??? question "FR Anime Tier 02 - [Click to show/hide]"
 
     - WIP
     - Groups that are known to be still active and doing only Anime but with few releases per year.
     - Groups that are known to be still active and doing Anime and other type of release.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
@@ -2679,14 +2679,14 @@ I also made 3 guides related to this one.
 
 ### FR Anime Tier 03
 
-??? question "FR Anime Tier 03 - [CLICK TO EXPAND]"
+??? question "FR Anime Tier 03 - [Click to show/hide]"
 
     - WIP
     - Groups with no or little activity that have at some point made an interesting release. Which is either the only one available (in VOSTFR/MULTi) or still top of its category.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups doing only anime, that have retired (or no longer exist) and may not have the best quality by todays standards.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
@@ -2698,11 +2698,11 @@ I also made 3 guides related to this one.
 
 ### FR Anime FanSub
 
-??? question "FR Anime FanSub - [CLICK TO EXPAND]"
+??? question "FR Anime FanSub - [Click to show/hide]"
 
     Known good groups that are doing only FanSub and in good quality.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
@@ -2714,11 +2714,11 @@ I also made 3 guides related to this one.
 
 ### FR Scene Groups
 
-??? question "FR Scene Groups - [CLICK TO EXPAND]"
+??? question "FR Scene Groups - [Click to show/hide]"
 
     Known French Scene groups.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-scene.json' %]][[% endfilter %]]
@@ -2732,7 +2732,7 @@ I also made 3 guides related to this one.
 
 <sub>French Low Quality Releases = FR LQ</sub>
 
-??? question "FR LQ - [CLICK TO EXPAND]"
+??? question "FR LQ - [Click to show/hide]"
 
     A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
 
@@ -2743,7 +2743,7 @@ I also made 3 guides related to this one.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Banned Release Groups.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]

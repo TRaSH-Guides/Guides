@@ -6,18 +6,18 @@
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
-??? abstract "HQ Release Groups - [CLICK TO EXPAND]"
-    | Custom Format                                                                                                       | Score                                                                                 | Trash ID                                             |
-    | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-    | [{{ radarr['cf']['remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01)           | {{ radarr['cf']['remux-tier-01']['trash_scores']['default'] }}                        | {{ radarr['cf']['remux-tier-01']['trash_id'] }}      |
-    | [{{ radarr['cf']['remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02)           | {{ radarr['cf']['remux-tier-02']['trash_scores']['default'] }}                        | {{ radarr['cf']['remux-tier-02']['trash_id'] }}      |
-    | [{{ radarr['cf']['remux-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-03)           | {{ radarr['cf']['remux-tier-03']['trash_scores']['default'] }}                        | {{ radarr['cf']['remux-tier-03']['trash_id'] }}      |
-    | [{{ radarr['cf']['uhd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01) | :warning: {{ radarr['cf']['uhd-bluray-tier-01']['trash_scores']['sqp-5'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['uhd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02) | :warning: {{ radarr['cf']['uhd-bluray-tier-02']['trash_scores']['sqp-5'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['uhd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03) | :warning: {{ radarr['cf']['uhd-bluray-tier-03']['trash_scores']['sqp-5'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-03']['trash_id'] }} |
-    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)               | {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                          | {{ radarr['cf']['web-tier-01']['trash_id'] }}        |
-    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)               | {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                          | {{ radarr['cf']['web-tier-02']['trash_id'] }}        |
-    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)               | {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                          | {{ radarr['cf']['web-tier-03']['trash_id'] }}        |
+??? abstract "HQ Release Groups - [Click to show/hide]"
+    | Custom Format                                                                                                       |                       Score                        | Trash ID                                             |
+    | ------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------: | ---------------------------------------------------- |
+    | [{{ radarr['cf']['remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01)           | {{ radarr['cf']['remux-tier-01']['trash_score'] }} | {{ radarr['cf']['remux-tier-01']['trash_id'] }}      |
+    | [{{ radarr['cf']['remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-02)           | {{ radarr['cf']['remux-tier-02']['trash_score'] }} | {{ radarr['cf']['remux-tier-02']['trash_id'] }}      |
+    | [{{ radarr['cf']['remux-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-03)           | {{ radarr['cf']['remux-tier-03']['trash_score'] }} | {{ radarr['cf']['remux-tier-03']['trash_id'] }}      |
+    | [{{ radarr['cf']['uhd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01) |              :warning: 2300 :warning:              | {{ radarr['cf']['uhd-bluray-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02) |              :warning: 2200 :warning:              | {{ radarr['cf']['uhd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03) |              :warning: 2100 :warning:              | {{ radarr['cf']['uhd-bluray-tier-03']['trash_id'] }} |
+    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)               |  {{ radarr['cf']['web-tier-01']['trash_score'] }}  | {{ radarr['cf']['web-tier-01']['trash_id'] }}        |
+    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)               |  {{ radarr['cf']['web-tier-02']['trash_score'] }}  | {{ radarr['cf']['web-tier-02']['trash_id'] }}        |
+    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)               |  {{ radarr['cf']['web-tier-03']['trash_score'] }}  | {{ radarr['cf']['web-tier-03']['trash_id'] }}        |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 

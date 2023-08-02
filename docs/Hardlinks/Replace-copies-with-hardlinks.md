@@ -26,13 +26,13 @@ jdupes [options] DIR1 DIR2
 This will do a dry run and summarize at the end.
 
 ```bash
-jdupes -M -r "/data/torrents/movies/" "/data/media/movies"
+jdupes -rMX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
 ```
 
 This will hard link all duplicate files without prompting.
 
 ```bash
-jdupes -L -r "/data/torrents/movies/" "/data/media/movies"
+jdupes -rLX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
 ```
 
 !!! bug ""

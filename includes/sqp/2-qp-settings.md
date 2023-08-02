@@ -5,7 +5,7 @@
 - **Minimum Custom Format Score:** `550`
 - **Upgrade Until Custom Format Score:** `10000`
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
     ![!Quality Profile Settings](/SQP/images/2-qp-settings.png)
 
     !!! warning

@@ -38,7 +38,7 @@ Select the profile that you want to use/prefer.
 
 At the bottom in your chosen profile you will see the added Custom Formats where you can start setting up the scores.
 
-??? success "Screenshot example - [CLICK TO EXPAND]"
+??? success "Screenshot example - [Click to show/hide]"
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
     !!! warning
@@ -65,7 +65,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## Which Quality Profile should you choose
 
-??? abstract "Which Quality Profile should you choose - [CLICK TO EXPAND]"
+??? abstract "Which Quality Profile should you choose - [Click to show/hide]"
 
     <p align="center">*Click on the image below to see how to make use of the flowchart.*
 
@@ -111,7 +111,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
@@ -155,7 +155,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
@@ -199,7 +199,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
@@ -243,7 +243,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
     - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.
@@ -307,7 +307,7 @@ Use the following main settings in your profile.
 
 ### Proper and Repacks
 
-??? tip "Proper and Repacks - [CLICK TO EXPAND]"
+??? tip "Proper and Repacks - [Click to show/hide]"
 
     I also suggest to change the Propers and Repacks settings in Radarr
 
@@ -319,7 +319,7 @@ Use the following main settings in your profile.
 
 ### Custom Formats to avoid certain releases
 
-??? question "How to use a Custom Format to avoid certain releases? - [CLICK TO EXPAND]"
+??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"
 
     For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
     Being when you add a Custom Format what you prefer and you set it to something like `+10` it could happen that for example the `BR-DISK` will be downloaded (-10)+(+10)=0 and if your `Minimum Custom Format Score` is set at `0`.
@@ -332,13 +332,13 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ### Custom Formats with a score of 0
 
-??? question "What do Custom Formats with a score of 0 do? - [CLICK TO EXPAND]"
+??? question "What do Custom Formats with a score of 0 do? - [Click to show/hide]"
 
     All Custom Formats with a score of 0 are pure informational and don't do anything.
 
 ### Minimum Custom Format Score
 
-??? info "Minimum Custom Format Score - [CLICK TO EXPAND]"
+??? info "Minimum Custom Format Score - [Click to show/hide]"
 
     Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score then 0.
 
@@ -348,7 +348,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ### Audio Channels
 
-??? info "Audio Channels - [CLICK TO EXPAND]"
+??? info "Audio Channels - [Click to show/hide]"
 
     Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example 2.0 (stereo) or 5.1/7.1 (surround sound). Personally I wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
 
@@ -356,7 +356,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
 ### Avoid using the x264/x265 Custom Format
 
-??? tip "Avoid using the x264/x265 Custom Format - [CLICK TO EXPAND]"
+??? tip "Avoid using the x264/x265 Custom Format - [Click to show/hide]"
 
     Avoid using the x264/x265 Custom Format with a score if possible, it's smarter to use the [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} Custom Format.
 

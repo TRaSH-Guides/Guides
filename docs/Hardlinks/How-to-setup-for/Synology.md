@@ -16,10 +16,10 @@ This page will provide you with guidance on how to install several Docker images
 
 ### Automated Script
 
-??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [CLICK TO EXPAND]"
+??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]"
 
     !!! Warning
-        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script will reset all personal changes made in the compose/env.
+        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
 
         The script is only tested on Synology DSM7 and higher.
 
@@ -227,7 +227,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 ### Whats included and Whats not included
 
-??? question "What's included and What's not included - [CLICK TO EXPAND]"
+??? question "What's included and What's not included - [Click to show/hide]"
 
     This docker-compose file will have the following docker containers included.
 
@@ -373,7 +373,7 @@ Due to some iptables configuration in DSM, you can get an incorrect IP reported 
 
 To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.
 
-??? question "Task bash command - [CLICK TO EXPAND]"
+??? question "Task bash command - [Click to show/hide]"
 
     ```bash
     --8<-- "includes/hardlinks/docker-iptables-fix.sh"

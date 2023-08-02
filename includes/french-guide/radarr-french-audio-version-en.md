@@ -1,4 +1,4 @@
-??? abstract "Explanation - [CLICK TO EXPAND]"
+??? abstract "Explanation - [Click to show/hide]"
     | Acronyms                   | French Explanation                                                                  | English Explanation                                                   |
     | -------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
     | TRUEFRENCH or VFF          | Version Francophone Française (doublage réalisé en France)                          | Full French version (dubbing done in France)                          |
@@ -17,14 +17,14 @@
     !!! tip "Indexers renaming in Prowlarr"
         Some Indexers in Prowlarr can rename `MULTi` releases to `MULTi.TRUEFRENCH` or `MULTi.FRENCH`. It is not recommend to use such a feature along with those Custom Formats as it can lead to false positives from the VFF, VFQ and VQ Custom Formats.
 
-??? abstract "French Audio Versions - [CLICK TO EXPAND]"
+??? abstract "French Audio Versions - [Click to show/hide]"
     | Custom Format                                                                                      | Score | Trash ID                                        |
-    | -------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------- |
-    | [{{ radarr['cf']['french-vff']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vff)       | 0     | {{ radarr['cf']['french-vff']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vof']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vof)       | 0     | {{ radarr['cf']['french-vof']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vfi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfi)       | 0     | {{ radarr['cf']['french-vfi']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vf2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vf2)       | 0     | {{ radarr['cf']['french-vf2']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vfq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfq)       | 0     | {{ radarr['cf']['french-vfq']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vq)         | 0     | {{ radarr['cf']['french-vq']['trash_id'] }}     |
-    | [{{ radarr['cf']['french-vfb']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfb)       | 0     | {{ radarr['cf']['french-vfb']['trash_id'] }}    |
-    | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) | 0     | {{ radarr['cf']['french-vostfr']['trash_id'] }} |
+    | -------------------------------------------------------------------------------------------------- | :---: | ----------------------------------------------- |
+    | [{{ radarr['cf']['french-vff']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vff)       |   0   | {{ radarr['cf']['french-vff']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vof']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vof)       |   0   | {{ radarr['cf']['french-vof']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vfi']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfi)       |   0   | {{ radarr['cf']['french-vfi']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vf2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vf2)       |   0   | {{ radarr['cf']['french-vf2']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vfq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfq)       |   0   | {{ radarr['cf']['french-vfq']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vq)         |   0   | {{ radarr['cf']['french-vq']['trash_id'] }}     |
+    | [{{ radarr['cf']['french-vfb']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vfb)       |   0   | {{ radarr['cf']['french-vfb']['trash_id'] }}    |
+    | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) |   0   | {{ radarr['cf']['french-vostfr']['trash_id'] }} |

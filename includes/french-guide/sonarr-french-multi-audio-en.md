@@ -1,11 +1,11 @@
-??? abstract "Multi Audio - [CLICK TO EXPAND]"
-    | Custom Format                                                                                           | Score                                             | Trash ID                                       |
-    | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------- |
-    | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_scores']['default'] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |
-    | [{{ sonarr['cf']['french-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#french-audio) | {{ sonarr['cf']['french-audio']['trash_scores']['default'] }} | {{ sonarr['cf']['french-audio']['trash_id'] }} |
-    | [{{ sonarr['cf']['multi-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-french) | 0                                                 | {{ sonarr['cf']['multi-french']['trash_id'] }} |
+??? abstract "Multi Audio - [Click to show/hide]"
+    | Custom Format                                                                                           |                       Score                       | Trash ID                                       |
+    | ------------------------------------------------------------------------------------------------------- | :-----------------------------------------------: | ---------------------------------------------- |
+    | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_score'] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |
+    | [{{ sonarr['cf']['french-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#french-audio) | {{ sonarr['cf']['french-audio']['trash_score'] }} | {{ sonarr['cf']['french-audio']['trash_id'] }} |
+    | [{{ sonarr['cf']['multi-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-french) |                         0                         | {{ sonarr['cf']['multi-french']['trash_id'] }} |
 
-    ??? info "Breakdown and Why - [CLICK TO EXPAND]"
+    ??? info "Breakdown and Why - [Click to show/hide]"
 
         - **{{ sonarr['cf']['multi-audio']['name'] }}:** This is a custom format to help Sonarr recognize MULTi audio releases.
 

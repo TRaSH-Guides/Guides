@@ -1,4 +1,4 @@
-!!! tip
+!!! info
 
     The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.
 
