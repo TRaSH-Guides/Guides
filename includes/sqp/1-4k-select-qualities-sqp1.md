@@ -14,3 +14,8 @@
 
     - The merged quality profile: `Bluray|WEB-1080p`
     - `Bluray-720p`
+
+    If you prefer 2160p WEBDL with IMAX-E merge the following qualities
+
+    - `Bluray-2160p`
+    - The merged quality group: `WEB-2160p`
