@@ -1,10 +1,10 @@
 ??? abstract "HQ Source Groups - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                               |                           Score                           | Trash ID                                               |
     | ------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------------------ |
-    | [{{ radarr['cf']['french-remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-01) | {{ radarr['cf']['french-remux-tier-01']['trash_score'] }} | {{ radarr['cf']['french-remux-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['french-remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-02) | {{ radarr['cf']['french-remux-tier-02']['trash_score'] }} | {{ radarr['cf']['french-remux-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['french-web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-01)     |  {{ radarr['cf']['french-web-tier-01']['trash_score'] }}  | {{ radarr['cf']['french-web-tier-01']['trash_id'] }}   |
-    | [{{ radarr['cf']['french-web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-02)     |  {{ radarr['cf']['french-web-tier-02']['trash_score'] }}  | {{ radarr['cf']['french-web-tier-02']['trash_id'] }}   |
+    | [{{ radarr['cf']['french-remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-01) | {{ radarr['cf']['french-remux-tier-01']['trash_scores']['default'] }} | {{ radarr['cf']['french-remux-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['french-remux-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-remux-tier-02) | {{ radarr['cf']['french-remux-tier-02']['trash_scores']['default'] }} | {{ radarr['cf']['french-remux-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['french-web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-01)     |  {{ radarr['cf']['french-web-tier-01']['trash_scores']['default'] }}  | {{ radarr['cf']['french-web-tier-01']['trash_id'] }}   |
+    | [{{ radarr['cf']['french-web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-web-tier-02)     |  {{ radarr['cf']['french-web-tier-02']['trash_scores']['default'] }}  | {{ radarr['cf']['french-web-tier-02']['trash_id'] }}   |
     | [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups)          |                     ?????? :warning:                      | {{ radarr['cf']['french-scene']['trash_id'] }}         |
 
     !!! tip

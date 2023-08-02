@@ -1,11 +1,11 @@
 ??? abstract "Indésirable - [CLIQUEZ POUR AFFICHER]"
     | Formats Personnalisés                                                                                   |                     Score                      | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------: | ------------------------------------------- |
-    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           |  {{ sonarr['cf']['br-disk']['trash_score'] }}  | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
-    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                     |    {{ sonarr['cf']['lq']['trash_score'] }}     | {{ sonarr['cf']['lq']['trash_id'] }}        |
-    | [{{ sonarr['cf']['french-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-lq)           | {{ sonarr['cf']['french-lq']['trash_score'] }} | {{ sonarr['cf']['french-lq']['trash_id'] }} |
-    | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ sonarr['cf']['x265-hd']['trash_score'] }}  | {{ sonarr['cf']['x265-hd']['trash_id'] }}   |
-    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)             |  {{ sonarr['cf']['extras']['trash_score'] }}   | {{ sonarr['cf']['extras']['trash_id'] }}    |
+    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           |  {{ sonarr['cf']['br-disk']['trash_scores']['default'] }}  | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
+    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                     |    {{ sonarr['cf']['lq']['trash_scores']['default'] }}     | {{ sonarr['cf']['lq']['trash_id'] }}        |
+    | [{{ sonarr['cf']['french-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-lq)           | {{ sonarr['cf']['french-lq']['trash_scores']['default'] }} | {{ sonarr['cf']['french-lq']['trash_id'] }} |
+    | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}  | {{ sonarr['cf']['x265-hd']['trash_id'] }}   |
+    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)             |  {{ sonarr['cf']['extras']['trash_scores']['default'] }}   | {{ sonarr['cf']['extras']['trash_id'] }}    |
 
     ------
 
@@ -26,4 +26,4 @@
         | Formats Personnalisés                                                                         |                    Score                     | Trash ID                                  |
         | --------------------------------------------------------------------------------------------- | :------------------------------------------: | ----------------------------------------- |
         | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   |                      0                       | {{ sonarr['cf']['fansub']['trash_id'] }}  |
-        | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_score'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |
+        | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_scores']['default'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |

@@ -1,12 +1,12 @@
 ??? abstract "Optional - [Click to show/hide]"
     | Custom Format                                                                                                 |                        Score                         | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------: | ------------------------------------------------- |
-    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['cf']['bad-dual-groups']['trash_score'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
-    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)       |  {{ radarr['cf']['evo-no-webdl']['trash_score'] }}   | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
-    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)         |   {{ radarr['cf']['no-rlsgroup']['trash_score'] }}   | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
-    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)           |   {{ radarr['cf']['obfuscated']['trash_score'] }}    | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
-    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                   |     {{ radarr['cf']['retags']['trash_score'] }}      | {{ radarr['cf']['retags']['trash_id'] }}          |
-    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                     |      {{ radarr['cf']['scene']['trash_score'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
+    | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) | {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
+    | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)       |  {{ radarr['cf']['evo-no-webdl']['trash_scores']['default'] }}   | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}    |
+    | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)         |   {{ radarr['cf']['no-rlsgroup']['trash_scores']['default'] }}   | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}     |
+    | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)           |   {{ radarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
+    | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                   |     {{ radarr['cf']['retags']['trash_scores']['default'] }}      | {{ radarr['cf']['retags']['trash_id'] }}          |
+    | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                     |      {{ radarr['cf']['scene']['trash_scores']['default'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
 
     ------
 
