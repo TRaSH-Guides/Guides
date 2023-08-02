@@ -1,4 +1,4 @@
-??? abstract "Anime CF/Scoring - [Click to Expand]"
+??? abstract "Anime CF/Scoring - [Click to show/hide]"
     | Custom Format                                                                                                                                       |                                          Score                                          | Trash ID                                                             |
     | --------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------: | -------------------------------------------------------------------- |
     | [{{ sonarr['cf']['anime-bd-tier-01-top-seadex-muxers']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#anime-bd-tier-01-top-seadex-muxers) |   {{ sonarr['cf']['anime-bd-tier-01-top-seadex-muxers']['trash_scores']['default'] }}   | {{ sonarr['cf']['anime-bd-tier-01-top-seadex-muxers']['trash_id'] }} |
