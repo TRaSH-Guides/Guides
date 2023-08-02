@@ -51,9 +51,9 @@
 
     !!! info
         - If you prefer 1080p/2160p WEBDL with IMAX-E then add [{{ radarr['cf']['imax-enhanced']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced) with the default scores.
-        - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio doesn't add it to their release name. Their motto is: If the source has IMAX then the encode will have it as well.
+        - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
-        !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release :warning:"
+        !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace in most cases the BHDStudio release :warning:"
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
     | Custom Format                                                                                                                        |                      Score                       | Trash ID                                            |
@@ -71,9 +71,9 @@
     !!! tip
         If you use SQP-1 (1080p) as your main/second Radarr you want to remove the following HQ Release Groups
 
-        - `[{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)`
-        - `[{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)`
-        - `[{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)`
+        - [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)
+        - [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)
+        - [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
@@ -91,6 +91,7 @@
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           |      {{ radarr['cf']['scene']['trash_score'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: |  {{ radarr['cf']['x265-no-hdrdv']['trash_score'] }}  | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
     | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                               |              :warning: -10000 :warning:              | {{ radarr['cf']['av1']['trash_id'] }}             |
+    | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               |       {{ radarr['cf']['sdr']['trash_score'] }}       | {{ radarr['cf']['sdr']['trash_id'] }}             |
 
     !!! tip "I recommend to use the the following Custom Formats"
         - `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning,<br>:warning: Only ever include one of them :warning:

@@ -15,6 +15,6 @@ and merge the following 2160p ones in a new group
 - WEBDL-2160p
 - WEBRip-2160p
 
-and name it what ever you want I used: `WEB-2160p`
+and name it: `WEB-2160p`
 
 ![!Merge the following Qualities together](/SQP/images/1-4k-merge-qualities-sqp1.png)
