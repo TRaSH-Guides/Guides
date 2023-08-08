@@ -144,7 +144,8 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 
 ## Recommendations
 
-- use [VSCode](https://code.visualstudio.com/) for editing with the following extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
+based on the `.vscode/extensions.json` file; you should install all of them.
 
 ## Preview Docs Locally
 
