@@ -12,6 +12,7 @@ These are 3rd party applications to sync several sections of the guide with your
 | Radarr Scores                                                                      |     v     |     v     |
 | Radarr Quality Settings (File Size)                                                |     v     |     v     |
 | Radarr Naming Scheme                                                               |     v     |           |
+| Radarr Quality Profiles                                                            |           |     v     |
 | Sonarr v3 Release Profile RegEx                                                    |     v     |     v     |
 | Sonarr v4 Custom Formats                                                           |     v     |     v     |
 | Sonarr v4 predefined config files available                                        |           |     v     |
@@ -19,6 +20,7 @@ These are 3rd party applications to sync several sections of the guide with your
 | Sonarr v3/v4 Scores                                                                |     v     |     v     |
 | Sonarr v3/v4 Quality Settings (File Size)                                          |     v     |     v     |
 | Sonarr v3/v4 Naming Scheme                                                         |     v     |           |
+| Sonarr v3/v4 Quality Profiles                                                      |           |     v     |
 
 ------
 
@@ -65,8 +67,9 @@ Just enable the Custom Formats/Release Profiles you want.
 
 ## Recyclarr
 
-[Recyclarr Info](/Recyclarr/){:target="_blank" rel="noopener noreferrer"}
+[Info](/Recyclarr/){:target="_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/wiki/){:target="_blank" rel="noopener noreferrer"}
 
-[Recyclarr Documentation](https://recyclarr.dev/wiki/){:target="_blank" rel="noopener noreferrer"}
+Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
+Sonarr.
 
 --8<-- "includes/support.md"
