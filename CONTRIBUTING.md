@@ -145,3 +145,38 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 ## Recommendations
 
 - use [VSCode](https://code.visualstudio.com/) for editing with the following extension [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+
+## Preview Docs Locally
+
+### Prerequisites
+
+These prerequisites are taken from the [mkdocs installation instructions][mkdocinstall].
+
+- Install a recent version of [Python 3](https://www.python.org/).
+- `pip` is also required, but should come with Python. Run `pip --version` to check if its available
+  and working. See the [installation instructions](https://pip.pypa.io/en/stable/installation/).
+
+[mkdocinstall]: https://www.mkdocs.org/user-guide/installation/
+
+### Mkdocs Installation
+
+First, install mkdocs:
+
+```bash
+pip install mkdocs
+```
+
+Then, install dependent modules using the command below. This command should be run in the root
+directory of the repository (i.e. where the `requirements.txt` file is). If the `pip` command does
+not work, refer to the mkdocs installation page linked in the Prerequisite section above.
+
+```bash
+pip install -r docs/requirements.txt
+```
+
+Once everything is installed, run the command below to start a local dev server to preview your
+changes to mkdocs:
+
+```bash
+mkdocs serve
+```
