@@ -188,7 +188,7 @@ Once you have enabled the `WebUI` plugin, it will appear in your `Preferences` m
 
 ### Label
 
-The `Label` plugin will allow you to catagorize/sort your torrents. You can assign one Label per torrent. Starr apps can also use Deluge's labels to help them keep track of downloads and imported torrents.
+The `Label` plugin will allow you to categorize/sort your torrents. You can assign one Label per torrent. Starr apps can also use Deluge's labels to help them keep track of downloads and imported torrents.
 
 Labels are a valuable tool, if used properly, to keep your torrents managed and organized.
 
