@@ -30,3 +30,6 @@ If you want torrents to be moved upon completion to a specific folder, you can s
     Enabling a "Move completed to" for a label may require you to restart Deluge before it will take effect.
 
     Rechecking torrents will not trigger the "completion" call.
+
+{! include-markdown "../../../includes/support.md" !}
+<!-- --8<-- "includes/support.md" -->
