@@ -1,0 +1,6 @@
+nav:
+    - Installing: index.md
+    - Basic-Setup: Basic-Setup.md
+    - Using Labels: Using-Labels.md
+    - Port forwarding: Port-Forwarding.md
+    - Tips: Tips.md
