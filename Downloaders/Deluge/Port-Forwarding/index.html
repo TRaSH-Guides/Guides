@@ -12,20 +12,20 @@
         <meta name="author" content="TRaSH">
       
       
-        <link rel="canonical" href="https://trash-guides.info/Downloaders/Deluge/Deluge-Basic-Setup/">
+        <link rel="canonical" href="https://trash-guides.info/Downloaders/Deluge/Port-Forwarding/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../Using-Labels/">
       
       
-        <link rel="next" href="../Deluge-how-to-add-labels/">
+        <link rel="next" href="../Tips/">
       
       <link rel="icon" href="../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.19">
     
     
       
-        <title>Deluge - Basic Setup - TRaSH Guides</title>
+        <title>Port forwarding - TRaSH Guides</title>
       
     
     
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deluge-basic-setup" class="md-skip">
+        <a href="#port-forwarding" class="md-skip">
           Skip to content
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deluge - Basic Setup
+              Port forwarding
             
           </span>
         </div>
@@ -1666,7 +1666,35 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Deluge Placeholder
+        Installing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Basic-Setup/" class="md-nav__link">
+        Basic-Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using-Labels/" class="md-nav__link">
+        Using Labels
       </a>
     </li>
   
@@ -1689,12 +1717,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Deluge - Basic Setup
+          Port forwarding
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Deluge - Basic Setup
+        Port forwarding
       </a>
       
         
@@ -1713,15 +1741,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bad-path-suggestion" class="md-nav__link">
-    Bad path suggestion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soon" class="md-nav__link">
-    Soon
+  <a href="#incoming-port" class="md-nav__link">
+    Incoming Port
   </a>
   
 </li>
@@ -1741,8 +1762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Deluge-how-to-add-labels/" class="md-nav__link">
-        Deluge - How to add labels
+      <a href="../Tips/" class="md-nav__link">
+        Tips
       </a>
     </li>
   
@@ -2368,15 +2389,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bad-path-suggestion" class="md-nav__link">
-    Bad path suggestion
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soon" class="md-nav__link">
-    Soon
+  <a href="#incoming-port" class="md-nav__link">
+    Incoming Port
   </a>
   
 </li>
@@ -2397,7 +2411,7 @@
                   
 
   
-    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Downloaders/Deluge/Deluge-Basic-Setup.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Downloaders/Deluge/Port-Forwarding.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2406,41 +2420,29 @@
     
       
     
-    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Downloaders/Deluge/Deluge-Basic-Setup.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Downloaders/Deluge/Port-Forwarding.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="deluge-basic-setup">Deluge - Basic Setup<a class="headerlink" href="#deluge-basic-setup" title="Permanent link"></a></h1>
-<!-- BEGIN INCLUDE ../../../includes/downloaders/basic-setup.md -->
-<p>This basic example is based on the use of docker images</p>
-<div class="admonition tip">
-<p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
-<p>More info <a href="/Hardlinks/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
+<h1 id="port-forwarding">Port Forwarding<a class="headerlink" href="#port-forwarding" title="Permanent link"></a></h1>
+<p>The <code>Network</code> section of <code>Preferences</code> is where you will bind Deluge to specific interface/address, specify port usage.</p>
+<p><a class="glightbox" href="../images/Deluge-port-forwarding.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Network Settings" src="../images/Deluge-port-forwarding.png" /></a></p>
+<h2 id="incoming-port">Incoming Port<a class="headerlink" href="#incoming-port" title="Permanent link"></a></h2>
+<div class="admonition info">
+<p>You've followed the <a href="/Misc/How-to-setup-Torguard-for-port-forwarding/" rel="noopener noreferrer" target="_blank">Setup TorGuard for port forwarding</a> and want to know where in your download client you should add the port you've port forwarded.</p>
 </div>
-<!-- BEGIN INCLUDE ../hardlinks/bad-path-suggestion.md -->
-<h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
+<p><code>Incoming Port</code> should be set to a specific port that you have open or forwarded (if you are behind any NAT/Firewall/VPN.)</p>
 <div class="admonition warning">
-<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+<p class="admonition-title">Warning</p>
+<p>Default ports of 6880-6890 are not recommended.</p>
 </div>
-<!-- END INCLUDE -->
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
-<div class="admonition warning">
-<p>But you're able to change this, by not using the pre-defined/recommended paths like:</p>
-<ul>
-<li><code>/downloads</code> =&gt; <code>/data/downloads</code>, <code>/data/usenet</code>, <code>/data/torrents</code></li>
-<li><code>/movies</code> =&gt; <code>/data/media/movies</code></li>
-<li><code>/tv</code> =&gt; <code>/data/media/tv</code></li>
-</ul>
+<p>Make sure you click <code>Test Active Port</code> and get a ✓ before moving on.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Critical</code></strong></p>
 </div>
-<!-- END INCLUDE -->
-<!-- --8<-- "includes/downloaders/basic-setup.md" -->
-
-<hr />
-<h2 id="soon">Soon<a class="headerlink" href="#soon" title="Permanent link"></a></h2>
-<p>I've asked several people that used this download client for some help/feedback, but most of them just switched to qBittorrent.</p>
 <!-- BEGIN INCLUDE ../../../includes/support.md -->
 
 <hr />
@@ -2457,7 +2459,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 12, 2023 14:44:00</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2023 19:07:29</span>
       
     
   </small>
