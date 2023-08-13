@@ -1,4 +1,4 @@
-??? abstract "Services de streaming français d'Animés - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Services de streaming français d'Animés - [Cliquer pour afficher/masquer]"
     | Formats Personnalisés                                                                           |                      Score                      | Trash ID                                     |
     | ----------------------------------------------------------------------------------------------- | :---------------------------------------------: | -------------------------------------------- |
     | [{{ sonarr['cf']['cr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#cr)             |     {{ sonarr['cf']['cr']['trash_scores']['default'] }}     | {{ sonarr['cf']['cr']['trash_id'] }}         |

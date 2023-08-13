@@ -1,5 +1,5 @@
-??? abstract "Explications - [CLIQUEZ POUR AFFICHER]"
-    | Acronymes                  | French Explanation                                                                  | English Explanation                                                   |
+??? abstract "Explications - [Cliquer pour afficher/masquer]"
+    | Acronymes                  | Définition française                                                                | Définition anglaise                                                   |
     | -------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
     | TRUEFRENCH or VFF          | Version Francophone Française (doublage réalisé en France)                          | Full French version (dubbing done in France)                          |
     | FRENCH or VF<sup>[1]</sup> | Version Francophone (normalement equivalent à la VFQ)                               | French version (normally equivalent to VFQ)                           |
@@ -17,14 +17,14 @@
     !!! tip "Indexers renaming in Prowlarr"
         Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.
 
-??? abstract "Versions françaises - [CLIQUEZ POUR AFFICHER]"
-    | Formats Personnalisés                                                                              | Score | Trash ID                                        |
-    | -------------------------------------------------------------------------------------------------- | :---: | ----------------------------------------------- |
-    | [{{ sonarr['cf']['french-vff']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vff)       |   0   | {{ sonarr['cf']['french-vff']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vof']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vof)       |   0   | {{ sonarr['cf']['french-vof']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vfi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfi)       |   0   | {{ sonarr['cf']['french-vfi']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vf2']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vf2)       |   0   | {{ sonarr['cf']['french-vf2']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vfq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfq)       |   0   | {{ sonarr['cf']['french-vfq']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vq)         |   0   | {{ sonarr['cf']['french-vq']['trash_id'] }}     |
-    | [{{ sonarr['cf']['french-vfb']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfb)       |   0   | {{ sonarr['cf']['french-vfb']['trash_id'] }}    |
-    | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) |   0   | {{ sonarr['cf']['french-vostfr']['trash_id'] }} |
+??? abstract "Versions françaises - [Cliquer pour afficher/masquer]"
+    | Formats Personnalisés                                                                              | Trash ID                                        |
+    | -------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+    | [{{ sonarr['cf']['french-vff']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vff)       | {{ sonarr['cf']['french-vff']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vof']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vof)       | {{ sonarr['cf']['french-vof']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vfi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfi)       | {{ sonarr['cf']['french-vfi']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vf2']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vf2)       | {{ sonarr['cf']['french-vf2']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vfq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfq)       | {{ sonarr['cf']['french-vfq']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vq)         | {{ sonarr['cf']['french-vq']['trash_id'] }}     |
+    | [{{ sonarr['cf']['french-vfb']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfb)       | {{ sonarr['cf']['french-vfb']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) | {{ sonarr['cf']['french-vostfr']['trash_id'] }} |
