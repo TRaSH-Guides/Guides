@@ -83,7 +83,7 @@ STARRJSONEXPORT
 
 General Structure
 - json file name - name of the [json file](#file-naming)
-- `trash_id` - Generated [HashCode](#hashcodes) for the Custom Format
+- `trash_id` - Generated [HashCode](#hashcode) for the Custom Format
 - `trash_score` - (Legacy) [Default Score for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_score`
 - `trash_scores` - (New) Json object of [score(s) for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_scores.default`
 - `trash_regex` - Link to [regex test cases](#regex-test-cases) for regex
