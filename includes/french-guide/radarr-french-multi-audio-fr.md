@@ -1,9 +1,9 @@
 ??? abstract "Multi audio - [Cliquer pour afficher/masquer]"
-    | Formats Personnalisés                                                                                   |                       Score                       | Trash ID                                       |
-    | ------------------------------------------------------------------------------------------------------- | :-----------------------------------------------: | ---------------------------------------------- |
+    | Formats Personnalisés                                                                                   |                             Score                             | Trash ID                                       |
+    | ------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------: | ---------------------------------------------- |
     | [{{ radarr['cf']['multi-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-audio)   | {{ radarr['cf']['multi-audio']['trash_scores']['default'] }}  | {{ radarr['cf']['multi-audio']['trash_id'] }}  |
     | [{{ radarr['cf']['french-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#french-audio) | {{ radarr['cf']['french-audio']['trash_scores']['default'] }} | {{ radarr['cf']['french-audio']['trash_id'] }} |
-    | [{{ radarr['cf']['multi-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-french) |                         0                         | {{ radarr['cf']['multi-french']['trash_id'] }} |
+    | [{{ radarr['cf']['multi-french']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#multi-french) |                               0                               | {{ radarr['cf']['multi-french']['trash_id'] }} |
 
     ??? info "Description et objectifs - [Cliquer pour afficher/masquer]"
 

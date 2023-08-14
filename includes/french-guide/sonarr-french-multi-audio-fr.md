@@ -1,9 +1,9 @@
 ??? abstract "Multi Audio - [Cliquer pour afficher/masquer]"
-    | Formats Personnalisés                                                                                   |                       Score                       | Trash ID                                       |
-    | ------------------------------------------------------------------------------------------------------- | :-----------------------------------------------: | ---------------------------------------------- |
+    | Formats Personnalisés                                                                                   |                             Score                             | Trash ID                                       |
+    | ------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------: | ---------------------------------------------- |
     | [{{ sonarr['cf']['multi-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-audio)   | {{ sonarr['cf']['multi-audio']['trash_scores']['default'] }}  | {{ sonarr['cf']['multi-audio']['trash_id'] }}  |
     | [{{ sonarr['cf']['french-audio']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#french-audio) | {{ sonarr['cf']['french-audio']['trash_scores']['default'] }} | {{ sonarr['cf']['french-audio']['trash_id'] }} |
-    | [{{ sonarr['cf']['multi-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-french) |                         0                         | {{ sonarr['cf']['multi-french']['trash_id'] }} |
+    | [{{ sonarr['cf']['multi-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#multi-french) |                               0                               | {{ sonarr['cf']['multi-french']['trash_id'] }} |
 
     ??? info "Description et objectifs - [Cliquer pour afficher/masquer]"
 
