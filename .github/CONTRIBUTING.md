@@ -93,12 +93,12 @@ General Structure
 
 - JSON file names are always written in small letters, spaces are replaced by a dash, no spaces or special characters except a dash :bangbang:
 
-### Hashcodes
+### Hashcode
 
 - When adding the hashcode for **Radarr** use the following naming `CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
-- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK)}.
+- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
 - When adding the hashcode for **Sonarr** use the following naming `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
-- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`] [link+example](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK)}.
+- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
 
 ### Regex Test Cases
 
