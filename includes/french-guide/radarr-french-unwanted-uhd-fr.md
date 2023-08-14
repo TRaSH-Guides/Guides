@@ -1,12 +1,12 @@
-??? abstract "Indésirable - [CLIQUEZ POUR AFFICHER]"
-    | Formats Personnalisés                                                                                   |                     Score                      | Trash ID                                    |
-    | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------: | ------------------------------------------- |
-    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           |  {{ radarr['cf']['br-disk']['trash_score'] }}  | {{ radarr['cf']['br-disk']['trash_id'] }}   |
-    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                     |    {{ radarr['cf']['3d']['trash_score'] }}     | {{ radarr['cf']['3d']['trash_id'] }}        |
-    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                     |    {{ radarr['cf']['lq']['trash_score'] }}     | {{ radarr['cf']['lq']['trash_id'] }}        |
-    | [{{ radarr['cf']['french-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-lq)           | {{ radarr['cf']['french-lq']['trash_score'] }} | {{ radarr['cf']['french-lq']['trash_id'] }} |
-    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)         | {{ radarr['cf']['upscaled']['trash_score'] }}  | {{ radarr['cf']['upscaled']['trash_id'] }}  |
-    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ radarr['cf']['x265-hd']['trash_score'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}   |
+??? abstract "Indésirable - [Cliquer pour afficher/masquer]"
+    | Formats Personnalisés                                                                                   |                           Score                            | Trash ID                                    |
+    | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------: | ------------------------------------------- |
+    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           |  {{ radarr['cf']['br-disk']['trash_scores']['default'] }}  | {{ radarr['cf']['br-disk']['trash_id'] }}   |
+    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                     |    {{ radarr['cf']['3d']['trash_scores']['default'] }}     | {{ radarr['cf']['3d']['trash_id'] }}        |
+    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                     |    {{ radarr['cf']['lq']['trash_scores']['default'] }}     | {{ radarr['cf']['lq']['trash_id'] }}        |
+    | [{{ radarr['cf']['french-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-lq)           | {{ radarr['cf']['french-lq']['trash_scores']['default'] }} | {{ radarr['cf']['french-lq']['trash_id'] }} |
+    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)         | {{ radarr['cf']['upscaled']['trash_scores']['default'] }}  | {{ radarr['cf']['upscaled']['trash_id'] }}  |
+    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ radarr['cf']['x265-hd']['trash_scores']['default'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}   |
 
     ------
 
@@ -21,7 +21,7 @@
 
         !!! Danger "Ne l'utilisez pas avec le Format Personnalisé [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning:"
 
-    ??? note "Optionnel - [CLIQUEZ POUR AFFICHER]"
+    ??? note "Optionnel - [Cliquer pour afficher/masquer]"
 
         Cela inclut les Formats Personnalisés optionnels créés par TRaSH pour le guide original. Assurez-vous de bien comprendre ce qu'ils impliquent avant de les intégrer. En outre, deux Formats Personnalisés peuvent créer des problèmes si vous voulez du MULTi :
 

@@ -1,6 +1,9 @@
 {
   "trash_id": "d6819cba26b1a6508138d25fb5e32293",
-  "trash_score": "1800",
+  "trash_score": 1800,
+  "trash_scores": {
+    "default": 1800
+  },
   "name": "HD Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

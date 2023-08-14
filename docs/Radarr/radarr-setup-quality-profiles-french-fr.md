@@ -27,7 +27,7 @@ Il est impératif que vous respectiez et compreniez ce qui est proposé par le g
 
     La seule modification nécessaire et **indispensable** pour que les formats personnalisés français fonctionnent est de définir le profil de langue sur `Any`.
 
-    ??? success "Exemple - [CLIQUEZ POUR AFFICHER]"
+    ??? success "Exemple - [Cliquer pour afficher/masquer]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
@@ -46,13 +46,13 @@ Deux options s'offre à vous :
 - Configurez Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (*en anglais*).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md) (*en anglais*). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
-- (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `1000`.
+- (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### En utilisant les exemples suivants et le Format Personnalisé VOSTFR
 
 - Continuez sur cette page.
 - Ignorez toute mention des **Formats Personnalisés MULTi**.
-- Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `1000`.
+- Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ------
 
@@ -77,7 +77,7 @@ Afin d'illustrer ce principe, vous verrez une section **"Mix original (optionnel
 Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :
 
 - Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à `101` au lieu de `0`.
-- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `1000` au Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr).
+- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}` au Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr).
 
 !!! warning "Attention"
     Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
@@ -130,7 +130,7 @@ La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne t
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -172,7 +172,7 @@ Utilisez les paramètres suivants dans votre profil.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -214,7 +214,7 @@ La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne t
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -256,7 +256,7 @@ Utilisez les paramètres suivants dans votre profil.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     - Lorsque le WEB-2160p deviendra disponible, le média sera télécharger en WEB-2160p. (services de streaming)
     - Lorsque le REMUX-2160p sortira, il sera mis à niveau vers le REMUX-2160p.

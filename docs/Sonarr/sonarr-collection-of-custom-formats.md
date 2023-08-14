@@ -819,7 +819,7 @@ I also made 3 guides related to this one.
 
     This blocks/ignores 720/1080p(HD) releases that are encoded in x265
 
-    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_score'] }}`
+    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}`
 
     !!! failure ""
         --8<-- "includes/docker/x265.md"
@@ -1118,7 +1118,7 @@ I also made 3 guides related to this one.
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
-    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_score'] }}`
+    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}`
 
     !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 

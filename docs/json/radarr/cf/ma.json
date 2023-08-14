@@ -1,6 +1,9 @@
 {
   "trash_id": "2a6039655313bf5dab1e43523b62c374",
-  "trash_score": "20",
+  "trash_score": 20,
+  "trash_scores": {
+    "default": 20
+  },
   "name": "MA",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

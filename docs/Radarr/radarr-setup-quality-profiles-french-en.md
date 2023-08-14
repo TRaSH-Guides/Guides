@@ -50,13 +50,13 @@ There is two options:
 - Set up Radarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
 - Set up [Bazarr](/Bazarr/Setup-Guide). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
-- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
+- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
 - Ignore any mention of **MULTi Custom Formats**.
-- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
+- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ------
 
@@ -82,7 +82,7 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:
 
 - You prefer VFF (including VFI and VF2) audio, in this case you will put them at `101` instead of `0`.
-- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
+- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 !!! warning "Attention"
     It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
