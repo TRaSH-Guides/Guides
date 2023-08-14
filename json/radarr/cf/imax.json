@@ -1,6 +1,9 @@
 {
   "trash_id": "eecf3a857724171f968a66cb5719e152",
-  "trash_score": "800",
+  "trash_score": 800,
+  "trash_scores": {
+    "default": 800
+  },
   "name": "IMAX",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

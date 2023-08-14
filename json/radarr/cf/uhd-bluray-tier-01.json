@@ -1,6 +1,11 @@
 {
   "trash_id": "4d74ac4c4db0b64bff6ce0cffef99bf0",
-  "trash_score": "1800",
+  "trash_score": 1800,
+  "trash_scores": {
+    "default": 1800,
+    "sqp-2": 2300,
+    "sqp-5": 2300
+  },
   "name": "UHD Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

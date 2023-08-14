@@ -1,6 +1,9 @@
 {
   "trash_id": "096e406c92baa713da4a72d88030b815",
-  "trash_score": "1200",
+  "trash_score": 1200,
+  "trash_scores": {
+    "default": 1200
+  },
   "name": "Anime BD Tier 03 (SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

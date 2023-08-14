@@ -1,6 +1,9 @@
 {
   "trash_id": "b0fdc5897f68c9a68c70c25169f77447",
-  "trash_score": "-10000",
+  "trash_score": -10000,
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "Anime LQ Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

@@ -1,6 +1,9 @@
 {
   "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
-  "trash_score": "1850",
+  "trash_score": 1850,
+  "trash_scores": {
+    "default": 1850
+  },
   "name": "FR Remux Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

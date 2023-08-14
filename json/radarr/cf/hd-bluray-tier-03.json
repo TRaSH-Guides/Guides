@@ -1,6 +1,11 @@
 {
   "trash_id": "5608c71bcebba0a5e666223bae8c9227",
-  "trash_score": "1700",
+  "trash_score": 1700,
+  "trash_scores": {
+    "default": 1700,
+    "sqp-1-1080p": 1000,
+    "sqp-1-2160p": 1000
+  },
   "name": "HD Bluray Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

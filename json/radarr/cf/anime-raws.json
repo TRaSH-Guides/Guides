@@ -1,6 +1,9 @@
 {
   "trash_id": "06b6542a47037d1e33b15aa3677c2365",
-  "trash_score": "-10000",
+  "trash_score": -10000,
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "Anime Raws",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
