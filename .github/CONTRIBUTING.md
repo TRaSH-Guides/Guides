@@ -58,6 +58,10 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 ## Radarr/Sonarr Custom Format (JSON)
 
+### Release Group Reclassifications, Removals, or Additions
+
+- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
+
 ### General Guidelines
 
 - Custom Format name needs to match json name :bangbang:
@@ -130,13 +134,12 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 - This allows for Custom Formats to be assigned different scores for different profiles
 - The `trash_score` value MUST be the same as the `trash_scores.default` value
 - The legacy `trash_score` value is currently retained for compatibility reasons, but will eventually be removed
-
-### Release Group Reclassifications, Removals, or Additions
-- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
+- Default Scores of 0 (`trash_score` or `trash_scores.default` are FORBIDDEN
 
 ## YAML file naming
 
 - If a hashcode is needed **No** hashcode can exist multiple times :bangbang:
+- Use [this website](https://md5.gromweb.com) to generate an md5 hash
 - YAML file names are always written in small letters, spaces are replaced by a dash, no spaces or special characters except a dash :bangbang:
 
 ## Recommendations
