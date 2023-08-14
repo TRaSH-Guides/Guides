@@ -70,7 +70,7 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 When adding scores
 
-- Scores must be added both as a single value under `trash_score` and as JSON objects under `trash_scores`, for example:
+- Scores must be added both as a single value under (legacy) `trash_score` and as JSON objects under `trash_scores`, for example:
 
 ```json
 {
