@@ -2,7 +2,7 @@
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-Here you will find a set of guidelines for contributing to TRaSH Guides, Which you can find [HERE](https://trash-guides.info/),
+Here you will find a set of guidelines for contributing to [TRaSH Guides](https://trash-guides.info/),
 These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Guidelines
@@ -62,6 +62,28 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 - Custom Format name needs to match json name :bangbang:
 - No hashcode can exists multiple times :bangbang:
+- JSON file format shall consist of the following TRaSH specific data appended to the json exported from Starr
+
+```json
+{
+  "trash_id": "HASHCODE",
+  "trash_score": 50,
+  "trash_scores": {
+    "default": 50,
+    "some_other_profile": 100
+  },
+  "trash_regex": "https://regex101.com/r/pADWJD/5",
+STARRJSONEXPORT
+}
+```
+
+General Structure
+- json file name - name of the [json file](#file-naming)
+- `trash_id` - Generated [HashCode](#hashcodes) for the Custom Format
+- `trash_score` - (Legacy) [Default Score for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_score`
+- `trash_scores` - (New) Json object of [score(s) for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_scores.default`
+- `trash_regex` - Link to [regex test cases](#regex-test-cases) for regex
+- STARRJSONEXPORT - The exported custom format created within Starr. Note that this will have a leading `{` that will need to have the `trash` specific regex added after
 
 ### File Naming
 
@@ -83,14 +105,12 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
   - Remove the actual Series title.
   - Replace the actual group name with `RlsGrp`
 
-When updating or adding a new CF the test case url (`trash_regex`) needs to be added to the json.
+When updating or adding a new CF the test case url (`trash_regex`) needs to be prepended to the exported from Starr json
 
 ```json
 {
-  "trash_id": "hashcode",
-  "trash_score": "score",
   "trash_regex": "https://regex101.com/r/pADWJD/5",
-  "name": "CF_name",
+}
 ```
 
 ### Scoring
@@ -99,7 +119,6 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be a
 
 ```json
 {
-  "trash_id": "hashcode",
   "trash_score": 50,
   "trash_scores": {
     "default": 50,
