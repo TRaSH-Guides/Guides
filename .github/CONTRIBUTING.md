@@ -84,7 +84,7 @@ When adding scores
 ```
 
 - This allows for Custom Formats to be assigned different scores for different profiles
-- The `trash_score` value must be the same as the `trash_scores` `default` value
+- The `trash_score` value MUST be the same as the `trash_scores.default` value
 - The `trash_score` value is currently retained for compatibility reasons, but will eventually be removed
 
 When adding a regex test case
