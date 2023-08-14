@@ -58,17 +58,42 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 ## Radarr/Sonarr Custom Format (JSON)
 
+### General Guidelines
+
 - Custom Format name needs to match json name :bangbang:
 - No hashcode can exists multiple times :bangbang:
-- JSON file names are always written in small letters, spaces are replaced by a dash, no spaces or special characters except a dash :bangbang:
-- When adding the hashcode for Radarr use the following naming `CF_name` on the following [link+example](https://md5.gromweb.com/?string=BR-DISK)
-- When adding the hashcode for Radarr Anime use the following naming `Radarr Anime CF_name` on the following [link+example](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK)}.
-- When adding the hashcode for Sonarr use the following naming `Sonarr CF_name` on the following [link+example](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
-- When adding the hashcode for Sonarr Anime use the following naming `Sonarr Anime CF_name` on the following [link+example](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK)}.
-- Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/4DypIW/1).
-- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
-When adding scores
+### File Naming
+
+- JSON file names are always written in small letters, spaces are replaced by a dash, no spaces or special characters except a dash :bangbang:
+
+### Hashcodes
+
+- When adding the hashcode for **Radarr** use the following naming `CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
+- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK)}.
+- When adding the hashcode for **Sonarr** use the following naming `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
+- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`] [link+example](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK)}.
+
+### Regex Test Cases
+
+- Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/4DypIW/1).
+- When adding a regex test case
+  - Replace the actual movie name with `Movie`.
+  - Replace the actual series name with `Series`.
+  - Remove the actual Series title.
+  - Replace the actual group name with `RlsGrp`
+
+When updating or adding a new CF the test case url (`trash_regex`) needs to be added to the json.
+
+```json
+{
+  "trash_id": "hashcode",
+  "trash_score": "score",
+  "trash_regex": "https://regex101.com/r/pADWJD/5",
+  "name": "CF_name",
+```
+
+### Scoring
 
 - Scores must be added both as a single value under (legacy) `trash_score` and as JSON objects under `trash_scores`, for example:
 
@@ -87,22 +112,8 @@ When adding scores
 - The `trash_score` value MUST be the same as the `trash_scores.default` value
 - The legacy `trash_score` value is currently retained for compatibility reasons, but will eventually be removed
 
-When adding a regex test case
-
-- Replace the actual movie name with `Movie`.
-- Replace the actual series name with `Series`.
-- Remove the actual Series title.
-- Replace the actual group name with `RlsGrp`
-
-When updating or adding a new CF the test case url needs to be added to the json.
-
-```json
-{
-  "trash_id": "hashcode",
-  "trash_score": "score",
-  "trash_regex": "https://regex101.com/r/pADWJD/5",
-  "name": "CF_name",
-```
+### Release Group Reclassifications, Removals, or Additions
+- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
 ## YAML file naming
 
