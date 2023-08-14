@@ -68,6 +68,25 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 - Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/4DypIW/1).
 - When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
+When adding scores
+
+- Scores must be added both as a single value under `trash_score` and as JSON objects under `trash_scores`, for example:
+
+```json
+{
+  "trash_id": "hashcode",
+  "trash_score": 50,
+  "trash_scores": {
+    "default": 50,
+    "some_other_profile": 100
+  },
+}
+```
+
+- This allows for Custom Formats to be assigned different scores for different profiles
+- The `trash_score` value must be the same as the `trash_scores` `default` value
+- The `trash_score` value is currently retained for compatibility reasons, but will eventually be removed
+
 When adding a regex test case
 
 - Replace the actual movie name with `Movie`.
