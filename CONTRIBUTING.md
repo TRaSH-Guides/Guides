@@ -10,7 +10,7 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 - Make sure you're editing the latest version.
 - If you propose changes make sure it doesn't break anything else in the Guides.
 - Make sure that after the changes you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
-- If the `metadata.json` and `metadata.schema.json` needs changes, announce it first in the Discord `#development` channel and ping`voidpointer` and `nitsua` so the 3rd party apps don't break :bangbang:
+- If the `metadata.json` and `metadata.schema.json` needs changes, announce it first in the Discord `#development` channel and ping `voidpointer` and `nitsua` so the 3rd party apps don't break :bangbang:
 
 ## Branch naming
 
@@ -82,6 +82,7 @@ STARRJSONEXPORT
 ```
 
 General Structure
+
 - json file name - name of the [json file](#file-naming)
 - `trash_id` - Generated [HashCode](#hashcode) for the Custom Format
 - `trash_score` - (Legacy) [Default Score for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_score`
