@@ -1,3 +1,7 @@
+# 2023-08-15
+- feat(sonarr): add SuccessfulCrab to Scene CF and Guide (#1504)
+- fix(guides): Refactor Custom Formats Scoring to use json object array and make the format files the source of score truth
+
 # 2023-08-13 13:45
 - feat(guide): add Deluge Downloader guide
 
