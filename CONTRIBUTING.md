@@ -104,11 +104,13 @@ General Structure
 ### Regex Test Cases
 
 - Provide a link to your regex example of your Custom Format using the following [Template](https://regex101.com/r/4DypIW/1).
-- When adding a regex test case
-  - Replace the actual movie name with `Movie`.
-  - Replace the actual series name with `Series`.
+
+When adding a regex test case:
+
+- Replace the actual movie name with `Movie`.
+- Replace the actual Series name with `Series`.
   - Remove the actual Series title.
-  - Replace the actual group name with `RlsGrp`
+- Replace the actual group name with `RlsGrp`
 
 When updating or adding a new CF the test case url (`trash_regex`) needs to be prepended to the exported from Starr json
 
