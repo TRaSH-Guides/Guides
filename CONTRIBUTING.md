@@ -108,8 +108,7 @@ General Structure
 When adding a regex test case:
 
 - Replace the actual movie name with `Movie`.
-- Replace the actual Series name with `Series`.
-  - Remove the actual Series title.
+- Replace the actual Series name/title with `Series`.
 - Replace the actual group name with `RlsGrp`
 
 When updating or adding a new CF the test case url (`trash_regex`) needs to be prepended to the exported from Starr json
