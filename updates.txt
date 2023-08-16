@@ -1,3 +1,12 @@
+# 2023-08-16 16:55
+- feat(sonarr): Add SuccessfulCrab to Scene CF (#1504)
+- feat(sonarr): Add Zer00 to LQ CF (#1508)
+- feat(radarr): Add Mx24 to LQ CF (#1508)
+- feat(starr): Add iNTENSO and CTFOH to LQ CF (#1508)
+- fix(sonarr): Align Sonarr LQ CF and Sonarr v3 LQ RP (#1508)
+- feat(guides): Enhance Contributing and add MkDocs Install (#1494)
+- fix(guides): Centralize Starr Data - Refactor Custom Formats Scoring to use json object array and make the format files the source of score truth (#1463)
+
 # 2023-08-13 13:45
 - feat(guide): add Deluge Downloader guide
 
