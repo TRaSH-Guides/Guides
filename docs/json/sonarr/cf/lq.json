@@ -160,5 +160,14 @@
         "value": "^(XLF)$"
       }
     }
+    {
+      "name": "Zero00",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Zero00)$"
+      }
+    }
   ]
 }
