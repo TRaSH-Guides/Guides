@@ -152,6 +152,15 @@
       }
     },
     {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
+      }
+    },
+    {
       "name": "d3g",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

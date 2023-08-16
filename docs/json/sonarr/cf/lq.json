@@ -26,6 +26,15 @@
       }
     },
     {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
+      }
+    },
+    {
       "name": "EVO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
