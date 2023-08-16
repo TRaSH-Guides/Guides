@@ -296,6 +296,15 @@
       }
     },
     {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
+      }
+    },
+    {
       "name": "iPlanet",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

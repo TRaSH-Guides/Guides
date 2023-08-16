@@ -62,6 +62,15 @@
       }
     },
     {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
+      }
+    },
+    {
       "name": "JFF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
