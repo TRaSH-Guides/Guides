@@ -159,7 +159,7 @@
       "fields": {
         "value": "^(XLF)$"
       }
-    }
+    },
     {
       "name": "Zero00",
       "implementation": "ReleaseGroupSpecification",
