@@ -3,8 +3,8 @@
   "trash_score": 750,
   "trash_scores": {
     "default": 750,
-    "sqp-1-1080p": 15,
-    "sqp-1-2160p": 15
+    "sqp-1-1080p": 115,
+    "sqp-1-2160p": 115
   },
   "name": "DD",
   "includeCustomFormatWhenRenaming": false,
