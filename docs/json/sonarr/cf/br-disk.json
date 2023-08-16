@@ -17,21 +17,12 @@
       }
     },
     {
-      "name": "DVD5",
+      "name": "DVD5 or DVD9",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\\\bDVD5\\\\b"
-      }
-    },
-    {
-      "name": "DVD9",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\\\bDVD9\\\\b"
+        "value": "\\b(DVD[59])\\b"
       }
     }
   ]
