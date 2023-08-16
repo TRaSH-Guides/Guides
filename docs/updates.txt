@@ -1,5 +1,5 @@
 # 2023-08-16 16:55
-- feat(sonarr): add SuccessfulCrab to Scene CF (#1504)
+- feat(sonarr): Add SuccessfulCrab to Scene CF (#1504)
 - feat(sonarr): Add Zer00 to LQ CF (#1508)
 - feat(radarr): Add Mx24 to LQ CF (#1508)
 - feat(starr): Add iNTENSO and CTFOH to LQ CF (#1508)
