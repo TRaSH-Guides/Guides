@@ -13,7 +13,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^((Subs-)?24xHD)$"
+        "value": "\\b(24xHD)\\b"
       }
     },
     {
