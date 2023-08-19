@@ -512,7 +512,7 @@ Add this to your Preferred with a score of **[1]**
 Adds version due to anime groups sometimes fixing issues with their releases.
 
 ```bash
-/\d(v2)\b/i
+/\b(v2)\b/i
 ```
 
 ---
@@ -520,7 +520,7 @@ Adds version due to anime groups sometimes fixing issues with their releases.
 Add this to your Preferred with a score of **[2]**
 
 ```bash
-/\d(v3)\b/i
+/\b(v3)\b/i
 ```
 
 ---
@@ -528,7 +528,7 @@ Add this to your Preferred with a score of **[2]**
 Add this to your Preferred with a score of **[3]**
 
 ```bash
-/\d(v4)\b/i
+/\b(v4)\b/i
 ```
 
 ---
