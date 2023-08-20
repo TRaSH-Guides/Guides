@@ -12,6 +12,8 @@
 
 ## General
 
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/general)
+
 ### Tuning
 
 `Settings` => `General` => `Tuning`
@@ -22,6 +24,8 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 ------
 
 ## Folders
+
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/folders)
 
 ### User Folders
 
@@ -44,6 +48,8 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 
 ## Servers
 
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/servers)
+
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
 
@@ -64,6 +70,8 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 
 ## Categories
 
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/categories)
+
 `Settings`=> `Categories`
 
 Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/){:target="_blank" rel="noopener noreferrer"}
@@ -71,6 +79,8 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ------
 
 ## Switches
+
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/switches)
 
 ### Queue
 
@@ -93,8 +103,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 1. Unpack archives (rar, zip, 7z) within archives.
 1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
 1. Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.
-1. Helps with de-obfuscation, but probably is handling the same case sonarr/radarr do okay with. Not sure how this one does, I have it enabled, but its also newish.
-1. When sorting, use tags from indexer for title, season, episode, etc. Otherwise all naming is derived from the NZB name.
+1. Helps with de-obfuscation especially invalid file extensions
 
 ------
 
@@ -106,8 +115,8 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ## Special
 
-Rarely used options. For their meaning and explanation, click on the Help button to go to the Wiki page.
-Don't change these without checking the Wiki first, as some have serious side-effects.
+Rarely used options.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.0/special) first, as some have serious side-effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
