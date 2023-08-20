@@ -66,6 +66,8 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 - Custom Format name needs to match json name :bangbang:
 - No hashcode can exists multiple times :bangbang:
+- Tiers only hold release groups that have atleast done several dozen objectively high quality releases.
+- All Tier Groups must use retail sources. Fanrest and upscaled groups are forbidden. This is due to the high effort required and near impossibility to guarantee quality systematically without manual check every single movie.
 - JSON file format shall consist of the following TRaSH specific data appended to the json exported from Starr
 
 ```json
