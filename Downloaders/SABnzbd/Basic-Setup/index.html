@@ -2740,15 +2740,17 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Settings that aren't covered means you can change them to your own liking or just leave them on default.</p>
-<p>** I also recommend to enable the <code>Advanced Settings</code> on the top right. **</p>
+<p><strong>I also recommend to enable the <code>Advanced Settings</code> on the top right.</strong></p>
 </div>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.0/general" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>General</code> =&gt; <code>Tuning</code>
 <a class="glightbox" href="../images/sabnzbd-general-tuning.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!General: Tuning" src="../images/sabnzbd-general-tuning.png" /></a></p>
 <p>I recommend setting a sane maximum speed and then limiting below that, to keep your internet connection happy. You can use <code>Settings</code> =&gt; <code>Scheduling</code> to toggle the limit on and off based on time, slowing it down while your family is using the internet and speeding it up at night when they're not.</p>
 <hr />
 <h2 id="folders">Folders<a class="headerlink" href="#folders" title="Permanent link"></a></h2>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.0/folders" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="user-folders">User Folders<a class="headerlink" href="#user-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>Users Folders</code>
 <a class="glightbox" href="../images/sabnzbd-folders.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Folders: User Folders" src="../images/sabnzbd-folders.png" /></a></p>
@@ -2774,6 +2776,7 @@
 <p>I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.</p>
 <hr />
 <h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h2>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.0/servers" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <p><code>Settings</code> =&gt; <code>Servers</code> =&gt; <code>Add Server</code>
 <a class="glightbox" href="../images/sabnzbd-servers.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Servers" src="../images/sabnzbd-servers.png" /></a></p>
 <div class="admonition info">
@@ -2792,10 +2795,12 @@
 </ol>
 <hr />
 <h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link"></a></h2>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.0/categories" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <p><code>Settings</code>=&gt; <code>Categories</code></p>
 <p>Covered and fully explained in <a href="/Downloaders/SABnzbd/Paths-and-Categories/" rel="noopener noreferrer" target="_blank">SABnzbd - Paths and Categories</a></p>
 <hr />
 <h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link"></a></h2>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.0/switches" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="queue">Queue<a class="headerlink" href="#queue" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Queue</code>
 <a class="glightbox" href="../images/sabnzbd-switches-queue.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Switches: Queue" src="../images/sabnzbd-switches-queue.png" /></a></p>
@@ -2815,8 +2820,7 @@
 <li>Unpack archives (rar, zip, 7z) within archives.</li>
 <li>This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.</li>
 <li>Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.</li>
-<li>Helps with de-obfuscation, but probably is handling the same case sonarr/radarr do okay with. Not sure how this one does, I have it enabled, but its also newish.</li>
-<li>When sorting, use tags from indexer for title, season, episode, etc. Otherwise all naming is derived from the NZB name.</li>
+<li>Helps with de-obfuscation especially invalid file extensions</li>
 </ol>
 <hr />
 <h2 id="sorting">Sorting<a class="headerlink" href="#sorting" title="Permanent link"></a></h2>
@@ -2825,8 +2829,8 @@
 <p class="admonition-title"><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /> <strong>MAKE SURE THAT SORTING IS ENTIRELY DISABLED</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <h2 id="special">Special<a class="headerlink" href="#special" title="Permanent link"></a></h2>
-<p>Rarely used options. For their meaning and explanation, click on the Help button to go to the Wiki page.
-Don't change these without checking the Wiki first, as some have serious side-effects.
+<p>Rarely used options.
+Don't change these without checking the <a href="https://sabnzbd.org/wiki/configuration/4.0/special" rel="noopener noreferrer" target="_blank">SABnzbd Wiki</a> first, as some have serious side-effects.
 The default values are between parentheses.</p>
 <h3 id="unable-to-connect-to-sabnzbd">Unable to connect to SABnzbd<a class="headerlink" href="#unable-to-connect-to-sabnzbd" title="Permanent link"></a></h3>
 <p>If you're trying to connect your Starr apps to SABnzbd and you're getting a error like <code>Unable to connect to SABnzbd</code> after clicking on Test.</p>
@@ -2878,7 +2882,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 26, 2023 16:06:01</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 20, 2023 23:12:41</span>
       
     
   </small>
