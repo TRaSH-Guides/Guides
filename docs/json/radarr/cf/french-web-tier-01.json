@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
+    },
+    {
       "name": "FoX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

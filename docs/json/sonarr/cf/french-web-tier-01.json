@@ -54,6 +54,15 @@
       }
     },
     {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
+    },
+    {
       "name": "FRATERNiTY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
