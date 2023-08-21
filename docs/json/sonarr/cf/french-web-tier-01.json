@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "FW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FW)$"
+      }
+    },
+    {
       "name": "FRATERNiTY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

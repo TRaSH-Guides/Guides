@@ -54,15 +54,6 @@
       }
     },
     {
-      "name": "FW",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FW)$"
-      }
-    },
-    {
       "name": "HeavyWeight",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
