@@ -78,15 +78,6 @@
       "fields": {
         "value": "\\b(XSPITFIRE911)\\b"
       }
-    },
-    {
-      "name": "FW",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(FW)\\b"
-      }
     }
   ]
 }
