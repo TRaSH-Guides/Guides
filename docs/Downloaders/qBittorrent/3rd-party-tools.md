@@ -26,6 +26,7 @@ This is a program used to manage your qBittorrent instance such as:
 This is a program used to manage your qBittorrent instance and Arr instances
 
 Features
+
 - Monitor qBit for Stalled/bad entries and delete them then blacklist them on Arrs (Option to also trigger a re-search action).
 - Monitor qBit for completed entries and tell the appropriate Arr instance to import it ( 'DownloadedMoviesScan' or 'DownloadedEpisodesScan' commands).
 - Skip files in qBit entries by extension, folder or regex.
@@ -39,6 +40,7 @@ Features
 - Also supports Sonarr v4
 
 This section requires the Arr databases to be locally available.
+
 - Monitor Arr's databases to trigger missing episode searches.
 - Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).
 
