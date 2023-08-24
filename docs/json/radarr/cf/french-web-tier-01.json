@@ -53,15 +53,6 @@
       }
     },
     {
-      "name": "TFA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TFA)$"
-      }
-    },
-    {
       "name": "FoX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -132,6 +123,15 @@
       "fields": {
         "value": "^(T3KASHi)$"
       }
-    }
+    },
+    {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
+    },
   ]
 }
