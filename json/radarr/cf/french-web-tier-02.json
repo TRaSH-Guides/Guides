@@ -53,15 +53,6 @@
       }
     },
     {
-      "name": "FW",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FW)$"
-      }
-    },
-    {
       "name": "HANAMi",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

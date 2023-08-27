@@ -3221,7 +3221,7 @@ It's all really dependent on specific situations for different people</p>
 <hr />
 <h4 id="optional-prefer-dolby-vision">Optional - Prefer Dolby Vision<a class="headerlink" href="#optional-prefer-dolby-vision" title="Permanent link"></a></h4>
 <p>Add this to your <code>Preferred (3)</code> with a score of [1500]</p>
-<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dv<span class="p">|</span>dovi<span class="p">|</span>dolby<span class="o">[</span><span class="w"> </span>.<span class="o">]</span>?vision<span class="o">)</span><span class="se">\b</span>/i
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>dv<span class="p">|</span>dovi<span class="p">|</span>dolby<span class="o">[</span><span class="w"> </span>.<span class="o">]</span>?v<span class="o">(</span>ision<span class="o">)</span>?<span class="o">)</span><span class="se">\b</span>/i
 </code></pre></div>
 <hr />
 <h4 id="optional-dislike-retags">Optional - Dislike retags<a class="headerlink" href="#optional-dislike-retags" title="Permanent link"></a></h4>
@@ -3301,7 +3301,7 @@ create a new release profile specific for .su that uses the <a href="#optional-m
 <p>This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.</p>
 </details>
 <p>Add this to your <code>Must not contain (2)</code></p>
-<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="p">|</span>REMUX<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>-<span class="w"> </span>.<span class="o">]</span>?Vision<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
+<div class="highlight"><pre><span></span><code>/^<span class="o">(</span>?!.*<span class="o">(</span>HDR<span class="p">|</span>HULU<span class="p">|</span>REMUX<span class="o">))(</span>?<span class="o">=</span>.*<span class="se">\b</span><span class="o">(</span>DV<span class="p">|</span>Dovi<span class="p">|</span>Dolby<span class="o">[</span>-<span class="w"> </span>.<span class="o">]</span>?V<span class="o">(</span>ision<span class="o">)</span>?<span class="o">)</span><span class="se">\b</span><span class="o">)</span>.*/i
 </code></pre></div>
 <hr />
 <h4 id="optional-ignore-the-group-scene">Optional - Ignore The Group -SCENE<a class="headerlink" href="#optional-ignore-the-group-scene" title="Permanent link"></a></h4>
@@ -3412,7 +3412,7 @@ Also they often even rename the release name in to Portuguese.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 16, 2023 16:50:06</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 27, 2023 20:01:24</span>
       
     
   </small>

@@ -44,6 +44,15 @@
       }
     },
     {
+      "name": "IssouCorp",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(IssouCorp)\\b"
+      }
+    },
+    {
       "name": "KAF",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
