@@ -44,6 +44,15 @@
       }
     },
     {
+      "name": "kazuizui",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(kazuizui)\\b"
+      }
+    },
+    {
       "name": "KHAYA",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

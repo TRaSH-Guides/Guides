@@ -419,7 +419,7 @@ Add this to your `Preferred (3)` with a score of [500]
 Add this to your `Preferred (3)` with a score of [1500]
 
 ```bash
-/\b(dv|dovi|dolby[ .]?vision)\b/i
+/\b(dv|dovi|dolby[ .]?v(ision)?)\b/i
 ```
 
 ------
@@ -532,7 +532,7 @@ Add this to your `Preferred (3)` with a score of [15]
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?Vision)\b).*/i
+/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?V(ision)?)\b).*/i
 ```
 
 ------
