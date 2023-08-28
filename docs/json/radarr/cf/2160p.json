@@ -26,7 +26,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX)\\b|\\b(PQ)\\b|\\b(HLG)\\b"
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b|\\b(FraMeSToR|HQMUX)\\b|\\b(PQ)\\b|\\b(HLG)\\b"
       }
     },
     {
