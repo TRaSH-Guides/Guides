@@ -28,21 +28,22 @@ This is a program used to manage your qBittorrent instance and Arr instances
 Features
 
 - Monitor qBit for Stalled/bad entries and delete them then blacklist them on Arrs (Option to also trigger a re-search action).
-- Monitor qBit for completed entries and tell the appropriate Arr instance to import it ( 'DownloadedMoviesScan' or 'DownloadedEpisodesScan' commands).
+- Monitor qBit for completed entries and tell the appropriate Arr instance to import it:
+  - `qbitrr DownloadedMoviesScan` for Radarr
+  - `qbitrr DownloadedEpisodesScan` for Sonarr
 - Skip files in qBit entries by extension, folder or regex.
-- Monitor completed folder and cleans it up.
-- Uses ffprobe to ensure downloaded entries are valid media.
+- Monitor completed folder and clean it up.
+- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg) to ensure downloaded entries are valid media.
 - Trigger periodic Rss Syncs on the appropriate Arr instances.
 - Trigger Queue update on appropriate Arr instances.
-- Search requests from Overseerr or Ombi.
+- Search requests from [Overseerr](https://github.com/sct/overseerr) or [Ombi](https://github.com/Ombi-app/Ombi).
 - Auto add/remove trackers
 - Set per tracker values
-- Also supports Sonarr v4
-
-This section requires the Arr databases to be locally available.
-
-- Monitor Arr's databases to trigger missing episode searches.
-- Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).
+- **Sonarr v4 support**
+- **Radarr v4 and v5 support**
+- Available if provided with a Sonarr/Radarr database file:
+  - Monitor Arr's databases to trigger missing episode searches.
+  - Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).
 
 [Qbitrr](https://github.com/Feramance/Qbitrr){:target="_blank" rel="noopener noreferrer"}
 
