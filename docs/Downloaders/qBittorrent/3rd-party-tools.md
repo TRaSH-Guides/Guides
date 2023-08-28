@@ -21,7 +21,7 @@ This is a program used to manage your qBittorrent instance such as:
 
 ------
 
-## Qbitrr
+## qBitrr
 
 This is a program used to manage your qBittorrent instance and Arr instances
 
