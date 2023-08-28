@@ -36,7 +36,7 @@ Features
 - Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg) to ensure downloaded entries are valid media.
 - Trigger periodic Rss Syncs on the appropriate Arr instances.
 - Trigger Queue update on appropriate Arr instances.
-- Search requests from [Overseerr](https://github.com/sct/overseerr) or [Ombi](https://github.com/Ombi-app/Ombi).
+- Search requests from Overseerr or Ombi.
 - Auto add/remove trackers
 - Set per tracker values
 - **Sonarr v4 support**
