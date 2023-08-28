@@ -45,7 +45,7 @@ Features
   - Monitor Arr's databases to trigger missing episode searches.
   - Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).
 
-[Qbitrr](https://github.com/Feramance/Qbitrr){:target="_blank" rel="noopener noreferrer"}
+[qBitrr](https://github.com/Feramance/qBitrr){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
