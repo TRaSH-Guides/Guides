@@ -3062,7 +3062,7 @@ Remember these values for later use.</p>
 <h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h4>
 <p>qBittorrent, Deluge, ruTorrent</p>
 <p>The reason why we use <code>/data/torrents</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
-<!-- BEGIN INCLUDE docker-tree-torrents.md -->
+<!-- BEGIN INCLUDE ./docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
 └── torrents
      ├── books
@@ -3077,7 +3077,7 @@ Remember these values for later use.</p>
 <h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
 <p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/complete/{tv|movies|music}</code>.</p>
-<!-- BEGIN INCLUDE docker-tree-usenet.md -->
+<!-- BEGIN INCLUDE ./docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
     ├── incomplete
@@ -3094,7 +3094,7 @@ Remember these values for later use.</p>
 <h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h4>
 <p>Sonarr, Radarr, Readarr and Lidarr</p>
 <p>Sonarr, Radarr, Readarr and Lidarr gets access to everything using <code>/data</code> because the download folder(s) and media folder will look like and be one file system. Hardlinks will work and moves will be atomic, instead of copy + delete.</p>
-<!-- BEGIN INCLUDE docker-tree-full.md -->
+<!-- BEGIN INCLUDE ./docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3121,7 +3121,7 @@ Remember these values for later use.</p>
 <h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h4>
 <p>Plex, Emby, JellyFin and Bazarr</p>
 <p>Plex, Emby, JellyFin and Bazarr only needs access to your media library using <code>/data/media</code>, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
-<!-- BEGIN INCLUDE docker-tree-media.md -->
+<!-- BEGIN INCLUDE ./docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
 └── media
      ├── movies
