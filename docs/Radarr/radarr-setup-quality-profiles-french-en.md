@@ -103,6 +103,10 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
+!!! tip "Getting the movie name in French in the file and/or folder name"
+    Following the recommended naming scheme for your library, whether it's Plex, Jellyfin, or Emby, you can add the ISO-2 language code at the end of the movie name tag to display the movie name in the desired language.
+    The tag should look like the following: `{Movie CleanTitle:fr}`. This work in both Folder and File name.
+
 ------
 
 #### HD Bluray + WEB
