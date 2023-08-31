@@ -19,6 +19,15 @@
       }
     },
     {
+      "name": "MainFrame",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MainFrame)$"
+      }
+    },
+    {
       "name": "2160p",
       "implementation": "ResolutionSpecification",
       "negate": false,
