@@ -6,6 +6,7 @@
 - fix(french-starr): Include PAPAYA sub-groups into FR LQ CF (#1532)
 - fix(french-starr): Update Multi-Audio CF (#1531)
 - fix(radarr): add rlsgrp 41RGB to LQ (1533)
+- fix(radarr): SQP-1 boost audio scores DD, DDP and DDPA (#1506)
 - fix(radarr): SQP-1 workflow sentence if limited sources (1529)
 - fix(radarr): update flowchart for SQP-1 (#1512)
 - fix(sabnzbd) sabnzbd documentation updates (#1513)
