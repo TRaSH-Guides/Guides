@@ -3317,6 +3317,11 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <p class="admonition-title">Indexers renaming in Prowlarr</p>
 <p>Certains indexeurs dans Prowlarr peuvent renommer les versions <code>MULTi</code> en <code>MULTi.TRUEFRENCH</code> ou <code>MULTi.FRENCH</code>. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.</p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">MULTi definition per indexers</p>
+<p>Certains indexers dans Radarr vous permettront de choisir l'audio qui est normalement inclus dans une version <code>MULTi</code> en tant qu'option. Vous devriez choisir seulement <code>Original</code> et <code>French</code> si vous décidez de l'utiliser.
+Cette option ne devrait être utilisée que pour les indexers français où vous êtes sûr du fait que <code>MULTi</code> inclut à la fois l'audio <code>Original</code> et l'audio <code>Français</code>. L'utiliser avec des indexers plus "internationaux" peut créer un faux positif avec la recognaissance des CFs des versions françaises.</p>
+</div>
 </details>
 <details class="abstract">
 <summary>Versions françaises - [Cliquer pour afficher/masquer]</summary>
@@ -3545,6 +3550,11 @@ Also they often even rename the release name in to Portuguese.</li>
 
 <!-- END INCLUDE -->
 
+<div class="admonition tip">
+<p class="admonition-title">Obtenir le nom du film en français dans le nom du fichier et/ou du dossier</p>
+<p>En suivant le schéma de dénomination recommandé pour votre bibliothèque, qu'il s'agisse de Plex, Jellyfin ou Emby. Vous pouvez ajouter le code de langue ISO-2 à la fin de la balise du nom du film pour afficher le nom du film dans la langue souhaitée.
+La balise se présentera comme suit : <code>{Movie CleanTitle:fr}</code>. Cela fonctionne aussi bien pour les noms de dossiers que pour les noms de fichiers.</p>
+</div>
 <hr />
 <h4 id="hd-bluray-web">HD Bluray + WEB<a class="headerlink" href="#hd-bluray-web" title="Permanent link"></a></h4>
 <p>Si vous préférez les encodages HD de haute qualité (Bluray-720/1080p)</p>
@@ -6319,7 +6329,7 @@ Also they often even rename the release name in to Portuguese.</li>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 13, 2023 20:22:57</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 31, 2023 08:16:01</span>
       
     
   </small>
