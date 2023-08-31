@@ -17,6 +17,15 @@
       }
     },
     {
+      "name": "41RGB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(41RGB)$"
+      }
+    },
+    {
       "name": "4K4U",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
