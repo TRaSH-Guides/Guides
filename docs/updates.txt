@@ -1,7 +1,16 @@
-# 2023-08-31 TBD
-**[Updated]**
-
-**[New]**
+# 2023-08-31 17:15
+- docs(qbittorrent): Added Qbitrr as a 3rd party tool (#1522)
+- feat(docs): Add contributing requirements for tier groups (#1514)
+- feat(french-guide): Update French guide informations (#1530)
+- feat(starr-fr): French Guide Update (#1521)
+- fix(french-starr): Include PAPAYA sub-groups into FR LQ CF (#1532)
+- fix(french-starr): Update Multi-Audio CF (#1531)
+- fix(radarr): add rlsgrp 41RGB to LQ (1533)
+- fix(radarr): SQP-1 workflow sentence if limited sources (1529)
+- fix(radarr): update flowchart for SQP-1 (#1512)
+- fix(sabnzbd) sabnzbd documentation updates (#1513)
+- fix(starr): Match anime scores between docs and JSON (#1520)
+- fix(starr): remove rlsgrp CtrlHD from CF TrueHD Atmos (#1534)
 
 # 2023-08-16 16:55
 - feat(sonarr): Add SuccessfulCrab to Scene CF (#1504)
@@ -67,7 +76,7 @@
 
 # 2023-06-30 21:01
 **[Updated]**
-- [Starr] Update logic for identifiying Retags by EZTV 
+- [Starr] Update logic for identifiying Retags by EZTV
 
 # 2023-06-26 20:50
 **[Updated]**
@@ -139,7 +148,7 @@ If we will still get reports of download loops, even if they aren't in the Remux
 - [Starr] Repack CFs re-scored for Radarr/Sonarr to allow compatibility with new streaming service CF scores.
 - [Starr] Amended `Hybrid` CF to apply to Remuxes only.
 - [Sonarr] add `Miu` and `PHOENiX` to `WEB Tier 02`.
- 
+
 **[Fixed]**
 - [Starr] Match `PQ` in `x265 (no HDR/DV)`.
 
@@ -196,13 +205,13 @@ If we will still get reports of download loops, even if they aren't in the Remux
 
 **[Updated]**
 - [Starr] Add the `Max` CF to all the jsons and guides.
-- [Radarr] add RlsGrp `pahe` to `LQ`. 
+- [Radarr] add RlsGrp `pahe` to `LQ`.
 
 **[Fixed]**
 - [Radarr] Fix false positive matches on vs in movie titles for the `Vinegar Syndrome` CF.
 - [Sonarr] Lowered Minimum Quality file size for `HDTV-2160p`, `WEBRip-2160p` and `WEBDL-2160p`.
 - [qBittorrent - Port forwarding] Change listening port to TCP for consistence with main Qbt guide.
-- [Starr] Changed case of CF `Max` to `MAX` to be consistent with the other streaming services. 
+- [Starr] Changed case of CF `Max` to `MAX` to be consistent with the other streaming services.
 
 # 2023-05-18 12:00
 **[New]**
