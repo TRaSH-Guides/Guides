@@ -24,7 +24,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(ATMOS|CtrlHD|W4NK3R|DON)(\\b|\\d)"
+        "value": "\\b(ATMOS|W4NK3R|DON)(\\b|\\d)"
       }
     },
     {
