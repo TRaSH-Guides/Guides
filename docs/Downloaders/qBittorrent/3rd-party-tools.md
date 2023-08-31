@@ -33,7 +33,7 @@ Features
    - `qbitrr DownloadedEpisodesScan` for Sonarr
 - Skip files in qBit entries by extension, folder or regex.
 - Monitor completed folder and clean it up.
-- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg) to ensure downloaded entries are valid media.
+- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg){:target="_blank" rel="noopener noreferrer"} to ensure downloaded entries are valid media.
 - Trigger periodic Rss Syncs on the appropriate Arr instances.
 - Trigger Queue update on appropriate Arr instances.
 - Search requests from [Overseerr](https://github.com/sct/overseerr){:target="_blank" rel="noopener noreferrer"} or [Ombi](https://github.com/Ombi-app/Ombi){:target="_blank" rel="noopener noreferrer"}.
@@ -43,7 +43,9 @@ Features
 - **Radarr v4 and v5 support**
 - Available if provided with a Sonarr/Radarr database file:
    - Monitor Arr's databases to trigger missing episode searches.
-   - Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).
+   - Searches Radarr missing movies based on Minimum Availability
+   - Customizable searching by series or singular episodes
+   - Optionally searches year by year is ascending or descending order (config option available)
 
 [qBitrr](https://github.com/Feramance/qBitrr){:target="_blank" rel="noopener noreferrer"}
 
