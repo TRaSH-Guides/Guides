@@ -98,6 +98,10 @@ Ces Formats sont reconnus comme étant indispensables pour tous les Profils de Q
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
+!!! tip "Obtenir le nom du film en français dans le nom du fichier et/ou du dossier"
+    En suivant le schéma de dénomination recommandé pour votre bibliothèque, qu'il s'agisse de Plex, Jellyfin ou Emby. Vous pouvez ajouter le code de langue ISO-2 à la fin de la balise du nom du film pour afficher le nom du film dans la langue souhaitée.
+    La balise se présentera comme suit : `{Movie CleanTitle:fr}`. Cela fonctionne aussi bien pour les noms de dossiers que pour les noms de fichiers.
+
 ------
 
 #### HD Bluray + WEB

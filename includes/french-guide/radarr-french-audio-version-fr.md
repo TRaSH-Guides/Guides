@@ -17,6 +17,10 @@
     !!! tip "Indexers renaming in Prowlarr"
         Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.
 
+    !!! tip "MULTi definition per indexers"
+        Certains indexers dans Radarr vous permettront de choisir l'audio qui est normalement inclus dans une version `MULTi` en tant qu'option. Vous devriez choisir seulement `Original` et `French` si vous décidez de l'utiliser.
+        Cette option ne devrait être utilisée que pour les indexers français où vous êtes sûr du fait que `MULTi` inclut à la fois l'audio `Original` et l'audio `Français`. L'utiliser avec des indexers plus "internationaux" peut créer un faux positif avec la recognaissance des CFs des versions françaises.
+
 ??? abstract "Versions françaises - [Cliquer pour afficher/masquer]"
     | Formats Personnalisés                                                                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
