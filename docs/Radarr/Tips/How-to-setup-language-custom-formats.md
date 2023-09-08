@@ -175,7 +175,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ??? question "Where does Radarr get the Original Language from? - [Click to show/hide]"
 
-    Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}.
+    Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}. As of February 12, 2023, Radarr has updated its metadata cache to use a movie's spoken language from TMDb as the original language, but only when there is a single spoken language listed for that movie on TMDb. In cases where multiple spoken languages are listed, Radarr will use the movie's designated original language from TMDb.
 
     ![!The Movie Database (TMDB) Original Language](images/original-language-tmdb.png)
 
