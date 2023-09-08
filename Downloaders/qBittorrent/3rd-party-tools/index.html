@@ -2047,7 +2047,7 @@
       
         <li class="md-nav__item">
   <a href="#qbitrr" class="md-nav__link">
-    Qbitrr
+    qBitrr
   </a>
   
 </li>
@@ -3112,7 +3112,7 @@
       
         <li class="md-nav__item">
   <a href="#qbitrr" class="md-nav__link">
-    Qbitrr
+    qBitrr
   </a>
   
 </li>
@@ -3195,28 +3195,31 @@
 </ul>
 <p><a href="https://github.com/StuffAnThings/qbit_manage" rel="noopener noreferrer" target="_blank">qBit Manage</a></p>
 <hr />
-<h2 id="qbitrr">Qbitrr<a class="headerlink" href="#qbitrr" title="Permanent link"></a></h2>
+<h2 id="qbitrr">qBitrr<a class="headerlink" href="#qbitrr" title="Permanent link"></a></h2>
 <p>This is a program used to manage your qBittorrent instance and Arr instances</p>
 <p>Features</p>
 <ul>
 <li>Monitor qBit for Stalled/bad entries and delete them then blacklist them on Arrs (Option to also trigger a re-search action).</li>
-<li>Monitor qBit for completed entries and tell the appropriate Arr instance to import it ( 'DownloadedMoviesScan' or 'DownloadedEpisodesScan' commands).</li>
+<li>Monitor qBit for completed entries and tell the appropriate Arr instance to import it:</li>
+<li><code>qbitrr DownloadedMoviesScan</code> for Radarr</li>
+<li><code>qbitrr DownloadedEpisodesScan</code> for Sonarr</li>
 <li>Skip files in qBit entries by extension, folder or regex.</li>
-<li>Monitor completed folder and cleans it up.</li>
-<li>Uses ffprobe to ensure downloaded entries are valid media.</li>
+<li>Monitor completed folder and clean it up.</li>
+<li>Usage of <a href="https://github.com/FFmpeg/FFmpeg" rel="noopener noreferrer" target="_blank">ffprobe</a> to ensure downloaded entries are valid media.</li>
 <li>Trigger periodic Rss Syncs on the appropriate Arr instances.</li>
 <li>Trigger Queue update on appropriate Arr instances.</li>
-<li>Search requests from Overseerr or Ombi.</li>
+<li>Search requests from <a href="https://github.com/sct/overseerr" rel="noopener noreferrer" target="_blank">Overseerr</a> or <a href="https://github.com/Ombi-app/Ombi" rel="noopener noreferrer" target="_blank">Ombi</a>.</li>
 <li>Auto add/remove trackers</li>
 <li>Set per tracker values</li>
-<li>Also supports Sonarr v4</li>
-</ul>
-<p>This section requires the Arr databases to be locally available.</p>
-<ul>
+<li><strong>Sonarr v4 support</strong></li>
+<li><strong>Radarr v4 and v5 support</strong></li>
+<li>Available if provided with a Sonarr/Radarr database file:</li>
 <li>Monitor Arr's databases to trigger missing episode searches.</li>
-<li>Customizable year range to search for (at a later point will add more option here, for example search whole series/season instead of individual episodes, search by name, category etc).</li>
+<li>Searches Radarr missing movies based on Minimum Availability</li>
+<li>Customizable searching by series or singular episodes</li>
+<li>Optionally searches year by year is ascending or descending order (config option available)</li>
 </ul>
-<p><a href="https://github.com/Feramance/Qbitrr" rel="noopener noreferrer" target="_blank">Qbitrr</a></p>
+<p><a href="https://github.com/Feramance/qBitrr" rel="noopener noreferrer" target="_blank">qBitrr</a></p>
 <hr />
 <h2 id="qbittorrent-cli">qbittorrent-cli<a class="headerlink" href="#qbittorrent-cli" title="Permanent link"></a></h2>
 <p>A cli to manage qBittorrent. Add torrents, reannounce and import from other clients.</p>
@@ -3269,7 +3272,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 23, 2023 17:52:46</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 8, 2023 13:32:15</span>
       
     
   </small>
