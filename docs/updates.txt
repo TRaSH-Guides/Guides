@@ -1,3 +1,8 @@
+# 2023-09-11 18:15
+- [fix(radarr): copy /paste error in naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1549)
+- [fix(radarr): explain how original language is determined](https://github.com/TRaSH-Guides/Guides/pull/1543)
+- [fix(radarr): Word boundaries not applying to 3d regex](https://github.com/TRaSH-Guides/Guides/pull/1539)
+
 # 2023-09-01 10:45
 - [feat(radarr): Add MainFrame to UHD Bluray Tier 02 (#1537)](https://github.com/TRaSH-Guides/Guides/pull/1537)
 
