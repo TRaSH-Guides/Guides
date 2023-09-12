@@ -2,9 +2,9 @@
 
 Did you just setup Bazarr and are wondering which scoring you should use/setup for your subtitles and sync?
 
-I'll suggest a scoring that would work for most common languages. With this scoring, 99% of your downloaded subs should be the correct ones for your release.
+Below are suggested scorings that would work for most common languages. With this scoring, 99% of your downloaded subs should be the correct ones for your release.
 
-- Setting it too low could result in bad subs or onest that are completely out of sync or un-syncable.
+- Setting it too low could result in bad subs or ones that are completely out of sync or un-syncable.
 - Setting it too high could result in less subs.
 
 ## Sonarr Subtitle Minimum Score

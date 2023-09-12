@@ -6,7 +6,7 @@
 ------
 
 !!! Note
-    Settings that aren't covered means you can change them to your own liking or just leave them on default.
+    If a setting isn't covered, you can change it to your own liking or just leave it on default.
 
 ------
 
@@ -112,10 +112,10 @@ The best settings for this depends on many factors so I won't be covering this.
 
 ![!Proxy Server](images/qbt-options-connection-proxy-server.png)
 
-This is where you would add for example your SOCKS5 settings from your VPN provider.
+This is where you would add, for example, your SOCKS5 settings from your VPN provider.
 
 !!! success ""
-    **Suggested: `I personally don't recommend this unsecure option being it's un-encrypted and only spoofs your IP.`**
+    **Suggested: `I personally don't recommend this unsecure option, as it's un-encrypted and only spoofs your IP.`**
 
 ------
 
@@ -125,7 +125,7 @@ This is where you would add for example your SOCKS5 settings from your VPN provi
 
 ![!Global Rate Limits](images/qbt-options-speed-global-rate-limits.png)
 
-Here you can set your global rate limits, meaning your maximum download/upload speed used by qBittorrent. (For all torrents)
+Here you can set your global rate limits, meaning your maximum download/upload speed used by qBittorrent (for all torrents combined).
 
 The best settings depends on many factors.
 
@@ -179,17 +179,17 @@ Not going to cover the technical part of what it does, but the following setting
 
 ![!Privacy](images/qb-options-bittorrent-privacy.png)
 
-1. These settings are mainly used for public trackers (and should be enabled for them) and not for private trackers, decent private trackers use a private flag where they ignore these settings.
+1. These settings are mainly used for public trackers (and should be enabled for them) and not for private trackers; decent private trackers use a private flag, where they ignore these settings.
 
     !!! success ""
         **Suggested: `Personal preference`**
 
-1. Recommended setting `Allow encryption` rather than enforcing it allows more peers to connect and is recommended on underpowered systems as it will allow for lower overhead.
+1. Recommended setting `Allow encryption` (rather than `enforcing`). This allows more peers to connect and is recommended on underpowered systems, as it will allow for lower overhead.
 
     !!! success ""
         **Suggested: `Allow encryption`**
 
-1. Anonymous mode hides clients (qBittorrent) fingerprint from the peer-ID, sets the ‘User-Agent’ to Null and it doesn’t share your IP-address directly with trackers (though peers will still see your IP address). If using private trackers, it's recommended to `disable` this. I also got reports from people who are using this that they had worse speeds.
+1. Anonymous mode hides the client's (qBittorrent) fingerprint from the peer-ID, sets the ‘User-Agent’ to Null and it doesn’t share your IP-address directly with trackers (though peers will still see your IP address). If using private trackers, it's recommended to `disable` this. I also got reports from people who are using this that they had worse speeds.
 
     !!! success ""
         **Suggested: `Disabled`**

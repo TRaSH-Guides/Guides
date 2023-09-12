@@ -85,7 +85,7 @@ I will only explain the "most important" paths.
 ![!unpack](images/unpack.png)
 
 !!! info
-  `DirectUnpack`: This might lower your download speed, but the overall time could be faster. **Note:** Disable this on low powered devices.
+  `DirectUnpack`: This might lower your download speed, but the overall time could be faster. **Note:** Disable this on low-powered devices.
 
 ## EXTENSION SCRIPTS
 

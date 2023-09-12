@@ -1,6 +1,6 @@
 # Bazarr
 
-Here you will find several scripts you can use with Bazarr
+Here you will find several scripts you can use with Bazarr:
 
 ## Stable Bazarr Branch: master
 
