@@ -22,7 +22,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(ATMOS)(\\b|\\d)"
+        "value": "\\bATMOS(\\b|\\d)"
       }
     },
     {
