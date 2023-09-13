@@ -508,7 +508,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Pahe\\.(ph|in)\\b"
+        "value": "Pahe(\\.(ph|in))?\\b"
       }
     },
     {
