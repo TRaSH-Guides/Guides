@@ -73,15 +73,6 @@
       }
     },
     {
-      "name": "Not RlsGrp (Atmos Only)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "W4NK3R|HQMUX"
-      }
-    },
-    {
       "name": "Not TrueHD",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
