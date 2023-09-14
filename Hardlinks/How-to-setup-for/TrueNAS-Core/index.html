@@ -3263,7 +3263,7 @@
 <hr />
 <h2 id="configure-and-enable-nfs-service">Configure and enable NFS service<a class="headerlink" href="#configure-and-enable-nfs-service" title="Permanent link"></a></h2>
 <p>Navigate to Services and click the edit icon under <code>Actions</code> on the <code>NFS</code> row.</p>
-<p>Enabling <code>NFSv4</code> is optional, but I generally prefer it since NFSv4 has some improvements over NFSv3. Make sure to check <code>Allow non-root mount</code> under <code>Other Options</code>.</p>
+<p>Enabling <code>NFSv4</code> is optional. If you wish to do so you will need to ensure that your NAS and host are on the same domain (verify with <code>hostname -d</code>), otherwise you'll run into permission issues (indicated by <code>nobody:4294967294</code> when checking files). Alternatively, enable <code>NFSv3 ownership model for NFSv4</code> to avoid the domain requirements. Make sure to check <code>Allow non-root mount</code> under <code>Other Options</code>.</p>
 <p>One of the most important options here is the <code>Number of servers</code> setting. If you click on the help icon you'll see the help text for this setting, which indicates that you should keep this less than or equal to the number of CPUs reported by <code>sysctl -n kern.smp.cpus</code> to limit CPU context switching.</p>
 <p>Any other options are mostly up to your environment and you should consult standard TrueNAS support paths for assistance.</p>
 <p>Click <code>Save</code> once complete.</p>
@@ -3315,7 +3315,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 19, 2023 18:19:44</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 14, 2023 05:34:55</span>
       
     
   </small>
