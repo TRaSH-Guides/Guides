@@ -332,6 +332,15 @@
       }
     },
     {
+      "name": "jennaortega",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(jennaortega(UHD)?)$"
+      }
+    },
+    {
       "name": "JFF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
