@@ -85,33 +85,37 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 {{ sonarr['naming']['sonarr-naming']['series']['default'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010)`
 
-`The Series Title! (2010)`
-
-#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
+#### Optional Series Folder Format
 
 This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
-For Plex:
+##### Optional Plex
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010) {imdb-tt1520211}`
 
-`The Series Title! (2010) {imdb-tt1520211}`
+##### Optional Emby
 
-For Jellyfin/Emby:
+!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010)`
 
-`The Series Title! (2010) [tvdbid-tt1520211]`
+##### Optional Jellyfin
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['jellyfin'] }}
+```
+
+<small>RESULT:</small> `The Series Title! (2010) [tvdbid-tt1520211]`
 
 !!! tip
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
@@ -126,9 +130,7 @@ For this there's only one real option to use in my opinion.
 Season {season:00}
 ```
 
-RESULT:
-
-`Season 01`
+RESULT: `Season 01`
 
 ------
 

@@ -15,7 +15,7 @@ The Tokens not available in the release won't be used/shown.
 
 ## Standard Movie Format
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517) that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
+This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
 !!! warning "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
 
@@ -25,6 +25,8 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     !!! danger "Only use `{edition-{Edition Tags}}` if you are prepared to have movies separated by edition<br>when using a merged Plex library - e.g., you keep both 1080p and 2160p versions of one movie.<br><br>For example if you have the `Directors Cut` and the `Extended Cut` for one movie, those will show up as two separate movies in your library.<br><br>Note that not using `{edition-{Edition Tags}}` will prevent Plex from recognizing the edition."
 
+### Plex
+
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['default'] }}
 ```
@@ -33,17 +35,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
-For Jellyfin/Emby:
-
-```bash
-{{ radarr['naming']['radarr-naming']['file']['emby'] }}
-```
-
-??? abstract "RESULTS: - [Click to show/hide]"
-
-    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
-
-If you do Anime
+#### Plex Anime
 
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['anime'] }}
@@ -53,7 +45,19 @@ If you do Anime
 
     `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
-For Jellyfin/Emby:
+### Emby
+
+!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['emby'] }}
+```
+
+??? abstract "RESULTS: - [Click to show/hide]"
+
+    `The Movie Title (2010) - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+
+#### Emby Anime
 
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['anime-emby'] }}
@@ -61,7 +65,27 @@ For Jellyfin/Emby:
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
-    `The Movie Title (2010) [imdbid-tt0066921] {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+    `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
+
+### Jellyfin
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['jellyfin'] }}
+```
+
+??? abstract "RESULTS: - [Click to show/hide]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+
+#### Jellyfin Anime
+
+```bash
+{{ radarr['naming']['radarr-naming']['file']['anime-jellyfin'] }}
+```
+
+??? abstract "RESULTS: - [Click to show/hide]"
+
+    `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
 ------
 
@@ -99,9 +123,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
 {{ radarr['naming']['radarr-naming']['folder']['default'] }}
 ```
 
-RESULT:
-
-`The Movie Title (2010)`
+<small>RESULT:</small> `The Movie Title (2010)`
 
 ------
 
@@ -114,29 +136,35 @@ RESULT:
 
         TMDb is usually better as it guarantees a match, IMDb only gets matched if the TMDb entry has the correct IMDb ID association. We don't actually talk to IMDb.
 
-#### Optional Movies Folder Format for the Plex Movies Scanner and Jellyfin/Emby
+#### Optional Movies Folder Format
 
 This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
-For Plex:
+##### Optional Plex
 
 ```bash
 {{ radarr['naming']['radarr-naming']['folder']['plex'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Movie Title (2010) {imdb-tt1520211}`
 
-`The Movie Title (2010) {imdb-tt1520211}`
+##### Optional Emby
 
-For Jellyfin/Emby:
+!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
 
 ```bash
 {{ radarr['naming']['radarr-naming']['folder']['emby'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Movie Title (2010)`
 
-`The Movie Title (2010) [imdbid-tt1520211]`
+##### Optional Jellyfin
+
+```bash
+{{ radarr['naming']['radarr-naming']['folder']['jellyfin'] }}
+```
+
+<small>RESULT:</small> `The Movie Title (2010) [imdbid-tt1520211]`
 
 !!! tip
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
