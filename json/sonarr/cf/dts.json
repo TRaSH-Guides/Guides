@@ -4,6 +4,7 @@
   "trash_scores": {
     "default": 1250
   },
+  "trash_regex": "https://regex101.com/r/U1asQG/1",
   "name": "DTS",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
@@ -21,7 +22,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))\\b"
+              "value": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)"
           }
       },
       {
