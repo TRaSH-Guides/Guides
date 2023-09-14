@@ -6,6 +6,7 @@
     "sqp-1-1080p": -10000,
     "sqp-1-2160p": -10000
   },
+  "trash_regex": "https://regex101.com/r/U1asQG/1",
   "name": "DTS-HD MA",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -15,7 +16,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))\\b"
+        "value": "\\b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\\b|\\d)"
       }
     },
     {
