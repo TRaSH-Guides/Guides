@@ -35,6 +35,15 @@
       }
     },
     {
+      "name": "d3g",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(d3g)$"
+      }
+    },
+    {
       "name": "EVO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
