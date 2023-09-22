@@ -1,3 +1,6 @@
+# 2023-09-11 17:15
+- [fix(guides): Add Extras CF to Radarr HD/UHD unwanted](https://github.com/TRaSH-Guides/Guides/pull/1565)
+
 # 2023-09-11 18:15
 - [fix(radarr): copy /paste error in naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1549)
 - [fix(radarr): explain how original language is determined](https://github.com/TRaSH-Guides/Guides/pull/1543)
