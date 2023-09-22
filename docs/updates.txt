@@ -1,4 +1,4 @@
-# 2023-09-11 17:15
+# 2023-09-22 17:15
 - [fix(guides): Add Extras CF to Radarr HD/UHD unwanted](https://github.com/TRaSH-Guides/Guides/pull/1565)
 
 # 2023-09-11 18:15
