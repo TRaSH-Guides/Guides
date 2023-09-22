@@ -1183,6 +1183,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4736,6 +4743,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5714,7 +5728,7 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 </tr>
 <tr>
 <td><a href="#masters-of-cinema">Masters of Cinema</a></td>
-<td></td>
+<td><a href="#extras">Extras</a></td>
 <td><a href="#uhd-bluray-tier-03">UHD Bluray Tier 03</a></td>
 <td><a href="#hmax">HBO Max</a></td>
 </tr>
@@ -10016,6 +10030,38 @@ It's all really dependent on specific situations for different people</p>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(Up(s(caled?|UHD)|(Rez)))\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
+<h3 id="extras">Extras<a class="headerlink" href="#extras" title="Permanent link"></a></h3>
+<details class="question">
+<summary>Extras - [Click to show/hide]</summary>
+<p>This custom format is used to prevent Radarr from grabbing releases containing only extras/bonus material.</p>
+</details>
+<details class="example">
+<summary>JSON - [Click to show/hide]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0a3f082873eb454bde444150b70253cc&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_scores&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/nzK5TQ/1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Extras&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Extras&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(?&lt;=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus)\\b&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -20089,7 +20135,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 2, 2023 19:01:46</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 22, 2023 16:51:50</span>
       
     
   </small>
