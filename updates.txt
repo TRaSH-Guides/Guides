@@ -1,3 +1,13 @@
+# 2023-09-22 18:15
+- [fix(starr): Remove RlsGrps from CF TrueHD and TrueHD Atmos](https://github.com/TRaSH-Guides/Guides/pull/1553)
+- [fix(starr): inaccurate Pahe regex](https://github.com/TRaSH-Guides/Guides/pull/1554)
+- [feat(guides): revise truenas core NFSv4 section](https://github.com/TRaSH-Guides/Guides/pull/1555)
+- [feat(radarr): add jennaortega to LQ CF](https://github.com/TRaSH-Guides/Guides/pull/1557)
+- [fix(starr): DTS-HD MA regex and add example](https://github.com/TRaSH-Guides/Guides/pull/1560)
+- [fix(guide): tmp fix for emby naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1561)
+- [feat(sonarr): add d3g to LQ](https://github.com/TRaSH-Guides/Guides/pull/1562)
+- [fix(guides): Add Extras CF to Radarr HD/UHD unwanted](https://github.com/TRaSH-Guides/Guides/pull/1565)
+
 # 2023-09-11 18:15
 - [fix(radarr): copy /paste error in naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1549)
 - [fix(radarr): explain how original language is determined](https://github.com/TRaSH-Guides/Guides/pull/1543)
