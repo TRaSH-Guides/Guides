@@ -11,6 +11,7 @@ Using the following instructions you will be able to move the files with the use
     1. Resume the torrents once the mover is completed.
 
 !!! warning
+
     The screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
     - Always follow the data described in the guide.
@@ -31,12 +32,12 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener
 Install the following Plugins.
 
 - User Scripts
-- Nerd Tools
+- NerdTools
       - python3 <sup>(*1*)</sup>
       - python-setuptools <sup>(*1*)</sup>
       - python-pip <sup>(*1*)</sup>
 
-!!! info "<sup>(*1*)</sup> These needs to be installed from the Nerd Tools"
+!!! info "<sup>(*1*)</sup> These needs to be installed from the NerdTools."
 
 ------
 
