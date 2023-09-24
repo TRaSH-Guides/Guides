@@ -175,9 +175,9 @@ Copy/Paste in the new windows that opens the following bash command followed by 
 ```bash
 #!/bin/bash
 /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
-echo executing script to pause torrents and run mover.
+echo "executing script to pause torrents and run mover."
 /usr/bin/python3 /mnt/user/data/scripts/mover.py
-echo qbittorrent-mover completed and resumed all paused torrents.
+echo "qbittorrent-mover completed and resumed all paused torrents."
 /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
 ```
 
