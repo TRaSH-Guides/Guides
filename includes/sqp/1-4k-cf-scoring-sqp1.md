@@ -20,7 +20,7 @@
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
-    !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible.<br>The reason why `DTS` has a score of `0` is to make sure, that you don't limit yourself too much."
+    !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible.<br>The reason why `DTS` and `DTS-ES` have a score of `0` is to make sure that you don't limit yourself too much."
 
 ??? abstract "All HDR Formats + DV (WEBDL) - [Click to show/hide]"
     | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
