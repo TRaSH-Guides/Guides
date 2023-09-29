@@ -8,18 +8,19 @@ These are 3rd party applications to sync several sections of the guide with your
 | Radarr Custom Formats                                                              |     v     |     v     |
 | Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile |     v     |           |
 | Radarr predefined config files available                                           |           |     v     |
-| Radarr Clear all Custom Formats                                                    |     v     |           |
+| Radarr Clear all Custom Formats                                                    |     v     |     v     |
 | Radarr Scores                                                                      |     v     |     v     |
 | Radarr Quality Settings (File Size)                                                |     v     |     v     |
-| Radarr Naming Scheme                                                               |     v     |           |
+| Radarr Naming Scheme                                                               |     v     |     v     |
 | Radarr Quality Profiles                                                            |           |     v     |
 | Sonarr v3 Release Profile RegEx                                                    |     v     |     v     |
 | Sonarr v4 Custom Formats                                                           |     v     |     v     |
 | Sonarr v4 predefined config files available                                        |           |     v     |
-| Sonarr v3/v4 Clear all Release Profiles/Custom Formats                             |     v     |           |
+| Sonarr v3/v4 Clear all Release Profiles                                            |     v     |           |
+| Sonarr v3/v4 Clear all Custom Formats                                              |     v     |     v     |
 | Sonarr v3/v4 Scores                                                                |     v     |     v     |
 | Sonarr v3/v4 Quality Settings (File Size)                                          |     v     |     v     |
-| Sonarr v3/v4 Naming Scheme                                                         |     v     |           |
+| Sonarr v3/v4 Naming Scheme                                                         |     v     |     v     |
 | Sonarr v3/v4 Quality Profiles                                                      |           |     v     |
 
 ------
