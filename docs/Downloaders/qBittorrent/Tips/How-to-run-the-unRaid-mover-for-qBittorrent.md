@@ -11,6 +11,7 @@ Using the following instructions you will be able to move the files with the use
     1. Resume the torrents once the mover is completed.
 
 !!! warning
+
     The screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
     - Always follow the data described in the guide.
@@ -22,7 +23,7 @@ Using the following instructions you will be able to move the files with the use
 
 Download the following standalone script.
 
-- [Script](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}
+- [Script (mover.py)](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}
 
 Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
 
@@ -31,12 +32,12 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener
 Install the following Plugins.
 
 - User Scripts
-- Nerd Tools
+- NerdTools
       - python3 <sup>(*1*)</sup>
       - python-setuptools <sup>(*1*)</sup>
       - python-pip <sup>(*1*)</sup>
 
-!!! info "<sup>(*1*)</sup> These needs to be installed from the Nerd Tools"
+!!! info "<sup>(*1*)</sup> These needs to be installed from the NerdTools."
 
 ------
 
@@ -48,10 +49,11 @@ After you installed the needed Plugins it's time to configure everything.
 
 The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.
 
-You can choose from the following 2 options how you want to install it, depending what you preference.
+You can choose from the following 3 options how you want to install it, depending what you preference.
 
 - [User scripts](#user-scripts)
 - [Go File](#go-file)
+- [Python venv](#python-venv)
 
 #### User scripts
 
@@ -106,6 +108,41 @@ Restart your unRaid Server, or run the above command from the terminal.
 
 ------
 
+#### Python venv
+
+With this option we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disks to run and store isolated dependencies for this specific environment.
+
+By doing so, we **only need to setup this step once** and it will be persistent after reboots _(this differs from the previous steps)_.
+
+First, you need to choose a location to start a clear python environment.
+
+!!! info
+    In the next steps, you will be ask to choose a [location to place the script](#copy-script-to-your-preferred-location), try to be consistent.
+
+Suggestions:
+
+- `/mnt/user/appdata/qbittorrent/scripts/.venv`
+- `/mnt/user/data/scripts/.venv`
+
+Run the following command on Unraid terminal within the location you chose:
+
+```bash
+python3 -m venv --clear /mnt/user/data/scripts/.venv
+```
+
+We now need to enter into this new environment to install our dependencies (`qbittorrent-api`) on there, run:
+
+```bash
+source /mnt/user/data/scripts/.venv/bin/activate
+pip3 install qbittorrent-api
+deactivate # to leave the environment
+```
+
+!!! info
+    Replace the `/mnt/user/data/scripts/.venv` to the chosen path before.
+
+------
+
 ### Script
 
 Edit the script with your favorite editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) you downloaded at the beginning of the guide [HERE](#the-script).
@@ -146,8 +183,8 @@ Now it's time to place the script you just edited somewhere easy to access/remem
 
 Suggestions:
 
-- `/mnt/user/appdata/qbittorrent/scripts` (yes you need to create this folder your self)
-- `/mnt/user/data/scripts` (yes you need to create this folder your self)
+- `/mnt/user/appdata/qbittorrent/scripts/mover.py`
+- `/mnt/user/data/scripts/mover.py`
 
 #### Final steps
 
@@ -173,15 +210,23 @@ Copy/Paste in the new windows that opens the following bash command followed by 
 
 ```bash
 #!/bin/bash
+#source /mnt/user/data/scripts/.venv/bin/activate
 /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
-echo executing script to pause torrents and run mover.
-/usr/bin/python3 /mnt/user/data/scripts/mover.py
-echo qbittorrent-mover completed and resumed all paused torrents.
+echo "executing script to pause torrents and run mover."
+python3 /mnt/user/data/scripts/mover.py
+echo "qbittorrent-mover completed and resumed all paused torrents."
 /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
 ```
 
 !!! info
     Replace the `/mnt/user/data/scripts/mover.py` path to the path where you placed your python script.
+
+!!! danger
+
+    **Only** if you are using the [Python venv](#python-venv) method:
+
+      - Uncomment **line 2** (remove just the `#` character)
+      - Replace the `/mnt/user/data/scripts/.venv` part to the path where you created the python env, **keep the rest**
 
 ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
 
