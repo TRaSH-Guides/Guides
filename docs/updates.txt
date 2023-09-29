@@ -1,3 +1,8 @@
+# 2023-09-29 20:10
+- [feat(guides): Add Python venv method for the Qbt mover script](https://github.com/TRaSH-Guides/Guides/pull/1567)
+- [feat(guides): SQP-1 score change for DTS-ES Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1575)
+- [feat(guides): Update features list for Recyclarr](https://github.com/TRaSH-Guides/Guides/pull/1576)
+
 # 2023-09-22 18:15
 - [fix(starr): Remove RlsGrps from CF TrueHD and TrueHD Atmos](https://github.com/TRaSH-Guides/Guides/pull/1553)
 - [fix(starr): inaccurate Pahe regex](https://github.com/TRaSH-Guides/Guides/pull/1554)
