@@ -2151,6 +2151,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#python-venv" class="md-nav__link">
+    Python venv
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3214,6 +3221,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#python-venv" class="md-nav__link">
+    Python venv
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3306,14 +3320,14 @@
 <h3 id="the-script">The Script<a class="headerlink" href="#the-script" title="Permanent link"></a></h3>
 <p>Download the following standalone script.</p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py" rel="noopener noreferrer" target="_blank">Script</a></li>
+<li><a href="https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py" rel="noopener noreferrer" target="_blank">Script (mover.py)</a></li>
 </ul>
 <p>Big Thnx to <a href="https://github.com/bobokun" rel="noopener noreferrer" target="_blank">bobokun</a> Developer of <a href="https://github.com/StuffAnThings/qbit_manage" rel="noopener noreferrer" target="_blank">qBit Manage</a></p>
 <h3 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
 <p>Install the following Plugins.</p>
 <ul>
 <li>User Scripts</li>
-<li>Nerd Tools<ul>
+<li>NerdTools<ul>
 <li>python3 <sup>(<em>1</em>)</sup></li>
 <li>python-setuptools <sup>(<em>1</em>)</sup></li>
 <li>python-pip <sup>(<em>1</em>)</sup></li>
@@ -3321,17 +3335,18 @@
 </li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title"><sup>(<em>1</em>)</sup> These needs to be installed from the Nerd Tools</p>
+<p class="admonition-title"><sup>(<em>1</em>)</sup> These needs to be installed from the NerdTools.</p>
 </div>
 <hr />
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"></a></h2>
 <p>After you installed the needed Plugins it's time to configure everything.</p>
 <h3 id="qbit-api">qBit API<a class="headerlink" href="#qbit-api" title="Permanent link"></a></h3>
 <p>The script needs the qBit API to work, so we need to make sure it's installed when your unRaid server is booted or when the Array is started the first time.</p>
-<p>You can choose from the following 2 options how you want to install it, depending what you preference.</p>
+<p>You can choose from the following 3 options how you want to install it, depending what you preference.</p>
 <ul>
 <li><a href="#user-scripts">User scripts</a></li>
 <li><a href="#go-file">Go File</a></li>
+<li><a href="#python-venv">Python venv</a></li>
 </ul>
 <h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link"></a></h4>
 <p>With this option we're going to install the qBit API when the Array is started the first time.</p>
@@ -3359,6 +3374,32 @@ pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 <div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 </code></pre></div>
 <p>Restart your unRaid Server, or run the above command from the terminal.</p>
+<hr />
+<h4 id="python-venv">Python venv<a class="headerlink" href="#python-venv" title="Permanent link"></a></h4>
+<p>With this option we're going to create a <a href="https://docs.python.org/3/library/venv.html">Python virtual environment</a> on our disks to run and store isolated dependencies for this specific environment.</p>
+<p>By doing so, we <strong>only need to setup this step once</strong> and it will be persistent after reboots <em>(this differs from the previous steps)</em>.</p>
+<p>First, you need to choose a location to start a clear python environment.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In the next steps, you will be ask to choose a <a href="#copy-script-to-your-preferred-location">location to place the script</a>, try to be consistent.</p>
+</div>
+<p>Suggestions:</p>
+<ul>
+<li><code>/mnt/user/appdata/qbittorrent/scripts/.venv</code></li>
+<li><code>/mnt/user/data/scripts/.venv</code></li>
+</ul>
+<p>Run the following command on Unraid terminal within the location you chose:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>--clear<span class="w"> </span>/mnt/user/data/scripts/.venv
+</code></pre></div>
+<p>We now need to enter into this new environment to install our dependencies (<code>qbittorrent-api</code>) on there, run:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/mnt/user/data/scripts/.venv/bin/activate
+pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
+deactivate<span class="w"> </span><span class="c1"># to leave the environment</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Replace the <code>/mnt/user/data/scripts/.venv</code> to the chosen path before.</p>
+</div>
 <hr />
 <h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h3>
 <p>Edit the script with your favorite editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) you downloaded at the beginning of the guide <a href="#the-script">HERE</a>.</p>
@@ -3396,8 +3437,8 @@ pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 <p>Now it's time to place the script you just edited somewhere easy to access/remember.</p>
 <p>Suggestions:</p>
 <ul>
-<li><code>/mnt/user/appdata/qbittorrent/scripts</code> (yes you need to create this folder your self)</li>
-<li><code>/mnt/user/data/scripts</code> (yes you need to create this folder your self)</li>
+<li><code>/mnt/user/appdata/qbittorrent/scripts/mover.py</code></li>
+<li><code>/mnt/user/data/scripts/mover.py</code></li>
 </ul>
 <h4 id="final-steps">Final steps<a class="headerlink" href="#final-steps" title="Permanent link"></a></h4>
 <p>Now it's time to setup the scheduler when the mover should run.</p>
@@ -3411,15 +3452,24 @@ pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png" /></a></p>
 <p>Copy/Paste in the new windows that opens the following bash command followed by <code>SAVE CHANGES</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1">#source /mnt/user/data/scripts/.venv/bin/activate</span>
 /usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;qBittorrent Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;qBittorrent Mover starting @ `date +%H:%M:%S`.&quot;</span>
-<span class="nb">echo</span><span class="w"> </span>executing<span class="w"> </span>script<span class="w"> </span>to<span class="w"> </span>pause<span class="w"> </span>torrents<span class="w"> </span>and<span class="w"> </span>run<span class="w"> </span>mover.
-/usr/bin/python3<span class="w"> </span>/mnt/user/data/scripts/mover.py
-<span class="nb">echo</span><span class="w"> </span>qbittorrent-mover<span class="w"> </span>completed<span class="w"> </span>and<span class="w"> </span>resumed<span class="w"> </span>all<span class="w"> </span>paused<span class="w"> </span>torrents.
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;executing script to pause torrents and run mover.&quot;</span>
+python3<span class="w"> </span>/mnt/user/data/scripts/mover.py
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;qbittorrent-mover completed and resumed all paused torrents.&quot;</span>
 /usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;qBittorrent Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;qBittorrent Mover completed @ `date +%H:%M:%S`.&quot;</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Replace the <code>/mnt/user/data/scripts/mover.py</code> path to the path where you placed your python script.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>Only</strong> if you are using the <a href="#python-venv">Python venv</a> method:</p>
+<ul>
+<li>Uncomment <strong>line 2</strong> (remove just the <code>#</code> character)</li>
+<li>Replace the <code>/mnt/user/data/scripts/.venv</code> part to the path where you created the python env, <strong>keep the rest</strong></li>
+</ul>
 </div>
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-qbit-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-qbit-mover.png" /></a></p>
 <p>Select in the schedule list when the script should run, and choose <code>Custom</code></p>
@@ -3440,7 +3490,7 @@ pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 31, 2023 05:26:32</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 29, 2023 19:27:45</span>
       
     
   </small>
