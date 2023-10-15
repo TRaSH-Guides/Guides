@@ -55,15 +55,6 @@
       }
     },
     {
-      "name": "Not SDR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bSDR\\b"
-      }
-    },
-    {
       "name": "Not WEBDL",
       "implementation": "SourceSpecification",
       "negate": true,
