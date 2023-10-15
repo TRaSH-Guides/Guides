@@ -24,3 +24,4 @@
     | [{{ sonarr['cf']['ovid']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#ovid)     | {{ sonarr['cf']['ovid']['trash_scores']['default'] }} | {{ sonarr['cf']['ovid']['trash_id'] }}   |
     | [{{ sonarr['cf']['fod']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fod)       |                           0                           | {{ sonarr['cf']['fod']['trash_id'] }}    |
     | [{{ sonarr['cf']['tver']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#tver)     |                           0                           | {{ sonarr['cf']['tver']['trash_id'] }}   |
+    | [{{ sonarr['cf']['u-next']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#u-next) |                           0                           | {{ sonarr['cf']['u-next']['trash_id'] }} |

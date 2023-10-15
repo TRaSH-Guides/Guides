@@ -75,6 +75,7 @@ I also made 3 guides related to this one.
 |                       |                       |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
 |                       |                       |                                         | [FOD](#fod)                                 |
 |                       |                       |                                         | [TVer](#tver)                               |
+|                       |                       |                                         | [U-NEXT](#u-next)                           |
 
 ------
 
@@ -1860,6 +1861,25 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### U-NEXT
+
+<sub>U-NEXT</sub>
+
+??? question "U-NEXT - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
+    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
