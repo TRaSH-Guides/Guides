@@ -1,3 +1,9 @@
+# 2023-10-15 16:15
+- [feat(radarr): add RlsGrp LoRD to HD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1586)
+- [fix(radarr): Remove RlsGrp SLOT from CF LQ](https://github.com/TRaSH-Guides/Guides/pull/1585)
+- [fix(starr): add RlsGrp BlackBit to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1584)
+- [fix(starr): BR-DISK CF regex](https://github.com/TRaSH-Guides/Guides/pull/1578)
+
 # 2023-09-29 20:10
 - [feat(guides): Add Python venv method for the Qbt mover script](https://github.com/TRaSH-Guides/Guides/pull/1567)
 - [feat(guides): SQP-1 score change for DTS-ES Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1575)
