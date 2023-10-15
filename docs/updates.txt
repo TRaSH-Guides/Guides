@@ -1,3 +1,7 @@
+# 2023-10-15 19:00
+- [fix:(radarr): Remove SDR condition from UHD Bluray Tier 1-3](https://github.com/TRaSH-Guides/Guides/pull/1589)
+- [feat (Guides): Added new qBittorrent Tips page for known working themes](https://github.com/TRaSH-Guides/Guides/pull/1587)
+
 # 2023-10-15 16:15
 - [feat(radarr): add RlsGrp LoRD to HD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1586)
 - [fix(radarr): Remove RlsGrp SLOT from CF LQ](https://github.com/TRaSH-Guides/Guides/pull/1585)
