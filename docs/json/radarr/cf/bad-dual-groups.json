@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "BlackBit",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BlackBit)$"
+      }
+    },
+    {
       "name": "BNd",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
