@@ -37,6 +37,15 @@
       }
     },
     {
+      "name": "LoRD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LoRD)$"
+      }
+    },
+    {
       "name": "playHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
