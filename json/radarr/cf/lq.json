@@ -620,15 +620,6 @@
       }
     },
     {
-      "name": "SLOT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SLOT)$"
-      }
-    },
-    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
