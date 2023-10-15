@@ -1,0 +1,35 @@
+{
+  "trash_id": "f1b0bae9bc222dab32c1b38b5a7a1088",
+  "trash_regex": "https://regex101.com/r/ZdWC9D/1",
+  "name": "TVer",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "TVer",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(tver)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

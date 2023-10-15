@@ -67,6 +67,7 @@ I also made 3 guides related to this one.
 |                                               |                       |                                           | [Crave](#crav)             |
 |                                               |                       |                                           | [OViD](#ovid)              |
 |                                               |                       |                                           | [FOD](#fod)                |
+|                                               |                       |                                           | [TVer](#tver)              |
 
 ------
 
@@ -1969,6 +1970,25 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### TVer
+
+<sub>TVer</sub>
+
+??? question "TVer - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
