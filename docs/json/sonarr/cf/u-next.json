@@ -1,5 +1,9 @@
 {
   "trash_id": "0e99e7cc719a8a73b2668c3a0c3fe10c",
+  "trash_score": 50,
+  "trash_scores": {
+    "default": 50
+  },
   "trash_regex": "https://regex101.com/r/eQuNMO/1",
   "name": "U-NEXT",
   "includeCustomFormatWhenRenaming": true,
