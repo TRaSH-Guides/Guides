@@ -2466,7 +2466,7 @@ I also made 3 guides related to this one.
 
 ------
 
-### VFQ
+### VOQ
 
 ??? question "VOQ - [Click to show/hide]"
 
