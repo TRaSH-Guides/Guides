@@ -86,12 +86,12 @@ I also made 3 guides related to this one.
 | [x264](#x264)                  | [Retags](#retags)                   | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
 | [x265](#x265)                  | [Scene](#scene)                     | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
 |                                | [Season Packs](#season-pack)        | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
-|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                               |
-|                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                               |
-|                                | [VP9](#vp9)                         |                               |                                               |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [SDR](#sdr)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+|                                | [DV (FEL)](#dv-fel)                 | [VOSTFR](#vostfr)             |                                               |
+|                                | [HFR](#hfr)                         | [FanSUB](#fansub)             |                                               |
+|                                | [VP9](#vp9)                         | [FastSUB](#fastsub)           |                                               |
 
 ------
 
@@ -2460,6 +2460,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VFQ
+
+??? question "VOQ - [Click to show/hide]"
+
+    Quebec Original Version.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-voq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
