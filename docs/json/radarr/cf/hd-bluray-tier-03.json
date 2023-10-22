@@ -53,6 +53,15 @@
       "fields": {
         "value": "^(playHD)$"
       }
+    },
+    {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
     }
   ]
 }
