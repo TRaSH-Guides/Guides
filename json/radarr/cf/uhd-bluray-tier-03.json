@@ -3,6 +3,7 @@
   "trash_score": 1700,
   "trash_scores": {
     "default": 1700,
+    "sqp-1-2160p": 1000,
     "sqp-2": 2100,
     "sqp-5": 2100
   },
@@ -25,6 +26,15 @@
       "required": false,
       "fields": {
         "value": "^(SPHD)$"
+      }
+    },
+    {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
       }
     },
     {
