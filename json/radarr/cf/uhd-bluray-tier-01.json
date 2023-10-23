@@ -11,42 +11,6 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "CtrlHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CtrlHD)$"
-      }
-    },
-    {
-      "name": "DON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DON)$"
-      }
-    },
-    {
-      "name": "W4NK3R",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(W4NK3R)$"
-      }
-    },
-    {
-      "name": "2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
       "name": "Not REMUX",
       "implementation": "QualityModifierSpecification",
       "negate": true,
@@ -71,6 +35,42 @@
       "required": true,
       "fields": {
         "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "CtrlHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CtrlHD)$"
+      }
+    },
+    {
+      "name": "DON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DON)$"
+      }
+    },
+    {
+      "name": "W4NK3R",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W4NK3R)$"
       }
     }
   ]

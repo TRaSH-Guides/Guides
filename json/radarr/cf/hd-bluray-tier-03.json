@@ -37,6 +37,33 @@
       }
     },
     {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
+    },
+    {
+      "name": "BiTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiTOR)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
       "name": "LoRD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -55,12 +82,12 @@
       }
     },
     {
-      "name": "BHDStudio",
+      "name": "SPHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BHDStudio)$"
+        "value": "^(SPHD)$"
       }
     }
   ]
