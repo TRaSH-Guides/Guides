@@ -11,6 +11,24 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
       "name": "LEGi0N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -26,15 +44,6 @@
       "required": false,
       "fields": {
         "value": "^(SPHD)$"
-      }
-    },
-    {
-      "name": "BHDStudio",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BHDStudio)$"
       }
     },
     {
