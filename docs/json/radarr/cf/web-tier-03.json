@@ -9,6 +9,24 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
       "name": "GNOMiSSiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -60,24 +78,6 @@
       "required": false,
       "fields": {
         "value": "^(SwAgLaNdEr)$"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
       }
     }
   ]
