@@ -89,15 +89,6 @@
       }
     },
     {
-      "name": "BiTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BiTOR)$"
-      }
-    },
-    {
       "name": "C4K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
