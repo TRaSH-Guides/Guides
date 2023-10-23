@@ -11,6 +11,42 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
       "name": "BHDStudio",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -53,42 +89,6 @@
       "required": false,
       "fields": {
         "value": "^(WEBDV)$"
-      }
-    },
-    {
-      "name": "2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
-      "name": "Not REMUX",
-      "implementation": "QualityModifierSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    },
-    {
-      "name": "Not WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "Not WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 8
       }
     }
   ]

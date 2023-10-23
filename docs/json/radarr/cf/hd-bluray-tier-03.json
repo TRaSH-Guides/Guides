@@ -10,6 +10,33 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
       "name": "BHDStudio",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -61,33 +88,6 @@
       "required": false,
       "fields": {
         "value": "^(SPHD)$"
-      }
-    },
-    {
-      "name": "BLURAY",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 9
-      }
-    },
-    {
-      "name": "Not REMUX",
-      "implementation": "QualityModifierSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    },
-    {
-      "name": "Not 2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 2160
       }
     }
   ]
