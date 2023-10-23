@@ -1,0 +1,17 @@
+{
+  "trash_id": "f7caa1942be5cc547c266bd3dbc2cda9",
+  "trash_regex": "https://regex101.com/r/FKCBzs/1",
+  "name": "VOQ",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Quebec Original Version",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(VOQ)\\b"
+      }
+    }
+  ]
+}

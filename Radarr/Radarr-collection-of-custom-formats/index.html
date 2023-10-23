@@ -1876,6 +1876,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#voq" class="md-nav__link">
+    VOQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vq" class="md-nav__link">
     VQ
   </a>
@@ -5520,6 +5527,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#voq" class="md-nav__link">
+    VOQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vq" class="md-nav__link">
     VQ
   </a>
@@ -5951,37 +5965,37 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <tr>
 <td></td>
 <td><a href="#x265-no-hdrdv">x265 (no HDR/DV)</a></td>
-<td><a href="#vq">VQ</a></td>
+<td><a href="#voq">VOQ</a></td>
 <td><a href="#fr-scene-groups">FR Scene Groups</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#av1">AV1</a></td>
-<td><a href="#vfb">VFB</a></td>
+<td><a href="#vq">VQ</a></td>
 <td><a href="#fr-lq">FR LQ</a></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#sdr">SDR</a></td>
-<td><a href="#vostfr">VOSTFR</a></td>
+<td><a href="#vfb">VFB</a></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#dv-fel">DV (FEL)</a></td>
-<td><a href="#fansub">FanSUB</a></td>
+<td><a href="#vostfr">VOSTFR</a></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#linemic-dubbed">Line/Mic Dubbed</a></td>
-<td><a href="#fastsub">FastSUB</a></td>
+<td><a href="#fansub">FanSUB</a></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><a href="#hfr">HFR</a></td>
-<td></td>
+<td><a href="#fastsub">FastSUB</a></td>
 <td></td>
 </tr>
 <tr>
@@ -18776,6 +18790,34 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
+<h3 id="voq">VOQ<a class="headerlink" href="#voq" title="Permanent link"></a></h3>
+<details class="question">
+<summary>VOQ - [Click to show/hide]</summary>
+<p>Quebec Original Version.</p>
+</details>
+<details class="example">
+<summary>JSON - [Click to show/hide]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f7caa1942be5cc547c266bd3dbc2cda9&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/FKCBzs/1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VOQ&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Quebec Original Version&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(VOQ)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></p>
+<hr />
 <h3 id="vq">VQ<a class="headerlink" href="#vq" title="Permanent link"></a></h3>
 <details class="question">
 <summary>VQ - [Click to show/hide]</summary>
@@ -20264,7 +20306,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 22, 2023 16:51:50</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 23, 2023 18:35:58</span>
       
     
   </small>
