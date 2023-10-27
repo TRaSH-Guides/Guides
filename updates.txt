@@ -1,3 +1,6 @@
+# 2023-10-27 20:45
+- [fix(french-starr): remove non-French Language conditions in the French Audio CF](https://github.com/TRaSH-Guides/Guides/pull/1611)
+
 # 2023-10-23 18:45
 - [feat (guides): Add BHDStudio to HD/UHD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1604)
 - [feat(French-Starr): add VOQ (Version Originale Québecoise | Quebec Original Version) CF](https://github.com/TRaSH-Guides/Guides/pull/1599)
