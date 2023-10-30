@@ -50,6 +50,7 @@ services:
       - /data/media:/data/media
   sabnzbd:
     container_name: sabnzbd
+    hostname: sabnzbd
     image: cr.hotio.dev/hotio/sabnzbd:latest
     restart: unless-stopped
     logging:
