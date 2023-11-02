@@ -82,9 +82,10 @@ I also made 3 guides related to this one.
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         | [VFB](#vfb)                   |                                                 |
-|                                | [DV (FEL)](#dv-fel)                 | [VOSTFR](#vostfr)             |                                                 |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FanSUB](#fansub)             |                                                 |
-|                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                                 |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                                 |
+|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
+|                                | [HFR](#hfr)                         |                               |                                                 |
 |                                | [VP9](#vp9)                         |                               |                                                 |
 
 ------
@@ -1248,12 +1249,28 @@ I also made 3 guides related to this one.
 
 ??? question "SDR - [Click to show/hide]"
 
-    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+    - This will prevent grabbing UHD/4k releases without HDR Formats.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SDR (no WEBDL)
+
+??? question "SDR (no WEBDL) - [Click to show/hide]"
+
+    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
