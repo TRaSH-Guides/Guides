@@ -10,7 +10,7 @@
 
 ## Open Questions and Pre-Merge TODOs
 
-<!-- - [ ] Use GitHub checklists. When solved, check the box and explain the answer.
+<!-- - [ ] Use GitHub checklists. When solved, check the box and explain the answer. -->
 
 <!-- ## Learning
 
