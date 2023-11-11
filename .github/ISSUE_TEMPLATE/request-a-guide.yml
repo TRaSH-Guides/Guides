@@ -1,5 +1,5 @@
 name: Request a Guide
-description: Request a Guide here
+description: Request a Guide here (This is only for new Guide requests, not for changes to existing guides, custom formats etc, if you are unsure please check out the Discord server first.)
 title: "[Request]"
 labels: ["Type: Guide Request", "Status: Triage Needed"]
 body:
