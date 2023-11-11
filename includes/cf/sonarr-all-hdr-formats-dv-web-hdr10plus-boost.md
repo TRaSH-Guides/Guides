@@ -1,8 +1,12 @@
 ??? abstract "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf/dv-info.md" !}
+    **Why would i choose this HDR formats ?**
 
-    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
+    - Not all devices in your chain support Dolby Vision.
+    - You share your media library with other family members that don't have Dolby Vision compatible devices.
+    - You have a (Samsung) TV that supports HDR10+.
+
+    {! include-markdown "../../includes/cf/dv-info.md" !}
 
     | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
@@ -19,6 +23,4 @@
     | [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl)               |    {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }}     | {{ sonarr['cf']['dv-webdl']['trash_id'] }}        |
     | [{{ sonarr['cf']['hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost) | {{ sonarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ sonarr['cf']['hdr10plus-boost']['trash_id'] }} |
 
-
-    !!! tip
-        If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it)), It is important to also add the [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }}
+    {! include-markdown "../../includes/cf/sonarr-dv-tip-dv-webdl.md" !}

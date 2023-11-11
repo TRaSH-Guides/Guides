@@ -131,7 +131,11 @@ Si vous préférez les 2160p WEBDL (WEB-2160p)
 
 Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR, le 2160p sans DV/HDR ne représente qu'un bénéfice minime.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
 

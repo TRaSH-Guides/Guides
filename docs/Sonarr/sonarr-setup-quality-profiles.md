@@ -121,7 +121,11 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
@@ -151,6 +155,10 @@ Use the following main settings in your profile.
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
 ------
+
+## Custom Format Groups
+
+Description will follow
 
 ### HDR Formats
 
