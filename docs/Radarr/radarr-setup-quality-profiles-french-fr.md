@@ -154,7 +154,11 @@ Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
@@ -238,7 +242,11 @@ Si vous préférez les Remuxes en 2160p (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 

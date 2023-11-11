@@ -2,7 +2,11 @@
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
