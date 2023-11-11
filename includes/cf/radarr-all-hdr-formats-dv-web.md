@@ -21,5 +21,4 @@
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     |      {{ radarr['cf']['hlg']['trash_scores']['default'] }}      | {{ radarr['cf']['hlg']['trash_id'] }}           |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)           |   {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-webdl']['trash_id'] }}      |
 
-
-    {! include-markdown "../../includes/cf/dv-tip-dv-webdl.md" !}
+    {! include-markdown "../../includes/cf/radarr-dv-tip-dv-webdl.md" !}

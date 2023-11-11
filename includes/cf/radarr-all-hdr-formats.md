@@ -20,4 +20,4 @@
     | [{{ radarr['cf']['pq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pq)                       |      {{ radarr['cf']['pq']['trash_scores']['default'] }}       | {{ radarr['cf']['pq']['trash_id'] }}            |
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     |      {{ radarr['cf']['hlg']['trash_scores']['default'] }}      | {{ radarr['cf']['hlg']['trash_id'] }}           |
 
-    {! include-markdown "../../includes/cf/dv-tip-dv-webdl.md" !}
+    {! include-markdown "../../includes/cf/radarr-dv-tip-dv-webdl.md" !}

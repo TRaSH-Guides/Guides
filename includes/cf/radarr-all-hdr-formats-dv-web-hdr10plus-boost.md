@@ -23,5 +23,4 @@
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)               |    {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}     | {{ radarr['cf']['dv-webdl']['trash_id'] }}        |
     | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost) | {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }} |
 
-    !!! tip
-        If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it)), It is important to also add the [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}
+    {! include-markdown "../../includes/cf/radarr-dv-tip-dv-webdl.md" !}
