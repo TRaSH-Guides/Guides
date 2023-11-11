@@ -1,8 +1,12 @@
 ??? abstract "All HDR Formats + DV (WEBDL) + HDR10+ Boost - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf/dv-info.md" !}
+    **Why would i choose this HDR formats ?**
 
-    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
+    - Not all devices in your chain support Dolby Vision.
+    - You share your media library with other family members that don't have Dolby Vision compatible devices.
+    - You have a (Samsung) TV that supports HDR10+.
+
+    {! include-markdown "../../includes/cf/dv-info.md" !}
 
     | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |

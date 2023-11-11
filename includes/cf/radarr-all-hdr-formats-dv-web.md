@@ -1,8 +1,11 @@
 ??? abstract "All HDR Formats + DV (WEBDL) - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf/dv-info.md" !}
+    **Why would i choose this HDR formats ?**
 
-    ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
+    - Not all devices in your chain support Dolby Vision.
+    - You share your media library with other family members that don't have Dolby Vision compatible devices.
+
+    {! include-markdown "../../includes/cf/dv-info.md" !}
 
     | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
@@ -18,5 +21,6 @@
     | [{{ radarr['cf']['hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hlg)                     |      {{ radarr['cf']['hlg']['trash_scores']['default'] }}      | {{ radarr['cf']['hlg']['trash_id'] }}           |
     | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)           |   {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-webdl']['trash_id'] }}      |
 
-    !!! tip
-        If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add **ALL** the HDR Formats listed above (including **ALL** the DV ones (with and without HDR in it)), It is important to also add the [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl) Custom Format with a score of {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}
+
+    {! include-markdown "../../includes/cf/dv-tip-dv-webdl.md" !}
+

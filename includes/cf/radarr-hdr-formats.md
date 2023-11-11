@@ -1,5 +1,8 @@
 ??? abstract "All HDR Formats - [Click to show/hide]"
 
+    - You have a setup that supports Dolby Vision.
+    - You share your media library with other family members that also have have Dolby Vision compatible devices.
+
     {! include-markdown "../../includes/cf/dv-info.md" !}
 
     ![!HDR Formats Flowchart](/Radarr/images/flowchart-hdr-formats.png)
