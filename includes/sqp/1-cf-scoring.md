@@ -59,4 +59,4 @@
 
 {! include-markdown "../../includes/sqp/hd-radarr-resolution.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+{! include-markdown "../../includes/sqp/1-streaming-services.md" !}
