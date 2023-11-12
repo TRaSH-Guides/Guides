@@ -73,7 +73,6 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 ```json
 {
   "trash_id": "HASHCODE",
-  "trash_score": 50,
   "trash_scores": {
     "default": 50,
     "some_other_profile": 100
@@ -87,10 +86,11 @@ General Structure
 
 - json file name - name of the [json file](#file-naming)
 - `trash_id` - Generated [HashCode](#hashcode) for the Custom Format
-- `trash_score` - (Legacy) [Default Score for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_score`
-- `trash_scores` - (New) Json object of [score(s) for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_scores.default`
+- `trash_scores` - Json object of [score(s) for the Custom Format](#scoring). Note that Custom
+  Formats with Default Scores of 0 should NOT have a `trash_scores.default`
 - `trash_regex` - Link to [regex test cases](#regex-test-cases) for regex
-- STARRJSONEXPORT - The exported custom format created within Starr. Note that this will have a leading `{` that will need to have the `trash` specific regex added after
+- STARRJSONEXPORT - The exported custom format created within Starr. Note that this will have a
+  leading `{` that will need to have the `trash` specific regex added after
 
 ### File Naming
 
@@ -123,11 +123,10 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 
 ### Scoring
 
-- Scores must be added both as a single value under (legacy) `trash_score` and as JSON objects under `trash_scores`, for example:
+- Scores must be added as JSON objects under `trash_scores`, for example:
 
 ```json
 {
-  "trash_score": 50,
   "trash_scores": {
     "default": 50,
     "some_other_profile": 100
@@ -136,9 +135,7 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 ```
 
 - This allows for Custom Formats to be assigned different scores for different profiles
-- The `trash_score` value MUST be the same as the `trash_scores.default` value
-- The legacy `trash_score` value is currently retained for compatibility reasons, but will eventually be removed
-- Default Scores of 0 (`trash_score` or `trash_scores.default` are FORBIDDEN
+- Default Scores of 0 (e.g. as in `trash_scores.default`) are FORBIDDEN
 
 ## YAML file naming
 
