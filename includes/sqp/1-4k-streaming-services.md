@@ -20,7 +20,7 @@
     | [{{ radarr['cf']['ovid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ovid)   |                                       0                                        | {{ radarr['cf']['ovid']['trash_id'] }}  |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
-    
+
     ------
     Breakdown and Why
 
