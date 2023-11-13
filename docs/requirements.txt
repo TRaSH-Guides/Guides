@@ -5,5 +5,5 @@ mkdocs-macros-plugin==1.0.5
 mkdocs-material==9.4.8
 mkdocs-minify-plugin==0.7.1
 mkdocs-redirects==1.2.1
-mkdocs-include-markdown-plugin==6.0.3
+mkdocs-include-markdown-plugin==6.0.4
 mkdocs-markdownextradata-plugin==0.2.5
