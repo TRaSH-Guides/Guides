@@ -66,7 +66,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ??? abstract "Which Quality Profile should you choose - [Click to show/hide]"
 
-    ![Flowchart](/Sonarr/images/flowchart-custom-format-sonarr.png)
+    ![Flowchart](/Sonarr/images/flowchart-quality-profiles-sonarr.png)
 
     If you're unsure or have questions do not hesitate to ask for help on Discord
 
@@ -75,6 +75,8 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 ------
 
 ## TRaSH Quality Profiles
+
+All the Quality Profiles here can be combined into one Quality Profile if you want to be able to upgrade, for example, from 1080p to 4k/2160p.
 
 ### WEB-1080p
 
@@ -158,8 +160,7 @@ The following custom format groups should be used in combination with the above 
 
 ### HDR Formats
 
-- You have a setup that supports Dolby Vision.
-- You share your media library with other family members that also have have Dolby Vision compatible devices.
+- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 

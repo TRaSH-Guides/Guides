@@ -71,7 +71,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
     <p align="center">![Flowchart](/Radarr/images/flowchart-guide-radarr.png){ width="10%" height="10%" }
 
-    ![Flowchart](/Radarr/images/flowchart-custom-format-radarr.png)
+    ![Flowchart](/Radarr/images/flowchart-quality-profiles-radarr.png)
 
     If you're unsure or have questions do not hesitate to ask for help on Discord
 
@@ -80,6 +80,8 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 ------
 
 ## TRaSH Quality Profiles
+
+All the Quality Profiles here can be combined into one Quality Profile if you want to be able to upgrade, for example, from 1080p to 4k/2160p.
 
 ### HD Bluray + WEB
 
