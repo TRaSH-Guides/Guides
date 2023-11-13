@@ -156,10 +156,6 @@ Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
-
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
@@ -244,10 +240,6 @@ Si vous préférez les Remuxes en 2160p (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
-
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
@@ -282,8 +274,6 @@ TRaSH fournit d'excellents guides et explications à leur sujet dans les liens s
 
 - [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Radarr/radarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Radarr/radarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

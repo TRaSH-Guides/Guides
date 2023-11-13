@@ -135,10 +135,6 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
-
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
@@ -227,10 +223,6 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
-
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
@@ -265,7 +257,7 @@ Use the following main settings in your profile.
 
 ## Custom Format Groups
 
-Description will follow
+The following custom format groups should be used in combination with the above quality profiles. Users will need to make a choice as to whether they are included, or which option to go for.
 
 ### Advanced Audio
 
@@ -283,35 +275,11 @@ Description will follow
 
 ### HDR Formats
 
-- You have a setup that supports Dolby Vision.
-- You share your media library with other family members that also have have Dolby Vision compatible devices.
+- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
-
-------
-
-### HDR Formats + DV (WEBDL)
-
-- Not all devices in your chain support Dolby Vision.
-- You share your media library with other family members that don't have Dolby Vision compatible devices.
-
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web.md" !}
-
-------
-
-### HDR Formats + DV (WEBDL) + HDR10+ Boost
-
-- Not all devices in your chain support Dolby Vision.
-- You share your media library with other family members that don't have Dolby Vision compatible devices.
-- You have a (Samsung) TV that supports HDR10+.
-
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 ------
 
@@ -375,6 +343,14 @@ This is a must have for every Quality Profile you use in my opinion. All these C
     Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
 
     Use x265 only for 4k releases and the [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
+
+### Why am i getting purple or green colors
+
+{! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+
+### Dolby Vision Profiles
+
+{! include-markdown "../../includes/cf/dv-info-profiles.md" !}
 
 ## Thanks
 

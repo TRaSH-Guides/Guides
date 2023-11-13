@@ -123,10 +123,6 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
-
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
@@ -158,7 +154,7 @@ Use the following main settings in your profile.
 
 ## Custom Format Groups
 
-Description will follow
+The following custom format groups should be used in combination with the above quality profiles. Users will need to make a choice as to whether they are included, or which option to go for.
 
 ### HDR Formats
 
@@ -168,29 +164,6 @@ Description will follow
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
-
-------
-
-### HDR Formats + DV (WEBDL)
-
-- Not all devices in your chain support Dolby Vision.
-- You share your media library with other family members that don't have Dolby Vision compatible devices.
-
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web.md" !}
-
-------
-
-### HDR Formats + DV (WEBDL) + HDR10+ Boost
-
-- Not all devices in your chain support Dolby Vision.
-- You share your media library with other family members that don't have Dolby Vision compatible devices.
-- You have a (Samsung) TV that supports HDR10+.
-
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats-dv-web-hdr10plus-boost.md" !}
 
 ------
 
@@ -276,6 +249,14 @@ This is a must have for every Quality Profile you use in my opinion. All these C
     Something like 95% of video files are x264 and have much better direct play support. If you have more than a of couple users, you will notice much more transcoding.
 
     Use x265 only for 4k releases and the [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
+
+### Why am i getting purple or green colors
+
+{! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+
+### Dolby Vision Profiles
+
+{! include-markdown "../../includes/cf/dv-info-profiles.md" !}
 
 ## Thanks
 
