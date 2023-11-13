@@ -1,0 +1,38 @@
+{
+  "trash_id": "7be9c0572d8cd4f81785dacf7e85985e",
+  "trash_scores": {
+    "default": 50
+  },
+  "trash_regex": "https://regex101.com/r/CbFoaJ/1",
+  "name": "FOD",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "FOD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(fod)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
