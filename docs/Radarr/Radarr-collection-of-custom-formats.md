@@ -66,6 +66,9 @@ I also made 3 guides related to this one.
 |                                               |                       |                                           | [Stan](#stan)              |
 |                                               |                       |                                           | [Crave](#crav)             |
 |                                               |                       |                                           | [OViD](#ovid)              |
+|                                               |                       |                                           | [FOD](#fod)                |
+|                                               |                       |                                           | [TVer](#tver)              |
+|                                               |                       |                                           | [U-NEXT](#u-next)          |
 
 ------
 
@@ -1965,6 +1968,64 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FOD
+
+<sub>FOD</sub>
+
+??? question "FOD - [Click to show/hide]"
+
+    - Fuji Television On Demand
+    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
+    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### TVer
+
+<sub>TVer</sub>
+
+??? question "TVer - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### U-NEXT
+
+<sub>U-NEXT</sub>
+
+??? question "U-NEXT - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
+    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

@@ -1,0 +1,35 @@
+{
+  "trash_id": "279bda7434fd9075786de274e6c3c202",
+  "trash_regex": "https://regex101.com/r/04ZSLm/1",
+  "name": "U-NEXT",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "U-NEXT",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(u-next)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
