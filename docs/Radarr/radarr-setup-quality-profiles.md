@@ -269,8 +269,6 @@ The following custom format groups should be used in combination with the above 
 
 *The reason that lossy Atmos is scored higher than lossless DTS-HD MA is because I prefer having the object metadata (Atmos) over lossless audio.*
 
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
 ------
@@ -278,8 +276,6 @@ The following custom format groups should be used in combination with the above 
 ### HDR Formats
 
 - You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
-
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 

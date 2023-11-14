@@ -162,8 +162,6 @@ The following custom format groups should be used in combination with the above 
 
 - You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
-
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 ------
