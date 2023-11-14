@@ -98,6 +98,15 @@
       }
     },
     {
+      "name": "SbR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SbR)$"
+      }
+    },
+    {
       "name": "SMURF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
