@@ -27,7 +27,7 @@ Using `apt-get` to install
         sudo apt-get update
         sudo apt-get install deluge
 
-Using `pip3` to install (included in the python package)
+Using `pip3` to install (included in the Python package)
 
         pip3 install deluge
 
