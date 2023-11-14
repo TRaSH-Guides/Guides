@@ -217,26 +217,30 @@ Click on the cogwheel of the new script in the list.
 ![!Select user script](images/Unraid-settings-user-scripts-edit-deluge-mover.png)
 
 Copy/Paste the following in the new window that opens, then click `SAVE CHANGES`.
+=== "Python (Native)"
 
-```bash
-#!/bin/bash
-#source /mnt/user/data/scripts/.venv/bin/activate
-/usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
-echo "executing script to pause torrents and run mover."
-python3 /mnt/user/data/scripts/deluge-mover.py
-echo "deluge-mover completed and resumed all paused torrents."
-/usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
-```
+    ``` bash
+        #!/bin/bash
+        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
+        echo "executing script to pause torrents and run mover."
+        python3 /mnt/user/data/scripts/deluge-mover.py
+        echo "deluge-mover completed and resumed all paused torrents."
+        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
+    ```
+
+=== "Python (venv)"
+
+    ``` bash
+        #!/bin/bash
+        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
+        echo "executing script to pause torrents and run mover."
+        /mnt/user/data/scripts/venv/bin/python3 /mnt/user/data/scripts/deluge-mover.py
+        echo "deluge-mover completed and resumed all paused torrents."
+        /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
+    ```
 
 !!! info
-    Replace `/mnt/user/data/scripts/deluge-mover.py` with the path you have chosen for the Python script.
-
-!!! danger
-
-    **Only** if you are using the [Python venv](#python-venv) method:
-
-      - Uncomment **line 2** (remove just the `#` character)
-      - Replace `/mnt/user/data/scripts/.venv` with the path where you created the Python venv.
+    Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
 
 ![!Bash script](images/Unraid-settings-user-scripts-deluge-mover.png)
 
