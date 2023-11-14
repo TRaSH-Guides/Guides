@@ -267,7 +267,7 @@ The following custom format groups should be used in combination with the above 
 - You have a media player (hardware devices) that can passthrough HD audio.
 - You don't have a AppleTV (Being it can't passthrough untouched HD audio).
 
-*In this example I have lossy Atmos over lossless DTS because the object metadata (Atmos) matters more to me over lossy vs lossless.*
+*The reason that lossy Atmos is scored higher than lossless DTS-HD MA is because I prefer having the object metadata (Atmos) over lossless audio.*
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
