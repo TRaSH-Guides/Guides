@@ -38,12 +38,12 @@ After switching to `Thin Client` you will need to connect to your daemon. Go to 
 ![!Label Options](images/Deluge-tc-connman.png)
 
 !!! ATTENTION
-    If you mistyped your password while adding the connection, it will prompt you to enter it. There is a bug that does not accept/save the correct password unless it is entered through the `Add`/`Edit` Menu. 
+    If you mistyped your password while adding the connection, it will prompt you to enter it. There is a bug that does not accept/save the correct password unless it is entered through the `Add`/`Edit` Menu.
 
     If you mistype the password while you are adding the connection, go to `Edit` on the connection and retype the password into the password field.
 
 !!! WARNING
-    You can find your users and passwords for the daemon in the `auth` file inside your appdata/config folder for Deluge. 
+    You can find your users and passwords for the daemon in the `auth` file inside your appdata/config folder for Deluge.
 
     You can add users in the `Daemon` settings in preferences as well.
 

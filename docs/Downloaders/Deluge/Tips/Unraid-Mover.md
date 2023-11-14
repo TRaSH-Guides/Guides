@@ -98,7 +98,7 @@ Finally, you will need to choose `RUN IN BACKGROUND` or restart your unRAID serv
 
 With this option, we're going to install the `requests` module when the unRAID server is started.
 
-On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}). 
+On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
 
 Copy/paste the following command
 
@@ -246,7 +246,7 @@ Click the schedule dropdown to choose when the script should run. We want to sel
 
 After changing to `Custom` you will get an extra text field on the right where you can set your schedule (cron).
 
-For this example, we're going to tell the script to run every day at 4 AM. 
+For this example, we're going to tell the script to run every day at 4 AM.
 
 `0 4 * * *`
 
