@@ -157,7 +157,15 @@ You only need to change a few options at the top of the script.
 deluge_webui = "http://localhost:8112/json"
 deluge_password = "deluged"
 
+# this changes whether the actual cache drive is checked for
+# applicable files to pause/move before pausing.
+#
+# if this is false, it will pause all torrents in the age-range
+# instead of only torrents in that range that exist on the cache
+check_fs = False
+
 # this is the absolute host path to your cache drive's downloads
+# you only need this to be changed/set if using 'check_fs = True'
 cache_download_path = "/mnt/cache/torrents/completed"
 
 # the age range of days to look for relevant torrents to move
@@ -167,6 +175,8 @@ age_day_max = 5
 
 - `deluge_webui` => The URL you use to access Deluge locally. (*the* `"` *should remain*)
 - `deluge_password` => Your Deluge WebUI `Password`. (*the* `"` *should remain*)
+- `check_fs` => If set to `True`, it will check for the file on the cache drive before pausing.
+- `cache_download_path` => The location (host path) for your cache folder (if check_fs is True)
 - `age_day_min` => Set the minimum age (days) of the torrents that you wish to move.
 - `age_day_max` => Set the maximum age (days) of the torrents that you wish to move.
 
