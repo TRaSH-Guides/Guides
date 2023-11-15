@@ -56,12 +56,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://trash-guides.info/Downloaders/Deluge/Tips/</loc>
+         <loc>https://trash-guides.info/Downloaders/Deluge/Using-Labels/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://trash-guides.info/Downloaders/Deluge/Using-Labels/</loc>
+         <loc>https://trash-guides.info/Downloaders/Deluge/Tips/Plugins/</loc>
+         <lastmod>2023-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Downloaders/Deluge/Tips/Thin-Client/</loc>
+         <lastmod>2023-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Downloaders/Deluge/Tips/Unraid-Mover/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
     </url>

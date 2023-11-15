@@ -2462,16 +2462,100 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../Tips/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_5" id="__nav_6_5_5_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Tips
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tips
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips/Plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips/Thin-Client/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thin Client
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips/Unraid-Mover/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    unRAID Mover and Deluge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3536,7 +3620,7 @@
 <hr />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Settings that aren't covered means you can change them to your own liking or just leave them on default.</p>
+<p>Settings that aren't covered means you can change them to your liking or just leave them on default.</p>
 </div>
 <hr />
 <h2 id="accessing-your-settings">Accessing your settings<a class="headerlink" href="#accessing-your-settings" title="Permanent link"></a></h2>
@@ -3545,14 +3629,14 @@
 <p>Once you are here, you can edit your download settings in the <code>Downloads</code> section.</p>
 <p><a class="glightbox" href="../images/Deluge-download-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Download Settings" src="../images/Deluge-download-settings.png" /></a></p>
 <h3 id="download-path">Download Path<a class="headerlink" href="#download-path" title="Permanent link"></a></h3>
-<p><code>Download to</code> is where you want you want to download your media to, if you want to move your files upon completion - check the box and enter a path for that option as well.</p>
+<p><code>Download to</code> is where you want you want Deluge to download your media. If you want to move your files upon completion - check the box and enter a path for that option as well.</p>
 <h3 id="saving-torrent-copies">Saving .torrent Copies<a class="headerlink" href="#saving-torrent-copies" title="Permanent link"></a></h3>
 <p>Copy (and delete upon removal) of the .torrent file upon completion.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Personal preference</code></strong></p>
 </div>
 <h3 id="pre-allocated-files">Pre-allocated Files<a class="headerlink" href="#pre-allocated-files" title="Permanent link"></a></h3>
-<p>Pre-allocated disk space for the added torrents, this limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.</p>
+<p>Pre-allocate disk space for the added torrents. This limits fragmentation and also makes sure if you use a cache drive or a feeder disk, that the space is available.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 </div>
@@ -3576,16 +3660,16 @@
 
 <hr />
 <h2 id="bandwidth">Bandwidth<a class="headerlink" href="#bandwidth" title="Permanent link"></a></h2>
-<p>Here you can set your rate limits, meaning your maximum download/upload/connection speeds.</p>
+<p>Here you can set your rate limits, meaning your maximum download/upload/connections.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>In Deluge, the value of <code>-1</code> is used for "infinity" or "unlimited".</p>
 </div>
 <p><a class="glightbox" href="../images/Deluge-bandwidth-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Bandwidth Settings" src="../images/Deluge-bandwidth-settings.png" /></a></p>
-<p>The best settings depends on many factors.</p>
+<p>The best settings depend on many factors.</p>
 <ul>
 <li>Your ISP speed.</li>
-<li>Your hardware used.</li>
+<li>Your hardware.</li>
 <li>Bandwidth needed by other services in your home network.</li>
 </ul>
 <div class="admonition success">
@@ -3596,8 +3680,8 @@
 <p><a class="glightbox" href="../images/Deluge-globalbw-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Global Bandwidth Settings" src="../images/Deluge-globalbw-settings.png" /></a></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The only thing you NEED to place a limit on is half-open connections and connections per-second.</p>
-<p>For most high speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.</p>
+<p>The only thing you NEED to place a limit on is half-open connections and connections per second.</p>
+<p>For most high-speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.</p>
 </div>
 <h3 id="per-torrent-limits">Per-Torrent Limits<a class="headerlink" href="#per-torrent-limits" title="Permanent link"></a></h3>
 <p>In addition to global limits, you can set limits per torrent.</p>
@@ -3616,18 +3700,18 @@
 <h3 id="active-torrents">Active Torrents<a class="headerlink" href="#active-torrents" title="Permanent link"></a></h3>
 <p><a class="glightbox" href="../images/Deluge-queue-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Queue Settings" src="../images/Deluge-queue-settings.png" /></a></p>
 <p>Unless you have a specific reason, <code>Total</code> can be set to <code>-1</code>. These are torrents seen as seeding by the tracker.</p>
-<p><code>Seeding</code> is the number of active torrents uploading, and <code>Downloading</code> is the number of downloading torrents.</p>
+<p><code>Seeding</code> is the number of active torrents uploading, and <code>Downloading</code> is the number of concurrently downloading torrents.</p>
 <h3 id="seeding-rotation-share-ratio">Seeding Rotation &amp; Share Ratio<a class="headerlink" href="#seeding-rotation-share-ratio" title="Permanent link"></a></h3>
-<p>I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced) and to remove completed downloads. These sections are then not necessary.</p>
+<p>I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced) to remove completed downloads. These sections are then not necessary.</p>
 <hr />
 <h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link"></a></h2>
-<p>This is where you will bind Deluge to specific interface/address, specify port usage, and disable network protocols.</p>
+<p>This is where you will bind Deluge to a specific interface/address, specify port usage, and disable network protocols.</p>
 <p><a class="glightbox" href="../images/Deluge-network-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Network Settings" src="../images/Deluge-network-settings.png" /></a></p>
 <h3 id="incoming-port">Incoming Port<a class="headerlink" href="#incoming-port" title="Permanent link"></a></h3>
 <div class="admonition info">
 <p>You've followed the <a href="/Misc/How-to-setup-Torguard-for-port-forwarding/" rel="noopener noreferrer" target="_blank">Setup TorGuard for port forwarding</a> and want to know where in your download client you should add the port you've port forwarded.</p>
 </div>
-<p><code>Incoming Port</code> should be set to a specific port that you have open or forwarded (if you are behind any NAT/Firewall/VPN.)</p>
+<p><code>Incoming Port</code> should be set to a specific port that you have opened/forwarded (if you are behind any NAT/Firewall/VPN.)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Default ports of 6880-6890 are not recommended.</p>
@@ -3672,15 +3756,15 @@
 </ol>
 <hr />
 <h2 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h2>
-<p>Finally, you will want to enable some plugins. There are plenty of plugins on the Deluge community forums to browse once you are familiar with the client, but for the time being we will only be covering the <code>WebUI</code> and <code>Label</code> plugins to get started.</p>
+<p>Finally, you will want to enable some plugins. There are plenty of plugins on the Deluge community forums to browse once you are familiar with the client, but for the time being, we will only be covering the <code>WebUI</code> and <code>Label</code> plugins to get started.</p>
 <p><a class="glightbox" href="../images/Deluge-plugin-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plugin Settings" src="../images/Deluge-plugin-settings.png" /></a></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you are familiar with the client and plugins you can find more information <a href="../Tips/#plugins">here</a></p>
+<p>If you are familiar with the client and plugins you can find more information <a href="./Tips.md#plugins">here</a></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you are running a docker container, such as binhex's image, the <code>WebUI</code> plugin may not need to be enabled, instead it may be configured in the container.</p>
+<p>If you are running a docker container, such as binhex's image, the <code>WebUI</code> plugin may not need to be enabled. Instead, it may be configured in the container.</p>
 </div>
 <h3 id="webui">WebUI<a class="headerlink" href="#webui" title="Permanent link"></a></h3>
 <p>Once you have enabled the <code>WebUI</code> plugin, it will appear in your <code>Preferences</code> menu list, and you will need to enable the web interface and set the port you want the WebUI to listen on.</p>
@@ -3708,7 +3792,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 10, 2023 19:07:07</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 15:57:09</span>
       
     
   </small>
