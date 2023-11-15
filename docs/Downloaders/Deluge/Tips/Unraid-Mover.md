@@ -147,7 +147,7 @@ deactivate # to leave the environment
 
 ### Script
 
-Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#the-script)).
+Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#deluge-mover-script)).
 
 You only need to change a few options at the top of the script.
 
