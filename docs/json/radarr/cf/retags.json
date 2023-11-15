@@ -41,6 +41,15 @@
       "fields": {
         "value": "\\[TGx\\]"
       }
+    },
+    {
+      "name": ".VAV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[.]VAV\\b"
+      }
     }
   ]
 }
