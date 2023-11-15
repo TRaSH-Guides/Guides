@@ -5,7 +5,7 @@
 
 ------
 !!! Note
-    Settings that aren't covered means you can change them to your own liking or just leave them on default.
+    Settings that aren't covered means you can change them to your liking or just leave them on default.
 
 ------
 
@@ -21,7 +21,7 @@ Once you are here, you can edit your download settings in the `Downloads` sectio
 
 ### Download Path
 
-`Download to` is where you want you want to download your media to, if you want to move your files upon completion - check the box and enter a path for that option as well.
+`Download to` is where you want you want Deluge to download your media. If you want to move your files upon completion - check the box and enter a path for that option as well.
 
 ### Saving .torrent Copies
 
@@ -32,7 +32,7 @@ Copy (and delete upon removal) of the .torrent file upon completion.
 
 ### Pre-allocated Files
 
-Pre-allocated disk space for the added torrents, this limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.
+Pre-allocate disk space for the added torrents. This limits fragmentation and also makes sure if you use a cache drive or a feeder disk, that the space is available.
 
 !!! success ""
     **Suggested: `Enabled`**
@@ -46,17 +46,17 @@ Pre-allocated disk space for the added torrents, this limits fragmentation and a
 
 ## Bandwidth
 
-Here you can set your rate limits, meaning your maximum download/upload/connection speeds.
+Here you can set your rate limits, meaning your maximum download/upload/connections.
 
 !!! info
     In Deluge, the value of `-1` is used for "infinity" or "unlimited".
 
 ![!Bandwidth Settings](images/Deluge-bandwidth-settings.png)
 
-The best settings depends on many factors.
+The best settings depend on many factors.
 
 - Your ISP speed.
-- Your hardware used.
+- Your hardware.
 - Bandwidth needed by other services in your home network.
 
 !!! success ""
@@ -70,9 +70,9 @@ These are the client-wide settings, they will apply to the total traffic of all 
 
 !!! tip
 
-    The only thing you NEED to place a limit on is half-open connections and connections per-second.
+    The only thing you NEED to place a limit on is half-open connections and connections per second.
 
-    For most high speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.
+    For most high-speed broadband connections ~100-150 seems ideal. If you experience lag when initiating a download, try lowering these values.
 
 ### Per-Torrent Limits
 
@@ -99,17 +99,17 @@ These settings are intended to manage your number of active seeds, downloads, an
 
 Unless you have a specific reason, `Total` can be set to `-1`. These are torrents seen as seeding by the tracker.
 
-`Seeding` is the number of active torrents uploading, and `Downloading` is the number of downloading torrents.
+`Seeding` is the number of active torrents uploading, and `Downloading` is the number of concurrently downloading torrents.
 
 ### Seeding Rotation & Share Ratio
 
-I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced) and to remove completed downloads. These sections are then not necessary.
+I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced) to remove completed downloads. These sections are then not necessary.
 
 ------
 
 ## Network
 
-This is where you will bind Deluge to specific interface/address, specify port usage, and disable network protocols.
+This is where you will bind Deluge to a specific interface/address, specify port usage, and disable network protocols.
 
 ![!Network Settings](images/Deluge-network-settings.png)
 
@@ -118,7 +118,7 @@ This is where you will bind Deluge to specific interface/address, specify port u
 !!! info ""
     You've followed the [Setup TorGuard for port forwarding](/Misc/How-to-setup-Torguard-for-port-forwarding/){:target="_blank" rel="noopener noreferrer"} and want to know where in your download client you should add the port you've port forwarded.
 
-`Incoming Port` should be set to a specific port that you have open or forwarded (if you are behind any NAT/Firewall/VPN.)
+`Incoming Port` should be set to a specific port that you have opened/forwarded (if you are behind any NAT/Firewall/VPN.)
 
 !!! WARNING
     Default ports of 6880-6890 are not recommended.
@@ -167,7 +167,7 @@ You can configure your network protocols in this section. Depending on which typ
 
 ## Plugins
 
-Finally, you will want to enable some plugins. There are plenty of plugins on the Deluge community forums to browse once you are familiar with the client, but for the time being we will only be covering the `WebUI` and `Label` plugins to get started.
+Finally, you will want to enable some plugins. There are plenty of plugins on the Deluge community forums to browse once you are familiar with the client, but for the time being, we will only be covering the `WebUI` and `Label` plugins to get started.
 
 ![!Plugin Settings](images/Deluge-plugin-settings.png)
 
@@ -175,7 +175,7 @@ Finally, you will want to enable some plugins. There are plenty of plugins on th
     If you are familiar with the client and plugins you can find more information [here](./Tips.md#plugins)
 
 !!! info
-    If you are running a docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled, instead it may be configured in the container.
+    If you are running a docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
 
 ### WebUI
 

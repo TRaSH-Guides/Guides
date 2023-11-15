@@ -7,7 +7,7 @@
 
 ### Managing Labels
 
-Once you have [enabled the `Label` plugin](./Basic-Setup.md#plugins), you simply right-click anywhere in the area occupied by the label index on the pane on the left and you will be presented with a menu to add/remove/etc a label.
+Once you have [enabled the `Label` plugin](./Basic-Setup.md#plugins), you simply right-click anywhere in the area occupied by the label index on the pane on the left and you will be presented with a menu to add/remove/edit a label or its options.
 
 ![!Label Menu](images/Deluge-label-add.png)
 
