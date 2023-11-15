@@ -45,37 +45,39 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services                          |
-| --------------------- | --------------------- | --------------------------------------- | ------------------------------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)                             |
-| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)                          |
-|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu)                         |
-|                       | [Extras](#extras)     | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)                            |
-|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)                            |
-|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)                                 |
-|                       |                       | [WEB Tier 03](#web-tier-03)             | [Max](#max)                                 |
-|                       |                       | [WEB Scene](#web-scene)                 | [Hulu](#hulu)                               |
-|                       |                       |                                         | [NLZiet](#nlz)                              |
-|                       |                       |                                         | [Netflix](#nf)                              |
-|                       |                       |                                         | [Paramount+](#pmtp)                         |
-|                       |                       |                                         | [Peacock TV](#pcok)                         |
-|                       |                       |                                         | [Quibi](#qibi)                              |
-|                       |                       |                                         | [SHOWTIME](#sho)                            |
-|                       |                       |                                         | [Stan](#stan)                               |
-|                       |                       |                                         | [Videoland](#vdl)                           |
-|                       |                       |                                         | [YouTube Red](#red)                         |
-|                       |                       |                                         | [iTunes](#it)                               |
-|                       |                       |                                         | [CANAL+](#canalplus)                        |
-|                       |                       |                                         | [SALTO](#salto)                             |
-|                       |                       |                                         | [RTBF](#rtbf)                               |
-|                       |                       |                                         | [Comedy Central](#cc)                       |
-|                       |                       |                                         | [Crave](#crav)                              |
-|                       |                       |                                         | [OViD](#ovid)                               |
-|                       |                       |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
-|                       |                       |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
-|                       |                       |                                         | [FOD](#fod)                                 |
-|                       |                       |                                         | [TVer](#tver)                               |
-|                       |                       |                                         | [U-NEXT](#u-next)                           |
+| Series Versions       | Unwanted                                | HQ Source Groups                        | Streaming Services                          |
+| --------------------- | --------------------------------------- | --------------------------------------- | ------------------------------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)                             |
+| [Remaster](#remaster) | [LQ](#lq)                               | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)                          |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu)                         |
+|                       | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)                            |
+|                       | [Extras](#extras)                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)                            |
+|                       |                                         | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)                                 |
+|                       |                                         | [WEB Tier 03](#web-tier-03)             | [Max](#max)                                 |
+|                       |                                         | [WEB Scene](#web-scene)                 | [Hulu](#hulu)                               |
+|                       |                                         |                                         | [NLZiet](#nlz)                              |
+|                       |                                         |                                         | [Netflix](#nf)                              |
+|                       |                                         |                                         | [Paramount+](#pmtp)                         |
+|                       |                                         |                                         | [Peacock TV](#pcok)                         |
+|                       |                                         |                                         | [Quibi](#qibi)                              |
+|                       |                                         |                                         | [SHOWTIME](#sho)                            |
+|                       |                                         |                                         | [Stan](#stan)                               |
+|                       |                                         |                                         | [Videoland](#vdl)                           |
+|                       |                                         |                                         | [YouTube Red](#red)                         |
+|                       |                                         |                                         | [iTunes](#it)                               |
+|                       |                                         |                                         | [CANAL+](#canalplus)                        |
+|                       |                                         |                                         | [SALTO](#salto)                             |
+|                       |                                         |                                         | [RTBF](#rtbf)                               |
+|                       |                                         |                                         | [Comedy Central](#cc)                       |
+|                       |                                         |                                         | [Crave](#crav)                              |
+|                       |                                         |                                         | [OViD](#ovid)                               |
+|                       |                                         |                                         | [FOD](#fod)                                 |
+|                       |                                         |                                         | [TVer](#tver)                               |
+|                       |                                         |                                         | [U-NEXT](#u-next)                           |
+|                       |                                         |                                         | [ALL4](#all4)                               |
+|                       |                                         |                                         | [4OD](#4od)                                 |
+|                       |                                         |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
+|                       |                                         |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
 
 ------
 
@@ -809,6 +811,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### LQ (Release Title)
+
+<sub>Low Quality Releases = LQ</sub>
+
+??? question "LQ (Release Title)- [Click to show/hide]"
+
+    A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq-release-title.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1813,38 +1833,6 @@ I also made 3 guides related to this one.
 
 ------
 
-### UHD Streaming Boost
-
-??? question "UHD Streaming Boost - [Click to show/hide]"
-
-    Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-boost.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### UHD Streaming Cut
-
-??? question "UHD Streaming Cut - [Click to show/hide]"
-
-    Some streaming services have UHD releases that are generally worse than their HD counterparts. The UHD Streaming Cut custom format decreases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-cut.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
 ### FOD
 
 <sub>FOD</sub>
@@ -1897,6 +1885,76 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### ALL4
+
+<sub>ALL4</sub>
+
+??? question "ALL4 - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
+    - ALL4 is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/all4.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### 4OD
+
+<sub>4OD</sub>
+
+??? question "4OD - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
+    - 4OD is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/4od.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### UHD Streaming Boost
+
+??? question "UHD Streaming Boost - [Click to show/hide]"
+
+    Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### UHD Streaming Cut
+
+??? question "UHD Streaming Cut - [Click to show/hide]"
+
+    Some streaming services have UHD releases that are generally worse than their HD counterparts. The UHD Streaming Cut custom format decreases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-cut.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
