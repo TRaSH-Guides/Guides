@@ -1,0 +1,38 @@
+{
+  "trash_id": "bbcaf03147de0f73be2be4a9078dfa03",
+  "trash_scores": {
+    "default": 50
+  },
+  "trash_regex": "https://regex101.com/r/pa5TPZ/1",
+  "name": "4OD",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "4OD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(4OD)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
