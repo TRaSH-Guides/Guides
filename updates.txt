@@ -1,3 +1,12 @@
+# 2023-11-15 16:15
+- [feat(guides): Add Honeywell qBittorrent Theme to Themes Page](https://github.com/TRaSH-Guides/Guides/pull/1633)
+- [feat(guides): Added new guide for deluge-mover script](https://github.com/TRaSH-Guides/Guides/pull/1638)
+- [feat(guides/starr): Created New Custom Formats for 4OD and ALL4 Streaming Services, and LQ (Release Title)](https://github.com/TRaSH-Guides/Guides/pull/1639)
+- [feat(radarr): Added .VAV to the Retags Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1635)
+- [feat(starr): add SbR to WEB Tier 02](https://github.com/TRaSH-Guides/Guides/pull/1637)
+- [feat(starr): Create SDR (no WEBDL) custom formats](https://github.com/TRaSH-Guides/Guides/pull/1618)
+- [fix(radarr): SQP-1 (2160p) several updates (v2)](https://github.com/TRaSH-Guides/Guides/pull/1630)
+
 # 2023-10-27 20:45
 - [fix(french-starr): remove non-French Language conditions in the French Audio CF](https://github.com/TRaSH-Guides/Guides/pull/1611)
 
