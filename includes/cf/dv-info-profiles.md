@@ -5,7 +5,17 @@
     - **Profile 5** <sup>(*1*)</sup> - This is what comes with WEB-DL Dolby Vision release without HDR10 fallback.<br>(*Incompatible devices will playback with blown out pinks and greens*)
     - **Profile 7** <sup>(*2*)</sup> - This is what comes with UHD Bluray Remuxes and UHD BluRay releases.<br>*These files will play on an Nvidia Shield Pro (2019), but on most other players will revert to the HDR10 fallback.*
     - **Profile 8** <sup>(*3*)</sup> - This is what comes with (Hybrid) WEB-DL releases (HULU), Hybrid UHD Remux and UHD BluRay releases all of which have HDR10 fallback.<br>*This works with several mainstream media players.*<br>
-    ------
-    - <sup>(*1*) *On PLEX for AppleTV, It has been confirmed that with the latest build of Plex, Profile 5 MKV files now play correctly!*<br>*On an AppleTV 4K 1st gen and up, files are direct streamed (not transcoded) to an MP4 container and play using the native AVPlayer instead of Plex’s MPV.*</sup>
+    ---
+    !!! bug "PLEX for Apple TV and Plex with Infuse will only play profiles 5 and 8 correctly if CMv2.9 is used. This is something that can't be determined beforehand what's used."
+
+    - <sup>(*1*) *PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used*</sup>
     - <sup>(*2*) *Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.*</sup>
-    - <sup>(*3*) *On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, And will only play the HDR10 fallback.*<br>***“although your TV will incorrectly say that it is playing DV”***.<br>*With infuse it will convert it on the fly to Profile 5 and deliver real Dolby Vision.*<br>***“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy) - Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”***</sup>
+    - <sup>(*3*) *On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, And will only play the HDR10 fallback if CM2.9 is used else you end up with a black screen*<br>***“although your TV will incorrectly say that it is playing DV”***.<br>*With infuse it will convert it on the fly to Profile 5 and deliver real Dolby Vision if CMv2.9 is used else you end up with a black screen*<br>***“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy) - Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”***</sup>
+
+??? info "Dolby Vision Versions - CMv2.9 and CMv4.0 - [Click to show/hide]"
+
+    !!! bug "It is too technical to explain in detail, so I'll keep it short with tested facts: <br>PLEX for AppleTV and Plex with Infuse only support CMv2.9."
+
+    There are two versions of Dolby Vision namely, CMv2.9 and CMv4.0. CMv4.0 uses improved algorithms and an advanced and more complex tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.
+
+    More info about the different Dolby Vision Versions: [Dolby Vision Versions - CMv2.9 vs. CMv4.0](https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US)

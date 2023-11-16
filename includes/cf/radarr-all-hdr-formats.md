@@ -3,6 +3,9 @@
     **Why would I choose All HDR formats ?**
 
     - You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
+
+        !!! bug "PLEX for Apple TV and Plex with Infuse will only play profiles 5 and 8 correctly if CMv2.9 is used. This is something that can't be determined beforehand what's used."
+
     - You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.
     - You must add **all** the HDR formats - don't leave any of them out!
 
