@@ -178,6 +178,15 @@
       }
     },
     {
+      "name": "DepraveD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DepraveD)$"
+      }
+    },
+    {
       "name": "DNL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -625,6 +634,15 @@
       "required": false,
       "fields": {
         "value": "^(SWTYBLZ)$"
+      }
+    },
+    {
+      "name": "tarunk9c",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tarunk9c)$"
       }
     },
     {
