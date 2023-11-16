@@ -9,7 +9,7 @@
 Make sure `Tunable (support Hard Links)` is enabled in your `Settings` => `Global Share Settings`.
 
 === "unRAID 6.12"
-    ![Enable Hardlink support (New)](images/unraid-enable-hardlinks-612.png)
+    ![Enable Hardlink support (New)](images/unraid-enable-hardlinks_612.png)
 === "unRAID 6.11"
     ![Enable Hardlink support](images/unraid-enable-hardlinks.png)
 
