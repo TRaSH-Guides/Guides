@@ -14,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "True[ .-]?HD"
+        "value": "True[ .-]?HD|W4NK3R|HQMUX"
       }
     },
     {
@@ -23,7 +23,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bATMOS(\\b|\\d)"
+        "value": "\\b(ATMOS|W4NK3R|-DON)(\\b|\\d)"
       }
     },
     {
