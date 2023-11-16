@@ -45,15 +45,6 @@
       }
     },
     {
-      "name": "BiTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BiTOR)$"
-      }
-    },
-    {
       "name": "HONE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
