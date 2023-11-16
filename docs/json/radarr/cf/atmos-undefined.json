@@ -77,7 +77,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "W4NK3R|HQMUX"
+        "value": "\\b(W4NK3R|HQMUX)\\b"
       }
     },
     {

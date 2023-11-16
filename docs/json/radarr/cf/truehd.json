@@ -68,7 +68,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "CtrlHD|W4NK3R|-DON"
+        "value": "\\b(CtrlHD|W4NK3R|DON)\\b"
       }
     }
   ]
