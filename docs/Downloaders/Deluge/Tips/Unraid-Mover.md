@@ -180,17 +180,16 @@ age_day_max = 0
 - `deluge_webui` => The URL you use to access Deluge locally. (*the* `"` *should remain*)
 - `deluge_password` => Your Deluge WebUI `Password`. (*the* `"` *should remain*)
 - `check_fs` => If set to `True`, it will check for the file on the cache drive before pausing.
-- `use_mover_old` => You will need to change this if you utilize `Mover Tuner` but do not want to use it for the script.
+- `use_mover_old` => See below.
+
+    !!! warning ""
+        - If you do not use `Mover Tuning`, you **DO NOT** have to make any changes.
+        - If you use `Mover Tuning` but **DON'T** want to use it for the script, change this to `True`
+        - If you use `Mover Tuning` and **DO** want to use it for the script, you will not have to make any changes. However, for this option, inside the `Mover Tuner` you will need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
+
 - `cache_download_path` => The location (host path) for your cache folder (if check_fs is True)
 - `age_day_min` => Set the minimum age (days) of the torrents that you wish to move.
 - `age_day_max` => Set the maximum age (days) of the torrents that you wish to move.
-
-!!! warning ""
-    Depending on whether you use the unRAID `Mover Tuning` app, you may need to change **line 164**:
-
-    - If you do not use `Mover Tuning`, you **DO NOT** have to make any changes.
-    - If you use `Mover Tuning` but **don't** want to use it for the script, change **line 164** from `system('/usr/local/sbin/mover start')` to `system('/usr/local/sbin/mover.old start')`
-    - If you use `Mover Tuning` and **DO** want to use it for the script, you will not have to make any changes. However, for this option, inside the `Mover Tuner` you will need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
 
 #### Copy the script to your preferred location
 
