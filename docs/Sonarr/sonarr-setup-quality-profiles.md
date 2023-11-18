@@ -76,7 +76,7 @@ At the bottom in your chosen profile you will see the added Custom Formats where
 
 ## TRaSH Quality Profiles
 
-All the Quality Profiles here can be combined into one Quality Profile if you want to be able to upgrade, for example, from 1080p to 4k/2160p.
+The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p.
 
 ### WEB-1080p
 
