@@ -342,7 +342,7 @@ This is a must have for every Quality Profile you use in my opinion. All these C
 
     Use x265 only for 4k releases and the [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} makes sure you still get the x265 releases.
 
-### Why am i getting purple or green colors
+### Why am I getting purple or green colors?
 
 {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
 
