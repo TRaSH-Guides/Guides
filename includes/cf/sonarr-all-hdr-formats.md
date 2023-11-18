@@ -3,8 +3,11 @@
     **Why would I choose All HDR formats ?**
 
     - You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
+
+        {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
+
     - You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.
-    - You must add **all** the HDR formats - don't leave any of them out!
+    - You must add **ALL** the HDR formats - don't leave any of them out!
 
     {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
 
