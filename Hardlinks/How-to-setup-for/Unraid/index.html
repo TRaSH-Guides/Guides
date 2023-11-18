@@ -26,7 +26,7 @@
     
     
       
-        <title>Unraid - TRaSH Guides</title>
+        <title>unRAID - TRaSH Guides</title>
       
     
     
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Unraid
+              unRAID
             
           </span>
         </div>
@@ -3073,7 +3073,7 @@
           
   
   <span class="md-ellipsis">
-    Unraid
+    unRAID
   </span>
   
 
@@ -3084,7 +3084,7 @@
         
   
   <span class="md-ellipsis">
-    Unraid
+    unRAID
   </span>
   
 
@@ -3470,42 +3470,85 @@
   
 
 
-<h1 id="unraid">Unraid<a class="headerlink" href="#unraid" title="Permanent link"></a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The first thing you need to do is forget the suggested paths from the Spaceinvader One YouTube Tutorials,</p>
-<p>and don't use the predefined paths from the unraid templates.</p>
-<p>(Spaceinvader One YouTube guides are great to learn how to start with unraid or how to setup certain applications, and yes I did and still do use them. Probably the main reason why he's using those path is because they are predefined in the template)</p>
+<h1 id="unraid">unRAID<a class="headerlink" href="#unraid" title="Permanent link"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title"><strong>DO NOT</strong> use the template paths from unRAID or the suggested paths from SpaceInvader One.</p>
+<p>SpaceInvader One YouTube guides are great for learning how to start with unRAID or how to set up certain applications - and yes I did and still do use them.<br><br>The main reason why he's probably using those paths is because they are predefined in the templates.</p>
 </div>
 <hr />
 <h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
-<p>Make sure hardlinks support is enabled in your <code>Settings</code> =&gt; <code>Global Share Settings</code>.</p>
+<p>Make sure <code>Tunable (support Hard Links)</code> is enabled in your <code>Settings</code> =&gt; <code>Global Share Settings</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">unRAID 6.12</label><label for="__tabbed_1_2">unRAID 6.11</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/unraid-enable-hardlinks_612.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Enable Hardlink support (New)" src="../images/unraid-enable-hardlinks_612.png" /></a></p>
+</div>
+<div class="tabbed-block">
 <p><a class="glightbox" href="../images/unraid-enable-hardlinks.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Enable Hardlink support" src="../images/unraid-enable-hardlinks.png" /></a></p>
+</div>
+</div>
+</div>
 <h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link"></a></h2>
 <div class="admonition warning">
-<p class="admonition-title">To get Hardlinks and Atomic-Moves working with Unraid,<br>You will need to make use of <u><strong>ONE</strong></u> share with subfolders.</p>
+<p class="admonition-title">To get Hardlinks and Atomic-Moves working with unRAID,<br>You will need to make use of <u><strong>ONE</strong></u> share with subfolders.</p>
 </div>
-<p>For this example I'm using my own setup and preferred share <code>data</code>.</p>
-<p>Go to your dashboard and on the top select <code>shares</code> select <code>add share</code> .</p>
+<p>In this example, I'm using my own setup and the preferred share <code>data</code>.</p>
+<p>Go to your dashboard and select <code>Shares</code> on the navigation bar, then choose <code>Add Share</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">unRAID 6.12 (No Cache)</label><label for="__tabbed_2_2">unRAID 6.12 (Cache)</label><label for="__tabbed_2_3">unRAID 6.11</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/unraid_main_share_array_612.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-main-share-array-6-12" src="../images/unraid_main_share_array_612.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/unraid_main_share_cache_612.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-main-share-cache-6-12" src="../images/unraid_main_share_cache_612.png" /></a></p>
+</div>
+<div class="tabbed-block">
 <p><a class="glightbox" href="../images/unraid-main-share.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-main-share" src="../images/unraid-main-share.png" /></a></p>
+</div>
+</div>
+</div>
 <ol>
-<li>use <code>data</code></li>
-<li>if you got a cache drive and want to make use of it put it on <code>Yes</code> or keep it disabled (Hardlinks will stay in tact if you're using the cache)</li>
-<li>click on <code>ADD SHARE</code></li>
+<li>Use <code>data</code></li>
+<li>
+<p>Set up your share with the applicable settings.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">unRAID 6.12 (No Cache)</label><label for="__tabbed_3_2">unRAID 6.12 (Cache)</label><label for="__tabbed_3_3">unRAID 6.11</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Select the <code>Primary storage</code> as <code>Array</code> (shown in the <code>No Cache</code> tab above).</p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Select the <code>Primary storage</code> as <code>Cache</code> (shown in the <code>Cache</code> tab above).</li>
+<li>Select the <code>Secondary storage</code> as <code>Array</code></li>
+<li>Make sure <code>Mover action</code> is set to <code>Cache -&gt; Array</code></li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Choose <code>Yes</code> on step (2) (unRAID 6.11 tab above). If not using a cache drive, keep this option disabled.</p>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Hardlinks will stay intact if you're using a cache</p>
+</div>
+</li>
+<li>
+<p>Click on <code>ADD SHARE</code></p>
+</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Keep in mind regarding the use of the Cache drive, The mover can't move files that are in use, like  when seeding with torrents. You will need to stop/pause the torrents so the mover can move them to your Array.</p>
+<p>Keep in mind, regarding the use of the cache drive, unRAID's integrated mover cannot move files that are in use, like seeding torrents. You will need to stop/pause the torrents so the mover can move the files from the cache to your array.</p>
 <div class="admonition tip">
 <p class="admonition-title">If you use qBittorrent you can automate the process by following the following Guide <a href="/Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" rel="noopener noreferrer" target="_blank">HERE</a><br>If you use Deluge you can automate the process by following the following Guide <a href="/Downloaders/Deluge/Tips/Unraid-Mover/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
-<p>With Usenet  you won't have any issues.</p>
+<p>With Usenet, you won't have any issues.</p>
 </div>
 <hr />
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
-<p>On the host (Unraid) you will need to add <code>/mnt/user</code> before it. <strong>So <code>/mnt/user/data</code></strong></p>
-<p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things neat. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code> and <code>Music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
-<p>These subfolders you need to create your self, you can use krusader or winscp to create them or any other way you prefer.</p>
+<p>On the host (unRAID) you will need to add <code>/mnt/user</code> before it. <strong>So <code>/mnt/user/data</code></strong></p>
+<p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code>, and each of these has sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things organized. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code> and <code>Music</code> sub-folders, this is where your library resides, and what you’d pass to Plex, Emby or JellyFin.</p>
+<p>You will need to create these subfolders yourself. You can do this any way you prefer, but Krusader or WinSCP are popular choices if you are unsure.</p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
@@ -3528,7 +3571,7 @@
 </code></pre></div>
 <!-- END INCLUDE -->
 
-<p><em>I'm using lower case on all folder on  purpose, being Linux is case sensitive.</em></p>
+<p><em>I'm using lower-case on all folders on purpose, being Linux is case-sensitive.</em></p>
 <hr />
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/bad-path-suggestion.md -->
@@ -3540,11 +3583,11 @@
 <!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
 <h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link"></a></h2>
-<p>After you created all the needed folders it's time to setup the paths in the docker containers.</p>
-<p>Go to your dashboard and select your docker container you want to edit or if you're starting fresh add the docker containers you want to use or prefer.</p>
-<p>Unraid makes it actually  pretty clear what's the Host Path and what's the Container Path.</p>
-<p><code>Container Path:</code> =&gt; The path that will be used inside the container.</p>
-<p><code>Host Path:</code> =&gt; The path on your Unraid Server (The Host).</p>
+<p>After you've created all the necessary folders, it's time to set up the Docker container's paths.</p>
+<p>Go to your dashboard and select the Docker container you want to edit, or, if you're starting fresh, add the container/App you want to use.</p>
+<p>unRAID makes it pretty clear which is the Host Path and Container Path.</p>
+<p><code>Container Path:</code> =&gt; The path that will be used from inside the container.</p>
+<p><code>Host Path:</code> =&gt; The actual/absolute path used on your unRAID Server (The Host).</p>
 <hr />
 <h3 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h3>
 <p>qBittorrent, Deluge, ruTorrent</p>
@@ -3553,7 +3596,7 @@
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/torrents/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The reason why we use <code>/data/torrents/</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
+<p>The reason why we use <code>/data/torrents/</code> for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3573,7 +3616,7 @@
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/usenet/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The reason why we use <code>/data/usenet/</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
+<p>The reason why we use <code>/data/usenet/</code> for the usenet client is that it only needs access to the usenet data. In the usenet software settings, you’ll need to configure your paths to sort content into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3595,7 +3638,7 @@
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Sonarr, Radarr and Lidarr gets access to everything because the download folder(s) and media folder will look like and be one file system. Hard links will work and moves will be atomic, instead of copy + delete.</p>
+<p>Sonarr, Radarr and Lidarr get access to everything because the download folder(s) and media folder will need to look like, and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3627,7 +3670,7 @@
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/media/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Plex, Emby, JellyFin and Bazarr only needs access to your media library, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
+<p>Plex, Emby, JellyFin and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV and/or Music).</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3642,13 +3685,13 @@
 <hr />
 <h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/unraid-final-result.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-final-result" src="../images/unraid-final-result.png" /></a></p>
-<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
+<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> of how to set up your paths INSIDE your applications.</strong></p>
 <h3 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link"></a></h3>
 <div class="admonition tip">
-<p>Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unraid section.</p>
-<p>The reason why I added the video to the end is because I want the user to actually learn and understand why it's recommended to use this folder structure, before going straight to the YouTube video.</p>
+<p>Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.</p>
+<p>The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure prior to going straight to a YouTube video.</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-<p>Also check out other videos from IBRACORP <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
+<p>Check out other videos from IBRACORP <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/support.md -->
 
@@ -3666,7 +3709,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 15:57:09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2023 17:16:25</span>
       
     
   </small>
