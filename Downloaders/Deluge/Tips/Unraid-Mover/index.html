@@ -2423,33 +2423,6 @@
     requests module
   </a>
   
-    <nav class="md-nav" aria-label="requests module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#user-scripts" class="md-nav__link">
-    User scripts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#go-file" class="md-nav__link">
-    Go File
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#python-venv" class="md-nav__link">
-    Python venv
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -3377,33 +3350,6 @@
     requests module
   </a>
   
-    <nav class="md-nav" aria-label="requests module">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#user-scripts" class="md-nav__link">
-    User scripts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#go-file" class="md-nav__link">
-    Go File
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#python-venv" class="md-nav__link">
-    Python venv
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -3515,13 +3461,10 @@
 <p>After you install the needed <code>Plugins</code> - it's time to configure everything.</p>
 <h3 id="requests-module"><code>requests</code> module<a class="headerlink" href="#requests-module" title="Permanent link"></a></h3>
 <p><code>deluge-mover.py</code> needs the requests Python module, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.</p>
-<p>You can choose one of the following 3 options to install <code>requests</code>.</p>
-<ul>
-<li><a href="#user-scripts">User scripts</a></li>
-<li><a href="#go-file">Go File</a></li>
-<li><a href="#python-venv">Python venv</a></li>
-</ul>
-<h4 id="user-scripts">User scripts<a class="headerlink" href="#user-scripts" title="Permanent link"></a></h4>
+<p>You can choose one of the following 3 options (select a tab) to install <code>requests</code>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">User scripts</label><label for="__tabbed_1_2">Python venv</label><label for="__tabbed_1_3">Go File</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>With this option, we're going to install the <code>requests</code> module when the Array is started the first time.</p>
 <p>In your unRAID Dashboard, go to your <code>Settings</code> tab and select <code>User Scripts</code> in the <code>User Utilities</code> section at the bottom.</p>
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png" /></a></p>
@@ -3540,16 +3483,8 @@ pip3<span class="w"> </span>install<span class="w"> </span>requests
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-requests-schedule.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-requests-schedule.png" /></a></p>
 <p>Click on <code>Apply</code>.</p>
 <p>Finally, you will need to choose <code>RUN IN BACKGROUND</code> or restart your unRAID server to install the <code>requests</code> module.</p>
-<hr />
-<h4 id="go-file">Go File<a class="headerlink" href="#go-file" title="Permanent link"></a></h4>
-<p>With this option, we're going to install the <code>requests</code> module when the unRAID server is started.</p>
-<p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your text editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>).</p>
-<p>Copy/paste the following command</p>
-<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>requests
-</code></pre></div>
-<p>Restart your unRAID Server or run the above command from the terminal.</p>
-<hr />
-<h4 id="python-venv">Python venv<a class="headerlink" href="#python-venv" title="Permanent link"></a></h4>
+</div>
+<div class="tabbed-block">
 <p>With this option, we're going to create a <a href="https://docs.python.org/3/library/venv.html">Python virtual environment</a> on our disk. We will use this to run and store dependencies (<code>requests</code>) for this specific environment.</p>
 <p>By doing this, we will <strong>only need to configure this once</strong> and it will be persistent after reboots <em>(this differs from the previous steps)</em>.</p>
 <p>First, you need to choose a location to start a new Python environment.</p>
@@ -3574,11 +3509,24 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <p class="admonition-title">Info</p>
 <p>Replace <code>/mnt/user/data/scripts/.venv</code> with the path you have chosen.</p>
 </div>
+</div>
+<div class="tabbed-block">
+<p>With this option, we're going to install the <code>requests</code> module when the unRAID server is started.</p>
+<p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your text editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>).</p>
+<p>Copy/paste the following command</p>
+<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>requests
+</code></pre></div>
+<p>Restart your unRAID Server or run the above command from the terminal.</p>
+</div>
+</div>
+</div>
 <hr />
 <h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h3>
 <p>Now, using your favorite text editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) edit the script you downloaded at the beginning of the guide (<a href="#deluge-mover-script">HERE</a>).</p>
 <p>You only need to change a few options at the top of the script.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># this webui will need to be the JSON-RPC endpoint</span>
+<div class="highlight"><pre><span></span><code><span class="c1">### CONFIGURATION VARIABLES ###</span>
+
+<span class="c1"># this webui will need to be the JSON-RPC endpoint</span>
 <span class="c1"># this ends with &#39;/json&#39;</span>
 <span class="n">deluge_webui</span> <span class="o">=</span> <span class="s2">&quot;http://localhost:8112/json&quot;</span>
 <span class="n">deluge_password</span> <span class="o">=</span> <span class="s2">&quot;deluged&quot;</span>
@@ -3590,30 +3538,49 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <span class="c1"># instead of only torrents in that range that exist on the cache</span>
 <span class="n">check_fs</span> <span class="o">=</span> <span class="kc">False</span>
 
+<span class="c1"># if you are using the mover tuner and don&#39;t want to use it for</span>
+<span class="c1"># this script, set this to true</span>
+<span class="c1">#</span>
+<span class="c1"># if you do not use mover tuner, leave this as false</span>
+<span class="n">use_mover_old</span> <span class="o">=</span> <span class="kc">False</span>
+
 <span class="c1"># this is the absolute host path to your cache drive&#39;s downloads</span>
 <span class="c1"># you only need this to be changed/set if using &#39;check_fs = True&#39;</span>
 <span class="n">cache_download_path</span> <span class="o">=</span> <span class="s2">&quot;/mnt/cache/torrents/completed&quot;</span>
 
 <span class="c1"># the age range of days to look for relevant torrents to move</span>
-<span class="n">age_day_min</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">age_day_max</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1"># i dont recommend setting age_day_max to less than the schedule</span>
+<span class="c1"># you run the script on...</span>
+<span class="c1">#</span>
+<span class="c1"># if you run every 7 days, this should be at least 7 to prevent</span>
+<span class="c1"># files from being stuck on your cache forever</span>
+<span class="c1">#</span>
+<span class="c1"># 0 disables age_day_max</span>
+<span class="c1"># set both age vars to 0 to move everything on your cache drive</span>
+
+<span class="n">age_day_min</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">age_day_max</span> <span class="o">=</span> <span class="mi">0</span>
 </code></pre></div>
 <ul>
 <li><code>deluge_webui</code> =&gt; The URL you use to access Deluge locally. (<em>the</em> <code>"</code> <em>should remain</em>)</li>
 <li><code>deluge_password</code> =&gt; Your Deluge WebUI <code>Password</code>. (<em>the</em> <code>"</code> <em>should remain</em>)</li>
 <li><code>check_fs</code> =&gt; If set to <code>True</code>, it will check for the file on the cache drive before pausing.</li>
-<li><code>cache_download_path</code> =&gt; The location (host path) for your cache folder (if check_fs is True)</li>
-<li><code>age_day_min</code> =&gt; Set the minimum age (days) of the torrents that you wish to move.</li>
-<li><code>age_day_max</code> =&gt; Set the maximum age (days) of the torrents that you wish to move.</li>
-</ul>
+<li>
+<p><code>use_mover_old</code> =&gt; See below.</p>
 <div class="admonition warning">
-<p>Depending on whether you use the unRAID <code>Mover Tuning</code> app, you may need to change <strong>line 164</strong>:</p>
 <ul>
 <li>If you do not use <code>Mover Tuning</code>, you <strong>DO NOT</strong> have to make any changes.</li>
-<li>If you use <code>Mover Tuning</code> but <strong>don't</strong> want to use it for the script, change <strong>line 164</strong> from <code>system('/usr/local/sbin/mover start')</code> to <code>system('/usr/local/sbin/mover.old start')</code></li>
+<li>If you use <code>Mover Tuning</code> but <strong>DON'T</strong> want to use it for the script, change this to <code>True</code></li>
 <li>If you use <code>Mover Tuning</code> and <strong>DO</strong> want to use it for the script, you will not have to make any changes. However, for this option, inside the <code>Mover Tuner</code> you will need to set <code>Move Now button follows plugin filters</code> to <code>Yes</code> and <code>Disable Mover running on a schedule</code> to <code>No</code>.</li>
 </ul>
 </div>
+</li>
+<li>
+<p><code>cache_download_path</code> =&gt; The location (host path) for your cache folder (if check_fs is True)</p>
+</li>
+<li><code>age_day_min</code> =&gt; Set the minimum age (days) of the torrents that you wish to move.</li>
+<li><code>age_day_max</code> =&gt; Set the maximum age (days) of the torrents that you wish to move.</li>
+</ul>
 <h4 id="copy-the-script-to-your-preferred-location">Copy the script to your preferred location<a class="headerlink" href="#copy-the-script-to-your-preferred-location" title="Permanent link"></a></h4>
 <p>Place the script you just edited somewhere easy to access/remember.</p>
 <p>Suggestions:</p>
@@ -3632,7 +3599,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <p>Click on the cogwheel of the new script in the list.</p>
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" /></a></p>
 <p>Copy/Paste the following in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python (Native)</label><label for="__tabbed_1_2">Python (venv)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python (Native)</label><label for="__tabbed_2_2">Python (venv)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
@@ -3683,7 +3650,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 15:57:09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2023 17:05:04</span>
       
     
   </small>
