@@ -4,6 +4,6 @@
     - You have a media player (hardware devices) that can passthrough HD audio.
     - You don't have a AppleTV (Being it can't passthrough untouched audio).
 
-??? question "Which audio formats to choose"
+??? question "Which audio formats do I choose?"
 
     ![!Audio Flowchart](/Radarr/images/flowchart-audio.png)

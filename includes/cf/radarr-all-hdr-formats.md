@@ -1,6 +1,6 @@
 ??? abstract "All HDR Formats - [Click to show/hide]"
 
-    **Why would I choose All HDR formats ?**
+    **Why would I choose All HDR formats?**
 
     - You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
