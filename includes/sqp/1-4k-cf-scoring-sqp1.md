@@ -23,6 +23,19 @@
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible.<br>The reason why `DTS` and `DTS-ES` have a score of `0` is to make sure that you don't limit yourself too much."
 
 ??? abstract "All HDR Formats + DV (WEBDL) - [Click to show/hide]"
+
+    **Why would I choose All HDR formats + add `DV (WEBDL)` with a score of `-10000`?**
+
+    - Because you want maximum compatibility across all devices.
+    - You must add **ALL** the HDR formats - don't leave any of them out!
+    - You must add DV-WEBDL with a score if `-10000`!
+
+    {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
+
+    {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+
+    {! include-markdown "../../includes/cf/dv-info-profiles.md" !}
+
     | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['dv-hdr10']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10)           |   {{ radarr['cf']['dv-hdr10']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-hdr10']['trash_id'] }}      |
