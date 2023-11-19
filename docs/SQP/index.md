@@ -1,13 +1,16 @@
+<meta name="robots" content="noindex, nofollow" />
+
 # Special Quality Profiles
 
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
 
 !!! warning
 
-    - Anything here is for private use only and not for public use. :bangbang:
-    - I expect from the users that got the link to this page to honour it. :bangbang:
-    - Yes, you can talk in the public channels that you use a specific SQP.
-    - If others are interested they can join.
+    - Anything here is for private use only. It is prohibited to share anything related to SQP, such as setup information or links to the guide, in any public locations.:bangbang:
+    - I expect users who received the link to this page to honor this rule.:bangbang:
+    - Any questions about SQP should be asked in the related discord, not in the main channel or any other public places.:bangbang:
+    - Yes, you can mention in the public channels that you are using a specific SQP.
+    - If others are interested, they can join by accepting the rules in the `access-to-sqp` channel.
 
 ## The Following SQP are available
 
