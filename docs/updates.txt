@@ -1,3 +1,10 @@
+# 2023-11-19 16:00
+- [feat(guide): include the different hdr formats in the quality profiles](https://github.com/TRaSH-Guides/Guides/pull/1623)
+- [fix(guide): Update Radarr/Sonarr guide How to rename your folders](https://github.com/TRaSH-Guides/Guides/pull/1647)
+- [fix(starr): add several groups to LQ](https://github.com/TRaSH-Guides/Guides/pull/1644)
+- [fix(starr): Custom Format Conditional Changes](https://github.com/TRaSH-Guides/Guides/pull/1643)
+- [update(deluge-mover): update mover script guide for changes](https://github.com/TRaSH-Guides/Guides/pull/1646)
+
 # 2023-11-15 16:15
 - [feat(guides): Add Honeywell qBittorrent Theme to Themes Page](https://github.com/TRaSH-Guides/Guides/pull/1633)
 - [feat(guides): Added new guide for deluge-mover script](https://github.com/TRaSH-Guides/Guides/pull/1638)
