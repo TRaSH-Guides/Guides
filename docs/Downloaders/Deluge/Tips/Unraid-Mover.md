@@ -220,7 +220,7 @@ Click on the cogwheel of the new script in the list.
 
 ![!Select user script](images/Unraid-settings-user-scripts-edit-deluge-mover.png)
 
-Copy/Paste the following in the new window that opens, then click `SAVE CHANGES`.
+Choose your method (select a tab) and copy/paste the script in the new window that opens, then click `SAVE CHANGES`.
 === "Python (Native)"
 
     ``` bash
@@ -238,7 +238,7 @@ Copy/Paste the following in the new window that opens, then click `SAVE CHANGES`
         #!/bin/bash
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/venv/bin/python3 /mnt/user/data/scripts/deluge-mover.py
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/deluge-mover.py
         echo "deluge-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "Deluge Mover" -d "Deluge Mover completed @ `date +%H:%M:%S`."
     ```
@@ -263,5 +263,3 @@ You can generate your scheduling [HERE](https://crontab.guru/)
 ![!Set Run Time](images/Unraid-settings-user-scripts-deluge-mover-cron.png)
 
 {! include-markdown "../../../../includes/support.md" !}
-
-<!-- --8<-- "includes/support.md" -->
