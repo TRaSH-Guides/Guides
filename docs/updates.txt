@@ -1,3 +1,6 @@
+# 2023-11-19 20:30
+- [fix(radarr): Add CtrlHD to Atmos condition in TrueHD Atmos Radarr Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1651)
+
 # 2023-11-19 16:00
 - [feat(guide): include the different hdr formats in the quality profiles](https://github.com/TRaSH-Guides/Guides/pull/1623)
 - [fix(guide): Update Radarr/Sonarr guide How to rename your folders](https://github.com/TRaSH-Guides/Guides/pull/1647)
