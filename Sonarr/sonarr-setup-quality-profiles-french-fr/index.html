@@ -4036,26 +4036,84 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 <h4 id="webdl-2160p">WEBDL-2160p<a class="headerlink" href="#webdl-2160p" title="Permanent link"></a></h4>
 <p>Si vous préférez les 2160p WEBDL (WEB-2160p)</p>
 <p>Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR, le 2160p sans DV/HDR ne représente qu'un bénéfice minime.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-hdr-formats.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-all-hdr-formats.md -->
 <details class="abstract">
-<summary>HDR Formats - [Click to show/hide]</summary>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info.md -->
-<div class="admonition info">
-<p class="admonition-title">Dolby Vision is available in several profiles</p>
+<summary>All HDR Formats - [Click to show/hide]</summary>
+<p><strong>Why would I choose All HDR formats ?</strong></p>
 <ul>
-<li><strong>Profile 5</strong> <sup>(<em>1</em>)</sup> - This is what comes with WEB-DL Dolby Vision release without HDR10 fallback.<br>(<em>Incompatible devices will playback with blown out pinks and greens</em>)</li>
-<li><strong>Profile 7</strong> <sup>(<em>2</em>)</sup> - This is what comes with UHD Bluray Remuxes and UHD BluRay releases.<br><em>These files will play on an Nvidia Shield Pro (2019), but on most other players will revert to the HDR10 fallback.</em></li>
-<li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL releases (HULU), Hybrid UHD Remux and UHD BluRay releases all of which have HDR10 fallback.<br><em>This works with several mainstream media players.</em><br></li>
-</ul>
-<hr />
-<ul>
-<li><sup>(<em>1</em>) <em>On PLEX for AppleTV, It has been confirmed that with the latest build of Plex, Profile 5 MKV files now play correctly!</em><br><em>On an AppleTV 4K 1st gen and up, files are direct streamed (not transcoded) to an MP4 container and play using the native AVPlayer instead of Plex’s MPV.</em></sup></li>
-<li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
-<li><sup>(<em>3</em>) <em>On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, And will only play the HDR10 fallback.</em><br><strong><em>“although your TV will incorrectly say that it is playing DV”</em></strong>.<br><em>With infuse it will convert it on the fly to Profile 5 and deliver real Dolby Vision.</em><br><strong><em>“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy) - Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”</em></strong></sup></li>
-</ul>
+<li>
+<p>You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</p>
+<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
 <!-- END INCLUDE -->
+</li>
+<li>
+<p>You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.</p>
+</li>
+<li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
+</ul>
+<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
+<details class="info">
+<summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
+<p>Why am I getting purple or green colors?</p>
+<p>There are several possible reasons why your TV would show purple or green colors when playing Dolby Vision content.</p>
+<ol>
+<li>
+<p><strong>Unsupported Hardware</strong>: Your TV or hardware media player device (Roku, AppleTV, etc) doesn't support Dolby Vision or your hardware media player device doesn't support all the Dolby Vision Profiles. As a result, the device might struggle to produce accurate colors, leading to a purple or green tint.</p>
+</li>
+<li>
+<p><strong>Incorrect Display Settings</strong>: Dolby Vision content often requires specific settings to be enabled on your TV or display device in order to deliver the intended visual experience. If these settings are not configured properly, it can result in the device showing distorted colors (including purple or green hues).</p>
+</li>
+<li>
+<p><strong>HDMI Compatibility Issues</strong>: Sometimes, HDMI cables or ports may not be fully compatible with Dolby Vision. If the media player device is not recognizing the Dolby Vision signal properly, it may fail to process the content correctly, resulting in abnormal color rendering.</p>
+</li>
+</ol>
+<p>To resolve the purple or green color issues when playing Dolby Vision content, you can try the following troubleshooting steps:</p>
+<ol>
+<li>Ensure your TV or hardware media player device is Dolby Vision compatible and up-to-date with the latest firmware.</li>
+<li>Verify that your TV or display device is set up correctly and has the necessary Dolby Vision settings enabled.</li>
+<li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
+</ol>
+</details>
+<!-- END INCLUDE -->
+<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
+<details class="info">
+<summary>Dolby Vision Profiles - [Click to show/hide]</summary>
+<p>Dolby Vision Profiles</p>
+<ul>
+<li><strong>Profile 5</strong> <sup>(<em>1</em>)</sup> - This is what comes with WEB-DL Dolby Vision releases without HDR10 fallback.<br>(<em>Incompatible devices will playback with blown out pinks and greens</em>)</li>
+<li><strong>Profile 7</strong> <sup>(<em>2</em>)</sup> - This is what comes with UHD Bluray Remuxes and UHD BluRay releases.<br><em>These files will play on an Nvidia Shield Pro (2019), but on most other players will revert to the HDR10 fallback.</em></li>
+<li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
+</ul>
+<hr />
+<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
+</div>
+<!-- END INCLUDE -->
+<ul>
+<li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
+<li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
+<li><sup>(<em>3</em>) <em>On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, and will only play the HDR10 fallback if CM2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“although your TV will incorrectly say that it is playing DV”</em></strong>.<br><em>With infuse it will convert it on the fly to Profile 5, and deliver real Dolby Vision if CMv2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy), Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”</em></strong></sup></li>
+</ul>
+</details>
+<details class="info">
+<summary>Dolby Vision Versions - CMv2.9 and CMv4.0 - [Click to show/hide]</summary>
+<div class="admonition bug">
+<p class="admonition-title">It is too technical to explain in detail, so I'll keep it short with tested facts: <br>PLEX for AppleTV and Plex with Infuse only support CMv2.9.</p>
+</div>
+<p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
+<p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
+</details>
+<!-- END INCLUDE -->
+<!-- BEGIN INCLUDE ../../includes/cf/which-hdr-formats-should-i-choose.md -->
+<details class="question">
+<summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
+</details>
+<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -4117,10 +4175,60 @@ Afin d'illustrer ce principe, vous verrez une section <strong>"Mix original (opt
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you (or family members you share your collection with) have a setup that doesn't support Dolby Vision then it's best to add <strong>ALL</strong> the HDR Formats listed above (including <strong>ALL</strong> the DV ones (with and without HDR in it)), It is important to also add the <a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a> Custom Format with a score of -10000</p>
+<details class="abstract">
+<summary>Add Custom Format <code>DV (WEBDL)</code> with a score of <code>-10000</code> - [Click to show/hide]</summary>
+<p><strong>Why would I add this Custom Format?</strong></p>
+<ul>
+<li>Not all devices in your chain support Dolby Vision.</li>
+<li>You share your media library with other family members that don't have Dolby Vision compatible devices.</li>
+<li>According the flowchart I should add this Custom Format</li>
+</ul>
+<p><p align="center"><a class="glightbox" href="/Radarr/images/flowchart-hdr-dv-webdl.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Flowchart" height="20%" src="/Radarr/images/flowchart-hdr-dv-webdl.png" width="20%" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl">DV (WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>9b27ab6498ec0f31a3353992e19434ca</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="abstract">
+<summary>Add Custom Format <code>HDR10+ Boost</code> with a score of <code>901</code>- [Click to show/hide]</summary>
+<p><strong>Why would I add this Custom Format?</strong></p>
+<ul>
+<li>You have a (Samsung) TV that supports HDR10+.</li>
+<li>According the flowchart I should add this Custom Format</li>
+</ul>
+<p><p align="center"><a class="glightbox" href="/Radarr/images/flowchart-hdr10plus-boost.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Flowchart" height="20%" src="/Radarr/images/flowchart-hdr10plus-boost.png" width="20%" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">If you use this Custom Format then 99% of the time you also need to add the following Custom Format <code>DV (WEBDL)</code> with a score of <code>-10000</code></p>
 </div>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost">HDR10+ Boost</a></td>
+<td style="text-align: center;">901</td>
+<td>0dad0a507451acddd754fe6dc3a7f5e7</td>
+</tr>
+</tbody>
+</table>
+</details>
 </details>
 <!-- END INCLUDE -->
 
@@ -4881,8 +4989,6 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
 <p>TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (<em>en anglais uniquement</em>) :</p>
 <ul>
 <li><a href="/Sonarr/sonarr-setup-quality-profiles/#hdr-formats" rel="noopener noreferrer" target="_blank">HDR Formats</a></li>
-<li><a href="/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl" rel="noopener noreferrer" target="_blank">HDR Formats + DV (WEBDL)</a></li>
-<li><a href="/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost" rel="noopener noreferrer" target="_blank">HDR Formats + DV (WEBDL) + HDR10+ Boost</a></li>
 </ul>
 <hr />
 <h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link"></a></h2>
@@ -4908,7 +5014,7 @@ Si vous voulez faire la même chose, veillez à remplacer <a href="/Sonarr/sonar
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 13, 2023 20:22:57</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 19, 2023 14:35:05</span>
       
     
   </small>

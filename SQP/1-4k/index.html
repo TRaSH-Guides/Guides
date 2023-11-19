@@ -3634,6 +3634,71 @@
 </details>
 <details class="abstract">
 <summary>All HDR Formats + DV (WEBDL) - [Click to show/hide]</summary>
+<p><strong>Why would I choose All HDR formats + add <code>DV (WEBDL)</code> with a score of <code>-10000</code>?</strong></p>
+<ul>
+<li>Because you want maximum compatibility across all devices.</li>
+<li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
+<li>You must add DV-WEBDL with a score if <code>-10000</code>!</li>
+</ul>
+<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
+</div>
+<!-- END INCLUDE -->
+<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
+<details class="info">
+<summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
+<p>Why am I getting purple or green colors?</p>
+<p>There are several possible reasons why your TV would show purple or green colors when playing Dolby Vision content.</p>
+<ol>
+<li>
+<p><strong>Unsupported Hardware</strong>: Your TV or hardware media player device (Roku, AppleTV, etc) doesn't support Dolby Vision or your hardware media player device doesn't support all the Dolby Vision Profiles. As a result, the device might struggle to produce accurate colors, leading to a purple or green tint.</p>
+</li>
+<li>
+<p><strong>Incorrect Display Settings</strong>: Dolby Vision content often requires specific settings to be enabled on your TV or display device in order to deliver the intended visual experience. If these settings are not configured properly, it can result in the device showing distorted colors (including purple or green hues).</p>
+</li>
+<li>
+<p><strong>HDMI Compatibility Issues</strong>: Sometimes, HDMI cables or ports may not be fully compatible with Dolby Vision. If the media player device is not recognizing the Dolby Vision signal properly, it may fail to process the content correctly, resulting in abnormal color rendering.</p>
+</li>
+</ol>
+<p>To resolve the purple or green color issues when playing Dolby Vision content, you can try the following troubleshooting steps:</p>
+<ol>
+<li>Ensure your TV or hardware media player device is Dolby Vision compatible and up-to-date with the latest firmware.</li>
+<li>Verify that your TV or display device is set up correctly and has the necessary Dolby Vision settings enabled.</li>
+<li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
+</ol>
+</details>
+<!-- END INCLUDE -->
+<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
+<details class="info">
+<summary>Dolby Vision Profiles - [Click to show/hide]</summary>
+<p>Dolby Vision Profiles</p>
+<ul>
+<li><strong>Profile 5</strong> <sup>(<em>1</em>)</sup> - This is what comes with WEB-DL Dolby Vision releases without HDR10 fallback.<br>(<em>Incompatible devices will playback with blown out pinks and greens</em>)</li>
+<li><strong>Profile 7</strong> <sup>(<em>2</em>)</sup> - This is what comes with UHD Bluray Remuxes and UHD BluRay releases.<br><em>These files will play on an Nvidia Shield Pro (2019), but on most other players will revert to the HDR10 fallback.</em></li>
+<li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
+</ul>
+<hr />
+<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
+</div>
+<!-- END INCLUDE -->
+<ul>
+<li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
+<li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
+<li><sup>(<em>3</em>) <em>On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, and will only play the HDR10 fallback if CM2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“although your TV will incorrectly say that it is playing DV”</em></strong>.<br><em>With infuse it will convert it on the fly to Profile 5, and deliver real Dolby Vision if CMv2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy), Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”</em></strong></sup></li>
+</ul>
+</details>
+<details class="info">
+<summary>Dolby Vision Versions - CMv2.9 and CMv4.0 - [Click to show/hide]</summary>
+<div class="admonition bug">
+<p class="admonition-title">It is too technical to explain in detail, so I'll keep it short with tested facts: <br>PLEX for AppleTV and Plex with Infuse only support CMv2.9.</p>
+</div>
+<p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
+<p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
+</details>
+<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
