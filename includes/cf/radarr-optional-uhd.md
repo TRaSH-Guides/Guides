@@ -7,4 +7,4 @@
 
     Breakdown and Why
 
-    - **{{ radarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
+    - **{{ radarr['cf']['sdr']['name'] }}:** This will prevent grabbing UHD/4k releases without HDR Formats.

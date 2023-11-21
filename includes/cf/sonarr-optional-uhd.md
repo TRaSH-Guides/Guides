@@ -2,11 +2,9 @@
     | Custom Format                                                                               |                          Score                          | Trash ID                                 |
     | ------------------------------------------------------------------------------------------- | :-----------------------------------------------------: | ---------------------------------------- |
     | [{{ sonarr['cf']['sdr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#sdr)       |  {{ sonarr['cf']['sdr']['trash_scores']['default'] }}   | {{ sonarr['cf']['sdr']['trash_id'] }}    |
-    | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#retags) | {{ sonarr['cf']['retags']['trash_scores']['default'] }} | {{ sonarr['cf']['retags']['trash_id'] }} |
 
     ------
 
     Breakdown and Why
 
-    - **{{ sonarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
-    - **{{ sonarr['cf']['retags']['name'] }}:** This will help avoid retagged releases that may no longer meet the quality of the original group (e.g. TGx downsampling a NTb release from 5.1 audio to 2.0 audio yet maintain the NTb naming)
+    - **{{ sonarr['cf']['sdr']['name'] }}:** This will prevent grabbing UHD/4k releases without HDR Formats.

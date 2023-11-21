@@ -99,6 +99,8 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
+{! include-markdown "../../includes/cf/radarr-optional.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 I decided not to add `Audio Advanced` Custom Formats to the encodes profile, You will hardly find HD audio with HD Bluray Encodes. With HD Bluray Encodes I suggest going for quality. If you also want HD audio formats I would suggest going with Remuxes or UHD Encodes.
@@ -145,6 +147,8 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
+{! include-markdown "../../includes/cf/radarr-optional.md" !}
+
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
@@ -189,6 +193,8 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
+{! include-markdown "../../includes/cf/radarr-optional.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Use the following main settings in your profile.
@@ -232,6 +238,8 @@ If you prefer 2160p Remuxes (Remux-2160p)
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
