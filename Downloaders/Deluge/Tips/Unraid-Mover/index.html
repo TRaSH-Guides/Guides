@@ -2090,7 +2090,7 @@
         
   
   <span class="md-ellipsis">
-    How to run the unRaid mover for qBittorent seeding torrents
+    unRAID Mover and qBittorrent
   </span>
   
 
@@ -3598,7 +3598,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <p><a class="glightbox" href="../images/Unraid-user-scripts-add-new-script-enter-name-deluge.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Deluge Mover" src="../images/Unraid-user-scripts-add-new-script-enter-name-deluge.png" /></a></p>
 <p>Click on the cogwheel of the new script in the list.</p>
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" /></a></p>
-<p>Copy/Paste the following in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
+<p>Choose your method (select a tab) and copy/paste the script in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python (Native)</label><label for="__tabbed_2_2">Python (venv)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -3614,7 +3614,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
 <span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover starting @ `date +%H:%M:%S`.&quot;</span>
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;executing script to pause torrents and run mover.&quot;</span>
-<span class="w">    </span>/mnt/user/data/scripts/venv/bin/python3<span class="w"> </span>/mnt/user/data/scripts/deluge-mover.py
+<span class="w">    </span>/mnt/user/data/scripts/.venv/bin/python3<span class="w"> </span>/mnt/user/data/scripts/deluge-mover.py
 <span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deluge-mover completed and resumed all paused torrents.&quot;</span>
 <span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover completed @ `date +%H:%M:%S`.&quot;</span>
 </code></pre></div>
@@ -3643,14 +3643,12 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 </div>
 <!-- END INCLUDE -->
 
-<!-- --8<-- "includes/support.md" -->
-
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2023 17:05:04</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2023 19:01:22</span>
       
     
   </small>
