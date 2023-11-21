@@ -23,15 +23,6 @@
       "fields": {
         "value": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))"
       }
-    },
-    {
-      "name": "jennaortega",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(?<!-)\\b(jennaortega(UHD)?)\\b"
-      }
     }
   ]
 }
