@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bIMAX\\b"
+        "value": "\\b((?<!NON[ ._-])IMAX)\\b"
       }
     },
     {
