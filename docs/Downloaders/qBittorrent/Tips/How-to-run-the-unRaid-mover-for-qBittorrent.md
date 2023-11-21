@@ -47,7 +47,7 @@ After you install the needed `Plugins` - it's time to configure everything.
 
 ### `qbittorrent-api` module
 
-The script needs the qbittorrent-qpi module to work, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.
+The script needs the qbittorrent-api module to work, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.
 
 You can choose one of the following 3 options (select a tab) to install `qbittorrent-api`.
 
