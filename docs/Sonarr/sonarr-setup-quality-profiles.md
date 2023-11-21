@@ -86,6 +86,8 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
+{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
