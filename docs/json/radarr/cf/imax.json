@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 800
   },
+  "trash_regex": "https://regex101.com/r/e7ugxU/1",
   "name": "IMAX",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
