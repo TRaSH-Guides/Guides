@@ -3941,6 +3941,78 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
+<details class="abstract">
+<summary>Optional - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>f537cf427b64c38c8e36298f657e4828</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>Streaming Services - [Click to show/hide]</summary>
@@ -4064,7 +4136,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </details>
 <!-- END INCLUDE -->
 
-<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile, You will hardly find HD audio with HD Bluray Encodes. With HD Bluray Encodes I suggest going for quality. If you also want HD audio formats I would suggest going with Remuxes or UHD Encodes.</p>
+<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the encodes profile. You will hardly find HD audio with HD Bluray Encodes. When downloading HD Bluray Encodes, I suggest going for quality. If you want HD audio formats, I would suggest going with a Remux or UHD Encode.</p>
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/qp-bluray-webdl.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="HD Bluray + WEB" src="../images/qp-bluray-webdl.png" /></a></p>
 <div class="admonition warning">
@@ -4632,6 +4704,78 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
+<details class="abstract">
+<summary>Optional - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>f537cf427b64c38c8e36298f657e4828</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-optional-uhd.md -->
 <details class="abstract">
 <summary>Optional UHD - [Click to show/hide]</summary>
@@ -4654,7 +4798,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>SDR:</strong> This will help to prevent to grab UHD/4k releases without HDR Formats.</li>
+<li><strong>SDR:</strong> This will prevent the grabbing of UHD/4K releases that do not contain HDR.</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -5148,6 +5292,78 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
 </li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
+<details class="abstract">
+<summary>Optional - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>f537cf427b64c38c8e36298f657e4828</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -5847,6 +6063,78 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </details>
 <!-- END INCLUDE -->
 
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional.md -->
+<details class="abstract">
+<summary>Optional - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>f537cf427b64c38c8e36298f657e4828</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
+<div class="admonition danger">
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-optional-uhd.md -->
 <details class="abstract">
 <summary>Optional UHD - [Click to show/hide]</summary>
@@ -5869,7 +6157,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>SDR:</strong> This will help to prevent to grab UHD/4k releases without HDR Formats.</li>
+<li><strong>SDR:</strong> This will prevent the grabbing of UHD/4K releases that do not contain HDR.</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -6518,7 +6806,7 @@ When you add your preferred Custom Format and set it to something like <code>+10
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 19, 2023 14:35:05</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 22, 2023 16:58:15</span>
       
     
   </small>
