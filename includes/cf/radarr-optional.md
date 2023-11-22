@@ -18,8 +18,8 @@
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.
     - **{{ radarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
-    - **{{ radarr['cf']['retags']['name'] }}:** [*Optional*] Use this only if you dislike retagged releases. This will help avoid retagged releases that may no longer meet the quality of the original group
-    - **{{ radarr['cf']['scene']['name'] }}:** [*Optional*] (use these only if you dislike scene releases)
+    - **{{ radarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.
+    - **{{ radarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
     - **{{ radarr['cf']['x265-no-hdrdv']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265. - More info [HERE](/Misc/x265-4k/){:target="_blank" rel="noopener noreferrer"}.
 
         **But it will allow x265 releases if they have HDR and/or DV**
