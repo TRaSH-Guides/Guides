@@ -4,7 +4,8 @@
     "radarr": {
       "custom_formats": ["docs/json/radarr/cf"],
       "qualities": ["docs/json/radarr/quality-size"],
-      "naming": ["docs/json/radarr/naming"]
+      "naming": ["docs/json/radarr/naming"],
+      "quality_profiles": ["docs/json/radarr/quality-profiles"]
     },
     "sonarr": {
       "release_profiles": ["docs/json/sonarr/rp"],
