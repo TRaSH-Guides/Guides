@@ -13,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus)\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b"
       }
     }
   ]
