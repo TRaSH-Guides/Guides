@@ -1,3 +1,15 @@
+# 2023-12-06 20:00
+- [fix(compose): cr.hotio.dev -> ghcr.io](https://github.com/TRaSH-Guides/Guides/pull/1665)
+- [fix(guide): corrected grammar and typo: audio-info.md](https://github.com/TRaSH-Guides/Guides/pull/1663)
+- [fix(guides): add DTS-X details](https://github.com/TRaSH-Guides/Guides/pull/1500)
+- [feat(radarr): Add jennaortega to Radarr LQ (Release Title) Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1659)
+- [fix(radarr): add Extended Clip to Extras CF](https://github.com/TRaSH-Guides/Guides/pull/1668)
+- [fix(radarr): Add Missing Optionals](https://github.com/TRaSH-Guides/Guides/pull/1657)
+- [fix(radarr): typo in url unwanted-uhd](https://github.com/TRaSH-Guides/Guides/pull/1666)
+- [fix(sonarr): add Extended Clip to Extras CF](https://github.com/TRaSH-Guides/Guides/pull/1668)
+- [fix(sonarr): Add Missing Optionals](https://github.com/TRaSH-Guides/Guides/pull/1657)
+- fix(sonarr): lqGroups.json typo
+
 # 2023-11-19 20:30
 - [fix(radarr): Add CtrlHD to Atmos condition in TrueHD Atmos Radarr Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1651)
 
