@@ -1,4 +1,4 @@
-# 2023-12-06 20:00
+# 2023-12-06 21:00
 - [fix(compose): cr.hotio.dev -> ghcr.io](https://github.com/TRaSH-Guides/Guides/pull/1665)
 - [fix(guide): corrected grammar and typo: audio-info.md](https://github.com/TRaSH-Guides/Guides/pull/1663)
 - [fix(guides): add DTS-X details](https://github.com/TRaSH-Guides/Guides/pull/1500)
