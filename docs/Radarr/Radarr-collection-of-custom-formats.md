@@ -977,7 +977,8 @@ I also made 3 guides related to this one.
 
 ??? question "LQ - [Click to show/hide]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+    - A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+    - Release Groups that break the Starr apps automation because their bad naming that could cause loops, even if their overall quality is perfect.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1540,7 +1541,10 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
-    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+    Groups that:
+
+    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1556,8 +1560,11 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 02 - [Click to show/hide]"
 
-    - Groups that haven't released much. (yet)
-    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+    Groups that:
+
+    - Haven't released much. (yet)
+    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1573,11 +1580,14 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 03 - [Click to show/hide]"
 
-    - Groups that only use one source.(So called one disc wonders.)
-    - Groups that use use a fully automated way without checking.
-    - Groups that don't check their stuff.
-    - Groups that haven't released much. (yet)
-    - Groups that retired and don't have the best quality by todays standards
+    Groups that:
+
+    - Only use one source.(So called one disc wonders.)
+    - Use a fully automated way without checking.
+    - Don't check their stuff.
+    - Haven't released much. (yet)
+    - Retired and don't have the best quality by todays standards
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1593,9 +1603,12 @@ I also made 3 guides related to this one.
 
 ??? question "UHD Bluray Tier 01 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both).
+    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc).
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1611,9 +1624,12 @@ I also made 3 guides related to this one.
 
 ??? question "UHD Bluray Tier 02 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both).
+    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc).
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1629,9 +1645,13 @@ I also made 3 guides related to this one.
 
 ??? question "UHD Bluray Tier 03 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - HDR/DoVi (Depending what's offered and often both).
+    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc) or Lossy audio formats (DD, DD+, etc).
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1647,8 +1667,11 @@ I also made 3 guides related to this one.
 
 ??? question "HD Bluray Tier 01 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - Have a minimum of GP releases.(best encode in it's class  1080p and lower)
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1664,7 +1687,10 @@ I also made 3 guides related to this one.
 
 ??? question "HD Bluray Tier 02 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1680,7 +1706,11 @@ I also made 3 guides related to this one.
 
 ??? question "HD Bluray Tier 03 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1696,8 +1726,11 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 01 - [Click to show/hide]"
 
-    - Groups that create hybrids.
-    - Groups that sign up for the gentleman list on a certain private tracker.
+    Groups that:
+
+    - Create hybrids.
+    - Sign up for the gentleman list on a certain private tracker.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1713,7 +1746,10 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 02 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - Sign up for the gentleman list on a certain private tracker.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1729,7 +1765,10 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 03 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
