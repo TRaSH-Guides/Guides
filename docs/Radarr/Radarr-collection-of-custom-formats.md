@@ -1672,7 +1672,6 @@ I also made 3 guides related to this one.
     Groups that:
 
     - Create hybrids.
-    - Sign up for the gentleman list on a certain private tracker.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1691,7 +1690,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Sign up for the gentleman list on a certain private tracker.
+    - Only did a few releases
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
