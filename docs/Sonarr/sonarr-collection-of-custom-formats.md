@@ -1342,7 +1342,10 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
-    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+    Groups that:
+
+    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1358,11 +1361,14 @@ I also made 3 guides related to this one.
 
 ??? question "Remux Tier 02 - [Click to show/hide]"
 
-    - Groups that only use one source.(So called one disc wonders.)
-    - Groups that use an automated way.
-    - Groups that don't check their stuff.
-    - Groups that haven't released much. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    Groups that:
+
+    - Only use one source.(So called one disc wonders.)
+    - Use a fully automated way without checking.
+    - Don't check their stuff.
+    - Haven't released much. (yet)
+    - Retired and don't have the best quality by todays standards
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1376,7 +1382,10 @@ I also made 3 guides related to this one.
 
 ??? question "HD Bluray Tier 01 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1392,7 +1401,10 @@ I also made 3 guides related to this one.
 
 ??? question "HD Bluray Tier 02 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    Groups that:
+
+    - Use remuxes as source without micro-sizing them.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1406,10 +1418,11 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 01 - [Click to show/hide]"
 
-    - Groups that are on a certain list and active
-    - Groups that are on a certain list and did a minimum of x releases
-    - Groups that are not on the list but have a few releases on their name, but won't be trumped by a season pack on the top tier trackers
-    - Hybrid releases
+    Groups that:
+
+    - Create hybrids.
+    - Sign up for the gentleman list on a certain private tracker.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1425,9 +1438,12 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 02 - [Click to show/hide]"
 
-    - Groups that are on a certain list and are less or not active anymore
-    - Groups that only did a few releases
-    - Groups that are not on the list but have a few releases on their name
+    Groups that:
+
+    - Sign up for the gentleman list on a certain private tracker.
+    - Only did a few releases
+    - Are not on the list but have a few releases on their name
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1443,9 +1459,12 @@ I also made 3 guides related to this one.
 
 ??? question "WEB Tier 03 - [Click to show/hide]"
 
-    - Groups that are on a certain list and are less or not active anymore
-    - Groups that hardly done any releases
-    - Groups that are not on the list but have a few releases on their name
+    Groups that:
+
+    - Sign up for the gentleman list on a certain private tracker.
+    - Only did a few releases
+    - Are not on the list but have a few releases on their name
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
