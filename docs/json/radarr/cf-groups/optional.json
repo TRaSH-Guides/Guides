@@ -35,7 +35,7 @@
     {
       "name": "x265 (no HDR/DV)",
       "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
-      "required": true
+      "required": false
     }
   ],
   "quality_profiles": {
