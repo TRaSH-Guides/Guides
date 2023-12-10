@@ -87,6 +87,15 @@
       "fields": {
         "value": "^(RiPiT)$"
       }
+    },
+    {
+      "name": "TAT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TAT)$"
+      }
     }
   ]
 }
