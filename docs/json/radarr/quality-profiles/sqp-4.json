@@ -1,6 +1,7 @@
 {
   "trash_id": "013f89e6da27519fe56cf482702a2db9",
   "name": "SQP-4",
+  "trash_score_set": "sqp-4",
   "upgradeAllowed": true,
   "cutoff": "WEB|2160p",
   "minFormatScore": 550,

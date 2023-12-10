@@ -1,6 +1,7 @@
 {
   "trash_id": "5128baeb2b081b72126bc8482b2a86a0",
   "name": "SQP-1 (2160p)",
+  "trash_score_set": "sqp-1-2160p",
   "upgradeAllowed": true,
   "cutoff": "Bluray-2160p",
   "minFormatScore": 1000,
