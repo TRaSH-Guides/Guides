@@ -114,6 +114,7 @@ I also made 3 guides related to this one.
 |                                                                             |                                                                       | [Funimation](#funi)           |                                       |
 |                                                                             |                                                                       | [HIDIVE](#hidive)             |                                       |
 |                                                                             |                                                                       | [VRV](#vrv)                   |                                       |
+|                                                                             |                                                                       | [ABEMA](#abema)               |                                       |
 |                                                                             |                                                                       | [ADN](#adn)                   |                                       |
 |                                                                             |                                                                       | [WKN](#wkn)                   |                                       |
 
@@ -2385,6 +2386,21 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### ABEMA
+
+??? question "ABMEA - [Click to show/hide]"
+    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Abema){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/abema.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
