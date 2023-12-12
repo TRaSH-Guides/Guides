@@ -1,0 +1,63 @@
+{
+  "categories": [
+      {
+          "title": "### Guide - Features",
+          "labels": ["type: enhancement", "type: guide request"],
+          "exhaustive": true
+      },
+      {
+          "title": "### Guide - Fixes",
+          "labels": ["type: bug"],
+          "exclude_labels": ["status: non issue"]
+      },
+      {
+          "title": "### Guide - Updates",
+          "labels": ["status: confirmed"]
+      },
+      {
+          "title": "### Radarr - Features",
+          "labels": ["area: radarr", "type: enhancement"],
+          "exhaustive": true
+      },
+      {
+          "title": "### Radarr - Fixes",
+          "labels": ["area: radarr", "type: bug"],
+          "exclude_labels": ["status: non issue"],
+          "exhaustive": true
+      },
+      {
+          "title": "### Radarr - Updates",
+          "labels": ["area: radarr"]
+      },
+      {
+          "title": "### Sonarr - Features",
+          "labels": ["area: sonarr", "type: enhancement"],
+          "exhaustive": true
+      },
+      {
+          "title": "### Sonarr - Fixes",
+          "labels": ["area: sonarr", "type: bug"],
+          "exclude_labels": ["status: non issue"],
+          "exhaustive": true
+      },
+      {
+          "title": "### Sonarr - Updates",
+          "labels": ["area: sonarr"]
+      },
+      {
+          "title": "### Others",
+          "labels": []
+      }
+  ],
+  "ignore_labels": ["status: declined"],
+  "sort": {
+      "order": "ASC",
+      "on_property": "title"
+  },
+  "template": "${{CHANGELOG}}\n${{UNCATEGORIZED}}",
+  "pr_template": "- [${{TITLE}}](${{URL}})",
+  "empty_template": "- no changes",
+  "base_branches": [
+    "main"
+  ]
+}
