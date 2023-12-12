@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "Seimeisen",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Seimeisen)\\b"
+      }
+    },
+    {
       "name": "Team Arcedo",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
