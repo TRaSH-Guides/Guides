@@ -129,7 +129,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VARYG)\\b(?=.*Multi[ _-]?Sub)"
+        "value": "\\b(VARYG)\\b"
       }
     },
     {
@@ -138,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ZigZag)\\b(?=.*Multi[ _-]?Sub)"
+        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]

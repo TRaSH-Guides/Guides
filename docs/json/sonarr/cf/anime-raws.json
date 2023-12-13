@@ -115,6 +115,15 @@
           }
         },
         {
+          "name": "New-raws",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "New[ ._-]?(raws)"
+          }
+        },
+        {
           "name": "Ohys-Raws",
           "implementation": "ReleaseTitleSpecification",
           "negate": false,
