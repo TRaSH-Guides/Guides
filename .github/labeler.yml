@@ -1,13 +1,3 @@
-"Area: Backend":
-  - all:
-      - "docs/**/*.md"
-      - "!docs/Bazarr/**"
-      - "!docs/Downloaders/**"
-      - "!docs/Plex/**"
-      - "!docs/Prowlarr/**"
-      - "!docs/Radarr/**"
-      - "!docs/recyclarr-configs/**"
-      - "!docs/Sonarr/**"
 "Area: Bazarr":
   - docs/Bazarr/**
 "Area: Dependencies":
@@ -45,3 +35,13 @@
   - .github/stale.yml
 "Area: python":
   - "**/*.py"
+"Area: Backend":
+  - all:
+      - "docs/**/*.md"
+      - "!docs/Bazarr/**"
+      - "!docs/Downloaders/**"
+      - "!docs/Plex/**"
+      - "!docs/Prowlarr/**"
+      - "!docs/Radarr/**"
+      - "!docs/recyclarr-configs/**"
+      - "!docs/Sonarr/**"
