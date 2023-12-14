@@ -1,3 +1,6 @@
+#2023-12-14 18:00
+- [feat(starr): add SURCODE & B0MBARDIERS to Scene CF](https://github.com/TRaSH-Guides/Guides/pull/1683)
+
 # 2023-12-13 01:00
 - [feat(radarr-anime): Add New-raws to anime-raws](https://github.com/TRaSH-Guides/Guides/pull/1681)
 - [feat(radarr-anime): Add Arg0 to anime-web-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1681)
