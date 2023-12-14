@@ -1,15 +1,16 @@
 # Collection of Custom Formats
 
-Below is a collection of what I regard as the most needed and commonly used Custom Formats.
+Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
+
 Special thanks to everyone that helped in the creation and testing of these Custom Formats.
 
 Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
-I've made 3 guides related to this.
+We've made 3 guides related to this.
 
-- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to set up your own quality preferences.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
@@ -671,7 +672,7 @@ I've made 3 guides related to this.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
 
     For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
 
@@ -783,7 +784,7 @@ I've made 3 guides related to this.
     !!! note
 
         Depending on your renaming scheme Sonarr could potentially match renamed files AFTER they are downloaded and imported as `BR-DISK`,
-        This is only a cosmetic annoyance until I come up with another way to solve this,
+        This is only a cosmetic annoyance until we come up with another way to solve this,
         Because this Custom Format is used to exclude downloading of BR-DISK, it is still behaving as intended.
 
         Potential reasons why this is could occurr:

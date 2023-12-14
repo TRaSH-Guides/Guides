@@ -1,19 +1,19 @@
 # Collection of Custom Formats
 
-Below is a collection of what I regard as the most needed and commonly used Custom Formats.
+Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
 
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448), Team Radarr, and everyone that helped in the creation and testing of these Custom Formats.
+Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448), Team Radarr, and everyone that has helped in the creation and testing of these Custom Formats.
 
 With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.
 
-After requesting it with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.
+After requesting with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.
 
-I've made 3 guides related to this.
+We've made 3 guides related to this.
 
-- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to set up your own quality preferences.
+- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
@@ -658,7 +658,7 @@ I've made 3 guides related to this.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
 
     For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
 
@@ -931,7 +931,7 @@ I've made 3 guides related to this.
     !!! note
 
         Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance until I come up with another way to solve this,
+        This is a cosmetic annoyance until we come up with another way to solve this,
         being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
         Several reasons why this is happening:
 
