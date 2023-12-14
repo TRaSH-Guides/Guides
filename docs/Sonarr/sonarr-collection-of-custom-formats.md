@@ -3,7 +3,7 @@
 Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
 
-Special thanks to everyone that helped in the creation and testing of these Custom Formats.
+Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
 
 Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
 We've made 3 guides related to this.

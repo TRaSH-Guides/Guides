@@ -3,7 +3,7 @@
 Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
 
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448), Team Radarr, and everyone that has helped in the creation and testing of these Custom Formats.
+Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, Team Radarr, and the community.
 
 With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.
 
@@ -954,7 +954,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ - [Click to show/hide]"
 
-    - A collection of known low 1uality groups (often banned from the the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.
+    - A collection of known low quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.
     - Release Groups that break the Starr apps automation because their bad naming could potentially cause download loops, even if their overall quality is perfect.
 
 ??? example "JSON - [Click to show/hide]"
