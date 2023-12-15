@@ -3,6 +3,11 @@
   "trash_id": "d9acca37ab4ab8f6428b68125fc0cacb",
   "custom_formats": [
     {
+      "name": "DV HDR10Plus",
+      "trash_id": "c53085ddbd027d9624b320627748612f",
+      "required": true
+    },
+    {
       "name": "DV HDR10",
       "trash_id": "e23edd2482476e595fb990b12e7c609c",
       "required": true
