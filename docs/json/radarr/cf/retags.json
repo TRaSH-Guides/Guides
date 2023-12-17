@@ -50,6 +50,24 @@
       "fields": {
         "value": "[.]VAV\\b"
       }
+    },
+    {
+      "name": ".heb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[.]heb\\b"
+      }
+    },
+    {
+      "name": "ORARBG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ORARBG)\\b"
+      }
     }
   ]
 }
