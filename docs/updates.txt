@@ -1,3 +1,6 @@
+# 2023-12-17 21:30
+- [fix(starr): Update Radarr retags Custom Format, Sonarr iT Custom Format, and Radarr Naming Scheme](https://github.com/TRaSH-Guides/Guides/pull/1690)
+
 # 2023-12-14 18:00
 - [feat(starr): add SURCODE & B0MBARDIERS to Scene CF](https://github.com/TRaSH-Guides/Guides/pull/1683)
 
