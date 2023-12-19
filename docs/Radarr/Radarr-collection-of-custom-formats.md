@@ -1,28 +1,29 @@
 # Collection of Custom Formats
 
-Here I will try to list a collection of the most needed and commonly used Custom Formats.
-These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
+Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
+These CFs have been collected from discussions on Discord or created with help from others.
 
-With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
+Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, Team Radarr, and the community.
 
-After requesting it at Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This makes it easier to share the Custom Formats.
+With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.
 
-I also made 3 guides related to this one.
+After requesting with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.
 
-- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.
+We've made 3 guides related to this.
+
+- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
-    I also suggest to change the Propers and Repacks settings in Radarr
+    It also is recommended to change the Propers and Repacks settings in Radarr's `Settings`.
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format preferences will be used instead.
+    This way you make sure the Custom Format scoring and preferences will be fully utilized.
 
 --8<-- "includes/support.md"
 
@@ -681,7 +682,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
 
     For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
 
@@ -954,7 +955,7 @@ I also made 3 guides related to this one.
     !!! note
 
         Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance until I come up with another way to solve this,
+        This is a cosmetic annoyance until we come up with another way to solve this,
         being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
         Several reasons why this is happening:
 
@@ -977,8 +978,8 @@ I also made 3 guides related to this one.
 
 ??? question "LQ - [Click to show/hide]"
 
-    - A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
-    - Release Groups that break the Starr apps automation because their bad naming that could cause loops, even if their overall quality is perfect.
+    - A collection of known low quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.
+    - Release Groups that break the Starr apps automation because their bad naming could potentially cause download loops, even if their overall quality is perfect.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1090,8 +1091,8 @@ I also made 3 guides related to this one.
 ### Bad Dual Groups
 
 ??? question "Bad dual groups - [Click to show/hide]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+    These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
+    Also they often even translate/rename the release name to Portuguese.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1108,13 +1109,13 @@ I also made 3 guides related to this one.
 <sub>Dolby Vision = DoVi = DV</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
-    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
+    This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
+    This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non Dolby Vision compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
@@ -1132,9 +1133,9 @@ I also made 3 guides related to this one.
 
 ??? question "EVO (no WEBDL) - [Click to show/hide]"
 
-    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
+    This group is often banned for the low-quality Blu-ray releases, but their WEB-DLs are okay.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1150,7 +1151,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR10+ Boost - [Click to show/hide]"
 
-    Optional: use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+    Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1183,7 +1184,7 @@ I also made 3 guides related to this one.
 ??? question "No-RlsGroup - [Click to show/hide]"
 
     Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+    For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match
 
     !!! warning
 
@@ -1235,7 +1236,7 @@ I also made 3 guides related to this one.
 
 ??? question "Scene - [Click to show/hide]"
 
-    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+    This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1543,7 +1544,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1563,7 +1564,7 @@ I also made 3 guides related to this one.
     Groups that:
 
     - Haven't released much. (yet)
-    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1582,11 +1583,11 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Only use one source.(So called one disc wonders.)
-    - Use a fully automated way without checking.
-    - Don't check their stuff.
+    - Only use one source (poetically dubbed "one disc wonders").
+    - Use a fully automated method without double-checking.
+    - Don't check/review their releases prior to uploading.
     - Haven't released much. (yet)
-    - Retired and don't have the best quality by todays standards
+    - Have retired and don't have the best quality by today's standards
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1605,9 +1606,9 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both).
-    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc).
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1626,9 +1627,9 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both).
-    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc).
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1647,9 +1648,9 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both).
-    - Use Lossless (TrueHD, DTS-X, DTS-HD, etc) or Lossy audio formats (DD, DD+, etc).
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc) or Lossy audio formats (DD, DD+, etc).
     - That are added for a specific reason for other guides quality profiles.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
@@ -1669,8 +1670,8 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
-    - Have a minimum of GP releases.(best encode in it's class  1080p and lower)
+    - Use remuxes as their source without micro-sizing them.
+    - Have a minimum of GP releases. (best encode in it's class  1080p and lower)
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1689,7 +1690,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
+    - Use remuxes as their source without micro-sizing them.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1708,7 +1709,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
+    - Use remuxes as their source without micro-sizing them.
     - That are added for a specific reason for other guides quality profiles.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
@@ -1747,7 +1748,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Only did a few releases
+    - Only have done a few releases
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -2796,8 +2797,8 @@ I also made 3 guides related to this one.
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
     - WiP
-    - Groups doing remuxes with multiple sources (discs) mixing what's best.
-    - Groups doing remuxes with a groups from Remux Tier 01 or 02 and adding the best French Audio available.
+    - Groups that produce remuxes from multiple sources (discs) and combine them to produce the best end result.
+    - Groups producing remuxes with a group from Remux Tier 01 or 02 adding the best available French Audio.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2815,10 +2816,10 @@ I also made 3 guides related to this one.
 
     - WiP
     - Groups that use an automated way.
-    - Groups active doing remuxes from a single sources (discs).
+    - Groups actively doing remuxes from a single source (disc).
     - Groups that had the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2837,7 +2838,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that add the best French audio track to an English release from Tier 01 or 02.
-    - HDR/DoVi (Depending what's offered and often both).
+    - HDR/DoVi (Depending on what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
 
 ??? example "JSON - [Click to show/hide]"
@@ -2855,12 +2856,12 @@ I also made 3 guides related to this one.
 ??? question "FR UHD Bluray Tier 02 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that create encodes from a remux without micro-sizing them.
     - Groups that had the best French audio track to an English release.
-    - HDR/DoVi (Depending what's offered and often both).
+    - HDR/DoVi (Depending on what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2877,8 +2878,8 @@ I also made 3 guides related to this one.
 ??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have a minimum count of great releases (best encode in its class 1080p and lower).
     - Groups that add the best French audio track to an English release from Tier 01 or 02.
 
 ??? example "JSON - [Click to show/hide]"
@@ -2896,10 +2897,10 @@ I also made 3 guides related to this one.
 ??? question "FR HD Bluray Tier 02 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that had the best French audio track to an English release.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that havae the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2936,7 +2937,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that source and add the French audio track from the source to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2966,16 +2967,16 @@ I also made 3 guides related to this one.
 
 ### FR LQ
 
-<sub>French Low Quality Releases = FR LQ</sub>
+<sub>French Low-Quality Releases = FR LQ</sub>
 
 ??? question "FR LQ - [Click to show/hide]"
 
-    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+    A collection of known French Low-Quality groups that are often banned from the top trackers due to their lack of quality.
 
     !!! note
 
-        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
-        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Banned Release Groups.
 

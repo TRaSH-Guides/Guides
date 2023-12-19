@@ -1,26 +1,26 @@
 # Collection of Custom Formats
 
-Here I will try to list a collection of the most needed and commonly used Custom Formats.
-These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to everyone that helped testing and creating these Custom Formats.
+Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
+These CFs have been collected from discussions on Discord or created with help from others.
 
-With Sonarr V4+, Custom Formats are much more advanced/powerful than with the release profiles, although this also means a Custom Format is much more complicated to setup.
+Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
 
-I also made 3 guides related to this one.
+Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
+We've made 3 guides related to this.
 
-- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats and show some personal examples that I'm using. You can use these to get an idea on how to setup your own.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
-    I also suggest to change the Propers and Repacks settings in Sonarr
+    It also is recommended to change the Propers and Repacks settings in Sonarr's `Settings`.
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format preferences will be used instead.
+    This way you make sure the Custom Format scoring and preferences will be fully utilized.
 
 --8<-- "includes/support.md"
 
@@ -697,7 +697,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
+    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
 
     For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name, but in the future we can add more to it if needed.
 
@@ -802,16 +802,17 @@ I also made 3 guides related to this one.
 
 ??? question "BR-DISK - [Click to show/hide]"
 
-    This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+    This is a custom format to help Sonarr recognize and ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
     !!! note
 
-        Depending on your renaming scheme it could happen that Sonarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance until I come up with another way to solve this,
-        being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
-        Several reasons why this is happening:
+        Depending on your renaming scheme Sonarr could potentially match renamed files AFTER they are downloaded and imported as `BR-DISK`,
+        This is only a cosmetic annoyance until we come up with another way to solve this,
+        Because this Custom Format is used to exclude downloading of BR-DISK, it is still behaving as intended.
+
+        Potential reasons why this is could occurr:
 
         - Blame the often wrongly used naming of x265 encodes.
         - Sonarr v3/v4 uses dynamic custom formats.
@@ -832,7 +833,7 @@ I also made 3 guides related to this one.
 
 ??? question "LQ - [Click to show/hide]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality.
+    A collection of known Low Quality groups that are often banned from the the top trackers due to their lack of quality releases.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -907,7 +908,7 @@ I also made 3 guides related to this one.
 
 ??? question "Extras - [Click to show/hide]"
 
-    This blocks/ignores Extra's
+    This blocks/ignores Extras (bonus footage, outtakes, etc)
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1027,8 +1028,8 @@ I also made 3 guides related to this one.
 ### Bad Dual Groups
 
 ??? question "Bad dual groups - [Click to show/hide]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+    These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
+    Also they often even translate/rename the release name to Portuguese.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1045,13 +1046,13 @@ I also made 3 guides related to this one.
 <sub>Dolby Vision = DoVi = DV</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
-    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
+    This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
+    This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non Dolby Vision compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
@@ -1069,7 +1070,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR10+ Boost - [Click to show/hide]"
 
-    Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+    Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1102,7 +1103,7 @@ I also made 3 guides related to this one.
 ??? question "No-RlsGroup - [Click to show/hide]"
 
     Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+    For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match
 
     !!! warning
 
@@ -1154,7 +1155,7 @@ I also made 3 guides related to this one.
 
 ??? question "Scene - [Click to show/hide]"
 
-    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+    This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1170,12 +1171,12 @@ I also made 3 guides related to this one.
 
 ??? question "Season Pack - [Click to show/hide]"
 
-    This Custom Format can be used depending if you prefer or not prefer a season pack
+    This Custom Format can be used to prefer or exclude season packs
 
     - Give it a score of `10` if you prefer a season pack.
-    - Give it a score of `-10000` if you don't prefer a season pack.
-    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack of course.
-    - keep in mind this is the only way to prefer season packs if you have preferred words due to the long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
+    - Give it a score of `-10000` if you prefer to not download season packs.
+    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack.
+    - Keep in mind this is the only way to prefer season packs. If you have preferred words, due to a long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
 
     !!! danger "WARNING"
         - This Custom Format could result in a download loop :bangbang:
@@ -1195,9 +1196,9 @@ I also made 3 guides related to this one.
 
 ??? question "x265 (no HDR/DV) - [Click to show/hide]"
 
-    This blocks/ignores 720/1080p (HD) releases that are encoded in x265.
+  This blocks most 720/1080p (HD) releases that are encoded in x265.
 
-    **But it will allow x265 releases if they have HDR and/or DV**
+    **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
     *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
@@ -1344,7 +1345,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Doing remuxes with multiple sources(discs) mixing what's best.
+    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1363,11 +1364,11 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Only use one source.(So called one disc wonders.)
-    - Use a fully automated way without checking.
-    - Don't check their stuff.
+    - Only use one source (poetically dubbed "one disc wonders").
+    - Use a fully automated method without double-checking.
+    - Don't check/review their releases prior to uploading.
     - Haven't released much. (yet)
-    - Retired and don't have the best quality by todays standards
+    - Have retired and don't have the best quality by today's standards
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1384,7 +1385,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
+    - Use remuxes as their source without micro-sizing them.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1403,7 +1404,7 @@ I also made 3 guides related to this one.
 
     Groups that:
 
-    - Use remuxes as source without micro-sizing them.
+    - Use remuxes as their source without micro-sizing them.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1441,7 +1442,7 @@ I also made 3 guides related to this one.
     Groups that:
 
     - Sign up for the gentleman list on a certain private tracker.
-    - Only did a few releases
+    - Have only done a few releases
     - Are not on the list but have a few releases on their name
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
@@ -1462,7 +1463,7 @@ I also made 3 guides related to this one.
     Groups that:
 
     - Sign up for the gentleman list on a certain private tracker.
-    - Only did a few releases
+    - Have only done a few releases
     - Are not on the list but have a few releases on their name
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
@@ -2835,8 +2836,8 @@ I also made 3 guides related to this one.
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
     - WIP
-    - Groups doing remuxes with multiple sources (discs) mixing what's best.
-    - Groups active doing remuxes from a single sources (discs).
+    - Groups that produce remuxes from multiple sources (discs) and combine them to produce the best end result.
+    - Groups actively doing remuxes from a single source (discs).
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2853,9 +2854,9 @@ I also made 3 guides related to this one.
 ??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
 
     - WIP
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that source and add the best French audio track from the source to an English release from Tier 01 or 02.
-    - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
+    - Groups that create encodes from remuxes without micro-sizing them.
+    - Groups that add the best French audio track to an English release from Tier 01 or 02.
+    - Groups that have a minimum of great releases (best encode in its class 1080p and lower).
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2909,7 +2910,7 @@ I also made 3 guides related to this one.
 
     - WIP
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2926,8 +2927,8 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 01 - [Click to show/hide]"
 
     - WIP
-    - Groups that are know to be still active and doing only Anime
-    - Groups which releases are at least comparable to SeaDex recommended.
+    - Groups that are known to be active and only doing Anime
+    - Groups who's releases are at least comparable to SeaDex recommended.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2944,8 +2945,8 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 02 - [Click to show/hide]"
 
     - WIP
-    - Groups that are known to be still active and doing only Anime but with few releases per year.
-    - Groups that are known to be still active and doing Anime and other type of release.
+    - Groups that are known to be active and only doing Anime, but with few releases per year.
+    - Groups that are known to be active and doing Anime AND other types of releases.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2962,9 +2963,9 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 03 - [Click to show/hide]"
 
     - WIP
-    - Groups with no or little activity that have at some point made an interesting release. Which is either the only one available (in VOSTFR/MULTi) or still top of its category.
+    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi), or still top of its category.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups doing only anime, that have retired (or no longer exist) and may not have the best quality by todays standards.
+    - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2980,7 +2981,7 @@ I also made 3 guides related to this one.
 
 ??? question "FR Anime FanSub - [Click to show/hide]"
 
-    Known good groups that are doing only FanSub and in good quality.
+    Known good groups that only do FanSub in good quality.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3014,12 +3015,12 @@ I also made 3 guides related to this one.
 
 ??? question "FR LQ - [Click to show/hide]"
 
-    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+    A collection of known French Low-Quality groups that are often banned from the top trackers due to their lack of quality.
 
     !!! note
 
-        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
-        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Banned Release Groups.
 
