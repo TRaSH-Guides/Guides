@@ -1,3 +1,6 @@
+# 2023-12-25 16:00
+- [feat(Sonarr): add `.heb` to `Retags`](https://github.com/TRaSH-Guides/Guides/pull/1705)
+
 # 2023-12-23 02:00
 - [Add DV HDR10Plus to Guides](https://github.com/TRaSH-Guides/Guides/pull/1693)
 
