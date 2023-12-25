@@ -21,7 +21,7 @@ Go to `Settings` => `Media Management` and make sure you have enabled `Show Adva
 
 and change it to enable the advanced view.
 
-![Unhide Advanced](images/unhide-adavanced.png)
+![Unhide Advanced](images/unhide-advanced.png)
 
 ## Standard Episode Format
 
