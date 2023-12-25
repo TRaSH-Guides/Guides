@@ -13,6 +13,16 @@ The Tokens not available in the release won't be used/shown.
 
 ------
 
+## Preparation
+
+Go to `Settings` => `Media Management` and make sure you have enabled `Show Advanced` on the top.
+
+![Enable Advanced](images/radarr-show-adavanced.png)
+
+and change it to enable the advanced view.
+
+![Unhide Advanced](images/unhide-advanced.png)
+
 ## Standard Movie Format
 
 This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`

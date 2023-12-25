@@ -13,6 +13,16 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ------
 
+## Preparation
+
+Go to `Settings` => `Media Management` and make sure you have enabled `Show Advanced` on the top.
+
+![Enable Advanced](images/sonarr-show-adavanced.png)
+
+and change it to enable the advanced view.
+
+![Unhide Advanced](images/unhide-adavanced.png)
+
 ## Standard Episode Format
 
 ```bash
