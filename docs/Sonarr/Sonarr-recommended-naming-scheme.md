@@ -15,7 +15,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ## Preparation
 
-Go to `Settings` => `Media Management` and make sure you have enabled `Show Advanced` on the top.
+Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
 
 ![Enable Advanced](images/sonarr-show-adavanced.png)
 
