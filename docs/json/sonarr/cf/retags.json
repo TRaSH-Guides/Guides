@@ -7,12 +7,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "[rartv]",
+      "name": ".heb",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[rartv\\]"
+        "value": "[.]heb\\b"
+      }
+    },
+    {
+      "name": "[eztv]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[eztv([ ._-]re)?\\]"
       }
     },
     {
@@ -25,12 +34,12 @@
       }
     },
     {
-      "name": "[eztv]",
+      "name": "[rartv]",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[eztv([ ._-]re)?\\]"
+        "value": "\\[rartv\\]"
       }
     },
     {
