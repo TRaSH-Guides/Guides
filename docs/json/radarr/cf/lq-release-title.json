@@ -7,12 +7,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "TeeWee",
+      "name": "1XBET",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TeeWee)\\b"
+        "value": "\\b(1XBET)\\b"
       }
     },
     {
@@ -34,12 +34,21 @@
       }
     },
     {
-      "name": "1XBET",
+      "name": "TeeWee",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(1XBET)\\b"
+        "value": "\\b(TeeWee)\\b"
+      }
+    },
+    {
+      "name": "Will1869",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Will1869)\\b"
       }
     }
   ]
