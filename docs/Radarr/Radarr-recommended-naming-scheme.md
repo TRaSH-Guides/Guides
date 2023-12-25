@@ -15,7 +15,7 @@ The Tokens not available in the release won't be used/shown.
 
 ## Preparation
 
-Go to `Settings` => `Media Management` and make sure you have enabled `Show Advanced` on the top.
+Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
 
 ![Enable Advanced](images/radarr-show-adavanced.png)
 
