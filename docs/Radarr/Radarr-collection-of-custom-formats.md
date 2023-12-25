@@ -87,7 +87,7 @@ I also made 3 guides related to this one.
 |                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
 |                                | [SDR](#sdr)                         | [VFB](#vfb)                   |                                                 |
 |                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                                 |
-|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
+|                                | [DV (Disk)](#dv-disk)               | [FanSUB](#fansub)             |                                                 |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
 |                                | [HFR](#hfr)                         |                               |                                                 |
 |                                | [VP9](#vp9)                         |                               |                                                 |
@@ -1323,14 +1323,14 @@ I also made 3 guides related to this one.
 
 ### DV FEL
 
-??? question "DV (FEL) - [Click to show/hide]"
+??? question "DV (Disk) - [Click to show/hide]"
 
     - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-disk.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

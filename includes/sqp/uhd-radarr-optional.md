@@ -15,7 +15,7 @@
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           | {{ radarr['cf']['scene']['trash_scores']['default'] }}           | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: | {{ radarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}   | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               | {{ radarr['cf']['sdr']['trash_scores']['default'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}             |
-    | [{{ radarr['cf']['dv-fel']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-fel)                         | {{ radarr['cf']['dv-fel']['trash_scores']['default'] }}          | {{ radarr['cf']['dv-fel']['trash_id'] }}          |
+    | [{{ radarr['cf']['dv-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-disk)                       | {{ radarr['cf']['dv-disk']['trash_scores']['default'] }}         | {{ radarr['cf']['dv-disk']['trash_id'] }}         |
 
     ------
 
@@ -54,4 +54,4 @@
         !!! Danger "Don't use this together with [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
 
     - **{{ radarr['cf']['sdr']['name'] }}:** This will help to prevent to grab UHD/4k releases without HDR Formats.
-    - **{{ radarr['cf']['dv-fel']['name'] }}:** This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+    - **{{ radarr['cf']['dv-disk']['name'] }}:** This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
