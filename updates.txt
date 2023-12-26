@@ -1,3 +1,10 @@
+# 2023-12-26 21:15
+- [feat(radarr): Add RlsGrp `Will1869` to `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/1702)
+- [feat(starr): Add NEW CF INTERNAL](https://github.com/TRaSH-Guides/Guides/pull/1704)
+- [fix(guide): Add enable advanced settings to to Recommended naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1705)
+- [fix(sonarr): Match `HIDI` as `HIDIVE`](https://github.com/TRaSH-Guides/Guides/pull/1697)
+- [fix(starr): Renamed CF DV (FEL) to DV (Disk)](https://github.com/TRaSH-Guides/Guides/pull/1706)
+
 # 2023-12-25 16:00
 - [feat(Sonarr): add `.heb` to `Retags`](https://github.com/TRaSH-Guides/Guides/pull/1703)
 
