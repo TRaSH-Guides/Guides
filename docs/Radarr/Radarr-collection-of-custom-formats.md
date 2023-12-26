@@ -91,6 +91,7 @@ I also made 3 guides related to this one.
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
 |                                | [HFR](#hfr)                         |                               |                                                 |
 |                                | [VP9](#vp9)                         |                               |                                                 |
+|                                | [Internal](#internal)               |                               |                                                 |
 
 ------
 
@@ -1283,6 +1284,23 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vp9.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Internal
+
+??? question "Internal - [Click to show/hide]"
+
+    - For those that prefer scene releases may want to boost internals as they generally have higher settings that may not conform to ruleset.
+    - In some rare cases P2P use also INTERNAL.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

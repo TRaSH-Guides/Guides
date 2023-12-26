@@ -1,0 +1,20 @@
+{
+  "trash_id": "5ab46ff851b76c337e13e81a4353875f",
+  "trash_scores": {
+    "default": 10
+  },
+  "trash_regex": "https://regex101.com/r/T7vznB/1",
+  "name": "INTERNAL",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "INTERNAL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(INTERNAL)\\b"
+      }
+    }
+  ]
+}
