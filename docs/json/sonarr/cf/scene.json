@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": -10000
   },
-  "trash_regex": "https://regex101.com/r/viarq7/4",
+  "trash_regex": "https://regex101.com/r/BoIGFA/1",
   "name": "Scene",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -13,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS)"
+        "value": "^(?=.*(\\b\\d{3,4}p\\b).*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS)"
       }
     },
     {
