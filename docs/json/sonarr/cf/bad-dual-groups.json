@@ -170,6 +170,15 @@
       }
     },
     {
+      "name": "vnlls",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(vnlls)$"
+      }
+    },
+    {
       "name": "WTV",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
