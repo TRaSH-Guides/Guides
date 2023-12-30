@@ -1,3 +1,5 @@
+{! include-markdown "../../includes/sonarrv3-eol.md" !}
+
 # Release Profile RegEx (WEB-DL)
 
 Sonarr V3 has a great feature called Release Profile.

@@ -1,3 +1,5 @@
+{! include-markdown "../../includes/sonarrv3-eol.md" !}
+
 # Release Profile RegEx (Anime)
 
 !!! note
