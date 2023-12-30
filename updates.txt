@@ -1,3 +1,8 @@
+# 2023-12-30 20:30
+- [feat(guide): Sonarr move v4 from beta to main](https://github.com/TRaSH-Guides/Guides/pull/1712)
+- [feat(starr): add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
+- [fix(starr): Scene CF mismatching title](https://github.com/TRaSH-Guides/Guides/pull/1708)
+
 # 2023-12-26 21:15
 - [feat(radarr): Add RlsGrp `Will1869` to `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/1702)
 - [feat(starr): Add NEW CF INTERNAL](https://github.com/TRaSH-Guides/Guides/pull/1704)
