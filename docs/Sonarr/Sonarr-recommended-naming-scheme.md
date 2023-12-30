@@ -26,14 +26,8 @@ Once you clicked on the button it should look like this and you should see all t
 ## Standard Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
@@ -50,14 +44,8 @@ Once you clicked on the button it should look like this and you should see all t
 ## Daily Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
@@ -68,14 +56,8 @@ Once you clicked on the button it should look like this and you should see all t
 ## Anime Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
