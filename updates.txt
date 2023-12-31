@@ -1,3 +1,7 @@
+# 2023-12-31 18:35
+- [feat(starr): Add CF for BBC iPlayer](https://github.com/TRaSH-Guides/Guides/pull/1714)
+- [feat(starr): Add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
+
 # 2023-12-30 20:30
 - [feat(guide): Sonarr move v4 from beta to main](https://github.com/TRaSH-Guides/Guides/pull/1712)
 - [feat(starr): add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
