@@ -172,7 +172,7 @@ Finally, you will want to enable some plugins. There are plenty of plugins on th
 ![!Plugin Settings](images/Deluge-plugin-settings.png)
 
 !!! tip
-    If you are familiar with the client and plugins you can find more information [here](./Tips.md#plugins)
+    If you are familiar with the client and plugins you can find more information [here](./Tips/Plugins.md)
 
 !!! info
     If you are running a docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
