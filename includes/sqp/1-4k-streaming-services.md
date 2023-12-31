@@ -22,7 +22,6 @@
     | [{{ radarr['cf']['stan']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#stan)     |                                       0                                        | {{ radarr['cf']['stan']['trash_id'] }}   |
     | [{{ radarr['cf']['tver']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#tver)     |                                       0                                        | {{ radarr['cf']['tver']['trash_id'] }}   |
     | [{{ radarr['cf']['u-next']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#u-next) |                                       0                                        | {{ radarr['cf']['u-next']['trash_id'] }} |
-    
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
