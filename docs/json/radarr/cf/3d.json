@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": -10000
   },
+  "trash_regex": "https://regex101.com/r/hpjKw9/1",
   "name": "3D",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
