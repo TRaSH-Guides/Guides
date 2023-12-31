@@ -11127,6 +11127,7 @@ Several reasons why this is happening:</p>
 <span class="w">  </span><span class="nt">&quot;trash_scores&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span>
 <span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;trash_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://regex101.com/r/hpjKw9/1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3D&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -11146,6 +11147,15 @@ Several reasons why this is happening:</p>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(BluRay3D)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BD3D&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(BD3D)\\b&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -11186,7 +11196,7 @@ It's all really dependent on specific situations for different people</p>
 <li>
 <p>2160p/4k =&gt; x265</p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </li>
 </ul>
@@ -12120,7 +12130,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
 </details>
 <details class="example">
