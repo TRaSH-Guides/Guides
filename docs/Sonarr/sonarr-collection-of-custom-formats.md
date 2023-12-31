@@ -56,6 +56,7 @@ I also made 3 guides related to this one.
 |                       |                                         | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)                                 |
 |                       |                                         | [WEB Tier 03](#web-tier-03)             | [Max](#max)                                 |
 |                       |                                         | [WEB Scene](#web-scene)                 | [Hulu](#hulu)                               |
+|                       |                                         |                                         | [IP](#ip)                                   |
 |                       |                                         |                                         | [NLZiet](#nlz)                              |
 |                       |                                         |                                         | [Netflix](#nf)                              |
 |                       |                                         |                                         | [Paramount+](#pmtp)                         |
@@ -1581,6 +1582,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### IP
+
+<sub>BBC iPlayer</sub>
+
+??? question "BBC iPlayer - [Click to show/hide]"
+
+    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ip.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
