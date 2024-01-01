@@ -1,12 +1,12 @@
 ??? abstract "Optional - [Click to show/hide]"
     | Custom Format                                                                                                       |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-    | [{{ sonarr['cf']['bad-dual-groups']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#bad-dual-groups)       | {{ sonarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ sonarr['cf']['bad-dual-groups']['trash_id'] }} |
-    | [{{ sonarr['cf']['no-rlsgroup']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#no-rlsgroup)               |   {{ sonarr['cf']['no-rlsgroup']['trash_scores']['default'] }}   | {{ sonarr['cf']['no-rlsgroup']['trash_id'] }}     |
-    | [{{ sonarr['cf']['obfuscated']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#obfuscated)                 |   {{ sonarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ sonarr['cf']['obfuscated']['trash_id'] }}      |
-    | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#retags)                         |     {{ sonarr['cf']['retags']['trash_scores']['default'] }}      | {{ sonarr['cf']['retags']['trash_id'] }}          |
-    | [{{ sonarr['cf']['scene']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#scene)                           |      {{ sonarr['cf']['scene']['trash_scores']['default'] }}      | {{ sonarr['cf']['scene']['trash_id'] }}           |
-    | [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: |  {{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}  | {{ sonarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
+    | [{{ sonarr['cf']['bad-dual-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups)       | {{ sonarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ sonarr['cf']['bad-dual-groups']['trash_id'] }} |
+    | [{{ sonarr['cf']['no-rlsgroup']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup)               |   {{ sonarr['cf']['no-rlsgroup']['trash_scores']['default'] }}   | {{ sonarr['cf']['no-rlsgroup']['trash_id'] }}     |
+    | [{{ sonarr['cf']['obfuscated']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#obfuscated)                 |   {{ sonarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ sonarr['cf']['obfuscated']['trash_id'] }}      |
+    | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#retags)                         |     {{ sonarr['cf']['retags']['trash_scores']['default'] }}      | {{ sonarr['cf']['retags']['trash_id'] }}          |
+    | [{{ sonarr['cf']['scene']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#scene)                           |      {{ sonarr['cf']['scene']['trash_scores']['default'] }}      | {{ sonarr['cf']['scene']['trash_id'] }}           |
+    | [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: |  {{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}  | {{ sonarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
 
     ------
 
@@ -26,4 +26,4 @@
 
         In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}`
 
-        !!! Danger "Don't use this combined with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#x265-hd), Only ever apply one of them. :warning:"
+        !!! Danger "Don't use this combined with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever apply one of them. :warning:"
