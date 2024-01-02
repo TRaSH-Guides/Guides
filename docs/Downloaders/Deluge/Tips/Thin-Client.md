@@ -9,7 +9,7 @@ If you are already running Deluge in `daemon` or `console` mode, or running via 
 
 You will need to have "Allow Remote Connections" enabled if you are not connecting to Deluge from localhost.
 
-![!Daemon Settings](images/Deluge-tc-daemon.png)
+![!Daemon Settings](../images/Deluge-tc-daemon.png)
 
 !!! info
      If you do not have access to the WebUI, and are instead doing this by editing Deluge's `core.conf`, you will need to change "allow_remote" to true.
@@ -24,7 +24,7 @@ Once your daemon is up and running, it's time to set up the client you'll be usi
 
 Simply go to `Edit` => `Preferences` and switch from `Standalone` to `Thin Client`
 
-![!Thin-Client Toggle](images/Deluge-tc-settings.png)
+![!Thin-Client Toggle](../images/Deluge-tc-settings.png)
 
 Restart Deluge.
 
@@ -35,7 +35,7 @@ Restart Deluge.
 
 After switching to `Thin Client` you will need to connect to your daemon. Go to `Edit` => `Connections Manager` and click on `Add` to add the daemon.
 
-![!Label Options](images/Deluge-tc-connman.png)
+![!Label Options](../images/Deluge-tc-connman.png)
 
 !!! ATTENTION
     If you mistyped your password while adding the connection, it will prompt you to enter it. There is a bug that does not accept/save the correct password unless it is entered through the `Add`/`Edit` Menu.
