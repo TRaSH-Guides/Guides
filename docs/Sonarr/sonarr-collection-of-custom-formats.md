@@ -698,7 +698,7 @@ I also made 3 guides related to this one.
 
     Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
 
-    For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+    For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name, but in the future we can add more to it if needed.
 
 ??? example "JSON - [Click to show/hide]"
 
