@@ -50,17 +50,17 @@ I also made 3 guides related to this one.
 
 | Movie Versions                                | Unwanted                                | HQ Release Groups                         | Streaming Services         |
 | --------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
-| [Remaster](#remaster)                         | [LQ](#lq)                               | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
-| [4K Remaster](#4k-remaster)                   | [LQ (Release Title)](#lq-release-title) | [Remux Tier 03](#remux-tier-03)           | [BBC iPlayer (iP)](#ip)    |
-| [Special Edition](#special-edition)           | [3D](#3d)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Bravia Core](#bcore)      |
-| [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)                   | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [Crave](#crav)             |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
+| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
+| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           | [BBC iPlayer (iP)](#ip)    |
+| [IMAX Enhanced](#imax-enhanced)               | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Bravia Core](#bcore)      |
+| [IMAX](#imax)                                 | [LQ](#lq)                               | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [Crave](#crav)             |
 | [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Criterion Channel](#crit) |
-| [Vinegar Syndrome](#vinegar-syndrome)         | [Extras](#extras)                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Disney+](#dsnp)           |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [FOD](#fod)                |
-| [IMAX](#imax)                                 |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [HBO](#hbo)                |
-| [IMAX Enhanced](#imax-enhanced)               |                                         | [WEB Tier 01](#web-tier-01)               | [HBO Max](#hmax)           |
-| [Open Matte](#open-matte)                     |                                         | [WEB Tier 02](#web-tier-02)               | [Hulu](#hulu)              |
+| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Disney+](#dsnp)           |
+| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [FOD](#fod)                |
+| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [HBO](#hbo)                |
+| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               | [HBO Max](#hmax)           |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               | [Hulu](#hulu)              |
 |                                               |                                         | [WEB Tier 03](#web-tier-03)               | [Max](#max)                |
 |                                               |                                         |                                           | [Movies Anywhere](#ma)     |
 |                                               |                                         |                                           | [Netflix](#nf)             |
@@ -76,23 +76,23 @@ I also made 3 guides related to this one.
 
 | Misc                           | Optional                            | French Audio Version          | French Source Groups                            |
 | ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------------------- |
-| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)    | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)         | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
-|                                | [SDR](#sdr)                         | [VFB](#vfb)                   |                                                 |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                                 |
-|                                | [DV (Disk)](#dv-disk)               | [FanSUB](#fansub)             |                                                 |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
-|                                | [HFR](#hfr)                         |                               |                                                 |
+| [Dutch Groups](#dutch-groups)  | [AV1](#av1)                         | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups) | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)               | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)             | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [Repack/Proper](#repackproper) | [EVO (no WEBDL)](#evo-no-webdl)     | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [Repack2](#repack2)            | [HDR10+ Boost](#hdr10plus-boost)    | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [x264](#x264)                  | [HFR](#hfr)                         | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [x265](#x265)                  | [Internal](#internal)               | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                                | [No-RlsGroup](#no-rlsgroup)         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
+|                                | [Obfuscated](#obfuscated)           | [VFB](#vfb)                   |                                                 |
+|                                | [Retags](#retags)                   | [VOSTFR](#vostfr)             |                                                 |
+|                                | [Scene](#scene)                     | [FanSUB](#fansub)             |                                                 |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [FastSUB](#fastsub)           |                                                 |
+|                                | [SDR](#sdr)                         |                               |                                                 |
 |                                | [VP9](#vp9)                         |                               |                                                 |
-|                                | [Internal](#internal)               |                               |                                                 |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                               |                                                 |
 
 ------
 
