@@ -6,10 +6,14 @@ site_url: https://trash-guides.info/
 repo_url: https://github.com/TRaSH-Guides/Guides
 repo_name: TRaSH-Guides
 
+# ignores absolute warnings we have
+# warns on missing/broken links
 validation:
   omitted_files: warn
   not_found: warn
   absolute_links: ignore
+# fails to build on warnings
+strict: true
 
 copyright: Copyright &copy; 2022 TRaSH
 
