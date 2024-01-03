@@ -1,3 +1,6 @@
+# 2024-01-03 20:25
+- [feat(radarr:) Remove LEGi0N from UHD Blu-ray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1720)
+
 # 2023-12-31 18:35
 - [feat(starr): Add CF for BBC iPlayer](https://github.com/TRaSH-Guides/Guides/pull/1714)
 - [feat(starr): Add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
