@@ -6,10 +6,14 @@ site_url: https://trash-guides.info/
 repo_url: https://github.com/TRaSH-Guides/Guides
 repo_name: TRaSH-Guides
 
+# ignores absolute warnings we have
+# warns on missing/broken links
 validation:
   omitted_files: warn
   not_found: warn
   absolute_links: ignore
+# fails to build on warnings
+strict: true
 
 copyright: Copyright &copy; 2022 TRaSH
 
@@ -80,7 +84,7 @@ plugins:
       j2_variable_end_string: "]]"
   - redirects:
       redirect_maps:
-        updates.txt: updates.txt
+        #updates.txt: updates.txt
         discord.md: https://discord.gg/4K2kdvwzFh
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr redirects
