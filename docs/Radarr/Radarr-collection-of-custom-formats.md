@@ -53,8 +53,8 @@ I also made 3 guides related to this one.
 | [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
 | [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
 | [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           | [BBC iPlayer (iP)](#ip)    |
-| [IMAX Enhanced](#imax-enhanced)               | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Bravia Core](#bcore)      |
-| [IMAX](#imax)                                 | [LQ](#lq)                               | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [Crave](#crav)             |
+| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Bravia Core](#bcore)      |
+| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [Crave](#crav)             |
 | [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Criterion Channel](#crit) |
 | [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Disney+](#dsnp)           |
 | [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [FOD](#fod)                |

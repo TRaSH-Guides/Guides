@@ -47,11 +47,11 @@ I also made 3 guides related to this one.
 ------
 
 | Series Versions       | Unwanted                                | HQ Source Groups                        | Streaming Services                          |
-| :-------------------- | :-------------------------------------- | :-------------------------------------- | :------------------------------------------ |
+| --------------------- | --------------------------------------- | --------------------------------------- | ------------------------------------------- |
 | [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         | [4OD](#4od)                                 |
 | [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         | [ALL4](#all4)                               |
-|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [Amazon](#amzn)                             |
-|                       | [LQ](#lq)                               | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Apple TV+](#atvp)                          |
+|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) | [Amazon](#amzn)                             |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Apple TV+](#atvp)                          |
 |                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 01](#web-tier-01)             | [BBC iPlayer (iP)](#ip)                     |
 |                       |                                         | [WEB Tier 02](#web-tier-02)             | [CANAL+](#canalplus)                        |
 |                       |                                         | [WEB Tier 03](#web-tier-03)             | [Comedy Central](#cc)                       |
@@ -84,7 +84,7 @@ I also made 3 guides related to this one.
 ------
 
 | Misc                           | Optional                            | French Audio Version          | French Source Groups                          |
-| :----------------------------- | :---------------------------------- | :---------------------------- | :-------------------------------------------- |
+| ------------------------------ | ----------------------------------- | ----------------------------- | --------------------------------------------- |
 | [MPEG2](#mpeg2)                | [AV1](#av1)                         | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [Multi](#multi)                | [Bad Dual Groups](#bad-dual-groups) | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [Repack v2](#repack-v2)        | [DV (Disk)](#dv-disk)               | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
