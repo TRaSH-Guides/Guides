@@ -1,0 +1,20 @@
+{
+  "trash_id": "28ebdc2cdf002d9458e41f9f60e216a2",
+  "trash_scores": {
+    "default": 8
+  },
+  "trash_regex": "https://regex101.com/r/S91wR8/2",
+  "name": "Proper",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+      {
+          "name": "Proper",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+              "value": "\\b(Proper)\\b"
+          }
+      }
+  ]
+}
