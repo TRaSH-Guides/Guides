@@ -2,7 +2,7 @@
   "folder": {
       "default": "{Movie CleanTitle} ({Release Year})",
       "plex": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
-      "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{imdbid}]",
+      "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
       "jellyfin": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]"
   },
   "file": {
