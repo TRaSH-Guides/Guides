@@ -107,6 +107,15 @@
       }
     },
     {
+      "name": "LCD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LCD)$"
+      }
+    },
+    {
       "name": "N3G4N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
