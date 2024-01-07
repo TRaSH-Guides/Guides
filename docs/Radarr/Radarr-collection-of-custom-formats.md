@@ -18,7 +18,7 @@ I also made 3 guides related to this one.
 
     I also suggest changing the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack and Proper](#proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](#repack) and [Proper](#proper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
