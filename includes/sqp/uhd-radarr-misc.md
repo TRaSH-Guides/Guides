@@ -1,14 +1,15 @@
 ??? abstract "Misc - [Click to show/hide]"
-    | Custom Format | Score                                                                                         | Trash ID                                                                |                                           |
-    | ------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------- |
-    |               | [{{ radarr['cf']['proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#proper)   | {{ radarr['cf']['proper']['trash_scores']['default'] }}                 | {{ radarr['cf']['proper']['trash_id'] }}  |
-    |               | [{{ radarr['cf']['repack']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack)   | {{ radarr['cf']['repack']['trash_scores']['default'] }}                 | {{ radarr['cf']['repack']['trash_id'] }}  |
-    |               | [{{ radarr['cf']['repack2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack2) | {{ radarr['cf']['repack2']['trash_scores']['default'] }}                | {{ radarr['cf']['repack2']['trash_id'] }} |
-    |               | [{{ radarr['cf']['x264']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x264)       | :warning: {{ radarr['cf']['x264']['trash_scores']['sqp-2'] }} :warning: | {{ radarr['cf']['x264']['trash_id'] }}    |
+    | Custom Format                                                                                 | Score                                                                   | Trash ID                                  |     |
+    | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------- | --- |
+    | [{{ radarr['cf']['proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#proper)   | {{ radarr['cf']['proper']['trash_scores']['default'] }}                 | {{ radarr['cf']['proper']['trash_id'] }}  |     |
+    | [{{ radarr['cf']['repack']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack)   | {{ radarr['cf']['repack']['trash_scores']['default'] }}                 | {{ radarr['cf']['repack']['trash_id'] }}  |     |
+    | [{{ radarr['cf']['repack2']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repack2) | {{ radarr['cf']['repack2']['trash_scores']['default'] }}                | {{ radarr['cf']['repack2']['trash_id'] }} |     |
+    | [{{ radarr['cf']['x264']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x264)       | :warning: {{ radarr['cf']['x264']['trash_scores']['sqp-2'] }} :warning: | {{ radarr['cf']['x264']['trash_id'] }}    |     |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
     ------
+
     Breakdown and Why
 
     - `x264` has a score of `-10000` because we only want the HDR/DV versions of the `WEBDL-1080p`
