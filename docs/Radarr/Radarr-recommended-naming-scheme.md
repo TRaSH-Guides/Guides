@@ -63,7 +63,7 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
-    `The Movie Title (2010) [imdbid-tt0066921]- {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+    `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
 #### Emby Anime
 
