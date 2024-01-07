@@ -93,8 +93,6 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 
 ##### Optional Emby
 
-!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
-
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
 ```
