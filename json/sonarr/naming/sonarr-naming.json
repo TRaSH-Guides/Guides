@@ -5,7 +5,7 @@
   "series": {
       "default": "{Series TitleYear}",
       "plex": "{Series TitleYear} {imdb-{ImdbId}}",
-      "emby": "{Series TitleYear}",
+      "emby": "{Series TitleYear} [imdbid-{ImdbId}]",
       "jellyfin": "{Series TitleYear} [tvdbid-{TvdbId}]"
   },
   "episodes": {
