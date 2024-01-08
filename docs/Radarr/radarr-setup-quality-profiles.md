@@ -295,9 +295,9 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? tip "Proper and Repacks - [Click to show/hide]"
 
-    I also suggest that you change the Propers and Repacks settings in Radarr
+    I also suggest changing the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](/Radarr/Radarr-collection-of-custom-formats/#repack) and [Proper](/Radarr/Radarr-collection-of-custom-formats/#proper) Custom Formats.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 

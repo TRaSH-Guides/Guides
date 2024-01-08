@@ -16,9 +16,9 @@ I also made 3 guides related to this one.
 
 !!! tip
 
-    I also suggest to change the Propers and Repacks settings in Radarr
+    I also suggest changing the Propers and Repacks settings in Radarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](#repack) and [Proper](#proper) Custom Formats.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
@@ -74,25 +74,25 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                           | Optional                            | French Audio Version          | French Source Groups                            |
-| ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------------------- |
-| [Dutch Groups](#dutch-groups)  | [AV1](#av1)                         | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups) | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)               | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)             | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [Repack/Proper](#repackproper) | [EVO (no WEBDL)](#evo-no-webdl)     | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [Repack2](#repack2)            | [HDR10+ Boost](#hdr10plus-boost)    | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [x264](#x264)                  | [HFR](#hfr)                         | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [x265](#x265)                  | [Internal](#internal)               | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [No-RlsGroup](#no-rlsgroup)         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
-|                                | [Obfuscated](#obfuscated)           | [VFB](#vfb)                   |                                                 |
-|                                | [Retags](#retags)                   | [VOSTFR](#vostfr)             |                                                 |
-|                                | [Scene](#scene)                     | [FanSUB](#fansub)             |                                                 |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [FastSUB](#fastsub)           |                                                 |
-|                                | [SDR](#sdr)                         |                               |                                                 |
-|                                | [VP9](#vp9)                         |                               |                                                 |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                               |                                                 |
+| Misc                          | Optional                            | French Audio Version          | French Source Groups                            |
+| ----------------------------- | ----------------------------------- | ----------------------------- | ----------------------------------------------- |
+| [Dutch Groups](#dutch-groups) | [AV1](#av1)                         | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [FreeLeech](#freeleech)       | [Bad Dual Groups](#bad-dual-groups) | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [MPEG2](#mpeg2)               | [DV (Disk)](#dv-disk)               | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [Multi](#multi)               | [DV (WEBDL)](#dv-webdl)             | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [Proper](#proper)             | [EVO (no WEBDL)](#evo-no-webdl)     | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [Repack](#repack)             | [HDR10+ Boost](#hdr10plus-boost)    | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [Repack2](#repack2)           | [HFR](#hfr)                         | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [x264](#x264)                 | [Internal](#internal)               | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
+| [x265](#x265)                 | [Line/Mic Dubbed](#linemic-dubbed)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                               | [No-RlsGroup](#no-rlsgroup)         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
+|                               | [Obfuscated](#obfuscated)           | [VFB](#vfb)                   |                                                 |
+|                               | [Retags](#retags)                   | [VOSTFR](#vostfr)             |                                                 |
+|                               | [Scene](#scene)                     | [FanSUB](#fansub)             |                                                 |
+|                               | [SDR (no WEBDL)](#sdr-no-webdl)     | [FastSUB](#fastsub)           |                                                 |
+|                               | [SDR](#sdr)                         |                               |                                                 |
+|                               | [VP9](#vp9)                         |                               |                                                 |
+|                               | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                               |                                                 |
 
 ------
 
@@ -1393,13 +1393,24 @@ I also made 3 guides related to this one.
 ## Misc
 
 ------
-
-### Repack/Proper
+### Proper
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack-proper.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/proper.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### Repack
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/repack.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
