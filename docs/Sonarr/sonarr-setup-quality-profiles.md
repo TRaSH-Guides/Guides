@@ -200,7 +200,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
     I also suggest changing the Propers and Repacks settings in Sonarr
 
-    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](/Sonarr/sonarr-collection-of-custom-formats/#repack) and [Proper](/Sonarr/sonarr-collection-of-custom-formats/#proper) Custom Format.
+    `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](/Sonarr/sonarr-collection-of-custom-formats/#repack) and [Proper](/Sonarr/sonarr-collection-of-custom-formats/#proper) Custom Formats.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 

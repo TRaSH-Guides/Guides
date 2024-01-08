@@ -10,7 +10,7 @@
 
         I also suggest changing the Propers and Repacks settings in Sonarr
 
-        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
+        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack](/Sonarr/sonarr-collection-of-custom-formats/#repack) and [Proper](/Sonarr/sonarr-collection-of-custom-formats/#proper) Custom Formats.
 
         ![!cf-mm-propers-repacks-disable](/Sonarr/images/cf-mm-propers-repacks-disable.png)
 
