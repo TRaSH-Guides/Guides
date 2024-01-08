@@ -83,25 +83,25 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                           | Optional                            | French Audio Version          | French Source Groups                          |
-| ------------------------------ | ----------------------------------- | ----------------------------- | --------------------------------------------- |
-| [MPEG2](#mpeg2)                | [AV1](#av1)                         | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
-| [Multi](#multi)                | [Bad Dual Groups](#bad-dual-groups) | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
-| [Repack v2](#repack-v2)        | [DV (Disk)](#dv-disk)               | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
-| [Repack v3](#repack-v3)        | [DV (WEBDL)](#dv-webdl)             | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
-| [Repack/Proper](#repackproper) | [HDR10+ Boost](#hdr10plus-boost)    | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
-| [x264](#x264)                  | [HFR](#hfr)                         | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
-| [x265](#x265)                  | [Internal](#internal)               | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-|                                | [No-RlsGroup](#no-rlsgroup)         | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
-|                                | [Obfuscated](#obfuscated)           | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [Retags](#retags)                   | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [Scene](#scene)                     | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                               |
-|                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
-|                                | [Season Packs](#season-pack)        | [FastSUB](#fastsub)           |                                               |
-|                                | [VP9](#vp9)                         |                               |                                               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                               |                                               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  |                               |                                               |
+| Misc                           | Optional                                  | French Audio Version          | French Source Groups                          |
+|--------------------------------|-------------------------------------------|-------------------------------|-----------------------------------------------|
+| [MPEG2](#mpeg2)                | [AV1](#av1)                               | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
+| [Multi](#multi)                | [Bad Dual Groups](#bad-dual-groups)       | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
+| [Repack v2](#repack-v2)        | [DV (Disk)](#dv-disk)                     | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
+| [Repack v3](#repack-v3)        | [DV (WEBDL)](#dv-webdl)                   | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
+| [Repack/Proper](#repackproper) | [DV HDR10Plus Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
+| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)          | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
+| [x265](#x265)                  | [HFR](#hfr)                               | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+|                                | [Internal](#internal)                     | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
+|                                | [No-RlsGroup](#no-rlsgroup)               | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [Obfuscated](#obfuscated)                 | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [Retags](#retags)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+|                                | [Scene](#scene)                           | [VOSTFR](#vostfr)             |                                               |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)           | [FanSUB](#fansub)             |                                               |
+|                                | [SDR](#sdr)                               | [FastSUB](#fastsub)           |                                               |
+|                                | [Season Packs](#season-pack)              |                               |                                               |
+|                                | [VP9](#vp9)                               |                               |                                               |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)        |                               |                                               |
 
 ------
 
@@ -1059,6 +1059,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### DV HDR10Plus Boost
+
+??? question "DV HDR10+ Boost - [Click to show/hide]"
+
+    Optional: use this one if you want to upgrade from DV HDR10 to DV HDR10+ to support the best of both worlds.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
