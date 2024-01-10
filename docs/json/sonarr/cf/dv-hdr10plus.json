@@ -4,11 +4,11 @@
     "default": 1500
   },
   "trash_regex": "https://regex101.com/r/60gMpz/1",
-  "name": "DV HDR10Plus",
+  "name": "DV HDR10+",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "DV HDR10Plus",
+      "name": "DV HDR10+",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,

@@ -34,7 +34,7 @@ I also made 3 guides related to this one.
 
 | Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10Plus](#dv-hdr10plus)     |
+| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        |
 | [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             |
 | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV](#dv)                         |
 | [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 |
@@ -74,26 +74,26 @@ I also made 3 guides related to this one.
 
 ------
 
-| Misc                           | Optional                                  | French Audio Version          | French Source Groups                            |
-|--------------------------------|-------------------------------------------|-------------------------------|-------------------------------------------------|
-| [Dutch Groups](#dutch-groups)  | [AV1](#av1)                               | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups)       | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)                     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)                   | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [Repack/Proper](#repackproper) | [DV HDR10Plus Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [Repack2](#repack2)            | [EVO (no WEBDL)](#evo-no-webdl)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)          | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [x265](#x265)                  | [HFR](#hfr)                               | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [Internal](#internal)                     | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)        | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
-|                                | [No-RlsGroup](#no-rlsgroup)               | [VFB](#vfb)                   |                                                 |
-|                                | [Obfuscated](#obfuscated)                 | [VOSTFR](#vostfr)             |                                                 |
-|                                | [Retags](#retags)                         | [FanSUB](#fansub)             |                                                 |
-|                                | [Scene](#scene)                           | [FastSUB](#fastsub)           |                                                 |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)           |                               |                                                 |
-|                                | [SDR](#sdr)                               |                               |                                                 |
-|                                | [VP9](#vp9)                               |                               |                                                 |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)        |                               |                                                 |
+| Misc                           | Optional                               | French Audio Version          | French Source Groups                            |
+| ------------------------------ | -------------------------------------- | ----------------------------- | ----------------------------------------------- |
+| [Dutch Groups](#dutch-groups)  | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)                | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [Repack/Proper](#repackproper) | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [Repack2](#repack2)            | [EVO (no WEBDL)](#evo-no-webdl)        | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)       | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [x265](#x265)                  | [HFR](#hfr)                            | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)     | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
+|                                | [No-RlsGroup](#no-rlsgroup)            | [VFB](#vfb)                   |                                                 |
+|                                | [Obfuscated](#obfuscated)              | [VOSTFR](#vostfr)             |                                                 |
+|                                | [Retags](#retags)                      | [FanSUB](#fansub)             |                                                 |
+|                                | [Scene](#scene)                        | [FastSUB](#fastsub)           |                                                 |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)        |                               |                                                 |
+|                                | [SDR](#sdr)                            |                               |                                                 |
+|                                | [VP9](#vp9)                            |                               |                                                 |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                                 |
 
 ------
 
@@ -515,7 +515,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV HDR10 - [Click to show/hide]"
+??? question "DV HDR10+ - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
