@@ -1,3 +1,8 @@
+# 2024-01-10 22:15
+- [feat(Starr): Add NEW CF `DV HDR10+ Boost` + Change score for `DV HDR10+` from `1600` to `1500`](https://github.com/TRaSH-Guides/Guides/pull/1744)
+- [feat(Starr): Add RlsGrp `LCD` to CF `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/1742)
+- [feat(Starr): Added imdb id to Emby naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1739)
+
 # 2024-01-03 20:25
 - [feat(radarr:) Remove LEGi0N from UHD Blu-ray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1720)
 
