@@ -18,7 +18,7 @@ For Installation and Quick Start Guide please check the official [WikiArr](https
 
 (Alpha/Unstable) : This is the bleeding edge for Sonarr v4 Beta. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch. On GitHub, this is the develop branch.
 
-!!! danger "**Warning: You may not be able to go back to `master` after switching to this branch.** On GitHub, this is the `develop` branch."
+!!! danger "**Warning: You may not be able to go back to `main` after switching to this branch.** On GitHub, this is the `develop` branch."
 
 ### How do I update Sonarr
 
