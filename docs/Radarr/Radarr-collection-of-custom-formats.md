@@ -34,7 +34,7 @@ I also made 3 guides related to this one.
 
 | Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10Plus](#dv-hdr10plus)     |
+| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        |
 | [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             |
 | [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV](#dv)                         |
 | [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 |
@@ -514,7 +514,7 @@ I also made 3 guides related to this one.
 
 <sub>Dolby Vision = DoVi = DV</sub>
 
-??? question "DV HDR10 - [Click to show/hide]"
+??? question "DV HDR10+ - [Click to show/hide]"
 
     Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
 
