@@ -1,3 +1,11 @@
+# 2024-01-11 20:30
+- [feat(guide): Hardlinks unRaid - Add The fastest way to create the needed subfolders](https://github.com/TRaSH-Guides/Guides/pull/1753)
+- [feat(guide): How to set up Quality Profiles - Add DV HDR10+ description](https://github.com/TRaSH-Guides/Guides/pull/1756)
+- [feat(guide): How to Sync 2 Radarr or Sonarr with each other - simplify wording](https://github.com/TRaSH-Guides/Guides/pull/1754)
+- [feat(radarr): Add RlsGrp MarkII to LQ](https://github.com/TRaSH-Guides/Guides/pull/1752)
+- [feat(starr): Add upscaled to Sonarr and add UPS](https://github.com/TRaSH-Guides/Guides/pull/1740)
+- [fix(guide): Synology - Update link to Pullio documentation](https://github.com/TRaSH-Guides/Guides/pull/1755)
+
 # 2024-01-10 22:15
 - [feat(Starr): Add NEW CF `DV HDR10+ Boost` + Change score for `DV HDR10+` from `1600` to `1500`](https://github.com/TRaSH-Guides/Guides/pull/1744)
 - [feat(Starr): Add RlsGrp `LCD` to CF `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/1742)
