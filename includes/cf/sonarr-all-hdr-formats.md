@@ -43,7 +43,7 @@
         | ----------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------ |
         | [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl) | {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }} | {{ sonarr['cf']['dv-webdl']['trash_id'] }} |
 
-    ??? abstract "Add Custom Format `DV HDR10+ Boost` + `HDR10+ Boost` - [Click to show/hide]"
+    ??? abstract "Add the Custom Formats `DV HDR10+ Boost` and `HDR10+ Boost` - [Click to show/hide]"
 
         **Why would I add this Custom Format?**
 
