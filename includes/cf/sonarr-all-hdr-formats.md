@@ -39,11 +39,11 @@
 
         <p align="center">![Flowchart](/Radarr/images/flowchart-hdr-dv-webdl.png){ width="20%" height="20%" }
 
-        | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
-        | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
-        | [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl)           |   {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }}    | {{ sonarr['cf']['dv-webdl']['trash_id'] }}      |
+        | Custom Format                                                                                   |                           Score                           | Trash ID                                   |
+        | ----------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------ |
+        | [{{ sonarr['cf']['dv-webdl']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-webdl) | {{ sonarr['cf']['dv-webdl']['trash_scores']['default'] }} | {{ sonarr['cf']['dv-webdl']['trash_id'] }} |
 
-    ??? abstract "Add Custom Format `HDR10+ Boost` with a score of `901`- [Click to show/hide]"
+    ??? abstract "Add the Custom Formats `DV HDR10+ Boost` and `HDR10+ Boost` - [Click to show/hide]"
 
         **Why would I add this Custom Format?**
 
@@ -54,6 +54,7 @@
 
         !!! warning "If you use this Custom Format then 99% of the time you also need to add the following Custom Format `DV (WEBDL)` with a score of `-10000`"
 
-        | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
-        | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-        | [{{ sonarr['cf']['hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost) | {{ sonarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ sonarr['cf']['hdr10plus-boost']['trash_id'] }} |
+        | Custom Format                                                                                                       |                                Score                                | Trash ID                                             |
+        | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
+        | [{{ sonarr['cf']['hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hdr10plus-boost)       |  {{ sonarr['cf']['hdr10plus-boost']['trash_scores']['default'] }}   | {{ sonarr['cf']['hdr10plus-boost']['trash_id'] }}    |
+        | [{{ sonarr['cf']['dv-hdr10plus-boost']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dv-hdr10plus-boost) | {{ sonarr['cf']['dv-hdr10plus-boost']['trash_scores']['default'] }} | {{ sonarr['cf']['dv-hdr10plus-boost']['trash_id'] }} |
