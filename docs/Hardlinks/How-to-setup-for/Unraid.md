@@ -1,7 +1,8 @@
 # unRAID
 
-!!! warning "**DO NOT** use the template paths from unRAID or the suggested paths from SpaceInvader One."
+!!! warning "**DO NOT** use the template paths from unRAID or the suggested paths from SpaceInvader One"
     SpaceInvader One YouTube guides are great for learning how to start with unRAID or how to set up certain applications - and yes I did and still do use them.<br><br>The main reason why he's probably using those paths is because they are predefined in the templates.
+
 ------
 
 ## Preparation
@@ -57,13 +58,31 @@ Go to your dashboard and select `Shares` on the navigation bar, then choose `Add
 
 On the host (unRAID) you will need to add `/mnt/user` before it. **So `/mnt/user/data`**
 
-The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie` and `music` downloads to keep things organized. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is where your library resides, and what you’d pass to Plex, Emby or JellyFin.
-
-You will need to create these subfolders yourself. You can do this any way you prefer, but Krusader or WinSCP are popular choices if you are unsure.
-
 {! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
 *I'm using lower-case on all folders on purpose, being Linux is case-sensitive.*
+
+The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie` and `music` downloads to keep things organized. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is where your library resides, and what you’d pass to Plex, Emby or JellyFin.
+
+You will need to create these subfolders yourself. You can do this in any way you prefer, but the fastest way to create all the necessary subfolders would be to use the terminal (explained below). Alternatively, Krusader or WinSCP are popular choices if you are unsure.
+
+### Fastest way to create the needed subfolders
+
+The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTy](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} or use the terminal from the dashboard.
+These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
+If you use both torrents and usenet, use both commands.
+
+#### If you use usenet
+
+```bash
+mkdir -p /mnt/user/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
+```
+
+#### If you use torrents
+
+```bash
+mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
+```
 
 ------
 
@@ -162,9 +181,11 @@ Plex, Emby, JellyFin and Bazarr
 
 ![!unraid-final-result](images/unraid-final-result.png)
 
+### Examples how to set up your paths INSIDE your applications
+
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) of how to set up your paths INSIDE your applications.**
 
-### Video Tutorial
+## Video Tutorial
 
 !!! tip ""
 
@@ -176,5 +197,4 @@ Plex, Emby, JellyFin and Bazarr
 
     Check out other videos from IBRACORP [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
-{! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"
