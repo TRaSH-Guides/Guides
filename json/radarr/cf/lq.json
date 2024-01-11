@@ -412,6 +412,15 @@
       }
     },
     {
+      "name": "MarkII",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MarkII)$"
+      }
+    },
+    {
       "name": "MeGusta",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
