@@ -303,7 +303,7 @@ At `Task Settings` tab, add the following line in the Run Command section:
 
 It can be frustrating to test the script if no docker image updates are available, for that you can run command `sudo pullio --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
-More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="noopener noreferrer"}
+More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
