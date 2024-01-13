@@ -38,7 +38,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "DTS[ .]?[1-9]"
+              "value": "DTS[ ._-]?[1-9]"
           }
       },
       {
