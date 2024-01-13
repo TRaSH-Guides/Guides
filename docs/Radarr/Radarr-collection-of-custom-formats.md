@@ -1544,6 +1544,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
+    - Reputable release groups, with a known history of releasing high-quality releases.
     - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
@@ -1606,6 +1607,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
+    - Reputable release groups, with a known history of releasing high-quality releases.
     - Use remuxes as their source without micro-sizing them.
     - HDR/DoVi (Depending on what's offered and often both).
     - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
@@ -1670,6 +1672,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
+    - Reputable release groups, with a known history of releasing high-quality releases.
     - Use remuxes as their source without micro-sizing them.
     - Have a minimum of GP releases. (best encode in it's class  1080p and lower)
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
@@ -1729,6 +1732,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
+    - Reputable release groups, with a known history of releasing high-quality releases.
     - Create hybrids.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
