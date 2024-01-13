@@ -515,12 +515,22 @@ We've made 3 guides related to this.
 ### DV HDR10Plus
 
 <sub>DV = DoVi = Dolby Vision</sub>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "DV HDR10+ - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    *This Custom Format will only match on `DV HDR10+`*
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    This provides Dolby Vision with HDR10+ fallback, while HDR10+ also has HDR10 fallback..
+    You will find this mainly with:
+    - Hybrid Remuxes (*Hybrid isn't always mentioned*)
+    - Hybrid Bluray encodes (*Hybrid isn't always mentioned*)
+    - Hybrid WEB-DL (*Hybrid isn't always mentioned*)
+
+    Dolby Vision is a dynamic HDR format developed by Dolby Labs.
+    It potentially offers a better visual experience compared to HDR10 for several reasons. Firstly, it employs dynamic metadata, allowing for varying brightness levels within HDR content and enabling filmmakers to have more precise control over the image appearance. HDR10 relies on static metadata, limiting the HDR effect to be determined only on a per-movie or per-show basis.
+
+    HDR10+ makes this metadata dynamic, allowing it to change for each frame of video. This means every frame is treated to its own set of colors, brightness, and contrast parameters, making for a much more realistic-looking image. Areas of the screen that might have been over saturated under HDR10 will display their full details with HDR10+.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -538,9 +548,24 @@ We've made 3 guides related to this.
 
 ??? question "DV HDR10 - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    *This Custom Format will only match on `DV HDR10`*
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    This provides Dolby Vision with HDR10 fallback.
+    You will find this mainly with:
+    - Remuxes
+    - Bluray encodes
+    - Hybrid WEB-DL (*Hybrid isn't always mentioned*)
+
+    Dolby Vision is a dynamic HDR format developed by Dolby Labs.
+    It potentially offers a better visual experience compared to HDR10 for several reasons. Firstly, it employs dynamic metadata, allowing for varying brightness levels within HDR content and enabling filmmakers to have more precise control over the image appearance. HDR10 relies on static metadata, limiting the HDR effect to be determined only on a per-movie or per-show basis.
+
+    HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata to the PQ10 format.
+
+    HDR10 allows for an image that is over twice as bright, with a corresponding increase in contrast (the difference between the blackest blacks and the whitest whites), and a color palette that has one billion shades, as opposed to the measly 16 million of SDR.
+
+    As with all HDR formats, how well HDR10 is implemented depends on the quality of the TV on which you view it. When utilized properly, HDR10 makes video content look really good, but it is no longer the top of the HDR food chain.
+
+    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g., lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is mediated by the display, resulting in the potential loss of the original producer's intent.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -558,9 +583,14 @@ We've made 3 guides related to this.
 
 ??? question "DV - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    *This Custom Format will only match on `DV` **NOT** on `DV HDR10` etc*
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    Depending on the used source (WEB-DL, Bluray or Remux) it will match on the following
+
+    You will find this mainly with:
+    - With Remuxes, it means that it will have `DV HDR10`.
+    - With Bluray encodes, it means it will have `DV HDR10`.
+    - With WEB-DL, it means 99% it will only support Dolby Vision without `HDR10` fallback (Incompatible devices will playback with blown out pinks and greens, if you have this issue always make sure you also add the following [Custom Format](#dv-webdl) with a score of `-10000`
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -578,9 +608,9 @@ We've made 3 guides related to this.
 
 ??? question "DV HLG - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    *This Custom Format will only match on `DV HLG`
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    Hybrid log gamma, or HLG. HLG is designed for broadcast cable, satellite and live TV.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -598,9 +628,9 @@ We've made 3 guides related to this.
 
 ??? question "DV SDR - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    *This Custom Format will only match on `DV SDR`
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    Place Holder
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -614,15 +644,19 @@ We've made 3 guides related to this.
 
 ### HDR10Plus
 
-<sub>HDR10Plus = HDR10+</sub>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "HDR10+ - [Click to show/hide]"
 
-    **HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.**
+    *This Custom Format will only match on `HDR10+` **NOT** `HDR10`*.
 
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
+    This provides Dolby Vision with HDR10+ fallback, while HDR10+ also has HDR10 fallback.
+    You will find this mainly with:
+    - Hybrid Remuxes (*Hybrid isn't always mentioned*)
+    - Hybrid Bluray encodes (*Hybrid isn't always mentioned*)
+    - WEB-DL (*Streaming Services*)
 
-    HDR10+, also known as HDR10 Plus, is an HDR video format, announced on 20 April 2017. It is the same as HDR10 but with the addition of a system of dynamic metadata developed by Samsung. It is free to use for content creators and has a maximum $10,000 annual license for some manufacturers. It has been positioned as an alternative to Dolby Vision without the same expenses.
+    HDR10+ makes this metadata dynamic, allowing it to change for each frame of video. This means every frame is treated to its own set of colors, brightness, and contrast parameters, making for a much more realistic-looking image. Areas of the screen that might have been over saturated under HDR10 will display their full details with HDR10+.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -640,13 +674,15 @@ We've made 3 guides related to this.
 
 ??? question "HDR10 - [Click to show/hide]"
 
-    **HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.**
+    *This Custom Format will only match on `HDR10` **NOT** `HDR10+` etc*.
 
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
+    HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata to the PQ10 format.
 
-    HDR10 Media Profile, more commonly known as HDR10, is an open HDR standard announced on 27 August 2015 by the Consumer Technology Association. It is the most widespread of the HDR formats. It is not backward compatible with SDR displays. It is technically limited to a maximum of 10,000 nits peak brightness; however, HDR10 content is commonly mastered with a peak brightness between 1000 and 4000 nits.
+    HDR10 allows for an image that is over twice as bright, with a corresponding increase in contrast (the difference between the blackest blacks and the whitest whites), and a color palette that has one billion shades, as opposed to the measly 16 million of SDR.
 
-    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g. lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e. the presentation of the video) is mediated by the display, with the result that the original producer's intent may not be preserved.
+    As with all HDR formats, how well HDR10 is implemented depends on the quality of the TV on which you view it. When utilized properly, HDR10 makes video content look really good, but it is no longer the top of the HDR food chain.
+
+    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g., lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is mediated by the display, resulting in the potential loss of the original producer's intent.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -664,9 +700,9 @@ We've made 3 guides related to this.
 
 ??? question "HDR - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
+    *This Custom Format will only match on `HDR` **NOT** on `HDR10`, `HDR10+` etc*
 
-    High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+    This Custom Format is more of a catch-all for `HDR` scene naming, where we don't know upfront which HDR formats it actually has. It could be `HDR10` or even `PQ`, or whatever.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -702,11 +738,8 @@ We've made 3 guides related to this.
 
 ??? question "PQ - [Click to show/hide]"
 
-    **PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    PQ10, sometimes simply referred as the PQ format, is an HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata. It uses the PQ transfer function, Rec. 2020 color primaries and a bit depth of 10-bits. It is not backward compatible with SDR.
+    PQ10 is the most basic HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata.
+    PQ10, sometimes simply referred as the PQ format.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -728,7 +761,7 @@ We've made 3 guides related to this.
 
     [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
 
-    HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. It uses the HLG transfer function, Rec. 2020 color primaries, and a bit depth of 10 bits. The format is backwards compatible with SDR UHDTV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
+    HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. The format is backwards compatible with SDR UHD TV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
 
 ??? example "JSON - [Click to show/hide]"
 
