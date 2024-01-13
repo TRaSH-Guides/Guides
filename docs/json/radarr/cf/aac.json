@@ -67,7 +67,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "True[ .-]?HD|\\bATMOS(\\b|\\d)"
+              "value": "True[ ._-]?HD|\\bATMOS(\\b|\\d)"
           }
       }
   ]

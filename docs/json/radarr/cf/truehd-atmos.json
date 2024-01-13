@@ -14,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "True[ .-]?HD|W4NK3R|HQMUX"
+        "value": "True[ ._-]?HD|W4NK3R|HQMUX"
       }
     },
     {

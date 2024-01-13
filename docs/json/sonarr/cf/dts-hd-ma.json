@@ -22,7 +22,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "True[ .-]?HD|\\bATMOS(\\b|\\d)"
+        "value": "True[ ._-]?HD|\\bATMOS(\\b|\\d)"
       }
     },
     {
@@ -85,7 +85,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "dts[-. ]?(es|(hd[. ]?)?(hr|hi))"
+        "value": "dts[ ._-]?(es|(hd[ ._-]?)?(hr|hi))"
       }
     }
   ]

@@ -22,7 +22,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?|hdr(10(P(lus)?)?)?|pq)\\b"
+        "value": "\\b(dv|dovi|dolby[ ._-]?v(ision)?|hdr(10(P(lus)?)?)?|pq)\\b"
       }
     },
     {

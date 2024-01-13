@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ .]SDR)\\b"
+        "value": "\\b(DV[ ._-]SDR)\\b"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?V(ision)?)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ ._-]?V(ision)?)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
       }
     },
     {
@@ -30,7 +30,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(DV[ .]HLG)\\b"
+        "value": "\\b(DV[ ._-]HLG)\\b"
       }
     }
   ]

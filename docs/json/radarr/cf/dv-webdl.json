@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?V(ision)?)\\b"
+        "value": "\\b(dv|dovi|dolby[ ._-]?V(ision)?)\\b"
       }
     },
     {
