@@ -514,7 +514,7 @@ We've made 3 guides related to this.
 
 ### DV HDR10Plus
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HDR10+ - [Click to show/hide]"
 
@@ -534,7 +534,7 @@ We've made 3 guides related to this.
 
 ### DV HDR10
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HDR10 - [Click to show/hide]"
 
@@ -554,7 +554,7 @@ We've made 3 guides related to this.
 
 ### DV
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV - [Click to show/hide]"
 
@@ -574,7 +574,7 @@ We've made 3 guides related to this.
 
 ### DV HLG
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HLG - [Click to show/hide]"
 
@@ -594,7 +594,7 @@ We've made 3 guides related to this.
 
 ### DV SDR
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV SDR - [Click to show/hide]"
 
@@ -1106,7 +1106,7 @@ We've made 3 guides related to this.
 
 ### DV (WEBDL)
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
     This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
