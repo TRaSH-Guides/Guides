@@ -1386,7 +1386,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
-    - Reputable release groups, with a known history of releasing high-quality releases.
+    - Have established themselves as consistently delivering high-quality releases.
     - Use remuxes as their source without micro-sizing them.
     - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
