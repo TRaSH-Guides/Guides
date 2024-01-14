@@ -9162,11 +9162,32 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <h2 id="hdr-formats">HDR Formats<a class="headerlink" href="#hdr-formats" title="Permanent link"></a></h2>
 <hr />
 <h3 id="dv-hdr10plus">DV HDR10Plus<a class="headerlink" href="#dv-hdr10plus" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub><br>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub></p>
 <details class="question">
 <summary>DV HDR10+ - [Click to show/hide]</summary>
-<p>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.</p>
-<p>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dv-hdr10plus.md -->
+<em>This Custom Format will only match on</em> <code>DV HDR10+</code></p>
+<p>This format provides Dolby Vision <em>with</em> HDR10+ fallback (with HDR10+ having native HDR10 fallback).
+You will find this mainly with:</p>
+<ul>
+<li>Hybrid Remuxes (<em>Hybrid isn't always mentioned</em>)</li>
+<li>Hybrid Bluray encodes (<em>Hybrid isn't always mentioned</em>)</li>
+<li>Hybrid WEB-DL (<em>Hybrid isn't always mentioned</em>)</li>
+</ul>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dolby-vision.md -->
+<strong>Dolby Vision</strong><br></p>
+<p>Dolby Vision is a dynamic HDR format.
+It can offer better visual experiences relative to HDR10. The most significant difference is that it uses dynamic metadata which allows varying brightness levels within HDR content which enables filmmakers to have more precise control over the overall image appearance. HDR10 relies on static metadata which limits the HDR effect to a per-movie or per-episode basis.</p>
+<!-- END INCLUDE -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr10plus.md -->
+<strong>HDR10+</strong><br></p>
+<p>HDR10+ improves upon HDR10 by making its metadata dynamic, allowing for it to change for each frame of video. This means every frame is adjusted to its own set of colors, brightness, and contrast parameters, making for a much more vibrant and realistic-looking image. Areas of the screen that might have been over-saturated with HDR10 will display their full contrast and detail with HDR10+.</p>
+<!-- END INCLUDE -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr-formats-info.md -->
+💡 Any form of HDR will look significantly better than SDR on supporting equipment. The overall result will ultimately end up varying, though, based on your hardware and how the studio and filmmaker implemented HDR.</p>
+<!-- END INCLUDE -->
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9213,11 +9234,32 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="dv-hdr10">DV HDR10<a class="headerlink" href="#dv-hdr10" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub></p>
 <details class="question">
 <summary>DV HDR10 - [Click to show/hide]</summary>
-<p>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.</p>
-<p>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dv-hdr10.md -->
+<em>This Custom Format will only match on</em> <code>DV HDR10</code></p>
+<p>This format provides Dolby Vision <em>with</em> HDR10 fallback.
+You will find this mainly with:</p>
+<ul>
+<li>Remuxes</li>
+<li>Bluray encodes</li>
+<li>Hybrid WEB-DL (<em>Hybrid isn't always mentioned</em>)</li>
+</ul>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dolby-vision.md -->
+<strong>Dolby Vision</strong><br></p>
+<p>Dolby Vision is a dynamic HDR format.
+It can offer better visual experiences relative to HDR10. The most significant difference is that it uses dynamic metadata which allows varying brightness levels within HDR content which enables filmmakers to have more precise control over the overall image appearance. HDR10 relies on static metadata which limits the HDR effect to a per-movie or per-episode basis.</p>
+<!-- END INCLUDE -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr10.md -->
+<strong>HDR10</strong><br></p>
+<p>HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices.</p>
+<p>HDR10 relies on static metadata which limits its effect to a per-movie or per-episode basis. Because of this, it lacks the information for how the content should be adjusted for your specific display. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is controlled by the display, which may result in quality that is ultimately not how was originally intended.</p>
+<!-- END INCLUDE -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr-formats-info.md -->
+💡 Any form of HDR will look significantly better than SDR on supporting equipment. The overall result will ultimately end up varying, though, based on your hardware and how the studio and filmmaker implemented HDR.</p>
+<!-- END INCLUDE -->
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9273,12 +9315,18 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="dv">DV<a class="headerlink" href="#dv" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub></p>
 <details class="question">
 <summary>DV - [Click to show/hide]</summary>
-<p>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.</p>
-<p>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.</p>
+<p><em>This Custom Format will only match on</em> <code>DV</code> <strong>NOT</strong> <em>on</em> <code>DV HDR10</code> <em>etc</em>.</p>
+<p>Depending on the source (WEB-DL, Bluray, or Remux) this format will match the following:</p>
+<ul>
+<li>With Remuxes, it means that it will have <code>DV HDR10</code>.</li>
+<li>With Bluray encodes, it means it will have <code>DV HDR10</code>.</li>
+<li>With WEB-DL, it means 99% it will only support Dolby Vision without <code>HDR10</code> fallback (Incompatible devices will playback with blown out pinks and greens, if you have this issue always make sure you also add the following <a href="#dv-webdl">Custom Format</a> with a score of <code>-10000</code>)</li>
+</ul>
 </details>
+<p>&lt;! -- the reason why we didn't use here <code>include-markdown</code> is because all the headers when using <code>include-markdown</code> will be looking in <code>/includes</code> and not the current markdown file, in this case the pointer to <code>#dv-webdl</code> in <code>includes/dv.md</code>--&gt;</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -9332,11 +9380,25 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="dv-hlg">DV HLG<a class="headerlink" href="#dv-hlg" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub></p>
 <details class="question">
 <summary>DV HLG - [Click to show/hide]</summary>
-<p>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.</p>
-<p>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dv-hlg.md -->
+<em>This Custom Format will only match on</em> <code>DV HLG</code></p>
+<p><strong>DV HLG</strong><br>
+This is a very rare HDR Format that was created by NHK (JP) and the BBC for cable, satellite, and over-the-air TV broadcasts.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dolby-vision.md -->
+<strong>Dolby Vision</strong><br></p>
+<p>Dolby Vision is a dynamic HDR format.
+It can offer better visual experiences relative to HDR10. The most significant difference is that it uses dynamic metadata which allows varying brightness levels within HDR content which enables filmmakers to have more precise control over the overall image appearance. HDR10 relies on static metadata which limits the HDR effect to a per-movie or per-episode basis.</p>
+<!-- END INCLUDE -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hlg.md -->
+<em>This Custom Format will only match on</em> <code>DV HLG</code></p>
+<p><strong>HLG</strong><br></p>
+<p>HLG or HLG10 is an HDR format created by NHK (JP) and the BBC that can be used for both video and still images. This format is backward compatible with SDR UHD TV, but not with older SDR displays that do not implement the Rec. 2020 color standards.</p>
+<p>You will find this mainly with cable, satellite, and over-the-air TV broadcast series and movies from the likes of BBC and National Geographic.</p>
+<!-- END INCLUDE -->
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9382,11 +9444,14 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="dv-sdr">DV SDR<a class="headerlink" href="#dv-sdr" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub></p>
 <details class="question">
 <summary>DV SDR - [Click to show/hide]</summary>
-<p>Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.</p>
-<p>Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dv-sdr.md -->
+<em>This Custom Format will only match on</em> <code>DV SDR</code></p>
+<p><strong>DV SDR</strong><br></p>
+<p>This is a very rare HDR Format.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9432,12 +9497,13 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="hdr10plus">HDR10Plus<a class="headerlink" href="#hdr10plus" title="Permanent link"></a></h3>
-<p><sub>HDR10Plus = HDR10+</sub></p>
+<p><sub>HDR10+ = HDR10P = HDR10Plus</sub></p>
 <details class="question">
 <summary>HDR10+ - [Click to show/hide]</summary>
-<p><strong>HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.</strong></p>
-<p><a href="https://en.m.wikipedia.org/wiki/High-dynamic-range_video" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
-<p>HDR10+, also known as HDR10 Plus, is an HDR video format, announced on 20 April 2017. It is the same as HDR10 but with the addition of a system of dynamic metadata developed by Samsung. It is free to use for content creators and has a maximum $10,000 annual license for some manufacturers. It has been positioned as an alternative to Dolby Vision without the same expenses.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr10plus.md -->
+<strong>HDR10+</strong><br></p>
+<p>HDR10+ improves upon HDR10 by making its metadata dynamic, allowing for it to change for each frame of video. This means every frame is adjusted to its own set of colors, brightness, and contrast parameters, making for a much more vibrant and realistic-looking image. Areas of the screen that might have been over-saturated with HDR10 will display their full contrast and detail with HDR10+.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9514,10 +9580,11 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub>HDR10</sub></p>
 <details class="question">
 <summary>HDR10 - [Click to show/hide]</summary>
-<p><strong>HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.</strong></p>
-<p><a href="https://en.m.wikipedia.org/wiki/High-dynamic-range_video" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
-<p>HDR10 Media Profile, more commonly known as HDR10, is an open HDR standard announced on 27 August 2015 by the Consumer Technology Association. It is the most widespread of the HDR formats. It is not backward compatible with SDR displays. It is technically limited to a maximum of 10,000 nits peak brightness; however, HDR10 content is commonly mastered with a peak brightness between 1000 and 4000 nits.</p>
-<p>HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g. lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e. the presentation of the video) is mediated by the display, with the result that the original producer's intent may not be preserved.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr10.md -->
+<strong>HDR10</strong><br></p>
+<p>HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices.</p>
+<p>HDR10 relies on static metadata which limits its effect to a per-movie or per-episode basis. Because of this, it lacks the information for how the content should be adjusted for your specific display. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is controlled by the display, which may result in quality that is ultimately not how was originally intended.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9593,8 +9660,10 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub>HDR</sub></p>
 <details class="question">
 <summary>HDR - [Click to show/hide]</summary>
-<p><a href="https://en.m.wikipedia.org/wiki/High-dynamic-range_video" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
-<p>High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr.md -->
+<em>This Custom Format will only match on</em> <code>HDR</code> <strong>NOT</strong> <em>on</em> <code>HDR10</code>, <code>HDR10+</code> <em>etc</em></p>
+<p>This Custom Format is a sort of "catch-all" for the <code>HDR</code> scene naming scheme where we don't know, based on name alone, which HDR formats are included - it could be <code>HDR10</code>, <code>HDR10+</code> or even <code>PQ</code>.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9687,8 +9756,11 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <h3 id="hdr-undefined">HDR (undefined)<a class="headerlink" href="#hdr-undefined" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HDR (undefined) - [Click to show/hide]</summary>
-<p>Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.</p>
-<p>For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name, but in the future we can add more to it if needed.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hdr-undefined.md -->
+Some release groups don't add HDR to their 4K release naming scheme.</p>
+<p>Currently, only FraMeSToR and HQMUX do not include the 'HDR' tag. In the future, we can add more when it's needed.</p>
+<p>Add this Custom Format with the same score you use for <code>HDR10</code>.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9782,9 +9854,11 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub>PQ = PQ10</sub></p>
 <details class="question">
 <summary>PQ - [Click to show/hide]</summary>
-<p><strong>PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.</strong></p>
-<p><a href="https://en.m.wikipedia.org/wiki/High-dynamic-range_video" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
-<p>PQ10, sometimes simply referred as the PQ format, is an HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata. It uses the PQ transfer function, Rec. 2020 color primaries and a bit depth of 10-bits. It is not backward compatible with SDR.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/pq.md -->
+<strong>PQ10</strong><br></p>
+<p>PQ (perceptual quantizer) or PQ10 is the most basic HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata.</p>
+<p>You will find this mainly with older movies.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -9860,9 +9934,12 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <p><sub>HLG = HLG10</sub></p>
 <details class="question">
 <summary>HLG - [Click to show/hide]</summary>
-<p><strong>HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.</strong></p>
-<p><a href="https://en.m.wikipedia.org/wiki/High-dynamic-range_video" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
-<p>HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. It uses the HLG transfer function, Rec. 2020 color primaries, and a bit depth of 10 bits. The format is backwards compatible with SDR UHDTV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/hlg.md -->
+<em>This Custom Format will only match on</em> <code>DV HLG</code></p>
+<p><strong>HLG</strong><br></p>
+<p>HLG or HLG10 is an HDR format created by NHK (JP) and the BBC that can be used for both video and still images. This format is backward compatible with SDR UHD TV, but not with older SDR displays that do not implement the Rec. 2020 color standards.</p>
+<p>You will find this mainly with cable, satellite, and over-the-air TV broadcast series and movies from the likes of BBC and National Geographic.</p>
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -10948,7 +11025,7 @@ Also they often even translate/rename the release name to Portuguese.</p>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="dv-webdl">DV (WEBDL)<a class="headerlink" href="#dv-webdl" title="Permanent link"></a></h3>
-<p><sub>Dolby Vision = DoVi = DV</sub></p>
+<p><sub>DV = DoVi = Dolby Vision</sub></p>
 <details class="question">
 <summary>DV (WEBDL) - [Click to show/hide]</summary>
 <p>This is a special Custom Format that blocks WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
@@ -21674,7 +21751,7 @@ In your quality profile use the following score for this Custom Format: <span cl
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2024 17:11:25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2024 20:22:08</span>
   </span>
 
     
