@@ -514,13 +514,12 @@ We've made 3 guides related to this.
 
 ### DV HDR10Plus
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub><br>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "DV HDR10+ - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -534,13 +533,11 @@ We've made 3 guides related to this.
 
 ### DV HDR10
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HDR10 - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -554,13 +551,13 @@ We've made 3 guides related to this.
 
 ### DV
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    --8<-- "includes/cf-descriptions/dv.md"
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+<! -- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md` -->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -574,13 +571,11 @@ We've made 3 guides related to this.
 
 ### DV HLG
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HLG - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -594,13 +589,11 @@ We've made 3 guides related to this.
 
 ### DV SDR
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV SDR - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -614,15 +607,11 @@ We've made 3 guides related to this.
 
 ### HDR10Plus
 
-<sub>HDR10Plus = HDR10+</sub>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "HDR10+ - [Click to show/hide]"
 
-    **HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HDR10+, also known as HDR10 Plus, is an HDR video format, announced on 20 April 2017. It is the same as HDR10 but with the addition of a system of dynamic metadata developed by Samsung. It is free to use for content creators and has a maximum $10,000 annual license for some manufacturers. It has been positioned as an alternative to Dolby Vision without the same expenses.
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -640,13 +629,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR10 - [Click to show/hide]"
 
-    **HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HDR10 Media Profile, more commonly known as HDR10, is an open HDR standard announced on 27 August 2015 by the Consumer Technology Association. It is the most widespread of the HDR formats. It is not backward compatible with SDR displays. It is technically limited to a maximum of 10,000 nits peak brightness; however, HDR10 content is commonly mastered with a peak brightness between 1000 and 4000 nits.
-
-    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g. lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e. the presentation of the video) is mediated by the display, with the result that the original producer's intent may not be preserved.
+    {! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -664,9 +647,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+    {! include-markdown "../../includes/cf-descriptions/hdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -682,9 +663,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
-
-    For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+    {! include-markdown "../../includes/cf-descriptions/hdr-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -702,11 +681,7 @@ We've made 3 guides related to this.
 
 ??? question "PQ - [Click to show/hide]"
 
-    **PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    PQ10, sometimes simply referred as the PQ format, is an HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata. It uses the PQ transfer function, Rec. 2020 color primaries and a bit depth of 10-bits. It is not backward compatible with SDR.
+    {! include-markdown "../../includes/cf-descriptions/pq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -724,11 +699,7 @@ We've made 3 guides related to this.
 
 ??? question "HLG - [Click to show/hide]"
 
-    **HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. It uses the HLG transfer function, Rec. 2020 color primaries, and a bit depth of 10 bits. The format is backwards compatible with SDR UHDTV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1106,7 +1077,7 @@ We've made 3 guides related to this.
 
 ### DV (WEBDL)
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
     This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
