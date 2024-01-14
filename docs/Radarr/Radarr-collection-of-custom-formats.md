@@ -1607,7 +1607,7 @@ We've made 3 guides related to this.
 
     Groups that:
 
-    - Reputable release groups, with a known history of releasing high-quality releases.
+    - Have established themselves as consistently delivering high-quality releases.
     - Use remuxes as their source without micro-sizing them.
     - HDR/DoVi (Depending on what's offered and often both).
     - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
