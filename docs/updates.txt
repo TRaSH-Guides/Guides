@@ -1,3 +1,7 @@
+# 2024-01-12 20:45
+- [feat(guide): Collection of Custom Formats - HDR Formats - Improve description](https://github.com/TRaSH-Guides/Guides/pull/1760)
+- [feat(guide): Collection of Custom Formats - HQ Release Groups - Improve description](https://github.com/TRaSH-Guides/Guides/pull/1758)
+
 # 2024-01-11 20:30
 - [feat(guide): Hardlinks unRaid - Add The fastest way to create the needed subfolders](https://github.com/TRaSH-Guides/Guides/pull/1753)
 - [feat(guide): How to set up Quality Profiles - Add DV HDR10+ description](https://github.com/TRaSH-Guides/Guides/pull/1756)
