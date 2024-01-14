@@ -6714,23 +6714,23 @@
 
 
 <h1 id="collection-of-custom-formats">Collection of Custom Formats<a class="headerlink" href="#collection-of-custom-formats" title="Permanent link"></a></h1>
-<p>Here I will try to list a collection of the most needed and commonly used Custom Formats.
-These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https://github.com/bakerboy448">bakerboy448</a> and Team Radarr.</p>
-<p>With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.</p>
-<p>After requesting it at Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This makes it easier to share the Custom Formats.</p>
-<p>I also made 3 guides related to this one.</p>
+<p>Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
+These CFs have been collected from discussions on Discord or created with help from others.</p>
+<p>Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, Team Radarr, and the community.</p>
+<p>With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.</p>
+<p>After requesting with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.</p>
+<p>We've made 3 guides related to this.</p>
 <ul>
-<li><a href="/Radarr/Radarr-import-custom-formats" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>. Where I will try to explain how to import the Custom Formats.</li>
-<li><a href="/Radarr/Radarr-how-to-update-custom-formats" rel="noopener noreferrer" target="_blank">How to upgrade Custom Formats</a>. Where I will try to explain how to upgrade your existing Custom Formats.</li>
-<li><a href="/Radarr/radarr-setup-quality-profiles" rel="noopener noreferrer" target="_blank">How to setup Quality Profiles</a>. Where I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.</li>
+<li><a href="/Radarr/Radarr-import-custom-formats" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a> - Explains how to import the Custom Formats.</li>
+<li><a href="/Radarr/Radarr-how-to-update-custom-formats" rel="noopener noreferrer" target="_blank">How to upgrade Custom Formats</a> - Explains how to upgrade your existing Custom Formats.</li>
+<li><a href="/Radarr/radarr-setup-quality-profiles" rel="noopener noreferrer" target="_blank">How to set up Quality Profiles</a> - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>I also suggest to change the Propers and Repacks settings in Radarr</p>
+<p>It also is recommended to change the Propers and Repacks settings in Radarr's <code>Settings</code>.</p>
 <p><code>Media Management</code> =&gt; <code>File Management</code> to <code>Do Not Prefer</code> and use the <a href="#repackproper">Repack/Proper</a> Custom Format.</p>
 <p><a class="glightbox" href="../images/cf-mm-propers-repacks-disable.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!cf-mm-propers-repacks-disable" src="../images/cf-mm-propers-repacks-disable.png" /></a></p>
-<p>This way you make sure the Custom Format preferences will be used instead.</p>
+<p>This way you make sure the Custom Format scoring and preferences will be fully utilized.</p>
 </div>
 <hr />
 <div class="admonition question">
@@ -9565,7 +9565,7 @@ Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio 
 <h3 id="hdr-undefined">HDR (undefined)<a class="headerlink" href="#hdr-undefined" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HDR (undefined) - [Click to show/hide]</summary>
-<p>Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.</p>
+<p>Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.</p>
 <p>For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.</p>
 </details>
 <details class="example">
@@ -10300,7 +10300,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as <code>BR-DISK</code>,
-This is a cosmetic annoyance until I come up with another way to solve this,
+This is a cosmetic annoyance until we come up with another way to solve this,
 being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
 Several reasons why this is happening:</p>
 <ul>
@@ -10339,7 +10339,10 @@ Several reasons why this is happening:</p>
 <p><sub>Low Quality Releases = LQ</sub></p>
 <details class="question">
 <summary>LQ - [Click to show/hide]</summary>
-<p>A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.</p>
+<ul>
+<li>A collection of known low quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.</li>
+<li>Release Groups that break the Starr apps automation because their bad naming could potentially cause download loops, even if their overall quality is perfect.</li>
+</ul>
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -11387,8 +11390,8 @@ It's all really dependent on specific situations for different people</p>
 <h3 id="bad-dual-groups">Bad Dual Groups<a class="headerlink" href="#bad-dual-groups" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Bad dual groups - [Click to show/hide]</summary>
-<p>These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-Also they often even rename the release name in to Portuguese.</p>
+<p>These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
+Also they often even translate/rename the release name to Portuguese.</p>
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -11654,10 +11657,10 @@ Also they often even rename the release name in to Portuguese.</p>
 <p><sub>Dolby Vision = DoVi = DV</sub></p>
 <details class="question">
 <summary>DV (WEBDL) - [Click to show/hide]</summary>
-<p>This is a special Custom Format that block WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
-<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-10000</code>.</p>
-<p>This Custom Format works together with the normal <a href="#dv">DV</a> Custom Format that you can use to prefer Dolby Vision.</p>
-<p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.</p>
+<p>This is a special Custom Format that blocks WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
+<p>You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) to <code>-10000</code>.</p>
+<p>This Custom Format works together with the normal <a href="#dv">DV</a> Custom Format that you would use to prefer Dolby Vision.</p>
+<p>Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
 </details>
 <details class="example">
@@ -11733,8 +11736,8 @@ Also they often even rename the release name in to Portuguese.</p>
 <h3 id="evo-no-webdl">EVO (no WEBDL)<a class="headerlink" href="#evo-no-webdl" title="Permanent link"></a></h3>
 <details class="question">
 <summary>EVO (no WEBDL) - [Click to show/hide]</summary>
-<p>This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.</p>
-<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-10000</code>.</p>
+<p>This group is often banned for the low-quality Blu-ray releases, but their WEB-DLs are okay.</p>
+<p>You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) to <code>-10000</code>.</p>
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -11782,7 +11785,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <h3 id="hdr10plus-boost">HDR10Plus Boost<a class="headerlink" href="#hdr10plus-boost" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HDR10+ Boost - [Click to show/hide]</summary>
-<p>Optional: use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.</p>
+<p>Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.</p>
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -11908,7 +11911,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <details class="question">
 <summary>No-RlsGroup - [Click to show/hide]</summary>
 <p>Some indexers strip out the release group which could result in LQ groups getting a higher score.
-For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match</p>
+For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.</p>
@@ -12200,7 +12203,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <h3 id="scene">Scene<a class="headerlink" href="#scene" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Scene - [Click to show/hide]</summary>
-<p>This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score <code>-10000</code> or a positive score or just don't add it all.</p>
+<p>This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score <code>-10000</code>, a positive score, or just skip adding it altogether.</p>
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -12919,8 +12922,11 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="remux-tier-01">Remux Tier 01<a class="headerlink" href="#remux-tier-01" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Remux Tier 01 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups doing remuxes with multiple sources(discs) mixing what's best.</li>
+<li>Have established themselves as consistently delivering high-quality releases.</li>
+<li>Produce remuxes from multiple sources (discs) and combine them to produce the best end result.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13033,9 +13039,11 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="remux-tier-02">Remux Tier 02<a class="headerlink" href="#remux-tier-02" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Remux Tier 02 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that haven't released much. (yet)</li>
-<li>Groups doing remuxes with multiple sources(discs) mixing what's best.</li>
+<li>Haven't released much. (yet)</li>
+<li>Produce remuxes from multiple sources (discs) and combine them to produce the best end result.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13130,12 +13138,14 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="remux-tier-03">Remux Tier 03<a class="headerlink" href="#remux-tier-03" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Remux Tier 03 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that only use one source.(So called one disc wonders.)</li>
-<li>Groups that use use a fully automated way without checking.</li>
-<li>Groups that don't check their stuff.</li>
-<li>Groups that haven't released much. (yet)</li>
-<li>Groups that retired and don't have the best quality by todays standards</li>
+<li>Only use one source (poetically dubbed "one disc wonders").</li>
+<li>Use a fully automated method without double-checking.</li>
+<li>Don't check/review their releases prior to uploading.</li>
+<li>Haven't released much. (yet)</li>
+<li>Have retired and don't have the best quality by today's standards</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13248,10 +13258,13 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="uhd-bluray-tier-01">UHD Bluray Tier 01<a class="headerlink" href="#uhd-bluray-tier-01" title="Permanent link"></a></h3>
 <details class="question">
 <summary>UHD Bluray Tier 01 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>HDR/DoVi (Depending what's offered and often both)</li>
-<li>HD Audio (Atmos, TrueHD etc...)</li>
+<li>Have established themselves as consistently delivering high-quality releases.</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>HDR/DoVi (Depending on what's offered and often both).</li>
+<li>Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13339,10 +13352,12 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="uhd-bluray-tier-02">UHD Bluray Tier 02<a class="headerlink" href="#uhd-bluray-tier-02" title="Permanent link"></a></h3>
 <details class="question">
 <summary>UHD Bluray Tier 02 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>HDR/DoVi (Depending what's offered and often both)</li>
-<li>HD Audio (Atmos, TrueHD etc...)</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>HDR/DoVi (Depending on what's offered and often both).</li>
+<li>Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13421,10 +13436,13 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="uhd-bluray-tier-03">UHD Bluray Tier 03<a class="headerlink" href="#uhd-bluray-tier-03" title="Permanent link"></a></h3>
 <details class="question">
 <summary>UHD Bluray Tier 03 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>HDR/DoVi (Depending what's offered and often both)</li>
-<li>HD Audio (Atmos, TrueHD etc...)</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>HDR/DoVi (Depending on what's offered and often both).</li>
+<li>Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc) or Lossy audio formats (DD, DD+, etc).</li>
+<li>That are added for a specific reason for other guides quality profiles.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13521,9 +13539,12 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="hd-bluray-tier-01">HD Bluray Tier 01<a class="headerlink" href="#hd-bluray-tier-01" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HD Bluray Tier 01 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)</li>
+<li>Have established themselves as consistently delivering high-quality releases.</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>Have a minimum of GP releases. (best encode in it's class  1080p and lower)</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13763,8 +13784,10 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="hd-bluray-tier-02">HD Bluray Tier 02<a class="headerlink" href="#hd-bluray-tier-02" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HD Bluray Tier 02 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13887,8 +13910,11 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="hd-bluray-tier-03">HD Bluray Tier 03<a class="headerlink" href="#hd-bluray-tier-03" title="Permanent link"></a></h3>
 <details class="question">
 <summary>HD Bluray Tier 03 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>placeholder</li>
+<li>Use remuxes as their source without micro-sizing them.</li>
+<li>That are added for a specific reason for other guides quality profiles.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -13984,9 +14010,11 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="web-tier-01">WEB Tier 01<a class="headerlink" href="#web-tier-01" title="Permanent link"></a></h3>
 <details class="question">
 <summary>WEB Tier 01 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>Groups that create hybrids.</li>
-<li>Groups that sign up for the gentleman list on a certain private tracker.</li>
+<li>Have established themselves as consistently delivering high-quality releases.</li>
+<li>Create hybrids.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -14171,8 +14199,10 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="web-tier-02">WEB Tier 02<a class="headerlink" href="#web-tier-02" title="Permanent link"></a></h3>
 <details class="question">
 <summary>WEB Tier 02 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>placeholder</li>
+<li>Only have done a few releases</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -14321,8 +14351,10 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="web-tier-03">WEB Tier 03<a class="headerlink" href="#web-tier-03" title="Permanent link"></a></h3>
 <details class="question">
 <summary>WEB Tier 03 - [Click to show/hide]</summary>
+<p>Groups that:</p>
 <ul>
-<li>placeholder</li>
+<li>That are added for a specific reason for other guides quality profiles.</li>
+<li>Follow the <a href="https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines" rel="noopener noreferrer" target="_blank">Contributing General Guidelines</a>.</li>
 </ul>
 </details>
 <details class="example">
@@ -20479,8 +20511,8 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <summary>Remux Tier 01 - [Click to show/hide]</summary>
 <ul>
 <li>WiP</li>
-<li>Groups doing remuxes with multiple sources (discs) mixing what's best.</li>
-<li>Groups doing remuxes with a groups from Remux Tier 01 or 02 and adding the best French Audio available.</li>
+<li>Groups that produce remuxes from multiple sources (discs) and combine them to produce the best end result.</li>
+<li>Groups producing remuxes with a group from Remux Tier 01 or 02 adding the best available French Audio.</li>
 </ul>
 </details>
 <details class="example">
@@ -20604,10 +20636,10 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <ul>
 <li>WiP</li>
 <li>Groups that use an automated way.</li>
-<li>Groups active doing remuxes from a single sources (discs).</li>
+<li>Groups actively doing remuxes from a single source (disc).</li>
 <li>Groups that had the best French audio track to an English release.</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
-<li>Groups that retired and don't have the best quality by todays standards.</li>
+<li>Groups that retired and don't have the best quality by today's standards.</li>
 </ul>
 </details>
 <details class="example">
@@ -20732,7 +20764,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <li>WiP</li>
 <li>Groups that created encodes from the remuxes without micro-sizing them.</li>
 <li>Groups that add the best French audio track to an English release from Tier 01 or 02.</li>
-<li>HDR/DoVi (Depending what's offered and often both).</li>
+<li>HDR/DoVi (Depending on what's offered and often both).</li>
 <li>HD Audio (Atmos, TrueHD etc...).</li>
 </ul>
 </details>
@@ -20838,12 +20870,12 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <summary>FR UHD Bluray Tier 02 - [Click to show/hide]</summary>
 <ul>
 <li>WiP</li>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
+<li>Groups that create encodes from a remux without micro-sizing them.</li>
 <li>Groups that had the best French audio track to an English release.</li>
-<li>HDR/DoVi (Depending what's offered and often both).</li>
+<li>HDR/DoVi (Depending on what's offered and often both).</li>
 <li>HD Audio (Atmos, TrueHD etc...).</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
-<li>Groups that retired and don't have the best quality by todays standards.</li>
+<li>Groups that retired and don't have the best quality by today's standards.</li>
 </ul>
 </details>
 <details class="example">
@@ -20948,8 +20980,8 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <summary>FR HD Bluray Tier 01 - [Click to show/hide]</summary>
 <ul>
 <li>WiP</li>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>Groups that have a minimum of great releases (best encode in it's class 1080p and lower).</li>
+<li>Groups that create encodes from a remux without micro-sizing them.</li>
+<li>Groups that have a minimum count of great releases (best encode in its class 1080p and lower).</li>
 <li>Groups that add the best French audio track to an English release from Tier 01 or 02.</li>
 </ul>
 </details>
@@ -21064,10 +21096,10 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <summary>FR HD Bluray Tier 02 - [Click to show/hide]</summary>
 <ul>
 <li>WiP</li>
-<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
-<li>Groups that had the best French audio track to an English release.</li>
+<li>Groups that create encodes from a remux without micro-sizing them.</li>
+<li>Groups that havae the best French audio track to an English release.</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
-<li>Groups that retired and don't have the best quality by todays standards.</li>
+<li>Groups that retired and don't have the best quality by today's standards.</li>
 </ul>
 </details>
 <details class="example">
@@ -21370,7 +21402,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <li>WiP</li>
 <li>Groups that source and add the French audio track from the source to an English release.</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
-<li>Groups that retired and don't have the best quality by todays standards.</li>
+<li>Groups that retired and don't have the best quality by today's standards.</li>
 </ul>
 </details>
 <details class="example">
@@ -21726,15 +21758,15 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="fr-lq">FR LQ<a class="headerlink" href="#fr-lq" title="Permanent link"></a></h3>
-<p><sub>French Low Quality Releases = FR LQ</sub></p>
+<p><sub>French Low-Quality Releases = FR LQ</sub></p>
 <details class="question">
 <summary>FR LQ - [Click to show/hide]</summary>
-<p>A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.</p>
+<p>A collection of known French Low-Quality groups that are often banned from the top trackers due to their lack of quality.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>Ads/Watermarks = Groups that are know to put ads or watermark in their releases.</li>
-<li>Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.</li>
+<li>Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.</li>
+<li>Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.</li>
 <li>DeTAG/ReTAG = Detagging or stealing groups.</li>
 <li>Other reasons = Banned Release Groups.</li>
 </ul>
@@ -21811,7 +21843,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 10, 2024 19:09:58</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 14, 2024 17:11:25</span>
   </span>
 
     
