@@ -514,23 +514,12 @@ We've made 3 guides related to this.
 
 ### DV HDR10Plus
 
-<sub>DV = DoVi = Dolby Vision</sub>
+<sub>DV = DoVi = Dolby Vision</sub><br>
 <sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "DV HDR10+ - [Click to show/hide]"
 
-    *This Custom Format will only match on `DV HDR10+`*
-
-    This provides Dolby Vision with HDR10+ fallback, while HDR10+ also has HDR10 fallback..
-    You will find this mainly with:
-    - Hybrid Remuxes (*Hybrid isn't always mentioned*)
-    - Hybrid Bluray encodes (*Hybrid isn't always mentioned*)
-    - Hybrid WEB-DL (*Hybrid isn't always mentioned*)
-
-    Dolby Vision is a dynamic HDR format developed by Dolby Labs.
-    It potentially offers a better visual experience compared to HDR10 for several reasons. Firstly, it employs dynamic metadata, allowing for varying brightness levels within HDR content and enabling filmmakers to have more precise control over the image appearance. HDR10 relies on static metadata, limiting the HDR effect to be determined only on a per-movie or per-show basis.
-
-    HDR10+ makes this metadata dynamic, allowing it to change for each frame of video. This means every frame is treated to its own set of colors, brightness, and contrast parameters, making for a much more realistic-looking image. Areas of the screen that might have been over saturated under HDR10 will display their full details with HDR10+.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -548,24 +537,7 @@ We've made 3 guides related to this.
 
 ??? question "DV HDR10 - [Click to show/hide]"
 
-    *This Custom Format will only match on `DV HDR10`*
-
-    This provides Dolby Vision with HDR10 fallback.
-    You will find this mainly with:
-    - Remuxes
-    - Bluray encodes
-    - Hybrid WEB-DL (*Hybrid isn't always mentioned*)
-
-    Dolby Vision is a dynamic HDR format developed by Dolby Labs.
-    It potentially offers a better visual experience compared to HDR10 for several reasons. Firstly, it employs dynamic metadata, allowing for varying brightness levels within HDR content and enabling filmmakers to have more precise control over the image appearance. HDR10 relies on static metadata, limiting the HDR effect to be determined only on a per-movie or per-show basis.
-
-    HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata to the PQ10 format.
-
-    HDR10 allows for an image that is over twice as bright, with a corresponding increase in contrast (the difference between the blackest blacks and the whitest whites), and a color palette that has one billion shades, as opposed to the measly 16 million of SDR.
-
-    As with all HDR formats, how well HDR10 is implemented depends on the quality of the TV on which you view it. When utilized properly, HDR10 makes video content look really good, but it is no longer the top of the HDR food chain.
-
-    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g., lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is mediated by the display, resulting in the potential loss of the original producer's intent.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -583,14 +555,9 @@ We've made 3 guides related to this.
 
 ??? question "DV - [Click to show/hide]"
 
-    *This Custom Format will only match on `DV` **NOT** on `DV HDR10` etc*
+    --8<-- "includes/cf-descriptions/dv.md"
 
-    Depending on the used source (WEB-DL, Bluray or Remux) it will match on the following
-
-    You will find this mainly with:
-    - With Remuxes, it means that it will have `DV HDR10`.
-    - With Bluray encodes, it means it will have `DV HDR10`.
-    - With WEB-DL, it means 99% it will only support Dolby Vision without `HDR10` fallback (Incompatible devices will playback with blown out pinks and greens, if you have this issue always make sure you also add the following [Custom Format](#dv-webdl) with a score of `-10000`
+<! -- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md` -->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -608,9 +575,7 @@ We've made 3 guides related to this.
 
 ??? question "DV HLG - [Click to show/hide]"
 
-    *This Custom Format will only match on `DV HLG`
-
-    Hybrid log gamma, or HLG. HLG is designed for broadcast cable, satellite and live TV.
+    {! include-markdown "../../includes/cf-descriptions/dv-hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -628,9 +593,7 @@ We've made 3 guides related to this.
 
 ??? question "DV SDR - [Click to show/hide]"
 
-    *This Custom Format will only match on `DV SDR`
-
-    Place Holder
+    {! include-markdown "../../includes/cf-descriptions/dv-sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -648,15 +611,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR10+ - [Click to show/hide]"
 
-    *This Custom Format will only match on `HDR10+` **NOT** `HDR10`*.
-
-    This provides Dolby Vision with HDR10+ fallback, while HDR10+ also has HDR10 fallback.
-    You will find this mainly with:
-    - Hybrid Remuxes (*Hybrid isn't always mentioned*)
-    - Hybrid Bluray encodes (*Hybrid isn't always mentioned*)
-    - WEB-DL (*Streaming Services*)
-
-    HDR10+ makes this metadata dynamic, allowing it to change for each frame of video. This means every frame is treated to its own set of colors, brightness, and contrast parameters, making for a much more realistic-looking image. Areas of the screen that might have been over saturated under HDR10 will display their full details with HDR10+.
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -674,15 +629,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR10 - [Click to show/hide]"
 
-    *This Custom Format will only match on `HDR10` **NOT** `HDR10+` etc*.
-
-    HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata to the PQ10 format.
-
-    HDR10 allows for an image that is over twice as bright, with a corresponding increase in contrast (the difference between the blackest blacks and the whitest whites), and a color palette that has one billion shades, as opposed to the measly 16 million of SDR.
-
-    As with all HDR formats, how well HDR10 is implemented depends on the quality of the TV on which you view it. When utilized properly, HDR10 makes video content look really good, but it is no longer the top of the HDR food chain.
-
-    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g., lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is mediated by the display, resulting in the potential loss of the original producer's intent.
+    {! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -700,9 +647,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR - [Click to show/hide]"
 
-    *This Custom Format will only match on `HDR` **NOT** on `HDR10`, `HDR10+` etc*
-
-    This Custom Format is more of a catch-all for `HDR` scene naming, where we don't know upfront which HDR formats it actually has. It could be `HDR10` or even `PQ`, or whatever.
+    {! include-markdown "../../includes/cf-descriptions/hdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -718,9 +663,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so we suggest adding this Custom Format at the same score as you add one of your HDR Custom Formats.
-
-    For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+    {! include-markdown "../../includes/cf-descriptions/hdr-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -738,8 +681,7 @@ We've made 3 guides related to this.
 
 ??? question "PQ - [Click to show/hide]"
 
-    PQ10 is the most basic HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata.
-    PQ10, sometimes simply referred as the PQ format.
+    {! include-markdown "../../includes/cf-descriptions/pq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -757,11 +699,7 @@ We've made 3 guides related to this.
 
 ??? question "HLG - [Click to show/hide]"
 
-    **HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. The format is backwards compatible with SDR UHD TV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
