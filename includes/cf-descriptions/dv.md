@@ -1,8 +1,6 @@
 *This Custom Format will only match on* `DV` **NOT** *on* `DV HDR10` *etc*.
 
-Depending on the used source (WEB-DL, Bluray or Remux) it will match on the following
-
-You will find this mainly with:
+Depending on the source (WEB-DL, Bluray, or Remux) this format will match the following:
 
 - With Remuxes, it means that it will have `DV HDR10`.
 - With Bluray encodes, it means it will have `DV HDR10`.

@@ -1,5 +1,5 @@
-Some release groups don't add HDR to their 4K release name
+Some release groups don't add HDR to their 4K release naming scheme.
 
-For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+Currently, only FraMeSToR and HQMUX do not include the 'HDR' tag. In the future, we can add more when it's needed.
 
 Add this Custom Format with the same score you use for `HDR10`.

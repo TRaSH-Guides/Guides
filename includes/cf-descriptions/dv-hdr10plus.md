@@ -1,6 +1,6 @@
 *This Custom Format will only match on* `DV HDR10+`
 
-This provides Dolby Vision with HDR10+ fallback, while HDR10+ also has HDR10 fallback..
+This format provides Dolby Vision *with* HDR10+ fallback (with HDR10+ having native HDR10 fallback).
 You will find this mainly with:
 
 - Hybrid Remuxes (*Hybrid isn't always mentioned*)

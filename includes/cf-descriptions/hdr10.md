@@ -2,4 +2,4 @@
 
 HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices.
 
-HDR10 relies on static metadata, limiting the HDR effect to be determined only on a per-movie or per-show basis. Because HDR10 lacks dynamic metadata, it doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is mediated by the display, resulting in the potential loss of the original producer's intent.
+HDR10 relies on static metadata which limits its effect to a per-movie or per-episode basis. Because of this, it lacks the information for how the content should be adjusted for your specific display. The interaction between display capabilities, video metadata, and the ultimate output (i.e., the presentation of the video) is controlled by the display, which may result in quality that is ultimately not how was originally intended.
