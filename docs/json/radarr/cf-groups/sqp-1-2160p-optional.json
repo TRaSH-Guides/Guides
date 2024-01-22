@@ -38,8 +38,8 @@
       "required": false
     },
     {
-      "name": "x265 (no HDR/DV)",
-      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "name": "x265 (HD)",
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
       "required": false
     },
     {
