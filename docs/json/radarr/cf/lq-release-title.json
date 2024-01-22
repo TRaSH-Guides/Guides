@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "BEN THE MEN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
+      }
+    },
+    {
       "name": "BiTOR (2160p)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
