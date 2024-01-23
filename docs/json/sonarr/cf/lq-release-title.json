@@ -23,6 +23,15 @@
       "fields": {
         "value": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))"
       }
+    },
+    {
+      "name": "BEN THE MEN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
+      }
     }
   ]
 }
