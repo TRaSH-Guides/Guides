@@ -46,40 +46,45 @@ We've made 3 guides related to this.
 
 ------
 
-| Series Versions       | Unwanted                                | HQ Source Groups                        | Streaming Services                          |
+| Series Versions       | Unwanted                                | HQ Source Groups                        | Misc Streaming Services                     |
 | --------------------- | --------------------------------------- | --------------------------------------- | ------------------------------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         | [4OD](#4od)                                 |
-| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         | [ALL4](#all4)                               |
-|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) | [Amazon](#amzn)                             |
-|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Apple TV+](#atvp)                          |
-|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             | [BBC iPlayer (iP)](#ip)                     |
-|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             | [CANAL+](#canalplus)                        |
-|                       |                                         | [WEB Tier 03](#web-tier-03)             | [Comedy Central](#cc)                       |
-|                       |                                         | [WEB Scene](#web-scene)                 | [Crave](#crav)                              |
-|                       |                                         |                                         | [DC Universe](#dcu)                         |
-|                       |                                         |                                         | [Disney+](#dsnp)                            |
-|                       |                                         |                                         | [FOD](#fod)                                 |
-|                       |                                         |                                         | [HBO](#hbo)                                 |
-|                       |                                         |                                         | [HBO Max](#hmax)                            |
-|                       |                                         |                                         | [Hulu](#hulu)                               |
-|                       |                                         |                                         | [iTunes](#it)                               |
-|                       |                                         |                                         | [Max](#max)                                 |
-|                       |                                         |                                         | [NLZiet](#nlz)                              |
-|                       |                                         |                                         | [Netflix](#nf)                              |
-|                       |                                         |                                         | [OViD](#ovid)                               |
-|                       |                                         |                                         | [Paramount+](#pmtp)                         |
-|                       |                                         |                                         | [Peacock TV](#pcok)                         |
-|                       |                                         |                                         | [Quibi](#qibi)                              |
-|                       |                                         |                                         | [RTBF](#rtbf)                               |
-|                       |                                         |                                         | [SALTO](#salto)                             |
-|                       |                                         |                                         | [SHOWTIME](#sho)                            |
-|                       |                                         |                                         | [Stan](#stan)                               |
-|                       |                                         |                                         | [TVer](#tver)                               |
-|                       |                                         |                                         | [U-NEXT](#u-next)                           |
-|                       |                                         |                                         | [Videoland](#vdl)                           |
-|                       |                                         |                                         | [YouTube Red](#red)                         |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |                                             |
+| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |                                             |
+|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) | [YouTube Red](#red)                         |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |                                             |
+|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |                                             |
+|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |                                             |
+|                       |                                         | [WEB Tier 03](#web-tier-03)             | [Crave](#crav)                              |
+|                       |                                         | [WEB Scene](#web-scene)                 | [OViD](#ovid)                               |
 |                       |                                         |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
 |                       |                                         |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
+
+------
+
+| Int. Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
+| ----------------------- | ------------------------- | ------------------------ | ------------------------ |
+| [Amazon](#amzn)         | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
+| [Apple TV+](#atvp)      | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
+| [Comedy Central](#cc)   | [SALTO](#salto)           | [U-NEXT](#u-next)        |                          |
+| [DC Universe](#dcu)     |                           |                          |                          |
+| [Disney+](#dsnp)        |                           |                          |                          |
+| [HBO Max](#hmax)        |                           |                          |                          |
+| [HBO](#hbo)             |                           |                          |                          |
+| [Hulu](#hulu)           |                           |                          |                          |
+| [iTunes](#it)           |                           |                          |                          |
+| [Max](#max)             |                           |                          |                          |
+| [Netflix](#nf)          |                           |                          |                          |
+| [Paramount+](#pmtp)     |                           |                          |                          |
+| [Peacock TV](#pcok)     |                           |                          |                          |
+| [SHOWTIME](#sho)        |                           |                          |                          |
+| [Stan](#stan)           |                           |                          |                          |
+| [Quibi](#qibi)          |                           |                          |                          |
+
+| UK Streaming Services | Placeholder Streaming Services | Placeholder Streaming Services | Placeholder Streaming Services |
+| -------------------------- | ------------------------------ | ------------------------------ | ------------------------------ |
+| [4OD](#4od)                |                                |                                |                                |
+| [ALL4](#all4)              |                                |                                |                                |
+| [BBC iPlayer (iP)](#ip)    |                                |                                |                                |
 
 ------
 
