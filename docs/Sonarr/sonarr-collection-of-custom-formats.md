@@ -46,18 +46,16 @@ We've made 3 guides related to this.
 
 ------
 
-| Series Versions       | Unwanted                                | HQ Source Groups                        | Misc Streaming Services                     |
-| --------------------- | --------------------------------------- | --------------------------------------- | ------------------------------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |                                             |
-| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |                                             |
-|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) | [YouTube Red](#red)                         |
-|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |                                             |
-|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |                                             |
-|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |                                             |
-|                       |                                         | [WEB Tier 03](#web-tier-03)             | [Crave](#crav)                              |
-|                       |                                         | [WEB Scene](#web-scene)                 | [OViD](#ovid)                               |
-|                       |                                         |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
-|                       |                                         |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| Series Versions       | Unwanted                                | HQ Source Groups                        | Placeholder |
+| --------------------- | --------------------------------------- | --------------------------------------- | ----------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |             |
+| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |             |
+|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) |             |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |             |
+|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |             |
+|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |             |
+|                       |                                         | [WEB Tier 03](#web-tier-03)             |             |
+|                       |                                         | [WEB Scene](#web-scene)                 |             |
 
 ------
 
@@ -80,11 +78,17 @@ We've made 3 guides related to this.
 | [Stan](#stan)           |                           |                          |                          |
 | [Quibi](#qibi)          |                           |                          |                          |
 
-| UK Streaming Services | Placeholder Streaming Services | Placeholder Streaming Services | Placeholder Streaming Services |
-| -------------------------- | ------------------------------ | ------------------------------ | ------------------------------ |
-| [4OD](#4od)                |                                |                                |                                |
-| [ALL4](#all4)              |                                |                                |                                |
-| [BBC iPlayer (iP)](#ip)    |                                |                                |                                |
+| UK Streaming Services   | Placeholder | Misc Streaming Services                     | Anime Streaming Services |
+| ----------------------- | ----------- | ------------------------------------------- | ------------------------ |
+| [4OD](#4od)             |             | [Crave](#crav)                              | [B-Global](#b-global)    |
+| [ALL4](#all4)           |             | [OViD](#ovid)                               | [Bilibili](#bilibili)    |
+| [BBC iPlayer (iP)](#ip) |             | [YouTube Red](#red)                         | [Crunchyroll](#cr)       |
+|                         |             | [UHD Streaming Boost](#uhd-streaming-boost) | [Funimation](#funi)      |
+|                         |             | [UHD Streaming Cut](#uhd-streaming-cut)     | [HIDIVE](#hidive)        |
+|                         |             |                                             | [VRV](#vrv)              |
+|                         |             |                                             | [ABEMA](#abema)          |
+|                         |             |                                             | [ADN](#adn)              |
+|                         |             |                                             | [WKN](#wkn)              |
 
 ------
 
@@ -110,22 +114,16 @@ We've made 3 guides related to this.
 
 ------
 
-| Anime Source Groups                                                         | Anime Source Groups                                                   | Anime Misc/Streaming Services | Anime Optional                        |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)                     | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)                     | [10bit](#10bit)                       |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)                     | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)                     | [Dubs Only](#dubs-only)               |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)                     |                                       |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [B-Global](#b-global)         |                                       |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             | [Bilibili](#bilibili)         |                                       |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   | [Crunchyroll](#cr)            |                                       |
-|                                                                             |                                                                       | [Funimation](#funi)           |                                       |
-|                                                                             |                                                                       | [HIDIVE](#hidive)             |                                       |
-|                                                                             |                                                                       | [VRV](#vrv)                   |                                       |
-|                                                                             |                                                                       | [ABEMA](#abema)               |                                       |
-|                                                                             |                                                                       | [ADN](#adn)                   |                                       |
-|                                                                             |                                                                       | [WKN](#wkn)                   |                                       |
+| Anime Source Groups                                                         | Anime Source Groups                                                   | Anime Misc | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)  | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)  | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)  | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)  | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)  |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |            |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |            |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |            |                                       |
 
 ## Audio Advanced
 
@@ -1478,11 +1476,11 @@ We've made 3 guides related to this.
 
 ### AMZN
 
-<sub>Amazon</sub>
+<sub>Amazon Prime Video</sub>
 
-??? question "Amazon - [Click to show/hide]"
+??? question "Amazon Prime Video - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1500,7 +1498,7 @@ We've made 3 guides related to this.
 
 ??? question "Apple TV+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1514,11 +1512,11 @@ We've made 3 guides related to this.
 
 ### DCU
 
-<sub>DC Universe</sub>
+<sub>DC Universe (streaming service)</sub>
 
-??? question "DC Universe - [Click to show/hide]"
+??? question "DC Universe (streaming service) - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/dcu.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1536,7 +1534,7 @@ We've made 3 guides related to this.
 
 ??? question "Disney+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1552,9 +1550,9 @@ We've made 3 guides related to this.
 
 <sub>HBO Max</sub>
 
-??? question "HBO Max - [Click to show/hide]"
+??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1572,7 +1570,7 @@ We've made 3 guides related to this.
 
 ??? question "HBO - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1586,11 +1584,11 @@ We've made 3 guides related to this.
 
 ### Max
 
-<sub>Max</sub>
+<sub>Max (streaming service)</sub>
 
-??? question "Max - [Click to show/hide]"
+??? question "Max (streaming service) - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1608,7 +1606,7 @@ We've made 3 guides related to this.
 
 ??? question "Hulu - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

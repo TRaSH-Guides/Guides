@@ -1761,11 +1761,11 @@ We've made 3 guides related to this.
 
 ### AMZN
 
-<sub>Amazon</sub>
+<sub>Amazon Prime Video</sub>
 
-??? question "Amazon - [Click to show/hide]"
+??? question "Amazon Prime Video - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1783,7 +1783,7 @@ We've made 3 guides related to this.
 
 ??? question "Apple TV+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1819,7 +1819,7 @@ We've made 3 guides related to this.
 
 ??? question "Disney+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1837,7 +1837,7 @@ We've made 3 guides related to this.
 
 ??? question "HBO - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1853,9 +1853,9 @@ We've made 3 guides related to this.
 
 <sub>HBO Max</sub>
 
-??? question "HBO Max - [Click to show/hide]"
+??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1869,11 +1869,11 @@ We've made 3 guides related to this.
 
 ### Max
 
-<sub>Max</sub>
+<sub>Max (streaming service)</sub>
 
-??? question "Max - [Click to show/hide]"
+??? question "Max (streaming service) - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1891,7 +1891,7 @@ We've made 3 guides related to this.
 
 ??? question "Hulu - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
