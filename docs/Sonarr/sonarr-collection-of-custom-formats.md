@@ -1620,11 +1620,11 @@ We've made 3 guides related to this.
 
 ### IP
 
-<sub>BBC iPlayer</sub>
+<sub>BBC iPlayer aka IP</sub>
 
-??? question "BBC iPlayer - [Click to show/hide]"
+??? question "BBC iPlayer aka IP - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1642,7 +1642,7 @@ We've made 3 guides related to this.
 
 ??? question "NLZiet - [Click to show/hide]"
 
-    NLZIET is the online service of Dutch broadcasters that provides non-stop tv, commercial-free. The streaming service brings the best of all channels straight to your preferred device and lets you see your favorite tv content in high quality on all available platforms; anytime and anywhere.
+    {! include-markdown "../../includes/cf-descriptions/nlz.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1660,7 +1660,7 @@ We've made 3 guides related to this.
 
 ??? question "Netflix - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1678,7 +1678,7 @@ We've made 3 guides related to this.
 
 ??? question "Paramount+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1696,7 +1696,7 @@ We've made 3 guides related to this.
 
 ??? question "Peacock TV - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
