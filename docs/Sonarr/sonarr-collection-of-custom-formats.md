@@ -77,17 +77,17 @@ We've made 3 guides related to this.
 | [SHOWTIME](#sho)        |                           |                          |                          |
 | [Stan](#stan)           |                           |                          |                          |
 
-| UK Streaming Services   | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
-| ----------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
-| [4OD](#4od)             | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)           | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer (iP)](#ip) | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
-|                         | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
-|                         |                         | [HIDIVE](#hidive)        |                                             |
-|                         |                         | [VRV](#vrv)              |                                             |
-|                         |                         | [ABEMA](#abema)          |                                             |
-|                         |                         | [ADN](#adn)              |                                             |
-|                         |                         | [WKN](#wkn)              |                                             |
+| UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
+| --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
+| [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [ALL4](#all4)         | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
+|                       | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
+|                       |                         | [HIDIVE](#hidive)        |                                             |
+|                       |                         | [VRV](#vrv)              |                                             |
+|                       |                         | [ABEMA](#abema)          |                                             |
+|                       |                         | [ADN](#adn)              |                                             |
+|                       |                         | [WKN](#wkn)              |                                             |
 
 ---
 
@@ -1965,7 +1965,7 @@ We've made 3 guides related to this.
 
 ??? question "U-NEXT - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
