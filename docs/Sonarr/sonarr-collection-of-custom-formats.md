@@ -24,11 +24,11 @@ We've made 3 guides related to this.
 
 --8<-- "includes/support.md"
 
-------
+---
 
 ## INDEX
 
-------
+---
 
 | Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
@@ -44,7 +44,7 @@ We've made 3 guides related to this.
 |                                       |                           |                              | [PQ](#pq)                         |
 |                                       |                           |                              | [HLG](#hlg)                       |
 
-------
+---
 
 | Series Versions       | Unwanted                                | HQ Source Groups                        | Placeholder |
 | --------------------- | --------------------------------------- | --------------------------------------- | ----------- |
@@ -57,7 +57,7 @@ We've made 3 guides related to this.
 |                       |                                         | [WEB Tier 03](#web-tier-03)             |             |
 |                       |                                         | [WEB Scene](#web-scene)                 |             |
 
-------
+---
 
 | Int. Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | ----------------------- | ------------------------- | ------------------------ | ------------------------ |
@@ -76,21 +76,20 @@ We've made 3 guides related to this.
 | [Peacock TV](#pcok)     |                           |                          |                          |
 | [SHOWTIME](#sho)        |                           |                          |                          |
 | [Stan](#stan)           |                           |                          |                          |
-| [Quibi](#qibi)          |                           |                          |                          |
 
-| UK Streaming Services   | Placeholder | Misc Streaming Services                     | Anime Streaming Services |
-| ----------------------- | ----------- | ------------------------------------------- | ------------------------ |
-| [4OD](#4od)             |             | [Crave](#crav)                              | [B-Global](#b-global)    |
-| [ALL4](#all4)           |             | [OViD](#ovid)                               | [Bilibili](#bilibili)    |
-| [BBC iPlayer (iP)](#ip) |             | [YouTube Red](#red)                         | [Crunchyroll](#cr)       |
-|                         |             | [UHD Streaming Boost](#uhd-streaming-boost) | [Funimation](#funi)      |
-|                         |             | [UHD Streaming Cut](#uhd-streaming-cut)     | [HIDIVE](#hidive)        |
-|                         |             |                                             | [VRV](#vrv)              |
-|                         |             |                                             | [ABEMA](#abema)          |
-|                         |             |                                             | [ADN](#adn)              |
-|                         |             |                                             | [WKN](#wkn)              |
+| UK Streaming Services   | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
+| ----------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
+| [4OD](#4od)             | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [ALL4](#all4)           | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer (iP)](#ip) | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
+|                         | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
+|                         |                         | [HIDIVE](#hidive)        |                                             |
+|                         |                         | [VRV](#vrv)              |                                             |
+|                         |                         | [ABEMA](#abema)          |                                             |
+|                         |                         | [ADN](#adn)              |                                             |
+|                         |                         | [WKN](#wkn)              |                                             |
 
-------
+---
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
 | ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
@@ -112,7 +111,7 @@ We've made 3 guides related to this.
 |                                | [VP9](#vp9)                            |                               |                                               |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                               |
 
-------
+---
 
 | Anime Source Groups                                                         | Anime Source Groups                                                   | Anime Misc | Anime Optional                        |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------- | ------------------------------------- |
@@ -127,7 +126,7 @@ We've made 3 guides related to this.
 
 ## Audio Advanced
 
-------
+---
 
 ### TrueHD ATMOS
 
@@ -145,7 +144,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS X
 
@@ -163,7 +162,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ATMOS (undefined)
 
@@ -182,7 +181,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus ATMOS
 
@@ -200,7 +199,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### TrueHD
 
@@ -218,7 +217,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD MA
 
@@ -236,7 +235,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FLAC
 
@@ -252,7 +251,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PCM
 
@@ -268,7 +267,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD HRA
 
@@ -299,7 +298,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus
 
@@ -319,7 +318,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-ES
 
@@ -335,7 +334,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS
 
@@ -352,7 +351,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AAC
 
@@ -371,7 +370,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DD
 
@@ -391,7 +390,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MP3
 
@@ -406,7 +405,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Opus
 
@@ -424,11 +423,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Audio Channels
 
-------
+---
 
 ### 1.0 Mono
 
@@ -440,7 +439,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 2.0 Stereo
 
@@ -452,7 +451,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 3.0 Sound
 
@@ -464,7 +463,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4.0 Sound
 
@@ -476,7 +475,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 5.1 Surround
 
@@ -488,7 +487,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 6.1 Surround
 
@@ -500,7 +499,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 7.1 Surround
 
@@ -512,7 +511,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 9.1 Surround
 
@@ -524,11 +523,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HDR Formats
 
-------
+---
 
 ### DV HDR10Plus
 
@@ -547,7 +546,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HDR10
 
@@ -565,7 +564,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV
 
@@ -585,7 +584,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HLG
 
@@ -603,7 +602,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV SDR
 
@@ -621,7 +620,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus
 
@@ -639,7 +638,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10
 
@@ -657,7 +656,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR
 
@@ -675,7 +674,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR (undefined)
 
@@ -691,7 +690,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PQ
 
@@ -709,7 +708,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HLG
 
@@ -727,11 +726,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Series Versions
 
-------
+---
 
 ### Hybrid
 
@@ -747,7 +746,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remaster
 
@@ -766,11 +765,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Unwanted
 
-------
+---
 
 ### BR-DISK
 
@@ -799,7 +798,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ
 
@@ -817,7 +816,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ (Release Title)
 
@@ -835,7 +834,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Upscaled
 
@@ -851,7 +850,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (HD)
 
@@ -876,7 +875,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Extras
 
@@ -892,11 +891,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Misc
 
-------
+---
 
 ### Repack/Proper
 
@@ -908,7 +907,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Repack v2
 
@@ -920,7 +919,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Repack v3
 
@@ -932,7 +931,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x264
 
@@ -950,7 +949,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265
 
@@ -969,7 +968,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MPEG2
 
@@ -981,7 +980,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi
 
@@ -993,11 +992,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Optional
 
-------
+---
 
 ### Bad Dual Groups
 
@@ -1013,7 +1012,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV (WEBDL)
 
@@ -1038,7 +1037,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus Boost
 
@@ -1054,7 +1053,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HDR10Plus Boost
 
@@ -1070,7 +1069,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### No-RlsGroup
 
@@ -1091,7 +1090,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Obfuscated
 
@@ -1107,7 +1106,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Retags
 
@@ -1123,7 +1122,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Scene
 
@@ -1139,7 +1138,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Season Pack
 
@@ -1164,7 +1163,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (no HDR/DV)
 
@@ -1188,7 +1187,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AV1
 
@@ -1207,7 +1206,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VP9
 
@@ -1226,7 +1225,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Internal
 
@@ -1243,7 +1242,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SDR
 
@@ -1259,7 +1258,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SDR (no WEBDL)
 
@@ -1275,7 +1274,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV (Disk)
 
@@ -1291,7 +1290,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HFR
 
@@ -1307,11 +1306,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HQ Source Groups
 
-------
+---
 
 ### Remux Tier 01
 
@@ -1331,7 +1330,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remux Tier 02
 
@@ -1372,7 +1371,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 02
 
@@ -1410,7 +1409,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 02
 
@@ -1431,7 +1430,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 03
 
@@ -1452,7 +1451,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Scene
 
@@ -1468,11 +1467,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Streaming Services
 
-------
+---
 
 ### AMZN
 
@@ -1490,7 +1489,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ATVP
 
@@ -1508,7 +1507,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DCU
 
@@ -1526,7 +1525,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DSNP
 
@@ -1544,7 +1543,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HMAX
 
@@ -1562,7 +1561,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HBO
 
@@ -1580,7 +1579,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Max
 
@@ -1598,7 +1597,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Hulu
 
@@ -1616,7 +1615,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IP
 
@@ -1634,7 +1633,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### NLZ
 
@@ -1652,7 +1651,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### NF
 
@@ -1670,7 +1669,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PMTP
 
@@ -1688,7 +1687,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PCOK
 
@@ -1706,7 +1705,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Qibi
 
@@ -1714,7 +1713,7 @@ We've made 3 guides related to this.
 
 ??? question "Quibi - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quibi){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/qibi.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1724,7 +1723,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SHO
 
@@ -1732,7 +1731,7 @@ We've made 3 guides related to this.
 
 ??? question "SHOWTIME - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Showtime_(TV_network)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/sho.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1742,7 +1741,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VDL
 
@@ -1750,7 +1749,7 @@ We've made 3 guides related to this.
 
 ??? question "Videoland - [Click to show/hide]"
 
-    Videoland is a Dutch OTT online service provider owned by RTL Nederland. Originally it was a retail chain of video rental stores. Its main competitor is Netflix.
+    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1760,7 +1759,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### STAN
 
@@ -1768,7 +1767,7 @@ We've made 3 guides related to this.
 
 ??? question "STAN - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stan_(service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1778,7 +1777,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### RED
 
@@ -1786,7 +1785,7 @@ We've made 3 guides related to this.
 
 ??? question "Youtube Red - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/YouTube_Premium){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/red.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1796,7 +1795,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IT
 
@@ -1804,7 +1803,7 @@ We've made 3 guides related to this.
 
 ??? question "iTunes - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/ITunes){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/it.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1814,7 +1813,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### CANALPlus
 
@@ -1822,7 +1821,7 @@ We've made 3 guides related to this.
 
 ??? question "Canal+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Canal%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/french-canalplus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1832,7 +1831,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SALTO
 
@@ -1840,7 +1839,7 @@ We've made 3 guides related to this.
 
 ??? question "SⱯLTO - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Salto_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/french-salto.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1850,7 +1849,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### RTBF
 
@@ -1858,7 +1857,7 @@ We've made 3 guides related to this.
 
 ??? question "RTBF - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/RTBF){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/french-rtbf.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1868,7 +1867,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### CC
 
@@ -1876,7 +1875,7 @@ We've made 3 guides related to this.
 
 ??? question "CC - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Comedy_Central){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/cc.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1886,7 +1885,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Crav
 
@@ -1894,7 +1893,7 @@ We've made 3 guides related to this.
 
 ??? question "CRAVE - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/cc.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1904,7 +1903,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### OViD
 
@@ -1912,7 +1911,7 @@ We've made 3 guides related to this.
 
 ??? question "OViD - [Click to show/hide]"
 
-    [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1922,17 +1921,15 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FOD
 
-<sub>FOD</sub>
+<sub>FOD = Fuji Television On Demand</sub>
 
-??? question "FOD - [Click to show/hide]"
+??? question "Fuji Television On Demand - [Click to show/hide]"
 
-    - Fuji Television On Demand
-    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
-    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1942,7 +1939,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### TVer
 
@@ -1950,8 +1947,7 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1961,7 +1957,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### U-NEXT
 
@@ -1969,8 +1965,7 @@ We've made 3 guides related to this.
 
 ??? question "U-NEXT - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
-    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1980,7 +1975,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ALL4
 
@@ -1988,8 +1983,7 @@ We've made 3 guides related to this.
 
 ??? question "ALL4 - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
-    - ALL4 is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+    {! include-markdown "../../includes/cf-descriptions/all4.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1999,7 +1993,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4OD
 
@@ -2007,8 +2001,7 @@ We've made 3 guides related to this.
 
 ??? question "4OD - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
-    - 4OD is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+    {! include-markdown "../../includes/cf-descriptions/all4.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2018,7 +2011,158 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+### B-Global
+
+??? question "B-Global - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bglobal.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bglobal.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Bilibili
+
+??? question "Bilibili - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/bilibili.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bilibili.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### CR
+
+<sub>Crunchyroll</sub>
+
+??? question "Crunchyroll - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### FUNI
+
+<sub>Funimation</sub>
+
+??? question "Funimation - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/funi.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/funi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### HIDIVE
+
+??? question "HIDIVE - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hidive.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hidive.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### VRV
+
+??? question "VRV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### ABEMA
+
+??? question "Abema - [Click to show/hide]"
+    {! include-markdown "../../includes/cf-descriptions/abema.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/abema.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### ADN
+
+<sub>ADN = Animation Digital Network</sub>
+
+??? question "ADN - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-adn.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### WKN
+
+<sub>WKN = Wakanim</sub>
+
+??? question "WKN - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-wkn.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ### UHD Streaming Boost
 
@@ -2034,7 +2178,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Streaming Cut
 
@@ -2050,11 +2194,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Anime
 
-------
+---
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
@@ -2069,7 +2213,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
@@ -2084,7 +2228,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
@@ -2099,7 +2243,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
@@ -2114,7 +2258,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 05 (Remuxes)
 
@@ -2129,7 +2273,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 06 (FanSubs)
 
@@ -2144,7 +2288,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 07 (P2P/Scene)
 
@@ -2159,7 +2303,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 08 (Mini Encodes)
 
@@ -2174,7 +2318,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 01 (Muxers)
 
@@ -2189,7 +2333,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 02 (Top FanSubs)
 
@@ -2204,7 +2348,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 03 (Official Subs)
 
@@ -2219,7 +2363,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 04 (Official Subs)
 
@@ -2234,7 +2378,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 05 (FanSubs)
 
@@ -2249,7 +2393,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 06 (FanSubs)
 
@@ -2264,7 +2408,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Raws
 
@@ -2279,7 +2423,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime LQ Groups
 
@@ -2294,7 +2438,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Uncensored
 
@@ -2309,7 +2453,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v0
 
@@ -2324,7 +2468,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v1
 
@@ -2339,7 +2483,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v2
 
@@ -2354,7 +2498,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v3
 
@@ -2369,7 +2513,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v4
 
@@ -2384,152 +2528,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
-
-### B-Global
-
-??? question "B-Global - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bglobal.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Bilibili
-
-??? question "Bilibili - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Bilibili){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bilibili.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### cr
-
-<sub>Crunchyroll</sub>
-
-??? question "Crunchyroll - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Crunchyroll){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cr.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### funi
-
-<sub>Funimation</sub>
-
-??? question "Funimation - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Funimation){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/funi.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### HIDIVE
-
-??? question "HIDIVE - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/HIDIVE){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hidive.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### VRV
-
-??? question "VRV - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### ABEMA
-
-??? question "ABMEA - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/Abema){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/abema.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### ADN
-
-<sub>ADN = Animation Digital Network</sub>
-
-??? question "ADN - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Animation_Digital_Network){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### WKN
-
-<sub>WKN = Wakanim</sub>
-
-??? question "WKN - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://fr.wikipedia.org/wiki/Wakanim){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
+---
 
 ### 10bit
 
@@ -2544,7 +2543,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Dual Audio
 
@@ -2559,7 +2558,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Dubs Only
 
@@ -2574,11 +2573,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French Audio Version
 
-------
+---
 
 ### Multi-French
 
@@ -2594,7 +2593,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi-Audio
 
@@ -2610,7 +2609,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### French Audio
 
@@ -2626,7 +2625,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFF
 
@@ -2642,7 +2641,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOF
 
@@ -2658,7 +2657,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFI
 
@@ -2674,7 +2673,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VF2
 
@@ -2690,7 +2689,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFQ
 
@@ -2706,7 +2705,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOQ
 
@@ -2722,7 +2721,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VQ
 
@@ -2738,7 +2737,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFB
 
@@ -2754,7 +2753,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOSTFR
 
@@ -2770,7 +2769,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FanSUB
 
@@ -2786,7 +2785,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FastSUB
 
@@ -2802,11 +2801,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French HQ Source Groups
 
-------
+---
 
 ### FR Remux Tier 01
 
@@ -2824,7 +2823,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR HD Bluray Tier 01
 
@@ -2843,7 +2842,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 01
 
@@ -2861,7 +2860,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 02
 
@@ -2879,7 +2878,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 03
 
@@ -2897,7 +2896,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Anime Tier 01
 
@@ -2915,7 +2914,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Anime Tier 02
 
@@ -2933,7 +2932,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Anime Tier 03
 
@@ -2952,7 +2951,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Anime FanSub
 
@@ -2968,7 +2967,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Scene Groups
 
@@ -2984,7 +2983,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR LQ
 
