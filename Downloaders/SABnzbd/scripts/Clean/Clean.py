@@ -20,13 +20,11 @@
 import sys
 import re
 
+# normalize argv to scriptname and just first 8 arguments to maintain compatibility
+sys.argv = sys.argv[:9]
 try:
-    # Parse the 18 input variables for SABnzbd version >= 4.0.0
-    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist, showname, season, episodenumber, episodename, is_proper, resolution, decade, year, month, day, job_type) = sys.argv
-    downloadsize = int(downloadsize)
-except ValueError:
-    # ...or 11 variables for earlier versions
-    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist, showname, season, episodenumber, episodename) = sys.argv
+    # Parse the input variables for SABnzbd version >= 4.2.0
+    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist) = sys.argv
 except:
     sys.exit(1)    # exit with 1 causes SABnzbd to ignore the output of this script
 
