@@ -206,9 +206,9 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
 - `days_from` => Set Number of Days to stop torrents **from** for the move.
 - `days_to` => Set Number of Days to stop torrents **to** for the move.
-- `host` => The URL you use to access qBittorrent locally. (*the* `"` *should remain*)
-- `user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
-- `password` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
+- `host` => The URL you use to access qBittorrent locally.
+- `user` => Your used qBittorrent `User Name` if you have authentication enabled.
+- `password` => Your used qBittorrent `Password` if you have authentication enabled.
 
 ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
 
