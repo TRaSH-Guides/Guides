@@ -136,34 +136,8 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 ------
 
 ### Script
-
-Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#qbit-mover-script)).
-
-You only need to change a few options at the top of the script.
-
-```python
-# --DEFINE VARIABLES--#
-# Set Number of Days to stop torrents between two offsets
-# days_from set to 0 will pause any torrents from todays date
-# days_to will be the upper limit of how far you want to pause torrents to
-days_from = 0
-days_to = 2
-qbt_host = "192.168.2.200:8080"
-qbt_user = None
-qbt_pass = None
-# --DEFINE VARIABLES--#
-```
-
-- `days_from` => Set Number of Days to stop torrents **from** for the move.
-- `days_to` => Set Number of Days to stop torrents **to** for the move.
-- `qbt_host` => The URL you use to access qBittorrent locally. (*the* `"` *should remain*)
-- `qbt_user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
-- `qbt_pass` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
-
-!!! danger "If you have authentication enabled. Add `'` either side of your User/Password."
-
 !!! warning ""
-    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 68**:
+    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 77**:
 
     - If you do not use `Mover Tuning`, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
     - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 68**
@@ -205,7 +179,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
         #!/bin/bash
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        python3 /mnt/user/data/scripts/mover.py
+        python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from $FROM --days_to $TO
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -214,15 +188,26 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
     ``` bash
         #!/bin/bash
+        
+        source /mnt/user/data/scripts/.venv/bin/activate
+    
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py
+        python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from $FROM --days_to $TO
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
+
+        deactivate
     ```
 
 !!! info
     Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
+
+- `days_from` => Set Number of Days to stop torrents **from** for the move.
+- `days_to` => Set Number of Days to stop torrents **to** for the move.
+- `host` => The URL you use to access qBittorrent locally. (*the* `"` *should remain*)
+- `user` => Your used qBittorrent `User Name` if you have authentication enabled. Add `'` either side.
+- `password` => Your used qBittorrent `Password` if you have authentication enabled. Add `'` either side.
 
 ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
 
