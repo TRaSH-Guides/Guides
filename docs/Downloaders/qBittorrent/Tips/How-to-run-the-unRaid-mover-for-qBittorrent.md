@@ -189,9 +189,9 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
     ``` bash
         #!/bin/bash
-        
+
         source /mnt/user/data/scripts/.venv/bin/activate
-    
+
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
         python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from $FROM --days_to $TO
