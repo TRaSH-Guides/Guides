@@ -23,7 +23,8 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/
     sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/docker-autocompose sonarr radarr bazarr nzbget
     ```
 
-**Do not share the output directly to Discord, reddit, forums, etc.**
+!!! warning
+    Please not share the output directly to Discord, reddit, forums, etc. and instead use the sites below
 
 Paste the results on one of the following sites.
 
