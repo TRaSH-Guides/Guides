@@ -11,7 +11,7 @@ If you're using a system with a GUI (Synology, unRAID, OMV, etc.) it's not alway
 !!! warning
     Please don't use screenshots to provide the info as they aren't always revealing all the needed info
 
-Use one of the following from terminal (i.e. puTTy) to generate the docker compose with or without the use of `sudo`. Note you can pass in multiple container names.
+Use one of the following commands in the terminal of your choice (e.g. puTTY) to generate the docker compose, with or without the use of `sudo`. Note that you can pass in multiple container names.
 
 ```bash
 sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/docker-autocompose CONTAINER_NAME CONTAINER_NAME2
