@@ -1619,9 +1619,9 @@ We've made 3 guides related to this.
 
 ### iP
 
-<sub>BBC iPlayer aka IP</sub>
+<sub>BBC iPlayer aka iP</sub>
 
-??? question "BBC iPlayer aka IP - [Click to show/hide]"
+??? question "BBC iPlayer aka iP - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/ip.md" !}
 
