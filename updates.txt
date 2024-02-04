@@ -1,3 +1,12 @@
+# 2024-02-04 21:00
+- [feat(guide): Collection of Custom Formats - Streaming Services- Improve description](https://github.com/TRaSH-Guides/Guides/pull/1775)
+- [feat(guide): Downloaders Qbt - Updated instructions to use new arguments for unRaid Qbt Mover](https://github.com/TRaSH-Guides/Guides/pull/1781)
+- [feat(starr): change AV1 default score to -10000](https://github.com/TRaSH-Guides/Guides/pull/1787)
+- [fix (guide): Sonarr - Fix x265 (no HDR/DV) section on Sonarr collection of custom formats page](https://github.com/TRaSH-Guides/Guides/pull/1783)
+- [fix(guide): clarify sharing docker compose](https://github.com/TRaSH-Guides/Guides/pull/1789)
+- [fix(guide): SABnzbd Scripts - Updated Clean.py](https://github.com/TRaSH-Guides/Guides/pull/1777)
+- [fix(guide): Sonarr golden rule link](https://github.com/TRaSH-Guides/Guides/pull/1788)
+
 # 2024-01-23 03:15
 - [feat (Starr): Add BEN THE MEN to LQ (Release Title) Custom Formats #1773](https://github.com/TRaSH-Guides/Guides/pull/1773)
 
