@@ -1167,7 +1167,7 @@ We've made 3 guides related to this.
 
 ??? question "x265 (no HDR/DV) - [Click to show/hide]"
 
-  This blocks most 720/1080p (HD) releases that are encoded in x265.
+    This blocks most 720/1080p (HD) releases that are encoded in x265.
 
     **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
