@@ -70,7 +70,8 @@ We've made 3 guides related to this.
 | -------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
 | [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Bravia Core](#bcore)      | [U-NEXT](#u-next)        |                          |
+| [Criterion Channel](#crit) |                          |                          |
 | [Disney+](#dsnp)           |                          |                          |
 | [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
@@ -84,8 +85,7 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 | --------------------- | ----------------------- | ------------------------ |
-| [BBC iPlayer](#ip)    | [Bravia Core](#bcore)   | [VRV](#vrv)              |
-|                       | [Crave](#crav)          |                          |
+| [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
 |                       | [OViD](#ovid)           |                          |
 
 ---
