@@ -46,16 +46,16 @@ We've made 3 guides related to this.
 
 ---
 
-| Series Versions       | Unwanted                                | HQ Source Groups                        | Placeholder |
-| --------------------- | --------------------------------------- | --------------------------------------- | ----------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |             |
-| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |             |
-|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) |             |
-|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |             |
-|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |             |
-|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |             |
-|                       |                                         | [WEB Tier 03](#web-tier-03)             |             |
-|                       |                                         | [WEB Scene](#web-scene)                 |             |
+| Series Versions       | Unwanted                                | HQ Source Groups                        |
+| --------------------- | --------------------------------------- | --------------------------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |
+| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |
+|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |
+|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |
+|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |
+|                       |                                         | [WEB Tier 03](#web-tier-03)             |
+|                       |                                         | [WEB Scene](#web-scene)                 |
 
 ---
 
@@ -1893,7 +1893,7 @@ We've made 3 guides related to this.
 
 ??? question "CRAVE - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cc.md" !}
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

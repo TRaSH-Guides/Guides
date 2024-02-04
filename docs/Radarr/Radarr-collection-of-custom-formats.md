@@ -49,44 +49,44 @@ We've made 3 guides related to this.
 
 ---
 
-| Movie Versions                                | Unwanted                                | HQ Release Groups                         | Placeholder |
-| --------------------------------------------- | --------------------------------------- | ----------------------------------------- | ----------- |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |             |
-| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           |             |
-| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           |             |
-| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |             |
-| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |             |
-| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |             |
-| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |             |
-| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   |             |
-| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |             |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |             |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |             |
-|                                               |                                         | [WEB Tier 03](#web-tier-03)               |             |
+| Movie Versions                                | Unwanted                                | HQ Release Groups                         |
+| --------------------------------------------- | --------------------------------------- | ----------------------------------------- |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |
+|                                               |                                         | [WEB Tier 03](#web-tier-03)               |
 
 ---
 
-| Main Streaming Services    | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
-| -------------------------- | ------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)            |                           | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
-| [Apple TV+](#atvp)         |                           | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Criterion Channel](#crit) |                           | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           |                           |                          |                          |
-| [HBO](#hbo)                |                           |                          |                          |
-| [HBO Max](#hmax)           |                           |                          |                          |
-| [Hulu](#hulu)              |                           |                          |                          |
-| [Max](#max)                |                           |                          |                          |
-| [Movies Anywhere](#ma)     |                           |                          |                          |
-| [Netflix](#nf)             |                           |                          |                          |
-| [Peacock TV](#pcok)        |                           |                          |                          |
-| [Paramount+](#pmtp)        |                           |                          |                          |
-| [Stan](#stan)              |                           |                          |                          |
+| Main Streaming Services    | Asian Streaming Services | Dutch Streaming Services |
+| -------------------------- | ------------------------ | ------------------------ |
+| [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
+| [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
+| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           |                          |                          |
+| [HBO](#hbo)                |                          |                          |
+| [HBO Max](#hmax)           |                          |                          |
+| [Hulu](#hulu)              |                          |                          |
+| [Max](#max)                |                          |                          |
+| [Movies Anywhere](#ma)     |                          |                          |
+| [Netflix](#nf)             |                          |                          |
+| [Peacock TV](#pcok)        |                          |                          |
+| [Paramount+](#pmtp)        |                          |                          |
+| [Stan](#stan)              |                          |                          |
 
-| UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services |
-| --------------------- | ----------------------- | ------------------------ | --------------------------- |
-| [BBC iPlayer](#ip)    | [Bravia Core](#bcore)   | [VRV](#vrv)              |                             |
-|                       | [Crave](#crav)          |                          |                             |
-|                       | [OViD](#ovid)           |                          |                             |
+| UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
+| --------------------- | ----------------------- | ------------------------ |
+| [BBC iPlayer](#ip)    | [Bravia Core](#bcore)   | [VRV](#vrv)              |
+|                       | [Crave](#crav)          |                          |
+|                       | [OViD](#ovid)           |                          |
 
 ---
 
@@ -2086,7 +2086,7 @@ We've made 3 guides related to this.
 
 ??? question "CRAVE - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/cc.md" !}
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
