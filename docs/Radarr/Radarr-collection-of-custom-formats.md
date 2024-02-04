@@ -66,7 +66,7 @@ We've made 3 guides related to this.
 
 ---
 
-| Main Streaming Services    | Asian Streaming Services | Dutch Streaming Services |
+| General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
 | [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |

@@ -59,23 +59,23 @@ We've made 3 guides related to this.
 
 ---
 
-| Main Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
-| ----------------------- | ------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)         | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
-| [Apple TV+](#atvp)      | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Comedy Central](#cc)   | [SALTO](#salto)           | [U-NEXT](#u-next)        |                          |
-| [DC Universe](#dcu)     |                           |                          |                          |
-| [Disney+](#dsnp)        |                           |                          |                          |
-| [HBO Max](#hmax)        |                           |                          |                          |
-| [HBO](#hbo)             |                           |                          |                          |
-| [Hulu](#hulu)           |                           |                          |                          |
-| [iTunes](#it)           |                           |                          |                          |
-| [Max](#max)             |                           |                          |                          |
-| [Netflix](#nf)          |                           |                          |                          |
-| [Paramount+](#pmtp)     |                           |                          |                          |
-| [Peacock TV](#pcok)     |                           |                          |                          |
-| [SHOWTIME](#sho)        |                           |                          |                          |
-| [Stan](#stan)           |                           |                          |                          |
+| General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
+| -------------------------- | ------------------------- | ------------------------ | ------------------------ |
+| [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
+| [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
+| [Comedy Central](#cc)      | [SALTO](#salto)           | [U-NEXT](#u-next)        |                          |
+| [DC Universe](#dcu)        |                           |                          |                          |
+| [Disney+](#dsnp)           |                           |                          |                          |
+| [HBO Max](#hmax)           |                           |                          |                          |
+| [HBO](#hbo)                |                           |                          |                          |
+| [Hulu](#hulu)              |                           |                          |                          |
+| [iTunes](#it)              |                           |                          |                          |
+| [Max](#max)                |                           |                          |                          |
+| [Netflix](#nf)             |                           |                          |                          |
+| [Paramount+](#pmtp)        |                           |                          |                          |
+| [Peacock TV](#pcok)        |                           |                          |                          |
+| [SHOWTIME](#sho)           |                           |                          |                          |
+| [Stan](#stan)              |                           |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 | --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
