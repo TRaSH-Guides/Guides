@@ -1,4 +1,4 @@
-**BBC iPlayer aka IP**<br>
+**BBC iPlayer aka iP**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}
 
