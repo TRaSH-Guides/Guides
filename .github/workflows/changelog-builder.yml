@@ -23,4 +23,4 @@ jobs:
         uses: jaywcjlove/github-action-modify-file-content@main
         with:
           path: docs/updates.txt
-          body: "{{date:YYYY-MM-DD HH:mm}}\n${{ steps.github_release.outputs.changelog }}"
+          body: "{{date:YYYY-MM-DD HH:mm}}\n${{ steps.build_changelog.outputs.changelog }}"
