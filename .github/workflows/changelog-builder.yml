@@ -22,5 +22,5 @@ jobs:
       - name: Modify updates.txt
         uses: jaywcjlove/github-action-modify-file-content@main
         with:
-          path: docs\updates.txt
+          path: .\docs\updates.txt
           body: "{{date:YYYY-MM-DD HH:mm}}\n${{ steps.github_release.outputs.changelog }}"
