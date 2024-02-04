@@ -58,6 +58,6 @@
   "pr_template": "- [${{TITLE}}](${{URL}})",
   "empty_template": "- no changes",
   "base_branches": [
-    "main"
+    "master"
   ]
 }
