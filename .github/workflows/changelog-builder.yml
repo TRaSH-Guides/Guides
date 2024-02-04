@@ -1,8 +1,7 @@
 name: Release Creation
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,7 +20,9 @@ jobs:
 
       # Change the update file
       - name: Modify updates.txt
+        env:
+          changelog: ${{ steps.build_changelog }}
         uses: jaywcjlove/github-action-modify-file-content@main
         with:
           path: docs\updates.txt
-          body: "{{date:YYYY-MM-DD HH:mm}}\n${{ steps.github_release.outputs.changelog }}"
+          body: "{{date:YYYY-MM-DD HH:mm}}\n${{ steps.build_changelog }}"
