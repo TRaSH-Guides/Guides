@@ -27,11 +27,11 @@ We've made 3 guides related to this.
 
 --8<-- "includes/support.md"
 
-------
+---
 
 ## INDEX
 
-------
+---
 
 | Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
@@ -47,33 +47,48 @@ We've made 3 guides related to this.
 |                                       |                           |                              | [PQ](#pq)                         |
 |                                       |                           |                              | [HLG](#hlg)                       |
 
-------
+---
 
-| Movie Versions                                | Unwanted                                | HQ Release Groups                         | Streaming Services         |
-| --------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------- |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
-| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
-| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           | [BBC iPlayer (iP)](#ip)    |
-| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Bravia Core](#bcore)      |
-| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [Crave](#crav)             |
-| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [Criterion Channel](#crit) |
-| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Disney+](#dsnp)           |
-| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [FOD](#fod)                |
-| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [HBO](#hbo)                |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               | [HBO Max](#hmax)           |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               | [Hulu](#hulu)              |
-|                                               |                                         | [WEB Tier 03](#web-tier-03)               | [Max](#max)                |
-|                                               |                                         |                                           | [Movies Anywhere](#ma)     |
-|                                               |                                         |                                           | [Netflix](#nf)             |
-|                                               |                                         |                                           | [OViD](#ovid)              |
-|                                               |                                         |                                           | [Pathe Thuis](#pathe)      |
-|                                               |                                         |                                           | [Peacock TV](#pcok)        |
-|                                               |                                         |                                           | [Paramount+](#pmtp)        |
-|                                               |                                         |                                           | [Stan](#stan)              |
-|                                               |                                         |                                           | [TVer](#tver)              |
-|                                               |                                         |                                           | [U-NEXT](#u-next)          |
+| Movie Versions                                | Unwanted                                | HQ Release Groups                         |
+| --------------------------------------------- | --------------------------------------- | ----------------------------------------- |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |
+|                                               |                                         | [WEB Tier 03](#web-tier-03)               |
 
-------
+---
+
+| General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
+| -------------------------- | ------------------------ | ------------------------ |
+| [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
+| [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
+| [Bravia Core](#bcore)      | [U-NEXT](#u-next)        |                          |
+| [Criterion Channel](#crit) |                          |                          |
+| [Disney+](#dsnp)           |                          |                          |
+| [HBO](#hbo)                |                          |                          |
+| [HBO Max](#hmax)           |                          |                          |
+| [Hulu](#hulu)              |                          |                          |
+| [Max](#max)                |                          |                          |
+| [Movies Anywhere](#ma)     |                          |                          |
+| [Netflix](#nf)             |                          |                          |
+| [Peacock TV](#pcok)        |                          |                          |
+| [Paramount+](#pmtp)        |                          |                          |
+| [Stan](#stan)              |                          |                          |
+
+| UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
+| --------------------- | ----------------------- | ------------------------ |
+| [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
+|                       | [OViD](#ovid)           |                          |
+
+---
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                            |
 | ------------------------------ | -------------------------------------- | ----------------------------- | ----------------------------------------------- |
@@ -96,22 +111,22 @@ We've made 3 guides related to this.
 |                                | [VP9](#vp9)                            |                               |                                                 |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                                 |
 
-------
+---
 
-| Anime                                                                       | Anime                                                                 | Anime       | Anime Optional                        |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)   | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)   | [10bit](#10bit)                       |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)   | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)   | [Dubs Only](#dubs-only)               |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)   |                                       |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv) |                                       |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |             |                                       |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |             |                                       |
+| Anime                                                                       | Anime                                                                 | Anime     | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0) | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1) | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2) | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3) | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4) |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |           |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |           |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |           |                                       |
 
 ## Audio Advanced
 
-------
+---
 
 ### TrueHD ATMOS
 
@@ -129,7 +144,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS X
 
@@ -147,7 +162,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ATMOS (undefined)
 
@@ -166,7 +181,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus ATMOS
 
@@ -182,7 +197,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### TrueHD
 
@@ -200,7 +215,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD MA
 
@@ -218,7 +233,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FLAC
 
@@ -234,7 +249,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PCM
 
@@ -250,7 +265,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD HRA
 
@@ -281,7 +296,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus
 
@@ -301,7 +316,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-ES
 
@@ -317,7 +332,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS
 
@@ -334,7 +349,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AAC
 
@@ -353,7 +368,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DD
 
@@ -373,7 +388,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MP3
 
@@ -388,7 +403,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Opus
 
@@ -406,11 +421,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Audio Channels
 
-------
+---
 
 ### 1.0 Mono
 
@@ -422,7 +437,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 2.0 Stereo
 
@@ -434,7 +449,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 3.0 Sound
 
@@ -446,7 +461,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4.0 Sound
 
@@ -458,7 +473,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 5.1 Surround
 
@@ -470,7 +485,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 6.1 Surround
 
@@ -482,7 +497,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 7.1 Surround
 
@@ -494,7 +509,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 9.1 Surround
 
@@ -506,11 +521,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HDR Formats
 
-------
+---
 
 ### DV HDR10Plus
 
@@ -529,7 +544,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HDR10
 
@@ -547,7 +562,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV
 
@@ -567,7 +582,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HLG
 
@@ -585,7 +600,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV SDR
 
@@ -603,7 +618,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus
 
@@ -621,7 +636,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10
 
@@ -639,7 +654,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR
 
@@ -657,7 +672,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR (undefined)
 
@@ -673,7 +688,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PQ
 
@@ -691,7 +706,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HLG
 
@@ -709,11 +724,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Movie Versions
 
-------
+---
 
 ### Hybrid
 
@@ -729,7 +744,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remaster
 
@@ -748,7 +763,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4K Remaster
 
@@ -768,7 +783,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Criterion Collection
 
@@ -784,7 +799,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Masters of Cinema
 
@@ -800,7 +815,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Vinegar Syndrome
 
@@ -816,7 +831,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Theatrical Cut
 
@@ -832,7 +847,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Special Edition
 
@@ -851,7 +866,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IMAX
 
@@ -866,7 +881,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IMAX Enhanced
 
@@ -893,7 +908,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Open Matte
 
@@ -909,11 +924,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Unwanted
 
-------
+---
 
 ### BR-DISK
 
@@ -941,7 +956,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ
 
@@ -960,7 +975,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ (Release Title)
 
@@ -978,7 +993,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 3D
 
@@ -996,7 +1011,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (HD)
 
@@ -1021,7 +1036,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Upscaled
 
@@ -1037,7 +1052,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Extras
 
@@ -1053,11 +1068,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Optional
 
-------
+---
 
 ### Bad Dual Groups
 
@@ -1073,7 +1088,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV (WEBDL)
 
@@ -1098,7 +1113,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### EVO (no WEBDL)
 
@@ -1116,7 +1131,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus Boost
 
@@ -1132,7 +1147,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HDR10Plus Boost
 
@@ -1148,7 +1163,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### No-RlsGroup
 
@@ -1169,7 +1184,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Obfuscated
 
@@ -1185,7 +1200,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Retags
 
@@ -1201,7 +1216,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Scene
 
@@ -1217,7 +1232,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (no HDR/DV)
 
@@ -1241,7 +1256,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AV1
 
@@ -1260,7 +1275,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VP9
 
@@ -1279,7 +1294,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Internal
 
@@ -1296,7 +1311,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SDR
 
@@ -1312,7 +1327,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SDR (no WEBDL)
 
@@ -1328,7 +1343,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV (Disk)
 
@@ -1344,7 +1359,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Line/Mic Dubbed
 
@@ -1362,7 +1377,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HFR
 
@@ -1378,11 +1393,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Misc
 
-------
+---
 
 ### Repack/Proper
 
@@ -1394,7 +1409,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Repack2
 
@@ -1406,7 +1421,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x264
 
@@ -1424,7 +1439,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265
 
@@ -1444,7 +1459,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FreeLeech
 
@@ -1463,7 +1478,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Dutch Groups
 
@@ -1479,7 +1494,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MPEG2
 
@@ -1491,7 +1506,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi
 
@@ -1503,11 +1518,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HQ Release Groups
 
-------
+---
 
 ### Remux Tier 01
 
@@ -1527,7 +1542,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remux Tier 02
 
@@ -1547,7 +1562,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remux Tier 03
 
@@ -1570,7 +1585,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 01
 
@@ -1592,7 +1607,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 02
 
@@ -1613,7 +1628,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 03
 
@@ -1635,7 +1650,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 01
 
@@ -1656,7 +1671,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 02
 
@@ -1675,7 +1690,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 03
 
@@ -1695,7 +1710,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 01
 
@@ -1715,7 +1730,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 02
 
@@ -1734,7 +1749,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 03
 
@@ -1753,19 +1768,19 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Streaming Services
 
-------
+---
 
 ### AMZN
 
-<sub>Amazon</sub>
+<sub>Amazon Prime Video</sub>
 
-??? question "Amazon - [Click to show/hide]"
+??? question "Amazon Prime Video - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1775,7 +1790,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ATVP
 
@@ -1783,7 +1798,7 @@ We've made 3 guides related to this.
 
 ??? question "Apple TV+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1793,7 +1808,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### CRiT
 
@@ -1801,7 +1816,7 @@ We've made 3 guides related to this.
 
 ??? question "Criterion Channel - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Criterion_Collection#Streaming_as_The_Criterion_Channel){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1811,7 +1826,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DSNP
 
@@ -1819,7 +1834,7 @@ We've made 3 guides related to this.
 
 ??? question "Disney+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1829,7 +1844,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HBO
 
@@ -1837,7 +1852,7 @@ We've made 3 guides related to this.
 
 ??? question "HBO - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1847,15 +1862,15 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HMAX
 
 <sub>HBO Max</sub>
 
-??? question "HBO Max - [Click to show/hide]"
+??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1865,15 +1880,15 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Max
 
-<sub>Max</sub>
+<sub>Max (streaming service)</sub>
 
-??? question "Max - [Click to show/hide]"
+??? question "Max (streaming service) - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1883,7 +1898,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Hulu
 
@@ -1891,7 +1906,7 @@ We've made 3 guides related to this.
 
 ??? question "Hulu - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1901,15 +1916,15 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### IP
+### iP
 
-<sub>BBC iPlayer</sub>
+<sub>BBC iPlayer aka iP</sub>
 
-??? question "BBC iPlayer - [Click to show/hide]"
+??? question "BBC iPlayer aka iP - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/BBC_iPlayer){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1919,7 +1934,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### NF
 
@@ -1927,7 +1942,7 @@ We've made 3 guides related to this.
 
 ??? question "Netflix - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1937,7 +1952,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PCOK
 
@@ -1945,7 +1960,7 @@ We've made 3 guides related to this.
 
 ??? question "Peacock TV - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1955,7 +1970,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PMTP
 
@@ -1963,7 +1978,7 @@ We've made 3 guides related to this.
 
 ??? question "Paramount+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1973,7 +1988,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MA
 
@@ -1981,7 +1996,7 @@ We've made 3 guides related to this.
 
 ??? question "Movies Anywhere - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1991,7 +2006,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Pathe
 
@@ -1999,7 +2014,7 @@ We've made 3 guides related to this.
 
 ??? question "Pathé Thuis - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2009,7 +2024,25 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+### VDL
+
+<sub>Videoland</sub>
+
+??? question "Videoland - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ### BCORE
 
@@ -2017,7 +2050,7 @@ We've made 3 guides related to this.
 
 ??? question "Bravia Core - [Click to show/hide]"
 
-    [From Sony, no wiki link available](https://electronics.sony.com/bravia-core){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/bcore.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2027,7 +2060,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### STAN
 
@@ -2035,7 +2068,7 @@ We've made 3 guides related to this.
 
 ??? question "STAN - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stan_(service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2045,7 +2078,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Crav
 
@@ -2053,7 +2086,7 @@ We've made 3 guides related to this.
 
 ??? question "CRAVE - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2063,7 +2096,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### OViD
 
@@ -2071,7 +2104,7 @@ We've made 3 guides related to this.
 
 ??? question "OViD - [Click to show/hide]"
 
-    [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2081,17 +2114,15 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FOD
 
-<sub>FOD</sub>
+<sub>FOD = Fuji Television On Demand</sub>
 
-??? question "FOD - [Click to show/hide]"
+??? question "Fuji Television On Demand - [Click to show/hide]"
 
-    - Fuji Television On Demand
-    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
-    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2101,7 +2132,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### TVer
 
@@ -2109,8 +2140,7 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2120,7 +2150,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### U-NEXT
 
@@ -2128,8 +2158,7 @@ We've made 3 guides related to this.
 
 ??? question "U-NEXT - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
-    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2139,11 +2168,27 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+### VRV
+
+??? question "VRV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ## Anime
 
-------
+---
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
@@ -2158,7 +2203,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
@@ -2173,7 +2218,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
@@ -2188,7 +2233,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
@@ -2203,7 +2248,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 05 (Remuxes)
 
@@ -2218,7 +2263,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 06 (FanSubs)
 
@@ -2233,7 +2278,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 07 (P2P/Scene)
 
@@ -2248,7 +2293,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 08 (Mini Encodes)
 
@@ -2263,7 +2308,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 01 (Muxers)
 
@@ -2278,7 +2323,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 02 (Top FanSubs)
 
@@ -2293,7 +2338,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 03 (Official Subs)
 
@@ -2308,7 +2353,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 04 (Official Subs)
 
@@ -2323,7 +2368,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 05 (FanSubs)
 
@@ -2338,7 +2383,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 06 (FanSubs)
 
@@ -2353,7 +2398,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Raws
 
@@ -2368,7 +2413,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime LQ Groups
 
@@ -2383,7 +2428,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Uncensored
 
@@ -2398,7 +2443,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v0
 
@@ -2413,7 +2458,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v1
 
@@ -2428,7 +2473,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v2
 
@@ -2443,7 +2488,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v3
 
@@ -2458,7 +2503,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v4
 
@@ -2473,22 +2518,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
-
-### VRV
-
-??? question "VRV - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
+---
 
 ### 10bit
 
@@ -2503,7 +2533,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Dual Audio
 
@@ -2518,7 +2548,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Dubs Only
 
@@ -2533,11 +2563,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French Audio Version
 
-------
+---
 
 ### Multi-French
 
@@ -2553,7 +2583,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi-Audio
 
@@ -2569,7 +2599,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### French Audio
 
@@ -2585,7 +2615,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFF
 
@@ -2601,7 +2631,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOF
 
@@ -2617,7 +2647,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFI
 
@@ -2633,7 +2663,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VF2
 
@@ -2649,7 +2679,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFQ
 
@@ -2665,7 +2695,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOQ
 
@@ -2681,7 +2711,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VQ
 
@@ -2697,7 +2727,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFB
 
@@ -2713,7 +2743,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOSTFR
 
@@ -2729,7 +2759,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FanSUB
 
@@ -2745,7 +2775,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FastSUB
 
@@ -2761,11 +2791,11 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French HQ Source Groups
 
-------
+---
 
 ### FR Remux Tier 01
 
@@ -2783,7 +2813,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Remux Tier 02
 
@@ -2804,7 +2834,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR UHD Bluray Tier 01
 
@@ -2824,7 +2854,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR UHD Bluray Tier 02
 
@@ -2846,7 +2876,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR HD Bluray Tier 01
 
@@ -2865,7 +2895,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR HD Bluray Tier 02
 
@@ -2885,7 +2915,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 01
 
@@ -2903,7 +2933,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 02
 
@@ -2922,7 +2952,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Scene Groups
 
@@ -2938,7 +2968,7 @@ We've made 3 guides related to this.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR LQ
 
