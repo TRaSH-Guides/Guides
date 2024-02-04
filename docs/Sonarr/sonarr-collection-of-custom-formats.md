@@ -59,7 +59,7 @@ We've made 3 guides related to this.
 
 ---
 
-| Int. Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
+| Main Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | ----------------------- | ------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)         | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
 | [Apple TV+](#atvp)      | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
