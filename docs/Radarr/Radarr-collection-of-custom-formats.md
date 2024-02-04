@@ -1918,7 +1918,7 @@ We've made 3 guides related to this.
 
 ---
 
-### IP
+### iP
 
 <sub>BBC iPlayer aka IP</sub>
 
