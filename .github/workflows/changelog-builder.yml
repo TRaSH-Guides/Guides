@@ -24,3 +24,4 @@ jobs:
         with:
           path: docs/updates.txt
           body: "#{{date:YYYY-MM-DD HH:mm}}\n${{ steps.build_changelog.outputs.changelog }}"
+          overwrite: 'true'
