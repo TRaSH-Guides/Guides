@@ -111,10 +111,10 @@
     | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                               | :warning: {{ radarr['cf']['av1']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['av1']['trash_id'] }}                |
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               |             {{ radarr['cf']['sdr']['trash_scores']['default'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}                |
 
-    !!! tip "I recommend to use the the following Custom Formats"
+    !!! tip "I recommend using the following Custom Formats"
         - `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning,<br>:warning: Only ever include one of them :warning:
-        - `SDR` This will help to prevent to grab UHD/4k releases without HDR Formats
-        - `AV1` This will help to prevent to grab AV1 releases.
+        - `SDR` This will prevent grabbing UHD/4K releases without HDR Formats
+        - `AV1` This will prevent grabbing AV1 releases.
 
     !!! danger "Adding any of the `HDR10+ Boosts` could result in less streaming optimized releases :warning:"
 
