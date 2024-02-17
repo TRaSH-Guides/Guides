@@ -56,9 +56,16 @@
 
     ![sabnzbd-categories](/Downloaders/SABnzbd/images/sabnzbd-categories.png)
 
+    Don't forget to look at the full SABnzbd Guides
+
+    - [SABnzbd - Basic Setup](/Downloaders/SABnzbd/Basic-Setup/)
+    - [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/)
+
 ## NZBGet
 
 ??? example "NZBGet Examples - [Click to show/hide]"
+
+    !!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
 
     `Settings` => `PATHS`
 
@@ -68,6 +75,11 @@
 
     ![nzbget-settings-categories](images/nzbget-settings-categories.png)
 
+    Don't forget to look at the full NZBGet Guides
+
+    - [NZBGet - Basic Setup](/Downloaders/NZBGet/Basic-Setup/)
+    - [NZBGet - Paths and Categories](/Downloaders/NZBGet/Paths-and-Categories/)
+
 ## qBittorrent
 
 ??? example "qBittorrent Examples - [Click to show/hide]"
@@ -76,6 +88,12 @@
 
     ![qbt-options-downloads](images/qbt-options-downloads.png)
 
+    Don't forget to look at the full qBittorrent Guides
+
+    - [qBittorrent - Basic Setup](/Downloaders/qBittorrent/Basic-Setup/)
+    - [qBittorrent - Paths](/Downloaders/qBittorrent/Paths/)
+    - [qBittorrent - How to add categories](/Downloaders/qBittorrent/How-to-add-categories/)
+
 ## Deluge
 
 ??? example "Deluge Example - [Click to show/hide]"
@@ -83,6 +101,11 @@
     `Preferences` => `Downloads`
 
     ![deluge-preferences-downloads](images/deluge-preferences-downloads.png)
+
+    Don't forget to look at the full Deluge Guides
+
+    - [Deluge - Basic Setup](/Downloaders/Deluge/Basic-Setup/)
+    - [Deluge - Using Labels](/Downloaders/Deluge/Using-Labels/)
 
 ## ruTorrent
 
