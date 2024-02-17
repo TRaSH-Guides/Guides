@@ -86,7 +86,7 @@ We've made 3 guides related to this.
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 | --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
-|                       | [OViD](#ovid)           |                          |
+| [ITVX](#itvx)         | [OViD](#ovid)           |                          |
 
 ---
 
@@ -1930,6 +1930,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### ITVX
+
+<sub>ITVX aka ITV</sub>
+
+??? question "ITVX aka ITV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

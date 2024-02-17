@@ -1,0 +1,38 @@
+{
+  "trash_id": "fa5a16b951004c23e980d2913694a137",
+  "trash_scores": {
+    "default": 50
+  },
+  "trash_regex": "https://regex101.com/r/Nw3FiP/1",
+  "name": "ITVX",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "ITVX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bITV(X)?\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

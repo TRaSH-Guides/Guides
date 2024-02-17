@@ -82,7 +82,7 @@ We've made 3 guides related to this.
 | [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
 | [ALL4](#all4)         | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
 | [BBC iPlayer](#ip)    | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
-|                       | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
+| [ITVX](#itvx)         | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
 |                       |                         | [HIDIVE](#hidive)        |                                             |
 |                       |                         | [VRV](#vrv)              |                                             |
 |                       |                         | [ABEMA](#abema)          |                                             |
@@ -1629,6 +1629,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ip.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### ITVX
+
+<sub>ITVX aka ITV</sub>
+
+??? question "ITVX aka ITV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/itvx.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
