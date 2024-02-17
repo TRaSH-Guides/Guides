@@ -94,7 +94,7 @@
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
+{! include-markdown "../../includes/sqp/radarr-unwanted-uhd-sqp1.md" !}
 
 ??? abstract "Optional - [Click to show/hide]"
     | Custom Format                                                                                                       |                                    Score                                     | Trash ID                                          |
