@@ -6,7 +6,7 @@ jobs:
   build:
     name: Build docs
     runs-on: ubuntu-latest
-    concurrency: 
+    concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
@@ -31,8 +31,8 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     permissions:
-      contents: write    
-    concurrency: 
+      contents: write
+    concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
