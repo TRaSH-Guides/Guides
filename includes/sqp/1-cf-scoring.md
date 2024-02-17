@@ -53,7 +53,7 @@
 
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/radarr-unwanted.md" !}
+{! include-markdown "../../includes/sqp/radarr-unwanted-sqp1.md" !}
 
 {! include-markdown "../../includes/sqp/hd-radarr-optional.md" !}
 
