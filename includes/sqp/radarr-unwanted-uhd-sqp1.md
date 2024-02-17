@@ -24,4 +24,4 @@
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
     - **{{ radarr['cf']['extras']['name'] }}:** Blocks releases that only contain extras
-    - **{{ radarr['cf']['10bit']['name'] }}:** Blocks releases that uses Hi10P
+    - **{{ radarr['cf']['10bit']['name'] }}:** Blocks releases that use Hi10P
