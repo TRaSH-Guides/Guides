@@ -64,7 +64,7 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
 | [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [U-NEXT](#u-next)        |                          |
-| [DC Universe](#dcu)        |                           |                          |                          |
+| [DC Universe](#dcu)        |                           | [VIU](#viu)              |                          |
 | [Disney+](#dsnp)           |                           |                          |                          |
 | [HBO Max](#hmax)           |                           |                          |                          |
 | [HBO](#hbo)                |                           |                          |                          |
@@ -1989,6 +1989,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### VIU
+
+<sub>VIU</sub>
+
+??? question "VIU - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viu.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

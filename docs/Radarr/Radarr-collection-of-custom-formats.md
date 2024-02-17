@@ -71,7 +71,7 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
 | [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
 | [Bravia Core](#bcore)      | [U-NEXT](#u-next)        |                          |
-| [Criterion Channel](#crit) |                          |                          |
+| [Criterion Channel](#crit) | [VIU](#viu)              |                          |
 | [Disney+](#dsnp)           |                          |                          |
 | [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
@@ -2182,6 +2182,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### VIU
+
+<sub>VIU</sub>
+
+??? question "VIU - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
