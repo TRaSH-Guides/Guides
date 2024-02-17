@@ -4066,7 +4066,7 @@
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
+<!-- BEGIN INCLUDE ../../includes/sqp/radarr-unwanted-uhd-sqp1.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -4113,6 +4113,11 @@
 <td style="text-align: center;">-10000</td>
 <td>0a3f082873eb454bde444150b70253cc</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#10bit">10bit</a></td>
+<td style="text-align: center;">-10000</td>
+<td>a5d148168c4506b55cf53984107c396e</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -4132,6 +4137,7 @@
 </li>
 <li><strong>Upscaled:</strong> A custom format to prevent Radarr from grabbing upscaled releases.</li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
+<li><strong>10bit:</strong> Blocks releases that use Hi10P</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
@@ -4156,6 +4162,11 @@
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost">HDR10+ Boost</a></td>
 <td style="text-align: center;">901</td>
 <td>b17886cb4158d9fea189859409975758</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost">DV HDR10+ Boost</a></td>
+<td style="text-align: center;">100</td>
+<td>55a5b50cb416dea5a50c4955896217ab</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
@@ -4200,19 +4211,23 @@
 </tbody>
 </table>
 <div class="admonition tip">
-<p class="admonition-title">I recommend to use the the following Custom Formats</p>
+<p class="admonition-title">I recommend using the following Custom Formats</p>
 <ul>
 <li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code>, Read the Why below and don't forget to read the warning,<br><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></li>
-<li><code>SDR</code> This will help to prevent to grab UHD/4k releases without HDR Formats</li>
-<li><code>AV1</code> This will help to prevent to grab AV1 releases</li>
+<li><code>SDR</code> This will prevent grabbing UHD/4K releases without HDR Formats</li>
+<li><code>AV1</code> This will prevent grabbing AV1 releases.</li>
 </ul>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Adding any of the <code>HDR10+ Boosts</code> could result in less streaming optimized releases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
 <hr />
 <p>Breakdown and Why</p>
 <ul>
 <li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
 Also they often even rename the release name in to Portuguese.</li>
-<li><strong>HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+)</li>
+<li><strong>HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you have a (Samsung) TV that supports HDR10+ and don't mind the chance to get less streaming optimized releases)</li>
+<li><strong>DV HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you don't mind the chance to get less streaming optimized releases)</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for the low quality Blu-ray releases, but their WEB-DL are okay.</li>
 <li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group what could result in LQ groups getting a higher score. For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match.</li>
 <li><strong>Obfuscated:</strong> [<em>Optional</em>] (use these only if you dislike renamed releases)</li>
