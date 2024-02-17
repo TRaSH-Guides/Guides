@@ -1,3 +1,11 @@
+# 2024-02-18 00:00
+- [feat(starr): Add Custom Format for streaming service VIU](https://github.com/TRaSH-Guides/Guides/pull/1795)
+- [feat(guide): SQP-1 - Add CF 10bit to unwanted to block Hi10P](https://github.com/TRaSH-Guides/Guides/pull/1798)
+- [feat(starr): Add Custom Format for streaming service ITVX](https://github.com/TRaSH-Guides/Guides/pull/1799)
+- [feat(guide): Recommended naming scheme - Add Enable Rename instructions](https://github.com/TRaSH-Guides/Guides/pull/1800)
+- [feat(guide): hardlinks - add links to the full downloader guide](https://github.com/TRaSH-Guides/Guides/pull/1801)
+- [feat(guide): SQP - Add DV HDR10+ Boost to SQP-1 4k optional](https://github.com/TRaSH-Guides/Guides/pull/1796)
+
 # 2024-02-04 21:00
 - [feat(guide): Collection of Custom Formats - Streaming Services- Improve description](https://github.com/TRaSH-Guides/Guides/pull/1775)
 - [feat(guide): Downloaders Qbt - Updated instructions to use new arguments for unRaid Qbt Mover](https://github.com/TRaSH-Guides/Guides/pull/1781)
