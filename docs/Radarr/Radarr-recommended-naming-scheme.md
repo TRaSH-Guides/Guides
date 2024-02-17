@@ -23,7 +23,7 @@ Once you clicked on the button it should look like this and you should see all t
 
 ![Unhide Advanced](images/unhide-advanced.png)
 
-And as last enable Rename Movies to reveal the movies renaming options.
+Finally, enable `Rename Movies` to reveal the movie renaming options.
 
 ![Enable Rename Movies](images/radarr-enable-rename.png)
 

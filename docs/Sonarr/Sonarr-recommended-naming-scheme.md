@@ -23,7 +23,7 @@ Once you clicked on the button it should look like this and you should see all t
 
 ![Unhide Advanced](images/unhide-advanced.png)
 
-And as last enable Rename Episodes to reveal the episode renaming options.
+Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
 ![Enable Rename Episodes](images/sonarr-enable-rename.png)
 
