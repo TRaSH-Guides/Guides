@@ -3,25 +3,40 @@ name: Build and Deploy Docs
 on: [push, pull_request]
 
 jobs:
+
   build:
     name: Build docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
-      - name: Set up Python
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            images
+            includes
+            overrides
+      - name: Setup python
         uses: actions/setup-python@v5.0.0
         with:
           python-version: 3.x
+      - name: Get pip cache directory
+        id: pip-cache
+        run: |
+          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
       - name: Cache dependencies
         uses: actions/cache@v4.0.0
         with:
-          path: .cache
-          key: ${{ runner.os }}-build-${{ hashFiles('docs/requirements.txt') }}
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
       - name: Build documentation
         run: mkdocs build
+
   deploy:
     if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
     needs: build
@@ -33,16 +48,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
         with:
-          fetch-depth: '0'
-      - name: Set up Python
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            images
+            includes
+            overrides
+      - name: Setup python
         uses: actions/setup-python@v5.0.0
         with:
           python-version: 3.x
+      - name: Get pip cache directory
+        id: pip-cache
+        run: |
+          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
       - name: Cache dependencies
         uses: actions/cache@v4.0.0
         with:
-          path: .cache
-          key: ${{ runner.os }}-build-${{ hashFiles('docs/requirements.txt') }}
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
       - name: Install dependencies
         run: pip install -r docs/requirements.txt
       - name: Deploy to GitHub Pages
