@@ -61,7 +61,7 @@ We've made 3 guides related to this.
 
 | General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           | 
+| [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
 | [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
 | [DC Universe](#dcu)        |                           | [U-NEXT](#u-next)        |                          |
