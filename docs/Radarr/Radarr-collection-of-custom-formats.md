@@ -69,10 +69,10 @@ We've made 3 guides related to this.
 | General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
-| [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Bravia Core](#bcore)      | [U-NEXT](#u-next)        |                          |
-| [Criterion Channel](#crit) | [VIU](#viu)              |                          |
-| [Disney+](#dsnp)           |                          |                          |
+| [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
+| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
 | [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
@@ -2028,7 +2028,7 @@ We've made 3 guides related to this.
 
 ---
 
-### Asian Streamin Services
+### Asian Streaming Services
 
 ---
 
@@ -2044,6 +2044,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HTSR
+
+<sub>Disney+ Hotstar</sub>
+
+??? question "Disney+ Hotstar - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

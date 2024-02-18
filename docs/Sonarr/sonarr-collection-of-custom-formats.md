@@ -61,11 +61,11 @@ We've made 3 guides related to this.
 
 | General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------- | ------------------------ | ------------------------ |
-| [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
-| [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Comedy Central](#cc)      | [SALTO](#salto)           | [U-NEXT](#u-next)        |                          |
-| [DC Universe](#dcu)        |                           | [VIU](#viu)              |                          |
-| [Disney+](#dsnp)           |                           |                          |                          |
+| [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           | 
+| [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
+| [DC Universe](#dcu)        |                           | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           |                           | [VIU](#viu)              |                          |
 | [HBO Max](#hmax)           |                           |                          |                          |
 | [HBO](#hbo)                |                           |                          |                          |
 | [Hulu](#hulu)              |                           |                          |                          |
@@ -1821,6 +1821,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HTSR
+
+<sub>Disney+ Hotstar</sub>
+
+??? question "Disney+ Hotstar - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/htsr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
