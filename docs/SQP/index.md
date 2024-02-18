@@ -1,6 +1,11 @@
-<meta name="robots" content="noindex, nofollow" />
+---
+search:
+  exclude: true
+---
 
 # Special Quality Profiles
+
+<meta name="robots" content="noindex, noarchive, nofollow" />
 
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
 
