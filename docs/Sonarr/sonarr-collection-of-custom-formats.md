@@ -998,7 +998,7 @@ We've made 3 guides related to this.
 
 ??? question "FreeLeech - [Click to show/hide]"
 
-    Sometimes, torrent sites set a torrent to be freeleech. This means, that the download of this torrent will not count towards your download quota or ratio. This is really useful, if you do not have the best ratio yet.
+    Torrent sites sometimes set a torrent to be freeleech. This means that the download of this torrent will not count towards your quota or ratio. This can be useful when starting a new account or if you do not have the best ratio yet.
 
     !!! warning
         Keep in mind not all trackers support this option.
