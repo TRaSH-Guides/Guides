@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(VFQ?|(?<=MULTi[ .])FR(A|ENCH))\\b"
+        "value": "\\b(VFQ|(?<=MULTi[ .])FR(A|ENCH))\\b"
       }
     },
     {
