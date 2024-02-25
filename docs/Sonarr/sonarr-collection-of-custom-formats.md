@@ -92,15 +92,15 @@ We've made 3 guides related to this.
 ---
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
-| ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
-| [MPEG2](#mpeg2)                | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
-| [Multi](#multi)                | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
-| [Repack v2](#repack-v2)        | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
-| [Repack v3](#repack-v3)        | [DV (WEBDL)](#dv-webdl)                | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
-| [Repack/Proper](#repackproper) | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
-| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)       | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
-| [x265](#x265)                  | [HFR](#hfr)                            | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-|                                | [Internal](#internal)                  | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
+|--------------------------------|----------------------------------------|-------------------------------|-----------------------------------------------|
+| [FreeLeech](#freeleech)        | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
+| [MPEG2](#mpeg2)                | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
+| [Multi](#multi)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
+| [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)                | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
+| [Repack v3](#repack-v3)        | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
+| [Repack/Proper](#repackproper) | [HDR10+ Boost](#hdr10plus-boost)       | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
+| [x264](#x264)                  | [HFR](#hfr)                            | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+| [x265](#x265)                  | [Internal](#internal)                  | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
 |                                | [No-RlsGroup](#no-rlsgroup)            | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
 |                                | [Obfuscated](#obfuscated)              | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
 |                                | [Retags](#retags)                      | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
@@ -988,6 +988,25 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### FreeLeech
+
+??? question "FreeLeech - [Click to show/hide]"
+
+    Torrent sites sometimes set a torrent to be freeleech. This means that the download of this torrent will not count towards your quota or ratio. This can be useful when starting a new account or if you do not have the best ratio yet.
+
+    !!! warning
+        Keep in mind not all trackers support this option.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
