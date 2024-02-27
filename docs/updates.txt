@@ -1,4 +1,4 @@
-# 2024-02-27 12:00
+# 2024-02-28 12:30
 - [feat(starr-anime): Add Arg0 to anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
 - [feat(starr-anime): Update Vodes Regex in anime-web-tier-01 and anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
 - [feat(starr-anime): Add Not-Vodes and Okay-Subs to anime-bd-tier-02](https://github.com/TRaSH-Guides/Guides/pull/1814)

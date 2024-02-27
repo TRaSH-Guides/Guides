@@ -628,21 +628,21 @@
       }
     },
     {
-      "name": "MinisCuba",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MinisCuba)\\b"
-      }
-    },
-    {
       "name": "MiniMTBB",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(MiniMTBB)\\b"
+      }
+    },
+    {
+      "name": "MinisCuba",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MinisCuba)\\b"
       }
     },
     {
