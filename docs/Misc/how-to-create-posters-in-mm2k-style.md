@@ -20,7 +20,7 @@ To be able to count yourself among the very stars who actually make Posters for 
 - Posters must always be saved with the default White Border. If you want to use a different border, use [userScripts](https://github.com/Drazzilb08/userScripts/wiki#installation) border-replacerr
 - Make sure the poster background you're using is positioned at X = 0 Y = 0 and that it is 1000 px wide and 1500 px in height 
 ??? Proper dimensions "Example - [Click to show/hide]"
-    ![!Proper dimensions](images/creating/Properties-showing-dimensions-of-poster.png)
+    ![!Proper dimensions](images/creating/properties-showing-dimensions-of-poster.png)
 - TV Shows should always have all season posters. However it is totally fine to use the same poster background for all seasons and only changing the relevant season number.
 - Recommended to use AI Generative Fill features if you need to remove the text from a poster you find on the Internet.
 - ALWAYS save final poster product as `.jpg` (that's `jpg` and NOT `JPG / JPEG`) with highest quality (7 on PS)
