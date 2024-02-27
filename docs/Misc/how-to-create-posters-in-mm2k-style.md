@@ -6,10 +6,10 @@ So you want to create Posters for your media library in the one and only MusikMa
 
 To be able to count yourself among the very stars who actually make Posters for this lovely community you need to follow these guidelines and rules so that we do not start introducing sub par quality posters into the repository which today contains over **50 000** posters.
 
-1) First off, you need to make sure that you're actually using Trash-Guides recommended naming scheme before going any further. This is to make sure that all your posters have the correct file name. So first off, check out [Sonarr naming scheme](https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/) and [Radarr naming scheme](https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/) and make sure you use the one associated with **Plex** and **standard**.
-2) Run userScripts Renameinatorr by installing [userScripts](https://github.com/Drazzilb08/userScripts/wiki#installation) and then running the the script on your **whole** library. This will make sure that your Radarr and Sonarr has the correct filenames which we will use when creating posters later. This may take a very long time depending on your naming scheme being done the right way or not. Whatever you do, do not create a poster before you're sure you have the correct filename or you'll have to redo it when noone can enjoy your hard work due to poster not matching their library.
-3) Download the latest ![poster.psd](images/creating/poster.psd).
-4) Install Photoshop as it's the best software for the job.
+1. First off, you need to make sure that you're actually using Trash-Guides recommended naming scheme before going any further. This is to make sure that all your posters have the correct file name. So first off, check out [Sonarr naming scheme](https://trash-guides.info/Sonarr/Sonarr-recommended-naming-scheme/) and [Radarr naming scheme](https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/) and make sure you use the one associated with **Plex** and **standard**.
+2. Run userScripts Renameinatorr by installing [userScripts](https://github.com/Drazzilb08/userScripts/wiki#installation) and then running the the script on your **whole** library. This will make sure that your Radarr and Sonarr has the correct filenames which we will use when creating posters later. This may take a very long time depending on your naming scheme being done the right way or not. Whatever you do, do not create a poster before you're sure you have the correct filename or you'll have to redo it when noone can enjoy your hard work due to poster not matching their library.
+3. Download the latest ![poster.psd](images/creating/poster.psd).
+4. Install Photoshop as it's the best software for the job.
 
 ## Guidelines and Rules
 
