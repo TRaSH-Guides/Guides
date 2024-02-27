@@ -111,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Vodes)\\b"
+        "value": "\\[Vodes\\]|(?<!Not)-Vodes\\b"
       }
     },
     {

@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+        "value": "^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub)"
       }
     },
     {
