@@ -1,3 +1,11 @@
+# 2024-02-28 12:30
+- [feat(starr-anime): Add Arg0 to anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
+- [feat(starr-anime): Update Vodes Regex in anime-web-tier-01 and anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
+- [feat(starr-anime): Add Not-Vodes and Okay-Subs to anime-bd-tier-02](https://github.com/TRaSH-Guides/Guides/pull/1814)
+- [feat(starr-anime): Add Not-Vodes to anime-web-tier-02](https://github.com/TRaSH-Guides/Guides/pull/1814)
+- [feat(starr-anime): Add MiniMTBB to Anime LQ](https://github.com/TRaSH-Guides/Guides/pull/1814)
+- [feat(starr-anime): Update dubs-only regex](https://github.com/TRaSH-Guides/Guides/pull/1814)
+
 # 2024-02-18 00:00
 - [feat(starr): Add Custom Format for streaming service VIU](https://github.com/TRaSH-Guides/Guides/pull/1795)
 - [feat(guide): SQP-1 - Add CF 10bit to unwanted to block Hi10P](https://github.com/TRaSH-Guides/Guides/pull/1798)
