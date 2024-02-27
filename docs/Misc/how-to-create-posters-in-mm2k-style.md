@@ -18,7 +18,7 @@ To be able to count yourself among the very stars who actually make Posters for 
 - Remove **ALL** text from the poster you're using as a background before adding it to your `poster layer` inside `poster.psd`
 - **ALWAYS** use ALL CAPS when adding text to the poster (unless you're 100% sure of what you're doing, cuz there are exceptions but we'd rather have ALL CAPS then a wrong use of non capitalized text)
 - Posters must always be saved with the default White Border. If you want to use a different border, use [userScripts](https://github.com/Drazzilb08/userScripts/wiki#installation) border-replacerr
-- Make sure the poster background you're using is positioned at X = 0 Y = 0 and that it is 1000 px wide and 1500 px in height 
+- Make sure the poster background you're using is positioned at X = 0 Y = 0 and that it is 1000 px wide and 1500 px in height
 - TV Shows should always have all season posters. However it is totally fine to use the same poster background for all seasons and only changing the relevant season number.
 - Recommended to use AI Generative Fill features if you need to remove the text from a poster you find on the Internet.
 - ALWAYS save final poster product as `.jpg` (that's `jpg` and NOT `JPG / JPEG`) with highest quality (7 on PS)
