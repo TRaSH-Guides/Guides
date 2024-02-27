@@ -106,6 +106,15 @@
       }
     },
     {
+      "name": "Not-Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Not-Vodes\\]|-Not-Vodes\\b"
+      }
+    },
+    {
       "name": "Okay-Subs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

@@ -34,6 +34,15 @@
       }
     },
     {
+      "name": "Arg0",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Arg0)\\b"
+      }
+    },
+    {
       "name": "Legion",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -102,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Vodes)\\b"
+        "value": "\\[Vodes\\]|(?<!Not)-Vodes\\b"
       }
     }
   ]
