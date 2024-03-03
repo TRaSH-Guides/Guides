@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": -10000
   },
-  "trash_regex": "https://regex101.com/r/hpjKw9/1",
+  "trash_regex": "https://regex101.com/r/c6Dobc/1",
   "name": "3D",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -13,7 +13,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(3d|sbs|half[ .-]ou|half[ .-]sbs)\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(3d|sbs|half[ .-]ou|half[ .-]sbs)\\b"
       }
     },
     {
