@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": -10000
   },
-  "trash_regex": "https://regex101.com/r/F6dxdp/1",
+  "trash_regex": "https://regex101.com/r/MDx42o/1",
   "name": "Upscaled",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -40,7 +40,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
       }
     }
   ]
