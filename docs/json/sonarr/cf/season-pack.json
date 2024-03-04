@@ -7,7 +7,7 @@
       "name": "Season Packs",
       "implementation": "ReleaseTypeSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 3
       }
