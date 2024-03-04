@@ -1167,12 +1167,11 @@ We've made 3 guides related to this.
 
     - Give it a score of `10` if you prefer a season pack.
     - Give it a score of `-10000` if you prefer to not download season packs.
-    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the error/warning/issue occurs as the file names would not be a season pack.
-    - Keep in mind this is the only way to prefer season packs. If you have preferred words, due to a long standing bug => Preferred Words overrule season pack preference [Sonarr/Sonarr#3562](https://github.com/Sonarr/Sonarr/issues/3562){:target="_blank" rel="noopener noreferrer"}
+    - Utilizing the "Release Type" custom format setting added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
 
-    !!! danger "WARNING"
-        - This Custom Format could result in a download loop :bangbang:
-        - This will upgrade also your already downloaded single episodes :bangbang:
+    !!! info
+        - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
+        - This will upgrade your already downloaded single episodes :bangbang:
 
 ??? example "JSON - [Click to show/hide]"
 
