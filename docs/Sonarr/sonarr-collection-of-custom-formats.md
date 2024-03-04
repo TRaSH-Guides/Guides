@@ -1167,16 +1167,46 @@ We've made 3 guides related to this.
 
     - Give it a score of `10` if you prefer a season pack.
     - Give it a score of `-10000` if you prefer to not download season packs.
-    - Utilizing the "Release Type" custom format setting added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
+    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the issue occurs as the file names would not be a season pack.
 
-    !!! info
-        - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
-        - This will upgrade your already downloaded single episodes :bangbang:
+    !!! danger "WARNING"
+        - This Custom Format could result in a download loop :bangbang:
+        - This will upgrade also your already downloaded single episodes :bangbang:
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Season Pack (New "Release Type" Handling, Sonarr v4.0.2.1262+ only)
+
+!!! danger "WARNING"
+
+    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
+    - This CF is currently "Guides Only" and does not have a `trash_id` for sync tools.
+    - This CF is currently "Guides Only" and does not yet have a `trash_id` for sync tools pending ReleaseType being released as stable / Sonarr `main`
+
+??? question "Season Pack - [Click to show/hide]"
+    This Custom Format can be used to prefer or exclude season packs
+
+    - Give it a score of `10` if you prefer a season pack.
+    - Give it a score of `-10000` if you prefer to not download season packs.
+    - Utilizing the "Release Type" custom format setting added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
+
+    !!! info
+        - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
+        - This Custom Format will replace the current Season Pack Custom Format as a drop in replacement when the functionality reaches a full release version of Sonarr.
+        - This will upgrade your already downloaded single episodes :bangbang:
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack-spec.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
