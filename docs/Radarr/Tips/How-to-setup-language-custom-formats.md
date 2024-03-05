@@ -24,7 +24,7 @@ With this Custom Format you will get only the Movie/TV Show with the original la
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -44,7 +44,7 @@ With this Custom Format you will only get the Movie/TV Show in the English langu
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -68,7 +68,7 @@ With this Custom Format you will only get the Movie/TV Show with Dutch and/or Fl
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -87,7 +87,7 @@ Let's say you want German, but if German is not available then fall back to Orig
 
 !!! info "For languages other than German, replace the German condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -95,7 +95,7 @@ Add the following json to your Radarr/Sonarr with a score of `-10000`.
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original-or-german.json' %]][[% endfilter %]]
     ```
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -113,7 +113,7 @@ Let's say you just want to prefer German and don't care if you get another rando
 
 !!! info "For languages other than German, replace the German condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -135,7 +135,7 @@ In this example I will use Dutch and Flemish since a lot of Movies/TV Shows sinc
 
 !!! info "For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
 ??? example "JSON - [Click to show/hide]"
 
