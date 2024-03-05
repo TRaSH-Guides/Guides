@@ -484,15 +484,6 @@
       }
     },
     {
-      "name": "Kaerizaki-Fansub",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Kaerizaki-Fansub)\\b"
-      }
-    },
-    {
       "name": "Kanjouteki",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
