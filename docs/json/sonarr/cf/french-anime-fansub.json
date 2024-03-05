@@ -16,12 +16,12 @@
       }
     },
     {
-      "name": "KaeriZaki",
+      "name": "Kaerizaki-Fansub",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KaeriZaki)\\b"
+        "value": "\\b(Kaerizaki[ .-]?Fansub)\\b"
       }
     },
     {
