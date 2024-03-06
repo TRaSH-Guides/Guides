@@ -142,6 +142,15 @@
       }
     },
     {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
+      }
+    },
+    {
       "name": "TBS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

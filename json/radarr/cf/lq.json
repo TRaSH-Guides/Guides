@@ -619,6 +619,15 @@
       }
     },
     {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
+      }
+    },
+    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
