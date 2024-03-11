@@ -12,7 +12,7 @@
           }
       },
       {
-          "name": "Remux",
+          "name": "Not Remux",
           "implementation": "QualityModifierSpecification",
           "negate": true,
           "required": true,
