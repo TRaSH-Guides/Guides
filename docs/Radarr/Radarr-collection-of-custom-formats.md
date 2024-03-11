@@ -100,7 +100,7 @@ We've made 3 guides related to this.
 | [Repack2](#repack2)            | [EVO (no WEBDL)](#evo-no-webdl)        | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
 | [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)       | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
 | [x265](#x265)                  | [HFR](#hfr)                            | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+| [x266](#x266)                  | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)     | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
 |                                | [No-RlsGroup](#no-rlsgroup)            | [VFB](#vfb)                   |                                                 |
 |                                | [Obfuscated](#obfuscated)              | [VOSTFR](#vostfr)             |                                                 |
@@ -1446,7 +1446,8 @@ We've made 3 guides related to this.
 ??? question "x265 - [Click to show/hide]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
-    This applies to all releases that are x265/HEVC that are not Remux.
+
+    This applies to all x265/HEVC releases that are not Remux.
 
     !!! failure ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
@@ -1455,6 +1456,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### x266
+
+??? question "x266 - [Click to show/hide]"
+
+    Versatile Video Coding (VVC), also known as H.266, ISO/IEC 23090-3, and MPEG-I Part 3, is a video compression standard finalized on 6 July 2020. [Wikipedia](https://en.wikipedia.org/wiki/Versatile_Video_Coding){:target="_blank" rel="noopener noreferrer"}.
+
+    This applies to all x266/VVC releases that are not Remux.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x266.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
