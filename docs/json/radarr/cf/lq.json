@@ -331,6 +331,15 @@
       }
     },
     {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
       "name": "jennaortega",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

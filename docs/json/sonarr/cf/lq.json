@@ -88,6 +88,15 @@
       }
     },
     {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
       "name": "JFF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
