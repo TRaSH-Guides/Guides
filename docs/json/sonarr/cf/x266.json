@@ -1,25 +1,29 @@
 {
-  "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
-  "name": "x265",
+  "trash_id": "041d90b435ebd773271cea047a457a6a",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "x266",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "x|h265",
+      "name": "x|h266",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+        "value": "[xh][ ._-]?266|\\bVVC(\\b|\\d)"
       }
     },
     {
       "name": "Not Remux",
-      "implementation": "QualityModifierSpecification",
+      "implementation": "SourceSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": 5
+        "value": 7
       }
     }
   ]
 }
+
