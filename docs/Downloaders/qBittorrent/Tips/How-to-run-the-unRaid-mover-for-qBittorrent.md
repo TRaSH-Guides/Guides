@@ -138,11 +138,11 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 ### Script
 
 !!! warning ""
-    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 77**:
+    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 94**:
 
-    - If you do not use `Mover Tuning`, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
-    - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 68**
-    - If you use `Mover Tuning` and **do** want to use it for the script, change **line 68** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`. For this option, inside the `Mover Tuner` options you will also need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
+    - If you do not use `Mover Tuning`, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
+    - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 94**
+    - If you use `Mover Tuning` and **do** want to use it for the script, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`. For this option, inside the `Mover Tuner` options you will also need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
 
 #### Copy the script to your preferred location
 
