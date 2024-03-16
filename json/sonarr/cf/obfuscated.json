@@ -111,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Scrambled\\b"
+        "value": "(?<=\\bS\\d+\\b).*(Scrambled)\\b"
       }
     },
     {
