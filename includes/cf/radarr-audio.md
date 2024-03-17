@@ -2,13 +2,13 @@
 
     **Why would I choose All HDR formats?**
 
-    - You have an hardware media player device and a audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
+    - You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
 
         {! include-markdown "../../includes/cf/audio-limitations-atv.md" !}
 
     - You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.
     - You should add **ALL** the Audio formats - don't leave any of them out!
-    - Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, you might consider choosing another quality profile.
+    - Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.
 
     {! include-markdown "../../includes/cf/audio-info.md" !}
 
