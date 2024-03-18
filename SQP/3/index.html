@@ -3552,18 +3552,56 @@
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
-<div class="admonition info">
-<p class="admonition-title">Add the audio custom formats only if</p>
+<p><strong>Why would I choose All HDR formats?</strong></p>
 <ul>
-<li>You have an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc). <em>If you have a setup that only supports a few audio formats or doesn't support certain audio formats (or using only your TV speakers), it's recommended not to add any audio custom formats; else, you will limit yourself too much in what you're able to grab. Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, you might consider choosing another quality profile</em>.</li>
-<li>You have a media player (hardware devices) that can passthrough HD audio.</li>
-<li>You don't have a AppleTV (Being it can't passthrough untouched audio).</li>
-</ul>
+<li>
+<p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
+<!-- END INCLUDE -->
+</li>
+<li>
+<p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
+</li>
+<li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
+<li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
+</ul>
+<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
+<details class="info">
+<summary>I've a AppleTV - [Click to show/hide]</summary>
+<p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
+<ul>
+<li>Passthrough: The preferred method if you have an audio setup (AVR/Soundbar). This mode will send the audio signals without any alteration or processing.</li>
+<li>Direct Play: The client supports the container, video stream, and audio stream natively. The Plex server simply sends the media file as-is to the client. This uses very little CPU power.</li>
+<li>Transcode: The client does not support the video stream and/or the audio stream. The Plex server re-encodes the video, audio, or both into a compatible format. Transcoding video uses a lot of CPU power, but transcoding audio uses little to moderate CPU power.</li>
+<li>Decodes: Decompresses the audio before sending it to your AVR/Soundbar.</li>
+</ul>
+<p><em>partial used source: <a href="https://support.firecore.com/hc/en-us/articles/217735707-Audio-Options-tvOS#h_01HE1Z5XNJZK5YTF1SVTPS0MTR" rel="noopener noreferrer" target="_blank">Infuse FAQ</a></em></p>
+</details>
+<details class="info">
+<summary>Am I losing any quality by using LPCM? - [Click to show/hide]</summary>
+<ul>
+<li>No. Since LPCM is a lossless format, using it will result in no loss of quality. What your ears hear will be exactly the same. The only difference is your receiver will recognize the audio stream as PCM instead of Dolby/DTS.</li>
+<li>LPCM will discard object and spatial metadata. (TrueHD Atmos, DTS-X)</li>
+</ul>
+<p><em>source: <a href="https://support.firecore.com/hc/en-us/articles/217735707-Audio-Options-tvOS#h_01HE1Z5XNJZK5YTF1SVTPS0MTR" rel="noopener noreferrer" target="_blank">Infuse FAQ</a></em></p>
+</details>
+<details class="info">
+<summary>Should I block certain audio formats because something in my setup doesn't support it? - [Click to show/hide]</summary>
+<p>If you have chosen a profile that includes Audio Formats, it's somewhat pointless to lower the scores or block certain audio formats since 95% of the Remuxes and UHD Encodes provide HD audio formats such as TrueHD Atmos, TrueHD, and DTS-X.</p>
+<p>So you have 2 options.</p>
+<ol>
+<li>Choose another quality profile that doesn't include audio formats such as <code>HD Bluray + WEB</code> or <code>2160p WEB-DL</code>.</li>
+<li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
+</ol>
+</details>
+<!-- END INCLUDE -->
+<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
-<summary>Which audio formats do I choose?</summary>
-<p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
+<summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
+<p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
 <!-- END INCLUDE -->
 <table>
