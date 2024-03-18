@@ -20,7 +20,7 @@
 
     If you have chosen a profile that includes Audio Formats, it's somewhat pointless to lower the scores or block certain audio formats since 95% of the Remuxes and UHD Encodes provide HD audio formats such as TrueHD Atmos, TrueHD, and DTS-X.
 
-    So you got 2 options.
+    So you have 2 options.
 
-    1. Choose another quality profile that doesn't include audio formats, like `HD Bluray + WEB` or `2160p WEB-DL`.
-    1. Accept the limitations of your audio setup (AVR/Soundbar) and/or used hardware media player device.
+    1. Choose another quality profile that doesn't include audio formats such as `HD Bluray + WEB` or `2160p WEB-DL`.
+    1. Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.
