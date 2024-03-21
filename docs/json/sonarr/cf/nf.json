@@ -13,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(nf|netflix)\\b"
+        "value": "\\b(nf|netflix(u?hd)?)\\b"
       }
     },
     {
