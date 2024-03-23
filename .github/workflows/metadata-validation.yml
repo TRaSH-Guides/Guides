@@ -1,7 +1,8 @@
-name: Validate Metadata JSON
-
+name: Validate Metadata JSO
 on:
   push:
+    branches:
+      - main
     paths:
       - metadata.json
       - metadata.schema.json
