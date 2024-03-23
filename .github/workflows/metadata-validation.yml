@@ -1,4 +1,5 @@
 name: Validate Metadata JSON
+
 on:
   push:
     branches:
