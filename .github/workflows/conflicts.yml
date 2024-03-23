@@ -1,6 +1,11 @@
 name: Label Conflicts
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 
 jobs:
   triage:
