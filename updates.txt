@@ -1,3 +1,17 @@
+# 2024-03-23 17:15
+- [feat(guide): Add AppleTV audio info and updated flowcharts](https://github.com/TRaSH-Guides/Guides/pull/1847)
+- [feat(Starr:) Add New x266 Custom Formats](https://github.com/TRaSH-Guides/Guides/pull/1841)
+- [feat(Starr): Add iVy to LQ](https://github.com/TRaSH-Guides/Guides/pull/1840)
+- [feat(starr): Add SasukeducK to LQ](https://github.com/TRaSH-Guides/Guides/pull/1832)
+- [fix(guide): update line numbers in mover.py](https://github.com/TRaSH-Guides/Guides/pull/1838)
+- [fix(radarr): 3D false positives](https://github.com/TRaSH-Guides/Guides/pull/1820)
+- [fix(radarr): Vinegar Syndrome not matching VinSyn](https://github.com/TRaSH-Guides/Guides/pull/1846)
+- [fix(Starr-Anime): remove Kaerizaki-Fansub to Anime LQ groups and update FR regex](https://github.com/TRaSH-Guides/Guides/pull/1827)
+- [fix(starr): AMZN CF should also match AmazonHD](https://github.com/TRaSH-Guides/Guides/pull/1829)
+- [fix(starr): fix Obfuscated CF mismatching](https://github.com/TRaSH-Guides/Guides/pull/1843)
+- [fix(starr): Netflix CF to match NetflixHD and NetflixUHD](https://github.com/TRaSH-Guides/Guides/pull/1845)
+- [fix(starr): Upscale false positives](https://github.com/TRaSH-Guides/Guides/pull/1818)
+
 # 2024-02-28 12:30
 - [feat(starr-anime): Add Arg0 to anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
 - [feat(starr-anime): Update Vodes Regex in anime-web-tier-01 and anime-bd-tier-01](https://github.com/TRaSH-Guides/Guides/pull/1814)
