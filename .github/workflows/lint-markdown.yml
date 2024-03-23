@@ -1,6 +1,10 @@
 name: Lint - Markdown
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   markdownlint:
