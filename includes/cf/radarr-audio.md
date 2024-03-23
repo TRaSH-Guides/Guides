@@ -1,6 +1,6 @@
 ??? abstract "Audio - [Click to show/hide]"
 
-    **Why would I choose All HDR formats?**
+    **Why should I choose All Audio formats?**
 
     - You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
 
