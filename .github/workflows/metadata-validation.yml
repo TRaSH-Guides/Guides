@@ -1,4 +1,4 @@
-name: Validate Metadata JSO
+name: Validate Metadata JSON
 on:
   push:
     branches:
