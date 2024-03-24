@@ -3,7 +3,7 @@ name: Lint - EditorConfig
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
 
 jobs:

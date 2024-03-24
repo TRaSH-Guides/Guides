@@ -3,7 +3,7 @@ name: Label Pull Requests
 on:
   push:
     branches:
-      - main
+      - master
   pull_request_target:
 
 jobs:
