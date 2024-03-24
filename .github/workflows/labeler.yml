@@ -1,6 +1,10 @@
 name: Label Pull Requests
 
-on: [pull_request_target, push]
+on:
+  push:
+    branches:
+      - main
+  pull_request_target:
 
 jobs:
   triage:
