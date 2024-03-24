@@ -27,7 +27,7 @@ I try to make my guides as easy as possible for everyone to understand. In my op
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-If you have questions, suggestions, requests, or want to contribute, click the chat badge to join the Discord Channel. There, you can ask your questions directly. Alternatively, you can use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
+If you have questions, suggestions, or requests, or want to contribute, click the chat badge to join the Discord Channel. There you can ask your questions directly, or you can use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
 Feel free to create a PR if you want to.
 
 ---
