@@ -17,15 +17,6 @@
       }
     },
     {
-      "name": "CiNEPHiLES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CiNEPHiLES)$"
-      }
-    },
-    {
       "name": "Flights",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -59,6 +50,15 @@
       "required": false,
       "fields": {
         "value": "^(playBD)$"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SiCFoI)$"
       }
     },
     {
