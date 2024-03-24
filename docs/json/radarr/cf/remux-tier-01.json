@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "CiNEPHiLES",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CiNEPHiLES)$"
+      }
+    },
+    {
       "name": "FraMeSToR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -68,15 +77,6 @@
       "required": false,
       "fields": {
         "value": "^(PmP)$"
-      }
-    },
-    {
-      "name": "SiCFoI",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SiCFoI)$"
       }
     },
     {
