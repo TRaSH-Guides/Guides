@@ -1,0 +1,46 @@
+{
+  "trash_id": "a370d974bc7b80374de1d9ba7519760b",
+  "trash_scores": {
+    "default": 1
+  },
+  "name": "ABEMA",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "ABEMA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(ABEMA[ ._-]?(TV)?)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    }
+  ]
+}

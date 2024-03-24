@@ -1,7 +1,9 @@
 {
   "trash_id": "72b1548df1ac3175ca105a9ce7043c91",
-  "trash_score": "300",
-  "trash_regex": "https://regex101.com/r/hcMa1f/2",
+  "trash_scores": {
+    "default": 300
+  },
+  "trash_regex": "https://regex101.com/r/hcMa1f",
   "name": "Multi-Audio",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,7 +22,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\b(VO)\\b)(?=.*\\b(VF(F|I)?)\\b)"
+        "value": "^(?=.*\\b(VO(ST(FR)?)?)\\b)(?=.*\\b(VF[FIQ2]?)\\b)"
       }
     }
   ]

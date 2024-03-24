@@ -36,7 +36,7 @@
         "negate": false,
         "required": true,
         "fields": {
-          "value": "\\b(HIDIVE)\\b"
+          "value": "\\b(HIDI(VE)?)\\b"
         }
       }
     ]

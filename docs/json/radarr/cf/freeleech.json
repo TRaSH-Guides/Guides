@@ -1,6 +1,8 @@
 {
   "trash_id": "0d91270a7255a1e388fa85e959f359d8",
-  "trash_score": "1",
+  "trash_scores": {
+    "default": 1
+  },
   "name": "FreeLeech",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

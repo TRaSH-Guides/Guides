@@ -1,6 +1,8 @@
 {
   "trash_id": "c1a25cd67b5d2e08287c957b1eb903ec",
-  "trash_score": "1500",
+  "trash_scores": {
+    "default": 1500
+  },
   "name": "DTS-ES",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

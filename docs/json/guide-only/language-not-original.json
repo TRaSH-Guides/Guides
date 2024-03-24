@@ -1,6 +1,8 @@
 {
   "trash_id": "guide-only",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "trash_description": "Language: Original Only",
   "name": "Language: Not Original",
   "includeCustomFormatWhenRenaming": false,

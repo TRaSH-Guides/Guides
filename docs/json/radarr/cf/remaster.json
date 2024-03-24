@@ -1,6 +1,8 @@
 {
   "trash_id": "570bc9ebecd92723d2d21500f4be314c",
-  "trash_score": "25",
+  "trash_scores": {
+    "default": 25
+  },
   "name": "Remaster",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

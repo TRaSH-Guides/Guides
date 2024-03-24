@@ -1,6 +1,8 @@
 {
   "trash_id": "29c2a13d091144f63307e4a8ce963a39",
-  "trash_score": "200",
+  "trash_scores": {
+    "default": 200
+  },
   "name": "Anime Web Tier 05 (FanSubs)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

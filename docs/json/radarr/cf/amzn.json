@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(amzn|amazon)\\b"
+        "value": "\\b(amzn|amazon(hd)?)\\b"
       }
     },
     {

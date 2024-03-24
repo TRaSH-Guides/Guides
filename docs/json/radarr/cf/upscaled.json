@@ -1,7 +1,9 @@
 {
   "trash_id": "bfd8eb01832d646a0a89c4deb46f8564",
-  "trash_score": "-10000",
-  "trash_regex": "https://regex101.com/r/zOaqyg/1",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_regex": "https://regex101.com/r/MDx42o/1",
   "name": "Upscaled",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,7 +22,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Regrade)\\b"
+        "value": "\\b(Re-?grade)\\b"
       }
     },
     {
@@ -38,7 +40,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Up(s(caled?|UHD)|(Rez)))\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
       }
     }
   ]

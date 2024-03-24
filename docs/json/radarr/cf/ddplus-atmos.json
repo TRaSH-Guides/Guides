@@ -1,6 +1,10 @@
 {
   "trash_id": "1af239278386be2919e1bcee0bde047e",
-  "trash_score": "3000",
+  "trash_scores": {
+    "default": 3000,
+    "sqp-1-1080p": 135,
+    "sqp-1-2160p": 135
+  },
   "name": "DD+ ATMOS",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

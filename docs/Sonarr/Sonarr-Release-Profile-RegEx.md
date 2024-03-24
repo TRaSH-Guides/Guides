@@ -1,3 +1,5 @@
+{! include-markdown "../../includes/sonarrv3-eol.md" !}
+
 # Release Profile RegEx (WEB-DL)
 
 Sonarr V3 has a great feature called Release Profile.
@@ -8,7 +10,7 @@ The Release profile that we're going to use for this example is mainly to prefer
 !!! danger ""
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
-??? question "FAQ - [CLICK TO EXPAND]"
+??? question "FAQ - [Click to show/hide]"
 
     ## FAQ
 
@@ -134,67 +136,43 @@ You will get a popup screen that will look like this:
 Add this to your `Preferred (3)` with a score of [100]
 
 ```bash
-/\b(amzn|amazon)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
 /\b(atvp|aptv|Apple TV\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
-
-Add this to your `Preferred (3)` with a score of [95]
-
-```bash
-/\b(sho|showtime)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
 /\b(dsnp|dsny|disney|Disney\+)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-```bash
-/\b(nf|netflix)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
+Add this to your `Preferred (3)` with a score of [90]
 
 ```bash
-/\b(qibi|quibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
+
+Add this to your `Preferred (3)` with a score of [80]
 
 ```bash
 /\b(hmax|hbom|hbo[ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
-/\b((?<!hbo[ ._-])max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(qibi|quibi)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [85]
+Add this to your `Preferred (3)` with a score of [70]
 
 ```bash
-/\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(amzn|amazon)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+Add this to your `Preferred (3)` with a score of [60]
+
+```bash
+/\b(nf|netflix)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
 /\b(pcok|Peacock TV)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-Add this to your `Preferred (3)` with a score of [75]
-
-```bash
-/\b(dcu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(red)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
-```
-
-```bash
-/\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
@@ -205,8 +183,30 @@ Add this to your `Preferred (3)` with a score of [75]
 /\b(stan)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+Add this to your `Preferred (3)` with a score of [50]
+
 ```bash
-/\b(vdl)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(cc)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(crav(e)?)\b[ ._-]web[ ._-]?(dl|rip)?\b/i
+```
+
+```bash
+/\b(dcu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(hbo)(?![ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(hulu)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(it)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
@@ -214,13 +214,45 @@ Add this to your `Preferred (3)` with a score of [75]
 ```
 
 ```bash
-/\b(cc)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(red)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(sho|showtime)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(vdl)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(ovid)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(fod)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(tver)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(u-next)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(ALL4)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(4OD)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
 
     !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -242,12 +274,6 @@ Add this to your `Preferred (3)` with a score of [75]
 
 !!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
-Add this to your `Preferred (3)` with a score of [1800] [^1]
-
-```bash
-/(-deflate|-inflate)\b/i
-```
-
 Add this to your `Preferred (3)` with a score of [1700]
 
 ```bash
@@ -266,19 +292,25 @@ Add this to your `Preferred (3)` with a score of [1600]
 /(-DRACULA|SLiGNOME|T4H|-ViSiON|SwAgLaNdEr|-NINJACENTRAL)\b/i
 ```
 
-Add this to your `Preferred (3)` with a score of [12]
+Add this to your `Preferred (3)` with a score of [1600] [^1]
+
+```bash
+/(-deflate|-inflate)\b/i
+```
+
+Add this to your `Preferred (3)` with a score of [7]
 
 ```bash
 /(repack3)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [11]
+Add this to your `Preferred (3)` with a score of [6]
 
 ```bash
 /(repack2)/i
 ```
 
-Add this to your `Preferred (3)` with a score of [10]
+Add this to your `Preferred (3)` with a score of [5]
 
 ```bash
 /\b(repack|proper)\b/i
@@ -287,7 +319,7 @@ Add this to your `Preferred (3)` with a score of [10]
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
 
     !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -312,13 +344,13 @@ Add this to your `Preferred (3)` with a score of [10]
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(-BRiNK|-CHX|-GHOSTS|-EVO|-FGT|JFF|PSA|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|TBS|-VIDEOHOLE|-worldmkv|-XLF)\b/i
+/(-BRiNK|-CHX|-CTFOH|-d3g|-EVO|-FGT|-GHOSTS|-HiQVE|-iNTENSO|JFF|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|Pahe|PSA|TBS|-TG|-VIDEOHOLE|-worldmkv|-XLF|-Zero00)\b/i
 ```
 
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
 
     !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -350,7 +382,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 !!! warning ""
     :bangbang: This one is actually a must even that it's added in the optional section :bangbang:
 
-??? question "Why the Must Not Contain entry - [CLICK TO EXPAND]"
+??? question "Why the Must Not Contain entry - [Click to show/hide]"
 
     This one blocks/ignores 720/1080p releases that are (re-)encoded in x265.
 
@@ -388,7 +420,7 @@ Add this to your `Must not contain (2)`
 /^(?=.*(1080|720))(?=.*((x|h)[ ._-]?265|hevc)).*/i
 ```
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
 
     ![!rp-release-sources](images/rp-golden-rule.png)
 
@@ -409,25 +441,25 @@ Add this to your `Preferred (3)` with a score of [500]
 Add this to your `Preferred (3)` with a score of [1500]
 
 ```bash
-/\b(dv|dovi|dolby[ .]?vision)\b/i
+/\b(dv|dovi|dolby[ .]?v(ision)?)\b/i
 ```
 
 ------
 
 #### Optional - Dislike retags
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
     Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(\[rartv\]|\[rarbg\]|\[eztv\]|\[TGx\])/i
+/(\[rartv\]|\[rarbg\]|\[eztv([ ._-]re)?\]|\[TGx\])/i
 ```
 
 #### Optional - Dislike Obfuscated
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
     Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-10000]
@@ -442,7 +474,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
 Add this to your `Preferred (3)` with a score of [-10000]
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
     Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
 ```bash
@@ -453,7 +485,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
 #### Optional - Dislike release containing: 1-
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
     Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
     Matches any release that contains '1-' as prefix for Release Groups
@@ -478,7 +510,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
 #### Optional - Prefer Season Packs
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
     Use this if you prefer Season packs
 
 !!! warning ""
@@ -497,7 +529,7 @@ Add this to your `Preferred (3)` with a score of [15]
 
 ##### .su season pack issue
 
-??? bug ".su season pack issue - [CLICK TO EXPAND]"
+??? bug ".su season pack issue - [Click to show/hide]"
 
     When you see a error in Sonarr that looks somehow like the follow screenshot
 
@@ -515,21 +547,21 @@ Add this to your `Preferred (3)` with a score of [15]
 
 #### Optional - Ignore Dolby Vision without HDR10 fallback
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
 
     This is a RegEx that ignores DV that don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
 
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?Vision)\b).*/i
+/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?V(ision)?)\b).*/i
 ```
 
 ------
 
 #### Optional - Ignore The Group -SCENE
 
-??? question "Explanation - [CLICK TO EXPAND]"
+??? question "Explanation - [Click to show/hide]"
 
     Seems plex ignores `-scene` because it thinks they are extra's. [SOURCE](https://github.com/squaresmile/Plex-Plug-Ins/blob/61eda8a775e198971dcf5088c4daf264a844736f/Scanners.bundle/Contents/Resources/Common/VideoFiles.py#L11){:target="_blank" rel="noopener noreferrer"}
 
@@ -543,20 +575,20 @@ Add this to your `Must not contain (2)`
 
 #### Optional - Ignore scene releases
 
-??? question "WHY ? - [CLICK TO EXPAND]"
+??? question "WHY ? - [Click to show/hide]"
 
     If you don't want to download so called scene releases.
 
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*(\b\d{3,4}p\b).*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS).*/i
 
 ```
 
 #### Optional - Ignore Bad Dual Audio Groups
 
-??? question "WHY ? - [CLICK TO EXPAND]"
+??? question "WHY ? - [Click to show/hide]"
 
     These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
     Also they often even rename the release name in to Portuguese.
@@ -569,7 +601,7 @@ Add this to your `Must not contain (2)`
 
 #### Optional - Ignore AV1
 
-??? question "WHY ? - [CLICK TO EXPAND]"
+??? question "WHY ? - [Click to show/hide]"
 
     - This is a new codec and you need modern devices that support it.
     - We also had reports of playback/transcoding issues.
@@ -604,7 +636,7 @@ If you notice something wrong just contact me and we will try to fix it or remov
 
 When you've done it correctly it will look something like this.
 
-??? success "example - [CLICK TO EXPAND]"
+??? success "example - [Click to show/hide]"
 
     !!! warning
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
@@ -639,4 +671,4 @@ If you want to be mentioned please message me on discord, including a link for p
 
 [^1]:
 
-    The reason why this one get's such a high score is because it's the only quality scene group that exist (till now) and scene groups don't add the [Release Sources (Streaming Service)](#release-sources-streaming-service) to their release name so they don't get the extra point of the release source regex.
+    The reason why this one gets positively scored is because it's the only quality scene group that exists (up until now). Scene groups don't add a streaming service to their release names, so the score is adjusted to take this into account.

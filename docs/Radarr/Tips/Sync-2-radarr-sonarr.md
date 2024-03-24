@@ -4,8 +4,8 @@ In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr
 
 I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.
 
-- Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything
-- Option 2: This option is best used if you only want to have a subset of your library Movies/TV Shows as 4K/2160p (UHD) as it filters by quality profile
+- Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything.
+- Option 2: This option is best used if you only want to cherry pick which Movies/TV Shows you want as 4K/2160p (UHD).
 
 !!! bug ""
     I'm not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running.  [Radarr Multiple Instance Information](https://wiki.servarr.com/radarr/installation#multiple-instances) and [Sonarr Multiple Instance Information](https://wiki.servarr.com/sonarr/installation#multiple-instances)
@@ -160,6 +160,7 @@ You now only need to make use of `Sonarr 1`. When you got a TV show (or a movie 
 ------
 
 [^1]:
+
     If you're interested in the 1080p streaming optimized quality profile you can join my [discord](https://trash-guides.info/discord) and get access to the Special Quality Profiles channel (access-to-sqp) by accepting the rules.
 
     This is a special quality profile I created for people who are really interested in it.
@@ -198,5 +199,4 @@ You now only need to make use of `Sonarr 1`. When you got a TV show (or a movie 
     - **Daily**: Episodes released daily or less frequently that use year-month-day (2017-05-25)
     - **Standard**: Episodes released with SxxEyy pattern
 
-{! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

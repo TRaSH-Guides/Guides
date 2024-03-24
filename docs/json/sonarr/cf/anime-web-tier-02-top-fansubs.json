@@ -1,6 +1,8 @@
 {
   "trash_id": "19180499de5ef2b84b6ec59aae444696",
-  "trash_score": "500",
+  "trash_scores": {
+    "default": 500
+  },
   "name": "Anime Web Tier 02 (Top FanSubs)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -110,6 +112,15 @@
       "required": false,
       "fields": {
         "value": "\\b(MTBB)\\b"
+      }
+    },
+    {
+      "name": "Not-Vodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Not-Vodes\\]|-Not-Vodes\\b"
       }
     },
     {

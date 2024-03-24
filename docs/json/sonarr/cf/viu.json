@@ -1,0 +1,37 @@
+{
+  "trash_id": "93c9d1e566dca8b34d57f5efbbf85f28",
+  "trash_scores": {
+    "default": 50
+  },
+  "name": "VIU",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "VIU",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(viu)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

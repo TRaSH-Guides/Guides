@@ -1,15 +1,26 @@
 ## Why choose this quality profile
 
-??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [Click to show/hide]"
 
     - You want 2160p with DV + HDR10 but don't care about HD audio (TrueHD, DTS-HD, DTS-X).
-    - You want maximum compatibility between all devices and still a HQ releases.
+    - You want maximum compatibility across all devices and still a HQ release.
     - You run 2 instances of Radarr and want both version or you want to use this as your main.
-    - You want to have minimum till none transcoding for low powered devices or remote streaming.
+    - You want to have little to no transcoding for low powered devices or remote streaming.
     - You're using your smart tv app as media player device.
-    - Optimized for PLEX, Emby, Jellyfin, and other streaming platforms.
-    - Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
-    - Dolby Vision with HDR10 fallback.
+    - You want to grab streaming optimized releases.
+
+    ------
+
+    BHDStudio does HQ 1080p/2160p Encodes with the following features
+
+    - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
+    - [1080p] AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
+    - [2160p] Encoded lossless audio track to Dolby Digital Plus 7.1 with Dolby Digital 5.1 fallback.
+    - [2160p] Dolby Vision with HDR10 fallback or HDR10 if there is no DV HDR10 release.
+    - Small sizes
+    - Good quality
+
+    Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
 
 ### Tested Devices and Results
 
@@ -23,5 +34,5 @@ You will need to provide the following info.
 - Your used media player device (ATV, Shield, Smart TV App, etc).
 - Tautulli screenshot when playing a `BHDStudio 2160p` with `DV HDR10`.
 - Info what your TV is reporting DV or HDR10.
-- Tautulli screenshot when playing a `Hybrid WEBDL 2160p` with `DV HDR10`.
+- Tautulli screenshot when playing a `WEBDL 2160p` with `DV HDR10`.
 - Info what your TV is reporting DV or HDR10.

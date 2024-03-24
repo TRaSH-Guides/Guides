@@ -1,6 +1,8 @@
 {
   "trash_id": "63487786a8b01b7f20dd2bc90dd4a477",
-  "trash_score": "1750",
+  "trash_scores": {
+    "default": 1750
+  },
   "name": "DD+",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

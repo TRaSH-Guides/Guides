@@ -1,6 +1,8 @@
 {
   "trash_id": "b974a6cd08c1066250f1f177d7aa1225",
-  "trash_score": "600",
+  "trash_scores": {
+    "default": 600
+  },
   "trash_regex": "https://regex101.com/r/hCAQEO/4",
   "name": "HDR10+",
   "includeCustomFormatWhenRenaming": false,
@@ -20,7 +22,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?V(ision)?)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
       }
     },
     {
@@ -56,7 +58,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
       }
     }
   ]

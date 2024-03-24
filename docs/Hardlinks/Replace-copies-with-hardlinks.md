@@ -4,14 +4,14 @@ You recently switched to a proper setup that supports Hardlinks and Instant Move
 
 And you would like to replace copies with hardlinks ?
 
-If your Operating System supports it you could make use of [Jdupes](https://github.com/jbruchon/jdupes).
+If your Operating System supports it you could make use of [Jdupes](https://codeberg.org/jbruchon/jdupes).
 
 ## Usage
 
 !!! info ""
     I won't cover every command :bangbang:
 
-    If you want to know what else [Jdupes](https://github.com/jbruchon/jdupes) can do please read the manual.
+    If you want to know what else [Jdupes](https://codeberg.org/jbruchon/jdupes) can do please read the manual.
 
 !!! tip
     This process can take a long time and a pretty big hit on your resources depending on how big your library is, I did notice the first time it takes longer then the second time. Not sure if this is a cache thing or something else.
@@ -26,13 +26,13 @@ jdupes [options] DIR1 DIR2
 This will do a dry run and summarize at the end.
 
 ```bash
-jdupes -M -r "/data/torrents/movies/" "/data/media/movies"
+jdupes -rMX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
 ```
 
 This will hard link all duplicate files without prompting.
 
 ```bash
-jdupes -L -r "/data/torrents/movies/" "/data/media/movies"
+jdupes -rLX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
 ```
 
 !!! bug ""

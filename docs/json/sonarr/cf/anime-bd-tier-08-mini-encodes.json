@@ -1,6 +1,8 @@
 {
   "trash_id": "c81bbfb47fed3d5a3ad027d077f889de",
-  "trash_score": "700",
+  "trash_scores": {
+    "default": 700
+  },
   "name": "Anime BD Tier 08 (Mini Encodes)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

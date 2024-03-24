@@ -1,6 +1,9 @@
 {
   "trash_id": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
-  "trash_score": "800",
+  "trash_scores": {
+    "default": 800
+  },
+  "trash_regex": "https://regex101.com/r/e7ugxU/1",
   "name": "IMAX Enhanced",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -10,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "^(?=.*(DSNP|Disney\\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\\b)|\\bBC(?=[ ._-]web[ ._-]?(dl|rip)\\b)|IMAX[- .]Enhanced)\\b)(?=.*\\b(IMAX|IMAX[- .]Enhanced)\\b).*"
+        "value": "^(?=.*\\b((DSNP|Disney\\+|BC|B?CORE)(?=[ ._-]web[ ._-]?(dl|rip)\\b)))(?=.*\\b((?<!NON[ ._-])IMAX)\\b)|^(?=.*\\b(IMAX[ ._-]Enhanced)\\b)"
       }
     }
   ]

@@ -1,6 +1,8 @@
 {
   "trash_id": "eca37840c13c6ef2dd0262b141a5482f",
-  "trash_score": "25",
+  "trash_scores": {
+    "default": 25
+  },
   "name": "4K Remaster",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

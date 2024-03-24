@@ -1,6 +1,8 @@
 {
   "trash_id": "b2be17d608fc88818940cd1833b0b24c",
-  "trash_score": "5",
+  "trash_scores": {
+    "default": 5
+  },
   "name": "720p",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

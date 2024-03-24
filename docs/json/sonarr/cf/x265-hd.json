@@ -1,6 +1,8 @@
 {
   "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "x265 (HD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

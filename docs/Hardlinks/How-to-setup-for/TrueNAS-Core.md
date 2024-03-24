@@ -102,7 +102,7 @@ Click `Submit` once complete.
 
 Navigate to Services and click the edit icon under `Actions` on the `NFS` row.
 
-Enabling `NFSv4` is optional, but I generally prefer it since NFSv4 has some improvements over NFSv3. Make sure to check `Allow non-root mount` under `Other Options`.
+Enabling `NFSv4` is optional. If you wish to do so you will need to ensure that your NAS and host are on the same domain (verify with `hostname -d`), otherwise you'll run into permission issues (indicated by `nobody:4294967294` when checking files). Alternatively, enable `NFSv3 ownership model for NFSv4` to avoid the domain requirements. Make sure to check `Allow non-root mount` under `Other Options`.
 
 One of the most important options here is the `Number of servers` setting. If you click on the help icon you'll see the help text for this setting, which indicates that you should keep this less than or equal to the number of CPUs reported by `sysctl -n kern.smp.cpus` to limit CPU context switching.
 

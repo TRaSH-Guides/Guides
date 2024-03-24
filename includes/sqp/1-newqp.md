@@ -2,6 +2,6 @@
 
 `Settings` => `Profiles`
 
-Create a new profile and name it what ever you want I used: `Bluray|WEB-1080p`
+Create a new profile and name it: `SQP-1 (1080p)`
 
 ![!Create a new Quality Profile](/SQP/images/1-newqp.png)

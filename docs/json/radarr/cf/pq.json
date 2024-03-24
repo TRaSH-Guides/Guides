@@ -1,6 +1,8 @@
 {
   "trash_id": "08d6d8834ad9ec87b1dc7ec8148e7a1f",
-  "trash_score": "500",
+  "trash_scores": {
+    "default": 500
+  },
   "name": "PQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -19,7 +21,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
       }
     },
     {

@@ -1,6 +1,8 @@
 {
   "trash_id": "ca864ed93c7b431150cc6748dc34875d",
-  "trash_score": "1000",
+  "trash_scores": {
+    "default": 1000
+  },
   "name": "Anime BD Tier 05 (Remuxes)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

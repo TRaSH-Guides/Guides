@@ -1,6 +1,8 @@
 {
   "trash_id": "3e8b714263b26f486972ee1e0fe7606c",
-  "trash_score": "500",
+  "trash_scores": {
+    "default": 500
+  },
   "name": "MP3",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

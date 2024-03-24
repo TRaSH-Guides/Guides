@@ -1,6 +1,8 @@
 {
   "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "Obfuscated",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -109,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Scrambled\\b"
+        "value": "(?<=\\b[12]\\d{3}\\b).*(Scrambled)\\b"
       }
     },
     {

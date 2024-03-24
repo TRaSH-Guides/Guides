@@ -1,6 +1,10 @@
 {
   "trash_id": "185f1dd7264c4562b9022d963ac37424",
-  "trash_score": "1750",
+  "trash_scores": {
+    "default": 1750,
+    "sqp-1-1080p": 125,
+    "sqp-1-2160p": 125
+  },
   "name": "DD+",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

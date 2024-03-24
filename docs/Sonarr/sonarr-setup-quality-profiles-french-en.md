@@ -36,13 +36,13 @@ There is two options:
 - Set up Sonarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"}.
 - Set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"}. It will do an amazing job for getting your subtitle on every shows.
 - Enjoy your shows with subs.
-- (Optional) Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `1000`.
+- (Optional) Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
 - Ignore any mention of **MULTi Custom Formats**.
-- Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `1000`.
+- Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ------
 
@@ -70,7 +70,7 @@ An example for Anime in MULTi/VOSTFR is also provided at the end: [Anime Example
 Those are all optional and only there to rename your release or to prefer a certain type of French Audio. Examples:
 
 - You prefer VFF (including VFI and VF2) audio, in this case you will put them at `101` instead of `0`.
-- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
+- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 !!! warning "Attention"
     It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
@@ -132,7 +132,7 @@ If you prefer 2160p WEBDL (WEB-2160p)
 
 The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without DV/HDR is a minimal profit.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-en.md" !}
 
@@ -142,7 +142,7 @@ The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
@@ -173,8 +173,6 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-en.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
-
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-en.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
@@ -186,8 +184,6 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 TRaSH provides great guides and explanations about them at the following links:
 
 - [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

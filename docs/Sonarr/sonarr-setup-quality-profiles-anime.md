@@ -5,7 +5,7 @@
 !!! warning
     You must be running Sonarr V4 to be able to use this setup.
 
-    ![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/v4/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5){ .off-glb }
+    ![V4](https://img.shields.io/badge/dynamic/json?query=%24.version&url=https://raw.githubusercontent.com/hotio/sonarr/nightly/VERSION.json&label=Current%20V4%20Version&style=for-the-badge&color=4051B5){ .off-glb }
 
 !!! note
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
@@ -26,7 +26,7 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 When adding a new series make sure you set the series type to Anime
 
-??? success "example - [Click to Expand]"
+??? success "example - [Click to show/hide]"
     ![!cfa-seriestype](images/cfa-seriestype.png)
 
 ### Recommended naming scheme
@@ -35,7 +35,7 @@ When adding a new series make sure you set the series type to Anime
 {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
 
-??? abstract "Results: - [Click to Expand]"
+??? abstract "Results: - [Click to show/hide]"
 
     Single Episode:
 

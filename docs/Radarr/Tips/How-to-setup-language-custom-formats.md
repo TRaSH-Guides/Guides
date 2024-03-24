@@ -2,7 +2,7 @@
 
 Here we will explain how to setup your own preferred language Custom Format, with a few examples.
 
-!!! warning "Using language Custom Formats is not compatible with setting a preferred language in a quality profile in Radarr. You must use one or the other.<br>If you want to make use of the Custom Formats set the preferred language to `Any`."
+!!! warning "Using language Custom Formats is not compatible with setting a preferred language in a quality profile in Radarr. You must use one or the other.<br>If you want to make use of the Custom Formats set the preferred language to `Any`.<br><br>Sonarr doesn't have a preferred language in the quality profile, so this can be ignored if you're setting this up with Sonarr"
 
 ## Language Examples
 
@@ -24,9 +24,9 @@ With this Custom Format you will get only the Movie/TV Show with the original la
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original.json' %]][[% endfilter %]]
@@ -44,9 +44,9 @@ With this Custom Format you will only get the Movie/TV Show in the English langu
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-english.json' %]][[% endfilter %]]
@@ -68,9 +68,9 @@ With this Custom Format you will only get the Movie/TV Show with Dutch and/or Fl
 
 For this we're going to make use of so called reverse scoring.
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-dutch.json' %]][[% endfilter %]]
@@ -87,17 +87,17 @@ Let's say you want German, but if German is not available then fall back to Orig
 
 !!! info "For languages other than German, replace the German condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `-10000`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `-10000`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original-or-german.json' %]][[% endfilter %]]
     ```
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
@@ -113,9 +113,9 @@ Let's say you just want to prefer German and don't care if you get another rando
 
 !!! info "For languages other than German, replace the German condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
@@ -135,9 +135,9 @@ In this example I will use Dutch and Flemish since a lot of Movies/TV Shows sinc
 
 !!! info "For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice."
 
-Add the following json to your Radarr/Sonarr with a score of `10`.
+Add the following json to your Radarr/Sonarr with a score in your profile of `10`.
 
-??? example "JSON - [CLICK TO EXPAND]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-dutch.json' %]][[% endfilter %]]
@@ -149,7 +149,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### What's reverse scoring
 
-??? question "What's reverse scoring? - [CLICK TO EXPAND]"
+??? question "What's reverse scoring? - [Click to show/hide]"
 
     With reverse scoring you add a Custom Format with a score of `-10000` and your preferred condition you negate.
 
@@ -157,7 +157,7 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### Prefer language X over language Y
 
-??? question "Prefer language X over language Y - [CLICK TO EXPAND]"
+??? question "Prefer language X over language Y - [Click to show/hide]"
 
     If you want to prefer Prefer language X over language Y,
 
@@ -167,21 +167,21 @@ Add the following json to your Radarr/Sonarr with a score of `10`.
 
 ### What's Original Language
 
-??? question "What's Original Language? - [CLICK TO EXPAND]"
+??? question "What's Original Language? - [Click to show/hide]"
 
     Original Language is the language in which a Movie/TV Show was originally made.
 
 ### Where does Radarr get the Original Language from
 
-??? question "Where does Radarr get the Original Language from? - [CLICK TO EXPAND]"
+??? question "Where does Radarr get the Original Language from? - [Click to show/hide]"
 
-    Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}.
+    Radarr makes use of [The Movie Database (TMDB)](https://www.themoviedb.org/){:target="_blank" rel="noopener noreferrer"}. As of February 12, 2023, Radarr has updated its metadata cache to use a movie's spoken language from TMDb as the original language, but only when there is a single spoken language listed for that movie on TMDb. In cases where multiple spoken languages are listed, Radarr will use the movie's designated original language from TMDb.
 
     ![!The Movie Database (TMDB) Original Language](images/original-language-tmdb.png)
 
 ### Where does Sonarr get the Original Language from
 
-??? question "Where does Sonarr get the Original Language from? - [CLICK TO EXPAND]"
+??? question "Where does Sonarr get the Original Language from? - [Click to show/hide]"
 
     Sonarr makes use of [TheTVDB](https://thetvdb.com/){:target="_blank" rel="noopener noreferrer"}.
 

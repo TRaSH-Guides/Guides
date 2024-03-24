@@ -1,6 +1,8 @@
 {
   "trash_id": "9d27d9d2181838f76dee150882bdc58c",
-  "trash_score": "25",
+  "trash_scores": {
+    "default": 25
+  },
   "name": "Masters of Cinema",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

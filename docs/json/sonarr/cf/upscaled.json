@@ -1,0 +1,47 @@
+{
+  "trash_id": "23297a736ca77c0fc8e70f8edd7ee56c",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_regex": "https://regex101.com/r/xpT0Md/1",
+  "name": "Upscaled",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AI Upscales",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)"
+      }
+    },
+    {
+      "name": "Regrade",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Re-?grade)\\b"
+      }
+    },
+    {
+      "name": "TheUpscaler",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(The[ ._-]Upscaler)\\b"
+      }
+    },
+    {
+      "name": "Upscaled",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<=\\b\\d{3,4}p\\b).*\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
+      }
+    }
+  ]
+}

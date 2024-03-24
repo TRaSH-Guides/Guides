@@ -34,13 +34,13 @@ Deux options s'offre à vous :
 - Configurez Radarr en utilisant : [How to setup Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"}. (*en anglais*).
 - Configurez [Bazarr](../Bazarr/Setup-Guide.md) (*en anglais*). Il permet d'obtenir des sous-titres pour tous les films.
 - Profitez de vos films avec les sous-titres.
-- (Facultatif) Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} avec un score de `1000`.
+- (Facultatif) Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} avec un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### En utilisant les exemples suivants et le Format Personnalisé VOSTFR
 
 - Continuez sur cette page.
 - Ignorez toute mention des **Formats Personnalisés MULTi**.
-- Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} avec un score de `1000`.
+- Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} avec un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ------
 
@@ -67,7 +67,7 @@ Un exemple pour les Animes en MULTi/VOSTFR est également fourni à la fin : [Ex
 Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :
 
 - Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à `101` au lieu de `0`.
-- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `1000` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
+- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
 
 !!! warning "Attention"
     Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
@@ -116,7 +116,7 @@ Utilisez les paramètres principaux suivants dans votre profil.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -131,7 +131,7 @@ Si vous préférez les 2160p WEBDL (WEB-2160p)
 
 Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR, le 2160p sans DV/HDR ne représente qu'un bénéfice minime.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
 
@@ -141,7 +141,7 @@ Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
@@ -154,7 +154,7 @@ Utilisez les paramètres principaux suivants dans votre profil.
     La raison pour laquelle le WEB 1080p est fusionné avec le 2160p est que certaines sorties NF ne seront pas publiées en 4k, mais possède tout de même du DV/HDR.
     Si vous voulez faire la même chose, veillez à remplacer [x265 (HD)](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} par [x265 (no HDR/DV)](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv){:target="_blank" rel="noopener noreferrer"}.
 
-??? abstract "Logique et fonctionnement - [CLIQUEZ POUR AFFICHER]"
+??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
 
     **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
 
@@ -174,8 +174,6 @@ Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio or
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-streaming-services-anime.md" !}
-
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-fr.md" !}
@@ -187,8 +185,6 @@ Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio or
 TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
 - [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

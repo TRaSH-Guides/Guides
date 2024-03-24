@@ -1,6 +1,8 @@
 {
   "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
-  "trash_score": "600",
+  "trash_scores": {
+    "default": 600
+  },
   "name": "Anime Web Tier 01 (Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,6 +22,15 @@
       "required": false,
       "fields": {
         "value": 8
+      }
+    },
+    {
+      "name": "Arg0",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Arg0)\\b"
       }
     },
     {
@@ -100,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Vodes)\\b"
+        "value": "\\[Vodes\\]|(?<!Not)-Vodes\\b"
       }
     },
     {

@@ -1,22 +1,30 @@
+---
+search:
+  exclude: true
+---
+
 # Special Quality Profiles
+
+<meta name="robots" content="noindex, noarchive, nofollow" />
 
 The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
 
 !!! warning
 
-    - Anything here is for private use only and not for public use. :bangbang:
-    - I expect from the users that got the link to this page to honour it. :bangbang:
-    - Yes, you can talk in the public channels that you use a specific SQP.
-    - If others are interested they can join.
+    - Anything here is for private use only. It is prohibited to share anything related to SQP, such as setup information or links to the guide, in any public locations.:bangbang:
+    - I expect users who received the link to this page to honor this rule.:bangbang:
+    - Any questions about SQP should be asked in the related discord, not in the main channel or any other public places.:bangbang:
+    - Yes, you can mention in the public channels that you are using a specific SQP.
+    - If others are interested, they can join by accepting the rules in the `access-to-sqp` channel.
 
 ## The Following SQP are available
 
-- [Streaming Optimized (SQP-1)](/SQP/1){:target="_blank" rel="noopener noreferrer"}
-- [Streaming Optimized (SQP-1 2160p)](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
-- [UHD Remux|Bluray|IMAX-E (SQP-2)](/SQP/2){:target="_blank" rel="noopener noreferrer"}
-- [UHD Remux|IMAX-E (SQP-3)](/SQP/3){:target="_blank" rel="noopener noreferrer"}
-- [UHD WEBDL|IMAX-E (SQP-4)](/SQP/4){:target="_blank" rel="noopener noreferrer"}
-- [UHD Bluray|IMAX-E (SQP-5)](/SQP/5){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (1080p) - *Streaming Optimized*](/SQP/1){:target="_blank" rel="noopener noreferrer"}
+- [SQP-1 (2160p) - *Streaming Optimized*](/SQP/1-4k){:target="_blank" rel="noopener noreferrer"}
+- [SQP-2 (2160p) - *UHD Remux|Bluray|IMAX-E*](/SQP/2){:target="_blank" rel="noopener noreferrer"}
+- [SQP-3 (2160p) - *UHD Remux|IMAX-E*](/SQP/3){:target="_blank" rel="noopener noreferrer"}
+- [SQP-4 (2160p) - *UHD WEBDL|IMAX-E*](/SQP/4){:target="_blank" rel="noopener noreferrer"}
+- [SQP-5 (2160p) - *UHD Bluray|IMAX-E*](/SQP/5){:target="_blank" rel="noopener noreferrer"}
 
 ### FAQ & INFO
 
@@ -25,13 +33,18 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
     **CF** = Custom Formats
 
-??? question "Why don't you add this to the public guide? - [CLICK TO EXPAND]"
+??? question "Can I use these SQP with Sonarr? - [Click to show/hide]"
+    **NO**, SQP are only for Radarr :bangbang:<br>
+    At the moment their are no specific release groups to create a SQP for Sonarr.<br>
+    If you're looking for a SQP-1 (xxxxp) then look at the public Sonarr Guide.
+
+??? question "Why don't you add this to the public guide? - [Click to show/hide]"
     These SQPs are advanced Quality Profiles tested and created for a specific need, and only interesting for people that are interested in a specific Quality Profile.
 
-??? question "I see CFs that aren't in the main guide - [CLICK TO EXPAND]"
+??? question "I see CFs that aren't in the main guide - [Click to show/hide]"
     Some SQPs have/need specific CFs to work.
 
-??? question "Some CFs in your instructions have a score of 0. Should I follow the scores from the main guide? - [CLICK TO EXPAND]"
+??? question "Some CFs in your instructions have a score of 0. Should I follow the scores from the main guide? - [Click to show/hide]"
     No, you should always follow the scores of the SQP.
 
 !!! TIP

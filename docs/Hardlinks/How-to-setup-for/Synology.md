@@ -16,10 +16,10 @@ This page will provide you with guidance on how to install several Docker images
 
 ### Automated Script
 
-??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [CLICK TO EXPAND]"
+??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]"
 
     !!! Warning
-        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script will reset all personal changes made in the compose/env.
+        Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
 
         The script is only tested on Synology DSM7 and higher.
 
@@ -166,7 +166,7 @@ If you use both then run both commands
 #### If you use usenet
 
 ```bash
-mkdir -p /volume1/data/{usenet/complete/{tv,movies,music},media/{tv,movies,music}}
+mkdir -p /volume1/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
 ```
 
 #### If you use torrents
@@ -227,7 +227,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 ### Whats included and Whats not included
 
-??? question "What's included and What's not included - [CLICK TO EXPAND]"
+??? question "What's included and What's not included - [Click to show/hide]"
 
     This docker-compose file will have the following docker containers included.
 
@@ -303,7 +303,7 @@ At `Task Settings` tab, add the following line in the Run Command section:
 
 It can be frustrating to test the script if no docker image updates are available, for that you can run command `sudo pullio --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
-More info about Pullio [HERE](https://hotio.dev/pullio/){:target="_blank" rel="noopener noreferrer"}
+More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -362,3 +362,19 @@ You will notice that all the images will be downloaded, after that the container
 
 {! include-markdown "../../../includes/support.md" !}
 <!-- --8<-- "includes/support.md" -->
+
+------
+
+## Additional Synology Info
+
+### DSM Task for correctly reporting IP in Plex/Nginx/Etc
+
+Due to some iptables configuration in DSM, you can get an incorrect IP reported in Plex or other apps that need an read/report the IP. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.
+
+To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.
+
+??? question "Task bash command - [Click to show/hide]"
+
+    ```bash
+    --8<-- "includes/hardlinks/docker-iptables-fix.sh"
+    ```

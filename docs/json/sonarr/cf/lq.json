@@ -1,6 +1,8 @@
 {
   "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,6 +22,24 @@
       "required": false,
       "fields": {
         "value": "^(CHX)$"
+      }
+    },
+    {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
+      }
+    },
+    {
+      "name": "d3g",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(d3g)$"
       }
     },
     {
@@ -56,6 +76,24 @@
       "required": false,
       "fields": {
         "value": "^(HiQVE)$"
+      }
+    },
+    {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
+      }
+    },
+    {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
       }
     },
     {
@@ -100,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Pahe\\.(ph|in)\\b"
+        "value": "Pahe(\\.(ph|in))?\\b"
       }
     },
     {
@@ -110,6 +148,15 @@
       "required": false,
       "fields": {
         "value": "^(PSA)$"
+      }
+    },
+    {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
       }
     },
     {
@@ -155,6 +202,15 @@
       "required": false,
       "fields": {
         "value": "^(XLF)$"
+      }
+    },
+    {
+      "name": "Zero00",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Zero00)$"
       }
     }
   ]

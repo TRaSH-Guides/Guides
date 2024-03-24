@@ -1,6 +1,10 @@
 {
   "trash_id": "2f22d89048b01681dde8afe203bf2e95",
-  "trash_score": "4500",
+  "trash_scores": {
+    "default": 4500,
+    "sqp-1-1080p": -10000,
+    "sqp-1-2160p": -10000
+  },
   "name": "DTS X",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

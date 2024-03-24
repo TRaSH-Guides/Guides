@@ -1,0 +1,64 @@
+{
+  "trash_id": "e204b80c87be9497a8a6eaff48f72905",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "LQ (Release Title)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1XBET",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(1XBET)\\b"
+      }
+    },
+    {
+      "name": "BEN THE MEN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
+      }
+    },
+    {
+      "name": "BiTOR (2160p)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))"
+      }
+    },
+    {
+      "name": "jennaortega",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!-)\\b(jennaortega(UHD)?)\\b"
+      }
+    },
+    {
+      "name": "TeeWee",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TeeWee)\\b"
+      }
+    },
+    {
+      "name": "Will1869",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Will1869)\\b"
+      }
+    }
+  ]
+}

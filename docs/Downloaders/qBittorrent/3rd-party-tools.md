@@ -21,6 +21,36 @@ This is a program used to manage your qBittorrent instance such as:
 
 ------
 
+## qBitrr
+
+This is a program used to manage your qBittorrent instance and Arr instances
+
+Features
+
+- Monitor qBit for Stalled/bad entries and delete them then blacklist them on Arrs (Option to also trigger a re-search action).
+- Monitor qBit for completed entries and tell the appropriate Arr instance to import it:
+   - `qbitrr DownloadedMoviesScan` for Radarr
+   - `qbitrr DownloadedEpisodesScan` for Sonarr
+- Skip files in qBit entries by extension, folder or regex.
+- Monitor completed folder and clean it up.
+- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg){:target="_blank" rel="noopener noreferrer"} to ensure downloaded entries are valid media.
+- Trigger periodic Rss Syncs on the appropriate Arr instances.
+- Trigger Queue update on appropriate Arr instances.
+- Search requests from [Overseerr](https://github.com/sct/overseerr){:target="_blank" rel="noopener noreferrer"} or [Ombi](https://github.com/Ombi-app/Ombi){:target="_blank" rel="noopener noreferrer"}.
+- Auto add/remove trackers
+- Set per tracker values
+- **Sonarr v4 support**
+- **Radarr v4 and v5 support**
+- Monitor Arr's databases to trigger missing episode searches.
+- Searches Radarr missing movies based on Minimum Availability
+- Customizable searching by series or singular episodes
+- Optionally searches year by year is ascending or descending order (config option available)
+- Search for CF Score unmet and cancel torrents base on CF Score or Quality unmet search
+
+[qBitrr](https://github.com/Feramance/qBitrr){:target="_blank" rel="noopener noreferrer"}
+
+------
+
 ## qbittorrent-cli
 
 A cli to manage qBittorrent. Add torrents, reannounce and import from other clients.

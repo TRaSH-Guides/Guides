@@ -1,6 +1,8 @@
 {
   "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
-  "trash_score": "500",
+  "trash_scores": {
+    "default": 500
+  },
   "name": "HDR (undefined)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -28,7 +30,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
       }
     },
     {

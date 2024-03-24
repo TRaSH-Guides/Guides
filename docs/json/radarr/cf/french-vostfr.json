@@ -1,5 +1,9 @@
 {
   "trash_id": "9172b2f683f6223e3a1846427b417a3d",
+  "trash_scores": {
+    "anime-radarr": -10000,
+    "french-vostfr": 1000
+  },
   "trash_regex": "https://regex101.com/r/sWCfAN/1",
   "name": "VOSTFR",
   "includeCustomFormatWhenRenaming": true,

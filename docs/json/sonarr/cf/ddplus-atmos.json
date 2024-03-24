@@ -1,6 +1,8 @@
 {
   "trash_id": "4232a509ce60c4e208d13825b7c06264",
-  "trash_score": "3000",
+  "trash_scores": {
+    "default": 3000
+  },
   "name": "DD+ ATMOS",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

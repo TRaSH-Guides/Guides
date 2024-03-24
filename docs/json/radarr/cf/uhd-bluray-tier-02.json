@@ -1,27 +1,14 @@
 {
   "trash_id": "a58f517a70193f8e578056642178419d",
-  "trash_score": "2200",
+  "trash_scores": {
+    "default": 1750,
+    "sqp-1-2160p": 1050,
+    "sqp-2": 2200,
+    "sqp-5": 2200
+  },
   "name": "UHD Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-    {
-      "name": "HQMUX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HQMUX)$"
-      }
-    },
-    {
-      "name": "2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
     {
       "name": "Not REMUX",
       "implementation": "QualityModifierSpecification",
@@ -29,15 +16,6 @@
       "required": true,
       "fields": {
         "value": 5
-      }
-    },
-    {
-      "name": "Not SDR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bSDR\\b"
       }
     },
     {
@@ -56,6 +34,33 @@
       "required": true,
       "fields": {
         "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "HQMUX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HQMUX)$"
+      }
+    },
+    {
+      "name": "MainFrame",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MainFrame)$"
       }
     }
   ]

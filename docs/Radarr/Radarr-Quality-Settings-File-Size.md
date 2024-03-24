@@ -10,7 +10,7 @@ But before you continue to read, as with all my guides:
 
 These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.
 
-??? question "FAQ - [CLICK TO EXPAND]"
+??? question "FAQ - [Click to show/hide]"
 
     ## FAQ
 

@@ -1,10 +1,8 @@
 ## Why choose this quality profile
 
-??? question "Why choose this quality profile? - [CLICK TO EXPAND]"
+??? question "Why choose this quality profile? - [Click to show/hide]"
 
-    - You got a decent audio setup. (that supports all HD audio formats)
-    - You got a setup that completely supports DoVi from start to end.
-    - You do want the highest quality as possible to watch but want to save space for archiving without losing video and audio quality.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
-    - You don't want to wait for the HQ Encodes to be released, to watch it.
+    - You have a decent audio setup that supports all HD audio formats (Atmos, TrueHD, etc).
+    - You have a TV that supports enhanced HDR formats, (DV and/or HDR10+).
+    - You want the highest possible quality to watch but want to also save space for archiving without giving up video and audio quality.
+    - You don't want to wait longer for the HQ Encodes to be released.

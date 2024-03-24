@@ -1,6 +1,8 @@
 {
   "trash_id": "9dce189b960fddf47891b7484ee886ca",
-  "trash_score": "900",
+  "trash_scores": {
+    "default": 900
+  },
   "name": "Anime BD Tier 06 (FanSubs)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

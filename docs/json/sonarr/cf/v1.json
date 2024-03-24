@@ -1,6 +1,8 @@
 {
   "trash_id": "273bd326df95955e1b6c26527d1df89b",
-  "trash_score": "1",
+  "trash_scores": {
+    "default": 1
+  },
   "name": "v1",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

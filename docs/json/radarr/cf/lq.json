@@ -1,9 +1,29 @@
 {
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "24xHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(24xHD)\\b"
+      }
+    },
+    {
+      "name": "41RGB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(41RGB)$"
+      }
+    },
     {
       "name": "4K4U",
       "implementation": "ReleaseGroupSpecification",
@@ -65,15 +85,6 @@
       "required": false,
       "fields": {
         "value": "^(beAst)$"
-      }
-    },
-    {
-      "name": "BiTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BiTOR)$"
       }
     },
     {
@@ -140,6 +151,15 @@
       }
     },
     {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
+      }
+    },
+    {
       "name": "d3g",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -155,6 +175,15 @@
       "required": false,
       "fields": {
         "value": "^(DDR)$"
+      }
+    },
+    {
+      "name": "DepraveD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DepraveD)$"
       }
     },
     {
@@ -284,12 +313,39 @@
       }
     },
     {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
+      }
+    },
+    {
       "name": "iPlanet",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(iPlanet)$"
+      }
+    },
+    {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
+      "name": "jennaortega",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(jennaortega(UHD)?)$"
       }
     },
     {
@@ -362,6 +418,15 @@
       "required": false,
       "fields": {
         "value": "^(LiGaS)$"
+      }
+    },
+    {
+      "name": "MarkII",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MarkII)$"
       }
     },
     {
@@ -469,7 +534,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Pahe\\.(ph|in)\\b"
+        "value": "Pahe(\\.(ph|in))?\\b"
       }
     },
     {
@@ -563,21 +628,21 @@
       }
     },
     {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
+      }
+    },
+    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(Scene)$"
-      }
-    },
-    {
-      "name": "SLOT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SLOT)$"
       }
     },
     {
@@ -596,6 +661,15 @@
       "required": false,
       "fields": {
         "value": "^(SWTYBLZ)$"
+      }
+    },
+    {
+      "name": "tarunk9c",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tarunk9c)$"
       }
     },
     {
@@ -632,6 +706,15 @@
       "required": false,
       "fields": {
         "value": "^(TIKO)$"
+      }
+    },
+    {
+      "name": "VISIONPLUSHDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VISIONPLUSHDR(-X|1000)?)$"
       }
     },
     {

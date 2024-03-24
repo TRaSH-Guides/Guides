@@ -1,6 +1,8 @@
 {
   "trash_id": "290078c8b266272a5cc8e251b5e2eb0b",
-  "trash_score": "50",
+  "trash_scores": {
+    "default": 50
+  },
   "name": "1080p",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

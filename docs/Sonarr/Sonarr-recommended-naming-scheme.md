@@ -13,19 +13,27 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ------
 
+## Preparation
+
+Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
+
+![Enable Advanced](images/sonarr-show-adavanced.png)
+
+Once you clicked on the button it should look like this and you should see all the advanced options.
+
+![Unhide Advanced](images/unhide-advanced.png)
+
+Finally, enable `Rename Episodes` to reveal the episode renaming options.
+
+![Enable Rename Episodes](images/sonarr-enable-rename.png)
+
 ## Standard Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
-    ```
-
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     Single Episode:
 
@@ -40,16 +48,10 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Daily Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
-    ```
-
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
 
@@ -58,16 +60,10 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Anime Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
 
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
-    ```
-
-??? abstract "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [Click to show/hide]"
 
     Single Episode:
 
@@ -85,33 +81,35 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 {{ sonarr['naming']['sonarr-naming']['series']['default'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010)`
 
-`The Series Title! (2010)`
-
-#### Optional Series Folder Format for the Plex TV Series Scanner and Jellyfin/Emby
+#### Optional Series Folder Format
 
 This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
-For Plex:
+##### Optional Plex
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010) {imdb-tt1520211}`
 
-`The Series Title! (2010) {imdb-tt1520211}`
-
-For Jellyfin/Emby:
+##### Optional Emby
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
 ```
 
-RESULT:
+<small>RESULT:</small> `The Series Title! (2010)`
 
-`The Series Title! (2010) [tvdbid-tt1520211]`
+##### Optional Jellyfin
+
+```bash
+{{ sonarr['naming']['sonarr-naming']['series']['jellyfin'] }}
+```
+
+<small>RESULT:</small> `The Series Title! (2010) [tvdbid-tt1520211]`
 
 !!! tip
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
@@ -126,9 +124,7 @@ For this there's only one real option to use in my opinion.
 Season {season:00}
 ```
 
-RESULT:
-
-`Season 01`
+RESULT: `Season 01`
 
 ------
 

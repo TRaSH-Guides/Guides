@@ -1,6 +1,6 @@
 ### Radarr current logic
 
-??? abstract "Radarr current logic - [CLICK TO EXPAND]"
+??? abstract "Radarr current logic - [Click to show/hide]"
 
     As of 2021-11-06 the logic is as follows:
 

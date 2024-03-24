@@ -1,6 +1,8 @@
 {
   "trash_id": "8cd3ac70db7ac318cf9a0e01333940a4",
-  "trash_score": "51",
+  "trash_scores": {
+    "default": 51
+  },
   "name": "SiC",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -46,7 +48,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
       }
     }
   ]

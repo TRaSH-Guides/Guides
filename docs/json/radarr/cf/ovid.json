@@ -1,0 +1,35 @@
+{
+  "trash_id": "fbca986396c5e695ef7b2def3c755d01",
+  "trash_regex": "https://regex101.com/r/hWHpjV/1",
+  "name": "OViD",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "OViD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(ovid)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

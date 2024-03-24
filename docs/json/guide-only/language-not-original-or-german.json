@@ -1,6 +1,8 @@
 {
   "trash_id": "guide-only",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "trash_description": "Language: Prefer X but i'll take Y",
   "name": "Language: Not Original or German",
   "includeCustomFormatWhenRenaming": false,

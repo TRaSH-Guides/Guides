@@ -1,0 +1,37 @@
+{
+  "trash_id": "e2315f990da2e2cbfc9fa5b7a6fcfe48",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "LQ (Release Title)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TeeWee",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TeeWee)\\b"
+      }
+    },
+    {
+      "name": "BiTOR (2160p)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))"
+      }
+    },
+    {
+      "name": "BEN THE MEN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
+      }
+    }
+  ]
+}

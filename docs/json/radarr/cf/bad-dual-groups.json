@@ -1,6 +1,9 @@
 {
   "trash_id": "b6832f586342ef70d9c128d40c07b872",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000,
+    "french-multi": 0
+  },
   "name": "Bad Dual Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,6 +23,15 @@
       "required": false,
       "fields": {
         "value": "^(BAT)$"
+      }
+    },
+    {
+      "name": "BlackBit",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BlackBit)$"
       }
     },
     {
@@ -92,6 +104,15 @@
       "required": false,
       "fields": {
         "value": "^(GUEIRA)$"
+      }
+    },
+    {
+      "name": "LCD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LCD)$"
       }
     },
     {
@@ -176,6 +197,15 @@
       }
     },
     {
+      "name": "vnlls",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(vnlls)$"
+      }
+    },
+    {
       "name": "WTV",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -209,6 +239,15 @@
       "required": false,
       "fields": {
         "value": "^(ZigZag)$"
+      }
+    },
+    {
+      "name": "ZNM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZNM)$"
       }
     }
   ]

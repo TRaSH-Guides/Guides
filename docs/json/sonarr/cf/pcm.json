@@ -1,6 +1,8 @@
 {
   "trash_id": "30f70576671ca933adbdcfc736a69718",
-  "trash_score": "2250",
+  "trash_scores": {
+    "default": 2250
+  },
   "name": "PCM",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

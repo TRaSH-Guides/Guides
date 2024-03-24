@@ -3,11 +3,13 @@
 !!! note
     These settings are a recommendation if you want to choose other settings be my guest.
 
-    If you want to support me, please use the following [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"} and use one of the following codes:
+    If you want to support me, please use this [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"} and enter the following discount code:
 
-    * `TGLIFE`: Get 50% Off for Life for Anonymous Proxy, Anonymous VPN, Anonymous Webmail.
-    * `TGLIFE-STREAMING`: Get 50% Off for Life Anonymous Proxy, Anonymous VPN, Streaming Bundle.
-    * `TGLIFE-PRO`: Get 50% Off for Life for Anonymous VPN, Streaming Bundle, Anonymous VPN Pro.
+    Get 50% Off ALL Plans (Anonymous VPN, Anonymous VPN Pro, Anonymous VPN Premium)
+
+    ```
+    TRaSH-Guides-2024
+    ```
 
     [![torguard-FreeTrial-270x90](images/torguard/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
 
@@ -15,6 +17,8 @@
         As of 13 March Torguard Settles Piracy Lawsuit and has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:
 
         I Talked to several people and they are still able to use Torguard for Torrents, Perhaps because the connection is encrypted. And others just selected a server in another country.
+
+        !!! warning "If the US server doesn't work for you use another country"
 
         [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/){:target="_blank" rel="noopener noreferrer"}.
 
@@ -26,7 +30,7 @@
 
 Login to your [Client Area](https://torguard.net/clientarea.php){:target="_blank" rel="noopener noreferrer"}.
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!Client Area Login](images/torguard/client-area-login.png)
 
 ### Create a user account
@@ -36,14 +40,14 @@ This account will be used for authentication with your VPN Torrent client.
 
 `Services` > `My Services` > `Manage` > `Manage Credentials`
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!Services > My Services](images/torguard/services-my-services.png)
 
     ![!Client Area Manage Credentials](images/torguard/client-area-manage-credentials.png)
 
 Create a new username and choose a secure password or create a random username and password.
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!Create User Account](images/torguard/create_user_account.png)
 
 ------
@@ -54,7 +58,7 @@ Now it's time to get the IP of your VPN server you're going to use from the [Glo
 
 `Servers` > `Global VPN Network`
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!Servers > Global VPN Network](images/torguard/servers-globalvpnnetwork.png)
 
 ### Global VPN Network
@@ -66,7 +70,9 @@ For the best speed it's recommended to choose the one nearest to your location.
 !!! tip ""
     Sometimes you get better speeds if you use one of your neighboring countries.
 
-Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secureconnect.me`.
+!!! warning "If the US server doesn't work for you use another country"
+
+Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.torguard.org`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
@@ -78,13 +84,13 @@ Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.secur
 Open a cmd window or something equal and type:
 
 ```bash
-    ping us-fl.secureconnect.me
+    ping us-fl.torguard.org
 ```
 
 You will then get the IP of the server.
 Remember that for later use.
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!ping](images/torguard/cmd-ping.png)
 
 ------
@@ -102,7 +108,7 @@ Then click on `Manage` and select `Port Forward Request`.
 
 `Services` > `My Services` > `Manage` > `Port Forward Request`
 
-??? success "Example - [CLICK TO EXPAND]"
+??? success "Example - [Click to show/hide]"
     ![!Port Forward Request](images/torguard/req_port_fwd.png)
 
 ### VPN Tunnel Type
@@ -135,7 +141,7 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Request Port Forward
 
-??? abstract "WireGuard Request Port Forward - [CLICK TO EXPAND]"
+??? abstract "WireGuard Request Port Forward - [Click to show/hide]"
 
     ![!Request New Port Forward WireGuard](images/torguard/request-new-pfw-wireguard.png)
 
@@ -171,7 +177,7 @@ From your Client Area go to your [Config Generator](https://torguard.net/tgconf.
 
 `Tools` > `Config Generator`
 
-??? success "Example Select Tools > Config Generator - [CLICK TO EXPAND]"
+??? success "Example Select Tools > Config Generator - [Click to show/hide]"
     ![!Tools - Config Generator](images/torguard/tools-config-generator.png)
 
 ### Config Generator
@@ -180,7 +186,7 @@ Choose your preferred VPN Tunnel type.
 
 #### OVPN Config Generator
 
-??? abstract "OVPN Config Generator - [CLICK TO EXPAND]"
+??? abstract "OVPN Config Generator - [Click to show/hide]"
 
     ![!OVPN Config Generator](images/torguard/config-generator-ovpn.png)
 
@@ -200,7 +206,7 @@ Choose your preferred VPN Tunnel type.
 
 #### WireGuard Config Generator
 
-??? abstract "WireGuard Config Generator - [CLICK TO EXPAND]"
+??? abstract "WireGuard Config Generator - [Click to show/hide]"
 
     ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
 

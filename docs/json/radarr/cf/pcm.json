@@ -1,6 +1,10 @@
 {
   "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
-  "trash_score": "2250",
+  "trash_scores": {
+    "default": 2250,
+    "sqp-1-1080p": 0,
+    "sqp-1-2160p": 0
+  },
   "name": "PCM",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

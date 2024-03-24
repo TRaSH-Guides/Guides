@@ -1,6 +1,8 @@
 {
   "trash_id": "b0fdc5897f68c9a68c70c25169f77447",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "Anime LQ Groups",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -38,15 +40,6 @@
       "required": false,
       "fields": {
         "value": "\\b(A-Destiny)\\b"
-      }
-    },
-    {
-      "name": "AbemaTV",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(AbemaTV)\\b"
       }
     },
     {
@@ -491,15 +484,6 @@
       }
     },
     {
-      "name": "Kaerizaki-Fansub",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Kaerizaki-Fansub)\\b"
-      }
-    },
-    {
       "name": "Kanjouteki",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -524,6 +508,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Kirion)\\b"
+      }
+    },
+    {
+      "name": "KQRM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KQRM)\\b"
       }
     },
     {
@@ -623,6 +616,15 @@
       "required": false,
       "fields": {
         "value": "\\b(MiniFreeza)\\b"
+      }
+    },
+    {
+      "name": "MiniMTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MiniMTBB)\\b"
       }
     },
     {

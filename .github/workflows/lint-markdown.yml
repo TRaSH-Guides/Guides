@@ -2,25 +2,19 @@ name: Lint - Markdown
 
 on:
   push:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
+    branches:
+      - main
   pull_request:
-    paths:
-      - "**/*.md"
-      - ".markdownlint.jsonc"
 
 jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.1.2
       - name: markdownlint
         run: |
-          find "${GITHUB_WORKSPACE}" -name '*.md' -exec \
-            docker run --rm \
-            -v "${GITHUB_WORKSPACE}":"${GITHUB_WORKSPACE}" \
-            -v "${GITHUB_WORKSPACE}/.markdownlint.jsonc":"/config/.markdownlint.jsonc" \
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}":/data \
             markdownlint/markdownlint \
-            -c "/config/.markdownlint.jsonc" \
-            {} +
+            -r ~MD013,~MD033,~MD034,~MD046,~MD002,~MD041 \
+            .

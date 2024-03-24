@@ -1,6 +1,8 @@
 {
   "trash_id": "851bd64e04c9374c51102be3dd9ae4cc",
-  "trash_score": "2250",
+  "trash_scores": {
+    "default": 2250
+  },
   "name": "FLAC",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{

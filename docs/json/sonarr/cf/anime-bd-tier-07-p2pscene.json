@@ -1,6 +1,8 @@
 {
   "trash_id": "0329044e3d9137b08502a9f84a7e58db",
-  "trash_score": "800",
+  "trash_scores": {
+    "default": 800
+  },
   "name": "Anime BD Tier 07 (P2P/Scene)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
