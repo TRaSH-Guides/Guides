@@ -55,6 +55,15 @@
       }
     },
     {
+      "name": "MainFrame",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MainFrame)$"
+      }
+    },
+    {
       "name": "DON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
