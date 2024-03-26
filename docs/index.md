@@ -17,7 +17,7 @@ Here you will find guides mainly for Sonarr/Radarr/Bazarr and everything related
 ## How this all started
 
 When I started using Sonarr/Radarr, I noticed that it didn't grab the releases that I actually wanted (I'm a bit picky about which releases and what quality I prefer).
-I decided to fine tune my quality profile settings to try to get the releases & quality I preferred. On Discord, I noticed that others ran in to the same issue, so I explained how I managed to get it solved. I started having to explain it often, so I decided to write it down and make it public so I could easily link it to someone when they needed it.
+I decided to fine-tune my quality profile settings to try and get the releases and qualities I preferred. While on Discord, I noticed that others ran into the same issue, so I explained how I managed to solve this. Once I started having to explain more often, I decided to write it down and make it public so I could easily link to it when needed.
 After a while I *also* decided to create guides for frequently asked questions and started to collect all kinds of information gathered from various sources.
 I try to make my guides as easy as possible for everyone to understand and, in my opinion, pictures often explain more than just some text.
 
@@ -27,7 +27,7 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 
 [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-If you have questions, suggestions, requests, or want to contribute, click the chat badge to join the Discord Channel. There, you can ask your questions directly. Alternatively, you can use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
+If you have questions, suggestions, or requests, or want to contribute, click the chat badge to join the Discord Channel. There you can ask your questions directly, or you can use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
 Feel free to create a PR if you want to.
 
 ---
@@ -37,7 +37,7 @@ Feel free to create a PR if you want to.
 The information provided in the guides has been gathered from different sources such as support forums, Reddit, Discord, or the development teams themselves, and has been developed based on user input.
 I have tested and tuned most things with the ultimate goal being to have them in line with my, and sometimes others', needs.
 
-You use everything here at your own risk. I am not responsible if something happens to your setup or collection!
+All of the information provided in these guides, as well as in Discord or any guides-related mediums, is to be used at your own risk. I am not responsible if something happens to your setup or collection!
 
 ---
 
