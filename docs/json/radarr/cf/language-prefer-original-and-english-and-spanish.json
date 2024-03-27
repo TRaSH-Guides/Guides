@@ -1,17 +1,26 @@
 {
-  "trash_id": "language-prefer-english-or-spanish",
+  "trash_id": "language-prefer-original-and-english-and-spanish",
   "trash_scores": {
-    "default": 10
+    "default": 101
   },
-  "trash_description": "Prefer English/Spanish",
-  "name": "English/Spanish",
+  "trash_description": "Prefer Original and English and Spanish",
+  "name": "ORIG+ENG+SPA",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
     {
       "name": "English Language",
       "implementation": "LanguageSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": 1
       }
@@ -20,7 +29,7 @@
       "name": "Spanish Language",
       "implementation": "LanguageSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": 3
       }

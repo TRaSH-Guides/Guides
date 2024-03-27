@@ -1,0 +1,47 @@
+{
+  "trash_id": "language-not-original-or-english-or-spanish",
+  "trash_scores": {
+    "default": -20000
+  },
+  "trash_description": "Language: Multiple Only",
+  "name": "Not Pref Lang",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not Original",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "Not English",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "Not Spanish",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Not Spanish (Latino)",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 37
+      }
+    }
+  ]
+}

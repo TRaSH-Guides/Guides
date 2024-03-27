@@ -1,19 +1,19 @@
 {
-  "trash_id": "language-prefer-english",
+  "trash_id": "language-prefer-original",
   "trash_scores": {
     "default": 2000
   },
   "trash_description": "Prefer Language X",
-  "name": "ENG",
+  "name": "ORIG",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "English Language",
+      "name": "Original Language",
       "implementation": "LanguageSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 1
+        "value": -2
       }
     }
   ]

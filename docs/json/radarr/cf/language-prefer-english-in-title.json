@@ -1,19 +1,19 @@
 {
-  "trash_id": "language-prefer-english",
+  "trash_id": "language-prefer-english-in-title",
   "trash_scores": {
-    "default": 2000
+    "default": 101
   },
   "trash_description": "Prefer Language X",
-  "name": "ENG",
+  "name": "ENG-Title",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "English Language",
-      "implementation": "LanguageSpecification",
+      "name": "English Title",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 1
+        "value": "\beng(?:lish)?\b"
       }
     }
   ]
