@@ -1,7 +1,7 @@
 {
   "trash_id": "language-prefer-original",
   "trash_scores": {
-    "default": 2000
+    "default": 101
   },
   "trash_description": "Prefer Language X",
   "name": "ORIG",

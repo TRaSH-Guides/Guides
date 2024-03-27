@@ -1,29 +1,29 @@
 {
-  "trash_id": "language-prefer-spanish",
-  "trash_scores": {
-    "default": 2000
-  },
-  "trash_description": "Prefer Language X",
-  "name": "SPA",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "Spanish Language",
-      "implementation": "LanguageSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
+    "trash_id": "language-prefer-spanish",
+    "trash_scores": {
+      "default": 101
     },
-    {
-      "name": "Latino Language",
-      "implementation": "LanguageSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 37
+    "trash_description": "Prefer Language X",
+    "name": "SPA",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+      {
+        "name": "Spanish Language",
+        "implementation": "LanguageSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 3
+        }
+      },
+      {
+        "name": "Latino Language",
+        "implementation": "LanguageSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": 37
+        }
       }
-    }
-  ]
-}
+    ]
+  }

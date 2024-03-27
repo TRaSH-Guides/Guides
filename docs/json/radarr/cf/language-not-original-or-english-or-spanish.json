@@ -1,7 +1,7 @@
 {
   "trash_id": "language-not-original-or-english-or-spanish",
   "trash_scores": {
-    "default": -20000
+    "default": -50000
   },
   "trash_description": "Language: Multiple Only",
   "name": "Not Pref Lang",
