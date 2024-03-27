@@ -13,7 +13,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\beng(?:lish)?\b"
+        "value": "\\beng(?:lish)?\\b"
       }
     }
   ]

@@ -13,7 +13,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\b(?:s|e|)(?:panish|spa(n|ñ)ol)|(?:latin(o?|a?))|(?:latdub)\b"
+        "value": "\\b(?:s|e|)(?:panish|spa(n|ñ)ol)|(?:latin(o?|a?))|(?:latdub)\\b"
       }
     }
   ]
