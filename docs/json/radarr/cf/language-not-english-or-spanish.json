@@ -1,0 +1,29 @@
+{
+    "trash_id": "language-not-english-or-spanish",
+    "trash_scores": {
+      "default": -10000
+    },
+    "trash_description": "Language: Multiple Only",
+    "name": "Not English/Spanish",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+      {
+        "name": "Not English",
+        "implementation": "LanguageSpecification",
+        "negate": true,
+        "required": true,
+        "fields": {
+          "value": 1
+        }
+      },
+      {
+        "name": "Not Spanish",
+        "implementation": "LanguageSpecification",
+        "negate": true,
+        "required": true,
+        "fields": {
+          "value": 3
+        }
+      }
+    ]
+  }
