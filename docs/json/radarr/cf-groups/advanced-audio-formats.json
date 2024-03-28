@@ -1,0 +1,83 @@
+{
+  "name": "Advanced Audio Formats",
+  "trash_id": "9d5acd8f1da78dfbae788182f7605200",
+  "custom_formats": [
+    {
+      "name": "TrueHD Atmos",
+      "trash_id": "496f355514737f7d83bf7aa4d24f8169",
+      "required": true
+    },
+    {
+      "name": "DTS X",
+      "trash_id": "2f22d89048b01681dde8afe203bf2e95",
+      "required": true
+    },
+    {
+      "name": "ATMOS (undefined)",
+      "trash_id": "417804f7f2c4308c1f4c5d380d4c4475",
+      "required": true
+    },
+    {
+      "name": "DD+ ATMOS",
+      "trash_id": "1af239278386be2919e1bcee0bde047e",
+      "required": true
+    },
+    {
+      "name": "TrueHD",
+      "trash_id": "3cafb66171b47f226146a0770576870f",
+      "required": true
+    },
+    {
+      "name": "DTS-HD MA",
+      "trash_id": "dcf3ec6938fa32445f590a4da84256cd",
+      "required": true
+    },
+    {
+      "name": "FLAC",
+      "trash_id": "a570d4a0e56a2874b64e5bfa55202a1b",
+      "required": true
+    },
+    {
+      "name": "PCM",
+      "trash_id": "e7c2fcae07cbada050a0af3357491d7b",
+      "required": true
+    },
+    {
+      "name": "DTS-HD HRA",
+      "trash_id": "8e109e50e0a0b83a5098b056e13bf6db",
+      "required": true
+    },
+    {
+      "name": "DD+",
+      "trash_id": "185f1dd7264c4562b9022d963ac37424",
+      "required": true
+    },
+    {
+      "name": "DTS-ES",
+      "trash_id": "f9f847ac70a0af62ea4a08280b859636",
+      "required": true
+    },
+    {
+      "name": "DTS",
+      "trash_id": "1c1a4c5e823891c75bc50380a6866f73",
+      "required": true
+    },
+    {
+      "name": "AAC",
+      "trash_id": "240770601cc226190c367ef59aba7463",
+      "required": true
+    },
+    {
+      "name": "DD",
+      "trash_id": "c2998bd0d90ed5621d8df281e839436e",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0"
+    }
+  }
+}
