@@ -51,15 +51,6 @@
       "fields": {
         "value": "^(PmP)$"
       }
-    },
-    {
-      "name": "SiCFoI",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SiCFoI)$"
-      }
     }
   ]
 }
