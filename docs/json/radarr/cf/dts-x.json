@@ -5,6 +5,7 @@
     "sqp-1-1080p": -10000,
     "sqp-1-2160p": -10000
   },
+  "trash_regex": "https://regex101.com/r/GqubZM/1",
   "name": "DTS X",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
