@@ -25,7 +25,9 @@
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-optional.md" !}
+{! include-markdown "../../includes/sqp/sqp-uhd-radarr-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-resolution.md" !}
 

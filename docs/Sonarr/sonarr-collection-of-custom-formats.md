@@ -1316,7 +1316,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR - [Click to show/hide]"
 
-    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1332,7 +1332,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR (no WEBDL) - [Click to show/hide]"
 
-    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
