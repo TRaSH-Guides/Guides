@@ -71,6 +71,15 @@
       }
     },
     {
+      "name": "SiCFoI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SiCFoI)$"
+      }
+    },
+    {
       "name": "TRiToN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
