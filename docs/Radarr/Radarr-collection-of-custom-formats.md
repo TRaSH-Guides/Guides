@@ -71,9 +71,9 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
 | [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
-| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
-| [HBO](#hbo)                |                          |                          |
+| [Criterion Channel](#crit) | [TVING](#tving)          |                          |
+| [Disney+](#dsnp)           | [U-NEXT](#u-next)        |                          |
+| [HBO](#hbo)                | [VIU](#viu)              |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
 | [Max](#max)                |                          |                          |
@@ -87,6 +87,7 @@ We've made 3 guides related to this.
 | --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
 | [ITVX](#itvx)         | [OViD](#ovid)           |                          |
+| [NOW](#now)           | [Star+](#strp)          |                          |
 
 ---
 
@@ -2093,12 +2094,30 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### TVING
+
+<sub>TVING</sub>
+
+??? question "TVING - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/tving.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tving.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -2221,6 +2240,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### NOW
+
+<sub>NOW</sub>
+
+??? question "NOW - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/now.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
 ### Misc Streaming Services
 
 ---
@@ -2255,6 +2292,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### STRP
+
+<sub>Star+</sub>
+
+??? question "Star+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/strp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

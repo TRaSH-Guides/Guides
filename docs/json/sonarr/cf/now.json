@@ -1,0 +1,37 @@
+{
+  "trash_id": "b66a699fba6f9df91becab798d7502e5",
+  "trash_scores": {
+    "default": 50
+  },
+  "name": "NOW",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "NOW",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(now)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
