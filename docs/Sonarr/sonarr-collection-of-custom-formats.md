@@ -64,9 +64,9 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
 | [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
-| [DC Universe](#dcu)        |                           | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           |                           | [VIU](#viu)              |                          |
-| [HBO Max](#hmax)           |                           |                          |                          |
+| [DC Universe](#dcu)        |                           | [TVING](#tving)          |                          |
+| [Disney+](#dsnp)           |                           | [U-NEXT](#u-next)        |                          |
+| [HBO Max](#hmax)           |                           | [VIU](#viu)              |                          |
 | [HBO](#hbo)                |                           |                          |                          |
 | [Hulu](#hulu)              |                           |                          |                          |
 | [iTunes](#it)              |                           |                          |                          |
@@ -80,11 +80,11 @@ We've made 3 guides related to this.
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 | --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
 | [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer](#ip)    | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
-| [ITVX](#itvx)         | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
-|                       |                         | [HIDIVE](#hidive)        |                                             |
-|                       |                         | [VRV](#vrv)              |                                             |
+| [ALL4](#all4)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
+| [ITVX](#itvx)         | [Star+](#strp)          | [Funimation](#funi)      |                                             |
+| [NOW](#now)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
+|                       | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
 |                       |                         | [ABEMA](#abema)          |                                             |
 |                       |                         | [ADN](#adn)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
@@ -92,7 +92,7 @@ We've made 3 guides related to this.
 ---
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
-|--------------------------------|----------------------------------------|-------------------------------|-----------------------------------------------|
+| ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
 | [FreeLeech](#freeleech)        | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [MPEG2](#mpeg2)                | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [Multi](#multi)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
@@ -1886,7 +1886,7 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2050,6 +2050,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### NOW
+
+<sub>NOW</sub>
+
+??? question "NOW - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/now.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
 ### Misc Streaming Services
 
 ---
@@ -2072,6 +2090,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### DSCP
+
+<sub>Discovery+</sub>
+
+??? question "Discovery+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dscp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dscp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
 #### OViD
 
 <sub>OViD</sub>
@@ -2084,6 +2120,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### STRP
+
+<sub>Star+</sub>
+
+??? question "Star+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/strp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
