@@ -1,6 +1,6 @@
 **ATMOS (undefined)**<br>
 
-Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
+This custom format covers cases where _ONLY_ "Atmos" is specified in the release title, without noting DD+ (Lossy) or TrueHD (Lossless).
 
 !!! note
-    Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
+    Apply the same score as Lossy (DD+) Atmos. On import, it will be updated to reflect either lossy or lossless based on the media's info using ffprobe.
