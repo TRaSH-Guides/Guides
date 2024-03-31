@@ -228,6 +228,6 @@
           </td>
 </tr>
 <tr>
-</tr>
+<td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
 <!-- readme: contributors -end -->
