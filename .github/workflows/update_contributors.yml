@@ -3,7 +3,7 @@ name: Update contributors
 on:
   push:
     branches:
-      - main # or the default branch of your repository
+      - master # or the default branch of your repository
 
 jobs:
   update_contributors:
