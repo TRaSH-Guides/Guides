@@ -3,8 +3,7 @@
 <!-- readme: contributors -start -->
 <table>
 <tr>
-    
-          <td align="center">
+    <td align="center">
               <a href="https://github.com/TRaSH-">
                   <img src="https://avatars.githubusercontent.com/u/6155095?v=4&v=4" width="100;" alt="TRaSH-"/>
                   <br />
@@ -47,8 +46,7 @@
               </a>
           </td></tr>
 <tr>
-    
-          <td align="center">
+    <td align="center">
               <a href="https://github.com/bakerboy448">
                   <img src="https://avatars.githubusercontent.com/u/55419169?v=4&v=4" width="100;" alt="bakerboy448"/>
                   <br />
@@ -91,8 +89,7 @@
               </a>
           </td></tr>
 <tr>
-    
-          <td align="center">
+    <td align="center">
               <a href="https://github.com/sadstan">
                   <img src="https://avatars.githubusercontent.com/u/76420253?v=4&v=4" width="100;" alt="sadstan"/>
                   <br />
@@ -135,8 +132,7 @@
               </a>
           </td></tr>
 <tr>
-    
-          <td align="center">
+    <td align="center">
               <a href="https://github.com/kantjer01">
                   <img src="https://avatars.githubusercontent.com/u/140897249?v=4&v=4" width="100;" alt="kantjer01"/>
                   <br />
@@ -179,8 +175,7 @@
               </a>
           </td></tr>
 <tr>
-    
-          <td align="center">
+    <td align="center">
               <a href="https://github.com/mynameisbogdan">
                   <img src="https://avatars.githubusercontent.com/u/707714?v=4&v=4" width="100;" alt="mynameisbogdan"/>
                   <br />
