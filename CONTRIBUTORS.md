@@ -1,32 +1,34 @@
 # Contributors
 
-- [@TRaSH-](https://github.com/TRaSH-)
-- [@yammes08](https://github.com/yammes08)
-- [@dependabot[bot]](https://github.com/apps/dependabot)
-- [@FonduemangVI](https://github.com/FonduemangVI)
-- [@NiceTSY](https://github.com/NiceTSY)
-- [@nuxencs](https://github.com/nuxencs)
-- [@bakerboy448](https://github.com/bakerboy448)
-- [@Visorask](https://github.com/Visorask)
-- [@bokkoman](https://github.com/bokkoman)
-- [@nemchik](https://github.com/nemchik)
-- [@rg9400](https://github.com/rg9400)
-- [@andersbjorshol](https://github.com/andersbjorshol)
-- [@sadstan](https://github.com/sadstan)
-- [@ImgBotApp](https://github.com/ImgBotApp)
-- [@zakkarry](https://github.com/zakkarry)
-- [@owine](https://github.com/owine)
-- [@rcdailey](https://github.com/rcdailey)
-- [@quorn23](https://github.com/quorn23)
-- [@kantjer01](https://github.com/kantjer01)
-- [@4l3-X](https://github.com/4l3-X)
-- [@ItsME6969](https://github.com/ItsME6969)
-- [@austinwbest](https://github.com/austinwbest)
-- [@userdocs](https://github.com/userdocs)
-- [@calvinbui](https://github.com/calvinbui)
-- [@mynameisbogdan](https://github.com/mynameisbogdan)
-- [@doob187](https://github.com/doob187)
-- [@thatbritguy](https://github.com/thatbritguy)
-- [@foux](https://github.com/foux)
-- [@jasonla](https://github.com/jasonla)
-- [@keliansb](https://github.com/keliansb)
+| Avatar | Username |
+| --- | --- |
+| ![TRaSH-](https://avatars.githubusercontent.com/u/6155095?v=4&s=100) | [@TRaSH-](https://github.com/TRaSH-) |
+| ![yammes08](https://avatars.githubusercontent.com/u/111231042?v=4&s=100) | [@yammes08](https://github.com/yammes08) |
+| ![dependabot[bot]](https://avatars.githubusercontent.com/in/29110?v=4&s=100) | [@dependabot[bot]](https://github.com/apps/dependabot) |
+| ![FonduemangVI](https://avatars.githubusercontent.com/u/15520607?v=4&s=100) | [@FonduemangVI](https://github.com/FonduemangVI) |
+| ![NiceTSY](https://avatars.githubusercontent.com/u/38940602?v=4&s=100) | [@NiceTSY](https://github.com/NiceTSY) |
+| ![nuxencs](https://avatars.githubusercontent.com/u/47067662?v=4&s=100) | [@nuxencs](https://github.com/nuxencs) |
+| ![bakerboy448](https://avatars.githubusercontent.com/u/55419169?v=4&s=100) | [@bakerboy448](https://github.com/bakerboy448) |
+| ![Visorask](https://avatars.githubusercontent.com/u/54461452?v=4&s=100) | [@Visorask](https://github.com/Visorask) |
+| ![bokkoman](https://avatars.githubusercontent.com/u/7511367?v=4&s=100) | [@bokkoman](https://github.com/bokkoman) |
+| ![nemchik](https://avatars.githubusercontent.com/u/725456?v=4&s=100) | [@nemchik](https://github.com/nemchik) |
+| ![rg9400](https://avatars.githubusercontent.com/u/39887349?v=4&s=100) | [@rg9400](https://github.com/rg9400) |
+| ![andersbjorshol](https://avatars.githubusercontent.com/u/161516010?v=4&s=100) | [@andersbjorshol](https://github.com/andersbjorshol) |
+| ![sadstan](https://avatars.githubusercontent.com/u/76420253?v=4&s=100) | [@sadstan](https://github.com/sadstan) |
+| ![ImgBotApp](https://avatars.githubusercontent.com/u/31427850?v=4&s=100) | [@ImgBotApp](https://github.com/ImgBotApp) |
+| ![zakkarry](https://avatars.githubusercontent.com/u/123845855?v=4&s=100) | [@zakkarry](https://github.com/zakkarry) |
+| ![owine](https://avatars.githubusercontent.com/u/4283702?v=4&s=100) | [@owine](https://github.com/owine) |
+| ![rcdailey](https://avatars.githubusercontent.com/u/1768054?v=4&s=100) | [@rcdailey](https://github.com/rcdailey) |
+| ![quorn23](https://avatars.githubusercontent.com/u/6703012?v=4&s=100) | [@quorn23](https://github.com/quorn23) |
+| ![kantjer01](https://avatars.githubusercontent.com/u/140897249?v=4&s=100) | [@kantjer01](https://github.com/kantjer01) |
+| ![4l3-X](https://avatars.githubusercontent.com/u/108864960?v=4&s=100) | [@4l3-X](https://github.com/4l3-X) |
+| ![ItsME6969](https://avatars.githubusercontent.com/u/89707006?v=4&s=100) | [@ItsME6969](https://github.com/ItsME6969) |
+| ![austinwbest](https://avatars.githubusercontent.com/u/8321115?v=4&s=100) | [@austinwbest](https://github.com/austinwbest) |
+| ![userdocs](https://avatars.githubusercontent.com/u/16525024?v=4&s=100) | [@userdocs](https://github.com/userdocs) |
+| ![calvinbui](https://avatars.githubusercontent.com/u/3604363?v=4&s=100) | [@calvinbui](https://github.com/calvinbui) |
+| ![mynameisbogdan](https://avatars.githubusercontent.com/u/707714?v=4&s=100) | [@mynameisbogdan](https://github.com/mynameisbogdan) |
+| ![doob187](https://avatars.githubusercontent.com/u/60312740?v=4&s=100) | [@doob187](https://github.com/doob187) |
+| ![thatbritguy](https://avatars.githubusercontent.com/u/10825337?v=4&s=100) | [@thatbritguy](https://github.com/thatbritguy) |
+| ![foux](https://avatars.githubusercontent.com/u/246550?v=4&s=100) | [@foux](https://github.com/foux) |
+| ![jasonla](https://avatars.githubusercontent.com/u/12141407?v=4&s=100) | [@jasonla](https://github.com/jasonla) |
+| ![keliansb](https://avatars.githubusercontent.com/u/22099779?v=4&s=100) | [@keliansb](https://github.com/keliansb) |
