@@ -48,5 +48,5 @@ You use everything here at your own risk. I won't be responsible if something ha
 - [rg9400](https://github.com/rg9400){:target="_blank" rel="noopener noreferrer"} for providing most of the Radarr v3 Custom Format Collection.
 - Everyone who contributed to this project in any way possible.
 
-{! include-markdown "contributors.md" !}
+{! include-markdown "../contributors.md" !}
 <!-- --8<-- "contributors.md" -->
