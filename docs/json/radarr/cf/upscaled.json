@@ -31,7 +31,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(The[ ._-]Upscaler)\\b"
+        "value": "\\b(The[ ._-]?Upscaler)\\b"
       }
     },
     {
