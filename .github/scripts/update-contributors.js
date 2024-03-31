@@ -6,20 +6,31 @@ function indentString(string, indentation) {
   return string.split('\n').map(line => indentation + line).join('\n');
 }
 
-axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
-  .then((response) => {
-    let contributors = '<table>\n';
-    let index = 0;
+let contributors = '<table>\n';
+let index = 0;
+let page = 1;
 
-    response.data.forEach((user) => {
-      // Exclude bots
-      if (user.type === 'Bot' || user.login.toLowerCase().includes('bot')) return;
+function fetchPage() {
+  axios.get(`https://api.github.com/repos/FonduemangVI/Guides/contributors?per_page=100&page=${page}`)
+    .then((response) => {
+      if (response.data.length === 0) {
+        // No more contributors, write the file
+        contributors += '</table>\n';
+        contributors = indentString(contributors, '');
 
-      if (index % 6 === 0) {
-        contributors += '<tr>';
+        fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
+        return;
       }
 
-      const userHtml = `
+      response.data.forEach((user) => {
+        // Exclude bots
+        if (user.type === 'Bot' || user.login.toLowerCase().includes('bot')) return;
+
+        if (index % 6 === 0) {
+          contributors += '<tr>';
+        }
+
+        const userHtml = `
 <td align="center">
     <a href="${user.html_url}">
         <img src="${user.avatar_url}&v=4" width="100;" alt="${user.login}"/>
@@ -28,20 +39,22 @@ axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
     </a>
 </td>`;
 
-      contributors += indentString(userHtml, '    ');
+        contributors += indentString(userHtml, '    ');
 
-      if ((index + 1) % 6 === 0 || index === response.data.length - 1) {
-        contributors += '\n</tr>\n';
-      }
+        if ((index + 1) % 6 === 0 || index === response.data.length - 1) {
+          contributors += '\n</tr>\n';
+        }
 
-      index++;
+        index++;
+      });
+
+      // Fetch the next page
+      page++;
+      fetchPage();
+    })
+    .catch((error) => {
+      console.error(`Could not fetch contributors: ${error}`);
     });
+}
 
-    contributors += '</table>\n';
-    contributors = indentString(contributors, '');
-
-    fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
-  })
-  .catch((error) => {
-    console.error(`Could not fetch contributors: ${error}`);
-  });
+fetchPage();
