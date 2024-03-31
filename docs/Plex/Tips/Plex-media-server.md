@@ -278,7 +278,7 @@ A comma-separated list of URLs (either HTTP or HTTPS), which will be published t
 
 ![!Settings - Network - Webhooks](images/settings-network-webhooks.png)
 
-This feature can be enabled to allow your server to send events to external services. For example [Notifiarr](/Notifiarr/Quick-Start/){:target="_blank" rel="noopener noreferrer"}
+This feature can be enabled to allow your server to send events to external services. For example [Notifiarr](https://notifiarr.com/){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
