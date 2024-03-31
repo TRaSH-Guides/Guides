@@ -1,6 +1,6 @@
 {
-  "projectName": "all-contributors",
-  "projectOwner": "TRaSH",
+  "projectName": "Guides",
+  "projectOwner": "TRaSH-Guides",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": ["contributors.md"],
@@ -8,7 +8,7 @@
   "commit": false,
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": false,
-  "badgeTemplate": "[![All Contributors](https://img.shields.io/github/all-contributors/<%= projectOwner %>/<%= projectName %>?color=ee8449&style=flat-square)](#contributors)",
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/github/all-contributors/TRaSH-Guides/Guides?color=ee8449&style=flat-square)](#contributors)",
   "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
   "wrapperTemplate": "\n<table>\n  <tbody><%= bodyContent %>  </tbody>\n<%= tableFooterContent %></table>\n\n",
   "types": {
