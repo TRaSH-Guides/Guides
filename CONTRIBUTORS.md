@@ -18,13 +18,6 @@
         </a>
     </td>    
     <td align="center">
-        <a href="https://github.com/apps/dependabot">
-            <img src="https://avatars.githubusercontent.com/in/29110?v=4&v=4" width="100;" alt="dependabot[bot]"/>
-            <br />
-            <sub><b>dependabot[bot]</b></sub>
-        </a>
-    </td>    
-    <td align="center">
         <a href="https://github.com/FonduemangVI">
             <img src="https://avatars.githubusercontent.com/u/15520607?v=4&v=4" width="100;" alt="FonduemangVI"/>
             <br />
@@ -44,16 +37,16 @@
             <br />
             <sub><b>nuxencs</b></sub>
         </a>
-    </td>
-</tr>
-<tr>    
+    </td>    
     <td align="center">
         <a href="https://github.com/bakerboy448">
             <img src="https://avatars.githubusercontent.com/u/55419169?v=4&v=4" width="100;" alt="bakerboy448"/>
             <br />
             <sub><b>bakerboy448</b></sub>
         </a>
-    </td>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
         <a href="https://github.com/Visorask">
             <img src="https://avatars.githubusercontent.com/u/54461452?v=4&v=4" width="100;" alt="Visorask"/>
@@ -88,16 +81,16 @@
             <br />
             <sub><b>andersbjorshol</b></sub>
         </a>
-    </td>
-</tr>
-<tr>    
+    </td>    
     <td align="center">
         <a href="https://github.com/sadstan">
             <img src="https://avatars.githubusercontent.com/u/76420253?v=4&v=4" width="100;" alt="sadstan"/>
             <br />
             <sub><b>sadstan</b></sub>
         </a>
-    </td>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
         <a href="https://github.com/ImgBotApp">
             <img src="https://avatars.githubusercontent.com/u/31427850?v=4&v=4" width="100;" alt="ImgBotApp"/>
@@ -132,16 +125,16 @@
             <br />
             <sub><b>quorn23</b></sub>
         </a>
-    </td>
-</tr>
-<tr>    
+    </td>    
     <td align="center">
         <a href="https://github.com/kantjer01">
             <img src="https://avatars.githubusercontent.com/u/140897249?v=4&v=4" width="100;" alt="kantjer01"/>
             <br />
             <sub><b>kantjer01</b></sub>
         </a>
-    </td>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
         <a href="https://github.com/4l3-X">
             <img src="https://avatars.githubusercontent.com/u/108864960?v=4&v=4" width="100;" alt="4l3-X"/>
@@ -176,16 +169,16 @@
             <br />
             <sub><b>calvinbui</b></sub>
         </a>
-    </td>
-</tr>
-<tr>    
+    </td>    
     <td align="center">
         <a href="https://github.com/mynameisbogdan">
             <img src="https://avatars.githubusercontent.com/u/707714?v=4&v=4" width="100;" alt="mynameisbogdan"/>
             <br />
             <sub><b>mynameisbogdan</b></sub>
         </a>
-    </td>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
         <a href="https://github.com/doob187">
             <img src="https://avatars.githubusercontent.com/u/60312740?v=4&v=4" width="100;" alt="doob187"/>
@@ -220,8 +213,6 @@
             <br />
             <sub><b>keliansb</b></sub>
         </a>
-    </td>
-</tr>
-</table>
+    </td></table>
 
 <!-- readme: contributors -end -->
