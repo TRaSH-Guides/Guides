@@ -1,4 +1,4 @@
-# Media Players
+# What does my Media Player Support
 
 We've created a excel sheet with several tested Media Player devices with info that has been provided by our community.
 
@@ -28,7 +28,7 @@ The sheet also has comments added for extra info
 
     - Profile 5 => WEBDL (Streaming Services)
     - Profile 7 => Untouched Remuxes and BR-DISK
-    - Profile 8 => Encodes, Hybrid Remuxes, Hybrid WEBDL
+    - Profile 8 => Encodes, Hybrid Remuxes, Hybrid WEBDL, and in some cases standard WEBDL like from Hulu
 
 #### How to make use of HDR Formats for Radarr
 
@@ -84,3 +84,5 @@ At the moment I decided not to add `Audio Advanced` Custom Formats to the WEB pr
 ## Link to tested Media Player Devices
 
 [Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit#gid=0){:target="_blank" rel="noopener noreferrer"}
+
+--8<-- "includes/support.md"
