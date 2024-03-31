@@ -13,7 +13,7 @@ axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
 
     response.data.forEach((user) => {
       // Exclude bots
-      if (user.type === 'Bot') return;
+      if (user.type === 'Bot' || user.login.toLowerCase().includes('bot')) return;
 
       if (index % 6 === 0) {
         contributors += '<tr>';
