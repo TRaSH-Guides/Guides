@@ -1,0 +1,18 @@
+name: Update contributors
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  contrib-readme-job:
+    runs-on: ubuntu-latest
+    name: A job to automate contribute list in contributors2.md
+    steps:
+      - name: Contribute List
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
+        with:
+          readme_path: "contributors2.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
