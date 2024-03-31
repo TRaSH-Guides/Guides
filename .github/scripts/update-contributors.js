@@ -13,6 +13,7 @@
       }
   
       let contributors = '<table>\n<tr>\n';
+      let count = 0;
   
       response.data.forEach((user, index) => {
         if (!user.login || !user.html_url || !user.avatar_url) {
@@ -31,8 +32,16 @@
         // Add a new row every 6th user
         if ((index + 1) % 6 === 0) {
           contributors += '\n</tr>\n<tr>\n';
+          count = 0;
+        } else {
+          count++;
         }
       });
+  
+      // Add empty cells if there are fewer than 6 contributors in the last row
+      for (let i = count; i < 6; i++) {
+        contributors += '<td></td>';
+      }
   
       contributors += '</tr>\n</table>';
   
