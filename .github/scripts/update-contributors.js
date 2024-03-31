@@ -1,62 +1,42 @@
-  const fs = require('fs');
   const axios = require('axios');
+  const fs = require('fs');
   
-  const owner = 'FonduemangVI';
-  const repo = 'Guides';
+  // Indentation function
+  function indentString(string, indentation) {
+    return string.split('\n').map(line => indentation + line).join('\n');
+  }
   
-  async function updateContributors() {
-    try {
-      const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/contributors`);
-  
-      if (!response.data || !Array.isArray(response.data)) {
-        throw new Error('Invalid response from GitHub API');
-      }
-  
-      let contributors = '<table>\n<tr>\n';
-      let count = 0;
+  axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
+    .then((response) => {
+      let contributors = '<table>\n';
   
       response.data.forEach((user, index) => {
-        if (!user.login || !user.html_url || !user.avatar_url) {
-          throw new Error('Invalid user data from GitHub API');
+        if (index % 6 === 0) {
+          contributors += '<tr>\n';
         }
   
-        contributors += `
-          <td align="center">
-            <a href="${user.html_url}">
-              <img src="${user.avatar_url}&s=100" width="100;" alt="${user.login}"/>
+        const userHtml = `
+      <td align="center">
+          <a href="${user.html_url}">
+              <img src="${user.avatar_url}&v=4" width="100;" alt="${user.login}"/>
               <br />
               <sub><b>${user.login}</b></sub>
-            </a>
-          </td>`;
+          </a>
+      </td>`;
   
-        // Add a new row every 6th user
-        if ((index + 1) % 6 === 0) {
-          contributors += '\n</tr>\n<tr>\n';
-          count = 0;
-        } else {
-          count++;
+        contributors += indentString(userHtml, '    ');
+  
+        if ((index + 1) % 6 === 0 || index === response.data.length - 1) {
+          contributors += '</tr>\n';
         }
       });
   
-      // Add empty cells if there are fewer than 6 contributors in the last row
-      for (let i = count; i < 6; i++) {
-        contributors += '<td></td>';
-      }
-  
-      contributors += '</tr>\n</table>';
+      contributors += '</table>\n';
+      contributors = indentString(contributors, '');
   
       fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
-    } catch (error) {
-      console.error('Error updating contributors:', error.message);
-  
-      if (error.response) {
-        console.error('Response status:', error.response.status);
-        console.error('Response data:', error.response.data);
-      }
-  
-      process.exit(1);
-    }
-  }
-  
-  updateContributors();
+    })
+    .catch((error) => {
+      console.error(`Could not fetch contributors: ${error}`);
+    });
   
