@@ -92,13 +92,6 @@
 </tr>
 <tr>    
     <td align="center">
-        <a href="https://github.com/ImgBotApp">
-            <img src="https://avatars.githubusercontent.com/u/31427850?v=4&v=4" width="100;" alt="ImgBotApp"/>
-            <br />
-            <sub><b>ImgBotApp</b></sub>
-        </a>
-    </td>    
-    <td align="center">
         <a href="https://github.com/zakkarry">
             <img src="https://avatars.githubusercontent.com/u/123845855?v=4&v=4" width="100;" alt="zakkarry"/>
             <br />
@@ -132,16 +125,16 @@
             <br />
             <sub><b>kantjer01</b></sub>
         </a>
-    </td>
-</tr>
-<tr>    
+    </td>    
     <td align="center">
         <a href="https://github.com/4l3-X">
             <img src="https://avatars.githubusercontent.com/u/108864960?v=4&v=4" width="100;" alt="4l3-X"/>
             <br />
             <sub><b>4l3-X</b></sub>
         </a>
-    </td>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
         <a href="https://github.com/ItsME6969">
             <img src="https://avatars.githubusercontent.com/u/89707006?v=4&v=4" width="100;" alt="ItsME6969"/>
@@ -164,6 +157,13 @@
         </a>
     </td>    
     <td align="center">
+        <a href="https://github.com/mynameisbogdan">
+            <img src="https://avatars.githubusercontent.com/u/707714?v=4&v=4" width="100;" alt="mynameisbogdan"/>
+            <br />
+            <sub><b>mynameisbogdan</b></sub>
+        </a>
+    </td>    
+    <td align="center">
         <a href="https://github.com/calvinbui">
             <img src="https://avatars.githubusercontent.com/u/3604363?v=4&v=4" width="100;" alt="calvinbui"/>
             <br />
@@ -171,10 +171,10 @@
         </a>
     </td>    
     <td align="center">
-        <a href="https://github.com/mynameisbogdan">
-            <img src="https://avatars.githubusercontent.com/u/707714?v=4&v=4" width="100;" alt="mynameisbogdan"/>
+        <a href="https://github.com/actions-user">
+            <img src="https://avatars.githubusercontent.com/u/65916846?v=4&v=4" width="100;" alt="actions-user"/>
             <br />
-            <sub><b>mynameisbogdan</b></sub>
+            <sub><b>actions-user</b></sub>
         </a>
     </td>
 </tr>
@@ -194,24 +194,17 @@
         </a>
     </td>    
     <td align="center">
-        <a href="https://github.com/foux">
-            <img src="https://avatars.githubusercontent.com/u/246550?v=4&v=4" width="100;" alt="foux"/>
+        <a href="https://github.com/SeiyaGame">
+            <img src="https://avatars.githubusercontent.com/u/40237982?v=4&v=4" width="100;" alt="SeiyaGame"/>
             <br />
-            <sub><b>foux</b></sub>
+            <sub><b>SeiyaGame</b></sub>
         </a>
     </td>    
     <td align="center">
-        <a href="https://github.com/jasonla">
-            <img src="https://avatars.githubusercontent.com/u/12141407?v=4&v=4" width="100;" alt="jasonla"/>
+        <a href="https://github.com/Roxedus">
+            <img src="https://avatars.githubusercontent.com/u/7110194?v=4&v=4" width="100;" alt="Roxedus"/>
             <br />
-            <sub><b>jasonla</b></sub>
-        </a>
-    </td>    
-    <td align="center">
-        <a href="https://github.com/keliansb">
-            <img src="https://avatars.githubusercontent.com/u/22099779?v=4&v=4" width="100;" alt="keliansb"/>
-            <br />
-            <sub><b>keliansb</b></sub>
+            <sub><b>Roxedus</b></sub>
         </a>
     </td></table>
 
