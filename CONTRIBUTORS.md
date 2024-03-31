@@ -150,13 +150,6 @@
         </a>
     </td>    
     <td align="center">
-        <a href="https://github.com/actions-user">
-            <img src="https://avatars.githubusercontent.com/u/65916846?v=4&v=4" width="100;" alt="actions-user"/>
-            <br />
-            <sub><b>actions-user</b></sub>
-        </a>
-    </td>    
-    <td align="center">
         <a href="https://github.com/userdocs">
             <img src="https://avatars.githubusercontent.com/u/16525024?v=4&v=4" width="100;" alt="userdocs"/>
             <br />
@@ -175,6 +168,13 @@
             <img src="https://avatars.githubusercontent.com/u/3604363?v=4&v=4" width="100;" alt="calvinbui"/>
             <br />
             <sub><b>calvinbui</b></sub>
+        </a>
+    </td>    
+    <td align="center">
+        <a href="https://github.com/actions-user">
+            <img src="https://avatars.githubusercontent.com/u/65916846?v=4&v=4" width="100;" alt="actions-user"/>
+            <br />
+            <sub><b>actions-user</b></sub>
         </a>
     </td>
 </tr>
