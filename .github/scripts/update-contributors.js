@@ -9,8 +9,12 @@ function indentString(string, indentation) {
 axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
   .then((response) => {
     let contributors = '<table>\n';
+    let index = 0;
 
-    response.data.forEach((user, index) => {
+    response.data.forEach((user) => {
+      // Exclude bots
+      if (user.type === 'Bot') return;
+
       if (index % 6 === 0) {
         contributors += '<tr>';
       }
@@ -29,6 +33,8 @@ axios.get('https://api.github.com/repos/FonduemangVI/Guides/contributors')
       if ((index + 1) % 6 === 0 || index === response.data.length - 1) {
         contributors += '\n</tr>\n';
       }
+
+      index++;
     });
 
     contributors += '</table>\n';
