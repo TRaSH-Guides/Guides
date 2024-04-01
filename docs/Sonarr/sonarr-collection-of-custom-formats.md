@@ -1148,6 +1148,10 @@ We've made 3 guides related to this.
 
 ### Single Episode
 
+!!! danger "WARNING"
+
+    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
+
 ??? question "Single Episode - [Click to show/hide]"
 
     This Custom Format will recognize single episode releases (as opposed to multi-episode or season packs) using Sonarr's built in parser. Depending on your preferences, you can give it a negative score, a positive score, or just skip adding it altogether.
@@ -1163,6 +1167,10 @@ We've made 3 guides related to this.
 ---
 
 ### Multi-Episode
+
+!!! danger "WARNING"
+
+    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
 
 ??? question "Multi-Episode - [Click to show/hide]"
 
