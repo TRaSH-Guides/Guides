@@ -1,416 +1,416 @@
 {
-  "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
-  "trash_scores": {
-    "default": 1650,
-    "anime-sonarr": 150
-  },
-  "name": "WEB Tier 02",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "3cTWeB",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(3cTWeB)$"
-      }
+    "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
+    "trash_scores": {
+        "default": 1650,
+        "anime-sonarr": 150
     },
-    {
-      "name": "BLUTONiUM",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BLUTONiUM)$"
-      }
-    },
-    {
-      "name": "BTW",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BTW)$"
-      }
-    },
-    {
-      "name": "Chotab",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Chotab)$"
-      }
-    },
-    {
-      "name": "Cinefeel",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Cinefeel)$"
-      }
-    },
-    {
-      "name": "CiT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CiT)$"
-      }
-    },
-    {
-      "name": "CMRG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CMRG)$"
-      }
-    },
-    {
-      "name": "Coo7",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Coo7)$"
-      }
-    },
-    {
-      "name": "dB",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(dB)$"
-      }
-    },
-    {
-      "name": "DEEP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DEEP)$"
-      }
-    },
-    {
-      "name": "END",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(END)$"
-      }
-    },
-    {
-      "name": "ETHiCS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ETHiCS)$"
-      }
-    },
-    {
-      "name": "FC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FC)$"
-      }
-    },
-    {
-      "name": "Flights",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Flights)$"
-      }
-    },
-    {
-      "name": "GNOME",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GNOME)$"
-      }
-    },
-    {
-      "name": "iJP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iJP)$"
-      }
-    },
-    {
-      "name": "iKA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iKA)$"
-      }
-    },
-    {
-      "name": "iT00NZ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iT00NZ)$"
-      }
-    },
-    {
-      "name": "JETIX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(JETIX)$"
-      }
-    },
-    {
-      "name": "KHN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KHN)$"
-      }
-    },
-    {
-      "name": "KiMCHI",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KiMCHI)$"
-      }
-    },
-    {
-      "name": "Kitsune",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Kitsune)$"
-      }
-    },
-    {
-      "name": "LAZY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LAZY)$"
-      }
-    },
-    {
-      "name": "MiU",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MiU)$"
-      }
-    },
-    {
-      "name": "MZABI",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MZABI)$"
-      }
-    },
-    {
-      "name": "NPMS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NPMS)$"
-      }
-    },
-    {
-      "name": "NYH",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NYH)$"
-      }
-    },
-    {
-      "name": "orbitron",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(orbitron)$"
-      }
-    },
-    {
-      "name": "PHOENiX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PHOENiX)$"
-      }
-    },
-    {
-      "name": "playWEB",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(playWEB)$"
-      }
-    },
-    {
-      "name": "PSiG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PSiG)$"
-      }
-    },
-    {
-      "name": "ROCCaT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ROCCaT)$"
-      }
-    },
-    {
-      "name": "RTFM",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RTFM)$"
-      }
-    },
-    {
-      "name": "SA89",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SA89)$"
-      }
-    },
-    {
-      "name": "SbR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SbR)$"
-      }
-    },
-    {
-      "name": "SDCC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SDCC)$"
-      }
-    },
-    {
-      "name": "SIGMA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SIGMA)$"
-      }
-    },
-    {
-      "name": "SMURF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SMURF)$"
-      }
-    },
-    {
-      "name": "SPiRiT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SPiRiT)$"
-      }
-    },
-    {
-      "name": "TEPES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TEPES)$"
-      }
-    },
-    {
-      "name": "TVSmash",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TVSmash)$"
-      }
-    },
-    {
-      "name": "WELP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WELP)$"
-      }
-    },
-    {
-      "name": "XEBEC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(XEBEC|4KBEC|CEBEX)$"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "WEB Tier 02",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "3cTWeB",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(3cTWeB)$"
+            }
+        },
+        {
+            "name": "BLUTONiUM",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BLUTONiUM)$"
+            }
+        },
+        {
+            "name": "BTW",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BTW)$"
+            }
+        },
+        {
+            "name": "Chotab",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Chotab)$"
+            }
+        },
+        {
+            "name": "Cinefeel",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Cinefeel)$"
+            }
+        },
+        {
+            "name": "CiT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CiT)$"
+            }
+        },
+        {
+            "name": "CMRG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CMRG)$"
+            }
+        },
+        {
+            "name": "Coo7",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Coo7)$"
+            }
+        },
+        {
+            "name": "dB",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(dB)$"
+            }
+        },
+        {
+            "name": "DEEP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DEEP)$"
+            }
+        },
+        {
+            "name": "END",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(END)$"
+            }
+        },
+        {
+            "name": "ETHiCS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ETHiCS)$"
+            }
+        },
+        {
+            "name": "FC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FC)$"
+            }
+        },
+        {
+            "name": "Flights",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Flights)$"
+            }
+        },
+        {
+            "name": "GNOME",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GNOME)$"
+            }
+        },
+        {
+            "name": "iJP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iJP)$"
+            }
+        },
+        {
+            "name": "iKA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iKA)$"
+            }
+        },
+        {
+            "name": "iT00NZ",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iT00NZ)$"
+            }
+        },
+        {
+            "name": "JETIX",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(JETIX)$"
+            }
+        },
+        {
+            "name": "KHN",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KHN)$"
+            }
+        },
+        {
+            "name": "KiMCHI",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KiMCHI)$"
+            }
+        },
+        {
+            "name": "Kitsune",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Kitsune)$"
+            }
+        },
+        {
+            "name": "LAZY",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(LAZY)$"
+            }
+        },
+        {
+            "name": "MiU",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MiU)$"
+            }
+        },
+        {
+            "name": "MZABI",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MZABI)$"
+            }
+        },
+        {
+            "name": "NPMS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NPMS)$"
+            }
+        },
+        {
+            "name": "NYH",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NYH)$"
+            }
+        },
+        {
+            "name": "orbitron",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(orbitron)$"
+            }
+        },
+        {
+            "name": "PHOENiX",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PHOENiX)$"
+            }
+        },
+        {
+            "name": "playWEB",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(playWEB)$"
+            }
+        },
+        {
+            "name": "PSiG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PSiG)$"
+            }
+        },
+        {
+            "name": "ROCCaT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ROCCaT)$"
+            }
+        },
+        {
+            "name": "RTFM",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(RTFM)$"
+            }
+        },
+        {
+            "name": "SA89",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SA89)$"
+            }
+        },
+        {
+            "name": "SbR",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SbR)$"
+            }
+        },
+        {
+            "name": "SDCC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SDCC)$"
+            }
+        },
+        {
+            "name": "SIGMA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SIGMA)$"
+            }
+        },
+        {
+            "name": "SMURF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SMURF)$"
+            }
+        },
+        {
+            "name": "SPiRiT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SPiRiT)$"
+            }
+        },
+        {
+            "name": "TEPES",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TEPES)$"
+            }
+        },
+        {
+            "name": "TVSmash",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TVSmash)$"
+            }
+        },
+        {
+            "name": "WELP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(WELP)$"
+            }
+        },
+        {
+            "name": "XEBEC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(XEBEC|4KBEC|CEBEX)$"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

@@ -1,82 +1,82 @@
 {
-  "trash_id": "b8e91cc8fb2bd96468fab74730c30d18",
-  "trash_scores": {
-    "default": 1900
-  },
-  "name": "FR Remux Tier 01",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "Remux",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 7
-      }
+    "trash_id": "b8e91cc8fb2bd96468fab74730c30d18",
+    "trash_scores": {
+        "default": 1900
     },
-    {
-      "name": "FtLi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FtLi)$"
-      }
-    },
-    {
-      "name": "Goldenyann",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Goldenyann)$"
-      }
-    },
-    {
-      "name": "HDForever",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDForever)$"
-      }
-    },
-    {
-      "name": "HeavyWeight",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HeavyWeight)$"
-      }
-    },
-    {
-      "name": "ONLY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ONLY)$"
-      }
-    },
-    {
-      "name": "Psaro",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Psaro)$"
-      }
-    },
-    {
-      "name": "TyrellCorp",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TyrellCorp)$"
-      }
-    }
-  ]
+    "name": "FR Remux Tier 01",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "Remux",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 7
+            }
+        },
+        {
+            "name": "FtLi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FtLi)$"
+            }
+        },
+        {
+            "name": "Goldenyann",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Goldenyann)$"
+            }
+        },
+        {
+            "name": "HDForever",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDForever)$"
+            }
+        },
+        {
+            "name": "HeavyWeight",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HeavyWeight)$"
+            }
+        },
+        {
+            "name": "ONLY",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ONLY)$"
+            }
+        },
+        {
+            "name": "Psaro",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Psaro)$"
+            }
+        },
+        {
+            "name": "TyrellCorp",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TyrellCorp)$"
+            }
+        }
+    ]
 }

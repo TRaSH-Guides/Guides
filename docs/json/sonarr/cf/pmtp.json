@@ -1,37 +1,37 @@
 {
-  "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
-  "trash_scores": {
-    "default": 60
-  },
-  "name": "PMTP",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "Paramount+",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\b(pmtp|Paramount\\+)\\b"
-      }
+    "trash_id": "c67a75ae4a1715f2bb4d492755ba4195",
+    "trash_scores": {
+        "default": 60
     },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "PMTP",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "Paramount+",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "\\b(pmtp|Paramount\\+)\\b"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

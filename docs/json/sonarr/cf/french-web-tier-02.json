@@ -1,101 +1,101 @@
 {
-  "trash_id": "a4c51febd4d8b2a0db10a3c974f21d92",
-  "trash_scores": {
-    "default": 1650,
-    "french-anime": 1100
-  },
-  "name": "FR WEB Tier 02",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
+    "trash_id": "a4c51febd4d8b2a0db10a3c974f21d92",
+    "trash_scores": {
+        "default": 1650,
+        "french-anime": 1100
     },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "COLL3CTiF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(COLL3CTiF)$"
-      }
-    },
-    {
-      "name": "FiND",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FiND)$"
-      }
-    },
-    {
-      "name": "FrIeNdS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FrIeNdS)$"
-      }
-    },
-    {
-      "name": "HeavyWeight",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HeavyWeight)$"
-      }
-    },
-    {
-      "name": "NoNe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NoNe)$"
-      }
-    },
-    {
-      "name": "pERsO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(pERsO)$"
-      }
-    },
-    {
-      "name": "RiPiT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RiPiT)$"
-      }
-    },
-    {
-      "name": "TAT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TAT)$"
-      }
-    }
-  ]
+    "name": "FR WEB Tier 02",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        },
+        {
+            "name": "COLL3CTiF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(COLL3CTiF)$"
+            }
+        },
+        {
+            "name": "FiND",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FiND)$"
+            }
+        },
+        {
+            "name": "FrIeNdS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FrIeNdS)$"
+            }
+        },
+        {
+            "name": "HeavyWeight",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HeavyWeight)$"
+            }
+        },
+        {
+            "name": "NoNe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NoNe)$"
+            }
+        },
+        {
+            "name": "pERsO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(pERsO)$"
+            }
+        },
+        {
+            "name": "RiPiT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(RiPiT)$"
+            }
+        },
+        {
+            "name": "TAT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TAT)$"
+            }
+        }
+    ]
 }

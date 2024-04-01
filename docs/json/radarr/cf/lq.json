@@ -1,775 +1,775 @@
 {
-  "trash_id": "90a6f9a284dff5103f6346090e6280c8",
-  "trash_scores": {
-    "default": -10000
-  },
-  "name": "LQ",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "24xHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(24xHD)\\b"
-      }
-    },
-    {
-      "name": "41RGB",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(41RGB)$"
-      }
-    },
-    {
-      "name": "4K4U",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(4K4U)$"
-      }
-    },
-    {
-      "name": "AROMA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(AROMA)$"
-      }
-    },
-    {
-      "name": "aXXo",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(aXXo)$"
-      }
-    },
-    {
-      "name": "AZAZE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(AZAZE)$"
-      }
-    },
-    {
-      "name": "BARC0DE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BARC0DE)$"
-      }
-    },
-    {
-      "name": "BdC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BdC)$"
-      }
-    },
-    {
-      "name": "beAst",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(beAst)$"
-      }
-    },
-    {
-      "name": "C4K",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(C4K)$"
-      }
-    },
-    {
-      "name": "CDDHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CDDHD)$"
-      }
-    },
-    {
-      "name": "CHAOS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CHAOS)$"
-      }
-    },
-    {
-      "name": "CHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CHD)$"
-      }
-    },
-    {
-      "name": "CiNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CiNE)$"
-      }
-    },
-    {
-      "name": "CREATiVE24",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CREATiVE24)$"
-      }
-    },
-    {
-      "name": "CrEwSaDe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CrEwSaDe)$"
-      }
-    },
-    {
-      "name": "CTFOH",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CTFOH)$"
-      }
-    },
-    {
-      "name": "d3g",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(d3g)$"
-      }
-    },
-    {
-      "name": "DDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DDR)$"
-      }
-    },
-    {
-      "name": "DepraveD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DepraveD)$"
-      }
-    },
-    {
-      "name": "DNL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DNL)$"
-      }
-    },
-    {
-      "name": "EPiC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EPiC)$"
-      }
-    },
-    {
-      "name": "EuReKA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EuReKA)$"
-      }
-    },
-    {
-      "name": "FaNGDiNG0",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FaNGDiNG0)$"
-      }
-    },
-    {
-      "name": "FGT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FGT)$"
-      }
-    },
-    {
-      "name": "FRDS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FRDS)$"
-      }
-    },
-    {
-      "name": "FZHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FZHD)$"
-      }
-    },
-    {
-      "name": "GalaxyRG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GalaxyRG)$"
-      }
-    },
-    {
-      "name": "GHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GHD)$"
-      }
-    },
-    {
-      "name": "GPTHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GPTHD)$"
-      }
-    },
-    {
-      "name": "HDS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDS)$"
-      }
-    },
-    {
-      "name": "HDT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDT)$"
-      }
-    },
-    {
-      "name": "HDTime",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDTime)$"
-      }
-    },
-    {
-      "name": "HDWinG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDWinG)$"
-      }
-    },
-    {
-      "name": "iNTENSO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iNTENSO)$"
-      }
-    },
-    {
-      "name": "iPlanet",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iPlanet)$"
-      }
-    },
-    {
-      "name": "iVy",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iVy)$"
-      }
-    },
-    {
-      "name": "jennaortega",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(jennaortega(UHD)?)$"
-      }
-    },
-    {
-      "name": "JFF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(JFF)$"
-      }
-    },
-    {
-      "name": "KiNGDOM",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KiNGDOM)$"
-      }
-    },
-    {
-      "name": "KIRA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KIRA)$"
-      }
-    },
-    {
-      "name": "L0SERNIGHT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(L0SERNIGHT)$"
-      }
-    },
-    {
-      "name": "LAMA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LAMA)$"
-      }
-    },
-    {
-      "name": "Leffe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Leffe)$"
-      }
-    },
-    {
-      "name": "Liber8",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Liber8)$"
-      }
-    },
-    {
-      "name": "LiGaS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LiGaS)$"
-      }
-    },
-    {
-      "name": "MarkII",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MarkII)$"
-      }
-    },
-    {
-      "name": "MeGusta",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MeGusta)$"
-      }
-    },
-    {
-      "name": "mHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(mHD)$"
-      }
-    },
-    {
-      "name": "mSD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(mSD)$"
-      }
-    },
-    {
-      "name": "MTeam",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MTeam|MT)$"
-      }
-    },
-    {
-      "name": "MySiLU",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MySiLU)$"
-      }
-    },
-    {
-      "name": "NhaNc3",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NhaNc3)$"
-      }
-    },
-    {
-      "name": "nHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(nHD)$"
-      }
-    },
-    {
-      "name": "nikt0",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(nikt0)$"
-      }
-    },
-    {
-      "name": "NoGroup",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "NoGr(ou)?p"
-      }
-    },
-    {
-      "name": "nSD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(nSD)$"
-      }
-    },
-    {
-      "name": "OFT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(OFT)$"
-      }
-    },
-    {
-      "name": "Pahe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Pahe(\\.(ph|in))?\\b"
-      }
-    },
-    {
-      "name": "PATOMiEL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PATOMiEL)$"
-      }
-    },
-    {
-      "name": "PiRaTeS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PiRaTeS)$"
-      }
-    },
-    {
-      "name": "PRODJi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PRODJi)$"
-      }
-    },
-    {
-      "name": "PSA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PSA)$"
-      }
-    },
-    {
-      "name": "PTNK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PTNK)$"
-      }
-    },
-    {
-      "name": "RARBG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RARBG)$"
-      }
-    },
-    {
-      "name": "RDN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RDN)$"
-      }
-    },
-    {
-      "name": "RiffTrax",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Rifftrax)$"
-      }
-    },
-    {
-      "name": "RU4HD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(RU4HD)$"
-      }
-    },
-    {
-      "name": "SANTi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SANTi)$"
-      }
-    },
-    {
-      "name": "SasukeducK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SasukeducK)$"
-      }
-    },
-    {
-      "name": "Scene",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Scene)$"
-      }
-    },
-    {
-      "name": "STUTTERSHIT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(STUTTERSHIT)$"
-      }
-    },
-    {
-      "name": "SWTYBLZ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SWTYBLZ)$"
-      }
-    },
-    {
-      "name": "tarunk9c",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(tarunk9c)$"
-      }
-    },
-    {
-      "name": "TBS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TBS)$"
-      }
-    },
-    {
-      "name": "TEKNO3D",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TEKNO3D)$"
-      }
-    },
-    {
-      "name": "Tigole",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Tigole)$"
-      }
-    },
-    {
-      "name": "TIKO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TIKO)$"
-      }
-    },
-    {
-      "name": "VISIONPLUSHDR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VISIONPLUSHDR(-X|1000)?)$"
-      }
-    },
-    {
-      "name": "WAF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WAF)$"
-      }
-    },
-    {
-      "name": "WiKi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WiKi)$"
-      }
-    },
-    {
-      "name": "x0r",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(x0r)$"
-      }
-    },
-    {
-      "name": "YIFY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(YIFY)$"
-      }
-    },
-    {
-      "name": "YTS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(YTS(.(MX|LT|AG))?)$"
-      }
-    },
-    {
-      "name": "Zeus",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Zeus)$"
-      }
-    }
-  ]
+    "trash_id": "90a6f9a284dff5103f6346090e6280c8",
+    "trash_scores": {
+        "default": -10000
+    },
+    "name": "LQ",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "24xHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(24xHD)\\b"
+            }
+        },
+        {
+            "name": "41RGB",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(41RGB)$"
+            }
+        },
+        {
+            "name": "4K4U",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(4K4U)$"
+            }
+        },
+        {
+            "name": "AROMA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(AROMA)$"
+            }
+        },
+        {
+            "name": "aXXo",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(aXXo)$"
+            }
+        },
+        {
+            "name": "AZAZE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(AZAZE)$"
+            }
+        },
+        {
+            "name": "BARC0DE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BARC0DE)$"
+            }
+        },
+        {
+            "name": "BdC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BdC)$"
+            }
+        },
+        {
+            "name": "beAst",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(beAst)$"
+            }
+        },
+        {
+            "name": "C4K",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(C4K)$"
+            }
+        },
+        {
+            "name": "CDDHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CDDHD)$"
+            }
+        },
+        {
+            "name": "CHAOS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CHAOS)$"
+            }
+        },
+        {
+            "name": "CHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CHD)$"
+            }
+        },
+        {
+            "name": "CiNE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CiNE)$"
+            }
+        },
+        {
+            "name": "CREATiVE24",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CREATiVE24)$"
+            }
+        },
+        {
+            "name": "CrEwSaDe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CrEwSaDe)$"
+            }
+        },
+        {
+            "name": "CTFOH",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CTFOH)$"
+            }
+        },
+        {
+            "name": "d3g",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(d3g)$"
+            }
+        },
+        {
+            "name": "DDR",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DDR)$"
+            }
+        },
+        {
+            "name": "DepraveD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DepraveD)$"
+            }
+        },
+        {
+            "name": "DNL",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DNL)$"
+            }
+        },
+        {
+            "name": "EPiC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EPiC)$"
+            }
+        },
+        {
+            "name": "EuReKA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EuReKA)$"
+            }
+        },
+        {
+            "name": "FaNGDiNG0",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FaNGDiNG0)$"
+            }
+        },
+        {
+            "name": "FGT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FGT)$"
+            }
+        },
+        {
+            "name": "FRDS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FRDS)$"
+            }
+        },
+        {
+            "name": "FZHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FZHD)$"
+            }
+        },
+        {
+            "name": "GalaxyRG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GalaxyRG)$"
+            }
+        },
+        {
+            "name": "GHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GHD)$"
+            }
+        },
+        {
+            "name": "GPTHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GPTHD)$"
+            }
+        },
+        {
+            "name": "HDS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDS)$"
+            }
+        },
+        {
+            "name": "HDT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDT)$"
+            }
+        },
+        {
+            "name": "HDTime",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDTime)$"
+            }
+        },
+        {
+            "name": "HDWinG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDWinG)$"
+            }
+        },
+        {
+            "name": "iNTENSO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iNTENSO)$"
+            }
+        },
+        {
+            "name": "iPlanet",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iPlanet)$"
+            }
+        },
+        {
+            "name": "iVy",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iVy)$"
+            }
+        },
+        {
+            "name": "jennaortega",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(jennaortega(UHD)?)$"
+            }
+        },
+        {
+            "name": "JFF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(JFF)$"
+            }
+        },
+        {
+            "name": "KiNGDOM",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KiNGDOM)$"
+            }
+        },
+        {
+            "name": "KIRA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KIRA)$"
+            }
+        },
+        {
+            "name": "L0SERNIGHT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(L0SERNIGHT)$"
+            }
+        },
+        {
+            "name": "LAMA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(LAMA)$"
+            }
+        },
+        {
+            "name": "Leffe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Leffe)$"
+            }
+        },
+        {
+            "name": "Liber8",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Liber8)$"
+            }
+        },
+        {
+            "name": "LiGaS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(LiGaS)$"
+            }
+        },
+        {
+            "name": "MarkII",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MarkII)$"
+            }
+        },
+        {
+            "name": "MeGusta",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MeGusta)$"
+            }
+        },
+        {
+            "name": "mHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(mHD)$"
+            }
+        },
+        {
+            "name": "mSD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(mSD)$"
+            }
+        },
+        {
+            "name": "MTeam",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MTeam|MT)$"
+            }
+        },
+        {
+            "name": "MySiLU",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MySiLU)$"
+            }
+        },
+        {
+            "name": "NhaNc3",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NhaNc3)$"
+            }
+        },
+        {
+            "name": "nHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(nHD)$"
+            }
+        },
+        {
+            "name": "nikt0",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(nikt0)$"
+            }
+        },
+        {
+            "name": "NoGroup",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "NoGr(ou)?p"
+            }
+        },
+        {
+            "name": "nSD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(nSD)$"
+            }
+        },
+        {
+            "name": "OFT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(OFT)$"
+            }
+        },
+        {
+            "name": "Pahe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "Pahe(\\.(ph|in))?\\b"
+            }
+        },
+        {
+            "name": "PATOMiEL",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PATOMiEL)$"
+            }
+        },
+        {
+            "name": "PiRaTeS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PiRaTeS)$"
+            }
+        },
+        {
+            "name": "PRODJi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PRODJi)$"
+            }
+        },
+        {
+            "name": "PSA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PSA)$"
+            }
+        },
+        {
+            "name": "PTNK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PTNK)$"
+            }
+        },
+        {
+            "name": "RARBG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(RARBG)$"
+            }
+        },
+        {
+            "name": "RDN",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(RDN)$"
+            }
+        },
+        {
+            "name": "RiffTrax",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Rifftrax)$"
+            }
+        },
+        {
+            "name": "RU4HD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(RU4HD)$"
+            }
+        },
+        {
+            "name": "SANTi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SANTi)$"
+            }
+        },
+        {
+            "name": "SasukeducK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SasukeducK)$"
+            }
+        },
+        {
+            "name": "Scene",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Scene)$"
+            }
+        },
+        {
+            "name": "STUTTERSHIT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(STUTTERSHIT)$"
+            }
+        },
+        {
+            "name": "SWTYBLZ",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SWTYBLZ)$"
+            }
+        },
+        {
+            "name": "tarunk9c",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(tarunk9c)$"
+            }
+        },
+        {
+            "name": "TBS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TBS)$"
+            }
+        },
+        {
+            "name": "TEKNO3D",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TEKNO3D)$"
+            }
+        },
+        {
+            "name": "Tigole",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Tigole)$"
+            }
+        },
+        {
+            "name": "TIKO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TIKO)$"
+            }
+        },
+        {
+            "name": "VISIONPLUSHDR",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(VISIONPLUSHDR(-X|1000)?)$"
+            }
+        },
+        {
+            "name": "WAF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(WAF)$"
+            }
+        },
+        {
+            "name": "WiKi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(WiKi)$"
+            }
+        },
+        {
+            "name": "x0r",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(x0r)$"
+            }
+        },
+        {
+            "name": "YIFY",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(YIFY)$"
+            }
+        },
+        {
+            "name": "YTS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(YTS(.(MX|LT|AG))?)$"
+            }
+        },
+        {
+            "name": "Zeus",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Zeus)$"
+            }
+        }
+    ]
 }

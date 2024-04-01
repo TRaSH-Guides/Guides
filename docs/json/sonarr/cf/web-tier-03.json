@@ -1,83 +1,83 @@
 {
-  "trash_id": "d84935abd3f8556dcd51d4f27e22d0a6",
-  "trash_scores": {
-    "default": 1600,
-    "anime-sonarr": 150
-  },
-  "name": "WEB Tier 03",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "DRACULA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DRACULA)$"
-      }
+    "trash_id": "d84935abd3f8556dcd51d4f27e22d0a6",
+    "trash_scores": {
+        "default": 1600,
+        "anime-sonarr": 150
     },
-    {
-      "name": "NINJACENTRAL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NINJACENTRAL)$"
-      }
-    },
-    {
-      "name": "SLiGNOME",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SLiGNOME)$"
-      }
-    },
-    {
-      "name": "SwAgLaNdEr",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SwAgLaNdEr)$"
-      }
-    },
-    {
-      "name": "T4H",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(T4H)$"
-      }
-    },
-    {
-      "name": "ViSiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ViSiON)$"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "WEB Tier 03",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "DRACULA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DRACULA)$"
+            }
+        },
+        {
+            "name": "NINJACENTRAL",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NINJACENTRAL)$"
+            }
+        },
+        {
+            "name": "SLiGNOME",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SLiGNOME)$"
+            }
+        },
+        {
+            "name": "SwAgLaNdEr",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SwAgLaNdEr)$"
+            }
+        },
+        {
+            "name": "T4H",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(T4H)$"
+            }
+        },
+        {
+            "name": "ViSiON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ViSiON)$"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

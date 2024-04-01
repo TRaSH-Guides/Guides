@@ -1,19 +1,19 @@
 {
-  "trash_id": "e098247bc6652dd88c76644b275260ed",
-  "trash_scores": {
-    "default": 51
-  },
-  "name": "FLUX",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "FLUX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "^(FLUX)$"
-      }
-    }
-  ]
+    "trash_id": "e098247bc6652dd88c76644b275260ed",
+    "trash_scores": {
+        "default": 51
+    },
+    "name": "FLUX",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "FLUX",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "^(FLUX)$"
+            }
+        }
+    ]
 }

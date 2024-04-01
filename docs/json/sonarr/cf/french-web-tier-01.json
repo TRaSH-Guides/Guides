@@ -1,110 +1,110 @@
 {
-  "trash_id": "ddb8eaa9c85a549c50034d280539d54d",
-  "trash_scores": {
-    "default": 1700,
-    "french-anime": 1100
-  },
-  "name": "FR WEB Tier 01",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
+    "trash_id": "ddb8eaa9c85a549c50034d280539d54d",
+    "trash_scores": {
+        "default": 1700,
+        "french-anime": 1100
     },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "BONBON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BONBON)$"
-      }
-    },
-    {
-      "name": "FCK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FCK)$"
-      }
-    },
-    {
-      "name": "FW",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FW)$"
-      }
-    },
-    {
-      "name": "FRATERNiTY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FRATERNiTY)$"
-      }
-    },
-    {
-      "name": "MTDK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MTDK)$"
-      }
-    },
-    {
-      "name": "NoLo",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NoLo)$"
-      }
-    },
-    {
-      "name": "PATOPESTO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PATOPESTO)$"
-      }
-    },
-    {
-      "name": "Psaro",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Psaro)$"
-      }
-    },
-    {
-      "name": "TFA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TFA)$"
-      }
-    }
-  ]
+    "name": "FR WEB Tier 01",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        },
+        {
+            "name": "BONBON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BONBON)$"
+            }
+        },
+        {
+            "name": "FCK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FCK)$"
+            }
+        },
+        {
+            "name": "FW",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FW)$"
+            }
+        },
+        {
+            "name": "FRATERNiTY",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FRATERNiTY)$"
+            }
+        },
+        {
+            "name": "MTDK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MTDK)$"
+            }
+        },
+        {
+            "name": "NoLo",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NoLo)$"
+            }
+        },
+        {
+            "name": "PATOPESTO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PATOPESTO)$"
+            }
+        },
+        {
+            "name": "Psaro",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Psaro)$"
+            }
+        },
+        {
+            "name": "TFA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TFA)$"
+            }
+        }
+    ]
 }

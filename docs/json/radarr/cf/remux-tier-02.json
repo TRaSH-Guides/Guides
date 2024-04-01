@@ -1,83 +1,83 @@
 {
-  "trash_id": "9f98181fe5a3fbeb0cc29340da2a468a",
-  "trash_scores": {
-    "default": 1900,
-    "anime-radarr": 1000
-  },
-  "name": "Remux Tier 02",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "Remux",
-      "implementation": "QualityModifierSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
+    "trash_id": "9f98181fe5a3fbeb0cc29340da2a468a",
+    "trash_scores": {
+        "default": 1900,
+        "anime-radarr": 1000
     },
-    {
-      "name": "CiNEPHiLES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CiNEPHiLES)$"
-      }
-    },
-    {
-      "name": "Flights",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Flights)$"
-      }
-    },
-    {
-      "name": "KRaLiMaRKo",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KRaLiMaRKo)$"
-      }
-    },
-    {
-      "name": "NCmt",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NCmt)$"
-      }
-    },
-    {
-      "name": "playBD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(playBD)$"
-      }
-    },
-    {
-      "name": "SURFINBIRD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SURFINBIRD)$"
-      }
-    },
-    {
-      "name": "TEPES",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TEPES)$"
-      }
-    }
-  ]
+    "name": "Remux Tier 02",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "Remux",
+            "implementation": "QualityModifierSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 5
+            }
+        },
+        {
+            "name": "CiNEPHiLES",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CiNEPHiLES)$"
+            }
+        },
+        {
+            "name": "Flights",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Flights)$"
+            }
+        },
+        {
+            "name": "KRaLiMaRKo",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KRaLiMaRKo)$"
+            }
+        },
+        {
+            "name": "NCmt",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NCmt)$"
+            }
+        },
+        {
+            "name": "playBD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(playBD)$"
+            }
+        },
+        {
+            "name": "SURFINBIRD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SURFINBIRD)$"
+            }
+        },
+        {
+            "name": "TEPES",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TEPES)$"
+            }
+        }
+    ]
 }

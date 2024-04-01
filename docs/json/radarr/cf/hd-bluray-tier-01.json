@@ -1,228 +1,228 @@
 {
-  "trash_id": "ed27ebfef2f323e964fb1f61391bcb35",
-  "trash_scores": {
-    "default": 1800,
-    "sqp-1-1080p": 1100,
-    "sqp-1-2160p": 1100
-  },
-  "name": "HD Bluray Tier 01",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "BLURAY",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 9
-      }
+    "trash_id": "ed27ebfef2f323e964fb1f61391bcb35",
+    "trash_scores": {
+        "default": 1800,
+        "sqp-1-1080p": 1100,
+        "sqp-1-2160p": 1100
     },
-    {
-      "name": "Not REMUX",
-      "implementation": "QualityModifierSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    },
-    {
-      "name": "Not 2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
-      "name": "BBQ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BBQ)$"
-      }
-    },
-    {
-      "name": "BMF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BMF)$"
-      }
-    },
-    {
-      "name": "c0kE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(c0kE)$"
-      }
-    },
-    {
-      "name": "Chotab",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Chotab)$"
-      }
-    },
-    {
-      "name": "CRiSC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CRiSC)$"
-      }
-    },
-    {
-      "name": "CtrlHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CtrlHD)$"
-      }
-    },
-    {
-      "name": "D-Z0N3",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(D-Z0N3)$"
-      }
-    },
-    {
-      "name": "Dariush",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Dariush)$"
-      }
-    },
-    {
-      "name": "decibeL",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(decibeL)$"
-      }
-    },
-    {
-      "name": "DON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DON)$"
-      }
-    },
-    {
-      "name": "EbP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EbP)$"
-      }
-    },
-    {
-      "name": "EDPH",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EDPH)$"
-      }
-    },
-    {
-      "name": "Geek",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Geek)$"
-      }
-    },
-    {
-      "name": "LolHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LolHD)$"
-      }
-    },
-    {
-      "name": "NCmt",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NCmt)$"
-      }
-    },
-    {
-      "name": "PTer",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PTer)$"
-      }
-    },
-    {
-      "name": "TayTO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TayTO)$"
-      }
-    },
-    {
-      "name": "TDD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TDD)$"
-      }
-    },
-    {
-      "name": "TnP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TnP)$"
-      }
-    },
-    {
-      "name": "VietHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VietHD)$"
-      }
-    },
-    {
-      "name": "ZQ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ZQ)$"
-      }
-    }
-  ]
+    "name": "HD Bluray Tier 01",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "BLURAY",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 9
+            }
+        },
+        {
+            "name": "Not REMUX",
+            "implementation": "QualityModifierSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 5
+            }
+        },
+        {
+            "name": "Not 2160p",
+            "implementation": "ResolutionSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 2160
+            }
+        },
+        {
+            "name": "BBQ",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BBQ)$"
+            }
+        },
+        {
+            "name": "BMF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BMF)$"
+            }
+        },
+        {
+            "name": "c0kE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(c0kE)$"
+            }
+        },
+        {
+            "name": "Chotab",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Chotab)$"
+            }
+        },
+        {
+            "name": "CRiSC",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CRiSC)$"
+            }
+        },
+        {
+            "name": "CtrlHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CtrlHD)$"
+            }
+        },
+        {
+            "name": "D-Z0N3",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(D-Z0N3)$"
+            }
+        },
+        {
+            "name": "Dariush",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Dariush)$"
+            }
+        },
+        {
+            "name": "decibeL",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(decibeL)$"
+            }
+        },
+        {
+            "name": "DON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DON)$"
+            }
+        },
+        {
+            "name": "EbP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EbP)$"
+            }
+        },
+        {
+            "name": "EDPH",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EDPH)$"
+            }
+        },
+        {
+            "name": "Geek",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Geek)$"
+            }
+        },
+        {
+            "name": "LolHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(LolHD)$"
+            }
+        },
+        {
+            "name": "NCmt",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NCmt)$"
+            }
+        },
+        {
+            "name": "PTer",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PTer)$"
+            }
+        },
+        {
+            "name": "TayTO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TayTO)$"
+            }
+        },
+        {
+            "name": "TDD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TDD)$"
+            }
+        },
+        {
+            "name": "TnP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TnP)$"
+            }
+        },
+        {
+            "name": "VietHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(VietHD)$"
+            }
+        },
+        {
+            "name": "ZQ",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ZQ)$"
+            }
+        }
+    ]
 }

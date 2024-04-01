@@ -1,37 +1,37 @@
 {
-  "trash_id": "a880d6abc21e7c16884f3ae393f84179",
-  "trash_scores": {
-    "default": 80
-  },
-  "name": "HMAX",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "HBO Max",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
-      }
+    "trash_id": "a880d6abc21e7c16884f3ae393f84179",
+    "trash_scores": {
+        "default": 80
     },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "HMAX",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "HBO Max",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

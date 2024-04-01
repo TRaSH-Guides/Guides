@@ -1,37 +1,37 @@
 {
-  "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
-  "trash_scores": {
-    "default": 80
-  },
-  "name": "QIBI",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "Quibi",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\b(qibi|quibi)\\b"
-      }
+    "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
+    "trash_scores": {
+        "default": 80
     },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "QIBI",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "Quibi",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "\\b(qibi|quibi)\\b"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

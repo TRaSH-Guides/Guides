@@ -1,217 +1,217 @@
 {
-  "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
-  "trash_scores": {
-    "default": -10000
-  },
-  "name": "LQ",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "BRiNK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BRiNK)$"
-      }
+    "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
+    "trash_scores": {
+        "default": -10000
     },
-    {
-      "name": "CHX",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CHX)$"
-      }
-    },
-    {
-      "name": "CTFOH",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CTFOH)$"
-      }
-    },
-    {
-      "name": "d3g",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(d3g)$"
-      }
-    },
-    {
-      "name": "EVO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EVO)$"
-      }
-    },
-    {
-      "name": "FGT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FGT)$"
-      }
-    },
-    {
-      "name": "GHOSTS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GHOSTS)$"
-      }
-    },
-    {
-      "name": "HiQVE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HiQVE)$"
-      }
-    },
-    {
-      "name": "iNTENSO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iNTENSO)$"
-      }
-    },
-    {
-      "name": "iVy",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(iVy)$"
-      }
-    },
-    {
-      "name": "JFF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(JFF)$"
-      }
-    },
-    {
-      "name": "MeGusta",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MeGusta)$"
-      }
-    },
-    {
-      "name": "NERO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NERO)$"
-      }
-    },
-    {
-      "name": "nhanc3",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(nhanc3)$"
-      }
-    },
-    {
-      "name": "Pahe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "Pahe(\\.(ph|in))?\\b"
-      }
-    },
-    {
-      "name": "PSA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PSA)$"
-      }
-    },
-    {
-      "name": "SasukeducK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SasukeducK)$"
-      }
-    },
-    {
-      "name": "TBS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TBS)$"
-      }
-    },
-    {
-      "name": "TG",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TG)$"
-      }
-    },
-    {
-      "name": "VIDEOHOLE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VIDEOHOLE)$"
-      }
-    },
-    {
-      "name": "worldmkv",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(worldmkv)$"
-      }
-    },
-    {
-      "name": "XLF",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(XLF)$"
-      }
-    },
-    {
-      "name": "Zero00",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Zero00)$"
-      }
-    }
-  ]
+    "name": "LQ",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "BRiNK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BRiNK)$"
+            }
+        },
+        {
+            "name": "CHX",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CHX)$"
+            }
+        },
+        {
+            "name": "CTFOH",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CTFOH)$"
+            }
+        },
+        {
+            "name": "d3g",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(d3g)$"
+            }
+        },
+        {
+            "name": "EVO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EVO)$"
+            }
+        },
+        {
+            "name": "FGT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FGT)$"
+            }
+        },
+        {
+            "name": "GHOSTS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GHOSTS)$"
+            }
+        },
+        {
+            "name": "HiQVE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HiQVE)$"
+            }
+        },
+        {
+            "name": "iNTENSO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iNTENSO)$"
+            }
+        },
+        {
+            "name": "iVy",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(iVy)$"
+            }
+        },
+        {
+            "name": "JFF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(JFF)$"
+            }
+        },
+        {
+            "name": "MeGusta",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MeGusta)$"
+            }
+        },
+        {
+            "name": "NERO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NERO)$"
+            }
+        },
+        {
+            "name": "nhanc3",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(nhanc3)$"
+            }
+        },
+        {
+            "name": "Pahe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "Pahe(\\.(ph|in))?\\b"
+            }
+        },
+        {
+            "name": "PSA",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PSA)$"
+            }
+        },
+        {
+            "name": "SasukeducK",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SasukeducK)$"
+            }
+        },
+        {
+            "name": "TBS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TBS)$"
+            }
+        },
+        {
+            "name": "TG",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TG)$"
+            }
+        },
+        {
+            "name": "VIDEOHOLE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(VIDEOHOLE)$"
+            }
+        },
+        {
+            "name": "worldmkv",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(worldmkv)$"
+            }
+        },
+        {
+            "name": "XLF",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(XLF)$"
+            }
+        },
+        {
+            "name": "Zero00",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Zero00)$"
+            }
+        }
+    ]
 }

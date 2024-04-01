@@ -1,38 +1,38 @@
 {
-  "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
-  "trash_scores": {
-    "default": -10000
-  },
-  "trash_regex": "https://regex101.com/r/c6Dobc/1",
-  "name": "3D",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "3D",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(3d|sbs|half[ .-]ou|half[ .-]sbs)\\b"
-      }
+    "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
+    "trash_scores": {
+        "default": -10000
     },
-    {
-      "name": "BluRay3D",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BluRay3D)\\b"
-      }
-    },
-    {
-      "name": "BD3D",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(BD3D)\\b"
-      }
-    }
-  ]
+    "trash_regex": "https://regex101.com/r/c6Dobc/1",
+    "name": "3D",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "3D",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "(?<=\\b[12]\\d{3}\\b).*\\b(3d|sbs|half[ .-]ou|half[ .-]sbs)\\b"
+            }
+        },
+        {
+            "name": "BluRay3D",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(BluRay3D)\\b"
+            }
+        },
+        {
+            "name": "BD3D",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(BD3D)\\b"
+            }
+        }
+    ]
 }

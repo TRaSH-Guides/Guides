@@ -1,8 +1,8 @@
 {
-  "files.associations": {
-    ".pages": "yaml"
-  },
-  "yaml.schemas": {
-    "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "untitled:Untitled-1"
-  }
+    "files.associations": {
+        ".pages": "yaml"
+    },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "untitled:Untitled-1"
+    }
 }

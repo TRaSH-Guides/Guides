@@ -1,26 +1,26 @@
 {
-  "trash_id": "29b5f7b1a5f20f64228786c3ab1bdc7d",
-  "trash_regex": "https://regex101.com/r/qgQMab/1",
-  "name": "VF2",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "VF2",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(VF2)\\b"
-      }
-    },
-    {
-      "name": "Both VFF and VFQ",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(VF(F|Q)[ .]VF(F|Q))\\b"
-      }
-    }
-  ]
+    "trash_id": "29b5f7b1a5f20f64228786c3ab1bdc7d",
+    "trash_regex": "https://regex101.com/r/qgQMab/1",
+    "name": "VF2",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "VF2",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(VF2)\\b"
+            }
+        },
+        {
+            "name": "Both VFF and VFQ",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(VF(F|Q)[ .]VF(F|Q))\\b"
+            }
+        }
+    ]
 }

@@ -1,101 +1,101 @@
 {
-  "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
-  "trash_scores": {
-    "default": 1600,
-    "french-anime": 1100
-  },
-  "name": "FR WEB Tier 03",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
+    "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
+    "trash_scores": {
+        "default": 1600,
+        "french-anime": 1100
     },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    },
-    {
-      "name": "ARK01",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ARK01)$"
-      }
-    },
-    {
-      "name": "BraD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BraD)$"
-      }
-    },
-    {
-      "name": "dRuIdE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(dRuIdE)$"
-      }
-    },
-    {
-      "name": "FTMVHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FTMVHD)$"
-      }
-    },
-    {
-      "name": "LAZARUS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LAZARUS)$"
-      }
-    },
-    {
-      "name": "MYSTERiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MYSTERiON)$"
-      }
-    },
-    {
-      "name": "Scaph",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Scaph)$"
-      }
-    },
-    {
-      "name": "WQM",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WQM)$"
-      }
-    }
-  ]
+    "name": "FR WEB Tier 03",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        },
+        {
+            "name": "ARK01",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ARK01)$"
+            }
+        },
+        {
+            "name": "BraD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BraD)$"
+            }
+        },
+        {
+            "name": "dRuIdE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(dRuIdE)$"
+            }
+        },
+        {
+            "name": "FTMVHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FTMVHD)$"
+            }
+        },
+        {
+            "name": "LAZARUS",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(LAZARUS)$"
+            }
+        },
+        {
+            "name": "MYSTERiON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MYSTERiON)$"
+            }
+        },
+        {
+            "name": "Scaph",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Scaph)$"
+            }
+        },
+        {
+            "name": "WQM",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(WQM)$"
+            }
+        }
+    ]
 }

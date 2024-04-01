@@ -1,37 +1,37 @@
 {
-  "trash_id": "0f12c086e289cf966fa5948eac571f44",
-  "trash_scores": {
-    "default": 100
-  },
-  "name": "Hybrid",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "Hybrid",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bhybrid(\\b|\\d)"
-      }
+    "trash_id": "0f12c086e289cf966fa5948eac571f44",
+    "trash_scores": {
+        "default": 100
     },
-    {
-      "name": "Not Hybrid Release Group",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\b(HYBRID)\\b"
-      }
-    },
-    {
-      "name": "Remux",
-      "implementation": "QualityModifierSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    }
-  ]
+    "name": "Hybrid",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "Hybrid",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\bhybrid(\\b|\\d)"
+            }
+        },
+        {
+            "name": "Not Hybrid Release Group",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": "\\b(HYBRID)\\b"
+            }
+        },
+        {
+            "name": "Remux",
+            "implementation": "QualityModifierSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 5
+            }
+        }
+    ]
 }

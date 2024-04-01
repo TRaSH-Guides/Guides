@@ -1,217 +1,217 @@
 {
-  "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
-  "trash_scores": {
-    "default": 1500
-  },
-  "name": "FR Scene Groups",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "#",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(4FR)$"
-      }
+    "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
+    "trash_scores": {
+        "default": 1500
     },
-    {
-      "name": "A",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AKLHD|AMB3R|ANMWR|AVON|AYMO|AZR)$"
-      }
-    },
-    {
-      "name": "B",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)$"
-      }
-    },
-    {
-      "name": "C",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)$"
-      }
-    },
-    {
-      "name": "D",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)$"
-      }
-    },
-    {
-      "name": "E",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ENJOi|EUBDS)$"
-      }
-    },
-    {
-      "name": "F",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)$"
-      }
-    },
-    {
-      "name": "G",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(GHOULS|GiMBAP|GLiMMER|Goatlove)$"
-      }
-    },
-    {
-      "name": "H",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)$"
-      }
-    },
-    {
-      "name": "J",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(JMT|JoKeR|JUSTICELEAGUE)$"
-      }
-    },
-    {
-      "name": "K",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KAZETV)$"
-      }
-    },
-    {
-      "name": "L",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)$"
-      }
-    },
-    {
-      "name": "M",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)$"
-      }
-    },
-    {
-      "name": "N",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NERDHD|NERO|NrZ|NTK)$"
-      }
-    },
-    {
-      "name": "O",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(OBSTACLE|OohLaLa|OOKAMI)$"
-      }
-    },
-    {
-      "name": "P",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
-      }
-    },
-    {
-      "name": "R",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ROUGH|RUDE|Ryotox)$"
-      }
-    },
-    {
-      "name": "S",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"
-      }
-    },
-    {
-      "name": "T",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)$"
-      }
-    },
-    {
-      "name": "U",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY)$"
-      }
-    },
-    {
-      "name": "V",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VENUE|VFC|VoMiT)$"
-      }
-    },
-    {
-      "name": "W",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Wednesday29th)$"
-      }
-    },
-    {
-      "name": "Z",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ZEST|ZiRCON)$"
-      }
-    }
-  ]
+    "name": "FR Scene Groups",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "#",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(4FR)$"
+            }
+        },
+        {
+            "name": "A",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(AiR3D|AiRDOCS|AiRFORCE|AiRLiNE|AiRTV|AKLHD|AMB3R|ANMWR|AVON|AYMO|AZR)$"
+            }
+        },
+        {
+            "name": "B",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)$"
+            }
+        },
+        {
+            "name": "C",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CARAPiLS|CiELOS|CiNEMA|CMBHD|CoRa|COUAC|CRYPT0)$"
+            }
+        },
+        {
+            "name": "D",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(D4KiD|DEAL|DiEBEX|DUPLI|DUSS)$"
+            }
+        },
+        {
+            "name": "E",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ENJOi|EUBDS)$"
+            }
+        },
+        {
+            "name": "F",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FHD|FiDELiO|FiDO|ForceBleue|FREAMON|FRENCHDEADPOOL2|FRiES|FUTiL|FWDHD)$"
+            }
+        },
+        {
+            "name": "G",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(GHOULS|GiMBAP|GLiMMER|Goatlove)$"
+            }
+        },
+        {
+            "name": "H",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HERC|HiggsBoson|HiRoSHiMa|HYBRiS|HyDe)$"
+            }
+        },
+        {
+            "name": "J",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(JMT|JoKeR|JUSTICELEAGUE)$"
+            }
+        },
+        {
+            "name": "K",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(KAZETV)$"
+            }
+        },
+        {
+            "name": "L",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(L0SERNiGHT|LaoZi|LeON|LOFiDEL|LOST|LOWIMDB|LYPSG)$"
+            }
+        },
+        {
+            "name": "M",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MAGiCAL|MANGACiTY|MAXAGAZ|MaxiBeNoul|McNULTY|MELBA|MiND|MORELAND|MUNSTER|MUxHD)$"
+            }
+        },
+        {
+            "name": "N",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NERDHD|NERO|NrZ|NTK)$"
+            }
+        },
+        {
+            "name": "O",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(OBSTACLE|OohLaLa|OOKAMI)$"
+            }
+        },
+        {
+            "name": "P",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
+            }
+        },
+        {
+            "name": "R",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ROUGH|RUDE|Ryotox)$"
+            }
+        },
+        {
+            "name": "S",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"
+            }
+        },
+        {
+            "name": "T",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(tFR|THENiGHTMAREiNHD|THiNK|THREESOME|TiMELiNE|TSuNaMi)$"
+            }
+        },
+        {
+            "name": "U",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(UKDHD|UKDTV|ULSHD|Ulysse|USUNSKiLLED|URY)$"
+            }
+        },
+        {
+            "name": "V",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(VENUE|VFC|VoMiT)$"
+            }
+        },
+        {
+            "name": "W",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Wednesday29th)$"
+            }
+        },
+        {
+            "name": "Z",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ZEST|ZiRCON)$"
+            }
+        }
+    ]
 }

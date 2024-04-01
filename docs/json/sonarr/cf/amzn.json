@@ -1,38 +1,38 @@
 {
-  "trash_id": "d660701077794679fd59e8bdf4ce3a29",
-  "trash_scores": {
-    "default": 70,
-    "anime-sonarr": 3
-  },
-  "name": "AMZN",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "Amazon",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\b(amzn|amazon(hd)?)\\b"
-      }
+    "trash_id": "d660701077794679fd59e8bdf4ce3a29",
+    "trash_scores": {
+        "default": 70,
+        "anime-sonarr": 3
     },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
-    }
-  ]
+    "name": "AMZN",
+    "includeCustomFormatWhenRenaming": true,
+    "specifications": [
+        {
+            "name": "Amazon",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": "\\b(amzn|amazon(hd)?)\\b"
+            }
+        },
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 3
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 4
+            }
+        }
+    ]
 }

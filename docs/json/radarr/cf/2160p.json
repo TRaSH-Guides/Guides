@@ -1,23 +1,23 @@
 {
-  "trash_id": "fb392fb0d61a010ae38e49ceaa24a1ef",
-  "trash_scores": {
-    "default": 100,
-    "sqp-2": 151,
-    "sqp-3": 151,
-    "sqp-4": 151,
-    "sqp-5": 151
-  },
-  "name": "2160p",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    }
-  ]
+    "trash_id": "fb392fb0d61a010ae38e49ceaa24a1ef",
+    "trash_scores": {
+        "default": 100,
+        "sqp-2": 151,
+        "sqp-3": 151,
+        "sqp-4": 151,
+        "sqp-5": 151
+    },
+    "name": "2160p",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "2160p",
+            "implementation": "ResolutionSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 2160
+            }
+        }
+    ]
 }

@@ -1,136 +1,136 @@
 {
-  "trash_id": "57f34251344be2e283fc30e00e458be6",
-  "trash_scores": {
-    "default": 1750
-  },
-  "name": "FR HD Bluray Tier 02",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "BLURAY",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 9
-      }
+    "trash_id": "57f34251344be2e283fc30e00e458be6",
+    "trash_scores": {
+        "default": 1750
     },
-    {
-      "name": "Not Remux",
-      "implementation": "QualityModifierSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 5
-      }
-    },
-    {
-      "name": "Not 2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
-      "name": "FUJiSAN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FUJiSAN)$"
-      }
-    },
-    {
-      "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HANAMi)$"
-      }
-    },
-    {
-      "name": "HDForever",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HDForever)$"
-      }
-    },
-    {
-      "name": "HeavyWeight",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HeavyWeight)$"
-      }
-    },
-    {
-      "name": "MARBLECAKE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MARBLECAKE)$"
-      }
-    },
-    {
-      "name": "MYSTERiON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(MYSTERiON)$"
-      }
-    },
-    {
-      "name": "NoNE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NoNE)$"
-      }
-    },
-    {
-      "name": "ONLY",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ONLY)$"
-      }
-    },
-    {
-      "name": "ONLYMOViE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ONLYMOViE)$"
-      }
-    },
-    {
-      "name": "TkHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TkHD)$"
-      }
-    },
-    {
-      "name": "UTT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(UTT)$"
-      }
-    }
-  ]
+    "name": "FR HD Bluray Tier 02",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "BLURAY",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 9
+            }
+        },
+        {
+            "name": "Not Remux",
+            "implementation": "QualityModifierSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 5
+            }
+        },
+        {
+            "name": "Not 2160p",
+            "implementation": "ResolutionSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 2160
+            }
+        },
+        {
+            "name": "FUJiSAN",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FUJiSAN)$"
+            }
+        },
+        {
+            "name": "HANAMi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HANAMi)$"
+            }
+        },
+        {
+            "name": "HDForever",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HDForever)$"
+            }
+        },
+        {
+            "name": "HeavyWeight",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HeavyWeight)$"
+            }
+        },
+        {
+            "name": "MARBLECAKE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MARBLECAKE)$"
+            }
+        },
+        {
+            "name": "MYSTERiON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(MYSTERiON)$"
+            }
+        },
+        {
+            "name": "NoNE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NoNE)$"
+            }
+        },
+        {
+            "name": "ONLY",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ONLY)$"
+            }
+        },
+        {
+            "name": "ONLYMOViE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ONLYMOViE)$"
+            }
+        },
+        {
+            "name": "TkHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TkHD)$"
+            }
+        },
+        {
+            "name": "UTT",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(UTT)$"
+            }
+        }
+    ]
 }

@@ -1,118 +1,118 @@
 {
-  "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
-  "trash_scores": {
-    "default": 1650
-  },
-  "name": "FR WEB Tier 02",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
+    "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
+    "trash_scores": {
+        "default": 1650
     },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
-      }
-    },
-    {
-      "name": "ALLDAYiN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ALLDAYiN)$"
-      }
-    },
-    {
-      "name": "ARK01",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ARK01)$"
-      }
-    },
-    {
-      "name": "FUJiSAN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FUJiSAN)$"
-      }
-    },
-    {
-      "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HANAMi)$"
-      }
-    },
-    {
-      "name": "HeavyWeight",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HeavyWeight)$"
-      }
-    },
-    {
-      "name": "NEO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NEO)$"
-      }
-    },
-    {
-      "name": "NoNe",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NoNe)$"
-      }
-    },
-    {
-      "name": "ONLYMOViE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ONLYMOViE)$"
-      }
-    },
-    {
-      "name": "Slay3R",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Slay3R)$"
-      }
-    },
-    {
-      "name": "TkHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(TkHD)$"
-      }
-    }
-  ]
+    "name": "FR WEB Tier 02",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "WEBDL",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 7
+            }
+        },
+        {
+            "name": "WEBRIP",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": 8
+            }
+        },
+        {
+            "name": "ALLDAYiN",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ALLDAYiN)$"
+            }
+        },
+        {
+            "name": "ARK01",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ARK01)$"
+            }
+        },
+        {
+            "name": "FUJiSAN",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(FUJiSAN)$"
+            }
+        },
+        {
+            "name": "HANAMi",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HANAMi)$"
+            }
+        },
+        {
+            "name": "HeavyWeight",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(HeavyWeight)$"
+            }
+        },
+        {
+            "name": "NEO",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NEO)$"
+            }
+        },
+        {
+            "name": "NoNe",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NoNe)$"
+            }
+        },
+        {
+            "name": "ONLYMOViE",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(ONLYMOViE)$"
+            }
+        },
+        {
+            "name": "Slay3R",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Slay3R)$"
+            }
+        },
+        {
+            "name": "TkHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(TkHD)$"
+            }
+        }
+    ]
 }

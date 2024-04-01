@@ -1,91 +1,91 @@
 {
-  "trash_id": "d6819cba26b1a6508138d25fb5e32293",
-  "trash_scores": {
-    "default": 1800
-  },
-  "name": "HD Bluray Tier 01",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [
-    {
-      "name": "BLURAY",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 6
-      }
+    "trash_id": "d6819cba26b1a6508138d25fb5e32293",
+    "trash_scores": {
+        "default": 1800
     },
-    {
-      "name": "Not REMUX",
-      "implementation": "SourceSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "Not 2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
-      "name": "Chotab",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Chotab)$"
-      }
-    },
-    {
-      "name": "CtrlHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(CtrlHD)$"
-      }
-    },
-    {
-      "name": "DON",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DON)$"
-      }
-    },
-    {
-      "name": "EbP",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(EbP)$"
-      }
-    },
-    {
-      "name": "NTb",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NTb)$"
-      }
-    },
-    {
-      "name": "PTer",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PTer)$"
-      }
-    }
-  ]
+    "name": "HD Bluray Tier 01",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "BLURAY",
+            "implementation": "SourceSpecification",
+            "negate": false,
+            "required": true,
+            "fields": {
+                "value": 6
+            }
+        },
+        {
+            "name": "Not REMUX",
+            "implementation": "SourceSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 7
+            }
+        },
+        {
+            "name": "Not 2160p",
+            "implementation": "ResolutionSpecification",
+            "negate": true,
+            "required": true,
+            "fields": {
+                "value": 2160
+            }
+        },
+        {
+            "name": "Chotab",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(Chotab)$"
+            }
+        },
+        {
+            "name": "CtrlHD",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(CtrlHD)$"
+            }
+        },
+        {
+            "name": "DON",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(DON)$"
+            }
+        },
+        {
+            "name": "EbP",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(EbP)$"
+            }
+        },
+        {
+            "name": "NTb",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(NTb)$"
+            }
+        },
+        {
+            "name": "PTer",
+            "implementation": "ReleaseGroupSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "^(PTer)$"
+            }
+        }
+    ]
 }

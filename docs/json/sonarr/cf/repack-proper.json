@@ -1,37 +1,38 @@
 {
-  "trash_id": "ec8fa7296b64e8cd390a1600981f3923",
-  "trash_scores": {
-    "default": 5
-  },
-  "trash_regex": "https://regex101.com/r/S91wR8/2",
-  "name": "Repack/Proper",
-  "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
-          "name": "Repack",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Repack)\\b"
-          }
-      },
-      {
-          "name": "Proper",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Proper)\\b"
-          }
-      },
-      {
-          "name": "Rerip",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Rerip)\\b"
-          }
-      }
-  ]
+    "trash_id": "ec8fa7296b64e8cd390a1600981f3923",
+    "trash_scores": {
+        "default": 5
+    },
+    "trash_regex": "https://regex101.com/r/S91wR8/2",
+    "name": "Repack/Proper",
+    "includeCustomFormatWhenRenaming": false,
+    "specifications": [
+        {
+            "name": "Repack",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(Repack)\\b"
+            }
+        },
+        {
+            "name": "Proper",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(Proper)\\b"
+            }
+        },
+        {
+            "name": "Rerip",
+            "implementation": "ReleaseTitleSpecification",
+            "negate": false,
+            "required": false,
+            "fields": {
+                "value": "\\b(Rerip)\\b"
+            }
+        }
+    ]
 }
