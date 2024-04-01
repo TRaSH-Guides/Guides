@@ -1,3 +1,9 @@
+# 2024-04-01 16:30
+- [feat(guide): minor changes to several guides](https://github.com/TRaSH-Guides/Guides/pull/1858)
+- [feat(guide): Update Sonarr Remux Tiers](https://github.com/TRaSH-Guides/Guides/pull/1862)
+- [feat(sonarr): Update Season Pack CF and guide](https://github.com/TRaSH-Guides/Guides/pull/1872)
+- [fix(guide): Fix broken notifiarr link on plex tips](https://github.com/TRaSH-Guides/Guides/pull/1865)
+
 # 2024-03-24 12:30
 - [feat(guide): Move RlsGrps Between Tiers](https://github.com/TRaSH-Guides/Guides/pull/1857)
 
