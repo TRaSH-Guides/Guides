@@ -23,8 +23,8 @@ function fetchPage() {
       }
 
       response.data.forEach((user) => {
-        // Exclude bots
-        if (user.type === 'Bot' || user.login.toLowerCase().includes('bot')) return;
+        // Exclude bots and actions-user
+        if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user') return;
 
         if (index % 6 === 0) {
           contributors += '<tr>';
@@ -33,7 +33,7 @@ function fetchPage() {
         const userHtml = `
 <td align="center">
     <a href="${user.html_url}">
-        <img src="${user.avatar_url}&v=4" width="50;" alt="${user.login}"/>
+        <img src="${user.avatar_url}&v=4" width="100;" alt="${user.login}"/>
         <br />
         <sub><b>${user.login}</b></sub>
     </a>
