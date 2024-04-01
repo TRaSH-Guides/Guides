@@ -1850,15 +1850,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#season-pack-new-release-type-handling-sonarr-v4021262-only" class="md-nav__link">
-    <span class="md-ellipsis">
-      Season Pack (New "Release Type" Handling, Sonarr v4.0.2.1262+ only)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#x265-no-hdrdv" class="md-nav__link">
     <span class="md-ellipsis">
       x265 (no HDR/DV)
@@ -5874,15 +5865,6 @@
   <a href="#season-pack" class="md-nav__link">
     <span class="md-ellipsis">
       Season Pack
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#season-pack-new-release-type-handling-sonarr-v4021262-only" class="md-nav__link">
-    <span class="md-ellipsis">
-      Season Pack (New "Release Type" Handling, Sonarr v4.0.2.1262+ only)
     </span>
   </a>
   
@@ -12030,51 +12012,10 @@ For example, a lot of EVO releases end up stripped of the group name so they app
 <p><sub><sup><a href="#index">TOP</a></sup></p>
 <hr />
 <h3 id="season-pack">Season Pack<a class="headerlink" href="#season-pack" title="Permanent link"></a></h3>
-<details class="question">
-<summary>Season Pack - [Click to show/hide]</summary>
-<p>This Custom Format can be used to prefer or exclude season packs</p>
-<ul>
-<li>Give it a score of <code>10</code> if you prefer a season pack.</li>
-<li>Give it a score of <code>-10000</code> if you prefer to not download season packs.</li>
-<li><code>/\bS\d+\b(?!E\d+\b)/i</code> season packs are preferred: however, given the folder name is ignored the issue occurs as the file names would not be a season pack.</li>
-</ul>
-<div class="admonition danger">
-<p class="admonition-title">WARNING</p>
-<ul>
-<li>This Custom Format could result in a download loop <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
-<li>This will upgrade also your already downloaded single episodes <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
-</ul>
-</div>
-</details>
-<details class="example">
-<summary>JSON - [Click to show/hide]</summary>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3bc5f395426614e155e585a2f056cdf1&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Pack&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Packs&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\bS\\d+\\b(?!E\\d+\\b)&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-</details>
-<p><sub><sup><a href="#index">TOP</a></sup></p>
-<hr />
-<h3 id="season-pack-new-release-type-handling-sonarr-v4021262-only">Season Pack (New "Release Type" Handling, Sonarr v4.0.2.1262+ only)<a class="headerlink" href="#season-pack-new-release-type-handling-sonarr-v4021262-only" title="Permanent link"></a></h3>
 <div class="admonition danger">
 <p class="admonition-title">WARNING</p>
 <ul>
 <li>This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.</li>
-<li>This CF is currently "Guides Only" and does not have a <code>trash_id</code> for sync tools.</li>
-<li>This CF is currently "Guides Only" and does not yet have a <code>trash_id</code> for sync tools pending ReleaseType being released as stable / Sonarr <code>main</code></li>
 </ul>
 </div>
 <details class="question">
@@ -12089,7 +12030,6 @@ For example, a lot of EVO releases end up stripped of the group name so they app
 <p class="admonition-title">Info</p>
 <ul>
 <li>This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
-<li>This Custom Format will replace the current Season Pack Custom Format as a drop in replacement when the functionality reaches a full release version of Sonarr.</li>
 <li>This will upgrade your already downloaded single episodes <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
 </ul>
 </div>
@@ -12097,6 +12037,7 @@ For example, a lot of EVO releases end up stripped of the group name so they app
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3bc5f395426614e155e585a2f056cdf1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Season Pack&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -22780,7 +22721,7 @@ The service features Bell Media original programming, exclusive Canadian access 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 30, 2024 20:04:04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 1, 2024 16:29:13</span>
   </span>
 
     
