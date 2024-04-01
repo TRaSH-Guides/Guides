@@ -47,3 +47,5 @@ You use everything here at your own risk. I won't be responsible if something ha
 - [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and make everything look great.
 
 --8<-- "CONTRIBUTORS.md"
+
+[Contributors](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
