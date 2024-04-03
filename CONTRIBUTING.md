@@ -60,7 +60,7 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 ### Release Group Reclassifications, Removals, or Additions
 
--   When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
+- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
 ### General Guidelines
 
