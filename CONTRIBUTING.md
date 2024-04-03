@@ -17,13 +17,13 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 We're trying to be as consistent as possible for automation of the changelog.
 
 - **feat/xxx** Commits, that adds a new feature
-- **fix/xxx**  Commits, that fixes a bug/issue
+- **fix/xxx** Commits, that fixes a bug/issue
 - **style/xxx** Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 - **chore/xxx** Miscellaneous commits (administrative / cleanup / backend)
 
 Where 'xxx' can stand for Starr/Sonarr/Radarr/Guide etc
 
-*Examples:*
+_Examples:_
 
 - `feat/Starr-ELEANOR-to-Scene-CF`
 - `feat/Radarr-CiNEPHiLES-to-Remux-Tier-02`
@@ -37,13 +37,13 @@ Where 'xxx' can stand for Starr/Sonarr/Radarr/Guide etc
 We're trying to be as consistent as possible for automation of the changelog.
 
 - **feat(xxx):** Commits, that adds a new feature
-- **fix(xxx):**  Commits, that fixes a bug/issue
+- **fix(xxx):** Commits, that fixes a bug/issue
 - **style(xxx):** Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 - **chore(xxx):** Miscellaneous commits (administrative / cleanup / backend)
 
 Where 'xxx' can stand for Starr/Sonarr/Radarr/Guide etc
 
-*Examples:*
+_Examples:_
 
 - `feat(starr): add ELEANOR to Scene CF`
 - `feat(radarr): add CiNEPHiLES to Remux Tier 02`
@@ -60,7 +60,7 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 ### Release Group Reclassifications, Removals, or Additions
 
-- When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
+-   When adding a RlsGrp to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
 
 ### General Guidelines
 
@@ -72,12 +72,12 @@ When doing a PR that is in-progress and not yet complete / ready for review or n
 
 ```json
 {
-  "trash_id": "HASHCODE",
-  "trash_scores": {
-    "default": 50,
-    "some_other_profile": 100
-  },
-  "trash_regex": "https://regex101.com/r/pADWJD/5",
+    "trash_id": "HASHCODE",
+    "trash_scores": {
+        "default": 50,
+        "some_other_profile": 100
+    },
+    "trash_regex": "https://regex101.com/r/pADWJD/5",
 STARRJSONEXPORT
 }
 ```
@@ -86,11 +86,9 @@ General Structure
 
 - json file name - name of the [json file](#file-naming)
 - `trash_id` - Generated [HashCode](#hashcode) for the Custom Format
-- `trash_scores` - Json object of [score(s) for the Custom Format](#scoring). Note that Custom
-  Formats with Default Scores of 0 should NOT have a `trash_scores.default`
+- `trash_scores` - Json object of [score(s) for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_scores.default`
 - `trash_regex` - Link to [regex test cases](#regex-test-cases) for regex
-- STARRJSONEXPORT - The exported custom format created within Starr. Note that this will have a
-  leading `{` that will need to have the `trash` specific regex added after
+- STARRJSONEXPORT - The exported custom format created within Starr. Note that this will have a leading `{` that will need to have the `trash` specific regex added after
 
 ### File Naming
 
@@ -98,10 +96,10 @@ General Structure
 
 ### Hashcode
 
-- When adding the hashcode for **Radarr** use the following naming `CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
-- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
+- When adding the hashcode for **Radarr** use the following naming `CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
+- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
 - When adding the hashcode for **Sonarr** use the following naming `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
-- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name`  e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
+- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
 
 ### Regex Test Cases
 
@@ -117,7 +115,7 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 
 ```json
 {
-  "trash_regex": "https://regex101.com/r/pADWJD/5",
+    "trash_regex": "https://regex101.com/r/pADWJD/5"
 }
 ```
 
@@ -127,10 +125,10 @@ When updating or adding a new CF the test case url (`trash_regex`) needs to be p
 
 ```json
 {
-  "trash_scores": {
-    "default": 50,
-    "some_other_profile": 100
-  },
+    "trash_scores": {
+        "default": 50,
+        "some_other_profile": 100
+    }
 }
 ```
 
@@ -155,8 +153,7 @@ based on the `.vscode/extensions.json` file; you should install all of them.
 These prerequisites are taken from the [mkdocs installation instructions][mkdocinstall].
 
 - Install a recent version of [Python 3](https://www.python.org/).
-- `pip` is also required, but should come with Python. Run `pip --version` to check if its available
-  and working. See the [installation instructions](https://pip.pypa.io/en/stable/installation/).
+- `pip` is also required, but should come with Python. Run `pip --version` to check if its available and working. See the [installation instructions](https://pip.pypa.io/en/stable/installation/).
 
 [mkdocinstall]: https://www.mkdocs.org/user-guide/installation/
 

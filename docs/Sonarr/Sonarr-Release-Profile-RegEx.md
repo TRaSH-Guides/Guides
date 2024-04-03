@@ -8,6 +8,7 @@ With this option you can fine tune your preference.
 The Release profile that we're going to use for this example is mainly to prefer P2P releases over Scene releases. (Scene releases are still being downloaded, but replaced once an upgrade is found.)
 
 !!! danger ""
+
     **If you don't care about quality then stop reading and see if the other tutorials are helpful for you.**
 
 ??? question "FAQ - [Click to show/hide]"
@@ -42,7 +43,7 @@ The Release profile that we're going to use for this example is mainly to prefer
 
     I will still keep a eye on them and add the Low Quality Groups to the `-100` score and when I find a new P2P group I will add them, resulting in less updates and a more accurate upgrade.
 
-------
+---
 
 ## Basics
 
@@ -59,17 +60,18 @@ Select the profile that you want to use/prefer.
 ![Select quality](images/rp-profile-selected.png)
 
 !!! tip
+
     Starting from 2010 you will be able to find almost anything as WEBDL,
 
     2000-2010 you will only find a few shows as WEBDL in that case you might want to enable `HDTV` and or `720p`.
 
     If you want 2160p WEBDL then choose 2160p WEBDL and add the HDR and/or DV regex, 2160p without HDR/DV has no real benefits !!!
 
-------
+---
 
 {! include-markdown "../../includes/merge-quality/sonarr-current-logic.md" !}
 
-------
+---
 
 ## Propers and Repacks
 
@@ -100,7 +102,7 @@ You will get a popup screen that will look like this:
 
 1. `Tags` => create a tag so this is only used by shows that you give this tag to or else it's global.
 
-------
+---
 
 !!! info
 
@@ -110,7 +112,7 @@ You will get a popup screen that will look like this:
 
 !!! warning "We're going to make use of four separate release profiles."
 
-------
+---
 
 ## Profile 1
 
@@ -250,11 +252,13 @@ Add this to your `Preferred (3)` with a score of [50]
 ```
 
 !!! danger "Caution"
+
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
 ??? success "example - [Click to show/hide]"
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -264,7 +268,7 @@ Add this to your `Preferred (3)` with a score of [50]
 
     ![!rp-release-sources](images/rp-release-sources.png)
 
-------
+---
 
 ## Profile 2
 
@@ -317,11 +321,13 @@ Add this to your `Preferred (3)` with a score of [5]
 ```
 
 !!! danger "Caution"
+
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
 ??? success "example - [Click to show/hide]"
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -331,7 +337,7 @@ Add this to your `Preferred (3)` with a score of [5]
 
     ![!rp-p2p-groups](images/rp-p2p-groups.png)
 
-------
+---
 
 ## Profile 3
 
@@ -348,11 +354,13 @@ Add this to your `Preferred (3)` with a score of [-10000]
 ```
 
 !!! danger "Caution"
+
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
 ??? success "example - [Click to show/hide]"
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -362,7 +370,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 
     ![!rp-lq-groups](images/rp-lq-groups.png)
 
-------
+---
 
 ## Profile 4
 
@@ -371,6 +379,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 !!! warning "DO NOT Check mark `Include Preferred when Renaming` :bangbang:"
 
 !!! danger "Caution"
+
     These optionals are optional because they should only be added/used if you got a certain use case for it, if you don't understand what the optional is for then you probably don't need it :bangbang:
 
     :bangbang: **Except the `Golden Rule` this one is actually a must even that it's added in the optional section** :bangbang:
@@ -380,6 +389,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 #### Golden rule
 
 !!! warning ""
+
     :bangbang: This one is actually a must even that it's added in the optional section :bangbang:
 
 ??? question "Why the Must Not Contain entry - [Click to show/hide]"
@@ -391,6 +401,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
     Why ?
 
     !!! quote
+
         x265 is good for for 4k stuff or 1080p if they used the the remuxes as source.
         If the media isn't source quality/remux, then there will be a loss of quality every time.
         Also, once you go x265, typically that file is done.
@@ -424,7 +435,7 @@ Add this to your `Must not contain (2)`
 
     ![!rp-release-sources](images/rp-golden-rule.png)
 
-------
+---
 
 #### Optional - Prefer HDR
 
@@ -434,7 +445,7 @@ Add this to your `Preferred (3)` with a score of [500]
 /\bHDR(\b|\d)/i
 ```
 
-------
+---
 
 #### Optional - Prefer Dolby Vision
 
@@ -444,11 +455,12 @@ Add this to your `Preferred (3)` with a score of [1500]
 /\b(dv|dovi|dolby[ .]?v(ision)?)\b/i
 ```
 
-------
+---
 
 #### Optional - Dislike retags
 
 ??? question "Explanation - [Click to show/hide]"
+
     Use this only if you dislike renamed and retagged releases, some indexers/trackers are known to rename or add their own tags to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-10000]
@@ -460,6 +472,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 #### Optional - Dislike Obfuscated
 
 ??? question "Explanation - [Click to show/hide]"
+
     Use this only if you dislike Obfuscated releases, some indexers are known to rename or add their own tags/obfuscated name to the release name which could mess up your results or naming.
 
 Add this to your `Preferred (3)` with a score of [-10000]
@@ -468,24 +481,26 @@ Add this to your `Preferred (3)` with a score of [-10000]
 /(-4P|-4Planet|-AsRequested|-BUYMORE|-CAPTCHA|-Chamele0n|-GEROV|-iNC0GNiTO|-NZBGeek|-Obfuscated|-postbot|-Rakuv|-Scrambled|-WhiteRev|-WRTEAM|-xpost)\b/i
 ```
 
-------
+---
 
 #### Optional - Dislike release ending: en
 
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ??? question "Explanation - [Click to show/hide]"
+
     Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
 ```bash
 /\s?\ben\b$/i
 ```
 
-------
+---
 
 #### Optional - Dislike release containing: 1-
 
 ??? question "Explanation - [Click to show/hide]"
+
     Some indexers are known to add extra useless info to the release name which could mess up your results or naming.
 
     Matches any release that contains '1-' as prefix for Release Groups
@@ -496,7 +511,7 @@ Add this to your `Preferred (3)` with a score of [-10000]
 /(?<!\d\.)(1-.+)$/i
 ```
 
-------
+---
 
 #### Optional - Dislike Extras
 
@@ -506,11 +521,12 @@ Add this to your `Preferred (3)` with a score of [-10000]
 /(?<=\bS\d+\b).*\b(Extras|Bonus)\b/i
 ```
 
-------
+---
 
 #### Optional - Prefer Season Packs
 
 ??? question "Explanation - [Click to show/hide]"
+
     Use this if you prefer Season packs
 
 !!! warning ""
@@ -525,7 +541,7 @@ Add this to your `Preferred (3)` with a score of [15]
 /\bS\d+\b(?!E\d+\b)/i
 ```
 
-------
+---
 
 ##### .su season pack issue
 
@@ -541,9 +557,10 @@ Add this to your `Preferred (3)` with a score of [15]
     ![!rp-release-profile-block-season-su](images/rp-release-profile-block-season-su.png)
 
     !!! note
+
         There is a [script](/NZBGet/scripts/#wtfnzb-renamer){:target="_blank" rel="noopener noreferrer"} for NZBGet that sometimes could help but it seems it doesn't always work. It also seems there is a work around for SABnzbd but i can't confirm being i'm not using Sab.
 
-------
+---
 
 #### Optional - Ignore Dolby Vision without HDR10 fallback
 
@@ -557,7 +574,7 @@ Add this to your `Must not contain (2)`
 /^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?V(ision)?)\b).*/i
 ```
 
-------
+---
 
 #### Optional - Ignore The Group -SCENE
 
@@ -571,7 +588,7 @@ Add this to your `Must not contain (2)`
 /\b(-scene)\b/i
 ```
 
-------
+---
 
 #### Optional - Ignore scene releases
 
@@ -614,16 +631,17 @@ Add this to your `Must not contain (2)`
 /\bAV1\b/i
 ```
 
-------
+---
 
 ### A little explanation of the scores and why
 
 - Scores [75]-[100] Release Source.
 - Scores [1600]-[1800] P2P Groups.
 - Scores [10-12] Give a repack/proper a higher score but don't trump P2P groups for a Scene fix.
-- Scores [-10000] Retagged/Renames/Obfuscated  releases.
+- Scores [-10000] Retagged/Renames/Obfuscated releases.
 
     !!! danger ""
+
         If you're getting often a error message like `Has the same filesize as existing file`, you might need to consider to remove the [-10000]
 
 - Scores [-10000] Groups that mess with the audio or add another preferred language.
@@ -639,6 +657,7 @@ When you've done it correctly it will look something like this.
 ??? success "example - [Click to show/hide]"
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide (with the copy paste/option at the end).
@@ -648,7 +667,7 @@ When you've done it correctly it will look something like this.
 
     ![!rp-profiles](images/rp-profiles.png)
 
-------
+---
 
 This list is made by collecting information from Sonarr Discord Channel, and personal testing and a few others that helped.
 
@@ -664,10 +683,9 @@ If you want to be mentioned please message me on discord, including a link for p
 
     Or use one of the 3rd Party Sync options that you can find [HERE](/Misc/trash-sync){:target="_blank" rel="noopener noreferrer"}.
 
-------
+---
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
 
 [^1]:
 

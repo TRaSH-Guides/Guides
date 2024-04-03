@@ -8,7 +8,7 @@
     - When the 4k Remux is released it will upgrade to the 4k Remux.
     - When the IMAX-E is released it will upgrade to the IMAX-E. (*optional, see below*)
 
-    ------
+    ---
 
     *Possible Variables*
 

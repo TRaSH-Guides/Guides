@@ -1,6 +1,7 @@
 #### Custom Formats and scores
 
 ??? abstract "Audio - [Click to show/hide]"
+
     | Custom Format                                                                                                 |                                          Score                                           | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------: | ------------------------------------------------- |
     | [{{ radarr['cf']['truehd-atmos']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#truehd-atmos)       |  :warning: {{ radarr['cf']['truehd-atmos']['trash_scores']['sqp-1-2160p'] }} :warning:   | {{ radarr['cf']['truehd-atmos']['trash_id'] }}    |
@@ -54,6 +55,7 @@
     !!! danger "The reason why we add `DV (WEBDL)` is because you want maximum compatibility across all devices :warning:"
 
 ??? abstract "Movie Versions - [Click to show/hide]"
+
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
     | [{{ radarr['cf']['remaster']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remaster)                         |       {{ radarr['cf']['remaster']['trash_scores']['default'] }}       | {{ radarr['cf']['remaster']['trash_id'] }}             |
@@ -64,12 +66,14 @@
     | [{{ radarr['cf']['special-edition']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#special-edition)           |   {{ radarr['cf']['special-edition']['trash_scores']['default'] }}    | {{ radarr['cf']['special-edition']['trash_id'] }}      |
 
     !!! info
+
         - If you prefer 1080p/2160p WEBDL with IMAX-E then add [{{ radarr['cf']['imax-enhanced']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced) with the default scores.
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
+
     | Custom Format                                                                                                                        |                                            Score                                            | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------: | ---------------------------------------------------- |
     | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                  | {{ radarr['cf']['bhdstudio']['trash_id'] }}          |
@@ -86,6 +90,7 @@
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
     !!! tip
+
         If you use SQP-1 (1080p) as your main/second Radarr you want to remove the following HQ Release Groups
 
         - [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)
@@ -97,6 +102,7 @@
 {! include-markdown "../../includes/sqp/radarr-unwanted-uhd-sqp1.md" !}
 
 ??? abstract "Optional - [Click to show/hide]"
+
     | Custom Format                                                                                                       |                                    Score                                     | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------: | ---------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       |       {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }}       | {{ radarr['cf']['bad-dual-groups']['trash_id'] }}    |
@@ -112,13 +118,14 @@
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               |             {{ radarr['cf']['sdr']['trash_scores']['default'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}                |
 
     !!! tip "I recommend using the following Custom Formats"
+
         - `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning,<br>:warning: Only ever include one of them :warning:
         - `SDR` This will prevent grabbing UHD/4K releases without HDR Formats
         - `AV1` This will prevent grabbing AV1 releases.
 
     !!! danger "Adding any of the `HDR10+ Boosts` could result in less streaming optimized releases :warning:"
 
-    ------
+    ---
 
     Breakdown and Why
 

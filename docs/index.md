@@ -4,13 +4,13 @@
 
 # TRaSH-Guides
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
-[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-Guides/Guides?color=4051B5&label=Last%20Update&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/commits/master){:target="_blank" rel="noopener noreferrer"}
-[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls){:target="_blank" rel="noopener noreferrer"}
-[![GitHub issues](https://img.shields.io/github/issues/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=flat-square&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-Guides/Guides?color=4051B5&label=Last%20Update&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/commits/master){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls){:target="\_blank" rel="noopener noreferrer"}
+[![GitHub issues](https://img.shields.io/github/issues/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}
 
-*TRaSH Guides, Guides that aren't trash.*
+_TRaSH Guides, Guides that aren't trash._
 
 Here you will find guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
 
@@ -25,9 +25,9 @@ I try to make my guides as easy as possible for everyone to understand, in my op
 
 ## Support
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
 
-If you have questions, suggestions, requests or want to contribute, click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="_blank" rel="noopener noreferrer"} to open an issue on GitHub.
+If you have questions, suggestions, requests or want to contribute, click the chat badge to join the Discord Channel where you can ask your questions directly or use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"} to open an issue on GitHub.
 Feel free to create a PR if you want to.
 
 ---
@@ -43,7 +43,7 @@ You use everything here at your own risk. I won't be responsible if something ha
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
-- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and make everything look great.
-- [rg9400](https://github.com/rg9400){:target="_blank" rel="noopener noreferrer"} for providing most of the Radarr v3 Custom Format Collection.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="\_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [Roxedus](https://github.com/Roxedus){:target="\_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and make everything look great.
+- [rg9400](https://github.com/rg9400){:target="\_blank" rel="noopener noreferrer"} for providing most of the Radarr v3 Custom Format Collection.
 - Everyone who contributed to this project in any way possible.

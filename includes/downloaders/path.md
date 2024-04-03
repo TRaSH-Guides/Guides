@@ -1,6 +1,7 @@
 This basic example is based on the use of docker images
 
 !!! tip ""
+
     Keep in mind the path are setup so it works with hardlinks and instant moves.
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}

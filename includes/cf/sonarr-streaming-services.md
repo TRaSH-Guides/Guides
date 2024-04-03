@@ -1,6 +1,7 @@
 ??? abstract "Streaming Services - [Click to show/hide]"
+
     | Custom Format                                                                               |                          Score                          | Trash ID                                 |
-    |---------------------------------------------------------------------------------------------|:-------------------------------------------------------:|------------------------------------------|
+    | ------------------------------------------------------------------------------------------- | :-----------------------------------------------------: | ---------------------------------------- |
     | [{{ sonarr['cf']['4od']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#4od)       |  {{ sonarr['cf']['all4']['trash_scores']['default'] }}  | {{ sonarr['cf']['4od']['trash_id'] }}    |
     | [{{ sonarr['cf']['all4']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#all4)     |  {{ sonarr['cf']['4od']['trash_scores']['default'] }}   | {{ sonarr['cf']['all4']['trash_id'] }}   |
     | [{{ sonarr['cf']['amzn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#amzn)     |  {{ sonarr['cf']['amzn']['trash_scores']['default'] }}  | {{ sonarr['cf']['amzn']['trash_id'] }}   |

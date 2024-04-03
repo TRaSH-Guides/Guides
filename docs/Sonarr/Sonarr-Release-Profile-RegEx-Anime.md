@@ -3,6 +3,7 @@
 # Release Profile RegEx (Anime)
 
 !!! note
+
     This guide is created and maintained by [Visorask/Visorak](https://github.com/Visorask)
 
     It's recommended to run two Sonarr instances. One for Anime and one for normal tv shows, or you can make use of tags.
@@ -64,7 +65,7 @@ Having tested most of these settings, they work pretty well, but Anime is a fick
 
 ### Suggested naming scheme
 
-For this I used the [Sonarr Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="_blank" rel="noopener noreferrer"} with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
+For this I used the [Sonarr Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/#anime-episode-format){:target="\_blank" rel="noopener noreferrer"} with only a small change for a formatting error to be fixed and the `Series Folder Format` for easier matching.
 
 #### Anime Episode Format
 
@@ -156,12 +157,15 @@ We need to add the Anime Categories to our indexers otherwise this all won't wor
 ## Release Profiles
 
 !!! note
+
     We're going to make use of **2** separate release profiles.
 
 ### First Release Profile
 
 <!-- [trash_id: 31f4dd7b08bc8a43099eed604fd8acf6] -->
+
 !!! tip
+
     **DO** Check mark `Include Preferred when Renaming` on this release profile.
     ![!rpa-release-sources-1](images/rpa-release-sources-1.png)
 
@@ -201,7 +205,9 @@ If you would like it to be priority then set to **100**. If you do not want unce
 ### Second Release Profile
 
 <!-- [trash_id: c3a45e86f61f3a801428d1538918e41f] -->
+
 !!! warning
+
     **DO NOT** Check mark `Include Preferred when Renaming`
     ![!rpa-release-sources-2](images/rpa-release-sources-2.png)
 
@@ -244,6 +250,7 @@ The reason most of these are added is due to their shitty quality or just in gen
 Add this to your Preferred with a score of **[501]**
 
 !!! note
+
     This is set to **501** so that it may jump one tier if need be, but not more.
 
 ```bash
@@ -253,6 +260,7 @@ Add this to your Preferred with a score of **[501]**
 ---
 
 !!! tip
+
     These next few are optional, but they are here to move releases up over lower tiers of `1080/720p` or `WEB-DL/Blu-Ray`. Will add another note like this to end the optional section.
 
 ---
@@ -260,6 +268,7 @@ Add this to your Preferred with a score of **[501]**
 Add this to your Preferred with a score of **[100]**
 
 !!! note
+
     We are adding this as **100** so that any unknown `Blu-Ray` can jump tiers inside the Subs categories but not interfere with any tiers above.
 
 ```bash
@@ -291,6 +300,7 @@ Add this to your Preferred with a score of **[5]**
 ```
 
 !!! tip
+
     This is the end of the optional section.
 
 Add this to your Preferred with a score of **[4000]**
@@ -645,4 +655,3 @@ Most of my information and knowledge came from:
 Thanks a bunch!!
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

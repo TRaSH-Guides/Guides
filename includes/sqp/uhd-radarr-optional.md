@@ -1,6 +1,7 @@
 ??? abstract "Optional - [Click to show/hide]"
 
     !!! tip "**I recommend to use the `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning, :warning: Only ever include one of them :warning:**"
+
     !!! tip "**I recommend to use the `SDR`,<br> This will help to prevent to grab UHD/4k releases without HDR Formats**"
 
     | Custom Format                                                                                                       | Score                                                            | Trash ID                                          |
@@ -17,7 +18,7 @@
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                               | {{ radarr['cf']['sdr']['trash_scores']['default'] }}             | {{ radarr['cf']['sdr']['trash_id'] }}             |
     | [{{ radarr['cf']['dv-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-disk)                       | {{ radarr['cf']['dv-disk']['trash_scores']['default'] }}         | {{ radarr['cf']['dv-disk']['trash_id'] }}         |
 
-    ------
+    ---
 
     Breakdown and Why
 
@@ -32,6 +33,7 @@
         Remuxes and Bluray have a fallback to HDR10.
 
         !!! tip
+
             `[DV WEBDL]` = This custom format you need to score depending of your personal use and setup.
 
             - If you only watch your movies on a setup that completely supports Dolby Vision from start to end then give it a score of `0` or just don't add it.

@@ -1,4 +1,5 @@
 ??? abstract "Movie Versions - [Click to show/hide]"
+
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
     | [{{ radarr['cf']['hybrid']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hybrid)                             |        {{ radarr['cf']['hybrid']['trash_scores']['default'] }}        | {{ radarr['cf']['hybrid']['trash_id'] }}               |
@@ -12,6 +13,7 @@
     | [{{ radarr['cf']['imax-enhanced']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced)               |    {{ radarr['cf']['imax-enhanced']['trash_scores']['default'] }}     | {{ radarr['cf']['imax-enhanced']['trash_id'] }}        |
 
     !!! tip "{{ radarr['cf']['imax-enhanced']['name'] }}"
+
         {{ radarr['cf']['imax-enhanced']['name'] }}: Get More Picture Instead of Black Bars.
 
         {{ radarr['cf']['imax-enhanced']['name'] }} exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.

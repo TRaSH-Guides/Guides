@@ -9,7 +9,7 @@
     - When the HQ Encode is released it will upgrade to the HQ Encode.
     - When the IMAX-E is released it will upgrade to the IMAX-E. (*optional, see below*)
 
-    ------
+    ---
 
     *Possible Variables*
 

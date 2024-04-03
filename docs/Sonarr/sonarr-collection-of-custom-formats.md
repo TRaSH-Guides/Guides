@@ -8,9 +8,9 @@ Special thanks to everyone that has helped in the creation and testing of these 
 Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
 We've made 3 guides related to this.
 
-- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
@@ -92,7 +92,7 @@ We've made 3 guides related to this.
 ---
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
-|--------------------------------|----------------------------------------|-------------------------------|-----------------------------------------------|
+| ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
 | [FreeLeech](#freeleech)        | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [MPEG2](#mpeg2)                | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [Multi](#multi)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
@@ -171,6 +171,7 @@ We've made 3 guides related to this.
     Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
 
     !!! note
+
         Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
 
 ??? example "JSON - [Click to show/hide]"
@@ -341,6 +342,7 @@ We've made 3 guides related to this.
 <sub>DTS = Basic DTS</sub>
 
 ??? question "DTS - [Click to show/hide]"
+
     Description placeholder
 
 ??? example "JSON - [Click to show/hide]"
@@ -395,6 +397,7 @@ We've made 3 guides related to this.
 ### MP3
 
 ??? question "MP3 - [Click to show/hide]"
+
     Description placeholder
 
 ??? example "JSON - [Click to show/hide]"
@@ -411,7 +414,7 @@ We've made 3 guides related to this.
 
 ??? question "Opus - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
+    [From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Opus_(audio_format)>){:target="_blank" rel="noopener noreferrer"}
 
     Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
 
@@ -863,6 +866,7 @@ We've made 3 guides related to this.
     In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}`
 
     !!! failure ""
+
         --8<-- "includes/docker/x265.md"
 
             !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
@@ -960,6 +964,7 @@ We've made 3 guides related to this.
     This applies to all x265/HEVC releases that are not Remux.
 
     !!! failure ""
+
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
 
 ??? example "JSON - [Click to show/hide]"
@@ -1021,6 +1026,7 @@ We've made 3 guides related to this.
     Torrent sites sometimes set a torrent to be freeleech. This means that the download of this torrent will not count towards your quota or ratio. This can be useful when starting a new account or if you do not have the best ratio yet.
 
     !!! warning
+
         Keep in mind not all trackers support this option.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1040,6 +1046,7 @@ We've made 3 guides related to this.
 ### Bad Dual Groups
 
 ??? question "Bad dual groups - [Click to show/hide]"
+
     These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
     Also they often even translate/rename the release name to Portuguese.
 
@@ -1058,6 +1065,7 @@ We've made 3 guides related to this.
 <sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
+
     This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
     You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
@@ -1190,6 +1198,7 @@ We've made 3 guides related to this.
     - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the issue occurs as the file names would not be a season pack.
 
     !!! danger "WARNING"
+
         - This Custom Format could result in a download loop :bangbang:
         - This will upgrade also your already downloaded single episodes :bangbang:
 
@@ -1212,6 +1221,7 @@ We've made 3 guides related to this.
     - This CF is currently "Guides Only" and does not yet have a `trash_id` for sync tools pending ReleaseType being released as stable / Sonarr `main`
 
 ??? question "Season Pack - [Click to show/hide]"
+
     This Custom Format can be used to prefer or exclude season packs
 
     - Give it a score of `10` if you prefer a season pack.
@@ -1219,6 +1229,7 @@ We've made 3 guides related to this.
     - Utilizing the "Release Type" custom format setting added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
 
     !!! info
+
         - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
         - This Custom Format will replace the current Season Pack Custom Format as a drop in replacement when the functionality reaches a full release version of Sonarr.
         - This will upgrade your already downloaded single episodes :bangbang:
@@ -2266,6 +2277,7 @@ We've made 3 guides related to this.
 #### ABEMA
 
 ??? question "Abema - [Click to show/hide]"
+
     {! include-markdown "../../includes/cf-descriptions/abema.md" !}
 
 ??? example "JSON - [Click to show/hide]"
@@ -2357,6 +2369,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
 ??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2372,6 +2385,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 02 (SeaDex Muxers)
 
 ??? question "Anime BD Tier 02 (SeaDex Muxers) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2387,6 +2401,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 03 (SeaDex Muxers)
 
 ??? question "Anime BD Tier 03 (SeaDex Muxers) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2402,6 +2417,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 04 (SeaDex Muxers)
 
 ??? question "Anime BD Tier 04 (SeaDex Muxers) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2417,6 +2433,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 05 (Remuxes)
 
 ??? question "Anime BD Tier 05 (Remuxes) - [Click to show/hide]"
+
     Groups that are consistent and do Remuxes
 
 ??? example "JSON - [Click to show/hide]"
@@ -2432,6 +2449,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 06 (FanSubs)
 
 ??? question "Anime BD Tier 06 (FanSubs) - [Click to show/hide]"
+
     FanSub groups that are consistent
 
 ??? example "JSON - [Click to show/hide]"
@@ -2447,6 +2465,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 07 (P2P/Scene)
 
 ??? question "Anime BD Tier 07 (P2P/Scene) - [Click to show/hide]"
+
     Known P2P and Scene Anime groups
 
 ??? example "JSON - [Click to show/hide]"
@@ -2462,6 +2481,7 @@ We've made 3 guides related to this.
 ### Anime BD Tier 08 (Mini Encodes)
 
 ??? question "Anime BD Tier 08 (Mini Encodes) - [Click to show/hide]"
+
     Know groups that do mini encodes
 
 ??? example "JSON - [Click to show/hide]"
@@ -2477,6 +2497,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 01 (Muxers)
 
 ??? question "Anime Web Tier 01 (Muxers) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2492,6 +2513,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 02 (Top FanSubs)
 
 ??? question "Anime Web Tier 02 (Top FanSubs) - [Click to show/hide]"
+
     Groups that do the best releases as per SeaDex. They are more consistent and trump others
 
 ??? example "JSON - [Click to show/hide]"
@@ -2507,6 +2529,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 03 (Official Subs)
 
 ??? question "Anime Web Tier 03 (Official Subs) - [Click to show/hide]"
+
     Official sub groups that tend to be more consistent and release fast
 
 ??? example "JSON - [Click to show/hide]"
@@ -2522,6 +2545,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 04 (Official Subs)
 
 ??? question "Anime Web Tier 04 (Official Subs) - [Click to show/hide]"
+
     Official sub groups
 
 ??? example "JSON - [Click to show/hide]"
@@ -2537,6 +2561,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 05 (FanSubs)
 
 ??? question "Anime Web Tier 05 (FanSubs) - [Click to show/hide]"
+
     FanSub groups that are consistent
 
 ??? example "JSON - [Click to show/hide]"
@@ -2552,6 +2577,7 @@ We've made 3 guides related to this.
 ### Anime Web Tier 06 (FanSubs)
 
 ??? question "Anime Web Tier 06 (FanSubs) - [Click to show/hide]"
+
     FanSub groups that are consistent
 
 ??? example "JSON - [Click to show/hide]"
@@ -2567,6 +2593,7 @@ We've made 3 guides related to this.
 ### Anime Raws
 
 ??? question "Anime Raws - [Click to show/hide]"
+
     A collection of know groups that release raws
 
 ??? example "JSON - [Click to show/hide]"
@@ -2582,6 +2609,7 @@ We've made 3 guides related to this.
 ### Anime LQ Groups
 
 ??? question "Anime LQ Groups - [Click to show/hide]"
+
     A collection of known Low Quality groups.
 
 ??? example "JSON - [Click to show/hide]"
@@ -2597,6 +2625,7 @@ We've made 3 guides related to this.
 ### Uncensored
 
 ??? question "Uncensored - [Click to show/hide]"
+
     This CF covers releases that are uncensored
 
 ??? example "JSON - [Click to show/hide]"
@@ -2612,6 +2641,7 @@ We've made 3 guides related to this.
 ### v0
 
 ??? question "v0 - [Click to show/hide]"
+
     CF to cover releases named with v0 which we don't want
 
 ??? example "JSON - [Click to show/hide]"
@@ -2627,6 +2657,7 @@ We've made 3 guides related to this.
 ### v1
 
 ??? question "v1 - [Click to show/hide]"
+
     CF to cover v1 releases
 
 ??? example "JSON - [Click to show/hide]"
@@ -2642,6 +2673,7 @@ We've made 3 guides related to this.
 ### v2
 
 ??? question "v2 - [Click to show/hide]"
+
     CF to cover v2 releases
 
 ??? example "JSON - [Click to show/hide]"
@@ -2657,6 +2689,7 @@ We've made 3 guides related to this.
 ### v3
 
 ??? question "v3 - [Click to show/hide]"
+
     CF to cover v3 releases
 
 ??? example "JSON - [Click to show/hide]"
@@ -2672,6 +2705,7 @@ We've made 3 guides related to this.
 ### v4
 
 ??? question "v4 - [Click to show/hide]"
+
     CF to cover v4 releases
 
 ??? example "JSON - [Click to show/hide]"
@@ -2687,6 +2721,7 @@ We've made 3 guides related to this.
 ### 10bit
 
 ??? question "10bit - [Click to show/hide]"
+
     This CF covers releases that are 10bit
 
 ??? example "JSON - [Click to show/hide]"
@@ -2702,6 +2737,7 @@ We've made 3 guides related to this.
 ### Anime Dual Audio
 
 ??? question "Anime Dual Audio - [Click to show/hide]"
+
     This CF covers releases that have Dual Audio
 
 ??? example "JSON - [Click to show/hide]"
@@ -2717,6 +2753,7 @@ We've made 3 guides related to this.
 ### Dubs Only
 
 ??? question "Dubs Only - [Click to show/hide]"
+
     This CF covers releases that only have Dubs
 
 ??? example "JSON - [Click to show/hide]"

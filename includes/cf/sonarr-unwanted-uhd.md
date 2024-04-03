@@ -1,4 +1,5 @@
 ??? abstract "Unwanted (UHD) - [Click to show/hide]"
+
     | Custom Format                                                                                                   |                               Score                               | Trash ID                                           |
     | --------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------: | -------------------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)                   |     {{ sonarr['cf']['br-disk']['trash_scores']['default'] }}      | {{ sonarr['cf']['br-disk']['trash_id'] }}          |
@@ -7,7 +8,7 @@
     | [{{ sonarr['cf']['upscaled']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#upscaled)                 |     {{ sonarr['cf']['upscaled']['trash_scores']['default'] }}     | {{ sonarr['cf']['upscaled']['trash_id'] }}         |
     | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)                     |      {{ sonarr['cf']['extras']['trash_scores']['default'] }}      | {{ sonarr['cf']['extras']['trash_id'] }}           |
 
-    ------
+    ---
 
     Breakdown and Why
 

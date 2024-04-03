@@ -10,7 +10,7 @@
 
     Additionally, since SMB does not support hardlinks we will only be covering the creation and use of NFS shares.
 
-------
+---
 
 ## Create the main dataset
 
@@ -32,7 +32,7 @@ Click `Submit` (mine shows `Save` since this is an existing dataset) once comple
 
 ![truenas-dataset](images/truenas-dataset-options.png)
 
-------
+---
 
 ## Create a shared group
 
@@ -44,7 +44,7 @@ You'll arrive at a simple configuration screen like the one shown below. Set you
 
 ![truenas-group](images/truenas-group-options.png)
 
-------
+---
 
 ## Create your user(s)
 
@@ -62,7 +62,7 @@ You'll need to uncheck `New Primary Group` so you can manually populate `Primary
 
     If you're using a single, shared user and group setup (1000:1000 is the common one) you can leave New Primary Group checked. Assuming there's not a group that already exists with GID 1000 it will create that group automatically with the same name as the user.
 
-------
+---
 
 ## Dataset permissions
 
@@ -76,7 +76,7 @@ Check the boxes for `Apply User`, `Apply Group`, and `Apply Permissions Recursiv
 
 ![truenas-dataset-permissions](images/truenas-dataset-permissions.png)
 
-------
+---
 
 ## Create your NFS share(s)
 
@@ -96,7 +96,7 @@ Click `Submit` once complete.
 
 ![truenas-nfs-share-options](images/truenas-nfs-share-options.png)
 
-------
+---
 
 ## Configure and enable NFS service
 
@@ -114,7 +114,7 @@ Make sure to check `Start Automatically` and click the slider under `Running` to
 
 ![truenas-nfs-service-options](images/truenas-nfs-service-options.png)
 
-------
+---
 
 ## Mount your shares
 
@@ -122,7 +122,7 @@ Follow standard mounting procedures for your operating system/device. In Ubuntu 
 
 Regardless of method, make sure that the device ends up with a `data` mount point. The mount point is important since it will allow us to follow the usual guide for folder structure. If you've followed the guide, from a NFS share standpoint the owner and group of the `/mnt/data` directory will be the user and group that were previously configured in the Dataset Permissions section. If this is improperly configured you can end up with `nobody` as the owner or group, or have permission errors.
 
-------
+---
 
 ## Folder Structure
 
@@ -133,4 +133,3 @@ Now that you have a `data` folder, you can follow the normal folder structure re
 These subfolders you need to create yourself using your preferred method. Set your permissions accordingly as well. If you use ACLs on the datasets you can replicate the usual 775/664 (UMASK 002) or 755/644 (UMASK 022) recommendation, but this guide only covers the use of basic permissions for mounting and expects the end user to fine-tune permissions via chmod, chown, and uid/gid/umask settings on the applications that will be utilizing the share.
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

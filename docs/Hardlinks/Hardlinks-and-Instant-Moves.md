@@ -49,6 +49,7 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
         !!! warning
+
             You can't create hard links for directories :bangbang:
 
             You can't cross file systems :bangbang:
