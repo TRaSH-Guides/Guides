@@ -7,9 +7,10 @@ There isn't a "best" setup, it depends on your media setup (hardware devices) an
 
 Some prefer high-quality audio (HD Audio), others high-quality video. Many prefer both.
 
-Here I will try to explain how to make the most use of Custom Formats to help you to set up your quality profiles for your personal needs.
+Here we will try to explain how to make the most use of Custom Formats to help you to set up your quality profiles for your personal needs.
 
-I created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
+- We've created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
+- We have created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="_blank" rel="noopener noreferrer"} to display what they support, with information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will assist you in choosing the appropriate quality profile.
 
 ------
 
