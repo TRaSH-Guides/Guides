@@ -64,9 +64,9 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [CANAL+](#canalplus)      | [FOD](#fod)              | [NLZiet](#nlz)           |
 | [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
-| [DC Universe](#dcu)        |                           | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           |                           | [VIU](#viu)              |                          |
-| [HBO Max](#hmax)           |                           |                          |                          |
+| [DC Universe](#dcu)        |                           | [TVING](#tving)          |                          |
+| [Disney+](#dsnp)           |                           | [U-NEXT](#u-next)        |                          |
+| [HBO Max](#hmax)           |                           | [VIU](#viu)              |                          |
 | [HBO](#hbo)                |                           |                          |                          |
 | [Hulu](#hulu)              |                           |                          |                          |
 | [iTunes](#it)              |                           |                          |                          |
@@ -80,11 +80,11 @@ We've made 3 guides related to this.
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 | --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
 | [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [OViD](#ovid)           | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer](#ip)    | [YouTube Red](#red)     | [Crunchyroll](#cr)       |                                             |
-| [ITVX](#itvx)         | [Quibi](#qibi)          | [Funimation](#funi)      |                                             |
-|                       |                         | [HIDIVE](#hidive)        |                                             |
-|                       |                         | [VRV](#vrv)              |                                             |
+| [ALL4](#all4)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
+| [ITVX](#itvx)         | [Star+](#strp)          | [Funimation](#funi)      |                                             |
+| [NOW](#now)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
+|                       | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
 |                       |                         | [ABEMA](#abema)          |                                             |
 |                       |                         | [ADN](#adn)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
@@ -132,9 +132,7 @@ We've made 3 guides related to this.
 
 ??? question "TrueHD ATMOS - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.
+    {! include-markdown "../../includes/cf-descriptions/truehd-atmos.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -142,7 +140,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd-atmos.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -150,9 +148,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS:X - [Click to show/hide]"
 
-    [DTS:X is an object-based audio codec](https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it), which aims to create a multi-dimensional sound that “moves around you like it would in real life”.
-    You may think that sounds a lot like Dolby Atmos, and you’d be right. But where DTS:X differs lies in the required speaker configuration. While Dolby Atmos requires you to add extra overhead channels to your 5.1 or 7.1 setup, DTS:X works with standard surround speaker setups – just like the one you might already have at home. It can support up to 32 speaker locations and up to an 11.2-channel system.
-    DTS:X like other higher quality DTS formats (e.g. DTS-HD MA) is lossless.
+    {! include-markdown "../../includes/cf-descriptions/dts-x.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -160,7 +156,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-x.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -168,11 +164,7 @@ We've made 3 guides related to this.
 
 ??? question "ATMOS (undefined) - [Click to show/hide]"
 
-    Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
-
-    !!! note
-
-        Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
+    {! include-markdown "../../includes/cf-descriptions/atmos-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -180,7 +172,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atmos-undefined.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -190,7 +182,7 @@ We've made 3 guides related to this.
 
 ??? question "DD+ ATMOS - [Click to show/hide]"
 
-    Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos
+    {! include-markdown "../../includes/cf-descriptions/ddplus-atmos.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -198,7 +190,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus-atmos.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -206,9 +198,7 @@ We've made 3 guides related to this.
 
 ??? question "TrueHD - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby TrueHD is a lossless, multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Disc and compatible hardware.
+    {! include-markdown "../../includes/cf-descriptions/truehd.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -216,7 +206,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/truehd.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -224,9 +214,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-HD MA - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}
-
-    DTS-HD Master Audio is a multi-channel, lossless audio codec developed by DTS as an extension of the lossy DTS Coherent Acoustics codec (DTS CA; usually itself referred to as just DTS). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA's primary application is audio storage and playback for Blu-ray Disc media.
+    {! include-markdown "../../includes/cf-descriptions/dts-hd-ma.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -234,7 +222,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-ma.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -242,7 +230,7 @@ We've made 3 guides related to this.
 
 ??? question "FLAC - [Click to show/hide]"
 
-    FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
+    {! include-markdown "../../includes/cf-descriptions/flac.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -250,7 +238,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/flac.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -258,7 +246,7 @@ We've made 3 guides related to this.
 
 ??? question "PCM - [Click to show/hide]"
 
-    PCM is the method of encoding typically used for uncompressed digital audio
+    {! include-markdown "../../includes/cf-descriptions/pcm.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -266,7 +254,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcm.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -274,22 +262,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-HD HRA - [Click to show/hide]"
 
-    [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="_blank" rel="noopener noreferrer"}
-
-    | Codec      | Page   | Paragraph |
-    | ---------- | ------ | --------- |
-    | DTS-HD MA  | Page 6 | 5.1.1     |
-    | DTS-HD HRA | Page 7 | 5.1.2     |
-
-    DTS-HD HRA is the lossy version of DTS-HD MA.
-
-    | Codec          | DTS-HRA          | DTS-MA            |
-    | -------------- | ---------------- | ----------------- |
-    | Lossy/lossless | Lossy            | Lossless          |
-    | Data rate      | 1.5 - 6.0 Mbit/s | VBR - 24.5 Mbit/s |
-    | Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
-    | Sampling Freq. | 96 kHz           | 192 kHz           |
-    | Resolution     | -                | Up to 24-bit      |
+    {! include-markdown "../../includes/cf-descriptions/dts-hd-hra.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -297,7 +270,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-hd-hra.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -307,9 +280,7 @@ We've made 3 guides related to this.
 
 ??? question "DD+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Digital Plus, also known as Enhanced AC-3 (and commonly abbreviated as DD+ or E-AC-3, or EC-3) is a digital audio compression scheme developed by Dolby Labs for transport and storage of multi-channel digital audio. It is a successor to Dolby Digital (AC-3).
+    {! include-markdown "../../includes/cf-descriptions/ddplus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -317,7 +288,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ddplus.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -325,7 +296,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-ES - [Click to show/hide]"
 
-    DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1, and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.
+    {! include-markdown "../../includes/cf-descriptions/dts-es.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -333,7 +304,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts-es.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -343,7 +314,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS - [Click to show/hide]"
 
-    Description placeholder
+    {! include-markdown "../../includes/cf-descriptions/dts.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -351,7 +322,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dts.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -359,10 +330,7 @@ We've made 3 guides related to this.
 
 ??? question "AAC - [Click to show/hide]"
 
-    Advanced Audio Coding
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
-    Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
+    {! include-markdown "../../includes/cf-descriptions/aac.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -370,7 +338,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aac.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -380,9 +348,7 @@ We've made 3 guides related to this.
 
 ??? question "DD - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
+    {! include-markdown "../../includes/cf-descriptions/dd.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -390,7 +356,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dd.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -398,7 +364,7 @@ We've made 3 guides related to this.
 
 ??? question "MP3 - [Click to show/hide]"
 
-    Description placeholder
+    {! include-markdown "../../includes/cf-descriptions/mp3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -406,7 +372,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mp3.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -414,9 +380,7 @@ We've made 3 guides related to this.
 
 ??? question "Opus - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Opus_(audio_format)>){:target="_blank" rel="noopener noreferrer"}
-
-    Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
+    {! include-markdown "../../includes/cf-descriptions/opus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -424,7 +388,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/opus.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -440,7 +404,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10-mono.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -452,7 +416,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/20-stereo.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -464,7 +428,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/30-sound.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -476,7 +440,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/40-sound.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -488,7 +452,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/51-surround.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -500,7 +464,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/61-surround.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -512,7 +476,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/71-surround.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -524,7 +488,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/91-surround.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -547,7 +511,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -565,7 +529,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -585,7 +549,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -603,7 +567,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hlg.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -621,7 +585,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-sdr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -639,7 +603,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -657,7 +621,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -675,7 +639,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -691,7 +655,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr-undefined.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -709,7 +673,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -727,7 +691,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hlg.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -747,7 +711,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hybrid.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -766,7 +730,7 @@ We've made 3 guides related to this.
      [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remaster.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -799,7 +763,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/br-disk.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -817,7 +781,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -835,7 +799,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq-release-title.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -851,7 +815,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/upscaled.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -877,7 +841,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-hd.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -893,7 +857,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/extras.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -909,7 +873,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-proper.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -921,7 +885,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v2.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -933,7 +897,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/repack-v3.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -951,7 +915,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x264.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -973,7 +937,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -991,7 +955,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x266.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1003,7 +967,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/mpeg2.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1015,7 +979,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1035,7 +999,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/freeleech.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1056,7 +1020,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1082,7 +1046,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-webdl.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1098,7 +1062,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1114,7 +1078,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1135,7 +1099,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/no-rlsgroup.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1143,7 +1107,7 @@ We've made 3 guides related to this.
 
 ??? question "Obfuscated - [Click to show/hide]"
 
-    Optional (use these only if you dislike renamed releases)
+    {! include-markdown "../../includes/cf-descriptions/obfuscated.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1151,7 +1115,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/obfuscated.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1159,7 +1123,7 @@ We've made 3 guides related to this.
 
 ??? question "Retags - [Click to show/hide]"
 
-    Optional (use these only if you dislike retagged releases)
+    {! include-markdown "../../includes/cf-descriptions/retags.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1167,7 +1131,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/retags.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1183,42 +1147,15 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/scene.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
 ### Season Pack
 
-??? question "Season Pack - [Click to show/hide]"
-
-    This Custom Format can be used to prefer or exclude season packs
-
-    - Give it a score of `10` if you prefer a season pack.
-    - Give it a score of `-10000` if you prefer to not download season packs.
-    - `/\bS\d+\b(?!E\d+\b)/i` season packs are preferred: however, given the folder name is ignored the issue occurs as the file names would not be a season pack.
-
-    !!! danger "WARNING"
-
-        - This Custom Format could result in a download loop :bangbang:
-        - This will upgrade also your already downloaded single episodes :bangbang:
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### Season Pack (New "Release Type" Handling, Sonarr v4.0.2.1262+ only)
-
 !!! danger "WARNING"
 
     - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
-    - This CF is currently "Guides Only" and does not have a `trash_id` for sync tools.
-    - This CF is currently "Guides Only" and does not yet have a `trash_id` for sync tools pending ReleaseType being released as stable / Sonarr `main`
 
 ??? question "Season Pack - [Click to show/hide]"
 
@@ -1231,16 +1168,15 @@ We've made 3 guides related to this.
     !!! info
 
         - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
-        - This Custom Format will replace the current Season Pack Custom Format as a drop in replacement when the functionality reaches a full release version of Sonarr.
         - This will upgrade your already downloaded single episodes :bangbang:
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack-spec.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/season-pack.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1264,7 +1200,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1283,7 +1219,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1302,7 +1238,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vp9.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1319,7 +1255,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/internal.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1327,7 +1263,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR - [Click to show/hide]"
 
-    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1335,7 +1271,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1343,7 +1279,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR (no WEBDL) - [Click to show/hide]"
 
-    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1351,7 +1287,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1367,7 +1303,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-disk.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1383,7 +1319,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1407,7 +1343,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1430,7 +1366,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/remux-tier-02.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ### HD Bluray Tier 01
 
@@ -1448,7 +1384,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1467,7 +1403,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hd-bluray-tier-02.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ### WEB Tier 01
 
@@ -1486,7 +1422,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1507,7 +1443,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-02.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1528,7 +1464,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-tier-03.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1544,7 +1480,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/web-scene.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1570,7 +1506,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/amzn.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1588,7 +1524,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/atvp.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1606,7 +1542,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cc.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1624,7 +1560,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dcu.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1642,7 +1578,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dsnp.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1660,7 +1596,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hmax.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1678,7 +1614,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hbo.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1696,7 +1632,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hulu.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1714,7 +1650,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/it.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1732,7 +1668,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/max.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1750,7 +1686,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nf.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1768,7 +1704,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pmtp.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1786,7 +1722,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/pcok.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1804,7 +1740,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sho.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1822,7 +1758,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/stan.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1844,7 +1780,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-canalplus.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1862,7 +1798,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-rtbf.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1880,7 +1816,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-salto.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1902,7 +1838,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fod.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1920,7 +1856,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/htsr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1930,7 +1866,7 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1938,7 +1874,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/tver.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1956,7 +1892,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1974,7 +1910,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/viu.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -1996,7 +1932,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/nlz.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2014,7 +1950,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vdl.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2036,7 +1972,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/4od.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2054,7 +1990,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/all4.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2072,7 +2008,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ip.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2090,7 +2026,25 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/itvx.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### NOW
+
+<sub>NOW</sub>
+
+??? question "NOW - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/now.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2112,7 +2066,25 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/crav.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### DSCP
+
+<sub>Discovery+</sub>
+
+??? question "Discovery+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dscp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dscp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2130,7 +2102,25 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### STRP
+
+<sub>Star+</sub>
+
+??? question "Star+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/strp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2148,7 +2138,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/red.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2166,7 +2156,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/qibi.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2186,7 +2176,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bglobal.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2202,7 +2192,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/bilibili.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2220,7 +2210,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2238,7 +2228,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/funi.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2254,7 +2244,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hidive.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2270,7 +2260,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vrv.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2286,7 +2276,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/abema.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2304,7 +2294,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-adn.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2322,7 +2312,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-wkn.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2342,7 +2332,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-boost.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2358,7 +2348,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uhd-streaming-cut.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2378,7 +2368,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-01-top-seadex-muxers.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2394,7 +2384,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-02-seadex-muxers.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2410,7 +2400,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-03-seadex-muxers.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2426,7 +2416,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-04-seadex-muxers.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2442,7 +2432,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-05-remuxes.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2458,7 +2448,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-06-fansubs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2474,7 +2464,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-07-p2pscene.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2490,7 +2480,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-bd-tier-08-mini-encodes.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2506,7 +2496,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-01-muxers.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2522,7 +2512,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-02-top-fansubs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2538,7 +2528,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-03-official-subs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2554,7 +2544,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-04-official-subs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2570,7 +2560,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-05-fansubs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2586,7 +2576,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-web-tier-06-fansubs.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2602,7 +2592,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-raws.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2618,7 +2608,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-lq-groups.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2634,7 +2624,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/uncensored.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2650,7 +2640,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v0.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2666,7 +2656,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v1.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2682,7 +2672,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v2.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2698,7 +2688,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v3.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2714,7 +2704,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/v4.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2730,7 +2720,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/10bit.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2746,7 +2736,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/anime-dual-audio.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2762,7 +2752,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dubs-only.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2782,7 +2772,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-french.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2798,7 +2788,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/multi-audio.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2814,7 +2804,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-audio.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2830,7 +2820,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vff.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2846,7 +2836,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vof.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2862,7 +2852,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfi.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2878,7 +2868,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vf2.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2894,7 +2884,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2910,7 +2900,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-voq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2926,7 +2916,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2942,7 +2932,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfb.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2958,7 +2948,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vostfr.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2974,7 +2964,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fansub.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -2990,7 +2980,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fastsub.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3012,7 +3002,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-remux-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3031,7 +3021,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-hd-bluray-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3049,7 +3039,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3067,7 +3057,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3085,7 +3075,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-web-tier-03.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3103,7 +3093,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3121,7 +3111,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3140,7 +3130,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3156,7 +3146,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3172,7 +3162,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-scene.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3197,4 +3187,4 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
     ```
 
-<sub><sup>[TOP](#index)</sup>
+<sub><sup>[TOP](#index)</sup></sub>
