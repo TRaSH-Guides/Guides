@@ -1,7 +1,7 @@
 nav:
     - Home: index.md
-    - What does my media player support: media-players.md
     - Suggested Plex Media Server Settings: /Plex/Tips/Plex-media-server/
     - Optimal Plex Client Settings: /Plex/Tips/Optimal-plex-client-settings/
+    - What does my media player support: what-does-my-media-player-support.md
     - Stop 4k Video Transcoding: /Plex/Tips/4k-transcoding/
     - Profiles: /Plex/profiles/
