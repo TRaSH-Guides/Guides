@@ -22,8 +22,8 @@ TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-p
 
 It is quite important that you follow and understand what is envisioned by Trash's guide:
 
--   Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
--   Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
+- Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
 
 ---
 
