@@ -61,7 +61,7 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 
 ## Link to tested Media Player Devices
 
-[Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit#gid=0){:target="_blank" rel="noopener noreferrer"}
+[Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
