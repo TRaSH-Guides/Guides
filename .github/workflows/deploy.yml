@@ -46,7 +46,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: rossjrw/pr-preview-action@v1.4.7
         with:
-          source-dir: ./site/
+          source-dir: .
 
   deploy:
     if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
