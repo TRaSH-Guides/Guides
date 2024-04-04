@@ -20,7 +20,7 @@ Do you see a missing Player/Product ? and are you able to provide the needed inf
 
 ## What does it cover
 
-This sheet will only covers Player/Product that can run the Plex client direct/in-direct (JF/Emby isn't covered **yet** in this sheet because of the lack of proper tautulli app, and feedback/info from users).
+This sheet will only covers Player/Product that can run the Plex client direct/in-direct (*Jellyfin/Emby isn't covered **yet** in this sheet because of the lack of proper tautulli app, and feedback/info from users*).
 
 The following aspects are covered
 
