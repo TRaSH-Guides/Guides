@@ -44,7 +44,7 @@ jobs:
         run: mkdocs build
       - name: Deploy preview
         if: github.event_name == 'pull_request'
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@v1.4.7
         with:
           source-dir: ./site/
 
