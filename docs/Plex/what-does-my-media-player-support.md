@@ -4,8 +4,6 @@ We've created a excel sheet with several tested Media Player devices with info t
 
 We hope this excel sheet will be a helpful resource for those looking for a reliable Media Player device.
 
-!!! info "A lot of results have a comment added that provides extra information, such as fallback HDR or audio formats, as well as other information that we've gathered from several sources."
-
 Do you see a missing Player/Product ? and are you able to provide the needed info please join [TRaSH Guides Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
 ??? question "How can provide info of a missing Player, what do i need to provide? - [Click to show/hide]"
@@ -62,6 +60,8 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 ## Link to tested Media Player Devices
 
 [Tested Media Players](https://docs.google.com/spreadsheets/d/15Wf_jy5WqOPShczFKQB28cCetBgAGcnA0mNOG-ePwDc/edit?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+
+!!! info "A lot of results have a note added that provides extra information, such as fallback HDR or audio formats, as well as other information that we've gathered from several sources."
 
 ---
 
