@@ -18,15 +18,15 @@ storage
 │  │   ├── books
 │  │   └── tv
 │  └── usenet
-│       ├── movies
-│       ├── music
-│       ├── books
-│       └── tv
+│      ├── movies
+│      ├── music
+│      ├── books
+│      └── tv
 └── medialibrary
-     ├── movies
-     ├── music
-     ├── books
-     └── tv
+    ├── movies
+    ├── music
+    ├── books
+    └── tv
 ```
 
 ## Changes to the .env

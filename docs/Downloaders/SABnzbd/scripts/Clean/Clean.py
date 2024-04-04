@@ -63,7 +63,7 @@ print(fwp)
 print()
 print()
 print()
-print() 
+print()
 print()
 # 0 means OK
 sys.exit(0)

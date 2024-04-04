@@ -75,13 +75,13 @@ def do_check():
 
             if os.environ['NZBPP_HEALTH'] < 1000:
                 print("[ERROR] Download health is compromised and Par-check/repair disabled or no .par2 files found. " \
-                      "Setting status \"failed\".")
+                        "Setting status \"failed\".")
                 print("[ERROR] Please check your Par-check/repair settings for future downloads.")
                 status = 1
 
             else:
                 print("[ERROR] Par-check/repair disabled or no .par2 files found, and Unpack not required. Health is " \
-                      "ok so handle as though download successful.")
+                        "ok so handle as though download successful.")
                 print("[WARNING] Please check your Par-check/repair settings for future downloads.")
 
     # Check if destination directory exists (important for reprocessing of history items)

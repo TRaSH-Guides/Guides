@@ -282,11 +282,11 @@ Pullio allows you to automatically update your containers. And send you a notifi
 First you need to download Pullio
 
 ```bash
-   sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
+    sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
 ```
 
 ```bash
-   sudo chmod +x /usr/local/bin/pullio
+    sudo chmod +x /usr/local/bin/pullio
 ```
 
 For Pullio to work, you will need to create in your Task Scheduler a "Scheduled Task" that runs for example at 4am at night with root privileges.

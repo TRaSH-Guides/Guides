@@ -35,7 +35,7 @@ for src in files:
 
 print()
 print()
-print() 
+print()
 print()
 # 0 means OK
 sys.exit(0)

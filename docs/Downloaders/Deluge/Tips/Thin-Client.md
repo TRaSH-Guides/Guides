@@ -16,7 +16,7 @@ You will need to have "Allow Remote Connections" enabled if you are not connecti
 
     If you do not have access to the WebUI, and are instead doing this by editing Deluge's `core.conf`, you will need to change "allow_remote" to true.
 
-     Restart Deluge for the changes to take effect.
+    Restart Deluge for the changes to take effect.
 
 ---
 

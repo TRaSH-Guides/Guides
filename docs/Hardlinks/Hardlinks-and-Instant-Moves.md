@@ -36,15 +36,15 @@ Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installat
 
         This means:
 
-          - You can delete any "copy" w/o impacting the others.
+            - You can delete any "copy" w/o impacting the others.
 
-            Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
+                Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
 
-          - Space is only regained when all "copies" are deleted.
+            - Space is only regained when all "copies" are deleted.
 
-          - Modifying the file will impact all "copies".
+            - Modifying the file will impact all "copies".
 
-            For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
+                For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 

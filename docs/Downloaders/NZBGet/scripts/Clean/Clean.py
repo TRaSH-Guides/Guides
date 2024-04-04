@@ -24,13 +24,13 @@ POSTPROCESS_SKIP=95
 
 # Check if the script is called from NZBGet 13.0 or later
 if not 'NZBOP_SCRIPTDIR' in os.environ:
-  print('*** NZBGet post-processing script ***')
-  print('This script is supposed to be called from NZBGet (13.0 or later).')
-  sys.exit(POSTPROCESS_ERROR)
+    print('*** NZBGet post-processing script ***')
+    print('This script is supposed to be called from NZBGet (13.0 or later).')
+    sys.exit(POSTPROCESS_ERROR)
 
 if not 'NZBNP_NZBNAME' in os.environ:
-  print('[WARN] Filename not found in environment')
-  sys.exit(POSTPROCESS_ERROR)
+    print('[WARN] Filename not found in environment')
+    sys.exit(POSTPROCESS_ERROR)
 
 fwp = os.environ['NZBNP_NZBNAME']
 fwp = re.sub('(?i)-4P\.nzb$', '.nzb', fwp)
@@ -56,6 +56,6 @@ fwp = re.sub('(?i)-WRTEAM\.nzb$', '.nzb', fwp)
 fwp = re.sub('(?i)-CAPTCHA\.nzb$', '.nzb', fwp)
 fwp = re.sub(r'(\-[^-.\n]*)(\-.{4})?\.nzb$', r'\1.nzb', fwp)
 if fwp:
-  print('[NZB] NZBNAME=', fwp, sep='')
+    print('[NZB] NZBNAME=', fwp, sep='')
 
 sys.exit(POSTPROCESS_SUCCESS)

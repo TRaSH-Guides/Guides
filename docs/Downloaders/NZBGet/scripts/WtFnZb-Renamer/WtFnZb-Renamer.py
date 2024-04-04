@@ -35,13 +35,13 @@ except ImportError:
 
 patterns = (
     re.compile(r'^(?P<prefix>.*\[PRiVATE\]-\[WtFnZb\]-)'
-               r'\[(?P<total>\d+)\]-\[(?P<segment>\d+)\/(?P<filename>.{3,}?)\]'
-               r'\s+-\s+""\s+yEnc\s+',
-               re.MULTILINE | re.UNICODE),
+                r'\[(?P<total>\d+)\]-\[(?P<segment>\d+)\/(?P<filename>.{3,}?)\]'
+                r'\s+-\s+""\s+yEnc\s+',
+                re.MULTILINE | re.UNICODE),
     re.compile(r'^(?P<prefix>.*\[PRiVATE\]-\[WtFnZb\]-)'
-               r'\[(?P<filename>.{3,}?)\]-\[(?P<segment>\d+)/(?P<total>\d+)\]'
-               r'\s+-\s+""\s+yEnc\s+',
-               re.MULTILINE | re.UNICODE))
+                r'\[(?P<filename>.{3,}?)\]-\[(?P<segment>\d+)/(?P<total>\d+)\]'
+                r'\s+-\s+""\s+yEnc\s+',
+                re.MULTILINE | re.UNICODE))
 
 nzb_dir = os.getenv('NZBNP_DIRECTORY')
 nzb_filename = os.getenv('NZBNP_FILENAME')
@@ -54,7 +54,7 @@ if nzb_dir is None or nzb_filename is None or nzb_name is None:
 
 if nzb_file_naming is not None and nzb_file_naming.lower() != 'nzb':
     print(u'[ERROR] NZBGet setting FileNaming (under Download Queue) '
-          u'must be set to "Nzb" for this extension to work correctly, exiting.')
+            u'must be set to "Nzb" for this extension to work correctly, exiting.')
     sys.exit(POSTPROCESS_ERROR)
 
 if not os.path.exists(nzb_dir):

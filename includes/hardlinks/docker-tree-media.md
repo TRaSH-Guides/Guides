@@ -1,8 +1,8 @@
 ```none
 data
 └── media
-     ├── movies
-     ├── music
-     ├── books
-     └── tv
+    ├── movies
+    ├── music
+    ├── books
+    └── tv
 ```
