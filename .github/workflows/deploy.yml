@@ -42,11 +42,6 @@ jobs:
         run: pip install -r docs/requirements.txt
       - name: Build documentation
         run: mkdocs build
-      - name: Deploy preview
-        if: github.event_name == 'pull_request'
-        uses: rossjrw/pr-preview-action@v1.4.7
-        with:
-          source-dir: .
 
   deploy:
     if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
