@@ -16,5 +16,6 @@ jobs:
           docker run --rm \
             -v "${GITHUB_WORKSPACE}":/data \
             markdownlint/markdownlint \
+            -c /data/.markdownlint.yml \
             -r ~MD013,~MD033,~MD034,~MD046,~MD002,~MD041 \
             .
