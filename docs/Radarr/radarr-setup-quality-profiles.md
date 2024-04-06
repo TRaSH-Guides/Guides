@@ -272,9 +272,13 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### Advanced Audio
 
-- You have an audio setup that supports all HD Audio (TrueHD, DTS-X, DTS-HD, etc).
-- You have a media player (hardware devices) that can passthrough HD audio.
-- You don't have an AppleTV (Being it can't passthrough untouched HD audio).
+- You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
+
+    {! include-markdown "../../includes/cf/audio-limitations-atv.md" !}
+
+- You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.
+- You should add **ALL** the Audio formats - don't leave any of them out!
+- Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.
 
 *The reason that I score lossy Atmos higher than lossless DTS-HD MA is that I prefer having the object metadata (Atmos) over lossless audio.*
 

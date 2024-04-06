@@ -78,21 +78,15 @@ To make this easier we made a How to setup a quality profile for Radarr/Sonarr t
 
 - [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use
 
-- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
-
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
 #### How to make use of Audio Formats for Radarr
 
 - [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use
 
-- You have an audio setup that supports all HD Audio (TrueHD, DTS-X, DTS-HD, etc).
-- You have a media player (hardware devices) that can passthrough HD audio.
-- You don't have an AppleTV (Being it can't passthrough untouched HD audio).
-
-*The reason that I score lossy Atmos higher than lossless DTS-HD MA is that I prefer having the object metadata (Atmos) over lossless audio.*
-
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
+
+---
 
 ### Sonarr
 
@@ -101,8 +95,6 @@ To make this easier we made a How to setup a quality profile for Radarr/Sonarr t
 #### How to make use of HDR Formats for Sonarr
 
 - [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
-
-- You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
