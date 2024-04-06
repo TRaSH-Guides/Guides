@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 4500
   },
+  "trash_regex": "https://regex101.com/r/VWCW8c/1",
   "name": "DTS X",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
@@ -11,7 +12,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
+              "value": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))"
           }
       },
       {

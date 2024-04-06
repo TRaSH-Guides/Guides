@@ -57,7 +57,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
+              "value": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))"
           }
       },
       {
