@@ -2906,6 +2906,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Plex/what-does-my-media-player-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What does my media player support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="/Plex/Tips/4k-transcoding/" class="md-nav__link">
         
   
@@ -3770,8 +3791,11 @@
 So what's the best way to set up the Custom Formats and which ones to use with which scores to set up your quality profiles?</p>
 <p>There isn't a "best" setup, it depends on your media setup (hardware devices) and your personal preferences.</p>
 <p>Some prefer high-quality audio (HD Audio), others high-quality video. Many prefer both.</p>
-<p>Here I will try to explain how to make the most use of Custom Formats to help you to set up your quality profiles for your personal needs.</p>
-<p>I created a <a href="#which-quality-profile-should-you-choose">flowchart</a> to make your decision/choices easier.</p>
+<p>Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.</p>
+<ul>
+<li>We've created a <a href="#which-quality-profile-should-you-choose">flowchart</a> to make your decisions/choices easier.</li>
+<li>We've also created an Excel sheet with several tested <a href="/Plex/what-does-my-media-player-support" rel="noopener noreferrer" target="_blank">media player devices</a> to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.</li>
+</ul>
 <hr />
 <h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link"></a></h2>
 <p>After you've added the Custom Formats, as explained in <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.
@@ -6511,9 +6535,19 @@ Also they often even rename the release name into Portuguese.</li>
 <p>The following custom format groups should be combined with the Quality Profiles above. Users will need to choose which options and custom formats they prefer.</p>
 <h3 id="advanced-audio">Advanced Audio<a class="headerlink" href="#advanced-audio" title="Permanent link"></a></h3>
 <ul>
-<li>You have an audio setup that supports all HD Audio (TrueHD, DTS-X, DTS-HD, etc).</li>
-<li>You have a media player (hardware devices) that can passthrough HD audio.</li>
-<li>You don't have an AppleTV (Being it can't passthrough untouched HD audio).</li>
+<li>
+<p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
+<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
+<div class="admonition bug">
+<p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
+</div>
+<!-- END INCLUDE -->
+</li>
+<li>
+<p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
+</li>
+<li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
+<li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
 <p><em>The reason that I score lossy Atmos higher than lossless DTS-HD MA is that I prefer having the object metadata (Atmos) over lossless audio.</em></p>
 <!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
@@ -7050,6 +7084,8 @@ When you add your preferred Custom Format and set it to something like <code>+10
     
   
   
+    
+  
 
 
   <aside class="md-source-file">
@@ -7059,10 +7095,19 @@ When you add your preferred Custom Format and set it to something like <code>+10
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 10, 2024 01:32:59</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 7, 2024 09:28:20</span>
   </span>
 
     
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2021 13:56:28</span>
+  </span>
+
     
     
     
