@@ -65,7 +65,8 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       locale: en
-      fallback_to_build_date: false
+      fallback_to_build_date: true
+      enable_creation_date: true
   - awesome-pages
   - glightbox:
       touchNavigation: true
