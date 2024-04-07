@@ -20,11 +20,15 @@ Do you see a missing Player/Product? Are you able to provide the needed info? Pl
 
 This sheet will only cover Players/Products that can run the Plex client directly or indirectly (*Jellyfin/Emby isn't covered **yet** due to the lack of a proper Tautulli app and feedback/info from users*).
 
+!!! info "Jellyfin/Emby"
+
+    While these principles are based on Plex and the capabilities of certain devices, the capabilities of these devices also apply to JellyFin and Emby. Assuming that it's possible to do the equivalent streaming method (direct or indirect play) with your media server, the hardware should act the same as if Plex was used.
+
 The following aspects are covered
 
 ### Does it support the most common HDR formats
 
-The sheet also has comments added for extra info
+The sheet also has notes added for extra info
 
 - Dolby Vision Profile 5 (*does not have a HDR10 baselayer, so cannot fallback to HDR10*)
 - Dolby Vision Profile 7 (*DV + HDR10 baselayer, so it can fallback to HDR10*)
@@ -34,13 +38,11 @@ The sheet also has comments added for extra info
 
 #### Which Profile is used by what
 
-!!! info "Which profile is used by what"
+- Profile 5 => WEBDL (Streaming Services)
+- Profile 7 => Untouched Remuxes and BR-DISK
+- Profile 8 => Encodes, Hybrid Remuxes, Hybrid WEBDL, and in some cases standard WEBDL like from Hulu
 
-    - Profile 5 => WEBDL (Streaming Services)
-    - Profile 7 => Untouched Remuxes and BR-DISK
-    - Profile 8 => Encodes, Hybrid Remuxes, Hybrid WEBDL, and in some cases standard WEBDL like from Hulu
-
-### Does it support audio passthrough the most common formats
+### Does it support audio passthrough in the most common formats
 
 This allows for the best audio quality as the audio signal is not altered or compressed in any way before reaching the AV receiver or soundbar. This is especially important for high-quality audio formats such as Dolby TrueHD or DTS-HD Master Audio.
 
