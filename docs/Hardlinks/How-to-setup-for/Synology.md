@@ -17,11 +17,11 @@ This page will provide you with guidance on how to install several Docker images
 ## Summary
 
 1. We will create ***one*** share that will hold all your data. This ensures hardlinking and/or instant moves are possible.
-2. Create one user which will be assigned to the docker images as the user they run as out of security reasons.
-3. Create a folder structure on the `data` and `docker` share with a few commands (or manually).
-4. Download and edit the `docker-compose.yml` and `.env` files to your system settings.
-5. Set permissions to all folders related in the shares.
-6. Run and execute docker commands to start the containers.
+1. Create one user which will be assigned to the docker images as the user they run as out of security reasons.
+1. Create a folder structure on the `data` and `docker` share with a few commands (or manually).
+1. Download and edit the `docker-compose.yml` and `.env` files to your system settings.
+1. Set permissions to all folders related in the shares.
+1. Run and execute docker commands to start the containers.
 
 ### Automated Script
 
@@ -143,13 +143,13 @@ The structure will look like this. You can of course edit this, but do this when
 
 To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:
 
-#### If you use usenet
+### If you use usenet
 
 ```bash
 mkdir -p /volume1/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
 ```
 
-#### If you use torrents
+### If you use torrents
 
 ```bash
 mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}

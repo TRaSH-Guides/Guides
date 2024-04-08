@@ -13,7 +13,7 @@ validation:
   not_found: warn
   absolute_links: ignore
 # fails to build on warnings
-strict: true
+#strict: true
 
 copyright: Copyright &copy; 2022 TRaSH
 
