@@ -329,7 +329,7 @@ You will notice that all the images will be downloaded, after that the container
 
 !!! warning
 
-    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the commands from here [HERE](#run-the-docker-compose)) again.
+    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, [run the commands from here](#run-the-docker-compose)) again.
 
     Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
 
