@@ -13,7 +13,7 @@
 
     *Possible Variables*
 
-    **When no 4k exists it will grab the following:**
+    **When no 4k release exists, it will grab the following:**
 
     - 1080p WEBDL with DV/HDR (*optional also 1080p WEBDL without DV/HDR*)
     - 1080p Remux
