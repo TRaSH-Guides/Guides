@@ -839,7 +839,10 @@ We've made 3 guides related to this.
 ### IMAX
 
 ??? question "IMAX - [Click to show/hide]"
-    Description placeholder
+
+    [From In Depth Cine](https://www.indepthcine.com/videos/imax){:target="_blank" rel="noopener noreferrer"}
+
+    IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -854,9 +857,14 @@ We've made 3 guides related to this.
 ### IMAX Enhanced
 
 ??? question "IMAX Enhanced - [Click to show/hide]"
-    IMAX Enhanced: Get More Picture Instead of Black Bars
 
-    IMAX Enhanced exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
+    **Get more picture and less black bars (letterboxing).**
+
+    [From Wired](https://www.wired.com/story/what-is-imax-enhanced/){:target="_blank" rel="noopener noreferrer"}
+
+    IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases are often higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
+
+    As a result of the higher bitrate and implied picture quality improvement, it is recommended to enable the IMAX Enhanced custom format on WEB profiles, especially for those seeking 'The IMAX Experience' - including less "black bars" or letterboxing.
 
     ![!Imax Enhanced Example](images/imax-e/imax-e.1.png)
 
