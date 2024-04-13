@@ -15,7 +15,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const titleRegex = /^(Revert \")?(feat|build|chore|style|fix|update|ci)\((\w|\/|-)+\)\:.+/g;
+            const titleRegex = /^(Revert \")?(feat|fix|docs|style|refactor|perf|test|update|build|ci|chore)(\([\w\/-]+\))?:\s.+$/g;
             const title = context.payload.pull_request.title;
             const isValid = titleRegex.test(title);
             if (!isValid) {
