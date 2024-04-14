@@ -26,7 +26,7 @@ jobs:
               if ((context.payload.action === 'opened') || (context.payload.action === 'reopened')) {
                 const prNumber = context.payload.pull_request.number;
                 const author = context.payload.pull_request.user.login;
-                const message = `@${author} your pull request title "${context.payload.pull_request.title}" does not conform to our naming conventions (https://www.conventionalcommits.org/en/v1.0.0/).\n\nPlease update the title to match the pattern: "feat|build|chore|style|fix|update|ci(<area>): <description>"`;
+                const message = `@${author} your pull request title "${context.payload.pull_request.title}" does not conform to our [naming conventions](https://www.conventionalcommits.org/en/v1.0.0/).\n\nPlease update the title to match the pattern: "feat|build|chore|style|fix|update|ci(\\<area\\>): \\<description\\>"`;
                 github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
