@@ -2,7 +2,7 @@ version: "3.2"
 services:
   radarr:
     container_name: radarr
-    image: cr.hotio.dev/hotio/radarr:latest
+    image: ghcr.io/hotio/radarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -18,7 +18,7 @@ services:
       - /data:/data
   sonarr:
     container_name: sonarr
-    image: cr.hotio.dev/hotio/sonarr:latest
+    image: ghcr.io/hotio/sonarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -34,7 +34,7 @@ services:
       - /data:/data
   bazarr:
     container_name: bazarr
-    image: cr.hotio.dev/hotio/bazarr:latest
+    image: ghcr.io/hotio/bazarr:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -50,7 +50,7 @@ services:
       - /data/media:/data/media
   sabnzbd:
     container_name: sabnzbd
-    image: cr.hotio.dev/hotio/sabnzbd:latest
+    image: ghcr.io/hotio/sabnzbd:latest
     restart: unless-stopped
     logging:
       driver: json-file

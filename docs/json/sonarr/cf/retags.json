@@ -1,6 +1,5 @@
 {
   "trash_id": "06d66ab109d4d2eddb2794d21526d140",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -8,12 +7,21 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "[rartv]",
+      "name": ".heb",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[rartv\\]"
+        "value": "[.]heb\\b"
+      }
+    },
+    {
+      "name": "[eztv]",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[eztv([ ._-]re)?\\]"
       }
     },
     {
@@ -26,12 +34,12 @@
       }
     },
     {
-      "name": "[eztv]",
+      "name": "[rartv]",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[eztv([ ._-]re)?\\]"
+        "value": "\\[rartv\\]"
       }
     },
     {

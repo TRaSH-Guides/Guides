@@ -1,6 +1,5 @@
 {
   "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -41,6 +40,33 @@
       "required": false,
       "fields": {
         "value": "\\[TGx\\]"
+      }
+    },
+    {
+      "name": ".VAV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[.]VAV\\b"
+      }
+    },
+    {
+      "name": ".heb",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[.]heb\\b"
+      }
+    },
+    {
+      "name": "ORARBG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ORARBG)\\b"
       }
     }
   ]

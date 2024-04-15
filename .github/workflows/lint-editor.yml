@@ -1,12 +1,16 @@
 name: Lint - EditorConfig
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   editorconfig-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.1.2
       - name: editorconfig-checker
         run: |
           docker run --rm \

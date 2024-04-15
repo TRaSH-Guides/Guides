@@ -1,3 +1,5 @@
+{! include-markdown "../../includes/sonarrv3-eol.md" !}
+
 # Release Profile RegEx (WEB-DL)
 
 Sonarr V3 has a great feature called Release Profile.
@@ -227,6 +229,26 @@ Add this to your `Preferred (3)` with a score of [50]
 /\b(ovid)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(fod)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(tver)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(u-next)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(ALL4)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(4OD)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
@@ -322,7 +344,7 @@ Add this to your `Preferred (3)` with a score of [5]
 Add this to your `Preferred (3)` with a score of [-10000]
 
 ```bash
-/(-BRiNK|-CHX|-CTFOH|-EVO|-FGT|-GHOSTS|-HiQVE|-iNTENSO|JFF|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|PSA|TBS|-TG|-VIDEOHOLE|-worldmkv|-XLF|-Zero00)\b/i
+/(-BRiNK|-CHX|-CTFOH|-d3g|-EVO|-FGT|-GHOSTS|-HiQVE|-iNTENSO|JFF|MeGusta|-NERO|nhanc3|Pahe\.ph|Pahe\.in|Pahe|PSA|TBS|-TG|-VIDEOHOLE|-worldmkv|-XLF|-Zero00)\b/i
 ```
 
 !!! danger "Caution"
@@ -419,7 +441,7 @@ Add this to your `Preferred (3)` with a score of [500]
 Add this to your `Preferred (3)` with a score of [1500]
 
 ```bash
-/\b(dv|dovi|dolby[ .]?vision)\b/i
+/\b(dv|dovi|dolby[ .]?v(ision)?)\b/i
 ```
 
 ------
@@ -532,7 +554,7 @@ Add this to your `Preferred (3)` with a score of [15]
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?Vision)\b).*/i
+/^(?!.*(HDR|HULU|REMUX))(?=.*\b(DV|Dovi|Dolby[- .]?V(ision)?)\b).*/i
 ```
 
 ------
@@ -560,7 +582,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*(\b\d{3,4}p\b).*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS).*/i
 
 ```
 

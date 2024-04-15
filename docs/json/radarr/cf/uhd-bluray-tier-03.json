@@ -1,8 +1,8 @@
 {
   "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
-  "trash_score": 1700,
   "trash_scores": {
     "default": 1700,
+    "sqp-1-2160p": 1000,
     "sqp-2": 2100,
     "sqp-5": 2100
   },
@@ -10,57 +10,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "LEGi0N",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(LEGi0N)$"
-      }
-    },
-    {
-      "name": "SPHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SPHD)$"
-      }
-    },
-    {
-      "name": "WEBDV",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(WEBDV)$"
-      }
-    },
-    {
-      "name": "2160p",
-      "implementation": "ResolutionSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": 2160
-      }
-    },
-    {
       "name": "Not REMUX",
       "implementation": "QualityModifierSpecification",
       "negate": true,
       "required": true,
       "fields": {
         "value": 5
-      }
-    },
-    {
-      "name": "Not SDR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bSDR\\b"
       }
     },
     {
@@ -79,6 +34,51 @@
       "required": true,
       "fields": {
         "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
+      "name": "SPHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SPHD)$"
+      }
+    },
+    {
+      "name": "WEBDV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WEBDV)$"
       }
     }
   ]

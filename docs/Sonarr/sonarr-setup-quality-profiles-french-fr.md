@@ -131,7 +131,7 @@ Si vous préférez les 2160p WEBDL (WEB-2160p)
 
 Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR, le 2160p sans DV/HDR ne représente qu'un bénéfice minime.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
 
@@ -185,8 +185,6 @@ Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio or
 TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
 - [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

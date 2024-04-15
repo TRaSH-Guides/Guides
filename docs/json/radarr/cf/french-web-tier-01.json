@@ -1,6 +1,5 @@
 {
   "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
-  "trash_score": 1700,
   "trash_scores": {
     "default": 1700
   },
@@ -41,6 +40,15 @@
       "required": false,
       "fields": {
         "value": "^(FCK)$"
+      }
+    },
+    {
+      "name": "FW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FW)$"
       }
     },
     {
@@ -113,6 +121,15 @@
       "required": false,
       "fields": {
         "value": "^(T3KASHi)$"
+      }
+    },
+    {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
       }
     }
   ]

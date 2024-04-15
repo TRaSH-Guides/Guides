@@ -1,47 +1,39 @@
-"Area: Backend":
-  - all:
-      - "docs/**/*.md"
-      - "!docs/Bazarr/**"
-      - "!docs/Downloaders/**"
-      - "!docs/Plex/**"
-      - "!docs/Prowlarr/**"
-      - "!docs/Radarr/**"
-      - "!docs/recyclarr-configs/**"
-      - "!docs/Sonarr/**"
 "Area: Bazarr":
-  - docs/Bazarr/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/Bazarr/**']
 "Area: Dependencies":
-  - package.json
-  - package-lock.json
+  - changed-files:
+      - any-glob-to-any-file: ['package.json', 'package-lock.json']
 "Area: Downloaders":
-  - docs/Downloaders/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/Downloaders/**']
 "Area: Plex":
-  - docs/Plex/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/Plex/**']
 "Area: Prowlarr":
-  - docs/Prowlarr/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/Prowlarr/**']
 "Area: Radarr":
-  - docs/json/radarr/cf/**
-  - docs/json/radarr/quality-size/**
-  - docs/json/radarr/naming/**
-  - docs/Radarr/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/json/radarr/cf/**', 'docs/json/radarr/quality-size/**', 'docs/json/radarr/naming/**', 'docs/Radarr/**']
 "Area: Recyclarr":
-  - docs/recyclarr-configs/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/recyclarr-configs/**']
 "Area: Sonarr":
-  - docs/json/sonarr/rp/**
-  - docs/json/sonarr/cf/**
-  - docs/json/sonarr/quality-size/**
-  - docs/json/sonarr/naming/**
-  - docs/Sonarr/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/json/sonarr/rp/**', 'docs/json/sonarr/cf/**', 'docs/json/sonarr/quality-size/**', 'docs/json/sonarr/naming/**', 'docs/Sonarr/**']
 "Area: Starr Custom Formats":
-  - docs/json/radarr/cf/**
-  - docs/json/sonarr/cf/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/json/radarr/cf/**', 'docs/json/sonarr/cf/**']
 "Area: Starr Naming":
-  - docs/json/radarr/naming/**
-  - docs/json/sonarr/naming/**
+  - changed-files:
+      - any-glob-to-any-file: ['docs/json/radarr/naming/**', 'docs/json/sonarr/naming/**']
 "Area: github_actions":
-  - .github/workflows/**
-  - .github/dependabot.yml
-  - .github/labeler.yml
-  - .github/stale.yml
+  - changed-files:
+      - any-glob-to-any-file: ['.github/workflows/**', '.github/dependabot.yml', '.github/labeler.yml', '.github/stale.yml']
 "Area: python":
-  - "**/*.py"
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.py']
+"Area: Backend":
+  - changed-files:
+      - any-glob-to-any-file: ['docs/**/*.md', '!docs/Bazarr/**', '!docs/Downloaders/**', '!docs/Plex/**', '!docs/Prowlarr/**', '!docs/Radarr/**', '!docs/recyclarr-configs/**', '!docs/Sonarr/**']

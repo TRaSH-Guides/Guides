@@ -1,6 +1,5 @@
 {
   "trash_id": "9c14d194486c4014d422adc64092d794",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -13,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub"
+        "value": "^(?!.*(Dual|Multi)[-_. ]?Audio).*((?<!multi-)\\b(dub(bed)?)\\b|(funi|eng(lish)?)_?dub)"
       }
     },
     {

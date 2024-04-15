@@ -1,6 +1,5 @@
 {
   "trash_id": "4fd5528a3a8024e6b49f9c67053ea5f3",
-  "trash_score": 300,
   "trash_scores": {
     "default": 300
   },
@@ -130,7 +129,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(VARYG)\\b(?=.*Multi[ _-]?Sub)"
+        "value": "\\b(VARYG)\\b"
       }
     },
     {
@@ -139,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ZigZag)\\b(?=.*Multi[ _-]?Sub)"
+        "value": "\\[ZigZag\\]|-ZigZab\b"
       }
     }
   ]

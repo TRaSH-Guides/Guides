@@ -1,6 +1,5 @@
 {
   "trash_id": "27954b0a80aab882522a88a4d9eae1cd",
-  "trash_score": 1500,
   "trash_scores": {
     "default": 1500
   },
@@ -22,7 +21,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?V(ision)?)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
       }
     },
     {

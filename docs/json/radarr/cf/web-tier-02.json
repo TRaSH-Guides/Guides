@@ -1,6 +1,5 @@
 {
   "trash_id": "403816d65392c79236dcb6dd591aeda4",
-  "trash_score": 1650,
   "trash_scores": {
     "default": 1650,
     "anime-radarr": 250
@@ -96,6 +95,15 @@
       "required": false,
       "fields": {
         "value": "^(playWEB)$"
+      }
+    },
+    {
+      "name": "SbR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SbR)$"
       }
     },
     {

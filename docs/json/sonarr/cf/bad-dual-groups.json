@@ -1,6 +1,5 @@
 {
   "trash_id": "32b367365729d530ca1c124a0b180c64",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000,
     "french-multi": 0
@@ -24,6 +23,15 @@
       "required": false,
       "fields": {
         "value": "^(BAT)$"
+      }
+    },
+    {
+      "name": "BlackBit",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BlackBit)$"
       }
     },
     {
@@ -99,6 +107,15 @@
       }
     },
     {
+      "name": "LCD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LCD)$"
+      }
+    },
+    {
       "name": "N3G4N",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -162,6 +179,15 @@
       }
     },
     {
+      "name": "vnlls",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(vnlls)$"
+      }
+    },
+    {
       "name": "WTV",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -195,6 +221,15 @@
       "required": false,
       "fields": {
         "value": "^(ZigZag)$"
+      }
+    },
+    {
+      "name": "ZNM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZNM)$"
       }
     }
   ]

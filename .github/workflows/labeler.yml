@@ -1,6 +1,10 @@
 name: Label Pull Requests
 
-on: [pull_request_target, push]
+on:
+  push:
+    branches:
+      - master
+  pull_request_target:
 
 jobs:
   triage:
@@ -9,6 +13,6 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v4
+      - uses: actions/labeler@v5
         with:
           sync-labels: true

@@ -1,0 +1,55 @@
+{
+  "trash_id": "83304f261cf516bb208c18c54c0adf97",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "SDR (no WEBDL)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "HDR Formats",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)"
+      }
+    },
+    {
+      "name": "SDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSDR\\b"
+      }
+    },
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "Not WEBRip",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}

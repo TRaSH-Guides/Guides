@@ -6,6 +6,7 @@
     | VOF                        | Version Originale Française                                                         | Original French Version                                               |
     | VFI                        | Version Francophone Internationale                                                  | International French Version                                          |
     | VFQ                        | Version Francophone Québécoise                                                      | Canadian French Version                                               |
+    | VOQ                        | Version Original Québécoise (ex: Bon Cop, Bad Cop)                                  | Quebec Original Version (ex: Bon Cop, Bad Cop)                        |
     | VQ                         | Version Québécoise (accent Québécois important, ex: Les Simpsons le film)           | Quebec Version (strong Quebec accent, ex: The Simpsons movie)         |
     | VFB                        | Version Francophone Belge                                                           | Belgian French Version                                                |
     | VF[1-9] or FR[1-9]         | Indique le nombre de doublage présent (normalement VF2 soit VFF et VFQ)             | Indicates the number of dubs present (normally VF2 being VFF and VFQ) |
@@ -15,7 +16,7 @@
     - *[2] Il est à noter que le SUBFRENCH est inclus dans ce Format Personnalisé. Néanmoins, SUB signifie souvent que le sous-titre a été intégré à l'image (hardcoded). Les sorties françaises ont tendance à mélanger les deux, ce qui fait que certains VOSTFR sont étiquetés comme SUBFRENCH et SUBFRENCH comme VOSTFR.*
 
     !!! tip "Indexers renaming in Prowlarr"
-        Certains indexeurs dans Prowlarr peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.
+        Certains indexeurs dans **Prowlarr** peuvent renommer les versions `MULTi` en `MULTi.TRUEFRENCH` ou `MULTi.FRENCH`. L'utilisation de cette fonction n'est pas recommandé, car elle peut entraîner des faux positifs avec les formats personnalisés VFF, VFQ et VQ.
 
 ??? abstract "Versions françaises - [Cliquer pour afficher/masquer]"
     | Formats Personnalisés                                                                              | Trash ID                                        |
@@ -25,6 +26,7 @@
     | [{{ sonarr['cf']['french-vfi']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfi)       | {{ sonarr['cf']['french-vfi']['trash_id'] }}    |
     | [{{ sonarr['cf']['french-vf2']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vf2)       | {{ sonarr['cf']['french-vf2']['trash_id'] }}    |
     | [{{ sonarr['cf']['french-vfq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfq)       | {{ sonarr['cf']['french-vfq']['trash_id'] }}    |
+    | [{{ sonarr['cf']['french-voq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#voq)       | {{ sonarr['cf']['french-voq']['trash_id'] }}    |
     | [{{ sonarr['cf']['french-vq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vq)         | {{ sonarr['cf']['french-vq']['trash_id'] }}     |
     | [{{ sonarr['cf']['french-vfb']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vfb)       | {{ sonarr['cf']['french-vfb']['trash_id'] }}    |
     | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) | {{ sonarr['cf']['french-vostfr']['trash_id'] }} |

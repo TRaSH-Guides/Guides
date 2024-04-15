@@ -1,0 +1,28 @@
+{
+  "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "x266",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h266",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?266|\\bVVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}

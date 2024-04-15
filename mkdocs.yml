@@ -6,6 +6,15 @@ site_url: https://trash-guides.info/
 repo_url: https://github.com/TRaSH-Guides/Guides
 repo_name: TRaSH-Guides
 
+# ignores absolute warnings we have
+# warns on missing/broken links
+validation:
+  omitted_files: warn
+  not_found: warn
+  absolute_links: ignore
+# fails to build on warnings
+strict: true
+
 copyright: Copyright &copy; 2022 TRaSH
 
 extra:
@@ -29,8 +38,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.extra
   - pymdownx.highlight:
       guess_lang: true
@@ -39,6 +48,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed
   - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: ""
 #      toc_depth: 5
@@ -53,7 +65,8 @@ plugins:
   - git-revision-date-localized:
       type: datetime
       locale: en
-  #    fallback_to_build_date: false
+      fallback_to_build_date: true
+      enable_creation_date: true
   - awesome-pages
   - glightbox:
       touchNavigation: true
@@ -72,7 +85,7 @@ plugins:
       j2_variable_end_string: "]]"
   - redirects:
       redirect_maps:
-        updates.txt: updates.txt
+        #updates.txt: updates.txt
         discord.md: https://discord.gg/4K2kdvwzFh
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr redirects

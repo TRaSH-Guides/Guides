@@ -132,7 +132,7 @@ If you prefer 2160p WEBDL (WEB-2160p)
 
 The only deal breaker with 2160p is when you get them with DV/HDR, 2160p without DV/HDR is a minimal profit.
 
-{! include-markdown "../../includes/cf/sonarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-en.md" !}
 
@@ -184,8 +184,6 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 TRaSH provides great guides and explanations about them at the following links:
 
 - [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

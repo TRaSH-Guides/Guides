@@ -1,6 +1,5 @@
 {
   "trash_id": "fbcb31d8dabd2a319072b84fc0b7249c",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -14,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<=\\bS\\d+\\b).*\\b(Extras|Bonus)\\b"
+        "value": "(?<=\\bS\\d+\\b).*\\b(Extras|Bonus|Extended[ ._-]Clip)\\b"
       }
     }
   ]

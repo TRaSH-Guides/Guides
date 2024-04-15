@@ -1,6 +1,5 @@
 {
   "trash_id": "a3d82cbef5039f8d295478d28a887159",
-  "trash_score": 600,
   "trash_scores": {
     "default": 600
   },
@@ -23,7 +22,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?Vision)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
+        "value": "^(?=.*\\b(DV|DoVi|Dolby[ .]?V(ision)?)\\b)(?=.*\\b(HDR(10)?(P(lus)?)?)\\b)"
       }
     },
     {
@@ -59,7 +58,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dv|dovi|dolby[ .]?vision)\\b"
+        "value": "\\b(dv|dovi|dolby[ .]?v(ision)?)\\b"
       }
     }
   ]

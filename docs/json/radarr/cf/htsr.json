@@ -1,0 +1,35 @@
+{
+  "trash_id": "834b2c0ba0a8596029b4479a29e1a032",
+  "trash_regex": "https://regex101.com/r/PNiRKh/1",
+  "name": "HTSR",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Hotstar",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(HTSR|HS)\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

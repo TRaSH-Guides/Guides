@@ -1,6 +1,5 @@
 {
   "trash_id": "fb392fb0d61a010ae38e49ceaa24a1ef",
-  "trash_score": 100,
   "trash_scores": {
     "default": 100,
     "sqp-2": 151,
@@ -18,24 +17,6 @@
       "required": true,
       "fields": {
         "value": 2160
-      }
-    },
-    {
-      "name": "HDR Formats",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX)\\b|\\b(PQ)\\b|\\b(HLG)\\b"
-      }
-    },
-    {
-      "name": "NOT SDR",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "\\bSDR\\b"
       }
     }
   ]

@@ -8,7 +8,7 @@
     Get 50% Off ALL Plans (Anonymous VPN, Anonymous VPN Pro, Anonymous VPN Premium)
 
     ```
-    TRaSH-Guides-2023
+    TRaSH-Guides-2024
     ```
 
     [![torguard-FreeTrial-270x90](images/torguard/torguard-FreeTrial-728x90.gif)](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"}
@@ -17,6 +17,8 @@
         As of 13 March Torguard Settles Piracy Lawsuit and has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:
 
         I Talked to several people and they are still able to use Torguard for Torrents, Perhaps because the connection is encrypted. And others just selected a server in another country.
+
+        !!! warning "If the US server doesn't work for you use another country"
 
         [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/){:target="_blank" rel="noopener noreferrer"}.
 
@@ -67,6 +69,8 @@ For the best speed it's recommended to choose the one nearest to your location.
 
 !!! tip ""
     Sometimes you get better speeds if you use one of your neighboring countries.
+
+!!! warning "If the US server doesn't work for you use another country"
 
 Let's use for this example: `USA Miami` and copy/paste the Hostname `us-fl.torguard.org`.
 

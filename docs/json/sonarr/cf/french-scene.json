@@ -1,6 +1,5 @@
 {
   "trash_id": "2f3422339d185eb227a324644a2fbfca",
-  "trash_score": 1500,
   "trash_scores": {
     "default": 1500
   },
@@ -166,7 +165,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"
+        "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SharpHD|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"
       }
     },
     {

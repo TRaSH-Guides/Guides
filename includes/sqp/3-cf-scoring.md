@@ -2,7 +2,7 @@
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
@@ -12,7 +12,9 @@
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-optional.md" !}
+{! include-markdown "../../includes/sqp/sqp-uhd-radarr-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-resolution.md" !}
 

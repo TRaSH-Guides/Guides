@@ -1,6 +1,5 @@
 {
   "trash_id": "0ac24a2a68a9700bcb7eeca8e5cd644c",
-  "trash_score": 50,
   "trash_scores": {
     "default": 50
   },
@@ -11,7 +10,7 @@
       "name": "iTunes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": "\\b(it|itunes)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }

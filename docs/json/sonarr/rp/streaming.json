@@ -52,7 +52,12 @@
         "/\\b(red)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(sho|showtime)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
         "/\\b(vdl)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
-        "/\\b(ovid)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
+        "/\\b(ovid)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(fod)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(tver)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(u-next)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(ALL4)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+        "/\\b(4OD)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
       ]
     }
   ],

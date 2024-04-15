@@ -1,6 +1,5 @@
 {
   "trash_id": "b4a1b3d705159cdca36d71e57ca86871",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -113,6 +112,15 @@
           "required": false,
           "fields": {
             "value": "neko[ ._-]?(raws)"
+          }
+        },
+        {
+          "name": "New-raws",
+          "implementation": "ReleaseTitleSpecification",
+          "negate": false,
+          "required": false,
+          "fields": {
+            "value": "New[ ._-]?(raws)"
           }
         },
         {

@@ -103,6 +103,10 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
+!!! tip "Getting the movie name in French in the file and/or folder name"
+    Following the recommended naming scheme for your library, whether it's Plex, Jellyfin, or Emby, you can add the ISO-2 language code at the end of the movie name tag to display the movie name in the desired language.
+    The tag should look like the following: `{Movie CleanTitle:fr}`. This work in both Folder and File name.
+
 ------
 
 #### HD Bluray + WEB
@@ -153,7 +157,7 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
@@ -235,7 +239,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-multi-audio-en.md" !}
 
@@ -271,8 +275,6 @@ TRaSH provides great guides and explanations about them at the following links:
 
 - [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL)](/Radarr/radarr-setup-quality-profiles/#hdr-formats-dv-webdl){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats + DV (WEBDL) + HDR10+ Boost](/Radarr/radarr-setup-quality-profiles/#hdr-formats-dv-webdl-hdr10-boost){:target="_blank" rel="noopener noreferrer"}
 
 ------
 

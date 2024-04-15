@@ -8,7 +8,7 @@
   }, {
     "name": "Ignore Dolby Vision without HDR10 fallback.",
     "trash_id": "436f5a7d08fbf02ba25cb5e5dfe98e55",
-    "term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]?Vision)\\b).*/i"
+    "term": "/^(?!.*(HDR|HULU|REMUX))(?=.*\\b(DV|Dovi|Dolby[- .]?V(ision)?)\\b).*/i"
   }, {
     "name": "Ignore The Group -SCENE",
     "trash_id": "f3f0f3691c6a1988d4a02963e69d11f2",
@@ -16,7 +16,7 @@
   }, {
     "name": "Ignore so called scene releases",
     "trash_id": "5bc23c3a055a1a5d8bbe4fb49d80e0cb",
-    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab).*/i"
+    "term": "/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*(\\b\\d{3,4}p\\b).*([_. ]WEB[_. ])(?!DL)\\b)|\\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS|-SURCODE|-B0MBARDIERS).*/i"
   }, {
     "name": "Ignore Bad Dual Audio Groups",
     "trash_id": "538bad00ee6f8aced8e0db5218b8484c",

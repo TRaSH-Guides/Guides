@@ -1,11 +1,11 @@
 {
   "trash_id": "2f22d89048b01681dde8afe203bf2e95",
-  "trash_score": 4500,
   "trash_scores": {
     "default": 4500,
     "sqp-1-1080p": -10000,
     "sqp-1-2160p": -10000
   },
+  "trash_regex": "https://regex101.com/r/VWCW8c/1",
   "name": "DTS X",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [{
@@ -14,7 +14,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
+              "value": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))"
           }
       },
       {

@@ -1,6 +1,5 @@
 {
   "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -32,6 +31,15 @@
       "required": false,
       "fields": {
         "value": "^(CTFOH)$"
+      }
+    },
+    {
+      "name": "d3g",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(d3g)$"
       }
     },
     {
@@ -80,6 +88,15 @@
       }
     },
     {
+      "name": "iVy",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iVy)$"
+      }
+    },
+    {
       "name": "JFF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -121,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "Pahe\\.(ph|in)\\b"
+        "value": "Pahe(\\.(ph|in))?\\b"
       }
     },
     {
@@ -131,6 +148,15 @@
       "required": false,
       "fields": {
         "value": "^(PSA)$"
+      }
+    },
+    {
+      "name": "SasukeducK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SasukeducK)$"
       }
     },
     {

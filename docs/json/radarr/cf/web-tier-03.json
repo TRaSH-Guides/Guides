@@ -1,6 +1,5 @@
 {
   "trash_id": "af94e0fe497124d1f9ce732069ec8c3b",
-  "trash_score": 1600,
   "trash_scores": {
     "default": 1600,
     "anime-radarr": 150
@@ -8,6 +7,24 @@
   "name": "WEB Tier 03",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
     {
       "name": "GNOMiSSiON",
       "implementation": "ReleaseGroupSpecification",
@@ -60,24 +77,6 @@
       "required": false,
       "fields": {
         "value": "^(SwAgLaNdEr)$"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 7
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 8
       }
     }
   ]

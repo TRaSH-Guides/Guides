@@ -1,6 +1,5 @@
 {
   "trash_id": "496f355514737f7d83bf7aa4d24f8169",
-  "trash_score": 5000,
   "trash_scores": {
     "default": 5000,
     "sqp-1-1080p": -10000,
@@ -60,7 +59,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(dts[-_. ]?x)\\b(?!\\d)"
+        "value": "\\b(dts[-_.: ]?x7?)\\b(?![-_. ]?(26[456]))"
       }
     },
     {

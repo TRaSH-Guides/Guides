@@ -1,13 +1,17 @@
 name: Lint - YAML
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   yamllint:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.1.2
 
       - name: Run yamllint
         run: |

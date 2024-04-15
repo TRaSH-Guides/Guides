@@ -1,6 +1,5 @@
 {
   "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
-  "trash_score": 1650,
   "trash_scores": {
     "default": 1650,
     "anime-sonarr": 150
@@ -312,6 +311,15 @@
       "required": false,
       "fields": {
         "value": "^(SA89)$"
+      }
+    },
+    {
+      "name": "SbR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SbR)$"
       }
     },
     {
