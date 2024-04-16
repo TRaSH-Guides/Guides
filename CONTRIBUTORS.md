@@ -27,14 +27,14 @@
             <img src="https://avatars.githubusercontent.com/u/47067662?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="nuxencs"/>
             <br />
             <b><a href="https://github.com/nuxencs">nuxencs</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/55419169?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="bakerboy448"/>
             <br />
             <b><a href="https://github.com/bakerboy448">bakerboy448</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/54461452?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Visorask"/>
             <br />
@@ -54,7 +54,9 @@
             <img src="https://avatars.githubusercontent.com/u/39887349?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="rg9400"/>
             <br />
             <b><a href="https://github.com/rg9400">rg9400</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/161516010?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="andersbjorshol"/>
             <br />
@@ -64,9 +66,7 @@
             <img src="https://avatars.githubusercontent.com/u/76420253?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="sadstan"/>
             <br />
             <b><a href="https://github.com/sadstan">sadstan</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/123845855?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="zakkarry"/>
             <br />
@@ -81,7 +81,9 @@
             <img src="https://avatars.githubusercontent.com/u/1768054?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="rcdailey"/>
             <br />
             <b><a href="https://github.com/rcdailey">rcdailey</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/6703012?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="quorn23"/>
             <br />
@@ -96,9 +98,7 @@
             <img src="https://avatars.githubusercontent.com/u/108864960?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="4l3-X"/>
             <br />
             <b><a href="https://github.com/4l3-X">4l3-X</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/89707006?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="ItsME6969"/>
             <br />
@@ -108,7 +108,9 @@
             <img src="https://avatars.githubusercontent.com/u/8321115?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="austinwbest"/>
             <br />
             <b><a href="https://github.com/austinwbest">austinwbest</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/16525024?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="userdocs"/>
             <br />
@@ -128,14 +130,14 @@
             <img src="https://avatars.githubusercontent.com/u/60312740?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="doob187"/>
             <br />
             <b><a href="https://github.com/doob187">doob187</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/10825337?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="thatbritguy"/>
             <br />
             <b><a href="https://github.com/thatbritguy">thatbritguy</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/246550?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="foux"/>
             <br />
@@ -187,14 +189,14 @@
             <img src="https://avatars.githubusercontent.com/u/15933?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="fabricionaweb"/>
             <br />
             <b><a href="https://github.com/fabricionaweb">fabricionaweb</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/85573606?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Davo1624"/>
             <br />
             <b><a href="https://github.com/Davo1624">Davo1624</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/38706195?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="brettpetch"/>
             <br />
@@ -214,7 +216,9 @@
             <img src="https://avatars.githubusercontent.com/u/82363306?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Opt6"/>
             <br />
             <b><a href="https://github.com/Opt6">Opt6</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/85502276?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="KnifeFed"/>
             <br />
@@ -224,9 +228,7 @@
             <img src="https://avatars.githubusercontent.com/u/17850993?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Appoxo"/>
             <br />
             <b><a href="https://github.com/Appoxo">Appoxo</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/38938175?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Feramance"/>
             <br />
@@ -241,7 +243,9 @@
             <img src="https://avatars.githubusercontent.com/u/3851711?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="kdbruin"/>
             <br />
             <b><a href="https://github.com/kdbruin">kdbruin</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/2387159?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="andrew-kennedy"/>
             <br />
@@ -256,9 +260,7 @@
             <img src="https://avatars.githubusercontent.com/u/27962761?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Drapersniper"/>
             <br />
             <b><a href="https://github.com/Drapersniper">Drapersniper</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/45581528?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="MattSidney"/>
             <br />
@@ -268,7 +270,9 @@
             <img src="https://avatars.githubusercontent.com/u/911677?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="mkatsevVR"/>
             <br />
             <b><a href="https://github.com/mkatsevVR">mkatsevVR</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/16975578?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="aljohn92"/>
             <br />
@@ -288,14 +292,14 @@
             <img src="https://avatars.githubusercontent.com/u/1928231?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="mvanbaak"/>
             <br />
             <b><a href="https://github.com/mvanbaak">mvanbaak</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/12660469?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="bobokun"/>
             <br />
             <b><a href="https://github.com/bobokun">bobokun</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/6205053?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="ToXinE"/>
             <br />
@@ -347,14 +351,14 @@
             <img src="https://avatars.githubusercontent.com/u/12488767?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="cynicalgeek"/>
             <br />
             <b><a href="https://github.com/cynicalgeek">cynicalgeek</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/36236331?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="garypiner"/>
             <br />
             <b><a href="https://github.com/garypiner">garypiner</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/6664588?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="TESTPERSONAL"/>
             <br />
@@ -374,7 +378,9 @@
             <img src="https://avatars.githubusercontent.com/u/97920769?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="snowballramen"/>
             <br />
             <b><a href="https://github.com/snowballramen">snowballramen</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/18177310?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="s0up4200"/>
             <br />
@@ -384,9 +390,7 @@
             <img src="https://avatars.githubusercontent.com/u/500882?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="thezoggy"/>
             <br />
             <b><a href="https://github.com/thezoggy">thezoggy</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/15257926?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="2fst4u"/>
             <br />
@@ -401,7 +405,9 @@
             <img src="https://avatars.githubusercontent.com/u/72708798?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="nickavem"/>
             <br />
             <b><a href="https://github.com/nickavem">nickavem</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/38613762?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="AvAars"/>
             <br />
@@ -416,9 +422,7 @@
             <img src="https://avatars.githubusercontent.com/u/290461?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="ChaseBro"/>
             <br />
             <b><a href="https://github.com/ChaseBro">ChaseBro</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/232139?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="ColinHebert"/>
             <br />
@@ -428,7 +432,9 @@
             <img src="https://avatars.githubusercontent.com/u/8067383?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="dako98"/>
             <br />
             <b><a href="https://github.com/dako98">dako98</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/77843475?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="DiscDuck"/>
             <br />
@@ -448,14 +454,14 @@
             <img src="https://avatars.githubusercontent.com/u/79274231?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jalmansor"/>
             <br />
             <b><a href="https://github.com/jalmansor">jalmansor</a></b>
-    </td>
-</tr>
-    
+    </td>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/23200350?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jwoodhouse"/>
             <br />
             <b><a href="https://github.com/jwoodhouse">jwoodhouse</a></b>
-    </td><tr>    
+    </td>
+</tr>
+<tr>    
     <td align="center">
             <img src="https://avatars.githubusercontent.com/u/10259118?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="jonasgeiler"/>
             <br />
