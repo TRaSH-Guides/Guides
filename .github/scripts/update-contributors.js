@@ -26,13 +26,13 @@ function fetchPage() {
         // Exclude bots and actions-user
         if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user') return;
 
-        if (index % 6 === 0) {
+        if (index % 5 === 0) {
           contributors += '<tr>';
         }
 
         const userHtml = `
 <td align="center">
-        <img src="${user.avatar_url}&v=4" style="width: 30px; border-radius: 50%;" alt="${user.login}"/>
+        <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
         <br />
         <b><a href="${user.html_url}">${user.login}</a></b>
 </td>`;
