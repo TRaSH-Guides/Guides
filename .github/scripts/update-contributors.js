@@ -35,7 +35,7 @@ function fetchPage() {
     <a href="${user.html_url}">
         <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
         <br />
-        <sub><b>${user.login}</b></sub>
+        <b><a href="${user.html_url}">${user.login}</a></b>
     </a>
 </td>`;
 
