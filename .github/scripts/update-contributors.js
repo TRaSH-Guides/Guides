@@ -39,7 +39,7 @@ function fetchPage() {
 
         contributors += indentString(userHtml, '    ');
 
-        if ((index + 1) % 6 === 0 || index === response.data.length - 1) {
+        if ((index + 1) % 5 === 0 || index === response.data.length - 1) {
           contributors += '\n</tr>\n';
         }
 
