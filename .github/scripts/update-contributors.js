@@ -32,11 +32,9 @@ function fetchPage() {
 
         const userHtml = `
 <td align="center">
-    <a href="${user.html_url}">
-        <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
+        <img src="${user.avatar_url}&v=4" style="width: 30px; border-radius: 50%;" alt="${user.login}"/>
         <br />
         <b><a href="${user.html_url}">${user.login}</a></b>
-    </a>
 </td>`;
 
         contributors += indentString(userHtml, '    ');
