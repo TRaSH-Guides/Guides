@@ -2,7 +2,7 @@ name: Build and Deploy Docs
 
 on:
   workflow_run:
-    workflows: [update_contributors]
+    workflows: [Update contributors]
     types:
       - completed
 
