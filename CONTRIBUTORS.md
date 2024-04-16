@@ -4,11 +4,9 @@
 <table>
 <tr>    
     <td align="center">
-        <a href="https://github.com/TRaSH-">
             <img src="https://avatars.githubusercontent.com/u/6155095?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="TRaSH-"/>
             <br />
             <b><a href="https://github.com/TRaSH-">TRaSH-</a></b>
-        </a>
     </td>    
     <td align="center">
         <a href="https://github.com/yammes08">
