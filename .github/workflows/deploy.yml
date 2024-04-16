@@ -1,6 +1,10 @@
 name: Build and Deploy Docs
 
-on: [push, pull_request]
+on:
+  workflow_run:
+    workflows: [update_contributors]
+    types:
+      - completed
 
 jobs:
   build:
@@ -33,7 +37,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
         with:
-          fetch-depth: '0'
+          fetch-depth: "0"
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
         with:
