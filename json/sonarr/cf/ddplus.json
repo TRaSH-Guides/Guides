@@ -20,7 +20,7 @@
           "negate": true,
           "required": true,
           "fields": {
-              "value": "True[ .-]?HD|\\bATMOS|DDPA(\\b|\\d)"
+              "value": "\\b(True[ .-]?HD|ATMOS|DDPA)(\\b|\\d)"
           }
       },
       {
