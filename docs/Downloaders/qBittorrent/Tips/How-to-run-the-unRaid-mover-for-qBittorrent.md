@@ -137,13 +137,6 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
 ### Script
 
-!!! warning ""
-    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 94**:
-
-    - If you do not use `Mover Tuning`, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
-    - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 94**
-    - If you use `Mover Tuning` and **do** want to use it for the script, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`. For this option, inside the `Mover Tuner` options you will also need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
-
 #### Copy the script to your preferred location
 
 Place the script you just edited somewhere easy to access/remember.
@@ -174,13 +167,16 @@ Click on the cogwheel of the new script in the list.
 ![!Select user script](images/Unraid-settings-user-scripts-list-select-qbit-mover.png)
 
 Choose your method (select a tab) and copy/paste the script in the new window that opens, then click `SAVE CHANGES`.
+
+!!! info "replace `ip` with your unraid server ip, replace `port` with your webgui port you use to access the webgui"
+
 === "Python (Native)"
 
     ``` bash
         #!/bin/bash
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -192,7 +188,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -206,7 +202,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 - `user` => Your used qBittorrent `User Name` if you have authentication enabled.
 - `password` => Your used qBittorrent `Password` if you have authentication enabled.
 
-![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
+<!--- ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)-->
 
 Click the schedule dropdown to choose when the script should run. We want to select `Custom`.
 
