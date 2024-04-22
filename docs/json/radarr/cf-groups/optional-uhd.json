@@ -41,6 +41,11 @@
       "name": "SDR",
       "trash_id": "9c38ebb7384dada637be8899efa68e6f",
       "required": false
+    },
+    {
+      "name": "SDR (no WEBDL)",
+      "trash_id": "25c12f78430a3a23413652cbd1d48d77",
+      "required": false
     }
   ],
   "quality_profiles": {

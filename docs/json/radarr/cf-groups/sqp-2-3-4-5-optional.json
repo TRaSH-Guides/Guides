@@ -8,16 +8,6 @@
       "required": false
     },
     {
-      "name": "DV (WEBDL)",
-      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
-      "required": false
-    },
-    {
-      "name": "HDR10+ Boost",
-      "trash_id": "b17886cb4158d9fea189859409975758",
-      "required": false
-    },
-    {
       "name": "EVO (no WEBDL)",
       "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "required": false
@@ -53,8 +43,18 @@
       "required": false
     },
     {
-      "name": "AV1",
-      "trash_id": "cae4ca30163749b891686f95532519bd",
+      "name": "SDR (no WEBDL)",
+      "trash_id": "25c12f78430a3a23413652cbd1d48d77",
+      "required": false
+    },
+    {
+      "name": "DV (WEBDL)",
+      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "required": false
+    },
+    {
+      "name": "HDR10+ Boost",
+      "trash_id": "b17886cb4158d9fea189859409975758",
       "required": false
     }
   ],
