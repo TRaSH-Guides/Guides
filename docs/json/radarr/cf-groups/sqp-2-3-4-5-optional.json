@@ -1,0 +1,71 @@
+{
+  "name": "SQP-2/3/4/5 Optional",
+  "trash_id": "de18f9d6e3f843f5208c68219ee732a7",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "EVO (no WEBDL)",
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "f537cf427b64c38c8e36298f657e4828",
+      "required": false
+    },
+    {
+      "name": "x265 (HD)",
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "required": false
+    },
+    {
+      "name": "SDR",
+      "trash_id": "9c38ebb7384dada637be8899efa68e6f",
+      "required": false
+    },
+    {
+      "name": "SDR (no WEBDL)",
+      "trash_id": "25c12f78430a3a23413652cbd1d48d77",
+      "required": false
+    },
+    {
+      "name": "DV (WEBDL)",
+      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
+      "required": false
+    },
+    {
+      "name": "HDR10+ Boost",
+      "trash_id": "b17886cb4158d9fea189859409975758",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0"
+    }
+  }
+}

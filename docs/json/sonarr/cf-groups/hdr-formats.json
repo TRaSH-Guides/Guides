@@ -1,0 +1,67 @@
+{
+  "name": "HDR Formats",
+  "trash_id": "c4735e1d02e8738044ad4ad1bf58670c",
+  "custom_formats": [
+    {
+      "name": "DV HDR10Plus",
+      "trash_id": "2b239ed870daba8126a53bd5dc8dc1c8",
+      "required": true
+    },
+    {
+      "name": "DV HDR10",
+      "trash_id": "7878c33f1963fefb3d6c8657d46c2f0a",
+      "required": true
+    },
+    {
+      "name": "DV",
+      "trash_id": "6d0d8de7b57e35518ac0308b0ddf404e",
+      "required": true
+    },
+    {
+      "name": "DV HLG",
+      "trash_id": "1f733af03141f068a540eec352589a89",
+      "required": true
+    },
+    {
+      "name": "DV SDR",
+      "trash_id": "27954b0a80aab882522a88a4d9eae1cd",
+      "required": true
+    },
+    {
+      "name": "HDR10+",
+      "trash_id": "a3d82cbef5039f8d295478d28a887159",
+      "required": true
+    },
+    {
+      "name": "HDR10",
+      "trash_id": "3497799d29a085e2ac2df9d468413c94",
+      "required": true
+    },
+    {
+      "name": "HDR",
+      "trash_id": "3e2c4e748b64a1a1118e0ea3f4cf6875",
+      "required": true
+    },
+    {
+      "name": "HDR (Undefined)",
+      "trash_id": "bb019e1cd00f304f80971c965de064dc",
+      "required": true
+    },
+    {
+      "name": "PQ",
+      "trash_id": "2a7e3be05d3861d6df7171ec74cad727",
+      "required": true
+    },
+    {
+      "name": "HLG",
+      "trash_id": "17e889ce13117940092308f48b48b45b",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6"
+    }
+  }
+}

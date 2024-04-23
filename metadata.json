@@ -4,13 +4,17 @@
     "radarr": {
       "custom_formats": ["docs/json/radarr/cf"],
       "qualities": ["docs/json/radarr/quality-size"],
-      "naming": ["docs/json/radarr/naming"]
+      "naming": ["docs/json/radarr/naming"],
+      "quality_profiles": ["docs/json/radarr/quality-profiles"],
+      "custom_format_groups": ["docs/json/radarr/cf-groups"]
     },
     "sonarr": {
       "release_profiles": ["docs/json/sonarr/rp"],
       "custom_formats": ["docs/json/sonarr/cf"],
       "qualities": ["docs/json/sonarr/quality-size"],
-      "naming": ["docs/json/sonarr/naming"]
+      "naming": ["docs/json/sonarr/naming"],
+      "quality_profiles": ["docs/json/sonarr/quality-profiles"],
+      "custom_format_groups": ["docs/json/sonarr/cf-groups"]
     }
   },
   "recyclarr": {

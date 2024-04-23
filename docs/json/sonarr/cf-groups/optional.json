@@ -1,0 +1,41 @@
+{
+  "name": "Optional",
+  "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "32b367365729d530ca1c124a0b180c64",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "82d40da2bc6923f41e14394075dd4b03",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "06d66ab109d4d2eddb2794d21526d140",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
+      "required": false
+    },
+    {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6"
+    }
+  }
+}
