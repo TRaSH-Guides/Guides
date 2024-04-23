@@ -1,0 +1,82 @@
+{
+  "name": "Advanced Audio Formats",
+  "trash_id": "e9a1944a254e6f8a9da63083f7ae15cb",
+  "custom_formats": [
+    {
+      "name": "TrueHD Atmos",
+      "trash_id": "0d7824bb924701997f874e7ff7d4844a",
+      "required": true
+    },
+    {
+      "name": "DTS X",
+      "trash_id": "9d00418ba386a083fbf4d58235fc37ef",
+      "required": true
+    },
+    {
+      "name": "ATMOS (undefined)",
+      "trash_id": "b6fbafa7942952a13e17e2b1152b539a",
+      "required": true
+    },
+    {
+      "name": "DD+ ATMOS",
+      "trash_id": "4232a509ce60c4e208d13825b7c06264",
+      "required": true
+    },
+    {
+      "name": "TrueHD",
+      "trash_id": "1808e4b9cee74e064dfae3f1db99dbfe",
+      "required": true
+    },
+    {
+      "name": "DTS-HD MA",
+      "trash_id": "c429417a57ea8c41d57e6990a8b0033f",
+      "required": true
+    },
+    {
+      "name": "FLAC",
+      "trash_id": "851bd64e04c9374c51102be3dd9ae4cc",
+      "required": true
+    },
+    {
+      "name": "PCM",
+      "trash_id": "30f70576671ca933adbdcfc736a69718",
+      "required": true
+    },
+    {
+      "name": "DTS-HD HRA",
+      "trash_id": "cfa5fbd8f02a86fc55d8d223d06a5e1f",
+      "required": true
+    },
+    {
+      "name": "DD+",
+      "trash_id": "63487786a8b01b7f20dd2bc90dd4a477",
+      "required": true
+    },
+    {
+      "name": "DTS-ES",
+      "trash_id": "c1a25cd67b5d2e08287c957b1eb903ec",
+      "required": true
+    },
+    {
+      "name": "DTS",
+      "trash_id": "5964f2a8b3be407d083498e4459d05d0",
+      "required": true
+    },
+    {
+      "name": "AAC",
+      "trash_id": "a50b8a0c62274a7c38b09a9619ba9d86",
+      "required": true
+    },
+    {
+      "name": "DD",
+      "trash_id": "dbe00161b08a25ac6154c55f95e6318d",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6"
+    }
+  }
+}
