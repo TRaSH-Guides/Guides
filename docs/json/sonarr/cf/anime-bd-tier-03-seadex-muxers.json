@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[AC\\]|-AC\\b"
+        "value": "\\[AC\\]|-AC$"
       }
     },
     {
