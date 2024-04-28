@@ -152,7 +152,7 @@ Add this to your `Preferred (3)` with a score of [90]
 Add this to your `Preferred (3)` with a score of [80]
 
 ```bash
-/\b(hmax|hbom|hbo[ ._-]max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+/\b(hmax|hbom|hbo[ ._-]?max)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
 ```bash
