@@ -13,7 +13,7 @@
           "negate": false,
           "required": true,
           "fields": {
-              "value": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac3)\\b"
+              "value": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac-?3)\\b"
           }
       },
       {
