@@ -538,15 +538,6 @@
       }
     },
     {
-      "name": "LoliHouse",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LoliHouse)\\b"
-      }
-    },
-    {
       "name": "M@nI",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
