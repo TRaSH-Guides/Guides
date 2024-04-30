@@ -20,7 +20,7 @@
         {
             "score": 80,
             "terms": [
-                "/\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
+                "/\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i",
                 "/\\b(qibi|quibi)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
             ]
         },

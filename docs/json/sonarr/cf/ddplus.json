@@ -12,7 +12,7 @@
             "negate": false,
             "required": true,
             "fields": {
-                "value": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac3)\\b"
+                "value": "\\bDD[P+](?!A)|\\b(e[-_. ]?ac-?3)\\b"
             }
         },
         {
@@ -21,7 +21,7 @@
             "negate": true,
             "required": true,
             "fields": {
-                "value": "True[ .-]?HD|\\bATMOS(\\b|\\d)"
+                "value": "\\b(True[ .-]?HD|ATMOS|DDPA)(\\b|\\d)"
             }
         },
         {
