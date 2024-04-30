@@ -17772,7 +17772,7 @@ The service features Bell Media original programming, exclusive Canadian access 
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(ANE)\\b&quot;</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\[ANE\\]|-ANE$&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -18765,7 +18765,7 @@ The service features Bell Media original programming, exclusive Canadian access 
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\[tenshi\\]|-tenshi\\b&quot;</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\[tenshi\\]|-tenshi$&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -20898,7 +20898,7 @@ The service features Bell Media original programming, exclusive Canadian access 
 <span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(?!.*Dual[-_. ]?Audio).*\\bKS\\b&quot;</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(?!.*(dual[ ._-]?audio|[\\[(]dual[\\]]|(JA|ZH)\\+EN|EN\\+(JA|ZH))).*\\bKS\\b&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>

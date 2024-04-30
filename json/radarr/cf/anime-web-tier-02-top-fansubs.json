@@ -165,7 +165,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[tenshi\\]|-tenshi\\b"
+        "value": "\\[tenshi\\]|-tenshi$"
       }
     }
   ]
