@@ -541,7 +541,7 @@ We've made 3 guides related to this.
 
     --8<-- "includes/cf-descriptions/dv.md"
 
-<! -- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md`-->
+<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md`-->
 
 ??? example "JSON - [Click to show/hide]"
 
