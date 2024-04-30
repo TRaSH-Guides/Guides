@@ -48,7 +48,7 @@ Click on `Enabled`
 
 1. Click the `Test` button after filling in all the fields. Make sure the test is successful before you proceed.
 
-### Options
+### Options (Sonarr)
 
 ![!Sonarr - Options](images/qs-sonarr-options.png)
 
@@ -66,7 +66,7 @@ Click on `Enabled`
 
 1. Automatic downloading of subtitles will only happen for monitored shows/episodes in Sonarr.
 
-### Path Mappings
+### Path Mappings (Sonarr)
 
 !!! note
 

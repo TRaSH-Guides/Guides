@@ -1,0 +1,38 @@
+name: Pull Request Title Validation
+
+on:
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  pull-request-title-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate Pull Request Title
+        id: check_title
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const titleRegex = /^(Revert \")?(feat|fix|docs|style|refactor|perf|test|update|build|ci|chore)(\([\w\/-]+\))?:\s.+$/g;
+            const title = context.payload.pull_request.title;
+            const isValid = titleRegex.test(title);
+            if (!isValid) {
+              if ((context.payload.action === 'opened') || (context.payload.action === 'reopened')) {
+                const prNumber = context.payload.pull_request.number;
+                const author = context.payload.pull_request.user.login;
+                const message = `@${author} your pull request title "${context.payload.pull_request.title}" does not conform to our [naming conventions](https://www.conventionalcommits.org/en/v1.0.0/).\n\nPlease update the title to match the pattern: "feat|build|chore|style|fix|update|ci(\\<area\\>): \\<description\\>\n\nYou can check your title at this [regex101 link](https://regex101.com/r/jOZ6kU/1)."`;
+                github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: message
+                });
+              }
+              core.setFailed(`PR title "${title}" doesn't match the required format.`)
+            }

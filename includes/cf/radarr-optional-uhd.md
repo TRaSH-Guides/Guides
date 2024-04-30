@@ -9,7 +9,7 @@
 
     Breakdown and Why
 
-    - **{{ radarr['cf']['sdr']['name'] }}:** {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
+    - **{{ radarr['cf']['sdr']['name'] }}:** This will prevent grabbing UHD/4k releases without HDR Formats.
     - **{{ radarr['cf']['sdr-no-webdl']['name'] }}:** This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.
 
         !!! Danger "Don't use this together with [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr), Only ever include one of them :warning:"
