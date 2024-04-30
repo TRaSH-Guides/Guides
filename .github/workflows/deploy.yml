@@ -26,8 +26,8 @@ jobs:
         run: pip install -r docs/requirements.txt
       - name: Build documentation
         run: mkdocs build
+
   deploy:
-    if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
     needs: build
     name: Deploy docs
     runs-on: ubuntu-latest
