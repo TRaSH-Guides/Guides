@@ -1,100 +1,100 @@
 {
-    "trash_id": "5322da05b19d857acc1e75be3edf47b3",
-    "trash_scores": {
-        "default": 1800
+  "trash_id": "5322da05b19d857acc1e75be3edf47b3",
+  "trash_scores": {
+    "default": 1800
+  },
+  "name": "FR HD Bluray Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
     },
-    "name": "FR HD Bluray Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "BLURAY",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 9
-            }
-        },
-        {
-            "name": "Not Remux",
-            "implementation": "QualityModifierSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "Not 2160p",
-            "implementation": "ResolutionSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 2160
-            }
-        },
-        {
-            "name": "BDHD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BDHD)$"
-            }
-        },
-        {
-            "name": "FoX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FoX)$"
-            }
-        },
-        {
-            "name": "FRATERNiTY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FRATERNiTY)$"
-            }
-        },
-        {
-            "name": "FrIeNdS",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FrIeNdS)$"
-            }
-        },
-        {
-            "name": "MAX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MAX)$"
-            }
-        },
-        {
-            "name": "Psaro",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Psaro)$"
-            }
-        },
-        {
-            "name": "T3KASHi",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(T3KASHi)$"
-            }
-        }
-    ]
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "BDHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BDHD)$"
+      }
+    },
+    {
+      "name": "FoX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FoX)$"
+      }
+    },
+    {
+      "name": "FRATERNiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FRATERNiTY)$"
+      }
+    },
+    {
+      "name": "FrIeNdS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FrIeNdS)$"
+      }
+    },
+    {
+      "name": "MAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MAX)$"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Psaro)$"
+      }
+    },
+    {
+      "name": "T3KASHi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(T3KASHi)$"
+      }
+    }
+  ]
 }

@@ -1,137 +1,137 @@
 {
-    "trash_id": "403816d65392c79236dcb6dd591aeda4",
-    "trash_scores": {
-        "default": 1650,
-        "anime-radarr": 250
+  "trash_id": "403816d65392c79236dcb6dd591aeda4",
+  "trash_scores": {
+    "default": 1650,
+    "anime-radarr": 250
+  },
+  "name": "WEB Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
     },
-    "name": "WEB Tier 02",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "WEBDL",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 7
-            }
-        },
-        {
-            "name": "WEBRIP",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 8
-            }
-        },
-        {
-            "name": "dB",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(dB)$"
-            }
-        },
-        {
-            "name": "Flights",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Flights)$"
-            }
-        },
-        {
-            "name": "Kitsune",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Kitsune)$"
-            }
-        },
-        {
-            "name": "MiU",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MiU)$"
-            }
-        },
-        {
-            "name": "monkee",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(monkee)$"
-            }
-        },
-        {
-            "name": "MZABI",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MZABI)$"
-            }
-        },
-        {
-            "name": "PHOENiX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(PHOENiX)$"
-            }
-        },
-        {
-            "name": "playWEB",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(playWEB)$"
-            }
-        },
-        {
-            "name": "SbR",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SbR)$"
-            }
-        },
-        {
-            "name": "SMURF",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SMURF)$"
-            }
-        },
-        {
-            "name": "TOMMY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(TOMMY)$"
-            }
-        },
-        {
-            "name": "XEBEC",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(XEBEC|4KBEC|CEBEX)$"
-            }
-        }
-    ]
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "dB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(dB)$"
+      }
+    },
+    {
+      "name": "Flights",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Flights)$"
+      }
+    },
+    {
+      "name": "Kitsune",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Kitsune)$"
+      }
+    },
+    {
+      "name": "MiU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MiU)$"
+      }
+    },
+    {
+      "name": "monkee",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(monkee)$"
+      }
+    },
+    {
+      "name": "MZABI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MZABI)$"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PHOENiX)$"
+      }
+    },
+    {
+      "name": "playWEB",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(playWEB)$"
+      }
+    },
+    {
+      "name": "SbR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SbR)$"
+      }
+    },
+    {
+      "name": "SMURF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SMURF)$"
+      }
+    },
+    {
+      "name": "TOMMY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TOMMY)$"
+      }
+    },
+    {
+      "name": "XEBEC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(XEBEC|4KBEC|CEBEX)$"
+      }
+    }
+  ]
 }

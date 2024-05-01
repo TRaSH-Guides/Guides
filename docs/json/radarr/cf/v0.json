@@ -1,19 +1,19 @@
 {
-    "trash_id": "c259005cbaeb5ab44c06eddb4751e70c",
-    "trash_scores": {
-        "default": -51
-    },
-    "name": "v0",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-        {
-            "name": "v0",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "(\\b|\\d)(v0)\\b"
-            }
-        }
-    ]
+  "trash_id": "c259005cbaeb5ab44c06eddb4751e70c",
+  "trash_scores": {
+    "default": -51
+  },
+  "name": "v0",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "v0",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(\\b|\\d)(v0)\\b"
+      }
+    }
+  ]
 }

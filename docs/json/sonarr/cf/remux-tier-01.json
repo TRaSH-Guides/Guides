@@ -1,56 +1,56 @@
 {
-    "trash_id": "9965a052eb87b0d10313b1cea89eb451",
-    "trash_scores": {
-        "default": 1900,
-        "anime-sonarr": 1050
+  "trash_id": "9965a052eb87b0d10313b1cea89eb451",
+  "trash_scores": {
+    "default": 1900,
+    "anime-sonarr": 1050
+  },
+  "name": "Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
     },
-    "name": "Remux Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Remux",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 7
-            }
-        },
-        {
-            "name": "BLURANiUM",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BLURANiUM)$"
-            }
-        },
-        {
-            "name": "BMF",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BMF)$"
-            }
-        },
-        {
-            "name": "FraMeSToR",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FraMeSToR)$"
-            }
-        },
-        {
-            "name": "PmP",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(PmP)$"
-            }
-        }
-    ]
+    {
+      "name": "BLURANiUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BLURANiUM)$"
+      }
+    },
+    {
+      "name": "BMF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BMF)$"
+      }
+    },
+    {
+      "name": "FraMeSToR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FraMeSToR)$"
+      }
+    },
+    {
+      "name": "PmP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PmP)$"
+      }
+    }
+  ]
 }

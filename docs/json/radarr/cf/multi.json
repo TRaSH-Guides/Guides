@@ -1,16 +1,16 @@
 {
-    "trash_id": "4b900e171accbfb172729b63323ea8ca",
-    "name": "Multi",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Multi",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\b(Multi)(?![ ._-]?sub(s)?)(\\b|\\d)"
-            }
-        }
-    ]
+  "trash_id": "4b900e171accbfb172729b63323ea8ca",
+  "name": "Multi",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Multi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(Multi)(?![ ._-]?sub(s)?)(\\b|\\d)"
+      }
+    }
+  ]
 }

@@ -1,37 +1,37 @@
 {
-    "trash_id": "9c38ebb7384dada637be8899efa68e6f",
-    "trash_scores": {
-        "default": -10000
+  "trash_id": "9c38ebb7384dada637be8899efa68e6f",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "SDR",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
     },
-    "name": "SDR",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "2160p",
-            "implementation": "ResolutionSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 2160
-            }
-        },
-        {
-            "name": "HDR Formats",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": true,
-            "required": false,
-            "fields": {
-                "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)"
-            }
-        },
-        {
-            "name": "SDR",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\bSDR\\b"
-            }
-        }
-    ]
+    {
+      "name": "HDR Formats",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?v(ision)?)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)"
+      }
+    },
+    {
+      "name": "SDR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bSDR\\b"
+      }
+    }
+  ]
 }

@@ -1,85 +1,85 @@
 {
-    "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
-    "trash_scores": {
-        "default": 1700,
-        "sqp-1-2160p": 1000,
-        "sqp-2": 2100,
-        "sqp-5": 2100
+  "trash_id": "e71939fae578037e7aed3ee219bbe7c1",
+  "trash_scores": {
+    "default": 1700,
+    "sqp-1-2160p": 1000,
+    "sqp-2": 2100,
+    "sqp-5": 2100
+  },
+  "name": "UHD Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
     },
-    "name": "UHD Bluray Tier 03",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Not REMUX",
-            "implementation": "QualityModifierSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "Not WEBDL",
-            "implementation": "SourceSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 7
-            }
-        },
-        {
-            "name": "Not WEBRIP",
-            "implementation": "SourceSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 8
-            }
-        },
-        {
-            "name": "2160p",
-            "implementation": "ResolutionSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 2160
-            }
-        },
-        {
-            "name": "BHDStudio",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BHDStudio)$"
-            }
-        },
-        {
-            "name": "HONE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(HONE)$"
-            }
-        },
-        {
-            "name": "SPHD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SPHD)$"
-            }
-        },
-        {
-            "name": "WEBDV",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(WEBDV)$"
-            }
-        }
-    ]
+    {
+      "name": "Not WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "Not WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
+      "name": "SPHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SPHD)$"
+      }
+    },
+    {
+      "name": "WEBDV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WEBDV)$"
+      }
+    }
+  ]
 }

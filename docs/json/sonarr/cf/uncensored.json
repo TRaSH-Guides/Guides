@@ -1,16 +1,16 @@
 {
-    "trash_id": "026d5aadd1a6b4e550b134cb6c72b3ca",
-    "name": "Uncensored",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-        {
-            "name": "Uncensored",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b"
-            }
-        }
-    ]
+  "trash_id": "026d5aadd1a6b4e550b134cb6c72b3ca",
+  "name": "Uncensored",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Uncensored",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(Uncut|Unrated|Uncensored|AT[-_. ]?X)\\b"
+      }
+    }
+  ]
 }

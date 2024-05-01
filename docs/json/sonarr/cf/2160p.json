@@ -1,19 +1,19 @@
 {
-    "trash_id": "1bef6c151fa35093015b0bfef18279e5",
-    "trash_scores": {
-        "default": 100
-    },
-    "name": "2160p",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "2160p",
-            "implementation": "ResolutionSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 2160
-            }
-        }
-    ]
+  "trash_id": "1bef6c151fa35093015b0bfef18279e5",
+  "trash_scores": {
+    "default": 100
+  },
+  "name": "2160p",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    }
+  ]
 }

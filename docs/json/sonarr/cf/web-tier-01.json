@@ -1,200 +1,200 @@
 {
-    "trash_id": "e6258996055b9fbab7e9cb2f75819294",
-    "trash_scores": {
-        "default": 1700,
-        "anime-sonarr": 350
+  "trash_id": "e6258996055b9fbab7e9cb2f75819294",
+  "trash_scores": {
+    "default": 1700,
+    "anime-sonarr": 350
+  },
+  "name": "WEB Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ABBiE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ABBiE)$"
+      }
     },
-    "name": "WEB Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "ABBiE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(ABBiE)$"
-            }
-        },
-        {
-            "name": "AJP69",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(AJP69)$"
-            }
-        },
-        {
-            "name": "APEX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(APEX|PAXA|PEXA|XEPA)$"
-            }
-        },
-        {
-            "name": "CasStudio",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(CasStudio)$"
-            }
-        },
-        {
-            "name": "CRFW",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(CRFW)$"
-            }
-        },
-        {
-            "name": "CtrlHD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(CtrlHD)$"
-            }
-        },
-        {
-            "name": "FLUX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FLUX)$"
-            }
-        },
-        {
-            "name": "HONE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(HONE)$"
-            }
-        },
-        {
-            "name": "KiNGS",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(KiNGS)$"
-            }
-        },
-        {
-            "name": "monkee",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(monkee)$"
-            }
-        },
-        {
-            "name": "NOSiViD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(NOSiViD)$"
-            }
-        },
-        {
-            "name": "NTb",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(NTb)$"
-            }
-        },
-        {
-            "name": "NTG",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(NTG)$"
-            }
-        },
-        {
-            "name": "QOQ",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(QOQ)$"
-            }
-        },
-        {
-            "name": "RTN",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(RTN)$"
-            }
-        },
-        {
-            "name": "SiC",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SiC)$"
-            }
-        },
-        {
-            "name": "T6D",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(T6D)$"
-            }
-        },
-        {
-            "name": "TOMMY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(TOMMY)$"
-            }
-        },
-        {
-            "name": "ViSUM",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(ViSUM)$"
-            }
-        },
-        {
-            "name": "WEBDL",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 3
-            }
-        },
-        {
-            "name": "WEBRIP",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 4
-            }
-        }
-    ]
+    {
+      "name": "AJP69",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AJP69)$"
+      }
+    },
+    {
+      "name": "APEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(APEX|PAXA|PEXA|XEPA)$"
+      }
+    },
+    {
+      "name": "CasStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CasStudio)$"
+      }
+    },
+    {
+      "name": "CRFW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CRFW)$"
+      }
+    },
+    {
+      "name": "CtrlHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CtrlHD)$"
+      }
+    },
+    {
+      "name": "FLUX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FLUX)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
+      "name": "KiNGS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KiNGS)$"
+      }
+    },
+    {
+      "name": "monkee",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(monkee)$"
+      }
+    },
+    {
+      "name": "NOSiViD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NOSiViD)$"
+      }
+    },
+    {
+      "name": "NTb",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NTb)$"
+      }
+    },
+    {
+      "name": "NTG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NTG)$"
+      }
+    },
+    {
+      "name": "QOQ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(QOQ)$"
+      }
+    },
+    {
+      "name": "RTN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RTN)$"
+      }
+    },
+    {
+      "name": "SiC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SiC)$"
+      }
+    },
+    {
+      "name": "T6D",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(T6D)$"
+      }
+    },
+    {
+      "name": "TOMMY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TOMMY)$"
+      }
+    },
+    {
+      "name": "ViSUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ViSUM)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
 }

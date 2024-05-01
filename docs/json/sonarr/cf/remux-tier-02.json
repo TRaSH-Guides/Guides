@@ -1,92 +1,92 @@
 {
-    "trash_id": "8a1d0c3d7497e741736761a1da866a2e",
-    "trash_scores": {
-        "default": 1850,
-        "anime-sonarr": 1000
+  "trash_id": "8a1d0c3d7497e741736761a1da866a2e",
+  "trash_scores": {
+    "default": 1850,
+    "anime-sonarr": 1000
+  },
+  "name": "Remux Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
     },
-    "name": "Remux Tier 02",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Remux",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 7
-            }
-        },
-        {
-            "name": "decibeL",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(decibeL)$"
-            }
-        },
-        {
-            "name": "EPSiLON",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(EPSiLON)$"
-            }
-        },
-        {
-            "name": "HiFi",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(HiFi)$"
-            }
-        },
-        {
-            "name": "KRaLiMaRKo",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(KRaLiMaRKo)$"
-            }
-        },
-        {
-            "name": "playBD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(playBD)$"
-            }
-        },
-        {
-            "name": "PTer",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(PTer)$"
-            }
-        },
-        {
-            "name": "SiCFoI",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SiCFoI)$"
-            }
-        },
-        {
-            "name": "TRiToN",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(TRiToN)$"
-            }
-        }
-    ]
+    {
+      "name": "decibeL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(decibeL)$"
+      }
+    },
+    {
+      "name": "EPSiLON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(EPSiLON)$"
+      }
+    },
+    {
+      "name": "HiFi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HiFi)$"
+      }
+    },
+    {
+      "name": "KRaLiMaRKo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KRaLiMaRKo)$"
+      }
+    },
+    {
+      "name": "playBD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(playBD)$"
+      }
+    },
+    {
+      "name": "PTer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PTer)$"
+      }
+    },
+    {
+      "name": "SiCFoI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SiCFoI)$"
+      }
+    },
+    {
+      "name": "TRiToN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TRiToN)$"
+      }
+    }
+  ]
 }

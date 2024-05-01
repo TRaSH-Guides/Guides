@@ -1,55 +1,55 @@
 {
-    "trash_id": "e0c07d59beb37348e975a930d5e50319",
-    "trash_scores": {
-        "default": 25
+  "trash_id": "e0c07d59beb37348e975a930d5e50319",
+  "trash_scores": {
+    "default": 25
+  },
+  "name": "Criterion Collection",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
+      }
     },
-    "name": "Criterion Collection",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-        {
-            "name": "Bluray",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 9
-            }
-        },
-        {
-            "name": "DVD",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "Criterion",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\b(Criterion)\\b"
-            }
-        },
-        {
-            "name": "CC",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\b(CC)\\b"
-            }
-        },
-        {
-            "name": "Not Criterion RlsGrp",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": "^(Criterion)$"
-            }
-        }
-    ]
+    {
+      "name": "DVD",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Criterion",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Criterion)\\b"
+      }
+    },
+    {
+      "name": "CC",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CC)\\b"
+      }
+    },
+    {
+      "name": "Not Criterion RlsGrp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "^(Criterion)$"
+      }
+    }
+  ]
 }

@@ -1,101 +1,101 @@
 {
-    "trash_id": "3a3ff47579026e76d6504ebea39390de",
-    "trash_scores": {
-        "default": 1950,
-        "anime-radarr": 1050
+  "trash_id": "3a3ff47579026e76d6504ebea39390de",
+  "trash_scores": {
+    "default": 1950,
+    "anime-radarr": 1050
+  },
+  "name": "Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
     },
-    "name": "Remux Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Remux",
-            "implementation": "QualityModifierSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "3L",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(3L)$"
-            }
-        },
-        {
-            "name": "BiZKiT",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BiZKiT)$"
-            }
-        },
-        {
-            "name": "BLURANiUM",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BLURANiUM)$"
-            }
-        },
-        {
-            "name": "BMF",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BMF)$"
-            }
-        },
-        {
-            "name": "CiNEPHiLES",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(CiNEPHiLES)$"
-            }
-        },
-        {
-            "name": "FraMeSToR",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FraMeSToR)$"
-            }
-        },
-        {
-            "name": "PmP",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(PmP)$"
-            }
-        },
-        {
-            "name": "WiLDCAT",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(WiLDCAT)$"
-            }
-        },
-        {
-            "name": "ZQ",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(ZQ)$"
-            }
-        }
-    ]
+    {
+      "name": "3L",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(3L)$"
+      }
+    },
+    {
+      "name": "BiZKiT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiZKiT)$"
+      }
+    },
+    {
+      "name": "BLURANiUM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BLURANiUM)$"
+      }
+    },
+    {
+      "name": "BMF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BMF)$"
+      }
+    },
+    {
+      "name": "CiNEPHiLES",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CiNEPHiLES)$"
+      }
+    },
+    {
+      "name": "FraMeSToR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FraMeSToR)$"
+      }
+    },
+    {
+      "name": "PmP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PmP)$"
+      }
+    },
+    {
+      "name": "WiLDCAT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WiLDCAT)$"
+      }
+    },
+    {
+      "name": "ZQ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ZQ)$"
+      }
+    }
+  ]
 }

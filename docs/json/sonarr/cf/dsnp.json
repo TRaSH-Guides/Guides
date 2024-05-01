@@ -1,38 +1,38 @@
 {
-    "trash_id": "89358767a60cc28783cdc3d0be9388a4",
-    "trash_scores": {
-        "default": 100,
-        "anime-sonarr": 5
+  "trash_id": "89358767a60cc28783cdc3d0be9388a4",
+  "trash_scores": {
+    "default": 100,
+    "anime-sonarr": 5
+  },
+  "name": "DSNP",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "Disney+",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
+      }
     },
-    "name": "DSNP",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-        {
-            "name": "Disney+",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": "\\b(dsnp|dsny|disney|Disney\\+)\\b"
-            }
-        },
-        {
-            "name": "WEBDL",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 3
-            }
-        },
-        {
-            "name": "WEBRIP",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 4
-            }
-        }
-    ]
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
 }

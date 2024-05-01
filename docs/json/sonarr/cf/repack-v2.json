@@ -1,28 +1,28 @@
 {
-    "trash_id": "eb3d5cc0a2be0db205fb823640db6a3c",
-    "trash_scores": {
-        "default": 6
+  "trash_id": "eb3d5cc0a2be0db205fb823640db6a3c",
+  "trash_scores": {
+    "default": 6
+  },
+  "name": "Repack v2",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Repack v2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(repack2)\\b"
+      }
     },
-    "name": "Repack v2",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Repack v2",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\b(repack2)\\b"
-            }
-        },
-        {
-            "name": "Proper v2",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\b(proper2)\\b"
-            }
-        }
-    ]
+    {
+      "name": "Proper v2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(proper2)\\b"
+      }
+    }
+  ]
 }

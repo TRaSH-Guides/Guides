@@ -1,109 +1,109 @@
 {
-    "trash_id": "5583260016e0b9f683f53af41fb42e4a",
-    "trash_scores": {
-        "default": 1950
+  "trash_id": "5583260016e0b9f683f53af41fb42e4a",
+  "trash_scores": {
+    "default": 1950
+  },
+  "name": "FR Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
     },
-    "name": "FR Remux Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Remux",
-            "implementation": "QualityModifierSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "BlackAngel",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BlackAngel)$"
-            }
-        },
-        {
-            "name": "Choco",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Choco)$"
-            }
-        },
-        {
-            "name": "HDForever",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(HDForever)$"
-            }
-        },
-        {
-            "name": "MAX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MAX)$"
-            }
-        },
-        {
-            "name": "ONLY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(ONLY)$"
-            }
-        },
-        {
-            "name": "Psaro",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Psaro)$"
-            }
-        },
-        {
-            "name": "Sicario",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Sicario)$"
-            }
-        },
-        {
-            "name": "Tezcat74",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Tezcat74)$"
-            }
-        },
-        {
-            "name": "TyrellCorp",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(TyrellCorp)$"
-            }
-        },
-        {
-            "name": "Zapax",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Zapax)$"
-            }
-        }
-    ]
+    {
+      "name": "BlackAngel",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BlackAngel)$"
+      }
+    },
+    {
+      "name": "Choco",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Choco)$"
+      }
+    },
+    {
+      "name": "HDForever",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDForever)$"
+      }
+    },
+    {
+      "name": "MAX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MAX)$"
+      }
+    },
+    {
+      "name": "ONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ONLY)$"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Psaro)$"
+      }
+    },
+    {
+      "name": "Sicario",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Sicario)$"
+      }
+    },
+    {
+      "name": "Tezcat74",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Tezcat74)$"
+      }
+    },
+    {
+      "name": "TyrellCorp",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TyrellCorp)$"
+      }
+    },
+    {
+      "name": "Zapax",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Zapax)$"
+      }
+    }
+  ]
 }

@@ -1,136 +1,136 @@
 {
-    "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
-    "trash_scores": {
-        "default": 1700
+  "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
+  "trash_scores": {
+    "default": 1700
+  },
+  "name": "FR WEB Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
     },
-    "name": "FR WEB Tier 01",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "WEBDL",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 7
-            }
-        },
-        {
-            "name": "WEBRIP",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": 8
-            }
-        },
-        {
-            "name": "BONBON",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BONBON)$"
-            }
-        },
-        {
-            "name": "FCK",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FCK)$"
-            }
-        },
-        {
-            "name": "FW",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FW)$"
-            }
-        },
-        {
-            "name": "FoX",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FoX)$"
-            }
-        },
-        {
-            "name": "FRATERNiTY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FRATERNiTY)$"
-            }
-        },
-        {
-            "name": "FrIeNdS",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(FrIeNdS)$"
-            }
-        },
-        {
-            "name": "MOONLY",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MOONLY)$"
-            }
-        },
-        {
-            "name": "MTDK",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(MTDK)$"
-            }
-        },
-        {
-            "name": "PATOPESTO",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(PATOPESTO)$"
-            }
-        },
-        {
-            "name": "Psaro",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(Psaro)$"
-            }
-        },
-        {
-            "name": "T3KASHi",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(T3KASHi)$"
-            }
-        },
-        {
-            "name": "TFA",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(TFA)$"
-            }
-        }
-    ]
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    },
+    {
+      "name": "BONBON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BONBON)$"
+      }
+    },
+    {
+      "name": "FCK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FCK)$"
+      }
+    },
+    {
+      "name": "FW",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FW)$"
+      }
+    },
+    {
+      "name": "FoX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FoX)$"
+      }
+    },
+    {
+      "name": "FRATERNiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FRATERNiTY)$"
+      }
+    },
+    {
+      "name": "FrIeNdS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FrIeNdS)$"
+      }
+    },
+    {
+      "name": "MOONLY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MOONLY)$"
+      }
+    },
+    {
+      "name": "MTDK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MTDK)$"
+      }
+    },
+    {
+      "name": "PATOPESTO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PATOPESTO)$"
+      }
+    },
+    {
+      "name": "Psaro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Psaro)$"
+      }
+    },
+    {
+      "name": "T3KASHi",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(T3KASHi)$"
+      }
+    },
+    {
+      "name": "TFA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TFA)$"
+      }
+    }
+  ]
 }

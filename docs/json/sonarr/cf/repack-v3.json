@@ -1,19 +1,19 @@
 {
-    "trash_id": "44e7c4de10ae50265753082e5dc76047",
-    "trash_scores": {
-        "default": 7
-    },
-    "name": "Repack v3",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "Repack v3",
-            "implementation": "ReleaseTitleSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "\\b(repack3)\\b"
-            }
-        }
-    ]
+  "trash_id": "44e7c4de10ae50265753082e5dc76047",
+  "trash_scores": {
+    "default": 7
+  },
+  "name": "Repack v3",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Repack v3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(repack3)\\b"
+      }
+    }
+  ]
 }

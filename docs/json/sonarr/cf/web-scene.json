@@ -1,28 +1,28 @@
 {
-    "trash_id": "d0c516558625b04b363fa6c5c2c7cfd4",
-    "trash_scores": {
-        "default": 1600
+  "trash_id": "d0c516558625b04b363fa6c5c2c7cfd4",
+  "trash_scores": {
+    "default": 1600
+  },
+  "name": "WEB Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DEFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DEFLATE)$"
+      }
     },
-    "name": "WEB Scene",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "DEFLATE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(DEFLATE)$"
-            }
-        },
-        {
-            "name": "INFLATE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(INFLATE)$"
-            }
-        }
-    ]
+    {
+      "name": "INFLATE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(INFLATE)$"
+      }
+    }
+  ]
 }

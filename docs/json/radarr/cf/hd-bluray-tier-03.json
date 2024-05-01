@@ -1,84 +1,84 @@
 {
-    "trash_id": "5608c71bcebba0a5e666223bae8c9227",
-    "trash_scores": {
-        "default": 1700,
-        "sqp-1-1080p": 1000,
-        "sqp-1-2160p": 1000
+  "trash_id": "5608c71bcebba0a5e666223bae8c9227",
+  "trash_scores": {
+    "default": 1700,
+    "sqp-1-1080p": 1000,
+    "sqp-1-2160p": 1000
+  },
+  "name": "HD Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
     },
-    "name": "HD Bluray Tier 03",
-    "includeCustomFormatWhenRenaming": false,
-    "specifications": [
-        {
-            "name": "BLURAY",
-            "implementation": "SourceSpecification",
-            "negate": false,
-            "required": true,
-            "fields": {
-                "value": 9
-            }
-        },
-        {
-            "name": "Not REMUX",
-            "implementation": "QualityModifierSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 5
-            }
-        },
-        {
-            "name": "Not 2160p",
-            "implementation": "ResolutionSpecification",
-            "negate": true,
-            "required": true,
-            "fields": {
-                "value": 2160
-            }
-        },
-        {
-            "name": "BHDStudio",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(BHDStudio)$"
-            }
-        },
-        {
-            "name": "HONE",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(HONE)$"
-            }
-        },
-        {
-            "name": "LoRD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(LoRD)$"
-            }
-        },
-        {
-            "name": "playHD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(playHD)$"
-            }
-        },
-        {
-            "name": "SPHD",
-            "implementation": "ReleaseGroupSpecification",
-            "negate": false,
-            "required": false,
-            "fields": {
-                "value": "^(SPHD)$"
-            }
-        }
-    ]
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Not 2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "BHDStudio",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BHDStudio)$"
+      }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
+    },
+    {
+      "name": "LoRD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LoRD)$"
+      }
+    },
+    {
+      "name": "playHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(playHD)$"
+      }
+    },
+    {
+      "name": "SPHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SPHD)$"
+      }
+    }
+  ]
 }
