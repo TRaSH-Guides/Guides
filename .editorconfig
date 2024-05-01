@@ -28,7 +28,7 @@ end_of_line = lf
 
 [*.{json,jsonc,webmanifest}]
 indent_style = space
-indent_size = 4
+indent_size = 2
 end_of_line = lf
 
 [*.md]
