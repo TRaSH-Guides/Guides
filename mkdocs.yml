@@ -69,6 +69,7 @@ plugins:
       locale: en
   #    fallback_to_build_date: false
   - awesome-pages
+  - neoteroi-mkdocs
   - glightbox:
       touchNavigation: true
       loop: false
