@@ -30,5 +30,6 @@ jobs:
           git diff
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
+          git add CONTRIBUTORS.json
           git commit -am "Update CONTRIBUTORS.md" || exit 0
           git push
