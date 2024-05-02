@@ -12,28 +12,28 @@
         <meta name="author" content="TRaSH">
       
       
-        <link rel="canonical" href="https://trash-guides.info/Downloaders/Deluge/Tips/Unraid-Mover/">
+        <link rel="canonical" href="https://trash-guides.info/Sonarr/sonarr-v3-eol/">
       
       
-        <link rel="prev" href="../Thin-Client/">
+        <link rel="prev" href="../sonarr-setup-quality-profiles/">
       
       
-        <link rel="next" href="../../../ruTorrent/">
+        <link rel="next" href="../Tips/How-to-setup-language-custom-formats/">
       
       
-      <link rel="icon" href="../../../../img/favicon.png">
+      <link rel="icon" href="../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
       
-        <title>unRAID Mover and Deluge - TRaSH Guides</title>
+        <title>Sonarr v3 - End Of Life - TRaSH Guides</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../../../stylesheets/github-permalink-style.css">
+      <link rel="stylesheet" href="../../stylesheets/github-permalink-style.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -73,7 +73,7 @@
     
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -82,7 +82,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unraid-mover-and-deluge" class="md-skip">
+        <a href="#sonarr-v3-end-of-life" class="md-skip">
           Skip to content
         </a>
       
@@ -115,9 +115,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="TRaSH Guides" class="md-header__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+    <a href="../.." title="TRaSH Guides" class="md-header__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
       
-  <img src="../../../../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -134,7 +134,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              unRAID Mover and Deluge
+              Sonarr v3 - End Of Life
             
           </span>
         </div>
@@ -241,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -260,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Radarr/" class="md-tabs__link">
+        <a href="../../Radarr/" class="md-tabs__link">
           
   
   Radarr
@@ -274,11 +274,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../Sonarr/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   Sonarr
@@ -296,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Prowlarr/" class="md-tabs__link">
+        <a href="../../Prowlarr/" class="md-tabs__link">
           
   
   Prowlarr
@@ -314,7 +316,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Bazarr/" class="md-tabs__link">
+        <a href="../../Bazarr/" class="md-tabs__link">
           
   
   Bazarr
@@ -328,13 +330,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Downloaders/" class="md-tabs__link">
           
   
   Downloaders
@@ -352,7 +352,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Plex/" class="md-tabs__link">
+        <a href="../../Plex/" class="md-tabs__link">
           
   
   Plex
@@ -370,7 +370,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Guide-Sync/" class="md-tabs__link">
+        <a href="../../Guide-Sync/" class="md-tabs__link">
           
   
   Guide Sync
@@ -388,7 +388,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Misc/" class="md-tabs__link">
+        <a href="../../Misc/" class="md-tabs__link">
           
   
   Misc
@@ -406,7 +406,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-tabs__link">
+        <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-tabs__link">
           
   
   Hardlinks
@@ -422,7 +422,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../Hardlinks/How-to-setup-for" class="md-tabs__link">
+      <a href="../../Hardlinks/How-to-setup-for" class="md-tabs__link">
         
   
     
@@ -456,9 +456,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="TRaSH Guides" class="md-nav__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
+    <a href="../.." title="TRaSH Guides" class="md-nav__button md-logo" aria-label="TRaSH Guides" data-md-component="logo">
       
-  <img src="../../../../img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     TRaSH Guides
@@ -485,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/" class="md-nav__link">
+      <a href="../../Radarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -564,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-Quality-Settings-File-Size/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-Quality-Settings-File-Size/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-recommended-naming-scheme/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-recommended-naming-scheme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-import-custom-formats/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-import-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-how-to-update-custom-formats/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-how-to-update-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/radarr-setup-quality-profiles/" class="md-nav__link">
+      <a href="../../Radarr/radarr-setup-quality-profiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/radarr-setup-quality-profiles-anime/" class="md-nav__link">
+      <a href="../../Radarr/radarr-setup-quality-profiles-anime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/radarr-setup-quality-profiles-french-en/" class="md-nav__link">
+      <a href="../../Radarr/radarr-setup-quality-profiles-french-en/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -711,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-collection-of-custom-formats/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-collection-of-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Radarr-remote-path-mapping/" class="md-nav__link">
+      <a href="../../Radarr/Radarr-remote-path-mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -791,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Tips/How-to-setup-language-custom-formats/" class="md-nav__link">
+      <a href="../../Radarr/Tips/How-to-setup-language-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -812,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Tips/Merge-quality/" class="md-nav__link">
+      <a href="../../Radarr/Tips/Merge-quality/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Tips/Radarr-rename-your-folders/" class="md-nav__link">
+      <a href="../../Radarr/Tips/Radarr-rename-your-folders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Tips/Radarr-show-unknown-movie-items/" class="md-nav__link">
+      <a href="../../Radarr/Tips/Radarr-show-unknown-movie-items/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Radarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+      <a href="../../Radarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -908,23 +908,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -935,7 +940,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sonarr
@@ -949,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -970,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Sonarr-Quality-Settings-File-Size/" class="md-nav__link">
+      <a href="../Sonarr-Quality-Settings-File-Size/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -991,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Sonarr-recommended-naming-scheme/" class="md-nav__link">
+      <a href="../Sonarr-recommended-naming-scheme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1012,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-import-custom-formats/" class="md-nav__link">
+      <a href="../sonarr-import-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1033,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-how-to-update-custom-formats/" class="md-nav__link">
+      <a href="../sonarr-how-to-update-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1054,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-setup-quality-profiles/" class="md-nav__link">
+      <a href="../sonarr-setup-quality-profiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-setup-quality-profiles-anime/" class="md-nav__link">
+      <a href="../sonarr-setup-quality-profiles-anime/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1096,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-setup-quality-profiles-french-en/" class="md-nav__link">
+      <a href="../sonarr-setup-quality-profiles-french-en/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/sonarr-collection-of-custom-formats/" class="md-nav__link">
+      <a href="../sonarr-collection-of-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Sonarr-remote-path-mapping/" class="md-nav__link">
+      <a href="../Sonarr-remote-path-mapping/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1197,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Tips/How-to-setup-language-custom-formats/" class="md-nav__link">
+      <a href="../Tips/How-to-setup-language-custom-formats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1218,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Tips/Merge-quality/" class="md-nav__link">
+      <a href="../Tips/Merge-quality/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1239,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Sonarr/Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
+      <a href="../Tips/Sync-2-radarr-sonarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1313,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Prowlarr/" class="md-nav__link">
+      <a href="../../Prowlarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1334,7 +1339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Prowlarr/prowlarr-setup-proxy/" class="md-nav__link">
+      <a href="../../Prowlarr/prowlarr-setup-proxy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1355,7 +1360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Prowlarr/prowlarr-setup-flaresolverr/" class="md-nav__link">
+      <a href="../../Prowlarr/prowlarr-setup-flaresolverr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1376,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Prowlarr/prowlarr-setup-limited-api/" class="md-nav__link">
+      <a href="../../Prowlarr/prowlarr-setup-limited-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,7 +1447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Bazarr/" class="md-nav__link">
+      <a href="../../Bazarr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1463,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Bazarr/Setup-Guide/" class="md-nav__link">
+      <a href="../../Bazarr/Setup-Guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1484,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Bazarr/After-install-configuration/" class="md-nav__link">
+      <a href="../../Bazarr/After-install-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1564,7 +1569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Bazarr/Tips/Bazarr-suggested-scoring/" class="md-nav__link">
+      <a href="../../Bazarr/Tips/Bazarr-suggested-scoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1597,28 +1602,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1629,7 +1629,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Downloaders
@@ -1643,7 +1643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
+      <a href="../../Downloaders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1702,7 +1702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../NZBGet/Basic-Setup/" class="md-nav__link">
+      <a href="../../Downloaders/NZBGet/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1723,7 +1723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../NZBGet/Paths-and-Categories/" class="md-nav__link">
+      <a href="../../Downloaders/NZBGet/Paths-and-Categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1811,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SABnzbd/Basic-Setup/" class="md-nav__link">
+      <a href="../../Downloaders/SABnzbd/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1832,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../SABnzbd/Paths-and-Categories/" class="md-nav__link">
+      <a href="../../Downloaders/SABnzbd/Paths-and-Categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1920,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/Basic-Setup/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1941,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/Paths/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/Paths/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1962,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/How-to-add-categories/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/How-to-add-categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1983,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/Port-forwarding/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/Port-forwarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2004,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/3rd-party-tools/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/3rd-party-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2063,7 +2063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2084,7 +2084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qBittorrent/Tips/Themes/" class="md-nav__link">
+      <a href="../../Downloaders/qBittorrent/Tips/Themes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2118,8 +2118,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2129,11 +2127,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
         
           
           <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
@@ -2147,7 +2145,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5">
             <span class="md-nav__icon md-icon"></span>
             Deluge
@@ -2161,7 +2159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2182,7 +2180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Basic-Setup/" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2203,7 +2201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Using-Labels/" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/Using-Labels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2224,7 +2222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Port-Forwarding/" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/Port-Forwarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2242,8 +2240,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2253,11 +2249,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_5" >
         
           
           <label class="md-nav__link" for="__nav_6_5_5" id="__nav_6_5_5_label" tabindex="0">
@@ -2271,7 +2267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_5_5">
             <span class="md-nav__icon md-icon"></span>
             Tips
@@ -2285,7 +2281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Plugins/" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/Tips/Plugins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2306,7 +2302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Thin-Client/" class="md-nav__link">
+      <a href="../../Downloaders/Deluge/Tips/Thin-Client/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2324,30 +2320,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    unRAID Mover and Deluge
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Downloaders/Deluge/Tips/Unraid-Mover/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2356,116 +2332,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Needed
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Needed">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deluge-mover-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      deluge-mover script
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    <span class="md-ellipsis">
-      Plugins
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requests-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      requests module
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      Script
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Script">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#copy-the-script-to-your-preferred-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Copy the script to your preferred location
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#final-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2532,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ruTorrent/" class="md-nav__link">
+      <a href="../../Downloaders/ruTorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2553,7 +2419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
+      <a href="../../Downloaders/ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2627,7 +2493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Plex/" class="md-nav__link">
+      <a href="../../Plex/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2690,7 +2556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Plex/what-does-my-media-player-support/" class="md-nav__link">
+      <a href="../../Plex/what-does-my-media-player-support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2798,7 +2664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Guide-Sync/" class="md-nav__link">
+      <a href="../../Guide-Sync/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2864,7 +2730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Misc/" class="md-nav__link">
+      <a href="../../Misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2885,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Misc/how-to-provide-a-docker-compose/" class="md-nav__link">
+      <a href="../../Misc/how-to-provide-a-docker-compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2906,7 +2772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Misc/How-to-setup-Torguard-for-port-forwarding/" class="md-nav__link">
+      <a href="../../Misc/How-to-setup-Torguard-for-port-forwarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2927,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Misc/x265-4k/" class="md-nav__link">
+      <a href="../../Misc/x265-4k/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2993,7 +2859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-nav__link">
+      <a href="../../Hardlinks/Hardlinks-and-Instant-Moves/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3052,7 +2918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3073,7 +2939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/Docker/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/Docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3094,7 +2960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/Dockstarter/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/Dockstarter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3115,7 +2981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/Native/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/Native/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3136,7 +3002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/Synology/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/Synology/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3157,7 +3023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/TrueNAS-Core/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/TrueNAS-Core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3178,7 +3044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for/Unraid/" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for/Unraid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3207,7 +3073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/Examples/" class="md-nav__link">
+      <a href="../../Hardlinks/Examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3228,7 +3094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/Check-if-hardlinks-are-working/" class="md-nav__link">
+      <a href="../../Hardlinks/Check-if-hardlinks-are-working/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3249,7 +3115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/Replace-copies-with-hardlinks/" class="md-nav__link">
+      <a href="../../Hardlinks/Replace-copies-with-hardlinks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3277,7 +3143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Hardlinks/How-to-setup-for" class="md-nav__link">
+      <a href="../../Hardlinks/How-to-setup-for" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3310,104 +3176,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      Needed
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Needed">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deluge-mover-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      deluge-mover script
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    <span class="md-ellipsis">
-      Plugins
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requests-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      requests module
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      Script
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Script">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#copy-the-script-to-your-preferred-location" class="md-nav__link">
-    <span class="md-ellipsis">
-      Copy the script to your preferred location
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#final-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final steps
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3422,7 +3190,7 @@
                   
 
   
-    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Downloaders/Deluge/Tips/Unraid-Mover.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Sonarr/sonarr-v3-eol.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3431,239 +3199,17 @@
     
       
     
-    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Downloaders/Deluge/Tips/Unraid-Mover.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Sonarr/sonarr-v3-eol.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="unraid-mover-and-deluge">unRAID Mover and Deluge<a class="headerlink" href="#unraid-mover-and-deluge" title="Permanent link"></a></h1>
-<p>When you make use of the unRAID cache drive for your <code>/data/torrents</code> share, and the torrents in Deluge are still seeding, the mover can't move files since they are still in use.</p>
-<p>Using the following instructions will allow you to move the files with the use of the Deluge JSON-RPC.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Workflow Rules</p>
-<ol>
-<li>Pause torrents in a specified age range that reside on your cache drive.</li>
-<li>Run the unRAID mover.</li>
-<li>Resume the torrents after the mover has completed.</li>
-</ol>
-</div>
+<h1 id="sonarr-v3-end-of-life">Sonarr v3 - End Of Life<a class="headerlink" href="#sonarr-v3-end-of-life" title="Permanent link"></a></h1>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The screenshots below are only <strong>EXAMPLES</strong> to show you how it should look and where you need to place the data that you need to add. They are <strong>NOT</strong> always a 100% reflection of the actual data, and not always the actual values you need to add.</p>
-<ul>
-<li>Always follow the recommendations described in the guide.</li>
-<li>If you have any questions, or aren't sure, just click the chat badge to join the Discord Channel where you can ask your questions directly.</li>
-</ul>
+<p class="admonition-title"><strong>Sonarr v3 - End Of Life</strong><br><br>As of December 30th 2023, Sonarr v4 has been officially released.<br>Sonarr v3 is therefore in End of Life status.<br>As v4 is now the only supported version of Sonarr, we have removed the Sonarr v3 guide.<br>We recommend that all users upgrade to Sonarr v4.<br><center><br><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> <strong>Before updating to Sonarr v4</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /><br>it is recommended that you delete any existing Release Profiles</center><br></p>
 </div>
-<h2 id="needed">Needed<a class="headerlink" href="#needed" title="Permanent link"></a></h2>
-<h3 id="deluge-mover-script"><code>deluge-mover</code> script<a class="headerlink" href="#deluge-mover-script" title="Permanent link"></a></h3>
-<p>Download the following standalone Python script.</p>
-<ul>
-<li><a href="https://raw.githubusercontent.com/zakkarry/deluge-mover/master/deluge-mover.py" rel="noopener noreferrer" target="_blank">Script (deluge-mover.py)</a></li>
-</ul>
-<p>Thanks to <a href="https://github.com/zakkarry" rel="noopener noreferrer" target="_blank">zakary</a> (Developer on <a href="https://github.com/cross-seed/cross-seed" rel="noopener noreferrer" target="_blank">cross-seed</a>)</p>
-<h3 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
-<p>Install the following Plugins.</p>
-<ul>
-<li>User Scripts</li>
-<li>NerdTools<ul>
-<li>python3 <sup>(<em>1</em>)</sup></li>
-<li>python-setuptools <sup>(<em>1</em>)</sup></li>
-<li>python-pip <sup>(<em>1</em>)</sup></li>
-</ul>
-</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title"><sup>(<em>1</em>)</sup> These need to be installed from NerdTools.</p>
-</div>
-<hr />
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"></a></h2>
-<p>After you install the needed <code>Plugins</code> - it's time to configure everything.</p>
-<h3 id="requests-module"><code>requests</code> module<a class="headerlink" href="#requests-module" title="Permanent link"></a></h3>
-<p><code>deluge-mover.py</code> needs the requests Python module, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.</p>
-<p>You can choose one of the following 3 options (select a tab) to install <code>requests</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">User scripts</label><label for="__tabbed_1_2">Python venv</label><label for="__tabbed_1_3">Go File</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>With this option, we're going to install the <code>requests</code> module when the Array is started the first time.</p>
-<p>In your unRAID Dashboard, go to your <code>Settings</code> tab and select <code>User Scripts</code> in the <code>User Utilities</code> section at the bottom.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png" /></a></p>
-<p>At the bottom of the <code>User Scripts</code> page select the <code>ADD NEW SCRIPT</code> button.</p>
-<p><a class="glightbox" href="../images/Unraid-user-scripts-add-new-script-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png" /></a></p>
-<p>A popup will appear asking you to name the script. For this example, we're going to use <code>Install requests (deluge-mover)</code> and then click on <code>OK</code>.</p>
-<p><a class="glightbox" href="../images/Unraid-user-scripts-add-new-script-enter-name.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Install requests module" src="../images/Unraid-user-scripts-add-new-script-enter-name.png" /></a></p>
-<p>Click on the cogwheel of the new script in the list, and select <code>Edit Script</code>.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-edit-requests.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-edit-requests.png" /></a></p>
-<p>Copy/Paste the following in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-pip3<span class="w"> </span>install<span class="w"> </span>requests
-</code></pre></div>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-requests.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-requests.png" /></a></p>
-<p>Select in the schedule list when the script should run, and choose <code>At First Array Start Only</code>.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-requests-schedule.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-requests-schedule.png" /></a></p>
-<p>Click on <code>Apply</code>.</p>
-<p>Finally, you will need to choose <code>RUN IN BACKGROUND</code> or restart your unRAID server to install the <code>requests</code> module.</p>
-</div>
-<div class="tabbed-block">
-<p>With this option, we're going to create a <a href="https://docs.python.org/3/library/venv.html">Python virtual environment</a> on our disk. We will use this to run and store dependencies (<code>requests</code>) for this specific environment.</p>
-<p>By doing this, we will <strong>only need to configure this once</strong> and it will be persistent after reboots <em>(this differs from the previous steps)</em>.</p>
-<p>First, you need to choose a location to start a new Python environment.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>In the next steps, you will be asked to choose a <a href="#copy-script-to-your-preferred-location">location to store the script</a>, try to be consistent.</p>
-</div>
-<p>Suggestions:</p>
-<ul>
-<li><code>/mnt/user/appdata/deluge/scripts/.venv</code></li>
-<li><code>/mnt/user/data/scripts/.venv</code></li>
-</ul>
-<p>Run the following command in unRAID's terminal in the directory you chose:</p>
-<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>--clear<span class="w"> </span>/mnt/user/data/scripts/.venv
-</code></pre></div>
-<p>We now need to enter this new environment and install our dependency (<code>requests</code>) in it, run:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>/mnt/user/data/scripts/.venv/bin/activate
-pip3<span class="w"> </span>install<span class="w"> </span>requests
-deactivate<span class="w"> </span><span class="c1"># to leave the environment</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Replace <code>/mnt/user/data/scripts/.venv</code> with the path you have chosen.</p>
-</div>
-</div>
-<div class="tabbed-block">
-<p>With this option, we're going to install the <code>requests</code> module when the unRAID server is started.</p>
-<p>On your USB stick/key go to <code>/boot/config</code> and open the <code>go</code> file with your text editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>).</p>
-<p>Copy/paste the following command</p>
-<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>requests
-</code></pre></div>
-<p>Restart your unRAID Server or run the above command from the terminal.</p>
-</div>
-</div>
-</div>
-<hr />
-<h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h3>
-<p>Now, using your favorite text editor (<a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">VSCode</a>/<a href="https://notepad-plus-plus.org/downloads/" rel="noopener noreferrer" target="_blank">Notepad++</a>) edit the script you downloaded at the beginning of the guide (<a href="#deluge-mover-script">HERE</a>).</p>
-<p>You only need to change a few options at the top of the script.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">### CONFIGURATION VARIABLES ###</span>
-
-<span class="c1"># this webui will need to be the JSON-RPC endpoint</span>
-<span class="c1"># this ends with &#39;/json&#39;</span>
-<span class="n">deluge_webui</span> <span class="o">=</span> <span class="s2">&quot;http://localhost:8112/json&quot;</span>
-<span class="n">deluge_password</span> <span class="o">=</span> <span class="s2">&quot;deluged&quot;</span>
-
-<span class="c1"># this changes whether the actual cache drive is checked for</span>
-<span class="c1"># applicable files to pause/move before pausing.</span>
-<span class="c1">#</span>
-<span class="c1"># if this is false, it will pause all torrents in the age-range</span>
-<span class="c1"># instead of only torrents in that range that exist on the cache</span>
-<span class="n">check_fs</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="c1"># if you are using the mover tuner and don&#39;t want to use it for</span>
-<span class="c1"># this script, set this to true</span>
-<span class="c1">#</span>
-<span class="c1"># if you do not use mover tuner, leave this as false</span>
-<span class="n">use_mover_old</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="c1"># this is the absolute host path to your cache drive&#39;s downloads</span>
-<span class="c1"># you only need this to be changed/set if using &#39;check_fs = True&#39;</span>
-<span class="n">cache_download_path</span> <span class="o">=</span> <span class="s2">&quot;/mnt/cache/torrents/completed&quot;</span>
-
-<span class="c1"># the age range of days to look for relevant torrents to move</span>
-<span class="c1"># i dont recommend setting age_day_max to less than the schedule</span>
-<span class="c1"># you run the script on...</span>
-<span class="c1">#</span>
-<span class="c1"># if you run every 7 days, this should be at least 7 to prevent</span>
-<span class="c1"># files from being stuck on your cache forever</span>
-<span class="c1">#</span>
-<span class="c1"># 0 disables age_day_max</span>
-<span class="c1"># set both age vars to 0 to move everything on your cache drive</span>
-
-<span class="n">age_day_min</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">age_day_max</span> <span class="o">=</span> <span class="mi">0</span>
-</code></pre></div>
-<ul>
-<li><code>deluge_webui</code> =&gt; The URL you use to access Deluge locally. (<em>the</em> <code>"</code> <em>should remain</em>)</li>
-<li><code>deluge_password</code> =&gt; Your Deluge WebUI <code>Password</code>. (<em>the</em> <code>"</code> <em>should remain</em>)</li>
-<li><code>check_fs</code> =&gt; If set to <code>True</code>, it will check for the file on the cache drive before pausing.</li>
-<li>
-<p><code>use_mover_old</code> =&gt; See below.</p>
-<div class="admonition warning">
-<ul>
-<li>If you do not use <code>Mover Tuning</code>, you <strong>DO NOT</strong> have to make any changes.</li>
-<li>If you use <code>Mover Tuning</code> but <strong>DON'T</strong> want to use it for the script, change this to <code>True</code></li>
-<li>If you use <code>Mover Tuning</code> and <strong>DO</strong> want to use it for the script, you will not have to make any changes. However, for this option, inside the <code>Mover Tuner</code> you will need to set <code>Move Now button follows plugin filters</code> to <code>Yes</code> and <code>Disable Mover running on a schedule</code> to <code>No</code>.</li>
-</ul>
-</div>
-</li>
-<li>
-<p><code>cache_download_path</code> =&gt; The location (host path) for your cache folder (if check_fs is True)</p>
-</li>
-<li><code>age_day_min</code> =&gt; Set the minimum age (days) of the torrents that you wish to move.</li>
-<li><code>age_day_max</code> =&gt; Set the maximum age (days) of the torrents that you wish to move.</li>
-</ul>
-<h4 id="copy-the-script-to-your-preferred-location">Copy the script to your preferred location<a class="headerlink" href="#copy-the-script-to-your-preferred-location" title="Permanent link"></a></h4>
-<p>Place the script you just edited somewhere easy to access/remember.</p>
-<p>Suggestions:</p>
-<ul>
-<li><code>/mnt/user/appdata/deluge/scripts/deluge-mover.py</code></li>
-<li><code>/mnt/user/data/scripts/deluge-mover.py</code></li>
-</ul>
-<h4 id="final-steps">Final steps<a class="headerlink" href="#final-steps" title="Permanent link"></a></h4>
-<p>Set up the scheduler for when the mover should run.</p>
-<p>In your unRAID Dashboard, go to your <code>Settings</code> tab and select <code>User Scripts</code> in the <code>User Utilities</code> section at the bottom.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!User Scripts" src="../images/Unraid-settings-user-scripts-icon.png" /></a></p>
-<p>At the bottom of the <code>User Scripts</code> page select the <code>ADD NEW SCRIPT</code> button.</p>
-<p><a class="glightbox" href="../images/Unraid-user-scripts-add-new-script-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Add New Script" src="../images/Unraid-user-scripts-add-new-script-icon.png" /></a></p>
-<p>A popup will appear asking you to name the script. For this example, we're going to use <code>deluge-mover</code> and then click on <code>OK</code>.</p>
-<p><a class="glightbox" href="../images/Unraid-user-scripts-add-new-script-enter-name-deluge.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Deluge Mover" src="../images/Unraid-user-scripts-add-new-script-enter-name-deluge.png" /></a></p>
-<p>Click on the cogwheel of the new script in the list.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" /></a></p>
-<p>Choose your method (select a tab) and copy/paste the script in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python (Native)</label><label for="__tabbed_2_2">Python (venv)</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
-<span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover starting @ `date +%H:%M:%S`.&quot;</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;executing script to pause torrents and run mover.&quot;</span>
-<span class="w">    </span>python3<span class="w"> </span>/mnt/user/data/scripts/deluge-mover.py
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deluge-mover completed and resumed all paused torrents.&quot;</span>
-<span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover completed @ `date +%H:%M:%S`.&quot;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
-<span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover starting @ `date +%H:%M:%S`.&quot;</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;executing script to pause torrents and run mover.&quot;</span>
-<span class="w">    </span>/mnt/user/data/scripts/.venv/bin/python3<span class="w"> </span>/mnt/user/data/scripts/deluge-mover.py
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deluge-mover completed and resumed all paused torrents.&quot;</span>
-<span class="w">    </span>/usr/local/emhttp/plugins/dynamix/scripts/notify<span class="w"> </span>-s<span class="w"> </span><span class="s2">&quot;Deluge Mover&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;Deluge Mover completed @ `date +%H:%M:%S`.&quot;</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Replace <code>/mnt/user/data/scripts/</code> in the script with the path you have chosen for the Python script.</p>
-</div>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-deluge-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Bash script" src="../images/Unraid-settings-user-scripts-deluge-mover.png" /></a></p>
-<p>Click the schedule dropdown to choose when the script should run. We want to select <code>Custom</code>.</p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-deluge-mover-schedule.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-deluge-mover-schedule.png" /></a></p>
-<p>After changing to <code>Custom</code> you will get an extra text field on the right where you can set your schedule (cron).</p>
-<p>For this example, we're going to tell the script to run every day at 4 AM.</p>
-<p><code>0 4 * * *</code></p>
-<p>You can generate your scheduling <a href="https://crontab.guru/">HERE</a></p>
-<p><a class="glightbox" href="../images/Unraid-settings-user-scripts-deluge-mover-cron.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Set Run Time" src="../images/Unraid-settings-user-scripts-deluge-mover-cron.png" /></a></p>
-<!-- BEGIN INCLUDE ../../../../includes/support.md -->
-
-<hr />
-<div class="admonition question">
-<p class="admonition-title">Questions or Suggestions?</p>
-<p>If you have questions or suggestions click the chat badge to join the Discord Support Channel where you can ask your questions directly and get live support.</p>
-<p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
-</div>
-<!-- END INCLUDE -->
 
 
 
@@ -3686,7 +3232,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2023 19:01:22</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 2, 2024 18:08:56</span>
   </span>
 
     
@@ -3696,7 +3242,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 15, 2023 15:57:09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 2, 2024 18:08:56</span>
   </span>
 
     
@@ -3787,10 +3333,10 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
