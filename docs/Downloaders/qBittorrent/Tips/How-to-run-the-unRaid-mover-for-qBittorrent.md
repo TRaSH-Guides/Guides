@@ -188,7 +188,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
