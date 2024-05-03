@@ -6,7 +6,7 @@ function indentString(string, indentation) {
   return string.split('\n').map(line => indentation + line).join('\n');
 }
 
-let contributors = '<table style="width: 100%;">\n';
+let contributors = '<div style="display: flex; flex-wrap: wrap;">\n';
 let index = 0;
 let page = 1;
 
@@ -15,10 +15,7 @@ function fetchPage() {
     .then((response) => {
       if (response.data.length === 0) {
         // No more contributors, write the file
-        if (index % 5 !== 0) {
-          contributors += '</tr>\n';  // Close the row if it's not already closed
-        }
-        contributors += '</table>\n';
+        contributors += '</div>\n';
         contributors = indentString(contributors, '');
 
         fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
@@ -29,22 +26,14 @@ function fetchPage() {
         // Exclude bots and actions-user
         if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user' || user.login === 'mynameisbogdan') return;
 
-        if (index % 5 === 0) {
-          contributors += '<tr>';
-        }
-
         const userHtml = `
-<td align="center">
-        <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
-        <br />
-        <b><a href="${user.html_url}">${user.login}</a></b>
-</td>`;
+<div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
+  <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
+  <br />
+  <b><a href="${user.html_url}">${user.login}</a></b>
+</div>`;
 
         contributors += indentString(userHtml, '    ');
-
-        if ((index + 1) % 5 === 0 || index === response.data.length - 1) {
-          contributors += '\n</tr>\n';
-        }
 
         index++;
       });
