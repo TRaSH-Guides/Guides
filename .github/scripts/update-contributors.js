@@ -15,6 +15,9 @@ function fetchPage() {
     .then((response) => {
       if (response.data.length === 0) {
         // No more contributors, write the file
+        if (index % 5 !== 0) {
+          contributors += '</tr>\n';  // Close the row if it's not already closed
+        }
         contributors += '</table>\n';
         contributors = indentString(contributors, '');
 
