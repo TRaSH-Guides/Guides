@@ -6,7 +6,7 @@ function indentString(string, indentation) {
   return string.split('\n').map(line => indentation + line).join('\n');
 }
 
-let contributors = '<table>\n';
+let contributors = '<table style="width: 100%;">\n';
 let index = 0;
 let page = 1;
 
@@ -32,7 +32,7 @@ function fetchPage() {
 
         const userHtml = `
 <td align="center">
-        <img src="${user.avatar_url}&v=4" style="width: 50%; border-radius: 50%;" alt="${user.login}"/>
+        <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
         <br />
         <b><a href="${user.html_url}">${user.login}</a></b>
 </td>`;
