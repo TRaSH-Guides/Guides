@@ -30,7 +30,6 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/github-permalink-style.css
-  - css/neoteroi-mkdocs.css
 
 markdown_extensions:
   - attr_list
@@ -55,7 +54,6 @@ markdown_extensions:
   - toc:
       permalink: ""
 #      toc_depth: 5
-  - neoteroi.cards
 
 plugins:
   - include-markdown:
@@ -69,7 +67,6 @@ plugins:
       locale: en
   #    fallback_to_build_date: false
   - awesome-pages
-  - neoteroi-mkdocs
   - glightbox:
       touchNavigation: true
       loop: false

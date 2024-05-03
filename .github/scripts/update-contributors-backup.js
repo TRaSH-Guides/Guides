@@ -1,13 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-// Indentation function
-function indentString(string, indentation) {
-  return string.split('\n').map(line => indentation + line).join('\n');
-}
-
-let contributors = '<table>\n';
-let index = 0;
+let contributors = [];
 let page = 1;
 
 function fetchPage() {
@@ -15,10 +9,7 @@ function fetchPage() {
     .then((response) => {
       if (response.data.length === 0) {
         // No more contributors, write the file
-        contributors += '</table>\n';
-        contributors = indentString(contributors, '');
-
-        fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
+        fs.writeFileSync('CONTRIBUTORS.json', JSON.stringify(contributors, null, 2));
         return;
       }
 
@@ -26,24 +17,13 @@ function fetchPage() {
         // Exclude bots and actions-user
         if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user') return;
 
-        if (index % 5 === 0) {
-          contributors += '<tr>';
-        }
+        const userJson = {
+          "title": user.login,
+          "image": user.avatar_url,
+          "url": user.html_url,
+        };
 
-        const userHtml = `
-<td align="center">
-        <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
-        <br />
-        <b><a href="${user.html_url}">${user.login}</a></b>
-</td>`;
-
-        contributors += indentString(userHtml, '    ');
-
-        if ((index + 1) % 5 === 0 || index === response.data.length - 1) {
-          contributors += '\n</tr>\n';
-        }
-
-        index++;
+        contributors.push(userJson);
       });
 
       // Fetch the next page
