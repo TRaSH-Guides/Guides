@@ -94,7 +94,7 @@ You can choose one of the following 3 options (select a tab) to install `request
     First, you need to choose a location to start a new Python environment.
 
     !!! info
-        In the next steps, you will be asked to choose a [location to store the script](#copy-script-to-your-preferred-location), try to be consistent.
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
 
     Suggestions:
 

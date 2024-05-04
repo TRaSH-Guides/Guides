@@ -75,7 +75,7 @@ When that's all set then you will need to change the paths you're going to use i
 - [Radarr](#radarr)
 - [SABnzbd](#sabnzbd)
 - [NZBGet](#nzbget)
-- [qBittorrent](#qbittorent)
+- [qBittorrent](#qbittorrent)
 - [Deluge](#deluge)
 - [ruTorrent](#rutorrent)
 
