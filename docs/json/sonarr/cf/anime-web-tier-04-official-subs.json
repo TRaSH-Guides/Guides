@@ -106,15 +106,6 @@
       }
     },
     {
-      "name": "NanDesuKa",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(NanDesuKa)\\b"
-      }
-    },
-    {
       "name": "URANIME",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
