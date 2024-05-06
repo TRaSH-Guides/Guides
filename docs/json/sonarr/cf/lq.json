@@ -151,6 +151,15 @@
       }
     },
     {
+      "name": "ShieldBearer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ShieldBearer)$"
+      }
+    },
+    {
       "name": "TBS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

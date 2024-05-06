@@ -163,7 +163,7 @@ Your application data will be stored in the `docker` share in the folder called 
 Create these folders with command below, or create them in File Station manually.
 
 ```bash
-mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
+mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,prowlarr,pullio}
 ```
 
 You can add your own subfolders for your download client(s) using the command above, by adding the name to the command.
@@ -177,6 +177,7 @@ docker
     ├── sonarr
     ├── bazarr
     ├── plex
+    ├── prowlarr
     ├── pullio
     ├── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
     └── (other applications)
@@ -210,6 +211,7 @@ This docker-compose file will have the following docker containers included.
     - Sonarr
     - Bazarr (Subtitle searcher and downloader)
     - Plex
+    - Prowlarr (indexer/tracker manager)
 ```
 
 What's not included (and where are the download clients?).

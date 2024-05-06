@@ -646,6 +646,15 @@
       }
     },
     {
+      "name": "ShieldBearer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ShieldBearer)$"
+      }
+    },
+    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
