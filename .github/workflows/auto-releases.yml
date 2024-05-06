@@ -1,0 +1,96 @@
+name: Weekly Scheduled Release Tag
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs every Sunday at midnight UTC
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Type of release (weekly/manual)'
+        required: true
+        default: 'weekly'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Check for new commits
+      id: check_commits
+      run: |
+        git fetch --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+        COMMIT_COUNT=$(git rev-list --count HEAD...origin/main)
+        COMMIT_MESSAGES=$(git log --pretty=format:"%s" HEAD...origin/main)
+        echo "::set-output name=commit_count::$COMMIT_COUNT"
+        echo "::set-output name=commit_messages::$COMMIT_MESSAGES"
+      
+    - name: Create weekly release tag
+      id: create_weekly_release
+      if: steps.check_commits.outputs.commit_count > 0 && github.event.inputs.release_type == 'weekly'
+      run: |
+        week_number=$(date +'%V')
+        tag_name="${{ github.event.created.year }}.${week_number}"
+        echo "::set-output name=tag_name::$tag_name"
+        release_name="Weekly Release $week_number"
+        echo "::set-output name=release_name::$release_name"
+      
+    - name: Create manual release tag
+      id: create_manual_release
+      if: github.event_name == 'workflow_dispatch' && github.event.inputs.release_type == 'manual'
+      run: |
+        week_number=$(date +'%V')
+        day_of_week=$(date +'%u')
+        tag_name="${{ github.event.created.year }}.${week_number}.${day_of_week}"
+        echo "::set-output name=tag_name::$tag_name"
+        release_name="Manual Release ${{ github.event.created.toISOString() }}"
+        echo "::set-output name=release_name::$release_name"
+      
+    - name: Get week number
+      id: get_week
+      run: echo "::set-output name=week::$(date +'%V')"
+      shell: bash
+
+  manual_release:
+    name: Manual Release
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.release_type == 'manual'
+
+    steps:
+    - name: Create manual release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ''
+        tag_name: ${{ steps.create_manual_release.outputs.tag_name }}
+        name: ${{ steps.create_manual_release.outputs.release_name }}
+        body: |
+          New manual release created on ${{ github.event.created.toISOString() }}.
+
+          Latest commits:
+          ${{ steps.check_commits.outputs.commit_messages }}
+        draft: false
+        prerelease: false
+
+  weekly_release:
+    name: Weekly Release
+    runs-on: ubuntu-latest
+    needs: build
+    if: steps.check_commits.outputs.commit_count > 0 && github.event.inputs.release_type == 'weekly'
+
+    steps:
+    - name: Create weekly release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ''
+        tag_name: ${{ steps.create_weekly_release.outputs.tag_name }}
+        name: ${{ steps.create_weekly_release.outputs.release_name }}
+        body: |
+          New weekly release created automatically for week ${{ steps.get_week.outputs.week }}.
+
+          Latest commits:
+          ${{ steps.check_commits.outputs.commit_messages }}
+        draft: false
+        prerelease: false
