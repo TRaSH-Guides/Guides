@@ -22,19 +22,19 @@ from __future__ import print_function
 import os, re, sys
 
 # Exit codes used by NZBGet
-POSTPROCESS_SUCCESS=93
-POSTPROCESS_ERROR=94
-POSTPROCESS_SKIP=95
+POSTPROCESS_SUCCESS = 93
+POSTPROCESS_ERROR = 94
+POSTPROCESS_SKIP = 95
 
 
-directory = os.environ['NZBPP_DIRECTORY']
-print('Directory used is: ',directory)
+directory = os.environ["NZBPP_DIRECTORY"]
+print("Directory used is: ", directory)
 
 for path, currentDirectory, files in os.walk(directory):
     for file in files:
-        if file.find("_") !=-1:
-            dst = file.replace('_', '.')
-            os.rename (os.path.join(path,file),os.path.join(path,dst) )
-            print('Result: ',file," renamed to ",dst)
+        if file.find("_") != -1:
+            dst = file.replace("_", ".")
+            os.rename(os.path.join(path, file), os.path.join(path, dst))
+            print("Result: ", file, " renamed to ", dst)
 
 sys.exit(POSTPROCESS_SUCCESS)
