@@ -1154,7 +1154,7 @@ We've made 3 guides related to this.
 
 ??? question "Single Episode - [Click to show/hide]"
 
-    This Custom Format will recognize single episode releases (as opposed to multi-episode or season packs) using Sonarr's built in parser. Depending on your preferences, you can give it a negative score, a positive score, or just skip adding it altogether.
+        This Custom Format will recognize single-episode releases, instead of multi-episode or season packs, using Sonarr's built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1170,11 +1170,11 @@ We've made 3 guides related to this.
 
 !!! danger "WARNING"
 
-    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
+    - This CF utilizes functionality only available in Sonarr v4.0.2.1262 or later.
 
 ??? question "Multi-Episode - [Click to show/hide]"
 
-    This Custom Format will recognize multi-episode releases (as opposed to single episode or season packs) using Sonarr's built in parser. Depending on your preferences, you can give it a negative score, a positive score, or just skip adding it altogether.
+    This Custom Format will recognize multi-episode releases (e.g. episodes named with 'S01E01E02'), instead of single-episode or season packs, using Sonarr's built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.
 
 ??? example "JSON - [Click to show/hide]"
 
