@@ -12,7 +12,7 @@
 
 ## General
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/general){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/general){:target="_blank" rel="noopener noreferrer"}
 
 ### Tuning
 
@@ -25,7 +25,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 ## Folders
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/folders){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/folders){:target="_blank" rel="noopener noreferrer"}
 
 ### User Folders
 
@@ -42,13 +42,16 @@ Here you setup your download path/location.
 `Settings` => `Folders` => `System Folders`
 ![!Folders: System Folders](images/sabnzbd-folders-system-folders.png)
 
-I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.
+!!! info "Starting from 4.3.x+ SABnzbd has a hidden (archive) history."
+
+It's still recommended to use the .nzb Backup Folder its still useful for dupe detection (hash matching) or just need to retry something from the past.
+Default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.
 
 ------
 
 ## Servers
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/servers){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
@@ -70,7 +73,7 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 
 ## Categories
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/categories){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/categories){:target="_blank" rel="noopener noreferrer"}
 
 `Settings`=> `Categories`
 
@@ -80,17 +83,18 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ## Switches
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/switches){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/switches){:target="_blank" rel="noopener noreferrer"}
 
 ### Queue
 
 `Settings` => `Switches` => `Queue`
 ![!Switches: Queue](images/sabnzbd-switches-queue.png)
 
+1. If you have really good indexers that get nzb from post not generated then some people might want Propagation delay  set to 5 min. so your not trying to grab a nzb 0 mins from posting and if your not getting it from the same server the poster used you might wrongly have article missing since it hasn't propagated to your server.. or if you use a reseller it may take them longer to get it from their upstream.
 1. When during download it becomes clear that too much data is missing, abort the job. and makes sure Sonarr/Radarr will get a notification and can look for another release.
 1. Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
 1. In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
-1. Suggest this sort so that the most likely to still be there stuff is downloaded first.
+1. This should be set to Default. unless you know what your doing, as if someone has a decent size queue you have sab every 30s sort which could cause spikes in cpu due to it, let alone shuffling jobs around that may be in middle of actions so moving something in front of it could cause that job to take even longer to extract/stall waiting for next update as with sab by default you can only have 3 unpackers going (configurable).
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 
 ### Post processing
@@ -116,7 +120,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.0/special){:target="_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.3/special){:target="_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
