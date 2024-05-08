@@ -103,10 +103,12 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ![!Switches: Post-processing](images/sabnzbd-switches-post-processing.png)
 
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
+1. This should be checked off if you have any sort of decent internet. as the amount of time spent to grab pars to use if its needed for verification/repair is trivial to the time that a repair might run to fail to realize it needs more pars to grab the next part then to try again.
+1. Personal choice if you want to enable this option, its usually an easy check and does provide benefit if job didn't have par2 files. Not every release has a par-set or sfv file. but generally speaking if were talking about scene releases things should have both but of course depends on how its posted/how the indexer is generating the nzb if it includes it or what. sfv do get used by others and well a basic crc32 checksum is better than not to know if the file is good. Parsing a sfv file and comparing crc32 checksum for a file takes very little resources. and sure you might say its a waste if your doing stuff with pars because the par checksum/check there would just handle it. but its just one of those options it doesn't do any harm to outweigh the value of scenarios that it could be used when a par-set is missing
 1. Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.
 1. Unpack archives (rar, zip, 7z) within archives.
 1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
-1. Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.
+1. Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if its a sample compared to what SABnzbd uses.
 1. Helps with de-obfuscation especially invalid file extensions
 
 ------
