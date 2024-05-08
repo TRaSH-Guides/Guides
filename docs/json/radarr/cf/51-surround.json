@@ -9,7 +9,16 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[^0-9]5[ .][0-1]"
+        "value": "[^0-9]5[ .][0-1]\\b"
+      }
+    },
+    {
+      "name": "6.1 Surround",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9]6[ .][0-1]\\b"
       }
     },
     {
@@ -18,16 +27,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "[^0-9][7-8][ .][0-1]"
-      }
-    },
-    {
-      "name": "Not 9.1 Surround",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "[^0-9]9[ .][0-1]"
+        "value": "[^0-9][7-8][ .][0-1]\\b"
       }
     },
     {
@@ -36,7 +36,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?<!repac)[^0-9][1-4][ .][0-1]|\\b(Stereo|Mono)\\b"
+        "value": "(?<!repac)[^0-9][1-4][ .][0-1]\\b|\\b(Stereo|Mono)\\b"
       }
     }
   ]
