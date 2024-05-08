@@ -179,7 +179,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
         #!/bin/bash
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --cache-mount "/mnt/cache" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -191,7 +191,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --cache-mount "/mnt/cache" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -200,11 +200,12 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
     Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
 
-- `days_from` => Set Number of Days to stop torrents **from** for the move.
-- `days_to` => Set Number of Days to stop torrents **to** for the move.
-- `host` => The URL you use to access qBittorrent locally.
-- `user` => Your used qBittorrent `User Name` if you have authentication enabled.
-- `password` => Your used qBittorrent `Password` if you have authentication enabled.
+- `--days_from` => Set Number of Days to stop torrents **from** for the move.
+- `--days_to` => Set Number of Days to stop torrents **to** for the move.
+- `--host` => Replace ip with your unraid server ip, replace port with your webgui port you use to access the webgui.
+- `--user` => Your used qBittorrent `User Name` if you have authentication enabled.
+- `--password` => Your used qBittorrent `Password` if you have authentication enabled.
+- `--cache-mount` => Cache mount point in Unraid. This is used to additionally filter for only torrents that exists on the cache mount. Use this option ONLY if you follow TRaSH Guides folder structure. (For default cache drive set this to `/mnt/cache`)
 
 <!--- ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)-->
 
