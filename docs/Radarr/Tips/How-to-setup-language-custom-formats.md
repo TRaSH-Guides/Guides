@@ -162,11 +162,11 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
 Here we will add special cases that often are related to specific languages.
 example: German Dual Language and/or Multi-language releases
 
-!!! info "In general, Dual/Multi stands for original language (*movies/show original language*) + foreign language(s). Which audio track being used as the first track isn't always known based on the naming."
+!!! info "In general, Dual/Multi in a release title stands for original language (*movies/show original language*) + foreign language(s). Which audio track is used for the first track isn't always known based solely on the naming."
 
 ### Language: German + Original
 
-This Custom Format can be used in several ways:
+This Custom Format can be used in two ways:
 
 - If you **DON'T WANT** your media file to have a German audio track included, add this Custom Format with a score of `-10000`.
 - If you **PREFER** your media file to have a German audio track included, add this Custom Format with a positive score.
