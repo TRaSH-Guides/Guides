@@ -90,7 +90,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 `Settings` => `Switches` => `Queue`
 ![!Switches: Queue](images/sabnzbd-switches-queue.png)
 
-1. If you have good indexers that gets the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.
+1. If you have good indexers that get the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.
 1. When it becomes clear during downloading that too much data is missing, abort the job. and makes sure Sonarr/Radarr gets the notification so it can look for another release.
 1. Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
 1. In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
