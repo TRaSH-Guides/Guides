@@ -44,8 +44,8 @@ Here you setup your download path/location.
 
 !!! info "Starting from 4.3.x+ SABnzbd has a hidden (archive) history."
 
-It's still recommended to use the .nzb Backup Folder its still useful for dupe detection (hash matching) or just need to retry something from the past.
-Default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.
+Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
+The default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.
 
 ------
 
@@ -90,11 +90,11 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 `Settings` => `Switches` => `Queue`
 ![!Switches: Queue](images/sabnzbd-switches-queue.png)
 
-1. If you have really good indexers that get nzb from post not generated then some people might want Propagation delay  set to 5 min. so your not trying to grab a nzb 0 mins from posting and if your not getting it from the same server the poster used you might wrongly have article missing since it hasn't propagated to your server.. or if you use a reseller it may take them longer to get it from their upstream.
-1. When during download it becomes clear that too much data is missing, abort the job. and makes sure Sonarr/Radarr will get a notification and can look for another release.
+1. If you have good indexers that gets the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.
+1. When it becomes clear during downloading that too much data is missing, abort the job. and makes sure Sonarr/Radarr gets the notification so it can look for another release.
 1. Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
 1. In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
-1. This should be set to Default. unless you know what your doing, as if someone has a decent size queue you have sab every 30s sort which could cause spikes in cpu due to it, let alone shuffling jobs around that may be in middle of actions so moving something in front of it could cause that job to take even longer to extract/stall waiting for next update as with sab by default you can only have 3 unpackers going (configurable).
+1. This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 
 ### Post processing
@@ -103,8 +103,8 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ![!Switches: Post-processing](images/sabnzbd-switches-post-processing.png)
 
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
-1. This should be checked off if you have any sort of decent internet. as the amount of time spent to grab pars to use if its needed for verification/repair is trivial to the time that a repair might run to fail to realize it needs more pars to grab the next part then to try again.
-1. Personal choice if you want to enable this option, its usually an easy check and does provide benefit if job didn't have par2 files. Not every release has a par-set or sfv file. but generally speaking if were talking about scene releases things should have both but of course depends on how its posted/how the indexer is generating the nzb if it includes it or what. sfv do get used by others and well a basic crc32 checksum is better than not to know if the file is good. Parsing a sfv file and comparing crc32 checksum for a file takes very little resources. and sure you might say its a waste if your doing stuff with pars because the par checksum/check there would just handle it. but its just one of those options it doesn't do any harm to outweigh the value of scenarios that it could be used when a par-set is missing
+1. This should be set off if you have decent internet. The amount of time spent to grab pars, if needed for verification/repair, is trivial to the time that a repair might run and fail to realize it needs more pars, and grab the next part, then retry.
+1. It is your choice if you want to enable this option. It's usually an easy check and does provide benefits if the job doesn't have par2 files, as not every release has a par-set or SFV file. Generally speaking, if we're talking about scene releases, things should have both but this depends on how it's posted and how the indexer is generating the nzb. SFV is commonly used and a basic crc32 checksum is better not knowing if the file is good. Parsing an SFV file and checking the files' integrities takes very little resources. This may seem redundant given that par's checks would also handle this, however, the ease with which the check is done makes the downside almost non-existent.
 1. Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.
 1. Unpack archives (rar, zip, 7z) within archives.
 1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
