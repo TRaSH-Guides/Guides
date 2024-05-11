@@ -11,13 +11,14 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 - You run dockers and **DON'T** have consistent and well planned paths.
 
 !!! note
+
     If you run dockers it would be smarter to fix the problem at the source of what's causing the actual issue.
 
     - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
     - [TRaSH Guides](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## How do I recognize that I need remote path mappings
 
@@ -41,7 +42,7 @@ The following error could also mean that you need remote path mappings:
 
 So looking at these screenshot it seems you need to make use of remote path mappings.
 
-------
+---
 
 ## How do I setup remote path mappings
 
@@ -105,4 +106,3 @@ The final result will look something like this:
 After these changes the file should be able to be imported by Radarr.
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

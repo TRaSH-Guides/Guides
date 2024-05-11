@@ -32,6 +32,6 @@ Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/
 
 {! include-markdown "./docker-tree-media.md" !}
 
-------
+---
 
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside the applications.**

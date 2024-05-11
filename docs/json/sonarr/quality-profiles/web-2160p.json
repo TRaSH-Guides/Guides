@@ -8,21 +8,37 @@
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "SDTV", "allowed": false },
-    { "name": "WEB 480p", "allowed": false, "items": ["WEBDL-480p", "WEBRip-480p"] },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
     { "name": "DVD", "allowed": false },
     { "name": "Bluray-480p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
-    { "name": "WEB 720p", "allowed": false, "items": ["WEBDL-720p", "WEBRip-720p"] },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
     { "name": "Bluray-720p", "allowed": false },
-    { "name": "WEB 1080p", "allowed": false, "items": ["WEBDL-1080p", "WEBRip-1080p"] },
+    {
+      "name": "WEB 1080p",
+      "allowed": false,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
     { "name": "Bluray-1080p", "allowed": false },
     { "name": "Bluray-1080p Remux", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     { "name": "Bluray-2160p", "allowed": false },
     { "name": "Bluray-2160p Remux", "allowed": false },
-    { "name": "WEB 2160p", "allowed": true, "items": ["WEBDL-2160p", "WEBRip-2160p"] }
+    {
+      "name": "WEB 2160p",
+      "allowed": true,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    }
   ],
   "formatItems": {
     "DV HDR10Plus": "2b239ed870daba8126a53bd5dc8dc1c8",

@@ -18,22 +18,22 @@ storage
 │  │   ├── books
 │  │   └── tv
 │  └── usenet
-│       ├── movies
-│       ├── music
-│       ├── books
-│       └── tv
+│      ├── movies
+│      ├── music
+│      ├── books
+│      └── tv
 └── medialibrary
-     ├── movies
-     ├── music
-     ├── books
-     └── tv
+    ├── movies
+    ├── music
+    ├── books
+    └── tv
 ```
 
 ## Changes to the .env
 
 To accomplish this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
 
-``` yaml
+```yaml
 # Global Settings
 COMPOSE_HTTP_TIMEOUT=60
 DOCKERCONFDIR=~/.config/appdata
@@ -57,7 +57,7 @@ When that's all set then you will need to change the paths you're going to use i
 
 `/books` => `/storage/medialibrary/books`
 
-`/comics`  => `/storage/medialibrary/comics`
+`/comics` => `/storage/medialibrary/comics`
 
 `/movies` => `/storage/medialibrary/movies`
 
@@ -172,4 +172,3 @@ When that's all set then you will need to change the paths you're going to use i
     ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

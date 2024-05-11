@@ -1,4 +1,5 @@
 ??? abstract "Misc - [Click to show/hide]"
+
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ sonarr['cf']['repack-proper']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) | {{ sonarr['cf']['repack-proper']['trash_scores']['default'] }} | {{ sonarr['cf']['repack-proper']['trash_id'] }} |

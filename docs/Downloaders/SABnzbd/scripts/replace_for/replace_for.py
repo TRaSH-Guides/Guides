@@ -20,23 +20,32 @@ import os
 import os.path
 
 try:
-    (scriptname, directory, orgnzbname, jobname, reportnumber, category, group, postprocstatus, url) = sys.argv
+    (
+        scriptname,
+        directory,
+        orgnzbname,
+        jobname,
+        reportnumber,
+        category,
+        group,
+        postprocstatus,
+        url,
+    ) = sys.argv
 except:
     print("No commandline parameters found")
-    sys.exit(1)    # exit with 1 causes SABnzbd to ignore the output of this script
+    sys.exit(1)  # exit with 1 causes SABnzbd to ignore the output of this script
 
 files = os.listdir(directory)
 
 for src in files:
-    if src.find("_") !=-1:
-        dst = src.replace('_', '.')
-        os.rename (os.path.join(directory,src),os.path.join(directory,dst) )
-        print(src, "renamed to ",dst)
+    if src.find("_") != -1:
+        dst = src.replace("_", ".")
+        os.rename(os.path.join(directory, src), os.path.join(directory, dst))
+        print(src, "renamed to ", dst)
 
 print()
 print()
-print() 
+print()
 print()
 # 0 means OK
 sys.exit(0)
-

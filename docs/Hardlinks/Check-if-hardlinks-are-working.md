@@ -4,9 +4,10 @@ You've followed the guide step by step but still want to check if hardlinks are 
 
 You can use 3 options to check if you got working hardlinks.
 
-*All methods require you to login to your terminal with PuTTY or similar software.*
+_All methods require you to login to your terminal with PuTTY or similar software._
 
 !!! warning
+
     You can't create hard links for directories :bangbang:
 
     You can't cross file systems :bangbang:
@@ -44,7 +45,6 @@ You will get a listing of all your files and on the left side you will see a cou
 This way requires a bit more work.
 
 - In the terminal type: `stat /path/to/your/download/location/file.mkv`
-
 - In the terminal type: `stat /path/to/your/media/location/file.mkv`
 
 You will get 2 results you can use to compare several things.
@@ -65,6 +65,7 @@ This will reveal the inode of your file on the left side of the file.
 - In your terminal type: `find /mnt/user/data/ -inum ###` or `find . -inum ###` if you're in your root folder.
 
 !!! note ""
+
     `###` = Your inode number on the left of the file you found.
 
 ![!hardlinks inode](images/hardlinks-inode.png)

@@ -6,13 +6,14 @@
   "trash_regex": "https://regex101.com/r/SsIWo3/1",
   "name": "Opus",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
+  "specifications": [
+    {
       "name": "Opus",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-          "value": "\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))"
+        "value": "\\bOPUS(\\b|\\d)(?!.*[ ._-](\\d{3,4}p))"
       }
     },
     {
@@ -23,5 +24,6 @@
       "fields": {
         "value": "OPUS"
       }
-  }]
+    }
+  ]
 }

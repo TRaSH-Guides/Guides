@@ -1,16 +1,15 @@
 {
-    "trash_id": "84f0acbda9c0c9de783894fb66df25aa",
-    "name": "FanSUB",
-    "specifications": [
-      {
-        "name": "FanSUB",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": true,
-        "fields": {
-          "value": "\\b(FanSUB)\\b"
-        }
+  "trash_id": "84f0acbda9c0c9de783894fb66df25aa",
+  "name": "FanSUB",
+  "specifications": [
+    {
+      "name": "FanSUB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(FanSUB)\\b"
       }
-    ]
-  }
-
+    }
+  ]
+}

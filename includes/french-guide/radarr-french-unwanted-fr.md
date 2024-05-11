@@ -1,4 +1,5 @@
 ??? abstract "Indésirable - [Cliquer pour afficher/masquer]"
+
     | Formats Personnalisés                                                                                   |                           Score                            | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------: | ------------------------------------------- |
     | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)           |  {{ radarr['cf']['br-disk']['trash_scores']['default'] }}  | {{ radarr['cf']['br-disk']['trash_id'] }}   |
@@ -7,7 +8,7 @@
     | [{{ radarr['cf']['french-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-lq)           | {{ radarr['cf']['french-lq']['trash_scores']['default'] }} | {{ radarr['cf']['french-lq']['trash_id'] }} |
     | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ radarr['cf']['x265-hd']['trash_scores']['default'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}   |
 
-    ------
+    ---
 
     Description et objectifs
 

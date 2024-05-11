@@ -1,4 +1,5 @@
 ??? abstract "General Streaming Services (UHD) - [Click to show/hide]"
+
     | Custom Format                                                                                                                   |                                Score                                 | Trash ID                                              |
     | ------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------: | ----------------------------------------------------- |
     | [{{ sonarr['cf']['amzn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#amzn)                                         |        {{ sonarr['cf']['amzn']['trash_scores']['default'] }}         | {{ sonarr['cf']['amzn']['trash_id'] }}                |
@@ -20,6 +21,7 @@
     | :warning: [{{ sonarr['cf']['uhd-streaming-cut']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#uhd-streaming-cut)     |  {{ sonarr['cf']['uhd-streaming-cut']['trash_scores']['default'] }}  | {{ sonarr['cf']['uhd-streaming-cut']['trash_id'] }}   |
 
     !!! warning "UHD Streaming Boost and UHD Streaming Cut Custom Formats"
+
     Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.
 
     These two custom formats must be included in your profile for UHD releases to be scored correctly.

@@ -1,4 +1,5 @@
 ??? abstract "General Streaming Services - [Click to show/hide]"
+
     | Custom Format                                                                               |                         Score                          | Trash ID                                 |
     | ------------------------------------------------------------------------------------------- | :----------------------------------------------------: | ---------------------------------------- |
     | [{{ radarr['cf']['amzn']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#amzn)     |                           0                            | {{ radarr['cf']['amzn']['trash_id'] }}   |
@@ -16,7 +17,8 @@
     | [{{ radarr['cf']['pcok']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#pcok)     |                           0                            | {{ radarr['cf']['pcok']['trash_id'] }}   |
     | [{{ radarr['cf']['stan']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#stan)     |                           0                            | {{ radarr['cf']['stan']['trash_id'] }}   |
 
-    ------
+    ---
+
     Breakdown and Why
 
     - The reason why these Custom Formats have a score of `0` is because they are mainly used for the naming scheme and other variables should decide for movies if a certain release if preferred.
