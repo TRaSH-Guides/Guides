@@ -21,20 +21,17 @@
     For example `/<path_to_data>/data`, or even `/data`.
 
 {! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
-<!-- --8<-- "includes/hardlinks/folder-structure.md" -->
 
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
 {! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-docker.md" !}
-<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
 
 {! include-markdown "../../../includes/hardlinks/permissions.md" !}
-<!-- --8<-- "includes/hardlinks/permissions.md" -->
 
 ## Docker-compose Example
 
 !!! example ""
+
     This is a docker-compose example based on a default Ubuntu install.
 
     The storage location used for the host is actually the same as in the container to make it easier to understand in this case `/data`.
@@ -48,7 +45,5 @@
     ```
 
 {! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
-<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

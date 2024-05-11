@@ -11,10 +11,8 @@ To accomplish this you will need to merge the qualities with each other.
 Here you will see the current logic so you understand how the possible downloads are compared.
 
 {! include-markdown "../../../includes/merge-quality/radarr-current-logic.md" !}
-<!-- --8<-- "includes/merge-quality/radarr-current-logic.md" -->
 
 {! include-markdown "../../../includes/merge-quality/sonarr-current-logic.md" !}
-<!-- --8<-- "includes/merge-quality/sonarr-current-logic.md" -->
 
 ## Merge the Qualities
 
@@ -35,4 +33,3 @@ To merge them you need to click on Edit Groups.
 When done Sonarr/Radarr upgrades will be handled via Preferred Words / Custom Formats.
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

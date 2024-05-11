@@ -9,7 +9,7 @@ This is a program used to manage your qBittorrent instance such as:
 - Tag torrents based on tracker URL and set seed goals/limit upload speed by tag (only tag torrents that have no tags)
 - Update categories based on save directory
 - Remove unregistered torrents (delete data & torrent if it is not being cross-seeded, otherwise it will just remove the torrent)
-- Automatically add cross-seed torrents in paused state. *Note: cross-seed now allows for torrent injections directly to qBit, making this feature obsolete.*
+- Automatically add cross-seed torrents in paused state. _Note: cross-seed now allows for torrent injections directly to qBit, making this feature obsolete._
 - Recheck paused torrents sorted by lowest size and resume if completed
 - Remove orphaned files from your root directory that are not referenced by qBittorrent
 - Tag any torrents that have no hard links and allows optional cleanup to delete these torrents and contents based on maximum ratio and/or time seeded
@@ -17,9 +17,9 @@ This is a program used to manage your qBittorrent instance such as:
 - Built-in scheduler to run the script every x minutes. (Can use --run command to run without the scheduler)
 - Webhook notifications with Notifiarr and Apprise API integration.
 
-[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
+[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## qBitrr
 
@@ -29,14 +29,14 @@ Features
 
 - Monitor qBit for Stalled/bad entries and delete them then blacklist them on Arrs (Option to also trigger a re-search action).
 - Monitor qBit for completed entries and tell the appropriate Arr instance to import it:
-   - `qbitrr DownloadedMoviesScan` for Radarr
-   - `qbitrr DownloadedEpisodesScan` for Sonarr
+    - `qbitrr DownloadedMoviesScan` for Radarr
+    - `qbitrr DownloadedEpisodesScan` for Sonarr
 - Skip files in qBit entries by extension, folder or regex.
 - Monitor completed folder and clean it up.
-- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg){:target="_blank" rel="noopener noreferrer"} to ensure downloaded entries are valid media.
+- Usage of [ffprobe](https://github.com/FFmpeg/FFmpeg){:target="\_blank" rel="noopener noreferrer"} to ensure downloaded entries are valid media.
 - Trigger periodic Rss Syncs on the appropriate Arr instances.
 - Trigger Queue update on appropriate Arr instances.
-- Search requests from [Overseerr](https://github.com/sct/overseerr){:target="_blank" rel="noopener noreferrer"} or [Ombi](https://github.com/Ombi-app/Ombi){:target="_blank" rel="noopener noreferrer"}.
+- Search requests from [Overseerr](https://github.com/sct/overseerr){:target="\_blank" rel="noopener noreferrer"} or [Ombi](https://github.com/Ombi-app/Ombi){:target="\_blank" rel="noopener noreferrer"}.
 - Auto add/remove trackers
 - Set per tracker values
 - **Sonarr v4 support**
@@ -47,9 +47,9 @@ Features
 - Optionally searches year by year is ascending or descending order (config option available)
 - Search for CF Score unmet and cancel torrents base on CF Score or Quality unmet search
 
-[qBitrr](https://github.com/Feramance/qBitrr){:target="_blank" rel="noopener noreferrer"}
+[qBitrr](https://github.com/Feramance/qBitrr){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## qbittorrent-cli
 
@@ -60,17 +60,17 @@ A cli to manage qBittorrent. Add torrents, reannounce and import from other clie
 - Set limits on how many simultaneously active downloads are allowed
 - Import torrents with state from Deluge and rTorrent
 
-[qbittorrent-cli](https://github.com/ludviglundgren/qbittorrent-cli){:target="_blank" rel="noopener noreferrer"}
+[qbittorrent-cli](https://github.com/ludviglundgren/qbittorrent-cli){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## qbittools
 
 qbittools is a feature rich CLI for the management of torrents in qBittorrent.
 
-[qbittools](https://gitlab.com/AlexKM/qbittools){:target="_blank" rel="noopener noreferrer"}
+[qbittools](https://gitlab.com/AlexKM/qbittools){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## A Dark but not black qBittorrent WebUI
 
@@ -82,9 +82,9 @@ A darker theme for qBittorrent WebUI (made with the help of the Walkerservers co
 
 ![!Example](https://raw.githubusercontent.com/brettpetch/nightwalker/main/preview.png)
 
-[Nightwalker](https://github.com/brettpetch/nightwalker){:target="_blank" rel="noopener noreferrer"}
+[Nightwalker](https://github.com/brettpetch/nightwalker){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## cross-seed
 
@@ -95,11 +95,10 @@ Run cross-seed 24/7 to:
 - Search for cross-seeds as soon as new torrents are finished downloading
 - Race starting at 100% before the uploader even joins.
 
-[![Discord Support](https://img.shields.io/discord/880949701845872672?style=flat-square&color=4051B5&logo=discord)](https://discord.gg/jpbUFzS5Wb){:target="_blank" rel="noopener noreferrer"}
-[![Github](https://img.shields.io/github/v/release/mmgoodnow/cross-seed?color=4051B5&display_name=tag&label=Version&logo=github)](https://github.com/mmgoodnow/cross-seed){:target="_blank" rel="noopener noreferrer"}
-[![Website](https://img.shields.io/website?label=Website&url=https%3A%2F%2Fwww.cross-seed.org%2F)](https://www.cross-seed.org/){:target="_blank" rel="noopener noreferrer"}
+[![Discord Support](https://img.shields.io/discord/880949701845872672?style=flat-square&color=4051B5&logo=discord)](https://discord.gg/jpbUFzS5Wb){:target="\_blank" rel="noopener noreferrer"}
+[![Github](https://img.shields.io/github/v/release/mmgoodnow/cross-seed?color=4051B5&display_name=tag&label=Version&logo=github)](https://github.com/mmgoodnow/cross-seed){:target="\_blank" rel="noopener noreferrer"}
+[![Website](https://img.shields.io/website?label=Website&url=https%3A%2F%2Fwww.cross-seed.org%2F)](https://www.cross-seed.org/){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

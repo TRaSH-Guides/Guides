@@ -1,18 +1,18 @@
 # SABnzbd - Basic Setup
 
 {! include-markdown "../../../includes/downloaders/basic-setup.md" !}
-<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
-------
+---
 
 !!! Note
+
     Settings that aren't covered means you can change them to your own liking or just leave them on default.
 
     **I also recommend to enable the `Advanced Settings` on the top right.**
 
 ## General
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/general){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/general){:target="\_blank" rel="noopener noreferrer"}
 
 ### Tuning
 
@@ -21,11 +21,11 @@
 
 I recommend setting a sane maximum speed and then limiting below that, to keep your internet connection happy. You can use `Settings` => `Scheduling` to toggle the limit on and off based on time, slowing it down while your family is using the internet and speeding it up at night when they're not.
 
-------
+---
 
 ## Folders
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/folders){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/folders){:target="\_blank" rel="noopener noreferrer"}
 
 ### User Folders
 
@@ -35,7 +35,6 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 Here you setup your download path/location.
 
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
-<!-- --8<-- "includes/downloaders/warning-path-location.md" -->
 
 ### System Folders
 
@@ -44,16 +43,17 @@ Here you setup your download path/location.
 
 I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.
 
-------
+---
 
 ## Servers
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/servers){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/servers){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
 
 !!! info ""
+
     USP = Usenet Service Provider
 
 1. Server description.
@@ -66,21 +66,21 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 1. How long the articles are stored on the news server.
 1. For unreliable servers, will be ignored longer in case of failures
 
-------
+---
 
 ## Categories
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/categories){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/categories){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings`=> `Categories`
 
-Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/){:target="_blank" rel="noopener noreferrer"}
+Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SABnzbd/Paths-and-Categories/){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## Switches
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/switches){:target="_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/switches){:target="\_blank" rel="noopener noreferrer"}
 
 ### Queue
 
@@ -105,7 +105,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 1. Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.
 1. Helps with de-obfuscation especially invalid file extensions
 
-------
+---
 
 ## Sorting
 
@@ -116,7 +116,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.0/special){:target="_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.0/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
@@ -137,7 +137,7 @@ Example: `sabnzbd.domain.tld, <container name >`
 
 ![!SABnzbd: host_whitelist (  )](images/sabnzbd-special-host-whitelist.png)
 
-------
+---
 
 ## Recommended Sonarr/Radarr Settings
 
@@ -174,9 +174,8 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
 
-------
+---
 
-<sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
+<sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

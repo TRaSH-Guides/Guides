@@ -13,9 +13,7 @@
     },
     {
       "score": 90,
-      "terms": [
-        "/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
-      ]
+      "terms": ["/\\b((?<!hbo[ ._-])max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"]
     },
     {
       "score": 80,
@@ -26,9 +24,7 @@
     },
     {
       "score": 70,
-      "terms": [
-        "/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"
-      ]
+      "terms": ["/\\b(amzn|amazon)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)/i"]
     },
     {
       "score": 60,

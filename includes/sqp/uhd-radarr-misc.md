@@ -1,4 +1,5 @@
 ??? abstract "Misc - [Click to show/hide]"
+
     | Custom Format                                                                                            |                                  Score                                  | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['repack-proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repackproper) |     {{ radarr['cf']['repack-proper']['trash_scores']['default'] }}      | {{ radarr['cf']['repack-proper']['trash_id'] }} |
@@ -7,7 +8,8 @@
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"
 
-    ------
+    ---
+
     Breakdown and Why
 
     - `x264` has a score of `-10000` because we only want the HDR/DV versions of the `WEBDL-1080p`

@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-      "value": "\\bVP9\\b"
+        "value": "\\bVP9\\b"
       }
     }
   ]

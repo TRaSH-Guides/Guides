@@ -123,6 +123,6 @@
 
     ![rtorrent-settings-autotools](images/rtorrent-settings-autotools.png)
 
-------
+---
 
-Big Thanks to [fryfrog](https://github.com/fryfrog){:target="_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/docker-guide){:target="_blank" rel="noopener noreferrer"} that I used as basis for this guide.
+Big Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/docker-guide){:target="\_blank" rel="noopener noreferrer"} that I used as basis for this guide.

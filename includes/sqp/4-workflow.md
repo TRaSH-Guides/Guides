@@ -7,7 +7,7 @@
     - When the 4k WEB-DL is released it will download the 4k WEB-DL. (streaming services)
     - When the IMAX-E is released it will upgrade to the IMAX-E. (*optional, see below*)
 
-    ------
+    ---
 
     *Possible Variables*
 

@@ -48,6 +48,6 @@ Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/
 
 `Host Path:` => `/volume1/data/media/`
 
-------
+---
 
 **Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside the applications.**

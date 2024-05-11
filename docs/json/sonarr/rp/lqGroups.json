@@ -3,11 +3,13 @@
   "trash_id": "EBC725268D687D588A20CBC5F97E538B",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [{
-    "score": -10000,
-    "terms": [
-      "/(-BRiNK|-CHX|-CTFOH|-d3g|-EVO|-FGT|-GHOSTS|-HiQVE|-iNTENSO|JFF|MeGusta|-NERO|nhanc3|Pahe\\.ph|Pahe\\.in|Pahe|PSA|TBS|-TG|-VIDEOHOLE|-worldmkv|-XLF|-Zero00)\\b/i"
-    ]
-  }],
+  "preferred": [
+    {
+      "score": -10000,
+      "terms": [
+        "/(-BRiNK|-CHX|-CTFOH|-d3g|-EVO|-FGT|-GHOSTS|-HiQVE|-iNTENSO|JFF|MeGusta|-NERO|nhanc3|Pahe\\.ph|Pahe\\.in|Pahe|PSA|TBS|-TG|-VIDEOHOLE|-worldmkv|-XLF|-Zero00)\\b/i"
+      ]
+    }
+  ],
   "ignored": []
 }

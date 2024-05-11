@@ -33,7 +33,7 @@ Click on `Enabled`
         **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Sonarr instance. Default is 8989.
-1. Sonarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /sonarr).
+1. Sonarr uses the Base URL _ONLY_ if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /sonarr).
 
     !!! info
 
@@ -125,7 +125,7 @@ Click on `Enabled`
         **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Radarr instance. Default is 7878.
-1. Radarr uses the Base URL *ONLY* if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /radarr).
+1. Radarr uses the Base URL _ONLY_ if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /radarr).
 
     !!! info
 
@@ -224,7 +224,7 @@ Select `Add New Profile`
 1. How you want to name your language profile.
 1. Click on `Add` to add the languages you enabled earlier in [Subtitle Language](#subtitles-language).
 1. Select the languages you want to enable for your profile (Including the optional settings).
-    - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="_blank" rel="noopener noreferrer"}
+    - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="\_blank" rel="noopener noreferrer"}
     - HI => Hearing Impaired
     - Exclude Audio => Exclude if matching audio
 1. Optional select the cutoff where you want Bazarr to stop downloading other languages.
@@ -297,7 +297,7 @@ Here we will configure some extra settings for your subtitles
 
 Here you can select which Anti-Captcha provider you want to use.
 
-[Why (or) do I need the Anti-Captcha ?](https://wiki.bazarr.media/Troubleshooting/FAQ/#why-or-do-i-need-the-anti-captcha){:target="_blank" rel="noopener noreferrer"}
+[Why (or) do I need the Anti-Captcha ?](https://wiki.bazarr.media/Troubleshooting/FAQ/#why-or-do-i-need-the-anti-captcha){:target="\_blank" rel="noopener noreferrer"}
 
 !!! tip
 
@@ -309,7 +309,7 @@ Here you can select which Anti-Captcha provider you want to use.
 
 1. When searching for subtitles, Bazarr will search less frequently to limit calls to providers.
 1. Search multiple providers at once (Don't choose this on low powered devices).
-1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles){:target="_blank" rel="noopener noreferrer"}
+1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles){:target="\_blank" rel="noopener noreferrer"}
 
 ### Automatic Subtitles Synchronization
 
@@ -320,6 +320,7 @@ Enable this option for automatic subtitles synchronization.
 !!! danger "Don't forget to save your settings!!!"
 
     ![Save](images/qs-save.png)
+
 ---
 
 Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
@@ -332,5 +333,5 @@ Now wait until Bazarr gets all the info needed from Sonarr/Radarr.
 
 ---
 
-If you still have questions please check the [Troubleshooting](https://wiki.bazarr.media/Troubleshooting/Asking-for-help-or-report-a-problem/){:target="_blank" rel="noopener noreferrer"} section in the wiki.
-For more info about the other settings check the [Settings](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"} wiki.
+If you still have questions please check the [Troubleshooting](https://wiki.bazarr.media/Troubleshooting/Asking-for-help-or-report-a-problem/){:target="\_blank" rel="noopener noreferrer"} section in the wiki.
+For more info about the other settings check the [Settings](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="\_blank" rel="noopener noreferrer"} wiki.

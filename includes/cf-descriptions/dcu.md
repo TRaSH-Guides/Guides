@@ -1,6 +1,6 @@
 **DC Universe (streaming service)**<br>
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+[From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/DC_Universe_(streaming_service)>){:target="\_blank" rel="noopener noreferrer"}
 
 DC Universe was an American subscription video-on-demand (SVOD) and digital comics service operated by DC Entertainment and Warner Bros. Digital Networks, both divisions of WarnerMedia. Launched on September 15, 2018, the service featured a streaming library of animated series and films based on DC Comics properties, new original television series adapted from DC properties, as well as a rotating back catalogue of DC Comics publications, and online community features. In 2020.
 

@@ -8,13 +8,13 @@ data
 ├── usenet
 │   ├── incomplete
 │   └── complete
-│        ├── books
-│        ├── movies
-│        ├── music
-│        └── tv
+│       ├── books
+│       ├── movies
+│       ├── music
+│       └── tv
 └── media
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    ├── books
+    ├── movies
+    ├── music
+    └── tv
 ```

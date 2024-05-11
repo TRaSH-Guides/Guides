@@ -1,17 +1,17 @@
 {
   "folder": {
-      "default": "{Movie CleanTitle} ({Release Year})",
-      "plex": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
-      "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
-      "jellyfin": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]"
+    "default": "{Movie CleanTitle} ({Release Year})",
+    "plex": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
+    "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
+    "jellyfin": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]"
   },
   "file": {
-      "default": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
-      "emby": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
-      "jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
-      "anime": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
-      "anime-emby": "{Movie CleanTitle} {(Release Year)} - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
-      "anime-jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
-      "original": "{Original Title}"
-    }
+    "default": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "emby": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "anime": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "anime-emby": "{Movie CleanTitle} {(Release Year)} - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "anime-jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "original": "{Original Title}"
+  }
 }

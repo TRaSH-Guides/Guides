@@ -17,11 +17,19 @@
     { "name": "SDTV", "allowed": false },
     { "name": "DVD", "allowed": false },
     { "name": "DVD-R", "allowed": false },
-    { "name": "WEB 480p", "allowed": false, "items": ["WEBDL-480p", "WEBRip-480p"] },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
     { "name": "Bluray-480p", "allowed": false },
     { "name": "Bluray-576p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
-    { "name": "WEB 720p", "allowed": false, "items": ["WEBDL-720p", "WEBRip-720p"] },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
     { "name": "Bluray-720p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
     { "name": "Bluray-1080p", "allowed": false },

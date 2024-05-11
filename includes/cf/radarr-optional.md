@@ -1,4 +1,5 @@
 ??? abstract "Optional - [Click to show/hide]"
+
     | Custom Format                                                                                                       |                              Score                               | Trash ID                                          |
     | ------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       | {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ radarr['cf']['bad-dual-groups']['trash_id'] }} |
@@ -9,7 +10,7 @@
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           |      {{ radarr['cf']['scene']['trash_scores']['default'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: |  {{ radarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}  | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
 
-    ------
+    ---
 
     Breakdown and Why
 

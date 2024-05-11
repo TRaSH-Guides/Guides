@@ -1,6 +1,6 @@
 # Suggested Scoring
 
-You just setup Bazarr and wonder which scoring you should use/setup for your subtitles and sync  ?
+You just setup Bazarr and wonder which scoring you should use/setup for your subtitles and sync ?
 
 I'll going to suggest here a scoring what would work for most common languages, with this scoring 99% of your downloaded subs should be the correct ones for your release.
 
@@ -40,6 +40,7 @@ This score is the minimal score that the subs should match to for your release, 
 This will set the Synchronization Score Threshold, meaning at which score bazarr will sync the subtitles.
 
 !!! info
+
     The synchronization is best effort based on the following.
 
     - it use the embedded subtitles track as reference, if not present.
@@ -52,4 +53,3 @@ This will set the Synchronization Score Threshold, meaning at which score bazarr
     I personally noticed that when setting it to high 98-100 I would actually get subs that are like 1 second to slow/fast.
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

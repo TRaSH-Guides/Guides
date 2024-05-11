@@ -24,46 +24,55 @@ import re
 sys.argv = sys.argv[:9]
 try:
     # Parse the input variables for SABnzbd version >= 4.2.0
-    (scriptname, nzbname, postprocflags, category, script, prio, downloadsize, grouplist) = sys.argv
+    (
+        scriptname,
+        nzbname,
+        postprocflags,
+        category,
+        script,
+        prio,
+        downloadsize,
+        grouplist,
+    ) = sys.argv
 except:
-    sys.exit(1)    # exit with 1 causes SABnzbd to ignore the output of this script
+    sys.exit(1)  # exit with 1 causes SABnzbd to ignore the output of this script
 
 fwp = nzbname
-fwp = re.sub('(?i)-4P$', '', fwp)
-fwp = re.sub('(?i)-4Planet$', '', fwp)
-fwp = re.sub('(?i)-AlternativeToRequested$', '', fwp)
-fwp = re.sub('(?i)-AlteZachen$', '', fwp)
-fwp = re.sub('(?i)-AsRequested$', '', fwp)
-fwp = re.sub('(?i)-AsRequested-xpost$', '', fwp)
-fwp = re.sub('(?i)-BUYMORE$', '', fwp)
-fwp = re.sub('(?i)-Chamele0n$', '', fwp)
-fwp = re.sub('(?i)-GEROV$', '', fwp)
-fwp = re.sub('(?i)-iNC0GNiTO$', '', fwp)
-fwp = re.sub('(?i)-NZBGeek$', '', fwp)
-fwp = re.sub('(?i)-Obfuscated$', '', fwp)
-fwp = re.sub('(?i)-Obfuscation$', '', fwp)
-fwp = re.sub('(?i)-postbot$', '', fwp)
-fwp = re.sub('(?i)-Rakuv[a-z0-9]*$', '', fwp)
-fwp = re.sub('(?i)-RePACKPOST$', '', fwp)
-fwp = re.sub('(?i)-Scrambled$', '', fwp)
-fwp = re.sub('(?i)-WhiteRev$', '', fwp)
-fwp = re.sub('(?i)-WRTEAM$', '', fwp)
-fwp = re.sub('(?i)-CAPTCHA$', '', fwp)
-fwp = re.sub('(?i)-Z0iDS3N$', '', fwp)
-fwp = re.sub('(?i)\[eztv([ ._-]re)?\]$', '', fwp)
-fwp = re.sub('(?i)\[TGx\]$', '', fwp)
-fwp = re.sub('(?i)\[ettv\]$', '', fwp)
-fwp = re.sub('(?i)\[TGx\]-xpost$', '', fwp)
-fwp = re.sub('(?i).mkv-xpost$', '', fwp)
-fwp = re.sub('(?i)-xpost$', '', fwp)
-fwp = re.sub(r'(?i)(-D-Z0N3|\-[^-.\n]*)(\-.{4})?$', r'\1', fwp)
+fwp = re.sub("(?i)-4P$", "", fwp)
+fwp = re.sub("(?i)-4Planet$", "", fwp)
+fwp = re.sub("(?i)-AlternativeToRequested$", "", fwp)
+fwp = re.sub("(?i)-AlteZachen$", "", fwp)
+fwp = re.sub("(?i)-AsRequested$", "", fwp)
+fwp = re.sub("(?i)-AsRequested-xpost$", "", fwp)
+fwp = re.sub("(?i)-BUYMORE$", "", fwp)
+fwp = re.sub("(?i)-Chamele0n$", "", fwp)
+fwp = re.sub("(?i)-GEROV$", "", fwp)
+fwp = re.sub("(?i)-iNC0GNiTO$", "", fwp)
+fwp = re.sub("(?i)-NZBGeek$", "", fwp)
+fwp = re.sub("(?i)-Obfuscated$", "", fwp)
+fwp = re.sub("(?i)-Obfuscation$", "", fwp)
+fwp = re.sub("(?i)-postbot$", "", fwp)
+fwp = re.sub("(?i)-Rakuv[a-z0-9]*$", "", fwp)
+fwp = re.sub("(?i)-RePACKPOST$", "", fwp)
+fwp = re.sub("(?i)-Scrambled$", "", fwp)
+fwp = re.sub("(?i)-WhiteRev$", "", fwp)
+fwp = re.sub("(?i)-WRTEAM$", "", fwp)
+fwp = re.sub("(?i)-CAPTCHA$", "", fwp)
+fwp = re.sub("(?i)-Z0iDS3N$", "", fwp)
+fwp = re.sub("(?i)\[eztv([ ._-]re)?\]$", "", fwp)
+fwp = re.sub("(?i)\[TGx\]$", "", fwp)
+fwp = re.sub("(?i)\[ettv\]$", "", fwp)
+fwp = re.sub("(?i)\[TGx\]-xpost$", "", fwp)
+fwp = re.sub("(?i).mkv-xpost$", "", fwp)
+fwp = re.sub("(?i)-xpost$", "", fwp)
+fwp = re.sub(r"(?i)(-D-Z0N3|\-[^-.\n]*)(\-.{4})?$", r"\1", fwp)
 
-print("1")    # Accept
+print("1")  # Accept
 print(fwp)
 print()
 print()
 print()
-print() 
+print()
 print()
 # 0 means OK
 sys.exit(0)

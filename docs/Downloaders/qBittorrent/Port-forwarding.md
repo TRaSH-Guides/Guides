@@ -1,7 +1,8 @@
 # qBittorrent - Port forwarding
 
 !!! info ""
-    You've followed the [Setup TorGuard for port forwarding](/Misc/How-to-setup-Torguard-for-port-forwarding/){:target="_blank" rel="noopener noreferrer"} and want to know where in your download client you should add the port you've port forwarded.
+
+    You've followed the [Setup TorGuard for port forwarding](/Misc/How-to-setup-Torguard-for-port-forwarding/){:target="\_blank" rel="noopener noreferrer"} and want to know where in your download client you should add the port you've port forwarded.
 
 `Tools` => `Options` => `Connection`
 

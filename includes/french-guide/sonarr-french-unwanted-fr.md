@@ -1,4 +1,5 @@
 ??? abstract "Indésirable - [Cliquer pour afficher/masquer]"
+
     | Formats Personnalisés                                                                                   |                           Score                            | Trash ID                                    |
     | ------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------: | ------------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)           |  {{ sonarr['cf']['br-disk']['trash_scores']['default'] }}  | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
@@ -7,7 +8,7 @@
     | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning: |  {{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}  | {{ sonarr['cf']['x265-hd']['trash_id'] }}   |
     | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)             |  {{ sonarr['cf']['extras']['trash_scores']['default'] }}   | {{ sonarr['cf']['extras']['trash_id'] }}    |
 
-    ------
+    ---
 
     Breakdown and Why
 
@@ -21,6 +22,7 @@
     - **{{ sonarr['cf']['extras']['name'] }}:** Bloque les extras
 
     ??? warning "Type de FanSubs - [Cliquer pour afficher/masquer]"
+
         Ces Formats Personnalisés sont optionnels et permettent de savoir quel type de FanSubs vos versions possèdent. Seul le FastSub n'est pas souhaité car il est souvent fait trop rapidement et reste peu soigné. Si vous ne voulez pas de FanSub non plus, vous devez aussi lui donner un score de {{ sonarr['cf']['fastsub']['trash_scores']['default'] }}.
 
         | Formats Personnalisés                                                                         |                          Score                           | Trash ID                                  |

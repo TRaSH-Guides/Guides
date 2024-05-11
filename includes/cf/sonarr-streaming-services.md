@@ -1,4 +1,5 @@
 ??? abstract "General Streaming Services - [Click to show/hide]"
+
     | Custom Format                                                                               |                          Score                          | Trash ID                                 |
     |---------------------------------------------------------------------------------------------|:-------------------------------------------------------:|------------------------------------------|
     | [{{ sonarr['cf']['amzn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#amzn)     |  {{ sonarr['cf']['amzn']['trash_scores']['default'] }}  | {{ sonarr['cf']['amzn']['trash_id'] }}   |
