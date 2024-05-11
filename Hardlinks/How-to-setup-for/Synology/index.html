@@ -3764,7 +3764,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -3876,25 +3876,24 @@ Save these values for later use.</p>
 ├── usenet
 │   ├── incomplete
 │   └── complete
-│        ├── books
-│        ├── movies
-│        ├── music
-│        └── tv
+│       ├── books
+│       ├── movies
+│       ├── music
+│       └── tv
 └── media
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    ├── books
+    ├── movies
+    ├── music
+    └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
 <p>To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:</p>
 <h3 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h3>
@@ -3951,7 +3950,7 @@ Create these folders with command below, or create them in File Station manually
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT  <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
 <h3 id="changes-and-preparations">Changes and preparations<a class="headerlink" href="#changes-and-preparations" title="Permanent link"></a></h3>
@@ -3974,9 +3973,9 @@ Create these folders with command below, or create them in File Station manually
 <h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link"></a></h4>
 <p>Pullio allows you to automatically update your containers. And send you a notification through various means. We use a Discord Webhook.</p>
 <p>First you need to download Pullio</p>
-<div class="highlight"><pre><span></span><code><span class="w">   </span>sudo<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh&quot;</span><span class="w"> </span>-o<span class="w"> </span>/usr/local/bin/pullio
+<div class="highlight"><pre><span></span><code><span class="w">    </span>sudo<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh&quot;</span><span class="w"> </span>-o<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="w">   </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/pullio
+<div class="highlight"><pre><span></span><code><span class="w">    </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
 <p>For Pullio to do it's job, you will need to create a Scheduled Task in your Task Scheduler that runs for example at 4am at night with <strong>root</strong> privileges.</p>
 <p><code>Control Panel</code> &gt; <code>Task Scheduler</code> &gt; click <code>Create</code> &gt; choose <code>Scheduled task - user defined script</code></p>
@@ -4020,7 +4019,7 @@ If you had previous installed apps, make a backup of their config folders or bac
 <p><strong>If you need help setting up the applications, look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, <a href="#run-the-docker-compose">run the commands from here</a>) again.</p>
+<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, <a href="#run-the-docker-compose">run the commands from here</a> again.</p>
 <p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
 <p>Just don't use the GUI, only for information purposes !!!</p>
 </div>
@@ -4036,10 +4035,8 @@ If you had previous installed apps, make a backup of their config folders or bac
 </ul>
 </details>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
 <!-- BEGIN INCLUDE ../../../includes/support.md -->
-
 <hr />
 <div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
@@ -4047,7 +4044,6 @@ If you had previous installed apps, make a backup of their config folders or bac
 <p><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></p>
 </div>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/support.md" -->
 
 <hr />
 <h2 id="additional-synology-info">Additional Synology Info<a class="headerlink" href="#additional-synology-info" title="Permanent link"></a></h2>
@@ -4061,28 +4057,27 @@ If you had previous installed apps, make a backup of their config folders or bac
 <span class="nv">totalAttempts</span><span class="o">=</span><span class="m">10</span>
 <span class="nv">delay</span><span class="o">=</span><span class="m">15</span>
 
-<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$currentAttempt</span><span class="w"> </span>-lt<span class="w"> </span><span class="nv">$totalAttempts</span><span class="w"> </span><span class="o">]</span>
-<span class="k">do</span>
-<span class="w">  </span><span class="nv">currentAttempt</span><span class="o">=</span><span class="k">$((</span><span class="w"> </span><span class="nv">$currentAttempt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">))</span>
+<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$currentAttempt</span><span class="w"> </span>-lt<span class="w"> </span><span class="nv">$totalAttempts</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="nv">currentAttempt</span><span class="o">=</span><span class="k">$((</span><span class="nv">$currentAttempt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="k">))</span>
 
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Attempt </span><span class="nv">$currentAttempt</span><span class="s2"> of </span><span class="nv">$totalAttempts</span><span class="s2">...&quot;</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Attempt </span><span class="nv">$currentAttempt</span><span class="s2"> of </span><span class="nv">$totalAttempts</span><span class="s2">...&quot;</span>
 
-<span class="w">  </span><span class="nv">result</span><span class="o">=</span><span class="k">$(</span>iptables-save<span class="k">)</span>
+<span class="w">    </span><span class="nv">result</span><span class="o">=</span><span class="k">$(</span>iptables-save<span class="k">)</span>
 
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="nv">$result</span><span class="w"> </span><span class="o">=</span>~<span class="w"> </span><span class="s2">&quot;-A DOCKER -i docker0 -j RETURN&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules found! Modifying...&quot;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="nv">$result</span><span class="w"> </span><span class="o">=</span>~<span class="w"> </span><span class="s2">&quot;-A DOCKER -i docker0 -j RETURN&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules found! Modifying...&quot;</span>
 
-<span class="w">    </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>-j<span class="w"> </span>DOCKER
-<span class="w">    </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>!<span class="w"> </span>--dst<span class="w"> </span><span class="m">127</span>.0.0.0/8<span class="w"> </span>-j<span class="w"> </span>DOCKER
+<span class="w">        </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>-j<span class="w"> </span>DOCKER
+<span class="w">        </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>PREROUTING<span class="w"> </span>-m<span class="w"> </span>addrtype<span class="w"> </span>--dst-type<span class="w"> </span>LOCAL<span class="w"> </span>!<span class="w"> </span>--dst<span class="w"> </span><span class="m">127</span>.0.0.0/8<span class="w"> </span>-j<span class="w"> </span>DOCKER
 
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Done!&quot;</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Done!&quot;</span>
 
-<span class="w">    </span><span class="k">break</span>
-<span class="w">  </span><span class="k">fi</span>
+<span class="w">        </span><span class="k">break</span>
+<span class="w">    </span><span class="k">fi</span>
 
-<span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules not found! Sleeping for </span><span class="nv">$delay</span><span class="s2"> seconds...&quot;</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Docker rules not found! Sleeping for </span><span class="nv">$delay</span><span class="s2"> seconds...&quot;</span>
 
-<span class="w">  </span>sleep<span class="w"> </span><span class="nv">$delay</span>
+<span class="w">    </span>sleep<span class="w"> </span><span class="nv">$delay</span>
 <span class="k">done</span>
 </code></pre></div>
 </details>
@@ -4108,7 +4103,7 @@ If you had previous installed apps, make a backup of their config folders or bac
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 30, 2024 20:47:27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
   </span>
 
     
@@ -4133,12 +4128,18 @@ If you had previous installed apps, make a backup of their config folders or bac
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>

@@ -1,90 +1,90 @@
 {
-    "trash_id": "bef99584217af744e404ed44a33af589",
-    "type": "series",
-    "qualities": [
-        {
-            "quality": "HDTV-720p",
-            "min": 10,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "HDTV-1080p",
-            "min": 15,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBRip-720p",
-            "min": 10,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBDL-720p",
-            "min": 10,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "Bluray-720p",
-            "min": 17.1,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBRip-1080p",
-            "min": 15,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBDL-1080p",
-            "min": 15,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "Bluray-1080p",
-            "min": 50.4,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "Bluray-1080p Remux",
-            "min": 69.1,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "HDTV-2160p",
-            "min": 25,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBRip-2160p",
-            "min": 25,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "WEBDL-2160p",
-            "min": 25,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "Bluray-2160p",
-            "min": 94.6,
-            "preferred": 399,
-            "max": 400
-        },
-        {
-            "quality": "Bluray-2160p Remux",
-            "min": 187.4,
-            "preferred": 399,
-            "max": 400
-        }
-    ]
+  "trash_id": "bef99584217af744e404ed44a33af589",
+  "type": "series",
+  "qualities": [
+    {
+      "quality": "HDTV-720p",
+      "min": 10,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "HDTV-1080p",
+      "min": 15,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBRip-720p",
+      "min": 10,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBDL-720p",
+      "min": 10,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-720p",
+      "min": 17.1,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBRip-1080p",
+      "min": 15,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBDL-1080p",
+      "min": 15,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-1080p",
+      "min": 50.4,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-1080p Remux",
+      "min": 69.1,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "HDTV-2160p",
+      "min": 25,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBRip-2160p",
+      "min": 25,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBDL-2160p",
+      "min": 25,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-2160p",
+      "min": 94.6,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-2160p Remux",
+      "min": 187.4,
+      "preferred": 399,
+      "max": 400
+    }
+  ]
 }

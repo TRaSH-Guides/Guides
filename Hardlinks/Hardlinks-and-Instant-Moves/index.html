@@ -3336,7 +3336,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -3387,19 +3387,16 @@
 <p>[<strong>Long answer</strong>] Hard links are a way for a copy operation to be instant and not consume space for those additional copies.</p>
 <p>Every file is a hard link: some metadata that points at blocks on the file system, <strong>which is why they're restricted to the same file system</strong>. There can be as many metadata files pointing at those blocks as needed and the blocks know how many links point to them. Once the blocks have 0 links, they're considered deleted.</p>
 <p>This means:</p>
-<ul>
-<li>
-<p>You can delete any "copy" w/o impacting the others.</p>
-<p>Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".</p>
-</li>
-<li>
-<p>Space is only regained when all "copies" are deleted.</p>
-</li>
-<li>
-<p>Modifying the file will impact all "copies".</p>
-<p>For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.</p>
-</li>
-</ul>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">delete</span><span class="w"> </span><span class="nb">any</span><span class="w"> </span><span class="s2">&quot;copy&quot;</span><span class="w"> </span><span class="n">w</span><span class="o">/</span><span class="n">o</span><span class="w"> </span><span class="n">impacting</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">others</span><span class="o">.</span>
+
+<span class="w">    </span><span class="n">Your</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">it</span><span class="s1">&#39;s &quot;copy&quot; w/o impacting the library &quot;copy&quot;. The library &quot;copy&quot; can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client &quot;copy&quot;.</span>
+
+<span class="o">-</span><span class="w"> </span><span class="n">Space</span><span class="w"> </span><span class="ow">is</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">regained</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="nb">all</span><span class="w"> </span><span class="s2">&quot;copies&quot;</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">deleted</span><span class="o">.</span>
+
+<span class="o">-</span><span class="w"> </span><span class="n">Modifying</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">impact</span><span class="w"> </span><span class="nb">all</span><span class="w"> </span><span class="s2">&quot;copies&quot;</span><span class="o">.</span>
+
+<span class="w">    </span><span class="n">For</span><span class="w"> </span><span class="n">example</span><span class="p">,</span><span class="w"> </span><span class="n">modifying</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">id3</span><span class="w"> </span><span class="n">tags</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">.</span><span class="n">mp3</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">after</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="nn">would</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="s2">&quot;copy&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">resulting</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">breaking</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">torrent</span><span class="o">.</span>
+</code></pre></div>
 <p><a href="https://en.wikipedia.org/wiki/Hard_link" rel="noopener noreferrer" target="_blank">More info from Wikipedia, the free encyclopedia</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3441,7 +3438,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 26, 2023 16:06:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
   </span>
 
     
@@ -3466,12 +3463,18 @@
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>

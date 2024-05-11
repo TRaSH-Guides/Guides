@@ -3232,7 +3232,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -3289,45 +3289,45 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="c1"># Exit codes used by NZBGet</span>
-<span class="n">POSTPROCESS_SUCCESS</span><span class="o">=</span><span class="mi">93</span>
-<span class="n">POSTPROCESS_ERROR</span><span class="o">=</span><span class="mi">94</span>
-<span class="n">POSTPROCESS_SKIP</span><span class="o">=</span><span class="mi">95</span>
+<span class="n">POSTPROCESS_SUCCESS</span> <span class="o">=</span> <span class="mi">93</span>
+<span class="n">POSTPROCESS_ERROR</span> <span class="o">=</span> <span class="mi">94</span>
+<span class="n">POSTPROCESS_SKIP</span> <span class="o">=</span> <span class="mi">95</span>
 
 <span class="c1"># Check if the script is called from NZBGet 13.0 or later</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="s1">&#39;NZBOP_SCRIPTDIR&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*** NZBGet post-processing script ***&#39;</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This script is supposed to be called from NZBGet (13.0 or later).&#39;</span><span class="p">)</span>
-  <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;NZBOP_SCRIPTDIR&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*** NZBGet post-processing script ***&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This script is supposed to be called from NZBGet (13.0 or later).&quot;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="ow">not</span> <span class="s1">&#39;NZBNP_NZBNAME&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[WARN] Filename not found in environment&#39;</span><span class="p">)</span>
-  <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="s2">&quot;NZBNP_NZBNAME&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[WARN] Filename not found in environment&quot;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBNP_NZBNAME&#39;</span><span class="p">]</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-4P\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-4Planet\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-AsRequested\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-AsRequested-xpost\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-BUYMORE\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-Chamele0n\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-GEROV\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-iNC0GNiTO\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-NZBGeek\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-Obfuscated\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-postbot\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-Rakuv\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-Scrambled\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-WhiteRev\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-xpost\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)\[eztv([ ._-]re)?\]\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)\[TGx\]\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)\[TGx\]-xpost\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)\[ettv\]\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-WRTEAM\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?i)-CAPTCHA\.nzb$&#39;</span><span class="p">,</span> <span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
-<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(\-[^-.\n]*)(\-.</span><span class="si">{4}</span><span class="s1">)?\.nzb$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1.nzb&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBNP_NZBNAME&quot;</span><span class="p">]</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-4P\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-4Planet\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-AsRequested\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-AsRequested-xpost\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-BUYMORE\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-Chamele0n\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-GEROV\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-iNC0GNiTO\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-NZBGeek\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-Obfuscated\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-postbot\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-Rakuv\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-Scrambled\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-WhiteRev\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-xpost\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)\[eztv([ ._-]re)?\]\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)\[TGx\]\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)\[TGx\]-xpost\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)\[ettv\]\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-WRTEAM\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;(?i)-CAPTCHA\.nzb$&quot;</span><span class="p">,</span> <span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
+<span class="n">fwp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\-[^-.\n]*)(\-.</span><span class="si">{4}</span><span class="s2">)?\.nzb$&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;\1.nzb&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">fwp</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[NZB] NZBNAME=&#39;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[NZB] NZBNAME=&quot;</span><span class="p">,</span> <span class="n">fwp</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_SUCCESS</span><span class="p">)</span>
 </code></pre></div>
@@ -3391,51 +3391,73 @@ Released under GNU General Public License v2.0</p>
 <span class="c1"># EXTENSION STUFF</span>
 <span class="c1">############################################################</span>
 
+
 <span class="k">def</span> <span class="nf">do_check</span><span class="p">():</span>
-    <span class="k">if</span> <span class="s1">&#39;NZBOP_SCRIPTDIR&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s2">&quot;NZBOP_SCRIPTDIR&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This script can only be called from NZBGet (11.0 or later).&quot;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBOP_VERSION&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;</span> <span class="s1">&#39;11.0&#39;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] NZBGet Version </span><span class="si">%s</span><span class="s2"> is not supported. Please update NZBGet.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBOP_VERSION&#39;</span><span class="p">])))</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBOP_VERSION&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">&lt;</span> <span class="s2">&quot;11.0&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">&quot;[ERROR] NZBGet Version </span><span class="si">%s</span><span class="s2"> is not supported. Please update NZBGet.&quot;</span>
+            <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBOP_VERSION&quot;</span><span class="p">]))</span>
+        <span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Script triggered from NZBGet Version </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBOP_VERSION&#39;</span><span class="p">])))</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="s2">&quot;Script triggered from NZBGet Version </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBOP_VERSION&quot;</span><span class="p">]))</span>
+    <span class="p">)</span>
 
     <span class="n">status</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="s1">&#39;NZBPP_TOTALSTATUS&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_TOTALSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;SUCCESS&#39;</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Download failed with status </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_STATUS&#39;</span><span class="p">]))</span>
+    <span class="k">if</span> <span class="s2">&quot;NZBPP_TOTALSTATUS&quot;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_TOTALSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;SUCCESS&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="s2">&quot;[ERROR] Download failed with status </span><span class="si">%s</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_STATUS&quot;</span><span class="p">])</span>
+            <span class="p">)</span>
             <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="c1"># Check par status</span>
-        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_PARSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_PARSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;4&#39;</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Par-repair failed, setting status </span><span class="se">\&quot;</span><span class="s2">failed</span><span class="se">\&quot;</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_PARSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_PARSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;4&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[ERROR] Par-repair failed, setting status &quot;failed&quot;.&#39;</span><span class="p">)</span>
             <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span>
 
         <span class="c1"># Check unpack status</span>
-        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_UNPACKSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Unpack failed, setting status </span><span class="se">\&quot;</span><span class="s2">failed</span><span class="se">\&quot;</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_UNPACKSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[ERROR] Unpack failed, setting status &quot;failed&quot;.&#39;</span><span class="p">)</span>
             <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span>
 
-        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_UNPACKSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_PARSTATUS&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_UNPACKSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0&quot;</span>
+            <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_PARSTATUS&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0&quot;</span>
+        <span class="p">):</span>
             <span class="c1"># Unpack was skipped due to nzb-file properties or due to errors during par-check</span>
 
-            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_HEALTH&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Download health is compromised and Par-check/repair disabled or no .par2 files found. &quot;</span> \
-                      <span class="s2">&quot;Setting status </span><span class="se">\&quot;</span><span class="s2">failed</span><span class="se">\&quot;</span><span class="s2">.&quot;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Please check your Par-check/repair settings for future downloads.&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_HEALTH&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="s2">&quot;[ERROR] Download health is compromised and Par-check/repair disabled or no .par2 files found. &quot;</span>
+                    <span class="s1">&#39;Setting status &quot;failed&quot;.&#39;</span>
+                <span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="s2">&quot;[ERROR] Please check your Par-check/repair settings for future downloads.&quot;</span>
+                <span class="p">)</span>
                 <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span>
 
             <span class="k">else</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Par-check/repair disabled or no .par2 files found, and Unpack not required. Health is &quot;</span> \
-                      <span class="s2">&quot;ok so handle as though download successful.&quot;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[WARNING] Please check your Par-check/repair settings for future downloads.&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="s2">&quot;[ERROR] Par-check/repair disabled or no .par2 files found, and Unpack not required. Health is &quot;</span>
+                    <span class="s2">&quot;ok so handle as though download successful.&quot;</span>
+                <span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="s2">&quot;[WARNING] Please check your Par-check/repair settings for future downloads.&quot;</span>
+                <span class="p">)</span>
 
     <span class="c1"># Check if destination directory exists (important for reprocessing of history items)</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_DIRECTORY&#39;</span><span class="p">]):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Nothing to post-process: destination directory&quot;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span>
-            <span class="s1">&#39;NZBPP_DIRECTORY&#39;</span><span class="p">],</span> <span class="s2">&quot;doesn&#39;t exist. Setting status </span><span class="se">\&quot;</span><span class="s2">failed</span><span class="se">\&quot;</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_DIRECTORY&quot;</span><span class="p">]):</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="s2">&quot;[ERROR] Nothing to post-process: destination directory&quot;</span><span class="p">,</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_DIRECTORY&quot;</span><span class="p">],</span>
+            <span class="s1">&#39;doesn</span><span class="se">\&#39;</span><span class="s1">t exist. Setting status &quot;failed&quot;.&#39;</span><span class="p">,</span>
+        <span class="p">)</span>
         <span class="n">status</span> <span class="o">=</span> <span class="mi">1</span>
 
     <span class="c1"># All checks done, now launching the script.</span>
@@ -3446,9 +3468,9 @@ Released under GNU General Public License v2.0</p>
 <span class="k">def</span> <span class="nf">get_file_name</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">file_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
-        <span class="n">extensions</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\.([^.]+)&#39;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
-        <span class="n">ext</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">extensions</span><span class="p">)</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="n">file_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">ext</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">extensions</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\.([^.]+)&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+        <span class="n">ext</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">extensions</span><span class="p">)</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">file_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">ext</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">name</span><span class="p">,</span> <span class="n">ext</span>
     <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
         <span class="k">pass</span>
@@ -3457,10 +3479,10 @@ Released under GNU General Public License v2.0</p>
 
 <span class="k">def</span> <span class="nf">is_file_hash</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
     <span class="n">hash_regexp</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="sa">r</span><span class="s1">&#39;^[a-fA-F0-9]</span><span class="si">{40}</span><span class="s1">$&#39;</span><span class="p">,</span>
-        <span class="sa">r</span><span class="s1">&#39;^[a-fA-F0-9]</span><span class="si">{32}</span><span class="s1">$&#39;</span><span class="p">,</span>
-        <span class="sa">r</span><span class="s1">&#39;^[a-f0-9]</span><span class="si">{128}</span><span class="s1">$&#39;</span><span class="p">,</span>
-        <span class="sa">r</span><span class="s1">&#39;^[a-zA-Z0-9]</span><span class="si">{42}</span><span class="s1">$&#39;</span>
+        <span class="sa">r</span><span class="s2">&quot;^[a-fA-F0-9]</span><span class="si">{40}</span><span class="s2">$&quot;</span><span class="p">,</span>
+        <span class="sa">r</span><span class="s2">&quot;^[a-fA-F0-9]</span><span class="si">{32}</span><span class="s2">$&quot;</span><span class="p">,</span>
+        <span class="sa">r</span><span class="s2">&quot;^[a-f0-9]</span><span class="si">{128}</span><span class="s2">$&quot;</span><span class="p">,</span>
+        <span class="sa">r</span><span class="s2">&quot;^[a-zA-Z0-9]</span><span class="si">{42}</span><span class="s2">$&quot;</span><span class="p">,</span>
     <span class="p">]</span>
     <span class="k">for</span> <span class="nb">hash</span> <span class="ow">in</span> <span class="n">hash_regexp</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="nb">hash</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
@@ -3494,20 +3516,20 @@ Released under GNU General Public License v2.0</p>
 <span class="n">do_check</span><span class="p">()</span>
 
 <span class="c1"># retrieve required variables</span>
-<span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_DIRECTORY&#39;</span><span class="p">])</span>
-<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_NZBFILENAME&#39;</span><span class="p">]</span>
+<span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_DIRECTORY&quot;</span><span class="p">])</span>
+<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_NZBFILENAME&quot;</span><span class="p">]</span>
 <span class="k">if</span> <span class="n">nzb_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Unable to retrieve NZBPP_NZBFILENAME&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">NZBGET_POSTPROCESS_ERROR</span><span class="p">)</span>
-<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">nzb_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.nzb&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">nzb_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.nzb&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] Using </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2"> for hashed filenames&quot;</span> <span class="o">%</span> <span class="n">nzb_name</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] Scanning </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2"> for hashed filenames&quot;</span> <span class="o">%</span> <span class="n">directory</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">((</span><span class="s1">&#39;[INFO] Using &quot;</span><span class="si">%s</span><span class="s1">&quot; for hashed filenames&#39;</span> <span class="o">%</span> <span class="n">nzb_name</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">((</span><span class="s1">&#39;[INFO] Scanning &quot;</span><span class="si">%s</span><span class="s1">&quot; for hashed filenames&#39;</span> <span class="o">%</span> <span class="n">directory</span><span class="p">))</span>
 
 <span class="c1"># scan for files</span>
 <span class="n">found_files</span> <span class="o">=</span> <span class="n">find_files</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">found_files</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] No files were found in </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">directory</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;[INFO] No files were found in &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="n">directory</span><span class="p">))</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">NZBGET_POSTPROCESS_NONE</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] Found </span><span class="si">%d</span><span class="s2"> files to check for hashed filenames&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">found_files</span><span class="p">)))</span>
@@ -3521,14 +3543,21 @@ Released under GNU General Public License v2.0</p>
         <span class="c1"># is this a file hash</span>
         <span class="k">if</span> <span class="n">is_file_hash</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
             <span class="n">new_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_name</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">nzb_name</span><span class="p">,</span> <span class="n">file_ext</span><span class="p">))</span>
-            <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] Moving </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2"> to </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">found_file_path</span><span class="p">,</span> <span class="n">new_file_path</span><span class="p">)))</span>
+            <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;[INFO] Moving &quot;</span><span class="si">%s</span><span class="s1">&quot; to &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">found_file_path</span><span class="p">,</span> <span class="n">new_file_path</span><span class="p">)))</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">found_file_path</span><span class="p">,</span> <span class="n">new_file_path</span><span class="p">)</span>
                 <span class="n">moved_files</span> <span class="o">+=</span> <span class="mi">1</span>
             <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[ERROR] Failed moving </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2"> to </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">found_file_path</span><span class="p">,</span> <span class="n">new_file_path</span><span class="p">)))</span>
+                <span class="nb">print</span><span class="p">(</span>
+                    <span class="p">(</span>
+                        <span class="s1">&#39;[ERROR] Failed moving &quot;</span><span class="si">%s</span><span class="s1">&quot; to &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span>
+                        <span class="o">%</span> <span class="p">(</span><span class="n">found_file_path</span><span class="p">,</span> <span class="n">new_file_path</span><span class="p">)</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;[INFO] Finished processing </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">, moved </span><span class="si">%d</span><span class="s2"> files&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">moved_files</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="p">(</span><span class="s1">&#39;[INFO] Finished processing &quot;</span><span class="si">%s</span><span class="s1">&quot;, moved </span><span class="si">%d</span><span class="s1"> files&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">moved_files</span><span class="p">))</span>
+    <span class="p">)</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">NZBGET_POSTPROCESS_SUCCESS</span><span class="p">)</span>
 </code></pre></div>
@@ -3542,12 +3571,11 @@ Released under GNU General Public License v2.0</p>
 </ul>
 <p>Replaces underscores with dots in downloaded filename to prevent download loops with poorly named releases on some indexers (often HONE releases).</p>
 <p>Install Instructions:</p>
-<ol>
-<li>Copy script to NZBGet's script folder</li>
-<li>Run: <code>sudo chmod +x replace_for.py</code></li>
-<li>In NZBGet go to <code>Settings</code> =&gt; <code>Extension Scripts</code></li>
-<li>Enable <code>replace_for.py</code> in the <code>Extensions</code> setting.</li>
-</ol>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Copy</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">NZBGet</span><span class="s1">&#39;s script folder</span>
+<span class="s1">1. Run: `sudo chmod +x replace_for.py`</span>
+<span class="s1">1. In NZBGet go to `Settings` =&gt; `Extension Scripts`</span>
+<span class="s1">1. Enable `replace_for.py` in the `Extensions` setting.</span>
+</code></pre></div>
 </details>
 <details class="example">
 <summary>Script</summary>
@@ -3575,20 +3603,20 @@ Released under GNU General Public License v2.0</p>
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="c1"># Exit codes used by NZBGet</span>
-<span class="n">POSTPROCESS_SUCCESS</span><span class="o">=</span><span class="mi">93</span>
-<span class="n">POSTPROCESS_ERROR</span><span class="o">=</span><span class="mi">94</span>
-<span class="n">POSTPROCESS_SKIP</span><span class="o">=</span><span class="mi">95</span>
+<span class="n">POSTPROCESS_SUCCESS</span> <span class="o">=</span> <span class="mi">93</span>
+<span class="n">POSTPROCESS_ERROR</span> <span class="o">=</span> <span class="mi">94</span>
+<span class="n">POSTPROCESS_SKIP</span> <span class="o">=</span> <span class="mi">95</span>
 
 
-<span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;NZBPP_DIRECTORY&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Directory used is: &#39;</span><span class="p">,</span><span class="n">directory</span><span class="p">)</span>
+<span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;NZBPP_DIRECTORY&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Directory used is: &quot;</span><span class="p">,</span> <span class="n">directory</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">path</span><span class="p">,</span> <span class="n">currentDirectory</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">directory</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="o">!=-</span><span class="mi">1</span><span class="p">:</span>
-            <span class="n">dst</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
-            <span class="n">os</span><span class="o">.</span><span class="n">rename</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">file</span><span class="p">),</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span> <span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result: &#39;</span><span class="p">,</span><span class="n">file</span><span class="p">,</span><span class="s2">&quot; renamed to &quot;</span><span class="p">,</span><span class="n">dst</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">file</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="n">dst</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">file</span><span class="p">),</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">dst</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result: &quot;</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="s2">&quot; renamed to &quot;</span><span class="p">,</span> <span class="n">dst</span><span class="p">)</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_SUCCESS</span><span class="p">)</span>
 </code></pre></div>
@@ -3639,47 +3667,56 @@ Released under GNU General Public License v2.0</p>
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[ERROR] Python lxml required. Please install with &quot;sudo apt install python-lxml&quot; or &quot;pip install lxml&quot;.&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="s1">&#39;[ERROR] Python lxml required. Please install with &quot;sudo apt install python-lxml&quot; or &quot;pip install lxml&quot;.&#39;</span>
+    <span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
 <span class="n">patterns</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^(?P&lt;prefix&gt;.*\[PRiVATE\]-\[WtFnZb\]-)&#39;</span>
-               <span class="sa">r</span><span class="s1">&#39;\[(?P&lt;total&gt;\d+)\]-\[(?P&lt;segment&gt;\d+)\/(?P&lt;filename&gt;.{3,}?)\]&#39;</span>
-               <span class="sa">r</span><span class="s1">&#39;\s+-\s+&quot;&quot;\s+yEnc\s+&#39;</span><span class="p">,</span>
-               <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span><span class="p">),</span>
-    <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^(?P&lt;prefix&gt;.*\[PRiVATE\]-\[WtFnZb\]-)&#39;</span>
-               <span class="sa">r</span><span class="s1">&#39;\[(?P&lt;filename&gt;.{3,}?)\]-\[(?P&lt;segment&gt;\d+)/(?P&lt;total&gt;\d+)\]&#39;</span>
-               <span class="sa">r</span><span class="s1">&#39;\s+-\s+&quot;&quot;\s+yEnc\s+&#39;</span><span class="p">,</span>
-               <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span><span class="p">))</span>
+    <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;^(?P&lt;prefix&gt;.*\[PRiVATE\]-\[WtFnZb\]-)&quot;</span>
+        <span class="sa">r</span><span class="s2">&quot;\[(?P&lt;total&gt;\d+)\]-\[(?P&lt;segment&gt;\d+)\/(?P&lt;filename&gt;.{3,}?)\]&quot;</span>
+        <span class="sa">r</span><span class="s1">&#39;\s+-\s+&quot;&quot;\s+yEnc\s+&#39;</span><span class="p">,</span>
+        <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+        <span class="sa">r</span><span class="s2">&quot;^(?P&lt;prefix&gt;.*\[PRiVATE\]-\[WtFnZb\]-)&quot;</span>
+        <span class="sa">r</span><span class="s2">&quot;\[(?P&lt;filename&gt;.{3,}?)\]-\[(?P&lt;segment&gt;\d+)/(?P&lt;total&gt;\d+)\]&quot;</span>
+        <span class="sa">r</span><span class="s1">&#39;\s+-\s+&quot;&quot;\s+yEnc\s+&#39;</span><span class="p">,</span>
+        <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
 
-<span class="n">nzb_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;NZBNP_DIRECTORY&#39;</span><span class="p">)</span>
-<span class="n">nzb_filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;NZBNP_FILENAME&#39;</span><span class="p">)</span>
-<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;NZBNP_NZBNAME&#39;</span><span class="p">)</span>
-<span class="n">nzb_file_naming</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;NZBOP_FILENAMING&#39;</span><span class="p">)</span>
+<span class="n">nzb_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;NZBNP_DIRECTORY&quot;</span><span class="p">)</span>
+<span class="n">nzb_filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;NZBNP_FILENAME&quot;</span><span class="p">)</span>
+<span class="n">nzb_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;NZBNP_NZBNAME&quot;</span><span class="p">)</span>
+<span class="n">nzb_file_naming</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;NZBOP_FILENAMING&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">nzb_dir</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">nzb_filename</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">nzb_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please run as NZBGet plugin&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please run as NZBGet plugin&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">nzb_file_naming</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">nzb_file_naming</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s1">&#39;nzb&#39;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[ERROR] NZBGet setting FileNaming (under Download Queue) &#39;</span>
-          <span class="sa">u</span><span class="s1">&#39;must be set to &quot;Nzb&quot; for this extension to work correctly, exiting.&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">nzb_file_naming</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">nzb_file_naming</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;nzb&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="s2">&quot;[ERROR] NZBGet setting FileNaming (under Download Queue) &quot;</span>
+        <span class="s1">&#39;must be set to &quot;Nzb&quot; for this extension to work correctly, exiting.&#39;</span>
+    <span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nzb_dir</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[ERROR] NZB directory doesn</span><span class="se">\&#39;</span><span class="s1">t exist, exiting&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] NZB directory doesn&#39;t exist, exiting&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="ow">not</span> <span class="n">nzb_filename</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.nzb&#39;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[ERROR] </span><span class="si">{}</span><span class="s1"> is not a .nzb file.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb_filename</span><span class="p">))</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">nzb_filename</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.nzb&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] </span><span class="si">{}</span><span class="s2"> is not a .nzb file.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb_filename</span><span class="p">))</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
 <span class="n">nzb</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">nzb_dir</span><span class="p">,</span> <span class="n">nzb_filename</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nzb</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[ERROR] </span><span class="si">{nzb}</span><span class="s1"> doesn</span><span class="se">\&#39;</span><span class="s1">t exist, exiting&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="o">=</span><span class="n">nzb</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] </span><span class="si">{nzb}</span><span class="s2"> doesn&#39;t exist, exiting&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="o">=</span><span class="n">nzb</span><span class="p">))</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
 
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
     <span class="n">tree</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
 
 <span class="n">changed</span> <span class="o">=</span> <span class="kc">False</span>
@@ -3687,75 +3724,78 @@ Released under GNU General Public License v2.0</p>
 <span class="n">totals</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 <span class="n">filenames</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 
-<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">getiterator</span><span class="p">(</span><span class="s1">&#39;{http://www.newzbin.com/DTD/2003/nzb}file&#39;</span><span class="p">):</span>
-    <span class="n">subject</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;subject&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">getiterator</span><span class="p">(</span><span class="s2">&quot;{http://www.newzbin.com/DTD/2003/nzb}file&quot;</span><span class="p">):</span>
+    <span class="n">subject</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;subject&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">subject</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[DETAIL] No subject in &lt;file&gt;, skipping&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[DETAIL] No subject in &lt;file&gt;, skipping&quot;</span><span class="p">)</span>
         <span class="k">continue</span>
     <span class="n">file_count</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">subject</span><span class="p">)</span> <span class="k">for</span> <span class="n">pattern</span> <span class="ow">in</span> <span class="n">patterns</span><span class="p">]</span>
     <span class="n">matched</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">result</span> <span class="k">if</span> <span class="n">m</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">matched</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[INFO] No pattern matching subject, exiting.&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[INFO] No pattern matching subject, exiting.&quot;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_NONE</span><span class="p">)</span>
     <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">matched</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[ERROR] Multiple patterns matched, exiting.&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[ERROR] Multiple patterns matched, exiting.&quot;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_ERROR</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">match</span> <span class="o">=</span> <span class="n">matched</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">groupdict</span><span class="p">()</span>
 
-    <span class="k">if</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.par2&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[INFO] par2 exists, exiting&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.par2&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[INFO] par2 exists, exiting&quot;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_NONE</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;segment&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[DETAIL] Segment index is greater then total, skipping&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;segment&quot;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;total&quot;</span><span class="p">]):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[DETAIL] Segment index is greater then total, skipping&quot;</span><span class="p">)</span>
         <span class="k">continue</span>
 
     <span class="c1"># NZBGet subject parsing changes when duplicate filenames are present</span>
     <span class="c1"># prefix duplicates to avoid that</span>
-    <span class="k">if</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
-        <span class="k">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">.</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_count</span><span class="p">,</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
+        <span class="k">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_count</span><span class="p">,</span> <span class="n">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">])</span>
 
-    <span class="n">filenames</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">])</span>
+    <span class="n">filenames</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">])</span>
 
-    <span class="n">s</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;WtFnZb &quot;</span><span class="si">{filename}</span><span class="s1">&quot; yEnc (</span><span class="si">{segment}</span><span class="s1">/</span><span class="si">{total}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">],</span>
-        <span class="n">segment</span> <span class="o">=</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;segment&#39;</span><span class="p">],</span>
-        <span class="n">total</span> <span class="o">=</span> <span class="n">match</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">])</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;WtFnZb &quot;</span><span class="si">{filename}</span><span class="s1">&quot; yEnc (</span><span class="si">{segment}</span><span class="s1">/</span><span class="si">{total}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">filename</span><span class="o">=</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;filename&quot;</span><span class="p">],</span> <span class="n">segment</span><span class="o">=</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;segment&quot;</span><span class="p">],</span> <span class="n">total</span><span class="o">=</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;total&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[INFO] New subject </span><span class="si">{subject}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subject</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;ignore&#39;</span><span class="p">)))</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[INFO] New subject </span><span class="si">{subject}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subject</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore&quot;</span><span class="p">)))</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;subject&quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
     <span class="n">changed</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">totals</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]))</span>
+    <span class="n">totals</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s2">&quot;total&quot;</span><span class="p">]))</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">changed</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[WARNING] No subject changed, exiting.&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[WARNING] No subject changed, exiting.&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_NONE</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">totals</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[WARNING] Mixed values for number of total segments, exiting.&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[WARNING] Mixed values for number of total segments, exiting.&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_NONE</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">totals</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">!=</span> <span class="n">file_count</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[WARNING] Listed segment count does not match &lt;file&gt; count, exiting.&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[WARNING] Listed segment count does not match &lt;file&gt; count, exiting.&quot;</span><span class="p">)</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_NONE</span><span class="p">)</span>
 
-<span class="n">org</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">.wtfnzb.original.processed&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">)</span>
+<span class="n">org</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.wtfnzb.original.processed&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">)</span>
 <span class="n">exists_counter</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">org</span><span class="p">):</span>
     <span class="n">exists_counter</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">org</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">.</span><span class="si">{}</span><span class="s1">.wtfnzb.original.processed&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">exists_counter</span><span class="p">)</span>
+    <span class="n">org</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.</span><span class="si">{}</span><span class="s2">.wtfnzb.original.processed&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">exists_counter</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[INFO] Preserving original nzb as </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">org</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[INFO] Preserving original nzb as </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">org</span><span class="p">))</span>
 <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">org</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;[INFO] Writing </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">))</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span>
-        <span class="n">xml_declaration</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">encoding</span><span class="o">=</span><span class="n">tree</span><span class="o">.</span><span class="n">docinfo</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-        <span class="n">doctype</span><span class="o">=</span><span class="n">tree</span><span class="o">.</span><span class="n">docinfo</span><span class="o">.</span><span class="n">doctype</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[INFO] Writing </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nzb</span><span class="p">))</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nzb</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+        <span class="n">etree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span>
+            <span class="n">tree</span><span class="p">,</span>
+            <span class="n">xml_declaration</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">encoding</span><span class="o">=</span><span class="n">tree</span><span class="o">.</span><span class="n">docinfo</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+            <span class="n">doctype</span><span class="o">=</span><span class="n">tree</span><span class="o">.</span><span class="n">docinfo</span><span class="o">.</span><span class="n">doctype</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">POSTPROCESS_SUCCESS</span><span class="p">)</span>
 </code></pre></div>
@@ -3788,7 +3828,7 @@ Released under GNU General Public License v2.0</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 27, 2022 16:48:53</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
   </span>
 
     
@@ -3813,12 +3853,18 @@ Released under GNU General Public License v2.0</p>
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>

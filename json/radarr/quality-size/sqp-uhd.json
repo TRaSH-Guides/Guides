@@ -1,55 +1,54 @@
-
 {
   "trash_id": "da8c8c0268b2f304be588132831543d2",
   "type": "sqp-uhd",
   "qualities": [
-      {
-          "quality": "WEBDL-1080p",
-          "min": 12.5,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "WEBRip-1080p",
-          "min": 12.5,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "Remux-1080p",
-          "min": 136.8,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "HDTV-2160p",
-          "min": 85,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "WEBDL-2160p",
-          "min": 34.5,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "WEBRip-2160p",
-          "min": 34.5,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "Bluray-2160p",
-          "min": 102,
-          "preferred": 399,
-          "max": 400
-      },
-      {
-          "quality": "Remux-2160p",
-          "min": 187.4,
-          "preferred": 399,
-          "max": 400
-      }
+    {
+      "quality": "WEBDL-1080p",
+      "min": 12.5,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBRip-1080p",
+      "min": 12.5,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Remux-1080p",
+      "min": 136.8,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "HDTV-2160p",
+      "min": 85,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBDL-2160p",
+      "min": 34.5,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "WEBRip-2160p",
+      "min": 34.5,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Bluray-2160p",
+      "min": 102,
+      "preferred": 399,
+      "max": 400
+    },
+    {
+      "quality": "Remux-2160p",
+      "min": 187.4,
+      "preferred": 399,
+      "max": 400
+    }
   ]
 }

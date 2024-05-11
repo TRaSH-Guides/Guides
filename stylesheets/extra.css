@@ -11,7 +11,7 @@
 
 /* remove bottom navigation */
 .md-footer__inner:not([hidden]) {
-  display: none
+  display: none;
 }
 
 /* Change color of links */
@@ -23,13 +23,14 @@
 footer.sponsorship {
   text-align: center;
   hr {
-      display: inline-block;
-      vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
 /*Better table view */
-th, td {
+th,
+td {
   border: 1px solid var(--md-typeset-table-color);
   border-spacing: 0;
   border-bottom: none;
@@ -42,10 +43,11 @@ th, td {
 }
 .md-typeset__table table:not([class]) {
   display: table;
-  font-size: .74rem;
+  font-size: 0.74rem;
   border-right: none;
 }
-.md-typeset__table table:not([class]) td, .md-typeset__table table:not([class]) th {
+.md-typeset__table table:not([class]) td,
+.md-typeset__table table:not([class]) th {
   padding: 9px;
 }
 
@@ -56,7 +58,7 @@ th, td {
 
 /* dark mode alternating table bg colors */
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
-  background-color: hsla(var(--md-hue),25%,25%,1)
+  background-color: hsla(var(--md-hue), 25%, 25%, 1);
 }
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
   color: #f8f8f8;

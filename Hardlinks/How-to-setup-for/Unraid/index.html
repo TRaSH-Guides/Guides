@@ -3572,7 +3572,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-    
+
                   
 
   
@@ -3679,15 +3679,15 @@
 ├── usenet
 │   ├── incomplete
 │   └── complete
-│        ├── books
-│        ├── movies
-│        ├── music
-│        └── tv
+│       ├── books
+│       ├── movies
+│       ├── music
+│       └── tv
 └── media
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    ├── books
+    ├── movies
+    ├── music
+    └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
@@ -3709,10 +3709,9 @@ If you use both torrents and usenet, use both commands.</p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
-<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal  and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
+<p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
 <!-- END INCLUDE -->
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
 <h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link"></a></h2>
 <p>After you've created all the necessary folders, it's time to set up the Docker container's paths.</p>
@@ -3733,10 +3732,10 @@ If you use both torrents and usenet, use both commands.</p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
 └── torrents
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    ├── books
+    ├── movies
+    ├── music
+    └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
@@ -3755,10 +3754,10 @@ If you use both torrents and usenet, use both commands.</p>
 └── usenet
     ├── incomplete
     └── complete
-         ├── books
-         ├── movies
-         ├── music
-         └── tv
+        ├── books
+        ├── movies
+        ├── music
+        └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
@@ -3782,15 +3781,15 @@ If you use both torrents and usenet, use both commands.</p>
 ├── usenet
 │   ├── incomplete
 │   └── complete
-│        ├── books
-│        ├── movies
-│        ├── music
-│        └── tv
+│       ├── books
+│       ├── movies
+│       ├── music
+│       └── tv
 └── media
-     ├── books
-     ├── movies
-     ├── music
-     └── tv
+    ├── books
+    ├── movies
+    ├── music
+    └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
@@ -3807,10 +3806,10 @@ If you use both torrents and usenet, use both commands.</p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
 └── media
-     ├── movies
-     ├── music
-     ├── books
-     └── tv
+    ├── movies
+    ├── music
+    ├── books
+    └── tv
 </code></pre></div>
 <!-- END INCLUDE -->
 
@@ -3854,7 +3853,7 @@ If you use both torrents and usenet, use both commands.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 11, 2024 19:11:58</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
   </span>
 
     
@@ -3879,12 +3878,18 @@ If you use both torrents and usenet, use both commands.</p>
 
 
                 
-    <footer class="sponsorship">
-        <hr>
-        <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"><img src="/img/buy-me-a-coffee.png" alt="Buy me a coffee" width="137" height="39">
-        </a>
-        <hr>
-    </footer>
+<footer class="sponsorship">
+  <hr />
+  <a href="https://github.com/sponsors/TRaSH-" title="Buy me a Coffee"
+    ><img
+      src="/img/buy-me-a-coffee.png"
+      alt="Buy me a coffee"
+      width="137"
+      height="39"
+    />
+  </a>
+  <hr />
+</footer>
 
               </article>
             </div>

@@ -4,7 +4,8 @@
   "community_id": "Visorak",
   "includePreferredWhenRenaming": false,
   "required": [],
-  "preferred": [{
+  "preferred": [
+    {
       "score": 4000,
       "terms": [
         "/(deanzel|\\bZR\\b|\\bCTR\\b|\\bSCY\\b|\\bMK\\b|TTGA)/i",
@@ -16,9 +17,7 @@
     },
     {
       "score": 3750,
-      "terms": [
-        "/(E[.-]N[.-]D)/i"
-      ]
+      "terms": ["/(E[.-]N[.-]D)/i"]
     },
     {
       "score": 3500,
@@ -45,39 +44,27 @@
     },
     {
       "score": 2000,
-      "terms": [
-        "/(DragsterPS)/i"
-      ]
+      "terms": ["/(DragsterPS)/i"]
     },
     {
       "score": 1500,
-      "terms": [
-        "/(xPearse|\\bMCR\\b|\\bKS\\b|KiyoshiStar)/i"
-      ]
+      "terms": ["/(xPearse|\\bMCR\\b|\\bKS\\b|KiyoshiStar)/i"]
     },
     {
       "score": 1000,
-      "terms": [
-        "/(\\b(A-L)\\b)/i"
-      ]
+      "terms": ["/(\\b(A-L)\\b)/i"]
     },
     {
       "score": 501,
-      "terms": [
-        "/dual[ ._-]?audio|EN\\+JA|JA\\+EN/i"
-      ]
+      "terms": ["/dual[ ._-]?audio|EN\\+JA|JA\\+EN/i"]
     },
     {
       "score": 300,
-      "terms": [
-        "/(Erai-raws|KAN3D2M)/i"
-      ]
+      "terms": ["/(Erai-raws|KAN3D2M)/i"]
     },
     {
       "score": 250,
-      "terms": [
-        "/(HorribleSubs|SubsPlease|SallySubs)/i"
-      ]
+      "terms": ["/(HorribleSubs|SubsPlease|SallySubs)/i"]
     },
     {
       "score": 200,
@@ -88,9 +75,7 @@
     },
     {
       "score": 150,
-      "terms": [
-        "/(\\bGJM\\b|kBaraka)/i"
-      ]
+      "terms": ["/(\\bGJM\\b|kBaraka)/i"]
     },
     {
       "score": 100,
@@ -110,9 +95,7 @@
     },
     {
       "score": 25,
-      "terms": [
-        "/(AkihitoSubs|\\bASW\\b|Commie)/i"
-      ]
+      "terms": ["/(AkihitoSubs|\\bASW\\b|Commie)/i"]
     },
     {
       "score": 15,
@@ -122,34 +105,23 @@
     },
     {
       "score": 10,
-      "terms": [
-        "/(Web-?Rip|WEBMux)/ix"
-      ]
+      "terms": ["/(Web-?Rip|WEBMux)/ix"]
     },
     {
       "score": 5,
-      "terms": [
-        "/\\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\\b/i"
-      ]
+      "terms": ["/\\b(?:(1080p|1920x1080|1440p|FHD|1080i|4kto1080p))\\b/i"]
     },
     {
       "score": 3,
-      "terms": [
-        "/\\b(v4)\\b/i"
-      ]
+      "terms": ["/\\b(v4)\\b/i"]
     },
     {
       "score": 2,
-      "terms": [
-        "/\\b(v3)\\b/i"
-      ]
+      "terms": ["/\\b(v3)\\b/i"]
     },
     {
       "score": 1,
-      "terms": [
-        "/(10.?bit|hi10p)/i",
-        "/\\b(v2)\\b/i"
-      ]
+      "terms": ["/(10.?bit|hi10p)/i", "/\\b(v2)\\b/i"]
     },
     {
       "score": -10000,

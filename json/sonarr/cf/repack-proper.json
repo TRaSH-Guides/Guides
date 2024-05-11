@@ -6,32 +6,33 @@
   "trash_regex": "https://regex101.com/r/S91wR8/2",
   "name": "Repack/Proper",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
-          "name": "Repack",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Repack)\\b"
-          }
-      },
-      {
-          "name": "Proper",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Proper)\\b"
-          }
-      },
-      {
-          "name": "Rerip",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-              "value": "\\b(Rerip)\\b"
-          }
+  "specifications": [
+    {
+      "name": "Repack",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Repack)\\b"
       }
+    },
+    {
+      "name": "Proper",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Proper)\\b"
+      }
+    },
+    {
+      "name": "Rerip",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Rerip)\\b"
+      }
+    }
   ]
 }
