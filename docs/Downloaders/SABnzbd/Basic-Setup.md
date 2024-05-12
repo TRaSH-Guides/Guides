@@ -12,7 +12,7 @@
 
 ## General
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/general){:target="\_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/general){:target="\_blank" rel="noopener noreferrer"}
 
 ### Tuning
 
@@ -25,7 +25,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 ## Folders
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/folders){:target="\_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/folders){:target="\_blank" rel="noopener noreferrer"}
 
 ### User Folders
 
@@ -41,13 +41,16 @@ Here you setup your download path/location.
 `Settings` => `Folders` => `System Folders`
 ![!Folders: System Folders](images/sabnzbd-folders-system-folders.png)
 
-I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.
+!!! info "Starting from 4.3.x+ SABnzbd has a hidden (archive) history."
+
+Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
+The default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.
 
 ---
 
 ## Servers
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/servers){:target="\_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
@@ -70,7 +73,7 @@ I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history
 
 ## Categories
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/categories){:target="\_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/categories){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings`=> `Categories`
 
@@ -80,17 +83,18 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ## Switches
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.0/switches){:target="\_blank" rel="noopener noreferrer"}
+[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/switches){:target="\_blank" rel="noopener noreferrer"}
 
 ### Queue
 
 `Settings` => `Switches` => `Queue`
 ![!Switches: Queue](images/sabnzbd-switches-queue.png)
 
-1. When during download it becomes clear that too much data is missing, abort the job. and makes sure Sonarr/Radarr will get a notification and can look for another release.
+1. If you have good indexers that get the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.
+1. When it becomes clear during downloading that too much data is missing, abort the job to make sure Sonarr/Radarr gets the notification so it can look for another release.
 1. Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
 1. In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
-1. Suggest this sort so that the most likely to still be there stuff is downloaded first.
+1. This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 
 ### Post processing
@@ -99,10 +103,12 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ![!Switches: Post-processing](images/sabnzbd-switches-post-processing.png)
 
 1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
+1. This should be set off if you have decent internet. The amount of time spent to grab pars, if needed for verification/repair, is trivial to the time that a repair might run and fail to realize it needs more pars, and grab the next part, then retry.
+1. It is your choice if you want to enable this option. It's usually an easy check and does provide benefits if the job doesn't have par2 files, as not every release has a par-set or SFV file. Generally speaking, if we're talking about scene releases, things should have both but this depends on how it's posted and how the indexer is generating the nzb. SFV is commonly used and a basic crc32 checksum is better not knowing if the file is good. Parsing an SFV file and checking the files' integrities takes very little resources. This may seem redundant given that par's checks would also handle this, however, the ease with which the check is done makes the downside almost non-existent.
 1. Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.
 1. Unpack archives (rar, zip, 7z) within archives.
 1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
-1. Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.
+1. Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if its a sample compared to what SABnzbd uses.
 1. Helps with de-obfuscation especially invalid file extensions
 
 ---
@@ -116,7 +122,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.0/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.3/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
