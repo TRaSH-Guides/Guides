@@ -13,7 +13,7 @@
 
     !!! info "2160p BHDStudio will trump any 2160p WEBDL regardless if it has DV HDR10 or only HDR10"
 
-    ------
+    ---
 
     *Possible Variables*
 

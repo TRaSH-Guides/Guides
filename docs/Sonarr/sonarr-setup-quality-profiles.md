@@ -1,21 +1,22 @@
 # How to set up Quality Profiles
 
-*aka How to set up Custom Formats*<br><br>
+_aka How to set up Custom Formats_<br><br>
 So what's the best way to set up the Custom Formats and which ones to use with which scores to set up your quality profiles?
 
 There isn't a "best" setup, it depends on your media setup (hardware devices) and your personal preferences.
 
 Some prefer high-quality audio (HD Audio), others high-quality video. Many prefer both.
 
-Here I will try to explain how to make the most use of Custom Formats to help you to set up your quality profiles for your personal needs.
+Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.
 
-I created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
+- We've created a [flowchart](#which-quality-profile-should-you-choose) to make your decisions/choices easier.
+- We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
 
-------
+---
 
 ## Basics
 
-After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
 You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
 `Settings` => `Profiles`
@@ -23,6 +24,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 !!! info "Sonarr Custom Formats can be set per profile and isn't global"
+
 Select the profile that you want to use/prefer.
 
 ![!cf-quality-profiles](images/cf-quality-profiles.png)
@@ -38,9 +40,11 @@ Select the profile that you want to use/prefer.
 At the bottom, in your chosen profile, you will see the added Custom Formats where you can start setting up the scores.
 
 ??? success "Screenshot example - [Click to show/hide]"
+
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.
@@ -56,11 +60,11 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
     - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
     - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
-------
+---
 
 {! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
 
-------
+---
 
 ## Which Quality Profile should you choose
 
@@ -72,7 +76,7 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
     [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## TRaSH Quality Profiles
 
@@ -115,7 +119,7 @@ Use the following main settings in your profile.
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ### WEB-2160p
 
@@ -156,7 +160,7 @@ Use the following main settings in your profile.
 
     Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
 
-------
+---
 
 ## Custom Format Groups
 
@@ -168,7 +172,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
-------
+---
 
 ## FAQ & INFO
 

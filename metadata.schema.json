@@ -26,7 +26,9 @@
       "properties": {
         "custom_formats": { "$ref": "#/$defs/paths_object" },
         "qualities": { "$ref": "#/$defs/paths_object" },
-        "naming": { "$ref": "#/$defs/paths_object" }
+        "naming": { "$ref": "#/$defs/paths_object" },
+        "quality_profiles": { "$ref": "#/$defs/paths_object" },
+        "custom_format_groups": { "$ref": "#/$defs/paths_object" }
       }
     },
     "sonarr": {
@@ -36,7 +38,9 @@
         "custom_formats": { "$ref": "#/$defs/paths_object" },
         "release_profiles": { "$ref": "#/$defs/paths_object" },
         "qualities": { "$ref": "#/$defs/paths_object" },
-        "naming": { "$ref": "#/$defs/paths_object" }
+        "naming": { "$ref": "#/$defs/paths_object" },
+        "quality_profiles": { "$ref": "#/$defs/paths_object" },
+        "custom_format_groups": { "$ref": "#/$defs/paths_object" }
       }
     },
     "recyclarr": {

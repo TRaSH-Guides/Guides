@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
-On the [Radarr Discord](https://radarr.video/discord){:target="_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
+On the [Radarr Discord](https://radarr.video/discord){:target="\_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
 name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.
 
 Why?
@@ -11,7 +11,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 The Tokens not available in the release won't be used/shown.
 
-------
+---
 
 ## Preparation
 
@@ -29,7 +29,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
 
 ## Standard Movie Format
 
-This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
+This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="\_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
 
 !!! warning "Starting from v4.2.2.6489, Radarr now supports Plex Multiple Edition tags in naming."
 
@@ -99,9 +99,9 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
     `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`
 
-------
+---
 
-## Original Title vs  Original Filename
+## Original Title vs Original Filename
 
 ### Original Title
 
@@ -117,7 +117,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 `{Original Filename}` => `group-karatekid-1080p` or `lchd-tkk1080p` or `t1i0p3s7i8yuti`
 
-------
+---
 
 ## Movie Folder Format
 
@@ -137,9 +137,10 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 <small>RESULT:</small> `The Movie Title (2010)`
 
-------
+---
 
 !!! note
+
     Keep in mind adding anything more after the release year could give issues during a fresh import in to Radarr, but it helps for movies that have the same release name and year.
 
     **Radarr supports IMDb ID and TMDb ID in the folder name.**
@@ -150,7 +151,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 #### Optional Movies Folder Format
 
-This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="\_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
 
 ##### Optional Plex
 
@@ -177,9 +178,10 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 <small>RESULT:</small> `The Movie Title (2010) [imdbid-tt1520211]`
 
 !!! tip
+
     IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
 
-------
+---
 
 Thanks:
 

@@ -1,4 +1,4 @@
-*This Custom Format will only match on* `DV HLG`
+_This Custom Format will only match on_ `DV HLG`
 
 **HLG**<br>
 

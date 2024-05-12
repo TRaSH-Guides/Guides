@@ -3,8 +3,8 @@ data
 └── usenet
     ├── incomplete
     └── complete
-         ├── books
-         ├── movies
-         ├── music
-         └── tv
+        ├── books
+        ├── movies
+        ├── music
+        └── tv
 ```

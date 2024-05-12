@@ -12,13 +12,23 @@
 
 ## Introduction
 
-This page will provide you with guidance on how to install several Docker images to your Synology system. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.
+This page will provide you with guidance on how to install several Docker images related to the Servarr apps to your Synology. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.
+
+## Summary
+
+1. We will create **_one_** share that will hold all your data. This ensures hardlinking and/or instant moves are possible.
+1. Create one user which will be assigned to the docker images as the user they run as out of security reasons.
+1. Create a folder structure on the `data` and `docker` share with a few commands (or manually).
+1. Download and edit the `docker-compose.yml` and `.env` files to your system settings.
+1. Set permissions to all folders related in the shares.
+1. Run and execute docker commands to start the containers.
 
 ### Automated Script
 
 ??? example "Automated script (**:bangbang:Use this script at your own risk:bangbang:**) - [Click to show/hide]"
 
     !!! Warning
+
         Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.
 
         The script is only tested on Synology DSM7 and higher.
@@ -47,17 +57,11 @@ This page will provide you with guidance on how to install several Docker images
 
 ## Install Docker
 
-You need to install Docker from the `Package Center`. This should also create a share named `docker`, check File Station if it is present.
+You need to install Docker / Container Manager from the `Package Center`. This should also create a share named `docker`, check File Station if it is present.
 
 ## Create the main share
 
-!!! warning
-
-    To get Hardlinks and Atomic-Moves working with your Synology you will need to make use of **ONE** share with subfolders.
-
-We will use a new share named `data` (lowercase) for all your library media.
-
-Later in this guide, we will fill this share with subfolders.
+We will create and use a new share named `data` (lowercase) for all your library media and downloads.
 
 To create a new share:
 
@@ -65,27 +69,27 @@ To create a new share:
 
 ![!create_share](images/create_share.png)
 
-Name this shared folder `data`. You can disable the trash can. Click next until you are done.
+Name this shared folder `data`. You can disable the trash can, up to you. Click next until you are done.
 
 ## Create a user
 
-For this, we are going to create a new user that only has access to the share(s) that we use for this guide.
+We are going to create a new user that only has access to the share(s) that we use for the containers to run as. You rather not have the containers run as an admin/root user.
 
 Go to `Control Panel` > `User & Group`
 
-In the `User` section, create a new user. Name it whatever you like, but for this guide we will use `docker`.
+In the `User` section, create a new user. Name it whatever you like, but for this guide we will use the name `docker`.
 
 ![!adduser](images/adduser.PNG)
 
 Fill out the rest of the information, generate a password or type your own.
 
-Click next, you will now be able to select which group this user will belong to, it should only be `users`. Click `Next`.
+Click next, you will now be able to select which group this user will belong to, it should only be the group `users`. Click `Next`.
 
 ### Assign shared folder permissions
 
-In this screen you will be able to select which Shares this user will have access to, click `No Access` on the top, this will deny all access.
+In the next screen you will be able to select which Shares this user will have access to, click `No Access` on the top, this will deny all access.
 
-Now only select `Read/Write` on the shares `docker` and `data`.
+Now **only** select `Read/Write` on the shares `docker` and `data` (the share we created earlier).
 
 ![!Assign shared folders permissions](images/adduser_2.PNG)
 
@@ -93,7 +97,7 @@ Click `Next` until you reach `Assign application permissions`
 
 ### Assign application permissions
 
-In this screen you will be able to select which application this user will have access to, Check `Deny` for all applications.
+In this screen you will be able to select which application this user will have access to. Check `Deny` for all applications.
 
 ![!Assign application permissions](images/adduser_3.PNG)
 
@@ -102,98 +106,69 @@ Continue to click `Next` until you are finished.
 ## SSH
 
 You are mostly going to use the terminal. Some parts will need the Synology web GUI.
-To enable terminal, you need to enable SSH in the Synology Settings.
+To enable terminal access, you need to enable SSH in the Synology Settings.
 
 `Control Panel` > `Terminal & SNMP` > `Enable SSH service`
 
 ![!synology-control-panel](images/synology-ssh.png)
 
-Then use a program like [Putty](https://www.putty.org/){:target="_blank" rel="noopener noreferrer"} or Powershell/Terminal to SSH into your Synology.
+Then use a program like [Putty](https://www.putty.org/){:target="\_blank" rel="noopener noreferrer"} or Powershell/Terminal to SSH into your Synology.
 
 Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.
 
-If you get a popup asking if you want to trust the key,
-Just press `OK` or `ACCEPT`
+If you get a message asking if you want to trust the key, just press `OK` or `ACCEPT`.
 
 ### PUID and PGID
 
 In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the `docker` user we just created.
 
-Go into your terminal app, login to your synology ssh.
-
-Once logged in type `id $user`. Change $user to the newly created username `docker`.
+Once logged in to the terminal type `id docker`. If you used a different username, change `docker` to the one you used.
 
 ![!synology-id](images/synology-id.png)
 
 This will show you the UID (aka PUID).
-Which in this screenshot is `1035` for the docker user
-and the GID (aka PGID) which is `100` for the users group.
-Remember these values for later use.
+Which in the screenshot above is `1035` for the docker user and the GID (aka PGID) which is `100` for the users group.
+Save these values for later use.
 
-!!! warning
+## Create Folder Structure
 
-    It is not recommended to use (anymore) your admin/main user account. That is why we just created a new user.
+Let's create a good folder structure on the shares we use (`docker` and `data`). This will be done with a few commands.
 
-------
-
-## Folder Structure
-
-For this example we're going to make use of the share called `data`.
-
-On the host (Synology) terminal you will need to add `/volume1/` before it. So `/volume1/data`
-
-The `data` folder has sub-folders for `torrents` and `usenet` and each of these have sub-folders for `tv`, `movie` and `music` downloads to keep things neat. The `library` folder has nicely named `tv`, `movies` and `music` sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.
-
-These subfolders you need to create your self.
-
-*I'm using lower case on all folder on  purpose, being Linux is case sensitive.*
+The structure will look like this. You can of course edit this, but do this when you know what you are doing.
+_We are using lowercases on all folders on purpose, being Linux is case sensitive._
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
 {! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-synology.md" !}
-<!-- --8<-- "includes/hardlinks/breakdown-folder-structure.md" -->
+To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:
 
-------
-
-### Create the needed subfolder
-
-Here we will create the needed subfolders for your media library and also for your preferred download client.
-If you use both then run both commands
-
-#### If you use usenet
+### If you use usenet
 
 ```bash
 mkdir -p /volume1/data/{usenet/{incomplete,complete}/{tv,movies,music},media/{tv,movies,music}}
 ```
 
-#### If you use torrents
+### If you use torrents
 
 ```bash
 mkdir -p /volume1/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 ```
 
-------
+---
 
 ### Appdata
 
-Your appdata will be stored in `/volume1/docker/appdata/{appname}`
-These `{appname}` sub folders you need to create your self. (*This is a limitation of the Synology*)
-We're going to do this in Putty or a similar program.
+Your application data will be stored in the `docker` share in the folder called `appdata` (`/volume1/docker/appdata`)
+Create these folders with command below, or create them in File Station manually.
 
 ```bash
-mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,pullio}
+mkdir -p /volume1/docker/appdata/{radarr,sonarr,bazarr,plex,prowlarr,pullio}
 ```
 
-You can add your own sub folders for your download client(s) using the command above, by adding the name to the command.
+You can add your own subfolders for your download client(s) using the command above, by adding the name to the command.
 
 So your appdata folder will look like this.
-
-```bash
-ls -al /volume1/docker/appdata
-```
 
 ```none
 docker
@@ -202,11 +177,13 @@ docker
     ├── sonarr
     ├── bazarr
     ├── plex
+    ├── prowlarr
     ├── pullio
-    └── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
+    ├── (your download client, i.e. nzbget; sabnzbd; qbittorrent)
+    └── (other applications)
 ```
 
-------
+---
 
 ## Needed files
 
@@ -219,81 +196,85 @@ For this, we need two files:
 
 We will start with downloading the `docker-compose.yml` file
 
-Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
+Download this [docker-compose.yml](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml){:target="\_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use the command below:
 
 ```bash
 wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml -P /volume1/docker/appdata/
 ```
 
-### Whats included and Whats not included
+### What's included in the compose and what is not included
 
-??? question "What's included and What's not included - [Click to show/hide]"
+This docker-compose file will have the following docker containers included.
 
-    This docker-compose file will have the following docker containers included.
-
+```none
     - Radarr
     - Sonarr
     - Bazarr (Subtitle searcher and downloader)
     - Plex
+    - Prowlarr (indexer/tracker manager)
+```
 
-    What's not included (and where are the download clients?).
+What's not included (and where are the download clients?).
 
-    I didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer, so I created a new [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="_blank" rel="noopener noreferrer"} on Github where I provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
+We didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer. We have a repository [Repository](https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates){:target="\_blank" rel="noopener noreferrer"} on Github where we provide and maintain some templates that are ready to use with the main `docker-compose.yml`.
 
-    The only thing you need to do is copy/paste what's inside the `.yml` file in to the main `docker-compose.yml`, the template also has the command what you need to use to create the [appdata](#appdata) folder that we explained earlier.
+The only thing you need to do is copy & paste what's inside the template file into to the main `docker-compose.yml` on the bottom, the templates also have a command what you need to use to create the [appdata](#appdata) folder that we explained earlier. Without the appdata folder for the application, the creation of the container will fail because of the missing folder.
 
 Second we will download the `.env` file
 
-Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env){:target="_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location so you got your important stuff together. Or use this command:
+Download this [.env](https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env){:target="\_blank" rel="noopener noreferrer"} to your `/volume1/docker/appdata` location next to the `docker-compose.yml`. Or use this command:
 
 ```bash
 wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env -P /volume1/docker/appdata/
 ```
 
 !!! warning
-    :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT  :bangbang:
 
-------
+    :bangbang: MAKE SURE THE FILE KEEPS THE ORIGINAL NAME `.env` WITH THE DOT BEFORE IT :bangbang:
+
+---
 
 ### Changes and preparations
 
 !!! tip
-    If you need to edit docker-compose.yml or the .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}
+
+    If you need to edit docker-compose.yml or the .env file we advise to use [Notepad++](https://notepad-plus-plus.org/){:target="\_blank" rel="noopener noreferrer"} or [Visual Studio Code](https://code.visualstudio.com/){:target="\_blank" rel="noopener noreferrer"}
 
 The `.env` file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the `.env` file.
 
 1. DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)
 1. PUID/PGID (this info you got earlier from [HERE](#puid-and-pgid))
-1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="_blank" rel="noopener noreferrer"})
+1. TZ (Change to your timezone, can be found [HERE](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones){:target="\_blank" rel="noopener noreferrer"})
 1. Install and Create a task scheduler for Pullio, so your containers stay up to date.
 
 !!! info ""
+
     The `.env` holds more variables/information for other containers you don't need to remove those variables and will be only used when you install the other containers.
 
-------
+---
 
 #### Pullio - Auto update docker-compose the correct way
 
-Pullio allows you to automatically update your containers. And send you a notification through various means. In my setup, I use a Discord Webhook.
+Pullio allows you to automatically update your containers. And send you a notification through various means. We use a Discord Webhook.
 
 First you need to download Pullio
 
 ```bash
-   sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
+    sudo curl -fsSL "https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh" -o /usr/local/bin/pullio
 ```
 
 ```bash
-   sudo chmod +x /usr/local/bin/pullio
+    sudo chmod +x /usr/local/bin/pullio
 ```
 
-For Pullio to work, you will need to create in your Task Scheduler a "Scheduled Task" that runs for example at 4am at night with root privileges.
+For Pullio to do it's job, you will need to create a Scheduled Task in your Task Scheduler that runs for example at 4am at night with **root** privileges.
 
 `Control Panel` > `Task Scheduler` > click `Create` > choose `Scheduled task - user defined script`
 
 Give the task a name so you know what it does. Choose user `root`.
 
-In the `Schedule` tab choose whenever you want it to check for updates.
+In the `Schedule` tab choose when and how often you want it to check for updates.
 
 At `Task Settings` tab, add the following line in the Run Command section:
 
@@ -303,16 +284,19 @@ At `Task Settings` tab, add the following line in the Run Command section:
 
 It can be frustrating to test the script if no docker image updates are available, for that you can run command `sudo pullio --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
-More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="_blank" rel="noopener noreferrer"}
+More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ### Permissions
 
 Now we need to make sure that the newly created files and folders have the correct permissions.
 
+If you have an existing library, it is advised to move these to the new `data` share prior to running the commands below.
+
 !!! note
-    If you're using a different user than `docker` (the user generated in the beginning), then you need to change the `docker:users` part in the commands below!!!
+
+    If you're using a different user than `docker` (the user generated in the beginning), then you need to change the `docker:users` part in the command below!!!
 
 ```bash
 sudo chown -R docker:users /volume1/data /volume1/docker
@@ -323,17 +307,19 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 ```
 
 !!! note
-    If you copy files from a different library into the newly created library, you need to rerun these commands. !!!
 
-------
+    If you move files from a different library into the newly created library afterwards, you need to rerun these commands. !!!
+
+---
 
 ## Run the Docker Compose
 
 !!! tip
-    make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
-    If you had previous installed apps, make a backup of their config folders.
 
-When you did all the above steps you only need to run the following commands:
+    make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
+    If you had previous installed apps, make a backup of their config folders or backup through the webui of the app.
+
+If you have followed all the steps and your compose file is ready, run the following commands:
 
 ```bash
 cd /volume1/docker/appdata
@@ -343,27 +329,25 @@ cd /volume1/docker/appdata
 sudo docker-compose up -d
 ```
 
-You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then look at the error what it says and try to fix it. If you still got issues then put your used docker-compose.yml on [0bin](https://0bin.net/){:target="_blank" rel="noopener noreferrer"} and join the guides-discord [here](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"} and provide the pastebin link with the error, have patience because of timezone differences.
+You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then read what error says and try to fix it (missing folders, permissions errors, etc). If you can't figure out the solution to your errors, join the guides-discord [here](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"} and create a support ticket.
 
-------
+---
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside your applications.**
+**If you need help setting up the applications, look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside your applications.**
 
 !!! warning
 
-    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, run the command `sudo docker-compose up -d` again, from within the `/volume1/docker/appdata` folder.
+    If you need to do any changes, only edit the `docker-compose.yml` file. To activate the changes, [run the commands from here](#run-the-docker-compose) again.
 
     Any changes you do/did in the GUI will be reverted when you run the docker-compose command.
 
     Just don't use the GUI, only for information purposes !!!
 
 {! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
-<!-- --8<-- "includes/hardlinks/docker-compose-commands.md" -->
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
 
-------
+---
 
 ## Additional Synology Info
 

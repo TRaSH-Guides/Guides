@@ -1,4 +1,5 @@
 ??? abstract "Misc - [Click to show/hide]"
+
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['repack-proper']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#repackproper) | {{ radarr['cf']['repack-proper']['trash_scores']['default'] }} | {{ radarr['cf']['repack-proper']['trash_id'] }} |

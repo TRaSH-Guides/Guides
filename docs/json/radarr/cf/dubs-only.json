@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?!.*Dual[-_. ]?Audio).*\\bKS\\b"
+        "value": "^(?!.*(dual[ ._-]?audio|[\\[(]dual[\\]]|(JA|ZH)\\+EN|EN\\+(JA|ZH))).*\\bKS\\b"
       }
     },
     {

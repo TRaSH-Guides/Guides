@@ -10,6 +10,7 @@
 !!! warning "Make sure you put:<br> - The merged `WEB-2160p` above the merged `Bluray|WEB-1080p`<br> - The `Bluray-2160p` on the top of everything."
 
 !!! tip
+
     If you use SQP-1 (1080p) as your main/second Radarr you want to remove the following qualities
 
     - The merged quality profile: `Bluray|WEB-1080p`

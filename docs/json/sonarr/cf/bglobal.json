@@ -1,43 +1,43 @@
 {
-    "trash_id": "7dd31f3dee6d2ef8eeaa156e23c3857e",
-    "name": "B-Global",
-    "includeCustomFormatWhenRenaming": true,
-    "specifications": [
-      {
-        "name": "WEBDL",
-        "implementation": "SourceSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": 3
-        }
-      },
-      {
-        "name": "WEBRIP",
-        "implementation": "SourceSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": 4
-        }
-      },
-      {
-        "name": "WEB",
-        "implementation": "SourceSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": 1
-        }
-      },
-      {
-        "name": "B-Global",
-        "implementation": "ReleaseTitleSpecification",
-        "negate": false,
-        "required": true,
-        "fields": {
-          "value": "\\b(B[ .-]?Global)\\b"
-        }
+  "trash_id": "7dd31f3dee6d2ef8eeaa156e23c3857e",
+  "name": "B-Global",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
       }
-    ]
-  }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "WEB",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "name": "B-Global",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(B[ .-]?Global)\\b"
+      }
+    }
+  ]
+}

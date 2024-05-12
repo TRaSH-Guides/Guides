@@ -1,6 +1,6 @@
 **DTS-HD HRA**<br>
 
-[Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="_blank" rel="noopener noreferrer"}
+[Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="\_blank" rel="noopener noreferrer"}
 
 | Codec      | Page   | Paragraph |
 | ---------- | ------ | --------- |

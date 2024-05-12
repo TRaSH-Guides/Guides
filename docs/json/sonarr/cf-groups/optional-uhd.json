@@ -1,0 +1,51 @@
+{
+  "name": "Optional",
+  "trash_id": "cac4624ef8fae1ef5e8abb8cf1cf6607",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "32b367365729d530ca1c124a0b180c64",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "82d40da2bc6923f41e14394075dd4b03",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "06d66ab109d4d2eddb2794d21526d140",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
+      "required": false
+    },
+    {
+      "name": "x265 (HD)",
+      "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+      "required": false
+    },
+    {
+      "name": "SDR",
+      "trash_id": "2016d1676f5ee13a5b7257ff86ac9a93",
+      "required": false
+    },
+    {
+      "name": "SDR (no WEBDL)",
+      "trash_id": "83304f261cf516bb208c18c54c0adf97",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1"
+    }
+  }
+}

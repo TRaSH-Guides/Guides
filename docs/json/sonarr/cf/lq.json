@@ -115,15 +115,6 @@
       }
     },
     {
-      "name": "NERO",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(NERO)$"
-      }
-    },
-    {
       "name": "nhanc3",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -157,6 +148,15 @@
       "required": false,
       "fields": {
         "value": "^(SasukeducK)$"
+      }
+    },
+    {
+      "name": "ShieldBearer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ShieldBearer)$"
       }
     },
     {

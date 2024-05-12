@@ -12,7 +12,7 @@
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                           |      {{ radarr['cf']['scene']['trash_scores']['default'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
     | [{{ radarr['cf']['x265-no-hdrdv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv) :warning: |  {{ radarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}  | {{ radarr['cf']['x265-no-hdrdv']['trash_id'] }}   |
 
-    ------
+    ---
 
     Breakdown and Why
 

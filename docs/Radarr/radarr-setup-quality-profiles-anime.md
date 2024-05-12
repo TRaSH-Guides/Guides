@@ -1,16 +1,18 @@
 # How to setup Quality Profiles Anime
 
-*aka How to setup Custom Formats (Anime)*<br><br>
+_aka How to setup Custom Formats (Anime)_<br><br>
 
 !!! note
+
     This guide is created and maintained by [FonduemangVI](https://github.com/FonduemangVI) and [rg9400](https://github.com/rg9400)
 
 It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
-The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="_blank" rel="noopener noreferrer"}
+The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="\_blank" rel="noopener noreferrer"}
 
 !!! info ""
+
     Nyaa is a public tracker while AB is an invite only tracker.
 
 ---
@@ -19,19 +21,19 @@ The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="
 
 ### Recommended naming scheme
 
-For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}
+For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
 ## Quality Settings
 
-For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions){:target="_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
 ## Quality Profile
 
-We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together see [here](/Radarr/Tips/Merge-quality/){:target="_blank" rel="noopener noreferrer"} for an example.
+We need to create a new profile called `Remux-1080p - Anime` due to the way anime can be named we will need to merge a few qualities together see [here](/Radarr/Tips/Merge-quality/){:target="\_blank" rel="noopener noreferrer"} for an example.
 
 We need to add `Bluray-1080p Remux` and `Bluray-1080p` into a group together, `HDTV-1080p` into the same group as `WEBDL-1080p` and `WEBRip-1080p`, and lastly `HDTV-720p` into the same group as `WEBDL-720p` and `WEBRip-720p` so that the scoring will work correctly.
 
@@ -50,10 +52,10 @@ We then need to select and organise the qualities like below.
 ## Anime CF/Scoring
 
 !!! note
-    We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} for how to import them.
+
+    We're going to make use of the below custom formats. See [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"} for how to import them.
 
 {! include-markdown "../../includes/cf/radarr-anime.md" !}
-<!-- --8<-- "includes/cf/radarr-anime.md" -->
 
 ### Default Scoring
 
@@ -89,6 +91,7 @@ Below is an example of the scoring set to prefer `Dual Audio` over any tier.
 ### Uncensored Scoring
 
 !!! note
+
     Most BDs are uncensored by default, so most groups do not include that in the name.
 
 If you prefer `Uncensored` releases you have a few options depending on your preference.
@@ -124,4 +127,3 @@ Most of my information and knowledge came from:
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and general knowledge share.)
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

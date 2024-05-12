@@ -1,4 +1,4 @@
-*This Custom Format will only match on* `DV` **NOT** *on* `DV HDR10` *etc*.
+_This Custom Format will only match on_ `DV` **NOT** _on_ `DV HDR10` _etc_.
 
 Depending on the source (WEB-DL, Bluray, or Remux) this format will match the following:
 

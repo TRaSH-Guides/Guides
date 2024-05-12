@@ -5,11 +5,11 @@
   "specifications": [
     {
       "name": "Season Packs",
-      "implementation": "ReleaseTitleSpecification",
+      "implementation": "ReleaseTypeSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bS\\d+\\b(?!E\\d+\\b)"
+        "value": 3
       }
     }
   ]

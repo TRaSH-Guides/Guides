@@ -1,13 +1,15 @@
 This basic example is based on the use of docker images
 
 !!! tip ""
+
     Keep in mind the path are setup so it works with hardlinks and instant moves.
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
 {! include-markdown "../hardlinks/bad-path-suggestion.md" !}
-<!-- --8<-- "includes/hardlinks/bad-path-suggestion.md" -->
+
 !!! warning ""
+
     But you're able to change this, by not using the pre-defined/recommended paths like:
 
     - `/downloads` => `/data/downloads`, `/data/usenet`, `/data/torrents`

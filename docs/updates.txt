@@ -1,3 +1,28 @@
+# 2024-04-30 21:00
+- [feat(anime): Updating various CFs to fix issues](https://github.com/TRaSH-Guides/Guides/pull/1903)
+- [feat(Synology): Simplify Synology Guide](https://github.com/TRaSH-Guides/Guides/pull/1876)
+- [fix(guide): Fix Optional UHD include error](https://github.com/TRaSH-Guides/Guides/pull/1878)
+- [fix(guide): unRAID Mover and qBittorrent - Remove option to edit script for mover.old](https://github.com/TRaSH-Guides/Guides/pull/1889)
+- [fix(starr): DD+ word boundaries](https://github.com/TRaSH-Guides/Guides/pull/1892)
+- [fix(starr): DTS-X CF mismatching](https://github.com/TRaSH-Guides/Guides/pull/1863)
+- [fix(starr): match AC-3 as DD](https://github.com/TRaSH-Guides/Guides/pull/1899)
+- [fix(starr): Prevent double scoring DD+ and DD+ Atmos](https://github.com/TRaSH-Guides/Guides/pull/1887)
+- [fix(starr): TheUpscaler not matching](https://github.com/TRaSH-Guides/Guides/pull/1864)
+- [style(Bazarr): add missing (Sonarr) for Bazarr Setup-Guide](https://github.com/TRaSH-Guides/Guides/pull/1898)
+- [update(cf/hbomax): adds capturing hbomax (without separator)](https://github.com/TRaSH-Guides/Guides/pull/1895)
+- [update(imax-descriptions): language and descriptions around imax(e)](https://github.com/TRaSH-Guides/Guides/pull/1879)
+- [update(sonarr): remove NERO from LQ](https://github.com/TRaSH-Guides/Guides/pull/1884)
+- [update(syno/compose): add prowlarr to default](https://github.com/TRaSH-Guides/Guides/pull/1902)
+
+# 2024-04-07 09:35
+- [feat(guide): **NEW** Plex Guide what does my media player support](https://github.com/TRaSH-Guides/Guides/pull/1868)
+
+# 2024-04-01 16:30
+- [feat(guide): minor changes to several guides](https://github.com/TRaSH-Guides/Guides/pull/1858)
+- [feat(guide): Update Sonarr Remux Tiers](https://github.com/TRaSH-Guides/Guides/pull/1862)
+- [feat(sonarr): Update Season Pack CF and guide](https://github.com/TRaSH-Guides/Guides/pull/1872)
+- [fix(guide): Fix broken notifiarr link on plex tips](https://github.com/TRaSH-Guides/Guides/pull/1865)
+
 # 2024-03-24 12:30
 - [feat(guide): Move RlsGrps Between Tiers](https://github.com/TRaSH-Guides/Guides/pull/1857)
 

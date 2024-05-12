@@ -23,9 +23,9 @@ Using the following instructions will allow you to move the files with the use o
 
 Download the following standalone Python script.
 
-- [Script (deluge-mover.py)](https://raw.githubusercontent.com/zakkarry/deluge-mover/master/deluge-mover.py){:target="_blank" rel="noopener noreferrer"}
+- [Script (deluge-mover.py)](https://raw.githubusercontent.com/zakkarry/deluge-mover/master/deluge-mover.py){:target="\_blank" rel="noopener noreferrer"}
 
-Thanks to [zakary](https://github.com/zakkarry){:target="_blank" rel="noopener noreferrer"} (Developer on [cross-seed](https://github.com/cross-seed/cross-seed){:target="_blank" rel="noopener noreferrer"})
+Thanks to [zakary](https://github.com/zakkarry){:target="\_blank" rel="noopener noreferrer"} (Developer on [cross-seed](https://github.com/cross-seed/cross-seed){:target="\_blank" rel="noopener noreferrer"})
 
 ### Plugins
 
@@ -33,13 +33,13 @@ Install the following Plugins.
 
 - User Scripts
 - NerdTools
-      - python3 <sup>(*1*)</sup>
-      - python-setuptools <sup>(*1*)</sup>
-      - python-pip <sup>(*1*)</sup>
+    - python3 <sup>(_1_)</sup>
+    - python-setuptools <sup>(_1_)</sup>
+    - python-pip <sup>(_1_)</sup>
 
-!!! info "<sup>(*1*)</sup> These need to be installed from NerdTools."
+!!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
 
-------
+---
 
 ## Setup
 
@@ -52,6 +52,7 @@ After you install the needed `Plugins` - it's time to configure everything.
 You can choose one of the following 3 options (select a tab) to install `requests`.
 
 === "User scripts"
+
     With this option, we're going to install the `requests` module when the Array is started the first time.
 
     In your unRAID Dashboard, go to your `Settings` tab and select `User Scripts` in the `User Utilities` section at the bottom.
@@ -86,7 +87,9 @@ You can choose one of the following 3 options (select a tab) to install `request
     Click on `Apply`.
 
     Finally, you will need to choose `RUN IN BACKGROUND` or restart your unRAID server to install the `requests` module.
+
 === "Python venv"
+
     With this option, we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disk. We will use this to run and store dependencies (`requests`) for this specific environment.
 
     By doing this, we will **only need to configure this once** and it will be persistent after reboots *(this differs from the previous steps)*.
@@ -94,7 +97,8 @@ You can choose one of the following 3 options (select a tab) to install `request
     First, you need to choose a location to start a new Python environment.
 
     !!! info
-        In the next steps, you will be asked to choose a [location to store the script](#copy-script-to-your-preferred-location), try to be consistent.
+
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
 
     Suggestions:
 
@@ -116,8 +120,11 @@ You can choose one of the following 3 options (select a tab) to install `request
     ```
 
     !!! info
+
         Replace `/mnt/user/data/scripts/.venv` with the path you have chosen.
+
 === "Go File"
+
     With this option, we're going to install the `requests` module when the unRAID server is started.
 
     On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
@@ -130,11 +137,11 @@ You can choose one of the following 3 options (select a tab) to install `request
 
     Restart your unRAID Server or run the above command from the terminal.
 
-------
+---
 
 ### Script
 
-Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#deluge-mover-script)).
+Now, using your favorite text editor ([VSCode](https://code.visualstudio.com/){:target="\_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="\_blank" rel="noopener noreferrer"}) edit the script you downloaded at the beginning of the guide ([HERE](#deluge-mover-script)).
 
 You only need to change a few options at the top of the script.
 
@@ -177,12 +184,13 @@ age_day_min = 3
 age_day_max = 0
 ```
 
-- `deluge_webui` => The URL you use to access Deluge locally. (*the* `"` *should remain*)
-- `deluge_password` => Your Deluge WebUI `Password`. (*the* `"` *should remain*)
+- `deluge_webui` => The URL you use to access Deluge locally. (_the_ `"` _should remain_)
+- `deluge_password` => Your Deluge WebUI `Password`. (_the_ `"` _should remain_)
 - `check_fs` => If set to `True`, it will check for the file on the cache drive before pausing.
 - `use_mover_old` => See below.
 
     !!! warning ""
+
         - If you do not use `Mover Tuning`, you **DO NOT** have to make any changes.
         - If you use `Mover Tuning` but **DON'T** want to use it for the script, change this to `True`
         - If you use `Mover Tuning` and **DO** want to use it for the script, you will not have to make any changes. However, for this option, inside the `Mover Tuner` you will need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
@@ -244,6 +252,7 @@ Choose your method (select a tab) and copy/paste the script in the new window th
     ```
 
 !!! info
+
     Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
 
 ![!Bash script](images/Unraid-settings-user-scripts-deluge-mover.png)

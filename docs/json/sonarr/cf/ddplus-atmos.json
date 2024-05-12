@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bDD[P+]|\\b(e[-_. ]?ac3)\\b"
+        "value": "\\bDD[P+]|\\b(e[-_. ]?ac-?3)\\b"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\bDD[^a-z+]|(?<!e)ac3"
+        "value": "\\bDD[^a-z+]|(?<!e-)\\b(ac-?3)\\b"
       }
     },
     {
