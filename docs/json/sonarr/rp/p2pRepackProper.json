@@ -24,27 +24,19 @@
     },
     {
       "score": 1600,
-      "terms": [
-        "/(-deflate|-inflate)\\b/i"
-      ]
+      "terms": ["/(-deflate|-inflate)\\b/i"]
     },
     {
       "score": 7,
-      "terms": [
-        "/(repack3)/i"
-      ]
+      "terms": ["/(repack3)/i"]
     },
     {
       "score": 6,
-      "terms": [
-        "/(repack2)/i"
-      ]
+      "terms": ["/(repack2)/i"]
     },
     {
       "score": 5,
-      "terms": [
-        "/\\b(repack|proper)\\b/i"
-      ]
+      "terms": ["/\\b(repack|proper)\\b/i"]
     }
   ],
   "ignored": []

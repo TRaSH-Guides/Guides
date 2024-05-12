@@ -59,6 +59,15 @@
       "fields": {
         "value": "\\[Kantai\\]|-Kantai\\b"
       }
+    },
+    {
+      "name": "SobsPlease",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SobsPlease)\\b"
+      }
     }
   ]
 }

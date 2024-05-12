@@ -13,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-      "value": "\\bAV1\\b"
+        "value": "\\bAV1\\b"
       }
     }
   ]

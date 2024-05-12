@@ -1,6 +1,6 @@
 # How to setup FlareSolverr
 
-[FlareSolverr](https://github.com/FlareSolverr/FlareSolverr){:target="_blank" rel="noopener noreferrer"} is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
+[FlareSolverr](https://github.com/FlareSolverr/FlareSolverr){:target="\_blank" rel="noopener noreferrer"} is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
 
 !!! info
 
@@ -10,7 +10,7 @@
 
 ## Install FlareSolverr
 
-Please follow the installation instruction from [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr#installation){:target="_blank" rel="noopener noreferrer"}
+Please follow the installation instruction from [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr#installation){:target="\_blank" rel="noopener noreferrer"}
 
 ## Add FlareSolverr to Prowlarr
 
@@ -29,7 +29,7 @@ Add the following info
 1. Name of the Proxy in Prowlarr.
 1. The tags for this proxy.
 1. The full host path (include http and the port) to your FlareSolverr instance.
-1. The [FlareSolver Request maxTimeout value](https://github.com/FlareSolverr/FlareSolverr#-requestget){:target="_blank" rel="noopener noreferrer"} Prowlarr should use for FlareSolverr requests. Must be between `1` second and `180` seconds (Default: `60` seconds).
+1. The [FlareSolver Request maxTimeout value](https://github.com/FlareSolverr/FlareSolverr#-requestget){:target="\_blank" rel="noopener noreferrer"} Prowlarr should use for FlareSolverr requests. Must be between `1` second and `180` seconds (Default: `60` seconds).
 1. Test if your connection works.
 1. If it works click on `Save`.
 

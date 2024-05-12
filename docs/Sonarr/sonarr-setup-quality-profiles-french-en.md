@@ -2,7 +2,7 @@
 
 !!! note "This guide is created and maintained by [Someone said "Nice"?](https://github.com/NiceTSY)"
 
-!!! tip "Cette page est aussi disponible en Français: [Guide en Français](/Sonarr/sonarr-setup-quality-profiles-french-fr/){:target="_blank" rel="noopener noreferrer"}."
+!!! tip "Cette page est aussi disponible en Français: [Guide en Français](/Sonarr/sonarr-setup-quality-profiles-french-fr/){:target="\_blank" rel="noopener noreferrer"}."
 
 So what is the best way to set up the Custom Formats and which one to use with which scores to get French and English Audio?
 
@@ -12,18 +12,18 @@ Regarding quality there isn't a best setup, it depends on your setup (hardware d
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-TRaSH created a [flowchart](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get MULTi releases.
+TRaSH created a [flowchart](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get MULTi releases.
 
-------
+---
 
 ## Basics
 
 It is quite important that you follow and understand what is envisioned by Trash's guide:
 
-- Adding Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Adding Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
 
-------
+---
 
 ## I am only interested in French subs (VOSTFR)
 
@@ -33,37 +33,38 @@ There is two options:
 
 !!! tip "This is the preferred method."
 
-- Set up Sonarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"}.
-- Set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"}. It will do an amazing job for getting your subtitle on every shows.
+- Set up Sonarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"}.
+- Set up [Bazarr](/Bazarr/Setup-Guide){:target="\_blank" rel="noopener noreferrer"}. It will do an amazing job for getting your subtitle on every shows.
 - Enjoy your shows with subs.
-- (Optional) Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
+- (Optional) Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="\_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
 - Ignore any mention of **MULTi Custom Formats**.
-- Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
+- Add the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="\_blank" rel="noopener noreferrer"} Custom Format with a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
-------
+---
 
 ## Usages
 
-There is two ways of using those French Custom Formats, with and without the Guide's original Group tiers (which can be found there: [Collection of Custom Formats](/Sonarr/sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+There is two ways of using those French Custom Formats, with and without the Guide's original Group tiers (which can be found there: [Collection of Custom Formats](/Sonarr/sonarr-collection-of-custom-formats/){:target="\_blank" rel="noopener noreferrer"}).
 To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. You need to understand that if you add the Custom Formats from this optional section if Sonarr do not find a MULTi you will still have a good scoring for single audio.
 
 !!! warning "Attention"
+
     If you use the **"Original mix (optional)"**. You need to understand that even if in the beginning the main focus of those French Custom Formats is to work alongside the original ones.
     You could end up with a single audio release when a MULTi release exists. This is because it was not scored high enough to trump the other scoring.
 
 An example for Anime in MULTi/VOSTFR is also provided at the end: [Anime Example](#anime-example)
 
-------
+---
 
 ## Examples of Quality Profile
 
 --8<-- "includes/cf/score-attention.md"
 
-------
+---
 
 ### French Audio Versions
 
@@ -73,11 +74,12 @@ Those are all optional and only there to rename your release or to prefer a cert
 - You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) Custom Format a score of `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 !!! warning "Attention"
+
     It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-en.md" !}
 
-------
+---
 
 ### French Speaking Streaming Services
 
@@ -85,13 +87,13 @@ Those are all optional and only there for information and does not have a score 
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-en.md" !}
 
-------
+---
 
 ### TRaSH recommendations
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-------
+---
 
 #### WEBDL-1080p
 
@@ -124,7 +126,7 @@ Use the following main settings in your profile.
     - It will download WEB-DL 1080p. (If you also enabled `WEB 720p` and/or `HDTV 1080p` it will upgrade till `Upgrade Until`)
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
-------
+---
 
 #### WEBDL-2160p
 
@@ -161,7 +163,7 @@ Use the following main settings in your profile.
     - It will upgrade to WEB-2160p when available.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of 10000.
 
-------
+---
 
 #### Anime Example
 
@@ -177,21 +179,21 @@ If you are looking to grab Anime with either French sub or MULTi audio (original
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
 
-------
+---
 
 ### HDR Formats
 
 TRaSH provides great guides and explanations about them at the following links:
 
-- [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
+- [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## FAQ & INFO
 
-A FAQ regarding most of the questions you could have is provided by TRaSH: [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="_blank" rel="noopener noreferrer"}
+A FAQ regarding most of the questions you could have is provided by TRaSH: [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## Acknowledgements
 

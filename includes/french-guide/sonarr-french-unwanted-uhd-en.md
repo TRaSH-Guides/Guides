@@ -1,4 +1,5 @@
 ??? abstract "Unwanted - [Click to show/hide]"
+
     | Custom Format                                                                                 |                           Score                            | Trash ID                                    |
     | --------------------------------------------------------------------------------------------- | :--------------------------------------------------------: | ------------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk) |  {{ sonarr['cf']['br-disk']['trash_scores']['default'] }}  | {{ sonarr['cf']['br-disk']['trash_id'] }}   |
@@ -6,7 +7,7 @@
     | [{{ sonarr['cf']['french-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-lq) | {{ sonarr['cf']['french-lq']['trash_scores']['default'] }} | {{ sonarr['cf']['french-lq']['trash_id'] }} |
     | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)   |  {{ sonarr['cf']['extras']['trash_scores']['default'] }}   | {{ sonarr['cf']['extras']['trash_id'] }}    |
 
-    ------
+    ---
 
     Breakdown and Why
 
@@ -16,6 +17,7 @@
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
 
     ??? warning "Type of FanSubs - [Click to show/hide]"
+
         Those Custom Formats are optionals and allow to know which type of FanSubs your releases have. Only the FastSub is not wanted as it is often done too quickly and are often not well done. If you do not want FanSub either you should also score it to {{ sonarr['cf']['fastsub']['trash_scores']['default'] }}.
 
         | Custom Format                                                                                 |                          Score                           | Trash ID                                  |

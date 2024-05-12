@@ -10,7 +10,7 @@ Import the JSON in to your Custom Formats.
 
 How ?
 
-Follow the [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+Follow the [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
 
 ---
 

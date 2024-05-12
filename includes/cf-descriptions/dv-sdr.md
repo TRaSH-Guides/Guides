@@ -1,4 +1,4 @@
-*This Custom Format will only match on* `DV SDR`
+_This Custom Format will only match on_ `DV SDR`
 
 **DV SDR**<br>
 

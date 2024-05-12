@@ -5,13 +5,15 @@
   },
   "name": "FreeLeech",
   "includeCustomFormatWhenRenaming": false,
-  "specifications": [{
-    "name": "FreeLeech",
-    "implementation": "IndexerFlagSpecification",
-    "negate": false,
-    "required": false,
-    "fields": {
-      "value": 1
+  "specifications": [
+    {
+      "name": "FreeLeech",
+      "implementation": "IndexerFlagSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
     }
-  }]
+  ]
 }

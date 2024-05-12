@@ -23,23 +23,20 @@ Using the following instructions will allow you to move the files with the use o
 
 Download the following standalone Python script.
 
-- [Script (mover.py)](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}
+- [Script (mover.py)](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="\_blank" rel="noopener noreferrer"}
 
-Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
+Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"}
 
 ### Plugins
 
 Install the following Plugins.
 
 - User Scripts
-- NerdTools
-      - python3 <sup>(*1*)</sup>
-      - python-setuptools <sup>(*1*)</sup>
-      - python-pip <sup>(*1*)</sup>
+- NerdTools - python3 <sup>(_1_)</sup> - python-setuptools <sup>(_1_)</sup> - python-pip <sup>(_1_)</sup>
 
-!!! info "<sup>(*1*)</sup> These need to be installed from NerdTools."
+!!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
 
-------
+---
 
 ## Setup
 
@@ -52,6 +49,7 @@ The script needs the qbittorrent-api module to work, so we need to make sure it'
 You can choose one of the following 3 options (select a tab) to install `qbittorrent-api`.
 
 === "User scripts"
+
     With this option, we're going to install the `qbittorrent-api` module when the Array is started the first time.
 
     In your unRAID Dashboard, go to your `Settings` tab and select `User Scripts` in the `User Utilities` section at the bottom.
@@ -90,6 +88,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     ![!RUN IN BACKGROUND](images/Unraid-settings-user-scripts-qbit-api-run-background.png)
 
 === "Python venv"
+
     With this option, we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disk. We will use this to run and store dependencies (`qbittorrent-api`) for this specific environment.
 
     By doing this, we will **only need to configure this once** and it will be persistent after reboots *(this differs from the previous steps)*.
@@ -97,7 +96,8 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     First, you need to choose a location to start a new Python environment.
 
     !!! info
-        In the next steps, you will be asked to choose a [location to store the script](#copy-script-to-your-preferred-location), try to be consistent.
+
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
 
     Suggestions:
 
@@ -119,8 +119,11 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     ```
 
     !!! info
+
         Replace `/mnt/user/data/scripts/.venv` with the path you have chosen.
+
 === "Go File"
+
     With this option, we're going to install the `qbittorrent` module when the unRAID server is started.
 
     On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
@@ -133,7 +136,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
     Restart your unRAID Server or run the above command from the terminal.
 
-------
+---
 
 ### Script
 
@@ -188,12 +191,13 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
 
 !!! info
+
     Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
 
 - `days_from` => Set Number of Days to stop torrents **from** for the move.

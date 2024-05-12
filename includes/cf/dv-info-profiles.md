@@ -5,7 +5,9 @@
     - **Profile 5** <sup>(*1*)</sup> - This is what comes with WEB-DL Dolby Vision releases without HDR10 fallback.<br>(*Incompatible devices will playback with blown out pinks and greens*)
     - **Profile 7** <sup>(*2*)</sup> - This is what comes with UHD Bluray Remuxes and UHD BluRay releases.<br>*These files will play on an Nvidia Shield Pro (2019), but on most other players will revert to the HDR10 fallback.*
     - **Profile 8** <sup>(*3*)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br>*This works with several mainstream media players.*<br>
+
     ---
+
     {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
 
     - <sup>(*1*) *PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used*</sup>

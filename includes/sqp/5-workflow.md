@@ -10,7 +10,7 @@
 
     `1080p-Remux` => `1080p-WEBDL DV/HDR` => `2160p-WEBDL` =>  `2160p-Encodes` =>  `2160p-WEBDL IMAX-E`
 
-    ------
+    ---
 
     *Possible Variables*
 

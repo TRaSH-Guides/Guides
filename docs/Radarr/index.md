@@ -4,7 +4,7 @@ Here you will find a collection of Radarr Guides I made.
 
 !!! info "Radarr is a movie collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new movies and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available."
 
-For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/radarr){:target="_blank" rel="noopener noreferrer"}
+For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/radarr){:target="\_blank" rel="noopener noreferrer"}
 
 ## Master
 
@@ -26,7 +26,7 @@ For Installation and Quick Start Guide please check the official [WikiArr](https
 
 (Alpha/Unstable) : This is the bleeding edge. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch.
 
-***Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update.***
+**_Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update._**
 
 This version is updated immediately.
 
@@ -34,4 +34,4 @@ This version is updated immediately.
 
 ### How do I update Radarr
 
-External link to the official [WikiArr](https://wiki.servarr.com/en/radarr/faq#how-do-i-update-radarr){:target="_blank" rel="noopener noreferrer"}.
+External link to the official [WikiArr](https://wiki.servarr.com/en/radarr/faq#how-do-i-update-radarr){:target="\_blank" rel="noopener noreferrer"}.

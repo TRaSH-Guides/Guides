@@ -23,11 +23,11 @@ These are 3rd party applications to sync several sections of the guide with your
 | Sonarr v3/v4 Naming Scheme                                                         |     v     |     v     |
 | Sonarr v3/v4 Quality Profiles                                                      |           |     v     |
 
-------
+---
 
 ## Notifiarr
 
-It's possible with [Notifiarr](https://notifiarr.com){:target="_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="_blank" rel="noopener noreferrer"})
+It's possible with [Notifiarr](https://notifiarr.com){:target="\_blank" rel="noopener noreferrer"} ([Patron feature](https://notifiarr.wiki/FAQ#patron){:target="\_blank" rel="noopener noreferrer"})
 
 Notifiarr is a service much bigger in scope than just custom format syncing.
 
@@ -52,7 +52,7 @@ Just enable the Custom Formats/Release Profiles you want.
     Sonarr Release Profile (Multiple Instances possible)
     ![!Notifiarr Sonarr](images/sync/notifiarr-sonarr.png)
 
-[Instructions](https://notifiarr.wiki/en/Website/Integrations/Trash){:target="_blank" rel="noopener noreferrer"}
+[Instructions](https://notifiarr.wiki/en/Website/Integrations/Trash){:target="\_blank" rel="noopener noreferrer"}
 
 ### Video Tutorial
 
@@ -64,11 +64,11 @@ Just enable the Custom Formats/Release Profiles you want.
 
     Also check out other videos from IBRACORP  [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## Recyclarr
 
-[Info](/Recyclarr/){:target="_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/wiki/){:target="_blank" rel="noopener noreferrer"}
+[Info](/Recyclarr/){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://recyclarr.dev/wiki/){:target="\_blank" rel="noopener noreferrer"}
 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.

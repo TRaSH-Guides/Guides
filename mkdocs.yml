@@ -95,6 +95,8 @@ plugins:
         # Sonarr redirects
         Sonarr/sonarr-setup-custom-formats.md: Sonarr/sonarr-setup-quality-profiles.md
         Sonarr/sonarr-setup-custom-formats-anime.md: Sonarr/sonarr-setup-quality-profiles-anime.md
+        Sonarr/Sonarr-Release-Profile-RegEx.md: Sonarr/sonarr-v3-eol.md
+        Sonarr/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-v3-eol.md
         # How to old redirects
         How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
         How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
