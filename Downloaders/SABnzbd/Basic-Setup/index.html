@@ -3653,14 +3653,14 @@
 <p><strong>I also recommend to enable the <code>Advanced Settings</code> on the top right.</strong></p>
 </div>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
-<p><a href="https://sabnzbd.org/wiki/configuration/4.0/general" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.3/general" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>General</code> =&gt; <code>Tuning</code>
 <a class="glightbox" href="../images/sabnzbd-general-tuning.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!General: Tuning" src="../images/sabnzbd-general-tuning.png" /></a></p>
 <p>I recommend setting a sane maximum speed and then limiting below that, to keep your internet connection happy. You can use <code>Settings</code> =&gt; <code>Scheduling</code> to toggle the limit on and off based on time, slowing it down while your family is using the internet and speeding it up at night when they're not.</p>
 <hr />
 <h2 id="folders">Folders<a class="headerlink" href="#folders" title="Permanent link"></a></h2>
-<p><a href="https://sabnzbd.org/wiki/configuration/4.0/folders" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.3/folders" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="user-folders">User Folders<a class="headerlink" href="#user-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>Users Folders</code>
 <a class="glightbox" href="../images/sabnzbd-folders.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Folders: User Folders" src="../images/sabnzbd-folders.png" /></a></p>
@@ -3682,10 +3682,14 @@
 <h3 id="system-folders">System Folders<a class="headerlink" href="#system-folders" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Folders</code> =&gt; <code>System Folders</code>
 <a class="glightbox" href="../images/sabnzbd-folders-system-folders.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Folders: System Folders" src="../images/sabnzbd-folders-system-folders.png" /></a></p>
-<p>I recommend the .nzb Backup Folder because sabnzbd doesn't have a hidden history and having remove from history enabled in Sonarr/Radarr is the best method. This allows you to see your past downloads and it is used for duplicate download detection/prevention. Default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is literally compressed nzb files, so can end up pretty big. But the choice is yours what you prefer.</p>
+<div class="admonition info">
+<p class="admonition-title">Starting from 4.3.x+ SABnzbd has a hidden (archive) history.</p>
+</div>
+<p>Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
+The default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.</p>
 <hr />
 <h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h2>
-<p><a href="https://sabnzbd.org/wiki/configuration/4.0/servers" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.3/servers" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <p><code>Settings</code> =&gt; <code>Servers</code> =&gt; <code>Add Server</code>
 <a class="glightbox" href="../images/sabnzbd-servers.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Servers" src="../images/sabnzbd-servers.png" /></a></p>
 <div class="admonition info">
@@ -3704,20 +3708,21 @@
 </ol>
 <hr />
 <h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link"></a></h2>
-<p><a href="https://sabnzbd.org/wiki/configuration/4.0/categories" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.3/categories" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <p><code>Settings</code>=&gt; <code>Categories</code></p>
 <p>Covered and fully explained in <a href="/Downloaders/SABnzbd/Paths-and-Categories/" rel="noopener noreferrer" target="_blank">SABnzbd - Paths and Categories</a></p>
 <hr />
 <h2 id="switches">Switches<a class="headerlink" href="#switches" title="Permanent link"></a></h2>
-<p><a href="https://sabnzbd.org/wiki/configuration/4.0/switches" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
+<p><a href="https://sabnzbd.org/wiki/configuration/4.3/switches" rel="noopener noreferrer" target="_blank">Sabnzbd Documentation</a></p>
 <h3 id="queue">Queue<a class="headerlink" href="#queue" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Queue</code>
 <a class="glightbox" href="../images/sabnzbd-switches-queue.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Switches: Queue" src="../images/sabnzbd-switches-queue.png" /></a></p>
 <ol>
-<li>When during download it becomes clear that too much data is missing, abort the job. and makes sure Sonarr/Radarr will get a notification and can look for another release.</li>
+<li>If you have good indexers that get the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.</li>
+<li>When it becomes clear during downloading that too much data is missing, abort the job to make sure Sonarr/Radarr gets the notification so it can look for another release.</li>
 <li>Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.</li>
 <li>In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.</li>
-<li>Suggest this sort so that the most likely to still be there stuff is downloaded first.</li>
+<li>This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).</li>
 <li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
 </ol>
 <h3 id="post-processing">Post processing<a class="headerlink" href="#post-processing" title="Permanent link"></a></h3>
@@ -3725,10 +3730,12 @@
 <a class="glightbox" href="../images/sabnzbd-switches-post-processing.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Switches: Post-processing" src="../images/sabnzbd-switches-post-processing.png" /></a></p>
 <ol>
 <li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
+<li>This should be set off if you have decent internet. The amount of time spent to grab pars, if needed for verification/repair, is trivial to the time that a repair might run and fail to realize it needs more pars, and grab the next part, then retry.</li>
+<li>It is your choice if you want to enable this option. It's usually an easy check and does provide benefits if the job doesn't have par2 files, as not every release has a par-set or SFV file. Generally speaking, if we're talking about scene releases, things should have both but this depends on how it's posted and how the indexer is generating the nzb. SFV is commonly used and a basic crc32 checksum is better not knowing if the file is good. Parsing an SFV file and checking the files' integrities takes very little resources. This may seem redundant given that par's checks would also handle this, however, the ease with which the check is done makes the downside almost non-existent.</li>
 <li>Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.</li>
 <li>Unpack archives (rar, zip, 7z) within archives.</li>
 <li>This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.</li>
-<li>Some servers provide an alternative NZB when a download fails. I have it enabled no guarantee that it works.</li>
+<li>Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if its a sample compared to what SABnzbd uses.</li>
 <li>Helps with de-obfuscation especially invalid file extensions</li>
 </ol>
 <hr />
@@ -3739,7 +3746,7 @@
 </div>
 <h2 id="special">Special<a class="headerlink" href="#special" title="Permanent link"></a></h2>
 <p>Rarely used options.
-Don't change these without checking the <a href="https://sabnzbd.org/wiki/configuration/4.0/special" rel="noopener noreferrer" target="_blank">SABnzbd Wiki</a> first, as some have serious side-effects.
+Don't change these without checking the <a href="https://sabnzbd.org/wiki/configuration/4.3/special" rel="noopener noreferrer" target="_blank">SABnzbd Wiki</a> first, as some have serious side-effects.
 The default values are between parentheses.</p>
 <h3 id="unable-to-connect-to-sabnzbd">Unable to connect to SABnzbd<a class="headerlink" href="#unable-to-connect-to-sabnzbd" title="Permanent link"></a></h3>
 <p>If you're trying to connect your Starr apps to SABnzbd and you're getting a error like <code>Unable to connect to SABnzbd</code> after clicking on Test.</p>
@@ -3805,7 +3812,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 12, 2024 10:38:34</span>
   </span>
 
     
