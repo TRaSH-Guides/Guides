@@ -1,0 +1,72 @@
+{
+  "trash_id": "72dae194fc92bf828f32cde7744e51a1",
+  "name": "WEB-1080p",
+  "upgradeAllowed": true,
+  "cutoff": "WEB 1080p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "items": [
+    { "name": "Unknown", "allowed": false },
+    { "name": "SDTV", "allowed": false },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
+    { "name": "DVD", "allowed": false },
+    { "name": "Bluray-480p", "allowed": false },
+    { "name": "HDTV-720p", "allowed": false },
+    { "name": "HDTV-1080p", "allowed": false },
+    { "name": "Raw-HD", "allowed": false },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "Bluray-720p", "allowed": false },
+    { "name": "Bluray-1080p", "allowed": false },
+    { "name": "Bluray-1080p Remux", "allowed": false },
+    { "name": "HDTV-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "Bluray-2160p", "allowed": false },
+    { "name": "Bluray-2160p Remux", "allowed": false },
+    {
+      "name": "WEB 1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    }
+  ],
+  "formatItems": {
+    "BR-DISK": "85c61753df5da1fb2aab6f2a47426b09",
+    "LQ": "9c11cd3f07101cdba90a2d81cf0e56b4",
+    "LQ (Release Title)": "e2315f990da2e2cbfc9fa5b7a6fcfe48",
+    "x265 (HD)": "47435ece6b99a0b477caf360e79ba0bb",
+    "Extras": "fbcb31d8dabd2a319072b84fc0b7249c",
+    "Repack/Proper": "ec8fa7296b64e8cd390a1600981f3923",
+    "Repack v2": "eb3d5cc0a2be0db205fb823640db6a3c",
+    "Repack v3": "44e7c4de10ae50265753082e5dc76047",
+    "AMZN": "d660701077794679fd59e8bdf4ce3a29",
+    "ATVP": "f67c9ca88f463a48346062e8ad07713f",
+    "CC": "77a7b25585c18af08f60b1547bb9b4fb",
+    "DCU": "36b72f59f4ea20aad9316f475f2d9fbb",
+    "DSNP": "89358767a60cc28783cdc3d0be9388a4",
+    "HBO": "7a235133c87f7da4c8cccceca7e3c7a6",
+    "HMAX": "a880d6abc21e7c16884f3ae393f84179",
+    "HULU": "f6cce30f1733d5c8194222a7507909bb",
+    "iT": "0ac24a2a68a9700bcb7eeca8e5cd644c",
+    "MAX": "81d1fbf600e2540cee87f3a23f9d3c1c",
+    "NF": "d34870697c9db575f17700212167be23",
+    "PCOK": "1656adc6d7bb2c8cca6acfb6592db421",
+    "PMTP": "c67a75ae4a1715f2bb4d492755ba4195",
+    "SHO": "ae58039e1319178e6be73caab5c42166",
+    "STAN": "1efe8da11bfd74fbbcd4d8117ddb9213",
+    "WEB Tier 01": "e6258996055b9fbab7e9cb2f75819294",
+    "WEB Tier 02": "58790d4e2fdcd9733aa7ae68ba2bb503",
+    "WEB Tier 03": "d84935abd3f8556dcd51d4f27e22d0a6",
+    "WEB Scene": "d0c516558625b04b363fa6c5c2c7cfd4"
+  }
+}

@@ -3,6 +3,7 @@
 This basic example is based on the use of docker images
 
 !!! tip ""
+
     Keep in mind the path are setup so it works with hardlinks and instant moves.
 
     More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
@@ -44,4 +45,3 @@ You don't need to add the full path under `Save Path`, it will use the root down
     ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

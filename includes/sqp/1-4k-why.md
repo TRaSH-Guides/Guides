@@ -9,7 +9,7 @@
     - You're using your smart tv app as media player device.
     - You want to grab streaming optimized releases.
 
-    ------
+    ---
 
     BHDStudio does HQ 1080p/2160p Encodes with the following features
 
@@ -24,9 +24,9 @@
 
 ### Tested Devices and Results
 
-We've tested this SQP on several devices and added the result in a [spreadsheet](https://docs.google.com/spreadsheets/d/1fhwK_PLBfJjL6w8p7tVj-qK4GA4vqMtvGegGlNwbSDo/){:target="_blank" rel="noopener noreferrer"}
+We've tested this SQP on several devices and added the result in a [spreadsheet](https://docs.google.com/spreadsheets/d/1fhwK_PLBfJjL6w8p7tVj-qK4GA4vqMtvGegGlNwbSDo/){:target="\_blank" rel="noopener noreferrer"}
 
-If you want to add any missing devices and players to the results please do so in our dedicated SQP-1 (2160p) [Discord](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}.
+If you want to add any missing devices and players to the results please do so in our dedicated SQP-1 (2160p) [Discord](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}.
 
 You will need to provide the following info.
 

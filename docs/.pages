@@ -1,12 +1,12 @@
 nav:
-    - Home: index.md
-    - Radarr
-    - Sonarr
-    - Prowlarr
-    - Bazarr
-    - Downloaders
-    - Plex
-    - Guide-Sync
-    - Misc
-    - Hardlinks
-    - How-to-setup-for: Hardlinks/How-to-setup-for
+  - Home: index.md
+  - Radarr
+  - Sonarr
+  - Prowlarr
+  - Bazarr
+  - Downloaders
+  - Plex
+  - Guide-Sync
+  - Misc
+  - Hardlinks
+  - How-to-setup-for: Hardlinks/How-to-setup-for

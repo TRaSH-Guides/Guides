@@ -1,4 +1,5 @@
 !!! warning "Information regarding HD audio"
+
     It should be noted that many problems can arise from this profile if you use the HD audio Custom Formats, as:
 
     - French Scene rules assert that the French audio should be the first (default) audio in a MULTi release.
@@ -13,4 +14,5 @@
     - The final score for the release can be lower than the pre-import.
 
     !!! tip
+
         This is why the Group tiers exist; it tries to get hold of the groups that tend to get the best original and French audio for a release. However, it is not infallible, and, once again, a movie may not have an equivalent FR audio track to the original audio's highest one.

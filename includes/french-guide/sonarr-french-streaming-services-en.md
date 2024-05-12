@@ -1,4 +1,5 @@
 ??? abstract "French Streaming Services - [Click to show/hide]"
+
     | Custom Format                                                                                            | Trash ID                                           |
     | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
     | [{{ sonarr['cf']['french-canalplus']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#canalplus) | {{ sonarr['cf']['french-canalplus']['trash_id'] }} |

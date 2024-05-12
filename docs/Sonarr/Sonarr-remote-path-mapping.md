@@ -11,13 +11,14 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Pa
 - You run dockers and **DON'T** have consistent and well planned paths.
 
 !!! note
+
     If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
 
     - [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
     - [TRaSH Guides](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## How do I recognize that I need remote path mappings
 
@@ -29,7 +30,7 @@ You will get an error that looks a little bit like the following screenshot.
 
 So looking at this screenshot it seems we need to make use of Remote Path Mappings
 
-------
+---
 
 ## How
 
@@ -49,7 +50,7 @@ A screen will pop up with the following options:
 1. `Remote Path` => The download path that you've set in your download client.
 1. `Local Path` => The path Sonarr needs to access the same path.
 
-------
+---
 
 ??? example "Examples"
 
@@ -83,4 +84,3 @@ A screen will pop up with the following options:
         ![Qbittorrent final result](images/qbit_final.png)
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

@@ -6,167 +6,167 @@
   "name": "Anime Raws",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
-        {
-          "name": "Beatrice-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Beatrice[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Daddy-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Daddy[ ._-]?(Raws)"
-          }
-        },
-            {
-          "name": "Fumi-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Fumi[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "IrizaRaws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Iriza[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Kawaiika-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Kawaiika[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "km",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "\\[km\\]|-km\\b"
-          }
-        },
-        {
-          "name": "Koi-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Koi[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Lilith-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Lilith[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "LowPower-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "LowPower[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "NanakoRaws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Nanako[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "NC-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "NC[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "neko-raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "neko[ ._-]?(raws)"
-          }
-        },
-        {
-          "name": "New-raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "New[ ._-]?(raws)"
-          }
-        },
-        {
-          "name": "Ohys-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Ohys[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Pandoratv-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Pandoratv[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Raws-Maji",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "\\b(Raws-Maji)\\b"
-          }
-        },
-        {
-          "name": "Scryous-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Scryous[ ._-]?(Raws)"
-          }
-        },
-        {
-          "name": "Seicher-Raws",
-          "implementation": "ReleaseTitleSpecification",
-          "negate": false,
-          "required": false,
-          "fields": {
-            "value": "Seicher[ ._-]?(Raws)"
-          }
-        }
-      ]
+    {
+      "name": "Beatrice-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Beatrice[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Daddy-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Daddy[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Fumi-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Fumi[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "IrizaRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Iriza[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Kawaiika-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Kawaiika[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "km",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[km\\]|-km\\b"
+      }
+    },
+    {
+      "name": "Koi-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Koi[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Lilith-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Lilith[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "LowPower-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "LowPower[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "NanakoRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Nanako[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "NC-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "NC[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "neko-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "neko[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "New-raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "New[ ._-]?(raws)"
+      }
+    },
+    {
+      "name": "Ohys-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Ohys[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Pandoratv-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pandoratv[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Raws-Maji",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Raws-Maji)\\b"
+      }
+    },
+    {
+      "name": "Scryous-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Scryous[ ._-]?(Raws)"
+      }
+    },
+    {
+      "name": "Seicher-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Seicher[ ._-]?(Raws)"
+      }
     }
+  ]
+}

@@ -3,9 +3,8 @@
 !!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
 
 {! include-markdown "../../../includes/downloaders/basic-setup.md" !}
-<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
-------
+---
 
 ## Some Basics
 
@@ -63,6 +62,7 @@ I will only explain the so called most important paths.
 ![!incoming](images/incoming.png)
 
 !!! info
+
     `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
@@ -70,6 +70,7 @@ I will only explain the so called most important paths.
 ![!queue](images/queue.png)
 
 !!! warning
+
     `WriteBuffer`: If you're low on memory don't set this to high.
 
 ## LOGGING
@@ -85,6 +86,7 @@ I will only explain the so called most important paths.
 ![!unpack](images/unpack.png)
 
 !!! info
+
     `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
 
 ## EXTENSION SCRIPTS
@@ -93,7 +95,7 @@ I will only explain the so called most important paths.
 
 Depending if you're using some NZBGet script here you can change the order or when it should be used
 
-------
+---
 
 ## Recommended Sonarr/Radarr Settings
 
@@ -127,4 +129,3 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
     and both boxes under `Failed Download Handling` at step 4.
 
 {! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

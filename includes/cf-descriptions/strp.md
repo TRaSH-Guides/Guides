@@ -1,6 +1,6 @@
 **Star+**<br>
 
-[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Star%2B){:target="_blank" rel="noopener noreferrer"}
+[From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Star%2B){:target="\_blank" rel="noopener noreferrer"}
 
 Star+ (Star Plus; stylized as ST★R+) is a subscription video on-demand over-the-top streaming service available in almost all Ibero-American states. The service is owned by The Walt Disney Company through the Disney Entertainment division and business segment.
 

@@ -68,7 +68,7 @@ For this example we're going to use `Automatic Search`.
 
 #### Setup API Limits
 
-In Prowlarr, edit the indexer of your choice and under `Query Limit` (*API hits*) and `Grab Limit` (*Downloads*) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.
+In Prowlarr, edit the indexer of your choice and under `Query Limit` (_API hits_) and `Grab Limit` (_Downloads_) you set your indexers API limits, these can be found in several places depending on the indexer, this could be in your profile or when you go to a page where you can select which package you want to buy.
 
 !!! warning "We're adding this to prevent any abuse/hammering to the indexer<br>Ignoring this can sometimes result in a (potentially lifetime) ban."
 

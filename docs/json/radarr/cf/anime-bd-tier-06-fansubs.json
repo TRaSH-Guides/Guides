@@ -57,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ANE)\\b"
+        "value": "\\[ANE\\]|-ANE$"
       }
     },
     {

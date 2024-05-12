@@ -1,10 +1,11 @@
 ??? abstract "Optional UHD - [Click to show/hide]"
+
     | Custom Format                                                                                                     |                             Score                             | Trash ID                                       |
     | ----------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------: | ---------------------------------------------- |
     | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                             |     {{ radarr['cf']['sdr']['trash_scores']['default'] }}      | {{ radarr['cf']['sdr']['trash_id'] }}          |
     | [{{ radarr['cf']['sdr-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl) :warning: | {{ radarr['cf']['sdr-no-webdl']['trash_scores']['default'] }} | {{ radarr['cf']['sdr-no-webdl']['trash_id'] }} |
 
-    ------
+    ---
 
     Breakdown and Why
 
