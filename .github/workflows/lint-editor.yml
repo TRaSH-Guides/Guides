@@ -10,7 +10,7 @@ jobs:
   editorconfig-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.4
+      - uses: actions/checkout@v4.1.5
       - name: editorconfig-checker
         run: |
           docker run --rm \
