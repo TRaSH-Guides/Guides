@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 20
   },
+  "trash_regex": "https://regex101.com/r/B0AMvg/1",
   "name": "MA",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
