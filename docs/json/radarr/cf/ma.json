@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<!dts[ .-]?hd[ .-]?)ma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
+        "value": "(?<!dts[ .-]?hd[ .-]?)\\bma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
       }
     }
   ]
