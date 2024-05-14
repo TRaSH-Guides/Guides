@@ -9,7 +9,7 @@
 ## Author: miker                                                ##
 ##                                                              ##
 ## Install:                                                     ##
-## 1. Copy script to sabnzbd's script folder                    ##
+## 1. Copy script to SABnzbd's script folder                    ##
 ## 2. run: sudo chmod +x replace_for.py                         ##
 ## 3. in SABnzbd go to Config > Categories                      ##
 ## 4. Assign replace_for.py to the required category            ##

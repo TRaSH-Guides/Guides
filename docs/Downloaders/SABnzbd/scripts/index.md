@@ -14,7 +14,7 @@
 
     Install Instructions:
 
-        1. Copy script to sabnzbd's script folder
+        1. Copy script to SABnzbd's script folder
         1. run: `sudo chmod +x Clean.py`
         1. in SABnzbd go to `Settings` => `Switches`
         1. Change Pre-queue user script and select: `Clean.py`
@@ -38,7 +38,7 @@
 
     Install Instructions:
 
-        1. Copy script to sabnzbd's script folder
+        1. Copy script to SABnzbd's script folder
         1. run: `sudo chmod +x replace_for.py`
         1. in SABnzbd go to `Settings` => `Categories`
         1. Change script for required categories and select: `replace_for.py`
