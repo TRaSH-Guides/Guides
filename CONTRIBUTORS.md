@@ -3,7 +3,7 @@
 <!-- readme: contributors -start -->
 <div style="display: flex; flex-wrap: wrap;">
     
-    <div style="flex: 1 1 20%; border: 1px currentColor; box-sizing: border-box; padding: 10px; text-align: center;">
+    <div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/6155095?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="TRaSH-"/>
       <br />
       <b><a href="https://github.com/TRaSH-">TRaSH-</a></b>
@@ -52,11 +52,6 @@
       <img src="https://avatars.githubusercontent.com/u/39887349?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="rg9400"/>
       <br />
       <b><a href="https://github.com/rg9400">rg9400</a></b>
-    </div>    
-    <div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/161516010?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="andersbjorshol"/>
-      <br />
-      <b><a href="https://github.com/andersbjorshol">andersbjorshol</a></b>
     </div>    
     <div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/76420253?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="sadstan"/>
