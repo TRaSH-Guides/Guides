@@ -12,7 +12,7 @@
 
 ## General
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/general){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/general){:target="\_blank" rel="noopener noreferrer"}
 
 ### Tuning
 
@@ -25,7 +25,7 @@ I recommend setting a sane maximum speed and then limiting below that, to keep y
 
 ## Folders
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/folders){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/folders){:target="\_blank" rel="noopener noreferrer"}
 
 ### User Folders
 
@@ -50,7 +50,7 @@ The default is empty, I picked history because it is easy. It'll end up in the `
 
 ## Servers
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/servers){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings` => `Servers` => `Add Server`
 ![!Servers](images/sabnzbd-servers.png)
@@ -73,7 +73,7 @@ The default is empty, I picked history because it is easy. It'll end up in the `
 
 ## Categories
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/categories){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/categories){:target="\_blank" rel="noopener noreferrer"}
 
 `Settings`=> `Categories`
 
@@ -83,7 +83,7 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 ## Switches
 
-[Sabnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/switches){:target="\_blank" rel="noopener noreferrer"}
+[SABnzbd Documentation](https://sabnzbd.org/wiki/configuration/4.3/switches){:target="\_blank" rel="noopener noreferrer"}
 
 ### Queue
 
@@ -160,7 +160,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     Make sure you check both boxes under `Completed Download Handling` at step 3.
 
-    Select Sabnzbd at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    Select SABnzbd at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
     ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-sabnzbd.png)
 
@@ -176,7 +176,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     and both boxes under `Failed Download Handling` at step 4.
 
-    Select Sabnzbd at step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    Select SABnzbd at step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
     ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
 
