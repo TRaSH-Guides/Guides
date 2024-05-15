@@ -32,6 +32,10 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `-1
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-original.json' %]][[% endfilter %]]
     ```
 
+!!! tip
+
+    Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
+
 ---
 
 ### Language: English Only
@@ -51,6 +55,10 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `-1
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-not-english.json' %]][[% endfilter %]]
     ```
+
+!!! tip
+
+    Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
 
@@ -80,8 +88,8 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `-1
 
 ### Language: Prefer X but i'll take Y
 
-<sub><sub>Language: Not Original or German</sub>
-<sub><sub>Language: Prefer German</sub>
+<sub><sub>Language: Not Original or German<br>
+Language: Prefer German</sub>
 
 Let's say you want German, but if German is not available then fall back to Original language but don't accept any other translated languages.
 
@@ -103,6 +111,10 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
     ```
 
+!!! tip
+
+    Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
+
 ---
 
 ### Language: Prefer Language X
@@ -120,6 +132,10 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
     ```json
     [[% filter indent(width=4) %]][[% include 'json/guide-only/language-prefer-german.json' %]][[% endfilter %]]
     ```
+
+!!! tip
+
+    Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
 
@@ -144,6 +160,28 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
     ```
 
 ---
+
+## Language Special Cases
+
+Here we will add special cases that often are related to specific languages.
+example: German Dual Language and/or Multi-language releases
+
+!!! info "In general, Dual/Multi in a release title stands for original language (*movies/show original language*) + foreign language(s). Which audio track is used for the first track isn't always known based solely on the naming."
+
+### Language: German + Original
+
+This Custom Format can be used in two ways:
+
+- If you **DON'T WANT** your media file to have a German audio track included, add this Custom Format with a score of `-10000`.
+- If you **PREFER** your media file to have a German audio track included, add this Custom Format with a positive score.
+
+<sub><sub>Language: German Dual Language</sub>
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/guide-only/language-german-and-original.json' %]][[% endfilter %]]
+    ```
 
 ## FAQ & INFO
 
