@@ -3,7 +3,7 @@
 <!-- readme: contributors -start -->
 <div style="display: flex; flex-wrap: wrap;">
     
-    <div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
+    <div style="flex: 1 1 20%; border: 1px currentColor; box-sizing: border-box; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/6155095?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="TRaSH-"/>
       <br />
       <b><a href="https://github.com/TRaSH-">TRaSH-</a></b>
