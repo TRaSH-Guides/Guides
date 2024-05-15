@@ -1,3 +1,15 @@
+# 2024-05-15 12:00
+- [chore(guide): Remove Sonarr v3 guides](https://github.com/TRaSH-Guides/Guides/pull/1909)
+- [chore(guide): Update inconsistent naming in downloaders pages](https://github.com/TRaSH-Guides/Guides/pull/1930)
+- [feat(anime): Updates to various Anime CFs based on feedback from the team and community](https://github.com/TRaSH-Guides/Guides/pull/1932)
+- [feat(guide): Update the SABnzbd guide to be UpToDate with 4.3](https://github.com/TRaSH-Guides/Guides/pull/1921)
+- [feat(radarr): Update quality size](https://github.com/TRaSH-Guides/Guides/pull/1933)
+- [feat(starr): Add ShieldBearer to LQ](https://github.com/TRaSH-Guides/Guides/pull/1911)
+- [feat(starr): Add SobsPlease to Anime section](https://github.com/TRaSH-Guides/Guides/pull/1922)
+- [fix(guide): Missing quote in unraid mover](https://github.com/TRaSH-Guides/Guides/pull/1910)
+- [fix(radarr): MA CF mismatching on title](https://github.com/TRaSH-Guides/Guides/pull/1929)
+- [fix(starr-cf/audio-channels): Add word barrier and negates to prevent matching incorrectly](https://github.com/TRaSH-Guides/Guides/pull/1919)
+
 # 2024-04-30 21:00
 - [feat(anime): Updating various CFs to fix issues](https://github.com/TRaSH-Guides/Guides/pull/1903)
 - [feat(Synology): Simplify Synology Guide](https://github.com/TRaSH-Guides/Guides/pull/1876)
