@@ -33,6 +33,7 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `-1
     ```
 
 !!! tip
+
     Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
@@ -56,6 +57,7 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `-1
     ```
 
 !!! tip
+
     Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
@@ -110,6 +112,7 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
     ```
 
 !!! tip
+
     Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
@@ -131,6 +134,7 @@ Add the following json to your Radarr/Sonarr with a score in your profile of `10
     ```
 
 !!! tip
+
     Don't forget to take a look at [Language Special Cases](/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases)
 
 ---
