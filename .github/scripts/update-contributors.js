@@ -22,12 +22,16 @@ function fetchPage() {
         return;
       }
 
-      response.data.forEach((user) => {
+      response.data.forEach((user, i) => {
         // Exclude bots and actions-user
         if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user' || user.login === 'mynameisbogdan') return;
 
+        // Determine row index for background color
+        const rowIndex = Math.floor(index / 5);
+        const bgColor = (rowIndex % 2 === 0) ? '#1e2129' : '#303850';
+
         const userHtml = `
-<div style="flex: 1 1 20%; background-color: #${(index % 2 === 0) ? '2c2c54' : '3d3d6b'}; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: ${bgColor}; padding: 10px; text-align: center;">
   <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
   <br />
   <b><a href="${user.html_url}" style="color: #ffa500;">${user.login}</a></b>
