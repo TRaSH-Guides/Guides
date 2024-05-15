@@ -133,6 +133,15 @@
       }
     },
     {
+      "name": "Anitsu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Anitsu)\\b"
+      }
+    },
+    {
       "name": "AniVoid",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

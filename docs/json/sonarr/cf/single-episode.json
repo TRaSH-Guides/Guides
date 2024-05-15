@@ -1,0 +1,16 @@
+{
+  "trash_id": "e0c1a67f23908a55b6ae9834e8ed6727",
+  "name": "Single Episode",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Single Episode",
+      "implementation": "ReleaseTypeSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 20
   },
+  "trash_regex": "https://regex101.com/r/B0AMvg/latest",
   "name": "MA",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -12,7 +13,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?<!dts[ .-]?hd[ .-]?)ma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
+        "value": "(?<!dts[ .-]?hd[ .-]?)\\bma\\b(?=.*\\bweb[ ._-]?(dl|rip)\\b)"
       }
     }
   ]
