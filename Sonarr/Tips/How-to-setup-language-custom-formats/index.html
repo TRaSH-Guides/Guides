@@ -1319,6 +1319,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#language-special-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Special Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Language Special Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#language-german-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language: German + Original
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faq-info" class="md-nav__link">
     <span class="md-ellipsis">
       FAQ &amp; INFO
@@ -3423,6 +3447,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#language-special-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Special Cases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Language Special Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#language-german-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language: German + Original
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faq-info" class="md-nav__link">
     <span class="md-ellipsis">
       FAQ &amp; INFO
@@ -3555,6 +3603,10 @@
 <span class="p">}</span>
 </code></pre></div>
 </details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't forget to take a look at <a href="/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases">Language Special Cases</a></p>
+</div>
 <hr />
 <h3 id="language-english-only">Language: English Only<a class="headerlink" href="#language-english-only" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Not English</sub></p>
@@ -3588,6 +3640,10 @@
 <span class="p">}</span>
 </code></pre></div>
 </details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't forget to take a look at <a href="/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases">Language Special Cases</a></p>
+</div>
 <hr />
 <h3 id="language-multiple-only">Language: Multiple Only<a class="headerlink" href="#language-multiple-only" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Not Dutch</sub></p>
@@ -3634,8 +3690,8 @@
 </details>
 <hr />
 <h3 id="language-prefer-x-but-ill-take-y">Language: Prefer X but i'll take Y<a class="headerlink" href="#language-prefer-x-but-ill-take-y" title="Permanent link"></a></h3>
-<p><sub><sub>Language: Not Original or German</sub>
-<sub><sub>Language: Prefer German</sub></p>
+<p><sub><sub>Language: Not Original or German<br>
+Language: Prefer German</sub></p>
 <p>Let's say you want German, but if German is not available then fall back to Original language but don't accept any other translated languages.</p>
 <div class="admonition info">
 <p class="admonition-title">For languages other than German, replace the German condition with language of your choice.</p>
@@ -3699,6 +3755,10 @@
 <span class="p">}</span>
 </code></pre></div>
 </details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't forget to take a look at <a href="/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases">Language Special Cases</a></p>
+</div>
 <hr />
 <h3 id="language-prefer-language-x">Language: Prefer Language X<a class="headerlink" href="#language-prefer-language-x" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Prefer German</sub></p>
@@ -3731,6 +3791,10 @@
 <span class="p">}</span>
 </code></pre></div>
 </details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't forget to take a look at <a href="/Radarr/Tips/How-to-setup-language-custom-formats/#language-special-cases">Language Special Cases</a></p>
+</div>
 <hr />
 <h3 id="language-prefer-multi-language">Language: Prefer Multi Language<a class="headerlink" href="#language-prefer-multi-language" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Prefer Dutch</sub></p>
@@ -3775,6 +3839,61 @@
 </code></pre></div>
 </details>
 <hr />
+<h2 id="language-special-cases">Language Special Cases<a class="headerlink" href="#language-special-cases" title="Permanent link"></a></h2>
+<p>Here we will add special cases that often are related to specific languages.
+example: German Dual Language and/or Multi-language releases</p>
+<div class="admonition info">
+<p class="admonition-title">In general, Dual/Multi in a release title stands for original language (<em>movies/show original language</em>) + foreign language(s). Which audio track is used for the first track isn't always known based solely on the naming.</p>
+</div>
+<h3 id="language-german-original">Language: German + Original<a class="headerlink" href="#language-german-original" title="Permanent link"></a></h3>
+<p>This Custom Format can be used in two ways:</p>
+<ul>
+<li>If you <strong>DON'T WANT</strong> your media file to have a German audio track included, add this Custom Format with a score of <code>-10000</code>.</li>
+<li>If you <strong>PREFER</strong> your media file to have a German audio track included, add this Custom Format with a positive score.</li>
+</ul>
+<p><sub><sub>Language: German Dual Language</sub></p>
+<details class="example">
+<summary>JSON - [Click to show/hide]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;guide-only&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;trash_scores&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;trash_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Language: German Dual and Multi language releases&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Language: German + Original&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;German&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LanguageSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DL&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(?&lt;!WEB[-_. ]?)\\b(DL)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ML&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ReleaseTitleSpecification&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;negate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\\b(ML)\\b&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
 <h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link"></a></h2>
 <h3 id="whats-reverse-scoring">What's reverse scoring<a class="headerlink" href="#whats-reverse-scoring" title="Permanent link"></a></h3>
 <details class="question">
