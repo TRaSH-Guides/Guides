@@ -2,26 +2,26 @@
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
-| Feature                                                                            | Notifiarr | Recyclarr |
-| ---------------------------------------------------------------------------------- | :-------: | :-------: |
-| GUI (graphical user interface)                                                     |     v     |           |
-| Radarr Custom Formats                                                              |     v     |     v     |
-| Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile |     v     |           |
-| Radarr predefined config files available                                           |           |     v     |
-| Radarr Clear all Custom Formats                                                    |     v     |     v     |
-| Radarr Scores                                                                      |     v     |     v     |
-| Radarr Quality Settings (File Size)                                                |     v     |     v     |
-| Radarr Naming Scheme                                                               |     v     |     v     |
-| Radarr Quality Profiles                                                            |           |     v     |
-| Sonarr v3 Release Profile RegEx                                                    |     v     |     v     |
-| Sonarr v4 Custom Formats                                                           |     v     |     v     |
-| Sonarr v4 predefined config files available                                        |           |     v     |
-| Sonarr v3/v4 Clear all Release Profiles                                            |     v     |           |
-| Sonarr v3/v4 Clear all Custom Formats                                              |     v     |     v     |
-| Sonarr v3/v4 Scores                                                                |     v     |     v     |
-| Sonarr v3/v4 Quality Settings (File Size)                                          |     v     |     v     |
-| Sonarr v3/v4 Naming Scheme                                                         |     v     |     v     |
-| Sonarr v3/v4 Quality Profiles                                                      |           |     v     |
+| Feature                                                                            |     Notifiarr      |     Recyclarr      |
+|------------------------------------------------------------------------------------|:------------------:|:------------------:|
+| GUI (graphical user interface)                                                     | :white_check_mark: |                    |
+| Radarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: |
+| Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile | :white_check_mark: |                    |
+| Radarr predefined config files available                                           |                    | :white_check_mark: |
+| Radarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: |
+| Radarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
+| Radarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
+| Radarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
+| Radarr Quality Profiles                                                            |                    | :white_check_mark: |
+| Sonarr v3 Release Profile RegEx                                                    | :white_check_mark: | :white_check_mark: |
+| Sonarr v4 Custom Formats                                                           | :white_check_mark: | :white_check_mark: |
+| Sonarr v4 predefined config files available                                        |                    | :white_check_mark: |
+| Sonarr v3/v4 Clear all Release Profiles                                            | :white_check_mark: |                    |
+| Sonarr v3/v4 Clear all Custom Formats                                              | :white_check_mark: | :white_check_mark: |
+| Sonarr v3/v4 Scores                                                                | :white_check_mark: | :white_check_mark: |
+| Sonarr v3/v4 Quality Settings (File Size)                                          | :white_check_mark: | :white_check_mark: |
+| Sonarr v3/v4 Naming Scheme                                                         | :white_check_mark: | :white_check_mark: |
+| Sonarr v3/v4 Quality Profiles                                                      |                    | :white_check_mark: |
 
 ---
 
