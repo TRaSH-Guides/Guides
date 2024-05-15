@@ -27,10 +27,10 @@ function fetchPage() {
         if (user.type === 'Bot' || user.login.toLowerCase().includes('bot') || user.login === 'actions-user' || user.login === 'mynameisbogdan') return;
 
         const userHtml = `
-<div style="flex: 1 1 20%; border: 1px solid black; box-sizing: border-box; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #${(index % 2 === 0) ? '2c2c54' : '3d3d6b'}; padding: 10px; text-align: center;">
   <img src="${user.avatar_url}&v=4" style="width: 50px; border-radius: 50%;" alt="${user.login}"/>
   <br />
-  <b><a href="${user.html_url}">${user.login}</a></b>
+  <b><a href="${user.html_url}" style="color: #ffa500;">${user.login}</a></b>
 </div>`;
 
         contributors += indentString(userHtml, '    ');
