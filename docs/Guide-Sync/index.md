@@ -13,15 +13,14 @@ These are 3rd party applications to sync several sections of the guide with your
 | Radarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
 | Radarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
 | Radarr Quality Profiles                                                            |                    | :white_check_mark: |
-| Sonarr v3 Release Profile RegEx                                                    | :white_check_mark: | :white_check_mark: |
-| Sonarr v4 Custom Formats                                                           | :white_check_mark: | :white_check_mark: |
-| Sonarr v4 predefined config files available                                        |                    | :white_check_mark: |
-| Sonarr v3/v4 Clear all Release Profiles                                            | :white_check_mark: |                    |
-| Sonarr v3/v4 Clear all Custom Formats                                              | :white_check_mark: | :white_check_mark: |
-| Sonarr v3/v4 Scores                                                                | :white_check_mark: | :white_check_mark: |
-| Sonarr v3/v4 Quality Settings (File Size)                                          | :white_check_mark: | :white_check_mark: |
-| Sonarr v3/v4 Naming Scheme                                                         | :white_check_mark: | :white_check_mark: |
-| Sonarr v3/v4 Quality Profiles                                                      |                    | :white_check_mark: |
+| Sonarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: |
+| Sonarr predefined config files available                                           |                    | :white_check_mark: |
+| Sonarr Clear all Release Profiles                                                  | :white_check_mark: |                    |
+| Sonarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: |
+| Sonarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
+| Sonarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
+| Sonarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
+| Sonarr Quality Profiles                                                            |                    | :white_check_mark: |
 
 ---
 
