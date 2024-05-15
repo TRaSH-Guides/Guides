@@ -57,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Ayashii)\\b"
+        "value": "\\[Ayashii\\]|-Ayashii\\b"
       }
     },
     {

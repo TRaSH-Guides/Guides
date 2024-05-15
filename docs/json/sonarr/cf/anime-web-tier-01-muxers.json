@@ -131,6 +131,15 @@
       "fields": {
         "value": "\\b(Z4ST1N)\\b"
       }
+    },
+    {
+      "name": "ZeroBuild",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZeroBuild)\\b"
+      }
     }
   ]
 }
