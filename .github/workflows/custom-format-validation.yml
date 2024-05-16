@@ -29,9 +29,13 @@ jobs:
         with:
           file: "docs/json/radarr/cf/*.json"
           schema: "schemas/radarr-cf.schema.json"
+          refSchemasArray:
+            ["schemas/base-cf.schema.json", "schemas/specifications/*.json"]
 
       - name: Validate Sonarr Custom Format JSONs
         uses: cardinalby/schema-validator-action@v3
         with:
           file: "docs/json/sonarr/cf/*.json"
           schema: "schemas/sonarr-cf.schema.json"
+          refSchemasArray:
+            ["schemas/base-cf.schema.json", "schemas/specifications/*.json"]
