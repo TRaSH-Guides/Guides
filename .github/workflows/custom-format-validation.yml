@@ -29,13 +29,31 @@ jobs:
         with:
           file: "docs/json/radarr/cf/*.json"
           schema: "schemas/radarr-cf.schema.json"
-          refSchemasArray:
-            ["schemas/base-cf.schema.json", "schemas/specifications/*.json"]
+          refSchemasArray: |
+            schemas/base-specification.json
+            schemas/specifications/release-title-spec.json
+            schemas/specifications/edition-spec.json
+            schemas/specifications/language-spec.json
+            schemas/specifications/indexer-flag-spec.json
+            schemas/specifications/source-spec.json
+            schemas/specifications/resolution-spec.json
+            schemas/specifications/quality-modifier-spec.json
+            schemas/specifications/size-spec.json
+            schemas/specifications/release-group-spec.json
+            schemas/specifications/year-spec.json
 
       - name: Validate Sonarr Custom Format JSONs
         uses: cardinalby/schema-validator-action@v3
         with:
           file: "docs/json/sonarr/cf/*.json"
           schema: "schemas/sonarr-cf.schema.json"
-          refSchemasArray:
-            ["schemas/base-cf.schema.json", "schemas/specifications/*.json"]
+          refSchemasArray: |
+            schemas/base-specification.json
+            schemas/specifications/release-title-spec.json
+            schemas/specifications/language-spec.json
+            schemas/specifications/indexer-flag-spec.json
+            schemas/specifications/source-spec.json
+            schemas/specifications/resolution-spec.json
+            schemas/specifications/size-spec.json
+            schemas/specifications/release-group-spec.json
+            schemas/specifications/release-type-spec.json
