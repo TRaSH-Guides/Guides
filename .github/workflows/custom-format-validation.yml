@@ -1,0 +1,37 @@
+name: Validate Custom Format JSONs
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - docs/json/radarr/cf/*.json
+      - docs/json/sonarr/cf/*.json
+      - schemas/**/*.json
+      - .github/workflows/custom-format-validation.yml
+  pull_request:
+    paths:
+      - docs/json/radarr/cf/*.json
+      - docs/json/sonarr/cf/*.json
+      - schemas/**/*.json
+      - .github/workflows/custom-format-validation.yml
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.5
+
+      - name: Validate Radarr Custom Format JSONs
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          file: "docs/json/radarr/cf/*.json"
+          schema: "schemas/radarr-cf.schema.json"
+
+      - name: Validate Sonarr Custom Format JSONs
+        uses: cardinalby/schema-validator-action@v3
+        with:
+          file: "docs/json/sonarr/cf/*.json"
+          schema: "schemas/sonarr-cf.schema.json"
