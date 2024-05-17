@@ -24,36 +24,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.5
 
-      - name: Validate Radarr Custom Format JSONs
-        uses: cardinalby/schema-validator-action@v3
+      - name: Setup Python
+        uses: actions/setup-python@v5.1.0
         with:
-          file: "docs/json/radarr/cf/*.json"
-          schema: "schemas/radarr-cf.schema.json"
-          refSchemasArray: |
-            schemas/base-specification.json
-            schemas/specifications/release-title-spec.json
-            schemas/specifications/edition-spec.json
-            schemas/specifications/language-spec.json
-            schemas/specifications/indexer-flag-spec.json
-            schemas/specifications/source-spec.json
-            schemas/specifications/resolution-spec.json
-            schemas/specifications/quality-modifier-spec.json
-            schemas/specifications/size-spec.json
-            schemas/specifications/release-group-spec.json
-            schemas/specifications/year-spec.json
+          python-version: "3.x"
 
-      - name: Validate Sonarr Custom Format JSONs
-        uses: cardinalby/schema-validator-action@v3
-        with:
-          file: "docs/json/sonarr/cf/*.json"
-          schema: "schemas/sonarr-cf.schema.json"
-          refSchemasArray: |
-            schemas/base-specification.json
-            schemas/specifications/release-title-spec.json
-            schemas/specifications/language-spec.json
-            schemas/specifications/indexer-flag-spec.json
-            schemas/specifications/source-spec.json
-            schemas/specifications/resolution-spec.json
-            schemas/specifications/size-spec.json
-            schemas/specifications/release-group-spec.json
-            schemas/specifications/release-type-spec.json
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate Radarr Custom Formats
+        run: check-jsonschema --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
+
+      - name: Validate Sonarr Custom Formats
+        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
+
+      - name: Validate Guide only Custom Formats
+        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json

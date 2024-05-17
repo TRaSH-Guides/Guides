@@ -1,21 +1,26 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/TRaSH-Guides/Guides/master/schemas/base-cf.schema.json",
   "defs": {
     "trash_id": {
       "type": "string",
-      "pattern": "^[a-fA-F0-9]{32}$"
+      "pattern": "^([a-fA-F0-9]{32}|guide-only)$"
     },
     "trash_scores": {
       "type": "object",
-      "patternProperties": {
-        "^.+$": {
+      "properties": {
+        "default": {
           "type": "integer",
           "not": {
             "const": 0
           }
         }
       },
+      "patternProperties": {
+        "^.+$": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false,
       "minProperties": 1
     },
     "trash_regex": {

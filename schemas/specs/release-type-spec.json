@@ -1,18 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/TRaSH-Guides/Guides/master/schemas/specifications/language-spec.json",
   "allOf": [
     { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
     {
       "properties": {
         "implementation": {
-          "const": "LanguageSpecification"
+          "const": "ReleaseTypeSpecification"
         },
         "fields": {
           "type": "object",
           "properties": {
             "value": {
-              "type": "integer"
+              "type": "integer",
+              "enum": [0, 1, 2, 3]
             }
           },
           "required": ["value"],

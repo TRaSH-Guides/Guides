@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/TRaSH-Guides/Guides/master/schemas/radarr-cf.schema.json",
   "type": "object",
   "properties": {
     "trash_id": {
@@ -25,16 +24,16 @@
       "type": "array",
       "items": {
         "anyOf": [
-          { "$ref": "specifications/release-title-spec.json" },
-          { "$ref": "specifications/edition-spec.json" },
-          { "$ref": "specifications/language-spec.json" },
-          { "$ref": "specifications/indexer-flag-spec.json" },
-          { "$ref": "specifications/source-spec.json" },
-          { "$ref": "specifications/resolution-spec.json" },
-          { "$ref": "specifications/quality-modifier-spec.json" },
-          { "$ref": "specifications/size-spec.json" },
-          { "$ref": "specifications/release-group-spec.json" },
-          { "$ref": "specifications/year-spec.json" }
+          { "$ref": "specs/release-title-spec.json" },
+          { "$ref": "specs/edition-spec.json" },
+          { "$ref": "specs/language-spec.json" },
+          { "$ref": "specs/indexer-flag-spec.json" },
+          { "$ref": "specs/source-spec.json" },
+          { "$ref": "specs/resolution-spec.json" },
+          { "$ref": "specs/quality-modifier-spec.json" },
+          { "$ref": "specs/size-spec.json" },
+          { "$ref": "specs/release-group-spec.json" },
+          { "$ref": "specs/year-spec.json" }
         ]
       },
       "minItems": 1
