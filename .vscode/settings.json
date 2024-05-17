@@ -7,16 +7,16 @@
   },
   "json.schemas": [
     {
+      "fileMatch": ["docs/json/guide-only/*.json"],
+      "url": "./schemas/guide-only-cf.schema.json"
+    },
+    {
       "fileMatch": ["docs/json/radarr/cf/*.json"],
       "url": "./schemas/radarr-cf.schema.json"
     },
     {
       "fileMatch": ["docs/json/sonarr/cf/*.json"],
       "url": "./schemas/sonarr-cf.schema.json"
-    },
-    {
-      "fileMatch": ["docs/json/guide-only/*.json"],
-      "url": "./schemas/guide-only-cf.schema.json"
     }
   ]
 }
