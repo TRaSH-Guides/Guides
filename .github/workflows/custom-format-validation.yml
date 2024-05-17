@@ -32,11 +32,11 @@ jobs:
       - name: Install check-jsonschema
         run: pip install check-jsonschema
 
+      - name: Validate Guide only Custom Formats
+        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json
+
       - name: Validate Radarr Custom Formats
         run: check-jsonschema --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
 
       - name: Validate Sonarr Custom Formats
         run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
-
-      - name: Validate Guide only Custom Formats
-        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json
