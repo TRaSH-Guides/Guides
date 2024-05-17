@@ -1,6 +1,7 @@
 {
   "trash_id": "02e48d30a176c91baf9e15de05e5dc6a",
   "name": "FanSUB",
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "FanSUB",
