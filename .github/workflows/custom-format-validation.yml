@@ -44,12 +44,12 @@ jobs:
 
       - name: Validate Guide only Custom Formats
         if: ${{ steps.changed_files.outputs.GUIDE_ONLY_FILES }} != ''
-        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json
+        run: check-jsonschema -v --schemafile schemas/guide-only-cf.schema.json ${{ steps.changed_files.outputs.GUIDE_ONLY_FILES }}
 
       - name: Validate Radarr Custom Formats
         if: ${{ steps.changed_files.outputs.RADARR_FILES }} != ''
-        run: check-jsonschema -v --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
+        run: check-jsonschema -v --schemafile schemas/radarr-cf.schema.json ${{ steps.changed_files.outputs.RADARR_FILES }}
 
       - name: Validate Sonarr Custom Formats
         if: ${{ steps.changed_files.outputs.SONARR_FILES }} != ''
-        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
+        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json ${{ steps.changed_files.outputs.SONARR_FILES }}
