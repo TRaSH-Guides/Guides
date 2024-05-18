@@ -5,16 +5,18 @@ on:
     branches:
       - master
     paths:
+      - .github/workflows/custom-format-validation.yml
+      - docs/json/guide-only/*.json
       - docs/json/radarr/cf/*.json
       - docs/json/sonarr/cf/*.json
       - schemas/**/*.json
-      - .github/workflows/custom-format-validation.yml
   pull_request:
     paths:
+      - .github/workflows/custom-format-validation.yml
+      - docs/json/guide-only/*.json
       - docs/json/radarr/cf/*.json
       - docs/json/sonarr/cf/*.json
       - schemas/**/*.json
-      - .github/workflows/custom-format-validation.yml
 
 jobs:
   validate-json:
@@ -32,11 +34,22 @@ jobs:
       - name: Install check-jsonschema
         run: pip install check-jsonschema
 
+      - name: Get changed Custom Formats
+        id: changed_files
+        run: |
+          git fetch origin master
+          echo "GUIDE_ONLY_FILES=$(git diff --name-only origin/master...HEAD -- docs/json/guide-only/*.json)" >> $GITHUB_OUTPUT
+          echo "RADARR_FILES=$(git diff --name-only origin/master...HEAD -- docs/json/radarr/cf/*.json)" >> $GITHUB_OUTPUT
+          echo "SONARR_FILES=$(git diff --name-only origin/master...HEAD -- docs/json/sonarr/cf/*.json)" >> $GITHUB_OUTPUT
+
       - name: Validate Guide only Custom Formats
-        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json
+        if: ${{ steps.changed_files.outputs.GUIDE_ONLY_FILES }} != ''
+        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/guide-only/*.json
 
       - name: Validate Radarr Custom Formats
-        run: check-jsonschema --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
+        if: ${{ steps.changed_files.outputs.RADARR_FILES }} != ''
+        run: check-jsonschema -v --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
 
       - name: Validate Sonarr Custom Formats
-        run: check-jsonschema --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
+        if: ${{ steps.changed_files.outputs.SONARR_FILES }} != ''
+        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
