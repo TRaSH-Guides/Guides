@@ -1,4 +1,4 @@
-_This Custom Format will only match on_ `DV HDR10`
+This Custom Format will only match on `DV HDR10`
 
 This format provides Dolby Vision _with_ HDR10 fallback.
 You will find this mainly with:
