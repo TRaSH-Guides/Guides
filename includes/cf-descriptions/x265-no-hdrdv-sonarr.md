@@ -1,6 +1,4 @@
-This blocks most 720/1080p (HD) releases that are encoded in x265.
-
-**But it will allow 720/1080p x265 releases if they have HDR and/or DV**
+This blocks most 720/1080p (HD) releases that are encoded in x265, **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
 *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
 
