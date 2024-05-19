@@ -10,6 +10,7 @@
     | [{{ radarr['cf']['hbo']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hbo)     |                                       0                                        | {{ radarr['cf']['hbo']['trash_id'] }}   |
     | [{{ radarr['cf']['hmax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hmax)   |                                       0                                        | {{ radarr['cf']['hmax']['trash_id'] }}  |
     | [{{ radarr['cf']['hulu']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hulu)   |                                       0                                        | {{ radarr['cf']['hulu']['trash_id'] }}  |
+    | [{{ radarr['cf']['it']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#it)       |                                       0                                        | {{ radarr['cf']['it']['trash_id'] }}    |
     | [{{ radarr['cf']['max']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#max)     |                                       0                                        | {{ radarr['cf']['max']['trash_id'] }}   |
     | [{{ radarr['cf']['ma']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#ma)       |              {{ radarr['cf']['ma']['trash_scores']['default'] }}               | {{ radarr['cf']['ma']['trash_id'] }}    |
     | [{{ radarr['cf']['nf']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#nf)       |                                       0                                        | {{ radarr['cf']['nf']['trash_id'] }}    |

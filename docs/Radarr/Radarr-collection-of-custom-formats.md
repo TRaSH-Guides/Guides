@@ -76,6 +76,7 @@ We've made 3 guides related to this.
 | [HBO](#hbo)                | [VIU](#viu)              |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
+| [iTunes](#it)              |                          |                          |
 | [Max](#max)                |                          |                          |
 | [Movies Anywhere](#ma)     |                          |                          |
 | [Netflix](#nf)             |                          |                          |
@@ -1902,6 +1903,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### IT
+
+<sub>iT = iTunes</sub>
+
+??? question "iTunes - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/it.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/it.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
