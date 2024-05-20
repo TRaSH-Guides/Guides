@@ -11,14 +11,14 @@ let index = 0;
 let page = 1;
 
 function fetchPage() {
-  axios.get(`https://api.github.com/repos/FonduemangVI/Guides/contributors?per_page=100&page=${page}`)
+  axios.get(`https://api.github.com/repos/TRaSH-Guides/Guides/contributors?per_page=100&page=${page}`)
     .then((response) => {
       if (response.data.length === 0) {
         // No more contributors, write the file
         contributors += '\n</div>';
         contributors = indentString(contributors, '');
 
-        fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
+        fs.writeFileSync('CONTRIBUTORS.md', `<!-- editorconfig-checker-disable-file -->\n\n## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
         return;
       }
 
