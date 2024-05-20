@@ -6,6 +6,9 @@ on:
       - master
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   update_contributors:
     runs-on: ubuntu-latest
