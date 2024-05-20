@@ -15,4 +15,5 @@ jobs:
         run: |
           docker run --rm \
             -v "${GITHUB_WORKSPACE}":/check \
-            mstruebing/editorconfig-checker
+            mstruebing/editorconfig-checker \
+            --ignore '/check/CONTRIBUTORS.md'
