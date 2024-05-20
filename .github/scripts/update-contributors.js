@@ -18,7 +18,7 @@ function fetchPage() {
         contributors += '\n</div>';
         contributors = indentString(contributors, '');
 
-        fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->`);
+        fs.writeFileSync('CONTRIBUTORS.md', `## Contributors\n\n<!-- readme: contributors -start -->\n${contributors}\n<!-- readme: contributors -end -->\n`);
         return;
       }
 
