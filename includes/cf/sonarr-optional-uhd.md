@@ -2,8 +2,9 @@
 
     !!! tip "I recommend using the following Custom Formats"
 
-        - `x265 (no HDR/DV)` over the `x265 (HD)`, Read the Why below and don't forget to read the warning :warning:
-        - `SDR (no WEBDL)` over the `SDR`, Read the Why below and don't forget to read the warning :warning:
+        - **For details on "Why" and a potential warning :warning: please see the notes below.**
+        - `x265 (no HDR/DV)` over the `x265 (HD)`
+        - `SDR (no WEBDL)` over the `SDR`
 
     | Custom Format                                                                                                       |                             Score                              | Trash ID                                        |
     | ------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |

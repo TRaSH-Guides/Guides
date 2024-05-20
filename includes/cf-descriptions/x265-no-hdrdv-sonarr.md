@@ -1,6 +1,6 @@
 This blocks most 720/1080p (HD) releases that are encoded in x265, **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
 
-*Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
+*Since some NF releases won't be released as 4k, this allows you to still have the DV/HDR releases.*
 
 In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}`
 
