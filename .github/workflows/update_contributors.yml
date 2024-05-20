@@ -1,13 +1,9 @@
 name: Update contributors
 
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   update_contributors:
-    if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
