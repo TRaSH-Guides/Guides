@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
+    {
+      "properties": {
+        "implementation": {
+          "const": "SourceSpecification"
+        },
+        "fields": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "integer",
+              "enum": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            }
+          },
+          "required": ["value"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["implementation", "fields"]
+    }
+  ]
+}
