@@ -4,6 +4,7 @@
     "default": -10000
   },
   "name": "FastSUB",
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "FastSUB",
