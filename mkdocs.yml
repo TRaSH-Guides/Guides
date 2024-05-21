@@ -32,7 +32,9 @@ extra_css:
   - stylesheets/github-permalink-style.css
 
 markdown_extensions:
+  - abbr # used for Tooltips
   - attr_list
+  - md_in_html # used for Annotations
   - admonition
   - pymdownx.caret
   - pymdownx.critic
@@ -133,6 +135,7 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
+    - content.tooltips
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -154,3 +157,5 @@ theme:
     code: "Encode Sans Expanded"
   favicon: img/favicon.png
   logo: img/logo.png
+  icon:
+    annotation: material/arrow-right-circle
