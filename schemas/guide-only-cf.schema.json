@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "trash_id": {
+      "$ref": "base-cf.schema.json#/defs/trash_id"
+    },
+    "trash_scores": {
+      "$ref": "base-cf.schema.json#/defs/trash_scores"
+    },
+    "trash_regex": {
+      "$ref": "base-cf.schema.json#/defs/trash_regex"
+    },
+    "trash_description": {
+      "$ref": "base-cf.schema.json#/defs/trash_description"
+    },
+    "name": {
+      "$ref": "base-cf.schema.json#/defs/name"
+    },
+    "includeCustomFormatWhenRenaming": {
+      "type": "boolean"
+    },
+    "specifications": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          { "$ref": "specs/release-title-spec.json" },
+          { "$ref": "specs/edition-spec.json" },
+          { "$ref": "specs/language-spec.json" },
+          { "$ref": "specs/indexer-flag-spec.json" },
+          { "$ref": "specs/source-spec.json" },
+          { "$ref": "specs/resolution-spec.json" },
+          { "$ref": "specs/quality-modifier-spec.json" },
+          { "$ref": "specs/size-spec.json" },
+          { "$ref": "specs/release-group-spec.json" },
+          { "$ref": "specs/release-type-spec.json" },
+          { "$ref": "specs/year-spec.json" }
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "trash_id",
+    "name",
+    "includeCustomFormatWhenRenaming",
+    "specifications"
+  ],
+  "additionalProperties": false
+}

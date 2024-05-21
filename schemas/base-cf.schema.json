@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "defs": {
+    "trash_id": {
+      "type": "string",
+      "pattern": "^([a-fA-F0-9]{32}|guide-only)$"
+    },
+    "trash_scores": {
+      "type": "object",
+      "properties": {
+        "default": {
+          "type": "integer",
+          "not": {
+            "const": 0
+          }
+        }
+      },
+      "patternProperties": {
+        "^.+$": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "trash_regex": {
+      "type": "string",
+      "format": "uri"
+    },
+    "trash_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseSpecification": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "$ref": "#/defs/name"
+        },
+        "negate": {
+          "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
+        }
+      },
+      "required": ["name", "negate", "required"]
+    }
+  }
+}

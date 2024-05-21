@@ -1,0 +1,44 @@
+name: Validate Custom Format JSONs
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/custom-format-validation.yml
+      - docs/json/guide-only/*.json
+      - docs/json/radarr/cf/*.json
+      - docs/json/sonarr/cf/*.json
+      - schemas/**/*.json
+  pull_request:
+    paths:
+      - .github/workflows/custom-format-validation.yml
+      - docs/json/guide-only/*.json
+      - docs/json/radarr/cf/*.json
+      - docs/json/sonarr/cf/*.json
+      - schemas/**/*.json
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5.1.0
+        with:
+          python-version: "3.x"
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate Guide only Custom Formats
+        run: check-jsonschema -v --schemafile schemas/guide-only-cf.schema.json docs/json/guide-only/*.json
+
+      - name: Validate Radarr Custom Formats
+        run: check-jsonschema -v --schemafile schemas/radarr-cf.schema.json docs/json/radarr/cf/*.json
+
+      - name: Validate Sonarr Custom Formats
+        run: check-jsonschema -v --schemafile schemas/sonarr-cf.schema.json docs/json/sonarr/cf/*.json
