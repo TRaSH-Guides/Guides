@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD030 -->
+<!-- markdownlint-disable MD030 MD041-->
 1.  - ^^**Announced**^^: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
     - ^^**In Cinemas**^^: Radarr shall consider movies available as soon as movies hit cinemas (Theatrical Date on TMDb) This option is not recommended.
     - ^^**Released**^^: Radarr shall consider movies available as soon as the Blu-Ray or streaming version is released (Digital and Physical dates on TMDb) This option is recommended and likely should be combined with an Availability Delay of `-14` or `-21` days.
@@ -18,4 +18,4 @@
 4.  - ^^**Anime**^^: Episodes released using an absolute episode number
     - ^^**Daily**^^: Episodes released daily or less frequently that use year-month-day (2017-05-25)
     - ^^**Standard**^^: Episodes released with SxxEyy pattern
-<!-- markdownlint-enable MD030 -->
+<!-- markdownlint-enable MD030 MD041-->
