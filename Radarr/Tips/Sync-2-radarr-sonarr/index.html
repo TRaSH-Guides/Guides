@@ -37,6 +37,12 @@
       
       
 
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6v2Z"/></svg>');}</style>
+
 
     
     
@@ -3473,6 +3479,7 @@
 
 
 <h1 id="how-to-sync-2-radarr-or-sonarr-with-each-other">How to Sync 2 Radarr or Sonarr with each other<a class="headerlink" href="#how-to-sync-2-radarr-or-sonarr-with-each-other" title="Permanent link"></a></h1>
+<div class="annotate">
 <p>In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.</p>
 <p>I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.</p>
 <ul>
@@ -3499,13 +3506,13 @@
 <div class="admonition info">
 <p>In this example I'm going to use two Radarr instances (The basics is the same for Sonarr).</p>
 <ul>
-<li><code>Radarr 1</code> = My main 4K/2160p (UHD) Radarr.</li>
-<li><code>Radarr 2</code> = My 1080p Radarr that I've setup for a streaming optimized quality profile.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li><ins><mark>Radarr 1</mark></ins> = My main 4K/2160p (UHD) Radarr.</li>
+<li><ins class="critic">Radarr 2</ins> = My 1080p Radarr that I've setup for a streaming optimized quality profile. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ul>
 <p>This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances</p>
 </div>
 <h4 id="adding-the-radarr-sync-list">Adding the Radarr Sync list<a class="headerlink" href="#adding-the-radarr-sync-list" title="Permanent link"></a></h4>
-<p>In <code>Radarr 2</code> go to <code>Settings</code> =&gt; <code>Lists</code></p>
+<p>In <ins class="critic">Radarr 2</ins> go to <code>Settings</code> =&gt; <code>Lists</code></p>
 <p><a class="glightbox" href="../images/radarr-settings-lists.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Radarr Settings Lists" src="../images/radarr-settings-lists.png" /></a></p>
 <p>Click on the + to add a list and select <code>Radarr</code></p>
 <p><a class="glightbox" href="../images/radarr-add-list.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Radarr add List" src="../images/radarr-add-list.png" /></a></p>
@@ -3517,14 +3524,15 @@
 <li>Enable so the movies will be automatically added.</li>
 <li>Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).</li>
 <li>Enable so Radarr will perform a search when a movie is added.</li>
-<li>When Radarr shall consider a movie as available.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
-<li>The Quality Profile you want to use on <code>Radarr 2</code>.</li>
-<li>Your root location for your media library.</li>
-<li>The Full URL to <code>Radarr 1</code> (Use local URL if they run on the same system).</li>
-<li>Your API Key of <code>Radarr 1</code>.</li>
-<li>Which Profile of <code>Radarr 1</code> you want to Sync with <code>Radarr 2</code>.</li>
-<li>Test the connection to <code>Radarr 1</code>.</li>
-<li>Save your settings.</li>
+<li>When Radarr shall consider a movie as available. (1)</li>
+<li>The Quality Profile you want to use for <ins class="critic">Radarr 2</ins>.</li>
+<li>Your <ins class="critic">Radarr 2</ins> root location for your media library.</li>
+<li>Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the movie was added)</li>
+<li>The Full URL to <ins><mark>Radarr 1</mark></ins> (Use container name or local URL if they run on the same system).</li>
+<li>Your API Key of <ins><mark>Radarr 1</mark></ins>. <span class="twemoji" title="After adding your API key, click on the test button at the bottom to see if you have a successful connection."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>Which Profile of <ins><mark>Radarr 1</mark></ins> you want to Sync with <ins class="critic">Radarr 2</ins>. <span class="twemoji" title="The dropdown box is filled after you made a successful connection with Radarr 1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>[<em>Optional</em>] Use tags from <ins><mark>Radarr 1</mark></ins> to add Movies to <ins class="critic">Radarr 2</ins>. <span class="twemoji" title="The dropdown box is filled after you made a successful connection with Radarr 1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>[<em>Optional</em>] Add all movies from the chosen root folder from <ins><mark>Radarr 1</mark></ins>. <span class="twemoji" title="The dropdown box is filled after you made a successful connection with Radarr 1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
 </ol>
 <h4 id="radarr-download-client-setup">Radarr Download client setup<a class="headerlink" href="#radarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Radarr instances, this all can be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
@@ -3532,30 +3540,30 @@
 <p><a class="glightbox" href="../images/radarr-settings-download-clients.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Radarr - Settings Download Clients" src="../images/radarr-settings-download-clients.png" /></a></p>
 <p>Select your preferred download client.</p>
 <p><a class="glightbox" href="../images/radarr-settings-download-clients-categories.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Radarr - Settings Download Clients Categories" src="../images/radarr-settings-download-clients-categories.png" /></a></p>
-<p>The only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Radarr 2</code></p>
+<p>The only thing you need to change/create is a separate <code>Category</code> that you're going to use for <ins class="critic">Radarr 2</ins></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This can't and shouldn't be the same category you use for <code>Radarr 1</code> but a separate <code>Category</code>.</p>
+<p>This can't and shouldn't be the same category you use for <ins><mark>Radarr 1</mark></ins> but a separate <code>Category</code>.</p>
 </div>
 <h3 id="how-does-this-radarr-sync-work">How does this Radarr Sync work<a class="headerlink" href="#how-does-this-radarr-sync-work" title="Permanent link"></a></h3>
-<p>You now only need to make use of <code>Radarr 1</code>. All movies you add to <code>Radarr 1</code> will be synced to <code>Radarr 2</code> at a scheduled time.</p>
+<p>You now only need to make use of <ins><mark>Radarr 1</mark></ins>. All movies you add to <ins><mark>Radarr 1</mark></ins> will be synced to <ins class="critic">Radarr 2</ins> at a scheduled time.</p>
 <hr />
 <h3 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link"></a></h3>
 <div class="admonition info">
 <p>In this example I'm going to use two Sonarr instances (The basics is the same for Radarr).</p>
 <ul>
-<li><code>Sonarr 1</code> = My main 1080p WEB-DL Sonarr.</li>
-<li><code>Sonarr 2</code> = 4K/2160p (UHD) WEB-DL Sonarr.</li>
+<li><ins><mark>Sonarr 1</mark></ins> = My main 1080p WEB-DL Sonarr.</li>
+<li><ins class="critic">Sonarr 2</ins> = 4K/2160p (UHD) WEB-DL Sonarr.</li>
 </ul>
 <p>This option is best used if you only want to have a few TV shows (or movies if you use this option with Radarr) as 4K/2160p (UHD)</p>
 </div>
 <h4 id="extra-preparation">Extra preparation<a class="headerlink" href="#extra-preparation" title="Permanent link"></a></h4>
-<p>In <code>Sonarr 1</code> go to <code>Settings</code> =&gt; <code>Profiles</code></p>
+<p>In <ins><mark>Sonarr 1</mark></ins> go to <code>Settings</code> =&gt; <code>Profiles</code></p>
 <p><a class="glightbox" href="../images/sonarr-settings-profiles.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr - Settings - Profiles" src="../images/sonarr-settings-profiles.png" /></a></p>
 <p>Clone your used profile and rename your profile from <code>Profilename - Copy</code> to <code>Profilename!</code></p>
 <p><a class="glightbox" href="../images/sonarr-clone-profile.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr - Clone Profile" src="../images/sonarr-clone-profile.png" /></a></p>
 <h4 id="adding-the-sonarr-sync-list">Adding the Sonarr Sync list<a class="headerlink" href="#adding-the-sonarr-sync-list" title="Permanent link"></a></h4>
-<p>In <code>Sonarr 2</code> go to <code>Settings</code> =&gt; <code>Import Lists</code></p>
+<p>In <ins class="critic">Sonarr 2</ins> go to <code>Settings</code> =&gt; <code>Import Lists</code></p>
 <p><a class="glightbox" href="../images/sonarr-settings-import-lists.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr Settings Import Lists" src="../images/sonarr-settings-import-lists.png" /></a></p>
 <p>Click on the + to add a list and select <code>Sonarr</code></p>
 <p><a class="glightbox" href="../images/sonarr-add-list.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr add List" src="../images/sonarr-add-list.png" /></a></p>
@@ -3563,17 +3571,22 @@
 <p><a class="glightbox" href="../images/sonarr-add-lists-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr Add Lists Options" src="../images/sonarr-add-lists-options.png" /></a></p>
 <ol>
 <li>The name you want to call your Sync list.</li>
-<li>Enable so the shows will be automatically added.</li>
-<li>Choose your monitoring options.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></li>
-<li>Your root location for your media library.</li>
-<li>The Quality Profile you want to use on <code>Sonarr 2</code>.</li>
-<li>Series Type.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></li>
-<li>If you want to use Season Folders.</li>
-<li>The Full URL to <code>Sonarr 1</code> (Use local URL if they run on the same system).</li>
-<li>Your API Key of <code>Sonarr 1</code>.</li>
-<li>The Cloned Profile of <code>Sonarr 1</code> that we're going to use to sync with <code>Sonarr 2</code>.</li>
-<li>Test the connection to <code>Sonarr 1</code>.</li>
-<li>Save your settings.</li>
+<li>Enable so the TV Shows will be automatically added.</li>
+<li>Enable so Sonarr will perform a search when a TV Show is added.</li>
+<li>Choose How do you want the series monitored initially. (2)</li>
+<li>Which new seasons should be monitored automatically. (3)</li>
+<li>Your <ins class="critic">Sonarr 2</ins> root location for your media library.</li>
+<li>The Quality Profile you want to use for <ins class="critic">Sonarr 2</ins>.</li>
+<li>Series Type. (4)</li>
+<li>If you want to use Season Folders (<strong>RECOMMENDED</strong>).</li>
+<li>Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the TV Shows was added)</li>
+<li>The Full URL to <ins><mark>Sonarr 1</mark></ins> (Use container name or local URL if they run on the same system).</li>
+<li>Your API Key of <ins><mark>Sonarr 1</mark></ins>. <span class="twemoji" title="After adding your API key, click on the test button at the bottom to see if you have a successful connection."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>Sync season monitoring (<strong>SUGGESTION: DISABLED</strong>)</li>
+<li>The Cloned Profile of <ins><mark>Sonarr 1</mark></ins> that we're going to use to sync with <ins class="critic">Sonarr 2</ins>.</li>
+<li>[<em>Optional</em>] Use tags from <ins><mark>Sonarr 1</mark></ins> to add TV Shows to <ins class="critic">Sonarr 2</ins>. <span class="twemoji" title="The dropdown box is filled after you made a successful connection with Sonarr 1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>[<em>Optional</em>] Add all TV Shows from the chosen root folder from <ins><mark>Sonarr 1</mark></ins>. <span class="twemoji" title="The dropdown box is filled after you made a successful connection with Sonarr 1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m0 10h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></li>
+<li>This is a Deprecated option.</li>
 </ol>
 <h4 id="sonarr-download-client-setup">Sonarr Download client setup<a class="headerlink" href="#sonarr-download-client-setup" title="Permanent link"></a></h4>
 <p>You don't need a separate download client for your two Sonarr/Radarr instances, this can all be done with one download client (<em>Two if you prefer Usenet and Torrents</em>).</p>
@@ -3581,14 +3594,55 @@
 <p><a class="glightbox" href="../images/sonarr-settings-download-clients.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr - Settings Download Clients" src="../images/sonarr-settings-download-clients.png" /></a></p>
 <p>Select your preferred download client.</p>
 <p><a class="glightbox" href="../images/sonarr-categories.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr Categories" src="../images/sonarr-categories.png" /></a></p>
-<p>Only thing you need to change/create is a separate <code>Category</code> that you're going to use for <code>Sonarr 2</code></p>
+<p>Only thing you need to change/create is a separate <code>Category</code> that you're going to use for <ins class="critic">Sonarr 2</ins></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>This can't and shouldn't be the same category you use for <code>Sonarr 1</code> but a separate <code>Category</code>.</p>
+<p>This can't and shouldn't be the same category you use for <ins><mark>Sonarr 1</mark></ins> but a separate <code>Category</code>.</p>
 </div>
 <h3 id="how-does-this-sonarr-sync-work">How does this Sonarr Sync work<a class="headerlink" href="#how-does-this-sonarr-sync-work" title="Permanent link"></a></h3>
-<p>You now only need to make use of <code>Sonarr 1</code>. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
+<p>You now only need to make use of <ins><mark>Sonarr 1</mark></ins>. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
 <hr />
+</div>
+<!-- markdownlint-disable MD030 MD041-->
+<ol>
+<li>
+<ul>
+<li><ins><strong>Announced</strong></ins>: Radarr shall consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.</li>
+<li><ins><strong>In Cinemas</strong></ins>: Radarr shall consider movies available as soon as movies hit cinemas (Theatrical Date on TMDb) This option is not recommended.</li>
+<li><ins><strong>Released</strong></ins>: Radarr shall consider movies available as soon as the Blu-Ray or streaming version is released (Digital and Physical dates on TMDb) This option is recommended and likely should be combined with an Availability Delay of <code>-14</code> or <code>-21</code> days.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><ins><strong>All Episodes</strong></ins>: Monitor all episodes except specials</li>
+<li><ins><strong>Future Episodes</strong></ins>: Monitor episodes that have not aired yet</li>
+<li><ins><strong>Missing Episodes</strong></ins>: Monitor episodes that do not have files or have not aired yet</li>
+<li><ins><strong>Existing Episodes</strong></ins>: Monitor episodes that have files or have not aired yet</li>
+<li><ins><strong>Recent Episodes</strong></ins>: Monitor episodes aired within the last 90 days and future episodes</li>
+<li><ins><strong>Pilot Episode</strong></ins>: Only monitor the first episode of the first season</li>
+<li><ins><strong>First Season</strong></ins>: Monitor all episodes of the first season. All other seasons will be ignored</li>
+<li><ins><strong>Last Season</strong></ins>: Monitor all episodes of the last season</li>
+<li><ins><strong>Monitor Specials</strong></ins>: Monitor all special episodes without changing the monitored status of other episodes</li>
+<li><ins><strong>Unmonitor Specials</strong></ins>: Unmonitor all special episodes without changing the monitored status of other episodes</li>
+<li><ins><strong>None</strong></ins>: No episodes will be monitored</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><ins><strong>All Seasons</strong></ins>: Monitor all new seasons automatically</li>
+<li><ins><strong>No New Seasons</strong></ins>: Do not monitor any new seasons automatically</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><ins><strong>Anime</strong></ins>: Episodes released using an absolute episode number</li>
+<li><ins><strong>Daily</strong></ins>: Episodes released daily or less frequently that use year-month-day (2017-05-25)</li>
+<li><ins><strong>Standard</strong></ins>: Episodes released with SxxEyy pattern</li>
+</ul>
+</li>
+</ol>
+<!-- markdownlint-enable MD030 MD041-->
+
 <hr />
 <div class="admonition question">
 <p class="admonition-title">Questions or Suggestions?</p>
@@ -3614,34 +3668,6 @@
 </ul>
 <p><a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn:2">
-<ul>
-<li><strong>Announced</strong>: Radarr will consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.</li>
-<li><strong>In Cinemas</strong>: Radarr will consider movies available as soon as movies hit cinemas. This option is not recommended.</li>
-<li><strong>Released</strong>: Radarr will consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.</li>
-</ul>
-<p><a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<ul>
-<li><strong>All Episodes</strong>: Monitor all episodes except specials</li>
-<li><strong>Future Episodes</strong>: Monitor episodes that have not aired yet</li>
-<li><strong>Missing Episodes</strong>: Monitor episodes that do not have files or have not aired yet</li>
-<li><strong>Existing Episodes</strong>: Monitor episodes that have files or have not aired yet</li>
-<li><strong>First Season</strong>: Monitor all episodes of the first season. All other seasons will be ignored</li>
-<li><strong>Latest Season</strong>: Monitor all episodes of the latest season and future seasons</li>
-<li><strong>None</strong>: No episodes will be monitored</li>
-</ul>
-<p><a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:4">
-<ul>
-<li><strong>Anime</strong>: Episodes released using an absolute episode number</li>
-<li><strong>Daily</strong>: Episodes released daily or less frequently that use year-month-day (2017-05-25)</li>
-<li><strong>Standard</strong>: Episodes released with SxxEyy pattern</li>
-</ul>
-<p><a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-</li>
 </ol>
 </div>
 
@@ -3666,7 +3692,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 22, 2024 01:08:14</span>
   </span>
 
     
@@ -3773,7 +3799,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
