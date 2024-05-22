@@ -4534,6 +4534,14 @@ You could end up with a single audio release when a MULTi release exists. This i
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional-uhd.md -->
 <details class="abstract">
 <summary>Optional (UHD) - [Click to show/hide]</summary>
+<div class="admonition tip">
+<p class="admonition-title">I recommend using the following Custom Formats</p>
+<ul>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
+<li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
+</ul>
+</div>
 <table>
 <thead>
 <tr>
@@ -4553,21 +4561,10 @@ You could end up with a single audio release when a MULTi release exists. This i
 <td style="text-align: center;">-10000</td>
 <td>83304f261cf516bb208c18c54c0adf97</td>
 </tr>
-</tbody>
-</table>
-<table>
-<thead>
 <tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr">SDR</a></td>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
-<td>2016d1676f5ee13a5b7257ff86ac9a93</td>
+<td>9b64dff695c2115facf1b6ea59c9bd07</td>
 </tr>
 </tbody>
 </table>
@@ -4577,9 +4574,19 @@ You could end up with a single audio release when a MULTi release exists. This i
 <li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
 <li>
 <p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-sonarr-warning.md -->
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr">SDR</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
+<!-- END INCLUDE -->
+</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
 </li>
 </ul>
 </details>

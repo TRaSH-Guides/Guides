@@ -3778,10 +3778,12 @@
 <li><strong>LQ:</strong> A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.</li>
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.</li>
 <li>
-<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265. - More info <a href="/Misc/x265-4k/" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
+<p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+<p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
+<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>

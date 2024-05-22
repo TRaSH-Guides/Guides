@@ -1871,6 +1871,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="x265 (no HDR/DV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsized-wrong-source_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsized &amp; Wrong Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golden Rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -5843,6 +5867,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="x265 (no HDR/DV)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsized-wrong-source_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsized &amp; Wrong Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golden-rule_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golden Rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -9529,7 +9577,7 @@ It can offer better visual experiences relative to HDR10. The most significant d
 <details class="question">
 <summary>DV HDR10 - [Click to show/hide]</summary>
 <p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/dv-hdr10.md -->
-<em>This Custom Format will only match on</em> <code>DV HDR10</code></p>
+This Custom Format will only match on <code>DV HDR10</code></p>
 <p>This format provides Dolby Vision <em>with</em> HDR10 fallback.
 You will find this mainly with:</p>
 <ul>
@@ -10770,9 +10818,11 @@ Because this Custom Format is used to exclude downloading of BR-DISK, it is stil
 <p><sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub></p>
 <details class="question">
 <summary>x265 (HD) - [Click to show/hide]</summary>
-<p>This blocks/ignores 720/1080p(HD) releases that are encoded in x265</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-sonarr.md -->
+This blocks all 720/1080p (HD) releases that are encoded in x265.</p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition failure">
+<details class="question">
+<summary>Why block 720/1080p encodes in x265? - [Click to show/hide]</summary>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
 <p>x265 is good for 4k stuff or 1080p if they used the remuxes as source.
@@ -10795,14 +10845,15 @@ It's all really dependent on specific situations for different people</p>
 <p>That's why I created my own golden rule.</p>
 <ul>
 <li>720/1080p =&gt; x264</li>
-<li>
-<p>2160p/4k =&gt; x265</p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</li>
+<li>2160p/4k =&gt; x265</li>
 </ul>
+</details>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
+<!-- END INCLUDE -->
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -12064,13 +12115,43 @@ For example, a lot of EVO releases end up stripped of the group name so they app
 <h3 id="x265-no-hdrdv">x265 (no HDR/DV)<a class="headerlink" href="#x265-no-hdrdv" title="Permanent link"></a></h3>
 <details class="question">
 <summary>x265 (no HDR/DV) - [Click to show/hide]</summary>
-<p>This blocks most 720/1080p (HD) releases that are encoded in x265.</p>
-<p><strong>But it will allow 720/1080p x265 releases if they have HDR and/or DV</strong></p>
-<p><em>Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.</em></p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-sonarr.md -->
+This blocks most 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow 720/1080p x265 releases if they have HDR and/or DV</strong></p>
+<p><em>Since some NF releases won't be released as 4k, this allows you to still have the DV/HDR releases.</em></p>
 <p>In your quality profile use the following score for this Custom Format: <code>-10000</code></p>
-<div class="admonition danger">
-<p class="admonition-title">Don't use this together with <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a>, Only ever include one of them <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+<details class="question">
+<summary>Why block 720/1080p encodes in x265? - [Click to show/hide]</summary>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>x265 is good for 4k stuff or 1080p if they used the remuxes as source.
+If the media isn't source quality/remux, then there will be a loss of quality every time.
+Also, once you go x265, typically that file is done.
+It can't be changed to something else without a huge loss of quality.</p>
+<p>Something like 95% of video files are x264 and have much better direct play support.
+If you have more than a couple users,
+you will notice much more transcoding.
+Just depends on your priorities.</p>
+<p>So basically if you are storage poor and just need to save space, use x265.
+The catch is if you want best quality x265, you need source quality files, so you still have huge file sizes.
+If you want maximum compatibility and the option to change your files to something else later,
+then x264.
+It's all really dependent on specific situations for different people</p>
 </div>
+<h4 id="microsized-wrong-source_1">Microsized &amp; Wrong Source<a class="headerlink" href="#microsized-wrong-source_1" title="Permanent link"></a></h4>
+<p>It's a shame that most x265 groups microsize the releases or use the x264 as source what results in low quality releases. And the few groups that do use the correct source suffer from it.</p>
+<h4 id="golden-rule_1">Golden Rule<a class="headerlink" href="#golden-rule_1" title="Permanent link"></a></h4>
+<p>That's why I created my own golden rule.</p>
+<ul>
+<li>720/1080p =&gt; x264</li>
+<li>2160p/4k =&gt; x265</li>
+</ul>
+</details>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
+<!-- END INCLUDE -->
 </details>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
@@ -12271,8 +12352,13 @@ This will prevent grabbing UHD/4k releases without HDR Formats.</p>
 <h3 id="sdr-no-webdl">SDR (no WEBDL)<a class="headerlink" href="#sdr-no-webdl" title="Permanent link"></a></h3>
 <details class="question">
 <summary>SDR (no WEBDL) - [Click to show/hide]</summary>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl.md -->
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-sonarr.md -->
 This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
 <!-- END INCLUDE -->
 </details>
 <details class="example">
@@ -22820,7 +22906,7 @@ The service features Bell Media original programming, exclusive Canadian access 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 12, 2024 18:13:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 22, 2024 19:16:24</span>
   </span>
 
     
