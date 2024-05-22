@@ -813,15 +813,7 @@ We've made 3 guides related to this.
 
 ??? question "x265 (HD) - [Click to show/hide]"
 
-    This blocks/ignores 720/1080p(HD) releases that are encoded in x265
-
-    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}`
-
-    !!! failure ""
-
-        --8<-- "includes/docker/x265.md"
-
-            !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-no-hdrdv']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv), Only ever include one of them :warning:"
+    {! include-markdown "../../includes/cf-descriptions/x265-hd-sonarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1212,15 +1204,7 @@ We've made 3 guides related to this.
 
 ??? question "x265 (no HDR/DV) - [Click to show/hide]"
 
-    This blocks most 720/1080p (HD) releases that are encoded in x265.
-
-    **But it will allow 720/1080p x265 releases if they have HDR and/or DV**
-
-    *Being that some NF releases won't be released as 4k, but you want to have DV/HDR releases.*
-
-    In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-no-hdrdv']['trash_scores']['default'] }}`
-
-    !!! Danger "Don't use this together with [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd), Only ever include one of them :warning:"
+    {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-sonarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1307,7 +1291,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR (no WEBDL) - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-sonarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
