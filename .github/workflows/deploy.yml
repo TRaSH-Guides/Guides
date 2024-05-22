@@ -1,10 +1,10 @@
 name: Build and Deploy Docs
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+  workflow_run:
+    workflows: [Update contributors]
+    types:
+      - completed
 
 jobs:
   build:
@@ -44,7 +44,7 @@ jobs:
         run: mkdocs build
 
   deploy:
-    if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
+    if: github.event.workflow_run.event == 'push' && contains(fromJson('["master", "main"]'), github.event.workflow_run.head_branch)
     needs: build
     name: Deploy docs
     runs-on: ubuntu-latest

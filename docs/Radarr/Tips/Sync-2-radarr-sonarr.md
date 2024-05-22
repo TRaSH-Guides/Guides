@@ -1,5 +1,6 @@
 # How to Sync 2 Radarr or Sonarr with each other
 
+<div class="annotate" markdown>
 In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.
 
 I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.
@@ -33,14 +34,14 @@ For this you need to have prepared the following:
 
     In this example I'm going to use two Radarr instances (The basics is the same for Sonarr).
 
-    - `Radarr 1` = My main 4K/2160p (UHD) Radarr.
-    - `Radarr 2` = My 1080p Radarr that I've setup for a streaming optimized quality profile.[^1]
+    - ^^==Radarr 1==^^ = My main 4K/2160p (UHD) Radarr.
+    - {++Radarr 2++} = My 1080p Radarr that I've setup for a streaming optimized quality profile. [^1]
 
     This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances
 
 #### Adding the Radarr Sync list
 
-In `Radarr 2` go to `Settings` => `Lists`
+In {++Radarr 2++} go to `Settings` => `Lists`
 
 ![Radarr Settings Lists](images/radarr-settings-lists.png)
 
@@ -57,14 +58,15 @@ Then you get a screen with the following options:
 1. Enable so the movies will be automatically added.
 1. Enable so the movies will be added and monitored (if disabled then there will be no search done for the movies).
 1. Enable so Radarr will perform a search when a movie is added.
-1. When Radarr shall consider a movie as available.[^2]
-1. The Quality Profile you want to use on `Radarr 2`.
-1. Your root location for your media library.
-1. The Full URL to `Radarr 1` (Use local URL if they run on the same system).
-1. Your API Key of `Radarr 1`.
-1. Which Profile of `Radarr 1` you want to Sync with `Radarr 2`.
-1. Test the connection to `Radarr 1`.
-1. Save your settings.
+1. When Radarr shall consider a movie as available. (1)
+1. The Quality Profile you want to use for {++Radarr 2++}.
+1. Your {++Radarr 2++} root location for your media library.
+1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the movie was added)
+1. The Full URL to ^^==Radarr 1==^^ (Use container name or local URL if they run on the same system).
+1. Your API Key of ^^==Radarr 1==^^. :material-alert-circle:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Which Profile of ^^==Radarr 1==^^ you want to Sync with {++Radarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
+1. [_Optional_] Use tags from ^^==Radarr 1==^^ to add Movies to {++Radarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
+1. [_Optional_] Add all movies from the chosen root folder from ^^==Radarr 1==^^. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 
 #### Radarr Download client setup
 
@@ -78,15 +80,15 @@ Select your preferred download client.
 
 ![!Radarr - Settings Download Clients Categories](images/radarr-settings-download-clients-categories.png)
 
-The only thing you need to change/create is a separate `Category` that you're going to use for `Radarr 2`
+The only thing you need to change/create is a separate `Category` that you're going to use for {++Radarr 2++}
 
 !!! warning
 
-    This can't and shouldn't be the same category you use for `Radarr 1` but a separate `Category`.
+    This can't and shouldn't be the same category you use for ^^==Radarr 1==^^ but a separate `Category`.
 
 ### How does this Radarr Sync work
 
-You now only need to make use of `Radarr 1`. All movies you add to `Radarr 1` will be synced to `Radarr 2` at a scheduled time.
+You now only need to make use of ^^==Radarr 1==^^. All movies you add to ^^==Radarr 1==^^ will be synced to {++Radarr 2++} at a scheduled time.
 
 ---
 
@@ -96,14 +98,14 @@ You now only need to make use of `Radarr 1`. All movies you add to `Radarr 1` wi
 
     In this example I'm going to use two Sonarr instances (The basics is the same for Radarr).
 
-    - `Sonarr 1` = My main 1080p WEB-DL Sonarr.
-    - `Sonarr 2` = 4K/2160p (UHD) WEB-DL Sonarr.
+    - ^^==Sonarr 1==^^ = My main 1080p WEB-DL Sonarr.
+    - {++Sonarr 2++} = 4K/2160p (UHD) WEB-DL Sonarr.
 
     This option is best used if you only want to have a few TV shows (or movies if you use this option with Radarr) as 4K/2160p (UHD)
 
 #### Extra preparation
 
-In `Sonarr 1` go to `Settings` => `Profiles`
+In ^^==Sonarr 1==^^ go to `Settings` => `Profiles`
 
 ![!Sonarr - Settings - Profiles](images/sonarr-settings-profiles.png)
 
@@ -113,7 +115,7 @@ Clone your used profile and rename your profile from `Profilename - Copy` to `Pr
 
 #### Adding the Sonarr Sync list
 
-In `Sonarr 2` go to `Settings` => `Import Lists`
+In {++Sonarr 2++} go to `Settings` => `Import Lists`
 
 ![!Sonarr Settings Import Lists](images/sonarr-settings-import-lists.png)
 
@@ -126,17 +128,22 @@ Then you get a screen with the following options:
 ![!Sonarr Add Lists Options](images/sonarr-add-lists-options.png)
 
 1. The name you want to call your Sync list.
-1. Enable so the shows will be automatically added.
-1. Choose your monitoring options.[^3]
-1. Your root location for your media library.
-1. The Quality Profile you want to use on `Sonarr 2`.
-1. Series Type.[^4]
-1. If you want to use Season Folders.
-1. The Full URL to `Sonarr 1` (Use local URL if they run on the same system).
-1. Your API Key of `Sonarr 1`.
-1. The Cloned Profile of `Sonarr 1` that we're going to use to sync with `Sonarr 2`.
-1. Test the connection to `Sonarr 1`.
-1. Save your settings.
+1. Enable so the TV Shows will be automatically added.
+1. Enable so Sonarr will perform a search when a TV Show is added.
+1. Choose How do you want the series monitored initially. (2)
+1. Which new seasons should be monitored automatically. (3)
+1. Your {++Sonarr 2++} root location for your media library.
+1. The Quality Profile you want to use for {++Sonarr 2++}.
+1. Series Type. (4)
+1. If you want to use Season Folders (**RECOMMENDED**).
+1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the TV Shows was added)
+1. The Full URL to ^^==Sonarr 1==^^ (Use container name or local URL if they run on the same system).
+1. Your API Key of ^^==Sonarr 1==^^. :material-alert-circle:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Sync season monitoring (**SUGGESTION: DISABLED**)
+1. The Cloned Profile of ^^==Sonarr 1==^^ that we're going to use to sync with {++Sonarr 2++}.
+1. [_Optional_] Use tags from ^^==Sonarr 1==^^ to add TV Shows to {++Sonarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
+1. [_Optional_] Add all TV Shows from the chosen root folder from ^^==Sonarr 1==^^. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
+1. This is a Deprecated option.
 
 #### Sonarr Download client setup
 
@@ -150,17 +157,20 @@ Select your preferred download client.
 
 ![!Sonarr Categories](images/sonarr-categories.png)
 
-Only thing you need to change/create is a separate `Category` that you're going to use for `Sonarr 2`
+Only thing you need to change/create is a separate `Category` that you're going to use for {++Sonarr 2++}
 
 !!! tip
 
-    This can't and shouldn't be the same category you use for `Sonarr 1` but a separate `Category`.
+    This can't and shouldn't be the same category you use for ^^==Sonarr 1==^^ but a separate `Category`.
 
 ### How does this Sonarr Sync work
 
-You now only need to make use of `Sonarr 1`. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.
+You now only need to make use of ^^==Sonarr 1==^^. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.
 
 ---
+</div>
+
+--8<-- "includes/annotations/sync-2-radarr-sonar.md"
 
 [^1]:
 
@@ -179,27 +189,5 @@ You now only need to make use of `Sonarr 1`. When you got a TV show (or a movie 
     - You want maximum compatibility between all devices and still have a HQ release.
     - You run two instances of Radarr and want both versions or just for the 1080p ones.
     - You want to have minimum to none transcoding for low powered devices or remote streaming.
-
-[^2]:
-
-    - **Announced**: Radarr will consider movies available as soon as they are added to Radarr. This setting is recommended if you have good private trackers that do not have fakes.
-    - **In Cinemas**: Radarr will consider movies available as soon as movies hit cinemas. This option is not recommended.
-    - **Released**: Radarr will consider movies available as soon as the Blu-ray is released. This option is recommended if your indexers contain fakes often.
-
-[^3]:
-
-    - **All Episodes**: Monitor all episodes except specials
-    - **Future Episodes**: Monitor episodes that have not aired yet
-    - **Missing Episodes**: Monitor episodes that do not have files or have not aired yet
-    - **Existing Episodes**: Monitor episodes that have files or have not aired yet
-    - **First Season**: Monitor all episodes of the first season. All other seasons will be ignored
-    - **Latest Season**: Monitor all episodes of the latest season and future seasons
-    - **None**: No episodes will be monitored
-
-[^4]:
-
-    - **Anime**: Episodes released using an absolute episode number
-    - **Daily**: Episodes released daily or less frequently that use year-month-day (2017-05-25)
-    - **Standard**: Episodes released with SxxEyy pattern
 
 --8<-- "includes/support.md"

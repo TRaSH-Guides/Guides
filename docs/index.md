@@ -43,7 +43,9 @@ All of the information provided in these guides, as well as in Discord or any gu
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="\_blank" rel="noopener noreferrer"} for introducing me to the world of docker containers with DockSTARTer, and for helping me learn the basics of it.
-- [Roxedus](https://github.com/Roxedus){:target="\_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and making everything look great.
-- [rg9400](https://github.com/rg9400){:target="\_blank" rel="noopener noreferrer"} for providing most of the Radarr v3 Custom Format Collection.
-- Everyone who contributed to this project in any way possible.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and make everything look great.
+
+--8<-- "CONTRIBUTORS.md"
+
+[Contributors](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="_blank" rel="noopener noreferrer"}
