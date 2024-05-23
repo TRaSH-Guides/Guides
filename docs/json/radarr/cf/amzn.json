@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(?:amzn|amazon)\\s*\\.?\\s*(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)|(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)\\s*\\.?\\s*(?:amzn|amazon)"
+        "value": "(?<!the\\.)\\b(?:amzn|amazon|amazon\\s?hd)\\b\\s*\\.?\\s*(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)|(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)\\s*\\.?\\s*\\b(?:amzn|amazon|amazon\\s?hd)\\b(?!\\.\\S)"
       }
     }
   ]
