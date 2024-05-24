@@ -1,16 +1,26 @@
-{
-  "trash_id": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
-  "name": "AMZN",
-  "includeCustomFormatWhenRenaming": true,
-  "specifications": [
-    {
-      "name": "Amazon",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "(?<!the\\.)\\b(?:amzn|amazon|amazon\\s?hd)\\b\\s*\\.?\\s*(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)|(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)\\s*\\.?\\s*\\b(?:amzn|amazon|amazon\\s?hd)\\b(?!\\.\\S)"
-      }
-    }
-  ]
+"negate": false,
+"required": true,
+"fields": {
+  "value": "\\b(amzn|amazon(hd)?)\\b"
 }
+},
+{
+"name": "WEBDL",
+"implementation": "SourceSpecification",
+"negate": false,
+"required": false,
+"fields": {
+  "value": 7
+}
+},
+{
+"name": "WEBRIP",
+"implementation": "SourceSpecification",
+"negate": false,
+"required": false,
+"fields": {
+  "value": 8
+  "value": "(?<!the\\.)\\b(?:amzn|amazon|amazon\\s?hd)\\b\\s*\\.?\\s*(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)|(?:web\\s?-?\\s?dl|web\\s?-?\\s?rip|480p|720p|1080p|2160p)\\s*\\.?\\s*\\b(?:amzn|amazon|amazon\\s?hd)\\b(?!\\.\\S)"
+}
+}
+]
