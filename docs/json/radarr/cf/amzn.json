@@ -11,6 +11,6 @@
       "fields": {
         "value": "\\b(amzn|amazon(hd)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
-    },
+    }
   ]
 }
