@@ -1,9 +1,5 @@
 {
   "trash_id": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
-  "trash_scores": {
-    "default": 70,
-    "anime-sonarr": 3
-  },
   "name": "AMZN",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -15,6 +11,6 @@
       "fields": {
         "value": "\b(amzn|amazon(hd)?)\b[ ._-]web[ ._-]?(dl|rip)?\b"
       }
-    }
+    },
   ]
 }
