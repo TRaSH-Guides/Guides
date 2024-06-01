@@ -15,6 +15,24 @@
       "fields": {
         "value": "\\b(amzn|amazon(hd)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
     }
   ]
 }
