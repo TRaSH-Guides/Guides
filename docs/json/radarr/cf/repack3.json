@@ -1,0 +1,29 @@
+{
+  "trash_id": "5caaaa1c08c1742aa4342d8c4cc463f2",
+  "trash_scores": {
+    "default": 7
+  },
+  "trash_regex": "https://regex101.com/r/7YIkWD/1",
+  "name": "Repack3",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Repack3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Repack3)\\b"
+      }
+    },
+    {
+      "name": "Proper3",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Proper3)\\b"
+      }
+    }
+  ]
+}
