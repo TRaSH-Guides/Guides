@@ -52,6 +52,15 @@
       }
     },
     {
+      "name": "TEKNO3D",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TEKNO3D)\\b"
+      }
+    },
+    {
       "name": "Will1869",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
