@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }} # Use the branch name or PR branch
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -30,8 +32,9 @@ jobs:
 
       - name: Commit and push if it's not up to date
         run: |
-          git diff
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
+          git checkout -B ${{ github.head_ref || github.ref_name }}  # Ensure we're on the correct branch
+          git diff
           git commit -am "chore(contributors): Update CONTRIBUTORS.md" || exit 0
-          git push
+          git push origin ${{ github.head_ref || github.ref_name }}
