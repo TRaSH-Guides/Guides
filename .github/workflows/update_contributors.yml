@@ -16,8 +16,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref || github.ref_name }} # Use the branch name or PR branch
-          fetch-depth: 0
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }} # Use the forked repository if available, otherwise the main repository
+          ref: ${{ github.event.pull_request.head.ref || github.ref_name }} # Use the PR branch name if available, otherwise the branch name
+          fetch-depth: 0 # Fetch all history for all branches and tags
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -35,7 +36,7 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git checkout -B ${{ github.head_ref || github.ref_name }}  # Ensure we're on the correct branch
+          git checkout -B ${{ github.event.pull_request.head.ref || github.ref_name }}  # Ensure we're on the correct branch
           git diff
           git commit -am "chore(contributors): Update CONTRIBUTORS.md" || exit 0
-          git push origin ${{ github.head_ref || github.ref_name }}
+          git push origin ${{ github.event.pull_request.head.ref || github.ref_name }}
