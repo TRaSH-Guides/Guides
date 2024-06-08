@@ -28,7 +28,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
-    <sub><sup>**RESULT**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+    <sub><sup>**Movie:**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
 === "Plex"
 
@@ -44,7 +44,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['plex-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Plex (TMDb)"
 
@@ -52,7 +52,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Plex Anime (IMDb)"
 
@@ -62,7 +62,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {imdb-tt0066921} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
     === "Plex Anime (TMDb)"
 
@@ -70,7 +70,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['plex-anime-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT>**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) {tmdb-345691} {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
 === "Emby"
 
@@ -84,7 +84,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['emby-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Emby (TMDb)"
 
@@ -92,7 +92,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['emby-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Emby Anime (IMDb)"
 
@@ -102,7 +102,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
     === "Emby Anime (TMDb)"
 
@@ -110,7 +110,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['emby-anime-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-tt0066921] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
 === "Jellyfin"
 
@@ -122,7 +122,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Jellyfin (TMDb)"
 
@@ -130,7 +130,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
     === "Jellyfin Anime (IMDb)"
 
@@ -138,7 +138,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [imdbid-tt0106145] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
     === "Jellyfin Anime (TMDb)"
 
@@ -146,7 +146,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
         {{ radarr['naming']['radarr-naming']['file']['jellyfin-anime-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
+        <sub><sup>**Movie**: `The Movie Title (2010) [tmdbid-65567] - {edition-Ultimate Extended Edition} [Surround Sound x264][Bluray-1080p Proper][3D][DTS 5.1][DE][10bit][AVC]-EVOLVE`</sup></sub>
 
 ---
 
@@ -180,7 +180,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
     {{ radarr['naming']['radarr-naming']['folder']['default'] }}
     ```
 
-    <sub><sup>**RESULT**: `The Movie Title (2010)`</sup></sub>
+    <sub><sup>**Example**: `The Movie Title (2010)`</sup></sub>
 
 === "Optional Plex"
 
@@ -194,7 +194,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['plex-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) {imdb-tt1520211}`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) {imdb-tt1520211}`</sup></sub>
 
     === "Plex Folder TMDb"
 
@@ -202,7 +202,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['plex-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) {tmdb-1520211}`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) {tmdb-1520211}`</sup></sub>
 
 === "Optional Emby"
 
@@ -216,7 +216,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['emby-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdb-tt1520211]`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) [imdb-tt1520211]`</sup></sub>
 
     === "Emby Folder TMDb"
 
@@ -224,7 +224,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['emby-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdb-1520211]`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) [tmdb-1520211]`</sup></sub>
 
 === "Optional Jellyfin"
 
@@ -238,7 +238,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['jellyfin-imdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [imdbid-tt1520211]`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) [imdbid-tt1520211]`</sup></sub>
 
     === "Jellyfin Folder TMDb"
 
@@ -246,7 +246,7 @@ The filename can be Obscured where the Release naming isn't, especially when you
         {{ radarr['naming']['radarr-naming']['folder']['jellyfin-tmdb'] }}
         ```
 
-        <sub><sup>**RESULT**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
+        <sub><sup>**Example**: `The Movie Title (2010) [tmdbid-1520211]`</sup></sub>
 
 ---
 
