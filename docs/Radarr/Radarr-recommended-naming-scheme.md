@@ -24,7 +24,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
 
 === "Standard"
 
-    ```bash
+    ```none
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
@@ -48,7 +48,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
 
     === "Plex (TMDb)"
 
-        ```bash
+        ```none
         {{ radarr['naming']['radarr-naming']['file']['plex-tmdb'] }}
         ```
 
