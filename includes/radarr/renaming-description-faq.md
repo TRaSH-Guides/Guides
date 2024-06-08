@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 On the Radarr/Sonarr Discord people often ask,
 
 - “What's the recommended/best way to name your files or folders?”
@@ -38,3 +39,4 @@ Even though it is a personal preference, it is still recommended to add non-reco
     - Any proper media server (Plex, Emby or Jellyfin) doesn't show the actual filename anyway so why worry how the file looks and has all the needed info included.
 
 The naming scheme provided here is made with the help of the Sonarr/Radarr (Support) Team and information provided by the community.
+<!-- markdownlint-enable MD041-->
