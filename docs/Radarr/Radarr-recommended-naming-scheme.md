@@ -28,7 +28,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
     {{ radarr['naming']['radarr-naming']['file']['standard'] }}
     ```
 
-    <sub><sup>**Movie:**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
+    <sub><sup>**Movie**: `The Movie Title (2010) {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`</sup></sub>
 
 === "Plex"
 
