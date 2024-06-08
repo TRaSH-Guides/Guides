@@ -1,17 +1,36 @@
 {
   "folder": {
     "default": "{Movie CleanTitle} ({Release Year})",
+    "plex-imdb": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
+    "plex-tmdb": "{Movie CleanTitle} ({Release Year}) {tmdb-{TmdbId}}",
+    "emby-imdb": "{Movie CleanTitle} ({Release Year}) [imdb-{ImdbId}]",
+    "emby-tmdb": "{Movie CleanTitle} ({Release Year}) [tmdb-{TmdbId}]",
+    "jellyfin-imdb": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
+    "jellyfin-tmdb": "{Movie CleanTitle} ({Release Year}) [tmdbid-{TmdbId}]",
     "plex": "{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}",
     "emby": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]",
     "jellyfin": "{Movie CleanTitle} ({Release Year}) [imdbid-{ImdbId}]"
   },
   "file": {
+    "standard": "{Movie CleanTitle} {(Release Year)} - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "plex-imdb": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "plex-tmdb": "{Movie CleanTitle} {(Release Year)} {tmdb-{TmdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "plex-anime-imdb": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "plex-anime-tmdb": "{Movie CleanTitle} {(Release Year)} {tmdb-{TmdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "emby-imdb": "{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "emby-tmdb": "{Movie CleanTitle} {(Release Year)} [tmdb-{TmdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "emby-anime-imdb": "{Movie CleanTitle} {(Release Year)} [imdb-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "emby-anime-tmdb": "{Movie CleanTitle} {(Release Year)} [tmdb-{TmdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "jellyfin-imdb": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "jellyfin-tmdb": "{Movie CleanTitle} {(Release Year)} [tmdbid-{TmdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
+    "jellyfin-anime-imdb": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "jellyfin-anime-tmdb": "{Movie CleanTitle} {(Release Year)} [tmdbid-{TmdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
+    "original": "{Original Title}",
     "default": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
     "emby": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
     "jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{[Mediainfo VideoCodec]}{-Release Group}",
     "anime": "{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
     "anime-emby": "{Movie CleanTitle} {(Release Year)} - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
-    "anime-jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}",
-    "original": "{Original Title}"
+    "anime-jellyfin": "{Movie CleanTitle} {(Release Year)} [imdbid-{ImdbId}] - {Edition Tags }{[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}{MediaInfo AudioLanguages}[{MediaInfo VideoBitDepth}bit]{[Mediainfo VideoCodec]}{-Release Group}"
   }
 }
