@@ -899,10 +899,7 @@ We've made 3 guides related to this.
 
 ??? question "AV1 - [Click to show/hide]"
 
-    - This is a new codec and you need modern devices that support it.
-    - We also had reports of playback/transcoding issues.
-    - No main group is actually using it (yet).
-    - It's better to ignore this new codec to prevent compatibility issues.
+    {! include-markdown "../../includes/cf-descriptions/av1.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
