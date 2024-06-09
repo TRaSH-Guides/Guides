@@ -1,1 +1,1 @@
-!!! info "Currently, AV1 encodes are aimed towards smaller file sizes to the detriment of visual quality."
+!!! info "AV1 encodes are currently targeting small file sizes, rather than good visual quality."
