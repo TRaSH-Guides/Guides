@@ -6,6 +6,10 @@
 
 ## Sonarr Quality Definitions
 
+--8<-- "includes/starr/quality-size-preferred-info.md"
+
+!!! info "`400` is the displayed value for Unlimited"
+
 === "Standard"
 
     | Quality                                                            | Minimum (Megabytes Per Minute)                                 | Maximum (Megabytes Per Minute)                                 |
@@ -48,8 +52,6 @@
     | {{ sonarr['quality-size']['anime']['qualities'][16]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][17]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
-
---8<-- "includes/starr/quality-size-preferred-info.md"
 
 ---
 

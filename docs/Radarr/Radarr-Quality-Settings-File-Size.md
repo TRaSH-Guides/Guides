@@ -1,5 +1,7 @@
 # Quality Settings (File Size)
 
+--8<-- "includes/starr/quality-size-preferred-info.md"
+
 --8<-- "includes/starr/quality-size-description-faq.md"
 
 ---
@@ -24,8 +26,6 @@
 | {{ radarr['quality-size']['movie']['qualities'][11]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['max'] }} |
 | {{ radarr['quality-size']['movie']['qualities'][12]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['max'] }} |
 | {{ radarr['quality-size']['movie']['qualities'][13]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['max'] }} |
-
---8<-- "includes/starr/quality-size-preferred-info.md"
 
 ---
 
