@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
---8<-- "includes/radarr/renaming-description-faq.md"
+--8<-- "includes/starr/renaming-description-faq.md"
 
 ---
 
@@ -54,7 +54,7 @@ Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
 ## Series Folder Format
 
-IMDb IDs are very accurate and rarely change. In contrast, TVDb IDs do change or are removed more frequently, but they are more aligned with Sonarr.
+--8<-- "includes/radarr/imdb-vs-tvdb.md"
 
 === "Standard Folder"
 

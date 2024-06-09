@@ -1,6 +1,6 @@
 # Recommended naming scheme
 
---8<-- "includes/radarr/renaming-description-faq.md"
+--8<-- "includes/starr/renaming-description-faq.md"
 
 ---
 
@@ -20,7 +20,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
 
 ## Standard Movie Format
 
-While both IMDb and TMDb IDs are unique, TMDb can occasionally remove IDs entirely, sometimes only to be re-added with a new ID later. However, due to using TMDb as its metadata source, they can be seen as "more aligned" with Radarr. IMDb IDs on the other hand, once present, are very accurate and rarely ever change.
+--8<-- "includes/radarr/imdb-vs-tmdb.md"
 
 === "Standard"
 
@@ -169,6 +169,8 @@ The filename can be Obscured where the Release naming isn't, especially when you
 ---
 
 ## Movie Folder Format
+
+--8<-- "includes/radarr/imdb-vs-tmdb.md"
 
 !!! warning "Please note that folder names are created in the database whenever the movie is added to Radarr and it may be missing or incorrect at that time, resulting in your folder having a blank ID.:bangbang:<br><br>If you instead add it to the filename, the IMDb/TMDb ID will be freshly pulled for any download or upgrade."
 
