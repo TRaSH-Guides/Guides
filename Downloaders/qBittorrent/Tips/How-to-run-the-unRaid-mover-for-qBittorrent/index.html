@@ -3485,7 +3485,7 @@
 <h3 id="qbittorrent-api-module"><code>qbittorrent-api</code> module<a class="headerlink" href="#qbittorrent-api-module" title="Permanent link"></a></h3>
 <p>The script needs the qbittorrent-api module to work, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.</p>
 <p>You can choose one of the following 3 options (select a tab) to install <code>qbittorrent-api</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">User scripts</label><label for="__tabbed_1_2">Python venv</label><label for="__tabbed_1_3">Go File</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="user-scripts" name="__tabbed_1" type="radio" /><input id="python-venv" name="__tabbed_1" type="radio" /><input id="go-file" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="user-scripts">User scripts</label><label for="python-venv">Python venv</label><label for="go-file">Go File</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>With this option, we're going to install the <code>qbittorrent-api</code> module when the Array is started the first time.</p>
@@ -3567,7 +3567,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <div class="admonition info">
 <p class="admonition-title">replace <code>ip</code> with your unraid server ip, replace <code>port</code> with your webgui port you use to access the webgui</p>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python (Native)</label><label for="__tabbed_2_2">Python (venv)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="python-native" name="__tabbed_2" type="radio" /><input id="python-venv_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="python-native">Python (Native)</label><label for="python-venv_1">Python (venv)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
