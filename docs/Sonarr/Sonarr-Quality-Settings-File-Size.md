@@ -12,7 +12,7 @@
 
 === "Standard"
 
-    | Quality                                                            | Minimum (Megabytes Per Minute)                                 | Maximum (Megabytes Per Minute)                                 |
+    | Quality                                                            | Minimum (MB/min)                                 | Maximum (MB/min)                                 |
     | ------------------------------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------------- |
     | {{ sonarr['quality-size']['series']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][0]['max'] }}  |
     | {{ sonarr['quality-size']['series']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['series']['qualities'][1]['max'] }}  |
@@ -31,7 +31,7 @@
 
 === "Anime/Animated/Cartoons"
 
-    | Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
+    | Quality                                                           | Minimum (MB/min)                                | Maximum (MB/min)                                |
     | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
     | {{ sonarr['quality-size']['anime']['qualities'][0]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][0]['max'] }}  |
     | {{ sonarr['quality-size']['anime']['qualities'][1]['quality'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['min'] }}  | {{ sonarr['quality-size']['anime']['qualities'][1]['max'] }}  |

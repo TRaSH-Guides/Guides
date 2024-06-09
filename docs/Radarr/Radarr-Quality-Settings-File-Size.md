@@ -10,7 +10,7 @@
 
 !!! info "`400` is the displayed value for Unlimited"
 
-| Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
+| Quality                                                           | Minimum (MB/min)                                | Maximum (MB/min)                                |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | {{ radarr['quality-size']['movie']['qualities'][0]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['max'] }}  |
 | {{ radarr['quality-size']['movie']['qualities'][1]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][1]['max'] }}  |
