@@ -10,7 +10,7 @@ Even though it is a personal preference, it is still recommended to add non-reco
 
 ??? question "Why?"
 
-    - If, for what ever reason, you ever need to do a re-install or a full re-import in the Starr Apps or Plex/Emby/Jellyfin it's nice to have all that info in the filename so it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
+    - If, for whatever reason, you ever need to do a re-install or a full re-import in the Starr Apps or Plex/Emby/Jellyfin, it's nice to have all that info in the filename so it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     - Prevent download loops.
 
 ??? question "What's non-recoverable information?"
@@ -35,8 +35,8 @@ Even though it is a personal preference, it is still recommended to add non-reco
 ??? question "Why is the file naming so long?"
 
     - To make sure your filename contains all the info needed to prevent download loops after import.
-    - The so called naming tokens not used in your media file won't be used/shown.
-    - Any proper media server (Plex, Emby or Jellyfin) doesn't show the actual filename anyway so why worry how the file looks and has all the needed info included.
+    - The so-called "naming tokens" not used in your media file won't be used/shown.
+    - Any proper media server (Plex, Emby, or Jellyfin) won't display the actual filename outright anyway, so why worry about how the file's naming looks when it has all the needed info included?
 
 The naming scheme provided here is made with the help of the Sonarr/Radarr (Support) Team and information provided by the community.
 <!-- markdownlint-enable MD041-->

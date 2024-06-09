@@ -20,7 +20,7 @@ Finally, enable `Rename Movies` to reveal the movie renaming options.
 
 ## Standard Movie Format
 
-IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or are removed more frequently, but they are more aligned with Radarr.
+While both IMDb and TMDb IDs are unique, TMDb can occasionally remove IDs entirely, sometimes only to be re-added with a new ID later. However, due to using TMDb as its metadata source, they can be seen as "more aligned" with Radarr. IMDb IDs on the other hand, once present, are very accurate and rarely ever change. 
 
 === "Standard"
 
@@ -74,7 +74,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
 
 === "Emby"
 
-    Used Source: [Emby Wiki/Docs](https://emby.media/support/articles/Movie-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
+    Source: [Emby Wiki/Docs](https://emby.media/support/articles/Movie-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
 
     === "Emby (IMDb)"
 
@@ -114,7 +114,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TMDb IDs do change or
 
 === "Jellyfin"
 
-    Used Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/movies){:target="\_blank" rel="noopener noreferrer"}
+    Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/movies){:target="\_blank" rel="noopener noreferrer"}
 
     === "Jellyfin (IMDb)"
 
@@ -170,11 +170,11 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 ## Movie Folder Format
 
-!!! warning "Please note that folder names are created in the database whenever the movie is added to Radarr, and it may be missing or incorrect at that time, resulting in your folder having a blank ID.:bangbang:<br><br>If you instead add it to the filename, the IMDb/TMDb ID will be freshly pulled for any download or upgrade."
+!!! warning "Please note that folder names are created in the database whenever the movie is added to Radarr and it may be missing or incorrect at that time, resulting in your folder having a blank ID.:bangbang:<br><br>If you instead add it to the filename, the IMDb/TMDb ID will be freshly pulled for any download or upgrade."
 
 === "Standard Folder"
 
-    Minimal needed and recommended
+    Minimum needed and recommended
 
     ```bash
     {{ radarr['naming']['radarr-naming']['folder']['default'] }}

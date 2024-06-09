@@ -88,7 +88,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TVDb IDs do change or
 
 === "Optional Emby"
 
-    Used Source: [Emby Wiki/Docs](https://emby.media/support/articles/TV-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
+    Source: [Emby Wiki/Docs](https://emby.media/support/articles/TV-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
 
     === "Emby Folder IMDb"
 
@@ -110,7 +110,7 @@ IMDb IDs are very accurate and rarely change. In contrast, TVDb IDs do change or
 
 === "Optional Jellyfin"
 
-    Used Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/){:target="\_blank" rel="noopener noreferrer"}
+    Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/){:target="\_blank" rel="noopener noreferrer"}
 
     !!! warning "Jellyfin doesn't support IMDb ID's for shows"
 
