@@ -1,14 +1,14 @@
 # Quality Settings (File Size)
 
---8<-- "includes/starr/quality-size-preferred-info.md"
-
 --8<-- "includes/starr/quality-size-description-faq.md"
 
 ---
 
 ## Radarr Quality Definitions
 
-- Note that `400` is the displayed value for Unlimited
+--8<-- "includes/starr/quality-size-preferred-info.md"
+
+!!! info "`400` is the displayed value for Unlimited"
 
 | Quality                                                           | Minimum (Megabytes Per Minute)                                | Maximum (Megabytes Per Minute)                                |
 | ----------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
