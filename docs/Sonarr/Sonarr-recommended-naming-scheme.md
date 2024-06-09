@@ -54,7 +54,7 @@ Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
 ## Series Folder Format
 
---8<-- "includes/radarr/imdb-vs-tvdb.md"
+--8<-- "includes/sonarr/imdb-vs-tvdb.md"
 
 === "Standard Folder"
 
