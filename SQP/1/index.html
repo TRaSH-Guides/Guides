@@ -3774,6 +3774,11 @@
 <td style="text-align: center;">-10000</td>
 <td>a5d148168c4506b55cf53984107c396e</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#av1">AV1</a></td>
+<td style="text-align: center;">-10000</td>
+<td>cae4ca30163749b891686f95532519bd</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -3795,6 +3800,18 @@
 </li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li><strong>10bit:</strong> Blocks releases that use Hi10P</li>
+<li>
+<p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
+AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<ul>
+<li>This is a new codec and you need modern devices that support it.</li>
+<li>We also had reports of playback/transcoding issues.</li>
+<li>No main group is actually using it (yet).</li>
+<li>It's better to ignore this new codec to prevent compatibility issues</li>
+</ul>
+<!-- END INCLUDE -->
+</li>
 </ul>
 </details>
 <!-- END INCLUDE -->

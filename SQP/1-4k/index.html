@@ -4017,6 +4017,11 @@
 <td style="text-align: center;">-10000</td>
 <td>a5d148168c4506b55cf53984107c396e</td>
 </tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#av1">AV1</a></td>
+<td style="text-align: center;">-10000</td>
+<td>cae4ca30163749b891686f95532519bd</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -4039,18 +4044,24 @@
 <li><strong>Upscaled:</strong> A custom format to prevent Radarr from grabbing upscaled releases.</li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li><strong>10bit:</strong> Blocks releases that use Hi10P</li>
+<li>
+<p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
+<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
+AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<ul>
+<li>This is a new codec and you need modern devices that support it.</li>
+<li>We also had reports of playback/transcoding issues.</li>
+<li>No main group is actually using it (yet).</li>
+<li>It's better to ignore this new codec to prevent compatibility issues</li>
+</ul>
+<!-- END INCLUDE -->
+</li>
 </ul>
 </details>
 <!-- END INCLUDE -->
 
 <details class="abstract">
 <summary>Optional - [Click to show/hide]</summary>
-<div class="admonition tip">
-<p class="admonition-title">I recommend using the following Custom Formats</p>
-<ul>
-<li><code>AV1</code> This will prevent grabbing AV1 releases.</li>
-</ul>
-</div>
 <div class="admonition danger">
 <p class="admonition-title">Adding any of the <code>HDR10+ Boosts</code> could result in less streaming optimized releases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
 </div>
@@ -4063,11 +4074,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#av1">AV1</a></td>
-<td style="text-align: center;">-10000</td>
-<td>cae4ca30163749b891686f95532519bd</td>
-</tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
 <td style="text-align: center;">-10000</td>
@@ -4113,7 +4119,6 @@
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li><strong>AV1</strong>: This will prevent grabbing AV1 releases.</li>
 <li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
 Also they often even rename the release name into Portuguese.</li>
 <li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
