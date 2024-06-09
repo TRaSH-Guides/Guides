@@ -7,6 +7,7 @@
     | [{{ sonarr['cf']['lq-release-title']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq-release-title) | {{ sonarr['cf']['lq-release-title']['trash_scores']['default'] }} | {{ sonarr['cf']['lq-release-title']['trash_id'] }} |
     | [{{ sonarr['cf']['upscaled']['name'] }}](/Sonarr/Sonarr-collection-of-custom-formats/#upscaled)                 |     {{ sonarr['cf']['upscaled']['trash_scores']['default'] }}     | {{ sonarr['cf']['upscaled']['trash_id'] }}         |
     | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)                     |      {{ sonarr['cf']['extras']['trash_scores']['default'] }}      | {{ sonarr['cf']['extras']['trash_id'] }}           |
+    | [{{ sonarr['cf']['av1']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#av1)                           |       {{ sonarr['cf']['av1']['trash_scores']['default'] }}        | {{ sonarr['cf']['av1']['trash_id'] }}              |
 
     ---
 
@@ -17,3 +18,6 @@
     - **{{ sonarr['cf']['lq-release-title']['name'] }}:** A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.
     - **{{ sonarr['cf']['upscaled']['name'] }}:** This custom format is used to prevent Sonarr from grabbing upscaled releases.
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
+    - **{{ sonarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
+
+        {! include-markdown "../../includes/cf-descriptions/av1.md" !}

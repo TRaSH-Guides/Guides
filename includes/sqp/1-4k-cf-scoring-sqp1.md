@@ -103,15 +103,10 @@
 
 ??? abstract "Optional - [Click to show/hide]"
 
-    !!! tip "I recommend using the following Custom Formats"
-
-        - `AV1` This will prevent grabbing AV1 releases.
-
     !!! danger "Adding any of the `HDR10+ Boosts` could result in less streaming optimized releases :warning:"
 
     | Custom Format                                                                                                       |                                Score                                | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
-    | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                               |        {{ radarr['cf']['av1']['trash_scores']['default'] }}         | {{ radarr['cf']['av1']['trash_id'] }}                |
     | [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups)       |  {{ radarr['cf']['bad-dual-groups']['trash_scores']['default'] }}   | {{ radarr['cf']['bad-dual-groups']['trash_id'] }}    |
     | [{{ radarr['cf']['evo-no-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl)             |    {{ radarr['cf']['evo-no-webdl']['trash_scores']['default'] }}    | {{ radarr['cf']['evo-no-webdl']['trash_id'] }}       |
     | [{{ radarr['cf']['no-rlsgroup']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup)               |    {{ radarr['cf']['no-rlsgroup']['trash_scores']['default'] }}     | {{ radarr['cf']['no-rlsgroup']['trash_id'] }}        |
@@ -125,7 +120,6 @@
 
     Breakdown and Why
 
-    - **{{ radarr['cf']['av1']['name'] }}**: This will prevent grabbing AV1 releases.
     - **{{ radarr['cf']['bad-dual-groups']['name'] }}:** [*Optional*] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
     Also they often even rename the release name into Portuguese.
     - **{{ radarr['cf']['evo-no-webdl']['name'] }}:** This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.

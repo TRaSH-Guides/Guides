@@ -9,6 +9,7 @@
     | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                             |        {{ radarr['cf']['3d']['trash_scores']['default'] }}        | {{ radarr['cf']['3d']['trash_id'] }}               |
     | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)                 |     {{ radarr['cf']['upscaled']['trash_scores']['default'] }}     | {{ radarr['cf']['upscaled']['trash_id'] }}         |
     | [{{ radarr['cf']['extras']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#extras)                     |      {{ radarr['cf']['extras']['trash_scores']['default'] }}      | {{ radarr['cf']['extras']['trash_id'] }}           |
+    | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                           |       {{ radarr['cf']['av1']['trash_scores']['default'] }}        | {{ radarr['cf']['av1']['trash_id'] }}              |
 
     ---
 
@@ -24,3 +25,6 @@
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
     - **{{ radarr['cf']['extras']['name'] }}:** Blocks releases that only contain extras
+    - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
+
+        {! include-markdown "../../includes/cf-descriptions/av1.md" !}
