@@ -18,7 +18,7 @@ All changes need to be done on your Plex Media Server.
 
 !!! info "Why didn't you cover option .... ?"
 
-    I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+    We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact us on discord.
 
 ## Settings
 
@@ -540,4 +540,4 @@ For the information of this guide, I made use of the following sources
 - Extra Information gathered from a Plex employee
 - Own experience
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

@@ -72,9 +72,9 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
     ![Flowchart](/Sonarr/images/flowchart-quality-profiles-sonarr.png)
 
-    If you're unsure or have questions do not hesitate to ask for help on Discord
+    <center>If you're unsure or have questions do not hesitate to ask for help on Discord</center>
 
-    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+    <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
 
 ---
 

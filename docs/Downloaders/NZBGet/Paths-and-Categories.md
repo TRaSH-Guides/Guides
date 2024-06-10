@@ -16,4 +16,4 @@
 
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

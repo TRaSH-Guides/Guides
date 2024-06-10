@@ -32,4 +32,4 @@ To merge them you need to click on Edit Groups.
 
 When done Sonarr/Radarr upgrades will be handled via Preferred Words / Custom Formats.
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

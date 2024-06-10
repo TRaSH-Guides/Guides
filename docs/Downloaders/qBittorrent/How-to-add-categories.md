@@ -44,4 +44,4 @@ You don't need to add the full path under `Save Path`, it will use the root down
 
     ![!qBittorrent - Default Torrent Management Mode](images/qb-saving-management.png)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

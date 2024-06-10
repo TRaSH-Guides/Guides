@@ -25,10 +25,11 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 
 ## Support
 
-[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+- If you have questions or suggestions, click the button below to join our Discord server.
+- If you want to contribute, feel free to create a PR (Pull Request).
+- If you found a actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
 
-If you have questions, suggestions, or requests, or want to contribute, click the chat badge to join the Discord Channel. There you can ask your questions directly, or you can use the following [link](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"} to open an issue on GitHub.
-Feel free to create a PR if you want to.
+<center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
 
 ---
 
