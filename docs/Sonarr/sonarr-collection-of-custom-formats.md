@@ -48,13 +48,13 @@ We've made 3 guides related to this.
 
 | Series Versions       | Unwanted                                | HQ Source Groups                        |
 | --------------------- | --------------------------------------- | --------------------------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         |
-| [Remaster](#remaster) | [Extras](#extras)                       | [Remux Tier 02](#remux-tier-02)         |
-|                       | [LQ](#lq)                               | [HD Bluray Tier 01](#hd-bluray-tier-01) |
-|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 02](#hd-bluray-tier-02) |
-|                       | [Upscaled](#upscaled)                   | [WEB Tier 01](#web-tier-01)             |
-|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 02](#web-tier-02)             |
-|                       |                                         | [WEB Tier 03](#web-tier-03)             |
+| [Hybrid](#hybrid)     | [AV1](#av1)                             | [Remux Tier 01](#remux-tier-01)         |
+| [Remaster](#remaster) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)         |
+|                       | [Extras](#extras)                       | [HD Bluray Tier 01](#hd-bluray-tier-01) |
+|                       | [LQ](#lq)                               | [HD Bluray Tier 02](#hd-bluray-tier-02) |
+|                       | [LQ (Release Title)](#lq-release-title) | [WEB Tier 01](#web-tier-01)             |
+|                       | [Upscaled](#upscaled)                   | [WEB Tier 02](#web-tier-02)             |
+|                       | [x265 (HD)](#x265-hd)                   | [WEB Tier 03](#web-tier-03)             |
 |                       |                                         | [WEB Scene](#web-scene)                 |
 
 ---
@@ -93,23 +93,23 @@ We've made 3 guides related to this.
 
 | Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
 | ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
-| [FreeLeech](#freeleech)        | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
-| [MPEG2](#mpeg2)                | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
-| [Multi](#multi)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
-| [Repack v2](#repack-v2)        | [DV (WEBDL)](#dv-webdl)                | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
-| [Repack v3](#repack-v3)        | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
-| [Repack/Proper](#repackproper) | [HDR10+ Boost](#hdr10plus-boost)       | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
-| [x264](#x264)                  | [HFR](#hfr)                            | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-| [x265](#x265)                  | [Internal](#internal)                  | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
-| [x266](#x266)                  | [No-RlsGroup](#no-rlsgroup)            | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [Obfuscated](#obfuscated)              | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [Retags](#retags)                      | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
-|                                | [Scene](#scene)                        | [VOSTFR](#vostfr)             |                                               |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)        | [FanSUB](#fansub)             |                                               |
-|                                | [SDR](#sdr)                            | [FastSUB](#fastsub)           |                                               |
-|                                | [Season Packs](#season-pack)           |                               |                                               |
+| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups)    | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
+| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)                  | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
+| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)                | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
+| [Repack v2](#repack-v2)        | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
+| [Repack v3](#repack-v3)        | [HDR10+ Boost](#hdr10plus-boost)       | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
+| [Repack/Proper](#repackproper) | [HFR](#hfr)                            | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
+| [x264](#x264)                  | [Internal](#internal)                  | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+| [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)            | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
+| [x266](#x266)                  | [Obfuscated](#obfuscated)              | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [Retags](#retags)                      | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [Scene](#scene)                        | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)        | [VOSTFR](#vostfr)             |                                               |
+|                                | [SDR](#sdr)                            | [FanSUB](#fansub)             |                                               |
+|                                | [Season Packs](#season-pack)           | [FastSUB](#fastsub)           |                                               |
 |                                | [VP9](#vp9)                            |                               |                                               |
 |                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                               |
+|                                |                                        |                               |                                               |
 
 ---
 
@@ -726,6 +726,22 @@ We've made 3 guides related to this.
 
 ---
 
+### AV1
+
+??? question "AV1 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/av1.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### BR-DISK
 
 ??? question "BR-DISK - [Click to show/hide]"
@@ -1210,25 +1226,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### AV1
-
-??? question "AV1 - [Click to show/hide]"
-
-    - This is a new codec and you need modern devices that support it.
-    - We also had reports of playback/transcoding issues.
-    - No main group is actually using it (yet).
-    - It's better to ignore this new codec to prevent compatibility issues.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/av1.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
