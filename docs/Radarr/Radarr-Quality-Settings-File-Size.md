@@ -10,6 +10,7 @@
 
 !!! info "`400` is the displayed value for Unlimited"
 
+<!-- markdownlint-disable MD052-->
 | Quality                                                           |            Minimum <sub><sup>(MB/min)</sup></sub>             |              Preferred <sub><sup>(MB/min)</sup></sub>               |            Maximum <sub><sup>(MB/min)</sup></sub>             |
 |-------------------------------------------------------------------|:-------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------:|
 | {{ radarr['quality-size']['movie']['qualities'][0]['quality'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['min'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['preferred'] }}  | {{ radarr['quality-size']['movie']['qualities'][0]['max'] }}  |
@@ -26,7 +27,6 @@
 | {{ radarr['quality-size']['movie']['qualities'][11]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['preferred'] }} | {{ radarr['quality-size']['movie']['qualities'][11]['max'] }} |
 | {{ radarr['quality-size']['movie']['qualities'][12]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['preferred'] }} | {{ radarr['quality-size']['movie']['qualities'][12]['max'] }} |
 | {{ radarr['quality-size']['movie']['qualities'][13]['quality'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['min'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['preferred'] }} | {{ radarr['quality-size']['movie']['qualities'][13]['max'] }} |
-
----
+<!-- markdownlint-enable MD052-->
 
 --8<-- "includes/support.md"

@@ -53,6 +53,4 @@
     | {{ sonarr['quality-size']['anime']['qualities'][17]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
 
----
-
 --8<-- "includes/support.md"
