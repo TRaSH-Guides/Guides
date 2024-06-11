@@ -1042,21 +1042,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Sonarr Quality Definitions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sonarr-quality-definitions-anime" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sonarr Quality Definitions - Anime
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -3277,21 +3262,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Sonarr Quality Definitions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sonarr-quality-definitions-anime" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sonarr Quality Definitions - Anime
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -3327,226 +3297,291 @@
 
 
 <h1 id="quality-settings-file-size">Quality Settings (File Size)<a class="headerlink" href="#quality-settings-file-size" title="Permanent link"></a></h1>
-<p>I often get the question "What's the best quality settings to use?"
-Well, it's actually personal preference so I will show you my recommendations.</p>
-<p>But before you continue to read, as with all my guides:</p>
-<div class="admonition danger">
-<p><strong>If you don't care about quality then stop reading and see if the other tutorials are helpful for you.</strong></p>
-</div>
-<p>These Quality Settings have been created and tested with info I got from others, and release comparisons from different sources.</p>
-<p>I only do WEB-DL myself for TV shows because in my opinion WEB-DL is the sweet spot between quality and size and you often don't see big differences anyway for TV shows. (Except for shows like GOT, Vikings, etc)</p>
-<details class="question">
-<summary>FAQ</summary>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link"></a></h2>
-<p><strong>Q: Why do you only show starting from HDTV720p?</strong></p>
-<p>A: With the big screens these days anything lower doesn't look watchable</p>
-<p><strong>Q: Why do you have some sizes set so high?</strong></p>
-<p>A: You probably didn't read the bold text above, I also need to keep in mind usenet releases that are often bigger than torrent releases.</p>
-<p><strong>Q: You noticed that some episodes don't grab because of these settings.</strong></p>
-<p>A: If you notice that some episodes won't be grabbed because of these size settings you can provide me a proof with a screenshot and the error it shows you when you do a interactive search (non redacted except the indexer/tracker if you want to).</p>
+<!-- markdownlint-disable MD041-->
+<p>On the Radarr/Sonarr Discord people often ask,</p>
 <ul>
-<li>I will only accept changes that are international releases. No multi, or dubbed language releases.</li>
-<li>I won't accept mislabeled source releases like from MeGusta etc. (They should learn to name their stuff properly first)</li>
-<li>I won't accept changes for micro sized releases.</li>
-<li>Documentaries and cartoons are often much smaller so I probably won't edit those either.</li>
+<li>“What's the best quality size settings to use?”</li>
+<li>“Why's are the ones from the TRaSH Guides so different to the default settings?”</li>
+</ul>
+<p>Even though it is a personal preference, we will show you some recommendations to prevent low quality or fake releases.</p>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link"></a></h2>
+<details class="question">
+<summary>Why do i only see sizes starting from HDTV720p and up?</summary>
+<ul>
+<li>Watching content below 720p on a big screen can result in a blurry and pixelated image, making it difficult to see details and enjoy the true quality of the content. Additionally, lower resolution videos may not fill the entire screen, leading to a less immersive viewing experience. Investing in higher quality content ensures that you are getting the best possible picture and sound quality for your viewing pleasure.</li>
 </ul>
 </details>
+<details class="question">
+<summary>Why are some sizes set to max?</summary>
+<ul>
+<li>These guides are created to achieve the highest possible quality based on the quality profiles provided.</li>
+</ul>
+</details>
+<details class="question">
+<summary>Why is there difference between regular movies/tv shows and anime/animated/cartoons ?</summary>
+<ul>
+<li>Regular movies and TV shows are set up more strictly to prevent low quality and fake releases, whereas anime, animated series, and cartoons are set up wide open.</li>
+</ul>
+</details>
+<details class="question">
+<summary>When I set Bluray to MAX size I often get ISO's/ Bluray folder structure.</summary>
+<ul>
+<li>You have probably configured your Quality Profiles incorrectly by enabling BR-DISK without adding the recommended Custom Format for Radarr to block/ignore <a href="/Radarr/Radarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a>. For Sonarr, you can use the following to block/ignore <a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a>.</li>
+</ul>
+</details>
+<details class="question">
+<summary>Some movies or episodes may not be grabbed due to these settings.</summary>
+<p>If you notice that some movies or episodes are not being grabbed due to size settings, you can provide proof with a screenshot showing the error that appears during an interactive search (excluding the indexer or tracker if you prefer).</p>
+<ul>
+<li>We will only consider changes for international releases; no multi-language or dubbed releases will be accepted.</li>
+<li>We will not accept incorrectly labeled source releases such as those from MeGusta, they need to properly name their content first.</li>
+<li>Changes for micro-sized releases will not be accepted.</li>
+<li>Documentaries and cartoons are typically much smaller, so we may not make edits to those either.</li>
+</ul>
+</details>
+<p>These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.</p>
+<!-- markdownlint-enable MD041-->
+
 <hr />
 <h2 id="sonarr-quality-definitions">Sonarr Quality Definitions<a class="headerlink" href="#sonarr-quality-definitions" title="Permanent link"></a></h2>
+<!-- markdownlint-disable MD041-->
+<div class="admonition warning">
+<p class="admonition-title">Make sure you have enabled 'Show Advanced' if you don't see a provision to enter the scores, under the Quality settings.<br><br>After setting the Max Size, set the 'Preferred' score as high as possible. You can accomplish that with one of the two following ways.<br>- 1. You move the slider to the far most right.<br>- 2. You enter a score of <code>400</code>.<br>In both cases, it will automatically change to the highest possible. This will be slightly below the Max Size setting.</p>
+</div>
+<!-- markdownlint-enable MD041-->
+
+<div class="admonition info">
+<p class="admonition-title"><code>400</code> is the displayed value for Unlimited</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="standard" name="__tabbed_1" type="radio" /><input id="animeanimatedcartoons" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="standard">Standard</label><label for="animeanimatedcartoons">Anime/Animated/Cartoons</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
 <th>Quality</th>
-<th>Minimum (Megabytes Per Minute)</th>
-<th>Maximum (Megabytes Per Minute)</th>
+<th style="text-align: center;">Minimum <sub><sup>(MB/min)</sup></sub></th>
+<th style="text-align: center;">Preferred <sub><sup>(MB/min)</sup></sub></th>
+<th style="text-align: center;">Maximum <sub><sup>(MB/min)</sup></sub></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>HDTV-720p</td>
-<td>10</td>
-<td>400</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>HDTV-1080p</td>
-<td>15</td>
-<td>400</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-720p</td>
-<td>10</td>
-<td>400</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-720p</td>
-<td>10</td>
-<td>400</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-720p</td>
-<td>17.1</td>
-<td>400</td>
+<td style="text-align: center;">17.1</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-1080p</td>
-<td>15</td>
-<td>400</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-1080p</td>
-<td>15</td>
-<td>400</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-1080p</td>
-<td>50.4</td>
-<td>400</td>
+<td style="text-align: center;">50.4</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-1080p Remux</td>
-<td>69.1</td>
-<td>400</td>
+<td style="text-align: center;">69.1</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>HDTV-2160p</td>
-<td>25</td>
-<td>400</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-2160p</td>
-<td>25</td>
-<td>400</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-2160p</td>
-<td>25</td>
-<td>400</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-2160p</td>
-<td>94.6</td>
-<td>400</td>
+<td style="text-align: center;">94.6</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-2160p Remux</td>
-<td>187.4</td>
-<td>400</td>
+<td style="text-align: center;">187.4</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="sonarr-quality-definitions-anime">Sonarr Quality Definitions - Anime<a class="headerlink" href="#sonarr-quality-definitions-anime" title="Permanent link"></a></h3>
+</div>
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
 <th>Quality</th>
-<th>Minimum (Megabytes Per Minute)</th>
-<th>Maximum (Megabytes Per Minute)</th>
+<th style="text-align: center;">Minimum <sub><sup>(MB/min)</sup></sub></th>
+<th style="text-align: center;">Preferred <sub><sup>(MB/min)</sup></sub></th>
+<th style="text-align: center;">Maximum <sub><sup>(MB/min)</sup></sub></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>SDTV</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-480p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-480p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>DVD</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-480p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>HDTV-720p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>HDTV-1080p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-720p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-720p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-720p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-1080p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-1080p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-1080p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-1080p Remux</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>HDTV-2160p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBRip-2160p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>WEBDL-2160p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-2160p</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 <tr>
 <td>Bluray-2160p Remux</td>
-<td>5</td>
-<td>400</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">395</td>
+<td style="text-align: center;">400</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The reason why you don't see the <code>Preferred</code> score in the table above is because we want max quality anyway. So set it as high as possible.</p>
-<p>The highest preferred quality you can manually enter is 1 less than the Maximum quality. If you use the slider, the preferred quality can be up to 5 lesser than the Maximum quality.</p>
-<p>Make sure you have enabled 'Show Advanced' in Sonarr, if you don't see a provision to enter the scores, under the Quality settings.</p>
+</div>
+</div>
 </div>
 <hr />
 <div class="admonition question">
@@ -3577,7 +3612,7 @@ Well, it's actually personal preference so I will show you my recommendations.</
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 11, 2024 04:48:40</span>
   </span>
 
     
