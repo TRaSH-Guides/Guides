@@ -18,7 +18,7 @@ All changes need to be done on your Plex Media Server.
 
 !!! info "Why didn't you cover option .... ?"
 
-    We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact us on discord.
+    We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://trash-guides.info/assets/discord.png)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
 
 ## Settings
 
