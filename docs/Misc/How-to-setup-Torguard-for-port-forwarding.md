@@ -143,19 +143,19 @@ From your Client Area go to your [Config Generator](https://torguard.net/tgconf.
 
 #### WireGuard Config Generator
 
- ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
+![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
 
- 1. Choose `WireGuard`.
- 1. Choose from the dropdown box the `IP` we got earlier and used for the port forwarding.
- 1. Add your `VPN Username`.
- 1. Only Change this if you know what you're doing :bangbang:
- 1. [Optional] Choose you preferred DNS Server
- 1. Only Change this if you know what you're doing :bangbang:
- 1. Click on `Generate Config`
+1. Choose `WireGuard`.
+1. Choose from the dropdown box the `IP` we got earlier and used for the port forwarding.
+1. Add your `VPN Username`.
+1. Only Change this if you know what you're doing :bangbang:
+1. [Optional] Choose you preferred DNS Server
+1. Only Change this if you know what you're doing :bangbang:
+1. Click on `Generate Config`
 
- Now you will download a `.conf` file with a random number.
+Now you will download a `.conf` file with a random number.
 
- Rename the file from `*.conf` to `wg0.conf` and copy it to your wireguard folder of your VPN torrent client.
+Rename the file from `*.conf` to `wg0.conf` and copy it to your wireguard folder of your VPN torrent client.
 
 ---
 
