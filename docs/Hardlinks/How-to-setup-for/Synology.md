@@ -345,7 +345,7 @@ You will notice that all the images will be downloaded, after that the container
 
 {! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"
 
 ---
 

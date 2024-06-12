@@ -24,4 +24,4 @@ You don't need to add the full path under `Folder/Path`, it will use the `Relati
 
 ![!SABnzbd - Paths and Categories Breakdown](images/sabnzbd-category-breakdown.png)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

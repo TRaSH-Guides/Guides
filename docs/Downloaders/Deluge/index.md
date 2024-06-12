@@ -48,4 +48,4 @@ Using `pip3` to install (included in the Python package)
 
 [BinHex VPN](https://hub.docker.com/r/binhex/arch-delugevpn)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

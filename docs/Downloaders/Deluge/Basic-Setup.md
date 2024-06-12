@@ -210,4 +210,4 @@ The `Label` plugin will allow you to categorize/sort your torrents. You can assi
 
 Labels are a valuable tool, if used properly, to keep your torrents managed and organized.
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

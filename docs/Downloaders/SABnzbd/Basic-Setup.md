@@ -184,4 +184,4 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 <sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

@@ -12,4 +12,4 @@
 
 {! include-markdown "../../../includes/hardlinks/permissions.md" !}
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

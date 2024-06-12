@@ -101,4 +101,4 @@ Run cross-seed 24/7 to:
 
 ---
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

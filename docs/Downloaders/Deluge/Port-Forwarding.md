@@ -22,4 +22,4 @@ Make sure you click `Test Active Port` and get a ✓ before moving on.
 
     **Suggested: `Critical`**
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

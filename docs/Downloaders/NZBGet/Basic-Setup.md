@@ -128,4 +128,4 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     and both boxes under `Failed Download Handling` at step 4.
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

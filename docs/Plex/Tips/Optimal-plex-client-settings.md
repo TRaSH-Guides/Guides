@@ -12,4 +12,4 @@ I was considering to start fresh on this, but then why reinvent the wheel when s
 
 [The Media Clients Wiki](https://mediaclients.wiki/Plex){:target="\_blank" rel="noopener noreferrer"}
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

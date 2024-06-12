@@ -285,7 +285,7 @@ These options allow you to control the number of active torrents being downloade
 
         **Suggested: `Disabled`**
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"
 
 [^1]:
 
