@@ -1,3 +1,12 @@
+# 2024-06-13 21:00
+- Synology: [feat(jellyseerr): add jellyseerr (#209)](https://github.com/TRaSH-Guides/Synology-Templates/pull/209)
+- Synology: [fix(env): add missing details and clarify for plex (#207)](https://github.com/TRaSH-Guides/Synology-Templates/pull/207)
+- Synology: [fix(jellyfin): add quicksync video check (#211)]((https://github.com/TRaSH-Guides/Synology-Templates/pull/211)
+- Synology: [feat(prowlarr): add prowlarr (#210)](https://github.com/TRaSH-Guides/Synology-Templates/pull/210)
+- [fix(sync_tools): Hotfix to re-add default:3 and default:4 Sonarr episode naming options (#1972)](https://github.com/TRaSH-Guides/Guides/pull/1972)
+- [feat(guide): Update quality size FAQ and preferred info (#1969)](https://github.com/TRaSH-Guides/Guides/pull/1969)
+- [chore(guide): Changed discord shield to button (#1973)](https://github.com/TRaSH-Guides/Guides/pull/1973)
+
 # 2024-06-09 22:00
 - [chore(sonarr): add 720p CF](https://github.com/TRaSH-Guides/Guides/pull/1896)
 - [feat(guides): Improve description for x265 (no HDR/DV), x265 (HD) and SDR (no WEBDL)](https://github.com/TRaSH-Guides/Guides/pull/1941)
