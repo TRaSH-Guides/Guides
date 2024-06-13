@@ -90,8 +90,6 @@ Remember that for later use.
 
 ## How to setup Port forwarding
 
-### Port Forward Request
-
 From your Client Area go to your [My Services](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
 
 Then click on `Manage` and select `Port Forward Request`.
@@ -102,7 +100,7 @@ Then click on `Manage` and select `Port Forward Request`.
 
     ![!Port Forward Request](images/torguard/req_port_fwd.png)
 
-#### WireGuard Request Port Forward
+### Port Forward Request
 
 ![!Request New Port Forward WireGuard](images/torguard/request-new-pfw-wireguard.png)
 
@@ -120,8 +118,6 @@ Then click on `Manage` and select `Port Forward Request`.
 If everything went according to plan you will see something like this.
 
 ![status](images/torguard/status.png)
-
-<sub><sup>*The screenshot above is only an example to show you how it could look. It's not always a 100% reflection of the actual data.*</sup></sub>
 
 You will also receive a e-mail with the ports you forwarded.
 
@@ -141,8 +137,6 @@ From your Client Area go to your [Config Generator](https://torguard.net/tgconf.
 
 ### Config Generator
 
-#### WireGuard Config Generator
-
 ![!WireGuard Config Generator](images/torguard/config-generator-wireguard.png)
 
 1. Choose `WireGuard`.
@@ -157,10 +151,11 @@ Now you will download a `.conf` file with a random number.
 
 Rename the file from `*.conf` to `wg0.conf` and copy it to your wireguard folder of your VPN torrent client.
 
----
+## Torrent client port forwarding setup
 
-Thanks:
+Follow the torrent client's guides on how to set up port forwarding.
 
-A big Thanks to [mrhotio](https://github.com/mrhotio) for his excellent instructions on how to setup WireGuard for TorGuard.
+- [qBittorrent](/Downloaders/qBittorrent/Port-forwarding/){:target="\_blank" rel="noopener noreferrer"}
+- [Deluge](/Downloaders/Deluge/Port-Forwarding/){:target="\_blank" rel="noopener noreferrer"}
 
 --8<-- "includes/support.md"
