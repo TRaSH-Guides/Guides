@@ -1,7 +1,7 @@
 # 2024-06-13 21:00
 - Synology: [feat(jellyseerr): add jellyseerr (#209)](https://github.com/TRaSH-Guides/Synology-Templates/pull/209)
 - Synology: [fix(env): add missing details and clarify for plex (#207)](https://github.com/TRaSH-Guides/Synology-Templates/pull/207)
-- Synology: [fix(jellyfin): add quicksync video check (#211)]((https://github.com/TRaSH-Guides/Synology-Templates/pull/211)
+- Synology: [fix(jellyfin): add quicksync video check (#211)](https://github.com/TRaSH-Guides/Synology-Templates/pull/211)
 - Synology: [feat(prowlarr): add prowlarr (#210)](https://github.com/TRaSH-Guides/Synology-Templates/pull/210)
 - [fix(sync_tools): Hotfix to re-add default:3 and default:4 Sonarr episode naming options (#1972)](https://github.com/TRaSH-Guides/Guides/pull/1972)
 - [feat(guide): Update quality size FAQ and preferred info (#1969)](https://github.com/TRaSH-Guides/Guides/pull/1969)
