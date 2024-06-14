@@ -108,7 +108,7 @@ Then click on `Manage` and select `Port Forward Request`.
 1. Select `UDP`. (:bangbang: **KEEP THIS ON UDP FOR WireGuard** :bangbang:)
 1. Select a `Port/Auth` and select `WireGuard`.
 1. Select the `Protocol` `TCP`.
-1. I suggest to use a high `Port` number 10.000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
+1. I suggest to use a high `Port` number 10000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
     (This is also the port you will use in your torrent client).
 1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
 1. Then click on `Submit Request`.
