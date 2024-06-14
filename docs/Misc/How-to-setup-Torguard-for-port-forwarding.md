@@ -1,6 +1,6 @@
 # Setup TorGuard for port forwarding
 
-These settings are a recommendation if you want to choose other settings be my guest.
+These are our supported and recommended settings, if you would like to choose others please keep that in mind.
 
 If you want to support me, please use this [referral link](https://torguard.net/aff.php?aff=5575){:target="_blank" rel="noopener noreferrer"} and enter the following discount code:
 
@@ -14,7 +14,7 @@ TRaSH-Guides-2024
 
 !!! bug "As of 13 March 2022 Torguard Settles Piracy Lawsuit and has agreed to use commercially reasonable efforts to block BitTorrent traffic on its servers in the US using firewall technology. :bangbang:<br><br>I Talked to several people and they are still able to use Torguard for Torrents, Perhaps because the connection is encrypted. And others just selected a server in another country.<br>- [Source Torguard](https://torguard.net/blog/why-torguard-is-blocking-bittorrent-on-us-servers/){:target="_blank" rel="noopener noreferrer"}.<br>- [Source Torrentfreak](https://torrentfreak.com/torguard-settles-piracy-lawsuit-and-agrees-to-block-torrent-traffic-on-u-s-servers-220314/){:target="_blank" rel="noopener noreferrer"}."
 
-!!! warning "If the US server doesn't work for you use another country"
+!!! warning "If servers in the United States are not working for you, please try another country"
 
 ---
 
@@ -63,15 +63,15 @@ Then we're going to select which server we're going to use,
 
 For the best speed it's recommended to choose the one nearest to your location.
 
-!!! tip "Sometimes you get better speeds if you use one of your neighboring countries."
+!!! tip "Sometimes you will have better speeds if you choose a neighboring country."
 
 !!! warning "If the US server doesn't work for you use another country"
 
-Let's use for this example: `Netherlands Amsterdam` and copy/paste the Hostname `nl.torguard.org`.
+For this example, let's use: `Netherlands Amsterdam` and copy/paste the hostname `nl.torguard.org`.
 
 ![!Torguard Global VPN Network](images/torguard/globalvpnnetwork-list.png)
 
-!!! tip "Also check if your chosen server supports Wireguard"
+!!! tip "Also check if your selected server supports Wireguard"
 
 ### Get your VPN IP
 
@@ -90,7 +90,7 @@ Remember that for later use.
 
 ## How to setup Port forwarding
 
-From your Client Area go to your [My Services](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
+From your `Client Area` dashboard, go to [`My Services`](https://torguard.net/clientarea.php?action=products){:target="\_blank" rel="noopener noreferrer"}.
 
 Then click on `Manage` and select `Port Forward Request`.
 
@@ -106,28 +106,28 @@ Then click on `Manage` and select `Port Forward Request`.
 
 1. That's the `IP` we found earlier.
 1. Select `UDP`. (:bangbang: **KEEP THIS ON UDP FOR WireGuard** :bangbang:)
-1. Select a `Port/Auth` and select `WireGuard`.
+1. Select `Port/Auth` and select `WireGuard`.
 1. Select the `Protocol` `TCP`.
 1. I suggest to use a high `Port` number 10000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
     (This is also the port you will use in your torrent client).
-1. Click on the `+` sign and do the same with the `UDP` `Protocol`.
+1. Click on the `+` sign, and do the same with the `UDP` `Protocol`.
 1. Then click on `Submit Request`.
 
 !!! warning ":bangbang: DON'T CHANGE OPTION 2 `UDP` to `TCP` :bangbang:"
 
-If everything went according to plan you will see something like this.
+If everything succeeds, you will see the following.
 
 ![status](images/torguard/status.png)
 
 You will also receive a e-mail with the ports you forwarded.
 
-!!! Note "Normally it doesn't take more then a few seconds/minutes to get the ports approved if it takes longer or you get `PENDING` I suggest to ping the server again (or choose another sever) and you often get a new IP and retry it again with the new IP."
+!!! Note "Normally it takes only a short while for the ports to be approved, if it takes longer or you get `PENDING` I suggest pinging the server again (or choose another server) to attempt to get a new IP. You can then retry the process with the new IP."
 
 ---
 
 ## How to create the config file
 
-From your Client Area go to your [Config Generator](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="\_blank" rel="noopener noreferrer"}.
+From your `Client Area` dashboard, go to your [`Config Generator`](https://torguard.net/tgconf.php?action=vpn-openvpnconfig){:target="\_blank" rel="noopener noreferrer"}.
 
 `Tools` > `Config Generator`
 
@@ -147,9 +147,9 @@ From your Client Area go to your [Config Generator](https://torguard.net/tgconf.
 1. Only Change this if you know what you're doing :bangbang:
 1. Click on `Generate Config`
 
-Now you will download a `.conf` file with a random number.
+This will generate a `.conf` file for you to download named with a random number.
 
-Rename the file from `*.conf` to `wg0.conf` and copy it to your wireguard folder of your VPN torrent client.
+Rename the `.conf` file you just downloaded to `wg0.conf` and copy it to the wireguard folder of your VPN torrent client.
 
 ## Torrent client port forwarding setup
 
