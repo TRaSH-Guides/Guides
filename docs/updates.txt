@@ -1,4 +1,4 @@
-# 2024-06-13 21:00
+# 2024-06-14 04:00
 - Synology: [feat(jellyseerr): add jellyseerr (#209)](https://github.com/TRaSH-Guides/Synology-Templates/pull/209)
 - Synology: [fix(env): add missing details and clarify for plex (#207)](https://github.com/TRaSH-Guides/Synology-Templates/pull/207)
 - Synology: [fix(jellyfin): add quicksync video check (#211)](https://github.com/TRaSH-Guides/Synology-Templates/pull/211)
