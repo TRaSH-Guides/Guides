@@ -6,6 +6,7 @@
 - [fix(sync_tools): Hotfix to re-add default:3 and default:4 Sonarr episode naming options (#1972)](https://github.com/TRaSH-Guides/Guides/pull/1972)
 - [feat(guide): Update quality size FAQ and preferred info (#1969)](https://github.com/TRaSH-Guides/Guides/pull/1969)
 - [chore(guide): Changed discord shield to button (#1973)](https://github.com/TRaSH-Guides/Guides/pull/1973)
+- [feat(guide): Update Setup TorGuard for port forwarding Guide (#1974)](https://github.com/TRaSH-Guides/Guides/pull/1974)
 
 # 2024-06-09 22:00
 - [chore(sonarr): add 720p CF](https://github.com/TRaSH-Guides/Guides/pull/1896)
