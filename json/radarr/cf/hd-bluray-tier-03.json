@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "hallowed",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(hallowed)$"
+      }
+    },
+    {
       "name": "HONE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
