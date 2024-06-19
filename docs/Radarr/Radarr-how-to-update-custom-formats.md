@@ -1,8 +1,8 @@
 # How to update Custom Formats
 
-Here I will try to explain how you can manually update Custom Formats for Radarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.
+Here we will try to explain how you can manually update Custom Formats for Radarr v3+, With any changes from the guide or changes provided to you from other sources, without losing the scoring in your Quality Profile.
 
-!!! info "Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all"
+!!! info "Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all"
 
 ## How to Copy/Paste the JSON
 

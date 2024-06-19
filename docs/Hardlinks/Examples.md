@@ -6,7 +6,7 @@
 
     It doesn't matter if you prefer to use `/data`, `/shared`, `/storage` or whatever.
 
-    The screenshots in the examples are using the following root path `/data`
+    The screenshots in the examples use the following root path `/data`
 
 ## Sonarr
 
@@ -125,4 +125,4 @@
 
 ---
 
-Big Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/docker-guide){:target="\_blank" rel="noopener noreferrer"} that I used as basis for this guide.
+Big Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for his [Docker Guide](https://wiki.servarr.com/docker-guide){:target="\_blank" rel="noopener noreferrer"} that we used as a basis for this guide.

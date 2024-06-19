@@ -12,7 +12,7 @@
 
 ![!sabnzbd-categories](images/sabnzbd-categories.png)
 
-You don't need to add the full path under `Folder/Path`, it will use the `Relative folders are based on:` path you see on the top of the screenshot, that you setup as `Completed Download Folder`.
+You don't need to add the full path under `Folder/Path`, it will use the `Relative folders are based on:` path you see on the top of the screenshot, that you've set up as `Completed Download Folder`.
 
 {! include-markdown "../../../includes/downloaders/warning-path-location.md" !}
 

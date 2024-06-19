@@ -77,7 +77,7 @@ You will need to create these subfolders yourself. You can do this in any way yo
 
 The fastest way to create all the necessary subfolders would be to use the terminal, use a program like [PuTTy](https://www.putty.org/){:target="\_blank" rel="noopener noreferrer"} or use the terminal from the dashboard.
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
-If you use both torrents and usenet, use both commands.
+If you use both torrents and Usenet, use both commands.
 
 #### If you use usenet
 
@@ -141,7 +141,7 @@ NZBGet or SABnzbd
 
 !!! info
 
-    The reason why we use `/data/usenet/` for the usenet client is that it only needs access to the usenet data. In the usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
+    The reason why we use `/data/usenet/` for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like `/data/usenet/{tv|movies|music}`.
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-usenet.md" !}
 
@@ -159,7 +159,7 @@ Sonarr, Radarr and Lidarr
 
 !!! info
 
-    Sonarr, Radarr and Lidarr get access to everything because the download folder(s) and media folder will need to look like, and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
+    Sonarr, Radarr and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
 
 {! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
 
@@ -197,7 +197,7 @@ Plex, Emby, JellyFin and Bazarr
 
     Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.
 
-    The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure prior to going straight to a YouTube video.
+    The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure before going straight to a YouTube video.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

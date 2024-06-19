@@ -10,7 +10,7 @@ Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the
 
 ![Enable Advanced](images/radarr-show-adavanced.png)
 
-Once you clicked on the button it should look like this and you should see all the advanced options.
+Once you've clicked on the button it should look like this and you should see all the advanced options.
 
 ![Unhide Advanced](images/unhide-advanced.png)
 

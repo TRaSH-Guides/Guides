@@ -16,9 +16,9 @@ Here you will find guides mainly for Sonarr/Radarr/Bazarr and everything related
 
 ## How this all started
 
-When I started using Sonarr/Radarr, I noticed that it didn't grab the releases that I actually wanted (I'm a bit picky about which releases and what quality I prefer).
+When I started using Sonarr/Radarr, I noticed that it didn't grab the releases that I wanted (I'm a bit picky about which releases and what quality I prefer).
 I decided to fine-tune my quality profile settings to try and get the releases and qualities I preferred. While on Discord, I noticed that others ran into the same issue, so I explained how I managed to solve this. Once I started having to explain more often, I decided to write it down and make it public so I could easily link to it when needed.
-After a while I _also_ decided to create guides for frequently asked questions and started to collect all kinds of information gathered from various sources.
+After a while, I _also_ decided to create guides for frequently asked questions and started to collect all kinds of information gathered from various sources.
 I try to make my guides as easy as possible for everyone to understand and, in my opinion, pictures often explain more than just some text.
 
 ---
@@ -27,7 +27,7 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 
 - If you have questions or suggestions, click the button below to join our Discord server.
 - If you want to contribute, feel free to create a PR (Pull Request).
-- If you found a actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
+- If you found an actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
 
 <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
 
@@ -44,8 +44,8 @@ All of the information provided in these guides, as well as in Discord or any gu
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me in the world of dockers with DockSTARTer, and helping me to learn the basics for it.
-- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and make everything look great.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and making everything look great.
 
 --8<-- "CONTRIBUTORS.md"
 

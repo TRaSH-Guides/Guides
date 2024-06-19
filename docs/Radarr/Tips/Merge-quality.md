@@ -2,9 +2,9 @@
 
 The current logic on how downloads are compared is **Quality Trumps All** :bangbang:
 
-In some cases it might be preferred to not have Quality Trump All, and let it be handled via Preferred Words / Custom Formats.
+In some cases, it might be preferred to not have Quality Trump All, and let it be handled via Preferred Words / Custom Formats.
 
-To accomplish this you will need to merge the qualities with each other.
+To accomplish this you will need to merge the qualities.
 
 ## Current Logic
 
@@ -20,7 +20,7 @@ Go to your preferred Quality Profile or create a new one.
 
 `Settings` => `Profiles`
 
-In this example we will merge the following qualities together:
+In this example, we will merge the following qualities:
 
 - Bluray-720p
 - Bluray-1080p

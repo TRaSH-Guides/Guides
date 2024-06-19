@@ -108,7 +108,7 @@ Then click on `Manage` and select `Port Forward Request`.
 1. Select `UDP`. (:bangbang: **KEEP THIS ON UDP FOR WireGuard** :bangbang:)
 1. Select `Port/Auth` and select `WireGuard`.
 1. Select the `Protocol` `TCP`.
-1. I suggest to use a high `Port` number 10000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
+1. We suggest using a high `Port` number 10000+ or a game port you don't use, don't use the default torrent ports 6881- 6889
     (This is also the port you will use in your torrent client).
 1. Click on the `+` sign, and do the same with the `UDP` `Protocol`.
 1. Then click on `Submit Request`.
@@ -119,9 +119,9 @@ If everything succeeds, you will see the following.
 
 ![status](images/torguard/status.png)
 
-You will also receive a e-mail with the ports you forwarded.
+You will also receive an e-mail with the ports you forwarded.
 
-!!! Note "Normally it takes only a short while for the ports to be approved, if it takes longer or you get `PENDING` I suggest pinging the server again (or choose another server) to attempt to get a new IP. You can then retry the process with the new IP."
+!!! Note "Normally it takes only a short while for the ports to be approved, if it takes longer or you get `PENDING` we suggest pinging the server again (or choose another server) to attempt to get a new IP. You can then retry the process with the new IP."
 
 ---
 
@@ -143,7 +143,7 @@ From your `Client Area` dashboard, go to your [`Config Generator`](https://torgu
 1. Choose from the dropdown box the `IP` we got earlier and used for the port forwarding.
 1. Add your `VPN Username`.
 1. Only Change this if you know what you're doing :bangbang:
-1. [Optional] Choose you preferred DNS Server
+1. [Optional] Choose your preferred DNS Server
 1. Only Change this if you know what you're doing :bangbang:
 1. Click on `Generate Config`
 

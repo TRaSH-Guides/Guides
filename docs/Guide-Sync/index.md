@@ -30,7 +30,7 @@ It's possible with [Notifiarr](https://notifiarr.com){:target="\_blank" rel="noo
 
 Notifiarr is a service much bigger in scope than just custom format syncing.
 
-After setup it's fully automated and will check every X minutes for updates to the Custom Formats or Sonarr Release Profile and will update it to your Radarr or Sonarr (Multiple Client Support).
+After setup, it's fully automated and will check every X minutes for updates to the Custom Formats or Sonarr Release Profile and will update it to your Radarr or Sonarr (Multiple Client Support).
 
 Just enable the Custom Formats/Release Profiles you want.
 

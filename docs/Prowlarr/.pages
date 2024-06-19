@@ -1,5 +1,5 @@
 nav:
   - Home: index.md
-  - How to setup proxy for certain indexers: prowlarr-setup-proxy.md
-  - How to setup FlareSolverr: prowlarr-setup-flaresolverr.md
-  - How to setup indexers with limited API: prowlarr-setup-limited-api.md
+  - How to set up proxy for certain indexers: prowlarr-setup-proxy.md
+  - How to set up FlareSolverr: prowlarr-setup-flaresolverr.md
+  - How to set up indexers with limited API: prowlarr-setup-limited-api.md
