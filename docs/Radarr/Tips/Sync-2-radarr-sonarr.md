@@ -63,10 +63,10 @@ Then you get a screen with the following options:
 1. Your {++Radarr 2++} root location for your media library.
 1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the movie was added)
 1. The Full URL to ^^==Radarr 1==^^ (Use container name or local URL if they run on the same system).
-1. Your API Key of ^^==Radarr 1==^^. :material-alert-circle:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
-1. Which Profile of ^^==Radarr 1==^^ you want to Sync with {++Radarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
-1. [_Optional_] Use tags from ^^==Radarr 1==^^ to add Movies to {++Radarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
-1. [_Optional_] Add all movies from the chosen root folder from ^^==Radarr 1==^^. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
+1. Your API Key of ^^==Radarr 1==^^. :circle-question:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Which Profile of ^^==Radarr 1==^^ you want to Sync with {++Radarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
+1. [_Optional_] Use tags from ^^==Radarr 1==^^ to add Movies to {++Radarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
+1. [_Optional_] Add all movies from the chosen root folder from ^^==Radarr 1==^^. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Radarr 1" }
 
 #### Radarr Download client setup
 
@@ -138,11 +138,11 @@ Then you get a screen with the following options:
 1. If you want to use Season Folders (**RECOMMENDED**).
 1. Tags that will be added on import from this list (if you use multiple lists it makes it easier to determine from which list the TV Shows was added)
 1. The Full URL to ^^==Sonarr 1==^^ (Use container name or local URL if they run on the same system).
-1. Your API Key of ^^==Sonarr 1==^^. :material-alert-circle:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
+1. Your API Key of ^^==Sonarr 1==^^. :circle-question:{ title="After adding your API key, click on the test button at the bottom to see if you have a successful connection." }
 1. Sync season monitoring (**SUGGESTION: DISABLED**)
 1. The Cloned Profile of ^^==Sonarr 1==^^ that we're going to use to sync with {++Sonarr 2++}.
-1. [_Optional_] Use tags from ^^==Sonarr 1==^^ to add TV Shows to {++Sonarr 2++}. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
-1. [_Optional_] Add all TV Shows from the chosen root folder from ^^==Sonarr 1==^^. :material-alert-circle:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
+1. [_Optional_] Use tags from ^^==Sonarr 1==^^ to add TV Shows to {++Sonarr 2++}. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
+1. [_Optional_] Add all TV Shows from the chosen root folder from ^^==Sonarr 1==^^. :circle-question:{ title="The dropdown box is filled after you made a successful connection with Sonarr 1" }
 1. This is a Deprecated option.
 
 #### Sonarr Download client setup
