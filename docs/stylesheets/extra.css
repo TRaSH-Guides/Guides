@@ -72,3 +72,11 @@ td {
   fill: var(--md-accent-fg-color);
   transform:rotate(45deg);
 }
+.md-typeset .md-button.custom_width {
+  border-radius:0rem;
+  padding:.625em .91em;
+}
+.md-typeset .md-button {
+  border-radius:0rem;
+  padding:.625em 2.2em;
+}

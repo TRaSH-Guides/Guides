@@ -4,7 +4,7 @@
 
 # TRaSH-Guides
 
-[![Discord chat](https://trash-guides.info/assets/discord.png){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
 [![GitHub last commit](https://img.shields.io/github/last-commit/TRaSH-Guides/Guides?color=4051B5&label=Last%20Update&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/commits/master){:target="\_blank" rel="noopener noreferrer"}
 [![GitHub contributors](https://img.shields.io/github/contributors/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/graphs/contributors){:target="\_blank" rel="noopener noreferrer"}
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls){:target="\_blank" rel="noopener noreferrer"}
@@ -29,7 +29,8 @@ I try to make my guides as easy as possible for everyone to understand and, in m
 - If you want to contribute, feel free to create a PR (Pull Request).
 - If you found a actual issue related to the guide you can open a Github [issue](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}.
 
-<center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
+<center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary .custom_width }</center>
+<center>[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
 
 ---
 
