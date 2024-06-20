@@ -1,1 +1,3 @@
-{! include-markdown '../../Radarr/Tips/Sync-2-radarr-sonarr.md' rewrite_relative_urls=true !}
+<!-- markdownlint-disable MD041-->
+{! include-markdown '../../Radarr/Tips/Sync-2-radarr-sonarr.md' !}
+<!-- markdownlint-enable MD041-->
