@@ -36,7 +36,7 @@ When adding a new series make sure you set the series type to Anime
 ### Recommended naming scheme
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default'] }}
 ```
 
 ??? abstract "Results: - [Click to show/hide]"
