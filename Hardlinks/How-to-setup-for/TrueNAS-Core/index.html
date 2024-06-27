@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1064,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1085,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1344,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1365,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1386,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3409,9 +3409,9 @@
 <h1 id="truenas-core">TrueNAS Core<a class="headerlink" href="#truenas-core" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This guide is based on TrueNAS Core 13, a storage solution based on ZFS. While there are more similarities than differences between Core and Scale in terms of creating datasets, this guide explicitly covers dataset, share, and basic permission setup in order to provide a place for creating and accessing the recommended folder structure. This does not cover jails or other virtualization means on the TrueNAS Core platform.</p>
-<p>This guide assumes that you've already created a pool, which by default will contain a top-level dataset that was configured during the time of pool configuration. For the examples below, we'll be using a pool name of <code>tank</code>. Encryption is recommended on the pool (TrueNAS uses ZFS Encryption with AES-256-GCM in TrueNAS Core 13), but not required. TrueNAS Core allows for granularity in encrypting individual datasets if you don't want to encrypt at the top-level dataset and have it be inherited down to the other datasets.</p>
-<p>TrueNAS Core defaults to <code>lz4</code> encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. <code>ztsd</code> is currently the default in FreeBSD, however TrueNAS Core still defaults to <code>lz4</code>. Given that media files are not very compressible by nature, the only benefit that compression provides in this case is to supplementary files such as <code>.srt</code>, <code>.nfo</code>, etc.</p>
+<p>This guide is based on TrueNAS Core 13, a storage solution based on ZFS. While there are more similarities than differences between Core and Scale in terms of creating datasets, this guide explicitly covers dataset, share, and a basic permissions setup to provide a place for creating and accessing the recommended folder structure. This does not cover jails or other virtualization means on the TrueNAS Core platform.</p>
+<p>This guide assumes that you've already created a pool, which by default will contain a top-level dataset that was configured during the time of pool configuration. For the examples below, we'll be using a pool name of <code>tank</code>. Encryption is recommended on the pool (TrueNAS uses ZFS Encryption with AES-256-GCM in TrueNAS Core 13) but is not required. TrueNAS Core allows for granularity in encrypting individual datasets if you don't want to encrypt at the top-level dataset and have it be inherited down to the other datasets.</p>
+<p>TrueNAS Core defaults to <code>lz4</code> encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. <code>ztsd</code> is currently the default in FreeBSD, however, TrueNAS Core still defaults to <code>lz4</code>. Given that media files are not very compressible by nature, the only benefit that compression provides, in this case, is to supplementary files such as <code>.srt</code>, <code>.nfo</code>, etc.</p>
 <p>Additionally, since SMB does not support hardlinks we will only be covering the creation and use of NFS shares.</p>
 </div>
 <hr />
@@ -3420,25 +3420,25 @@
 <p class="admonition-title">Warning</p>
 <p>To get hardlinks and atomic moves working with ZFS you will need to make use of <u><strong>ONE</strong></u> dataset with subfolders. Note that this does not mean multiple datasets under the example top-level dataset <code>tank</code> from this example.</p>
 </div>
-<p>For this example I'm using the dataset from my existing setup, <code>Media</code>. The naming isn't important as host machine mappings can be manipulated as desired.</p>
-<p>Go to Storage -&gt; Pools and click on ⋮ on the right side of your root dataset, then select <code>Add Dataset</code>.</p>
+<p>For this example, I'm using the dataset from my existing setup, <code>Media</code>. The naming isn't important as host machine mappings can be manipulated as desired.</p>
+<p>Go to Storage -&gt; Pools and click the ⋮ on the right side of your root dataset, then select <code>Add Dataset</code>.</p>
 <p><a class="glightbox" href="../images/truenas-create-dataset.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-dataset" src="../images/truenas-create-dataset.png" /></a></p>
-<p>On the next screen you'll fill out your basic dataset info, such as name and comments. I have a few things grayed out here as the dataset has already been configured, but in this example you would use <code>Media</code> in the Name field and keep everything else at its default (<code>Inherit</code>) with the exception of <code>Enable Atime</code> and <code>Record Size</code>. Set <code>Enable Atime</code> to <code>off</code> and <code>Record Size</code> to <code>1M</code>. This provides a performance increase on a dataset that will primarily be handling media files. Optionally, you can configure <code>Quota for this dataset</code> if you want to limit what the dataset displays and will accept in terms of capacity when it's mounted (i.e. setting this to <code>10 TiB</code> will show 10T as the capacity when mounted).</p>
+<p>On the next screen, you'll fill out your basic dataset info, such as name and comments. We have a few things grayed out here as the dataset has already been configured, but in this example, you would use <code>Media</code> in the Name field and keep everything else at its default (<code>Inherit</code>) except for <code>Enable Atime</code> and <code>Record Size</code>. Set <code>Enable Atime</code> to <code>off</code> and <code>Record Size</code> to <code>1M</code>. This provides a performance increase on a dataset that will primarily be handling media files. Optionally, you can configure <code>Quota for this dataset</code> if you want to limit what the dataset displays and will accept in terms of capacity when it's mounted (i.e. setting this to <code>10 TiB</code> will show 10T as the capacity when mounted).</p>
 <p>During share creation, there will be an option at the bottom for <code>Share Type</code>. <code>Generic</code> is the default, with <code>SMB</code> as a selectable option. Since we'll be using NFS, select <code>Generic</code>.</p>
 <p>Click <code>Submit</code> (mine shows <code>Save</code> since this is an existing dataset) once complete.</p>
 <p><a class="glightbox" href="../images/truenas-dataset-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-dataset" src="../images/truenas-dataset-options.png" /></a></p>
 <hr />
 <h2 id="create-a-shared-group">Create a shared group<a class="headerlink" href="#create-a-shared-group" title="Permanent link"></a></h2>
-<p>We'll need to create a shared group so that we can ensure proper access when mounting, and to avoid ending up with <code>nobody</code> as the group name when mounting over NFS. This group should contain any of your user accounts that will be accessing the share (Starr apps, download clients, etc). It should also match the group and <code>GID</code> on the host you plan to mount the share to, and run your apps on.</p>
+<p>We'll need to create a shared group so that we can ensure proper access when mounting, and to avoid ending up with <code>nobody</code> as the group name when mounting over NFS. This group should contain any of your user accounts that will be accessing the share (Starr apps, download clients, etc). It should also match the group and <code>GID</code> on the host you plan to mount the share as and run your apps from.</p>
 <p>Navigate to Accounts -&gt; Groups, and click <code>Add</code> at the top right.</p>
-<p>You'll arrive at a simple configuration screen like the one shown below. Set your <code>GID</code> that you plan to use, and name the group. In this example I'm using a <code>GID</code> of <code>1215</code> and a group name of <code>dockermedia</code>. Since this group won't be used for anything other than share permissions, leave <code>Permit Sudo</code> and <code>Samba Authentication</code> unchecked. Click <code>Submit</code> once complete.</p>
+<p>You'll arrive at a simple configuration screen like the one shown below. Set your <code>GID</code> that you plan to use, and name the group. In this example, I'm using a <code>GID</code> of <code>1215</code> and a group name of <code>dockermedia</code>. Since this group won't be used for anything other than share permissions, leave <code>Permit Sudo</code> and <code>Samba Authentication</code> unchecked. Click <code>Submit</code> once complete.</p>
 <p><a class="glightbox" href="../images/truenas-group-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-group" src="../images/truenas-group-options.png" /></a></p>
 <hr />
 <h2 id="create-your-users">Create your user(s)<a class="headerlink" href="#create-your-users" title="Permanent link"></a></h2>
-<p>We'll need to create a user (or users if you're using individual user accounts per service) on TrueNAS that matches the user and UID of the user you'll be mounting your share with. It's important that these match since we're not using the <code>Mapall</code> function that exist under the NFS Share options.</p>
+<p>We'll need to create a user (or users - if you're using individual user accounts for each service) on TrueNAS that matches the user and UID of the user you'll be mounting your share with. It's important that these match since we're not using the <code>Mapall</code> function that exists under the NFS Share options.</p>
 <p>Navigate to Accounts -&gt; Users, and click <code>Add</code> at the top right.</p>
 <p>You'll arrive at a configuration screen like the one shown below. Fill out <code>Full Name</code> and <code>Username</code> with the desired username, and set your <code>User ID</code> that you plan to use.</p>
-<p>You'll need to uncheck <code>New Primary Group</code> so you can manually populate <code>Primary Group</code> with the shared group you created in the previous step. In this example I'm using a GID of <code>1215</code> and a <code>Primary Group</code> name of <code>dockermedia</code>. Leave <code>Home Directory</code> as <code>/nonexistent</code>, and set <code>Disable Password</code> to <code>Yes</code>. Uncheck <code>Samba Authentication</code> and click <code>Submit</code> once complete. <code>Home Directory Permissions</code> aren't important as it's set to <code>/nonexistent</code>, and we won't ever be accessing it.</p>
+<p>You'll need to uncheck <code>New Primary Group</code> so you can manually populate <code>Primary Group</code> with the shared group you created in the previous step. In this example, I'm using a GID of <code>1215</code> and a <code>Primary Group</code> name of <code>dockermedia</code>. Leave <code>Home Directory</code> as <code>/nonexistent</code>, and set <code>Disable Password</code> to <code>Yes</code>. Uncheck <code>Samba Authentication</code> and click <code>Submit</code> once complete. <code>Home Directory Permissions</code> aren't important as it's set to <code>/nonexistent</code>, and we won't ever be accessing it.</p>
 <p><a class="glightbox" href="../images/truenas-user-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-user" src="../images/truenas-user-options.png" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3448,7 +3448,7 @@
 <h2 id="dataset-permissions">Dataset permissions<a class="headerlink" href="#dataset-permissions" title="Permanent link"></a></h2>
 <p>Now that we have a user and a group, we can set the permissions on the dataset.</p>
 <p>Navigate to Storage -&gt; Pools, and click ⋮ on the right side of your target dataset (<code>Media</code> if you're following my example), then select <code>Edit Permissions</code>.</p>
-<p>You'll arrive at a configuration screen like the one shown below. Under <code>Owner</code>, fill out your <code>User</code> and <code>Group</code> information with your desired user and the shared group you plan to use for your apps. <code>User</code> isn't super important here if you're using a NFS share and have <code>Group</code> configured properly, but it would matter if you're doing a single-user share (i.e. if you wanted a single person to have their own dataset -&gt; share to map).</p>
+<p>You'll arrive at a configuration screen like the one shown below. Under <code>Owner</code>, fill out your <code>User</code> and <code>Group</code> information with your desired user and the shared group you plan to use for your apps. <code>User</code> isn't super important here if you're using an NFS share and have <code>Group</code> configured properly, but it would matter if you're doing a single-user share (i.e. if you wanted a single person to have their own dataset -&gt; share to map).</p>
 <p>Check the boxes for <code>Apply User</code>, <code>Apply Group</code>, and <code>Apply Permissions Recursively</code> (check <code>Confirm</code> and click <code>Continue</code> if you get a popup). Check the <code>Access Mode</code> boxes as indicated in the image example and click <code>Save</code> once complete.</p>
 <p><a class="glightbox" href="../images/truenas-dataset-permissions.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-dataset-permissions" src="../images/truenas-dataset-permissions.png" /></a></p>
 <hr />
@@ -3458,7 +3458,7 @@
 <p>Set a <code>Description</code> if desired (recommended for tracking), and check <code>All dirs</code> and <code>Enabled</code>.</p>
 <p>Click <code>Advanced Options</code> to show the rest of the options we need.</p>
 <p>Leave <code>Security</code> alone as the defaults are fine.</p>
-<p>At the bottom, you have a couple of options. You can either specify <code>Authorized Networks</code> for more broad access, or authorize specific hosts (my preferred method). Either way, make sure you use one of these options to ensure that whichever host is mounting the NFS share has access.</p>
+<p>At the bottom, you have a couple of options. You can either specify <code>Authorized Networks</code> for more broad access or authorize specific hosts (my preferred method). Either way, make sure you use one of these options to ensure that whichever host is mounting the NFS share has access.</p>
 <p>Click <code>Submit</code> once complete.</p>
 <p><a class="glightbox" href="../images/truenas-nfs-share-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-nfs-share-options" src="../images/truenas-nfs-share-options.png" /></a></p>
 <hr />
@@ -3472,8 +3472,8 @@
 <p><a class="glightbox" href="../images/truenas-nfs-service-options.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="truenas-nfs-service-options" src="../images/truenas-nfs-service-options.png" /></a></p>
 <hr />
 <h2 id="mount-your-shares">Mount your shares<a class="headerlink" href="#mount-your-shares" title="Permanent link"></a></h2>
-<p>Follow standard mounting procedures for your operating system/device. In Ubuntu mounting a NFS share is as simple as adding it to <code>/etc/fstab</code> with <code>&lt;host&gt;:/mnt/tank/Media /mnt/data nfs defaults,_netdev,rw 0 0</code>, and issuing <code>mount -a</code> (or rebooting).</p>
-<p>Regardless of method, make sure that the device ends up with a <code>data</code> mount point. The mount point is important since it will allow us to follow the usual guide for folder structure. If you've followed the guide, from a NFS share standpoint the owner and group of the <code>/mnt/data</code> directory will be the user and group that were previously configured in the Dataset Permissions section. If this is improperly configured you can end up with <code>nobody</code> as the owner or group, or have permission errors.</p>
+<p>Follow standard mounting procedures for your operating system/device. In Ubuntu mounting an NFS share is as simple as adding it to <code>/etc/fstab</code> with <code>&lt;host&gt;:/mnt/tank/Media /mnt/data nfs defaults,_netdev,rw 0 0</code>, and issuing <code>mount -a</code> (or rebooting).</p>
+<p>Regardless of the method, make sure that the device ends up with a <code>data</code> mount point. The mount point is important since it will allow us to follow the usual guide for folder structure. If you've followed the guide, from a NFS share standpoint the owner and group of the <code>/mnt/data</code> directory will be the user and group that were previously configured in the Dataset Permissions section. If this is improperly configured you can end up with <code>nobody</code> as the owner or group, or have permission errors.</p>
 <hr />
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>Now that you have a <code>data</code> folder, you can follow the normal folder structure recommendations, such as the one below.</p>
@@ -3531,7 +3531,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 12, 2024 04:15:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

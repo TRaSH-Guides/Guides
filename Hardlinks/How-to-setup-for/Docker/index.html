@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1064,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1085,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1344,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1365,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1386,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3481,17 +3481,17 @@
 <h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link"></a></h1>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you're new to dockers and want a easy setup I suggest to take a look at <a href="https://dockstarter.com/" rel="noopener noreferrer" target="_blank">DockSTARTer</a>.
-I've also created a short guide <a href="/Hardlinks/How-to-setup-for/Dockstarter/">HERE</a> where I explain the settings for the most used applications.</p>
+<p>If you're new to dockers and want an easy setup, we suggest taking a look at <a href="https://dockstarter.com/" rel="noopener noreferrer" target="_blank">DockSTARTer</a>.
+We've also created a short guide <a href="/Hardlinks/How-to-setup-for/Dockstarter/">HERE</a> where we explain the settings for the most used applications.</p>
 <p>The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
 You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.</p>
-<p><em>DockSTARTer was actually my first steps in to the world of dockers.</em></p>
+<p><em>DockSTARTer was actually my first step into the world of dockers.</em></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>I'm not going to explain how to get dockers installed and running, I will only explain which folder structure we recommend.</p>
+<p>I'm not going to explain how to get dockers installed and running, we will only explain which folder structure we recommend.</p>
 <p>The paths mentioned below refer to internal paths (or <code>Container Path</code>) for the containers!</p>
-<p>External paths (or <code>Host Path</code>) depends where you mounted your share or your drives.</p>
+<p>External paths (or <code>Host Path</code>) depend on where you mounted your share or your drives.</p>
 <p>For example <code>/&lt;path_to_data&gt;/data</code>, or even <code>/data</code>.</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/folder-structure.md -->
@@ -3556,7 +3556,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/torrents/</code></p>
 <h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
-<p>The reason why we use <code>/data/usenet</code> for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/complete/{tv|movies|music}</code>.</p>
+<p>The reason why we use <code>/data/usenet</code> for the Usenet client is because it only needs access to the Usenet files. In the Usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/complete/{tv|movies|music}</code>.</p>
 <!-- BEGIN INCLUDE ./docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
@@ -3614,7 +3614,7 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <p><code>Container Path:</code> =&gt; <code>/data/media</code></p>
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/media/</code></p>
 <hr />
-<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside the applications.</strong></p>
+<p><strong>Don't forget to look at the <a href="/Hardlinks/Examples/">Examples</a> how to set up the paths inside the applications.</strong></p>
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/permissions.md -->
@@ -3628,7 +3628,7 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
 <h2 id="docker-compose-example">Docker-compose Example<a class="headerlink" href="#docker-compose-example" title="Permanent link"></a></h2>
 <div class="admonition example">
 <p>This is a docker-compose example based on a default Ubuntu install.</p>
-<p>The storage location used for the host is actually the same as in the container to make it easier to understand in this case <code>/data</code>.</p>
+<p>The storage location used for the host is the same as in the container to make it easier to understand in this case <code>/data</code>.</p>
 <p>The appdata (<code>/config</code>) will be stored on the host in the <code>/docker/appdata/{appname}</code></p>
 </div>
 <details class="example">
@@ -3746,7 +3746,7 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 12, 2024 04:15:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

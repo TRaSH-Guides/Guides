@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1064,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1085,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1344,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1365,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1386,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3793,20 +3793,20 @@
 <h1 id="synology">Synology<a class="headerlink" href="#synology" title="Permanent link"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, I'm doing this with the use of docker-compose through a terminal.</p>
+<p>Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, we're going to do this with the use of docker-compose through a terminal.</p>
 <p>This is faster than the GUI and after installing, it shows up in the Docker GUI.</p>
 <p>Thanks to faxity for the initial compose that I used to create the Synology Guide.</p>
 <p>And a very big thanks to <a href="https://www.buymeacoffee.com/bokkoman" rel="noopener noreferrer" target="_blank">Bokkoman</a> and <a href="https://github.com/BaukeZwart" rel="noopener noreferrer" target="_blank">BZwart</a> that updated this Guide for DSM 7 and also offered their help on discord as Synology Support Team.</p>
 </div>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
-<p>This page will provide you with guidance on how to install several Docker images related to the Servarr apps to your Synology. We highly recommend to read the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.</p>
+<p>This page will provide you with guidance on how to install several Docker images related to the Servarr apps to your Synology. We highly recommend reading the full guide, that way you have a better understanding of what you do, in case you later decide to make changes.</p>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link"></a></h2>
 <ol>
 <li>We will create <strong><em>one</em></strong> share that will hold all your data. This ensures hardlinking and/or instant moves are possible.</li>
-<li>Create one user which will be assigned to the docker images as the user they run as out of security reasons.</li>
+<li>Create one user that will be assigned to the docker images as the user they run out of security reasons.</li>
 <li>Create a folder structure on the <code>data</code> and <code>docker</code> share with a few commands (or manually).</li>
 <li>Download and edit the <code>docker-compose.yml</code> and <code>.env</code> files to your system settings.</li>
-<li>Set permissions to all folders related in the shares.</li>
+<li>Set permissions to all folders related to the shares.</li>
 <li>Run and execute docker commands to start the containers.</li>
 </ol>
 <h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link"></a></h3>
@@ -3816,21 +3816,21 @@
 <p class="admonition-title">Warning</p>
 <p>Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.</p>
 <p>The script is only tested on Synology DSM7 and higher.</p>
-<p><strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> We are not held reliable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></strong></p>
+<p><strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> We are not held liable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></strong></p>
 </div>
 <p>To get this working you will need to enable terminal access (SSH) and home folders.</p>
-<p>Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), backup settings before you do.</p>
+<p>Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), and backup settings before you do.</p>
 <p>To enable SSH on your Synology take a look <a href="#ssh" rel="noopener noreferrer" target="_blank">HERE</a>.</p>
 <p>To enable Home folders, go to <code>Control Panel</code> &gt; <code>User &amp; Group</code> &gt; <code>Advanced</code> &gt; <code>Enable user home service</code> at the bottom.</p>
 <p><a class="glightbox" href="../images/home-folders.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!home-folders" src="../images/home-folders.png" /></a></p>
-<p>When you enabled these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.</p>
+<p>When you enable these two settings, run the following commands in your favorite terminal app and follow the onscreen questions.</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sL<span class="w"> </span>git.io/syno-script<span class="w"> </span>&gt;<span class="w"> </span>~/syno-script
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>~/syno-script
 </code></pre></div>
 </details>
 <h2 id="install-docker">Install Docker<a class="headerlink" href="#install-docker" title="Permanent link"></a></h2>
-<p>You need to install Docker / Container Manager from the <code>Package Center</code>. This should also create a share named <code>docker</code>, check File Station if it is present.</p>
+<p>You need to install Docker / Container Manager from the <code>Package Center</code>. This should also create a share named <code>docker</code>, and check File Station if it is present.</p>
 <h2 id="create-the-main-share">Create the main share<a class="headerlink" href="#create-the-main-share" title="Permanent link"></a></h2>
 <p>We will create and use a new share named <code>data</code> (lowercase) for all your library media and downloads.</p>
 <p>To create a new share:</p>
@@ -3838,19 +3838,19 @@
 <p><a class="glightbox" href="../images/create_share.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!create_share" src="../images/create_share.png" /></a></p>
 <p>Name this shared folder <code>data</code>. You can disable the trash can, up to you. Click next until you are done.</p>
 <h2 id="create-a-user">Create a user<a class="headerlink" href="#create-a-user" title="Permanent link"></a></h2>
-<p>We are going to create a new user that only has access to the share(s) that we use for the containers to run as. You rather not have the containers run as an admin/root user.</p>
+<p>We are going to create a new user that only has access to the share(s) that we use for the containers to run. You should not have the containers run as an admin/root user.</p>
 <p>Go to <code>Control Panel</code> &gt; <code>User &amp; Group</code></p>
-<p>In the <code>User</code> section, create a new user. Name it whatever you like, but for this guide we will use the name <code>docker</code>.</p>
+<p>In the <code>User</code> section, create a new user. Name it whatever you like, but for this guide, we will use the name <code>docker</code>.</p>
 <p><a class="glightbox" href="../images/adduser.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!adduser" src="../images/adduser.PNG" /></a></p>
 <p>Fill out the rest of the information, generate a password or type your own.</p>
 <p>Click next, you will now be able to select which group this user will belong to, it should only be the group <code>users</code>. Click <code>Next</code>.</p>
 <h3 id="assign-shared-folder-permissions">Assign shared folder permissions<a class="headerlink" href="#assign-shared-folder-permissions" title="Permanent link"></a></h3>
-<p>In the next screen you will be able to select which Shares this user will have access to, click <code>No Access</code> on the top, this will deny all access.</p>
+<p>In the next screen, you will be able to select which Shares this user will have access to, click <code>No Access</code> on the top, this will deny all access.</p>
 <p>Now <strong>only</strong> select <code>Read/Write</code> on the shares <code>docker</code> and <code>data</code> (the share we created earlier).</p>
 <p><a class="glightbox" href="../images/adduser_2.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Assign shared folders permissions" src="../images/adduser_2.PNG" /></a></p>
 <p>Click <code>Next</code> until you reach <code>Assign application permissions</code></p>
 <h3 id="assign-application-permissions">Assign application permissions<a class="headerlink" href="#assign-application-permissions" title="Permanent link"></a></h3>
-<p>In this screen you will be able to select which application this user will have access to. Check <code>Deny</code> for all applications.</p>
+<p>In this screen, you will be able to select which application this user will have access to. Check <code>Deny</code> for all applications.</p>
 <p><a class="glightbox" href="../images/adduser_3.PNG" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Assign application permissions" src="../images/adduser_3.PNG" /></a></p>
 <p>Continue to click <code>Next</code> until you are finished.</p>
 <h2 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link"></a></h2>
@@ -3859,19 +3859,19 @@ To enable terminal access, you need to enable SSH in the Synology Settings.</p>
 <p><code>Control Panel</code> &gt; <code>Terminal &amp; SNMP</code> &gt; <code>Enable SSH service</code></p>
 <p><a class="glightbox" href="../images/synology-ssh.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!synology-control-panel" src="../images/synology-ssh.png" /></a></p>
 <p>Then use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">Putty</a> or Powershell/Terminal to SSH into your Synology.</p>
-<p>Enter the login information of a Synology user account that has admin priveliges, as only members of the 'administrators' user group are able to use SSH.</p>
+<p>Enter the login information of a Synology user account that has admin privileges, as only members of the 'administrators' user group can use SSH.</p>
 <p>If you get a message asking if you want to trust the key, just press <code>OK</code> or <code>ACCEPT</code>.</p>
 <h3 id="puid-and-pgid">PUID and PGID<a class="headerlink" href="#puid-and-pgid" title="Permanent link"></a></h3>
-<p>In order for the Docker container to access the shares on the Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
+<p>For the Docker container to access the shares on Synology, we need to know the user ID (PUID) and group ID (PGID) from the <code>docker</code> user we just created.</p>
 <p>Once logged in to the terminal type <code>id docker</code>. If you used a different username, change <code>docker</code> to the one you used.</p>
 <p><a class="glightbox" href="../images/synology-id.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!synology-id" src="../images/synology-id.png" /></a></p>
 <p>This will show you the UID (aka PUID).
-Which in the screenshot above is <code>1035</code> for the docker user and the GID (aka PGID) which is <code>100</code> for the users group.
+In the screenshot above this is <code>1035</code> for the docker user and <code>100</code> is the GID (aka PGID) for the user's group.
 Save these values for later use.</p>
 <h2 id="create-folder-structure">Create Folder Structure<a class="headerlink" href="#create-folder-structure" title="Permanent link"></a></h2>
 <p>Let's create a good folder structure on the shares we use (<code>docker</code> and <code>data</code>). This will be done with a few commands.</p>
 <p>The structure will look like this. You can of course edit this, but do this when you know what you are doing.
-<em>We are using lowercases on all folders on purpose, being Linux is case sensitive.</em></p>
+<em>We are using lowercase on all folders on purpose, being Linux is case-sensitive.</em></p>
 <!-- BEGIN INCLUDE ../../../includes/hardlinks/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
@@ -3911,7 +3911,7 @@ Save these values for later use.</p>
 <hr />
 <h3 id="appdata">Appdata<a class="headerlink" href="#appdata" title="Permanent link"></a></h3>
 <p>Your application data will be stored in the <code>docker</code> share in the folder called <code>appdata</code> (<code>/volume1/docker/appdata</code>)
-Create these folders with command below, or create them in File Station manually.</p>
+Create these folders with the command below, or create them in File Station manually.</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/appdata/<span class="o">{</span>radarr,sonarr,bazarr,plex,prowlarr,pullio<span class="o">}</span>
 </code></pre></div>
 <p>You can add your own subfolders for your download client(s) using the command above, by adding the name to the command.</p>
@@ -3935,8 +3935,8 @@ Create these folders with command below, or create them in File Station manually
 <li><code>docker-compose.yml</code></li>
 <li><code>.env</code></li>
 </ol>
-<p>We will start with downloading the <code>docker-compose.yml</code> file</p>
-<p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you got your important stuff together. Or use the command below:</p>
+<p>We will start by downloading the <code>docker-compose.yml</code> file</p>
+<p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml" rel="noopener noreferrer" target="_blank">docker-compose.yml</a> to your <code>/volume1/docker/appdata</code> location so you can get your important stuff together. Or use the command below:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/docker-compose.yml<span class="w"> </span>-P<span class="w"> </span>/volume1/docker/appdata/
 </code></pre></div>
 <h3 id="whats-included-in-the-compose-and-what-is-not-included">What's included in the compose and what is not included<a class="headerlink" href="#whats-included-in-the-compose-and-what-is-not-included" title="Permanent link"></a></h3>
@@ -3949,8 +3949,8 @@ Create these folders with command below, or create them in File Station manually
 </code></pre></div>
 <p>What's not included (and where are the download clients?).</p>
 <p>We didn't add a download client to it, because it depends on what you prefer (usenet/torrent) and which client you prefer. We have a repository <a href="https://github.com/TRaSH-/Guides-Synology-Templates/tree/main/templates" rel="noopener noreferrer" target="_blank">Repository</a> on Github where we provide and maintain some templates that are ready to use with the main <code>docker-compose.yml</code>.</p>
-<p>The only thing you need to do is copy &amp; paste what's inside the template file into to the main <code>docker-compose.yml</code> on the bottom, the templates also have a command what you need to use to create the <a href="#appdata">appdata</a> folder that we explained earlier. Without the appdata folder for the application, the creation of the container will fail because of the missing folder.</p>
-<p>Second we will download the <code>.env</code> file</p>
+<p>The only thing you need to do is copy &amp; paste what's inside the template file into the main <code>docker-compose.yml</code> on the bottom, the templates also have a command that you need to use to create the <a href="#appdata">appdata</a> folder that we explained earlier. Without the appdata folder for the application, the creation of the container will fail because of the missing folder.</p>
+<p>Second, we will download the <code>.env</code> file</p>
 <p>Download this <a href="https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env" rel="noopener noreferrer" target="_blank">.env</a> to your <code>/volume1/docker/appdata</code> location next to the <code>docker-compose.yml</code>. Or use this command:</p>
 <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/docker-compose/.env<span class="w"> </span>-P<span class="w"> </span>/volume1/docker/appdata/
 </code></pre></div>
@@ -3964,7 +3964,7 @@ Create these folders with command below, or create them in File Station manually
 <p class="admonition-title">Tip</p>
 <p>If you need to edit docker-compose.yml or the .env file we advise to use <a href="https://notepad-plus-plus.org/" rel="noopener noreferrer" target="_blank">Notepad++</a> or <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">Visual Studio Code</a></p>
 </div>
-<p>The <code>.env</code> file we downloaded holds the variables/information you need to change in order for everything to work. I added explanations in the <code>.env</code> file.</p>
+<p>The <code>.env</code> file we downloaded holds the variables/information you need to change for everything to work. I added explanations in the <code>.env</code> file.</p>
 <ol>
 <li>DOCKERCONFDIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
 <li>DOCKERDATADIR (only change this if you know what you're doing and decide to use another path than this guide used)</li>
@@ -3978,19 +3978,19 @@ Create these folders with command below, or create them in File Station manually
 <hr />
 <h4 id="pullio-auto-update-docker-compose-the-correct-way">Pullio - Auto update docker-compose the correct way<a class="headerlink" href="#pullio-auto-update-docker-compose-the-correct-way" title="Permanent link"></a></h4>
 <p>Pullio allows you to automatically update your containers. And send you a notification through various means. We use a Discord Webhook.</p>
-<p>First you need to download Pullio</p>
+<p>First, you need to download Pullio</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>sudo<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/hotio/pullio/master/pullio.sh&quot;</span><span class="w"> </span>-o<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="w">    </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/pullio
 </code></pre></div>
-<p>For Pullio to do it's job, you will need to create a Scheduled Task in your Task Scheduler that runs for example at 4am at night with <strong>root</strong> privileges.</p>
-<p><code>Control Panel</code> &gt; <code>Task Scheduler</code> &gt; click <code>Create</code> &gt; choose <code>Scheduled task - user defined script</code></p>
+<p>For Pullio to do its job, you will need to create a Scheduled Task in your Task Scheduler that runs for example at 4AM with <strong>root</strong> privileges.</p>
+<p><code>Control Panel</code> &gt; <code>Task Scheduler</code> &gt; click <code>Create</code> &gt; choose <code>Scheduled task - user-defined script</code></p>
 <p>Give the task a name so you know what it does. Choose user <code>root</code>.</p>
 <p>In the <code>Schedule</code> tab choose when and how often you want it to check for updates.</p>
 <p>At <code>Task Settings</code> tab, add the following line in the Run Command section:</p>
 <div class="highlight"><pre><span></span><code>/usr/local/bin/pullio<span class="w"> </span>&gt;<span class="w"> </span>/volume1/docker/appdata/pullio/pullio.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
-<p>It can be frustrating to test the script if no docker image updates are available, for that you can run command <code>sudo pullio --debug</code> and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.</p>
+<p>It can be frustrating to test the script if no docker image updates are available, therefore you can run the command <code>sudo pullio</code> --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.</p>
 <p>More info about Pullio <a href="https://hotio.dev/scripts/pullio/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 <hr />
 <h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h3>
@@ -3998,7 +3998,7 @@ Create these folders with command below, or create them in File Station manually
 <p>If you have an existing library, it is advised to move these to the new <code>data</code> share prior to running the commands below.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you're using a different user than <code>docker</code> (the user generated in the beginning), then you need to change the <code>docker:users</code> part in the command below!!!</p>
+<p>If you're using a different user than <code>docker</code> (the user-generated in the beginning), then you need to change the <code>docker:users</code> part in the command below!!!</p>
 </div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span>docker:users<span class="w"> </span>/volume1/data<span class="w"> </span>/volume1/docker
 </code></pre></div>
@@ -4006,26 +4006,26 @@ Create these folders with command below, or create them in File Station manually
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you move files from a different library into the newly created library afterwards, you need to rerun these commands. !!!</p>
+<p>If you move files from a different library into the newly created library afterward, you need to rerun these commands. !!!</p>
 </div>
 <hr />
 <h2 id="run-the-docker-compose">Run the Docker Compose<a class="headerlink" href="#run-the-docker-compose" title="Permanent link"></a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
-If you had previous installed apps, make a backup of their config folders or backup through the webui of the app.</p>
+If you had previously installed apps, make a backup of their config folders or backup through the WebUI of the app.</p>
 </div>
 <p>If you have followed all the steps and your compose file is ready, run the following commands:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/volume1/docker/appdata
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
-<p>You will notice that all the images will be downloaded, after that the containers will be started. If you get a error then read what error says and try to fix it (missing folders, permissions errors, etc). If you can't figure out the solution to your errors, join the guides-discord <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank">here</a> and create a support ticket.</p>
+<p>You will notice that all the images will be downloaded, and after that, the containers will be started. If you get an error then read what the error says and try to fix it (missing folders, permissions errors, etc). If you can't figure out the solution to your errors, join the guides-discord <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank">here</a> and create a support ticket.</p>
 <hr />
-<p><strong>If you need help setting up the applications, look at the <a href="/Hardlinks/Examples/">Examples</a> how to setup the paths inside your applications.</strong></p>
+<p><strong>If you need help setting up the applications, look at the <a href="/Hardlinks/Examples/">Examples</a> of how to set up the paths inside your applications.</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you need to do any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, <a href="#run-the-docker-compose">run the commands from here</a> again.</p>
+<p>If you need to make any changes, only edit the <code>docker-compose.yml</code> file. To activate the changes, <a href="#run-the-docker-compose">run the commands from here</a> again.</p>
 <p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
 <p>Just don't use the GUI, only for information purposes !!!</p>
 </div>
@@ -4056,7 +4056,7 @@ If you had previous installed apps, make a backup of their config folders or bac
 <h2 id="additional-synology-info">Additional Synology Info<a class="headerlink" href="#additional-synology-info" title="Permanent link"></a></h2>
 <h3 id="dsm-task-for-correctly-reporting-ip-in-plexnginxetc">DSM Task for correctly reporting IP in Plex/Nginx/Etc<a class="headerlink" href="#dsm-task-for-correctly-reporting-ip-in-plexnginxetc" title="Permanent link"></a></h3>
 <p>Due to some iptables configuration in DSM, you can get an incorrect IP reported in Plex or other apps that need an read/report the IP. To fix this, you need to add two rules to your iptables. unfortunately, those rules can sometimes be deleted at reboot or after DSM update.</p>
-<p>To fix this, you will need to add a Scheduled Task that executes at boot with root user, which will check if the rules exists, if not, re-add them.</p>
+<p>To fix this, you will need to add a Scheduled Task that executes at boot as the root user which will check if the rules exist, and, if not - re-add them.</p>
 <details class="question">
 <summary>Task bash command - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
@@ -4110,7 +4110,7 @@ If you had previous installed apps, make a backup of their config folders or bac
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 12, 2024 04:15:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

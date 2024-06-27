@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1064,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1085,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1344,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1365,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1386,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3655,7 +3655,7 @@
 <hr />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Settings that aren't covered means you can change them to your own liking or just leave them on default.</p>
+<p>Settings that aren't covered means you can change them to your liking, or just leave them on default.</p>
 <p><strong>I also recommend to enable the <code>Advanced Settings</code> on the top right.</strong></p>
 </div>
 <h2 id="general">General<a class="headerlink" href="#general" title="Permanent link"></a></h2>
@@ -3692,7 +3692,7 @@
 <p class="admonition-title">Starting from 4.3.x+ SABnzbd has a hidden (archive) history.</p>
 </div>
 <p>Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
-The default is empty, I picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.</p>
+The default is empty, we picked history because it is easy. It'll end up in the <code>/config</code> folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.</p>
 <hr />
 <h2 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h2>
 <p><a href="https://sabnzbd.org/wiki/configuration/4.3/servers" rel="noopener noreferrer" target="_blank">SABnzbd Documentation</a></p>
@@ -3726,23 +3726,23 @@ The default is empty, I picked history because it is easy. It'll end up in the <
 <ol>
 <li>If you have good indexers that get the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.</li>
 <li>When it becomes clear during downloading that too much data is missing, abort the job to make sure Sonarr/Radarr gets the notification so it can look for another release.</li>
-<li>Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.</li>
-<li>In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.</li>
+<li>Since we have the .nzb history folder, you can decide what you want to do here with duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.</li>
+<li>In the case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.</li>
 <li>This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).</li>
-<li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
+<li>If your hardware isn't up to snuff, including CPU and/or IO performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
 </ol>
 <h3 id="post-processing">Post processing<a class="headerlink" href="#post-processing" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Switches</code> =&gt; <code>Post processing</code>
 <a class="glightbox" href="../images/sabnzbd-switches-post-processing.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Switches: Post-processing" src="../images/sabnzbd-switches-post-processing.png" /></a></p>
 <ol>
-<li>If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
+<li>If your hardware isn't up to snuff, including CPU and/or IO performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.</li>
 <li>This should be set off if you have decent internet. The amount of time spent to grab pars, if needed for verification/repair, is trivial to the time that a repair might run and fail to realize it needs more pars, and grab the next part, then retry.</li>
 <li>It is your choice if you want to enable this option. It's usually an easy check and does provide benefits if the job doesn't have par2 files, as not every release has a par-set or SFV file. Generally speaking, if we're talking about scene releases, things should have both but this depends on how it's posted and how the indexer is generating the nzb. SFV is commonly used and a basic crc32 checksum is better not knowing if the file is good. Parsing an SFV file and checking the files' integrities takes very little resources. This may seem redundant given that par's checks would also handle this, however, the ease with which the check is done makes the downside almost non-existent.</li>
 <li>Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.</li>
 <li>Unpack archives (rar, zip, 7z) within archives.</li>
-<li>This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.</li>
-<li>Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if its a sample compared to what SABnzbd uses.</li>
-<li>Helps with de-obfuscation especially invalid file extensions</li>
+<li>This can help with subs that are in folders in the rar because Sonarr/Radarr don't look in sub-folders.</li>
+<li>Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if it's a sample compared to what SABnzbd uses.</li>
+<li>Helps with de-obfuscation, especially invalid file extensions</li>
 </ol>
 <hr />
 <h2 id="sorting">Sorting<a class="headerlink" href="#sorting" title="Permanent link"></a></h2>
@@ -3752,10 +3752,10 @@ The default is empty, I picked history because it is easy. It'll end up in the <
 </div>
 <h2 id="special">Special<a class="headerlink" href="#special" title="Permanent link"></a></h2>
 <p>Rarely used options.
-Don't change these without checking the <a href="https://sabnzbd.org/wiki/configuration/4.3/special" rel="noopener noreferrer" target="_blank">SABnzbd Wiki</a> first, as some have serious side-effects.
+Don't change these without checking the <a href="https://sabnzbd.org/wiki/configuration/4.3/special" rel="noopener noreferrer" target="_blank">SABnzbd Wiki</a> first, as some have serious side effects.
 The default values are between parentheses.</p>
 <h3 id="unable-to-connect-to-sabnzbd">Unable to connect to SABnzbd<a class="headerlink" href="#unable-to-connect-to-sabnzbd" title="Permanent link"></a></h3>
-<p>If you're trying to connect your Starr apps to SABnzbd and you're getting a error like <code>Unable to connect to SABnzbd</code> after clicking on Test.</p>
+<p>If you're trying to connect your Starr apps to SABnzbd and you're getting an error like <code>Unable to connect to SABnzbd</code> after clicking on Test.</p>
 <p><a class="glightbox" href="../images/starr-unable-to-connect-to-sabnzbd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Starr: Unable to connect to SABnzbd" src="../images/starr-unable-to-connect-to-sabnzbd.png" /></a></p>
 <p>And it SABnzbd you will see something like this.</p>
 <p><a class="glightbox" href="../images/sabnzbd-unable-to-connect-to-sabnzbd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!SABnzbd: Unable to connect to SABnzbd" src="../images/sabnzbd-unable-to-connect-to-sabnzbd.png" /></a></p>
@@ -3765,15 +3765,15 @@ The default values are between parentheses.</p>
 <p><a class="glightbox" href="../images/sabnzbd-special-host-whitelist.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!SABnzbd: host_whitelist (  )" src="../images/sabnzbd-special-host-whitelist.png" /></a></p>
 <hr />
 <h2 id="recommended-sonarrradarr-settings">Recommended Sonarr/Radarr Settings<a class="headerlink" href="#recommended-sonarrradarr-settings" title="Permanent link"></a></h2>
-<p>The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+<p>The following settings are recommended for Sonarr/Radarr, or else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
 Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.</p>
 <h3 id="sonarr">Sonarr<a class="headerlink" href="#sonarr" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Sonarr - [Click to show/hide]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><a class="glightbox" href="../images/sonarr-settings-download-clients.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr: Settings =&gt; Download Clients" src="../images/sonarr-settings-download-clients.png" /></a></p>
-<p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3.</p>
-<p>Select SABnzbd at step 4 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
+<p>Make sure you check both boxes under <code>Completed Download Handling</code> in step 3.</p>
+<p>Select SABnzbd in step 4 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
 <p><a class="glightbox" href="../images/sonarr-download-clients-sabnzbd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-sabnzbd.png" /></a></p>
 </details>
 <h3 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h3>
@@ -3781,9 +3781,9 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 <summary>Radarr - [Click to show/hide]</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
 <p><a class="glightbox" href="../images/radarr-settings-download-clients.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Radarr: Settings =&gt; Download Clients" src="../images/radarr-settings-download-clients.png" /></a></p>
-<p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3,</p>
-<p>and both boxes under <code>Failed Download Handling</code> at step 4.</p>
-<p>Select SABnzbd at step 5 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
+<p>Make sure you check both boxes under <code>Completed Download Handling</code> in step 3,</p>
+<p>and both boxes under <code>Failed Download Handling</code> in step 4.</p>
+<p>Select SABnzbd in step 5 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
 <p><a class="glightbox" href="../images/radarr-download-clients-sabnzbd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Radarr: Download Clients - SABnzbd" src="../images/radarr-download-clients-sabnzbd.png" /></a></p>
 </details>
 <hr />
@@ -3819,7 +3819,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 12, 2024 04:15:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

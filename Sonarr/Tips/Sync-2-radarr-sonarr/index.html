@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1069,7 +1069,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1090,7 +1090,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1111,7 +1111,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1499,7 +1499,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1520,7 +1520,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1541,7 +1541,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3482,34 +3482,34 @@
 <!-- BEGIN INCLUDE ../../Radarr/Tips/Sync-2-radarr-sonarr.md -->
 <h1 id="how-to-sync-2-radarr-or-sonarr-with-each-other">How to Sync 2 Radarr or Sonarr with each other<a class="headerlink" href="#how-to-sync-2-radarr-or-sonarr-with-each-other" title="Permanent link"></a></h1>
 <div class="annotate">
-<p>In this guide I will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.</p>
-<p>I'm going to show two different options on how you can setup your sync with two Radarr/Sonarr instances.</p>
+<p>In this guide, we will try to explain how you can sync two (or more) Radarr/Sonarr instances with each other.</p>
+<p>I'm going to show two different options on how you can set up your sync with two Radarr/Sonarr instances.</p>
 <ul>
 <li>Option 1: This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances as it'll sync everything.</li>
-<li>Option 2: This option is best used if you only want to cherry pick which Movies/TV Shows you want as 4K/2160p (UHD).</li>
+<li>Option 2: This option is best used if you only want to cherry-pick which Movies/TV Shows you want as 4K/2160p (UHD).</li>
 </ul>
 <div class="admonition bug">
-<p>I'm not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running. <a href="https://wiki.servarr.com/radarr/installation#multiple-instances">Radarr Multiple Instance Information</a> and <a href="https://wiki.servarr.com/sonarr/installation#multiple-instances">Sonarr Multiple Instance Information</a></p>
+<p>We're not going to explain how to set up two Radarr/Sonarr instances for your system, being it depends on how you have it installed/running. <a href="https://wiki.servarr.com/radarr/installation#multiple-instances">Radarr Multiple Instance Information</a> and <a href="https://wiki.servarr.com/sonarr/installation#multiple-instances">Sonarr Multiple Instance Information</a></p>
 </div>
 <h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link"></a></h2>
-<p>For this you need to have prepared the following:</p>
+<p>For this, you need to have prepared the following:</p>
 <ul>
-<li>Two Radarr/Sonarr instances fully setup (Indexers, Custom Formats, Downloaders, etc).</li>
+<li>Two Radarr/Sonarr instances are fully set up (Indexers, Custom Formats, Downloaders, etc).</li>
 <li>One download client (<em>Two if you prefer Usenet and Torrents</em>).</li>
 <li>Your download client has two separate categories (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" />You can't use the same root (media library) folder for both Radarr's/Sonarr's<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" />You can't use the same root (media library) folder for both Radarr/Sonarr instances.<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 <p>Make sure you use two separate root folders in Radarr/Sonarr (movies-hd, movies-uhd, tv-hd, tv-uhd, etc)</p>
 </div>
 <hr />
 <h3 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link"></a></h3>
 <div class="admonition info">
-<p>In this example I'm going to use two Radarr instances (The basics is the same for Sonarr).</p>
+<p>In this example, I'm going to use two Radarr instances (The basics are the same for Sonarr).</p>
 <ul>
 <li><ins><mark>Radarr 1</mark></ins> = My main 4K/2160p (UHD) Radarr.</li>
-<li><ins class="critic">Radarr 2</ins> = My 1080p Radarr that I've setup for a streaming optimized quality profile. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li><ins class="critic">Radarr 2</ins> = My 1080p Radarr that I've set up for a streaming-optimized quality profile. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ul>
 <p>This option is best used if you want a 1:1 copy of your Radarr/Sonarr instances</p>
 </div>
@@ -3552,7 +3552,7 @@
 <hr />
 <h3 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link"></a></h3>
 <div class="admonition info">
-<p>In this example I'm going to use two Sonarr instances (The basics is the same for Radarr).</p>
+<p>In this example, I'm going to use two Sonarr instances (The basics are the same for Radarr).</p>
 <ul>
 <li><ins><mark>Sonarr 1</mark></ins> = My main 1080p WEB-DL Sonarr.</li>
 <li><ins class="critic">Sonarr 2</ins> = 4K/2160p (UHD) WEB-DL Sonarr.</li>
@@ -3575,8 +3575,8 @@
 <li>The name you want to call your Sync list.</li>
 <li>Enable so the TV Shows will be automatically added.</li>
 <li>Enable so Sonarr will perform a search when a TV Show is added.</li>
-<li>Choose How do you want the series monitored initially. (2)</li>
-<li>Which new seasons should be monitored automatically. (3)</li>
+<li>Choose how you want the series monitored initially. (2)</li>
+<li>Which new seasons should be monitored automatically? (3)</li>
 <li>Your <ins class="critic">Sonarr 2</ins> root location for your media library.</li>
 <li>The Quality Profile you want to use for <ins class="critic">Sonarr 2</ins>.</li>
 <li>Series Type. (4)</li>
@@ -3602,7 +3602,7 @@
 <p>This can't and shouldn't be the same category you use for <ins><mark>Sonarr 1</mark></ins> but a separate <code>Category</code>.</p>
 </div>
 <h3 id="how-does-this-sonarr-sync-work">How does this Sonarr Sync work<a class="headerlink" href="#how-does-this-sonarr-sync-work" title="Permanent link"></a></h3>
-<p>You now only need to make use of <ins><mark>Sonarr 1</mark></ins>. When you got a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
+<p>You now only need to make use of <ins><mark>Sonarr 1</mark></ins>. When you have a TV show (or a movie if you use this option with Radarr) that you also want as 4K/2160p (UHD) then you make sure you make use of the Cloned Quality Profile. And it will sync at a scheduled time.</p>
 <hr />
 </div>
 <!-- markdownlint-disable MD030 MD041-->
@@ -3662,18 +3662,18 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>If you're interested in the 1080p streaming optimized quality profile you can join my <a href="https://trash-guides.info/discord">discord</a> and get access to the Special Quality Profiles channel (access-to-sqp) by accepting the rules.</p>
-<p>This is a special quality profile I created for people who are really interested in it.</p>
-<p>This release profile is fine tuned for when you want to run a 2nd Radarr for 1080p, and want minimum to none transcoding and smaller sizes for the second copies.</p>
+<p>If you're interested in the 1080p streaming optimized quality profile you can join our <a href="https://trash-guides.info/discord">discord</a> and get access to the Special Quality Profiles channel (access-to-sqp) by accepting the rules.</p>
+<p>This is a special quality profile we created for people who are interested in it.</p>
+<p>This release profile is fine-tuned for when you want to run a 2nd Radarr for 1080p and want minimum to no transcoding and smaller sizes for the second copies.</p>
 <p>Why choose this quality profile?</p>
 <ul>
-<li>Streaming optimized (optimized for PLEX, emby, Jellyfin, and other streaming platforms)</li>
+<li>Streaming optimized (optimized for PLEX, Emby, Jellyfin, and other streaming platforms)</li>
 <li>Small sizes</li>
 <li>Good quality</li>
 <li>Only AC3 Audio (downmixed lossless audio track to Dolby Digital 5.1 for optimal compatibility)</li>
-<li>You want maximum compatibility between all devices and still have a HQ release.</li>
-<li>You run two instances of Radarr and want both versions or just for the 1080p ones.</li>
-<li>You want to have minimum to none transcoding for low powered devices or remote streaming.</li>
+<li>You want maximum compatibility between all devices and still have an HQ release.</li>
+<li>You run two instances of Radarr and want both versions or just the 1080p ones.</li>
+<li>You want to have minimum to no transcoding for low-powered devices or remote streaming.</li>
 </ul>
 <p><a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>

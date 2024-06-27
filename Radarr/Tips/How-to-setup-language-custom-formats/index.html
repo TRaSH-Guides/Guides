@@ -663,7 +663,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -684,7 +684,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -705,7 +705,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1264,7 +1264,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1285,7 +1285,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1306,7 +1306,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1544,7 +1544,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1565,7 +1565,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1586,7 +1586,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3569,21 +3569,21 @@
 
 
 <h1 id="how-to-setup-language-custom-formats">How to setup Language Custom Formats<a class="headerlink" href="#how-to-setup-language-custom-formats" title="Permanent link"></a></h1>
-<p>Here we will explain how to setup your own preferred language Custom Format, with a few examples.</p>
+<p>Here we will explain how to set up your preferred language Custom Format, with a few examples.</p>
 <div class="admonition warning">
 <p class="admonition-title">Using language Custom Formats is not compatible with setting a preferred language in a quality profile in Radarr. You must use one or the other.<br>If you want to make use of the Custom Formats set the preferred language to <code>Any</code>.<br><br>Sonarr doesn't have a preferred language in the quality profile, so this can be ignored if you're setting this up with Sonarr</p>
 </div>
 <h2 id="language-examples">Language Examples<a class="headerlink" href="#language-examples" title="Permanent link"></a></h2>
-<p>Import the JSON in to your Custom Formats.</p>
+<p>Import the JSON into your Custom Formats.</p>
 <p>How ?</p>
 <p>Follow the <a href="/Radarr/Radarr-import-custom-formats/" rel="noopener noreferrer" target="_blank">How to import Custom Formats</a>.</p>
 <hr />
 <h3 id="language-original-only">Language: Original Only<a class="headerlink" href="#language-original-only" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Not Original</sub></p>
-<p>This is one of the most common one used besides the English only one.</p>
-<p>With this Custom Format you will get only the Movie/TV Show with the original language.</p>
-<p>For this we're going to make use of so called reverse scoring.</p>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
+<p>This is one of the most common ones used besides the English only one.</p>
+<p>With this Custom Format, you will get only the Movie/TV Show with the original language.</p>
+<p>For this, we're going to make use of so-called reverse scoring.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3620,7 +3620,7 @@
 <p class="admonition-title">For languages other than English, replace the English condition with language of your choice.</p>
 </div>
 <p>For this we're going to make use of so called reverse scoring.</p>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3652,14 +3652,14 @@
 <hr />
 <h3 id="language-multiple-only">Language: Multiple Only<a class="headerlink" href="#language-multiple-only" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Not Dutch</sub></p>
-<p>In some case you need multiple languages in your Custom Format for different reasons,</p>
-<p>in this example I will use Dutch and Flemish being a lot of Movies/TV Shows are collaborate made between the 2 countries/studio's.</p>
-<p>With this Custom Format you will only get the Movie/TV Show with Dutch and/or Flemish Audio.</p>
+<p>In some cases, you need multiple languages in your Custom Format for different reasons,</p>
+<p>in this example we will use Dutch and Flemish being a lot of Movies/TV Shows are collaboratively made between the 2 countries/studios.</p>
+<p>With this Custom Format, you will only get the Movie/TV Show with Dutch and/or Flemish Audio.</p>
 <div class="admonition info">
-<p class="admonition-title">For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice.</p>
+<p class="admonition-title">For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with the language of your choice.</p>
 </div>
-<p>For this we're going to make use of so called reverse scoring.</p>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
+<p>For this, we're going to make use of so-called reverse scoring.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3697,11 +3697,11 @@
 <h3 id="language-prefer-x-but-ill-take-y">Language: Prefer X but i'll take Y<a class="headerlink" href="#language-prefer-x-but-ill-take-y" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Not Original or German<br>
 Language: Prefer German</sub></p>
-<p>Let's say you want German, but if German is not available then fall back to Original language but don't accept any other translated languages.</p>
+<p>Let's say you want German, but if German is not available then fall back to <code>Original</code> language but don't accept any other translated languages.</p>
 <div class="admonition info">
-<p class="admonition-title">For languages other than German, replace the German condition with language of your choice.</p>
+<p class="admonition-title">For languages other than German, replace the German condition with the language of your choice.</p>
 </div>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>-10000</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3735,7 +3735,7 @@ Language: Prefer German</sub></p>
 <span class="p">}</span>
 </code></pre></div>
 </details>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3769,9 +3769,9 @@ Language: Prefer German</sub></p>
 <p><sub><sub>Language: Prefer German</sub></p>
 <p>Let's say you just want to prefer German and don't care if you get another random language(s).</p>
 <div class="admonition info">
-<p class="admonition-title">For languages other than German, replace the German condition with language of your choice.</p>
+<p class="admonition-title">For languages other than German, replace the German condition with the language of your choice.</p>
 </div>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3803,13 +3803,13 @@ Language: Prefer German</sub></p>
 <hr />
 <h3 id="language-prefer-multi-language">Language: Prefer Multi Language<a class="headerlink" href="#language-prefer-multi-language" title="Permanent link"></a></h3>
 <p><sub><sub>Language: Prefer Dutch</sub></p>
-<p>In some case you may want prefer multiple languages in your Custom Format.</p>
-<p>With this Custom Format you will only get the Movie/TV Show with either Preferred Language.</p>
-<p>In this example I will use Dutch and Flemish since a lot of Movies/TV Shows since there is a lot of collaboration between the two countries/studio's.</p>
+<p>In some cases, you may want to prefer multiple languages in your Custom Format.</p>
+<p>With this Custom Format, you will only get the Movie/TV Show with either Preferred Language.</p>
+<p>In this example, we will use Dutch and Flemish since a lot of Movies/TV Shows since there is a lot of collaboration between the two countries/studios.</p>
 <div class="admonition info">
-<p class="admonition-title">For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with language of your choice.</p>
+<p class="admonition-title">For languages other than Dutch/Flemish, replace the Dutch/Flemish condition with the language of your choice.</p>
 </div>
-<p>Add the following json to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
+<p>Add the following JSON to your Radarr/Sonarr with a score in your profile of <code>10</code>.</p>
 <details class="example">
 <summary>JSON - [Click to show/hide]</summary>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3904,12 +3904,12 @@ example: German Dual Language and/or Multi-language releases</p>
 <details class="question">
 <summary>What's reverse scoring? - [Click to show/hide]</summary>
 <p>With reverse scoring you add a Custom Format with a score of <code>-10000</code> and your preferred condition you negate.</p>
-<p>So in the case of the following Custom Format <code>Language: Original Only</code>, it will actually match all Not Original releases and give it a score of <code>-10000</code>.</p>
+<p>So in the case of the following Custom Format <code>Language: Original Only</code>, it will match all <code>Not Original</code> releases and give it a score of <code>-10000</code>.</p>
 </details>
 <h3 id="prefer-language-x-over-language-y">Prefer language X over language Y<a class="headerlink" href="#prefer-language-x-over-language-y" title="Permanent link"></a></h3>
 <details class="question">
 <summary>Prefer language X over language Y - [Click to show/hide]</summary>
-<p>If you want to prefer Prefer language X over language Y,</p>
+<p>If you want to use Prefer language X over language Y,</p>
 <p>you add for example: <code>Language: Prefer Language X</code> with a score of <code>10</code>, and add <code>Language: Prefer Language Y</code> with score of <code>9</code>.</p>
 <p>Which scores you should use depends on how important the language is compared to other Custom Formats you're using.</p>
 </details>
@@ -3961,7 +3961,7 @@ example: German Dual Language and/or Multi-language releases</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 15, 2024 18:28:17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

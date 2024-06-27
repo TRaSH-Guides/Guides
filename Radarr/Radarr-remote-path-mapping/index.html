@@ -663,7 +663,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -684,7 +684,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -705,7 +705,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1169,7 +1169,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1190,7 +1190,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1211,7 +1211,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1449,7 +1449,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1470,7 +1470,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1491,7 +1491,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3381,13 +3381,13 @@
 
 
 <h1 id="remote-path-mappings">Remote Path Mappings<a class="headerlink" href="#remote-path-mappings" title="Permanent link"></a></h1>
-<p>It seems that a lot of people don't understand how the remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.</p>
-<p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace with <code>Local Path</code></p>
+<p>It seems that a lot of people don't understand how remote path mapping works for Radarr. I will try to explain it with some screenshots and a short description.</p>
+<p>Remote Path Mapping acts as a dumb find <code>Remote Path</code> and replace it with the <code>Local Path</code></p>
 <h2 id="when-do-i-need-remote-path-mappings">When do I need remote path mappings<a class="headerlink" href="#when-do-i-need-remote-path-mappings" title="Permanent link"></a></h2>
 <ul>
 <li>If Radarr and your download client are not on the same server/system.</li>
 <li>If you use either merged local/remote setups using mergerfs or similar.</li>
-<li>You run dockers and <strong>DON'T</strong> have consistent and well planned paths.</li>
+<li>You run dockers and <strong>DON'T</strong> have consistent and well-planned paths.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3412,13 +3412,13 @@
 <p><a class="glightbox" href="../images/rpm-system-events.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-system-events" src="../images/rpm-system-events.png" /></a></p>
 <p>The following error could also mean that you need remote path mappings:</p>
 <p><a class="glightbox" href="../images/rpm-health-issue.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-health-issue" src="../images/rpm-health-issue.png" /></a></p>
-<p>So looking at these screenshot it seems you need to make use of remote path mappings.</p>
+<p>So looking at these screenshots, it seems you need to make use of remote path mappings.</p>
 <hr />
 <h2 id="how-do-i-setup-remote-path-mappings">How do I setup remote path mappings<a class="headerlink" href="#how-do-i-setup-remote-path-mappings" title="Permanent link"></a></h2>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p>Scroll all the way down where you see <code>Remote path mappings</code> and click on the plus sign in the bottom right corner.</p>
+<p>Scroll down to the bottom where you will see <code>Remote path mappings</code> - and click on the plus sign in the bottom right corner.</p>
 <p><a class="glightbox" href="../images/rpm-settings-download-clients.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-settings-download-clients" src="../images/rpm-settings-download-clients.png" /></a></p>
-<p>A screen will popup with the following options:</p>
+<p>A screen will pop up with the following options:</p>
 <p><a class="glightbox" href="../images/rpm-add-rpm.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-add-rpm" src="../images/rpm-add-rpm.png" /></a></p>
 <ol>
 <li><code>Host</code> =&gt; This is the hostname or IP you set in your download client settings.</li>
@@ -3428,10 +3428,10 @@
 <h3 id="host">Host<a class="headerlink" href="#host" title="Permanent link"></a></h3>
 <p>To find what you need to put in your host</p>
 <p>Go to <code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p>Open up the download client. For this example I will be using SABnzbd.</p>
+<p>Open up the download client. For this example, we will be using SABnzbd.</p>
 <p><a class="glightbox" href="../images/rpm-sabnzbd-host.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Sabnzbd Host" src="../images/rpm-sabnzbd-host.png" /></a></p>
 <p>This is what you put in your Host in Remote Path Mapping.
-This could be a <code>hostname</code>, <code>container name</code> or a <code>IP Address</code></p>
+This could be a <code>hostname</code>, <code>container name</code> or an <code>IP Address</code></p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [Click to show/hide]</summary>
 <p><a class="glightbox" href="../images/rpm-add-rpm-select-sabnzbd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-add-rpm-select-sabnzbd" src="../images/rpm-add-rpm-select-sabnzbd.png" /></a></p>
@@ -3445,15 +3445,15 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
 <p><a class="glightbox" href="../images/rpm-add-rpm-remote-path.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-add-rpm-remote-path" src="../images/rpm-add-rpm-remote-path.png" /></a></p>
 </details>
 <h3 id="local-path">Local Path<a class="headerlink" href="#local-path" title="Permanent link"></a></h3>
-<p>To find out what you need to put in in your local path you need to know how Radarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.</p>
+<p>To find out what you need to put in in your local path you need to know how Radarr can access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Radarr needs to have local access to it, so you need to figure out the best way for Radarr to access the download client's downloaded files yourself.</p>
 <p>Click on the browse button and browse to the location where the files are accessible for Radarr.</p>
 <details class="example">
 <summary>example what to add in Add Remote Path Mapping - [Click to show/hide]</summary>
 <p><a class="glightbox" href="../images/rpm-add-local-path.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-add-local-path" src="../images/rpm-add-local-path.png" /></a></p>
 </details>
 <p>The final result will look something like this:</p>
-<p><a class="glightbox" href="../images/rpm-final-results.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!rpm-final-results" src="../images/rpm-final-results.png" /></a></p>
-<p>After these changes the file should be able to be imported by Radarr.</p>
+<p>![!rpm-final-results]</p>
+<p>After these changes, the file should be able to be imported by Radarr.</p>
 <!-- BEGIN INCLUDE ../../includes/support.md -->
 <!-- markdownlint-disable MD041-->
 <hr />
@@ -3488,7 +3488,7 @@ This could be a <code>hostname</code>, <code>container name</code> or a <code>IP
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     

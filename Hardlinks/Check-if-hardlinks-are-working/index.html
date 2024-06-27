@@ -658,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -679,7 +679,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -700,7 +700,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1064,7 +1064,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles
+    How to set up Quality Profiles
   </span>
   
 
@@ -1085,7 +1085,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (Anime)
+    How to set up Quality Profiles (Anime)
   </span>
   
 
@@ -1106,7 +1106,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup Quality Profiles (French)
+    How to set up Quality Profiles (French)
   </span>
   
 
@@ -1344,7 +1344,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup proxy for certain indexers
+    How to set up proxy for certain indexers
   </span>
   
 
@@ -1365,7 +1365,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup FlareSolverr
+    How to set up FlareSolverr
   </span>
   
 
@@ -1386,7 +1386,7 @@
         
   
   <span class="md-ellipsis">
-    How to setup indexers with limited API
+    How to set up indexers with limited API
   </span>
   
 
@@ -3344,19 +3344,19 @@
 <hr />
 <h2 id="usenet">Usenet<a class="headerlink" href="#usenet" title="Permanent link"></a></h2>
 <div class="admonition note">
-<p>If you use usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.</p>
-<p>Still want to test if it works ?</p>
-<p>Test a import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.</p>
+<p>If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.</p>
+<p>Still want to test if it works?</p>
+<p>Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.</p>
 </div>
 <h2 id="method-1-using-ls">Method 1: Using ls<a class="headerlink" href="#method-1-using-ls" title="Permanent link"></a></h2>
-<p>This is the easiest to check in my opinion.</p>
+<p>This is the easiest to check in our opinion.</p>
 <p>In your terminal <code>cd</code> to your download location and run <code>ls -al</code> or type <code>ls -al /path/to/your/download/location/</code></p>
 <p>You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.</p>
 <p><a class="glightbox" href="../images/hardlinks-ls-al.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Hardlinks check ls -al" src="../images/hardlinks-ls-al.png" /></a></p>
 <ul>
 <li>Red rectangle - Not Hardlinked</li>
 <li>Green rectangle - Hardlinks</li>
-<li>Blue rectangle - Folders/Directories you will need to go in to them to check if the files are hardlinked.</li>
+<li>Blue rectangle - Folders/Directories you will need to go into them to check if the files are hardlinked.</li>
 </ul>
 <hr />
 <h2 id="method-2-using-stat">Method 2: Using stat<a class="headerlink" href="#method-2-using-stat" title="Permanent link"></a></h2>
@@ -3368,8 +3368,8 @@
 <p>You will get 2 results you can use to compare several things.</p>
 <p><a class="glightbox" href="../images/hardlinks-stat.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Hardlinks check stat" src="../images/hardlinks-stat.png" /></a></p>
 <ol>
-<li>Links: Everything above 1 means it's a hardlink</li>
-<li>Inode: if the numbers match you know the files are hardlinked</li>
+<li>Links: Everything above 1 means it's hardlinked</li>
+<li>Inode: if the numbers match, you know the files are hardlinked</li>
 </ol>
 <h2 id="method-3-using-inode-copies">Method 3: Using Inode copies<a class="headerlink" href="#method-3-using-inode-copies" title="Permanent link"></a></h2>
 <ul>
@@ -3407,7 +3407,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 11, 2024 21:04:29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     
