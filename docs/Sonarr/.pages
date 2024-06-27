@@ -4,9 +4,9 @@ nav:
   - Recommended naming scheme: Sonarr-recommended-naming-scheme.md
   - How to import Custom Formats: sonarr-import-custom-formats.md
   - How to Update Custom Formats: sonarr-how-to-update-custom-formats.md
-  - How to setup Quality Profiles: sonarr-setup-quality-profiles.md
-  - How to setup Quality Profiles (Anime): sonarr-setup-quality-profiles-anime.md
-  - How to setup Quality Profiles (French): sonarr-setup-quality-profiles-french-en.md
+  - How to set up Quality Profiles: sonarr-setup-quality-profiles.md
+  - How to set up Quality Profiles (Anime): sonarr-setup-quality-profiles-anime.md
+  - How to set up Quality Profiles (French): sonarr-setup-quality-profiles-french-en.md
   - Collection of Custom Formats: sonarr-collection-of-custom-formats.md
   - Remote Path Mappings explained: Sonarr-remote-path-mapping.md
   - Tips

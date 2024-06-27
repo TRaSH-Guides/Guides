@@ -3,14 +3,14 @@
 Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
 These CFs have been collected from discussions on Discord or created with help from others.
 
-Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
+Special thanks to everyone who has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, and the community.
 
 Sonarr V4+ introduces Custom Formats. These are much more advanced/powerful than the release profiles, although this also means a Custom Format can require more knowledge to set up or create.
 We've made 3 guides related to this.
 
 - [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
 - [How to upgrade Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats){:target="\_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="\_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
@@ -529,7 +529,7 @@ We've made 3 guides related to this.
 
     --8<-- "includes/cf-descriptions/dv.md"
 
-<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md`-->
+<!-- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case, the pointer to `#dv-webdl` in `includes/dv.md`-->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -691,7 +691,7 @@ We've made 3 guides related to this.
 
 ??? question "Hybrid - [Click to show/hide]"
 
-    A hybrid release means any combination of sources (video + audio) and not a direct encode of a single source. Generally you can be sure that any hybrid that has been put together is the best quality release of a particular title.
+    A hybrid release means any combination of sources (video + audio) and not a direct encoding of a single source. Generally, you can be sure that any hybrid that has been put together is the best quality release of a particular title.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -773,11 +773,11 @@ We've made 3 guides related to this.
 
 ### LQ
 
-<sub>Low Quality Releases = LQ</sub>
+<sub>Low-Quality Releases = LQ</sub>
 
 ??? question "LQ - [Click to show/hide]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers due to their lack of quality releases.
+    A collection of known Low-Quality groups that are often banned from the top trackers due to their lack of quality releases.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -791,11 +791,11 @@ We've made 3 guides related to this.
 
 ### LQ (Release Title)
 
-<sub>Low Quality Releases = LQ</sub>
+<sub>Low-Quality Releases = LQ</sub>
 
 ??? question "LQ (Release Title)- [Click to show/hide]"
 
-    A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.
+    A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1007,7 +1007,7 @@ We've made 3 guides related to this.
 
 ??? question "Bad dual groups - [Click to show/hide]"
 
-    These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
+    These groups take the original release and add their language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
     Also they often even translate/rename the release name to Portuguese.
 
 ??? example "JSON - [Click to show/hide]"
@@ -1032,7 +1032,7 @@ We've made 3 guides related to this.
 
     This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non-Dolby Vision-compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
@@ -1304,7 +1304,7 @@ We've made 3 guides related to this.
 
 ??? question "DV (Disk) - [Click to show/hide]"
 
-    - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+    - This will boost the score for Dolby Vision Releases using the original full-quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2499,7 +2499,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 08 (Mini Encodes) - [Click to show/hide]"
 
-    Know groups that do mini encodes
+    Know groups that do mini-encodes
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2547,7 +2547,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 03 (Official Subs) - [Click to show/hide]"
 
-    Official sub groups that tend to be more consistent and release fast
+    Official sub-groups that tend to be more consistent and release fast
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2611,7 +2611,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Raws - [Click to show/hide]"
 
-    A collection of know groups that release raws
+    A collection of known groups that release raws
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2627,7 +2627,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime LQ Groups - [Click to show/hide]"
 
-    A collection of known Low Quality groups.
+    A collection of known Low-Quality groups.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2643,7 +2643,7 @@ We've made 3 guides related to this.
 
 ??? question "Uncensored - [Click to show/hide]"
 
-    This CF covers releases that are uncensored
+    This CF covers uncensored releases.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2739,7 +2739,7 @@ We've made 3 guides related to this.
 
 ??? question "10bit - [Click to show/hide]"
 
-    This CF covers releases that are 10bit
+    This CF covers 10bit releases
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2791,7 +2791,7 @@ We've made 3 guides related to this.
 
 ??? question "Multi-French - [Click to show/hide]"
 
-    Recognize movies that include the original and the french audio. Work only after import as it need the result from FFprobe to get which audio are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
+    Recognize movies that include the original and the French audio. Works only after import as it needs the result from FFprobe to get which audio tracks are present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2967,7 +2967,7 @@ We've made 3 guides related to this.
 
 ??? question "VOSTFR - [Click to show/hide]"
 
-    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often mean that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.
+    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading to some VOSTFR being labeled as SUBFRENCH and SUBFRENCH as VOSTFR.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2983,7 +2983,7 @@ We've made 3 guides related to this.
 
 ??? question "FanSUB - [Click to show/hide]"
 
-    Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so called FastSUBs.
+    Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3112,7 +3112,7 @@ We've made 3 guides related to this.
 
     - WIP
     - Groups that are known to be active and only doing Anime
-    - Groups who's releases are at least comparable to SeaDex recommended.
+    - Groups whose releases are at least comparable to SeaDex recommended.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3147,7 +3147,7 @@ We've made 3 guides related to this.
 ??? question "FR Anime Tier 03 - [Click to show/hide]"
 
     - WIP
-    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi), or still top of its category.
+    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi) or still top of its category.
     - Groups that haven't released much or are not well recognized. (yet)
     - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
 
@@ -3195,7 +3195,7 @@ We've made 3 guides related to this.
 
 ### FR LQ
 
-<sub>French Low Quality Releases = FR LQ</sub>
+French Low-Quality Releases = FR LQ</sub>
 
 ??? question "FR LQ - [Click to show/hide]"
 

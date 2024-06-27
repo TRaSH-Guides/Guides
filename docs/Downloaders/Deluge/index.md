@@ -20,7 +20,7 @@ You can find the latest Windows installers [here](https://ftp.osuosl.org/pub/del
 
 ### Linux (Native)
 
-Due to most default OS repositories being outdated, I recommend using Deluge's repositories to install the latest version.
+Due to most default OS repositories being outdated, we recommend using Deluge's repositories to install the latest version.
 
 Using `apt-get` to install
 

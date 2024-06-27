@@ -2,23 +2,23 @@
 On the Radarr/Sonarr Discord people often ask,
 
 - “What's the best quality size settings to use?”
-- “Why's are the ones from the TRaSH Guides so different to the default settings?”
+- “Why are the ones from the TRaSH Guides so different from the default settings?”
 
-Even though it is a personal preference, we will show you some recommendations to prevent low quality or fake releases.
+Even though it is a personal preference, we will show you some recommendations to prevent low-quality or fake releases.
 
 ## FAQ
 
 ??? question "Why do i only see sizes starting from HDTV720p and up?"
 
-    - Watching content below 720p on a big screen can result in a blurry and pixelated image, making it difficult to see details and enjoy the true quality of the content. Additionally, lower resolution videos may not fill the entire screen, leading to a less immersive viewing experience. Investing in higher quality content ensures that you are getting the best possible picture and sound quality for your viewing pleasure.
+    - Watching content below 720p on a big screen can result in a blurry and pixelated image, making it difficult to see details and enjoy the true quality of the content. Additionally, lower-resolution videos may not fill the entire screen, leading to a less immersive viewing experience. Investing in higher-quality content ensures that you are getting the best possible picture and sound quality for your viewing pleasure.
 
 ??? question "Why are some sizes set to max?"
 
     - These guides are created to achieve the highest possible quality based on the quality profiles provided.
 
-??? question "Why is there difference between regular movies/tv shows and anime/animated/cartoons ?"
+??? question "Why is there a difference between regular movies/tv shows and anime/animated/cartoons ?"
 
-    - Regular movies and TV shows are set up more strictly to prevent low quality and fake releases, whereas anime, animated series, and cartoons are set up wide open.
+    - Regular movies and TV shows are set up more strictly to prevent low-quality and fake releases, whereas anime, animated series, and cartoons are set up wide open.
 
 ??? question "When I set Bluray to MAX size I often get ISO's/ Bluray folder structure."
 

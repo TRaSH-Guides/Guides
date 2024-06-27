@@ -7,12 +7,12 @@ search:
 
 <meta name="robots" content="noindex, noarchive, nofollow" />
 
-The Special Quality Profiles are Custom made and tested Quality Profile for specific needs or preferences.
+The Special Quality Profiles are custom-made and tested Quality Profiles for specific needs or preferences.
 
 !!! warning
 
-    - Anything here is for private use only. It is prohibited to share anything related to SQP, such as setup information or links to the guide, in any public locations.:bangbang:
-    - I expect users who received the link to this page to honor this rule.:bangbang:
+    - Anything here is for private use only. It is prohibited to share anything related to SQP, such as set-up information or links to the guide, in any public location.:bangbang:
+    - We expect users who received the link to this page to honor this rule.:bangbang:
     - Any questions about SQP should be asked in the related discord, not in the main channel or any other public places.:bangbang:
     - Yes, you can mention in the public channels that you are using a specific SQP.
     - If others are interested, they can join by accepting the rules in the `access-to-sqp` channel.
@@ -36,13 +36,13 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 
 ??? question "Can I use these SQP with Sonarr? - [Click to show/hide]"
 
-    **NO**, SQP are only for Radarr :bangbang:<br>
-    At the moment their are no specific release groups to create a SQP for Sonarr.<br>
+    **NO**, SQP is only for Radarr :bangbang:<br>
+    At the moment there are no specific release groups to create an SQP for Sonarr.<br>
     If you're looking for a SQP-1 (xxxxp) then look at the public Sonarr Guide.
 
 ??? question "Why don't you add this to the public guide? - [Click to show/hide]"
 
-    These SQPs are advanced Quality Profiles tested and created for a specific need, and only interesting for people that are interested in a specific Quality Profile.
+    These SQPs are advanced Quality Profiles tested and created for a specific need and are only interesting for people who are interested in a specific Quality Profile.
 
 ??? question "I see CFs that aren't in the main guide - [Click to show/hide]"
 
@@ -55,7 +55,7 @@ The Special Quality Profiles are Custom made and tested Quality Profile for spec
 !!! TIP
 
     - Look for the SQP you want to use. If you're unsure which one will fit your needs, ask in the dedicated channel.
-    - If you got any questions or need extra info about an SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
+    - If you have any questions or need extra info about an SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
 
 {! include-markdown "../../includes/support.md" !}

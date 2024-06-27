@@ -2,11 +2,11 @@
 
 Here I will try to explain how you can manually import Custom Formats for Radarr v3+.
 
-!!! info "Keep in mind Custom Formats are made to fine tune your Quality Profile.<br>Generally, quality trumps all"
+!!! info "Keep in mind Custom Formats are made to fine-tune your Quality Profile.<br>Generally, quality trumps all"
 
 ## How to Copy/Paste the JSON from the site
 
-In this example I will use the [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="\_blank" rel="noopener noreferrer"} Custom Format, the one most people don't want to download anyway. And if you do, then you probably don't use any of the Starr apps or Plex, being both don't support it.
+In this example, I will use the [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="\_blank" rel="noopener noreferrer"} Custom Format, the one most people don't want to download anyway. And if you do, then you probably don't use any of the Starr apps or Plex, being both don't support it.
 
 Visit the [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="\_blank" rel="noopener noreferrer"} and select [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk){:target="\_blank" rel="noopener noreferrer"} from the table.
 
@@ -64,7 +64,7 @@ How this is done is explained [HERE](/Radarr/radarr-setup-quality-profiles/#basi
 
     Start adding more Custom Formats wisely, **Don't add all the available Custom Formats!!!**
 
-    Check out the [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea on how to setup yours.
+    Check out the [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles/) where I will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea of how to set yours up.
 
 ### TRaSH Sync
 
