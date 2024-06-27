@@ -72,7 +72,7 @@ In the profile enter the scores as per the above table in this section.
 
 ![!cfa-default-scoring](images/cfa-default-scoring.png)
 
-After you are done it should look like the image above.
+After you are done it should look similar to the image above, but using the current Guide Scores from the Tables above.
 
 ### Dual Audio Scoring
 
