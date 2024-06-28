@@ -28,7 +28,7 @@ Add the following info
 
 1. Name of the Proxy in Prowlarr.
 1. The tags for this proxy.
-1. The full host path (include http and the port) to your FlareSolverr instance.
+1. The full host path (including http and the port) to your FlareSolverr instance.
 1. The [FlareSolver Request maxTimeout value](https://github.com/FlareSolverr/FlareSolverr#-requestget){:target="\_blank" rel="noopener noreferrer"} Prowlarr should use for FlareSolverr requests. Must be between `1` second and `180` seconds (Default: `60` seconds).
 1. Test if your connection works.
 1. If it works click on `Save`.
@@ -39,7 +39,7 @@ Select the indexer that you want to use with FlareSolverr
 
 ![Select Indexer](images/select-indexer.png)
 
-Scroll down to the bottom and add the tag you've set up earlier at step 2.
+Scroll down to the bottom and add the tag you set up earlier in step 2.
 
 ![Add tag to indexer](images/add-tag-to-indexer-flaresolverr.png)
 

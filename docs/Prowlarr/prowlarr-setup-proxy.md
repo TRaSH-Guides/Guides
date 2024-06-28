@@ -12,7 +12,7 @@ Just run VPN on the apps that actually need it, like your torrent client, and pe
 
     This isn't the same as the tracker, the API/Website scraping happens on the actual site and some indexers don't allow VPN usage on their site.
 
-In this guide, we will try to explain how to setup Prowlarr to use your VPN from your torrent client.
+In this guide, we will try to explain how to set up Prowlarr to use your VPN from your torrent client.
 
 ## Enable privoxy
 

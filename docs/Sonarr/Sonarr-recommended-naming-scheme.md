@@ -112,7 +112,7 @@ Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
     Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/){:target="\_blank" rel="noopener noreferrer"}
 
-    !!! warning "Jellyfin doesn't support IMDb ID's for shows"
+    !!! warning "Jellyfin doesn't support IMDb IDs for shows"
 
     === "Jellyfin Folder TVDb"
 
@@ -126,7 +126,7 @@ Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
 ## Season Folder Format
 
-For this there's only one real option to use in my opinion.
+For this, there's only one real option to use in our opinion.
 
 ```bash
 Season {season:00}
@@ -154,7 +154,7 @@ Prefixed Range
 
 Another option is to use `{Original Title}` rather than the recommended naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
 
-If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
+If using this alternate naming scheme we suggest using `{Original Title}` over `{Original Filename}`
 
 Why?
 

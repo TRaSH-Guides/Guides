@@ -30,7 +30,7 @@ The following aspects are covered
 
 The sheet also has notes added for extra info
 
-- Dolby Vision Profile 5 (*does not have a HDR10 baselayer, so cannot fallback to HDR10*)
+- Dolby Vision Profile 5 (*does not have an HDR10 baselayer, so it cannot fallback to HDR10*)
 - Dolby Vision Profile 7 (*DV + HDR10 baselayer, so it can fallback to HDR10*)
 - Dolby Vision Profile 8 (*DV + HDR10 baselayer, so it can fallback to HDR10*)
 - HDR10
@@ -71,8 +71,8 @@ Overall, audio passthrough is the ideal way to send audio from your media server
 
 ## What should I do next with this info
 
-The next thing to do is to setup a proper quality profile with the info you gathered from this sheet.
-To make this easier we made a How to setup a quality profile for Radarr/Sonarr that has a flowchart to help you even more to decide what to choose.
+The next thing to do is set up a proper quality profile with the info you gathered from this sheet.
+To make this easier, we've made a section labeled "How to set up a quality profile for Radarr/Sonarr" that has a flowchart to help you even more to decide what to choose.
 
 ### Radarr
 
@@ -94,16 +94,16 @@ To make this easier we made a How to setup a quality profile for Radarr/Sonarr t
 
 ### Sonarr
 
-[How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+[How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 #### How to make use of HDR Formats for Sonarr
 
-- [How to setup Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
+- [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 #### How to make use of Audio Formats for Sonarr
 
-At the moment I decided not to add `Audio Advanced` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, I would suggest going for Remuxes.
+At the moment, we've decided not to add `Audio Advanced` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
 
 --8<-- "includes/support.md"

@@ -16,7 +16,7 @@ The reason why we use `/data/torrents` for the torrent client is because it only
 
 NZBGet or SABnzbd
 
-The reason why we use `/data/usenet` for the usenet client is because it only needs access to the usenet files. In the usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/complete/{tv|movies|music}`.
+The reason why we use `/data/usenet` for the Usenet client is because it only needs access to the Usenet files. In the Usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/complete/{tv|movies|music}`.
 
 {! include-markdown "./docker-tree-usenet.md" !}
 
@@ -50,4 +50,4 @@ Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/
 
 ---
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to setup the paths inside the applications.**
+**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to set up the paths inside the applications.**

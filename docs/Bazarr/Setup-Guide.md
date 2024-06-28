@@ -5,7 +5,7 @@
     In this guide we will try to explain the basic setup you need to do to get started with Bazarr.
     For a more detailed few of all the setting check the following [LINK](https://wiki.bazarr.media/Additional-Configuration/Settings/){:target="_blank" rel="noopener noreferrer"}.
 
-Before Bazarr works we need to setup and configure a few settings.
+Before Bazarr works we need to set up and configure a few settings.
 
 After installation and starting up, you open a browser and go to <http://ip_where_installed:6767>.
 
@@ -13,7 +13,7 @@ After installation and starting up, you open a browser and go to <http://ip_wher
 
 ## Sonarr
 
-First we're going to setup Sonarr.
+First we're going to set up Sonarr.
 
 `Settings` => `Sonarr`
 
@@ -85,7 +85,7 @@ Click on `Add` and you will get an extra option
 
 !!! warning
 
-    **IF YOU GOT THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
+    **IF YOU HAVE THE SAME VALUES ON BOTH SIDES THEN YOU DON'T NEED IT!!!**
 
     **IT SHOULD ALSO BE REMOVED OR ELSE YOU WILL GET AN ERROR.**
 
@@ -93,7 +93,7 @@ Click on `Add` and you will get an extra option
 
 !!! info
 
-    *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.*
+    *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well-planned paths.*
 
     Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
 
@@ -105,7 +105,7 @@ Click on `Add` and you will get an extra option
 
 ## Radarr
 
-Next we're going to setup Radarr.
+Next, we're going to set up Radarr.
 
 `Settings` => `Radarr`
 
@@ -150,7 +150,7 @@ Click on `Enabled`
 
         **Are your subs often out of sync or just bad? Raise the score!**
 
-1. Movies with those tags (case sensitive) in Radarr will be excluded from automatic downloading of subtitles. In Radarr you add a custom tag to a movie.
+1. Movies with those tags (case sensitive) in Radarr will be excluded from the automatic downloading of subtitles. In Radarr you add a custom tag to a movie.
 
 1. Automatic downloading of subtitles will only happen for monitored movies in Radarr.
 
@@ -160,7 +160,7 @@ Click on `Enabled`
 
     You should only use this section if Radarr and Bazarr use a different path to access the same files.
 
-    (for example if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
+    (for example, if you run Radarr on a different device than Bazarr or have a Synology and mix packages with Docker.)
 
 ![!Radarr Path Mappings](images/qs-radarr-path-mappings-add.png)
 
@@ -181,7 +181,7 @@ Click on `Add` and you will get an extra option
 
 !!! info
 
-    *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well planned paths.*
+    *If everything runs on Docker you normally don't need to use this except if you got messed up paths and then it would be smarter to fix those first to have consistent and well-planned paths.*
 
     Please take a look at TRaSH's Hardlink Tutorial <https://trash-guides.info/hardlinks>
 
@@ -203,7 +203,7 @@ Here we're going to configure which subtitle languages you prefer/want.
 
 !!! warning
 
-    **We don't recommend enabling `Single Language` option unless absolutely required (ie: media player not supporting language code in subtitles filename). Results may vary.
+    **We don't recommend enabling the `Single Language` option unless required (ie: media player not supporting language code in subtitles filename). Results may vary.
 
     Be aware the language code (ex.: en) is not going to be included in the subtitles file name when enabling this.**
 
@@ -213,7 +213,7 @@ Here you select which languages you want for your subtitles, you can just start 
 
 These languages are the subtitle languages you later use for the `Languages Profiles`
 
-In this example I selected `Dutch` and `English`.
+In this example, we've selected `Dutch` and `English`.
 
 ### Languages Profiles
 
@@ -221,7 +221,7 @@ Select `Add New Profile`
 
 ![!Languages Profiles](images/qs-languages-profiles.png)
 
-1. How you want to name your language profile.
+1. How you want to name your Language Profile.
 1. Click on `Add` to add the languages you enabled earlier in [Subtitle Language](#subtitles-language).
 1. Select the languages you want to enable for your profile (Including the optional settings).
     - Forced => [FAQ - What are Forced Subtitles](https://wiki.bazarr.media/Troubleshooting/FAQ/#what-are-forced-subtitles){:target="\_blank" rel="noopener noreferrer"}
@@ -261,7 +261,7 @@ Here we're going to select which subtitle providers you want to use.
 ![!Providers](images/qs-providers.png)
 
 1. Click on the Plus sign box.
-1. Select the subtitle providers you would like to enable. It is best to select multiple providers and create/use an account with them especially when you got a lot of wanted subtitles. Some subtitle providers requires an extra paid Anti-Captcha Service.
+1. Select the subtitle providers you would like to enable. It is best to select multiple providers and create/use an account with them especially when you got a lot of wanted subtitles. Some subtitle providers require an extra paid Anti-Captcha Service.
 1. Your enabled providers.
 
 !!! tip
@@ -288,7 +288,7 @@ Here we will configure some extra settings for your subtitles
 
 1. Where you want your subtitles it's recommended to put them `AlongSide Media File`.
 1. If you want to upgrade previously downloaded subtitles.
-1. How many days to go back in history to upgrade them.
+1. How many days to go back in history for upgrading?
 1. If you want to upgrade manually downloaded subtitles.
 
 ### Anti-Captcha Options
@@ -308,7 +308,7 @@ Here you can select which Anti-Captcha provider you want to use.
 ![!Performance / Optimization](images/qs-performance-optimization.png)
 
 1. When searching for subtitles, Bazarr will search less frequently to limit calls to providers.
-1. Search multiple providers at once (Don't choose this on low powered devices).
+1. Search multiple providers at once (don't choose this on low-powered devices).
 1. If you want to use the embedded subtitles in the media files [More Info](https://wiki.bazarr.media/Additional-Configuration/Settings/#use-embedded-subtitles){:target="\_blank" rel="noopener noreferrer"}
 
 ### Automatic Subtitles Synchronization

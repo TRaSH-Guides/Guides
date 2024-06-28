@@ -18,15 +18,15 @@ _All methods require you to login to your terminal with PuTTY or similar softwar
 
 !!! note ""
 
-    If you use usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.
+    If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.
 
-    Still want to test if it works ?
+    Still want to test if it works?
 
-    Test a import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.
+    Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.
 
 ## Method 1: Using ls
 
-This is the easiest to check in my opinion.
+This is the easiest to check in our opinion.
 
 In your terminal `cd` to your download location and run `ls -al` or type `ls -al /path/to/your/download/location/`
 
@@ -36,7 +36,7 @@ You will get a listing of all your files and on the left side you will see a cou
 
 - Red rectangle - Not Hardlinked
 - Green rectangle - Hardlinks
-- Blue rectangle - Folders/Directories you will need to go in to them to check if the files are hardlinked.
+- Blue rectangle - Folders/Directories you will need to go into them to check if the files are hardlinked.
 
 ---
 
@@ -51,8 +51,8 @@ You will get 2 results you can use to compare several things.
 
 ![!Hardlinks check stat](images/hardlinks-stat.png)
 
-1. Links: Everything above 1 means it's a hardlink
-1. Inode: if the numbers match you know the files are hardlinked
+1. Links: Everything above 1 means it's hardlinked
+1. Inode: if the numbers match, you know the files are hardlinked
 
 ## Method 3: Using Inode copies
 
