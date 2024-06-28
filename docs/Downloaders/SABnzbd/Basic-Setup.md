@@ -6,7 +6,7 @@
 
 !!! Note
 
-    Settings that aren't covered means you can change them to your own liking or just leave them on default.
+    Settings that aren't covered means you can change them to your liking, or just leave them on default.
 
     **I also recommend to enable the `Advanced Settings` on the top right.**
 
@@ -44,7 +44,7 @@ Here you setup your download path/location.
 !!! info "Starting from 4.3.x+ SABnzbd has a hidden (archive) history."
 
 Using the .nzb Backup Folder is still recommended as it is useful for dupe detection (hash matching) or if you need to retry something from the past.
-The default is empty, I picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.
+The default is empty, we picked history because it is easy. It'll end up in the `/config` folder for Docker, which isn't crazy... but this is only compressed nzb files, so it can end up pretty big. The choice is yours what you prefer.
 
 ---
 
@@ -92,24 +92,24 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 
 1. If you have good indexers that get the nzb from the post, not generated, then you may want the Propagation delay set to 5 minutes (so you're not trying to grab an nzb right at posting). If you're not getting it from the same server as the poster used, you might wrongly have articles missing (since it hasn't necessarily propagated to your server yet) or if you use a reseller it may take them longer for them to get it from their upstream.
 1. When it becomes clear during downloading that too much data is missing, abort the job to make sure Sonarr/Radarr gets the notification so it can look for another release.
-1. Since we have the .nzb history folder, you can decide what you want to do here w/ duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
-1. In case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
+1. Since we have the .nzb history folder, you can decide what you want to do here with duplicate downloads. Mine is set to Tag job, but Pause or Fail job may make sense too.
+1. In the case of "Pause", you'll need to set a password and resume the job. or you set it to "Abort" and Sonarr/Radarr can look for another release.
 1. This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).
-1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
+1. If your hardware isn't up to snuff, including CPU and/or IO performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 
 ### Post processing
 
 `Settings` => `Switches` => `Post processing`
 ![!Switches: Post-processing](images/sabnzbd-switches-post-processing.png)
 
-1. If your hardware isn't up to snuff, including cpu and/or io performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
+1. If your hardware isn't up to snuff, including CPU and/or IO performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 1. This should be set off if you have decent internet. The amount of time spent to grab pars, if needed for verification/repair, is trivial to the time that a repair might run and fail to realize it needs more pars, and grab the next part, then retry.
 1. It is your choice if you want to enable this option. It's usually an easy check and does provide benefits if the job doesn't have par2 files, as not every release has a par-set or SFV file. Generally speaking, if we're talking about scene releases, things should have both but this depends on how it's posted and how the indexer is generating the nzb. SFV is commonly used and a basic crc32 checksum is better not knowing if the file is good. Parsing an SFV file and checking the files' integrities takes very little resources. This may seem redundant given that par's checks would also handle this, however, the ease with which the check is done makes the downside almost non-existent.
 1. Only unpack and run scripts on jobs that passed the verification stage. If turned off, all jobs will be marked as Completed even if they are incomplete.
 1. Unpack archives (rar, zip, 7z) within archives.
-1. This can help with subs that are in folders in the rar because sonarr/radarr don't look in sub-folders.
-1. Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if its a sample compared to what SABnzbd uses.
-1. Helps with de-obfuscation especially invalid file extensions
+1. This can help with subs that are in folders in the rar because Sonarr/Radarr don't look in sub-folders.
+1. Best to leave this disabled and let the Starr apps handle this since it looks at runtime and makes a much more intelligent decision if it's a sample compared to what SABnzbd uses.
+1. Helps with de-obfuscation, especially invalid file extensions
 
 ---
 
@@ -122,12 +122,12 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 ## Special
 
 Rarely used options.
-Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.3/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side-effects.
+Don't change these without checking the [SABnzbd Wiki](https://sabnzbd.org/wiki/configuration/4.3/special){:target="\_blank" rel="noopener noreferrer"} first, as some have serious side effects.
 The default values are between parentheses.
 
 ### Unable to connect to SABnzbd
 
-If you're trying to connect your Starr apps to SABnzbd and you're getting a error like `Unable to connect to SABnzbd` after clicking on Test.
+If you're trying to connect your Starr apps to SABnzbd and you're getting an error like `Unable to connect to SABnzbd` after clicking on Test.
 
 ![!Starr: Unable to connect to SABnzbd](images/starr-unable-to-connect-to-sabnzbd.png)
 
@@ -147,7 +147,7 @@ Example: `sabnzbd.domain.tld, <container name >`
 
 ## Recommended Sonarr/Radarr Settings
 
-The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+The following settings are recommended for Sonarr/Radarr, or else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
 Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Sonarr
@@ -158,9 +158,9 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3.
+    Make sure you check both boxes under `Completed Download Handling` in step 3.
 
-    Select SABnzbd at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    Select SABnzbd in step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
     ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-sabnzbd.png)
 
@@ -172,11 +172,11 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3,
+    Make sure you check both boxes under `Completed Download Handling` in step 3,
 
-    and both boxes under `Failed Download Handling` at step 4.
+    and both boxes under `Failed Download Handling` in step 4.
 
-    Select SABnzbd at step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    Select SABnzbd in step 5 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
     ![!Radarr: Download Clients - SABnzbd](images/radarr-download-clients-sabnzbd.png)
 
@@ -184,4 +184,4 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 <sub>Thanks to [fryfrog](https://github.com/fryfrog){:target="\_blank" rel="noopener noreferrer"} for helping me with the settings and providing the info needed to create this Guide.</sub>
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

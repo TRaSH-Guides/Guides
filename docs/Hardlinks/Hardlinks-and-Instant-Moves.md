@@ -11,7 +11,7 @@
 This Guide exist out of 4 Sections
 
 1. This page with a short description.
-1. [How to setup for](/Hardlinks/How-to-setup-for/) your installation method.
+1. [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
 1. [Examples](/Hardlinks/Examples/) what you should use for your path settings in your used applications.
 1. [Check if hardlinks are working](/Hardlinks/Check-if-hardlinks-are-working/)
 
@@ -21,7 +21,7 @@ So you want one of the following ?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
 - You want to perma seed?
 
-Then Continue to [How to setup for](/Hardlinks/How-to-setup-for/) your installation method.
+Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
 
 ## FAQ
 

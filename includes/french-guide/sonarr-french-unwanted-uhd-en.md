@@ -12,8 +12,8 @@
     Breakdown and Why
 
     - **{{ sonarr['cf']['br-disk']['name'] }} :** This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-    - **{{ sonarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
-    - **{{ sonarr['cf']['french-lq']['name'] }}:** A collection of known Low Quality French groups that are often banned from the top trackers because the lack of quality or other reasons.
+    - **{{ sonarr['cf']['lq']['name'] }}:** A collection of known low-quality groups that are often banned from the top trackers due to their releases' lack of quality or other reasons.
+    - **{{ sonarr['cf']['french-lq']['name'] }}:** A collection of known low-quality French groups that are often banned from the top trackers due to their releases' lack of quality or other reasons.
     - **{{ sonarr['cf']['extras']['name'] }}:** This blocks/ignores extras
 
     ??? warning "Type of FanSubs - [Click to show/hide]"

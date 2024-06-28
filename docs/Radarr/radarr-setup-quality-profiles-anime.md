@@ -1,6 +1,6 @@
 # How to setup Quality Profiles Anime
 
-_aka How to setup Custom Formats (Anime)_<br><br>
+_aka How to set up Custom Formats (Anime)_<br><br>
 
 !!! note
 
@@ -43,7 +43,7 @@ Go to `Settings` => `Profiles`
 
 ![!cfa-mergedqualities](images/cfa-mergedqualities.png)
 
-We then need to select and organise the qualities like below.
+We then need to select and organise the qualities as seen below.
 
 ![!cfa-qualityorder](images/cfa-qualityorder.png)
 
@@ -72,7 +72,7 @@ In the profile enter the scores as per the above table in this section.
 
 ![!cfa-default-scoring](images/cfa-default-scoring.png)
 
-After you are done it should look like the image above.
+After you are done it should look similar to the image above, but using the current Guide Scores from the above tables.
 
 ### Dual Audio Scoring
 
@@ -110,7 +110,7 @@ Once you have set your preferred scoring you will need to make two more changes 
 
 Make sure `Upgrades Allowed` is ticked then set the `Upgrade Until` section to `Remux-1080p` and the `Upgrade Until Custom Format Score` to `10000` and set `Language` to `Original`
 
-After this has been done your profile should look like below. This is an example of the Default Scoring setup.
+After this has been done your profile should look as seen below. This is an example of the Default Scoring setup.
 
 ![!cfa-complete](images/cfa-complete.png)
 
@@ -118,12 +118,12 @@ After this has been done your profile should look like below. This is an example
 
 Most of my information and knowledge came from:
 
-- rg9400 (Building the Custom Formats, Guidance on anime groups and general knowledge share.)
+- rg9400 (Building the Custom Formats, Guidance on anime groups and sharing general knowledge.)
 
-- V01 from SeaDex (Guidance on anime groups and general knowledge share.)
+- V01 from SeaDex (Guidance on anime groups and sharing general knowledge.)
 
-- Drazzilb (Guidance on anime groups, testing and general knowledge share.)
+- Drazzilb (Guidance on anime groups, testing and sharing general knowledge.)
 
-- [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and general knowledge share.)
+- [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
 {! include-markdown "../../includes/support.md" !}

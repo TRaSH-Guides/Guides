@@ -51,4 +51,4 @@ Example paths:
     [[% filter indent(width=4) %]][[% include '/Plex/profiles/Chromecast/Chromecast.xml' %]][[% endfilter %]]
     ```
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

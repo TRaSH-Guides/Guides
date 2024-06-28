@@ -10,16 +10,16 @@ If your Operating System supports it you could make use of [Jdupes](https://code
 
 !!! info ""
 
-    I won't cover every command :bangbang:
+    We won't cover every command :bangbang:
 
     If you want to know what else [Jdupes](https://codeberg.org/jbruchon/jdupes) can do please read the manual.
 
 !!! tip
 
-    This process can take a long time and a pretty big hit on your resources depending on how big your library is, I did notice the first time it takes longer then the second time. Not sure if this is a cache thing or something else.
+    This process can take a long time and a pretty big hit on your resources depending on the size of your library. We did notice the first time can take longer than the second time, this may be due to some sort of caching behavior on disk.
 
-    - That's why I suggest to do it based on categories (Movies, TV, Music etc).
-    - I don't suggest to use this on a cloud based setup.
+    - That's why we suggest doing it based on categories (Movies, TV, Music etc).
+    - We don't suggest using this on a cloud-based setup.
 
 ```bash
 jdupes [options] DIR1 DIR2

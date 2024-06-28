@@ -18,7 +18,7 @@
 
 ![!When adding a torrent](images/qb-options-downloads-when-adding-a-torrent.png)
 
-1. For consistency with other torrents I recommend leaving this on `Original`.
+1. For consistency with other torrents, we recommend leaving this on `Original`.
 
     !!! success ""
 
@@ -30,7 +30,7 @@
 
         **Suggested: `Personal preference`**
 
-1. Pre-allocated disk space for the added torrents, this limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.
+1. Pre-allocated disk space for the added torrents limits fragmentation and also makes sure if you use a cache drive or a feeder disk that the space is available.
 
     !!! success ""
 
@@ -114,7 +114,7 @@
 
 ![!Connections Limits](images/qbt-options-connection-connections-limits.png)
 
-The best settings for this depends on many factors so I won't be covering this.
+The best settings for this depend on many factors so we won't be covering this.
 
 !!! success ""
 
@@ -140,7 +140,7 @@ This is where you would add for example your SOCKS5 settings from your VPN provi
 
 Here you can set your global rate limits, meaning your maximum download/upload speed used by qBittorrent. (For all torrents)
 
-The best settings depends on many factors.
+The best settings depend on many factors.
 
 - Your ISP speed.
 - Your hardware used.
@@ -154,11 +154,11 @@ The best settings depends on many factors.
 
 ![!Alternative Rate Limits](images/qbt-options-speed-alternative-rate-limits.png)
 
-When enabled, it basically does the same as above, but with the option to setup a schedule.
+When enabled, it basically does the same as above, but with the option to set up a schedule.
 
 Examples:
 
-- Limit your upload/download rate during daytime when you make most use of it, and unlimited it during nighttime when no one is using the connection.
+- Limit your upload/download rate during the daytime when you make the most use of it, and unlimited it during nighttime when no one is using the connection.
 - If you have an internet connection that's limited during specific hours (unlimited bandwidth during the night, but limited during the day)
 
     !!! success ""
@@ -209,7 +209,7 @@ Not going to cover the technical part of what it does, but the following setting
 
         **Suggested: `Allow encryption`**
 
-1. Anonymous mode hides clients (qBittorrent) fingerprint from the peer-ID, sets the ‘User-Agent’ to Null and it doesn’t share your IP-address directly with trackers (though peers will still see your IP address). If using private trackers, it's recommended to `disable` this. I also got reports from people who are using this that they had worse speeds.
+1. Anonymous mode hides the client's (qBittorrent) fingerprint from the peer-ID, sets the ‘User-Agent’ to Null and doesn’t share your IP address directly with trackers (though peers will still see your IP address). If using private trackers, it's recommended to `disable` this. We also got reports from people who are using this that they had worse speeds.
 
     !!! success ""
 
@@ -249,7 +249,7 @@ These options allow you to control the number of active torrents being downloade
 
 !!! tip
 
-    Personally, I recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage){:target="\_blank" rel="noopener noreferrer"}
+    We recommend using the seeding goals in your Starr Apps indexer settings (enable advanced), or use [qBit Manage](/Downloaders/qBittorrent/3rd-party-tools/#qbit-manage){:target="\_blank" rel="noopener noreferrer"}
 
 ### Automatically add these trackers to new downloads
 
@@ -285,7 +285,7 @@ These options allow you to control the number of active torrents being downloade
 
         **Suggested: `Disabled`**
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"
 
 [^1]:
 

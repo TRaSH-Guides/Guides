@@ -1,6 +1,6 @@
 # How to provide a docker compose
 
-When you're running dockers and you need help on discord etc you often hear the question:
+When you're running dockers and you need help on Discord etc you often hear the question:
 
 "Provide a docker compose"
 
@@ -26,7 +26,7 @@ sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/red5d/
 
 !!! warning
 
-    Please not share the output directly to Discord, reddit, forums, etc.
+    Please do not share the output directly to Discord, Reddit, forums, etc.
 
 Copy and paste the results on one of the following sites.
 
@@ -36,4 +36,4 @@ Copy and paste the results on one of the following sites.
 - [privatebin.net](https://privatebin.net/){:target="\_blank" rel="noopener noreferrer"}
 - [bpaste](https://bpa.st/){:target="\_blank" rel="noopener noreferrer"}
 
-If you use docker run command to create your docker containers, paste your run command in to [composerize](https://www.composerize.com/){:target="\_blank" rel="noopener noreferrer"}
+If you use the `docker run` command to create your docker containers, paste your run command into [composerize](https://www.composerize.com/){:target="\_blank" rel="noopener noreferrer"}

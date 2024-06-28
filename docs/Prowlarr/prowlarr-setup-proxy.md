@@ -1,6 +1,6 @@
 # Setup proxy for certain indexers
 
-It's not recommended to run the Starr apps through a VPN, what can happen is that the Starr apps doesn't update the posters or metadata or you can't add new movies/tv shows, it doesn't need to happen right away. but sooner or later it can and probably will happen.
+It's not recommended to run any of the Starr apps through a VPN. In some cases, it can cause connectivity issues such as the Starr apps not being able to update the posters and metadata, and sometimes the inability to add new movies/TV shows at all. It won't always happen immediately, but sooner or later it can and probably will happen.
 
 !!! danger "To be clear it is not a matter if VPNs will cause issues with the Starr Apps, but when: image providers will block you and cloudflare is in front of most of Starr servers (updates, metadata, etc.) and liable to block you too"
 
@@ -12,13 +12,13 @@ Just run VPN on the apps that actually need it, like your torrent client, and pe
 
     This isn't the same as the tracker, the API/Website scraping happens on the actual site and some indexers don't allow VPN usage on their site.
 
-In this guide i will try to explain how to setup Prowlarr to use your VPN from your torrent client.
+In this guide, we will try to explain how to set up Prowlarr to use your VPN from your torrent client.
 
 ## Enable privoxy
 
-If you use docker you need to enable enable privoxy in you torrent client so you can use it to passthrough traffic.
+If you use docker, you need to enable privoxy in your torrent client so you can use it to pass through traffic.
 
-Please check your used docker image how to enable privoxy.
+Please check your docker image's documentation on how to enable privoxy.
 
 ## Add privoxy to Prowlarr
 
@@ -49,7 +49,7 @@ Select the indexer that you want to use with Privoxy
 
 ![Select Indexer](images/select-indexer.png)
 
-Scroll down to the bottom and add the tag you've set up earlier at step 2.
+Scroll down to the bottom and add the tag you set up earlier during step 2.
 
 ![Add tag to indexer](images/add-tag-to-indexer-privoxy.png)
 

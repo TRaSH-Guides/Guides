@@ -20,7 +20,7 @@ You can find the latest Windows installers [here](https://ftp.osuosl.org/pub/del
 
 ### Linux (Native)
 
-Due to most default OS repositories being outdated, I recommend using Deluge's repositories to install the latest version.
+Due to most default OS repositories being outdated, we recommend using Deluge's repositories to install the latest version.
 
 Using `apt-get` to install
 
@@ -48,4 +48,4 @@ Using `pip3` to install (included in the Python package)
 
 [BinHex VPN](https://hub.docker.com/r/binhex/arch-delugevpn)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

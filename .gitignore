@@ -5,3 +5,4 @@ site/
 /docs/Notifiarr/preview.bat
 /docs/Notifiarr/Integrations/_TEMPLATE.md
 /includes/flowcharts/.$radarr-flowchart.drawio.bkp
+.DS_Store

@@ -2,12 +2,12 @@
 
 !!! note
 
-    I'm using the default paths in this example, and will keep the other paths unchanged so nothing will break if you make a mistake.
+    We're using the default paths in this example, and we will keep the other paths unchanged so nothing will break if you make a mistake.
 
 ## Folder Structure
 
 We're going to use a mounted drive that we're going to use as storage for downloads and your media.
-In this example the mounted drive will be mounted to `/mnt/` with the following folder structure.
+In this example, the mounted drive will be mounted to `/mnt/` with the following folder structure.
 
 ```none
 storage
@@ -171,4 +171,4 @@ When that's all set then you will need to change the paths you're going to use i
 
     ![ds-rtorrent-settings-autotools](images/ds-rtorrent-settings-autotools.png)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

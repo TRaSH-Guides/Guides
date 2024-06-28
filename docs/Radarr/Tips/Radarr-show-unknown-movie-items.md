@@ -8,8 +8,8 @@ Go to your Activity
 
 `Activity`
 
-Then on the top right click on `Options` and a new window will popup and enable `Show Unknown Movie Items`
+Then on the top right click on `Options` and a new window will pop up and enable `Show Unknown Movie Items`
 
 ![!Enable Show Unknown Movie Items](images/Radarr-show-unknown-movie-item.png)
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

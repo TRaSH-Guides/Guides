@@ -1,3 +1,30 @@
+# 2024-06-15 22:00
+- [feat(guides): Add hallowed to (U)HD Bluray Tier 03 and create new hallowed Radarr custom format (#1978)](https://github.com/TRaSH-Guides/Guides/pull/1978)
+
+# 2024-06-14 04:00
+- Synology: [feat(jellyseerr): add jellyseerr (#209)](https://github.com/TRaSH-Guides/Synology-Templates/pull/209)
+- Synology: [fix(env): add missing details and clarify for plex (#207)](https://github.com/TRaSH-Guides/Synology-Templates/pull/207)
+- Synology: [fix(jellyfin): add quicksync video check (#211)](https://github.com/TRaSH-Guides/Synology-Templates/pull/211)
+- Synology: [feat(prowlarr): add prowlarr (#210)](https://github.com/TRaSH-Guides/Synology-Templates/pull/210)
+- [fix(sync_tools): Hotfix to re-add default:3 and default:4 Sonarr episode naming options (#1972)](https://github.com/TRaSH-Guides/Guides/pull/1972)
+- [feat(guide): Update quality size FAQ and preferred info (#1969)](https://github.com/TRaSH-Guides/Guides/pull/1969)
+- [chore(guide): Changed discord shield to button (#1973)](https://github.com/TRaSH-Guides/Guides/pull/1973)
+- [feat(guide): Update Setup TorGuard for port forwarding Guide (#1974)](https://github.com/TRaSH-Guides/Guides/pull/1974)
+
+# 2024-06-09 22:00
+- [chore(sonarr): add 720p CF](https://github.com/TRaSH-Guides/Guides/pull/1896)
+- [feat(guides): Improve description for x265 (no HDR/DV), x265 (HD) and SDR (no WEBDL)](https://github.com/TRaSH-Guides/Guides/pull/1941)
+- [feat(Radarr): Add Custom Format for iTunes streaming services](https://github.com/TRaSH-Guides/Guides/pull/1942)
+- [feat(Radarr): Add RlsGrp W4NK3R to HD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1943)
+- [feat(Guides): Updated How to Sync 2 Radarr or Sonarr](https://github.com/TRaSH-Guides/Guides/pull/1947)
+- [feat(guides): Improve bottom Question & Suggestion banner](https://github.com/TRaSH-Guides/Guides/pull/1948)
+- [feat(radarr): Add New Repack3 Custom Format](https://github.com/TRaSH-Guides/Guides/pull/1952)
+- [fix(prowlarr): fix typo in prowlarr-setup-proxy.md](https://github.com/TRaSH-Guides/Guides/pull/1954)
+- [feat(radarr): Add RlsGrp TEKNO3D to LQ (Release Title)](https://github.com/TRaSH-Guides/Guides/pull/1956)
+- [feat(guide): Update naming scheme and add tvdb/tmdb](https://github.com/TRaSH-Guides/Guides/pull/1965)
+- [chore(radarr): move SWTYBLZ to LQ Release Title](https://github.com/TRaSH-Guides/Guides/pull/1967)
+- [feat(guides): Move AV1 to unwanted](https://github.com/TRaSH-Guides/Guides/pull/1968)
+
 # 2024-05-15 12:00
 - [chore(guide): Remove Sonarr v3 guides](https://github.com/TRaSH-Guides/Guides/pull/1909)
 - [chore(guide): Update inconsistent naming in downloaders pages](https://github.com/TRaSH-Guides/Guides/pull/1930)

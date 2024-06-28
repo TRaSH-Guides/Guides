@@ -2,11 +2,11 @@
 
 So, what are the best Plex Media Server settings?
 
-This is something that can't really be answered because it depends on the use case and your personal preference.
+This is something that can't be answered, as it depends on the use case and your personal preference.
 
 !!! danger ""
 
-    Here I will provide some suggestions and try to explain why I recommend these settings. Adjust it to your own liking and keep in mind that it is only a suggestion. I'm not a Plex Pro in anyway :bangbang:
+    Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. :bangbang:
 
 !!! warning
 
@@ -18,7 +18,7 @@ All changes need to be done on your Plex Media Server.
 
 !!! info "Why didn't you cover option .... ?"
 
-    I will only cover settings that I think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+    We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://trash-guides.info/assets/discord.png)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
 
 ## Settings
 
@@ -32,9 +32,9 @@ All changes need to be done on your Plex Media Server.
 1. Enable/Disable Remote access (if you disable it ignore the rest of these settings)
 1. LAN/container IP
 1. Public IP **If you need to provide a screenshot always mask this IP :bangbang:**
-1. Manually specify public port if you run Docker or want a fixed port.
+1. Manually specify a public port if you run Docker or want a fixed port.
 1. Enter the Plex port you want to use. (default: `32400`)
-1. Click on `Apply` and when everything is setup correctly, your Plex Media Server should be fully accessible outside of your network, so you can connect to your Plex server from outside. You may also need to configure port forwarding on your router. Detailed instructions are available [HERE](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="\_blank" rel="noopener noreferrer"}.
+1. Click on `Apply` and when everything is set up correctly, your Plex Media Server should be fully accessible outside of your network, so you can connect to your Plex server from outside. You may also need to configure port forwarding on your router. Detailed instructions are available [HERE](https://support.plex.tv/articles/200931138-troubleshooting-remote-access/){:target="\_blank" rel="noopener noreferrer"}.
 1. Enter your internet upload speed here and Plex can ensure it operates within this boundary.
 1. Set the maximum bitrate of a remote stream from this server.
 
@@ -62,17 +62,17 @@ When a change is detected in the source location for a library’s content, the 
 
 ??? tip "TIP - Autoscan - [Click to show/hide]"
 
-    If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel I collaborate with) has a video explaining it in further detail.
+    If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    Please don't forget to check out his other Unraid Video's [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
+    Please don't forget to check out his other Unraid Videos [HERE](https://www.youtube.com/c/IBRACORP/videos){:target="_blank" rel="noopener noreferrer"}
 
 #### Run a partial scan when changes are detected
 
 ![!Settings - Library - Run a partial scan when changes are detected](images/settings-library-run-a-partial-scan-when-changes-are-detected.png)
 
-When changes to library folders are detected, only scan the folder which changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
+When changes to library folders are detected, only scan the folder that has changed rather than scanning the entire content location. This works together with the normal Update my library automatically setting (and requires that setting to be enabled).
 
 !!! success ""
 
@@ -94,7 +94,7 @@ Turning this on will cause your Plex Media Server to run scans on your libraries
 
     **Suggested: `Disabled`**
 
-    *Do you need a extra scan for your library to recognize new media?*
+    *Do you need an extra scan for your library to recognize new media?*
 
 #### Empty trash automatically after every scan
 
@@ -110,13 +110,13 @@ With this option enabled, when an item’s file is deleted from the drive, it wi
 
 ![!Settings - Library - Allow media deletion](images/settings-library-allow-media-deletion.png)
 
-The owner of the server will be allowed to delete media files from disk.
+The owner of the server will be allowed to delete media files from the disk.
 
 !!! success ""
 
     **Suggested: `Disabled`**
 
-    *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've setup Plex with Read Only access to the media library)*
+    *In my opinion Plex shouldn't touch your media files. Use Sonarr/Radarr to manage your media library. (For extra security I've set up Plex with Read Only access to the media library)*
 
 #### Run scanner tasks at a lower priority
 
@@ -128,7 +128,7 @@ On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run
 
     **Suggested: `Enabled`**
 
-    *Makes sure it uses less resources and ensure they do not interfere with regular streaming.*
+    *This makes sure it uses fewer resources and ensures they do not interfere with regular streaming.*
 
 #### Generate video preview thumbnails
 
@@ -212,11 +212,11 @@ Choose how your Plex Media Server handles secure connections.
 
 ![!Settings - Network - Preferred network interface](images/settings-network-preferred-network-interface.png)
 
-For users with multiple network cards or systems such as NAS or Docker where there is always another network interface which Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.
+For users with multiple network cards or systems such as NAS or Docker where there is always another network interface that Plex client applications may try to use to connect to the Plex Media Server, with this option you can ensure that your local Plex clients would only try that interface.
 
 !!! warning
 
-    If you have enabled Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically-mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.
+    If you have Remote Access enabled and are having Plex automatically map the port (as opposed to specifying a port manually), then Plex Media Server has no control over which network interface is used for an automatically mapped port. Thus, it’s possible that Remote Access connections could come through an interface other than the one specified here.
 
 !!! success ""
 
@@ -236,7 +236,7 @@ If this setting is enabled, it prevents Plex Media Server from using or acceptin
 
 ![!Settings - Network - Enable local network discovery (GDM)](<images/settings-network-enable-local-network-discovery-(gdm).png>)
 
-Enable “G’Day Mate” discovery. This is used to allows Plex apps and servers to find each other automatically on a local network.
+Enable “G’Day Mate” discovery. This is used to allow Plex apps and servers to find each other automatically on a local network.
 
 !!! success ""
 
@@ -278,7 +278,7 @@ Allows incoming requests from this network’s WAN IP address to be treated as L
 
 ![!Settings - Network - Enable Relay](images/settings-network-enable-relay.png)
 
-The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth limited.
+The Relay allows connections to the server through a proxy relay when the server is not accessible otherwise. Relay connections are bandwidth-limited.
 
 !!! success ""
 
@@ -290,7 +290,7 @@ The Relay allows connections to the server through a proxy relay when the server
 
 ![!Settings - Network - Custom server access URLs](images/settings-network-custom-server-access-urls.png)
 
-A comma-separated list of URLs (either HTTP or HTTPS), which will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with subdomain.
+A comma-separated list of URLs (either HTTP or HTTPS) that will be published to plex.tv for server discovery. This can be very useful in a few cases: if you’re using a reverse proxy in front of the media server, or if your networking configuration is otherwise unique. For instance, if you have your own custom domain with a subdomain.
 
 !!! success ""
 
@@ -330,7 +330,7 @@ Directory to use when transcoding temporary files for streaming.
 
     **Suggested: `Depending on your setup, if possible, your RAM (disk)`**
 
-    *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be writing to a disk.*
+    *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be written to a disk.*
 
     *If you run docker set this to `/transcode` and map it to `/tmp/plex`*
 
@@ -350,11 +350,11 @@ This feature allows Plex Media Server to maintain high visual fidelity of conten
 
     **Suggested: `Depending on your setup`**
 
-    *Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle convert 4K content in real-time, unless you’re running on a very powerful system.*
+    *Most HDR content will be in 4K resolution. If your platform has to use software transcoding to perform the tone mapping, then it may well struggle to convert 4K content in real-time, unless you’re running on a very powerful system.*
 
 !!! note
 
-    Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed out” colors that occur when converting HDR content without tone mapping.
+    Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed-out” colors that occur when converting HDR content without tone mapping.
 
 #### Use hardware acceleration when available
 
@@ -384,7 +384,7 @@ To use Hardware-Accelerated Encoding in Plex Media Server.
 
 ### Libraries
 
-Here you will find your libraries you've added to your Plex Media Server.
+Here you will find the libraries you've added to your Plex Media Server.
 
 ??? example "Examples - [Click to show/hide]"
 
@@ -399,7 +399,7 @@ Here you will find your libraries you've added to your Plex Media Server.
     - Anime `(/data/media/anime)`
     - etc
 
-!!! info "I will only cover the libraries settings for Movies and TV shows"
+!!! info "I will only cover the library settings for Movies and TV shows"
 
 #### Movies
 
@@ -411,7 +411,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Plex Movie`**
 
-        *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.*
+        *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level so that different libraries using the same agent can have different agent settings.*
 
 ![!Plex Settings - Libraries - Movies](images/manage-libraries-movies-part2.png)
 
@@ -421,7 +421,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Enabled`**
 
-        *I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
+        *I had this enabled because I thought it was needed for local subtitles (.srt), but after research, it seems it isn't needed.
         If you want you could disable it, the choice is yours.*
 
 1. When scanning this library, prefer embedded tags and local files if present.
@@ -430,7 +430,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Disabled`**
 
-        *If enabled you could end up with weird movie naming you don't want, happens especially from releases from `RARBG`*
+        *If enabled, you could end up with weird movie naming you don't want, such as those from `RARBG`*
 
 ![!Plex Settings - Libraries - Movies](images/manage-libraries-movies-part3.png)
 
@@ -475,7 +475,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Plex TV Series`**
 
-        *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level, so that different libraries using the same agent can have different agent settings.*
+        *Besides being much faster at scanning and getting metadata, one of the benefits of the new agent is that all agent settings are set at the library level so that different libraries using the same agent can have different agent settings.*
 
 ![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part2.png)
 
@@ -487,7 +487,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Enabled`**
 
-        *I had this enabled because I thought it was needed for local subtitles (.srt), but after research it seems it isn't needed.
+        *I had this enabled because I thought it was needed for local subtitles (.srt), but after research, it seems it isn't needed.
         If you want you could disable it, the choice is yours.*
 
 ![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part3.png)
@@ -498,7 +498,7 @@ Here you will find your libraries you've added to your Plex Media Server.
 
         **Suggested: `Disabled`**
 
-        *If enabled you could end up with weird movie naming you don't want, happens especially from releases from `RARBG`*
+        *If enabled, you could end up with weird movie naming you don't want, such as those from `RARBG`*
 
 ![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part4.png)
 
@@ -533,11 +533,11 @@ Here you will find your libraries you've added to your Plex Media Server.
 
 ---
 
-For the information of this guide, I made use of the following sources
+For the information in this guide, we made use of the following sources
 
-- Information I gathered from Several Discord servers
+- Information we gathered from Several Discord servers
 - [Plex Support Articles](https://support.plex.tv/articles/){:target="\_blank" rel="noopener noreferrer"}
 - Extra Information gathered from a Plex employee
 - Own experience
 
-{! include-markdown "../../../includes/support.md" !}
+--8<-- "includes/support.md"

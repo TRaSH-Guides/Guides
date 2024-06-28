@@ -63,3 +63,20 @@ td {
 [data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
   color: #f8f8f8;
 }
+.md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {
+  fill: var(--md-default-fg-color--lighter);
+  max-height: 100%;
+  width: var(--md-icon-size);
+}
+.md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg:hover {
+  fill: var(--md-accent-fg-color);
+  transform:rotate(45deg);
+}
+.md-typeset .md-button.custom_width {
+  border-radius:0rem;
+  padding:.625em .91em;
+}
+.md-typeset .md-button {
+  border-radius:0rem;
+  padding:.625em 2.2em;
+}

@@ -1,18 +1,18 @@
 # Remote Path Mappings
 
-It seems that a lot of people don't understand how the remote path mapping works for Sonarr. I will try to explain it with some screenshots and a short description.
+It seems that a lot of people don't understand how remote path mapping works for Sonarr. we will try to explain it with some screenshots and a short description.
 
-Remote Path Mapping acts as a dumb find `Remote Path` and replace with `Local Path`
+Remote Path Mapping acts as a dumb find `Remote Path` and replaces it with the `Local Path`
 
 ## When do I need remote path mappings
 
 - If Sonarr and your download client are not on the same server/system.
 - If you use either merged local/remote setups using mergerfs or similar.
-- You run dockers and **DON'T** have consistent and well planned paths.
+- You run dockers and **DON'T** have consistent and well-planned paths.
 
 !!! note
 
-    If you run dockers it would be smarter to fix the problem at the source what's causing the actual issue.
+    If you run dockers it would be smarter to fix the problem at the source of what's causing the actual issue.
 
     - [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
@@ -34,11 +34,11 @@ So looking at this screenshot it seems we need to make use of Remote Path Mappin
 
 ## How
 
-First we navigate in Sonarr to the `Settings` => `Download Clients` tab.
+First, we navigate in Sonarr to the `Settings` => `Download Clients` tab.
 
 ![download client tab](images/cl_cli_tab.png)
 
-At the bottom you choose `Add new mapping`
+At the bottom, you choose `Add new mapping`
 
 ![!add new mapping](images/new_mapping.png)
 
@@ -59,7 +59,7 @@ A screen will pop up with the following options:
         ## Host
 
         To find what you need to put in your host you navigate in Sonarr to the Settings => Download Clients Tab.
-        There you open up the download client for this example I will be using QBittorrent
+        There you open up the download client for this example we will be using QBittorrent
 
         ![Qbittorrent client](images/qbit_client.png)
 
@@ -77,7 +77,7 @@ A screen will pop up with the following options:
 
         ## Local Path
 
-        To find out what you need to put in in your local path you need to know how Sonarr is able to access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.
+        To find out what you need to put in in your local path you need to know how Sonarr can access the files that your download client downloaded. This can be done in different ways. Mounting/Network shares, whatever, but Sonarr needs to have local access to it, so you need to figure out the best way for Sonarr to access the download client's downloaded files yourself.
 
         The final result will look something like this.
 
