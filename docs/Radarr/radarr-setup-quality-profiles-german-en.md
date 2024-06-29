@@ -4,9 +4,7 @@
 
 !!! note "This guide is created and maintained by *who will maintain it?*"
 
-So what is the best way to set up the Custom Formats and which one to use with which scores to get French and English Audio?
-
-Keep in mind that most releases are MULTi (understand DUAL audio, original and French audio) and it will be difficult to only have German audio, unless you are only looking for German movies.
+So what is the best way to set up the Custom Formats and which one to use with which scores to get German and English Audio?
 
 Regarding quality there isn't a best setup, it depends on your setup (hardware devices) and your own personal preferences.
 
@@ -40,7 +38,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 ## Usages
 
 There is two ways of using those German Custom Formats, with and without the Guide's original Group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
-To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. You need to understand that if you add the Custom Formats from this optional section if Radarr do not find a German.DL release you will still have a good scoring for single audio.
+To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. You need to understand that if you add the Custom Formats from this optional section if Radarr do not find a German Dual Language release you will still have a good scoring for single audio.
 
 ------
 
