@@ -1,0 +1,37 @@
+{
+  "trash_id": "263943bc5d99550c68aad0c4278ba1c7",
+  "trash_scores": {
+      "default": -50000
+  },
+  "name": "German LQ",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "PsO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(PsO)$"
+      }
+    },
+    {
+      "name": "Cancer58",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(Cancer58)$"
+      }
+    },
+    {
+      "name": "Tylor.D",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(Tylor)"
+      }
+    }
+  ]
+}

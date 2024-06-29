@@ -1,0 +1,19 @@
+{
+  "trash_id": "55003d4af1141dde4fb7fd08441b1656",
+  "trash_scores": {
+      "default": 0
+  },
+  "name": "German Micro",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "FuN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(FuN)$"
+      }
+    }
+  ]
+}

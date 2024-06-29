@@ -1,0 +1,82 @@
+{
+  "trash_id": "713814343e303cc5fa62c33473fc8b85",
+  "trash_scores": {
+      "default": 1800
+  },
+  "name": "German Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ZeroTwo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "TSCC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TSCC)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TvR)$"
+      }
+    },
+    {
+      "name": "pmHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(pmHD)$"
+      }
+    },
+    {
+      "name": "NIMA4K",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(NIMA4K)$"
+      }
+    },
+    {
+      "name": "TVS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TVS)$"
+      }
+    },
+    {
+      "name": "D02KU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(D02KU)$"
+      }
+    },
+    {
+      "name": "QfG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(QfG)$"
+      }
+    }
+  ]
+}

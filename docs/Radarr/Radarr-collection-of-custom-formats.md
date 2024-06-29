@@ -3147,3 +3147,206 @@ We've made 3 guides related to this.
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## German Audio Version
+
+### German only
+
+??? question "German only - [Click to show/hide]"
+
+    Recognize movies that includes only german audio. Will rename the release.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German and Original Language
+
+??? question "German and Original Language (German.DL) - [Click to show/hide]"
+
+    Recognize movies that includes german audio together with the original language where the indexer provides correct information. Will rename the release. This CF will also match all german DL/MLs once they are downloaded as mediainfo will detect all languages.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German and Original Language (fallback)
+
+??? question "German and Original Language (German.DL) fallback - [Click to show/hide]"
+
+    Recognize movies that includes german audio together with the original language where the indexer does not provide the languages properly.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-fallback.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Original Language
+
+??? question "Original Language - [Click to show/hide]"
+
+    Recognize movies that includes the original language but not the german language.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/original-language.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+---
+
+## German HQ Source Groups
+
+### German Tier 01
+
+??? question "German Tier 01 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+    - HDR/DoVi (Depending on what's offered and often both).
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Tier 02
+
+??? question "German Tier 02 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have the best German audio track to an English release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Tier 03
+
+??? question "German Tier 03 - [Click to show/hide]"
+
+    - WiP
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-tier-03.json' %]][[% endfilter %]]
+    ```
+
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Scene Tier 01
+
+??? question "German Scene Tier 01 - [Click to show/hide]"
+
+    - Known German Scene groups which provide good quality releases.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Scene Tier 02
+
+??? question "German Scene Tier 01 - [Click to show/hide]"
+
+    - Known German Scene groups.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German LQ
+
+<sub>German Low-Quality Releases = German LQ</sub>
+
+??? question "German LQ - [Click to show/hide]"
+
+    A collection of known German Low-Quality groups that are often banned from the top trackers due to their lack of quality.
+
+    !!! note
+
+        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
+        - DeTAG/ReTAG = Detagging or stealing groups.
+        - Other reasons = Banned Release Groups.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    ```
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Micro
+
+<sub>German Micro Releases = German Micro</sub>
+
+??? question "German Micro - [Click to show/hide]"
+
+    A collection of known German groups producing low quality micro-sized releases.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-micro.json' %]][[% endfilter %]]
+    ```
+<sub><sup>[TOP](#index)</sup></sub>

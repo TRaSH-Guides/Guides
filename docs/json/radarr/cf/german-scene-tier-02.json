@@ -1,0 +1,118 @@
+{
+  "trash_id": "c5278d2a661383777784e3fc394434b8",
+  "trash_scores": {
+      "default": 1400
+  },
+  "name": "German Scene Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "AWARDS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(AWARDS)$"
+      }
+    },
+    {
+      "name": "DMPD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(DMPD)$"
+      }
+    },
+    {
+      "name": "EXCiTED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(EXCiTED)$"
+      }
+    },
+    {
+      "name": "iNTENTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(iNTENTiON)$"
+      }
+    },
+    {
+      "name": "JaJunge",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(JaJunge)$"
+      }
+    },
+    {
+      "name": "MGE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MGE)$"
+      }
+    },
+    {
+      "name": "MisFiTS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MisFiTS)$"
+      }
+    },
+    {
+      "name": "RUBBiSH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(RUBBiSH)$"
+      }
+    },
+    {
+      "name": "RWP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(RWP)$"
+      }
+    },
+    {
+      "name": "TMSF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TMSF)$"
+      }
+    },
+    {
+      "name": "TV4A",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TV4A)$"
+      }
+    },
+    {
+      "name": "HAXE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(HAXE)$"
+      }
+    }
+  ]
+}

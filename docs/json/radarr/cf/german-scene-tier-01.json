@@ -1,0 +1,82 @@
+{
+  "trash_id": "f824ee1fe3985ef44cfe275bb6c07f78",
+  "trash_scores": {
+      "default": 1500
+  },
+  "name": "German Scene Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DETAiLS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(DETAiLS)$"
+      }
+    },
+    {
+      "name": "MULTiPLEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MULTiPLEX)$"
+      }
+    },
+    {
+      "name": "WAYNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(WAYNE)$"
+      }
+    },
+    {
+      "name": "WOMBAT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(WOMBAT)$"
+      }
+    },
+    {
+      "name": "SAUERKRAUT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(SAUERKRAUT)$"
+      }
+    },
+    {
+      "name": "WvF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(WvF)$"
+      }
+    },
+    {
+      "name": "4KCONNECTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(4KCONNECTiON)$"
+      }
+    },
+    {
+      "name": "STARS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(STARS)$"
+      }
+    }
+  ]
+}
