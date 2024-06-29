@@ -9,10 +9,10 @@
 
     | Custom Format                                                                                                                             | Score                                                                | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------------------------------| ---------------------------------------------------------------------|----------------------------------------------------- |
-    | [{{ radarr['cf']['german']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#German-only)                                          | {{ radarr['cf']['german']['trash_scores']['default'] }}              |{{ radarr['cf']['german']['trash_id'] }}              |
-    | [{{ radarr['cf']['german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#German-and-Original-Language)                      | {{ radarr['cf']['german-dl']['trash_scores']['default'] }}           |{{ radarr['cf']['german-dl']['trash_id'] }}           |
-    | [{{ radarr['cf']['german-dl-fallback']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#German-and-Original-Language-(fallback))  | {{ radarr['cf']['german-dl-fallback']['trash_scores']['default'] }}  |{{ radarr['cf']['german-dl-fallback']['trash_id'] }}  |
-    | [{{ radarr['cf']['original-language']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#Original-Language)                         | {{ radarr['cf']['original-language']['trash_scores']['default'] }}   |{{ radarr['cf']['original-language']['trash_id'] }}   |
+    | [{{ radarr['cf']['german']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-only)                                          | {{ radarr['cf']['german']['trash_scores']['default'] }}              |{{ radarr['cf']['german']['trash_id'] }}              |
+    | [{{ radarr['cf']['german-dl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-and-original-language)                      | {{ radarr['cf']['german-dl']['trash_scores']['default'] }}           |{{ radarr['cf']['german-dl']['trash_id'] }}           |
+    | [{{ radarr['cf']['german-dl-fallback']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-and-original-language-fallback)    | {{ radarr['cf']['german-dl-fallback']['trash_scores']['default'] }}  |{{ radarr['cf']['german-dl-fallback']['trash_id'] }}  |
+    | [{{ radarr['cf']['original-language']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#original-language)                         | {{ radarr['cf']['original-language']['trash_scores']['default'] }}   |{{ radarr['cf']['original-language']['trash_id'] }}   |
 
    ??? info "Breakdown and Why - [Click to show/hide]"
 
