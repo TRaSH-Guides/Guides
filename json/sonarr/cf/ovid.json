@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": 50
   },
-  "trash_regex": "https://regex101.com/r/hWHpjV/1",
+  "trash_regex": "https://regex101.com/r/hWHpjV/latest",
   "name": "OViD",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

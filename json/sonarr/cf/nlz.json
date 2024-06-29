@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(nlz|NLZiet)\\b"
+        "value": "\\b(nlz(iet)?)\\b"
       }
     },
     {

@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": 50
   },
-  "trash_regex": "https://regex101.com/r/pa5TPZ/1",
+  "trash_regex": "https://regex101.com/r/pa5TPZ/latest",
   "name": "4OD",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
