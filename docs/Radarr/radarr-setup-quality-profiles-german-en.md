@@ -10,7 +10,7 @@ Regarding quality there isn't a best setup, it depends on your setup (hardware d
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get MULTi releases.
+TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German Dual Language releases.
 
 ------
 
@@ -45,6 +45,29 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 ## Examples of Quality Profile
 
 --8<-- "includes/cf/score-attention.md"
+
+------
+
+### Merge Qualities
+
+In order to allow upgrades based on language without release qualities interfering we need to merge all desired qualities into one group.
+
+### Merge the following Qualities together
+
+- Bluray-2160p
+- WEBDL-2160p
+- WEBRip-2160p
+- Bluray-1080p
+- WEBDL-1080p
+- WEBRip-1080p
+- Bluray-720p
+- WEBDL-720p
+- WEBRip-720p
+
+and name it: `Bluray|WEB`
+
+!!! tip "If you are not interested in a particular resolution"
+    If you are not interested in a particular resolution, i.e. 2160p or 720p you don't need to merge those.
 
 ------
 
@@ -106,6 +129,8 @@ If you prefer High Quality HD Encodes (Bluray-720/1080p)
 {! include-markdown "../../includes/cf/radarr-misc.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
