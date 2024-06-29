@@ -4,6 +4,15 @@
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
+      "name": "WKN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(WKN|Waka(nim)?)\\b"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
@@ -28,15 +37,6 @@
       "required": false,
       "fields": {
         "value": 1
-      }
-    },
-    {
-      "name": "WKN",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "\\b(WKN|Waka(nim)?)\\b"
       }
     }
   ]

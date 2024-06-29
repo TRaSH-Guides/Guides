@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": 50
   },
-  "trash_regex": "https://regex101.com/r/A3TRwE/1",
+  "trash_regex": "https://regex101.com/r/A3TRwE/latest",
   "name": "CC",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [

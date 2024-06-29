@@ -1,5 +1,6 @@
 {
   "trash_id": "6185878161f1e2eef9cd0641a0d09eae",
+  "trash_regex": "https://regex101.com/r/iuUsmT/latest",
   "name": "IP",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -9,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(ip|iplayer)\\b"
+        "value": "\\b(ip(layer)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
     },
     {
