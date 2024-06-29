@@ -3275,7 +3275,6 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-tier-03.json' %]][[% endfilter %]]
     ```
 
-
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
