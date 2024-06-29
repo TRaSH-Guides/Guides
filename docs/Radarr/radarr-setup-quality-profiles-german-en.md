@@ -54,19 +54,24 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 There are multiple options how to deal with german audio depending on your liking.
 
-Those should be used together and are there to properly rename your release and prefer German audio over other Languages. Examples:
+??? abstract "Explanation - [Click to show/hide]"
 
-#### Download Original Audio but always upgrade with German Audio independent of quality
+    !!! tip "MULTi definition per indexers"
+
+        Some Indexers in **Radarr** will let you choose which audio is normally included inside a `MULTi` release as an option. You should choose only `Original` and `German` if you decide to use it.
+        This option should only be used for German indexers where you are sure that `MULTi` does include both `Original` and `German` audio. Doing so in more "international" indexers can create to false positive with the German Audio CFs.
+
+Those should be used together and are there to properly rename your release and prefer German audio over other Languages. Examples:
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-#### Download Original Audio but upgrade with German Audio if available in equal quality
+!!! tip "Download Original Audio but upgrade with German Audio if available in equal quality"
 
-Set the Score of German.DL to `300`
+    Set the Score of `{{ radarr['cf']['german-dl']['name'] }}` and `{{ radarr['cf']['german-dl-fallback']['name'] }}` to `300`
 
-#### Download German Audio only
+!!! tip "Download German Audio only"
 
-Set the Score of Original to `-10000`
+    Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
 
 ------
 
