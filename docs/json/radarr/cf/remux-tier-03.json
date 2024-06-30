@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "KRaLiMaRKo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KRaLiMaRKo)$"
+      }
+    },
+    {
       "name": "NTb",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
