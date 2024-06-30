@@ -28,9 +28,18 @@
       "name": "Remux",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 7
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
       }
     }
   ]
