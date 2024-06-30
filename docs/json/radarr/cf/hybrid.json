@@ -25,12 +25,12 @@
       }
     },
     {
-      "name": "Remux",
-      "implementation": "QualityModifierSpecification",
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-        "value": 5
+        "value": 9
       }
     }
   ]
