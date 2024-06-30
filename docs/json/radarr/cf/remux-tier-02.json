@@ -26,15 +26,6 @@
       }
     },
     {
-      "name": "KRaLiMaRKo",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(KRaLiMaRKo)$"
-      }
-    },
-    {
       "name": "NCmt",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
