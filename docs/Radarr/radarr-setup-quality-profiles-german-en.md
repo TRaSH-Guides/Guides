@@ -52,22 +52,22 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 In order to allow upgrades based on language without release qualities interfering we need to merge all desired qualities into one group.
 
-### Merge the following Qualities together
+??? abstract "Merge the following Qualities together - [Click to show/hide]"
 
-- Bluray-2160p
-- WEBDL-2160p
-- WEBRip-2160p
-- Bluray-1080p
-- WEBDL-1080p
-- WEBRip-1080p
-- Bluray-720p
-- WEBDL-720p
-- WEBRip-720p
+    - Bluray-2160p
+    - WEBDL-2160p
+    - WEBRip-2160p
+    - Bluray-1080p
+    - WEBDL-1080p
+    - WEBRip-1080p
+    - Bluray-720p
+    - WEBDL-720p
+    - WEBRip-720p
 
-and name it: `Bluray|WEB`
+    and name it: `Bluray|WEB`
 
-!!! tip "If you are not interested in a particular resolution"
-    If you are not interested in a particular resolution, i.e. 2160p or 720p you don't need to merge those.
+    !!! tip "If you are not interested in a particular resolution"
+        If you are not interested in a particular resolution, i.e. 2160p or 720p you don't need to merge those.
 
 ------
 
