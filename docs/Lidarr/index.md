@@ -6,7 +6,7 @@
 
 !!! info "Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
 
-For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/lidarr){:target="\_blank" rel="noopener noreferrer"}
+For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/lidarr){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
