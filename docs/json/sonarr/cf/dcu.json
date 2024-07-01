@@ -12,7 +12,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(dcu|DC[ ._-]Universe)\\b"
+        "value": "\\b(dcu|DC Universe)\\b"
       }
     },
     {
