@@ -12,6 +12,6 @@
     Breakdown and Why
 
     - **{{ radarr['cf']['german-dl']['name'] }}:** This is a custom format to help Radarr recognize German Dual Language audio releases. This custom format will rename your file with `German.DL`.
-    - **{{ radarr['cf']['german-dl-fallback']['name'] }}:** This is a custom format to help Radarr recognize release German Dual Language audio where the language is not correctly set by the indexer.
+    - **{{ radarr['cf']['german-dl-fallback']['name'] }}:** This is a custom format to help Radarr recognize release German Dual Language audio where the indexer doesn't recognize `German.DL` tag in the release name.
     - **{{ radarr['cf']['german']['name'] }}:** This is a custom format to help Radarr recognize German audio releases which do not contain the original language track.
-    - **{{ radarr['cf']['original-language']['name'] }}:** This is a custom format to help Radarr recognize releases containing the original language track but not the german audio.
+    - **{{ radarr['cf']['original-language']['name'] }}:** This is a custom format to help Radarr recognize releases containing the original language track but not the German audio.

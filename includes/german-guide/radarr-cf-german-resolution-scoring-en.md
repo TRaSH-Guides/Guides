@@ -2,6 +2,10 @@
 
     | Custom Format                                                                                                                |                                  Score                                     | Trash ID                                |
     | ---------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------: | --------------------------------------- |
-    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json)   | {{ radarr['cf']['720p']['trash_scores']['default'] }}                      | {{ radarr['cf']['720p']['trash_id'] }}  |
-    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/1080p.json) | {{ radarr['cf']['1080p']['trash_scores']['default'] }}                     | {{ radarr['cf']['1080p']['trash_id'] }} |
-    | [{{ radarr['cf']['2160p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/2160p.json) | {{ radarr['cf']['2160p']['trash_scores']['default'] }}                     | {{ radarr['cf']['2160p']['trash_id'] }} |
+    | [{{ radarr['cf']['720p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json)   | :warning: 0                      | {{ radarr['cf']['720p']['trash_id'] }}  |
+    | [{{ radarr['cf']['1080p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/1080p.json) | :warning: 290                    | {{ radarr['cf']['1080p']['trash_id'] }} |
+    | [{{ radarr['cf']['2160p']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/2160p.json) | :warning: 300                    | {{ radarr['cf']['2160p']['trash_id'] }} |
+
+    !!! tip
+
+        :warning:
