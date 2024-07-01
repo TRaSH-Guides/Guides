@@ -1,6 +1,6 @@
 {
   "trash_id": "c3492a26af412e385404eade438ec51c",
-  "trash_regex": "https://regex101.com/r/WzmpCx/latest",
+  "trash_regex": "https://regex101.com/r/WzmpCx/1",
   "name": "ITVX",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(ITV(X)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+        "value": "\\bITV(X)?\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
     },
     {
