@@ -120,7 +120,6 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 #### Bluray + WEB
 
-
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
