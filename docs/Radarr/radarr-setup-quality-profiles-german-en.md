@@ -2,7 +2,7 @@
 
 *aka How to setup Custom Formats (German)*<br><br>
 
-!!! note "This guide is created and maintained by *who will maintain it?*"
+!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious)"
 
 So what is the best way to set up the Custom Formats and which one to use with which scores to get German and English Audio?
 
@@ -165,7 +165,8 @@ TRaSH provides great guides and explanations about them at the following links:
 
 ## Acknowledgements
 
-- A big thanks to all the people that helped us to test those profiles and formats (and continue to do so).
+- A special thanks to [Jones](https://github.com/PCJones), Keewee, SceneNZBs and the awesome community over at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the creation of the guide.
 - [TRaSH](https://trash-guides.info/), for granting us a small space on his guide for this, his knowledge, and his friendliness.
+- and to all the people that helped us to test those profiles and formats (and continue to do so).
 
 --8<-- "includes/support.md"
