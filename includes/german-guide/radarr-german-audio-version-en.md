@@ -1,4 +1,4 @@
-??? abstract "Download Original Audio but always upgrade with German Audio - [Click to show/hide]"
+??? abstract "Download Original Audio but ^^always^^ upgrade with German Audio - [Click to show/hide]"
 
     | Custom Format                                                                                                                             | Score                                                                | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------------------------------| ---------------------------------------------------------------------|----------------------------------------------------- |

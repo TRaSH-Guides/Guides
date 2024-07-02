@@ -66,7 +66,11 @@ In order to allow upgrades based on language without release qualities interferi
 
     and name it: `Bluray|WEB`
 
-    !!! tip "If you are not interested in a particular resolution"
+    !!! warning "Make sure you don't check the BR-DISK."
+
+    {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+    !!! tip "Tip"
         If you are not interested in a particular resolution, i.e. 2160p or 720p you don't need to merge those.
 
 ------
@@ -77,20 +81,20 @@ There are multiple options how to deal with german audio depending on your likin
 
 ??? abstract "Explanation - [Click to show/hide]"
 
-    !!! tip "MULTi definition per indexers"
+    !!! tip "Multi-Language definition per indexers"
 
-        Some Indexers in **Radarr** will let you choose which audio is normally included inside a `MULTi` release as an option. You should choose only `Original` and `German` if you decide to use it.
-        This option should only be used for German indexers where you are sure that `MULTi` does include both `Original` and `German` audio. Doing so in more "international" indexers can create to false positive with the German Audio CFs.
+        Some Indexers in **Radarr** will let you choose which audio is normally included inside a `Multi-Language` release as an option. You should choose only `Original` and `German` if you decide to use it.
+        This option should only be used for German indexers where you are sure that `Multi-Language` does include both `Original` and `German` audio. Doing so in more "international" indexers can create to false positive with the German Audio CFs.
 
 Those should be used together and are there to properly rename your release and prefer German audio over other Languages. Examples:
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-!!! tip "Download Original Audio but upgrade with German Audio if available in equal quality"
+!!! tip "Download Original Audio but upgrade with German Audio ^^only^^ if available in similar quality"
 
     Set the Score of `{{ radarr['cf']['german-dl']['name'] }}` and `{{ radarr['cf']['german-dl-fallback']['name'] }}` to `300`
 
-!!! tip "Download German Audio only"
+!!! tip "Download German Audio ^^only^^"
 
     Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
 
@@ -114,53 +118,8 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 ------
 
-#### HD Bluray + WEB
+#### Bluray + WEB
 
-If you prefer High Quality HD Encodes (Bluray-720/1080p)
-
-- *Size: 6-15 GB for a Bluray-1080p depending on the running time.*
-
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-`Audio Advanced` Custom Formats are not included to the encodes profile, as you will hardly find HD audio with HD Bluray Encodes. With HD Bluray Encodes it is suggested to go for quality. If you also want HD audio formats you should go for the Remuxes or UHD Encodes.
-
-Use the following main settings in your profile.
-
-![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
-
-!!! warning "Make sure you don't check the BR-DISK."
-
-The reason why WEB-DL 720p is not selected is because you will hardly find any releases that aren't done as 1080p WEB-DL.
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
-    - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-------
-
-#### UHD Bluray + WEB
-
-!!! warning TODO
-
-If you prefer High Quality UHD Encodes (Bluray-2160p)
-
-- *Size: 20-60 GB for a Bluray-2160p depending on the running time.*
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
@@ -178,106 +137,20 @@ If you prefer High Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
+{! include-markdown "../../includes/german-guide/radarr-cf-german-source-scoring-en.md" !}
+
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 Use the following main settings in your profile.
 
-![UHD Bluray + WEB](images/french-qp-uhd-bluray-webdl.png)
-
-!!! warning "Make sure you don't check the BR-DISK."
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+![Bluray + WEB](images/german-qp-bluray-webdl.png)
 
 ??? abstract "Workflow Logic - [Click to show/hide]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
-    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
-    - When the Bluray-2160p is released it will upgrade to the Bluray-2160p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-------
-
-#### Remux + WEB 1080p
-
-!!! warning TODO
-
-If you prefer 1080p Remuxes (Remux-1080p)
-
-- *Size: 20-40 GB for a Remux-1080p depending on the running time.*
-
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-Use the following main settings in your profile.
-
-![Remux + WEB 1080p](images/french-qp-remux-webdl-1080p.png)
-
-!!! warning "Make sure you don't check the BR-DISK."
-
-The reason why I didn't select the WEB-DL 720p is because you will hardly find any releases that aren't done as 1080p WEB-DL.
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
-    - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-------
-
-#### Remux + WEB 2160p
-
-!!! warning TODO
-
-If you prefer 2160p Remuxes (Remux-2160p)
-
-- *Size: 40-100 GB for a Remux-2160p depending on the running time.*
-
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-bluray-web-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-Use the following main settings in your profile.
-
-![Remux + WEB 2160p](images/french-qp-remux-webdl-2160p.png)
-
-!!! warning "Make sure you don't check the BR-DISK."
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
-    - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.
+    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
+    - When a `German` or `German.DL` version is released it will upgrade to that version.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
 ------
