@@ -1,0 +1,19 @@
+{
+  "trash_id": "e08b56f00d69cde33da150001845dde9",
+  "trash_scores": {
+      "default": 1000
+  },
+  "name": "German Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "WOTT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(WOTT)$"
+      }
+    }
+  ]
+}
