@@ -44,7 +44,7 @@ jobs:
         run: mkdocs build
 
   deploy:
-    if: github.event.workflow_run.event == 'push' && contains(fromJson('["master", "main"]'), github.event.workflow_run.head_branch)
+    if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
     needs: build
     name: Deploy docs
     runs-on: ubuntu-latest
