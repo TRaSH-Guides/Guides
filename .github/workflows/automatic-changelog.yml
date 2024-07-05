@@ -1,0 +1,60 @@
+name: Update Changelog
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get last completed workflow run date and time
+        run: |
+          repo="${{ github.repository }}"
+          workflow_id="${{ github.workflow }}"
+          token="${{ secrets.GITHUB_TOKEN }}"
+          api_url="https://api.github.com/repos/$repo/actions/workflows/$workflow_id/runs?status=completed&per_page=1"
+          response=$(curl -s -H "Authorization: token $token" "$api_url")
+          last_run_time=$(echo "$response" | jq -r '.workflow_runs[0].updated_at')
+          echo "Last completed run time: $last_run_time"
+          echo "LAST_RUN_TIME=$last_run_time" >> $GITHUB_ENV
+
+      - name: Run git log
+        run: |
+          log=$(git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|update)(\(.*?\))?:' --since="${{ env.LAST_RUN_TIME }}" --pretty="%s")
+          echo "LOG_OUTPUT=$log" >> $GITHUB_ENV
+
+      - name: Check if there are new commits
+        run: |
+          if [ -z "${{ env.LOG_OUTPUT }}" ]; then
+            echo "No new commits since the last run."
+            echo "NEW_COMMITS=false" >> $GITHUB_ENV
+          else
+            echo "New commits found."
+            echo "NEW_COMMITS=true" >> $GITHUB_ENV
+          fi
+
+      - name: Run update script
+        if: env.NEW_COMMITS == 'true'
+        run: |
+          chmod +x .github/scripts/update-changelog.sh
+          .github/scripts/update-changelog.sh "$LOG_OUTPUT"
+
+      - name: Commit and push if it's not up to date
+        if: env.NEW_COMMITS == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git diff
+          git commit -am "chore(changelog): Update updates.txt" || exit 0
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master --force
