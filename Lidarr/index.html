@@ -12,13 +12,13 @@
         <meta name="author" content="TRaSH">
       
       
-        <link rel="canonical" href="https://trash-guides.info/Downloaders/">
+        <link rel="canonical" href="https://trash-guides.info/Lidarr/">
       
       
-        <link rel="prev" href="../Bazarr/Tips/Bazarr-suggested-scoring/">
+        <link rel="prev" href="../Prowlarr/prowlarr-setup-limited-api/">
       
       
-        <link rel="next" href="NZBGet/Basic-Setup/">
+        <link rel="next" href="../Bazarr/">
       
       
       <link rel="icon" href="../img/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Home - TRaSH Guides</title>
+        <title>Lidarr - TRaSH Guides</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#download-clients" class="md-skip">
+        <a href="#lidarr" class="md-skip">
           Skip to content
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Lidarr
             
           </span>
         </div>
@@ -316,11 +316,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Lidarr/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Lidarr
@@ -352,13 +354,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../Downloaders/" class="md-tabs__link">
           
   
   Downloaders
@@ -1425,23 +1425,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1452,7 +1457,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Lidarr
@@ -1463,10 +1468,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Lidarr/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lidarr
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1475,6 +1500,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#master" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#develop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Develop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nightly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nightly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-update-lidarr" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I update Lidarr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1687,28 +1774,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1719,7 +1801,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Downloaders
@@ -1730,30 +1812,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Downloaders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1762,44 +1824,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#usenet-clients" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usenet Clients
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#torrent-clients" class="md-nav__link">
-    <span class="md-ellipsis">
-      Torrent Clients
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1850,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="NZBGet/Basic-Setup/" class="md-nav__link">
+      <a href="../Downloaders/NZBGet/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1871,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="NZBGet/Paths-and-Categories/" class="md-nav__link">
+      <a href="../Downloaders/NZBGet/Paths-and-Categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1959,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SABnzbd/Basic-Setup/" class="md-nav__link">
+      <a href="../Downloaders/SABnzbd/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1980,7 +2004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SABnzbd/Paths-and-Categories/" class="md-nav__link">
+      <a href="../Downloaders/SABnzbd/Paths-and-Categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2068,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/Basic-Setup/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2089,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/Paths/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/Paths/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2110,7 +2134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/How-to-add-categories/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/How-to-add-categories/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2131,7 +2155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/Port-forwarding/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/Port-forwarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2152,7 +2176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/3rd-party-tools/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/3rd-party-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2211,7 +2235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/Tips/How-to-run-the-unRaid-mover-for-qBittorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2232,7 +2256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="qBittorrent/Tips/Themes/" class="md-nav__link">
+      <a href="../Downloaders/qBittorrent/Tips/Themes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2307,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2328,7 +2352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Basic-Setup/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2349,7 +2373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Using-Labels/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Using-Labels/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2370,7 +2394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Port-Forwarding/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Port-Forwarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2429,7 +2453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Tips/Plugins/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Tips/Plugins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2450,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Tips/Thin-Client/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Tips/Thin-Client/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2471,7 +2495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Deluge/Tips/Unraid-Mover/" class="md-nav__link">
+      <a href="../Downloaders/Deluge/Tips/Unraid-Mover/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2546,7 +2570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ruTorrent/" class="md-nav__link">
+      <a href="../Downloaders/ruTorrent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2567,7 +2591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
+      <a href="../Downloaders/ruTorrent/ruTorrent-Basic-Setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3331,20 +3355,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usenet-clients" class="md-nav__link">
+  <a href="#master" class="md-nav__link">
     <span class="md-ellipsis">
-      Usenet Clients
+      Master
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#torrent-clients" class="md-nav__link">
+  <a href="#develop" class="md-nav__link">
     <span class="md-ellipsis">
-      Torrent Clients
+      Develop
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nightly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Nightly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-update-lidarr" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I update Lidarr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3364,7 +3412,7 @@
                   
 
   
-    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Downloaders/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/edit/master/docs/Lidarr/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3373,30 +3421,42 @@
     
       
     
-    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Downloaders/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/TRaSH-Guides/Guides/raw/master/docs/Lidarr/index.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="download-clients">Download Clients<a class="headerlink" href="#download-clients" title="Permanent link"></a></h1>
-<p>Here you will find Guides for several Download Clients.</p>
-<h2 id="usenet-clients">Usenet Clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h2>
-<p><a href="/Downloaders/NZBGet/">NZBGet</a></p>
-<div class="admonition note">
-<p class="admonition-title">NZBGet development has been picked up again by new developers over at <a href="https://github.com/nzbgetcom/nzbget" rel="noopener noreferrer" target="_blank">github</a>!</p>
+<h1 id="lidarr">Lidarr<a class="headerlink" href="#lidarr" title="Permanent link"></a></h1>
+<div class="admonition failure">
+<p class="admonition-title">TRaSH Guides do not have any guides related to Lidarr.<br>We suggest that you use <a href="https://wiki.servarr.com/lidarr/community-guide" rel="noopener noreferrer" target="_blank" title="Like TRaSH Guides, but Davo for Lidarr">Davo's Community Lidarr Guide</a></p>
 </div>
-<p><img alt="version" class="off-glb" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fnzbget%2Frelease%2FVERSION.json&amp;label=Latest%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
-<p><a href="/Downloaders/SABnzbd/">SABnzbd</a></p>
-<p><img alt="version" class="off-glb" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fsabnzbd%2Frelease%2FVERSION.json&amp;label=Latest%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
-<h2 id="torrent-clients">Torrent Clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h2>
-<p><a href="/Downloaders/qBittorrent/">qBittorrent</a></p>
-<p><img alt="version" class="off-glb" src="https://img.shields.io/badge/dynamic/json?query=%24.version&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2Fhotio%2Fqbittorrent%2Frelease%2FVERSION.json&amp;label=Latest%20Version&amp;style=for-the-badge&amp;color=4051B5" /></p>
-<p><a href="/Downloaders/Deluge/">Deluge</a></p>
-<p><img alt="version" class="off-glb" src="https://img.shields.io/github/release/linuxserver/docker-deluge.svg?color=4051B5&amp;style=for-the-badge&amp;logo=github" /></p>
-<p><a href="/Downloaders/ruTorrent/">ruTorrent</a></p>
-<p><img alt="version" class="off-glb" src="https://img.shields.io/github/v/release/Novik/ruTorrent.svg?color=4051B5&amp;style=for-the-badge&amp;logo=github" /></p>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.</p>
+</div>
+<p>For Installation and Quick Start Guide please check the official <a href="https://wiki.servarr.com/lidarr" rel="noopener noreferrer" target="_blank">WikiArr</a></p>
+<hr />
+<h2 id="master">Master<a class="headerlink" href="#master" title="Permanent link"></a></h2>
+<p><img alt="Current Master/Stable" class="off-glb" src="https://img.shields.io/badge/dynamic/json?color=4051B5&amp;style=for-the-badge&amp;label=Master&amp;query=%24%5B0%5D.version&amp;url=https://lidarr.servarr.com/v1/update/master/changes" /></p>
+<p>(Default/Stable): It has been tested by users on the develop and nightly branches and it’s not known to have any major issues. This version will receive updates approximately monthly. On GitHub, this is the <code>master</code> branch.</p>
+<h2 id="develop">Develop<a class="headerlink" href="#develop" title="Permanent link"></a></h2>
+<p><img alt="Current Develop/Beta" class="off-glb" src="https://img.shields.io/badge/dynamic/json?color=4051B5&amp;style=for-the-badge&amp;label=Develop&amp;query=%24%5B0%5D.version&amp;url=https://lidarr.servarr.com/v1/update/develop/changes" /></p>
+<p>(Beta): This is the testing edge. Released after being tested in the nightly branch to ensure no immediate issues. New features and bug fixes are released here first after nightly. It can be considered semi-stable but is still <code>beta</code>. This version will receive updates either weekly or biweekly depending on development.</p>
+<div class="admonition warning">
+<p class="admonition-title"><strong>Warning: You may not be able to go back to <code>master</code> after switching to this branch.</strong> On GitHub, this is a snapshot of the <code>develop</code> branch at a specific point in time.</p>
+</div>
+<h2 id="nightly">Nightly<a class="headerlink" href="#nightly" title="Permanent link"></a></h2>
+<p><img alt="Current Nightly/Unstable" class="off-glb" src="https://img.shields.io/badge/dynamic/json?color=4051B5&amp;style=for-the-badge&amp;label=Nightly&amp;query=%24%5B0%5D.version&amp;url=https://lidarr.servarr.com/v1/update/nightly/changes" /></p>
+<p>(Alpha/Unstable) : This is the bleeding edge. It is released as soon as the code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self-investigation are expected in this branch.</p>
+<p><strong><em>Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update.</em></strong></p>
+<p>This version is updated immediately.</p>
+<div class="admonition danger">
+<p class="admonition-title"><strong>Warning: You may not be able to go back to <code>master</code> after switching to this branch.</strong> On GitHub, this is the <code>develop</code> branch.</p>
+</div>
+<h3 id="how-do-i-update-lidarr">How do I update Lidarr<a class="headerlink" href="#how-do-i-update-lidarr" title="Permanent link"></a></h3>
+<p>External link to the official <a href="https://wiki.servarr.com/en/lidarr/faq#how-do-i-update-lidarr" rel="noopener noreferrer" target="_blank">WikiArr</a>.</p>
 
 
 
@@ -3419,7 +3479,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 14, 2024 19:16:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 5, 2024 02:56:22</span>
   </span>
 
     
@@ -3429,7 +3489,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 2, 2021 19:47:25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 24, 2020 16:40:53</span>
   </span>
 
     
