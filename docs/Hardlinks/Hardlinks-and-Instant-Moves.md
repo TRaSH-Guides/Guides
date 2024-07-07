@@ -61,7 +61,7 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 ??? question "**Hardlinks limitations** - [Click to show/hide]"
 
     - You **CAN'T** create hard links for directories :bangbang:
-    - You **CAN'T**  hardlink across separate file systems, partitions, or mounts :bangbang:
+    - You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
     - Some file systems, such as exFAT, are known not to support hard links and should be avoided (double-check if you are unsure!)
 
 ### What are the Starr Apps
