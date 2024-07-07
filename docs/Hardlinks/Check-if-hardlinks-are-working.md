@@ -9,16 +9,14 @@ _All methods require you to login to your terminal with PuTTY or similar softwar
 !!! warning
 
     - You **CAN'T** create hard links for directories :bangbang:
-    - You **CAN'T** cross file systems :bangbang:
-    - Some file systems are known not to support hard links, like exFAT.
-
-        (exFAT should be avoided in any way possible.)
+    - You **CAN'T**  hardlink across separate file systems, partitions, or mounts :bangbang:
+    - Some file systems, such as exFAT, are known not to support hard links and should be avoided (double-check if you are unsure!)
 
 ---
 
 ## Usenet
 
-!!! info "If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete."
+!!! info "If you are using Usenet, these examples won't work due to making use of instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete."
 
 ## Method 1: Using ls
 

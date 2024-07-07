@@ -36,13 +36,13 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 
         This means:
 
-        - You can delete any "copy" w/o impacting the others.
+        - You can delete any "copy" without impacting other instances (hardlinks) of it.
 
-            Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
+            Your download client can remove its "copy" without impacting the library "copy". The library "copy" can also be removed by Plex, Sonarr/Radarr, or manually without impacting your download client's "copy".
 
-        - Space is only regained when all "copies" are deleted.
+        - Space is only reclaimed once all "copies" of data that are hardlinked are deleted.
 
-        - Modifying the file will impact all "copies".
+        - Modifying any copy of a hardlinked file will impact all "copies".
 
             For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
 
@@ -56,15 +56,13 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 
     A real move and not a copy file from download folder to media folder and then delete file from download folder.
 
-### Hardlinks limitations
+### Hardlinks Limitations
 
 ??? question "**Hardlinks limitations** - [Click to show/hide]"
 
     - You **CAN'T** create hard links for directories :bangbang:
-    - You **CAN'T** cross file systems :bangbang:
-    - Some file systems are known not to support hard links, like exFAT.
-
-        (exFAT should be avoided in any way possible.)
+    - You **CAN'T**  hardlink across separate file systems, partitions, or mounts :bangbang:
+    - Some file systems, such as exFAT, are known not to support hard links and should be avoided (double-check if you are unsure!)
 
 ### What are the Starr Apps
 
