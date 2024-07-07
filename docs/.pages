@@ -3,6 +3,7 @@ nav:
   - Radarr
   - Sonarr
   - Prowlarr
+  - Lidarr
   - Bazarr
   - Downloaders
   - Plex
