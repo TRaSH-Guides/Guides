@@ -41,7 +41,6 @@ jobs:
       - name: Run update script
         if: env.NEW_COMMITS == 'true'
         run: |
-          chmod +x .github/scripts/update-changelog.sh
           .github/scripts/update-changelog.sh log_output.txt
 
       - name: Commit and push if it's not up to date
