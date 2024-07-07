@@ -14,39 +14,34 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.6
+        with:
+          fetch-depth: 0
 
-      - name: Get last completed workflow run date and time
+      - name: Get last edit time of docs/updates.txt
         run: |
-          repo="${{ github.repository }}"
-          workflow_id="${{ github.workflow }}"
-          token="${{ secrets.GITHUB_TOKEN }}"
-          api_url="https://api.github.com/repos/$repo/actions/workflows/$workflow_id/runs?status=completed&per_page=1"
-          response=$(curl -s -H "Authorization: token $token" "$api_url")
-          last_run_time=$(echo "$response" | jq -r '.workflow_runs[0].updated_at')
-          echo "Last completed run time: $last_run_time"
-          echo "LAST_RUN_TIME=$last_run_time" >> $GITHUB_ENV
+          last_edit_time=$(git log -1 --pretty="format:%cI" docs/updates.txt)
+          echo "Last edit time: $last_edit_time"
+          echo "LAST_EDIT_TIME=$last_edit_time" >> $GITHUB_ENV
 
       - name: Run git log
         run: |
-          log=$(git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|update)(\(.*?\))?:' --since="${{ env.LAST_RUN_TIME }}" --pretty="%s")
-          echo "LOG_OUTPUT=$log" >> $GITHUB_ENV
+          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|update)(\(.*?\))?:' --since="${{ env.LAST_EDIT_TIME }}" --pretty="%s" > log_output.txt
 
       - name: Check if there are new commits
         run: |
-          if [ -z "${{ env.LOG_OUTPUT }}" ]; then
-            echo "No new commits since the last run."
-            echo "NEW_COMMITS=false" >> $GITHUB_ENV
-          else
-            echo "New commits found."
+          if [ -s log_output.txt ]; then
             echo "NEW_COMMITS=true" >> $GITHUB_ENV
+          else
+            echo "No new commits since the last update of docs/updates.txt."
+            echo "NEW_COMMITS=false" >> $GITHUB_ENV
           fi
 
       - name: Run update script
         if: env.NEW_COMMITS == 'true'
         run: |
           chmod +x .github/scripts/update-changelog.sh
-          .github/scripts/update-changelog.sh "$LOG_OUTPUT"
+          .github/scripts/update-changelog.sh log_output.txt
 
       - name: Commit and push if it's not up to date
         if: env.NEW_COMMITS == 'true'
