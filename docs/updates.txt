@@ -1,3 +1,22 @@
+# 2024-07-07 14:38
+- [fix(auto-changelog): add token to checkout](https://github.com/TRaSH-Guides/Guides/pull/)
+- [fix(auto-changelog): fix git push command](https://github.com/TRaSH-Guides/Guides/pull/)
+- [feat(ci): automatic changelog](https://github.com/TRaSH-Guides/Guides/pull/2005)
+- [feat(guides): Add Lidarr redirect to Davo's Community Lidarr Guide](https://github.com/TRaSH-Guides/Guides/pull/1994)
+- [fix(Revert): "chore(starr): Improve streaming service CFs"](https://github.com/TRaSH-Guides/Guides/pull/2000)
+- [fix(Revert): "fix(starr): Moved webdl and webrip into Amazon regex to prevent incorrect matches"](https://github.com/TRaSH-Guides/Guides/pull/1999)
+- [feat(guides): Move KRaLiMaRKo to Radarr Remux Tier 03 and expand Hybrid CF matching to include Bluray qualities](https://github.com/TRaSH-Guides/Guides/pull/1998)
+- [chore(starr): Improve streaming service CFs](https://github.com/TRaSH-Guides/Guides/pull/1992)
+- [fix(radarr-sonarr): Replace sonarr and radarr anime CF image + add AV1 to anime-radarr](https://github.com/TRaSH-Guides/Guides/pull/1991)
+- [fix(starr): Moved webdl and webrip into Amazon regex to prevent incorrect matches](https://github.com/TRaSH-Guides/Guides/pull/1950)
+- [update(general-proofing): clarify language and grammar across all guides](https://github.com/TRaSH-Guides/Guides/pull/1984)
+- [fix(anime): Update language regarding scores to use](https://github.com/TRaSH-Guides/Guides/pull/1990)
+- [fix(sonarr-adnime): fix broken naming scheme link](https://github.com/TRaSH-Guides/Guides/pull/)
+- [style(discord-shields): restore discord shields](https://github.com/TRaSH-Guides/Guides/pull/1986)
+- [style(annotations): match and use question-mark svg](https://github.com/TRaSH-Guides/Guides/pull/1985)
+- [chore(sync_tools): Revert "fix(sync_tools): Hotfix to re-add `default:3` and `default:4` Sonarr episode naming options"](https://github.com/TRaSH-Guides/Guides/pull/1982)
+- [feat(guides): Add hallowed to (U)HD Bluray Tier 03 and create new `hallowed` Radarr custom format](https://github.com/TRaSH-Guides/Guides/pull/1978)
+
 # 2024-06-15 22:00
 - [feat(guides): Add hallowed to (U)HD Bluray Tier 03 and create new hallowed Radarr custom format (#1978)](https://github.com/TRaSH-Guides/Guides/pull/1978)
 
