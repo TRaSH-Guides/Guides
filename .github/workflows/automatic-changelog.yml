@@ -1,4 +1,4 @@
-name: Update Changelog
+name: Update changelog
 
 on:
   schedule:
