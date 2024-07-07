@@ -2,7 +2,7 @@ name: Update changelog
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -52,4 +52,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git diff
           git commit -am "chore(changelog): Update updates.txt" || exit 0
-          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master  --force
