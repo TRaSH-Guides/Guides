@@ -8,21 +8,17 @@ _All methods require you to login to your terminal with PuTTY or similar softwar
 
 !!! warning
 
-    You can't create hard links for directories :bangbang:
+    - You **CAN'T** create hard links for directories :bangbang:
+    - You **CAN'T** cross file systems :bangbang:
+    - Some file systems are known not to support hard links, like exFAT.
 
-    You can't cross file systems :bangbang:
+        (exFAT should be avoided in any way possible.)
 
 ---
 
 ## Usenet
 
-!!! note ""
-
-    If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.
-
-    Still want to test if it works?
-
-    Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.
+!!! info "If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete."
 
 ## Method 1: Using ls
 
@@ -53,6 +49,8 @@ You will get 2 results you can use to compare several things.
 
 1. Links: Everything above 1 means it's hardlinked
 1. Inode: if the numbers match, you know the files are hardlinked
+
+---
 
 ## Method 3: Using Inode copies
 

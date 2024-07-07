@@ -36,29 +36,35 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 
         This means:
 
-            - You can delete any "copy" w/o impacting the others.
+        - You can delete any "copy" w/o impacting the others.
 
-                Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
+            Your download client can remove it's "copy" w/o impacting the library "copy". The library "copy" can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client "copy".
 
-            - Space is only regained when all "copies" are deleted.
+        - Space is only regained when all "copies" are deleted.
 
-            - Modifying the file will impact all "copies".
+        - Modifying the file will impact all "copies".
 
-                For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
+            For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
-        !!! warning
-
-            You can't create hard links for directories :bangbang:
-
-            You can't cross file systems :bangbang:
+    !!! warning "Don't forget to read the [Hardlinks limitations](/Hardlinks/Hardlinks-and-Instant-Moves/#hardlinks-limitations)"
 
 ### What are Instant Moves (Atomic Moves)
 
 ??? question "**What are Instant Moves (Atomic Moves)?** - [Click to show/hide]"
 
     A real move and not a copy file from download folder to media folder and then delete file from download folder.
+
+### Hardlinks limitations
+
+??? question "**Hardlinks limitations** - [Click to show/hide]"
+
+    - You **CAN'T** create hard links for directories :bangbang:
+    - You **CAN'T** cross file systems :bangbang:
+    - Some file systems are known not to support hard links, like exFAT.
+
+        (exFAT should be avoided in any way possible.)
 
 ### What are the Starr Apps
 
