@@ -77,7 +77,7 @@ In order to allow upgrades based on language without release qualities interferi
 
 ### German Audio
 
-There are multiple options how to deal with german audio depending on your liking.
+There are multiple options on how to deal with german audio depending on your liking.
 
 ??? abstract "Explanation - [Click to show/hide]"
 
@@ -97,6 +97,11 @@ Those should be used together and are there to properly rename your release and 
 !!! tip "Download German Audio ^^only^^"
 
     Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
+
+!!! warning "Releases where German is the original language"
+
+    Due to a limitation releases where German is the original language will be identified as `German.DL` even though they might not contain another language.
+    The only impact is that the scores of those releases will be higher by `1000` than they are supposed to be.
 
 ------
 

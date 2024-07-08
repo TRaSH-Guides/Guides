@@ -176,6 +176,15 @@
       "fields": {
         "value": "(HAXE)$"
       }
+    },
+    {
+      "name": "muhHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(muhHD)$"
+      }
     }
   ]
 }
