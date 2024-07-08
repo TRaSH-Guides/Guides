@@ -38,4 +38,4 @@ jobs:
           git config --global user.name "GitHub Actions"
           git diff
           git commit -am "chore(contributors): Update CONTRIBUTORS.md" || exit 0
-          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master --force
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master
