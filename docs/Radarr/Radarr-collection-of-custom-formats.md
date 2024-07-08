@@ -3279,32 +3279,16 @@ We've made 3 guides related to this.
 
 ---
 
-### German Scene Tier 01
+### German Scene
 
-??? question "German Scene Tier 01 - [Click to show/hide]"
-
-    - Known German Scene groups which provide good quality releases.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene-tier-01.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German Scene Tier 02
-
-??? question "German Scene Tier 01 - [Click to show/hide]"
+??? question "German Scene - [Click to show/hide]"
 
     - Known German Scene groups.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene-tier-02.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

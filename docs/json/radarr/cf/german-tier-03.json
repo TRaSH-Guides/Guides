@@ -7,12 +7,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "WOTT",
+      "name": "RobertDeNiro",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(WOTT)$"
+        "value": "(RobertDeNiro)$"
       }
     }
   ]
