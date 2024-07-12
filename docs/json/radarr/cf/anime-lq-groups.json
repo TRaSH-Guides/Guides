@@ -520,12 +520,12 @@
       }
     },
     {
-      "name": "KazeTV",
+      "name": "KAZETV",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KazeTV)\\b"
+        "value": "\\b(KAZETV)\\b"
       }
     },
     {
