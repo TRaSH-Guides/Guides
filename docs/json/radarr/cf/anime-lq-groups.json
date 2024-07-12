@@ -520,15 +520,6 @@
       }
     },
     {
-      "name": "KAZETV",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(KAZETV)\\b"
-      }
-    },
-    {
       "name": "KEKMASTERS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
