@@ -340,6 +340,15 @@
       }
     },
     {
+      "name": "Emmid",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Emmid\\]|-Emmid\\b"
+      }
+    },
+    {
       "name": "ExREN",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -493,12 +502,30 @@
       }
     },
     {
+      "name": "Kallango",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Kallango\\]|-Kallango\\b"
+      }
+    },
+    {
       "name": "Kanjouteki",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(Kanjouteki)\\b"
+      }
+    },
+    {
+      "name": "KazeTV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KazeTV)\\b"
       }
     },
     {
@@ -670,6 +697,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Modders[ .-]?Bay)\\b"
+      }
+    },
+    {
+      "name": "Mozzi2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Mozzi2)\\b"
       }
     },
     {
@@ -988,6 +1024,15 @@
       }
     },
     {
+      "name": "Sokudo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Sokudo\\]|-Sokudo\\b"
+      }
+    },
+    {
       "name": "SRW",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -1084,6 +1129,15 @@
       "required": false,
       "fields": {
         "value": "\\[UNBIASED\\]|-UNBIASED\\b"
+      }
+    },
+    {
+      "name": "uP",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[uP\\]"
       }
     },
     {
