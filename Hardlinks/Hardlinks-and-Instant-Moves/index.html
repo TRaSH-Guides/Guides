@@ -3032,6 +3032,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#hardlinks-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardlinks Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#what-are-the-starr-apps" class="md-nav__link">
     <span class="md-ellipsis">
       What are the Starr Apps
@@ -3401,6 +3410,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#hardlinks-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardlinks Limitations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#what-are-the-starr-apps" class="md-nav__link">
     <span class="md-ellipsis">
       What are the Starr Apps
@@ -3450,17 +3468,17 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link"></a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you’re wondering why hard links aren’t working or why a simple move is taking far longer than it should.</p>
+<p>If you’re wondering why hardlinks aren’t working or why a simple move is taking far longer than it should.</p>
 <p>Here we will try to explain it.</p>
 </div>
-<p>This Guide exist out of 4 Sections</p>
+<p>This guide consists of 4 sections.</p>
 <ol>
 <li>This page with a short description.</li>
 <li><a href="/Hardlinks/How-to-setup-for/">How to set up for</a> your installation method.</li>
 <li><a href="/Hardlinks/Examples/">Examples</a> what you should use for your path settings in your used applications.</li>
 <li><a href="/Hardlinks/Check-if-hardlinks-are-working/">Check if hardlinks are working</a></li>
 </ol>
-<p>So you want one of the following ?</p>
+<p>So you want one of the following?</p>
 <ul>
 <li>Instant moves (Atomic-Moves) during import of the Starr Apps (useful when using Usenet)?</li>
 <li>You don't want to use twice the storage when using torrents. (hardlinks)?</li>
@@ -3474,32 +3492,42 @@
 <ul>
 <li>[<strong>Short answer</strong>] Having a file in multiple locations without using double your storage space.</li>
 <li>
-<p>[<strong>Long answer</strong>] Hard links are a way for a copy operation to be instant and not consume space for those additional copies.</p>
-<p>Every file is a hard link: some metadata that points at blocks on the file system, <strong>which is why they're restricted to the same file system</strong>. There can be as many metadata files pointing at those blocks as needed and the blocks know how many links point to them. Once the blocks have 0 links, they're considered deleted.</p>
+<p>[<strong>Long answer</strong>] Hardlinks are a way for a copy operation to be instant and not consume space for those additional copies.</p>
+<p>Every file is a hardlink: some metadata that points at blocks on the file system, <strong>which is why they're restricted to the same file system</strong>. There can be as many metadata files pointing at those blocks as needed and the blocks know how many links point to them. Once the blocks have 0 links, they're considered deleted.</p>
 <p>This means:</p>
-<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">delete</span><span class="w"> </span><span class="nb">any</span><span class="w"> </span><span class="s2">&quot;copy&quot;</span><span class="w"> </span><span class="n">w</span><span class="o">/</span><span class="n">o</span><span class="w"> </span><span class="n">impacting</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">others</span><span class="o">.</span>
-
-<span class="w">    </span><span class="n">Your</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">it</span><span class="s1">&#39;s &quot;copy&quot; w/o impacting the library &quot;copy&quot;. The library &quot;copy&quot; can be removed by Plex or Sonarr/Radarr or yourself w/o impacting the download client &quot;copy&quot;.</span>
-
-<span class="o">-</span><span class="w"> </span><span class="n">Space</span><span class="w"> </span><span class="ow">is</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">regained</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="nb">all</span><span class="w"> </span><span class="s2">&quot;copies&quot;</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">deleted</span><span class="o">.</span>
-
-<span class="o">-</span><span class="w"> </span><span class="n">Modifying</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">impact</span><span class="w"> </span><span class="nb">all</span><span class="w"> </span><span class="s2">&quot;copies&quot;</span><span class="o">.</span>
-
-<span class="w">    </span><span class="n">For</span><span class="w"> </span><span class="n">example</span><span class="p">,</span><span class="w"> </span><span class="n">modifying</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">id3</span><span class="w"> </span><span class="n">tags</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">.</span><span class="n">mp3</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">after</span><span class="w"> </span><span class="kn">import</span><span class="w"> </span><span class="nn">would</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">download</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="s2">&quot;copy&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">resulting</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">breaking</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">torrent</span><span class="o">.</span>
-</code></pre></div>
-<p><a href="https://en.wikipedia.org/wiki/Hard_link" rel="noopener noreferrer" target="_blank">More info from Wikipedia, the free encyclopedia</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You can't create hard links for directories <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
-<p>You can't cross file systems <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
-</div>
+<ul>
+<li>
+<p>You can delete any "copy" without impacting other instances (hardlinks) of it.</p>
+<p>Your download client can remove its "copy" without impacting the library "copy". The library "copy" can also be removed by Plex, Sonarr/Radarr, or manually without impacting your download client's "copy".</p>
+</li>
+<li>
+<p>Space is only reclaimed once all "copies" of data that are hardlinked are deleted.</p>
+</li>
+<li>
+<p>Modifying any copy of a hardlinked file will impact all "copies".</p>
+<p>For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.</p>
 </li>
 </ul>
+<p><a href="https://en.wikipedia.org/wiki/Hard_link" rel="noopener noreferrer" target="_blank">More info from Wikipedia, the free encyclopedia</a></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Don't forget to read the <a href="/Hardlinks/Hardlinks-and-Instant-Moves/#hardlinks-limitations">Hardlinks limitations</a></p>
+</div>
 </details>
 <h3 id="what-are-instant-moves-atomic-moves">What are Instant Moves (Atomic Moves)<a class="headerlink" href="#what-are-instant-moves-atomic-moves" title="Permanent link"></a></h3>
 <details class="question">
 <summary><strong>What are Instant Moves (Atomic Moves)?</strong> - [Click to show/hide]</summary>
-<p>A real move and not a copy file from download folder to media folder and then delete file from download folder.</p>
+<p>A real move and not a copy file from the download folder to the media folder and then deleting the file from the download folder.</p>
+</details>
+<h3 id="hardlinks-limitations">Hardlinks Limitations<a class="headerlink" href="#hardlinks-limitations" title="Permanent link"></a></h3>
+<details class="question">
+<summary><strong>Hardlinks limitations</strong> - [Click to show/hide]</summary>
+<ul>
+<li>You <strong>CAN'T</strong> create hardlinks for directories <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
+<li>You <strong>CAN'T</strong> hardlink across separate file systems, partitions, or mounts <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></li>
+<li>Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)</li>
+</ul>
 </details>
 <h3 id="what-are-the-starr-apps">What are the Starr Apps<a class="headerlink" href="#what-are-the-starr-apps" title="Permanent link"></a></h3>
 <details class="question">
@@ -3528,7 +3556,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 13, 2024 15:24:40</span>
   </span>
 
     
