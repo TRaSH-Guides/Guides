@@ -1,16 +1,16 @@
 # How to check if hardlinks are working
 
-You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?
+You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked.
 
 You can use 3 options to check if you got working hardlinks.
 
-_All methods require you to login to your terminal with PuTTY or similar software._
+_All methods require you to log in to your terminal with PuTTY or similar software._
 
 !!! warning
 
-    - You **CAN'T** create hard links for directories :bangbang:
+    - You **CAN'T** create hardlinks for directories :bangbang:
     - You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
-    - Some file systems, such as exFAT, are known not to support hard links and should be avoided (double-check if you are unsure!)
+    - Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)
 
 ---
 
