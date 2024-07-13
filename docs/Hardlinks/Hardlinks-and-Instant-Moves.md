@@ -8,11 +8,11 @@
 
     Here we will try to explain it.
 
-This Guide exists out of 4 Sections
+This guide consists of 4 sections.
 
 1. This page with a short description.
-1. [How to set up for](/Hardlinks/How-to-setup-for/) Your installation method.
-1. [Examples](/Hardlinks/Examples/) What you should use for your path settings in your used applications.
+1. [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
+1. [Examples](/Hardlinks/Examples/) what you should use for your path settings in your used applications.
 1. [Check if hardlinks are working](/Hardlinks/Check-if-hardlinks-are-working/)
 
 So you want one of the following?
