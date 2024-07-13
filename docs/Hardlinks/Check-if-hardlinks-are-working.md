@@ -1,28 +1,22 @@
 # How to check if hardlinks are working
 
-You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked?
+You've followed the guide step by step but still want to check if hardlinks are working, or someone on the Sonarr/Radarr support team asked you to check if your files are hardlinked.
 
 You can use 3 options to check if you got working hardlinks.
 
-_All methods require you to login to your terminal with PuTTY or similar software._
+_All methods require you to log in to your terminal with PuTTY or similar software._
 
 !!! warning
 
-    You can't create hard links for directories :bangbang:
-
-    You can't cross file systems :bangbang:
+    - You **CAN'T** create hardlinks for directories :bangbang:
+    - You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
+    - Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)
 
 ---
 
 ## Usenet
 
-!!! note ""
-
-    If you use Usenet these examples won't work because you make use of instant moves/atomic moves and not hardlinks.
-
-    Still want to test if it works?
-
-    Test an import of a 4k remux (or any other big file and you should notice it's almost instant) and not a slower and more I/O intensive copy + delete.
+!!! info "If you are using Usenet, these examples won't work due to making use of instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux, or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete."
 
 ## Method 1: Using ls
 
@@ -53,6 +47,8 @@ You will get 2 results you can use to compare several things.
 
 1. Links: Everything above 1 means it's hardlinked
 1. Inode: if the numbers match, you know the files are hardlinked
+
+---
 
 ## Method 3: Using Inode copies
 
