@@ -1,3 +1,11 @@
+# 2024-07-14 01:18
+- [feat(starr-anime): add Shiniori-Raws to Anime Raws CF](https://github.com/TRaSH-Guides/Guides/pull/2012)
+- [feat(starr-anime): add several RlsGrps to LQ](https://github.com/TRaSH-Guides/Guides/pull/2011)
+- [feat(Guide): Add exFAT hardlink limitation to hardlinks guide](https://github.com/TRaSH-Guides/Guides/pull/2004)
+- [feat(sonarr): add OFT to LQ CF](https://github.com/TRaSH-Guides/Guides/pull/2010)
+- [fix(ci): remove unnecessary chmod](https://github.com/TRaSH-Guides/Guides/pull/2006)
+- [fix(update contribs): remove unnecessary --force on git push](https://github.com/TRaSH-Guides/Guides/pull/)
+
 # 2024-07-07 14:38
 - [fix(auto-changelog): add token to checkout](https://github.com/TRaSH-Guides/Guides/pull/)
 - [fix(auto-changelog): fix git push command](https://github.com/TRaSH-Guides/Guides/pull/)
