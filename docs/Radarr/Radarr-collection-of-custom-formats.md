@@ -3172,7 +3172,7 @@ We've made 3 guides related to this.
 
 ??? question "German and Original Language (German.DL) - [Click to show/hide]"
 
-    Recognizes movies with German audio together with the original language, whereby Radarr can determine the correct languages from the release title or the language information provided by the indexer. The release will be renamed. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
+    Recognizes movies with German audio together with the original language, whereby Radarr can determine the correct languages from the release title or the language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
 
 ??? example "JSON - [Click to show/hide]"
 
