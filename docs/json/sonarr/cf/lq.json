@@ -124,6 +124,15 @@
       }
     },
     {
+      "name": "OFT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OFT)$"
+      }
+    },
+    {
       "name": "Pahe",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
