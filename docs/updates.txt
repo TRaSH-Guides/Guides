@@ -1,3 +1,7 @@
+# 2024-07-21 01:18
+- [feat(guide): Add Groups to LQ](https://github.com/TRaSH-Guides/Guides/pull/2023)
+- [feat(Radarr): Add PTer to Radarr UHD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2015)
+
 # 2024-07-14 01:18
 - [feat(starr-anime): add Shiniori-Raws to Anime Raws CF](https://github.com/TRaSH-Guides/Guides/pull/2012)
 - [feat(starr-anime): add several RlsGrps to LQ](https://github.com/TRaSH-Guides/Guides/pull/2011)
