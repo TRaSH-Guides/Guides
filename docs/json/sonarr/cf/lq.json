@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "DepraveD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DepraveD)$"
+      }
+    },
+    {
       "name": "EVO",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -106,6 +115,15 @@
       }
     },
     {
+      "name": "KC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KC)$"
+      }
+    },
+    {
       "name": "MeGusta",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -157,6 +175,15 @@
       "required": false,
       "fields": {
         "value": "^(SasukeducK)$"
+      }
+    },
+    {
+      "name": "SHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SHD)$"
       }
     },
     {
