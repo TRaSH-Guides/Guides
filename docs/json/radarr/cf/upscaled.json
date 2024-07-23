@@ -3,7 +3,7 @@
   "trash_scores": {
     "default": -10000
   },
-  "trash_regex": "https://regex101.com/r/MDx42o/1",
+  "trash_regex": "https://regex101.com/r/MDx42o/latest",
   "name": "Upscaled",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -13,7 +13,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)"
+        "value": "(?<=\\b[12]\\d{3}\\b)(?=.*\\b(HEVC)\\b)(?=.*\\b(AI)\\b)"
+      }
+    },
+    {
+      "name": "AIUS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AIUS)\\b"
       }
     },
     {
@@ -22,7 +31,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Re-?grade)\\b"
+        "value": "\\b((Upscale)?Re-?graded?)\\b"
       }
     },
     {
