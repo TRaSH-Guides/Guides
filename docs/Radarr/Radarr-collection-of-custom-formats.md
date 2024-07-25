@@ -3156,7 +3156,7 @@ We've made 3 guides related to this.
 
 ??? question "German only - [Click to show/hide]"
 
-    Recognize movies that includes only german audio. Will rename the release.
+    Recognize movies that includes only German audio. Will rename the release.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3172,7 +3172,7 @@ We've made 3 guides related to this.
 
 ??? question "German and Original Language (German.DL) - [Click to show/hide]"
 
-    Recognize movies that includes german audio together with the original language where the indexer provides correct information. Will rename the release. This CF will also match all german DL/MLs once they are downloaded as mediainfo will detect all languages.
+    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3188,7 +3188,7 @@ We've made 3 guides related to this.
 
 ??? question "German and Original Language (German.DL) fallback - [Click to show/hide]"
 
-    Recognize movies that includes german audio together with the original language where the indexer does not provide the languages properly.
+    Recognize movies that includes German audio together with the original language where the indexer does provide wrong language information (e.g. German only even though the release title suggests it's dual language).
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3204,7 +3204,7 @@ We've made 3 guides related to this.
 
 ??? question "Original Language - [Click to show/hide]"
 
-    Recognize movies that includes the original language but not the german language.
+    Recognize movies that includes the original language but not the German language.
 
 ??? example "JSON - [Click to show/hide]"
 
