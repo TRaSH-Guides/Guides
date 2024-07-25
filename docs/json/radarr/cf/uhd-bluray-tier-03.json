@@ -73,6 +73,15 @@
       }
     },
     {
+      "name": "PTer",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PTer)$"
+      }
+    },
+    {
       "name": "SPHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

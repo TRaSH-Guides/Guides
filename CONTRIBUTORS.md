@@ -20,14 +20,14 @@
       <b><a href="https://github.com/FonduemangVI" style="color: #ffa500;">FonduemangVI</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/38940602?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="NiceTSY">
-      <br>
-      <b><a href="https://github.com/NiceTSY" style="color: #ffa500;">NiceTSY</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/47067662?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="nuxencs">
       <br>
       <b><a href="https://github.com/nuxencs" style="color: #ffa500;">nuxencs</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/38940602?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="NiceTSY">
+      <br>
+      <b><a href="https://github.com/NiceTSY" style="color: #ffa500;">NiceTSY</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/55419169?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="bakerboy448">

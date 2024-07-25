@@ -358,6 +358,15 @@
       }
     },
     {
+      "name": "KC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KC)$"
+      }
+    },
+    {
       "name": "KiNGDOM",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -646,6 +655,15 @@
       }
     },
     {
+      "name": "SHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SHD)$"
+      }
+    },
+    {
       "name": "ShieldBearer",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -706,6 +724,15 @@
       "required": false,
       "fields": {
         "value": "^(TIKO)$"
+      }
+    },
+    {
+      "name": "VECTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VECTOR)$"
       }
     },
     {
