@@ -22,7 +22,7 @@ You will need to have "Allow Remote Connections" enabled if you are not connecti
 
 ## Switching to Thin-Client
 
-Once your daemon is up and running, it's time to set up the client you'll be using to manage your daemon. This will usually be on a second computer, but if you wish to use Deluge with Thin-Client locally (to always seed in the background) that works as well.
+Once your daemon (container for Docker) is up and running, it's time to set up the client you'll be using to manage your daemon. You'll need to [install Deluge](https://deluge-torrent.org/download/) on the computer _from which_ you want to manage the "main" instance of Deluge. This will usually be on a second computer, but if you wish to use Deluge with Thin-Client locally, to always seed in the background, that works as well.
 
 Simply go to `Edit` => `Preferences` and switch from `Standalone` to `Thin Client`
 
