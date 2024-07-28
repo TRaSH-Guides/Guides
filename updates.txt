@@ -1,3 +1,7 @@
+# 2024-07-28 01:19
+- [feat(sonarr): add SYFY streaming network](https://github.com/TRaSH-Guides/Guides/pull/2017)
+- [fix(starr): Upscaled CF not matching on certain naming](https://github.com/TRaSH-Guides/Guides/pull/2019)
+
 # 2024-07-21 01:18
 - [feat(guide): Add Groups to LQ](https://github.com/TRaSH-Guides/Guides/pull/2023)
 - [feat(Radarr): Add PTer to Radarr UHD Bluray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2015)
