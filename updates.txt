@@ -1,3 +1,6 @@
+# 2024-08-04 01:19
+- [update(downloaders/deluge): clarify process of setting up thin-client](https://github.com/TRaSH-Guides/Guides/pull/2025)
+
 # 2024-07-28 01:19
 - [feat(sonarr): add SYFY streaming network](https://github.com/TRaSH-Guides/Guides/pull/2017)
 - [fix(starr): Upscaled CF not matching on certain naming](https://github.com/TRaSH-Guides/Guides/pull/2019)
