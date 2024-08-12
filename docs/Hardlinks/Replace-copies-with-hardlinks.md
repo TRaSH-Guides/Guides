@@ -1,8 +1,6 @@
 # Replace copies with hardlinks
 
-You recently switched to a proper setup that supports Hardlinks and Instant Moves (Atomic-Moves).
-
-And you would like to replace copies with hardlinks?
+Have you recently switched to a setup that supports hardlinks and Instant Moves (Atomic-Moves), and would like to replace duplicate files with hardlinks?
 
 If your Operating System supports it you could make use of [Jdupes](https://codeberg.org/jbruchon/jdupes).
 
