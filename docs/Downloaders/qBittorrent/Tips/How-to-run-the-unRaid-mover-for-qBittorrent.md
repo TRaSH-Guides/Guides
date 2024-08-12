@@ -100,7 +100,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
     !!! info
 
-        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), and try to be consistent.
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location); please try to be consistent.
 
     Suggestions:
 
