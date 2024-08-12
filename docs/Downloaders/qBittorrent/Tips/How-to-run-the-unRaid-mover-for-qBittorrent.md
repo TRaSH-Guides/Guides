@@ -2,7 +2,7 @@
 
 When you make use of the unRAID cache drive for your `/data/torrents` share, and the torrents in qBittorrent are still seeding, the mover can't move files since they are still in use.
 
-Using the following instructions will allow you to move the files with the use of the qBittorrent API.
+Using the following instructions will allow you to move the files using the qBittorrent API.
 
 !!! abstract "Workflow Rules"
 
@@ -32,7 +32,10 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopene
 Install the following Plugins.
 
 - User Scripts
-- NerdTools - python3 <sup>(_1_)</sup> - python-setuptools <sup>(_1_)</sup> - python-pip <sup>(_1_)</sup>
+- NerdTools
+    - python3 <sup>(_1_)</sup>
+    - python-setuptools <sup>(_1_)</sup>
+    - python-pip <sup>(_1_)</sup>
 
 !!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
 
@@ -97,7 +100,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
     !!! info
 
-        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location), try to be consistent.
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location); please try to be consistent.
 
     Suggestions:
 
@@ -142,7 +145,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
 #### Copy the script to your preferred location
 
-Place the script you just edited somewhere easy to access/remember.
+Place the qBit-Mover script somewhere easy to access/remember.
 
 Suggestions:
 
@@ -171,7 +174,7 @@ Click on the cogwheel of the new script in the list.
 
 Choose your method (select a tab) and copy/paste the script in the new window that opens, then click `SAVE CHANGES`.
 
-!!! info "replace `ip` with your unraid server ip, replace `port` with your webgui port you use to access the webgui"
+!!! info "replace `ip` with your unraid server ip, replace `port` with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI"
 
 === "Python (Native)"
 
@@ -196,16 +199,14 @@ Choose your method (select a tab) and copy/paste the script in the new window th
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
 
-!!! info
-
-    Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
+!!! info "Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script (qBit-Mover script)."
 
 - `--days_from` => Set Number of Days to stop torrents **from** for the move.
 - `--days_to` => Set Number of Days to stop torrents **to** for the move.
-- `--host` => Replace ip with your unraid server ip, replace port with your webgui port you use to access the webgui.
+- `--host` => Replace ip with your unraid server ip, and replace `port` with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI.
 - `--user` => Your used qBittorrent `User Name` if you have authentication enabled.
 - `--password` => Your used qBittorrent `Password` if you have authentication enabled.
-- `--cache-mount` => Cache mount point in Unraid. This is used to additionally filter for only torrents that exists on the cache mount. Use this option ONLY if you follow TRaSH Guides folder structure. (For default cache drive set this to `/mnt/cache`)
+- `--cache-mount` => Cache mount point in Unraid. This is used to additionally filter for only torrents that exist on the cache mount. Use this option ONLY if you follow the TRaSH Guides folder structure. (For default cache drive set this to `/mnt/cache`)
 
 <!--- ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)-->
 
