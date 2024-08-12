@@ -3530,7 +3530,7 @@
 
 <h1 id="unraid-mover-and-qbittorrent">unRAID Mover and qBittorrent<a class="headerlink" href="#unraid-mover-and-qbittorrent" title="Permanent link"></a></h1>
 <p>When you make use of the unRAID cache drive for your <code>/data/torrents</code> share, and the torrents in qBittorrent are still seeding, the mover can't move files since they are still in use.</p>
-<p>Using the following instructions will allow you to move the files with the use of the qBittorrent API.</p>
+<p>Using the following instructions will allow you to move the files using the qBittorrent API.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Workflow Rules</p>
 <ol>
@@ -3558,7 +3558,12 @@
 <p>Install the following Plugins.</p>
 <ul>
 <li>User Scripts</li>
-<li>NerdTools - python3 <sup>(<em>1</em>)</sup> - python-setuptools <sup>(<em>1</em>)</sup> - python-pip <sup>(<em>1</em>)</sup></li>
+<li>NerdTools<ul>
+<li>python3 <sup>(<em>1</em>)</sup></li>
+<li>python-setuptools <sup>(<em>1</em>)</sup></li>
+<li>python-pip <sup>(<em>1</em>)</sup></li>
+</ul>
+</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title"><sup>(<em>1</em>)</sup> These need to be installed from NerdTools.</p>
@@ -3598,7 +3603,7 @@ pip3<span class="w"> </span>install<span class="w"> </span>qbittorrent-api
 <p>First, you need to choose a location to start a new Python environment.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In the next steps, you will be asked to choose a <a href="#copy-the-script-to-your-preferred-location">location to store the script</a>, try to be consistent.</p>
+<p>In the next steps, you will be asked to choose a <a href="#copy-the-script-to-your-preferred-location">location to store the script</a>; please try to be consistent.</p>
 </div>
 <p>Suggestions:</p>
 <ul>
@@ -3631,7 +3636,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <hr />
 <h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link"></a></h3>
 <h4 id="copy-the-script-to-your-preferred-location">Copy the script to your preferred location<a class="headerlink" href="#copy-the-script-to-your-preferred-location" title="Permanent link"></a></h4>
-<p>Place the script you just edited somewhere easy to access/remember.</p>
+<p>Place the qBit-Mover script somewhere easy to access/remember.</p>
 <p>Suggestions:</p>
 <ul>
 <li><code>/mnt/user/appdata/qbittorrent/scripts/mover.py</code></li>
@@ -3649,7 +3654,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-list-select-qbit-mover.png" /></a></p>
 <p>Choose your method (select a tab) and copy/paste the script in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
 <div class="admonition info">
-<p class="admonition-title">replace <code>ip</code> with your unraid server ip, replace <code>port</code> with your webgui port you use to access the webgui</p>
+<p class="admonition-title">replace <code>ip</code> with your unraid server ip, replace <code>port</code> with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI</p>
 </div>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="python-native" name="__tabbed_2" type="radio" /><input id="python-venv_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="python-native">Python (Native)</label><label for="python-venv_1">Python (venv)</label></div>
 <div class="tabbed-content">
@@ -3675,16 +3680,15 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 </div>
 </div>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Replace <code>/mnt/user/data/scripts/</code> in the script with the path you have chosen for the Python script.</p>
+<p class="admonition-title">Replace <code>/mnt/user/data/scripts/</code> in the script with the path you have chosen for the Python script (qBit-Mover script).</p>
 </div>
 <ul>
 <li><code>--days_from</code> =&gt; Set Number of Days to stop torrents <strong>from</strong> for the move.</li>
 <li><code>--days_to</code> =&gt; Set Number of Days to stop torrents <strong>to</strong> for the move.</li>
-<li><code>--host</code> =&gt; Replace ip with your unraid server ip, replace port with your webgui port you use to access the webgui.</li>
+<li><code>--host</code> =&gt; Replace ip with your unraid server ip, and replace <code>port</code> with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI.</li>
 <li><code>--user</code> =&gt; Your used qBittorrent <code>User Name</code> if you have authentication enabled.</li>
 <li><code>--password</code> =&gt; Your used qBittorrent <code>Password</code> if you have authentication enabled.</li>
-<li><code>--cache-mount</code> =&gt; Cache mount point in Unraid. This is used to additionally filter for only torrents that exists on the cache mount. Use this option ONLY if you follow TRaSH Guides folder structure. (For default cache drive set this to <code>/mnt/cache</code>)</li>
+<li><code>--cache-mount</code> =&gt; Cache mount point in Unraid. This is used to additionally filter for only torrents that exist on the cache mount. Use this option ONLY if you follow the TRaSH Guides folder structure. (For default cache drive set this to <code>/mnt/cache</code>)</li>
 </ul>
 <!--- ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)-->
 
@@ -3729,7 +3733,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">May 15, 2024 18:28:38</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 12, 2024 18:27:08</span>
   </span>
 
     
