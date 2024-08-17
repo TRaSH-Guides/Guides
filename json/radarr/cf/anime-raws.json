@@ -88,6 +88,15 @@
       }
     },
     {
+      "name": "Moozzi2",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Moozzi2)\\b"
+      }
+    },
+    {
       "name": "NanakoRaws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -148,6 +157,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Raws-Maji)\\b"
+      }
+    },
+    {
+      "name": "ReinForce",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ReinForce)\\b"
       }
     },
     {
