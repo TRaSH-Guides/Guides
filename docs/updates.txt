@@ -1,3 +1,8 @@
+# 2024-08-18 01:19
+- [feat(starr-anime): add Moozzi2 and Reinforce to Anime Raws CF](https://github.com/TRaSH-Guides/Guides/pull/2040)
+- [fix(guide): qBit Mover - Add info to use qBt WebGUI port](https://github.com/TRaSH-Guides/Guides/pull/2034)
+- [feat(guide): jdupes improve descriptions](https://github.com/TRaSH-Guides/Guides/pull/2035)
+
 # 2024-08-04 01:19
 - [update(downloaders/deluge): clarify process of setting up thin-client](https://github.com/TRaSH-Guides/Guides/pull/2025)
 
