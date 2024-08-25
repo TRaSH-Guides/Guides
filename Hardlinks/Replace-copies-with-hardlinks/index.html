@@ -3361,38 +3361,64 @@
 
 
 <h1 id="replace-copies-with-hardlinks">Replace copies with hardlinks<a class="headerlink" href="#replace-copies-with-hardlinks" title="Permanent link"></a></h1>
-<p>Have you recently switched to a setup that supports hardlinks and Instant Moves (Atomic-Moves), and would like to replace duplicate files with hardlinks?</p>
-<p>If your Operating System supports it you could make use of <a href="https://codeberg.org/jbruchon/jdupes">Jdupes</a>.</p>
+<p>Have you recently switched to a setup that supports hardlinks and Instant Moves (Atomic-Moves), and would like to replace duplicated files with hardlinks?</p>
+<p>If your Operating System supports it you could make use of <a href="https://codeberg.org/jbruchon/jdupes/releases">jdupes</a>.</p>
+<p>The latest version's binaries are available for Windows at the link above. You can use a package manager, such as <a href="https://formulae.brew.sh/formula/jdupes">homebrew</a>, <code>apt</code>, or <code>pacman</code>, to install the latest available version for Mac or your flavor of Linux.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link"></a></h2>
 <div class="admonition info">
 <p>We won't cover every command <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
-<p>If you want to know what else <a href="https://codeberg.org/jbruchon/jdupes">Jdupes</a> can do please read the manual.</p>
+<p>If you want to know what else <a href="https://codeberg.org/jbruchon/jdupes">jdupes</a> can do please <a href="https://codeberg.org/jbruchon/jdupes#usage">read the usage manual</a>.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>This process can take a long time and a pretty big hit on your resources depending on the size of your library. We did notice the first time can take longer than the second time, this may be due to some sort of caching behavior on disk.</p>
+<p>This process can put a significantly large load on your system resources for an extended period of time depending on the size of your library. As duplicates are discovered, and hardlinks are made, the process becomes more efficient - as linked and different-sized files are not repeatedly checked against eachother. This leads to subsequent runs potentially finishing faster.</p>
+<p>To speed this process up <em>significantly</em> more, you can leverage a hash database. This will store information about the files, including their signatures, across runs of <code>jdupes</code> - vastly increasing the speed at which runs are finished.</p>
+<p>Simply use the following additional option <em>BEFORE YOUR DIRECTORIES</em> with a path that is always available and persistent:</p>
+<div class="highlight"><pre><span></span><code>-y &quot;/mnt/user/appdata/scripts/media_hash.db&quot;
+</code></pre></div>
 <ul>
-<li>That's why we suggest doing it based on categories (Movies, TV, Music, etc).</li>
-<li>We don't suggest using this on a cloud-based setup.</li>
+<li>We don't suggest using <code>jdupes</code> on a cloud-based setup.</li>
 </ul>
 </div>
+<p>The following is a basic usage template:</p>
 <div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span><span class="o">[</span>options<span class="o">]</span><span class="w"> </span>DIR1<span class="w"> </span>DIR2
 </code></pre></div>
-<p>Example: This will do a dry run and summarize at the end.</p>
+<p>The example below will do a dry run and summarize at the end.</p>
+<div class="admonition info">
+<p class="admonition-title">Folder paths should be adjusted to match your directory structure</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="without-hash-database" name="__tabbed_1" type="radio" /><input id="with-hash-database" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="without-hash-database">Without Hash Database</label><label for="with-hash-database">With Hash Database</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rMX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span><span class="s2">&quot;/mnt/user/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/media/movies&quot;</span>
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Folder paths should be changed to match what you're using in your setup</p>
 </div>
-<p>Example: This will hard link all duplicate files without prompting.</p>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rMX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span>-y<span class="w"> </span><span class="s2">&quot;/mnt/user/appdata/scripts/media_hash.db&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/media/movies&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<hr />
+<p>The example below will hard link all duplicate files without prompting.</p>
+<div class="admonition info">
+<p class="admonition-title">Folder paths should be adjusted to match your directory structure</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="without-hash-database_1" name="__tabbed_2" type="radio" /><input id="with-hash-database_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="without-hash-database_1">Without Hash Database</label><label for="with-hash-database_1">With Hash Database</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rLX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span><span class="s2">&quot;/mnt/user/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/media/movies&quot;</span>
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Folder paths should be changed to match what you're using in your setup</p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>jdupes<span class="w"> </span>-rLX<span class="w"> </span>onlyext:mp4,mkv,avi<span class="w"> </span>-y<span class="w"> </span><span class="s2">&quot;/mnt/user/appdata/scripts/media_hash.db&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/torrents/movies/&quot;</span><span class="w"> </span><span class="s2">&quot;/mnt/user/data/media/movies&quot;</span>
+</code></pre></div>
+</div>
+</div>
 </div>
 <hr />
 <div class="admonition bug">
-<p class="admonition-title">Windows allows a maximum of 1023 hard links per file</p>
+<p class="admonition-title">Windows only allows a maximum of 1023 hard links per file</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">The <code>-Q</code> or <code>--quick</code> option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but significant risk of a hash collision which is the purpose of the failsafe byte-for-byte comparison that this option explicitly bypasses. Do not use it on ANY data set for which any amount of data loss is unacceptable. You have been warned!</p>
@@ -3431,7 +3457,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 12, 2024 18:26:34</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 25, 2024 09:35:10</span>
   </span>
 
     
