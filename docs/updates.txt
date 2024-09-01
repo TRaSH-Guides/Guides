@@ -1,3 +1,10 @@
+# 2024-09-01 01:36
+- [fix(bazarr): inconsistent headers](https://github.com/TRaSH-Guides/Guides/pull/2047)
+- [fix(sonarr): Increase preferred and maximum Sonarr quality definition sizes](https://github.com/TRaSH-Guides/Guides/pull/2037)
+- [fix(radarr): Increase preferred and maximum Radarr quality definition sizes](https://github.com/TRaSH-Guides/Guides/pull/2039)
+- [update(docs/contributing): reference updated installation instructions for mkdocs container](https://github.com/TRaSH-Guides/Guides/pull/2046)
+- [update(hardlinks/jdupes): include hashdb feature and expand on installation and usage](https://github.com/TRaSH-Guides/Guides/pull/2042)
+
 # 2024-08-18 01:19
 - [feat(starr-anime): add Moozzi2 and Reinforce to Anime Raws CF](https://github.com/TRaSH-Guides/Guides/pull/2040)
 - [fix(guide): qBit Mover - Add info to use qBt WebGUI port](https://github.com/TRaSH-Guides/Guides/pull/2034)
