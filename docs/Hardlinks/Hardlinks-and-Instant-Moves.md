@@ -12,18 +12,22 @@ This guide consists of 4 sections.
 
 1. This page with a short description.
 1. [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
-1. [Examples](/Hardlinks/Examples/) what you should use for your path settings in your used applications.
+1. [Examples](/Hardlinks/Examples/) What you should use for your path settings in your used applications.
 1. [Check if hardlinks are working](/Hardlinks/Check-if-hardlinks-are-working/)
 
 So you want one of the following?
 
 - Instant moves (Atomic-Moves) during import of the Starr Apps (useful when using Usenet)?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
-- You want to perma seed?
+- You want to perma-seed?
 
 Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
 
 ## FAQ
+
+### Hardlinks Limitations
+
+!!! danger "- You <u>CAN'T</u> create hardlinks for directories :bangbang:<br>- You <u>CAN'T</u> hardlink across separate file systems, partitions, volumes or mounts :bangbang:<br>- Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)"
 
 ### What are Hardlinks
 
@@ -55,14 +59,6 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 ??? question "**What are Instant Moves (Atomic Moves)?** - [Click to show/hide]"
 
     A real move and not a copy file from the download folder to the media folder and then deleting the file from the download folder.
-
-### Hardlinks Limitations
-
-??? question "**Hardlinks limitations** - [Click to show/hide]"
-
-    - You **CAN'T** create hardlinks for directories :bangbang:
-    - You **CAN'T** hardlink across separate file systems, partitions, or mounts :bangbang:
-    - Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)
 
 ### What are the Starr Apps
 
