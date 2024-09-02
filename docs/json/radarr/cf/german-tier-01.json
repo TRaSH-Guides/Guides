@@ -77,6 +77,15 @@
       "fields": {
         "value": "^(QfG)$"
       }
+    },
+    {
+      "name": "PXL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PXL)$"
+      }
     }
   ]
 }
