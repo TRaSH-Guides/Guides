@@ -45,7 +45,6 @@ It is quite important that you follow and understand what is envisioned by Trash
 
         You will still be able to prefer Propers and Repacks through Custom Formats that you can find at a later stage in this guide.
 
-
 ------
 
 ## Usages
