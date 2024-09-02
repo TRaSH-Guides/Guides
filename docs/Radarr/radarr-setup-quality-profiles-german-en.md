@@ -25,7 +25,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 !!! warning "Mandatory"
 
-    The only change that is needed and **mandatory** for German Custom Formats to work is to set the preferred language profile for your releases to `Any`.
+    The only two changes that are needed and **mandatory** for German Custom Formats to work is to set the preferred language profile for your releases to `Any` and disable the preference of Propers and Repacks.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
@@ -33,12 +33,25 @@ It is quite important that you follow and understand what is envisioned by Trash
     !!! info
         We do choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
 
+    ??? tip "Proper and Repacks - [Click to show/hide]"
+
+        We also highly recommend changing the Propers and Repacks settings in Radarr.
+
+        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
+
+        ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
+
+        This way you make sure the Custom Formats preferences will be used and not ignored.
+
+        You will still be able to prefer Propers and Repacks through Custom Formats that you can find at a later stage in this guide.
+
+
 ------
 
 ## Usages
 
 There is two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
-To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. You need to understand that if you add the Custom Formats from this optional section if Radarr do not find a German Dual Language release you will still have a good scoring for single audio.
+To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. if you are interested in German audio only you don't need this. This Custom Formats are only useful and recommended if you prefer German Dual Language releases but will also want download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
 
 ------
 
@@ -97,10 +110,11 @@ Those should be used together and are there to properly rename your release and 
 !!! tip "Download German Audio ^^only^^"
 
     Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
+    Note: Most German releases come as Dual Language so you might still see an English audio track beside the German one.
 
 !!! warning "Releases where German is the original language"
 
-    Due to technical limitations releases where German is the original language of the movie will be identified as `German.DL` even though they might not contain another language.
+    Due to technical limitations releases where German is the original language of the movie will be identified as `German DL` even though they might not contain another language.
     The only (cosmetical) impact of this is that the scores of those releases will be higher by `1000` than they are supposed to be.
 
 ------
@@ -117,9 +131,10 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-!!! tip "Getting the movie name in German in the file and/or folder name"
+!!! tip "Getting the German movie name in the file and/or folder name"
     Following the recommended naming scheme for your library, whether it's Plex, Jellyfin, or Emby, you can add the ISO-2 language code at the end of the movie name tag to display the movie name in the desired language.
-    The tag should look like the following: `{Movie CleanTitle:de}`. This work in both Folder and File name.
+    The tag should look like the following: `{Movie CleanTitle:de}`. This works in both folder and file name.
+    This can be done in Radarr under Settings>Media Management (with Advanced Settings enabled at the top)
 
 ------
 
