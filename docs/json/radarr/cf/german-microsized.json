@@ -15,14 +15,23 @@
         "value": "^(FuN)$"
       }
     },
-      {
-        "name": "w00t",
-        "implementation": "ReleaseGroupSpecification",
-        "negate": false,
-        "required": false,
-        "fields": {
-          "value": "^(w00t)$"
-        }
+    {
+      "name": "w00t",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(w00t)$"
+      }
+    },
+    {
+      "name": "GTF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTF)$"
+      }
     }
   ]
 }
