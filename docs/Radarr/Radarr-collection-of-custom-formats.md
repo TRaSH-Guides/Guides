@@ -3283,7 +3283,7 @@ We've made 3 guides related to this.
 
 ??? question "German Scene - [Click to show/hide]"
 
-    - Known German Scene groups.
+    - Known German Scene groups (which are not defined as LQ).
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3308,7 +3308,7 @@ We've made 3 guides related to this.
         - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
         - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
-        - Other reasons = Banned Release Groups.
+        - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3319,17 +3319,17 @@ We've made 3 guides related to this.
 
 ---
 
-### German Micro
+### German Microsized
 
-<sub>German Micro Releases = German Micro</sub>
+<sub>German Microsized Releases = German Microsized</sub>
 
-??? question "German Micro - [Click to show/hide]"
+??? question "German Microsized - [Click to show/hide]"
 
     A collection of known German groups producing low quality micro-sized releases.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-micro.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
     ```
 <sub><sup>[TOP](#index)</sup></sub>

@@ -10,4 +10,4 @@
 
     Breakdown and Why
 
-    - Since we are merging quality we need to add scores for different sources to allow upgrades between them.
+    - Since we are merging all qualities into a single group we need to add scores for different sources to allow upgrades between them.

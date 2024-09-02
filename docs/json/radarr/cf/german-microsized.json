@@ -1,47 +1,37 @@
 {
-  "trash_id": "a520bf3906268e725680d2eca1451a6d",
+  "trash_id": "55003d4af1141dde4fb7fd08441b1656",
   "trash_scores": {
-      "default": 1750
+      "default": -10000
   },
-  "name": "German Tier 02",
+  "name": "German Microsized",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "VECTOR",
+      "name": "FuN",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(VECTOR)$"
+        "value": "^(FuN)$"
       }
     },
     {
-      "name": "MULTiPLEX",
+      "name": "w00t",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(MULTiPLEX)$"
+        "value": "^(w00t)$"
       }
     },
     {
-      "name": "SiXTYNiNE",
+      "name": "GTF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(SiXTYNiNE)$"
-      }
-    },
-    {
-      "name": "Oergel",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Oergel)$"
+        "value": "^(GTF)$"
       }
     }
   ]
 }
-
