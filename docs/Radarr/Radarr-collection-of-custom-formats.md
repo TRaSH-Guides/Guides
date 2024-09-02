@@ -3283,7 +3283,7 @@ We've made 3 guides related to this.
 
 ??? question "German Scene - [Click to show/hide]"
 
-    - Known German Scene groups.
+    - Known German Scene groups (which are not defined as LQ).
 
 ??? example "JSON - [Click to show/hide]"
 
