@@ -2,15 +2,15 @@
 
 *aka How to setup Custom Formats (German)*<br><br>
 
-!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious)"
+!!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
-So what is the best way to set up the Custom Formats and which one to use with which scores to get German and English Audio?
+So what is the best way to set up the Custom Formats and which one to use with which scores to get German (or German+English dual) audio?
 
 Regarding quality there isn't a best setup, it depends on your setup (hardware devices) and your own personal preferences.
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German Dual Language releases.
+TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German only/German Dual Language releases.
 
 ------
 
@@ -31,13 +31,13 @@ It is quite important that you follow and understand what is envisioned by Trash
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
-        We do choose `Any` for the language profile, as otherwise an English movies identified with German audio will not be grabbed and vice-versa.
+        We do choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
 
 ------
 
 ## Usages
 
-There is two ways of using those German Custom Formats, with and without the Guide's original Group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+There is two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. You need to understand that if you add the Custom Formats from this optional section if Radarr do not find a German Dual Language release you will still have a good scoring for single audio.
 
 ------
@@ -50,7 +50,7 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 ### Merge Qualities
 
-In order to allow upgrades based on language without release qualities interfering we need to merge all desired qualities into one group.
+In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](Radarr/Tips/Merge-quality/) into one group.
 
 ??? abstract "Merge the following Qualities together - [Click to show/hide]"
 
@@ -71,7 +71,7 @@ In order to allow upgrades based on language without release qualities interferi
     {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
     !!! tip "Tip"
-        If you are not interested in a particular resolution, i.e. 2160p or 720p you don't need to merge those.
+        If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
 
 ------
 
@@ -100,8 +100,8 @@ Those should be used together and are there to properly rename your release and 
 
 !!! warning "Releases where German is the original language"
 
-    Due to a limitation releases where German is the original language will be identified as `German.DL` even though they might not contain another language.
-    The only impact is that the scores of those releases will be higher by `1000` than they are supposed to be.
+    Due to technical limitations releases where German is the original language of the movie will be identified as `German.DL` even though they might not contain another language.
+    The only (cosmetical) impact of this is that the scores of those releases will be higher by `1000` than they are supposed to be.
 
 ------
 
