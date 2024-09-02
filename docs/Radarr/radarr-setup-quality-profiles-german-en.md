@@ -90,7 +90,7 @@ Those should be used together and are there to properly rename your release and 
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-!!! tip "Download Original Audio but upgrade with German Audio ^^only^^ if available in similar quality"
+!!! tip "Download Original Audio but prefer/upgrade to German Audio ^^only^^ if available in similar or better quality"
 
     Set the Score of `{{ radarr['cf']['german-dl']['name'] }}` and `{{ radarr['cf']['german-dl-fallback']['name'] }}` to `300`
 
