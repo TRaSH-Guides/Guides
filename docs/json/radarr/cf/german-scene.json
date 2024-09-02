@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(DETAiLS)$"
+        "value": "^(DETAiLS)$"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(WAYNE)$"
+        "value": "^(WAYNE)$"
       }
     },
     {
@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(WOMBAT)$"
+        "value": "^(WOMBAT)$"
       }
     },
     {
@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(SAUERKRAUT)$"
+        "value": "^(SAUERKRAUT)$"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(WvF)$"
+        "value": "^(WvF)$"
       }
     },
     {
@@ -57,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(4KCONNECTiON)$"
+        "value": "^(4KCONNECTiON)$"
       }
     },
     {
@@ -66,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(STARS)$"
+        "value": "^(STARS)$"
       }
     },
     {
@@ -75,7 +75,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(AWARDS)$"
+        "value": "^(AWARDS)$"
       }
     },
     {
@@ -84,7 +84,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(DMPD)$"
+        "value": "^(DMPD)$"
       }
     },
     {
@@ -93,7 +93,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(EXCiTED)$"
+        "value": "^(EXCiTED)$"
       }
     },
     {
@@ -102,7 +102,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(iNTENTiON)$"
+        "value": "^(iNTENTiON)$"
       }
     },
     {
@@ -111,7 +111,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(JaJunge)$"
+        "value": "^(JaJunge)$"
       }
     },
     {
@@ -120,7 +120,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(MGE)$"
+        "value": "^(MGE)$"
       }
     },
     {
@@ -129,7 +129,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(MisFiTS)$"
+        "value": "^(MisFiTS)$"
       }
     },
     {
@@ -138,7 +138,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(RUBBiSH)$"
+        "value": "^(RUBBiSH)$"
       }
     },
     {
@@ -147,7 +147,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(RWP)$"
+        "value": "^(RWP)$"
       }
     },
     {
@@ -156,7 +156,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TMSF)$"
+        "value": "^(TMSF)$"
       }
     },
     {
@@ -165,7 +165,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TV4A)$"
+        "value": "^(TV4A)$"
       }
     },
     {
@@ -174,7 +174,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(HAXE)$"
+        "value": "^(HAXE)$"
       }
     },
     {
@@ -183,7 +183,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(muhHD)$"
+        "value": "^(muhHD)$"
       }
     }
   ]
