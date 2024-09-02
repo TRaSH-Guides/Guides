@@ -12,8 +12,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(FuN)$"
-      }
+        "value": "^(FuN)$"
+      },
+      {
+        "name": "w00t",
+        "implementation": "ReleaseGroupSpecification",
+        "negate": false,
+        "required": false,
+        "fields": {
+          "value": "^(w00t)$"
+        }
     }
   ]
 }
