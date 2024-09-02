@@ -76,6 +76,7 @@ We've made 3 guides related to this.
 | [Peacock TV](#pcok)        |                           |                          |                          |
 | [SHOWTIME](#sho)           |                           |                          |                          |
 | [Stan](#stan)              |                           |                          |                          |
+| [Syfy](#syfy)              |                           |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 | --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
@@ -1765,6 +1766,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/stan.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### SYFY
+
+<sub>Syfy</sub>
+
+??? question "SYFY - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/syfy.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/syfy.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

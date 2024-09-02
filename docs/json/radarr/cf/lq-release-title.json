@@ -34,6 +34,15 @@
       }
     },
     {
+      "name": "GalaxyRG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GalaxyRG)\\b"
+      }
+    },
+    {
       "name": "jennaortega",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

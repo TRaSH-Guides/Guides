@@ -167,6 +167,15 @@
       "fields": {
         "value": "Seicher[ ._-]?(Raws)"
       }
+    },
+    {
+      "name": "Shiniori-Raws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Shiniori[ ._-]?(Raws)"
+      }
     }
   ]
 }
