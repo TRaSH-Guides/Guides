@@ -3319,17 +3319,17 @@ We've made 3 guides related to this.
 
 ---
 
-### German Micro
+### German Microsized
 
-<sub>German Micro Releases = German Micro</sub>
+<sub>German Microsized Releases = German Microsized</sub>
 
-??? question "German Micro - [Click to show/hide]"
+??? question "German Microsized - [Click to show/hide]"
 
     A collection of known German groups producing low quality micro-sized releases.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-micro.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
     ```
 <sub><sup>[TOP](#index)</sup></sub>
