@@ -13,7 +13,8 @@
       "required": false,
       "fields": {
         "value": "^(FuN)$"
-      },
+	  }
+    },
       {
         "name": "w00t",
         "implementation": "ReleaseGroupSpecification",
