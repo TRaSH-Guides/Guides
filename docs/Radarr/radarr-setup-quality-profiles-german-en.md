@@ -10,7 +10,7 @@ Regarding quality there isn't a best setup, it depends on your setup (hardware d
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German only/German Dual Language releases.
+TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German only/German Dual Language("German DL") releases.
 
 ------
 
@@ -169,7 +169,7 @@ Use the following main settings in your profile.
     **Depending what's released first and available the following Workflow Logic will be used:**
 
     - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
-    - When a `German` or `German.DL` version is released it will upgrade to that version.
+    - When a `German` or `German DL` version is released it will upgrade to that version.
     - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
 
 ------
