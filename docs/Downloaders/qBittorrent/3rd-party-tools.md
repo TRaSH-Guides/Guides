@@ -72,20 +72,6 @@ qbittools is a feature-rich CLI for the management of torrents in qBittorrent.
 
 ---
 
-## A Dark but not black qBittorrent WebUI
-
-A darker theme for qBittorrent WebUI (made with the help of the Walkerservers community)
-
-- It's dark, but not black
-- It has different colors for ratio values (see screenshot)
-- It has a mix of Fontawesome and custom icons
-
-![!Example](https://raw.githubusercontent.com/brettpetch/nightwalker/main/preview.png)
-
-[Nightwalker](https://github.com/brettpetch/nightwalker){:target="\_blank" rel="noopener noreferrer"}
-
----
-
 ## cross-seed
 
 Fully-automatic cross-seeding
