@@ -56,10 +56,6 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 
 ## Examples of Quality Profile
 
---8<-- "includes/cf/score-attention.md"
-
-------
-
 ### Merge Qualities
 
 In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](Radarr/Tips/Merge-quality/) into one group.
