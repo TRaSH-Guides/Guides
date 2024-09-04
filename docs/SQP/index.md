@@ -58,4 +58,4 @@ The Special Quality Profiles are custom-made and tested Quality Profiles for spe
     - If you have any questions or need extra info about an SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
 
-{! include-markdown "../../includes/support.md" !}
+--8<-- "includes/support.md"
