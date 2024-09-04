@@ -1,26 +1,28 @@
 # Windows
 
-Windows is very limited when it comes to hardlinks/instant moves (Atomic Moves) support. Basically, it comes down to just using one disk for your download location and media library. However, we will try to explain an option that you can make use of hardlinks/instant moves (Atomic Moves) if you run a two-disk setup.
+Windows is less flexible than some other operating systems in respect of support for hard links and instant (Atomic) moves. In most cases, you need to use a single disk containing both your download location and media library. However, there is an option detailed below that will allow you to make use of hard links and instant (Atomic) moves if you run a two-disk setup.
 
 ## Recommendation
 
-We would recommend switching to another operating system if you want to make use of a hardlink setup. For more information and suggestions on this topic, we recommend joining our Discord support channel. The link can be found at the bottom of every guide.
+If you want to make extensive use of hard links, we would recommend switching to another operating system. For more information and suggestions on this topic, join our Discord support channel. The link can be found at the bottom of every guide page.
 
 ### Alternative recommendation
 
-If you have multiple disks and still want to keep using Windows, we suggest forgetting about hardlinks/instant moves (Atomic Moves) and going for the next best, most recommended option for Windows, namely [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will make it possible to make it look like you have one big disk, making it much easier to maintain and set up your file and folder structure.
+If moving away from using Windows with multiple disks is not an option, we suggest ignoring hard links and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
 
-!!! warning "There are rumors that Storage Spaces supports hardlinks, but you should question yourself if you're willing to run Storage Spaces."
+!!! warning "It is possible that Windows Storage Spaces supports hard links, but this has not been verified by the Guides team. We are unable to provide support for setups that use Storage Spaces."
 
 ## Folder Structure
 
-The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie`, and `music` downloads to keep things organized. The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders, this is where your library resides, and what you’d pass to Plex, Emby, or JellyFin.
+The `data` folder has sub-folders for `torrents` and `usenet`, and each of these has sub-folders for `tv`, `movie`, and `music` downloads to keep things organized.
 
-You can name the root folder/share `data` however you want. We suggest following the guide folder naming to make it easier for yourself and others to help you.
+The `media` folder has nicely named `TV`, `Movies` and `Music` sub-folders. These are where your libraries reside, and what you’d pass to Plex, Emby, or JellyFin.
+
+Whilst we have used `data`, you can name the root folder/share whatever you want. We suggest following the guide folder naming to make it easier for yourself and others to help you.
 
 ### Folder Structure (one-disk setup or using DrivePool)
 
-For this example, we will assume you have a one-disk setup with a large drive added as drive `D:\` or are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created one big disk as drive `D:\`.
+For this example, we will assume you have a one-disk setup with a large drive added as drive `D:\`, or are using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"} that created one big disk as drive `D:\`.
 
 ```none
 D:\data
@@ -49,7 +51,7 @@ After you create the base folders to use it's time to follow the #examples-how-t
 
 This is a bit more work, but the next best option you can do if you don't want to use the #alternative-recommendation with [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}.
 
-For this example, we will assume you have one disk added as drive `D:\` and a second disk as `E:\`.
+For this example, we will assume you have one disk added as drive `D:\`, and a second disk as `E:\`.
 
 #### disk 1
 
