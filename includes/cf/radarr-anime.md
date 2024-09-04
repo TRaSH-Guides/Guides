@@ -1,4 +1,5 @@
 ??? abstract "Anime CF/Scoring - [Click to show/hide]"
+
     | Custom Format                                                                                                                                       |                                          Score                                          | Trash ID                                                             |
     | --------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------: | -------------------------------------------------------------------- |
     | [{{ radarr['cf']['anime-bd-tier-01-top-seadex-muxers']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#anime-bd-tier-01-top-seadex-muxers) |   {{ radarr['cf']['anime-bd-tier-01-top-seadex-muxers']['trash_scores']['default'] }}   | {{ radarr['cf']['anime-bd-tier-01-top-seadex-muxers']['trash_id'] }} |
@@ -34,5 +35,6 @@
     | [{{ radarr['cf']['anime-dual-audio']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#anime-dual-audio)                                     |                                            0                                            | {{ radarr['cf']['anime-dual-audio']['trash_id'] }}                   |
     | [{{ radarr['cf']['dubs-only']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dubs-only)                                                   |               {{ radarr['cf']['dubs-only']['trash_scores']['default'] }}                | {{ radarr['cf']['dubs-only']['trash_id'] }}                          |
     | [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr)                                                  |           {{ radarr['cf']['french-vostfr']['trash_scores']['anime-radarr'] }}           | {{ radarr['cf']['french-vostfr']['trash_id'] }}                      |
+    | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                                                               |                {{ radarr['cf']['av1']['trash_scores']['anime-radarr'] }}                | {{ radarr['cf']['av1']['trash_id'] }}                                |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main guide"

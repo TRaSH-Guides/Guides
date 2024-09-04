@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
+    {
+      "properties": {
+        "implementation": {
+          "const": "ReleaseGroupSpecification"
+        },
+        "fields": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": ["value"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["implementation", "fields"]
+    }
+  ]
+}

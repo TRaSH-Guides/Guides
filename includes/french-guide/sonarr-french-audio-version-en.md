@@ -1,4 +1,5 @@
 ??? abstract "Explanation - [Click to show/hide]"
+
     | Acronyms                   | French Explanation                                                                  | English Explanation                                                   |
     | -------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
     | TRUEFRENCH or VFF          | Version Francophone Française (doublage réalisé en France)                          | Full French version (dubbing done in France)                          |
@@ -16,9 +17,11 @@
     - *[2] It should be noted that SUBFRENCH is included in this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix the two, leading to some VOSTFR being labelled as SUBFRENCH and SUBFRENCH as VOSTFR.*
 
     !!! tip "Indexers renaming in Prowlarr"
+
         Some Indexers in **Prowlarr** can rename `MULTi` releases to `MULTi.TRUEFRENCH` or `MULTi.FRENCH`. It is not recommend to use such a feature along with those Custom Formats as it can lead to false positives from the VFF, VFQ and VQ Custom Formats.
 
 ??? abstract "French Audio Versions - [Click to show/hide]"
+
     | Custom Format                                                                                      | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
     | [{{ sonarr['cf']['french-vff']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vff)       | {{ sonarr['cf']['french-vff']['trash_id'] }}    |

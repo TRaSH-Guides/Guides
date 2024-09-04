@@ -1,21 +1,22 @@
 # How to set up Quality Profiles
 
-*aka How to set up Custom Formats*<br><br>
+_aka How to set up Custom Formats_<br><br>
 So what's the best way to set up the Custom Formats and which ones to use with which scores to set up your quality profiles?
 
 There isn't a "best" setup, it depends on your media setup (hardware devices) and your personal preferences.
 
 Some prefer high-quality audio (HD Audio), others high-quality video. Many prefer both.
 
-Here I will try to explain how to make the most use of Custom Formats to help you to set up your quality profiles for your personal needs.
+Here we will try to explain how to make the most of Custom Formats to help you set up your quality profiles for your personal preferences.
 
-I created a [flowchart](#which-quality-profile-should-you-choose) to make your decision/choices easier.
+- We've created a [flowchart](#which-quality-profile-should-you-choose) to make your decisions/choices easier.
+- We've also created an Excel sheet with several tested [media player devices](/Plex/what-does-my-media-player-support){:target="\_blank" rel="noopener noreferrer"} to display what formats and capabilities they support, sourced from information provided by our community. We hope this Excel sheet will be a helpful resource for those looking for a reliable media player device and will help you choose the appropriate quality profile.
 
-------
+---
 
 ## Basics
 
-After you've added the Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
+After you've added the Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
 You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
 `Settings` => `Profiles`
@@ -23,6 +24,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 ![!cf-settings-profiles](images/cf-settings-profiles.png)
 
 !!! info "Radarr Custom Formats can be set per profile and isn't global"
+
 Select the profile that you want to use/prefer.
 
 ![!cf-quality-profiles](images/cf-quality-profiles.png)
@@ -39,9 +41,11 @@ Select the profile that you want to use/prefer.
 At the bottom, in your chosen profile, you will see the added Custom Formats where you can start setting up the scores.
 
 ??? success "Screenshot example - [Click to show/hide]"
+
     ![!cf-quality-profile-cf](images/cf-quality-profile-cf.png)
 
     !!! warning
+
         These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.
@@ -57,11 +61,11 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
     - Custom formats that match with undesirable attributes should be given a negative score to lower their appeal.
     - Outright rejections should be given a negative score low enough that even if all of the other formats with positive scores were added, the score would still fall below the minimum.
 
-------
+---
 
 {! include-markdown "../../includes/merge-quality/radarr-current-logic.md" !}
 
-------
+---
 
 ## Which Quality Profile should you choose
 
@@ -73,21 +77,22 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
     ![Flowchart](/Radarr/images/flowchart-quality-profiles-radarr.png)
 
-    If you're unsure or have questions do not hesitate to ask for help on Discord
+    <center>If you're unsure or have questions, do not hesitate to ask for help on Discord</center>
 
-    [![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="_blank" rel="noopener noreferrer"}
+    <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
+    <center>[![Discord chat](https://img.shields.io/discord/492590071455940612?style=for-the-badge&color=4051B5&logo=discord){ .off-glb }](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}</center>
 
-------
+---
 
 ## TRaSH Quality Profiles
 
-The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p.
+The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available _AFTER_ the 1080p release is made.
 
 ### HD Bluray + WEB
 
 If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
-- *Size: 6-15 GB for a Bluray-1080p depending on the running time.*
+- _Size: 6-15 GB for a Bluray-1080p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -103,7 +108,7 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-I decided not to add `Audio Advanced` Custom Formats to the encodes profile. You will hardly find HD audio with HD Bluray Encodes. When downloading HD Bluray Encodes, I suggest going for quality. If you want HD audio formats, I would suggest going with a Remux or UHD Encode.
+I decided not to add `Audio Advanced` Custom Formats to the encode's profile. You will hardly find HD audio with HD Bluray Encodes. When downloading HD Bluray Encodes, we suggest going for quality. If you want HD audio formats, we would suggest going with a Remux or UHD Encode.
 
 Use the following main settings in your profile.
 
@@ -111,7 +116,7 @@ Use the following main settings in your profile.
 
 !!! warning "Make sure you don't check the BR-DISK."
 
-The reason why I didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
+The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -123,15 +128,15 @@ The reason why I didn't select the WEB-DL 720p is that you will hardly find any 
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
+    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
-------
+---
 
 ### UHD Bluray + WEB
 
 If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
-- *Size: 20-60 GB for a Bluray-2160p depending on the running time.*
+- _Size: 20-60 GB for a Bluray-2160p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -171,15 +176,15 @@ Use the following main settings in your profile.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
+    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
-------
+---
 
 ### Remux + WEB 1080p
 
 If you prefer 1080p Remuxes (Remux-1080p)
 
-- *Size: 20-40 GB for a Remux-1080p depending on the running time.*
+- _Size: 20-40 GB for a Remux-1080p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -203,7 +208,7 @@ Use the following main settings in your profile.
 
 !!! warning "Make sure you don't check the BR-DISK."
 
-The reason why I didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
+The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -215,15 +220,15 @@ The reason why I didn't select the WEB-DL 720p is that you will hardly find any 
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway.
+    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
-------
+---
 
 ### Remux + WEB 2160p
 
 If you prefer 2160p Remuxes (Remux-2160p)
 
-- *Size: 40-100 GB for a Remux-2160p depending on the running time.*
+- _Size: 40-100 GB for a Remux-2160p depending on the running time._
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -261,9 +266,9 @@ Use the following main settings in your profile.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `500`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to be upgraded to the highest possible score anyway.
+    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
-------
+---
 
 ## Custom Format Groups
 
@@ -271,15 +276,19 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### Advanced Audio
 
-- You have an audio setup that supports all HD Audio (TrueHD, DTS-X, DTS-HD, etc).
-- You have a media player (hardware devices) that can passthrough HD audio.
-- You don't have an AppleTV (Being it can't passthrough untouched HD audio).
+- You have a hardware media player device and an audio setup that supports **ALL** HD Audio (TrueHD, DTS-X, DTS-HD, etc).
 
-*The reason that I score lossy Atmos higher than lossless DTS-HD MA is that I prefer having the object metadata (Atmos) over lossless audio.*
+    {! include-markdown "../../includes/cf/audio-limitations-atv.md" !}
+
+- You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.
+- You should add **ALL** the Audio formats - don't leave any of them out!
+- Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.
+
+_The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we prefer having the object metadata (Atmos) over lossless audio._
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-------
+---
 
 ### HDR Formats
 
@@ -287,7 +296,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-------
+---
 
 ## FAQ & INFO
 
@@ -295,7 +304,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? tip "Proper and Repacks - [Click to show/hide]"
 
-    I also suggest that you change the Propers and Repacks settings in Radarr
+    We also suggest that you change the Propers and Repacks settings in Radarr
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
 
@@ -307,12 +316,12 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"
 
-    For Custom Formats you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
+    For Custom Formats you want to avoid, set it to something really low like `-10000` and not something like `-10`.
     When you add your preferred Custom Format and set it to something like `+10`, it's possible that, for example, the `BR-DISK` will be downloaded - (-10)+(+10)=0 - if your `Minimum Custom Format Score` is set at `0`.
 
 ### Releases you should avoid
 
-This is a must-have for every Quality Profile you use in my opinion. All these Custom Formats make sure you don't get Low Quality Releases.
+This is a must-have for every Quality Profile you use in our opinion. All these Custom Formats make sure you don't get low-quality releases.
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
@@ -328,7 +337,7 @@ This is a must-have for every Quality Profile you use in my opinion. All these C
 
     Some people suggest not to use negative scores for your Custom Formats and set this option to a higher score than 0.
 
-    The reason why I don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.
+    The reason why we don't prefer/use this is because you could limit yourself when some new groups or whatever will be released.
 
     Also, it makes it much more clear what you prefer and what you want to avoid.
 
@@ -336,9 +345,9 @@ This is a must-have for every Quality Profile you use in my opinion. All these C
 
 ??? info "Audio Channels - [Click to show/hide]"
 
-    Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example, 2.0 (stereo) or 5.1/7.1 (surround sound). Personally, I wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
+    Elsewhere in the guide, you will find a separate group of custom formats called `Audio Channels`. These will match the number of audio channels in a release, for example, 2.0 (stereo) or 5.1/7.1 (surround sound). We wouldn't add the audio channels Custom Formats as you could limit yourself in the amount of releases you're able to get. Only use them if you have a specific need for them.
 
-    Using this with any kind of Remux Quality Profile is useless, in my opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Advanced` Custom Formats.
+    Using this with any kind of Remux Quality Profile is useless, in our opinion, being that 99% of all Remuxes are multi-audio anyway. You can get better scores just by using the `Audio Advanced` Custom Formats.
 
 ### Avoid using the x264/x265 Custom Format
 

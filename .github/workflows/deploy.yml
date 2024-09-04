@@ -6,9 +6,7 @@ on:
       - master
   pull_request:
 
-
 jobs:
-
   build:
     name: Build docs
     runs-on: ubuntu-latest
@@ -17,7 +15,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.6
         with:
           fetch-depth: 0
           sparse-checkout: |
@@ -26,7 +24,7 @@ jobs:
             includes
             overrides
       - name: Setup python
-        uses: actions/setup-python@v5.0.0
+        uses: actions/setup-python@v5.1.1
         with:
           python-version: 3.x
       - name: Get pip cache directory
@@ -57,7 +55,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.6
         with:
           fetch-depth: 0
           sparse-checkout: |
@@ -66,7 +64,7 @@ jobs:
             includes
             overrides
       - name: Setup python
-        uses: actions/setup-python@v5.0.0
+        uses: actions/setup-python@v5.1.1
         with:
           python-version: 3.x
       - name: Get pip cache directory

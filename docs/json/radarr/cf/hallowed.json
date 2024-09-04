@@ -1,0 +1,19 @@
+{
+  "trash_id": "7a0d1ad358fee9f5b074af3ef3f9d9ef",
+  "trash_scores": {
+    "default": 600
+  },
+  "name": "hallowed",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "hallowed",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "^(hallowed)$"
+      }
+    }
+  ]
+}

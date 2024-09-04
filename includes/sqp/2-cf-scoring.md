@@ -7,6 +7,7 @@
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
+
     | Custom Format                                                                                                       |                                         Score                                         | Trash ID                                             |
     | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------: | ---------------------------------------------------- |
     | [{{ radarr['cf']['remux-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#remux-tier-01)           |            {{ radarr['cf']['remux-tier-01']['trash_scores']['default'] }}             | {{ radarr['cf']['remux-tier-01']['trash_id'] }}      |
@@ -25,7 +26,9 @@
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
-{! include-markdown "../../includes/sqp/uhd-radarr-optional.md" !}
+{! include-markdown "../../includes/cf/radarr-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/sqp/uhd-radarr-resolution.md" !}
 

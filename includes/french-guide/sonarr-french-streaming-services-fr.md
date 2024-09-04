@@ -1,4 +1,5 @@
 ??? abstract "Services de streaming en français - [Cliquer pour afficher/masquer]"
+
     | Formats Personnalisés                                                                                    | Trash ID                                           |
     | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
     | [{{ sonarr['cf']['french-canalplus']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#canalplus) | {{ sonarr['cf']['french-canalplus']['trash_id'] }} |

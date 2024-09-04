@@ -7,7 +7,7 @@
 - WEBDL-1080p
 - WEBRip-1080p
 
-and name it what ever you want I used: `WEB|Remux|Bluray|2160p`
+and name it what ever you want, we used: `WEB|Remux|Bluray|2160p`
 
 !!! info "If you're only running 1 Radarr, You might want to merge the HD Qualities together (WEB+Remux) and <ins>NOT</ins> with the UHD ones so you will also get the HD release if there is no UHD release."
 

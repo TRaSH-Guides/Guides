@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "hallowed",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(hallowed)$"
+      }
+    },
+    {
       "name": "HONE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -78,6 +87,15 @@
       "required": false,
       "fields": {
         "value": "^(SPHD)$"
+      }
+    },
+    {
+      "name": "W4NK3R",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W4NK3R)$"
       }
     }
   ]

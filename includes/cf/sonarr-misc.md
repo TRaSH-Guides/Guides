@@ -1,4 +1,5 @@
 ??? abstract "Misc - [Click to show/hide]"
+
     | Custom Format                                                                                            |                             Score                              | Trash ID                                        |
     | -------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ sonarr['cf']['repack-proper']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) | {{ sonarr['cf']['repack-proper']['trash_scores']['default'] }} | {{ sonarr['cf']['repack-proper']['trash_id'] }} |
@@ -7,7 +8,7 @@
 
     ??? tip "Proper and Repacks - [Click to show/hide]"
 
-        I also suggest to change the Propers and Repacks settings in Sonarr
+        We also suggest changing the Propers and Repacks settings in Sonarr.
 
         `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/sonarr-collection-of-custom-formats/#repackproper) Custom Format.
 

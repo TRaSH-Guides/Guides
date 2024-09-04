@@ -1,0 +1,75 @@
+{
+  "name": "HDR Formats",
+  "trash_id": "d9acca37ab4ab8f6428b68125fc0cacb",
+  "custom_formats": [
+    {
+      "name": "DV HDR10Plus",
+      "trash_id": "c53085ddbd027d9624b320627748612f",
+      "required": true
+    },
+    {
+      "name": "DV HDR10",
+      "trash_id": "e23edd2482476e595fb990b12e7c609c",
+      "required": true
+    },
+    {
+      "name": "DV",
+      "trash_id": "58d6a88f13e2db7f5059c41047876f00",
+      "required": true
+    },
+    {
+      "name": "DV HLG",
+      "trash_id": "55d53828b9d81cbe20b02efd00aa0efd",
+      "required": true
+    },
+    {
+      "name": "DV SDR",
+      "trash_id": "a3e19f8f627608af0211acd02bf89735",
+      "required": true
+    },
+    {
+      "name": "HDR10+",
+      "trash_id": "b974a6cd08c1066250f1f177d7aa1225",
+      "required": true
+    },
+    {
+      "name": "HDR10",
+      "trash_id": "dfb86d5941bc9075d6af23b09c2aeecd",
+      "required": true
+    },
+    {
+      "name": "HDR",
+      "trash_id": "e61e28db95d22bedcadf030b8f156d96",
+      "required": true
+    },
+    {
+      "name": "HDR (Undefined)",
+      "trash_id": "2a4d9069cc1fe3242ff9bdaebed239bb",
+      "required": true
+    },
+    {
+      "name": "PQ",
+      "trash_id": "08d6d8834ad9ec87b1dc7ec8148e7a1f",
+      "required": true
+    },
+    {
+      "name": "HLG",
+      "trash_id": "9364dd386c9b4a1100dde8264690add7",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
+      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
+      "SQP-2": "c3933358ba2356bafc41524f81471069",
+      "SQP-3": "2cf36c1f0106ffac993be003ade51865",
+      "SQP-4": "013f89e6da27519fe56cf482702a2db9",
+      "SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
+    }
+  }
+}

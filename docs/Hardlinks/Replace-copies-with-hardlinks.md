@@ -1,45 +1,73 @@
 # Replace copies with hardlinks
 
-You recently switched to a proper setup that supports Hardlinks and Instant Moves (Atomic-Moves).
+Have you recently switched to a setup that supports hardlinks and Instant Moves (Atomic-Moves), and would like to replace duplicated files with hardlinks?
 
-And you would like to replace copies with hardlinks ?
+If your Operating System supports it you could make use of [jdupes](https://codeberg.org/jbruchon/jdupes/releases).
 
-If your Operating System supports it you could make use of [Jdupes](https://codeberg.org/jbruchon/jdupes).
+The latest version's binaries are available for Windows at the link above. You can use a package manager, such as [homebrew](https://formulae.brew.sh/formula/jdupes), `apt`, or `pacman`, to install the latest available version for Mac or your flavor of Linux.
 
 ## Usage
 
 !!! info ""
-    I won't cover every command :bangbang:
 
-    If you want to know what else [Jdupes](https://codeberg.org/jbruchon/jdupes) can do please read the manual.
+    We won't cover every command :bangbang:
+
+    If you want to know what else [jdupes](https://codeberg.org/jbruchon/jdupes) can do please [read the usage manual](https://codeberg.org/jbruchon/jdupes#usage).
 
 !!! tip
-    This process can take a long time and a pretty big hit on your resources depending on how big your library is, I did notice the first time it takes longer then the second time. Not sure if this is a cache thing or something else.
 
-    - That's why I suggest to do it based on categories (Movies, TV, Music etc).
-    - I don't suggest to use this on a cloud based setup.
+    This process can put a significantly large load on your system resources for an extended period of time depending on the size of your library. As duplicates are discovered, and hardlinks are made, the process becomes more efficient - as linked and different-sized files are not repeatedly checked against eachother. This leads to subsequent runs potentially finishing faster.
+
+    To speed this process up _significantly_ more, you can leverage a hash database. This will store information about the files, including their signatures, across runs of `jdupes` - vastly increasing the speed at which runs are finished.
+
+    Simply use the following additional option _BEFORE YOUR DIRECTORIES_ with a path that is always available and persistent:
+
+        -y "/mnt/user/appdata/scripts/media_hash.db"
+
+    - We don't suggest using `jdupes` on a cloud-based setup.
+
+The following is a basic usage template:
 
 ```bash
 jdupes [options] DIR1 DIR2
 ```
 
-This will do a dry run and summarize at the end.
+The example below will do a dry run and summarize at the end.
+!!! info "Folder paths should be adjusted to match your directory structure"
 
-```bash
-jdupes -rMX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
-```
+=== "Without Hash Database"
 
-This will hard link all duplicate files without prompting.
+    ```bash
+    jdupes -rMX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+    ```
 
-```bash
-jdupes -rLX onlyext:mp4,mkv,avi "/data/torrents/movies/" "/data/media/movies"
-```
+=== "With Hash Database"
 
-!!! bug ""
-    Windows allows a maximum of 1023 hard links per file
+    ```bash
+    jdupes -rMX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+    ```
 
-!!! Warning
-    The `-Q` or `--quick` option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but significant risk of a hash collision which is the purpose of the failsafe byte-for-byte comparison that this option explicitly bypasses. Do not use it on ANY data set for which any amount of data loss is unacceptable. You have been warned!
+---
+
+The example below will hard link all duplicate files without prompting.
+!!! info "Folder paths should be adjusted to match your directory structure"
+
+=== "Without Hash Database"
+
+    ```bash
+    jdupes -rLX onlyext:mp4,mkv,avi "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+    ```
+
+=== "With Hash Database"
+
+    ```bash
+    jdupes -rLX onlyext:mp4,mkv,avi -y "/mnt/user/appdata/scripts/media_hash.db" "/mnt/user/data/torrents/movies/" "/mnt/user/data/media/movies"
+    ```
+
+---
+
+!!! bug "Windows only allows a maximum of 1023 hard links per file"
+
+!!! Warning "The `-Q` or `--quick` option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but significant risk of a hash collision which is the purpose of the failsafe byte-for-byte comparison that this option explicitly bypasses. Do not use it on ANY data set for which any amount of data loss is unacceptable. You have been warned!"
 
 {! include-markdown "../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->

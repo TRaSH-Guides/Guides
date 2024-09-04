@@ -1,11 +1,11 @@
-*This Custom Format will only match on* `DV HDR10`
+This Custom Format will only match on `DV HDR10`
 
-This format provides Dolby Vision *with* HDR10 fallback.
+This format provides Dolby Vision _with_ HDR10 fallback.
 You will find this mainly with:
 
 - Remuxes
 - Bluray encodes
-- Hybrid WEB-DL (*Hybrid isn't always mentioned*)
+- Hybrid WEB-DL (_Hybrid isn't always mentioned_)
 
 {! include-markdown "../../includes/cf-descriptions/dolby-vision.md" !}
 

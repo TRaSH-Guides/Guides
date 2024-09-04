@@ -8,7 +8,7 @@
     - You want to grab streaming optimized releases.
     - Small sizes.
 
-    ------
+    ---
 
     BHDStudio does HQ 1080p Encodes with the following features:
 

@@ -1,0 +1,41 @@
+name: Update contributors
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  update_contributors:
+    if: github.event_name == 'push' && contains(fromJson('["refs/heads/master", "refs/heads/main"]'), github.ref)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Update CONTRIBUTORS.md
+        run: |
+          node .github/scripts/update-contributors.js
+
+      - name: Commit and push if it's not up to date
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git diff
+          git commit -am "chore(contributors): Update CONTRIBUTORS.md" || exit 0
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master

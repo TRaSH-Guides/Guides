@@ -1,10 +1,10 @@
 # Sonarr
 
-Here you will find a collection of Sonarr guides I made.
+Here you will find a collection of Sonarr guides we've made.
 
 !!! info "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
 
-For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/sonarr){:target="_blank" rel="noopener noreferrer"}
+For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/sonarr){:target="\_blank" rel="noopener noreferrer"}
 
 ## Master
 
@@ -22,4 +22,4 @@ For Installation and Quick Start Guide please check the official [WikiArr](https
 
 ### How do I update Sonarr
 
-External link to the official [WikiArr](https://wiki.servarr.com/en/sonarr/faq#how-do-i-update-sonarr){:target="_blank" rel="noopener noreferrer"}.
+External link to the official [WikiArr](https://wiki.servarr.com/en/sonarr/faq#how-do-i-update-sonarr){:target="\_blank" rel="noopener noreferrer"}.

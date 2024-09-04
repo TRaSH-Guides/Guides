@@ -6,7 +6,6 @@ on:
       - master
   pull_request:
 
-
 jobs:
   triage:
     runs-on: ubuntu-latest

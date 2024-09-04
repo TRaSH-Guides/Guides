@@ -1,17 +1,8 @@
 # Recommended naming scheme
 
-On the [Sonarr Discord](https://discord.gg/M6BvZn5){:target="_blank" rel="noopener noreferrer"} people often ask, "What's the recommended/best way to
-name your files?" First off, it's personal preference, but it's often recommended to add non-recoverable info.
+--8<-- "includes/starr/renaming-description-faq.md"
 
-Why?
-
-If, for what ever reason, you ever need to do a re-install or re-import in
-the Starr Apps or Plex/Emby/Jellyfin it's nice to have all that info in the filename so
-it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
-
-!!! info "The Tokens not available in the release won't be used/shown."
-
-------
+---
 
 ## Preparation
 
@@ -27,126 +18,143 @@ Finally, enable `Rename Episodes` to reveal the episode renaming options.
 
 ![Enable Rename Episodes](images/sonarr-enable-rename.png)
 
-## Standard Episode Format
+---
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
-```
+## Episode Format
 
-??? abstract "RESULTS: - [Click to show/hide]"
+=== "Standard"
 
-    Single Episode:
+    ```bash
+    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default'] }}
+    ```
 
-    `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+    <sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-    Multi Episode:
+    <sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-    `The Series Title! (2010) - S01E01-E03 - Episode Title [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+=== "Daily"
 
-------
+    ```bash
+    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default'] }}
+    ```
 
-## Daily Episode Format
+    <sub><sup>**Example**: `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`</sup></sub>
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
-```
+=== "Anime"
 
-??? abstract "RESULTS: - [Click to show/hide]"
+    ```bash
+    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default'] }}
+    ```
 
-    `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
+    <sub><sup>**Single Episode**: `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
 
-------
+    <sub><sup>**Multi Episode**: `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`</sup></sub>
 
-## Anime Episode Format
+---
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
-```
+## Series Folder Format
 
-??? abstract "RESULTS: - [Click to show/hide]"
+--8<-- "includes/sonarr/imdb-vs-tvdb.md"
 
-    Single Episode:
+=== "Standard Folder"
 
-    `The Series Title! (2010) - S01E01 - 001 - Episode Title 1 [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
+    ```bash
+    {{ sonarr['naming']['sonarr-naming']['series']['default'] }}
+    ```
 
-    Multi Episode:
+    <sub><sup>**Example**: `The Series Title! (2010)`</sup></sub>
 
-    `The Series Title! (2010) - S01E01-E03 - 001-003 - Episode Title [iNTERNAL HDTV-720p v2][HDR10][10bit][x264][DTS 5.1][JA]-RlsGrp`
+=== "Optional Plex"
 
-------
+    This naming scheme is made to be used with the [New Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="\_blank" rel="noopener noreferrer"}
 
-### Series Folder Format
+    === "Plex Folder IMDb"
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['series']['default'] }}
-```
+        --8<-- "includes/sonarr/tvdb-imdb-info.md"
 
-<small>RESULT:</small> `The Series Title! (2010)`
+        ```bash
+        {{ sonarr['naming']['sonarr-naming']['series']['plex-imdb'] }}
+        ```
 
-#### Optional Series Folder Format
+        <sub><sup>**Example**: `The Series Title! (2010) {imdb-tt1520211}`</sup></sub>
 
-This naming scheme is made to be compatible with the new [Plex TV Series Scanner](https://forums.plex.tv/t/beta-new-plex-tv-series-scanner/696242){:target="_blank" rel="noopener noreferrer"} that now support IMDB and TVDB IDs in file names.
+    === "Plex Folder TVDb"
 
-##### Optional Plex
+        ```bash
+        {{ sonarr['naming']['sonarr-naming']['series']['plex-tvdb'] }}
+        ```
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['series']['plex'] }}
-```
+        <sub><sup>**Example**: `The Series Title! (2010) {tvdb-1520211}`</sup></sub>
 
-<small>RESULT:</small> `The Series Title! (2010) {imdb-tt1520211}`
+=== "Optional Emby"
 
-##### Optional Emby
+    Source: [Emby Wiki/Docs](https://emby.media/support/articles/TV-Naming.html#id-tags-in-folder--file-names){:target="\_blank" rel="noopener noreferrer"}
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['series']['emby'] }}
-```
+    === "Emby Folder IMDb"
 
-<small>RESULT:</small> `The Series Title! (2010)`
+        --8<-- "includes/sonarr/tvdb-imdb-info.md"
 
-##### Optional Jellyfin
+        ```bash
+        {{ sonarr['naming']['sonarr-naming']['series']['emby-imdb'] }}
+        ```
 
-```bash
-{{ sonarr['naming']['sonarr-naming']['series']['jellyfin'] }}
-```
+        <sub><sup>**Example**: `The Series Title! (2010) [imdb-tt1520211]`</sup></sub>
 
-<small>RESULT:</small> `The Series Title! (2010) [tvdbid-tt1520211]`
+    === "Emby Folder TVDb"
 
-!!! tip
-    IMDb IDs are going to be very accurate and rarely change, TVDB/TMDB IDs, on the other hand, do change or are removed more frequently.
+        ```bash
+        {{ sonarr['naming']['sonarr-naming']['series']['emby-tvdb'] }}
+        ```
 
-------
+        <sub><sup>**Example**: `The Series Title! (2010) [tvdb-1520211]`</sup></sub>
 
-### Season Folder Format
+=== "Optional Jellyfin"
 
-For this there's only one real option to use in my opinion.
+    Source: [Jellyfin Wiki/Docs](https://jellyfin.org/docs/general/server/media/shows/){:target="\_blank" rel="noopener noreferrer"}
+
+    !!! warning "Jellyfin doesn't support IMDb IDs for shows"
+
+    === "Jellyfin Folder TVDb"
+
+        ```bash
+        {{ sonarr['naming']['sonarr-naming']['series']['jellyfin-tvdb'] }}
+        ```
+
+        <sub><sup>**Example**: `The Series Title! (2010) [tvdbid-1520211]`</sup></sub>
+
+---
+
+## Season Folder Format
+
+For this, there's only one real option to use in our opinion.
 
 ```bash
 Season {season:00}
 ```
 
-RESULT: `Season 01`
+<sub><sup>**Example**: `Season 01`</sup></sub>
 
-------
+---
 
-### Multi-Episode Style
+## Multi-Episode Style
 
 ```bash
 Prefixed Range
 ```
 
-RESULTS:
+<sub><sup>**Example**:</sup></sub>
 
 ![results](images/results.png)
 
-------
+---
 
-## Original Title vs  Original Filename
+## Original Title vs Original Filename
 
 ### Original Title
 
 Another option is to use `{Original Title}` rather than the recommended naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
 
-If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
+If using this alternate naming scheme we suggest using `{Original Title}` over `{Original Filename}`
 
 Why?
 
@@ -156,10 +164,6 @@ The filename can be Obscured where the Release naming isn't, especially when you
 
 `{Original Filename}` => `show episode 1-1080p` or `lchd-tkk1080p` or `t1i0p3s7i8yuti`
 
-------
-
-Thanks:
-
-A big Thanks to [fryfrog](https://github.com/fryfrog), [rg9400](https://github.com/rg9400) and [bakerboy448](https://github.com/bakerboy448) for the suggestions.
+---
 
 --8<-- "includes/support.md"

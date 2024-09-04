@@ -2,7 +2,7 @@
 
 When you make use of the unRAID cache drive for your `/data/torrents` share, and the torrents in qBittorrent are still seeding, the mover can't move files since they are still in use.
 
-Using the following instructions will allow you to move the files with the use of the qBittorrent API.
+Using the following instructions will allow you to move the files using the qBittorrent API.
 
 !!! abstract "Workflow Rules"
 
@@ -23,9 +23,9 @@ Using the following instructions will allow you to move the files with the use o
 
 Download the following standalone Python script.
 
-- [Script (mover.py)](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="_blank" rel="noopener noreferrer"}
+- [Script (mover.py)](https://raw.githubusercontent.com/StuffAnThings/qbit_manage/master/scripts/mover.py){:target="\_blank" rel="noopener noreferrer"}
 
-Big Thnx to [bobokun](https://github.com/bobokun){:target="_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="_blank" rel="noopener noreferrer"}
+Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopener noreferrer"} Developer of [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"}
 
 ### Plugins
 
@@ -33,13 +33,13 @@ Install the following Plugins.
 
 - User Scripts
 - NerdTools
-      - python3 <sup>(*1*)</sup>
-      - python-setuptools <sup>(*1*)</sup>
-      - python-pip <sup>(*1*)</sup>
+    - python3 <sup>(_1_)</sup>
+    - python-setuptools <sup>(_1_)</sup>
+    - python-pip <sup>(_1_)</sup>
 
-!!! info "<sup>(*1*)</sup> These need to be installed from NerdTools."
+!!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
 
-------
+---
 
 ## Setup
 
@@ -52,6 +52,7 @@ The script needs the qbittorrent-api module to work, so we need to make sure it'
 You can choose one of the following 3 options (select a tab) to install `qbittorrent-api`.
 
 === "User scripts"
+
     With this option, we're going to install the `qbittorrent-api` module when the Array is started the first time.
 
     In your unRAID Dashboard, go to your `Settings` tab and select `User Scripts` in the `User Utilities` section at the bottom.
@@ -90,6 +91,7 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     ![!RUN IN BACKGROUND](images/Unraid-settings-user-scripts-qbit-api-run-background.png)
 
 === "Python venv"
+
     With this option, we're going to create a [Python virtual environment](https://docs.python.org/3/library/venv.html) on our disk. We will use this to run and store dependencies (`qbittorrent-api`) for this specific environment.
 
     By doing this, we will **only need to configure this once** and it will be persistent after reboots *(this differs from the previous steps)*.
@@ -97,7 +99,8 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     First, you need to choose a location to start a new Python environment.
 
     !!! info
-        In the next steps, you will be asked to choose a [location to store the script](#copy-script-to-your-preferred-location), try to be consistent.
+
+        In the next steps, you will be asked to choose a [location to store the script](#copy-the-script-to-your-preferred-location); please try to be consistent.
 
     Suggestions:
 
@@ -119,8 +122,11 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
     ```
 
     !!! info
+
         Replace `/mnt/user/data/scripts/.venv` with the path you have chosen.
+
 === "Go File"
+
     With this option, we're going to install the `qbittorrent` module when the unRAID server is started.
 
     On your USB stick/key go to `/boot/config` and open the `go` file with your text editor ([VSCode](https://code.visualstudio.com/){:target="_blank" rel="noopener noreferrer"}/[Notepad++](https://notepad-plus-plus.org/downloads/){:target="_blank" rel="noopener noreferrer"}).
@@ -133,20 +139,13 @@ You can choose one of the following 3 options (select a tab) to install `qbittor
 
     Restart your unRAID Server or run the above command from the terminal.
 
-------
+---
 
 ### Script
 
-!!! warning ""
-    Depending on whether you use the unRaid `Mover Tuning` app, You might need to change **line 94**:
-
-    - If you do not use `Mover Tuning`, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`
-    - If you use `Mover Tuning` but **don't** want to use it for the script, do not change **line 94**
-    - If you use `Mover Tuning` and **do** want to use it for the script, change **line 94** from `os.system('/usr/local/sbin/mover.old start')` to `os.system('/usr/local/sbin/mover start')`. For this option, inside the `Mover Tuner` options you will also need to set `Move Now button follows plugin filters` to `Yes` and `Disable Mover running on a schedule` to `No`.
-
 #### Copy the script to your preferred location
 
-Place the script you just edited somewhere easy to access/remember.
+Place the qBit-Mover script somewhere easy to access/remember.
 
 Suggestions:
 
@@ -174,13 +173,16 @@ Click on the cogwheel of the new script in the list.
 ![!Select user script](images/Unraid-settings-user-scripts-list-select-qbit-mover.png)
 
 Choose your method (select a tab) and copy/paste the script in the new window that opens, then click `SAVE CHANGES`.
+
+!!! info "replace `ip` with your unraid server ip, replace `port` with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI"
+
 === "Python (Native)"
 
     ``` bash
         #!/bin/bash
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --cache-mount "/mnt/cache" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
@@ -192,21 +194,21 @@ Choose your method (select a tab) and copy/paste the script in the new window th
 
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover starting @ `date +%H:%M:%S`."
         echo "executing script to pause torrents and run mover."
-        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "localhost:8080" --user "your_user" --password "your_password" --days_from 0 --days_to 2
+        /mnt/user/data/scripts/.venv/bin/python3 /mnt/user/data/scripts/mover.py --host "ip:port" --user "your_user" --password "your_password" --cache-mount "/mnt/cache" --days_from 0 --days_to 2
         echo "qbittorrent-mover completed and resumed all paused torrents."
         /usr/local/emhttp/plugins/dynamix/scripts/notify -s "qBittorrent Mover" -d "qBittorrent Mover completed @ `date +%H:%M:%S`."
     ```
 
-!!! info
-    Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script.
+!!! info "Replace `/mnt/user/data/scripts/` in the script with the path you have chosen for the Python script (qBit-Mover script)."
 
-- `days_from` => Set Number of Days to stop torrents **from** for the move.
-- `days_to` => Set Number of Days to stop torrents **to** for the move.
-- `host` => The URL you use to access qBittorrent locally.
-- `user` => Your used qBittorrent `User Name` if you have authentication enabled.
-- `password` => Your used qBittorrent `Password` if you have authentication enabled.
+- `--days_from` => Set Number of Days to stop torrents **from** for the move.
+- `--days_to` => Set Number of Days to stop torrents **to** for the move.
+- `--host` => Replace ip with your unraid server ip, and replace `port` with your qBittorrent WebGUI port you use to access the qBittorrent WebGUI.
+- `--user` => Your used qBittorrent `User Name` if you have authentication enabled.
+- `--password` => Your used qBittorrent `Password` if you have authentication enabled.
+- `--cache-mount` => Cache mount point in Unraid. This is used to additionally filter for only torrents that exist on the cache mount. Use this option ONLY if you follow the TRaSH Guides folder structure. (For default cache drive set this to `/mnt/cache`)
 
-![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)
+<!--- ![!Bash script](images/Unraid-settings-user-scripts-qbit-mover.png)-->
 
 Click the schedule dropdown to choose when the script should run. We want to select `Custom`.
 

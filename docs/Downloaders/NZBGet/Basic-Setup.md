@@ -1,11 +1,10 @@
 # NZBGet - Basic Setup
 
-!!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
+!!! note "NZBGet development has been picked up again by new developers over at [github](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}!"
 
 {! include-markdown "../../../includes/downloaders/basic-setup.md" !}
-<!-- --8<-- "includes/downloaders/basic-setup.md" -->
 
-------
+---
 
 ## Some Basics
 
@@ -19,7 +18,7 @@
 
 ![!paths](images/paths.png)
 
-I will only explain the so called most important paths.
+I will only explain the so-called most important paths.
 
 | Name        | Description                                                                          |
 | :---------- | :----------------------------------------------------------------------------------- |
@@ -63,14 +62,16 @@ I will only explain the so called most important paths.
 ![!incoming](images/incoming.png)
 
 !!! info
-    `AppendCategoryDir`: Create subdirectory with category-name in destination-directory.
+
+    `AppendCategoryDir`: Create a subdirectory with category-name in destination-directory.
 
 ## DOWNLOAD QUEUE
 
 ![!queue](images/queue.png)
 
 !!! warning
-    `WriteBuffer`: If you're low on memory don't set this to high.
+
+    `WriteBuffer`: If you're low on memory don't set this too high.
 
 ## LOGGING
 
@@ -85,7 +86,8 @@ I will only explain the so called most important paths.
 ![!unpack](images/unpack.png)
 
 !!! info
-    `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low powered devices)
+
+    `DirectUnpack`: This might lower your download speed but the overall time could be faster. (disable on low-powered devices)
 
 ## EXTENSION SCRIPTS
 
@@ -93,11 +95,11 @@ I will only explain the so called most important paths.
 
 Depending if you're using some NZBGet script here you can change the order or when it should be used
 
-------
+---
 
 ## Recommended Sonarr/Radarr Settings
 
-The following settings are recommended to for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
+The following settings are recommended for Sonarr/Radarr, else it could happen that Sonarr/Radarr will miss downloads that are still in the queue/history.
 Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
 ### Sonarr
@@ -108,9 +110,9 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Sonarr: Settings => Download Clients](images/sonarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3.
+    Make sure you check both boxes under `Completed Download Handling` in step 3.
 
-    Select NZBGet at step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
+    Select NZBGet in step 4 and scroll down to the bottom of the new window where it says `Completed Download Handling` and check both boxes.
 
     ![!Sonarr: Download Clients - SABnzbd](images/sonarr-download-clients-nzbget.png)
 
@@ -122,9 +124,8 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.
 
     ![!Radarr: Settings => Download Clients](images/radarr-settings-download-clients.png)
 
-    Make sure you check both boxes under `Completed Download Handling` at step 3,
+    Make sure you check both boxes under `Completed Download Handling` in step 3,
 
-    and both boxes under `Failed Download Handling` at step 4.
+    and both boxes under `Failed Download Handling` in step 4.
 
-{! include-markdown "../../../includes/support.md" !}
-<!-- --8<-- "includes/support.md" -->
+--8<-- "includes/support.md"

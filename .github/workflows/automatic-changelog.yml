@@ -1,0 +1,55 @@
+name: Update changelog
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.6
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
+
+      - name: Get last edit time of docs/updates.txt
+        run: |
+          last_edit_time=$(git log -1 --pretty="format:%cI" docs/updates.txt)
+          echo "Last edit time: $last_edit_time"
+          echo "LAST_EDIT_TIME=$last_edit_time" >> $GITHUB_ENV
+
+      - name: Run git log
+        run: |
+          git log --no-merges --perl-regexp --author='^(?!.*(\[bot\]|actions@github\.com)).*$' --grep='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|update)(\(.*?\))?:' --since="${{ env.LAST_EDIT_TIME }}" --pretty="%s" > log_output.txt
+
+      - name: Check if there are new commits
+        run: |
+          if [ -s log_output.txt ]; then
+            echo "NEW_COMMITS=true" >> $GITHUB_ENV
+          else
+            echo "No new commits since the last update of docs/updates.txt."
+            echo "NEW_COMMITS=false" >> $GITHUB_ENV
+          fi
+
+      - name: Run update script
+        if: env.NEW_COMMITS == 'true'
+        run: |
+          .github/scripts/update-changelog.sh log_output.txt
+
+      - name: Commit and push if it's not up to date
+        if: env.NEW_COMMITS == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git diff
+          git commit -am "chore(changelog): Update updates.txt" || exit 0
+          git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:master

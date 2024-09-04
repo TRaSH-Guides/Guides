@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    { "$ref": "../base-cf.schema.json#/defs/baseSpecification" },
+    {
+      "properties": {
+        "implementation": {
+          "const": "SizeSpecification"
+        },
+        "fields": {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": ["min", "max"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["implementation", "fields"]
+    }
+  ]
+}

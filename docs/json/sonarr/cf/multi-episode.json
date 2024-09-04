@@ -1,14 +1,15 @@
 {
-  "name": "Season Pack",
+  "trash_id": "4a20cfb76b5f92a8ca22b894b32e71be",
+  "name": "Multi-Episode",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "Season Packs",
+      "name": "Multi-Episode",
       "implementation": "ReleaseTypeSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": 3
+        "value": 2
       }
     }
   ]

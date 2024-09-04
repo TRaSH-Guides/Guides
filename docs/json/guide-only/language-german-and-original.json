@@ -1,0 +1,38 @@
+{
+  "trash_id": "guide-only",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_description": "Language: German Dual and Multi language releases",
+  "name": "Language: German + Original",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "DL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
+      }
+    },
+    {
+      "name": "ML",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ML)\\b"
+      }
+    }
+  ]
+}

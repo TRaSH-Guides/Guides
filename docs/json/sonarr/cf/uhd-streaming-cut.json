@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
+        "value": "\\b(hmax|hbom|hbo[ ._-]?max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"
       }
     },
     {

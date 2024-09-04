@@ -10,11 +10,11 @@ jobs:
   markdownlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.2
+      - uses: actions/checkout@v4.1.6
       - name: markdownlint
         run: |
           docker run --rm \
-            -v "${GITHUB_WORKSPACE}":/data \
-            markdownlint/markdownlint \
-            -r ~MD013,~MD033,~MD034,~MD046,~MD002,~MD041 \
+            -v "${GITHUB_WORKSPACE}":/workdir \
+            ghcr.io/igorshubovych/markdownlint-cli \
+            -c "/workdir/.markdownlint.yaml" \
             .

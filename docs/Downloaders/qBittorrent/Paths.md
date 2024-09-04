@@ -1,7 +1,6 @@
 # qBittorrent - Paths
 
 {! include-markdown "../../../includes/downloaders/path.md" !}
-<!-- --8<-- "includes/downloaders/path.md" -->
 
 ---
 

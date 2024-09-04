@@ -1,0 +1,19 @@
+{
+  "trash_id": "c99279ee27a154c2f20d1d505cc99e25",
+  "trash_scores": {
+    "default": 5
+  },
+  "name": "720p",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "720p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 720
+      }
+    }
+  ]
+}
