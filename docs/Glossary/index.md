@@ -22,7 +22,7 @@ Minimum, Preferred and Maximum file sizes for any given [Quality](#quality). Mea
 
 ### Quality Profile
 
-A named grouping of qualities, [custom format](#custom-format) scores, and other settings that movies, TV shows and collections can be assigned to.
+A named grouping of qualities, [Custom Format](#custom-format) scores, and other settings that movies, TV shows and collections can be assigned to.
 
 ---
 
