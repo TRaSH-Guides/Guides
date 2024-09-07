@@ -1,4 +1,4 @@
-# Common Words and Terms
+# Glossary
 
 A list of commonly used words and terms, grouped by application or function.
 
@@ -34,7 +34,7 @@ The act of [seeding](#seeder) the same torrent to multiple [trackers](#tracker).
 
 ### Deluge
 
-Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+A lightweight, Free Software, cross-platform BitTorrent client.
 
 ### qBit Manage
 
