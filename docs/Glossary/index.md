@@ -1,28 +1,32 @@
 # Glossary
 
-A list of commonly used words and terms, grouped by application or function.
+This glossary provides definitions of commonly used terms and phrases, organized by application or function.
 
 ---
 
-## Radarr, Sonarr and Lidarr
+## Media Management Applications
 
-These applications manage your media libraries, for movies, TV and music respectively.
+**Radarr**, **Sonarr**, and **Lidarr** are applications designed to manage your media libraries:
+
+- **Radarr**: For movies
+- **Sonarr**: For TV shows
+- **Lidarr**: For music
 
 ### Custom Format
 
-An object in Radarr, Sonarr and Lidarr that will match aspects of any given release based on data captured from its name. Matching criteria are set by the user. Custom formats can be assigned scores on a per-[Quality Profile](#quality-profile) basis.
+A feature that matches specific aspects of a release based on information extracted from its name. Users choose the matching criteria, and Custom Formats can be assigned scores on a per-[Quality Profile](#quality-profile) basis.
 
 ### Quality
 
-A specific release quality describing the source and optionally resolution, for example Bluray-2160p or Remux-1080p.
+Refers to the specific release quality that describes both the source and, optionally, the resolution. Examples of qualities include **Bluray-2160p** and **Remux-1080p**, though many others exist.
 
 ### Quality Definitions
 
-Minimum, Preferred and Maximum file sizes for any given [Quality](#quality). Measured in megabytes per minute.
+Defines the Minimum, Preferred, and Maximum file sizes for any given [Quality](#quality). Sizes are measured in megabytes per minute.
 
 ### Quality Profile
 
-A named grouping of qualities, [Custom Format](#custom-format) scores, and other settings that movies, TV shows and collections can be assigned to.
+A defined group of qualities, [Custom Format](#custom-format) scores, and additional settings that can be assigned to movies, TV shows, and collections.
 
 ---
 
@@ -30,53 +34,53 @@ A named grouping of qualities, [Custom Format](#custom-format) scores, and other
 
 ### Cross-Seed
 
-The act of [seeding](#seeder) the same torrent to multiple [trackers](#tracker). Also refers to the application of the same name that automates this process.
+The act of [seeding](#seeder) the same torrent across multiple [trackers](#tracker). It also refers to a software application of the same name that automates this process.
 
 ### Deluge
 
-A lightweight, Free Software, cross-platform BitTorrent client.
+A lightweight, free, cross-platform BitTorrent client.
 
 ### qBit Manage
 
-A program used to manage your [qBittorrent](#qbittorrent) instance, and automate actions against torrents based on their time, tracker, and other attributes.
+A program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes, such as time and tracker.
 
 ### qBittorrent
 
-A free, cross-platform and open-source BitTorrent client.
+A free, open-source, cross-platform BitTorrent client.
 
 ### Leecher
 
-A BitTorrent user who is actively downloading a torrent. This is known as 'leeching' Also a term used to refer to users who download torrents but do not seed them afterwards.
+A BitTorrent user who is actively downloading a torrent (referred to as 'leeching'). This term can also describe users who download torrents without sharing them afterward.
 
 ### Peer
 
-A general name for both [Seeders](#seeder) and [Leechers](#leecher).
+A general term that encompasses both [Seeders](#seeder) and [Leechers](#leecher).
 
 ### Seeder
 
-BitTorrent users who have a complete copy of all the files in a single torrent, and are sharing them. This is known as 'seeding'.
+BitTorrent users who possess the complete set of files in a specific torrent and are sharing them, a process known as 'seeding'.
 
 ### Swarm
 
-All BitTorrent users for any given torrent that are connected and sharing any part of the file. Made up of 'seeders' and 'leechers'.
+The collective group of all BitTorrent users connected to a given torrent, sharing parts of the file. This group includes both [Seeders](#seeder) and [Leechers](#leecher).
 
 ### Torrent File
 
-A file that contains metadata about files and folders to be distributed, and usually also a list of the network locations of [trackers](#tracker). Torrent files have the extension .torrent.
+A file containing metadata about the files and folders to be distributed, along with a list of network locations of [trackers](#tracker). Torrent files typically bear the extension `.torrent`.
 
 ### Tracker
 
-Computers that help participants in the system find each other and form efficient distribution groups called [swarms](#swarm). 'Tracker' is also an informal name given to sites that host [.torrent files](#torrent-file) and run their own tracker.
+Servers that assist participants in locating each other and forming efficient distribution groups known as [swarms](#swarm). The term 'tracker' is also informally used for sites that host [.torrent files](#torrent-file) and operate their own tracker servers.
 
 ---
 
 ## Shorthand
 
-Many words and terms also have equivalent acronyms, initialisms or shorthand versions.
+This section lists equivalent acronyms, initialisms, or shorthand versions for various terms.
 
 ### CF
 
-CloudFlare, [Custom Formats](#custom-format).
+**CloudFlare**, [Custom Formats](#custom-format).
 
 ### qBit
 
