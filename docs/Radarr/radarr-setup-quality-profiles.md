@@ -100,7 +100,7 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-cf-hd-bluray-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
@@ -108,7 +108,7 @@ If you prefer High-Quality HD Encodes (Bluray-720p/1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-optional.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -150,7 +150,7 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
@@ -160,9 +160,9 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-optional.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -200,7 +200,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/radarr-unwanted.md" !}
 
@@ -210,7 +210,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-optional.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
@@ -250,7 +250,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-cf-remux-web-scoring.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/radarr-unwanted-uhd.md" !}
 
@@ -260,9 +260,9 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-optional.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 

@@ -93,7 +93,7 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
@@ -101,7 +101,7 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
 Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
@@ -140,7 +140,7 @@ The only deal breaker with 2160p is when the release includes DV/HDR. 2160p with
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
@@ -148,9 +148,9 @@ The only deal breaker with 2160p is when the release includes DV/HDR. 2160p with
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
 
 Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 

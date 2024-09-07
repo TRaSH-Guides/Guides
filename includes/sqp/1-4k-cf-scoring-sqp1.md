@@ -81,7 +81,7 @@
         - [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)
         - [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/sqp/radarr-unwanted-uhd-sqp1.md" !}
 
@@ -120,7 +120,7 @@
     - **{{ radarr['cf']['hdr10plus-boost']['name'] }}:** [*Optional*] (use this one only if you have a (Samsung) TV that supports HDR10+ and don't mind the chance to get less streaming optimized releases)
     - **{{ radarr['cf']['dv-hdr10plus-boost']['name'] }}:** [*Optional*] (use this one only if you don't mind the chance to get less streaming optimized releases)
 
-{! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 ??? abstract "Movie Versions - [Click to show/hide]"
 

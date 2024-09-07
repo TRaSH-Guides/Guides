@@ -39,7 +39,7 @@
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/sqp/radarr-unwanted-sqp1.md" !}
 
@@ -49,7 +49,7 @@
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/sqp/hd-radarr-optional.md" !}
+{! include-markdown "../../includes/sqp/hd-radarr-misc-optional.md" !}
 
 ??? abstract "Movie Versions - [Click to show/hide]"
 

@@ -124,7 +124,7 @@ If you prefer High-Quality HD Encodes (Bluray-720/1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
@@ -168,7 +168,7 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-en.md" !}
 
@@ -208,7 +208,7 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
@@ -250,7 +250,7 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-en.md" !}
 
