@@ -1,12 +1,12 @@
-??? abstract "Optional - [Click to show/hide]"
+??? abstract "Miscellaneous (Optional) - [Click to show/hide]"
 
-    | Custom Format                                                                                                       |                              Score                               | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-    | [{{ sonarr['cf']['bad-dual-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups)       | {{ sonarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ sonarr['cf']['bad-dual-groups']['trash_id'] }} |
-    | [{{ sonarr['cf']['no-rlsgroup']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup)               |   {{ sonarr['cf']['no-rlsgroup']['trash_scores']['default'] }}   | {{ sonarr['cf']['no-rlsgroup']['trash_id'] }}     |
-    | [{{ sonarr['cf']['obfuscated']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#obfuscated)                 |   {{ sonarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ sonarr['cf']['obfuscated']['trash_id'] }}      |
-    | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#retags)                         |     {{ sonarr['cf']['retags']['trash_scores']['default'] }}      | {{ sonarr['cf']['retags']['trash_id'] }}          |
-    | [{{ sonarr['cf']['scene']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#scene)                           |      {{ sonarr['cf']['scene']['trash_scores']['default'] }}      | {{ sonarr['cf']['scene']['trash_id'] }}           |
+    | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
+    | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
+    | [{{ sonarr['cf']['bad-dual-groups']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups) | {{ sonarr['cf']['bad-dual-groups']['trash_scores']['default'] }} | {{ sonarr['cf']['bad-dual-groups']['trash_id'] }} |
+    | [{{ sonarr['cf']['no-rlsgroup']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup)         |   {{ sonarr['cf']['no-rlsgroup']['trash_scores']['default'] }}   | {{ sonarr['cf']['no-rlsgroup']['trash_id'] }}     |
+    | [{{ sonarr['cf']['obfuscated']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#obfuscated)           |   {{ sonarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ sonarr['cf']['obfuscated']['trash_id'] }}      |
+    | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#retags)                   |     {{ sonarr['cf']['retags']['trash_scores']['default'] }}      | {{ sonarr['cf']['retags']['trash_id'] }}          |
+    | [{{ sonarr['cf']['scene']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#scene)                     |      {{ sonarr['cf']['scene']['trash_scores']['default'] }}      | {{ sonarr['cf']['scene']['trash_id'] }}           |
 
     ---
 

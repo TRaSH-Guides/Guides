@@ -89,9 +89,9 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
+**The following Custom Formats are required:**
 
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
@@ -99,7 +99,11 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
-I decided not to add `Audio Advanced` Custom Formats to the WEB profile, You will hardly find HD audio with WEB-DL (most newer WEBDL will have Atmos). If you want HD audio formats, we would suggest going with Remuxes.
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+
+Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
 Use the following main settings in your profile.
 
@@ -130,13 +134,11 @@ The only deal breaker with 2160p is when the release includes DV/HDR. 2160p with
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
+**The following Custom Formats are required:**
+
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc.md" !}
 
@@ -144,7 +146,13 @@ The only deal breaker with 2160p is when the release includes DV/HDR. 2160p with
 
 {! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
-I decided not to add `Audio Advanced` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-optional.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
+
+Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
 Use the following main settings in your profile.
 
