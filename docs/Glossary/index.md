@@ -10,7 +10,7 @@ These applications manage your media libraries, for movies, TV and music respect
 
 ### Custom Format
 
-An object in Radarr, Sonarr and Lidarr that will match aspects of any given release based on data captured from its name. Matching criteria are set by the user. Custom formats can be assigned scores on a per-[Quality Profile](#quality-profile) basis
+An object in Radarr, Sonarr and Lidarr that will match aspects of any given release based on data captured from its name. Matching criteria are set by the user. Custom formats can be assigned scores on a per-[Quality Profile](#quality-profile) basis.
 
 ### Quality
 
@@ -69,3 +69,19 @@ A file that contains metadata about files and folders to be distributed, and usu
 Computers that help participants in the system find each other and form efficient distribution groups called [swarms](#swarm). 'Tracker' is also an informal name given to sites that host [.torrent files](#torrent-file) and run their own tracker.
 
 ---
+
+## Shorthand
+
+Many words and terms also have equivalent acronyms, initialisms or shorthand versions.
+
+### CF
+
+CloudFlare, [Custom Formats](#custom-format).
+
+### qBit
+
+[qBittorrent](#qbittorrent).
+
+### QP
+
+[Quality Profile](#quality-profile).
