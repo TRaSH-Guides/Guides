@@ -160,11 +160,11 @@ If you prefer High-Quality UHD Encodes (Bluray-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
-
 {! include-markdown "../../includes/cf/radarr-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
 Use the following main settings in your profile.
 
@@ -210,9 +210,9 @@ If you prefer 1080p Remuxes (Remux-1080p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
 {! include-markdown "../../includes/cf/radarr-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 Use the following main settings in your profile.
 
@@ -260,11 +260,11 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
 {! include-markdown "../../includes/cf/radarr-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-optional-uhd.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 Use the following main settings in your profile.
 
