@@ -1,3 +1,9 @@
+# 2024-09-08 01:24
+- [feat(starr-anime): Add Korean to Anime Dual Audio](https://github.com/TRaSH-Guides/Guides/pull/2057)
+- [feat(starr-anime): Add Korean to Anime Dual Audio](https://github.com/TRaSH-Guides/Guides/pull/2054)
+- [feat(guide): Hardlinks - File and Folder Structure for Windows](https://github.com/TRaSH-Guides/Guides/pull/2049)
+- [feat(guide): Hardlinks FAQ - Always show the limitations](https://github.com/TRaSH-Guides/Guides/pull/2048)
+
 # 2024-09-01 01:36
 - [fix(bazarr): inconsistent headers](https://github.com/TRaSH-Guides/Guides/pull/2047)
 - [fix(sonarr): Increase preferred and maximum Sonarr quality definition sizes](https://github.com/TRaSH-Guides/Guides/pull/2037)
