@@ -100,7 +100,7 @@ Si vous préférez les 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
@@ -139,9 +139,9 @@ Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
