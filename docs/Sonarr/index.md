@@ -1,25 +1,34 @@
 # Sonarr
 
-Here you will find a collection of Sonarr guides we've made.
+## Basic guides
 
-!!! info "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
+For Installation, Quick Start Guide, and the basics of Sonarr, please check the official [WikiArr](https://wiki.servarr.com/en/sonarr){:target="\_blank" rel="noopener noreferrer"}.
 
-For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/en/sonarr){:target="\_blank" rel="noopener noreferrer"}
+### Current Versions
 
-## Master
+![Current Master/Stable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Main&query=%24%5B%27v4-stable%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb } ![Current Develop/Nightly](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Develop&query=%24%5B%27v4-nightly%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb }
 
-![Current Master/Stable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Main&query=%24%5B%27v4-stable%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb }
+## Available guides
 
-(Default/Stable): This has been tested by users on nightly (`develop`) branch and it's not known to have any major issues. This branch should be used by the majority of users. On GitHub, this is the `main` branch.
+After setting up your optimal volume/paths found [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/), follow the steps below to improve your setup.
 
-## Develop
+1. [Quality Settings (File Size)](/Sonarr/Sonarr-Quality-Settings-File-Size/) - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
+1. [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/) - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
+1. [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles/) - How to make the most use of the Custom Formats and shows some specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
+    - [How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
+    - [How to set up Quality Profiles (French)](/Sonarr/sonarr-setup-quality-profiles-french-en/) - Same as above but specific for French and English Audio.
 
-![Current Develop/Nightly](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Develop&query=%24%5B%27v4-nightly%27%5D.version&url=https%3A%2F%2Fservices.sonarr.tv%2Fv1%2Freleases){ .off-glb }
+---
 
-(Alpha/Unstable) : This is the bleeding edge for Sonarr v4 Beta. It is released as soon as code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self investigation are expected in this branch. On GitHub, this is the develop branch.
+- [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/) - How to manually import the Custom Formats from the Guide.
+- [How to update Custom Formats](/Sonarr/sonarr-how-to-update-custom-formats/) - How to manually upgrade your existing Custom Formats.
+- [Collection of Custom Formats](/Sonarr/sonarr-collection-of-custom-formats/) - A collection of the most needed and commonly used Custom Formats. These Custom Formats have been collected from discussions on Discord or created with help from others.
 
-!!! danger "**Warning: You may not be able to go back to `main` after switching to this branch.** On GitHub, this is the `develop` branch."
+---
 
-### How do I update Sonarr
-
-External link to the official [WikiArr](https://wiki.servarr.com/en/sonarr/faq#how-do-i-update-sonarr){:target="\_blank" rel="noopener noreferrer"}.
+- Tips - Several other guides for Sonarr.
+    - [How to set up Language Custom Formats](/Sonarr/Tips/How-to-setup-language-custom-formats/) - A few examples of how to set up your preferred language Custom Format.
+    - [How to Merge Quality](/Sonarr/Tips/Merge-quality/) - How to merge quality sources if you prefer to not have Quality Trump All, and let it be handled via Custom Formats.
+    - [Remote Path Mappings](/Sonarr/Sonarr-remote-path-mapping/) - How to set up remote path mapping.
+    - [How to rename your folders](/Sonarr/Tips/Sonarr-rename-your-folders/) - How to rename or change your root folder.
+    - [How to Sync 2 Radarr or Sonarr with each other](/Sonarr/Tips/Sync-2-radarr-sonarr/) - How you can sync two (or more) Radarr/Sonarr instances with each other.

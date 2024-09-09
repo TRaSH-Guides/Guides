@@ -126,4 +126,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
-{! include-markdown "../../includes/support.md" !}
+--8<-- "includes/support.md"

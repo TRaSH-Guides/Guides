@@ -1,41 +1,13 @@
 # Lidarr
 
+## Basic guides
+
+For Installation, Quick Start Guide, and the basics of Lidarr, please check the official [WikiArr](https://wiki.servarr.com/lidarr){:target="\_blank" rel="noopener noreferrer"}.
+
+### Current Versions
+
+![Current Master/Stable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Master&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/master/changes){ .off-glb } ![Current Develop/Beta](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Develop&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/develop/changes){ .off-glb } ![Current Nightly/Unstable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Nightly&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/nightly/changes){ .off-glb }
+
+## Available guides
+
 !!! failure "TRaSH Guides do not have any guides related to Lidarr.<br>We suggest that you use [Davo's Community Lidarr Guide](https://wiki.servarr.com/lidarr/community-guide "Like TRaSH Guides, but Davo for Lidarr"){:target="\_blank" rel="noopener noreferrer"}"
-
----
-
-!!! info "Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available."
-
-For Installation and Quick Start Guide please check the official [WikiArr](https://wiki.servarr.com/lidarr){:target="\_blank" rel="noopener noreferrer"}
-
----
-
-## Master
-
-![Current Master/Stable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Master&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/master/changes){ .off-glb }
-
-(Default/Stable): It has been tested by users on the develop and nightly branches and it’s not known to have any major issues. This version will receive updates approximately monthly. On GitHub, this is the `master` branch.
-
-## Develop
-
-![Current Develop/Beta](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Develop&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/develop/changes){ .off-glb }
-
-(Beta): This is the testing edge. Released after being tested in the nightly branch to ensure no immediate issues. New features and bug fixes are released here first after nightly. It can be considered semi-stable but is still `beta`. This version will receive updates either weekly or biweekly depending on development.
-
-!!! warning "**Warning: You may not be able to go back to `master` after switching to this branch.** On GitHub, this is a snapshot of the `develop` branch at a specific point in time."
-
-## Nightly
-
-![Current Nightly/Unstable](https://img.shields.io/badge/dynamic/json?color=4051B5&style=for-the-badge&label=Nightly&query=%24%5B0%5D.version&url=https://lidarr.servarr.com/v1/update/nightly/changes){ .off-glb }
-
-(Alpha/Unstable) : This is the bleeding edge. It is released as soon as the code is committed and passes all automated tests. This build may have not been used by us or other users yet. There is no guarantee that it will even run in some cases. This branch is only recommended for advanced users. Issues and self-investigation are expected in this branch.
-
-**_Use this branch only if you know what you are doing and are willing to get your hands dirty to recover a failed update._**
-
-This version is updated immediately.
-
-!!! danger "**Warning: You may not be able to go back to `master` after switching to this branch.** On GitHub, this is the `develop` branch."
-
-### How do I update Lidarr
-
-External link to the official [WikiArr](https://wiki.servarr.com/en/lidarr/faq#how-do-i-update-lidarr){:target="\_blank" rel="noopener noreferrer"}.

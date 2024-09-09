@@ -1,5 +1,7 @@
 # How to rename your folders
 
+!!! info "The same basics can be used with Sonarr, just replace movies with series."
+
 If you need to rename your current folder names (for example, to a new naming scheme), you can do so with a little "magic trick".
 
 ![!radarr-wrong-folder-name](images/radarr-wrong-folder-name.png)
