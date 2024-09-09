@@ -17,11 +17,11 @@
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
-         <loc>https://trash-guides.info/Bazarr/Setup-Guide/</loc>
+         <loc>https://trash-guides.info/Bazarr/Bazarr-suggested-scoring/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
-         <loc>https://trash-guides.info/Bazarr/Tips/Bazarr-suggested-scoring/</loc>
+         <loc>https://trash-guides.info/Bazarr/Setup-Guide/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
@@ -38,6 +38,10 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Downloaders/Deluge/Basic-Setup/</loc>
+         <lastmod>2024-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Downloaders/Deluge/Installing/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
@@ -269,10 +273,6 @@
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
-         <loc>https://trash-guides.info/Radarr/Radarr-remote-path-mapping/</loc>
-         <lastmod>2024-09-09</lastmod>
-    </url>
-    <url>
          <loc>https://trash-guides.info/Radarr/radarr-setup-quality-profiles-anime/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
@@ -294,6 +294,10 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Radarr/Tips/Merge-quality/</loc>
+         <lastmod>2024-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Radarr/Tips/Radarr-remote-path-mapping/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
@@ -361,10 +365,6 @@
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
-         <loc>https://trash-guides.info/Sonarr/Sonarr-remote-path-mapping/</loc>
-         <lastmod>2024-09-09</lastmod>
-    </url>
-    <url>
          <loc>https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
@@ -402,6 +402,14 @@
     </url>
     <url>
          <loc>https://trash-guides.info/Sonarr/Tips/Merge-quality/</loc>
+         <lastmod>2024-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/Tips/Sonarr-remote-path-mapping/</loc>
+         <lastmod>2024-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://trash-guides.info/Sonarr/Tips/Sonarr-rename-your-folders/</loc>
          <lastmod>2024-09-09</lastmod>
     </url>
     <url>
