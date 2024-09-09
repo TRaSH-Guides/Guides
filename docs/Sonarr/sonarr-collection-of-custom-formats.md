@@ -92,25 +92,33 @@ We've made 3 guides related to this.
 
 ---
 
-| Misc                           | Optional                               | French Audio Version          | French Source Groups                          |
-| ------------------------------ | -------------------------------------- | ----------------------------- | --------------------------------------------- |
-| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups)    | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
-| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)                  | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
-| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)                | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
-| [Repack v2](#repack-v2)        | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
-| [Repack v3](#repack-v3)        | [HDR10+ Boost](#hdr10plus-boost)       | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
-| [Repack/Proper](#repackproper) | [HFR](#hfr)                            | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
-| [x264](#x264)                  | [Internal](#internal)                  | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
-| [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)            | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
-| [x266](#x266)                  | [Obfuscated](#obfuscated)              | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [Retags](#retags)                      | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [Scene](#scene)                        | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)        | [VOSTFR](#vostfr)             |                                               |
-|                                | [SDR](#sdr)                            | [FanSUB](#fansub)             |                                               |
-|                                | [Season Packs](#season-pack)           | [FastSUB](#fastsub)           |                                               |
-|                                | [VP9](#vp9)                            |                               |                                               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                               |
-|                                |                                        |                               |                                               |
+| Miscellaneous                          | French Audio Version          | French Source Groups                          |
+| -------------------------------------- | ----------------------------- | --------------------------------------------- |
+| [Bad Dual Groups](#bad-dual-groups)    | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
+| [DV (Disk)](#dv-disk)                  | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
+| [DV (WEBDL)](#dv-webdl)                | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VFF](#vff)                   | [FR WEB Tier 02](#fr-web-tier-02)             |
+| [FreeLeech](#freeleech)                | [VOF](#vof)                   | [FR WEB Tier 03](#fr-web-tier-03)             |
+| [HDR10+ Boost](#hdr10plus-boost)       | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
+| [HFR](#hfr)                            | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
+| [Internal](#internal)                  | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
+| [MPEG2](#mpeg2)                        | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+| [Multi](#multi)                        | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+| [No-RlsGroup](#no-rlsgroup)            | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+| [Obfuscated](#obfuscated)              | [VOSTFR](#vostfr)             |                                               |
+| [Repack v2](#repack-v2)                | [FanSUB](#fansub)             |                                               |
+| [Repack v3](#repack-v3)                | [FastSUB](#fastsub)           |                                               |
+| [Repack/Proper](#repackproper)         |                               |                                               |
+| [Retags](#retags)                      |                               |                                               |
+| [Scene](#scene)                        |                               |                                               |
+| [SDR (no WEBDL)](#sdr-no-webdl)        |                               |                                               |
+| [SDR](#sdr)                            |                               |                                               |
+| [Season Packs](#season-pack)           |                               |                                               |
+| [VP9](#vp9)                            |                               |                                               |
+| [x264](#x264)                          |                               |                                               |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                               |
+| [x265](#x265)                          |                               |                                               |
+| [x266](#x266)                          |                               |                                               |
 
 ---
 
@@ -858,7 +866,7 @@ We've made 3 guides related to this.
 
 ---
 
-## Misc
+## Miscellaneous
 
 ---
 
@@ -997,10 +1005,6 @@ We've made 3 guides related to this.
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
-
----
-
-## Optional
 
 ---
 

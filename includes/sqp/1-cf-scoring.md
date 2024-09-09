@@ -1,5 +1,7 @@
 #### Custom Formats and scores
 
+**The following Custom Formats are required:**
+
 ??? abstract "Audio - [Click to show/hide]"
 
     | Custom Format                                                                                                 |                                          Score                                           | Trash ID                                          |
@@ -23,6 +25,32 @@
 
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible.<br>The reason why `DTS` and `DTS-ES` have a score of `0` is to make sure that you don't limit yourself too much."
 
+??? abstract "HQ Release Groups - [Click to show/hide]"
+
+    | Custom Format                                                                                                                        |                                           Score                                            | Trash ID                                            |
+    | ------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------: | --------------------------------------------------- |
+    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                 | {{ radarr['cf']['bhdstudio']['trash_id'] }}         |
+    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
+    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
+    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
+    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    | :warning: {{ radarr['cf']['hd-bluray-tier-01']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    | :warning: {{ radarr['cf']['hd-bluray-tier-02']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    | :warning: {{ radarr['cf']['hd-bluray-tier-03']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
+
+    !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/sqp/radarr-unwanted-sqp1.md" !}
+
+{! include-markdown "../../includes/sqp/hd-radarr-resolution.md" !}
+
+{! include-markdown "../../includes/sqp/1-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/sqp/hd-radarr-misc-optional.md" !}
+
 ??? abstract "Movie Versions - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
@@ -40,27 +68,3 @@
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
-
-??? abstract "HQ Release Groups - [Click to show/hide]"
-
-    | Custom Format                                                                                                                        |                                           Score                                            | Trash ID                                            |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------: | --------------------------------------------------- |
-    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                 | {{ radarr['cf']['bhdstudio']['trash_id'] }}         |
-    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
-    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
-    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
-    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    | :warning: {{ radarr['cf']['hd-bluray-tier-01']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    | :warning: {{ radarr['cf']['hd-bluray-tier-02']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    | :warning: {{ radarr['cf']['hd-bluray-tier-03']['trash_scores']['sqp-1-1080p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
-
-    !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
-
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
-
-{! include-markdown "../../includes/sqp/radarr-unwanted-sqp1.md" !}
-
-{! include-markdown "../../includes/sqp/hd-radarr-optional.md" !}
-
-{! include-markdown "../../includes/sqp/hd-radarr-resolution.md" !}
-
-{! include-markdown "../../includes/sqp/1-streaming-services.md" !}
