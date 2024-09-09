@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dual[ ._-]?audio|[\\[(]dual[\\])]|(JA|ZH)\\+EN|EN\\+(JA|ZH)"
+        "value": "dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO)"
       }
     },
     {
@@ -18,7 +18,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\[(JA|ZH)\\]"
+        "value": "\\[(JA|ZH|KO)\\]"
       }
     },
     {
@@ -37,6 +37,15 @@
       "required": false,
       "fields": {
         "value": 10
+      }
+    },
+    {
+      "name": "Korean Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 21
       }
     }
   ]
