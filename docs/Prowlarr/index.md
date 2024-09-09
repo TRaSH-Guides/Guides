@@ -2,7 +2,7 @@
 
 ## Basic guides
 
-For Installation, Quick Start Guide, and the basics of Prowlarr, please check the official [WikiArr](https://wiki.servarr.com/en/prowlarr){:target="\_blank" rel="noopener noreferrer"}
+For Installation, Quick Start Guide, and the basics of Prowlarr, please check the official [WikiArr](https://wiki.servarr.com/en/prowlarr){:target="\_blank" rel="noopener noreferrer"}.
 
 ### Current Versions
 
