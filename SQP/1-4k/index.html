@@ -3670,6 +3670,7 @@
 
 <!-- BEGIN INCLUDE ../../includes/sqp/1-4k-cf-scoring-sqp1.md -->
 <h4 id="custom-formats-and-scores">Custom Formats and scores<a class="headerlink" href="#custom-formats-and-scores" title="Permanent link"></a></h4>
+<p><strong>The following Custom Formats are required:</strong></p>
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <table>
@@ -3903,60 +3904,6 @@
 </div>
 </details>
 <details class="abstract">
-<summary>Movie Versions - [Click to show/hide]</summary>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remaster">Remaster</a></td>
-<td style="text-align: center;">25</td>
-<td>570bc9ebecd92723d2d21500f4be314c</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster">4K Remaster</a></td>
-<td style="text-align: center;">25</td>
-<td>eca37840c13c6ef2dd0262b141a5482f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection">Criterion Collection</a></td>
-<td style="text-align: center;">25</td>
-<td>e0c07d59beb37348e975a930d5e50319</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#masters-of-cinema">Masters of Cinema</a></td>
-<td style="text-align: center;">25</td>
-<td>9d27d9d2181838f76dee150882bdc58c</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#vinegar-syndrome">Vinegar Syndrome</a></td>
-<td style="text-align: center;">25</td>
-<td>db9b4c4b53d312a3ca5f1378f6440fc9</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
-<td style="text-align: center;">125</td>
-<td>957d0f44b592285f26449575e8b1167e</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<ul>
-<li>If you prefer 1080p/2160p WEBDL with IMAX-E then add <a href="/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced">IMAX Enhanced</a> with the default scores.</li>
-<li>The reason why we don't add <a href="/Radarr/Radarr-collection-of-custom-formats/#imax">IMAX</a> is because BHDStudio didn't add IMAX to their filename before 2023-07-27.</li>
-</ul>
-<div class="admonition danger">
-<p class="admonition-title">Adding <code>IMAX</code>/<code>IMAX Enhanced</code> will replace the BHDStudio release in most cases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-</div>
-</details>
-<details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
 <thead>
@@ -4032,9 +3979,9 @@
 </ul>
 </div>
 </details>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-required.md -->
 <details class="abstract">
-<summary>Misc - [Click to show/hide]</summary>
+<summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
 <thead>
 <tr>
@@ -4160,137 +4107,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
-</li>
-</ul>
-</details>
-<!-- END INCLUDE -->
-
-<details class="abstract">
-<summary>Optional - [Click to show/hide]</summary>
-<div class="admonition danger">
-<p class="admonition-title">Adding any of the <code>HDR10+ Boosts</code> could result in less streaming optimized releases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-</div>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td style="text-align: center;">-10000</td>
-<td>b6832f586342ef70d9c128d40c07b872</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
-<td style="text-align: center;">-10000</td>
-<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td style="text-align: center;">-10000</td>
-<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td style="text-align: center;">-10000</td>
-<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td style="text-align: center;">-10000</td>
-<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
-<td style="text-align: center;">-10000</td>
-<td>f537cf427b64c38c8e36298f657e4828</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost">HDR10+ Boost</a></td>
-<td style="text-align: center;">901</td>
-<td>b17886cb4158d9fea189859409975758</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost">DV HDR10+ Boost</a></td>
-<td style="text-align: center;">100</td>
-<td>55a5b50cb416dea5a50c4955896217ab</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Breakdown and Why</p>
-<ul>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
-Also they often even rename the release name into Portuguese.</li>
-<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
-<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-<li><strong>HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you have a (Samsung) TV that supports HDR10+ and don't mind the chance to get less streaming optimized releases)</li>
-<li><strong>DV HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you don't mind the chance to get less streaming optimized releases)</li>
-</ul>
-</details>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-optional-uhd.md -->
-<details class="abstract">
-<summary>Optional UHD - [Click to show/hide]</summary>
-<div class="admonition tip">
-<p class="admonition-title">I recommend using the following Custom Formats</p>
-<ul>
-<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
-<li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
-<li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
-</ul>
-</div>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr">SDR</a></td>
-<td style="text-align: center;">-10000</td>
-<td>9c38ebb7384dada637be8899efa68e6f</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>25c12f78430a3a23413652cbd1d48d77</td>
-</tr>
-<tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Breakdown and Why</p>
-<ul>
-<li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
-<li>
-<p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-radarr-warning.md -->
-<div class="admonition danger">
-<p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
-</div>
-<!-- END INCLUDE -->
-</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md -->
-<div class="admonition danger">
-<p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
-</div>
 <!-- END INCLUDE -->
 </li>
 </ul>
@@ -4425,6 +4241,192 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
+<p><strong>The following Custom Formats are optional:</strong></p>
+<details class="abstract">
+<summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
+<div class="admonition danger">
+<p class="admonition-title">Adding any of the <code>HDR10+ Boosts</code> could result in less streaming optimized releases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>b6832f586342ef70d9c128d40c07b872</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#evo-no-webdl">EVO (no WEBDL)</a></td>
+<td style="text-align: center;">-10000</td>
+<td>90cedc1fea7ea5d11298bebd3d1d3223</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>ae9b7c9ebde1f3bd336a8cbd1ec4c5e5</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>7357cf5161efbf8c4d5d0c30b4815ee2</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>5c44f52a8714fdd79bb4d98e2673be1f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>f537cf427b64c38c8e36298f657e4828</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost">HDR10+ Boost</a></td>
+<td style="text-align: center;">901</td>
+<td>b17886cb4158d9fea189859409975758</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost">DV HDR10+ Boost</a></td>
+<td style="text-align: center;">100</td>
+<td>55a5b50cb416dea5a50c4955896217ab</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>EVO (no WEBDL):</strong> This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+<li><strong>HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you have a (Samsung) TV that supports HDR10+ and don't mind the chance to get less streaming optimized releases)</li>
+<li><strong>DV HDR10+ Boost:</strong> [<em>Optional</em>] (use this one only if you don't mind the chance to get less streaming optimized releases)</li>
+</ul>
+</details>
+<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-uhd-optional.md -->
+<details class="abstract">
+<summary>Miscellaneous UHD (Optional) - [Click to show/hide]</summary>
+<div class="admonition tip">
+<p class="admonition-title">I recommend using the following Custom Formats</p>
+<ul>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
+<li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr">SDR</a></td>
+<td style="text-align: center;">-10000</td>
+<td>9c38ebb7384dada637be8899efa68e6f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>25c12f78430a3a23413652cbd1d48d77</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
+<li>
+<p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-radarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
+</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
+</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
+<details class="abstract">
+<summary>Movie Versions - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#remaster">Remaster</a></td>
+<td style="text-align: center;">25</td>
+<td>570bc9ebecd92723d2d21500f4be314c</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#4k-remaster">4K Remaster</a></td>
+<td style="text-align: center;">25</td>
+<td>eca37840c13c6ef2dd0262b141a5482f</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#criterion-collection">Criterion Collection</a></td>
+<td style="text-align: center;">25</td>
+<td>e0c07d59beb37348e975a930d5e50319</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#masters-of-cinema">Masters of Cinema</a></td>
+<td style="text-align: center;">25</td>
+<td>9d27d9d2181838f76dee150882bdc58c</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#vinegar-syndrome">Vinegar Syndrome</a></td>
+<td style="text-align: center;">25</td>
+<td>db9b4c4b53d312a3ca5f1378f6440fc9</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#special-edition">Special Edition</a></td>
+<td style="text-align: center;">125</td>
+<td>957d0f44b592285f26449575e8b1167e</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>If you prefer 1080p/2160p WEBDL with IMAX-E then add <a href="/Radarr/Radarr-collection-of-custom-formats/#imax-enhanced">IMAX Enhanced</a> with the default scores.</li>
+<li>The reason why we don't add <a href="/Radarr/Radarr-collection-of-custom-formats/#imax">IMAX</a> is because BHDStudio didn't add IMAX to their filename before 2023-07-27.</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Adding <code>IMAX</code>/<code>IMAX Enhanced</code> will replace the BHDStudio release in most cases <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+</div>
+</div>
+</details>
 <!-- END INCLUDE -->
 
 <!-- BEGIN INCLUDE ../../includes/sqp/1-4k-quality-size.md -->

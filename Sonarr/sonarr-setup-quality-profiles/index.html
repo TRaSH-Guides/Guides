@@ -3925,6 +3925,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 
 <!-- END INCLUDE -->
 
+<p><strong>The following Custom Formats are required:</strong></p>
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-unwanted.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
@@ -4002,61 +4003,9 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc-required.md -->
 <details class="abstract">
-<summary>Optional - [Click to show/hide]</summary>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td style="text-align: center;">-10000</td>
-<td>32b367365729d530ca1c124a0b180c64</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td style="text-align: center;">-10000</td>
-<td>82d40da2bc6923f41e14394075dd4b03</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td style="text-align: center;">-10000</td>
-<td>e1a997ddb54e3ecbfe06341ad323c458</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td style="text-align: center;">-10000</td>
-<td>06d66ab109d4d2eddb2794d21526d140</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#scene">Scene</a></td>
-<td style="text-align: center;">-10000</td>
-<td>1b3994c551cbb92a2c781af061f4ab44</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Breakdown and Why</p>
-<ul>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
-Also they often even rename the release name into Portuguese.</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).</li>
-<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-</ul>
-</details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc.md -->
-<details class="abstract">
-<summary>Misc - [Click to show/hide]</summary>
+<summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
 <thead>
 <tr>
@@ -4231,7 +4180,60 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
-<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the WEB profile, You will hardly find HD audio with WEB-DL (most newer WEBDL will have Atmos). If you want HD audio formats, we would suggest going with Remuxes.</p>
+<p><strong>The following Custom Formats are optional:</strong></p>
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc-optional.md -->
+<details class="abstract">
+<summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>32b367365729d530ca1c124a0b180c64</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>82d40da2bc6923f41e14394075dd4b03</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>e1a997ddb54e3ecbfe06341ad323c458</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>06d66ab109d4d2eddb2794d21526d140</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>1b3994c551cbb92a2c781af061f4ab44</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
+<p>Note: The <code>Advanced Audio</code> Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.</p>
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/cf-profile-web1080.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!cf-profile-web1080" src="../images/cf-profile-web1080.png" /></a></p>
 <div class="admonition info">
@@ -4288,6 +4290,7 @@ Also they often even rename the release name into Portuguese.</li>
 
 <!-- END INCLUDE -->
 
+<p><strong>The following Custom Formats are required:</strong></p>
 <!-- BEGIN INCLUDE ../../includes/cf/sonarr-all-hdr-formats.md -->
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
@@ -4571,122 +4574,9 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </details>
 <!-- END INCLUDE -->
 
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional.md -->
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc-required.md -->
 <details class="abstract">
-<summary>Optional - [Click to show/hide]</summary>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
-<td style="text-align: center;">-10000</td>
-<td>32b367365729d530ca1c124a0b180c64</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
-<td style="text-align: center;">-10000</td>
-<td>82d40da2bc6923f41e14394075dd4b03</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
-<td style="text-align: center;">-10000</td>
-<td>e1a997ddb54e3ecbfe06341ad323c458</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
-<td style="text-align: center;">-10000</td>
-<td>06d66ab109d4d2eddb2794d21526d140</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#scene">Scene</a></td>
-<td style="text-align: center;">-10000</td>
-<td>1b3994c551cbb92a2c781af061f4ab44</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Breakdown and Why</p>
-<ul>
-<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
-Also they often even rename the release name into Portuguese.</li>
-<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
-<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
-<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).</li>
-<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
-</ul>
-</details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-optional-uhd.md -->
-<details class="abstract">
-<summary>Optional (UHD) - [Click to show/hide]</summary>
-<div class="admonition tip">
-<p class="admonition-title">I recommend using the following Custom Formats</p>
-<ul>
-<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
-<li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
-<li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
-</ul>
-</div>
-<table>
-<thead>
-<tr>
-<th>Custom Format</th>
-<th style="text-align: center;">Score</th>
-<th>Trash ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr">SDR</a></td>
-<td style="text-align: center;">-10000</td>
-<td>2016d1676f5ee13a5b7257ff86ac9a93</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>83304f261cf516bb208c18c54c0adf97</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
-<td style="text-align: center;">-10000</td>
-<td>9b64dff695c2115facf1b6ea59c9bd07</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Breakdown and Why</p>
-<ul>
-<li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
-<li>
-<p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-sonarr-warning.md -->
-<div class="admonition danger">
-<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
-</div>
-<!-- END INCLUDE -->
-</li>
-<li>
-<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-sonarr-warning.md -->
-<div class="admonition danger">
-<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
-</div>
-<!-- END INCLUDE -->
-</li>
-</ul>
-</details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc.md -->
-<details class="abstract">
-<summary>Misc - [Click to show/hide]</summary>
+<summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
 <thead>
 <tr>
@@ -4876,7 +4766,121 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <!-- END INCLUDE -->
 
-<p>I decided not to add <code>Audio Advanced</code> Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.</p>
+<p><strong>The following Custom Formats are optional:</strong></p>
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc-optional.md -->
+<details class="abstract">
+<summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#bad-dual-groups">Bad Dual Groups</a></td>
+<td style="text-align: center;">-10000</td>
+<td>32b367365729d530ca1c124a0b180c64</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#no-rlsgroup">No-RlsGroup</a></td>
+<td style="text-align: center;">-10000</td>
+<td>82d40da2bc6923f41e14394075dd4b03</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#obfuscated">Obfuscated</a></td>
+<td style="text-align: center;">-10000</td>
+<td>e1a997ddb54e3ecbfe06341ad323c458</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#retags">Retags</a></td>
+<td style="text-align: center;">-10000</td>
+<td>06d66ab109d4d2eddb2794d21526d140</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#scene">Scene</a></td>
+<td style="text-align: center;">-10000</td>
+<td>1b3994c551cbb92a2c781af061f4ab44</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>Bad Dual Groups:</strong> [<em>Optional</em>] These groups take the original release and add their own language track (e.g. AAC 2.0 Portuguese) as the first track. Afterward, FFprobe would determine that the media file is Portuguese. It's a common rule that you only add the best audio as the main track.
+Also they often even rename the release name into Portuguese.</li>
+<li><strong>No-RlsGroup:</strong> [<em>Optional</em>] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.</li>
+<li><strong>Obfuscated:</strong> [<em>Optional</em>] Use these only if you wish to avoid renamed releases.</li>
+<li><strong>Retags:</strong> [<em>Optional</em>] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).</li>
+<li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
+<!-- BEGIN INCLUDE ../../includes/cf/sonarr-misc-uhd-optional.md -->
+<details class="abstract">
+<summary>Miscellaneous UHD (Optional) - [Click to show/hide]</summary>
+<div class="admonition tip">
+<p class="admonition-title">I recommend using the following Custom Formats</p>
+<ul>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
+<li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr">SDR</a></td>
+<td style="text-align: center;">-10000</td>
+<td>2016d1676f5ee13a5b7257ff86ac9a93</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>83304f261cf516bb208c18c54c0adf97</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;">-10000</td>
+<td>9b64dff695c2115facf1b6ea59c9bd07</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Breakdown and Why</p>
+<ul>
+<li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
+<li>
+<p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
+</li>
+<li>
+<p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
+<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-sonarr-warning.md -->
+<div class="admonition danger">
+<p class="admonition-title">If you have also added <a href="/Sonarr/sonarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Sonarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
+</div>
+<!-- END INCLUDE -->
+</li>
+</ul>
+</details>
+<!-- END INCLUDE -->
+
+<p>Note: The <code>Advanced Audio</code> Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.</p>
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/cf-profile-web2160.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!cf-profile-web2160" src="../images/cf-profile-web2160.png" /></a></p>
 <!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
@@ -5344,7 +5348,7 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 9, 2024 18:55:07</span>
   </span>
 
     
