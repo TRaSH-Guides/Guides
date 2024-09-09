@@ -15,8 +15,8 @@ After setting up your optimal volume/paths found [HERE](/Hardlinks/Hardlinks-and
 1. [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/) - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
 1. [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/) - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.
 1. [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles/) - How to make the most use of the Custom Formats and shows some specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
-      - [How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
-      - [How to set up Quality Profiles (French)](/Radarr/radarr-setup-quality-profiles-french-en/) - Same as above but specific for French and English Audio.
+    - [How to setup Quality Profiles Anime](/Radarr/radarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
+    - [How to set up Quality Profiles (French)](/Radarr/radarr-setup-quality-profiles-french-en/) - Same as above but specific for French and English Audio.
 
 ---
 
