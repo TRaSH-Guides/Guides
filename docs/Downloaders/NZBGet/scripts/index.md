@@ -2,6 +2,12 @@
 
 !!! note "NZBGet development has been picked up again by new developers over at [github](https://github.com/nzbgetcom/nzbget){:target="\_blank" rel="noopener noreferrer"}!"
 
+A collection of community-provided and maintained scripts for NZBGet.
+
+If you have a script you want to share, don't hesitate to create a [PR](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) for it.
+
+!!! warning "Because these scripts are community-provided and maintained we can't assure that they are still 100% working"
+
 ## Clean
 
 ??? info "Clean NZB name"
