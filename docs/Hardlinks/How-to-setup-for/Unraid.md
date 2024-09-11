@@ -109,6 +109,8 @@ unRAID makes it pretty clear which is the Host Path and Container Path.
 
 `Host Path:` => The actual/absolute path used on your unRAID Server (The Host).
 
+!!! tip "Make sure you enabled the advanced view at the top right corner and click on the `EDIT` button to edit the paths correctly."
+
 ---
 
 ### Torrent clients

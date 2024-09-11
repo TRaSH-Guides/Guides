@@ -27,4 +27,4 @@
         - [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups) : ce dernier peut être sujet à controverse pour les personnes recherchant une version MULTi. Il est recommandé de ne pas l'utiliser.
         - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), il peut inclure des groupes Scene déjà dans le Format Personnalisé [{{ radarr['cf']['french-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#fr-scene-groups). Qui est utilisé comme substitut afin d'augmenter les chances d'obtenir une version MULTi.
 
-        {! include-markdown "../../includes/cf/radarr-optional.md" !}
+        {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}

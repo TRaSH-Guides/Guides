@@ -1,6 +1,7 @@
 nav:
   - Home: index.md
-  - Basic-Guide: Setup-Guide.md
-  - After Install Configuration: After-install-configuration.md
+  - Basic-Guide (ext.link): https://wiki.bazarr.media/Getting-Started/Setup-Guide/
+  - After Install Configuration (ext.link): https://wiki.bazarr.media/Getting-Started/First-time-installation-configuration/
+  - Suggested Scoring: Bazarr-suggested-scoring.md
   - Scripts: /Bazarr/scripts/
-  - Tips
+

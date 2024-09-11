@@ -50,15 +50,6 @@
     { "name": "Remux-1080p", "allowed": true }
   ],
   "formatItems": {
-    "Hybrid": "0f12c086e289cf966fa5948eac571f44",
-    "Remaster": "570bc9ebecd92723d2d21500f4be314c",
-    "4K Remaster": "eca37840c13c6ef2dd0262b141a5482f",
-    "Criterion Collection": "e0c07d59beb37348e975a930d5e50319",
-    "Masters of Cinema": "9d27d9d2181838f76dee150882bdc58c",
-    "Vinegar Syndrome": "db9b4c4b53d312a3ca5f1378f6440fc9",
-    "Special Edition": "957d0f44b592285f26449575e8b1167e",
-    "IMAX": "eecf3a857724171f968a66cb5719e152",
-    "IMAX Enhanced": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
     "Remux Tier 01": "3a3ff47579026e76d6504ebea39390de",
     "Remux Tier 02": "9f98181fe5a3fbeb0cc29340da2a468a",
     "Remux Tier 03": "8baaf0b3142bf4d94c42a724f034e27a",

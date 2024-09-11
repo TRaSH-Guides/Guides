@@ -32,10 +32,8 @@ After selecting the `Import` button you will get a screen that has all the Custo
 
 !!! warning "The Import to update existing Custom Formats replaces the existing Custom Format, so all manual changes you did to it will be lost :warning:"
 
-### TRaSH Sync
+### Guide sync tool
 
-This can be done also automatically with one of the TRaSH Sync Applications,
-
-more info can be found [Here](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"}
+!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
 
 --8<-- "includes/support.md"

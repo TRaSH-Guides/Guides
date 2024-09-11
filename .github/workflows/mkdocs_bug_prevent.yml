@@ -1,0 +1,39 @@
+name: Check for Mkdocs Issues
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Find JSON Files Changed in Commit
+        id: find_json_files
+        run: |
+          # Get the list of JSON files changed in the commit
+          JSON_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.json$' || true)
+          echo "json_files=$JSON_FILES" >> $GITHUB_ENV
+
+      - name: Check JSON Files for MkDocs Macro Issues
+        run: |
+          # Check if any JSON files contain the [[ pattern
+          if [[ -n "$JSON_FILES" ]]; then
+            if grep -r '\[\[' $JSON_FILES; then
+              echo "::error::Found '[[', which breaks MkDocs macros in JSON files:"
+              grep -r -n '\[\[' $JSON_FILES
+              exit 1
+            else
+              echo "No '[[', patterns found in JSON files."
+            fi
+          else
+            echo "No JSON files changed in this commit."
+          fi

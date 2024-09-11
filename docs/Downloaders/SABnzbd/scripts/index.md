@@ -1,5 +1,11 @@
 # SABnzbd Scripts
 
+A collection of community-provided and maintained scripts for SABnzbd.
+
+If you have a script you want to share, don't hesitate to create a [PR](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) for it.
+
+!!! warning "Because these scripts are community-provided and maintained we can't assure that they are still 100% working"
+
 ## Clean
 
 ??? info "Clean NZB name"

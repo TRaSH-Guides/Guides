@@ -100,11 +100,13 @@ plugins:
         Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
         Radarr/radarr-setup-custom-formats-anime.md: Radarr/radarr-setup-quality-profiles-anime.md
         Radarr/radarr-setup-custom-formats-french.md: Radarr/radarr-setup-quality-profiles-french-en.md
+        Radarr/Radarr-remote-path-mapping.md: Radarr/Tips/Radarr-remote-path-mapping.md
         # Sonarr redirects
         Sonarr/sonarr-setup-custom-formats.md: Sonarr/sonarr-setup-quality-profiles.md
         Sonarr/sonarr-setup-custom-formats-anime.md: Sonarr/sonarr-setup-quality-profiles-anime.md
         Sonarr/Sonarr-Release-Profile-RegEx.md: Sonarr/sonarr-v3-eol.md
         Sonarr/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-v3-eol.md
+        Sonarr/Sonarr-remote-path-mapping.md: Sonarr/Tips/Sonarr-remote-path-mapping.md
         # How to old redirects
         How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
         How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md

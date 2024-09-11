@@ -10,6 +10,6 @@ Select your desired method of installation:
 - [Native](/Hardlinks/How-to-setup-for/Native/)
 - [Synology](/Hardlinks/How-to-setup-for/Synology/)
 - [TrueNAS Core](/Hardlinks/How-to-setup-for/TrueNAS-Core/)
-- TrueNAS Scale users can follow the same concepts as the Docker method
+- TrueNAS Scale users can follow the same concepts as the Docker method, till someone provides a guide and is willing to maintain and give support for it in the Guide Discord.
 - [Unraid](/Hardlinks/How-to-setup-for/Unraid/)
 - [Windows](/Hardlinks/How-to-setup-for/Windows/)

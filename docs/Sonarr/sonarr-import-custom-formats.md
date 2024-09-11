@@ -66,10 +66,8 @@ How this is done is explained [HERE](/Sonarr/sonarr-setup-custom-formats/#basics
 
     Check out the [How to set up Custom Formats](/Sonarr/sonarr-setup-custom-formats/) where we will explain how to make the most use of custom formats and show some personal examples that I'm using. You can use these examples to get an idea of how to set up yours.
 
-### TRaSH Sync
+### Guide sync tool
 
-This can be done also automatically with one of the TRaSH Sync Applications,
-
-more info can be found [Here](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"}
+!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
 
 --8<-- "includes/support.md"

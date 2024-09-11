@@ -19,6 +19,8 @@ Here we will try to explain how to make the most of Custom Formats to help you s
 After you've added the Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
 You will need to set it up in the quality Profile you want to use/prefer to make use of the Custom Formats.
 
+!!! info "You can also use a [Guide sync tool](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"} to sync the Custom Formats or even the complete quality profile(s)."
+
 `Settings` => `Profiles`
 
 ![!cf-settings-profiles](images/cf-settings-profiles.png)
@@ -45,7 +47,7 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
     !!! warning
 
-        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and not always 100% up to date with the actual data you need to add.
+        These screenshots are just examples to show you how it should look and where you need to place the data that you need to add, they aren't always a 100% reflection of the actual data and are not 100% up to date with the actual data you need to add.
 
         - Always follow the data described in the guide.
         - If you have any questions or aren't sure just click the chat badge to join the Discord Channel where you can ask your questions directly.
@@ -89,17 +91,21 @@ If you prefer 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
+**The following Custom Formats are required:**
+
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
-I decided not to add `Audio Advanced` Custom Formats to the WEB profile, You will hardly find HD audio with WEB-DL (most newer WEBDL will have Atmos). If you want HD audio formats, we would suggest going with Remuxes.
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+
+Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
 Use the following main settings in your profile.
 
@@ -118,7 +124,7 @@ Use the following main settings in your profile.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
 ---
 
@@ -130,21 +136,25 @@ The only deal breaker with 2160p is when the release includes DV/HDR. 2160p with
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
+**The following Custom Formats are required:**
+
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-unwanted.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-optional.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-optional-uhd.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-hq-source-group.md" !}
 
-I decided not to add `Audio Advanced` Custom Formats to the WEB profile. You will hardly find HD audio with WEB-DL (Most newer WEBDL will have Atmos). If you also want HD audio formats, we would suggest going for Remuxes.
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+
+Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB-DL do not often come with HD audio (most newer WEB-DL will have lossy Atmos, though). If you want HD audio, we would suggest going with Remuxes.
 
 Use the following main settings in your profile.
 
@@ -159,7 +169,7 @@ Use the following main settings in your profile.
 
     So why such a ridiculously high `Upgrade Until Custom` and not a score of `100`?
 
-    Because I'm too lazy to calculate the maximum for every Quality Profile I use, and I want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
+    We're too lazy to calculate the maximum for every Quality Profile we provide, and we want it to upgrade to the highest possible score anyway to result in the highest possible quality release.
 
 ---
 
@@ -215,7 +225,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"
 
-    For Custom Formats matching what you really want to avoid, set it to something really low like `-10000` and not something like `-10`.
+    For Custom Formats matching what you want to avoid, set it to something really low like `-10000` and not something like `-10`.
     When you add your preferred Custom Format and set it to something like `+10`, it's possible that, for example, the `BR-DISK` will be downloaded - (-10)+(+10)=0 - if your `Minimum Custom Format Score` is set at `0`.
 
 ### Releases you should avoid
