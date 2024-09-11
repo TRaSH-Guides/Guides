@@ -77,6 +77,45 @@ Servers that assist participants in locating each other and forming efficient di
 Seed (some of) your torrents permanently. Most often, this is done in conjunction with [hard linked](/Hardlinks/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places whilst not taking up extra hard disk space.
 ---
 
+## Usenet
+
+### Atomic Moves
+
+This is a real file move, carried out instantaneously, not the copying of a file from the download folder to the media folder and then deleting the file from the download folder.
+
+### Instant Moves
+
+Same as [Atomic Moves](#atomic-moves).
+
+### DMCA
+
+*aka known as "DMCA takedown"*
+The DMCA Takedown Process allows creators to send notices to service providers that have material that infringes their copyright.
+When this happens, you often end up with missing/incomplete parts and can't complete the download or repair it with PAR2.
+
+[More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
+
+### N&T
+
+*aka known as "Notice&Takedown"*
+
+Often seen as the European version of [DMCA](#dmca).
+
+[More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down){:target="\_blank" rel="noopener noreferrer"}
+
+### USP
+
+Short for **U**senet **S**ervice **P**rovider
+
+Usenet providers maintain the servers that store Usenet's content and offer you access to download files. [Indexers](#indexers) are required to search for files on Usenet to help you locate specific files within the network.
+
+### Indexers
+
+An indexer is essentially a search engine from which you can download NZB files. These NZB files point to the locations of different parts that make up an entire file, such as a video file. Most indexers require registration, some are invite-only.
+
+When used in the context of Radarr/Sonarr, indexers can refer to both Usenet indexers and [torrent trackers](#tracker).
+
+---
 ## Shorthand
 
 This section lists equivalent acronyms, initialisms, or shorthand versions for various terms.
