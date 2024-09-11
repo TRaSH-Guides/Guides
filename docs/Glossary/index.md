@@ -75,6 +75,7 @@ Servers that assist participants in locating each other and forming efficient di
 ### Perma-Seed
 
 Seed (some of) your torrents permanently. Most often, this is done in conjunction with [hard linked](/Hardlinks/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places whilst not taking up extra hard disk space.
+
 ---
 
 ## Usenet
@@ -89,17 +90,14 @@ Same as [Atomic Moves](#atomic-moves).
 
 ### DMCA
 
-*aka known as "DMCA takedown"*
-The DMCA Takedown Process allows creators to send notices to service providers that have material that infringes their copyright.
+Also known as: "DMCA takedown". The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
 When this happens, you often end up with missing/incomplete parts and can't complete the download or repair it with PAR2.
 
 [More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
 
 ### N&T
 
-*aka known as "Notice&Takedown"*
-
-Often seen as the European version of [DMCA](#dmca).
+Also known as: "Notice&Takedown". The European equivalent of [DMCA](#dmca).
 
 [More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down){:target="\_blank" rel="noopener noreferrer"}
 
@@ -116,6 +114,7 @@ An indexer is essentially a search engine from which you can download NZB files.
 When used in the context of Radarr/Sonarr, indexers can refer to both Usenet indexers and [torrent trackers](#tracker).
 
 ---
+
 ## Shorthand
 
 This section lists equivalent acronyms, initialisms, or shorthand versions for various terms.
