@@ -97,7 +97,7 @@ When this happens, you often end up with missing/incomplete parts and can't comp
 
 ### N&T
 
-Also known as: "Notice&Takedown". The European equivalent of [DMCA](#dmca).
+Also known as "Notice&Takedown". The European equivalent of [DMCA](#dmca).
 
 [More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down){:target="\_blank" rel="noopener noreferrer"}
 
