@@ -1,6 +1,6 @@
 # Glossary
 
-This glossary provides definitions of commonly used terms and phrases, organized by application or function.
+This glossary provides definitions and explanations of commonly used terms, abbreviations, and phrases organized by the relevant application or function.
 
 ---
 
