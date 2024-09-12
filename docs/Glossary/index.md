@@ -45,7 +45,7 @@ The act of [seeding](#seeder) the same torrent files or data across multiple [tr
 
 ### qBit Manage
 
-A program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes such as time and tracker.
+[qBit Manage](https://github.com/StuffAnThings/qbit_manage) (aka `qbm` or `qbitmanage` / `qb_manage`)  program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes such as time and tracker.
 
 ### qBittorrent
 
