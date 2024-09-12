@@ -37,7 +37,7 @@ A defined group and preferential ordering of qualities, [Custom Format](#custom-
 
 ### Cross-Seed
 
-The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org) that automates this process.
+The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org) that automates this process. `Cross-Seed` and `crossseed` or `xseed` often refer to the application, while `cross seed` or `xseed` can refer to the action.
 
 ### Deluge
 
