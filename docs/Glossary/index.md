@@ -6,11 +6,14 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ## Media Management Applications
 
-**Radarr**, **Sonarr**, and **Lidarr** are applications designed to manage your media libraries:
+**Radarr**, **Sonarr**, **Lidarr**, and **Prowlarr** are applications designed to help with management of your media libraries and automation. This group of applications is commonly referenced collectively as the "arrs".
 
-- **Radarr**: For movies
-- **Sonarr**: For TV shows
-- **Lidarr**: For music
+| Application                          | Content Type       |
+| ------------------------------------ | ------------------ |
+| [**Radarr**](../Radarr/index.md)     | Movies             |
+| [**Sonarr**](../Sonarr/index.md)     | TV Shows/Series    |
+| [**Lidarr**](../Lidarr/index.md)     | Music              |
+| [**Prowlarr**](../Prowlarr/index.md) | Indexer Management |
 
 ### Custom Format
 
