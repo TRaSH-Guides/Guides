@@ -42,7 +42,7 @@ A lightweight, free, open-source, cross-platform BitTorrent client.
 
 ### qBit Manage
 
-A program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes, such as time and tracker.
+A program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes such as time and tracker.
 
 ### qBittorrent
 
