@@ -91,6 +91,10 @@ This is a real file move, carried out instantaneously, rather than by copying a 
 
 Same as [Atomic Moves](#atomic-moves).
 
+### PAR (PAR2) Files
+
+PAR and PAR2 files are "Parity Archive Volume" files primarily used in Usenet as a means to attempt repairing incomplete or corrupted files. The presence of these files, however, is not always a guarantee that "reconstruction" of the original data is possible.
+
 ### DMCA
 
 Also known as: "DMCA takedown". The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
