@@ -98,7 +98,7 @@ PAR and PAR2 files are "Parity Archive Volume" files primarily used in Usenet as
 ### DMCA
 
 Also known as: "DMCA takedown". The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
-When this happens, you often end up with missing/incomplete parts and can't complete the download or repair it with PAR2.
+When this happens, you often end up with missing/incomplete parts and extraction can subsequently fail.
 
 [More info from the Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
 
