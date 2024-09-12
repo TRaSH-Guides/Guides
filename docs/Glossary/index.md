@@ -22,7 +22,7 @@ Refers to the specific release quality that describes both the source and, optio
 
 ### Quality Definitions
 
-Defines the Minimum, Preferred, and Maximum file sizes for any given [Quality](#quality). Sizes are measured in megabytes per minute.
+Defines the minimum, preferred, and maximum file sizes for any given [Quality](#quality). Sizes are measured in megabytes per minute.
 
 ### Quality Profile
 
