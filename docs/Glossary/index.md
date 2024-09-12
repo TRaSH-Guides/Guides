@@ -14,7 +14,7 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ### Custom Format
 
-A feature that matches specific aspects of a release based on information extracted from its name. Users choose the matching criteria, and Custom Formats can be assigned scores on a per-[Quality Profile](#quality-profile) basis.
+A feature that uses pattern matching on a release, based on the information implied through the release name on the corresponding indexer during a search. Users can customize patterns to match a Custom Format, and Custom Formats can then be assigned scores individually in each [Quality Profile](#quality-profile). After the release has been imported, the Custom Format score will be updated to match the properties of the actual media file, rather than strictly by its original naming alone.
 
 ### Quality
 
