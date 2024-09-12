@@ -105,7 +105,7 @@ Also known as "Notice&Takedown". The European equivalent of [DMCA](#dmca).
 
 Short for **U**senet **S**ervice **P**rovider
 
-Usenet providers maintain the servers that store Usenet's content and offer you access to download files. [Indexers](#indexers) are required to search for files on Usenet to help you locate specific files within the network.
+Usenet providers maintain the servers that store Usenet's content and offer you access to download files. [Indexers](#indexers) are required to search for files on Usenet and can help you locate specific files within the network.
 
 ### Indexers
 
