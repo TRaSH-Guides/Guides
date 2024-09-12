@@ -77,7 +77,7 @@ Servers that assist [Peers](#peer) in locating each other and forming efficient 
 
 ### Perma-Seed
 
-Seed (some of) your torrents permanently. Most often, this is done in conjunction with [hard linked](/Hardlinks/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places whilst not taking up extra hard disk space.
+Seeding your torrents permanently ("forever".) Most often, this is done in conjunction with [hard linked](/Hardlinks/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places without taking up any additional hard disk space.
 
 ---
 
