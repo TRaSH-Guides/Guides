@@ -121,7 +121,7 @@ This section lists equivalent acronyms, abbreviations, or shorthand versions for
 
 ### CF
 
-**CloudFlare**, [Custom Formats](#custom-format).
+Depending on its context, whether hosting or media management applications, this can refer to **CloudFlare** or [Custom Formats](#custom-format).
 
 ### qBit
 
