@@ -127,6 +127,10 @@ This section lists equivalent acronyms, initialisms, or shorthand versions for v
 
 [qBittorrent](#qbittorrent).
 
+### QBM
+
+[qBit Manage](#qbit-manage).
+
 ### QP
 
 [Quality Profile](#quality-profile).
