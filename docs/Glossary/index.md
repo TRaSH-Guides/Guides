@@ -49,7 +49,7 @@ A program that helps manage your [qBittorrent](#qbittorrent) instance, allowing 
 
 ### qBittorrent
 
-A free, open-source, cross-platform BitTorrent client.
+[qBittorrent ](https://www.qbittorrent.org/) (aka `qb`, `qbit`, `qbittorrent`) is a free, open-source, cross-platform BitTorrent client. Please note that it is highly recommended to avoid new major and minor (X and X.X) versions until properly validated by the community, as these often contain significant changes and/or bugs.
 
 ### Leecher
 
