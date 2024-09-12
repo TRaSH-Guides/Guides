@@ -34,7 +34,7 @@ A defined group of qualities, [Custom Format](#custom-format) scores, and additi
 
 ### Cross-Seed
 
-The act of [seeding](#seeder) the same torrent across multiple [trackers](#tracker). It also refers to a software application of the same name that automates this process.
+The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org) that automates this process.
 
 ### Deluge
 
