@@ -70,7 +70,7 @@ A file containing metadata about the files and folders to be distributed, along 
 
 ### Tracker
 
-Servers that assist participants in locating each other and forming efficient distribution groups known as [swarms](#swarm). The term 'tracker' is also informally used for sites that host [.torrent files](#torrent-file) and operate their own tracker servers.
+Servers that assist [Peers](#peer) in locating each other and forming efficient distribution groups known as [swarms](#swarm). The term 'tracker' is also informally used for sites that host [.torrent files](#torrent-file) and operate their own tracker servers.
 
 ### Perma-Seed
 
