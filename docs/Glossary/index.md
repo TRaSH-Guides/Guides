@@ -109,7 +109,7 @@ Usenet providers maintain the servers that store Usenet's content and offer you 
 
 ### Indexers
 
-An indexer is essentially a search engine from which you can download NZB files. These NZB files point to the locations of different parts that make up an entire file, such as a video file. Most indexers require registration, some are invite-only.
+An indexer is a search engine from which you can download NZB files. NZB files point to the locations of all the different parts that make up an entire file or release. Most indexers require registration and some are invite-only.
 
 When used in the context of Radarr/Sonarr, indexers can refer to both Usenet indexers and [torrent trackers](#tracker).
 
