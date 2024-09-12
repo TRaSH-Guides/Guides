@@ -65,7 +65,7 @@ BitTorrent users who possess the complete set of files in a specific torrent and
 
 ### Swarm
 
-The collective group of all [Peers](#peer) of a given torrent, sharing parts of the file. This group includes both [Seeders](#seeder) and [Leechers](#leecher).
+The collective group of all [Peers](#peer) of a given torrent (this includes both [Seeders](#seeder) and [Leechers](#leecher)) who are actively sharing any portion of the torrent.
 
 ### Torrent File
 
