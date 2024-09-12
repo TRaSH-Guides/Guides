@@ -10,6 +10,8 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 This is a real file move, carried out instantaneously, rather than by copying a file from one location to another and then deleting the file from the original folder.
 
+---
+
 ## B
 
 ---
@@ -22,13 +24,19 @@ Depending on its context, whether hosting or media management applications, this
 
 ### Cross-Seed
 
-The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org){:target="\_blank" rel="noopener noreferrer"} that automates this process. `Cross-Seed` and `crossseed` or `xseed` often refer to the application, while `cross seed` or `xseed` can refer to the action.
+The act of [seeding](#seeder) the same torrent files or data across multiple [trackers](#tracker) without re-downloading. It also refers to a [software application of the same name](https://www.cross-seed.org){:target="\_blank" rel="noopener noreferrer"} that automates this process.
+
+`Cross-Seed` and `crossseed` or `xseed` often refer to the application, while `cross seed` or `xseed` can refer to the action.
 
 ### Custom Format
 
-**Also known as: CF**
+!!!info
 
-A feature that uses pattern matching on a release, based on the information implied through the release name on the corresponding indexer during a search. Users can customize patterns to match a Custom Format, and Custom Formats can then be assigned scores individually in each [Quality Profile](#quality-profile). After the release has been imported, the Custom Format score will be updated to match the properties of the actual media file, rather than strictly by its original naming alone.
+    Also known as: CF
+
+A feature that uses pattern matching on a release, based on the information implied through the release name on the corresponding indexer during a search. Users can customize patterns to match a Custom Format, and Custom Formats can then be assigned scores individually in each [Quality Profile](#quality-profile).
+
+After the release has been imported, the Custom Format score will be updated to match the properties of the actual media file, rather than strictly by its original naming alone.
 
 ---
 
@@ -38,12 +46,15 @@ A feature that uses pattern matching on a release, based on the information impl
 
 [Deluge](https://deluge-torrent.org/){:target="\_blank" rel="noopener noreferrer"} is a lightweight, free, open-source, cross-platform BitTorrent client.
 
-### DMCA
+### DMCA Takedown
 
-**Also known as: DMCA takedown**
+!!!info
 
-Also known as "DMCA takedown". The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
-When a DMCA takedown request is issued to a [USP (Usenet Service Provider)](#usp), you may end up with missing or incomplete parts, and extraction can subsequently fail.
+    Also known as: DMCA
+
+The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
+
+When a DMCA takedown request is issued to a [USP (Usenet Service Provider)](#usp), you may end up with missing or incomplete parts, and extraction can subsequently fail. DMCA stands for `Digital Millennium Copyright Act`.
 
 [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
 
@@ -107,7 +118,9 @@ An application designed to help with automation and the management of your music
 
 ### Notice & Takedown
 
-**Also known as N&T**
+!!!info
+
+    Also known as N&T
 
 The European equivalent of [DMCA](#dmca).
 
@@ -147,7 +160,9 @@ An application designed to help with automation and the management of your [trac
 
 ### qBittorrent
 
-**Also known as: qb, qbit, qbittorrent**
+!!!info
+
+    Also known as: qb, qbit, qbittorrent
 
 [qBittorrent](https://www.qbittorrent.org/){:target="\_blank" rel="noopener noreferrer"} is a free, open-source, cross-platform BitTorrent client. Please note that it is highly recommended to avoid new major and minor (X and X.X) versions until properly validated by the community, as these often contain significant changes and/or bugs.
 
@@ -161,7 +176,9 @@ Defines the minimum, preferred, and maximum file sizes for any given [Quality](#
 
 ### Quality Profile
 
-**Also known as: QP**
+!!!info
+
+    Also known as: QP
 
 A defined group and preferential ordering of qualities, [Custom Format](#custom-format) scores, and additional settings that can be assigned to movies, TV shows, and collections.
 
@@ -207,7 +224,9 @@ Servers that assist [Peers](#peer) in locating each other and forming efficient 
 
 ### Usenet Service Provider
 
-**Also known as: USP**
+!!!info
+
+    Also known as: USP
 
 Usenet providers maintain the servers that store Usenet's content and offer you access to download files. [Indexers](#indexer) are required to search for files on Usenet and can help you locate specific files within the network.
 
