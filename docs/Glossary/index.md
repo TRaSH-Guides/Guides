@@ -41,7 +41,7 @@ The act of [seeding](#seeder) the same torrent files or data across multiple [tr
 
 ### Deluge
 
-A lightweight, free, open-source, cross-platform BitTorrent client.
+[Deluge](https://deluge-torrent.org/) is a lightweight, free, open-source, cross-platform BitTorrent client.
 
 ### qBit Manage
 
