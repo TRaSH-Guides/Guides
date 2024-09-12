@@ -69,7 +69,7 @@ The collective group of all [Peers](#peer) of a given torrent (this includes bot
 
 ### Torrent File
 
-A file containing metadata about the files and folders to be distributed, along with a list of network locations of [trackers](#tracker). Torrent files typically bear the extension `.torrent`.
+A file containing metadata and integrity information about the files and folders associated with the torrent, along with a list of the network locations for its [trackers](#tracker). Torrent files typically bear the extension `.torrent`.
 
 ### Tracker
 
