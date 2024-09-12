@@ -117,7 +117,7 @@ When used in the context of Radarr/Sonarr, indexers can refer to both Usenet ind
 
 ## Shorthand
 
-This section lists equivalent acronyms, initialisms, or shorthand versions for various terms.
+This section lists equivalent acronyms, abbreviations, or shorthand versions for various terms.
 
 ### CF
 
