@@ -53,7 +53,7 @@ A free, open-source, cross-platform BitTorrent client.
 
 ### Leecher
 
-A BitTorrent user who is actively downloading a torrent (referred to as 'leeching'). This term can also describe users who download torrents without sharing them afterward.
+A BitTorrent user who is actively downloading a torrent (referred to as 'leeching'). This term can also describe those who download torrents without sharing them afterward.
 
 ### Peer
 
