@@ -85,7 +85,7 @@ Seed (some of) your torrents permanently. Most often, this is done in conjunctio
 
 ### Atomic Moves
 
-This is a real file move, carried out instantaneously, not the copying of a file from the download folder to the media folder and then deleting the file from the download folder.
+This is a real file move, carried out instantaneously, rather than by copying a file from one location to another and then deleting the file from the original folder.
 
 ### Instant Moves
 
