@@ -20,7 +20,7 @@ This action moves the file instantly, rather than copying it to a new location a
 
 ### CF
 
-Depending on its context, whether hosting or media management applications, this can refer to **CloudFlare** or [Custom Formats](#custom-format).
+Depending on its context, whether discussing hosting or media management applications, this can refer to **CloudFlare** or [Custom Formats](#custom-format).
 
 ### Cross-Seed
 
