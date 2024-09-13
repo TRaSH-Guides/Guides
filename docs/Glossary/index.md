@@ -168,7 +168,7 @@ An application designed to help with the automation and management of your [trac
 
 ### Quality
 
-Refers to the specific release quality that describes both the source and, optionally, the resolution. Examples of qualities include **Bluray-2160p** and **Remux-1080p**, though many others exist.
+Refers to the specific quality of a release, describing both the source and, optionally, the resolution. Examples of qualities include **Bluray-2160p** and **Remux-1080p**, though many others exist.
 
 ### Quality Definitions
 
