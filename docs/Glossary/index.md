@@ -156,7 +156,7 @@ An application designed to help with the automation and management of your [trac
 
 ### qBit Manage
 
-[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} (also known as `qbm` or `qbitmanage` / `qb_manage`) is a program that helps manage your [qBittorrent](#qbittorrent) instance, allowing for the automation of actions on torrents based on various attributes such as time and tracker.
+[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} (also known as `qbm` or `qbitmanage` / `qb_manage`) is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
 
 ### qBittorrent
 
