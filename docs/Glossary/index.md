@@ -106,7 +106,7 @@ A BitTorrent user who is actively downloading a torrent (referred to as 'leechin
 
 ### [Lidarr](../Lidarr/index.md)
 
-An application designed to help with automation and the management of your music library. One of a group of applications, including Prowlarr, Radarr, and Sonarr, collectively known as the "arrs".
+An application designed to help with the automation and management of your music library. One of a group of applications, including Prowlarr, Radarr, and Sonarr, collectively known as the "arrs".
 
 ---
 
