@@ -34,7 +34,7 @@ The act of [seeding](#seeder) the same torrent files or data across multiple [tr
 
     Also known as: [CF](#cf)
 
-A feature that uses pattern matching on a release, based on the information implied through the release name on the corresponding indexer during a search. Users can customize patterns to match a Custom Format, and Custom Formats can then be assigned scores individually in each [Quality Profile](#quality-profile).
+A feature that applies pattern matching to a release based on information inferred from the release name on the corresponding indexer during a search. Users can customize patterns in a Custom Format, which can then be assigned individual scores within each [Quality Profile](#quality-profile).
 
 After the release has been imported, the Custom Format score will be updated to match the properties of the actual media file, rather than strictly by its original naming alone.
 
