@@ -148,7 +148,7 @@ Seeding your torrents permanently ("forever"). Most often this is done in conjun
 
 ### [Prowlarr](../Prowlarr/index.md)
 
-An application designed to help with automation and the management of your [trackers](#tracker) and [indexers](#indexer). One of a group of applications, including Lidarr, Prowlarr, and Sonarr, collectively known as the "arrs".
+An application designed to help with the automation and management of your [trackers](#tracker) and [indexers](#indexer). One of a group of applications, including Lidarr, Prowlarr, and Sonarr, collectively known as the "arrs".
 
 ---
 
