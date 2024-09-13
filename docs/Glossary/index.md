@@ -40,7 +40,7 @@ The act of [seeding](#seeder) the same torrent files or data across multiple [tr
 
 A feature that applies pattern matching to a release based on information inferred from the release name on the corresponding indexer during a search. Users can customize patterns in a Custom Format, which can then be assigned individual scores within each [Quality Profile](#quality-profile).
 
-After the release has been imported, the Custom Format score will be updated to match the properties of the actual media file, rather than strictly by its original naming alone.
+After the release has been imported, when using the TRaSH recommended naming scheme, the Custom Format score will automatically be updated to match the properties of the _actual_ media file, rather than strictly by its original naming alone.
 
 ---
 
