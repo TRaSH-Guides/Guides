@@ -140,7 +140,7 @@ PAR and PAR2 files, or 'Parity Archive Volume' files, are primarily used in Usen
 
 ### Peer
 
-A general term that encompasses both [Seeders](#seeder) and [Leechers](#leecher).
+A general term that collectively refers to both [Seeders](#seeder) and [Leechers](#leecher).
 
 ### Perma-Seed
 
