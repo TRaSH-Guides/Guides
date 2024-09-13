@@ -188,7 +188,7 @@ A defined group, and preferential ordering, of qualities, [Custom Format](#custo
 
 ### [Radarr](../Radarr/index.md)
 
-An application designed to help with automation and the management of your movie library. One of a group of applications, including Lidarr, Prowlarr, and Sonarr, collectively known as the "arrs".
+An application designed to help with the automation and management of your movie library. One of a group of applications, including Lidarr, Prowlarr, and Sonarr, collectively known as the "arrs".
 
 ---
 
