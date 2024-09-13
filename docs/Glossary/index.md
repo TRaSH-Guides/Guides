@@ -200,7 +200,7 @@ BitTorrent users who possess the complete set of files in a specific torrent and
 
 ### [Sonarr](../Sonarr/index.md)
 
-An application designed to help with automation and the management of your TV Show/Series library. One of a group of applications, including Lidarr, Prowlarr, and Radarr, collectively known as the "arrs".
+An application designed to help with the automation and management of your TV Show/Series library. One of a group of applications, including Lidarr, Prowlarr, and Radarr, collectively known as the "arrs".
 
 ### Swarm
 
