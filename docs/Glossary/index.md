@@ -80,7 +80,7 @@ When a DMCA takedown request is issued to a [Usenet Service Provider (USP)](#usp
 
 ### Indexer
 
-An indexer is a search engine from which you can download NZB files. NZB files point to the locations of all the different parts that make up an entire file or release. Most indexers require registration and some are invite-only.
+An indexer is a search engine from which you can download NZB files. NZB files point to the locations of all the different parts that make up an entire file or release on Usenet. Most indexers require registration and some are invite-only.
 
 When used in the context of Radarr/Sonarr, indexers can refer to both Usenet indexers and [torrent trackers](#tracker).
 
