@@ -52,6 +52,8 @@ After the release has been imported, the Custom Format score will be updated to 
 
     Also known as: DMCA
 
+DMCA is an abbreviation for [`Digital Millennium Copyright Act`](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}.
+
 The DMCA Takedown process allows creators to send notices to hosting/service providers that have material that infringes on their copyright.
 
 When a DMCA takedown request is issued to a [Usenet Service Provider (USP)](#usp), parts of the release may end up missing or incomplete, leaving you unable to complete the extraction.
