@@ -218,7 +218,7 @@ A file that contains metadata and integrity information about the files and fold
 
 ### Tracker
 
-Servers that assist [Peers](#peer) in locating each other and forming efficient distribution groups known as [swarms](#swarm). The term 'tracker' is also informally used for sites that host [.torrent files](#torrent-file) and operate their own tracker servers.
+Servers that help [Peers](#peer) locate each other and form an efficient distribution group for a torrent, known as its [swarm](#swarm). The term 'tracker' is also used commonly as a reference to sites that host [.torrent files](#torrent-file) and operate their own tracker servers.
 
 ---
 
