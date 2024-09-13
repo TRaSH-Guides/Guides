@@ -52,7 +52,7 @@ After the release has been imported, the Custom Format score will be updated to 
 
     Also known as: DMCA
 
-The DMCA Takedown process allows creators to send notices to service providers that have material that infringes their copyright.
+The DMCA Takedown process allows creators to send notices to hosting/service providers that have material that infringes on their copyright.
 
 When a DMCA takedown request is issued to a [USP (Usenet Service Provider)](#usp), you may end up with missing or incomplete parts, and extraction can subsequently fail. DMCA stands for `Digital Millennium Copyright Act`.
 
