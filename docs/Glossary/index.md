@@ -136,7 +136,7 @@ The European equivalent of [DMCA](#dmca).
 
 ### PAR (PAR2) Files
 
-PAR and PAR2 files are "Parity Archive Volume" files primarily used in Usenet as a means to attempt repairing incomplete or corrupted files. The presence of these files, however, is not always a guarantee that "reconstruction" of the original data is possible.
+PAR and PAR2 files, or 'Parity Archive Volume' files, are primarily used in Usenet to help repair incomplete or corrupted files. However, their presence does not always guarantee successful reconstruction of the original data.
 
 ### Peer
 
