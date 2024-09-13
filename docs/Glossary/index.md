@@ -8,6 +8,10 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ### Atomic Move
 
+!!!info
+
+    Also known as: [Instant Move](#instant-move)
+
 This action moves the file instantly, rather than copying it to a new location and deleting it from the original.
 
 ---
@@ -88,7 +92,7 @@ When used in the context of Radarr/Sonarr/Prowlarr (or other media management so
 
 ### Instant Move
 
-See [Atomic Moves](#atomic-moves).
+See [Atomic Move](#atomic-move).
 
 ---
 
