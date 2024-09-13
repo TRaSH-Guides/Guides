@@ -180,7 +180,7 @@ Defines the minimum, preferred, and maximum file sizes for any given [Quality](#
 
     Also known as: QP
 
-A defined group and preferential ordering of qualities, [Custom Format](#custom-format) scores, and additional settings that can be assigned to movies, TV shows, and collections.
+A defined group, and preferential ordering, of qualities, [Custom Format](#custom-format) scores, and additional settings that can be assigned to movies, TV shows, and collections.
 
 ---
 
