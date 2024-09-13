@@ -214,7 +214,7 @@ This can also refer to the surge of users downloading a torrent shortly after it
 
 ### Torrent File
 
-A file containing metadata and integrity information about the files and folders associated with the torrent, along with a list of the network locations for its [trackers](#tracker). Torrent files typically bear the extension `.torrent`.
+A file that contains metadata and integrity information about the files and folders associated with a torrent, as well as a list of network locations for its [trackers](#tracker). Torrent files usually have the extension `.torrent`.
 
 ### Tracker
 
