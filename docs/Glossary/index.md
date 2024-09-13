@@ -230,7 +230,7 @@ Servers that help [Peers](#peer) locate each other and form an efficient distrib
 
     Also known as: USP
 
-Usenet providers maintain the servers that store Usenet's content and offer you access to download files. [Indexers](#indexer) are required to search for files on Usenet and can help you locate specific files within the network.
+Usenet providers manage the servers that store content and offer subscription-based access for downloading files. [Indexers](#indexer) are required to search for and locate releases on Usenet.
 
 ---
 
