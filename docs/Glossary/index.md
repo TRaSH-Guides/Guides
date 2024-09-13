@@ -204,7 +204,9 @@ An application designed to help with the automation and management of your TV Sh
 
 ### Swarm
 
-The collective group of all [Peers](#peer) of a given torrent (this includes both [Seeders](#seeder) and [Leechers](#leecher)) who are actively sharing any portion of the torrent.
+The group of [Peers](#peer), collectively, on a specific torrent (this includes both [Seeders](#seeder) and [Leechers](#leecher)) who are actively sharing any portion of the torrent.
+
+This can also refer to the surge of users downloading a torrent shortly after its release.
 
 ---
 
