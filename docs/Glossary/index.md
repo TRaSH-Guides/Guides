@@ -8,7 +8,7 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ### Atomic Move
 
-This is a real file move, carried out instantaneously, rather than by copying a file from one location to another and then deleting the file from the original folder.
+This action moves the file instantly, rather than copying it to a new location and deleting it from the original.
 
 ---
 
