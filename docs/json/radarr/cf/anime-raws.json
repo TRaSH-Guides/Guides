@@ -7,6 +7,15 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
+      "name": "AsukaRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Asuka[ ._-]?(Raws)"
+      }
+    },
+    {
       "name": "Beatrice-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
