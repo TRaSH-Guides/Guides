@@ -164,7 +164,7 @@ An application designed to help with the automation and management of your [trac
 
 !!!info
 
-    Also known as: qbm, qbitmanage, qb_manage)
+    Also known as: qbm, qbitmanage, qb_manage
 
 [qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
 
@@ -210,7 +210,7 @@ BitTorrent users who possess the complete set of files in a specific torrent and
 
 ### [Sonarr](../Sonarr/index.md)
 
-An application designed to help with the automation and management of your TV Show/Series library. One of a group of applications, including Lidarr, Prowlarr, and Radarr, collectively known as the "arrs".
+An application designed to help with the automation and management of your TV show/series library. One of a group of applications, including Lidarr, Prowlarr, and Radarr, collectively known as the "arrs".
 
 ### Swarm
 
