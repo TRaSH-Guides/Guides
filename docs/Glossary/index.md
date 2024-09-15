@@ -126,7 +126,7 @@ An application designed to help with the automation and management of your music
 
 !!!info
 
-    Also known as N&T
+    Also known as: N&T
 
 The European equivalent of [DMCA](#dmca).
 
@@ -162,7 +162,11 @@ An application designed to help with the automation and management of your [trac
 
 ### qBit Manage
 
-[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} (also known as `qbm` or `qbitmanage` / `qb_manage`) is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
+!!!info
+
+    Also known as: qbm, qbitmanage, qb_manage)
+
+[qBit Manage](https://github.com/StuffAnThings/qbit_manage){:target="\_blank" rel="noopener noreferrer"} is a tool for managing your [qBittorrent](#qbittorrent) instance. It automates actions on torrents meeting specified criteria, such as time seeded and tracker.
 
 ### qBittorrent
 
