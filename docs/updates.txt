@@ -1,3 +1,9 @@
+# 2024-09-15 01:27
+- [fix(guide): Radarr flowchart audio issue](https://github.com/TRaSH-Guides/Guides/pull/2062)
+- [ci: prevent mkdocs macro issue](https://github.com/TRaSH-Guides/Guides/pull/2056)
+- [feat(guide): Add categories index descriptions](https://github.com/TRaSH-Guides/Guides/pull/2050)
+- [feat(guide): Make Movie Editions Optional](https://github.com/TRaSH-Guides/Guides/pull/2058)
+
 # 2024-09-08 01:24
 - [feat(starr-anime): Add Korean to Anime Dual Audio](https://github.com/TRaSH-Guides/Guides/pull/2057)
 - [feat(starr-anime): Add Korean to Anime Dual Audio](https://github.com/TRaSH-Guides/Guides/pull/2054)
