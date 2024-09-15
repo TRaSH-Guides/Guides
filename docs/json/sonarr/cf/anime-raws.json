@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "AsukaRaws",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Asuka[ ._-]?(Raws)"
+      }
+    },
+    {
       "name": "Daddy-Raws",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
