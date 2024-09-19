@@ -8,7 +8,7 @@ This glossary provides definitions and explanations of commonly used terms, abbr
 
 ### Atomic Move
 
-!!!info
+!!! info
 
     Also known as: [Instant Move](#instant-move)
 
@@ -34,7 +34,7 @@ The act of [seeding](#seeder) the same torrent files or data across multiple [tr
 
 ### Custom Format
 
-!!!info
+!!! info
 
     Also known as: [CF](#cf)
 
@@ -52,7 +52,7 @@ After the release has been imported, when using the TRaSH recommended naming sch
 
 ### DMCA Takedown
 
-!!!info
+!!! info
 
     Also known as: DMCA
 
@@ -60,7 +60,7 @@ DMCA is an abbreviation for [`Digital Millennium Copyright Act`](https://en.wiki
 
 The DMCA Takedown process allows creators to send notices to hosting/service providers that have material that infringes on their copyright.
 
-When a DMCA takedown request is issued to a [Usenet Service Provider (USP)](#usp), parts of the release may end up missing or incomplete, leaving you unable to complete the extraction.
+When a DMCA takedown request is issued to a [Usenet Service Provider (USP)](#usenet-service-provider), parts of the release may end up missing or incomplete, leaving you unable to complete the extraction.
 
 [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act){:target="\_blank" rel="noopener noreferrer"}
 
@@ -124,11 +124,11 @@ An application designed to help with the automation and management of your music
 
 ### Notice & Takedown
 
-!!!info
+!!! info
 
     Also known as: N&T
 
-The European equivalent of [DMCA](#dmca).
+The European equivalent of [DMCA](#dmca-takedown).
 
 [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Notice_and_take_down){:target="\_blank" rel="noopener noreferrer"}
 
@@ -162,7 +162,7 @@ An application designed to help with the automation and management of your [trac
 
 ### qBit Manage
 
-!!!info
+!!! info
 
     Also known as: qbm, qbitmanage, qb_manage
 
@@ -170,7 +170,7 @@ An application designed to help with the automation and management of your [trac
 
 ### qBittorrent
 
-!!!info
+!!! info
 
     Also known as: qb, qbit, qbittorrent
 
@@ -186,7 +186,7 @@ Defines the minimum, preferred, and maximum file sizes for any given [Quality](#
 
 ### Quality Profile
 
-!!!info
+!!! info
 
     Also known as: QP
 
@@ -236,7 +236,7 @@ Servers that help [Peers](#peer) locate each other and form an efficient distrib
 
 ### Usenet Service Provider
 
-!!!info
+!!! info
 
     Also known as: USP
 
