@@ -1,3 +1,11 @@
+# 2024-09-22 01:34
+- [fix(sonarr): update comparison logic](https://github.com/TRaSH-Guides/Guides/pull/2069)
+- [fix(guide): Glossary formatting and broken links](https://github.com/TRaSH-Guides/Guides/pull/2070)
+- [feat(starr-anime): Add AsukaRaws to Anime Raws](https://github.com/TRaSH-Guides/Guides/pull/2067)
+- [feat(guides): Create New Definitions Page](https://github.com/TRaSH-Guides/Guides/pull/2059)
+- [fix(guides): Adjust movie versions json files to make each individual custom format non-required (2/2)](https://github.com/TRaSH-Guides/Guides/pull/2065)
+- [fix(guides): Adjust movie versions json files to make each individual custom format non-required (1/2)](https://github.com/TRaSH-Guides/Guides/pull/2064)
+
 # 2024-09-15 01:27
 - [fix(guide): Radarr flowchart audio issue](https://github.com/TRaSH-Guides/Guides/pull/2062)
 - [ci: prevent mkdocs macro issue](https://github.com/TRaSH-Guides/Guides/pull/2056)
