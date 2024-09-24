@@ -2077,6 +2077,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Port forwarding
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2086,6 +2097,82 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-port-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why port-forwarding
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why port-forwarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-port-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to port-forward
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to port-forward">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-if-your-vpn-is-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Check if Your VPN is Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-if-a-port-is-open-or-closed" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Check if a Port is Open or Closed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3358,6 +3445,71 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-port-forwarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why port-forwarding
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why port-forwarding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-port-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to port-forward
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to port-forward">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-if-your-vpn-is-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Check if Your VPN is Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-if-a-port-is-open-or-closed" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Check if a Port is Open or Closed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client settings
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3389,10 +3541,38 @@
 
 
 <h1 id="qbittorrent-port-forwarding">qBittorrent - Port forwarding<a class="headerlink" href="#qbittorrent-port-forwarding" title="Permanent link"></a></h1>
-<div class="admonition info">
-<p>You've followed the <a href="/Misc/How-to-setup-Torguard-for-port-forwarding/" rel="noopener noreferrer" target="_blank">Setup TorGuard for port forwarding</a> and want to know where in your download client you should add the port you've port forwarded.</p>
+<!-- markdownlint-disable MD041-->
+<h2 id="why-port-forwarding">Why port-forwarding<a class="headerlink" href="#why-port-forwarding" title="Permanent link"></a></h2>
+<p>To seed content effectively, it is necessary to have some form of port-forwarding enabled.
+This can vary depending on whether you use a VPN or not and/or what router or firewall
+you have.</p>
+<h3 id="how-to-port-forward">How to port-forward<a class="headerlink" href="#how-to-port-forward" title="Permanent link"></a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="vpn-service" name="__tabbed_1" type="radio" /><input id="router" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="vpn-service">VPN Service</label><label for="router">Router</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Please consult your VPN Service and/or your VPN container documentation for specifics.</p>
+<p>For Torguard we've created instructions on how to <a href="/Misc/How-to-setup-Torguard-for-port-forwarding/" rel="noopener noreferrer" target="_blank">setup port-forwarding</a>.</p>
+<h4 id="how-to-check-if-your-vpn-is-working">How to Check if Your VPN is Working<a class="headerlink" href="#how-to-check-if-your-vpn-is-working" title="Permanent link"></a></h4>
+<p>Download one of the test .torrents or magnet links from one of the following sites:</p>
+<ul>
+<li><a href="https://ipleak.net/" rel="noopener noreferrer" target="_blank">ipleak.net</a></li>
+<li><a href="https://torguard.net/checkmytorrentipaddress.php" rel="noopener noreferrer" target="_blank">TorGuard's “Check My Torrent IP”</a></li>
+</ul>
+<p>Add the magnet link to your torrent client and wait for the results. It should show you a different IP than your WAN IP number. Remember this IP because you will need it to <a href="#how-to-check-if-a-port-is-open-or-closed">check if your port is open or closed</a>.</p>
 </div>
-<p><code>Tools</code> =&gt; <code>Options</code> =&gt; <code>Connection</code></p>
+<div class="tabbed-block">
+<p>Please consult your router manual for specifics or check if your router can be found on <a href="https://portforward.com/router.htm" rel="noopener noreferrer" target="_blank">Port Forward</a>.</p>
+</div>
+</div>
+</div>
+<h4 id="how-to-check-if-a-port-is-open-or-closed">How to Check if a Port is Open or Closed<a class="headerlink" href="#how-to-check-if-a-port-is-open-or-closed" title="Permanent link"></a></h4>
+<!-- markdownlint-disable MD051-->
+<p>Use the free online <a href="https://canyouseeme.org/" rel="noopener noreferrer" target="_blank">Open Port Check Tool</a> to check if your port is open. If you're using a VPN and have forwarded your port with the VPN service, then use the IP you got from <a href="#how-to-check-if-your-vpn-is-working">How to Check if Your VPN is Working</a> and the port you used to forward. If you're not using a VPN service, use your WAN IP address and the port you used to forward.</p>
+<!-- markdownlint-enable MD041 MD051-->
+
+<hr />
+<h2 id="client-settings">Client settings<a class="headerlink" href="#client-settings" title="Permanent link"></a></h2>
+<p><code>Tools</code> =&gt; <code>Options</code> =&gt; <code>Connection</code> is where you will find the settings to which port the download should use.</p>
 <p><a class="glightbox" href="../images/qbt-pf-connection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="qbt-pf-connection" src="../images/qbt-pf-connection.png" /></a></p>
 <ol>
 <li>Tools or cogwheel.</li>
@@ -3423,7 +3603,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 24, 2024 15:05:32</span>
   </span>
 
     
