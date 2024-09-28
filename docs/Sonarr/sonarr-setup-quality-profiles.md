@@ -83,7 +83,7 @@ At the bottom, in your chosen profile, you will see the added Custom Formats whe
 
 ## TRaSH Quality Profiles
 
-The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available _AFTER_ the 1080p release is made.
+!!! tip "The following Quality Profiles can be combined into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available _AFTER_ the 1080p release is made."
 
 ### WEB-1080p
 
@@ -111,9 +111,15 @@ Use the following main settings in your profile.
 
 ![!cf-profile-web1080](images/cf-profile-web1080.png)
 
-!!! info ""
+#### WEB-1080p alternative Quality Profile
 
-    For some older shows, you might want to enable the `WEB 720p`, or even the `HDTV 1080p`.
+!!! tip
+
+    For some older shows, you might want to enable the `WEB-720p`, `HDTV-720p/1080p`, or even `Bluray-720p/1080p` quality source. Depending on your preferences, you can put them above or below the `WEB-1080p`.
+
+    ![Alternative Option](images/cf-profile-alternative-web1080.png)
+
+---
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -131,8 +137,6 @@ Use the following main settings in your profile.
 ### WEB-2160p
 
 If you prefer 2160p WEBDL (WEB-2160p)
-
-The only deal breaker with 2160p is when the release includes DV/HDR. 2160p without DV/HDR is of minimal benefit.
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
@@ -159,6 +163,16 @@ Note: The `Advanced Audio` Custom Formats aren't used in the WEB profile, as WEB
 Use the following main settings in your profile.
 
 ![!cf-profile-web2160](images/cf-profile-web2160.png)
+
+#### WEB-2160p alternative Quality Profile
+
+!!! tip
+
+    You might want to combine the `WEB-720p/1080p` into a single Quality Profile if you, for example, want to be able to upgrade from 1080p to 4K/2160p when and if it becomes available after the 1080p release is made, and perhaps enable the `HDTV-720p/1080p` and/or `Bluray-720p/1080p` for some older shows, or even the `Bluray-2160p` and `Bluray-2160p Remux` quality source because you prefer HD audio. Depending on your preferences, you can put them above or below the `WEB-2160p`.
+
+    ![Alternative Option](images/cf-profile-alternative-web2160.png)
+
+---
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
