@@ -2221,6 +2221,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -3512,6 +3527,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -3635,19 +3665,33 @@
 </ul>
 <p>Big Thnx to <a href="https://github.com/bobokun" rel="noopener noreferrer" target="_blank">bobokun</a> Developer of <a href="https://github.com/StuffAnThings/qbit_manage" rel="noopener noreferrer" target="_blank">qBit Manage</a></p>
 <h3 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link"></a></h3>
-<p>Install the following Plugins.</p>
+<p>Install the following plugins:</p>
 <ul>
 <li>User Scripts</li>
-<li>NerdTools<ul>
-<li>python3 <sup>(<em>1</em>)</sup></li>
-<li>python-setuptools <sup>(<em>1</em>)</sup></li>
-<li>python-pip <sup>(<em>1</em>)</sup></li>
+<li>You will need to manually install the following packages for the correct Slackware version from <a href="https://packages.slackware.com/" rel="noopener noreferrer" target="_blank">https://packages.slackware.com/</a><ul>
+<li>python3</li>
+<li>python-setuptools</li>
+<li>python-pip</li>
 </ul>
 </li>
 </ul>
+<!-- markdownlint-disable MD041-->
+<h4 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link"></a></h4>
+<p>In your Unraid terminal, type the following to determine your Slackware version.</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/slackware-version
+</code></pre></div>
+<p>Then go to <a href="https://packages.slackware.com/" rel="noopener noreferrer" target="_blank">https://packages.slackware.com/</a> to find the correct 64-bit version of the required package.<br>
+Download it and add it to your Unraid flash drive located in the <code>boot/extra</code> folder. It will be installed upon Unraid boots.</p>
+<p>Currently:</p>
+<ul>
+<li><code>Slackware64 15.0</code> for <code>unRAID 6.x</code></li>
+<li><code>Slackware64 current</code> for <code>unRAID 7.x</code></li>
+</ul>
 <div class="admonition info">
-<p class="admonition-title"><sup>(<em>1</em>)</sup> These need to be installed from NerdTools.</p>
+<p class="admonition-title">To remove the old/wrong packages (that NerdTools installed for an earlier Slackware version), overwrite them with the new versions on your Unraid flash drive in the <code>boot/extra</code> folder. Place the correct versions there and then reboot.</p>
 </div>
+<!-- markdownlint-enable MD041-->
+
 <hr />
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link"></a></h2>
 <p>After you install the needed <code>Plugins</code> - it's time to configure everything.</p>
@@ -3813,7 +3857,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 12, 2024 18:27:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 28, 2024 17:25:47</span>
   </span>
 
     
