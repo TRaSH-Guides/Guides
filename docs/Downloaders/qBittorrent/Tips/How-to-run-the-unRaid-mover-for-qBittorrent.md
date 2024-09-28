@@ -32,7 +32,7 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopene
 Install the following plugins:
 
 - User Scripts
-- Since NerdTools has been deprecated, you will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/){:target="\_blank" rel="noopener noreferrer"}
+- You will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/){:target="\_blank" rel="noopener noreferrer"}
     - python3
     - python-setuptools
     - python-pip
