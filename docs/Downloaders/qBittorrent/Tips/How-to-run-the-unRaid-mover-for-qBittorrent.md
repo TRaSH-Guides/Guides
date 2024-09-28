@@ -29,15 +29,15 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopene
 
 ### Plugins
 
-Install the following Plugins.
+Install the following plugins:
 
 - User Scripts
-- NerdTools
-    - python3 <sup>(_1_)</sup>
-    - python-setuptools <sup>(_1_)</sup>
-    - python-pip <sup>(_1_)</sup>
+- You will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/){:target="\_blank" rel="noopener noreferrer"}
+    - python3
+    - python-setuptools
+    - python-pip
 
-!!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
+--8<-- "includes/downloaders/nerdtools-replacement-package-slackware.md"
 
 ---
 
