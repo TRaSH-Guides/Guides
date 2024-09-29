@@ -1,3 +1,9 @@
+# 2024-09-29 01:35
+- [fix(guides): NerdTools is deprecated so guidance needs updating](https://github.com/TRaSH-Guides/Guides/pull/2078)
+- [feat(guide): Add Bluray to Sonarr quality profile as an alternative](https://github.com/TRaSH-Guides/Guides/pull/2076)
+- [feat(maintenance): update dubs-only cf for KaiDubs dual audio releases](https://github.com/TRaSH-Guides/Guides/pull/2075)
+- [feat(guide): Add information to the port forwarding guide](https://github.com/TRaSH-Guides/Guides/pull/2074)
+
 # 2024-09-22 01:34
 - [fix(sonarr): update comparison logic](https://github.com/TRaSH-Guides/Guides/pull/2069)
 - [fix(guide): Glossary formatting and broken links](https://github.com/TRaSH-Guides/Guides/pull/2070)
