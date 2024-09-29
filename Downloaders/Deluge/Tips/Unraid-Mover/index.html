@@ -3677,6 +3677,25 @@
 </ul>
 <!-- markdownlint-disable MD041-->
 <h4 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link"></a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="unraid-plugin" name="__tabbed_1" type="radio" /><input id="manual-install" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="unraid-plugin">unRAID Plugin</label><label for="manual-install">Manual Install</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="glightbox" href="../images/unraid-app-python.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Unraid Install Python" src="../images/unraid-app-python.png" /></a></p>
+<ol>
+<li>
+<p>In your Unraid Dashboard go to <code>APP</code> and type in the search box:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">python</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">unraid</span>
+</code></pre></div>
+</li>
+<li>
+<p>Click on the install button to install everything you needed.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">According to the developer, it will install python3, pip, and setuptools onto your Unraid systems. without library issues, and it should be fully compatible with Unraid 6 and 7.</p>
+</div>
+</div>
+<div class="tabbed-block">
 <p>In your Unraid terminal, type the following to determine your Slackware version.</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/slackware-version
 </code></pre></div>
@@ -3700,6 +3719,9 @@
 <div class="admonition info">
 <p class="admonition-title">To remove the old/wrong packages (that NerdTools installed for an earlier Slackware version), overwrite them with the new versions on your Unraid flash drive in the <code>boot/extra</code> folder. Place the correct versions there and then reboot.</p>
 </div>
+</div>
+</div>
+</div>
 <!-- markdownlint-enable MD041-->
 
 <hr />
@@ -3708,7 +3730,7 @@
 <h3 id="requests-module"><code>requests</code> module<a class="headerlink" href="#requests-module" title="Permanent link"></a></h3>
 <p><code>deluge-mover.py</code> needs the requests Python module, so we need to make sure it's installed when your unRAID server starts, or when the Array is started the first time.</p>
 <p>You can choose one of the following 3 options (select a tab) to install <code>requests</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="user-scripts" name="__tabbed_1" type="radio" /><input id="python-venv" name="__tabbed_1" type="radio" /><input id="go-file" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="user-scripts">User scripts</label><label for="python-venv">Python venv</label><label for="go-file">Go File</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="user-scripts" name="__tabbed_2" type="radio" /><input id="python-venv" name="__tabbed_2" type="radio" /><input id="go-file" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="user-scripts">User scripts</label><label for="python-venv">Python venv</label><label for="go-file">Go File</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>With this option, we're going to install the <code>requests</code> module when the Array is started the first time.</p>
@@ -3845,7 +3867,7 @@ deactivate<span class="w"> </span><span class="c1"># to leave the environment</s
 <p>Click on the cogwheel of the new script in the list.</p>
 <p><a class="glightbox" href="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select user script" src="../images/Unraid-settings-user-scripts-edit-deluge-mover.png" /></a></p>
 <p>Choose your method (select a tab) and copy/paste the script in the new window that opens, then click <code>SAVE CHANGES</code>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="python-native" name="__tabbed_2" type="radio" /><input id="python-venv_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="python-native">Python (Native)</label><label for="python-venv_1">Python (venv)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="python-native" name="__tabbed_3" type="radio" /><input id="python-venv_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="python-native">Python (Native)</label><label for="python-venv_1">Python (venv)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="c1">#!/bin/bash</span>
