@@ -3680,13 +3680,23 @@
 <p>In your Unraid terminal, type the following to determine your Slackware version.</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/slackware-version
 </code></pre></div>
-<p>Then go to <a href="https://packages.slackware.com/" rel="noopener noreferrer" target="_blank">https://packages.slackware.com/</a> to find the correct 64-bit version of the required package.<br>
-Download it and add it to your Unraid flash drive located in the <code>boot/extra</code> folder. It will be installed upon Unraid boots.</p>
+<p>Then go to <a href="https://packages.slackware.com/" rel="noopener noreferrer" target="_blank">https://packages.slackware.com/</a></p>
+<p><a class="glightbox" href="../images/slackware-search-v15.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Slackware v15 Search" src="../images/slackware-search-v15.png" /></a></p>
+<ol>
+<li>
+<p>Select the correct 64-bit Slackware version from the release dropdown box.</p>
 <p>Currently:</p>
 <ul>
 <li><code>Slackware64 15.0</code> for <code>unRAID 6.x</code></li>
 <li><code>Slackware64 current</code> for <code>unRAID 7.x</code></li>
 </ul>
+</li>
+<li>
+<p>Type in the required package you're looking for in the search box.</p>
+</li>
+<li>Download the required packages.</li>
+</ol>
+<p>Put them in your Unraid flash drive located in the <code>boot/extra</code> folder. It will be installed upon Unraid boots.</p>
 <div class="admonition info">
 <p class="admonition-title">To remove the old/wrong packages (that NerdTools installed for an earlier Slackware version), overwrite them with the new versions on your Unraid flash drive in the <code>boot/extra</code> folder. Place the correct versions there and then reboot.</p>
 </div>
