@@ -68,7 +68,7 @@ This will reveal the inode of your file on the left side of the file.
 
 It will list all files linked with the same inode number.
 
-## Windows Method 1: 
+## Windows Method 1: Using fsutil
 
 - In the command line type: `fsutil hardlink list c:\path\to\your\download\location\file.mkv`
 
