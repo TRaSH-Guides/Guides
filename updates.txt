@@ -1,3 +1,7 @@
+# 2024-10-06 01:35
+- [feat(guide): Downloaders - Added plugin instructions for Python installation.](https://github.com/TRaSH-Guides/Guides/pull/2080)
+- [fix(guide): Downloaders - Improve Slackware instructions.](https://github.com/TRaSH-Guides/Guides/pull/2079)
+
 # 2024-09-29 01:35
 - [fix(guides): NerdTools is deprecated so guidance needs updating](https://github.com/TRaSH-Guides/Guides/pull/2078)
 - [feat(guide): Add Bluray to Sonarr quality profile as an alternative](https://github.com/TRaSH-Guides/Guides/pull/2076)
