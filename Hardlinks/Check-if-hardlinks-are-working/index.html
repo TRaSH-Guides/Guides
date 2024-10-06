@@ -3253,27 +3253,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-1-using-ls" class="md-nav__link">
+  <a href="#mac-or-linux-method-1-using-ls" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 1: Using ls
+      Mac or Linux Method 1: Using ls
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-2-using-stat" class="md-nav__link">
+  <a href="#mac-or-linux-method-2-using-stat" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 2: Using stat
+      Mac or Linux Method 2: Using stat
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-3-using-inode-copies" class="md-nav__link">
+  <a href="#mac-or-linux-method-3-using-inode-copies" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 3: Using Inode copies
+      Mac or Linux Method 3: Using Inode copies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-method-1-using-fsutil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Method 1: Using fsutil
     </span>
   </a>
   
@@ -3438,27 +3447,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-1-using-ls" class="md-nav__link">
+  <a href="#mac-or-linux-method-1-using-ls" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 1: Using ls
+      Mac or Linux Method 1: Using ls
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-2-using-stat" class="md-nav__link">
+  <a href="#mac-or-linux-method-2-using-stat" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 2: Using stat
+      Mac or Linux Method 2: Using stat
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-3-using-inode-copies" class="md-nav__link">
+  <a href="#mac-or-linux-method-3-using-inode-copies" class="md-nav__link">
     <span class="md-ellipsis">
-      Method 3: Using Inode copies
+      Mac or Linux Method 3: Using Inode copies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows-method-1-using-fsutil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows Method 1: Using fsutil
     </span>
   </a>
   
@@ -3513,7 +3531,7 @@
 <div class="admonition info">
 <p class="admonition-title">If you are using Usenet, these examples won't work due to making use of instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux, or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete.</p>
 </div>
-<h2 id="method-1-using-ls">Method 1: Using ls<a class="headerlink" href="#method-1-using-ls" title="Permanent link"></a></h2>
+<h2 id="mac-or-linux-method-1-using-ls">Mac or Linux Method 1: Using ls<a class="headerlink" href="#mac-or-linux-method-1-using-ls" title="Permanent link"></a></h2>
 <p>This is the easiest to check in our opinion.</p>
 <p>In your terminal <code>cd</code> to your download location and run <code>ls -al</code> or type <code>ls -al /path/to/your/download/location/</code></p>
 <p>You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.</p>
@@ -3524,7 +3542,7 @@
 <li>Blue rectangle - Folders/Directories you will need to go into them to check if the files are hardlinked.</li>
 </ul>
 <hr />
-<h2 id="method-2-using-stat">Method 2: Using stat<a class="headerlink" href="#method-2-using-stat" title="Permanent link"></a></h2>
+<h2 id="mac-or-linux-method-2-using-stat">Mac or Linux Method 2: Using stat<a class="headerlink" href="#mac-or-linux-method-2-using-stat" title="Permanent link"></a></h2>
 <p>This way requires a bit more work.</p>
 <ul>
 <li>In the terminal type: <code>stat /path/to/your/download/location/file.mkv</code></li>
@@ -3537,7 +3555,7 @@
 <li>Inode: if the numbers match, you know the files are hardlinked</li>
 </ol>
 <hr />
-<h2 id="method-3-using-inode-copies">Method 3: Using Inode copies<a class="headerlink" href="#method-3-using-inode-copies" title="Permanent link"></a></h2>
+<h2 id="mac-or-linux-method-3-using-inode-copies">Mac or Linux Method 3: Using Inode copies<a class="headerlink" href="#mac-or-linux-method-3-using-inode-copies" title="Permanent link"></a></h2>
 <ul>
 <li>In your terminal <code>cd</code> to your download location and run <code>ls -i file.mkv</code> or type <code>ls -i /path/to/your/download/location/file.mkv</code></li>
 </ul>
@@ -3551,6 +3569,11 @@
 </div>
 <p><a class="glightbox" href="../images/hardlinks-inode.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!hardlinks inode" src="../images/hardlinks-inode.png" /></a></p>
 <p>It will list all files linked with the same inode number.</p>
+<h2 id="windows-method-1-using-fsutil">Windows Method 1: Using fsutil<a class="headerlink" href="#windows-method-1-using-fsutil" title="Permanent link"></a></h2>
+<ul>
+<li>In the command line type: <code>fsutil hardlink list c:\path\to\your\download\location\file.mkv</code></li>
+</ul>
+<p>It will list all hardlinked files.</p>
 
 
 
@@ -3573,7 +3596,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">July 13, 2024 15:24:40</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 6, 2024 14:54:22</span>
   </span>
 
     
