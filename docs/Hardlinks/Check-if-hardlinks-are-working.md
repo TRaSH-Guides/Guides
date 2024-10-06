@@ -18,7 +18,7 @@ _All methods require you to log in to your terminal with PuTTY or similar softwa
 
 !!! info "If you are using Usenet, these examples won't work due to making use of instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux, or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete."
 
-## Method 1: Using ls
+## Mac or Linux Method 1: Using ls
 
 This is the easiest to check in our opinion.
 
@@ -34,7 +34,7 @@ You will get a listing of all your files and on the left side you will see a cou
 
 ---
 
-## Method 2: Using stat
+## Mac or Linux Method 2: Using stat
 
 This way requires a bit more work.
 
@@ -50,7 +50,7 @@ You will get 2 results you can use to compare several things.
 
 ---
 
-## Method 3: Using Inode copies
+## Mac or Linux Method 3: Using Inode copies
 
 - In your terminal `cd` to your download location and run `ls -i file.mkv` or type `ls -i /path/to/your/download/location/file.mkv`
 
@@ -67,3 +67,9 @@ This will reveal the inode of your file on the left side of the file.
 ![!hardlinks inode](images/hardlinks-inode.png)
 
 It will list all files linked with the same inode number.
+
+## Windows Method 1: Using fsutil
+
+- In the command line type: `fsutil hardlink list c:\path\to\your\download\location\file.mkv`
+
+It will list all hardlinked files.
