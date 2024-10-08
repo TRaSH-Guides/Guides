@@ -13,8 +13,7 @@
       "negate": true,
       "required": false,
       "fields": {
-        "value": 2,
-        "exceptLanguage": false
+        "value": 2
       }
     }
   ]
