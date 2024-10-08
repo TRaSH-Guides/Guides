@@ -246,7 +246,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
 
 ### Formats audio avancés et HDR
 
-TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (_en anglais uniquement_) :
+TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
 - [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="\_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}

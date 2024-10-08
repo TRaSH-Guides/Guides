@@ -180,7 +180,7 @@ Note : Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le
 
 ### Formats HDR
 
-TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (_en anglais uniquement_) :
+TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
 - [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}
 
@@ -188,7 +188,7 @@ TRaSH fournit d'excellents guides et explications à leur sujet dans les liens s
 
 ## Autres Informations
 
-Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (_en anglais uniquement_) : [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
+Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (*en anglais uniquement*) : [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
