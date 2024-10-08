@@ -150,7 +150,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-remux-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
@@ -226,7 +226,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-remux-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 

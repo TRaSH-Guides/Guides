@@ -152,7 +152,7 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-remux-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
@@ -228,7 +228,7 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-remux-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
