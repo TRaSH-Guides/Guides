@@ -1,0 +1,21 @@
+{
+  "trash_id": "533f782474f0819643c2ec0c1eeeb0ac",
+  "trash_scores": {
+    "default": -10000,
+    "vostfr": 0
+  },
+  "name": "Language: Not French",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not French Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    }
+  ]
+}
