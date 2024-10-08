@@ -1,0 +1,40 @@
+{
+  "trash_id": "10e77b96ae4770a7de645a91a53ce29a",
+  "trash_scores": {
+    "default": 500,
+    "vostfr": 0
+  },
+  "name": "Language: Original + French",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "French Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2,
+        "exceptLanguage": false
+      }
+    },
+    {
+      "name": "MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(MULTi)(\\b|\\d)"
+      }
+    }
+  ]
+}

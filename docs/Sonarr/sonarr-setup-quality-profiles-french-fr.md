@@ -1,102 +1,114 @@
-# Comment configurer ses Profiles
+# Comment configurer ses Profiles (French Profile)
 
-!!! note "Ce guide a été créé et est maintenu par [Someone said "Nice"?](https://github.com/NiceTSY)"
+*aka Comment configurer les Formats Personnalisés pour obtenir un audio ou/et des sous-titres en français ?*<br><br>
 
-Quelle est la meilleure façon de configurer les Formats Personnalisés (ou Custom Formats) et lesquels utiliser avec quel score pour obtenir une release avec un audio français et un anglais ?
-
-Gardez à l'esprit que la plupart des releases sont MULTi (comprenez double audio, original et français) et qu'il sera difficile d'avoir uniquement l'audio français, à moins que vous ne soyez prêt à obtenir du 720p, ou que vous ne recherchiez que des séries françaises.
-
-Pour ce qui est de la qualité, il n'y a pas de recette miracle, cela dépend de votre installation (périphériques) et de vos préférences personnelles.
-
-Certains préfèrent une qualité audio élevée (HD Audio), d'autres une meilleure qualité vidéo. Nombreux sont ceux qui préfèrent les deux.
-
-TRaSH a créé un [schéma](/Sonarr/sonarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter votre décision/choix. Notez que ce graphique n'inclut aucun des Formats Personnalisés de ce guide et que vous devrez quand même le lire pour obtenir des releases en MULTi.
+!!! note "Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)"
 
 ---
 
 ## Notions de base
 
-Il est impératif que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (_en anglais uniquement_) :
+Il est important que vous suiviez et compreniez ce qui est prévu par le guide de TRaSH :
 
-- L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
-- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to set up Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="\_blank" rel="noopener noreferrer"}.
+- Ajouter des Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to setup Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
----
+!!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
 
-## Je ne suis intéressé que par des films sous-titrés en français (VOSTFR)
-
-Deux options s'offre à vous :
-
-### En utilisant le guide de TRaSH et Bazarr
-
-!!! tip "Il s'agit de la méthode à privilégier."
-
-- Configurez Radarr en utilisant : [How to set up Quality Profiles | Which Quality Profile should you choose](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"}. (_en anglais_).
-- Configurez [Bazarr](../Bazarr/Setup-Guide.md) (_en anglais_). Il permet d'obtenir des sous-titres pour tous les films.
-- Profitez de vos films avec les sous-titres.
-- (Facultatif) Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="\_blank" rel="noopener noreferrer"} avec un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
-
-### En utilisant les exemples suivants et le Format Personnalisé VOSTFR
-
-- Continuez sur cette page.
-- Ignorez toute mention des **Formats Personnalisés MULTi**.
-- Ajoutez le Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr){:target="\_blank" rel="noopener noreferrer"} avec un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
+!!! tip
+    TRaSH a créé un [organigramme](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions/choix. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
 
 ---
 
-## Usages
+## FAQ
 
-Il y a deux façons d'aborder les exemples ci-dessous. En utilisant ou non les Formats Personnalisés de Groupes P2P du Guide original (qui peuvent être trouvés ici : [Collection of Custom Formats](/Sonarr/sonarr-collection-of-custom-formats/){:target="\_blank" rel="noopener noreferrer"}).
-Afin d'illustrer ce principe, vous verrez une section **"Mix original (optionnel)"** dans chacun des exemples ci-dessous. Vous devez comprendre que si vous ajoutez les Formats Personnalisés de cette section optionnelle, si Radarr ne trouve pas de MULTi, vous aurez toujours un bon score pour l'audio anglais.
+!!! info "Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?"
+    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-françaises) section.
 
-!!! warning "Attention"
+!!! info "Je suis seulement intéressé par les sous-titres français (VOSTFR)"
+    Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
 
-    Si vous utilisez le **"Mix original (optionnel)"**. Vous devez comprendre que même si l'objectif principal de ces Formats Personnalisés est de travailler en parallèle avec les formats du guide original. Vous pouvez vous retrouver avec un seul audio alors qu'il existe une version MULTi. La raison est que la release n'a pas été notée assez haut pour l'emporter sur les autres scores.
+!!! info "Puis-je obtenir des HDLight ou 4KLight ?"
+    Non, ce guide n'est pas prévu pour. Tout de fois si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
 
-Un exemple pour les Animes en MULTi/VOSTFR est également fourni à la fin : [Exemple pour les Animes](#exemple-pour-les-animes)
+!!! info "Qu'en est-il des animes ?"
+    Un exemple de profile pour les animes est également proposé : [Anime](#anime).
 
 ---
 
-## Exemples de Profil
+## Paramètres spécifiques à Prowlarr
+
+!!! abstract "Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)"
+    Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
+    Veuillez préférer l'utilisation de l'options "Indexeurs - Option Multi Langues" dans Sonarr (voir ci-dessous).
+
+!!! abstract "Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)"
+    Cette option ne devrait pas être utilisée. Principalement parce que vous perdez des informations concernant la release.
+    De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
+
+!!! abstract "Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)"
+    Comme pour l'option MULTi, cela entraînera des faux positifs concernant les CF audio français. Gardez-la désactivée.
+
+??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
+    ![French Prowlarr specific settings](images/french-prowlarr-settings.png)
+
+---
+
+## Paramètres spécifiques à Sonarr
+
+!!! abstract "Media Management - Nommage des épisodes (Episode Naming)"
+    Veuillez consulter ceci : [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+
+!!! abstract "Indexers - Multi Languages option"
+    Dans Sonarr, vous pouvez indiquer que MULTi pour un indexeur signifie qu'une release possède au moins certains audios. Pour les besoins de ce guide, vous sélectionnerez `Original` et `French`.
+    Cette option ne devrait être utilisée que pour les indexeurs français. L'appliquer sur des indexeurs plus "internationaux" peut créer des faux positifs avec les CF audio français.
+
+    Si vous ne voyez pas l'option, pensez à activer les "Options Avancées" de Sonarr.
+
+    ??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
+        ![French Sonarr MULTi settings](images/french-starr-multi-settings.png)
+
+---
+
+## Logique de scoring (anglais seulement)
 
 --8<-- "includes/cf/score-attention.md"
 
 ---
 
-### Type de versions françaises
+## Profils de Qualité
 
-Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :
+{! include-markdown "../../includes/french-guide/french-guide-language-profiles-fr.md" !}
 
-- Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à `101` au lieu de `0`.
-- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}` au Format Personnalisé [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
+---
 
-!!! warning "Attention"
+### Versions Audio Françaises
 
-    Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
+{! include-markdown "../../includes/french-guide/french-guide-french-audio-information-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-audio-version-fr.md" !}
 
 ---
 
-### Services de streaming francophones
+### HD Bluray + WEB (1080p)
 
-Tous ces éléments sont facultatifs et ne sont là qu'à titre d'information et ne sont pas associés à un score. Cela est dû au fait que peu de sorties sont marquées avec ces services, ce qui rend leur évaluation difficile. De plus, les services de streaming couverts par le guide de TRaSH sont souvent de meilleure qualité.
+!!! tip "Basic Settings"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+    Pour d'anciennes séries, il peut être utile d'activer la source de qualité `HDTV-720p/1080p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-hd-vo.png)
 
----
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![HD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-hd-vf.png)
 
-### TRaSH recommandations (_en anglais_)
+    ![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
+
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
----
-
-#### WEBDL-1080p
-
-Si vous préférez les 720p/1080p WEBDL (WEB-1080p)
-
-{! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
+**Les Formats Personnalisés suivants sont requis :**
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
@@ -106,40 +118,35 @@ Si vous préférez les 720p/1080p WEBDL (WEB-1080p)
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
-Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le profil WEB, car vous trouverez difficilement de l'audio HD avec des WEBDL (seuls les nouveaux WEBDL auront de l'Atmos). Si vous voulez aussi de l'audio HD, vous devriez opter pour les Remuxes.
+**Les Formats Personnalisés suivants sont facultatifs :**
 
-Utilisez les paramètres principaux suivants dans votre profil.
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
-![!cf-profile-web1080](images/cf-profile-web1080.png)
+{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
 
-!!! info ""
-
-    Pour certaines émissions plus anciennes, vous pourriez avoir besoin d'activer le `WEB 720p` ou même le `HDTV 1080p`.
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
-
-    **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
-
-    - Il téléchargera le WEB-DL 1080p (si vous avez également activé `WEB 720p` et/ou `HDTV 1080p`, la mise à niveau se fera jusqu'au WEB-DL 1080p).
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
+Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
 ---
 
-#### WEBDL-2160p
+### UHD Bluray + WEB (2160p)
 
-Si vous préférez les 2160p WEBDL (WEB-2160p)
+!!! tip "Basic Settings"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+    Pour d'anciennes séries, il peut être utile d'activer la source de qualité `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR, le 2160p sans DV/HDR ne représente qu'un bénéfice minime.
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-uhd-vo.png)
+
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-uhd-vf.png)
+
+{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+
+**Les Formats Personnalisés suivants sont requis :**
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
-
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
@@ -147,34 +154,23 @@ Le seul problème avec le 2160p réside dans le fait de l'obtenir avec le DV/HDR
 
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
-Utilisez les paramètres principaux suivants dans votre profil.
+**Les Formats Personnalisés suivants sont facultatifs :**
 
-![!cf-profile-web2160](images/cf-profile-web2160.png)
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
-!!! info ""
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
 
-    La raison pour laquelle le WEB 1080p est fusionné avec le 2160p est que certaines sorties NF ne seront pas publiées en 4k, mais possède tout de même du DV/HDR.
-    Si vous voulez faire la même chose, veillez à remplacer [x265 (HD)](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd){:target="_blank" rel="noopener noreferrer"} par [x265 (no HDR/DV)](/Sonarr/sonarr-collection-of-custom-formats/#x265-no-hdrdv){:target="_blank" rel="noopener noreferrer"}.
+{! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-fr.md" !}
 
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
-
-    **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
-
-    - Il téléchargera le WEB-DL 1080p si il possède un layer DV/HDR.
-    - Il sera mis à niveau vers le WEB-2160p lorsqu'il sera disponible.
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
+Note : Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.
 
 ---
 
-#### Exemple pour les Animes
-
-Si vous cherchez des animes avec des sous-titres français ou en MULTi (audio original + français).
+#### Anime
 
 {! include-markdown "../../includes/french-guide/sonarr-french-anime-info-fr.md" !}
 
-{! include-markdown "../../includes/french-guide/sonarr-french-multi-audio-fr.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-uhd-fr.md" !}
+{! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md" !}
 
@@ -190,7 +186,7 @@ TRaSH fournit d'excellents guides et explications à leur sujet dans les liens s
 
 ---
 
-## FAQ & INFO
+## Autres Informations
 
 Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (_en anglais uniquement_) : [FAQ & Info](/Sonarr/sonarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
 
