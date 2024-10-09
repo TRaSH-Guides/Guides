@@ -96,13 +96,10 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 !!! tip "Basic Settings"
     Make sure you merge the Bluray and WEB qualities into one group under your Quality Profile's qualities. This is due to the fact that potential release with `French` audio may not exist in WEB.
-    For some older shows, you might want to enable the `Web-720p`, `HDTV-720p/1080p`, or even `DVD` quality source. Depending on your preferences, you could also merge the `HDTV` with their related `Web|Bluray` group.
+    For some older shows, you might want to enable the `HDTV-720p/1080p`, or even `DVD` quality source. Depending on your preferences, you could also merge the `HDTV` with their related `Web|Bluray` group.
 
-    ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-hd-vo.png)
-
-    ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![HD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-hd-vf.png)
+    ??? success "Profile Screenshot - [Click to show/hide]"
+        ![HD Bluray + WEB Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -134,11 +131,8 @@ Note: The `Advanced Audio` Custom Formats aren't used in the profile, as WEB-DL 
     Make sure you merge the Bluray and WEB qualities into one group under your Quality Profile's qualities. This is due to the fact that potential release with `French` audio may not exist in WEB.
     For some older shows, you might want to enable the `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, or even `DVD` quality sources. Depending on your preferences, you could also merge the `HDTV` with their related `Web|Bluray` group.
 
-    ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-uhd-vo.png)
-
-    ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-uhd-vf.png)
+    ??? success "Profile Screenshot - [Click to show/hide]"
+        ![UHD Bluray + WEB Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 

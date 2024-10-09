@@ -99,10 +99,10 @@ It is quite important that you follow and understand what is envisioned by Trash
     The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
     ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-hd-vo.png)
+        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-bluray-webdl-hd-vo.png)
 
     ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-hd-vf.png)
+        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-radarr-qp-bluray-webdl-hd-vf.png)
 
 !!! warning "Make sure you don't check the BR-DISK."
 
@@ -139,10 +139,10 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
     The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.
 
     ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![HD Remux for VOSTFR or MULTi.VO Profile](images/french-starr-qp-remux-hd-vo.png)
+        ![HD Remux for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-remux-hd-vo.png)
 
     ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![HD Remux for MULTi.VF Profile](images/french-starr-qp-remux-hd-vf.png)
+        ![HD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-hd-vf.png)
 
 !!! warning "Make sure you don't check the BR-DISK."
 
@@ -178,10 +178,10 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
     Make sure you merge the Bluray and WEB qualities into one group under your Quality Profile's qualities. This is due to the fact that potential release with `French` audio may not exist in WEB.
 
     ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-uhd-vo.png)
+        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-bluray-webdl-uhd-vo.png)
 
     ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![HD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-uhd-vf.png)
+        ![HD Bluray + WEB for MULTi.VF Profile](images/french-radarr-qp-bluray-webdl-uhd-vf.png)
 
 !!! warning "Make sure you don't check the BR-DISK."
 
@@ -215,10 +215,10 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
     Make sure you merge the Bluray and WEB qualities into one group under your Quality Profile's qualities. This is due to the fact that potential release with `French` audio may not exist in WEB.
 
     ??? success "VOSTFR + MULTi.VO Profile Screenshot - [Click to show/hide]"
-        ![UHD Remux for VOSTFR or MULTi.VO Profile](images/french-starr-qp-remux-uhd-vo.png)
+        ![UHD Remux for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-remux-uhd-vo.png)
 
     ??? success "MULTi.VF Profile Screenshot - [Click to show/hide]"
-        ![UHD Remux for MULTi.VF Profile](images/french-starr-qp-remux-uhd-vf.png)
+        ![UHD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-uhd-vf.png)
 
 !!! warning "Make sure you don't check the BR-DISK."
 

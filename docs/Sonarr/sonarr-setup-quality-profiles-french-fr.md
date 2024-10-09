@@ -97,10 +97,10 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     Pour d'anciennes séries, il peut être utile d'activer la source de qualité `HDTV-720p/1080p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
     ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
-        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-hd-vo.png)
+        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd-vo.png)
 
     ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
-        ![HD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-hd-vf.png)
+        ![HD Bluray + WEB for MULTi.VF Profile](images/french-sonarr-qp-bluray-webdl-hd-vf.png)
 
     ![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
 
@@ -135,10 +135,10 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
     Pour d'anciennes séries, il peut être utile d'activer la source de qualité `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
     ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
-        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-starr-qp-bluray-webdl-uhd-vo.png)
+        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd-vo.png)
 
     ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
-        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-starr-qp-bluray-webdl-uhd-vf.png)
+        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-sonarr-qp-bluray-webdl-uhd-vf.png)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
