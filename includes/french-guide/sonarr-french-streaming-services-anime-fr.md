@@ -13,7 +13,9 @@
     | [{{ sonarr['cf']['bglobal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#b-global)  |                              0                              | {{ sonarr['cf']['bglobal']['trash_id'] }}    |
     | [{{ sonarr['cf']['bilibili']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bilibili) |                              0                              | {{ sonarr['cf']['bilibili']['trash_id'] }}   |
     | [{{ sonarr['cf']['hidive']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hidive)     |                              0                              | {{ sonarr['cf']['hidive']['trash_id'] }}     |
-    | [{{ sonarr['cf']['french-wkn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#adn)    | {{ sonarr['cf']['french-wkn']['trash_scores']['default'] }} | {{ sonarr['cf']['french-wkn']['trash_id'] }} |
+    | [{{ sonarr['cf']['french-wkn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#wkn)    |                              0                              | {{ sonarr['cf']['french-wkn']['trash_id'] }} |
+
+    !!! info "ADN est préféré à Crunchyroll (CR) en raison de l'utilisation de la traduction automatique (MTL) ou par IA pour au moins les sous-titres français de certains animes. ADN possède ses propres transcripteurs."
 
     ??? info "Info sur ADN et WKN (Service de streaming francophone) - [Click to show/hide]"
 

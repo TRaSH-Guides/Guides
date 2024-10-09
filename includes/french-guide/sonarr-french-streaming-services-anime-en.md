@@ -13,7 +13,9 @@
     | [{{ sonarr['cf']['bglobal']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#b-global)  |                              0                              | {{ sonarr['cf']['bglobal']['trash_id'] }}    |
     | [{{ sonarr['cf']['bilibili']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#bilibili) |                              0                              | {{ sonarr['cf']['bilibili']['trash_id'] }}   |
     | [{{ sonarr['cf']['hidive']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hidive)     |                              0                              | {{ sonarr['cf']['hidive']['trash_id'] }}     |
-    | [{{ sonarr['cf']['french-wkn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#adn)    | {{ sonarr['cf']['french-wkn']['trash_scores']['default'] }} | {{ sonarr['cf']['french-wkn']['trash_id'] }} |
+    | [{{ sonarr['cf']['french-wkn']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#wkn)    |                              0                              | {{ sonarr['cf']['french-wkn']['trash_id'] }} |
+
+    !!! info "ADN is preferred over Crunchy Roll (CR) due to the use of Machine Language Translation (MTL) or AI translation for at least French subs for some anime shows. When ADN is known to produce their own subs."
 
     ??? info "Info regarding ADN and WKN (French Streaming Services) - [Click to show/hide]"
 
