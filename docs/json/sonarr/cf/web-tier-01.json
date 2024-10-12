@@ -89,6 +89,15 @@
       }
     },
     {
+      "name": "Kitsune",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Kitsune)$"
+      }
+    },
+    {
       "name": "monkee",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
