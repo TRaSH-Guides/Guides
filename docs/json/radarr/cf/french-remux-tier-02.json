@@ -53,6 +53,15 @@
       }
     },
     {
+      "name": "KTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KTM)$"
+      }
+    },
+    {
       "name": "MARBLECAKE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

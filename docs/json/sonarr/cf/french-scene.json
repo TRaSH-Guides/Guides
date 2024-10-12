@@ -148,7 +148,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(PANZeR|PHoQUE|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
+        "value": "^(PANZeR|PATHECROUTE|Penrose|PHoQUE|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
       }
     },
     {
