@@ -14,10 +14,10 @@
 
     !!! tip
 
-        Les groupes de la scène française sont inclus et devraient toujours être ajoutés car certains des principaux groupes qui publient des versions sous-titrées et/ou doublées en français en sont issus.
+        Les groupes de la scène française sont inclus et devraient toujours être ajoutés, car certains des principaux groupes qui publient des versions sous-titrées et/ou doublées en français en sont issus.
 
-        Les groupes FanSUB peuvent être notés soit {{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }} (par défaut) soit `1000` selon que vous souhaitez privilégier les sorties FanSUB ou SeaDex.
+        Les groupes FanSUB peuvent être notés soit {{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }} (par défaut) soit `1000`, selon que vous souhaitez privilégier les sorties FanSUB ou SeaDex.
 
     !!! tip "Original French Bluray/Web Tiers"
 
-        Ils sont optionnels et peuvent être inclus ou non. Cela est dû au fait que certains d'entre eux ont tendance à publier des animes.
+        Ils sont optionnels et peuvent être inclus ou non. Cela est dû au fait que certains d'entre eux ont tendance à publier des anime.

@@ -1,6 +1,6 @@
 # Comment configurer ses Profiles (French Profile)
 
-*aka Comment configurer les Formats Personnalisés pour obtenir un audio ou/et des sous-titres en français ?*<br><br>
+*aka Comment configurer les Formats Personnalisés pour obtenir un audio et/ou des sous-titres en français ?*<br><br>
 
 !!! note "Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)"
 
@@ -16,7 +16,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 !!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
 
 !!! tip
-    TRaSH a créé un [organigramme](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions/choix. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
+    TRaSH a créé un [organigramme](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
 
 ---
 
@@ -29,7 +29,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
 
 !!! info "Puis-je obtenir des HDLight ou 4KLight ?"
-    Non, ce guide n'est pas prévu pour. Tout de fois si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
+    Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
 
 ---
 
@@ -37,10 +37,10 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 !!! abstract "Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)"
     Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
-    Veuillez préférer l'utilisation de l'options "Indexeurs - Option Multi Langues" dans Radarr (voir ci-dessous).
+    Veuillez préférer l'utilisation de l'option "Indexeurs - Option Multi Langues" dans Radarr (voir ci-dessous).
 
 !!! abstract "Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)"
-    Cette option ne devrait pas être utilisée. Principalement parce que vous perdez des informations concernant la release.
+    Cette option ne devrait pas être utilisée, principalement parce que vous perdez des informations concernant la release.
     De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
 
 !!! abstract "Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)"
@@ -94,7 +94,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 !!! tip "Paramètres de base"
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
-    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas faites en 1080p WEB-DL.
+    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas en 1080p WEB-DL.
 
     ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
         ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-bluray-webdl-hd-vo.png)
@@ -124,7 +124,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le profil d'encodage, car vous trouverez difficilement de l'audio HD avec. Et il est conseillé de privilégier la qualité visuelle. Si vous voulez aussi de l'audio HD, vous devriez opter pour les Remuxes ou les Encodes UHD.
+Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes ou des encodages UHD.
 
 ---
 
@@ -134,7 +134,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
 
 !!! tip "Paramètres de base"
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
-    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas faites en 1080p WEB-DL.
+    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas en 1080p WEB-DL.
 
     ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
         ![HD Remux for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-remux-hd-vo.png)
@@ -142,7 +142,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
     ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
         ![HD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-hd-vf.png)
 
-!!! warning "Make sure you don't check the BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -181,7 +181,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
     ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
         ![UHD Bluray + WEB for MULTi.VF Profile](images/french-radarr-qp-bluray-webdl-uhd-vf.png)
 
-!!! warning "Make sure you don't check the BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -218,7 +218,7 @@ Note: Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le pro
     ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
         ![UHD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-uhd-vf.png)
 
-!!! warning "Make sure you don't check the BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 

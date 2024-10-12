@@ -1,6 +1,6 @@
 # Comment configurer ses Profiles (French Profile)
 
-*aka Comment configurer les Formats Personnalisés pour obtenir un audio ou/et des sous-titres en français ?*<br><br>
+*aka Comment configurer les Formats Personnalisés pour obtenir un audio et/ou des sous-titres en français ?*<br><br>
 
 !!! note "Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)"
 
@@ -16,7 +16,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 !!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
 
 !!! tip
-    TRaSH a créé un [organigramme](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions/choix. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
+    TRaSH a créé un [organigramme](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
 
 ---
 
@@ -29,10 +29,10 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
 
 !!! info "Puis-je obtenir des HDLight ou 4KLight ?"
-    Non, ce guide n'est pas prévu pour. Tout de fois si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
+    Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
 
 !!! info "Qu'en est-il des animes ?"
-    Un exemple de profile pour les animes est également proposé : [Anime](#anime).
+    Un exemple de profil pour les animes est également proposé : [Anime](#anime).
 
 ---
 
@@ -40,10 +40,10 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 !!! abstract "Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)"
     Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
-    Veuillez préférer l'utilisation de l'options "Indexeurs - Option Multi Langues" dans Sonarr (voir ci-dessous).
+    Veuillez préférer l'utilisation de l'option "Indexeurs - Option Multi Langues" dans Sonarr (voir ci-dessous).
 
 !!! abstract "Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)"
-    Cette option ne devrait pas être utilisée. Principalement parce que vous perdez des informations concernant la release.
+    Cette option ne devrait pas être utilisée, principalement parce que vous perdez des informations concernant la release.
     De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
 
 !!! abstract "Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)"
