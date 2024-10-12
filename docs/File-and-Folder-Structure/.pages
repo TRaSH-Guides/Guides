@@ -1,4 +1,5 @@
 nav:
+  - Home: index.md
   - Hardlinks - Atomic Moves: Hardlinks-and-Instant-Moves.md
   - How-to-setup-for
   - Examples: Examples.md
