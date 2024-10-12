@@ -197,15 +197,6 @@
       }
     },
     {
-      "name": "Kitsune",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Kitsune)$"
-      }
-    },
-    {
       "name": "LAZY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

@@ -125,6 +125,15 @@
       }
     },
     {
+      "name": "Kitsune",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Kitsune)$"
+      }
+    },
+    {
       "name": "NOSiViD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
