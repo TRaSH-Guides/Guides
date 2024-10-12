@@ -1,4 +1,4 @@
-# How to Set Up
+# How To Set Up
 
 In this section, you will find several how-to guides for installation of the Starr Apps.
 This is all done in a way to achieve [Hardlinks and Instant Moves (Atomic-Moves)](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/).

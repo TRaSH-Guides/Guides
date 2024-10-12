@@ -18,4 +18,4 @@ The `data` folder can be placed wherever you like. As an example, in Unraid, you
 
 If you are installing applications natively, then they will already have visibility of that file and folder structure, assuming permissions are set correctly. If you are installing applications non-natively, for example via Docker, then each application should be granted access to the lowest level folder that is required whilst maintaining consistent pathing to the top level folder, which here is `data`. For example, a torrent client installed via Docker would have `/mnt/user/data/torrents` mapped to `/data/torrents`. This means that the download client would see the contents of the host's `/mnt/user/data/torrents` folder in the `/data/torrents` folder inside the container.
 
-More detailed examples can be found in the How to Set Up For section.
+More detailed examples can be found in the How To Set Up section.
