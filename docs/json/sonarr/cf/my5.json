@@ -7,12 +7,12 @@
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
     {
-      "name": "MY5",
+      "name": "My5",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(my5)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+        "value": "\\b(MY5)\\b"
       }
     },
     {
