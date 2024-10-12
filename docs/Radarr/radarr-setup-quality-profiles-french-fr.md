@@ -23,7 +23,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 ## FAQ
 
 !!! info "Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?"
-    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-françaises) section.
+    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-francaises) section.
 
 !!! info "Je suis seulement intéressé par les sous-titres français (VOSTFR)"
     Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).

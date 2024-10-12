@@ -23,7 +23,7 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 ## FAQ
 
 !!! info "Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?"
-    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-françaises) section.
+    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-francaises).
 
 !!! info "Je suis seulement intéressé par les sous-titres français (VOSTFR)"
     Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
@@ -96,13 +96,8 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
     Pour d'anciennes séries, il peut être utile d'activer la source de qualité `HDTV-720p/1080p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
-        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd-vo.png)
-
-    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
-        ![HD Bluray + WEB for MULTi.VF Profile](images/french-sonarr-qp-bluray-webdl-hd-vf.png)
-
-    ![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
+    ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
+        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -134,11 +129,8 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
     Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
     Pour d'anciennes séries, il peut être utile d'activer la source de qualité `Bluray-720p/1080p`, `Web-720p/1080p`, `HDTV-720p/1080p/2160p`, ou même `DVD`. Selon vos préférences, vous pouvez également fusionner le groupe `HDTV` avec le groupe `Web|Bluray`.
 
-    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
-        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd-vo.png)
-
-    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
-        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-sonarr-qp-bluray-webdl-uhd-vf.png)
+    ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
+        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
 
 {! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
 
