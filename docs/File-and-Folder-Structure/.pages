@@ -1,7 +1,7 @@
 nav:
   - Home: index.md
-  - Hardlinks - Atomic Moves: Hardlinks-and-Instant-Moves.md
-  - How-to-setup-for
+  - Hardlinks and Instant Moves: Hardlinks-and-Instant-Moves.md
+  - How to Set Up: How-to-setup-for
   - Examples: Examples.md
   - Check if hardlinks are working: Check-if-hardlinks-are-working.md
   - Replace copies with hardlinks: Replace-copies-with-hardlinks.md
