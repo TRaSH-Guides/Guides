@@ -110,7 +110,7 @@ ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, 
 Afterwards you need to make the following adjustments:
 
 - The mode to `Blacklist`.
-- The `Action when unwanted extension detected` to `Fail job (move to History)`.
+- Change `Action when unwanted extension detected` to `Fail job (move to History)`.
 
 ![!Unwanted Extensions](images/sabnzbd-switches-queue-unwanted.png)
 
