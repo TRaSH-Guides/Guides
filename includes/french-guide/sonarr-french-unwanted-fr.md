@@ -33,5 +33,5 @@
 
         | Formats Personnalisés                                                                         |                          Score                           | Trash ID                                  |
         |-----------------------------------------------------------------------------------------------|:--------------------------------------------------------:|-------------------------------------------|
-        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   | {{ sonarr['cf']['fansub']['trash_scores']['default'] }}  | {{ sonarr['cf']['fansub']['trash_id'] }}  |
+        | [{{ sonarr['cf']['fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fansub)   |                            0                             | {{ sonarr['cf']['fansub']['trash_id'] }}  |
         | [{{ sonarr['cf']['fastsub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fastsub) | {{ sonarr['cf']['fastsub']['trash_scores']['default'] }} | {{ sonarr['cf']['fastsub']['trash_id'] }} |

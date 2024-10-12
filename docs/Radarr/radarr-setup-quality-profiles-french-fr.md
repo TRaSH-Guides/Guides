@@ -253,9 +253,15 @@ TRaSH fournit d'excellents guides et explications à leur sujet dans les liens s
 
 ---
 
+## Autres Informations
+
+Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (*en anglais uniquement*) : [FAQ & Info](/Radarr/radarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
+
+---
+
 ## Remerciements
 
-- Un grand merci à toutes les personnes qui m'ont aidé à tester ces Profils et Formats (et qui continuent à le faire).
+- Un grand merci à toutes les personnes qui m'ont aidé à créer et tester ces Profils et Formats (et qui continuent à le faire).
 - Une mention spéciale à MySuperChef et PrL pour leur temps et leurs explications.
 - Une mention spéciale pour Piou et Wikoul qui sont potentiellement tous les deux maintenant dans des asiles en raison de la quantité de tests effectués.
 - [TRaSH](https://trash-guides.info/), pour m'avoir accordé un petit espace sur son guide, ses connaissances, et sa gentillesse.

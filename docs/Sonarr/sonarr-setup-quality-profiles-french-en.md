@@ -192,7 +192,7 @@ A FAQ regarding most of the questions you could have is provided by TRaSH: [FAQ 
 
 ## Acknowledgements
 
-- A big thanks to all the people who helped me to test those profiles and formats (and continue to do so).
+- A big thanks to all the people who helped me to make and test those profiles and formats (and continue to do so).
 - A special one to MySuperChef, PrL and KoUiGnAmAnN for their time and explanations.
 - A special one to SeiyaGame, TheFrenchNaruto and Maxence which provided all of the Anime information.
 - A special one to Piou and Wikoul who are potentially both now in asylums due to the amount of testing.

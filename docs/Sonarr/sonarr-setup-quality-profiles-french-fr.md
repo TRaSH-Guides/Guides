@@ -194,7 +194,7 @@ Une FAQ répondant à la plupart des questions que vous pourriez vous poser est 
 
 ## Remerciements
 
-- Un grand merci à toutes les personnes qui m'ont aidé à tester ces Profils et Formats (et qui continuent à le faire).
+- Un grand merci à toutes les personnes qui m'ont aidé à créer et tester ces Profils et Formats (et qui continuent à le faire).
 - Une mention spéciale à MySuperChef, PrL et KoUiGnAmAnN pour leur temps et leurs explications.
 - Une mention spéciale à SeiyaGame, TheFrenchNaruto et Maxence qui ont fourni toutes les informations concernant les animes.
 - Une mention spéciale pour Piou et Wikoul qui sont potentiellement tous les deux maintenant dans des asiles en raison de la quantité de tests effectués.
