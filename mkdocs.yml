@@ -108,12 +108,12 @@ plugins:
         Sonarr/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-v3-eol.md
         Sonarr/Sonarr-remote-path-mapping.md: Sonarr/Tips/Sonarr-remote-path-mapping.md
         # How to old redirects
-        How-to-setup-for/index.md: File-and-Folder-Structure/How-to-setup-for/index.md
-        How-to-setup-for/Docker.md: File-and-Folder-Structure/How-to-setup-for/Docker.md
-        How-to-setup-for/Dockstarter.md: File-and-Folder-Structure/How-to-setup-for/Dockstarter.md
-        How-to-setup-for/Native.md: File-and-Folder-Structure/How-to-setup-for/Native.md
-        How-to-setup-for/Synology.md: File-and-Folder-Structure/How-to-setup-for/Synology.md
-        How-to-setup-for/Unraid.md: File-and-Folder-Structure/How-to-setup-for/Unraid.md
+        How-to-set-up/index.md: File-and-Folder-Structure/How-to-set-up/index.md
+        How-to-set-up/Docker.md: File-and-Folder-Structure/How-to-set-up/Docker.md
+        How-to-set-up/Dockstarter.md: File-and-Folder-Structure/How-to-set-up/Dockstarter.md
+        How-to-set-up/Native.md: File-and-Folder-Structure/How-to-set-up/Native.md
+        How-to-set-up/Synology.md: File-and-Folder-Structure/How-to-set-up/Synology.md
+        How-to-set-up/Unraid.md: File-and-Folder-Structure/How-to-set-up/Unraid.md
         # Random redirects
         Misc/trash-sync.md: Guide-Sync/index.md
         # Shortcuts redirects
