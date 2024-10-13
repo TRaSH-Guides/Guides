@@ -191,7 +191,7 @@ Plex, Emby, JellyFin and Bazarr
 
 ### Examples how to set up your paths INSIDE your applications
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) of how to set up your paths INSIDE your applications.**
+**Don't forget to look at the [Examples](/File-and-Folder-Structure/Examples/) of how to set up your paths INSIDE your applications.**
 
 ## Video Tutorial
 

@@ -50,4 +50,4 @@ Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/
 
 ---
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to set up the paths inside the applications.**
+**Don't forget to look at the [Examples](/File-and-Folder-Structure/Examples/) how to set up the paths inside the applications.**

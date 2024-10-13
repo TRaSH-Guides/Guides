@@ -85,7 +85,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     `Settings` => `Media Management` => `Importing`
 
-    ![sonarr-enable-hardlinks](/Hardlinks/images/sonarr-enable-hardlinks.png)
+    ![sonarr-enable-hardlinks](/File-and-Folder-Structure/images/sonarr-enable-hardlinks.png)
 
     `Settings` => `Media Management` => `Root Folders`
 
@@ -103,7 +103,7 @@ When that's all set then you will need to change the paths you're going to use i
 
     `Settings` => `Media Management` => `Importing`
 
-    ![radarr-enable-hardlinks](/Hardlinks/images/radarr-enable-hardlinks.png)
+    ![radarr-enable-hardlinks](/File-and-Folder-Structure/images/radarr-enable-hardlinks.png)
 
     `Settings` => `Media Management` => `Root Folders`
 

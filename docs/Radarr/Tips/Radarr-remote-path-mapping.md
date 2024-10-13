@@ -16,7 +16,7 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replace it with the `L
 
     - [Radarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 
-    - [TRaSH Guides](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+    - [TRaSH Guides](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
 ---
 

@@ -333,7 +333,7 @@ You will notice that all the images will be downloaded, and after that, the cont
 
 ---
 
-**If you need help setting up the applications, look at the [Examples](/Hardlinks/Examples/) of how to set up the paths inside your applications.**
+**If you need help setting up the applications, look at the [Examples](/File-and-Folder-Structure/Examples/) of how to set up the paths inside your applications.**
 
 !!! warning
 

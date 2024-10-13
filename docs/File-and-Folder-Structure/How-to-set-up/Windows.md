@@ -87,7 +87,7 @@ After you create the base folders to use it's time to follow the #examples-how-t
 
 At the moment, we do not have Windows-based screenshots for all of the apps, but they might be added later.
 
-So, in the meantime, use the [Examples](/Hardlinks/Examples/) of how to setup your paths INSIDE your applications.
+So, in the meantime, use the [Examples](/File-and-Folder-Structure/Examples/) of how to setup your paths INSIDE your applications.
 However, for the paths, use the info provided below depending on whether you have a one-disk setup or a two-disk setup.
 
 !!! warning "Linux used forward slash `/` and Windows uses backslash `\`<br>So if you see paths with a forward slash replace it with a backslash for Windows"
