@@ -11,9 +11,9 @@
 This guide consists of 4 sections.
 
 1. This page with a short description.
-1. [How to set up for](/File-and-Folder-Structure/How-to-setup-for/) your installation method.
-1. [Examples](/File-and-Folder-Structure/Examples/) What you should use for your path settings in your used applications.
-1. [Check if hardlinks are working](/File-and-Folder-Structure/Check-if-hardlinks-are-working/)
+2. [How to set up](/File-and-Folder-Structure/How-to-set-up/) for your installation method.
+3. [Examples](/File-and-Folder-Structure/Examples/) What you should use for your path settings in your used applications.
+4. [Check if hardlinks are working](/File-and-Folder-Structure/Check-if-hardlinks-are-working/)
 
 So you want one of the following?
 
@@ -21,7 +21,7 @@ So you want one of the following?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
 - You want to perma-seed?
 
-Then Continue to [How to set up for](/File-and-Folder-Structure/How-to-setup-for/) your installation method.
+Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for your installation method.
 
 ## FAQ
 

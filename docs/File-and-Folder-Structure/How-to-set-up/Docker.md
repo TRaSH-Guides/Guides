@@ -3,7 +3,7 @@
 !!! tip
 
     If you're new to dockers and want an easy setup, we suggest taking a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
-    We've also created a short guide [HERE](/File-and-Folder-Structure/How-to-setup-for/Dockstarter/) where we explain the settings for the most used applications.
+    We've also created a short guide [HERE](/File-and-Folder-Structure/How-to-set-up/Dockstarter/) where we explain the settings for the most used applications.
 
     The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
     You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
