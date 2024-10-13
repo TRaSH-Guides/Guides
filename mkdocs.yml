@@ -120,8 +120,8 @@ plugins:
         Hardlinks/Hardlinks-and-Instant-Moves.md: File-and-Folder-Structure/Hardlinks-and-Instant-Moves.md
         Hardlinks/Hardlinks-and-Instant-Moves/index.md: File-and-Folder-Structure/index.md
         Hardlinks/Replace-copies-with-hardlinks.md: File-and-Folder-Structure/Replace-copies-with-hardlinks.md
-        How-to-setup-for/TrueNAS-Core.md: File-and-Folder-Structure/How-to-set-up/TrueNAS-Core.md
-        How-to-setup-for/Windows.md: File-and-Folder-Structure/How-to-set-up/Windows.md
+        Hardlinks/How-to-setup-for/TrueNAS-Core.md: File-and-Folder-Structure/How-to-set-up/TrueNAS-Core.md
+        Hardlinks/How-to-setup-for/Windows.md: File-and-Folder-Structure/How-to-set-up/Windows.md
         # Random redirects
         Misc/trash-sync.md: Guide-Sync/index.md
         # Shortcuts redirects
