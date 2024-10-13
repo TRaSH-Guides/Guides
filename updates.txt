@@ -1,3 +1,10 @@
+# 2024-10-13 01:34
+- [feat(guide): Downloaders - Improve SABnzbd Blacklist](https://github.com/TRaSH-Guides/Guides/pull/2093)
+- [feat(guide): Add streaming service `MY5`](https://github.com/TRaSH-Guides/Guides/pull/2092)
+- [feat(guide): Downloaders - Add SABnzb cleanup list to prevent unwanted extensions](https://github.com/TRaSH-Guides/Guides/pull/2089)
+- [feat(guide): Move RlsGrp `Kitsune` from `WEB Tier 02` to `WEB Tier 01`](https://github.com/TRaSH-Guides/Guides/pull/2091)
+- [fix(guide): label check hardlink methods & add windows method fsutil](https://github.com/TRaSH-Guides/Guides/pull/2083)
+
 # 2024-10-06 01:35
 - [feat(guide): Downloaders - Added plugin instructions for Python installation.](https://github.com/TRaSH-Guides/Guides/pull/2080)
 - [fix(guide): Downloaders - Improve Slackware instructions.](https://github.com/TRaSH-Guides/Guides/pull/2079)
