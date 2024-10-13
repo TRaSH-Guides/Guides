@@ -5,8 +5,8 @@
 It is important that your media server has a well organised file and folder structure. Along with generally easier file and folder management, you will benefit from:
 
 - Security best practices, by only granting the right applications and tools access to your files.
-- Hardlinks, so that the same file can appear in multiple places whilst only taking up the disk space of one copy.
-- Instant moves (also known as 'Atomic Moves') so that files can be moved to other parts of the file system instantaneously.
+- [Hardlinks](/File-and-Folder-Structure/Hardlinks-and-instant-moves#what-are-hardlinks), so that the same file can appear in multiple places whilst only taking up the disk space of one copy.
+- [Instant moves](/File-and-Folder-Structure/Hardlinks-and-instant-moves#what-are-instant-moves-atomic-moves) (also known as 'Atomic Moves') so that files can be moved to other parts of the file system instantaneously.
 
 The first requiurement is that all your media files and folders should be part of the same file system. That is, everything must be contained on a single physical or virtual drive. Second, all of your applications should have a consistent view of where your files and folders are - i.e., your files should appear in the same place to all of your applications.
 
