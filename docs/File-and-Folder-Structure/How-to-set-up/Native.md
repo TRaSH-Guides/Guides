@@ -6,10 +6,10 @@
 
 ---
 
-{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/folder-structure.md" !}
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/breakdown-folder-structure.md" !}
 
-{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/permissions.md" !}
 
 --8<-- "includes/support.md"

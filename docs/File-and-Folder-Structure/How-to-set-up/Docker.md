@@ -20,13 +20,13 @@
 
     For example `/<path_to_data>/data`, or even `/data`.
 
-{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/folder-structure.md" !}
 
-{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-docker.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md" !}
 
-{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/permissions.md" !}
 
 ## Docker-compose Example
 
@@ -44,6 +44,6 @@
     --8<-- "includes/docker/docker-compose.yml"
     ```
 
-{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-compose-commands.md" !}
 
 --8<-- "includes/support.md"

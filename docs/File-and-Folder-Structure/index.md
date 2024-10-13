@@ -12,7 +12,7 @@ The first requiurement is that all your media files and folders should be part o
 
 We recommend setting up a file and folder structure on your host server that looks like this:
 
-{! include-markdown "../../includes/hardlinks/docker-tree-full.md" !}
+{! include-markdown "../../includes/file-and-folder-structure/docker-tree-full.md" !}
 
 The `data` folder can be placed wherever you like. As an example, in Unraid, you would set up a share called `data`. This would then be accessible within Unraid's file system at `/mnt/user/data`.
 
