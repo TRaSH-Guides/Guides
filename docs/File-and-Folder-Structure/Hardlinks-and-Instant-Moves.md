@@ -65,3 +65,5 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 ??? question "**What are the `Starr Apps`?** - [Click to show/hide]"
 
     Sonarr, Radarr, Lidarr, etc.
+
+--8<-- "includes/support.md"

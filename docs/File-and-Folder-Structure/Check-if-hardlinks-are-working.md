@@ -73,3 +73,5 @@ It will list all files linked with the same inode number.
 - In the command line type: `fsutil hardlink list c:\path\to\your\download\location\file.mkv`
 
 It will list all hardlinked files.
+
+--8<-- "includes/support.md"

@@ -13,3 +13,5 @@ Select your desired method of installation:
 - TrueNAS Scale users can follow the same concepts as the Docker method, until someone provides a guide and is willing to maintain and give support for it in the Guide Discord.
 - [Unraid](/File-and-Folder-Structure/How-to-set-up/Unraid/)
 - [Windows](/File-and-Folder-Structure/How-to-set-up/Windows/)
+
+--8<-- "includes/support.md"
