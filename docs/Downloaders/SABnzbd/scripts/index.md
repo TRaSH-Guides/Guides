@@ -8,7 +8,7 @@ If you have a script you want to share, don't hesitate to create a [PR](https://
 
 ## Prerequisites
 
-- You've created folder called `scripts` in the root directory of SABnzbd 
+- You've created folder called `scripts` in the root directory of SABnzbd
 - You've set the `scripts` folder inside the SABnzbd settings under `Folder > User Folders > Scripts Folder`. ([More Infos](https://sabnzbd.org/wiki/configuration/4.3/folders))
 - Your script got sufficient rights to execute. ([More Infos](https://sabnzbd.org/wiki/configuration/4.3/scripts/post-processing-scripts))
 
