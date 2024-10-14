@@ -2752,7 +2752,7 @@ We've made 3 guides related to this.
 
 ??? question "Multi-French - [Click to show/hide]"
 
-    Recognize movies that include the original and the French audio. Worka only after import as it needs the result from FFprobe to get which audio is present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
+    Recognize movies that include the original and the French audio. Works only after import as it needs the result from FFprobe to get which audio is present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
 
 ??? example "JSON - [Click to show/hide]"
 
