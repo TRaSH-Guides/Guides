@@ -137,9 +137,9 @@ Let's create a good folder structure on the shares we use (`docker` and `data`).
 The structure will look like this. You can of course edit this, but do this when you know what you are doing.
 _We are using lowercase on all folders on purpose, being Linux is case-sensitive._
 
-{! include-markdown "../../../includes/hardlinks/docker-tree-full.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
 
-{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
 
 To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:
 
@@ -333,7 +333,7 @@ You will notice that all the images will be downloaded, and after that, the cont
 
 ---
 
-**If you need help setting up the applications, look at the [Examples](/Hardlinks/Examples/) of how to set up the paths inside your applications.**
+**If you need help setting up the applications, look at the [Examples](/File-and-Folder-Structure/Examples/) of how to set up the paths inside your applications.**
 
 !!! warning
 
@@ -343,7 +343,7 @@ You will notice that all the images will be downloaded, and after that, the cont
 
     Just don't use the GUI, only for information purposes !!!
 
-{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-compose-commands.md" !}
 
 --8<-- "includes/support.md"
 
@@ -360,5 +360,7 @@ To fix this, you will need to add a Scheduled Task that executes at boot as the 
 ??? question "Task bash command - [Click to show/hide]"
 
     ```bash
-    --8<-- "includes/hardlinks/docker-iptables-fix.sh"
+    --8<-- "includes/file-and-folder-structure/docker-iptables-fix.sh"
     ```
+
+--8<-- "includes/support.md"

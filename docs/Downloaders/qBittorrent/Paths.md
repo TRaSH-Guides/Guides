@@ -6,4 +6,4 @@
 
 `Options` => `Downloads`
 
-![qbt-options-downloads](/Hardlinks/images/qbt-options-downloads.png)
+![qbt-options-downloads](/File-and-Folder-Structure/images/qbt-options-downloads.png)

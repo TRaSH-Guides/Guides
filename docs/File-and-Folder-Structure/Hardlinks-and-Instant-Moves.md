@@ -11,9 +11,9 @@
 This guide consists of 4 sections.
 
 1. This page with a short description.
-1. [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
-1. [Examples](/Hardlinks/Examples/) What you should use for your path settings in your used applications.
-1. [Check if hardlinks are working](/Hardlinks/Check-if-hardlinks-are-working/)
+2. [How to set up](/File-and-Folder-Structure/How-to-set-up/) for your installation method.
+3. [Examples](/File-and-Folder-Structure/Examples/) What you should use for your path settings in your used applications.
+4. [Check if hardlinks are working](/File-and-Folder-Structure/Check-if-hardlinks-are-working/)
 
 So you want one of the following?
 
@@ -21,7 +21,7 @@ So you want one of the following?
 - You don't want to use twice the storage when using torrents. (hardlinks)?
 - You want to perma-seed?
 
-Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installation method.
+Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for your installation method.
 
 ## FAQ
 
@@ -52,7 +52,7 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
-    !!! warning "Don't forget to read the [Hardlinks limitations](/Hardlinks/Hardlinks-and-Instant-Moves/#hardlinks-limitations)"
+    !!! warning "Don't forget to read the [Hardlinks limitations](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#hardlinks-limitations)"
 
 ### What are Instant Moves (Atomic Moves)
 
@@ -65,3 +65,5 @@ Then Continue to [How to set up for](/Hardlinks/How-to-setup-for/) your installa
 ??? question "**What are the `Starr Apps`?** - [Click to show/hide]"
 
     Sonarr, Radarr, Lidarr, etc.
+
+--8<-- "includes/support.md"

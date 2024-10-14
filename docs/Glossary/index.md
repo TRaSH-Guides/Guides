@@ -150,7 +150,7 @@ A general term that collectively refers to both [Seeders](#seeder) and [Leechers
 
 ### Perma-Seed
 
-Seeding your torrents permanently ("forever"). Most often this is done in conjunction with [hard linked](/Hardlinks/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places without taking up any additional hard disk space.
+Seeding your torrents permanently ("forever"). Most often this is done in conjunction with [hard linked](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/) files, which allows files to 'exist' in two places without taking up any additional hard disk space.
 
 ### [Prowlarr](../Prowlarr/index.md)
 
