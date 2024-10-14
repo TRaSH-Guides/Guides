@@ -12,7 +12,7 @@ These are 3rd party applications to sync several sections of the guide with your
 | Radarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
 | Radarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
 | Radarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
-| Radarr Quality Profiles                                                            |                    | :white_check_mark: |
+| Radarr Quality Profiles                                                            |    :white_check_mark:                | :white_check_mark: |
 | Sonarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: |
 | Sonarr predefined config files available                                           |                    | :white_check_mark: |
 | Sonarr Clear all Release Profiles                                                  | :white_check_mark: |                    |
@@ -20,7 +20,7 @@ These are 3rd party applications to sync several sections of the guide with your
 | Sonarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
 | Sonarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
 | Sonarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
-| Sonarr Quality Profiles                                                            |                    | :white_check_mark: |
+| Sonarr Quality Profiles                                                            | :white_check_mark:                   | :white_check_mark: |
 
 ---
 
