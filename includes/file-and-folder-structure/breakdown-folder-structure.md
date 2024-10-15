@@ -8,10 +8,6 @@ The reason why we use `/data/torrents` for the torrent client is because it only
 
 {! include-markdown "./docker-tree-torrents.md" !}
 
-`Container Path:` => `/data/torrents/`
-
-`Host Path:` => `/<path_to_data>/data/torrents/`
-
 #### Usenet clients
 
 NZBGet or SABnzbd
@@ -19,10 +15,6 @@ NZBGet or SABnzbd
 The reason why we use `/data/usenet` for the Usenet client is because it only needs access to the Usenet files. In the Usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like `/data/usenet/complete/{tv|movies|music}`.
 
 {! include-markdown "./docker-tree-usenet.md" !}
-
-`Container Path:` => `/data/usenet/`
-
-`Host Path:` => `/<path_to_data>/data/usenet/`
 
 #### The Starr Apps
 
@@ -32,10 +24,6 @@ Sonarr, Radarr, Readarr and Lidarr gets access to everything using `/data` becau
 
 {! include-markdown "./docker-tree-full.md" !}
 
-`Container Path:` => `/data`
-
-`Host Path:` => `/<path_to_data>/data/`
-
 #### Media Server
 
 Plex, Emby, JellyFin and Bazarr
@@ -44,10 +32,6 @@ Plex, Emby, JellyFin and Bazarr only needs access to your media library using `/
 
 {! include-markdown "./docker-tree-media.md" !}
 
-`Container Path:` => `/data/media`
-
-`Host Path:` => `/<path_to_data>/data/media/`
-
 ---
 
-**Don't forget to look at the [Examples](/Hardlinks/Examples/) how to set up the paths inside the applications.**
+**Don't forget to look at the [Examples](/File-and-Folder-Structure/Examples/) how to set up the paths inside the applications.**

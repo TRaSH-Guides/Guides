@@ -3,7 +3,7 @@
 !!! tip
 
     If you're new to dockers and want an easy setup, we suggest taking a look at [DockSTARTer](https://dockstarter.com/){:target="_blank" rel="noopener noreferrer"}.
-    We've also created a short guide [HERE](/Hardlinks/How-to-setup-for/Dockstarter/) where we explain the settings for the most used applications.
+    We've also created a short guide [HERE](/File-and-Folder-Structure/How-to-set-up/Dockstarter/) where we explain the settings for the most used applications.
 
     The main goal of DockSTARTer is to make it quick and easy to get up and running with Docker.
     You may choose to rely on DockSTARTer for various changes to your Docker system or use DockSTARTer as a stepping stone and learn to do more advanced configurations.
@@ -20,13 +20,13 @@
 
     For example `/<path_to_data>/data`, or even `/data`.
 
-{! include-markdown "../../../includes/hardlinks/folder-structure.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/folder-structure.md" !}
 
-{! include-markdown "../../../includes/hardlinks/bad-path-suggestion.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/bad-path-suggestion.md" !}
 
-{! include-markdown "../../../includes/hardlinks/breakdown-folder-structure-docker.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md" !}
 
-{! include-markdown "../../../includes/hardlinks/permissions.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/permissions.md" !}
 
 ## Docker-compose Example
 
@@ -44,6 +44,6 @@
     --8<-- "includes/docker/docker-compose.yml"
     ```
 
-{! include-markdown "../../../includes/hardlinks/docker-compose-commands.md" !}
+{! include-markdown "../../../includes/file-and-folder-structure/docker-compose-commands.md" !}
 
 --8<-- "includes/support.md"

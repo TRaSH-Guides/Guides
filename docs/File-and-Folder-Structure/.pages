@@ -1,0 +1,7 @@
+nav:
+  - Home: index.md
+  - Hardlinks and Instant Moves: Hardlinks-and-Instant-Moves.md
+  - How To Set Up: How-to-set-up
+  - Examples: Examples.md
+  - Check if Hardlinks Are Working: Check-if-hardlinks-are-working.md
+  - Replace Copies With Hardlinks: Replace-copies-with-hardlinks.md
