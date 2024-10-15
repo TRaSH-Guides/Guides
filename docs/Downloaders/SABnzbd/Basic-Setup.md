@@ -97,6 +97,25 @@ Covered and fully explained in [SABnzbd - Paths and Categories](/Downloaders/SAB
 1. This should be set to the default unless you know what you are doing. Suppose you have a decent size queue, for example, in that case, you have sab sort every 30s, which could cause spikes in CPU, let alone shuffling jobs around that may be in the middle of actions. If this results in the jobs' order moving to the front it could cause that job to take even longer to extract/stall while waiting for the next update; as with sab, by default, you only have 3 unpackers going simultaneously (configurable).
 1. If your hardware isn't up to snuff, including CPU and/or IO performance, disabling Direct Unpack and/or enabling Pause Downloading During Post-Processing can help. Defaults are fine for most hardware though.
 
+#### Prevent unwanted extensions
+
+!!! info "The Starr apps focus solely on media files and typically ignore all those extensions."
+
+Add these extensions (*primarily for Windows users as they could potentially be abused or exploited*) to your `Unwanted extensions` list.
+
+```none
+ade, adp, app, application, appref-ms, asp, aspx, asx, bas, bat, bgi, cab, cer, chm, cmd, cnt, com, cpl, crt, csh, der, diagcab, exe, fxp, gadget, grp, hlp, hpj, hta, htc, inf, ins, iso, isp, its, jar, jnlp, js, jse, ksh, lnk, mad, maf, mag, mam, maq, mar, mas, mat, mau, mav, maw, mcf, mda, mdb, mde, mdt, mdw, mdz, msc, msh, msh1, msh2, mshxml, msh1xml, msh2xml, msi, msp, mst, msu, ops, osd, pcd, pif, pl, plg, prf, prg, printerexport, ps1, ps1xml, ps2, ps2xml, psc1, psc2, psd1, psdm1, pst, py, pyc, pyo, pyw, pyz, pyzw, reg, scf, scr, sct, shb, shs, theme, tmp, url, vb, vbe, vbp, vbs, vhd, vhdx, vsmacros, vsw, webpnp, website, ws, wsc, wsf, wsh, xbap, xll, xnk
+```
+
+Afterwards you need to make the following adjustments:
+
+- Change the mode of `Unwanted extensions` to `Blacklist`.
+- Change `Action when unwanted extension detected` to `Fail job (move to History)`.
+
+![!Unwanted Extensions](images/sabnzbd-switches-queue-unwanted.png)
+
+!!! note "If you are using SABnzbd to download games and apps, this list shouldn't be used. You can either create a separate category, set it to download only, and manually extract the files, or use a separate app or instance for them."
+
 ### Post processing
 
 `Settings` => `Switches` => `Post processing`

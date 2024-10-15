@@ -10,7 +10,7 @@ For Installation, Quick Start Guide, and the basics of Radarr, please check the 
 
 ## Available guides
 
-After setting up your optimal volume/paths found [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/), follow the steps below to improve your setup.
+After setting up your optimal volume/paths found [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/), follow the steps below to improve your setup.
 
 1. [Quality Settings (File Size)](/Radarr/Radarr-Quality-Settings-File-Size/) - Some recommendations to prevent low-quality or fake releases. These quality file size settings have been created and tested with information gathered from release comparisons from various sources and information provided by the community.
 1. [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/) - Recommended naming scheme provided with the help of the Sonarr/Radarr (Support) Team and information provided by the community to prevent download loops.

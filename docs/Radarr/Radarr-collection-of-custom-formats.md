@@ -85,10 +85,11 @@ We've made 3 guides related to this.
 | [Stan](#stan)              |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
-| --------------------- | ----------------------- | ------------------------ |
+|-----------------------|-------------------------|--------------------------|
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
 | [ITVX](#itvx)         | [OViD](#ovid)           |                          |
-| [NOW](#now)           | [Star+](#strp)          |                          |
+| [MY5](#my5)           | [Star+](#strp)          |                          |
+| [NOW](#now)           |                         |                          |
 
 ---
 
@@ -2219,6 +2220,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### MY5
+
+<sub>MY5 aka Channel 5</sub>
+
+??? question "MY5 aka Channel 5 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/my5.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/my5.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

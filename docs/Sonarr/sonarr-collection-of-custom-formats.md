@@ -79,13 +79,13 @@ We've made 3 guides related to this.
 | [Syfy](#syfy)              |                           |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
-| --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
+|-----------------------|-------------------------|--------------------------|---------------------------------------------|
 | [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
 | [ALL4](#all4)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
 | [BBC iPlayer](#ip)    | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
 | [ITVX](#itvx)         | [Star+](#strp)          | [Funimation](#funi)      |                                             |
-| [NOW](#now)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
-|                       | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
+| [MY5](#my5)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
+| [NOW](#now)           | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
 |                       |                         | [ABEMA](#abema)          |                                             |
 |                       |                         | [ADN](#adn)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
@@ -2074,6 +2074,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/itvx.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### MY5
+
+<sub>MY5 aka Channel 5</sub>
+
+??? question "MY5 aka Channel 5 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/my5.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/my5.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

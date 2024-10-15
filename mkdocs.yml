@@ -108,18 +108,32 @@ plugins:
         Sonarr/Sonarr-Release-Profile-RegEx-Anime.md: Sonarr/sonarr-v3-eol.md
         Sonarr/Sonarr-remote-path-mapping.md: Sonarr/Tips/Sonarr-remote-path-mapping.md
         # How to old redirects
-        How-to-setup-for/index.md: Hardlinks/How-to-setup-for/index.md
-        How-to-setup-for/Docker.md: Hardlinks/How-to-setup-for/Docker.md
-        How-to-setup-for/Dockstarter.md: Hardlinks/How-to-setup-for/Dockstarter.md
-        How-to-setup-for/Native.md: Hardlinks/How-to-setup-for/Native.md
-        How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
-        How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
+        How-to-setup-for/index.md: File-and-Folder-Structure/How-to-set-up/index.md
+        How-to-setup-for/Docker.md: File-and-Folder-Structure/How-to-set-up/Docker.md
+        How-to-setup-for/Dockstarter.md: File-and-Folder-Structure/How-to-set-up/Dockstarter.md
+        How-to-setup-for/Native.md: File-and-Folder-Structure/How-to-set-up/Native.md
+        How-to-setup-for/Synology.md: File-and-Folder-Structure/How-to-set-up/Synology.md
+        How-to-setup-for/Unraid.md: File-and-Folder-Structure/How-to-set-up/Unraid.md
+        # Hardlink to File-and-Folder-Structure redirects
+        Hardlinks/Check-if-hardlinks-are-working.md: File-and-Folder-Structure/Check-if-hardlinks-are-working.md
+        Hardlinks/Examples.md: File-and-Folder-Structure/Examples.md
+        Hardlinks/Hardlinks-and-Instant-Moves.md: File-and-Folder-Structure/Hardlinks-and-Instant-Moves.md
+        Hardlinks/index.md: File-and-Folder-Structure/index.md
+        Hardlinks/Replace-copies-with-hardlinks.md: File-and-Folder-Structure/Replace-copies-with-hardlinks.md
+        Hardlinks/How-to-setup-for/Docker.md: File-and-Folder-Structure/How-to-set-up/Docker.md
+        Hardlinks/How-to-setup-for/Dockstarter.md: File-and-Folder-Structure/How-to-set-up/Dockstarter.md
+        Hardlinks/How-to-setup-for/index.md: File-and-Folder-Structure/How-to-set-up/index.md
+        Hardlinks/How-to-setup-for/Native.md: File-and-Folder-Structure/How-to-set-up/Native.md
+        Hardlinks/How-to-setup-for/Synology.md: File-and-Folder-Structure/How-to-set-up/Synology.md
+        Hardlinks/How-to-setup-for/TrueNAS-Core.md: File-and-Folder-Structure/How-to-set-up/TrueNAS-Core.md
+        Hardlinks/How-to-setup-for/Unraid.md: File-and-Folder-Structure/How-to-set-up/Unraid.md
+        Hardlinks/How-to-setup-for/Windows.md: File-and-Folder-Structure/How-to-set-up/Windows.md
         # Random redirects
         Misc/trash-sync.md: Guide-Sync/index.md
         # Shortcuts redirects
-        hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
-        hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
-        check-hardlinks.md: Hardlinks/Check-if-hardlinks-are-working.md
+        hardlinks.md: File-and-Folder-Structure/Hardlinks-and-Instant-Moves.md
+        hardlink.md: File-and-Folder-Structure/Hardlinks-and-Instant-Moves.md
+        check-hardlinks.md: File-and-Folder-Structure/Check-if-hardlinks-are-working.md
         custom-formats.md: Radarr/Radarr-collection-of-custom-formats.md
         cf.md: Radarr/Radarr-collection-of-custom-formats.md
         TorGuard.md: Misc/How-to-setup-Torguard-for-port-forwarding.md
@@ -128,7 +142,7 @@ plugins:
         Golden-Rule.md: Misc/x265-4k.md
         show-unknown.md: Radarr/Tips/Radarr-show-unknown-movie-items.md
         merge-quality.md: Radarr/Tips/Merge-quality.md
-        jdupes.md: Hardlinks/Replace-copies-with-hardlinks.md
+        jdupes.md: File-and-Folder-Structure/Replace-copies-with-hardlinks.md
         # Recyclarr redirects
         Recyclarr/recyclarr-configs.md: https://recyclarr.dev/wiki/guide-configs/
         Recyclarr/recyclarr-configs-sqp.md: https://recyclarr.dev/wiki/sqp-configs/
