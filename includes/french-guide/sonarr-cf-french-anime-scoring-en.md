@@ -14,10 +14,10 @@
 
     !!! tip
 
-        French Scene groups are included and should be always added as some of the biggest releaser of French subbed and/or dubbed are from the French Scene.
+        French Scene groups are included and should always be added, as some of the biggest releasers of French subbed and/or dubbed content are from the French Scene.
 
-        FanSUB groups can either be scored either {{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }} (default) or `1000` depending if you want to prefer FanSUB or SeaDex releases.
+        FanSUB groups can be scored either {{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }} (default) or `1000`, depending on whether you prefer FanSUB or SeaDex releases.
 
-    !!! tip "Original French Bluray/Web Tiers"
+    !!! tip "Original French Blu-ray/Web Tiers"
 
-        They are optional and can be included or not. This is due because some of them tend to release some animes.
+        They are optional and can be included or not. This is because some of them tend to release some anime.
