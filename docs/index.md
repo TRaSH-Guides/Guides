@@ -10,7 +10,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/pulls){:target="\_blank" rel="noopener noreferrer"}
 [![GitHub issues](https://img.shields.io/github/issues/TRaSH-Guides/Guides?color=4051B5&style=flat-square){ .off-glb }](https://github.com/TRaSH-Guides/Guides/issues){:target="\_blank" rel="noopener noreferrer"}
 
-_TRaSH Guides, Guides that aren't trash._
+_TRaSH Guides, Guides that **arr**en't trash._
 
 Here you will find guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
 
