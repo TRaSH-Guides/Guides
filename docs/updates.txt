@@ -1,3 +1,7 @@
+# 2024-10-20 01:36
+- [feat(guides): Re-work Hardlinks Section and Rename to 'File and Folder Structure'.](https://github.com/TRaSH-Guides/Guides/pull/2094)
+- [style(Radarr): Fixed Spelling Issue](https://github.com/TRaSH-Guides/Guides/pull/2100)
+
 # 2024-10-13 01:34
 - [feat(guide): Downloaders - Improve SABnzbd Blacklist](https://github.com/TRaSH-Guides/Guides/pull/2093)
 - [feat(guide): Add streaming service `MY5`](https://github.com/TRaSH-Guides/Guides/pull/2092)
