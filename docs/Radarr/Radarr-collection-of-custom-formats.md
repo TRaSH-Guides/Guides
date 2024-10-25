@@ -86,10 +86,10 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 |-----------------------|-------------------------|--------------------------|
-| [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
-| [ITVX](#itvx)         | [OViD](#ovid)           |                          |
-| [MY5](#my5)           | [Star+](#strp)          |                          |
-| [NOW](#now)           |                         |                          |
+| [BBC iPlayer](#ip)    | [CBC](#cbc)             | [VRV](#vrv)              |
+| [ITVX](#itvx)         | [Crave](#crav)          |                          |
+| [MY5](#my5)           | [OViD](#ovid)           |                          |
+| [NOW](#now)           | [Star+](#strp)          |                          |
 
 ---
 
@@ -2263,6 +2263,24 @@ We've made 3 guides related to this.
 ---
 
 ### Misc Streaming Services
+
+---
+
+#### CBC
+
+<sub>CBC</sub>
+
+??? question "CBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 

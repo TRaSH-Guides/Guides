@@ -80,13 +80,13 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 |-----------------------|-------------------------|--------------------------|---------------------------------------------|
-| [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer](#ip)    | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
-| [ITVX](#itvx)         | [Star+](#strp)          | [Funimation](#funi)      |                                             |
-| [MY5](#my5)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
-| [NOW](#now)           | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
-|                       |                         | [ABEMA](#abema)          |                                             |
+| [4OD](#4od)           | [CBC](#cbc)             | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [ALL4](#all4)         | [Crave](#crave)         | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [Discovery+](#dscp)     | [Crunchyroll](#cr)       |                                             |
+| [ITVX](#itvx)         | [OViD](#ovid)           | [Funimation](#funi)      |                                             |
+| [MY5](#my5)           | [Star+](#strp)          | [HIDIVE](#hidive)        |                                             |
+| [NOW](#now)           | [YouTube Red](#red)     | [VRV](#vrv)              |                                             |
+|                       | [Quibi](#qibi)          | [ABEMA](#abema)          |                                             |
 |                       |                         | [ADN](#adn)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
 
@@ -2117,6 +2117,24 @@ We've made 3 guides related to this.
 ---
 
 ### Misc Streaming Services
+
+---
+
+#### CBC
+
+<sub>CBC</sub>
+
+??? question "CBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cbc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
