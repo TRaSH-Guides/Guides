@@ -87,7 +87,7 @@ We've made 3 guides related to this.
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 |-----------------------|-------------------------|--------------------------|
 | [BBC iPlayer](#ip)    | [AUBC](#aubc)           | [VRV](#vrv)              |
-| [ITVX](#itvx)         | [Crave](#crav           |                          |
+| [ITVX](#itvx)         | [Crave](#crav)          |                          |
 | [MY5](#my5)           | [OViD](#ovid)           |                          |
 | [NOW](#now)           | [Star+](#strp)          |                          |
 
