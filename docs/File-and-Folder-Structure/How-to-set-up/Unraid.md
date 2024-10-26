@@ -102,7 +102,7 @@ mkdir -p /mnt/user/data/{torrents/{tv,movies,music},media/{tv,movies,music}}
 !!! tip "Create a custom docker network"
     Why would you want a custom docker network?
 
-    So that the container apps can talk to each other it will also allow you to use the hostname to refer to each other which is the container name rather than using IP addresses.
+    A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with other using their container names, rather than having to use IP addresses.
 
     Unraid doesn't create a custom docker network by default, you need to create one yourself.
 
@@ -130,7 +130,7 @@ Go to your dashboard and select the Docker container you want to edit, or, if yo
 
     ![!Click on Edit](images/unraid-docker-click-edit.png)
 
-1. Don't forget to remove all suboptimal mounts like `/movies`, `/tv`, `/books`, or `/downloads`, so you can avoid making mistakes by using them. You only need the `/config`, and in most cases, you only need the path/mounts/volumes described in this guide.
+1. Don't forget to remove all individual location mounts, for example `/movies`, `/tv`, `/books`, or `/downloads`, so you can avoid making mistakes by using them. You only need the `/config` mount, and then whichever paths/mounts/volumes are described in this guide.
 
 !!! info
     unRAID makes it pretty clear which is the Host Path and Container Path.
