@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-setup-flaresolverr" class="md-skip">
+        <a href="#how-to-set-up-flaresolverr" class="md-skip">
           Skip to content
         </a>
       
@@ -3462,15 +3462,18 @@
   
 
 
-<h1 id="how-to-setup-flaresolverr">How to setup FlareSolverr<a class="headerlink" href="#how-to-setup-flaresolverr" title="Permanent link"></a></h1>
+<h1 id="how-to-set-up-flaresolverr">How to set up FlareSolverr<a class="headerlink" href="#how-to-set-up-flaresolverr" title="Permanent link"></a></h1>
 <p><a href="https://github.com/FlareSolverr/FlareSolverr" rel="noopener noreferrer" target="_blank">FlareSolverr</a> is a proxy server to bypass Cloudflare and DDoS-GUARD protection.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <ul>
 <li>A FlareSolverr Proxy will only be used for requests if and only if Cloudflare is detected by Prowlarr</li>
 <li>A FlareSolverr Proxy will only be used for requests if and only if the Proxy and the Indexer have matching tags</li>
-<li>A Flaresolverr Proxy configured without any tags or has no indexers with matching tags it will be disabled.</li>
+<li>A FlareSolverr Proxy configured without any tags or has no indexers with matching tags will be disabled.</li>
 </ul>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">FlareSolverr is currently non-functional. It is also being monitored by the Cloudflare team, so it is unlikely to ever be fixed.<br><br>If you're using an indexer that needs FlaresSolverr and if they offer it, try another base URL till you find one that works. If none work, then you're out of luck.<br><br>There is no need to contact Servarr or Sonarr support. They are not the FlareSolverr support team and cannot help you with questions that don't relate specifically to adding FlareSolverr to Prowlarr.<br><br>FlareSolverr is a third-party program that solves Cloudflare captchas for some indexers. They use GitHub for support, and you should go there to ask them questions or catch up on the current status of the program.<br><br>The current open issue on their GitHub can be found <a href="https://github.com/FlareSolverr/FlareSolverr/issues/1253" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
 <h2 id="install-flaresolverr">Install FlareSolverr<a class="headerlink" href="#install-flaresolverr" title="Permanent link"></a></h2>
 <p>Please follow the installation instruction from <a href="https://github.com/FlareSolverr/FlareSolverr#installation" rel="noopener noreferrer" target="_blank">FlareSolverr</a></p>
@@ -3479,7 +3482,7 @@
 <p><a class="glightbox" href="../images/settings-indexers.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Settings =&gt; images" src="../images/settings-indexers.png" /></a></p>
 <p>Click on the + sign and select <code>FlareSolverr</code></p>
 <p><a class="glightbox" href="../images/add-indexer-proxy-flaresolverr.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Add Indexers" src="../images/add-indexer-proxy-flaresolverr.png" /></a></p>
-<p>Add the following info</p>
+<p>Add the following info.</p>
 <p><a class="glightbox" href="../images/add-proxy-flaresolverr.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Add Proxy FlareSolverr" src="../images/add-proxy-flaresolverr.png" /></a></p>
 <ol>
 <li>Name of the Proxy in Prowlarr.</li>
@@ -3490,7 +3493,7 @@
 <li>If it works click on <code>Save</code>.</li>
 </ol>
 <h2 id="add-flaresolverr-to-your-indexer">Add FlareSolverr to your indexer<a class="headerlink" href="#add-flaresolverr-to-your-indexer" title="Permanent link"></a></h2>
-<p>Select the indexer that you want to use with FlareSolverr</p>
+<p>Select the indexer that you want to use with FlareSolverr.</p>
 <p><a class="glightbox" href="../images/select-indexer.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Select Indexer" src="../images/select-indexer.png" /></a></p>
 <p>Scroll down to the bottom and add the tag you set up earlier in step 2.</p>
 <p><a class="glightbox" href="../images/add-tag-to-indexer-flaresolverr.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Add tag to indexer" src="../images/add-tag-to-indexer-flaresolverr.png" /></a></p>
@@ -3527,7 +3530,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2024 14:14:10</span>
   </span>
 
     
