@@ -80,15 +80,16 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 |-----------------------|-------------------------|--------------------------|---------------------------------------------|
-| [4OD](#4od)           | [CBC](#cbc)             | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [Crave](#crave)         | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer](#ip)    | [Discovery+](#dscp)     | [Crunchyroll](#cr)       |                                             |
-| [ITVX](#itvx)         | [OViD](#ovid)           | [Funimation](#funi)      |                                             |
-| [MY5](#my5)           | [Star+](#strp)          | [HIDIVE](#hidive)        |                                             |
-| [NOW](#now)           | [YouTube Red](#red)     | [VRV](#vrv)              |                                             |
-|                       | [Quibi](#qibi)          | [ABEMA](#abema)          |                                             |
-|                       |                         | [ADN](#adn)              |                                             |
+| [4OD](#4od)           | [AUBC](#aubc)           | [ABEMA](#abema)          | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [Crave](#crav)          | [B-Global](#b-global)    |                                             |
+| [ITVX](#itvx)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    |                                             |
+| [MY5](#my5)           | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
+| [NOW](#now)           | [Star+](#strp)          | [Funimation](#funi)      |                                             |
+|                       | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
+|                       | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
+
 
 ---
 
@@ -2117,6 +2118,24 @@ We've made 3 guides related to this.
 ---
 
 ### Misc Streaming Services
+
+---
+
+#### AUBC
+
+<sub>Australian Broadcasting Corporation</sub>
+
+??? question "AUBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
