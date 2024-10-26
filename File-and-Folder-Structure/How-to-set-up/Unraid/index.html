@@ -2003,7 +2003,7 @@
           <li class="md-nav__item">
   <a href="#if-you-use-usenet" class="md-nav__link">
     <span class="md-ellipsis">
-      If you use usenet
+      If you use Usenet
     </span>
   </a>
   
@@ -2110,7 +2110,7 @@
           <li class="md-nav__item">
   <a href="#examples-how-to-set-up-your-paths-inside-your-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples how to set up your paths INSIDE your applications
+      Examples - How to set up your paths INSIDE your applications
     </span>
   </a>
   
@@ -3587,7 +3587,7 @@
           <li class="md-nav__item">
   <a href="#if-you-use-usenet" class="md-nav__link">
     <span class="md-ellipsis">
-      If you use usenet
+      If you use Usenet
     </span>
   </a>
   
@@ -3694,7 +3694,7 @@
           <li class="md-nav__item">
   <a href="#examples-how-to-set-up-your-paths-inside-your-applications" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples how to set up your paths INSIDE your applications
+      Examples - How to set up your paths INSIDE your applications
     </span>
   </a>
   
@@ -3768,7 +3768,7 @@
 <div class="admonition warning">
 <p class="admonition-title">To get Hardlinks and Atomic-Moves working with unRAID,<br>You will need to make use of <u><strong>ONE</strong></u> share with subfolders.</p>
 </div>
-<p>In this example, I'm using my own setup and the preferred share <code>data</code>.</p>
+<p>In this example, I'm using my setup and the preferred share <code>data</code>.</p>
 <p>Go to your dashboard and select <code>Shares</code> on the navigation bar, then choose <code>Add Share</code>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="unraid-612-no-cache" name="__tabbed_2" type="radio" /><input id="unraid-612-cache" name="__tabbed_2" type="radio" /><input id="unraid-611_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="unraid-612-no-cache">unRAID 6.12 (No Cache)</label><label for="unraid-612-cache">unRAID 6.12 (Cache)</label><label for="unraid-611_1">unRAID 6.11</label></div>
 <div class="tabbed-content">
@@ -3846,13 +3846,13 @@
 <!-- END INCLUDE -->
 
 <p><em>I'm using lower-case on all folders on purpose, being Linux is case-sensitive.</em></p>
-<p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code>, and each of these has sub-folders for <code>tv</code>, <code>movie</code> and <code>music</code> downloads to keep things organized. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code> and <code>Music</code> sub-folders, this is where your library resides, and what you’d pass to Plex, Emby or JellyFin.</p>
+<p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code>, and each of these has sub-folders for <code>tv</code>, <code>movie</code>, and <code>music</code> downloads to keep things organized. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code>, and <code>Music</code> sub-folders, this is where your library resides, and what you’d pass to Plex, Emby, or JellyFin.</p>
 <p>You will need to create these subfolders yourself. You can do this in any way you prefer, but the fastest way to create all the necessary subfolders would be to use the terminal (explained below). Alternatively, Krusader or WinSCP are popular choices if you are unsure.</p>
 <h3 id="fastest-way-to-create-the-needed-subfolders">Fastest way to create the needed subfolders<a class="headerlink" href="#fastest-way-to-create-the-needed-subfolders" title="Permanent link"></a></h3>
 <p>The fastest way to create all the necessary subfolders would be to use the terminal, use a program like <a href="https://www.putty.org/" rel="noopener noreferrer" target="_blank">PuTTy</a> or use the terminal from the dashboard.
 These options will automatically create the required subfolders for your media library as well as your preferred download client(s).
 If you use both torrents and Usenet, use both commands.</p>
-<h4 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h4>
+<h4 id="if-you-use-usenet">If you use Usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h4>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/user/data/<span class="o">{</span>usenet/<span class="o">{</span>incomplete,complete<span class="o">}</span>/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
 </code></pre></div>
 <h4 id="if-you-use-torrents">If you use torrents<a class="headerlink" href="#if-you-use-torrents" title="Permanent link"></a></h4>
@@ -3868,13 +3868,44 @@ If you use both torrents and Usenet, use both commands.</p>
 <!-- END INCLUDE -->
 
 <h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link"></a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Create a custom docker network</p>
+<p>Why would you want a custom docker network?</p>
+<p>A major benefit of having your Docker containers on the same custom Docker network is that they will be able to communicate with other using their container names, rather than having to use IP addresses.</p>
+<p>Unraid doesn't create a custom docker network by default, you need to create one yourself.</p>
+<ul>
+<li>
+<p>Open a terminal window and type:</p>
+<div class="highlight"><pre><span></span><code>docker network create your_uber_cool_network_name
+</code></pre></div>
+</li>
+<li>
+<p>or watch the following video below on how to create a custom docker network</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7fzBDCI8O2w?si=itGS624rC7jxD8ly" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</li>
+</ul>
+</div>
+<hr />
 <p>After you've created all the necessary folders, it's time to set up the Docker container's paths.</p>
 <p>Go to your dashboard and select the Docker container you want to edit, or, if you're starting fresh, add the container/App you want to use.</p>
+<ol>
+<li>
+<p>Make sure you enable the <code>Advanced View</code> at the top right corner.</p>
+<p><a class="glightbox" href="../images/unraid-docker-enable-advanced-view.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Enable Advanced View" src="../images/unraid-docker-enable-advanced-view.png" /></a></p>
+</li>
+<li>
+<p>When adding/editing the paths make sure you click on the <code>EDIT</code> button to add/edit the paths correctly.</p>
+<p><a class="glightbox" href="../images/unraid-docker-click-edit.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Click on Edit" src="../images/unraid-docker-click-edit.png" /></a></p>
+</li>
+<li>
+<p>Don't forget to remove all individual location mounts, for example <code>/movies</code>, <code>/tv</code>, <code>/books</code>, or <code>/downloads</code>, so you can avoid making mistakes by using them. You only need the <code>/config</code> mount, and then whichever paths/mounts/volumes are described in this guide.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>unRAID makes it pretty clear which is the Host Path and Container Path.</p>
 <p><code>Container Path:</code> =&gt; The path that will be used from inside the container.</p>
 <p><code>Host Path:</code> =&gt; The actual/absolute path used on your unRAID Server (The Host).</p>
-<div class="admonition tip">
-<p class="admonition-title">Make sure you enabled the advanced view at the top right corner and click on the <code>EDIT</code> button to edit the paths correctly.</p>
 </div>
 <hr />
 <h3 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h3>
@@ -3926,7 +3957,7 @@ If you use both torrents and Usenet, use both commands.</p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Sonarr, Radarr and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.</p>
+<p>Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3958,7 +3989,7 @@ If you use both torrents and Usenet, use both commands.</p>
 <p><code>Host Path:</code> =&gt; <code>/mnt/user/data/media/</code></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Plex, Emby, JellyFin and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV and/or Music).</p>
+<p>Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).</p>
 </div>
 <!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
@@ -3973,10 +4004,13 @@ If you use both torrents and Usenet, use both commands.</p>
 <hr />
 <h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/unraid-final-result.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-final-result" src="../images/unraid-final-result.png" /></a></p>
-<h3 id="examples-how-to-set-up-your-paths-inside-your-applications">Examples how to set up your paths INSIDE your applications<a class="headerlink" href="#examples-how-to-set-up-your-paths-inside-your-applications" title="Permanent link"></a></h3>
+<h3 id="examples-how-to-set-up-your-paths-inside-your-applications">Examples - How to set up your paths INSIDE your applications<a class="headerlink" href="#examples-how-to-set-up-your-paths-inside-your-applications" title="Permanent link"></a></h3>
 <p><strong>Don't forget to look at the <a href="/File-and-Folder-Structure/Examples/">Examples</a> of how to set up your paths INSIDE your applications.</strong></p>
 <h2 id="video-tutorial">Video Tutorial<a class="headerlink" href="#video-tutorial" title="Permanent link"></a></h2>
 <div class="admonition tip">
+<div class="admonition warning">
+<p class="admonition-title">Videos are generally outdated very fast, so make sure you always follow and double-check with the written guide.</p>
+</div>
 <p>Big Thanks to IBRACORP for noticing this Guide and creating a Video covering this unRAID section.</p>
 <p>The reason why I have this video at the end is because I want the users to ACTUALLY LEARN and UNDERSTAND why it's recommended to use this folder structure before going straight to a YouTube video.</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/AMcHsQJ7My0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
@@ -4013,7 +4047,7 @@ If you use both torrents and Usenet, use both commands.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 14, 2024 18:45:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 26, 2024 14:21:52</span>
   </span>
 
     
