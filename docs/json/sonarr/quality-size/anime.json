@@ -33,6 +33,12 @@
       "max": 1000
     },
     {
+      "quality": "Bluray-576p",
+      "min": 5,
+      "preferred": 995,
+      "max": 1000
+    },
+    {
       "quality": "HDTV-720p",
       "min": 5,
       "preferred": 995,

@@ -52,5 +52,6 @@
     | {{ sonarr['quality-size']['anime']['qualities'][16]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][16]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][17]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][17]['max'] }} |
     | {{ sonarr['quality-size']['anime']['qualities'][18]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][18]['max'] }} |
+    | {{ sonarr['quality-size']['anime']['qualities'][19]['quality'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['min'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['preferred'] }} | {{ sonarr['quality-size']['anime']['qualities'][19]['max'] }} |
 
 --8<-- "includes/support.md"
