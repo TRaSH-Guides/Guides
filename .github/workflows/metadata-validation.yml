@@ -20,7 +20,7 @@ jobs:
     name: Validate metadata.json
     steps:
       - uses: actions/checkout@v4.1.6
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/setup-python@v5.3.0
         with:
           python-version: 3.x
       - run: pip install jsonschema
