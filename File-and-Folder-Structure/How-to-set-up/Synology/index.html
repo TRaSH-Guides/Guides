@@ -3959,12 +3959,12 @@
 </ol>
 <h3 id="automated-script">Automated Script<a class="headerlink" href="#automated-script" title="Permanent link"></a></h3>
 <details class="example">
-<summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></strong>) - [Click to show/hide]</summary>
+<summary>Automated script (<strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" />Use this script at your own risk<img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></strong>) - [Click to show/hide]</summary>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Though, we offer a short way out. This is intended as a quick way to do everything that is written on this page within one script. And is only for initial setup. After that, you need to manage it yourself. Rerunning the script can or will reset all personal changes made in the compose/env.</p>
 <p>The script is only tested on Synology DSM7 and higher.</p>
-<p><strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> We are not held liable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></strong></p>
+<p><strong><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /> We are not held liable if anything breaks on your system. Use at your own risk <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></strong></p>
 </div>
 <p>To get this working you will need to enable terminal access (SSH) and home folders.</p>
 <p>Be sure to delete current running Docker containers related to this guide (ie. *arr apps, download clients), and backup settings before you do.</p>
@@ -4020,7 +4020,6 @@ Save these values for later use.</p>
 <p>Let's create a good folder structure on the shares we use (<code>docker</code> and <code>data</code>). This will be done with a few commands.</p>
 <p>The structure will look like this. You can of course edit this, but do this when you know what you are doing.
 <em>We are using lowercase on all folders on purpose, being Linux is case-sensitive.</em></p>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -4040,15 +4039,10 @@ Save these values for later use.</p>
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<!-- END INCLUDE -->
-
 <p>To create the folder structure for your media library and also for your preferred download client, run one or both of the following commands:</p>
 <h3 id="if-you-use-usenet">If you use usenet<a class="headerlink" href="#if-you-use-usenet" title="Permanent link"></a></h3>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/<span class="o">{</span>usenet/<span class="o">{</span>incomplete,complete<span class="o">}</span>/<span class="o">{</span>tv,movies,music<span class="o">}</span>,media/<span class="o">{</span>tv,movies,music<span class="o">}}</span>
@@ -4104,7 +4098,7 @@ Create these folders with the command below, or create them in File Station manu
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /> MAKE SURE THE FILE KEEPS THE ORIGINAL NAME <code>.env</code> WITH THE DOT BEFORE IT <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
 <h3 id="changes-and-preparations">Changes and preparations<a class="headerlink" href="#changes-and-preparations" title="Permanent link"></a></h3>
@@ -4177,7 +4171,6 @@ If you had previously installed apps, make a backup of their config folders or b
 <p>Any changes you do/did in the GUI will be reverted when you run the docker-compose command.</p>
 <p>Just don't use the GUI, only for information purposes !!!</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-compose-commands.md -->
 <h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link"></a></h3>
 <details class="tip">
 <summary>docker-compose commands - [Click to show/hide]</summary>
@@ -4188,8 +4181,6 @@ If you had previously installed apps, make a backup of their config folders or b
 <li><code>sudo docker system prune -a --volumes --force</code> (Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.)</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">

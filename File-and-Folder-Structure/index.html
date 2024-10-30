@@ -3436,7 +3436,6 @@
 </ul>
 <p>The first requirement is that all your media files and folders should be part of the same file system. That is, everything must be contained on a single physical or virtual drive. Second, all of your applications should have a consistent view of where your files and folders are - i.e., your files should appear in the same place to all of your applications.</p>
 <p>We recommend setting up a file and folder structure on your host server that looks like this:</p>
-<!-- BEGIN INCLUDE ../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3456,8 +3455,6 @@
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p>The <code>data</code> folder can be placed wherever you like. As an example, in Unraid, you would set up a share called <code>data</code>. This would then be accessible within Unraid's file system at <code>/mnt/user/data</code>.</p>
 <p>If you are installing applications directly on the host system (natively), then they will already have visibility of that file and folder structure, assuming permissions are set correctly. If you are installing applications non-natively, for example via Docker, then each application should be granted access to the lowest level folder that is required whilst maintaining consistent pathing to the top level folder, which here is <code>data</code>. For example, a torrent client installed via Docker would have <code>/mnt/user/data/torrents</code> mapped to <code>/data/torrents</code>. This means that the download client would see the contents of the host's <code>/mnt/user/data/torrents</code> folder in the <code>/data/torrents</code> folder inside the container.</p>
 <p>More detailed examples can be found in the <a href="/File-and-Folder-Structure/How-to-set-up/">How To Set Up</a> section.</p>

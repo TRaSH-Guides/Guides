@@ -3625,7 +3625,6 @@
 <hr />
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>Now that you have a <code>data</code> folder, you can follow the normal folder structure recommendations, such as the one below.</p>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3645,8 +3644,6 @@
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p>These subfolders you need to create yourself using your preferred method. Set your permissions accordingly as well. If you use ACLs on the datasets you can replicate the usual 775/664 (UMASK 002) or 755/644 (UMASK 022) recommendation, but this guide only covers the use of basic permissions for mounting and expects the end user to fine-tune permissions via chmod, chown, and uid/gid/umask settings on the applications that will be utilizing the share.</p>
 <!-- markdownlint-disable MD041-->
 <hr />

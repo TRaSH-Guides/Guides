@@ -3447,19 +3447,15 @@
 
 
 <h1 id="rutorrent-basic-setup">ruTorrent - Basic Setup<a class="headerlink" href="#rutorrent-basic-setup" title="Permanent link"></a></h1>
-<!-- BEGIN INCLUDE ../../../includes/downloaders/basic-setup.md -->
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
 <p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
 <p>More info <a href="/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
-<!-- BEGIN INCLUDE ../file-and-folder-structure/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<!-- END INCLUDE -->
-
 <div class="admonition warning">
 <p>But you're able to change this, by not using the pre-defined/recommended paths like:</p>
 <ul>
@@ -3468,8 +3464,6 @@
 <li><code>/tv</code> =&gt; <code>/data/media/tv</code></li>
 </ul>
 </div>
-<!-- END INCLUDE -->
-
 <hr />
 <h2 id="soon">Soon<a class="headerlink" href="#soon" title="Permanent link"></a></h2>
 <p>I've asked several people that used this download client for some help/feedback, but most of them just switched to qBittorrent.</p>

@@ -3823,7 +3823,6 @@
 <hr />
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <p>On the host (unRAID) you will need to add <code>/mnt/user</code> before it. <strong>So <code>/mnt/user/data</code></strong></p>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3843,8 +3842,6 @@
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p><em>I'm using lower-case on all folders on purpose, being Linux is case-sensitive.</em></p>
 <p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code>, and each of these has sub-folders for <code>tv</code>, <code>movie</code>, and <code>music</code> downloads to keep things organized. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code>, and <code>Music</code> sub-folders, this is where your library resides, and what you’d pass to Plex, Emby, or JellyFin.</p>
 <p>You will need to create these subfolders yourself. You can do this in any way you prefer, but the fastest way to create all the necessary subfolders would be to use the terminal (explained below). Alternatively, Krusader or WinSCP are popular choices if you are unsure.</p>
@@ -3860,13 +3857,10 @@ If you use both torrents and Usenet, use both commands.</p>
 </code></pre></div>
 <hr />
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<!-- END INCLUDE -->
-
 <h2 id="setting-up-the-containers">Setting up the containers<a class="headerlink" href="#setting-up-the-containers" title="Permanent link"></a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Create a custom docker network</p>
@@ -3917,7 +3911,6 @@ If you use both torrents and Usenet, use both commands.</p>
 <p class="admonition-title">Info</p>
 <p>The reason why we use <code>/data/torrents/</code> for the torrent client is because it only needs access to the torrent data. In the torrent software settings, you’ll need to configure your categories/labels to utilize the right path for specific content. You can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
 └── torrents
     ├── books
@@ -3925,8 +3918,6 @@ If you use both torrents and Usenet, use both commands.</p>
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <hr />
 <h3 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h3>
 <p>NZBGet or SABnzbd</p>
@@ -3937,7 +3928,6 @@ If you use both torrents and Usenet, use both commands.</p>
 <p class="admonition-title">Info</p>
 <p>The reason why we use <code>/data/usenet/</code> for the Usenet client is that it only needs access to the Usenet data. In the Usenet software settings, you’ll need to configure your paths to sort content into sub-folders like <code>/data/usenet/{tv|movies|music}</code>.</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
     ├── incomplete
@@ -3947,8 +3937,6 @@ If you use both torrents and Usenet, use both commands.</p>
         ├── music
         └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <hr />
 <h3 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h3>
 <p>Sonarr, Radarr and Lidarr</p>
@@ -3959,7 +3947,6 @@ If you use both torrents and Usenet, use both commands.</p>
 <p class="admonition-title">Info</p>
 <p>Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3979,8 +3966,6 @@ If you use both torrents and Usenet, use both commands.</p>
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <hr />
 <h3 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h3>
 <p>Plex, Emby, JellyFin and Bazarr</p>
@@ -3991,7 +3976,6 @@ If you use both torrents and Usenet, use both commands.</p>
 <p class="admonition-title">Info</p>
 <p>Plex, Emby, JellyFin, and Bazarr only need access to your media library, which can have any number of sub-folders (Movies, Kids Movies, TV, Documentary TV, and/or Music).</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
 └── media
     ├── movies
@@ -3999,8 +3983,6 @@ If you use both torrents and Usenet, use both commands.</p>
     ├── books
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <hr />
 <h2 id="final-result">Final Result<a class="headerlink" href="#final-result" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/unraid-final-result.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!unraid-final-result" src="../images/unraid-final-result.png" /></a></p>

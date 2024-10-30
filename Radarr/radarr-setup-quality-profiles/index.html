@@ -3910,12 +3910,11 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </ul>
 </div>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/merge-quality/radarr-current-logic.md -->
 <h3 id="radarr-current-logic">Radarr current logic<a class="headerlink" href="#radarr-current-logic" title="Permanent link"></a></h3>
 <details class="abstract">
 <summary>Radarr current logic - [Click to show/hide]</summary>
 <p>As of 2021-11-06 the logic is as follows:</p>
-<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
 <ol>
 <li>Quality</li>
 <li>Custom Format Score</li>
@@ -3932,8 +3931,6 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use the <a href="/Radarr/Radarr-collection-of-custom-formats/#repackproper" rel="noopener noreferrer" target="_blank">Repack/Proper Custom Format</a></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <hr />
 <h2 id="which-quality-profile-should-you-choose">Which Quality Profile should you choose<a class="headerlink" href="#which-quality-profile-should-you-choose" title="Permanent link"></a></h2>
 <details class="abstract">
@@ -3953,14 +3950,12 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <ul>
 <li><em>Size: 6-15 GB for a Bluray-1080p depending on the running time.</em></li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-suggest-attention.md -->
 <p>I suggest to follow the following Guides first.</p>
 <ul>
 <li><a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
@@ -3972,12 +3967,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </div>
 <!-- markdownlint-enable MD041-->
 
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are required:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-hd-bluray-web-scoring.md -->
 <details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
@@ -4022,9 +4012,6 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-required.md -->
 <details class="abstract">
 <summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
@@ -4061,9 +4048,6 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -4091,7 +4075,7 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -4120,11 +4104,9 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -4132,21 +4114,16 @@ You will need to set it up in the quality Profile you want to use/prefer to make
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>General Streaming Services - [Click to show/hide]</summary>
 <table>
@@ -4242,10 +4219,7 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><code>BCore</code>, <code>CRiT</code> and <code>MA</code> are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are optional:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -4301,9 +4275,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe-noremux.md -->
 <details class="abstract">
 <summary>Movie Versions - [Click to show/hide]</summary>
 <table>
@@ -4364,8 +4335,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>If you don't prefer <code>IMAX Enhanced</code> then don't add it or use a score of <code>0</code></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <p>Note: The <code>Advanced Audio</code> Custom Formats aren't used in the HD Bluray + WEB profile, as HD Bluray Encodes do not often come with HD audio. If you want HD audio, we would suggest going with a Remux or UHD Encode.</p>
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/qp-bluray-webdl.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="HD Bluray + WEB" src="../images/qp-bluray-webdl.png" /></a></p>
@@ -4373,7 +4342,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <p>The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
-<!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -4386,8 +4354,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This is why it's recommended to move the selected quality to the top of the list.</p>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
-<!-- END INCLUDE -->
-
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
 <ul>
@@ -4404,14 +4370,12 @@ Also they often even rename the release name into Portuguese.</li>
 <ul>
 <li><em>Size: 20-60 GB for a Bluray-2160p depending on the running time.</em></li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-suggest-attention.md -->
 <p>I suggest to follow the following Guides first.</p>
 <ul>
 <li><a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
@@ -4423,30 +4387,22 @@ Also they often even rename the release name into Portuguese.</li>
 </div>
 <!-- markdownlint-enable MD041-->
 
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are required:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-all-hdr-formats.md -->
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
 <p><strong>Why would I choose All HDR formats?</strong></p>
 <ul>
 <li>
 <p>You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.</p>
 </li>
 <li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -4469,8 +4425,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -4480,11 +4434,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
 </ul>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
@@ -4499,13 +4451,10 @@ Also they often even rename the release name into Portuguese.</li>
 <p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-hdr-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -4632,9 +4581,6 @@ Also they often even rename the release name into Portuguese.</li>
 </table>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-uhd-bluray-web-scoring.md -->
 <details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
@@ -4679,9 +4625,6 @@ Also they often even rename the release name into Portuguese.</li>
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-required.md -->
 <details class="abstract">
 <summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
@@ -4718,9 +4661,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -4748,7 +4688,7 @@ Also they often even rename the release name into Portuguese.</li>
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -4782,11 +4722,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -4795,21 +4733,16 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>General Streaming Services - [Click to show/hide]</summary>
 <table>
@@ -4905,21 +4838,16 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><code>BCore</code>, <code>CRiT</code> and <code>MA</code> are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are optional:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <p><strong>Why should I choose All Audio formats?</strong></p>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -4927,7 +4855,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
 <details class="info">
 <summary>I've a AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
@@ -4956,13 +4883,10 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -5045,9 +4969,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -5103,15 +5024,12 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-uhd-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous UHD (Optional) - [Click to show/hide]</summary>
 <div class="admonition tip">
 <p class="admonition-title">I recommend using the following Custom Formats</p>
 <ul>
-<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
 <li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
 <li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
 </ul>
@@ -5131,12 +5049,12 @@ Also they often even rename the release name into Portuguese.</li>
 <td>9c38ebb7384dada637be8899efa68e6f</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>25c12f78430a3a23413652cbd1d48d77</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
 </tr>
@@ -5148,25 +5066,18 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
 <li>
 <p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe-noremux.md -->
 <details class="abstract">
 <summary>Movie Versions - [Click to show/hide]</summary>
 <table>
@@ -5227,14 +5138,11 @@ Also they often even rename the release name into Portuguese.</li>
 <p>If you don't prefer <code>IMAX Enhanced</code> then don't add it or use a score of <code>0</code></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/qp-uhd-bluray-webdl.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="UHD Bluray + WEB" src="../images/qp-uhd-bluray-webdl.png" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
-<!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -5247,8 +5155,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This is why it's recommended to move the selected quality to the top of the list.</p>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
-<!-- END INCLUDE -->
-
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
 <p><strong>Depending on what's released first and available the following Workflow Logic will be used:</strong></p>
@@ -5266,14 +5172,12 @@ Also they often even rename the release name into Portuguese.</li>
 <ul>
 <li><em>Size: 20-40 GB for a Remux-1080p depending on the running time.</em></li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-suggest-attention.md -->
 <p>I suggest to follow the following Guides first.</p>
 <ul>
 <li><a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
@@ -5285,12 +5189,7 @@ Also they often even rename the release name into Portuguese.</li>
 </div>
 <!-- markdownlint-enable MD041-->
 
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are required:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
 <details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
@@ -5335,9 +5234,6 @@ Also they often even rename the release name into Portuguese.</li>
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-required.md -->
 <details class="abstract">
 <summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
@@ -5374,9 +5270,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -5404,7 +5297,7 @@ Also they often even rename the release name into Portuguese.</li>
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -5433,11 +5326,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -5445,21 +5336,16 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>General Streaming Services - [Click to show/hide]</summary>
 <table>
@@ -5555,21 +5441,16 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><code>BCore</code>, <code>CRiT</code> and <code>MA</code> are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are optional:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <p><strong>Why should I choose All Audio formats?</strong></p>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -5577,7 +5458,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
 <details class="info">
 <summary>I've a AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
@@ -5606,13 +5486,10 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -5695,9 +5572,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -5753,9 +5627,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe.md -->
 <details class="abstract">
 <summary>Movie Versions - [Click to show/hide]</summary>
 <table>
@@ -5821,15 +5692,12 @@ Also they often even rename the release name into Portuguese.</li>
 <p>If you don't prefer <code>IMAX Enhanced</code> then don't add it or use a score of <code>0</code></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/qp-remux-webdl-1080p.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Remux + WEB 1080p" src="../images/qp-remux-webdl-1080p.png" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
 <p>The reason why we didn't select the WEB-DL 720p is that you will hardly find any releases that aren't done as 1080p WEB-DL.</p>
-<!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -5842,8 +5710,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This is why it's recommended to move the selected quality to the top of the list.</p>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
-<!-- END INCLUDE -->
-
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
 <ul>
@@ -5860,14 +5726,12 @@ Also they often even rename the release name into Portuguese.</li>
 <ul>
 <li><em>Size: 40-100 GB for a Remux-2160p depending on the running time.</em></li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-suggest-attention.md -->
 <p>I suggest to follow the following Guides first.</p>
 <ul>
 <li><a href="/Radarr/Radarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Radarr/Radarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
 <p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/score-attention.md -->
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
@@ -5879,30 +5743,22 @@ Also they often even rename the release name into Portuguese.</li>
 </div>
 <!-- markdownlint-enable MD041-->
 
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are required:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-all-hdr-formats.md -->
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
 <p><strong>Why would I choose All HDR formats?</strong></p>
 <ul>
 <li>
 <p>You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.</p>
 </li>
 <li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -5925,8 +5781,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -5936,11 +5790,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
 </ul>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
@@ -5955,13 +5807,10 @@ Also they often even rename the release name into Portuguese.</li>
 <p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-hdr-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -6088,9 +5937,6 @@ Also they often even rename the release name into Portuguese.</li>
 </table>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-cf-remux-web-scoring.md -->
 <details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
@@ -6135,9 +5981,6 @@ Also they often even rename the release name into Portuguese.</li>
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-required.md -->
 <details class="abstract">
 <summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
@@ -6174,9 +6017,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -6204,7 +6044,7 @@ Also they often even rename the release name into Portuguese.</li>
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -6238,11 +6078,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -6251,21 +6089,16 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>General Streaming Services - [Click to show/hide]</summary>
 <table>
@@ -6361,21 +6194,16 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><code>BCore</code>, <code>CRiT</code> and <code>MA</code> are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are optional:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <p><strong>Why should I choose All Audio formats?</strong></p>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -6383,7 +6211,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
 <details class="info">
 <summary>I've a AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
@@ -6412,13 +6239,10 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -6501,9 +6325,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -6559,15 +6380,12 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-uhd-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous UHD (Optional) - [Click to show/hide]</summary>
 <div class="admonition tip">
 <p class="admonition-title">I recommend using the following Custom Formats</p>
 <ul>
-<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
 <li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
 <li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
 </ul>
@@ -6587,12 +6405,12 @@ Also they often even rename the release name into Portuguese.</li>
 <td>9c38ebb7384dada637be8899efa68e6f</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>25c12f78430a3a23413652cbd1d48d77</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
 </tr>
@@ -6604,25 +6422,18 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
 <li>
 <p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe.md -->
 <details class="abstract">
 <summary>Movie Versions - [Click to show/hide]</summary>
 <table>
@@ -6688,14 +6499,11 @@ Also they often even rename the release name into Portuguese.</li>
 <p>If you don't prefer <code>IMAX Enhanced</code> then don't add it or use a score of <code>0</code></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
 <p>Use the following main settings in your profile.</p>
 <p><a class="glightbox" href="../images/qp-remux-webdl-2160p.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Remux + WEB 2160p" src="../images/qp-remux-webdl-2160p.png" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Make sure you don't check the BR-DISK.</p>
 </div>
-<!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -6708,8 +6516,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>This is why it's recommended to move the selected quality to the top of the list.</p>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
-<!-- END INCLUDE -->
-
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
 <ul>
@@ -6727,11 +6533,9 @@ Also they often even rename the release name into Portuguese.</li>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -6740,18 +6544,15 @@ Also they often even rename the release name into Portuguese.</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
 <p><em>The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we prefer having the object metadata (Atmos) over lossless audio.</em></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <p><strong>Why should I choose All Audio formats?</strong></p>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -6759,7 +6560,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
 <details class="info">
 <summary>I've a AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
@@ -6788,13 +6588,10 @@ Also they often even rename the release name into Portuguese.</li>
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -6877,32 +6674,26 @@ Also they often even rename the release name into Portuguese.</li>
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
 <hr />
 <h3 id="hdr-formats">HDR Formats<a class="headerlink" href="#hdr-formats" title="Permanent link"></a></h3>
 <ul>
 <li>You have a 4K TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-all-hdr-formats.md -->
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
 <p><strong>Why would I choose All HDR formats?</strong></p>
 <ul>
 <li>
 <p>You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.</p>
 </li>
 <li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -6925,8 +6716,6 @@ Also they often even rename the release name into Portuguese.</li>
 <li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -6936,11 +6725,9 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
 </ul>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
@@ -6955,13 +6742,10 @@ Also they often even rename the release name into Portuguese.</li>
 <p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-hdr-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -7088,8 +6872,6 @@ Also they often even rename the release name into Portuguese.</li>
 </table>
 </details>
 </details>
-<!-- END INCLUDE -->
-
 <hr />
 <h2 id="faq-info">FAQ &amp; INFO<a class="headerlink" href="#faq-info" title="Permanent link"></a></h2>
 <h3 id="proper-and-repacks">Proper and Repacks<a class="headerlink" href="#proper-and-repacks" title="Permanent link"></a></h3>
@@ -7108,7 +6890,6 @@ When you add your preferred Custom Format and set it to something like <code>+10
 </details>
 <h3 id="releases-you-should-avoid">Releases you should avoid<a class="headerlink" href="#releases-you-should-avoid" title="Permanent link"></a></h3>
 <p>This is a must-have for every Quality Profile you use in our opinion. All these Custom Formats make sure you don't get low-quality releases.</p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -7136,7 +6917,7 @@ When you add your preferred Custom Format and set it to something like <code>+10
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -7165,11 +6946,9 @@ When you add your preferred Custom Format and set it to something like <code>+10
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -7177,20 +6956,16 @@ When you add your preferred Custom Format and set it to something like <code>+10
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <h3 id="custom-formats-with-a-score-of-0">Custom Formats with a score of 0<a class="headerlink" href="#custom-formats-with-a-score-of-0" title="Permanent link"></a></h3>
 <details class="question">
 <summary>What do Custom Formats with a score of 0 do? - [Click to show/hide]</summary>
@@ -7217,7 +6992,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <p>Use x265 only for 4k releases and the <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> makes sure you still get the x265 releases.</p>
 </details>
 <h3 id="why-am-i-getting-purple-or-green-colors">Why am I getting purple or green colors<a class="headerlink" href="#why-am-i-getting-purple-or-green-colors" title="Permanent link"></a></h3>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -7240,10 +7014,7 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-
 <h3 id="dolby-vision-profiles">Dolby Vision Profiles<a class="headerlink" href="#dolby-vision-profiles" title="Permanent link"></a></h3>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -7253,11 +7024,9 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
 </ul>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
@@ -7272,8 +7041,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
-<!-- END INCLUDE -->
-
 <h2 id="thanks">Thanks<a class="headerlink" href="#thanks" title="Permanent link"></a></h2>
 <p>Special thanks to everyone who helped with the testing and creation of these Custom Formats.</p>
 <!-- markdownlint-disable MD041-->

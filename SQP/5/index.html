@@ -3495,7 +3495,6 @@
 <p>It uses Custom Formats and specific needed settings that probably will never make it to the guide, being the guide is used by the masses and what's used here is made for specific needs.</p>
 <p>This also means some Custom Formats needs manual updating or you can use one of the 3rd party automation tools.</p>
 </div>
-<!-- BEGIN INCLUDE ../../includes/sqp/5-why.md -->
 <h2 id="why-choose-this-quality-profile">Why choose this quality profile<a class="headerlink" href="#why-choose-this-quality-profile" title="Permanent link"></a></h2>
 <details class="question">
 <summary>Why choose this quality profile? - [Click to show/hide]</summary>
@@ -3507,9 +3506,6 @@
 <li>HD Audio (Atmos, TrueHD etc...)</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-workflow.md -->
 <h2 id="workflow-logic">Workflow Logic<a class="headerlink" href="#workflow-logic" title="Permanent link"></a></h2>
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
@@ -3531,9 +3527,6 @@
 <p class="admonition-title">[<em>Optional</em>] IMAX Enhanced (IMAX-E)<br>- When an IMAX Enhanced exists, it will upgrade/downgrade to IMAX Enhanced.<br>- IMAX Enhanced will <strong>ONLY</strong> be chosen if it has the same <strong>AUDIO</strong> and <strong>HDR Metadata</strong><br>- It won't downgrade from a <code>TrueHD Atmos</code> to a <code>DD+ Atmos</code> or from a <code>DV</code> to an <code>HDR</code>.</p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/important-notice.md -->
 <h2 id="important-notice">Important Notice<a class="headerlink" href="#important-notice" title="Permanent link"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Important Notice</p>
@@ -3542,9 +3535,6 @@
 <p>If you're unsure or have questions, do not hesitate to ask for help on Discord</p>
 <p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center></p>
 </div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/instructions.md -->
 <h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link"></a></h2>
 <div class="admonition info">
 <ol>
@@ -3554,23 +3544,14 @@
 <li>Adding CF not in this guide could result in undesired results.</li>
 </ol>
 </div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-newqp.md -->
 <h3 id="create-a-new-quality-profile">Create a new Quality Profile<a class="headerlink" href="#create-a-new-quality-profile" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
 <p>Create a new profile and name it what ever you want, we used: <code>Bluray|IMAX-E|2160p</code></p>
 <p><a class="glightbox" href="/SQP/images/5-newqp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Create a new Quality Profile" src="/SQP/images/5-newqp.png" /></a></p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/merge-qualities.md -->
 <h4 id="merge-qualities">Merge Qualities<a class="headerlink" href="#merge-qualities" title="Permanent link"></a></h4>
 <p>First we're going to merge a couple of qualities.</p>
 <p>If you don't know how to merge qualities take a look at the following Guide:</p>
 <p>=&gt; <a href="/Radarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">How to Merge Quality</a></p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-merge-qualities.md -->
 <h5 id="merge-the-following-qualities-together">Merge the following Qualities together<a class="headerlink" href="#merge-the-following-qualities-together" title="Permanent link"></a></h5>
 <ul>
 <li>WEBDL-2160p</li>
@@ -3584,11 +3565,7 @@
 <p class="admonition-title">If you're only running 1 Radarr, You might want to merge the HD Qualities together (WEB+Remux) and <ins>NOT</ins> with the UHD ones so you will also get the HD release if there is no UHD release.</p>
 </div>
 <p><a class="glightbox" href="/SQP/images/5-merge-qualities.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Merge the following Qualities together" src="/SQP/images/5-merge-qualities.png" /></a></p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/move-quality-to-top.md -->
 <h4 id="move-selected-quality-to-top">Move selected quality to top<a class="headerlink" href="#move-selected-quality-to-top" title="Permanent link"></a></h4>
-<!-- BEGIN INCLUDE ../../includes/starr/move-quality-to-top.md -->
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -3601,20 +3578,12 @@
 <p>This is why it's recommended to move the selected quality to the top of the list.</p>
 <p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 </div>
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-select-qualities.md -->
 <h4 id="select-the-following-qualities">Select the following qualities<a class="headerlink" href="#select-the-following-qualities" title="Permanent link"></a></h4>
 <ul>
 <li>The merged quality profile: <code>WEB|Bluray|2160p</code></li>
 <li><code>Remux-1080p</code></li>
 </ul>
 <p><a class="glightbox" href="/SQP/images/5-select-qualities.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Select the following qualities" src="/SQP/images/5-select-qualities.png" /></a></p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-qp-settings.md -->
 <h4 id="quality-profile-settings">Quality Profile Settings<a class="headerlink" href="#quality-profile-settings" title="Permanent link"></a></h4>
 <ul>
 <li><strong>Enable:</strong> <code>Upgrades Allowed</code></li>
@@ -3634,30 +3603,23 @@
 </ul>
 </div>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-cf-scoring.md -->
 <h4 id="custom-formats-and-scores">Custom Formats and scores<a class="headerlink" href="#custom-formats-and-scores" title="Permanent link"></a></h4>
 <p><strong>The following Custom Formats are required:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-all-hdr-formats.md -->
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
 <p><strong>Why would I choose All HDR formats?</strong></p>
 <ul>
 <li>
 <p>You have a 4K/2160p TV and a hardware media player device (such as Roku, AppleTV, Shield, SmartTV App, etc.) that supports several HDR formats (such as Dolby Vision, HDR10, HDR10+, etc.).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes 4K/2160p releases. You must use all the HDR formats with 4k/2160p profiles.</p>
 </li>
 <li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-green-purple.md -->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -3680,8 +3642,6 @@
 <li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/dv-info-profiles.md -->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -3691,11 +3651,9 @@
 <li><strong>Profile 8</strong> <sup>(<em>3</em>)</sup> - This is what comes with (Hybrid) WEB-DL (HULU), Hybrid UHD Remux, and UHD BluRay releases (all of which have HDR10 fallback).<br><em>This works with several mainstream media players.</em><br></li>
 </ul>
 <hr />
-<!-- BEGIN INCLUDE ../../includes/cf/dv-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">Plex for Apple TV and Plex with Infuse is only capable of playing Dolby Vision profiles 5 and 8 correctly if CMv2.9 is being used.<br>This is something that cannot be determined beforehand.<br>So whether you are using an Apple TV, with or without Infuse, it will always be hit or miss whether the content is compatible.<br>Additionally, it is uncertain whether the Dolby Vision layer will play, fall back to HDR10, or encounter a black screen.</p>
 </div>
-<!-- END INCLUDE -->
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
@@ -3710,13 +3668,10 @@
 <p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-hdr-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -3843,8 +3798,6 @@
 </table>
 </details>
 </details>
-<!-- END INCLUDE -->
-
 <details class="abstract">
 <summary>HQ Release Groups - [Click to show/hide]</summary>
 <table>
@@ -3873,17 +3826,17 @@
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01">UHD Bluray Tier 01</a></td>
-<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> 2300 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> 2300 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td>4d74ac4c4db0b64bff6ce0cffef99bf0</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02">UHD Bluray Tier 02</a></td>
-<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> 2200 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> 2200 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td>a58f517a70193f8e578056642178419d</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03">UHD Bluray Tier 03</a></td>
-<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> 2100 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> 2100 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td>e71939fae578037e7aed3ee219bbe7c1</td>
 </tr>
 <tr>
@@ -3904,10 +3857,9 @@
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
+<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
 </div>
 </details>
-<!-- BEGIN INCLUDE ../../includes/sqp/uhd-radarr-misc-required.md -->
 <details class="abstract">
 <summary>Miscellaneous (Required) - [Click to show/hide]</summary>
 <table>
@@ -3931,13 +3883,13 @@
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#x264">x264</a></td>
-<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> -10000 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> -10000 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td>2899d84dc9372de3408e6d8cc18e9666</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
+<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
 </div>
 <hr />
 <p>Breakdown and Why</p>
@@ -3953,9 +3905,6 @@
 <p>This way you make sure the Custom Formats preferences will be used and not ignored.</p>
 </details>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-unwanted-uhd.md -->
 <details class="abstract">
 <summary>Unwanted - [Click to show/hide]</summary>
 <table>
@@ -3983,7 +3932,7 @@
 <td>e204b80c87be9497a8a6eaff48f72905</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd">x265 (HD)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>dc98083864ea246d05a42df0d05f81cc</td>
 </tr>
@@ -4017,11 +3966,9 @@
 <li><strong>LQ (Release Title):</strong> A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.</li>
 <li>
 <p><strong>x265 (HD):</strong> This blocks 720/1080p (HD) releases that are encoded in x265.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-hd-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv" rel="noopener noreferrer" target="_blank">x265 (no HDR/DV)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>3D:</strong> Is 3D still a thing for home use ?</p>
@@ -4030,21 +3977,16 @@
 <li><strong>Extras:</strong> Blocks releases that only contain extras</li>
 <li>
 <p><strong>AV1:</strong> This blocks all releases encoded in AV1.</p>
-<p><!-- BEGIN INCLUDE ../../includes/cf-descriptions/av1.md -->
-AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
+<p>AV1 encodes are currently targeting small file sizes, rather than good visual quality.</p>
 <ul>
 <li>This is a new codec and you need modern devices that support it.</li>
 <li>We also had reports of playback/transcoding issues.</li>
 <li>No main group is actually using it (yet).</li>
 <li>It's better to ignore this new codec to prevent compatibility issues</li>
 </ul>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/uhd-radarr-resolution.md -->
 <details class="abstract">
 <summary>Resolution - [Click to show/hide]</summary>
 <table>
@@ -4063,18 +4005,15 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </tr>
 <tr>
 <td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/2160p.json">2160p</a></td>
-<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> 151 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td style="text-align: center;"><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> 151 <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td>fb392fb0d61a010ae38e49ceaa24a1ef</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
-<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
+<p class="admonition-title">Scores marked with a <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> are different to those used in the main guide</p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-streaming-services.md -->
 <details class="abstract">
 <summary>General Streaming Services - [Click to show/hide]</summary>
 <table>
@@ -4170,21 +4109,16 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li><code>BCore</code>, <code>CRiT</code> and <code>MA</code> are the only ones with a score because of their better source material, or higher bitrate and quality compared to other streaming services.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <p><strong>The following Custom Formats are optional:</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-audio.md -->
 <details class="abstract">
 <summary>Audio - [Click to show/hide]</summary>
 <p><strong>Why should I choose All Audio formats?</strong></p>
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-limitations-atv.md -->
 <div class="admonition bug">
 <p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -4192,7 +4126,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
-<!-- BEGIN INCLUDE ../../includes/cf/audio-info.md -->
 <details class="info">
 <summary>I've a AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
@@ -4221,13 +4154,10 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
-<!-- END INCLUDE -->
-<!-- BEGIN INCLUDE ../../includes/cf/which-audio-formats-should-i-choose.md -->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
 </details>
-<!-- END INCLUDE -->
 <table>
 <thead>
 <tr>
@@ -4310,9 +4240,6 @@ AV1 encodes are currently targeting small file sizes, rather than good visual qu
 </tbody>
 </table>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -4368,15 +4295,12 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>Scene:</strong> [<em>Optional</em>] Use this only if you want to avoid SCENE releases.</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-misc-uhd-optional.md -->
 <details class="abstract">
 <summary>Miscellaneous UHD (Optional) - [Click to show/hide]</summary>
 <div class="admonition tip">
 <p class="admonition-title">I recommend using the following Custom Formats</p>
 <ul>
-<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
+<li><strong>For details on "Why" and a potential warning <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> please see the notes below.</strong></li>
 <li><code>x265 (no HDR/DV)</code> over the <code>x265 (HD)</code></li>
 <li><code>SDR (no WEBDL)</code> over the <code>SDR</code></li>
 </ul>
@@ -4396,12 +4320,12 @@ Also they often even rename the release name into Portuguese.</li>
 <td>9c38ebb7384dada637be8899efa68e6f</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#sdr-no-webdl">SDR (no WEBDL)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>25c12f78430a3a23413652cbd1d48d77</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></td>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#x265-no-hdrdv">x265 (no HDR/DV)</a> <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /></td>
 <td style="text-align: center;">-10000</td>
 <td>839bea857ed2c0a8e084f3cbdbd65ecb</td>
 </tr>
@@ -4413,25 +4337,18 @@ Also they often even rename the release name into Portuguese.</li>
 <li><strong>SDR:</strong> This will prevent grabbing UHD/4k releases without HDR Formats.</li>
 <li>
 <p><strong>SDR (no WEBDL):</strong> This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.</p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/sdr-no-webdl-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#sdr" rel="noopener noreferrer" target="_blank">SDR</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 <li>
 <p><strong>x265 (no HDR/DV):</strong> This blocks 720/1080p (HD) releases that are encoded in x265, <strong>But it will allow x265 releases if they have HDR and/or DV</strong></p>
-<!-- BEGIN INCLUDE ../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md -->
 <div class="admonition danger">
 <p class="admonition-title">If you have also added <a href="/Radarr/Radarr-collection-of-custom-formats/#x265-hd" rel="noopener noreferrer" target="_blank">x265 (HD)</a> to your Radarr,<br>then one of them should be scored as <code>0</code> in your quality profile.</p>
 </div>
-<!-- END INCLUDE -->
 </li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/cf/radarr-movie-versions-imaxe.md -->
 <details class="abstract">
 <summary>Movie Versions - [Click to show/hide]</summary>
 <table>
@@ -4497,11 +4414,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>If you don't prefer <code>IMAX Enhanced</code> then don't add it or use a score of <code>0</code></p>
 </div>
 </details>
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../includes/sqp/5-quality-size.md -->
 <h3 id="quality-size">Quality Size<a class="headerlink" href="#quality-size" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Quality</code></p>
 <table>
@@ -4548,8 +4460,6 @@ Also they often even rename the release name into Portuguese.</li>
 <p>The reason why you don't see the <code>Preferred</code> score in the table above is because we want max quality anyway. So set it as high as possible.</p>
 <p>The highest preferred quality you can manually enter is 1 less than the Maximum quality. If you use the slider, the preferred quality can be up to 5 lesser than the Maximum quality.</p>
 <p>Make sure you have enabled <code>Show Advanced</code> in Radarr, if you don't see a provision to enter the scores, under the Quality settings.</p>
-<!-- END INCLUDE -->
-
 <!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">
