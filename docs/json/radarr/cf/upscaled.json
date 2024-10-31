@@ -51,6 +51,24 @@
       "fields": {
         "value": "(?<=\\b[12]\\d{3}\\b).*\\b(UPS|Up(s(caled?|UHD)|(Rez)))\\b"
       }
+    },
+    {
+      "name": "Ai-Enhanced",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\bAi-Enhanced\\b"
+      }
+    },
+    {
+      "name": "DotAi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\.Ai\\."
+      }
     }
   ]
 }
