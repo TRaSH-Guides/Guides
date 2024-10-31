@@ -93,7 +93,7 @@ We've made 3 guides related to this.
 ---
 
 | Miscellaneous                          | French Audio Version          | French Source Groups                          |
-| -------------------------------------- | ----------------------------- | --------------------------------------------- |
+|----------------------------------------|-------------------------------|-----------------------------------------------|
 | [Bad Dual Groups](#bad-dual-groups)    | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [DV (Disk)](#dv-disk)                  | [Multi-Audio](#multi-audio)   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [DV (WEBDL)](#dv-webdl)                | [French Audio](#french-audio) | [FR WEB Tier 01](#fr-web-tier-01)             |
@@ -114,6 +114,7 @@ We've made 3 guides related to this.
 | [SDR (no WEBDL)](#sdr-no-webdl)        |                               |                                               |
 | [SDR](#sdr)                            |                               |                                               |
 | [Season Packs](#season-pack)           |                               |                                               |
+| [VC-1](#vc-1)                          |                               |                                               |
 | [VP9](#vp9)                            |                               |                                               |
 | [x264](#x264)                          |                               |                                               |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                               |
@@ -1231,6 +1232,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/x265-no-hdrdv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### VC-1
+
+??? question "VC-1 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vc-1.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
