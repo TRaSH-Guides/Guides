@@ -58,7 +58,7 @@ When a change is detected in the source location for a library’s content, the 
 
 ??? tip "TIP - Autoscan - [Click to show/hide]"
 
-    If for some reason example your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.
+    In some cases, an operating system may not support this trigger - for example, if your storage is mounted on a network (SMB/NFS/Cloud Storage). In other cases, you may just find that your library doesn't automatically scan on its own. In these cases, you could consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -410,7 +410,7 @@ This feature allows Plex Media Server to maintain high visual fidelity of conten
 
 ![!Settings - Transcoder - Tone Mapping Algorithm](images/settings-transcoder-tonemapping-algorithm.png)
 
-Most operating systems running Plex Media Server have the ability to select which tone mapping algorithm is used (except on Windows Intel)  to convert from HDR to SDR.
+Plex Media Server owners can choose which tone mapping algorithm is used when transcoding HDR content to SDR. Note: this feature is not yet available on Intel-based Windows systems.
 
 !!! success ""
 
@@ -447,7 +447,7 @@ The GPU or other hardware device that will be used for transcoding. The default 
 
 !!! success ""
 
-    **Suggested: `Your used device that will be used for transcoding`**
+    **Suggested: `Whichever device you wish to use for hardware transcoding`**
 
 #### Maximum simultaneous video transcode
 
@@ -455,7 +455,7 @@ Set the maximum number of transcoding sessions that you will allow simultaneousl
 
 !!! success ""
 
-    **Suggested: `Depending on your setup`**
+    **Suggested: `However many your setup is capable of`**
 
 ---
 
@@ -648,7 +648,7 @@ Here you will find the libraries you've added to your Plex Media Server.
 
         **Suggested: `Enabled`**
 
-        *Ever watch a TV show and it starts playing that same minute and a half credits intro that you've already watched multiple times? Well, you can have your Plex Media Server analyze the TV shows to try and detect those introductions and then let you skip through them with a single click!*
+        *Have you ever watched a TV show, and it starts playing that same minute and a half credits intro that you've already seen multiple times? Well, you can have your Plex Media Server analyze your TV shows to try and detect those introductions, and then let you skip through them with a single click!*
 
 1. Enable credits detection
 
