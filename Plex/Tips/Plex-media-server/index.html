@@ -3438,6 +3438,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#marker-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generate-video-preview-thumbnails" class="md-nav__link">
     <span class="md-ellipsis">
       Generate video preview thumbnails
@@ -3456,9 +3465,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#generate-credits-video-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate credits video markers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-voice-activity-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate voice activity data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#generate-chapter-thumbnails" class="md-nav__link">
     <span class="md-ellipsis">
       Generate chapter thumbnails
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-cache-size-mb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Cache Size (MB)
     </span>
   </a>
   
@@ -3621,6 +3657,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#tonemapping-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tonemapping Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#use-hardware-acceleration-when-available" class="md-nav__link">
     <span class="md-ellipsis">
       Use hardware acceleration when available
@@ -3633,6 +3678,24 @@
   <a href="#use-hardware-accelerated-video-encoding" class="md-nav__link">
     <span class="md-ellipsis">
       Use hardware-accelerated video encoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-transcoding-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware transcoding device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximum-simultaneous-video-transcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum simultaneous video transcode
     </span>
   </a>
   
@@ -3731,18 +3794,17 @@
 <h1 id="suggested-plex-media-server-settings">Suggested Plex Media Server Settings<a class="headerlink" href="#suggested-plex-media-server-settings" title="Permanent link"></a></h1>
 <p>So, what are the best Plex Media Server settings?</p>
 <p>This is something that can't be answered, as it depends on the use case and your personal preference.</p>
-<div class="admonition danger">
-<p>Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
+<div class="admonition note">
+<p class="admonition-title">Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Some settings are only visible for Plex Pass holders.</p>
+<p class="admonition-title">Some settings are only visible for Plex Pass holders.</p>
 </div>
 <p>All changes need to be done on your Plex Media Server.</p>
 <p><a class="glightbox" href="../images/plex-settings-icon.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex App" src="../images/plex-settings-icon.png" /></a></p>
-<div class="admonition info">
+<div class="admonition question">
 <p class="admonition-title">Why didn't you cover option .... ?</p>
-<p>We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://trash-guides.info/assets/discord.png" /></a></p>
+<p>We will only cover settings that we think might be interesting or are personal preference, if you would like to see other settings covered, please contact us on <a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" src="https://trash-guides.info/assets/discord.png" /></a></p>
 </div>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link"></a></h2>
 <p><a class="glightbox" href="../images/settings-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex: Settings" src="../images/settings-settings.png" /></a></p>
@@ -3773,7 +3835,7 @@
 </div>
 <details class="tip">
 <summary>TIP - Autoscan - [Click to show/hide]</summary>
-<p>If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.</p>
+<p>In some cases, an operating system may not support this trigger - for example, if your storage is mounted on a network (SMB/NFS/Cloud Storage). In other cases, you may just find that your library doesn't automatically scan on its own. In these cases, you could consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <p>Please don't forget to check out his other Unraid Videos <a href="https://www.youtube.com/c/IBRACORP/videos" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </details>
@@ -3813,6 +3875,13 @@
 <p><strong>Suggested: <code>Enabled</code></strong></p>
 <p><em>This makes sure it uses fewer resources and ensures they do not interfere with regular streaming.</em></p>
 </div>
+<h4 id="marker-source">Marker source<a class="headerlink" href="#marker-source" title="Permanent link"></a></h4>
+<p><a class="glightbox" href="../images/settings-library-marker-source.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Marker source" src="../images/settings-library-marker-source.png" /></a></p>
+<p>Credits markers can be generated locally and/or retrieved via an online database. Online markers may not always exist, if this preference is set to 'both' then any locally detected markers are submitted anonymously back to the online database for future use.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>both, try online first</code></strong></p>
+<p><em>If you notice that the markers don't match your releases try <code>local detection only</code>.</em></p>
+</div>
 <h4 id="generate-video-preview-thumbnails">Generate video preview thumbnails<a class="headerlink" href="#generate-video-preview-thumbnails" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-generate-video-preview-thumbnails.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Generate video preview thumbnails" src="../images/settings-library-generate-video-preview-thumbnails.png" /></a></p>
 <p>This option creates a series of preview thumbnails from a media item when it is analyzed. These images are used by some Plex apps when you move back and forward in an app with the timeline scrubber. They’ll also be displayed in Now Playing when someone is streaming from you so that you can see where they are in the video.</p>
@@ -3838,6 +3907,22 @@
 <p><em>or</em></p>
 <p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
 </div>
+<h4 id="generate-credits-video-markers">Generate credits video markers<a class="headerlink" href="#generate-credits-video-markers" title="Permanent link"></a></h4>
+<p><a class="glightbox" href="../images/settings-library-generate-credits-video-markers.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Generate credits video markers" src="../images/settings-library-generate-credits-video-markers.png" /></a></p>
+<div class="admonition success">
+<p><strong>Suggested: <code>as a scheduled task</code></strong></p>
+<p><em>or</em></p>
+<p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
+</div>
+<h4 id="generate-voice-activity-data">Generate voice activity data<a class="headerlink" href="#generate-voice-activity-data" title="Permanent link"></a></h4>
+<p><a class="glightbox" href="../images/settings-library-generate-voice-activity-data.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Generate voice activity data" src="../images/settings-library-generate-voice-activity-data.png" /></a></p>
+<p>This allows the server to analyze the audio stream to detect voice activity for movies and episodes. The analysis must be run on the video before it’s possible to make use of auto-syncing for that video.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>as a scheduled task</code></strong></p>
+<p><em>or</em></p>
+<p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
+<p><a href="https://support.plex.tv/articles/auto-sync-subtitles/" rel="noopener noreferrer" target="_blank">more info</a></p>
+</div>
 <h4 id="generate-chapter-thumbnails">Generate chapter thumbnails<a class="headerlink" href="#generate-chapter-thumbnails" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-library-generate-chapter-thumbnails.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Library - Generate chapter thumbnails" src="../images/settings-library-generate-chapter-thumbnails.png" /></a></p>
 <p>Chapter thumbnails provide images in the chapter view on supported apps. They can take a little time to generate and consume very minor additional disk space.</p>
@@ -3845,6 +3930,14 @@
 <p><strong>Suggested: <code>as a scheduled task</code></strong></p>
 <p><em>or</em></p>
 <p><strong>Suggested: <code>as a scheduled task and when media is added</code></strong></p>
+</div>
+<h4 id="database-cache-size-mb">Database Cache Size (MB)<a class="headerlink" href="#database-cache-size-mb" title="Permanent link"></a></h4>
+<p>Set the size of the main database cache, in MB. The default value is 40 and should be sufficient for just about every user. Increasing much beyond the default value is likely to only benefit users with extremely large media collections (as in, hundreds of thousands of episodes or music tracks).</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>1024</code></strong></p>
+<p><em>or</em></p>
+<p><strong>Suggested: <code>2048</code></strong></p>
+<p><em>These results are provided by users from our community</em></p>
 </div>
 <hr />
 <h3 id="network">Network<a class="headerlink" href="#network" title="Permanent link"></a></h3>
@@ -3953,6 +4046,15 @@
 <p class="admonition-title">Note</p>
 <p>Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed-out” colors that occur when converting HDR content without tone mapping.</p>
 </div>
+<h4 id="tonemapping-algorithm">Tonemapping Algorithm<a class="headerlink" href="#tonemapping-algorithm" title="Permanent link"></a></h4>
+<p><a class="glightbox" href="../images/settings-transcoder-tonemapping-algorithm.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Transcoder - Tone Mapping Algorithm" src="../images/settings-transcoder-tonemapping-algorithm.png" /></a></p>
+<p>Plex Media Server owners can choose which tone mapping algorithm is used when transcoding HDR content to SDR. Note: this feature is not yet available on Intel-based Windows systems.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>hable</code></strong></p>
+<p><em>This is a personal preference depending on what you prefer</em><br>
+<em>- hable: Preserve both dark and bright details better than reinhard, at the cost of slightly darkening everything. Use it when detail preservation is more important than color and brightness accuracy.</em></p>
+<p><a href="https://support.plex.tv/articles/hdr-to-sdr-tone-mapping/#toc-3" rel="noopener noreferrer" target="_blank">more info</a></p>
+</div>
 <h4 id="use-hardware-acceleration-when-available">Use hardware acceleration when available<a class="headerlink" href="#use-hardware-acceleration-when-available" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/settings-transcoder-use-hardware-acceleration-when-available.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Settings - Transcoder - Use hardware acceleration when available" src="../images/settings-transcoder-use-hardware-acceleration-when-available.png" /></a></p>
 <p>To use Hardware-Accelerated Streaming in Plex Media Server.</p>
@@ -3964,6 +4066,16 @@
 <p>To use Hardware-Accelerated Encoding in Plex Media Server.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
+</div>
+<h4 id="hardware-transcoding-device">Hardware transcoding device<a class="headerlink" href="#hardware-transcoding-device" title="Permanent link"></a></h4>
+<p>The GPU or other hardware device that will be used for transcoding. The default setting will have the Auto option selected. If you have multiple devices capable of hardware-accelerated transcoding (e.g. both an integrated and discrete GPU), you can select a particular device.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Whichever device you wish to use for hardware transcoding</code></strong></p>
+</div>
+<h4 id="maximum-simultaneous-video-transcode">Maximum simultaneous video transcode<a class="headerlink" href="#maximum-simultaneous-video-transcode" title="Permanent link"></a></h4>
+<p>Set the maximum number of transcoding sessions that you will allow simultaneously. For instance, if you only want to allow two transcodes to happen at any one time (even if your computer is capable of more), you can set the value to 2.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>However many your setup is capable of</code></strong></p>
 </div>
 <hr />
 <h2 id="manage">Manage<a class="headerlink" href="#manage" title="Permanent link"></a></h2>
@@ -3986,7 +4098,7 @@
 </ul>
 </details>
 <div class="admonition info">
-<p class="admonition-title">I will only cover the library settings for Movies and TV shows</p>
+<p class="admonition-title">We will only cover the library settings for Movies and TV shows</p>
 </div>
 <h4 id="movies">Movies<a class="headerlink" href="#movies" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/manage-libraries-movies-part1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part1.png" /></a></p>
@@ -4051,6 +4163,34 @@ If you want you could disable it, the choice is yours.</em></p>
 </div>
 </li>
 </ol>
+<p><a class="glightbox" href="../images/manage-libraries-movies-part5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - Movies" src="../images/manage-libraries-movies-part5.png" /></a></p>
+<ol>
+<li>
+<p>Enable credits detection</p>
+<p>In some cases, you may have more than one library and perhaps it doesn’t make sense to do this detection for all of your libraries. For any individual library, you can choose whether or not content in that library is included in detecting credits.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Enabled</code></strong></p>
+<p><em>If Enable credits detection is disabled, then content from that library will not be included for analysis. Disabling for the library will also prevent the skip credits button from appearing and any skip credits behavior such as minimizing even if the markers have already been detected</em></p>
+</div>
+</li>
+<li>
+<p>Ad detection</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>For all items</code></strong></p>
+</div>
+</li>
+<li>
+<p>Enable voice activity detection</p>
+<p>Depending if you want to make use of Auto-Sync Subtitles.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Enabled</code></strong></p>
+<p><em>If you want to make use of Auto-Sync Subtitles for this library</em></p>
+<p>or</p>
+<p><strong>Suggest: <code>Disabled</code></strong></p>
+<p><em>If you don't want to make use of Auto-Sync Subtitles for this library</em></p>
+</div>
+</li>
+</ol>
 <h4 id="tv">TV<a class="headerlink" href="#tv" title="Permanent link"></a></h4>
 <p><a class="glightbox" href="../images/manage-libraries-tv-part1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part1.png" /></a></p>
 <ol>
@@ -4064,8 +4204,17 @@ If you want you could disable it, the choice is yours.</em></p>
 </ol>
 <p><a class="glightbox" href="../images/manage-libraries-tv-part2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part2.png" /></a></p>
 <ol>
-<li>How episodes are named on disk. If your naming follows The MovieDB or TheTVDB choose that here.</li>
-<li>Use season titles when available.</li>
+<li>
+<p>Episode ordering</p>
+<p>This depends on how episodes are named on the disk.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>TheTVDB</code></strong></p>
+<p><em>Sonarr fully relies on TheTVDB for the naming scheme.</em></p>
+</div>
+</li>
+<li>
+<p>Use season titles when available.</p>
+</li>
 <li>
 <p>When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)</p>
 <div class="admonition success">
@@ -4101,25 +4250,46 @@ If you want you could disable it, the choice is yours.</em></p>
 <li>
 <p>This deletes the preview thumbnails it generated before you disabled this option</p>
 </li>
-<li>
-<p>If you want to show your Collection in your library</p>
-<div class="admonition success">
-<p><strong>Suggested: <code>Disabled</code></strong></p>
-<p><em>When Disabled your tv show will show up normally when you use library view, This doesn't mean it will disable the collection view.</em></p>
-</div>
-</li>
+</ol>
+<p><a class="glightbox" href="../images/manage-libraries-tv-part5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Plex Settings - Libraries - TV" src="../images/manage-libraries-tv-part5.png" /></a></p>
+<ol>
 <li>
 <p>Generate intro detection for items in this library when enabled in server settings.</p>
 <div class="admonition success">
 <p><strong>Suggested: <code>Enabled</code></strong></p>
-<p><em>Ever watch a TV show and it starts playing that same minute and a half credits intro that you've already watched multiple times? Well, you can have your Plex Media Server analyze the TV shows to try and detect those introductions and then let you skip through them with a single click!</em></p>
+<p><em>Have you ever watched a TV show, and it starts playing that same minute and a half credits intro that you've already seen multiple times? Well, you can have your Plex Media Server analyze your TV shows to try and detect those introductions, and then let you skip through them with a single click!</em></p>
+</div>
+</li>
+<li>
+<p>Enable credits detection</p>
+<p>In some cases, you may have more than one library and perhaps it doesn’t make sense to do this detection for all of your libraries. For any individual library, you can choose whether or not content in that library is included in detecting credits.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Enabled</code></strong></p>
+<p><em>If Enable credits detection is disabled, then content from that library will not be included for analysis. Disabling for the library will also prevent the skip credits button from appearing and any skip credits behavior such as minimizing even if the markers have already been detected</em></p>
+</div>
+</li>
+<li>
+<p>Ad detection</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>For all items</code></strong></p>
+</div>
+</li>
+<li>
+<p>Enable voice activity detection</p>
+<p>Depending if you want to make use of Auto-Sync Subtitles.</p>
+<div class="admonition success">
+<p><strong>Suggested: <code>Enabled</code></strong></p>
+<p><em>If you want to make use of Auto-Sync Subtitles for this library</em></p>
+<p>or</p>
+<p><strong>Suggest: <code>Disabled</code></strong></p>
+<p><em>If you don't want to make use of Auto-Sync Subtitles for this library</em></p>
 </div>
 </li>
 </ol>
 <hr />
-<p>For the information in this guide, we made use of the following sources</p>
+<p>For the information in this guide, we made use of the following sources.</p>
 <ul>
-<li>Information we gathered from Several Discord servers</li>
+<li>Information we gathered from Several Discord servers and our own community</li>
 <li><a href="https://support.plex.tv/articles/" rel="noopener noreferrer" target="_blank">Plex Support Articles</a></li>
 <li>Extra Information gathered from a Plex employee</li>
 <li>Own experience</li>
@@ -4155,7 +4325,7 @@ If you want you could disable it, the choice is yours.</em></p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 1, 2024 12:00:02</span>
   </span>
 
     
