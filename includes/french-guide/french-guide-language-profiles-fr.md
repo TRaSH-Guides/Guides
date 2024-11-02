@@ -6,13 +6,13 @@
 
 | Profile  | Audios `Original` + `Français` | Audio `Original` seulement | Audio `Français` seulement | Sous-titres `English` | Sous-titres `Français` |
 |----------|:------------------------------:|:--------------------------:|:--------------------------:|:---------------------:|:----------------------:|
-| VOSTFR   |          :cross-mark:          |     :heavy_check_mark:     |        :cross-mark:        |       :warning:       |   :heavy_check_mark:   |
-| MULTi.VF |       :heavy_check_mark:       |        :cross-mark:        |     :heavy_check_mark:     |       :warning:       |       :warning:        |
-| MULTi.VO |       :heavy_check_mark:       |     :heavy_check_mark:     |        :cross-mark:        |       :warning:       |       :warning:        |
+| VOSTFR   |              :x:               |     :white_check_mark:     |            :x:             |       :warning:       |   :white_check_mark:   |
+| MULTi.VF |       :white_check_mark:       |            :x:             |     :white_check_mark:     |       :warning:       |       :warning:        |
+| MULTi.VO |       :white_check_mark:       |     :white_check_mark:     |            :x:             |       :warning:       |       :warning:        |
 
-:heavy_check_mark: Ce que le profil cherche à obtenir
-:cross-mark: Ce que le profil cherche à éviter
-:warning: Pas le but principal du profil mais peut arriver
+- :white_check_mark: Ce que le profil cherche à obtenir
+- :x: Ce que le profil cherche à éviter
+- :warning: Pas le but principal du profil mais peut arriver
 
 !!! tip "Pour le profil VOSTFR, il est recommandé de configurer Bazarr"
     Pour ce faire, suivez le [Bazarr Setup Guide](/Bazarr/Setup-Guide) (anglais seulement). Bazarr vous aidera à obtenir des sous-titres `Français` lorsque aucune release VOSTFR n'est disponible.
