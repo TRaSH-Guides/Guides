@@ -1,3 +1,8 @@
+# 2024-11-03 01:35
+- [feat(guide): Updated Plex Media Server Settings - v1.41.1.9057](https://github.com/TRaSH-Guides/Guides/pull/2115)
+- [feat(guide): Starr - Add Custom Format `VC-1`](https://github.com/TRaSH-Guides/Guides/pull/2123)
+- [fix(sonarr): Add Bluray-576p quality filesize settings for Anime](https://github.com/TRaSH-Guides/Guides/pull/2121)
+
 # 2024-10-27 01:35
 - [feat(guide-sync): notifiarr profile support](https://github.com/TRaSH-Guides/Guides/pull/2096)
 - [feat(guide): Unraid - Make certain steps clearer and add a few tips](https://github.com/TRaSH-Guides/Guides/pull/2113)
