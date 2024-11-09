@@ -56,6 +56,11 @@
       "name": "HDR10+ Boost",
       "trash_id": "b17886cb4158d9fea189859409975758",
       "required": false
+    },
+    {
+      "name": "DV HDR10+ Boost",
+      "trash_id": "55a5b50cb416dea5a50c4955896217ab",
+      "required": false
     }
   ],
   "quality_profiles": {

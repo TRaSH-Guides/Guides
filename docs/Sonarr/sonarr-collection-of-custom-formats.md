@@ -80,14 +80,14 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
 |-----------------------|-------------------------|--------------------------|---------------------------------------------|
-| [4OD](#4od)           | [Crave](#crav)          | [B-Global](#b-global)    | [UHD Streaming Boost](#uhd-streaming-boost) |
-| [ALL4](#all4)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    | [UHD Streaming Cut](#uhd-streaming-cut)     |
-| [BBC iPlayer](#ip)    | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
-| [ITVX](#itvx)         | [Star+](#strp)          | [Funimation](#funi)      |                                             |
-| [MY5](#my5)           | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
-| [NOW](#now)           | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
-|                       |                         | [ABEMA](#abema)          |                                             |
-|                       |                         | [ADN](#adn)              |                                             |
+| [4OD](#4od)           | [AUBC](#aubc)           | [ABEMA](#abema)          | [UHD Streaming Boost](#uhd-streaming-boost) |
+| [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| [BBC iPlayer](#ip)    | [Crave](#crav)          | [B-Global](#b-global)    |                                             |
+| [ITVX](#itvx)         | [Discovery+](#dscp)     | [Bilibili](#bilibili)    |                                             |
+| [MY5](#my5)           | [OViD](#ovid)           | [Crunchyroll](#cr)       |                                             |
+| [NOW](#now)           | [Star+](#strp)          | [Funimation](#funi)      |                                             |
+|                       | [YouTube Red](#red)     | [HIDIVE](#hidive)        |                                             |
+|                       | [Quibi](#qibi)          | [VRV](#vrv)              |                                             |
 |                       |                         | [WKN](#wkn)              |                                             |
 
 ---
@@ -114,6 +114,7 @@ We've made 3 guides related to this.
 | [SDR (no WEBDL)](#sdr-no-webdl)        |                      |                                               |
 | [SDR](#sdr)                            |                      |                                               |
 | [Season Packs](#season-pack)           |                      |                                               |
+| [VC-1](#vc-1)                          |                      |                                               |
 | [VP9](#vp9)                            |                      |                                               |
 | [x264](#x264)                          |                      |                                               |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                      |                                               |
@@ -1237,6 +1238,22 @@ We've made 3 guides related to this.
 
 ---
 
+### VC-1
+
+??? question "VC-1 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/vc-1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### VP9
 
 ??? question "VP9 - [Click to show/hide]"
@@ -2117,6 +2134,42 @@ We've made 3 guides related to this.
 ---
 
 ### Misc Streaming Services
+
+---
+
+#### AUBC
+
+<sub>Australian Broadcasting Corporation</sub>
+
+??? question "AUBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CBC
+
+<sub>CBC</sub>
+
+??? question "CBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/cbc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 

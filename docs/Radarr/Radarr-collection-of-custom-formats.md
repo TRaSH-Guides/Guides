@@ -86,10 +86,12 @@ We've made 3 guides related to this.
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 |-----------------------|-------------------------|--------------------------|
-| [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
-| [ITVX](#itvx)         | [OViD](#ovid)           |                          |
-| [MY5](#my5)           | [Star+](#strp)          |                          |
-| [NOW](#now)           |                         |                          |
+| [BBC iPlayer](#ip)    | [AUBC](#aubc)           | [VRV](#vrv)              |
+| [ITVX](#itvx)         | [CBC](#cbc)             |                          |
+| [MY5](#my5)           | [Crave](#crav)          |                          |
+| [NOW](#now)           | [OViD](#ovid)           |                          |
+|                       | [Star+](#strp)          |                          |
+|                       |                         |                          |
 
 ---
 
@@ -117,6 +119,7 @@ We've made 3 guides related to this.
 | [Scene](#scene)                        |                      |                                                 |
 | [SDR (no WEBDL)](#sdr-no-webdl)        |                      |                                                 |
 | [SDR](#sdr)                            |                      |                                                 |
+| [VC-1](#vc-1)                          |                      |                                                 |
 | [VP9](#vp9)                            |                      |                                                 |
 | [x264](#x264)                          |                      |                                                 |
 | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                      |                                                 |
@@ -1236,6 +1239,22 @@ We've made 3 guides related to this.
 
 ---
 
+### VC-1
+
+??? question "VC-1 - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vc-1.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### VP9
 
 ??? question "VP9 - [Click to show/hide]"
@@ -2263,6 +2282,42 @@ We've made 3 guides related to this.
 ---
 
 ### Misc Streaming Services
+
+---
+
+#### AUBC
+
+<sub>Australian Broadcasting Corporation</sub>
+
+??? question "AUBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/aubc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+#### CBC
+
+<sub>CBC</sub>
+
+??? question "CBC - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/cbc.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 

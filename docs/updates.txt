@@ -1,3 +1,20 @@
+# 2024-11-03 01:35
+- [feat(guide): Updated Plex Media Server Settings - v1.41.1.9057](https://github.com/TRaSH-Guides/Guides/pull/2115)
+- [feat(guide): Starr - Add Custom Format `VC-1`](https://github.com/TRaSH-Guides/Guides/pull/2123)
+- [fix(sonarr): Add Bluray-576p quality filesize settings for Anime](https://github.com/TRaSH-Guides/Guides/pull/2121)
+
+# 2024-10-27 01:35
+- [feat(guide-sync): notifiarr profile support](https://github.com/TRaSH-Guides/Guides/pull/2096)
+- [feat(guide): Unraid - Make certain steps clearer and add a few tips](https://github.com/TRaSH-Guides/Guides/pull/2113)
+- [feat(guide): Prowlarr - Add FlareSolverr info and broken banner](https://github.com/TRaSH-Guides/Guides/pull/2112)
+- [feat(guide): Starr - Add Streaming Services `CBC` (Canada) Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2110)
+- [feat(guide): Starr - Add Streaming Services `AUBC` (Australian Broadcasting Corporation (ABC) ) Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2111)
+- [fix(guides): Add missing HDR10+ Boost and DV HDR10+ Boost custom formats to profile JSONs](https://github.com/TRaSH-Guides/Guides/pull/2106)
+
+# 2024-10-20 01:36
+- [feat(guides): Re-work Hardlinks Section and Rename to 'File and Folder Structure'.](https://github.com/TRaSH-Guides/Guides/pull/2094)
+- [style(Radarr): Fixed Spelling Issue](https://github.com/TRaSH-Guides/Guides/pull/2100)
+
 # 2024-10-13 01:34
 - [feat(guide): Downloaders - Improve SABnzbd Blacklist](https://github.com/TRaSH-Guides/Guides/pull/2093)
 - [feat(guide): Add streaming service `MY5`](https://github.com/TRaSH-Guides/Guides/pull/2092)
