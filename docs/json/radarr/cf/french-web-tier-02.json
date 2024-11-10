@@ -2,7 +2,9 @@
   "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
   "trash_scores": {
     "default": 1650,
-    "vostfr": 0
+    "french-multi-vf": 1650,
+    "french-multi-vo": 1650,
+    "french-vostfr": 0
   },
   "name": "FR WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,

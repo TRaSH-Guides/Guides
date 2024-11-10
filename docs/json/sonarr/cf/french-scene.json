@@ -2,7 +2,11 @@
   "trash_id": "2f3422339d185eb227a324644a2fbfca",
   "trash_scores": {
     "default": 1500,
-    "vostfr": 0
+    "french-anime-multi": 1500,
+    "french-anime-vostfr": 1500,
+    "french-multi-vf": 1500,
+    "french-multi-vo": 1500,
+    "french-vostfr": 0
   },
   "name": "FR Scene Groups",
   "includeCustomFormatWhenRenaming": false,

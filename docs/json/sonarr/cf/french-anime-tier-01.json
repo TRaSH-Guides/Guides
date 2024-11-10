@@ -1,7 +1,9 @@
 {
   "trash_id": "db13a377f7afb29975ea39470434d2ef",
   "trash_scores": {
-    "default": 1650
+    "default": 1650,
+    "french-anime-multi": 1650,
+    "french-anime-vostfr": 1650
   },
   "name": "FR Anime Tier 01",
   "includeCustomFormatWhenRenaming": false,
