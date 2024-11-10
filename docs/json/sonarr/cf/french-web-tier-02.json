@@ -84,6 +84,15 @@
       }
     },
     {
+      "name": "POTO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(POTO)$"
+      }
+    },
+    {
       "name": "RiPiT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

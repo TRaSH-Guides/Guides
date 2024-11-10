@@ -100,6 +100,15 @@
       }
     },
     {
+      "name": "POTO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(POTO)$"
+      }
+    },
+    {
       "name": "Slay3R",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

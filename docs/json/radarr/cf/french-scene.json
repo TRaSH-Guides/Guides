@@ -33,7 +33,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)$"
+        "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK|BTT)$"
       }
     },
     {
