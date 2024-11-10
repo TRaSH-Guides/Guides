@@ -109,6 +109,15 @@
       "fields": {
         "value": "^(TFA)$"
       }
+    },
+    {
+      "name": "TiNA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TiNA)$"
+      }
     }
   ]
 }
