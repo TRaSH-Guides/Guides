@@ -31,6 +31,9 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 !!! info "Puis-je obtenir des HDLight ou 4KLight ?"
     Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
 
+!!! info "FlareSolverr ?"
+    Il existe une section en anglais : [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"}.
+
 ---
 
 ## Paramètres spécifiques à Prowlarr

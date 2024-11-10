@@ -34,6 +34,9 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 !!! info "Qu'en est-il des animes ?"
     Un exemple de profil pour les animes est également proposé : [Anime](#anime).
 
+!!! info "FlareSolverr ?"
+    Il existe une section en anglais : [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"}.
+
 ---
 
 ## Paramètres spécifiques à Prowlarr

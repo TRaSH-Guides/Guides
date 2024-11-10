@@ -36,6 +36,9 @@ It is quite important that you follow and understand what is envisioned by Trash
 !!! info "What about anime?"
     An example of Anime is also provided at the end: [Anime](#anime).
 
+!!! info "FlareSolverr?"
+    Please refer to the [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"} section.
+
 ---
 
 ## Prowlarr specific settings

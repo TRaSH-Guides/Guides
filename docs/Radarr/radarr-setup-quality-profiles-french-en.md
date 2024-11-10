@@ -33,6 +33,9 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 !!! info "Can I get HDLight or 4KLight?"
     Probably not, this guide is not geared toward these specific types. If space is an issue for you, prefer Web-DL or 720p Blu-ray releases.
 
+!!! info "FlareSolverr?"
+    Please refer to the [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"} section.
+
 ---
 
 ## Prowlarr specific settings
