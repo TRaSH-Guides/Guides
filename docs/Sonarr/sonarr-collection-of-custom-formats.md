@@ -1815,6 +1815,22 @@ We've made 3 guides related to this.
 
 ---
 
+#### AUViO/RTBF
+
+??? question "AUViO/RTBF - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/french-auvio.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-auvio.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 #### MyCANAL
 
 <sub>MyCANAL = CANAL+/MyCANAL</sub>
@@ -1827,24 +1843,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-mycanal.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-#### RTBF
-
-<sub>RTBF = Radio-télévision belge de la Communauté française (Radio Télévision Belge Francophone)</sub>
-
-??? question "RTBF - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/french-rtbf.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-rtbf.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
