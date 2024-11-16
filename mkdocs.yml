@@ -146,6 +146,8 @@ plugins:
         # Recyclarr redirects
         Recyclarr/recyclarr-configs.md: https://recyclarr.dev/wiki/guide-configs/
         Recyclarr/recyclarr-configs-sqp.md: https://recyclarr.dev/wiki/sqp-configs/
+        # Downloaders redirects
+        Downloaders/qBittorrent/3rd-party-tools.md: Downloaders/3rd-party-tools.md
 
 theme:
   name: material
