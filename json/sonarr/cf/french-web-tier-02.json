@@ -2,7 +2,11 @@
   "trash_id": "a4c51febd4d8b2a0db10a3c974f21d92",
   "trash_scores": {
     "default": 1650,
-    "french-anime": 1100
+    "french-anime-multi": 1150,
+    "french-anime-vostfr": 1150,
+    "french-multi-vf": 1650,
+    "french-multi-vo": 1650,
+    "french-vostfr": 0
   },
   "name": "FR WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -77,6 +81,15 @@
       "required": false,
       "fields": {
         "value": "^(pERsO)$"
+      }
+    },
+    {
+      "name": "POTO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(POTO)$"
       }
     },
     {

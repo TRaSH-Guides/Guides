@@ -1,7 +1,12 @@
 {
   "trash_id": "b8e91cc8fb2bd96468fab74730c30d18",
   "trash_scores": {
-    "default": 1900
+    "default": 1900,
+    "french-anime-multi": 1300,
+    "french-anime-vostfr": 1300,
+    "french-multi-vf": 1900,
+    "french-multi-vo": 1900,
+    "french-vostfr": 0
   },
   "name": "FR Remux Tier 01",
   "includeCustomFormatWhenRenaming": false,

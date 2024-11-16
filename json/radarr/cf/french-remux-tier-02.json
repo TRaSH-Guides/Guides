@@ -1,7 +1,10 @@
 {
   "trash_id": "9019d81307e68cd4a7eb06a567e833b8",
   "trash_scores": {
-    "default": 1900
+    "default": 1900,
+    "french-multi-vf": 1900,
+    "french-multi-vo": 1900,
+    "french-vostfr": 0
   },
   "name": "FR Remux Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -49,6 +52,15 @@
       "required": false,
       "fields": {
         "value": "^(HeavyWeight)$"
+      }
+    },
+    {
+      "name": "KTM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KTM)$"
       }
     },
     {

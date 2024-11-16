@@ -1,7 +1,10 @@
 {
   "trash_id": "5583260016e0b9f683f53af41fb42e4a",
   "trash_scores": {
-    "default": 1950
+    "default": 1950,
+    "french-multi-vf": 1950,
+    "french-multi-vo": 1950,
+    "french-vostfr": 0
   },
   "name": "FR Remux Tier 01",
   "includeCustomFormatWhenRenaming": false,
