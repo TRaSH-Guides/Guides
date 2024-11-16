@@ -1,0 +1,23 @@
+{
+  "trash_id": "322fca6f8f3694acc1401ddb530fd33d",
+  "trash_scores": {
+    "french-anime-multi": 0,
+    "french-anime-vostfr": 0,
+    "french-multi-vf": -10000,
+    "french-multi-vo": 0,
+    "french-vostfr": 0
+  },
+  "name": "Language: Not French",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Not French Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": 2
+      }
+    }
+  ]
+}

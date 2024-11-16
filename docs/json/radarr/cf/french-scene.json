@@ -1,7 +1,10 @@
 {
   "trash_id": "0d94489c0d5828cd3bf9409d309fb32b",
   "trash_scores": {
-    "default": 1500
+    "default": 1500,
+    "french-multi-vf": 1500,
+    "french-multi-vo": 1500,
+    "french-vostfr": 0
   },
   "name": "FR Scene Groups",
   "includeCustomFormatWhenRenaming": false,
@@ -30,7 +33,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK)$"
+        "value": "^(BANKAi|BAWLS|BiPOLAR|BLACKPANTERS|BODIE|BOOLZ|BRiNK|BTT)$"
       }
     },
     {
@@ -147,7 +150,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(PANZeR|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
+        "value": "^(PANZeR|PATHECROUTE|Penrose|PiNKPANTERS|PKPTRS|PRiDEHD|PROPJOE|PURE|PUREWASTEOFBW)$"
       }
     },
     {
@@ -165,7 +168,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|SUNRiSE)$"
+        "value": "^(SAFETY|SASHiMi|SEiGHT|SESKAPiLE|SHEEEiT|SHiNiGAMi(UHD)?|SiGeRiS|SILVIODANTE|SLEEPINGFOREST|SODAPOP|S4LVE|SPINE|SPOiLER|STRINGERBELL|Sunday26th|SUNRiSE)$"
       }
     },
     {

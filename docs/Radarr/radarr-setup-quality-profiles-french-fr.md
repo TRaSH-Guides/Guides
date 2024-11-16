@@ -1,290 +1,270 @@
-# Comment configurer ses Profiles
+# Comment configurer ses Profiles (French Profile)
 
-!!! note "Ce guide a été créé et est maintenu par [Someone said "Nice"?](https://github.com/NiceTSY)"
+*aka Comment configurer les Formats Personnalisés pour obtenir un audio et/ou des sous-titres en français ?*<br><br>
 
-Quelle est la meilleure façon de configurer les Formats Personnalisés (ou Custom Formats) et lesquels utiliser avec quel score pour obtenir une release avec un audio français et un anglais ?
-
-Gardez à l'esprit que la plupart des releases sont MULTi (comprenez double audio, original et français) et qu'il sera difficile d'avoir uniquement l'audio français, à moins que vous ne soyez prêt à obtenir du 720p, ou que vous ne recherchiez que des films français.
-
-Pour ce qui est de la qualité, il n'y a pas de recette miracle, cela dépend de votre installation (périphériques) et de vos préférences personnelles.
-
-Certains préfèrent une qualité audio élevée (HD Audio), d'autres une meilleure qualité vidéo. Nombreux sont ceux qui préfèrent les deux.
-
-TRaSH a créé un [schéma](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter votre décision/choix. Notez que ce graphique n'inclut aucun des Formats Personnalisés de ce guide et que vous devrez quand même le lire pour obtenir des releases en MULTi.
+!!! note "Ce guide a été créé et est maintenu par [Someone Said "Nice"?](https://github.com/NiceTSY)"
 
 ---
 
 ## Notions de base
 
-Il est impératif que vous respectiez et compreniez ce qui est proposé par le guide de TRaSH (_en anglais uniquement_) :
+Il est important que vous suiviez et compreniez ce qui est prévu par le guide de TRaSH :
 
-- L'ajout de Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
-- La configuration d'un profil de qualité pour utiliser les formats personnalisés, comme expliqué dans la section [How to set up Quality Profiles | Basics section](/Radarr/Radarr-setup-custom-formats/#basics){:target="\_blank" rel="noopener noreferrer"}.
+- Ajouter des Formats Personnalisés, comme expliqué dans [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+- Configurer un Profil de Qualité pour utiliser les Formats Personnalisés, comme expliqué dans [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
 
----
+!!! warning "Veuillez lire ces deux sections avant de continuer le guide, car elles contiennent des informations importantes. Le reste de ce guide part du principe que vous l'avez fait."
 
-!!! warning "Impératif"
-
-    La seule modification nécessaire et **indispensable** pour que les formats personnalisés français fonctionnent est de définir le profil de langue sur `Any`.
-
-    ??? success "Exemple - [Cliquer pour afficher/masquer]"
-
-        ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
-
-    !!! info
-
-        `Any` est choisit sinon un film anglais identifié avec un audio français dans Radarr ne sera pas récupéré et vice-versa.
+!!! tip
+    TRaSH a créé un [organigramme](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} pour faciliter vos décisions. N'oubliez pas que ce schéma n'inclut aucun des formats personnalisés suivants et que vous devrez toujours lire ce guide pour obtenir des versions MULTi.
 
 ---
 
-## Je ne suis intéressé que par des films sous-titrés en français (VOSTFR)
+## FAQ
 
-Deux options s'offre à vous :
+!!! info "Je ne suis pas Français de France mais du Canada, est-ce que le guide fonctionne toujours ?"
+    Oui, le guide s'adapte à tous les types de français : VFF, VFQ et VFB (même si ce dernier est assez rare). Assurez-vous simplement de vérifier le scoring dans la section [Versions Audio Françaises](#versions-audio-francaises) section.
 
-### En utilisant le guide de TRaSH et Bazarr
+!!! info "Je suis seulement intéressé par les sous-titres français (VOSTFR)"
+    Veuillez suivre le profil **Original avec sous-titres** (**VOSTFR**).
 
-!!! tip "Il s'agit de la méthode à privilégier."
+!!! info "Puis-je obtenir des HDLight ou 4KLight ?"
+    Pas vraiment, ce guide n'est pas prévu pour cela. Toutefois, si l'espace disque est un problème pour vous, préférez les versions Web-DL ou les releases Blu-ray 720p.
 
-- Configurez Radarr en utilisant : [How to set up Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose) (_en anglais_).
-- Configurez [Bazarr](../Bazarr/Setup-Guide.md) (_en anglais_). Il permet d'obtenir des sous-titres pour tous les films.
-- Profitez de vos films avec les sous-titres.
-- (Facultatif) Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
-
-### En utilisant les exemples suivants et le Format Personnalisé VOSTFR
-
-- Continuez sur cette page.
-- Ignorez toute mention des **Formats Personnalisés MULTi**.
-- Ajoutez le Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) avec un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
+!!! info "FlareSolverr ?"
+    Il existe une section en anglais : [How to set up FlareSolverr](/Prowlarr/prowlarr-setup-flaresolverr/){:target="\_blank" rel="noopener noreferrer"}.
 
 ---
 
-## Usages
+## Paramètres spécifiques à Prowlarr
 
-Il y a deux façons d'aborder les exemples ci-dessous. En utilisant ou non les Formats Personnalisés de Groupes P2P du Guide original (qui peuvent être trouvés ici : [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="\_blank" rel="noopener noreferrer"}).
-Afin d'illustrer ce principe, vous verrez une section **"Mix original (optionnel)"** dans chacun des exemples ci-dessous. Vous devez comprendre que si vous ajoutez les Formats Personnalisés de cette section optionnelle, si Radarr ne trouve pas de MULTi, vous aurez toujours un bon score pour l'audio anglais.
+!!! abstract "Indexers - Remplacer MULTi par une autre langue dans le nom de la release (Replace MULTi by another language in release name)"
+    Prowlarr permet de remplacer MULTi par une autre langue. Cette option semble excellente mais entraînera des faux positifs concernant les CF audio français.
+    Veuillez préférer l'utilisation de l'option "Indexeurs - Option Multi Langues" dans Radarr (voir ci-dessous).
 
-!!! warning "Attention"
+!!! abstract "Indexers - Remplacer VOSTFR et SUBFRENCH par ENGLISH (Replace VOSTFR and SUBFRENCH with ENGLISH)"
+    Cette option ne devrait pas être utilisée, principalement parce que vous perdez des informations concernant la release.
+    De plus, `VOSTFR` ne signifie pas que l'audio est en `Anglais` mais plutôt qu'il s'agit de l'audio `Original`, ce qui peut correspondre à de l'`Espagnol`, du `Coréen`, etc.
 
-    Si vous utilisez le **"Mix original (optionnel)"**. Vous devez comprendre que même si l'objectif principal de ces Formats Personnalisés est de travailler en parallèle avec les formats du guide original. Vous pouvez vous retrouver avec un seul audio alors qu'il existe une version MULTi. La raison est que la release n'a pas été notée assez haut pour l'emporter sur les autres scores.
+!!! abstract "Indexers - Remplacer VFQ par FRENCH (Replace VFQ with FRENCH)"
+    Comme pour l'option MULTi, cela entraînera des faux positifs concernant les CF audio français. Gardez-la désactivée.
+
+??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
+    ![French Prowlarr specific settings](images/french-prowlarr-settings.png)
 
 ---
 
-## Exemples de Profil
+## Paramètres spécifiques à Radarr
+
+!!! abstract "Media Management - Format Standard du Film et Format du Dossier du Film (Standard Movie Format and Movie Folder Format)"
+    Veuillez consulter ceci : [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"} (anglais seulement).
+
+    !!! tip "Format du film/dossier avec le nom du film en français"
+        Radarr supporte la convention de nommage ISO-2 pour nommer un film, donc en remplaçant `{Movie CleanTitle}` par `{Movie CleanTitle:fr}`, cela changera le nom pour sa version française.
+
+!!! abstract "Indexers - Multi Languages option"
+    Dans Radarr, vous pouvez indiquer que MULTi pour un indexeur signifie qu'une release possède au moins certains audios. Pour les besoins de ce guide, vous sélectionnerez `Original` et `French`.
+    Cette option ne devrait être utilisée que pour les indexeurs français. L'appliquer sur des indexeurs plus "internationaux" peut créer des faux positifs avec les CF audio français.
+
+    Si vous ne voyez pas l'option, pensez à activer les "Options Avancées" de Radarr.
+
+    ??? success "Capture d'écran - [Cliquez pour afficher/masquer]"
+        ![French Radarr MULTi settings](images/french-starr-multi-settings.png)
+
+---
+
+## Logique de scoring (anglais seulement)
 
 --8<-- "includes/cf/score-attention.md"
 
 ---
 
-### Type de versions françaises
+## Profils de Qualité
 
-Ces Formats sont optionnels et ne sont là que pour renommer votre fichier ou pour éviter un certain type de version française. Exemples :
+{! include-markdown "../../includes/french-guide/french-guide-language-profiles-fr.md" !}
 
-- Vous préférez l'audio VFF (y compris VFI et VF2), dans ce cas vous les placerez à `101` au lieu de `0`.
-- Vous souhaitez seulement du VOSTFR, dans ce ce cas, ignorez toute mention des **Formats Personnalisés MULTi** et donnez un score de `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}` au Format Personnalisé [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr).
+---
 
-!!! warning "Attention"
+### Versions Audio Françaises
 
-    Il n'est pas vraiment recommandé d'attribuer un score négatif à l'un des Formats Personnalisés de VF (VFF, VFQ, VQ, VFB, VFI, VF2). Augmentez plutôt le score de votre format audio préféré.
+{! include-markdown "../../includes/french-guide/french-guide-french-audio-information-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-audio-version-fr.md" !}
 
 ---
 
-### Les releases à éviter
+### HD Bluray + WEB (1080p)
 
-Ces Formats sont reconnus comme étant indispensables pour tous les Profils de Qualité que vous utilisez. Ils vous assurent de ne pas avoir de releases de faible qualité.
+!!! tip "Paramètres de base"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas en 1080p WEB-DL.
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-bluray-webdl-hd-vo.png)
 
----
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![HD Bluray + WEB for MULTi.VF Profile](images/french-radarr-qp-bluray-webdl-hd-vf.png)
 
-### TRaSH recommandations (_en anglais_)
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
+
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-!!! tip "Obtenir le nom du film en français dans le nom du fichier et/ou du dossier"
+**Les Formats Personnalisés suivants sont requis :**
 
-    En suivant le schéma de dénomination recommandé pour votre bibliothèque, qu'il s'agisse de Plex, Jellyfin ou Emby. Vous pouvez ajouter le code de langue ISO-2 à la fin de la balise du nom du film pour afficher le nom du film dans la langue souhaitée.
-    La balise se présentera comme suit : `{Movie CleanTitle:fr}`. Cela fonctionne aussi bien pour les noms de dossiers que pour les noms de fichiers.
-
----
-
-#### HD Bluray + WEB
-
-Si vous préférez les encodages HD de haute qualité (Bluray-720/1080p)
-
-- _Poids : 6 à 15 Go pour un Bluray-1080p selon la durée du média._
-
-{! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-Les Formats Personnalisés `Audio Advanced` ne sont pas inclus dans le profil d'encodage, car vous trouverez difficilement de l'audio HD avec ce type d'encodages. Et il est conseillé de privilégier la qualité visuelle. Si vous voulez aussi de l'audio HD, vous devriez opter pour les Remuxes ou les Encodes UHD.
+**Les Formats Personnalisés suivants sont facultatifs :**
 
-Utilisez les paramètres suivants dans votre profil.
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-![HD Bluray + WEB](images/french-qp-bluray-webdl.png)
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
-
-La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne trouverez pratiquement aucune release qui ne soit pas faite en 1080p WEB-DL.
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
-
-    **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
-
-    - Lorsque le WEB-1080p deviendra disponible, le média sera télécharger en WEB-1080p. (services de streaming)
-    - Lorsque le Bluray-1080p sortira, il sera mis à niveau vers le Bluray-1080p.
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
+Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes ou des encodages UHD.
 
 ---
 
-#### UHD Bluray + WEB
-
-Si vous préférez les encodages UHD de haute qualité (Bluray-2160p)
-
-- _Poids : 20 à 60 Go pour un Bluray-2160p selon la durée du média._
+### HD Remux (1080p)
 
 {! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+!!! tip "Paramètres de base"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+    La raison pour laquelle nous n'avons pas sélectionné le WEB-DL 720p est que vous trouverez difficilement des releases qui ne sont pas en 1080p WEB-DL.
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![HD Remux for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-remux-hd-vo.png)
 
-{! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![HD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-hd-vf.png)
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
-
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
-
-Utilisez les paramètres suivants dans votre profil.
-
-![UHD Bluray + WEB](images/french-qp-uhd-bluray-webdl.png)
-
-!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
+{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
-    **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
-
-    - Lorsque le WEB-2160p deviendra disponible, le média sera télécharger en WEB-2160p. (services de streaming)
-    - Lorsque le Bluray-2160p sortira, il sera mis à niveau vers le Bluray-2160p.
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
-
----
-
-#### Remux + WEB 1080p
-
-Si vous préférez les Remuxes en 1080p (Remux-1080p)
-
-- _Poids : 20 à 40 Go pour un Remux-1080p selon la durée du média._
-
-{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
-
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
-
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+**Les Formats Personnalisés suivants sont requis :**
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-Utilisez les paramètres suivants dans votre profil.
-
-![Remux + WEB 1080p](images/french-qp-remux-webdl-1080p.png)
-
-!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
-
-La raison pour laquelle le WEB-DL 720p n'est pas sélectionné est que vous ne trouverez pratiquement aucune release qui ne soit pas faite en 1080p WEB-DL.
-
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
-
-    **En fonction de ce qui est disponible en premier, la logique sera la suivante :**
-
-    - Lorsque le WEB-1080p deviendra disponible, le média sera télécharger en WEB-1080pp. (services de streaming)
-    - Lorsque le REMUX-1080p sortira, il sera mis à niveau vers le REMUX-2160p.
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
-
----
-
-#### Remux + WEB 2160p
-
-Si vous préférez les Remuxes en 2160p (Remux-2160p)
-
-- _Poids : 40 à 100 Go pour un Remux-2160p selon la durée du média._
-
-{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+**Les Formats Personnalisés suivants sont facultatifs :**
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-french-multi-audio-fr.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+
+---
+
+### UHD Bluray + WEB (2160p)
+
+{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+
+!!! tip "Paramètres de base"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-bluray-webdl-uhd-vo.png)
+
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![UHD Bluray + WEB for MULTi.VF Profile](images/french-radarr-qp-bluray-webdl-uhd-vf.png)
+
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
+
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+
+**Les Formats Personnalisés suivants sont requis :**
+
+{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+
+**Les Formats Personnalisés suivants sont facultatifs :**
+
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
+
+---
+
+### UHD Remux (2160p)
+
+{! include-markdown "../../includes/french-guide/radarr-french-advanced-audio-information-fr.md" !}
+
+!!! tip "Paramètres de base"
+    Assurez-vous de fusionner les qualités Bluray et WEB en un seul groupe dans les qualités de votre Profil de Qualité. Cela est dû au fait que les releases potentielles avec un audio `Français` peuvent ne pas exister en WEB.
+
+    ??? success "Capture d'écran pour les profiles VOSTFR + MULTi.VO - [Cliquez pour afficher/masquer]"
+        ![UHD Remux for VOSTFR or MULTi.VO Profile](images/french-radarr-qp-remux-uhd-vo.png)
+
+    ??? success "Capture d'écran pour le profile MULTi.VF - [Cliquez pour afficher/masquer]"
+        ![UHD Remux for MULTi.VF Profile](images/french-radarr-qp-remux-uhd-vf.png)
+
+!!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
+
+{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+
+{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
+
+**Les Formats Personnalisés suivants sont requis :**
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-uhd-fr.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-Utilisez les paramètres suivants dans votre profil.
+**Les Formats Personnalisés suivants sont facultatifs :**
 
-![Remux + WEB 2160p](images/french-qp-remux-webdl-2160p.png)
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-!!! warning "Assurez-vous de ne pas cocher le BR-DISK."
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
-
-??? abstract "Logique et fonctionnement - [Cliquer pour afficher/masquer]"
-
-    - Lorsque le WEB-2160p deviendra disponible, le média sera télécharger en WEB-2160p. (services de streaming)
-    - Lorsque le REMUX-2160p sortira, il sera mis à niveau vers le REMUX-2160p.
-    - Le média sera mis à niveau en fonction des formats personnalisés ajoutés jusqu'à l'obtention d'un score de `10000`.
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
 ---
 
 ### Formats audio avancés et HDR
 
-TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (_en anglais uniquement_) :
+TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
 
 - [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="\_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
+## Autres Informations
+
+Une FAQ répondant à la plupart des questions que vous pourriez vous poser est fournie par TRaSH (*en anglais uniquement*) : [FAQ & Info](/Radarr/radarr-setup-quality-profiles/#faq-info){:target="\_blank" rel="noopener noreferrer"}
+
+---
+
 ## Remerciements
 
-- Un grand merci à toutes les personnes qui m'ont aidé à tester ces Profils et Formats (et qui continuent à le faire).
+- Un grand merci à toutes les personnes qui m'ont aidé à créer et tester ces Profils et Formats (et qui continuent à le faire).
 - Une mention spéciale à MySuperChef et PrL pour leur temps et leurs explications.
 - Une mention spéciale pour Piou et Wikoul qui sont potentiellement tous les deux maintenant dans des asiles en raison de la quantité de tests effectués.
 - [TRaSH](https://trash-guides.info/), pour m'avoir accordé un petit espace sur son guide, ses connaissances, et sa gentillesse.

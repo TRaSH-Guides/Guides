@@ -19,7 +19,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(VF2)\\b"
+        "value": "\\b(VF2|(VF(F|Q)[ .]VF(F|Q)))\\b"
       }
     }
   ]

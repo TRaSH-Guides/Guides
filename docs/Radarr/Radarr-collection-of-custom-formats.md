@@ -95,36 +95,36 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | French Audio Version          | French Source Groups                            |
-|----------------------------------------|-------------------------------|-------------------------------------------------|
-| [Bad Dual Groups](#bad-dual-groups)    | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [DV (Disk)](#dv-disk)                  | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [DV (WEBDL)](#dv-webdl)                | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [Dutch Groups](#dutch-groups)          | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [EVO (no WEBDL)](#evo-no-webdl)        | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [FreeLeech](#freeleech)                | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [HFR](#hfr)                            | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-| [HDR10+ Boost](#hdr10plus-boost)       | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
-| [Internal](#internal)                  | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
-| [Line/Mic Dubbed](#linemic-dubbed)     | [VFB](#vfb)                   |                                                 |
-| [MPEG2](#mpeg2)                        | [VOSTFR](#vostfr)             |                                                 |
-| [Multi](#multi)                        | [FanSUB](#fansub)             |                                                 |
-| [No-RlsGroup](#no-rlsgroup)            | [FastSUB](#fastsub)           |                                                 |
-| [Obfuscated](#obfuscated)              |                               |                                                 |
-| [Repack/Proper](#repackproper)         |                               |                                                 |
-| [Repack2](#repack2)                    |                               |                                                 |
-| [Repack3](#repack3)                    |                               |                                                 |
-| [Retags](#retags)                      |                               |                                                 |
-| [Scene](#scene)                        |                               |                                                 |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                               |                                                 |
-| [SDR](#sdr)                            |                               |                                                 |
-| [VC-1](#vc-1)                          |                               |                                                 |
-| [VP9](#vp9)                            |                               |                                                 |
-| [x264](#x264)                          |                               |                                                 |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                                 |
-| [x265](#x265)                          |                               |                                                 |
-| [x266](#x266)                          |                               |                                                 |
+| Miscellaneous                          | French Audio Version | French Source Groups                            |
+|----------------------------------------|----------------------|-------------------------------------------------|
+| [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VF2](#vf2)          | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [Dutch Groups](#dutch-groups)          | [VFQ](#vfq)          | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [EVO (no WEBDL)](#evo-no-webdl)        | [VOQ](#voq)          | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [FreeLeech](#freeleech)                | [VQ](#vq)            | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [HFR](#hfr)                            | [VFB](#vfb)          | [FR WEB Tier 02](#fr-web-tier-02)               |
+| [HDR10+ Boost](#hdr10plus-boost)       | [VOSTFR](#vostfr)    | [FR Scene Groups](#fr-scene-groups)             |
+| [Internal](#internal)                  | [FanSUB](#fansub)    | [FR LQ](#fr-lq)                                 |
+| [Line/Mic Dubbed](#linemic-dubbed)     | [FastSUB](#fastsub)  |                                                 |
+| [MPEG2](#mpeg2)                        |                      |                                                 |
+| [Multi](#multi)                        |                      |                                                 |
+| [No-RlsGroup](#no-rlsgroup)            |                      |                                                 |
+| [Obfuscated](#obfuscated)              |                      |                                                 |
+| [Repack/Proper](#repackproper)         |                      |                                                 |
+| [Repack2](#repack2)                    |                      |                                                 |
+| [Repack3](#repack3)                    |                      |                                                 |
+| [Retags](#retags)                      |                      |                                                 |
+| [Scene](#scene)                        |                      |                                                 |
+| [SDR (no WEBDL)](#sdr-no-webdl)        |                      |                                                 |
+| [SDR](#sdr)                            |                      |                                                 |
+| [VC-1](#vc-1)                          |                      |                                                 |
+| [VP9](#vp9)                            |                      |                                                 |
+| [x264](#x264)                          |                      |                                                 |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                      |                                                 |
+| [x265](#x265)                          |                      |                                                 |
+| [x266](#x266)                          |                      |                                                 |
 
 ---
 
@@ -2800,54 +2800,6 @@ We've made 3 guides related to this.
 ---
 
 ## French Audio Version
-
----
-
-### Multi-French
-
-??? question "Multi-French - [Click to show/hide]"
-
-    Recognize movies that include the original and the French audio. Works only after import as it needs the result from FFprobe to get which audio is present. Will rename the release to keep the recognition of 'Multi' by the [Multi-Audio](#multi-audio) custom format.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi-french.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Multi-Audio
-
-??? question "Multi-Audio - [Click to show/hide]"
-
-    A slightly modified [Multi](#multi) Custom Formats that recognize VF and VO inside the name.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/multi-audio.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### French Audio
-
-??? question "French Audio - [Click to show/hide]"
-
-    This will recognize every kind of French Audio.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-audio.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 

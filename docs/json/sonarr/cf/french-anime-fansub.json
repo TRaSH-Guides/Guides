@@ -1,7 +1,9 @@
 {
   "trash_id": "44b6c964dad997577d793fd004a39224",
   "trash_scores": {
-    "default": 1400
+    "default": 1450,
+    "french-anime-multi": 1450,
+    "french-anime-vostfr": 1450
   },
   "name": "FR Anime FanSub",
   "includeCustomFormatWhenRenaming": false,
