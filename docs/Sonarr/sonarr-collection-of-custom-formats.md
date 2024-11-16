@@ -62,7 +62,7 @@ We've made 3 guides related to this.
 | General Streaming Services | French Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [MyCANAL](#mycanal)       | [FOD](#fod)              | [NLZiet](#nlz)           |
-| [Apple TV+](#atvp)         | [RTBF](#rtbf)             | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Apple TV+](#atvp)         | [AUViO](#auvio)           | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Comedy Central](#cc)      | [SALTO](#salto)           | [TVer](#tver)            |                          |
 | [DC Universe](#dcu)        |                           | [TVING](#tving)          |                          |
 | [Disney+](#dsnp)           |                           | [U-NEXT](#u-next)        |                          |
@@ -1815,7 +1815,9 @@ We've made 3 guides related to this.
 
 ---
 
-#### AUViO/RTBF
+#### AUViO
+
+<sub>RTBF</sub>
 
 ??? question "AUViO/RTBF - [Click to show/hide]"
 
