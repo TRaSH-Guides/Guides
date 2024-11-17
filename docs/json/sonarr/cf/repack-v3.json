@@ -1,7 +1,10 @@
 {
   "trash_id": "44e7c4de10ae50265753082e5dc76047",
   "trash_scores": {
-    "default": 7
+    "default": 7,
+    "anime-sonarr": 3,
+    "french-anime-multi": 3,
+    "french-anime-vostfr": 3
   },
   "name": "Repack v3",
   "includeCustomFormatWhenRenaming": false,
