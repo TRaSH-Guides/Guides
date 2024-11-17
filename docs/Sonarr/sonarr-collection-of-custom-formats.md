@@ -3292,7 +3292,7 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-original.json' %]][[% endfilter %]]
     ```
 
-### Language Original + French
+### Language Original French
 
 <sub>Language Original + French</sub>
 
