@@ -3241,7 +3241,7 @@ We've made 3 guides related to this.
 
 ### FR LQ
 
-French Low-Quality Releases = FR LQ</sub>
+<sub>French Low-Quality Releases = FR LQ</sub>
 
 ??? question "FR LQ - [Click to show/hide]"
 
