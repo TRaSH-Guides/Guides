@@ -3178,3 +3178,61 @@ We've made 3 guides related to this.
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## Language Profile
+
+---
+
+### Language Not French
+
+<sub>Language Not French</sub>
+
+??? question "Language Not French - [Click to show/hide]"
+
+    Language Specification is Not French
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language Not Original
+
+<sub>Language Not Original</sub>
+
+??? question "Language Not Original - [Click to show/hide]"
+
+    Language Specification is Not Original
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-original.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language Original French
+
+<sub>Language Original + French</sub>
+
+??? question "Language Original + French - [Click to show/hide]"
+
+    Language Specification Original + French
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
