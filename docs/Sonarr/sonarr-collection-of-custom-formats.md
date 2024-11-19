@@ -3260,6 +3260,10 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
     ```
 
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ## Language Profile
 
 ---
@@ -3278,6 +3282,10 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-french.json' %]][[% endfilter %]]
     ```
 
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### Language Not Original
 
 <sub>Language Not Original</sub>
@@ -3291,6 +3299,10 @@ We've made 3 guides related to this.
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-original.json' %]][[% endfilter %]]
     ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
 
 ### Language Original French
 
