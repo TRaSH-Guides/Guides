@@ -25,3 +25,7 @@
     !!! tip "Original French Bluray/Web Tiers"
 
         Ils sont optionnels et peuvent être inclus ou non. Cela est dû au fait que certains d'entre eux ont tendance à publier des anime.
+
+    !!! tip "Score Profile VOSTFR"
+
+        Si vous voulez que le profil `VOSTFR` prenne aussi les release MULTI dans le cas ou aucune release VOSTFR n'est disponible, il faut donc mettre la valeur de [{{ sonarr['cf']['language-original-french']['name'] }}](/sonarr/sonarr-collection-of-custom-formats/#language-original-french) à `0` au lieu de `{{ sonarr['cf']['language-original-french']['trash_scores']['french-anime-vostfr'] }}`
