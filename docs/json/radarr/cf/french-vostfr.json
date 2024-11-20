@@ -3,6 +3,8 @@
   "trash_scores": {
     "default": -10000,
     "anime-radarr": -10000,
+    "french-anime-multi": 0,
+    "french-anime-vostfr": 101,
     "french-multi-vf": 0,
     "french-multi-vo": 0,
     "french-vostfr": 1000
