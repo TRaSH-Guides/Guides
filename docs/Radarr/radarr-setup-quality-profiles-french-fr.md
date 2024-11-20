@@ -247,6 +247,18 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 ---
 
+#### Anime
+
+Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).
+
+{! include-markdown "../../includes/french-guide/radarr-french-anime-info-fr.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-fr.md" !}
+
+---
+
 ### Formats audio avancés et HDR
 
 TRaSH fournit d'excellents guides et explications à leur sujet dans les liens suivants (*en anglais uniquement*) :
