@@ -259,6 +259,18 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 ---
 
+#### Anime
+
+If you are looking to grab Anime with either French subs or MULTi audio (original + French).
+
+{! include-markdown "../../includes/french-guide/radarr-french-anime-info-en.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-en.md" !}
+
+---
+
 ### Advanced Audio and HDR Formats
 
 TRaSH provides great guides and explanations about them at the following links:
