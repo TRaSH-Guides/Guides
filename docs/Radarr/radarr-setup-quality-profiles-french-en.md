@@ -255,6 +255,8 @@ If you are looking to grab Anime with either French subs or MULTi audio (origina
 
 {! include-markdown "../../includes/french-guide/radarr-french-anime-info-en.md" !}
 
+{! include-markdown "../../includes/cf/radarr-anime-misc-required.md" !}
+
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-en.md" !}

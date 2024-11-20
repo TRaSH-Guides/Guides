@@ -1,7 +1,10 @@
 {
   "trash_id": "5caaaa1c08c1742aa4342d8c4cc463f2",
   "trash_scores": {
-    "default": 7
+    "default": 7,
+    "anime-radarr": 3,
+    "french-anime-multi": 3,
+    "french-anime-vostfr": 3
   },
   "trash_regex": "https://regex101.com/r/7YIkWD/1",
   "name": "Repack3",
