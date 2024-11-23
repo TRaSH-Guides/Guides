@@ -259,6 +259,15 @@
       }
     },
     {
+      "name": "Moxie",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Moxie\\]|-Moxie\\b"
+      }
+    },
+    {
       "name": "MTBB",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
