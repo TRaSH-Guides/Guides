@@ -48,15 +48,6 @@
       }
     },
     {
-      "name": "FUJiSAN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FUJiSAN)$"
-      }
-    },
-    {
       "name": "HANAMi",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
