@@ -7,7 +7,7 @@
 
 ??? success "example - [Click to show/hide]"
 
-    ![!Quality Profile Settings](/SQP/images/1-qp-settings.png)
+    ![!Quality Profile Settings](/SQP/images/1-web-qp-settings.png)
 
     !!! warning
 
