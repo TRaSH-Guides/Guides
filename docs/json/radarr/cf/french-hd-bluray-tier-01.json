@@ -91,15 +91,6 @@
       "fields": {
         "value": "^(Psaro)$"
       }
-    },
-    {
-      "name": "T3KASHi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(T3KASHi)$"
-      }
     }
   ]
 }
