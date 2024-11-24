@@ -39,15 +39,6 @@
       }
     },
     {
-      "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HANAMi)$"
-      }
-    },
-    {
       "name": "HDForever",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
