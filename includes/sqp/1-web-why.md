@@ -7,6 +7,7 @@
     - You want to have little to no transcoding for low powered devices or remote streaming.
     - You want to grab releases optimized for streaming.
     - Smaller file sizes and bitrates.
+    - Once a WEB release is grabbed, you don't need it to 'upgrade' to a BHDStudio release (see below).
 
     ---
 
@@ -17,4 +18,4 @@
     - Small sizes
     - Good quality
 
-    Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+    If you don't have access to the top tier indexers, you won't have access to all BHDStudio releases. WEB releases, however, have much better general availability.
