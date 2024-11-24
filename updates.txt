@@ -1,3 +1,6 @@
+# 2024-11-24 01:39
+- [feat(starr-anime): Add Moxie to anime bd tier 2](https://github.com/TRaSH-Guides/Guides/pull/2136)
+
 # 2024-11-17 01:39
 - [feat(guide): Move the third-party tools section out of the qBittorrent section and put it in the downloaders root section](https://github.com/TRaSH-Guides/Guides/pull/2131)
 - [fix(starr): Update of the French Guide](https://github.com/TRaSH-Guides/Guides/pull/2130)
