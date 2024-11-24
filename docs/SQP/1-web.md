@@ -31,6 +31,6 @@ search:
 
 {! include-markdown "../../includes/sqp/1-web-cf-scoring.md" !}
 
-{! include-markdown "../../includes/sqp/1-quality-size.md" !}
+{! include-markdown "../../includes/sqp/1-web-quality-size.md" !}
 
 --8<-- "includes/support.md"
