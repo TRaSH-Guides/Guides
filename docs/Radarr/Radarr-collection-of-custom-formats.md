@@ -155,9 +155,12 @@ We've made 3 guides related to this.
 | [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
 | [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
 | [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
-| [German Scene](#german-scene)                   |                                                       | [FR Scene Groups](#fr-scene-groups)             | [VOSTFR](#vostfr)    |
-|                                                 |                                                       | [FR LQ](#fr-lq)                                 | [FanSUB](#fansub)    |
-|                                                 |                                                       |                                                 | [FastSUB](#fastsub)  |
+| [German Scene](#german-scene)                   |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)           | [VOSTFR](#vostfr)    |
+|                                                 |                                                       | [FR Anime Tier 02](#fr-anime-tier-02)           | [FanSUB](#fansub)    |
+|                                                 |                                                       | [FR Anime Tier 03](#fr-anime-tier-03)           | [FastSUB](#fastsub)  |
+|                                                 |                                                       | [FR Anime FanSub](#fr-anime-fansub)             |                      |
+|                                                 |                                                       | [FR Scene Groups](#fr-scene-groups)             |                      |
+|                                                 |                                                       | [FR LQ](#fr-lq)                                 |                      |
 
 ---
 
@@ -3253,6 +3256,77 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 01
+
+??? question "FR Anime Tier 01 - [Click to show/hide]"
+
+    - WIP
+    - Groups that are known to be active and only doing Anime
+    - Groups whose releases are at least comparable to SeaDex recommended.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 02
+
+??? question "FR Anime Tier 02 - [Click to show/hide]"
+
+    - WIP
+    - Groups that are known to be active and only doing Anime, but with few releases per year.
+    - Groups that are known to be active and doing Anime AND other types of releases.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 03
+
+??? question "FR Anime Tier 03 - [Click to show/hide]"
+
+    - WIP
+    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi) or still top of its category.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime FanSub
+
+??? question "FR Anime FanSub - [Click to show/hide]"
+
+    Known good groups that only do FanSub in good quality.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
