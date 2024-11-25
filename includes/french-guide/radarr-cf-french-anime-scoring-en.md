@@ -29,3 +29,7 @@
     !!! tip "VOSTFR Profile Score"
 
         If you want the VOSTFR profile to also accept MULTI releases when no VOSTFR release is available, you need to set the value of [{{ radarr['cf']['language-original-french']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#language-original-french) to `0` instead of `{{ radarr['cf']['language-original-french']['trash_scores']['french-anime-vostfr'] }}`
+
+    !!! tip "Prefer the FanSub version to others"
+
+        For this example, if you prefer FanSub to any FR Anime Tiers, you should score the [{{ sonarr['cf']['french-anime-fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub) to `1700` instead of `{{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
