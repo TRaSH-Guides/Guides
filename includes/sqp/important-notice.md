@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Important Notice
 
 !!! warning "Important Notice"
@@ -9,3 +10,4 @@
     If you're unsure or have questions, do not hesitate to ask for help on Discord
 
     <center>[ Click For Support ](https://trash-guides.info/discord){ .md-button .md-button--primary }</center>
+<!-- markdownlint-enable MD041-->

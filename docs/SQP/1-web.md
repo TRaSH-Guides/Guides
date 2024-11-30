@@ -13,7 +13,11 @@ search:
 
 {! include-markdown "../../includes/sqp/1-web-workflow.md" !}
 
+---
+
 {! include-markdown "../../includes/sqp/important-notice.md" !}
+
+---
 
 {! include-markdown "../../includes/sqp/instructions.md" !}
 
