@@ -1,7 +1,7 @@
 {
-  "trash_id": "0896c29d74de619df168d23b98104b22",
-  "name": "SQP-1 (1080p)",
-  "trash_score_set": "sqp-1-1080p",
+  "trash_id": "90a3370d2d30cbaf08d9c23b856a12c8",
+  "name": "SQP-1 WEB (1080p)",
+  "trash_score_set": "sqp-1-web-1080p",
   "upgradeAllowed": true,
   "cutoff": "Bluray|WEB-1080p",
   "minFormatScore": 1000,
@@ -37,13 +37,16 @@
     { "name": "Remux-2160p", "allowed": false },
     { "name": "BR-DISK", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
-    { "name": "Bluray-720p", "allowed": true },
+    { "name": "Bluray-720p", "allowed": false },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
     {
       "name": "Bluray|WEB-1080p",
       "allowed": true,
       "items": [
-        "WEBDL-720p",
-        "WEBRip-720p",
         "WEBDL-1080p",
         "WEBRip-1080p",
         "Bluray-1080p"
@@ -65,6 +68,7 @@
     "DTS": "1c1a4c5e823891c75bc50380a6866f73",
     "AAC": "240770601cc226190c367ef59aba7463",
     "DD": "c2998bd0d90ed5621d8df281e839436e",
+    "2.0 Stereo": "89dac1be53d5268a7e10a19d3c896826",
     "BHDStudio": "5153ec7413d9dae44e24275589b5e944",
     "hallowed": "7a0d1ad358fee9f5b074af3ef3f9d9ef",
     "WEB Tier 01": "c20f169ef63c5f40c2def54abaf4438e",

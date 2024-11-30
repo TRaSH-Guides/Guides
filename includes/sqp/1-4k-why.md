@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Why choose this quality profile
 
 ??? question "Why choose this quality profile? - [Click to show/hide]"
@@ -11,7 +12,7 @@
 
     ---
 
-    BHDStudio does HQ 1080p/2160p Encodes with the following features
+    **BHDStudio releases HQ 1080p/2160p Encodes with the following features:**
 
     - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
     - [1080p] AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
@@ -20,7 +21,20 @@
     - Small sizes
     - Good quality
 
-    Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+    If you don't have access to the top tier indexers, you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+
+    **hallowed release HQ 1080p and 2160p encodes with the following features:**
+
+    - Highly streamable releases, with some more modern optimizations:
+        - Dolby Digital Plus multichannel, or AAC mono/stereo audio (converted from lossless audio track)
+        - Included English SRT subtitles, as well as a selection of PGS subtitles in English and other languages
+        - Dual audio for foreign films
+    - [2160p] Dolby Vision and/or HDR10+ with HDR10 fallback, or HDR10 if there is no DV HDR10 or HDR10+ release.
+    - Baked FEL where available
+    - Smaller sizes
+    - Good quality
+
+    hallowed's releases have very good general availability.
 
 ### Tested Devices and Results
 
@@ -36,3 +50,4 @@ You will need to provide the following info.
 - Info what your TV is reporting DV or HDR10.
 - Tautulli screenshot when playing a `WEBDL 2160p` with `DV HDR10`.
 - Info what your TV is reporting DV or HDR10.
+<!-- markdownlint-enable MD041-->
