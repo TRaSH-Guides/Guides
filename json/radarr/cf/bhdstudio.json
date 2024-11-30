@@ -1,7 +1,8 @@
 {
   "trash_id": "5153ec7413d9dae44e24275589b5e944",
   "trash_scores": {
-    "default": 1000
+    "default": 1000,
+    "sqp-1-web-1080p": 550
   },
   "name": "BHDStudio",
   "includeCustomFormatWhenRenaming": false,

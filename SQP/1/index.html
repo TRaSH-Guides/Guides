@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://trash-guides.info/SQP/1/">
       
       
-        <link rel="prev" href="../1-4k/">
+        <link rel="prev" href="../1-web/">
       
       
         <link rel="next" href="../2/">
@@ -3495,26 +3495,42 @@
 <p>It uses Custom Formats and specific needed settings that probably will never make it to the guide, being the guide is used by the masses and what's used here is made for specific needs.</p>
 <p>This also means some Custom Formats needs manual updating or you can use one of the 3rd party automation tools.</p>
 </div>
+<!-- markdownlint-disable MD041-->
 <h2 id="why-choose-this-quality-profile">Why choose this quality profile<a class="headerlink" href="#why-choose-this-quality-profile" title="Permanent link"></a></h2>
 <details class="question">
 <summary>Why choose this quality profile? - [Click to show/hide]</summary>
 <ul>
-<li>You want maximum compatibility across all devices and still a HQ release.</li>
-<li>You run 2 instances of Radarr and want both versions or just the 1080p ones.</li>
+<li>You want good compatibility across a range of playback devices without compromising on release quality.</li>
+<li>You run a second 'Streaming Optimized' instance of Radarr and want both versions, or just want streaming optimized 1080p overall.</li>
 <li>You want to have little to no transcoding for low powered devices or remote streaming.</li>
-<li>You want to grab streaming optimized releases.</li>
-<li>Small sizes.</li>
+<li>You want to grab releases optimized for streaming.</li>
+<li>Smaller file sizes and bitrates.</li>
 </ul>
 <hr />
-<p>BHDStudio does HQ 1080p Encodes with the following features:</p>
+<p><strong>BHDStudio release HQ 1080p Encodes with the following features:</strong></p>
 <ul>
 <li>Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)</li>
 <li>AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)</li>
 <li>Small sizes</li>
 <li>Good quality</li>
 </ul>
-<p>Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.</p>
+<p>If you don't have access to the top tier indexers, you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.</p>
+<p><strong>hallowed release HQ 1080p encodes with the following features:</strong></p>
+<ul>
+<li>Highly streamable releases with some more modern optimizations:<ul>
+<li>Dolby Digital Plus multichannel or AAC mono/stereo audio (converted from lossless audio track)</li>
+<li>Included English SRT subtitles, as well as a selection of PGS subtitles in English and other languages</li>
+<li>Dual audio for foreign films</li>
+</ul>
+</li>
+<li>Smaller sizes</li>
+<li>Good quality</li>
+</ul>
+<p>hallowed's releases have very good general availability.</p>
 </details>
+<!-- markdownlint-enable MD041-->
+
+<!-- markdownlint-disable MD041-->
 <h2 id="workflow-logic">Workflow Logic<a class="headerlink" href="#workflow-logic" title="Permanent link"></a></h2>
 <details class="abstract">
 <summary>Workflow Logic - [Click to show/hide]</summary>
@@ -3522,7 +3538,8 @@
 <ul>
 <li>When a 1080p WEBDL is released it will be downloaded. (streaming services)</li>
 <li>When a 1080p BHDStudio is released it will download the BHDStudio release.</li>
-<li>If no 1080p BHDStudio or 1080p WEBDL can be found (not existing or limited sources) it will download a 1080p Bluray encode (less or not streaming optimized).</li>
+<li>If no 1080p BHDStudio or 1080p WEBDL can be found (not existing or limited sources) a 1080p hallowed encode will be downloaded.</li>
+<li>If no 1080p hallowed encode can be found, 1080p a Bluray encode (less or not streaming optimized) will be downloaded.</li>
 </ul>
 <hr />
 <p><em>Possible Variables</em></p>
@@ -3530,6 +3547,9 @@
 <li>Prefer 1080p WEBDL with IMAX-E.</li>
 </ul>
 </details>
+<!-- markdownlint-enable MD041-->
+
+<!-- markdownlint-disable MD041-->
 <h2 id="important-notice">Important Notice<a class="headerlink" href="#important-notice" title="Permanent link"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Important Notice</p>
@@ -3538,6 +3558,9 @@
 <p>If you're unsure or have questions, do not hesitate to ask for help on Discord</p>
 <p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center></p>
 </div>
+<!-- markdownlint-enable MD041-->
+
+<!-- markdownlint-disable MD041-->
 <h2 id="instructions">Instructions<a class="headerlink" href="#instructions" title="Permanent link"></a></h2>
 <div class="admonition info">
 <ol>
@@ -3547,14 +3570,20 @@
 <li>Adding CF not in this guide could result in undesired results.</li>
 </ol>
 </div>
+<!-- markdownlint-enable MD041-->
+
 <h3 id="create-a-new-quality-profile">Create a new Quality Profile<a class="headerlink" href="#create-a-new-quality-profile" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Profiles</code></p>
 <p>Create a new profile and name it: <code>SQP-1 (1080p)</code></p>
 <p><a class="glightbox" href="/SQP/images/1-newqp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Create a new Quality Profile" src="/SQP/images/1-newqp.png" /></a></p>
+<!-- markdownlint-disable MD041-->
 <h4 id="merge-qualities">Merge Qualities<a class="headerlink" href="#merge-qualities" title="Permanent link"></a></h4>
 <p>First we're going to merge a couple of qualities.</p>
 <p>If you don't know how to merge qualities take a look at the following Guide:</p>
 <p>=&gt; <a href="/Radarr/Tips/Merge-quality/" rel="noopener noreferrer" target="_blank">How to Merge Quality</a></p>
+<!-- markdownlint-enable MD041-->
+
+<!-- markdownlint-disable MD041-->
 <h5 id="merge-the-following-qualities-together">Merge the following Qualities together<a class="headerlink" href="#merge-the-following-qualities-together" title="Permanent link"></a></h5>
 <ul>
 <li>Bluray-1080p</li>
@@ -3565,6 +3594,8 @@
 </ul>
 <p>and name it: <code>Bluray|WEB-1080p</code></p>
 <p><a class="glightbox" href="/SQP/images/1-merge-qualities.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Merge the following Qualities together" src="/SQP/images/1-merge-qualities.png" /></a></p>
+<!-- markdownlint-enable MD041-->
+
 <h5 id="select-the-following-qualities">Select the following qualities<a class="headerlink" href="#select-the-following-qualities" title="Permanent link"></a></h5>
 <ul>
 <li>The merged quality profile: <code>Bluray|WEB-1080p</code></li>
@@ -3713,6 +3744,11 @@
 <td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json">BHDStudio</a></td>
 <td style="text-align: center;">1000</td>
 <td>5153ec7413d9dae44e24275589b5e944</td>
+</tr>
+<tr>
+<td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/hallowed.json">hallowed</a></td>
+<td style="text-align: center;">600</td>
+<td>7a0d1ad358fee9f5b074af3ef3f9d9ef</td>
 </tr>
 <tr>
 <td><a href="/Radarr/Radarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
