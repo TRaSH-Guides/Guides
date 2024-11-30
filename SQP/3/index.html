@@ -3619,6 +3619,7 @@
 </li>
 <li>You must add <strong>ALL</strong> the HDR formats - don't leave any of them out!</li>
 </ul>
+<!-- markdownlint-disable MD041-->
 <details class="info">
 <summary>Why am I getting purple or green colors? - [Click to show/hide]</summary>
 <p>Why am I getting purple or green colors?</p>
@@ -3638,9 +3639,11 @@
 <ol>
 <li>Ensure your TV or hardware media player device is Dolby Vision compatible and up-to-date with the latest firmware.</li>
 <li>Verify that your TV or display device is set up correctly and has the necessary Dolby Vision settings enabled.</li>
-<li>Check the HDMI cables and ensure they are capable of transmitting Dolby Vision signals.</li>
+<li>Check the HDMI cables and ensure they can transmit Dolby Vision signals.</li>
 </ol>
 </details>
+<!-- markdownlint-enable MD041-->
+<!-- markdownlint-disable MD041-->
 <details class="info">
 <summary>Dolby Vision Profiles - [Click to show/hide]</summary>
 <p>Dolby Vision Profiles</p>
@@ -3656,7 +3659,7 @@
 <ul>
 <li><sup>(<em>1</em>) <em>PLEX for AppleTV and Plex with Infuse will only play profile 5 correctly if CMv2.9 is used</em></sup></li>
 <li><sup>(<em>2</em>) <em>Neither Infuse nor PLEX for AppleTV will deliver real Dolby Vision with Profile 7.</em></sup></li>
-<li><sup>(<em>3</em>) <em>On PLEX for AppleTV it won't deliver real Dolby Vision with Profile 8, and will only play the HDR10 fallback if CM2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“although your TV will incorrectly say that it is playing DV”</em></strong>.<br><em>With infuse it will convert it on the fly to Profile 5, and deliver real Dolby Vision if CMv2.9 is used, otherwise you will end up with a black screen</em><br><strong><em>“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy), Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”</em></strong></sup></li>
+<li><sup>(<em>3</em>) <em>On PLEX for AppleTV, it won't deliver real Dolby Vision with Profile 8 and will only play the HDR10 fallback if CM2.9 is used. Otherwise, you will end up with a black screen</em><br><strong><em>“although your TV will incorrectly say that it is playing DV”</em></strong>.<br><em>With infuse, it will convert it on the fly to Profile 5, and deliver real Dolby Vision if CMv2.9 is used. Otherwise, you will end up with a black screen</em><br><strong><em>“Make sure you set the Extended Dolby Vision settings to Limited (prefer accuracy), Convert P8 to P5 (when possible), and play other P8 as HDR (output will switch to either DoVi or HDR depending on the video)”</em></strong></sup></li>
 </ul>
 </details>
 <details class="info">
@@ -3664,9 +3667,10 @@
 <div class="admonition bug">
 <p class="admonition-title">It is too technical to explain in detail, so I'll keep it short with tested facts: <br>PLEX for AppleTV and Plex with Infuse only support CMv2.9.</p>
 </div>
-<p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve that allows for better mapping and more controls during the Dolby Vision trim pass process.</p>
+<p>There are two versions of Dolby Vision, namely CMv2.9 and CMv4.0. CMv4.0 uses an improved algorithm and a superior tone curve, allowing for better mapping and more controls during the Dolby Vision trim pass process.</p>
 <p>More info about the different Dolby Vision Versions: <a href="https://professionalsupport.dolby.com/s/article/When-should-I-use-CM-v2-9-or-CM-v4-0-and-can-I-convert-between-them?language=en_US">Dolby Vision Versions - CMv2.9 vs. CMv4.0</a></p>
 </details>
+<!-- markdownlint-enable MD041-->
 <details class="question">
 <summary>Which HDR Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-hdr-formats.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!HDR Formats Flowchart" src="/Radarr/images/flowchart-hdr-formats.png" /></a></p>
@@ -4097,9 +4101,11 @@
 <ul>
 <li>
 <p>You have a hardware media player device and an audio setup that supports <strong>ALL</strong> HD Audio (TrueHD, DTS-X, DTS-HD, etc).</p>
+<!-- markdownlint-disable MD041-->
 <div class="admonition bug">
-<p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse it's still limited!<br>please check <code>I've a AppleTV</code></p>
+<p class="admonition-title">AppleTV doesn't passthrough HD-audio, If you use infuse, it's still limited!<br> Please check <code>I have an AppleTV</code></p>
 </div>
+<!-- markdownlint-enable MD041-->
 </li>
 <li>
 <p>You've chosen a profile that includes Audio Formats. You should use all the Audio formats with Remuxes/UHD Encodes.</p>
@@ -4107,13 +4113,14 @@
 <li>You should add <strong>ALL</strong> the Audio formats - don't leave any of them out!</li>
 <li>Audio transcoding has a low impact on your server. If your server can't handle audio transcoding, consider choosing another quality profile.</li>
 </ul>
+<!-- markdownlint-disable MD041-->
 <details class="info">
-<summary>I've a AppleTV - [Click to show/hide]</summary>
+<summary>I have an AppleTV - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/plex-audio-atv.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/plex-audio-atv.png" /></a></p>
 <ul>
-<li>Passthrough: The preferred method if you have an audio setup (AVR/Soundbar). This mode will send the audio signals without any alteration or processing.</li>
-<li>Direct Play: The client supports the container, video stream, and audio stream natively. The Plex server simply sends the media file as-is to the client. This uses very little CPU power.</li>
-<li>Transcode: The client does not support the video stream and/or the audio stream. The Plex server re-encodes the video, audio, or both into a compatible format. Transcoding video uses a lot of CPU power, but transcoding audio uses little to moderate CPU power.</li>
+<li>Passthrough: The preferred method if you have an audio setup (AVR/Soundbar). This mode sends the audio signals without any alteration or processing.</li>
+<li>Direct Play: The client natively supports the container, video, and audio streams. The Plex server sends the media file as-is to the client, using very little CPU power.</li>
+<li>Transcode: The client does not support the video and/or audio streams. The Plex server re-encodes the video, audio, or both into a compatible format. Transcoding video uses much CPU power, but transcoding audio uses little to moderate CPU power.</li>
 <li>Decodes: Decompresses the audio before sending it to your AVR/Soundbar.</li>
 </ul>
 <p><em>partial used source: <a href="https://support.firecore.com/hc/en-us/articles/217735707-Audio-Options-tvOS#h_01HE1Z5XNJZK5YTF1SVTPS0MTR" rel="noopener noreferrer" target="_blank">Infuse FAQ</a></em></p>
@@ -4128,13 +4135,14 @@
 </details>
 <details class="info">
 <summary>Should I block certain audio formats because something in my setup doesn't support it? - [Click to show/hide]</summary>
-<p>If you have chosen a profile that includes Audio Formats, it's somewhat pointless to lower the scores or block certain audio formats since 95% of the Remuxes and UHD Encodes provide HD audio formats such as TrueHD Atmos, TrueHD, and DTS-X.</p>
-<p>So you have 2 options.</p>
+<p>Suppose you have chosen a profile that includes Audio Formats. In that case, lowering the scores or blocking certain audio formats is somewhat pointless since 95% of the Remuxes and UHD Encodes provide HD audio formats such as TrueHD Atmos, TrueHD, and DTS-X.</p>
+<p>So you have two options.</p>
 <ol>
-<li>Choose another quality profile that doesn't include audio formats such as <code>HD Bluray + WEB</code> or <code>2160p WEB-DL</code>.</li>
+<li>Choose another quality profile that doesn't include audio formats, such as <code>HD Bluray + WEB</code> or <code>2160p WEB-DL</code>.</li>
 <li>Accept the limitations of your audio setup (AVR/Soundbar) and/or your hardware media player device.</li>
 </ol>
 </details>
+<!-- markdownlint-enable MD041-->
 <details class="question">
 <summary>Which Audio Format should I choose? - [Click to show/hide]</summary>
 <p><a class="glightbox" href="/Radarr/images/flowchart-audio.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Audio Formats Flowchart" src="/Radarr/images/flowchart-audio.png" /></a></p>
