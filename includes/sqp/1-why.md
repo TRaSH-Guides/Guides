@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ## Why choose this quality profile
 
 ??? question "Why choose this quality profile? - [Click to show/hide]"
@@ -10,11 +11,23 @@
 
     ---
 
-    BHDStudio does HQ 1080p Encodes with the following features:
+    **BHDStudio release HQ 1080p Encodes with the following features:**
 
     - Streaming optimized (Optimized for PLEX, emby, Jellyfin, and other streaming platforms)
     - AC3 Audio (Downmixed Lossless audio track to Dolby Digital 5.1 for optimal compatibility)
     - Small sizes
     - Good quality
 
-    Biggest drawback: If you don't have access to the top tier indexers you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+    If you don't have access to the top tier indexers, you won't have access to all BHDStudio releases, and you will end up with less or not streaming optimized releases.
+
+    **hallowed release HQ 1080p encodes with the following features:**
+
+    - Highly streamable releases with some more modern optimizations:
+        - Dolby Digital Plus multichannel or AAC mono/stereo audio (converted from lossless audio track)
+        - Included English SRT subtitles, as well as a selection of PGS subtitles in English and other languages
+        - Dual audio for foreign films
+    - Smaller sizes
+    - Good quality
+
+    hallowed's releases have very good general availability.
+<!-- markdownlint-enable MD041-->
