@@ -142,6 +142,15 @@
       }
     },
     {
+      "name": "Cunnysseur",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Cunnysseur)\\b"
+      }
+    },
+    {
       "name": "D-Z0N3",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
