@@ -9,10 +9,7 @@
       "type": "object",
       "properties": {
         "default": {
-          "type": "integer",
-          "not": {
-            "const": 0
-          }
+          "type": "integer"
         }
       },
       "patternProperties": {
