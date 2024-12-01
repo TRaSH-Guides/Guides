@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 1250,
     "sqp-1-1080p": 0,
+    "sqp-1-web-1080p": 0,
     "sqp-1-2160p": 0
   },
   "trash_regex": "https://regex101.com/r/U1asQG/1",
