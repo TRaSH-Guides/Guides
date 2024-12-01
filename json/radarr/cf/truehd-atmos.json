@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 5000,
     "sqp-1-1080p": -10000,
+    "sqp-1-web-1080p": -10000,
     "sqp-1-2160p": -10000
   },
   "name": "TrueHD ATMOS",

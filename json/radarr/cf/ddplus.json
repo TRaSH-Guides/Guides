@@ -3,6 +3,7 @@
   "trash_scores": {
     "default": 1750,
     "sqp-1-1080p": 125,
+    "sqp-1-web-1080p": 125,
     "sqp-1-2160p": 125
   },
   "name": "DD+",
