@@ -4971,6 +4971,7 @@ Also they often even rename the release name into Portuguese.</li>
 <p>Note : Les Formats Personnalisés <code>Advanced Audio</code> ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.</p>
 <hr />
 <h4 id="anime">Anime<a class="headerlink" href="#anime" title="Permanent link"></a></h4>
+<p>Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).</p>
 <div class="admonition info">
 <p class="admonition-title">Important</p>
 <p>Dans un premier temps, vous devez suivre les sections suivantes du Guide Anime original (en anglais uniquemment) :</p>
@@ -4991,7 +4992,7 @@ Also they often even rename the release name into Portuguese.</li>
 <p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> Attention à ne pas ajouter le Format Personnalisé <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a> avec un score de <code>-10000</code> comme indiqué dans le guide original. Sinon, vous compromettrez vos chances d'obtenir des versions "françaises".</p>
 <div class="admonition info">
 <p class="admonition-title">VOSTFR uniquement pour les anime</p>
-<p>Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de <code>{{ no such element: dict object['french-anime'] }}</code> pour le Format Personnalisés <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a>.</p>
+<p>Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de <code>101</code> pour le Format Personnalisés <a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a>.</p>
 <p>(Optionnel) Vous pouvez également essayer de configurer <a href="/Bazarr/Setup-Guide" rel="noopener noreferrer" target="_blank">Bazarr</a> (<em>en anglais</em>) pour obtenir les sous-titres français de vos animes. Cette option est toute fois moins recommandée, car on trouve moins de sous-titres pour les animes en ligne que pour les séries habituelles. Cependant, cela peut être une alternative intéressante.</p>
 </div>
 </div>
@@ -5187,55 +5188,89 @@ Also they often even rename the release name into Portuguese.</li>
 <thead>
 <tr>
 <th>Formats Personnalisés</th>
-<th style="text-align: center;">Score</th>
 <th>Trash ID</th>
+<th style="text-align: center;">Score profile VOSTFR</th>
+<th style="text-align: center;">Score profile MULTI.VO</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a></td>
+<td>10e77b96ae4770a7de645a91a53ce29a</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">500</td>
+</tr>
+<tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#language-not-original">Language: Not Original</a></td>
+<td>ae575f95ab639ba5d15f663bf019e3e8</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">-10000</td>
+</tr>
+<tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#language-not-french">Language: Not French</a></td>
+<td>322fca6f8f3694acc1401ddb530fd33d</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a></td>
+<td>07a32f77690263bb9fda1842db7e273f</td>
+<td style="text-align: center;">101</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-tier-01">FR Anime Tier 01</a></td>
-<td style="text-align: center;">1650</td>
 <td>db13a377f7afb29975ea39470434d2ef</td>
+<td style="text-align: center;">1650</td>
+<td style="text-align: center;">1650</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-tier-02">FR Anime Tier 02</a></td>
-<td style="text-align: center;">1600</td>
 <td>4e6134a384dbc0ef166234cc0e45d26d</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">1600</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-tier-03">FR Anime Tier 03</a></td>
-<td style="text-align: center;">1550</td>
 <td>db34d4357937fbfe89b63ba095f22155</td>
+<td style="text-align: center;">1550</td>
+<td style="text-align: center;">1550</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a></td>
-<td style="text-align: center;">1500</td>
 <td>2f3422339d185eb227a324644a2fbfca</td>
+<td style="text-align: center;">1500</td>
+<td style="text-align: center;">1500</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub">FR Anime FanSub</a></td>
-<td style="text-align: center;">1450 ou <code>1000</code></td>
 <td>44b6c964dad997577d793fd004a39224</td>
+<td style="text-align: center;">1450</td>
+<td style="text-align: center;">1450</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-hd-bluray-tier-01">FR HD Bluray Tier 01</a></td>
-<td style="text-align: center;">(optional) {{ no such element: dict object['french-anime'] }}</td>
 <td>d844321db5e126d2e7e46152f0706532</td>
+<td style="text-align: center;">1250</td>
+<td style="text-align: center;">1250</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-01">FR WEB Tier 01</a></td>
-<td style="text-align: center;">(optional) {{ no such element: dict object['french-anime'] }}</td>
 <td>ddb8eaa9c85a549c50034d280539d54d</td>
+<td style="text-align: center;">1200</td>
+<td style="text-align: center;">1200</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-02">FR WEB Tier 02</a></td>
-<td style="text-align: center;">(optional) {{ no such element: dict object['french-anime'] }}</td>
 <td>a4c51febd4d8b2a0db10a3c974f21d92</td>
+<td style="text-align: center;">1150</td>
+<td style="text-align: center;">1150</td>
 </tr>
 <tr>
 <td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-03">FR WEB Tier 03</a></td>
-<td style="text-align: center;">(optional) {{ no such element: dict object['french-anime'] }}</td>
 <td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
+<td style="text-align: center;">1100</td>
+<td style="text-align: center;">1100</td>
 </tr>
 </tbody>
 </table>
@@ -5247,6 +5282,14 @@ Also they often even rename the release name into Portuguese.</li>
 <div class="admonition tip">
 <p class="admonition-title">Original French Bluray/Web Tiers</p>
 <p>Ils sont optionnels et peuvent être inclus ou non. Cela est dû au fait que certains d'entre eux ont tendance à publier des anime.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Score Profile VOSTFR</p>
+<p>Si vous voulez que le profil <code>VOSTFR</code> prenne aussi les release MULTI dans le cas ou aucune release VOSTFR n'est disponible, il faut donc mettre la valeur de <a href="/sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a> à <code>0</code> au lieu de <code>-10000</code></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Préférer la version FanSub aux autres</p>
+<p>Si vous préférez les release FanSub à n'importe quelle version des Tiers FR Anime, il faut donc mettre <a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub">FR Anime FanSub</a> à <code>1700</code> au lieu de <code>1450</code></p>
 </div>
 </details>
 <hr />
@@ -5298,7 +5341,7 @@ Also they often even rename the release name into Portuguese.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 16, 2024 14:43:32</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 1, 2024 21:59:52</span>
   </span>
 
     

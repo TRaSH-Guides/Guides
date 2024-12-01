@@ -2,7 +2,9 @@
   "trash_id": "d34870697c9db575f17700212167be23",
   "trash_scores": {
     "default": 60,
-    "anime-sonarr": 4
+    "anime-sonarr": 4,
+    "french-anime-multi": 4,
+    "french-anime-vostfr": 4
   },
   "name": "NF",
   "includeCustomFormatWhenRenaming": true,
