@@ -3241,7 +3241,7 @@ We've made 3 guides related to this.
 
 ### FR LQ
 
-French Low-Quality Releases = FR LQ</sub>
+<sub>French Low-Quality Releases = FR LQ</sub>
 
 ??? question "FR LQ - [Click to show/hide]"
 
@@ -3258,6 +3258,64 @@ French Low-Quality Releases = FR LQ</sub>
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## Language Profile
+
+---
+
+### Language Not French
+
+<sub>Language Not French</sub>
+
+??? question "Language Not French - [Click to show/hide]"
+
+    Language Specification is Not French
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language Not Original
+
+<sub>Language Not Original</sub>
+
+??? question "Language Not Original - [Click to show/hide]"
+
+    Language Specification is Not Original
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-original.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language Original French
+
+<sub>Language Original + French</sub>
+
+??? question "Language Original + French - [Click to show/hide]"
+
+    Language Specification Original + French
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-french.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

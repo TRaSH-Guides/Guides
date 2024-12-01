@@ -83,9 +83,9 @@ Result:
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
 
-If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions){:target="\_blank" rel="noopener noreferrer"}
+If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#standard){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
