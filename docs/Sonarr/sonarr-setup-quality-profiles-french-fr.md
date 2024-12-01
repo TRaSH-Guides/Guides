@@ -163,6 +163,8 @@ Note : Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le
 
 #### Anime
 
+Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).
+
 {! include-markdown "../../includes/french-guide/sonarr-french-anime-info-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
