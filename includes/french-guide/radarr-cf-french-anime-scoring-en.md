@@ -32,4 +32,4 @@
 
     !!! tip "Prefer the FanSub version to others"
 
-        For this example, if you prefer FanSub to any FR Anime Tiers, you should score the [{{ sonarr['cf']['french-anime-fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub) to `1700` instead of `{{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
+        For this example, if you prefer FanSub to any FR Anime Tiers, you should score the [{{ radarr['cf']['french-anime-fansub']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#fr-anime-fansub) to `1700` instead of `{{ radarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
