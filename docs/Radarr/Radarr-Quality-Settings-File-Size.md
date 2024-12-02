@@ -32,7 +32,7 @@
 === "Anime/Animated/Cartoons"
 
     | Quality                                                           |            Minimum <sub><sup>(MB/min)</sup></sub>             |              Preferred <sub><sup>(MB/min)</sup></sub>               |            Maximum <sub><sup>(MB/min)</sup></sub>             |
-    |-------------------------------------------------------------------|:-------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------:|
+    | ----------------------------------------------------------------- | :-----------------------------------------------------------: | :-----------------------------------------------------------------: | :-----------------------------------------------------------: |
     | {{ radarr['quality-size']['anime']['qualities'][0]['quality'] }}  | {{ radarr['quality-size']['anime']['qualities'][0]['min'] }}  | {{ radarr['quality-size']['anime']['qualities'][0]['preferred'] }}  | {{ radarr['quality-size']['anime']['qualities'][0]['max'] }}  |
     | {{ radarr['quality-size']['anime']['qualities'][1]['quality'] }}  | {{ radarr['quality-size']['anime']['qualities'][1]['min'] }}  | {{ radarr['quality-size']['anime']['qualities'][1]['preferred'] }}  | {{ radarr['quality-size']['anime']['qualities'][1]['max'] }}  |
     | {{ radarr['quality-size']['anime']['qualities'][2]['quality'] }}  | {{ radarr['quality-size']['anime']['qualities'][2]['min'] }}  | {{ radarr['quality-size']['anime']['qualities'][2]['preferred'] }}  | {{ radarr['quality-size']['anime']['qualities'][2]['max'] }}  |
