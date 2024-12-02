@@ -32,4 +32,4 @@
 
     !!! tip "Préférer la version FanSub aux autres"
 
-        Si vous préférez les release FanSub à n'importe quelle version des Tiers FR Anime, il faut donc mettre [{{ sonarr['cf']['french-anime-fansub']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#fr-anime-fansub) à `1700` au lieu de `{{ sonarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
+        Si vous préférez les release FanSub à n'importe quelle version des Tiers FR Anime, il faut donc mettre [{{ radarr['cf']['french-anime-fansub']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#fr-anime-fansub) à `1700` au lieu de `{{ radarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
