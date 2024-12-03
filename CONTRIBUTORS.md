@@ -115,14 +115,14 @@
       <b><a href="https://github.com/calvinbui" style="color: #ffa500;">calvinbui</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/10825337?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="thatbritguy">
-      <br>
-      <b><a href="https://github.com/thatbritguy" style="color: #ffa500;">thatbritguy</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/60312740?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="doob187">
       <br>
       <b><a href="https://github.com/doob187" style="color: #ffa500;">doob187</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/10825337?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="thatbritguy">
+      <br>
+      <b><a href="https://github.com/thatbritguy" style="color: #ffa500;">thatbritguy</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/7110194?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Roxedus">
