@@ -3339,6 +3339,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#clean" class="md-nav__link">
     <span class="md-ellipsis">
       Clean
@@ -3394,6 +3403,12 @@
 <div class="admonition warning">
 <p class="admonition-title">Because these scripts are community-provided and maintained we can't assure that they are still 100% working</p>
 </div>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"></a></h2>
+<ul>
+<li>You've created folder called <code>scripts</code> in the root directory of SABnzbd</li>
+<li>You've set the <code>scripts</code> folder inside the SABnzbd settings under <code>Folder &gt; User Folders &gt; Scripts Folder</code>. (<a href="https://sabnzbd.org/wiki/configuration/4.3/folders">More Infos</a>)</li>
+<li>Your script got sufficient rights to execute. (<a href="https://sabnzbd.org/wiki/configuration/4.3/scripts/post-processing-scripts">More Infos</a>)</li>
+</ul>
 <h2 id="clean">Clean<a class="headerlink" href="#clean" title="Permanent link"></a></h2>
 <details class="info">
 <summary>Clean NZB name</summary>
@@ -3406,10 +3421,11 @@
 NZBgeek / Obfuscated / BUYMORE / Scrambled /etc...
 Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).</p>
 <p>Install Instructions:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Copy</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">SABnzbd</span><span class="s1">&#39;s script folder</span>
-<span class="s1">1. run: `sudo chmod +x Clean.py`</span>
-<span class="s1">1. in SABnzbd go to `Settings` =&gt; `Switches`</span>
-<span class="s1">1. Change Pre-queue user script and select: `Clean.py`</span>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">Copy</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">SABnzbd</span><span class="s1">&#39;s `scripts` folder</span>
+<span class="s1">2. Use your prefered shell and navigate to the `scripts` folder with the command `cd` (example `cd /mnt/user/appdata/sabnzdb/scripts`).</span>
+<span class="s1">3. run: `sudo chmod +x Clean.py`</span>
+<span class="s1">4. in SABnzbd go to `Settings` =&gt; `Switches`</span>
+<span class="s1">5. Change Pre-queue user script and select: `Clean.py`</span>
 </code></pre></div>
 <p><a class="glightbox" href="/Downloaders/SABnzbd/images/sabnzbd-switches-queue-clean.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="!Enable Clean.py" src="/Downloaders/SABnzbd/images/sabnzbd-switches-queue-clean.png" /></a></p>
 </details>
@@ -3587,7 +3603,7 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 9, 2024 20:04:42</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 3, 2024 22:27:27</span>
   </span>
 
     
