@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(HTSR|HS)\\b"
+        "value": "\\b(HTSR|DSNPHS|HS)\\b"
       }
     },
     {
