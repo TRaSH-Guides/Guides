@@ -112,6 +112,7 @@ We've made 3 guides related to this.
 | [Multi](#multi)                        |                      |                                                 |
 | [No-RlsGroup](#no-rlsgroup)            |                      |                                                 |
 | [Obfuscated](#obfuscated)              |                      |                                                 |
+| [DiRFiX](#dirfix)                      |                      |                                                 |
 | [Repack/Proper](#repackproper)         |                      |                                                 |
 | [Repack2](#repack2)                    |                      |                                                 |
 | [Repack3](#repack3)                    |                      |                                                 |
@@ -1367,6 +1368,18 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hfr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### DiRFiX
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dirfix.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
