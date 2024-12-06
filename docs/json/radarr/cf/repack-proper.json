@@ -33,15 +33,6 @@
       "fields": {
         "value": "\\b(Rerip)\\b"
       }
-    },
-    {
-      "name": "DiRFiX",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(DiRFiX)\\b"
-      }
     }
   ]
 }
