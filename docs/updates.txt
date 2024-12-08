@@ -1,3 +1,13 @@
+# 2024-12-08 01:44
+- [fix(backend): Add missing AMZN from Sonarr 2160p QP JSON](https://github.com/TRaSH-Guides/Guides/pull/2154)
+- [update(starr/cf): add additional service tag in regex and proof-edit definition](https://github.com/TRaSH-Guides/Guides/pull/2152)
+- [fix(guide): Add SQP-1 WEB (1080p) score for 10-bit custom format](https://github.com/TRaSH-Guides/Guides/pull/2151)
+- [feat(guides): SABnzbd - Updated description for utilizing the scripts folder](https://github.com/TRaSH-Guides/Guides/pull/2086)
+- [fix(sonarr): French guide CF path](https://github.com/TRaSH-Guides/Guides/pull/2146)
+- [feat(starr-anime): Add SoM and Cunnysseur to Anime BD Tiers](https://github.com/TRaSH-Guides/Guides/pull/2145)
+- [feat(Sonarr-Anime): Update French Anime guide](https://github.com/TRaSH-Guides/Guides/pull/2133)
+- [fix(starr): New French guide](https://github.com/TRaSH-Guides/Guides/pull/2132)
+
 # 2024-12-01 01:50
 - [fix(backend): Add missing sqp-1-web-1080p scores to relevant custom formats](https://github.com/TRaSH-Guides/Guides/pull/2143)
 - [fix(backend): Movie Versions custom form group jsons have non-unique names and trash_ids](https://github.com/TRaSH-Guides/Guides/pull/2142)
