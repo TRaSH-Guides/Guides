@@ -7,6 +7,7 @@
     | [{{ sonarr['cf']['obfuscated']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#obfuscated)           |   {{ sonarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ sonarr['cf']['obfuscated']['trash_id'] }}      |
     | [{{ sonarr['cf']['retags']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#retags)                   |     {{ sonarr['cf']['retags']['trash_scores']['default'] }}      | {{ sonarr['cf']['retags']['trash_id'] }}          |
     | [{{ sonarr['cf']['scene']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#scene)                     |      {{ sonarr['cf']['scene']['trash_scores']['default'] }}      | {{ sonarr['cf']['scene']['trash_id'] }}           |
+    | [{{ sonarr['cf']['dirfix']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#dirfix)                   |     {{ sonarr['cf']['dirfix']['trash_scores']['default'] }}      | {{ sonarr['cf']['dirfix']['trash_id'] }}          |
 
     ---
 
@@ -18,3 +19,4 @@
     - **{{ sonarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
     - **{{ sonarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).
     - **{{ sonarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
+    - **{{ sonarr['cf']['dirfix']['name'] }}:** [*Optional*] Use this only if you want to get the latest release with the correction of a typo or inaccuracy in the release name.

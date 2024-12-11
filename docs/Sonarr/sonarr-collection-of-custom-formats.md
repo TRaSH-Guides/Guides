@@ -106,6 +106,7 @@ We've made 3 guides related to this.
 | [Multi](#multi)                        | [FanSUB](#fansub)    | [FR Scene Groups](#fr-scene-groups)           |
 | [No-RlsGroup](#no-rlsgroup)            | [FastSUB](#fastsub)  | [FR LQ](#fr-lq)                               |
 | [Obfuscated](#obfuscated)              |                      |                                               |
+| [DiRFiX](#dirfix)                      |                      |                                               |
 | [Repack v2](#repack-v2)                |                      |                                               |
 | [Repack v3](#repack-v3)                |                      |                                               |
 | [Repack/Proper](#repackproper)         |                      |                                               |
@@ -868,6 +869,18 @@ We've made 3 guides related to this.
 ---
 
 ## Miscellaneous
+
+---
+
+### DiRFiX
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dirfix.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
