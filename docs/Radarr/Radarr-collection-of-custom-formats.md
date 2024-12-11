@@ -96,7 +96,7 @@ We've made 3 guides related to this.
 ---
 
 | Miscellaneous                          | French Audio Version | French Source Groups                            |
-|----------------------------------------|----------------------|-------------------------------------------------|
+| -------------------------------------- | -------------------- | ----------------------------------------------- |
 | [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)           |
 | [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR Remux Tier 02](#fr-remux-tier-02)           |
 | [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
@@ -105,12 +105,12 @@ We've made 3 guides related to this.
 | [EVO (no WEBDL)](#evo-no-webdl)        | [VOQ](#voq)          | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
 | [FreeLeech](#freeleech)                | [VQ](#vq)            | [FR WEB Tier 01](#fr-web-tier-01)               |
 | [HFR](#hfr)                            | [VFB](#vfb)          | [FR WEB Tier 02](#fr-web-tier-02)               |
-| [HDR10+ Boost](#hdr10plus-boost)       | [VOSTFR](#vostfr)    | [FR Scene Groups](#fr-scene-groups)             |
-| [Internal](#internal)                  | [FanSUB](#fansub)    | [FR LQ](#fr-lq)                                 |
-| [Line/Mic Dubbed](#linemic-dubbed)     | [FastSUB](#fastsub)  |                                                 |
-| [MPEG2](#mpeg2)                        |                      |                                                 |
-| [Multi](#multi)                        |                      |                                                 |
-| [No-RlsGroup](#no-rlsgroup)            |                      |                                                 |
+| [HDR10+ Boost](#hdr10plus-boost)       | [VOSTFR](#vostfr)    | [FR Anime Tier 01](#fr-anime-tier-01)           |
+| [Internal](#internal)                  | [FanSUB](#fansub)    | [FR Anime Tier 02](#fr-anime-tier-02)           |
+| [Line/Mic Dubbed](#linemic-dubbed)     | [FastSUB](#fastsub)  | [FR Anime Tier 03](#fr-anime-tier-03)           |
+| [MPEG2](#mpeg2)                        |                      | [FR Anime FanSub](#fr-anime-fansub)             |
+| [Multi](#multi)                        |                      | [FR Scene Groups](#fr-scene-groups)             |
+| [No-RlsGroup](#no-rlsgroup)            |                      | [FR LQ](#fr-lq)                                 |
 | [Obfuscated](#obfuscated)              |                      |                                                 |
 | [Repack/Proper](#repackproper)         |                      |                                                 |
 | [Repack2](#repack2)                    |                      |                                                 |
@@ -3134,6 +3134,77 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 01
+
+??? question "FR Anime Tier 01 - [Click to show/hide]"
+
+    - WIP
+    - Groups that are known to be active and only doing Anime
+    - Groups whose releases are at least comparable to SeaDex recommended.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 02
+
+??? question "FR Anime Tier 02 - [Click to show/hide]"
+
+    - WIP
+    - Groups that are known to be active and only doing Anime, but with few releases per year.
+    - Groups that are known to be active and doing Anime AND other types of releases.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime Tier 03
+
+??? question "FR Anime Tier 03 - [Click to show/hide]"
+
+    - WIP
+    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi) or still top of its category.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### FR Anime FanSub
+
+??? question "FR Anime FanSub - [Click to show/hide]"
+
+    Known good groups that only do FanSub in good quality.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-anime-fansub.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
