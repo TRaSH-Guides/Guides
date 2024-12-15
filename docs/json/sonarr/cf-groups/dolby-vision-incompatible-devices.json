@@ -1,0 +1,17 @@
+{
+  "name": "Dolby Vision Incompatible Devices",
+  "trash_id": "9f6e0b72dd733fb4616e9880bc313c42",
+  "trash_description": "Not all devices in your chain support Dolby Vision, You share your media library with other family members that don't have Dolby Vision compatible devices.",
+  "custom_formats": [
+    {
+      "name": "DV (WEBDL)",
+      "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1"
+    }
+  }
+}
