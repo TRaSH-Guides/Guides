@@ -79,7 +79,7 @@ We've made 3 guides related to this.
 | [Syfy](#syfy)              |                           |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
-|-----------------------|-------------------------|--------------------------|---------------------------------------------|
+| --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
 | [4OD](#4od)           | [AUBC](#aubc)           | [ABEMA](#abema)          | [UHD Streaming Boost](#uhd-streaming-boost) |
 | [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [UHD Streaming Cut](#uhd-streaming-cut)     |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [B-Global](#b-global)    |                                             |
@@ -93,7 +93,7 @@ We've made 3 guides related to this.
 ---
 
 | Miscellaneous                          | French Audio Version | French Source Groups                          |
-|----------------------------------------|----------------------|-----------------------------------------------|
+| -------------------------------------- | -------------------- | --------------------------------------------- |
 | [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR WEB Tier 01](#fr-web-tier-01)             |
@@ -137,7 +137,7 @@ We've made 3 guides related to this.
 ---
 
 | Language profiles                                               |
-|-----------------------------------------------------------------|
+| --------------------------------------------------------------- |
 | [Language German-DL](#language-german-dl)                       |
 | [Language Not English (English Only)](#language-not-english)    |
 | [Language Not French (French Only)](#language-not-french)       |
