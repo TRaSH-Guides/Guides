@@ -134,6 +134,18 @@ We've made 3 guides related to this.
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |            |                                       |
 | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |            |                                       |
 
+---
+
+| Language profiles                                               |
+|-----------------------------------------------------------------|
+| [Language German-DL](#language-german-dl)                       |
+| [Language Not English (English Only)](#language-not-english)    |
+| [Language Not French (French Only)](#language-not-french)       |
+| [Language Not Original (Original Only)](#language-not-original) |
+| [Language Original French](#language-original-french)           |
+
+---
+
 ## Audio Advanced
 
 ---
@@ -3264,17 +3276,17 @@ We've made 3 guides related to this.
 
 ---
 
-## Language Profile
+## Language Profiles
 
 ---
 
 ### Language Not French
 
-<sub>Language Not French</sub>
+<sub>Language: French Only</sub>
 
 ??? question "Language Not French - [Click to show/hide]"
 
-    Language Specification is Not French
+    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3288,11 +3300,11 @@ We've made 3 guides related to this.
 
 ### Language Not Original
 
-<sub>Language Not Original</sub>
+<sub>Language: Original Only</sub>
 
 ??? question "Language Not Original - [Click to show/hide]"
 
-    Language Specification is Not Original
+    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3316,6 +3328,42 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language Not English
+
+<sub>Language: English Only</sub>
+
+??? question "Language Not English - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-english.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language German-DL
+
+<sub>Language: German + Original</sub>
+
+??? question "Language German-DL - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german-dl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
