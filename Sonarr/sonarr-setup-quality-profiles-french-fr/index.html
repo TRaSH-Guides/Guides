@@ -3425,8 +3425,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="UHD Bluray + WEB (2160p)">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#anime" class="md-nav__link">
@@ -3434,11 +3433,6 @@
       Anime
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -3611,7 +3605,7 @@ Cette option ne devrait être utilisée que pour les indexeurs français. L'appl
 <th style="text-align: center;">Audios <code>Original</code> + <code>Français</code></th>
 <th style="text-align: center;">Audio <code>Original</code> seulement</th>
 <th style="text-align: center;">Audio <code>Français</code> seulement</th>
-<th style="text-align: center;">Sous-titres <code>English</code></th>
+<th style="text-align: center;">Sous-titres <code>Anglais</code></th>
 <th style="text-align: center;">Sous-titres <code>Français</code></th>
 </tr>
 </thead>
@@ -3800,34 +3794,150 @@ Pour d'anciennes séries, il peut être utile d'activer la source de qualité <c
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
-<p>Qualities at the top of the list will appear first in manual searches.</p>
+<p>L’ordre établi dans le profil a de l’importance, même si une qualité n’est pas sélectionnée. Par exemple, si vous avez une version 1080p mais que vous souhaitiez à la base une version SD, Radarr rejettera l’ensemble des résultats en SD. Cela s’explique par le fait que la 1080p est positionnée plus haut que la SD dans la liste, même si la 1080p n’était pas cochée.</p>
+<p>Les qualités placées en tête de liste apparaîtront en priorité lors des recherches manuelles.</p>
 <ul>
-<li>Qualities higher in the list are more preferred even if not checked.</li>
-<li>Qualities within the same group are equal.</li>
-<li>Only checked qualities are wanted.</li>
+<li>Les qualités les mieux classées sont plus favorisées, même si elles ne sont pas cochées.</li>
+<li>Les qualités appartenant au même groupe sont considérées comme équivalentes.</li>
+<li>Seules les qualités cochées sont effectivement recherchées.</li>
 </ul>
-<p>This is why it's recommended to move the selected quality to the top of the list.</p>
-<p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
+<p>De fait, il est conseillé de placer la qualité souhaitée en haut de la liste.</p>
+<p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source (en anglais) : Wiki Servarr</a></p>
 </div>
-<p>I suggest to follow the following Guides first.</p>
+<p>Il est d’abord suggèré de consulter les guides suivants (en anglais seulement) :</p>
 <ul>
 <li><a href="/Sonarr/Sonarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Sonarr/Sonarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
-<p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
+<p>Pour ce profil de qualité, les formats personnalisés ci-dessous seront utilisés, avec les scores indiqués dans les tableaux.</p>
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
-<p>All the used scores and combinations of Custom Formats in this Guide are tested to get the desired results while preventing download loops as much as possible.</p>
-<p>From experience, most of the time when people change scores or leave out certain CFs that work together - they end up with undesired results.</p>
-<p>If you're unsure or have questions, do not hesitate to ask for help on Discord</p>
+<p>Tous les scores et les associations de formats personnalisés présentés dans ce guide ont été testés pour obtenir les résultats souhaités tout en limitant au maximum les boucles de téléchargements.</p>
+<p>Par expérience, la plupart du temps, lorsque les scores sont modifiés ou que certains Formats Personnalisés sont omis, il en resulte des scores indésirables ou incohérents.</p>
+<p>Si vous avez des doutes ou des questions, n’hésitez pas à demander de l’aide sur Discord (en anglais seulement).</p>
 <p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
 <center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
 <!-- markdownlint-enable MD041-->
 
 <p><strong>Les Formats Personnalisés suivants sont requis :</strong></p>
+<details class="abstract">
+<summary>Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]</summary>
+<table>
+<thead>
+<tr>
+<th>Formats Personnalisés</th>
+<th>Trash ID</th>
+<th style="text-align: center;">VOSTFR Profile Score</th>
+<th style="text-align: center;">MULTi.VF Profile Score</th>
+<th style="text-align: center;">MULTi.VO Profile Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a></td>
+<td>10e77b96ae4770a7de645a91a53ce29a</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">500</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-original">Language: Not Original</a></td>
+<td>ae575f95ab639ba5d15f663bf019e3e8</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-10000</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-french">Language: Not French</a></td>
+<td>322fca6f8f3694acc1401ddb530fd33d</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a></td>
+<td>07a32f77690263bb9fda1842db7e273f</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#multi">MULTi</a></td>
+<td>7ba05c6e0e14e793538174c679126996</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-hd-bluray-tier-01">FR HD Bluray Tier 01</a></td>
+<td>d844321db5e126d2e7e46152f0706532</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1800</td>
+<td style="text-align: center;">1800</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-01">FR WEB Tier 01</a></td>
+<td>ddb8eaa9c85a549c50034d280539d54d</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1700</td>
+<td style="text-align: center;">1700</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-02">FR WEB Tier 02</a></td>
+<td>a4c51febd4d8b2a0db10a3c974f21d92</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1650</td>
+<td style="text-align: center;">1650</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-03">FR WEB Tier 03</a></td>
+<td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">1600</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a></td>
+<td>2f3422339d185eb227a324644a2fbfca</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1500</td>
+<td style="text-align: center;">1500</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
+<td>e6258996055b9fbab7e9cb2f75819294</td>
+<td style="text-align: center;">1700</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1700</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
+<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
+<td style="text-align: center;">1650</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1650</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
+<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
+<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+</tr>
+</tbody>
+</table>
+<p>Note : Les groupes de la Scène française sont inclus comme solution de rechange si vous voulez vraiment leurs releases malgré une éventuelle perte de qualité. Vous pouvez leur attribuer un score de <code>1500</code> (par défaut) ou de <code>0</code> selon ce que vous voulez obtenir. Ne pas les inclure peut toutefois limiter votre capacité à obtenir des releases avec un audio <code>Français</code>.</p>
+<p>Note : Le Format Personnalisé <a href="/sonarr/sonarr-collection-of-custom-formats/#multi">MULTi</a> est dispensable pour le profil <code>VOSTFR</code>. En effet il est utilisé dans le but de renommer les fichiers afin de conserver le score attribué par le format personnalisé <a href="/sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a>.</p>
+</details>
 <details class="abstract">
 <summary>Indésirable - [Cliquer pour afficher/masquer]</summary>
 <table>
@@ -4059,115 +4169,12 @@ Pour d'anciennes séries, il peut être utile d'activer la source de qualité <c
 </tbody>
 </table>
 </details>
-<details class="abstract">
-<summary>Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]</summary>
-<table>
-<thead>
-<tr>
-<th>Formats Personnalisés</th>
-<th>Trash ID</th>
-<th style="text-align: center;">VOSTFR Profile Score</th>
-<th style="text-align: center;">MULTi.VF Profile Score</th>
-<th style="text-align: center;">MULTi.VO Profile Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a></td>
-<td>10e77b96ae4770a7de645a91a53ce29a</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">500</td>
-<td style="text-align: center;">500</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-original">Language: Not Original</a></td>
-<td>ae575f95ab639ba5d15f663bf019e3e8</td>
-<td style="text-align: center;">-10000</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">-10000</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-french">Language: Not French</a></td>
-<td>322fca6f8f3694acc1401ddb530fd33d</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">-10000</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a></td>
-<td>07a32f77690263bb9fda1842db7e273f</td>
-<td style="text-align: center;">1000</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-hd-bluray-tier-01">FR HD Bluray Tier 01</a></td>
-<td>d844321db5e126d2e7e46152f0706532</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1800</td>
-<td style="text-align: center;">1800</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-01">FR WEB Tier 01</a></td>
-<td>ddb8eaa9c85a549c50034d280539d54d</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1700</td>
-<td style="text-align: center;">1700</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-02">FR WEB Tier 02</a></td>
-<td>a4c51febd4d8b2a0db10a3c974f21d92</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1650</td>
-<td style="text-align: center;">1650</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-03">FR WEB Tier 03</a></td>
-<td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">1600</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a></td>
-<td>2f3422339d185eb227a324644a2fbfca</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1500</td>
-<td style="text-align: center;">1500</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
-<td>e6258996055b9fbab7e9cb2f75819294</td>
-<td style="text-align: center;">1700</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1700</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
-<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
-<td style="text-align: center;">1650</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1650</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
-<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
-<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-</tr>
-</tbody>
-</table>
-<p>Note : Les groupes de la Scène française sont inclus comme solution de rechange si vous voulez vraiment leurs releases malgré une éventuelle perte de qualité. Vous pouvez leur attribuer un score de <code>1500</code> (par défaut) ou de <code>0</code> selon ce que vous voulez obtenir. Ne pas les inclure peut toutefois limiter votre capacité à obtenir des releases avec un audio <code>Français</code>.</p>
-</details>
 <p><strong>Les Formats Personnalisés suivants sont facultatifs :</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Les informations des formats suivants sont uniquement en anglais. Toutefois, il est vivement recommandé de les lire, voir d’utiliser un traducteur, afin de comprendre leur fonctionnement.
+Elles ne sont pas traduites, car elles sont appelées à évoluer plus rapidement qu'un éventuel équivalent en français. Par conséquent, afin d’éviter de conserver des informations obsolètes, il a été décidé de maintenir les données du guide international.</p>
+</div>
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -4262,24 +4269,156 @@ Pour d'anciennes séries, il peut être utile d'activer la source de qualité <c
 <p><a class="glightbox" href="../images/french-sonarr-qp-bluray-webdl-uhd.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="UHD Bluray + WEB for VOSTFR or MULTi.VO Profile" src="../images/french-sonarr-qp-bluray-webdl-uhd.png" /></a></p>
 </details>
 </div>
-<p>I suggest to follow the following Guides first.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>L’ordre établi dans le profil a de l’importance, même si une qualité n’est pas sélectionnée. Par exemple, si vous avez une version 1080p mais que vous souhaitiez à la base une version SD, Radarr rejettera l’ensemble des résultats en SD. Cela s’explique par le fait que la 1080p est positionnée plus haut que la SD dans la liste, même si la 1080p n’était pas cochée.</p>
+<p>Les qualités placées en tête de liste apparaîtront en priorité lors des recherches manuelles.</p>
+<ul>
+<li>Les qualités les mieux classées sont plus favorisées, même si elles ne sont pas cochées.</li>
+<li>Les qualités appartenant au même groupe sont considérées comme équivalentes.</li>
+<li>Seules les qualités cochées sont effectivement recherchées.</li>
+</ul>
+<p>De fait, il est conseillé de placer la qualité souhaitée en haut de la liste.</p>
+<p><a href="https://wiki.servarr.com/en/radarr/settings#quality-profiles" rel="noopener noreferrer" target="_blank">Source (en anglais) : Wiki Servarr</a></p>
+</div>
+<p>Il est d’abord suggèré de consulter les guides suivants (en anglais seulement) :</p>
 <ul>
 <li><a href="/Sonarr/Sonarr-Quality-Settings-File-Size/" rel="noopener noreferrer" target="_blank">Quality Settings (File Size)</a>.</li>
 <li><a href="/Sonarr/Sonarr-recommended-naming-scheme/" rel="noopener noreferrer" target="_blank">Recommended naming scheme</a>.</li>
 </ul>
-<p>For this Quality Profile we're going to make use of the following Custom Formats with the scores given in the table.</p>
+<p>Pour ce profil de qualité, les formats personnalisés ci-dessous seront utilisés, avec les scores indiqués dans les tableaux.</p>
 <!-- markdownlint-disable MD041-->
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
-<p>All the used scores and combinations of Custom Formats in this Guide are tested to get the desired results while preventing download loops as much as possible.</p>
-<p>From experience, most of the time when people change scores or leave out certain CFs that work together - they end up with undesired results.</p>
-<p>If you're unsure or have questions, do not hesitate to ask for help on Discord</p>
+<p>Tous les scores et les associations de formats personnalisés présentés dans ce guide ont été testés pour obtenir les résultats souhaités tout en limitant au maximum les boucles de téléchargements.</p>
+<p>Par expérience, la plupart du temps, lorsque les scores sont modifiés ou que certains Formats Personnalisés sont omis, il en resulte des scores indésirables ou incohérents.</p>
+<p>Si vous avez des doutes ou des questions, n’hésitez pas à demander de l’aide sur Discord (en anglais seulement).</p>
 <p><center><a class="md-button md-button--primary" href="https://trash-guides.info/discord"> Click For Support </a></center>
 <center><a href="https://trash-guides.info/discord" rel="noopener noreferrer" target="_blank"><img alt="Discord chat" class="off-glb" src="https://img.shields.io/discord/492590071455940612?style=for-the-badge&amp;color=4051B5&amp;logo=discord" /></a></center></p>
 </div>
 <!-- markdownlint-enable MD041-->
 
 <p><strong>Les Formats Personnalisés suivants sont requis :</strong></p>
+<details class="abstract">
+<summary>Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]</summary>
+<table>
+<thead>
+<tr>
+<th>Formats Personnalisés</th>
+<th>Trash ID</th>
+<th style="text-align: center;">VOSTFR Profile Score</th>
+<th style="text-align: center;">MULTi.VF Profile Score</th>
+<th style="text-align: center;">MULTi.VO Profile Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a></td>
+<td>10e77b96ae4770a7de645a91a53ce29a</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">500</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-original">Language: Not Original</a></td>
+<td>ae575f95ab639ba5d15f663bf019e3e8</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-10000</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-french">Language: Not French</a></td>
+<td>322fca6f8f3694acc1401ddb530fd33d</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-10000</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a></td>
+<td>07a32f77690263bb9fda1842db7e273f</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/sonarr/sonarr-collection-of-custom-formats/#multi">MULTi</a></td>
+<td>7ba05c6e0e14e793538174c679126996</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-hd-bluray-tier-01">FR HD Bluray Tier 01</a></td>
+<td>d844321db5e126d2e7e46152f0706532</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1800</td>
+<td style="text-align: center;">1800</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-01">FR WEB Tier 01</a></td>
+<td>ddb8eaa9c85a549c50034d280539d54d</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1700</td>
+<td style="text-align: center;">1700</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-02">FR WEB Tier 02</a></td>
+<td>a4c51febd4d8b2a0db10a3c974f21d92</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1650</td>
+<td style="text-align: center;">1650</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-03">FR WEB Tier 03</a></td>
+<td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">1600</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a></td>
+<td>2f3422339d185eb227a324644a2fbfca</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1500</td>
+<td style="text-align: center;">1500</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
+<td>e6258996055b9fbab7e9cb2f75819294</td>
+<td style="text-align: center;">1700</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1700</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
+<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
+<td style="text-align: center;">1650</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1650</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
+<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+</tr>
+<tr>
+<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
+<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1600</td>
+</tr>
+</tbody>
+</table>
+<p>Note : Les groupes de la Scène française sont inclus comme solution de rechange si vous voulez vraiment leurs releases malgré une éventuelle perte de qualité. Vous pouvez leur attribuer un score de <code>1500</code> (par défaut) ou de <code>0</code> selon ce que vous voulez obtenir. Ne pas les inclure peut toutefois limiter votre capacité à obtenir des releases avec un audio <code>Français</code>.</p>
+<p>Note : Le Format Personnalisé <a href="/sonarr/sonarr-collection-of-custom-formats/#multi">MULTi</a> est dispensable pour le profil <code>VOSTFR</code>. En effet il est utilisé dans le but de renommer les fichiers afin de conserver le score attribué par le format personnalisé <a href="/sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a>.</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>La section suivante est uniquement en anglais. Toutefois, il est vivement recommandé de la lire, voire d’utiliser un traducteur, afin de comprendre le fonctionnement des formats HDR.
+Cette section n’est pas traduite, car elle est appelée à évoluer plus rapidement qu'un éventuel équivalent en français. Par conséquent, afin d’éviter de conserver des informations obsolètes, il a été décidé de maintenir les données du guide international.</p>
 <details class="abstract">
 <summary>All HDR Formats - [Click to show/hide]</summary>
 <p><strong>Why would I choose All HDR formats ?</strong></p>
@@ -4477,6 +4616,7 @@ Pour d'anciennes séries, il peut être utile d'activer la source de qualité <c
 </table>
 </details>
 </details>
+</div>
 <details class="abstract">
 <summary>Indésirable - [Cliquer pour afficher/masquer]</summary>
 <table>
@@ -4723,115 +4863,12 @@ Pour d'anciennes séries, il peut être utile d'activer la source de qualité <c
 <p>Some streaming services have UHD releases that are generally better or worse than their HD counterparts. The UHD Streaming Boost and UHD Streaming Cut custom formats adjust those streaming services' scores appropriately for UHD releases.</p>
 <p>These two custom formats must be included in your profile for UHD releases to be scored correctly.</p>
 </details>
-<details class="abstract">
-<summary>Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquez pour afficher/masquer]</summary>
-<table>
-<thead>
-<tr>
-<th>Formats Personnalisés</th>
-<th>Trash ID</th>
-<th style="text-align: center;">VOSTFR Profile Score</th>
-<th style="text-align: center;">MULTi.VF Profile Score</th>
-<th style="text-align: center;">MULTi.VO Profile Score</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-original-french">Language: Original + French</a></td>
-<td>10e77b96ae4770a7de645a91a53ce29a</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">500</td>
-<td style="text-align: center;">500</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-original">Language: Not Original</a></td>
-<td>ae575f95ab639ba5d15f663bf019e3e8</td>
-<td style="text-align: center;">-10000</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">-10000</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#language-not-french">Language: Not French</a></td>
-<td>322fca6f8f3694acc1401ddb530fd33d</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">-10000</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#vostfr">VOSTFR</a></td>
-<td>07a32f77690263bb9fda1842db7e273f</td>
-<td style="text-align: center;">1000</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-hd-bluray-tier-01">FR HD Bluray Tier 01</a></td>
-<td>d844321db5e126d2e7e46152f0706532</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1800</td>
-<td style="text-align: center;">1800</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-01">FR WEB Tier 01</a></td>
-<td>ddb8eaa9c85a549c50034d280539d54d</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1700</td>
-<td style="text-align: center;">1700</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-02">FR WEB Tier 02</a></td>
-<td>a4c51febd4d8b2a0db10a3c974f21d92</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1650</td>
-<td style="text-align: center;">1650</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-web-tier-03">FR WEB Tier 03</a></td>
-<td>dbfc0a4b5cb4cbd693311c4482ae9683</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">1600</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#fr-scene-groups">FR Scene Groups</a></td>
-<td>2f3422339d185eb227a324644a2fbfca</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1500</td>
-<td style="text-align: center;">1500</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-01">WEB Tier 01</a></td>
-<td>e6258996055b9fbab7e9cb2f75819294</td>
-<td style="text-align: center;">1700</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1700</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-02">WEB Tier 02</a></td>
-<td>58790d4e2fdcd9733aa7ae68ba2bb503</td>
-<td style="text-align: center;">1650</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1650</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-tier-03">WEB Tier 03</a></td>
-<td>d84935abd3f8556dcd51d4f27e22d0a6</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-</tr>
-<tr>
-<td><a href="/Sonarr/sonarr-collection-of-custom-formats/#web-scene">WEB Scene</a></td>
-<td>d0c516558625b04b363fa6c5c2c7cfd4</td>
-<td style="text-align: center;">1600</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1600</td>
-</tr>
-</tbody>
-</table>
-<p>Note : Les groupes de la Scène française sont inclus comme solution de rechange si vous voulez vraiment leurs releases malgré une éventuelle perte de qualité. Vous pouvez leur attribuer un score de <code>1500</code> (par défaut) ou de <code>0</code> selon ce que vous voulez obtenir. Ne pas les inclure peut toutefois limiter votre capacité à obtenir des releases avec un audio <code>Français</code>.</p>
-</details>
 <p><strong>Les Formats Personnalisés suivants sont facultatifs :</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>Les informations des formats suivants sont uniquement en anglais. Toutefois, il est vivement recommandé de les lire, voir d’utiliser un traducteur, afin de comprendre leur fonctionnement.
+Elles ne sont pas traduites, car elles sont appelées à évoluer plus rapidement qu'un éventuel équivalent en français. Par conséquent, afin d’éviter de conserver des informations obsolètes, il a été décidé de maintenir les données du guide international.</p>
+</div>
 <details class="abstract">
 <summary>Miscellaneous (Optional) - [Click to show/hide]</summary>
 <table>
@@ -4970,7 +5007,7 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <p>Note : Les Formats Personnalisés <code>Advanced Audio</code> ne sont pas utilisés dans le profil, car les WEB-DL contiennent rarement de l'audio HD (la plupart des nouveaux WEB-DL contiennent cependant de l'Atmos avec perte). Si vous voulez de l'audio HD, nous vous suggérons d'utiliser des Remuxes.</p>
 <hr />
-<h4 id="anime">Anime<a class="headerlink" href="#anime" title="Permanent link"></a></h4>
+<h3 id="anime">Anime<a class="headerlink" href="#anime" title="Permanent link"></a></h3>
 <p>Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).</p>
 <div class="admonition info">
 <p class="admonition-title">Important</p>
@@ -5341,7 +5378,7 @@ Also they often even rename the release name into Portuguese.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 1, 2024 21:59:52</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 16, 2024 19:34:47</span>
   </span>
 
     
