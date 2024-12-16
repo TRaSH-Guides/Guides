@@ -102,9 +102,9 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
     ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
         ![HD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-hd.png)
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+{! include-markdown "../../includes/french-guide/sonarr-suggest-attention-fr.md" !}
 
 **Les Formats Personnalisés suivants sont requis :**
 
@@ -117,6 +117,8 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
+
+{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
@@ -135,13 +137,15 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
     ??? success "Capture d'écran du Profile - [Cliquez pour afficher/masquer]"
         ![UHD Bluray + WEB for VOSTFR or MULTi.VO Profile](images/french-sonarr-qp-bluray-webdl-uhd.png)
 
-{! include-markdown "../../includes/cf/sonarr-suggest-attention.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
+
+{! include-markdown "../../includes/french-guide/sonarr-suggest-attention-fr.md" !}
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 {! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
+{! include-markdown "../../includes/french-guide/sonarr-french-hdr-format-information-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
@@ -150,6 +154,8 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
+
+{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
