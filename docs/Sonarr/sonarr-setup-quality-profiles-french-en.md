@@ -110,13 +110,13 @@ It is quite important that you follow and understand what is envisioned by Trash
 
 **The following Custom Formats are required:**
 
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
+
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
 **The following Custom Formats are optional:**
 
@@ -143,6 +143,8 @@ Note: The `Advanced Audio` Custom Formats aren't used in the profile, as WEB-DL 
 
 **The following Custom Formats are required:**
 
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
+
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
@@ -150,8 +152,6 @@ Note: The `Advanced Audio` Custom Formats aren't used in the profile, as WEB-DL 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-en.md" !}
 
 **The following Custom Formats are optional:**
 
@@ -165,7 +165,7 @@ Note: The `Advanced Audio` Custom Formats aren't used in the profile, as WEB-DL 
 
 ---
 
-#### Anime
+### Anime
 
 If you are looking to grab Anime with either French subs or MULTi audio (original + French).
 
