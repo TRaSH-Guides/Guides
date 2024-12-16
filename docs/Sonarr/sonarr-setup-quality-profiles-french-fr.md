@@ -108,13 +108,13 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 **Les Formats Personnalisés suivants sont requis :**
 
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
+
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
@@ -140,14 +140,14 @@ Note : Les Formats Personnalisés `Audio Advanced` ne sont pas utilisés dans le
 **Les Formats Personnalisés suivants sont requis :**
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
+
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-uhd-streaming-services.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-web-scoring-fr.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
