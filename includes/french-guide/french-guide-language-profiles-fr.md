@@ -4,7 +4,7 @@
 - **MULTi mais préférez l'audio Français si non disponible**, ou **MULTi.VF**: Vous voulez les audios `Original` + `Français`, avec un repli sur l'audio `Français`.
 - **MULTi mais préférez l'audio Original si non disponible**, ou **MULTi.VO**: Vous voulez les audios `Original` + `Français`, avec un repli sur l'audio `Original`.
 
-| Profile  | Audios `Original` + `Français` | Audio `Original` seulement | Audio `Français` seulement | Sous-titres `English` | Sous-titres `Français` |
+| Profile  | Audios `Original` + `Français` | Audio `Original` seulement | Audio `Français` seulement | Sous-titres `Anglais` | Sous-titres `Français` |
 |----------|:------------------------------:|:--------------------------:|:--------------------------:|:---------------------:|:----------------------:|
 | VOSTFR   |              :x:               |     :white_check_mark:     |            :x:             |       :warning:       |   :white_check_mark:   |
 | MULTi.VF |       :white_check_mark:       |            :x:             |     :white_check_mark:     |       :warning:       |       :warning:        |
