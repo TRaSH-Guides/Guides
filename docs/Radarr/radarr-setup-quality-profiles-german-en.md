@@ -1,6 +1,6 @@
 # How to setup Quality Profiles German
 
-*aka How to setup Custom Formats (German)*<br><br>
+*aka How to setup Custom Formats to get German Audio if available*<br><br>
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
@@ -10,7 +10,7 @@ Regarding quality there isn't a best setup, it depends on your setup (hardware d
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-------
+---
 
 ## Basics
 
@@ -24,50 +24,54 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 !!! tip
     TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German only/German Dual Language("German DL") releases.
 
-------
+---
 
-!!! warning "Mandatory"
+## Using this Guide
 
-    The only two changes that are needed and **mandatory** for German Custom Formats to work is to set the preferred language profile for your releases to `Any` and disable the preference of Propers and Repacks.
+There are two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+In this Guide we focus on the first way and thus include the custom formats from TRaSH Guide's original. These Custom Formats are recommended if you prefer German Dual Language releases but will also want download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
+
+??? abstract "Workflow Logic - [Click to show/hide]"
+
+    **Depending what's released first and available the following Workflow Logic will be used:**
+
+    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
+    - When a `German` or `German DL` version is released it will upgrade to that version.
+    - The downloaded media will be upgraded to any of the added Custom Formats until whats defined in the Quality Profile.
+
+---
+
+## Radarr specific settings
+
+There are a couple of changes that are needed for German Custom Formats to work properly:
+
+!!! abstract "Set the language to `Any` in the quality profile"
+    We choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
-    !!! info
-        We do choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
+!!! abstract "Proper and Repacks - [Click to show/hide]"
+    Change the Propers and Repacks settings in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
 
-    ??? tip "Proper and Repacks - [Click to show/hide]"
+    This way you make sure the Custom Formats preferences will be used and not ignored.
 
-        We also highly recommend changing the Propers and Repacks settings in Radarr.
+    You will still be able to prefer Propers and Repacks through Custom Formats that you can find at a later stage in this guide.
 
-        `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
-
+    ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
 
-        This way you make sure the Custom Formats preferences will be used and not ignored.
+!!! abstract "Merge Qualities - [Click to show/hide]"
 
-        You will still be able to prefer Propers and Repacks through Custom Formats that you can find at a later stage in this guide.
+    In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](Radarr/Tips/Merge-quality/) into one group.
 
-------
+    We want to merge the following Qualities together:
 
-## Usages
-
-There is two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
-To illustrate this, you will see an **"Original mix (optional)"** section in each of the examples below. if you are interested in German audio only you don't need this. This Custom Formats are only useful and recommended if you prefer German Dual Language releases but will also want download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
-
-------
-
-## Examples of Quality Profile
-
-### Merge Qualities
-
-In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](Radarr/Tips/Merge-quality/) into one group.
-
-??? abstract "Merge the following Qualities together - [Click to show/hide]"
-
+    - Remux-2160p
     - Bluray-2160p
     - WEBDL-2160p
     - WEBRip-2160p
+    - Remux-1080p
     - Bluray-1080p
     - WEBDL-1080p
     - WEBRip-1080p
@@ -75,7 +79,7 @@ In order to allow upgrades based on language without release qualities interferi
     - WEBDL-720p
     - WEBRip-720p
 
-    and name it: `Bluray|WEB`
+     and name it: `Bluray|WEB`
 
     !!! warning "Make sure you don't check the BR-DISK."
 
@@ -84,7 +88,30 @@ In order to allow upgrades based on language without release qualities interferi
     !!! tip "Tip"
         If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
 
-------
+!!! abstract "Media Management - Standard Movie Format and Movie Folder Format"
+    Please have a look there: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
+
+    !!! tip "Movie format/folder with French movie name"
+        Radarr supports the ISO-2 naming convention for naming a movie, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
+
+!!! abstract "Indexers - Multi Languages option"
+    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you will select `Original` and `German`.
+    This option should only be used for German indexers. Doing so in more "international" indexers can create false positives with the German Audio CFs.
+
+    If you do not see the option, it is because you need to activate the "Advanced Options" of Radarr.
+
+    ??? success "Screenshot example - [Click to show/hide]"
+        ![French Radarr MULTi settings](images/german-starr-multi-settings.png)
+
+---
+
+## Score logic
+
+--8<-- "includes/cf/score-attention.md"
+
+---
+
+## Quality Profiles
 
 ### German Audio
 
@@ -111,7 +138,7 @@ Those should be used together and are there to properly rename your release and 
     Due to technical limitations releases where German is the original language of the movie will be identified as `German DL` even though they might not contain another language.
     The only (cosmetical) impact of this is that the scores of those releases will be higher by `1000` than they are supposed to be.
 
-------
+---
 
 ### Releases you should avoid
 
@@ -119,18 +146,7 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
-------
-
-### TRaSH recommendations
-
-{! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
-
-!!! tip "Getting the German movie name in the file and/or folder name"
-    Following the recommended naming scheme for your library, whether it's Plex, Jellyfin, or Emby, you can add the ISO-2 language code at the end of the movie name tag to display the movie name in the desired language.
-    The tag should look like the following: `{Movie CleanTitle:de}`. This works in both folder and file name.
-    This can be done in Radarr under Settings>Media Management (with Advanced Settings enabled at the top)
-
-------
+---
 
 ### HD Bluray + WEB (1080p)
 
@@ -140,43 +156,29 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
-
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-Use the following main settings in your profile.
+**The following Custom Formats are optional:**
 
-![Bluray + WEB](images/german-qp-bluray-webdl.png)
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-    **Depending what's released first and available the following Workflow Logic will be used:**
-
-    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
-    - When a `German` or `German DL` version is released it will upgrade to that version.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
-
-------
+---
 
 ### UHD Bluray + WEB (2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
+{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
-
-{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
-
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
-
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
@@ -184,19 +186,45 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
-Use the following main settings in your profile.
+**The following Custom Formats are optional:**
 
-![Bluray + WEB](images/german-qp-bluray-webdl.png)
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-??? abstract "Workflow Logic - [Click to show/hide]"
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-    **Depending what's released first and available the following Workflow Logic will be used:**
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
-    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
-    - When a `German` or `German DL` version is released it will upgrade to that version.
-    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
-------
+---
+
+### UHD Remux (2160p)
+
+{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+
+---
 
 ### Advanced Audio and HDR Formats
 
@@ -205,7 +233,7 @@ TRaSH provides great guides and explanations about them at the following links:
 - [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="_blank" rel="noopener noreferrer"}
 - [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
 
-------
+---
 
 ## Acknowledgements
 

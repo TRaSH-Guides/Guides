@@ -13,4 +13,4 @@
     Breakdown and Why
 
     - Since we are merging all qualities into a single group we need to add scores for different sources to allow upgrades between them.
-    - Since the scores for german groups are higher to allow for upgrades from english to german we need to introduce resolution boosters to not loose upgradability between resolutions.
+    - As the scores for german groups are higher to allow for upgrades from english to german we need to introduce resolution boosters to not loose upgradability between resolutions.
