@@ -5,6 +5,7 @@
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
 There isn't *the* best way to set up Custom Formats to get German (or German+English dual) audio, it depends on your setup (hardware devices) and your own personal preferences.
+
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
 In this Guide we try to give a recommendation which should suite most users.
@@ -28,7 +29,10 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 ## Using this Guide
 
 There are two ways of using those German Custom Formats, with and without TRaSH Guide's original international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
-In this Guide we focus on the combining both languages and thus include the custom formats from TRaSH Guide's original. These Custom Formats are recommended if you prefer German Dual Language releases but also want to download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
+
+In this Guide we focus on the combining both languages and thus include the custom formats from TRaSHs original Guide.
+
+These Custom Formats are recommended if you prefer German Dual Language releases but also want to download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
 
 ---
 
@@ -106,7 +110,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
 ### German Audio
 
-**Depending what's released first and available the following Workflow Logic will be used:**
+Depending what's released first and available the following Workflow Logic will be used:
 
 - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
 - When a `German` or `German DL` version is released it will upgrade to that version.
