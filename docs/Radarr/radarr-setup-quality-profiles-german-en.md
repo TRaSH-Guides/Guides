@@ -222,7 +222,7 @@ TRaSH provides great guides and explanations about them at the following links:
 
 ## Acknowledgements
 
-- A special thanks to [Jones](https://github.com/PCJones), Keewee, SceneNZBs and the awesome community over at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the creation of the guide.
+- A special thanks to the awesome community over at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the creation of the guide.
 - [TRaSH](https://trash-guides.info/), for granting us a small space on his guide for this, his knowledge, and his friendliness.
 - and to all the people that helped us to test those profiles and formats (and continue to do so).
 
