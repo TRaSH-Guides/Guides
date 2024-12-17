@@ -10,16 +10,19 @@ Regarding quality there isn't a best setup, it depends on your setup (hardware d
 
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
-TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="_blank" rel="noopener noreferrer"} to make your decision/choices easier. Remember that this chart does not include any of the following Custom Formats and you will still need to read this guide to get German only/German Dual Language("German DL") releases.
-
 ------
 
 ## Basics
 
-It is quite important that you follow and understand what is envisioned by Trash's guide:
+It is quite important that you follow and understand what is envisioned by TRaSH's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 - Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+
+!!! warning "Please read those two sections before continuing the guide as they hold important information. The rest of this guide will assume you did."
+
+!!! tip
+    TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German only/German Dual Language("German DL") releases.
 
 ------
 
@@ -28,7 +31,7 @@ It is quite important that you follow and understand what is envisioned by Trash
     The only two changes that are needed and **mandatory** for German Custom Formats to work is to set the preferred language profile for your releases to `Any` and disable the preference of Propers and Repacks.
 
     ??? success "Screenshot example - [Click to show/hide]"
-        ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
+        ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
     !!! info
         We do choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
@@ -98,10 +101,6 @@ Those should be used together and are there to properly rename your release and 
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
-!!! tip "Download Original Audio but prefer/upgrade to German Audio ^^only^^ if available in similar or better quality"
-
-    Set the Score of `{{ radarr['cf']['german-dl']['name'] }}` and `{{ radarr['cf']['german-dl-fallback']['name'] }}` to `300`
-
 !!! tip "Download German Audio ^^only^^"
 
     Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
@@ -135,6 +134,32 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 ### HD Bluray + WEB (1080p)
 
+{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-hd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+
+Use the following main settings in your profile.
+
+![Bluray + WEB](images/german-qp-bluray-webdl.png)
+
+??? abstract "Workflow Logic - [Click to show/hide]"
+
+    **Depending what's released first and available the following Workflow Logic will be used:**
+
+    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
+    - When a `German` or `German DL` version is released it will upgrade to that version.
+    - The downloaded media will be upgraded to any of the added Custom Formats until a score of `10000`.
+
 ------
 
 ### UHD Bluray + WEB (2160p)
@@ -147,15 +172,15 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-source-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
