@@ -31,14 +31,6 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 There are two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 In this Guide we focus on the first way and thus include the custom formats from TRaSH Guide's original. These Custom Formats are recommended if you prefer German Dual Language releases but will also want download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
 
-??? abstract "Workflow Logic - [Click to show/hide]"
-
-    **Depending what's released first and available the following Workflow Logic will be used:**
-
-    - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
-    - When a `German` or `German DL` version is released it will upgrade to that version.
-    - The downloaded media will be upgraded to any of the added Custom Formats until whats defined in the Quality Profile.
-
 ---
 
 ## Radarr specific settings
@@ -115,18 +107,11 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
 ### German Audio
 
-There are multiple options on how to deal with german audio depending on your liking.
+**Depending what's released first and available the following Workflow Logic will be used:**
 
-??? abstract "Explanation - [Click to show/hide]"
-
-    !!! tip "Multi-Language definition per indexers"
-
-        Some Indexers in **Radarr** will let you choose which audio is normally included inside a `Multi-Language` release as an option. You should choose only `Original` and `German` if you decide to use it.
-        This option should only be used for German indexers where you are sure that `Multi-Language` does include both `Original` and `German` audio. Doing so in more "international" indexers can create to false positive with the German Audio CFs.
-
-Those should be used together and are there to properly rename your release and prefer German audio over other Languages. Examples:
-
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+- When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
+- When a `German` or `German DL` version is released it will upgrade to that version.
+- The downloaded media will be upgraded to any of the added Custom Formats until whats defined in the Quality Profile under `Upgrade Until Custom Format Score`.
 
 !!! tip "Download German Audio ^^only^^"
 
@@ -135,8 +120,8 @@ Those should be used together and are there to properly rename your release and 
 
 !!! warning "Releases where German is the original language"
 
-    Due to technical limitations releases where German is the original language of the movie will be identified as `German DL` even though they might not contain another language.
-    The only (cosmetical) impact of this is that the scores of those releases will be higher by `1000` than they are supposed to be.
+    Due to technical limitations releases where German is the original language of the movie it will be identified as `German DL` even though they might not contain another language.
+    The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than they are supposed to be.
 
 ---
 
