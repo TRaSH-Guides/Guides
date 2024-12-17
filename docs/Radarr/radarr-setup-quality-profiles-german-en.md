@@ -79,7 +79,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
     - WEBDL-720p
     - WEBRip-720p
 
-     and name it: `Bluray|WEB`
+    and name it: `Bluray|WEB`
 
     !!! warning "Make sure you don't check the BR-DISK."
 
