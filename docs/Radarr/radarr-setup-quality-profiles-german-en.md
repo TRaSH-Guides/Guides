@@ -45,13 +45,13 @@ In this Guide we focus on the first way and thus include the custom formats from
 
 There are a couple of changes that are needed for German Custom Formats to work properly:
 
-!!! abstract "Set the language to `Any` in the quality profile"
+??? abstract "Set the language to `Any` in the quality profile - [Click to show/hide]"
     We choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
-!!! abstract "Proper and Repacks - [Click to show/hide]"
+??? abstract "Propers and Repacks - [Click to show/hide]"
     Change the Propers and Repacks settings in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
 
     This way you make sure the Custom Formats preferences will be used and not ignored.
@@ -61,9 +61,9 @@ There are a couple of changes that are needed for German Custom Formats to work 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
 
-!!! abstract "Merge Qualities - [Click to show/hide]"
+??? abstract "Merge Qualities - [Click to show/hide]"
 
-    In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](Radarr/Tips/Merge-quality/) into one group.
+    In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
 
     We want to merge the following Qualities together:
 
@@ -88,13 +88,13 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Tip"
         If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
 
-!!! abstract "Media Management - Standard Movie Format and Movie Folder Format"
+??? abstract "Media Management - Standard Movie Format and Movie Folder Format - [Click to show/hide]"
     Please have a look there: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
     !!! tip "Movie format/folder with French movie name"
         Radarr supports the ISO-2 naming convention for naming a movie, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
-!!! abstract "Indexers - Multi Languages option"
+??? abstract "Indexers - Multi Languages option - [Click to show/hide]"
     In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you will select `Original` and `German`.
     This option should only be used for German indexers. Doing so in more "international" indexers can create false positives with the German Audio CFs.
 
