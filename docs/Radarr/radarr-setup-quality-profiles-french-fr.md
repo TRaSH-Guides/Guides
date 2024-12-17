@@ -261,7 +261,7 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 ---
 
-#### Anime
+### Anime
 
 Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + français).
 
