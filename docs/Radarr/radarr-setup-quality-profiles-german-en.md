@@ -100,6 +100,17 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
 ---
 
+## Dealing with German Umlauts and German titles
+
+There are two facts which can lead to Radarr not being able to match a German movie release.
+
+- Indexers typically don't allow the use of German Umlauts in release names.
+- Most movies have different titles in German than they have in English.
+
+To help with this there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr) which acts as a middle layer between Radarr and the Indexer to makes sure Umlauts and German titles are mapped correctly.
+
+---
+
 ## Score logic
 
 --8<-- "includes/cf/score-attention.md"
