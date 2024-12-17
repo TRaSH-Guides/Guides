@@ -4,11 +4,10 @@
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
-So what is the best way to set up the Custom Formats and which one to use with which scores to get German (or German+English dual) audio?
-
-Regarding quality there isn't a best setup, it depends on your setup (hardware devices) and your own personal preferences.
-
+There isn't _the_ best way to set up Custom Formats to get German (or German+English dual) audio, it depends on your setup (hardware devices) and your own personal preferences.
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
+
+In this Guide we try to give a recommendation which should suite most users.
 
 ---
 
@@ -28,8 +27,8 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 ## Using this Guide
 
-There are two ways of using those German Custom Formats, with and without TRaSH Guide's original, international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
-In this Guide we focus on the first way and thus include the custom formats from TRaSH Guide's original. These Custom Formats are recommended if you prefer German Dual Language releases but will also want download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
+There are two ways of using those German Custom Formats, with and without TRaSH Guide's original international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+In this Guide we focus on the combining both languages and thus include the custom formats from TRaSH Guide's original. These Custom Formats are recommended if you prefer German Dual Language releases but also want to download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
 
 ---
 
@@ -43,7 +42,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
-??? abstract "Propers and Repacks - [Click to show/hide]"
+??? abstract "Disable Propers and Repacks - [Click to show/hide]"
     Change the Propers and Repacks settings in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
 
     This way you make sure the Custom Formats preferences will be used and not ignored.
@@ -80,13 +79,13 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Tip"
         If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
 
-??? abstract "Media Management - Standard Movie Format and Movie Folder Format - [Click to show/hide]"
+??? abstract "Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]"
     Please have a look there: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
     !!! tip "Movie format/folder with French movie name"
         Radarr supports the ISO-2 naming convention for naming a movie, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
-??? abstract "Indexers - Multi Languages option - [Click to show/hide]"
+??? abstract "Change the Indexers Multi Languages option - [Click to show/hide]"
     In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you will select `Original` and `German`.
     This option should only be used for German indexers. Doing so in more "international" indexers can create false positives with the German Audio CFs.
 
