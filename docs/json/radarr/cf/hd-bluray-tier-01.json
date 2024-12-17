@@ -3,7 +3,9 @@
   "trash_scores": {
     "default": 1800,
     "sqp-1-1080p": 1100,
-    "sqp-1-2160p": 1100
+    "sqp-1-web-1080p": 1100,
+    "sqp-1-2160p": 1100,
+    "french-multi-vf": 0
   },
   "name": "HD Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,

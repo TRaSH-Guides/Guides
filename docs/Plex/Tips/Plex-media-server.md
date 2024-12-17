@@ -4,21 +4,17 @@ So, what are the best Plex Media Server settings?
 
 This is something that can't be answered, as it depends on the use case and your personal preference.
 
-!!! danger ""
+!!! note "Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. :bangbang:"
 
-    Here we will provide some suggestions and try to explain why we recommend these settings. Adjust it to your liking, and keep in mind that it is only a suggestion. :bangbang:
-
-!!! warning
-
-    Some settings are only visible for Plex Pass holders.
+!!! warning "Some settings are only visible for Plex Pass holders."
 
 All changes need to be done on your Plex Media Server.
 
 ![!Plex App](images/plex-settings-icon.png)
 
-!!! info "Why didn't you cover option .... ?"
+!!! question "Why didn't you cover option .... ?"
 
-    We will only cover settings that we think might be interesting or are personal preference, if you would like me to cover some other settings, please contact me on [![Discord chat](https://trash-guides.info/assets/discord.png)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
+    We will only cover settings that we think might be interesting or are personal preference, if you would like to see other settings covered, please contact us on [![Discord chat](https://trash-guides.info/assets/discord.png)](https://trash-guides.info/discord){:target="\_blank" rel="noopener noreferrer"}
 
 ## Settings
 
@@ -62,7 +58,7 @@ When a change is detected in the source location for a library’s content, the 
 
 ??? tip "TIP - Autoscan - [Click to show/hide]"
 
-    If for some reason ex. your operating systems don’t provide this trigger or your storage is mounted on a network (SMB/NFS/Cloud Storage) or your library just doesn't automatically scan, or is just plain impractical, You might want to consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.
+    In some cases, an operating system may not support this trigger - for example, if your storage is mounted on a network (SMB/NFS/Cloud Storage). In other cases, you may just find that your library doesn't automatically scan on its own. In these cases, you could consider using autoscan. IBRACORP (A Youtube channel we collaborate with) has a video explaining it in further detail.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/JYBVAzJBw2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -130,6 +126,18 @@ On low-powered systems (e.g. ARM-based NAS devices), it can be beneficial to run
 
     *This makes sure it uses fewer resources and ensures they do not interfere with regular streaming.*
 
+#### Marker source
+
+![!Settings - Library - Marker source](images/settings-library-marker-source.png)
+
+Credits markers can be generated locally and/or retrieved via an online database. Online markers may not always exist, if this preference is set to 'both' then any locally detected markers are submitted anonymously back to the online database for future use.
+
+!!! success ""
+
+    **Suggested: `both, try online first`**
+
+    *If you notice that the markers don't match your releases try `local detection only`.*
+
 #### Generate video preview thumbnails
 
 ![!Settings - Library - Generate video preview thumbnails](images/settings-library-generate-video-preview-thumbnails.png)
@@ -166,6 +174,34 @@ You can choose to have TV episodes analyzed to try and detect when the “intro�
 
     **Suggested: `as a scheduled task and when media is added`**
 
+#### Generate credits video markers
+
+![!Settings - Library - Generate credits video markers](images/settings-library-generate-credits-video-markers.png)
+
+!!! success ""
+
+    **Suggested: `as a scheduled task`**
+
+    *or*
+
+    **Suggested: `as a scheduled task and when media is added`**
+
+#### Generate voice activity data
+
+![!Settings - Library - Generate voice activity data](images/settings-library-generate-voice-activity-data.png)
+
+This allows the server to analyze the audio stream to detect voice activity for movies and episodes. The analysis must be run on the video before it’s possible to make use of auto-syncing for that video.
+
+!!! success ""
+
+    **Suggested: `as a scheduled task`**
+
+    *or*
+
+    **Suggested: `as a scheduled task and when media is added`**
+
+    [more info](https://support.plex.tv/articles/auto-sync-subtitles/){:target="\_blank" rel="noopener noreferrer"}
+
 #### Generate chapter thumbnails
 
 ![!Settings - Library - Generate chapter thumbnails](images/settings-library-generate-chapter-thumbnails.png)
@@ -179,6 +215,20 @@ Chapter thumbnails provide images in the chapter view on supported apps. They ca
     *or*
 
     **Suggested: `as a scheduled task and when media is added`**
+
+#### Database Cache Size (MB)
+
+Set the size of the main database cache, in MB. The default value is 40 and should be sufficient for just about every user. Increasing much beyond the default value is likely to only benefit users with extremely large media collections (as in, hundreds of thousands of episodes or music tracks).
+
+!!! success ""
+
+    **Suggested: `1024`**
+
+    *or*
+
+    **Suggested: `2048`**
+
+    *These results are provided by users from our community*
 
 ---
 
@@ -356,6 +406,21 @@ This feature allows Plex Media Server to maintain high visual fidelity of conten
 
     Plex’s tone mapping support should generally be able to produce good color mapping and help avoid the “washed-out” colors that occur when converting HDR content without tone mapping.
 
+#### Tonemapping Algorithm
+
+![!Settings - Transcoder - Tone Mapping Algorithm](images/settings-transcoder-tonemapping-algorithm.png)
+
+Plex Media Server owners can choose which tone mapping algorithm is used when transcoding HDR content to SDR. Note: this feature is not yet available on Intel-based Windows systems.
+
+!!! success ""
+
+    **Suggested: `hable`**
+
+    *This is a personal preference depending on what you prefer*<br>
+    *- hable: Preserve both dark and bright details better than reinhard, at the cost of slightly darkening everything. Use it when detail preservation is more important than color and brightness accuracy.*
+
+    [more info](https://support.plex.tv/articles/hdr-to-sdr-tone-mapping/#toc-3){:target="\_blank" rel="noopener noreferrer"}
+
 #### Use hardware acceleration when available
 
 ![!Settings - Transcoder - Use hardware acceleration when available](images/settings-transcoder-use-hardware-acceleration-when-available.png)
@@ -375,6 +440,22 @@ To use Hardware-Accelerated Encoding in Plex Media Server.
 !!! success ""
 
     **Suggested: `Enabled`**
+
+#### Hardware transcoding device
+
+The GPU or other hardware device that will be used for transcoding. The default setting will have the Auto option selected. If you have multiple devices capable of hardware-accelerated transcoding (e.g. both an integrated and discrete GPU), you can select a particular device.
+
+!!! success ""
+
+    **Suggested: `Whichever device you wish to use for hardware transcoding`**
+
+#### Maximum simultaneous video transcode
+
+Set the maximum number of transcoding sessions that you will allow simultaneously. For instance, if you only want to allow two transcodes to happen at any one time (even if your computer is capable of more), you can set the value to 2.
+
+!!! success ""
+
+    **Suggested: `However many your setup is capable of`**
 
 ---
 
@@ -399,7 +480,7 @@ Here you will find the libraries you've added to your Plex Media Server.
     - Anime `(/data/media/anime)`
     - etc
 
-!!! info "I will only cover the library settings for Movies and TV shows"
+!!! info "We will only cover the library settings for Movies and TV shows"
 
 #### Movies
 
@@ -465,6 +546,40 @@ Here you will find the libraries you've added to your Plex Media Server.
 
         *When Disabled your movies will show up normally when you use library view, This doesn't mean it will disable the collection view.*
 
+![!Plex Settings - Libraries - Movies](images/manage-libraries-movies-part5.png)
+
+1. Enable credits detection
+
+    In some cases, you may have more than one library and perhaps it doesn’t make sense to do this detection for all of your libraries. For any individual library, you can choose whether or not content in that library is included in detecting credits.
+
+    !!! success ""
+
+        **Suggested: `Enabled`**
+
+        *If Enable credits detection is disabled, then content from that library will not be included for analysis. Disabling for the library will also prevent the skip credits button from appearing and any skip credits behavior such as minimizing even if the markers have already been detected*
+
+1. Ad detection
+
+    !!! success ""
+
+        **Suggested: `For all items`**
+
+1. Enable voice activity detection
+
+    Depending if you want to make use of Auto-Sync Subtitles.
+
+    !!! success ""
+
+        **Suggested: `Enabled`**
+
+        *If you want to make use of Auto-Sync Subtitles for this library*
+
+        or
+
+        **Suggest: `Disabled`**
+
+        *If you don't want to make use of Auto-Sync Subtitles for this library*
+
 #### TV
 
 ![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part1.png)
@@ -479,7 +594,16 @@ Here you will find the libraries you've added to your Plex Media Server.
 
 ![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part2.png)
 
-1. How episodes are named on disk. If your naming follows The MovieDB or TheTVDB choose that here.
+1. Episode ordering
+
+    This depends on how episodes are named on the disk.
+
+    !!! success ""
+
+        **Suggested: `TheTVDB`**
+
+        *Sonarr fully relies on TheTVDB for the naming scheme.*
+
 1. Use season titles when available.
 1. When scanning this library, use local posters and artwork if present. (Local subtitles files will be used whether this is enabled or not)
 
@@ -515,13 +639,8 @@ Here you will find the libraries you've added to your Plex Media Server.
         *Besides that, it uses a lot of disk space and high I/O, No one in my family uses FastForward/Rewind but they use the skip forward/backward.*
 
 1. This deletes the preview thumbnails it generated before you disabled this option
-1. If you want to show your Collection in your library
 
-    !!! success ""
-
-        **Suggested: `Disabled`**
-
-        *When Disabled your tv show will show up normally when you use library view, This doesn't mean it will disable the collection view.*
+![!Plex Settings - Libraries - TV](images/manage-libraries-tv-part5.png)
 
 1. Generate intro detection for items in this library when enabled in server settings.
 
@@ -529,13 +648,45 @@ Here you will find the libraries you've added to your Plex Media Server.
 
         **Suggested: `Enabled`**
 
-        *Ever watch a TV show and it starts playing that same minute and a half credits intro that you've already watched multiple times? Well, you can have your Plex Media Server analyze the TV shows to try and detect those introductions and then let you skip through them with a single click!*
+        *Have you ever watched a TV show, and it starts playing that same minute and a half credits intro that you've already seen multiple times? Well, you can have your Plex Media Server analyze your TV shows to try and detect those introductions, and then let you skip through them with a single click!*
+
+1. Enable credits detection
+
+    In some cases, you may have more than one library and perhaps it doesn’t make sense to do this detection for all of your libraries. For any individual library, you can choose whether or not content in that library is included in detecting credits.
+
+    !!! success ""
+
+        **Suggested: `Enabled`**
+
+        *If Enable credits detection is disabled, then content from that library will not be included for analysis. Disabling for the library will also prevent the skip credits button from appearing and any skip credits behavior such as minimizing even if the markers have already been detected*
+
+1. Ad detection
+
+    !!! success ""
+
+        **Suggested: `For all items`**
+
+1. Enable voice activity detection
+
+    Depending if you want to make use of Auto-Sync Subtitles.
+
+    !!! success ""
+
+        **Suggested: `Enabled`**
+
+        *If you want to make use of Auto-Sync Subtitles for this library*
+
+        or
+
+        **Suggest: `Disabled`**
+
+        *If you don't want to make use of Auto-Sync Subtitles for this library*
 
 ---
 
-For the information in this guide, we made use of the following sources
+For the information in this guide, we made use of the following sources.
 
-- Information we gathered from Several Discord servers
+- Information we gathered from Several Discord servers and our own community
 - [Plex Support Articles](https://support.plex.tv/articles/){:target="\_blank" rel="noopener noreferrer"}
 - Extra Information gathered from a Plex employee
 - Own experience

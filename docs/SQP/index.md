@@ -20,6 +20,7 @@ The Special Quality Profiles are custom-made and tested Quality Profiles for spe
 ## The Following SQP are available
 
 - [SQP-1 (1080p) - _Streaming Optimized_](/SQP/1){:target="\_blank" rel="noopener noreferrer"}
+- [SQP-1 WEB (1080p) - _Streaming Optimized_](/SQP/1-web){:target="\_blank" rel="noopener noreferrer"}
 - [SQP-1 (2160p) - _Streaming Optimized_](/SQP/1-4k){:target="\_blank" rel="noopener noreferrer"}
 - [SQP-2 (2160p) - _UHD Remux|Bluray|IMAX-E_](/SQP/2){:target="\_blank" rel="noopener noreferrer"}
 - [SQP-3 (2160p) - _UHD Remux|IMAX-E_](/SQP/3){:target="\_blank" rel="noopener noreferrer"}
@@ -58,4 +59,4 @@ The Special Quality Profiles are custom-made and tested Quality Profiles for spe
     - If you have any questions or need extra info about an SQP, please use the dedicated channel of that SQP to ask, so we know which SQP you're using.
     - Follow the setup instructions and don't skip steps.
 
-{! include-markdown "../../includes/support.md" !}
+--8<-- "includes/support.md"

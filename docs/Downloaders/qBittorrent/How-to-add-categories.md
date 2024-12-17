@@ -6,7 +6,7 @@ This basic example is based on the use of docker images
 
     Keep in mind the path are set up so it works with hardlinks and instant moves.
 
-    More info [HERE](/Hardlinks/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
+    More info [HERE](/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/){:target="_blank" rel="noopener noreferrer"}
 
 !!! info
 

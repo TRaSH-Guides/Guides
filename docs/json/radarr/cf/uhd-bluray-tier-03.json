@@ -4,7 +4,8 @@
     "default": 1700,
     "sqp-1-2160p": 1000,
     "sqp-2": 2100,
-    "sqp-5": 2100
+    "sqp-5": 2100,
+    "french-multi-vf": 0
   },
   "name": "UHD Bluray Tier 03",
   "includeCustomFormatWhenRenaming": false,

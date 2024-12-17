@@ -1,9 +1,13 @@
 {
   "trash_id": "07a32f77690263bb9fda1842db7e273f",
   "trash_scores": {
+    "default": -10000,
     "anime-sonarr": -10000,
-    "french-vostfr": 1000,
-    "french-anime": 101
+    "french-anime-multi": 0,
+    "french-anime-vostfr": 101,
+    "french-multi-vf": 0,
+    "french-multi-vo": 0,
+    "french-vostfr": 1000
   },
   "trash_regex": "https://regex101.com/r/sWCfAN/1",
   "name": "VOSTFR",

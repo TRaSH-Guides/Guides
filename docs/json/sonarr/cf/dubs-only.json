@@ -25,12 +25,12 @@
       }
     },
     {
-      "name": "KaiDubs",
+      "name": "KaiDubs (Not Dual Audio)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KaiDubs)\\b"
+        "value": "^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\b(KaiDubs)\\b"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?!.*(dual[ ._-]?audio|[\\[(]dual[\\]]|(JA|ZH)\\+EN|EN\\+(JA|ZH))).*\\bKS\\b"
+        "value": "^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO))).*\\bKS\\b"
       }
     },
     {

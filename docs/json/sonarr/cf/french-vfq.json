@@ -1,6 +1,6 @@
 {
   "trash_id": "7a7f4e4f58bd1058440236d033a90b67",
-  "trash_regex": "https://regex101.com/r/j1wmmv/3",
+  "trash_regex": "https://regex101.com/r/j1wmmv",
   "name": "VFQ",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
@@ -10,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(VFQ|(?<=MULTi[ .])FR(A|ENCH))\\b"
+        "value": "\\b(VFQ|\\d{3,4}p[ .]CAN|(?<=MULTi[ .])FR(A|ENCH))\\b"
       }
     },
     {
@@ -19,7 +19,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\b(VF2)\\b"
+        "value": "\\b(VF2|(VF(F|Q)[ .]VF(F|Q)))\\b"
       }
     }
   ]

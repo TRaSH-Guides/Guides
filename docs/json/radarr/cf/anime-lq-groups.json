@@ -691,15 +691,6 @@
       }
     },
     {
-      "name": "Moozzi2",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Moozzi2)\\b"
-      }
-    },
-    {
       "name": "Mr. Deadpool",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,

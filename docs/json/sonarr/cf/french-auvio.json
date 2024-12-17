@@ -1,0 +1,43 @@
+{
+  "trash_id": "b0d6195c23ae254932da00512db7e8a8",
+  "name": "AUViO",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "AUViO",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AUVIO)\\b"
+      }
+    },
+    {
+      "name": "Radio Télévision Belge Francophone",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RTBF)\\b"
+      }
+    }
+  ]
+}

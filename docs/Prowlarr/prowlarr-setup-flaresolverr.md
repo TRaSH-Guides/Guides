@@ -1,4 +1,4 @@
-# How to setup FlareSolverr
+# How to set up FlareSolverr
 
 [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr){:target="\_blank" rel="noopener noreferrer"} is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
 
@@ -6,7 +6,9 @@
 
     - A FlareSolverr Proxy will only be used for requests if and only if Cloudflare is detected by Prowlarr
     - A FlareSolverr Proxy will only be used for requests if and only if the Proxy and the Indexer have matching tags
-    - A Flaresolverr Proxy configured without any tags or has no indexers with matching tags it will be disabled.
+    - A FlareSolverr Proxy configured without any tags or has no indexers with matching tags will be disabled.
+
+!!! bug "FlareSolverr is currently non-functional. It is also being monitored by the Cloudflare team, so it is unlikely to ever be fixed.<br><br>If you're using an indexer that needs FlaresSolverr and if they offer it, try another base URL till you find one that works. If none work, then you're out of luck.<br><br>There is no need to contact Servarr or Sonarr support. They are not the FlareSolverr support team and cannot help you with questions that don't relate specifically to adding FlareSolverr to Prowlarr.<br><br>FlareSolverr is a third-party program that solves Cloudflare captchas for some indexers. They use GitHub for support, and you should go there to ask them questions or catch up on the current status of the program.<br><br>The current open issue on their GitHub can be found [HERE](https://github.com/FlareSolverr/FlareSolverr/issues/1253){:target="\_blank" rel="noopener noreferrer"}"
 
 ## Install FlareSolverr
 
@@ -22,7 +24,7 @@ Click on the + sign and select `FlareSolverr`
 
 ![Add Indexers](images/add-indexer-proxy-flaresolverr.png)
 
-Add the following info
+Add the following info.
 
 ![Add Proxy FlareSolverr](images/add-proxy-flaresolverr.png)
 
@@ -35,7 +37,7 @@ Add the following info
 
 ## Add FlareSolverr to your indexer
 
-Select the indexer that you want to use with FlareSolverr
+Select the indexer that you want to use with FlareSolverr.
 
 ![Select Indexer](images/select-indexer.png)
 

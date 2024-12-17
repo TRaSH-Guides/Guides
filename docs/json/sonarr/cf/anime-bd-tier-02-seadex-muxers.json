@@ -142,6 +142,15 @@
       }
     },
     {
+      "name": "Cunnysseur",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Cunnysseur)\\b"
+      }
+    },
+    {
       "name": "D-Z0N3",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -256,6 +265,15 @@
       "required": false,
       "fields": {
         "value": "\\[Metal\\]|-Metal\\b"
+      }
+    },
+    {
+      "name": "Moxie",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[Moxie\\]|-Moxie\\b"
       }
     },
     {

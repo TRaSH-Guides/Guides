@@ -1,10 +1,10 @@
 # Bazarr Scripts
 
-!!! note ""
+A collection of community-provided and maintained scripts for Bazarr.
 
-    Here you will find a collection of Scripts you can use with Bazarr.
+If you have a script you want to share, don't hesitate to create a [PR](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) for it.
 
-    Most of them are provided by other users, if you got a script you want to share don't hesitate to create a [PR](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md) for it
+!!! warning "Because these scripts are community-provided and maintained we can't assure that they are still 100% working"
 
 ## 2 to 3 language code
 

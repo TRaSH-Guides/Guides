@@ -20,6 +20,6 @@
 
         !!! info "VOSTFR uniquement pour les anime"
 
-            Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime'] }}` pour le Format Personnalisés [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr), et ignorer tous les Formats Personnalisés `Multi` et version française.
+            Dans cet exemple, si vous préférez la VOSTFR à d'éventuelles releases MULTi/DUAL (audio original et français), vous devez donner un score de `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime-vostfr'] }}` pour le Format Personnalisés [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr).
 
             (Optionnel) Vous pouvez également essayer de configurer [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} (*en anglais*) pour obtenir les sous-titres français de vos animes. Cette option est toute fois moins recommandée, car on trouve moins de sous-titres pour les animes en ligne que pour les séries habituelles. Cependant, cela peut être une alternative intéressante.

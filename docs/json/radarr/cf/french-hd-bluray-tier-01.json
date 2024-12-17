@@ -1,7 +1,10 @@
 {
   "trash_id": "5322da05b19d857acc1e75be3edf47b3",
   "trash_scores": {
-    "default": 1800
+    "default": 1800,
+    "french-multi-vf": 1800,
+    "french-multi-vo": 1800,
+    "french-vostfr": 0
   },
   "name": "FR HD Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,

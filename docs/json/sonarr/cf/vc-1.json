@@ -1,0 +1,16 @@
+{
+  "trash_id": "7470a681e6205243983c4410ee4c920f",
+  "name": "VC-1",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "VC-1",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\bVC[-_. ]?1\\b"
+      }
+    }
+  ]
+}
