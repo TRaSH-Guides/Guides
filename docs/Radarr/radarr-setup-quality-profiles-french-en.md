@@ -194,7 +194,9 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 **The following Custom Formats are required:**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
@@ -204,7 +206,11 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 **The following Custom Formats are optional:**
 
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
+
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -233,6 +239,8 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-en.md" !}
 
+{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
@@ -244,6 +252,8 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 

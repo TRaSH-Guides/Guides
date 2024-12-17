@@ -106,6 +106,15 @@
       }
     },
     {
+      "name": "SoM",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[SoM\\]|-SoM\\b"
+      }
+    },
+    {
       "name": "Vanilla",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
