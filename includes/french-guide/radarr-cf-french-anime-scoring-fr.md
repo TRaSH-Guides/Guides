@@ -1,4 +1,4 @@
-??? abstract "HQ Source Groups - [Cliquer pour afficher/masquer]"
+??? abstract "Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                                           | Trash ID                                                   |                                 Score profile VOSTFR                                  |                                Score profile MULTI.VO                                |
     |---------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|:-------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
