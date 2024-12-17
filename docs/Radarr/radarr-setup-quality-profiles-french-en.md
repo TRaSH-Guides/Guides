@@ -259,7 +259,7 @@ Note: The `Advanced Audio` Custom Formats aren't used in the HD Bluray + WEB pro
 
 ---
 
-#### Anime
+### Anime
 
 If you are looking to grab Anime with either French subs or MULTi audio (original + French).
 
