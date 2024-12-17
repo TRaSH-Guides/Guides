@@ -28,5 +28,3 @@
 
         - [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups), which can be controversial for people looking for Dual Language release. I encourage you to not use it.
         - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), it may include Scene groups already in [{{ radarr['cf']['german-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-scene) Custom Format. Which is used for fallback to be sure to get a Dual Language release.
-
-        {! include-markdown "../../includes/cf/radarr-optional.md" !}
