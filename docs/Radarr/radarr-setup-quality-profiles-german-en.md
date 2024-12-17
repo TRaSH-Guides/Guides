@@ -30,7 +30,7 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 There are two ways of using those German Custom Formats, with and without TRaSH Guide's original international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 
-In this Guide we focus on the combining both languages and thus include the custom formats from TRaSHs original Guide.
+In this Guide we focus on combining both languages and thus include the custom formats from TRaSHs original Guide.
 
 These Custom Formats are recommended if you prefer German Dual Language releases but also want to download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
 
