@@ -16,15 +16,6 @@
       }
     },
     {
-      "name": "BALENCiAGA",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(BALENCiAGA)$"
-      }
-    },
-    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,

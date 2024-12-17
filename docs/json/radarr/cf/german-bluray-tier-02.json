@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "ABJ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(ABJ)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
