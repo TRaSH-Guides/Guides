@@ -4,7 +4,7 @@
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
-There isn't _the_ best way to set up Custom Formats to get German (or German+English dual) audio, it depends on your setup (hardware devices) and your own personal preferences.
+There isn't *the* best way to set up Custom Formats to get German (or German+English dual) audio, it depends on your setup (hardware devices) and your own personal preferences.
 Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
 
 In this Guide we try to give a recommendation which should suite most users.
