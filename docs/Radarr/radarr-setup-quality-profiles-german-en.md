@@ -133,7 +133,11 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 ------
 
-#### Bluray + WEB
+### HD Bluray + WEB (1080p)
+
+------
+
+### UHD Bluray + WEB (2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 

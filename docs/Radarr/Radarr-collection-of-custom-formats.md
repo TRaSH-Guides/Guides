@@ -3181,8 +3181,9 @@ We've made 3 guides related to this.
 
 ---
 
-
 ## German Audio Version
+
+---
 
 ### German only
 
@@ -3248,9 +3249,9 @@ We've made 3 guides related to this.
 
 ---
 
----
-
 ## German HQ Source Groups
+
+---
 
 ### German Tier 01
 
@@ -3273,7 +3274,6 @@ We've made 3 guides related to this.
 ??? question "Language Not French - [Click to show/hide]"
 
     Language Specification is Not French
-
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3353,7 +3353,6 @@ We've made 3 guides related to this.
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
-
 
 ### German LQ
 
