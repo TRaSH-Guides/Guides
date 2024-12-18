@@ -79,6 +79,15 @@
       }
     },
     {
+      "name": "CNY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(CNY)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,
