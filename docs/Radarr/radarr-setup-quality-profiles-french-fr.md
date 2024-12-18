@@ -267,11 +267,11 @@ Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + fran�
 
 {! include-markdown "../../includes/french-guide/radarr-french-anime-info-fr.md" !}
 
+{! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-fr.md" !}
+
 {! include-markdown "../../includes/cf/radarr-anime-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
-
-{! include-markdown "../../includes/french-guide/radarr-cf-french-anime-scoring-fr.md" !}
 
 ---
 
