@@ -1,4 +1,4 @@
-# How to setup Quality Profiles German
+# How to setup Quality Profiles (German)
 
 *aka How to setup Custom Formats to get German Audio if available*<br><br>
 
@@ -117,9 +117,9 @@ To help with this there is a handy service called [Umlautadaptarr](https://githu
 
 ---
 
-## Quality Profiles
+## Quality profiles
 
-### German Audio
+### German audio
 
 Depending on what's released first and available the following Workflow Logic will be used:
 
@@ -127,7 +127,7 @@ Depending on what's released first and available the following Workflow Logic wi
 - When a `German` or `German DL` version is released it will upgrade to that version.
 - The downloaded media will be upgraded to any of the added Custom Formats until the defined Score defined in the Quality Profile under `Upgrade Until Custom Format Score` is reached.
 
-!!! tip "Download German Audio ^^only^^"
+!!! tip "Download German audio ^^only^^"
 
     Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
     Note: Most German releases come as Dual Language so you might still see an English audio track beside the German one.
@@ -136,6 +136,8 @@ Depending on what's released first and available the following Workflow Logic wi
 
     Due to technical limitations releases where German is the original language of the movie it will be identified as `German DL` even though they might not contain another language.
     The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than they are supposed to be.
+
+{! include-markdown "../../includes/german-guide/radarr-german-advanced-audio-information-en.md" !}
 
 ---
 
