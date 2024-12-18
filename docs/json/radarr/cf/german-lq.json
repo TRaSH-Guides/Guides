@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Tylor)"
+        "value": "(Tylor\\.D)$"
       }
     },
     {
