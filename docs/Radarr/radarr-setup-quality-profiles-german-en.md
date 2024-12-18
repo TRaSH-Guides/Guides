@@ -28,7 +28,7 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 ## Using this Guide
 
-There are two ways of using those German Custom Formats, with and without TRaSH Guide's original international/english based group tiers (which can be found there: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+There are two ways of using this Guide, with and without TRaSH original Guide's international/english based group tiers (which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 
 In this Guide we focus on combining both languages and thus include the custom formats from TRaSHs original Guide.
 
@@ -41,17 +41,17 @@ These Custom Formats are recommended if you prefer German Dual Language releases
 There are a couple of changes that are needed for German Custom Formats to work properly:
 
 ??? abstract "Set the language to `Any` in the quality profile - [Click to show/hide]"
-    We choose `Any` for the language profile, as otherwise an English movie identified with German audio will not be grabbed and vice-versa.
+    We choose `Any` for the language profile, as otherwise English movies identified with German audio and vice-versa will not be grabbed.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
 
 ??? abstract "Disable Propers and Repacks - [Click to show/hide]"
-    Change the Propers and Repacks settings in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Format.
+    Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Formats.
 
     This way you make sure the Custom Formats preferences will be used and not ignored.
 
-    You will still be able to prefer Propers and Repacks through Custom Formats that you can find at a later stage in this guide.
+    You will still be able to prefer Propers and Repacks through the provided Custom Formats.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
@@ -60,7 +60,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
     In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
 
-    We want to merge the following Qualities together:
+    We want to merge the following Qualities:
 
     - Remux-2160p
     - Bluray-2160p
@@ -76,7 +76,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
     and name it: `Bluray|WEB`
 
-    !!! warning "Make sure you don't check the BR-DISK."
+    !!! warning "Make sure you don't check BR-DISK."
 
     {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -84,14 +84,14 @@ There are a couple of changes that are needed for German Custom Formats to work 
         If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
 
 ??? abstract "Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]"
-    Please have a look there: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
+    Please have a look here: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
     !!! tip "Movie format/folder with French movie name"
-        Radarr supports the ISO-2 naming convention for naming a movie, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
+        Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
 ??? abstract "Change the Indexers Multi Languages option - [Click to show/hide]"
-    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you will select `Original` and `German`.
-    This option should only be used for German indexers. Doing so in more "international" indexers can create false positives with the German Audio CFs.
+    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you should select `Original` and `German`.
+    This option should only be used for German indexers. Doing so on "international" indexers can create false positives with the German Audio CFs.
 
     If you do not see the option, it is because you need to activate the "Advanced Options" of Radarr.
 
@@ -121,11 +121,11 @@ To help with this there is a handy service called [Umlautadaptarr](https://githu
 
 ### German Audio
 
-Depending what's released first and available the following Workflow Logic will be used:
+Depending on what's released first and available the following Workflow Logic will be used:
 
 - When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
 - When a `German` or `German DL` version is released it will upgrade to that version.
-- The downloaded media will be upgraded to any of the added Custom Formats until whats defined in the Quality Profile under `Upgrade Until Custom Format Score`.
+- The downloaded media will be upgraded to any of the added Custom Formats until the defined Score defined in the Quality Profile under `Upgrade Until Custom Format Score` is reached.
 
 !!! tip "Download German Audio ^^only^^"
 
