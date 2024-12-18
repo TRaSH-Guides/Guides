@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "4SF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(4SF)$"
+      }
+    },
+    {
       "name": "WebDL",
       "implementation": "SourceSpecification",
       "negate": false,
