@@ -3181,74 +3181,6 @@ We've made 3 guides related to this.
 
 ---
 
-## German Audio Version
-
----
-
-### German only
-
-??? question "German only - [Click to show/hide]"
-
-    Recognize movies that includes only German audio. Will rename the release.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German and Original Language
-
-??? question "German and Original Language (German.DL) - [Click to show/hide]"
-
-    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### German and Original Language (fallback)
-
-??? question "German and Original Language (German.DL) fallback - [Click to show/hide]"
-
-    Recognize movies that includes German audio together with the original language where the indexer does provide wrong language information (e.g. German only even though the release title suggests it's dual language).
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-fallback.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Original Language
-
-??? question "Original Language - [Click to show/hide]"
-
-    Recognize movies that includes the original language but not the German language.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/original-language.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
 ## German HQ Source Groups
 
 ---
@@ -3521,3 +3453,65 @@ We've made 3 guides related to this.
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
+
+### German only
+
+??? question "German only - [Click to show/hide]"
+
+    Recognize movies that includes only German audio. Will rename the release.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German and Original Language
+
+??? question "German and Original Language (German.DL) - [Click to show/hide]"
+
+    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German and Original Language (fallback)
+
+??? question "German and Original Language (German.DL) fallback - [Click to show/hide]"
+
+    Recognize movies that where the indexer does provide wrong language information (e.g. German only even though the release title suggests it's dual language), or where existing files have a weird naming scheme  (e.g. `John Wick Kapitel 2 (2017) [2160p] [HDR] [7.1, 7.1] [ger, eng] [Vio]`)
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-fallback.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Original Language
+
+??? question "Original Language - [Click to show/hide]"
+
+    Recognize movies that includes the original language but not the German language.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/original-language.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
