@@ -1,7 +1,10 @@
 {
   "trash_id": "e7718d7a3ce595f289bfee26adc178f5",
   "trash_scores": {
-    "default": 5
+    "default": 5,
+    "anime-radarr": 1,
+    "french-anime-multi": 1,
+    "french-anime-vostfr": 1
   },
   "trash_regex": "https://regex101.com/r/S91wR8/2",
   "name": "Repack/Proper",
