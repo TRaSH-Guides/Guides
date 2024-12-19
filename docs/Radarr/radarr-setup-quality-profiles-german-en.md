@@ -129,7 +129,7 @@ Depending on what's released first and available the following Workflow Logic wi
 
 !!! tip "Download German audio ^^only^^"
 
-    Set the Score of `{{ radarr['cf']['original-language']['name'] }}` to `-10000`
+    Set the `Minimum Custom Format Score` in your Quality Profile to 10k
     Note: Most German releases come as Dual Language so you might still see an English audio track beside the German one.
 
 !!! warning "Releases where German is the original language"

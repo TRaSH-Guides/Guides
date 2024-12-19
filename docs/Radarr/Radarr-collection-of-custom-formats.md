@@ -3356,6 +3356,8 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
     ```
 
+<sub><sup>[TOP](#index)</sup></sub>
+
 ---
 
 ### German LQ
@@ -3372,6 +3374,12 @@ We've made 3 guides related to this.
         - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
@@ -3496,22 +3504,6 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-undefined.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup></sub>
-
----
-
-### Original Language
-
-??? question "Original Language - [Click to show/hide]"
-
-    Recognize movies that includes the original language but not the German language.
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/original-language.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
