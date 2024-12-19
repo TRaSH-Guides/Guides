@@ -1,0 +1,55 @@
+{
+  "trash_id": "8608a2ed20c636b8a62de108e9147713",
+  "trash_scores": {
+      "default": 4000
+  },
+  "name": "German Remux Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TvR)$"
+      }
+    },
+    {
+      "name": "pmHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(pmHD)$"
+      }
+    },
+    {
+      "name": "NIMA4K",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(NIMA4K)$"
+      }
+    },
+    {
+      "name": "QfG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(QfG)$"
+      }
+    },
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}

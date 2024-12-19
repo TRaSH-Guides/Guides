@@ -1,0 +1,82 @@
+{
+  "trash_id": "54795711b78ea87e56127928c423689b",
+  "trash_scores": {
+      "default": 3000
+  },
+  "name": "German Bluray Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ZeroTwo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "TSCC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TSCC)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TvR)$"
+      }
+    },
+    {
+      "name": "NIMA4K",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(NIMA4K)$"
+      }
+    },
+    {
+      "name": "TVS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TVS)$"
+      }
+    },
+    {
+      "name": "PXL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(PXL)$"
+      }
+    },
+    {
+      "name": "CNY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(CNY)$"
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    }
+  ]
+}
