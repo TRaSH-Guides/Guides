@@ -3350,7 +3350,7 @@ We've made 3 guides related to this.
 
     - Known German Scene groups (which are not defined as LQ).
 
-?? example "JSON - [Click to show/hide]"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
@@ -3374,6 +3374,8 @@ We've made 3 guides related to this.
         - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.
+
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
