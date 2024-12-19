@@ -199,7 +199,7 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 ---
 
-### UHD Remux (2160p)
+### UHD Remux + WEB (2160p)
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 

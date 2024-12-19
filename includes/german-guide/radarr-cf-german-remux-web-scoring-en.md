@@ -15,7 +15,8 @@
     | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)     |  {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}  | {{ radarr['cf']['web-tier-02']['trash_id'] }}   |
     | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)     |  {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}  | {{ radarr['cf']['web-tier-03']['trash_id'] }}   |
 
-
     !!! tip
 
         :warning: German Scene groups are included as a fallback if you really want their release despite a potential loss in quality. Either score the CF to `{{ radarr['cf']['german-scene']['trash_scores']['default'] }}` (default) or `0` depending on what you want to achieve.
+
+    Note: Bluray CFs are note included as the main fallback for this profile is web. However, feel free to add them if needed.
