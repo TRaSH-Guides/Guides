@@ -240,6 +240,7 @@ TRaSH provides great guides and explanations about them at the following links:
 
 - A special thanks to the awesome community over at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the creation of the guide.
 - [TRaSH](https://trash-guides.info/), for granting us a small space on his guide for this, his knowledge, and his friendliness.
+- [Someone Said "Nice"?](https://github.com/NiceTSY), for laying the foundation for the German guide through his work on the French guide.
 - and to all the people that helped us to test those profiles and formats (and continue to do so).
 
 --8<-- "includes/support.md"
