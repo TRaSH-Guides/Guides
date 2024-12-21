@@ -1,0 +1,20 @@
+{
+  "trash_id": "4cd406b9de36ab204d965969e65077db",
+  "trash_scores": {
+    "default": 5
+  },
+  "trash_regex": "https://regex101.com/r/6IlHZx/1",
+  "name": "DiRFiX",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "DiRFiX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(DiRFiX)\\b"
+      }
+    }
+  ]
+}

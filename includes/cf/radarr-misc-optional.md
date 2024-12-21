@@ -8,6 +8,7 @@
     | [{{ radarr['cf']['obfuscated']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#obfuscated)           |   {{ radarr['cf']['obfuscated']['trash_scores']['default'] }}    | {{ radarr['cf']['obfuscated']['trash_id'] }}      |
     | [{{ radarr['cf']['retags']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#retags)                   |     {{ radarr['cf']['retags']['trash_scores']['default'] }}      | {{ radarr['cf']['retags']['trash_id'] }}          |
     | [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene)                     |      {{ radarr['cf']['scene']['trash_scores']['default'] }}      | {{ radarr['cf']['scene']['trash_id'] }}           |
+    | [{{ radarr['cf']['dirfix']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dirfix)                   |     {{ radarr['cf']['dirfix']['trash_scores']['default'] }}      | {{ radarr['cf']['dirfix']['trash_id'] }}          |
 
     ---
 
@@ -20,3 +21,4 @@
     - **{{ radarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
     - **{{ radarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you want to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release.
     - **{{ radarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
+    - **{{ radarr['cf']['dirfix']['name'] }}:** [*Optional*] Use this only if you want to get the latest release with the correction of a typo or inaccuracy in the release name.
