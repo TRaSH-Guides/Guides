@@ -85,7 +85,7 @@ We've made 3 guides related to this.
 | [Stan](#stan)              |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
-|-----------------------|-------------------------|--------------------------|
+| --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [AUBC](#aubc)           | [VRV](#vrv)              |
 | [ITVX](#itvx)         | [CBC](#cbc)             |                          |
 | [MY5](#my5)           | [Crave](#crav)          |                          |
@@ -95,36 +95,36 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | French Audio Version | French Source Groups                            |
-|----------------------------------------|----------------------|-------------------------------------------------|
-| [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VF2](#vf2)          | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [Dutch Groups](#dutch-groups)          | [VFQ](#vfq)          | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [EVO (no WEBDL)](#evo-no-webdl)        | [VOQ](#voq)          | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [FreeLeech](#freeleech)                | [VQ](#vq)            | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [HFR](#hfr)                            | [VFB](#vfb)          | [FR WEB Tier 02](#fr-web-tier-02)               |
-| [HDR10+ Boost](#hdr10plus-boost)       | [VOSTFR](#vostfr)    | [FR Scene Groups](#fr-scene-groups)             |
-| [Internal](#internal)                  | [FanSUB](#fansub)    | [FR LQ](#fr-lq)                                 |
-| [Line/Mic Dubbed](#linemic-dubbed)     | [FastSUB](#fastsub)  |                                                 |
-| [MPEG2](#mpeg2)                        |                      |                                                 |
-| [Multi](#multi)                        |                      |                                                 |
-| [No-RlsGroup](#no-rlsgroup)            |                      |                                                 |
-| [Obfuscated](#obfuscated)              |                      |                                                 |
-| [Repack/Proper](#repackproper)         |                      |                                                 |
-| [Repack2](#repack2)                    |                      |                                                 |
-| [Repack3](#repack3)                    |                      |                                                 |
-| [Retags](#retags)                      |                      |                                                 |
-| [Scene](#scene)                        |                      |                                                 |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                      |                                                 |
-| [SDR](#sdr)                            |                      |                                                 |
-| [VC-1](#vc-1)                          |                      |                                                 |
-| [VP9](#vp9)                            |                      |                                                 |
-| [x264](#x264)                          |                      |                                                 |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                      |                                                 |
-| [x265](#x265)                          |                      |                                                 |
-| [x266](#x266)                          |                      |                                                 |
+| Miscellaneous                          | Language profiles                                                |
+| -------------------------------------- | ---------------------------------------------------------------- |
+| [Bad Dual Groups](#bad-dual-groups)    | [Language: German DL (undefined)](#language-german-dl-undefined) |
+| [Dutch Groups](#dutch-groups)          | [Language: German DL](#language-german-dl)                       |
+| [DV (Disk)](#dv-disk)                  | [Language: Not English (English Only)](#language-not-english)    |
+| [DV (WEBDL)](#dv-webdl)                | [Language: Not French (French Only)](#language-not-french)       |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not Original (Original Only)](#language-not-original) |
+| [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Original French](#language-original-french)           |
+| [FreeLeech](#freeleech)                |                                                                  |
+| [HDR10+ Boost](#hdr10plus-boost)       |                                                                  |
+| [HFR](#hfr)                            |                                                                  |
+| [Internal](#internal)                  |                                                                  |
+| [Line/Mic Dubbed](#linemic-dubbed)     |                                                                  |
+| [MPEG2](#mpeg2)                        |                                                                  |
+| [Multi](#multi)                        |                                                                  |
+| [No-RlsGroup](#no-rlsgroup)            |                                                                  |
+| [Obfuscated](#obfuscated)              |                                                                  |
+| [Repack/Proper](#repackproper)         |                                                                  |
+| [Repack2](#repack2)                    |                                                                  |
+| [Repack3](#repack3)                    |                                                                  |
+| [Retags](#retags)                      |                                                                  |
+| [Scene](#scene)                        |                                                                  |
+| [SDR (no WEBDL)](#sdr-no-webdl)        |                                                                  |
+| [SDR](#sdr)                            |                                                                  |
+| [VC-1](#vc-1)                          |                                                                  |
+| [VP9](#vp9)                            |                                                                  |
+| [x264](#x264)                          |                                                                  |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                                                  |
+| [x265](#x265)                          |                                                                  |
+| [x266](#x266)                          |                                                                  |
 
 ---
 
@@ -138,6 +138,24 @@ We've made 3 guides related to this.
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |           |                                       |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |           |                                       |
 | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |           |                                       |
+
+---
+
+| German Source Groups                            | German Miscellaneous                          | French Source Groups                            | French Audio Version |
+| ----------------------------------------------- | --------------------------------------------- | ----------------------------------------------- | -------------------- |
+| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                       | [FR Remux Tier 01](#fr-remux-tier-01)           | [VFF](#vff)          |
+| [German Remux Tier 02](#german-remux-tier-02)   | [German Microsized](#german-microsized)       | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
+| [German Bluray Tier 03](#german-bluray-tier-02) |                                               | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
+| [German Web Tier 01](#german-web-tier-01)       |                                               | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
+| [German Web Tier 02](#german-web-tier-02)       |                                               | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
+| [German Web Tier 03](#german-web-tier-03)       |                                               | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
+| [German Scene](#german-scene)                   |                                               | [FR Scene Groups](#fr-scene-groups)             | [VOSTFR](#vostfr)    |
+|                                                 |                                               | [FR LQ](#fr-lq)                                 | [FanSUB](#fansub)    |
+|                                                 |                                               |                                                 | [FastSUB](#fastsub)  |
+
+---
 
 ## Audio Advanced
 
@@ -3181,7 +3199,7 @@ We've made 3 guides related to this.
 
 ---
 
-## German HQ Source Groups
+## German Source Groups
 
 ---
 
@@ -3360,6 +3378,10 @@ We've made 3 guides related to this.
 
 ---
 
+## German Miscellaneous
+
+---
+
 ### German LQ
 
 <sub>German Low-Quality Releases = German LQ</sub>
@@ -3405,8 +3427,6 @@ We've made 3 guides related to this.
 
 ### German 1080p Booster
 
-<sub>German 1080p Booster</sub>
-
 ??? question "German 1080p Booster - [Click to show/hide]"
 
     As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
@@ -3423,8 +3443,6 @@ We've made 3 guides related to this.
 
 ### German 2160p Booster
 
-<sub>German 2160p Booster</sub>
-
 ??? question "German 2160p Booster - [Click to show/hide]"
 
     As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
@@ -3439,17 +3457,17 @@ We've made 3 guides related to this.
 
 ---
 
-## Language Profile
+## Language Profiles
 
 ---
 
-### Language Not French
+### Language: Not French
 
-<sub>Language Not French</sub>
+<sub>Language: French Only</sub>
 
-??? question "Language Not French - [Click to show/hide]"
+??? question "Language: Not French - [Click to show/hide]"
 
-    Language Specification is Not French
+    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3461,13 +3479,13 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not Original
+### Language: Not Original
 
-<sub>Language Not Original</sub>
+<sub>Language: Original Only</sub>
 
-??? question "Language Not Original - [Click to show/hide]"
+??? question "Language: Not Original - [Click to show/hide]"
 
-    Language Specification is Not Original
+    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3479,49 +3497,49 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Original French
+### Language: Original French
 
-<sub>Language Original + French</sub>
+<sub>Language: Original + French</sub>
 
-??? question "Language Original + French - [Click to show/hide]"
+??? question "Language: Original + French - [Click to show/hide]"
 
     Language Specification Original + French
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-french.json' %]][[% endfilter %]]
     ```
+
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### German
+### Language: Not English
 
-<sub>Language: German only</sub>
+<sub>Language: English Only</sub>
 
-??? question "German only - [Click to show/hide]"
+??? question "Language: Not English - [Click to show/hide]"
 
-    Recognize releases that includes only German audio. Will rename the release.
+    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
-### German DL
+### Language: German DL
 
-<sub>German DL</sub>
+<sub>Language: German + Original</sub>
 
-??? question "German DL - [Click to show/hide]"
+??? question "Language: German DL - [Click to show/hide]"
 
-    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as Media Info will identify all languages.
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3533,13 +3551,11 @@ We've made 3 guides related to this.
 
 ---
 
-### German DL (undefined)
-
-<sub>Language: German and Original Language (undefined)</sub>
+### Language: German DL (undefined)
 
 ??? question "German DL (undefined) - [Click to show/hide]"
 
-    This Custom Format is mainly used to fix files that are wrongly named after import. For example, suppose the filename suggests it is only German but actually contains German and English audio. In that case, It is also useful for users who use non-optimal file naming ((e.g., John Wick Kapitel 2 (2017) [2160p] [HDR] [7.1, 7.1] [ger, eng] [Vio]) )which do not follow suggested naming schemes.
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
