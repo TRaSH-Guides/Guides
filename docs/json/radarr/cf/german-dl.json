@@ -14,7 +14,8 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": 4
+        "value": 4,
+        "exceptLanguage": false
       }
     },
     {
@@ -23,9 +24,9 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": -2
+        "value": -2,
+        "exceptLanguage": false
       }
     }
   ]
 }
-
