@@ -136,13 +136,13 @@ We've made 3 guides related to this.
 
 ---
 
-| Language profiles                                               |
-| --------------------------------------------------------------- |
-| [Language German.DL](#language-germandl)                        |
-| [Language Not English (English Only)](#language-not-english)    |
-| [Language Not French (French Only)](#language-not-french)       |
-| [Language Not Original (Original Only)](#language-not-original) |
-| [Language Original French](#language-original-french)           |
+| Language profiles                                                |
+| ---------------------------------------------------------------- |
+| [Language: German.DL](#language-germandl)                        |
+| [Language: Not English (English Only)](#language-not-english)    |
+| [Language: Not French (French Only)](#language-not-french)       |
+| [Language: Not Original (Original Only)](#language-not-original) |
+| [Language: Original French](#language-original-french)           |
 
 ---
 
