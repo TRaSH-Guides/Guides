@@ -4,11 +4,11 @@
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
-There isn't *the* best way to set up Custom Formats to get German (or German+English dual) audio, it depends on your setup (hardware devices) and your own personal preferences.
+There isn't a *best* way to set up Custom Formats to get German (or German+English dual) audio; it depends on your setup (hardware devices) and personal preferences.
 
-Some prefer high quality audio (HD Audio), others high quality video. Many prefer both.
+Some prefer high-quality audio (HD Audio), and others prefer high-quality video. Many prefer both.
 
-In this Guide we try to give a recommendation which should suite most users.
+In this Guide, we try to give a recommendation that suits most users.
 
 ---
 
@@ -19,20 +19,20 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 - Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
-!!! warning "Please read those two sections before continuing the guide as they hold important information. The rest of this guide will assume you did."
+!!! warning "Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did."
 
 !!! tip
-    TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German only/German Dual Language("German DL") releases.
+    TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German-only/German Dual Language("German DL") releases.
 
 ---
 
 ## Using this Guide
 
-There are two ways of using this Guide, with and without TRaSH original Guide's international/english based group tiers (which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+There are two ways of using this Guide, with and without TRaSH original Guide's international/English-based group tiers (which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 
-In this Guide we focus on combining both languages and thus include the custom formats from TRaSHs original Guide.
+In this Guide, we focus on combining both languages and thus include the Custom Formats from TRaSH's original Guide.
 
-These Custom Formats are recommended if you prefer German Dual Language releases but also want to download original/English audio if no German Dual Language is available (yet). This ensures that the original/English release will also be of the best quality possible.
+These Custom Formats are recommended if you prefer German Dual-Language releases but also want to download the original and/or English audio if no German Dual-Language is available (yet). This ensures that the original English release will also be of the best quality possible.
 
 ---
 
@@ -41,7 +41,7 @@ These Custom Formats are recommended if you prefer German Dual Language releases
 There are a couple of changes that are needed for German Custom Formats to work properly:
 
 ??? abstract "Set the language to `Any` in the quality profile - [Click to show/hide]"
-    We choose `Any` for the language profile, as otherwise English movies identified with German audio and vice-versa will not be grabbed.
+    We choose `Any` for the language profile, as otherwise, English movies identified with German audio and vice-versa will not be grabbed.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/german-cf-profile-language.png)
@@ -49,16 +49,16 @@ There are a couple of changes that are needed for German Custom Formats to work 
 ??? abstract "Disable Propers and Repacks - [Click to show/hide]"
     Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Formats.
 
-    This way you make sure the Custom Formats preferences will be used and not ignored.
+    This way, you can ensure that Custom Formats preferences are used and not ignored.
 
-    You will still be able to prefer Propers and Repacks through the provided Custom Formats.
+    You can still prefer Propers and Repacks through the provided Custom Formats.
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
 
 ??? abstract "Merge Qualities - [Click to show/hide]"
 
-    In order to allow upgrades based on language without release qualities interfering we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
+    To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
 
     We want to merge the following Qualities:
 
@@ -76,24 +76,24 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
     and name it: `Bluray|WEB`
 
-    !!! warning "Make sure you don't check BR-DISK."
+    !!! warning "Make sure you do not check BR-DISK."
 
     {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
     !!! tip "Tip"
-        If you are not interested in some of these resolutions, i.e. 2160p or 720p you don't need to include them.
+        You don't need to include some of these resolutions, such as 2160p or 720p if you are not interested in them.
 
 ??? abstract "Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]"
     Please have a look here: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
-    !!! tip "Movie format/folder with French movie name"
+    !!! tip "Movie format/folder with the German movie name."
         Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
 ??? abstract "Change the Indexers Multi Languages option - [Click to show/hide]"
-    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. For the purpose of this guide, you should select `Original` and `German`.
+    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. You should select `Original` and `German` for this guide.
     This option should only be used for German indexers. Doing so on "international" indexers can create false positives with the German Audio CFs.
 
-    If you do not see the option, it is because you need to activate the "Advanced Options" of Radarr.
+    If you do not see the option, you need to activate Radarr's "Advanced Options."
 
     ??? success "Screenshot example - [Click to show/hide]"
         ![French Radarr MULTi settings](images/german-starr-multi-settings.png)
@@ -102,12 +102,12 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
 ## Dealing with German Umlauts and German titles
 
-There are two facts which can lead to Radarr not being able to match a German movie release.
+Two facts can lead to Radarr being unable to match a German movie release.
 
-- Indexers typically don't allow the use of German Umlauts in release names.
-- Most movies have different titles in German than they have in English.
+- Indexers typically do not allow the use of German Umlauts in release names.
+- Most movies have titles that are different in German from those in English.
 
-To help with this there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr) which acts as a middle layer between Radarr and the Indexer to makes sure Umlauts and German titles are mapped correctly.
+To help with this, there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr). This service acts as a middle layer between Radarr and the Indexer to ensure that Umlauts and German titles are mapped correctly.
 
 ---
 
@@ -121,21 +121,21 @@ To help with this there is a handy service called [Umlautadaptarr](https://githu
 
 ### German audio
 
-Depending on what's released first and available the following Workflow Logic will be used:
+Depending on what's released first and available, the following Workflow Logic will be used:
 
-- When an `English` version is released it will download the release in the best available quality based on the used Custom Formats.
-- When a `German` or `German DL` version is released it will upgrade to that version.
+- When an `English` version is released, it will download the release in the best available quality based on the Custom Formats used.
+- When a `German` or `German DL` version is released, it will upgrade to that version.
 - The downloaded media will be upgraded to any of the added Custom Formats until the defined Score defined in the Quality Profile under `Upgrade Until Custom Format Score` is reached.
 
 !!! tip "Download German audio ^^only^^"
 
     Set the `Minimum Custom Format Score` in your Quality Profile to `10k`
-    Note: Most German releases come as Dual Language so you might still see an English audio track beside the German one.
+    Note: Most German releases come in dual languages, so you might still see an English audio track in addition to the German one.
 
 !!! warning "Releases where German is the original language"
 
-    Due to technical limitations releases where German is the original language of the movie it will be identified as `German DL` even though they might not contain another language.
-    The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than they are supposed to be.
+    Due to technical limitations, releases in which German is the movie's original language will be identified as `German DL` even though they might not contain another language.
+    The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than expected.
 
 {! include-markdown "../../includes/german-guide/radarr-german-advanced-audio-information-en.md" !}
 
@@ -238,9 +238,9 @@ TRaSH provides great guides and explanations about them at the following links:
 
 ## Acknowledgements
 
-- A special thanks to the awesome community over at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the creation of the guide.
+- A special thanks to the awesome community at the [UsenetDE Discord](https://discord.gg/NBrHshesU9) for their contribution during the guide creation.
 - [TRaSH](https://trash-guides.info/), for granting us a small space on his guide for this, his knowledge, and his friendliness.
 - [Someone Said "Nice"?](https://github.com/NiceTSY), for laying the foundation for the German guide through his work on the French guide.
-- and to all the people that helped us to test those profiles and formats (and continue to do so).
+- and to all the people who helped us to test those profiles and formats (and continue to do so).
 
 --8<-- "includes/support.md"
