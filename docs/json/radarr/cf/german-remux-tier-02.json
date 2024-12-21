@@ -1,0 +1,28 @@
+{
+  "trash_id": "f9cf598d55ce532d63596b060a6db9ee",
+  "trash_scores": {
+      "default": 3900
+  },
+  "name": "German Remux Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MULTiPLEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MULTiPLEX)$"
+      }
+    },
+    {
+      "name": "Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    }
+  ]
+}

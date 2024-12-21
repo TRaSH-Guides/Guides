@@ -4,6 +4,7 @@
     "default": -10000
   },
   "trash_description": "Language: English Only: Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the English audio a score of -10000.",
+
   "name": "Language: Not English",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
