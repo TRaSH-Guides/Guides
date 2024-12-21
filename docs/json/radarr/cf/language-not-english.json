@@ -14,8 +14,7 @@
       "negate": true,
       "required": false,
       "fields": {
-        "value": 1,
-        "exceptLanguage": false
+        "value": 1
       }
     }
   ]
