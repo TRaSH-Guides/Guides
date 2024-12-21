@@ -3399,7 +3399,40 @@ We've made 3 guides related to this.
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
     ```
 
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-french.json' %]][[% endfilter %]]
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German 1080p Booster
+
+<sub>German 1080p Booster</sub>
+
+??? question "German 1080p Booster - [Click to show/hide]"
+
+    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German 2160p Booster
+
+<sub>German 2160p Booster</sub>
+
+??? question "German 2160p Booster - [Click to show/hide]"
+
+    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -3464,11 +3497,13 @@ We've made 3 guides related to this.
 
 ---
 
-### German only
+### German
+
+<sub>Language: German only</sub>
 
 ??? question "German only - [Click to show/hide]"
 
-    Recognize movies that includes only German audio. Will rename the release.
+    Recognize releases that includes only German audio. Will rename the release.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3480,11 +3515,13 @@ We've made 3 guides related to this.
 
 ---
 
-### German and Original Language
+### German DL
 
-??? question "German and Original Language (German.DL) - [Click to show/hide]"
+<sub>German DL</sub>
 
-    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as MediaIinfo will identify all languages.
+??? question "German DL - [Click to show/hide]"
+
+    Recognizes movies with German audio together with the original language where Radarr can determine the correct languages from the release title or from language information provided by the indexer. Will rename the release. This CF also matches all German DL/MLs once they are downloaded, as Media Info will identify all languages.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3496,11 +3533,13 @@ We've made 3 guides related to this.
 
 ---
 
-### German and Original Language (undefined)
+### German DL (undefined)
 
-??? question "German and Original Language (German.DL) fallback - [Click to show/hide]"
+<sub>Language: German and Original Language (undefined)</sub>
 
-    Recognize movies that where the indexer does provide wrong language information (e.g. German only even though the release title suggests it's dual language), or where existing files have a weird naming scheme  (e.g. `John Wick Kapitel 2 (2017) [2160p] [HDR] [7.1, 7.1] [ger, eng] [Vio]`)
+??? question "German DL (undefined) - [Click to show/hide]"
+
+    This Custom Format is mainly used to fix files that are wrongly named after import. For example, suppose the filename suggests it is only German but actually contains German and English audio. In that case, It is also useful for users who use non-optimal file naming ((e.g., John Wick Kapitel 2 (2017) [2160p] [HDR] [7.1, 7.1] [ger, eng] [Vio]) )which do not follow suggested naming schemes.
 
 ??? example "JSON - [Click to show/hide]"
 
