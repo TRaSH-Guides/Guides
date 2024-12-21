@@ -1,0 +1,30 @@
+{
+  "trash_id": "ed51973a811f51985f14e2f6f290e47a",
+  "trash_scores": {
+    "default": -10000,
+    "german": 10001
+  },
+  "trash_description": "Language: German + Original aka German.DL: Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`, Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`. ",
+  "name": "German.DL",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    }
+  ]
+}
