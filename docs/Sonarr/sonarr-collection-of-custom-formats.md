@@ -79,7 +79,7 @@ We've made 3 guides related to this.
 | [Syfy](#syfy)              |                           |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services | Optional Streaming Services                 |
-|-----------------------|-------------------------|--------------------------|---------------------------------------------|
+| --------------------- | ----------------------- | ------------------------ | ------------------------------------------- |
 | [4OD](#4od)           | [AUBC](#aubc)           | [ABEMA](#abema)          | [UHD Streaming Boost](#uhd-streaming-boost) |
 | [ALL4](#all4)         | [CBC](#cbc)             | [ADN](#adn)              | [UHD Streaming Cut](#uhd-streaming-cut)     |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [B-Global](#b-global)    |                                             |
@@ -93,7 +93,7 @@ We've made 3 guides related to this.
 ---
 
 | Miscellaneous                          | French Audio Version | French Source Groups                          |
-|----------------------------------------|----------------------|-----------------------------------------------|
+| -------------------------------------- | -------------------- | --------------------------------------------- |
 | [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)         |
 | [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) |
 | [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR WEB Tier 01](#fr-web-tier-01)             |
@@ -133,6 +133,18 @@ We've made 3 guides related to this.
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |            |                                       |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |            |                                       |
 | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |            |                                       |
+
+---
+
+| Language profiles                                                |
+| ---------------------------------------------------------------- |
+| [Language: German.DL](#language-germandl)                        |
+| [Language: Not English (English Only)](#language-not-english)    |
+| [Language: Not French (French Only)](#language-not-french)       |
+| [Language: Not Original (Original Only)](#language-not-original) |
+| [Language: Original French](#language-original-french)           |
+
+---
 
 ## Audio Advanced
 
@@ -3264,17 +3276,17 @@ We've made 3 guides related to this.
 
 ---
 
-## Language Profile
+## Language Profiles
 
 ---
 
-### Language Not French
+### Language: Not French
 
-<sub>Language Not French</sub>
+<sub>Language: French Only</sub>
 
-??? question "Language Not French - [Click to show/hide]"
+??? question "Language: Not French - [Click to show/hide]"
 
-    Language Specification is Not French
+    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3286,13 +3298,13 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not Original
+### Language: Not Original
 
-<sub>Language Not Original</sub>
+<sub>Language: Original Only</sub>
 
-??? question "Language Not Original - [Click to show/hide]"
+??? question "Language: Not Original - [Click to show/hide]"
 
-    Language Specification is Not Original
+    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3304,11 +3316,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Original French
+### Language: Original French
 
-<sub>Language Original + French</sub>
+<sub>Language: Original + French</sub>
 
-??? question "Language Original + French - [Click to show/hide]"
+??? question "Language: Original + French - [Click to show/hide]"
 
     Language Specification Original + French
 
@@ -3316,6 +3328,42 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: Not English
+
+<sub>Language: English Only</sub>
+
+??? question "Language: Not English - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-not-english.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: German.DL
+
+<sub>Language: German + Original</sub>
+
+??? question "Language: German.DL - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-germandl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/germandl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
