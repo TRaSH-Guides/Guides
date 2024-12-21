@@ -4,7 +4,7 @@
     "default": -10000,
     "german": 10001
   },
-  "trash_description": "Language: German + Original aka German.DL: Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`, Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`. ",
+  "trash_description": "Language: German + Original aka German DL: Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`, Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`. ",
   "name": "German DL",
   "includeCustomFormatWhenRenaming": true,
   "specifications": [
