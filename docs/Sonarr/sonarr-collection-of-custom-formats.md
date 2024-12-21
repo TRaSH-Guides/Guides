@@ -138,7 +138,7 @@ We've made 3 guides related to this.
 
 | Language profiles                                               |
 | --------------------------------------------------------------- |
-| [Language German-DL](#language-german-dl)                       |
+| [Language German.DL](#language-germandl)                        |
 | [Language Not English (English Only)](#language-not-english)    |
 | [Language Not French (French Only)](#language-not-french)       |
 | [Language Not Original (Original Only)](#language-not-original) |
@@ -3280,11 +3280,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not French
+### Language: Not French
 
 <sub>Language: French Only</sub>
 
-??? question "Language Not French - [Click to show/hide]"
+??? question "Language: Not French - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
@@ -3298,11 +3298,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not Original
+### Language: Not Original
 
 <sub>Language: Original Only</sub>
 
-??? question "Language Not Original - [Click to show/hide]"
+??? question "Language: Not Original - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
@@ -3316,11 +3316,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Original French
+### Language: Original French
 
-<sub>Language Original + French</sub>
+<sub>Language: Original + French</sub>
 
-??? question "Language Original + French - [Click to show/hide]"
+??? question "Language: Original + French - [Click to show/hide]"
 
     Language Specification Original + French
 
@@ -3334,11 +3334,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not English
+### Language: Not English
 
 <sub>Language: English Only</sub>
 
-??? question "Language Not English - [Click to show/hide]"
+??? question "Language: Not English - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
 
@@ -3352,18 +3352,18 @@ We've made 3 guides related to this.
 
 ---
 
-### Language German-DL
+### Language: German.DL
 
 <sub>Language: German + Original</sub>
 
-??? question "Language German-DL - [Click to show/hide]"
+??? question "Language: German.DL - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-germandl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-german-dl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/germandl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
