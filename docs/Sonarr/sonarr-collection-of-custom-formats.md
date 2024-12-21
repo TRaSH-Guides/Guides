@@ -138,7 +138,7 @@ We've made 3 guides related to this.
 
 | Language profiles                                                |
 | ---------------------------------------------------------------- |
-| [Language: German.DL](#language-germandl)                        |
+| [Language: German DL](#language-german-dl)                        |
 | [Language: Not English (English Only)](#language-not-english)    |
 | [Language: Not French (French Only)](#language-not-french)       |
 | [Language: Not Original (Original Only)](#language-not-original) |
@@ -3352,18 +3352,18 @@ We've made 3 guides related to this.
 
 ---
 
-### Language: German.DL
+### Language: German DL
 
 <sub>Language: German + Original</sub>
 
-??? question "Language: German.DL - [Click to show/hide]"
+??? question "Language: German DL - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/language-germandl.md" !}
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/germandl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-dl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
