@@ -66,7 +66,7 @@ The example below will hard link all duplicate files without prompting.
 
 ---
 
-!!! bug "Windows only allows a maximum of 1023 hard links per file"
+!!! bug "Windows only allows a maximum of 1023 hardlinks per file"
 
 !!! Warning "The `-Q` or `--quick` option only reads each file once, hashes it, and performs comparisons based solely on the hashes. There is a small but significant risk of a hash collision which is the purpose of the failsafe byte-for-byte comparison that this option explicitly bypasses. Do not use it on ANY data set for which any amount of data loss is unacceptable. You have been warned!"
 
