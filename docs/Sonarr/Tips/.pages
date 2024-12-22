@@ -1,5 +1,6 @@
 nav:
   - How to Merge Quality: Merge-quality.md
+  - How to Order Quality Sources: How-to-order-Quality-Source.md
   - How to rename your folders: Sonarr-rename-your-folders.md
   - How to set up Language Custom Formats: How-to-setup-language-custom-formats.md
   - How to Sync 2 Radarr or Sonarr with each other: Sync-2-radarr-sonarr.md

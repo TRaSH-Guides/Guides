@@ -29,6 +29,7 @@ After setting up your optimal volume/paths found [HERE](/File-and-Folder-Structu
 - Tips - Several other guides for Sonarr.
     - [How to set up Language Custom Formats](/Sonarr/Tips/How-to-setup-language-custom-formats/) - A few examples of how to set up your preferred language Custom Format.
     - [How to Merge Quality](/Sonarr/Tips/Merge-quality/) - How to merge quality sources if you prefer to not have Quality Trump All, and let it be handled via Custom Formats.
+    - [How to Order Quality Sources](/Sonarr/Tips/How-to-order-Quality-Source/) - In some cases, it might be preferred to have the option to create a Quality Profile to downgrade your existing library/releases.
     - [Remote Path Mappings](/Sonarr/Sonarr-remote-path-mapping/) - How to set up remote path mapping.
     - [How to rename your folders](/Sonarr/Tips/Sonarr-rename-your-folders/) - How to rename or change your root folder.
     - [How to Sync 2 Radarr or Sonarr with each other](/Sonarr/Tips/Sync-2-radarr-sonarr/) - How you can sync two (or more) Radarr/Sonarr instances with each other.
