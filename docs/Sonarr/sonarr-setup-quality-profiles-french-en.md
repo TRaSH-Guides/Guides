@@ -171,13 +171,13 @@ If you are looking to grab Anime with either French subs or MULTi audio (origina
 
 {! include-markdown "../../includes/french-guide/sonarr-french-anime-info-en.md" !}
 
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
+
 {! include-markdown "../../includes/cf/sonarr-anime-misc-required.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-en.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-en.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-en.md" !}
 
 ---
 
