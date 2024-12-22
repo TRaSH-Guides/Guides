@@ -12,6 +12,9 @@
           "properties": {
             "value": {
               "type": "integer"
+            },
+            "exceptLanguage": {
+              "type": "boolean"
             }
           },
           "required": ["value"],

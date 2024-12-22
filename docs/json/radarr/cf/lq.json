@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "BAUCKLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BAUCKLEY)$"
+      }
+    },
+    {
       "name": "BdC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
