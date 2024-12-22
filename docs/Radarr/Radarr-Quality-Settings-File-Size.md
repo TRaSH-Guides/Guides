@@ -8,7 +8,7 @@
 
 --8<-- "includes/starr/quality-size-preferred-info.md"
 
-!!! info "`400` is the displayed value for Unlimited"
+!!! info "`1000` is the displayed value for Unlimited"
 
 === "Standard"
 
