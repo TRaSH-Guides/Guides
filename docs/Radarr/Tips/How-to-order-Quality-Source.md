@@ -82,6 +82,7 @@ Qualities at the top of the list will appear first in manual searches, so it's r
 
 ---
 
-[Source: Wiki Servarr](https://wiki.servarr.com/en/radarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
+[Source: Wiki Servarr - Radarr](https://wiki.servarr.com/radarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
+[Source: Wiki Servarr - Sonarr](https://wiki.servarr.com/sonarr/settings#quality-profiles){:target="\_blank" rel="noopener noreferrer"}.
 
 --8<-- "includes/support.md"
