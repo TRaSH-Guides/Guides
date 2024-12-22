@@ -97,13 +97,13 @@ We've made 3 guides related to this.
 
 | Miscellaneous                          | Language profiles                                                |
 | -------------------------------------- | ---------------------------------------------------------------- |
-| [Bad Dual Groups](#bad-dual-groups)    | [Language: German DL (undefined)](#language-german-dl-undefined) |
+| [Bad Dual Groups](#bad-dual-groups)    | [Language: German](#language-german)                             |
 | [Dutch Groups](#dutch-groups)          | [Language: German DL](#language-german-dl)                       |
-| [DV (Disk)](#dv-disk)                  | [Language: Not English (English Only)](#language-not-english)    |
-| [DV (WEBDL)](#dv-webdl)                | [Language: Not French (French Only)](#language-not-french)       |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not Original (Original Only)](#language-not-original) |
-| [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Original French](#language-original-french)           |
-| [FreeLeech](#freeleech)                |                                                                  |
+| [DV (Disk)](#dv-disk)                  | [Language: German DL (undefined)](#language-german-dl-undefined) |
+| [DV (WEBDL)](#dv-webdl)                | [Language: Not English (English Only)](#language-not-english)    |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not French (French Only)](#language-not-french)       |
+| [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Not Original (Original Only)](#language-not-original) |
+| [FreeLeech](#freeleech)                | [Language: Original French](#language-original-french)           |
 | [HDR10+ Boost](#hdr10plus-boost)       |                                                                  |
 | [HFR](#hfr)                            |                                                                  |
 | [Internal](#internal)                  |                                                                  |
@@ -3544,7 +3544,7 @@ We've made 3 guides related to this.
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -3560,7 +3560,23 @@ We've made 3 guides related to this.
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-dl-undefined.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: German
+
+??? question "German - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
