@@ -1,3 +1,11 @@
+# 2024-12-22 01:36
+- [feat(Guide): Add `BAUCKLEY` to Radarr `LQ` Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2168)
+- [fix(ci): allow exceptLanguage in CF schema validation](https://github.com/TRaSH-Guides/Guides/pull/2166)
+- [fix(backend): Related stuff for 3rd party apps](https://github.com/TRaSH-Guides/Guides/pull/2165)
+- [fix(starr): last minute CF name change for German DL](https://github.com/TRaSH-Guides/Guides/pull/2164)
+- [feat(starr): Added language Custom Formats](https://github.com/TRaSH-Guides/Guides/pull/2159)
+- [fix(starr): French guide reported needed fixes](https://github.com/TRaSH-Guides/Guides/pull/2162)
+
 # 2024-12-08 01:44
 - [fix(backend): Add missing AMZN from Sonarr 2160p QP JSON](https://github.com/TRaSH-Guides/Guides/pull/2154)
 - [update(starr/cf): add additional service tag in regex and proof-edit definition](https://github.com/TRaSH-Guides/Guides/pull/2152)
