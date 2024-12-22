@@ -189,7 +189,7 @@ Sonarr, Radarr and Lidarr
 
 !!! info
 
-    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. Hard links will work properly and any moves will be atomic, rather than copying and deleting.
+    Sonarr, Radarr, and Lidarr get access to everything because the download folder(s) and media folder will need to look like and be one mount, on the file system. hardlinks will work properly and any moves will be atomic, rather than copying and deleting.
 
 {! include-markdown "../../../includes/file-and-folder-structure/docker-tree-full.md" !}
 
