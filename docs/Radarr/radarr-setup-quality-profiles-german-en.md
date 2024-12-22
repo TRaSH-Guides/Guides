@@ -4,7 +4,7 @@
 
 !!! note "This guide is created and maintained by [Lokilicious](https://github.com/Lokilicious) and [PCJones](https://github.com/PCJones)"
 
-There isn't a *best* way to set up Custom Formats to get German (or German+English dual) audio; it depends on your setup (hardware devices) and personal preferences.
+There isn't a *best* way to set up Custom Formats to get German (or German+English dual) audio. It depends on your setup (hardware devices) and personal preferences.
 
 Some prefer high-quality audio (HD Audio), and others prefer high-quality video. Many prefer both.
 
@@ -14,7 +14,7 @@ In this Guide, we try to give a recommendation that suits most users.
 
 ## Basics
 
-It is quite important that you follow and understand what is envisioned by TRaSH's guide:
+It is quite important that you follow and understand what is expected by TRaSH's guide:
 
 - Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
 - Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
@@ -28,11 +28,12 @@ It is quite important that you follow and understand what is envisioned by TRaSH
 
 ## Using this Guide
 
-There are two ways of using this Guide, with and without TRaSH original Guide's international/English-based group tiers (which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+There are two ways of using this Guide, with and without TRaSH original Guide's international/English-based group tiers.
+(which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 
 In this Guide, we focus on combining both languages and thus include the Custom Formats from TRaSH's original Guide.
 
-These Custom Formats are recommended if you prefer German Dual-Language releases but also want to download the original and/or English audio if no German Dual-Language is available (yet). This ensures that the original English release will also be of the best quality possible.
+These Custom Formats are recommended if you prefer German Dual-Language releases but also want to download the original and/or English audio if no German Dual-Language is available (yet). This ensures the original English release will be of the best quality possible.
 
 ---
 
@@ -81,7 +82,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
     {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
     !!! tip "Tip"
-        You don't need to include some of these resolutions, such as 2160p or 720p if you are not interested in them.
+        You don't need to include some of these resolutions, such as 2160p or 720p, if you are not interested in them.
 
 ??? abstract "Adapt the Standard Movie Format and Movie Folder Format - [Click to show/hide]"
     Please have a look here: [Recommended naming scheme](/Radarr/Radarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
