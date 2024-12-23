@@ -1,0 +1,82 @@
+{
+  "trash_id": "08d120d5a003ec4954b5b255c0691d79",
+  "trash_scores": {
+      "default": 1900
+  },
+  "name": "German Web Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "VECTOR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(VECTOR)$"
+      }
+    },
+    {
+      "name": "MULTiPLEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(MULTiPLEX)$"
+      }
+    },
+    {
+      "name": "SiXTYNiNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(SiXTYNiNE)$"
+      }
+    },
+    {
+      "name": "Oergel",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(Oergel)$"
+      }
+    },
+    {
+      "name": "4SF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(4SF)$"
+      }
+    },
+    {
+      "name": "ABJ",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(ABJ)$"
+      }
+    },
+    {
+      "name": "WebDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WebRip",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}

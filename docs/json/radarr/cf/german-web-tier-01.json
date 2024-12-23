@@ -1,0 +1,109 @@
+{
+  "trash_id": "a2ab25194f463f057a5559c03c84a3df",
+  "trash_scores": {
+      "default": 2000
+  },
+  "name": "German Web Tier 01",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "ZeroTwo",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "TSCC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TSCC)$"
+      }
+    },
+    {
+      "name": "TvR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TvR)$"
+      }
+    },
+    {
+      "name": "NIMA4K",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(NIMA4K)$"
+      }
+    },
+    {
+      "name": "TVS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(TVS)$"
+      }
+    },
+    {
+      "name": "D02KU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(D02KU)$"
+      }
+    },
+    {
+      "name": "PXL",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(PXL)$"
+      }
+    },
+    {
+      "name": "QfG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(QfG)$"
+      }
+    },
+    {
+      "name": "CNY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(CNY)$"
+      }
+    },
+    {
+      "name": "WebDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WebRip",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
