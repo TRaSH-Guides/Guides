@@ -1,0 +1,28 @@
+{
+  "trash_id": "aee01d40cd1bf4bcded81ee62f0f3659",
+  "trash_scores": {
+      "default": 2800
+  },
+  "name": "German Bluray Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "RobertDeNiro",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(RobertDeNiro)$"
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    }
+  ]
+}
