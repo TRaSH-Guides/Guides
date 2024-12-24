@@ -3491,13 +3491,13 @@
 
 <h1 id="file-and-folder-structure">File and Folder Structure<a class="headerlink" href="#file-and-folder-structure" title="Permanent link"></a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
-<p>It is important that your media server has a well organised file and folder structure. Along with generally easier file and folder management, you will benefit from:</p>
+<p>It is important that your media server has a well-organized file and folder structure. Along with generally easier file and folder management, you will benefit from:</p>
 <ul>
-<li>Improved security, by only granting the appropriate applications and tools access to your files.</li>
-<li><a href="/File-and-Folder-Structure/Hardlinks-and-instant-moves#what-are-hardlinks">Hardlinks</a>, so that the same file can appear in multiple places whilst only taking up the disk space of one copy.</li>
-<li><a href="/File-and-Folder-Structure/Hardlinks-and-instant-moves#what-are-instant-moves-atomic-moves">Instant moves</a> (also known as 'Atomic Moves') so that files can be moved to other parts of the file system instantaneously.</li>
+<li>Improved security is achieved by only granting the appropriate applications and tools access to your files.</li>
+<li><a href="/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-hardlinks">Hardlinks</a>, so the same file can appear in multiple places while only taking up one copy's disk space.</li>
+<li><a href="/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/#what-are-instant-moves-atomic-moves">Instant moves</a> (also known as 'Atomic Moves') so that files can be moved to other parts of the file system instantaneously.</li>
 </ul>
-<p>The first requirement is that all your media files and folders should be part of the same file system. That is, everything must be contained on a single physical or virtual drive. Second, all of your applications should have a consistent view of where your files and folders are - i.e., your files should appear in the same place to all of your applications.</p>
+<p>The first requirement is that all your media files and folders be in the same file system. Everything must be contained on a single physical or virtual drive. Second, all your applications should have a consistent view of where your files and folders are - i.e., your files should appear in the same place as all your applications.</p>
 <p>We recommend setting up a file and folder structure on your host server that looks like this:</p>
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
@@ -3518,9 +3518,9 @@
     ├── music
     └── tv
 </code></pre></div>
-<p>The <code>data</code> folder can be placed wherever you like. As an example, in Unraid, you would set up a share called <code>data</code>. This would then be accessible within Unraid's file system at <code>/mnt/user/data</code>.</p>
-<p>If you are installing applications directly on the host system (natively), then they will already have visibility of that file and folder structure, assuming permissions are set correctly. If you are installing applications non-natively, for example via Docker, then each application should be granted access to the lowest level folder that is required whilst maintaining consistent pathing to the top level folder, which here is <code>data</code>. For example, a torrent client installed via Docker would have <code>/mnt/user/data/torrents</code> mapped to <code>/data/torrents</code>. This means that the download client would see the contents of the host's <code>/mnt/user/data/torrents</code> folder in the <code>/data/torrents</code> folder inside the container.</p>
-<p>More detailed examples can be found in the <a href="/File-and-Folder-Structure/How-to-set-up/">How To Set Up</a> section.</p>
+<p>The <code>data</code> folder can be placed wherever you like. For example, in Unraid, you would set up a share called <code>data</code>. This would then be accessible within Unraid's file system at <code>/mnt/user/data</code>.</p>
+<p>If you install applications directly on the host system (natively), they will already have visibility of that file and folder structure, assuming permissions are set correctly. Suppose you are installing applications non-natively, for example, via Docker. In that case, each application should be granted access to the required lowest-level folder while maintaining consistent pathing to the top-level folder, which here is <code>data</code>. For example, a torrent client installed via Docker would have <code>/mnt/user/data/torrents</code> mapped to <code>/data/torrents</code>. This means the download client would see the contents of the host's <code>/mnt/user/data/torrents</code> folder in the <code>/data/torrents</code> folder within the container.</p>
+<p>The <a href="/File-and-Folder-Structure/How-to-set-up/">How To Set Up</a> section provides more detailed examples.</p>
 <!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">
@@ -3552,7 +3552,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 14, 2024 18:45:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 24, 2024 23:53:34</span>
   </span>
 
     
