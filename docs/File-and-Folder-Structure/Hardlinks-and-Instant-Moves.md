@@ -27,28 +27,28 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 
 ### Hardlinks Limitations
 
-!!! danger "- You <u>CAN'T</u> create hardlinks for directories :bangbang:<br>- You <u>CAN'T</u> hardlink across separate file systems, partitions, volumes or mounts :bangbang:<br>- Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)"
+!!! danger "- You <u>CAN'T</u> create hardlinks for directories :bangbang:<br>- You <u>CAN'T</u> hardlink across separate file systems, partitions, volumes or mounts :bangbang:<br>- Some file systems, such as exFAT, are known not to support hardlinks and should be avoided (double-check if you are unsure!)."
 
 ### What are Hardlinks
 
 ??? question "**What are hardlinks?** - [Click to show/hide]"
 
     - [**Short answer**] Having a file in multiple locations without using double your storage space.
-    - [**Long answer**] Hardlinks are a way for a copy operation to be instant and not consume space for those additional copies.
+    - [**Long answer**] Hardlinks allow a copy operation to be instant and not consume space for those additional copies.
 
-        Every file is a hardlink: some metadata that points at blocks on the file system, **which is why they're restricted to the same file system**. There can be as many metadata files pointing at those blocks as needed and the blocks know how many links point to them. Once the blocks have 0 links, they're considered deleted.
+        Every file is a hardlink: some metadata that points at blocks on the file system, **which is why they're restricted to the same file system**. There can be as many metadata files pointing at those blocks as needed, and the blocks know how many links point to them. Once the blocks have 0 links, they're considered deleted.
 
         This means:
 
-        - You can delete any "copy" without impacting other instances (hardlinks) of it.
+        - You can delete any "copy" without impacting other instances (hardlinks).
 
             Your download client can remove its "copy" without impacting the library "copy". The library "copy" can also be removed by Plex, Sonarr/Radarr, or manually without impacting your download client's "copy".
 
-        - Space is only reclaimed once all "copies" of data that are hardlinked are deleted.
+        - Space is only reclaimed once all "copies" of hardlinked data are deleted.
 
         - Modifying any copy of a hardlinked file will impact all "copies".
 
-            For example, modifying the id3 tags of a .mp3 download after import would modify the download client "copy", resulting in breaking the torrent.
+            For example, modifying the id3 tags of a .mp3 download after import would change the download client "copy", breaking the torrent.
 
         [More info from Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hard_link){:target="_blank" rel="noopener noreferrer"}
 
@@ -58,7 +58,7 @@ Then Continue to [How to set up](/File-and-Folder-Structure/How-to-set-up/) for 
 
 ??? question "**What are Instant Moves (Atomic Moves)?** - [Click to show/hide]"
 
-    A real move and not a copy file from the download folder to the media folder and then deleting the file from the download folder.
+    This is a real move, not a copying of a file from the download folder to the media folder and then deleting the file from the download folder.
 
 ### What are the Starr Apps
 
