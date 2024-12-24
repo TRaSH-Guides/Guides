@@ -4,7 +4,7 @@ You've followed the guide step by step but still want to check if hardlinks are 
 
 You can use 3 options to check if you got working hardlinks.
 
-_All methods require you to log in to your terminal with PuTTY or similar software._
+_All methods require logging in to your terminal with PuTTY or similar software._
 
 !!! warning
 
@@ -16,15 +16,15 @@ _All methods require you to log in to your terminal with PuTTY or similar softwa
 
 ## Usenet
 
-!!! info "If you are using Usenet, these examples won't work due to making use of instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k remux, or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete."
+!!! info "If you use Usenet, these examples won't work because you use instant/atomic moves and not hardlinks.<br><br>Still want to test if it works?<br><br>Test an import of a 4k Remux or any other big file, and you should notice it's almost instant and not a slower and more I/O intensive copy + delete."
 
 ## Mac or Linux Method 1: Using ls
 
-This is the easiest to check in our opinion.
+This is the easiest to check, in our opinion.
 
-In your terminal `cd` to your download location and run `ls -al` or type `ls -al /path/to/your/download/location/`
+In your terminal, `cd` to your download location and run `ls -al` or type `ls -al /path/to/your/download/location/`
 
-You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 are hardlinks.
+You will get a listing of all your files and on the left side you will see a couple of numbers, every file with a number above 1 is hardlinked.
 
 ![!Hardlinks check ls -al](images/hardlinks-ls-al.png)
 
@@ -38,8 +38,8 @@ You will get a listing of all your files and on the left side you will see a cou
 
 This way requires a bit more work.
 
-- In the terminal type: `stat /path/to/your/download/location/file.mkv`
-- In the terminal type: `stat /path/to/your/media/location/file.mkv`
+- In the terminal, type: `stat /path/to/your/download/location/file.mkv`
+- In the terminal, type: `stat /path/to/your/media/location/file.mkv`
 
 You will get 2 results you can use to compare several things.
 
@@ -52,7 +52,7 @@ You will get 2 results you can use to compare several things.
 
 ## Mac or Linux Method 3: Using Inode copies
 
-- In your terminal `cd` to your download location and run `ls -i file.mkv` or type `ls -i /path/to/your/download/location/file.mkv`
+- In your terminal, `cd` to your download location and run `ls -i file.mkv` or type `ls -i /path/to/your/download/location/file.mkv`
 
 This will reveal the inode of your file on the left side of the file.
 
