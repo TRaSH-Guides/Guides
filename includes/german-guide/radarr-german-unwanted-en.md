@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-??? abstract "Unwanted - [Click to show/hide]"
+??? abstract "German Unwanted - [Click to show/hide]"
 
     | Custom Format                                                                                                     |                               Score                                | Trash ID                                            |
     | ----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------: | --------------------------------------------------- |
@@ -9,7 +9,7 @@
     | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                               |        {{ radarr['cf']['lq']['trash_scores']['default'] }}         | {{ radarr['cf']['lq']['trash_id'] }}                |
     | [{{ radarr['cf']['german-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-lq)                 |     {{ radarr['cf']['german-lq']['trash_scores']['default'] }}     | {{ radarr['cf']['german-lq']['trash_id'] }}         |
     | [{{ radarr['cf']['german-microsized']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-microsized) | {{ radarr['cf']['german-microsized']['trash_scores']['default'] }} | {{ radarr['cf']['german-microsized']['trash_id'] }} |
-    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:           |                            :warning: 0                             | {{ radarr['cf']['x265-hd']['trash_id'] }}           |
+    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:           | :warning: {{ radarr['cf']['x265-hd']['trash_scores']['german'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}           |
 
     ---
 
