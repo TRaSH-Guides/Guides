@@ -90,15 +90,6 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Movie format/folder with the German movie name."
         Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
-??? abstract "Change the Indexers Multi Languages option - [Click to show/hide]"
-    In Radarr, you can tell that MULTi in an indexer means that a release possesses at least certain audio. You should select `Original` and `German` for this guide.
-    This option should only be used for German indexers. Doing so on "international" indexers can create false positives with the German Audio CFs.
-
-    If you do not see the option, you need to activate Radarr's "Advanced Options."
-
-    ??? success "Screenshot example - [Click to show/hide]"
-        ![French Radarr MULTi settings](images/german-starr-multi-settings.png)
-
 ---
 
 ## Dealing with German Umlauts and German titles
