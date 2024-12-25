@@ -138,7 +138,7 @@ We've made 3 guides related to this.
 
 | Language profiles                                                |
 | ---------------------------------------------------------------- |
-| [Language: German DL](#language-german-dl)                        |
+| [Language: German DL](#language-german-dl)                       |
 | [Language: Not English (English Only)](#language-not-english)    |
 | [Language: Not French (French Only)](#language-not-french)       |
 | [Language: Not Original (Original Only)](#language-not-original) |
@@ -1217,11 +1217,11 @@ We've made 3 guides related to this.
 
     - Give it a score of `10` if you prefer a season pack.
     - Give it a score of `-10000` if you prefer to not download season packs.
-    - Utilizing the "Release Type" custom format setting added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
+    - Utilizes the "Release Type" custom format condition added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
 
     !!! info
 
-        - This Custom Format could previously result in download loops. The new "Release Type" CF now prevents this undesired behavior. :bangbang:
+        - This Custom Format could previously result in download loops. The new "Release Type" custom format condition now prevents this undesired behavior. :bangbang:
         - This will upgrade your already downloaded single episodes :bangbang:
 
 ??? example "JSON - [Click to show/hide]"
