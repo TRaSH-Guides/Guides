@@ -25,15 +25,6 @@
       }
     },
     {
-      "name": "BiTOR (2160p)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "(?=.*?(\\b2160p\\b))(?=.*?(\\bBiTOR\\b))"
-      }
-    },
-    {
       "name": "GalaxyRG",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
