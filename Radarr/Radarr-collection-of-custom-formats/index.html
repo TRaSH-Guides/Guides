@@ -12521,7 +12521,8 @@ It's all really dependent on specific situations for different people</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;trash_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dc98083864ea246d05a42df0d05f81cc&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;trash_scores&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span>
+<span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;german&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x265 (HD)&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -25468,7 +25469,7 @@ The service features Bell Media original programming, exclusive Canadian access 
 <p>This custom format helps Radarr/Sonarr recognize German Dual Language audio releases.</p>
 <ul>
 <li>Add this Custom Format with the default score of <code>-10000</code> to prevent getting releases that include <code>German + Original audio</code>.</li>
-<li>Add this Custom Format with a score of +<code>10000</code> if you prefer releases that include <code>German + Original audio</code>,  It will add <code>German DL</code> to your filename.
+<li>Add this Custom Format with a score of +<code>10001</code> if you prefer releases that include <code>German + Original audio</code>,  It will add <code>German DL</code> to your filename.
 <!-- markdownlint-enable MD041--></li>
 </ul>
 </details>
@@ -25480,7 +25481,6 @@ The service features Bell Media original programming, exclusive Canadian access 
 <span class="w">    </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-10000</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;german&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10001</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;trash_description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Language: German + Original aka German DL: Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`, Add this Custom Format with a score of +`10000` if you prefer releases that include `German + Original audio`.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;German DL&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;includeCustomFormatWhenRenaming&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;specifications&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
