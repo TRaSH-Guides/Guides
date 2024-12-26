@@ -17,7 +17,7 @@
     Breakdown and Why
 
     - **{{ radarr['cf']['br-disk']['name'] }} :** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-    - :warning: **{{ radarr['cf']['generated-dynamic-hdr']['name'] }} :** A collection of groups who are known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+. At least one German group (VECTOR) generally provides good-quality releases but creates Generated Dynamic HDR for some. If you don't care about Generated Dynamic HDR and/or don't want to avoid VECTOR releases, set this score to 0. If you want to avoid Generated Dynamic HDR set this score to -10000.
+    - :warning: **{{ radarr['cf']['generated-dynamic-hdr']['name'] }} :** A collection of groups who are known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+. At least one German group (VECTOR) generally provides good-quality releases but creates (subjectively better) Generated Dynamic HDR for some. If you don't care about Generated Dynamic HDR and/or don't want to avoid VECTOR releases, set this score to 0. If you want to avoid Generated Dynamic HDR set this score to -10000.
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['line-mic-dubbed']['name'] }}:** This blocks Line and Mic Dubs.
     - **{{ radarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
