@@ -1,7 +1,8 @@
 {
   "trash_id": "e6886871085226c3da1830830146846c",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": 0
   },
   "name": "Generated Dynamic HDR",
   "includeCustomFormatWhenRenaming": false,
