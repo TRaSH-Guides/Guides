@@ -49,20 +49,20 @@ We've made 3 guides related to this.
 
 ---
 
-| Movie Versions                                | Unwanted                                | HQ Release Groups                         |
-| --------------------------------------------- | --------------------------------------- | ----------------------------------------- |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |
-| [Criterion Collection](#criterion-collection) | [AV1](#av1)                             | [Remux Tier 02](#remux-tier-02)           |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                     | [Remux Tier 03](#remux-tier-03)           |
-| [IMAX Enhanced](#imax-enhanced)               | [Extras](#extras)                       | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
-| [IMAX](#imax)                                 | [LQ](#lq)                               | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
-| [Masters of Cinema](#masters-of-cinema)       | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
-| [Open Matte](#open-matte)                     | [Upscaled](#upscaled)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
-| [Remaster](#remaster)                         | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
-| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |
-|                                               |                                         | [WEB Tier 03](#web-tier-03)               |
+| Movie Versions                                | Unwanted                                        | HQ Release Groups                         |
+| --------------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                                       | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [AV1](#av1)                                     | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                             | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX Enhanced](#imax-enhanced)               | [Extras](#extras)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX](#imax)                                 | [Generated Dynamic HDR](#generated-dynamic-hdr) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [LQ](#lq)                                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [LQ (Release Title)](#lq-release-title)         | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         | [Upscaled](#upscaled)                           | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd)                           | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             |                                                 | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                                 | [WEB Tier 02](#web-tier-02)               |
+|                                               |                                                 | [WEB Tier 03](#web-tier-03)               |
 
 ---
 
@@ -964,6 +964,23 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/br-disk.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Generated Dynamic HDR
+
+??? question "Generated Dynamic HDR - [Click to show/hide]"
+
+    - A collection of groups who are known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+.
+    - This generated dynamic HDR metadata is not from a retail source, so is usually not desirable.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/generated-dynamic-hdr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
