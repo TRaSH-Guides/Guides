@@ -23,6 +23,15 @@
       "fields": {
         "value": -2
       }
+    },
+    {
+      "name": "DL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
+      }
     }
   ]
 }
