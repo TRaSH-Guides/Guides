@@ -142,7 +142,7 @@ We've made 3 guides related to this.
 | [Language: Not English (English Only)](#language-not-english)    |
 | [Language: Not French (French Only)](#language-not-french)       |
 | [Language: Not Original (Original Only)](#language-not-original) |
-| [Language: Original French](#language-original-french)           |
+| [Language: Original + French](#language-original-plus-french)    |
 
 ---
 
@@ -3316,7 +3316,7 @@ We've made 3 guides related to this.
 
 ---
 
-### Language: Original French
+### Language: Original Plus French
 
 <sub>Language: Original + French</sub>
 
@@ -3327,7 +3327,7 @@ We've made 3 guides related to this.
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-french.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

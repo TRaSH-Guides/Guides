@@ -103,7 +103,7 @@ We've made 3 guides related to this.
 | [DV (WEBDL)](#dv-webdl)                | [Language: Not English (English Only)](#language-not-english)    |
 | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not French (French Only)](#language-not-french)       |
 | [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Not Original (Original Only)](#language-not-original) |
-| [FreeLeech](#freeleech)                | [Language: Original French](#language-original-french)           |
+| [FreeLeech](#freeleech)                | [Language: Original + French](#language-original-plus-french)    |
 | [HDR10+ Boost](#hdr10plus-boost)       |                                                                  |
 | [HFR](#hfr)                            |                                                                  |
 | [Internal](#internal)                  |                                                                  |
@@ -147,7 +147,7 @@ We've made 3 guides related to this.
 | [German Remux Tier 02](#german-remux-tier-02)   | [German Microsized](#german-microsized)       | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
 | [German Bluray Tier 01](#german-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
 | [German Bluray Tier 02](#german-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
-| [German Bluray Tier 03](#german-bluray-tier-02) |                                               | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
+| [German Bluray Tier 03](#german-bluray-tier-03) |                                               | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
 | [German Web Tier 01](#german-web-tier-01)       |                                               | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
 | [German Web Tier 02](#german-web-tier-02)       |                                               | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
 | [German Web Tier 03](#german-web-tier-03)       |                                               | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
@@ -3588,7 +3588,7 @@ We've made 3 guides related to this.
 
 ---
 
-### Language: Original French
+### Language: Original Plus French
 
 <sub>Language: Original + French</sub>
 
@@ -3599,7 +3599,7 @@ We've made 3 guides related to this.
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-french.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
