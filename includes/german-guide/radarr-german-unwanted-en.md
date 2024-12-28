@@ -1,21 +1,23 @@
 <!-- markdownlint-disable MD041-->
 ??? abstract "German Unwanted - [Click to show/hide]"
 
-    | Custom Format                                                                                                     |                               Score                                | Trash ID                                            |
-    | ----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------: | --------------------------------------------------- |
-    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                     |      {{ radarr['cf']['br-disk']['trash_scores']['default'] }}      | {{ radarr['cf']['br-disk']['trash_id'] }}           |
-    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                               |        {{ radarr['cf']['3d']['trash_scores']['default'] }}         | {{ radarr['cf']['3d']['trash_id'] }}                |
-    | [{{ radarr['cf']['line-mic-dubbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#linemic-dubbed)      |  {{ radarr['cf']['line-mic-dubbed']['trash_scores']['default'] }}  | {{ radarr['cf']['line-mic-dubbed']['trash_id'] }}   |
-    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                               |        {{ radarr['cf']['lq']['trash_scores']['default'] }}         | {{ radarr['cf']['lq']['trash_id'] }}                |
-    | [{{ radarr['cf']['german-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-lq)                 |     {{ radarr['cf']['german-lq']['trash_scores']['default'] }}     | {{ radarr['cf']['german-lq']['trash_id'] }}         |
-    | [{{ radarr['cf']['german-microsized']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-microsized) | {{ radarr['cf']['german-microsized']['trash_scores']['default'] }} | {{ radarr['cf']['german-microsized']['trash_id'] }} |
-    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:           | :warning: {{ radarr['cf']['x265-hd']['trash_scores']['german'] }}  | {{ radarr['cf']['x265-hd']['trash_id'] }}           |
+    | Custom Format                                                                                                                       |                                      Score                                      | Trash ID                                                |
+    | ----------------------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------: | ------------------------------------------------------- |
+    | [{{ radarr['cf']['br-disk']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#br-disk)                                       |            {{ radarr['cf']['br-disk']['trash_scores']['default'] }}             | {{ radarr['cf']['br-disk']['trash_id'] }}               |
+    | [{{ radarr['cf']['generated-dynamic-hdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#generated-dynamic-hdr) :warning: | :warning: {{ radarr['cf']['generated-dynamic-hdr']['trash_scores']['german'] }} | {{ radarr['cf']['generated-dynamic-hdr']['trash_id'] }} |
+    | [{{ radarr['cf']['3d']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#3d)                                                 |               {{ radarr['cf']['3d']['trash_scores']['default'] }}               | {{ radarr['cf']['3d']['trash_id'] }}                    |
+    | [{{ radarr['cf']['line-mic-dubbed']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#linemic-dubbed)                        |        {{ radarr['cf']['line-mic-dubbed']['trash_scores']['default'] }}         | {{ radarr['cf']['line-mic-dubbed']['trash_id'] }}       |
+    | [{{ radarr['cf']['lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#lq)                                                 |               {{ radarr['cf']['lq']['trash_scores']['default'] }}               | {{ radarr['cf']['lq']['trash_id'] }}                    |
+    | [{{ radarr['cf']['german-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-lq)                                   |           {{ radarr['cf']['german-lq']['trash_scores']['default'] }}            | {{ radarr['cf']['german-lq']['trash_id'] }}             |
+    | [{{ radarr['cf']['german-microsized']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-microsized)                   |       {{ radarr['cf']['german-microsized']['trash_scores']['default'] }}        | {{ radarr['cf']['german-microsized']['trash_id'] }}     |
+    | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:                             |        :warning: {{ radarr['cf']['x265-hd']['trash_scores']['german'] }}        | {{ radarr['cf']['x265-hd']['trash_id'] }}               |
 
     ---
 
     Breakdown and Why
 
-    - **{{ radarr['cf']['br-disk']['name'] }} :** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+    - **{{ radarr['cf']['br-disk']['name'] }}:** This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
+    - :warning: **{{ radarr['cf']['generated-dynamic-hdr']['name'] }}:** A collection of groups known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+. At least one German group (VECTOR) generally provides good-quality releases but creates (subjectively better) Generated Dynamic HDR for some. If you don't care about Generated Dynamic HDR and/or don't want to avoid VECTOR releases, set this score to `0`. If you're going to prevent Generated Dynamic HDR set this score to `-10000`.
     - **{{ radarr['cf']['3d']['name'] }}:** Is 3D still a thing for home use ?
     - **{{ radarr['cf']['line-mic-dubbed']['name'] }}:** This blocks Line and Mic Dubs.
     - **{{ radarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
