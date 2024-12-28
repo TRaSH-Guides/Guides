@@ -3514,7 +3514,7 @@ We've made 3 guides related to this.
 
 ---
 
-### Language: Original plus French
+### Language: Original Plus French
 
 <sub>Language: Original + French</sub>
 
