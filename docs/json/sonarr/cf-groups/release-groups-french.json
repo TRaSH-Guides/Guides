@@ -1,0 +1,32 @@
+{
+  "name": "Release Groups French",
+  "trash_id": "d83f6b289993d56092431ff4f91228b0",
+  "trash_description": "Release Groups French for Sonarr",
+  "custom_formats": [
+    {
+      "name": "FR Remux Tier 01",
+      "trash_id": "b8e91cc8fb2bd96468fab74730c30d18",
+      "required": false
+    },
+    {
+      "name": "FR HD Bluray Tier 01",
+      "trash_id": "d844321db5e126d2e7e46152f0706532",
+      "required": false
+    },
+    {
+      "name": "FR WEB Tier 01",
+      "trash_id": "ddb8eaa9c85a549c50034d280539d54d",
+      "required": false
+    },
+    {
+      "name": "FR WEB Tier 02",
+      "trash_id": "a4c51febd4d8b2a0db10a3c974f21d92",
+      "required": false
+    },
+    {
+      "name": "FR Scene Groups",
+      "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
+      "required": false
+    }
+  ]
+}
