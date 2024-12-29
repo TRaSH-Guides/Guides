@@ -140,6 +140,11 @@
       <b><a href="https://github.com/keliansb" style="color: #ffa500;">keliansb</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/15230279?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Lokilicious">
+      <br>
+      <b><a href="https://github.com/Lokilicious" style="color: #ffa500;">Lokilicious</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/7110194?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Roxedus">
       <br>
       <b><a href="https://github.com/Roxedus" style="color: #ffa500;">Roxedus</a></b>
@@ -149,7 +154,7 @@
       <br>
       <b><a href="https://github.com/saltydk" style="color: #ffa500;">saltydk</a></b>
     </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/20839616?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="mizz141">
       <br>
       <b><a href="https://github.com/mizz141" style="color: #ffa500;">mizz141</a></b>
@@ -158,11 +163,6 @@
       <img src="https://avatars.githubusercontent.com/u/82363306?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Opt6">
       <br>
       <b><a href="https://github.com/Opt6" style="color: #ffa500;">Opt6</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/15230279?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Lokilicious">
-      <br>
-      <b><a href="https://github.com/Lokilicious" style="color: #ffa500;">Lokilicious</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/1890076?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Kuredant">
