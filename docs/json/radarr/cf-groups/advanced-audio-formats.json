@@ -75,6 +75,7 @@
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
       "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
       "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
       "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
