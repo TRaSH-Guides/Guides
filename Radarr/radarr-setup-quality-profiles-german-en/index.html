@@ -818,9 +818,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hd-bluray-web-1080p" class="md-nav__link">
+  <a href="#hd-bluray-web" class="md-nav__link">
     <span class="md-ellipsis">
-      HD Bluray + WEB (1080p)
+      HD Bluray + WEB
     </span>
   </a>
   
@@ -3636,9 +3636,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hd-bluray-web-1080p" class="md-nav__link">
+  <a href="#hd-bluray-web" class="md-nav__link">
     <span class="md-ellipsis">
-      HD Bluray + WEB (1080p)
+      HD Bluray + WEB
     </span>
   </a>
   
@@ -3769,24 +3769,7 @@
 <details class="abstract">
 <summary>Merge Qualities - [Click to show/hide]</summary>
 <p>To allow upgrades based on language without release qualities interfering, we need to <a href="/Radarr/Tips/Merge-quality/">merge all desired qualities</a> into one group.</p>
-<p>We want to merge the following Qualities:</p>
-<ul>
-<li>Remux-2160p</li>
-<li>Bluray-2160p</li>
-<li>WEBDL-2160p</li>
-<li>WEBRip-2160p</li>
-<li>Remux-1080p</li>
-<li>Bluray-1080p</li>
-<li>WEBDL-1080p</li>
-<li>WEBRip-1080p</li>
-<li>Bluray-720p</li>
-<li>WEBDL-720p</li>
-<li>WEBRip-720p</li>
-</ul>
-<p>and name it: <code>Bluray|WEB</code></p>
-<div class="admonition warning">
-<p class="admonition-title">Make sure you do not check BR-DISK.</p>
-</div>
+<p>You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The order listed in the profile matters even if a quality is not checked, for example if you have a 1080p version but wanted the SD version, Radarr will reject all SD results because 1080p is listed higher than SD even though 1080p was not checked.</p>
@@ -3956,7 +3939,20 @@ The only (cosmetic) impact of this is that the scores of those releases will be 
 <!-- markdownlint-enable MD041-->
 
 <hr />
-<h3 id="hd-bluray-web-1080p">HD Bluray + WEB (1080p)<a class="headerlink" href="#hd-bluray-web-1080p" title="Permanent link"></a></h3>
+<h3 id="hd-bluray-web">HD Bluray + WEB<a class="headerlink" href="#hd-bluray-web" title="Permanent link"></a></h3>
+<p>If you prefer High-Quality HD Encodes (720p/1080p)</p>
+<div class="admonition abstract">
+<p class="admonition-title">Recommended merging of qualities</p>
+<p>We recommend to <a href="/Radarr/Tips/Merge-quality/">merge the following qualities</a>:</p>
+<ul>
+<li>Bluray-1080p</li>
+<li>WEBDL-1080p</li>
+<li>WEBRip-1080p</li>
+<li>Bluray-720p</li>
+<li>WEBDL-720p</li>
+<li>WEBRip-720p</li>
+</ul>
+</div>
 <!-- markdownlint-disable MD041-->
 <details class="abstract">
 <summary>German Audio - [Click to show/hide]</summary>
@@ -4136,11 +4132,6 @@ The only (cosmetic) impact of this is that the scores of those releases will be 
 <td>3bc8df3a71baaac60a31ef696ea72d36</td>
 </tr>
 <tr>
-<td><a href="/Radarr/Radarr-collection-of-custom-formats/#german-2160p-booster">German 2160p Booster</a></td>
-<td style="text-align: center;">6750</td>
-<td>cc7b1e64e2513a6a271090cdfafaeb55</td>
-</tr>
-<tr>
 <td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/720p.json">720p</a></td>
 <td style="text-align: center;">5</td>
 <td>b2be17d608fc88818940cd1833b0b24c</td>
@@ -4150,17 +4141,12 @@ The only (cosmetic) impact of this is that the scores of those releases will be 
 <td style="text-align: center;">50</td>
 <td>820b09bb9acbfde9c35c71e0e565dad8</td>
 </tr>
-<tr>
-<td><a href="https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/2160p.json">2160p</a></td>
-<td style="text-align: center;">100</td>
-<td>fb392fb0d61a010ae38e49ceaa24a1ef</td>
-</tr>
 </tbody>
 </table>
 <hr />
 <p>Breakdown and Why</p>
 <ul>
-<li>Since we are merging all qualities into a single group, we need to add scores for different sources to allow upgrades between them.</li>
+<li>Since we are merging all qualities into a single group, we need to add scores for different resolutions to allow upgrades between them.</li>
 <li>As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.</li>
 </ul>
 </details>
@@ -4456,6 +4442,28 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <hr />
 <h3 id="uhd-bluray-web-2160p">UHD Bluray + WEB (2160p)<a class="headerlink" href="#uhd-bluray-web-2160p" title="Permanent link"></a></h3>
+<p>If you prefer High-Quality UHD Encodes (2160p)</p>
+<div class="admonition abstract">
+<p class="admonition-title">Recommended merging of qualities</p>
+<p>We recommend to <a href="/Radarr/Tips/Merge-quality/">merge the following qualities</a>:</p>
+<ul>
+<li>Bluray-2160p</li>
+<li>WEBDL-2160p</li>
+<li>WEBRip-2160p</li>
+</ul>
+<details class="tip">
+<summary>Alternative Quality Profile - [Click to show/hide]</summary>
+<p>You may add the following qualities to the merged quality group if you want to grab HD (720p/1080p) releases before a UHD release is available:</p>
+<ul>
+<li>Bluray-1080p</li>
+<li>WEBDL-1080p</li>
+<li>WEBRip-1080p</li>
+<li>Bluray-720p</li>
+<li>WEBDL-720p</li>
+<li>WEBRip-720p</li>
+</ul>
+</details>
+</div>
 <!-- markdownlint-disable MD041-->
 <details class="abstract">
 <summary>German Audio - [Click to show/hide]</summary>
@@ -4577,6 +4585,36 @@ Also they often even rename the release name into Portuguese.</li>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> German Scene groups are included as a fallback if you really want their release despite a potential loss in quality. Either score the CF to <code>1500</code> (default) or <code>0</code>, depending on what you want to achieve.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Custom Formats for the Alternative Quality Profile</p>
+<p>In case you went for the alternative quality profile (including 720p/1080p qualities) you will need to add the following custom formats.</p>
+<table>
+<thead>
+<tr>
+<th>Custom Format</th>
+<th style="text-align: center;">Score</th>
+<th>Trash ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01">HD Bluray Tier 01</a></td>
+<td style="text-align: center;">1800</td>
+<td>ed27ebfef2f323e964fb1f61391bcb35</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02">HD Bluray Tier 02</a></td>
+<td style="text-align: center;">1750</td>
+<td>c20c8647f2746a1f4c4262b0fbbeeeae</td>
+</tr>
+<tr>
+<td><a href="/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03">HD Bluray Tier 03</a></td>
+<td style="text-align: center;">1700</td>
+<td>5608c71bcebba0a5e666223bae8c9227</td>
+</tr>
+</tbody>
+</table>
 </div>
 </details>
 <!-- markdownlint-enable MD041-->
@@ -5340,6 +5378,17 @@ Also they often even rename the release name into Portuguese.</li>
 </details>
 <hr />
 <h3 id="uhd-remux-web-2160p">UHD Remux + WEB (2160p)<a class="headerlink" href="#uhd-remux-web-2160p" title="Permanent link"></a></h3>
+<p>If you prefer 2160p Remuxes (Remux-2160p)</p>
+<div class="admonition abstract">
+<p class="admonition-title">Recommended merging of qualities</p>
+<p>We recommend to <a href="/Radarr/Tips/Merge-quality/">merge the following qualities</a>:</p>
+<ul>
+<li>Remux-2160p</li>
+<li>WEBDL-2160p</li>
+<li>WEBRip-2160p</li>
+</ul>
+<p>Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.</p>
+</div>
 <!-- markdownlint-disable MD041-->
 <details class="abstract">
 <summary>German Audio - [Click to show/hide]</summary>
@@ -5457,7 +5506,7 @@ Also they often even rename the release name into Portuguese.</li>
 <p class="admonition-title">Tip</p>
 <p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:" /> German Scene groups are included as a fallback if you really want their release despite a potential loss in quality. Either score the CF to <code>1500</code> (default) or <code>0</code>, depending on what you want to achieve.</p>
 </div>
-<p>Note: Bluray Custom Formats are not included as the main fallback for this profile is web. However, feel free to add them if needed.</p>
+<p>Note: Bluray Custom Formats are not included as the main fallback for this profile is WEB. However, feel free to add them if needed.</p>
 </details>
 <!-- markdownlint-enable MD041-->
 
@@ -6269,7 +6318,7 @@ Also they often even rename the release name into Portuguese.</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 25, 2024 08:14:12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 30, 2024 21:48:05</span>
   </span>
 
     
