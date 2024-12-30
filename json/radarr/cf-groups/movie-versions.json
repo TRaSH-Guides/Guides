@@ -50,13 +50,15 @@
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
       "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
       "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
       "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
       "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
-      "SQP-4": "013f89e6da27519fe56cf482702a2db9",
-      "SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
+      "SQP-4": "013f89e6da27519fe56cf482702a2db9"
     }
   }
 }

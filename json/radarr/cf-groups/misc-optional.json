@@ -1,5 +1,5 @@
 {
-  "name": "Optional",
+  "name": "Misc (Optional)",
   "trash_id": "9337080378236ce4c0b183e35790d2a7",
   "custom_formats": [
     {
@@ -33,13 +33,16 @@
       "required": false
     },
     {
-      "name": "x265 (no HDR/DV)",
-      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "name": "x265 (HD)",
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
       "required": false
     }
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
       "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
       "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
       "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",

@@ -45,10 +45,12 @@
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
       "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
       "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
       "SQP-2": "c3933358ba2356bafc41524f81471069",
-      "SQP-3": "2cf36c1f0106ffac993be003ade51865"
+      "SQP-3": "2cf36c1f0106ffac993be003ade51865",
+      "SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
     }
   }
 }
