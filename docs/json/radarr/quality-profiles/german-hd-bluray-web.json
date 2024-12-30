@@ -41,19 +41,17 @@
       "name": "Merged QPs",
       "allowed": true,
       "items": [
-        "Bluray-1080p",
+        "WEBRip-720p",
+        "WEBDL-720p",
+        "Bluray-720p",
         "WEBDL-1080p",
         "WEBRip-1080p",
-        "Bluray-720p",
-        "WEBDL-720p",
-        "WEBRip-720p"
+        "Bluray-1080p"
       ]
     }
   ],
   "formatItems": {
     "German 1080p Booster": "3bc8df3a71baaac60a31ef696ea72d36",
-    "German 2160p Booster": "cc7b1e64e2513a6a271090cdfafaeb55",
-    "2160p": "fb392fb0d61a010ae38e49ceaa24a1ef",
     "1080p": "820b09bb9acbfde9c35c71e0e565dad8",
     "720p": "b2be17d608fc88818940cd1833b0b24c",
     "German": "86bc3115eb4e9873ac96904a4a68e19e",
@@ -68,6 +66,7 @@
     "German Scene": "2d136d4e33082fe573d06b1f237c40dd",
     "German LQ": "263943bc5d99550c68aad0c4278ba1c7",
     "German Microsized": "03c430f326f10a27a9739b8bc83c30e4",
+    "Line/Mic Dubbed": "c465ccc73923871b3eb1802042331306",
     "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
     "HD Bluray Tier 02": "c20c8647f2746a1f4c4262b0fbbeeeae",
     "HD Bluray Tier 03": "5608c71bcebba0a5e666223bae8c9227",

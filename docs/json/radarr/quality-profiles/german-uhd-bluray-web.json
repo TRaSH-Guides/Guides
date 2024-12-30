@@ -47,9 +47,9 @@
       "name": "Merged QPs",
       "allowed": true,
       "items": [
-        "Bluray-2160p",
+        "WEBRip-2160p",
         "WEBDL-2160p",
-        "WEBRip-2160p"
+        "Bluray-2160p"
       ]
     }
   ],
@@ -71,6 +71,7 @@
     "German Scene": "2d136d4e33082fe573d06b1f237c40dd",
     "German LQ": "263943bc5d99550c68aad0c4278ba1c7",
     "German Microsized": "03c430f326f10a27a9739b8bc83c30e4",
+    "Line/Mic Dubbed": "c465ccc73923871b3eb1802042331306",
     "DV HDR10Plus": "c53085ddbd027d9624b320627748612f",
     "DV HDR10": "e23edd2482476e595fb990b12e7c609c",
     "DV": "58d6a88f13e2db7f5059c41047876f00",
