@@ -61,23 +61,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
 
     To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
 
-    We want to merge the following Qualities:
-
-    - Remux-2160p
-    - Bluray-2160p
-    - WEBDL-2160p
-    - WEBRip-2160p
-    - Remux-1080p
-    - Bluray-1080p
-    - WEBDL-1080p
-    - WEBRip-1080p
-    - Bluray-720p
-    - WEBDL-720p
-    - WEBRip-720p
-
-    and name it: `Bluray|WEB`
-
-    !!! warning "Make sure you do not check BR-DISK."
+    You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.
 
     {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
@@ -141,7 +125,20 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 ---
 
-### HD Bluray + WEB (1080p)
+### HD Bluray + WEB
+
+If you prefer High-Quality HD Encodes (720p/1080p)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Bluray-1080p
+    - WEBDL-1080p
+    - WEBRip-1080p
+    - Bluray-720p
+    - WEBDL-720p
+    - WEBRip-720p
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
@@ -149,7 +146,7 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
 {! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
 
@@ -164,6 +161,27 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 ---
 
 ### UHD Bluray + WEB (2160p)
+
+If you prefer High-Quality UHD Encodes (2160p)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Bluray-2160p
+    - WEBDL-2160p
+    - WEBRip-2160p
+
+    ??? tip "Alternative Quality Profile - [Click to show/hide]"
+
+        You may add the following qualities to the merged quality group if you want to grab HD (720p/1080p) releases before a UHD release is available:
+
+        - Bluray-1080p
+        - WEBDL-1080p
+        - WEBRip-1080p
+        - Bluray-720p
+        - WEBDL-720p
+        - WEBRip-720p
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
@@ -192,6 +210,18 @@ This is a must-have for every Quality Profile you use. All these Custom Formats 
 ---
 
 ### UHD Remux + WEB (2160p)
+
+If you prefer 2160p Remuxes (Remux-2160p)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Remux-2160p
+    - WEBDL-2160p
+    - WEBRip-2160p
+
+    Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 

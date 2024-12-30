@@ -20,5 +20,5 @@
 
         :warning: German Scene groups are included as a fallback if you really want their release despite a potential loss in quality. Either score the CF to `{{ radarr['cf']['german-scene']['trash_scores']['default'] }}` (default) or `0`, depending on what you want to achieve.
 
-    Note: Bluray Custom Formats are not included as the main fallback for this profile is web. However, feel free to add them if needed.
+    Note: Bluray Custom Formats are not included as the main fallback for this profile is WEB. However, feel free to add them if needed.
 <!-- markdownlint-enable MD041-->

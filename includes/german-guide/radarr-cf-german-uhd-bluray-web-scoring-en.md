@@ -20,4 +20,15 @@
     !!! tip
 
         :warning: German Scene groups are included as a fallback if you really want their release despite a potential loss in quality. Either score the CF to `{{ radarr['cf']['german-scene']['trash_scores']['default'] }}` (default) or `0`, depending on what you want to achieve.
+
+    !!! tip "Custom Formats for the Alternative Quality Profile"
+
+        In case you went for the alternative quality profile (including 720p/1080p qualities) you will need to add the following custom formats.
+
+        | Custom Format                                                                                                             |                                  Score                                  | Trash ID                                                |
+        | ------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------: | ------------------------------------------------------- |
+        | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)         |   {{ radarr['cf']['hd-bluray-tier-01']['trash_scores']['default'] }}    | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }}     |
+        | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)         |   {{ radarr['cf']['hd-bluray-tier-02']['trash_scores']['default'] }}    | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }}     |
+        | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)         |   {{ radarr['cf']['hd-bluray-tier-03']['trash_scores']['default'] }}    | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }}     |
+
 <!-- markdownlint-enable MD041-->
