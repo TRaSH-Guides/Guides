@@ -174,11 +174,14 @@ If you prefer High-Quality UHD Encodes (2160p)
 
     ??? tip "Alternative Quality Profile - [Click to show/hide]"
 
-        You may add the following qualities depending if you want to grab HD releases before UHD is available:
+        You may add the following qualities depending if you want to grab HD (720p/1080p) releases before UHD is available:
 
         - Bluray-1080p
         - WEBDL-1080p
         - WEBRip-1080p
+        - Bluray-720p
+        - WEBDL-720p
+        - WEBRip-720p
 
 {! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
 
