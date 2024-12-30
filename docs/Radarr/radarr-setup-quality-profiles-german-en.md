@@ -174,7 +174,7 @@ If you prefer High-Quality UHD Encodes (2160p)
 
     ??? tip "Alternative Quality Profile - [Click to show/hide]"
 
-        You may add the following qualities depending if you want to grab HD (720p/1080p) releases before UHD is available:
+        You may add the following qualities to the merged quality group if you want to grab HD (720p/1080p) releases before a UHD release is available:
 
         - Bluray-1080p
         - WEBDL-1080p
