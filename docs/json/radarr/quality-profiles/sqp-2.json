@@ -6,6 +6,7 @@
   "cutoff": "WEB|Remux|Bluray|2160p",
   "minFormatScore": 550,
   "cutoffFormatScore": 10000,
+  "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },
