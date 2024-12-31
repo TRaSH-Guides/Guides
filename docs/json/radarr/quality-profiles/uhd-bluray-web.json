@@ -3,6 +3,9 @@
   "name": "UHD Bluray + WEB",
   "upgradeAllowed": true,
   "cutoff": "Bluray-2160p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },
@@ -47,8 +50,6 @@
     },
     { "name": "Bluray-2160p", "allowed": true }
   ],
-  "minFormatScore": 0,
-  "cutoffFormatScore": 10000,
   "formatItems": {
     "DV HDR10Plus": "c53085ddbd027d9624b320627748612f",
     "DV HDR10": "e23edd2482476e595fb990b12e7c609c",
