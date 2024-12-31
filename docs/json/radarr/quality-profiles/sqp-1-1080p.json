@@ -6,6 +6,7 @@
   "cutoff": "Bluray|WEB-1080p",
   "minFormatScore": 1000,
   "cutoffFormatScore": 10000,
+  "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },
