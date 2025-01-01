@@ -2,7 +2,7 @@
 
     | Formats Personnalisés                                                                                                           | Trash ID                                                   |                                 Score profile VOSTFR                                  |                                Score profile MULTI.VO                                |
     |---------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|:-------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-    | [{{ sonarr['cf']['language-original-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-original-french) | {{ sonarr['cf']['language-original-french']['trash_id'] }} | {{ sonarr['cf']['language-original-french']['trash_scores']['french-anime-vostfr'] }} | {{ sonarr['cf']['language-original-french']['trash_scores']['french-anime-multi'] }} |
+    | [{{ sonarr['cf']['language-original-plus-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-original-plus-french) | {{ sonarr['cf']['language-original-plus-french']['trash_id'] }} | {{ sonarr['cf']['language-original-plus-french']['trash_scores']['french-anime-vostfr'] }} | {{ sonarr['cf']['language-original-plus-french']['trash_scores']['french-anime-multi'] }} |
     | [{{ sonarr['cf']['language-not-original']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-not-original)       | {{ sonarr['cf']['language-not-original']['trash_id'] }}    |  {{ sonarr['cf']['language-not-original']['trash_scores']['french-anime-vostfr'] }}   |  {{ sonarr['cf']['language-not-original']['trash_scores']['french-anime-multi'] }}   |
     | [{{ sonarr['cf']['language-not-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-not-french)           | {{ sonarr['cf']['language-not-french']['trash_id'] }}      |   {{ sonarr['cf']['language-not-french']['trash_scores']['french-anime-vostfr'] }}    |   {{ sonarr['cf']['language-not-french']['trash_scores']['french-anime-multi'] }}    |
     | [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr)                              | {{ sonarr['cf']['french-vostfr']['trash_id'] }}            |      {{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime-vostfr'] }}       |      {{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime-multi'] }}       |
@@ -28,7 +28,7 @@
 
     !!! tip "Score Profile VOSTFR"
 
-        Si vous voulez que le profil `VOSTFR` prenne aussi les release MULTI dans le cas ou aucune release VOSTFR n'est disponible, il faut donc mettre la valeur de [{{ sonarr['cf']['language-original-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-original-french) à `0` au lieu de `{{ sonarr['cf']['language-original-french']['trash_scores']['french-anime-vostfr'] }}`
+        Si vous voulez que le profil `VOSTFR` prenne aussi les release MULTI dans le cas ou aucune release VOSTFR n'est disponible, il faut donc mettre la valeur de [{{ sonarr['cf']['language-original-plus-french']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#language-original-plus-french) à `0` au lieu de `{{ sonarr['cf']['language-original-plus-french']['trash_scores']['french-anime-vostfr'] }}`
 
     !!! tip "Préférer la version FanSub aux autres"
 

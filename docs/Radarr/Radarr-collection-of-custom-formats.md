@@ -49,20 +49,20 @@ We've made 3 guides related to this.
 
 ---
 
-| Movie Versions                                | Unwanted                                | HQ Release Groups                         |
-| --------------------------------------------- | --------------------------------------- | ----------------------------------------- |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |
-| [Criterion Collection](#criterion-collection) | [AV1](#av1)                             | [Remux Tier 02](#remux-tier-02)           |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                     | [Remux Tier 03](#remux-tier-03)           |
-| [IMAX Enhanced](#imax-enhanced)               | [Extras](#extras)                       | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
-| [IMAX](#imax)                                 | [LQ](#lq)                               | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
-| [Masters of Cinema](#masters-of-cinema)       | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
-| [Open Matte](#open-matte)                     | [Upscaled](#upscaled)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
-| [Remaster](#remaster)                         | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
-| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |
-|                                               |                                         | [WEB Tier 03](#web-tier-03)               |
+| Movie Versions                                | Unwanted                                        | HQ Release Groups                         |
+| --------------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                                       | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [AV1](#av1)                                     | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                             | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX Enhanced](#imax-enhanced)               | [Extras](#extras)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX](#imax)                                 | [Generated Dynamic HDR](#generated-dynamic-hdr) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [LQ](#lq)                                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [LQ (Release Title)](#lq-release-title)         | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         | [Upscaled](#upscaled)                           | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd)                           | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             |                                                 | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                                 | [WEB Tier 02](#web-tier-02)               |
+|                                               |                                                 | [WEB Tier 03](#web-tier-03)               |
 
 ---
 
@@ -85,7 +85,7 @@ We've made 3 guides related to this.
 | [Stan](#stan)              |                          |                          |
 
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
-|-----------------------|-------------------------|--------------------------|
+| --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [AUBC](#aubc)           | [VRV](#vrv)              |
 | [ITVX](#itvx)         | [CBC](#cbc)             |                          |
 | [MY5](#my5)           | [Crave](#crav)          |                          |
@@ -95,36 +95,36 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | French Audio Version | French Source Groups                            |
-|----------------------------------------|----------------------|-------------------------------------------------|
-| [Bad Dual Groups](#bad-dual-groups)    | [VFF](#vff)          | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [DV (Disk)](#dv-disk)                  | [VOF](#vof)          | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [DV (WEBDL)](#dv-webdl)                | [VFI](#vfi)          | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VF2](#vf2)          | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [Dutch Groups](#dutch-groups)          | [VFQ](#vfq)          | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [EVO (no WEBDL)](#evo-no-webdl)        | [VOQ](#voq)          | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [FreeLeech](#freeleech)                | [VQ](#vq)            | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [HFR](#hfr)                            | [VFB](#vfb)          | [FR WEB Tier 02](#fr-web-tier-02)               |
-| [HDR10+ Boost](#hdr10plus-boost)       | [VOSTFR](#vostfr)    | [FR Scene Groups](#fr-scene-groups)             |
-| [Internal](#internal)                  | [FanSUB](#fansub)    | [FR LQ](#fr-lq)                                 |
-| [Line/Mic Dubbed](#linemic-dubbed)     | [FastSUB](#fastsub)  |                                                 |
-| [MPEG2](#mpeg2)                        |                      |                                                 |
-| [Multi](#multi)                        |                      |                                                 |
-| [No-RlsGroup](#no-rlsgroup)            |                      |                                                 |
-| [Obfuscated](#obfuscated)              |                      |                                                 |
-| [Repack/Proper](#repackproper)         |                      |                                                 |
-| [Repack2](#repack2)                    |                      |                                                 |
-| [Repack3](#repack3)                    |                      |                                                 |
-| [Retags](#retags)                      |                      |                                                 |
-| [Scene](#scene)                        |                      |                                                 |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                      |                                                 |
-| [SDR](#sdr)                            |                      |                                                 |
-| [VC-1](#vc-1)                          |                      |                                                 |
-| [VP9](#vp9)                            |                      |                                                 |
-| [x264](#x264)                          |                      |                                                 |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                      |                                                 |
-| [x265](#x265)                          |                      |                                                 |
-| [x266](#x266)                          |                      |                                                 |
+| Miscellaneous                          | Language profiles                                                |
+| -------------------------------------- | ---------------------------------------------------------------- |
+| [Bad Dual Groups](#bad-dual-groups)    | [Language: German](#language-german)                             |
+| [Dutch Groups](#dutch-groups)          | [Language: German DL](#language-german-dl)                       |
+| [DV (Disk)](#dv-disk)                  | [Language: German DL (undefined)](#language-german-dl-undefined) |
+| [DV (WEBDL)](#dv-webdl)                | [Language: Not English (English Only)](#language-not-english)    |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not French (French Only)](#language-not-french)       |
+| [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Not Original (Original Only)](#language-not-original) |
+| [FreeLeech](#freeleech)                | [Language: Original + French](#language-original-plus-french)    |
+| [HDR10+ Boost](#hdr10plus-boost)       |                                                                  |
+| [HFR](#hfr)                            |                                                                  |
+| [Internal](#internal)                  |                                                                  |
+| [Line/Mic Dubbed](#linemic-dubbed)     |                                                                  |
+| [MPEG2](#mpeg2)                        |                                                                  |
+| [Multi](#multi)                        |                                                                  |
+| [No-RlsGroup](#no-rlsgroup)            |                                                                  |
+| [Obfuscated](#obfuscated)              |                                                                  |
+| [Repack/Proper](#repackproper)         |                                                                  |
+| [Repack2](#repack2)                    |                                                                  |
+| [Repack3](#repack3)                    |                                                                  |
+| [Retags](#retags)                      |                                                                  |
+| [Scene](#scene)                        |                                                                  |
+| [SDR (no WEBDL)](#sdr-no-webdl)        |                                                                  |
+| [SDR](#sdr)                            |                                                                  |
+| [VC-1](#vc-1)                          |                                                                  |
+| [VP9](#vp9)                            |                                                                  |
+| [x264](#x264)                          |                                                                  |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                                                  |
+| [x265](#x265)                          |                                                                  |
+| [x266](#x266)                          |                                                                  |
 
 ---
 
@@ -138,6 +138,24 @@ We've made 3 guides related to this.
 | [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |           |                                       |
 | [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |           |                                       |
 | [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |           |                                       |
+
+---
+
+| German Source Groups                            | German Miscellaneous                          | French Source Groups                            | French Audio Version |
+| ----------------------------------------------- | --------------------------------------------- | ----------------------------------------------- | -------------------- |
+| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                       | [FR Remux Tier 01](#fr-remux-tier-01)           | [VFF](#vff)          |
+| [German Remux Tier 02](#german-remux-tier-02)   | [German Microsized](#german-microsized)       | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
+| [German Bluray Tier 03](#german-bluray-tier-03) |                                               | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
+| [German Web Tier 01](#german-web-tier-01)       |                                               | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
+| [German Web Tier 02](#german-web-tier-02)       |                                               | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
+| [German Web Tier 03](#german-web-tier-03)       |                                               | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
+| [German Scene](#german-scene)                   |                                               | [FR Scene Groups](#fr-scene-groups)             | [VOSTFR](#vostfr)    |
+|                                                 |                                               | [FR LQ](#fr-lq)                                 | [FanSUB](#fansub)    |
+|                                                 |                                               |                                                 | [FastSUB](#fastsub)  |
+
+---
 
 ## Audio Advanced
 
@@ -946,6 +964,23 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/br-disk.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Generated Dynamic HDR
+
+??? question "Generated Dynamic HDR - [Click to show/hide]"
+
+    - A collection of groups who are known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+.
+    - This generated dynamic HDR metadata is not from a retail source, so is usually not desirable.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/generated-dynamic-hdr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -3181,17 +3216,275 @@ We've made 3 guides related to this.
 
 ---
 
-## Language Profile
+## German Source Groups
 
 ---
 
-### Language Not French
+### German Remux Tier 01
 
-<sub>Language Not French</sub>
+??? question "German Bluray Tier 01 - [Click to show/hide]"
 
-??? question "Language Not French - [Click to show/hide]"
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+    - HDR/DoVi (Depending on what's offered and often both).
 
-    Language Specification is Not French
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Remux Tier 02
+
+??? question "German Bluray Tier 02 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have the best German audio track to an English release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 01
+
+??? question "German Bluray Tier 01 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+    - HDR/DoVi (Depending on what's offered and often both).
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 02
+
+??? question "German Bluray Tier 02 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have the best German audio track to an English release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Bluray Tier 03
+
+??? question "German Bluray Tier 03 - [Click to show/hide]"
+
+    - WiP
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-bluray-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 01
+
+??? question "German Tier 01 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+    - HDR/DoVi (Depending on what's offered and often both).
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 02
+
+??? question "German Tier 02 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have the best German audio track to an English release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Web Tier 03
+
+??? question "German Tier 03 - [Click to show/hide]"
+
+    - WiP
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-web-tier-03.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Scene
+
+??? question "German Scene - [Click to show/hide]"
+
+    - Known German Scene groups (which are not defined as LQ).
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-scene.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## German Miscellaneous
+
+---
+
+### German LQ
+
+<sub>German Low-Quality Releases = German LQ</sub>
+
+??? question "German LQ - [Click to show/hide]"
+
+    A collection of known German Low-Quality groups that are often banned from the top trackers due to their lack of quality.
+
+    !!! note
+
+        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
+        - DeTAG/ReTAG = Detagging or stealing groups.
+        - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Microsized
+
+<sub>German Microsized Releases = German Microsized</sub>
+
+??? question "German Microsized - [Click to show/hide]"
+
+    A collection of known German groups producing low quality micro-sized releases.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-microsized.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German 1080p Booster
+
+??? question "German 1080p Booster - [Click to show/hide]"
+
+    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-1080p-booster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German 2160p Booster
+
+??? question "German 2160p Booster - [Click to show/hide]"
+
+    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-2160p-booster.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+## Language Profiles
+
+---
+
+### Language: Not French
+
+<sub>Language: French Only</sub>
+
+??? question "Language: Not French - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3203,13 +3496,13 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Not Original
+### Language: Not Original
 
-<sub>Language Not Original</sub>
+<sub>Language: Original Only</sub>
 
-??? question "Language Not Original - [Click to show/hide]"
+??? question "Language: Not Original - [Click to show/hide]"
 
-    Language Specification is Not Original
+    {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3221,18 +3514,86 @@ We've made 3 guides related to this.
 
 ---
 
-### Language Original French
+### Language: Original Plus French
 
-<sub>Language Original + French</sub>
+<sub>Language: Original + French</sub>
 
-??? question "Language Original + French - [Click to show/hide]"
+??? question "Language: Original + French - [Click to show/hide]"
 
     Language Specification Original + French
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-french.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-original-plus-french.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: Not English
+
+<sub>Language: English Only</sub>
+
+??? question "Language: Not English - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-english.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: German DL
+
+<sub>Language: German + Original</sub>
+
+??? question "Language: German DL - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: German DL (undefined)
+
+??? question "German DL (undefined) - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german-dl-undefined.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: German
+
+??? question "German - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

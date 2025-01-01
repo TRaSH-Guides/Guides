@@ -1,0 +1,37 @@
+{
+  "trash_id": "86bc3115eb4e9873ac96904a4a68e19e",
+  "trash_scores": {
+      "default": 10000
+  },
+  "name": "German",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "NOT Original",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "DL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": false,
+      "fields": {
+        "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
+      }
+    }
+  ]
+}

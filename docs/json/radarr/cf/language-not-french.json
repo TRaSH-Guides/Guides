@@ -5,6 +5,8 @@
     "french-multi-vo": 0,
     "french-vostfr": 0
   },
+  "trash_description": "Language: French Only: Because it uses reverse scoring, and if you use the default scores, it will assign all releases without the French audio a score of -10000.",
+
   "name": "Language: Not French",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

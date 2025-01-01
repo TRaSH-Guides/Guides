@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "BAUCKLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BAUCKLEY)$"
+      }
+    },
+    {
       "name": "BdC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -175,15 +184,6 @@
       "required": false,
       "fields": {
         "value": "^(DDR)$"
-      }
-    },
-    {
-      "name": "DepraveD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(DepraveD)$"
       }
     },
     {
@@ -637,15 +637,6 @@
       }
     },
     {
-      "name": "SasukeducK",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SasukeducK)$"
-      }
-    },
-    {
       "name": "Scene",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -682,15 +673,6 @@
       }
     },
     {
-      "name": "tarunk9c",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(tarunk9c)$"
-      }
-    },
-    {
       "name": "TBS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -724,15 +706,6 @@
       "required": false,
       "fields": {
         "value": "^(TIKO)$"
-      }
-    },
-    {
-      "name": "VECTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(VECTOR)$"
       }
     },
     {

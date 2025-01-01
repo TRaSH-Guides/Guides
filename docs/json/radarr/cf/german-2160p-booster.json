@@ -1,0 +1,37 @@
+{
+  "trash_id": "cc7b1e64e2513a6a271090cdfafaeb55",
+  "trash_scores": {
+      "default": 6750
+  },
+  "name": "German 2160p Booster",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    }
+  ]
+}

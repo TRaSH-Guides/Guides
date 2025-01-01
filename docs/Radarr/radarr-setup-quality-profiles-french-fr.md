@@ -107,17 +107,17 @@ Il est important que vous suiviez et compreniez ce qui est prévu par le guide d
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-hd-bluray-web-scoring-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -147,7 +147,7 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -157,7 +157,7 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
@@ -186,23 +186,31 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
 **Les Formats Personnalisés suivants sont requis :**
 
-{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-cf-french-uhd-bluray-web-scoring-fr.md" !}
+
+{! include-markdown "../../includes/french-guide/radarr-french-hdr-format-information-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
+{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
+
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -223,7 +231,7 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 !!! warning "Assurez-vous de ne pas cocher l'option BR-DISK."
 
-{! include-markdown "../../includes/starr/move-quality-to-top.md" !}
+{! include-markdown "../../includes/french-guide/starr-move-quality-to-top-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-suggest-attention.md" !}
 
@@ -231,17 +239,23 @@ Note: Les Formats Personnalisés `Advanced Audio` ne sont pas utilisés dans le 
 
 {! include-markdown "../../includes/french-guide/radarr-cf-french-remux-web-scoring-fr.md" !}
 
+{! include-markdown "../../includes/french-guide/radarr-french-hdr-format-information-fr.md" !}
+
 {! include-markdown "../../includes/cf/radarr-misc-required.md" !}
 
-{! include-markdown "../../includes/french-guide/radarr-french-unwanted-en.md" !}
+{! include-markdown "../../includes/french-guide/radarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
 
 **Les Formats Personnalisés suivants sont facultatifs :**
 
+{! include-markdown "../../includes/french-guide/french-guide-optional-format-information-fr.md" !}
+
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 

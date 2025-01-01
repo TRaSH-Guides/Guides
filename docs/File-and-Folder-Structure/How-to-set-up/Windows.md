@@ -1,16 +1,16 @@
 # Windows
 
-Windows is less flexible than some other operating systems in respect of support for hard links and instant (Atomic) moves. In most cases, you need to use a single disk containing both your download location and media library. However, there is an option detailed below that will allow you to make use of hard links and instant (Atomic) moves if you run a two-disk setup.
+Windows is less flexible than some other operating systems in respect of support for hardlinks and instant (Atomic) moves. In most cases, you need to use a single disk containing both your download location and media library. However, there is an option detailed below that will allow you to make use of hardlinks and instant (Atomic) moves if you run a two-disk setup.
 
 ## Recommendation
 
-If you want to make extensive use of hard links, we would recommend switching to another operating system. For more information and suggestions on this topic, join our Discord support channel. The link can be found at the bottom of every guide page.
+If you want to make extensive use of hardlinks, we would recommend switching to another operating system. For more information and suggestions on this topic, join our Discord support channel. The link can be found at the bottom of every guide page.
 
 ### Alternative recommendation
 
-If moving away from using Windows with multiple disks is not an option, we suggest ignoring hard links and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
+If moving away from using Windows with multiple disks is not an option, we suggest ignoring hardlinks and instant (Atomic) moves and using [StableBit DrivePool](https://stablebit.com/){:target="\_blank" rel="noopener noreferrer"}. This will allow you to pool multiple disks to appear as one big disk, making it much easier to maintain and set up your file and folder structure.
 
-!!! warning "It is possible that Windows Storage Spaces supports hard links, but this has not been verified by the Guides team. We are unable to provide support for setups that use Storage Spaces."
+!!! warning "It is possible that Windows Storage Spaces supports hardlinks, but this has not been verified by the Guides team. We are unable to provide support for setups that use Storage Spaces."
 
 ## Folder Structure
 

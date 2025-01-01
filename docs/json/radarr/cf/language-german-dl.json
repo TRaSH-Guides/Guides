@@ -1,0 +1,29 @@
+{
+  "trash_id": "f845be10da4f442654c13e1f2c3d6cd5",
+  "trash_scores": {
+    "default": -10000,
+    "german": 10001
+  },
+  "name": "German DL",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    }
+  ]
+}
