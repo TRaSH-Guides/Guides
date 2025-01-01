@@ -1,5 +1,5 @@
 {
-  "name": "SQP-2/3/4/5 Optional",
+  "name": "Misc UHD (Optional) for SQP-2/3/4/5",
   "trash_id": "de18f9d6e3f843f5208c68219ee732a7",
   "custom_formats": [
     {
@@ -38,6 +38,11 @@
       "required": false
     },
     {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "required": false
+    },
+    {
       "name": "SDR",
       "trash_id": "9c38ebb7384dada637be8899efa68e6f",
       "required": false
@@ -45,21 +50,6 @@
     {
       "name": "SDR (no WEBDL)",
       "trash_id": "25c12f78430a3a23413652cbd1d48d77",
-      "required": false
-    },
-    {
-      "name": "DV (WEBDL)",
-      "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
-      "required": false
-    },
-    {
-      "name": "HDR10+ Boost",
-      "trash_id": "b17886cb4158d9fea189859409975758",
-      "required": false
-    },
-    {
-      "name": "DV HDR10+ Boost",
-      "trash_id": "55a5b50cb416dea5a50c4955896217ab",
       "required": false
     }
   ],

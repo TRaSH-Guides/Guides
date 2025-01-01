@@ -1,5 +1,5 @@
 {
-  "name": "Optional",
+  "name": "Misc UHD (Optional)",
   "trash_id": "8a3d746a76dcfc02c43983ac5432f754",
   "custom_formats": [
     {
@@ -38,13 +38,8 @@
       "required": false
     },
     {
-      "name": "HDR10+ Boost",
-      "trash_id": "b17886cb4158d9fea189859409975758",
-      "required": false
-    },
-    {
-      "name": "DV HDR10+ Boost",
-      "trash_id": "55a5b50cb416dea5a50c4955896217ab",
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
       "required": false
     },
     {
