@@ -1,5 +1,5 @@
 {
-  "name": "Optional",
+  "name": "Misc (Optional)",
   "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
   "custom_formats": [
     {
@@ -25,11 +25,6 @@
     {
       "name": "Scene",
       "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
-      "required": false
-    },
-    {
-      "name": "x265 (no HDR/DV)",
-      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
       "required": false
     }
   ],
