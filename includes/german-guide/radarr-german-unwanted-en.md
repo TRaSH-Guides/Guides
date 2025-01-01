@@ -11,9 +11,9 @@
     | [{{ radarr['cf']['german-lq']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-lq)                                   |           {{ radarr['cf']['german-lq']['trash_scores']['default'] }}            | {{ radarr['cf']['german-lq']['trash_id'] }}             |
     | [{{ radarr['cf']['german-microsized']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-microsized)                   |       {{ radarr['cf']['german-microsized']['trash_scores']['default'] }}        | {{ radarr['cf']['german-microsized']['trash_id'] }}     |
     | [{{ radarr['cf']['x265-hd']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#x265-hd) :warning:                             |        :warning: {{ radarr['cf']['x265-hd']['trash_scores']['german'] }}        | {{ radarr['cf']['x265-hd']['trash_id'] }}               |
-    | [{{ radarr['cf']['extras']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#extras)                                         |        {{ radarr['cf']['extras']['trash_scores']['default'] }}                  | {{ radarr['cf']['extras']['trash_id'] }}                |
-    | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                                               |          {{ radarr['cf']['av1']['trash_scores']['default'] }}                   | {{ radarr['cf']['av1']['trash_id'] }}                   |
-    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)                                     |       {{ radarr['cf']['upscaled']['trash_scores']['default'] }}                 | {{ radarr['cf']['upscaled']['trash_id'] }}              |
+    | [{{ radarr['cf']['extras']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#extras)                                         |             {{ radarr['cf']['extras']['trash_scores']['default'] }}             | {{ radarr['cf']['extras']['trash_id'] }}                |
+    | [{{ radarr['cf']['av1']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#av1)                                               |              {{ radarr['cf']['av1']['trash_scores']['default'] }}               | {{ radarr['cf']['av1']['trash_id'] }}                   |
+    | [{{ radarr['cf']['upscaled']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#upscaled)                                     |            {{ radarr['cf']['upscaled']['trash_scores']['default'] }}            | {{ radarr['cf']['upscaled']['trash_id'] }}              |
 
     ---
 
