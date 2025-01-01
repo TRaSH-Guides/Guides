@@ -210,7 +210,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(NAN0)\\b"
+        "value": "(?<=remux).*\\b(NAN0)\\b"
       }
     },
     {
