@@ -2,25 +2,26 @@
 
 These are 3rd party applications to sync several sections of the guide with your Sonarr/Radarr (or multiple).
 
-| Feature                                                                            |     Notifiarr      |     Recyclarr      |
-|------------------------------------------------------------------------------------|:------------------:|:------------------:|
-| GUI (graphical user interface)                                                     | :white_check_mark: |                    |
-| Radarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: |
-| Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile | :white_check_mark: |                    |
-| Radarr predefined config files available                                           |                    | :white_check_mark: |
-| Radarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: |
-| Radarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
-| Radarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
-| Radarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
-| Radarr Quality Profiles                                                            |    :white_check_mark:                | :white_check_mark: |
-| Sonarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: |
-| Sonarr predefined config files available                                           |                    | :white_check_mark: |
-| Sonarr Clear all Release Profiles                                                  | :white_check_mark: |                    |
-| Sonarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: |
-| Sonarr Scores                                                                      | :white_check_mark: | :white_check_mark: |
-| Sonarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: |
-| Sonarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: |
-| Sonarr Quality Profiles                                                            | :white_check_mark:                   | :white_check_mark: |
+| Feature                                                                            |     Notifiarr      |     Recyclarr      |     Configarr      |
+| ---------------------------------------------------------------------------------- | :----------------: | :----------------: | :----------------: |
+| GUI (graphical user interface)                                                     | :white_check_mark: |                    |                    |
+| Define own Custom Formats                                                          |                    |                    | :white_check_mark: |
+| Radarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Radarr Use Flowchart to choose the correct Custom Formats for your Quality Profile | :white_check_mark: |                    |                    |
+| Radarr predefined config files available                                           |                    | :white_check_mark: | :white_check_mark: |
+| Radarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Radarr Scores                                                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Radarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Radarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Radarr Quality Profiles                                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr Custom Formats                                                              | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr predefined config files available                                           |                    | :white_check_mark: | :white_check_mark: |
+| Sonarr Clear all Release Profiles                                                  | :white_check_mark: |                    |                    |
+| Sonarr Clear all Custom Formats                                                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr Scores                                                                      | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr Quality Settings (File Size)                                                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr Naming Scheme                                                               | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Sonarr Quality Profiles                                                            | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 ---
 
@@ -71,5 +72,13 @@ Just enable the Custom Formats/Release Profiles you want.
 
 Recyclarr is a command line application utilizing configuration files to sync the guides to Radarr &
 Sonarr.
+
+## Configarr
+
+[Github](https://github.com/raydak-labs/configarr){:target="\_blank" rel="noopener noreferrer"} // [Documentation](https://configarr.raydak.de){:target="\_blank" rel="noopener noreferrer"}
+
+Configarr is a synchronization tool primarily designed to run as a scheduled job (e.g., Cron) within containerized environments like Docker or Kubernetes.
+Configarr is compatible with the Recyclarr templates until v7.4.0.
+It enables the use of all Custom Formats and Quality Profiles defined in TRaSH-Guides while also allowing users to create new Custom Formats tailored to their specific setup.
 
 --8<-- "includes/support.md"
