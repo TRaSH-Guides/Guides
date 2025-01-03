@@ -1,0 +1,27 @@
+{
+  "name": "[Streaming Services] UK",
+  "trash_id": "f737e18b5824d6ebb2d57b957ae2fd6c",
+  "trash_description": "Collection of UK Streaming Services for Radarr",
+  "custom_formats": [
+    {
+      "name": "IP",
+      "trash_id": "6185878161f1e2eef9cd0641a0d09eae",
+      "required": true
+    },
+    {
+      "name": "ITVX",
+      "trash_id": "c3492a26af412e385404eade438ec51c",
+      "required": true
+    },
+    {
+      "name": "MY5",
+      "trash_id": "eacd2cb6c6d4a93e459df2cec6d7b97a",
+      "required": true
+    },
+    {
+      "name": "NOW",
+      "trash_id": "3dce1fce9ac06d1349dfbd9186289385",
+      "required": true
+    }
+  ]
+}

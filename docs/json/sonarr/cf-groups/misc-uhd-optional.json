@@ -1,5 +1,5 @@
 {
-  "name": "Optional",
+  "name": "Misc UHD (Optional)",
   "trash_id": "cac4624ef8fae1ef5e8abb8cf1cf6607",
   "custom_formats": [
     {
@@ -30,6 +30,11 @@
     {
       "name": "x265 (HD)",
       "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+      "required": false
+    },
+    {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
       "required": false
     },
     {

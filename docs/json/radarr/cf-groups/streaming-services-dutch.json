@@ -1,0 +1,17 @@
+{
+  "name": "[Streaming Services] Dutch",
+  "trash_id": "088a792e0561c927fb396664b0db5c8f",
+  "trash_description": "Collection of Dutch Streaming Services for Radarr",
+  "custom_formats": [
+    {
+      "name": "Pathe",
+      "trash_id": "bf7e73dd1d85b12cc527dc619761c840",
+      "required": true
+    },
+    {
+      "name": "VDL",
+      "trash_id": "996e8ce50025e8b1e8fa95fcb28c4e5a",
+      "required": true
+    }
+  ]
+}

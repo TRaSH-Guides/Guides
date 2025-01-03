@@ -1,0 +1,22 @@
+{
+  "name": "[Streaming Services] French",
+  "trash_id": "848fd356c200568fc5a6248150e7e7ea",
+  "trash_description": "Collection of French Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "AUViO",
+      "trash_id": "b0d6195c23ae254932da00512db7e8a8",
+      "required": true
+    },
+    {
+      "name": "MyCANAL",
+      "trash_id": "f27d46a831e6b16fa3fee2c4e5d10984",
+      "required": true
+    },
+    {
+      "name": "SALTO",
+      "trash_id": "0455d6519a550dbf648c97b56e7231d2",
+      "required": true
+    }
+  ]
+}

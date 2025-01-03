@@ -1,0 +1,37 @@
+{
+  "name": "[Streaming Services] Asian",
+  "trash_id": "35fb4585dcd9e2a5ac732e4309f5a45a",
+  "trash_description": "Collection of Asian Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "FOD",
+      "trash_id": "7be9c0572d8cd4f81785dacf7e85985e",
+      "required": true
+    },
+    {
+      "name": "HTSR",
+      "trash_id": "4404ad44d87ccbb82746e180713112fb",
+      "required": true
+    },
+    {
+      "name": "TVer",
+      "trash_id": "d100ea972d1af2150b65b1cffb80f6b5",
+      "required": true
+    },
+    {
+      "name": "TVING",
+      "trash_id": "86f8d3b8761de651aa355d46d5d8db3e",
+      "required": true
+    },
+    {
+      "name": "U-NEXT",
+      "trash_id": "0e99e7cc719a8a73b2668c3a0c3fe10c",
+      "required": true
+    },
+    {
+      "name": "VIU",
+      "trash_id": "93c9d1e566dca8b34d57f5efbbf85f28",
+      "required": true
+    }
+  ]
+}
