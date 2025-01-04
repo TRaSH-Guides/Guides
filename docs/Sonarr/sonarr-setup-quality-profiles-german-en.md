@@ -82,7 +82,7 @@ Sonarr also adresses this issue in their own [Wiki](https://wiki.servarr.com/son
 
 ## Score logic
 
---8<-- "includes/cf/score-attention.md"
+{! include-markdown "../../includes/merge-quality/sonarrv4-current-logic.md" !}
 
 ---
 
@@ -106,7 +106,7 @@ Depending on what's released first and available, the following Workflow Logic w
     Due to technical limitations, releases in which German is the movie's original language will be identified as `German DL` even though they might not contain another language.
     The only (cosmetic) impact of this is that the scores of those releases will be slightly higher than expected.
 
-{! include-markdown "../../includes/german-guide/radarr-german-advanced-audio-information-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-advanced-audio-information-en.md" !}
 
 ---
 
@@ -153,8 +153,6 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
-
 ---
 
 ### UHD Bluray + WEB (2160p)
@@ -198,24 +196,17 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-audio.md" !}
-
 {! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
-
 ---
 
-### Advanced Audio and HDR Formats
+### HDR Formats
 
-!!! warning "TODO"
+TRaSH provides great guides and explanations about them at the following link:
 
-TRaSH provides great guides and explanations about them at the following links:
-
-- [Advanced Audio](/Radarr/radarr-setup-quality-profiles/#advanced-audio){:target="_blank" rel="noopener noreferrer"}
-- [HDR Formats](/Radarr/radarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
+- [HDR Formats](/Sonarr/sonarr-setup-quality-profiles/#hdr-formats){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
