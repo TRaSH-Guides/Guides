@@ -1,12 +1,12 @@
 {
-  "name": "[Dolby Vision] Dolby Vision Incompatible Devices",
+  "name": "[HDR formats] Dolby Vision Incompatible Devices",
   "trash_id": "6eed4d3404df4f5f1202c8b9f2341765",
   "trash_description": "Not all devices in your chain support Dolby Vision, You share your media library with other family members that don't have Dolby Vision compatible devices.",
   "custom_formats": [
     {
       "name": "DV (WEBDL)",
       "trash_id": "923b6abef9b17f937fab56cfcf89e1f1",
-      "required": true
+      "required": false
     }
   ],
   "quality_profiles": {

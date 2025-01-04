@@ -1,6 +1,7 @@
 {
   "name": "[Audio] Advanced Audio Formats",
   "trash_id": "9d5acd8f1da78dfbae788182f7605200",
+  "trash_description": "Advanced Audio Formats, something you see mainly with Remuxes and UHD HQ Encodes.<br>Add this only if you choose a Quality Profile that covers Remuxes and HQ UHD Encodes.",
   "custom_formats": [
     {
       "name": "TrueHD Atmos",

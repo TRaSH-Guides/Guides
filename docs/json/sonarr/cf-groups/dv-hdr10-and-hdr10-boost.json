@@ -1,17 +1,17 @@
 {
-  "name": "[HDR10+] DV HDR10+ and HDR10+ Boost",
+  "name": "[HDR Formats] DV HDR10+ and HDR10+ Boost",
   "trash_id": "b250557594ba75823b51912f2769f9c7",
   "trash_description": "You have a (Samsung) TV and Media Player Device that supports HDR10+",
   "custom_formats": [
     {
       "name": "HDR10+ Boost",
       "trash_id": "0dad0a507451acddd754fe6dc3a7f5e7",
-      "required": true
+      "required": false
     },
     {
       "name": "DV HDR10+ Boost",
       "trash_id": "385e9e8581d33133c3961bdcdeffb7b4",
-      "required": true
+      "required": false
     }
   ],
   "quality_profiles": {
