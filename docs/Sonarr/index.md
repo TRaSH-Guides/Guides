@@ -17,6 +17,7 @@ After setting up your optimal volume/paths found [HERE](/File-and-Folder-Structu
 1. [How to set up Quality Profiles](/Sonarr/sonarr-setup-quality-profiles/) - How to make the most use of the Custom Formats and shows some specifics of our recommended configuration. You can use these examples to understand how to set up your preferences.
     - [How to setup Quality Profiles Anime](/Sonarr/sonarr-setup-quality-profiles-anime/) - Same as above but specific for anime.
     - [How to set up Quality Profiles (French)](/Sonarr/sonarr-setup-quality-profiles-french-en/) - Same as above but specific for French and English Audio.
+    - [How to set up Quality Profiles (German)](/Sonarr/sonarr-setup-quality-profiles-german-en/) - Same as above but specific for German and English Audio.
 
 ---
 

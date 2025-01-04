@@ -14,26 +14,22 @@ In this Guide, we try to give a recommendation that suits most users.
 
 ## Basics
 
-!!! warning "TODO"
-
 It is quite important that you follow and understand what is expected by TRaSH's guide:
 
-- Adding Custom Formats, as explained in [How to import Custom Formats](/Radarr/Radarr-import-custom-formats/){:target="_blank" rel="noopener noreferrer"}.
-- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Radarr/radarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
+- Adding Custom Formats, as explained in [How to import Custom Formats](/Sonarr/sonarr-import-custom-formats/){:target="\_blank" rel="noopener noreferrer"}.
+- Setting up a quality Profile to make use of the Custom Formats, as explained in [How to setup Quality Profiles | Basics section](/Sonarr/sonarr-setup-quality-profiles/#basics){:target="_blank" rel="noopener noreferrer"}.
 
 !!! warning "Please read those two sections before continuing the guide, as they contain important information. The rest of this guide will assume you did."
 
 !!! tip
-    TRaSH created a [flowchart](/Radarr/Radarr-setup-custom-formats/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German-only/German Dual Language("German DL") releases.
+    TRaSH created a [flowchart](/Sonarr/sonarr-setup-quality-profiles/#which-quality-profile-should-you-choose){:target="\_blank" rel="noopener noreferrer"} to make your decision easier. Remember that this chart does not include any of the following Custom Formats, and you will still need to read this guide to get German-only/German Dual Language("German DL") releases.
 
 ---
 
 ## Using this Guide
 
-!!! warning "TODO"
-
 There are two ways of using this Guide, with and without TRaSH original Guide's international/English-based group tiers.
-(which can be found here: [Collection of Custom Formats](/Radarr/Radarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
+(which can be found here: [Collection of Custom Formats](/Sonarr/sonarr-collection-of-custom-formats/){:target="_blank" rel="noopener noreferrer"}).
 
 In this Guide, we focus on combining both languages and thus include the Custom Formats from TRaSH's original Guide.
 
@@ -43,23 +39,21 @@ These Custom Formats are recommended if you prefer German Dual-Language releases
 
 ## Sonarr specific settings
 
-!!! warning "TODO"
-
 There are a couple of changes that are needed for German Custom Formats to work properly:
 
 ??? abstract "Disable Propers and Repacks - [Click to show/hide]"
-    Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Radarr/Radarr-collection-of-custom-formats/#repackproper) Custom Formats.
+    Change the Propers and Repacks setting in `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](/Sonarr/Sonarr-collection-of-custom-formats/#repackproper) Custom Formats.
 
     This way, you can ensure that Custom Formats preferences are used and not ignored.
 
     You can still prefer Propers and Repacks through the provided Custom Formats.
 
     ??? success "Screenshot example - [Click to show/hide]"
-        ![!cf-mm-propers-repacks-disable](/Radarr/images/cf-mm-propers-repacks-disable.png)
+        ![!cf-mm-propers-repacks-disable](/Sonarr/images/cf-mm-propers-repacks-disable.png)
 
 ??? abstract "Merge Qualities - [Click to show/hide]"
 
-    To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Radarr/Tips/Merge-quality/) into one group.
+    To allow upgrades based on language without release qualities interfering, we need to [merge all desired qualities](/Sonarr/Tips/Merge-quality/) into one group.
 
     You will find a recommendation on which qualities should be included/merged for the different profiles in the individual profiles sections.
 
@@ -68,8 +62,8 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Tip"
         You don't need to include some of these resolutions, such as 2160p or 720p, if you are not interested in them.
 
-!!! abstract "Media Management - Episode Naming"
-    Please have a look there: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
+??? abstract "Adapt the Standard Episode Format and Series Folder Format - [Click to show/hide]"
+    Please have a look here: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
 ---
 
@@ -80,7 +74,9 @@ Two facts can lead to Sonarr being unable to match a German movie release.
 - Indexers typically do not allow the use of German Umlauts in release names.
 - Most TV show have titles that are different in German from those in English.
 
-To help with this, there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr). This service acts as a middle layer between Sonarr and the Indexer to ensure that Umlauts and German titles are mapped correctly.
+To help with this, there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr){:target="_blank" rel="noopener noreferrer"}. This service acts as a middle layer between Sonarr and the Indexer to ensure that Umlauts and German titles are mapped correctly.
+
+Sonarr also adresses this issue in their own [Wiki](https://wiki.servarr.com/sonarr/faq#why-cant-sonarr-import-episode-files-for-series-x-why-cant-sonarr-find-releases-for-series-x){:target="_blank" rel="noopener noreferrer"} and provides a Google Sheet to enter title translations which are then added to Sonarr by the Devs.
 
 ---
 
