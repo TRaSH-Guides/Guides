@@ -97,6 +97,15 @@
       }
     },
     {
+      "name": "C1NEM4",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(C1NEM4)$"
+      }
+    },
+    {
       "name": "C4K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -670,6 +679,15 @@
       "required": false,
       "fields": {
         "value": "^(STUTTERSHIT)$"
+      }
+    },
+    {
+      "name": "SUNSCREEN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUNSCREEN)$"
       }
     },
     {
