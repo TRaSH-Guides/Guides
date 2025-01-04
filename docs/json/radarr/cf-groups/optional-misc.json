@@ -1,0 +1,37 @@
+{
+  "name": "[Optional] Miscellaneous",
+  "trash_id": "9337080378236ce4c0b183e35790d2a7",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "EVO (no WEBDL)",
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "f537cf427b64c38c8e36298f657e4828",
+      "required": false
+    }
+  ]
+}
