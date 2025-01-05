@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO)"
+        "value": "dual[ ._-]?(audio|varyg)|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO)"
       }
     },
     {
