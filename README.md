@@ -1,4 +1,4 @@
-# Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them.
+# Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them
 
 The guide can be found at the following location [trash-guides.info](https://trash-guides.info/)
 
