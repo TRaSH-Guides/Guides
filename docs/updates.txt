@@ -1,3 +1,16 @@
+# 2025-01-05 01:36
+- [feat(Guides): Add new groups to LQ custom format](https://github.com/TRaSH-Guides/Guides/pull/2205)
+- [feat(guide): Guide Sync updates](https://github.com/TRaSH-Guides/Guides/pull/2203)
+- [chore(cleanup): remove reference to animebytes.tv](https://github.com/TRaSH-Guides/Guides/pull/2199)
+- [feat(starr-anime): Require remux in title for NAN0](https://github.com/TRaSH-Guides/Guides/pull/2198)
+- [fix(radarr): Add missing entries to unwanted section of the german guide](https://github.com/TRaSH-Guides/Guides/pull/2196)
+- [chore(guide): Add upcoming QP language option for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2197)
+- [feat(radarr): Clarify the use of merged qualities for the German Guide](https://github.com/TRaSH-Guides/Guides/pull/2193)
+- [chore(guide): Updated QP excludes for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2195)
+- [chore(guide): German QP sorting fix for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2194)
+- [feat(guide-sync): Add German Quality Profiles for the 3rd party sync applications](https://github.com/TRaSH-Guides/Guides/pull/2190)
+- [fix(radarr): updated screenshot with correct minimum score](https://github.com/TRaSH-Guides/Guides/pull/2191)
+
 # 2024-12-29 01:37
 - [feat(radarr): Add Information about Generated Dynamic HDR in the German Guide](https://github.com/TRaSH-Guides/Guides/pull/2186)
 - [fix(radarr): Adapt German CF to avoid matching DL](https://github.com/TRaSH-Guides/Guides/pull/2188)
