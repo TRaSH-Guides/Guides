@@ -3506,8 +3506,8 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
 <span class="c1">### NZBGET SCAN SCRIPT                                                     ###</span>
 <span class="c1">##############################################################################</span>
 
-<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">re</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span>
 
 <span class="c1"># Exit codes used by NZBGet</span>
 <span class="n">POSTPROCESS_SUCCESS</span> <span class="o">=</span> <span class="mi">93</span>
@@ -3602,10 +3602,10 @@ Released under GNU General Public License v2.0</p>
 <span class="c1">### NZBGET POST-PROCESSING SCRIPT                                          ###</span>
 <span class="c1">##############################################################################</span>
 
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
 <span class="c1"># NZBGet Exit Codes</span>
 <span class="n">NZBGET_POSTPROCESS_PARCHECK</span> <span class="o">=</span> <span class="mi">92</span>
@@ -3619,7 +3619,7 @@ Released under GNU General Public License v2.0</p>
 <span class="c1">############################################################</span>
 
 
-<span class="k">def</span> <span class="nf">do_check</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">do_check</span><span class="p">():</span>
     <span class="k">if</span> <span class="s2">&quot;NZBOP_SCRIPTDIR&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This script can only be called from NZBGet (11.0 or later).&quot;</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -3692,7 +3692,7 @@ Released under GNU General Public License v2.0</p>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">NZBGET_POSTPROCESS_NONE</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">get_file_name</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_file_name</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">file_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
         <span class="n">extensions</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\.([^.]+)&quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
@@ -3704,7 +3704,7 @@ Released under GNU General Public License v2.0</p>
     <span class="k">return</span> <span class="kc">None</span>
 
 
-<span class="k">def</span> <span class="nf">is_file_hash</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">is_file_hash</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
     <span class="n">hash_regexp</span> <span class="o">=</span> <span class="p">[</span>
         <span class="sa">r</span><span class="s2">&quot;^[a-fA-F0-9]</span><span class="si">{40}</span><span class="s2">$&quot;</span><span class="p">,</span>
         <span class="sa">r</span><span class="s2">&quot;^[a-fA-F0-9]</span><span class="si">{32}</span><span class="s2">$&quot;</span><span class="p">,</span>
@@ -3717,7 +3717,7 @@ Released under GNU General Public License v2.0</p>
     <span class="k">return</span> <span class="kc">False</span>
 
 
-<span class="k">def</span> <span class="nf">find_files</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_files</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="n">file_list</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">start_count</span> <span class="o">=</span> <span class="n">folder</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">path</span><span class="p">,</span> <span class="n">subdirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">topdown</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
@@ -3826,8 +3826,8 @@ Released under GNU General Public License v2.0</p>
 <span class="c1">### NZBGET POST-PROCESSING SCRIPT                                          ###</span>
 <span class="c1">##############################################################################</span>
 
-<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
-<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">re</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span>
 
 <span class="c1"># Exit codes used by NZBGet</span>
 <span class="n">POSTPROCESS_SUCCESS</span> <span class="o">=</span> <span class="mi">93</span>
@@ -3882,9 +3882,9 @@ Released under GNU General Public License v2.0</p>
 
 <span class="c1">### NZBGET SCAN SCRIPT</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
 
 <span class="c1"># Exit codes used by NZBGet</span>
 <span class="n">POSTPROCESS_SUCCESS</span> <span class="o">=</span> <span class="mi">93</span>
@@ -3892,7 +3892,7 @@ Released under GNU General Public License v2.0</p>
 <span class="n">POSTPROCESS_ERROR</span> <span class="o">=</span> <span class="mi">94</span>
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">lxml</span><span class="w"> </span><span class="kn">import</span> <span class="n">etree</span>
 <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="s1">&#39;[ERROR] Python lxml required. Please install with &quot;sudo apt install python-lxml&quot; or &quot;pip install lxml&quot;.&#39;</span>
