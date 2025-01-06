@@ -4,6 +4,11 @@
   --md-footer-bg-color--dark: hsla(232, 54%, 41%, 1);
 }
 
+/* Remove top right version*/
+.md-source__fact--version {
+  display: none;
+}
+
 /*Change footnotes font size */
 .md-typeset .footnote {
   font-size: 12px;
