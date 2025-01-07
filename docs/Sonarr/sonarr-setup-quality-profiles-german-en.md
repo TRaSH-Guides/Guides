@@ -65,6 +65,12 @@ There are a couple of changes that are needed for German Custom Formats to work 
 ??? abstract "Adapt the Standard Episode Format and Series Folder Format - [Click to show/hide]"
     Please have a look here: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
+??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
+    To allow upgradeability until the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k` which is more than the highest reachable score.
+
+    !!! tip "Tip"
+        If you want to cut off upgrades at a specific score feel free to adapt this setting based on your needs.
+
 ---
 
 ## Dealing with German Umlauts and German titles
