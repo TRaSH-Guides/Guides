@@ -112,23 +112,19 @@ Depending on what's released first and available, the following Workflow Logic w
 
 ### Releases you should avoid
 
-!!! warning "TODO"
-
 This is a must-have for every Quality Profile you use. All these Custom Formats make sure you don't get Low Quality Releases.
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
 ---
 
 ### HD Bluray + WEB
 
-!!! warning "TODO"
-
 If you prefer High-Quality HD Encodes (720p/1080p)
 
 !!! abstract "Recommended merging of qualities"
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+    We recommend to [merge the following qualities](/Sonarr/Tips/Merge-quality/):
 
     - Bluray-1080p
     - WEBDL-1080p
@@ -137,33 +133,31 @@ If you prefer High-Quality HD Encodes (720p/1080p)
     - WEBDL-720p
     - WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-hd-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-hd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
 ---
 
 ### UHD Bluray + WEB (2160p)
 
-!!! warning "TODO"
-
 If you prefer High-Quality UHD Encodes (2160p)
 
 !!! abstract "Recommended merging of qualities"
 
-    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+    We recommend to [merge the following qualities](/Sonarr/Tips/Merge-quality/):
 
     - Bluray-2160p
     - WEBDL-2160p
@@ -180,25 +174,25 @@ If you prefer High-Quality UHD Encodes (2160p)
         - WEBDL-720p
         - WEBRip-720p
 
-{! include-markdown "../../includes/german-guide/radarr-german-audio-version-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-uhd-bluray-web-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-all-hdr-formats.md" !}
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
 
-{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
 
 ---
 
