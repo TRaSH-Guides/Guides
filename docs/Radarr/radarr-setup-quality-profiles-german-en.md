@@ -74,6 +74,12 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Movie format/folder with the German movie name."
         Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
+??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
+    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k`, which is more than the highest reachable score.
+
+    !!! tip "Tip"
+        If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
+
 ---
 
 ## Dealing with German Umlauts and German titles
