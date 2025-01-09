@@ -22,9 +22,9 @@
 
         In case you went for the alternative quality profile (including 720p/1080p qualities) you will need to add the following custom formats.
 
-        | Custom Format                                                                                                             |                                  Score                                  | Trash ID                                                |
-        | ------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------: | ------------------------------------------------------- |
-        | [{{ sonarr['cf']['hd-bluray-tier-01']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hd-bluray-tier-01)         |   {{ sonarr['cf']['hd-bluray-tier-01']['trash_scores']['default'] }}    | {{ sonarr['cf']['hd-bluray-tier-01']['trash_id'] }}     |
-        | [{{ sonarr['cf']['hd-bluray-tier-02']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hd-bluray-tier-02)         |   {{ sonarr['cf']['hd-bluray-tier-02']['trash_scores']['default'] }}    | {{ sonarr['cf']['hd-bluray-tier-02']['trash_id'] }}     |
+        | Custom Format                                                                                                     |                               Score                                | Trash ID                                            |
+        | ----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------: | --------------------------------------------------- |
+        | [{{ sonarr['cf']['hd-bluray-tier-01']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hd-bluray-tier-01) | {{ sonarr['cf']['hd-bluray-tier-01']['trash_scores']['default'] }} | {{ sonarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
+        | [{{ sonarr['cf']['hd-bluray-tier-02']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#hd-bluray-tier-02) | {{ sonarr['cf']['hd-bluray-tier-02']['trash_scores']['default'] }} | {{ sonarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
 
 <!-- markdownlint-enable MD041-->

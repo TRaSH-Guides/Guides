@@ -66,10 +66,10 @@ There are a couple of changes that are needed for German Custom Formats to work 
     Please have a look here: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
 ??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
-    To allow upgradeability until the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k` which is more than the highest reachable score.
+    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k`, which is more than the highest reachable score.
 
     !!! tip "Tip"
-        If you want to cut off upgrades at a specific score feel free to adapt this setting based on your needs.
+        If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
 
 ---
 
@@ -78,11 +78,11 @@ There are a couple of changes that are needed for German Custom Formats to work 
 Two facts can lead to Sonarr being unable to match a German movie release.
 
 - Indexers typically do not allow the use of German Umlauts in release names.
-- Most TV show have titles that are different in German from those in English.
+- Most TV shows have titles that are different in German from those in English.
 
 To help with this, there is a handy service called [Umlautadaptarr](https://github.com/PCJones/UmlautAdaptarr){:target="_blank" rel="noopener noreferrer"}. This service acts as a middle layer between Sonarr and the Indexer to ensure that Umlauts and German titles are mapped correctly.
 
-Sonarr also adresses this issue in their own [Wiki](https://wiki.servarr.com/sonarr/faq#why-cant-sonarr-import-episode-files-for-series-x-why-cant-sonarr-find-releases-for-series-x){:target="_blank" rel="noopener noreferrer"} and provides a Google Sheet to enter title translations which are then added to Sonarr by the Devs.
+Sonarr also addresses this issue in their own [Wiki](https://wiki.servarr.com/sonarr/faq#why-cant-sonarr-import-episode-files-for-series-x-why-cant-sonarr-find-releases-for-series-x){:target="_blank" rel="noopener noreferrer"} and provides a Google Sheet to enter title translations which are then added to Sonarr by the Devs.
 
 ---
 
