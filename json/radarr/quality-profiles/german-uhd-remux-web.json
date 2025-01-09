@@ -1,6 +1,7 @@
 {
   "trash_id": "79faa9943cef2f510b997b1f2a9f3ea6",
   "name": "[German] Remux + WEB 2160p",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL-2160p<br>- Remux-2160p",
   "trash_score_set": "german",
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
@@ -63,6 +64,7 @@
     "German": "86bc3115eb4e9873ac96904a4a68e19e",
     "German DL": "f845be10da4f442654c13e1f2c3d6cd5",
     "German DL (undefined)": "6aad77771dabe9d3e9d7be86f310b867",
+    "Not German or English": "4eadb75fb23d09dfc0a8e3f687e72287",
     "German Remux Tier 01": "8608a2ed20c636b8a62de108e9147713",
     "German Remux Tier 02": "f9cf598d55ce532d63596b060a6db9ee",
     "German Web Tier 01": "a2ab25194f463f057a5559c03c84a3df",
