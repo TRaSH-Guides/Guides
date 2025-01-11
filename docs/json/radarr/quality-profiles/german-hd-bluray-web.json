@@ -1,13 +1,13 @@
 {
   "trash_id": "2b90e905c99490edc7c7a5787443748b",
   "name": "[German] HD Bluray + WEB",
-  "trash_description": "German Quality Profile that covers:<br>- WEBDL-720p<br>- Bluray-720p<br>- WEBDL-1080p<br>- Bluray-1080p",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray: 720p, 1080p",
   "trash_score_set": "german",
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
   "minFormatScore": 0,
-  "MinUpgradeFormatScore": 1,
   "cutoffFormatScore": 25000,
+  "minupgradeformatscore": 1,
   "language":"Any",
   "items": [
     { "name": "Unknown", "allowed": false },
