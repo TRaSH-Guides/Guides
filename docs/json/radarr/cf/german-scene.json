@@ -185,6 +185,24 @@
       "fields": {
         "value": "^(muhHD)$"
       }
+    },
+    {
+      "name": "RILE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RILE)$"
+      }
+    },
+    {
+      "name": "W4K",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(W4K)$"
+      }
     }
   ]
 }
