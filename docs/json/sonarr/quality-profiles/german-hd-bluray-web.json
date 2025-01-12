@@ -1,12 +1,14 @@
 {
   "trash_id": "dca7e5e9e99c703bcbdaaa471dd40e98",
   "name": "[German] HD Bluray + WEB",
-  "trash_description": "German Quality Profile that covers:<br>- WEBDL-720p<br>- Bluray-720p<br>- WEBDL-1080p<br>- Bluray-1080p",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 720p, 1080p<br>- Bluray: 720p, 1080p",
+  "group": 3,
   "trash_score_set": "german",
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
   "minFormatScore": 0,
   "cutoffFormatScore": 25000,
+  "minUpgradeFormatScore": 1,
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "SDTV", "allowed": false },
