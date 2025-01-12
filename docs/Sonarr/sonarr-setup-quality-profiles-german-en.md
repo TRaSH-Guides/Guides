@@ -157,6 +157,34 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 ---
 
+### HD Remux + WEB
+
+If you prefer 1080p Remuxes (Bluray-1080p Remux)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Sonarr/Tips/Merge-quality/):
+
+    - Bluray-1080p Remux
+    - WEBDL-1080p
+    - WEBRip-1080p
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-hd-only-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+
+---
+
 ### UHD Bluray + WEB (2160p)
 
 If you prefer High-Quality UHD Encodes (2160p)
@@ -183,6 +211,42 @@ If you prefer High-Quality UHD Encodes (2160p)
 {! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
 
 {! include-markdown "../../includes/german-guide/sonarr-cf-german-uhd-bluray-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-resolution-scoring-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+
+---
+
+### UHD Remux + WEB (2160p)
+
+If you prefer 2160p Remuxes (Bluray-2160p Remux)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Bluray-2160p Remux
+    - WEBDL-2160p
+    - WEBRip-2160p
+
+    Note: The Bluray-2160p quality is not included as the main fallback for this profile is WEB. However, feel free to add it if needed.
+
+{! include-markdown "../../includes/german-guide/sonarr-german-audio-version-en.md" !}
+
+{! include-markdown "../../includes/german-guide/sonarr-cf-german-remux-web-scoring-en.md" !}
 
 {! include-markdown "../../includes/cf/sonarr-all-hdr-formats.md" !}
 
