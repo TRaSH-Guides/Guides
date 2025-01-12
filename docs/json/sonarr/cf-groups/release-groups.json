@@ -1,7 +1,7 @@
 {
   "name": "Release Groups",
   "trash_id": "bb40e1d5aa0969b9758fe6e52c24f968",
-  "trash_description": "Release Groups for Sonarr",
+  "trash_description": "A collection of English/International release groups.",
   "custom_formats": [
     {
       "name": "Remux Tier 01",

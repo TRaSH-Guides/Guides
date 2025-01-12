@@ -1,7 +1,7 @@
 {
   "name": "Release Groups French",
   "trash_id": "d83f6b289993d56092431ff4f91228b0",
-  "trash_description": "Release Groups French for Sonarr",
+  "trash_description": "A collection of French release groups.",
   "custom_formats": [
     {
       "name": "FR Remux Tier 01",
