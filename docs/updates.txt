@@ -1,3 +1,11 @@
+# 2025-01-12 01:38
+- [chore(backend-test): add `MinUpgradeFormatScore` for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2214)
+- [feat(radarr): German Guide - add "not english or german" CF and explanation for the max CF score](https://github.com/TRaSH-Guides/Guides/pull/2210)
+- [fix(radarr): German Guide - add negated remux quality modifier to bluray groups to avoid double scoring](https://github.com/TRaSH-Guides/Guides/pull/2211)
+- [chore(backend): Moved all Support/Suggestions to the Discord Server](https://github.com/TRaSH-Guides/Guides/pull/2209)
+- [chore(guide): Updated README.md](https://github.com/TRaSH-Guides/Guides/pull/2208)
+- [fix(starr):  add DUAL-VARYG to Dual Audio Custom Anime Format](https://github.com/TRaSH-Guides/Guides/pull/2204)
+
 # 2025-01-05 01:36
 - [feat(Guides): Add new groups to LQ custom format](https://github.com/TRaSH-Guides/Guides/pull/2205)
 - [feat(guide): Guide Sync updates](https://github.com/TRaSH-Guides/Guides/pull/2203)
