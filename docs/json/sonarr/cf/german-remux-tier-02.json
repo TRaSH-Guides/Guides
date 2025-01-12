@@ -1,33 +1,24 @@
 {
-  "trash_id": "d8f8e1539827967e0e564833e6c08d33",
+  "trash_id": "6bc5ccd80a03e7abb8f556eecd174b73",
   "trash_scores": {
-      "default": 2800
+      "default": 3900
   },
-  "name": "German Bluray Tier 03",
+  "name": "German Remux Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "RobertDeNiro",
+      "name": "MULTiPLEX",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(RobertDeNiro)$"
+        "value": "^(MULTiPLEX)$"
       }
     },
     {
-      "name": "Bluray",
+      "name": "Remux",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": true,
-      "fields": {
-        "value": 6
-      }
-    },
-    {
-      "name": "Not REMUX",
-      "implementation": "SourceSpecification",
-      "negate": true,
       "required": true,
       "fields": {
         "value": 7

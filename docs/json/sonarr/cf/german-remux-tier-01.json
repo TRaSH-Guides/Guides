@@ -1,81 +1,63 @@
 {
-  "trash_id": "f51b96a50b0e6196cb69724b7833d837",
+  "trash_id": "da0f005f9c3edf34fc26e18dce8c6573",
   "trash_scores": {
-      "default": 1900
+      "default": 4000
   },
-  "name": "German Web Tier 02",
+  "name": "German Remux Tier 01",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "VECTOR",
+      "name": "TvR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(VECTOR)$"
+        "value": "^(TvR)$"
       }
     },
     {
-      "name": "MULTiPLEX",
+      "name": "pmHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(MULTiPLEX)$"
+        "value": "^(pmHD)$"
       }
     },
     {
-      "name": "SiXTYNiNE",
+      "name": "NIMA4K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(SiXTYNiNE)$"
+        "value": "^(NIMA4K)$"
       }
     },
     {
-      "name": "Oergel",
+      "name": "QfG",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Oergel)$"
+        "value": "^(QfG)$"
       }
     },
     {
-      "name": "4SF",
+      "name": "TSCC",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(4SF)$"
+        "value": "^(TSCC)$"
       }
     },
     {
-      "name": "ABJ",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(ABJ)$"
-      }
-    },
-    {
-      "name": "WebDL",
+      "name": "Remux",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WebRip",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
+        "value": 7
       }
     }
   ]

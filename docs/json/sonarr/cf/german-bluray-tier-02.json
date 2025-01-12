@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(VECTOR)$"
+        "value": "^(VECTOR)$"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(MULTiPLEX)$"
+        "value": "^(MULTiPLEX)$"
       }
     },
     {
@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(SiXTYNiNE)$"
+        "value": "^(SiXTYNiNE)$"
       }
     },
     {
@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(Oergel)$"
+        "value": "^(Oergel)$"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ABJ)$"
+        "value": "^(ABJ)$"
       }
     },
     {
@@ -58,6 +58,15 @@
       "required": true,
       "fields": {
         "value": 6
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
       }
     }
   ]
