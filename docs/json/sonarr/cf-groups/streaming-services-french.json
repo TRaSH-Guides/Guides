@@ -6,17 +6,17 @@
     {
       "name": "AUViO",
       "trash_id": "b0d6195c23ae254932da00512db7e8a8",
-      "required": true
+      "required": false
     },
     {
       "name": "MyCANAL",
       "trash_id": "f27d46a831e6b16fa3fee2c4e5d10984",
-      "required": true
+      "required": false
     },
     {
       "name": "SALTO",
       "trash_id": "0455d6519a550dbf648c97b56e7231d2",
-      "required": true
+      "required": false
     }
   ]
 }
