@@ -1,0 +1,32 @@
+{
+  "name": "[Streaming Services] Miscellaneous",
+  "trash_id": "9fc645b3cef52b149ec13ba3972245d1",
+  "trash_description": "Collection of Miscellaneous Streaming Services for Radarr",
+  "custom_formats": [
+    {
+      "name": "AUBC",
+      "trash_id": "3bf143ecd06f66ed88da4c704350af1d",
+      "required": false
+    },
+    {
+      "name": "CBC",
+      "trash_id": "d9058beaae2e147183870304dd526761",
+      "required": false
+    },
+    {
+      "name": "CRAV",
+      "trash_id": "f6ff65b3f4b464a79dcc75950fe20382",
+      "required": false
+    },
+    {
+      "name": "OViD",
+      "trash_id": "fbca986396c5e695ef7b2def3c755d01",
+      "required": false
+    },
+    {
+      "name": "STRP",
+      "trash_id": "ab56ccdc473a1f2897c76187ea365be2",
+      "required": false
+    }
+  ]
+}
