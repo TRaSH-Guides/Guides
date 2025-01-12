@@ -187,12 +187,12 @@
       }
     },
     {
-      "name": "RILE",
+      "name": "RiLE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(RILE)$"
+        "value": "^(RiLE)$"
       }
     },
     {
