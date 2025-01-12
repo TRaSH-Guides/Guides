@@ -329,6 +329,15 @@
       "fields": {
         "value": "(LizardSquad)$"
       }
+    },
+    {
+      "name": "AVTOMAT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AVTOMAT)$"
+      }
     }
   ]
 }
