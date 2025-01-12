@@ -138,15 +138,15 @@ We've made 3 guides related to this.
 
 | German Source Groups                            | German Miscellaneous                          | French Source Groups                          | French Audio Version |
 | ----------------------------------------------- | --------------------------------------------- | --------------------------------------------- | -------------------- |
-| [German Bluray Tier 01](#german-bluray-tier-01) | [German LQ](#german-lq)                       | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
-| [German Bluray Tier 02](#german-bluray-tier-02) | [German Microsized](#german-microsized)       | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
-| [German Bluray Tier 03](#german-bluray-tier-03) | [German 1080p Booster](#german-1080p-booster) | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
-| [German Web Tier 01](#german-web-tier-01)       | [German 2160p Booster](#german-2160p-booster) | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
-| [German Web Tier 02](#german-web-tier-02)       |                                               | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
-| [German Web Tier 03](#german-web-tier-03)       |                                               | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          |
-| [German Scene](#german-scene)                   |                                               | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            |
-|                                                 |                                               | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          |
-|                                                 |                                               | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    |
+| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                       | [FR Remux Tier 01](#fr-remux-tier-01)         | [VFF](#vff)          |
+| [German Remux Tier 01](#german-remux-tier-02)   | [German Microsized](#german-microsized)       | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01) | [VOF](#vof)          |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [FR WEB Tier 01](#fr-web-tier-01)             | [VFI](#vfi)          |
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [FR WEB Tier 02](#fr-web-tier-02)             | [VF2](#vf2)          |
+| [German Bluray Tier 03](#german-bluray-tier-03) |                                               | [FR WEB Tier 03](#fr-web-tier-03)             | [VFQ](#vfq)          |
+| [German Web Tier 01](#german-web-tier-01)       |                                               | [FR Anime Tier 01](#fr-anime-tier-01)         | [VOQ](#voq)          |
+| [German Web Tier 02](#german-web-tier-02)       |                                               | [FR Anime Tier 02](#fr-anime-tier-02)         | [VQ](#vq)            |
+| [German Web Tier 03](#german-web-tier-03)       |                                               | [FR Anime Tier 03](#fr-anime-tier-03)         | [VFB](#vfb)          |
+| [German Scene](#german-scene)                   |                                               | [FR Anime FanSub](#fr-anime-fansub)           | [VOSTFR](#vostfr)    |
 |                                                 |                                               | [FR Scene Groups](#fr-scene-groups)           | [FanSUB](#fansub)    |
 |                                                 |                                               | [FR LQ](#fr-lq)                               | [FastSUB](#fastsub)  |
 |                                                 |                                               |                                               | [FastSUB](#fastsub)  |
@@ -3282,6 +3282,47 @@ We've made 3 guides related to this.
 ---
 
 ## German Source Groups
+
+---
+
+### German Remux Tier 01
+
+??? question "German Remux Tier 01 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
+    - HDR/DoVi (Depending on what's offered and often both).
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-01.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German Remux Tier 02
+
+??? question "German Remux Tier 02 - [Click to show/hide]"
+
+    - WiP
+    - Groups that get their releases directly from the source.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have the best German audio track to an English release.
+    - Groups that haven't released much or are not well recognized. (yet)
+    - Groups that retired and don't have the best quality by today's standards.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/german-remux-tier-02.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
