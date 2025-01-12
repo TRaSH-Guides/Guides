@@ -1,13 +1,14 @@
 {
   "trash_id": "27cc3d153c0a799fd139ef1ff4c4cc42",
   "name": "[German] UHD Bluray + WEB",
-  "trash_description": "German Quality Profile that covers:<br>- Bluray-720p<br>- WEBDL-1080p<br>- Bluray-1080p<br>- WEBDL-2160p<br>- Bluray-2160p",
+  "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
+  "group": 3,
   "trash_score_set": "german",
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
   "minFormatScore": 0,
-  "MinUpgradeFormatScore": 1,
   "cutoffFormatScore": 25000,
+  "minUpgradeFormatScore": 1,
   "language":"Any",
   "items": [
     { "name": "Unknown", "allowed": false },
