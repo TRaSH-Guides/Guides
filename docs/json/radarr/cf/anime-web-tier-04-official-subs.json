@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Erai-raws)\\b"
+        "value": "\\b(Erai-raws)\\b(?=.*\\[(MultiSub|Multiple Subtitle)\\])"
       }
     },
     {
