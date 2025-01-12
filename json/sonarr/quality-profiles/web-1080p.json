@@ -1,10 +1,13 @@
 {
   "trash_id": "72dae194fc92bf828f32cde7744e51a1",
   "name": "WEB-1080p",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p",
+  "group": 1,
   "upgradeAllowed": true,
   "cutoff": "WEB 1080p",
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "SDTV", "allowed": false },
