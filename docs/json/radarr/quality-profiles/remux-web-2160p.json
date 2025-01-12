@@ -7,7 +7,7 @@
   "cutoff": "Remux-2160p",
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
-  "minupgradeformatscore": 1,
+  "minUpgradeFormatScore": 1,
   "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },

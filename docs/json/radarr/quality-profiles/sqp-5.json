@@ -8,7 +8,7 @@
   "cutoff": "WEBDL|Bluray|2160p",
   "minFormatScore": 550,
   "cutoffFormatScore": 10000,
-  "minupgradeformatscore": 1,
+  "minUpgradeFormatScore": 1,
   "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },
