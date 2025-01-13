@@ -1,6 +1,7 @@
 {
-  "name": "Optional",
+  "name": "[Optional] Miscellaneous UHD",
   "trash_id": "cac4624ef8fae1ef5e8abb8cf1cf6607",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",
@@ -45,7 +46,9 @@
   ],
   "quality_profiles": {
     "exclude": {
-      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1"
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc"
     }
   }
 }
