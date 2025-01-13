@@ -3222,7 +3222,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 01
 
-??? question "German Bluray Tier 01 - [Click to show/hide]"
+??? question "German Remux Tier 01 - [Click to show/hide]"
 
     - WiP
     - Groups that get their releases directly from the source.
@@ -3242,7 +3242,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 02
 
-??? question "German Bluray Tier 02 - [Click to show/hide]"
+??? question "German Remux Tier 02 - [Click to show/hide]"
 
     - WiP
     - Groups that get their releases directly from the source.
