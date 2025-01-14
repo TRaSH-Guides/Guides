@@ -30,11 +30,4 @@
     - **{{ radarr['cf']['extras']['name'] }}:** Blocks releases that only contain extras
     - **{{ radarr['cf']['av1']['name'] }}:** This blocks all releases encoded in AV1.
     - **{{ radarr['cf']['upscaled']['name'] }}:** A custom format to prevent Radarr from grabbing upscaled releases.
-
-    ??? note "Optional - [Click to show/hide]"
-
-        This includes optional Custom Formats made by Trash for the original guide. Please be sure to understand what those do before adding them. Moreover, it includes two Custom Formats you may use at your own risk if you want Dual Language:
-
-        - [{{ radarr['cf']['bad-dual-groups']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#bad-dual-groups), which can be controversial for people looking for Dual Language release. I encourage you not to use it.
-        - [{{ radarr['cf']['scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#scene), it may include Scene groups already in [{{ radarr['cf']['german-scene']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#german-scene) Custom Format. This is used for fallback to be sure to get a Dual Language release.
 <!-- markdownlint-enable MD041-->
