@@ -203,6 +203,15 @@
       "fields": {
         "value": "^(W4K)$"
       }
+    },
+    {
+      "name": "ENDSTATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENDSTATiON)$"
+      }
     }
   ]
 }

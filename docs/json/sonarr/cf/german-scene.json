@@ -185,6 +185,15 @@
       "fields": {
         "value": "^(muhHD)$"
       }
+    },
+    {
+      "name": "ENDSTATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENDSTATiON)$"
+      }
     }
   ]
 }
