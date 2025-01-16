@@ -66,7 +66,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
     Please have a look here: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
 ??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
-    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k`, which is more than the highest reachable score.
+    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `35k`, which is more than the highest reachable score.
 
     !!! tip "Tip"
         If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
