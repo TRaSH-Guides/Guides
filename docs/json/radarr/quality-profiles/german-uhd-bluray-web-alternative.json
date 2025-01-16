@@ -7,7 +7,7 @@
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
   "minFormatScore": 0,
-  "cutoffFormatScore": 25000,
+  "cutoffFormatScore": 35000,
   "minUpgradeFormatScore": 1,
   "language":"Any",
   "items": [
