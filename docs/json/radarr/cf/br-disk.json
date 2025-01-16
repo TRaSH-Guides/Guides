@@ -1,7 +1,8 @@
 {
   "trash_id": "ed38b889b31be83fda192888e2286d83",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "trash_regex": "https://regex101.com/r/UpA3I7/2",
   "name": "BR-DISK",

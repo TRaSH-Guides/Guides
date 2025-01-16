@@ -3,7 +3,8 @@
   "trash_scores": {
     "default": -10000,
     "french-multi-vf": 0,
-    "french-multi-vo": 0
+    "french-multi-vo": 0,
+    "german": -35000
   },
   "name": "Bad Dual Groups",
   "includeCustomFormatWhenRenaming": false,

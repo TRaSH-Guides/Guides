@@ -160,7 +160,7 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -207,9 +207,9 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -247,9 +247,9 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 
