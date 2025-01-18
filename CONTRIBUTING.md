@@ -8,15 +8,15 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 ## Guidelines
 
 - Make sure you're editing the latest version.
-- If you propose changes make sure it doesn't break anything else in the Guides.
-- Make sure that after the changes you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
+- If you propose changes, make sure they don't break anything else in the guides.
+- Make sure that after the changes, you don't get any [markdownlint](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) errors
 - If the `metadata.json` and `metadata.schema.json` needs changes, announce it first in the Discord `#development` channel and ping `voidpointer` and `nitsua` so the 3rd party apps don't break :bangbang:
 
 ## Branch naming
 
-We're trying to be as consistent as possible for automation of the changelog.
+We're trying to be as consistent as possible to automate the changelog.
 
-- **feat/xxx** Commits, that adds a new feature
+- **feat/xxx** Commits, which adds a new feature
 - **fix/xxx** Commits, that fixes a bug/issue
 - **style/xxx** Commits, that do not affect the meaning (white-space, formatting, missing semi-colons, etc)
 - **chore/xxx** Miscellaneous commits (administrative / cleanup / backend)
@@ -34,7 +34,7 @@ _Examples:_
 
 ## Pull Request naming
 
-We're trying to be as consistent as possible for automation of the changelog.
+We're trying to be as consistent as possible to automate the changelog.
 
 - **feat(xxx):** Commits, that adds a new feature
 - **fix(xxx):** Commits, that fixes a bug/issue
@@ -60,14 +60,14 @@ When doing a PR that is in progress and not yet complete/ready for review or not
 
 ### Release Group Reclassifications, Removals, or Additions
 
-- When adding a release group to a Custom Format for whatever reason, please add in the PR why it's added/removed/moved.
+- When adding a release group to a Custom Format for whatever reason, please explain why it's added/removed/moved in the PR.
 
 ### General Guidelines
 
 - Custom Format name needs to match JSON name :bangbang:
 - No hashcode can exist multiple times :bangbang:
-- Tiers only hold release groups that have at least done several dozen objectively high-quality releases or are added for a specific reason. (If they do mainly niche stuff and/or foreign stuff they won't be added)
-- All Tier Groups must use retail sources. Fanres and upscaled groups are forbidden. This is due to the high effort required and the near impossibility of guaranteeing quality systematically without manually checking every single movie.
+- Tiers only hold release groups that have at least done several dozen objectively high-quality releases or are added for a specific reason. (If they do mainly niche stuff and/or foreign stuff, they won't be added)
+- All Tier Groups must use retail sources. Fanres and upscaled groups are forbidden. This is due to the high effort required and the near impossibility of systematically guaranteeing quality without manually checking every single movie.
 - JSON file format shall consist of the following TRaSH-specific data appended to the JSON exported from Starr
 
 ```json
@@ -84,7 +84,7 @@ STARRJSONEXPORT
 
 General Structure
 
-- JSON file name - name of the [json file](#file-naming)
+- JSON file name - the name of the [json file](#file-naming)
 - `trash_id` - Generated [HashCode](#hashcode) for the Custom Format
 - `trash_scores` - JSON object of [score(s) for the Custom Format](#scoring). Note that Custom Formats with Default Scores of 0 should NOT have a `trash_scores.default`
 - `trash_regex` - Link to [regex test cases](#regex-test-cases) for regex
@@ -96,10 +96,10 @@ General Structure
 
 ### Hashcode
 
-- When adding the hashcode for **Radarr** use the following naming `CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
-- When adding the hashcode for **Radarr Anime** use the following naming `Radarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
-- When adding the hashcode for **Sonarr** use the following naming `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
-- When adding the hashcode for **Sonarr Anime** use the following naming `Sonarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
+- When adding the hashcode for **Radarr**, use the following naming convention: `CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
+When adding the hashcode for **Radarr Anime**, use the following naming convention: `Radarr Anime CF_name`. For example, the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
+- When adding the hashcode for **Sonarr**, use the following naming convention: `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
+- When adding the hashcode for **Sonarr Anime**, use the following naming convention: `Sonarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
 
 ### Regex Test Cases
 
@@ -111,7 +111,7 @@ When adding a regex test case:
 - Replace the actual Series name/title with `Series`.
 - Replace the actual group name with `RlsGrp`
 
-When updating or adding a new CF the test case URL (`trash_regex`) needs to be prepended to the exported from Starr JSON
+When updating or adding a new CF, the test case URL (`trash_regex`) needs to be prepended to the exported from Starr JSON
 
 ```json
 {
@@ -141,6 +141,18 @@ When updating or adding a new CF the test case URL (`trash_regex`) needs to be p
 - Use [this website](https://md5.gromweb.com) to generate an md5 hash
 - YAML file names are always written in small letters, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
 
+## Quality Profiles and 3rd party sync apps
+
+When creating a new quality profile or editing an existing one, it's mandatory to ensure that these settings are also updated/added to the following locations for the third-party sync apps.
+
+- Radarr: `docs/json/radarr/quality-profiles`
+    - `docs/json/radarr/cf-groups`
+- Sonarr: `docs/json/sonarr/quality-profiles`
+    - `docs/json/Sonarr/cf-groups`
+
+- `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
+- `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
+
 ## Recommendations
 
 Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
@@ -153,7 +165,7 @@ based on the `.vscode/extensions.json` file; you should install all of them.
 These prerequisites are taken from the [mkdocs installation instructions][mkdocinstall].
 
 - Install a recent version of [Python 3](https://www.python.org/).
-- `pip` is also required, but should come with Python. Run `pip --version` to check if it's available and working. See the [installation instructions](https://pip.pypa.io/en/stable/installation/).
+- `pip` is also required, but it should come with Python. Run `pip --version` to check if it's available and working. See the [installation instructions](https://pip.pypa.io/en/stable/installation/).
 
 [mkdocinstall]: https://www.mkdocs.org/user-guide/installation/
 
@@ -167,9 +179,8 @@ First, install mkdocs:
 pip install mkdocs
 ```
 
-Then, install dependent modules using the command below. This command should be run in the root
-directory of the repository (i.e. where the `requirements.txt` file is). If the `pip` command does
-not work, refer to the mkdocs installation page linked in the Prerequisite section above.
+Then, install dependent modules using the command below. This command should be run in the repository's root directory (i.e., where the `requirements.txt` file is). If the `pip` command does
+If it does not work, refer to the mkdocs installation page linked in the Prerequisite section above.
 
 ```bash
 pip install -r docs/requirements.txt
