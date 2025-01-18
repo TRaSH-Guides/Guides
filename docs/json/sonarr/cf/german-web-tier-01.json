@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA)\\b"
+        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|D02KU)\\b"
       }
     },
     {
@@ -58,15 +58,6 @@
       "required": false,
       "fields": {
         "value": "^(TVS)$"
-      }
-    },
-    {
-      "name": "D02KU",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(D02KU)$"
       }
     },
     {

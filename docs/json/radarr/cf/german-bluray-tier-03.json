@@ -12,7 +12,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(RobertDeNiro)$"
+        "value": "^(RobertDeNiro)$"
+      }
+    },
+    {
+      "name": "LeetHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LeetHD)$"
       }
     },
     {

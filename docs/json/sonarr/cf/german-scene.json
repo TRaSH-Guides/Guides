@@ -185,6 +185,42 @@
       "fields": {
         "value": "^(muhHD)$"
       }
+    },
+    {
+      "name": "ENDSTATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENDSTATiON)$"
+      }
+    },
+    {
+      "name": "HDARCHiV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDARCHiV)$"
+      }
+    },
+    {
+      "name": "PL3X",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PL3X)$"
+      }
+    },
+    {
+      "name": "WATCHABLE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WATCHABLE)$"
+      }
     }
   ]
 }
