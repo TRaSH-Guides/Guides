@@ -338,6 +338,15 @@
       "fields": {
         "value": "^(AVTOMAT)$"
       }
+    },
+    {
+      "name": "iSSEYMiYAKE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iSSEYMiYAKE)$"
+      }
     }
   ]
 }
