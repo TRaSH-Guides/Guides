@@ -146,9 +146,9 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 When creating a new quality profile or editing an existing one, it's mandatory to ensure that these settings are also updated/added to the following locations for the third-party sync apps.
 
 - Radarr: `docs/json/radarr/quality-profiles`
-  - `docs/json/radarr/cf-groups`
+    - `docs/json/radarr/cf-groups`
 - Sonarr: `docs/json/sonarr/quality-profiles`
-  - `docs/json/Sonarr/cf-groups`
+    - `docs/json/Sonarr/cf-groups`
 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
