@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Miscellaneous UHD (Optional) - [Click to show/hide]"
 
     !!! tip "I recommend using the following Custom Formats"
@@ -24,3 +25,4 @@
     - **{{ radarr['cf']['x265-no-hdrdv']['name'] }}:** This blocks 720/1080p (HD) releases that are encoded in x265, **But it will allow x265 releases if they have HDR and/or DV**
 
         {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-radarr-warning.md" !}
+<!-- markdownlint-enable MD041-->
