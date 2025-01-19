@@ -1,3 +1,17 @@
+# 2025-01-19 01:27
+- [chore(backend): Added mandatory todo for `Quality Profiles` to `CONTIBUTING.md`](https://github.com/TRaSH-Guides/Guides/pull/2226)
+- [fix(starr): Increase the max custom format score of the german guide to be more than whats really actually possible](https://github.com/TRaSH-Guides/Guides/pull/2224)
+- [fix(guide): Align navigation to be the same between radarr and sonarr section.](https://github.com/TRaSH-Guides/Guides/pull/2223)
+- [fix(starr): Remove duplicate information about Bad Dual Groups and Scene from the German Guides](https://github.com/TRaSH-Guides/Guides/pull/2222)
+- [fix(starr): add more Groups to German Tier CFs](https://github.com/TRaSH-Guides/Guides/pull/2221)
+- [fix(guide-german): JSON error in the Custom Formats](https://github.com/TRaSH-Guides/Guides/pull/2220)
+- [feat(sonarr): German Sonarr Guide](https://github.com/TRaSH-Guides/Guides/pull/2202)
+- [fix(docs): Fix grammar in Dockstarter](https://github.com/TRaSH-Guides/Guides/pull/2218)
+- [feat(radarr): add ZeroTwo aliases to German Tier 01 CFs](https://github.com/TRaSH-Guides/Guides/pull/2219)
+- [fix(radarr): Add RILE and W4K to German Scene; AVTOMAT to German LQ](https://github.com/TRaSH-Guides/Guides/pull/2217)
+- [feat(guide): add Configarr to 3rd party Guide Sync tools](https://github.com/TRaSH-Guides/Guides/pull/2200)
+- [chore(guide-sync): Added QP description and group order](https://github.com/TRaSH-Guides/Guides/pull/2215)
+
 # 2025-01-12 01:38
 - [chore(backend-test): add `MinUpgradeFormatScore` for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2214)
 - [feat(radarr): German Guide - add "not english or german" CF and explanation for the max CF score](https://github.com/TRaSH-Guides/Guides/pull/2210)
