@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "WeebPinn",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WeebPinn)$"
+      }
+    },
+    {
       "name": "Remux",
       "implementation": "QualityModifierSpecification",
       "negate": false,
