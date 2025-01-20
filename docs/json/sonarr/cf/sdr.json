@@ -1,7 +1,8 @@
 {
   "trash_id": "2016d1676f5ee13a5b7257ff86ac9a93",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "SDR",
   "includeCustomFormatWhenRenaming": false,

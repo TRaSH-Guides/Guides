@@ -153,7 +153,7 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
 ---
 
@@ -181,7 +181,7 @@ If you prefer 1080p Remuxes (Bluray-1080p Remux)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
 ---
 
@@ -224,9 +224,9 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
 
 ---
 
@@ -260,9 +260,9 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
 
 ---
 

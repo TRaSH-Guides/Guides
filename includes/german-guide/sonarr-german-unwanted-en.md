@@ -3,14 +3,14 @@
 
     | Custom Format                                                                                                     |                               Score                                | Trash ID                                            |
     | ----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------: | --------------------------------------------------- |
-    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)                     |      {{ sonarr['cf']['br-disk']['trash_scores']['default'] }}      | {{ sonarr['cf']['br-disk']['trash_id'] }}           |
-    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                               |        {{ sonarr['cf']['lq']['trash_scores']['default'] }}         | {{ sonarr['cf']['lq']['trash_id'] }}                |
+    | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)                     |      {{ sonarr['cf']['br-disk']['trash_scores']['german'] }}       | {{ sonarr['cf']['br-disk']['trash_id'] }}           |
+    | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                               |         {{ sonarr['cf']['lq']['trash_scores']['german'] }}         | {{ sonarr['cf']['lq']['trash_id'] }}                |
     | [{{ sonarr['cf']['german-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#german-lq)                 |     {{ sonarr['cf']['german-lq']['trash_scores']['default'] }}     | {{ sonarr['cf']['german-lq']['trash_id'] }}         |
     | [{{ sonarr['cf']['german-microsized']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#german-microsized) | {{ sonarr['cf']['german-microsized']['trash_scores']['default'] }} | {{ sonarr['cf']['german-microsized']['trash_id'] }} |
     | [{{ sonarr['cf']['x265-hd']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#x265-hd) :warning:           | :warning: {{ sonarr['cf']['x265-hd']['trash_scores']['german'] }}  | {{ sonarr['cf']['x265-hd']['trash_id'] }}           |
-    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)                       |      {{ sonarr['cf']['extras']['trash_scores']['default'] }}       | {{ sonarr['cf']['extras']['trash_id'] }}            |
-    | [{{ sonarr['cf']['av1']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#av1)                             |        {{ sonarr['cf']['av1']['trash_scores']['default'] }}        | {{ sonarr['cf']['av1']['trash_id'] }}               |
-    | [{{ sonarr['cf']['upscaled']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#upscaled)                   |     {{ sonarr['cf']['upscaled']['trash_scores']['default'] }}      | {{ sonarr['cf']['upscaled']['trash_id'] }}          |
+    | [{{ sonarr['cf']['extras']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#extras)                       |       {{ sonarr['cf']['extras']['trash_scores']['german'] }}       | {{ sonarr['cf']['extras']['trash_id'] }}            |
+    | [{{ sonarr['cf']['av1']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#av1)                             |        {{ sonarr['cf']['av1']['trash_scores']['german'] }}         | {{ sonarr['cf']['av1']['trash_id'] }}               |
+    | [{{ sonarr['cf']['upscaled']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#upscaled)                   |      {{ sonarr['cf']['upscaled']['trash_scores']['german'] }}      | {{ sonarr['cf']['upscaled']['trash_id'] }}          |
 
     ---
 
