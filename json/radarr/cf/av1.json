@@ -3,7 +3,8 @@
   "trash_scores": {
     "default": -10000,
     "sqp-1-2160p": -10000,
-    "anime-radarr": -10000
+    "anime-radarr": -10000,
+    "german": -35000
   },
   "name": "AV1",
   "includeCustomFormatWhenRenaming": false,
