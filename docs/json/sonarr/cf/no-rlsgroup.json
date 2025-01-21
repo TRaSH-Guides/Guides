@@ -1,7 +1,8 @@
 {
   "trash_id": "82d40da2bc6923f41e14394075dd4b03",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "No-RlsGroup",
   "includeCustomFormatWhenRenaming": false,
