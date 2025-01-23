@@ -19,7 +19,7 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 
 - **feat/xxx** Commits that adds a new feature
 - **fix/xxx** Commits that fixes a bug/issue
-- **style/xxx** Commits that do not affect the meaning (white-space, formatting, missing semi-colons, grammar, etc)
+- **style/xxx** Commits that do not affect the meaning (white-space, formatting, missing semi-colons, grammar, etc.)
 - **chore/xxx** Miscellaneous commits (administrative, cleanup, backend, etc)
 
 > [!note]
@@ -77,7 +77,7 @@ The following Guide categories can be used for the PR name.
 - type(downloaders): #Downloaders related
 - type(plex): #Plex related
 - type(guide-sync): # Officially supported third-party party Guide Sync Tools related
-- type(misc): #Miscellaneous guides that do not fit in any other categories but are still related to Radarr/Sonarr etc
+- type(misc): #Miscellaneous guides that do not fit in any other categories but are still related to Radarr/Sonarr, etc
 - type(glossary): #Any additions/changes to the glossary page
 ```
 
@@ -103,8 +103,10 @@ _Examples:_
 ### General Guidelines
 
 > [!CAUTION]
+>
 > - Custom Format name needs to match JSON name :bangbang:
 > - No hashcode can exist multiple times :bangbang:
+>
 - Tiers only hold release groups that have at least done several dozen objectively high-quality releases or are added for a specific reason. (If they do mainly niche stuff and/or foreign stuff, they won't be added)
 - All Tier Groups must use retail sources. Fanres and upscaled groups are forbidden. This is due to the high effort required and the near impossibility of systematically guaranteeing quality without manually checking every single movie.
 - JSON file format shall consist of the following TRaSH-specific data appended to the JSON exported from Starr
@@ -136,7 +138,7 @@ General Structure
 
 ### Hashcode
 
-- When adding the hashcode for **Radarr**, use the following naming convention: `CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
+- When adding the hashcode for **Radarr**, use the following naming convention: `CF_name` e.g., the Custom Format `BR-DISK` would be the hash of [`BR-DISK`](https://md5.gromweb.com/?string=BR-DISK)
 When adding the hashcode for **Radarr Anime**, use the following naming convention: `Radarr Anime CF_name`. For example, the Custom Format `BR-DISK` would be the hash of [`Radarr Anime BR-DISK`](https://md5.gromweb.com/?string=Radarr+Anime+BR-DISK).
 - When adding the hashcode for **Sonarr**, use the following naming convention: `Sonarr CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr BR-DISK`](https://md5.gromweb.com/?string=Sonarr+BR-DISK).
 - When adding the hashcode for **Sonarr Anime**, use the following naming convention: `Sonarr Anime CF_name` e.g. the Custom Format `BR-DISK` would be the hash of [`Sonarr Anime BR-DISK`](https://md5.gromweb.com/?string=Sonarr+Anime+BR-DISK).
@@ -177,14 +179,17 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 ## YAML file naming
 
-- If a hashcode is needed **No** hashcode can exist multiple times :bangbang:
+> [!CAUTION]
+>
+> - If a hashcode is needed **No** hashcode can exist multiple times :bangbang:
+>
 - Use [this website](https://md5.gromweb.com) to generate an md5 hash
 - YAML file names are always written in small letters, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
 
 ## Quality Profiles and 3rd party sync apps
 
 > [!IMPORTANT]
-> When creating a new quality profile or editing an existing one, it's mandatory to ensure that these settings are also updated/added to the following locations for the third-party sync apps.
+> When creating a new quality profile or editing an existing one, it's mandatory to ensure that these settings are updated/added to the following locations for the third-party sync apps.
 
 - Radarr: `docs/json/radarr/quality-profiles`
     - `docs/json/radarr/cf-groups`
@@ -210,7 +215,7 @@ These prerequisites are taken from the [mkdocs installation instructions][mkdoci
 
 [mkdocinstall]: https://www.mkdocs.org/user-guide/installation/
 
-Alternatively you can check out the docker container and instructions maintained by [zakkarry](https://github.com/zakkarry) specifically for development of the guides [here](https://gist.github.com/zakkarry/1305f713539c9fee22bdeeddcff3a263). The documentation in the README explains the installation process.
+Alternatively, you can check out the docker container and instructions maintained by [zakkarry](https://github.com/zakkarry) specifically for developing the guides [here](https://gist.github.com/zakkarry/1305f713539c9fee22bdeeddcff3a263). The documentation in the README explains the installation process.
 
 ### Mkdocs Installation
 
