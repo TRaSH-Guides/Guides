@@ -1,7 +1,8 @@
 {
   "trash_id": "e204b80c87be9497a8a6eaff48f72905",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "LQ (Release Title)",
   "includeCustomFormatWhenRenaming": false,

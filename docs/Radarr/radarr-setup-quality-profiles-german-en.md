@@ -74,6 +74,12 @@ There are a couple of changes that are needed for German Custom Formats to work 
     !!! tip "Movie format/folder with the German movie name."
         Radarr supports the ISO-2 naming convention for naming movies, so replacing `{Movie CleanTitle}` with `{Movie CleanTitle:de}` will change the name to its German version.
 
+??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
+    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `35k`, which is more than the highest reachable score.
+
+    !!! tip "Tip"
+        If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
+
 ---
 
 ## Dealing with German Umlauts and German titles
@@ -154,7 +160,7 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -201,9 +207,9 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe-noremux.md" !}
 
@@ -241,9 +247,9 @@ If you prefer 2160p Remuxes (Remux-2160p)
 
 {! include-markdown "../../includes/cf/radarr-audio.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/radarr-german-misc-uhd-optional.md" !}
 
 {! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
 

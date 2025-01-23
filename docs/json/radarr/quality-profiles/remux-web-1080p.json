@@ -1,10 +1,13 @@
 {
   "trash_id": "9ca12ea80aa55ef916e3751f4b874151",
   "name": "Remux + WEB 1080p",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Remux: 1080p",
+  "group": 1,
   "upgradeAllowed": true,
   "cutoff": "Remux-1080p",
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
   "language":"Original",
   "items": [
     { "name": "Unknown", "allowed": false },

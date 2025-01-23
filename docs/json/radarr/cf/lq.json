@@ -1,7 +1,8 @@
 {
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
@@ -97,6 +98,15 @@
       }
     },
     {
+      "name": "C1NEM4",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(C1NEM4)$"
+      }
+    },
+    {
       "name": "C4K",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -139,6 +149,15 @@
       "required": false,
       "fields": {
         "value": "^(CiNE)$"
+      }
+    },
+    {
+      "name": "COLLECTiVE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(COLLECTiVE)$"
       }
     },
     {
@@ -430,6 +449,15 @@
       }
     },
     {
+      "name": "LUCY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LUCY)$"
+      }
+    },
+    {
       "name": "MarkII",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -670,6 +698,15 @@
       "required": false,
       "fields": {
         "value": "^(STUTTERSHIT)$"
+      }
+    },
+    {
+      "name": "SUNSCREEN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SUNSCREEN)$"
       }
     },
     {

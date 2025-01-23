@@ -1,0 +1,46 @@
+{
+  "trash_id": "c5dd0fd675f85487ad5bdf97159180bd",
+  "trash_scores": {
+      "default": 11000
+  },
+  "name": "German DL (undefined)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "NOT Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "DL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
+      }
+    },
+    {
+      "name": "ML",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ML)\\b"
+      }
+    }
+  ]
+}

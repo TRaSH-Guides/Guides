@@ -1,5 +1,5 @@
 name: Bug/Error Found in the Guide?
-description: Support Requests will be closed, if you are unsure please check out the Discord server first.
+description: Do not open an issue on GitHub for support questions. Any support questions will be closed. If you are unsure, please check out the discord server first.
 title: "[Bug]"
 labels: ["Type: Bug", "Status: Triage Needed"]
 body:
@@ -14,23 +14,25 @@ body:
         - label: Bazarr
         - label: Downloaders/Deluge
         - label: Downloaders/NZBGet
+        - label: Downloaders/Other
         - label: Downloaders/Qbittorrent
         - label: Downloaders/ruTorrent
         - label: Downloaders/SABnzbd
-        - label: Downloaders/Other
+        - label: File and Folder Structure (aka Hardlinks)
+        - label: File and Folder Structure (aka Hardlinks)/Docker
+        - label: File and Folder Structure (aka Hardlinks)/Dockstarter
+        - label: File and Folder Structure (aka Hardlinks)/Native
+        - label: File and Folder Structure (aka Hardlinks)/Synology
+        - label: File and Folder Structure (aka Hardlinks)/TrueNAS-Core
+        - label: File and Folder Structure (aka Hardlinks)/Unraid
+        - label: File and Folder Structure (aka Hardlinks)/Windows
         - label: Guide-Sync
-        - label: Hardlinks/Docker
-        - label: Hardlinks/Dockstarter
-        - label: Hardlinks/Native
-        - label: Hardlinks/Synology
-        - label: Hardlinks/TrueNAS-Core
-        - label: Hardlinks/Unraid
         - label: Misc
+        - label: Other
         - label: Plex
         - label: Prowlarr
         - label: Radarr
         - label: Sonarr
-        - label: Other
     validations:
       required: true
   - type: textarea

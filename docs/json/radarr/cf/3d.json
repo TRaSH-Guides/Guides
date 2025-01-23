@@ -1,7 +1,8 @@
 {
   "trash_id": "b8cd450cbfa689c0259a01d9e29ba3d6",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "trash_regex": "https://regex101.com/r/c6Dobc/1",
   "name": "3D",

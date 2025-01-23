@@ -31,7 +31,7 @@ storage
 
 ## Changes to the .env
 
-To accomplish this we need to change first a few paths in your `.env` (Usually `~/.docker/compose/.env`)
+To accomplish this we first need to change a few paths in your `.env` (Usually `~/.docker/compose/.env`)
 
 ```yaml
 # Global Settings
