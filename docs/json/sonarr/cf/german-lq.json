@@ -347,6 +347,15 @@
       "fields": {
         "value": "^(iSSEYMiYAKE)$"
       }
+    },
+    {
+      "name": "TVP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TVP)$"
+      }
     }
   ]
 }
