@@ -34,15 +34,6 @@
       }
     },
     {
-      "name": "HQC",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HQC)$"
-      }
-    },
-    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
