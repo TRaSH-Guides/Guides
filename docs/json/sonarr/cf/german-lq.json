@@ -356,6 +356,33 @@
       "fields": {
         "value": "^(TVP)$"
       }
+    },
+    {
+      "name": "AIDA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AIDA)$"
+      }
+    },
+    {
+      "name": "UTOPiA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(UTOPiA)$"
+      }
+    },
+    {
+      "name": "FRAGGERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FRAGGERS)$"
+      }
     }
   ]
 }
