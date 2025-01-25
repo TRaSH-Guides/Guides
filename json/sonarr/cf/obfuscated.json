@@ -1,7 +1,8 @@
 {
   "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "Obfuscated",
   "includeCustomFormatWhenRenaming": false,
