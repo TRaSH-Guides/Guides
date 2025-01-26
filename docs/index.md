@@ -14,13 +14,19 @@ _TRaSH Guides, Guides that aren't trash._
 
 ---
 
+The following guides are available
+
 ## Radarr
 
-Several guides for Radarr
+{! include-markdown "../includes/radarr/radarr-available-guides.md" !}
 
 ## Sonarr
 
+{! include-markdown "../includes/sonarr/sonarr-available-guides.md" !}
+
 ## Prowlarr
+
+{! include-markdown "../includes/prowlarr/prowlarr-available-guides.md" !}
 
 ## Lidarr
 
@@ -34,8 +40,12 @@ Several guides for Radarr
 
 ## Guide Sync
 
+Here you will find officially supported third-party party Guide Sync Tools. These tools follow the Guide guidelines.
+
 ## Misc
 
 ## Glossary
+
+This glossary provides definitions and explanations of commonly used terms, abbreviations, and phrases.
 
 --8<-- "includes/support.md"
