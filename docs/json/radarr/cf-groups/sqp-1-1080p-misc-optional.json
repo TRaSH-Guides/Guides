@@ -8,6 +8,11 @@
       "required": false
     },
     {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "required": false
+    },
+    {
       "name": "EVO (no WEBDL)",
       "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "required": false

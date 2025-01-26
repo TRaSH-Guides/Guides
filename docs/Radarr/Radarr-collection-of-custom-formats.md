@@ -95,39 +95,40 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | Language profiles                                                  |
-| -------------------------------------- | ------------------------------------------------------------------ |
-| [720p](#720p)                          | [Language: German](#language-german)                               |
-| [1080p](#1080p)                        | [Language: German DL](#language-german-dl)                         |
-| [2160p](#2160p)                        | [Language: German DL (undefined)](#language-german-dl-undefined)   |
-| [Bad Dual Groups](#bad-dual-groups)    | [Language: Not English (English Only)](#language-not-english)      |
-| [Dutch Groups](#dutch-groups)          | [Language: Not French (French Only)](#language-not-french)         |
-| [DV (Disk)](#dv-disk)                  | [Language: Not Original (Original Only)](#language-not-original)   |
-| [DV (WEBDL)](#dv-webdl)                | [Language: Original + French](#language-original-plus-french)      |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not German or English](#language-not-german-or-english) |
-| [EVO (no WEBDL)](#evo-no-webdl)        |                                                                    |
-| [FreeLeech](#freeleech)                |                                                                    |
-| [HDR10+ Boost](#hdr10plus-boost)       |                                                                    |
-| [HFR](#hfr)                            |                                                                    |
-| [Internal](#internal)                  |                                                                    |
-| [Line/Mic Dubbed](#linemic-dubbed)     |                                                                    |
-| [MPEG2](#mpeg2)                        |                                                                    |
-| [Multi](#multi)                        |                                                                    |
-| [No-RlsGroup](#no-rlsgroup)            |                                                                    |
-| [Obfuscated](#obfuscated)              |                                                                    |
-| [Repack/Proper](#repackproper)         |                                                                    |
-| [Repack2](#repack2)                    |                                                                    |
-| [Repack3](#repack3)                    |                                                                    |
-| [Retags](#retags)                      |                                                                    |
-| [Scene](#scene)                        |                                                                    |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                                                                    |
-| [SDR](#sdr)                            |                                                                    |
-| [VC-1](#vc-1)                          |                                                                    |
-| [VP9](#vp9)                            |                                                                    |
-| [x264](#x264)                          |                                                                    |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                                                    |
-| [x265](#x265)                          |                                                                    |
-| [x266](#x266)                          |                                                                    |
+| Miscellaneous                                          | Language profiles                                                  |
+| ------------------------------------------------------ | ------------------------------------------------------------------ |
+| [720p](#720p)                                          | [Language: German](#language-german)                               |
+| [1080p](#1080p)                                        | [Language: German DL](#language-german-dl)                         |
+| [2160p](#2160p)                                        | [Language: German DL (undefined)](#language-german-dl-undefined)   |
+| [Bad Dual Groups](#bad-dual-groups)                    | [Language: Not English (English Only)](#language-not-english)      |
+| [Black and White Editions] (#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)         |
+| [Dutch Groups](#dutch-groups)                          | [Language: Not Original (Original Only)](#language-not-original)   |
+| [DV (Disk)](#dv-disk)                                  | [Language: Original + French](#language-original-plus-french)      |
+| [DV (WEBDL)](#dv-webdl)                                | [Language: Not German or English](#language-not-german-or-english) |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost)                 |                                                                    |
+| [EVO (no WEBDL)](#evo-no-webdl)                        |                                                                    |
+| [FreeLeech](#freeleech)                                |                                                                    |
+| [HDR10+ Boost](#hdr10plus-boost)                       |                                                                    |
+| [HFR](#hfr)                                            |                                                                    |
+| [Internal](#internal)                                  |                                                                    |
+| [Line/Mic Dubbed](#linemic-dubbed)                     |                                                                    |
+| [MPEG2](#mpeg2)                                        |                                                                    |
+| [Multi](#multi)                                        |                                                                    |
+| [No-RlsGroup](#no-rlsgroup)                            |                                                                    |
+| [Obfuscated](#obfuscated)                              |                                                                    |
+| [Repack/Proper](#repackproper)                         |                                                                    |
+| [Repack2](#repack2)                                    |                                                                    |
+| [Repack3](#repack3)                                    |                                                                    |
+| [Retags](#retags)                                      |                                                                    |
+| [Scene](#scene)                                        |                                                                    |
+| [SDR (no WEBDL)](#sdr-no-webdl)                        |                                                                    |
+| [SDR](#sdr)                                            |                                                                    |
+| [VC-1](#vc-1)                                          |                                                                    |
+| [VP9](#vp9)                                            |                                                                    |
+| [x264](#x264)                                          |                                                                    |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)                     |                                                                    |
+| [x265](#x265)                                          |                                                                    |
+| [x266](#x266)                                          |                                                                    |
 
 ---
 
@@ -1161,6 +1162,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Black and White Editions
+
+??? question "Black and White Editions - [Click to show/hide]"
+
+    Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
