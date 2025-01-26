@@ -18,5 +18,5 @@
     - **{{ sonarr['cf']['no-rlsgroup']['name'] }}:** [*Optional*] Some indexers strip out the release group which could result in LQ groups being scored incorrectly. For example, a lot of EVO releases end up with a stripped group name. These releases would appear as "upgrades" and could end up getting a decent score after other CFs are scored.
     - **{{ sonarr['cf']['obfuscated']['name'] }}:** [*Optional*] Use these only if you wish to avoid renamed releases.
     - **{{ sonarr['cf']['retags']['name'] }}:** [*Optional*] Use this if you wish to avoid retagged releases. Retagged releases often are not consistent with the quality of the original group's release (e.g. TGx downsampling an NTb release from 5.1 audio to 2.0 audio, yet maintaining the NTb naming).
-    - **{{ sonarr['cf']['scene']['name'] }}:** [*Optional*] Use this only if you want to avoid SCENE releases.
+    - :warning: **{{ sonarr['cf']['scene']['name'] }}:** [*Optional*] We recommend not using this CF in the German Guide, as it often matches incorrectly due to the German release naming.
 <!-- markdownlint-enable MD041-->
