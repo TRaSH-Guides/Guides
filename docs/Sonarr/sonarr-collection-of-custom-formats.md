@@ -94,14 +94,17 @@ We've made 3 guides related to this.
 
 | Miscellaneous                          | Language profiles                                                  |
 | -------------------------------------- | ------------------------------------------------------------------ |
-| [Bad Dual Groups](#bad-dual-groups)    | [Language: German](#language-german)                               |
-| [DV (Disk)](#dv-disk)                  | [Language: German DL](#language-german-dl)                         |
-| [DV (WEBDL)](#dv-webdl)                | [Language: German DL (undefined)](#language-german-dl-undefined)   |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not English (English Only)](#language-not-english)      |
-| [FreeLeech](#freeleech)                | [Language: Not French (French Only)](#language-not-french)         |
-| [HDR10+ Boost](#hdr10plus-boost)       | [Language: Not Original (Original Only)](#language-not-original)   |
-| [HFR](#hfr)                            | [Language: Original + French](#language-original-plus-french)      |
-| [Internal](#internal)                  | [Language: Not German or English](#language-not-german-or-english) |
+| [720p](#720p)                          | [Language: German](#language-german)                               |
+| [1080p](#1080p)                        | [Language: German DL](#language-german-dl)                         |
+| [2160p](#2160p)                        | [Language: German DL (undefined)](#language-german-dl-undefined)   |
+| [Bad Dual Groups](#bad-dual-groups)    | [Language: Not English (English Only)](#language-not-english)      |
+| [DV (Disk)](#dv-disk)                  | [Language: Not French (French Only)](#language-not-french)         |
+| [DV (WEBDL)](#dv-webdl)                | [Language: Not Original (Original Only)](#language-not-original)   |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Original + French](#language-original-plus-french)      |
+| [FreeLeech](#freeleech)                | [Language: Not German or English](#language-not-german-or-english) |
+| [HDR10+ Boost](#hdr10plus-boost)       |                                                                    |
+| [HFR](#hfr)                            |                                                                    |
+| [Internal](#internal)                  |                                                                    |
 | [MPEG2](#mpeg2)                        |                                                                    |
 | [Multi](#multi)                        |                                                                    |
 | [No-RlsGroup](#no-rlsgroup)            |                                                                    |
@@ -885,6 +888,54 @@ We've made 3 guides related to this.
 ---
 
 ## Miscellaneous
+
+---
+
+### 720p
+
+??? question "720p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/720p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/720p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### 1080p
+
+??? question "1080p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/1080p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### 2160p
+
+??? question "2160p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/2160p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
 
 ---
 
