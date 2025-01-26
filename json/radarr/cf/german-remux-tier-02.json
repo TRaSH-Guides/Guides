@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "RHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RHD)$"
+      }
+    },
+    {
       "name": "Remux",
       "implementation": "QualityModifierSpecification",
       "negate": false,

@@ -25,6 +25,15 @@
       }
     },
     {
+      "name": "RHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RHD)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
