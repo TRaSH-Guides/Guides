@@ -1,3 +1,11 @@
+# 2025-01-26 01:24
+- [feat(starr): Added Custom Format to boost 720p, 1080p and/or 2160p releases](https://github.com/TRaSH-Guides/Guides/pull/2237)
+- [chore(backend): Added PR naming information to the CONTRIBUTING.md](https://github.com/TRaSH-Guides/Guides/pull/2236)
+- [feat(sonarr-anime): Add Yangire-Raws to FR anime fansub](https://github.com/TRaSH-Guides/Guides/pull/2235)
+- [fix(sonarr-german): Add missing German scores to some CFs](https://github.com/TRaSH-Guides/Guides/pull/2232)
+- [feat(starr-anime): Enhance Bilibili Streaming Service and Remux Tier CFs](https://github.com/TRaSH-Guides/Guides/pull/2230)
+- [fix(german-guide): Scoring Adjustments](https://github.com/TRaSH-Guides/Guides/pull/2225)
+
 # 2025-01-19 01:27
 - [chore(backend): Added mandatory todo for `Quality Profiles` to `CONTIBUTING.md`](https://github.com/TRaSH-Guides/Guides/pull/2226)
 - [fix(starr): Increase the max custom format score of the german guide to be more than whats really actually possible](https://github.com/TRaSH-Guides/Guides/pull/2224)
