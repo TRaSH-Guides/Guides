@@ -1,0 +1,20 @@
+{
+  "trash_id": "712d74cd88bceb883ee32f773656b1f5",
+  "trash_scores": {
+    "default": -10000
+  },
+  "trash_regex": "https://regex101.com/r/U9NMJU/1",
+  "name": "Sing-Along Versions",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Sing-Along",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Sing[-_. ]Along)\\b"
+      }
+    }
+  ]
+}
