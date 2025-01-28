@@ -88,12 +88,30 @@
       }
     },
     {
+      "name": "Half-Baked",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Half-Baked)\\b"
+      }
+    },
+    {
       "name": "HatSubs",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\b(HatSubs)\\b"
+      }
+    },
+    {
+      "name": "MALD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MALD)\\b"
       }
     },
     {
