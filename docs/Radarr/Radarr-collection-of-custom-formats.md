@@ -145,19 +145,19 @@ We've made 3 guides related to this.
 
 ---
 
-| German Source Groups                            | German Miscellaneous                          | French Source Groups                            | French Audio Version |
-| ----------------------------------------------- | --------------------------------------------- | ----------------------------------------------- | -------------------- |
-| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                       | [FR Remux Tier 01](#fr-remux-tier-01)           | [VFF](#vff)          |
-| [German Remux Tier 02](#german-remux-tier-02)   | [German Microsized](#german-microsized)       | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
-| [German Bluray Tier 01](#german-bluray-tier-01) | [German 1080p Booster](#german-1080p-booster) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
-| [German Bluray Tier 02](#german-bluray-tier-02) | [German 2160p Booster](#german-2160p-booster) | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
-| [German Bluray Tier 03](#german-bluray-tier-03) |                                               | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
-| [German Web Tier 01](#german-web-tier-01)       |                                               | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
-| [German Web Tier 02](#german-web-tier-02)       |                                               | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
-| [German Web Tier 03](#german-web-tier-03)       |                                               | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
-| [German Scene](#german-scene)                   |                                               | [FR Scene Groups](#fr-scene-groups)             | [VOSTFR](#vostfr)    |
-|                                                 |                                               | [FR LQ](#fr-lq)                                 | [FanSUB](#fansub)    |
-|                                                 |                                               |                                                 | [FastSUB](#fastsub)  |
+| German Source Groups                            | German Miscellaneous                                  | French Source Groups                            | French Audio Version |
+| ----------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------- | -------------------- |
+| [German Remux Tier 01](#german-remux-tier-01)   | [German LQ](#german-lq)                               | [FR Remux Tier 01](#fr-remux-tier-01)           | [VFF](#vff)          |
+| [German Remux Tier 02](#german-remux-tier-02)   | [German LQ (Release Title)](#german-lq-release-title) | [FR Remux Tier 02](#fr-remux-tier-02)           | [VOF](#vof)          |
+| [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
+| [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
+| [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
+| [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
+| [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
+| [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
+| [German Scene](#german-scene)                   |                                                       | [FR Scene Groups](#fr-scene-groups)             | [VOSTFR](#vostfr)    |
+|                                                 |                                                       | [FR LQ](#fr-lq)                                 | [FanSUB](#fansub)    |
+|                                                 |                                                       |                                                 | [FastSUB](#fastsub)  |
 
 ---
 
@@ -3502,6 +3502,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### German LQ (Release Title)
+
+<sub>Low-Quality Releases = LQ</sub>
+
+??? question "German LQ (Release Title) - [Click to show/hide]"
+
+    A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/german-lq-release-title.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
