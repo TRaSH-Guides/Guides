@@ -1,10 +1,13 @@
 {
   "trash_id": "d1498e7d189fbe6c7110ceaabb7473e6",
   "name": "WEB-2160p",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p",
+  "group": 1,
   "upgradeAllowed": true,
   "cutoff": "WEB 2160p",
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "SDTV", "allowed": false },
