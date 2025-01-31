@@ -2,7 +2,7 @@
   "trash_id": "c4cadd6b35b95f62c3d47a408e53e2f7",
   "name": "WEB-2160p (Combined)",
   "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p, 2160p",
-  "group": 11,
+  "group": 4,
   "upgradeAllowed": true,
   "cutoff": "WEB 2160p",
   "minFormatScore": 0,

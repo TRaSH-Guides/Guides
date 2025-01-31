@@ -2,7 +2,7 @@
   "trash_id": "3b0fa37fddaaefc931b75f2889d4b4f5",
   "name": "[German] UHD Bluray + WEB",
   "trash_description": "German Quality Profile that covers:<br>- WEBDL: 2160p<br>- Bluray: 2160p",
-  "group": 3,
+  "group": 11,
   "trash_score_set": "german",
   "upgradeAllowed": true,
   "cutoff": "Merged QPs",
