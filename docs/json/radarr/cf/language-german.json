@@ -39,7 +39,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(German)(\\.|-|_| |)(Subbed|Sub)"
+        "value": "(?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))"
       }
     }
   ]
