@@ -8,6 +8,11 @@
       "required": false
     },
     {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "required": false
+    },
+    {
       "name": "EVO (no WEBDL)",
       "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
       "required": false
@@ -65,6 +70,10 @@
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
       "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
       "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
       "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",

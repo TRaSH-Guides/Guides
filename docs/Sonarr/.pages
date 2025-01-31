@@ -2,10 +2,11 @@ nav:
   - Home: index.md
   - Quality Settings (File Size): Sonarr-Quality-Settings-File-Size.md
   - Recommended naming scheme: Sonarr-recommended-naming-scheme.md
-  - How to import Custom Formats: sonarr-import-custom-formats.md
-  - How to Update Custom Formats: sonarr-how-to-update-custom-formats.md
   - How to set up Quality Profiles: sonarr-setup-quality-profiles.md
   - How to set up Quality Profiles (Anime): sonarr-setup-quality-profiles-anime.md
   - How to set up Quality Profiles (French): sonarr-setup-quality-profiles-french-en.md
+  - How to set up Quality Profiles (German): sonarr-setup-quality-profiles-german-en.md
+  - How to import Custom Formats: sonarr-import-custom-formats.md
+  - How to Update Custom Formats: sonarr-how-to-update-custom-formats.md
   - Collection of Custom Formats: sonarr-collection-of-custom-formats.md
   - Tips

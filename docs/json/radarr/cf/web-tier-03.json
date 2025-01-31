@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "BYNDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BYNDR)$"
+      }
+    },
+    {
       "name": "GNOMiSSiON",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

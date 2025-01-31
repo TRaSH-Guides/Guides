@@ -1,7 +1,7 @@
 {
   "trash_id": "aee01d40cd1bf4bcded81ee62f0f3659",
   "trash_scores": {
-      "default": 2800
+      "default": 3800
   },
   "name": "German Bluray Tier 03",
   "includeCustomFormatWhenRenaming": false,
@@ -12,7 +12,25 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(RobertDeNiro)$"
+        "value": "^(RobertDeNiro)$"
+      }
+    },
+    {
+      "name": "LeetHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(LeetHD)$"
+      }
+    },
+    {
+      "name": "RHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RHD)$"
       }
     },
     {
@@ -22,6 +40,15 @@
       "required": true,
       "fields": {
         "value": 9
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
       }
     }
   ]

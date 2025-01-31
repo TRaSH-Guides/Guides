@@ -1,3 +1,46 @@
+# 2025-01-26 01:24
+- [feat(starr): Added Custom Format to boost 720p, 1080p and/or 2160p releases](https://github.com/TRaSH-Guides/Guides/pull/2237)
+- [chore(backend): Added PR naming information to the CONTRIBUTING.md](https://github.com/TRaSH-Guides/Guides/pull/2236)
+- [feat(sonarr-anime): Add Yangire-Raws to FR anime fansub](https://github.com/TRaSH-Guides/Guides/pull/2235)
+- [fix(sonarr-german): Add missing German scores to some CFs](https://github.com/TRaSH-Guides/Guides/pull/2232)
+- [feat(starr-anime): Enhance Bilibili Streaming Service and Remux Tier CFs](https://github.com/TRaSH-Guides/Guides/pull/2230)
+- [fix(german-guide): Scoring Adjustments](https://github.com/TRaSH-Guides/Guides/pull/2225)
+
+# 2025-01-19 01:27
+- [chore(backend): Added mandatory todo for `Quality Profiles` to `CONTIBUTING.md`](https://github.com/TRaSH-Guides/Guides/pull/2226)
+- [fix(starr): Increase the max custom format score of the german guide to be more than whats really actually possible](https://github.com/TRaSH-Guides/Guides/pull/2224)
+- [fix(guide): Align navigation to be the same between radarr and sonarr section.](https://github.com/TRaSH-Guides/Guides/pull/2223)
+- [fix(starr): Remove duplicate information about Bad Dual Groups and Scene from the German Guides](https://github.com/TRaSH-Guides/Guides/pull/2222)
+- [fix(starr): add more Groups to German Tier CFs](https://github.com/TRaSH-Guides/Guides/pull/2221)
+- [fix(guide-german): JSON error in the Custom Formats](https://github.com/TRaSH-Guides/Guides/pull/2220)
+- [feat(sonarr): German Sonarr Guide](https://github.com/TRaSH-Guides/Guides/pull/2202)
+- [fix(docs): Fix grammar in Dockstarter](https://github.com/TRaSH-Guides/Guides/pull/2218)
+- [feat(radarr): add ZeroTwo aliases to German Tier 01 CFs](https://github.com/TRaSH-Guides/Guides/pull/2219)
+- [fix(radarr): Add RILE and W4K to German Scene; AVTOMAT to German LQ](https://github.com/TRaSH-Guides/Guides/pull/2217)
+- [feat(guide): add Configarr to 3rd party Guide Sync tools](https://github.com/TRaSH-Guides/Guides/pull/2200)
+- [chore(guide-sync): Added QP description and group order](https://github.com/TRaSH-Guides/Guides/pull/2215)
+
+# 2025-01-12 01:38
+- [chore(backend-test): add `MinUpgradeFormatScore` for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2214)
+- [feat(radarr): German Guide - add "not english or german" CF and explanation for the max CF score](https://github.com/TRaSH-Guides/Guides/pull/2210)
+- [fix(radarr): German Guide - add negated remux quality modifier to bluray groups to avoid double scoring](https://github.com/TRaSH-Guides/Guides/pull/2211)
+- [chore(backend): Moved all Support/Suggestions to the Discord Server](https://github.com/TRaSH-Guides/Guides/pull/2209)
+- [chore(guide): Updated README.md](https://github.com/TRaSH-Guides/Guides/pull/2208)
+- [fix(starr):  add DUAL-VARYG to Dual Audio Custom Anime Format](https://github.com/TRaSH-Guides/Guides/pull/2204)
+
+# 2025-01-05 01:36
+- [feat(Guides): Add new groups to LQ custom format](https://github.com/TRaSH-Guides/Guides/pull/2205)
+- [feat(guide): Guide Sync updates](https://github.com/TRaSH-Guides/Guides/pull/2203)
+- [chore(cleanup): remove reference to animebytes.tv](https://github.com/TRaSH-Guides/Guides/pull/2199)
+- [feat(starr-anime): Require remux in title for NAN0](https://github.com/TRaSH-Guides/Guides/pull/2198)
+- [fix(radarr): Add missing entries to unwanted section of the german guide](https://github.com/TRaSH-Guides/Guides/pull/2196)
+- [chore(guide): Add upcoming QP language option for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2197)
+- [feat(radarr): Clarify the use of merged qualities for the German Guide](https://github.com/TRaSH-Guides/Guides/pull/2193)
+- [chore(guide): Updated QP excludes for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2195)
+- [chore(guide): German QP sorting fix for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2194)
+- [feat(guide-sync): Add German Quality Profiles for the 3rd party sync applications](https://github.com/TRaSH-Guides/Guides/pull/2190)
+- [fix(radarr): updated screenshot with correct minimum score](https://github.com/TRaSH-Guides/Guides/pull/2191)
+
 # 2024-12-29 01:37
 - [feat(radarr): Add Information about Generated Dynamic HDR in the German Guide](https://github.com/TRaSH-Guides/Guides/pull/2186)
 - [fix(radarr): Adapt German CF to avoid matching DL](https://github.com/TRaSH-Guides/Guides/pull/2188)

@@ -58,9 +58,9 @@ We've made 3 guides related to this.
 | [IMAX](#imax)                                 | [Generated Dynamic HDR](#generated-dynamic-hdr) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
 | [Masters of Cinema](#masters-of-cinema)       | [LQ](#lq)                                       | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
 | [Open Matte](#open-matte)                     | [LQ (Release Title)](#lq-release-title)         | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
-| [Remaster](#remaster)                         | [Upscaled](#upscaled)                           | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
-| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd)                           | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
-| [Theatrical Cut](#theatrical-cut)             |                                                 | [WEB Tier 01](#web-tier-01)               |
+| [Remaster](#remaster)                         | [Sing-Along Versions](#sing-along-versions)     | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           | [Upscaled](#upscaled)                           | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             | [x265 (HD)](#x265-hd)                           | [WEB Tier 01](#web-tier-01)               |
 | [Vinegar Syndrome](#vinegar-syndrome)         |                                                 | [WEB Tier 02](#web-tier-02)               |
 |                                               |                                                 | [WEB Tier 03](#web-tier-03)               |
 
@@ -95,36 +95,40 @@ We've made 3 guides related to this.
 
 ---
 
-| Miscellaneous                          | Language profiles                                                |
-| -------------------------------------- | ---------------------------------------------------------------- |
-| [Bad Dual Groups](#bad-dual-groups)    | [Language: German](#language-german)                             |
-| [Dutch Groups](#dutch-groups)          | [Language: German DL](#language-german-dl)                       |
-| [DV (Disk)](#dv-disk)                  | [Language: German DL (undefined)](#language-german-dl-undefined) |
-| [DV (WEBDL)](#dv-webdl)                | [Language: Not English (English Only)](#language-not-english)    |
-| [DV HDR10+ Boost](#dv-hdr10plus-boost) | [Language: Not French (French Only)](#language-not-french)       |
-| [EVO (no WEBDL)](#evo-no-webdl)        | [Language: Not Original (Original Only)](#language-not-original) |
-| [FreeLeech](#freeleech)                | [Language: Original + French](#language-original-plus-french)    |
-| [HDR10+ Boost](#hdr10plus-boost)       |                                                                  |
-| [HFR](#hfr)                            |                                                                  |
-| [Internal](#internal)                  |                                                                  |
-| [Line/Mic Dubbed](#linemic-dubbed)     |                                                                  |
-| [MPEG2](#mpeg2)                        |                                                                  |
-| [Multi](#multi)                        |                                                                  |
-| [No-RlsGroup](#no-rlsgroup)            |                                                                  |
-| [Obfuscated](#obfuscated)              |                                                                  |
-| [Repack/Proper](#repackproper)         |                                                                  |
-| [Repack2](#repack2)                    |                                                                  |
-| [Repack3](#repack3)                    |                                                                  |
-| [Retags](#retags)                      |                                                                  |
-| [Scene](#scene)                        |                                                                  |
-| [SDR (no WEBDL)](#sdr-no-webdl)        |                                                                  |
-| [SDR](#sdr)                            |                                                                  |
-| [VC-1](#vc-1)                          |                                                                  |
-| [VP9](#vp9)                            |                                                                  |
-| [x264](#x264)                          |                                                                  |
-| [x265 (no HDR/DV)](#x265-no-hdrdv)     |                                                                  |
-| [x265](#x265)                          |                                                                  |
-| [x266](#x266)                          |                                                                  |
+| Miscellaneous                                         | Language profiles                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------------ |
+| [720p](#720p)                                         | [Language: German](#language-german)                               |
+| [1080p](#1080p)                                       | [Language: German DL](#language-german-dl)                         |
+| [2160p](#2160p)                                       | [Language: German DL (undefined)](#language-german-dl-undefined)   |
+| [Bad Dual Groups](#bad-dual-groups)                   | [Language: Not English (English Only)](#language-not-english)      |
+| [Black and White Editions](#black-and-white-editions) | [Language: Not French (French Only)](#language-not-french)         |
+| [Dutch Groups](#dutch-groups)                         | [Language: Not Original (Original Only)](#language-not-original)   |
+| [DV (Disk)](#dv-disk)                                 | [Language: Original + French](#language-original-plus-french)      |
+| [DV (WEBDL)](#dv-webdl)                               | [Language: Not German or English](#language-not-german-or-english) |
+| [DV HDR10+ Boost](#dv-hdr10plus-boost)                |                                                                    |
+| [EVO (no WEBDL)](#evo-no-webdl)                       |                                                                    |
+| [FreeLeech](#freeleech)                               |                                                                    |
+| [HDR10+ Boost](#hdr10plus-boost)                      |                                                                    |
+| [HFR](#hfr)                                           |                                                                    |
+| [Internal](#internal)                                 |                                                                    |
+| [Line/Mic Dubbed](#linemic-dubbed)                    |                                                                    |
+| [MPEG2](#mpeg2)                                       |                                                                    |
+| [Multi](#multi)                                       |                                                                    |
+| [No-RlsGroup](#no-rlsgroup)                           |                                                                    |
+| [Obfuscated](#obfuscated)                             |                                                                    |
+| [Repack/Proper](#repackproper)                        |                                                                    |
+| [Repack2](#repack2)                                   |                                                                    |
+| [Repack3](#repack3)                                   |                                                                    |
+| [Retags](#retags)                                     |                                                                    |
+| [Scene](#scene)                                       |                                                                    |
+| [SDR (no WEBDL)](#sdr-no-webdl)                       |                                                                    |
+| [SDR](#sdr)                                           |                                                                    |
+| [VC-1](#vc-1)                                         |                                                                    |
+| [VP9](#vp9)                                           |                                                                    |
+| [x264](#x264)                                         |                                                                    |
+| [x265 (no HDR/DV)](#x265-no-hdrdv)                    |                                                                    |
+| [x265](#x265)                                         |                                                                    |
+| [x266](#x266)                                         |                                                                    |
 
 ---
 
@@ -1010,7 +1014,7 @@ We've made 3 guides related to this.
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "LQ (Release Title)- [Click to show/hide]"
+??? question "LQ (Release Title) - [Click to show/hide]"
 
     A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
 
@@ -1018,6 +1022,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq-release-title.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Sing-Along Versions
+
+??? question "Sing-Along Versions - [Click to show/hide]"
+
+    Versions of musical films that have sing-along lyrics hardcoded into the video stream.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sing-along-versions.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -1096,6 +1116,54 @@ We've made 3 guides related to this.
 
 ---
 
+### 720p
+
+??? question "720p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/720p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/720p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### 1080p
+
+??? question "1080p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/1080p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### 2160p
+
+??? question "2160p - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/2160p.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
 ### Bad Dual Groups
 
 ??? question "Bad dual groups - [Click to show/hide]"
@@ -1107,6 +1175,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bad-dual-groups.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Black and White Editions
+
+??? question "Black and White Editions - [Click to show/hide]"
+
+    Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/black-and-white-editions.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>
@@ -3222,7 +3306,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 01
 
-??? question "German Bluray Tier 01 - [Click to show/hide]"
+??? question "German Remux Tier 01 - [Click to show/hide]"
 
     - WiP
     - Groups that get their releases directly from the source.
@@ -3242,7 +3326,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 02
 
-??? question "German Bluray Tier 02 - [Click to show/hide]"
+??? question "German Remux Tier 02 - [Click to show/hide]"
 
     - WiP
     - Groups that get their releases directly from the source.
@@ -3594,6 +3678,22 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-german.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup></sub>
+
+---
+
+### Language: Not German or English
+
+??? question "German - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/language-not-german-english.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/language-not-german-english.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup></sub>

@@ -1,10 +1,15 @@
 {
-  "name": "Optional",
+  "name": "Misc UHD (Optional)",
   "trash_id": "8a3d746a76dcfc02c43983ac5432f754",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",
       "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
       "required": false
     },
     {
@@ -38,6 +43,11 @@
       "required": false
     },
     {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "required": false
+    },
+    {
       "name": "HDR10+ Boost",
       "trash_id": "b17886cb4158d9fea189859409975758",
       "required": false
@@ -60,6 +70,7 @@
   ],
   "quality_profiles": {
     "exclude": {
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
       "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
       "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
       "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",

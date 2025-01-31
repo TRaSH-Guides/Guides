@@ -1,6 +1,7 @@
 {
-  "name": "Optional",
+  "name": "[Optional] Miscellaneous",
   "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",

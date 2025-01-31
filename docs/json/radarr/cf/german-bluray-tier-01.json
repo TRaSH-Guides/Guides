@@ -1,7 +1,7 @@
 {
   "trash_id": "54795711b78ea87e56127928c423689b",
   "trash_scores": {
-      "default": 3000
+      "default": 4000
   },
   "name": "German Bluray Tier 01",
   "includeCustomFormatWhenRenaming": false,
@@ -12,7 +12,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ZeroTwo)$"
+        "value": "^(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "ZeroTwo Aliases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\\b"
       }
     },
     {
@@ -21,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TSCC)$"
+        "value": "^(TSCC)$"
       }
     },
     {
@@ -30,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TvR)$"
+        "value": "^(TvR)$"
       }
     },
     {
@@ -39,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(NIMA4K)$"
+        "value": "^(NIMA4K)$"
       }
     },
     {
@@ -48,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TVS)$"
+        "value": "^(TVS)$"
       }
     },
     {
@@ -57,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PXL)$"
+        "value": "^(PXL)$"
       }
     },
     {
@@ -66,7 +75,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(CNY)$"
+        "value": "^(CNY)$"
+      }
+    },
+    {
+      "name": "WeebPinn",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WeebPinn)$"
       }
     },
     {
@@ -76,6 +94,15 @@
       "required": true,
       "fields": {
         "value": 9
+      }
+    },
+    {
+      "name": "Not Remux",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
       }
     }
   ]

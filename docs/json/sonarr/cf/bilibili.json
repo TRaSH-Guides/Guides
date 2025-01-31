@@ -36,7 +36,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(Bilibili)\\b"
+        "value": "\\b(Bili(bili)?)\\b"
       }
     }
   ]

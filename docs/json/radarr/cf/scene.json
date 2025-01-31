@@ -1,7 +1,8 @@
 {
   "trash_id": "f537cf427b64c38c8e36298f657e4828",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": 0
   },
   "trash_regex": "https://regex101.com/r/BoIGFA/1",
   "name": "Scene",

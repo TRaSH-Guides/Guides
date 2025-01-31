@@ -1,6 +1,7 @@
 {
-  "name": "Optional",
+  "name": "[Optional] Miscellaneous UHD",
   "trash_id": "cac4624ef8fae1ef5e8abb8cf1cf6607",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",

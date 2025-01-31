@@ -1,10 +1,15 @@
 {
-  "name": "Optional",
+  "name": "Misc (Optional)",
   "trash_id": "9337080378236ce4c0b183e35790d2a7",
   "custom_formats": [
     {
       "name": "Bad Dual Groups",
       "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
       "required": false
     },
     {
@@ -33,8 +38,8 @@
       "required": false
     },
     {
-      "name": "x265 (no HDR/DV)",
-      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "name": "x265 (HD)",
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
       "required": false
     }
   ],

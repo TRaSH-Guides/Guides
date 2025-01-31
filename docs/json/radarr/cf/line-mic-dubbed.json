@@ -1,7 +1,8 @@
 {
   "trash_id": "c465ccc73923871b3eb1802042331306",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "trash_regex": "https://regex101.com/r/6vHBAD/1",
   "name": "Line/Mic Dubbed",

@@ -12,7 +12,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(ZeroTwo)$"
+        "value": "^(ZeroTwo)$"
+      }
+    },
+    {
+      "name": "ZeroTwo Aliases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BUTTERCUP|HARTZ02|XiSS|DOGPACK404|PRiNCESSDiANA|DiVA|WAREZCX|BiTCHNUGGET)\\b"
       }
     },
     {
@@ -21,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TSCC)$"
+        "value": "^(TSCC)$"
       }
     },
     {
@@ -30,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TvR)$"
+        "value": "^(TvR)$"
       }
     },
     {
@@ -39,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(NIMA4K)$"
+        "value": "^(NIMA4K)$"
       }
     },
     {
@@ -48,7 +57,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(TVS)$"
+        "value": "^(TVS)$"
       }
     },
     {
@@ -57,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(D02KU)$"
+        "value": "^(D02KU)$"
       }
     },
     {
@@ -66,7 +75,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(PXL)$"
+        "value": "^(PXL)$"
       }
     },
     {
@@ -75,7 +84,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(QfG)$"
+        "value": "^(QfG)$"
       }
     },
     {
@@ -84,7 +93,43 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(CNY)$"
+        "value": "^(CNY)$"
+      }
+    },
+    {
+      "name": "WeebPinn",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WeebPinn)$"
+      }
+    },
+    {
+      "name": "MEDiATHEK",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MEDiATHEK)$"
+      }
+    },
+    {
+      "name": "RiiR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RiiR)$"
+      }
+    },
+    {
+      "name": "RiiR Aliases",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TOJ)\\b"
       }
     },
     {

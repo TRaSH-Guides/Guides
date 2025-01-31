@@ -2,7 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Guides
     url: https://trash-guides.info/
-    about: Guides mainly for Sonarr/Radarr/Bazarr and everything related to it.
+    about: Guides mainly for the Starr Apps (Sonarr/Radarr) and everything related to them.
   - name: Discord Support
-    url: https://discord.gg/Vau8dZ3
-    about: Ask questions and any other related help
+    url: https://trash-guides.info/discord
+    about: If you have any questions about the guide or need assistance, please join our Discord server.
+  - name: Would you happen to have any suggestions for the guide?
+    url: https://discord.com/channels/492590071455940612/1021029470389403818
+    about: Join the suggestions section of our Discord server.
