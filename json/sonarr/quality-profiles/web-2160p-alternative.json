@@ -1,8 +1,8 @@
 {
-  "trash_id": "d1498e7d189fbe6c7110ceaabb7473e6",
-  "name": "WEB-2160p",
-  "trash_description": "Quality Profile that covers:<br>- WEBDL: 2160p",
-  "group": 3,
+  "trash_id": "dfa5eaae7894077ad6449169b6eb03e0",
+  "name": "WEB-2160p (Alternative)",
+  "trash_description": "Quality Profile that covers:<br>- SDTV, DVD<br>- HDTV 720p, 1080p<br>- WEBDL: 480p, 720, 1080p, 2160p<br>- Bluray 480p, 576p, 720p, 1080p, 2160p",
+  "group": 4,
   "upgradeAllowed": true,
   "cutoff": "WEB 2160p",
   "minFormatScore": 0,
@@ -10,34 +10,34 @@
   "minUpgradeFormatScore": 1,
   "items": [
     { "name": "Unknown", "allowed": false },
-    { "name": "SDTV", "allowed": false },
-    {
-      "name": "WEB 480p",
-      "allowed": false,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "DVD", "allowed": false },
-    { "name": "Bluray-480p", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
-    { "name": "HDTV-1080p", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
-    {
-      "name": "WEB 720p",
-      "allowed": false,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "Bluray-720p", "allowed": false },
-    {
-      "name": "WEB 1080p",
-      "allowed": false,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    },
-    { "name": "Bluray-1080p", "allowed": false },
     { "name": "Bluray-1080p Remux", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
-    { "name": "Bluray-2160p", "allowed": false },
     { "name": "Bluray-2160p Remux", "allowed": false },
+    { "name": "SDTV", "allowed": true },
+    { "name": "DVD", "allowed": true },
+    { "name": "Bluray-480p", "allowed": true },
+    {
+      "name": "WEB 480p",
+      "allowed": true,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
+    { "name": "Bluray-576p", "allowed": true },
+    { "name": "HDTV-720p", "allowed": true },
+    { "name": "Bluray-720p", "allowed": true },
+    {
+      "name": "WEB 720p",
+      "allowed": true,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "HDTV-1080p", "allowed": true },
+    { "name": "Bluray-1080p", "allowed": true },
+    {
+      "name": "WEB 1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
+    { "name": "Bluray-2160p", "allowed": true },
     {
       "name": "WEB 2160p",
       "allowed": true,

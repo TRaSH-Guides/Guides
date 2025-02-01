@@ -8,7 +8,7 @@
   "minFormatScore": 0,
   "cutoffFormatScore": 10000,
   "minUpgradeFormatScore": 1,
-  "language":"Original",
+  "language": "Original",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },

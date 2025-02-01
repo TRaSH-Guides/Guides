@@ -18,6 +18,7 @@
     },
     { "name": "DVD", "allowed": false },
     { "name": "Bluray-480p", "allowed": false },
+    { "name": "Bluray-576p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
