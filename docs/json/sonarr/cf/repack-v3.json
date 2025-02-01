@@ -17,6 +17,15 @@
       "fields": {
         "value": "\\b(repack3)\\b"
       }
+    },
+    {
+      "name": "RealRealProperRepack",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(REAL\\.REAL\\.(PROPER|REPACK))\\b"
+      }
     }
   ]
 }

@@ -32,6 +32,15 @@
       "fields": {
         "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
       }
+    },
+    {
+      "name": "Not Subbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))"
+      }
     }
   ]
 }
