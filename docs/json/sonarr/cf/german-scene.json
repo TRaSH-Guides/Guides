@@ -1,7 +1,7 @@
 {
   "trash_id": "c2eec878fa1989599c226ce4c287d6a7",
   "trash_scores": {
-      "default": 1500
+      "default": 1700
   },
   "name": "German Scene",
   "includeCustomFormatWhenRenaming": false,
@@ -220,6 +220,42 @@
       "required": false,
       "fields": {
         "value": "^(WATCHABLE)$"
+      }
+    },
+    {
+      "name": "OHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OHD)$"
+      }
+    },
+    {
+      "name": "ENCOUNTERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENCOUNTERS)$"
+      }
+    },
+    {
+      "name": "RSG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RSG)$"
+      }
+    },
+    {
+      "name": "TVNATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TVNATiON)$"
       }
     }
   ]

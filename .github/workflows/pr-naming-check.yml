@@ -19,14 +19,14 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const titleRegex = /^(Revert \")?(feat|fix|docs|style|refactor|perf|test|update|build|ci|chore)(\([\w\/-]+\))?:\s.+$/g;
+            const titleRegex = /^(Revert \")?(((feat|fix|chore)\((((radarr|sonarr|starr)(-(german|french|anime))?)|(prowlarr|lidarr|bazarr|hardlinks|downloaders|plex|guide(-sync)?|misc|glossary|gha))\))|(docs|style|refactor|perf|test|update|build|ci)(\([\w\/-]+\))?):\s.+$/;
             const title = context.payload.pull_request.title;
             const isValid = titleRegex.test(title);
             if (!isValid) {
               if ((context.payload.action === 'opened') || (context.payload.action === 'reopened')) {
                 const prNumber = context.payload.pull_request.number;
                 const author = context.payload.pull_request.user.login;
-                const message = `@${author} your pull request title "${context.payload.pull_request.title}" does not conform to our [naming conventions](https://www.conventionalcommits.org/en/v1.0.0/).\n\nPlease update the title to match the pattern: "feat|build|chore|style|fix|update|ci(\\<area\\>): \\<description\\>\n\nYou can check your title at this [regex101 link](https://regex101.com/r/jOZ6kU/1)."`;
+                const message = `@${author} your pull request title "${context.payload.pull_request.title}" does not conform to our [naming conventions](https://www.conventionalcommits.org/en/v1.0.0/).\n\nPlease update the title to match the pattern: "feat|build|chore|style|fix|update|ci(\\<area\\>): \\<description\\>\n\nYou can check your title at this [regex101 link](https://regex101.com/r/StPfFi/2)."`;
                 github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
