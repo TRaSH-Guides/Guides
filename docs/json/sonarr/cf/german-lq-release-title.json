@@ -1,0 +1,19 @@
+{
+  "trash_id": "d80c9f7cd2aad50271f1bd4e53125778",
+  "trash_scores": {
+      "default": -35000
+  },
+  "name": "German LQ (release title)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "TVS iTunesHD",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "([._-])iTunes(?:HD|SD)?\\1.+?-TVS$"
+      }
+    }
+  ]
+}
