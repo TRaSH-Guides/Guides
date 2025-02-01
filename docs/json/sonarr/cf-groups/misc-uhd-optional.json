@@ -47,6 +47,7 @@
   "quality_profiles": {
     "exclude": {
       "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
       "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
       "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc"
     }
