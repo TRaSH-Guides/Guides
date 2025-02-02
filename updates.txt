@@ -1,3 +1,18 @@
+# 2025-02-02 01:25
+- [feat(guide-sync): Add Quality Profiles for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2192)
+- [feat(starr-german): [NEW] CF: `German LQ (Release Title)`, Added: `Real.Proper` to repack CFs, and some other guide improvements](https://github.com/TRaSH-Guides/Guides/pull/2248)
+- [feat(starr-anime): Add DemiHuman to Anime BD Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2249)
+- [feat(starr-anime): Add MALD and Half-Baked to Anime Web Tier 2](https://github.com/TRaSH-Guides/Guides/pull/2247)
+- [fix(gha): update regex link for pr naming validation](https://github.com/TRaSH-Guides/Guides/pull/)
+- [feat(radarr): Add new Sing-Along Versions custom format](https://github.com/TRaSH-Guides/Guides/pull/2246)
+- [feat(Starr): Add BYNDR to WEB Tier 03](https://github.com/TRaSH-Guides/Guides/pull/2245)
+- [feat(starr-german): German Tier update](https://github.com/TRaSH-Guides/Guides/pull/2228)
+- [feat(gha): update pr naming check regex](https://github.com/TRaSH-Guides/Guides/pull/2239)
+- [style(radarr): table formatting](https://github.com/TRaSH-Guides/Guides/pull/2244)
+- [fix(Starr): Fix HDR10 regex to correctly exclude +/Plus](https://github.com/TRaSH-Guides/Guides/pull/2240)
+- [feat(Radarr): Add new Black and White Editions custom format](https://github.com/TRaSH-Guides/Guides/pull/2241)
+- [fix(starr-german): set german score for the scene CF to 0 and explain it in the german guide](https://github.com/TRaSH-Guides/Guides/pull/2238)
+
 # 2025-01-26 01:24
 - [feat(starr): Added Custom Format to boost 720p, 1080p and/or 2160p releases](https://github.com/TRaSH-Guides/Guides/pull/2237)
 - [chore(backend): Added PR naming information to the CONTRIBUTING.md](https://github.com/TRaSH-Guides/Guides/pull/2236)
