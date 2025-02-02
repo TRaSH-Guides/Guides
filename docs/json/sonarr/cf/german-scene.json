@@ -257,6 +257,33 @@
       "fields": {
         "value": "^(TVNATiON)$"
       }
+    },
+    {
+      "name": "FENDT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FENDT)$"
+      }
+    },
+    {
+      "name": "ACED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ACED)$"
+      }
+    },
+    {
+      "name": "FKKTV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FKKTV)$"
+      }
     }
   ]
 }
