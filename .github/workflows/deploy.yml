@@ -24,7 +24,7 @@ jobs:
             includes
             overrides
       - name: Setup python
-        uses: actions/setup-python@v5.3.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: 3.x
       - name: Get pip cache directory
@@ -64,7 +64,7 @@ jobs:
             includes
             overrides
       - name: Setup python
-        uses: actions/setup-python@v5.3.0
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: 3.x
       - name: Get pip cache directory
