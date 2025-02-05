@@ -5,6 +5,7 @@
     | ----------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------: | --------------------------------------------------------- |
     | [{{ sonarr['cf']['br-disk']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#br-disk)                                 |         {{ sonarr['cf']['br-disk']['trash_scores']['german'] }}          | {{ sonarr['cf']['br-disk']['trash_id'] }}                 |
     | [{{ sonarr['cf']['lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq)                                           |            {{ sonarr['cf']['lq']['trash_scores']['german'] }}            | {{ sonarr['cf']['lq']['trash_id'] }}                      |
+    | [{{ sonarr['cf']['lq-release-title']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#lq-release-title)               |     {{ sonarr['cf']['lq-release-title']['trash_scores']['german'] }}     | {{ sonarr['cf']['lq-release-title']['trash_id'] }}        |
     | [{{ sonarr['cf']['german-lq']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#german-lq)                             |        {{ sonarr['cf']['german-lq']['trash_scores']['default'] }}        | {{ sonarr['cf']['german-lq']['trash_id'] }}               |
     | [{{ sonarr['cf']['german-lq-release-title']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#german-lq-release-title) | {{ sonarr['cf']['german-lq-release-title']['trash_scores']['default'] }} | {{ sonarr['cf']['german-lq-release-title']['trash_id'] }} |
     | [{{ sonarr['cf']['german-microsized']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#german-microsized)             |    {{ sonarr['cf']['german-microsized']['trash_scores']['default'] }}    | {{ sonarr['cf']['german-microsized']['trash_id'] }}       |
@@ -19,6 +20,7 @@
 
     - **{{ sonarr['cf']['br-disk']['name'] }}:** This is a custom format to help Sonarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
     - **{{ sonarr['cf']['lq']['name'] }}:** A collection of known Low Quality groups that are often banned from the the top trackers because the lack of quality or other reasons.
+    - **{{ sonarr['cf']['lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
     - **{{ sonarr['cf']['german-lq']['name'] }}:** A collection of known Low Quality German groups that are often banned from the the top trackers because the lack of quality or other reasons.
     - **{{ radarr['cf']['german-lq-release-title']['name'] }}:** A collection of terms seen in the titles of low-quality releases that are not captured by using a release group name.
     - **{{ sonarr['cf']['german-microsized']['name'] }}:** A collection of German groups producing low quality micro-sized releases.
