@@ -85,3 +85,18 @@ td {
   border-radius:0rem;
   padding:.625em 2.2em;
 }
+
+[data-md-component="announce"] {
+  position: sticky;
+  inset-inline: 0;
+  top: 0;
+  z-index: 5;
+  display: block;
+}
+.md-banner {
+  background-color: #f44336;
+  color: #ffffff;
+}
+[data-md-component="announce"] .md-banner__inner {
+  display: none;
+}

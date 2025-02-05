@@ -31,6 +31,9 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/github-permalink-style.css
 
+extra_javascript:
+  - js/hide_announce.js
+
 markdown_extensions:
   - abbr # used for Tooltips
   - attr_list
