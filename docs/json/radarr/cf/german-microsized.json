@@ -32,6 +32,15 @@
       "fields": {
         "value": "^(GTF)$"
       }
+    },
+    {
+      "name": "JellyfinPlex",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(JellyfinPlex)$"
+      }
     }
   ]
 }

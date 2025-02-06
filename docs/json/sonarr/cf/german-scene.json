@@ -302,6 +302,24 @@
       "fields": {
         "value": "^(OCA)$"
       }
+    },
+    {
+      "name": "RIPLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RIPLEY)$"
+      }
+    },
+    {
+      "name": "GTVG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTVG)$"
+      }
     }
   ]
 }
