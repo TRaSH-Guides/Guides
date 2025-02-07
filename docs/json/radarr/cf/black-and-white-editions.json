@@ -12,7 +12,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome))))\\b(?!$)"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b((B(lack)?[ ._-]?(out|(and|[n&])[ ._-]?(W(hite)?|Chrome))))\\b(?!$)"
       }
     },
     {
@@ -21,7 +21,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Monochrome)\\b(?!$)"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Monochrome)\\b(?!$)"
       }
     },
     {
@@ -39,7 +39,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Shush[ ._-]?Cut)\\b(?!$)"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Shush[ ._-]?Cut)\\b(?!$)"
       }
     },
     {
@@ -48,7 +48,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b((No|Minus)[ ._-]?Colou?r)\\b(?!$)"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b((No|Minus)[ ._-]?Colou?r)\\b(?!$)"
       }
     },
     {
@@ -66,7 +66,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)"
+        "value": "(?<=\\b[12]\\d{3}\\b).*\\b(Darkness?[ ._-]?(and|&)[ ._-]?(Light))\\b(?!$)"
       }
     }
   ]
