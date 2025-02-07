@@ -46,8 +46,12 @@ Here you will find officially supported third-party party Guide Sync Tools. Thes
 
 ## Misc
 
+{! include-markdown "../includes/misc/misc-available-guides.md" !}
+
 ## Glossary
 
 This glossary provides definitions and explanations of commonly used terms, abbreviations, and phrases.
+
+[LINK](/Glossary/)
 
 --8<-- "includes/support.md"
