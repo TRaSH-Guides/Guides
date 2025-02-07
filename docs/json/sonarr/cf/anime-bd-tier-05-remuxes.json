@@ -43,15 +43,6 @@
       }
     },
     {
-      "name": "CRUCiBLE",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(CRUCiBLE)\\b"
-      }
-    },
-    {
       "name": "D4C",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
