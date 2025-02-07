@@ -50,7 +50,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(kazuizui)\\b"
+        "value": "\\b(kazui(zui)?)\\b"
       }
     },
     {
