@@ -21,6 +21,7 @@ jobs:
     if: github.event.repository.fork == false
     outputs:
       url: ${{ steps.cloudflare.outputs.deployment-url }}
+      branch_url: ${{ steps.cloudflare.outputs.pages-deployment-alias-url }}
       pr_number: ${{ steps.pr_info.outputs.pr_number }}
       pr_sha: ${{ steps.pr_info.outputs.pr_sha }}
     steps:
@@ -100,18 +101,18 @@ jobs:
 
       - name: Get PR last commit SHA
         run: |
-          PR_DATA=$(curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+          PR_DATA=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                   -H "Accept: application/vnd.github.v3+json" \
                   "https://api.github.com/repos/${{ github.repository }}/pulls/${{ needs.build.outputs.pr_number }}")
           LAST_COMMIT_SHA=$(echo "$PR_DATA" | jq -r .head.sha)
           echo "LAST_COMMIT_SHA=$LAST_COMMIT_SHA" >> $GITHUB_ENV
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Comment PR
         run: |
           PREVIEW_URL=${{ needs.build.outputs.url }}
-          BRANCH_PREVIEW_URL="https://pr-${{ needs.build.outputs.pr_number }}.trash-guides.pages.dev"
+          BRANCH_PREVIEW_URL=${{ needs.build.outputs.branch_url }}
           BUILD_STATUS=${{ needs.build.result }}
 
           if [ "$BUILD_STATUS" == "success" ]; then
