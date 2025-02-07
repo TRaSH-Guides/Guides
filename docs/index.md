@@ -38,6 +38,8 @@ The following guides are available
 
 ## Plex
 
+{! include-markdown "../includes/plex/plex-available-guides.md" !}
+
 ## Guide Sync
 
 Here you will find officially supported third-party party Guide Sync Tools. These tools follow the Guide guidelines.
