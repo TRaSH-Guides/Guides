@@ -34,6 +34,8 @@ The following guides are available
 
 ## Bazarr
 
+{! include-markdown "../includes/bazarr/bazarr-available-guides.md" !}
+
 ## File and Folder Structure
 
 ## Downloaders
