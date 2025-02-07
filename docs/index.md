@@ -30,6 +30,8 @@ The following guides are available
 
 ## Lidarr
 
+{! include-markdown "../includes/lidarr/lidarr-available-guides.md" !}
+
 ## Bazarr
 
 ## File and Folder Structure
@@ -44,6 +46,8 @@ The following guides are available
 
 Here you will find officially supported third-party party Guide Sync Tools. These tools follow the Guide guidelines.
 
+[LINK](/Guide-Sync/){:target="\_blank" rel="noopener noreferrer"}
+
 ## Misc
 
 {! include-markdown "../includes/misc/misc-available-guides.md" !}
@@ -52,6 +56,6 @@ Here you will find officially supported third-party party Guide Sync Tools. Thes
 
 This glossary provides definitions and explanations of commonly used terms, abbreviations, and phrases.
 
-[LINK](/Glossary/)
+[LINK](/Glossary/){:target="\_blank" rel="noopener noreferrer"}
 
 --8<-- "includes/support.md"
