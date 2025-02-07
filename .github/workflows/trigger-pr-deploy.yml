@@ -1,0 +1,28 @@
+name: Trigger PR Build
+
+on:
+  pull_request:
+
+concurrency:
+  group: pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
+    steps:
+      - name: Save PR info
+        run: |
+          mkdir -p ./pr_info
+          echo ${{ github.event.pull_request.number }} > ./pr_info/PR_NUMBER
+          echo ${{ github.event.pull_request.head.sha }} > ./pr_info/PR_SHA
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pr_info
+          path: pr_info/
