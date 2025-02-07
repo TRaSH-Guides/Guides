@@ -42,6 +42,18 @@ The following guides are available
 
 ## Downloaders
 
+- [NZBGet Guides](/Downloaders/NZBGet/){:target="\_blank" rel="noopener noreferrer"}
+    {! include-markdown "../includes/downloaders/nzbget-available-guides.md" !}
+
+- [SABnzbd Guides](/Downloaders/SABnzbd/){:target="\_blank" rel="noopener noreferrer"}
+    {! include-markdown "../includes/downloaders/sabnzbd-available-guides.md" !}
+
+- [qBittorrent Guides](/Downloaders/qBittorrent/){:target="\_blank" rel="noopener noreferrer"}
+    {! include-markdown "../includes/downloaders/qbittorrent-available-guides.md" !}
+
+- [Deluge Guides](/Downloaders/Deluge/){:target="\_blank" rel="noopener noreferrer"}
+    {! include-markdown "../includes/downloaders/deluge-available-guides.md" !}
+
 ## Plex
 
 {! include-markdown "../includes/plex/plex-available-guides.md" !}
