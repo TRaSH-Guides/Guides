@@ -36,7 +36,9 @@ The following guides are available
 
 {! include-markdown "../includes/bazarr/bazarr-available-guides.md" !}
 
-## File and Folder Structure
+## File and Folder Structure (Hardlinks)
+
+{! include-markdown "../includes/file-and-folder-structure/fafs-available-guides.md" !}
 
 ## Downloaders
 
