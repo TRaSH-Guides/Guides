@@ -22,7 +22,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[eztv([ ._-]re)?\\]"
+        "value": "\\[eztvx?[ ._-]?(io|re|to)?\\]"
       }
     },
     {
