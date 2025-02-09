@@ -207,64 +207,64 @@ The quality-profiles hold the basic quality profile settings that you also see i
 
 ```json
 {
-  "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
-  "name": "HD Bluray + WEB",
-  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
-  "group": 1,
-  "upgradeAllowed": true,
-  "cutoff": "Bluray-1080p",
-  "minFormatScore": 0,
-  "cutoffFormatScore": 10000,
-  "minUpgradeFormatScore": 1,
-  "language": "Original",
-  "items": [
-    { "name": "Unknown", "allowed": false },
-    { "name": "WORKPRINT", "allowed": false },
-    { "name": "CAM", "allowed": false },
-    { "name": "TELESYNC", "allowed": false },
-    { "name": "TELECINE", "allowed": false },
-    { "name": "REGIONAL", "allowed": false },
-    { "name": "DVDSCR", "allowed": false },
-    { "name": "SDTV", "allowed": false },
-    { "name": "DVD", "allowed": false },
-    { "name": "DVD-R", "allowed": false },
-    {
-      "name": "WEB 480p",
-      "allowed": false,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "Bluray-480p", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
-    {
-      "name": "WEB 720p",
-      "allowed": false,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    {
-      "name": "WEB 2160p",
-      "allowed": false,
-      "items": ["WEBDL-2160p", "WEBRip-2160p"]
-    },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "Remux-2160p", "allowed": false },
-    { "name": "BR-DISK", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
-    { "name": "Bluray-720p", "allowed": true },
-    {
-      "name": "WEB 1080p",
-      "allowed": true,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    },
-    { "name": "Bluray-1080p", "allowed": true }
-  ],
-  "formatItems": {
-    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
-    "STAN": "c2863d2a50c9acad1fb50e53ece60817"
-  }
+    "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
+    "name": "HD Bluray + WEB",
+    "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
+    "group": 1,
+    "upgradeAllowed": true,
+    "cutoff": "Bluray-1080p",
+    "minFormatScore": 0,
+    "cutoffFormatScore": 10000,
+    "minUpgradeFormatScore": 1,
+    "language": "Original",
+    "items": [
+      { "name": "Unknown", "allowed": false },
+      { "name": "WORKPRINT", "allowed": false },
+      { "name": "CAM", "allowed": false },
+      { "name": "TELESYNC", "allowed": false },
+      { "name": "TELECINE", "allowed": false },
+      { "name": "REGIONAL", "allowed": false },
+      { "name": "DVDSCR", "allowed": false },
+      { "name": "SDTV", "allowed": false },
+      { "name": "DVD", "allowed": false },
+      { "name": "DVD-R", "allowed": false },
+      {
+        "name": "WEB 480p",
+        "allowed": false,
+        "items": ["WEBDL-480p", "WEBRip-480p"]
+      },
+      { "name": "Bluray-480p", "allowed": false },
+      { "name": "Bluray-576p", "allowed": false },
+      { "name": "HDTV-720p", "allowed": false },
+      {
+        "name": "WEB 720p",
+        "allowed": false,
+        "items": ["WEBDL-720p", "WEBRip-720p"]
+      },
+      { "name": "HDTV-1080p", "allowed": false },
+      { "name": "Remux-1080p", "allowed": false },
+      { "name": "HDTV-2160p", "allowed": false },
+      {
+        "name": "WEB 2160p",
+        "allowed": false,
+        "items": ["WEBDL-2160p", "WEBRip-2160p"]
+      },
+      { "name": "Bluray-2160p", "allowed": false },
+      { "name": "Remux-2160p", "allowed": false },
+      { "name": "BR-DISK", "allowed": false },
+      { "name": "Raw-HD", "allowed": false },
+      { "name": "Bluray-720p", "allowed": true },
+      {
+        "name": "WEB 1080p",
+        "allowed": true,
+        "items": ["WEBDL-1080p", "WEBRip-1080p"]
+      },
+      { "name": "Bluray-1080p", "allowed": true }
+    ],
+    "formatItems": {
+      "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
+      "STAN": "c2863d2a50c9acad1fb50e53ece60817"
+    }
 }
 ```
 
