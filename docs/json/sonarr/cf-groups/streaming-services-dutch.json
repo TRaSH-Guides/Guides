@@ -6,12 +6,12 @@
     {
       "name": "NLZ",
       "trash_id": "b2b980877494b560443631eb1f473867",
-      "required": false
+      "required": true
     },
     {
       "name": "VDL",
       "trash_id": "5d2317d99af813b6529c7ebf01c83533",
-      "required": false
+      "required": true
     }
   ]
 }

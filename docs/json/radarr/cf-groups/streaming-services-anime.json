@@ -6,7 +6,7 @@
     {
       "name": "VRV",
       "trash_id": "996e8ce50025e8b1e8fa95fcb28c4e5a",
-      "required": false
+      "required": true
     }
   ],
   "quality_profiles": {

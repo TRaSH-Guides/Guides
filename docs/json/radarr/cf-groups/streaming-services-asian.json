@@ -6,32 +6,32 @@
     {
       "name": "FOD",
       "trash_id": "917d1f2c845b2b466036b0cc2d7c72a3",
-      "required": false
+      "required": true
     },
     {
       "name": "HTSR",
       "trash_id": "834b2c0ba0a8596029b4479a29e1a032",
-      "required": false
+      "required": true
     },
     {
       "name": "TVer",
       "trash_id": "f1b0bae9bc222dab32c1b38b5a7a1088",
-      "required": false
+      "required": true
     },
     {
       "name": "TVING",
       "trash_id": "26df36e3d2a96de2f8b7166ae37d3c33",
-      "required": false
+      "required": true
     },
     {
       "name": "U-NEXT",
       "trash_id": "279bda7434fd9075786de274e6c3c202",
-      "required": false
+      "required": true
     },
     {
       "name": "VIU",
       "trash_id": "1b355ff093fd1064b75ea98c616881b1",
-      "required": false
+      "required": true
     }
   ]
 }
