@@ -291,22 +291,27 @@ The quality-profiles hold the basic quality profile settings that you also see i
 
 ### cf-groups explanation
 
-The cf-groups can hold several Custom Formats.  
+The cf-groups can hold several Custom Formats.
 Depending on the chosen profile, the end user gets a selection of groups where certain groups are enabled by default with certain Custom Formats or some groups holding Custom Formats that the end user can choose if they want to have it enabled or disabled.
 
 The cf-group.json exists of two properties.
+
 - Green is the group properties.
 - Blue is the Custom Format properties.
 
 ![image](https://github.com/user-attachments/assets/0776b71e-ff55-4d36-aea2-fb7034e64477)
 
+### Group Specific settings
+
 > [!note]
-> **Group Specific settings**
+>
 > - All Groups are optional and by default disabled. The user can enable or disable the group (If the CF should always be enabled, put it in the [quality profile](#quality-profiles-explanation))
 > - If you want the group to be enabled by default, add `"default": "true",` above `"custom_formats": [`. (If the group does not have to be enabled by default, there is no need to add `"default": "false",`)
 
+### Group Custom Format specific settings
+
 > [!note]
-> **Group Custom Format specific settings**
+>
 > - `required: true` => If the group is enabled, all the CF in that group are enabled, but the end user can still disable the full group (no individual choosing possible).
 > - `required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are not checked by default.
 > - `default: true`/`required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are checked by default.
@@ -314,6 +319,7 @@ The cf-group.json exists of two properties.
 More will follow
 
 ---
+
 ## Recommendations
 
 Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
