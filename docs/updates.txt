@@ -1,3 +1,13 @@
+# 2025-02-09 01:26
+- [fix(sonarr-french): CF on FR Anime Tier 3 (kazuizui)](https://github.com/TRaSH-Guides/Guides/pull/2261)
+- [feat(starr-german): add LQ (release title) CF to the german guide](https://github.com/TRaSH-Guides/Guides/pull/2254)
+- [feat(starr): Add `EZTVx.to`, `eztv.io`, (etc.) to the Retags Custom Format](https://github.com/TRaSH-Guides/Guides/pull/2264)
+- [ci(gha): fix PR building comment isses](https://github.com/TRaSH-Guides/Guides/pull/2262)
+- [feat(starr-anime): Add SoM to Anime Web Tier 1, move CRUCiBLE to Anime BD Tier 3](https://github.com/TRaSH-Guides/Guides/pull/2260)
+- [feat(radarr): Only match B&W edition after year](https://github.com/TRaSH-Guides/Guides/pull/2259)
+- [feat(gha): Cloudflare Pages and PR builds with comments](https://github.com/TRaSH-Guides/Guides/pull/2256)
+- [fix(guide-sync): Add HD audio formats for the remux profiles](https://github.com/TRaSH-Guides/Guides/pull/2255)
+
 # 2025-02-02 01:25
 - [feat(guide-sync): Add Quality Profiles for the 3rd party sync apps](https://github.com/TRaSH-Guides/Guides/pull/2192)
 - [feat(starr-german): [NEW] CF: `German LQ (Release Title)`, Added: `Real.Proper` to repack CFs, and some other guide improvements](https://github.com/TRaSH-Guides/Guides/pull/2248)
