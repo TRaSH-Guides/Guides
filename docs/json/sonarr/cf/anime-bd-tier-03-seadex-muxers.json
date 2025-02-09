@@ -84,7 +84,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(CRUCiBLE)\\b"
+        "value": "\\[CRUCiBLE\\]|-CRUCiBLE\\b"
       }
     },
     {
