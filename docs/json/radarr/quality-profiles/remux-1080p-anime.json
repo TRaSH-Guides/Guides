@@ -1,0 +1,84 @@
+{
+  "trash_id": "722b624f9af1e492284c4bc842153a38",
+  "name": "Remux-1080p - Anime",
+  "trash_description": "Quality Profile that covers:<br>- Remux: 1080p for Anime",
+  "group": 1,
+  "upgradeAllowed": true,
+  "cutoff": "Bluray-1080p",
+  "minFormatScore": 100,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "items": [
+    { "name": "Unknown", "allowed": false },
+    { "name": "HDTV-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "Bluray-2160p", "allowed": false },
+    { "name": "Remux-2160p", "allowed": false },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "SDTV", "allowed": true },
+    { "name": "DVD", "allowed": true },
+    {
+      "name": "WEB 480p",
+      "allowed": true,
+      "items": ["WEBRip-480p", "WEBDL-480p"]
+    },
+    { "name": "Bluray-480p", "allowed": true },
+    { "name": "Bluray-576p", "allowed": true },
+    {
+      "name": "WEB 720p",
+      "allowed": true,
+      "items": ["WEBRip-720p", "WEBDL-720p", "HDTV-720p"]
+    },
+    { "name": "Bluray-720p", "allowed": true },
+    {
+      "name": "WEB 1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p", "HDTV-1080p"]
+    },
+    {
+      "name": "Remux-1080p",
+      "allowed": true,
+      "items": ["Bluray-1080p", "Remux-1080p"]
+    }
+  ],
+  "formatItems": {
+    "Anime BD Tier 01 (Top SeaDex Muxers)": "fb3ccc5d5cc8f77c9055d4cb4561dded",
+    "Anime BD Tier 02 (SeaDex Muxers)": "66926c8fa9312bc74ab71bf69aae4f4a",
+    "Anime BD Tier 03 (SeaDex Muxers)": "fa857662bad28d5ff21a6e611869a0ff",
+    "Anime BD Tier 04 (SeaDex Muxers)": "f262f1299d99b1a2263375e8fa2ddbb3",
+    "Anime BD Tier 05 (Remuxes)": "ca864ed93c7b431150cc6748dc34875d",
+    "Anime BD Tier 06 (FanSubs)": "9dce189b960fddf47891b7484ee886ca",
+    "Anime BD Tier 07 (P2P/Scene)": "1ef101b3a82646b40e0cab7fc92cd896",
+    "Anime BD Tier 08 (Mini Encodes)": "6115ccd6640b978234cc47f2c1f2cadc",
+    "Anime Web Tier 01 (Muxers)": "8167cffba4febfb9a6988ef24f274e7e",
+    "Anime Web Tier 02 (Top FanSubs)": "8526c54e36b4962d340fce52ef030e76",
+    "Anime Web Tier 03 (Official Subs)": "de41e72708d2c856fa261094c85e965d",
+    "Anime Web Tier 04 (Official Subs)": "9edaeee9ea3bcd585da9b7c0ac3fc54f",
+    "Anime Web Tier 05 (FanSubs)": "22d953bbe897857b517928f3652b8dd3",
+    "Anime Web Tier 06 (FanSubs)": "a786fbc0eae05afe3bb51aee3c83a9d4",
+    "Remux Tier 01": "3a3ff47579026e76d6504ebea39390de",
+    "Remux Tier 02": "9f98181fe5a3fbeb0cc29340da2a468a",
+    "Remux Tier 03": "8baaf0b3142bf4d94c42a724f034e27a",
+    "WEB Tier 01": "c20f169ef63c5f40c2def54abaf4438e",
+    "WEB Tier 02": "403816d65392c79236dcb6dd591aeda4",
+    "WEB Tier 03": "af94e0fe497124d1f9ce732069ec8c3b",
+    "Anime Raws": "06b6542a47037d1e33b15aa3677c2365",
+    "Anime LQ Groups": "b0fdc5897f68c9a68c70c25169f77447",
+    "Uncensored": "064af5f084a0a24458cc8ecd3220f93f",
+    "v0": "c259005cbaeb5ab44c06eddb4751e70c",
+    "v1": "5f400539421b8fcf71d51e6384434573",
+    "v2": "3df5e6dfef4b09bb6002f732bed5b774",
+    "v3": "db92c27ba606996b146b57fbe6d09186",
+    "v4": "d4e5e842fad129a3c097bdb2d20d31a0",
+    "VRV": "60f6d50cbd3cfc3e9a8c00e3a30c3114",
+    "10bit": "a5d148168c4506b55cf53984107c396e",
+    "Anime Dual Audio": "4a3b087eea2ce012fcc1ce319259a3be",
+    "Dubs Only": "b23eae459cc960816f2d6ba84af45055",
+    "VOSTFR": "9172b2f683f6223e3a1846427b417a3d",
+    "AV1": "cae4ca30163749b891686f95532519bd"
+  }
+}
