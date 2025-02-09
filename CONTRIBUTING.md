@@ -199,10 +199,125 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
 
+### quality-profiles explanation
+
+The quality-profiles hold the basic quality profile settings that you also see in Radarr/Sonarr GUI.
+
+![image](https://github.com/user-attachments/assets/b2d743d8-0f1e-41bd-baa1-7ceaf52c43cc)
+
+```json
+{
+  "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
+  "name": "HD Bluray + WEB",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
+  "group": 1,
+  "upgradeAllowed": true,
+  "cutoff": "Bluray-1080p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "language": "Original",
+  "items": [
+    { "name": "Unknown", "allowed": false },
+    { "name": "WORKPRINT", "allowed": false },
+    { "name": "CAM", "allowed": false },
+    { "name": "TELESYNC", "allowed": false },
+    { "name": "TELECINE", "allowed": false },
+    { "name": "REGIONAL", "allowed": false },
+    { "name": "DVDSCR", "allowed": false },
+    { "name": "SDTV", "allowed": false },
+    { "name": "DVD", "allowed": false },
+    { "name": "DVD-R", "allowed": false },
+    {
+      "name": "WEB 480p",
+      "allowed": false,
+      "items": ["WEBDL-480p", "WEBRip-480p"]
+    },
+    { "name": "Bluray-480p", "allowed": false },
+    { "name": "Bluray-576p", "allowed": false },
+    { "name": "HDTV-720p", "allowed": false },
+    {
+      "name": "WEB 720p",
+      "allowed": false,
+      "items": ["WEBDL-720p", "WEBRip-720p"]
+    },
+    { "name": "HDTV-1080p", "allowed": false },
+    { "name": "Remux-1080p", "allowed": false },
+    { "name": "HDTV-2160p", "allowed": false },
+    {
+      "name": "WEB 2160p",
+      "allowed": false,
+      "items": ["WEBDL-2160p", "WEBRip-2160p"]
+    },
+    { "name": "Bluray-2160p", "allowed": false },
+    { "name": "Remux-2160p", "allowed": false },
+    { "name": "BR-DISK", "allowed": false },
+    { "name": "Raw-HD", "allowed": false },
+    { "name": "Bluray-720p", "allowed": true },
+    {
+      "name": "WEB 1080p",
+      "allowed": true,
+      "items": ["WEBDL-1080p", "WEBRip-1080p"]
+    },
+    { "name": "Bluray-1080p", "allowed": true }
+  ],
+  "formatItems": {
+    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
+    "STAN": "c2863d2a50c9acad1fb50e53ece60817"
+  }
+}
+```
+
+- JSON file name - use the name of the quality profile that you used in the `"name":' in the JSON
+
+> [!CAUTION]
+> JSON file names are always written in lowercase, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+
+- `trash_id` - Generated [HashCode](#hashcode) for the profile name you used for the `"name":' in the JSON
+- `name` - Quality Profile name.
+  - If the profile is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+  - If the profile is for anime, start with `[Anime]` => example: `[Anime] Something`.
+- `trash_description` - Description of what the quality profile covers => example: `Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p`
+  - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+- `group` — Sort order to ensure the quality profiles stay together. The default public guide will always be the first.
+- `upgradeAllowed` - Upgrades Allowed.
+- `cutoff` - Upgrade Until.
+- `minFormatScore` - Minimum Custom Format Score.
+- `cutoffFormatScore` - Upgrade Until Custom Format Score.
+- `minUpgradeFormatScore` - Minimum Custom Format Score Increment.
+- `language` - Language. **(This is only for Radarr)**
+- `items` - Qualities. => The allowed quality sources in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
+- `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups-explanation)
+
+### cf-groups explanation
+
+The cf-groups can hold several Custom Formats.  
+Depending on the chosen profile, the end user gets a selection of groups where certain groups are enabled by default with certain Custom Formats or some groups holding Custom Formats that the end user can choose if they want to have it enabled or disabled.
+
+The cf-group.json exists of two properties.
+- Green is the group properties.
+- Blue is the Custom Format properties.
+
+![image](https://github.com/user-attachments/assets/0776b71e-ff55-4d36-aea2-fb7034e64477)
+
+> [!note]
+> **Group Specific settings**
+> - All Groups are optional and by default disabled. The user can enable or disable the group (If the CF should always be enabled, put it in the [quality profile](#quality-profiles-explanation))
+> - If you want the group to be enabled by default, add `"default": "true",` above `"custom_formats": [`. (If the group does not have to be enabled by default, there is no need to add `"default": "false",`)
+
+> [!note]
+> **Group Custom Format specific settings**
+> - `required: true` => If the group is enabled, all the CF in that group are enabled, but the end user can still disable the full group (no individual choosing possible).
+> - `required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are not checked by default.
+> - `default: true`/`required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are checked by default.
+
+More will follow
+
+---
 ## Recommendations
 
 Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
-based on the `.vscode/extensions.json` file; you should install all of them.
+based on the `.vscode/extensions.json` file, you should install all of them.
 
 ## Preview Docs Locally
 
