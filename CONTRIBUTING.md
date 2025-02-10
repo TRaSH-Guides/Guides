@@ -199,74 +199,14 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
 
-### quality-profiles explanation
+### quality-profiles
 
 The quality-profiles hold the basic quality profile settings that you also see in Radarr/Sonarr GUI.
 
 ![image](https://github.com/user-attachments/assets/b2d743d8-0f1e-41bd-baa1-7ceaf52c43cc)
-<!-- markdownlint-disable -->
-```json
-{
-  "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
-  "name": "HD Bluray + WEB",
-  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
-  "group": 1,
-  "upgradeAllowed": true,
-  "cutoff": "Bluray-1080p",
-  "minFormatScore": 0,
-  "cutoffFormatScore": 10000,
-  "minUpgradeFormatScore": 1,
-  "language": "Original",
-  "items": [
-    { "name": "Unknown", "allowed": false },
-    { "name": "WORKPRINT", "allowed": false },
-    { "name": "CAM", "allowed": false },
-    { "name": "TELESYNC", "allowed": false },
-    { "name": "TELECINE", "allowed": false },
-    { "name": "REGIONAL", "allowed": false },
-    { "name": "DVDSCR", "allowed": false },
-    { "name": "SDTV", "allowed": false },
-    { "name": "DVD", "allowed": false },
-    { "name": "DVD-R", "allowed": false },
-    {
-      "name": "WEB 480p",
-      "allowed": false,
-      "items": ["WEBDL-480p", "WEBRip-480p"]
-    },
-    { "name": "Bluray-480p", "allowed": false },
-    { "name": "Bluray-576p", "allowed": false },
-    { "name": "HDTV-720p", "allowed": false },
-    {
-      "name": "WEB 720p",
-      "allowed": false,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Remux-1080p", "allowed": false },
-    { "name": "HDTV-2160p", "allowed": false },
-    {
-      "name": "WEB 2160p",
-      "allowed": false,
-      "items": ["WEBDL-2160p", "WEBRip-2160p"]
-    },
-    { "name": "Bluray-2160p", "allowed": false },
-    { "name": "Remux-2160p", "allowed": false },
-    { "name": "BR-DISK", "allowed": false },
-    { "name": "Raw-HD", "allowed": false },
-    { "name": "Bluray-720p", "allowed": true },
-    {
-      "name": "WEB 1080p",
-      "allowed": true,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    },
-    { "name": "Bluray-1080p", "allowed": true }
-  ],
-  "formatItems": {
-    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
-    "STAN": "c2863d2a50c9acad1fb50e53ece60817"
-  }
-}
-```
+
+> [!TIP]
+> Use one of the existing quality-profiles.json files as your base.
 
 - JSON file name - use the name of the quality profile that you used in the `"name":' in the JSON
 
@@ -280,6 +220,11 @@ The quality-profiles hold the basic quality profile settings that you also see i
 - `trash_description` - Description of what the quality profile covers => example: `Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p`
   - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
 - `group` — Sort order to ensure the quality profiles stay together. The default public guide will always be the first.
+  - [1-9] English/International Public Guides (None Anime).
+  - [11-19] German Guides (Incl. Anime).
+  - [21-29] French Guides (Incl. Anime).
+  - [81-89] English/International Public Guides (Anime).
+  - [91-99] Restricted Use.
 - `upgradeAllowed` - Upgrades Allowed.
 - `cutoff` - Upgrade Until.
 - `minFormatScore` - Minimum Custom Format Score.
@@ -289,7 +234,7 @@ The quality-profiles hold the basic quality profile settings that you also see i
 - `items` - Qualities. => The allowed quality sources in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
 - `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups-explanation)
 
-### cf-groups explanation
+### cf-groups
 
 The cf-groups can hold several Custom Formats.
 Depending on the chosen profile, the end user gets a selection of groups where certain groups are enabled by default with certain Custom Formats or some groups holding Custom Formats that the end user can choose if they want to have it enabled or disabled.
@@ -301,14 +246,30 @@ The cf-group.json exists of two properties.
 
 ![image](https://github.com/user-attachments/assets/0776b71e-ff55-4d36-aea2-fb7034e64477)
 
-### Group Specific settings
+> [!TIP]
+> Use one of the existing cf-groups.json files as an example.
+
+#### Group Specific settings
 
 > [!note]
 >
 > - All Groups are optional and by default disabled. The user can enable or disable the group (If the CF should always be enabled, put it in the [quality profile](#quality-profiles-explanation))
 > - If you want the group to be enabled by default, add `"default": "true",` above `"custom_formats": [`. (If the group does not have to be enabled by default, there is no need to add `"default": "false",`)
 
-### Group Custom Format specific settings
+- JSON file name - use the name of the quality profile that you used in the `"name":' in the JSON
+
+> [!CAUTION]
+> JSON file names are always written in lowercase, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+
+- `trash_id` - Generated [HashCode](#hashcode) for the group name you used for the `"name":' in the JSON
+- `name` - Group name.
+  - If the group is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+  - If the group is for anime, start with `[Anime]` => example: `[Anime] Something`.
+- `trash_description` - Description of what the group covers => example: `Collection of UK Streaming Services for Radarr`
+  - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+- `default": "true"` - [**OPTIONAL**] If you want the group to be enabled by default.
+
+#### Group Custom Format specific settings
 
 > [!note]
 >
@@ -316,7 +277,13 @@ The cf-group.json exists of two properties.
 > - `required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are not checked by default.
 > - `default: true`/`required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are checked by default.
 
-More will follow
+- `custom_formats` -
+  - `name` - CF name found in the JSON.
+  - `trash_id` - CF trash_id found in the JSON.
+  - `required` - [true|false] See above note for description
+  - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
+- `quality_profiles`
+  - `exclude` - Add the Quality Profiles that you want to exclude from this group, using the quality-profiles `name` and `trash_id`
 
 ---
 
