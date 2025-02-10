@@ -215,16 +215,16 @@ The quality-profiles hold the basic quality profile settings that you also see i
 
 - `trash_id` - Generated [HashCode](#hashcode) for the profile name you used for the `"name":' in the JSON
 - `name` - Quality Profile name.
-  - If the profile is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
-  - If the profile is for anime, start with `[Anime]` => example: `[Anime] Something`.
+    - If the profile is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+    - If the profile is for anime, start with `[Anime]` => example: `[Anime] Something`.
 - `trash_description` - Description of what the quality profile covers => example: `Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p`
-  - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+    - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
 - `group` — Sort order to ensure the quality profiles stay together. The default public guide will always be the first.
-  - [1-9] English/International Public Guides (None Anime).
-  - [11-19] German Guides (Incl. Anime).
-  - [21-29] French Guides (Incl. Anime).
-  - [81-89] English/International Public Guides (Anime).
-  - [91-99] Restricted Use.
+    - [1-9] English/International Public Guides (None Anime).
+    - [11-19] German Guides (Incl. Anime).
+    - [21-29] French Guides (Incl. Anime).
+    - [81-89] English/International Public Guides (Anime).
+    - [91-99] Restricted Use.
 - `upgradeAllowed` - Upgrades Allowed.
 - `cutoff` - Upgrade Until.
 - `minFormatScore` - Minimum Custom Format Score.
@@ -263,10 +263,10 @@ The cf-group.json exists of two properties.
 
 - `trash_id` - Generated [HashCode](#hashcode) for the group name you used for the `"name":' in the JSON
 - `name` - Group name.
-  - If the group is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
-  - If the group is for anime, start with `[Anime]` => example: `[Anime] Something`.
+    - If the group is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+    - If the group is for anime, start with `[Anime]` => example: `[Anime] Something`.
 - `trash_description` - Description of what the group covers => example: `Collection of UK Streaming Services for Radarr`
-  - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+    - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
 - `default": "true"` - [**OPTIONAL**] If you want the group to be enabled by default.
 
 #### Group Custom Format specific settings
@@ -278,12 +278,12 @@ The cf-group.json exists of two properties.
 > - `default: true`/`required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are checked by default.
 
 - `custom_formats` -
-  - `name` - CF name found in the JSON.
-  - `trash_id` - CF trash_id found in the JSON.
-  - `required` - [true|false] See above note for description
-  - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
+    - `name` - CF name found in the JSON.
+    - `trash_id` - CF trash_id found in the JSON.
+    - `required` - [true|false] See above note for description
+    - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
 - `quality_profiles`
-  - `exclude` - Add the Quality Profiles that you want to exclude from this group, using the quality-profiles `name` and `trash_id`
+    - `exclude` - Add the Quality Profiles that you want to exclude from this group, using the quality-profiles `name` and `trash_id`
 
 ---
 
