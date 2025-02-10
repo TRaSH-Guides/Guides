@@ -199,10 +199,98 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 - `docs/json/xxxarr/quality-profiles` = The base quality profile with all the mandatory Custom Formats.
 - `docs/json/xxxarr/cf-groups` = The optional/User choices that wouldn't break the Quality Profile.
 
+### quality-profiles
+
+The quality-profiles hold the basic quality profile settings that you also see in Radarr/Sonarr GUI.
+
+![image](https://github.com/user-attachments/assets/b2d743d8-0f1e-41bd-baa1-7ceaf52c43cc)
+
+> [!TIP]
+> Use one of the existing quality-profiles.json files as your base.
+
+- JSON file name - use the name of the quality profile that you used in the `"name":' in the JSON
+
+> [!CAUTION]
+> JSON file names are always written in lowercase, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+
+- `trash_id` - Generated [HashCode](#hashcode) for the profile name you used for the `"name":' in the JSON
+- `name` - Quality Profile name.
+    - If the profile is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+    - If the profile is for anime, start with `[Anime]` => example: `[Anime] Something`.
+- `trash_description` - Description of what the quality profile covers => example: `Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p`
+    - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+- `group` — Sort order to ensure the quality profiles stay together. The default public guide will always be the first.
+    - [1-9] English/International Public Guides (None Anime).
+    - [11-19] German Guides (Incl. Anime).
+    - [21-29] French Guides (Incl. Anime).
+    - [81-89] English/International Public Guides (Anime).
+    - [91-99] Restricted Use.
+- `upgradeAllowed` - Upgrades Allowed.
+- `cutoff` - Upgrade Until.
+- `minFormatScore` - Minimum Custom Format Score.
+- `cutoffFormatScore` - Upgrade Until Custom Format Score.
+- `minUpgradeFormatScore` - Minimum Custom Format Score Increment.
+- `language` - Language. **(This is only for Radarr)**
+- `items` - Qualities. => The allowed quality sources in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
+- `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups-explanation)
+
+### cf-groups
+
+The cf-groups can hold several Custom Formats.
+Depending on the chosen profile, the end user gets a selection of groups where certain groups are enabled by default with certain Custom Formats or some groups holding Custom Formats that the end user can choose if they want to have it enabled or disabled.
+
+The cf-group.json exists of two properties.
+
+- Green is the group properties.
+- Blue is the Custom Format properties.
+
+![image](https://github.com/user-attachments/assets/0776b71e-ff55-4d36-aea2-fb7034e64477)
+
+> [!TIP]
+> Use one of the existing cf-groups.json files as an example.
+
+#### Group Specific settings
+
+> [!note]
+>
+> - All Groups are optional and by default disabled. The user can enable or disable the group (If the CF should always be enabled, put it in the [quality profile](#quality-profiles-explanation))
+> - If you want the group to be enabled by default, add `"default": "true",` above `"custom_formats": [`. (If the group does not have to be enabled by default, there is no need to add `"default": "false",`)
+
+- JSON file name - use the name of the quality profile that you used in the `"name":' in the JSON
+
+> [!CAUTION]
+> JSON file names are always written in lowercase, spaces are replaced by a dash, and no spaces or special characters except a dash :bangbang:
+
+- `trash_id` - Generated [HashCode](#hashcode) for the group name you used for the `"name":' in the JSON
+- `name` - Group name.
+    - If the group is for a foreign language, start with `[Language]` => example: `[German] HD Bluray + WEB`.
+    - If the group is for anime, start with `[Anime]` => example: `[Anime] Something`.
+- `trash_description` - Description of what the group covers => example: `Collection of UK Streaming Services for Radarr`
+    - The following HTML code is allowed in the description: `<b>`, `</b>`, `<br>` and `<a href="link-here" target="_blank">text-here</a>`.
+- `default": "true"` - [**OPTIONAL**] If you want the group to be enabled by default.
+
+#### Group Custom Format specific settings
+
+> [!note]
+>
+> - `required: true` => If the group is enabled, all the CF in that group are enabled, but the end user can still disable the full group (no individual choosing possible).
+> - `required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are not checked by default.
+> - `default: true`/`required: false` => If the group is enabled, the end user can choose which CF he wants to be added individually, and they are checked by default.
+
+- `custom_formats` -
+    - `name` - CF name found in the JSON.
+    - `trash_id` - CF trash_id found in the JSON.
+    - `required` - [true|false] See above note for description
+    - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
+- `quality_profiles`
+    - `exclude` - Add the Quality Profiles that you want to exclude from this group, using the quality-profiles `name` and `trash_id`
+
+---
+
 ## Recommendations
 
 Use [VSCode](https://code.visualstudio.com/) for editing. VS Code should recommend extensions to you
-based on the `.vscode/extensions.json` file; you should install all of them.
+based on the `.vscode/extensions.json` file, you should install all of them.
 
 ## Preview Docs Locally
 
