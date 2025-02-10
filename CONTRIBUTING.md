@@ -207,17 +207,17 @@ The quality-profiles hold the basic quality profile settings that you also see i
 
 ```json
 {
-    "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
-    "name": "HD Bluray + WEB",
-    "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
-    "group": 1,
-    "upgradeAllowed": true,
-    "cutoff": "Bluray-1080p",
-    "minFormatScore": 0,
-    "cutoffFormatScore": 10000,
-    "minUpgradeFormatScore": 1,
-    "language": "Original",
-    "items": [
+  "trash_id": "d1d67249d3890e49bc12e275d989a7e9",
+  "name": "HD Bluray + WEB",
+  "trash_description": "Quality Profile that covers:<br>- WEBDL: 1080p<br>- Bluray: 720p, 1080p",
+  "group": 1,
+  "upgradeAllowed": true,
+  "cutoff": "Bluray-1080p",
+  "minFormatScore": 0,
+  "cutoffFormatScore": 10000,
+  "minUpgradeFormatScore": 1,
+  "language": "Original",
+  "items": [
       { "name": "Unknown", "allowed": false },
       { "name": "WORKPRINT", "allowed": false },
       { "name": "CAM", "allowed": false },
@@ -260,11 +260,42 @@ The quality-profiles hold the basic quality profile settings that you also see i
         "items": ["WEBDL-1080p", "WEBRip-1080p"]
       },
       { "name": "Bluray-1080p", "allowed": true }
-    ],
-    "formatItems": {
-      "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
-      "STAN": "c2863d2a50c9acad1fb50e53ece60817"
-    }
+  ],
+  "formatItems": {
+    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
+    "HD Bluray Tier 02": "c20c8647f2746a1f4c4262b0fbbeeeae",
+    "HD Bluray Tier 03": "5608c71bcebba0a5e666223bae8c9227",
+    "WEB Tier 01": "c20f169ef63c5f40c2def54abaf4438e",
+    "WEB Tier 02": "403816d65392c79236dcb6dd591aeda4",
+    "WEB Tier 03": "af94e0fe497124d1f9ce732069ec8c3b",
+    "Repack/Proper": "e7718d7a3ce595f289bfee26adc178f5",
+    "Repack2": "ae43b294509409a6a13919dedd4764c4",
+    "Repack3": "5caaaa1c08c1742aa4342d8c4cc463f2",
+    "BR-DISK": "ed38b889b31be83fda192888e2286d83",
+    "Generated Dynamic HDR": "e6886871085226c3da1830830146846c",
+    "LQ": "90a6f9a284dff5103f6346090e6280c8",
+    "LQ (Release Title)": "e204b80c87be9497a8a6eaff48f72905",
+    "x265 (HD)": "dc98083864ea246d05a42df0d05f81cc",
+    "3D": "b8cd450cbfa689c0259a01d9e29ba3d6",
+    "Extras": "0a3f082873eb454bde444150b70253cc",
+    "Sing-Along Versions": "712d74cd88bceb883ee32f773656b1f5",
+    "AV1": "cae4ca30163749b891686f95532519bd",
+    "AMZN": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "ATVP": "40e9380490e748672c2522eaaeb692f7",
+    "BCORE": "cc5e51a9e85a6296ceefe097a77f12f4",
+    "CRiT": "16622a6911d1ab5d5b8b713d5b0036d4",
+    "DSNP": "84272245b2988854bfb76a16e60baea5",
+    "HBO": "509e5f41146e278f9eab1ddaceb34515",
+    "HMAX": "5763d1b0ce84aff3b21038eea8e9b8ad",
+    "Hulu": "526d445d4c16214309f0fd2b3be18a89",
+    "iT": "e0ec9672be6cac914ffad34a6b077209",
+    "MA": "2a6039655313bf5dab1e43523b62c374",
+    "MAX": "6a061313d22e51e0f25b7cd4dc065233",
+    "NF": "170b1d363bd8516fbf3a3eb05d4faff6",
+    "PCOK": "c9fd353f8f5f1baf56dc601c4cb29920",
+    "PMTP": "e36a0ba1bc902b26ee40818a1d59b8bd",
+    "STAN": "c2863d2a50c9acad1fb50e53ece60817"
+  }
 }
 ```
 
