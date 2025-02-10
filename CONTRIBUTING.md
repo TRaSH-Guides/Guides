@@ -20,7 +20,7 @@ These are mostly guidelines, not rules. Use your best judgment, and feel free to
 - **feat/xxx** Commits that adds a new feature
 - **fix/xxx** Commits that fixes a bug/issue
 - **style/xxx** Commits that do not affect the meaning (white-space, formatting, missing semi-colons, grammar, etc.)
-- **chore/xxx** Miscellaneous commits (administrative, cleanup, backend, etc)
+- **chore/xxx** Miscellaneous commits (administrative, cleanup, backend, etc.)
 
 > [!note]
 > Where `xxx` can stand for the main [Guide Categories](#guide-categories) in the guide.
@@ -153,7 +153,7 @@ When adding a regex test case:
 - Replace the actual Series name/title with `Series`.
 - Replace the actual group name with `RlsGrp`
 
-When updating or adding a new CF, the test case URL (`trash_regex`) needs to be prepended to the exported from Starr JSON
+When updating or adding a new CF, the test case URL (`trash_regex`) needs to be prepended to the exported from Starr JSON.
 
 ```json
 {
@@ -201,7 +201,7 @@ When updating or adding a new CF, the test case URL (`trash_regex`) needs to be 
 
 ### quality-profiles
 
-The quality-profiles hold the basic quality profile settings that you also see in Radarr/Sonarr GUI.
+The quality-profiles hold the basic quality profile settings that you also see in the Radarr/Sonarr GUI.
 
 ![image](https://github.com/user-attachments/assets/b2d743d8-0f1e-41bd-baa1-7ceaf52c43cc)
 
@@ -231,8 +231,8 @@ The quality-profiles hold the basic quality profile settings that you also see i
 - `cutoffFormatScore` - Upgrade Until Custom Format Score.
 - `minUpgradeFormatScore` - Minimum Custom Format Score Increment.
 - `language` - Language. **(This is only for Radarr)**
-- `items` - Qualities. => The allowed quality sources in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
-- `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups-explanation)
+- `items` - Qualities. => The allowed quality sources are in reverse order, meaning that the highest quality allowed in your profile is at the bottom of the list.
+- `formatItems` - Custom Formats. => The mandatory Custom Formats that are needed for this quality profiles, excluding the ones that are added with the [cf-groups](cf-groups)
 
 ### cf-groups
 
@@ -280,10 +280,10 @@ The cf-group.json exists of two properties.
 - `custom_formats` -
     - `name` - CF name found in the JSON.
     - `trash_id` - CF trash_id found in the JSON.
-    - `required` - [true|false] See above note for description
+    - `required` - [true|false] See the above note for a description
     - `default": "true"` - [**OPTIONAL**] If you want the CF to be enabled by default.
 - `quality_profiles`
-    - `exclude` - Add the Quality Profiles that you want to exclude from this group, using the quality-profiles `name` and `trash_id`
+    - `exclude` - Add the Quality Profiles you want to exclude from this group, using the quality-profiles `name` and `trash_id`.
 
 ---
 
