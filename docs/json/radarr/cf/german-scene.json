@@ -266,6 +266,15 @@
       "fields": {
         "value": "^(RSG)$"
       }
+    },
+    {
+      "name": "OCA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OCA)$"
+      }
     }
   ]
 }

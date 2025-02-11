@@ -52,6 +52,15 @@
       }
     },
     {
+      "name": "MAMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MAMA)$"
+      }
+    },
+    {
       "name": "Remux",
       "implementation": "QualityModifierSpecification",
       "negate": false,

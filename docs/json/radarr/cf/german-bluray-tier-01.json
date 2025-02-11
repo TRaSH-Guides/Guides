@@ -88,6 +88,15 @@
       }
     },
     {
+      "name": "MAMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MAMA)$"
+      }
+    },
+    {
       "name": "Bluray",
       "implementation": "SourceSpecification",
       "negate": false,
