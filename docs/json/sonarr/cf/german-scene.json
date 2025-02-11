@@ -257,6 +257,69 @@
       "fields": {
         "value": "^(TVNATiON)$"
       }
+    },
+    {
+      "name": "FENDT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FENDT)$"
+      }
+    },
+    {
+      "name": "ACED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ACED)$"
+      }
+    },
+    {
+      "name": "FKKTV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FKKTV)$"
+      }
+    },
+    {
+      "name": "euHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(euHD)$"
+      }
+    },
+    {
+      "name": "OCA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OCA)$"
+      }
+    },
+    {
+      "name": "RIPLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RIPLEY)$"
+      }
+    },
+    {
+      "name": "GTVG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTVG)$"
+      }
     }
   ]
 }
