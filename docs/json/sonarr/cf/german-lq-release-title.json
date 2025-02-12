@@ -23,6 +23,15 @@
       "fields": {
         "value": "Jellyfin-Plex$"
       }
+    },
+    {
+      "name": "German Tag after RG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\.German\\..+?\\.?German$"
+      }
     }
   ]
 }
