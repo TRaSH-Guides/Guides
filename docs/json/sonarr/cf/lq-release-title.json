@@ -8,12 +8,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "TeeWee",
+      "name": "BEN THE MEN",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(TeeWee)\\b"
+        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
       }
     },
     {
@@ -26,12 +26,21 @@
       }
     },
     {
-      "name": "BEN THE MEN",
+      "name": "CREATiVE24",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(BEN[ ._-]THE[ ._-]MEN)\\b"
+        "value": "\\b(CREATiVE24)\\b"
+      }
+    },
+    {
+      "name": "TeeWee",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TeeWee)\\b"
       }
     }
   ]
