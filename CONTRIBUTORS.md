@@ -130,6 +130,11 @@
       <b><a href="https://github.com/doob187" style="color: #ffa500;">doob187</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/6587950?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="saltydk">
+      <br>
+      <b><a href="https://github.com/saltydk" style="color: #ffa500;">saltydk</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/246550?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="foux">
       <br>
       <b><a href="https://github.com/foux" style="color: #ffa500;">foux</a></b>
@@ -148,11 +153,6 @@
       <img src="https://avatars.githubusercontent.com/u/7110194?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="Roxedus">
       <br>
       <b><a href="https://github.com/Roxedus" style="color: #ffa500;">Roxedus</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/6587950?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="saltydk">
-      <br>
-      <b><a href="https://github.com/saltydk" style="color: #ffa500;">saltydk</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #1e2129; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/20839616?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="mizz141">
