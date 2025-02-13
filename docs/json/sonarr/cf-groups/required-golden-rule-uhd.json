@@ -1,0 +1,28 @@
+{
+  "name": "[Required] Golden Rule UHD",
+  "trash_id": "e3f37512790f00d0e89e54fe5e790d1c",
+  "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
+  "default": "true",
+  "custom_formats": [
+    {
+      "name": "x265 (HD)",
+      "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+      "required": false
+    },
+    {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
+      "required": false,
+      "default": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc"
+    }
+  }
+}
+

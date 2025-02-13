@@ -1,6 +1,7 @@
 {
-  "name": "Movie Versions (Non-Remux Profiles) (Optional)",
-  "trash_id": "bf033fe44d9b84aa6eceba6d0e27a88e",
+  "name": "[Optional] Movie Versions",
+  "trash_id": "f4f1474b963b24cf983455743aa9906c",
+  "trash_description": "Optional Movie Versions, make sure to read the individual descriptions that you can find in the guide.",
   "custom_formats": [
     {
       "name": "Remaster",
@@ -42,17 +43,5 @@
       "trash_id": "9f6cbff8cfe4ebbc1bde14c7b7bec0de",
       "required": false
     }
-  ],
-  "quality_profiles": {
-    "exclude": {
-      "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
-      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
-      "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
-      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
-      "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
-      "SQP-2": "c3933358ba2356bafc41524f81471069",
-      "SQP-3": "2cf36c1f0106ffac993be003ade51865",
-      "SQP-5": "a7bb1539fd147256b21b1098f3dc2016"
-    }
-  }
+  ]
 }

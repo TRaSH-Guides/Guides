@@ -2,6 +2,7 @@
   "name": "[HDR Formats]",
   "trash_id": "c4735e1d02e8738044ad4ad1bf58670c",
   "trash_description": "HDR Formats always add <b>ALL</b> HDR Formats to prevent loops.",
+  "default": "true",
   "custom_formats": [
     {
       "name": "DV HDR10Plus",

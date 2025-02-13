@@ -1,0 +1,47 @@
+{
+  "name": "[Streaming Services] Miscellaneous",
+  "trash_id": "7832db22b71ab669458c17a2850d6913",
+  "trash_description": "Collection of Miscellaneous Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "AUBC",
+      "trash_id": "e6e299075e22ac8f541f722254c8350a",
+      "required": false
+    },
+    {
+      "name": "CBC",
+      "trash_id": "defb0b4c8b3f6a15927c0f14c6e69c94",
+      "required": false
+    },
+    {
+      "name": "CRAV",
+      "trash_id": "4e9a630db98d5391aec1368a0256e2fe",
+      "required": false
+    },
+    {
+      "name": "DSCP",
+      "trash_id": "dc5f2bb0e0262155b5fedd0f6c5d2b55",
+      "required": false
+    },
+    {
+      "name": "OViD",
+      "trash_id": "fb1a91cdc0f26f7ca0696e0e95274645",
+      "required": false
+    },
+    {
+      "name": "STRP",
+      "trash_id": "fe4062eac43d4ea75955f8ae48adcf1e",
+      "required": false
+    },
+    {
+      "name": "RED",
+      "trash_id": "c30d2958827d1867c73318a5a2957eb1",
+      "required": false
+    },
+    {
+      "name": "QIBI",
+      "trash_id": "3ac5d84fce98bab1b531393e9c82f467",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "[Streaming Services] UK",
+  "trash_id": "ddab3095a5d2f436f369263840af34f9",
+  "trash_description": "Collection of UK Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "4OD",
+      "trash_id": "bbcaf03147de0f73be2be4a9078dfa03",
+      "required": true
+    },
+    {
+      "name": "ALL4",
+      "trash_id": "fcc09418f67ccaddcf3b641a22c5cfd7",
+      "required": true
+    },
+    {
+      "name": "IP",
+      "trash_id": "dc503e2425126fa1d0a9ad6168c83b3f",
+      "required": true
+    },
+    {
+      "name": "ITVX",
+      "trash_id": "fa5a16b951004c23e980d2913694a137",
+      "required": true
+    },
+    {
+      "name": "MY5",
+      "trash_id": "9f72dc1059a6b277c21cee6a1f15f13f",
+      "required": true
+    },
+    {
+      "name": "NOW",
+      "trash_id": "b66a699fba6f9df91becab798d7502e5",
+      "required": true
+    }
+  ]
+}

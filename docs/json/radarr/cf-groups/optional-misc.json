@@ -1,0 +1,82 @@
+{
+  "name": "[Optional] Miscellaneous",
+  "trash_id": "9337080378236ce4c0b183e35790d2a7",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "required": false
+    },
+    {
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "required": false
+    },
+    {
+      "name": "DV (Disk)",
+      "trash_id": "f700d29429c023a5734505e77daeaea7",
+      "required": false
+    },
+    {
+      "name": "EVO (no WEBDL)",
+      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
+      "required": false
+    },
+    {
+      "name": "HFR",
+      "trash_id": "973613461ac2cea99d52c4cd6e177ab82",
+      "required": false
+    },
+    {
+      "name": "Multi",
+      "trash_id": "4b900e171accbfb172729b63323ea8ca",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "f537cf427b64c38c8e36298f657e4828",
+      "required": false
+    },
+    {
+      "name": "VC-1",
+      "trash_id": "11cd1db7165d6a7ad9a83bc97b8b1060",
+      "required": false
+    },
+    {
+      "name": "VP9",
+      "trash_id": "ae4cfaa9283a4f2150ac3da08e388723",
+      "required": false
+    },
+    {
+      "name": "x264",
+      "trash_id": "2899d84dc9372de3408e6d8cc18e9666",
+      "required": false
+    },
+    {
+      "name": "x265",
+      "trash_id": "9170d55c319f4fe40da8711ba9d8050d",
+      "required": false
+    },
+    {
+      "name": "x266",
+      "trash_id": "390455c22a9cac81a738f6cbad705c3c",
+      "required": false
+    }
+  ]
+}
