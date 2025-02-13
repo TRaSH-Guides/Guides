@@ -1,40 +1,21 @@
 {
-  "name": "SQP-1 (1080p) Optional",
-  "trash_id": "0ac153dc6f4f96459bc8fdb30aaefedf",
+  "name": "[Optional] Resolutions",
+  "trash_id": "ca88fc4e35bdeec58b8d9150d3e99f91",
+  "trash_description": "Optional Custom Formats that cover different resolutions.",
   "custom_formats": [
     {
-      "name": "Bad Dual Groups",
-      "trash_id": "b6832f586342ef70d9c128d40c07b872",
+      "name": "720p",
+      "trash_id": "b2be17d608fc88818940cd1833b0b24c",
       "required": false
     },
     {
-      "name": "Black and White Editions",
-      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "name": "1080p",
+      "trash_id": "820b09bb9acbfde9c35c71e0e565dad8",
       "required": false
     },
     {
-      "name": "EVO (no WEBDL)",
-      "trash_id": "90cedc1fea7ea5d11298bebd3d1d3223",
-      "required": false
-    },
-    {
-      "name": "No-RlsGroup",
-      "trash_id": "ae9b7c9ebde1f3bd336a8cbd1ec4c5e5",
-      "required": false
-    },
-    {
-      "name": "Obfuscated",
-      "trash_id": "7357cf5161efbf8c4d5d0c30b4815ee2",
-      "required": false
-    },
-    {
-      "name": "Retags",
-      "trash_id": "5c44f52a8714fdd79bb4d98e2673be1f",
-      "required": false
-    },
-    {
-      "name": "Scene",
-      "trash_id": "f537cf427b64c38c8e36298f657e4828",
+      "name": "2160p",
+      "trash_id": "fb392fb0d61a010ae38e49ceaa24a1ef",
       "required": false
     }
   ],
@@ -44,12 +25,15 @@
       "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
       "Remux + WEB 2160p": "fd161a61e3ab826d3a22d53f935696dd",
       "UHD Bluray + WEB": "64fb5f9858489bdac2af690e27c8f42f",
-      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
       "Remux 2160p (Alternative)": "dd3cd75deb9645bae838d1c5da6388d5",
+      "Remux 2160p (Combined)": "d1d310673359205736b4b84acd5ea8c8",
       "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
       "[German] Remux + WEB 2160p": "79faa9943cef2f510b997b1f2a9f3ea6",
-      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
       "[German] UHD Bluray + WEB (Alternative)": "425da1ba30711b55d2eb371437ec98d7",
+      "[German] UHD Bluray + WEB": "27cc3d153c0a799fd139ef1ff4c4cc42",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
       "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0",
       "SQP-2": "c3933358ba2356bafc41524f81471069",
       "SQP-3": "2cf36c1f0106ffac993be003ade51865",

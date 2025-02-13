@@ -1,0 +1,17 @@
+{
+  "name": "[Streaming Services] Dutch",
+  "trash_id": "f60f4401ce880aad62e9d21c8bb6b91a",
+  "trash_description": "Collection of Dutch Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "NLZ",
+      "trash_id": "b2b980877494b560443631eb1f473867",
+      "required": true
+    },
+    {
+      "name": "VDL",
+      "trash_id": "5d2317d99af813b6529c7ebf01c83533",
+      "required": true
+    }
+  ]
+}
