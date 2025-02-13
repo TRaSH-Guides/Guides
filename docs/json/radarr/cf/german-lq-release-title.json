@@ -23,6 +23,15 @@
       "fields": {
         "value": "Jellyfin-Plex$"
       }
+    },
+    {
+      "name": "Double German Tag",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[._-]German[._-].+?[._-]?German$"
+      }
     }
   ]
 }
