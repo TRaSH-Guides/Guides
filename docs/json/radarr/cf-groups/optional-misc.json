@@ -9,13 +9,13 @@
       "required": false
     },
     {
-      "name": "DV (Disk)",
-      "trash_id": "f700d29429c023a5734505e77daeaea7",
+      "name": "Black and White Editions",
+      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
       "required": false
     },
     {
-      "name": "Black and White Editions",
-      "trash_id": "cc444569854e9de0b084ab2b8b1532b2",
+      "name": "DV (Disk)",
+      "trash_id": "f700d29429c023a5734505e77daeaea7",
       "required": false
     },
     {
