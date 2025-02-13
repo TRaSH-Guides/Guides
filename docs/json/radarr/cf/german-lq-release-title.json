@@ -30,7 +30,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\.German\\..+?\\.?German$"
+        "value": "[._-]German[._-].+?[._-]?German$"
       }
     }
   ]
