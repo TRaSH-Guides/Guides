@@ -166,7 +166,39 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 ---
 
-### UHD Bluray + WEB (2160p)
+### HD Remux + WEB
+
+If you prefer 1080p Remuxes (Remux-1080p)
+
+!!! abstract "Recommended merging of qualities"
+
+    We recommend to [merge the following qualities](/Radarr/Tips/Merge-quality/):
+
+    - Remux-1080p
+    - WEBDL-1080p
+    - WEBRip-1080p
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-remux-web-scoring-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-misc-required.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-cf-german-resolution-scoring-hd-only-en.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-unwanted-en.md" !}
+
+{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+
+**The following Custom Formats are optional:**
+
+{! include-markdown "../../includes/cf/radarr-audio.md" !}
+
+{! include-markdown "../../includes/german-guide/radarr-german-misc-optional.md" !}
+
+{! include-markdown "../../includes/cf/radarr-movie-versions-imaxe.md" !}
+
+---
+
+### UHD Bluray + WEB
 
 If you prefer High-Quality UHD Encodes (2160p)
 
@@ -215,7 +247,7 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 ---
 
-### UHD Remux + WEB (2160p)
+### UHD Remux + WEB
 
 If you prefer 2160p Remuxes (Remux-2160p)
 
