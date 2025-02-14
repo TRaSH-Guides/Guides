@@ -65,8 +65,6 @@
 
 ??? example "NZBGet Examples - [Click to show/hide]"
 
-    !!! danger "NZBGet development has been officially abandoned by the developer :bangbang:"
-
     `Settings` => `PATHS`
 
     ![nzbget-settings-paths](images/nzbget-settings-paths.png)
