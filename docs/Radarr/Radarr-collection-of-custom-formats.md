@@ -726,7 +726,7 @@ We've made 3 guides related to this.
 
 ??? question "Hybrid - [Click to show/hide]"
 
-    A hybrid release means any combination of sources (video + audio) and not a direct encoding of a single source. Generally, you can be sure that any hybrid that has been put together is the best quality release of a particular title.
+    {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -742,10 +742,7 @@ We've made 3 guides related to this.
 
 ??? question "Remaster - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
-
-    For the software term, see Software remastering.
-    Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
+    {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -761,11 +758,7 @@ We've made 3 guides related to this.
 
 ??? question "4K Remaster - [Click to show/hide]"
 
-    A remastered or mastered in 4K should give you usually the best picture and audio currently for the movie. Both are just names to describe the best possible current release of the movie.
-
-    To be clear, the final digital films on the Mastered in 4K Blu-rays still only have the same 1920 x 1080 pixels of actual resolution as normal Blu-rays. But the argument goes that because these full HD files were derived from higher-resolution masters, their images will be more precise, with better colors, less noise, and enhanced sharpness and detail. Not least because the higher-resolution mastering process will provide more detail from the original print for the Blu-ray masters to draw on when going through their (hopefully…) frame-by-frame compression process.
-
-    Another important element of the Mastered in 4K discs is that they’re all mastered with ‘x.v.YCC’ color specification. This delivers an expanded color range closer to that contained in source material.
+    {! include-markdown "../../includes/cf-descriptions/4k-remaster.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -781,7 +774,7 @@ We've made 3 guides related to this.
 
 ??? question "Criterion Collection - [Click to show/hide]"
 
-    The Criterion Collection, Inc. (or simply Criterion) is an American home video distribution company that focuses on licensing "important classic and contemporary films" and selling them to film aficionados. Criterion has helped to standardize characteristics of home video such as film restoration, using the letterbox format for widescreen films, and adding bonus features and commentary tracks.
+    {! include-markdown "../../includes/cf-descriptions/criterion-collection.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -797,9 +790,9 @@ We've made 3 guides related to this.
 
 ??? question "Masters of Cinema - [Click to show/hide]"
 
-    Masters of Cinema is a line of DVD and Blu-ray releases published through Eureka Entertainment. Because of the uniformly branded and spine-numbered packaging and the standard inclusion of booklets and analysis by recurring film historians, the line is often perceived as the UK equivalent of The Criterion Collection.
+    {! include-markdown "../../includes/cf-descriptions/masters-of-cinema.md" !}
 
-??? example "JSON - [Click to show/hide}"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/masters-of-cinema.json' %]][[% endfilter %]]
@@ -813,9 +806,9 @@ We've made 3 guides related to this.
 
 ??? question "Vinegar Syndrome - [Click to show/hide]"
 
-    Vinegar Syndrome is a US-based company founded in 2012 to preserve and distribute old X-rated films. Over time, they expanded their catalog to include other types of cult and exploitation films, specializing in horror and action genres.
+    {! include-markdown "../../includes/cf-descriptions/vinegar-syndrome.md" !}
 
-??? example "JSON - [Click to show/hide}"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vinegar-syndrome.json' %]][[% endfilter %]]
@@ -829,7 +822,7 @@ We've made 3 guides related to this.
 
 ??? question "Theatrical Cut - [Click to show/hide]"
 
-    The Theatrical Cut is the version of the film that was shown at cinemas.
+    {! include-markdown "../../includes/cf-descriptions/theatrical-cut.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -845,10 +838,7 @@ We've made 3 guides related to this.
 
 ??? question "Special Edition - [Click to show/hide]"
 
-    Custom format for several Special Editions
-
-    - The Director's Cut is the version edited by the Director, usually for additional home media releases.
-    - An Extended Cut is usually any version of the film that is longer than the theatrical cut (though in very rare cases, its shorter).
+    {! include-markdown "../../includes/cf-descriptions/special-edition.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -864,9 +854,7 @@ We've made 3 guides related to this.
 
 ??? question "IMAX - [Click to show/hide]"
 
-    [From In Depth Cine](https://www.indepthcine.com/videos/imax){:target="_blank" rel="noopener noreferrer"}
-
-    IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.
+    {! include-markdown "../../includes/cf-descriptions/imax.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -882,23 +870,7 @@ We've made 3 guides related to this.
 
 ??? question "IMAX Enhanced - [Click to show/hide]"
 
-    **Get more picture and less black bars (letterboxing).**
-
-    [From Wired](https://www.wired.com/story/what-is-imax-enhanced/){:target="_blank" rel="noopener noreferrer"}
-
-    IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases are often higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
-
-    As a result of the higher bitrate and implied picture quality improvement, it is recommended to enable the IMAX Enhanced custom format on WEB profiles, especially for those seeking 'The IMAX Experience' - including fewer "black bars" or letterboxing.
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.1.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.2.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.3.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.4.png)
-
-    ![!Imax Enhanced Example](images/imax-e/imax-e.5.png)
+    {! include-markdown "../../includes/cf-descriptions/imax-enhanced.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -914,9 +886,9 @@ We've made 3 guides related to this.
 
 ??? question "Open Matte - [Click to show/hide]"
 
-    Open matte is a filming technique that involves matting out the top and bottom of the film frame in the movie projector (known as a soft matte) for the widescreen theatrical release and then scanning the film without a matte (at an Academy ratio) for a full-screen home video release.
+    {! include-markdown "../../includes/cf-descriptions/open-matte.md" !}
 
-??? example "JSON - [Click to show/hide}"
+??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/open-matte.json' %]][[% endfilter %]]
@@ -950,19 +922,7 @@ We've made 3 guides related to this.
 
 ??? question "BR-DISK - [Click to show/hide]"
 
-    This is a custom format to help Radarr recognize & ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
-
-    !!! note
-
-        Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance until we come up with another way to solve this,
-        being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
-        Several reasons why this is happening:
-
-        - Blame the often wrongly used naming of x265 encodes.
-        - Radarr v3/v4 uses dynamic custom formats.
+    {! include-markdown "../../includes/cf-descriptions/br-disk.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -978,8 +938,7 @@ We've made 3 guides related to this.
 
 ??? question "Generated Dynamic HDR - [Click to show/hide]"
 
-    - A collection of groups who are known to generate their own dynamic HDR metadata - Dolby Vision and/or HDR10+.
-    - This generated dynamic HDR metadata is not from a retail source, so is usually not desirable.
+    {! include-markdown "../../includes/cf-descriptions/generated-dynamic-hdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -997,8 +956,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ - [Click to show/hide]"
 
-    - A collection of known low-quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from the scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.
-    - Release Groups that break the Starr apps automation because their bad naming could potentially cause download loops, even if their overall quality is perfect.
+    {! include-markdown "../../includes/cf-descriptions/lq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1016,7 +974,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ (Release Title) - [Click to show/hide]"
 
-    A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
+    {! include-markdown "../../includes/cf-descriptions/lq-release-title.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1032,7 +990,7 @@ We've made 3 guides related to this.
 
 ??? question "Sing-Along Versions - [Click to show/hide]"
 
-    Versions of musical films that have sing-along lyrics hardcoded into the video stream.
+    {! include-markdown "../../includes/cf-descriptions/sing-along-versions.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1048,9 +1006,7 @@ We've made 3 guides related to this.
 
 ??? question "3D - [Click to show/hide]"
 
-    If you prefer or not prefer 3D.
-
-    You can use Custom Format or use Restrictions (`Settings` => `Indexers` => `Restrictions`) what ever you prefer.
+    {! include-markdown "../../includes/cf-descriptions/3d.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1084,7 +1040,7 @@ We've made 3 guides related to this.
 
 ??? question "Upscaled - [Click to show/hide]"
 
-    This custom format is used to prevent Radarr from grabbing upscaled releases.
+    {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1100,7 +1056,7 @@ We've made 3 guides related to this.
 
 ??? question "Extras - [Click to show/hide]"
 
-    This custom format is used to prevent Radarr from grabbing releases containing only extras/bonus material.
+    {! include-markdown "../../includes/cf-descriptions/extras.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1168,8 +1124,7 @@ We've made 3 guides related to this.
 
 ??? question "Bad dual groups - [Click to show/hide]"
 
-    These groups take the original release and add their language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
-    Also they often even translate/rename the release name to Portuguese.
+    {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1185,7 +1140,7 @@ We've made 3 guides related to this.
 
 ??? question "Black and White Editions - [Click to show/hide]"
 
-    Some movies get an additional release version in monochrome/black and white. This custom format matches some of the more common occurrences of these.
+    {! include-markdown "../../includes/cf-descriptions/black-and-white-editions.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1203,15 +1158,7 @@ We've made 3 guides related to this.
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
 
-    This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
-
-    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
-
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
-
-    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non-Dolby Vision-compatible setup.
-
-    Remuxes and Bluray have a fallback to HDR10.
+    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1227,9 +1174,7 @@ We've made 3 guides related to this.
 
 ??? question "EVO (no WEBDL) - [Click to show/hide]"
 
-    This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are okay.
-
-    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
+    {! include-markdown "../../includes/cf-descriptions/evo-no-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1245,7 +1190,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR10+ Boost - [Click to show/hide]"
 
-    Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1261,7 +1206,7 @@ We've made 3 guides related to this.
 
 ??? question "DV HDR10+ Boost - [Click to show/hide]"
 
-    Optional: use this one if you want to upgrade from DV HDR10 to DV HDR10+ to support the best of both worlds.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1277,12 +1222,7 @@ We've made 3 guides related to this.
 
 ??? question "No-RlsGroup - [Click to show/hide]"
 
-    Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match
-
-    !!! warning
-
-        If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
+    {! include-markdown "../../includes/cf-descriptions/no-rlsgroup.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

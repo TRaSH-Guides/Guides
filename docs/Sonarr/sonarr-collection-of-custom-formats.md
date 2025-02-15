@@ -721,7 +721,7 @@ We've made 3 guides related to this.
 
 ??? question "Hybrid - [Click to show/hide]"
 
-    A hybrid release means any combination of sources (video + audio) and not a direct encoding of a single source. Generally, you can be sure that any hybrid that has been put together is the best quality release of a particular title.
+    {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -737,10 +737,7 @@ We've made 3 guides related to this.
 
 ??? question "Remaster - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remaster){:target="_blank" rel="noopener noreferrer"}
-
-    For the software term, see Software remastering.
-    Remaster (also digital remastering and digitally remastered) refers to changing the quality of the sound or of the image, or both, of previously created recordings, either audiophonic, cinematic, or videographic.
+    {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -776,20 +773,7 @@ We've made 3 guides related to this.
 
 ??? question "BR-DISK - [Click to show/hide]"
 
-    This is a custom format to help Sonarr recognize and ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.
-
-    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
-
-    !!! note
-
-        Depending on your renaming scheme Sonarr could potentially match renamed files AFTER they are downloaded and imported as `BR-DISK`,
-        This is only a cosmetic annoyance until we come up with another way to solve this,
-        Because this Custom Format is used to exclude downloading of BR-DISK, it is still behaving as intended.
-
-        Potential reasons why this is could occurr:
-
-        - Blame the often wrongly used naming of x265 encodes.
-        - Sonarr v3/v4 uses dynamic custom formats.
+    {! include-markdown "../../includes/cf-descriptions/br-disk.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -807,7 +791,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ - [Click to show/hide]"
 
-    A collection of known Low-Quality groups that are often banned from the top trackers due to their lack of quality releases.
+    {! include-markdown "../../includes/cf-descriptions/lq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -825,7 +809,7 @@ We've made 3 guides related to this.
 
 ??? question "LQ (Release Title)- [Click to show/hide]"
 
-    A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
+    ! include-markdown "../../includes/cf-descriptions/lq-release-title
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -841,7 +825,7 @@ We've made 3 guides related to this.
 
 ??? question "Upscaled - [Click to show/hide]"
 
-    This custom format is used to prevent Sonarr from grabbing upscaled releases.
+    {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -875,7 +859,7 @@ We've made 3 guides related to this.
 
 ??? question "Extras - [Click to show/hide]"
 
-    This blocks/ignores Extras (bonus footage, outtakes, etc)
+    {! include-markdown "../../includes/cf-descriptions/extras.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1081,8 +1065,7 @@ We've made 3 guides related to this.
 
 ??? question "Bad dual groups - [Click to show/hide]"
 
-    These groups take the original release and add their language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
-    Also they often even translate/rename the release name to Portuguese.
+    {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1100,15 +1083,7 @@ We've made 3 guides related to this.
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
 
-    This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
-
-    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
-
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
-
-    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non-Dolby Vision-compatible setup.
-
-    Remuxes and Bluray have a fallback to HDR10.
+    {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1124,7 +1099,7 @@ We've made 3 guides related to this.
 
 ??? question "HDR10+ Boost - [Click to show/hide]"
 
-    Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1140,7 +1115,7 @@ We've made 3 guides related to this.
 
 ??? question "DV HDR10+ Boost - [Click to show/hide]"
 
-    Optional: use this one if you want to upgrade from DV HDR10 to DV HDR10+ to support the best of both worlds.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1156,12 +1131,7 @@ We've made 3 guides related to this.
 
 ??? question "No-RlsGroup - [Click to show/hide]"
 
-    Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match
-
-    !!! warning
-
-        If you don't use decent filenames (like not adding release groups) don't add this Custom Format, except if you want to upgrade them.
+    {! include-markdown "../../includes/cf-descriptions/no-rlsgroup.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
