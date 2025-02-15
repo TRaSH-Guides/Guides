@@ -28,7 +28,7 @@
       "name": "DL",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
-      "required": false,
+      "required": true,
       "fields": {
         "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
       }
