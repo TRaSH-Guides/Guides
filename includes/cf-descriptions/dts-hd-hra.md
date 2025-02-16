@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 **DTS-HD HRA**<br>
 
 [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="\_blank" rel="noopener noreferrer"}
@@ -16,3 +17,4 @@ DTS-HD HRA is the lossy version of DTS-HD MA.
 | Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
 | Sampling Freq. | 96 kHz           | 192 kHz           |
 | Resolution     | -                | Up to 24-bit      |
+<!-- markdownlint-enable MD041-->

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 **Obfuscated**<br>
 
 Obfuscated releases are something you find on Usenet to do re-posts of common/popular releases.
@@ -7,3 +8,4 @@ You want indexers that get/do obfuscated releases and allow NZBs to be submitted
 
 - In general, if you're using Usenet, **DO NOT** use this Custom Format.
 - Use this Custom Format **ONLY** if you **DO NOT** prefer Obfuscated releases.
+<!-- markdownlint-enable MD041-->
