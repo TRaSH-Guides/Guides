@@ -1,3 +1,17 @@
+# 2025-02-16 01:36
+- [fix(starr-german): Make DL Tag required and negated for the German Language CF to avoid double scoring.](https://github.com/TRaSH-Guides/Guides/pull/2281)
+- [feat(radarr-german): add Radarr Remux 1080p Profile to German Guide](https://github.com/TRaSH-Guides/Guides/pull/2257)
+- [fix(hardlinks): Removed outdated NZBGet message](https://github.com/TRaSH-Guides/Guides/pull/2280)
+- [feat(guide-sync): Add more groups for the 3rd party sync applications](https://github.com/TRaSH-Guides/Guides/pull/2160)
+- [feat(starr-german): add a regex matching double German Tag to `German LQ (release title)`](https://github.com/TRaSH-Guides/Guides/pull/2278)
+- [feat(gha): remove redundant sha lookup](https://github.com/TRaSH-Guides/Guides/pull/2279)
+- [feat(sonarr): Add CREATiVE24 to Sonarr LQ (Release Title) CF](https://github.com/TRaSH-Guides/Guides/pull/2274)
+- [feat(gha): change hide_announce to evaluate again hostname](https://github.com/TRaSH-Guides/Guides/pull/2276)
+- [feat(starr-german): Add Groups to German Tiers](https://github.com/TRaSH-Guides/Guides/pull/2250)
+- [fix(guide): Fixed: broken link `CONTRIBUTING.md`](https://github.com/TRaSH-Guides/Guides/pull/2273)
+- [feat(guide): Add `quality-profile` and `cf-groups` info to `CONTRIBUTING.md`](https://github.com/TRaSH-Guides/Guides/pull/2272)
+- [feat(starr-anime): Fix CRUCiBLE regex](https://github.com/TRaSH-Guides/Guides/pull/2265)
+
 # 2025-02-09 01:26
 - [fix(sonarr-french): CF on FR Anime Tier 3 (kazuizui)](https://github.com/TRaSH-Guides/Guides/pull/2261)
 - [feat(starr-german): add LQ (release title) CF to the german guide](https://github.com/TRaSH-Guides/Guides/pull/2254)
