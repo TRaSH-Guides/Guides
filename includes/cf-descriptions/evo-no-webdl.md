@@ -3,5 +3,5 @@
 
 This group is often banned for low-quality Blu-ray releases, but their WEB-DLs are considered okay.
 
-You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Settings` => `Profiles`) to `-10000`.
+--8<-- "includes/cf-descriptions/apply-10000.md"
 <!-- markdownlint-enable MD041-->

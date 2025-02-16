@@ -963,9 +963,7 @@ We've made 3 guides related to this.
 
 ??? question "x264 - [Click to show/hide]"
 
-    x264 is a *free software library* and *application* for encoding video streams into the [H.264/MPEG-4 AVC](https://en.wikipedia.org/wiki/H.264){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
-
-    If you want maximum compatibility and have much better direct play support then use x264 for 720p/1080p.
+    {! include-markdown "../../includes/cf-descriptions/x264.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -981,13 +979,7 @@ We've made 3 guides related to this.
 
 ??? question "x265 - [Click to show/hide]"
 
-    x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
-
-    This applies to all x265/HEVC releases that are not Remux.
-
-    !!! failure ""
-
-        Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
+    {! include-markdown "../../includes/cf-descriptions/x265.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1003,9 +995,7 @@ We've made 3 guides related to this.
 
 ??? question "x266 - [Click to show/hide]"
 
-    Versatile Video Coding (VVC), also known as H.266, ISO/IEC 23090-3, and MPEG-I Part 3, is a video compression standard finalized on 6 July 2020. [Wikipedia](https://en.wikipedia.org/wiki/Versatile_Video_Coding){:target="_blank" rel="noopener noreferrer"}.
-
-    This applies to all x266/VVC releases that are not Remux.
+    {! include-markdown "../../includes/cf-descriptions/x266.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1045,11 +1035,7 @@ We've made 3 guides related to this.
 
 ??? question "FreeLeech - [Click to show/hide]"
 
-    Torrent sites sometimes set a torrent to be freeleech. This means that the download of this torrent will not count towards your quota or ratio. This can be useful when starting a new account or if you do not have the best ratio yet.
-
-    !!! warning
-
-        Keep in mind not all trackers support this option.
+    {! include-markdown "../../includes/cf-descriptions/freeleech.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1179,7 +1165,7 @@ We've made 3 guides related to this.
 
 ??? question "Scene - [Click to show/hide]"
 
-    This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.
+    {! include-markdown "../../includes/cf-descriptions/scene.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1193,13 +1179,9 @@ We've made 3 guides related to this.
 
 ### Single Episode
 
-!!! danger "WARNING"
-
-    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
-
 ??? question "Single Episode - [Click to show/hide]"
 
-    This Custom Format will recognize single-episode releases, instead of multi-episode or season packs, using Sonarr's built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.
+    {! include-markdown "../../includes/cf-descriptions/single-episode.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1213,13 +1195,9 @@ We've made 3 guides related to this.
 
 ### Multi-Episode
 
-!!! danger "WARNING"
-
-    - This CF utilizes functionality only available in Sonarr v4.0.2.1262 or later.
-
 ??? question "Multi-Episode - [Click to show/hide]"
 
-    This Custom Format will recognize multi-episode releases (e.g. episodes named with 'S01E01E02'), instead of single-episode or season packs, using Sonarr's built-in parser. Depending on your preference, you can give it a negative or positive score or skip adding it altogether.
+    {! include-markdown "../../includes/cf-descriptions/multi-episode.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1233,22 +1211,9 @@ We've made 3 guides related to this.
 
 ### Season Pack
 
-!!! danger "WARNING"
-
-    - This CF utilizes functionality only available starting in Sonarr v4.0.2.1262.
-
 ??? question "Season Pack - [Click to show/hide]"
 
-    This Custom Format can be used to prefer or exclude season packs
-
-    - Give it a score of `10` if you prefer a season pack.
-    - Give it a score of `-10000` if you prefer to not download season packs.
-    - Utilizes the "Release Type" custom format condition added in v4.0.2.1262, Season Pack source status is now persistently stored alongside episodes.
-
-    !!! info
-
-        - This Custom Format could previously result in download loops. The new "Release Type" custom format condition now prevents this undesired behavior. :bangbang:
-        - This will upgrade your already downloaded single episodes :bangbang:
+    {! include-markdown "../../includes/cf-descriptions/season-pack.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1296,10 +1261,7 @@ We've made 3 guides related to this.
 
 ??? question "VP9 - [Click to show/hide]"
 
-    - This is a new codec and you need modern devices that support it.
-    - We also had reports of playback/transcoding issues.
-    - No main group is actually using it (yet).
-    - It's better to ignore this new codec to prevent compatibility issues.
+    {! include-markdown "../../includes/cf-descriptions/vp9.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1315,8 +1277,7 @@ We've made 3 guides related to this.
 
 ??? question "Internal - [Click to show/hide]"
 
-    - For those that prefer scene releases may want to boost internals as they generally have higher settings that may not conform to ruleset.
-    - In some rare cases P2P use also INTERNAL.
+    {! include-markdown "../../includes/cf-descriptions/internal.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1364,7 +1325,7 @@ We've made 3 guides related to this.
 
 ??? question "DV (Disk) - [Click to show/hide]"
 
-    - This will boost the score for Dolby Vision Releases using the original full-quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
+    {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1380,7 +1341,7 @@ We've made 3 guides related to this.
 
 ??? question "HFR - [Click to show/hide]"
 
-    - This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.
+    {! include-markdown "../../includes/cf-descriptions/hfr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1400,11 +1361,7 @@ We've made 3 guides related to this.
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
-    Groups that:
-
-    - Have established themselves as consistently delivering high-quality releases.
-    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/remux-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1420,14 +1377,7 @@ We've made 3 guides related to this.
 
 ??? question "Remux Tier 02 - [Click to show/hide]"
 
-    Groups that:
-
-    - Only use one source (poetically dubbed "one disc wonders").
-    - Use a fully automated method without double-checking.
-    - Don't check/review their releases prior to uploading.
-    - Haven't released much. (yet)
-    - Have retired and don't have the best quality by today's standards
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/remux-tier-02-sonarr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1441,11 +1391,7 @@ We've made 3 guides related to this.
 
 ??? question "HD Bluray Tier 01 - [Click to show/hide]"
 
-    Groups that:
-
-    - Have established themselves as consistently delivering high-quality releases.
-    - Use remuxes as their source without micro-sizing them.
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1461,10 +1407,7 @@ We've made 3 guides related to this.
 
 ??? question "HD Bluray Tier 02 - [Click to show/hide]"
 
-    Groups that:
-
-    - Use remuxes as their source without micro-sizing them.
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1478,12 +1421,7 @@ We've made 3 guides related to this.
 
 ??? question "WEB Tier 01 - [Click to show/hide]"
 
-    Groups that:
-
-    - Have established themselves as consistently delivering high-quality releases.
-    - Create hybrids.
-    - Sign up for the gentleman list on a certain private tracker.
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/web-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1499,12 +1437,7 @@ We've made 3 guides related to this.
 
 ??? question "WEB Tier 02 - [Click to show/hide]"
 
-    Groups that:
-
-    - Sign up for the gentleman list on a certain private tracker.
-    - Have only done a few releases
-    - Are not on the list but have a few releases on their name
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/web-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1520,12 +1453,7 @@ We've made 3 guides related to this.
 
 ??? question "WEB Tier 03 - [Click to show/hide]"
 
-    Groups that:
-
-    - Sign up for the gentleman list on a certain private tracker.
-    - Have only done a few releases
-    - Are not on the list but have a few releases on their name
-    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
+    {! include-markdown "../../includes/cf-descriptions/web-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1541,7 +1469,7 @@ We've made 3 guides related to this.
 
 ??? question "WEB Scene - [Click to show/hide]"
 
-    One of the few scene groups that released quality releases.
+    {! include-markdown "../../includes/cf-descriptions/web-scene.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1855,7 +1783,7 @@ We've made 3 guides related to this.
 
 #### AUViO
 
-<sub>RTBF</sub>
+<sub>AUViO/RTBF</sub>
 
 ??? question "AUViO/RTBF - [Click to show/hide]"
 
@@ -2483,7 +2411,7 @@ We've made 3 guides related to this.
 
 ??? question "UHD Streaming Boost - [Click to show/hide]"
 
-    Some streaming services have UHD releases that are generally better than their HD counterparts. The UHD Streaming Boost custom format increases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
+    {! include-markdown "../../includes/cf-descriptions/uhd-streaming-boost.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2499,7 +2427,7 @@ We've made 3 guides related to this.
 
 ??? question "UHD Streaming Cut - [Click to show/hide]"
 
-    Some streaming services have UHD releases that are generally worse than their HD counterparts. The UHD Streaming Cut custom format decreases those streaming services' scores appropriately for UHD releases. Use this in conjunction with the regular streaming service custom formats.
+    {! include-markdown "../../includes/cf-descriptions/uhd-streaming-cut.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2519,7 +2447,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-01-top-seadex-muxers.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2535,7 +2463,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 02 (SeaDex Muxers) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-02-seadex-muxers.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2551,7 +2479,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 03 (SeaDex Muxers) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-02-seadex-muxers.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2567,7 +2495,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 04 (SeaDex Muxers) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-04-seadex-muxers.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2583,7 +2511,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 05 (Remuxes) - [Click to show/hide]"
 
-    Groups that are consistent and do Remuxes
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-05-remuxes.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2599,7 +2527,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 06 (FanSubs) - [Click to show/hide]"
 
-    FanSub groups that are consistent
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-06-fansubs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2615,7 +2543,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 07 (P2P/Scene) - [Click to show/hide]"
 
-    Known P2P and Scene Anime groups
+    ! include-markdown "../../includes/cf-descriptions/anime-bd-tier-07-p2pscene
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2631,7 +2559,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime BD Tier 08 (Mini Encodes) - [Click to show/hide]"
 
-    Know groups that do mini-encodes
+    {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-08-mini-encodes.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2647,7 +2575,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 01 (Muxers) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-01-muxers.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2663,7 +2591,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 02 (Top FanSubs) - [Click to show/hide]"
 
-    Groups that do the best releases as per SeaDex. They are more consistent and trump others
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-02-top-fansubs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2679,7 +2607,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 03 (Official Subs) - [Click to show/hide]"
 
-    Official sub-groups that tend to be more consistent and release fast
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-03-official-subs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2695,7 +2623,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 04 (Official Subs) - [Click to show/hide]"
 
-    Official sub groups
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-04-official-subs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2711,7 +2639,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 05 (FanSubs) - [Click to show/hide]"
 
-    FanSub groups that are consistent
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-05-fansubs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2727,7 +2655,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Web Tier 06 (FanSubs) - [Click to show/hide]"
 
-    FanSub groups that are consistent
+    {! include-markdown "../../includes/cf-descriptions/anime-web-tier-06-fansubs.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2743,7 +2671,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Raws - [Click to show/hide]"
 
-    A collection of known groups that release raws
+    {! include-markdown "../../includes/cf-descriptions/anime-raws.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2759,7 +2687,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime LQ Groups - [Click to show/hide]"
 
-    A collection of known Low-Quality groups.
+    {! include-markdown "../../includes/cf-descriptions/anime-lq-groups.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2775,7 +2703,7 @@ We've made 3 guides related to this.
 
 ??? question "Uncensored - [Click to show/hide]"
 
-    This CF covers uncensored releases.
+    {! include-markdown "../../includes/cf-descriptions/uncensored.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2791,7 +2719,7 @@ We've made 3 guides related to this.
 
 ??? question "v0 - [Click to show/hide]"
 
-    CF to cover releases named with v0 which we don't want
+    {! include-markdown "../../includes/cf-descriptions/v0.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2807,7 +2735,7 @@ We've made 3 guides related to this.
 
 ??? question "v1 - [Click to show/hide]"
 
-    CF to cover v1 releases
+    {! include-markdown "../../includes/cf-descriptions/v1.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2823,7 +2751,7 @@ We've made 3 guides related to this.
 
 ??? question "v2 - [Click to show/hide]"
 
-    CF to cover v2 releases
+    {! include-markdown "../../includes/cf-descriptions/v2.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2839,7 +2767,7 @@ We've made 3 guides related to this.
 
 ??? question "v3 - [Click to show/hide]"
 
-    CF to cover v3 releases
+    {! include-markdown "../../includes/cf-descriptions/v3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2855,7 +2783,7 @@ We've made 3 guides related to this.
 
 ??? question "v4 - [Click to show/hide]"
 
-    CF to cover v4 releases
+    {! include-markdown "../../includes/cf-descriptions/v4.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2871,7 +2799,7 @@ We've made 3 guides related to this.
 
 ??? question "10bit - [Click to show/hide]"
 
-    This CF covers 10bit releases
+    {! include-markdown "../../includes/cf-descriptions/10bit.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2887,7 +2815,7 @@ We've made 3 guides related to this.
 
 ??? question "Anime Dual Audio - [Click to show/hide]"
 
-    This CF covers releases that have Dual Audio
+    {! include-markdown "../../includes/cf-descriptions/anime-dual-audio.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2903,7 +2831,7 @@ We've made 3 guides related to this.
 
 ??? question "Dubs Only - [Click to show/hide]"
 
-    This CF covers releases that only have Dubs
+    {! include-markdown "../../includes/cf-descriptions/dubs-only.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2923,7 +2851,7 @@ We've made 3 guides related to this.
 
 ??? question "VFF - [Click to show/hide]"
 
-    Full French version (dubbing done in France) and French version (normally equivalent to VFQ).
+    {! include-markdown "../../includes/cf-descriptions/french-vff.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2939,7 +2867,7 @@ We've made 3 guides related to this.
 
 ??? question "VOF - [Click to show/hide]"
 
-    Original French Version.
+    {! include-markdown "../../includes/cf-descriptions/french-vof.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2955,7 +2883,7 @@ We've made 3 guides related to this.
 
 ??? question "VFI - [Click to show/hide]"
 
-    International French Version.
+    {! include-markdown "../../includes/cf-descriptions/french-vfi.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2971,7 +2899,7 @@ We've made 3 guides related to this.
 
 ??? question "VF2 - [Click to show/hide]"
 
-    VF[1-9] or FR[1-9] indicates the number of dubs present (normally VF2 being VFF and VFQ).
+    {! include-markdown "../../includes/cf-descriptions/french-vf2.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2987,7 +2915,7 @@ We've made 3 guides related to this.
 
 ??? question "VFQ - [Click to show/hide]"
 
-    Canadian French Version.
+    {! include-markdown "../../includes/cf-descriptions/french-vfq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3003,7 +2931,7 @@ We've made 3 guides related to this.
 
 ??? question "VOQ - [Click to show/hide]"
 
-    Quebec Original Version.
+    {! include-markdown "../../includes/cf-descriptions/french-voq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3019,7 +2947,7 @@ We've made 3 guides related to this.
 
 ??? question "VQ - [Click to show/hide]"
 
-    Quebec Version (strong Quebec accent, ex: The Simpsons movie).
+    {! include-markdown "../../includes/cf-descriptions/french-vq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3035,7 +2963,7 @@ We've made 3 guides related to this.
 
 ??? question "VFB - [Click to show/hide]"
 
-    Belgian French Version.
+    {! include-markdown "../../includes/cf-descriptions/french-vfb.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3051,7 +2979,7 @@ We've made 3 guides related to this.
 
 ??? question "VOSTFR - [Click to show/hide]"
 
-    Indicates soundtrack in the original language, with French subtitles. It should be noted that SUBFRENCH is included inside this Custom Format. However, SUB often means that the subtitle was embedded inside the picture (hardcoded). French releases tend to mix both, leading to some VOSTFR being labeled as SUBFRENCH and SUBFRENCH as VOSTFR.
+    {! include-markdown "../../includes/cf-descriptions/french-vostfr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3067,7 +2995,7 @@ We've made 3 guides related to this.
 
 ??? question "FanSUB - [Click to show/hide]"
 
-    Action of subtitling a video for personal and non-professional purposes. The quality of FanSUBs can vary enormously (accuracy of translation, mistakes, etc.) and could lead to so-called FastSUBs.
+    {! include-markdown "../../includes/cf-descriptions/fansub.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3083,7 +3011,7 @@ We've made 3 guides related to this.
 
 ??? question "FastSUB - [Click to show/hide]"
 
-    FanSUB, but made as quickly as possible, at the expense of quality.
+    {! include-markdown "../../includes/cf-descriptions/fastsub.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3103,9 +3031,7 @@ We've made 3 guides related to this.
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
-    - WIP
-    - Groups that produce remuxes from multiple sources (discs) and combine them to produce the best end result.
-    - Groups actively doing remuxes from a single source (discs).
+    {! include-markdown "../../includes/cf-descriptions/french-remux-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3121,10 +3047,7 @@ We've made 3 guides related to this.
 
 ??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
 
-    - WIP
-    - Groups that create encodes from remuxes without micro-sizing them.
-    - Groups that add the best French audio track to an English release from Tier 01 or 02.
-    - Groups that have a minimum of great releases (best encode in its class 1080p and lower).
+    {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3140,9 +3063,7 @@ We've made 3 guides related to this.
 
 ??? question "FR WEB Tier 01 - [Click to show/hide]"
 
-    - WIP
-    - Groups that get their releases directly from the source.
-    - Groups that source and add the French audio track from the source to an English release from Tier 01 or 02.
+    {! include-markdown "../../includes/cf-descriptions/french-web-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3158,9 +3079,7 @@ We've made 3 guides related to this.
 
 ??? question "FR WEB Tier 02 - [Click to show/hide]"
 
-    - WIP
-    - Groups that get their releases directly from the source but are not so active.
-    - Groups that source and add the French audio track from the source to an English release.
+    {! include-markdown "../../includes/cf-descriptions/french-web-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3176,9 +3095,7 @@ We've made 3 guides related to this.
 
 ??? question "FR WEB Tier 03 - [Click to show/hide]"
 
-    - WIP
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/french-web-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3194,9 +3111,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 01 - [Click to show/hide]"
 
-    - WIP
-    - Groups that are known to be active and only doing Anime
-    - Groups whose releases are at least comparable to SeaDex recommended.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3212,9 +3127,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 02 - [Click to show/hide]"
 
-    - WIP
-    - Groups that are known to be active and only doing Anime, but with few releases per year.
-    - Groups that are known to be active and doing Anime AND other types of releases.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3230,10 +3143,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime Tier 03 - [Click to show/hide]"
 
-    - WIP
-    - Groups with no or little activity that have at some point made an interesting release which is either the only one available (in VOSTFR/MULTi) or still top of its category.
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups doing only anime that have retired (or no longer exist) and may not have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3249,7 +3159,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Anime FanSub - [Click to show/hide]"
 
-    Known good groups that only do FanSub in good quality.
+    {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3265,7 +3175,7 @@ We've made 3 guides related to this.
 
 ??? question "FR Scene Groups - [Click to show/hide]"
 
-    Known French Scene groups.
+    {! include-markdown "../../includes/cf-descriptions/french-scene.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3283,14 +3193,7 @@ We've made 3 guides related to this.
 
 ??? question "FR LQ - [Click to show/hide]"
 
-    A collection of known French Low-Quality groups that are often banned from the top trackers due to their lack of quality.
-
-    !!! note
-
-        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
-        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
-        - DeTAG/ReTAG = Detagging or stealing groups.
-        - Other reasons = Banned Release Groups.
+    {! include-markdown "../../includes/cf-descriptions/french-lq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3310,11 +3213,7 @@ We've made 3 guides related to this.
 
 ??? question "German Remux Tier 01 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
-    - HDR/DoVi (Depending on what's offered and often both).
+    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3330,12 +3229,7 @@ We've made 3 guides related to this.
 
 ??? question "German Remux Tier 02 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that have the best German audio track to an English release.
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3351,11 +3245,7 @@ We've made 3 guides related to this.
 
 ??? question "German Bluray Tier 01 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
-    - HDR/DoVi (Depending on what's offered and often both).
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3371,12 +3261,7 @@ We've made 3 guides related to this.
 
 ??? question "German Bluray Tier 02 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that have the best German audio track to an English release.
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3392,9 +3277,7 @@ We've made 3 guides related to this.
 
 ??? question "German Bluray Tier 03 - [Click to show/hide]"
 
-    - WiP
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3408,13 +3291,9 @@ We've made 3 guides related to this.
 
 ### German Web Tier 01
 
-??? question "German Tier 01 - [Click to show/hide]"
+??? question "German Web Tier 01 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that source and add the German audio track from the source to an English release from Tier 01 or 02.
-    - HDR/DoVi (Depending on what's offered and often both).
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3430,12 +3309,7 @@ We've made 3 guides related to this.
 
 ??? question "German Tier 02 - [Click to show/hide]"
 
-    - WiP
-    - Groups that get their releases directly from the source.
-    - Groups that create encodes from a remux without micro-sizing them.
-    - Groups that have the best German audio track to an English release.
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3451,9 +3325,7 @@ We've made 3 guides related to this.
 
 ??? question "German Tier 03 - [Click to show/hide]"
 
-    - WiP
-    - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by today's standards.
+    {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3469,7 +3341,7 @@ We've made 3 guides related to this.
 
 ??? question "German Scene - [Click to show/hide]"
 
-    - Known German Scene groups (which are not defined as LQ).
+    {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3491,14 +3363,7 @@ We've made 3 guides related to this.
 
 ??? question "German LQ - [Click to show/hide]"
 
-    A collection of known German Low-Quality groups that are often banned from the top trackers due to their lack of quality.
-
-    !!! note
-
-        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
-        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
-        - DeTAG/ReTAG = Detagging or stealing groups.
-        - Other reasons = Group is banned on top tier trackers or is generally known for poor quality/errors.
+    {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3516,7 +3381,7 @@ We've made 3 guides related to this.
 
 ??? question "German LQ (Release Title)- [Click to show/hide]"
 
-    A collection of terms seen in the titles of Low-Quality releases that are not captured by using a release group name.
+    {! include-markdown "../../includes/cf-descriptions/german-lq-release-title.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3534,7 +3399,7 @@ We've made 3 guides related to this.
 
 ??? question "German Microsized - [Click to show/hide]"
 
-    A collection of known German groups producing low quality micro-sized releases.
+    {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3550,7 +3415,7 @@ We've made 3 guides related to this.
 
 ??? question "German 1080p Booster - [Click to show/hide]"
 
-    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+    {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -3566,7 +3431,7 @@ We've made 3 guides related to this.
 
 ??? question "German 2160p Booster - [Click to show/hide]"
 
-    As the scores for German groups are higher, we need to introduce resolution boosters to ensure upgradability between resolutions, allowing for upgrades from English to German.
+    {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 

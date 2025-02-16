@@ -12,4 +12,6 @@ This is a custom format to help Radarr/Sonarr recognize and ignore BR-DISK (ISOs
 
     - Blame the often incorrectly used naming of x265 encodes.
     - Radarr/Sonarr uses dynamic custom formats.
+
+--8<-- "includes/cf-descriptions/apply-10000.md"
 <!-- markdownlint-enable MD041-->
