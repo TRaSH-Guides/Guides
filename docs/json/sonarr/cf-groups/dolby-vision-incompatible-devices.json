@@ -6,7 +6,7 @@
     {
       "name": "DV (WEBDL)",
       "trash_id": "9b27ab6498ec0f31a3353992e19434ca",
-      "required": false
+      "required": true
     }
   ],
   "quality_profiles": {
