@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 **DTS-X**<br>
 
 [DTS:X is an object-based audio codec](https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it) which aims to create a multi-dimensional sound that “moves around you like it would in real life”.

@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 **Canadian Broadcasting Corporation**<br>
 
 [From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Canadian_Broadcasting_Corporationn>){:target="\_blank" rel="noopener noreferrer"}
@@ -9,3 +10,4 @@ The Canadian Broadcasting Corporation (French: Société Radio-Canada), branded 
 [From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/CBC_Gem>){:target="\_blank" rel="noopener noreferrer"}
 
 CBC Gem is CBC Television's over-the-top streaming platform; it launched in 2018, replacing the existing CBC TV app. The service carries live and on-demand programming from CBC Television, CBC News, and CBC Sports, as well as short- and long-form original programming and acquisitions (including films and television series).
+<!-- markdownlint-enable MD041-->
