@@ -160,7 +160,7 @@ We've made 3 guides related to this.
 
 ### TrueHD ATMOS
 
-??? question "TrueHD ATMOS - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/truehd-atmos.md" !}
 
@@ -176,7 +176,7 @@ We've made 3 guides related to this.
 
 ### DTS X
 
-??? question "DTS:X - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dts-x.md" !}
 
@@ -192,7 +192,7 @@ We've made 3 guides related to this.
 
 ### ATMOS (undefined)
 
-??? question "ATMOS (undefined) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/atmos-undefined.md" !}
 
@@ -210,7 +210,7 @@ We've made 3 guides related to this.
 
 <sub>DDPlus = DD+</sub>
 
-??? question "DD+ ATMOS - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/ddplus-atmos.md" !}
 
@@ -226,7 +226,7 @@ We've made 3 guides related to this.
 
 ### TrueHD
 
-??? question "TrueHD - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/truehd.md" !}
 
@@ -242,7 +242,7 @@ We've made 3 guides related to this.
 
 ### DTS-HD MA
 
-??? question "DTS-HD MA - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dts-hd-ma.md" !}
 
@@ -258,7 +258,7 @@ We've made 3 guides related to this.
 
 ### FLAC
 
-??? question "FLAC - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/flac.md" !}
 
@@ -274,7 +274,7 @@ We've made 3 guides related to this.
 
 ### PCM
 
-??? question "PCM - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/pcm.md" !}
 
@@ -290,7 +290,7 @@ We've made 3 guides related to this.
 
 ### DTS-HD HRA
 
-??? question "DTS-HD HRA - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dts-hd-hra.md" !}
 
@@ -308,7 +308,7 @@ We've made 3 guides related to this.
 
 <sub>Dolby Digital Plus = DD+ = DDPlus</sub>
 
-??? question "DD+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/ddplus.md" !}
 
@@ -324,7 +324,7 @@ We've made 3 guides related to this.
 
 ### DTS-ES
 
-??? question "DTS-ES - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dts-es.md" !}
 
@@ -342,7 +342,7 @@ We've made 3 guides related to this.
 
 <sub>DTS = Basic DTS</sub>
 
-??? question "DTS - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dts.md" !}
 
@@ -358,7 +358,7 @@ We've made 3 guides related to this.
 
 ### AAC
 
-??? question "AAC - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/aac.md" !}
 
@@ -376,7 +376,7 @@ We've made 3 guides related to this.
 
 <sub>(Basic) Dolby Digital = DD</sub>
 
-??? question "DD - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dd.md" !}
 
@@ -392,7 +392,7 @@ We've made 3 guides related to this.
 
 ### MP3
 
-??? question "MP3 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/mp3.md" !}
 
@@ -408,7 +408,7 @@ We've made 3 guides related to this.
 
 ### Opus
 
-??? question "Opus - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/opus.md" !}
 
@@ -519,7 +519,7 @@ We've made 3 guides related to this.
 <sub>DV = DoVi = Dolby Vision</sub><br>
 <sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
-??? question "DV HDR10+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus.md" !}
 
@@ -537,7 +537,7 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "DV HDR10 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-hdr10.md" !}
 
@@ -555,7 +555,7 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "DV - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     --8<-- "includes/cf-descriptions/dv.md"
 
@@ -575,7 +575,7 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "DV HLG - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-hlg.md" !}
 
@@ -593,7 +593,7 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "DV SDR - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-sdr.md" !}
 
@@ -611,7 +611,7 @@ We've made 3 guides related to this.
 
 <sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
-??? question "HDR10+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
 
@@ -629,7 +629,7 @@ We've made 3 guides related to this.
 
 <sub>HDR10</sub>
 
-??? question "HDR10 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
 
@@ -647,7 +647,7 @@ We've made 3 guides related to this.
 
 <sub>HDR</sub>
 
-??? question "HDR - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hdr.md" !}
 
@@ -663,7 +663,7 @@ We've made 3 guides related to this.
 
 ### HDR (undefined)
 
-??? question "HDR (undefined) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hdr-undefined.md" !}
 
@@ -681,7 +681,7 @@ We've made 3 guides related to this.
 
 <sub>PQ = PQ10</sub>
 
-??? question "PQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/pq.md" !}
 
@@ -699,7 +699,7 @@ We've made 3 guides related to this.
 
 <sub>HLG = HLG10</sub>
 
-??? question "HLG - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
 
@@ -719,7 +719,7 @@ We've made 3 guides related to this.
 
 ### Hybrid
 
-??? question "Hybrid - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hybrid.md" !}
 
@@ -735,7 +735,7 @@ We've made 3 guides related to this.
 
 ### Remaster
 
-??? question "Remaster - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/remaster.md" !}
 
@@ -755,7 +755,7 @@ We've made 3 guides related to this.
 
 ### AV1
 
-??? question "AV1 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/av1.md" !}
 
@@ -771,7 +771,7 @@ We've made 3 guides related to this.
 
 ### BR-DISK
 
-??? question "BR-DISK - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/br-disk.md" !}
 
@@ -789,7 +789,7 @@ We've made 3 guides related to this.
 
 <sub>Low-Quality Releases = LQ</sub>
 
-??? question "LQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/lq.md" !}
 
@@ -823,7 +823,7 @@ We've made 3 guides related to this.
 
 ### Upscaled
 
-??? question "Upscaled - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/upscaled.md" !}
 
@@ -841,7 +841,7 @@ We've made 3 guides related to this.
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
 
-??? question "x265 (HD) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/x265-hd-sonarr.md" !}
 
@@ -857,7 +857,7 @@ We've made 3 guides related to this.
 
 ### Extras
 
-??? question "Extras - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/extras.md" !}
 
@@ -877,7 +877,7 @@ We've made 3 guides related to this.
 
 ### 720p
 
-??? question "720p - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/720p.md" !}
 
@@ -893,7 +893,7 @@ We've made 3 guides related to this.
 
 ### 1080p
 
-??? question "1080p - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/1080p.md" !}
 
@@ -909,7 +909,7 @@ We've made 3 guides related to this.
 
 ### 2160p
 
-??? question "2160p - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/2160p.md" !}
 
@@ -961,7 +961,7 @@ We've made 3 guides related to this.
 
 ### x264
 
-??? question "x264 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/x264.md" !}
 
@@ -977,7 +977,7 @@ We've made 3 guides related to this.
 
 ### x265
 
-??? question "x265 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/x265.md" !}
 
@@ -993,7 +993,7 @@ We've made 3 guides related to this.
 
 ### x266
 
-??? question "x266 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/x266.md" !}
 
@@ -1033,7 +1033,7 @@ We've made 3 guides related to this.
 
 ### FreeLeech
 
-??? question "FreeLeech - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/freeleech.md" !}
 
@@ -1049,7 +1049,7 @@ We've made 3 guides related to this.
 
 ### Bad Dual Groups
 
-??? question "Bad dual groups - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/bad-dual-groups.md" !}
 
@@ -1067,7 +1067,7 @@ We've made 3 guides related to this.
 
 <sub>DV = DoVi = Dolby Vision</sub>
 
-??? question "DV (WEBDL) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-webdl.md" !}
 
@@ -1083,7 +1083,7 @@ We've made 3 guides related to this.
 
 ### HDR10Plus Boost
 
-??? question "HDR10+ Boost - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hdr10plus-boost.md" !}
 
@@ -1099,7 +1099,7 @@ We've made 3 guides related to this.
 
 ### DV HDR10Plus Boost
 
-??? question "DV HDR10+ Boost - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus-boost.md" !}
 
@@ -1115,7 +1115,7 @@ We've made 3 guides related to this.
 
 ### No-RlsGroup
 
-??? question "No-RlsGroup - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/no-rlsgroup.md" !}
 
@@ -1131,7 +1131,7 @@ We've made 3 guides related to this.
 
 ### Obfuscated
 
-??? question "Obfuscated - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/obfuscated.md" !}
 
@@ -1147,7 +1147,7 @@ We've made 3 guides related to this.
 
 ### Retags
 
-??? question "Retags - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/retags.md" !}
 
@@ -1163,7 +1163,7 @@ We've made 3 guides related to this.
 
 ### Scene
 
-??? question "Scene - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/scene.md" !}
 
@@ -1179,7 +1179,7 @@ We've made 3 guides related to this.
 
 ### Single Episode
 
-??? question "Single Episode - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/single-episode.md" !}
 
@@ -1195,7 +1195,7 @@ We've made 3 guides related to this.
 
 ### Multi-Episode
 
-??? question "Multi-Episode - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/multi-episode.md" !}
 
@@ -1211,7 +1211,7 @@ We've made 3 guides related to this.
 
 ### Season Pack
 
-??? question "Season Pack - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/season-pack.md" !}
 
@@ -1227,7 +1227,7 @@ We've made 3 guides related to this.
 
 ### x265 (no HDR/DV)
 
-??? question "x265 (no HDR/DV) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/x265-no-hdrdv-sonarr.md" !}
 
@@ -1243,7 +1243,7 @@ We've made 3 guides related to this.
 
 ### VC-1
 
-??? question "VC-1 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/vc-1.md" !}
 
@@ -1259,7 +1259,7 @@ We've made 3 guides related to this.
 
 ### VP9
 
-??? question "VP9 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/vp9.md" !}
 
@@ -1275,7 +1275,7 @@ We've made 3 guides related to this.
 
 ### Internal
 
-??? question "Internal - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/internal.md" !}
 
@@ -1291,7 +1291,7 @@ We've made 3 guides related to this.
 
 ### SDR
 
-??? question "SDR - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
 
@@ -1307,7 +1307,7 @@ We've made 3 guides related to this.
 
 ### SDR (no WEBDL)
 
-??? question "SDR (no WEBDL) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl-sonarr.md" !}
 
@@ -1323,7 +1323,7 @@ We've made 3 guides related to this.
 
 ### DV (Disk)
 
-??? question "DV (Disk) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dv-disk.md" !}
 
@@ -1339,7 +1339,7 @@ We've made 3 guides related to this.
 
 ### HFR
 
-??? question "HFR - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hfr.md" !}
 
@@ -1359,7 +1359,7 @@ We've made 3 guides related to this.
 
 ### Remux Tier 01
 
-??? question "Remux Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/remux-tier-01.md" !}
 
@@ -1375,7 +1375,7 @@ We've made 3 guides related to this.
 
 ### Remux Tier 02
 
-??? question "Remux Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/remux-tier-02-sonarr.md" !}
 
@@ -1389,7 +1389,7 @@ We've made 3 guides related to this.
 
 ### HD Bluray Tier 01
 
-??? question "HD Bluray Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-01.md" !}
 
@@ -1405,7 +1405,7 @@ We've made 3 guides related to this.
 
 ### HD Bluray Tier 02
 
-??? question "HD Bluray Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hd-bluray-tier-02.md" !}
 
@@ -1419,7 +1419,7 @@ We've made 3 guides related to this.
 
 ### WEB Tier 01
 
-??? question "WEB Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/web-tier-01.md" !}
 
@@ -1435,7 +1435,7 @@ We've made 3 guides related to this.
 
 ### WEB Tier 02
 
-??? question "WEB Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/web-tier-02.md" !}
 
@@ -1451,7 +1451,7 @@ We've made 3 guides related to this.
 
 ### WEB Tier 03
 
-??? question "WEB Tier 03 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/web-tier-03.md" !}
 
@@ -1467,7 +1467,7 @@ We've made 3 guides related to this.
 
 ### WEB Scene
 
-??? question "WEB Scene - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/web-scene.md" !}
 
@@ -1493,7 +1493,7 @@ We've made 3 guides related to this.
 
 <sub>Amazon Prime Video</sub>
 
-??? question "Amazon Prime Video - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
 
@@ -1511,7 +1511,7 @@ We've made 3 guides related to this.
 
 <sub>Apple TV+</sub>
 
-??? question "Apple TV+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
 
@@ -1529,7 +1529,7 @@ We've made 3 guides related to this.
 
 <sub>CC = Comedy Central</sub>
 
-??? question "CC - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/cc.md" !}
 
@@ -1547,7 +1547,7 @@ We've made 3 guides related to this.
 
 <sub>DC Universe (streaming service)</sub>
 
-??? question "DC Universe (streaming service) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dcu.md" !}
 
@@ -1565,7 +1565,7 @@ We've made 3 guides related to this.
 
 <sub>Disney+</sub>
 
-??? question "Disney+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
 
@@ -1583,7 +1583,7 @@ We've made 3 guides related to this.
 
 <sub>HBO Max</sub>
 
-??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
@@ -1601,7 +1601,7 @@ We've made 3 guides related to this.
 
 <sub>HBO</sub>
 
-??? question "HBO - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
 
@@ -1619,7 +1619,7 @@ We've made 3 guides related to this.
 
 <sub>Hulu</sub>
 
-??? question "Hulu - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
 
@@ -1637,7 +1637,7 @@ We've made 3 guides related to this.
 
 <sub>iT = iTunes</sub>
 
-??? question "iTunes - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/it.md" !}
 
@@ -1655,7 +1655,7 @@ We've made 3 guides related to this.
 
 <sub>Max (streaming service)</sub>
 
-??? question "Max (streaming service) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
 
@@ -1673,7 +1673,7 @@ We've made 3 guides related to this.
 
 <sub>Netflix</sub>
 
-??? question "Netflix - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/nf.md" !}
 
@@ -1691,7 +1691,7 @@ We've made 3 guides related to this.
 
 <sub>Paramount+</sub>
 
-??? question "Paramount+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
 
@@ -1709,7 +1709,7 @@ We've made 3 guides related to this.
 
 <sub>Peacock TV</sub>
 
-??? question "Peacock TV - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
 
@@ -1727,7 +1727,7 @@ We've made 3 guides related to this.
 
 <sub>SHOWTIME</sub>
 
-??? question "SHOWTIME - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/sho.md" !}
 
@@ -1745,7 +1745,7 @@ We've made 3 guides related to this.
 
 <sub>Stan</sub>
 
-??? question "STAN - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/stan.md" !}
 
@@ -1763,7 +1763,7 @@ We've made 3 guides related to this.
 
 <sub>Syfy</sub>
 
-??? question "SYFY - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/syfy.md" !}
 
@@ -1785,7 +1785,7 @@ We've made 3 guides related to this.
 
 <sub>AUViO/RTBF</sub>
 
-??? question "AUViO/RTBF - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-auvio.md" !}
 
@@ -1803,7 +1803,7 @@ We've made 3 guides related to this.
 
 <sub>MyCANAL = CANAL+/MyCANAL</sub>
 
-??? question "MyCANAL - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-mycanal.md" !}
 
@@ -1821,7 +1821,7 @@ We've made 3 guides related to this.
 
 <sub>SALTO = SⱯLTO</sub>
 
-??? question "SⱯLTO - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-salto.md" !}
 
@@ -1843,7 +1843,7 @@ We've made 3 guides related to this.
 
 <sub>FOD = Fuji Television On Demand</sub>
 
-??? question "Fuji Television On Demand - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
@@ -1861,7 +1861,7 @@ We've made 3 guides related to this.
 
 <sub>Disney+ Hotstar</sub>
 
-??? question "Disney+ Hotstar - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
 
@@ -1879,7 +1879,7 @@ We've made 3 guides related to this.
 
 <sub>TVer</sub>
 
-??? question "TVer - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/tver.md" !}
 
@@ -1897,7 +1897,7 @@ We've made 3 guides related to this.
 
 <sub>TVING</sub>
 
-??? question "TVING - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/tving.md" !}
 
@@ -1915,7 +1915,7 @@ We've made 3 guides related to this.
 
 <sub>U-NEXT</sub>
 
-??? question "U-NEXT - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
 
@@ -1933,7 +1933,7 @@ We've made 3 guides related to this.
 
 <sub>VIU</sub>
 
-??? question "VIU - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/viu.md" !}
 
@@ -1955,7 +1955,7 @@ We've made 3 guides related to this.
 
 <sub>NLZiet</sub>
 
-??? question "NLZiet - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/nlz.md" !}
 
@@ -1973,7 +1973,7 @@ We've made 3 guides related to this.
 
 <sub>Videoland</sub>
 
-??? question "Videoland - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
 
@@ -1995,7 +1995,7 @@ We've made 3 guides related to this.
 
 <sub>4OD</sub>
 
-??? question "4OD - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/all4.md" !}
 
@@ -2013,7 +2013,7 @@ We've made 3 guides related to this.
 
 <sub>ALL4</sub>
 
-??? question "ALL4 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/all4.md" !}
 
@@ -2031,7 +2031,7 @@ We've made 3 guides related to this.
 
 <sub>BBC iPlayer aka iP</sub>
 
-??? question "BBC iPlayer aka iP - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/ip.md" !}
 
@@ -2049,7 +2049,7 @@ We've made 3 guides related to this.
 
 <sub>ITVX aka ITV</sub>
 
-??? question "ITVX aka ITV - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
 
@@ -2067,7 +2067,7 @@ We've made 3 guides related to this.
 
 <sub>MY5 aka Channel 5</sub>
 
-??? question "MY5 aka Channel 5 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/my5.md" !}
 
@@ -2085,7 +2085,7 @@ We've made 3 guides related to this.
 
 <sub>NOW</sub>
 
-??? question "NOW - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/now.md" !}
 
@@ -2107,7 +2107,7 @@ We've made 3 guides related to this.
 
 <sub>Australian Broadcasting Corporation</sub>
 
-??? question "AUBC - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/aubc.md" !}
 
@@ -2125,7 +2125,7 @@ We've made 3 guides related to this.
 
 <sub>CBC</sub>
 
-??? question "CBC - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/cbc.md" !}
 
@@ -2143,7 +2143,7 @@ We've made 3 guides related to this.
 
 <sub>Crave</sub>
 
-??? question "CRAVE - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/crav.md" !}
 
@@ -2161,7 +2161,7 @@ We've made 3 guides related to this.
 
 <sub>Discovery+</sub>
 
-??? question "Discovery+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dscp.md" !}
 
@@ -2179,7 +2179,7 @@ We've made 3 guides related to this.
 
 <sub>OViD</sub>
 
-??? question "OViD - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
 
@@ -2197,7 +2197,7 @@ We've made 3 guides related to this.
 
 <sub>Star+</sub>
 
-??? question "Star+ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/strp.md" !}
 
@@ -2215,7 +2215,7 @@ We've made 3 guides related to this.
 
 <sub>RED = Youtube Red = Youtube Premium</sub>
 
-??? question "Youtube Red - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/red.md" !}
 
@@ -2233,7 +2233,7 @@ We've made 3 guides related to this.
 
 <sub>Quibi</sub>
 
-??? question "Quibi - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/qibi.md" !}
 
@@ -2253,7 +2253,7 @@ We've made 3 guides related to this.
 
 #### B-Global
 
-??? question "B-Global - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/bglobal.md" !}
 
@@ -2269,7 +2269,7 @@ We've made 3 guides related to this.
 
 #### Bilibili
 
-??? question "Bilibili - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/bilibili.md" !}
 
@@ -2287,7 +2287,7 @@ We've made 3 guides related to this.
 
 <sub>Crunchyroll</sub>
 
-??? question "Crunchyroll - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/cr.md" !}
 
@@ -2305,7 +2305,7 @@ We've made 3 guides related to this.
 
 <sub>Funimation</sub>
 
-??? question "Funimation - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/funi.md" !}
 
@@ -2321,7 +2321,7 @@ We've made 3 guides related to this.
 
 #### HIDIVE
 
-??? question "HIDIVE - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/hidive.md" !}
 
@@ -2337,7 +2337,7 @@ We've made 3 guides related to this.
 
 #### VRV
 
-??? question "VRV - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
 
@@ -2353,7 +2353,7 @@ We've made 3 guides related to this.
 
 #### ABEMA
 
-??? question "Abema - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/abema.md" !}
 
@@ -2371,7 +2371,7 @@ We've made 3 guides related to this.
 
 <sub>ADN = Animation Digital Network</sub>
 
-??? question "ADN - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-adn.md" !}
 
@@ -2389,7 +2389,7 @@ We've made 3 guides related to this.
 
 <sub>WKN = Wakanim</sub>
 
-??? question "WKN - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-wkn.md" !}
 
@@ -2409,7 +2409,7 @@ We've made 3 guides related to this.
 
 #### UHD Streaming Boost
 
-??? question "UHD Streaming Boost - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/uhd-streaming-boost.md" !}
 
@@ -2425,7 +2425,7 @@ We've made 3 guides related to this.
 
 #### UHD Streaming Cut
 
-??? question "UHD Streaming Cut - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/uhd-streaming-cut.md" !}
 
@@ -2445,7 +2445,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
-??? question "Anime BD Tier 01 (Top SeaDex Muxers) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-01-top-seadex-muxers.md" !}
 
@@ -2461,7 +2461,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
-??? question "Anime BD Tier 02 (SeaDex Muxers) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-02-seadex-muxers.md" !}
 
@@ -2477,7 +2477,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
-??? question "Anime BD Tier 03 (SeaDex Muxers) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-02-seadex-muxers.md" !}
 
@@ -2493,7 +2493,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
-??? question "Anime BD Tier 04 (SeaDex Muxers) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-04-seadex-muxers.md" !}
 
@@ -2509,7 +2509,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 05 (Remuxes)
 
-??? question "Anime BD Tier 05 (Remuxes) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-05-remuxes.md" !}
 
@@ -2525,7 +2525,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 06 (FanSubs)
 
-??? question "Anime BD Tier 06 (FanSubs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-06-fansubs.md" !}
 
@@ -2541,7 +2541,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 07 (P2P/Scene)
 
-??? question "Anime BD Tier 07 (P2P/Scene) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     ! include-markdown "../../includes/cf-descriptions/anime-bd-tier-07-p2pscene
 
@@ -2557,7 +2557,7 @@ We've made 3 guides related to this.
 
 ### Anime BD Tier 08 (Mini Encodes)
 
-??? question "Anime BD Tier 08 (Mini Encodes) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-bd-tier-08-mini-encodes.md" !}
 
@@ -2573,7 +2573,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 01 (Muxers)
 
-??? question "Anime Web Tier 01 (Muxers) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-01-muxers.md" !}
 
@@ -2589,7 +2589,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 02 (Top FanSubs)
 
-??? question "Anime Web Tier 02 (Top FanSubs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-02-top-fansubs.md" !}
 
@@ -2605,7 +2605,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 03 (Official Subs)
 
-??? question "Anime Web Tier 03 (Official Subs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-03-official-subs.md" !}
 
@@ -2621,7 +2621,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 04 (Official Subs)
 
-??? question "Anime Web Tier 04 (Official Subs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-04-official-subs.md" !}
 
@@ -2637,7 +2637,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 05 (FanSubs)
 
-??? question "Anime Web Tier 05 (FanSubs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-05-fansubs.md" !}
 
@@ -2653,7 +2653,7 @@ We've made 3 guides related to this.
 
 ### Anime Web Tier 06 (FanSubs)
 
-??? question "Anime Web Tier 06 (FanSubs) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-web-tier-06-fansubs.md" !}
 
@@ -2669,7 +2669,7 @@ We've made 3 guides related to this.
 
 ### Anime Raws
 
-??? question "Anime Raws - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-raws.md" !}
 
@@ -2685,7 +2685,7 @@ We've made 3 guides related to this.
 
 ### Anime LQ Groups
 
-??? question "Anime LQ Groups - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-lq-groups.md" !}
 
@@ -2701,7 +2701,7 @@ We've made 3 guides related to this.
 
 ### Uncensored
 
-??? question "Uncensored - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/uncensored.md" !}
 
@@ -2717,7 +2717,7 @@ We've made 3 guides related to this.
 
 ### v0
 
-??? question "v0 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/v0.md" !}
 
@@ -2733,7 +2733,7 @@ We've made 3 guides related to this.
 
 ### v1
 
-??? question "v1 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/v1.md" !}
 
@@ -2749,7 +2749,7 @@ We've made 3 guides related to this.
 
 ### v2
 
-??? question "v2 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/v2.md" !}
 
@@ -2765,7 +2765,7 @@ We've made 3 guides related to this.
 
 ### v3
 
-??? question "v3 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/v3.md" !}
 
@@ -2781,7 +2781,7 @@ We've made 3 guides related to this.
 
 ### v4
 
-??? question "v4 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/v4.md" !}
 
@@ -2797,7 +2797,7 @@ We've made 3 guides related to this.
 
 ### 10bit
 
-??? question "10bit - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/10bit.md" !}
 
@@ -2813,7 +2813,7 @@ We've made 3 guides related to this.
 
 ### Anime Dual Audio
 
-??? question "Anime Dual Audio - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/anime-dual-audio.md" !}
 
@@ -2829,7 +2829,7 @@ We've made 3 guides related to this.
 
 ### Dubs Only
 
-??? question "Dubs Only - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/dubs-only.md" !}
 
@@ -2849,7 +2849,7 @@ We've made 3 guides related to this.
 
 ### VFF
 
-??? question "VFF - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vff.md" !}
 
@@ -2865,7 +2865,7 @@ We've made 3 guides related to this.
 
 ### VOF
 
-??? question "VOF - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vof.md" !}
 
@@ -2881,7 +2881,7 @@ We've made 3 guides related to this.
 
 ### VFI
 
-??? question "VFI - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vfi.md" !}
 
@@ -2897,7 +2897,7 @@ We've made 3 guides related to this.
 
 ### VF2
 
-??? question "VF2 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vf2.md" !}
 
@@ -2913,7 +2913,7 @@ We've made 3 guides related to this.
 
 ### VFQ
 
-??? question "VFQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vfq.md" !}
 
@@ -2929,7 +2929,7 @@ We've made 3 guides related to this.
 
 ### VOQ
 
-??? question "VOQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-voq.md" !}
 
@@ -2945,7 +2945,7 @@ We've made 3 guides related to this.
 
 ### VQ
 
-??? question "VQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vq.md" !}
 
@@ -2961,7 +2961,7 @@ We've made 3 guides related to this.
 
 ### VFB
 
-??? question "VFB - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vfb.md" !}
 
@@ -2977,7 +2977,7 @@ We've made 3 guides related to this.
 
 ### VOSTFR
 
-??? question "VOSTFR - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-vostfr.md" !}
 
@@ -2993,7 +2993,7 @@ We've made 3 guides related to this.
 
 ### FanSUB
 
-??? question "FanSUB - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/fansub.md" !}
 
@@ -3009,7 +3009,7 @@ We've made 3 guides related to this.
 
 ### FastSUB
 
-??? question "FastSUB - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/fastsub.md" !}
 
@@ -3029,7 +3029,7 @@ We've made 3 guides related to this.
 
 ### FR Remux Tier 01
 
-??? question "Remux Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-remux-tier-01.md" !}
 
@@ -3045,7 +3045,7 @@ We've made 3 guides related to this.
 
 ### FR HD Bluray Tier 01
 
-??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-hd-bluray-tier-01.md" !}
 
@@ -3061,7 +3061,7 @@ We've made 3 guides related to this.
 
 ### FR WEB Tier 01
 
-??? question "FR WEB Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-web-tier-01.md" !}
 
@@ -3077,7 +3077,7 @@ We've made 3 guides related to this.
 
 ### FR WEB Tier 02
 
-??? question "FR WEB Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-web-tier-02.md" !}
 
@@ -3093,7 +3093,7 @@ We've made 3 guides related to this.
 
 ### FR WEB Tier 03
 
-??? question "FR WEB Tier 03 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-web-tier-03.md" !}
 
@@ -3109,7 +3109,7 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 01
 
-??? question "FR Anime Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-anime-tier-01.md" !}
 
@@ -3125,7 +3125,7 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 02
 
-??? question "FR Anime Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-anime-tier-02.md" !}
 
@@ -3141,7 +3141,7 @@ We've made 3 guides related to this.
 
 ### FR Anime Tier 03
 
-??? question "FR Anime Tier 03 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-anime-tier-03.md" !}
 
@@ -3157,7 +3157,7 @@ We've made 3 guides related to this.
 
 ### FR Anime FanSub
 
-??? question "FR Anime FanSub - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-anime-fansub.md" !}
 
@@ -3173,7 +3173,7 @@ We've made 3 guides related to this.
 
 ### FR Scene Groups
 
-??? question "FR Scene Groups - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-scene.md" !}
 
@@ -3191,7 +3191,7 @@ We've made 3 guides related to this.
 
 <sub>French Low-Quality Releases = FR LQ</sub>
 
-??? question "FR LQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/french-lq.md" !}
 
@@ -3211,7 +3211,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 01
 
-??? question "German Remux Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-remux-tier-01.md" !}
 
@@ -3227,7 +3227,7 @@ We've made 3 guides related to this.
 
 ### German Remux Tier 02
 
-??? question "German Remux Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-remux-tier-02.md" !}
 
@@ -3243,7 +3243,7 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 01
 
-??? question "German Bluray Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-01.md" !}
 
@@ -3259,7 +3259,7 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 02
 
-??? question "German Bluray Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-02.md" !}
 
@@ -3275,7 +3275,7 @@ We've made 3 guides related to this.
 
 ### German Bluray Tier 03
 
-??? question "German Bluray Tier 03 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-bluray-tier-03.md" !}
 
@@ -3291,7 +3291,7 @@ We've made 3 guides related to this.
 
 ### German Web Tier 01
 
-??? question "German Web Tier 01 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-01.md" !}
 
@@ -3307,7 +3307,7 @@ We've made 3 guides related to this.
 
 ### German Web Tier 02
 
-??? question "German Tier 02 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-02.md" !}
 
@@ -3323,7 +3323,7 @@ We've made 3 guides related to this.
 
 ### German Web Tier 03
 
-??? question "German Tier 03 - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-web-tier-03.md" !}
 
@@ -3339,7 +3339,7 @@ We've made 3 guides related to this.
 
 ### German Scene
 
-??? question "German Scene - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-scene.md" !}
 
@@ -3361,7 +3361,7 @@ We've made 3 guides related to this.
 
 <sub>German Low-Quality Releases = German LQ</sub>
 
-??? question "German LQ - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-lq.md" !}
 
@@ -3397,7 +3397,7 @@ We've made 3 guides related to this.
 
 <sub>German Microsized Releases = German Microsized</sub>
 
-??? question "German Microsized - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-microsized.md" !}
 
@@ -3413,7 +3413,7 @@ We've made 3 guides related to this.
 
 ### German 1080p Booster
 
-??? question "German 1080p Booster - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-1080p-booster.md" !}
 
@@ -3429,7 +3429,7 @@ We've made 3 guides related to this.
 
 ### German 2160p Booster
 
-??? question "German 2160p Booster - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/german-2160p-booster.md" !}
 
@@ -3451,7 +3451,7 @@ We've made 3 guides related to this.
 
 <sub>Language: French Only</sub>
 
-??? question "Language: Not French - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-french.md" !}
 
@@ -3469,7 +3469,7 @@ We've made 3 guides related to this.
 
 <sub>Language: Original Only</sub>
 
-??? question "Language: Not Original - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-original.md" !}
 
@@ -3487,7 +3487,7 @@ We've made 3 guides related to this.
 
 <sub>Language: Original + French</sub>
 
-??? question "Language: Original + French - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     Language Specification Original + French
 
@@ -3505,7 +3505,7 @@ We've made 3 guides related to this.
 
 <sub>Language: English Only</sub>
 
-??? question "Language: Not English - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-english.md" !}
 
@@ -3523,7 +3523,7 @@ We've made 3 guides related to this.
 
 <sub>Language: German + Original</sub>
 
-??? question "Language: German DL - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-german-dl.md" !}
 
@@ -3539,7 +3539,7 @@ We've made 3 guides related to this.
 
 ### Language: German DL (undefined)
 
-??? question "German DL (undefined) - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-german-dl-undefined.md" !}
 
@@ -3555,7 +3555,7 @@ We've made 3 guides related to this.
 
 ### Language: German
 
-??? question "German - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-german.md" !}
 
@@ -3571,7 +3571,7 @@ We've made 3 guides related to this.
 
 ### Language: Not German or English
 
-??? question "German - [Click to show/hide]"
+??? question "Description - [Click to show/hide]"
 
     {! include-markdown "../../includes/cf-descriptions/language-not-german-english.md" !}
 
