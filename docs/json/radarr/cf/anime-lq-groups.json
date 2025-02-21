@@ -997,6 +997,15 @@
       }
     },
     {
+      "name": "shincaps",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(shincaps)\\b"
+      }
+    },
+    {
       "name": "SLAX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
