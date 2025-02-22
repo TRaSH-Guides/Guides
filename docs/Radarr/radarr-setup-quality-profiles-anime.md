@@ -23,7 +23,7 @@ For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommende
 
 ## Quality Settings
 
-For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 

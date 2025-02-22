@@ -3,6 +3,8 @@
   "trash_scores": {
     "default": -10000,
     "german": 0,
+    "french-anime-multi": -10000,
+    "french-anime-vostfr": -10000,
     "french-multi-vf": 0,
     "french-multi-vo": -10000,
     "french-vostfr": -10000

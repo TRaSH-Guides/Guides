@@ -1,0 +1,132 @@
+{
+  "trash_id": "c2aa9540a57d273a9e03a538efe0ca1b",
+  "type": "anime",
+  "qualities": [
+    {
+      "quality": "SDTV",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "DVD",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "DVD-R",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBDL-480p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBRip-480p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Bluray-480p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Bluray-576p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "HDTV-720p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBDL-720p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBRip-720p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Bluray-720p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "HDTV-1080p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBDL-1080p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBRip-1080p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Bluray-1080p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Remux-1080p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "HDTV-2160p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBDL-2160p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "WEBRip-2160p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Bluray-2160p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    },
+    {
+      "quality": "Remux-2160p",
+      "min": 5,
+      "preferred": 1999,
+      "max": 2000
+    }
+  ]
+}
