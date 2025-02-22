@@ -8,7 +8,7 @@
 
     TrueNAS Core defaults to `lz4` encryption as the compression level when creating a pool. This is fine for most workloads, and can be safely inherited down to other datasets under the top-level dataset. `ztsd` is currently the default in FreeBSD, however, TrueNAS Core still defaults to `lz4`. Given that media files are not very compressible by nature, the only benefit that compression provides, in this case, is to supplementary files such as `.srt`, `.nfo`, etc.
 
-    Additionally, since SMB does not support hardlinks we will only be covering the creation and use of NFS shares.
+    While SMB shares do support hardlinks when Unix extensions are enabled we will only be covering the creation and use of NFS shares.
 
 ---
 
