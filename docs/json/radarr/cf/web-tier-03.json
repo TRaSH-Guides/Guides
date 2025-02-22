@@ -54,6 +54,15 @@
       }
     },
     {
+      "name": "NPMS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(NPMS)$"
+      }
+    },
+    {
       "name": "ROCCaT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
