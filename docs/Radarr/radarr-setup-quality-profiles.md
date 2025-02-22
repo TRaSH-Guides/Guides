@@ -330,6 +330,10 @@ _The reason that we score lossy Atmos higher than lossless DTS-HD MA is that we 
 
     This way you make sure the Custom Format preferences will be used instead.
 
+### How Does Custom Format Scoring Work?
+
+{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
+
 ### Custom Formats to avoid certain releases
 
 ??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"

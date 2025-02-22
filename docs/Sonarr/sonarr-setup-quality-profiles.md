@@ -235,6 +235,10 @@ The following custom format groups should be combined with the Quality Profiles 
 
     This way you make sure the Custom Format preferences will be used instead.
 
+### How Does Custom Format Scoring Work?
+
+{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
+
 ### Custom Formats to avoid certain releases
 
 ??? question "How to use a Custom Format to avoid certain releases? - [Click to show/hide]"
