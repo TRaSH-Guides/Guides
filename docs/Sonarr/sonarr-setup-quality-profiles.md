@@ -237,7 +237,7 @@ The following custom format groups should be combined with the Quality Profiles 
 
 ### How Does Custom Format Scoring Work?
 
-{! include-markdown "../../includes/radarr/custom-format-basic-scoring-information.md" !}
+{! include-markdown "../../includes/shared/custom-format-basic-scoring-information.md" !}
 
 ### Custom Formats to avoid certain releases
 
