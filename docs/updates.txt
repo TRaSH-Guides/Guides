@@ -1,3 +1,15 @@
+# 2025-02-23 01:36
+- [fix(guide): update zfs/truenas blurbs for smb and fallocate](https://github.com/TRaSH-Guides/Guides/pull/2295)
+- [fix(starr): SCENE custom formats matching most German language releases.](https://github.com/TRaSH-Guides/Guides/pull/2290)
+- [feat(guide): Add basic information for how Custom Format scoring works](https://github.com/TRaSH-Guides/Guides/pull/2294)
+- [feat(radarr): Update Radarr Tiers](https://github.com/TRaSH-Guides/Guides/pull/2291)
+- [feat(sonarr): Remove Remuxes from Sonarr Alternative Quality Profiles](https://github.com/TRaSH-Guides/Guides/pull/2292)
+- [feat(starr-anime): Add shincaps to Anime LQ Groups](https://github.com/TRaSH-Guides/Guides/pull/2288)
+- [feat(starr-anime): Fix PMR regex to match if at end of filename](https://github.com/TRaSH-Guides/Guides/pull/2283)
+- [feat(guide): Improve Custom Format Descriptions](https://github.com/TRaSH-Guides/Guides/pull/2282)
+- [fix(guide-sync): Profile exclusions](https://github.com/TRaSH-Guides/Guides/pull/2285)
+- [feat(misc): Updated the `x265-4k` aka `The Golden Rule`](https://github.com/TRaSH-Guides/Guides/pull/2284)
+
 # 2025-02-16 01:36
 - [fix(starr-german): Make DL Tag required and negated for the German Language CF to avoid double scoring.](https://github.com/TRaSH-Guides/Guides/pull/2281)
 - [feat(radarr-german): add Radarr Remux 1080p Profile to German Guide](https://github.com/TRaSH-Guides/Guides/pull/2257)
