@@ -2,6 +2,8 @@
   "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
   "trash_scores": {
     "default": 1700,
+    "french-anime-multi": 1150,
+    "french-anime-vostfr": 1150,
     "french-multi-vf": 1700,
     "french-multi-vo": 1700,
     "french-vostfr": 0
@@ -115,15 +117,6 @@
       "required": false,
       "fields": {
         "value": "^(Psaro)$"
-      }
-    },
-    {
-      "name": "T3KASHi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(T3KASHi)$"
       }
     },
     {

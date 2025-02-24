@@ -1,0 +1,129 @@
+{
+  "trash_id": "9d2a63eda874b34e06e7a8cbea7ea639",
+  "trash_scores": {
+    "default": 1550,
+    "french-anime-multi": 1550,
+    "french-anime-vostfr": 1550
+  },
+  "name": "FR Anime Tier 03",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BLV)\\b"
+      }
+    },
+    {
+      "name": "D3T3R10R1TY",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(D3T3R10R1TY)\\b"
+      }
+    },
+    {
+      "name": "Galactic",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Galactic)\\b"
+      }
+    },
+    {
+      "name": "HANAMi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(HANAMi)\\b"
+      }
+    },
+    {
+      "name": "kazuizui",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(kazui(zui)?)\\b"
+      }
+    },
+    {
+      "name": "KHAYA",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KHAYA)\\b"
+      }
+    },
+    {
+      "name": "KushEnthusiast",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KushEnthusiast)\\b"
+      }
+    },
+    {
+      "name": "matheousse",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(matheousse)\\b"
+      }
+    },
+    {
+      "name": "Monkey-D.Lulu",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Monkey[ .-]?D[ .-]?Lulu)\\b"
+      }
+    },
+    {
+      "name": "NeoSG",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NeoSG)\\b"
+      }
+    },
+    {
+      "name": "RONiN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(RONiN)\\b"
+      }
+    },
+    {
+      "name": "TheFantastics",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TheFantastics)\\b"
+      }
+    },
+    {
+      "name": "TTN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TTN)\\b"
+      }
+    }
+  ]
+}

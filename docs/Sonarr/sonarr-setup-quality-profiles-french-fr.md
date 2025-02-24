@@ -173,11 +173,11 @@ Si vous cherchez à récuperer des Anime en VOSTFR ou en MULTi (original + fran�
 
 {! include-markdown "../../includes/french-guide/sonarr-french-anime-info-fr.md" !}
 
+{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-fr.md" !}
+
 {! include-markdown "../../includes/french-guide/sonarr-french-unwanted-fr.md" !}
 
 {! include-markdown "../../includes/french-guide/sonarr-french-streaming-services-anime-fr.md" !}
-
-{! include-markdown "../../includes/french-guide/sonarr-cf-french-anime-scoring-fr.md" !}
 
 ---
 

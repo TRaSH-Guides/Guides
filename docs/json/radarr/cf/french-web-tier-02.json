@@ -2,6 +2,8 @@
   "trash_id": "3c83a765f84239716bd5fd2d7af188f9",
   "trash_scores": {
     "default": 1650,
+    "french-anime-multi": 1100,
+    "french-anime-vostfr": 1100,
     "french-multi-vf": 1650,
     "french-multi-vo": 1650,
     "french-vostfr": 0
@@ -43,24 +45,6 @@
       "required": false,
       "fields": {
         "value": "^(ARK01)$"
-      }
-    },
-    {
-      "name": "FUJiSAN",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(FUJiSAN)$"
-      }
-    },
-    {
-      "name": "HANAMi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HANAMi)$"
       }
     },
     {
