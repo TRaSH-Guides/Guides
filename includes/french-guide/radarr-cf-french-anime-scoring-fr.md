@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ??? abstract "Scoring des Formats Personnalisés liés aux Profils de Langue - [Cliquer pour afficher/masquer]"
 
     | Formats Personnalisés                                                                                                                     | Trash ID                                                        |                                    Score profile VOSTFR                                    |                                  Score profile MULTI.VO                                   |
@@ -36,3 +37,4 @@
     !!! tip "Préférer la version FanSub aux autres"
 
         Si vous préférez les release FanSub à n'importe quelle version des Tiers FR Anime, il faut donc mettre [{{ radarr['cf']['french-anime-fansub']['name'] }}](/Radarr/radarr-collection-of-custom-formats/#fr-anime-fansub) à `1700` au lieu de `{{ radarr['cf']['french-anime-fansub']['trash_scores']['default'] }}`
+<!-- markdownlint-enable MD041-->
