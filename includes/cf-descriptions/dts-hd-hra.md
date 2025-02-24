@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**DTS-HD HRA**<br>
+**DTS-HD HRA (DTS-HD High-Resolution Audio – lossy)**<br>
 
 [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="\_blank" rel="noopener noreferrer"}
 

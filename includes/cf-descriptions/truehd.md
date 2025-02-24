@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**TrueHD**<br>
+**TrueHD (Dolby TrueHD – lossless)**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="\_blank" rel="noopener noreferrer"}
 

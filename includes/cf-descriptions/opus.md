@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**OPUS**<br>
+**Opus (Highly efficient lossy codec)**<br>
 
 [From Wikipedia, the free encyclopedia](<https://en.wikipedia.org/wiki/Opus_(audio_format)>){:target="\_blank" rel="noopener noreferrer"}
 

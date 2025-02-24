@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**DD+ aka E-AC3**<br>
+**DD+ (Dolby Digital Plus – lossy)**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="\_blank" rel="noopener noreferrer"}
 
