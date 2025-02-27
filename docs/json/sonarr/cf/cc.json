@@ -17,6 +17,15 @@
       }
     },
     {
+      "name": "CC Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(CC)\\b|\\b(CC)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

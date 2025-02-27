@@ -13,6 +13,15 @@
       }
     },
     {
+      "name": "iT Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(iT)\\b|\\b(iT)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

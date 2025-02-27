@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "NOW Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(NOW)\\b|\\b(NOW)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

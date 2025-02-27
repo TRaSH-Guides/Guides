@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "Crave Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(Crave)\\b|\\b(Crave)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

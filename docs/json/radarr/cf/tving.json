@@ -13,6 +13,15 @@
       }
     },
     {
+      "name": "TVING Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(TVING)\\b|\\b(TVING)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

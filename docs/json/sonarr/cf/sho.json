@@ -17,6 +17,15 @@
       }
     },
     {
+      "name": "SHO Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(SHO)\\b|\\b(SHO)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

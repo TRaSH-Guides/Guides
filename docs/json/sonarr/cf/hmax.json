@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "HMAX Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(HMAX)\\b|\\b(HMAX)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

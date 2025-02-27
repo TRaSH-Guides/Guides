@@ -13,6 +13,15 @@
       }
     },
     {
+      "name": "VIU Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(VIU)\\b|\\b(VIU)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

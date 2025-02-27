@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "MAX Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(MAX)\\b|\\b(MAX)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

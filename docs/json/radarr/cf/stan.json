@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "Stan Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(Stan)\\b|\\b(Stan)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,

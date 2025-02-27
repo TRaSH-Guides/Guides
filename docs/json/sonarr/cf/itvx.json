@@ -17,6 +17,15 @@
       }
     },
     {
+      "name": "ITVX Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(ITVX)\\b|\\b(ITVX)\\]"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
