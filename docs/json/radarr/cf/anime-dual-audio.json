@@ -9,7 +9,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[\\[(]?(dual)([\\s._\\])-]?(audio|varyg|\\d{3,4}p|ultrahd|4k))|(\\d{3,4}p|ultrahd|4k)[\\s._-]?dual|(JA|ZH)\\+EN|EN\\+(JA|ZH)"
+        "value": "dual[ ._-]?(audio)|[([]dual[])]|\\b(JA|ZH|KO)(?= ?\\+ ?.*?\\b(EN))|\\b(EN)(?= ?\\+ ?.*?\\b(JA|ZH|KO))|\\b(Japanese|Chinese|Korean) ?[ ._\\+&-] ?\\b(English)|\\b(English) ?[ ._\\+&-] ?\\b(Japanese|Chinese|Korean)|\\b\\d{3,4}(p|i)\\b.*\\b(dual)\\b(?!.*\\(|\\))"
       }
     },
     {
