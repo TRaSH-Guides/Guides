@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**DTS-HD MA**<br>
+**DTS-HD MA (DTS-HD Master Audio – lossless)**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="\_blank" rel="noopener noreferrer"}
 

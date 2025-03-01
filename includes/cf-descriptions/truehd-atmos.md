@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**TrueHD Atmos**<br>
+**TrueHD ATMOS (Dolby TrueHD with Atmos – lossless)**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="\_blank" rel="noopener noreferrer"}
 

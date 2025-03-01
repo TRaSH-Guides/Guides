@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**ATMOS (undefined)**<br>
+**ATMOS (undefined) (Atmos is an object-based audio format that can be paired with lossless TrueHD or lossy DD+.)**<br>
 
 This custom format covers cases where _ONLY_ "Atmos" is specified in the release title, without noting DD+ (Lossy) or TrueHD (Lossless).
 

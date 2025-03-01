@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041-->
-**DD aka AC3**<br>
+**DD (Dolby Digital – lossy)**<br>
 
 [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="\_blank" rel="noopener noreferrer"}
 
