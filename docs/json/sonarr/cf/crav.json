@@ -11,7 +11,7 @@
       "name": "Crave",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(crav(e)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }

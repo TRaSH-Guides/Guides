@@ -8,7 +8,7 @@
       "name": "ITVX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\bITV(X)?\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }

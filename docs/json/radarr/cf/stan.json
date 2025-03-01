@@ -8,7 +8,7 @@
       "name": "Stan",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(stan)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }

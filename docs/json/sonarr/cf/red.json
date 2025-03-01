@@ -11,7 +11,7 @@
       "name": "YouTube Red",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(red|youtube red)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
       }
