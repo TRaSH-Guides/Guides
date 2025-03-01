@@ -111,7 +111,6 @@ We've made 3 guides related to this.
 | [HDR10+ Boost](#hdr10plus-boost)                      |                                                                    |
 | [HFR](#hfr)                                           |                                                                    |
 | [Internal](#internal)                                 |                                                                    |
-| [Line/Mic Dubbed](#linemic-dubbed)                    |                                                                    |
 | [MPEG2](#mpeg2)                                       |                                                                    |
 | [Multi](#multi)                                       |                                                                    |
 | [No-RlsGroup](#no-rlsgroup)                           |                                                                    |
@@ -152,7 +151,7 @@ We've made 3 guides related to this.
 | [German Bluray Tier 01](#german-bluray-tier-01) | [German Microsized](#german-microsized)               | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) | [VFI](#vfi)          |
 | [German Bluray Tier 02](#german-bluray-tier-02) | [German 1080p Booster](#german-1080p-booster)         | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) | [VF2](#vf2)          |
 | [German Bluray Tier 03](#german-bluray-tier-03) | [German 2160p Booster](#german-2160p-booster)         | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   | [VFQ](#vfq)          |
-| [German Web Tier 01](#german-web-tier-01)       |                                                       | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
+| [German Web Tier 01](#german-web-tier-01)       | [Line/Mic Dubbed](#linemic-dubbed)                    | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   | [VOQ](#voq)          |
 | [German Web Tier 02](#german-web-tier-02)       |                                                       | [FR WEB Tier 01](#fr-web-tier-01)               | [VQ](#vq)            |
 | [German Web Tier 03](#german-web-tier-03)       |                                                       | [FR WEB Tier 02](#fr-web-tier-02)               | [VFB](#vfb)          |
 | [German Scene](#german-scene)                   |                                                       | [FR Anime Tier 01](#fr-anime-tier-01)           | [VOSTFR](#vostfr)    |
