@@ -80,6 +80,11 @@
       <b><a href="https://github.com/rcdailey" style="color: #ffa500;">rcdailey</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
+      <img src="https://avatars.githubusercontent.com/u/40237982?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="SeiyaGame">
+      <br>
+      <b><a href="https://github.com/SeiyaGame" style="color: #ffa500;">SeiyaGame</a></b>
+    </div>
+<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/140897249?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="kantjer01">
       <br>
       <b><a href="https://github.com/kantjer01" style="color: #ffa500;">kantjer01</a></b>
@@ -88,11 +93,6 @@
       <img src="https://avatars.githubusercontent.com/u/6703012?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="quorn23">
       <br>
       <b><a href="https://github.com/quorn23" style="color: #ffa500;">quorn23</a></b>
-    </div>
-<div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
-      <img src="https://avatars.githubusercontent.com/u/40237982?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="SeiyaGame">
-      <br>
-      <b><a href="https://github.com/SeiyaGame" style="color: #ffa500;">SeiyaGame</a></b>
     </div>
 <div style="flex: 1 1 20%; background-color: #303850; border: 1px solid #373a42; padding: 10px; text-align: center;">
       <img src="https://avatars.githubusercontent.com/u/108864960?v=4&v=4" style="width: 50px; border-radius: 50%;" alt="4l3-X">
