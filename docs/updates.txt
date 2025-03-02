@@ -1,3 +1,12 @@
+# 2025-03-02 01:37
+- [feat(radarr): Move `Line/Mic Dubbed` Custom Format to the German Misc](https://github.com/TRaSH-Guides/Guides/pull/2298)
+- [fix(starr): Improved `Generated Dynamic HDR` Custom Formats description](https://github.com/TRaSH-Guides/Guides/pull/2303)
+- [feat(starr): Add details in the audio Custom Formats description specifying which format is lossy or lossless.](https://github.com/TRaSH-Guides/Guides/pull/2299)
+- [feat(guide-sync): Removed deprecated Sonarr release profile.](https://github.com/TRaSH-Guides/Guides/pull/2304)
+- [fix(sonarr): Fix broken link on French Sonarr CF Multi](https://github.com/TRaSH-Guides/Guides/pull/2307)
+- [feat(starr-anime): Add Some-Stuffs to Anime Web Tier 04](https://github.com/TRaSH-Guides/Guides/pull/2300)
+- [feat(starr-anime): French Radarr Anime guide + fixes](https://github.com/TRaSH-Guides/Guides/pull/2286)
+
 # 2025-02-23 01:36
 - [fix(guide): update zfs/truenas blurbs for smb and fallocate](https://github.com/TRaSH-Guides/Guides/pull/2295)
 - [fix(starr): SCENE custom formats matching most German language releases.](https://github.com/TRaSH-Guides/Guides/pull/2290)
