@@ -1,7 +1,10 @@
 {
   "trash_id": "0dcf0c8a386d82e3f2d424189af14065",
   "trash_scores": {
-    "default": 1750
+    "default": 1750,
+    "french-multi-vf": 1750,
+    "french-multi-vo": 1750,
+    "french-vostfr": 0
   },
   "name": "FR UHD Bluray Tier 02",
   "includeCustomFormatWhenRenaming": false,

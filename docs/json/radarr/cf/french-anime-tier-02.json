@@ -1,0 +1,93 @@
+{
+  "trash_id": "20393e1196752dc37b25b80dfd2f8f57",
+  "trash_scores": {
+    "default": 1600,
+    "french-anime-multi": 1600,
+    "french-anime-vostfr": 1600
+  },
+  "name": "FR Anime Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Aoi-Project",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Aoi[ .-]?Project)\\b"
+      }
+    },
+    {
+      "name": "Elecman",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Elecman)\\b"
+      }
+    },
+    {
+      "name": "FUJiSAN",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(FUJiSAN)\\b"
+      }
+    },
+    {
+      "name": "GundamGuy",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(GundamGuy)\\b"
+      }
+    },
+    {
+      "name": "IssouCorp",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(IssouCorp)\\b"
+      }
+    },
+    {
+      "name": "KAF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(KAF)\\b"
+      }
+    },
+    {
+      "name": "Nagutos",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Nagutos)\\b"
+      }
+    },
+    {
+      "name": "OECUF",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(OECUF)\\b"
+      }
+    },
+    {
+      "name": "XSPITFIRE911",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(XSPITFIRE911)\\b"
+      }
+    }
+  ]
+}

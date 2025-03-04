@@ -70,6 +70,15 @@
       }
     },
     {
+      "name": "CRUCiBLE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[CRUCiBLE\\]|-CRUCiBLE\\b"
+      }
+    },
+    {
       "name": "CTR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -205,6 +214,15 @@
       }
     },
     {
+      "name": "NAN0",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?<=remux).*\\b(NAN0)\\b"
+      }
+    },
+    {
       "name": "Netaro",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -310,6 +328,15 @@
       "required": false,
       "fields": {
         "value": "\\b(ZOIO)\\b"
+      }
+    },
+    {
+      "name": "ZR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZR)\\b|-ZR-"
       }
     }
   ]

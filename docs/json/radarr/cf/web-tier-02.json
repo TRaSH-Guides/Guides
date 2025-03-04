@@ -2,7 +2,8 @@
   "trash_id": "403816d65392c79236dcb6dd591aeda4",
   "trash_scores": {
     "default": 1650,
-    "anime-radarr": 250
+    "anime-radarr": 250,
+    "french-multi-vf": 0
   },
   "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -41,15 +42,6 @@
       "required": false,
       "fields": {
         "value": "^(Flights)$"
-      }
-    },
-    {
-      "name": "Kitsune",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Kitsune)$"
       }
     },
     {

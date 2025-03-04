@@ -20,6 +20,6 @@
 
     !!! info "Only want VOSTFR anime"
 
-        For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) to `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime'] }}`, and disregard all the `Multi` and French version Custom Formats.
+        For this example if you prefer VOSTFR over potential MULTi/DUAL (original and French) audio releases, you should score the [{{ sonarr['cf']['french-vostfr']['name'] }}](/Sonarr/sonarr-collection-of-custom-formats/#vostfr) to `{{ sonarr['cf']['french-vostfr']['trash_scores']['french-anime-vostfr'] }}`.
 
          *(Optional) You can also try to set up [Bazarr](/Bazarr/Setup-Guide){:target="_blank" rel="noopener noreferrer"} to get French Sub. This is less preferred as fewer anime subs can be found online than from normal TV shows. However, it can be still a great backup.*

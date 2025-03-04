@@ -1,0 +1,29 @@
+{
+  "name": "[Required] Golden Rule HD",
+  "trash_id": "158188097a58d7687dee647e04af0da3",
+  "default": "true",
+  "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
+  "custom_formats": [
+    {
+      "name": "x265 (HD)",
+      "trash_id": "47435ece6b99a0b477caf360e79ba0bb",
+      "required": false,
+      "default": true
+    },
+    {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "9b64dff695c2115facf1b6ea59c9bd07",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642"
+    }
+  }
+}

@@ -5,86 +5,86 @@
     {
       "quality": "HDTV-720p",
       "min": 10,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "HDTV-1080p",
       "min": 15,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBRip-720p",
       "min": 10,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBDL-720p",
       "min": 10,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "Bluray-720p",
       "min": 17.1,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBRip-1080p",
       "min": 15,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBDL-1080p",
       "min": 15,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "Bluray-1080p",
       "min": 50.4,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "Bluray-1080p Remux",
       "min": 69.1,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "HDTV-2160p",
       "min": 25,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBRip-2160p",
       "min": 25,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "WEBDL-2160p",
       "min": 25,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "Bluray-2160p",
       "min": 94.6,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     },
     {
       "quality": "Bluray-2160p Remux",
       "min": 187.4,
-      "preferred": 395,
-      "max": 400
+      "preferred": 995,
+      "max": 1000
     }
   ]
 }

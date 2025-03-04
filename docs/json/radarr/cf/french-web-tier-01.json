@@ -1,7 +1,12 @@
 {
   "trash_id": "9790a618cec1aeac8ce75601a17ea40d",
   "trash_scores": {
-    "default": 1700
+    "default": 1700,
+    "french-anime-multi": 1150,
+    "french-anime-vostfr": 1150,
+    "french-multi-vf": 1700,
+    "french-multi-vo": 1700,
+    "french-vostfr": 0
   },
   "name": "FR WEB Tier 01",
   "includeCustomFormatWhenRenaming": false,
@@ -115,21 +120,21 @@
       }
     },
     {
-      "name": "T3KASHi",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(T3KASHi)$"
-      }
-    },
-    {
       "name": "TFA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(TFA)$"
+      }
+    },
+    {
+      "name": "TiNA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TiNA)$"
       }
     }
   ]

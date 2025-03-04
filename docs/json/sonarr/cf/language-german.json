@@ -1,0 +1,46 @@
+{
+  "trash_id": "8a9fcdbb445f2add0505926df3bb7b8a",
+  "trash_scores": {
+      "default": 10000
+  },
+  "name": "German",
+  "includeCustomFormatWhenRenaming": true,
+  "specifications": [
+    {
+      "name": "German",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "NOT Original",
+      "implementation": "LanguageSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "DL",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?<!WEB[-_. ]?)\\b(DL)\\b"
+      }
+    },
+    {
+      "name": "Not Subbed",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?=.*(German|Ger))(?=.*(Sub|Multi(ple)?Sub))"
+      }
+    }
+  ]
+}

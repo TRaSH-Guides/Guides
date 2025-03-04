@@ -15,11 +15,7 @@ _aka How to set up Custom Formats (Anime)_<br><br>
 It's recommended to run two Sonarr instances. One for Anime and one for normal TV shows, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
 This guide aims to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="\_blank" rel="noopener noreferrer"}
-
-!!! info ""
-
-    Nyaa is a public tracker while AB is an invite-only tracker.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -83,9 +79,9 @@ Result:
 
 ## Quality Settings
 
-For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions-anime){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Sonarr Quality Definitions - Anime](/Sonarr/Sonarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
 
-If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#sonarr-quality-definitions){:target="\_blank" rel="noopener noreferrer"}
+If you are only running a single instance of Sonarr you can instead use [Sonarr Quality Definitions](/Sonarr/Sonarr-Quality-Settings-File-Size/#standard){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 

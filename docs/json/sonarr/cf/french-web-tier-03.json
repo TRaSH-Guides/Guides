@@ -2,7 +2,11 @@
   "trash_id": "dbfc0a4b5cb4cbd693311c4482ae9683",
   "trash_scores": {
     "default": 1600,
-    "french-anime": 1100
+    "french-anime-multi": 1100,
+    "french-anime-vostfr": 1100,
+    "french-multi-vf": 1600,
+    "french-multi-vo": 1600,
+    "french-vostfr": 0
   },
   "name": "FR WEB Tier 03",
   "includeCustomFormatWhenRenaming": false,

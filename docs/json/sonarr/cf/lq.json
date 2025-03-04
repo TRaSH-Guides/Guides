@@ -1,7 +1,8 @@
 {
   "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
   "trash_scores": {
-    "default": -10000
+    "default": -10000,
+    "german": -35000
   },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
@@ -40,6 +41,15 @@
       "required": false,
       "fields": {
         "value": "^(d3g)$"
+      }
+    },
+    {
+      "name": "DepraveD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DepraveD)$"
       }
     },
     {
@@ -106,6 +116,15 @@
       }
     },
     {
+      "name": "KC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KC)$"
+      }
+    },
+    {
       "name": "MeGusta",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -157,6 +176,15 @@
       "required": false,
       "fields": {
         "value": "^(SasukeducK)$"
+      }
+    },
+    {
+      "name": "SHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SHD)$"
       }
     },
     {

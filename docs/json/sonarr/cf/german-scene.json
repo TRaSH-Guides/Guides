@@ -1,0 +1,325 @@
+{
+  "trash_id": "c2eec878fa1989599c226ce4c287d6a7",
+  "trash_scores": {
+      "default": 1700
+  },
+  "name": "German Scene",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DETAiLS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DETAiLS)$"
+      }
+    },
+    {
+      "name": "WAYNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WAYNE)$"
+      }
+    },
+    {
+      "name": "WOMBAT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WOMBAT)$"
+      }
+    },
+    {
+      "name": "SAUERKRAUT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SAUERKRAUT)$"
+      }
+    },
+    {
+      "name": "WvF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WvF)$"
+      }
+    },
+    {
+      "name": "4KCONNECTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(4KCONNECTiON)$"
+      }
+    },
+    {
+      "name": "STARS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(STARS)$"
+      }
+    },
+    {
+      "name": "AWARDS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AWARDS)$"
+      }
+    },
+    {
+      "name": "DMPD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DMPD)$"
+      }
+    },
+    {
+      "name": "EXCiTED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(EXCiTED)$"
+      }
+    },
+    {
+      "name": "iNTENTiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENTiON)$"
+      }
+    },
+    {
+      "name": "JaJunge",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(JaJunge)$"
+      }
+    },
+    {
+      "name": "MGE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MGE)$"
+      }
+    },
+    {
+      "name": "MisFiTS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MisFiTS)$"
+      }
+    },
+    {
+      "name": "RUBBiSH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RUBBiSH)$"
+      }
+    },
+    {
+      "name": "RWP",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RWP)$"
+      }
+    },
+    {
+      "name": "TMSF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TMSF)$"
+      }
+    },
+    {
+      "name": "TV4A",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TV4A)$"
+      }
+    },
+    {
+      "name": "HAXE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HAXE)$"
+      }
+    },
+    {
+      "name": "muhHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(muhHD)$"
+      }
+    },
+    {
+      "name": "ENDSTATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENDSTATiON)$"
+      }
+    },
+    {
+      "name": "HDARCHiV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDARCHiV)$"
+      }
+    },
+    {
+      "name": "PL3X",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PL3X)$"
+      }
+    },
+    {
+      "name": "WATCHABLE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(WATCHABLE)$"
+      }
+    },
+    {
+      "name": "OHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OHD)$"
+      }
+    },
+    {
+      "name": "ENCOUNTERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ENCOUNTERS)$"
+      }
+    },
+    {
+      "name": "RSG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RSG)$"
+      }
+    },
+    {
+      "name": "TVNATiON",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TVNATiON)$"
+      }
+    },
+    {
+      "name": "FENDT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FENDT)$"
+      }
+    },
+    {
+      "name": "ACED",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ACED)$"
+      }
+    },
+    {
+      "name": "FKKTV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FKKTV)$"
+      }
+    },
+    {
+      "name": "euHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(euHD)$"
+      }
+    },
+    {
+      "name": "OCA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OCA)$"
+      }
+    },
+    {
+      "name": "RIPLEY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(RIPLEY)$"
+      }
+    },
+    {
+      "name": "GTVG",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTVG)$"
+      }
+    }
+  ]
+}

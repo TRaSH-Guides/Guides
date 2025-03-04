@@ -1,0 +1,41 @@
+{
+  "trash_id": "10e77b96ae4770a7de645a91a53ce29a",
+  "trash_scores": {
+    "french-anime-multi": 500,
+    "french-anime-vostfr": -10000,
+    "french-multi-vf": 500,
+    "french-multi-vo": 500,
+    "french-vostfr": 0
+  },
+  "name": "Language: Original + French",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Original Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": -2
+      }
+    },
+    {
+      "name": "French Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2
+      }
+    },
+    {
+      "name": "MULTi",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(MULTi)(\\b|\\d)"
+      }
+    }
+  ]
+}

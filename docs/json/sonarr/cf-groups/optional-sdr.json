@@ -1,0 +1,27 @@
+{
+  "name": "[Optional] SDR",
+  "trash_id": "e1053c0ef622df3749fa43c22865663a",
+  "trash_description": "A group of custom formats that affect which SDR releases, if any, are grabbed in UHD-enabled profiles. Please read the descriptions on the Collection of Custom Formats page for more details.<br><br>- SDR: This will prevent grabbing UHD/4k releases without HDR Formats.<br>- SDR (no WEBDL): This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats. - i.e., SDR WEB releases will still be allowed since 4K SDR WEB releases can often look better than the 1080p version due to the improved bitrate.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
+  "custom_formats": [
+    {
+      "name": "SDR",
+      "trash_id": "2016d1676f5ee13a5b7257ff86ac9a93",
+      "required": false
+    },
+    {
+      "name": "SDR (no WEBDL)",
+      "trash_id": "83304f261cf516bb208c18c54c0adf97",
+      "required": false
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852",
+      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642"
+    }
+  }
+}

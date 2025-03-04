@@ -9,11 +9,7 @@ _aka How to set up Custom Formats (Anime)_<br><br>
 It's recommended to run two Radarr instances. One for Anime Movies and one for Normal Movies, or you can make use of Quality Profiles and score different Custom Formats (CFs) as required.
 
 The aim of this guide is to grab the best release overall (as per [SeaDex](https://releases.moe/){:target="\_blank" rel="noopener noreferrer"}) and not necessarily just dual audio.
-The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"} or [AB](https://animebytes.tv/){:target="\_blank" rel="noopener noreferrer"}
-
-!!! info ""
-
-    Nyaa is a public tracker while AB is an invite only tracker.
+The vast majority of releases can be found on [Nyaa](https://nyaa.si/){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -27,7 +23,7 @@ For naming please refer to [Recommended naming scheme](/Radarr/Radarr-recommende
 
 ## Quality Settings
 
-For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#radarr-quality-definitions){:target="\_blank" rel="noopener noreferrer"}
+For quality settings please refer to [Radarr Quality Definitions](/Radarr/Radarr-Quality-Settings-File-Size/#animeanimatedcartoons){:target="\_blank" rel="noopener noreferrer"}
 
 ---
 
@@ -126,4 +122,4 @@ Most of my information and knowledge came from:
 
 - [TRaSH](https://trash-guides.info/) (For allowing me to utilize his website for our guide and sharing general knowledge.)
 
-{! include-markdown "../../includes/support.md" !}
+--8<-- "includes/support.md"

@@ -1,0 +1,30 @@
+{
+  "name": "[Required] Golden Rule UHD",
+  "trash_id": "ff204bbcecdd487d1cefcefdbf0c278d",
+  "trash_description": "- x265 (HD): This blocks 720/1080p (HD) releases that are encoded in x265<br>- x265 (no HDR/DV): This blocks 720/1080p (HD) releases that are encoded in x265, But it will allow 720/1080p x265 releases if they have HDR and/or DV.<br><br><b>Please ensure you only score or enable one of them in your Quality Profile!!!</b>",
+  "default": "true",
+  "custom_formats": [
+    {
+      "name": "x265 (HD)",
+      "trash_id": "dc98083864ea246d05a42df0d05f81cc",
+      "required": false
+    },
+    {
+      "name": "x265 (no HDR/DV)",
+      "trash_id": "839bea857ed2c0a8e084f3cbdbd65ecb",
+      "required": false,
+      "default": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "HD Bluray + WEB": "d1d67249d3890e49bc12e275d989a7e9",
+      "Remux + WEB 1080p": "9ca12ea80aa55ef916e3751f4b874151",
+      "[German] HD Bluray + WEB": "2b90e905c99490edc7c7a5787443748b",
+      "[German] HD Remux + WEB": "c13c33fdd2c306266b34cb9946de5919",
+      "SQP-1 (1080p)": "0896c29d74de619df168d23b98104b22",
+      "SQP-1 WEB (1080p)": "90a3370d2d30cbaf08d9c23b856a12c8",
+      "SQP-1 (2160p)": "5128baeb2b081b72126bc8482b2a86a0"
+    }
+  }
+}

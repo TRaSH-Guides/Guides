@@ -18,7 +18,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "\\[(JA|ZH)\\]"
+        "value": "\\[(JA|ZH|KO)\\]"
       }
     },
     {
@@ -37,6 +37,15 @@
       "required": false,
       "fields": {
         "value": 10
+      }
+    },
+    {
+      "name": "Korean Language",
+      "implementation": "LanguageSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 21
       }
     }
   ]

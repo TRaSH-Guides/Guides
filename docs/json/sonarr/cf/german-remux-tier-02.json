@@ -1,0 +1,37 @@
+{
+  "trash_id": "6bc5ccd80a03e7abb8f556eecd174b73",
+  "trash_scores": {
+      "default": 3900
+  },
+  "name": "German Remux Tier 02",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "MULTiPLEX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MULTiPLEX)$"
+      }
+    },
+    {
+      "name": "HQC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HQC)$"
+      }
+    },
+    {
+      "name": "Remux",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    }
+  ]
+}

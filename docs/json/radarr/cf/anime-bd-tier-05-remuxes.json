@@ -25,24 +25,6 @@
       }
     },
     {
-      "name": "ANThELIa",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(ANThELIa)\\b"
-      }
-    },
-    {
-      "name": "AP",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(AP)\\b"
-      }
-    },
-    {
       "name": "BluDragon",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -61,15 +43,6 @@
       }
     },
     {
-      "name": "Dragon-Releases",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Dragon-Releases)\\b"
-      }
-    },
-    {
       "name": "E.N.D",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -79,21 +52,12 @@
       }
     },
     {
-      "name": "KAWAiREMUX",
+      "name": "PMR",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(KAWAiREMUX)\\b"
-      }
-    },
-    {
-      "name": "MKVULTRA",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(MKVULTRA)\\b"
+        "value": "^(?=.*\\b(PMR)\\b)(?=.*\\b(Remux)\\b)"
       }
     },
     {
@@ -115,15 +79,6 @@
       }
     },
     {
-      "name": "Spark",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\[Spark\\]|-Spark\\b"
-      }
-    },
-    {
       "name": "SRLS",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -142,12 +97,12 @@
       }
     },
     {
-      "name": "ZR",
+      "name": "VULCAN",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(ZR)\\b"
+        "value": "\\[VULCAN\\]|-VULCAN\\b"
       }
     }
   ]

@@ -1,0 +1,66 @@
+{
+  "name": "[Streaming Services] Anime",
+  "trash_id": "b4b4f2aa25c96620b73a01e6242f9dd2",
+  "trash_description": "Collection of Anime Streaming Services for Sonarr",
+  "custom_formats": [
+    {
+      "name": "ABEMA",
+      "trash_id": "a370d974bc7b80374de1d9ba7519760b",
+      "required": true
+    },
+    {
+      "name": "ADN",
+      "trash_id": "d54cd2bf1326287275b56bccedb72ee2",
+      "required": true
+    },
+    {
+      "name": "B-Global",
+      "trash_id": "7dd31f3dee6d2ef8eeaa156e23c3857e",
+      "required": true
+    },
+    {
+      "name": "Bilibili",
+      "trash_id": "4c67ff059210182b59cdd41697b8cb08",
+      "required": true
+    },
+    {
+      "name": "CR",
+      "trash_id": "3e0b26604165f463f3e8e192261e7284",
+      "required": true
+    },
+    {
+      "name": "FUNi",
+      "trash_id": "1284d18e693de8efe0fe7d6b3e0b9170",
+      "required": true
+    },
+    {
+      "name": "HIDIVE",
+      "trash_id": "570b03b3145a25011bf073274a407259",
+      "required": true
+    },
+    {
+      "name": "VRV",
+      "trash_id": "44a8ee6403071dd7b8a3a8dd3fe8cb20",
+      "required": true
+    },
+    {
+      "name": "WKN",
+      "trash_id": "e5e6405d439dcd1af90962538acd4fe0",
+      "required": true
+    }
+  ],
+  "quality_profiles": {
+    "exclude": {
+      "WEB-1080p (Alternative)": "9d142234e45d6143785ac55f5a9e8dc9",
+      "WEB-1080p": "72dae194fc92bf828f32cde7744e51a1",
+      "WEB-2160p (Alternative)": "dfa5eaae7894077ad6449169b6eb03e0",
+      "WEB-2160p (Combined)": "c4cadd6b35b95f62c3d47a408e53e2f7",
+      "WEB-2160p": "d1498e7d189fbe6c7110ceaabb7473e6",
+      "[German] HD Bluray + WEB": "dca7e5e9e99c703bcbdaaa471dd40e98",
+      "[German] HD Remux + WEB": "0dd5f085ed61a1e01f6d347779dfa1bc",
+      "[German] UHD Bluray + WEB": "3b0fa37fddaaefc931b75f2889d4b4f5",
+      "[German] UHD Remux + WEB": "08cececf1840290f6fd490b7d79e8642",
+      "[German] UHD Bluray + WEB (Alternative)": "7324309a7d1e10dc0dc2cea6c70ed852"
+    }
+  }
+}

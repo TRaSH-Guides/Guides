@@ -2,7 +2,8 @@
   "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
   "trash_scores": {
     "default": 1650,
-    "anime-sonarr": 150
+    "anime-sonarr": 150,
+    "french-multi-vf": 0
   },
   "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
@@ -194,15 +195,6 @@
       "required": false,
       "fields": {
         "value": "^(KiMCHI)$"
-      }
-    },
-    {
-      "name": "Kitsune",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(Kitsune)$"
       }
     },
     {

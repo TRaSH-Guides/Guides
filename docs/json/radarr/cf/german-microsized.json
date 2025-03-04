@@ -1,0 +1,46 @@
+{
+  "trash_id": "03c430f326f10a27a9739b8bc83c30e4",
+  "trash_scores": {
+      "default": -35000
+  },
+  "name": "German Microsized",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "FuN",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FuN)$"
+      }
+    },
+    {
+      "name": "w00t",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(w00t)$"
+      }
+    },
+    {
+      "name": "GTF",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GTF)$"
+      }
+    },
+    {
+      "name": "JellyfinPlex",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(JellyfinPlex)$"
+      }
+    }
+  ]
+}

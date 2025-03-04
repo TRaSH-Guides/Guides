@@ -1,0 +1,125 @@
+name: Build PR & Deploy
+
+on:
+  workflow_run:
+    workflows: ["Trigger PR Build"]
+    types:
+      - completed
+
+concurrency:
+  group: pull-request-builds
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
+    outputs:
+      url: ${{ steps.cloudflare.outputs.deployment-url }}
+      branch_url: ${{ steps.cloudflare.outputs.pages-deployment-alias-url }}
+      pr_number: ${{ steps.pr_info.outputs.pr_number }}
+      pr_sha: ${{ steps.pr_info.outputs.pr_sha }}
+    steps:
+      - name: 'Download artifact'
+        uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+          name: pr_info
+          path: ${{ github.workspace }}/pr_info
+
+      - name: Display structure of downloaded files
+        run: tree ${{ github.workspace }}
+
+      - name: Read PR info
+        id: pr_info
+        run: |
+          echo "pr_number=$(cat ${{ github.workspace }}/pr_info/PR_NUMBER)" >> $GITHUB_OUTPUT
+          echo "pr_sha=$(cat ${{ github.workspace }}/pr_info/PR_SHA)" >> $GITHUB_OUTPUT
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr_info.outputs.pr_sha }}
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            images
+            includes
+            overrides
+
+      - name: Setup python
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: 3.x
+
+      - name: Get pip cache directory
+        id: pip-cache
+        run: |
+          echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache dependencies
+        uses: actions/cache@v4.2.1
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+
+      - name: Build mkdocs
+        run: |
+          mkdocs build --clean
+          mkdocs --version
+
+      - name: Publish to Cloudflare Pages
+        id: cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: >
+            pages deploy site
+            --project-name=trash-guides
+            --branch=pr-${{ steps.pr_info.outputs.pr_number }}
+            --commit-hash=${{ steps.pr_info.outputs.pr_sha }}
+
+  comment:
+    needs: build
+    runs-on: ubuntu-latest
+    if: always() && github.event.repository.fork == false
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Comment PR
+        run: |
+          PREVIEW_URL=${{ needs.build.outputs.url }}
+          BRANCH_PREVIEW_URL=${{ needs.build.outputs.branch_url }}
+          BUILD_STATUS=${{ needs.build.result }}
+
+          if [ "$BUILD_STATUS" == "success" ]; then
+            STATUS_EMOJI="✅"
+            STATUS_MESSAGE="Deploy successful!"
+          else
+            STATUS_EMOJI="❌"
+            STATUS_MESSAGE="Build failed!"
+          fi
+
+          COMMENT_BODY="Deploying with ⚡ Cloudflare Pages<br><table><tr><td><strong>Latest commit:</strong></td><td><code>${{ needs.build.outputs.pr_sha }}</code></td></tr><tr><td><strong>Status:</strong></td><td>&nbsp;$STATUS_EMOJI&nbsp; $STATUS_MESSAGE</td></tr><tr><td><strong>Preview URL:</strong></td><td><a href='$PREVIEW_URL'>$PREVIEW_URL</a></td></tr><tr><td><strong>Branch Preview URL:</strong></td><td><a href='$BRANCH_PREVIEW_URL'>$BRANCH_PREVIEW_URL</a></td></tr></table>"
+
+          ESCAPED_BODY=$(echo "$COMMENT_BODY" | jq -aRs .)
+          COMMENTS_URL="https://api.github.com/repos/${{ github.repository }}/issues/${{ needs.build.outputs.pr_number }}/comments"
+
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github+json" \
+              -X POST \
+              -d "{\"body\": $ESCAPED_BODY }" \
+              $COMMENTS_URL

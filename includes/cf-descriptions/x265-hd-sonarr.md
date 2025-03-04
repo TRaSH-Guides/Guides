@@ -1,3 +1,6 @@
+<!-- markdownlint-disable MD041-->
+**x265 (HD)**<br>
+
 This blocks all 720/1080p (HD) releases that are encoded in x265.
 
 In your quality profile use the following score for this Custom Format: `{{ sonarr['cf']['x265-hd']['trash_scores']['default'] }}`
@@ -7,3 +10,4 @@ In your quality profile use the following score for this Custom Format: `{{ sona
     --8<-- "includes/docker/x265.md"
 
 {! include-markdown "../../includes/cf-descriptions/x265-hd-sonarr-warning.md" !}
+<!-- markdownlint-enable MD041-->

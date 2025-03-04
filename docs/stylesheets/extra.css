@@ -4,6 +4,11 @@
   --md-footer-bg-color--dark: hsla(232, 54%, 41%, 1);
 }
 
+/* Remove top right version*/
+.md-source__fact--version {
+  display: none;
+}
+
 /*Change footnotes font size */
 .md-typeset .footnote {
   font-size: 12px;
@@ -79,4 +84,19 @@ td {
 .md-typeset .md-button {
   border-radius:0rem;
   padding:.625em 2.2em;
+}
+
+[data-md-component="announce"] {
+  position: sticky;
+  inset-inline: 0;
+  top: 0;
+  z-index: 5;
+  display: block;
+}
+.md-banner {
+  background-color: #f44336;
+  color: #ffffff;
+}
+[data-md-component="announce"] .md-banner__inner {
+  display: none;
 }

@@ -1,0 +1,72 @@
+{
+  "name": "[Optional] Miscellaneous",
+  "trash_id": "f4a0410a1df109a66d6e47dcadcce014",
+  "trash_description": "Optional Custom Formats make sure to read the individual descriptions that you can find in the guide.",
+  "custom_formats": [
+    {
+      "name": "Bad Dual Groups",
+      "trash_id": "32b367365729d530ca1c124a0b180c64",
+      "required": false
+    },
+    {
+      "name": "DV (Disk)",
+      "trash_id": "ef4963043b0987f8485bc9106f16db38",
+      "required": false
+    },
+    {
+      "name": "HFR",
+      "trash_id": "1bd69272e23c5e6c5b1d6c8a36fce95e",
+      "required": false
+    },
+    {
+      "name": "MULTi",
+      "trash_id": "7ba05c6e0e14e793538174c679126996",
+      "required": false
+    },
+    {
+      "name": "No-RlsGroup",
+      "trash_id": "82d40da2bc6923f41e14394075dd4b03",
+      "required": false
+    },
+    {
+      "name": "Obfuscated",
+      "trash_id": "e1a997ddb54e3ecbfe06341ad323c458",
+      "required": false
+    },
+    {
+      "name": "Retags",
+      "trash_id": "06d66ab109d4d2eddb2794d21526d140",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "trash_id": "1b3994c551cbb92a2c781af061f4ab44",
+      "required": false
+    },
+    {
+      "name": "VC-1",
+      "trash_id": "7470a681e6205243983c4410ee4c920f",
+      "required": false
+    },
+    {
+      "name": "VP9",
+      "trash_id": "90501962793d580d011511155c97e4e5",
+      "required": false
+    },
+    {
+      "name": "x264",
+      "trash_id": "cddfb4e32db826151d97352b8e37c648",
+      "required": false
+    },
+    {
+      "name": "x265",
+      "trash_id": "c9eafd50846d299b862ca9bb6ea91950",
+      "required": false
+    },
+    {
+      "name": "x266",
+      "trash_id": "041d90b435ebd773271cea047a457a6a",
+      "required": false
+    }
+  ]
+}
