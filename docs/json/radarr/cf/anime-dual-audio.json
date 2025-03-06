@@ -1,5 +1,6 @@
 {
   "trash_id": "4a3b087eea2ce012fcc1ce319259a3be",
+  "trash_regex": "https://regex101.com/r/m6phZx/7",
   "name": "Anime Dual Audio",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -9,7 +10,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "dual[ ._-]?(audio|varyg)|[([]dual[])]|(JA|ZH|KO)\\+EN|EN\\+(JA|ZH|KO)"
+        "value": "dual[ ._-]?(audio)|[([]dual[])]|\\b(JA|ZH|KO)(?= ?\\+ ?.*?\\b(EN))|\\b(EN)(?= ?\\+ ?.*?\\b(JA|ZH|KO))|\\b(Japanese|Chinese|Korean) ?[ ._\\+&-] ?\\b(English)|\\b(English) ?[ ._\\+&-] ?\\b(Japanese|Chinese|Korean)|\\b(\\d{3,4}(p|i)|4K|U(ltra)?HD)\\b.*\\b(DUAL)\\b(?!.*\\(|\\))"
       }
     },
     {
