@@ -22,7 +22,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[(Crave)\\b|\\b(Crave)\\]"
+        "value": "\\[(CRAV)\\b|\\b(CRAV)\\]"
       }
     },
     {

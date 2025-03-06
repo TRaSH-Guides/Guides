@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\[(Stan)\\b|\\b(Stan)\\]"
+        "value": "\\[(STAN)\\b|\\b(STAN)\\]"
       }
     },
     {
