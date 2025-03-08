@@ -45,7 +45,7 @@ All of the information provided in these guides, as well as in Discord or any gu
 
 ### Special Thanks
 
-- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of dockers with DockSTARTer, and helping me to learn the basics for it.
+- [iXNyNe aka nemchik](https://github.com/nemchik){:target="_blank" rel="noopener noreferrer"} for introducing me to the world of Docker containers with DockSTARTer, and helping me to learn the basics for it.
 - [Roxedus](https://github.com/Roxedus){:target="_blank" rel="noopener noreferrer"} for helping me with the transfer/conversion of my Github guides to MkDocs and making everything look great.
 
 --8<-- "CONTRIBUTORS.md"

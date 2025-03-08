@@ -188,7 +188,7 @@ Finally, you will want to enable some plugins. There are plenty of plugins on th
 
 !!! info
 
-    If you are running a docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
+    If you are running a Docker container, such as binhex's image, the `WebUI` plugin may not need to be enabled. Instead, it may be configured in the container.
 
 ### WebUI
 

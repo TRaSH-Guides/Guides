@@ -2,7 +2,7 @@
 
 !!! note
 
-    Being I don't have a Synology myself and I kind of hate the Synology GUI for the dockers, we're going to do this with the use of docker-compose through a terminal.
+    Being I don't have a Synology myself and I kind of hate the Synology GUI for managing Docker containers, we're going to do this with the use of docker-compose through a terminal.
 
     This is faster than the GUI and after installing, it shows up in the Docker GUI.
 
@@ -17,11 +17,11 @@ This page will provide you with guidance on how to install several Docker images
 ## Summary
 
 1. We will create **_one_** share that will hold all your data. This ensures hardlinking and/or instant moves are possible.
-1. Create one user that will be assigned to the docker images as the user they run out of security reasons.
+1. Create one user that will be assigned to the Docker images as the user they run out of security reasons.
 1. Create a folder structure on the `data` and `docker` share with a few commands (or manually).
 1. Download and edit the `docker-compose.yml` and `.env` files to your system settings.
 1. Set permissions to all folders related to the shares.
-1. Run and execute docker commands to start the containers.
+1. Run and execute Docker commands to start the containers.
 
 ### Automated Script
 
@@ -127,7 +127,7 @@ Once logged in to the terminal type `id docker`. If you used a different usernam
 ![!synology-id](images/synology-id.png)
 
 This will show you the UID (aka PUID).
-In the screenshot above this is `1035` for the docker user and `100` is the GID (aka PGID) for the user's group.
+In the screenshot above this is `1035` for the Docker user and `100` is the GID (aka PGID) for the user's group.
 Save these values for later use.
 
 ## Create Folder Structure
@@ -204,7 +204,7 @@ wget https://raw.githubusercontent.com/TRaSH-/Guides-Synology-Templates/main/doc
 
 ### What's included in the compose and what is not included
 
-This docker-compose file will have the following docker containers included.
+This docker-compose file will have the following Docker containers included.
 
 ```none
     - Radarr
@@ -282,7 +282,7 @@ At `Task Settings` tab, add the following line in the Run Command section:
 /usr/local/bin/pullio > /volume1/docker/appdata/pullio/pullio.log 2>&1
 ```
 
-It can be frustrating to test the script if no docker image updates are available, therefore you can run the command `sudo pullio` --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
+It can be frustrating to test the script if no Docker image updates are available, therefore you can run the command `sudo pullio` --debug` and the script will behave as if an update is available. If you have set to receive notifications, you should receive them.
 
 More info about Pullio [HERE](https://hotio.dev/scripts/pullio/){:target="\_blank" rel="noopener noreferrer"}
 
@@ -316,7 +316,7 @@ sudo chmod -R a=,a+rX,u+w,g+w /volume1/data /volume1/docker
 
 !!! tip
 
-    make sure you delete/remove all your existing dockers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
+    make sure you delete/remove all your existing Docker containers from the Docker GUI and also remove your native installs (in Package Center) of these applications !!!
     If you had previously installed apps, make a backup of their config folders or backup through the WebUI of the app.
 
 If you have followed all the steps and your compose file is ready, run the following commands:
