@@ -382,7 +382,7 @@ Directory to use when transcoding temporary files for streaming.
 
     *Speeds up transcoding and less I/O, transcode data is temporary and doesn't need to be written to a disk.*
 
-    *If you run docker set this to `/transcode` and map it to `/tmp/plex`*
+    *If you run Docker set this to `/transcode` and map it to `/tmp/plex`*
 
     *Default Linux only allocates a max of 50% of total system RAM to any ram directories (ie. /tmp, /dev/shm, etc.)*
 

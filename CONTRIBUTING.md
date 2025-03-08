@@ -303,7 +303,7 @@ These prerequisites are taken from the [mkdocs installation instructions][mkdoci
 
 [mkdocinstall]: https://www.mkdocs.org/user-guide/installation/
 
-Alternatively, you can check out the docker container and instructions maintained by [zakkarry](https://github.com/zakkarry) specifically for developing the guides [here](https://gist.github.com/zakkarry/1305f713539c9fee22bdeeddcff3a263). The documentation in the README explains the installation process.
+Alternatively, you can check out the Docker container and instructions maintained by [zakkarry](https://github.com/zakkarry) specifically for developing the guides [here](https://gist.github.com/zakkarry/1305f713539c9fee22bdeeddcff3a263). The documentation in the README explains the installation process.
 
 ### Mkdocs Installation
 

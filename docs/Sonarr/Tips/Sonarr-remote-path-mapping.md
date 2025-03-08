@@ -8,11 +8,11 @@ Remote Path Mapping acts as a dumb find `Remote Path` and replaces it with the `
 
 - If Sonarr and your download client are not on the same server/system.
 - If you use either merged local/remote setups using mergerfs or similar.
-- You run dockers and **DON'T** have consistent and well-planned paths.
+- You use Docker and **DON'T** have consistent and well-planned paths.
 
 !!! note
 
-    If you run dockers it would be smarter to fix the problem at the source of what's causing the actual issue.
+    If you use Docker it would be smarter to fix the problem at the source of what's causing the actual issue.
 
     - [Sonarr Wiki Servarr - Docker Guide](https://wiki.servarr.com/docker-guide#consistent-and-well-planned-paths){:target="_blank" rel="noopener noreferrer"}
 

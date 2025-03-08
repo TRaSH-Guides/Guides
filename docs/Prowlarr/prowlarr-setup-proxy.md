@@ -18,7 +18,7 @@ In this guide, we will try to explain how to set up Prowlarr to use your VPN fro
 
 If you use docker, you need to enable privoxy in your torrent client so you can use it to pass through traffic.
 
-Please check your docker image's documentation on how to enable privoxy.
+Please check your Docker image's documentation on how to enable privoxy.
 
 ## Add privoxy to Prowlarr
 
