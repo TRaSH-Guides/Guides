@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041-->
 ## Instructions
 
-!!! info ""
+!!! danger ""
 
     1. Follow every step below.
     1. Don't skip any steps.
