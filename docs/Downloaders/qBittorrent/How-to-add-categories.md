@@ -1,6 +1,6 @@
 # qBittorrent - How to add categories
 
-This basic example is based on the use of docker images
+This basic example is based on the use of Docker images
 
 !!! tip ""
 

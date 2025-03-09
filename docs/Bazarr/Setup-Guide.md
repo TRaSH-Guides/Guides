@@ -30,7 +30,7 @@ Click on `Enabled`
 
     !!! info
 
-        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
+        **Be aware that when using Bazarr in Docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Sonarr instance. Default is 8989.
 1. Sonarr uses the Base URL _ONLY_ if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /sonarr).
@@ -122,7 +122,7 @@ Click on `Enabled`
 
     !!! info
 
-        **Be aware that when using Bazarr in docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
+        **Be aware that when using Bazarr in Docker, you cannot reach another container on the same Docker host using the loopback address (ex.: 127.0.0.1 or localhost). Loopback address refers to the Bazarr Docker container, not the Docker host.**
 
 1. Enter the TCP port of your Radarr instance. Default is 7878.
 1. Radarr uses the Base URL _ONLY_ if used with a "Reverse Proxy" (ex: Nginx Proxy Manager or SWAG) and MUST have a leading slash if it is needed (ex: /radarr).

@@ -156,7 +156,7 @@ And it SABnzbd you will see something like this.
 
 Then go in to `Settings` => `Special` => `Values`.
 
-Scroll down to `host_whitelist (  )` and enter your docker container name and or your domain name.
+Scroll down to `host_whitelist (  )` and enter your Docker container name and or your domain name.
 
 Example: `sabnzbd.domain.tld, <container name >`
 
