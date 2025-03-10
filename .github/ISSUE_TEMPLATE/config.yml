@@ -9,3 +9,6 @@ contact_links:
   - name: Would you happen to have any suggestions for the guide?
     url: https://discord.com/channels/492590071455940612/1021029470389403818
     about: Join the suggestions section of our Discord server.
+  - name: Bug/Error Found in the Guide?
+    url: https://trash-guides.info/discord
+    about: Bugs and errors are only opened on GitHub by one of the team once we have confirmed them on our Discord server. Please visit our Discord server's Support forum and create a post there. Issues raised directly on GutHub will automatically be closed.
