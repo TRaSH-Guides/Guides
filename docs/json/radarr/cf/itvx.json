@@ -8,9 +8,18 @@
       "name": "ITVX",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
-        "value": "\\bITV(X)?\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+        "value": "\\b(ITVX?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "ITVX Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(ITVX)\\b|\\b(ITVX)\\]"
       }
     },
     {

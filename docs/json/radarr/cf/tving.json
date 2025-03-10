@@ -7,9 +7,18 @@
       "name": "TVING",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(tving)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "TVING Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(TVING)\\b|\\b(TVING)\\]"
       }
     },
     {
