@@ -8,9 +8,18 @@
       "name": "Crave",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(crav(e)?)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "Crave Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(CRAV)\\b|\\b(CRAV)\\]"
       }
     },
     {

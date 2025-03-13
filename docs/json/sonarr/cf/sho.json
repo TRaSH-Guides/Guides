@@ -11,9 +11,18 @@
       "name": "SHOWTIME",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": "\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"
+      }
+    },
+    {
+      "name": "SHO Rename",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[(SHO)\\b|\\b(SHO)\\]"
       }
     },
     {
