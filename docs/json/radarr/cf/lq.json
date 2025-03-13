@@ -251,6 +251,15 @@
       }
     },
     {
+      "name": "Feranki1980",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Feranki1980)$"
+      }
+    },
+    {
       "name": "FRDS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

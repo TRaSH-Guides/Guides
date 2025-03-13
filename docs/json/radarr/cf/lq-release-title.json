@@ -26,6 +26,15 @@
       }
     },
     {
+      "name": "Feranki1980",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Feranki1980)\\b"
+      }
+    },
+    {
       "name": "GalaxyRG",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
