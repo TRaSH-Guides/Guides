@@ -1,0 +1,12 @@
+{
+  "name": "[Optional] Season Packs",
+  "trash_id": "d920fd959d220306888f40b6f38e1578",
+  "trash_description": "Add this Custom Format if you prefer season packs, this will upgrade your already downloaded single episodes.",
+  "custom_formats": [
+    {
+      "name": "Season Pack",
+      "trash_id": "3bc5f395426614e155e585a2f056cdf1",
+      "required": true
+    }
+  ]
+}
