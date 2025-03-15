@@ -44,6 +44,15 @@
       }
     },
     {
+      "name": "VD0N",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VD0N)$"
+      }
+    },
+    {
       "name": "VECTOR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
