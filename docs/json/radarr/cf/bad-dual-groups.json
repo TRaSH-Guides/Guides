@@ -190,6 +190,15 @@
       }
     },
     {
+      "name": "tokar86a",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tokar86a)$"
+      }
+    },
+    {
       "name": "TvR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,

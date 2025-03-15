@@ -181,6 +181,15 @@
       }
     },
     {
+      "name": "tokar86a",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tokar86a)$"
+      }
+    },
+    {
       "name": "vnlls",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
