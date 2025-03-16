@@ -1,3 +1,18 @@
+# 2025-03-16 00:25
+- [feat(guide-sync): Add Season Pack to Sonarr Profile Groups](https://github.com/TRaSH-Guides/Guides/pull/2319)
+- [feat(misc): Simplified How Setup TorGuard for port forwarding instructions ](https://github.com/TRaSH-Guides/Guides/pull/2327)
+- [feat(radarr): Add VD0N to Generated Dynamic HDR CF](https://github.com/TRaSH-Guides/Guides/pull/2325)
+- [feat(starr): Add RlsGrp `Feranki1980` to Custom Format `LQ` and `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/2320)
+- [fix(radarr): Add missing SQP-1 (2160p) score for HD Bluray Tier 02](https://github.com/TRaSH-Guides/Guides/pull/2323)
+- [feat(starr): Improve streaming services recognition after renaming.](https://github.com/TRaSH-Guides/Guides/pull/2305)
+- [style(misc): fixed typo in the issue template](https://github.com/TRaSH-Guides/Guides/pull/2322)
+- [chore(misc): Add an additional note to the issue template stating that all issues should be submitted through Discord.](https://github.com/TRaSH-Guides/Guides/pull/2321)
+- [chore(misc): Removed issue template all issues should go through Discord now](https://github.com/TRaSH-Guides/Guides/pull/2315)
+- [fix(sonarr): update sonarr web tier 02 anime-sonarr score to 250](https://github.com/TRaSH-Guides/Guides/pull/2293)
+- [feat(starr-anime): expand dual audio regex](https://github.com/TRaSH-Guides/Guides/pull/1979)
+- [feat(radarr): SQP-1 WEB (2160p) Guide](https://github.com/TRaSH-Guides/Guides/pull/2310)
+- [style(guide): standardize usage of "docker(s)/Docker"](https://github.com/TRaSH-Guides/Guides/pull/2311)
+
 # 2025-03-02 01:37
 - [feat(radarr): Move `Line/Mic Dubbed` Custom Format to the German Misc](https://github.com/TRaSH-Guides/Guides/pull/2298)
 - [fix(starr): Improved `Generated Dynamic HDR` Custom Formats description](https://github.com/TRaSH-Guides/Guides/pull/2303)
